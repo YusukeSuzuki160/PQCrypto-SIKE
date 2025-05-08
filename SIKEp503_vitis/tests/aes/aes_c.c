@@ -315,7 +315,7 @@ static void Cipher(const uint8_t* RoundKey, uint32_t Nr)
 
 void aes128_enc_c(const uint8_t* input, const uint8_t* schedule, uint8_t* output)
 {
-  memcpy(output, input, 16);
+  buf_copy<16>(output, input);
   state = (state_t*)output;
 
   // The next function call encrypts the PlainText with the Key using AES algorithm.
@@ -326,7 +326,7 @@ void aes128_enc_c(const uint8_t* input, const uint8_t* schedule, uint8_t* output
 void aes256_enc_c(const uint8_t* input, const uint8_t* schedule, uint8_t* output)
 {
   // Copy input to output, and work in-memory on output
-  memcpy(output, input, 16);
+  buf_copy<16>(output, input);
   state = (state_t*)output;
 
   // The next function call encrypts the PlainText with the Key using AES algorithm.

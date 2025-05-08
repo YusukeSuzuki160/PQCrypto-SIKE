@@ -20,7 +20,7 @@ randombytes_init(unsigned char *entropy_input,
     unsigned char   seed_material[48];
     
     (void)security_strength;  // Unused parameter
-    memcpy(seed_material, entropy_input, 48);
+    buf_copy<48>(seed_material, entropy_input);
     if (personalization_string)
         for (int i=0; i<48; i++)
             seed_material[i] ^= personalization_string[i];
@@ -48,12 +48,12 @@ randombytes(unsigned char *x, unsigned long long xlen)
         }
         AES256_ECB(DRBG_ctx.Key, DRBG_ctx.V, block);
         if ( xlen > 15 ) {
-            memcpy(x+i, block, 16);
+            buf_copy<16>(x+i, block);
             i += 16;
             xlen -= 16;
         }
         else {
-            memcpy(x+i, block, xlen);
+            buf_copy<xlen>(x+i, block);
             xlen = 0;
         }
     }
@@ -86,8 +86,8 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
     if ( provided_data != NULL )
         for (int i=0; i<48; i++)
             temp[i] ^= provided_data[i];
-    memcpy(Key, temp, 32);
-    memcpy(V, temp+32, 16);
+    buf_copy<32>(Key, temp);
+    buf_copy<16>(V, temp+32);
 }
 
 

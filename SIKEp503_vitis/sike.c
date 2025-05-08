@@ -23,7 +23,7 @@ int crypto_kem_keypair(unsigned char *pk, unsigned char *sk)
     EphemeralKeyGeneration_B(sk + MSG_BYTES, pk);
 
     // Append public key pk to secret key sk
-    memcpy(&sk[MSG_BYTES + SECRETKEY_B_BYTES], pk, CRYPTO_PUBLICKEYBYTES);
+    buf_copy<CRYPTO_PUBLICKEYBYTES>(&sk[MSG_BYTES + SECRETKEY_B_BYTES], pk);
 
     return 0;
 }
@@ -45,7 +45,7 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
     // Generate ephemeralsk <- G(m||pk) mod oA 
     randombytes(temp, MSG_BYTES);
-    memcpy(&temp[MSG_BYTES], pk, CRYPTO_PUBLICKEYBYTES);
+    buf_copy<CRYPTO_PUBLICKEYBYTES>(&temp[MSG_BYTES], pk);
     cshake256_simple(ephemeralsk, SECRETKEY_A_BYTES, G, temp, CRYPTO_PUBLICKEYBYTES+MSG_BYTES);
     ephemeralsk[SECRETKEY_A_BYTES - 1] &= MASK_ALICE;
 
@@ -56,7 +56,7 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
     for (i = 0; i < MSG_BYTES; i++) ct[i + CRYPTO_PUBLICKEYBYTES] = temp[i] ^ h[i];
 
     // Generate shared secret ss <- H(m||ct)
-    memcpy(&temp[MSG_BYTES], ct, CRYPTO_CIPHERTEXTBYTES);
+    buf_copy<CRYPTO_CIPHERTEXTBYTES>(&temp[MSG_BYTES], ct);
     cshake256_simple(ss, CRYPTO_BYTES, H, temp, CRYPTO_CIPHERTEXTBYTES+MSG_BYTES);
 
     return 0;
@@ -84,16 +84,16 @@ int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned ch
     for (i = 0; i < MSG_BYTES; i++) temp[i] = ct[i + CRYPTO_PUBLICKEYBYTES] ^ h_[i];
 
     // Generate ephemeralsk_ <- G(m||pk) mod oA
-    memcpy(&temp[MSG_BYTES], &sk[MSG_BYTES + SECRETKEY_B_BYTES], CRYPTO_PUBLICKEYBYTES);
+    buf_copy<CRYPTO_PUBLICKEYBYTES>(&temp[MSG_BYTES], &sk[MSG_BYTES + SECRETKEY_B_BYTES]);
     cshake256_simple(ephemeralsk_, SECRETKEY_A_BYTES, G, temp, CRYPTO_PUBLICKEYBYTES+MSG_BYTES);
     ephemeralsk_[SECRETKEY_A_BYTES - 1] &= MASK_ALICE;
     
     // Generate shared secret ss <- H(m||ct) or output ss <- H(s||ct)
     EphemeralKeyGeneration_A(ephemeralsk_, c0_);
-    if (memcmp(c0_, ct, CRYPTO_PUBLICKEYBYTES) != 0) {
-        memcpy(temp, sk, MSG_BYTES);
+    if (buf_equal(c0_, ct, CRYPTO_PUBLICKEYBYTES) != 0) {
+        buf_copy<MSG_BYTES>(temp, sk);
     }
-    memcpy(&temp[MSG_BYTES], ct, CRYPTO_CIPHERTEXTBYTES);
+    buf_copy<CRYPTO_CIPHERTEXTBYTES>(&temp[MSG_BYTES], ct);
     cshake256_simple(ss, CRYPTO_BYTES, H, temp, CRYPTO_CIPHERTEXTBYTES+MSG_BYTES);
 
     return 0;

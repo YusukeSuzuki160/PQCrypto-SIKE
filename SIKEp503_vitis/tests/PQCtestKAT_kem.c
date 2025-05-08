@@ -12,6 +12,7 @@
 #include <ctype.h>
 #include "rng/rng.h"
 #include "../api.h"
+#include "../config.h"
 
 
 #define MAX_MARKER_LEN      50
@@ -77,11 +78,11 @@ main()
             return KAT_DATA_ERROR;
         }
 
-        if(memcmp(pk,pk_rsp,CRYPTO_PUBLICKEYBYTES)!=0){
+        if(buf_equal<CRYPTO_PUBLICKEYBYTES>(pk,pk_rsp)!=0){
         printf("ERROR: pk is different from <%s>\n", fn_rsp);
         return KAT_VERIFICATION_ERROR;
         }
-        if(memcmp(sk,sk_rsp,CRYPTO_SECRETKEYBYTES)!=0){
+        if(buf_equal<CRYPTO_SECRETKEYBYTES>(sk,sk_rsp)!=0){
         printf("ERROR: sk is different from <%s>\n", fn_rsp);
         return KAT_VERIFICATION_ERROR;
         }
@@ -100,11 +101,11 @@ main()
             return KAT_DATA_ERROR;
         }
 
-        if(memcmp(ct,ct_rsp,CRYPTO_CIPHERTEXTBYTES)!=0){
+        if(buf_equal<CRYPTO_CIPHERTEXTBYTES>(ct,ct_rsp)!=0){
             printf("ERROR: ct is different from <%s>\n", fn_rsp);
             return KAT_VERIFICATION_ERROR;
         }
-        if(memcmp(ss,ss_rsp,CRYPTO_BYTES)!=0){
+        if(buf_equal<CRYPTO_BYTES>(ss,ss_rsp)!=0){
             printf("ERROR: ss is different from <%s>\n", fn_rsp);
             return KAT_VERIFICATION_ERROR;
         }
@@ -114,7 +115,7 @@ main()
             return KAT_CRYPTO_FAILURE;
         }
         
-        if ( memcmp(ss, ss1, CRYPTO_BYTES) ) {
+        if ( buf_equal<CRYPTO_BYTES>(ss, ss1) ) {
             printf("crypto_kem_dec returned bad 'ss' value\n");
             return KAT_CRYPTO_FAILURE;
         }

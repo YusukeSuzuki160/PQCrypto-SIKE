@@ -30,7 +30,7 @@ int cryptotest_kem()
         crypto_kem_enc(ct, ss, pk);
         crypto_kem_dec(ss_, ct, sk);
         
-        if (memcmp(ss, ss_, CRYPTO_BYTES) != 0) {
+        if (buf_equal<CRYPTO_BYTES>(ss, ss_) != 0) {
             passed = false;
             break;
         }

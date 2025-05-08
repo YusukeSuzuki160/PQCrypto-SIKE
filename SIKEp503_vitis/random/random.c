@@ -10,35 +10,28 @@
 static int lock = -1;
 
 
-static __inline void delay(unsigned int count)
+static ap_uint<64> g_state = 0x123456789ABCDEFULL;
+
+static inline ap_uint<64> prng64(void)
 {
-	while (count--) {}
+#pragma HLS INLINE
+    ap_uint<64> x = g_state;
+    x ^= x << 13;
+    x ^= x >>  7;
+    x ^= x << 17;
+    g_state = x;
+    return x;
 }
 
-
-int randombytes(unsigned char* random_array, unsigned long long nbytes)
-{ // Generation of "nbytes" of random values
-    int r, n = (int)nbytes, count = 0;
-    
-    if (lock == -1) {
-	    do {
-		    lock = open("/dev/urandom", O_RDONLY);
-		    if (lock == -1) {
-			    delay(0xFFFFF);
-		    }
-	    } while (lock == -1);
+extern "C" void randombytes(uint8_t *out, size_t len)
+{
+#pragma HLS INLINE off
+RandLoop:
+    for (size_t i = 0; i < len; i++) {
+        if ((i & 7) == 0)
+            g_state = prng64();
+        out[i] = g_state.range(7, 0);
+        g_state >>= 8;
     }
-
-	while (n > 0) {
-		do {
-			r = read(lock, random_array+count, n);
-			if (r == -1) {
-				delay(0xFFFF);
-			}
-		} while (r == -1);
-		count += r;
-		n -= r;
-	}
-
-	return 0;
 }
+
