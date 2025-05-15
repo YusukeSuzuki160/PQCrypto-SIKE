@@ -2,7 +2,7 @@
 #include <cstring>
 #include "api.h"
 #include "config.h"
-#include "P503_internal.h"
+#include "P503_constants.h"
 
 // Function prototype for the hardware function
 extern "C" {

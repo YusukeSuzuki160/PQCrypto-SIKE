@@ -4,23 +4,25 @@ open_project sikep503_hls
 # Add all source files
 add_files src/top.cpp
 add_files src/P503.c
+add_files src/P503_internal.h
 add_files src/P503_constants.c
 add_files src/ec_isogeny.c
 add_files src/fpx.c
 add_files src/sidh.c
 add_files src/sike.c
+add_files src/config.sikep503_hls
+add_files src/api.h
 
 # Add generic directory files
 add_files src/generic/fp_generic.c
-add_files src/generic/fp_mul.c
-add_files src/generic/fp_sqr.c
 
 # Add random directory files
 add_files src/random/random.c
+add_files src/random/random.h
 
 # Add sha3 directory files
 add_files src/sha3/fips202.c
-add_files src/sha3/keccakf1600.c
+add_files src/sha3/fips202.h
 
 # Add testbench file
 add_files -tb src/tb_top.cpp
