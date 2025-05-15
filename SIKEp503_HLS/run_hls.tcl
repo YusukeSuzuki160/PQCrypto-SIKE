@@ -5,12 +5,11 @@ open_project sikep503_hls
 add_files src/top.cpp
 add_files src/P503.c
 add_files src/P503_internal.h
-add_files src/P503_constants.c
 add_files src/ec_isogeny.c
 add_files src/fpx.c
 add_files src/sidh.c
 add_files src/sike.c
-add_files src/config.sikep503_hls
+add_files src/config.h
 add_files src/api.h
 
 # Add generic directory files

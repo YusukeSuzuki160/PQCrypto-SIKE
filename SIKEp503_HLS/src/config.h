@@ -32,6 +32,7 @@
 #define TARGET_x86          2
 #define TARGET_ARM          3
 #define TARGET_ARM64        4
+#define TARGET_HLS          5
 
 #if defined(_AMD64_)
     #define TARGET TARGET_AMD64
@@ -54,7 +55,10 @@
     #define LOG2RADIX       6  
     typedef uint64_t        digit_t;        // Unsigned 64-bit digit
 #else
-    #error -- "Unsupported ARCHITECTURE"
+    #define TARGET TARGET_HLS
+    #define RADIX           64
+    #define LOG2RADIX       6  
+    typedef uint64_t        digit_t;        // Unsigned 64-bit digit
 #endif
 
 #define RADIX64             64
