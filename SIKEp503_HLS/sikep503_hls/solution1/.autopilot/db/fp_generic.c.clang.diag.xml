@@ -1,0 +1,21 @@
+<dict>
+  <key>main-file</key>
+  <string>src/generic/fp_generic.c</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>error</string>
+      <key>filename</key>
+      <string>src/generic/../config.h</string>
+      <key>line</key>
+      <integer>57</integer>
+      <key>column</key>
+      <integer>6</integer>
+      <key>message</key>
+      <string>-- &quot;Unsupported ARCHITECTURE&quot;</string>
+      <key>ID</key>
+      <integer>814</integer>
+    </dict>
+  </array>
+</dict>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="WARNING" prefix="[HLS 200-1998]" key="HLS 200-1998" tag="" content="cannot find relative file path &apos;../../src/sikep503_kem_enc_tb.cpp&apos; in directory(s): /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1310" tag="" content="Cannot find source file src/sha3/keccakf1600.c; skipping it." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1310" tag="" content="Cannot find source file src/generic/fp_sqr.c; skipping it." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1310" tag="" content="Cannot find source file src/generic/fp_mul.c; skipping it." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1310" tag="" content="Cannot find source file /mnt/data/SIKEp503_HLS/src; skipping it." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 697.496 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/sha3/fips202.c&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/random/random.c&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/generic/fp_generic.c&apos; ..." resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-814]" key="HLS 207-814" tag="" content="-- &quot;Unsupported ARCHITECTURE&quot; (src/generic/../config.h:57:6)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command csynth_design Elapsed time: 00:00:00; Allocated memory: 1.352 MB." resolution=""/>
+</Messages>

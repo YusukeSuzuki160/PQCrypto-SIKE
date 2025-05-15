@@ -11,76 +11,25 @@
 #include <stdbool.h>
 #include <stddef.h>
 
+// Basic type definitions for Vitis HLS
+#define RADIX           64
+#define LOG2RADIX       6
+typedef uint64_t        digit_t;        // Unsigned 64-bit digit
+#define RADIX64         64
 
-// Definition of compiler
-
-#define COMPILER_GCC     1
-#define COMPILER_CLANG   2
-
-#if defined(__GNUC__)           // GNU GCC compiler
-    #define COMPILER COMPILER_GCC   
-#elif defined(__clang__)        // Clang compiler
-    #define COMPILER COMPILER_CLANG
-#else
-    #error -- "Unsupported COMPILER"
-#endif
-
-
-// Definition of the targeted architecture and basic data types
-    
-#define TARGET_AMD64        1
-#define TARGET_x86          2
-#define TARGET_ARM          3
-#define TARGET_ARM64        4
-
-#if defined(_AMD64_)
-    #define TARGET TARGET_AMD64
-    #define RADIX           64
-    #define LOG2RADIX       6  
-    typedef uint64_t        digit_t;        // Unsigned 64-bit digit
-#elif defined(_X86_)
-    #define TARGET TARGET_x86
-    #define RADIX           32
-    #define LOG2RADIX       5  
-    typedef uint32_t        digit_t;        // Unsigned 32-bit digit
-#elif defined(_ARM_)
-    #define TARGET TARGET_ARM
-    #define RADIX           32
-    #define LOG2RADIX       5  
-    typedef uint32_t        digit_t;        // Unsigned 32-bit digit
-#elif defined(_ARM64_)
-    #define TARGET TARGET_ARM64
-    #define RADIX           64
-    #define LOG2RADIX       6  
-    typedef uint64_t        digit_t;        // Unsigned 64-bit digit
-#else
-    #error -- "Unsupported ARCHITECTURE"
-#endif
-
-#define RADIX64             64
-
-
-// Selection of implementation: optimized_generic
-
-#if defined(_OPTIMIZED_GENERIC_)                      
-    #define OPTIMIZED_GENERIC_IMPLEMENTATION
-#endif
-
+// Field element size definitions
+#define NWORDS_FIELD    8
 
 // Extended datatype support
-                     
 typedef uint64_t uint128_t[2];
-    
 
 // Macro definitions
-
-#define NBITS_TO_NBYTES(nbits)      (((nbits)+7)/8)                                          // Conversion macro from number of bits to number of bytes
-#define NBITS_TO_NWORDS(nbits)      (((nbits)+(sizeof(digit_t)*8)-1)/(sizeof(digit_t)*8))    // Conversion macro from number of bits to number of computer words
-#define NBYTES_TO_NWORDS(nbytes)    (((nbytes)+sizeof(digit_t)-1)/sizeof(digit_t))           // Conversion macro from number of bytes to number of computer words
+#define NBITS_TO_NBYTES(nbits)      (((nbits)+7)/8)
+#define NBITS_TO_NWORDS(nbits)      (((nbits)+(sizeof(digit_t)*8)-1)/(sizeof(digit_t)*8))
+#define NBYTES_TO_NWORDS(nbytes)    (((nbytes)+sizeof(digit_t)-1)/sizeof(digit_t))
 
 // Macro to avoid compiler warnings when detecting unreferenced parameters
 #define UNREFERENCED_PARAMETER(PAR) ((void)(PAR))
-
 
 /********************** Constant-time unsigned comparisons ***********************/
 
@@ -100,7 +49,6 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
 { // Is x < y?
     return (unsigned int)((x ^ ((x ^ y) | ((x - y) ^ y))) >> (RADIX-1)); 
 }
-
 
 /********************** Macros for platform-dependent operations **********************/
 
@@ -140,6 +88,5 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
 // 128-bit addition with output carry
 #define ADC128(addend1, addend2, carry, addition)                                                 \
     (carry) = mp_add((digit_t*)(addend1), (digit_t*)(addend2), (digit_t*)(addition), NWORDS_FIELD);
-
 
 #endif

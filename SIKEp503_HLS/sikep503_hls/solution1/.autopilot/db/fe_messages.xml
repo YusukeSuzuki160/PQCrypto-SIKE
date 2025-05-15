@@ -1,0 +1,6 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-814" msg_severity="ERROR" msg_loc="src/generic/../config.h:57:6" msg_body="-- &quot;Unsupported ARCHITECTURE&quot;">
+        <args/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
