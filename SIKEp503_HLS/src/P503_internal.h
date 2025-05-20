@@ -21,6 +21,9 @@
 #elif (TARGET == TARGET_ARM64)
     #define NWORDS_FIELD    8
     #define p503_ZERO_WORDS 3
+#elif (TARGET == TARGET_HLS)
+    #define NWORDS_FIELD    8
+    #define p503_ZERO_WORDS 3
 #endif
     
 
