@@ -1,0 +1,910 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 498,183 *    | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 463,415 *    | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 414,158 *    | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 364,739 *    | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 344,777 *    | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 333,436 *    | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 333,436 *    | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 333,436 *    | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 333,436 *    | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 345,731 *    | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 345,709 *    | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 334,301 *    | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 338,783 *    | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 337,554 *    | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 338,864 *    | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 363,046 *    | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++---------------------------------+----------------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
+| Function                        | Location                   | Compile/Link        | Unroll/Inline       | Array/Struct        | Performance         | HW Transforms       |
++---------------------------------+----------------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
+| + sikep503_kem_enc_hw           | sikep503_kem_enc_tb.cpp:21 | 498,183 *           | 344,777 *           | 345,731 *           | 337,554 *           | 363,046 *           |
+|  + crypto_kem_enc               | sike.c:32                  | 498,171             | 344,768             | 345,722             | 337,539             | 363,024             |
+|   + randombytes                 | random.c:21                |     27              |                     |                     |                     |                     |
+|      lcg_rand                   | random.c:15                |      6              |                     |                     |                     |                     |
+|   + cshake256_simple            | fips202.c:555              |  7,656 (3 calls)    |  4,684 (2 calls)    |  3,069 (2 calls)    |  3,255 (2 calls)    |  3,168 (2 calls)    |
+|    + cshake256_simple_absorb    | fips202.c:524              |  3,870 (3 calls)    |  2,378 (2 calls)    |  1,879 (2 calls)    |  2,017 (2 calls)    |  1,902 (2 calls)    |
+|       KeccakF1600_StatePermute  | fips202.c:73               |  1,701 (3 calls)    |  2,144 (4 calls)    |  1,686 (3 calls)    |  1,611 (3 calls)    |  1,626 (3 calls)    |
+|     + keccak_absorb             | fips202.c:344              |  2,058 (3 calls)    |                     |                     |                     |                     |
+|        load64                   | fips202.c:22               |     96 (6 calls)    |                     |                     |                     |                     |
+|        KeccakF1600_StatePermute | fips202.c:73               |  1,701 (3 calls)    |                     |                     |                     |                     |
+|    + keccak_squeezeblocks       | fips202.c:370              |  3,660 (6 calls)    |                     |                     |                     |                     |
+|       KeccakF1600_StatePermute  | fips202.c:73               |  3,402 (6 calls)    |                     |                     |                     |                     |
+|       store64                   | fips202.c:33               |     90 (6 calls)    |                     |                     |                     |                     |
+|      KeccakF1600_StatePermute   | fips202.c:73               |                     |  2,144 (4 calls)    |  1,124 (2 calls)    |  1,074 (2 calls)    |  1,084 (2 calls)    |
+|   + EphemeralKeyGeneration_A    | sidh.c:81                  | 256,936             | 174,454             | 175,832             | 171,150             | 184,566             |
+|    + init_basis                 | sidh.c:23                  |    220 (2 calls)    |                     |                     |                     |                     |
+|       fpcopy503                 | fpx.c:10                   |    150 (10 calls)   |                     |                     |                     |                     |
+|       fpzero503                 | fpx.c:19                   |     24 (2 calls)    |                     |                     |                     |                     |
+|      fpcopy503                  | fpx.c:10                   |     60 (4 calls)    |                     |                     |                     |                     |
+|    + fp2add503                  | fpx.c:109                  |    293              |                     |                     |                     |                     |
+|     + fpadd503                  | fp_generic.c:16            |    278 (2 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     80 (10 calls)   |                     |                     |                     |                     |
+|      + is_digit_zero_ct         | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|         is_digit_nonzero_ct     | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|    + LADDER3PT                  | ec_isogeny.c:284           | 23,770              | 15,610              | 15,743              | 15,664              | 16,968              |
+|       fpcopy503                 | fpx.c:10                   |     60 (4 calls)    |                     |                     |                     |                     |
+|     + fp2add503                 | fpx.c:109                  |    586 (2 calls)    |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |    556 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    160 (20 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|     + fp2div2_503               | fpx.c:123                  |    342 (2 calls)    |    186 (2 calls)    |    186 (2 calls)    |    318 (2 calls)    |    350 (2 calls)    |
+|      + fpdiv2_503               | fp_generic.c:70            |    320 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|         mp_shiftr1              | fpx.c:378                  |    116 (4 calls)    |                     |                     |                     |                     |
+|     + fp2copy503                | fpx.c:88                   |    123 (3 calls)    |                     |                     |                     |                     |
+|        fpcopy503                | fpx.c:10                   |     90 (6 calls)    |                     |                     |                     |                     |
+|       fpzero503                 | fpx.c:19                   |     12              |                     |                     |                     |                     |
+|       swap_points               | ec_isogeny.c:261           |    145              |                     |                     |                     |                     |
+|     + xDBLADD                   | ec_isogeny.c:234           | 20,432              |                     |                     |                     |                     |
+|      + fp2add503                | fpx.c:109                  |  1,172 (4 calls)    |                     |                     |                     |                     |
+|       + fpadd503                | fp_generic.c:16            |  1,112 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    320 (40 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|      + fp2sub503                | fpx.c:116                  |    820 (4 calls)    |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    760 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|      + fp2sqr503_mont           | fpx.c:151                  |  6,368 (4 calls)    |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    376 (8 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    360 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |  5,432 (8 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |  2,072 (8 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    512 (64 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |  3,264 (8 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|      + fp2correction503         | fpx.c:130                  |    197              |                     |                     |                     |                     |
+|       + fpcorrection503         | fp_generic.c:86            |    190 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|      + fp2mul503_mont           | fpx.c:185                  | 11,760 (6 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  4,662 (18 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  1,404 (36 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    564 (12 calls)   |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    540 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|       + mp_subfast              | fpx.c:177                  |    624 (12 calls)   |                     |                     |                     |                     |
+|        + mp_sub                 | fpx.c:165                  |    576 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|         + is_digit_zero_ct      | config.h:98                |     96 (12 calls)   |                     |                     |                     |                     |
+|            is_digit_nonzero_ct  | config.h:93                |     60 (12 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  4,896 (12 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    936 (24 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,728 (216 calls)  |                     |                     |                     |                     |
+|       + mp_addfastx2            | fpx.c:144                  |    282 (6 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    270 (6 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|     + fp2mul503_mont            | fpx.c:185                  |  1,960              |  9,114 (7 calls)    |  9,205 (7 calls)    |  8,943 (7 calls)    |  9,608 (7 calls)    |
+|      + mp_mul                   | fp_generic.c:137           |    777 (3 calls)    |  3,171 (21 calls)   |  3,360 (21 calls)   |  3,191 (21 calls)   |  3,497 (21 calls)   |
+|         digit_x_digit           | fp_generic.c:103           |    234 (6 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |     94 (2 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |     90 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     32 (4 calls)    |                     |                     |                     |                     |
+|      + mp_subfast               | fpx.c:177                  |    104 (2 calls)    |                     |                     |                     |                     |
+|       + mp_sub                  | fpx.c:165                  |     96 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     16 (2 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     16 (2 calls)    |                     |                     |                     |                     |
+|      + rdc_mont                 | fp_generic.c:172           |    816 (2 calls)    |  4,718 (14 calls)   |  4,648 (14 calls)   |  4,564 (14 calls)   |  4,774 (14 calls)   |
+|         digit_x_digit           | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    288 (36 calls)   |  1,792 (224 calls)  |  1,792 (224 calls)  |  1,792 (224 calls)  |  1,792 (224 calls)  |
+|      + mp_addfastx2             | fpx.c:144                  |     47              |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |     45              |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     16 (2 calls)    |                     |                     |                     |                     |
+|       fpadd503                  | fp_generic.c:16            |                     |    936 (12 calls)   |    948 (12 calls)   |  1,090 (12 calls)   |  1,234 (12 calls)   |
+|       fpsub503                  | fp_generic.c:40            |                     |    440 (8 calls)    |    448 (8 calls)    |    440 (8 calls)    |    504 (8 calls)    |
+|     + fp2sqr503_mont            | fpx.c:151                  |                     |  4,456 (4 calls)    |  4,472 (4 calls)    |  4,342 (4 calls)    |  4,630 (4 calls)    |
+|        mp_mul                   | fp_generic.c:137           |                     |  1,208 (8 calls)    |  1,280 (8 calls)    |  1,208 (8 calls)    |  1,320 (8 calls)    |
+|      + rdc_mont                 | fp_generic.c:172           |                     |  2,696 (8 calls)    |  2,656 (8 calls)    |  2,608 (8 calls)    |  2,728 (8 calls)    |
+|         is_digit_lessthan_ct    | config.h:103               |                     |  1,024 (128 calls)  |  1,024 (128 calls)  |  1,024 (128 calls)  |  1,024 (128 calls)  |
+|       fpcorrection503           | fp_generic.c:86            |                     |    108 (2 calls)    |    110 (2 calls)    |    108 (2 calls)    |    124 (2 calls)    |
+|    + fp2copy503                 | fpx.c:88                   |    164 (4 calls)    |                     |                     |                     |                     |
+|       fpcopy503                 | fpx.c:10                   |    120 (8 calls)    |                     |                     |                     |                     |
+|    + xDBLe                      | ec_isogeny.c:27            | 12,106              |                     |                     |                     |                     |
+|       copy_words                | fpx.c:48                   |     15              |                     |                     |                     |                     |
+|     + xDBL                      | ec_isogeny.c:9             | 12,078              |                     |                     |                     |                     |
+|      + fp2sub503                | fpx.c:116                  |    410 (2 calls)    |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|      + fp2add503                | fpx.c:109                  |    586 (2 calls)    |                     |                     |                     |                     |
+|       + fpadd503                | fp_generic.c:16            |    556 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    160 (20 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|      + fp2sqr503_mont           | fpx.c:151                  |  3,184 (2 calls)    |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    188 (4 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    180 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    190 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |  2,716 (4 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |  1,036 (4 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    312 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    256 (32 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |  1,632 (4 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    312 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    576 (72 calls)   |                     |                     |                     |                     |
+|      + fp2mul503_mont           | fpx.c:185                  |  7,840 (4 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  3,108 (12 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    936 (24 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    768 (96 calls)   |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    376 (8 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    360 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + mp_subfast              | fpx.c:177                  |    416 (8 calls)    |                     |                     |                     |                     |
+|        + mp_sub                 | fpx.c:165                  |    384 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|         + is_digit_zero_ct      | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|            is_digit_nonzero_ct  | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  3,264 (8 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|       + mp_addfastx2            | fpx.c:144                  |    188 (4 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    180 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|    + get_4_isog                 | ec_isogeny.c:41            | 15,574 (2 calls)    |                     |                     |                     |                     |
+|     + fp2sub503                 | fpx.c:116                  |    410 (2 calls)    |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|     + fp2add503                 | fpx.c:109                  |  2,344 (8 calls)    |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |  2,224 (16 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    640 (80 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |    128 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     80 (16 calls)   |                     |                     |                     |                     |
+|     + fp2sqr503_mont            | fpx.c:151                  | 12,736 (8 calls)    |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    752 (16 calls)   |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    720 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    256 (32 calls)   |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    760 (8 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   | 10,864 (16 calls)   |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  4,144 (16 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  1,248 (32 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,024 (128 calls)  |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  6,528 (16 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  1,248 (32 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  2,304 (288 calls)  |                     |                     |                     |                     |
+|    + eval_4_isog                | ec_isogeny.c:58            | 115,675 (7 calls)   | 76,132 (7 calls)    | 76,804 (7 calls)    | 74,606 (7 calls)    | 80,626 (7 calls)    |
+|     + fp2add503                 | fpx.c:109                  |  6,153 (21 calls)   |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |  5,838 (42 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  1,680 (210 calls)  |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |    336 (42 calls)   |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |    210 (42 calls)   |                     |                     |                     |                     |
+|     + fp2sub503                 | fpx.c:116                  |  4,305 (21 calls)   |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |  3,990 (42 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  1,008 (126 calls)  |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |    336 (42 calls)   |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |    210 (42 calls)   |                     |                     |                     |                     |
+|     + fp2mul503_mont            | fpx.c:185                  | 82,320 (42 calls)   | 54,684 (42 calls)   | 55,230 (42 calls)   | 53,550 (42 calls)   | 57,743 (42 calls)   |
+|      + mp_mul                   | fp_generic.c:137           | 32,634 (126 calls)  | 19,026 (126 calls)  | 20,160 (126 calls)  | 19,026 (126 calls)  | 21,000 (126 calls)  |
+|         digit_x_digit           | fp_generic.c:103           |  9,828 (252 calls)  |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  8,064 (1008 calls) |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |  3,948 (84 calls)   |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |  3,780 (84 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,344 (168 calls)  |                     |                     |                     |                     |
+|      + mp_subfast               | fpx.c:177                  |  4,368 (84 calls)   |                     |                     |                     |                     |
+|       + mp_sub                  | fpx.c:165                  |  4,032 (84 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    672 (84 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |    672 (84 calls)   |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |    420 (84 calls)   |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |    672 (84 calls)   |                     |                     |                     |                     |
+|      + rdc_mont                 | fp_generic.c:172           | 34,272 (84 calls)   | 28,308 (84 calls)   | 27,888 (84 calls)   | 27,384 (84 calls)   | 28,644 (84 calls)   |
+|         digit_x_digit           | fp_generic.c:103           |  6,552 (168 calls)  |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               | 12,096 (1512 calls) | 10,752 (1344 calls) | 10,752 (1344 calls) | 10,752 (1344 calls) | 10,752 (1344 calls) |
+|      + mp_addfastx2             | fpx.c:144                  |  1,974 (42 calls)   |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |  1,890 (42 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    672 (84 calls)   |                     |                     |                     |                     |
+|     + fp2sqr503_mont            | fpx.c:151                  | 22,288 (14 calls)   | 15,596 (14 calls)   | 15,652 (14 calls)   | 15,218 (14 calls)   | 16,226 (14 calls)   |
+|      + mp_addfast               | fpx.c:137                  |  1,316 (28 calls)   |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |  1,260 (28 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    448 (56 calls)   |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |  1,330 (14 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    336 (42 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |    112 (14 calls)   |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     70 (14 calls)   |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   | 19,012 (28 calls)   |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  7,252 (28 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  2,184 (56 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,792 (224 calls)  |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           | 11,424 (28 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  2,184 (56 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  4,032 (504 calls)  |                     |                     |                     |                     |
+|        mp_mul                   | fp_generic.c:137           |                     |  4,228 (28 calls)   |  4,480 (28 calls)   |  4,228 (28 calls)   |  4,620 (28 calls)   |
+|      + rdc_mont                 | fp_generic.c:172           |                     |  9,436 (28 calls)   |  9,296 (28 calls)   |  9,128 (28 calls)   |  9,548 (28 calls)   |
+|         is_digit_lessthan_ct    | config.h:103               |                     |  3,584 (448 calls)  |  3,584 (448 calls)  |  3,584 (448 calls)  |  3,584 (448 calls)  |
+|       fpadd503                  | fp_generic.c:16            |                     |  3,276 (42 calls)   |  3,318 (42 calls)   |  3,276 (42 calls)   |  3,780 (42 calls)   |
+|       fpsub503                  | fp_generic.c:40            |                     |  2,310 (42 calls)   |  2,352 (42 calls)   |  2,310 (42 calls)   |  2,646 (42 calls)   |
+|    + inv_3_way                  | ec_isogeny.c:172           | 78,043              |                     |                     |                     |                     |
+|     + fp2mul503_mont            | fpx.c:185                  | 11,760 (6 calls)    |                     |                     |                     |                     |
+|      + mp_mul                   | fp_generic.c:137           |  4,662 (18 calls)   |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |  1,404 (36 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    564 (12 calls)   |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    540 (12 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|      + mp_subfast               | fpx.c:177                  |    624 (12 calls)   |                     |                     |                     |                     |
+|       + mp_sub                  | fpx.c:165                  |    576 (12 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     96 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     60 (12 calls)   |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|      + rdc_mont                 | fp_generic.c:172           |  4,896 (12 calls)   |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |    936 (24 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  1,728 (216 calls)  |                     |                     |                     |                     |
+|      + mp_addfastx2             | fpx.c:144                  |    282 (6 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    270 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|     + fp2inv503_mont            | fpx.c:313                  | 66,201              |                     |                     |                     |                     |
+|      + fpsqr503_mont            | fpx.c:67                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |    139              |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     40 (5 calls)    |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |      8              |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |      5              |                     |                     |                     |                     |
+|      + fpinv503_mont            | fpx.c:76                   | 63,255              |                     |                     |                     |                     |
+|         fpcopy503               | fpx.c:10                   |     15              |                     |                     |                     |                     |
+|       + fpinv503_chain_mont     | fpx.c:210                  | 61,185              |                     |                     |                     |                     |
+|        + fpsqr503_mont          | fpx.c:67                   | 29,876 (44 calls)   |                     |                     |                     |                     |
+|         + mp_mul                | fp_generic.c:137           | 11,396 (44 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,432 (88 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  2,816 (352 calls)  |                     |                     |                     |                     |
+|         + rdc_mont              | fp_generic.c:172           | 17,952 (44 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,432 (88 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  6,336 (792 calls)  |                     |                     |                     |                     |
+|        + fpmul503_mont          | fpx.c:58                   | 30,555 (45 calls)   |                     |                     |                     |                     |
+|         + mp_mul                | fp_generic.c:137           | 11,655 (45 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,510 (90 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  2,880 (360 calls)  |                     |                     |                     |                     |
+|         + rdc_mont              | fp_generic.c:172           | 18,360 (45 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,510 (90 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  6,480 (810 calls)  |                     |                     |                     |                     |
+|          fpcopy503              | fpx.c:10                   |     30 (2 calls)    |                     |                     |                     |                     |
+|       + fpsqr503_mont           | fpx.c:67                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |    679              |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |    259              |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |     78 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |    408              |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |     78 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    144 (18 calls)   |                     |                     |                     |                     |
+|      + fpneg503                 | fp_generic.c:59            |     48              |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |      8              |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |      8              |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |      5              |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|     + fp2copy503                | fpx.c:88                   |     41              |                     |                     |                     |                     |
+|        fpcopy503                | fpx.c:10                   |     30 (2 calls)    |                     |                     |                     |                     |
+|    + fp2mul503_mont             | fpx.c:185                  |  5,880 (3 calls)    | 16,926 (13 calls)   | 17,095 (13 calls)   | 16,575 (13 calls)   | 17,837 (13 calls)   |
+|     + mp_mul                    | fp_generic.c:137           |  2,331 (9 calls)    |  5,889 (39 calls)   |  6,240 (39 calls)   |  5,889 (39 calls)   |  6,447 (39 calls)   |
+|        digit_x_digit            | fp_generic.c:103           |    702 (18 calls)   |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |    576 (72 calls)   |                     |                     |                     |                     |
+|     + mp_addfast                | fpx.c:137                  |    282 (6 calls)    |                     |                     |                     |                     |
+|      + mp_add                   | fpx.c:345                  |    270 (6 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|     + mp_subfast                | fpx.c:177                  |    312 (6 calls)    |                     |                     |                     |                     |
+|      + mp_sub                   | fpx.c:165                  |    288 (6 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     48 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     30 (6 calls)    |                     |                     |                     |                     |
+|       is_digit_lessthan_ct      | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|     + rdc_mont                  | fp_generic.c:172           |  2,448 (6 calls)    |  8,762 (26 calls)   |  8,632 (26 calls)   |  8,476 (26 calls)   |  8,911 (26 calls)   |
+|        digit_x_digit            | fp_generic.c:103           |    468 (12 calls)   |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |    864 (108 calls)  |  3,328 (416 calls)  |  3,328 (416 calls)  |  3,328 (416 calls)  |  3,328 (416 calls)  |
+|     + mp_addfastx2              | fpx.c:144                  |    141 (3 calls)    |                     |                     |                     |                     |
+|      + mp_add                   | fpx.c:345                  |    135 (3 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|    + fp2_encode                 | sidh.c:34                  |  4,857 (3 calls)    |                     |                     |                     |                     |
+|     + from_fp2mont              | fpx.c:336                  |  4,755 (3 calls)    |                     |                     |                     |                     |
+|      + from_mont                | fpx.c:37                   |  4,722 (6 calls)    |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |  4,074 (6 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |  1,554 (6 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    468 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    384 (48 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |  2,448 (6 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    468 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    864 (108 calls)  |                     |                     |                     |                     |
+|       + fpcorrection503         | fp_generic.c:86            |    570 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    144 (18 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     48 (6 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     30 (6 calls)    |                     |                     |                     |                     |
+|      fpadd503                   | fp_generic.c:16            |                     |  1,716 (22 calls)   |  1,738 (22 calls)   |  1,716 (22 calls)   |  2,042 (22 calls)   |
+|      fpsub503                   | fp_generic.c:40            |                     |    440 (8 calls)    |    448 (8 calls)    |    440 (8 calls)    |    535 (8 calls)    |
+|    + fp2sqr503_mont             | fpx.c:151                  |                     | 11,140 (10 calls)   | 11,180 (10 calls)   | 10,870 (10 calls)   | 11,692 (10 calls)   |
+|       mp_mul                    | fp_generic.c:137           |                     |  3,020 (20 calls)   |  3,200 (20 calls)   |  3,020 (20 calls)   |  3,336 (20 calls)   |
+|     + rdc_mont                  | fp_generic.c:172           |                     |  6,740 (20 calls)   |  6,640 (20 calls)   |  6,520 (20 calls)   |  6,860 (20 calls)   |
+|        is_digit_lessthan_ct     | config.h:103               |                     |  2,560 (320 calls)  |  2,560 (320 calls)  |  2,560 (320 calls)  |  2,560 (320 calls)  |
+|    + fp2inv503_mont             | fpx.c:313                  |                     | 48,491              | 48,778              | 47,344              | 50,556              |
+|       mp_mul                    | fp_generic.c:137           |                     |  1,057 (7 calls)    |  1,120 (7 calls)    |  1,057 (7 calls)    |  1,155 (7 calls)    |
+|     + rdc_mont                  | fp_generic.c:172           |                     |  2,359 (7 calls)    |  2,324 (7 calls)    |  2,282 (7 calls)    |  2,387 (7 calls)    |
+|        is_digit_lessthan_ct     | config.h:103               |                     |    896 (112 calls)  |    896 (112 calls)  |    896 (112 calls)  |    896 (112 calls)  |
+|     + fpinv503_chain_mont       | fpx.c:210                  |                     | 44,853              | 45,119              | 43,784              | 46,776              |
+|      + fpsqr503_mont            | fpx.c:67                   |                     | 22,000 (44 calls)   | 22,132 (44 calls)   | 21,472 (44 calls)   | 22,880 (44 calls)   |
+|         mp_mul                  | fp_generic.c:137           |                     |  6,644 (44 calls)   |  7,040 (44 calls)   |  6,644 (44 calls)   |  7,260 (44 calls)   |
+|       + rdc_mont                | fp_generic.c:172           |                     | 14,828 (44 calls)   | 14,608 (44 calls)   | 14,344 (44 calls)   | 15,004 (44 calls)   |
+|          is_digit_lessthan_ct   | config.h:103               |                     |  5,632 (704 calls)  |  5,632 (704 calls)  |  5,632 (704 calls)  |  5,632 (704 calls)  |
+|      + fpmul503_mont            | fpx.c:58                   |                     | 22,500 (45 calls)   | 22,635 (45 calls)   | 21,960 (45 calls)   | 23,400 (45 calls)   |
+|         mp_mul                  | fp_generic.c:137           |                     |  6,795 (45 calls)   |  7,200 (45 calls)   |  6,795 (45 calls)   |  7,425 (45 calls)   |
+|       + rdc_mont                | fp_generic.c:172           |                     | 15,165 (45 calls)   | 14,940 (45 calls)   | 14,670 (45 calls)   | 15,345 (45 calls)   |
+|          is_digit_lessthan_ct   | config.h:103               |                     |  5,760 (720 calls)  |  5,760 (720 calls)  |  5,760 (720 calls)  |  5,760 (720 calls)  |
+|    + from_mont                  | fpx.c:37                   |                     |  3,336 (6 calls)    |  3,360 (6 calls)    |  3,264 (6 calls)    |  3,549 (6 calls)    |
+|       mp_mul                    | fp_generic.c:137           |                     |    906 (6 calls)    |    960 (6 calls)    |    906 (6 calls)    |    990 (6 calls)    |
+|     + rdc_mont                  | fp_generic.c:172           |                     |  2,022 (6 calls)    |  1,992 (6 calls)    |  1,956 (6 calls)    |  2,091 (6 calls)    |
+|        is_digit_lessthan_ct     | config.h:103               |                     |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |
+|   + EphemeralSecretAgreement_A  | sidh.c:221                 | 233,484             | 163,789             | 164,904             | 161,028             | 173,282             |
+|    + fp2_decode                 | sidh.c:47                  |  4,233 (3 calls)    |  3,090 (3 calls)    |  3,117 (3 calls)    |  3,027 (3 calls)    |  3,419 (3 calls)    |
+|     + to_fp2mont                | fpx.c:327                  |  4,119 (3 calls)    |                     |                     |                     |                     |
+|      + to_mont                  | fpx.c:28                   |  4,086 (6 calls)    |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |  4,074 (6 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |  1,554 (6 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    468 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    384 (48 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |  2,448 (6 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    468 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    864 (108 calls)  |                     |                     |                     |                     |
+|       mp_mul                    | fp_generic.c:137           |                     |    906 (6 calls)    |    960 (6 calls)    |    906 (6 calls)    |  1,026 (6 calls)    |
+|     + rdc_mont                  | fp_generic.c:172           |                     |  2,022 (6 calls)    |  1,992 (6 calls)    |  1,956 (6 calls)    |  2,142 (6 calls)    |
+|        is_digit_lessthan_ct     | config.h:103               |                     |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |
+|    + get_A                      | ec_isogeny.c:188           | 77,575              |                     |                     |                     |                     |
+|       fpcopy503                 | fpx.c:10                   |     15              |                     |                     |                     |                     |
+|     + fp2add503                 | fpx.c:109                  |  1,465 (5 calls)    |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |  1,390 (10 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    400 (50 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     80 (10 calls)   |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     50 (10 calls)   |                     |                     |                     |                     |
+|     + fp2mul503_mont            | fpx.c:185                  |  7,840 (4 calls)    |                     |                     |                     |                     |
+|      + mp_mul                   | fp_generic.c:137           |  3,108 (12 calls)   |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |    936 (24 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    768 (96 calls)   |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    376 (8 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    360 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|      + mp_subfast               | fpx.c:177                  |    416 (8 calls)    |                     |                     |                     |                     |
+|       + mp_sub                  | fpx.c:165                  |    384 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|      + rdc_mont                 | fp_generic.c:172           |  3,264 (8 calls)    |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|      + mp_addfastx2             | fpx.c:144                  |    188 (4 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    180 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|     + fp2sub503                 | fpx.c:116                  |    410 (2 calls)    |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|     + fp2sqr503_mont            | fpx.c:151                  |  1,592              |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |     94 (2 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |     90 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     32 (4 calls)    |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |     95              |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     24 (3 calls)    |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |      8              |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |      5              |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|     + fp2inv503_mont            | fpx.c:313                  | 66,201              |                     |                     |                     |                     |
+|      + fpsqr503_mont            | fpx.c:67                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |    139              |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     40 (5 calls)    |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |      8              |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |      5              |                     |                     |                     |                     |
+|      + fpinv503_mont            | fpx.c:76                   | 63,255              |                     |                     |                     |                     |
+|         fpcopy503               | fpx.c:10                   |     15              |                     |                     |                     |                     |
+|       + fpinv503_chain_mont     | fpx.c:210                  | 61,185              |                     |                     |                     |                     |
+|        + fpsqr503_mont          | fpx.c:67                   | 29,876 (44 calls)   |                     |                     |                     |                     |
+|         + mp_mul                | fp_generic.c:137           | 11,396 (44 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,432 (88 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  2,816 (352 calls)  |                     |                     |                     |                     |
+|         + rdc_mont              | fp_generic.c:172           | 17,952 (44 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,432 (88 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  6,336 (792 calls)  |                     |                     |                     |                     |
+|        + fpmul503_mont          | fpx.c:58                   | 30,555 (45 calls)   |                     |                     |                     |                     |
+|         + mp_mul                | fp_generic.c:137           | 11,655 (45 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,510 (90 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  2,880 (360 calls)  |                     |                     |                     |                     |
+|         + rdc_mont              | fp_generic.c:172           | 18,360 (45 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,510 (90 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  6,480 (810 calls)  |                     |                     |                     |                     |
+|          fpcopy503              | fpx.c:10                   |     30 (2 calls)    |                     |                     |                     |                     |
+|       + fpsqr503_mont           | fpx.c:67                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |    679              |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |    259              |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |     78 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |    408              |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |     78 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    144 (18 calls)   |                     |                     |                     |                     |
+|      + fpneg503                 | fp_generic.c:59            |     48              |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |      8              |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |      8              |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |      5              |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|    + fpadd503                   | fp_generic.c:16            |    278 (2 calls)    |  3,900 (50 calls)   |  3,950 (50 calls)   |  3,984 (50 calls)   |  4,664 (50 calls)   |
+|       is_digit_lessthan_ct      | config.h:103               |     80 (10 calls)   |                     |                     |                     |                     |
+|     + is_digit_zero_ct          | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|        is_digit_nonzero_ct      | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|    + fp2add503                  | fpx.c:109                  |    293              |                     |                     |                     |                     |
+|     + fpadd503                  | fp_generic.c:16            |    278 (2 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     80 (10 calls)   |                     |                     |                     |                     |
+|      + is_digit_zero_ct         | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|         is_digit_nonzero_ct     | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|    + LADDER3PT                  | ec_isogeny.c:284           | 23,770              | 15,610              | 15,743              | 15,664              | 16,985              |
+|       fpcopy503                 | fpx.c:10                   |     60 (4 calls)    |                     |                     |                     |                     |
+|     + fp2add503                 | fpx.c:109                  |    586 (2 calls)    |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |    556 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    160 (20 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|     + fp2div2_503               | fpx.c:123                  |    342 (2 calls)    |    186 (2 calls)    |    186 (2 calls)    |    318 (2 calls)    |    350 (2 calls)    |
+|      + fpdiv2_503               | fp_generic.c:70            |    320 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|         mp_shiftr1              | fpx.c:378                  |    116 (4 calls)    |                     |                     |                     |                     |
+|     + fp2copy503                | fpx.c:88                   |    123 (3 calls)    |                     |                     |                     |                     |
+|        fpcopy503                | fpx.c:10                   |     90 (6 calls)    |                     |                     |                     |                     |
+|       fpzero503                 | fpx.c:19                   |     12              |                     |                     |                     |                     |
+|       swap_points               | ec_isogeny.c:261           |    145              |                     |                     |                     |                     |
+|     + xDBLADD                   | ec_isogeny.c:234           | 20,432              |                     |                     |                     |                     |
+|      + fp2add503                | fpx.c:109                  |  1,172 (4 calls)    |                     |                     |                     |                     |
+|       + fpadd503                | fp_generic.c:16            |  1,112 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    320 (40 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|      + fp2sub503                | fpx.c:116                  |    820 (4 calls)    |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    760 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|      + fp2sqr503_mont           | fpx.c:151                  |  6,368 (4 calls)    |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    376 (8 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    360 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |  5,432 (8 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |  2,072 (8 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    512 (64 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |  3,264 (8 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|      + fp2correction503         | fpx.c:130                  |    197              |                     |                     |                     |                     |
+|       + fpcorrection503         | fp_generic.c:86            |    190 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|      + fp2mul503_mont           | fpx.c:185                  | 11,760 (6 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  4,662 (18 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  1,404 (36 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    564 (12 calls)   |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    540 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|       + mp_subfast              | fpx.c:177                  |    624 (12 calls)   |                     |                     |                     |                     |
+|        + mp_sub                 | fpx.c:165                  |    576 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|         + is_digit_zero_ct      | config.h:98                |     96 (12 calls)   |                     |                     |                     |                     |
+|            is_digit_nonzero_ct  | config.h:93                |     60 (12 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  4,896 (12 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    936 (24 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,728 (216 calls)  |                     |                     |                     |                     |
+|       + mp_addfastx2            | fpx.c:144                  |    282 (6 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    270 (6 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|     + fp2mul503_mont            | fpx.c:185                  |  1,960              |  9,114 (7 calls)    |  9,205 (7 calls)    |  8,943 (7 calls)    |  9,608 (7 calls)    |
+|      + mp_mul                   | fp_generic.c:137           |    777 (3 calls)    |  3,171 (21 calls)   |  3,360 (21 calls)   |  3,191 (21 calls)   |  3,497 (21 calls)   |
+|         digit_x_digit           | fp_generic.c:103           |    234 (6 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |     94 (2 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |     90 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     32 (4 calls)    |                     |                     |                     |                     |
+|      + mp_subfast               | fpx.c:177                  |    104 (2 calls)    |                     |                     |                     |                     |
+|       + mp_sub                  | fpx.c:165                  |     96 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     16 (2 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     16 (2 calls)    |                     |                     |                     |                     |
+|      + rdc_mont                 | fp_generic.c:172           |    816 (2 calls)    |  4,718 (14 calls)   |  4,648 (14 calls)   |  4,564 (14 calls)   |  4,774 (14 calls)   |
+|         digit_x_digit           | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    288 (36 calls)   |  1,792 (224 calls)  |  1,792 (224 calls)  |  1,792 (224 calls)  |  1,792 (224 calls)  |
+|      + mp_addfastx2             | fpx.c:144                  |     47              |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |     45              |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     16 (2 calls)    |                     |                     |                     |                     |
+|       fpadd503                  | fp_generic.c:16            |                     |    936 (12 calls)   |    948 (12 calls)   |  1,090 (12 calls)   |  1,234 (12 calls)   |
+|       fpsub503                  | fp_generic.c:40            |                     |    440 (8 calls)    |    448 (8 calls)    |    440 (8 calls)    |    504 (8 calls)    |
+|     + fp2sqr503_mont            | fpx.c:151                  |                     |  4,456 (4 calls)    |  4,472 (4 calls)    |  4,342 (4 calls)    |  4,630 (4 calls)    |
+|        mp_mul                   | fp_generic.c:137           |                     |  1,208 (8 calls)    |  1,280 (8 calls)    |  1,208 (8 calls)    |  1,320 (8 calls)    |
+|      + rdc_mont                 | fp_generic.c:172           |                     |  2,696 (8 calls)    |  2,656 (8 calls)    |  2,608 (8 calls)    |  2,728 (8 calls)    |
+|         is_digit_lessthan_ct    | config.h:103               |                     |  1,024 (128 calls)  |  1,024 (128 calls)  |  1,024 (128 calls)  |  1,024 (128 calls)  |
+|       fpcorrection503           | fp_generic.c:86            |                     |    108 (2 calls)    |    110 (2 calls)    |    108 (2 calls)    |    124 (2 calls)    |
+|    + fp2copy503                 | fpx.c:88                   |    164 (4 calls)    |                     |                     |                     |                     |
+|       fpcopy503                 | fpx.c:10                   |    120 (8 calls)    |                     |                     |                     |                     |
+|    + xDBLe                      | ec_isogeny.c:27            | 12,106              |                     |                     |                     |                     |
+|       copy_words                | fpx.c:48                   |     15              |                     |                     |                     |                     |
+|     + xDBL                      | ec_isogeny.c:9             | 12,078              |                     |                     |                     |                     |
+|      + fp2sub503                | fpx.c:116                  |    410 (2 calls)    |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|      + fp2add503                | fpx.c:109                  |    586 (2 calls)    |                     |                     |                     |                     |
+|       + fpadd503                | fp_generic.c:16            |    556 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    160 (20 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|      + fp2sqr503_mont           | fpx.c:151                  |  3,184 (2 calls)    |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    188 (4 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    180 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|       + fpsub503                | fp_generic.c:40            |    190 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |  2,716 (4 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |  1,036 (4 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    312 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    256 (32 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |  1,632 (4 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    312 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    576 (72 calls)   |                     |                     |                     |                     |
+|      + fp2mul503_mont           | fpx.c:185                  |  7,840 (4 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  3,108 (12 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    936 (24 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    768 (96 calls)   |                     |                     |                     |                     |
+|       + mp_addfast              | fpx.c:137                  |    376 (8 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    360 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + mp_subfast              | fpx.c:177                  |    416 (8 calls)    |                     |                     |                     |                     |
+|        + mp_sub                 | fpx.c:165                  |    384 (8 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|         + is_digit_zero_ct      | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|            is_digit_nonzero_ct  | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  3,264 (8 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|       + mp_addfastx2            | fpx.c:144                  |    188 (4 calls)    |                     |                     |                     |                     |
+|        + mp_add                 | fpx.c:345                  |    180 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|    + get_4_isog                 | ec_isogeny.c:41            | 15,574 (2 calls)    |                     |                     |                     |                     |
+|     + fp2sub503                 | fpx.c:116                  |    410 (2 calls)    |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|     + fp2add503                 | fpx.c:109                  |  2,344 (8 calls)    |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |  2,224 (16 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    640 (80 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |    128 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     80 (16 calls)   |                     |                     |                     |                     |
+|     + fp2sqr503_mont            | fpx.c:151                  | 12,736 (8 calls)    |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    752 (16 calls)   |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    720 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    256 (32 calls)   |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    760 (8 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     64 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     40 (8 calls)    |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   | 10,864 (16 calls)   |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  4,144 (16 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  1,248 (32 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,024 (128 calls)  |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  6,528 (16 calls)   |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |  1,248 (32 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  2,304 (288 calls)  |                     |                     |                     |                     |
+|    + eval_4_isog                | ec_isogeny.c:58            | 16,525              |                     |                     |                     |                     |
+|     + fp2add503                 | fpx.c:109                  |    879 (3 calls)    |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |    834 (6 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    240 (30 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     48 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     30 (6 calls)    |                     |                     |                     |                     |
+|     + fp2sub503                 | fpx.c:116                  |    615 (3 calls)    |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    570 (6 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    144 (18 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     48 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     30 (6 calls)    |                     |                     |                     |                     |
+|     + fp2mul503_mont            | fpx.c:185                  | 11,760 (6 calls)    |                     |                     |                     |                     |
+|      + mp_mul                   | fp_generic.c:137           |  4,662 (18 calls)   |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |  1,404 (36 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    564 (12 calls)   |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    540 (12 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    192 (24 calls)   |                     |                     |                     |                     |
+|      + mp_subfast               | fpx.c:177                  |    624 (12 calls)   |                     |                     |                     |                     |
+|       + mp_sub                  | fpx.c:165                  |    576 (12 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     96 (12 calls)   |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     60 (12 calls)   |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|      + rdc_mont                 | fp_generic.c:172           |  4,896 (12 calls)   |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |    936 (24 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |  1,728 (216 calls)  |                     |                     |                     |                     |
+|      + mp_addfastx2             | fpx.c:144                  |    282 (6 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    270 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|     + fp2sqr503_mont            | fpx.c:151                  |  3,184 (2 calls)    |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    188 (4 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    180 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    190 (2 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   |  2,716 (4 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  1,036 (4 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    312 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    256 (32 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  1,632 (4 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    312 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    576 (72 calls)   |                     |                     |                     |                     |
+|    + fp2div2_503                | fpx.c:123                  |    342 (2 calls)    |    186 (2 calls)    |    186 (2 calls)    |    318 (2 calls)    |    350 (2 calls)    |
+|     + fpdiv2_503                | fp_generic.c:70            |    320 (4 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|        mp_shiftr1               | fpx.c:378                  |    116 (4 calls)    |                     |                     |                     |                     |
+|    + fp2sub503                  | fpx.c:116                  |    205              |                     |                     |                     |                     |
+|     + fpsub503                  | fp_generic.c:40            |    190 (2 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|      + is_digit_zero_ct         | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|         is_digit_nonzero_ct     | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|    + j_inv                      | ec_isogeny.c:210           | 80,588              |                     |                     |                     |                     |
+|     + fp2sqr503_mont            | fpx.c:151                  |  6,368 (4 calls)    |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    376 (8 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    360 (8 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    380 (4 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     32 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     20 (4 calls)    |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   |  5,432 (8 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |  2,072 (8 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    512 (64 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |  3,264 (8 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    624 (16 calls)   |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |  1,152 (144 calls)  |                     |                     |                     |                     |
+|     + fp2add503                 | fpx.c:109                  |  1,465 (5 calls)    |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |  1,390 (10 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    400 (50 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     80 (10 calls)   |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     50 (10 calls)   |                     |                     |                     |                     |
+|     + fp2sub503                 | fpx.c:116                  |    615 (3 calls)    |                     |                     |                     |                     |
+|      + fpsub503                 | fp_generic.c:40            |    570 (6 calls)    |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    144 (18 calls)   |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |     48 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |     30 (6 calls)    |                     |                     |                     |                     |
+|     + fp2mul503_mont            | fpx.c:185                  |  5,880 (3 calls)    |                     |                     |                     |                     |
+|      + mp_mul                   | fp_generic.c:137           |  2,331 (9 calls)    |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |    702 (18 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    576 (72 calls)   |                     |                     |                     |                     |
+|      + mp_addfast               | fpx.c:137                  |    282 (6 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    270 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     96 (12 calls)   |                     |                     |                     |                     |
+|      + mp_subfast               | fpx.c:177                  |    312 (6 calls)    |                     |                     |                     |                     |
+|       + mp_sub                  | fpx.c:165                  |    288 (6 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     48 (6 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     30 (6 calls)    |                     |                     |                     |                     |
+|        is_digit_lessthan_ct     | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|      + rdc_mont                 | fp_generic.c:172           |  2,448 (6 calls)    |                     |                     |                     |                     |
+|         digit_x_digit           | fp_generic.c:103           |    468 (12 calls)   |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |    864 (108 calls)  |                     |                     |                     |                     |
+|      + mp_addfastx2             | fpx.c:144                  |    141 (3 calls)    |                     |                     |                     |                     |
+|       + mp_add                  | fpx.c:345                  |    135 (3 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|     + fp2inv503_mont            | fpx.c:313                  | 66,201              |                     |                     |                     |                     |
+|      + fpsqr503_mont            | fpx.c:67                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|      + fpadd503                 | fp_generic.c:16            |    139              |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |     40 (5 calls)    |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |      8              |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |      5              |                     |                     |                     |                     |
+|      + fpinv503_mont            | fpx.c:76                   | 63,255              |                     |                     |                     |                     |
+|         fpcopy503               | fpx.c:10                   |     15              |                     |                     |                     |                     |
+|       + fpinv503_chain_mont     | fpx.c:210                  | 61,185              |                     |                     |                     |                     |
+|        + fpsqr503_mont          | fpx.c:67                   | 29,876 (44 calls)   |                     |                     |                     |                     |
+|         + mp_mul                | fp_generic.c:137           | 11,396 (44 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,432 (88 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  2,816 (352 calls)  |                     |                     |                     |                     |
+|         + rdc_mont              | fp_generic.c:172           | 17,952 (44 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,432 (88 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  6,336 (792 calls)  |                     |                     |                     |                     |
+|        + fpmul503_mont          | fpx.c:58                   | 30,555 (45 calls)   |                     |                     |                     |                     |
+|         + mp_mul                | fp_generic.c:137           | 11,655 (45 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,510 (90 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  2,880 (360 calls)  |                     |                     |                     |                     |
+|         + rdc_mont              | fp_generic.c:172           | 18,360 (45 calls)   |                     |                     |                     |                     |
+|            digit_x_digit        | fp_generic.c:103           |  3,510 (90 calls)   |                     |                     |                     |                     |
+|            is_digit_lessthan_ct | config.h:103               |  6,480 (810 calls)  |                     |                     |                     |                     |
+|          fpcopy503              | fpx.c:10                   |     30 (2 calls)    |                     |                     |                     |                     |
+|       + fpsqr503_mont           | fpx.c:67                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |    679              |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |    259              |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |     78 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |     64 (8 calls)    |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |    408              |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |     78 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    144 (18 calls)   |                     |                     |                     |                     |
+|      + fpneg503                 | fp_generic.c:59            |     48              |                     |                     |                     |                     |
+|         is_digit_lessthan_ct    | config.h:103               |      8              |                     |                     |                     |                     |
+|       + is_digit_zero_ct        | config.h:98                |      8              |                     |                     |                     |                     |
+|          is_digit_nonzero_ct    | config.h:93                |      5              |                     |                     |                     |                     |
+|      + fpmul503_mont            | fpx.c:58                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|       + mp_mul                  | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|       + rdc_mont                | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|          digit_x_digit          | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|    + fp2_encode                 | sidh.c:34                  |  1,619              |                     |                     |                     |                     |
+|     + from_fp2mont              | fpx.c:336                  |  1,585              |                     |                     |                     |                     |
+|      + from_mont                | fpx.c:37                   |  1,574 (2 calls)    |                     |                     |                     |                     |
+|       + fpmul503_mont           | fpx.c:58                   |  1,358 (2 calls)    |                     |                     |                     |                     |
+|        + mp_mul                 | fp_generic.c:137           |    518 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    128 (16 calls)   |                     |                     |                     |                     |
+|        + rdc_mont               | fp_generic.c:172           |    816 (2 calls)    |                     |                     |                     |                     |
+|           digit_x_digit         | fp_generic.c:103           |    156 (4 calls)    |                     |                     |                     |                     |
+|           is_digit_lessthan_ct  | config.h:103               |    288 (36 calls)   |                     |                     |                     |                     |
+|       + fpcorrection503         | fp_generic.c:86            |    190 (2 calls)    |                     |                     |                     |                     |
+|          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
+|        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
+|           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
+|    + fp2mul503_mont             | fpx.c:185                  |                     | 22,134 (17 calls)   | 22,355 (17 calls)   | 21,705 (17 calls)   | 23,443 (17 calls)   |
+|       mp_mul                    | fp_generic.c:137           |                     |  7,701 (51 calls)   |  8,160 (51 calls)   |  7,721 (51 calls)   |  8,525 (51 calls)   |
+|     + rdc_mont                  | fp_generic.c:172           |                     | 11,458 (34 calls)   | 11,288 (34 calls)   | 11,084 (34 calls)   | 11,639 (34 calls)   |
+|        is_digit_lessthan_ct     | config.h:103               |                     |  4,352 (544 calls)  |  4,352 (544 calls)  |  4,352 (544 calls)  |  4,352 (544 calls)  |
+|      fpsub503                   | fp_generic.c:40            |                     |  1,430 (26 calls)   |  1,456 (26 calls)   |  1,440 (26 calls)   |  1,679 (26 calls)   |
+|    + fp2sqr503_mont             | fpx.c:151                  |                     | 18,938 (17 calls)   | 19,006 (17 calls)   | 18,691 (17 calls)   | 20,017 (17 calls)   |
+|       mp_mul                    | fp_generic.c:137           |                     |  5,134 (34 calls)   |  5,440 (34 calls)   |  5,144 (34 calls)   |  5,656 (34 calls)   |
+|     + rdc_mont                  | fp_generic.c:172           |                     | 11,458 (34 calls)   | 11,288 (34 calls)   | 11,260 (34 calls)   | 11,810 (34 calls)   |
+|        is_digit_lessthan_ct     | config.h:103               |                     |  4,352 (544 calls)  |  4,352 (544 calls)  |  4,352 (544 calls)  |  4,352 (544 calls)  |
+|    + fp2inv503_mont             | fpx.c:313                  |                     | 96,982 (2 calls)    | 97,556 (2 calls)    | 94,688 (2 calls)    | 101,112 (2 calls)   |
+|       mp_mul                    | fp_generic.c:137           |                     |  2,114 (14 calls)   |  2,240 (14 calls)   |  2,114 (14 calls)   |  2,310 (14 calls)   |
+|     + rdc_mont                  | fp_generic.c:172           |                     |  4,718 (14 calls)   |  4,648 (14 calls)   |  4,564 (14 calls)   |  4,774 (14 calls)   |
+|        is_digit_lessthan_ct     | config.h:103               |                     |  1,792 (224 calls)  |  1,792 (224 calls)  |  1,792 (224 calls)  |  1,792 (224 calls)  |
+|     + fpinv503_chain_mont       | fpx.c:210                  |                     | 89,706 (2 calls)    | 90,238 (2 calls)    | 87,568 (2 calls)    | 93,552 (2 calls)    |
+|      + fpsqr503_mont            | fpx.c:67                   |                     | 44,000 (88 calls)   | 44,264 (88 calls)   | 42,944 (88 calls)   | 45,760 (88 calls)   |
+|         mp_mul                  | fp_generic.c:137           |                     | 13,288 (88 calls)   | 14,080 (88 calls)   | 13,288 (88 calls)   | 14,520 (88 calls)   |
+|       + rdc_mont                | fp_generic.c:172           |                     | 29,656 (88 calls)   | 29,216 (88 calls)   | 28,688 (88 calls)   | 30,008 (88 calls)   |
+|          is_digit_lessthan_ct   | config.h:103               |                     | 11,264 (1408 calls) | 11,264 (1408 calls) | 11,264 (1408 calls) | 11,264 (1408 calls) |
+|      + fpmul503_mont            | fpx.c:58                   |                     | 45,000 (90 calls)   | 45,270 (90 calls)   | 43,920 (90 calls)   | 46,800 (90 calls)   |
+|         mp_mul                  | fp_generic.c:137           |                     | 13,590 (90 calls)   | 14,400 (90 calls)   | 13,590 (90 calls)   | 14,850 (90 calls)   |
+|       + rdc_mont                | fp_generic.c:172           |                     | 30,330 (90 calls)   | 29,880 (90 calls)   | 29,340 (90 calls)   | 30,690 (90 calls)   |
+|          is_digit_lessthan_ct   | config.h:103               |                     | 11,520 (1440 calls) | 11,520 (1440 calls) | 11,520 (1440 calls) | 11,520 (1440 calls) |
+|    + from_mont                  | fpx.c:37                   |                     |  1,112 (2 calls)    |  1,120 (2 calls)    |  1,088 (2 calls)    |  1,183 (2 calls)    |
+|       mp_mul                    | fp_generic.c:137           |                     |    302 (2 calls)    |    320 (2 calls)    |    302 (2 calls)    |    330 (2 calls)    |
+|     + rdc_mont                  | fp_generic.c:172           |                     |    674 (2 calls)    |    664 (2 calls)    |    652 (2 calls)    |    697 (2 calls)    |
+|        is_digit_lessthan_ct     | config.h:103               |                     |    256 (32 calls)   |    256 (32 calls)   |    256 (32 calls)   |    256 (32 calls)   |
+|   + cshake256_simple_absorb     | fips202.c:524              |                     |  1,189              |  1,242              |  1,322              |  1,209              |
+|      KeccakF1600_StatePermute   | fips202.c:73               |                     |  1,072 (2 calls)    |  1,124 (2 calls)    |  1,074 (2 calls)    |  1,084 (2 calls)    |
+|     KeccakF1600_StatePermute    | fips202.c:73               |                     |    536              |    562              |    537              |    542              |
++---------------------------------+----------------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

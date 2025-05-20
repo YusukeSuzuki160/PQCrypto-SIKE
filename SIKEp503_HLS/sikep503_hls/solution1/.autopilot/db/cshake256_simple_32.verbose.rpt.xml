@@ -1,0 +1,181 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cshake256_simple_32'" level="0">
+<item name = "Date">Tue May 20 14:34:58 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.214 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_cshake256_simple_absorb_fu_46">cshake256_simple_absorb, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_KeccakF1600_StatePermute_fu_64">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71">cshake256_simple_32_Pipeline_VITIS_LOOP_377_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80">cshake256_simple_32_Pipeline_VITIS_LOOP_570_1, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">4, -, 10017, 34952, -</column>
+<column name="Memory">4, -, 64, 20, 0</column>
+<column name="Multiplexer">-, -, 0, 392, -</column>
+<column name="Register">-, -, 12, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 0, 9, 66, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_KeccakF1600_StatePermute_fu_64">KeccakF1600_StatePermute, 2, 0, 4904, 17154, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71">cshake256_simple_32_Pipeline_VITIS_LOOP_377_2, 0, 0, 13, 64, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80">cshake256_simple_32_Pipeline_VITIS_LOOP_570_1, 0, 0, 15, 86, 0</column>
+<column name="grp_cshake256_simple_absorb_fu_46">cshake256_simple_absorb, 2, 0, 5085, 17648, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="s_U">cshake256_simple_32_s_RAM_AUTO_1R1W, 4, 0, 0, 0, 25, 64, 1, 1600</column>
+<column name="t_U">cshake256_simple_32_t_RAM_AUTO_1R1W, 0, 16, 5, 0, 34, 8, 1, 272</column>
+<column name="t_41_U">cshake256_simple_32_t_RAM_AUTO_1R1W, 0, 16, 5, 0, 34, 8, 1, 272</column>
+<column name="t_42_U">cshake256_simple_32_t_RAM_AUTO_1R1W, 0, 16, 5, 0, 34, 8, 1, 272</column>
+<column name="t_43_U">cshake256_simple_32_t_RAM_AUTO_1R1W, 0, 16, 5, 0, 34, 8, 1, 272</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">48, 9, 1, 9</column>
+<column name="s_address0">20, 4, 5, 20</column>
+<column name="s_address1">14, 3, 5, 15</column>
+<column name="s_ce0">20, 4, 1, 4</column>
+<column name="s_ce1">14, 3, 1, 3</column>
+<column name="s_d0">14, 3, 64, 192</column>
+<column name="s_d1">14, 3, 64, 192</column>
+<column name="s_we0">14, 3, 8, 24</column>
+<column name="s_we1">14, 3, 8, 24</column>
+<column name="t_41_address0">14, 3, 6, 18</column>
+<column name="t_41_ce0">14, 3, 1, 3</column>
+<column name="t_41_ce1">9, 2, 1, 2</column>
+<column name="t_41_we0">9, 2, 1, 2</column>
+<column name="t_41_we1">9, 2, 1, 2</column>
+<column name="t_42_address0">14, 3, 6, 18</column>
+<column name="t_42_ce0">14, 3, 1, 3</column>
+<column name="t_42_ce1">9, 2, 1, 2</column>
+<column name="t_42_we0">9, 2, 1, 2</column>
+<column name="t_42_we1">9, 2, 1, 2</column>
+<column name="t_43_address0">14, 3, 6, 18</column>
+<column name="t_43_ce0">14, 3, 1, 3</column>
+<column name="t_43_ce1">9, 2, 1, 2</column>
+<column name="t_43_we0">9, 2, 1, 2</column>
+<column name="t_43_we1">9, 2, 1, 2</column>
+<column name="t_address0">14, 3, 6, 18</column>
+<column name="t_ce0">14, 3, 1, 3</column>
+<column name="t_ce1">9, 2, 1, 2</column>
+<column name="t_we0">9, 2, 1, 2</column>
+<column name="t_we1">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">8, 0, 8, 0</column>
+<column name="grp_KeccakF1600_StatePermute_fu_64_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_absorb_fu_46_ap_start_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
+<column name="ephemeralsk_address0">out, 5, ap_memory, ephemeralsk, array</column>
+<column name="ephemeralsk_ce0">out, 1, ap_memory, ephemeralsk, array</column>
+<column name="ephemeralsk_we0">out, 1, ap_memory, ephemeralsk, array</column>
+<column name="ephemeralsk_d0">out, 8, ap_memory, ephemeralsk, array</column>
+<column name="in_0_address0">out, 7, ap_memory, in_0, array</column>
+<column name="in_0_ce0">out, 1, ap_memory, in_0, array</column>
+<column name="in_0_q0">in, 8, ap_memory, in_0, array</column>
+<column name="in_0_address1">out, 7, ap_memory, in_0, array</column>
+<column name="in_0_ce1">out, 1, ap_memory, in_0, array</column>
+<column name="in_0_q1">in, 8, ap_memory, in_0, array</column>
+<column name="in_1_address0">out, 7, ap_memory, in_1, array</column>
+<column name="in_1_ce0">out, 1, ap_memory, in_1, array</column>
+<column name="in_1_q0">in, 8, ap_memory, in_1, array</column>
+<column name="in_1_address1">out, 7, ap_memory, in_1, array</column>
+<column name="in_1_ce1">out, 1, ap_memory, in_1, array</column>
+<column name="in_1_q1">in, 8, ap_memory, in_1, array</column>
+<column name="in_2_address0">out, 7, ap_memory, in_2, array</column>
+<column name="in_2_ce0">out, 1, ap_memory, in_2, array</column>
+<column name="in_2_q0">in, 8, ap_memory, in_2, array</column>
+<column name="in_2_address1">out, 7, ap_memory, in_2, array</column>
+<column name="in_2_ce1">out, 1, ap_memory, in_2, array</column>
+<column name="in_2_q1">in, 8, ap_memory, in_2, array</column>
+<column name="in_3_address0">out, 7, ap_memory, in_3, array</column>
+<column name="in_3_ce0">out, 1, ap_memory, in_3, array</column>
+<column name="in_3_q0">in, 8, ap_memory, in_3, array</column>
+<column name="in_3_address1">out, 7, ap_memory, in_3, array</column>
+<column name="in_3_ce1">out, 1, ap_memory, in_3, array</column>
+<column name="in_3_q1">in, 8, ap_memory, in_3, array</column>
+</table>
+</item>
+</section>
+</profile>

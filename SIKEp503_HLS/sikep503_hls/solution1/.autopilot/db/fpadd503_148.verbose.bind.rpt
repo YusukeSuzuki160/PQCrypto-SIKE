@@ -1,0 +1,380 @@
+
+
+================================================================
+== Vitis HLS Report for 'fpadd503_148'
+================================================================
+* Date:           Tue May 20 14:30:18 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.832 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       54|       54|  0.540 us|  0.540 us|   54|   54|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                 |                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                     Instance                    |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_fpadd503_148_Pipeline_VITIS_LOOP_23_1_fu_18  |fpadd503_148_Pipeline_VITIS_LOOP_23_1  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_148_Pipeline_VITIS_LOOP_28_2_fu_26  |fpadd503_148_Pipeline_VITIS_LOOP_28_2  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_148_Pipeline_VITIS_LOOP_34_3_fu_35  |fpadd503_148_Pipeline_VITIS_LOOP_34_3  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%carry_208_loc = alloca i32 1"   --->   Operation 7 'alloca' 'carry_208_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.148_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %b"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.148_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %b"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.148_Pipeline_VITIS_LOOP_28_2, i64 %c, i1 %carry_208_loc, i64 %p503x2_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.148_Pipeline_VITIS_LOOP_28_2, i64 %c, i1 %carry_208_loc, i64 %p503x2_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.99>
+ST_5 : Operation 12 [1/1] (0.00ns)   --->   "%carry_208_loc_load = load i1 %carry_208_loc"   --->   Operation 12 'load' 'carry_208_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 13 [2/2] (0.99ns)   --->   "%call_ln0 = call void @fpadd503.148_Pipeline_VITIS_LOOP_34_3, i64 %c, i1 %carry_208_loc_load, i64 %p503x2_1"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 14 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.148_Pipeline_VITIS_LOOP_34_3, i64 %c, i1 %carry_208_loc_load, i64 %p503x2_1"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_generic.c:37]   --->   Operation 15 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[01]; IO mode=ap_memory:ce=0
+Port [ b]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ p503x2_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+carry_208_loc      (alloca) [ 0011110]
+call_ln0           (call  ) [ 0000000]
+call_ln0           (call  ) [ 0000000]
+carry_208_loc_load (load  ) [ 0000001]
+call_ln0           (call  ) [ 0000000]
+ret_ln37           (ret   ) [ 0000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="c">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="c"/><MemPortTyVec>0 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="b">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="b"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="p503x2_1">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p503x2_1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fpadd503.148_Pipeline_VITIS_LOOP_23_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fpadd503.148_Pipeline_VITIS_LOOP_28_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fpadd503.148_Pipeline_VITIS_LOOP_34_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1004" name="carry_208_loc_fu_14">
+<pin_list>
+<pin id="15" dir="0" index="0" bw="1" slack="0"/>
+<pin id="16" dir="1" index="1" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="carry_208_loc/1 "/>
+</bind>
+</comp>
+
+<comp id="18" class="1004" name="grp_fpadd503_148_Pipeline_VITIS_LOOP_23_1_fu_18">
+<pin_list>
+<pin id="19" dir="0" index="0" bw="0" slack="0"/>
+<pin id="20" dir="0" index="1" bw="64" slack="0"/>
+<pin id="21" dir="0" index="2" bw="64" slack="0"/>
+<pin id="22" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="26" class="1004" name="grp_fpadd503_148_Pipeline_VITIS_LOOP_28_2_fu_26">
+<pin_list>
+<pin id="27" dir="0" index="0" bw="0" slack="0"/>
+<pin id="28" dir="0" index="1" bw="64" slack="0"/>
+<pin id="29" dir="0" index="2" bw="1" slack="2"/>
+<pin id="30" dir="0" index="3" bw="64" slack="0"/>
+<pin id="31" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/3 "/>
+</bind>
+</comp>
+
+<comp id="35" class="1004" name="grp_fpadd503_148_Pipeline_VITIS_LOOP_34_3_fu_35">
+<pin_list>
+<pin id="36" dir="0" index="0" bw="0" slack="0"/>
+<pin id="37" dir="0" index="1" bw="64" slack="0"/>
+<pin id="38" dir="0" index="2" bw="1" slack="0"/>
+<pin id="39" dir="0" index="3" bw="64" slack="0"/>
+<pin id="40" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/5 "/>
+</bind>
+</comp>
+
+<comp id="44" class="1004" name="carry_208_loc_load_load_fu_44">
+<pin_list>
+<pin id="45" dir="0" index="0" bw="1" slack="4"/>
+<pin id="46" dir="1" index="1" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="carry_208_loc_load/5 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1005" name="carry_208_loc_reg_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="1" slack="2"/>
+<pin id="50" dir="1" index="1" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opset="carry_208_loc "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="17"><net_src comp="6" pin="0"/><net_sink comp="14" pin=0"/></net>
+
+<net id="23"><net_src comp="8" pin="0"/><net_sink comp="18" pin=0"/></net>
+
+<net id="24"><net_src comp="0" pin="0"/><net_sink comp="18" pin=1"/></net>
+
+<net id="25"><net_src comp="2" pin="0"/><net_sink comp="18" pin=2"/></net>
+
+<net id="32"><net_src comp="10" pin="0"/><net_sink comp="26" pin=0"/></net>
+
+<net id="33"><net_src comp="0" pin="0"/><net_sink comp="26" pin=1"/></net>
+
+<net id="34"><net_src comp="4" pin="0"/><net_sink comp="26" pin=3"/></net>
+
+<net id="41"><net_src comp="12" pin="0"/><net_sink comp="35" pin=0"/></net>
+
+<net id="42"><net_src comp="0" pin="0"/><net_sink comp="35" pin=1"/></net>
+
+<net id="43"><net_src comp="4" pin="0"/><net_sink comp="35" pin=3"/></net>
+
+<net id="47"><net_src comp="44" pin="1"/><net_sink comp="35" pin=2"/></net>
+
+<net id="51"><net_src comp="14" pin="1"/><net_sink comp="48" pin=0"/></net>
+
+<net id="52"><net_src comp="48" pin="1"/><net_sink comp="26" pin=2"/></net>
+
+<net id="53"><net_src comp="48" pin="1"/><net_sink comp="44" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: c | {1 2 3 4 5 6 }
+ - Input state : 
+	Port: fpadd503.148 : c | {1 2 3 4 5 6 }
+	Port: fpadd503.148 : b | {1 2 }
+	Port: fpadd503.148 : p503x2_1 | {3 4 5 6 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+		call_ln0 : 1
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------------|---------|---------|---------|
+| Operation|                 Functional Unit                 |  Delay  |    FF   |   LUT   |
+|----------|-------------------------------------------------|---------|---------|---------|
+|          | grp_fpadd503_148_Pipeline_VITIS_LOOP_23_1_fu_18 |  3.176  |   205   |   572   |
+|   call   | grp_fpadd503_148_Pipeline_VITIS_LOOP_28_2_fu_26 |  4.764  |    78   |   592   |
+|          | grp_fpadd503_148_Pipeline_VITIS_LOOP_34_3_fu_35 |  3.176  |   269   |   638   |
+|----------|-------------------------------------------------|---------|---------|---------|
+|   Total  |                                                 |  11.116 |   552   |   1802  |
+|----------|-------------------------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++--------------------+--------+
+|                    |   FF   |
++--------------------+--------+
+|carry_208_loc_reg_48|    1   |
++--------------------+--------+
+|        Total       |    1   |
++--------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |   11   |   552  |  1802  |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |    1   |    -   |
++-----------+--------+--------+--------+
+|   Total   |   11   |   553  |  1802  |
++-----------+--------+--------+--------+

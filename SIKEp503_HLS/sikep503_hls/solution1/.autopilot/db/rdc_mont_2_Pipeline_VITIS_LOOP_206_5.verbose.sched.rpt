@@ -1,0 +1,332 @@
+
+
+================================================================
+== Vitis HLS Report for 'rdc_mont_2_Pipeline_VITIS_LOOP_206_5'
+================================================================
+* Date:           Tue May 20 14:31:02 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.040 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       11|       17|  0.110 us|  0.170 us|    2|    8|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_206_5  |        9|       15|        10|          1|          1|  1 ~ 7|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 10
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.66>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%t = alloca i32 1" [src/generic/fp_generic.c:178]   --->   Operation 13 'alloca' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%u_33 = alloca i32 1" [src/generic/fp_generic.c:178]   --->   Operation 14 'alloca' 'u_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%v = alloca i32 1" [src/generic/fp_generic.c:178]   --->   Operation 15 'alloca' 'v' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%j_4 = alloca i32 1" [src/generic/fp_generic.c:177]   --->   Operation 16 'alloca' 'j_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 17 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %empty"   --->   Operation 18 'read' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mc_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %mc"   --->   Operation 19 'read' 'mc_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%sub66_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %sub66"   --->   Operation 20 'read' 'sub66_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%u_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %u"   --->   Operation 21 'read' 'u_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%v_36_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %v_36"   --->   Operation 22 'read' 'v_36_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%indvars_iv_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %indvars_iv"   --->   Operation 23 'read' 'indvars_iv_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%indvars_iv_cast = zext i3 %indvars_iv_read"   --->   Operation 24 'zext' 'indvars_iv_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln177 = store i4 %indvars_iv_cast, i4 %j_4" [src/generic/fp_generic.c:177]   --->   Operation 25 'store' 'store_ln177' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 26 [1/1] (1.58ns)   --->   "%store_ln178 = store i64 %v_36_read, i64 %v" [src/generic/fp_generic.c:178]   --->   Operation 26 'store' 'store_ln178' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%store_ln178 = store i64 %u_read, i64 %u_33" [src/generic/fp_generic.c:178]   --->   Operation 27 'store' 'store_ln178' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 28 [1/1] (1.58ns)   --->   "%store_ln178 = store i64 0, i64 %t" [src/generic/fp_generic.c:178]   --->   Operation 28 'store' 'store_ln178' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body65"   --->   Operation 29 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%j = load i4 %j_4" [src/generic/fp_generic.c:206]   --->   Operation 30 'load' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.73ns)   --->   "%icmp_ln206 = icmp_eq  i4 %j, i4 8" [src/generic/fp_generic.c:206]   --->   Operation 31 'icmp' 'icmp_ln206' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln206 = br i1 %icmp_ln206, void %for.body65.split_ifconv, void %for.inc118.exitStub" [src/generic/fp_generic.c:206]   --->   Operation 32 'br' 'br_ln206' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln206 = zext i4 %j" [src/generic/fp_generic.c:206]   --->   Operation 33 'zext' 'zext_ln206' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln206 = trunc i4 %j" [src/generic/fp_generic.c:206]   --->   Operation 34 'trunc' 'trunc_ln206' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (2.55ns)   --->   "%icmp_ln207 = icmp_ult  i32 %zext_ln206, i32 %sub66_read" [src/generic/fp_generic.c:207]   --->   Operation 35 'icmp' 'icmp_ln207' <Predicate = (!icmp_ln206)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%shl_ln5 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i4.i3, i4 %j, i3 0" [src/generic/fp_generic.c:208]   --->   Operation 36 'bitconcatenate' 'shl_ln5' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln208 = zext i7 %shl_ln5" [src/generic/fp_generic.c:208]   --->   Operation 37 'zext' 'zext_ln208' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (1.82ns)   --->   "%add_ln208 = add i9 %zext_ln208, i9 %mc_read" [src/generic/fp_generic.c:208]   --->   Operation 38 'add' 'add_ln208' <Predicate = (!icmp_ln206)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%lshr_ln7 = partselect i6 @_ssdm_op_PartSelect.i6.i9.i32.i32, i9 %add_ln208, i32 3, i32 8" [src/generic/fp_generic.c:208]   --->   Operation 39 'partselect' 'lshr_ln7' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln208_3 = zext i6 %lshr_ln7" [src/generic/fp_generic.c:208]   --->   Operation 40 'zext' 'zext_ln208_3' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%PKB_addr = getelementptr i64 %PKB, i32 0, i32 %zext_ln208_3" [src/generic/fp_generic.c:208]   --->   Operation 41 'getelementptr' 'PKB_addr' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 42 [2/2] (3.25ns)   --->   "%PKB_load = load i6 %PKB_addr" [src/generic/fp_generic.c:208]   --->   Operation 42 'load' 'PKB_load' <Predicate = (!icmp_ln206)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 48> <RAM>
+ST_1 : Operation 43 [1/1] (1.65ns)   --->   "%sub_ln208 = sub i3 %tmp, i3 %trunc_ln206" [src/generic/fp_generic.c:208]   --->   Operation 43 'sub' 'sub_ln208' <Predicate = (!icmp_ln206)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln208_4 = zext i3 %sub_ln208" [src/generic/fp_generic.c:208]   --->   Operation 44 'zext' 'zext_ln208_4' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%p503p1_1_addr = getelementptr i64 %p503p1_1, i32 0, i32 %zext_ln208_4" [src/generic/fp_generic.c:208]   --->   Operation 45 'getelementptr' 'p503p1_1_addr' <Predicate = (!icmp_ln206)> <Delay = 0.00>
+ST_1 : Operation 46 [2/2] (2.32ns)   --->   "%p503p1_1_load = load i3 %p503p1_1_addr" [src/generic/fp_generic.c:208]   --->   Operation 46 'load' 'p503p1_1_load' <Predicate = (!icmp_ln206)> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
+ST_1 : Operation 47 [1/1] (1.73ns)   --->   "%add_ln206 = add i4 %j, i4 1" [src/generic/fp_generic.c:206]   --->   Operation 47 'add' 'add_ln206' <Predicate = (!icmp_ln206)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 48 [1/1] (1.58ns)   --->   "%store_ln177 = store i4 %add_ln206, i4 %j_4" [src/generic/fp_generic.c:177]   --->   Operation 48 'store' 'store_ln177' <Predicate = (!icmp_ln206)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 49 [1/2] ( I:3.25ns O:3.25ns )   --->   "%PKB_load = load i6 %PKB_addr" [src/generic/fp_generic.c:208]   --->   Operation 49 'load' 'PKB_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 48> <RAM>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%al = trunc i64 %PKB_load" [src/generic/fp_generic.c:208]   --->   Operation 50 'trunc' 'al' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/2] ( I:2.32ns O:2.32ns )   --->   "%p503p1_1_load = load i3 %p503p1_1_addr" [src/generic/fp_generic.c:208]   --->   Operation 51 'load' 'p503p1_1_load' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%bl = trunc i64 %p503p1_1_load" [src/generic/fp_generic.c:103->src/generic/fp_generic.c:208]   --->   Operation 52 'trunc' 'bl' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%ah = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %PKB_load, i32 32, i32 63" [src/generic/fp_generic.c:110->src/generic/fp_generic.c:208]   --->   Operation 53 'partselect' 'ah' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%bh = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p503p1_1_load, i32 32, i32 63" [src/generic/fp_generic.c:112->src/generic/fp_generic.c:208]   --->   Operation 54 'partselect' 'bh' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln105_18 = zext i32 %al" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:208]   --->   Operation 55 'zext' 'zext_ln105_18' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln110 = zext i32 %ah" [src/generic/fp_generic.c:110->src/generic/fp_generic.c:208]   --->   Operation 56 'zext' 'zext_ln110' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln105 = zext i32 %bl" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:208]   --->   Operation 57 'zext' 'zext_ln105' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%zext_ln112 = zext i32 %bh" [src/generic/fp_generic.c:112->src/generic/fp_generic.c:208]   --->   Operation 58 'zext' 'zext_ln112' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [2/2] (6.91ns)   --->   "%albl = mul i64 %zext_ln105, i64 %zext_ln105_18" [src/generic/fp_generic.c:114->src/generic/fp_generic.c:208]   --->   Operation 59 'mul' 'albl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 60 [2/2] (6.91ns)   --->   "%albh = mul i64 %zext_ln112, i64 %zext_ln105_18" [src/generic/fp_generic.c:115->src/generic/fp_generic.c:208]   --->   Operation 60 'mul' 'albh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 61 [2/2] (6.91ns)   --->   "%ahbl = mul i64 %zext_ln105, i64 %zext_ln110" [src/generic/fp_generic.c:116->src/generic/fp_generic.c:208]   --->   Operation 61 'mul' 'ahbl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 62 [2/2] (6.91ns)   --->   "%ahbh = mul i64 %zext_ln112, i64 %zext_ln110" [src/generic/fp_generic.c:117->src/generic/fp_generic.c:208]   --->   Operation 62 'mul' 'ahbh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.91>
+ST_4 : Operation 63 [1/2] (6.91ns)   --->   "%albl = mul i64 %zext_ln105, i64 %zext_ln105_18" [src/generic/fp_generic.c:114->src/generic/fp_generic.c:208]   --->   Operation 63 'mul' 'albl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln106 = trunc i64 %albl" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 64 'trunc' 'trunc_ln106' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 65 [1/2] (6.91ns)   --->   "%albh = mul i64 %zext_ln112, i64 %zext_ln105_18" [src/generic/fp_generic.c:115->src/generic/fp_generic.c:208]   --->   Operation 65 'mul' 'albh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln106_27 = trunc i64 %albh" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 66 'trunc' 'trunc_ln106_27' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/2] (6.91ns)   --->   "%ahbl = mul i64 %zext_ln105, i64 %zext_ln110" [src/generic/fp_generic.c:116->src/generic/fp_generic.c:208]   --->   Operation 67 'mul' 'ahbl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%trunc_ln106_28 = trunc i64 %ahbl" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 68 'trunc' 'trunc_ln106_28' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 69 [1/2] (6.91ns)   --->   "%ahbh = mul i64 %zext_ln112, i64 %zext_ln110" [src/generic/fp_generic.c:117->src/generic/fp_generic.c:208]   --->   Operation 69 'mul' 'ahbh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%trunc_ln106_30 = trunc i64 %ahbh" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 70 'trunc' 'trunc_ln106_30' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_s = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %albl, i32 32, i32 63" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 71 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "%tmp_33 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %ahbl, i32 32, i32 63" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 72 'partselect' 'tmp_33' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%trunc_ln106_s = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %albh, i32 32, i32 63" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 73 'partselect' 'trunc_ln106_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_34 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %ahbh, i32 32, i32 63" [src/generic/fp_generic.c:210]   --->   Operation 74 'partselect' 'tmp_34' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 5.14>
+ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln106 = zext i32 %tmp_s" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 75 'zext' 'zext_ln106' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%zext_ln123 = zext i32 %trunc_ln106_28" [src/generic/fp_generic.c:123->src/generic/fp_generic.c:208]   --->   Operation 76 'zext' 'zext_ln123' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln123_12 = zext i32 %trunc_ln106_27" [src/generic/fp_generic.c:123->src/generic/fp_generic.c:208]   --->   Operation 77 'zext' 'zext_ln123_12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (2.55ns)   --->   "%add_ln123 = add i33 %zext_ln123, i33 %zext_ln123_12" [src/generic/fp_generic.c:123->src/generic/fp_generic.c:208]   --->   Operation 78 'add' 'add_ln123' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln123_13 = zext i33 %add_ln123" [src/generic/fp_generic.c:123->src/generic/fp_generic.c:208]   --->   Operation 79 'zext' 'zext_ln123_13' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (2.59ns)   --->   "%temp = add i34 %zext_ln123_13, i34 %zext_ln106" [src/generic/fp_generic.c:123->src/generic/fp_generic.c:208]   --->   Operation 80 'add' 'temp' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_32 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp, i32 32, i32 33" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 81 'partselect' 'tmp_32' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%trunc_ln125 = trunc i34 %temp" [src/generic/fp_generic.c:125->src/generic/fp_generic.c:208]   --->   Operation 82 'trunc' 'trunc_ln125' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln106_13 = zext i32 %tmp_33" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 83 'zext' 'zext_ln106_13' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln130 = zext i32 %trunc_ln106_30" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:208]   --->   Operation 84 'zext' 'zext_ln130' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 85 [1/1] (2.55ns)   --->   "%add_ln130 = add i33 %zext_ln130, i33 %zext_ln106_13" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:208]   --->   Operation 85 'add' 'add_ln130' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.14>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%zext_ln106_12 = zext i2 %tmp_32" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:208]   --->   Operation 86 'zext' 'zext_ln106_12' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln130_12 = zext i33 %add_ln130" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:208]   --->   Operation 87 'zext' 'zext_ln130_12' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 88 [1/1] (2.55ns)   --->   "%add_ln130_13 = add i32 %trunc_ln106_s, i32 %zext_ln106_12" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:208]   --->   Operation 88 'add' 'add_ln130_13' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 89 [1/1] (0.00ns)   --->   "%zext_ln130_13 = zext i32 %add_ln130_13" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:208]   --->   Operation 89 'zext' 'zext_ln130_13' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 90 [1/1] (2.59ns)   --->   "%temp_9 = add i34 %zext_ln130_13, i34 %zext_ln130_12" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:208]   --->   Operation 90 'add' 'temp_9' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 91 [1/1] (0.00ns)   --->   "%trunc_ln105 = trunc i34 %temp_9" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:208]   --->   Operation 91 'trunc' 'trunc_ln105' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_35 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_9, i32 32, i32 33" [src/generic/fp_generic.c:210]   --->   Operation 92 'partselect' 'tmp_35' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 4.51>
+ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%and_ln4 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %tmp_34, i32 0" [src/generic/fp_generic.c:210]   --->   Operation 93 'bitconcatenate' 'and_ln4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%and_ln210_4 = bitconcatenate i34 @_ssdm_op_BitConcatenate.i34.i2.i32, i2 %tmp_35, i32 0" [src/generic/fp_generic.c:210]   --->   Operation 94 'bitconcatenate' 'and_ln210_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln210 = zext i34 %and_ln210_4" [src/generic/fp_generic.c:210]   --->   Operation 95 'zext' 'zext_ln210' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln210_4 = zext i32 %trunc_ln105" [src/generic/fp_generic.c:210]   --->   Operation 96 'zext' 'zext_ln210_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 97 [1/1] (3.52ns)   --->   "%add_ln210 = add i64 %zext_ln210, i64 %and_ln4" [src/generic/fp_generic.c:210]   --->   Operation 97 'add' 'add_ln210' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 98 [1/1] (0.99ns)   --->   "%xor_ln210 = xor i64 %add_ln210, i64 %zext_ln210_4" [src/generic/fp_generic.c:210]   --->   Operation 98 'xor' 'xor_ln210' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 7.04>
+ST_8 : Operation 99 [1/1] (0.00ns)   --->   "%v_load_6 = load i64 %v" [src/generic/fp_generic.c:209]   --->   Operation 99 'load' 'v_load_6' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 100 [1/1] (0.00ns)   --->   "%shl_ln125_4 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %trunc_ln125, i32 0" [src/generic/fp_generic.c:125->src/generic/fp_generic.c:208]   --->   Operation 100 'bitconcatenate' 'shl_ln125_4' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 101 [1/1] (0.00ns)   --->   "%tempReg = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %trunc_ln125, i32 %trunc_ln106" [src/generic/fp_generic.c:125->src/generic/fp_generic.c:208]   --->   Operation 101 'bitconcatenate' 'tempReg' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 102 [1/1] (3.52ns)   --->   "%v_38 = add i64 %tempReg, i64 %v_load_6" [src/generic/fp_generic.c:209]   --->   Operation 102 'add' 'v_38' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node tempReg_9)   --->   "%xor_ln105 = xor i64 %shl_ln125_4, i64 %v_38" [src/config.h:105->src/generic/fp_generic.c:209]   --->   Operation 103 'xor' 'xor_ln105' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 104 [1/1] (0.00ns) (grouped into LUT with out node tempReg_9)   --->   "%xor_ln105_53 = xor i64 %v_load_6, i64 %shl_ln125_4" [src/config.h:105->src/generic/fp_generic.c:209]   --->   Operation 104 'xor' 'xor_ln105_53' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 105 [1/1] (0.00ns) (grouped into LUT with out node tempReg_9)   --->   "%or_ln105 = or i64 %xor_ln105_53, i64 %xor_ln105" [src/config.h:105->src/generic/fp_generic.c:209]   --->   Operation 105 'or' 'or_ln105' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 106 [1/1] (0.00ns) (grouped into LUT with out node tempReg_9)   --->   "%xor_ln105_54 = xor i64 %or_ln105, i64 %v_38" [src/config.h:105->src/generic/fp_generic.c:209]   --->   Operation 106 'xor' 'xor_ln105_54' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 107 [1/1] (0.00ns) (grouped into LUT with out node tempReg_9)   --->   "%carry = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_54, i32 63" [src/config.h:105->src/generic/fp_generic.c:209]   --->   Operation 107 'bitselect' 'carry' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 108 [1/1] (0.00ns) (grouped into LUT with out node tempReg_9)   --->   "%zext_ln105_19 = zext i1 %carry" [src/config.h:105->src/generic/fp_generic.c:209]   --->   Operation 108 'zext' 'zext_ln105_19' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 109 [1/1] (3.52ns) (out node of the LUT)   --->   "%tempReg_9 = add i64 %xor_ln210, i64 %zext_ln105_19" [src/generic/fp_generic.c:210]   --->   Operation 109 'add' 'tempReg_9' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 110 [1/1] (1.48ns)   --->   "%v_5 = select i1 %icmp_ln207, i64 %v_38, i64 %v_load_6" [src/generic/fp_generic.c:207]   --->   Operation 110 'select' 'v_5' <Predicate = true> <Delay = 1.48> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 111 [1/1] (1.58ns)   --->   "%store_ln178 = store i64 %v_5, i64 %v" [src/generic/fp_generic.c:178]   --->   Operation 111 'store' 'store_ln178' <Predicate = true> <Delay = 1.58>
+
+State 9 <SV = 8> <Delay = 6.58>
+ST_9 : Operation 112 [1/1] (0.00ns)   --->   "%u_33_load_1 = load i64 %u_33" [src/generic/fp_generic.c:210]   --->   Operation 112 'load' 'u_33_load_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 113 [1/1] (3.52ns)   --->   "%u_34 = add i64 %tempReg_9, i64 %u_33_load_1" [src/generic/fp_generic.c:210]   --->   Operation 113 'add' 'u_34' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 114 [1/1] (0.00ns) (grouped into LUT with out node tmp_37)   --->   "%xor_ln105_56 = xor i64 %tempReg_9, i64 %u_34" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 114 'xor' 'xor_ln105_56' <Predicate = (icmp_ln207)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 115 [1/1] (0.00ns) (grouped into LUT with out node tmp_37)   --->   "%xor_ln105_57 = xor i64 %u_33_load_1, i64 %tempReg_9" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 115 'xor' 'xor_ln105_57' <Predicate = (icmp_ln207)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 116 [1/1] (0.00ns) (grouped into LUT with out node tmp_37)   --->   "%or_ln105_10 = or i64 %xor_ln105_57, i64 %xor_ln105_56" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 116 'or' 'or_ln105_10' <Predicate = (icmp_ln207)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node tmp_37)   --->   "%xor_ln105_58 = xor i64 %or_ln105_10, i64 %u_34" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 117 'xor' 'xor_ln105_58' <Predicate = (icmp_ln207)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 118 [1/1] (0.99ns) (out node of the LUT)   --->   "%tmp_37 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_58, i32 63" [src/generic/fp_generic.c:210]   --->   Operation 118 'bitselect' 'tmp_37' <Predicate = (icmp_ln207)> <Delay = 0.99>
+ST_9 : Operation 119 [1/1] (1.48ns)   --->   "%u_5 = select i1 %icmp_ln207, i64 %u_34, i64 %u_33_load_1" [src/generic/fp_generic.c:207]   --->   Operation 119 'select' 'u_5' <Predicate = true> <Delay = 1.48> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 120 [1/1] (1.58ns)   --->   "%store_ln178 = store i64 %u_5, i64 %u_33" [src/generic/fp_generic.c:178]   --->   Operation 120 'store' 'store_ln178' <Predicate = true> <Delay = 1.58>
+ST_9 : Operation 137 [1/1] (0.00ns)   --->   "%t_load = load i64 %t"   --->   Operation 137 'load' 't_load' <Predicate = (icmp_ln206)> <Delay = 0.00>
+ST_9 : Operation 138 [1/1] (0.00ns)   --->   "%u_33_load = load i64 %u_33"   --->   Operation 138 'load' 'u_33_load' <Predicate = (icmp_ln206)> <Delay = 0.00>
+ST_9 : Operation 139 [1/1] (0.00ns)   --->   "%v_load = load i64 %v"   --->   Operation 139 'load' 'v_load' <Predicate = (icmp_ln206)> <Delay = 0.00>
+ST_9 : Operation 140 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_43_out, i64 %v_load"   --->   Operation 140 'write' 'write_ln0' <Predicate = (icmp_ln206)> <Delay = 0.00>
+ST_9 : Operation 141 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %u_39_out, i64 %u_33_load"   --->   Operation 141 'write' 'write_ln0' <Predicate = (icmp_ln206)> <Delay = 0.00>
+ST_9 : Operation 142 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %t_20_out, i64 %t_load"   --->   Operation 142 'write' 'write_ln0' <Predicate = (icmp_ln206)> <Delay = 0.00>
+ST_9 : Operation 143 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 143 'ret' 'ret_ln0' <Predicate = (icmp_ln206)> <Delay = 1.58>
+
+State 10 <SV = 9> <Delay = 6.58>
+ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%t_load_7 = load i64 %t" [src/generic/fp_generic.c:211]   --->   Operation 121 'load' 't_load_7' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 122 [1/1] (0.00ns)   --->   "%specpipeline_ln178 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:178]   --->   Operation 122 'specpipeline' 'specpipeline_ln178' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 123 [1/1] (0.00ns)   --->   "%speclooptripcount_ln178 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 7, i64 4" [src/generic/fp_generic.c:178]   --->   Operation 123 'speclooptripcount' 'speclooptripcount_ln178' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 124 [1/1] (0.00ns)   --->   "%specloopname_ln206 = specloopname void @_ssdm_op_SpecLoopName, void @empty_97" [src/generic/fp_generic.c:206]   --->   Operation 124 'specloopname' 'specloopname_ln206' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 125 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%bit_sel4 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg_9, i64 63" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 125 'bitselect' 'bit_sel4' <Predicate = (icmp_ln207)> <Delay = 0.00>
+ST_10 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%xor_ln105_55 = xor i1 %bit_sel4, i1 1" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 126 'xor' 'xor_ln105_55' <Predicate = (icmp_ln207)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%trunc_ln105_12 = trunc i64 %tempReg_9" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 127 'trunc' 'trunc_ln105_12' <Predicate = (icmp_ln207)> <Delay = 0.00>
+ST_10 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%xor_ln105_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln105_55, i63 %trunc_ln105_12" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 128 'bitconcatenate' 'xor_ln105_s' <Predicate = (icmp_ln207)> <Delay = 0.00>
+ST_10 : Operation 129 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%and_ln105 = and i64 %xor_ln210, i64 %xor_ln105_s" [src/config.h:105->src/generic/fp_generic.c:210]   --->   Operation 129 'and' 'and_ln105' <Predicate = (icmp_ln207)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 130 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%tmp_36 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %and_ln105, i32 63" [src/config.h:103->src/generic/fp_generic.c:210]   --->   Operation 130 'bitselect' 'tmp_36' <Predicate = (icmp_ln207)> <Delay = 0.00>
+ST_10 : Operation 131 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%carry_18 = or i1 %tmp_37, i1 %tmp_36" [src/generic/fp_generic.c:210]   --->   Operation 131 'or' 'carry_18' <Predicate = (icmp_ln207)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 132 [1/1] (0.00ns) (grouped into LUT with out node t_13)   --->   "%zext_ln211 = zext i1 %carry_18" [src/generic/fp_generic.c:211]   --->   Operation 132 'zext' 'zext_ln211' <Predicate = (icmp_ln207)> <Delay = 0.00>
+ST_10 : Operation 133 [1/1] (3.52ns) (out node of the LUT)   --->   "%t_13 = add i64 %t_load_7, i64 %zext_ln211" [src/generic/fp_generic.c:211]   --->   Operation 133 'add' 't_13' <Predicate = (icmp_ln207)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 134 [1/1] (1.48ns)   --->   "%t_5 = select i1 %icmp_ln207, i64 %t_13, i64 %t_load_7" [src/generic/fp_generic.c:207]   --->   Operation 134 'select' 't_5' <Predicate = true> <Delay = 1.48> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_10 : Operation 135 [1/1] (1.58ns)   --->   "%store_ln178 = store i64 %t_5, i64 %t" [src/generic/fp_generic.c:178]   --->   Operation 135 'store' 'store_ln178' <Predicate = true> <Delay = 1.58>
+ST_10 : Operation 136 [1/1] (0.00ns)   --->   "%br_ln206 = br void %for.body65" [src/generic/fp_generic.c:206]   --->   Operation 136 'br' 'br_ln206' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 6.665ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln177', src/generic/fp_generic.c:177) of variable 'indvars_iv_cast' on local variable 'j', src/generic/fp_generic.c:177 [24]  (1.588 ns)
+	'load' operation 4 bit ('j', src/generic/fp_generic.c:206) on local variable 'j', src/generic/fp_generic.c:177 [30]  (0.000 ns)
+	'add' operation 9 bit ('add_ln208', src/generic/fp_generic.c:208) [45]  (1.823 ns)
+	'getelementptr' operation 6 bit ('PKB_addr', src/generic/fp_generic.c:208) [48]  (0.000 ns)
+	'load' operation 64 bit ('a', src/generic/fp_generic.c:208) on array 'PKB' [49]  (3.254 ns)
+
+ <State 2>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('a', src/generic/fp_generic.c:208) on array 'PKB' [49]  (3.254 ns)
+
+ <State 3>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('albl', src/generic/fp_generic.c:114->src/generic/fp_generic.c:208) [62]  (6.912 ns)
+
+ <State 4>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('albl', src/generic/fp_generic.c:114->src/generic/fp_generic.c:208) [62]  (6.912 ns)
+
+ <State 5>: 5.145ns
+The critical path consists of the following:
+	'add' operation 33 bit ('add_ln123', src/generic/fp_generic.c:123->src/generic/fp_generic.c:208) [74]  (2.552 ns)
+	'add' operation 34 bit ('temp', src/generic/fp_generic.c:123->src/generic/fp_generic.c:208) [76]  (2.593 ns)
+
+ <State 6>: 5.145ns
+The critical path consists of the following:
+	'add' operation 32 bit ('add_ln130_13', src/generic/fp_generic.c:130->src/generic/fp_generic.c:208) [88]  (2.552 ns)
+	'add' operation 34 bit ('temp', src/generic/fp_generic.c:130->src/generic/fp_generic.c:208) [90]  (2.593 ns)
+
+ <State 7>: 4.510ns
+The critical path consists of the following:
+	'add' operation 64 bit ('add_ln210', src/generic/fp_generic.c:210) [105]  (3.520 ns)
+	'xor' operation 64 bit ('xor_ln210', src/generic/fp_generic.c:210) [106]  (0.990 ns)
+
+ <State 8>: 7.040ns
+The critical path consists of the following:
+	'load' operation 64 bit ('v_load_6', src/generic/fp_generic.c:209) on local variable 'v', src/generic/fp_generic.c:178 [36]  (0.000 ns)
+	'add' operation 64 bit ('v', src/generic/fp_generic.c:209) [92]  (3.520 ns)
+	'xor' operation 64 bit ('xor_ln105_54', src/config.h:105->src/generic/fp_generic.c:209) [96]  (0.000 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.c:210) [107]  (3.520 ns)
+
+ <State 9>: 6.589ns
+The critical path consists of the following:
+	'load' operation 64 bit ('u_33_load_1', src/generic/fp_generic.c:210) on local variable 'u', src/generic/fp_generic.c:178 [35]  (0.000 ns)
+	'add' operation 64 bit ('u', src/generic/fp_generic.c:210) [108]  (3.520 ns)
+	'select' operation 64 bit ('u', src/generic/fp_generic.c:207) [124]  (1.481 ns)
+	'store' operation 0 bit ('store_ln178', src/generic/fp_generic.c:178) of variable 'u', src/generic/fp_generic.c:207 on local variable 'u', src/generic/fp_generic.c:178 [129]  (1.588 ns)
+
+ <State 10>: 6.589ns
+The critical path consists of the following:
+	'load' operation 64 bit ('t_load_7', src/generic/fp_generic.c:211) on local variable 't', src/generic/fp_generic.c:178 [34]  (0.000 ns)
+	'add' operation 64 bit ('t', src/generic/fp_generic.c:211) [122]  (3.520 ns)
+	'select' operation 64 bit ('t', src/generic/fp_generic.c:207) [123]  (1.481 ns)
+	'store' operation 0 bit ('store_ln178', src/generic/fp_generic.c:178) of variable 't', src/generic/fp_generic.c:207 on local variable 't', src/generic/fp_generic.c:178 [130]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

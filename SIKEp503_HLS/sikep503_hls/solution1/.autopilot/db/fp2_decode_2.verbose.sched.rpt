@@ -1,0 +1,214 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2_decode_2'
+================================================================
+* Date:           Tue May 20 14:32:49 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1082|     1602|  10.820 us|  16.020 us|  1082|  1602|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.82>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%x_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %x"   --->   Operation 13 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%temp = alloca i32 1" [src/fpx.c:60->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 14 'alloca' 'temp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%temp_71 = alloca i32 1" [src/fpx.c:60->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 15 'alloca' 'temp_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (1.82ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_VITIS_LOOP_51_1, i9 %x_read, i64 %PKB"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_3, i64 %temp_71"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_4, i64 %temp"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 5.09>
+ST_2 : Operation 19 [1/2] (5.09ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_VITIS_LOOP_51_1, i9 %x_read, i64 %PKB"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 5.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 20 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_3, i64 %temp_71"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 21 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_4, i64 %temp"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 2.55>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%enc_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %enc"   --->   Operation 22 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [2/2] (2.55ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_VITIS_LOOP_53_2, i32 %enc_read, i8 %gmem2, i9 %x_read, i64 %PKB"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 2.55> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 24 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.2_Pipeline_VITIS_LOOP_53_2, i32 %enc_read, i8 %gmem2, i9 %x_read, i64 %PKB"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln62 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgomery_R2_1, i64 %temp_71" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 25 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 1.73>
+ST_6 : Operation 26 [1/2] (1.73ns)   --->   "%call_ln62 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgomery_R2_1, i64 %temp_71" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 26 'call' 'call_ln62' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 5.07>
+ST_7 : Operation 27 [2/2] (5.07ns)   --->   "%call_ln63 = call void @rdc_mont.2, i64 %temp_71, i64 %PKB, i9 %x_read, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 27 'call' 'call_ln63' <Predicate = true> <Delay = 5.07> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln63 = call void @rdc_mont.2, i64 %temp_71, i64 %PKB, i9 %x_read, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 28 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 1.82>
+ST_9 : Operation 29 [1/1] (1.82ns)   --->   "%add_ln62 = add i9 %x_read, i9 64" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 29 'add' 'add_ln62' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln62 = call void @mp_mul.862, i64 %PKB, i9 %add_ln62, i64 %Montgomery_R2_1, i64 %temp" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 30 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 1.73>
+ST_10 : Operation 31 [1/2] (1.73ns)   --->   "%call_ln62 = call void @mp_mul.862, i64 %PKB, i9 %add_ln62, i64 %Montgomery_R2_1, i64 %temp" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 31 'call' 'call_ln62' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 5.07>
+ST_11 : Operation 32 [2/2] (5.07ns)   --->   "%call_ln63 = call void @rdc_mont.2, i64 %temp, i64 %PKB, i9 %add_ln62, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 32 'call' 'call_ln63' <Predicate = true> <Delay = 5.07> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem2, void @empty_88, i32 0, i32 0, void @empty_44, i32 0, i32 0, void @empty_73, void @empty_58, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 34 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 34 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln63 = call void @rdc_mont.2, i64 %temp, i64 %PKB, i9 %add_ln62, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 35 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln59 = ret" [src/sidh.c:59]   --->   Operation 36 'ret' 'ret_ln59' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.823ns
+The critical path consists of the following:
+	wire read operation ('x_read') on port 'x' [7]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2_decode.2_Pipeline_VITIS_LOOP_51_1' [13]  (1.823 ns)
+
+ <State 2>: 5.091ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2_decode.2_Pipeline_VITIS_LOOP_51_1' [13]  (5.091 ns)
+
+ <State 3>: 2.552ns
+The critical path consists of the following:
+	wire read operation ('enc_read') on port 'enc' [8]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2_decode.2_Pipeline_VITIS_LOOP_53_2' [14]  (2.552 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 1.735ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln62', src/fpx.c:62->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58) to 'mp_mul.862' [16]  (1.735 ns)
+
+ <State 7>: 5.077ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln63', src/fpx.c:63->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58) to 'rdc_mont.2' [17]  (5.077 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 1.823ns
+The critical path consists of the following:
+	'add' operation 9 bit ('add_ln62', src/fpx.c:62->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58) [19]  (1.823 ns)
+
+ <State 10>: 1.735ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln62', src/fpx.c:62->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58) to 'mp_mul.862' [20]  (1.735 ns)
+
+ <State 11>: 5.077ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln63', src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58) to 'rdc_mont.2' [21]  (5.077 ns)
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

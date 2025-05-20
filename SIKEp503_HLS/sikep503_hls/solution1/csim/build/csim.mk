@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../src/tb_top.cpp ../../../../src/sha3/fips202.c ../../../../src/random/random.c ../../../../src/generic/fp_generic.c ../../../../src/sike.c ../../../../src/sidh.c ../../../../src/fpx.c ../../../../src/ec_isogeny.c ../../../../src/P503.c ../../../../src/top.cpp
+HLS_SOURCES = ../../../../src/tb_top.cpp ../../../../src/sikep503_kem_enc_tb.cpp ../../../../src/sha3/fips202.c ../../../../src/random/random.c ../../../../src/generic/fp_generic.c ../../../../src/sike.c ../../../../src/sidh.c ../../../../src/fpx.c ../../../../src/ec_isogeny.c ../../../../src/P503.c
 
 override TARGET := csim.exe
 
@@ -89,6 +89,12 @@ $(ObjDir)/tb_top.o: ../../../../src/tb_top.cpp $(ObjDir)/.dir csim.mk
 
 -include $(ObjDir)/tb_top.d
 
+$(ObjDir)/sikep503_kem_enc_tb.o: ../../../../src/sikep503_kem_enc_tb.cpp $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../src/sikep503_kem_enc_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD -std=c++17 -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/sikep503_kem_enc_tb.d
+
 $(ObjDir)/fips202.o: ../../../../src/sha3/fips202.c $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../src/sha3/fips202.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
@@ -136,9 +142,3 @@ $(ObjDir)/P503.o: ../../../../src/P503.c $(ObjDir)/.dir csim.mk
 	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/P503.d
-
-$(ObjDir)/top.o: ../../../../src/top.cpp $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../src/top.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/top.d

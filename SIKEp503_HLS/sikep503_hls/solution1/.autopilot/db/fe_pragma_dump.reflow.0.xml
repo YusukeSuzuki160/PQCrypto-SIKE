@@ -1,0 +1,12 @@
+<pragmas>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="26" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="gmem0" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="27" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="gmem1" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="28" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="gmem2" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="29" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="ct" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="30" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="pk" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="31" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="ss" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="32" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="33" pragmaType="array_partition" parentfunction="sikep503_kem_enc_hw" dim="1" factor="0" mode="complete" dynamic="0" variable="ct"/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="34" pragmaType="array_partition" parentfunction="sikep503_kem_enc_hw" dim="1" factor="0" mode="complete" dynamic="0" variable="pk"/>
+<pragma file="src/sikep503_kem_enc_tb.cpp" line="35" pragmaType="array_partition" parentfunction="sikep503_kem_enc_hw" dim="1" factor="0" mode="complete" dynamic="0" variable="ss"/>
+</pragmas>

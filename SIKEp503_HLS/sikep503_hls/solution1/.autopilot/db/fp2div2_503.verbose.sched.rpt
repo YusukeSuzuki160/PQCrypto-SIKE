@@ -1,0 +1,238 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2div2_503'
+================================================================
+* Date:           Tue May 20 14:30:13 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.040 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       85|       85|  0.850 us|  0.850 us|   85|   85|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.32>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%c_0_addr = getelementptr i64 %c_0, i32 0, i32 0" [src/fpx.c:125]   --->   Operation 15 'getelementptr' 'c_0_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (2.32ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:77->src/fpx.c:125]   --->   Operation 16 'load' 'c_0_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 17 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:77->src/fpx.c:125]   --->   Operation 17 'load' 'c_0_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%mask = trunc i64 %c_0_load" [src/generic/fp_generic.c:77->src/fpx.c:125]   --->   Operation 18 'trunc' 'mask' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.99>
+ST_3 : Operation 19 [2/2] (0.99ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1, i64 %c_0, i64 %c_1, i1 %mask, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:125]   --->   Operation 19 'call' 'call_ln77' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1, i64 %c_0, i64 %c_1, i1 %mask, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:125]   --->   Operation 20 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_382_1, i64 %c_1, i64 %c_0"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 4.82>
+ST_6 : Operation 22 [1/2] (4.82ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_382_1, i64 %c_1, i64 %c_0"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 4.82> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 2.32>
+ST_7 : Operation 23 [1/1] (0.00ns)   --->   "%c_0_addr_3 = getelementptr i64 %c_0, i32 0, i32 4" [src/fpx.c:126]   --->   Operation 23 'getelementptr' 'c_0_addr_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%c_1_addr = getelementptr i64 %c_1, i32 0, i32 3" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125]   --->   Operation 24 'getelementptr' 'c_1_addr' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 25 [2/2] (2.32ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125]   --->   Operation 25 'load' 'c_1_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_7 : Operation 26 [2/2] (2.32ns)   --->   "%c_0_load_3 = load i3 %c_0_addr_3" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 26 'load' 'c_0_load_3' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 8 <SV = 7> <Delay = 4.64>
+ST_8 : Operation 27 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125]   --->   Operation 27 'load' 'c_1_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load, i32 1, i32 63" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125]   --->   Operation 28 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln385 = zext i63 %lshr_ln" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125]   --->   Operation 29 'zext' 'zext_ln385' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln385 = store i64 %zext_ln385, i3 %c_1_addr" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125]   --->   Operation 30 'store' 'store_ln385' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 31 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_0_load_3 = load i3 %c_0_addr_3" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 31 'load' 'c_0_load_3' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%mask_1 = trunc i64 %c_0_load_3" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 32 'trunc' 'mask_1' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 0.99>
+ST_9 : Operation 33 [2/2] (0.99ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1212, i64 %c_0, i64 %c_1, i1 %mask_1, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 33 'call' 'call_ln77' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1212, i64 %c_0, i64 %c_1, i1 %mask_1, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 34 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_382_1213, i64 %c_1, i64 %c_0"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 4.82>
+ST_12 : Operation 36 [1/2] (4.82ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_382_1213, i64 %c_1, i64 %c_0"   --->   Operation 36 'call' 'call_ln0' <Predicate = true> <Delay = 4.82> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 2.32>
+ST_13 : Operation 37 [1/1] (0.00ns)   --->   "%c_1_addr_3 = getelementptr i64 %c_1, i32 0, i32 7" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 37 'getelementptr' 'c_1_addr_3' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 38 [2/2] (2.32ns)   --->   "%c_1_load_3 = load i3 %c_1_addr_3" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 38 'load' 'c_1_load_3' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 14 <SV = 13> <Delay = 4.64>
+ST_14 : Operation 39 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_1_load_3 = load i3 %c_1_addr_3" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 39 'load' 'c_1_load_3' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_14 : Operation 40 [1/1] (0.00ns)   --->   "%lshr_ln385_1 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load_3, i32 1, i32 63" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 40 'partselect' 'lshr_ln385_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln385_1 = zext i63 %lshr_ln385_1" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 41 'zext' 'zext_ln385_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 42 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln385 = store i64 %zext_ln385_1, i3 %c_1_addr_3" [src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 42 'store' 'store_ln385' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_14 : Operation 43 [1/1] (0.00ns)   --->   "%ret_ln127 = ret" [src/fpx.c:127]   --->   Operation 43 'ret' 'ret_ln127' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.322ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('c_0_addr', src/fpx.c:125) [4]  (0.000 ns)
+	'load' operation 64 bit ('c_0_load', src/generic/fp_generic.c:77->src/fpx.c:125) on array 'c_0' [8]  (2.322 ns)
+
+ <State 2>: 2.322ns
+The critical path consists of the following:
+	'load' operation 64 bit ('c_0_load', src/generic/fp_generic.c:77->src/fpx.c:125) on array 'c_0' [8]  (2.322 ns)
+
+ <State 3>: 0.993ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src/generic/fp_generic.c:77->src/fpx.c:125) to 'fp2div2_503_Pipeline_VITIS_LOOP_78_1' [10]  (0.993 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 4.826ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2div2_503_Pipeline_VITIS_LOOP_382_1' [11]  (4.826 ns)
+
+ <State 7>: 2.322ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('c_1_addr', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125) [6]  (0.000 ns)
+	'load' operation 64 bit ('c_1_load', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125) on array 'c_1' [12]  (2.322 ns)
+
+ <State 8>: 4.644ns
+The critical path consists of the following:
+	'load' operation 64 bit ('c_1_load', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125) on array 'c_1' [12]  (2.322 ns)
+	'store' operation 0 bit ('store_ln385', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125) of variable 'zext_ln385', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:125 on array 'c_1' [15]  (2.322 ns)
+
+ <State 9>: 0.993ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src/generic/fp_generic.c:77->src/fpx.c:126) to 'fp2div2_503_Pipeline_VITIS_LOOP_78_1212' [18]  (0.993 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 4.826ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2div2_503_Pipeline_VITIS_LOOP_382_1213' [19]  (4.826 ns)
+
+ <State 13>: 2.322ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('c_1_addr_3', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126) [7]  (0.000 ns)
+	'load' operation 64 bit ('c_1_load_3', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126) on array 'c_1' [20]  (2.322 ns)
+
+ <State 14>: 4.644ns
+The critical path consists of the following:
+	'load' operation 64 bit ('c_1_load_3', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126) on array 'c_1' [20]  (2.322 ns)
+	'store' operation 0 bit ('store_ln385', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126) of variable 'zext_ln385_1', src/fpx.c:385->src/generic/fp_generic.c:82->src/fpx.c:126 on array 'c_1' [23]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

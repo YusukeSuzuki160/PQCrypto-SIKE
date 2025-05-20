@@ -1,0 +1,154 @@
+
+
+================================================================
+== Vitis HLS Report for 'fpadd503_58_60'
+================================================================
+* Date:           Tue May 20 14:30:12 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.040 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       57|       57|  0.570 us|  0.570 us|   57|   57|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.32>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%c_1_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_1_offset"   --->   Operation 7 'read' 'c_1_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%c_0_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_0_offset"   --->   Operation 8 'read' 'c_0_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%carry_loc = alloca i32 1"   --->   Operation 9 'alloca' 'carry_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [2/2] (2.32ns)   --->   "%call_ln0 = call void @fpadd503.58.60_Pipeline_VITIS_LOOP_23_1, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.58.60_Pipeline_VITIS_LOOP_23_1, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 2.32>
+ST_3 : Operation 12 [2/2] (2.32ns)   --->   "%call_ln0 = call void @fpadd503.58.60_Pipeline_VITIS_LOOP_28_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.58.60_Pipeline_VITIS_LOOP_28_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 2.32>
+ST_5 : Operation 14 [1/1] (0.00ns)   --->   "%carry_loc_load = load i1 %carry_loc"   --->   Operation 14 'load' 'carry_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 15 [2/2] (2.32ns)   --->   "%call_ln0 = call void @fpadd503.58.60_Pipeline_VITIS_LOOP_34_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.58.60_Pipeline_VITIS_LOOP_34_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 17 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_generic.c:37]   --->   Operation 17 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.322ns
+The critical path consists of the following:
+	wire read operation ('c_1_offset_read') on port 'c_1_offset' [6]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fpadd503.58.60_Pipeline_VITIS_LOOP_23_1' [9]  (2.322 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 2.322ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fpadd503.58.60_Pipeline_VITIS_LOOP_28_2' [10]  (2.322 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 2.322ns
+The critical path consists of the following:
+	'load' operation 1 bit ('carry_loc_load') on local variable 'carry_loc' [11]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fpadd503.58.60_Pipeline_VITIS_LOOP_34_3' [12]  (2.322 ns)
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,230 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2_decode_2'
+================================================================
+* Date:           Tue May 20 14:37:34 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1082|     1602|  10.820 us|  16.020 us|  1082|  1602|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                 |                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                     Instance                    |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_fp2_decode_2_Pipeline_VITIS_LOOP_51_1_fu_70  |fp2_decode_2_Pipeline_VITIS_LOOP_51_1  |      130|      130|  1.300 us|  1.300 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2_decode_2_Pipeline_3_fu_78                |fp2_decode_2_Pipeline_3                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2_decode_2_Pipeline_4_fu_84                |fp2_decode_2_Pipeline_4                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2_decode_2_Pipeline_VITIS_LOOP_53_2_fu_90  |fp2_decode_2_Pipeline_VITIS_LOOP_53_2  |      137|      137|  1.370 us|  1.370 us|  128|  128|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_mp_mul_862_fu_101                            |mp_mul_862                             |      212|      310|  2.120 us|  3.100 us|  212|  310|                                              no|
+        |grp_rdc_mont_2_fu_111                            |rdc_mont_2                             |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     16|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|   32|    7737|  10050|    -|
+|Memory           |        4|    -|       0|      0|    0|
+|Multiplexer      |        -|    -|       0|    342|    -|
+|Register         |        -|    -|      27|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        4|   32|    7764|  10408|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        1|   14|       7|     19|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
+    |                     Instance                    |                 Module                | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
+    |grp_fp2_decode_2_Pipeline_3_fu_78                |fp2_decode_2_Pipeline_3                |        0|   0|     7|    54|    0|
+    |grp_fp2_decode_2_Pipeline_4_fu_84                |fp2_decode_2_Pipeline_4                |        0|   0|     7|    54|    0|
+    |grp_fp2_decode_2_Pipeline_VITIS_LOOP_51_1_fu_70  |fp2_decode_2_Pipeline_VITIS_LOOP_51_1  |        0|   0|    20|   107|    0|
+    |grp_fp2_decode_2_Pipeline_VITIS_LOOP_53_2_fu_90  |fp2_decode_2_Pipeline_VITIS_LOOP_53_2  |        0|   0|   194|   731|    0|
+    |grp_mp_mul_862_fu_101                            |mp_mul_862                             |        0|  16|  3331|  3514|    0|
+    |grp_rdc_mont_2_fu_111                            |rdc_mont_2                             |        0|  16|  4178|  5590|    0|
+    +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
+    |Total                                            |                                       |        0|  32|  7737| 10050|    0|
+    +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory  |               Module               | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |temp_U     |fpsqr503_mont_1_temp_RAM_AUTO_1R1W  |        2|  0|   0|    0|    16|   64|     1|         1024|
+    |temp_71_U  |fpsqr503_mont_1_temp_RAM_AUTO_1R1W  |        2|  0|   0|    0|    16|   64|     1|         1024|
+    +-----------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total      |                                    |        4|  0|   0|    0|    32|  128|     2|         2048|
+    +-----------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |add_ln62_fu_121_p2               |         +|   0|  0|  14|           9|           7|
+    |ap_block_state2_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0|  16|          10|           8|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Montgomery_R2_1_ce0          |   9|          2|    1|          2|
+    |PKB_address0                 |  25|          5|    6|         30|
+    |PKB_ce0                      |  25|          5|    1|          5|
+    |PKB_d0                       |  20|          4|   64|        256|
+    |PKB_we0                      |  20|          4|    8|         32|
+    |ap_NS_fsm                    |  65|         13|    1|         13|
+    |grp_mp_mul_862_fu_101_a      |  14|          3|    9|         27|
+    |grp_rdc_mont_2_fu_111_ma_q0  |  14|          3|   64|        192|
+    |grp_rdc_mont_2_fu_111_mc     |  14|          3|    9|         27|
+    |temp_71_address0             |  20|          4|    4|         16|
+    |temp_71_ce0                  |  20|          4|    1|          4|
+    |temp_71_d0                   |  14|          3|   64|        192|
+    |temp_71_we0                  |  14|          3|    1|          3|
+    |temp_address0                |  20|          4|    4|         16|
+    |temp_ce0                     |  20|          4|    1|          4|
+    |temp_d0                      |  14|          3|   64|        192|
+    |temp_we0                     |  14|          3|    1|          3|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 342|         70|  303|       1014|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                             | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln62_reg_141                                              |   9|   0|    9|          0|
+    |ap_CS_fsm                                                     |  12|   0|   12|          0|
+    |grp_fp2_decode_2_Pipeline_3_fu_78_ap_start_reg                |   1|   0|    1|          0|
+    |grp_fp2_decode_2_Pipeline_4_fu_84_ap_start_reg                |   1|   0|    1|          0|
+    |grp_fp2_decode_2_Pipeline_VITIS_LOOP_51_1_fu_70_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fp2_decode_2_Pipeline_VITIS_LOOP_53_2_fu_90_ap_start_reg  |   1|   0|    1|          0|
+    |grp_mp_mul_862_fu_101_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_rdc_mont_2_fu_111_ap_start_reg                            |   1|   0|    1|          0|
+    +--------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                         |  27|   0|   27|          0|
+    +--------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-----------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++--------------------------+-----+-----+------------+-----------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|     fp2_decode.2|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|     fp2_decode.2|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|     fp2_decode.2|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|     fp2_decode.2|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|     fp2_decode.2|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|     fp2_decode.2|  return value|
+|m_axi_gmem2_0_AWVALID     |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWREADY     |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWADDR      |  out|   32|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWID        |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWLEN       |  out|   32|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWSIZE      |  out|    3|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWBURST     |  out|    2|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWLOCK      |  out|    2|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWCACHE     |  out|    4|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWPROT      |  out|    3|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWQOS       |  out|    4|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWREGION    |  out|    4|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_AWUSER      |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_WVALID      |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_WREADY      |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_WDATA       |  out|    8|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_WSTRB       |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_WLAST       |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_WID         |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_WUSER       |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARVALID     |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARREADY     |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARADDR      |  out|   32|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARID        |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARLEN       |  out|   32|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARSIZE      |  out|    3|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARBURST     |  out|    2|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARLOCK      |  out|    2|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARCACHE     |  out|    4|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARPROT      |  out|    3|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARQOS       |  out|    4|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARREGION    |  out|    4|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_ARUSER      |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RVALID      |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RREADY      |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RDATA       |   in|    8|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RLAST       |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RID         |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RFIFONUM    |   in|   11|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RUSER       |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_RRESP       |   in|    2|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_BVALID      |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_BREADY      |  out|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_BRESP       |   in|    2|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_BID         |   in|    1|       m_axi|            gmem2|       pointer|
+|m_axi_gmem2_0_BUSER       |   in|    1|       m_axi|            gmem2|       pointer|
+|enc                       |   in|   32|     ap_none|              enc|        scalar|
+|PKB_address0              |  out|    6|   ap_memory|              PKB|         array|
+|PKB_ce0                   |  out|    1|   ap_memory|              PKB|         array|
+|PKB_we0                   |  out|    8|   ap_memory|              PKB|         array|
+|PKB_d0                    |  out|   64|   ap_memory|              PKB|         array|
+|PKB_q0                    |   in|   64|   ap_memory|              PKB|         array|
+|x                         |   in|    9|     ap_none|                x|        scalar|
+|Montgomery_R2_1_address0  |  out|    3|   ap_memory|  Montgomery_R2_1|         array|
+|Montgomery_R2_1_ce0       |  out|    1|   ap_memory|  Montgomery_R2_1|         array|
+|Montgomery_R2_1_q0        |   in|   64|   ap_memory|  Montgomery_R2_1|         array|
++--------------------------+-----+-----+------------+-----------------+--------------+
+

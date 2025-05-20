@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2_decode_2_Pipeline_VITIS_LOOP_51_1'
+================================================================
+* Date:           Tue May 20 14:32:47 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.380 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |      130|      130|  1.300 us|  1.300 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_51_1  |      128|      128|         2|          1|          1|   128|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.09>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/sidh.c:49]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 6 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%x_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %x"   --->   Operation 7 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (1.58ns)   --->   "%store_ln49 = store i8 0, i8 %i" [src/sidh.c:49]   --->   Operation 8 'store' 'store_ln49' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 9 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%i_273 = load i8 %i" [src/sidh.c:51]   --->   Operation 10 'load' 'i_273' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.91ns)   --->   "%icmp_ln51 = icmp_eq  i8 %i_273, i8 128" [src/sidh.c:51]   --->   Operation 11 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (1.91ns)   --->   "%add_ln51 = add i8 %i_273, i8 1" [src/sidh.c:51]   --->   Operation 12 'add' 'add_ln51' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln51 = br i1 %icmp_ln51, void %for.inc.split, void %for.inc13.preheader.exitStub" [src/sidh.c:51]   --->   Operation 13 'br' 'br_ln51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln51 = zext i8 %i_273" [src/sidh.c:51]   --->   Operation 14 'zext' 'zext_ln51' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.82ns)   --->   "%add_ln52 = add i9 %zext_ln51, i9 %x_read" [src/sidh.c:52]   --->   Operation 15 'add' 'add_ln52' <Predicate = (!icmp_ln51)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln52 = trunc i9 %add_ln52" [src/sidh.c:52]   --->   Operation 16 'trunc' 'trunc_ln52' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i6 @_ssdm_op_PartSelect.i6.i9.i32.i32, i9 %add_ln52, i32 3, i32 8" [src/sidh.c:52]   --->   Operation 17 'partselect' 'lshr_ln' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.58ns)   --->   "%store_ln49 = store i8 %add_ln51, i8 %i" [src/sidh.c:49]   --->   Operation 18 'store' 'store_ln49' <Predicate = (!icmp_ln51)> <Delay = 1.58>
+ST_1 : Operation 28 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 28 'ret' 'ret_ln0' <Predicate = (icmp_ln51)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 5.38>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln49 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/sidh.c:49]   --->   Operation 19 'specpipeline' 'specpipeline_ln49' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%speclooptripcount_ln49 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 128, i64 128, i64 128" [src/sidh.c:49]   --->   Operation 20 'speclooptripcount' 'speclooptripcount_ln49' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln51 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [src/sidh.c:51]   --->   Operation 21 'specloopname' 'specloopname_ln51' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i3 %trunc_ln52" [src/sidh.c:52]   --->   Operation 22 'zext' 'zext_ln52' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (2.12ns)   --->   "%shl_ln52 = shl i8 1, i8 %zext_ln52" [src/sidh.c:52]   --->   Operation 23 'shl' 'shl_ln52' <Predicate = true> <Delay = 2.12> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 2.12> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln52_1 = zext i6 %lshr_ln" [src/sidh.c:52]   --->   Operation 24 'zext' 'zext_ln52_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%PKB_addr = getelementptr i64 %PKB, i32 0, i32 %zext_ln52_1" [src/sidh.c:52]   --->   Operation 25 'getelementptr' 'PKB_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln52 = store void @_ssdm_op_Write.bram.p0i64, i6 %PKB_addr, i64 0, i8 %shl_ln52" [src/sidh.c:52]   --->   Operation 26 'store' 'store_ln52' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 48> <RAM>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln51 = br void %for.inc" [src/sidh.c:51]   --->   Operation 27 'br' 'br_ln51' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.091ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln49', src/sidh.c:49) of constant 0 on local variable 'i', src/sidh.c:49 [6]  (1.588 ns)
+	'load' operation 8 bit ('i', src/sidh.c:51) on local variable 'i', src/sidh.c:49 [9]  (0.000 ns)
+	'add' operation 8 bit ('add_ln51', src/sidh.c:51) [11]  (1.915 ns)
+	'store' operation 0 bit ('store_ln49', src/sidh.c:49) of variable 'add_ln51', src/sidh.c:51 on local variable 'i', src/sidh.c:49 [26]  (1.588 ns)
+
+ <State 2>: 5.380ns
+The critical path consists of the following:
+	'shl' operation 8 bit ('shl_ln52', src/sidh.c:52) [21]  (2.126 ns)
+	'store' operation 0 bit ('store_ln52', src/sidh.c:52) of constant <constant:_ssdm_op_Write.bram.p0i64> on array 'PKB' [25]  (3.254 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

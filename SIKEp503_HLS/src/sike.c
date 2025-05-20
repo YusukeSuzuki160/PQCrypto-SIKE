@@ -7,6 +7,7 @@
 #include <string.h>
 #include "P503_internal.h"
 #include "sha3/fips202.h"
+#include "random/random.h"
 
 
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk)

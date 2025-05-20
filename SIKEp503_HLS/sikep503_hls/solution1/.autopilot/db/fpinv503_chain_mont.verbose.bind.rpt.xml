@@ -1,0 +1,103 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fpinv503_chain_mont'" level="0">
+<item name = "Date">Tue May 20 14:32:11 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.040 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">258057, 415877, 2.581 ms, 4.159 ms, 258057, 415877, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_fpinv503_chain_mont_Pipeline_1_fu_393">fpinv503_chain_mont_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_2_fu_399">fpinv503_chain_mont_Pipeline_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_141_2_fu_405">mp_mul_141_2, 212, 310, 2.120 us, 3.100 us, 212, 310, no</column>
+<column name="grp_rdc_mont_142_fu_412">rdc_mont_142, 190, 352, 1.900 us, 3.520 us, 190, 352, no</column>
+<column name="grp_mp_mul_152_fu_420">mp_mul_152, 212, 310, 2.120 us, 3.100 us, 212, 310, no</column>
+<column name="grp_rdc_mont_139_fu_428">rdc_mont_139, 190, 352, 1.900 us, 3.520 us, 190, 352, no</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_14_1_fu_438">fpinv503_chain_mont_Pipeline_VITIS_LOOP_14_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_3_fu_445">fpinv503_chain_mont_Pipeline_3, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_143_fu_450">mp_mul_143, 212, 310, 2.120 us, 3.100 us, 212, 310, no</column>
+<column name="grp_fpsqr503_mont_1_fu_458">fpsqr503_mont_1, 423, 683, 4.230 us, 6.830 us, 423, 683, no</column>
+<column name="grp_fpmul503_mont_2_fu_465">fpmul503_mont_2, 423, 683, 4.230 us, 6.830 us, 423, 683, no</column>
+<column name="grp_fpmul503_mont_1_fu_474">fpmul503_mont_1, 423, 683, 4.230 us, 6.830 us, 423, 683, no</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_14_1124_fu_498">fpinv503_chain_mont_Pipeline_VITIS_LOOP_14_1124, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_218_1">5978, 9618, 427 ~ 687, -, -, 14, no</column>
+<column name="- VITIS_LOOP_221_2">3400, 5480, 425 ~ 685, -, -, 8, no</column>
+<column name="- VITIS_LOOP_223_3">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_225_4">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_227_5">2550, 4110, 425 ~ 685, -, -, 6, no</column>
+<column name="- VITIS_LOOP_229_6">2975, 4795, 425 ~ 685, -, -, 7, no</column>
+<column name="- VITIS_LOOP_231_7">2975, 4795, 425 ~ 685, -, -, 7, no</column>
+<column name="- VITIS_LOOP_233_8">2975, 4795, 425 ~ 685, -, -, 7, no</column>
+<column name="- VITIS_LOOP_235_9">2975, 4795, 425 ~ 685, -, -, 7, no</column>
+<column name="- VITIS_LOOP_237_10">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_239_11">2975, 4795, 425 ~ 685, -, -, 7, no</column>
+<column name="- VITIS_LOOP_241_12">3400, 5480, 425 ~ 685, -, -, 8, no</column>
+<column name="- VITIS_LOOP_243_13">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_245_14">2550, 4110, 425 ~ 685, -, -, 6, no</column>
+<column name="- VITIS_LOOP_247_15">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_249_16">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_251_17">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_253_18">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_255_19">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_257_20">2550, 4110, 425 ~ 685, -, -, 6, no</column>
+<column name="- VITIS_LOOP_259_21">5100, 8220, 425 ~ 685, -, -, 12, no</column>
+<column name="- VITIS_LOOP_261_22">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_263_23">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_265_24">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_267_25">2550, 4110, 425 ~ 685, -, -, 6, no</column>
+<column name="- VITIS_LOOP_269_26">3400, 5480, 425 ~ 685, -, -, 8, no</column>
+<column name="- VITIS_LOOP_271_27">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_273_28">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_275_29">2975, 4795, 425 ~ 685, -, -, 7, no</column>
+<column name="- VITIS_LOOP_277_30">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_279_31">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_281_32">3400, 5480, 425 ~ 685, -, -, 8, no</column>
+<column name="- VITIS_LOOP_283_33">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_285_34">3400, 5480, 425 ~ 685, -, -, 8, no</column>
+<column name="- VITIS_LOOP_287_35">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_289_36">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_291_37">3400, 5480, 425 ~ 685, -, -, 8, no</column>
+<column name="- VITIS_LOOP_293_38">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_295_39">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_297_40">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_299_41">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+<column name="- VITIS_LOOP_301_42">3400, 5480, 425 ~ 685, -, -, 8, no</column>
+<column name="- VITIS_LOOP_303_43">2550, 4110, 425 ~ 685, -, -, 6, no</column>
+<column name="- VITIS_LOOP_305_44">124999, 201439, 2551 ~ 4111, -, -, 49, no</column>
+<column name=" + VITIS_LOOP_306_45">2125, 3425, 425 ~ 685, -, -, 5, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

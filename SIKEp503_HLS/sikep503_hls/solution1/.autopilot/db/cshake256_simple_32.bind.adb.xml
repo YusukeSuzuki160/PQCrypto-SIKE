@@ -1,0 +1,447 @@
+<stg><name>cshake256_simple.32</name>
+
+
+<trans_list>
+
+<trans id="24" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="25" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="26" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="27" from="4" to="5">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="28" from="5" to="6">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="29" from="6" to="7">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="30" from="7" to="8">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="64" op_0_bw="32">
+<![CDATA[
+entry:0 %s = alloca i32 1
+
+]]></Node>
+<StgValue><ssdm name="s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="8" op_0_bw="32">
+<![CDATA[
+entry:2 %t = alloca i32 1
+
+]]></Node>
+<StgValue><ssdm name="t"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="8" op_0_bw="32">
+<![CDATA[
+entry:3 %t_41 = alloca i32 1
+
+]]></Node>
+<StgValue><ssdm name="t_41"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="8" op_0_bw="32">
+<![CDATA[
+entry:4 %t_42 = alloca i32 1
+
+]]></Node>
+<StgValue><ssdm name="t_42"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="8" op_0_bw="32">
+<![CDATA[
+entry:5 %t_43 = alloca i32 1
+
+]]></Node>
+<StgValue><ssdm name="t_43"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="64">
+<![CDATA[
+entry:6 %call_ln561 = call void @cshake256_simple_absorb, i64 %s, i1 0, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %KeccakF_RoundConstants
+
+]]></Node>
+<StgValue><ssdm name="call_ln561"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="15" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="64">
+<![CDATA[
+entry:6 %call_ln561 = call void @cshake256_simple_absorb, i64 %s, i1 0, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %KeccakF_RoundConstants
+
+]]></Node>
+<StgValue><ssdm name="call_ln561"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="16" st_id="3" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:7 %call_ln376 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants
+
+]]></Node>
+<StgValue><ssdm name="call_ln376"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="17" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:7 %call_ln376 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants
+
+]]></Node>
+<StgValue><ssdm name="call_ln376"/></StgValue>
+</operation>
+</state>
+
+<state id="5" st_id="5">
+
+<operation id="18" st_id="5" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
+<![CDATA[
+entry:8 %call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_377_2, i8 %t_43, i8 %t_42, i8 %t_41, i8 %t, i64 %s
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="6" st_id="6">
+
+<operation id="19" st_id="6" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
+<![CDATA[
+entry:8 %call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_377_2, i8 %t_43, i8 %t_42, i8 %t_41, i8 %t, i64 %s
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="7" st_id="7">
+
+<operation id="20" st_id="7" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="0" op_7_bw="0">
+<![CDATA[
+entry:9 %call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_570_1, i8 %t, i8 %t_41, i8 %t_42, i8 %t_43, i8 %ephemeralsk
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="8" st_id="8">
+
+<operation id="21" st_id="8" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="64">
+<![CDATA[
+entry:1 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %s
+
+]]></Node>
+<StgValue><ssdm name="specbramwithbyteenable_ln0"/></StgValue>
+</operation>
+
+<operation id="22" st_id="8" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="0" op_7_bw="0">
+<![CDATA[
+entry:9 %call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_570_1, i8 %t, i8 %t_41, i8 %t_42, i8 %t_43, i8 %ephemeralsk
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="23" st_id="8" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="0">
+<![CDATA[
+entry:10 %ret_ln573 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln573"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="31" name="ephemeralsk" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="ephemeralsk"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="32" name="in_0" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="in_0"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="33" name="in_1" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="in_1"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="34" name="in_2" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="in_2"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="35" name="in_3" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="in_3"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="36" name="KeccakF_RoundConstants" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="KeccakF_RoundConstants"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="38" from="StgValue_37" to="s" fromId="37" toId="9">
+</dataflow>
+<dataflow id="39" from="StgValue_37" to="t" fromId="37" toId="10">
+</dataflow>
+<dataflow id="40" from="StgValue_37" to="t_41" fromId="37" toId="11">
+</dataflow>
+<dataflow id="41" from="StgValue_37" to="t_42" fromId="37" toId="12">
+</dataflow>
+<dataflow id="42" from="StgValue_37" to="t_43" fromId="37" toId="13">
+</dataflow>
+<dataflow id="44" from="cshake256_simple_absorb" to="call_ln561" fromId="43" toId="14">
+</dataflow>
+<dataflow id="45" from="s" to="call_ln561" fromId="9" toId="14">
+</dataflow>
+<dataflow id="47" from="StgValue_46" to="call_ln561" fromId="46" toId="14">
+</dataflow>
+<dataflow id="48" from="in_0" to="call_ln561" fromId="32" toId="14">
+</dataflow>
+<dataflow id="49" from="in_1" to="call_ln561" fromId="33" toId="14">
+</dataflow>
+<dataflow id="50" from="in_2" to="call_ln561" fromId="34" toId="14">
+</dataflow>
+<dataflow id="51" from="in_3" to="call_ln561" fromId="35" toId="14">
+</dataflow>
+<dataflow id="52" from="KeccakF_RoundConstants" to="call_ln561" fromId="36" toId="14">
+</dataflow>
+<dataflow id="53" from="cshake256_simple_absorb" to="call_ln561" fromId="43" toId="15">
+</dataflow>
+<dataflow id="54" from="s" to="call_ln561" fromId="9" toId="15">
+</dataflow>
+<dataflow id="55" from="StgValue_46" to="call_ln561" fromId="46" toId="15">
+</dataflow>
+<dataflow id="56" from="in_0" to="call_ln561" fromId="32" toId="15">
+</dataflow>
+<dataflow id="57" from="in_1" to="call_ln561" fromId="33" toId="15">
+</dataflow>
+<dataflow id="58" from="in_2" to="call_ln561" fromId="34" toId="15">
+</dataflow>
+<dataflow id="59" from="in_3" to="call_ln561" fromId="35" toId="15">
+</dataflow>
+<dataflow id="60" from="KeccakF_RoundConstants" to="call_ln561" fromId="36" toId="15">
+</dataflow>
+<dataflow id="62" from="KeccakF1600_StatePermute" to="call_ln376" fromId="61" toId="16">
+</dataflow>
+<dataflow id="63" from="s" to="call_ln376" fromId="9" toId="16">
+</dataflow>
+<dataflow id="64" from="KeccakF_RoundConstants" to="call_ln376" fromId="36" toId="16">
+</dataflow>
+<dataflow id="65" from="KeccakF1600_StatePermute" to="call_ln376" fromId="61" toId="17">
+</dataflow>
+<dataflow id="66" from="s" to="call_ln376" fromId="9" toId="17">
+</dataflow>
+<dataflow id="67" from="KeccakF_RoundConstants" to="call_ln376" fromId="36" toId="17">
+</dataflow>
+<dataflow id="69" from="cshake256_simple.32_Pipeline_VITIS_LOOP_377_2" to="call_ln0" fromId="68" toId="18">
+</dataflow>
+<dataflow id="70" from="t_43" to="call_ln0" fromId="13" toId="18">
+</dataflow>
+<dataflow id="71" from="t_42" to="call_ln0" fromId="12" toId="18">
+</dataflow>
+<dataflow id="72" from="t_41" to="call_ln0" fromId="11" toId="18">
+</dataflow>
+<dataflow id="73" from="t" to="call_ln0" fromId="10" toId="18">
+</dataflow>
+<dataflow id="74" from="s" to="call_ln0" fromId="9" toId="18">
+</dataflow>
+<dataflow id="75" from="cshake256_simple.32_Pipeline_VITIS_LOOP_377_2" to="call_ln0" fromId="68" toId="19">
+</dataflow>
+<dataflow id="76" from="t_43" to="call_ln0" fromId="13" toId="19">
+</dataflow>
+<dataflow id="77" from="t_42" to="call_ln0" fromId="12" toId="19">
+</dataflow>
+<dataflow id="78" from="t_41" to="call_ln0" fromId="11" toId="19">
+</dataflow>
+<dataflow id="79" from="t" to="call_ln0" fromId="10" toId="19">
+</dataflow>
+<dataflow id="80" from="s" to="call_ln0" fromId="9" toId="19">
+</dataflow>
+<dataflow id="82" from="cshake256_simple.32_Pipeline_VITIS_LOOP_570_1" to="call_ln0" fromId="81" toId="20">
+</dataflow>
+<dataflow id="83" from="t" to="call_ln0" fromId="10" toId="20">
+</dataflow>
+<dataflow id="84" from="t_41" to="call_ln0" fromId="11" toId="20">
+</dataflow>
+<dataflow id="85" from="t_42" to="call_ln0" fromId="12" toId="20">
+</dataflow>
+<dataflow id="86" from="t_43" to="call_ln0" fromId="13" toId="20">
+</dataflow>
+<dataflow id="87" from="ephemeralsk" to="call_ln0" fromId="31" toId="20">
+</dataflow>
+<dataflow id="89" from="_ssdm_op_SpecBRAMWithByteEnable" to="specbramwithbyteenable_ln0" fromId="88" toId="21">
+</dataflow>
+<dataflow id="90" from="s" to="specbramwithbyteenable_ln0" fromId="9" toId="21">
+</dataflow>
+<dataflow id="91" from="cshake256_simple.32_Pipeline_VITIS_LOOP_570_1" to="call_ln0" fromId="81" toId="22">
+</dataflow>
+<dataflow id="92" from="t" to="call_ln0" fromId="10" toId="22">
+</dataflow>
+<dataflow id="93" from="t_41" to="call_ln0" fromId="11" toId="22">
+</dataflow>
+<dataflow id="94" from="t_42" to="call_ln0" fromId="12" toId="22">
+</dataflow>
+<dataflow id="95" from="t_43" to="call_ln0" fromId="13" toId="22">
+</dataflow>
+<dataflow id="96" from="ephemeralsk" to="call_ln0" fromId="31" toId="22">
+</dataflow>
+</dataflows>
+
+
+</stg>
