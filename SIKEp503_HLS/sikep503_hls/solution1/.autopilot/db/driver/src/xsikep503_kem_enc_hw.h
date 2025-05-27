@@ -45,12 +45,12 @@ typedef struct {
 #else
     u16 DeviceId;
 #endif
-    u32 Control_BaseAddress;
+    u64 Control_BaseAddress;
 } XSikep503_kem_enc_hw_Config;
 #endif
 
 typedef struct {
-    u32 Control_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XSikep503_kem_enc_hw;
 
@@ -99,12 +99,12 @@ u32 XSikep503_kem_enc_hw_IsReady(XSikep503_kem_enc_hw *InstancePtr);
 void XSikep503_kem_enc_hw_EnableAutoRestart(XSikep503_kem_enc_hw *InstancePtr);
 void XSikep503_kem_enc_hw_DisableAutoRestart(XSikep503_kem_enc_hw *InstancePtr);
 
-void XSikep503_kem_enc_hw_Set_ct(XSikep503_kem_enc_hw *InstancePtr, u32 Data);
-u32 XSikep503_kem_enc_hw_Get_ct(XSikep503_kem_enc_hw *InstancePtr);
-void XSikep503_kem_enc_hw_Set_pk(XSikep503_kem_enc_hw *InstancePtr, u32 Data);
-u32 XSikep503_kem_enc_hw_Get_pk(XSikep503_kem_enc_hw *InstancePtr);
-void XSikep503_kem_enc_hw_Set_ss(XSikep503_kem_enc_hw *InstancePtr, u32 Data);
-u32 XSikep503_kem_enc_hw_Get_ss(XSikep503_kem_enc_hw *InstancePtr);
+void XSikep503_kem_enc_hw_Set_ct(XSikep503_kem_enc_hw *InstancePtr, u64 Data);
+u64 XSikep503_kem_enc_hw_Get_ct(XSikep503_kem_enc_hw *InstancePtr);
+void XSikep503_kem_enc_hw_Set_pk(XSikep503_kem_enc_hw *InstancePtr, u64 Data);
+u64 XSikep503_kem_enc_hw_Get_pk(XSikep503_kem_enc_hw *InstancePtr);
+void XSikep503_kem_enc_hw_Set_ss(XSikep503_kem_enc_hw *InstancePtr, u64 Data);
+u64 XSikep503_kem_enc_hw_Get_ss(XSikep503_kem_enc_hw *InstancePtr);
 
 void XSikep503_kem_enc_hw_InterruptGlobalEnable(XSikep503_kem_enc_hw *InstancePtr);
 void XSikep503_kem_enc_hw_InterruptGlobalDisable(XSikep503_kem_enc_hw *InstancePtr);

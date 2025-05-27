@@ -245,7 +245,7 @@
               <name>t</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>558</lineNumber>
+              <lineNumber>620</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -261,7 +261,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>558</second>
+                      <second>620</second>
                     </item>
                   </second>
                 </item>
@@ -301,7 +301,7 @@
               <name>t_41</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>558</lineNumber>
+              <lineNumber>620</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -317,7 +317,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>558</second>
+                      <second>620</second>
                     </item>
                   </second>
                 </item>
@@ -357,7 +357,7 @@
               <name>t_42</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>558</lineNumber>
+              <lineNumber>620</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -373,7 +373,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>558</second>
+                      <second>620</second>
                     </item>
                   </second>
                 </item>
@@ -413,7 +413,7 @@
               <name>t_43</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>558</lineNumber>
+              <lineNumber>620</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -429,7 +429,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>558</second>
+                      <second>620</second>
                     </item>
                   </second>
                 </item>
@@ -466,10 +466,10 @@
             <Obj>
               <type>0</type>
               <id>13</id>
-              <name>_ln561</name>
+              <name>_ln623</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>561</lineNumber>
+              <lineNumber>623</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -485,7 +485,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>561</second>
+                      <second>623</second>
                     </item>
                   </second>
                 </item>
@@ -529,10 +529,10 @@
             <Obj>
               <type>0</type>
               <id>14</id>
-              <name>_ln376</name>
+              <name>_ln417</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>376</lineNumber>
+              <lineNumber>417</lineNumber>
               <contextFuncName>keccak_squeezeblocks</contextFuncName>
               <contextNormFuncName>keccak_squeezeblocks</contextNormFuncName>
               <inlineStackInfo>
@@ -548,14 +548,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>569</second>
+                      <second>644</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_squeezeblocks</second>
                       </first>
-                      <second>376</second>
+                      <second>417</second>
                     </item>
                   </second>
                 </item>
@@ -607,7 +607,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71</rtlName>
+              <rtlName>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -656,7 +656,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80</rtlName>
+              <rtlName>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -694,10 +694,10 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>_ln573</name>
+              <name>_ln655</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>573</lineNumber>
+              <lineNumber>655</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -713,7 +713,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>573</second>
+                      <second>655</second>
                     </item>
                   </second>
                 </item>
@@ -774,7 +774,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>1</content>
@@ -877,7 +877,7 @@
             <Obj>
               <type>2</type>
               <id>37</id>
-              <name>cshake256_simple_32_Pipeline_VITIS_LOOP_377_2</name>
+              <name>cshake256_simple_32_Pipeline_VITIS_LOOP_418_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -901,14 +901,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:cshake256_simple.32_Pipeline_VITIS_LOOP_377_2&gt;</content>
+          <content>&lt;constant:cshake256_simple.32_Pipeline_VITIS_LOOP_418_2&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_21">
           <Value>
             <Obj>
               <type>2</type>
               <id>44</id>
-              <name>cshake256_simple_32_Pipeline_VITIS_LOOP_570_1</name>
+              <name>cshake256_simple_32_Pipeline_VITIS_LOOP_649_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -932,7 +932,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:cshake256_simple.32_Pipeline_VITIS_LOOP_570_1&gt;</content>
+          <content>&lt;constant:cshake256_simple.32_Pipeline_VITIS_LOOP_649_1&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -1519,7 +1519,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71 (cshake256_simple_32_Pipeline_VITIS_LOOP_377_2)</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71 (cshake256_simple_32_Pipeline_VITIS_LOOP_418_2)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -1534,7 +1534,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80 (cshake256_simple_32_Pipeline_VITIS_LOOP_570_1)</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80 (cshake256_simple_32_Pipeline_VITIS_LOOP_649_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2604,7 +2604,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71_ap_start_reg</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2623,7 +2623,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80_ap_start_reg</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2672,14 +2672,14 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2705,7 +2705,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71 (cshake256_simple_32_Pipeline_VITIS_LOOP_377_2)</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71 (cshake256_simple_32_Pipeline_VITIS_LOOP_418_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2713,7 +2713,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80 (cshake256_simple_32_Pipeline_VITIS_LOOP_570_1)</first>
+          <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80 (cshake256_simple_32_Pipeline_VITIS_LOOP_649_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3008,7 +3008,7 @@
         </second>
       </item>
       <item>
-        <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_377_2_fu_71</first>
+        <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3017,7 +3017,7 @@
         </second>
       </item>
       <item>
-        <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_570_1_fu_80</first>
+        <first>grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

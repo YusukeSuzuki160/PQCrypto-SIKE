@@ -14,7 +14,7 @@
 #include <stdint.h>
 #include <assert.h>
 #include "fips202.h"
-
+#include <stdio.h>
 #define NROUNDS 24
 #define ROL(a, offset) ((a << offset) ^ (a >> (64-offset)))
 
@@ -113,6 +113,12 @@ void KeccakF1600_StatePermute(uint64_t * state)
         Asi = state[22];
         Aso = state[23];
         Asu = state[24];
+        // printf("DEBUG: Starting KeccakF1600_StatePermute\n");
+        // for (int i = 0; i < 25; i++)
+        // {
+        //   printf("%02lx ", state[i]);
+        // }
+        // printf("\n");
 
         for( round = 0; round < NROUNDS; round += 2 )
         {
@@ -122,13 +128,14 @@ void KeccakF1600_StatePermute(uint64_t * state)
             BCi = Abi^Agi^Aki^Ami^Asi;
             BCo = Abo^Ago^Ako^Amo^Aso;
             BCu = Abu^Agu^Aku^Amu^Asu;
-
+            //printf("DEBUG: BCa: %02lx, BCe: %02lx, BCi: %02lx, BCo: %02lx, BCu: %02lx\n", BCa, BCe, BCi, BCo, BCu);
             //thetaRhoPiChiIotaPrepareTheta(round  , A, E)
             Da = BCu^ROL(BCe, 1);
             De = BCa^ROL(BCi, 1);
             Di = BCe^ROL(BCo, 1);
             Do = BCi^ROL(BCu, 1);
             Du = BCo^ROL(BCa, 1);
+            // printf("DEBUG: Da: %02lx, De: %02lx, Di: %02lx, Do: %02lx, Du: %02lx\n", Da, De, Di, Do, Du);
 
             Aba ^= Da;
             BCa = Aba;
@@ -146,6 +153,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Ebi =   BCi ^((~BCo)&  BCu );
             Ebo =   BCo ^((~BCu)&  BCa );
             Ebu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Eba: %02lx, Ebe: %02lx, Ebi: %02lx, Ebo: %02lx, Ebu: %02lx\n", Eba, Ebe, Ebi, Ebo, Ebu);
+            // printf("DEBUG: Aba, Age, Aki, Amo, Asu: %02lx, %02lx, %02lx, %02lx, %02lx\n", Aba, Age, Aki, Amo, Asu);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
 
             Abo ^= Do;
             BCa = ROL(Abo, 28);
@@ -162,6 +172,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Egi =   BCi ^((~BCo)&  BCu );
             Ego =   BCo ^((~BCu)&  BCa );
             Egu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Ega: %02lx, Ege: %02lx, Egi: %02lx, Ego: %02lx, Egu: %02lx\n", Ega, Ege, Egi, Ego, Egu);
+            // printf("DEBUG: Abo, Agu, Aka, Ame, Asi: %02lx, %02lx, %02lx, %02lx, %02lx\n", Abo, Agu, Aka, Ame, Asi);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
 
             Abe ^= De;
             BCa = ROL(Abe,  1);
@@ -178,6 +191,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Eki =   BCi ^((~BCo)&  BCu );
             Eko =   BCo ^((~BCu)&  BCa );
             Eku =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Eka: %02lx, Eke: %02lx, Eki: %02lx, Eko: %02lx, Eku: %02lx\n", Eka, Eke, Eki, Eko, Eku);
+            // printf("DEBUG: Abe, Agi, Ako, Amu, Asa: %02lx, %02lx, %02lx, %02lx, %02lx\n", Abe, Agi, Ako, Amu, Asa);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
 
             Abu ^= Du;
             BCa = ROL(Abu, 27);
@@ -194,6 +210,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Emi =   BCi ^((~BCo)&  BCu );
             Emo =   BCo ^((~BCu)&  BCa );
             Emu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Ema: %02lx, Eme: %02lx, Emi: %02lx, Emo: %02lx, Emu: %02lx\n", Ema, Eme, Emi, Emo, Emu);
+            // printf("DEBUG: Abu, Aga, Ake, Ami, Aso: %02lx, %02lx, %02lx, %02lx, %02lx\n", Abu, Aga, Ake, Ami, Aso);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
 
             Abi ^= Di;
             BCa = ROL(Abi, 62);
@@ -210,6 +229,10 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Esi =   BCi ^((~BCo)&  BCu );
             Eso =   BCo ^((~BCu)&  BCa );
             Esu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Esa: %02lx, Ese: %02lx, Esi: %02lx, Eso: %02lx, Esu: %02lx\n", Esa, Ese, Esi, Eso, Esu);
+            // printf("DEBUG: Abi, Ago, Aku, Ama, Ase: %02lx, %02lx, %02lx, %02lx, %02lx\n", Abi, Ago, Aku, Ama, Ase);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
+
 
             //    prepareTheta
             BCa = Eba^Ega^Eka^Ema^Esa;
@@ -217,6 +240,7 @@ void KeccakF1600_StatePermute(uint64_t * state)
             BCi = Ebi^Egi^Eki^Emi^Esi;
             BCo = Ebo^Ego^Eko^Emo^Eso;
             BCu = Ebu^Egu^Eku^Emu^Esu;
+            // printf("DEBUG: BCa: %02lx, BCe: %02lx, BCi: %02lx, BCo: %02lx, BCu: %02lx\n", BCa, BCe, BCi, BCo, BCu);
 
             //thetaRhoPiChiIotaPrepareTheta(round+1, E, A)
             Da = BCu^ROL(BCe, 1);
@@ -224,6 +248,7 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Di = BCe^ROL(BCo, 1);
             Do = BCi^ROL(BCu, 1);
             Du = BCo^ROL(BCa, 1);
+            // printf("DEBUG: Da: %02lx, De: %02lx, Di: %02lx, Do: %02lx, Du: %02lx\n", Da, De, Di, Do, Du);
 
             Eba ^= Da;
             BCa = Eba;
@@ -241,6 +266,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Abi =   BCi ^((~BCo)&  BCu );
             Abo =   BCo ^((~BCu)&  BCa );
             Abu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Aba: %02lx, Abe: %02lx, Abi: %02lx, Abo: %02lx, Abu: %02lx\n", Aba, Abe, Abi, Abo, Abu);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
+            // printf("DEBUG: Eba, Ege, Eki, Emo, Esu: %02lx, %02lx, %02lx, %02lx, %02lx\n", Eba, Ege, Eki, Emo, Esu);
 
             Ebo ^= Do;
             BCa = ROL(Ebo, 28);
@@ -257,6 +285,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Agi =   BCi ^((~BCo)&  BCu );
             Ago =   BCo ^((~BCu)&  BCa );
             Agu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Aga: %02lx, Age: %02lx, Agi: %02lx, Ago: %02lx, Agu: %02lx\n", Aga, Age, Agi, Ago, Agu);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
+            // printf("DEBUG: Ebo, Egu, Eka, Eme, Esi: %02lx, %02lx, %02lx, %02lx, %02lx\n", Ebo, Egu, Eka, Eme, Esi);
 
             Ebe ^= De;
             BCa = ROL(Ebe, 1);
@@ -273,6 +304,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Aki =   BCi ^((~BCo)&  BCu );
             Ako =   BCo ^((~BCu)&  BCa );
             Aku =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Aka: %02lx, Ake: %02lx, Aki: %02lx, Ako: %02lx, Aku: %02lx\n", Aka, Ake, Aki, Ako, Aku);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
+            // printf("DEBUG: Ebe, Egi, Eko, Emu, Esa: %02lx, %02lx, %02lx, %02lx, %02lx\n", Ebe, Egi, Eko, Emu, Esa);
 
             Ebu ^= Du;
             BCa = ROL(Ebu, 27);
@@ -289,6 +323,10 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Ami =   BCi ^((~BCo)&  BCu );
             Amo =   BCo ^((~BCu)&  BCa );
             Amu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Ama: %02lx, Ame: %02lx, Ami: %02lx, Amo: %02lx, Amu: %02lx\n", Ama, Ame, Ami, Amo, Amu);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
+            // printf("DEBUG: Ebu, Ega, Eke, Emi, Eso: %02lx, %02lx, %02lx, %02lx, %02lx\n", Ebu, Ega, Eke, Emi, Eso);
+
 
             Ebi ^= Di;
             BCa = ROL(Ebi, 62);
@@ -305,6 +343,9 @@ void KeccakF1600_StatePermute(uint64_t * state)
             Asi =   BCi ^((~BCo)&  BCu );
             Aso =   BCo ^((~BCu)&  BCa );
             Asu =   BCu ^((~BCa)&  BCe );
+            // printf("DEBUG: Asa: %02lx, Ase: %02lx, Asi: %02lx, Aso: %02lx, Asu: %02lx\n", Asa, Ase, Asi, Aso, Asu);
+            // printf("DEBUG: BCa, BCe, BCi, BCo, BCu: %02lx, %02lx, %02lx, %02lx, %02lx\n", BCa, BCe, BCi, BCo, BCu);
+            // printf("DEBUG: Ebi, Ego, Eku, Ema, Ese: %02lx, %02lx, %02lx, %02lx, %02lx\n", Ebi, Ego, Eku, Ema, Ese);
         }
 
         //copyToState(state, A)
@@ -334,6 +375,12 @@ void KeccakF1600_StatePermute(uint64_t * state)
         state[23] = Aso;
         state[24] = Asu;
 
+        // printf("DEBUG: state: ");
+        // for (int i = 0; i < 25; i++)
+        //   printf("%02lx ", state[i]);
+        // printf("\n");
+
+
         #undef    round
 }
 
@@ -350,7 +397,6 @@ static void keccak_absorb(uint64_t *s, unsigned int r, const unsigned char *m, u
   {
     for (i = 0; i < r / 8; ++i)
       s[i] ^= load64(m + 8 * i);
-    
     KeccakF1600_StatePermute(s);
     mlen -= r;
     m += r;
@@ -559,14 +605,31 @@ void cshake256_simple(unsigned char *output, unsigned long long outlen, uint16_t
   unsigned int i;
 
   cshake256_simple_absorb(s, cstm, in, inlen);
+  printf("s: ");
+  // for (i = 0; i < 25; i++)
+  //   printf("%02x ", s[i]);
+  // printf("\n");
+  // printf("cstm: %d\n", cstm);
+  // printf("in: ");
+  // for (i = 0; i < inlen; i++)
+  //   printf("%02x ", in[i]);
+  // printf("\n");
 
   /* Squeeze output */
   keccak_squeezeblocks(output, outlen/SHAKE256_RATE, s, SHAKE256_RATE);
   output += (outlen/SHAKE256_RATE)*SHAKE256_RATE;
+  // printf("output: ");
+  // for (i = 0; i < outlen; i++)
+  //   printf("%02x ", output[i]);
+  // printf("\n");
 
   if(outlen%SHAKE256_RATE)
   {
     keccak_squeezeblocks(t, 1, s, SHAKE256_RATE);
+    // printf("t: ");
+    // for (i = 0; i < SHAKE256_RATE; i++)
+    //   printf("%02x ", t[i]);
+    // printf("\n");
     for (i = 0; i < outlen%SHAKE256_RATE; i++)
       output[i] = t[i];
   }

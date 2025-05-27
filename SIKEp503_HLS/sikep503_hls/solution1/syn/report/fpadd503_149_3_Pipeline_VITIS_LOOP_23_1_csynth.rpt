@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_149_3_Pipeline_VITIS_LOOP_23_1'
 ================================================================
-* Date:           Tue May 20 14:35:01 2025
+* Date:           Tue May 27 14:16:54 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
 +-----------------+---------+-----+--------+-------+-----+
 |DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|    558|    -|
+|Expression       |        -|    -|       0|    584|    -|
 |FIFO             |        -|    -|       -|      -|    -|
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     68|    -|
-|Register         |        -|    -|     142|      -|    -|
+|Register         |        -|    -|     147|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     142|    626|    0|
+|Total            |        0|    0|     147|    652|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,21 +85,23 @@
     +-----------------------+----------+----+---+----+------------+------------+
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
-    |add_ln23_fu_117_p2     |         +|   0|  0|  13|           4|           1|
-    |add_ln24_fu_166_p2     |         +|   0|  0|  71|          64|          64|
-    |tempReg_fu_149_p2      |         +|   0|  0|  71|          64|          64|
-    |and_ln24_fu_210_p2     |       and|   0|  0|  64|          64|          64|
-    |ap_condition_263       |       and|   0|  0|   2|           1|           1|
+    |add_ln23_fu_128_p2     |         +|   0|  0|  13|           4|           1|
+    |add_ln24_22_fu_133_p2  |         +|   0|  0|  13|           4|           4|
+    |add_ln24_24_fu_156_p2  |         +|   0|  0|  71|          64|          64|
+    |add_ln24_fu_117_p2     |         +|   0|  0|  13|           4|           4|
+    |tempReg_fu_141_p2      |         +|   0|  0|  71|          64|          64|
+    |and_ln24_fu_200_p2     |       and|   0|  0|  64|          64|          64|
+    |ap_condition_262       |       and|   0|  0|   2|           1|           1|
     |icmp_ln23_fu_111_p2    |      icmp|   0|  0|  13|           4|           5|
-    |or_ln24_16_fu_221_p2   |        or|   0|  0|  64|          64|          64|
-    |or_ln24_fu_180_p2      |        or|   0|  0|  64|          64|          64|
+    |or_ln24_16_fu_211_p2   |        or|   0|  0|  64|          64|          64|
+    |or_ln24_fu_170_p2      |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
-    |xor_ln24_46_fu_176_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln24_48_fu_215_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln24_49_fu_193_p2  |       xor|   0|  0|   2|           1|           2|
-    |xor_ln24_fu_171_p2     |       xor|   0|  0|  64|          64|          64|
+    |xor_ln24_46_fu_166_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln24_48_fu_205_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln24_49_fu_183_p2  |       xor|   0|  0|   2|           1|           2|
+    |xor_ln24_fu_161_p2     |       xor|   0|  0|  64|          64|          64|
     +-----------------------+----------+----+---+----+------------+------------+
-    |Total                  |          |   0|  0| 558|         523|         523|
+    |Total                  |          |   0|  0| 584|         531|         531|
     +-----------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -121,18 +123,19 @@
     +-----------------------------+----+----+-----+-----------+
     |             Name            | FF | LUT| Bits| Const Bits|
     +-----------------------------+----+----+-----+-----------+
+    |add_ln24_22_reg_252          |   4|   0|    4|          0|
     |ap_CS_fsm                    |   2|   0|    2|          0|
     |ap_done_reg                  |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter0_reg  |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
-    |b_load_reg_261               |  64|   0|   64|          0|
+    |b_load_reg_257               |  64|   0|   64|          0|
     |carry_reg_92                 |   1|   0|    1|          0|
+    |i_227_reg_237                |   4|   0|    4|          0|
     |i_fu_50                      |   4|   0|    4|          0|
-    |icmp_ln23_reg_247            |   1|   0|    1|          0|
-    |tempReg_reg_268              |  64|   0|   64|          0|
-    |trunc_ln24_reg_251           |   3|   0|    3|          0|
+    |icmp_ln23_reg_243            |   1|   0|    1|          0|
+    |tempReg_reg_264              |  64|   0|   64|          0|
     +-----------------------------+----+----+-----+-----------+
-    |Total                        | 142|   0|  142|          0|
+    |Total                        | 147|   0|  147|          0|
     +-----------------------------+----+----+-----+-----------+
 
 
@@ -141,23 +144,23 @@
 == Interface
 ================================================================
 * Summary: 
-+------------+-----+-----+------------+-----------------------------------------+--------------+
-|  RTL Ports | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
-+------------+-----+-----+------------+-----------------------------------------+--------------+
-|ap_clk      |   in|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_rst      |   in|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_start    |   in|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_done     |  out|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_idle     |  out|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_ready    |  out|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
-|b_offset    |   in|    1|     ap_none|                                 b_offset|        scalar|
-|b_address0  |  out|    4|   ap_memory|                                        b|         array|
-|b_ce0       |  out|    1|   ap_memory|                                        b|         array|
-|b_q0        |   in|   64|   ap_memory|                                        b|         array|
-|c_offset    |   in|    1|     ap_none|                                 c_offset|        scalar|
-|c_address0  |  out|    4|   ap_memory|                                        c|         array|
-|c_ce0       |  out|    1|   ap_memory|                                        c|         array|
-|c_we0       |  out|    1|   ap_memory|                                        c|         array|
-|c_d0        |  out|   64|   ap_memory|                                        c|         array|
-+------------+-----+-----+------------+-----------------------------------------+--------------+
++--------------+-----+-----+------------+-----------------------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
++--------------+-----+-----+------------+-----------------------------------------+--------------+
+|ap_clk        |   in|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  fpadd503.149.3_Pipeline_VITIS_LOOP_23_1|  return value|
+|zext_ln24_24  |   in|    4|     ap_none|                             zext_ln24_24|        scalar|
+|b_address0    |  out|    4|   ap_memory|                                        b|         array|
+|b_ce0         |  out|    1|   ap_memory|                                        b|         array|
+|b_q0          |   in|   64|   ap_memory|                                        b|         array|
+|zext_ln24_23  |   in|    4|     ap_none|                             zext_ln24_23|        scalar|
+|c_address0    |  out|    4|   ap_memory|                                        c|         array|
+|c_ce0         |  out|    1|   ap_memory|                                        c|         array|
+|c_we0         |  out|    1|   ap_memory|                                        c|         array|
+|c_d0          |  out|   64|   ap_memory|                                        c|         array|
++--------------+-----+-----+------------+-----------------------------------------+--------------+
 

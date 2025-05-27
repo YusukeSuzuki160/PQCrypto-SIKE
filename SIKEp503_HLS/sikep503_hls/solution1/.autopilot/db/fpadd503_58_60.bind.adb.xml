@@ -77,9 +77,9 @@ entry:1 %c_0_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_0_offset
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="1" op_0_bw="32">
+<Node id="8" bw="1" op_0_bw="64">
 <![CDATA[
-entry:2 %carry_loc = alloca i32 1
+entry:2 %carry_loc = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="carry_loc"/></StgValue>

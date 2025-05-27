@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_58_60_Pipeline_VITIS_LOOP_34_3'" level="0">
-<item name = "Date">Tue May 20 14:35:03 2025
+<item name = "Date">Tue May 20 16:18:11 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -79,21 +79,21 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln34_fu_201_p2">+, 0, 0, 13, 4, 1</column>
-<column name="add_ln35_fu_236_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_fu_231_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln35_8_fu_279_p2">and, 0, 0, 64, 64, 64</column>
-<column name="and_ln35_fu_217_p2">and, 0, 0, 64, 64, 64</column>
+<column name="add_ln34_fu_197_p2">+, 0, 0, 13, 4, 1</column>
+<column name="add_ln35_fu_232_p2">+, 0, 0, 71, 64, 64</column>
+<column name="tempReg_fu_227_p2">+, 0, 0, 71, 64, 64</column>
+<column name="and_ln35_8_fu_275_p2">and, 0, 0, 64, 64, 64</column>
+<column name="and_ln35_fu_213_p2">and, 0, 0, 64, 64, 64</column>
 <column name="icmp_ln34_fu_150_p2">icmp, 0, 0, 13, 4, 5</column>
-<column name="or_ln35_8_fu_289_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln35_fu_249_p2">or, 0, 0, 64, 64, 64</column>
-<column name="select_ln35_fu_209_p3">select, 0, 0, 64, 1, 64</column>
+<column name="or_ln35_8_fu_285_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln35_fu_245_p2">or, 0, 0, 64, 64, 64</column>
+<column name="select_ln35_fu_205_p3">select, 0, 0, 64, 1, 64</column>
 <column name="sext_ln21_cast_fu_134_p3">select, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_22_fu_245_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln35_23_fu_262_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_24_fu_284_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln35_fu_241_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_22_fu_241_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_23_fu_258_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln35_24_fu_280_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_fu_237_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -112,26 +112,26 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln35_reg_364">64, 0, 64, 0</column>
-<column name="and_ln35_reg_350">64, 0, 64, 0</column>
+<column name="add_ln35_reg_360">64, 0, 64, 0</column>
+<column name="and_ln35_reg_346">64, 0, 64, 0</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="c_0_addr_reg_325">3, 0, 3, 0</column>
-<column name="c_0_addr_reg_325_pp0_iter1_reg">3, 0, 3, 0</column>
-<column name="c_1_addr_reg_330">3, 0, 3, 0</column>
-<column name="c_1_addr_reg_330_pp0_iter1_reg">3, 0, 3, 0</column>
+<column name="c_0_addr_reg_321">3, 0, 3, 0</column>
+<column name="c_0_addr_reg_321_pp0_iter1_reg">3, 0, 3, 0</column>
+<column name="c_1_addr_reg_326">3, 0, 3, 0</column>
+<column name="c_1_addr_reg_326_pp0_iter1_reg">3, 0, 3, 0</column>
 <column name="carry_reg_123">1, 0, 1, 0</column>
 <column name="i_138_fu_62">4, 0, 4, 0</column>
-<column name="i_reg_315">4, 0, 4, 0</column>
-<column name="icmp_ln34_reg_321">1, 0, 1, 0</column>
-<column name="icmp_ln34_reg_321_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="select_ln35_reg_344">64, 0, 64, 0</column>
-<column name="sext_ln21_cast_reg_310">64, 0, 64, 0</column>
-<column name="tempReg_reg_356">64, 0, 64, 0</column>
-<column name="trunc_ln34_reg_340">1, 0, 1, 0</column>
+<column name="i_reg_311">4, 0, 4, 0</column>
+<column name="icmp_ln34_reg_317">1, 0, 1, 0</column>
+<column name="icmp_ln34_reg_317_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="select_ln35_reg_340">64, 0, 64, 0</column>
+<column name="sext_ln21_cast_reg_306">64, 0, 64, 0</column>
+<column name="tempReg_reg_352">64, 0, 64, 0</column>
+<column name="trunc_ln34_reg_336">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

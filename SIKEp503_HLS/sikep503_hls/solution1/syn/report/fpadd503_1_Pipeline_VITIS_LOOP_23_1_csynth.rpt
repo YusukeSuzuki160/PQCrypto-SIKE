@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_1_Pipeline_VITIS_LOOP_23_1'
 ================================================================
-* Date:           Tue May 20 14:36:08 2025
+* Date:           Tue May 27 14:17:40 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -58,10 +58,10 @@
 |FIFO             |        -|    -|       -|      -|    -|
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
-|Multiplexer      |        -|    -|       0|     77|    -|
-|Register         |        -|    -|     206|      -|    -|
+|Multiplexer      |        -|    -|       0|     68|    -|
+|Register         |        -|    -|     207|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     206|    635|    0|
+|Total            |        0|    0|     207|    626|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,19 +85,19 @@
     +-----------------------+----------+----+---+----+------------+------------+
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
-    |add_ln23_fu_119_p2     |         +|   0|  0|  13|           4|           1|
-    |add_ln24_fu_150_p2     |         +|   0|  0|  71|          64|          64|
-    |tempReg_fu_144_p2      |         +|   0|  0|  71|          64|          64|
-    |and_ln24_fu_210_p2     |       and|   0|  0|  64|          64|          64|
-    |ap_condition_274       |       and|   0|  0|   2|           1|           1|
-    |icmp_ln23_fu_113_p2    |      icmp|   0|  0|  13|           4|           5|
-    |or_ln24_12_fu_221_p2   |        or|   0|  0|  64|          64|          64|
-    |or_ln24_fu_180_p2      |        or|   0|  0|  64|          64|          64|
+    |add_ln23_fu_114_p2     |         +|   0|  0|  13|           4|           1|
+    |add_ln24_fu_141_p2     |         +|   0|  0|  71|          64|          64|
+    |tempReg_fu_135_p2      |         +|   0|  0|  71|          64|          64|
+    |and_ln24_fu_185_p2     |       and|   0|  0|  64|          64|          64|
+    |ap_condition_259       |       and|   0|  0|   2|           1|           1|
+    |icmp_ln23_fu_108_p2    |      icmp|   0|  0|  13|           4|           5|
+    |or_ln24_12_fu_196_p2   |        or|   0|  0|  64|          64|          64|
+    |or_ln24_fu_155_p2      |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
-    |xor_ln24_35_fu_176_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln24_36_fu_193_p2  |       xor|   0|  0|   2|           1|           2|
-    |xor_ln24_37_fu_215_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln24_fu_171_p2     |       xor|   0|  0|  64|          64|          64|
+    |xor_ln24_35_fu_151_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln24_36_fu_168_p2  |       xor|   0|  0|   2|           1|           2|
+    |xor_ln24_37_fu_190_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln24_fu_146_p2     |       xor|   0|  0|  64|          64|          64|
     +-----------------------+----------+----+---+----+------------+------------+
     |Total                  |          |   0|  0| 558|         523|         523|
     +-----------------------+----------+----+---+----+------------+------------+
@@ -111,30 +111,29 @@
     |ap_enable_reg_pp0_iter0  |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_sig_allocacmp_i_222   |   9|          2|    4|          8|
-    |carry_reg_94             |   9|          2|    1|          2|
-    |coeff_we0_local          |   9|          2|    8|         16|
-    |i_fu_52                  |   9|          2|    4|          8|
+    |carry_reg_89             |   9|          2|    1|          2|
+    |i_fu_46                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
-    |Total                    |  77|         17|   21|         43|
+    |Total                    |  68|         15|   13|         27|
     +-------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +-----------------------------+----+----+-----+-----------+
     |             Name            | FF | LUT| Bits| Const Bits|
     +-----------------------------+----+----+-----+-----------+
-    |R_X_load_reg_261             |  64|   0|   64|          0|
-    |R_Z_load_reg_275             |  64|   0|   64|          0|
+    |R_X_load_reg_236             |  64|   0|   64|          0|
+    |R_Z_load_reg_250             |  64|   0|   64|          0|
     |ap_CS_fsm                    |   2|   0|    2|          0|
     |ap_done_reg                  |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter0_reg  |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
-    |carry_reg_94                 |   1|   0|    1|          0|
-    |i_fu_52                      |   4|   0|    4|          0|
-    |icmp_ln23_reg_242            |   1|   0|    1|          0|
-    |tempReg_reg_266              |  64|   0|   64|          0|
-    |trunc_ln24_reg_246           |   3|   0|    3|          0|
+    |carry_reg_89                 |   1|   0|    1|          0|
+    |i_fu_46                      |   4|   0|    4|          0|
+    |icmp_ln23_reg_217            |   1|   0|    1|          0|
+    |tempReg_reg_241              |  64|   0|   64|          0|
+    |zext_ln23_reg_221            |   4|   0|   64|         60|
     +-----------------------------+----+----+-----+-----------+
-    |Total                        | 206|   0|  206|          0|
+    |Total                        | 207|   0|  267|         60|
     +-----------------------------+----+----+-----+-----------+
 
 
@@ -143,24 +142,24 @@
 == Interface
 ================================================================
 * Summary: 
-+----------------+-----+-----+------------+-------------------------------------+--------------+
-|    RTL Ports   | Dir | Bits|  Protocol  |            Source Object            |    C Type    |
-+----------------+-----+-----+------------+-------------------------------------+--------------+
-|ap_clk          |   in|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_rst          |   in|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_start        |   in|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_done         |  out|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_idle         |  out|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
-|ap_ready        |  out|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
-|R_X_address0    |  out|    4|   ap_memory|                                  R_X|         array|
-|R_X_ce0         |  out|    1|   ap_memory|                                  R_X|         array|
-|R_X_q0          |   in|   64|   ap_memory|                                  R_X|         array|
-|R_Z_address0    |  out|    4|   ap_memory|                                  R_Z|         array|
-|R_Z_ce0         |  out|    1|   ap_memory|                                  R_Z|         array|
-|R_Z_q0          |   in|   64|   ap_memory|                                  R_Z|         array|
-|coeff_address0  |  out|    6|   ap_memory|                                coeff|         array|
-|coeff_ce0       |  out|    1|   ap_memory|                                coeff|         array|
-|coeff_we0       |  out|    8|   ap_memory|                                coeff|         array|
-|coeff_d0        |  out|   64|   ap_memory|                                coeff|         array|
-+----------------+-----+-----+------------+-------------------------------------+--------------+
++--------------+-----+-----+------------+-------------------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |            Source Object            |    C Type    |
++--------------+-----+-----+------------+-------------------------------------+--------------+
+|ap_clk        |   in|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  fpadd503.1_Pipeline_VITIS_LOOP_23_1|  return value|
+|c_address0    |  out|    4|   ap_memory|                                    c|         array|
+|c_ce0         |  out|    1|   ap_memory|                                    c|         array|
+|c_we0         |  out|    1|   ap_memory|                                    c|         array|
+|c_d0          |  out|   64|   ap_memory|                                    c|         array|
+|R_X_address0  |  out|    4|   ap_memory|                                  R_X|         array|
+|R_X_ce0       |  out|    1|   ap_memory|                                  R_X|         array|
+|R_X_q0        |   in|   64|   ap_memory|                                  R_X|         array|
+|R_Z_address0  |  out|    4|   ap_memory|                                  R_Z|         array|
+|R_Z_ce0       |  out|    1|   ap_memory|                                  R_Z|         array|
+|R_Z_q0        |   in|   64|   ap_memory|                                  R_Z|         array|
++--------------+-----+-----+------------+-------------------------------------+--------------+
 

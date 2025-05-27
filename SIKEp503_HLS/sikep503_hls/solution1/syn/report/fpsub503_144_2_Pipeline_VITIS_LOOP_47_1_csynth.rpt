@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_144_2_Pipeline_VITIS_LOOP_47_1'
 ================================================================
-* Date:           Tue May 20 14:35:57 2025
+* Date:           Tue May 27 14:17:52 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
 +-----------------+---------+-----+--------+-------+-----+
 |DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|    567|    -|
+|Expression       |        -|    -|       0|    593|    -|
 |FIFO             |        -|    -|       -|      -|    -|
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     45|    -|
 |Register         |        -|    -|     212|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     212|    612|    0|
+|Total            |        0|    0|     212|    638|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,22 +85,24 @@
     +------------------------+----------+----+---+----+------------+------------+
     |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------+----------+----+---+----+------------+------------+
-    |add_ln47_fu_130_p2      |         +|   0|  0|  13|           4|           1|
-    |sub_ln48_fu_244_p2      |         -|   0|  0|  71|          64|          64|
-    |sub_ln95_fu_204_p2      |         -|   0|  0|  71|           1|          64|
-    |tempReg_fu_171_p2       |         -|   0|  0|  71|          64|          64|
-    |and_ln48_fu_228_p2      |       and|   0|  0|   2|           1|           1|
-    |icmp_ln47_fu_124_p2     |      icmp|   0|  0|  13|           4|           5|
-    |borrowReg_fu_234_p2     |        or|   0|  0|   2|           1|           1|
-    |or_ln105_fu_185_p2      |        or|   0|  0|  64|          64|          64|
-    |or_ln95_fu_209_p2       |        or|   0|  0|  64|          64|          64|
+    |add_ln47_fu_128_p2      |         +|   0|  0|  13|           4|           1|
+    |add_ln48_7_fu_145_p2    |         +|   0|  0|  13|           4|           4|
+    |add_ln48_fu_134_p2      |         +|   0|  0|  13|           4|           4|
+    |sub_ln48_fu_234_p2      |         -|   0|  0|  71|          64|          64|
+    |sub_ln95_fu_194_p2      |         -|   0|  0|  71|           1|          64|
+    |tempReg_fu_161_p2       |         -|   0|  0|  71|          64|          64|
+    |and_ln48_fu_218_p2      |       and|   0|  0|   2|           1|           1|
+    |icmp_ln47_fu_122_p2     |      icmp|   0|  0|  13|           4|           5|
+    |borrowReg_fu_224_p2     |        or|   0|  0|   2|           1|           1|
+    |or_ln105_fu_175_p2      |        or|   0|  0|  64|          64|          64|
+    |or_ln95_fu_199_p2       |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0           |       xor|   0|  0|   2|           1|           2|
-    |xor_ln105_82_fu_181_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln105_83_fu_191_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln105_fu_177_p2     |       xor|   0|  0|  64|          64|          64|
-    |xor_ln48_fu_222_p2      |       xor|   0|  0|   2|           1|           2|
+    |xor_ln105_82_fu_171_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_83_fu_181_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_fu_167_p2     |       xor|   0|  0|  64|          64|          64|
+    |xor_ln48_fu_212_p2      |       xor|   0|  0|   2|           1|           2|
     +------------------------+----------+----+---+----+------------+------------+
-    |Total                   |          |   0|  0| 567|         461|         524|
+    |Total                   |          |   0|  0| 593|         469|         532|
     +------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -110,8 +112,8 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
     |ap_sig_allocacmp_i_106   |   9|          2|    4|          8|
-    |borrow_reg_103           |   9|          2|    1|          2|
-    |i_fu_50                  |   9|          2|    4|          8|
+    |borrow_reg_101           |   9|          2|    1|          2|
+    |i_fu_48                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  45|         10|   11|         22|
     +-------------------------+----+-----------+-----+-----------+
@@ -125,15 +127,15 @@
     |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
-    |b_load_reg_278                    |  64|   0|   64|          0|
-    |borrow_reg_103                    |   1|   0|    1|          0|
-    |c_addr_reg_261                    |   4|   0|    4|          0|
-    |c_addr_reg_261_pp0_iter1_reg      |   4|   0|    4|          0|
-    |c_load_reg_272                    |  64|   0|   64|          0|
-    |i_fu_50                           |   4|   0|    4|          0|
-    |icmp_ln47_reg_257                 |   1|   0|    1|          0|
-    |icmp_ln47_reg_257_pp0_iter1_reg   |   1|   0|    1|          0|
-    |tempReg_reg_284                   |  64|   0|   64|          0|
+    |b_load_reg_268                    |  64|   0|   64|          0|
+    |borrow_reg_101                    |   1|   0|    1|          0|
+    |c_addr_reg_251                    |   4|   0|    4|          0|
+    |c_addr_reg_251_pp0_iter1_reg      |   4|   0|    4|          0|
+    |c_load_reg_262                    |  64|   0|   64|          0|
+    |i_fu_48                           |   4|   0|    4|          0|
+    |icmp_ln47_reg_247                 |   1|   0|    1|          0|
+    |icmp_ln47_reg_247_pp0_iter1_reg   |   1|   0|    1|          0|
+    |tempReg_reg_274                   |  64|   0|   64|          0|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 212|   0|  212|          0|
     +----------------------------------+----+----+-----+-----------+
@@ -153,7 +155,7 @@
 |ap_done            |  out|    1|  ap_ctrl_hs|  fpsub503.144.2_Pipeline_VITIS_LOOP_47_1|  return value|
 |ap_idle            |  out|    1|  ap_ctrl_hs|  fpsub503.144.2_Pipeline_VITIS_LOOP_47_1|  return value|
 |ap_ready           |  out|    1|  ap_ctrl_hs|  fpsub503.144.2_Pipeline_VITIS_LOOP_47_1|  return value|
-|c_offset           |   in|    1|     ap_none|                                 c_offset|        scalar|
+|zext_ln48_22       |   in|    4|     ap_none|                             zext_ln48_22|        scalar|
 |c_address0         |  out|    4|   ap_memory|                                        c|         array|
 |c_ce0              |  out|    1|   ap_memory|                                        c|         array|
 |c_we0              |  out|    1|   ap_memory|                                        c|         array|
@@ -161,7 +163,7 @@
 |c_address1         |  out|    4|   ap_memory|                                        c|         array|
 |c_ce1              |  out|    1|   ap_memory|                                        c|         array|
 |c_q1               |   in|   64|   ap_memory|                                        c|         array|
-|b_offset           |   in|    1|     ap_none|                                 b_offset|        scalar|
+|zext_ln48_21       |   in|    4|     ap_none|                             zext_ln48_21|        scalar|
 |b_address0         |  out|    4|   ap_memory|                                        b|         array|
 |b_ce0              |  out|    1|   ap_memory|                                        b|         array|
 |b_q0               |   in|   64|   ap_memory|                                        b|         array|

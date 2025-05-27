@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_2'
 ================================================================
-* Date:           Tue May 20 14:30:10 2025
+* Date:           Tue May 27 14:11:23 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -88,18 +88,18 @@ ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%empty = alloca i32 1"   --->   Oper
 ST_1 : Operation 5 [1/1] (1.58ns)   --->   "%store_ln0 = store i5 0, i5 %empty"   --->   Operation 5 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   --->   Operation 6 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_load = load i5 %empty"   --->   Operation 7 'load' 'p_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (1.78ns)   --->   "%exitcond25132 = icmp_eq  i5 %p_load, i5 16"   --->   Operation 8 'icmp' 'exitcond25132' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 9 [1/1] (1.78ns)   --->   "%empty_473 = add i5 %p_load, i5 1"   --->   Operation 9 'add' 'empty_473' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond25132, void %memset.loop.split, void %for.inc.i.i.preheader.exitStub"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44"   --->   Operation 11 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond25132)> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 12 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!exitcond25132)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_474 = trunc i5 %p_load"   --->   Operation 13 'trunc' 'empty_474' <Predicate = (!exitcond25132)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_cast_cast = zext i4 %empty_474"   --->   Operation 14 'zext' 'p_cast_cast' <Predicate = (!exitcond25132)> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%C24_addr = getelementptr i64 %C24, i32 0, i32 %p_cast_cast"   --->   Operation 15 'getelementptr' 'C24_addr' <Predicate = (!exitcond25132)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln0 = store i64 0, i4 %C24_addr"   --->   Operation 16 'store' 'store_ln0' <Predicate = (!exitcond25132)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln0 = store i5 %empty_473, i5 %empty"   --->   Operation 17 'store' 'store_ln0' <Predicate = (!exitcond25132)> <Delay = 1.58>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   --->   Operation 18 'br' 'br_ln0' <Predicate = (!exitcond25132)> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 19 'ret' 'ret_ln0' <Predicate = (exitcond25132)> <Delay = 1.58>
+ST_1 : Operation 8 [1/1] (1.78ns)   --->   "%exitcond25933 = icmp_eq  i5 %p_load, i5 16"   --->   Operation 8 'icmp' 'exitcond25933' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (1.78ns)   --->   "%empty_427 = add i5 %p_load, i5 1"   --->   Operation 9 'add' 'empty_427' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond25933, void %memset.loop.split, void %for.inc.i.i.preheader.exitStub"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44"   --->   Operation 11 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond25933)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 12 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!exitcond25933)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_428 = trunc i5 %p_load"   --->   Operation 13 'trunc' 'empty_428' <Predicate = (!exitcond25933)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_cast_cast = zext i4 %empty_428"   --->   Operation 14 'zext' 'p_cast_cast' <Predicate = (!exitcond25933)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%C24_addr = getelementptr i64 %C24, i64 0, i64 %p_cast_cast"   --->   Operation 15 'getelementptr' 'C24_addr' <Predicate = (!exitcond25933)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln0 = store i64 0, i4 %C24_addr"   --->   Operation 16 'store' 'store_ln0' <Predicate = (!exitcond25933)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln0 = store i5 %empty_427, i5 %empty"   --->   Operation 17 'store' 'store_ln0' <Predicate = (!exitcond25933)> <Delay = 1.58>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   --->   Operation 18 'br' 'br_ln0' <Predicate = (!exitcond25933)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 19 'ret' 'ret_ln0' <Predicate = (exitcond25933)> <Delay = 1.58>
 
 
 ============================================================
@@ -124,12 +124,12 @@ empty                 (alloca           ) [ 01]
 store_ln0             (store            ) [ 00]
 br_ln0                (br               ) [ 00]
 p_load                (load             ) [ 00]
-exitcond25132         (icmp             ) [ 01]
-empty_473             (add              ) [ 00]
+exitcond25933         (icmp             ) [ 01]
+empty_427             (add              ) [ 00]
 br_ln0                (br               ) [ 00]
 specpipeline_ln0      (specpipeline     ) [ 00]
 speclooptripcount_ln0 (speclooptripcount) [ 00]
-empty_474             (trunc            ) [ 00]
+empty_428             (trunc            ) [ 00]
 p_cast_cast           (zext             ) [ 00]
 C24_addr              (getelementptr    ) [ 00]
 store_ln0             (store            ) [ 00]
@@ -207,7 +207,7 @@ ret_ln0               (ret              ) [ 00]
 
 <comp id="14" class="1001" name="const_14">
 <pin_list>
-<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
@@ -310,7 +310,7 @@ ret_ln0               (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="exitcond25132_fu_50">
+<comp id="50" class="1004" name="exitcond25933_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="5" slack="0"/>
 <pin id="52" dir="0" index="1" bw="5" slack="0"/>
@@ -318,11 +318,11 @@ ret_ln0               (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="exitcond25132/1 "/>
+<opset="exitcond25933/1 "/>
 </bind>
 </comp>
 
-<comp id="56" class="1004" name="empty_473_fu_56">
+<comp id="56" class="1004" name="empty_427_fu_56">
 <pin_list>
 <pin id="57" dir="0" index="0" bw="5" slack="0"/>
 <pin id="58" dir="0" index="1" bw="1" slack="0"/>
@@ -330,25 +330,25 @@ ret_ln0               (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="empty_473/1 "/>
+<opset="empty_427/1 "/>
 </bind>
 </comp>
 
-<comp id="62" class="1004" name="empty_474_fu_62">
+<comp id="62" class="1004" name="empty_428_fu_62">
 <pin_list>
 <pin id="63" dir="0" index="0" bw="5" slack="0"/>
 <pin id="64" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_474/1 "/>
+<opset="empty_428/1 "/>
 </bind>
 </comp>
 
 <comp id="66" class="1004" name="p_cast_cast_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="4" slack="0"/>
-<pin id="68" dir="1" index="1" bw="32" slack="0"/>
+<pin id="68" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
@@ -385,7 +385,7 @@ ret_ln0               (ret              ) [ 00]
 
 <net id="33"><net_src comp="0" pin="0"/><net_sink comp="28" pin=0"/></net>
 
-<net id="34"><net_src comp="14" pin="0"/><net_sink comp="28" pin=1"/></net>
+<net id="34"><net_src comp="22" pin="0"/><net_sink comp="28" pin=1"/></net>
 
 <net id="40"><net_src comp="22" pin="0"/><net_sink comp="35" pin=1"/></net>
 
@@ -430,10 +430,10 @@ ret_ln0               (ret              ) [ 00]
 	State 1
 		store_ln0 : 1
 		p_load : 1
-		exitcond25132 : 2
-		empty_473 : 2
+		exitcond25933 : 2
+		empty_427 : 2
 		br_ln0 : 3
-		empty_474 : 2
+		empty_428 : 2
 		p_cast_cast : 3
 		C24_addr : 4
 		store_ln0 : 5
@@ -448,11 +448,11 @@ ret_ln0               (ret              ) [ 00]
 |----------|---------------------|---------|---------|
 | Operation|   Functional Unit   |    FF   |   LUT   |
 |----------|---------------------|---------|---------|
-|   icmp   | exitcond25132_fu_50 |    0    |    13   |
+|   icmp   | exitcond25933_fu_50 |    0    |    13   |
 |----------|---------------------|---------|---------|
-|    add   |   empty_473_fu_56   |    0    |    13   |
+|    add   |   empty_427_fu_56   |    0    |    13   |
 |----------|---------------------|---------|---------|
-|   trunc  |   empty_474_fu_62   |    0    |    0    |
+|   trunc  |   empty_428_fu_62   |    0    |    0    |
 |----------|---------------------|---------|---------|
 |   zext   |  p_cast_cast_fu_66  |    0    |    0    |
 |----------|---------------------|---------|---------|

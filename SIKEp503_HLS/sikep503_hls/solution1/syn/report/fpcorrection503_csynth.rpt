@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpcorrection503'
 ================================================================
-* Date:           Tue May 20 14:35:15 2025
+* Date:           Tue May 27 14:17:09 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -38,8 +38,8 @@
         |                                                    |                                          |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                      Instance                      |                  Module                  |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_24  |fpcorrection503_Pipeline_VITIS_LOOP_91_1  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_35  |fpcorrection503_Pipeline_VITIS_LOOP_97_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28  |fpcorrection503_Pipeline_VITIS_LOOP_91_1  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38  |fpcorrection503_Pipeline_VITIS_LOOP_97_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -57,12 +57,12 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       -|      -|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|     611|   1320|    -|
+|Instance         |        0|    -|     611|   1346|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|    109|    -|
-|Register         |        -|    -|       6|      -|    -|
+|Register         |        -|    -|       7|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     617|   1429|    0|
+|Total            |        0|    0|     618|   1455|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -74,10 +74,10 @@
     +----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
     |                      Instance                      |                  Module                  | BRAM_18K| DSP|  FF | LUT | URAM|
     +----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
-    |grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_24  |fpcorrection503_Pipeline_VITIS_LOOP_91_1  |        0|   0|  276|  620|    0|
-    |grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_35  |fpcorrection503_Pipeline_VITIS_LOOP_97_2  |        0|   0|  335|  700|    0|
+    |grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28  |fpcorrection503_Pipeline_VITIS_LOOP_91_1  |        0|   0|  276|  633|    0|
+    |grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38  |fpcorrection503_Pipeline_VITIS_LOOP_97_2  |        0|   0|  335|  713|    0|
     +----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
-    |Total                                               |                                          |        0|   0|  611| 1320|    0|
+    |Total                                               |                                          |        0|   0|  611| 1346|    0|
     +----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -112,10 +112,11 @@
     |                               Name                              | FF| LUT| Bits| Const Bits|
     +-----------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                        |  4|   0|    4|          0|
-    |grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_24_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_35_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38_ap_start_reg  |  1|   0|    1|          0|
+    |tmp_reg_67                                                       |  1|   0|    4|          3|
     +-----------------------------------------------------------------+---+----+-----+-----------+
-    |Total                                                            |  6|   0|    6|          0|
+    |Total                                                            |  7|   0|   10|          3|
     +-----------------------------------------------------------------+---+----+-----+-----------+
 
 

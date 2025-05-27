@@ -34,7 +34,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/sha3/fips202.c:558</SourceLocation>
+<SourceLocation>src/sha3/fips202.c:620</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

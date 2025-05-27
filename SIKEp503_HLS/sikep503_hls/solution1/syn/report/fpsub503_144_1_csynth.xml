@@ -34,15 +34,15 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/generic/fp_generic.c:56</SourceLocation>
+<SourceLocation>src/generic/fp_generic.c:48</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>556</FF>
-<LUT>1421</LUT>
+<FF>558</FF>
+<LUT>1461</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>

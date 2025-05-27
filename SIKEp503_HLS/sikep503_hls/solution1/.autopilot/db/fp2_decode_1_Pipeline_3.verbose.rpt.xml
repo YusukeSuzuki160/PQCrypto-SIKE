@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2_decode_1_Pipeline_3'" level="0">
-<item name = "Date">Tue May 20 14:37:29 2025
+<item name = "Date">Tue May 27 14:19:28 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -78,8 +78,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_221_fu_56_p2">+, 0, 0, 13, 5, 1</column>
-<column name="exitcond_i_i_i3_fu_50_p2">icmp, 0, 0, 14, 5, 6</column>
+<column name="empty_176_fu_56_p2">+, 0, 0, 13, 5, 1</column>
+<column name="exitcond_i_i_i2_fu_50_p2">icmp, 0, 0, 14, 5, 6</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

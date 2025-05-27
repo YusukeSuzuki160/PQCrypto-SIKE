@@ -418,7 +418,7 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
     return (unsigned int)((x ^ ((x ^ y) | ((x - y) ^ y))) >> (64 -1));
 }
 # 11 "src/api.h" 2
-# 27 "src/api.h"
+# 31 "src/api.h"
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk);
 
 
@@ -432,37 +432,37 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
 
 int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned char *sk);
-# 66 "src/api.h"
-void random_mod_order_A(unsigned char* random_digits);
+# 68 "src/api.h"
+void random_mod_order_A(unsigned char *random_digits);
 
 
 
-void random_mod_order_B(unsigned char* random_digits);
-
-
-
-
-int EphemeralKeyGeneration_A(const unsigned char* PrivateKeyA, unsigned char* PublicKeyA);
+void random_mod_order_B(unsigned char *random_digits);
 
 
 
 
-
-int EphemeralKeyGeneration_B(const unsigned char* PrivateKeyB, unsigned char* PublicKeyB);
+int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA);
 
 
 
 
 
-
-int EphemeralSecretAgreement_A(const unsigned char* PrivateKeyA, const unsigned char* PublicKeyB, unsigned char* SharedSecretA);
+int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *PublicKeyB);
 
 
 
 
 
 
-int EphemeralSecretAgreement_B(const unsigned char* PrivateKeyB, const unsigned char* PublicKeyA, unsigned char* SharedSecretB);
+int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned char *PublicKeyB, unsigned char *SharedSecretA);
+
+
+
+
+
+
+int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned char *PublicKeyA, unsigned char *SharedSecretB);
 # 11 "src/P503_internal.h" 2
 # 62 "src/P503_internal.h"
 typedef digit_t felm_t[8];

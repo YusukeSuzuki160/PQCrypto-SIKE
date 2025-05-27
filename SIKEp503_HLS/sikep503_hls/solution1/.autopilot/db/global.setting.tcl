@@ -43,10 +43,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
-set SourceFiles {sc {} c {../.././src/sikep503_kem_enc_tb.cpp ../.././src/sike.h ../.././src/sidh.h ../.././src/ec_isogeny.h ../.././src/fpx.h ../.././src/config.h ../.././src/sha3/fips202.h ../.././src/random/random.h ../.././src/api.h ../.././src/P503_internal.h ../.././src/sha3/fips202.c ../.././src/random/random.c ../.././src/generic/fp_generic.c ../.././src/sike.c ../.././src/sidh.c ../.././src/fpx.c ../.././src/ec_isogeny.c ../.././src/P503.c ../../src/sikep503_kem_enc_tb.cpp ../../src/sha3/fips202.c ../../src/random/random.c ../../src/generic/fp_generic.c ../../src/sike.c ../../src/sidh.c ../../src/fpx.c ../../src/ec_isogeny.c ../../src/P503.c}}
+set SourceFiles {sc {} c {../.././src/sha3/fips202.c ../.././src/random/random.c ../.././src/generic/fp_generic.c ../.././src/sikep503_kem_enc_hw.cpp ../.././src/P503.c ../.././src/sike.c ../.././src/sidh.c ../.././src/ec_isogeny.c ../.././src/fpx.c ../.././src/sha3/fips202.h ../.././src/random/random.h ../.././src/api.h ../.././src/config.h ../.././src/sike.h ../.././src/sidh.h ../.././src/ec_isogeny.h ../.././src/fpx.h ../.././src/P503_internal.h ../../src/sha3/fips202.c ../../src/random/random.c ../../src/generic/fp_generic.c ../../src/sikep503_kem_enc_hw.cpp ../../src/P503.c ../../src/sike.c ../../src/sidh.c ../../src/ec_isogeny.c ../../src/fpx.c}}
 set SourceFlags {sc {} c {{ } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} {} {} {} {} {} {} {} {} {}}}
 set DirectiveFile {}
-set TBFiles {verilog {../../src/tb_top.cpp ../../src/sikep503_kem_enc_tb.cpp} bc {../../src/tb_top.cpp ../../src/sikep503_kem_enc_tb.cpp} sc {../../src/tb_top.cpp ../../src/sikep503_kem_enc_tb.cpp} vhdl {../../src/tb_top.cpp ../../src/sikep503_kem_enc_tb.cpp} c {} cas {../../src/tb_top.cpp ../../src/sikep503_kem_enc_tb.cpp}}
+set TBFiles {verilog /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/tb_top.cpp bc /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/tb_top.cpp sc /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/tb_top.cpp vhdl /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/tb_top.cpp c {} cas /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/tb_top.cpp}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -54,7 +54,7 @@ set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
-set TBTVFileNotFound ../../tb/tb_top.cpp
+set TBTVFileNotFound {}
 set AppFile ../hls.app
 set ApsFile solution1.aps
 set AvePath ../../.

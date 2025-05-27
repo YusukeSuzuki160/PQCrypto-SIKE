@@ -56,7 +56,7 @@
 <InstanceList>
 </InstanceList>
 </VITIS_LOOP_143_1>
-<VITIS_LOOP_156_3>
+<VITIS_LOOP_157_3>
 <Slack>7.30</Slack>
 <TripCount>7</TripCount>
 <Latency>
@@ -79,7 +79,7 @@
 </IterationLatency>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_156_3>
+</VITIS_LOOP_157_3>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -92,12 +92,12 @@
 <ViolationType>-</ViolationType>
 <SourceLocation>src/generic/fp_generic.c:143</SourceLocation>
 </VITIS_LOOP_143_1>
-<VITIS_LOOP_156_3>
-<Name>VITIS_LOOP_156_3</Name>
+<VITIS_LOOP_157_3>
+<Name>VITIS_LOOP_157_3</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/generic/fp_generic.c:156</SourceLocation>
-</VITIS_LOOP_156_3>
+<SourceLocation>src/generic/fp_generic.c:157</SourceLocation>
+</VITIS_LOOP_157_3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -105,7 +105,7 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>2741</FF>
+<FF>2745</FF>
 <LUT>3144</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -187,7 +187,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_137_p_din0</name>
+<name>grp_fu_139_p_din0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -198,7 +198,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_137_p_din1</name>
+<name>grp_fu_139_p_din1</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -209,7 +209,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_137_p_dout0</name>
+<name>grp_fu_139_p_dout0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -220,7 +220,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_137_p_ce</name>
+<name>grp_fu_139_p_ce</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -231,7 +231,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_141_p_din0</name>
+<name>grp_fu_143_p_din0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -242,7 +242,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_141_p_din1</name>
+<name>grp_fu_143_p_din1</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -253,7 +253,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_141_p_dout0</name>
+<name>grp_fu_143_p_dout0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -264,7 +264,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_141_p_ce</name>
+<name>grp_fu_143_p_ce</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -275,7 +275,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_145_p_din0</name>
+<name>grp_fu_147_p_din0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -286,7 +286,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_145_p_din1</name>
+<name>grp_fu_147_p_din1</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -297,7 +297,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_145_p_dout0</name>
+<name>grp_fu_147_p_dout0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -308,7 +308,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_145_p_ce</name>
+<name>grp_fu_147_p_ce</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -319,7 +319,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_149_p_din0</name>
+<name>grp_fu_151_p_din0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -330,7 +330,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_149_p_din1</name>
+<name>grp_fu_151_p_din1</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -341,7 +341,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_149_p_dout0</name>
+<name>grp_fu_151_p_dout0</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -352,7 +352,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_149_p_ce</name>
+<name>grp_fu_151_p_ce</name>
 <Object>mp_mul.6</Object>
 <Type>return value</Type>
 <Scope></Scope>

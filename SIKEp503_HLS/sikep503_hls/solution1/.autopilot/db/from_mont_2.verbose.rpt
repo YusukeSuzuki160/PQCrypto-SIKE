@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'from_mont_2'
 ================================================================
-* Date:           Tue May 20 14:37:24 2025
+* Date:           Tue May 27 14:19:23 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -40,7 +40,7 @@
         +------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
         |grp_from_mont_2_Pipeline_1_fu_32                |from_mont_2_Pipeline_1                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_mp_mul_144_fu_38                            |mp_mul_144                            |      212|      310|  2.120 us|  3.100 us|  212|  310|                                              no|
-        |grp_rdc_mont_4_fu_49                            |rdc_mont_4                            |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
+        |grp_rdc_mont_2_fu_49                            |rdc_mont_2                            |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
         |grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58  |from_mont_2_Pipeline_VITIS_LOOP_91_1  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67  |from_mont_2_Pipeline_VITIS_LOOP_97_2  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
@@ -60,16 +60,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       -|      -|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|   32|    8390|  10634|    -|
+|Instance         |        0|   32|    8462|  10711|    -|
 |Memory           |        2|    -|      64|      8|    0|
 |Multiplexer      |        -|    -|       0|    207|    -|
 |Register         |        -|    -|      15|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        2|   32|    8469|  10849|    0|
+|Total            |        2|   32|    8541|  10926|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |       ~0|   14|       7|     20|    0|
+|Utilization (%)  |       ~0|   14|       8|     20|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -78,12 +78,12 @@
     |                    Instance                    |                Module                | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +------------------------------------------------+--------------------------------------+---------+----+------+------+-----+
     |grp_from_mont_2_Pipeline_1_fu_32                |from_mont_2_Pipeline_1                |        0|   0|     7|    54|    0|
-    |grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58  |from_mont_2_Pipeline_VITIS_LOOP_91_1  |        0|   0|   377|   771|    0|
-    |grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67  |from_mont_2_Pipeline_VITIS_LOOP_97_2  |        0|   0|   504|   826|    0|
-    |grp_mp_mul_144_fu_38                            |mp_mul_144                            |        0|  16|  3332|  3499|    0|
-    |grp_rdc_mont_4_fu_49                            |rdc_mont_4                            |        0|  16|  4170|  5484|    0|
+    |grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58  |from_mont_2_Pipeline_VITIS_LOOP_91_1  |        0|   0|   409|   803|    0|
+    |grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67  |from_mont_2_Pipeline_VITIS_LOOP_97_2  |        0|   0|   536|   858|    0|
+    |grp_mp_mul_144_fu_38                            |mp_mul_144                            |        0|  16|  3336|  3512|    0|
+    |grp_rdc_mont_2_fu_49                            |rdc_mont_2                            |        0|  16|  4174|  5484|    0|
     +------------------------------------------------+--------------------------------------+---------+----+------+------+-----+
-    |Total                                           |                                      |        0|  32|  8390| 10634|    0|
+    |Total                                           |                                      |        0|  32|  8462| 10711|    0|
     +------------------------------------------------+--------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -131,7 +131,7 @@
     |grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_ap_start_reg  |   1|   0|    1|          0|
     |grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_ap_start_reg  |   1|   0|    1|          0|
     |grp_mp_mul_144_fu_38_ap_start_reg                            |   1|   0|    1|          0|
-    |grp_rdc_mont_4_fu_49_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_rdc_mont_2_fu_49_ap_start_reg                            |   1|   0|    1|          0|
     +-------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                        |  15|   0|   15|          0|
     +-------------------------------------------------------------+----+----+-----+-----------+
@@ -206,24 +206,24 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.25>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i32 1"   --->   Operation 11 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (3.25ns)   --->   "%temp = alloca i32 1" [src/fpx.c:60->src/fpx.c:43]   --->   Operation 12 'alloca' 'temp' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 11 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (3.25ns)   --->   "%temp = alloca i64 1" [src/fpx.c:61->src/fpx.c:43]   --->   Operation 12 'alloca' 'temp' <Predicate = true> <Delay = 3.25>
 ST_1 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln0 = call void @from_mont.2_Pipeline_1, i64 %temp"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 4.95>
 ST_2 : Operation 14 [1/2] (4.95ns)   --->   "%call_ln0 = call void @from_mont.2_Pipeline_1, i64 %temp"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln62 = call void @mp_mul.144, i64 %ma, i1 1, i64 %one, i64 %temp" [src/fpx.c:62->src/fpx.c:43]   --->   Operation 15 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.144, i64 %ma, i1 1, i64 %one, i64 %temp" [src/fpx.c:63->src/fpx.c:43]   --->   Operation 15 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.73>
-ST_4 : Operation 16 [1/2] (1.73ns)   --->   "%call_ln62 = call void @mp_mul.144, i64 %ma, i1 1, i64 %one, i64 %temp" [src/fpx.c:62->src/fpx.c:43]   --->   Operation 16 'call' 'call_ln62' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 16 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.144, i64 %ma, i1 1, i64 %one, i64 %temp" [src/fpx.c:63->src/fpx.c:43]   --->   Operation 16 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln63 = call void @rdc_mont.4, i64 %temp, i64 %t_i, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:43]   --->   Operation 17 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.2, i64 %temp, i64 %t_i, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:43]   --->   Operation 17 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln63 = call void @rdc_mont.4, i64 %temp, i64 %t_i, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:43]   --->   Operation 18 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.2, i64 %temp, i64 %t_i, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:43]   --->   Operation 18 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
 ST_7 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln0 = call void @from_mont.2_Pipeline_VITIS_LOOP_91_1, i64 %t_i, i1 %borrow_loc, i64 %p503_1"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -265,8 +265,8 @@ Port [ p503_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; ext
 borrow_loc      (alloca) [ 00111111110]
 temp            (alloca) [ 00111110000]
 call_ln0        (call  ) [ 00000000000]
-call_ln62       (call  ) [ 00000000000]
 call_ln63       (call  ) [ 00000000000]
+call_ln64       (call  ) [ 00000000000]
 call_ln0        (call  ) [ 00000000000]
 borrow_loc_load (load  ) [ 00000000001]
 call_ln0        (call  ) [ 00000000000]
@@ -367,7 +367,7 @@ ret_ln45        (ret   ) [ 00000000000]
 <pin id="19" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="rdc_mont.4"/></StgValue>
+<StgValue><ssdm name="rdc_mont.2"/></StgValue>
 </bind>
 </comp>
 
@@ -434,11 +434,11 @@ ret_ln45        (ret   ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln62/3 "/>
+<opset="call_ln63/3 "/>
 </bind>
 </comp>
 
-<comp id="49" class="1004" name="grp_rdc_mont_4_fu_49">
+<comp id="49" class="1004" name="grp_rdc_mont_2_fu_49">
 <pin_list>
 <pin id="50" dir="0" index="0" bw="0" slack="0"/>
 <pin id="51" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -448,7 +448,7 @@ ret_ln45        (ret   ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln63/5 "/>
+<opset="call_ln64/5 "/>
 </bind>
 </comp>
 
@@ -587,12 +587,12 @@ ret_ln45        (ret   ) [ 00000000000]
 | Operation|                 Functional Unit                |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|------------------------------------------------|---------|---------|---------|---------|
 |          |        grp_from_mont_2_Pipeline_1_fu_32        |    0    |    0    |    5    |    26   |
-|          |              grp_mp_mul_144_fu_38              |    48   | 39.9386 |   4500  |   3398  |
-|   call   |              grp_rdc_mont_4_fu_49              |    48   | 46.7678 |   5294  |   5185  |
-|          | grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58 |    0    |  4.764  |   308   |   695   |
-|          | grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67 |    0    |  3.176  |   435   |   803   |
+|          |              grp_mp_mul_144_fu_38              |    48   | 41.5266 |   4503  |   3420  |
+|   call   |              grp_rdc_mont_2_fu_49              |    48   | 46.7678 |   5330  |   5185  |
+|          | grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58 |    0    |  4.764  |   340   |   727   |
+|          | grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67 |    0    |  3.176  |   467   |   835   |
 |----------|------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                |    96   | 94.6464 |  10542  |  10107  |
+|   Total  |                                                |    96   | 96.2344 |  10645  |  10193  |
 |----------|------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -626,10 +626,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |   96   |   94   |  10542 |  10107 |    -   |
+|  Function |    -   |   96   |   96   |  10645 |  10193 |    -   |
 |   Memory  |    2   |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    1   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    2   |   96   |   94   |  10543 |  10107 |    0   |
+|   Total   |    2   |   96   |   96   |  10646 |  10193 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

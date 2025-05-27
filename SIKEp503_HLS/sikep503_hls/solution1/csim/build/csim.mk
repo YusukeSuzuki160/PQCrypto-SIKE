@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../src/tb_top.cpp ../../../../src/sikep503_kem_enc_tb.cpp ../../../../src/sha3/fips202.c ../../../../src/random/random.c ../../../../src/generic/fp_generic.c ../../../../src/sike.c ../../../../src/sidh.c ../../../../src/fpx.c ../../../../src/ec_isogeny.c ../../../../src/P503.c
+HLS_SOURCES = ../../../../src/tb_top.cpp ../../../../src/sha3/fips202.c ../../../../src/random/random.c ../../../../src/generic/fp_generic.c ../../../../src/sikep503_kem_enc_hw.cpp ../../../../src/P503.c ../../../../src/sike.c ../../../../src/sidh.c ../../../../src/ec_isogeny.c ../../../../src/fpx.c
 
 override TARGET := csim.exe
 
@@ -89,12 +89,6 @@ $(ObjDir)/tb_top.o: ../../../../src/tb_top.cpp $(ObjDir)/.dir csim.mk
 
 -include $(ObjDir)/tb_top.d
 
-$(ObjDir)/sikep503_kem_enc_tb.o: ../../../../src/sikep503_kem_enc_tb.cpp $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../src/sikep503_kem_enc_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD -std=c++17 -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/sikep503_kem_enc_tb.d
-
 $(ObjDir)/fips202.o: ../../../../src/sha3/fips202.c $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../src/sha3/fips202.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
@@ -113,6 +107,18 @@ $(ObjDir)/fp_generic.o: ../../../../src/generic/fp_generic.c $(ObjDir)/.dir csim
 
 -include $(ObjDir)/fp_generic.d
 
+$(ObjDir)/sikep503_kem_enc_hw.o: ../../../../src/sikep503_kem_enc_hw.cpp $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../src/sikep503_kem_enc_hw.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/sikep503_kem_enc_hw.d
+
+$(ObjDir)/P503.o: ../../../../src/P503.c $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../src/P503.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/P503.d
+
 $(ObjDir)/sike.o: ../../../../src/sike.c $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../src/sike.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
@@ -125,20 +131,14 @@ $(ObjDir)/sidh.o: ../../../../src/sidh.c $(ObjDir)/.dir csim.mk
 
 -include $(ObjDir)/sidh.d
 
-$(ObjDir)/fpx.o: ../../../../src/fpx.c $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../src/fpx.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/fpx.d
-
 $(ObjDir)/ec_isogeny.o: ../../../../src/ec_isogeny.c $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../src/ec_isogeny.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/ec_isogeny.d
 
-$(ObjDir)/P503.o: ../../../../src/P503.c $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../src/P503.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/fpx.o: ../../../../src/fpx.c $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../src/fpx.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -std=gnu99 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/P503.d
+-include $(ObjDir)/fpx.d

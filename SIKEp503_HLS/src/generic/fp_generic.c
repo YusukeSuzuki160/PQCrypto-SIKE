@@ -141,6 +141,7 @@ void mp_mul(const digit_t* a, const digit_t* b, digit_t* c, const unsigned int n
     unsigned int carry = 0;
     
     for (i = 0; i < nwords; i++) {
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         for (j = 0; j <= i; j++) {
             MUL(a[j], b[i-j], UV+1, UV[0]); 
             ADDC(0, UV[0], v, carry, v); 
@@ -154,6 +155,7 @@ void mp_mul(const digit_t* a, const digit_t* b, digit_t* c, const unsigned int n
     }
 
     for (i = nwords; i < 2*nwords-1; i++) {
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         for (j = i-nwords+1; j < nwords; j++) {
             MUL(a[j], b[i-j], UV+1, UV[0]); 
             ADDC(0, UV[0], v, carry, v); 

@@ -32,9 +32,9 @@ module sikep503_kem_enc_hw_control_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [31:0]                   ct,
-    output wire [31:0]                   pk,
-    output wire [31:0]                   ss,
+    output wire [63:0]                   ct,
+    output wire [63:0]                   pk,
+    output wire [63:0]                   ss,
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
@@ -64,13 +64,19 @@ module sikep503_kem_enc_hw_control_s_axi
 //        others - reserved
 // 0x10 : Data signal of ct
 //        bit 31~0 - ct[31:0] (Read/Write)
-// 0x14 : reserved
-// 0x18 : Data signal of pk
+// 0x14 : Data signal of ct
+//        bit 31~0 - ct[63:32] (Read/Write)
+// 0x18 : reserved
+// 0x1c : Data signal of pk
 //        bit 31~0 - pk[31:0] (Read/Write)
-// 0x1c : reserved
-// 0x20 : Data signal of ss
-//        bit 31~0 - ss[31:0] (Read/Write)
+// 0x20 : Data signal of pk
+//        bit 31~0 - pk[63:32] (Read/Write)
 // 0x24 : reserved
+// 0x28 : Data signal of ss
+//        bit 31~0 - ss[31:0] (Read/Write)
+// 0x2c : Data signal of ss
+//        bit 31~0 - ss[63:32] (Read/Write)
+// 0x30 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -80,11 +86,14 @@ localparam
     ADDR_IER       = 6'h08,
     ADDR_ISR       = 6'h0c,
     ADDR_CT_DATA_0 = 6'h10,
-    ADDR_CT_CTRL   = 6'h14,
-    ADDR_PK_DATA_0 = 6'h18,
-    ADDR_PK_CTRL   = 6'h1c,
-    ADDR_SS_DATA_0 = 6'h20,
-    ADDR_SS_CTRL   = 6'h24,
+    ADDR_CT_DATA_1 = 6'h14,
+    ADDR_CT_CTRL   = 6'h18,
+    ADDR_PK_DATA_0 = 6'h1c,
+    ADDR_PK_DATA_1 = 6'h20,
+    ADDR_PK_CTRL   = 6'h24,
+    ADDR_SS_DATA_0 = 6'h28,
+    ADDR_SS_DATA_1 = 6'h2c,
+    ADDR_SS_CTRL   = 6'h30,
     WRIDLE         = 2'd0,
     WRDATA         = 2'd1,
     WRRESP         = 2'd2,
@@ -121,9 +130,9 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
-    reg  [31:0]                   int_ct = 'b0;
-    reg  [31:0]                   int_pk = 'b0;
-    reg  [31:0]                   int_ss = 'b0;
+    reg  [63:0]                   int_ct = 'b0;
+    reg  [63:0]                   int_pk = 'b0;
+    reg  [63:0]                   int_ss = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -236,11 +245,20 @@ always @(posedge ACLK) begin
                 ADDR_CT_DATA_0: begin
                     rdata <= int_ct[31:0];
                 end
+                ADDR_CT_DATA_1: begin
+                    rdata <= int_ct[63:32];
+                end
                 ADDR_PK_DATA_0: begin
                     rdata <= int_pk[31:0];
                 end
+                ADDR_PK_DATA_1: begin
+                    rdata <= int_pk[63:32];
+                end
                 ADDR_SS_DATA_0: begin
                     rdata <= int_ss[31:0];
+                end
+                ADDR_SS_DATA_1: begin
+                    rdata <= int_ss[63:32];
                 end
             endcase
         end
@@ -399,6 +417,16 @@ always @(posedge ACLK) begin
     end
 end
 
+// int_ct[63:32]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_ct[63:32] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_CT_DATA_1)
+            int_ct[63:32] <= (WDATA[31:0] & wmask) | (int_ct[63:32] & ~wmask);
+    end
+end
+
 // int_pk[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
@@ -409,6 +437,16 @@ always @(posedge ACLK) begin
     end
 end
 
+// int_pk[63:32]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_pk[63:32] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_PK_DATA_1)
+            int_pk[63:32] <= (WDATA[31:0] & wmask) | (int_pk[63:32] & ~wmask);
+    end
+end
+
 // int_ss[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
@@ -416,6 +454,16 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_SS_DATA_0)
             int_ss[31:0] <= (WDATA[31:0] & wmask) | (int_ss[31:0] & ~wmask);
+    end
+end
+
+// int_ss[63:32]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_ss[63:32] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_SS_DATA_1)
+            int_ss[63:32] <= (WDATA[31:0] & wmask) | (int_ss[63:32] & ~wmask);
     end
 end
 

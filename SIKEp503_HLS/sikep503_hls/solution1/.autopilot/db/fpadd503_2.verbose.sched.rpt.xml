@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_2'" level="0">
-<item name = "Date">Tue May 20 14:30:57 2025
+<item name = "Date">Tue May 27 14:11:57 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">76, 76, 0.760 us, 0.760 us, 76, 76, no</column>
+<column name="">54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
 </table>
 </item>
 <item name = "Detail">

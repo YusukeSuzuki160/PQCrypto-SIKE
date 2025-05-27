@@ -7,6 +7,143 @@
     "insert_position": "",
     "label": "",
     "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "ap_ctrl_hs",
+          "value": ""
+        },
+        {
+          "name": "port",
+          "value": "return"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl",
+    "sourceLine": 54,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "port",
+          "value": "return"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl",
+    "sourceLine": 55,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "m_axi",
+          "value": ""
+        },
+        {
+          "name": "depth",
+          "value": "402"
+        },
+        {
+          "name": "port",
+          "value": "ct"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl",
+    "sourceLine": 56,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "m_axi",
+          "value": ""
+        },
+        {
+          "name": "depth",
+          "value": "378"
+        },
+        {
+          "name": "port",
+          "value": "pk"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl",
+    "sourceLine": 57,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "m_axi",
+          "value": ""
+        },
+        {
+          "name": "depth",
+          "value": "16"
+        },
+        {
+          "name": "port",
+          "value": "ss"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl",
+    "sourceLine": 58,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
       "name": "TOP",
       "option": [
         {
@@ -17,7 +154,7 @@
     },
     "slx": false,
     "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl",
-    "sourceLine": 61,
+    "sourceLine": 68,
     "success": true
   }
 ]

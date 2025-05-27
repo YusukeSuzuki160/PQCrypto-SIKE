@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 379 \
+    id 378 \
     name a \
     reset_level 1 \
     sync_rst true \
@@ -29,22 +29,22 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 378 \
-    name a_offset \
+    id 377 \
+    name zext_ln92_3 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_a_offset \
+    corename dc_zext_ln92_3 \
     op interface \
-    ports { a_offset { I 1 vector } } \
+    ports { zext_ln92_3 { I 4 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 380 \
+    id 379 \
     name borrow_out \
     type other \
     dir O \

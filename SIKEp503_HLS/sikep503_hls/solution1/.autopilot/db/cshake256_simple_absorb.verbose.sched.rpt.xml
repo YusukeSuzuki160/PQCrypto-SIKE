@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_absorb'" level="0">
-<item name = "Date">Tue May 20 14:30:09 2025
+<item name = "Date">Tue May 27 14:11:23 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_349_1">?, ?, 66, -, -, inf, no</column>
+<column name="- VITIS_LOOP_390_1">?, ?, 66, -, -, inf, no</column>
 </table>
 </item>
 </section>

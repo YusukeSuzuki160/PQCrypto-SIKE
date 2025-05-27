@@ -59,12 +59,12 @@ wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_ap_start;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_ap_done;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_ap_idle;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_ap_ready;
+wire   [3:0] grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_address0;
+wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_ce0;
 wire   [3:0] grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_address0;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_ce0;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_we0;
 wire   [63:0] grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_d0;
-wire   [3:0] grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_address0;
-wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_ce0;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26_ap_start;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26_ap_done;
 wire    grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26_ap_idle;
@@ -115,14 +115,14 @@ sikep503_kem_enc_hw_fpadd503_8_Pipeline_VITIS_LOOP_23_1 grp_fpadd503_8_Pipeline_
     .ap_done(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_ap_done),
     .ap_idle(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_ap_idle),
     .ap_ready(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_ap_ready),
+    .b_address0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_address0),
+    .b_ce0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_ce0),
+    .b_q0(b_q0),
     .R_Z_address0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_address0),
     .R_Z_ce0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_ce0),
     .R_Z_we0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_we0),
     .R_Z_d0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_R_Z_d0),
-    .R_Z_q0(R_Z_q0),
-    .b_address0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_address0),
-    .b_ce0(grp_fpadd503_8_Pipeline_VITIS_LOOP_23_1_fu_18_b_ce0),
-    .b_q0(b_q0)
+    .R_Z_q0(R_Z_q0)
 );
 
 sikep503_kem_enc_hw_fpadd503_8_Pipeline_VITIS_LOOP_28_2 grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26(

@@ -116,8 +116,8 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "PKB", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "c", "Type" : "Memory", "Direction" : "O"}],
+			{"Name" : "c", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "PKB", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_23_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
@@ -176,8 +176,8 @@ set ArgLastReadFirstWriteLatency {
 		c {Type IO LastRead 0 FirstWrite 2}
 		p503x2_1 {Type I LastRead -1 FirstWrite -1}}
 	fpadd503_10_Pipeline_VITIS_LOOP_23_1 {
-		PKB {Type I LastRead 1 FirstWrite -1}
-		c {Type O LastRead -1 FirstWrite 2}}
+		c {Type O LastRead -1 FirstWrite 2}
+		PKB {Type I LastRead 1 FirstWrite -1}}
 	fpadd503_10_Pipeline_VITIS_LOOP_28_2 {
 		c {Type IO LastRead 0 FirstWrite 2}
 		carry_217_out {Type O LastRead -1 FirstWrite 1}

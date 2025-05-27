@@ -52,7 +52,7 @@
 <Name>VITIS_LOOP_28_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/generic/fp_generic.c:29</SourceLocation>
+<SourceLocation>src/generic/fp_generic.c:28</SourceLocation>
 </VITIS_LOOP_28_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -61,7 +61,7 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>274</FF>
+<FF>276</FF>
 <LUT>620</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>

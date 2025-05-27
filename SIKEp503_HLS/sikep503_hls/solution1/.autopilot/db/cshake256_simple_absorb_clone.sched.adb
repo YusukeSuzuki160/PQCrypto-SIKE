@@ -95,7 +95,7 @@
 						<name>t</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>347</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -111,14 +111,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>347</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -158,7 +158,7 @@
 						<name>t_35</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>347</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -174,14 +174,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>347</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -221,7 +221,7 @@
 						<name>t_36</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>347</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -237,14 +237,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>347</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -284,7 +284,7 @@
 						<name>t_37</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>347</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -300,14 +300,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>347</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -390,7 +390,7 @@
 						<name>s_addr</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>533</lineNumber>
+						<lineNumber>597</lineNumber>
 						<contextFuncName>cshake256_simple_absorb</contextFuncName>
 						<contextNormFuncName>cshake256_simple_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -406,7 +406,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>533</second>
+										<second>597</second>
 									</item>
 								</second>
 							</item>
@@ -445,10 +445,10 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>s_addr_write_ln540</name>
+						<name>s_addr_write_ln604</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>540</lineNumber>
+						<lineNumber>604</lineNumber>
 						<contextFuncName>cshake256_simple_absorb</contextFuncName>
 						<contextNormFuncName>cshake256_simple_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -464,7 +464,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>540</second>
+										<second>604</second>
 									</item>
 								</second>
 							</item>
@@ -505,10 +505,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>_ln542</name>
+						<name>_ln606</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>542</lineNumber>
+						<lineNumber>606</lineNumber>
 						<contextFuncName>cshake256_simple_absorb</contextFuncName>
 						<contextNormFuncName>cshake256_simple_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -524,7 +524,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>542</second>
+										<second>606</second>
 									</item>
 								</second>
 							</item>
@@ -662,7 +662,7 @@
 						<name>t_36_addr</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>363</lineNumber>
+						<lineNumber>404</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -678,14 +678,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>363</second>
+										<second>404</second>
 									</item>
 								</second>
 							</item>
@@ -727,7 +727,7 @@
 						<name>t_37_addr</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>364</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -743,14 +743,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>364</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -792,7 +792,7 @@
 						<name>t_37_load</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>364</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -808,14 +808,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>364</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -853,10 +853,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>trunc_ln364</name>
+						<name>trunc_ln405</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>364</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -872,14 +872,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>364</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -919,7 +919,7 @@
 						<name>or_ln</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>364</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -935,14 +935,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>364</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -981,10 +981,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>t_36_addr_write_ln363</name>
+						<name>t_36_addr_write_ln404</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>363</lineNumber>
+						<lineNumber>404</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -1000,14 +1000,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>363</second>
+										<second>404</second>
 									</item>
 								</second>
 							</item>
@@ -1046,10 +1046,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>t_37_addr_write_ln364</name>
+						<name>t_37_addr_write_ln405</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>364</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -1065,14 +1065,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>545</second>
+										<second>609</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>364</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -1162,10 +1162,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>_ln546</name>
+						<name>_ln610</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>546</lineNumber>
+						<lineNumber>610</lineNumber>
 						<contextFuncName>cshake256_simple_absorb</contextFuncName>
 						<contextNormFuncName>cshake256_simple_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -1181,7 +1181,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>546</second>
+										<second>610</second>
 									</item>
 								</second>
 							</item>
@@ -1242,7 +1242,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -1252,7 +1252,7 @@
 					<Obj>
 						<type>2</type>
 						<id>30</id>
-						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_529_1</name>
+						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_593_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1276,7 +1276,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_529_1&gt;</content>
+				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_593_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_24">
 				<Value>
@@ -1304,7 +1304,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -1407,7 +1407,7 @@
 					<Obj>
 						<type>2</type>
 						<id>47</id>
-						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_359_3</name>
+						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_400_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1431,14 +1431,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_359_3&gt;</content>
+				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_400_3&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_29">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>53</id>
-						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_361_4</name>
+						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_402_4</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1462,7 +1462,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_361_4&gt;</content>
+				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_402_4&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_30">
 				<Value>
@@ -1490,7 +1490,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>31</content>
@@ -1521,7 +1521,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>33</content>
@@ -1593,7 +1593,7 @@
 					<Obj>
 						<type>2</type>
 						<id>80</id>
-						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_365_5</name>
+						<name>cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_406_5</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1617,7 +1617,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_365_5&gt;</content>
+				<content>&lt;constant:cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_406_5&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">

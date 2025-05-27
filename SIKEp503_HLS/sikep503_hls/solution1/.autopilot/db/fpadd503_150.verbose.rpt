@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_150'
 ================================================================
-* Date:           Tue May 20 14:36:24 2025
+* Date:           Tue May 27 14:18:21 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -38,9 +38,9 @@
         |                                                 |                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                     Instance                    |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64  |fpadd503_150_Pipeline_VITIS_LOOP_23_1  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_82  |fpadd503_150_Pipeline_VITIS_LOOP_28_2  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_92  |fpadd503_150_Pipeline_VITIS_LOOP_34_3  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70  |fpadd503_150_Pipeline_VITIS_LOOP_23_1  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83  |fpadd503_150_Pipeline_VITIS_LOOP_28_2  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93  |fpadd503_150_Pipeline_VITIS_LOOP_34_3  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -58,16 +58,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       -|      -|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|     817|   1946|    -|
+|Instance         |        0|    -|     822|   2013|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|    145|    -|
-|Register         |        -|    -|      15|      -|    -|
+|Register         |        -|    -|      18|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     832|   2091|    0|
+|Total            |        0|    0|     840|   2158|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|      3|    0|
+|Utilization (%)  |        0|    0|      ~0|      4|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -75,11 +75,11 @@
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
     |                     Instance                    |                 Module                | BRAM_18K| DSP|  FF | LUT | URAM|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
-    |grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64  |fpadd503_150_Pipeline_VITIS_LOOP_23_1  |        0|   0|  206|  626|    0|
-    |grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_82  |fpadd503_150_Pipeline_VITIS_LOOP_28_2  |        0|   0|  276|  620|    0|
-    |grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_92  |fpadd503_150_Pipeline_VITIS_LOOP_34_3  |        0|   0|  335|  700|    0|
+    |grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70  |fpadd503_150_Pipeline_VITIS_LOOP_23_1  |        0|   0|  211|  667|    0|
+    |grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83  |fpadd503_150_Pipeline_VITIS_LOOP_28_2  |        0|   0|  276|  633|    0|
+    |grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93  |fpadd503_150_Pipeline_VITIS_LOOP_34_3  |        0|   0|  335|  713|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
-    |Total                                            |                                       |        0|   0|  817| 1946|    0|
+    |Total                                            |                                       |        0|   0|  822| 2013|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -114,13 +114,14 @@
     |                             Name                             | FF| LUT| Bits| Const Bits|
     +--------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                     |  6|   0|    6|          0|
-    |empty_152_reg_138                                             |  3|   0|    3|          0|
-    |empty_reg_133                                                 |  3|   0|    3|          0|
-    |grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_82_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_92_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_ap_start_reg  |  1|   0|    1|          0|
+    |tmp_501_reg_164                                               |  4|   0|    7|          3|
+    |tmp_reg_152                                                   |  1|   0|    4|          3|
+    |tmp_s_reg_159                                                 |  4|   0|    7|          3|
     +--------------------------------------------------------------+---+----+-----+-----------+
-    |Total                                                         | 15|   0|   15|          0|
+    |Total                                                         | 18|   0|   27|          9|
     +--------------------------------------------------------------+---+----+-----+-----------+
 
 
@@ -198,33 +199,36 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.25>
+State 1 <SV = 0> <Delay = 5.12>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%c_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_offset"   --->   Operation 7 'read' 'c_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%b_offset4_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %b_offset4"   --->   Operation 8 'read' 'b_offset4_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%b_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_offset"   --->   Operation 9 'read' 'b_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%a_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset2"   --->   Operation 10 'read' 'a_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 11 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = trunc i32 %b_offset_read"   --->   Operation 12 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_152 = trunc i32 %a_offset_read"   --->   Operation 13 'trunc' 'empty_152' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%carry_193_loc = alloca i32 1"   --->   Operation 14 'alloca' 'carry_193_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [2/2] (3.25ns)   --->   "%call_ln0 = call void @fpadd503.150_Pipeline_VITIS_LOOP_23_1, i1 %c_offset_read, i64 %c, i3 %empty_152, i1 %a_offset2_read, i64 %a, i3 %empty, i1 %b_offset4_read, i64 %b"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = trunc i32 %a_offset_read"   --->   Operation 12 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_141 = trunc i32 %b_offset_read"   --->   Operation 13 'trunc' 'empty_141' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%carry_193_loc = alloca i64 1"   --->   Operation 14 'alloca' 'carry_193_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 15 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_141, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 16 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_501 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty, i1 %a_offset2_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 17 'bitconcatenate' 'tmp_501' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (5.12ns)   --->   "%call_ln24 = call void @fpadd503.150_Pipeline_VITIS_LOOP_23_1, i7 %tmp_501, i64 %a, i7 %tmp_s, i64 %b, i4 %tmp, i64 %c" [src/generic/fp_generic.c:24]   --->   Operation 18 'call' 'call_ln24' <Predicate = true> <Delay = 5.12> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.150_Pipeline_VITIS_LOOP_23_1, i1 %c_offset_read, i64 %c, i3 %empty_152, i1 %a_offset2_read, i64 %a, i3 %empty, i1 %b_offset4_read, i64 %b"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 19 [1/2] (0.00ns)   --->   "%call_ln24 = call void @fpadd503.150_Pipeline_VITIS_LOOP_23_1, i7 %tmp_501, i64 %a, i7 %tmp_s, i64 %b, i4 %tmp, i64 %c" [src/generic/fp_generic.c:24]   --->   Operation 19 'call' 'call_ln24' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 17 [2/2] (3.25ns)   --->   "%call_ln0 = call void @fpadd503.150_Pipeline_VITIS_LOOP_28_2, i1 %c_offset_read, i64 %c, i1 %carry_193_loc, i64 %p503x2_1"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 4.98>
+ST_3 : Operation 20 [2/2] (4.98ns)   --->   "%call_ln24 = call void @fpadd503.150_Pipeline_VITIS_LOOP_28_2, i4 %tmp, i64 %c, i1 %carry_193_loc, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 20 'call' 'call_ln24' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.150_Pipeline_VITIS_LOOP_28_2, i1 %c_offset_read, i64 %c, i1 %carry_193_loc, i64 %p503x2_1"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln24 = call void @fpadd503.150_Pipeline_VITIS_LOOP_28_2, i4 %tmp, i64 %c, i1 %carry_193_loc, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 21 'call' 'call_ln24' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 5 <SV = 4> <Delay = 3.25>
-ST_5 : Operation 19 [1/1] (0.00ns)   --->   "%carry_193_loc_load = load i1 %carry_193_loc"   --->   Operation 19 'load' 'carry_193_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 20 [2/2] (3.25ns)   --->   "%call_ln0 = call void @fpadd503.150_Pipeline_VITIS_LOOP_34_3, i1 %c_offset_read, i64 %c, i1 %carry_193_loc_load, i64 %p503x2_1"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+State 5 <SV = 4> <Delay = 4.98>
+ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%carry_193_loc_load = load i1 %carry_193_loc"   --->   Operation 22 'load' 'carry_193_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 23 [2/2] (4.98ns)   --->   "%call_ln24 = call void @fpadd503.150_Pipeline_VITIS_LOOP_34_3, i4 %tmp, i64 %c, i1 %carry_193_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 23 'call' 'call_ln24' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.150_Pipeline_VITIS_LOOP_34_3, i1 %c_offset_read, i64 %c, i1 %carry_193_loc_load, i64 %p503x2_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_generic.c:37]   --->   Operation 22 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/2] (0.00ns)   --->   "%call_ln24 = call void @fpadd503.150_Pipeline_VITIS_LOOP_34_3, i4 %tmp, i64 %c, i1 %carry_193_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 24 'call' 'call_ln24' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_generic.c:37]   --->   Operation 25 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -253,19 +257,22 @@ Port [ p503x2_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; e
 
 <LifeTime>
 <method=bitvector/>
-c_offset_read      (read  ) [ 0011111]
-b_offset4_read     (read  ) [ 0010000]
-b_offset_read      (read  ) [ 0000000]
-a_offset2_read     (read  ) [ 0010000]
-a_offset_read      (read  ) [ 0000000]
-empty              (trunc ) [ 0010000]
-empty_152          (trunc ) [ 0010000]
-carry_193_loc      (alloca) [ 0011110]
-call_ln0           (call  ) [ 0000000]
-call_ln0           (call  ) [ 0000000]
-carry_193_loc_load (load  ) [ 0000001]
-call_ln0           (call  ) [ 0000000]
-ret_ln37           (ret   ) [ 0000000]
+c_offset_read      (read          ) [ 0000000]
+b_offset4_read     (read          ) [ 0000000]
+b_offset_read      (read          ) [ 0000000]
+a_offset2_read     (read          ) [ 0000000]
+a_offset_read      (read          ) [ 0000000]
+empty              (trunc         ) [ 0000000]
+empty_141          (trunc         ) [ 0000000]
+carry_193_loc      (alloca        ) [ 0011110]
+tmp                (bitconcatenate) [ 0011111]
+tmp_s              (bitconcatenate) [ 0010000]
+tmp_501            (bitconcatenate) [ 0010000]
+call_ln24          (call          ) [ 0000000]
+call_ln24          (call          ) [ 0000000]
+carry_193_loc_load (load          ) [ 0000001]
+call_ln24          (call          ) [ 0000000]
+ret_ln37           (ret           ) [ 0000000]
 </LifeTime>
 
 <model>
@@ -388,7 +395,7 @@ ret_ln37           (ret   ) [ 0000000]
 <pin id="25" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fpadd503.150_Pipeline_VITIS_LOOP_23_1"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i4.i1.i3"/></StgValue>
 </bind>
 </comp>
 
@@ -397,7 +404,7 @@ ret_ln37           (ret   ) [ 0000000]
 <pin id="27" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fpadd503.150_Pipeline_VITIS_LOOP_28_2"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -406,14 +413,41 @@ ret_ln37           (ret   ) [ 0000000]
 <pin id="29" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i7.i3.i1.i3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fpadd503.150_Pipeline_VITIS_LOOP_23_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fpadd503.150_Pipeline_VITIS_LOOP_28_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
 <StgValue><ssdm name="fpadd503.150_Pipeline_VITIS_LOOP_34_3"/></StgValue>
 </bind>
 </comp>
 
-<comp id="30" class="1004" name="carry_193_loc_fu_30">
+<comp id="36" class="1004" name="carry_193_loc_fu_36">
 <pin_list>
-<pin id="31" dir="0" index="0" bw="1" slack="0"/>
-<pin id="32" dir="1" index="1" bw="1" slack="2"/>
+<pin id="37" dir="0" index="0" bw="1" slack="0"/>
+<pin id="38" dir="1" index="1" bw="1" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -421,19 +455,7 @@ ret_ln37           (ret   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="34" class="1004" name="c_offset_read_read_fu_34">
-<pin_list>
-<pin id="35" dir="0" index="0" bw="1" slack="0"/>
-<pin id="36" dir="0" index="1" bw="1" slack="0"/>
-<pin id="37" dir="1" index="2" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="read(1150) " fcode="read"/>
-<opset="c_offset_read/1 "/>
-</bind>
-</comp>
-
-<comp id="40" class="1004" name="b_offset4_read_read_fu_40">
+<comp id="40" class="1004" name="c_offset_read_read_fu_40">
 <pin_list>
 <pin id="41" dir="0" index="0" bw="1" slack="0"/>
 <pin id="42" dir="0" index="1" bw="1" slack="0"/>
@@ -441,15 +463,27 @@ ret_ln37           (ret   ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
+<opset="c_offset_read/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="b_offset4_read_read_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="1" slack="0"/>
+<pin id="48" dir="0" index="1" bw="1" slack="0"/>
+<pin id="49" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
 <opset="b_offset4_read/1 "/>
 </bind>
 </comp>
 
-<comp id="46" class="1004" name="b_offset_read_read_fu_46">
+<comp id="52" class="1004" name="b_offset_read_read_fu_52">
 <pin_list>
-<pin id="47" dir="0" index="0" bw="32" slack="0"/>
-<pin id="48" dir="0" index="1" bw="32" slack="0"/>
-<pin id="49" dir="1" index="2" bw="32" slack="0"/>
+<pin id="53" dir="0" index="0" bw="32" slack="0"/>
+<pin id="54" dir="0" index="1" bw="32" slack="0"/>
+<pin id="55" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -457,11 +491,11 @@ ret_ln37           (ret   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="52" class="1004" name="a_offset2_read_read_fu_52">
+<comp id="58" class="1004" name="a_offset2_read_read_fu_58">
 <pin_list>
-<pin id="53" dir="0" index="0" bw="1" slack="0"/>
-<pin id="54" dir="0" index="1" bw="1" slack="0"/>
-<pin id="55" dir="1" index="2" bw="1" slack="0"/>
+<pin id="59" dir="0" index="0" bw="1" slack="0"/>
+<pin id="60" dir="0" index="1" bw="1" slack="0"/>
+<pin id="61" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -469,11 +503,11 @@ ret_ln37           (ret   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="58" class="1004" name="a_offset_read_read_fu_58">
+<comp id="64" class="1004" name="a_offset_read_read_fu_64">
 <pin_list>
-<pin id="59" dir="0" index="0" bw="32" slack="0"/>
-<pin id="60" dir="0" index="1" bw="32" slack="0"/>
-<pin id="61" dir="1" index="2" bw="32" slack="0"/>
+<pin id="65" dir="0" index="0" bw="32" slack="0"/>
+<pin id="66" dir="0" index="1" bw="32" slack="0"/>
+<pin id="67" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -481,59 +515,57 @@ ret_ln37           (ret   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="64" class="1004" name="grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64">
+<comp id="70" class="1004" name="grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70">
 <pin_list>
-<pin id="65" dir="0" index="0" bw="0" slack="0"/>
-<pin id="66" dir="0" index="1" bw="1" slack="0"/>
-<pin id="67" dir="0" index="2" bw="64" slack="0"/>
-<pin id="68" dir="0" index="3" bw="3" slack="0"/>
-<pin id="69" dir="0" index="4" bw="1" slack="0"/>
-<pin id="70" dir="0" index="5" bw="64" slack="0"/>
-<pin id="71" dir="0" index="6" bw="3" slack="0"/>
-<pin id="72" dir="0" index="7" bw="1" slack="0"/>
-<pin id="73" dir="0" index="8" bw="64" slack="0"/>
-<pin id="74" dir="1" index="9" bw="0" slack="2147483647"/>
+<pin id="71" dir="0" index="0" bw="0" slack="0"/>
+<pin id="72" dir="0" index="1" bw="7" slack="0"/>
+<pin id="73" dir="0" index="2" bw="64" slack="0"/>
+<pin id="74" dir="0" index="3" bw="7" slack="0"/>
+<pin id="75" dir="0" index="4" bw="64" slack="0"/>
+<pin id="76" dir="0" index="5" bw="4" slack="0"/>
+<pin id="77" dir="0" index="6" bw="64" slack="0"/>
+<pin id="78" dir="1" index="7" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln0/1 "/>
+<opset="call_ln24/1 "/>
 </bind>
 </comp>
 
-<comp id="82" class="1004" name="grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_82">
+<comp id="83" class="1004" name="grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83">
 <pin_list>
-<pin id="83" dir="0" index="0" bw="0" slack="0"/>
-<pin id="84" dir="0" index="1" bw="1" slack="2"/>
-<pin id="85" dir="0" index="2" bw="64" slack="0"/>
-<pin id="86" dir="0" index="3" bw="1" slack="2"/>
-<pin id="87" dir="0" index="4" bw="64" slack="0"/>
-<pin id="88" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="84" dir="0" index="0" bw="0" slack="0"/>
+<pin id="85" dir="0" index="1" bw="4" slack="2"/>
+<pin id="86" dir="0" index="2" bw="64" slack="0"/>
+<pin id="87" dir="0" index="3" bw="1" slack="2"/>
+<pin id="88" dir="0" index="4" bw="64" slack="0"/>
+<pin id="89" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln0/3 "/>
+<opset="call_ln24/3 "/>
 </bind>
 </comp>
 
-<comp id="92" class="1004" name="grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_92">
+<comp id="93" class="1004" name="grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93">
 <pin_list>
-<pin id="93" dir="0" index="0" bw="0" slack="0"/>
-<pin id="94" dir="0" index="1" bw="1" slack="4"/>
-<pin id="95" dir="0" index="2" bw="64" slack="0"/>
-<pin id="96" dir="0" index="3" bw="1" slack="0"/>
-<pin id="97" dir="0" index="4" bw="64" slack="0"/>
-<pin id="98" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="94" dir="0" index="0" bw="0" slack="0"/>
+<pin id="95" dir="0" index="1" bw="4" slack="4"/>
+<pin id="96" dir="0" index="2" bw="64" slack="0"/>
+<pin id="97" dir="0" index="3" bw="1" slack="0"/>
+<pin id="98" dir="0" index="4" bw="64" slack="0"/>
+<pin id="99" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln0/5 "/>
+<opset="call_ln24/5 "/>
 </bind>
 </comp>
 
-<comp id="102" class="1004" name="empty_fu_102">
+<comp id="103" class="1004" name="empty_fu_103">
 <pin_list>
-<pin id="103" dir="0" index="0" bw="32" slack="0"/>
-<pin id="104" dir="1" index="1" bw="3" slack="0"/>
+<pin id="104" dir="0" index="0" bw="32" slack="0"/>
+<pin id="105" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
@@ -541,21 +573,62 @@ ret_ln37           (ret   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="107" class="1004" name="empty_152_fu_107">
+<comp id="107" class="1004" name="empty_141_fu_107">
 <pin_list>
 <pin id="108" dir="0" index="0" bw="32" slack="0"/>
 <pin id="109" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_152/1 "/>
+<opset="empty_141/1 "/>
 </bind>
 </comp>
 
-<comp id="112" class="1004" name="carry_193_loc_load_load_fu_112">
+<comp id="111" class="1004" name="tmp_fu_111">
 <pin_list>
-<pin id="113" dir="0" index="0" bw="1" slack="4"/>
-<pin id="114" dir="1" index="1" bw="1" slack="0"/>
+<pin id="112" dir="0" index="0" bw="4" slack="0"/>
+<pin id="113" dir="0" index="1" bw="1" slack="0"/>
+<pin id="114" dir="0" index="2" bw="1" slack="0"/>
+<pin id="115" dir="1" index="3" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="tmp/1 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1004" name="tmp_s_fu_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="7" slack="0"/>
+<pin id="122" dir="0" index="1" bw="3" slack="0"/>
+<pin id="123" dir="0" index="2" bw="1" slack="0"/>
+<pin id="124" dir="0" index="3" bw="1" slack="0"/>
+<pin id="125" dir="1" index="4" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="tmp_s/1 "/>
+</bind>
+</comp>
+
+<comp id="131" class="1004" name="tmp_501_fu_131">
+<pin_list>
+<pin id="132" dir="0" index="0" bw="7" slack="0"/>
+<pin id="133" dir="0" index="1" bw="3" slack="0"/>
+<pin id="134" dir="0" index="2" bw="1" slack="0"/>
+<pin id="135" dir="0" index="3" bw="1" slack="0"/>
+<pin id="136" dir="1" index="4" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="tmp_501/1 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="carry_193_loc_load_load_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="1" slack="4"/>
+<pin id="144" dir="1" index="1" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -563,156 +636,146 @@ ret_ln37           (ret   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="116" class="1005" name="c_offset_read_reg_116">
+<comp id="146" class="1005" name="carry_193_loc_reg_146">
 <pin_list>
-<pin id="117" dir="0" index="0" bw="1" slack="1"/>
-<pin id="118" dir="1" index="1" bw="1" slack="1"/>
-</pin_list>
-<bind>
-<opset="c_offset_read "/>
-</bind>
-</comp>
-
-<comp id="123" class="1005" name="b_offset4_read_reg_123">
-<pin_list>
-<pin id="124" dir="0" index="0" bw="1" slack="1"/>
-<pin id="125" dir="1" index="1" bw="1" slack="1"/>
-</pin_list>
-<bind>
-<opset="b_offset4_read "/>
-</bind>
-</comp>
-
-<comp id="128" class="1005" name="a_offset2_read_reg_128">
-<pin_list>
-<pin id="129" dir="0" index="0" bw="1" slack="1"/>
-<pin id="130" dir="1" index="1" bw="1" slack="1"/>
-</pin_list>
-<bind>
-<opset="a_offset2_read "/>
-</bind>
-</comp>
-
-<comp id="133" class="1005" name="empty_reg_133">
-<pin_list>
-<pin id="134" dir="0" index="0" bw="3" slack="1"/>
-<pin id="135" dir="1" index="1" bw="3" slack="1"/>
-</pin_list>
-<bind>
-<opset="empty "/>
-</bind>
-</comp>
-
-<comp id="138" class="1005" name="empty_152_reg_138">
-<pin_list>
-<pin id="139" dir="0" index="0" bw="3" slack="1"/>
-<pin id="140" dir="1" index="1" bw="3" slack="1"/>
-</pin_list>
-<bind>
-<opset="empty_152 "/>
-</bind>
-</comp>
-
-<comp id="143" class="1005" name="carry_193_loc_reg_143">
-<pin_list>
-<pin id="144" dir="0" index="0" bw="1" slack="2"/>
-<pin id="145" dir="1" index="1" bw="1" slack="2"/>
+<pin id="147" dir="0" index="0" bw="1" slack="2"/>
+<pin id="148" dir="1" index="1" bw="1" slack="2"/>
 </pin_list>
 <bind>
 <opset="carry_193_loc "/>
 </bind>
 </comp>
 
+<comp id="152" class="1005" name="tmp_reg_152">
+<pin_list>
+<pin id="153" dir="0" index="0" bw="4" slack="1"/>
+<pin id="154" dir="1" index="1" bw="4" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp "/>
+</bind>
+</comp>
+
+<comp id="159" class="1005" name="tmp_s_reg_159">
+<pin_list>
+<pin id="160" dir="0" index="0" bw="7" slack="1"/>
+<pin id="161" dir="1" index="1" bw="7" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_s "/>
+</bind>
+</comp>
+
+<comp id="164" class="1005" name="tmp_501_reg_164">
+<pin_list>
+<pin id="165" dir="0" index="0" bw="7" slack="1"/>
+<pin id="166" dir="1" index="1" bw="7" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_501 "/>
+</bind>
+</comp>
+
 </comp_list>
 
 <net_list>
-<net id="33"><net_src comp="22" pin="0"/><net_sink comp="30" pin=0"/></net>
-
-<net id="38"><net_src comp="18" pin="0"/><net_sink comp="34" pin=0"/></net>
-
-<net id="39"><net_src comp="14" pin="0"/><net_sink comp="34" pin=1"/></net>
+<net id="39"><net_src comp="22" pin="0"/><net_sink comp="36" pin=0"/></net>
 
 <net id="44"><net_src comp="18" pin="0"/><net_sink comp="40" pin=0"/></net>
 
-<net id="45"><net_src comp="10" pin="0"/><net_sink comp="40" pin=1"/></net>
+<net id="45"><net_src comp="14" pin="0"/><net_sink comp="40" pin=1"/></net>
 
-<net id="50"><net_src comp="20" pin="0"/><net_sink comp="46" pin=0"/></net>
+<net id="50"><net_src comp="18" pin="0"/><net_sink comp="46" pin=0"/></net>
 
-<net id="51"><net_src comp="8" pin="0"/><net_sink comp="46" pin=1"/></net>
+<net id="51"><net_src comp="10" pin="0"/><net_sink comp="46" pin=1"/></net>
 
-<net id="56"><net_src comp="18" pin="0"/><net_sink comp="52" pin=0"/></net>
+<net id="56"><net_src comp="20" pin="0"/><net_sink comp="52" pin=0"/></net>
 
-<net id="57"><net_src comp="4" pin="0"/><net_sink comp="52" pin=1"/></net>
+<net id="57"><net_src comp="8" pin="0"/><net_sink comp="52" pin=1"/></net>
 
-<net id="62"><net_src comp="20" pin="0"/><net_sink comp="58" pin=0"/></net>
+<net id="62"><net_src comp="18" pin="0"/><net_sink comp="58" pin=0"/></net>
 
-<net id="63"><net_src comp="2" pin="0"/><net_sink comp="58" pin=1"/></net>
+<net id="63"><net_src comp="4" pin="0"/><net_sink comp="58" pin=1"/></net>
 
-<net id="75"><net_src comp="24" pin="0"/><net_sink comp="64" pin=0"/></net>
+<net id="68"><net_src comp="20" pin="0"/><net_sink comp="64" pin=0"/></net>
 
-<net id="76"><net_src comp="34" pin="2"/><net_sink comp="64" pin=1"/></net>
+<net id="69"><net_src comp="2" pin="0"/><net_sink comp="64" pin=1"/></net>
 
-<net id="77"><net_src comp="12" pin="0"/><net_sink comp="64" pin=2"/></net>
+<net id="79"><net_src comp="30" pin="0"/><net_sink comp="70" pin=0"/></net>
 
-<net id="78"><net_src comp="52" pin="2"/><net_sink comp="64" pin=4"/></net>
+<net id="80"><net_src comp="0" pin="0"/><net_sink comp="70" pin=2"/></net>
 
-<net id="79"><net_src comp="0" pin="0"/><net_sink comp="64" pin=5"/></net>
+<net id="81"><net_src comp="6" pin="0"/><net_sink comp="70" pin=4"/></net>
 
-<net id="80"><net_src comp="40" pin="2"/><net_sink comp="64" pin=7"/></net>
+<net id="82"><net_src comp="12" pin="0"/><net_sink comp="70" pin=6"/></net>
 
-<net id="81"><net_src comp="6" pin="0"/><net_sink comp="64" pin=8"/></net>
+<net id="90"><net_src comp="32" pin="0"/><net_sink comp="83" pin=0"/></net>
 
-<net id="89"><net_src comp="26" pin="0"/><net_sink comp="82" pin=0"/></net>
+<net id="91"><net_src comp="12" pin="0"/><net_sink comp="83" pin=2"/></net>
 
-<net id="90"><net_src comp="12" pin="0"/><net_sink comp="82" pin=2"/></net>
+<net id="92"><net_src comp="16" pin="0"/><net_sink comp="83" pin=4"/></net>
 
-<net id="91"><net_src comp="16" pin="0"/><net_sink comp="82" pin=4"/></net>
+<net id="100"><net_src comp="34" pin="0"/><net_sink comp="93" pin=0"/></net>
 
-<net id="99"><net_src comp="28" pin="0"/><net_sink comp="92" pin=0"/></net>
+<net id="101"><net_src comp="12" pin="0"/><net_sink comp="93" pin=2"/></net>
 
-<net id="100"><net_src comp="12" pin="0"/><net_sink comp="92" pin=2"/></net>
+<net id="102"><net_src comp="16" pin="0"/><net_sink comp="93" pin=4"/></net>
 
-<net id="101"><net_src comp="16" pin="0"/><net_sink comp="92" pin=4"/></net>
+<net id="106"><net_src comp="64" pin="2"/><net_sink comp="103" pin=0"/></net>
 
-<net id="105"><net_src comp="46" pin="2"/><net_sink comp="102" pin=0"/></net>
+<net id="110"><net_src comp="52" pin="2"/><net_sink comp="107" pin=0"/></net>
 
-<net id="106"><net_src comp="102" pin="1"/><net_sink comp="64" pin=6"/></net>
+<net id="116"><net_src comp="24" pin="0"/><net_sink comp="111" pin=0"/></net>
 
-<net id="110"><net_src comp="58" pin="2"/><net_sink comp="107" pin=0"/></net>
+<net id="117"><net_src comp="40" pin="2"/><net_sink comp="111" pin=1"/></net>
 
-<net id="111"><net_src comp="107" pin="1"/><net_sink comp="64" pin=3"/></net>
+<net id="118"><net_src comp="26" pin="0"/><net_sink comp="111" pin=2"/></net>
 
-<net id="115"><net_src comp="112" pin="1"/><net_sink comp="92" pin=3"/></net>
+<net id="119"><net_src comp="111" pin="3"/><net_sink comp="70" pin=5"/></net>
 
-<net id="119"><net_src comp="34" pin="2"/><net_sink comp="116" pin=0"/></net>
+<net id="126"><net_src comp="28" pin="0"/><net_sink comp="120" pin=0"/></net>
 
-<net id="120"><net_src comp="116" pin="1"/><net_sink comp="64" pin=1"/></net>
+<net id="127"><net_src comp="107" pin="1"/><net_sink comp="120" pin=1"/></net>
 
-<net id="121"><net_src comp="116" pin="1"/><net_sink comp="82" pin=1"/></net>
+<net id="128"><net_src comp="46" pin="2"/><net_sink comp="120" pin=2"/></net>
 
-<net id="122"><net_src comp="116" pin="1"/><net_sink comp="92" pin=1"/></net>
+<net id="129"><net_src comp="26" pin="0"/><net_sink comp="120" pin=3"/></net>
 
-<net id="126"><net_src comp="40" pin="2"/><net_sink comp="123" pin=0"/></net>
+<net id="130"><net_src comp="120" pin="4"/><net_sink comp="70" pin=3"/></net>
 
-<net id="127"><net_src comp="123" pin="1"/><net_sink comp="64" pin=7"/></net>
+<net id="137"><net_src comp="28" pin="0"/><net_sink comp="131" pin=0"/></net>
 
-<net id="131"><net_src comp="52" pin="2"/><net_sink comp="128" pin=0"/></net>
+<net id="138"><net_src comp="103" pin="1"/><net_sink comp="131" pin=1"/></net>
 
-<net id="132"><net_src comp="128" pin="1"/><net_sink comp="64" pin=4"/></net>
+<net id="139"><net_src comp="58" pin="2"/><net_sink comp="131" pin=2"/></net>
 
-<net id="136"><net_src comp="102" pin="1"/><net_sink comp="133" pin=0"/></net>
+<net id="140"><net_src comp="26" pin="0"/><net_sink comp="131" pin=3"/></net>
 
-<net id="137"><net_src comp="133" pin="1"/><net_sink comp="64" pin=6"/></net>
+<net id="141"><net_src comp="131" pin="4"/><net_sink comp="70" pin=1"/></net>
 
-<net id="141"><net_src comp="107" pin="1"/><net_sink comp="138" pin=0"/></net>
+<net id="145"><net_src comp="142" pin="1"/><net_sink comp="93" pin=3"/></net>
 
-<net id="142"><net_src comp="138" pin="1"/><net_sink comp="64" pin=3"/></net>
+<net id="149"><net_src comp="36" pin="1"/><net_sink comp="146" pin=0"/></net>
 
-<net id="146"><net_src comp="30" pin="1"/><net_sink comp="143" pin=0"/></net>
+<net id="150"><net_src comp="146" pin="1"/><net_sink comp="83" pin=3"/></net>
 
-<net id="147"><net_src comp="143" pin="1"/><net_sink comp="82" pin=3"/></net>
+<net id="151"><net_src comp="146" pin="1"/><net_sink comp="142" pin=0"/></net>
 
-<net id="148"><net_src comp="143" pin="1"/><net_sink comp="112" pin=0"/></net>
+<net id="155"><net_src comp="111" pin="3"/><net_sink comp="152" pin=0"/></net>
+
+<net id="156"><net_src comp="152" pin="1"/><net_sink comp="70" pin=5"/></net>
+
+<net id="157"><net_src comp="152" pin="1"/><net_sink comp="83" pin=1"/></net>
+
+<net id="158"><net_src comp="152" pin="1"/><net_sink comp="93" pin=1"/></net>
+
+<net id="162"><net_src comp="120" pin="4"/><net_sink comp="159" pin=0"/></net>
+
+<net id="163"><net_src comp="159" pin="1"/><net_sink comp="70" pin=3"/></net>
+
+<net id="167"><net_src comp="131" pin="4"/><net_sink comp="164" pin=0"/></net>
+
+<net id="168"><net_src comp="164" pin="1"/><net_sink comp="70" pin=1"/></net>
 
 </net_list>
 
@@ -737,12 +800,14 @@ ret_ln37           (ret   ) [ 0000000]
 	Port: fpadd503.150 : p503x2_1 | {3 4 5 6 }
   - Chain level:
 	State 1
-		call_ln0 : 1
+		tmp_s : 1
+		tmp_501 : 1
+		call_ln24 : 2
 	State 2
 	State 3
 	State 4
 	State 5
-		call_ln0 : 1
+		call_ln24 : 1
 	State 6
 
 
@@ -754,50 +819,50 @@ ret_ln37           (ret   ) [ 0000000]
 |----------|-------------------------------------------------|---------|---------|---------|
 | Operation|                 Functional Unit                 |  Delay  |    FF   |   LUT   |
 |----------|-------------------------------------------------|---------|---------|---------|
-|          | grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64 |  3.176  |   217   |   572   |
-|   call   | grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_82 |  4.764  |   206   |   592   |
-|          | grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_92 |  3.176  |   270   |   700   |
+|          | grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70 |  3.176  |   225   |   613   |
+|   call   | grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83 |  4.764  |   206   |   605   |
+|          | grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93 |  3.176  |   270   |   713   |
 |----------|-------------------------------------------------|---------|---------|---------|
-|          |             c_offset_read_read_fu_34            |    0    |    0    |    0    |
-|          |            b_offset4_read_read_fu_40            |    0    |    0    |    0    |
-|   read   |             b_offset_read_read_fu_46            |    0    |    0    |    0    |
-|          |            a_offset2_read_read_fu_52            |    0    |    0    |    0    |
-|          |             a_offset_read_read_fu_58            |    0    |    0    |    0    |
+|          |             c_offset_read_read_fu_40            |    0    |    0    |    0    |
+|          |            b_offset4_read_read_fu_46            |    0    |    0    |    0    |
+|   read   |             b_offset_read_read_fu_52            |    0    |    0    |    0    |
+|          |            a_offset2_read_read_fu_58            |    0    |    0    |    0    |
+|          |             a_offset_read_read_fu_64            |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
-|   trunc  |                   empty_fu_102                  |    0    |    0    |    0    |
-|          |                 empty_152_fu_107                |    0    |    0    |    0    |
+|   trunc  |                   empty_fu_103                  |    0    |    0    |    0    |
+|          |                 empty_141_fu_107                |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
-|   Total  |                                                 |  11.116 |   693   |   1864  |
+|          |                    tmp_fu_111                   |    0    |    0    |    0    |
+|bitconcatenate|                   tmp_s_fu_120                  |    0    |    0    |    0    |
+|          |                  tmp_501_fu_131                 |    0    |    0    |    0    |
+|----------|-------------------------------------------------|---------|---------|---------|
+|   Total  |                                                 |  11.116 |   701   |   1931  |
 |----------|-------------------------------------------------|---------|---------|---------|
 
 Memories:
 N/A
 
 * Register list:
-+----------------------+--------+
-|                      |   FF   |
-+----------------------+--------+
-|a_offset2_read_reg_128|    1   |
-|b_offset4_read_reg_123|    1   |
-| c_offset_read_reg_116|    1   |
-| carry_193_loc_reg_143|    1   |
-|   empty_152_reg_138  |    3   |
-|     empty_reg_133    |    3   |
-+----------------------+--------+
-|         Total        |   10   |
-+----------------------+--------+
++---------------------+--------+
+|                     |   FF   |
++---------------------+--------+
+|carry_193_loc_reg_146|    1   |
+|   tmp_501_reg_164   |    7   |
+|     tmp_reg_152     |    4   |
+|    tmp_s_reg_159    |    7   |
++---------------------+--------+
+|        Total        |   19   |
++---------------------+--------+
 
 * Multiplexer (MUX) list: 
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 |                       Comp                      |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
-| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64 |  p1  |   2  |   1  |    2   ||    0    ||    9    |
-| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64 |  p3  |   2  |   3  |    6   ||    0    ||    9    |
-| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64 |  p4  |   2  |   1  |    2   ||    0    ||    9    |
-| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64 |  p6  |   2  |   3  |    6   ||    0    ||    9    |
-| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_64 |  p7  |   2  |   1  |    2   ||    0    ||    9    |
+| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70 |  p1  |   2  |   7  |   14   ||    0    ||    9    |
+| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70 |  p3  |   2  |   7  |   14   ||    0    ||    9    |
+| grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70 |  p5  |   2  |   4  |    8   ||    0    ||    9    |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|                      Total                      |      |      |      |   18   ||   7.94  ||    0    ||    45   |
+|                      Total                      |      |      |      |   36   ||  4.764  ||    0    ||    27   |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -806,10 +871,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |   11   |   693  |  1864  |
+|  Function |   11   |   701  |  1931  |
 |   Memory  |    -   |    -   |    -   |
-|Multiplexer|    7   |    0   |   45   |
-|  Register |    -   |   10   |    -   |
+|Multiplexer|    4   |    0   |   27   |
+|  Register |    -   |   19   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |   19   |   703  |  1909  |
+|   Total   |   15   |   720  |  1958  |
 +-----------+--------+--------+--------+

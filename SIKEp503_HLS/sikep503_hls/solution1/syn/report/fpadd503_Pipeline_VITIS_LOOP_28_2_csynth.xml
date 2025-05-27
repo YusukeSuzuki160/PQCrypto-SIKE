@@ -52,7 +52,7 @@
 <Name>VITIS_LOOP_28_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/generic/fp_generic.c:29</SourceLocation>
+<SourceLocation>src/generic/fp_generic.c:28</SourceLocation>
 </VITIS_LOOP_28_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

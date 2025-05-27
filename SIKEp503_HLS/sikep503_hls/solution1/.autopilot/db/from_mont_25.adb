@@ -137,7 +137,7 @@
               <name>temp</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -153,7 +153,7 @@
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>60</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -240,10 +240,10 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>_ln62</name>
+              <name>_ln63</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>63</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -259,7 +259,7 @@
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>62</second>
+                      <second>63</second>
                     </item>
                     <item>
                       <first>
@@ -309,10 +309,10 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>_ln63</name>
+              <name>_ln64</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>63</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -328,7 +328,7 @@
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>63</second>
+                      <second>64</second>
                     </item>
                     <item>
                       <first>
@@ -341,7 +341,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_rdc_mont_3_fu_49</rtlName>
+              <rtlName>grp_rdc_mont_1_fu_49</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -635,7 +635,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>1</content>
@@ -738,7 +738,7 @@
             <Obj>
               <type>2</type>
               <id>29</id>
-              <name>rdc_mont_3</name>
+              <name>rdc_mont_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -762,7 +762,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:rdc_mont.3&gt;</content>
+          <content>&lt;constant:rdc_mont.1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_18">
           <Value>
@@ -1434,7 +1434,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>274</second>
+              <second>276</second>
             </item>
             <item>
               <first>LUT</first>
@@ -1453,7 +1453,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>334</second>
+              <second>335</second>
             </item>
             <item>
               <first>LUT</first>
@@ -1472,16 +1472,16 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3332</second>
+              <second>3336</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>3499</second>
+              <second>3512</second>
             </item>
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_3_fu_49 (rdc_mont_3)</first>
+          <first>grp_rdc_mont_1_fu_49 (rdc_mont_1)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1495,7 +1495,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>4169</second>
+              <second>4174</second>
             </item>
             <item>
               <first>LUT</first>
@@ -1990,7 +1990,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_3_fu_49_ap_start_reg</first>
+          <first>grp_rdc_mont_1_fu_49_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2041,7 +2041,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_3_fu_49</first>
+          <first>grp_rdc_mont_1_fu_49</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2084,7 +2084,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_3_fu_49 (rdc_mont_3)</first>
+          <first>grp_rdc_mont_1_fu_49 (rdc_mont_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2343,7 +2343,7 @@
         </second>
       </item>
       <item>
-        <first>grp_rdc_mont_3_fu_49</first>
+        <first>grp_rdc_mont_1_fu_49</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

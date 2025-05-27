@@ -29,7 +29,6 @@ int main()
     {
         pk[i] = (unsigned char)(i & 0xFF);
     }
-
     // Call the hardware function
     sikep503_kem_enc_hw(ct, pk, ss);
 

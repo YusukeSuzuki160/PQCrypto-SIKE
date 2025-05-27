@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2div2_503'
 ================================================================
-* Date:           Tue May 20 14:35:05 2025
+* Date:           Tue May 27 14:16:58 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -39,9 +39,9 @@
         |                       Instance                      |                  Module                  |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
         |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1_fu_74       |fp2div2_503_Pipeline_VITIS_LOOP_78_1      |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2div2_503_Pipeline_VITIS_LOOP_382_1_fu_85      |fp2div2_503_Pipeline_VITIS_LOOP_382_1     |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1212_fu_93    |fp2div2_503_Pipeline_VITIS_LOOP_78_1212   |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2div2_503_Pipeline_VITIS_LOOP_382_1213_fu_104  |fp2div2_503_Pipeline_VITIS_LOOP_382_1213  |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1_fu_85      |fp2div2_503_Pipeline_VITIS_LOOP_392_1     |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1215_fu_93    |fp2div2_503_Pipeline_VITIS_LOOP_78_1215   |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1216_fu_104  |fp2div2_503_Pipeline_VITIS_LOOP_392_1216  |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -76,10 +76,10 @@
     +-----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
     |                       Instance                      |                  Module                  | BRAM_18K| DSP|  FF | LUT | URAM|
     +-----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
-    |grp_fp2div2_503_Pipeline_VITIS_LOOP_382_1_fu_85      |fp2div2_503_Pipeline_VITIS_LOOP_382_1     |        0|   0|   14|  156|    0|
-    |grp_fp2div2_503_Pipeline_VITIS_LOOP_382_1213_fu_104  |fp2div2_503_Pipeline_VITIS_LOOP_382_1213  |        0|   0|   14|  156|    0|
+    |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1_fu_85      |fp2div2_503_Pipeline_VITIS_LOOP_392_1     |        0|   0|   14|  156|    0|
+    |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1216_fu_104  |fp2div2_503_Pipeline_VITIS_LOOP_392_1216  |        0|   0|   14|  156|    0|
     |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1_fu_74       |fp2div2_503_Pipeline_VITIS_LOOP_78_1      |        0|   0|  410|  799|    0|
-    |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1212_fu_93    |fp2div2_503_Pipeline_VITIS_LOOP_78_1212   |        0|   0|  410|  799|    0|
+    |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1215_fu_93    |fp2div2_503_Pipeline_VITIS_LOOP_78_1215   |        0|   0|  410|  799|    0|
     +-----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
     |Total                                                |                                          |        0|   0|  848| 1910|    0|
     +-----------------------------------------------------+------------------------------------------+---------+----+-----+-----+-----+
@@ -131,9 +131,9 @@
     |                               Name                               | FF | LUT| Bits| Const Bits|
     +------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                         |  14|   0|   14|          0|
-    |grp_fp2div2_503_Pipeline_VITIS_LOOP_382_1213_fu_104_ap_start_reg  |   1|   0|    1|          0|
-    |grp_fp2div2_503_Pipeline_VITIS_LOOP_382_1_fu_85_ap_start_reg      |   1|   0|    1|          0|
-    |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1212_fu_93_ap_start_reg    |   1|   0|    1|          0|
+    |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1216_fu_104_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1_fu_85_ap_start_reg      |   1|   0|    1|          0|
+    |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1215_fu_93_ap_start_reg    |   1|   0|    1|          0|
     |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1_fu_74_ap_start_reg       |   1|   0|    1|          0|
     |mask_1_reg_160                                                    |   1|   0|    1|          0|
     |mask_reg_145                                                      |   1|   0|    1|          0|

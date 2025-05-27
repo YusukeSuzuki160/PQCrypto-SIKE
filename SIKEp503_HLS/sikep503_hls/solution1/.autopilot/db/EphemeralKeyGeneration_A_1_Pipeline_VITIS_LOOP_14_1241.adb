@@ -82,14 +82,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -152,14 +152,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -265,14 +265,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -294,7 +294,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>35</item>
-            <item>90</item>
+            <item>91</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -336,20 +336,20 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln14_fu_71_p2</rtlName>
+              <rtlName>icmp_ln14_fu_73_p2</rtlName>
               <control>auto</control>
               <opType>seteq</opType>
               <implIndex>auto</implIndex>
@@ -407,20 +407,20 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln14_fu_77_p2</rtlName>
+              <rtlName>add_ln14_fu_79_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -478,14 +478,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -523,11 +523,11 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>15</id>
-              <name>trunc_ln15</name>
+              <id>12</id>
+              <name>zext_ln14</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>15</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>fpcopy503</contextFuncName>
               <contextNormFuncName>fpcopy503</contextNormFuncName>
               <inlineStackInfo>
@@ -543,27 +543,27 @@
                         <first>src/fpx.c</first>
                         <second>fpcopy503</second>
                       </first>
-                      <second>15</second>
+                      <second>14</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln15_fu_83_p1</rtlName>
+              <rtlName>zext_ln14_fu_111_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -573,82 +573,12 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>3</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
             <item>45</item>
-          </oprand_edges>
-          <opcode>trunc</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>8</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_10">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>16</id>
-              <name>zext_ln15</name>
-              <fileName>src/fpx.c</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>15</lineNumber>
-              <contextFuncName>fpcopy503</contextFuncName>
-              <contextNormFuncName>fpcopy503</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>3</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>fpcopy503</second>
-                      </first>
-                      <second>15</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sidh.c</first>
-                        <second>EphemeralKeyGeneration_A</second>
-                      </first>
-                      <second>91</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sidh.c</first>
-                        <second>init_basis</second>
-                      </first>
-                      <second>30</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>zext_ln15_fu_109_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>46</item>
           </oprand_edges>
           <opcode>zext</opcode>
           <m_Display>0</m_Display>
@@ -659,11 +589,11 @@
           <m_topoIndex>16</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_11">
+        <item class_id_reference="9" object_id="_10">
           <Value>
             <Obj>
               <type>0</type>
-              <id>17</id>
+              <id>13</id>
               <name>phiR_X_addr</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -690,14 +620,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -718,9 +648,9 @@
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
-            <item>47</item>
+            <item>46</item>
+            <item>48</item>
             <item>49</item>
-            <item>50</item>
           </oprand_edges>
           <opcode>getelementptr</opcode>
           <m_Display>0</m_Display>
@@ -731,12 +661,12 @@
           <m_topoIndex>17</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_12">
+        <item class_id_reference="9" object_id="_11">
           <Value>
             <Obj>
               <type>0</type>
-              <id>18</id>
-              <name>or_ln15_9</name>
+              <id>17</id>
+              <name>trunc_ln15</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>15</lineNumber>
@@ -762,20 +692,90 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln15_9_fu_87_p3</rtlName>
+              <rtlName>trunc_ln15_fu_85_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>3</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>50</item>
+          </oprand_edges>
+          <opcode>trunc</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>8</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_12">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>18</id>
+              <name>xor_ln15_1</name>
+              <fileName>src/fpx.c</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>15</lineNumber>
+              <contextFuncName>fpcopy503</contextFuncName>
+              <contextNormFuncName>fpcopy503</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>3</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>fpcopy503</second>
+                      </first>
+                      <second>15</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/sidh.c</first>
+                        <second>EphemeralKeyGeneration_A</second>
+                      </first>
+                      <second>99</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/sidh.c</first>
+                        <second>init_basis</second>
+                      </first>
+                      <second>32</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>xor_ln15_1_fu_89_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -834,20 +834,20 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sext_ln15_fu_95_p1</rtlName>
+              <rtlName>sext_ln15_fu_97_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -878,7 +878,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>zext_ln15_28</name>
+              <name>zext_ln15</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>15</lineNumber>
@@ -904,20 +904,20 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln15_28_fu_99_p1</rtlName>
+              <rtlName>zext_ln15_fu_101_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -927,7 +927,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -974,14 +974,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -1046,14 +1046,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -1116,14 +1116,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -1187,14 +1187,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -1217,8 +1217,8 @@
             <item_version>0</item_version>
             <item>64</item>
             <item>65</item>
-            <item>91</item>
             <item>92</item>
+            <item>93</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -1260,14 +1260,14 @@
                         <first>src/sidh.c</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sidh.c</first>
                         <second>init_basis</second>
                       </first>
-                      <second>30</second>
+                      <second>32</second>
                     </item>
                   </second>
                 </item>
@@ -1472,7 +1472,7 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>48</id>
+              <id>47</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1494,7 +1494,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -1629,8 +1629,8 @@
           <node_objs>
             <count>11</count>
             <item_version>0</item_version>
-            <item>15</item>
-            <item>16</item>
+            <item>12</item>
+            <item>13</item>
             <item>17</item>
             <item>18</item>
             <item>19</item>
@@ -1765,34 +1765,34 @@
           <id>45</id>
           <edge_type>1</edge_type>
           <source_obj>7</source_obj>
-          <sink_obj>15</sink_obj>
+          <sink_obj>12</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_44">
           <id>46</id>
           <edge_type>1</edge_type>
-          <source_obj>15</source_obj>
-          <sink_obj>16</sink_obj>
+          <source_obj>1</source_obj>
+          <sink_obj>13</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_45">
-          <id>47</id>
+          <id>48</id>
           <edge_type>1</edge_type>
-          <source_obj>1</source_obj>
-          <sink_obj>17</sink_obj>
+          <source_obj>47</source_obj>
+          <sink_obj>13</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_46">
           <id>49</id>
           <edge_type>1</edge_type>
-          <source_obj>48</source_obj>
-          <sink_obj>17</sink_obj>
+          <source_obj>12</source_obj>
+          <sink_obj>13</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_47">
           <id>50</id>
           <edge_type>1</edge_type>
-          <source_obj>16</source_obj>
+          <source_obj>7</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1806,7 +1806,7 @@
         <item class_id_reference="20" object_id="_49">
           <id>55</id>
           <edge_type>1</edge_type>
-          <source_obj>15</source_obj>
+          <source_obj>17</source_obj>
           <sink_obj>18</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1834,7 +1834,7 @@
         <item class_id_reference="20" object_id="_53">
           <id>59</id>
           <edge_type>1</edge_type>
-          <source_obj>48</source_obj>
+          <source_obj>47</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1862,7 +1862,7 @@
         <item class_id_reference="20" object_id="_57">
           <id>63</id>
           <edge_type>1</edge_type>
-          <source_obj>17</source_obj>
+          <source_obj>13</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1888,49 +1888,49 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_61">
-          <id>86</id>
+          <id>87</id>
           <edge_type>2</edge_type>
           <source_obj>6</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_62">
-          <id>87</id>
+          <id>88</id>
           <edge_type>2</edge_type>
           <source_obj>11</source_obj>
           <sink_obj>28</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_63">
-          <id>88</id>
+          <id>89</id>
           <edge_type>2</edge_type>
           <source_obj>11</source_obj>
           <sink_obj>26</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_64">
-          <id>89</id>
+          <id>90</id>
           <edge_type>2</edge_type>
           <source_obj>26</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>1</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_65">
-          <id>90</id>
+          <id>91</id>
           <edge_type>4</edge_type>
           <source_obj>4</source_obj>
           <sink_obj>7</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_66">
-          <id>91</id>
+          <id>92</id>
           <edge_type>4</edge_type>
           <source_obj>4</source_obj>
           <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_67">
-          <id>92</id>
+          <id>93</id>
           <edge_type>4</edge_type>
           <source_obj>7</source_obj>
           <sink_obj>24</sink_obj>
@@ -2082,7 +2082,7 @@
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_81">
-              <id>15</id>
+              <id>17</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -2144,12 +2144,12 @@
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_93">
-              <id>16</id>
+              <id>15</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_94">
-              <id>17</id>
+              <id>16</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -2207,7 +2207,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln14_fu_77_p2 ( + ) </first>
+          <first>add_ln14_fu_79_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2253,7 +2253,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln14_fu_71_p2 ( icmp ) </first>
+          <first>icmp_ln14_fu_73_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2369,7 +2369,7 @@
           </second>
         </item>
         <item>
-          <first>i_297_fu_32</first>
+          <first>i_297_fu_34</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2457,7 +2457,7 @@
           </second>
         </item>
         <item>
-          <first>i_297_fu_32</first>
+          <first>i_297_fu_34</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2476,13 +2476,13 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln15_reg_123</first>
+          <first>i_reg_122</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>3</second>
+              <second>4</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -2490,7 +2490,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3</second>
+              <second>4</second>
             </item>
           </second>
         </item>
@@ -2514,7 +2514,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>add_ln14_fu_77_p2 ( + ) </first>
+          <first>add_ln14_fu_79_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2522,7 +2522,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln14_fu_71_p2 ( icmp ) </first>
+          <first>icmp_ln14_fu_73_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2592,14 +2592,14 @@
         </second>
       </item>
       <item>
-        <first>15</first>
+        <first>12</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
-        <first>16</first>
+        <first>13</first>
         <second>
           <first>1</first>
           <second>0</second>
@@ -2608,7 +2608,7 @@
       <item>
         <first>17</first>
         <second>
-          <first>1</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
@@ -2737,7 +2737,7 @@
       <count>15</count>
       <item_version>0</item_version>
       <item class_id="51" tracking_level="0" version="0">
-        <first>32</first>
+        <first>34</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2745,7 +2745,7 @@
         </second>
       </item>
       <item>
-        <first>36</first>
+        <first>38</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2753,7 +2753,7 @@
         </second>
       </item>
       <item>
-        <first>43</first>
+        <first>45</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -2762,15 +2762,15 @@
         </second>
       </item>
       <item>
-        <first>49</first>
+        <first>51</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>17</item>
+          <item>13</item>
         </second>
       </item>
       <item>
-        <first>56</first>
+        <first>58</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2778,7 +2778,7 @@
         </second>
       </item>
       <item>
-        <first>63</first>
+        <first>65</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2786,7 +2786,7 @@
         </second>
       </item>
       <item>
-        <first>68</first>
+        <first>70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2794,7 +2794,7 @@
         </second>
       </item>
       <item>
-        <first>71</first>
+        <first>73</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2802,7 +2802,7 @@
         </second>
       </item>
       <item>
-        <first>77</first>
+        <first>79</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2810,99 +2810,7 @@
         </second>
       </item>
       <item>
-        <first>83</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>15</item>
-        </second>
-      </item>
-      <item>
-        <first>87</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>18</item>
-        </second>
-      </item>
-      <item>
-        <first>95</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>19</item>
-        </second>
-      </item>
-      <item>
-        <first>99</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>20</item>
-        </second>
-      </item>
-      <item>
-        <first>104</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>24</item>
-        </second>
-      </item>
-      <item>
-        <first>109</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>16</item>
-        </second>
-      </item>
-    </dp_fu_nodes>
-    <dp_fu_nodes_expression class_id="53" tracking_level="0" version="0">
-      <count>10</count>
-      <item_version>0</item_version>
-      <item class_id="54" tracking_level="0" version="0">
-        <first>B_gen_1_addr_gep_fu_36</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>21</item>
-        </second>
-      </item>
-      <item>
-        <first>add_ln14_fu_77</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>9</item>
-        </second>
-      </item>
-      <item>
-        <first>i_297_fu_32</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>3</item>
-        </second>
-      </item>
-      <item>
-        <first>icmp_ln14_fu_71</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>8</item>
-        </second>
-      </item>
-      <item>
-        <first>or_ln15_9_fu_87</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>18</item>
-        </second>
-      </item>
-      <item>
-        <first>phiR_X_addr_gep_fu_49</first>
+        <first>85</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2910,7 +2818,15 @@
         </second>
       </item>
       <item>
-        <first>sext_ln15_fu_95</first>
+        <first>89</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
+        </second>
+      </item>
+      <item>
+        <first>97</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2918,15 +2834,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln15_fu_83</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>15</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln15_28_fu_99</first>
+        <first>101</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2934,11 +2842,103 @@
         </second>
       </item>
       <item>
-        <first>zext_ln15_fu_109</first>
+        <first>106</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>16</item>
+          <item>24</item>
+        </second>
+      </item>
+      <item>
+        <first>111</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>12</item>
+        </second>
+      </item>
+    </dp_fu_nodes>
+    <dp_fu_nodes_expression class_id="53" tracking_level="0" version="0">
+      <count>10</count>
+      <item_version>0</item_version>
+      <item class_id="54" tracking_level="0" version="0">
+        <first>B_gen_1_addr_gep_fu_38</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>21</item>
+        </second>
+      </item>
+      <item>
+        <first>add_ln14_fu_79</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>9</item>
+        </second>
+      </item>
+      <item>
+        <first>i_297_fu_34</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>3</item>
+        </second>
+      </item>
+      <item>
+        <first>icmp_ln14_fu_73</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>8</item>
+        </second>
+      </item>
+      <item>
+        <first>phiR_X_addr_gep_fu_51</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>13</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln15_fu_97</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>19</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln15_fu_85</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>17</item>
+        </second>
+      </item>
+      <item>
+        <first>xor_ln15_1_fu_89</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln14_fu_111</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>12</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln15_fu_101</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>20</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -2950,7 +2950,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_load_fu_68</first>
+        <first>i_load_fu_70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2958,7 +2958,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln12_store_fu_104</first>
+        <first>store_ln12_store_fu_106</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2966,7 +2966,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln12_store_fu_63</first>
+        <first>store_ln12_store_fu_65</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3009,7 +3009,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>113</first>
+        <first>115</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3017,15 +3017,15 @@
         </second>
       </item>
       <item>
-        <first>123</first>
+        <first>122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>15</item>
+          <item>7</item>
         </second>
       </item>
       <item>
-        <first>128</first>
+        <first>130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3037,7 +3037,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>B_gen_1_addr_reg_128</first>
+        <first>B_gen_1_addr_reg_130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3045,7 +3045,7 @@
         </second>
       </item>
       <item>
-        <first>i_297_reg_113</first>
+        <first>i_297_reg_115</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3053,11 +3053,11 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln15_reg_123</first>
+        <first>i_reg_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>15</item>
+          <item>7</item>
         </second>
       </item>
     </dp_regname_nodes>

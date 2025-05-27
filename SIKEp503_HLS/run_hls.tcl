@@ -27,7 +27,7 @@ add_files src/ec_isogeny.c
 add_files src/sidh.c
 add_files src/sike.c
 add_files src/P503.c
-add_files src/sikep503_kem_enc_tb.cpp
+add_files src/sikep503_kem_enc_hw.cpp
 
 # Add generic directory files
 add_files src/generic/fp_generic.c
@@ -50,6 +50,13 @@ set_part {xc7z020clg484-1}
 # Set target clock period
 create_clock -period 10
 
+# Set interface directives
+set_directive_interface -mode ap_ctrl_hs sikep503_kem_enc_hw
+set_directive_interface -mode s_axilite sikep503_kem_enc_hw
+set_directive_interface -mode m_axi -depth 402 sikep503_kem_enc_hw ct
+set_directive_interface -mode m_axi -depth 378 sikep503_kem_enc_hw pk
+set_directive_interface -mode m_axi -depth 16 sikep503_kem_enc_hw ss
+
 # Add testbench file
 set tb_file [file normalize "src/tb_top.cpp"]
 add_files -tb $tb_file
@@ -61,8 +68,7 @@ csim_design
 csynth_design
 
 # Run C/RTL cosimulation
-config_cosim -trace_level all
-cosim_design
+# cosim_design
 
 # Export RTL
 export_design -format ip_catalog

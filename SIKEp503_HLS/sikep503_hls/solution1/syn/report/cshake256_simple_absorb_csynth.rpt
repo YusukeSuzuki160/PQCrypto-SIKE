@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_absorb'
 ================================================================
-* Date:           Tue May 20 14:34:57 2025
+* Date:           Tue May 27 14:16:49 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -38,9 +38,9 @@
         |                                                             |                                                   |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                           Instance                          |                       Module                      |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-------------------------------------------------------------+---------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1  |       27|       27|  0.270 us|  0.270 us|   26|   26|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_KeccakF1600_StatePermute_fu_75                           |KeccakF1600_StatePermute                           |       42|       42|  0.420 us|  0.420 us|   42|   42|                                              no|
-        |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_593_1_fu_67  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_593_1  |       27|       27|  0.270 us|  0.270 us|   26|   26|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_KeccakF1600_StatePermute_fu_73                           |KeccakF1600_StatePermute                           |       42|       42|  0.420 us|  0.420 us|   42|   42|                                              no|
+        |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2_fu_81  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------------------+---------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -48,7 +48,7 @@
         |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_349_1  |        ?|        ?|        66|          -|          -|   inf|        no|
+        |- VITIS_LOOP_390_1  |        ?|        ?|        66|          -|          -|   inf|        no|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -80,9 +80,9 @@
     +-------------------------------------------------------------+---------------------------------------------------+---------+----+------+-------+-----+
     |                           Instance                          |                       Module                      | BRAM_18K| DSP|  FF  |  LUT  | URAM|
     +-------------------------------------------------------------+---------------------------------------------------+---------+----+------+-------+-----+
-    |grp_KeccakF1600_StatePermute_fu_75                           |KeccakF1600_StatePermute                           |        2|   0|  4904|  17154|    0|
-    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2  |        0|   0|    89|    165|    0|
-    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1  |        0|   0|     7|     62|    0|
+    |grp_KeccakF1600_StatePermute_fu_73                           |KeccakF1600_StatePermute                           |        2|   0|  4904|  17154|    0|
+    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2_fu_81  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2  |        0|   0|    89|    165|    0|
+    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_593_1_fu_67  |cshake256_simple_absorb_Pipeline_VITIS_LOOP_593_1  |        0|   0|     7|     62|    0|
     +-------------------------------------------------------------+---------------------------------------------------+---------+----+------+-------+-----+
     |Total                                                        |                                                   |        2|   0|  5000|  17381|    0|
     +-------------------------------------------------------------+---------------------------------------------------+---------+----+------+-------+-----+
@@ -100,7 +100,7 @@
     +---------------------+----------+----+---+----+------------+------------+
     |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------+----------+----+---+----+------------+------------+
-    |add_ln349_fu_124_p2  |         +|   0|  0|  71|          64|           8|
+    |add_ln390_fu_122_p2  |         +|   0|  0|  71|          64|           8|
     |s_we0                |        or|   0|  0|   8|           8|           1|
     +---------------------+----------+----+---+----+------------+------------+
     |Total                |          |   0|  0|  79|          72|           9|
@@ -111,7 +111,7 @@
     |     Name    | LUT| Input Size| Bits| Total Bits|
     +-------------+----+-----------+-----+-----------+
     |ap_NS_fsm    |  53|         10|    1|         10|
-    |idx_fu_46    |   9|          2|   64|        128|
+    |idx_fu_44    |   9|          2|   64|        128|
     |s_address0   |  20|          4|    5|         20|
     |s_address1   |  14|          3|    5|         15|
     |s_ce0        |  20|          4|    1|          4|
@@ -129,11 +129,11 @@
     |                                   Name                                   | FF | LUT| Bits| Const Bits|
     +--------------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                                 |   9|   0|    9|          0|
-    |empty_reg_142                                                             |   9|   0|    9|          0|
-    |grp_KeccakF1600_StatePermute_fu_75_ap_start_reg                           |   1|   0|    1|          0|
-    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start_reg  |   1|   0|    1|          0|
-    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start_reg  |   1|   0|    1|          0|
-    |idx_fu_46                                                                 |  64|   0|   64|          0|
+    |empty_reg_140                                                             |   9|   0|    9|          0|
+    |grp_KeccakF1600_StatePermute_fu_73_ap_start_reg                           |   1|   0|    1|          0|
+    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2_fu_81_ap_start_reg  |   1|   0|    1|          0|
+    |grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_593_1_fu_67_ap_start_reg  |   1|   0|    1|          0|
+    |idx_fu_44                                                                 |  64|   0|   64|          0|
     +--------------------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                                     |  85|   0|   85|          0|
     +--------------------------------------------------------------------------+----+----+-----+-----------+

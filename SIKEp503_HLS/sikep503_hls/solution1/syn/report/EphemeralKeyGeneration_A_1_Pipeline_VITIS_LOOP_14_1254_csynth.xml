@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:12~src/fpx.c:91~src/sidh.c:127</SourceLocation>
+<SourceLocation>src/fpx.c:12~src/fpx.c:91~src/sidh.c:139</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_14_1>
 <Name>VITIS_LOOP_14_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:15~src/fpx.c:91~src/sidh.c:127</SourceLocation>
+<SourceLocation>src/fpx.c:14~src/fpx.c:91~src/sidh.c:139</SourceLocation>
 </VITIS_LOOP_14_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -60,7 +60,7 @@
 
 <AreaEstimates>
 <Resources>
-<FF>10</FF>
+<FF>11</FF>
 <LUT>64</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
@@ -143,8 +143,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>empty</name>
-<Object>empty</Object>
+<name>npts_7</name>
+<Object>npts_7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -154,8 +154,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>pts_Z_address0</name>
-<Object>pts_Z</Object>
+<name>pts_X_address0</name>
+<Object>pts_X</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -165,8 +165,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>pts_Z_ce0</name>
-<Object>pts_Z</Object>
+<name>pts_X_ce0</name>
+<Object>pts_X</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -176,8 +176,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>pts_Z_q0</name>
-<Object>pts_Z</Object>
+<name>pts_X_q0</name>
+<Object>pts_X</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -187,8 +187,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R_Z_address0</name>
-<Object>R_Z</Object>
+<name>R_X_address0</name>
+<Object>R_X</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -198,8 +198,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R_Z_ce0</name>
-<Object>R_Z</Object>
+<name>R_X_ce0</name>
+<Object>R_X</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -209,8 +209,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R_Z_we0</name>
-<Object>R_Z</Object>
+<name>R_X_we0</name>
+<Object>R_X</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -220,8 +220,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R_Z_d0</name>
-<Object>R_Z</Object>
+<name>R_X_d0</name>
+<Object>R_X</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

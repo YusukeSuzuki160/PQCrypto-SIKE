@@ -123,12 +123,12 @@ for.inc.i10.i:3 %br_ln14 = br i1 %icmp_ln14, void %for.inc.i10.i.split, void %fo
 </and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="11" bw="3" op_0_bw="4">
 <![CDATA[
-for.inc.i10.i.split:0 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i10.i.split:0 %trunc_ln15 = trunc i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln12"/></StgValue>
+<StgValue><ssdm name="trunc_ln15"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -139,12 +139,12 @@ for.inc.i10.i.split:0 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipel
 </and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="12" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
 <![CDATA[
-for.inc.i10.i.split:1 %speclooptripcount_ln12 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
+for.inc.i10.i.split:1 %add_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln15
 
 ]]></Node>
-<StgValue><ssdm name="speclooptripcount_ln12"/></StgValue>
+<StgValue><ssdm name="add_ln"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -155,12 +155,12 @@ for.inc.i10.i.split:1 %speclooptripcount_ln12 = speclooptripcount void @_ssdm_op
 </and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="13" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.i10.i.split:2 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40
+for.inc.i10.i.split:2 %zext_ln15 = zext i4 %add_ln
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln14"/></StgValue>
+<StgValue><ssdm name="zext_ln15"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -171,12 +171,12 @@ for.inc.i10.i.split:2 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopN
 </and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="3" op_0_bw="4">
+<Node id="14" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i10.i.split:3 %trunc_ln15 = trunc i4 %i
+for.inc.i10.i.split:3 %R0_X_addr = getelementptr i64 %R0_X, i64 0, i64 %zext_ln15
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln15"/></StgValue>
+<StgValue><ssdm name="R0_X_addr"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -187,12 +187,12 @@ for.inc.i10.i.split:3 %trunc_ln15 = trunc i4 %i
 </and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i10.i.split:4 %tmp_1030_cast = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln15
+for.inc.i10.i.split:4 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_90
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1030_cast"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln12"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -203,12 +203,12 @@ for.inc.i10.i.split:4 %tmp_1030_cast = bitconcatenate i4 @_ssdm_op_BitConcatenat
 </and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="32" op_0_bw="4">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.i10.i.split:5 %zext_ln15 = zext i4 %tmp_1030_cast
+for.inc.i10.i.split:5 %speclooptripcount_ln12 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln15"/></StgValue>
+<StgValue><ssdm name="speclooptripcount_ln12"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -219,12 +219,12 @@ for.inc.i10.i.split:5 %zext_ln15 = zext i4 %tmp_1030_cast
 </and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="4" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i10.i.split:6 %R0_X_addr = getelementptr i64 %R0_X, i32 0, i32 %zext_ln15
+for.inc.i10.i.split:6 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21
 
 ]]></Node>
-<StgValue><ssdm name="R0_X_addr"/></StgValue>
+<StgValue><ssdm name="specloopname_ln14"/></StgValue>
 </operation>
 
 <operation id="18" st_id="1" stage="1" lat="1">

@@ -395,7 +395,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -554,14 +554,14 @@
 			<item class_id_reference="20" object_id="_16">
 				<id>17</id>
 				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
+				<source_obj>2</source_obj>
 				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_17">
 				<id>18</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>1</source_obj>
 				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>

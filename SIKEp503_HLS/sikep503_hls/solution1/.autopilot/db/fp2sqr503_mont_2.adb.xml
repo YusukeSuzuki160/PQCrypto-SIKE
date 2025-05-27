@@ -83,9 +83,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="1" op_0_bw="32">
+<Node id="6" bw="1" op_0_bw="64">
 <![CDATA[
-entry:1 %borrow_loc = alloca i32 1
+entry:1 %borrow_loc = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="borrow_loc"/></StgValue>
@@ -98,9 +98,9 @@ entry:1 %borrow_loc = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="64" op_0_bw="32">
+<Node id="7" bw="64" op_0_bw="64">
 <![CDATA[
-entry:2 %temp = alloca i32 1
+entry:2 %temp = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="temp"/><MemPortTyVec>2 3 </MemPortTyVec>
@@ -114,9 +114,9 @@ entry:2 %temp = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="64" op_0_bw="32">
+<Node id="8" bw="64" op_0_bw="64">
 <![CDATA[
-entry:3 %temp_62 = alloca i32 1
+entry:3 %temp_62 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="temp_62"/><MemPortTyVec>2 3 </MemPortTyVec>
@@ -130,9 +130,9 @@ entry:3 %temp_62 = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="64" op_0_bw="32">
+<Node id="9" bw="64" op_0_bw="64">
 <![CDATA[
-entry:4 %t1 = alloca i32 1
+entry:4 %t1 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t1"/><MemPortTyVec>2 3 </MemPortTyVec>
@@ -146,9 +146,9 @@ entry:4 %t1 = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="64" op_0_bw="32">
+<Node id="10" bw="64" op_0_bw="64">
 <![CDATA[
-entry:5 %t2 = alloca i32 1
+entry:5 %t2 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t2"/><MemPortTyVec>2 1 </MemPortTyVec>
@@ -162,9 +162,9 @@ entry:5 %t2 = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="64" op_0_bw="32">
+<Node id="11" bw="64" op_0_bw="64">
 <![CDATA[
-entry:6 %t3 = alloca i32 1
+entry:6 %t3 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t3"/><MemPortTyVec>2 3 </MemPortTyVec>
@@ -180,7 +180,7 @@ entry:6 %t3 = alloca i32 1
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:7 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1, i64 %coeff, i64 %t1
+entry:7 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1, i64 %coeff, i64 %t1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -228,7 +228,7 @@ entry:15 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_6, i64 %temp
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:7 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1, i64 %coeff, i64 %t1
+entry:7 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1, i64 %coeff, i64 %t1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -342,7 +342,7 @@ entry:10 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_53_2, i64 %
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:11 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1129, i64 %coeff, i64 %t3
+entry:11 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1132, i64 %coeff, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -375,7 +375,7 @@ entry:10 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_53_2, i64 %
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:11 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1129, i64 %coeff, i64 %t3
+entry:11 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1132, i64 %coeff, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -393,10 +393,10 @@ entry:11 %call_ln0 = call void @fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1129, i
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:13 %call_ln62 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_62
+entry:13 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_62
 
 ]]></Node>
-<StgValue><ssdm name="call_ln62"/></StgValue>
+<StgValue><ssdm name="call_ln63"/></StgValue>
 </operation>
 
 <operation id="33" st_id="7" stage="2" lat="2">
@@ -408,10 +408,10 @@ entry:13 %call_ln62 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_62
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:16 %call_ln62 = call void @mp_mul.385, i64 %t3, i64 %coeff, i64 %temp
+entry:16 %call_ln63 = call void @mp_mul.685, i64 %t3, i64 %coeff, i64 %temp
 
 ]]></Node>
-<StgValue><ssdm name="call_ln62"/></StgValue>
+<StgValue><ssdm name="call_ln63"/></StgValue>
 </operation>
 </state>
 
@@ -426,10 +426,10 @@ entry:16 %call_ln62 = call void @mp_mul.385, i64 %t3, i64 %coeff, i64 %temp
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:13 %call_ln62 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_62
+entry:13 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_62
 
 ]]></Node>
-<StgValue><ssdm name="call_ln62"/></StgValue>
+<StgValue><ssdm name="call_ln63"/></StgValue>
 </operation>
 
 <operation id="35" st_id="8" stage="1" lat="2">
@@ -441,10 +441,10 @@ entry:13 %call_ln62 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_62
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:16 %call_ln62 = call void @mp_mul.385, i64 %t3, i64 %coeff, i64 %temp
+entry:16 %call_ln63 = call void @mp_mul.685, i64 %t3, i64 %coeff, i64 %temp
 
 ]]></Node>
-<StgValue><ssdm name="call_ln62"/></StgValue>
+<StgValue><ssdm name="call_ln63"/></StgValue>
 </operation>
 </state>
 
@@ -459,10 +459,10 @@ entry:16 %call_ln62 = call void @mp_mul.385, i64 %t3, i64 %coeff, i64 %temp
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:14 %call_ln63 = call void @rdc_mont.140, i64 %temp_62, i64 %c, i1 0, i64 %p503p1_1
+entry:14 %call_ln64 = call void @rdc_mont.140, i64 %temp_62, i64 %c, i1 0, i64 %p503p1_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln64"/></StgValue>
 </operation>
 </state>
 
@@ -477,10 +477,10 @@ entry:14 %call_ln63 = call void @rdc_mont.140, i64 %temp_62, i64 %c, i1 0, i64 %
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:14 %call_ln63 = call void @rdc_mont.140, i64 %temp_62, i64 %c, i1 0, i64 %p503p1_1
+entry:14 %call_ln64 = call void @rdc_mont.140, i64 %temp_62, i64 %c, i1 0, i64 %p503p1_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln64"/></StgValue>
 </operation>
 </state>
 
@@ -495,10 +495,10 @@ entry:14 %call_ln63 = call void @rdc_mont.140, i64 %temp_62, i64 %c, i1 0, i64 %
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:17 %call_ln63 = call void @rdc_mont.140, i64 %temp, i64 %c, i1 1, i64 %p503p1_1
+entry:17 %call_ln64 = call void @rdc_mont.140, i64 %temp, i64 %c, i1 1, i64 %p503p1_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln64"/></StgValue>
 </operation>
 </state>
 
@@ -528,10 +528,10 @@ entry:0 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_Spec
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:17 %call_ln63 = call void @rdc_mont.140, i64 %temp, i64 %c, i1 1, i64 %p503p1_1
+entry:17 %call_ln64 = call void @rdc_mont.140, i64 %temp, i64 %c, i1 1, i64 %p503p1_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln64"/></StgValue>
 </operation>
 
 <operation id="41" st_id="12" stage="1" lat="1">
@@ -543,10 +543,10 @@ entry:17 %call_ln63 = call void @rdc_mont.140, i64 %temp, i64 %c, i1 1, i64 %p50
 
 <Node id="23" bw="0">
 <![CDATA[
-entry:18 %ret_ln162 = ret
+entry:18 %ret_ln163 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln162"/></StgValue>
+<StgValue><ssdm name="ret_ln163"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -585,7 +585,7 @@ entry:18 %ret_ln162 = ret
 </dataflow>
 <dataflow id="63" from="StgValue_57" to="t3" fromId="57" toId="18">
 </dataflow>
-<dataflow id="65" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1" to="call_ln0" fromId="64" toId="19">
+<dataflow id="65" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1" to="call_ln0" fromId="64" toId="19">
 </dataflow>
 <dataflow id="66" from="coeff" to="call_ln0" fromId="53" toId="19">
 </dataflow>
@@ -599,7 +599,7 @@ entry:18 %ret_ln162 = ret
 </dataflow>
 <dataflow id="73" from="temp" to="call_ln0" fromId="14" toId="21">
 </dataflow>
-<dataflow id="74" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1" to="call_ln0" fromId="64" toId="22">
+<dataflow id="74" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1" to="call_ln0" fromId="64" toId="22">
 </dataflow>
 <dataflow id="75" from="coeff" to="call_ln0" fromId="53" toId="22">
 </dataflow>
@@ -639,7 +639,7 @@ entry:18 %ret_ln162 = ret
 </dataflow>
 <dataflow id="95" from="p503x2_1" to="call_ln0" fromId="55" toId="28">
 </dataflow>
-<dataflow id="97" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1129" to="call_ln0" fromId="96" toId="29">
+<dataflow id="97" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1132" to="call_ln0" fromId="96" toId="29">
 </dataflow>
 <dataflow id="98" from="coeff" to="call_ln0" fromId="53" toId="29">
 </dataflow>
@@ -653,87 +653,87 @@ entry:18 %ret_ln162 = ret
 </dataflow>
 <dataflow id="103" from="p503x2_1" to="call_ln0" fromId="55" toId="30">
 </dataflow>
-<dataflow id="104" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_349_1129" to="call_ln0" fromId="96" toId="31">
+<dataflow id="104" from="fp2sqr503_mont.2_Pipeline_VITIS_LOOP_350_1132" to="call_ln0" fromId="96" toId="31">
 </dataflow>
 <dataflow id="105" from="coeff" to="call_ln0" fromId="53" toId="31">
 </dataflow>
 <dataflow id="106" from="t3" to="call_ln0" fromId="18" toId="31">
 </dataflow>
-<dataflow id="108" from="mp_mul.152" to="call_ln62" fromId="107" toId="32">
+<dataflow id="108" from="mp_mul.152" to="call_ln63" fromId="107" toId="32">
 </dataflow>
-<dataflow id="109" from="t1" to="call_ln62" fromId="16" toId="32">
+<dataflow id="109" from="t1" to="call_ln63" fromId="16" toId="32">
 </dataflow>
-<dataflow id="110" from="t2" to="call_ln62" fromId="17" toId="32">
+<dataflow id="110" from="t2" to="call_ln63" fromId="17" toId="32">
 </dataflow>
-<dataflow id="111" from="temp_62" to="call_ln62" fromId="15" toId="32">
+<dataflow id="111" from="temp_62" to="call_ln63" fromId="15" toId="32">
 </dataflow>
-<dataflow id="113" from="mp_mul.385" to="call_ln62" fromId="112" toId="33">
+<dataflow id="113" from="mp_mul.685" to="call_ln63" fromId="112" toId="33">
 </dataflow>
-<dataflow id="114" from="t3" to="call_ln62" fromId="18" toId="33">
+<dataflow id="114" from="t3" to="call_ln63" fromId="18" toId="33">
 </dataflow>
-<dataflow id="115" from="coeff" to="call_ln62" fromId="53" toId="33">
+<dataflow id="115" from="coeff" to="call_ln63" fromId="53" toId="33">
 </dataflow>
-<dataflow id="116" from="temp" to="call_ln62" fromId="14" toId="33">
+<dataflow id="116" from="temp" to="call_ln63" fromId="14" toId="33">
 </dataflow>
-<dataflow id="117" from="mp_mul.152" to="call_ln62" fromId="107" toId="34">
+<dataflow id="117" from="mp_mul.152" to="call_ln63" fromId="107" toId="34">
 </dataflow>
-<dataflow id="118" from="t1" to="call_ln62" fromId="16" toId="34">
+<dataflow id="118" from="t1" to="call_ln63" fromId="16" toId="34">
 </dataflow>
-<dataflow id="119" from="t2" to="call_ln62" fromId="17" toId="34">
+<dataflow id="119" from="t2" to="call_ln63" fromId="17" toId="34">
 </dataflow>
-<dataflow id="120" from="temp_62" to="call_ln62" fromId="15" toId="34">
+<dataflow id="120" from="temp_62" to="call_ln63" fromId="15" toId="34">
 </dataflow>
-<dataflow id="121" from="mp_mul.385" to="call_ln62" fromId="112" toId="35">
+<dataflow id="121" from="mp_mul.685" to="call_ln63" fromId="112" toId="35">
 </dataflow>
-<dataflow id="122" from="t3" to="call_ln62" fromId="18" toId="35">
+<dataflow id="122" from="t3" to="call_ln63" fromId="18" toId="35">
 </dataflow>
-<dataflow id="123" from="coeff" to="call_ln62" fromId="53" toId="35">
+<dataflow id="123" from="coeff" to="call_ln63" fromId="53" toId="35">
 </dataflow>
-<dataflow id="124" from="temp" to="call_ln62" fromId="14" toId="35">
+<dataflow id="124" from="temp" to="call_ln63" fromId="14" toId="35">
 </dataflow>
-<dataflow id="126" from="rdc_mont.140" to="call_ln63" fromId="125" toId="36">
+<dataflow id="126" from="rdc_mont.140" to="call_ln64" fromId="125" toId="36">
 </dataflow>
-<dataflow id="127" from="temp_62" to="call_ln63" fromId="15" toId="36">
+<dataflow id="127" from="temp_62" to="call_ln64" fromId="15" toId="36">
 </dataflow>
-<dataflow id="128" from="c" to="call_ln63" fromId="54" toId="36">
+<dataflow id="128" from="c" to="call_ln64" fromId="54" toId="36">
 </dataflow>
-<dataflow id="130" from="StgValue_129" to="call_ln63" fromId="129" toId="36">
+<dataflow id="130" from="StgValue_129" to="call_ln64" fromId="129" toId="36">
 </dataflow>
-<dataflow id="131" from="p503p1_1" to="call_ln63" fromId="56" toId="36">
+<dataflow id="131" from="p503p1_1" to="call_ln64" fromId="56" toId="36">
 </dataflow>
-<dataflow id="132" from="rdc_mont.140" to="call_ln63" fromId="125" toId="37">
+<dataflow id="132" from="rdc_mont.140" to="call_ln64" fromId="125" toId="37">
 </dataflow>
-<dataflow id="133" from="temp_62" to="call_ln63" fromId="15" toId="37">
+<dataflow id="133" from="temp_62" to="call_ln64" fromId="15" toId="37">
 </dataflow>
-<dataflow id="134" from="c" to="call_ln63" fromId="54" toId="37">
+<dataflow id="134" from="c" to="call_ln64" fromId="54" toId="37">
 </dataflow>
-<dataflow id="135" from="StgValue_129" to="call_ln63" fromId="129" toId="37">
+<dataflow id="135" from="StgValue_129" to="call_ln64" fromId="129" toId="37">
 </dataflow>
-<dataflow id="136" from="p503p1_1" to="call_ln63" fromId="56" toId="37">
+<dataflow id="136" from="p503p1_1" to="call_ln64" fromId="56" toId="37">
 </dataflow>
-<dataflow id="137" from="rdc_mont.140" to="call_ln63" fromId="125" toId="38">
+<dataflow id="137" from="rdc_mont.140" to="call_ln64" fromId="125" toId="38">
 </dataflow>
-<dataflow id="138" from="temp" to="call_ln63" fromId="14" toId="38">
+<dataflow id="138" from="temp" to="call_ln64" fromId="14" toId="38">
 </dataflow>
-<dataflow id="139" from="c" to="call_ln63" fromId="54" toId="38">
+<dataflow id="139" from="c" to="call_ln64" fromId="54" toId="38">
 </dataflow>
-<dataflow id="141" from="StgValue_140" to="call_ln63" fromId="140" toId="38">
+<dataflow id="141" from="StgValue_140" to="call_ln64" fromId="140" toId="38">
 </dataflow>
-<dataflow id="142" from="p503p1_1" to="call_ln63" fromId="56" toId="38">
+<dataflow id="142" from="p503p1_1" to="call_ln64" fromId="56" toId="38">
 </dataflow>
 <dataflow id="144" from="_ssdm_op_SpecBRAMWithByteEnable" to="specbramwithbyteenable_ln0" fromId="143" toId="39">
 </dataflow>
 <dataflow id="145" from="coeff" to="specbramwithbyteenable_ln0" fromId="53" toId="39">
 </dataflow>
-<dataflow id="146" from="rdc_mont.140" to="call_ln63" fromId="125" toId="40">
+<dataflow id="146" from="rdc_mont.140" to="call_ln64" fromId="125" toId="40">
 </dataflow>
-<dataflow id="147" from="temp" to="call_ln63" fromId="14" toId="40">
+<dataflow id="147" from="temp" to="call_ln64" fromId="14" toId="40">
 </dataflow>
-<dataflow id="148" from="c" to="call_ln63" fromId="54" toId="40">
+<dataflow id="148" from="c" to="call_ln64" fromId="54" toId="40">
 </dataflow>
-<dataflow id="149" from="StgValue_140" to="call_ln63" fromId="140" toId="40">
+<dataflow id="149" from="StgValue_140" to="call_ln64" fromId="140" toId="40">
 </dataflow>
-<dataflow id="150" from="p503p1_1" to="call_ln63" fromId="56" toId="40">
+<dataflow id="150" from="p503p1_1" to="call_ln64" fromId="56" toId="40">
 </dataflow>
 </dataflows>
 

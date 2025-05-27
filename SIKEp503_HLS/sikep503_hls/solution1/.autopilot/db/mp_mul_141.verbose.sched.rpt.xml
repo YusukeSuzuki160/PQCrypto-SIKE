@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mp_mul_141'" level="0">
-<item name = "Date">Tue May 20 14:31:32 2025
+<item name = "Date">Tue May 27 14:13:04 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -36,7 +36,7 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- VITIS_LOOP_143_1">120, 176, 15 ~ 22, -, -, 8, no</column>
-<column name="- VITIS_LOOP_156_3">105, 147, 15 ~ 21, -, -, 7, no</column>
+<column name="- VITIS_LOOP_157_3">105, 147, 15 ~ 21, -, -, 7, no</column>
 </table>
 </item>
 </section>

@@ -34,16 +34,16 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:189</SourceLocation>
+<SourceLocation>src/fpx.c:190</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>10</BRAM_18K>
+<BRAM_18K>12</BRAM_18K>
 <DSP>32</DSP>
-<FF>14575</FF>
-<LUT>20293</LUT>
+<FF>14429</FF>
+<LUT>20202</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -123,7 +123,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1254_p_din0</name>
+<name>grp_fu_1361_p_din0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -134,7 +134,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1254_p_din1</name>
+<name>grp_fu_1361_p_din1</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -145,7 +145,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1254_p_dout0</name>
+<name>grp_fu_1361_p_dout0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -156,7 +156,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1254_p_ce</name>
+<name>grp_fu_1361_p_ce</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -167,7 +167,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1258_p_din0</name>
+<name>grp_fu_1365_p_din0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -178,7 +178,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1258_p_din1</name>
+<name>grp_fu_1365_p_din1</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -189,7 +189,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1258_p_dout0</name>
+<name>grp_fu_1365_p_dout0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -200,7 +200,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1258_p_ce</name>
+<name>grp_fu_1365_p_ce</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -211,7 +211,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1262_p_din0</name>
+<name>grp_fu_1369_p_din0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -222,7 +222,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1262_p_din1</name>
+<name>grp_fu_1369_p_din1</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -233,7 +233,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1262_p_dout0</name>
+<name>grp_fu_1369_p_dout0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -244,7 +244,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1262_p_ce</name>
+<name>grp_fu_1369_p_ce</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -255,7 +255,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1266_p_din0</name>
+<name>grp_fu_1373_p_din0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -266,7 +266,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1266_p_din1</name>
+<name>grp_fu_1373_p_din1</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -277,7 +277,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1266_p_dout0</name>
+<name>grp_fu_1373_p_dout0</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -288,7 +288,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1266_p_ce</name>
+<name>grp_fu_1373_p_ce</name>
 <Object>fp2mul503_mont.4</Object>
 <Type>return value</Type>
 <Scope></Scope>

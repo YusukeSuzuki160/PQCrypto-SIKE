@@ -395,7 +395,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>1</content>
@@ -885,7 +885,7 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>206</second>
+              <second>207</second>
             </item>
             <item>
               <first>LUT</first>
@@ -904,7 +904,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>274</second>
+              <second>276</second>
             </item>
             <item>
               <first>LUT</first>
@@ -923,7 +923,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>334</second>
+              <second>335</second>
             </item>
             <item>
               <first>LUT</first>

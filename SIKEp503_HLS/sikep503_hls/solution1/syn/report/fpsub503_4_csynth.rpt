@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_4'
 ================================================================
-* Date:           Tue May 20 14:35:44 2025
+* Date:           Tue May 27 14:18:03 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       33|       33|  0.330 us|  0.330 us|   33|   33|       no|
+    |       40|       40|  0.400 us|  0.400 us|   40|   40|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                               |                                     |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                    Instance                   |                Module               |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_18  |fpsub503_4_Pipeline_VITIS_LOOP_47_1  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_29  |fpsub503_4_Pipeline_VITIS_LOOP_53_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_20  |fpsub503_4_Pipeline_VITIS_LOOP_47_1  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_31  |fpsub503_4_Pipeline_VITIS_LOOP_53_2  |       26|       26|  0.260 us|  0.260 us|   25|   25|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -57,12 +57,12 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       -|      -|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|     544|   1312|    -|
+|Instance         |        0|    -|     542|   1328|    -|
 |Memory           |        -|    -|       -|      -|    -|
-|Multiplexer      |        -|    -|       0|     90|    -|
+|Multiplexer      |        -|    -|       0|     81|    -|
 |Register         |        -|    -|       6|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     550|   1402|    0|
+|Total            |        0|    0|     548|   1409|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -74,10 +74,10 @@
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
     |                    Instance                   |                Module               | BRAM_18K| DSP|  FF | LUT | URAM|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
-    |grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_18  |fpsub503_4_Pipeline_VITIS_LOOP_47_1  |        0|   0|  210|  612|    0|
-    |grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_29  |fpsub503_4_Pipeline_VITIS_LOOP_53_2  |        0|   0|  334|  700|    0|
+    |grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_20  |fpsub503_4_Pipeline_VITIS_LOOP_47_1  |        0|   0|  210|  621|    0|
+    |grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_31  |fpsub503_4_Pipeline_VITIS_LOOP_53_2  |        0|   0|  332|  707|    0|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
-    |Total                                          |                                     |        0|   0|  544| 1312|    0|
+    |Total                                          |                                     |        0|   0|  542| 1328|    0|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -93,26 +93,25 @@
     N/A
 
     * Multiplexer: 
-    +------------+----+-----------+-----+-----------+
-    |    Name    | LUT| Input Size| Bits| Total Bits|
-    +------------+----+-----------+-----+-----------+
-    |ap_NS_fsm   |  25|          5|    1|          5|
-    |c_address0  |  14|          3|    4|         12|
-    |c_ce0       |  14|          3|    1|          3|
-    |c_ce1       |   9|          2|    1|          2|
-    |c_d0        |  14|          3|   64|        192|
-    |c_we0       |  14|          3|    1|          3|
-    +------------+----+-----------+-----+-----------+
-    |Total       |  90|         19|   72|        217|
-    +------------+----+-----------+-----+-----------+
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm       |  25|          5|    1|          5|
+    |coeff_address0  |  14|          3|    6|         18|
+    |coeff_ce0       |  14|          3|    1|          3|
+    |coeff_d0        |  14|          3|   64|        192|
+    |coeff_we0       |  14|          3|    8|         24|
+    +----------------+----+-----------+-----+-----------+
+    |Total           |  81|         17|   80|        242|
+    +----------------+----+-----------+-----+-----------+
 
     * Register: 
     +------------------------------------------------------------+---+----+-----+-----------+
     |                            Name                            | FF| LUT| Bits| Const Bits|
     +------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                   |  4|   0|    4|          0|
-    |grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_18_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_29_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_20_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_31_ap_start_reg  |  1|   0|    1|          0|
     +------------------------------------------------------------+---+----+-----+-----------+
     |Total                                                       |  6|   0|    6|          0|
     +------------------------------------------------------------+---+----+-----+-----------+
@@ -123,27 +122,25 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+--------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
-+--------------+-----+-----+------------+--------------+--------------+
-|ap_clk        |   in|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
-|ap_rst        |   in|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
-|ap_start      |   in|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
-|ap_done       |  out|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
-|ap_idle       |  out|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
-|ap_ready      |  out|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
-|R_X_address0  |  out|    4|   ap_memory|           R_X|         array|
-|R_X_ce0       |  out|    1|   ap_memory|           R_X|         array|
-|R_X_q0        |   in|   64|   ap_memory|           R_X|         array|
-|R_Z_address0  |  out|    4|   ap_memory|           R_Z|         array|
-|R_Z_ce0       |  out|    1|   ap_memory|           R_Z|         array|
-|R_Z_q0        |   in|   64|   ap_memory|           R_Z|         array|
-|c_address0    |  out|    4|   ap_memory|             c|         array|
-|c_ce0         |  out|    1|   ap_memory|             c|         array|
-|c_we0         |  out|    1|   ap_memory|             c|         array|
-|c_d0          |  out|   64|   ap_memory|             c|         array|
-|c_address1    |  out|    4|   ap_memory|             c|         array|
-|c_ce1         |  out|    1|   ap_memory|             c|         array|
-|c_q1          |   in|   64|   ap_memory|             c|         array|
-+--------------+-----+-----+------------+--------------+--------------+
++----------------+-----+-----+------------+--------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  | Source Object|    C Type    |
++----------------+-----+-----+------------+--------------+--------------+
+|ap_clk          |   in|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
+|ap_rst          |   in|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
+|ap_start        |   in|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
+|ap_done         |  out|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
+|ap_idle         |  out|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
+|ap_ready        |  out|    1|  ap_ctrl_hs|    fpsub503.4|  return value|
+|R_X_address0    |  out|    4|   ap_memory|           R_X|         array|
+|R_X_ce0         |  out|    1|   ap_memory|           R_X|         array|
+|R_X_q0          |   in|   64|   ap_memory|           R_X|         array|
+|R_Z_address0    |  out|    4|   ap_memory|           R_Z|         array|
+|R_Z_ce0         |  out|    1|   ap_memory|           R_Z|         array|
+|R_Z_q0          |   in|   64|   ap_memory|           R_Z|         array|
+|coeff_address0  |  out|    6|   ap_memory|         coeff|         array|
+|coeff_ce0       |  out|    1|   ap_memory|         coeff|         array|
+|coeff_we0       |  out|    8|   ap_memory|         coeff|         array|
+|coeff_d0        |  out|   64|   ap_memory|         coeff|         array|
+|coeff_q0        |   in|   64|   ap_memory|         coeff|         array|
++----------------+-----+-----+------------+--------------+--------------+
 

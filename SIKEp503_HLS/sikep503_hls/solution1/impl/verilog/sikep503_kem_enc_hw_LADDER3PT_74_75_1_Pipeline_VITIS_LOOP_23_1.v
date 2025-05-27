@@ -41,7 +41,7 @@ wire   [0:0] icmp_ln23_fu_58_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [31:0] zext_ln24_fu_82_p1;
+wire   [63:0] zext_ln24_fu_82_p1;
 reg   [3:0] i_268_fu_32;
 wire   [3:0] add_ln23_fu_64_p2;
 wire    ap_loop_init;
@@ -49,7 +49,7 @@ reg   [3:0] ap_sig_allocacmp_i;
 reg    R_Z_we0_local;
 reg    R_Z_ce0_local;
 wire   [2:0] trunc_ln24_fu_70_p1;
-wire   [3:0] zext_ln_fu_74_p3;
+wire   [3:0] zext_ln24_s_fu_74_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -213,8 +213,8 @@ assign icmp_ln23_fu_58_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
 assign trunc_ln24_fu_70_p1 = ap_sig_allocacmp_i[2:0];
 
-assign zext_ln24_fu_82_p1 = zext_ln_fu_74_p3;
+assign zext_ln24_fu_82_p1 = zext_ln24_s_fu_74_p3;
 
-assign zext_ln_fu_74_p3 = {{1'd1}, {trunc_ln24_fu_70_p1}};
+assign zext_ln24_s_fu_74_p3 = {{1'd1}, {trunc_ln24_fu_70_p1}};
 
 endmodule //sikep503_kem_enc_hw_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1

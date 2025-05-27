@@ -137,7 +137,7 @@
 						<name>temp</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -153,7 +153,7 @@
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -240,10 +240,10 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>_ln62</name>
+						<name>_ln63</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>63</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -259,7 +259,7 @@
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>62</second>
+										<second>63</second>
 									</item>
 									<item>
 										<first>
@@ -308,10 +308,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>_ln63</name>
+						<name>_ln64</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>64</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -327,7 +327,7 @@
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>63</second>
+										<second>64</second>
 									</item>
 									<item>
 										<first>
@@ -593,7 +593,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -665,7 +665,7 @@
 					<Obj>
 						<type>2</type>
 						<id>26</id>
-						<name>rdc_mont_3</name>
+						<name>rdc_mont_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -689,7 +689,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:rdc_mont.3&gt;</content>
+				<content>&lt;constant:rdc_mont.1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_16">
 				<Value>

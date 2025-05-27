@@ -48,8 +48,9 @@ void from_mont(const felm_t ma, felm_t c)
 void copy_words(const digit_t* a, digit_t* c, const unsigned int nwords)
 { // Copy wordsize digits, c = a, where lng(a) = nwords.
     unsigned int i;
-        
-    for (i = 0; i < nwords; i++) {                      
+    
+    for (i = 0; i < nwords; i++) {                
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         c[i] = a[i];
     }
 }
@@ -167,6 +168,7 @@ __inline unsigned int mp_sub(const digit_t* a, const digit_t* b, digit_t* c, con
     unsigned int i, borrow = 0;
 
     for (i = 0; i < nwords; i++) {
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         SUBC(borrow, a[i], b[i], borrow, c[i]);
     }
 
@@ -177,7 +179,6 @@ __inline unsigned int mp_sub(const digit_t* a, const digit_t* b, digit_t* c, con
 __inline static digit_t mp_subfast(const digit_t* a, const digit_t* b, digit_t* c)
 { // Multiprecision subtraction, c = a-b, where lng(a) = lng(b) = 2*NWORDS_FIELD. 
   // If c < 0 then returns mask = 0xFF..F, else mask = 0x00..0 
-
 	return (0 - (digit_t)mp_sub(a, b, c, 2*NWORDS_FIELD));
 }
 
@@ -345,8 +346,9 @@ void from_fp2mont(const f2elm_t ma, f2elm_t c)
 __inline unsigned int mp_add(const digit_t* a, const digit_t* b, digit_t* c, const unsigned int nwords)
 { // Multiprecision addition, c = a+b, where lng(a) = lng(b) = nwords. Returns the carry bit.
     unsigned int i, carry = 0;
-        
-    for (i = 0; i < nwords; i++) {                      
+    
+    for (i = 0; i < nwords; i++) {     
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         ADDC(carry, a[i], b[i], carry, c[i]);
     }
 
@@ -363,13 +365,21 @@ void mp_shiftleft(digit_t* x, unsigned int shift, const unsigned int nwords)
         shift -= RADIX;
     }
 
-    for (i = 0; i < nwords-j; i++) 
+    for (i = 0; i < nwords-j; i++) {
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         x[nwords-1-i] = x[nwords-1-i-j];
-    for (i = nwords-j; i < nwords; i++) 
+    }
+
+    for (i = nwords-j; i < nwords; i++) {
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         x[nwords-1-i] = 0;
+    }
+
     if (shift != 0) {
-        for (j = nwords-1; j > 0; j--) 
+        for (j = nwords-1; j > 0; j--) {
+            #pragma HLS loop_tripcount min=1 max=503 avg=252
             SHIFTL(x[j], x[j-1], shift, x[j], RADIX);
+        }
         x[0] <<= shift;
     }
 }
@@ -380,6 +390,7 @@ void mp_shiftr1(digit_t* x, const unsigned int nwords)
     unsigned int i;
 
     for (i = 0; i < nwords-1; i++) {
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         SHIFTR(x[i+1], x[i], 1, x[i], RADIX);
     }
     x[nwords-1] >>= 1;
@@ -391,7 +402,8 @@ void mp_shiftl1(digit_t* x, const unsigned int nwords)
     int i;
 
     for (i = nwords-1; i > 0; i--) {
+        #pragma HLS loop_tripcount min=1 max=503 avg=252
         SHIFTL(x[i], x[i-1], 1, x[i], RADIX);
     }
     x[0] <<= 1;
-}
+}           

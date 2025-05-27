@@ -738,7 +738,7 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
     return (unsigned int)((x ^ ((x ^ y) | ((x - y) ^ y))) >> (64 -1));
 }
 # 11 "src/api.h" 2
-# 27 "src/api.h"
+# 31 "src/api.h"
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk);
 
 
@@ -752,37 +752,37 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
 
 int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned char *sk);
-# 66 "src/api.h"
-void random_mod_order_A(unsigned char* random_digits);
+# 68 "src/api.h"
+void random_mod_order_A(unsigned char *random_digits);
 
 
 
-void random_mod_order_B(unsigned char* random_digits);
-
-
-
-
-int EphemeralKeyGeneration_A(const unsigned char* PrivateKeyA, unsigned char* PublicKeyA);
+void random_mod_order_B(unsigned char *random_digits);
 
 
 
 
-
-int EphemeralKeyGeneration_B(const unsigned char* PrivateKeyB, unsigned char* PublicKeyB);
+int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA);
 
 
 
 
 
-
-int EphemeralSecretAgreement_A(const unsigned char* PrivateKeyA, const unsigned char* PublicKeyB, unsigned char* SharedSecretA);
+int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *PublicKeyB);
 
 
 
 
 
 
-int EphemeralSecretAgreement_B(const unsigned char* PrivateKeyB, const unsigned char* PublicKeyA, unsigned char* SharedSecretB);
+int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned char *PublicKeyB, unsigned char *SharedSecretA);
+
+
+
+
+
+
+int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned char *PublicKeyA, unsigned char *SharedSecretB);
 # 11 "src/P503_internal.h" 2
 # 62 "src/P503_internal.h"
 typedef digit_t felm_t[8];
@@ -1036,7 +1036,657 @@ void cshake256_simple(unsigned char *output, unsigned long long outlen, uint16_t
 
 void randombytes(unsigned char *x, unsigned long long xlen);
 # 11 "src/sike.c" 2
+# 1 "/usr/include/stdio.h" 1 3 4
+# 28 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 29 "/usr/include/stdio.h" 2 3 4
 
+
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 35 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 1 3 4
+# 30 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list va_list;
+# 48 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 38 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 1 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 1 3 4
+# 13 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 3 4
+typedef struct
+{
+  int __count;
+  union
+  {
+    unsigned int __wch;
+    char __wchb[4];
+  } __value;
+} __mbstate_t;
+# 6 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 2 3 4
+
+
+
+
+typedef struct _G_fpos_t
+{
+  __off_t __pos;
+  __mbstate_t __state;
+} __fpos_t;
+# 41 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 3 4
+typedef struct _G_fpos64_t
+{
+  __off64_t __pos;
+  __mbstate_t __state;
+} __fpos64_t;
+# 42 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+typedef struct _IO_FILE __FILE;
+# 43 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+
+
+typedef struct _IO_FILE FILE;
+# 44 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 3 4
+struct _IO_FILE;
+struct _IO_marker;
+struct _IO_codecvt;
+struct _IO_wide_data;
+
+
+
+
+typedef void _IO_lock_t;
+
+
+
+
+
+struct _IO_FILE
+{
+  int _flags;
+
+
+  char *_IO_read_ptr;
+  char *_IO_read_end;
+  char *_IO_read_base;
+  char *_IO_write_base;
+  char *_IO_write_ptr;
+  char *_IO_write_end;
+  char *_IO_buf_base;
+  char *_IO_buf_end;
+
+
+  char *_IO_save_base;
+  char *_IO_backup_base;
+  char *_IO_save_end;
+
+  struct _IO_marker *_markers;
+
+  struct _IO_FILE *_chain;
+
+  int _fileno;
+  int _flags2;
+  __off_t _old_offset;
+
+
+  unsigned short _cur_column;
+  signed char _vtable_offset;
+  char _shortbuf[1];
+
+  _IO_lock_t *_lock;
+
+
+
+
+
+
+
+  __off64_t _offset;
+
+  struct _IO_codecvt *_codecvt;
+  struct _IO_wide_data *_wide_data;
+  struct _IO_FILE *_freeres_list;
+  void *_freeres_buf;
+  size_t __pad5;
+  int _mode;
+
+  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+};
+# 45 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 3 4
+typedef __ssize_t cookie_read_function_t (void *__cookie, char *__buf,
+                                          size_t __nbytes);
+
+
+
+
+
+
+
+typedef __ssize_t cookie_write_function_t (void *__cookie, const char *__buf,
+                                           size_t __nbytes);
+
+
+
+
+
+
+
+typedef int cookie_seek_function_t (void *__cookie, __off64_t *__pos, int __w);
+
+
+typedef int cookie_close_function_t (void *__cookie);
+
+
+
+
+
+
+typedef struct _IO_cookie_io_functions_t
+{
+  cookie_read_function_t *read;
+  cookie_write_function_t *write;
+  cookie_seek_function_t *seek;
+  cookie_close_function_t *close;
+} cookie_io_functions_t;
+# 48 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+
+typedef __gnuc_va_list va_list;
+# 64 "/usr/include/stdio.h" 3 4
+typedef __off_t off_t;
+# 78 "/usr/include/stdio.h" 3 4
+typedef __ssize_t ssize_t;
+
+
+
+
+
+
+typedef __fpos_t fpos_t;
+# 129 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
+# 130 "/usr/include/stdio.h" 2 3 4
+# 149 "/usr/include/stdio.h" 3 4
+extern FILE *stdin;
+extern FILE *stdout;
+extern FILE *stderr;
+
+
+
+
+
+
+extern int remove (const char *__filename) __attribute__ ((__nothrow__ ));
+
+extern int rename (const char *__old, const char *__new) __attribute__ ((__nothrow__ ));
+
+
+
+extern int renameat (int __oldfd, const char *__old, int __newfd,
+       const char *__new) __attribute__ ((__nothrow__ ));
+# 184 "/usr/include/stdio.h" 3 4
+extern int fclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 194 "/usr/include/stdio.h" 3 4
+extern FILE *tmpfile (void)
+  __attribute__ ((__malloc__)) ;
+# 211 "/usr/include/stdio.h" 3 4
+extern char *tmpnam (char[20]) __attribute__ ((__nothrow__ )) ;
+
+
+
+
+extern char *tmpnam_r (char __s[20]) __attribute__ ((__nothrow__ )) ;
+# 228 "/usr/include/stdio.h" 3 4
+extern char *tempnam (const char *__dir, const char *__pfx)
+   __attribute__ ((__nothrow__ )) __attribute__ ((__malloc__)) ;
+
+
+
+
+
+
+extern int fflush (FILE *__stream);
+# 245 "/usr/include/stdio.h" 3 4
+extern int fflush_unlocked (FILE *__stream);
+# 264 "/usr/include/stdio.h" 3 4
+extern FILE *fopen (const char *__restrict __filename,
+      const char *__restrict __modes)
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+extern FILE *freopen (const char *__restrict __filename,
+        const char *__restrict __modes,
+        FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
+# 299 "/usr/include/stdio.h" 3 4
+extern FILE *fdopen (int __fd, const char *__modes) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+
+extern FILE *fopencookie (void *__restrict __magic_cookie,
+     const char *__restrict __modes,
+     cookie_io_functions_t __io_funcs) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+  __attribute__ ((__nothrow__ )) __attribute__ ((__malloc__)) ;
+
+
+
+
+extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__malloc__)) ;
+# 334 "/usr/include/stdio.h" 3 4
+extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
+      int __modes, size_t __n) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern void setbuffer (FILE *__restrict __stream, char *__restrict __buf,
+         size_t __size) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+extern void setlinebuf (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+extern int fprintf (FILE *__restrict __stream,
+      const char *__restrict __format, ...) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int printf (const char *__restrict __format, ...);
+
+extern int sprintf (char *__restrict __s,
+      const char *__restrict __format, ...) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int vprintf (const char *__restrict __format, __gnuc_va_list __arg);
+
+extern int vsprintf (char *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg) __attribute__ ((__nothrow__));
+
+
+
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+       const char *__restrict __format, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 4)));
+
+extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+        const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 0)));
+
+
+
+
+
+extern int vasprintf (char **__restrict __ptr, const char *__restrict __f,
+        __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 2, 0))) ;
+extern int __asprintf (char **__restrict __ptr,
+         const char *__restrict __fmt, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 2, 3))) ;
+extern int asprintf (char **__restrict __ptr,
+       const char *__restrict __fmt, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 2, 3))) ;
+
+
+
+
+extern int vdprintf (int __fd, const char *__restrict __fmt,
+       __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__printf__, 2, 0)));
+extern int dprintf (int __fd, const char *__restrict __fmt, ...)
+     __attribute__ ((__format__ (__printf__, 2, 3)));
+
+
+
+
+
+
+
+extern int fscanf (FILE *__restrict __stream,
+     const char *__restrict __format, ...) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int scanf (const char *__restrict __format, ...) ;
+
+extern int sscanf (const char *__restrict __s,
+     const char *__restrict __format, ...) __attribute__ ((__nothrow__ ));
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
+# 119 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
+# 214 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef float _Float32;
+# 251 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float64;
+# 268 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float32x;
+# 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef long double _Float64x;
+# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 438 "/usr/include/stdio.h" 2 3 4
+# 463 "/usr/include/stdio.h" 3 4
+extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc99_fscanf") __attribute__ ((__nonnull__ (1)));
+
+
+extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc99_scanf") ;
+
+extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) __asm__ ("" "__isoc99_sscanf") __attribute__ ((__nothrow__ ));
+# 490 "/usr/include/stdio.h" 3 4
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
+      __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+
+
+extern int vsscanf (const char *__restrict __s,
+      const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__ )) __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 540 "/usr/include/stdio.h" 3 4
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfscanf")
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
+
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vsscanf") __attribute__ ((__nothrow__ ))
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 575 "/usr/include/stdio.h" 3 4
+extern int fgetc (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern int getc (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern int getchar (void);
+
+
+
+
+
+
+extern int getc_unlocked (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern int getchar_unlocked (void);
+# 600 "/usr/include/stdio.h" 3 4
+extern int fgetc_unlocked (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 611 "/usr/include/stdio.h" 3 4
+extern int fputc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+extern int putc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+extern int putchar (int __c);
+# 627 "/usr/include/stdio.h" 3 4
+extern int fputc_unlocked (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+
+
+extern int putc_unlocked (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+extern int putchar_unlocked (int __c);
+
+
+
+
+
+
+extern int getw (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+extern int putw (int __w, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+
+
+extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
+                                                          __attribute__ ((__nonnull__ (3)));
+# 667 "/usr/include/stdio.h" 3 4
+extern char *gets (char *__s) __attribute__ ((__deprecated__));
+# 694 "/usr/include/stdio.h" 3 4
+extern __ssize_t __getdelim (char **__restrict __lineptr,
+                             size_t *__restrict __n, int __delimiter,
+                             FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
+extern __ssize_t getdelim (char **__restrict __lineptr,
+                           size_t *__restrict __n, int __delimiter,
+                           FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
+
+
+
+
+
+
+
+extern __ssize_t getline (char **__restrict __lineptr,
+                          size_t *__restrict __n,
+                          FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
+
+
+
+
+
+
+
+extern int fputs (const char *__restrict __s, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+extern int puts (const char *__s);
+
+
+
+
+
+
+extern int ungetc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+
+extern size_t fread (void *__restrict __ptr, size_t __size,
+       size_t __n, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (4)));
+
+
+
+
+extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+        size_t __n, FILE *__restrict __s) __attribute__ ((__nonnull__ (4)));
+# 766 "/usr/include/stdio.h" 3 4
+extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+         size_t __n, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (4)));
+extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+          size_t __n, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (4)));
+
+
+
+
+
+
+
+extern int fseek (FILE *__stream, long int __off, int __whence)
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern long int ftell (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern void rewind (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 803 "/usr/include/stdio.h" 3 4
+extern int fseeko (FILE *__stream, __off_t __off, int __whence)
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern __off_t ftello (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 829 "/usr/include/stdio.h" 3 4
+extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos)
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int fsetpos (FILE *__stream, const fpos_t *__pos) __attribute__ ((__nonnull__ (1)));
+# 860 "/usr/include/stdio.h" 3 4
+extern void clearerr (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+extern int feof (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+extern int ferror (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern void clearerr_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+extern int feof_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+extern int ferror_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+extern void perror (const char *__s) __attribute__ ((__cold__));
+
+
+
+
+extern int fileno (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int fileno_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+# 897 "/usr/include/stdio.h" 3 4
+extern int pclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern FILE *popen (const char *__command, const char *__modes)
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+
+
+extern char *ctermid (char *__s) __attribute__ ((__nothrow__ ))
+                                     ;
+# 941 "/usr/include/stdio.h" 3 4
+extern void flockfile (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int ftrylockfile (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+# 959 "/usr/include/stdio.h" 3 4
+extern int __uflow (FILE *);
+extern int __overflow (FILE *, int);
+# 12 "src/sike.c" 2
 
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk)
 {
@@ -1044,85 +1694,121 @@ int crypto_kem_keypair(unsigned char *pk, unsigned char *sk)
 
 
 
-    randombytes(sk, 24);
-    random_mod_order_B(sk + 24);
+  randombytes(sk, 24);
+  random_mod_order_B(sk + 24);
 
 
-    EphemeralKeyGeneration_B(sk + 24, pk);
+  EphemeralKeyGeneration_B(sk + 24, pk);
 
 
-    memcpy(&sk[24 + (253 + 7) / 8], pk, 378);
+  memcpy(&sk[24 + (253 + 7) / 8], pk, 378);
 
-    return 0;
+  return 0;
 }
-
 
 int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk)
 {
 
 
 
-    const uint16_t G = 0;
-    const uint16_t H = 1;
-    const uint16_t P = 2;
-    unsigned char ephemeralsk[(250 + 7) / 8];
-    unsigned char jinvariant[2 * ((503 + 7) / 8)];
-    unsigned char h[24];
-    unsigned char temp[402 +24];
-    unsigned int i;
+  const uint16_t G = 0;
+  const uint16_t H = 1;
+  const uint16_t P = 2;
+  unsigned char ephemeralsk[(250 + 7) / 8];
+  unsigned char jinvariant[2 * ((503 + 7) / 8)];
+  unsigned char h[24];
+  unsigned char temp[402 + 24];
+  unsigned int i;
+
+  printf("DEBUG: Starting crypto_kem_enc\n");
 
 
-    randombytes(temp, 24);
-    memcpy(&temp[24], pk, 378);
-    cshake256_simple(ephemeralsk, (250 + 7) / 8, G, temp, 378 +24);
-    ephemeralsk[(250 + 7) / 8 - 1] &= 0x03;
+  randombytes(temp, 24);
+  memcpy(&temp[24], pk, 378);
+  printf("DEBUG: Generated random bytes for temp (first 16 bytes): ");
+  VITIS_LOOP_51_1: for (i = 0; i < 16; i++)
+    printf("%02x ", temp[i]);
+  printf("\n");
+
+  cshake256_simple(ephemeralsk, (250 + 7) / 8, G, temp, 378 + 24);
+  ephemeralsk[(250 + 7) / 8 - 1] &= 0x03;
+  printf("DEBUG: Generated ephemeralsk (first 16 bytes): ");
+  VITIS_LOOP_58_2: for (i = 0; i < 16; i++)
+    printf("%02x ", ephemeralsk[i]);
+  printf("\n");
 
 
-    EphemeralKeyGeneration_A(ephemeralsk, ct);
-    EphemeralSecretAgreement_A(ephemeralsk, pk, jinvariant);
-    cshake256_simple(h, 24, P, jinvariant, 2 * ((503 + 7) / 8));
-    VITIS_LOOP_56_1: for (i = 0; i < 24; i++) ct[i + 378] = temp[i] ^ h[i];
+  EphemeralKeyGeneration_A(ephemeralsk, ct);
+  printf("DEBUG: Generated ephemeral key (first 16 bytes): ");
+  VITIS_LOOP_65_3: for (i = 0; i < 16; i++)
+    printf("%02x ", ct[i]);
+  printf("\n");
+
+  EphemeralSecretAgreement_A(ephemeralsk, pk, jinvariant);
+  printf("DEBUG: Generated j-invariant (first 16 bytes): ");
+  VITIS_LOOP_71_4: for (i = 0; i < 16; i++)
+    printf("%02x ", jinvariant[i]);
+  printf("\n");
+
+  cshake256_simple(h, 24, P, jinvariant, 2 * ((503 + 7) / 8));
+  printf("DEBUG: Generated h (first 16 bytes): ");
+  VITIS_LOOP_77_5: for (i = 0; i < 16; i++)
+    printf("%02x ", h[i]);
+  printf("\n");
+
+  VITIS_LOOP_81_6: for (i = 0; i < 24; i++)
+    ct[i + 378] = temp[i] ^ h[i];
+  printf("DEBUG: Generated ciphertext (first 16 bytes): ");
+  VITIS_LOOP_84_7: for (i = 0; i < 16; i++)
+    printf("%02x ", ct[i]);
+  printf("\n");
 
 
-    memcpy(&temp[24], ct, 402);
-    cshake256_simple(ss, 16, H, temp, 402 +24);
+  memcpy(&temp[24], ct, 402);
+  cshake256_simple(ss, 16, H, temp, 402 + 24);
+  printf("DEBUG: Generated shared secret (first 16 bytes): ");
+  VITIS_LOOP_92_8: for (i = 0; i < 16; i++)
+    printf("%02x ", ss[i]);
+  printf("\n");
 
-    return 0;
+  printf("DEBUG: Finished crypto_kem_enc\n");
+  return 0;
 }
-
 
 int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned char *sk)
 {
 
 
 
-    const uint16_t G = 0;
-    const uint16_t H = 1;
-    const uint16_t P = 2;
-    unsigned char ephemeralsk_[(250 + 7) / 8];
-    unsigned char jinvariant_[2 * ((503 + 7) / 8)];
-    unsigned char h_[24];
-    unsigned char c0_[378];
-    unsigned char temp[402 +24];
-    unsigned int i;
+  const uint16_t G = 0;
+  const uint16_t H = 1;
+  const uint16_t P = 2;
+  unsigned char ephemeralsk_[(250 + 7) / 8];
+  unsigned char jinvariant_[2 * ((503 + 7) / 8)];
+  unsigned char h_[24];
+  unsigned char c0_[378];
+  unsigned char temp[402 + 24];
+  unsigned int i;
 
 
-    EphemeralSecretAgreement_B(sk + 24, ct, jinvariant_);
-    cshake256_simple(h_, 24, P, jinvariant_, 2 * ((503 + 7) / 8));
-    VITIS_LOOP_84_1: for (i = 0; i < 24; i++) temp[i] = ct[i + 378] ^ h_[i];
+  EphemeralSecretAgreement_B(sk + 24, ct, jinvariant_);
+  cshake256_simple(h_, 24, P, jinvariant_, 2 * ((503 + 7) / 8));
+  VITIS_LOOP_118_1: for (i = 0; i < 24; i++)
+    temp[i] = ct[i + 378] ^ h_[i];
 
 
-    memcpy(&temp[24], &sk[24 + (253 + 7) / 8], 378);
-    cshake256_simple(ephemeralsk_, (250 + 7) / 8, G, temp, 378 +24);
-    ephemeralsk_[(250 + 7) / 8 - 1] &= 0x03;
+  memcpy(&temp[24], &sk[24 + (253 + 7) / 8], 378);
+  cshake256_simple(ephemeralsk_, (250 + 7) / 8, G, temp, 378 + 24);
+  ephemeralsk_[(250 + 7) / 8 - 1] &= 0x03;
 
 
-    EphemeralKeyGeneration_A(ephemeralsk_, c0_);
-    if (memcmp(c0_, ct, 378) != 0) {
-        memcpy(temp, sk, 24);
-    }
-    memcpy(&temp[24], ct, 402);
-    cshake256_simple(ss, 16, H, temp, 402 +24);
+  EphemeralKeyGeneration_A(ephemeralsk_, c0_);
+  if (memcmp(c0_, ct, 378) != 0)
+  {
+    memcpy(temp, sk, 24);
+  }
+  memcpy(&temp[24], ct, 402);
+  cshake256_simple(ss, 16, H, temp, 402 + 24);
 
-    return 0;
+  return 0;
 }

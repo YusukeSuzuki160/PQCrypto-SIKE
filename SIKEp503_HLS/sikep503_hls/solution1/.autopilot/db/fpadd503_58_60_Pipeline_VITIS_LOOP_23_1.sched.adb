@@ -505,7 +505,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>74</item>
-					<item>188</item>
+					<item>189</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -866,7 +866,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>zext_ln24</name>
+						<name>zext_ln24_11</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -901,7 +901,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1038,7 +1038,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln24_15</name>
+						<name>zext_ln24_12</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1073,7 +1073,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1322,7 +1322,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>zext_ln24_16</name>
+						<name>zext_ln24</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1594,7 +1594,7 @@
 					<item_version>0</item_version>
 					<item>117</item>
 					<item>118</item>
-					<item>187</item>
+					<item>188</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1708,7 +1708,7 @@
 					<item_version>0</item_version>
 					<item>156</item>
 					<item>157</item>
-					<item>186</item>
+					<item>187</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -2352,7 +2352,7 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>tmp_208</name>
+						<name>tmp_187</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>23</lineNumber>
@@ -2452,8 +2452,8 @@
 					<item_version>0</item_version>
 					<item>114</item>
 					<item>115</item>
-					<item>189</item>
 					<item>190</item>
+					<item>191</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -2870,7 +2870,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -3676,91 +3676,91 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_142">
-				<id>178</id>
+				<id>179</id>
 				<edge_type>2</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>16</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_143">
-				<id>179</id>
+				<id>180</id>
 				<edge_type>2</edge_type>
 				<source_obj>16</source_obj>
 				<sink_obj>57</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_144">
-				<id>180</id>
+				<id>181</id>
 				<edge_type>2</edge_type>
 				<source_obj>16</source_obj>
 				<sink_obj>35</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_145">
-				<id>181</id>
+				<id>182</id>
 				<edge_type>2</edge_type>
 				<source_obj>35</source_obj>
 				<sink_obj>41</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_146">
-				<id>182</id>
+				<id>183</id>
 				<edge_type>2</edge_type>
 				<source_obj>35</source_obj>
 				<sink_obj>38</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_147">
-				<id>183</id>
+				<id>184</id>
 				<edge_type>2</edge_type>
 				<source_obj>38</source_obj>
 				<sink_obj>55</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_148">
-				<id>184</id>
+				<id>185</id>
 				<edge_type>2</edge_type>
 				<source_obj>41</source_obj>
 				<sink_obj>55</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_149">
-				<id>185</id>
+				<id>186</id>
 				<edge_type>2</edge_type>
 				<source_obj>55</source_obj>
 				<sink_obj>16</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_150">
-				<id>186</id>
+				<id>187</id>
 				<edge_type>4</edge_type>
 				<source_obj>29</source_obj>
 				<sink_obj>39</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_151">
-				<id>187</id>
+				<id>188</id>
 				<edge_type>4</edge_type>
 				<source_obj>28</source_obj>
 				<sink_obj>36</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_152">
-				<id>188</id>
+				<id>189</id>
 				<edge_type>4</edge_type>
 				<source_obj>8</source_obj>
 				<sink_obj>12</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_153">
-				<id>189</id>
+				<id>190</id>
 				<edge_type>4</edge_type>
 				<source_obj>8</source_obj>
 				<sink_obj>53</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_154">
-				<id>190</id>
+				<id>191</id>
 				<edge_type>4</edge_type>
 				<source_obj>12</source_obj>
 				<sink_obj>53</sink_obj>

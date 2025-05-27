@@ -1,6 +1,39 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
     <sourceFile name="">
         <directive functionName="sikep503_kem_enc_hw" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_ctrl_hs" value="" positionalBoolean="mode"/>
+                <option name="port" positionalBoolean="4" value="return"/>
+            </pragma>
+        </directive>
+        <directive functionName="sikep503_kem_enc_hw" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" positionalBoolean="4" value="return"/>
+            </pragma>
+        </directive>
+        <directive functionName="sikep503_kem_enc_hw" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="m_axi" value="" positionalBoolean="mode"/>
+                <option name="depth" value="402"/>
+                <option name="port" positionalBoolean="4" value="ct"/>
+            </pragma>
+        </directive>
+        <directive functionName="sikep503_kem_enc_hw" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="m_axi" value="" positionalBoolean="mode"/>
+                <option name="depth" value="378"/>
+                <option name="port" positionalBoolean="4" value="pk"/>
+            </pragma>
+        </directive>
+        <directive functionName="sikep503_kem_enc_hw" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="m_axi" value="" positionalBoolean="mode"/>
+                <option name="depth" value="16"/>
+                <option name="port" positionalBoolean="4" value="ss"/>
+            </pragma>
+        </directive>
+        <directive functionName="sikep503_kem_enc_hw" label="" functionLabel="">
             <pragma name="TOP">
                 <option name="name" value="sikep503_kem_enc_hw"/>
             </pragma>

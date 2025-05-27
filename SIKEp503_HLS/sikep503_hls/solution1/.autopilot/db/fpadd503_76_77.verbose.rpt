@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_76_77'
 ================================================================
-* Date:           Tue May 20 14:37:52 2025
+* Date:           Tue May 20 16:20:59 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -199,7 +199,7 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%carry_loc = alloca i32 1"   --->   Operation 7 'alloca' 'carry_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%carry_loc = alloca i64 1"   --->   Operation 7 'alloca' 'carry_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.76.77_Pipeline_VITIS_LOOP_23_1, i64 %c_0, i64 %c_1, i64 %Montgomery_one_1"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>

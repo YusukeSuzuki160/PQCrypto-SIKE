@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_9_Pipeline_VITIS_LOOP_23_1'" level="0">
-<item name = "Date">Tue May 20 14:37:34 2025
+<item name = "Date">Tue May 27 14:19:34 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -53,7 +53,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 68, -</column>
-<column name="Register">-, -, 206, -, -</column>
+<column name="Register">-, -, 207, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
 </table>
@@ -78,19 +78,19 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln23_fu_113_p2">+, 0, 0, 13, 4, 1</column>
-<column name="add_ln24_fu_160_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_fu_154_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln24_fu_204_p2">and, 0, 0, 64, 64, 64</column>
+<column name="add_ln23_fu_115_p2">+, 0, 0, 13, 4, 1</column>
+<column name="add_ln24_fu_162_p2">+, 0, 0, 71, 64, 64</column>
+<column name="tempReg_fu_156_p2">+, 0, 0, 71, 64, 64</column>
+<column name="and_ln24_fu_206_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_270">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln23_fu_107_p2">icmp, 0, 0, 13, 4, 5</column>
-<column name="or_ln24_1_fu_215_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln24_fu_174_p2">or, 0, 0, 64, 64, 64</column>
+<column name="icmp_ln23_fu_109_p2">icmp, 0, 0, 13, 4, 5</column>
+<column name="or_ln24_1_fu_217_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln24_fu_176_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln24_1_fu_170_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln24_3_fu_209_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln24_4_fu_187_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln24_fu_165_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_1_fu_172_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_3_fu_211_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_4_fu_189_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln24_fu_167_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -100,23 +100,23 @@
 <column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i_209">9, 2, 4, 8</column>
-<column name="carry_reg_88">9, 2, 1, 2</column>
-<column name="i_fu_46">9, 2, 4, 8</column>
+<column name="carry_reg_90">9, 2, 1, 2</column>
+<column name="i_fu_48">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="PKB_load_5_reg_269">64, 0, 64, 0</column>
-<column name="PKB_load_reg_255">64, 0, 64, 0</column>
+<column name="PKB_load_5_reg_271">64, 0, 64, 0</column>
+<column name="PKB_load_reg_257">64, 0, 64, 0</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="carry_reg_88">1, 0, 1, 0</column>
-<column name="i_fu_46">4, 0, 4, 0</column>
-<column name="icmp_ln23_reg_236">1, 0, 1, 0</column>
-<column name="tempReg_reg_260">64, 0, 64, 0</column>
-<column name="zext_ln24_reg_240">3, 0, 32, 29</column>
+<column name="carry_reg_90">1, 0, 1, 0</column>
+<column name="i_fu_48">4, 0, 4, 0</column>
+<column name="icmp_ln23_reg_238">1, 0, 1, 0</column>
+<column name="tempReg_reg_262">64, 0, 64, 0</column>
+<column name="zext_ln23_reg_242">4, 0, 64, 60</column>
 </table>
 </item>
 </section>

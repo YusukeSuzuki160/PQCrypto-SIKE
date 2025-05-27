@@ -22,6 +22,7 @@ dict set ap_memory_interface_dict t2 { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM
 set C_modelArgList {
 	{ c_offset int 3 regular  }
 	{ c int 64 regular {array 112 { 1 1 } 1 1 }  }
+	{ zext_ln352_8 int 7 regular  }
 	{ t2 int 64 regular {array 8 { 0 3 } 0 1 }  }
 	{ borrow_out int 1 regular {pointer 1}  }
 }
@@ -31,10 +32,11 @@ set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "c_offset", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "c", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "zext_ln352_8", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
  	{ "Name" : "t2", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
  	{ "Name" : "borrow_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 19
+set portNum 20
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -49,12 +51,13 @@ set portList {
 	{ c_address1 sc_out sc_lv 7 signal 1 } 
 	{ c_ce1 sc_out sc_logic 1 signal 1 } 
 	{ c_q1 sc_in sc_lv 64 signal 1 } 
-	{ t2_address0 sc_out sc_lv 3 signal 2 } 
-	{ t2_ce0 sc_out sc_logic 1 signal 2 } 
-	{ t2_we0 sc_out sc_logic 1 signal 2 } 
-	{ t2_d0 sc_out sc_lv 64 signal 2 } 
-	{ borrow_out sc_out sc_lv 1 signal 3 } 
-	{ borrow_out_ap_vld sc_out sc_logic 1 outvld 3 } 
+	{ zext_ln352_8 sc_in sc_lv 7 signal 2 } 
+	{ t2_address0 sc_out sc_lv 3 signal 3 } 
+	{ t2_ce0 sc_out sc_logic 1 signal 3 } 
+	{ t2_we0 sc_out sc_logic 1 signal 3 } 
+	{ t2_d0 sc_out sc_lv 64 signal 3 } 
+	{ borrow_out sc_out sc_lv 1 signal 4 } 
+	{ borrow_out_ap_vld sc_out sc_logic 1 outvld 4 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -70,6 +73,7 @@ set NewPortList {[
  	{ "name": "c_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "c", "role": "address1" }} , 
  	{ "name": "c_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "ce1" }} , 
  	{ "name": "c_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "q1" }} , 
+ 	{ "name": "zext_ln352_8", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "zext_ln352_8", "role": "default" }} , 
  	{ "name": "t2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "t2", "role": "address0" }} , 
  	{ "name": "t2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t2", "role": "ce0" }} , 
  	{ "name": "t2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t2", "role": "we0" }} , 
@@ -95,6 +99,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "c_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "c", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "zext_ln352_8", "Type" : "None", "Direction" : "I"},
 			{"Name" : "t2", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "borrow_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
@@ -107,6 +112,7 @@ set ArgLastReadFirstWriteLatency {
 	fp2sqr503_mont_136_1_Pipeline_VITIS_LOOP_47_1 {
 		c_offset {Type I LastRead 0 FirstWrite -1}
 		c {Type I LastRead 1 FirstWrite -1}
+		zext_ln352_8 {Type I LastRead 0 FirstWrite -1}
 		t2 {Type O LastRead -1 FirstWrite 2}
 		borrow_out {Type O LastRead -1 FirstWrite 1}}}
 
@@ -124,6 +130,7 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	c_offset { ap_none {  { c_offset in_data 0 3 } } }
 	c { ap_memory {  { c_address0 mem_address 1 7 }  { c_ce0 mem_ce 1 1 }  { c_q0 mem_dout 0 64 }  { c_address1 MemPortADDR2 1 7 }  { c_ce1 MemPortCE2 1 1 }  { c_q1 MemPortDOUT2 0 64 } } }
+	zext_ln352_8 { ap_none {  { zext_ln352_8 in_data 0 7 } } }
 	t2 { ap_memory {  { t2_address0 mem_address 1 3 }  { t2_ce0 mem_ce 1 1 }  { t2_we0 mem_we 1 1 }  { t2_d0 mem_din 1 64 } } }
 	borrow_out { ap_vld {  { borrow_out out_data 1 1 }  { borrow_out_ap_vld out_vld 1 1 } } }
 }

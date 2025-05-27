@@ -418,7 +418,7 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
     return (unsigned int)((x ^ ((x ^ y) | ((x - y) ^ y))) >> (64 -1));
 }
 # 11 "src/api.h" 2
-# 27 "src/api.h"
+# 31 "src/api.h"
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk);
 
 
@@ -432,37 +432,37 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
 
 int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned char *sk);
-# 66 "src/api.h"
-void random_mod_order_A(unsigned char* random_digits);
+# 68 "src/api.h"
+void random_mod_order_A(unsigned char *random_digits);
 
 
 
-void random_mod_order_B(unsigned char* random_digits);
-
-
-
-
-int EphemeralKeyGeneration_A(const unsigned char* PrivateKeyA, unsigned char* PublicKeyA);
+void random_mod_order_B(unsigned char *random_digits);
 
 
 
 
-
-int EphemeralKeyGeneration_B(const unsigned char* PrivateKeyB, unsigned char* PublicKeyB);
+int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA);
 
 
 
 
 
-
-int EphemeralSecretAgreement_A(const unsigned char* PrivateKeyA, const unsigned char* PublicKeyB, unsigned char* SharedSecretA);
+int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *PublicKeyB);
 
 
 
 
 
 
-int EphemeralSecretAgreement_B(const unsigned char* PrivateKeyB, const unsigned char* PublicKeyA, unsigned char* SharedSecretB);
+int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned char *PublicKeyB, unsigned char *SharedSecretA);
+
+
+
+
+
+
+int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned char *PublicKeyA, unsigned char *SharedSecretB);
 # 11 "src/P503_internal.h" 2
 # 62 "src/P503_internal.h"
 typedef digit_t felm_t[8];
@@ -714,7 +714,8 @@ void xDBLe(const point_proj_t P, point_proj_t Q, const f2elm_t A24plus, const f2
 
   copy_words((digit_t *)P, (digit_t *)Q, 2 * 2 * 8);
 
-  VITIS_LOOP_35_1: for (i = 0; i < e; i++)
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ VITIS_LOOP_36_1: for (i = 0; i < e; i++)
   {
     xDBL(Q, Q, A24plus, C24);
   }
@@ -798,7 +799,8 @@ void xTPLe(const point_proj_t P, point_proj_t Q, const f2elm_t A24minus, const f
 
   copy_words((digit_t *)P, (digit_t *)Q, 2 * 2 * 8);
 
-  VITIS_LOOP_119_1: for (i = 0; i < e; i++)
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ VITIS_LOOP_121_1: for (i = 0; i < e; i++)
   {
     xTPL(Q, Q, A24minus, A24plus);
   }
@@ -946,7 +948,7 @@ void swap_points(point_proj_t P, point_proj_t Q, const digit_t option)
   digit_t temp;
   unsigned int i;
 
-  VITIS_LOOP_267_1: for (i = 0; i < 8; i++)
+  VITIS_LOOP_269_1: for (i = 0; i < 8; i++)
   {
     temp = option & (P->X[0][i] ^ Q->X[0][i]);
     P->X[0][i] = temp ^ P->X[0][i];
@@ -996,9 +998,10 @@ void LADDER3PT(const f2elm_t xP, const f2elm_t xQ, const f2elm_t xPQ, const digi
   fpzero503((digit_t *)(R->Z)[1]);
 
 
-  VITIS_LOOP_317_1: for (i = 0; i < nbits; i++)
+  VITIS_LOOP_319_1: for (i = 0; i < nbits; i++)
   {
-    bit = (m[i >> 6] >> (i & (64 - 1))) & 1;
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ bit = (m[i >> 6] >> (i & (64 - 1))) & 1;
     swap = bit ^ prevbit;
     prevbit = bit;
     mask = 0 - (digit_t)swap;

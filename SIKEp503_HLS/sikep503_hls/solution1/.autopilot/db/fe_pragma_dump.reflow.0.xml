@@ -1,12 +1,22 @@
 <pragmas>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="26" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="gmem0" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="27" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="gmem1" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="28" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="gmem2" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="29" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="ct" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="30" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="pk" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="31" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="ss" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="32" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="33" pragmaType="array_partition" parentfunction="sikep503_kem_enc_hw" dim="1" factor="0" mode="complete" dynamic="0" variable="ct"/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="34" pragmaType="array_partition" parentfunction="sikep503_kem_enc_hw" dim="1" factor="0" mode="complete" dynamic="0" variable="pk"/>
-<pragma file="src/sikep503_kem_enc_tb.cpp" line="35" pragmaType="array_partition" parentfunction="sikep503_kem_enc_hw" dim="1" factor="0" mode="complete" dynamic="0" variable="ss"/>
+<pragma file="src/fpx.c" line="351" pragmaType="loop_tripcount" parentfunction="mp_add" min="1" max="503" avg="252"/>
+<pragma file="src/sidh.c" line="118" pragmaType="loop_tripcount" parentfunction="EphemeralKeyGeneration_A" min="0" max="125" avg="62"/>
+<pragma file="src/sidh.c" line="132" pragmaType="loop_tripcount" parentfunction="EphemeralKeyGeneration_A" min="1" max="503" avg="252"/>
+<pragma file="src/sidh.c" line="286" pragmaType="loop_tripcount" parentfunction="EphemeralSecretAgreement_A" min="0" max="125" avg="62"/>
+<pragma file="src/sidh.c" line="300" pragmaType="loop_tripcount" parentfunction="EphemeralSecretAgreement_A" min="1" max="503" avg="252"/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="54" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="55" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="56" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="" offset="" name="" depth="402" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="57" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="" offset="" name="" depth="378" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="58" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="" offset="" name="" depth="16" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/fpx.c" line="393" pragmaType="loop_tripcount" parentfunction="mp_shiftr1" min="1" max="503" avg="252"/>
+<pragma file="src/generic/fp_generic.c" line="158" pragmaType="loop_tripcount" parentfunction="mp_mul" min="1" max="503" avg="252"/>
+<pragma file="src/generic/fp_generic.c" line="144" pragmaType="loop_tripcount" parentfunction="mp_mul" min="1" max="503" avg="252"/>
+<pragma file="src/ec_isogeny.c" line="321" pragmaType="loop_tripcount" parentfunction="LADDER3PT" min="1" max="503" avg="252"/>
+<pragma file="src/random/random.c" line="28" pragmaType="loop_tripcount" parentfunction="randombytes" min="1" max="503" avg="252"/>
+<pragma file="src/fpx.c" line="171" pragmaType="loop_tripcount" parentfunction="mp_sub" min="1" max="503" avg="252"/>
+<pragma file="src/sha3/fips202.c" line="651" pragmaType="loop_tripcount" parentfunction="cshake256_simple" min="1" max="503" avg="252"/>
+<pragma file="src/sha3/fips202.c" line="416" pragmaType="loop_tripcount" parentfunction="keccak_squeezeblocks" min="1" max="503" avg="252"/>
+<pragma file="src/sha3/fips202.c" line="420" pragmaType="loop_tripcount" parentfunction="keccak_squeezeblocks" min="1" max="503" avg="252"/>
+<pragma file="src/fpx.c" line="53" pragmaType="loop_tripcount" parentfunction="copy_words" min="1" max="503" avg="252"/>
 </pragmas>

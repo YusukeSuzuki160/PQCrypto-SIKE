@@ -88,61 +88,61 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal empty_fu_119_p1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal empty_reg_142 : STD_LOGIC_VECTOR (8 downto 0);
+    signal empty_fu_125_p1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal empty_reg_148 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_done : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_idle : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_ready : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_we0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_75_ap_start : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_75_ap_done : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_75_ap_idle : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_75_ap_ready : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_ce0 : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_we0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_address1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_ce1 : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_we1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_75_s_i_d1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_done : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_idle : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_ready : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_we0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start_reg : STD_LOGIC := '0';
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_done : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_idle : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_ready : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_we0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_81_ap_start : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_81_ap_done : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_81_ap_idle : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_81_ap_ready : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_ce0 : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_we0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_ce1 : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_we1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_81_s_i_d1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_done : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_idle : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_ready : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_we0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal s_we0_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_75_ap_start_reg : STD_LOGIC := '0';
+    signal grp_KeccakF1600_StatePermute_fu_81_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
     signal ap_CS_fsm_state8 : STD_LOGIC;
@@ -151,17 +151,17 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal ap_CS_fsm_state9 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
-    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start_reg : STD_LOGIC := '0';
+    signal grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state7 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal idx_fu_46 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
-    signal add_ln349_fu_124_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal idx_fu_52 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
+    signal add_ln348_fu_130_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal s_ce0_local : STD_LOGIC;
     signal s_we0_local : STD_LOGIC_VECTOR (7 downto 0);
-    signal zext_ln540_fu_111_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal or_ln_fu_103_p3 : STD_LOGIC_VECTOR (48 downto 0);
+    signal zext_ln554_fu_117_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal or_ln_fu_109_p3 : STD_LOGIC_VECTOR (48 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
@@ -174,7 +174,7 @@ attribute shreg_extract : string;
     signal ap_ST_fsm_state9_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component sikep503_kem_enc_hw_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1 IS
+    component sikep503_kem_enc_hw_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -255,77 +255,77 @@ attribute shreg_extract : string;
 
 
 begin
-    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69 : component sikep503_kem_enc_hw_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1
+    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75 : component sikep503_kem_enc_hw_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start,
-        ap_done => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_done,
-        ap_idle => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_idle,
-        ap_ready => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_ready,
-        s_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_address0,
-        s_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_ce0,
-        s_we0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_we0,
-        s_d0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_d0);
+        ap_start => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start,
+        ap_done => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_done,
+        ap_idle => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_idle,
+        ap_ready => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_ready,
+        s_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_address0,
+        s_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_ce0,
+        s_we0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_we0,
+        s_d0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_d0);
 
-    grp_KeccakF1600_StatePermute_fu_75 : component sikep503_kem_enc_hw_KeccakF1600_StatePermute
+    grp_KeccakF1600_StatePermute_fu_81 : component sikep503_kem_enc_hw_KeccakF1600_StatePermute
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_KeccakF1600_StatePermute_fu_75_ap_start,
-        ap_done => grp_KeccakF1600_StatePermute_fu_75_ap_done,
-        ap_idle => grp_KeccakF1600_StatePermute_fu_75_ap_idle,
-        ap_ready => grp_KeccakF1600_StatePermute_fu_75_ap_ready,
-        s_i_address0 => grp_KeccakF1600_StatePermute_fu_75_s_i_address0,
-        s_i_ce0 => grp_KeccakF1600_StatePermute_fu_75_s_i_ce0,
-        s_i_we0 => grp_KeccakF1600_StatePermute_fu_75_s_i_we0,
-        s_i_d0 => grp_KeccakF1600_StatePermute_fu_75_s_i_d0,
+        ap_start => grp_KeccakF1600_StatePermute_fu_81_ap_start,
+        ap_done => grp_KeccakF1600_StatePermute_fu_81_ap_done,
+        ap_idle => grp_KeccakF1600_StatePermute_fu_81_ap_idle,
+        ap_ready => grp_KeccakF1600_StatePermute_fu_81_ap_ready,
+        s_i_address0 => grp_KeccakF1600_StatePermute_fu_81_s_i_address0,
+        s_i_ce0 => grp_KeccakF1600_StatePermute_fu_81_s_i_ce0,
+        s_i_we0 => grp_KeccakF1600_StatePermute_fu_81_s_i_we0,
+        s_i_d0 => grp_KeccakF1600_StatePermute_fu_81_s_i_d0,
         s_i_q0 => s_q0,
-        s_i_address1 => grp_KeccakF1600_StatePermute_fu_75_s_i_address1,
-        s_i_ce1 => grp_KeccakF1600_StatePermute_fu_75_s_i_ce1,
-        s_i_we1 => grp_KeccakF1600_StatePermute_fu_75_s_i_we1,
-        s_i_d1 => grp_KeccakF1600_StatePermute_fu_75_s_i_d1,
+        s_i_address1 => grp_KeccakF1600_StatePermute_fu_81_s_i_address1,
+        s_i_ce1 => grp_KeccakF1600_StatePermute_fu_81_s_i_ce1,
+        s_i_we1 => grp_KeccakF1600_StatePermute_fu_81_s_i_we1,
+        s_i_d1 => grp_KeccakF1600_StatePermute_fu_81_s_i_d1,
         s_i_q1 => s_q1);
 
-    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83 : component sikep503_kem_enc_hw_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2
+    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89 : component sikep503_kem_enc_hw_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start,
-        ap_done => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_done,
-        ap_idle => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_idle,
-        ap_ready => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_ready,
-        idx => empty_reg_142,
-        in_0_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_address0,
-        in_0_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_ce0,
+        ap_start => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start,
+        ap_done => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_done,
+        ap_idle => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_idle,
+        ap_ready => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_ready,
+        idx => empty_reg_148,
+        in_0_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_address0,
+        in_0_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_ce0,
         in_0_q0 => in_0_q0,
-        in_0_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_address1,
-        in_0_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_ce1,
+        in_0_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_address1,
+        in_0_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_ce1,
         in_0_q1 => in_0_q1,
-        in_1_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_address0,
-        in_1_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_ce0,
+        in_1_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_address0,
+        in_1_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_ce0,
         in_1_q0 => in_1_q0,
-        in_1_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_address1,
-        in_1_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_ce1,
+        in_1_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_address1,
+        in_1_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_ce1,
         in_1_q1 => in_1_q1,
-        in_2_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_address0,
-        in_2_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_ce0,
+        in_2_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_address0,
+        in_2_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_ce0,
         in_2_q0 => in_2_q0,
-        in_2_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_address1,
-        in_2_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_ce1,
+        in_2_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_address1,
+        in_2_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_ce1,
         in_2_q1 => in_2_q1,
-        in_3_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_address0,
-        in_3_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_ce0,
+        in_3_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_address0,
+        in_3_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_ce0,
         in_3_q0 => in_3_q0,
-        in_3_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_address1,
-        in_3_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_ce1,
+        in_3_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_address1,
+        in_3_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_ce1,
         in_3_q1 => in_3_q1,
-        s_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address0,
-        s_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce0,
-        s_we0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_we0,
-        s_d0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_d0,
-        s_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address1,
-        s_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce1,
+        s_address0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address0,
+        s_ce0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce0,
+        s_we0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_we0,
+        s_d0 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_d0,
+        s_address1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address1,
+        s_ce1 => grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce1,
         s_q1 => s_q1);
 
 
@@ -344,61 +344,61 @@ begin
     end process;
 
 
-    grp_KeccakF1600_StatePermute_fu_75_ap_start_reg_assign_proc : process(ap_clk)
+    grp_KeccakF1600_StatePermute_fu_81_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_KeccakF1600_StatePermute_fu_75_ap_start_reg <= ap_const_logic_0;
+                grp_KeccakF1600_StatePermute_fu_81_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state8) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-                    grp_KeccakF1600_StatePermute_fu_75_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_KeccakF1600_StatePermute_fu_75_ap_ready = ap_const_logic_1)) then 
-                    grp_KeccakF1600_StatePermute_fu_75_ap_start_reg <= ap_const_logic_0;
+                    grp_KeccakF1600_StatePermute_fu_81_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_KeccakF1600_StatePermute_fu_81_ap_ready = ap_const_logic_1)) then 
+                    grp_KeccakF1600_StatePermute_fu_81_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start_reg_assign_proc : process(ap_clk)
+    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start_reg <= ap_const_logic_0;
+                grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_ready = ap_const_logic_1)) then 
-                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start_reg <= ap_const_logic_0;
+                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_ready = ap_const_logic_1)) then 
+                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start_reg_assign_proc : process(ap_clk)
+    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start_reg <= ap_const_logic_0;
+                grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
-                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_ready = ap_const_logic_1)) then 
-                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start_reg <= ap_const_logic_0;
+                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_ready = ap_const_logic_1)) then 
+                    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    idx_fu_46_assign_proc : process (ap_clk)
+    idx_fu_52_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
-                idx_fu_46 <= ap_const_lv64_0;
+                idx_fu_52 <= ap_const_lv64_0;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                idx_fu_46 <= add_ln349_fu_124_p2;
+                idx_fu_52 <= add_ln348_fu_130_p2;
             end if; 
         end if;
     end process;
@@ -406,12 +406,12 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then
-                empty_reg_142 <= empty_fu_119_p1;
+                empty_reg_148 <= empty_fu_125_p1;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_done, grp_KeccakF1600_StatePermute_fu_75_ap_done, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_done, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_done, grp_KeccakF1600_StatePermute_fu_81_ap_done, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_done, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -421,7 +421,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
@@ -431,7 +431,7 @@ begin
             when ap_ST_fsm_state4 => 
                 ap_NS_fsm <= ap_ST_fsm_state5;
             when ap_ST_fsm_state5 => 
-                if (((grp_KeccakF1600_StatePermute_fu_75_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+                if (((grp_KeccakF1600_StatePermute_fu_81_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
                     ap_NS_fsm <= ap_ST_fsm_state6;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state5;
@@ -439,7 +439,7 @@ begin
             when ap_ST_fsm_state6 => 
                 ap_NS_fsm <= ap_ST_fsm_state7;
             when ap_ST_fsm_state7 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state7) and (grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_done = ap_const_logic_1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state7) and (grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_done = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state8;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state7;
@@ -447,7 +447,7 @@ begin
             when ap_ST_fsm_state8 => 
                 ap_NS_fsm <= ap_ST_fsm_state9;
             when ap_ST_fsm_state9 => 
-                if (((grp_KeccakF1600_StatePermute_fu_75_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state9))) then
+                if (((grp_KeccakF1600_StatePermute_fu_81_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state9))) then
                     ap_NS_fsm <= ap_ST_fsm_state6;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state9;
@@ -456,7 +456,7 @@ begin
                 ap_NS_fsm <= "XXXXXXXXX";
         end case;
     end process;
-    add_ln349_fu_124_p2 <= std_logic_vector(unsigned(idx_fu_46) + unsigned(ap_const_lv64_88));
+    add_ln348_fu_130_p2 <= std_logic_vector(unsigned(idx_fu_52) + unsigned(ap_const_lv64_88));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
@@ -477,9 +477,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state2_blk_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_done)
+    ap_ST_fsm_state2_blk_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_done)
     begin
-        if ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_done = ap_const_logic_0)) then 
+        if ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state2_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state2_blk <= ap_const_logic_0;
@@ -489,9 +489,9 @@ begin
     ap_ST_fsm_state3_blk <= ap_const_logic_0;
     ap_ST_fsm_state4_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state5_blk_assign_proc : process(grp_KeccakF1600_StatePermute_fu_75_ap_done)
+    ap_ST_fsm_state5_blk_assign_proc : process(grp_KeccakF1600_StatePermute_fu_81_ap_done)
     begin
-        if ((grp_KeccakF1600_StatePermute_fu_75_ap_done = ap_const_logic_0)) then 
+        if ((grp_KeccakF1600_StatePermute_fu_81_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state5_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state5_blk <= ap_const_logic_0;
@@ -500,9 +500,9 @@ begin
 
     ap_ST_fsm_state6_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state7_blk_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_done)
+    ap_ST_fsm_state7_blk_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_done)
     begin
-        if ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_done = ap_const_logic_0)) then 
+        if ((grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state7_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state7_blk <= ap_const_logic_0;
@@ -511,9 +511,9 @@ begin
 
     ap_ST_fsm_state8_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state9_blk_assign_proc : process(grp_KeccakF1600_StatePermute_fu_75_ap_done)
+    ap_ST_fsm_state9_blk_assign_proc : process(grp_KeccakF1600_StatePermute_fu_81_ap_done)
     begin
-        if ((grp_KeccakF1600_StatePermute_fu_75_ap_done = ap_const_logic_0)) then 
+        if ((grp_KeccakF1600_StatePermute_fu_81_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state9_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state9_blk <= ap_const_logic_0;
@@ -541,62 +541,62 @@ begin
     end process;
 
     ap_ready <= ap_const_logic_0;
-    empty_fu_119_p1 <= idx_fu_46(9 - 1 downto 0);
-    grp_KeccakF1600_StatePermute_fu_75_ap_start <= grp_KeccakF1600_StatePermute_fu_75_ap_start_reg;
-    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_ap_start_reg;
-    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_ap_start_reg;
-    in_0_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_address0;
-    in_0_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_address1;
-    in_0_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_ce0;
-    in_0_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_0_ce1;
-    in_1_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_address0;
-    in_1_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_address1;
-    in_1_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_ce0;
-    in_1_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_1_ce1;
-    in_2_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_address0;
-    in_2_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_address1;
-    in_2_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_ce0;
-    in_2_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_2_ce1;
-    in_3_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_address0;
-    in_3_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_address1;
-    in_3_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_ce0;
-    in_3_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_in_3_ce1;
-    or_ln_fu_103_p3 <= (cstm & ap_const_lv48_100100018801);
+    empty_fu_125_p1 <= idx_fu_52(9 - 1 downto 0);
+    grp_KeccakF1600_StatePermute_fu_81_ap_start <= grp_KeccakF1600_StatePermute_fu_81_ap_start_reg;
+    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_ap_start_reg;
+    grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_ap_start_reg;
+    in_0_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_address0;
+    in_0_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_address1;
+    in_0_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_ce0;
+    in_0_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_0_ce1;
+    in_1_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_address0;
+    in_1_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_address1;
+    in_1_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_ce0;
+    in_1_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_1_ce1;
+    in_2_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_address0;
+    in_2_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_address1;
+    in_2_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_ce0;
+    in_2_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_2_ce1;
+    in_3_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_address0;
+    in_3_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_address1;
+    in_3_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_ce0;
+    in_3_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_in_3_ce1;
+    or_ln_fu_109_p3 <= (cstm & ap_const_lv48_100100018801);
 
-    s_address0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_address0, grp_KeccakF1600_StatePermute_fu_75_s_i_address0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address0, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
+    s_address0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_address0, grp_KeccakF1600_StatePermute_fu_81_s_i_address0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address0, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            s_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address0;
+            s_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            s_address0 <= grp_KeccakF1600_StatePermute_fu_75_s_i_address0;
+            s_address0 <= grp_KeccakF1600_StatePermute_fu_81_s_i_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            s_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_address0;
+            s_address0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_address0;
         else 
-            s_address0 <= ap_const_lv32_0(5 - 1 downto 0);
+            s_address0 <= ap_const_lv64_0(5 - 1 downto 0);
         end if; 
     end process;
 
 
-    s_address1_assign_proc : process(grp_KeccakF1600_StatePermute_fu_75_s_i_address1, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address1, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
+    s_address1_assign_proc : process(grp_KeccakF1600_StatePermute_fu_81_s_i_address1, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address1, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            s_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_address1;
+            s_address1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_address1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            s_address1 <= grp_KeccakF1600_StatePermute_fu_75_s_i_address1;
+            s_address1 <= grp_KeccakF1600_StatePermute_fu_81_s_i_address1;
         else 
             s_address1 <= "XXXXX";
         end if; 
     end process;
 
 
-    s_ce0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_ce0, grp_KeccakF1600_StatePermute_fu_75_s_i_ce0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce0, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7, s_ce0_local)
+    s_ce0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_ce0, grp_KeccakF1600_StatePermute_fu_81_s_i_ce0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce0, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7, s_ce0_local)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            s_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce0;
+            s_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            s_ce0 <= grp_KeccakF1600_StatePermute_fu_75_s_i_ce0;
+            s_ce0 <= grp_KeccakF1600_StatePermute_fu_81_s_i_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            s_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_ce0;
+            s_ce0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_ce0;
         else 
             s_ce0 <= s_ce0_local;
         end if; 
@@ -613,41 +613,41 @@ begin
     end process;
 
 
-    s_ce1_assign_proc : process(grp_KeccakF1600_StatePermute_fu_75_s_i_ce1, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce1, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
+    s_ce1_assign_proc : process(grp_KeccakF1600_StatePermute_fu_81_s_i_ce1, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce1, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            s_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_ce1;
+            s_ce1 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_ce1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            s_ce1 <= grp_KeccakF1600_StatePermute_fu_75_s_i_ce1;
+            s_ce1 <= grp_KeccakF1600_StatePermute_fu_81_s_i_ce1;
         else 
             s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    s_d0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_d0, grp_KeccakF1600_StatePermute_fu_75_s_i_d0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_d0, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7, zext_ln540_fu_111_p1)
+    s_d0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_d0, grp_KeccakF1600_StatePermute_fu_81_s_i_d0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_d0, ap_CS_fsm_state2, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7, zext_ln554_fu_117_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            s_d0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_d0;
+            s_d0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_d0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            s_d0 <= grp_KeccakF1600_StatePermute_fu_75_s_i_d0;
+            s_d0 <= grp_KeccakF1600_StatePermute_fu_81_s_i_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            s_d0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_d0;
+            s_d0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_d0;
         else 
-            s_d0 <= zext_ln540_fu_111_p1;
+            s_d0 <= zext_ln554_fu_117_p1;
         end if; 
     end process;
 
-    s_d1 <= grp_KeccakF1600_StatePermute_fu_75_s_i_d1;
+    s_d1 <= grp_KeccakF1600_StatePermute_fu_81_s_i_d1;
 
-    s_we0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_we0, grp_KeccakF1600_StatePermute_fu_75_s_i_we0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_we0, ap_CS_fsm_state2, s_we0_out, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
+    s_we0_assign_proc : process(grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_we0, grp_KeccakF1600_StatePermute_fu_81_s_i_we0, grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_we0, ap_CS_fsm_state2, s_we0_out, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state7)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            s_we0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_83_s_we0;
+            s_we0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2_fu_89_s_we0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            s_we0 <= grp_KeccakF1600_StatePermute_fu_75_s_i_we0;
+            s_we0 <= grp_KeccakF1600_StatePermute_fu_81_s_i_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            s_we0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_529_1_fu_69_s_we0;
+            s_we0 <= grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_543_1_fu_75_s_we0;
         else 
             s_we0 <= (s_we0_out or ap_const_lv8_0);
         end if; 
@@ -665,14 +665,14 @@ begin
 
     s_we0_out <= s_we0_local;
 
-    s_we1_assign_proc : process(grp_KeccakF1600_StatePermute_fu_75_s_i_we1, ap_CS_fsm_state5, ap_CS_fsm_state9)
+    s_we1_assign_proc : process(grp_KeccakF1600_StatePermute_fu_81_s_i_we1, ap_CS_fsm_state5, ap_CS_fsm_state9)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            s_we1 <= grp_KeccakF1600_StatePermute_fu_75_s_i_we1;
+            s_we1 <= grp_KeccakF1600_StatePermute_fu_81_s_i_we1;
         else 
             s_we1 <= ap_const_lv8_0;
         end if; 
     end process;
 
-    zext_ln540_fu_111_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(or_ln_fu_103_p3),64));
+    zext_ln554_fu_117_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(or_ln_fu_109_p3),64));
 end behav;

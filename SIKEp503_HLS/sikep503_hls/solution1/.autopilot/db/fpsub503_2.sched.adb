@@ -88,7 +88,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>coeff</name>
+						<name>c</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -98,7 +98,7 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>c</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -113,7 +113,7 @@
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
-				<array_size>48</array_size>
+				<array_size>16</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -127,7 +127,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>6</id>
+						<id>5</id>
 						<name>borrow_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -154,7 +154,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>13</item>
+					<item>12</item>
 				</oprand_edges>
 				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
@@ -169,7 +169,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>7</id>
+						<id>6</id>
 						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -196,11 +196,11 @@
 				<oprand_edges>
 					<count>5</count>
 					<item_version>0</item_version>
+					<item>14</item>
 					<item>15</item>
 					<item>16</item>
 					<item>17</item>
 					<item>18</item>
-					<item>19</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -215,7 +215,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>8</id>
+						<id>7</id>
 						<name>borrow_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -242,8 +242,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>20</item>
-					<item>30</item>
+					<item>19</item>
+					<item>26</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -258,7 +258,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>9</id>
+						<id>8</id>
 						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -285,12 +285,12 @@
 				<oprand_edges>
 					<count>6</count>
 					<item_version>0</item_version>
+					<item>21</item>
 					<item>22</item>
 					<item>23</item>
 					<item>24</item>
 					<item>25</item>
-					<item>29</item>
-					<item>31</item>
+					<item>27</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -305,7 +305,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>10</id>
+						<id>9</id>
 						<name>_ln56</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
@@ -364,7 +364,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>12</id>
+						<id>11</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -386,7 +386,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -395,7 +395,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>14</id>
+						<id>13</id>
 						<name>fpsub503_2_Pipeline_VITIS_LOOP_47_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -426,7 +426,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>21</id>
+						<id>20</id>
 						<name>fpsub503_2_Pipeline_VITIS_LOOP_53_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -460,7 +460,7 @@
 			<item class_id="18" tracking_level="1" version="0" object_id="_12">
 				<Obj>
 					<type>3</type>
-					<id>11</id>
+					<id>10</id>
 					<name>fpsub503.2</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -485,11 +485,11 @@
 				<node_objs>
 					<count>5</count>
 					<item_version>0</item_version>
+					<item>5</item>
 					<item>6</item>
 					<item>7</item>
 					<item>8</item>
 					<item>9</item>
-					<item>10</item>
 				</node_objs>
 			</item>
 		</blocks>
@@ -497,101 +497,101 @@
 			<count>14</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_13">
-				<id>13</id>
+				<id>12</id>
 				<edge_type>1</edge_type>
-				<source_obj>12</source_obj>
-				<sink_obj>6</sink_obj>
+				<source_obj>11</source_obj>
+				<sink_obj>5</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_14">
-				<id>15</id>
+				<id>14</id>
 				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
-				<sink_obj>7</sink_obj>
+				<source_obj>13</source_obj>
+				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_15">
-				<id>16</id>
+				<id>15</id>
 				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>7</sink_obj>
+				<source_obj>3</source_obj>
+				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_16">
-				<id>17</id>
+				<id>16</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
-				<sink_obj>7</sink_obj>
+				<source_obj>1</source_obj>
+				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_17">
-				<id>18</id>
+				<id>17</id>
 				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
-				<sink_obj>7</sink_obj>
+				<source_obj>2</source_obj>
+				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_18">
+				<id>18</id>
+				<edge_type>1</edge_type>
+				<source_obj>5</source_obj>
+				<sink_obj>6</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_19">
 				<id>19</id>
 				<edge_type>1</edge_type>
+				<source_obj>5</source_obj>
+				<sink_obj>7</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_20">
+				<id>21</id>
+				<edge_type>1</edge_type>
+				<source_obj>20</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_21">
+				<id>22</id>
+				<edge_type>1</edge_type>
+				<source_obj>3</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_22">
+				<id>23</id>
+				<edge_type>1</edge_type>
+				<source_obj>7</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_23">
+				<id>24</id>
+				<edge_type>1</edge_type>
+				<source_obj>4</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_24">
+				<id>25</id>
+				<edge_type>4</edge_type>
+				<source_obj>6</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_25">
+				<id>26</id>
+				<edge_type>4</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_19">
-				<id>20</id>
-				<edge_type>1</edge_type>
+			<item class_id_reference="20" object_id="_26">
+				<id>27</id>
+				<edge_type>4</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>8</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_20">
-				<id>22</id>
-				<edge_type>1</edge_type>
-				<source_obj>21</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_21">
-				<id>23</id>
-				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_22">
-				<id>24</id>
-				<edge_type>1</edge_type>
-				<source_obj>8</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_23">
-				<id>25</id>
-				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_24">
-				<id>29</id>
-				<edge_type>4</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_25">
-				<id>30</id>
-				<edge_type>4</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>8</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_26">
-				<id>31</id>
-				<edge_type>4</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>9</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -611,14 +611,14 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>11</item>
+				<item>10</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>40</mMinLatency>
-			<mMaxLatency>40</mMaxLatency>
+			<mMinLatency>33</mMinLatency>
+			<mMaxLatency>33</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -629,35 +629,35 @@
 		<count>5</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
-			<first>6</first>
+			<first>5</first>
 			<second class_id="28" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>7</first>
+			<first>6</first>
 			<second>
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>8</first>
+			<first>7</first>
 			<second>
 				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>9</first>
+			<first>8</first>
 			<second>
 				<first>2</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>10</first>
+			<first>9</first>
 			<second>
 				<first>3</first>
 				<second>0</second>
@@ -668,7 +668,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>11</first>
+			<first>10</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
 				<second>3</second>

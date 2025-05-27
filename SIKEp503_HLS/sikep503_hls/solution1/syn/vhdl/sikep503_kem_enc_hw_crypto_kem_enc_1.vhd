@@ -16,147 +16,55 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    m_axi_gmem0_0_AWVALID : OUT STD_LOGIC;
-    m_axi_gmem0_0_AWREADY : IN STD_LOGIC;
-    m_axi_gmem0_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem0_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem0_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem0_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem0_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem0_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem0_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem0_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem0_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem0_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_WVALID : OUT STD_LOGIC;
-    m_axi_gmem0_0_WREADY : IN STD_LOGIC;
-    m_axi_gmem0_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-    m_axi_gmem0_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_WLAST : OUT STD_LOGIC;
-    m_axi_gmem0_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_ARVALID : OUT STD_LOGIC;
-    m_axi_gmem0_0_ARREADY : IN STD_LOGIC;
-    m_axi_gmem0_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem0_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem0_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem0_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem0_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem0_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem0_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem0_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem0_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem0_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_RVALID : IN STD_LOGIC;
-    m_axi_gmem0_0_RREADY : OUT STD_LOGIC;
-    m_axi_gmem0_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-    m_axi_gmem0_0_RLAST : IN STD_LOGIC;
-    m_axi_gmem0_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-    m_axi_gmem0_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem0_0_BVALID : IN STD_LOGIC;
-    m_axi_gmem0_0_BREADY : OUT STD_LOGIC;
-    m_axi_gmem0_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem0_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem0_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    ct : IN STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem1_0_AWVALID : OUT STD_LOGIC;
-    m_axi_gmem1_0_AWREADY : IN STD_LOGIC;
-    m_axi_gmem1_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem1_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem1_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem1_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem1_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem1_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem1_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem1_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem1_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem1_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_WVALID : OUT STD_LOGIC;
-    m_axi_gmem1_0_WREADY : IN STD_LOGIC;
-    m_axi_gmem1_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-    m_axi_gmem1_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_WLAST : OUT STD_LOGIC;
-    m_axi_gmem1_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_ARVALID : OUT STD_LOGIC;
-    m_axi_gmem1_0_ARREADY : IN STD_LOGIC;
-    m_axi_gmem1_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem1_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem1_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem1_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem1_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem1_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem1_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem1_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem1_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem1_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_RVALID : IN STD_LOGIC;
-    m_axi_gmem1_0_RREADY : OUT STD_LOGIC;
-    m_axi_gmem1_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-    m_axi_gmem1_0_RLAST : IN STD_LOGIC;
-    m_axi_gmem1_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-    m_axi_gmem1_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem1_0_BVALID : IN STD_LOGIC;
-    m_axi_gmem1_0_BREADY : OUT STD_LOGIC;
-    m_axi_gmem1_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem1_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem1_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    ss : IN STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem2_0_AWVALID : OUT STD_LOGIC;
-    m_axi_gmem2_0_AWREADY : IN STD_LOGIC;
-    m_axi_gmem2_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem2_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem2_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem2_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem2_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem2_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem2_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem2_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem2_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem2_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_WVALID : OUT STD_LOGIC;
-    m_axi_gmem2_0_WREADY : IN STD_LOGIC;
-    m_axi_gmem2_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-    m_axi_gmem2_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_WLAST : OUT STD_LOGIC;
-    m_axi_gmem2_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_ARVALID : OUT STD_LOGIC;
-    m_axi_gmem2_0_ARREADY : IN STD_LOGIC;
-    m_axi_gmem2_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem2_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-    m_axi_gmem2_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem2_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem2_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem2_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem2_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-    m_axi_gmem2_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem2_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-    m_axi_gmem2_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_RVALID : IN STD_LOGIC;
-    m_axi_gmem2_0_RREADY : OUT STD_LOGIC;
-    m_axi_gmem2_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-    m_axi_gmem2_0_RLAST : IN STD_LOGIC;
-    m_axi_gmem2_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-    m_axi_gmem2_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem2_0_BVALID : IN STD_LOGIC;
-    m_axi_gmem2_0_BREADY : OUT STD_LOGIC;
-    m_axi_gmem2_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-    m_axi_gmem2_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axi_gmem2_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-    pk : IN STD_LOGIC_VECTOR (31 downto 0) );
+    m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+    m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+    m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+    m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+    m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+    m_axi_gmem_0_WREADY : IN STD_LOGIC;
+    m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+    m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+    m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+    m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+    m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+    m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+    m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+    m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_RVALID : IN STD_LOGIC;
+    m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+    m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+    m_axi_gmem_0_RLAST : IN STD_LOGIC;
+    m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
+    m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_0_BVALID : IN STD_LOGIC;
+    m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+    m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+    m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+    m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+    ct : IN STD_LOGIC_VECTOR (63 downto 0);
+    ss : IN STD_LOGIC_VECTOR (63 downto 0);
+    pk : IN STD_LOGIC_VECTOR (63 downto 0) );
 end;
 
 
@@ -216,11 +124,6 @@ architecture behav of sikep503_kem_enc_hw_crypto_kem_enc_1 is
     constant ap_ST_fsm_state51 : STD_LOGIC_VECTOR (50 downto 0) := "100000000000000000000000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
-    constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
-    constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_lv32_13 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010011";
     constant ap_const_lv32_1A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011010";
     constant ap_const_lv32_1B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011011";
@@ -230,6 +133,7 @@ architecture behav of sikep503_kem_enc_hw_crypto_kem_enc_1 is
     constant ap_const_lv32_E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001110";
     constant ap_const_lv32_12 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010010";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
+    constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv32_9 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001001";
     constant ap_const_lv32_A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001010";
@@ -250,10 +154,15 @@ architecture behav of sikep503_kem_enc_hw_crypto_kem_enc_1 is
     constant ap_const_lv32_2A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000101010";
     constant ap_const_lv32_2C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000101100";
     constant ap_const_lv32_2D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000101101";
-    constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
-    constant ap_const_lv32_17A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000101111010";
-    constant ap_const_lv32_18 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011000";
-    constant ap_const_lv32_192 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000110010010";
+    constant ap_const_lv64_1F : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000011111";
+    constant ap_const_lv64_17A : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000101111010";
+    constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
+    constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    constant ap_const_lv64_18 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000011000";
+    constant ap_const_lv64_192 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000110010010";
+    constant ap_const_lv64_10 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000010000";
     constant ap_const_lv32_D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001101";
     constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
 
@@ -266,29 +175,26 @@ attribute shreg_extract : string;
     signal strat_Alice_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal strat_Alice_1_ce0 : STD_LOGIC;
     signal strat_Alice_1_q0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal gmem0_blk_n_AW : STD_LOGIC;
+    signal gmem_blk_n_AR : STD_LOGIC;
+    signal gmem_blk_n_AW : STD_LOGIC;
     signal ap_CS_fsm_state20 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state20 : signal is "none";
-    signal gmem0_blk_n_B : STD_LOGIC;
+    signal gmem_blk_n_B : STD_LOGIC;
     signal ap_CS_fsm_state27 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state27 : signal is "none";
-    signal gmem0_blk_n_AR : STD_LOGIC;
     signal ap_CS_fsm_state28 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state28 : signal is "none";
-    signal gmem1_blk_n_AW : STD_LOGIC;
     signal ap_CS_fsm_state44 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state44 : signal is "none";
-    signal gmem1_blk_n_B : STD_LOGIC;
     signal ap_CS_fsm_state51 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state51 : signal is "none";
-    signal gmem2_blk_n_AR : STD_LOGIC;
-    signal ephemeralsk_addr_reg_440 : STD_LOGIC_VECTOR (4 downto 0);
+    signal ephemeralsk_addr_reg_437 : STD_LOGIC_VECTOR (4 downto 0);
     signal ap_CS_fsm_state13 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
     signal ap_CS_fsm_state15 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state15 : signal is "none";
-    signal add_ln56_fu_405_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal add_ln56_reg_454 : STD_LOGIC_VECTOR (31 downto 0);
+    signal add_ln81_fu_402_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal add_ln81_reg_450 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state19 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state19 : signal is "none";
     signal s_i_address0 : STD_LOGIC_VECTOR (4 downto 0);
@@ -375,473 +281,473 @@ attribute shreg_extract : string;
     signal temp_3_address1 : STD_LOGIC_VECTOR (6 downto 0);
     signal temp_3_ce1 : STD_LOGIC;
     signal temp_3_q1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_done : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_idle : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_ready : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_done : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_idle : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_ready : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WLAST : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_RREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_BREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_32_fu_246_ap_start : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_ap_done : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_ap_idle : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_ap_ready : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_ephemeralsk_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_cshake256_simple_32_fu_246_ephemeralsk_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_ephemeralsk_we0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_ephemeralsk_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_0_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_in_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_0_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_in_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_1_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_in_1_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_1_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_in_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_2_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_in_2_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_2_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_in_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_3_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_fu_246_in_3_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_fu_246_in_3_ce1 : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ap_start : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ap_done : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ap_idle : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ap_ready : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce0 : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce1 : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWVALID : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WVALID : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WLAST : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARVALID : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_RREADY : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_BREADY : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_ce0 : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ap_start : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ap_done : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ap_idle : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ap_ready : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce0 : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce1 : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWVALID : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WVALID : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WLAST : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARVALID : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_RREADY : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_BREADY : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce0 : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we0 : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce1 : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we1 : STD_LOGIC;
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_clone_fu_317_ap_start : STD_LOGIC;
-    signal grp_cshake256_simple_32_clone_fu_317_ap_done : STD_LOGIC;
-    signal grp_cshake256_simple_32_clone_fu_317_ap_idle : STD_LOGIC;
-    signal grp_cshake256_simple_32_clone_fu_317_ap_ready : STD_LOGIC;
-    signal grp_cshake256_simple_32_clone_fu_317_output_r_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_cshake256_simple_32_clone_fu_317_output_r_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_clone_fu_317_output_r_we0 : STD_LOGIC;
-    signal grp_cshake256_simple_32_clone_fu_317_output_r_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_32_clone_fu_317_in_r_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_32_clone_fu_317_in_r_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_done : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_idle : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_ready : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WLAST : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_RREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_BREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_done : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_idle : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_ready : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WLAST : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_RREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_BREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_ap_start : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_ap_done : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_ap_idle : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_ap_ready : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_s_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_s_we0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_s_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_s_we1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_s_d1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_0_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_in_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_0_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_in_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_1_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_in_1_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_1_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_in_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_2_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_in_2_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_2_ce1 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_in_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_3_ce0 : STD_LOGIC;
-    signal grp_cshake256_simple_absorb_fu_349_in_3_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_cshake256_simple_absorb_fu_349_in_3_ce1 : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_362_ap_start : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_362_ap_done : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_362_ap_idle : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_362_ap_ready : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_ce0 : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_we0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_address1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_ce1 : STD_LOGIC;
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_we1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_KeccakF1600_StatePermute_fu_362_s_i_d1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_done : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_idle : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_ready : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_address1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_address1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_address1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_address1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we1 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_done : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_idle : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_ready : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WLAST : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARVALID : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_RREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_BREADY : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_ce0 : STD_LOGIC;
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start_reg : STD_LOGIC := '0';
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_done : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_idle : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_ready : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_done : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_idle : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_ready : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_32_fu_244_ap_start : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_ap_done : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_ap_idle : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_ap_ready : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_ephemeralsk_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_cshake256_simple_32_fu_244_ephemeralsk_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_ephemeralsk_we0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_ephemeralsk_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_0_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_in_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_0_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_in_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_1_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_in_1_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_1_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_in_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_2_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_in_2_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_2_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_in_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_3_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_fu_244_in_3_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_fu_244_in_3_ce1 : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ap_start : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ap_done : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ap_idle : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ap_ready : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce0 : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce1 : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_ce0 : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ap_start : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ap_done : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ap_idle : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ap_ready : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce0 : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce1 : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce0 : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we0 : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce1 : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we1 : STD_LOGIC;
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_d1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_clone_fu_315_ap_start : STD_LOGIC;
+    signal grp_cshake256_simple_32_clone_fu_315_ap_done : STD_LOGIC;
+    signal grp_cshake256_simple_32_clone_fu_315_ap_idle : STD_LOGIC;
+    signal grp_cshake256_simple_32_clone_fu_315_ap_ready : STD_LOGIC;
+    signal grp_cshake256_simple_32_clone_fu_315_output_r_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_cshake256_simple_32_clone_fu_315_output_r_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_clone_fu_315_output_r_we0 : STD_LOGIC;
+    signal grp_cshake256_simple_32_clone_fu_315_output_r_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_32_clone_fu_315_in_r_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_32_clone_fu_315_in_r_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_done : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_idle : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_ready : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_done : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_idle : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_ready : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_ap_start : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_ap_done : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_ap_idle : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_ap_ready : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_s_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_s_we0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_s_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_s_we1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_s_d1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_0_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_in_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_0_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_in_1_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_1_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_in_1_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_1_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_in_2_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_2_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_in_2_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_2_ce1 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_in_3_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_3_ce0 : STD_LOGIC;
+    signal grp_cshake256_simple_absorb_fu_346_in_3_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_cshake256_simple_absorb_fu_346_in_3_ce1 : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_359_ap_start : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_359_ap_done : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_359_ap_idle : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_359_ap_ready : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_ce0 : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_we0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_ce1 : STD_LOGIC;
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_we1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_KeccakF1600_StatePermute_fu_359_s_i_d1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_done : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_idle : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_ready : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_address1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_d1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_address1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_d1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_address1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_d1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_address1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we1 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_d1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_done : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_idle : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_ready : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WLAST : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARVALID : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_RREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_BREADY : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_ce0 : STD_LOGIC;
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start_reg : STD_LOGIC := '0';
+    signal grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state9 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
     signal ap_CS_fsm_state10 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
-    signal grp_cshake256_simple_32_fu_246_ap_start_reg : STD_LOGIC := '0';
+    signal grp_cshake256_simple_32_fu_244_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state11 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state11 : signal is "none";
     signal ap_CS_fsm_state12 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state12 : signal is "none";
     signal ephemeralsk_we0_out : STD_LOGIC;
-    signal grp_EphemeralKeyGeneration_A_1_fu_257_ap_start_reg : STD_LOGIC := '0';
+    signal grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state16 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state16 : signal is "none";
-    signal grp_EphemeralSecretAgreement_A_1_fu_292_ap_start_reg : STD_LOGIC := '0';
+    signal grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state17 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state17 : signal is "none";
     signal ap_CS_fsm_state18 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state18 : signal is "none";
-    signal grp_cshake256_simple_32_clone_fu_317_ap_start_reg : STD_LOGIC := '0';
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start_reg : STD_LOGIC := '0';
+    signal grp_cshake256_simple_32_clone_fu_315_ap_start_reg : STD_LOGIC := '0';
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state21 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state21 : signal is "none";
     signal ap_CS_fsm_state22 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state22 : signal is "none";
-    signal grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start_reg : STD_LOGIC := '0';
+    signal grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state36 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state36 : signal is "none";
     signal ap_CS_fsm_state37 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state37 : signal is "none";
-    signal grp_cshake256_simple_absorb_fu_349_ap_start_reg : STD_LOGIC := '0';
+    signal grp_cshake256_simple_absorb_fu_346_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state38 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state38 : signal is "none";
     signal ap_CS_fsm_state39 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state39 : signal is "none";
-    signal grp_KeccakF1600_StatePermute_fu_362_ap_start_reg : STD_LOGIC := '0';
+    signal grp_KeccakF1600_StatePermute_fu_359_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state40 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state40 : signal is "none";
     signal ap_CS_fsm_state41 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state41 : signal is "none";
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start_reg : STD_LOGIC := '0';
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state42 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state42 : signal is "none";
     signal ap_CS_fsm_state43 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state43 : signal is "none";
-    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start_reg : STD_LOGIC := '0';
+    signal grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state45 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state45 : signal is "none";
     signal ap_CS_fsm_state46 : STD_LOGIC;
@@ -851,8 +757,8 @@ attribute shreg_extract : string;
     signal ephemeralsk_we0_local : STD_LOGIC;
     signal ap_CS_fsm_state14 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state14 : signal is "none";
-    signal zext_ln50_fu_400_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln50_fu_396_p1 : STD_LOGIC_VECTOR (1 downto 0);
+    signal zext_ln56_fu_397_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln56_fu_393_p1 : STD_LOGIC_VECTOR (1 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (50 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
@@ -907,7 +813,7 @@ attribute shreg_extract : string;
     signal ap_ST_fsm_state51_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1 IS
+    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -942,53 +848,53 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        m_axi_gmem2_0_AWVALID : OUT STD_LOGIC;
-        m_axi_gmem2_0_AWREADY : IN STD_LOGIC;
-        m_axi_gmem2_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_WVALID : OUT STD_LOGIC;
-        m_axi_gmem2_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem2_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem2_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_WLAST : OUT STD_LOGIC;
-        m_axi_gmem2_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_ARVALID : OUT STD_LOGIC;
-        m_axi_gmem2_0_ARREADY : IN STD_LOGIC;
-        m_axi_gmem2_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_RVALID : IN STD_LOGIC;
-        m_axi_gmem2_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem2_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem2_0_RLAST : IN STD_LOGIC;
-        m_axi_gmem2_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-        m_axi_gmem2_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_BVALID : IN STD_LOGIC;
-        m_axi_gmem2_0_BREADY : OUT STD_LOGIC;
-        m_axi_gmem2_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        pk : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        pk : IN STD_LOGIC_VECTOR (63 downto 0);
         temp_3_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         temp_3_ce0 : OUT STD_LOGIC;
         temp_3_we0 : OUT STD_LOGIC;
@@ -1061,53 +967,53 @@ attribute shreg_extract : string;
         ephemeralsk_address1 : OUT STD_LOGIC_VECTOR (4 downto 0);
         ephemeralsk_ce1 : OUT STD_LOGIC;
         ephemeralsk_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem0_0_AWVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_AWREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem0_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WLAST : OUT STD_LOGIC;
-        m_axi_gmem0_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_ARVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_ARREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RVALID : IN STD_LOGIC;
-        m_axi_gmem0_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem0_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem0_0_RLAST : IN STD_LOGIC;
-        m_axi_gmem0_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-        m_axi_gmem0_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_BVALID : IN STD_LOGIC;
-        m_axi_gmem0_0_BREADY : OUT STD_LOGIC;
-        m_axi_gmem0_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        PublicKeyA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        PublicKeyA : IN STD_LOGIC_VECTOR (63 downto 0);
         strat_Alice_1_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         strat_Alice_1_ce0 : OUT STD_LOGIC;
         strat_Alice_1_q0 : IN STD_LOGIC_VECTOR (5 downto 0) );
@@ -1128,53 +1034,53 @@ attribute shreg_extract : string;
         ephemeralsk_address1 : OUT STD_LOGIC_VECTOR (4 downto 0);
         ephemeralsk_ce1 : OUT STD_LOGIC;
         ephemeralsk_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem2_0_AWVALID : OUT STD_LOGIC;
-        m_axi_gmem2_0_AWREADY : IN STD_LOGIC;
-        m_axi_gmem2_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_WVALID : OUT STD_LOGIC;
-        m_axi_gmem2_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem2_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem2_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_WLAST : OUT STD_LOGIC;
-        m_axi_gmem2_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_ARVALID : OUT STD_LOGIC;
-        m_axi_gmem2_0_ARREADY : IN STD_LOGIC;
-        m_axi_gmem2_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem2_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem2_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem2_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_RVALID : IN STD_LOGIC;
-        m_axi_gmem2_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem2_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem2_0_RLAST : IN STD_LOGIC;
-        m_axi_gmem2_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-        m_axi_gmem2_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_BVALID : IN STD_LOGIC;
-        m_axi_gmem2_0_BREADY : OUT STD_LOGIC;
-        m_axi_gmem2_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem2_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem2_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        PublicKeyB : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        PublicKeyB : IN STD_LOGIC_VECTOR (63 downto 0);
         SharedSecretA_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         SharedSecretA_ce0 : OUT STD_LOGIC;
         SharedSecretA_we0 : OUT STD_LOGIC;
@@ -1207,7 +1113,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1 IS
+    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -1215,54 +1121,53 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        m_axi_gmem0_0_AWVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_AWREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem0_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WLAST : OUT STD_LOGIC;
-        m_axi_gmem0_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_ARVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_ARREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RVALID : IN STD_LOGIC;
-        m_axi_gmem0_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem0_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem0_0_RLAST : IN STD_LOGIC;
-        m_axi_gmem0_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-        m_axi_gmem0_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_BVALID : IN STD_LOGIC;
-        m_axi_gmem0_0_BREADY : OUT STD_LOGIC;
-        m_axi_gmem0_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        ct : IN STD_LOGIC_VECTOR (31 downto 0);
-        add_ln56 : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        add_ln81 : IN STD_LOGIC_VECTOR (63 downto 0);
         temp_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         temp_ce0 : OUT STD_LOGIC;
         temp_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
@@ -1289,53 +1194,53 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        m_axi_gmem0_0_AWVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_AWREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem0_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WLAST : OUT STD_LOGIC;
-        m_axi_gmem0_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_ARVALID : OUT STD_LOGIC;
-        m_axi_gmem0_0_ARREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem0_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem0_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem0_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RVALID : IN STD_LOGIC;
-        m_axi_gmem0_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem0_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem0_0_RLAST : IN STD_LOGIC;
-        m_axi_gmem0_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-        m_axi_gmem0_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_BVALID : IN STD_LOGIC;
-        m_axi_gmem0_0_BREADY : OUT STD_LOGIC;
-        m_axi_gmem0_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem0_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        ct : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        ct : IN STD_LOGIC_VECTOR (63 downto 0);
         temp_3_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         temp_3_ce0 : OUT STD_LOGIC;
         temp_3_we0 : OUT STD_LOGIC;
@@ -1422,7 +1327,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2 IS
+    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -1468,7 +1373,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1 IS
+    component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -1476,53 +1381,53 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        m_axi_gmem1_0_AWVALID : OUT STD_LOGIC;
-        m_axi_gmem1_0_AWREADY : IN STD_LOGIC;
-        m_axi_gmem1_0_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem1_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem1_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem1_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem1_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem1_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem1_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem1_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem1_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem1_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_WVALID : OUT STD_LOGIC;
-        m_axi_gmem1_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem1_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem1_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_WLAST : OUT STD_LOGIC;
-        m_axi_gmem1_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_ARVALID : OUT STD_LOGIC;
-        m_axi_gmem1_0_ARREADY : IN STD_LOGIC;
-        m_axi_gmem1_0_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem1_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_gmem1_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem1_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem1_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem1_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem1_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_gmem1_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem1_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_gmem1_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_RVALID : IN STD_LOGIC;
-        m_axi_gmem1_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem1_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
-        m_axi_gmem1_0_RLAST : IN STD_LOGIC;
-        m_axi_gmem1_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
-        m_axi_gmem1_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem1_0_BVALID : IN STD_LOGIC;
-        m_axi_gmem1_0_BREADY : OUT STD_LOGIC;
-        m_axi_gmem1_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_gmem1_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem1_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        ss : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_AWREADY : IN STD_LOGIC;
+        m_axi_gmem_0_AWADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_WREADY : IN STD_LOGIC;
+        m_axi_gmem_0_WDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_WSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WLAST : OUT STD_LOGIC;
+        m_axi_gmem_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARVALID : OUT STD_LOGIC;
+        m_axi_gmem_0_ARREADY : IN STD_LOGIC;
+        m_axi_gmem_0_ARADDR : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem_0_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_gmem_0_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_gmem_0_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_gmem_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RVALID : IN STD_LOGIC;
+        m_axi_gmem_0_RREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_RDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+        m_axi_gmem_0_RLAST : IN STD_LOGIC;
+        m_axi_gmem_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
+        m_axi_gmem_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BVALID : IN STD_LOGIC;
+        m_axi_gmem_0_BREADY : OUT STD_LOGIC;
+        m_axi_gmem_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_gmem_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_gmem_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        ss : IN STD_LOGIC_VECTOR (63 downto 0);
         t_address0 : OUT STD_LOGIC_VECTOR (5 downto 0);
         t_ce0 : OUT STD_LOGIC;
         t_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
@@ -1728,12 +1633,12 @@ begin
         address0 => t_address0,
         ce0 => t_ce0,
         we0 => t_we0,
-        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_d0,
+        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_d0,
         q0 => t_q0,
-        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_address1,
+        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_address1,
         ce1 => t_ce1,
         we1 => t_we1,
-        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_d1);
+        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_d1);
 
     t_44_U : component sikep503_kem_enc_hw_crypto_kem_enc_1_t_RAM_AUTO_1R1W
     generic map (
@@ -1746,12 +1651,12 @@ begin
         address0 => t_44_address0,
         ce0 => t_44_ce0,
         we0 => t_44_we0,
-        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_d0,
+        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_d0,
         q0 => t_44_q0,
-        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_address1,
+        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_address1,
         ce1 => t_44_ce1,
         we1 => t_44_we1,
-        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_d1);
+        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_d1);
 
     t_45_U : component sikep503_kem_enc_hw_crypto_kem_enc_1_t_RAM_AUTO_1R1W
     generic map (
@@ -1764,12 +1669,12 @@ begin
         address0 => t_45_address0,
         ce0 => t_45_ce0,
         we0 => t_45_we0,
-        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_d0,
+        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_d0,
         q0 => t_45_q0,
-        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_address1,
+        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_address1,
         ce1 => t_45_ce1,
         we1 => t_45_we1,
-        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_d1);
+        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_d1);
 
     t_46_U : component sikep503_kem_enc_hw_crypto_kem_enc_1_t_RAM_AUTO_1R1W
     generic map (
@@ -1782,12 +1687,12 @@ begin
         address0 => t_46_address0,
         ce0 => t_46_ce0,
         we0 => t_46_we0,
-        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_d0,
+        d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_d0,
         q0 => t_46_q0,
-        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_address1,
+        address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_address1,
         ce1 => t_46_ce1,
         we1 => t_46_we1,
-        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_d1);
+        d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_d1);
 
     jinvariant_U : component sikep503_kem_enc_hw_crypto_kem_enc_1_jinvariant_RAM_AUTO_1R1W
     generic map (
@@ -1800,12 +1705,12 @@ begin
         address0 => jinvariant_address0,
         ce0 => jinvariant_ce0,
         we0 => jinvariant_we0,
-        d0 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_d0,
+        d0 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_d0,
         q0 => jinvariant_q0,
-        address1 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_address1,
+        address1 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_address1,
         ce1 => jinvariant_ce1,
         we1 => jinvariant_we1,
-        d1 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_d1);
+        d1 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_d1);
 
     h_U : component sikep503_kem_enc_hw_crypto_kem_enc_1_h_RAM_AUTO_1R1W
     generic map (
@@ -1818,7 +1723,7 @@ begin
         address0 => h_address0,
         ce0 => h_ce0,
         we0 => h_we0,
-        d0 => grp_cshake256_simple_32_clone_fu_317_output_r_d0,
+        d0 => grp_cshake256_simple_32_clone_fu_315_output_r_d0,
         q0 => h_q0);
 
     temp_U : component sikep503_kem_enc_hw_crypto_kem_enc_1_temp_RAM_AUTO_1R1W
@@ -1889,611 +1794,610 @@ begin
         ce1 => temp_3_ce1,
         q1 => temp_3_q1);
 
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start,
-        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_done,
-        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_idle,
-        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_ready,
-        temp_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_address0,
-        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_ce0,
-        temp_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_we0,
-        temp_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_d0,
-        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_address0,
-        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_ce0,
-        temp_1_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_we0,
-        temp_1_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_d0,
-        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_address0,
-        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_ce0,
-        temp_2_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_we0,
-        temp_2_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_d0,
-        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_address0,
-        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_ce0,
-        temp_3_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_we0,
-        temp_3_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_d0);
+        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start,
+        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_done,
+        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_idle,
+        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_ready,
+        temp_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_address0,
+        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_ce0,
+        temp_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_we0,
+        temp_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_d0,
+        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_address0,
+        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_ce0,
+        temp_1_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_we0,
+        temp_1_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_d0,
+        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_address0,
+        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_ce0,
+        temp_2_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_we0,
+        temp_2_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_d0,
+        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_address0,
+        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_ce0,
+        temp_3_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_we0,
+        temp_3_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_d0);
 
-    grp_crypto_kem_enc_1_Pipeline_2_fu_235 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_2
+    grp_crypto_kem_enc_1_Pipeline_2_fu_233 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start,
-        ap_done => grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_done,
-        ap_idle => grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_idle,
-        ap_ready => grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_ready,
-        m_axi_gmem2_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWVALID,
-        m_axi_gmem2_0_AWREADY => ap_const_logic_0,
-        m_axi_gmem2_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWADDR,
-        m_axi_gmem2_0_AWID => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWID,
-        m_axi_gmem2_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWLEN,
-        m_axi_gmem2_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWSIZE,
-        m_axi_gmem2_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWBURST,
-        m_axi_gmem2_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWLOCK,
-        m_axi_gmem2_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWCACHE,
-        m_axi_gmem2_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWPROT,
-        m_axi_gmem2_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWQOS,
-        m_axi_gmem2_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWREGION,
-        m_axi_gmem2_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_AWUSER,
-        m_axi_gmem2_0_WVALID => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WVALID,
-        m_axi_gmem2_0_WREADY => ap_const_logic_0,
-        m_axi_gmem2_0_WDATA => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WDATA,
-        m_axi_gmem2_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WSTRB,
-        m_axi_gmem2_0_WLAST => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WLAST,
-        m_axi_gmem2_0_WID => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WID,
-        m_axi_gmem2_0_WUSER => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_WUSER,
-        m_axi_gmem2_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARVALID,
-        m_axi_gmem2_0_ARREADY => m_axi_gmem2_0_ARREADY,
-        m_axi_gmem2_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARADDR,
-        m_axi_gmem2_0_ARID => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARID,
-        m_axi_gmem2_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLEN,
-        m_axi_gmem2_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARSIZE,
-        m_axi_gmem2_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARBURST,
-        m_axi_gmem2_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLOCK,
-        m_axi_gmem2_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARCACHE,
-        m_axi_gmem2_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARPROT,
-        m_axi_gmem2_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARQOS,
-        m_axi_gmem2_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARREGION,
-        m_axi_gmem2_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARUSER,
-        m_axi_gmem2_0_RVALID => m_axi_gmem2_0_RVALID,
-        m_axi_gmem2_0_RREADY => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_RREADY,
-        m_axi_gmem2_0_RDATA => m_axi_gmem2_0_RDATA,
-        m_axi_gmem2_0_RLAST => m_axi_gmem2_0_RLAST,
-        m_axi_gmem2_0_RID => m_axi_gmem2_0_RID,
-        m_axi_gmem2_0_RFIFONUM => m_axi_gmem2_0_RFIFONUM,
-        m_axi_gmem2_0_RUSER => m_axi_gmem2_0_RUSER,
-        m_axi_gmem2_0_RRESP => m_axi_gmem2_0_RRESP,
-        m_axi_gmem2_0_BVALID => ap_const_logic_0,
-        m_axi_gmem2_0_BREADY => grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_BREADY,
-        m_axi_gmem2_0_BRESP => ap_const_lv2_0,
-        m_axi_gmem2_0_BID => ap_const_lv1_0,
-        m_axi_gmem2_0_BUSER => ap_const_lv1_0,
+        ap_start => grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start,
+        ap_done => grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_done,
+        ap_idle => grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_idle,
+        ap_ready => grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_ready,
+        m_axi_gmem_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => ap_const_logic_0,
+        m_axi_gmem_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => ap_const_logic_0,
+        m_axi_gmem_0_WDATA => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => m_axi_gmem_0_ARREADY,
+        m_axi_gmem_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => m_axi_gmem_0_RVALID,
+        m_axi_gmem_0_RREADY => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => m_axi_gmem_0_RDATA,
+        m_axi_gmem_0_RLAST => m_axi_gmem_0_RLAST,
+        m_axi_gmem_0_RID => m_axi_gmem_0_RID,
+        m_axi_gmem_0_RFIFONUM => m_axi_gmem_0_RFIFONUM,
+        m_axi_gmem_0_RUSER => m_axi_gmem_0_RUSER,
+        m_axi_gmem_0_RRESP => m_axi_gmem_0_RRESP,
+        m_axi_gmem_0_BVALID => ap_const_logic_0,
+        m_axi_gmem_0_BREADY => grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BID => ap_const_lv1_0,
+        m_axi_gmem_0_BUSER => ap_const_lv1_0,
         pk => pk,
-        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_address0,
-        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_ce0,
-        temp_3_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_we0,
-        temp_3_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_d0,
-        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_address0,
-        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_ce0,
-        temp_2_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_we0,
-        temp_2_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_d0,
-        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_address0,
-        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_ce0,
-        temp_1_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_we0,
-        temp_1_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_d0,
-        temp_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_address0,
-        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_ce0,
-        temp_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_we0,
-        temp_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_d0);
+        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_address0,
+        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_ce0,
+        temp_3_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_we0,
+        temp_3_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_d0,
+        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_address0,
+        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_ce0,
+        temp_2_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_we0,
+        temp_2_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_d0,
+        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_address0,
+        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_ce0,
+        temp_1_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_we0,
+        temp_1_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_d0,
+        temp_address0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_address0,
+        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_ce0,
+        temp_we0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_we0,
+        temp_d0 => grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_d0);
 
-    grp_cshake256_simple_32_fu_246 : component sikep503_kem_enc_hw_cshake256_simple_32
+    grp_cshake256_simple_32_fu_244 : component sikep503_kem_enc_hw_cshake256_simple_32
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_cshake256_simple_32_fu_246_ap_start,
-        ap_done => grp_cshake256_simple_32_fu_246_ap_done,
-        ap_idle => grp_cshake256_simple_32_fu_246_ap_idle,
-        ap_ready => grp_cshake256_simple_32_fu_246_ap_ready,
-        ephemeralsk_address0 => grp_cshake256_simple_32_fu_246_ephemeralsk_address0,
-        ephemeralsk_ce0 => grp_cshake256_simple_32_fu_246_ephemeralsk_ce0,
-        ephemeralsk_we0 => grp_cshake256_simple_32_fu_246_ephemeralsk_we0,
-        ephemeralsk_d0 => grp_cshake256_simple_32_fu_246_ephemeralsk_d0,
-        in_0_address0 => grp_cshake256_simple_32_fu_246_in_0_address0,
-        in_0_ce0 => grp_cshake256_simple_32_fu_246_in_0_ce0,
+        ap_start => grp_cshake256_simple_32_fu_244_ap_start,
+        ap_done => grp_cshake256_simple_32_fu_244_ap_done,
+        ap_idle => grp_cshake256_simple_32_fu_244_ap_idle,
+        ap_ready => grp_cshake256_simple_32_fu_244_ap_ready,
+        ephemeralsk_address0 => grp_cshake256_simple_32_fu_244_ephemeralsk_address0,
+        ephemeralsk_ce0 => grp_cshake256_simple_32_fu_244_ephemeralsk_ce0,
+        ephemeralsk_we0 => grp_cshake256_simple_32_fu_244_ephemeralsk_we0,
+        ephemeralsk_d0 => grp_cshake256_simple_32_fu_244_ephemeralsk_d0,
+        in_0_address0 => grp_cshake256_simple_32_fu_244_in_0_address0,
+        in_0_ce0 => grp_cshake256_simple_32_fu_244_in_0_ce0,
         in_0_q0 => temp_q0,
-        in_0_address1 => grp_cshake256_simple_32_fu_246_in_0_address1,
-        in_0_ce1 => grp_cshake256_simple_32_fu_246_in_0_ce1,
+        in_0_address1 => grp_cshake256_simple_32_fu_244_in_0_address1,
+        in_0_ce1 => grp_cshake256_simple_32_fu_244_in_0_ce1,
         in_0_q1 => temp_q1,
-        in_1_address0 => grp_cshake256_simple_32_fu_246_in_1_address0,
-        in_1_ce0 => grp_cshake256_simple_32_fu_246_in_1_ce0,
+        in_1_address0 => grp_cshake256_simple_32_fu_244_in_1_address0,
+        in_1_ce0 => grp_cshake256_simple_32_fu_244_in_1_ce0,
         in_1_q0 => temp_1_q0,
-        in_1_address1 => grp_cshake256_simple_32_fu_246_in_1_address1,
-        in_1_ce1 => grp_cshake256_simple_32_fu_246_in_1_ce1,
+        in_1_address1 => grp_cshake256_simple_32_fu_244_in_1_address1,
+        in_1_ce1 => grp_cshake256_simple_32_fu_244_in_1_ce1,
         in_1_q1 => temp_1_q1,
-        in_2_address0 => grp_cshake256_simple_32_fu_246_in_2_address0,
-        in_2_ce0 => grp_cshake256_simple_32_fu_246_in_2_ce0,
+        in_2_address0 => grp_cshake256_simple_32_fu_244_in_2_address0,
+        in_2_ce0 => grp_cshake256_simple_32_fu_244_in_2_ce0,
         in_2_q0 => temp_2_q0,
-        in_2_address1 => grp_cshake256_simple_32_fu_246_in_2_address1,
-        in_2_ce1 => grp_cshake256_simple_32_fu_246_in_2_ce1,
+        in_2_address1 => grp_cshake256_simple_32_fu_244_in_2_address1,
+        in_2_ce1 => grp_cshake256_simple_32_fu_244_in_2_ce1,
         in_2_q1 => temp_2_q1,
-        in_3_address0 => grp_cshake256_simple_32_fu_246_in_3_address0,
-        in_3_ce0 => grp_cshake256_simple_32_fu_246_in_3_ce0,
+        in_3_address0 => grp_cshake256_simple_32_fu_244_in_3_address0,
+        in_3_ce0 => grp_cshake256_simple_32_fu_244_in_3_ce0,
         in_3_q0 => temp_3_q0,
-        in_3_address1 => grp_cshake256_simple_32_fu_246_in_3_address1,
-        in_3_ce1 => grp_cshake256_simple_32_fu_246_in_3_ce1,
+        in_3_address1 => grp_cshake256_simple_32_fu_244_in_3_address1,
+        in_3_ce1 => grp_cshake256_simple_32_fu_244_in_3_ce1,
         in_3_q1 => temp_3_q1);
 
-    grp_EphemeralKeyGeneration_A_1_fu_257 : component sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1
+    grp_EphemeralKeyGeneration_A_1_fu_255 : component sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_EphemeralKeyGeneration_A_1_fu_257_ap_start,
-        ap_done => grp_EphemeralKeyGeneration_A_1_fu_257_ap_done,
-        ap_idle => grp_EphemeralKeyGeneration_A_1_fu_257_ap_idle,
-        ap_ready => grp_EphemeralKeyGeneration_A_1_fu_257_ap_ready,
-        ephemeralsk_address0 => grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address0,
-        ephemeralsk_ce0 => grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce0,
+        ap_start => grp_EphemeralKeyGeneration_A_1_fu_255_ap_start,
+        ap_done => grp_EphemeralKeyGeneration_A_1_fu_255_ap_done,
+        ap_idle => grp_EphemeralKeyGeneration_A_1_fu_255_ap_idle,
+        ap_ready => grp_EphemeralKeyGeneration_A_1_fu_255_ap_ready,
+        ephemeralsk_address0 => grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address0,
+        ephemeralsk_ce0 => grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce0,
         ephemeralsk_q0 => ephemeralsk_q0,
-        ephemeralsk_address1 => grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address1,
-        ephemeralsk_ce1 => grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce1,
+        ephemeralsk_address1 => grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address1,
+        ephemeralsk_ce1 => grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce1,
         ephemeralsk_q1 => ephemeralsk_q1,
-        m_axi_gmem0_0_AWVALID => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWVALID,
-        m_axi_gmem0_0_AWREADY => m_axi_gmem0_0_AWREADY,
-        m_axi_gmem0_0_AWADDR => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWADDR,
-        m_axi_gmem0_0_AWID => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWID,
-        m_axi_gmem0_0_AWLEN => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLEN,
-        m_axi_gmem0_0_AWSIZE => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWSIZE,
-        m_axi_gmem0_0_AWBURST => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWBURST,
-        m_axi_gmem0_0_AWLOCK => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLOCK,
-        m_axi_gmem0_0_AWCACHE => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWCACHE,
-        m_axi_gmem0_0_AWPROT => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWPROT,
-        m_axi_gmem0_0_AWQOS => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWQOS,
-        m_axi_gmem0_0_AWREGION => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWREGION,
-        m_axi_gmem0_0_AWUSER => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWUSER,
-        m_axi_gmem0_0_WVALID => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WVALID,
-        m_axi_gmem0_0_WREADY => m_axi_gmem0_0_WREADY,
-        m_axi_gmem0_0_WDATA => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WDATA,
-        m_axi_gmem0_0_WSTRB => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WSTRB,
-        m_axi_gmem0_0_WLAST => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WLAST,
-        m_axi_gmem0_0_WID => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WID,
-        m_axi_gmem0_0_WUSER => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WUSER,
-        m_axi_gmem0_0_ARVALID => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARVALID,
-        m_axi_gmem0_0_ARREADY => ap_const_logic_0,
-        m_axi_gmem0_0_ARADDR => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARADDR,
-        m_axi_gmem0_0_ARID => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARID,
-        m_axi_gmem0_0_ARLEN => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARLEN,
-        m_axi_gmem0_0_ARSIZE => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARSIZE,
-        m_axi_gmem0_0_ARBURST => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARBURST,
-        m_axi_gmem0_0_ARLOCK => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARLOCK,
-        m_axi_gmem0_0_ARCACHE => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARCACHE,
-        m_axi_gmem0_0_ARPROT => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARPROT,
-        m_axi_gmem0_0_ARQOS => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARQOS,
-        m_axi_gmem0_0_ARREGION => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARREGION,
-        m_axi_gmem0_0_ARUSER => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_ARUSER,
-        m_axi_gmem0_0_RVALID => ap_const_logic_0,
-        m_axi_gmem0_0_RREADY => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_RREADY,
-        m_axi_gmem0_0_RDATA => ap_const_lv8_0,
-        m_axi_gmem0_0_RLAST => ap_const_logic_0,
-        m_axi_gmem0_0_RID => ap_const_lv1_0,
-        m_axi_gmem0_0_RFIFONUM => ap_const_lv11_0,
-        m_axi_gmem0_0_RUSER => ap_const_lv1_0,
-        m_axi_gmem0_0_RRESP => ap_const_lv2_0,
-        m_axi_gmem0_0_BVALID => m_axi_gmem0_0_BVALID,
-        m_axi_gmem0_0_BREADY => grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_BREADY,
-        m_axi_gmem0_0_BRESP => m_axi_gmem0_0_BRESP,
-        m_axi_gmem0_0_BID => m_axi_gmem0_0_BID,
-        m_axi_gmem0_0_BUSER => m_axi_gmem0_0_BUSER,
+        m_axi_gmem_0_AWVALID => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => m_axi_gmem_0_AWREADY,
+        m_axi_gmem_0_AWADDR => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => m_axi_gmem_0_WREADY,
+        m_axi_gmem_0_WDATA => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => ap_const_logic_0,
+        m_axi_gmem_0_ARADDR => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => ap_const_logic_0,
+        m_axi_gmem_0_RREADY => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => ap_const_lv8_0,
+        m_axi_gmem_0_RLAST => ap_const_logic_0,
+        m_axi_gmem_0_RID => ap_const_lv1_0,
+        m_axi_gmem_0_RFIFONUM => ap_const_lv11_0,
+        m_axi_gmem_0_RUSER => ap_const_lv1_0,
+        m_axi_gmem_0_RRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BVALID => m_axi_gmem_0_BVALID,
+        m_axi_gmem_0_BREADY => grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => m_axi_gmem_0_BRESP,
+        m_axi_gmem_0_BID => m_axi_gmem_0_BID,
+        m_axi_gmem_0_BUSER => m_axi_gmem_0_BUSER,
         PublicKeyA => ct,
-        strat_Alice_1_address0 => grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_address0,
-        strat_Alice_1_ce0 => grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_ce0,
+        strat_Alice_1_address0 => grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_address0,
+        strat_Alice_1_ce0 => grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_ce0,
         strat_Alice_1_q0 => strat_Alice_1_q0);
 
-    grp_EphemeralSecretAgreement_A_1_fu_292 : component sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1
+    grp_EphemeralSecretAgreement_A_1_fu_290 : component sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_EphemeralSecretAgreement_A_1_fu_292_ap_start,
-        ap_done => grp_EphemeralSecretAgreement_A_1_fu_292_ap_done,
-        ap_idle => grp_EphemeralSecretAgreement_A_1_fu_292_ap_idle,
-        ap_ready => grp_EphemeralSecretAgreement_A_1_fu_292_ap_ready,
-        ephemeralsk_address0 => grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address0,
-        ephemeralsk_ce0 => grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce0,
+        ap_start => grp_EphemeralSecretAgreement_A_1_fu_290_ap_start,
+        ap_done => grp_EphemeralSecretAgreement_A_1_fu_290_ap_done,
+        ap_idle => grp_EphemeralSecretAgreement_A_1_fu_290_ap_idle,
+        ap_ready => grp_EphemeralSecretAgreement_A_1_fu_290_ap_ready,
+        ephemeralsk_address0 => grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address0,
+        ephemeralsk_ce0 => grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce0,
         ephemeralsk_q0 => ephemeralsk_q0,
-        ephemeralsk_address1 => grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address1,
-        ephemeralsk_ce1 => grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce1,
+        ephemeralsk_address1 => grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address1,
+        ephemeralsk_ce1 => grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce1,
         ephemeralsk_q1 => ephemeralsk_q1,
-        m_axi_gmem2_0_AWVALID => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWVALID,
-        m_axi_gmem2_0_AWREADY => ap_const_logic_0,
-        m_axi_gmem2_0_AWADDR => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWADDR,
-        m_axi_gmem2_0_AWID => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWID,
-        m_axi_gmem2_0_AWLEN => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWLEN,
-        m_axi_gmem2_0_AWSIZE => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWSIZE,
-        m_axi_gmem2_0_AWBURST => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWBURST,
-        m_axi_gmem2_0_AWLOCK => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWLOCK,
-        m_axi_gmem2_0_AWCACHE => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWCACHE,
-        m_axi_gmem2_0_AWPROT => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWPROT,
-        m_axi_gmem2_0_AWQOS => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWQOS,
-        m_axi_gmem2_0_AWREGION => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWREGION,
-        m_axi_gmem2_0_AWUSER => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_AWUSER,
-        m_axi_gmem2_0_WVALID => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WVALID,
-        m_axi_gmem2_0_WREADY => ap_const_logic_0,
-        m_axi_gmem2_0_WDATA => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WDATA,
-        m_axi_gmem2_0_WSTRB => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WSTRB,
-        m_axi_gmem2_0_WLAST => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WLAST,
-        m_axi_gmem2_0_WID => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WID,
-        m_axi_gmem2_0_WUSER => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_WUSER,
-        m_axi_gmem2_0_ARVALID => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARVALID,
-        m_axi_gmem2_0_ARREADY => m_axi_gmem2_0_ARREADY,
-        m_axi_gmem2_0_ARADDR => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARADDR,
-        m_axi_gmem2_0_ARID => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARID,
-        m_axi_gmem2_0_ARLEN => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLEN,
-        m_axi_gmem2_0_ARSIZE => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARSIZE,
-        m_axi_gmem2_0_ARBURST => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARBURST,
-        m_axi_gmem2_0_ARLOCK => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLOCK,
-        m_axi_gmem2_0_ARCACHE => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARCACHE,
-        m_axi_gmem2_0_ARPROT => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARPROT,
-        m_axi_gmem2_0_ARQOS => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARQOS,
-        m_axi_gmem2_0_ARREGION => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARREGION,
-        m_axi_gmem2_0_ARUSER => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARUSER,
-        m_axi_gmem2_0_RVALID => m_axi_gmem2_0_RVALID,
-        m_axi_gmem2_0_RREADY => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_RREADY,
-        m_axi_gmem2_0_RDATA => m_axi_gmem2_0_RDATA,
-        m_axi_gmem2_0_RLAST => m_axi_gmem2_0_RLAST,
-        m_axi_gmem2_0_RID => m_axi_gmem2_0_RID,
-        m_axi_gmem2_0_RFIFONUM => m_axi_gmem2_0_RFIFONUM,
-        m_axi_gmem2_0_RUSER => m_axi_gmem2_0_RUSER,
-        m_axi_gmem2_0_RRESP => m_axi_gmem2_0_RRESP,
-        m_axi_gmem2_0_BVALID => ap_const_logic_0,
-        m_axi_gmem2_0_BREADY => grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_BREADY,
-        m_axi_gmem2_0_BRESP => ap_const_lv2_0,
-        m_axi_gmem2_0_BID => ap_const_lv1_0,
-        m_axi_gmem2_0_BUSER => ap_const_lv1_0,
+        m_axi_gmem_0_AWVALID => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => ap_const_logic_0,
+        m_axi_gmem_0_AWADDR => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => ap_const_logic_0,
+        m_axi_gmem_0_WDATA => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => m_axi_gmem_0_ARREADY,
+        m_axi_gmem_0_ARADDR => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => m_axi_gmem_0_RVALID,
+        m_axi_gmem_0_RREADY => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => m_axi_gmem_0_RDATA,
+        m_axi_gmem_0_RLAST => m_axi_gmem_0_RLAST,
+        m_axi_gmem_0_RID => m_axi_gmem_0_RID,
+        m_axi_gmem_0_RFIFONUM => m_axi_gmem_0_RFIFONUM,
+        m_axi_gmem_0_RUSER => m_axi_gmem_0_RUSER,
+        m_axi_gmem_0_RRESP => m_axi_gmem_0_RRESP,
+        m_axi_gmem_0_BVALID => ap_const_logic_0,
+        m_axi_gmem_0_BREADY => grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BID => ap_const_lv1_0,
+        m_axi_gmem_0_BUSER => ap_const_lv1_0,
         PublicKeyB => pk,
-        SharedSecretA_address0 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_address0,
-        SharedSecretA_ce0 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce0,
-        SharedSecretA_we0 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we0,
-        SharedSecretA_d0 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_d0,
-        SharedSecretA_address1 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_address1,
-        SharedSecretA_ce1 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce1,
-        SharedSecretA_we1 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we1,
-        SharedSecretA_d1 => grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_d1,
-        strat_Alice_1_address0 => grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_address0,
-        strat_Alice_1_ce0 => grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_ce0,
+        SharedSecretA_address0 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_address0,
+        SharedSecretA_ce0 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce0,
+        SharedSecretA_we0 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we0,
+        SharedSecretA_d0 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_d0,
+        SharedSecretA_address1 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_address1,
+        SharedSecretA_ce1 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce1,
+        SharedSecretA_we1 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we1,
+        SharedSecretA_d1 => grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_d1,
+        strat_Alice_1_address0 => grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_address0,
+        strat_Alice_1_ce0 => grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_ce0,
         strat_Alice_1_q0 => strat_Alice_1_q0);
 
-    grp_cshake256_simple_32_clone_fu_317 : component sikep503_kem_enc_hw_cshake256_simple_32_clone
+    grp_cshake256_simple_32_clone_fu_315 : component sikep503_kem_enc_hw_cshake256_simple_32_clone
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_cshake256_simple_32_clone_fu_317_ap_start,
-        ap_done => grp_cshake256_simple_32_clone_fu_317_ap_done,
-        ap_idle => grp_cshake256_simple_32_clone_fu_317_ap_idle,
-        ap_ready => grp_cshake256_simple_32_clone_fu_317_ap_ready,
-        output_r_address0 => grp_cshake256_simple_32_clone_fu_317_output_r_address0,
-        output_r_ce0 => grp_cshake256_simple_32_clone_fu_317_output_r_ce0,
-        output_r_we0 => grp_cshake256_simple_32_clone_fu_317_output_r_we0,
-        output_r_d0 => grp_cshake256_simple_32_clone_fu_317_output_r_d0,
-        in_r_address0 => grp_cshake256_simple_32_clone_fu_317_in_r_address0,
-        in_r_ce0 => grp_cshake256_simple_32_clone_fu_317_in_r_ce0,
+        ap_start => grp_cshake256_simple_32_clone_fu_315_ap_start,
+        ap_done => grp_cshake256_simple_32_clone_fu_315_ap_done,
+        ap_idle => grp_cshake256_simple_32_clone_fu_315_ap_idle,
+        ap_ready => grp_cshake256_simple_32_clone_fu_315_ap_ready,
+        output_r_address0 => grp_cshake256_simple_32_clone_fu_315_output_r_address0,
+        output_r_ce0 => grp_cshake256_simple_32_clone_fu_315_output_r_ce0,
+        output_r_we0 => grp_cshake256_simple_32_clone_fu_315_output_r_we0,
+        output_r_d0 => grp_cshake256_simple_32_clone_fu_315_output_r_d0,
+        in_r_address0 => grp_cshake256_simple_32_clone_fu_315_in_r_address0,
+        in_r_ce0 => grp_cshake256_simple_32_clone_fu_315_in_r_ce0,
         in_r_q0 => jinvariant_q0);
 
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start,
-        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_done,
-        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_idle,
-        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_ready,
-        m_axi_gmem0_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWVALID,
-        m_axi_gmem0_0_AWREADY => m_axi_gmem0_0_AWREADY,
-        m_axi_gmem0_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWADDR,
-        m_axi_gmem0_0_AWID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWID,
-        m_axi_gmem0_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLEN,
-        m_axi_gmem0_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWSIZE,
-        m_axi_gmem0_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWBURST,
-        m_axi_gmem0_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLOCK,
-        m_axi_gmem0_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWCACHE,
-        m_axi_gmem0_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWPROT,
-        m_axi_gmem0_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWQOS,
-        m_axi_gmem0_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWREGION,
-        m_axi_gmem0_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWUSER,
-        m_axi_gmem0_0_WVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WVALID,
-        m_axi_gmem0_0_WREADY => m_axi_gmem0_0_WREADY,
-        m_axi_gmem0_0_WDATA => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WDATA,
-        m_axi_gmem0_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WSTRB,
-        m_axi_gmem0_0_WLAST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WLAST,
-        m_axi_gmem0_0_WID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WID,
-        m_axi_gmem0_0_WUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WUSER,
-        m_axi_gmem0_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARVALID,
-        m_axi_gmem0_0_ARREADY => ap_const_logic_0,
-        m_axi_gmem0_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARADDR,
-        m_axi_gmem0_0_ARID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARID,
-        m_axi_gmem0_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARLEN,
-        m_axi_gmem0_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARSIZE,
-        m_axi_gmem0_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARBURST,
-        m_axi_gmem0_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARLOCK,
-        m_axi_gmem0_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARCACHE,
-        m_axi_gmem0_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARPROT,
-        m_axi_gmem0_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARQOS,
-        m_axi_gmem0_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARREGION,
-        m_axi_gmem0_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_ARUSER,
-        m_axi_gmem0_0_RVALID => ap_const_logic_0,
-        m_axi_gmem0_0_RREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_RREADY,
-        m_axi_gmem0_0_RDATA => ap_const_lv8_0,
-        m_axi_gmem0_0_RLAST => ap_const_logic_0,
-        m_axi_gmem0_0_RID => ap_const_lv1_0,
-        m_axi_gmem0_0_RFIFONUM => ap_const_lv11_0,
-        m_axi_gmem0_0_RUSER => ap_const_lv1_0,
-        m_axi_gmem0_0_RRESP => ap_const_lv2_0,
-        m_axi_gmem0_0_BVALID => m_axi_gmem0_0_BVALID,
-        m_axi_gmem0_0_BREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_BREADY,
-        m_axi_gmem0_0_BRESP => m_axi_gmem0_0_BRESP,
-        m_axi_gmem0_0_BID => m_axi_gmem0_0_BID,
-        m_axi_gmem0_0_BUSER => m_axi_gmem0_0_BUSER,
-        ct => ct,
-        add_ln56 => add_ln56_reg_454,
-        temp_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_address0,
-        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_ce0,
+        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start,
+        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_done,
+        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_idle,
+        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_ready,
+        m_axi_gmem_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => m_axi_gmem_0_AWREADY,
+        m_axi_gmem_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => m_axi_gmem_0_WREADY,
+        m_axi_gmem_0_WDATA => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => ap_const_logic_0,
+        m_axi_gmem_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => ap_const_logic_0,
+        m_axi_gmem_0_RREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => ap_const_lv8_0,
+        m_axi_gmem_0_RLAST => ap_const_logic_0,
+        m_axi_gmem_0_RID => ap_const_lv1_0,
+        m_axi_gmem_0_RFIFONUM => ap_const_lv11_0,
+        m_axi_gmem_0_RUSER => ap_const_lv1_0,
+        m_axi_gmem_0_RRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BVALID => m_axi_gmem_0_BVALID,
+        m_axi_gmem_0_BREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => m_axi_gmem_0_BRESP,
+        m_axi_gmem_0_BID => m_axi_gmem_0_BID,
+        m_axi_gmem_0_BUSER => m_axi_gmem_0_BUSER,
+        add_ln81 => add_ln81_reg_450,
+        temp_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_address0,
+        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_ce0,
         temp_q0 => temp_q0,
-        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_address0,
-        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_ce0,
+        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_address0,
+        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_ce0,
         temp_1_q0 => temp_1_q0,
-        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_address0,
-        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_ce0,
+        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_address0,
+        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_ce0,
         temp_2_q0 => temp_2_q0,
-        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_address0,
-        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_ce0,
+        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_address0,
+        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_ce0,
         temp_3_q0 => temp_3_q0,
-        h_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_address0,
-        h_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_ce0,
+        h_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_address0,
+        h_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_ce0,
         h_q0 => h_q0);
 
-    grp_crypto_kem_enc_1_Pipeline_4_fu_338 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_4
+    grp_crypto_kem_enc_1_Pipeline_4_fu_335 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_4
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start,
-        ap_done => grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_done,
-        ap_idle => grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_idle,
-        ap_ready => grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_ready,
-        m_axi_gmem0_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWVALID,
-        m_axi_gmem0_0_AWREADY => ap_const_logic_0,
-        m_axi_gmem0_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWADDR,
-        m_axi_gmem0_0_AWID => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWID,
-        m_axi_gmem0_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWLEN,
-        m_axi_gmem0_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWSIZE,
-        m_axi_gmem0_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWBURST,
-        m_axi_gmem0_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWLOCK,
-        m_axi_gmem0_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWCACHE,
-        m_axi_gmem0_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWPROT,
-        m_axi_gmem0_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWQOS,
-        m_axi_gmem0_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWREGION,
-        m_axi_gmem0_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_AWUSER,
-        m_axi_gmem0_0_WVALID => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WVALID,
-        m_axi_gmem0_0_WREADY => ap_const_logic_0,
-        m_axi_gmem0_0_WDATA => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WDATA,
-        m_axi_gmem0_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WSTRB,
-        m_axi_gmem0_0_WLAST => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WLAST,
-        m_axi_gmem0_0_WID => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WID,
-        m_axi_gmem0_0_WUSER => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_WUSER,
-        m_axi_gmem0_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARVALID,
-        m_axi_gmem0_0_ARREADY => m_axi_gmem0_0_ARREADY,
-        m_axi_gmem0_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARADDR,
-        m_axi_gmem0_0_ARID => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARID,
-        m_axi_gmem0_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLEN,
-        m_axi_gmem0_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARSIZE,
-        m_axi_gmem0_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARBURST,
-        m_axi_gmem0_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLOCK,
-        m_axi_gmem0_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARCACHE,
-        m_axi_gmem0_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARPROT,
-        m_axi_gmem0_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARQOS,
-        m_axi_gmem0_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARREGION,
-        m_axi_gmem0_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARUSER,
-        m_axi_gmem0_0_RVALID => m_axi_gmem0_0_RVALID,
-        m_axi_gmem0_0_RREADY => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_RREADY,
-        m_axi_gmem0_0_RDATA => m_axi_gmem0_0_RDATA,
-        m_axi_gmem0_0_RLAST => m_axi_gmem0_0_RLAST,
-        m_axi_gmem0_0_RID => m_axi_gmem0_0_RID,
-        m_axi_gmem0_0_RFIFONUM => m_axi_gmem0_0_RFIFONUM,
-        m_axi_gmem0_0_RUSER => m_axi_gmem0_0_RUSER,
-        m_axi_gmem0_0_RRESP => m_axi_gmem0_0_RRESP,
-        m_axi_gmem0_0_BVALID => ap_const_logic_0,
-        m_axi_gmem0_0_BREADY => grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_BREADY,
-        m_axi_gmem0_0_BRESP => ap_const_lv2_0,
-        m_axi_gmem0_0_BID => ap_const_lv1_0,
-        m_axi_gmem0_0_BUSER => ap_const_lv1_0,
+        ap_start => grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start,
+        ap_done => grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_done,
+        ap_idle => grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_idle,
+        ap_ready => grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_ready,
+        m_axi_gmem_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => ap_const_logic_0,
+        m_axi_gmem_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => ap_const_logic_0,
+        m_axi_gmem_0_WDATA => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => m_axi_gmem_0_ARREADY,
+        m_axi_gmem_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => m_axi_gmem_0_RVALID,
+        m_axi_gmem_0_RREADY => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => m_axi_gmem_0_RDATA,
+        m_axi_gmem_0_RLAST => m_axi_gmem_0_RLAST,
+        m_axi_gmem_0_RID => m_axi_gmem_0_RID,
+        m_axi_gmem_0_RFIFONUM => m_axi_gmem_0_RFIFONUM,
+        m_axi_gmem_0_RUSER => m_axi_gmem_0_RUSER,
+        m_axi_gmem_0_RRESP => m_axi_gmem_0_RRESP,
+        m_axi_gmem_0_BVALID => ap_const_logic_0,
+        m_axi_gmem_0_BREADY => grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BID => ap_const_lv1_0,
+        m_axi_gmem_0_BUSER => ap_const_lv1_0,
         ct => ct,
-        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_address0,
-        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_ce0,
-        temp_3_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_we0,
-        temp_3_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_d0,
-        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_address0,
-        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_ce0,
-        temp_2_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_we0,
-        temp_2_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_d0,
-        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_address0,
-        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_ce0,
-        temp_1_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_we0,
-        temp_1_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_d0,
-        temp_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_address0,
-        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_ce0,
-        temp_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_we0,
-        temp_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_d0);
+        temp_3_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_address0,
+        temp_3_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_ce0,
+        temp_3_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_we0,
+        temp_3_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_d0,
+        temp_2_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_address0,
+        temp_2_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_ce0,
+        temp_2_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_we0,
+        temp_2_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_d0,
+        temp_1_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_address0,
+        temp_1_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_ce0,
+        temp_1_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_we0,
+        temp_1_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_d0,
+        temp_address0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_address0,
+        temp_ce0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_ce0,
+        temp_we0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_we0,
+        temp_d0 => grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_d0);
 
-    grp_cshake256_simple_absorb_fu_349 : component sikep503_kem_enc_hw_cshake256_simple_absorb
+    grp_cshake256_simple_absorb_fu_346 : component sikep503_kem_enc_hw_cshake256_simple_absorb
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_cshake256_simple_absorb_fu_349_ap_start,
-        ap_done => grp_cshake256_simple_absorb_fu_349_ap_done,
-        ap_idle => grp_cshake256_simple_absorb_fu_349_ap_idle,
-        ap_ready => grp_cshake256_simple_absorb_fu_349_ap_ready,
-        s_address0 => grp_cshake256_simple_absorb_fu_349_s_address0,
-        s_ce0 => grp_cshake256_simple_absorb_fu_349_s_ce0,
-        s_we0 => grp_cshake256_simple_absorb_fu_349_s_we0,
-        s_d0 => grp_cshake256_simple_absorb_fu_349_s_d0,
+        ap_start => grp_cshake256_simple_absorb_fu_346_ap_start,
+        ap_done => grp_cshake256_simple_absorb_fu_346_ap_done,
+        ap_idle => grp_cshake256_simple_absorb_fu_346_ap_idle,
+        ap_ready => grp_cshake256_simple_absorb_fu_346_ap_ready,
+        s_address0 => grp_cshake256_simple_absorb_fu_346_s_address0,
+        s_ce0 => grp_cshake256_simple_absorb_fu_346_s_ce0,
+        s_we0 => grp_cshake256_simple_absorb_fu_346_s_we0,
+        s_d0 => grp_cshake256_simple_absorb_fu_346_s_d0,
         s_q0 => s_i_q0,
-        s_address1 => grp_cshake256_simple_absorb_fu_349_s_address1,
-        s_ce1 => grp_cshake256_simple_absorb_fu_349_s_ce1,
-        s_we1 => grp_cshake256_simple_absorb_fu_349_s_we1,
-        s_d1 => grp_cshake256_simple_absorb_fu_349_s_d1,
+        s_address1 => grp_cshake256_simple_absorb_fu_346_s_address1,
+        s_ce1 => grp_cshake256_simple_absorb_fu_346_s_ce1,
+        s_we1 => grp_cshake256_simple_absorb_fu_346_s_we1,
+        s_d1 => grp_cshake256_simple_absorb_fu_346_s_d1,
         s_q1 => s_i_q1,
         cstm => ap_const_lv1_1,
-        in_0_address0 => grp_cshake256_simple_absorb_fu_349_in_0_address0,
-        in_0_ce0 => grp_cshake256_simple_absorb_fu_349_in_0_ce0,
+        in_0_address0 => grp_cshake256_simple_absorb_fu_346_in_0_address0,
+        in_0_ce0 => grp_cshake256_simple_absorb_fu_346_in_0_ce0,
         in_0_q0 => temp_q0,
-        in_0_address1 => grp_cshake256_simple_absorb_fu_349_in_0_address1,
-        in_0_ce1 => grp_cshake256_simple_absorb_fu_349_in_0_ce1,
+        in_0_address1 => grp_cshake256_simple_absorb_fu_346_in_0_address1,
+        in_0_ce1 => grp_cshake256_simple_absorb_fu_346_in_0_ce1,
         in_0_q1 => temp_q1,
-        in_1_address0 => grp_cshake256_simple_absorb_fu_349_in_1_address0,
-        in_1_ce0 => grp_cshake256_simple_absorb_fu_349_in_1_ce0,
+        in_1_address0 => grp_cshake256_simple_absorb_fu_346_in_1_address0,
+        in_1_ce0 => grp_cshake256_simple_absorb_fu_346_in_1_ce0,
         in_1_q0 => temp_1_q0,
-        in_1_address1 => grp_cshake256_simple_absorb_fu_349_in_1_address1,
-        in_1_ce1 => grp_cshake256_simple_absorb_fu_349_in_1_ce1,
+        in_1_address1 => grp_cshake256_simple_absorb_fu_346_in_1_address1,
+        in_1_ce1 => grp_cshake256_simple_absorb_fu_346_in_1_ce1,
         in_1_q1 => temp_1_q1,
-        in_2_address0 => grp_cshake256_simple_absorb_fu_349_in_2_address0,
-        in_2_ce0 => grp_cshake256_simple_absorb_fu_349_in_2_ce0,
+        in_2_address0 => grp_cshake256_simple_absorb_fu_346_in_2_address0,
+        in_2_ce0 => grp_cshake256_simple_absorb_fu_346_in_2_ce0,
         in_2_q0 => temp_2_q0,
-        in_2_address1 => grp_cshake256_simple_absorb_fu_349_in_2_address1,
-        in_2_ce1 => grp_cshake256_simple_absorb_fu_349_in_2_ce1,
+        in_2_address1 => grp_cshake256_simple_absorb_fu_346_in_2_address1,
+        in_2_ce1 => grp_cshake256_simple_absorb_fu_346_in_2_ce1,
         in_2_q1 => temp_2_q1,
-        in_3_address0 => grp_cshake256_simple_absorb_fu_349_in_3_address0,
-        in_3_ce0 => grp_cshake256_simple_absorb_fu_349_in_3_ce0,
+        in_3_address0 => grp_cshake256_simple_absorb_fu_346_in_3_address0,
+        in_3_ce0 => grp_cshake256_simple_absorb_fu_346_in_3_ce0,
         in_3_q0 => temp_3_q0,
-        in_3_address1 => grp_cshake256_simple_absorb_fu_349_in_3_address1,
-        in_3_ce1 => grp_cshake256_simple_absorb_fu_349_in_3_ce1,
+        in_3_address1 => grp_cshake256_simple_absorb_fu_346_in_3_address1,
+        in_3_ce1 => grp_cshake256_simple_absorb_fu_346_in_3_ce1,
         in_3_q1 => temp_3_q1);
 
-    grp_KeccakF1600_StatePermute_fu_362 : component sikep503_kem_enc_hw_KeccakF1600_StatePermute
+    grp_KeccakF1600_StatePermute_fu_359 : component sikep503_kem_enc_hw_KeccakF1600_StatePermute
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_KeccakF1600_StatePermute_fu_362_ap_start,
-        ap_done => grp_KeccakF1600_StatePermute_fu_362_ap_done,
-        ap_idle => grp_KeccakF1600_StatePermute_fu_362_ap_idle,
-        ap_ready => grp_KeccakF1600_StatePermute_fu_362_ap_ready,
-        s_i_address0 => grp_KeccakF1600_StatePermute_fu_362_s_i_address0,
-        s_i_ce0 => grp_KeccakF1600_StatePermute_fu_362_s_i_ce0,
-        s_i_we0 => grp_KeccakF1600_StatePermute_fu_362_s_i_we0,
-        s_i_d0 => grp_KeccakF1600_StatePermute_fu_362_s_i_d0,
+        ap_start => grp_KeccakF1600_StatePermute_fu_359_ap_start,
+        ap_done => grp_KeccakF1600_StatePermute_fu_359_ap_done,
+        ap_idle => grp_KeccakF1600_StatePermute_fu_359_ap_idle,
+        ap_ready => grp_KeccakF1600_StatePermute_fu_359_ap_ready,
+        s_i_address0 => grp_KeccakF1600_StatePermute_fu_359_s_i_address0,
+        s_i_ce0 => grp_KeccakF1600_StatePermute_fu_359_s_i_ce0,
+        s_i_we0 => grp_KeccakF1600_StatePermute_fu_359_s_i_we0,
+        s_i_d0 => grp_KeccakF1600_StatePermute_fu_359_s_i_d0,
         s_i_q0 => s_i_q0,
-        s_i_address1 => grp_KeccakF1600_StatePermute_fu_362_s_i_address1,
-        s_i_ce1 => grp_KeccakF1600_StatePermute_fu_362_s_i_ce1,
-        s_i_we1 => grp_KeccakF1600_StatePermute_fu_362_s_i_we1,
-        s_i_d1 => grp_KeccakF1600_StatePermute_fu_362_s_i_d1,
+        s_i_address1 => grp_KeccakF1600_StatePermute_fu_359_s_i_address1,
+        s_i_ce1 => grp_KeccakF1600_StatePermute_fu_359_s_i_ce1,
+        s_i_we1 => grp_KeccakF1600_StatePermute_fu_359_s_i_we1,
+        s_i_d1 => grp_KeccakF1600_StatePermute_fu_359_s_i_d1,
         s_i_q1 => s_i_q1);
 
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start,
-        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_done,
-        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_idle,
-        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_ready,
-        t_80_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_address0,
-        t_80_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce0,
-        t_80_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we0,
-        t_80_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_d0,
-        t_80_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_address1,
-        t_80_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce1,
-        t_80_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we1,
-        t_80_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_d1,
-        t_79_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_address0,
-        t_79_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce0,
-        t_79_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we0,
-        t_79_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_d0,
-        t_79_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_address1,
-        t_79_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce1,
-        t_79_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we1,
-        t_79_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_d1,
-        t_78_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_address0,
-        t_78_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce0,
-        t_78_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we0,
-        t_78_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_d0,
-        t_78_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_address1,
-        t_78_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce1,
-        t_78_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we1,
-        t_78_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_d1,
-        t_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_address0,
-        t_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce0,
-        t_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we0,
-        t_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_d0,
-        t_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_address1,
-        t_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce1,
-        t_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we1,
-        t_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_d1,
-        s_i_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_address0,
-        s_i_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_ce0,
+        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start,
+        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_done,
+        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_idle,
+        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_ready,
+        t_80_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_address0,
+        t_80_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce0,
+        t_80_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we0,
+        t_80_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_d0,
+        t_80_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_address1,
+        t_80_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce1,
+        t_80_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we1,
+        t_80_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_d1,
+        t_79_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_address0,
+        t_79_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce0,
+        t_79_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we0,
+        t_79_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_d0,
+        t_79_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_address1,
+        t_79_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce1,
+        t_79_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we1,
+        t_79_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_d1,
+        t_78_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_address0,
+        t_78_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce0,
+        t_78_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we0,
+        t_78_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_d0,
+        t_78_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_address1,
+        t_78_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce1,
+        t_78_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we1,
+        t_78_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_d1,
+        t_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_address0,
+        t_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce0,
+        t_we0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we0,
+        t_d0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_d0,
+        t_address1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_address1,
+        t_ce1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce1,
+        t_we1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we1,
+        t_d1 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_d1,
+        s_i_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_address0,
+        s_i_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_ce0,
         s_i_q0 => s_i_q0);
 
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375 : component sikep503_kem_enc_hw_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start,
-        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_done,
-        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_idle,
-        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_ready,
-        m_axi_gmem1_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWVALID,
-        m_axi_gmem1_0_AWREADY => m_axi_gmem1_0_AWREADY,
-        m_axi_gmem1_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWADDR,
-        m_axi_gmem1_0_AWID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWID,
-        m_axi_gmem1_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLEN,
-        m_axi_gmem1_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWSIZE,
-        m_axi_gmem1_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWBURST,
-        m_axi_gmem1_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLOCK,
-        m_axi_gmem1_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWCACHE,
-        m_axi_gmem1_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWPROT,
-        m_axi_gmem1_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWQOS,
-        m_axi_gmem1_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWREGION,
-        m_axi_gmem1_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWUSER,
-        m_axi_gmem1_0_WVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WVALID,
-        m_axi_gmem1_0_WREADY => m_axi_gmem1_0_WREADY,
-        m_axi_gmem1_0_WDATA => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WDATA,
-        m_axi_gmem1_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WSTRB,
-        m_axi_gmem1_0_WLAST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WLAST,
-        m_axi_gmem1_0_WID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WID,
-        m_axi_gmem1_0_WUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WUSER,
-        m_axi_gmem1_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARVALID,
-        m_axi_gmem1_0_ARREADY => ap_const_logic_0,
-        m_axi_gmem1_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARADDR,
-        m_axi_gmem1_0_ARID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARID,
-        m_axi_gmem1_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARLEN,
-        m_axi_gmem1_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARSIZE,
-        m_axi_gmem1_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARBURST,
-        m_axi_gmem1_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARLOCK,
-        m_axi_gmem1_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARCACHE,
-        m_axi_gmem1_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARPROT,
-        m_axi_gmem1_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARQOS,
-        m_axi_gmem1_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARREGION,
-        m_axi_gmem1_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_ARUSER,
-        m_axi_gmem1_0_RVALID => ap_const_logic_0,
-        m_axi_gmem1_0_RREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_RREADY,
-        m_axi_gmem1_0_RDATA => ap_const_lv8_0,
-        m_axi_gmem1_0_RLAST => ap_const_logic_0,
-        m_axi_gmem1_0_RID => ap_const_lv1_0,
-        m_axi_gmem1_0_RFIFONUM => ap_const_lv11_0,
-        m_axi_gmem1_0_RUSER => ap_const_lv1_0,
-        m_axi_gmem1_0_RRESP => ap_const_lv2_0,
-        m_axi_gmem1_0_BVALID => m_axi_gmem1_0_BVALID,
-        m_axi_gmem1_0_BREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_BREADY,
-        m_axi_gmem1_0_BRESP => m_axi_gmem1_0_BRESP,
-        m_axi_gmem1_0_BID => m_axi_gmem1_0_BID,
-        m_axi_gmem1_0_BUSER => m_axi_gmem1_0_BUSER,
+        ap_start => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start,
+        ap_done => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_done,
+        ap_idle => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_idle,
+        ap_ready => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_ready,
+        m_axi_gmem_0_AWVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY => m_axi_gmem_0_AWREADY,
+        m_axi_gmem_0_AWADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY => m_axi_gmem_0_WREADY,
+        m_axi_gmem_0_WDATA => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY => ap_const_logic_0,
+        m_axi_gmem_0_ARADDR => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID => ap_const_logic_0,
+        m_axi_gmem_0_RREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA => ap_const_lv8_0,
+        m_axi_gmem_0_RLAST => ap_const_logic_0,
+        m_axi_gmem_0_RID => ap_const_lv1_0,
+        m_axi_gmem_0_RFIFONUM => ap_const_lv11_0,
+        m_axi_gmem_0_RUSER => ap_const_lv1_0,
+        m_axi_gmem_0_RRESP => ap_const_lv2_0,
+        m_axi_gmem_0_BVALID => m_axi_gmem_0_BVALID,
+        m_axi_gmem_0_BREADY => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP => m_axi_gmem_0_BRESP,
+        m_axi_gmem_0_BID => m_axi_gmem_0_BID,
+        m_axi_gmem_0_BUSER => m_axi_gmem_0_BUSER,
         ss => ss,
-        t_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_address0,
-        t_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_ce0,
+        t_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_address0,
+        t_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_ce0,
         t_q0 => t_q0,
-        t_78_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_address0,
-        t_78_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_ce0,
+        t_78_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_address0,
+        t_78_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_ce0,
         t_78_q0 => t_44_q0,
-        t_79_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_address0,
-        t_79_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_ce0,
+        t_79_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_address0,
+        t_79_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_ce0,
         t_79_q0 => t_45_q0,
-        t_80_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_address0,
-        t_80_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_ce0,
+        t_80_address0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_address0,
+        t_80_ce0 => grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_ce0,
         t_80_q0 => t_46_q0);
 
 
@@ -2512,192 +2416,192 @@ begin
     end process;
 
 
-    grp_EphemeralKeyGeneration_A_1_fu_257_ap_start_reg_assign_proc : process(ap_clk)
+    grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_EphemeralKeyGeneration_A_1_fu_257_ap_start_reg <= ap_const_logic_0;
+                grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-                    grp_EphemeralKeyGeneration_A_1_fu_257_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_EphemeralKeyGeneration_A_1_fu_257_ap_ready = ap_const_logic_1)) then 
-                    grp_EphemeralKeyGeneration_A_1_fu_257_ap_start_reg <= ap_const_logic_0;
+                    grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_EphemeralKeyGeneration_A_1_fu_255_ap_ready = ap_const_logic_1)) then 
+                    grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_EphemeralSecretAgreement_A_1_fu_292_ap_start_reg_assign_proc : process(ap_clk)
+    grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_EphemeralSecretAgreement_A_1_fu_292_ap_start_reg <= ap_const_logic_0;
+                grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state17)) then 
-                    grp_EphemeralSecretAgreement_A_1_fu_292_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_EphemeralSecretAgreement_A_1_fu_292_ap_ready = ap_const_logic_1)) then 
-                    grp_EphemeralSecretAgreement_A_1_fu_292_ap_start_reg <= ap_const_logic_0;
+                    grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_EphemeralSecretAgreement_A_1_fu_290_ap_ready = ap_const_logic_1)) then 
+                    grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_KeccakF1600_StatePermute_fu_362_ap_start_reg_assign_proc : process(ap_clk)
+    grp_KeccakF1600_StatePermute_fu_359_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_KeccakF1600_StatePermute_fu_362_ap_start_reg <= ap_const_logic_0;
+                grp_KeccakF1600_StatePermute_fu_359_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state40)) then 
-                    grp_KeccakF1600_StatePermute_fu_362_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_KeccakF1600_StatePermute_fu_362_ap_ready = ap_const_logic_1)) then 
-                    grp_KeccakF1600_StatePermute_fu_362_ap_start_reg <= ap_const_logic_0;
+                    grp_KeccakF1600_StatePermute_fu_359_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_KeccakF1600_StatePermute_fu_359_ap_ready = ap_const_logic_1)) then 
+                    grp_KeccakF1600_StatePermute_fu_359_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start_reg_assign_proc : process(ap_clk)
+    grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start_reg <= ap_const_logic_0;
+                grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
-                    grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_ready = ap_const_logic_1)) then 
-                    grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start_reg <= ap_const_logic_0;
+                    grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_ready = ap_const_logic_1)) then 
+                    grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start_reg_assign_proc : process(ap_clk)
+    grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start_reg <= ap_const_logic_0;
+                grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state36)) then 
-                    grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_ready = ap_const_logic_1)) then 
-                    grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start_reg <= ap_const_logic_0;
+                    grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_ready = ap_const_logic_1)) then 
+                    grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start_reg_assign_proc : process(ap_clk)
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start_reg <= ap_const_logic_0;
+                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg <= ap_const_logic_0;
             else
-                if ((not(((ap_start = ap_const_logic_0) or (m_axi_gmem2_0_ARREADY = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_ready = ap_const_logic_1)) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start_reg <= ap_const_logic_0;
+                if ((not(((m_axi_gmem_0_ARREADY = ap_const_logic_0) or (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_ready = ap_const_logic_1)) then 
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start_reg_assign_proc : process(ap_clk)
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start_reg <= ap_const_logic_0;
+                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state42)) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_ready = ap_const_logic_1)) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start_reg <= ap_const_logic_0;
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_ready = ap_const_logic_1)) then 
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start_reg_assign_proc : process(ap_clk)
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start_reg <= ap_const_logic_0;
-            else
-                if ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_ready = ap_const_logic_1)) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start_reg <= ap_const_logic_0;
-                end if; 
-            end if;
-        end if;
-    end process;
-
-
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start_reg_assign_proc : process(ap_clk)
-    begin
-        if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start_reg <= ap_const_logic_0;
+                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state45)) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_ready = ap_const_logic_1)) then 
-                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start_reg <= ap_const_logic_0;
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_ready = ap_const_logic_1)) then 
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_cshake256_simple_32_clone_fu_317_ap_start_reg_assign_proc : process(ap_clk)
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_cshake256_simple_32_clone_fu_317_ap_start_reg <= ap_const_logic_0;
+                grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg <= ap_const_logic_0;
+            else
+                if ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_ready = ap_const_logic_1)) then 
+                    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg <= ap_const_logic_0;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    grp_cshake256_simple_32_clone_fu_315_ap_start_reg_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                grp_cshake256_simple_32_clone_fu_315_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state19)) then 
-                    grp_cshake256_simple_32_clone_fu_317_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_cshake256_simple_32_clone_fu_317_ap_ready = ap_const_logic_1)) then 
-                    grp_cshake256_simple_32_clone_fu_317_ap_start_reg <= ap_const_logic_0;
+                    grp_cshake256_simple_32_clone_fu_315_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_cshake256_simple_32_clone_fu_315_ap_ready = ap_const_logic_1)) then 
+                    grp_cshake256_simple_32_clone_fu_315_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_cshake256_simple_32_fu_246_ap_start_reg_assign_proc : process(ap_clk)
+    grp_cshake256_simple_32_fu_244_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_cshake256_simple_32_fu_246_ap_start_reg <= ap_const_logic_0;
+                grp_cshake256_simple_32_fu_244_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state11)) then 
-                    grp_cshake256_simple_32_fu_246_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_cshake256_simple_32_fu_246_ap_ready = ap_const_logic_1)) then 
-                    grp_cshake256_simple_32_fu_246_ap_start_reg <= ap_const_logic_0;
+                    grp_cshake256_simple_32_fu_244_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_cshake256_simple_32_fu_244_ap_ready = ap_const_logic_1)) then 
+                    grp_cshake256_simple_32_fu_244_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_cshake256_simple_absorb_fu_349_ap_start_reg_assign_proc : process(ap_clk)
+    grp_cshake256_simple_absorb_fu_346_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_cshake256_simple_absorb_fu_349_ap_start_reg <= ap_const_logic_0;
+                grp_cshake256_simple_absorb_fu_346_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state38)) then 
-                    grp_cshake256_simple_absorb_fu_349_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_cshake256_simple_absorb_fu_349_ap_ready = ap_const_logic_1)) then 
-                    grp_cshake256_simple_absorb_fu_349_ap_start_reg <= ap_const_logic_0;
+                    grp_cshake256_simple_absorb_fu_346_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_cshake256_simple_absorb_fu_346_ap_ready = ap_const_logic_1)) then 
+                    grp_cshake256_simple_absorb_fu_346_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -2707,22 +2611,22 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state19)) then
-                add_ln56_reg_454 <= add_ln56_fu_405_p2;
+                add_ln81_reg_450 <= add_ln81_fu_402_p2;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, m_axi_gmem0_0_AWREADY, m_axi_gmem0_0_ARREADY, m_axi_gmem0_0_BVALID, m_axi_gmem1_0_AWREADY, m_axi_gmem1_0_BVALID, m_axi_gmem2_0_ARREADY, ap_CS_fsm_state20, ap_CS_fsm_state27, ap_CS_fsm_state28, ap_CS_fsm_state44, ap_CS_fsm_state51, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_done, grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_done, grp_cshake256_simple_32_fu_246_ap_done, grp_EphemeralKeyGeneration_A_1_fu_257_ap_done, grp_EphemeralSecretAgreement_A_1_fu_292_ap_done, grp_cshake256_simple_32_clone_fu_317_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_done, grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_done, grp_cshake256_simple_absorb_fu_349_ap_done, grp_KeccakF1600_StatePermute_fu_362_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_done, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state16, ap_CS_fsm_state18, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state41, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, m_axi_gmem_0_AWREADY, m_axi_gmem_0_ARREADY, m_axi_gmem_0_BVALID, ap_CS_fsm_state20, ap_CS_fsm_state27, ap_CS_fsm_state28, ap_CS_fsm_state44, ap_CS_fsm_state51, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_done, grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_done, grp_cshake256_simple_32_fu_244_ap_done, grp_EphemeralKeyGeneration_A_1_fu_255_ap_done, grp_EphemeralSecretAgreement_A_1_fu_290_ap_done, grp_cshake256_simple_32_clone_fu_315_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_done, grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_done, grp_cshake256_simple_absorb_fu_346_ap_done, grp_KeccakF1600_StatePermute_fu_359_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_done, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state16, ap_CS_fsm_state18, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state41, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if ((not(((ap_start = ap_const_logic_0) or (m_axi_gmem2_0_ARREADY = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
+                if ((not(((m_axi_gmem_0_ARREADY = ap_const_logic_0) or (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
@@ -2742,7 +2646,7 @@ begin
             when ap_ST_fsm_state9 => 
                 ap_NS_fsm <= ap_ST_fsm_state10;
             when ap_ST_fsm_state10 => 
-                if (((grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10))) then
+                if (((grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10))) then
                     ap_NS_fsm <= ap_ST_fsm_state11;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state10;
@@ -2750,7 +2654,7 @@ begin
             when ap_ST_fsm_state11 => 
                 ap_NS_fsm <= ap_ST_fsm_state12;
             when ap_ST_fsm_state12 => 
-                if (((grp_cshake256_simple_32_fu_246_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state12))) then
+                if (((grp_cshake256_simple_32_fu_244_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state12))) then
                     ap_NS_fsm <= ap_ST_fsm_state13;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state12;
@@ -2762,7 +2666,7 @@ begin
             when ap_ST_fsm_state15 => 
                 ap_NS_fsm <= ap_ST_fsm_state16;
             when ap_ST_fsm_state16 => 
-                if (((grp_EphemeralKeyGeneration_A_1_fu_257_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state16))) then
+                if (((grp_EphemeralKeyGeneration_A_1_fu_255_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state16))) then
                     ap_NS_fsm <= ap_ST_fsm_state17;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state16;
@@ -2770,7 +2674,7 @@ begin
             when ap_ST_fsm_state17 => 
                 ap_NS_fsm <= ap_ST_fsm_state18;
             when ap_ST_fsm_state18 => 
-                if (((grp_EphemeralSecretAgreement_A_1_fu_292_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state18))) then
+                if (((grp_EphemeralSecretAgreement_A_1_fu_290_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state18))) then
                     ap_NS_fsm <= ap_ST_fsm_state19;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state18;
@@ -2778,7 +2682,7 @@ begin
             when ap_ST_fsm_state19 => 
                 ap_NS_fsm <= ap_ST_fsm_state20;
             when ap_ST_fsm_state20 => 
-                if ((not(((m_axi_gmem0_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_317_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20))) then
+                if ((not(((m_axi_gmem_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_315_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20))) then
                     ap_NS_fsm <= ap_ST_fsm_state21;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state20;
@@ -2786,7 +2690,7 @@ begin
             when ap_ST_fsm_state21 => 
                 ap_NS_fsm <= ap_ST_fsm_state22;
             when ap_ST_fsm_state22 => 
-                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state22))) then
+                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state22))) then
                     ap_NS_fsm <= ap_ST_fsm_state23;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state22;
@@ -2800,13 +2704,13 @@ begin
             when ap_ST_fsm_state26 => 
                 ap_NS_fsm <= ap_ST_fsm_state27;
             when ap_ST_fsm_state27 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state27) and (m_axi_gmem0_0_BVALID = ap_const_logic_1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state27) and (m_axi_gmem_0_BVALID = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state28;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state27;
                 end if;
             when ap_ST_fsm_state28 => 
-                if (((m_axi_gmem0_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28))) then
+                if (((m_axi_gmem_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28))) then
                     ap_NS_fsm <= ap_ST_fsm_state29;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state28;
@@ -2828,7 +2732,7 @@ begin
             when ap_ST_fsm_state36 => 
                 ap_NS_fsm <= ap_ST_fsm_state37;
             when ap_ST_fsm_state37 => 
-                if (((grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state37))) then
+                if (((grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state37))) then
                     ap_NS_fsm <= ap_ST_fsm_state38;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state37;
@@ -2836,7 +2740,7 @@ begin
             when ap_ST_fsm_state38 => 
                 ap_NS_fsm <= ap_ST_fsm_state39;
             when ap_ST_fsm_state39 => 
-                if (((grp_cshake256_simple_absorb_fu_349_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state39))) then
+                if (((grp_cshake256_simple_absorb_fu_346_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state39))) then
                     ap_NS_fsm <= ap_ST_fsm_state40;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state39;
@@ -2844,7 +2748,7 @@ begin
             when ap_ST_fsm_state40 => 
                 ap_NS_fsm <= ap_ST_fsm_state41;
             when ap_ST_fsm_state41 => 
-                if (((grp_KeccakF1600_StatePermute_fu_362_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state41))) then
+                if (((grp_KeccakF1600_StatePermute_fu_359_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state41))) then
                     ap_NS_fsm <= ap_ST_fsm_state42;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state41;
@@ -2852,13 +2756,13 @@ begin
             when ap_ST_fsm_state42 => 
                 ap_NS_fsm <= ap_ST_fsm_state43;
             when ap_ST_fsm_state43 => 
-                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state43))) then
+                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state43))) then
                     ap_NS_fsm <= ap_ST_fsm_state44;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state43;
                 end if;
             when ap_ST_fsm_state44 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state44) and (m_axi_gmem1_0_AWREADY = ap_const_logic_1))) then
+                if (((m_axi_gmem_0_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state44))) then
                     ap_NS_fsm <= ap_ST_fsm_state45;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state44;
@@ -2866,7 +2770,7 @@ begin
             when ap_ST_fsm_state45 => 
                 ap_NS_fsm <= ap_ST_fsm_state46;
             when ap_ST_fsm_state46 => 
-                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state46))) then
+                if (((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state46))) then
                     ap_NS_fsm <= ap_ST_fsm_state47;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state46;
@@ -2880,7 +2784,7 @@ begin
             when ap_ST_fsm_state50 => 
                 ap_NS_fsm <= ap_ST_fsm_state51;
             when ap_ST_fsm_state51 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem1_0_BVALID = ap_const_logic_1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem_0_BVALID = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state51;
@@ -2889,7 +2793,7 @@ begin
                 ap_NS_fsm <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end case;
     end process;
-    add_ln56_fu_405_p2 <= std_logic_vector(unsigned(ct) + unsigned(ap_const_lv32_17A));
+    add_ln81_fu_402_p2 <= std_logic_vector(unsigned(ct) + unsigned(ap_const_lv64_17A));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
     ap_CS_fsm_state11 <= ap_CS_fsm(10);
@@ -2921,9 +2825,9 @@ begin
     ap_CS_fsm_state51 <= ap_CS_fsm(50);
     ap_CS_fsm_state9 <= ap_CS_fsm(8);
 
-    ap_ST_fsm_state10_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_done)
+    ap_ST_fsm_state10_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_done)
     begin
-        if ((grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_done = ap_const_logic_0)) then 
+        if ((grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state10_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state10_blk <= ap_const_logic_0;
@@ -2932,9 +2836,9 @@ begin
 
     ap_ST_fsm_state11_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state12_blk_assign_proc : process(grp_cshake256_simple_32_fu_246_ap_done)
+    ap_ST_fsm_state12_blk_assign_proc : process(grp_cshake256_simple_32_fu_244_ap_done)
     begin
-        if ((grp_cshake256_simple_32_fu_246_ap_done = ap_const_logic_0)) then 
+        if ((grp_cshake256_simple_32_fu_244_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state12_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state12_blk <= ap_const_logic_0;
@@ -2945,9 +2849,9 @@ begin
     ap_ST_fsm_state14_blk <= ap_const_logic_0;
     ap_ST_fsm_state15_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state16_blk_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_257_ap_done)
+    ap_ST_fsm_state16_blk_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_255_ap_done)
     begin
-        if ((grp_EphemeralKeyGeneration_A_1_fu_257_ap_done = ap_const_logic_0)) then 
+        if ((grp_EphemeralKeyGeneration_A_1_fu_255_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state16_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state16_blk <= ap_const_logic_0;
@@ -2956,9 +2860,9 @@ begin
 
     ap_ST_fsm_state17_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state18_blk_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_292_ap_done)
+    ap_ST_fsm_state18_blk_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_290_ap_done)
     begin
-        if ((grp_EphemeralSecretAgreement_A_1_fu_292_ap_done = ap_const_logic_0)) then 
+        if ((grp_EphemeralSecretAgreement_A_1_fu_290_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state18_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state18_blk <= ap_const_logic_0;
@@ -2967,9 +2871,9 @@ begin
 
     ap_ST_fsm_state19_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state1_blk_assign_proc : process(ap_start, m_axi_gmem2_0_ARREADY)
+    ap_ST_fsm_state1_blk_assign_proc : process(ap_start, m_axi_gmem_0_ARREADY)
     begin
-        if (((ap_start = ap_const_logic_0) or (m_axi_gmem2_0_ARREADY = ap_const_logic_0))) then 
+        if (((m_axi_gmem_0_ARREADY = ap_const_logic_0) or (ap_start = ap_const_logic_0))) then 
             ap_ST_fsm_state1_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state1_blk <= ap_const_logic_0;
@@ -2977,9 +2881,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state20_blk_assign_proc : process(m_axi_gmem0_0_AWREADY, grp_cshake256_simple_32_clone_fu_317_ap_done)
+    ap_ST_fsm_state20_blk_assign_proc : process(m_axi_gmem_0_AWREADY, grp_cshake256_simple_32_clone_fu_315_ap_done)
     begin
-        if (((m_axi_gmem0_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_317_ap_done = ap_const_logic_0))) then 
+        if (((m_axi_gmem_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_315_ap_done = ap_const_logic_0))) then 
             ap_ST_fsm_state20_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state20_blk <= ap_const_logic_0;
@@ -2988,9 +2892,9 @@ begin
 
     ap_ST_fsm_state21_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state22_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_done)
+    ap_ST_fsm_state22_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_done)
     begin
-        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_done = ap_const_logic_0)) then 
+        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state22_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state22_blk <= ap_const_logic_0;
@@ -3002,9 +2906,9 @@ begin
     ap_ST_fsm_state25_blk <= ap_const_logic_0;
     ap_ST_fsm_state26_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state27_blk_assign_proc : process(m_axi_gmem0_0_BVALID)
+    ap_ST_fsm_state27_blk_assign_proc : process(m_axi_gmem_0_BVALID)
     begin
-        if ((m_axi_gmem0_0_BVALID = ap_const_logic_0)) then 
+        if ((m_axi_gmem_0_BVALID = ap_const_logic_0)) then 
             ap_ST_fsm_state27_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state27_blk <= ap_const_logic_0;
@@ -3012,9 +2916,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state28_blk_assign_proc : process(m_axi_gmem0_0_ARREADY)
+    ap_ST_fsm_state28_blk_assign_proc : process(m_axi_gmem_0_ARREADY)
     begin
-        if ((m_axi_gmem0_0_ARREADY = ap_const_logic_0)) then 
+        if ((m_axi_gmem_0_ARREADY = ap_const_logic_0)) then 
             ap_ST_fsm_state28_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state28_blk <= ap_const_logic_0;
@@ -3023,9 +2927,9 @@ begin
 
     ap_ST_fsm_state29_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state2_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_done)
+    ap_ST_fsm_state2_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_done)
     begin
-        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_done = ap_const_logic_0)) then 
+        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state2_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state2_blk <= ap_const_logic_0;
@@ -3040,9 +2944,9 @@ begin
     ap_ST_fsm_state35_blk <= ap_const_logic_0;
     ap_ST_fsm_state36_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state37_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_done)
+    ap_ST_fsm_state37_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_done)
     begin
-        if ((grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_done = ap_const_logic_0)) then 
+        if ((grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state37_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state37_blk <= ap_const_logic_0;
@@ -3051,9 +2955,9 @@ begin
 
     ap_ST_fsm_state38_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state39_blk_assign_proc : process(grp_cshake256_simple_absorb_fu_349_ap_done)
+    ap_ST_fsm_state39_blk_assign_proc : process(grp_cshake256_simple_absorb_fu_346_ap_done)
     begin
-        if ((grp_cshake256_simple_absorb_fu_349_ap_done = ap_const_logic_0)) then 
+        if ((grp_cshake256_simple_absorb_fu_346_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state39_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state39_blk <= ap_const_logic_0;
@@ -3063,9 +2967,9 @@ begin
     ap_ST_fsm_state3_blk <= ap_const_logic_0;
     ap_ST_fsm_state40_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state41_blk_assign_proc : process(grp_KeccakF1600_StatePermute_fu_362_ap_done)
+    ap_ST_fsm_state41_blk_assign_proc : process(grp_KeccakF1600_StatePermute_fu_359_ap_done)
     begin
-        if ((grp_KeccakF1600_StatePermute_fu_362_ap_done = ap_const_logic_0)) then 
+        if ((grp_KeccakF1600_StatePermute_fu_359_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state41_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state41_blk <= ap_const_logic_0;
@@ -3074,9 +2978,9 @@ begin
 
     ap_ST_fsm_state42_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state43_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_done)
+    ap_ST_fsm_state43_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_done)
     begin
-        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_done = ap_const_logic_0)) then 
+        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state43_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state43_blk <= ap_const_logic_0;
@@ -3084,9 +2988,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state44_blk_assign_proc : process(m_axi_gmem1_0_AWREADY)
+    ap_ST_fsm_state44_blk_assign_proc : process(m_axi_gmem_0_AWREADY)
     begin
-        if ((m_axi_gmem1_0_AWREADY = ap_const_logic_0)) then 
+        if ((m_axi_gmem_0_AWREADY = ap_const_logic_0)) then 
             ap_ST_fsm_state44_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state44_blk <= ap_const_logic_0;
@@ -3095,9 +2999,9 @@ begin
 
     ap_ST_fsm_state45_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state46_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_done)
+    ap_ST_fsm_state46_blk_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_done)
     begin
-        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_done = ap_const_logic_0)) then 
+        if ((grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state46_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state46_blk <= ap_const_logic_0;
@@ -3110,9 +3014,9 @@ begin
     ap_ST_fsm_state4_blk <= ap_const_logic_0;
     ap_ST_fsm_state50_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state51_blk_assign_proc : process(m_axi_gmem1_0_BVALID)
+    ap_ST_fsm_state51_blk_assign_proc : process(m_axi_gmem_0_BVALID)
     begin
-        if ((m_axi_gmem1_0_BVALID = ap_const_logic_0)) then 
+        if ((m_axi_gmem_0_BVALID = ap_const_logic_0)) then 
             ap_ST_fsm_state51_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state51_blk <= ap_const_logic_0;
@@ -3125,9 +3029,9 @@ begin
     ap_ST_fsm_state8_blk <= ap_const_logic_0;
     ap_ST_fsm_state9_blk <= ap_const_logic_0;
 
-    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem1_0_BVALID, ap_CS_fsm_state51)
+    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem_0_BVALID, ap_CS_fsm_state51)
     begin
-        if ((((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem1_0_BVALID = ap_const_logic_1)))) then 
+        if ((((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem_0_BVALID = ap_const_logic_1)))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -3145,63 +3049,63 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(m_axi_gmem1_0_BVALID, ap_CS_fsm_state51)
+    ap_ready_assign_proc : process(m_axi_gmem_0_BVALID, ap_CS_fsm_state51)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem1_0_BVALID = ap_const_logic_1))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem_0_BVALID = ap_const_logic_1))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
         end if; 
     end process;
 
-    ephemeralsk_addr_reg_440 <= ap_const_lv32_1F(5 - 1 downto 0);
+    ephemeralsk_addr_reg_437 <= ap_const_lv64_1F(5 - 1 downto 0);
 
-    ephemeralsk_address0_assign_proc : process(grp_cshake256_simple_32_fu_246_ephemeralsk_address0, grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address0, grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address0, ap_CS_fsm_state12, ap_CS_fsm_state16, ap_CS_fsm_state18, ephemeralsk_address0_local)
+    ephemeralsk_address0_assign_proc : process(grp_cshake256_simple_32_fu_244_ephemeralsk_address0, grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address0, grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address0, ap_CS_fsm_state12, ap_CS_fsm_state16, ap_CS_fsm_state18, ephemeralsk_address0_local)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            ephemeralsk_address0 <= grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address0;
+            ephemeralsk_address0 <= grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state16)) then 
-            ephemeralsk_address0 <= grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address0;
+            ephemeralsk_address0 <= grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            ephemeralsk_address0 <= grp_cshake256_simple_32_fu_246_ephemeralsk_address0;
+            ephemeralsk_address0 <= grp_cshake256_simple_32_fu_244_ephemeralsk_address0;
         else 
             ephemeralsk_address0 <= ephemeralsk_address0_local;
         end if; 
     end process;
 
 
-    ephemeralsk_address0_local_assign_proc : process(ephemeralsk_addr_reg_440, ap_CS_fsm_state13, ap_CS_fsm_state14)
+    ephemeralsk_address0_local_assign_proc : process(ephemeralsk_addr_reg_437, ap_CS_fsm_state13, ap_CS_fsm_state14)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            ephemeralsk_address0_local <= ephemeralsk_addr_reg_440;
+            ephemeralsk_address0_local <= ephemeralsk_addr_reg_437;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            ephemeralsk_address0_local <= ap_const_lv32_1F(5 - 1 downto 0);
+            ephemeralsk_address0_local <= ap_const_lv64_1F(5 - 1 downto 0);
         else 
             ephemeralsk_address0_local <= "XXXXX";
         end if; 
     end process;
 
 
-    ephemeralsk_address1_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address1, grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address1, ap_CS_fsm_state16, ap_CS_fsm_state18)
+    ephemeralsk_address1_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address1, grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address1, ap_CS_fsm_state16, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            ephemeralsk_address1 <= grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_address1;
+            ephemeralsk_address1 <= grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state16)) then 
-            ephemeralsk_address1 <= grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_address1;
+            ephemeralsk_address1 <= grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_address1;
         else 
             ephemeralsk_address1 <= "XXXXX";
         end if; 
     end process;
 
 
-    ephemeralsk_ce0_assign_proc : process(grp_cshake256_simple_32_fu_246_ephemeralsk_ce0, grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce0, grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce0, ap_CS_fsm_state12, ap_CS_fsm_state16, ap_CS_fsm_state18, ephemeralsk_ce0_local)
+    ephemeralsk_ce0_assign_proc : process(grp_cshake256_simple_32_fu_244_ephemeralsk_ce0, grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce0, grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce0, ap_CS_fsm_state12, ap_CS_fsm_state16, ap_CS_fsm_state18, ephemeralsk_ce0_local)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            ephemeralsk_ce0 <= grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce0;
+            ephemeralsk_ce0 <= grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state16)) then 
-            ephemeralsk_ce0 <= grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce0;
+            ephemeralsk_ce0 <= grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            ephemeralsk_ce0 <= grp_cshake256_simple_32_fu_246_ephemeralsk_ce0;
+            ephemeralsk_ce0 <= grp_cshake256_simple_32_fu_244_ephemeralsk_ce0;
         else 
             ephemeralsk_ce0 <= ephemeralsk_ce0_local;
         end if; 
@@ -3218,32 +3122,32 @@ begin
     end process;
 
 
-    ephemeralsk_ce1_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce1, grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce1, ap_CS_fsm_state16, ap_CS_fsm_state18)
+    ephemeralsk_ce1_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce1, grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce1, ap_CS_fsm_state16, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            ephemeralsk_ce1 <= grp_EphemeralSecretAgreement_A_1_fu_292_ephemeralsk_ce1;
+            ephemeralsk_ce1 <= grp_EphemeralSecretAgreement_A_1_fu_290_ephemeralsk_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state16)) then 
-            ephemeralsk_ce1 <= grp_EphemeralKeyGeneration_A_1_fu_257_ephemeralsk_ce1;
+            ephemeralsk_ce1 <= grp_EphemeralKeyGeneration_A_1_fu_255_ephemeralsk_ce1;
         else 
             ephemeralsk_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    ephemeralsk_d0_assign_proc : process(grp_cshake256_simple_32_fu_246_ephemeralsk_d0, ap_CS_fsm_state12, zext_ln50_fu_400_p1)
+    ephemeralsk_d0_assign_proc : process(grp_cshake256_simple_32_fu_244_ephemeralsk_d0, ap_CS_fsm_state12, zext_ln56_fu_397_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            ephemeralsk_d0 <= grp_cshake256_simple_32_fu_246_ephemeralsk_d0;
+            ephemeralsk_d0 <= grp_cshake256_simple_32_fu_244_ephemeralsk_d0;
         else 
-            ephemeralsk_d0 <= zext_ln50_fu_400_p1;
+            ephemeralsk_d0 <= zext_ln56_fu_397_p1;
         end if; 
     end process;
 
 
-    ephemeralsk_we0_assign_proc : process(grp_cshake256_simple_32_fu_246_ephemeralsk_we0, ap_CS_fsm_state12, ephemeralsk_we0_out)
+    ephemeralsk_we0_assign_proc : process(grp_cshake256_simple_32_fu_244_ephemeralsk_we0, ap_CS_fsm_state12, ephemeralsk_we0_out)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            ephemeralsk_we0 <= grp_cshake256_simple_32_fu_246_ephemeralsk_we0;
+            ephemeralsk_we0 <= grp_cshake256_simple_32_fu_244_ephemeralsk_we0;
         else 
             ephemeralsk_we0 <= (ephemeralsk_we0_out or ap_const_logic_0);
         end if; 
@@ -3261,1592 +3165,1313 @@ begin
 
     ephemeralsk_we0_out <= ephemeralsk_we0_local;
 
-    gmem0_blk_n_AR_assign_proc : process(m_axi_gmem0_0_ARREADY, ap_CS_fsm_state28)
+    gmem_blk_n_AR_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem_0_ARREADY, ap_CS_fsm_state28)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state28)) then 
-            gmem0_blk_n_AR <= m_axi_gmem0_0_ARREADY;
+        if (((ap_const_logic_1 = ap_CS_fsm_state28) or ((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+            gmem_blk_n_AR <= m_axi_gmem_0_ARREADY;
         else 
-            gmem0_blk_n_AR <= ap_const_logic_1;
+            gmem_blk_n_AR <= ap_const_logic_1;
         end if; 
     end process;
 
 
-    gmem0_blk_n_AW_assign_proc : process(m_axi_gmem0_0_AWREADY, ap_CS_fsm_state20)
+    gmem_blk_n_AW_assign_proc : process(m_axi_gmem_0_AWREADY, ap_CS_fsm_state20, ap_CS_fsm_state44)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            gmem0_blk_n_AW <= m_axi_gmem0_0_AWREADY;
+        if (((ap_const_logic_1 = ap_CS_fsm_state44) or (ap_const_logic_1 = ap_CS_fsm_state20))) then 
+            gmem_blk_n_AW <= m_axi_gmem_0_AWREADY;
         else 
-            gmem0_blk_n_AW <= ap_const_logic_1;
+            gmem_blk_n_AW <= ap_const_logic_1;
         end if; 
     end process;
 
 
-    gmem0_blk_n_B_assign_proc : process(m_axi_gmem0_0_BVALID, ap_CS_fsm_state27)
+    gmem_blk_n_B_assign_proc : process(m_axi_gmem_0_BVALID, ap_CS_fsm_state27, ap_CS_fsm_state51)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            gmem0_blk_n_B <= m_axi_gmem0_0_BVALID;
+        if (((ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state27))) then 
+            gmem_blk_n_B <= m_axi_gmem_0_BVALID;
         else 
-            gmem0_blk_n_B <= ap_const_logic_1;
+            gmem_blk_n_B <= ap_const_logic_1;
         end if; 
     end process;
 
+    grp_EphemeralKeyGeneration_A_1_fu_255_ap_start <= grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg;
+    grp_EphemeralSecretAgreement_A_1_fu_290_ap_start <= grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg;
+    grp_KeccakF1600_StatePermute_fu_359_ap_start <= grp_KeccakF1600_StatePermute_fu_359_ap_start_reg;
+    grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg;
+    grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg;
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg;
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg;
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg;
+    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg;
+    grp_cshake256_simple_32_clone_fu_315_ap_start <= grp_cshake256_simple_32_clone_fu_315_ap_start_reg;
+    grp_cshake256_simple_32_fu_244_ap_start <= grp_cshake256_simple_32_fu_244_ap_start_reg;
+    grp_cshake256_simple_absorb_fu_346_ap_start <= grp_cshake256_simple_absorb_fu_346_ap_start_reg;
 
-    gmem1_blk_n_AW_assign_proc : process(m_axi_gmem1_0_AWREADY, ap_CS_fsm_state44)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state44)) then 
-            gmem1_blk_n_AW <= m_axi_gmem1_0_AWREADY;
-        else 
-            gmem1_blk_n_AW <= ap_const_logic_1;
-        end if; 
-    end process;
-
-
-    gmem1_blk_n_B_assign_proc : process(m_axi_gmem1_0_BVALID, ap_CS_fsm_state51)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state51)) then 
-            gmem1_blk_n_B <= m_axi_gmem1_0_BVALID;
-        else 
-            gmem1_blk_n_B <= ap_const_logic_1;
-        end if; 
-    end process;
-
-
-    gmem2_blk_n_AR_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem2_0_ARREADY)
-    begin
-        if (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            gmem2_blk_n_AR <= m_axi_gmem2_0_ARREADY;
-        else 
-            gmem2_blk_n_AR <= ap_const_logic_1;
-        end if; 
-    end process;
-
-    grp_EphemeralKeyGeneration_A_1_fu_257_ap_start <= grp_EphemeralKeyGeneration_A_1_fu_257_ap_start_reg;
-    grp_EphemeralSecretAgreement_A_1_fu_292_ap_start <= grp_EphemeralSecretAgreement_A_1_fu_292_ap_start_reg;
-    grp_KeccakF1600_StatePermute_fu_362_ap_start <= grp_KeccakF1600_StatePermute_fu_362_ap_start_reg;
-    grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_ap_start_reg;
-    grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_ap_start_reg;
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_ap_start_reg;
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_ap_start_reg;
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_ap_start_reg;
-    grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_ap_start_reg;
-    grp_cshake256_simple_32_clone_fu_317_ap_start <= grp_cshake256_simple_32_clone_fu_317_ap_start_reg;
-    grp_cshake256_simple_32_fu_246_ap_start <= grp_cshake256_simple_32_fu_246_ap_start_reg;
-    grp_cshake256_simple_absorb_fu_349_ap_start <= grp_cshake256_simple_absorb_fu_349_ap_start_reg;
-
-    h_address0_assign_proc : process(ap_CS_fsm_state20, grp_cshake256_simple_32_clone_fu_317_output_r_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_address0, ap_CS_fsm_state22)
+    h_address0_assign_proc : process(ap_CS_fsm_state20, grp_cshake256_simple_32_clone_fu_315_output_r_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_address0, ap_CS_fsm_state22)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            h_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_address0;
+            h_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            h_address0 <= grp_cshake256_simple_32_clone_fu_317_output_r_address0;
+            h_address0 <= grp_cshake256_simple_32_clone_fu_315_output_r_address0;
         else 
             h_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    h_ce0_assign_proc : process(ap_CS_fsm_state20, grp_cshake256_simple_32_clone_fu_317_output_r_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_ce0, ap_CS_fsm_state22)
+    h_ce0_assign_proc : process(ap_CS_fsm_state20, grp_cshake256_simple_32_clone_fu_315_output_r_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_ce0, ap_CS_fsm_state22)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            h_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_h_ce0;
+            h_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_h_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            h_ce0 <= grp_cshake256_simple_32_clone_fu_317_output_r_ce0;
+            h_ce0 <= grp_cshake256_simple_32_clone_fu_315_output_r_ce0;
         else 
             h_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    h_we0_assign_proc : process(ap_CS_fsm_state20, grp_cshake256_simple_32_clone_fu_317_output_r_we0)
+    h_we0_assign_proc : process(ap_CS_fsm_state20, grp_cshake256_simple_32_clone_fu_315_output_r_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            h_we0 <= grp_cshake256_simple_32_clone_fu_317_output_r_we0;
+            h_we0 <= grp_cshake256_simple_32_clone_fu_315_output_r_we0;
         else 
             h_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    jinvariant_address0_assign_proc : process(ap_CS_fsm_state20, grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_address0, grp_cshake256_simple_32_clone_fu_317_in_r_address0, ap_CS_fsm_state18)
+    jinvariant_address0_assign_proc : process(ap_CS_fsm_state20, grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_address0, grp_cshake256_simple_32_clone_fu_315_in_r_address0, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            jinvariant_address0 <= grp_cshake256_simple_32_clone_fu_317_in_r_address0;
+            jinvariant_address0 <= grp_cshake256_simple_32_clone_fu_315_in_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            jinvariant_address0 <= grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_address0;
+            jinvariant_address0 <= grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_address0;
         else 
             jinvariant_address0 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    jinvariant_ce0_assign_proc : process(ap_CS_fsm_state20, grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce0, grp_cshake256_simple_32_clone_fu_317_in_r_ce0, ap_CS_fsm_state18)
+    jinvariant_ce0_assign_proc : process(ap_CS_fsm_state20, grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce0, grp_cshake256_simple_32_clone_fu_315_in_r_ce0, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            jinvariant_ce0 <= grp_cshake256_simple_32_clone_fu_317_in_r_ce0;
+            jinvariant_ce0 <= grp_cshake256_simple_32_clone_fu_315_in_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            jinvariant_ce0 <= grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce0;
+            jinvariant_ce0 <= grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce0;
         else 
             jinvariant_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    jinvariant_ce1_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce1, ap_CS_fsm_state18)
+    jinvariant_ce1_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce1, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            jinvariant_ce1 <= grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_ce1;
+            jinvariant_ce1 <= grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_ce1;
         else 
             jinvariant_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    jinvariant_we0_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we0, ap_CS_fsm_state18)
+    jinvariant_we0_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we0, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            jinvariant_we0 <= grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we0;
+            jinvariant_we0 <= grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we0;
         else 
             jinvariant_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    jinvariant_we1_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we1, ap_CS_fsm_state18)
+    jinvariant_we1_assign_proc : process(grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we1, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            jinvariant_we1 <= grp_EphemeralSecretAgreement_A_1_fu_292_SharedSecretA_we1;
+            jinvariant_we1 <= grp_EphemeralSecretAgreement_A_1_fu_290_SharedSecretA_we1;
         else 
             jinvariant_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARADDR_assign_proc : process(m_axi_gmem0_0_ARREADY, ct, ap_CS_fsm_state28, grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARADDR, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARADDR_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem_0_ARREADY, ct, pk, ap_CS_fsm_state28, grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARADDR, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARADDR, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARADDR, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
-        if (((m_axi_gmem0_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28))) then 
-            m_axi_gmem0_0_ARADDR <= ct;
+        if (((m_axi_gmem_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28))) then 
+            m_axi_gmem_0_ARADDR <= ct;
+        elsif ((not(((m_axi_gmem_0_ARREADY = ap_const_logic_0) or (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+            m_axi_gmem_0_ARADDR <= pk;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARADDR <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARADDR;
+            m_axi_gmem_0_ARADDR <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARADDR;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARADDR <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARADDR;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARADDR <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARADDR;
         else 
-            m_axi_gmem0_0_ARADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            m_axi_gmem_0_ARADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARBURST_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARBURST, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARBURST_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARBURST, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARBURST, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARBURST, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARBURST <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARBURST;
+            m_axi_gmem_0_ARBURST <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARBURST;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARBURST <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARBURST;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARBURST <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARBURST;
         else 
-            m_axi_gmem0_0_ARBURST <= ap_const_lv2_0;
+            m_axi_gmem_0_ARBURST <= ap_const_lv2_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARCACHE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARCACHE, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARCACHE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARCACHE, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARCACHE, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARCACHE, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARCACHE <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARCACHE;
+            m_axi_gmem_0_ARCACHE <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARCACHE;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARCACHE <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARCACHE;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARCACHE <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARCACHE;
         else 
-            m_axi_gmem0_0_ARCACHE <= ap_const_lv4_0;
+            m_axi_gmem_0_ARCACHE <= ap_const_lv4_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARID_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARID, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARID_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARID, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARID, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARID, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARID <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARID;
+            m_axi_gmem_0_ARID <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARID <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARID <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARID;
         else 
-            m_axi_gmem0_0_ARID <= ap_const_lv1_0;
+            m_axi_gmem_0_ARID <= ap_const_lv1_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARLEN_assign_proc : process(m_axi_gmem0_0_ARREADY, ap_CS_fsm_state28, grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLEN, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARLEN_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem_0_ARREADY, ap_CS_fsm_state28, grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLEN, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLEN, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLEN, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
-        if (((m_axi_gmem0_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28))) then 
-            m_axi_gmem0_0_ARLEN <= ap_const_lv32_192;
+        if (((m_axi_gmem_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28))) then 
+            m_axi_gmem_0_ARLEN <= ap_const_lv64_192(32 - 1 downto 0);
+        elsif ((not(((m_axi_gmem_0_ARREADY = ap_const_logic_0) or (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+            m_axi_gmem_0_ARLEN <= ap_const_lv64_17A(32 - 1 downto 0);
         elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARLEN <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLEN;
+            m_axi_gmem_0_ARLEN <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLEN;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARLEN <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLEN;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARLEN <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLEN;
         else 
-            m_axi_gmem0_0_ARLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            m_axi_gmem_0_ARLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARLOCK_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLOCK, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARLOCK_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLOCK, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLOCK, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLOCK, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARLOCK <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARLOCK;
+            m_axi_gmem_0_ARLOCK <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARLOCK;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARLOCK <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARLOCK;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARLOCK <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARLOCK;
         else 
-            m_axi_gmem0_0_ARLOCK <= ap_const_lv2_0;
+            m_axi_gmem_0_ARLOCK <= ap_const_lv2_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARPROT_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARPROT, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARPROT_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARPROT, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARPROT, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARPROT, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARPROT <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARPROT;
+            m_axi_gmem_0_ARPROT <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARPROT;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARPROT <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARPROT;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARPROT <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARPROT;
         else 
-            m_axi_gmem0_0_ARPROT <= ap_const_lv3_0;
+            m_axi_gmem_0_ARPROT <= ap_const_lv3_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARQOS_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARQOS, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARQOS_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARQOS, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARQOS, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARQOS, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARQOS <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARQOS;
+            m_axi_gmem_0_ARQOS <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARQOS;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARQOS <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARQOS;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARQOS <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARQOS;
         else 
-            m_axi_gmem0_0_ARQOS <= ap_const_lv4_0;
+            m_axi_gmem_0_ARQOS <= ap_const_lv4_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARREGION_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARREGION, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARREGION_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARREGION, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARREGION, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARREGION, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARREGION <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARREGION;
+            m_axi_gmem_0_ARREGION <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARREGION;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARREGION <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARREGION;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARREGION <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARREGION;
         else 
-            m_axi_gmem0_0_ARREGION <= ap_const_lv4_0;
+            m_axi_gmem_0_ARREGION <= ap_const_lv4_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARSIZE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARSIZE, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARSIZE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARSIZE, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARSIZE, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARSIZE, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARSIZE <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARSIZE;
+            m_axi_gmem_0_ARSIZE <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARSIZE;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARSIZE <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARSIZE;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARSIZE <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARSIZE;
         else 
-            m_axi_gmem0_0_ARSIZE <= ap_const_lv3_0;
+            m_axi_gmem_0_ARSIZE <= ap_const_lv3_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARUSER_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARUSER, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARUSER_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARUSER, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARUSER, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARUSER, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARUSER <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARUSER;
+            m_axi_gmem_0_ARUSER <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARUSER;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARUSER <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARUSER;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARUSER <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARUSER;
         else 
-            m_axi_gmem0_0_ARUSER <= ap_const_lv1_0;
+            m_axi_gmem_0_ARUSER <= ap_const_lv1_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_ARVALID_assign_proc : process(m_axi_gmem0_0_ARREADY, ap_CS_fsm_state28, grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARVALID, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_ARVALID_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem_0_ARREADY, ap_CS_fsm_state28, grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARVALID, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARVALID, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARVALID, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
-        if (((m_axi_gmem0_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28))) then 
-            m_axi_gmem0_0_ARVALID <= ap_const_logic_1;
+        if (((not(((m_axi_gmem_0_ARREADY = ap_const_logic_0) or (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((m_axi_gmem_0_ARREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state28)))) then 
+            m_axi_gmem_0_ARVALID <= ap_const_logic_1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_ARVALID <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_ARVALID;
+            m_axi_gmem_0_ARVALID <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_ARVALID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
+            m_axi_gmem_0_ARVALID <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_ARVALID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            m_axi_gmem_0_ARVALID <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_ARVALID;
         else 
-            m_axi_gmem0_0_ARVALID <= ap_const_logic_0;
+            m_axi_gmem_0_ARVALID <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_AWADDR_assign_proc : process(m_axi_gmem0_0_AWREADY, ap_CS_fsm_state20, ap_CS_fsm_state15, add_ln56_reg_454, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWADDR, grp_cshake256_simple_32_clone_fu_317_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWADDR, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
+    m_axi_gmem_0_AWADDR_assign_proc : process(m_axi_gmem_0_AWREADY, ss, ap_CS_fsm_state20, ap_CS_fsm_state44, ap_CS_fsm_state15, add_ln81_reg_450, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWADDR, grp_cshake256_simple_32_clone_fu_315_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWADDR, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWADDR, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if ((not(((m_axi_gmem0_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_317_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20))) then 
-            m_axi_gmem0_0_AWADDR <= add_ln56_reg_454;
+        if (((m_axi_gmem_0_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state44))) then 
+            m_axi_gmem_0_AWADDR <= ss;
+        elsif ((not(((m_axi_gmem_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_315_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20))) then 
+            m_axi_gmem_0_AWADDR <= add_ln81_reg_450;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWADDR <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWADDR;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWADDR <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWADDR;
+            m_axi_gmem_0_AWADDR <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWADDR;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWADDR <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWADDR;
+            m_axi_gmem_0_AWADDR <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWADDR;
         else 
-            m_axi_gmem0_0_AWADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            m_axi_gmem_0_AWADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_AWBURST_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWBURST, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWBURST, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
+    m_axi_gmem_0_AWBURST_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWBURST, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWBURST, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWBURST, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWBURST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWBURST;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWBURST <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWBURST;
-        else 
-            m_axi_gmem0_0_AWBURST <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWCACHE_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWCACHE, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWCACHE, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWCACHE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWCACHE;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWCACHE <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWCACHE;
-        else 
-            m_axi_gmem0_0_AWCACHE <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWID_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWID;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWID <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWID;
-        else 
-            m_axi_gmem0_0_AWID <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWLEN_assign_proc : process(m_axi_gmem0_0_AWREADY, ap_CS_fsm_state20, ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLEN, grp_cshake256_simple_32_clone_fu_317_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLEN, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if ((not(((m_axi_gmem0_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_317_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20))) then 
-            m_axi_gmem0_0_AWLEN <= ap_const_lv32_18;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWBURST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWBURST;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWLEN <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLEN;
+            m_axi_gmem_0_AWBURST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWBURST;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWLEN <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLEN;
+            m_axi_gmem_0_AWBURST <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWBURST;
         else 
-            m_axi_gmem0_0_AWLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            m_axi_gmem_0_AWBURST <= ap_const_lv2_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_AWLOCK_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLOCK, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLOCK, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
+    m_axi_gmem_0_AWCACHE_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWCACHE, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWCACHE, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWCACHE, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWLOCK <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWLOCK;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWLOCK <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWLOCK;
-        else 
-            m_axi_gmem0_0_AWLOCK <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWPROT_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWPROT, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWPROT, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWPROT <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWPROT;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWPROT <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWPROT;
-        else 
-            m_axi_gmem0_0_AWPROT <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWQOS_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWQOS, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWQOS, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWQOS <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWQOS;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWQOS <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWQOS;
-        else 
-            m_axi_gmem0_0_AWQOS <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWREGION_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWREGION, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWREGION, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWREGION <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWREGION;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWREGION <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWREGION;
-        else 
-            m_axi_gmem0_0_AWREGION <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWSIZE_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWSIZE, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWSIZE, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWSIZE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWSIZE;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWSIZE <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWSIZE;
-        else 
-            m_axi_gmem0_0_AWSIZE <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWUSER_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWUSER, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWUSER, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWUSER;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWUSER <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWUSER;
-        else 
-            m_axi_gmem0_0_AWUSER <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_AWVALID_assign_proc : process(m_axi_gmem0_0_AWREADY, ap_CS_fsm_state20, ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWVALID, grp_cshake256_simple_32_clone_fu_317_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWVALID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if ((not(((m_axi_gmem0_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_317_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20))) then 
-            m_axi_gmem0_0_AWVALID <= ap_const_logic_1;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWCACHE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWCACHE;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_AWVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_AWVALID;
+            m_axi_gmem_0_AWCACHE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWCACHE;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_AWVALID <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_AWVALID;
+            m_axi_gmem_0_AWCACHE <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWCACHE;
         else 
-            m_axi_gmem0_0_AWVALID <= ap_const_logic_0;
+            m_axi_gmem_0_AWCACHE <= ap_const_lv4_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_BREADY_assign_proc : process(m_axi_gmem0_0_BVALID, ap_CS_fsm_state27, ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_BREADY, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_BREADY, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
+    m_axi_gmem_0_AWID_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state27) and (m_axi_gmem0_0_BVALID = ap_const_logic_1))) then 
-            m_axi_gmem0_0_BREADY <= ap_const_logic_1;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWID;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_BREADY <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_BREADY;
+            m_axi_gmem_0_AWID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWID;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_BREADY <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_BREADY;
+            m_axi_gmem_0_AWID <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWID;
         else 
-            m_axi_gmem0_0_BREADY <= ap_const_logic_0;
+            m_axi_gmem_0_AWID <= ap_const_lv1_0;
         end if; 
     end process;
 
 
-    m_axi_gmem0_0_RREADY_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_RREADY, ap_CS_fsm_state36, ap_CS_fsm_state37)
+    m_axi_gmem_0_AWLEN_assign_proc : process(m_axi_gmem_0_AWREADY, ap_CS_fsm_state20, ap_CS_fsm_state44, ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLEN, grp_cshake256_simple_32_clone_fu_315_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLEN, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLEN, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if (((m_axi_gmem_0_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state44))) then 
+            m_axi_gmem_0_AWLEN <= ap_const_lv64_10(32 - 1 downto 0);
+        elsif ((not(((m_axi_gmem_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_315_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20))) then 
+            m_axi_gmem_0_AWLEN <= ap_const_lv64_18(32 - 1 downto 0);
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWLEN <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLEN;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWLEN <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLEN;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWLEN <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLEN;
+        else 
+            m_axi_gmem_0_AWLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_AWLOCK_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLOCK, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLOCK, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLOCK, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWLOCK <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWLOCK;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWLOCK <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWLOCK;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWLOCK <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWLOCK;
+        else 
+            m_axi_gmem_0_AWLOCK <= ap_const_lv2_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_AWPROT_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWPROT, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWPROT, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWPROT, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWPROT <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWPROT;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWPROT <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWPROT;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWPROT <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWPROT;
+        else 
+            m_axi_gmem_0_AWPROT <= ap_const_lv3_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_AWQOS_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWQOS, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWQOS, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWQOS, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWQOS <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWQOS;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWQOS <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWQOS;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWQOS <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWQOS;
+        else 
+            m_axi_gmem_0_AWQOS <= ap_const_lv4_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_AWREGION_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWREGION, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWREGION, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWREGION, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWREGION <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWREGION;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWREGION <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWREGION;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWREGION <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWREGION;
+        else 
+            m_axi_gmem_0_AWREGION <= ap_const_lv4_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_AWSIZE_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWSIZE, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWSIZE, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWSIZE, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWSIZE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWSIZE;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWSIZE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWSIZE;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWSIZE <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWSIZE;
+        else 
+            m_axi_gmem_0_AWSIZE <= ap_const_lv3_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_AWUSER_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWUSER, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWUSER, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWUSER, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWUSER;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWUSER;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWUSER <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWUSER;
+        else 
+            m_axi_gmem_0_AWUSER <= ap_const_lv1_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_AWVALID_assign_proc : process(m_axi_gmem_0_AWREADY, ap_CS_fsm_state20, ap_CS_fsm_state44, ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWVALID, grp_cshake256_simple_32_clone_fu_315_ap_done, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWVALID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWVALID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if ((((m_axi_gmem_0_AWREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state44)) or (not(((m_axi_gmem_0_AWREADY = ap_const_logic_0) or (grp_cshake256_simple_32_clone_fu_315_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state20)))) then 
+            m_axi_gmem_0_AWVALID <= ap_const_logic_1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_AWVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_AWVALID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_AWVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_AWVALID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_AWVALID <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_AWVALID;
+        else 
+            m_axi_gmem_0_AWVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_BREADY_assign_proc : process(m_axi_gmem_0_BVALID, ap_CS_fsm_state27, ap_CS_fsm_state51, ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_BREADY, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_BREADY, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_BREADY, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
+    begin
+        if ((((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem_0_BVALID = ap_const_logic_1)) or ((ap_const_logic_1 = ap_CS_fsm_state27) and (m_axi_gmem_0_BVALID = ap_const_logic_1)))) then 
+            m_axi_gmem_0_BREADY <= ap_const_logic_1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_BREADY <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_BREADY;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_BREADY <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_BREADY;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_BREADY <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_BREADY;
+        else 
+            m_axi_gmem_0_BREADY <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    m_axi_gmem_0_RREADY_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_RREADY, grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_RREADY, grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_RREADY, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state36, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36))) then 
-            m_axi_gmem0_0_RREADY <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_m_axi_gmem0_0_RREADY;
-        else 
-            m_axi_gmem0_0_RREADY <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_WDATA_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WDATA, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WDATA, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_WDATA <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WDATA;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_WDATA <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WDATA;
-        else 
-            m_axi_gmem0_0_WDATA <= "XXXXXXXX";
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_WID_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_WID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WID;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_WID <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WID;
-        else 
-            m_axi_gmem0_0_WID <= "X";
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_WLAST_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WLAST, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WLAST, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_WLAST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WLAST;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_WLAST <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WLAST;
-        else 
-            m_axi_gmem0_0_WLAST <= 'X';
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_WSTRB_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WSTRB, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WSTRB, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_WSTRB <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WSTRB;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_WSTRB <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WSTRB;
-        else 
-            m_axi_gmem0_0_WSTRB <= "X";
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_WUSER_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WUSER, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WUSER, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_WUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WUSER;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_WUSER <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WUSER;
-        else 
-            m_axi_gmem0_0_WUSER <= "X";
-        end if; 
-    end process;
-
-
-    m_axi_gmem0_0_WVALID_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WVALID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WVALID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            m_axi_gmem0_0_WVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_m_axi_gmem0_0_WVALID;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
-            m_axi_gmem0_0_WVALID <= grp_EphemeralKeyGeneration_A_1_fu_257_m_axi_gmem0_0_WVALID;
-        else 
-            m_axi_gmem0_0_WVALID <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    m_axi_gmem1_0_ARADDR <= ap_const_lv32_0;
-    m_axi_gmem1_0_ARBURST <= ap_const_lv2_0;
-    m_axi_gmem1_0_ARCACHE <= ap_const_lv4_0;
-    m_axi_gmem1_0_ARID <= ap_const_lv1_0;
-    m_axi_gmem1_0_ARLEN <= ap_const_lv32_0;
-    m_axi_gmem1_0_ARLOCK <= ap_const_lv2_0;
-    m_axi_gmem1_0_ARPROT <= ap_const_lv3_0;
-    m_axi_gmem1_0_ARQOS <= ap_const_lv4_0;
-    m_axi_gmem1_0_ARREGION <= ap_const_lv4_0;
-    m_axi_gmem1_0_ARSIZE <= ap_const_lv3_0;
-    m_axi_gmem1_0_ARUSER <= ap_const_lv1_0;
-    m_axi_gmem1_0_ARVALID <= ap_const_logic_0;
-
-    m_axi_gmem1_0_AWADDR_assign_proc : process(m_axi_gmem1_0_AWREADY, ss, ap_CS_fsm_state44, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWADDR, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state44) and (m_axi_gmem1_0_AWREADY = ap_const_logic_1))) then 
-            m_axi_gmem1_0_AWADDR <= ss;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWADDR <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWADDR;
-        else 
-            m_axi_gmem1_0_AWADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWBURST_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWBURST, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWBURST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWBURST;
-        else 
-            m_axi_gmem1_0_AWBURST <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWCACHE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWCACHE, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWCACHE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWCACHE;
-        else 
-            m_axi_gmem1_0_AWCACHE <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWID_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWID, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWID;
-        else 
-            m_axi_gmem1_0_AWID <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWLEN_assign_proc : process(m_axi_gmem1_0_AWREADY, ap_CS_fsm_state44, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLEN, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state44) and (m_axi_gmem1_0_AWREADY = ap_const_logic_1))) then 
-            m_axi_gmem1_0_AWLEN <= ap_const_lv32_10;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWLEN <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLEN;
-        else 
-            m_axi_gmem1_0_AWLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWLOCK_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLOCK, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWLOCK <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWLOCK;
-        else 
-            m_axi_gmem1_0_AWLOCK <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWPROT_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWPROT, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWPROT <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWPROT;
-        else 
-            m_axi_gmem1_0_AWPROT <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWQOS_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWQOS, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWQOS <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWQOS;
-        else 
-            m_axi_gmem1_0_AWQOS <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWREGION_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWREGION, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWREGION <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWREGION;
-        else 
-            m_axi_gmem1_0_AWREGION <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWSIZE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWSIZE, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWSIZE <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWSIZE;
-        else 
-            m_axi_gmem1_0_AWSIZE <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWUSER_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWUSER, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWUSER;
-        else 
-            m_axi_gmem1_0_AWUSER <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_AWVALID_assign_proc : process(m_axi_gmem1_0_AWREADY, ap_CS_fsm_state44, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWVALID, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state44) and (m_axi_gmem1_0_AWREADY = ap_const_logic_1))) then 
-            m_axi_gmem1_0_AWVALID <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_AWVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_AWVALID;
-        else 
-            m_axi_gmem1_0_AWVALID <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem1_0_BREADY_assign_proc : process(m_axi_gmem1_0_BVALID, ap_CS_fsm_state51, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_BREADY, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state51) and (m_axi_gmem1_0_BVALID = ap_const_logic_1))) then 
-            m_axi_gmem1_0_BREADY <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_BREADY <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_BREADY;
-        else 
-            m_axi_gmem1_0_BREADY <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    m_axi_gmem1_0_RREADY <= ap_const_logic_0;
-    m_axi_gmem1_0_WDATA <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WDATA;
-    m_axi_gmem1_0_WID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WID;
-    m_axi_gmem1_0_WLAST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WLAST;
-    m_axi_gmem1_0_WSTRB <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WSTRB;
-    m_axi_gmem1_0_WUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WUSER;
-
-    m_axi_gmem1_0_WVALID_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WVALID, ap_CS_fsm_state45, ap_CS_fsm_state46)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
-            m_axi_gmem1_0_WVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_m_axi_gmem1_0_WVALID;
-        else 
-            m_axi_gmem1_0_WVALID <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem2_0_ARADDR_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem2_0_ARREADY, pk, grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARADDR, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARADDR, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
-    begin
-        if ((not(((ap_start = ap_const_logic_0) or (m_axi_gmem2_0_ARREADY = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            m_axi_gmem2_0_ARADDR <= pk;
+            m_axi_gmem_0_RREADY <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_m_axi_gmem_0_RREADY;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARADDR <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARADDR;
+            m_axi_gmem_0_RREADY <= grp_EphemeralSecretAgreement_A_1_fu_290_m_axi_gmem_0_RREADY;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARADDR <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARADDR;
+            m_axi_gmem_0_RREADY <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_m_axi_gmem_0_RREADY;
         else 
-            m_axi_gmem2_0_ARADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            m_axi_gmem_0_RREADY <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    m_axi_gmem2_0_ARBURST_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARBURST, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARBURST, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
+    m_axi_gmem_0_WDATA_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WDATA, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WDATA, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WDATA, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARBURST <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARBURST;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARBURST <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARBURST;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_WDATA <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WDATA;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_WDATA <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WDATA;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_WDATA <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WDATA;
         else 
-            m_axi_gmem2_0_ARBURST <= ap_const_lv2_0;
+            m_axi_gmem_0_WDATA <= "XXXXXXXX";
         end if; 
     end process;
 
 
-    m_axi_gmem2_0_ARCACHE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARCACHE, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARCACHE, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
+    m_axi_gmem_0_WID_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARCACHE <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARCACHE;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARCACHE <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARCACHE;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_WID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_WID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_WID <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WID;
         else 
-            m_axi_gmem2_0_ARCACHE <= ap_const_lv4_0;
+            m_axi_gmem_0_WID <= "X";
         end if; 
     end process;
 
 
-    m_axi_gmem2_0_ARID_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARID, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARID, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
+    m_axi_gmem_0_WLAST_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WLAST, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WLAST, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WLAST, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARID <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARID;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARID <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARID;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_WLAST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WLAST;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_WLAST <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WLAST;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_WLAST <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WLAST;
         else 
-            m_axi_gmem2_0_ARID <= ap_const_lv1_0;
+            m_axi_gmem_0_WLAST <= 'X';
         end if; 
     end process;
 
 
-    m_axi_gmem2_0_ARLEN_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem2_0_ARREADY, grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLEN, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLEN, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
+    m_axi_gmem_0_WSTRB_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WSTRB, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WSTRB, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WSTRB, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if ((not(((ap_start = ap_const_logic_0) or (m_axi_gmem2_0_ARREADY = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            m_axi_gmem2_0_ARLEN <= ap_const_lv32_17A;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARLEN <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLEN;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARLEN <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLEN;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_WSTRB <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WSTRB;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_WSTRB <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WSTRB;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_WSTRB <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WSTRB;
         else 
-            m_axi_gmem2_0_ARLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            m_axi_gmem_0_WSTRB <= "X";
         end if; 
     end process;
 
 
-    m_axi_gmem2_0_ARLOCK_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLOCK, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLOCK, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
+    m_axi_gmem_0_WUSER_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WUSER, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WUSER, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WUSER, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARLOCK <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARLOCK;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARLOCK <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARLOCK;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_WUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WUSER;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_WUSER <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WUSER;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_WUSER <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WUSER;
         else 
-            m_axi_gmem2_0_ARLOCK <= ap_const_lv2_0;
+            m_axi_gmem_0_WUSER <= "X";
         end if; 
     end process;
 
 
-    m_axi_gmem2_0_ARPROT_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARPROT, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARPROT, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
+    m_axi_gmem_0_WVALID_assign_proc : process(ap_CS_fsm_state15, grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WVALID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WVALID, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WVALID, ap_CS_fsm_state16, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state45, ap_CS_fsm_state46)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARPROT <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARPROT;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARPROT <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARPROT;
+        if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45))) then 
+            m_axi_gmem_0_WVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_m_axi_gmem_0_WVALID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            m_axi_gmem_0_WVALID <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_m_axi_gmem_0_WVALID;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state16))) then 
+            m_axi_gmem_0_WVALID <= grp_EphemeralKeyGeneration_A_1_fu_255_m_axi_gmem_0_WVALID;
         else 
-            m_axi_gmem2_0_ARPROT <= ap_const_lv3_0;
+            m_axi_gmem_0_WVALID <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    m_axi_gmem2_0_ARQOS_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARQOS, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARQOS, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARQOS <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARQOS;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARQOS <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARQOS;
-        else 
-            m_axi_gmem2_0_ARQOS <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem2_0_ARREGION_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARREGION, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARREGION, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARREGION <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARREGION;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARREGION <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARREGION;
-        else 
-            m_axi_gmem2_0_ARREGION <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem2_0_ARSIZE_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARSIZE, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARSIZE, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARSIZE <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARSIZE;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARSIZE <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARSIZE;
-        else 
-            m_axi_gmem2_0_ARSIZE <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem2_0_ARUSER_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARUSER, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARUSER, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARUSER <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARUSER;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARUSER <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARUSER;
-        else 
-            m_axi_gmem2_0_ARUSER <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    m_axi_gmem2_0_ARVALID_assign_proc : process(ap_start, ap_CS_fsm_state1, m_axi_gmem2_0_ARREADY, grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARVALID, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARVALID, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
-    begin
-        if ((not(((ap_start = ap_const_logic_0) or (m_axi_gmem2_0_ARREADY = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            m_axi_gmem2_0_ARVALID <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_ARVALID <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_ARVALID;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_ARVALID <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_ARVALID;
-        else 
-            m_axi_gmem2_0_ARVALID <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    m_axi_gmem2_0_AWADDR <= ap_const_lv32_0;
-    m_axi_gmem2_0_AWBURST <= ap_const_lv2_0;
-    m_axi_gmem2_0_AWCACHE <= ap_const_lv4_0;
-    m_axi_gmem2_0_AWID <= ap_const_lv1_0;
-    m_axi_gmem2_0_AWLEN <= ap_const_lv32_0;
-    m_axi_gmem2_0_AWLOCK <= ap_const_lv2_0;
-    m_axi_gmem2_0_AWPROT <= ap_const_lv3_0;
-    m_axi_gmem2_0_AWQOS <= ap_const_lv4_0;
-    m_axi_gmem2_0_AWREGION <= ap_const_lv4_0;
-    m_axi_gmem2_0_AWSIZE <= ap_const_lv3_0;
-    m_axi_gmem2_0_AWUSER <= ap_const_lv1_0;
-    m_axi_gmem2_0_AWVALID <= ap_const_logic_0;
-    m_axi_gmem2_0_BREADY <= ap_const_logic_0;
-
-    m_axi_gmem2_0_RREADY_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_RREADY, grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_RREADY, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state17, ap_CS_fsm_state18)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17))) then 
-            m_axi_gmem2_0_RREADY <= grp_EphemeralSecretAgreement_A_1_fu_292_m_axi_gmem2_0_RREADY;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            m_axi_gmem2_0_RREADY <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_m_axi_gmem2_0_RREADY;
-        else 
-            m_axi_gmem2_0_RREADY <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    m_axi_gmem2_0_WDATA <= ap_const_lv8_0;
-    m_axi_gmem2_0_WID <= ap_const_lv1_0;
-    m_axi_gmem2_0_WLAST <= ap_const_logic_0;
-    m_axi_gmem2_0_WSTRB <= ap_const_lv1_0;
-    m_axi_gmem2_0_WUSER <= ap_const_lv1_0;
-    m_axi_gmem2_0_WVALID <= ap_const_logic_0;
-
-    s_i_address0_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_address0, grp_KeccakF1600_StatePermute_fu_362_s_i_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_address0, ap_CS_fsm_state39, ap_CS_fsm_state41, ap_CS_fsm_state43)
+    s_i_address0_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_address0, grp_KeccakF1600_StatePermute_fu_359_s_i_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_address0, ap_CS_fsm_state39, ap_CS_fsm_state41, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            s_i_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_address0;
+            s_i_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_address0 <= grp_KeccakF1600_StatePermute_fu_362_s_i_address0;
+            s_i_address0 <= grp_KeccakF1600_StatePermute_fu_359_s_i_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_address0 <= grp_cshake256_simple_absorb_fu_349_s_address0;
+            s_i_address0 <= grp_cshake256_simple_absorb_fu_346_s_address0;
         else 
             s_i_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    s_i_address1_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_address1, grp_KeccakF1600_StatePermute_fu_362_s_i_address1, ap_CS_fsm_state39, ap_CS_fsm_state41)
+    s_i_address1_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_address1, grp_KeccakF1600_StatePermute_fu_359_s_i_address1, ap_CS_fsm_state39, ap_CS_fsm_state41)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_address1 <= grp_KeccakF1600_StatePermute_fu_362_s_i_address1;
+            s_i_address1 <= grp_KeccakF1600_StatePermute_fu_359_s_i_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_address1 <= grp_cshake256_simple_absorb_fu_349_s_address1;
+            s_i_address1 <= grp_cshake256_simple_absorb_fu_346_s_address1;
         else 
             s_i_address1 <= "XXXXX";
         end if; 
     end process;
 
 
-    s_i_ce0_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_ce0, grp_KeccakF1600_StatePermute_fu_362_s_i_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_ce0, ap_CS_fsm_state39, ap_CS_fsm_state41, ap_CS_fsm_state43)
+    s_i_ce0_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_ce0, grp_KeccakF1600_StatePermute_fu_359_s_i_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_ce0, ap_CS_fsm_state39, ap_CS_fsm_state41, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            s_i_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_s_i_ce0;
+            s_i_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_s_i_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_ce0 <= grp_KeccakF1600_StatePermute_fu_362_s_i_ce0;
+            s_i_ce0 <= grp_KeccakF1600_StatePermute_fu_359_s_i_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_ce0 <= grp_cshake256_simple_absorb_fu_349_s_ce0;
+            s_i_ce0 <= grp_cshake256_simple_absorb_fu_346_s_ce0;
         else 
             s_i_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    s_i_ce1_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_ce1, grp_KeccakF1600_StatePermute_fu_362_s_i_ce1, ap_CS_fsm_state39, ap_CS_fsm_state41)
+    s_i_ce1_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_ce1, grp_KeccakF1600_StatePermute_fu_359_s_i_ce1, ap_CS_fsm_state39, ap_CS_fsm_state41)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_ce1 <= grp_KeccakF1600_StatePermute_fu_362_s_i_ce1;
+            s_i_ce1 <= grp_KeccakF1600_StatePermute_fu_359_s_i_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_ce1 <= grp_cshake256_simple_absorb_fu_349_s_ce1;
+            s_i_ce1 <= grp_cshake256_simple_absorb_fu_346_s_ce1;
         else 
             s_i_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    s_i_d0_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_d0, grp_KeccakF1600_StatePermute_fu_362_s_i_d0, ap_CS_fsm_state39, ap_CS_fsm_state41)
+    s_i_d0_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_d0, grp_KeccakF1600_StatePermute_fu_359_s_i_d0, ap_CS_fsm_state39, ap_CS_fsm_state41)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_d0 <= grp_KeccakF1600_StatePermute_fu_362_s_i_d0;
+            s_i_d0 <= grp_KeccakF1600_StatePermute_fu_359_s_i_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_d0 <= grp_cshake256_simple_absorb_fu_349_s_d0;
+            s_i_d0 <= grp_cshake256_simple_absorb_fu_346_s_d0;
         else 
             s_i_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    s_i_d1_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_d1, grp_KeccakF1600_StatePermute_fu_362_s_i_d1, ap_CS_fsm_state39, ap_CS_fsm_state41)
+    s_i_d1_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_d1, grp_KeccakF1600_StatePermute_fu_359_s_i_d1, ap_CS_fsm_state39, ap_CS_fsm_state41)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_d1 <= grp_KeccakF1600_StatePermute_fu_362_s_i_d1;
+            s_i_d1 <= grp_KeccakF1600_StatePermute_fu_359_s_i_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_d1 <= grp_cshake256_simple_absorb_fu_349_s_d1;
+            s_i_d1 <= grp_cshake256_simple_absorb_fu_346_s_d1;
         else 
             s_i_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    s_i_we0_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_we0, grp_KeccakF1600_StatePermute_fu_362_s_i_we0, ap_CS_fsm_state39, ap_CS_fsm_state41)
+    s_i_we0_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_we0, grp_KeccakF1600_StatePermute_fu_359_s_i_we0, ap_CS_fsm_state39, ap_CS_fsm_state41)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_we0 <= grp_KeccakF1600_StatePermute_fu_362_s_i_we0;
+            s_i_we0 <= grp_KeccakF1600_StatePermute_fu_359_s_i_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_we0 <= grp_cshake256_simple_absorb_fu_349_s_we0;
+            s_i_we0 <= grp_cshake256_simple_absorb_fu_346_s_we0;
         else 
             s_i_we0 <= ap_const_lv8_0;
         end if; 
     end process;
 
 
-    s_i_we1_assign_proc : process(grp_cshake256_simple_absorb_fu_349_s_we1, grp_KeccakF1600_StatePermute_fu_362_s_i_we1, ap_CS_fsm_state39, ap_CS_fsm_state41)
+    s_i_we1_assign_proc : process(grp_cshake256_simple_absorb_fu_346_s_we1, grp_KeccakF1600_StatePermute_fu_359_s_i_we1, ap_CS_fsm_state39, ap_CS_fsm_state41)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            s_i_we1 <= grp_KeccakF1600_StatePermute_fu_362_s_i_we1;
+            s_i_we1 <= grp_KeccakF1600_StatePermute_fu_359_s_i_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            s_i_we1 <= grp_cshake256_simple_absorb_fu_349_s_we1;
+            s_i_we1 <= grp_cshake256_simple_absorb_fu_346_s_we1;
         else 
             s_i_we1 <= ap_const_lv8_0;
         end if; 
     end process;
 
 
-    strat_Alice_1_address0_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_address0, grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_address0, ap_CS_fsm_state16, ap_CS_fsm_state18)
+    strat_Alice_1_address0_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_address0, grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_address0, ap_CS_fsm_state16, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            strat_Alice_1_address0 <= grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_address0;
+            strat_Alice_1_address0 <= grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state16)) then 
-            strat_Alice_1_address0 <= grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_address0;
+            strat_Alice_1_address0 <= grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_address0;
         else 
             strat_Alice_1_address0 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    strat_Alice_1_ce0_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_ce0, grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_ce0, ap_CS_fsm_state16, ap_CS_fsm_state18)
+    strat_Alice_1_ce0_assign_proc : process(grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_ce0, grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_ce0, ap_CS_fsm_state16, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state18)) then 
-            strat_Alice_1_ce0 <= grp_EphemeralSecretAgreement_A_1_fu_292_strat_Alice_1_ce0;
+            strat_Alice_1_ce0 <= grp_EphemeralSecretAgreement_A_1_fu_290_strat_Alice_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state16)) then 
-            strat_Alice_1_ce0 <= grp_EphemeralKeyGeneration_A_1_fu_257_strat_Alice_1_ce0;
+            strat_Alice_1_ce0 <= grp_EphemeralKeyGeneration_A_1_fu_255_strat_Alice_1_ce0;
         else 
             strat_Alice_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_44_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_44_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_44_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_address0;
+            t_44_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_44_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_address0;
+            t_44_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_address0;
         else 
             t_44_address0 <= "XXXXXX";
         end if; 
     end process;
 
 
-    t_44_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_44_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_44_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_78_ce0;
+            t_44_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_78_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_44_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce0;
+            t_44_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce0;
         else 
             t_44_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_44_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce1, ap_CS_fsm_state43)
+    t_44_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_44_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_ce1;
+            t_44_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_ce1;
         else 
             t_44_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_44_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we0, ap_CS_fsm_state43)
+    t_44_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we0, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_44_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we0;
+            t_44_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we0;
         else 
             t_44_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_44_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we1, ap_CS_fsm_state43)
+    t_44_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_44_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_78_we1;
+            t_44_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_78_we1;
         else 
             t_44_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_45_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_45_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_45_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_address0;
+            t_45_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_45_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_address0;
+            t_45_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_address0;
         else 
             t_45_address0 <= "XXXXXX";
         end if; 
     end process;
 
 
-    t_45_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_45_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_45_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_79_ce0;
+            t_45_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_79_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_45_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce0;
+            t_45_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce0;
         else 
             t_45_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_45_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce1, ap_CS_fsm_state43)
+    t_45_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_45_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_ce1;
+            t_45_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_ce1;
         else 
             t_45_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_45_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we0, ap_CS_fsm_state43)
+    t_45_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we0, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_45_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we0;
+            t_45_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we0;
         else 
             t_45_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_45_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we1, ap_CS_fsm_state43)
+    t_45_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_45_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_79_we1;
+            t_45_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_79_we1;
         else 
             t_45_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_46_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_46_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_46_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_address0;
+            t_46_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_46_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_address0;
+            t_46_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_address0;
         else 
             t_46_address0 <= "XXXXXX";
         end if; 
     end process;
 
 
-    t_46_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_46_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_46_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_80_ce0;
+            t_46_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_80_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_46_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce0;
+            t_46_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce0;
         else 
             t_46_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_46_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce1, ap_CS_fsm_state43)
+    t_46_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_46_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_ce1;
+            t_46_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_ce1;
         else 
             t_46_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_46_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we0, ap_CS_fsm_state43)
+    t_46_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we0, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_46_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we0;
+            t_46_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we0;
         else 
             t_46_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_46_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we1, ap_CS_fsm_state43)
+    t_46_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_46_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_80_we1;
+            t_46_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_80_we1;
         else 
             t_46_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_address0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_address0;
+            t_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_address0;
+            t_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_address0;
         else 
             t_address0 <= "XXXXXX";
         end if; 
     end process;
 
 
-    t_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
+    t_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_ce0, ap_CS_fsm_state43, ap_CS_fsm_state46)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state46)) then 
-            t_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_570_1_fu_378_t_ce0;
+            t_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_t_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce0;
+            t_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce0;
         else 
             t_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce1, ap_CS_fsm_state43)
+    t_ce1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_ce1;
+            t_ce1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_ce1;
         else 
             t_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we0, ap_CS_fsm_state43)
+    t_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we0, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we0;
+            t_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we0;
         else 
             t_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    t_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we1, ap_CS_fsm_state43)
+    t_we1_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we1, ap_CS_fsm_state43)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            t_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_377_2_fu_369_t_we1;
+            t_we1 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_t_we1;
         else 
             t_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_1_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_address0, grp_cshake256_simple_32_fu_246_in_1_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_address0, grp_cshake256_simple_absorb_fu_349_in_1_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_1_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_address0, grp_cshake256_simple_32_fu_244_in_1_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_address0, grp_cshake256_simple_absorb_fu_346_in_1_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_1_address0 <= grp_cshake256_simple_absorb_fu_349_in_1_address0;
+            temp_1_address0 <= grp_cshake256_simple_absorb_fu_346_in_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_address0;
+            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_address0;
+            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_1_address0 <= grp_cshake256_simple_32_fu_246_in_1_address0;
+            temp_1_address0 <= grp_cshake256_simple_32_fu_244_in_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_address0;
+            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_address0;
+            temp_1_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_address0;
         else 
             temp_1_address0 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_1_address1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_1_address1, grp_cshake256_simple_absorb_fu_349_in_1_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_1_address1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_1_address1, grp_cshake256_simple_absorb_fu_346_in_1_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_1_address1 <= grp_cshake256_simple_absorb_fu_349_in_1_address1;
+            temp_1_address1 <= grp_cshake256_simple_absorb_fu_346_in_1_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_1_address1 <= grp_cshake256_simple_32_fu_246_in_1_address1;
+            temp_1_address1 <= grp_cshake256_simple_32_fu_244_in_1_address1;
         else 
             temp_1_address1 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_1_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_ce0, grp_cshake256_simple_32_fu_246_in_1_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_ce0, grp_cshake256_simple_absorb_fu_349_in_1_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_1_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_ce0, grp_cshake256_simple_32_fu_244_in_1_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_ce0, grp_cshake256_simple_absorb_fu_346_in_1_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_1_ce0 <= grp_cshake256_simple_absorb_fu_349_in_1_ce0;
+            temp_1_ce0 <= grp_cshake256_simple_absorb_fu_346_in_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_ce0;
+            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_1_ce0;
+            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_1_ce0 <= grp_cshake256_simple_32_fu_246_in_1_ce0;
+            temp_1_ce0 <= grp_cshake256_simple_32_fu_244_in_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_ce0;
+            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_ce0;
+            temp_1_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_ce0;
         else 
             temp_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_1_ce1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_1_ce1, grp_cshake256_simple_absorb_fu_349_in_1_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_1_ce1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_1_ce1, grp_cshake256_simple_absorb_fu_346_in_1_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_1_ce1 <= grp_cshake256_simple_absorb_fu_349_in_1_ce1;
+            temp_1_ce1 <= grp_cshake256_simple_absorb_fu_346_in_1_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_1_ce1 <= grp_cshake256_simple_32_fu_246_in_1_ce1;
+            temp_1_ce1 <= grp_cshake256_simple_32_fu_244_in_1_ce1;
         else 
             temp_1_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_1_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_1_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_1_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_d0;
+            temp_1_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_1_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_d0;
+            temp_1_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_1_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_d0;
+            temp_1_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_d0;
         else 
             temp_1_d0 <= "XXXXXXXX";
         end if; 
     end process;
 
 
-    temp_1_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_1_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_1_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_1_we0;
+            temp_1_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_1_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_1_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_1_we0;
+            temp_1_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_1_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_1_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_1_we0;
+            temp_1_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_1_we0;
         else 
             temp_1_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_2_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_address0, grp_cshake256_simple_32_fu_246_in_2_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_address0, grp_cshake256_simple_absorb_fu_349_in_2_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_2_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_address0, grp_cshake256_simple_32_fu_244_in_2_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_address0, grp_cshake256_simple_absorb_fu_346_in_2_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_2_address0 <= grp_cshake256_simple_absorb_fu_349_in_2_address0;
+            temp_2_address0 <= grp_cshake256_simple_absorb_fu_346_in_2_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_address0;
+            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_address0;
+            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_2_address0 <= grp_cshake256_simple_32_fu_246_in_2_address0;
+            temp_2_address0 <= grp_cshake256_simple_32_fu_244_in_2_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_address0;
+            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_address0;
+            temp_2_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_address0;
         else 
             temp_2_address0 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_2_address1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_2_address1, grp_cshake256_simple_absorb_fu_349_in_2_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_2_address1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_2_address1, grp_cshake256_simple_absorb_fu_346_in_2_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_2_address1 <= grp_cshake256_simple_absorb_fu_349_in_2_address1;
+            temp_2_address1 <= grp_cshake256_simple_absorb_fu_346_in_2_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_2_address1 <= grp_cshake256_simple_32_fu_246_in_2_address1;
+            temp_2_address1 <= grp_cshake256_simple_32_fu_244_in_2_address1;
         else 
             temp_2_address1 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_2_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_ce0, grp_cshake256_simple_32_fu_246_in_2_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_ce0, grp_cshake256_simple_absorb_fu_349_in_2_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_2_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_ce0, grp_cshake256_simple_32_fu_244_in_2_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_ce0, grp_cshake256_simple_absorb_fu_346_in_2_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_2_ce0 <= grp_cshake256_simple_absorb_fu_349_in_2_ce0;
+            temp_2_ce0 <= grp_cshake256_simple_absorb_fu_346_in_2_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_ce0;
+            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_2_ce0;
+            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_2_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_2_ce0 <= grp_cshake256_simple_32_fu_246_in_2_ce0;
+            temp_2_ce0 <= grp_cshake256_simple_32_fu_244_in_2_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_ce0;
+            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_ce0;
+            temp_2_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_ce0;
         else 
             temp_2_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_2_ce1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_2_ce1, grp_cshake256_simple_absorb_fu_349_in_2_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_2_ce1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_2_ce1, grp_cshake256_simple_absorb_fu_346_in_2_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_2_ce1 <= grp_cshake256_simple_absorb_fu_349_in_2_ce1;
+            temp_2_ce1 <= grp_cshake256_simple_absorb_fu_346_in_2_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_2_ce1 <= grp_cshake256_simple_32_fu_246_in_2_ce1;
+            temp_2_ce1 <= grp_cshake256_simple_32_fu_244_in_2_ce1;
         else 
             temp_2_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_2_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_2_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_2_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_d0;
+            temp_2_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_2_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_d0;
+            temp_2_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_2_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_d0;
+            temp_2_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_d0;
         else 
             temp_2_d0 <= "XXXXXXXX";
         end if; 
     end process;
 
 
-    temp_2_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_2_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_2_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_2_we0;
+            temp_2_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_2_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_2_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_2_we0;
+            temp_2_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_2_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_2_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_2_we0;
+            temp_2_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_2_we0;
         else 
             temp_2_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_3_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_address0, grp_cshake256_simple_32_fu_246_in_3_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_address0, grp_cshake256_simple_absorb_fu_349_in_3_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_3_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_address0, grp_cshake256_simple_32_fu_244_in_3_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_address0, grp_cshake256_simple_absorb_fu_346_in_3_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_3_address0 <= grp_cshake256_simple_absorb_fu_349_in_3_address0;
+            temp_3_address0 <= grp_cshake256_simple_absorb_fu_346_in_3_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_address0;
+            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_address0;
+            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_3_address0 <= grp_cshake256_simple_32_fu_246_in_3_address0;
+            temp_3_address0 <= grp_cshake256_simple_32_fu_244_in_3_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_address0;
+            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_address0;
+            temp_3_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_address0;
         else 
             temp_3_address0 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_3_address1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_3_address1, grp_cshake256_simple_absorb_fu_349_in_3_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_3_address1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_3_address1, grp_cshake256_simple_absorb_fu_346_in_3_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_3_address1 <= grp_cshake256_simple_absorb_fu_349_in_3_address1;
+            temp_3_address1 <= grp_cshake256_simple_absorb_fu_346_in_3_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_3_address1 <= grp_cshake256_simple_32_fu_246_in_3_address1;
+            temp_3_address1 <= grp_cshake256_simple_32_fu_244_in_3_address1;
         else 
             temp_3_address1 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_3_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_ce0, grp_cshake256_simple_32_fu_246_in_3_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_ce0, grp_cshake256_simple_absorb_fu_349_in_3_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_3_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_ce0, grp_cshake256_simple_32_fu_244_in_3_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_ce0, grp_cshake256_simple_absorb_fu_346_in_3_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_3_ce0 <= grp_cshake256_simple_absorb_fu_349_in_3_ce0;
+            temp_3_ce0 <= grp_cshake256_simple_absorb_fu_346_in_3_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_ce0;
+            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_3_ce0;
+            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_3_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_3_ce0 <= grp_cshake256_simple_32_fu_246_in_3_ce0;
+            temp_3_ce0 <= grp_cshake256_simple_32_fu_244_in_3_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_ce0;
+            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_ce0;
+            temp_3_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_ce0;
         else 
             temp_3_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_3_ce1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_3_ce1, grp_cshake256_simple_absorb_fu_349_in_3_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_3_ce1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_3_ce1, grp_cshake256_simple_absorb_fu_346_in_3_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_3_ce1 <= grp_cshake256_simple_absorb_fu_349_in_3_ce1;
+            temp_3_ce1 <= grp_cshake256_simple_absorb_fu_346_in_3_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_3_ce1 <= grp_cshake256_simple_32_fu_246_in_3_ce1;
+            temp_3_ce1 <= grp_cshake256_simple_32_fu_244_in_3_ce1;
         else 
             temp_3_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_3_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_3_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_3_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_d0;
+            temp_3_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_3_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_d0;
+            temp_3_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_3_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_d0;
+            temp_3_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_d0;
         else 
             temp_3_d0 <= "XXXXXXXX";
         end if; 
     end process;
 
 
-    temp_3_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_3_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_3_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_3_we0;
+            temp_3_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_3_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_3_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_3_we0;
+            temp_3_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_3_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_3_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_3_we0;
+            temp_3_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_3_we0;
         else 
             temp_3_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_address0, grp_cshake256_simple_32_fu_246_in_0_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_address0, grp_cshake256_simple_absorb_fu_349_in_0_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_address0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_address0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_address0, grp_cshake256_simple_32_fu_244_in_0_address0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_address0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_address0, grp_cshake256_simple_absorb_fu_346_in_0_address0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_address0 <= grp_cshake256_simple_absorb_fu_349_in_0_address0;
+            temp_address0 <= grp_cshake256_simple_absorb_fu_346_in_0_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_address0;
+            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_address0;
+            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_address0 <= grp_cshake256_simple_32_fu_246_in_0_address0;
+            temp_address0 <= grp_cshake256_simple_32_fu_244_in_0_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_address0;
+            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_address0;
+            temp_address0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_address0;
         else 
             temp_address0 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_address1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_0_address1, grp_cshake256_simple_absorb_fu_349_in_0_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_address1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_0_address1, grp_cshake256_simple_absorb_fu_346_in_0_address1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_address1 <= grp_cshake256_simple_absorb_fu_349_in_0_address1;
+            temp_address1 <= grp_cshake256_simple_absorb_fu_346_in_0_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_address1 <= grp_cshake256_simple_32_fu_246_in_0_address1;
+            temp_address1 <= grp_cshake256_simple_32_fu_244_in_0_address1;
         else 
             temp_address1 <= "XXXXXXX";
         end if; 
     end process;
 
 
-    temp_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_ce0, grp_cshake256_simple_32_fu_246_in_0_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_ce0, grp_cshake256_simple_absorb_fu_349_in_0_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
+    temp_ce0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_ce0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_ce0, grp_cshake256_simple_32_fu_244_in_0_ce0, grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_ce0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_ce0, grp_cshake256_simple_absorb_fu_346_in_0_ce0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state37, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_ce0 <= grp_cshake256_simple_absorb_fu_349_in_0_ce0;
+            temp_ce0 <= grp_cshake256_simple_absorb_fu_346_in_0_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_ce0;
+            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_56_1_fu_325_temp_ce0;
+            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_temp_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_ce0 <= grp_cshake256_simple_32_fu_246_in_0_ce0;
+            temp_ce0 <= grp_cshake256_simple_32_fu_244_in_0_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_ce0;
+            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_ce0;
+            temp_ce0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_ce0;
         else 
             temp_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_ce1_assign_proc : process(grp_cshake256_simple_32_fu_246_in_0_ce1, grp_cshake256_simple_absorb_fu_349_in_0_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
+    temp_ce1_assign_proc : process(grp_cshake256_simple_32_fu_244_in_0_ce1, grp_cshake256_simple_absorb_fu_346_in_0_ce1, ap_CS_fsm_state12, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            temp_ce1 <= grp_cshake256_simple_absorb_fu_349_in_0_ce1;
+            temp_ce1 <= grp_cshake256_simple_absorb_fu_346_in_0_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            temp_ce1 <= grp_cshake256_simple_32_fu_246_in_0_ce1;
+            temp_ce1 <= grp_cshake256_simple_32_fu_244_in_0_ce1;
         else 
             temp_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    temp_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_d0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_d0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_d0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_d0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_d0;
+            temp_d0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_d0;
+            temp_d0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_d0;
+            temp_d0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_d0;
         else 
             temp_d0 <= "XXXXXXXX";
         end if; 
     end process;
 
 
-    temp_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
+    temp_we0_assign_proc : process(grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_we0, grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_we0, grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_we0, ap_CS_fsm_state2, ap_CS_fsm_state10, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            temp_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_338_temp_we0;
+            temp_we0 <= grp_crypto_kem_enc_1_Pipeline_4_fu_335_temp_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            temp_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_235_temp_we0;
+            temp_we0 <= grp_crypto_kem_enc_1_Pipeline_2_fu_233_temp_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            temp_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_26_1_fu_221_temp_we0;
+            temp_we0 <= grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_temp_we0;
         else 
             temp_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    trunc_ln50_fu_396_p1 <= ephemeralsk_q0(2 - 1 downto 0);
-    zext_ln50_fu_400_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln50_fu_396_p1),8));
+    trunc_ln56_fu_393_p1 <= ephemeralsk_q0(2 - 1 downto 0);
+    zext_ln56_fu_397_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln56_fu_393_p1),8));
 end behav;

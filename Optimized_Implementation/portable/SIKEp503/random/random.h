@@ -3,7 +3,7 @@
 
 
 // Generate random bytes and output the result to random_array
-int randombytes(unsigned char* random_array, unsigned long long nbytes);
+// int randombytes(unsigned char* random_array, unsigned long long nbytes);
 
-
+void randombytes(unsigned char* random_array, unsigned long long nbytes);
 #endif

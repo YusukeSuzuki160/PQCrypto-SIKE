@@ -46,7 +46,7 @@ newFuncRoot:0 %loop_index3 = alloca i32 1
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem2, void @empty_88, i32 0, i32 0, void @empty_44, i32 0, i32 0, void @empty_73, void @empty_58, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -59,9 +59,9 @@ newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="9" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-newFuncRoot:2 %pk_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %pk
+newFuncRoot:2 %pk_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %pk
 
 ]]></Node>
 <StgValue><ssdm name="pk_read"/></StgValue>
@@ -151,7 +151,7 @@ load-store-loop2:2 %empty = add i9 %loop_index3_load, i9 1
 
 <Node id="16" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-load-store-loop2:3 %br_ln0 = br i1 %exitcond710, void %load-store-loop2.split, void %memcpy-split1.exitStub
+load-store-loop2:3 %br_ln0 = br i1 %exitcond710, void %load-store-loop2.split, void %for.end.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -165,15 +165,31 @@ load-store-loop2:3 %br_ln0 = br i1 %exitcond710, void %load-store-loop2.split, v
 </and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="2" op_0_bw="9">
+<Node id="18" bw="8" op_0_bw="8" op_1_bw="64">
 <![CDATA[
-load-store-loop2.split:1 %empty_226 = trunc i9 %loop_index3_load
+load-store-loop2.split:0 %gmem_addr = getelementptr i8 %gmem, i64 %pk_read
 
 ]]></Node>
-<StgValue><ssdm name="empty_226"/></StgValue>
+<StgValue><ssdm name="gmem_addr"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="exitcond710" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="19" bw="2" op_0_bw="9">
+<![CDATA[
+load-store-loop2.split:1 %empty_180 = trunc i9 %loop_index3_load
+
+]]></Node>
+<StgValue><ssdm name="empty_180"/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -189,7 +205,7 @@ load-store-loop2.split:5 %loop_index3_udiv_cast = partselect i7 @_ssdm_op_PartSe
 <StgValue><ssdm name="loop_index3_udiv_cast"/></StgValue>
 </operation>
 
-<operation id="17" st_id="1" stage="1" lat="1">
+<operation id="18" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -199,13 +215,13 @@ load-store-loop2.split:5 %loop_index3_udiv_cast = partselect i7 @_ssdm_op_PartSe
 
 <Node id="30" bw="0" op_0_bw="2" op_1_bw="0" op_2_bw="2" op_3_bw="0" op_4_bw="2" op_5_bw="0" op_6_bw="2" op_7_bw="0">
 <![CDATA[
-load-store-loop2.split:12 %switch_ln0 = switch i2 %empty_226, void %.case.3, i2 0, void %.case.0, i2 1, void %.case.1, i2 2, void %.case.2
+load-store-loop2.split:12 %switch_ln0 = switch i2 %empty_180, void %.case.3, i2 0, void %.case.0, i2 1, void %.case.1, i2 2, void %.case.2
 
 ]]></Node>
 <StgValue><ssdm name="switch_ln0"/></StgValue>
 </operation>
 
-<operation id="18" st_id="1" stage="1" lat="1">
+<operation id="19" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -221,7 +237,7 @@ load-store-loop2.split:12 %switch_ln0 = switch i2 %empty_226, void %.case.3, i2 
 <StgValue><ssdm name="store_ln0"/></StgValue>
 </operation>
 
-<operation id="19" st_id="1" stage="1" lat="1">
+<operation id="20" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -240,21 +256,6 @@ load-store-loop2.split:12 %switch_ln0 = switch i2 %empty_226, void %.case.3, i2 
 
 <state id="2" st_id="3">
 
-<operation id="20" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="18" bw="8" op_0_bw="8" op_1_bw="32">
-<![CDATA[
-load-store-loop2.split:0 %gmem2_addr = getelementptr i8 %gmem2, i32 %pk_read
-
-]]></Node>
-<StgValue><ssdm name="gmem2_addr"/></StgValue>
-</operation>
-
 <operation id="21" st_id="2" stage="1" lat="1">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
@@ -264,10 +265,10 @@ load-store-loop2.split:0 %gmem2_addr = getelementptr i8 %gmem2, i32 %pk_read
 
 <Node id="22" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-load-store-loop2.split:4 %gmem2_addr_read = read i8 @_ssdm_op_Read.m_axi.p1i8, i8 %gmem2_addr
+load-store-loop2.split:4 %gmem_addr_read = read i8 @_ssdm_op_Read.m_axi.p1i8, i8 %gmem_addr
 
 ]]></Node>
-<StgValue><ssdm name="gmem2_addr_read"/></StgValue>
+<StgValue><ssdm name="gmem_addr_read"/></StgValue>
 </operation>
 
 <operation id="38" st_id="2" stage="1" lat="1">
@@ -280,7 +281,7 @@ load-store-loop2.split:4 %gmem2_addr_read = read i8 @_ssdm_op_Read.m_axi.p1i8, i
 
 <Node id="47" bw="0">
 <![CDATA[
-memcpy-split1.exitStub:0 %ret_ln0 = ret
+for.end.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -328,10 +329,10 @@ load-store-loop2.split:3 %speclooptripcount_ln0 = speclooptripcount void @_ssdm_
 
 <Node id="24" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-load-store-loop2.split:6 %empty_227 = add i7 %loop_index3_udiv_cast, i7 6
+load-store-loop2.split:6 %empty_181 = add i7 %loop_index3_udiv_cast, i7 6
 
 ]]></Node>
-<StgValue><ssdm name="empty_227"/></StgValue>
+<StgValue><ssdm name="empty_181"/></StgValue>
 </operation>
 
 <operation id="25" st_id="3" stage="1" lat="1">
@@ -341,9 +342,9 @@ load-store-loop2.split:6 %empty_227 = add i7 %loop_index3_udiv_cast, i7 6
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="32" op_0_bw="7">
+<Node id="25" bw="64" op_0_bw="7">
 <![CDATA[
-load-store-loop2.split:7 %p_cast = zext i7 %empty_227
+load-store-loop2.split:7 %p_cast = zext i7 %empty_181
 
 ]]></Node>
 <StgValue><ssdm name="p_cast"/></StgValue>
@@ -356,9 +357,9 @@ load-store-loop2.split:7 %p_cast = zext i7 %empty_227
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="7" op_0_bw="8" op_1_bw="32" op_2_bw="32">
+<Node id="26" bw="7" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-load-store-loop2.split:8 %temp_addr = getelementptr i8 %temp, i32 0, i32 %p_cast
+load-store-loop2.split:8 %temp_addr = getelementptr i8 %temp, i64 0, i64 %p_cast
 
 ]]></Node>
 <StgValue><ssdm name="temp_addr"/></StgValue>
@@ -371,9 +372,9 @@ load-store-loop2.split:8 %temp_addr = getelementptr i8 %temp, i32 0, i32 %p_cast
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="7" op_0_bw="8" op_1_bw="32" op_2_bw="32">
+<Node id="27" bw="7" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-load-store-loop2.split:9 %temp_1_addr = getelementptr i8 %temp_1, i32 0, i32 %p_cast
+load-store-loop2.split:9 %temp_1_addr = getelementptr i8 %temp_1, i64 0, i64 %p_cast
 
 ]]></Node>
 <StgValue><ssdm name="temp_1_addr"/></StgValue>
@@ -386,9 +387,9 @@ load-store-loop2.split:9 %temp_1_addr = getelementptr i8 %temp_1, i32 0, i32 %p_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="7" op_0_bw="8" op_1_bw="32" op_2_bw="32">
+<Node id="28" bw="7" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-load-store-loop2.split:10 %temp_2_addr = getelementptr i8 %temp_2, i32 0, i32 %p_cast
+load-store-loop2.split:10 %temp_2_addr = getelementptr i8 %temp_2, i64 0, i64 %p_cast
 
 ]]></Node>
 <StgValue><ssdm name="temp_2_addr"/></StgValue>
@@ -401,9 +402,9 @@ load-store-loop2.split:10 %temp_2_addr = getelementptr i8 %temp_2, i32 0, i32 %p
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="7" op_0_bw="8" op_1_bw="32" op_2_bw="32">
+<Node id="29" bw="7" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i32 0, i32 %p_cast
+load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %p_cast
 
 ]]></Node>
 <StgValue><ssdm name="temp_3_addr"/></StgValue>
@@ -413,23 +414,23 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i32 0, i32 %p
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="-2"/>
+<or_exp><and_exp><literal name="empty_180" val="-2"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="32" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.2:0 %store_ln48 = store i8 %gmem2_addr_read, i7 %temp_2_addr
+.case.2:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_2_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln48"/></StgValue>
+<StgValue><ssdm name="store_ln49"/></StgValue>
 </operation>
 
 <operation id="31" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="-2"/>
+<or_exp><and_exp><literal name="empty_180" val="-2"/>
 </and_exp></or_exp>
 </condition>
 
@@ -445,23 +446,23 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i32 0, i32 %p
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="1"/>
+<or_exp><and_exp><literal name="empty_180" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="35" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.1:0 %store_ln48 = store i8 %gmem2_addr_read, i7 %temp_1_addr
+.case.1:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_1_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln48"/></StgValue>
+<StgValue><ssdm name="store_ln49"/></StgValue>
 </operation>
 
 <operation id="33" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="1"/>
+<or_exp><and_exp><literal name="empty_180" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -477,23 +478,23 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i32 0, i32 %p
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="0"/>
+<or_exp><and_exp><literal name="empty_180" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="38" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.0:0 %store_ln48 = store i8 %gmem2_addr_read, i7 %temp_addr
+.case.0:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln48"/></StgValue>
+<StgValue><ssdm name="store_ln49"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="0"/>
+<or_exp><and_exp><literal name="empty_180" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -509,23 +510,23 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i32 0, i32 %p
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="-1"/>
+<or_exp><and_exp><literal name="empty_180" val="-1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="41" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.3:0 %store_ln48 = store i8 %gmem2_addr_read, i7 %temp_3_addr
+.case.3:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_3_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln48"/></StgValue>
+<StgValue><ssdm name="store_ln49"/></StgValue>
 </operation>
 
 <operation id="37" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_226" val="-1"/>
+<or_exp><and_exp><literal name="empty_180" val="-1"/>
 </and_exp></or_exp>
 </condition>
 

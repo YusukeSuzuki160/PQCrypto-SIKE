@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpsub503_1'" level="0">
-<item name = "Date">Tue May 20 14:30:54 2025
+<item name = "Date">Tue May 27 14:11:54 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">40, 40, 0.400 us, 0.400 us, 40, 40, no</column>
+<column name="">33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpsub503_1_Pipeline_VITIS_LOOP_47_1_fu_20">fpsub503_1_Pipeline_VITIS_LOOP_47_1, 11, 11, 0.110 us, 0.110 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpsub503_1_Pipeline_VITIS_LOOP_53_2_fu_31">fpsub503_1_Pipeline_VITIS_LOOP_53_2, 26, 26, 0.260 us, 0.260 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpsub503_1_Pipeline_VITIS_LOOP_47_1_fu_18">fpsub503_1_Pipeline_VITIS_LOOP_47_1, 11, 11, 0.110 us, 0.110 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpsub503_1_Pipeline_VITIS_LOOP_53_2_fu_29">fpsub503_1_Pipeline_VITIS_LOOP_53_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

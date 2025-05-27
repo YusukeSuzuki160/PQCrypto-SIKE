@@ -75,14 +75,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -145,14 +145,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -258,14 +258,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -294,7 +294,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>34</item>
-            <item>88</item>
+            <item>89</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -329,14 +329,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -349,7 +349,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln14_fu_71_p2</rtlName>
+              <rtlName>icmp_ln14_fu_73_p2</rtlName>
               <control>auto</control>
               <opType>seteq</opType>
               <implIndex>auto</implIndex>
@@ -400,14 +400,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -420,7 +420,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln14_fu_77_p2</rtlName>
+              <rtlName>add_ln14_fu_79_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -471,14 +471,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -523,11 +523,11 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>15</id>
-              <name>trunc_ln15</name>
+              <id>12</id>
+              <name>zext_ln14</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>15</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>fpcopy503</contextFuncName>
               <contextNormFuncName>fpcopy503</contextNormFuncName>
               <inlineStackInfo>
@@ -543,27 +543,27 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fpcopy503</second>
                       </first>
-                      <second>15</second>
+                      <second>14</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln15_fu_83_p1</rtlName>
+              <rtlName>zext_ln14_fu_85_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -573,14 +573,14 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>3</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
             <item>44</item>
           </oprand_edges>
-          <opcode>trunc</opcode>
+          <opcode>zext</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
@@ -594,76 +594,6 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>zext_ln15</name>
-              <fileName>src/fpx.c</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>15</lineNumber>
-              <contextFuncName>fpcopy503</contextFuncName>
-              <contextNormFuncName>fpcopy503</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>3</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/ec_isogeny.c</first>
-                        <second>LADDER3PT</second>
-                      </first>
-                      <second>312</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>fp2copy503</second>
-                      </first>
-                      <second>91</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>fpcopy503</second>
-                      </first>
-                      <second>15</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>zext_ln15_fu_87_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>45</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>9</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_11">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>17</id>
               <name>XPA_1_addr</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -683,14 +613,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -718,9 +648,9 @@
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
-            <item>46</item>
+            <item>45</item>
+            <item>47</item>
             <item>48</item>
-            <item>49</item>
           </oprand_edges>
           <opcode>getelementptr</opcode>
           <m_Display>0</m_Display>
@@ -728,14 +658,14 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>10</m_topoIndex>
+          <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_12">
+        <item class_id_reference="9" object_id="_11">
           <Value>
             <Obj>
               <type>0</type>
-              <id>18</id>
+              <id>17</id>
               <name>XPA_1_load</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -755,14 +685,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -790,7 +720,7 @@
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>50</item>
+            <item>49</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -798,15 +728,15 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>2.32</m_delay>
-          <m_topoIndex>11</m_topoIndex>
+          <m_topoIndex>10</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_13">
+        <item class_id_reference="9" object_id="_12">
           <Value>
             <Obj>
               <type>0</type>
-              <id>19</id>
-              <name>zext_ln15_s</name>
+              <id>18</id>
+              <name>trunc_ln15</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>15</lineNumber>
@@ -825,14 +755,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -845,7 +775,77 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln15_s_fu_97_p3</rtlName>
+              <rtlName>trunc_ln15_fu_90_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>3</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>50</item>
+          </oprand_edges>
+          <opcode>trunc</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>11</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_13">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>19</id>
+              <name>zext_ln</name>
+              <fileName>src/fpx.c</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>15</lineNumber>
+              <contextFuncName>fpcopy503</contextFuncName>
+              <contextNormFuncName>fpcopy503</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>3</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/ec_isogeny.c</first>
+                        <second>LADDER3PT</second>
+                      </first>
+                      <second>314</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>fp2copy503</second>
+                      </first>
+                      <second>92</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>fpcopy503</second>
+                      </first>
+                      <second>15</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>zext_ln_fu_99_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -878,7 +878,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>zext_ln15_1</name>
+              <name>zext_ln15</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>15</lineNumber>
@@ -897,14 +897,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -917,7 +917,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln15_1_fu_104_p1</rtlName>
+              <rtlName>zext_ln15_fu_106_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -927,7 +927,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -967,14 +967,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -1039,14 +1039,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -1110,14 +1110,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -1147,8 +1147,8 @@
             <item_version>0</item_version>
             <item>62</item>
             <item>63</item>
-            <item>89</item>
             <item>90</item>
+            <item>91</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -1183,14 +1183,14 @@
                         <first>src/ec_isogeny.c</first>
                         <second>LADDER3PT</second>
                       </first>
-                      <second>312</second>
+                      <second>314</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fp2copy503</second>
                       </first>
-                      <second>91</second>
+                      <second>92</second>
                     </item>
                     <item>
                       <first>
@@ -1274,7 +1274,7 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>91</id>
+              <id>92</id>
               <name>XPA_1</name>
               <fileName/>
               <fileDirectory/>
@@ -1443,7 +1443,7 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>47</id>
+              <id>46</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1465,7 +1465,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -1600,7 +1600,7 @@
           <node_objs>
             <count>10</count>
             <item_version>0</item_version>
-            <item>15</item>
+            <item>12</item>
             <item>16</item>
             <item>17</item>
             <item>18</item>
@@ -1735,28 +1735,28 @@
           <id>44</id>
           <edge_type>1</edge_type>
           <source_obj>7</source_obj>
-          <sink_obj>15</sink_obj>
+          <sink_obj>12</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_44">
           <id>45</id>
           <edge_type>1</edge_type>
-          <source_obj>15</source_obj>
+          <source_obj>2</source_obj>
           <sink_obj>16</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_45">
-          <id>46</id>
+          <id>47</id>
           <edge_type>1</edge_type>
-          <source_obj>2</source_obj>
-          <sink_obj>17</sink_obj>
+          <source_obj>46</source_obj>
+          <sink_obj>16</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_46">
           <id>48</id>
           <edge_type>1</edge_type>
-          <source_obj>47</source_obj>
-          <sink_obj>17</sink_obj>
+          <source_obj>12</source_obj>
+          <sink_obj>16</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_47">
@@ -1769,7 +1769,7 @@
         <item class_id_reference="20" object_id="_48">
           <id>50</id>
           <edge_type>1</edge_type>
-          <source_obj>17</source_obj>
+          <source_obj>7</source_obj>
           <sink_obj>18</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1783,7 +1783,7 @@
         <item class_id_reference="20" object_id="_50">
           <id>55</id>
           <edge_type>1</edge_type>
-          <source_obj>15</source_obj>
+          <source_obj>18</source_obj>
           <sink_obj>19</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1804,7 +1804,7 @@
         <item class_id_reference="20" object_id="_53">
           <id>58</id>
           <edge_type>1</edge_type>
-          <source_obj>47</source_obj>
+          <source_obj>46</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1818,7 +1818,7 @@
         <item class_id_reference="20" object_id="_55">
           <id>60</id>
           <edge_type>1</edge_type>
-          <source_obj>18</source_obj>
+          <source_obj>17</source_obj>
           <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1851,49 +1851,49 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_60">
-          <id>84</id>
+          <id>85</id>
           <edge_type>2</edge_type>
           <source_obj>6</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_61">
-          <id>85</id>
+          <id>86</id>
           <edge_type>2</edge_type>
           <source_obj>11</source_obj>
           <sink_obj>27</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_62">
-          <id>86</id>
+          <id>87</id>
           <edge_type>2</edge_type>
           <source_obj>11</source_obj>
           <sink_obj>25</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_63">
-          <id>87</id>
+          <id>88</id>
           <edge_type>2</edge_type>
           <source_obj>25</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>1</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_64">
-          <id>88</id>
+          <id>89</id>
           <edge_type>4</edge_type>
           <source_obj>4</source_obj>
           <sink_obj>7</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_65">
-          <id>89</id>
+          <id>90</id>
           <edge_type>4</edge_type>
           <source_obj>4</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_66">
-          <id>90</id>
+          <id>91</id>
           <edge_type>4</edge_type>
           <source_obj>7</source_obj>
           <sink_obj>23</sink_obj>
@@ -2045,7 +2045,7 @@
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_80">
-              <id>15</id>
+              <id>12</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -2056,13 +2056,13 @@
             </item>
             <item class_id_reference="28" object_id="_82">
               <id>17</id>
-              <stage>1</stage>
-              <latency>1</latency>
+              <stage>2</stage>
+              <latency>2</latency>
             </item>
             <item class_id_reference="28" object_id="_83">
               <id>18</id>
-              <stage>2</stage>
-              <latency>2</latency>
+              <stage>1</stage>
+              <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_84">
               <id>23</id>
@@ -2082,22 +2082,22 @@
             <count>9</count>
             <item_version>0</item_version>
             <item class_id_reference="28" object_id="_87">
-              <id>12</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_88">
               <id>13</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_89">
+            <item class_id_reference="28" object_id="_88">
               <id>14</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
+            <item class_id_reference="28" object_id="_89">
+              <id>15</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
             <item class_id_reference="28" object_id="_90">
-              <id>18</id>
+              <id>17</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
@@ -2165,7 +2165,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln14_fu_77_p2 ( + ) </first>
+          <first>add_ln14_fu_79_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2211,7 +2211,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln14_fu_71_p2 ( icmp ) </first>
+          <first>icmp_ln14_fu_73_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2362,7 +2362,7 @@
           </second>
         </item>
         <item>
-          <first>i_266_fu_32</first>
+          <first>i_266_fu_34</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2450,7 +2450,7 @@
           </second>
         </item>
         <item>
-          <first>i_266_fu_32</first>
+          <first>i_266_fu_34</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2469,7 +2469,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln15_reg_119</first>
+          <first>trunc_ln15_reg_126</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2507,7 +2507,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>add_ln14_fu_77_p2 ( + ) </first>
+          <first>add_ln14_fu_79_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2515,7 +2515,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln14_fu_71_p2 ( icmp ) </first>
+          <first>icmp_ln14_fu_73_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2593,7 +2593,7 @@
         </second>
       </item>
       <item>
-        <first>15</first>
+        <first>12</first>
         <second>
           <first>0</first>
           <second>0</second>
@@ -2610,14 +2610,14 @@
         <first>17</first>
         <second>
           <first>0</first>
-          <second>0</second>
+          <second>1</second>
         </second>
       </item>
       <item>
         <first>18</first>
         <second>
           <first>0</first>
-          <second>1</second>
+          <second>0</second>
         </second>
       </item>
       <item>
@@ -2670,7 +2670,7 @@
         </second>
       </item>
       <item>
-        <first>91</first>
+        <first>92</first>
         <second>
           <first>0</first>
           <second>2</second>
@@ -2738,7 +2738,7 @@
       <count>14</count>
       <item_version>0</item_version>
       <item class_id="51" tracking_level="0" version="0">
-        <first>32</first>
+        <first>34</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2746,80 +2746,7 @@
         </second>
       </item>
       <item>
-        <first>36</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>17</item>
-        </second>
-      </item>
-      <item>
-        <first>43</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>18</item>
-          <item>18</item>
-        </second>
-      </item>
-      <item>
-        <first>49</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>21</item>
-        </second>
-      </item>
-      <item>
-        <first>56</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>22</item>
-        </second>
-      </item>
-      <item>
-        <first>63</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>4</item>
-        </second>
-      </item>
-      <item>
-        <first>68</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>7</item>
-        </second>
-      </item>
-      <item>
-        <first>71</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>8</item>
-        </second>
-      </item>
-      <item>
-        <first>77</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>9</item>
-        </second>
-      </item>
-      <item>
-        <first>83</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>15</item>
-        </second>
-      </item>
-      <item>
-        <first>87</first>
+        <first>38</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2827,7 +2754,80 @@
         </second>
       </item>
       <item>
-        <first>92</first>
+        <first>45</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>17</item>
+          <item>17</item>
+        </second>
+      </item>
+      <item>
+        <first>51</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>21</item>
+        </second>
+      </item>
+      <item>
+        <first>58</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>22</item>
+        </second>
+      </item>
+      <item>
+        <first>65</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>4</item>
+        </second>
+      </item>
+      <item>
+        <first>70</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>7</item>
+        </second>
+      </item>
+      <item>
+        <first>73</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>8</item>
+        </second>
+      </item>
+      <item>
+        <first>79</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>9</item>
+        </second>
+      </item>
+      <item>
+        <first>85</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>12</item>
+        </second>
+      </item>
+      <item>
+        <first>90</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
+        </second>
+      </item>
+      <item>
+        <first>94</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2835,7 +2835,7 @@
         </second>
       </item>
       <item>
-        <first>97</first>
+        <first>99</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2843,7 +2843,7 @@
         </second>
       </item>
       <item>
-        <first>104</first>
+        <first>106</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2855,7 +2855,7 @@
       <count>9</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>R_X_addr_gep_fu_49</first>
+        <first>R_X_addr_gep_fu_51</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2863,55 +2863,7 @@
         </second>
       </item>
       <item>
-        <first>XPA_1_addr_gep_fu_36</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>17</item>
-        </second>
-      </item>
-      <item>
-        <first>add_ln14_fu_77</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>9</item>
-        </second>
-      </item>
-      <item>
-        <first>i_266_fu_32</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>3</item>
-        </second>
-      </item>
-      <item>
-        <first>icmp_ln14_fu_71</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>8</item>
-        </second>
-      </item>
-      <item>
-        <first>trunc_ln15_fu_83</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>15</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln15_1_fu_104</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>20</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln15_fu_87</first>
+        <first>XPA_1_addr_gep_fu_38</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2919,7 +2871,55 @@
         </second>
       </item>
       <item>
-        <first>zext_ln15_s_fu_97</first>
+        <first>add_ln14_fu_79</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>9</item>
+        </second>
+      </item>
+      <item>
+        <first>i_266_fu_34</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>3</item>
+        </second>
+      </item>
+      <item>
+        <first>icmp_ln14_fu_73</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>8</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln15_fu_90</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln14_fu_85</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>12</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln15_fu_106</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>20</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln_fu_99</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2935,7 +2935,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_load_fu_68</first>
+        <first>i_load_fu_70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2943,7 +2943,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln12_store_fu_63</first>
+        <first>store_ln12_store_fu_65</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2951,7 +2951,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln12_store_fu_92</first>
+        <first>store_ln12_store_fu_94</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2985,8 +2985,8 @@
         <second>
           <count>2</count>
           <item_version>0</item_version>
-          <item>18</item>
-          <item>18</item>
+          <item>17</item>
+          <item>17</item>
         </second>
       </item>
     </dp_mem_port_nodes>
@@ -2994,7 +2994,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>109</first>
+        <first>111</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3002,19 +3002,19 @@
         </second>
       </item>
       <item>
-        <first>119</first>
+        <first>121</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>15</item>
+          <item>16</item>
         </second>
       </item>
       <item>
-        <first>124</first>
+        <first>126</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>17</item>
+          <item>18</item>
         </second>
       </item>
     </dp_reg_nodes>
@@ -3022,15 +3022,15 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>XPA_1_addr_reg_124</first>
+        <first>XPA_1_addr_reg_121</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>17</item>
+          <item>16</item>
         </second>
       </item>
       <item>
-        <first>i_266_reg_109</first>
+        <first>i_266_reg_111</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3038,11 +3038,11 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln15_reg_119</first>
+        <first>trunc_ln15_reg_126</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>15</item>
+          <item>18</item>
         </second>
       </item>
     </dp_regname_nodes>
@@ -3102,7 +3102,7 @@
         </second>
       </item>
       <item>
-        <first>18</first>
+        <first>17</first>
         <second>
           <first>666</first>
           <second>147</second>

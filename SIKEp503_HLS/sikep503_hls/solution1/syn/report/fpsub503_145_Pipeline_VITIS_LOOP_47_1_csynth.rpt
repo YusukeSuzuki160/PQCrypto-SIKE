@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_145_Pipeline_VITIS_LOOP_47_1'
 ================================================================
-* Date:           Tue May 20 14:38:27 2025
+* Date:           Tue May 27 14:20:28 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
 +-----------------+---------+-----+--------+-------+-----+
 |DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|    567|    -|
+|Expression       |        -|    -|       0|    606|    -|
 |FIFO             |        -|    -|       -|      -|    -|
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     45|    -|
-|Register         |        -|    -|     210|      -|    -|
+|Register         |        -|    -|     212|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     210|    612|    0|
+|Total            |        0|    0|     212|    651|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,22 +85,25 @@
     +------------------------+----------+----+---+----+------------+------------+
     |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------+----------+----+---+----+------------+------------+
-    |add_ln47_fu_149_p2      |         +|   0|  0|  13|           4|           1|
-    |sub_ln48_fu_274_p2      |         -|   0|  0|  71|          64|          64|
-    |sub_ln95_fu_234_p2      |         -|   0|  0|  71|           1|          64|
-    |tempReg_fu_190_p2       |         -|   0|  0|  71|          64|          64|
-    |and_ln48_fu_258_p2      |       and|   0|  0|   2|           1|           1|
-    |icmp_ln47_fu_143_p2     |      icmp|   0|  0|  13|           4|           5|
-    |borrowReg_fu_264_p2     |        or|   0|  0|   2|           1|           1|
-    |or_ln105_fu_215_p2      |        or|   0|  0|  64|          64|          64|
-    |or_ln95_fu_239_p2       |        or|   0|  0|  64|          64|          64|
+    |add_ln47_fu_147_p2      |         +|   0|  0|  13|           4|           1|
+    |add_ln48_3_fu_164_p2    |         +|   0|  0|  13|           4|           4|
+    |add_ln48_4_fu_175_p2    |         +|   0|  0|  13|           4|           4|
+    |add_ln48_fu_153_p2      |         +|   0|  0|  13|           4|           4|
+    |sub_ln48_fu_263_p2      |         -|   0|  0|  71|          64|          64|
+    |sub_ln95_fu_223_p2      |         -|   0|  0|  71|           1|          64|
+    |tempReg_fu_186_p2       |         -|   0|  0|  71|          64|          64|
+    |and_ln48_fu_247_p2      |       and|   0|  0|   2|           1|           1|
+    |icmp_ln47_fu_141_p2     |      icmp|   0|  0|  13|           4|           5|
+    |borrowReg_fu_253_p2     |        or|   0|  0|   2|           1|           1|
+    |or_ln105_fu_204_p2      |        or|   0|  0|  64|          64|          64|
+    |or_ln95_fu_228_p2       |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0           |       xor|   0|  0|   2|           1|           2|
-    |xor_ln105_82_fu_211_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln105_83_fu_221_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln105_fu_207_p2     |       xor|   0|  0|  64|          64|          64|
-    |xor_ln48_fu_252_p2      |       xor|   0|  0|   2|           1|           2|
+    |xor_ln105_82_fu_200_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_83_fu_210_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_fu_196_p2     |       xor|   0|  0|  64|          64|          64|
+    |xor_ln48_fu_241_p2      |       xor|   0|  0|   2|           1|           2|
     +------------------------+----------+----+---+----+------------+------------+
-    |Total                   |          |   0|  0| 567|         461|         524|
+    |Total                   |          |   0|  0| 606|         473|         536|
     +------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -110,8 +113,8 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
     |ap_sig_allocacmp_i_104   |   9|          2|    4|          8|
-    |borrow_reg_122           |   9|          2|    1|          2|
-    |i_fu_54                  |   9|          2|    4|          8|
+    |borrow_reg_120           |   9|          2|    1|          2|
+    |i_fu_52                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  45|         10|   11|         22|
     +-------------------------+----+-----------+-----+-----------+
@@ -120,22 +123,22 @@
     +----------------------------------+----+----+-----+-----------+
     |               Name               | FF | LUT| Bits| Const Bits|
     +----------------------------------+----+----+-----+-----------+
-    |a_load_reg_311                    |  64|   0|   64|          0|
+    |a_load_reg_295                    |  64|   0|   64|          0|
+    |add_ln48_4_reg_290                |   4|   0|    4|          0|
+    |add_ln48_4_reg_290_pp0_iter1_reg  |   4|   0|    4|          0|
     |ap_CS_fsm                         |   1|   0|    1|          0|
     |ap_done_reg                       |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
-    |b_load_reg_317                    |  64|   0|   64|          0|
-    |borrow_reg_122                    |   1|   0|    1|          0|
-    |i_fu_54                           |   4|   0|    4|          0|
-    |icmp_ln47_reg_292                 |   1|   0|    1|          0|
-    |icmp_ln47_reg_292_pp0_iter1_reg   |   1|   0|    1|          0|
-    |tempReg_reg_323                   |  64|   0|   64|          0|
-    |trunc_ln48_reg_296                |   3|   0|    3|          0|
-    |trunc_ln48_reg_296_pp0_iter1_reg  |   3|   0|    3|          0|
+    |b_load_reg_301                    |  64|   0|   64|          0|
+    |borrow_reg_120                    |   1|   0|    1|          0|
+    |i_fu_52                           |   4|   0|    4|          0|
+    |icmp_ln47_reg_276                 |   1|   0|    1|          0|
+    |icmp_ln47_reg_276_pp0_iter1_reg   |   1|   0|    1|          0|
+    |tempReg_reg_307                   |  64|   0|   64|          0|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             | 210|   0|  210|          0|
+    |Total                             | 212|   0|  212|          0|
     +----------------------------------+----+----+-----+-----------+
 
 
@@ -153,15 +156,15 @@
 |ap_done            |  out|    1|  ap_ctrl_hs|  fpsub503.145_Pipeline_VITIS_LOOP_47_1|  return value|
 |ap_idle            |  out|    1|  ap_ctrl_hs|  fpsub503.145_Pipeline_VITIS_LOOP_47_1|  return value|
 |ap_ready           |  out|    1|  ap_ctrl_hs|  fpsub503.145_Pipeline_VITIS_LOOP_47_1|  return value|
-|a_offset           |   in|    1|     ap_none|                               a_offset|        scalar|
+|zext_ln48_12       |   in|    4|     ap_none|                           zext_ln48_12|        scalar|
 |a_address0         |  out|    4|   ap_memory|                                      a|         array|
 |a_ce0              |  out|    1|   ap_memory|                                      a|         array|
 |a_q0               |   in|   64|   ap_memory|                                      a|         array|
-|b_offset           |   in|    1|     ap_none|                               b_offset|        scalar|
+|zext_ln48_11       |   in|    4|     ap_none|                           zext_ln48_11|        scalar|
 |b_address0         |  out|    4|   ap_memory|                                      b|         array|
 |b_ce0              |  out|    1|   ap_memory|                                      b|         array|
 |b_q0               |   in|   64|   ap_memory|                                      b|         array|
-|c_offset           |   in|    1|     ap_none|                               c_offset|        scalar|
+|zext_ln48_10       |   in|    4|     ap_none|                           zext_ln48_10|        scalar|
 |c_address0         |  out|    4|   ap_memory|                                      c|         array|
 |c_ce0              |  out|    1|   ap_memory|                                      c|         array|
 |c_we0              |  out|    1|   ap_memory|                                      c|         array|

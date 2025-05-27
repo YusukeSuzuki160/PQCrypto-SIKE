@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_76_77_Pipeline_VITIS_LOOP_23_1'" level="0">
-<item name = "Date">Tue May 20 14:37:51 2025
+<item name = "Date">Tue May 20 16:20:58 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -70,7 +70,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="Montgomery_one_1_U">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1243_Montgomery_one_1_ROM_AUTO_1R, 0, 64, 8, 0, 8, 64, 1, 512</column>
+<column name="Montgomery_one_1_U">EphemeralKeyGeneration_A_Pipeline_VITIS_LOOP_14_1243_Montgomery_one_1_ROM_AUTcud, 0, 64, 8, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -79,19 +79,19 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln23_fu_116_p2">+, 0, 0, 13, 4, 1</column>
-<column name="add_ln24_fu_160_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_fu_154_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln24_fu_210_p2">and, 0, 0, 64, 64, 64</column>
-<column name="ap_condition_281">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln23_fu_110_p2">icmp, 0, 0, 13, 4, 5</column>
-<column name="or_ln24_4_fu_221_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln24_fu_180_p2">or, 0, 0, 64, 64, 64</column>
+<column name="add_ln23_fu_118_p2">+, 0, 0, 13, 4, 1</column>
+<column name="add_ln24_fu_163_p2">+, 0, 0, 71, 64, 64</column>
+<column name="tempReg_fu_152_p2">+, 0, 0, 71, 64, 64</column>
+<column name="and_ln24_fu_208_p2">and, 0, 0, 64, 64, 64</column>
+<column name="ap_condition_278">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln23_fu_112_p2">icmp, 0, 0, 13, 4, 5</column>
+<column name="or_ln24_4_fu_219_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln24_fu_178_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln24_10_fu_176_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln24_11_fu_193_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln24_12_fu_215_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln24_fu_171_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_10_fu_174_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_11_fu_191_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln24_12_fu_213_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_fu_169_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -101,23 +101,23 @@
 <column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i_213">9, 2, 4, 8</column>
-<column name="carry_reg_91">9, 2, 1, 2</column>
-<column name="i_fu_48">9, 2, 4, 8</column>
+<column name="carry_reg_93">9, 2, 1, 2</column>
+<column name="i_fu_50">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="Montgomery_one_1_load_reg_260">64, 0, 64, 0</column>
+<column name="Montgomery_one_1_load_reg_258">64, 0, 64, 0</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="carry_reg_91">1, 0, 1, 0</column>
-<column name="i_fu_48">4, 0, 4, 0</column>
-<column name="icmp_ln23_reg_242">1, 0, 1, 0</column>
-<column name="lshr_ln_reg_250">2, 0, 2, 0</column>
-<column name="tempReg_reg_267">64, 0, 64, 0</column>
-<column name="trunc_ln23_reg_246">1, 0, 1, 0</column>
+<column name="carry_reg_93">1, 0, 1, 0</column>
+<column name="i_fu_50">4, 0, 4, 0</column>
+<column name="icmp_ln23_reg_240">1, 0, 1, 0</column>
+<column name="lshr_ln_reg_248">2, 0, 2, 0</column>
+<column name="tempReg_reg_265">64, 0, 64, 0</column>
+<column name="trunc_ln23_reg_244">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

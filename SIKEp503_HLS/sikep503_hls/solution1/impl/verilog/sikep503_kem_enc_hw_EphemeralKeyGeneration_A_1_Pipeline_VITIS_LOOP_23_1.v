@@ -41,15 +41,15 @@ wire   [0:0] icmp_ln23_fu_58_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [31:0] zext_ln24_fu_82_p1;
-reg   [3:0] i_fu_32;
+wire   [63:0] zext_ln24_fu_82_p1;
+reg   [3:0] i_281_fu_32;
 wire   [3:0] add_ln23_fu_64_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_295;
+reg   [3:0] ap_sig_allocacmp_i;
 reg    phiQ_X_we0_local;
 reg    phiQ_X_ce0_local;
 wire   [2:0] trunc_ln24_fu_70_p1;
-wire   [3:0] tmp_1130_cast_fu_74_p3;
+wire   [3:0] add_ln_fu_74_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -63,7 +63,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 1'd1;
-#0 i_fu_32 = 4'd0;
+#0 i_281_fu_32 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -105,9 +105,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln23_fu_58_p2 == 1'd0)) begin
-            i_fu_32 <= add_ln23_fu_64_p2;
+            i_281_fu_32 <= add_ln23_fu_64_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_32 <= 4'd0;
+            i_281_fu_32 <= 4'd0;
         end
     end
 end
@@ -154,9 +154,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_295 = 4'd0;
+        ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_295 = i_fu_32;
+        ap_sig_allocacmp_i = i_281_fu_32;
     end
 end
 
@@ -187,7 +187,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln23_fu_64_p2 = (ap_sig_allocacmp_i_295 + 4'd1);
+assign add_ln23_fu_64_p2 = (ap_sig_allocacmp_i + 4'd1);
+
+assign add_ln_fu_74_p3 = {{1'd1}, {trunc_ln24_fu_70_p1}};
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -201,7 +203,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln23_fu_58_p2 = ((ap_sig_allocacmp_i_295 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln23_fu_58_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
 assign phiQ_X_address0 = zext_ln24_fu_82_p1;
 
@@ -211,10 +213,8 @@ assign phiQ_X_d0 = 64'd0;
 
 assign phiQ_X_we0 = phiQ_X_we0_local;
 
-assign tmp_1130_cast_fu_74_p3 = {{1'd1}, {trunc_ln24_fu_70_p1}};
+assign trunc_ln24_fu_70_p1 = ap_sig_allocacmp_i[2:0];
 
-assign trunc_ln24_fu_70_p1 = ap_sig_allocacmp_i_295[2:0];
-
-assign zext_ln24_fu_82_p1 = tmp_1130_cast_fu_74_p3;
+assign zext_ln24_fu_82_p1 = add_ln_fu_74_p3;
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_23_1

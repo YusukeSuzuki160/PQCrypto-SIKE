@@ -12,7 +12,7 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_pts_index_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 8;
+parameter DataWidth = 32;
 parameter AddressWidth = 3;
 parameter AddressRange = 7;
  

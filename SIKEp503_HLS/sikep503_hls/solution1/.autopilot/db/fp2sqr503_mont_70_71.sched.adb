@@ -137,7 +137,7 @@
 						<name>temp</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -153,14 +153,14 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>161</second>
+										<second>162</second>
 									</item>
 									<item>
 										<first>
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -197,10 +197,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>temp_60</name>
+						<name>temp_52</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -216,14 +216,14 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>160</second>
+										<second>161</second>
 									</item>
 									<item>
 										<first>
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -263,7 +263,7 @@
 						<name>t1</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>fp2sqr503_mont</contextFuncName>
 						<contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -279,7 +279,7 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>155</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -319,7 +319,7 @@
 						<name>t2</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>fp2sqr503_mont</contextFuncName>
 						<contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -335,7 +335,7 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>155</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -375,7 +375,7 @@
 						<name>t3</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>fp2sqr503_mont</contextFuncName>
 						<contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -391,7 +391,7 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>155</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -699,10 +699,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>_ln62</name>
+						<name>_ln63</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>63</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -718,14 +718,14 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>160</second>
+										<second>161</second>
 									</item>
 									<item>
 										<first>
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>62</second>
+										<second>63</second>
 									</item>
 								</second>
 							</item>
@@ -768,10 +768,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>_ln63</name>
+						<name>_ln64</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>64</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -787,14 +787,14 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>160</second>
+										<second>161</second>
 									</item>
 									<item>
 										<first>
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>63</second>
+										<second>64</second>
 									</item>
 								</second>
 							</item>
@@ -880,10 +880,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>_ln62</name>
+						<name>_ln63</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>63</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -899,14 +899,14 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>161</second>
+										<second>162</second>
 									</item>
 									<item>
 										<first>
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>62</second>
+										<second>63</second>
 									</item>
 								</second>
 							</item>
@@ -948,10 +948,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>_ln63</name>
+						<name>_ln64</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>64</lineNumber>
 						<contextFuncName>fpmul503_mont</contextFuncName>
 						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -967,14 +967,14 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>161</second>
+										<second>162</second>
 									</item>
 									<item>
 										<first>
 											<first>src/fpx.c</first>
 											<second>fpmul503_mont</second>
 										</first>
-										<second>63</second>
+										<second>64</second>
 									</item>
 								</second>
 							</item>
@@ -1015,10 +1015,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>_ln162</name>
+						<name>_ln163</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>fp2sqr503_mont</contextFuncName>
 						<contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1034,7 +1034,7 @@
 											<first>src/fpx.c</first>
 											<second>fp2sqr503_mont</second>
 										</first>
-										<second>162</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -1095,7 +1095,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -1105,7 +1105,7 @@
 					<Obj>
 						<type>2</type>
 						<id>31</id>
-						<name>fp2sqr503_mont_70_71_Pipeline_VITIS_LOOP_349_1</name>
+						<name>fp2sqr503_mont_70_71_Pipeline_VITIS_LOOP_350_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1129,7 +1129,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2sqr503_mont.70.71_Pipeline_VITIS_LOOP_349_1&gt;</content>
+				<content>&lt;constant:fp2sqr503_mont.70.71_Pipeline_VITIS_LOOP_350_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_23">
 				<Value>
@@ -1198,7 +1198,7 @@
 					<Obj>
 						<type>2</type>
 						<id>47</id>
-						<name>fp2sqr503_mont_70_71_Pipeline_VITIS_LOOP_349_1127</name>
+						<name>fp2sqr503_mont_70_71_Pipeline_VITIS_LOOP_350_1117</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1222,7 +1222,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2sqr503_mont.70.71_Pipeline_VITIS_LOOP_349_1127&gt;</content>
+				<content>&lt;constant:fp2sqr503_mont.70.71_Pipeline_VITIS_LOOP_350_1117&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_26">
 				<Value>
@@ -1260,7 +1260,7 @@
 					<Obj>
 						<type>2</type>
 						<id>54</id>
-						<name>mp_mul_152</name>
+						<name>mp_mul_151</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1284,7 +1284,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.152&gt;</content>
+				<content>&lt;constant:mp_mul.151&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_28">
 				<Value>
@@ -1353,7 +1353,7 @@
 					<Obj>
 						<type>2</type>
 						<id>66</id>
-						<name>mp_mul_1107</name>
+						<name>mp_mul_1109</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1377,7 +1377,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.1107&gt;</content>
+				<content>&lt;constant:mp_mul.1109&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">

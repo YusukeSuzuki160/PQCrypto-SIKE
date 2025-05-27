@@ -157,7 +157,7 @@ for.inc.i139.split:1 %speclooptripcount_ln21 = speclooptripcount void @_ssdm_op_
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i139.split:2 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
+for.inc.i139.split:2 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_42
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln23"/></StgValue>
@@ -189,10 +189,10 @@ for.inc.i139.split:3 %trunc_ln24 = trunc i4 %i
 
 <Node id="15" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
 <![CDATA[
-for.inc.i139.split:4 %zext_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln24
+for.inc.i139.split:4 %zext_ln24_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln24
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln"/></StgValue>
+<StgValue><ssdm name="zext_ln24_s"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -203,9 +203,9 @@ for.inc.i139.split:4 %zext_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1
 </and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="32" op_0_bw="4">
+<Node id="16" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.i139.split:5 %zext_ln24 = zext i4 %zext_ln
+for.inc.i139.split:5 %zext_ln24 = zext i4 %zext_ln24_s
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24"/></StgValue>
@@ -219,9 +219,9 @@ for.inc.i139.split:5 %zext_ln24 = zext i4 %zext_ln
 </and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="4" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="17" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i139.split:6 %R_Z_addr = getelementptr i64 %R_Z, i32 0, i32 %zext_ln24
+for.inc.i139.split:6 %R_Z_addr = getelementptr i64 %R_Z, i64 0, i64 %zext_ln24
 
 ]]></Node>
 <StgValue><ssdm name="R_Z_addr"/></StgValue>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_10_Pipeline_VITIS_LOOP_28_2'
 ================================================================
-* Date:           Tue May 20 14:37:36 2025
+* Date:           Tue May 27 14:19:35 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -218,13 +218,13 @@ ST_1 : Operation 8 [1/1] (1.58ns)   --->   "%br_ln0 = br void %for.inc29"   --->
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = load i4 %i_149" [src/generic/fp_generic.c:29]   --->   Operation 9 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (1.73ns)   --->   "%icmp_ln28 = icmp_eq  i4 %i, i4 8" [src/generic/fp_generic.c:28]   --->   Operation 10 'icmp' 'icmp_ln28' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (1.73ns)   --->   "%add_ln28 = add i4 %i, i4 1" [src/generic/fp_generic.c:28]   --->   Operation 11 'add' 'add_ln28' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln29 = trunc i4 %i" [src/generic/fp_generic.c:29]   --->   Operation 12 'trunc' 'trunc_ln29' <Predicate = (!icmp_ln28)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln29_34 = zext i3 %trunc_ln29" [src/generic/fp_generic.c:29]   --->   Operation 13 'zext' 'zext_ln29_34' <Predicate = (!icmp_ln28)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_886_cast = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln29" [src/generic/fp_generic.c:29]   --->   Operation 14 'bitconcatenate' 'tmp_886_cast' <Predicate = (!icmp_ln28)> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln29_35 = zext i4 %tmp_886_cast" [src/generic/fp_generic.c:29]   --->   Operation 15 'zext' 'zext_ln29_35' <Predicate = (!icmp_ln28)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i64 %c, i32 0, i32 %zext_ln29_35" [src/generic/fp_generic.c:29]   --->   Operation 16 'getelementptr' 'c_addr' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln28 = zext i4 %i" [src/generic/fp_generic.c:28]   --->   Operation 12 'zext' 'zext_ln28' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%trunc_ln29 = trunc i4 %i" [src/generic/fp_generic.c:29]   --->   Operation 13 'trunc' 'trunc_ln29' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%add_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln29" [src/generic/fp_generic.c:29]   --->   Operation 14 'bitconcatenate' 'add_ln' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln29_21 = zext i4 %add_ln" [src/generic/fp_generic.c:29]   --->   Operation 15 'zext' 'zext_ln29_21' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i64 %c, i64 0, i64 %zext_ln29_21" [src/generic/fp_generic.c:29]   --->   Operation 16 'getelementptr' 'c_addr' <Predicate = (!icmp_ln28)> <Delay = 0.00>
 ST_1 : Operation 17 [2/2] (3.25ns)   --->   "%c_load = load i4 %c_addr" [src/generic/fp_generic.c:29]   --->   Operation 17 'load' 'c_load' <Predicate = (!icmp_ln28)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p503x2_1_addr = getelementptr i64 %p503x2_1, i32 0, i32 %zext_ln29_34" [src/generic/fp_generic.c:29]   --->   Operation 18 'getelementptr' 'p503x2_1_addr' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p503x2_1_addr = getelementptr i64 %p503x2_1, i64 0, i64 %zext_ln28" [src/generic/fp_generic.c:29]   --->   Operation 18 'getelementptr' 'p503x2_1_addr' <Predicate = (!icmp_ln28)> <Delay = 0.00>
 ST_1 : Operation 19 [2/2] (2.32ns)   --->   "%p503x2_1_load = load i3 %p503x2_1_addr" [src/generic/fp_generic.c:29]   --->   Operation 19 'load' 'p503x2_1_load' <Predicate = (!icmp_ln28)> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
 ST_1 : Operation 20 [1/1] (1.58ns)   --->   "%store_ln20 = store i4 %add_ln28, i4 %i_149" [src/generic/fp_generic.c:20]   --->   Operation 20 'store' 'store_ln20' <Predicate = (!icmp_ln28)> <Delay = 1.58>
 
@@ -240,7 +240,7 @@ ST_2 : Operation 45 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 State 3 <SV = 2> <Delay = 6.77>
 ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:20]   --->   Operation 26 'specpipeline' 'specpipeline_ln20' <Predicate = (!icmp_ln28)> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.c:20]   --->   Operation 27 'speclooptripcount' 'speclooptripcount_ln20' <Predicate = (!icmp_ln28)> <Delay = 0.00>
-ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln28 = specloopname void @_ssdm_op_SpecLoopName, void @empty_27" [src/generic/fp_generic.c:28]   --->   Operation 28 'specloopname' 'specloopname_ln28' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln28 = specloopname void @_ssdm_op_SpecLoopName, void @empty_88" [src/generic/fp_generic.c:28]   --->   Operation 28 'specloopname' 'specloopname_ln28' <Predicate = (!icmp_ln28)> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105 = xor i64 %p503x2_1_load, i64 %c_load" [src/config.h:105->src/generic/fp_generic.c:29]   --->   Operation 29 'xor' 'xor_ln105' <Predicate = (!icmp_ln28)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_112 = xor i64 %p503x2_1_load, i64 %tempReg" [src/config.h:105->src/generic/fp_generic.c:29]   --->   Operation 30 'xor' 'xor_ln105_112' <Predicate = (!icmp_ln28)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%or_ln105 = or i64 %xor_ln105_112, i64 %xor_ln105" [src/config.h:105->src/generic/fp_generic.c:29]   --->   Operation 31 'or' 'or_ln105' <Predicate = (!icmp_ln28)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -248,8 +248,8 @@ ST_3 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->  
 ST_3 : Operation 33 [1/1] (0.99ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_113, i32 63" [src/config.h:98->src/generic/fp_generic.c:29]   --->   Operation 33 'bitselect' 'tmp' <Predicate = (!icmp_ln28)> <Delay = 0.99>
 ST_3 : Operation 34 [1/1] (3.52ns)   --->   "%sub_ln95 = sub i64 0, i64 %tempReg" [src/config.h:95->src/config.h:100->src/generic/fp_generic.c:29]   --->   Operation 34 'sub' 'sub_ln95' <Predicate = (!icmp_ln28)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%or_ln95 = or i64 %tempReg, i64 %sub_ln95" [src/config.h:95->src/config.h:100->src/generic/fp_generic.c:29]   --->   Operation 35 'or' 'or_ln95' <Predicate = (!icmp_ln28)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_233 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/generic/fp_generic.c:29]   --->   Operation 36 'bitselect' 'tmp_233' <Predicate = (!icmp_ln28)> <Delay = 0.00>
-ST_3 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln29 = xor i1 %tmp_233, i1 1" [src/generic/fp_generic.c:29]   --->   Operation 37 'xor' 'xor_ln29' <Predicate = (!icmp_ln28)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_203 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/generic/fp_generic.c:29]   --->   Operation 36 'bitselect' 'tmp_203' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln29 = xor i1 %tmp_203, i1 1" [src/generic/fp_generic.c:29]   --->   Operation 37 'xor' 'xor_ln29' <Predicate = (!icmp_ln28)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%and_ln29 = and i1 %carry, i1 %xor_ln29" [src/generic/fp_generic.c:29]   --->   Operation 38 'and' 'and_ln29' <Predicate = (!icmp_ln28)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 39 [1/1] (0.99ns) (out node of the LUT)   --->   "%borrowReg = or i1 %and_ln29, i1 %tmp" [src/generic/fp_generic.c:29]   --->   Operation 39 'or' 'borrowReg' <Predicate = (!icmp_ln28)> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i1 %carry" [src/generic/fp_generic.c:29]   --->   Operation 40 'zext' 'zext_ln29' <Predicate = (!icmp_ln28)> <Delay = 0.00>
@@ -284,10 +284,10 @@ br_ln0                 (br               ) [ 0111]
 i                      (load             ) [ 0000]
 icmp_ln28              (icmp             ) [ 0111]
 add_ln28               (add              ) [ 0000]
+zext_ln28              (zext             ) [ 0000]
 trunc_ln29             (trunc            ) [ 0000]
-zext_ln29_34           (zext             ) [ 0000]
-tmp_886_cast           (bitconcatenate   ) [ 0000]
-zext_ln29_35           (zext             ) [ 0000]
+add_ln                 (bitconcatenate   ) [ 0000]
+zext_ln29_21           (zext             ) [ 0000]
 c_addr                 (getelementptr    ) [ 0111]
 p503x2_1_addr          (getelementptr    ) [ 0110]
 store_ln20             (store            ) [ 0000]
@@ -306,7 +306,7 @@ xor_ln105_113          (xor              ) [ 0000]
 tmp                    (bitselect        ) [ 0000]
 sub_ln95               (sub              ) [ 0000]
 or_ln95                (or               ) [ 0000]
-tmp_233                (bitselect        ) [ 0000]
+tmp_203                (bitselect        ) [ 0000]
 xor_ln29               (xor              ) [ 0000]
 and_ln29               (and              ) [ 0000]
 borrowReg              (or               ) [ 0111]
@@ -445,7 +445,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -454,7 +454,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+<StgValue><ssdm name="empty_44"/></StgValue>
 </bind>
 </comp>
 
@@ -463,7 +463,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
 </bind>
 </comp>
 
@@ -472,7 +472,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -481,16 +481,16 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_27"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
 </bind>
 </comp>
 
 <comp id="36" class="1001" name="const_36">
 <pin_list>
-<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_BitSelect.i1.i64.i32"/></StgValue>
+<StgValue><ssdm name="empty_88"/></StgValue>
 </bind>
 </comp>
 
@@ -499,7 +499,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="39" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_BitSelect.i1.i64.i32"/></StgValue>
 </bind>
 </comp>
 
@@ -579,7 +579,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin_list>
 <pin id="73" dir="0" index="0" bw="64" slack="0"/>
 <pin id="74" dir="0" index="1" bw="1" slack="0"/>
-<pin id="75" dir="0" index="2" bw="3" slack="0"/>
+<pin id="75" dir="0" index="2" bw="4" slack="0"/>
 <pin id="76" dir="1" index="3" bw="3" slack="0"/>
 </pin_list>
 <bind>
@@ -672,10 +672,21 @@ ret_ln0                (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="118" class="1004" name="trunc_ln29_fu_118">
+<comp id="118" class="1004" name="zext_ln28_fu_118">
 <pin_list>
 <pin id="119" dir="0" index="0" bw="4" slack="0"/>
-<pin id="120" dir="1" index="1" bw="3" slack="0"/>
+<pin id="120" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln28/1 "/>
+</bind>
+</comp>
+
+<comp id="123" class="1004" name="trunc_ln29_fu_123">
+<pin_list>
+<pin id="124" dir="0" index="0" bw="4" slack="0"/>
+<pin id="125" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
@@ -683,18 +694,7 @@ ret_ln0                (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="122" class="1004" name="zext_ln29_34_fu_122">
-<pin_list>
-<pin id="123" dir="0" index="0" bw="3" slack="0"/>
-<pin id="124" dir="1" index="1" bw="32" slack="0"/>
-</pin_list>
-<bind>
-<opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln29_34/1 "/>
-</bind>
-</comp>
-
-<comp id="127" class="1004" name="tmp_886_cast_fu_127">
+<comp id="127" class="1004" name="add_ln_fu_127">
 <pin_list>
 <pin id="128" dir="0" index="0" bw="4" slack="0"/>
 <pin id="129" dir="0" index="1" bw="1" slack="0"/>
@@ -703,18 +703,18 @@ ret_ln0                (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_886_cast/1 "/>
+<opset="add_ln/1 "/>
 </bind>
 </comp>
 
-<comp id="135" class="1004" name="zext_ln29_35_fu_135">
+<comp id="135" class="1004" name="zext_ln29_21_fu_135">
 <pin_list>
 <pin id="136" dir="0" index="0" bw="4" slack="0"/>
-<pin id="137" dir="1" index="1" bw="32" slack="0"/>
+<pin id="137" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln29_35/1 "/>
+<opset="zext_ln29_21/1 "/>
 </bind>
 </comp>
 
@@ -827,7 +827,7 @@ ret_ln0                (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="188" class="1004" name="tmp_233_fu_188">
+<comp id="188" class="1004" name="tmp_203_fu_188">
 <pin_list>
 <pin id="189" dir="0" index="0" bw="1" slack="0"/>
 <pin id="190" dir="0" index="1" bw="64" slack="0"/>
@@ -836,7 +836,7 @@ ret_ln0                (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_233/3 "/>
+<opset="tmp_203/3 "/>
 </bind>
 </comp>
 
@@ -1020,15 +1020,15 @@ ret_ln0                (ret              ) [ 0000]
 
 <net id="121"><net_src comp="103" pin="1"/><net_sink comp="118" pin=0"/></net>
 
-<net id="125"><net_src comp="118" pin="1"/><net_sink comp="122" pin=0"/></net>
+<net id="122"><net_src comp="118" pin="1"/><net_sink comp="72" pin=2"/></net>
 
-<net id="126"><net_src comp="122" pin="1"/><net_sink comp="72" pin=2"/></net>
+<net id="126"><net_src comp="103" pin="1"/><net_sink comp="123" pin=0"/></net>
 
 <net id="132"><net_src comp="14" pin="0"/><net_sink comp="127" pin=0"/></net>
 
 <net id="133"><net_src comp="16" pin="0"/><net_sink comp="127" pin=1"/></net>
 
-<net id="134"><net_src comp="118" pin="1"/><net_sink comp="127" pin=2"/></net>
+<net id="134"><net_src comp="123" pin="1"/><net_sink comp="127" pin=2"/></net>
 
 <net id="138"><net_src comp="127" pin="3"/><net_sink comp="135" pin=0"/></net>
 
@@ -1046,21 +1046,21 @@ ret_ln0                (ret              ) [ 0000]
 
 <net id="169"><net_src comp="159" pin="2"/><net_sink comp="165" pin=1"/></net>
 
-<net id="175"><net_src comp="36" pin="0"/><net_sink comp="170" pin=0"/></net>
+<net id="175"><net_src comp="38" pin="0"/><net_sink comp="170" pin=0"/></net>
 
 <net id="176"><net_src comp="165" pin="2"/><net_sink comp="170" pin=1"/></net>
 
-<net id="177"><net_src comp="38" pin="0"/><net_sink comp="170" pin=2"/></net>
+<net id="177"><net_src comp="40" pin="0"/><net_sink comp="170" pin=2"/></net>
 
-<net id="182"><net_src comp="40" pin="0"/><net_sink comp="178" pin=0"/></net>
+<net id="182"><net_src comp="18" pin="0"/><net_sink comp="178" pin=0"/></net>
 
 <net id="187"><net_src comp="178" pin="2"/><net_sink comp="183" pin=1"/></net>
 
-<net id="193"><net_src comp="36" pin="0"/><net_sink comp="188" pin=0"/></net>
+<net id="193"><net_src comp="38" pin="0"/><net_sink comp="188" pin=0"/></net>
 
 <net id="194"><net_src comp="183" pin="2"/><net_sink comp="188" pin=1"/></net>
 
-<net id="195"><net_src comp="38" pin="0"/><net_sink comp="188" pin=2"/></net>
+<net id="195"><net_src comp="40" pin="0"/><net_sink comp="188" pin=2"/></net>
 
 <net id="200"><net_src comp="188" pin="3"/><net_sink comp="196" pin=0"/></net>
 
@@ -1145,21 +1145,21 @@ ret_ln0                (ret              ) [ 0000]
 		i : 1
 		icmp_ln28 : 2
 		add_ln28 : 2
+		zext_ln28 : 2
 		trunc_ln29 : 2
-		zext_ln29_34 : 3
-		tmp_886_cast : 3
-		zext_ln29_35 : 4
+		add_ln : 3
+		zext_ln29_21 : 4
 		c_addr : 5
 		c_load : 6
-		p503x2_1_addr : 4
-		p503x2_1_load : 5
+		p503x2_1_addr : 3
+		p503x2_1_load : 4
 		store_ln20 : 3
 	State 2
 		tempReg : 1
 		write_ln29 : 1
 	State 3
 		or_ln95 : 1
-		tmp_233 : 1
+		tmp_203 : 1
 		xor_ln29 : 2
 		and_ln29 : 2
 		borrowReg : 2
@@ -1196,16 +1196,16 @@ ret_ln0                (ret              ) [ 0000]
 |----------|------------------------|---------|---------|
 |   write  | write_ln29_write_fu_48 |    0    |    0    |
 |----------|------------------------|---------|---------|
-|   trunc  |    trunc_ln29_fu_118   |    0    |    0    |
-|----------|------------------------|---------|---------|
-|          |   zext_ln29_34_fu_122  |    0    |    0    |
-|   zext   |   zext_ln29_35_fu_135  |    0    |    0    |
+|          |    zext_ln28_fu_118    |    0    |    0    |
+|   zext   |   zext_ln29_21_fu_135  |    0    |    0    |
 |          |    zext_ln29_fu_214    |    0    |    0    |
 |----------|------------------------|---------|---------|
-|bitconcatenate|   tmp_886_cast_fu_127  |    0    |    0    |
+|   trunc  |    trunc_ln29_fu_123   |    0    |    0    |
+|----------|------------------------|---------|---------|
+|bitconcatenate|      add_ln_fu_127     |    0    |    0    |
 |----------|------------------------|---------|---------|
 | bitselect|       tmp_fu_170       |    0    |    0    |
-|          |     tmp_233_fu_188     |    0    |    0    |
+|          |     tmp_203_fu_188     |    0    |    0    |
 |----------|------------------------|---------|---------|
 |   Total  |                        |    0    |   565   |
 |----------|------------------------|---------|---------|

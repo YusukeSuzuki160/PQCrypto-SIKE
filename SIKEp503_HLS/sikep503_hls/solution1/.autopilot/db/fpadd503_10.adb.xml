@@ -47,9 +47,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="1" op_0_bw="32">
+<Node id="4" bw="1" op_0_bw="64">
 <![CDATA[
-entry:0 %carry_217_loc = alloca i32 1
+entry:0 %carry_217_loc = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="carry_217_loc"/></StgValue>
@@ -64,7 +64,7 @@ entry:0 %carry_217_loc = alloca i32 1
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i64 %c
+entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %PKB
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -82,7 +82,7 @@ entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i64 %c
+entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %PKB
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -244,15 +244,15 @@ entry:7 %ret_ln37 = ret
 </dataflow>
 <dataflow id="29" from="fpadd503.10_Pipeline_VITIS_LOOP_23_1" to="call_ln0" fromId="28" toId="8">
 </dataflow>
-<dataflow id="30" from="PKB" to="call_ln0" fromId="23" toId="8">
+<dataflow id="30" from="c" to="call_ln0" fromId="24" toId="8">
 </dataflow>
-<dataflow id="31" from="c" to="call_ln0" fromId="24" toId="8">
+<dataflow id="31" from="PKB" to="call_ln0" fromId="23" toId="8">
 </dataflow>
 <dataflow id="32" from="fpadd503.10_Pipeline_VITIS_LOOP_23_1" to="call_ln0" fromId="28" toId="9">
 </dataflow>
-<dataflow id="33" from="PKB" to="call_ln0" fromId="23" toId="9">
+<dataflow id="33" from="c" to="call_ln0" fromId="24" toId="9">
 </dataflow>
-<dataflow id="34" from="c" to="call_ln0" fromId="24" toId="9">
+<dataflow id="34" from="PKB" to="call_ln0" fromId="23" toId="9">
 </dataflow>
 <dataflow id="36" from="fpadd503.10_Pipeline_VITIS_LOOP_28_2" to="call_ln0" fromId="35" toId="10">
 </dataflow>

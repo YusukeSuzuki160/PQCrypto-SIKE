@@ -120,12 +120,12 @@ for.inc.i:3 %add_ln47 = add i4 %i, i4 1
 </and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="3" op_0_bw="4">
+<Node id="14" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.i.split:3 %trunc_ln48 = trunc i4 %i
+for.inc.i.split:0 %zext_ln47 = zext i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln48"/></StgValue>
+<StgValue><ssdm name="zext_ln47"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -136,12 +136,12 @@ for.inc.i.split:3 %trunc_ln48 = trunc i4 %i
 </and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="32" op_0_bw="3">
+<Node id="15" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i.split:4 %zext_ln48_25 = zext i3 %trunc_ln48
+for.inc.i.split:1 %a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln47
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln48_25"/></StgValue>
+<StgValue><ssdm name="a_addr"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -152,12 +152,12 @@ for.inc.i.split:4 %zext_ln48_25 = zext i3 %trunc_ln48
 </and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="4" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="16" bw="3" op_0_bw="4">
 <![CDATA[
-for.inc.i.split:5 %a_addr = getelementptr i64 %a, i32 0, i32 %zext_ln48_25
+for.inc.i.split:2 %trunc_ln48 = trunc i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="a_addr"/></StgValue>
+<StgValue><ssdm name="trunc_ln48"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -168,12 +168,12 @@ for.inc.i.split:5 %a_addr = getelementptr i64 %a, i32 0, i32 %zext_ln48_25
 </and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
+<Node id="17" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
 <![CDATA[
-for.inc.i.split:6 %tmp_924_cast = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln48
+for.inc.i.split:3 %add_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln48
 
 ]]></Node>
-<StgValue><ssdm name="tmp_924_cast"/></StgValue>
+<StgValue><ssdm name="add_ln"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -184,12 +184,12 @@ for.inc.i.split:6 %tmp_924_cast = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.
 </and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="32" op_0_bw="4">
+<Node id="18" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.i.split:7 %zext_ln48_26 = zext i4 %tmp_924_cast
+for.inc.i.split:4 %zext_ln48_37 = zext i4 %add_ln
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln48_26"/></StgValue>
+<StgValue><ssdm name="zext_ln48_37"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -200,9 +200,9 @@ for.inc.i.split:7 %zext_ln48_26 = zext i4 %tmp_924_cast
 </and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="4" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="19" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i.split:8 %a_addr_1 = getelementptr i64 %a, i32 0, i32 %zext_ln48_26
+for.inc.i.split:5 %a_addr_1 = getelementptr i64 %a, i64 0, i64 %zext_ln48_37
 
 ]]></Node>
 <StgValue><ssdm name="a_addr_1"/></StgValue>
@@ -380,9 +380,9 @@ for.end.i.exitStub:1 %ret_ln0 = ret
 </and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.split:0 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i.split:6 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln44"/></StgValue>
@@ -396,9 +396,9 @@ for.inc.i.split:0 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline,
 </and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.i.split:1 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
+for.inc.i.split:7 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln44"/></StgValue>
@@ -412,9 +412,9 @@ for.inc.i.split:1 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_Spe
 </and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.split:2 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35
+for.inc.i.split:8 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln47"/></StgValue>
@@ -542,10 +542,10 @@ for.inc.i.split:18 %or_ln95 = or i64 %tempReg, i64 %sub_ln95
 
 <Node id="33" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
-for.inc.i.split:19 %tmp_234 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
+for.inc.i.split:19 %tmp_204 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
 
 ]]></Node>
-<StgValue><ssdm name="tmp_234"/></StgValue>
+<StgValue><ssdm name="tmp_204"/></StgValue>
 </operation>
 
 <operation id="37" st_id="3" stage="1" lat="1">
@@ -558,7 +558,7 @@ for.inc.i.split:19 %tmp_234 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %
 
 <Node id="34" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc.i.split:20 %xor_ln48 = xor i1 %tmp_234, i1 1
+for.inc.i.split:20 %xor_ln48 = xor i1 %tmp_204, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln48"/></StgValue>
@@ -636,9 +636,9 @@ for.inc.i.split:24 %sub_ln48 = sub i64 %tempReg, i64 %zext_ln48
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="3" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="39" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i.split:25 %t2_addr = getelementptr i64 %t2, i32 0, i32 %zext_ln48_25
+for.inc.i.split:25 %t2_addr = getelementptr i64 %t2, i64 0, i64 %zext_ln47
 
 ]]></Node>
 <StgValue><ssdm name="t2_addr"/></StgValue>

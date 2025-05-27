@@ -3,13 +3,13 @@
 
 <trans_list>
 
-<trans id="54" from="1" to="2">
+<trans id="57" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="57" from="2" to="3">
+<trans id="60" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -44,12 +44,12 @@ newFuncRoot:0 %i = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="0" op_0_bw="4" op_1_bw="4">
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-newFuncRoot:1 %store_ln44 = store i4 0, i4 %i
+newFuncRoot:1 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %coeff
 
 ]]></Node>
-<StgValue><ssdm name="store_ln44"/></StgValue>
+<StgValue><ssdm name="specbramwithbyteenable_ln0"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -59,12 +59,12 @@ newFuncRoot:1 %store_ln44 = store i4 0, i4 %i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="0" op_0_bw="0">
+<Node id="7" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:2 %br_ln0 = br void %for.inc
+newFuncRoot:2 %store_ln44 = store i4 0, i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="br_ln0"/></StgValue>
+<StgValue><ssdm name="store_ln44"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -74,7 +74,22 @@ newFuncRoot:2 %br_ln0 = br void %for.inc
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="4" op_0_bw="4" op_1_bw="0">
+<Node id="8" bw="0" op_0_bw="0">
+<![CDATA[
+newFuncRoot:3 %br_ln0 = br void %for.inc
+
+]]></Node>
+<StgValue><ssdm name="br_ln0"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
 for.inc:1 %i_99 = load i4 %i
 
@@ -82,14 +97,14 @@ for.inc:1 %i_99 = load i4 %i
 <StgValue><ssdm name="i_99"/></StgValue>
 </operation>
 
-<operation id="10" st_id="1" stage="1" lat="1">
+<operation id="11" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="1" op_0_bw="4" op_1_bw="4">
+<Node id="12" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
 for.inc:2 %icmp_ln47 = icmp_eq  i4 %i_99, i4 8
 
@@ -97,35 +112,19 @@ for.inc:2 %icmp_ln47 = icmp_eq  i4 %i_99, i4 8
 <StgValue><ssdm name="icmp_ln47"/></StgValue>
 </operation>
 
-<operation id="11" st_id="1" stage="1" lat="1">
+<operation id="12" st_id="1" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="4" op_0_bw="4" op_1_bw="4">
+<Node id="13" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
 for.inc:3 %add_ln47 = add i4 %i_99, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln47"/></StgValue>
-</operation>
-
-<operation id="12" st_id="1" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="18" bw="3" op_0_bw="4">
-<![CDATA[
-for.inc.split:3 %trunc_ln48 = trunc i4 %i_99
-
-]]></Node>
-<StgValue><ssdm name="trunc_ln48"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -136,12 +135,12 @@ for.inc.split:3 %trunc_ln48 = trunc i4 %i_99
 </and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
+<Node id="19" bw="3" op_0_bw="4">
 <![CDATA[
-for.inc.split:4 %zext_ln48_4 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln48
+for.inc.split:3 %trunc_ln48 = trunc i4 %i_99
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln48_4"/></StgValue>
+<StgValue><ssdm name="trunc_ln48"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -152,12 +151,12 @@ for.inc.split:4 %zext_ln48_4 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.
 </and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="32" op_0_bw="4">
+<Node id="20" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
 <![CDATA[
-for.inc.split:5 %zext_ln48_5 = zext i4 %zext_ln48_4
+for.inc.split:4 %zext_ln48_2 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln48
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln48_5"/></StgValue>
+<StgValue><ssdm name="zext_ln48_2"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -168,15 +167,31 @@ for.inc.split:5 %zext_ln48_5 = zext i4 %zext_ln48_4
 </and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="4" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="21" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.split:6 %R_X_addr = getelementptr i64 %R_X, i32 0, i32 %zext_ln48_5
+for.inc.split:5 %zext_ln48_5 = zext i4 %zext_ln48_2
+
+]]></Node>
+<StgValue><ssdm name="zext_ln48_5"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+for.inc.split:6 %R_X_addr = getelementptr i64 %R_X, i64 0, i64 %zext_ln48_5
 
 ]]></Node>
 <StgValue><ssdm name="R_X_addr"/></StgValue>
 </operation>
 
-<operation id="16" st_id="1" stage="2" lat="2">
+<operation id="17" st_id="1" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -184,7 +199,7 @@ for.inc.split:6 %R_X_addr = getelementptr i64 %R_X, i32 0, i32 %zext_ln48_5
 </and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="64" op_0_bw="4">
+<Node id="23" bw="64" op_0_bw="4">
 <![CDATA[
 for.inc.split:7 %R_X_load = load i4 %R_X_addr
 
@@ -192,7 +207,7 @@ for.inc.split:7 %R_X_load = load i4 %R_X_addr
 <StgValue><ssdm name="R_X_load"/></StgValue>
 </operation>
 
-<operation id="17" st_id="1" stage="1" lat="1">
+<operation id="18" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -200,15 +215,15 @@ for.inc.split:7 %R_X_load = load i4 %R_X_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="4" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="24" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split:8 %R_Z_addr = getelementptr i64 %R_Z, i32 0, i32 %zext_ln48_5
+for.inc.split:8 %R_Z_addr = getelementptr i64 %R_Z, i64 0, i64 %zext_ln48_5
 
 ]]></Node>
 <StgValue><ssdm name="R_Z_addr"/></StgValue>
 </operation>
 
-<operation id="18" st_id="1" stage="2" lat="2">
+<operation id="19" st_id="1" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -216,7 +231,7 @@ for.inc.split:8 %R_Z_addr = getelementptr i64 %R_Z, i32 0, i32 %zext_ln48_5
 </and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="64" op_0_bw="4">
+<Node id="25" bw="64" op_0_bw="4">
 <![CDATA[
 for.inc.split:9 %R_Z_load = load i4 %R_Z_addr
 
@@ -224,7 +239,7 @@ for.inc.split:9 %R_Z_load = load i4 %R_Z_addr
 <StgValue><ssdm name="R_Z_load"/></StgValue>
 </operation>
 
-<operation id="19" st_id="1" stage="1" lat="1">
+<operation id="20" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -232,9 +247,9 @@ for.inc.split:9 %R_Z_load = load i4 %R_Z_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
+<Node id="44" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.split:26 %store_ln44 = store i4 %add_ln47, i4 %i
+for.inc.split:28 %store_ln44 = store i4 %add_ln47, i4 %i
 
 ]]></Node>
 <StgValue><ssdm name="store_ln44"/></StgValue>
@@ -243,21 +258,6 @@ for.inc.split:26 %store_ln44 = store i4 %add_ln47, i4 %i
 
 <state id="2" st_id="3">
 
-<operation id="20" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="9" bw="1" op_0_bw="1" op_1_bw="0" op_2_bw="1" op_3_bw="0">
-<![CDATA[
-for.inc:0 %borrow = phi i1 0, void %newFuncRoot, i1 %borrowReg, void %for.inc.split
-
-]]></Node>
-<StgValue><ssdm name="borrow"/></StgValue>
-</operation>
-
 <operation id="21" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -265,28 +265,27 @@ for.inc:0 %borrow = phi i1 0, void %newFuncRoot, i1 %borrowReg, void %for.inc.sp
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="10" bw="1" op_0_bw="1" op_1_bw="0" op_2_bw="1" op_3_bw="0">
+<![CDATA[
+for.inc:0 %borrow = phi i1 0, void %newFuncRoot, i1 %borrowReg, void %for.inc.split
+
+]]></Node>
+<StgValue><ssdm name="borrow"/></StgValue>
+</operation>
+
+<operation id="22" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 for.inc:4 %br_ln47 = br i1 %icmp_ln47, void %for.inc.split, void %for.end.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln47"/></StgValue>
-</operation>
-
-<operation id="22" st_id="2" stage="1" lat="2">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="22" bw="64" op_0_bw="4">
-<![CDATA[
-for.inc.split:7 %R_X_load = load i4 %R_X_addr
-
-]]></Node>
-<StgValue><ssdm name="R_X_load"/></StgValue>
 </operation>
 
 <operation id="23" st_id="2" stage="1" lat="2">
@@ -297,7 +296,23 @@ for.inc.split:7 %R_X_load = load i4 %R_X_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="64" op_0_bw="4">
+<Node id="23" bw="64" op_0_bw="4">
+<![CDATA[
+for.inc.split:7 %R_X_load = load i4 %R_X_addr
+
+]]></Node>
+<StgValue><ssdm name="R_X_load"/></StgValue>
+</operation>
+
+<operation id="24" st_id="2" stage="1" lat="2">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="64" op_0_bw="4">
 <![CDATA[
 for.inc.split:9 %R_Z_load = load i4 %R_Z_addr
 
@@ -305,7 +320,7 @@ for.inc.split:9 %R_Z_load = load i4 %R_Z_addr
 <StgValue><ssdm name="R_Z_load"/></StgValue>
 </operation>
 
-<operation id="24" st_id="2" stage="1" lat="1">
+<operation id="25" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -313,7 +328,7 @@ for.inc.split:9 %R_Z_load = load i4 %R_Z_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="26" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
 for.inc.split:10 %tempReg = sub i64 %R_X_load, i64 %R_Z_load
 
@@ -321,7 +336,7 @@ for.inc.split:10 %tempReg = sub i64 %R_X_load, i64 %R_Z_load
 <StgValue><ssdm name="tempReg"/></StgValue>
 </operation>
 
-<operation id="44" st_id="2" stage="1" lat="1">
+<operation id="47" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -329,7 +344,7 @@ for.inc.split:10 %tempReg = sub i64 %R_X_load, i64 %R_Z_load
 </and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<Node id="47" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
 for.end.exitStub:0 %write_ln48 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %borrow_out, i1 %borrow
 
@@ -337,7 +352,7 @@ for.end.exitStub:0 %write_ln48 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %b
 <StgValue><ssdm name="write_ln48"/></StgValue>
 </operation>
 
-<operation id="45" st_id="2" stage="1" lat="1">
+<operation id="48" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -345,7 +360,7 @@ for.end.exitStub:0 %write_ln48 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %b
 </and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0">
+<Node id="48" bw="0">
 <![CDATA[
 for.end.exitStub:1 %ret_ln0 = ret
 
@@ -356,22 +371,6 @@ for.end.exitStub:1 %ret_ln0 = ret
 
 <state id="3" st_id="4">
 
-<operation id="25" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
-<![CDATA[
-for.inc.split:0 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
-
-]]></Node>
-<StgValue><ssdm name="specpipeline_ln44"/></StgValue>
-</operation>
-
 <operation id="26" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -380,12 +379,12 @@ for.inc.split:0 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i
 </and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:1 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
+for.inc.split:0 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
 
 ]]></Node>
-<StgValue><ssdm name="speclooptripcount_ln44"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln44"/></StgValue>
 </operation>
 
 <operation id="27" st_id="3" stage="1" lat="1">
@@ -396,28 +395,28 @@ for.inc.split:1 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecL
 </and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.split:2 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35
+for.inc.split:1 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln47"/></StgValue>
+<StgValue><ssdm name="speclooptripcount_ln44"/></StgValue>
 </operation>
 
 <operation id="28" st_id="3" stage="1" lat="1">
-<core>LogicGate</core>
+<core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln47" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:11 %xor_ln105 = xor i64 %R_Z_load, i64 %R_X_load
+for.inc.split:2 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln105"/></StgValue>
+<StgValue><ssdm name="specloopname_ln47"/></StgValue>
 </operation>
 
 <operation id="29" st_id="3" stage="1" lat="1">
@@ -430,10 +429,10 @@ for.inc.split:11 %xor_ln105 = xor i64 %R_Z_load, i64 %R_X_load
 
 <Node id="27" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc.split:12 %xor_ln105_74 = xor i64 %R_Z_load, i64 %tempReg
+for.inc.split:11 %xor_ln105 = xor i64 %R_Z_load, i64 %R_X_load
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln105_74"/></StgValue>
+<StgValue><ssdm name="xor_ln105"/></StgValue>
 </operation>
 
 <operation id="30" st_id="3" stage="1" lat="1">
@@ -446,10 +445,10 @@ for.inc.split:12 %xor_ln105_74 = xor i64 %R_Z_load, i64 %tempReg
 
 <Node id="28" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc.split:13 %or_ln105 = or i64 %xor_ln105_74, i64 %xor_ln105
+for.inc.split:12 %xor_ln105_74 = xor i64 %R_Z_load, i64 %tempReg
 
 ]]></Node>
-<StgValue><ssdm name="or_ln105"/></StgValue>
+<StgValue><ssdm name="xor_ln105_74"/></StgValue>
 </operation>
 
 <operation id="31" st_id="3" stage="1" lat="1">
@@ -462,13 +461,29 @@ for.inc.split:13 %or_ln105 = or i64 %xor_ln105_74, i64 %xor_ln105
 
 <Node id="29" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
+for.inc.split:13 %or_ln105 = or i64 %xor_ln105_74, i64 %xor_ln105
+
+]]></Node>
+<StgValue><ssdm name="or_ln105"/></StgValue>
+</operation>
+
+<operation id="32" st_id="3" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="30" bw="64" op_0_bw="64" op_1_bw="64">
+<![CDATA[
 for.inc.split:14 %xor_ln105_75 = xor i64 %R_X_load, i64 %or_ln105
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln105_75"/></StgValue>
 </operation>
 
-<operation id="32" st_id="3" stage="1" lat="1">
+<operation id="33" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -476,7 +491,7 @@ for.inc.split:14 %xor_ln105_75 = xor i64 %R_X_load, i64 %or_ln105
 </and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
+<Node id="31" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
 for.inc.split:15 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_75, i32 63
 
@@ -484,24 +499,8 @@ for.inc.split:15 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln
 <StgValue><ssdm name="tmp"/></StgValue>
 </operation>
 
-<operation id="33" st_id="3" stage="1" lat="1">
-<core>Adder</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="31" bw="64" op_0_bw="64" op_1_bw="64">
-<![CDATA[
-for.inc.split:16 %sub_ln95 = sub i64 0, i64 %tempReg
-
-]]></Node>
-<StgValue><ssdm name="sub_ln95"/></StgValue>
-</operation>
-
 <operation id="34" st_id="3" stage="1" lat="1">
-<core>LogicGate</core>
+<core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln47" val="0"/>
@@ -510,29 +509,13 @@ for.inc.split:16 %sub_ln95 = sub i64 0, i64 %tempReg
 
 <Node id="32" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc.split:17 %or_ln95 = or i64 %tempReg, i64 %sub_ln95
+for.inc.split:16 %sub_ln95 = sub i64 0, i64 %tempReg
 
 ]]></Node>
-<StgValue><ssdm name="or_ln95"/></StgValue>
+<StgValue><ssdm name="sub_ln95"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="33" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
-<![CDATA[
-for.inc.split:18 %tmp_170 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
-
-]]></Node>
-<StgValue><ssdm name="tmp_170"/></StgValue>
-</operation>
-
-<operation id="36" st_id="3" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -540,12 +523,28 @@ for.inc.split:18 %tmp_170 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or
 </and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="1" op_0_bw="1" op_1_bw="1">
+<Node id="33" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc.split:19 %xor_ln48 = xor i1 %tmp_170, i1 1
+for.inc.split:17 %or_ln95 = or i64 %tempReg, i64 %sub_ln95
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln48"/></StgValue>
+<StgValue><ssdm name="or_ln95"/></StgValue>
+</operation>
+
+<operation id="36" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="34" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
+<![CDATA[
+for.inc.split:18 %tmp_162 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
+
+]]></Node>
+<StgValue><ssdm name="tmp_162"/></StgValue>
 </operation>
 
 <operation id="37" st_id="3" stage="1" lat="1">
@@ -558,10 +557,10 @@ for.inc.split:19 %xor_ln48 = xor i1 %tmp_170, i1 1
 
 <Node id="35" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc.split:20 %and_ln48 = and i1 %borrow, i1 %xor_ln48
+for.inc.split:19 %xor_ln48 = xor i1 %tmp_162, i1 1
 
 ]]></Node>
-<StgValue><ssdm name="and_ln48"/></StgValue>
+<StgValue><ssdm name="xor_ln48"/></StgValue>
 </operation>
 
 <operation id="38" st_id="3" stage="1" lat="1">
@@ -574,13 +573,29 @@ for.inc.split:20 %and_ln48 = and i1 %borrow, i1 %xor_ln48
 
 <Node id="36" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
+for.inc.split:20 %and_ln48 = and i1 %borrow, i1 %xor_ln48
+
+]]></Node>
+<StgValue><ssdm name="and_ln48"/></StgValue>
+</operation>
+
+<operation id="39" st_id="3" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="37" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
 for.inc.split:21 %borrowReg = or i1 %and_ln48, i1 %tmp
 
 ]]></Node>
 <StgValue><ssdm name="borrowReg"/></StgValue>
 </operation>
 
-<operation id="39" st_id="3" stage="1" lat="1">
+<operation id="40" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -588,7 +603,7 @@ for.inc.split:21 %borrowReg = or i1 %and_ln48, i1 %tmp
 </and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="64" op_0_bw="1">
+<Node id="38" bw="64" op_0_bw="1">
 <![CDATA[
 for.inc.split:22 %zext_ln48 = zext i1 %borrow
 
@@ -596,7 +611,7 @@ for.inc.split:22 %zext_ln48 = zext i1 %borrow
 <StgValue><ssdm name="zext_ln48"/></StgValue>
 </operation>
 
-<operation id="40" st_id="3" stage="1" lat="1">
+<operation id="41" st_id="3" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -604,7 +619,7 @@ for.inc.split:22 %zext_ln48 = zext i1 %borrow
 </and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="39" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
 for.inc.split:23 %sub_ln48 = sub i64 %tempReg, i64 %zext_ln48
 
@@ -612,7 +627,7 @@ for.inc.split:23 %sub_ln48 = sub i64 %tempReg, i64 %zext_ln48
 <StgValue><ssdm name="sub_ln48"/></StgValue>
 </operation>
 
-<operation id="41" st_id="3" stage="1" lat="1">
+<operation id="42" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -620,28 +635,12 @@ for.inc.split:23 %sub_ln48 = sub i64 %tempReg, i64 %zext_ln48
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="4" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<Node id="40" bw="5" op_0_bw="4">
 <![CDATA[
-for.inc.split:24 %c_addr = getelementptr i64 %c, i32 0, i32 %zext_ln48_5
+for.inc.split:24 %sext_ln48 = sext i4 %zext_ln48_2
 
 ]]></Node>
-<StgValue><ssdm name="c_addr"/></StgValue>
-</operation>
-
-<operation id="42" st_id="3" stage="1" lat="1">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="40" bw="0" op_0_bw="64" op_1_bw="4">
-<![CDATA[
-for.inc.split:25 %store_ln48 = store i64 %sub_ln48, i4 %c_addr
-
-]]></Node>
-<StgValue><ssdm name="store_ln48"/></StgValue>
+<StgValue><ssdm name="sext_ln48"/></StgValue>
 </operation>
 
 <operation id="43" st_id="3" stage="1" lat="1">
@@ -652,9 +651,57 @@ for.inc.split:25 %store_ln48 = store i64 %sub_ln48, i4 %c_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0">
+<Node id="41" bw="64" op_0_bw="5">
 <![CDATA[
-for.inc.split:27 %br_ln47 = br void %for.inc
+for.inc.split:25 %zext_ln48_6 = zext i5 %sext_ln48
+
+]]></Node>
+<StgValue><ssdm name="zext_ln48_6"/></StgValue>
+</operation>
+
+<operation id="44" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="42" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+for.inc.split:26 %coeff_addr = getelementptr i64 %coeff, i64 0, i64 %zext_ln48_6
+
+]]></Node>
+<StgValue><ssdm name="coeff_addr"/></StgValue>
+</operation>
+
+<operation id="45" st_id="3" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="43" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="8">
+<![CDATA[
+for.inc.split:27 %store_ln48 = store void @_ssdm_op_Write.bram.i64, i6 %coeff_addr, i64 %sub_ln48, i8 255
+
+]]></Node>
+<StgValue><ssdm name="store_ln48"/></StgValue>
+</operation>
+
+<operation id="46" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln47" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="45" bw="0" op_0_bw="0">
+<![CDATA[
+for.inc.split:29 %br_ln47 = br void %for.inc
 
 ]]></Node>
 <StgValue><ssdm name="br_ln47"/></StgValue>

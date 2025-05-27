@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>gmem2</name>
+              <name>gmem</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -73,7 +73,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -149,7 +149,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -174,7 +174,7 @@
               <name>temp</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -190,14 +190,14 @@
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>60</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>to_fp2mont</second>
                       </first>
-                      <second>332</second>
+                      <second>333</second>
                     </item>
                     <item>
                       <first>
@@ -211,7 +211,7 @@
                         <first>src/sidh.c</first>
                         <second>fp2_decode</second>
                       </first>
-                      <second>58</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
@@ -251,7 +251,7 @@
               <name>temp_72</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -267,14 +267,14 @@
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>60</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>to_fp2mont</second>
                       </first>
-                      <second>331</second>
+                      <second>332</second>
                     </item>
                     <item>
                       <first>
@@ -288,7 +288,7 @@
                         <first>src/sidh.c</first>
                         <second>fp2_decode</second>
                       </first>
-                      <second>58</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
@@ -336,7 +336,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64</rtlName>
+              <rtlName>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -379,7 +379,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82</rtlName>
+              <rtlName>grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -398,15 +398,15 @@
             <item>32</item>
             <item>33</item>
             <item>34</item>
-            <item>101</item>
             <item>102</item>
+            <item>103</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.55</m_delay>
+          <m_delay>3.52</m_delay>
           <m_topoIndex>7</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -426,7 +426,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2_decode_1_Pipeline_3_fu_70</rtlName>
+              <rtlName>grp_fp2_decode_1_Pipeline_3_fu_72</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -458,89 +458,6 @@
             <Obj>
               <type>0</type>
               <id>14</id>
-              <name>_ln62</name>
-              <fileName>src/fpx.c</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>62</lineNumber>
-              <contextFuncName>fpmul503_mont</contextFuncName>
-              <contextNormFuncName>fpmul503_mont</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>4</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>fpmul503_mont</second>
-                      </first>
-                      <second>62</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>to_fp2mont</second>
-                      </first>
-                      <second>331</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>to_mont</second>
-                      </first>
-                      <second>33</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sidh.c</first>
-                        <second>fp2_decode</second>
-                      </first>
-                      <second>58</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>grp_mp_mul_6_fu_92</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>7</count>
-            <item_version>0</item_version>
-            <item>39</item>
-            <item>40</item>
-            <item>41</item>
-            <item>61</item>
-            <item>99</item>
-            <item>100</item>
-            <item>103</item>
-          </oprand_edges>
-          <opcode>call</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>8</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_11">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>15</id>
               <name>_ln63</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -567,7 +484,7 @@
                         <first>src/fpx.c</first>
                         <second>to_fp2mont</second>
                       </first>
-                      <second>331</second>
+                      <second>332</second>
                     </item>
                     <item>
                       <first>
@@ -581,13 +498,96 @@
                         <first>src/sidh.c</first>
                         <second>fp2_decode</second>
                       </first>
-                      <second>58</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_rdc_mont_1_fu_101</rtlName>
+              <rtlName>grp_mp_mul_6_fu_94</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>7</count>
+            <item_version>0</item_version>
+            <item>39</item>
+            <item>40</item>
+            <item>41</item>
+            <item>61</item>
+            <item>100</item>
+            <item>101</item>
+            <item>104</item>
+          </oprand_edges>
+          <opcode>call</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>8</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_11">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>15</id>
+              <name>_ln64</name>
+              <fileName>src/fpx.c</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>64</lineNumber>
+              <contextFuncName>fpmul503_mont</contextFuncName>
+              <contextNormFuncName>fpmul503_mont</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>4</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>fpmul503_mont</second>
+                      </first>
+                      <second>64</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>to_fp2mont</second>
+                      </first>
+                      <second>332</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>to_mont</second>
+                      </first>
+                      <second>33</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/sidh.c</first>
+                        <second>fp2_decode</second>
+                      </first>
+                      <second>60</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>grp_rdc_mont_3_fu_103</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -606,8 +606,8 @@
             <item>44</item>
             <item>45</item>
             <item>62</item>
-            <item>98</item>
-            <item>104</item>
+            <item>99</item>
+            <item>105</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -634,7 +634,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2_decode_1_Pipeline_4_fu_76</rtlName>
+              <rtlName>grp_fp2_decode_1_Pipeline_4_fu_78</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -666,90 +666,6 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>_ln62</name>
-              <fileName>src/fpx.c</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>62</lineNumber>
-              <contextFuncName>fpmul503_mont</contextFuncName>
-              <contextNormFuncName>fpmul503_mont</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>4</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>fpmul503_mont</second>
-                      </first>
-                      <second>62</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>to_fp2mont</second>
-                      </first>
-                      <second>332</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.c</first>
-                        <second>to_mont</second>
-                      </first>
-                      <second>33</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sidh.c</first>
-                        <second>fp2_decode</second>
-                      </first>
-                      <second>58</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>grp_mp_mul_862_fu_110</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>8</count>
-            <item_version>0</item_version>
-            <item>50</item>
-            <item>51</item>
-            <item>53</item>
-            <item>54</item>
-            <item>55</item>
-            <item>96</item>
-            <item>97</item>
-            <item>105</item>
-          </oprand_edges>
-          <opcode>call</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>10</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_14">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>18</id>
               <name>_ln63</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -776,7 +692,7 @@
                         <first>src/fpx.c</first>
                         <second>to_fp2mont</second>
                       </first>
-                      <second>332</second>
+                      <second>333</second>
                     </item>
                     <item>
                       <first>
@@ -790,13 +706,97 @@
                         <first>src/sidh.c</first>
                         <second>fp2_decode</second>
                       </first>
-                      <second>58</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_rdc_mont_2_fu_121</rtlName>
+              <rtlName>grp_mp_mul_862_fu_112</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>8</count>
+            <item_version>0</item_version>
+            <item>50</item>
+            <item>51</item>
+            <item>53</item>
+            <item>54</item>
+            <item>55</item>
+            <item>97</item>
+            <item>98</item>
+            <item>106</item>
+          </oprand_edges>
+          <opcode>call</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>10</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_14">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>18</id>
+              <name>_ln64</name>
+              <fileName>src/fpx.c</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>64</lineNumber>
+              <contextFuncName>fpmul503_mont</contextFuncName>
+              <contextNormFuncName>fpmul503_mont</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>4</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>fpmul503_mont</second>
+                      </first>
+                      <second>64</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>to_fp2mont</second>
+                      </first>
+                      <second>333</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.c</first>
+                        <second>to_mont</second>
+                      </first>
+                      <second>33</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/sidh.c</first>
+                        <second>fp2_decode</second>
+                      </first>
+                      <second>60</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>grp_rdc_mont_4_fu_123</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -816,8 +816,8 @@
             <item>59</item>
             <item>60</item>
             <item>63</item>
-            <item>95</item>
-            <item>106</item>
+            <item>96</item>
+            <item>107</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -833,10 +833,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>_ln59</name>
+              <name>_ln61</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>fp2_decode</contextFuncName>
               <contextNormFuncName>fp2_decode</contextNormFuncName>
               <inlineStackInfo>
@@ -852,7 +852,7 @@
                         <first>src/sidh.c</first>
                         <second>fp2_decode</second>
                       </first>
-                      <second>59</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -913,7 +913,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>1</content>
@@ -923,7 +923,7 @@
             <Obj>
               <type>2</type>
               <id>27</id>
-              <name>fp2_decode_1_Pipeline_VITIS_LOOP_51_1</name>
+              <name>fp2_decode_1_Pipeline_VITIS_LOOP_53_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -947,14 +947,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2_decode.1_Pipeline_VITIS_LOOP_51_1&gt;</content>
+          <content>&lt;constant:fp2_decode.1_Pipeline_VITIS_LOOP_53_1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_18">
           <Value>
             <Obj>
               <type>2</type>
               <id>30</id>
-              <name>fp2_decode_1_Pipeline_VITIS_LOOP_53_2</name>
+              <name>fp2_decode_1_Pipeline_VITIS_LOOP_55_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -978,7 +978,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2_decode.1_Pipeline_VITIS_LOOP_53_2&gt;</content>
+          <content>&lt;constant:fp2_decode.1_Pipeline_VITIS_LOOP_55_2&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_19">
           <Value>
@@ -1047,7 +1047,7 @@
             <Obj>
               <type>2</type>
               <id>42</id>
-              <name>rdc_mont_1</name>
+              <name>rdc_mont_3</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1071,7 +1071,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:rdc_mont.1&gt;</content>
+          <content>&lt;constant:rdc_mont.3&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_22">
           <Value>
@@ -1171,7 +1171,7 @@
             <Obj>
               <type>2</type>
               <id>56</id>
-              <name>rdc_mont_2</name>
+              <name>rdc_mont_4</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1195,7 +1195,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:rdc_mont.2&gt;</content>
+          <content>&lt;constant:rdc_mont.4&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -1465,84 +1465,84 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_58">
-          <id>95</id>
+          <id>96</id>
           <edge_type>4</edge_type>
           <source_obj>17</source_obj>
           <sink_obj>18</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_59">
-          <id>96</id>
+          <id>97</id>
           <edge_type>4</edge_type>
           <source_obj>16</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_60">
-          <id>97</id>
+          <id>98</id>
           <edge_type>4</edge_type>
           <source_obj>15</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_61">
-          <id>98</id>
+          <id>99</id>
           <edge_type>4</edge_type>
           <source_obj>14</source_obj>
           <sink_obj>15</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_62">
-          <id>99</id>
+          <id>100</id>
           <edge_type>4</edge_type>
           <source_obj>13</source_obj>
           <sink_obj>14</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_63">
-          <id>100</id>
+          <id>101</id>
           <edge_type>4</edge_type>
           <source_obj>12</source_obj>
           <sink_obj>14</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_64">
-          <id>101</id>
-          <edge_type>4</edge_type>
-          <source_obj>11</source_obj>
-          <sink_obj>12</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_65">
           <id>102</id>
           <edge_type>4</edge_type>
           <source_obj>11</source_obj>
           <sink_obj>12</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_66">
+        <item class_id_reference="20" object_id="_65">
           <id>103</id>
+          <edge_type>4</edge_type>
+          <source_obj>11</source_obj>
+          <sink_obj>12</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_66">
+          <id>104</id>
           <edge_type>4</edge_type>
           <source_obj>12</source_obj>
           <sink_obj>14</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_67">
-          <id>104</id>
+          <id>105</id>
           <edge_type>4</edge_type>
           <source_obj>14</source_obj>
           <sink_obj>15</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_68">
-          <id>105</id>
+          <id>106</id>
           <edge_type>4</edge_type>
           <source_obj>15</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_69">
-          <id>106</id>
+          <id>107</id>
           <edge_type>4</edge_type>
           <source_obj>17</source_obj>
           <sink_obj>18</sink_obj>
@@ -1951,7 +1951,7 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_fp2_decode_1_Pipeline_3_fu_70 (fp2_decode_1_Pipeline_3)</first>
+          <first>grp_fp2_decode_1_Pipeline_3_fu_72 (fp2_decode_1_Pipeline_3)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -1966,7 +1966,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_4_fu_76 (fp2_decode_1_Pipeline_4)</first>
+          <first>grp_fp2_decode_1_Pipeline_4_fu_78 (fp2_decode_1_Pipeline_4)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -1981,7 +1981,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64 (fp2_decode_1_Pipeline_VITIS_LOOP_51_1)</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66 (fp2_decode_1_Pipeline_VITIS_LOOP_53_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -1996,22 +1996,22 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82 (fp2_decode_1_Pipeline_VITIS_LOOP_53_2)</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84 (fp2_decode_1_Pipeline_VITIS_LOOP_55_2)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>193</second>
+              <second>257</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>686</second>
+              <second>750</second>
             </item>
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_6_fu_92 (mp_mul_6)</first>
+          <first>grp_mp_mul_6_fu_94 (mp_mul_6)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2021,7 +2021,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>2741</second>
+              <second>2745</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2030,7 +2030,7 @@
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_862_fu_110 (mp_mul_862)</first>
+          <first>grp_mp_mul_862_fu_112 (mp_mul_862)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2040,7 +2040,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3331</second>
+              <second>3335</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2049,7 +2049,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_1_fu_101 (rdc_mont_1)</first>
+          <first>grp_rdc_mont_3_fu_103 (rdc_mont_3)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2063,7 +2063,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>4169</second>
+              <second>4174</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2072,7 +2072,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_2_fu_121 (rdc_mont_2)</first>
+          <first>grp_rdc_mont_4_fu_123 (rdc_mont_4)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2086,7 +2086,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>4178</second>
+              <second>4182</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2374,7 +2374,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_137_ce</first>
+          <first>grp_fu_139_ce</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2401,7 +2401,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_141_ce</first>
+          <first>grp_fu_143_ce</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2428,7 +2428,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_145_ce</first>
+          <first>grp_fu_147_ce</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2455,7 +2455,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_149_ce</first>
+          <first>grp_fu_151_ce</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2721,7 +2721,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_3_fu_70_ap_start_reg</first>
+          <first>grp_fp2_decode_1_Pipeline_3_fu_72_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2740,7 +2740,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_4_fu_76_ap_start_reg</first>
+          <first>grp_fp2_decode_1_Pipeline_4_fu_78_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2759,7 +2759,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64_ap_start_reg</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2778,7 +2778,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82_ap_start_reg</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2797,7 +2797,7 @@
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_6_fu_92_ap_start_reg</first>
+          <first>grp_mp_mul_6_fu_94_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2816,7 +2816,7 @@
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_862_fu_110_ap_start_reg</first>
+          <first>grp_mp_mul_862_fu_112_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2835,7 +2835,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_1_fu_101_ap_start_reg</first>
+          <first>grp_rdc_mont_3_fu_103_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2854,7 +2854,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_2_fu_121_ap_start_reg</first>
+          <first>grp_rdc_mont_4_fu_123_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2877,56 +2877,56 @@
         <count>8</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_3_fu_70</first>
+          <first>grp_fp2_decode_1_Pipeline_3_fu_72</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_4_fu_76</first>
+          <first>grp_fp2_decode_1_Pipeline_4_fu_78</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_6_fu_92</first>
+          <first>grp_mp_mul_6_fu_94</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_862_fu_110</first>
+          <first>grp_mp_mul_862_fu_112</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_1_fu_101</first>
+          <first>grp_rdc_mont_3_fu_103</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_2_fu_121</first>
+          <first>grp_rdc_mont_4_fu_123</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2937,7 +2937,7 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_fp2_decode_1_Pipeline_3_fu_70 (fp2_decode_1_Pipeline_3)</first>
+          <first>grp_fp2_decode_1_Pipeline_3_fu_72 (fp2_decode_1_Pipeline_3)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2945,7 +2945,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_4_fu_76 (fp2_decode_1_Pipeline_4)</first>
+          <first>grp_fp2_decode_1_Pipeline_4_fu_78 (fp2_decode_1_Pipeline_4)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2953,7 +2953,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64 (fp2_decode_1_Pipeline_VITIS_LOOP_51_1)</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66 (fp2_decode_1_Pipeline_VITIS_LOOP_53_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2961,7 +2961,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82 (fp2_decode_1_Pipeline_VITIS_LOOP_53_2)</first>
+          <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84 (fp2_decode_1_Pipeline_VITIS_LOOP_55_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2969,7 +2969,7 @@
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_6_fu_92 (mp_mul_6)</first>
+          <first>grp_mp_mul_6_fu_94 (mp_mul_6)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2977,7 +2977,7 @@
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_862_fu_110 (mp_mul_862)</first>
+          <first>grp_mp_mul_862_fu_112 (mp_mul_862)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2985,7 +2985,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_1_fu_101 (rdc_mont_1)</first>
+          <first>grp_rdc_mont_3_fu_103 (rdc_mont_3)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2993,7 +2993,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rdc_mont_2_fu_121 (rdc_mont_2)</first>
+          <first>grp_rdc_mont_4_fu_123 (rdc_mont_4)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3017,7 +3017,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>120</item>
+            <item>121</item>
           </second>
         </item>
         <item>
@@ -3025,7 +3025,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>111</item>
+            <item>112</item>
           </second>
         </item>
       </dp_memory_map>
@@ -3137,7 +3137,7 @@
       <count>11</count>
       <item_version>0</item_version>
       <item class_id="49" tracking_level="0" version="0">
-        <first>50</first>
+        <first>52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3145,7 +3145,7 @@
         </second>
       </item>
       <item>
-        <first>54</first>
+        <first>56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3153,7 +3153,7 @@
         </second>
       </item>
       <item>
-        <first>58</first>
+        <first>60</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3161,7 +3161,7 @@
         </second>
       </item>
       <item>
-        <first>64</first>
+        <first>66</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3170,7 +3170,7 @@
         </second>
       </item>
       <item>
-        <first>70</first>
+        <first>72</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3179,7 +3179,7 @@
         </second>
       </item>
       <item>
-        <first>76</first>
+        <first>78</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3188,7 +3188,7 @@
         </second>
       </item>
       <item>
-        <first>82</first>
+        <first>84</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3197,7 +3197,7 @@
         </second>
       </item>
       <item>
-        <first>92</first>
+        <first>94</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3206,7 +3206,7 @@
         </second>
       </item>
       <item>
-        <first>101</first>
+        <first>103</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3215,7 +3215,7 @@
         </second>
       </item>
       <item>
-        <first>110</first>
+        <first>112</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3224,7 +3224,7 @@
         </second>
       </item>
       <item>
-        <first>121</first>
+        <first>123</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3237,7 +3237,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>temp_72_alloca_fu_54</first>
+        <first>temp_72_alloca_fu_56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3245,7 +3245,7 @@
         </second>
       </item>
       <item>
-        <first>temp_alloca_fu_50</first>
+        <first>temp_alloca_fu_52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3257,7 +3257,7 @@
       <count>8</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_fp2_decode_1_Pipeline_3_fu_70</first>
+        <first>grp_fp2_decode_1_Pipeline_3_fu_72</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3266,7 +3266,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2_decode_1_Pipeline_4_fu_76</first>
+        <first>grp_fp2_decode_1_Pipeline_4_fu_78</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3275,7 +3275,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64</first>
+        <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3284,7 +3284,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82</first>
+        <first>grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3293,7 +3293,7 @@
         </second>
       </item>
       <item>
-        <first>grp_mp_mul_6_fu_92</first>
+        <first>grp_mp_mul_6_fu_94</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3302,7 +3302,7 @@
         </second>
       </item>
       <item>
-        <first>grp_mp_mul_862_fu_110</first>
+        <first>grp_mp_mul_862_fu_112</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3311,7 +3311,7 @@
         </second>
       </item>
       <item>
-        <first>grp_rdc_mont_1_fu_101</first>
+        <first>grp_rdc_mont_3_fu_103</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3320,7 +3320,7 @@
         </second>
       </item>
       <item>
-        <first>grp_rdc_mont_2_fu_121</first>
+        <first>grp_rdc_mont_4_fu_123</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3333,7 +3333,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>enc_read_read_fu_58</first>
+        <first>enc_read_read_fu_60</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3377,7 +3377,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>132</first>
+        <first>134</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3389,7 +3389,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>enc_read_reg_132</first>
+        <first>enc_read_reg_134</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3424,7 +3424,7 @@
         </second>
       </item>
       <item>
-        <first>gmem2</first>
+        <first>gmem</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

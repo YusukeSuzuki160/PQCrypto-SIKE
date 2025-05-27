@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'from_mont_3'" level="0">
-<item name = "Date">Tue May 20 14:38:32 2025
+<item name = "Date">Tue May 27 14:20:33 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -33,7 +33,7 @@
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_from_mont_3_Pipeline_1_fu_32">from_mont_3_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_mp_mul_145_fu_38">mp_mul_145, 212, 310, 2.120 us, 3.100 us, 212, 310, no</column>
-<column name="grp_rdc_mont_4_fu_49">rdc_mont_4, 190, 352, 1.900 us, 3.520 us, 190, 352, no</column>
+<column name="grp_rdc_mont_2_fu_49">rdc_mont_2, 190, 352, 1.900 us, 3.520 us, 190, 352, no</column>
 <column name="grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58">from_mont_3_Pipeline_VITIS_LOOP_91_1, 20, 20, 0.200 us, 0.200 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67">from_mont_3_Pipeline_VITIS_LOOP_97_2, 20, 20, 0.200 us, 0.200 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
@@ -54,12 +54,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 32, 8390, 10634, -</column>
+<column name="Instance">0, 32, 8462, 10711, -</column>
 <column name="Memory">2, -, 64, 8, 0</column>
 <column name="Multiplexer">-, -, 0, 207, -</column>
 <column name="Register">-, -, 15, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 14, 7, 20, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 14, 8, 20, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -67,10 +67,10 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_from_mont_3_Pipeline_1_fu_32">from_mont_3_Pipeline_1, 0, 0, 7, 54, 0</column>
-<column name="grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58">from_mont_3_Pipeline_VITIS_LOOP_91_1, 0, 0, 377, 771, 0</column>
-<column name="grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67">from_mont_3_Pipeline_VITIS_LOOP_97_2, 0, 0, 504, 826, 0</column>
-<column name="grp_mp_mul_145_fu_38">mp_mul_145, 0, 16, 3332, 3499, 0</column>
-<column name="grp_rdc_mont_4_fu_49">rdc_mont_4, 0, 16, 4170, 5484, 0</column>
+<column name="grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58">from_mont_3_Pipeline_VITIS_LOOP_91_1, 0, 0, 409, 803, 0</column>
+<column name="grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67">from_mont_3_Pipeline_VITIS_LOOP_97_2, 0, 0, 536, 858, 0</column>
+<column name="grp_mp_mul_145_fu_38">mp_mul_145, 0, 16, 3336, 3512, 0</column>
+<column name="grp_rdc_mont_2_fu_49">rdc_mont_2, 0, 16, 4174, 5484, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -111,7 +111,7 @@
 <column name="grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_mp_mul_145_fu_38_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_rdc_mont_4_fu_49_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_rdc_mont_2_fu_49_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

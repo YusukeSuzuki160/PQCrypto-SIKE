@@ -9,14 +9,14 @@
       <module_structure>Sequential</module_structure>
       <ret_bitwidth>0</ret_bitwidth>
       <ports class_id="2" tracking_level="0" version="0">
-        <count>2</count>
+        <count>1</count>
         <item_version>0</item_version>
         <item class_id="3" tracking_level="1" version="0" object_id="_1">
           <Value class_id="4" tracking_level="0" version="0">
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>R_Z</name>
+              <name>coeff</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -41,44 +41,8 @@
           </Value>
           <direction>2</direction>
           <if_type>1</if_type>
-          <array_size>16</array_size>
+          <array_size>48</array_size>
           <bit_vecs class_id="7" tracking_level="0" version="0">
-            <count>0</count>
-            <item_version>0</item_version>
-          </bit_vecs>
-        </item>
-        <item class_id_reference="3" object_id="_2">
-          <Value>
-            <Obj>
-              <type>1</type>
-              <id>2</id>
-              <name>b</name>
-              <fileName/>
-              <fileDirectory/>
-              <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
-              <inlineStackInfo>
-                <count>0</count>
-                <item_version>0</item_version>
-              </inlineStackInfo>
-              <originalName>b</originalName>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName>RAM</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>64</bitwidth>
-          </Value>
-          <direction>0</direction>
-          <if_type>1</if_type>
-          <array_size>16</array_size>
-          <bit_vecs>
             <count>0</count>
             <item_version>0</item_version>
           </bit_vecs>
@@ -87,12 +51,12 @@
       <nodes class_id="8" tracking_level="0" version="0">
         <count>6</count>
         <item_version>0</item_version>
-        <item class_id="9" tracking_level="1" version="0" object_id="_3">
+        <item class_id="9" tracking_level="1" version="0" object_id="_2">
           <Value>
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>carry_151_loc</name>
+              <name>carry_157_loc</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -129,7 +93,7 @@
           <m_topoIndex>1</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_4">
+        <item class_id_reference="9" object_id="_3">
           <Value>
             <Obj>
               <type>0</type>
@@ -158,11 +122,10 @@
             <bitwidth>0</bitwidth>
           </Value>
           <oprand_edges>
-            <count>3</count>
+            <count>2</count>
             <item_version>0</item_version>
             <item>14</item>
             <item>15</item>
-            <item>16</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -173,7 +136,7 @@
           <m_topoIndex>2</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_5">
+        <item class_id_reference="9" object_id="_4">
           <Value>
             <Obj>
               <type>0</type>
@@ -189,7 +152,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26</rtlName>
+              <rtlName>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_24</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -204,12 +167,12 @@
           <oprand_edges>
             <count>6</count>
             <item_version>0</item_version>
+            <item>17</item>
             <item>18</item>
             <item>19</item>
-            <item>20</item>
-            <item>26</item>
-            <item>29</item>
+            <item>25</item>
             <item>31</item>
+            <item>33</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -220,12 +183,12 @@
           <m_topoIndex>3</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_6">
+        <item class_id_reference="9" object_id="_5">
           <Value>
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>carry_151_loc_load</name>
+              <name>carry_157_loc_load</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -251,8 +214,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>21</item>
-            <item>30</item>
+            <item>20</item>
+            <item>32</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -263,7 +226,7 @@
           <m_topoIndex>4</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_7">
+        <item class_id_reference="9" object_id="_6">
           <Value>
             <Obj>
               <type>0</type>
@@ -279,7 +242,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_35</rtlName>
+              <rtlName>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_33</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -294,12 +257,12 @@
           <oprand_edges>
             <count>6</count>
             <item_version>0</item_version>
+            <item>22</item>
             <item>23</item>
             <item>24</item>
-            <item>25</item>
-            <item>27</item>
-            <item>28</item>
-            <item>32</item>
+            <item>26</item>
+            <item>30</item>
+            <item>34</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -310,7 +273,7 @@
           <m_topoIndex>5</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_8">
+        <item class_id_reference="9" object_id="_7">
           <Value>
             <Obj>
               <type>0</type>
@@ -369,7 +332,7 @@
       <consts class_id="15" tracking_level="0" version="0">
         <count>4</count>
         <item_version>0</item_version>
-        <item class_id="16" tracking_level="1" version="0" object_id="_9">
+        <item class_id="16" tracking_level="1" version="0" object_id="_8">
           <Value>
             <Obj>
               <type>2</type>
@@ -395,12 +358,12 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>1</content>
         </item>
-        <item class_id_reference="16" object_id="_10">
+        <item class_id_reference="16" object_id="_9">
           <Value>
             <Obj>
               <type>2</type>
@@ -431,11 +394,11 @@
           <const_type>6</const_type>
           <content>&lt;constant:fpadd503.8_Pipeline_VITIS_LOOP_23_1&gt;</content>
         </item>
-        <item class_id_reference="16" object_id="_11">
+        <item class_id_reference="16" object_id="_10">
           <Value>
             <Obj>
               <type>2</type>
-              <id>17</id>
+              <id>16</id>
               <name>fpadd503_8_Pipeline_VITIS_LOOP_28_2</name>
               <fileName/>
               <fileDirectory/>
@@ -462,11 +425,11 @@
           <const_type>6</const_type>
           <content>&lt;constant:fpadd503.8_Pipeline_VITIS_LOOP_28_2&gt;</content>
         </item>
-        <item class_id_reference="16" object_id="_12">
+        <item class_id_reference="16" object_id="_11">
           <Value>
             <Obj>
               <type>2</type>
-              <id>22</id>
+              <id>21</id>
               <name>fpadd503_8_Pipeline_VITIS_LOOP_34_3</name>
               <fileName/>
               <fileDirectory/>
@@ -497,7 +460,7 @@
       <blocks class_id="17" tracking_level="0" version="0">
         <count>1</count>
         <item_version>0</item_version>
-        <item class_id="18" tracking_level="1" version="0" object_id="_13">
+        <item class_id="18" tracking_level="1" version="0" object_id="_12">
           <Obj>
             <type>3</type>
             <id>10</id>
@@ -535,129 +498,122 @@
         </item>
       </blocks>
       <edges class_id="19" tracking_level="0" version="0">
-        <count>18</count>
+        <count>17</count>
         <item_version>0</item_version>
-        <item class_id="20" tracking_level="1" version="0" object_id="_14">
+        <item class_id="20" tracking_level="1" version="0" object_id="_13">
           <id>12</id>
           <edge_type>1</edge_type>
           <source_obj>11</source_obj>
           <sink_obj>4</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_15">
+        <item class_id_reference="20" object_id="_14">
           <id>14</id>
           <edge_type>1</edge_type>
           <source_obj>13</source_obj>
           <sink_obj>5</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_16">
+        <item class_id_reference="20" object_id="_15">
           <id>15</id>
           <edge_type>1</edge_type>
           <source_obj>1</source_obj>
           <sink_obj>5</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_17">
-          <id>16</id>
+        <item class_id_reference="20" object_id="_16">
+          <id>17</id>
           <edge_type>1</edge_type>
-          <source_obj>2</source_obj>
-          <sink_obj>5</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_18">
-          <id>18</id>
-          <edge_type>1</edge_type>
-          <source_obj>17</source_obj>
+          <source_obj>16</source_obj>
           <sink_obj>6</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_19">
-          <id>19</id>
+        <item class_id_reference="20" object_id="_17">
+          <id>18</id>
           <edge_type>1</edge_type>
           <source_obj>1</source_obj>
           <sink_obj>6</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_20">
-          <id>20</id>
+        <item class_id_reference="20" object_id="_18">
+          <id>19</id>
           <edge_type>1</edge_type>
           <source_obj>4</source_obj>
           <sink_obj>6</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_21">
-          <id>21</id>
+        <item class_id_reference="20" object_id="_19">
+          <id>20</id>
           <edge_type>1</edge_type>
           <source_obj>4</source_obj>
           <sink_obj>7</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_22">
-          <id>23</id>
+        <item class_id_reference="20" object_id="_20">
+          <id>22</id>
           <edge_type>1</edge_type>
-          <source_obj>22</source_obj>
+          <source_obj>21</source_obj>
           <sink_obj>8</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_23">
-          <id>24</id>
+        <item class_id_reference="20" object_id="_21">
+          <id>23</id>
           <edge_type>1</edge_type>
           <source_obj>1</source_obj>
           <sink_obj>8</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_24">
-          <id>25</id>
+        <item class_id_reference="20" object_id="_22">
+          <id>24</id>
           <edge_type>1</edge_type>
           <source_obj>7</source_obj>
           <sink_obj>8</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_25">
+        <item class_id_reference="20" object_id="_23">
+          <id>25</id>
+          <edge_type>1</edge_type>
+          <source_obj>2</source_obj>
+          <sink_obj>6</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_24">
           <id>26</id>
           <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
-          <sink_obj>6</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_26">
-          <id>27</id>
-          <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
+          <source_obj>2</source_obj>
           <sink_obj>8</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_27">
-          <id>28</id>
-          <edge_type>4</edge_type>
-          <source_obj>6</source_obj>
-          <sink_obj>8</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_28">
-          <id>29</id>
-          <edge_type>4</edge_type>
-          <source_obj>5</source_obj>
-          <sink_obj>6</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_29">
+        <item class_id_reference="20" object_id="_25">
           <id>30</id>
           <edge_type>4</edge_type>
           <source_obj>6</source_obj>
-          <sink_obj>7</sink_obj>
+          <sink_obj>8</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_30">
+        <item class_id_reference="20" object_id="_26">
           <id>31</id>
           <edge_type>4</edge_type>
           <source_obj>5</source_obj>
           <sink_obj>6</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_31">
+        <item class_id_reference="20" object_id="_27">
           <id>32</id>
+          <edge_type>4</edge_type>
+          <source_obj>6</source_obj>
+          <sink_obj>7</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_28">
+          <id>33</id>
+          <edge_type>4</edge_type>
+          <source_obj>5</source_obj>
+          <sink_obj>6</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_29">
+          <id>34</id>
           <edge_type>4</edge_type>
           <source_obj>6</source_obj>
           <sink_obj>8</sink_obj>
@@ -668,7 +624,7 @@
     <cdfg_regions class_id="21" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="22" tracking_level="1" version="0" object_id="_32">
+      <item class_id="22" tracking_level="1" version="0" object_id="_30">
         <mId>1</mId>
         <mTag>fpadd503.8</mTag>
         <mNormTag>fpadd503_8</mNormTag>
@@ -686,97 +642,102 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>65</mMinLatency>
-        <mMaxLatency>65</mMaxLatency>
+        <mMinLatency>83</mMinLatency>
+        <mMaxLatency>83</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
     </cdfg_regions>
-    <fsm class_id="24" tracking_level="1" version="0" object_id="_33">
+    <fsm class_id="24" tracking_level="1" version="0" object_id="_31">
       <states class_id="25" tracking_level="0" version="0">
         <count>6</count>
         <item_version>0</item_version>
-        <item class_id="26" tracking_level="1" version="0" object_id="_34">
+        <item class_id="26" tracking_level="1" version="0" object_id="_32">
           <id>1</id>
           <operations class_id="27" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
-            <item class_id="28" tracking_level="1" version="0" object_id="_35">
+            <item class_id="28" tracking_level="1" version="0" object_id="_33">
               <id>4</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_36">
+            <item class_id_reference="28" object_id="_34">
               <id>5</id>
               <stage>2</stage>
+              <latency>2</latency>
+            </item>
+          </operations>
+        </item>
+        <item class_id_reference="26" object_id="_35">
+          <id>2</id>
+          <operations>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_36">
+              <id>5</id>
+              <stage>1</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
         <item class_id_reference="26" object_id="_37">
-          <id>2</id>
+          <id>3</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
             <item class_id_reference="28" object_id="_38">
-              <id>5</id>
-              <stage>1</stage>
+              <id>6</id>
+              <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
         <item class_id_reference="26" object_id="_39">
-          <id>3</id>
+          <id>4</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
             <item class_id_reference="28" object_id="_40">
               <id>6</id>
-              <stage>2</stage>
+              <stage>1</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
         <item class_id_reference="26" object_id="_41">
-          <id>4</id>
-          <operations>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_42">
-              <id>6</id>
-              <stage>1</stage>
-              <latency>2</latency>
-            </item>
-          </operations>
-        </item>
-        <item class_id_reference="26" object_id="_43">
           <id>5</id>
           <operations>
             <count>2</count>
             <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_44">
+            <item class_id_reference="28" object_id="_42">
               <id>7</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_45">
+            <item class_id_reference="28" object_id="_43">
               <id>8</id>
               <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_46">
+        <item class_id_reference="26" object_id="_44">
           <id>6</id>
           <operations>
-            <count>2</count>
+            <count>3</count>
             <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_47">
+            <item class_id_reference="28" object_id="_45">
+              <id>3</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_46">
               <id>8</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
-            <item class_id_reference="28" object_id="_48">
+            <item class_id_reference="28" object_id="_47">
               <id>9</id>
               <stage>1</stage>
               <latency>1</latency>
@@ -787,7 +748,7 @@
       <transitions class_id="29" tracking_level="0" version="0">
         <count>5</count>
         <item_version>0</item_version>
-        <item class_id="30" tracking_level="1" version="0" object_id="_49">
+        <item class_id="30" tracking_level="1" version="0" object_id="_48">
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="31" tracking_level="0" version="0">
@@ -802,7 +763,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="30" object_id="_50">
+        <item class_id_reference="30" object_id="_49">
           <inState>2</inState>
           <outState>3</outState>
           <condition>
@@ -817,7 +778,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="30" object_id="_51">
+        <item class_id_reference="30" object_id="_50">
           <inState>3</inState>
           <outState>4</outState>
           <condition>
@@ -832,7 +793,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="30" object_id="_52">
+        <item class_id_reference="30" object_id="_51">
           <inState>4</inState>
           <outState>5</outState>
           <condition>
@@ -847,7 +808,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="30" object_id="_53">
+        <item class_id_reference="30" object_id="_52">
           <inState>5</inState>
           <outState>6</outState>
           <condition>
@@ -864,7 +825,7 @@
         </item>
       </transitions>
     </fsm>
-    <res class_id="34" tracking_level="1" version="0" object_id="_54">
+    <res class_id="34" tracking_level="1" version="0" object_id="_53">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
         <count>3</count>
         <item_version>0</item_version>
@@ -875,16 +836,16 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>376</second>
+              <second>140</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>752</second>
+              <second>633</second>
             </item>
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26 (fpadd503_8_Pipeline_VITIS_LOOP_28_2)</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_24 (fpadd503_8_Pipeline_VITIS_LOOP_28_2)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -894,16 +855,16 @@
             </item>
             <item>
               <first>FF</first>
-              <second>377</second>
+              <second>268</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>771</second>
+              <second>652</second>
             </item>
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_35 (fpadd503_8_Pipeline_VITIS_LOOP_34_3)</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_33 (fpadd503_8_Pipeline_VITIS_LOOP_34_3)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -913,11 +874,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>504</second>
+              <second>332</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>826</second>
+              <second>707</second>
             </item>
           </second>
         </item>
@@ -938,7 +899,34 @@
         <count>5</count>
         <item_version>0</item_version>
         <item>
-          <first>R_Z_address0</first>
+          <first>ap_NS_fsm</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>37</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>coeff_address0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -948,11 +936,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>4</second>
+              <second>6</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>16</second>
+              <second>24</second>
             </item>
             <item>
               <first>FF</first>
@@ -965,7 +953,7 @@
           </second>
         </item>
         <item>
-          <first>R_Z_ce0</first>
+          <first>coeff_ce0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -992,7 +980,7 @@
           </second>
         </item>
         <item>
-          <first>R_Z_d0</first>
+          <first>coeff_d0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1019,7 +1007,7 @@
           </second>
         </item>
         <item>
-          <first>R_Z_we0</first>
+          <first>coeff_we0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1029,11 +1017,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>1</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>4</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
@@ -1042,33 +1030,6 @@
             <item>
               <first>LUT</first>
               <second>20</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>ap_NS_fsm</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>37</second>
             </item>
           </second>
         </item>
@@ -1115,7 +1076,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26_ap_start_reg</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_24_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1134,7 +1095,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_35_ap_start_reg</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_33_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1164,14 +1125,14 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_24</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_35</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_33</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -1190,7 +1151,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26 (fpadd503_8_Pipeline_VITIS_LOOP_28_2)</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_24 (fpadd503_8_Pipeline_VITIS_LOOP_28_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1198,7 +1159,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_35 (fpadd503_8_Pipeline_VITIS_LOOP_34_3)</first>
+          <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_33 (fpadd503_8_Pipeline_VITIS_LOOP_34_3)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1301,7 +1262,7 @@
         </second>
       </item>
       <item>
-        <first>26</first>
+        <first>24</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1310,7 +1271,7 @@
         </second>
       </item>
       <item>
-        <first>35</first>
+        <first>33</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1319,7 +1280,7 @@
         </second>
       </item>
       <item>
-        <first>44</first>
+        <first>42</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1331,7 +1292,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>carry_151_loc_fu_14</first>
+        <first>carry_157_loc_fu_14</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1352,7 +1313,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_26</first>
+        <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_28_2_fu_24</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1361,7 +1322,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_35</first>
+        <first>grp_fpadd503_8_Pipeline_VITIS_LOOP_34_3_fu_33</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1374,7 +1335,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>carry_151_loc_load_load_fu_44</first>
+        <first>carry_157_loc_load_load_fu_42</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1406,7 +1367,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>48</first>
+        <first>46</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1418,7 +1379,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>carry_151_loc_reg_48</first>
+        <first>carry_157_loc_reg_46</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1439,17 +1400,10 @@
       <item_version>0</item_version>
     </dp_port_io_nodes>
     <port2core>
-      <count>2</count>
+      <count>1</count>
       <item_version>0</item_version>
       <item>
         <first>1</first>
-        <second>
-          <first>666</first>
-          <second>136</second>
-        </second>
-      </item>
-      <item>
-        <first>2</first>
         <second>
           <first>666</first>
           <second>136</second>

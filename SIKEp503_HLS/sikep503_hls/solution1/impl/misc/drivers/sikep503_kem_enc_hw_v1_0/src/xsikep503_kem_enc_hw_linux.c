@@ -18,7 +18,7 @@
 
 /**************************** Type Definitions ******************************/
 typedef struct {
-    u32 addr;
+    u64 addr;
     u32 size;
 } XSikep503_kem_enc_hw_uio_map;
 
@@ -126,7 +126,7 @@ int XSikep503_kem_enc_hw_Initialize(XSikep503_kem_enc_hw *InstancePtr, const cha
     }
 
     // NOTE: slave interface 'Control' should be mapped to uioX/map0
-    InstancePtr->Control_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
+    InstancePtr->Control_BaseAddress = (u64)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
     assert(InstancePtr->Control_BaseAddress);
 
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;

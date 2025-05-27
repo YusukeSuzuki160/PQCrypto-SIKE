@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_11'
 ================================================================
-* Date:           Tue May 20 14:37:50 2025
+* Date:           Tue May 27 14:19:50 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -38,9 +38,9 @@
         |                                                |                                      |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                    Instance                    |                Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_40  |fpadd503_11_Pipeline_VITIS_LOOP_23_1  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_52  |fpadd503_11_Pipeline_VITIS_LOOP_28_2  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_62  |fpadd503_11_Pipeline_VITIS_LOOP_34_3  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_44  |fpadd503_11_Pipeline_VITIS_LOOP_23_1  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_55  |fpadd503_11_Pipeline_VITIS_LOOP_28_2  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_65  |fpadd503_11_Pipeline_VITIS_LOOP_34_3  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -58,16 +58,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       -|      -|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|     818|   1960|    -|
+|Instance         |        0|    -|     818|   1999|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|    157|    -|
-|Register         |        -|    -|       9|      -|    -|
+|Register         |        -|    -|      10|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     827|   2117|    0|
+|Total            |        0|    0|     828|   2156|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|      3|    0|
+|Utilization (%)  |        0|    0|      ~0|      4|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -75,11 +75,11 @@
     +------------------------------------------------+--------------------------------------+---------+----+-----+-----+-----+
     |                    Instance                    |                Module                | BRAM_18K| DSP|  FF | LUT | URAM|
     +------------------------------------------------+--------------------------------------+---------+----+-----+-----+-----+
-    |grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_40  |fpadd503_11_Pipeline_VITIS_LOOP_23_1  |        0|   0|  207|  640|    0|
-    |grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_52  |fpadd503_11_Pipeline_VITIS_LOOP_28_2  |        0|   0|  276|  620|    0|
-    |grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_62  |fpadd503_11_Pipeline_VITIS_LOOP_34_3  |        0|   0|  335|  700|    0|
+    |grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_44  |fpadd503_11_Pipeline_VITIS_LOOP_23_1  |        0|   0|  207|  653|    0|
+    |grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_55  |fpadd503_11_Pipeline_VITIS_LOOP_28_2  |        0|   0|  276|  633|    0|
+    |grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_65  |fpadd503_11_Pipeline_VITIS_LOOP_34_3  |        0|   0|  335|  713|    0|
     +------------------------------------------------+--------------------------------------+---------+----+-----+-----+-----+
-    |Total                                           |                                      |        0|   0|  818| 1960|    0|
+    |Total                                           |                                      |        0|   0|  818| 1999|    0|
     +------------------------------------------------+--------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -114,11 +114,12 @@
     |                             Name                            | FF| LUT| Bits| Const Bits|
     +-------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                    |  6|   0|    6|          0|
-    |grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_40_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_52_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_62_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_44_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_55_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_65_ap_start_reg  |  1|   0|    1|          0|
+    |tmp_reg_99                                                   |  1|   0|    4|          3|
     +-------------------------------------------------------------+---+----+-----+-----------+
-    |Total                                                        |  9|   0|    9|          0|
+    |Total                                                        | 10|   0|   13|          3|
     +-------------------------------------------------------------+---+----+-----+-----------+
 
 

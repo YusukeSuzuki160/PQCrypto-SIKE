@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_1'
 ================================================================
-* Date:           Tue May 20 14:37:32 2025
+* Date:           Tue May 27 14:19:31 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -38,14 +38,14 @@
         |                                                 |                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                     Instance                    |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64  |fp2_decode_1_Pipeline_VITIS_LOOP_51_1  |      130|      130|  1.300 us|  1.300 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2_decode_1_Pipeline_3_fu_70                |fp2_decode_1_Pipeline_3                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2_decode_1_Pipeline_4_fu_76                |fp2_decode_1_Pipeline_4                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82  |fp2_decode_1_Pipeline_VITIS_LOOP_53_2  |      137|      137|  1.370 us|  1.370 us|  128|  128|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_mp_mul_6_fu_92                               |mp_mul_6                               |      212|      310|  2.120 us|  3.100 us|  212|  310|                                              no|
-        |grp_rdc_mont_1_fu_101                            |rdc_mont_1                             |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
-        |grp_mp_mul_862_fu_110                            |mp_mul_862                             |      212|      310|  2.120 us|  3.100 us|  212|  310|                                              no|
-        |grp_rdc_mont_2_fu_121                            |rdc_mont_2                             |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
+        |grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66  |fp2_decode_1_Pipeline_VITIS_LOOP_53_1  |      130|      130|  1.300 us|  1.300 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2_decode_1_Pipeline_3_fu_72                |fp2_decode_1_Pipeline_3                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2_decode_1_Pipeline_4_fu_78                |fp2_decode_1_Pipeline_4                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84  |fp2_decode_1_Pipeline_VITIS_LOOP_55_2  |      137|      137|  1.370 us|  1.370 us|  128|  128|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_mp_mul_6_fu_94                               |mp_mul_6                               |      212|      310|  2.120 us|  3.100 us|  212|  310|                                              no|
+        |grp_rdc_mont_3_fu_103                            |rdc_mont_3                             |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
+        |grp_mp_mul_862_fu_112                            |mp_mul_862                             |      212|      310|  2.120 us|  3.100 us|  212|  310|                                              no|
+        |grp_rdc_mont_4_fu_123                            |rdc_mont_4                             |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -63,12 +63,12 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|      2|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|   48|   14636|  18630|    -|
+|Instance         |        0|   48|   14717|  18694|    -|
 |Memory           |        4|    -|       0|      0|    0|
 |Multiplexer      |        -|    -|       0|    370|    -|
 |Register         |        -|    -|      20|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        4|   48|   14656|  19002|    0|
+|Total            |        4|   48|   14737|  19066|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -80,16 +80,16 @@
     +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
     |                     Instance                    |                 Module                | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
-    |grp_fp2_decode_1_Pipeline_3_fu_70                |fp2_decode_1_Pipeline_3                |        0|   0|     7|    54|    0|
-    |grp_fp2_decode_1_Pipeline_4_fu_76                |fp2_decode_1_Pipeline_4                |        0|   0|     7|    54|    0|
-    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64  |fp2_decode_1_Pipeline_VITIS_LOOP_51_1  |        0|   0|    10|    82|    0|
-    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82  |fp2_decode_1_Pipeline_VITIS_LOOP_53_2  |        0|   0|   193|   686|    0|
-    |grp_mp_mul_6_fu_92                               |mp_mul_6                               |        0|   0|  2741|  3144|    0|
-    |grp_mp_mul_862_fu_110                            |mp_mul_862                             |        0|  16|  3331|  3514|    0|
-    |grp_rdc_mont_1_fu_101                            |rdc_mont_1                             |        0|  16|  4169|  5506|    0|
-    |grp_rdc_mont_2_fu_121                            |rdc_mont_2                             |        0|  16|  4178|  5590|    0|
+    |grp_fp2_decode_1_Pipeline_3_fu_72                |fp2_decode_1_Pipeline_3                |        0|   0|     7|    54|    0|
+    |grp_fp2_decode_1_Pipeline_4_fu_78                |fp2_decode_1_Pipeline_4                |        0|   0|     7|    54|    0|
+    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66  |fp2_decode_1_Pipeline_VITIS_LOOP_53_1  |        0|   0|    10|    82|    0|
+    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84  |fp2_decode_1_Pipeline_VITIS_LOOP_55_2  |        0|   0|   257|   750|    0|
+    |grp_mp_mul_6_fu_94                               |mp_mul_6                               |        0|   0|  2745|  3144|    0|
+    |grp_mp_mul_862_fu_112                            |mp_mul_862                             |        0|  16|  3335|  3514|    0|
+    |grp_rdc_mont_3_fu_103                            |rdc_mont_3                             |        0|  16|  4174|  5506|    0|
+    |grp_rdc_mont_4_fu_123                            |rdc_mont_4                             |        0|  16|  4182|  5590|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
-    |Total                                            |                                       |        0|  48| 14636| 18630|    0|
+    |Total                                            |                                       |        0|  48| 14717| 18694|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -127,10 +127,10 @@
     |PKB_d0               |  25|          5|   64|        320|
     |PKB_we0              |  25|          5|    8|         40|
     |ap_NS_fsm            |  65|         13|    1|         13|
-    |grp_fu_137_ce        |   9|          2|    1|          2|
-    |grp_fu_141_ce        |   9|          2|    1|          2|
-    |grp_fu_145_ce        |   9|          2|    1|          2|
-    |grp_fu_149_ce        |   9|          2|    1|          2|
+    |grp_fu_139_ce        |   9|          2|    1|          2|
+    |grp_fu_143_ce        |   9|          2|    1|          2|
+    |grp_fu_147_ce        |   9|          2|    1|          2|
+    |grp_fu_151_ce        |   9|          2|    1|          2|
     |temp_72_address0     |  20|          4|    4|         16|
     |temp_72_ce0          |  20|          4|    1|          4|
     |temp_72_d0           |  14|          3|   64|        192|
@@ -148,14 +148,14 @@
     |                             Name                             | FF | LUT| Bits| Const Bits|
     +--------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                     |  12|   0|   12|          0|
-    |grp_fp2_decode_1_Pipeline_3_fu_70_ap_start_reg                |   1|   0|    1|          0|
-    |grp_fp2_decode_1_Pipeline_4_fu_76_ap_start_reg                |   1|   0|    1|          0|
-    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64_ap_start_reg  |   1|   0|    1|          0|
-    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82_ap_start_reg  |   1|   0|    1|          0|
-    |grp_mp_mul_6_fu_92_ap_start_reg                               |   1|   0|    1|          0|
-    |grp_mp_mul_862_fu_110_ap_start_reg                            |   1|   0|    1|          0|
-    |grp_rdc_mont_1_fu_101_ap_start_reg                            |   1|   0|    1|          0|
-    |grp_rdc_mont_2_fu_121_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_fp2_decode_1_Pipeline_3_fu_72_ap_start_reg                |   1|   0|    1|          0|
+    |grp_fp2_decode_1_Pipeline_4_fu_78_ap_start_reg                |   1|   0|    1|          0|
+    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84_ap_start_reg  |   1|   0|    1|          0|
+    |grp_mp_mul_6_fu_94_ap_start_reg                               |   1|   0|    1|          0|
+    |grp_mp_mul_862_fu_112_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_rdc_mont_3_fu_103_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_rdc_mont_4_fu_123_ap_start_reg                            |   1|   0|    1|          0|
     +--------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                         |  20|   0|   20|          0|
     +--------------------------------------------------------------+----+----+-----+-----------+
@@ -175,69 +175,69 @@
 |ap_done                   |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |ap_idle                   |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |ap_ready                  |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1254_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1254_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1254_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1254_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1258_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1258_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1258_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1258_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1262_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1262_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1262_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1262_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1266_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1266_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1266_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1266_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|m_axi_gmem2_0_AWVALID     |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWREADY     |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWADDR      |  out|   32|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWID        |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWLEN       |  out|   32|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWSIZE      |  out|    3|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWBURST     |  out|    2|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWLOCK      |  out|    2|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWCACHE     |  out|    4|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWPROT      |  out|    3|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWQOS       |  out|    4|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWREGION    |  out|    4|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_AWUSER      |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_WVALID      |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_WREADY      |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_WDATA       |  out|    8|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_WSTRB       |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_WLAST       |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_WID         |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_WUSER       |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARVALID     |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARREADY     |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARADDR      |  out|   32|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARID        |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARLEN       |  out|   32|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARSIZE      |  out|    3|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARBURST     |  out|    2|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARLOCK      |  out|    2|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARCACHE     |  out|    4|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARPROT      |  out|    3|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARQOS       |  out|    4|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARREGION    |  out|    4|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_ARUSER      |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RVALID      |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RREADY      |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RDATA       |   in|    8|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RLAST       |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RID         |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RFIFONUM    |   in|   11|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RUSER       |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_RRESP       |   in|    2|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_BVALID      |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_BREADY      |  out|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_BRESP       |   in|    2|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_BID         |   in|    1|       m_axi|            gmem2|       pointer|
-|m_axi_gmem2_0_BUSER       |   in|    1|       m_axi|            gmem2|       pointer|
-|enc                       |   in|   32|     ap_none|              enc|        scalar|
+|grp_fu_1361_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1361_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1361_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1361_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1365_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1365_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1365_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1365_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1369_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1369_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1369_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1369_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1373_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1373_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1373_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1373_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|m_axi_gmem_0_AWVALID      |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWREADY      |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWADDR       |  out|   64|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWID         |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWLEN        |  out|   32|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWSIZE       |  out|    3|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWBURST      |  out|    2|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWLOCK       |  out|    2|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWCACHE      |  out|    4|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWPROT       |  out|    3|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWQOS        |  out|    4|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWREGION     |  out|    4|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_AWUSER       |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_WVALID       |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_WREADY       |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_WDATA        |  out|    8|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_WSTRB        |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_WLAST        |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_WID          |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_WUSER        |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARVALID      |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARREADY      |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARADDR       |  out|   64|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARID         |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARLEN        |  out|   32|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARSIZE       |  out|    3|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARBURST      |  out|    2|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARLOCK       |  out|    2|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARCACHE      |  out|    4|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARPROT       |  out|    3|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARQOS        |  out|    4|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARREGION     |  out|    4|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_ARUSER       |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RVALID       |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RREADY       |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RDATA        |   in|    8|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RLAST        |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RID          |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RFIFONUM     |   in|   11|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RUSER        |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_RRESP        |   in|    2|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_BVALID       |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_BREADY       |  out|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_BRESP        |   in|    2|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_BID          |   in|    1|       m_axi|             gmem|       pointer|
+|m_axi_gmem_0_BUSER        |   in|    1|       m_axi|             gmem|       pointer|
+|enc                       |   in|   64|     ap_none|              enc|        scalar|
 |PKB_address0              |  out|    6|   ap_memory|              PKB|         array|
 |PKB_ce0                   |  out|    1|   ap_memory|              PKB|         array|
 |PKB_we0                   |  out|    8|   ap_memory|              PKB|         array|
@@ -295,50 +295,50 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.25>
-ST_1 : Operation 13 [1/1] (3.25ns)   --->   "%temp = alloca i32 1" [src/fpx.c:60->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 13 'alloca' 'temp' <Predicate = true> <Delay = 3.25>
-ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%temp_72 = alloca i32 1" [src/fpx.c:60->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 14 'alloca' 'temp_72' <Predicate = true> <Delay = 3.25>
-ST_1 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_51_1, i64 %PKB"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 13 [1/1] (3.25ns)   --->   "%temp = alloca i64 1" [src/fpx.c:61->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 13 'alloca' 'temp' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%temp_72 = alloca i64 1" [src/fpx.c:61->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 14 'alloca' 'temp_72' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_53_1, i64 %PKB"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_3, i64 %temp_72"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_4, i64 %temp"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 5.09>
-ST_2 : Operation 18 [1/2] (5.09ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_51_1, i64 %PKB"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 5.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 18 [1/2] (5.09ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_53_1, i64 %PKB"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 5.09> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 19 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_3, i64 %temp_72"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 20 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_4, i64 %temp"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 2.55>
-ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%enc_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %enc"   --->   Operation 21 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 22 [2/2] (2.55ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_53_2, i32 %enc_read, i8 %gmem2, i64 %PKB"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 2.55> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 3.52>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%enc_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %enc"   --->   Operation 21 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [2/2] (3.52ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_55_2, i64 %enc_read, i8 %gmem, i64 %PKB"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 3.52> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_53_2, i32 %enc_read, i8 %gmem2, i64 %PKB"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_55_2, i64 %enc_read, i8 %gmem, i64 %PKB"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln62 = call void @mp_mul.6, i64 %PKB, i64 %temp_72, i64 %Montgomery_R2_1" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 24 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.6, i64 %PKB, i64 %temp_72, i64 %Montgomery_R2_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 24 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.73>
-ST_6 : Operation 25 [1/2] (1.73ns)   --->   "%call_ln62 = call void @mp_mul.6, i64 %PKB, i64 %temp_72, i64 %Montgomery_R2_1" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 25 'call' 'call_ln62' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 25 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.6, i64 %PKB, i64 %temp_72, i64 %Montgomery_R2_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 25 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln63 = call void @rdc_mont.1, i64 %temp_72, i64 %PKB, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 26 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.3, i64 %temp_72, i64 %PKB, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 26 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln63 = call void @rdc_mont.1, i64 %temp_72, i64 %PKB, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:331->src/sidh.c:58]   --->   Operation 27 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.3, i64 %temp_72, i64 %PKB, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 27 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln62 = call void @mp_mul.862, i64 %PKB, i9 64, i64 %Montgomery_R2_1, i64 %temp" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 28 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.862, i64 %PKB, i9 64, i64 %Montgomery_R2_1, i64 %temp" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 28 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 1.73>
-ST_10 : Operation 29 [1/2] (1.73ns)   --->   "%call_ln62 = call void @mp_mul.862, i64 %PKB, i9 64, i64 %Montgomery_R2_1, i64 %temp" [src/fpx.c:62->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 29 'call' 'call_ln62' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 29 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.862, i64 %PKB, i9 64, i64 %Montgomery_R2_1, i64 %temp" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 29 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 5.07>
-ST_11 : Operation 30 [2/2] (5.07ns)   --->   "%call_ln63 = call void @rdc_mont.2, i64 %temp, i64 %PKB, i9 64, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 30 'call' 'call_ln63' <Predicate = true> <Delay = 5.07> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 30 [2/2] (5.07ns)   --->   "%call_ln64 = call void @rdc_mont.4, i64 %temp, i64 %PKB, i9 64, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 30 'call' 'call_ln64' <Predicate = true> <Delay = 5.07> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem2, void @empty_88, i32 0, i32 0, void @empty_44, i32 0, i32 0, void @empty_73, void @empty_58, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 32 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 32 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 33 [1/2] (0.00ns)   --->   "%call_ln63 = call void @rdc_mont.2, i64 %temp, i64 %PKB, i9 64, i64 %p503p1_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:58]   --->   Operation 33 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_12 : Operation 34 [1/1] (0.00ns)   --->   "%ret_ln59 = ret" [src/sidh.c:59]   --->   Operation 34 'ret' 'ret_ln59' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 33 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.4, i64 %temp, i64 %PKB, i9 64, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 33 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 34 [1/1] (0.00ns)   --->   "%ret_ln61 = ret" [src/sidh.c:61]   --->   Operation 34 'ret' 'ret_ln61' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -352,7 +352,7 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ gmem2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; pingpong=0; private_global=0; IO mode=m_axi:ce=0
+Port [ gmem]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; pingpong=0; private_global=0; IO mode=m_axi:ce=0
 Port [ enc]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ PKB]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
 Port [ Montgomery_R2_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
@@ -370,24 +370,24 @@ call_ln0                   (call                  ) [ 0000000000000]
 call_ln0                   (call                  ) [ 0000000000000]
 enc_read                   (read                  ) [ 0000100000000]
 call_ln0                   (call                  ) [ 0000000000000]
-call_ln62                  (call                  ) [ 0000000000000]
 call_ln63                  (call                  ) [ 0000000000000]
-call_ln62                  (call                  ) [ 0000000000000]
+call_ln64                  (call                  ) [ 0000000000000]
+call_ln63                  (call                  ) [ 0000000000000]
 specinterface_ln0          (specinterface         ) [ 0000000000000]
 specbramwithbyteenable_ln0 (specbramwithbyteenable) [ 0000000000000]
-call_ln63                  (call                  ) [ 0000000000000]
-ret_ln59                   (ret                   ) [ 0000000000000]
+call_ln64                  (call                  ) [ 0000000000000]
+ret_ln61                   (ret                   ) [ 0000000000000]
 </LifeTime>
 
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="gmem2">
+<comp id="0" class="1000" name="gmem">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="gmem2"/><MemPortTyVec>0 </MemPortTyVec>
+<StgValue><ssdm name="gmem"/><MemPortTyVec>0 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -445,7 +445,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2_decode.1_Pipeline_VITIS_LOOP_51_1"/></StgValue>
+<StgValue><ssdm name="fp2_decode.1_Pipeline_VITIS_LOOP_53_1"/></StgValue>
 </bind>
 </comp>
 
@@ -472,7 +472,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="19" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i64"/></StgValue>
 </bind>
 </comp>
 
@@ -481,7 +481,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="21" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2_decode.1_Pipeline_VITIS_LOOP_53_2"/></StgValue>
+<StgValue><ssdm name="fp2_decode.1_Pipeline_VITIS_LOOP_55_2"/></StgValue>
 </bind>
 </comp>
 
@@ -499,7 +499,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="25" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="rdc_mont.1"/></StgValue>
+<StgValue><ssdm name="rdc_mont.3"/></StgValue>
 </bind>
 </comp>
 
@@ -526,7 +526,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="31" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="rdc_mont.2"/></StgValue>
+<StgValue><ssdm name="rdc_mont.4"/></StgValue>
 </bind>
 </comp>
 
@@ -544,7 +544,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_88"/></StgValue>
+<StgValue><ssdm name="empty_86"/></StgValue>
 </bind>
 </comp>
 
@@ -571,7 +571,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -589,7 +589,7 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty_28"/></StgValue>
 </bind>
 </comp>
 
@@ -607,14 +607,23 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
 <StgValue><ssdm name="_ssdm_op_SpecBRAMWithByteEnable"/></StgValue>
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="temp_alloca_fu_50">
+<comp id="52" class="1004" name="temp_alloca_fu_52">
 <pin_list>
-<pin id="51" dir="0" index="0" bw="1" slack="0"/>
-<pin id="52" dir="1" index="1" bw="64" slack="0"/>
+<pin id="53" dir="0" index="0" bw="1" slack="0"/>
+<pin id="54" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -622,10 +631,10 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="54" class="1004" name="temp_72_alloca_fu_54">
+<comp id="56" class="1004" name="temp_72_alloca_fu_56">
 <pin_list>
-<pin id="55" dir="0" index="0" bw="1" slack="0"/>
-<pin id="56" dir="1" index="1" bw="64" slack="0"/>
+<pin id="57" dir="0" index="0" bw="1" slack="0"/>
+<pin id="58" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -633,11 +642,11 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="58" class="1004" name="enc_read_read_fu_58">
+<comp id="60" class="1004" name="enc_read_read_fu_60">
 <pin_list>
-<pin id="59" dir="0" index="0" bw="32" slack="0"/>
-<pin id="60" dir="0" index="1" bw="32" slack="0"/>
-<pin id="61" dir="1" index="2" bw="32" slack="0"/>
+<pin id="61" dir="0" index="0" bw="64" slack="0"/>
+<pin id="62" dir="0" index="1" bw="64" slack="0"/>
+<pin id="63" dir="1" index="2" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -645,11 +654,11 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="64" class="1004" name="grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64">
+<comp id="66" class="1004" name="grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66">
 <pin_list>
-<pin id="65" dir="0" index="0" bw="0" slack="0"/>
-<pin id="66" dir="0" index="1" bw="64" slack="0"/>
-<pin id="67" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="67" dir="0" index="0" bw="0" slack="0"/>
+<pin id="68" dir="0" index="1" bw="64" slack="0"/>
+<pin id="69" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -657,11 +666,11 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="70" class="1004" name="grp_fp2_decode_1_Pipeline_3_fu_70">
+<comp id="72" class="1004" name="grp_fp2_decode_1_Pipeline_3_fu_72">
 <pin_list>
-<pin id="71" dir="0" index="0" bw="0" slack="0"/>
-<pin id="72" dir="0" index="1" bw="64" slack="0"/>
-<pin id="73" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="73" dir="0" index="0" bw="0" slack="0"/>
+<pin id="74" dir="0" index="1" bw="64" slack="0"/>
+<pin id="75" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -669,11 +678,11 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="76" class="1004" name="grp_fp2_decode_1_Pipeline_4_fu_76">
+<comp id="78" class="1004" name="grp_fp2_decode_1_Pipeline_4_fu_78">
 <pin_list>
-<pin id="77" dir="0" index="0" bw="0" slack="0"/>
-<pin id="78" dir="0" index="1" bw="64" slack="0"/>
-<pin id="79" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="79" dir="0" index="0" bw="0" slack="0"/>
+<pin id="80" dir="0" index="1" bw="64" slack="0"/>
+<pin id="81" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -681,13 +690,13 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="82" class="1004" name="grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82">
+<comp id="84" class="1004" name="grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84">
 <pin_list>
-<pin id="83" dir="0" index="0" bw="0" slack="0"/>
-<pin id="84" dir="0" index="1" bw="32" slack="0"/>
-<pin id="85" dir="0" index="2" bw="8" slack="0"/>
-<pin id="86" dir="0" index="3" bw="64" slack="0"/>
-<pin id="87" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="85" dir="0" index="0" bw="0" slack="0"/>
+<pin id="86" dir="0" index="1" bw="64" slack="0"/>
+<pin id="87" dir="0" index="2" bw="8" slack="0"/>
+<pin id="88" dir="0" index="3" bw="64" slack="0"/>
+<pin id="89" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -695,79 +704,79 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="92" class="1004" name="grp_mp_mul_6_fu_92">
+<comp id="94" class="1004" name="grp_mp_mul_6_fu_94">
 <pin_list>
-<pin id="93" dir="0" index="0" bw="0" slack="0"/>
-<pin id="94" dir="0" index="1" bw="64" slack="0"/>
-<pin id="95" dir="0" index="2" bw="64" slack="2147483647"/>
-<pin id="96" dir="0" index="3" bw="64" slack="0"/>
-<pin id="97" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="95" dir="0" index="0" bw="0" slack="0"/>
+<pin id="96" dir="0" index="1" bw="64" slack="0"/>
+<pin id="97" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="98" dir="0" index="3" bw="64" slack="0"/>
+<pin id="99" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln62/5 "/>
+<opset="call_ln63/5 "/>
 </bind>
 </comp>
 
-<comp id="101" class="1004" name="grp_rdc_mont_1_fu_101">
+<comp id="103" class="1004" name="grp_rdc_mont_3_fu_103">
 <pin_list>
-<pin id="102" dir="0" index="0" bw="0" slack="0"/>
-<pin id="103" dir="0" index="1" bw="64" slack="2147483647"/>
-<pin id="104" dir="0" index="2" bw="64" slack="0"/>
-<pin id="105" dir="0" index="3" bw="64" slack="0"/>
-<pin id="106" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="104" dir="0" index="0" bw="0" slack="0"/>
+<pin id="105" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="106" dir="0" index="2" bw="64" slack="0"/>
+<pin id="107" dir="0" index="3" bw="64" slack="0"/>
+<pin id="108" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln63/7 "/>
+<opset="call_ln64/7 "/>
 </bind>
 </comp>
 
-<comp id="110" class="1004" name="grp_mp_mul_862_fu_110">
+<comp id="112" class="1004" name="grp_mp_mul_862_fu_112">
 <pin_list>
-<pin id="111" dir="0" index="0" bw="0" slack="0"/>
-<pin id="112" dir="0" index="1" bw="64" slack="0"/>
-<pin id="113" dir="0" index="2" bw="8" slack="0"/>
-<pin id="114" dir="0" index="3" bw="64" slack="0"/>
-<pin id="115" dir="0" index="4" bw="64" slack="2147483647"/>
-<pin id="116" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="113" dir="0" index="0" bw="0" slack="0"/>
+<pin id="114" dir="0" index="1" bw="64" slack="0"/>
+<pin id="115" dir="0" index="2" bw="8" slack="0"/>
+<pin id="116" dir="0" index="3" bw="64" slack="0"/>
+<pin id="117" dir="0" index="4" bw="64" slack="2147483647"/>
+<pin id="118" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln62/9 "/>
+<opset="call_ln63/9 "/>
 </bind>
 </comp>
 
-<comp id="121" class="1004" name="grp_rdc_mont_2_fu_121">
+<comp id="123" class="1004" name="grp_rdc_mont_4_fu_123">
 <pin_list>
-<pin id="122" dir="0" index="0" bw="0" slack="0"/>
-<pin id="123" dir="0" index="1" bw="64" slack="2147483647"/>
-<pin id="124" dir="0" index="2" bw="64" slack="0"/>
-<pin id="125" dir="0" index="3" bw="8" slack="0"/>
-<pin id="126" dir="0" index="4" bw="64" slack="0"/>
-<pin id="127" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="124" dir="0" index="0" bw="0" slack="0"/>
+<pin id="125" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="126" dir="0" index="2" bw="64" slack="0"/>
+<pin id="127" dir="0" index="3" bw="8" slack="0"/>
+<pin id="128" dir="0" index="4" bw="64" slack="0"/>
+<pin id="129" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln63/11 "/>
+<opset="call_ln64/11 "/>
 </bind>
 </comp>
 
-<comp id="132" class="1005" name="enc_read_reg_132">
+<comp id="134" class="1005" name="enc_read_reg_134">
 <pin_list>
-<pin id="133" dir="0" index="0" bw="32" slack="1"/>
-<pin id="134" dir="1" index="1" bw="32" slack="1"/>
+<pin id="135" dir="0" index="0" bw="64" slack="1"/>
+<pin id="136" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
 <opset="enc_read "/>
 </bind>
 </comp>
 
-<comp id="137" class="1004" name="grp_fu_137">
+<comp id="139" class="1004" name="grp_fu_139">
 <pin_list>
-<pin id="138" dir="0" index="0" bw="32" slack="2147483647"/>
-<pin id="139" dir="0" index="1" bw="32" slack="2147483647"/>
-<pin id="140" dir="1" index="2" bw="64" slack="2147483647"/>
+<pin id="140" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="141" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="142" dir="1" index="2" bw="64" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
@@ -775,11 +784,11 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="141" class="1004" name="grp_fu_141">
+<comp id="143" class="1004" name="grp_fu_143">
 <pin_list>
-<pin id="142" dir="0" index="0" bw="32" slack="2147483647"/>
-<pin id="143" dir="0" index="1" bw="32" slack="2147483647"/>
-<pin id="144" dir="1" index="2" bw="64" slack="2147483647"/>
+<pin id="144" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="145" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="146" dir="1" index="2" bw="64" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
@@ -787,11 +796,11 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="145" class="1004" name="grp_fu_145">
+<comp id="147" class="1004" name="grp_fu_147">
 <pin_list>
-<pin id="146" dir="0" index="0" bw="32" slack="2147483647"/>
-<pin id="147" dir="0" index="1" bw="32" slack="2147483647"/>
-<pin id="148" dir="1" index="2" bw="64" slack="2147483647"/>
+<pin id="148" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="149" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="150" dir="1" index="2" bw="64" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
@@ -799,11 +808,11 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="149" class="1004" name="grp_fu_149">
+<comp id="151" class="1004" name="grp_fu_151">
 <pin_list>
-<pin id="150" dir="0" index="0" bw="32" slack="2147483647"/>
-<pin id="151" dir="0" index="1" bw="32" slack="2147483647"/>
-<pin id="152" dir="1" index="2" bw="64" slack="2147483647"/>
+<pin id="152" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="153" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="154" dir="1" index="2" bw="64" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
@@ -814,65 +823,65 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 </comp_list>
 
 <net_list>
-<net id="53"><net_src comp="10" pin="0"/><net_sink comp="50" pin=0"/></net>
+<net id="55"><net_src comp="10" pin="0"/><net_sink comp="52" pin=0"/></net>
 
-<net id="57"><net_src comp="10" pin="0"/><net_sink comp="54" pin=0"/></net>
+<net id="59"><net_src comp="10" pin="0"/><net_sink comp="56" pin=0"/></net>
 
-<net id="62"><net_src comp="18" pin="0"/><net_sink comp="58" pin=0"/></net>
+<net id="64"><net_src comp="18" pin="0"/><net_sink comp="60" pin=0"/></net>
 
-<net id="63"><net_src comp="2" pin="0"/><net_sink comp="58" pin=1"/></net>
+<net id="65"><net_src comp="2" pin="0"/><net_sink comp="60" pin=1"/></net>
 
-<net id="68"><net_src comp="12" pin="0"/><net_sink comp="64" pin=0"/></net>
+<net id="70"><net_src comp="12" pin="0"/><net_sink comp="66" pin=0"/></net>
 
-<net id="69"><net_src comp="4" pin="0"/><net_sink comp="64" pin=1"/></net>
+<net id="71"><net_src comp="4" pin="0"/><net_sink comp="66" pin=1"/></net>
 
-<net id="74"><net_src comp="14" pin="0"/><net_sink comp="70" pin=0"/></net>
+<net id="76"><net_src comp="14" pin="0"/><net_sink comp="72" pin=0"/></net>
 
-<net id="75"><net_src comp="54" pin="1"/><net_sink comp="70" pin=1"/></net>
+<net id="77"><net_src comp="56" pin="1"/><net_sink comp="72" pin=1"/></net>
 
-<net id="80"><net_src comp="16" pin="0"/><net_sink comp="76" pin=0"/></net>
+<net id="82"><net_src comp="16" pin="0"/><net_sink comp="78" pin=0"/></net>
 
-<net id="81"><net_src comp="50" pin="1"/><net_sink comp="76" pin=1"/></net>
+<net id="83"><net_src comp="52" pin="1"/><net_sink comp="78" pin=1"/></net>
 
-<net id="88"><net_src comp="20" pin="0"/><net_sink comp="82" pin=0"/></net>
+<net id="90"><net_src comp="20" pin="0"/><net_sink comp="84" pin=0"/></net>
 
-<net id="89"><net_src comp="58" pin="2"/><net_sink comp="82" pin=1"/></net>
+<net id="91"><net_src comp="60" pin="2"/><net_sink comp="84" pin=1"/></net>
 
-<net id="90"><net_src comp="0" pin="0"/><net_sink comp="82" pin=2"/></net>
+<net id="92"><net_src comp="0" pin="0"/><net_sink comp="84" pin=2"/></net>
 
-<net id="91"><net_src comp="4" pin="0"/><net_sink comp="82" pin=3"/></net>
+<net id="93"><net_src comp="4" pin="0"/><net_sink comp="84" pin=3"/></net>
 
-<net id="98"><net_src comp="22" pin="0"/><net_sink comp="92" pin=0"/></net>
+<net id="100"><net_src comp="22" pin="0"/><net_sink comp="94" pin=0"/></net>
 
-<net id="99"><net_src comp="4" pin="0"/><net_sink comp="92" pin=1"/></net>
+<net id="101"><net_src comp="4" pin="0"/><net_sink comp="94" pin=1"/></net>
 
-<net id="100"><net_src comp="6" pin="0"/><net_sink comp="92" pin=3"/></net>
+<net id="102"><net_src comp="6" pin="0"/><net_sink comp="94" pin=3"/></net>
 
-<net id="107"><net_src comp="24" pin="0"/><net_sink comp="101" pin=0"/></net>
+<net id="109"><net_src comp="24" pin="0"/><net_sink comp="103" pin=0"/></net>
 
-<net id="108"><net_src comp="4" pin="0"/><net_sink comp="101" pin=2"/></net>
+<net id="110"><net_src comp="4" pin="0"/><net_sink comp="103" pin=2"/></net>
 
-<net id="109"><net_src comp="8" pin="0"/><net_sink comp="101" pin=3"/></net>
+<net id="111"><net_src comp="8" pin="0"/><net_sink comp="103" pin=3"/></net>
 
-<net id="117"><net_src comp="26" pin="0"/><net_sink comp="110" pin=0"/></net>
+<net id="119"><net_src comp="26" pin="0"/><net_sink comp="112" pin=0"/></net>
 
-<net id="118"><net_src comp="4" pin="0"/><net_sink comp="110" pin=1"/></net>
+<net id="120"><net_src comp="4" pin="0"/><net_sink comp="112" pin=1"/></net>
 
-<net id="119"><net_src comp="28" pin="0"/><net_sink comp="110" pin=2"/></net>
+<net id="121"><net_src comp="28" pin="0"/><net_sink comp="112" pin=2"/></net>
 
-<net id="120"><net_src comp="6" pin="0"/><net_sink comp="110" pin=3"/></net>
+<net id="122"><net_src comp="6" pin="0"/><net_sink comp="112" pin=3"/></net>
 
-<net id="128"><net_src comp="30" pin="0"/><net_sink comp="121" pin=0"/></net>
+<net id="130"><net_src comp="30" pin="0"/><net_sink comp="123" pin=0"/></net>
 
-<net id="129"><net_src comp="4" pin="0"/><net_sink comp="121" pin=2"/></net>
+<net id="131"><net_src comp="4" pin="0"/><net_sink comp="123" pin=2"/></net>
 
-<net id="130"><net_src comp="28" pin="0"/><net_sink comp="121" pin=3"/></net>
+<net id="132"><net_src comp="28" pin="0"/><net_sink comp="123" pin=3"/></net>
 
-<net id="131"><net_src comp="8" pin="0"/><net_sink comp="121" pin=4"/></net>
+<net id="133"><net_src comp="8" pin="0"/><net_sink comp="123" pin=4"/></net>
 
-<net id="135"><net_src comp="58" pin="2"/><net_sink comp="132" pin=0"/></net>
+<net id="137"><net_src comp="60" pin="2"/><net_sink comp="134" pin=0"/></net>
 
-<net id="136"><net_src comp="132" pin="1"/><net_sink comp="82" pin=1"/></net>
+<net id="138"><net_src comp="134" pin="1"/><net_sink comp="84" pin=1"/></net>
 
 </net_list>
 
@@ -881,12 +890,12 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: gmem2 | {}
+	Port: gmem | {}
 	Port: PKB | {1 2 3 4 7 8 11 12 }
 	Port: Montgomery_R2_1 | {}
 	Port: p503p1_1 | {}
  - Input state : 
-	Port: fp2_decode.1 : gmem2 | {3 4 }
+	Port: fp2_decode.1 : gmem | {3 4 }
 	Port: fp2_decode.1 : enc | {3 }
 	Port: fp2_decode.1 : PKB | {5 6 7 8 9 10 11 12 }
 	Port: fp2_decode.1 : Montgomery_R2_1 | {5 6 9 10 }
@@ -916,23 +925,23 @@ ret_ln59                   (ret                   ) [ 0000000000000]
 |----------|-------------------------------------------------|---------|---------|---------|---------|
 | Operation|                 Functional Unit                 |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|-------------------------------------------------|---------|---------|---------|---------|
-|          | grp_fp2_decode_1_Pipeline_VITIS_LOOP_51_1_fu_64 |    0    |    0    |    8    |    37   |
-|          |        grp_fp2_decode_1_Pipeline_3_fu_70        |    0    |    0    |    5    |    26   |
-|          |        grp_fp2_decode_1_Pipeline_4_fu_76        |    0    |    0    |    5    |    26   |
-|   call   | grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82 |    0    |  3.176  |   120   |   179   |
-|          |                grp_mp_mul_6_fu_92               |    48   | 39.9386 |   4569  |   3257  |
-|          |              grp_rdc_mont_1_fu_101              |    48   | 45.0605 |   5298  |   5169  |
-|          |              grp_mp_mul_862_fu_110              |    48   | 39.9386 |   4508  |   3413  |
-|          |              grp_rdc_mont_2_fu_121              |    48   | 48.2365 |   5287  |   5271  |
+|          | grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66 |    0    |    0    |    8    |    37   |
+|          |        grp_fp2_decode_1_Pipeline_3_fu_72        |    0    |    0    |    5    |    26   |
+|          |        grp_fp2_decode_1_Pipeline_4_fu_78        |    0    |    0    |    5    |    26   |
+|   call   | grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84 |    0    |  3.176  |   120   |   243   |
+|          |                grp_mp_mul_6_fu_94               |    48   | 41.5266 |   4573  |   3266  |
+|          |              grp_rdc_mont_3_fu_103              |    48   | 45.0605 |   5334  |   5169  |
+|          |              grp_mp_mul_862_fu_112              |    48   | 41.5266 |   4512  |   3422  |
+|          |              grp_rdc_mont_4_fu_123              |    48   | 48.2365 |   5291  |   5271  |
 |----------|-------------------------------------------------|---------|---------|---------|---------|
-|          |                    grp_fu_137                   |    4    |    0    |   165   |    50   |
-|    mul   |                    grp_fu_141                   |    4    |    0    |   165   |    50   |
-|          |                    grp_fu_145                   |    4    |    0    |   165   |    50   |
-|          |                    grp_fu_149                   |    4    |    0    |   165   |    50   |
+|          |                    grp_fu_139                   |    4    |    0    |   165   |    50   |
+|    mul   |                    grp_fu_143                   |    4    |    0    |   165   |    50   |
+|          |                    grp_fu_147                   |    4    |    0    |   165   |    50   |
+|          |                    grp_fu_151                   |    4    |    0    |   165   |    50   |
 |----------|-------------------------------------------------|---------|---------|---------|---------|
-|   read   |               enc_read_read_fu_58               |    0    |    0    |    0    |    0    |
+|   read   |               enc_read_read_fu_60               |    0    |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                 |   208   |  176.35 |  20460  |  17578  |
+|   Total  |                                                 |   208   | 179.526 |  20508  |  17660  |
 |----------|-------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -949,18 +958,18 @@ Memories:
 +----------------+--------+
 |                |   FF   |
 +----------------+--------+
-|enc_read_reg_132|   32   |
+|enc_read_reg_134|   64   |
 +----------------+--------+
-|      Total     |   32   |
+|      Total     |   64   |
 +----------------+--------+
 
 * Multiplexer (MUX) list: 
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 |                       Comp                      |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
-| grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_2_fu_82 |  p1  |   2  |  32  |   64   ||    0    ||    9    |
+| grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84 |  p1  |   2  |  64  |   128  ||    0    ||    9    |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|                      Total                      |      |      |      |   64   ||  1.588  ||    0    ||    9    |
+|                      Total                      |      |      |      |   128  ||  1.588  ||    0    ||    9    |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -969,10 +978,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |   208  |   176  |  20460 |  17578 |    -   |
+|  Function |    -   |   208  |   179  |  20508 |  17660 |    -   |
 |   Memory  |    4   |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    1   |    0   |    9   |    -   |
-|  Register |    -   |    -   |    -   |   32   |    -   |    -   |
+|  Register |    -   |    -   |    -   |   64   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    4   |   208  |   177  |  20492 |  17587 |    0   |
+|   Total   |    4   |   208  |   181  |  20572 |  17669 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

@@ -22,22 +22,22 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>26</Best-caseLatency>
-<Average-caseLatency>26</Average-caseLatency>
-<Worst-caseLatency>26</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.260 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.260 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.260 us</Worst-caseRealTimeLatency>
-<Interval-min>25</Interval-min>
-<Interval-max>25</Interval-max>
+<Best-caseLatency>11</Best-caseLatency>
+<Average-caseLatency>11</Average-caseLatency>
+<Worst-caseLatency>11</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+<Interval-min>9</Interval-min>
+<Interval-max>9</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_28_2>
 <Slack>7.30</Slack>
 <TripCount>8</TripCount>
-<Latency>24</Latency>
-<AbsoluteTimeLatency>240</AbsoluteTimeLatency>
-<PipelineII>3</PipelineII>
+<Latency>9</Latency>
+<AbsoluteTimeLatency>90</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <InstanceList>
 </InstanceList>
@@ -50,10 +50,9 @@
 <SummaryOfLoopViolations>
 <VITIS_LOOP_28_2>
 <Name>VITIS_LOOP_28_2</Name>
-<IssueType>II Violation</IssueType>
-<ViolationType>Memory Dependency</ViolationType>
-<IterationDistance>1</IterationDistance>
-<SourceLocation>src/generic/fp_generic.c:29</SourceLocation>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>src/generic/fp_generic.c:28</SourceLocation>
 </VITIS_LOOP_28_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -62,8 +61,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>268</FF>
-<LUT>652</LUT>
+<FF>276</FF>
+<LUT>620</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
@@ -144,19 +143,19 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>coeff_address0</name>
-<Object>coeff</Object>
+<name>c_address0</name>
+<Object>c</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>6</Bits>
+<Bits>4</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>coeff_ce0</name>
-<Object>coeff</Object>
+<name>c_ce0</name>
+<Object>c</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -166,19 +165,19 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>coeff_we0</name>
-<Object>coeff</Object>
+<name>c_we0</name>
+<Object>c</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>coeff_d0</name>
-<Object>coeff</Object>
+<name>c_d0</name>
+<Object>c</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -188,8 +187,30 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>coeff_q0</name>
-<Object>coeff</Object>
+<name>c_address1</name>
+<Object>c</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>4</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>c_ce1</name>
+<Object>c</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>c_q1</name>
+<Object>c</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

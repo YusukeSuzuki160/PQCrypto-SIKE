@@ -17,16 +17,16 @@ set cdfgNum 712
 set C_modelName {fpadd503.7_Pipeline_VITIS_LOOP_28_2}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict R_Z { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict coeff { MEM_WIDTH 64 MEM_SIZE 384 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ R_Z int 64 regular {array 16 { 0 1 } 1 1 }  }
+	{ coeff int 64 regular {array 48 { 0 1 } 1 1 }  }
 	{ carry_160_out int 1 regular {pointer 1}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "R_Z", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
+	{ "Name" : "coeff", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
  	{ "Name" : "carry_160_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 15
@@ -37,13 +37,13 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ R_Z_address0 sc_out sc_lv 4 signal 0 } 
-	{ R_Z_ce0 sc_out sc_logic 1 signal 0 } 
-	{ R_Z_we0 sc_out sc_logic 1 signal 0 } 
-	{ R_Z_d0 sc_out sc_lv 64 signal 0 } 
-	{ R_Z_address1 sc_out sc_lv 4 signal 0 } 
-	{ R_Z_ce1 sc_out sc_logic 1 signal 0 } 
-	{ R_Z_q1 sc_in sc_lv 64 signal 0 } 
+	{ coeff_address0 sc_out sc_lv 6 signal 0 } 
+	{ coeff_ce0 sc_out sc_logic 1 signal 0 } 
+	{ coeff_we0 sc_out sc_lv 8 signal 0 } 
+	{ coeff_d0 sc_out sc_lv 64 signal 0 } 
+	{ coeff_address1 sc_out sc_lv 6 signal 0 } 
+	{ coeff_ce1 sc_out sc_logic 1 signal 0 } 
+	{ coeff_q1 sc_in sc_lv 64 signal 0 } 
 	{ carry_160_out sc_out sc_lv 1 signal 1 } 
 	{ carry_160_out_ap_vld sc_out sc_logic 1 outvld 1 } 
 }
@@ -54,13 +54,13 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "R_Z_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "R_Z", "role": "address0" }} , 
- 	{ "name": "R_Z_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "R_Z", "role": "ce0" }} , 
- 	{ "name": "R_Z_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "R_Z", "role": "we0" }} , 
- 	{ "name": "R_Z_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "R_Z", "role": "d0" }} , 
- 	{ "name": "R_Z_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "R_Z", "role": "address1" }} , 
- 	{ "name": "R_Z_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "R_Z", "role": "ce1" }} , 
- 	{ "name": "R_Z_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "R_Z", "role": "q1" }} , 
+ 	{ "name": "coeff_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "coeff", "role": "address0" }} , 
+ 	{ "name": "coeff_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "coeff", "role": "ce0" }} , 
+ 	{ "name": "coeff_we0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "coeff", "role": "we0" }} , 
+ 	{ "name": "coeff_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "coeff", "role": "d0" }} , 
+ 	{ "name": "coeff_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "coeff", "role": "address1" }} , 
+ 	{ "name": "coeff_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "coeff", "role": "ce1" }} , 
+ 	{ "name": "coeff_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "coeff", "role": "q1" }} , 
  	{ "name": "carry_160_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "carry_160_out", "role": "default" }} , 
  	{ "name": "carry_160_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "carry_160_out", "role": "ap_vld" }}  ]}
 
@@ -80,7 +80,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "R_Z", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "coeff", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "carry_160_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "p503x2_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
@@ -92,7 +92,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	fpadd503_7_Pipeline_VITIS_LOOP_28_2 {
-		R_Z {Type IO LastRead 0 FirstWrite 2}
+		coeff {Type IO LastRead 0 FirstWrite 2}
 		carry_160_out {Type O LastRead -1 FirstWrite 1}
 		p503x2_1 {Type I LastRead -1 FirstWrite -1}}}
 
@@ -108,6 +108,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	R_Z { ap_memory {  { R_Z_address0 mem_address 1 4 }  { R_Z_ce0 mem_ce 1 1 }  { R_Z_we0 mem_we 1 1 }  { R_Z_d0 mem_din 1 64 }  { R_Z_address1 MemPortADDR2 1 4 }  { R_Z_ce1 MemPortCE2 1 1 }  { R_Z_q1 MemPortDOUT2 0 64 } } }
+	coeff { ap_memory {  { coeff_address0 mem_address 1 6 }  { coeff_ce0 mem_ce 1 1 }  { coeff_we0 mem_we 1 8 }  { coeff_d0 mem_din 1 64 }  { coeff_address1 MemPortADDR2 1 6 }  { coeff_ce1 MemPortCE2 1 1 }  { coeff_q1 MemPortDOUT2 0 64 } } }
 	carry_160_out { ap_vld {  { carry_160_out out_data 1 1 }  { carry_160_out_ap_vld out_vld 1 1 } } }
 }

@@ -16,7 +16,7 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    empty : IN STD_LOGIC_VECTOR (2 downto 0);
+    npts_3 : IN STD_LOGIC_VECTOR (2 downto 0);
     pts_Z_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
     pts_Z_ce0 : OUT STD_LOGIC;
     pts_Z_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
@@ -54,12 +54,11 @@ attribute shreg_extract : string;
     signal ap_condition_exit_pp0_iter0_stage0 : STD_LOGIC;
     signal ap_loop_exit_ready : STD_LOGIC;
     signal ap_ready_int : STD_LOGIC;
-    signal trunc_ln15_fu_93_p1 : STD_LOGIC_VECTOR (2 downto 0);
-    signal trunc_ln15_reg_131 : STD_LOGIC_VECTOR (2 downto 0);
+    signal i_reg_122 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
-    signal zext_ln15_11_fu_107_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal zext_ln15_fu_101_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_pp0_stage0 : BOOLEAN;
-    signal zext_ln15_fu_117_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal zext_ln14_fu_111_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal i_290_fu_36 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln14_fu_87_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_loop_init : STD_LOGIC;
@@ -67,7 +66,7 @@ attribute shreg_extract : string;
     signal pts_Z_ce0_local : STD_LOGIC;
     signal R_Z_we0_local : STD_LOGIC;
     signal R_Z_ce0_local : STD_LOGIC;
-    signal tmp_s_fu_97_p4 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_s_fu_93_p3 : STD_LOGIC_VECTOR (6 downto 0);
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
     signal ap_done_int : STD_LOGIC;
@@ -176,7 +175,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
-                trunc_ln15_reg_131 <= trunc_ln15_fu_93_p1;
+                i_reg_122 <= ap_sig_allocacmp_i;
             end if;
         end if;
     end process;
@@ -190,7 +189,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    R_Z_address0 <= zext_ln15_fu_117_p1(4 - 1 downto 0);
+    R_Z_address0 <= zext_ln14_fu_111_p1(4 - 1 downto 0);
     R_Z_ce0 <= R_Z_ce0_local;
 
     R_Z_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001)
@@ -285,7 +284,7 @@ begin
     end process;
 
     icmp_ln14_fu_81_p2 <= "1" when (ap_sig_allocacmp_i = ap_const_lv4_8) else "0";
-    pts_Z_address0 <= zext_ln15_11_fu_107_p1(7 - 1 downto 0);
+    pts_Z_address0 <= zext_ln15_fu_101_p1(7 - 1 downto 0);
     pts_Z_ce0 <= pts_Z_ce0_local;
 
     pts_Z_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
@@ -297,8 +296,7 @@ begin
         end if; 
     end process;
 
-    tmp_s_fu_97_p4 <= ((empty & ap_const_lv1_0) & trunc_ln15_fu_93_p1);
-    trunc_ln15_fu_93_p1 <= ap_sig_allocacmp_i(3 - 1 downto 0);
-    zext_ln15_11_fu_107_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_s_fu_97_p4),32));
-    zext_ln15_fu_117_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln15_reg_131),32));
+    tmp_s_fu_93_p3 <= (npts_3 & ap_sig_allocacmp_i);
+    zext_ln14_fu_111_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_reg_122),64));
+    zext_ln15_fu_101_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_s_fu_93_p3),64));
 end behav;

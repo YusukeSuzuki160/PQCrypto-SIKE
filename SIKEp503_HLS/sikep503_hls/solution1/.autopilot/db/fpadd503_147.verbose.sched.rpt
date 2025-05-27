@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_147'
 ================================================================
-* Date:           Tue May 20 14:30:27 2025
+* Date:           Tue May 27 14:11:43 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -79,27 +79,28 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.25>
+State 1 <SV = 0> <Delay = 4.98>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%c_offset1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_offset1"   --->   Operation 7 'read' 'c_offset1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%carry_211_loc = alloca i32 1"   --->   Operation 8 'alloca' 'carry_211_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [2/2] (3.25ns)   --->   "%call_ln0 = call void @fpadd503.147_Pipeline_VITIS_LOOP_23_1, i64 %a, i1 %c_offset1_read, i64 %c"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%carry_211_loc = alloca i64 1"   --->   Operation 8 'alloca' 'carry_211_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset1_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 9 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [2/2] (4.98ns)   --->   "%call_ln24 = call void @fpadd503.147_Pipeline_VITIS_LOOP_23_1, i64 %a, i4 %tmp, i64 %c" [src/generic/fp_generic.c:24]   --->   Operation 10 'call' 'call_ln24' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.147_Pipeline_VITIS_LOOP_23_1, i64 %a, i1 %c_offset1_read, i64 %c"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln24 = call void @fpadd503.147_Pipeline_VITIS_LOOP_23_1, i64 %a, i4 %tmp, i64 %c" [src/generic/fp_generic.c:24]   --->   Operation 11 'call' 'call_ln24' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 11 [2/2] (3.25ns)   --->   "%call_ln0 = call void @fpadd503.147_Pipeline_VITIS_LOOP_28_2, i1 %c_offset1_read, i64 %c, i1 %carry_211_loc, i64 %p503x2_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 4.98>
+ST_3 : Operation 12 [2/2] (4.98ns)   --->   "%call_ln24 = call void @fpadd503.147_Pipeline_VITIS_LOOP_28_2, i4 %tmp, i64 %c, i1 %carry_211_loc, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 12 'call' 'call_ln24' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.147_Pipeline_VITIS_LOOP_28_2, i1 %c_offset1_read, i64 %c, i1 %carry_211_loc, i64 %p503x2_1"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln24 = call void @fpadd503.147_Pipeline_VITIS_LOOP_28_2, i4 %tmp, i64 %c, i1 %carry_211_loc, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 13 'call' 'call_ln24' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 5 <SV = 4> <Delay = 3.25>
-ST_5 : Operation 13 [1/1] (0.00ns)   --->   "%carry_211_loc_load = load i1 %carry_211_loc"   --->   Operation 13 'load' 'carry_211_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 14 [2/2] (3.25ns)   --->   "%call_ln0 = call void @fpadd503.147_Pipeline_VITIS_LOOP_34_3, i1 %c_offset1_read, i64 %c, i1 %carry_211_loc_load, i64 %p503x2_1"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+State 5 <SV = 4> <Delay = 4.98>
+ST_5 : Operation 14 [1/1] (0.00ns)   --->   "%carry_211_loc_load = load i1 %carry_211_loc"   --->   Operation 14 'load' 'carry_211_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 15 [2/2] (4.98ns)   --->   "%call_ln24 = call void @fpadd503.147_Pipeline_VITIS_LOOP_34_3, i4 %tmp, i64 %c, i1 %carry_211_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 15 'call' 'call_ln24' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.147_Pipeline_VITIS_LOOP_34_3, i1 %c_offset1_read, i64 %c, i1 %carry_211_loc_load, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_generic.c:37]   --->   Operation 16 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln24 = call void @fpadd503.147_Pipeline_VITIS_LOOP_34_3, i4 %tmp, i64 %c, i1 %carry_211_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:24]   --->   Operation 16 'call' 'call_ln24' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 17 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_generic.c:37]   --->   Operation 17 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -107,25 +108,25 @@ ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_ge
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 3.254ns
+ <State 1>: 4.989ns
 The critical path consists of the following:
 	wire read operation ('c_offset1_read') on port 'c_offset1' [5]  (0.000 ns)
-	'call' operation 0 bit ('call_ln0') to 'fpadd503.147_Pipeline_VITIS_LOOP_23_1' [7]  (3.254 ns)
+	'call' operation 0 bit ('call_ln24', src/generic/fp_generic.c:24) to 'fpadd503.147_Pipeline_VITIS_LOOP_23_1' [8]  (4.989 ns)
 
  <State 2>: 0.000ns
 The critical path consists of the following:
 
- <State 3>: 3.254ns
+ <State 3>: 4.989ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'fpadd503.147_Pipeline_VITIS_LOOP_28_2' [8]  (3.254 ns)
+	'call' operation 0 bit ('call_ln24', src/generic/fp_generic.c:24) to 'fpadd503.147_Pipeline_VITIS_LOOP_28_2' [9]  (4.989 ns)
 
  <State 4>: 0.000ns
 The critical path consists of the following:
 
- <State 5>: 3.254ns
+ <State 5>: 4.989ns
 The critical path consists of the following:
-	'load' operation 1 bit ('carry_211_loc_load') on local variable 'carry_211_loc' [9]  (0.000 ns)
-	'call' operation 0 bit ('call_ln0') to 'fpadd503.147_Pipeline_VITIS_LOOP_34_3' [10]  (3.254 ns)
+	'load' operation 1 bit ('carry_211_loc_load') on local variable 'carry_211_loc' [10]  (0.000 ns)
+	'call' operation 0 bit ('call_ln24', src/generic/fp_generic.c:24) to 'fpadd503.147_Pipeline_VITIS_LOOP_34_3' [11]  (4.989 ns)
 
  <State 6>: 0.000ns
 The critical path consists of the following:

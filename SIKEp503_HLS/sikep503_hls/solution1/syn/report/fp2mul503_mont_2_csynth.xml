@@ -34,16 +34,16 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:189</SourceLocation>
+<SourceLocation>src/fpx.c:190</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>10</BRAM_18K>
+<BRAM_18K>12</BRAM_18K>
 <DSP>64</DSP>
-<FF>19384</FF>
-<LUT>25930</LUT>
+<FF>19239</FF>
+<LUT>25815</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

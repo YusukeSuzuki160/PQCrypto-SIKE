@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_74_75_1'" level="0">
-<item name = "Date">Tue May 20 14:35:42 2025
+<item name = "Date">Tue May 20 17:42:57 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -31,43 +31,43 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_1_fu_885">LADDER3PT_74_75_1_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1220_fu_893">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1220, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1_fu_901">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1221_fu_909">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1221, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpadd503_58_60_fu_917">fpadd503_58_60, 57, 57, 0.570 us, 0.570 us, 57, 57, no</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1217_fu_931">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1217, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1218_fu_938">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1218, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpadd503_60_6167_fu_945">fpadd503_60_6167, 56, 56, 0.560 us, 0.560 us, 56, 56, no</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1214_fu_964">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1214, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1216_fu_971">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1216, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1215_fu_978">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1215, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1219_fu_983">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1219, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2div2_503_fu_990">fp2div2_503, 85, 85, 0.850 us, 0.850 us, 85, 85, no</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1222_fu_998">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1222, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1_fu_1006">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_267_1_fu_1012">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_267_1, 26, 26, 0.260 us, 0.260 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpadd503_15181_fu_1025">fpadd503_15181, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_fpsub503_143_fu_1043">fpsub503_143, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fpsub503_14679_fu_1055">fpsub503_14679, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fpadd503_148_fu_1073">fpadd503_148, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_fpcorrection503_fu_1081">fpcorrection503, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fp2sqr503_mont_fu_1091">fp2sqr503_mont, 667, 1089, 6.670 us, 10.890 us, 667, 1089, no</column>
-<column name="grp_fp2mul503_mont_133_2_fu_1101">fp2mul503_mont_133_2, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
-<column name="grp_fp2mul503_mont_64_65_fu_1111">fp2mul503_mont_64_65, 912, 1410, 9.120 us, 14.100 us, 912, 1410, no</column>
-<column name="grp_fpsub503_fu_1122">fpsub503, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fp2mul503_mont_fu_1137">fp2mul503_mont, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
-<column name="grp_fp2mul503_mont_66_69_fu_1147">fp2mul503_mont_66_69, 913, 1411, 9.130 us, 14.110 us, 913, 1411, no</column>
-<column name="grp_fpadd503_147_fu_1160">fpadd503_147, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_fp2sqr503_mont_70_71_fu_1171">fp2sqr503_mont_70_71, 460, 720, 4.600 us, 7.200 us, 460, 720, no</column>
-<column name="grp_fpadd503_fu_1181">fpadd503, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_fp2mul503_mont_72_73_1_fu_1196">fp2mul503_mont_72_73_1, 927, 1425, 9.270 us, 14.250 us, 927, 1425, no</column>
-<column name="grp_fp2mul503_mont_1339777_fu_1209">fp2mul503_mont_1339777, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_1_fu_889">LADDER3PT_74_75_1_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1207_fu_897">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1207, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1_fu_905">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1208_fu_913">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1208, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_58_59_fu_921">fpadd503_58_59, 57, 57, 0.570 us, 0.570 us, 57, 57, no</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1204_fu_935">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1204, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1205_fu_942">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1205, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_60_6161_fu_949">fpadd503_60_6161, 56, 56, 0.560 us, 0.560 us, 56, 56, no</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1201_fu_968">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1201, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1203_fu_975">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1203, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1202_fu_982">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1202, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1206_fu_987">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1206, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2div2_503_fu_994">fp2div2_503, 85, 85, 0.850 us, 0.850 us, 85, 85, no</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1209_fu_1002">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1209, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1_fu_1010">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_269_1_fu_1016">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_269_1, 26, 26, 0.260 us, 0.260 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_15075_fu_1029">fpadd503_15075, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
+<column name="grp_fpsub503_142_fu_1047">fpsub503_142, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_fpsub503_14573_fu_1059">fpsub503_14573, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_fpadd503_146_fu_1077">fpadd503_146, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
+<column name="grp_fpcorrection503_fu_1085">fpcorrection503, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_fp2sqr503_mont_fu_1095">fp2sqr503_mont, 667, 1089, 6.670 us, 10.890 us, 667, 1089, no</column>
+<column name="grp_fp2mul503_mont_132_2_fu_1105">fp2mul503_mont_132_2, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
+<column name="grp_fp2mul503_mont_64_65_fu_1115">fp2mul503_mont_64_65, 912, 1410, 9.120 us, 14.100 us, 912, 1410, no</column>
+<column name="grp_fpsub503_fu_1126">fpsub503, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_fp2mul503_mont_fu_1141">fp2mul503_mont, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
+<column name="grp_fp2mul503_mont_66_69_fu_1151">fp2mul503_mont_66_69, 913, 1411, 9.130 us, 14.110 us, 913, 1411, no</column>
+<column name="grp_fpadd503_145_fu_1164">fpadd503_145, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
+<column name="grp_fp2sqr503_mont_70_71_fu_1175">fp2sqr503_mont_70_71, 460, 720, 4.600 us, 7.200 us, 460, 720, no</column>
+<column name="grp_fpadd503_fu_1185">fpadd503, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
+<column name="grp_fp2mul503_mont_72_73_1_fu_1200">fp2mul503_mont_72_73_1, 927, 1425, 9.270 us, 14.250 us, 927, 1425, no</column>
+<column name="grp_fp2mul503_mont_13210071_fu_1213">fp2mul503_mont_13210071, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_317_1">1865250, 2847750, 7461 ~ 11391, -, -, 250, no</column>
+<column name="- VITIS_LOOP_319_1">1865250, 2847750, 7461 ~ 11391, -, -, 250, no</column>
 </table>
 </item>
 </section>
@@ -82,50 +82,50 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 264, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">68, 400, 115514, 166025, 0</column>
+<column name="Instance">80, 400, 114689, 165791, 0</column>
 <column name="Memory">22, -, 768, 48, 0</column>
 <column name="Multiplexer">-, -, 0, 3332, -</column>
 <column name="Register">-, -, 148, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">32, 181, 109, 318, 0</specialColumn>
+<specialColumn name="Utilization (%)">36, 181, 108, 318, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_1_fu_885">LADDER3PT_74_75_1_Pipeline_1, 0, 0, 7, 54, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1_fu_901">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1214_fu_964">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1214, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1215_fu_978">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1215, 0, 0, 6, 53, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1216_fu_971">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1216, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1217_fu_931">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1217, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1218_fu_938">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1218, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1219_fu_983">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1219, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1220_fu_893">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1220, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1221_fu_909">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1221, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1222_fu_998">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1222, 0, 0, 74, 72, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1_fu_1006">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1, 0, 0, 6, 53, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_267_1_fu_1012">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_267_1, 0, 0, 608, 1211, 0</column>
-<column name="grp_fp2div2_503_fu_990">fp2div2_503, 0, 0, 868, 2286, 0</column>
-<column name="grp_fp2mul503_mont_fu_1137">fp2mul503_mont, 10, 48, 12545, 17007, 0</column>
-<column name="grp_fp2mul503_mont_1339777_fu_1209">fp2mul503_mont_1339777, 10, 48, 12545, 17007, 0</column>
-<column name="grp_fp2mul503_mont_133_2_fu_1101">fp2mul503_mont_133_2, 10, 48, 12545, 17007, 0</column>
-<column name="grp_fp2mul503_mont_64_65_fu_1111">fp2mul503_mont_64_65, 10, 48, 12532, 17020, 0</column>
-<column name="grp_fp2mul503_mont_66_69_fu_1147">fp2mul503_mont_66_69, 10, 48, 12604, 17393, 0</column>
-<column name="grp_fp2mul503_mont_72_73_1_fu_1196">fp2mul503_mont_72_73_1, 10, 48, 15213, 20465, 0</column>
-<column name="grp_fp2sqr503_mont_fu_1091">fp2sqr503_mont, 4, 48, 12025, 15653, 0</column>
-<column name="grp_fp2sqr503_mont_70_71_fu_1171">fp2sqr503_mont_70_71, 4, 64, 16055, 21104, 0</column>
-<column name="grp_fpadd503_fu_1181">fpadd503, 0, 0, 696, 2091, 0</column>
-<column name="grp_fpadd503_147_fu_1160">fpadd503_147, 0, 0, 827, 2103, 0</column>
-<column name="grp_fpadd503_148_fu_1073">fpadd503_148, 0, 0, 696, 2103, 0</column>
-<column name="grp_fpadd503_15181_fu_1025">fpadd503_15181, 0, 0, 826, 2091, 0</column>
-<column name="grp_fpadd503_58_60_fu_917">fpadd503_58_60, 0, 0, 1055, 2519, 0</column>
-<column name="grp_fpadd503_60_6167_fu_945">fpadd503_60_6167, 0, 0, 1047, 2522, 0</column>
-<column name="grp_fpcorrection503_fu_1081">fpcorrection503, 0, 0, 617, 1429, 0</column>
-<column name="grp_fpsub503_fu_1122">fpsub503, 0, 0, 550, 1402, 0</column>
-<column name="grp_fpsub503_143_fu_1043">fpsub503_143, 0, 0, 424, 1402, 0</column>
-<column name="grp_fpsub503_14679_fu_1055">fpsub503_14679, 0, 0, 551, 1402, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_1_fu_889">LADDER3PT_74_75_1_Pipeline_1, 0, 0, 7, 54, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1_fu_905">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1, 0, 0, 74, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1201_fu_968">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1201, 0, 0, 75, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1202_fu_982">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1202, 0, 0, 6, 53, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1203_fu_975">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1203, 0, 0, 75, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1204_fu_935">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1204, 0, 0, 75, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1205_fu_942">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1205, 0, 0, 75, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1206_fu_987">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1206, 0, 0, 75, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1207_fu_897">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1207, 0, 0, 75, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1208_fu_913">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1208, 0, 0, 74, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1209_fu_1002">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1209, 0, 0, 75, 72, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1_fu_1010">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1, 0, 0, 6, 53, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_269_1_fu_1016">LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_269_1, 0, 0, 610, 1211, 0</column>
+<column name="grp_fp2div2_503_fu_994">fp2div2_503, 0, 0, 868, 2286, 0</column>
+<column name="grp_fp2mul503_mont_fu_1141">fp2mul503_mont, 12, 48, 12395, 16929, 0</column>
+<column name="grp_fp2mul503_mont_13210071_fu_1213">fp2mul503_mont_13210071, 12, 48, 12395, 16929, 0</column>
+<column name="grp_fp2mul503_mont_132_2_fu_1105">fp2mul503_mont_132_2, 12, 48, 12395, 16929, 0</column>
+<column name="grp_fp2mul503_mont_64_65_fu_1115">fp2mul503_mont_64_65, 12, 48, 12382, 16942, 0</column>
+<column name="grp_fp2mul503_mont_66_69_fu_1151">fp2mul503_mont_66_69, 12, 48, 12451, 17289, 0</column>
+<column name="grp_fp2mul503_mont_72_73_1_fu_1200">fp2mul503_mont_72_73_1, 12, 48, 15064, 20348, 0</column>
+<column name="grp_fp2sqr503_mont_fu_1095">fp2sqr503_mont, 4, 48, 12045, 15679, 0</column>
+<column name="grp_fp2sqr503_mont_70_71_fu_1175">fp2sqr503_mont_70_71, 4, 64, 16077, 21104, 0</column>
+<column name="grp_fpadd503_fu_1185">fpadd503, 0, 0, 699, 2117, 0</column>
+<column name="grp_fpadd503_145_fu_1164">fpadd503_145, 0, 0, 828, 2142, 0</column>
+<column name="grp_fpadd503_146_fu_1077">fpadd503_146, 0, 0, 696, 2103, 0</column>
+<column name="grp_fpadd503_15075_fu_1029">fpadd503_15075, 0, 0, 834, 2156, 0</column>
+<column name="grp_fpadd503_58_59_fu_921">fpadd503_58_59, 0, 0, 1055, 2519, 0</column>
+<column name="grp_fpadd503_60_6161_fu_949">fpadd503_60_6161, 0, 0, 1048, 2535, 0</column>
+<column name="grp_fpcorrection503_fu_1085">fpcorrection503, 0, 0, 618, 1455, 0</column>
+<column name="grp_fpsub503_fu_1126">fpsub503, 0, 0, 554, 1428, 0</column>
+<column name="grp_fpsub503_142_fu_1047">fpsub503_142, 0, 0, 427, 1428, 0</column>
+<column name="grp_fpsub503_14573_fu_1059">fpsub503_14573, 0, 0, 556, 1454, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -154,9 +154,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_286_fu_1233_p2">+, 0, 0, 15, 8, 1</column>
-<column name="icmp_ln317_fu_1227_p2">icmp, 0, 0, 15, 8, 4</column>
-<column name="lshr_ln319_fu_1373_p2">lshr, 0, 0, 182, 64, 64</column>
+<column name="i_280_fu_1237_p2">+, 0, 0, 15, 8, 1</column>
+<column name="icmp_ln319_fu_1231_p2">icmp, 0, 0, 15, 8, 4</column>
+<column name="lshr_ln322_fu_1377_p2">lshr, 0, 0, 182, 64, 64</column>
 <column name="R0_X_we0">or, 0, 0, 2, 1, 1</column>
 <column name="R0_Z_we0">or, 0, 0, 2, 1, 1</column>
 <column name="R2_X_2_we0">or, 0, 0, 2, 1, 1</column>
@@ -182,7 +182,7 @@
 <column name="ap_block_state45_on_subcall_done">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state4_on_subcall_done">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state6_on_subcall_done">or, 0, 0, 2, 1, 1</column>
-<column name="swap_fu_1383_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="swap_fu_1387_p2">xor, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -265,43 +265,43 @@
 <column name="ap_NS_fsm">217, 50, 1, 50</column>
 <column name="ephemeralsk_address0_local">25, 5, 5, 25</column>
 <column name="ephemeralsk_address1_local">25, 5, 5, 25</column>
-<column name="grp_fp2mul503_mont_72_73_1_fu_1196_R_X_q0">14, 3, 64, 192</column>
-<column name="grp_fp2mul503_mont_72_73_1_fu_1196_R_X_q1">14, 3, 64, 192</column>
-<column name="grp_fp2mul503_mont_72_73_1_fu_1196_c_0_q0">14, 3, 64, 192</column>
-<column name="grp_fp2mul503_mont_72_73_1_fu_1196_c_1_q0">14, 3, 64, 192</column>
-<column name="grp_fp2sqr503_mont_70_71_fu_1171_c_0_q0">14, 3, 64, 192</column>
-<column name="grp_fp2sqr503_mont_70_71_fu_1171_c_1_q0">14, 3, 64, 192</column>
-<column name="grp_fp2sqr503_mont_fu_1091_a_q0">14, 3, 64, 192</column>
-<column name="grp_fp2sqr503_mont_fu_1091_a_q1">14, 3, 64, 192</column>
-<column name="grp_fp2sqr503_mont_fu_1091_c_q0">14, 3, 64, 192</column>
-<column name="grp_fpadd503_147_fu_1160_a_q0">14, 3, 64, 192</column>
-<column name="grp_fpadd503_147_fu_1160_c_offset1">14, 3, 1, 3</column>
-<column name="grp_fpadd503_148_fu_1073_b_q0">14, 3, 64, 192</column>
-<column name="grp_fpadd503_148_fu_1073_c_q1">14, 3, 64, 192</column>
-<column name="grp_fpadd503_15181_fu_1025_a_offset1">14, 3, 1, 3</column>
-<column name="grp_fpadd503_15181_fu_1025_b_offset2">14, 3, 1, 3</column>
-<column name="grp_fpadd503_15181_fu_1025_c_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_58_60_fu_917_c_0_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_58_60_fu_917_c_1_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_60_6167_fu_945_a_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_60_6167_fu_945_c_0_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_60_6167_fu_945_c_1_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_fu_1181_a_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_fu_1181_b_offset">14, 3, 1, 3</column>
-<column name="grp_fpadd503_fu_1181_c_q1">14, 3, 64, 192</column>
-<column name="grp_fpcorrection503_fu_1081_a_offset">14, 3, 1, 3</column>
-<column name="grp_fpsub503_143_fu_1043_a_q0">14, 3, 64, 192</column>
-<column name="grp_fpsub503_143_fu_1043_b_q0">14, 3, 64, 192</column>
-<column name="grp_fpsub503_143_fu_1043_c_offset">14, 3, 1, 3</column>
-<column name="grp_fpsub503_14679_fu_1055_a_offset1">14, 3, 1, 3</column>
-<column name="grp_fpsub503_14679_fu_1055_b_offset2">14, 3, 1, 3</column>
-<column name="grp_fpsub503_14679_fu_1055_c_offset">14, 3, 1, 3</column>
-<column name="grp_fpsub503_14679_fu_1055_c_q1">14, 3, 64, 192</column>
-<column name="grp_fpsub503_fu_1122_a_offset">14, 3, 1, 3</column>
-<column name="grp_fpsub503_fu_1122_b_offset">14, 3, 1, 3</column>
-<column name="grp_fpsub503_fu_1122_c_q1">14, 3, 64, 192</column>
-<column name="i_065_fu_164">9, 2, 8, 16</column>
-<column name="prevbit_reg_873">9, 2, 1, 2</column>
+<column name="grp_fp2mul503_mont_72_73_1_fu_1200_R_X_q0">14, 3, 64, 192</column>
+<column name="grp_fp2mul503_mont_72_73_1_fu_1200_R_X_q1">14, 3, 64, 192</column>
+<column name="grp_fp2mul503_mont_72_73_1_fu_1200_c_0_q0">14, 3, 64, 192</column>
+<column name="grp_fp2mul503_mont_72_73_1_fu_1200_c_1_q0">14, 3, 64, 192</column>
+<column name="grp_fp2sqr503_mont_70_71_fu_1175_c_0_q0">14, 3, 64, 192</column>
+<column name="grp_fp2sqr503_mont_70_71_fu_1175_c_1_q0">14, 3, 64, 192</column>
+<column name="grp_fp2sqr503_mont_fu_1095_a_q0">14, 3, 64, 192</column>
+<column name="grp_fp2sqr503_mont_fu_1095_a_q1">14, 3, 64, 192</column>
+<column name="grp_fp2sqr503_mont_fu_1095_c_q0">14, 3, 64, 192</column>
+<column name="grp_fpadd503_145_fu_1164_a_q0">14, 3, 64, 192</column>
+<column name="grp_fpadd503_145_fu_1164_c_offset1">14, 3, 1, 3</column>
+<column name="grp_fpadd503_146_fu_1077_b_q0">14, 3, 64, 192</column>
+<column name="grp_fpadd503_146_fu_1077_c_q1">14, 3, 64, 192</column>
+<column name="grp_fpadd503_15075_fu_1029_a_offset1">14, 3, 1, 3</column>
+<column name="grp_fpadd503_15075_fu_1029_b_offset2">14, 3, 1, 3</column>
+<column name="grp_fpadd503_15075_fu_1029_c_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_58_59_fu_921_c_0_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_58_59_fu_921_c_1_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_60_6161_fu_949_a_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_60_6161_fu_949_c_0_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_60_6161_fu_949_c_1_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_fu_1185_a_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_fu_1185_b_offset">14, 3, 1, 3</column>
+<column name="grp_fpadd503_fu_1185_c_q1">14, 3, 64, 192</column>
+<column name="grp_fpcorrection503_fu_1085_a_offset">14, 3, 1, 3</column>
+<column name="grp_fpsub503_142_fu_1047_a_q0">14, 3, 64, 192</column>
+<column name="grp_fpsub503_142_fu_1047_b_q0">14, 3, 64, 192</column>
+<column name="grp_fpsub503_142_fu_1047_c_offset">14, 3, 1, 3</column>
+<column name="grp_fpsub503_14573_fu_1059_a_offset1">14, 3, 1, 3</column>
+<column name="grp_fpsub503_14573_fu_1059_b_offset2">14, 3, 1, 3</column>
+<column name="grp_fpsub503_14573_fu_1059_c_offset">14, 3, 1, 3</column>
+<column name="grp_fpsub503_14573_fu_1059_c_q1">14, 3, 64, 192</column>
+<column name="grp_fpsub503_fu_1126_a_offset">14, 3, 1, 3</column>
+<column name="grp_fpsub503_fu_1126_b_offset">14, 3, 1, 3</column>
+<column name="grp_fpsub503_fu_1126_c_q1">14, 3, 64, 192</column>
+<column name="i_065_fu_168">9, 2, 8, 16</column>
+<column name="prevbit_reg_877">9, 2, 1, 2</column>
 <column name="t0_address0">31, 6, 4, 24</column>
 <column name="t0_address1">20, 4, 4, 16</column>
 <column name="t0_ce0">31, 6, 1, 6</column>
@@ -325,50 +325,50 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">49, 0, 49, 0</column>
-<column name="bit_reg_1484">1, 0, 1, 0</column>
-<column name="ephemeralsk_load_1_reg_1429">8, 0, 8, 0</column>
-<column name="ephemeralsk_load_2_reg_1444">8, 0, 8, 0</column>
-<column name="ephemeralsk_load_3_reg_1449">8, 0, 8, 0</column>
-<column name="ephemeralsk_load_4_reg_1464">8, 0, 8, 0</column>
-<column name="ephemeralsk_load_5_reg_1469">8, 0, 8, 0</column>
-<column name="ephemeralsk_load_reg_1424">8, 0, 8, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_1_fu_885_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1214_fu_964_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1215_fu_978_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1216_fu_971_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1217_fu_931_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1218_fu_938_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1219_fu_983_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1220_fu_893_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1221_fu_909_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1222_fu_998_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1_fu_901_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1_fu_1006_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_267_1_fu_1012_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2div2_503_fu_990_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2mul503_mont_1339777_fu_1209_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2mul503_mont_133_2_fu_1101_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2mul503_mont_64_65_fu_1111_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2mul503_mont_66_69_fu_1147_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2mul503_mont_72_73_1_fu_1196_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2mul503_mont_fu_1137_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2sqr503_mont_70_71_fu_1171_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fp2sqr503_mont_fu_1091_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_147_fu_1160_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_148_fu_1073_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_15181_fu_1025_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_58_60_fu_917_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_60_6167_fu_945_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_fu_1181_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpcorrection503_fu_1081_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpsub503_143_fu_1043_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpsub503_14679_fu_1055_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpsub503_fu_1122_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_065_fu_164">8, 0, 8, 0</column>
-<column name="prevbit_reg_873">1, 0, 1, 0</column>
-<column name="swap_reg_1490">1, 0, 1, 0</column>
-<column name="tmp_s_reg_1404">2, 0, 2, 0</column>
-<column name="trunc_ln317_reg_1399">6, 0, 6, 0</column>
+<column name="bit_reg_1488">1, 0, 1, 0</column>
+<column name="ephemeralsk_load_1_reg_1433">8, 0, 8, 0</column>
+<column name="ephemeralsk_load_2_reg_1448">8, 0, 8, 0</column>
+<column name="ephemeralsk_load_3_reg_1453">8, 0, 8, 0</column>
+<column name="ephemeralsk_load_4_reg_1468">8, 0, 8, 0</column>
+<column name="ephemeralsk_load_5_reg_1473">8, 0, 8, 0</column>
+<column name="ephemeralsk_load_reg_1428">8, 0, 8, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_1_fu_889_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1201_fu_968_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1202_fu_982_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1203_fu_975_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1204_fu_935_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1205_fu_942_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1206_fu_987_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1207_fu_897_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1208_fu_913_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1209_fu_1002_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_14_1_fu_905_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_23_1_fu_1010_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_74_75_1_Pipeline_VITIS_LOOP_269_1_fu_1016_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2div2_503_fu_994_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2mul503_mont_13210071_fu_1213_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2mul503_mont_132_2_fu_1105_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2mul503_mont_64_65_fu_1115_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2mul503_mont_66_69_fu_1151_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2mul503_mont_72_73_1_fu_1200_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2mul503_mont_fu_1141_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2sqr503_mont_70_71_fu_1175_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fp2sqr503_mont_fu_1095_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_145_fu_1164_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_146_fu_1077_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_15075_fu_1029_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_58_59_fu_921_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_60_6161_fu_949_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_fu_1185_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpcorrection503_fu_1085_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpsub503_142_fu_1047_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpsub503_14573_fu_1059_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpsub503_fu_1126_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_065_fu_168">8, 0, 8, 0</column>
+<column name="prevbit_reg_877">1, 0, 1, 0</column>
+<column name="swap_reg_1494">1, 0, 1, 0</column>
+<column name="tmp_s_reg_1408">2, 0, 2, 0</column>
+<column name="trunc_ln319_reg_1403">6, 0, 6, 0</column>
 </table>
 </item>
 </section>

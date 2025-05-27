@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'from_mont_25_Pipeline_VITIS_LOOP_91_1'" level="0">
-<item name = "Date">Tue May 20 14:37:23 2025
+<item name = "Date">Tue May 27 14:19:21 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -53,7 +53,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">0, -, 64, 8, -</column>
 <column name="Multiplexer">-, -, 0, 45, -</column>
-<column name="Register">-, -, 210, -, -</column>
+<column name="Register">-, -, 212, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
 </table>
@@ -80,19 +80,19 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln91_fu_110_p2">+, 0, 0, 13, 4, 1</column>
-<column name="sub_ln92_fu_204_p2">-, 0, 0, 71, 64, 64</column>
-<column name="sub_ln95_fu_164_p2">-, 0, 0, 71, 1, 64</column>
-<column name="tempReg_fu_131_p2">-, 0, 0, 71, 64, 64</column>
-<column name="and_ln92_fu_188_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sub_ln92_fu_200_p2">-, 0, 0, 71, 64, 64</column>
+<column name="sub_ln95_fu_160_p2">-, 0, 0, 71, 1, 64</column>
+<column name="tempReg_fu_127_p2">-, 0, 0, 71, 64, 64</column>
+<column name="and_ln92_fu_184_p2">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln91_fu_104_p2">icmp, 0, 0, 13, 4, 5</column>
-<column name="borrowReg_fu_194_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln105_fu_145_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln95_fu_169_p2">or, 0, 0, 64, 64, 64</column>
+<column name="borrowReg_fu_190_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln105_fu_141_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln95_fu_165_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_70_fu_141_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_71_fu_151_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_fu_137_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln92_fu_182_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln105_70_fu_137_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_71_fu_147_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_fu_133_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln92_fu_178_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -113,13 +113,13 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="borrow_reg_83">1, 0, 1, 0</column>
 <column name="i_fu_42">4, 0, 4, 0</column>
-<column name="icmp_ln91_reg_217">1, 0, 1, 0</column>
-<column name="icmp_ln91_reg_217_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="p503_1_load_reg_238">64, 0, 64, 0</column>
-<column name="t_i_addr_reg_221">3, 0, 4, 1</column>
-<column name="t_i_addr_reg_221_pp0_iter1_reg">3, 0, 4, 1</column>
-<column name="t_i_load_reg_232">64, 0, 64, 0</column>
-<column name="tempReg_reg_244">64, 0, 64, 0</column>
+<column name="icmp_ln91_reg_213">1, 0, 1, 0</column>
+<column name="icmp_ln91_reg_213_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="p503_1_load_reg_234">64, 0, 64, 0</column>
+<column name="t_i_addr_reg_217">4, 0, 4, 0</column>
+<column name="t_i_addr_reg_217_pp0_iter1_reg">4, 0, 4, 0</column>
+<column name="t_i_load_reg_228">64, 0, 64, 0</column>
+<column name="tempReg_reg_240">64, 0, 64, 0</column>
 </table>
 </item>
 </section>

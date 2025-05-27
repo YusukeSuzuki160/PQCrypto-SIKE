@@ -1,17 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sikep503_kem_enc_hw_gmem0_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sikep503_kem_enc_hw_gmem1_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sikep503_kem_enc_hw_gmem2_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+	::AP::rtl_comp_handler sikep503_kem_enc_hw_gmem_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
 }
 
 
@@ -26,27 +16,27 @@ set axilite_register_dict [dict create]
 set port_control {
 ct { 
 	dir I
-	width 32
+	width 64
 	depth 1
 	mode ap_none
 	offset 16
-	offset_end 23
+	offset_end 27
 }
 pk { 
 	dir I
-	width 32
+	width 64
 	depth 1
 	mode ap_none
-	offset 24
-	offset_end 31
+	offset 28
+	offset_end 39
 }
 ss { 
 	dir I
-	width 32
+	width 64
 	depth 1
 	mode ap_none
-	offset 32
-	offset_end 39
+	offset 40
+	offset_end 51
 }
 ap_start { }
 ap_done { }
@@ -62,7 +52,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 3368 \
+			id 3338 \
 			corename sikep503_kem_enc_hw_control_axilite \
 			name sikep503_kem_enc_hw_control_s_axi \
 			ports {$port_control} \
@@ -71,7 +61,7 @@ if {${::AESL::PGuard_simmodel_gen}} {
 			interrupt_trigger_type default \
 			is_flushable 0 \
 			is_datawidth64 0 \
-			is_addrwidth64 0 \
+			is_addrwidth64 1 \
 		} "
 	} else {
 		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"

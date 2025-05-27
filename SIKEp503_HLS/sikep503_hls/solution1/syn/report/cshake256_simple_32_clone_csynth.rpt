@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_32_clone'
 ================================================================
-* Date:           Tue May 20 14:38:36 2025
+* Date:           Tue May 27 14:20:38 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -40,8 +40,8 @@
         +---------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
         |grp_cshake256_simple_absorb_clone_fu_38                        |cshake256_simple_absorb_clone                        |      294|      294|  2.940 us|  2.940 us|  294|  294|                                              no|
         |grp_KeccakF1600_StatePermute_fu_48                             |KeccakF1600_StatePermute                             |       42|       42|  0.420 us|  0.420 us|   42|   42|                                              no|
-        |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_377_2_fu_55  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_377_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_570_1_fu_64  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_570_1  |       26|       26|  0.260 us|  0.260 us|   25|   25|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_418_2_fu_55  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_418_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_649_1_fu_64  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_649_1  |       26|       26|  0.260 us|  0.260 us|   25|   25|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +---------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -77,8 +77,8 @@
     |                            Instance                           |                        Module                       | BRAM_18K| DSP|  FF  |  LUT  | URAM|
     +---------------------------------------------------------------+-----------------------------------------------------+---------+----+------+-------+-----+
     |grp_KeccakF1600_StatePermute_fu_48                             |KeccakF1600_StatePermute                             |        2|   0|  4904|  17154|    0|
-    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_377_2_fu_55  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_377_2  |        0|   0|    13|     64|    0|
-    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_570_1_fu_64  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_570_1  |        0|   0|    13|     84|    0|
+    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_418_2_fu_55  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_418_2  |        0|   0|    13|     64|    0|
+    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_649_1_fu_64  |cshake256_simple_32_clone_Pipeline_VITIS_LOOP_649_1  |        0|   0|    13|     84|    0|
     |grp_cshake256_simple_absorb_clone_fu_38                        |cshake256_simple_absorb_clone                        |        2|   0|  5105|  18021|    0|
     +---------------------------------------------------------------+-----------------------------------------------------+---------+----+------+-------+-----+
     |Total                                                          |                                                     |        4|   0| 10035|  35323|    0|
@@ -149,8 +149,8 @@
     +----------------------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                                   |  8|   0|    8|          0|
     |grp_KeccakF1600_StatePermute_fu_48_ap_start_reg                             |  1|   0|    1|          0|
-    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_377_2_fu_55_ap_start_reg  |  1|   0|    1|          0|
-    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_570_1_fu_64_ap_start_reg  |  1|   0|    1|          0|
+    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_418_2_fu_55_ap_start_reg  |  1|   0|    1|          0|
+    |grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_649_1_fu_64_ap_start_reg  |  1|   0|    1|          0|
     |grp_cshake256_simple_absorb_clone_fu_38_ap_start_reg                        |  1|   0|    1|          0|
     +----------------------------------------------------------------------------+---+----+-----+-----------+
     |Total                                                                       | 12|   0|   12|          0|

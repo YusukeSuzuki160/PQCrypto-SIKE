@@ -11,7 +11,7 @@ use ieee.std_logic_unsigned.all;
 entity sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_pts_index_RAM_AUTO_1R1W is 
     generic(
         MEM_TYPE        : string    := "auto"; 
-        DataWidth       : integer   := 8; 
+        DataWidth       : integer   := 32; 
         AddressWidth    : integer   := 3;
         AddressRange    : integer   := 7
     ); 

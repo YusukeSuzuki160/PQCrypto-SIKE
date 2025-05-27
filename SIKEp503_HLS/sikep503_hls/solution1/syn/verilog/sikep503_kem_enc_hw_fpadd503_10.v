@@ -71,14 +71,14 @@ wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_start;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_done;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_idle;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_ready;
-wire   [5:0] grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address0;
-wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce0;
-wire   [5:0] grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address1;
-wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce1;
 wire   [3:0] grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_address0;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_ce0;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_we0;
 wire   [63:0] grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_d0;
+wire   [5:0] grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address0;
+wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce0;
+wire   [5:0] grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address1;
+wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce1;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28_ap_start;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28_ap_done;
 wire    grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28_ap_idle;
@@ -133,16 +133,16 @@ sikep503_kem_enc_hw_fpadd503_10_Pipeline_VITIS_LOOP_23_1 grp_fpadd503_10_Pipelin
     .ap_done(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_done),
     .ap_idle(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_idle),
     .ap_ready(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_ready),
+    .c_address0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_address0),
+    .c_ce0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_ce0),
+    .c_we0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_we0),
+    .c_d0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_d0),
     .PKB_address0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address0),
     .PKB_ce0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce0),
     .PKB_q0(PKB_q0),
     .PKB_address1(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address1),
     .PKB_ce1(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce1),
-    .PKB_q1(PKB_q1),
-    .c_address0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_address0),
-    .c_ce0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_ce0),
-    .c_we0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_we0),
-    .c_d0(grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_d0)
+    .PKB_q1(PKB_q1)
 );
 
 sikep503_kem_enc_hw_fpadd503_10_Pipeline_VITIS_LOOP_28_2 grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28(

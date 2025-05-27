@@ -418,7 +418,7 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
     return (unsigned int)((x ^ ((x ^ y) | ((x - y) ^ y))) >> (64 -1));
 }
 # 11 "src/api.h" 2
-# 27 "src/api.h"
+# 31 "src/api.h"
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk);
 
 
@@ -432,37 +432,37 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
 
 int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned char *sk);
-# 66 "src/api.h"
-void random_mod_order_A(unsigned char* random_digits);
+# 68 "src/api.h"
+void random_mod_order_A(unsigned char *random_digits);
 
 
 
-void random_mod_order_B(unsigned char* random_digits);
-
-
-
-
-int EphemeralKeyGeneration_A(const unsigned char* PrivateKeyA, unsigned char* PublicKeyA);
+void random_mod_order_B(unsigned char *random_digits);
 
 
 
 
-
-int EphemeralKeyGeneration_B(const unsigned char* PrivateKeyB, unsigned char* PublicKeyB);
+int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA);
 
 
 
 
 
-
-int EphemeralSecretAgreement_A(const unsigned char* PrivateKeyA, const unsigned char* PublicKeyB, unsigned char* SharedSecretA);
+int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *PublicKeyB);
 
 
 
 
 
 
-int EphemeralSecretAgreement_B(const unsigned char* PrivateKeyB, const unsigned char* PublicKeyA, unsigned char* SharedSecretB);
+int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned char *PublicKeyB, unsigned char *SharedSecretA);
+
+
+
+
+
+
+int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned char *PublicKeyA, unsigned char *SharedSecretB);
 # 11 "src/generic/../P503_internal.h" 2
 # 62 "src/generic/../P503_internal.h"
 typedef digit_t felm_t[8];
@@ -823,7 +823,8 @@ void mp_mul(const digit_t* a, const digit_t* b, digit_t* c, const unsigned int n
     unsigned int carry = 0;
 
     VITIS_LOOP_143_1: for (i = 0; i < nwords; i++) {
-        VITIS_LOOP_144_2: for (j = 0; j <= i; j++) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ VITIS_LOOP_145_2: for (j = 0; j <= i; j++) {
             digit_x_digit((a[j]), (b[i-j]), &(UV[0]));;
             { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
             { digit_t tempReg = (UV[1]) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
@@ -835,8 +836,9 @@ void mp_mul(const digit_t* a, const digit_t* b, digit_t* c, const unsigned int n
         t = 0;
     }
 
-    VITIS_LOOP_156_3: for (i = nwords; i < 2*nwords-1; i++) {
-        VITIS_LOOP_157_4: for (j = i-nwords+1; j < nwords; j++) {
+    VITIS_LOOP_157_3: for (i = nwords; i < 2*nwords-1; i++) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ VITIS_LOOP_159_4: for (j = i-nwords+1; j < nwords; j++) {
             digit_x_digit((a[j]), (b[i-j]), &(UV[0]));;
             { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
             { digit_t tempReg = (UV[1]) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
@@ -859,12 +861,12 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
     unsigned int i, j, carry, count = 3;
     digit_t UV[2], t = 0, u = 0, v = 0;
 
-    VITIS_LOOP_180_1: for (i = 0; i < 8; i++) {
+    VITIS_LOOP_182_1: for (i = 0; i < 8; i++) {
         mc[i] = 0;
     }
 
-    VITIS_LOOP_184_2: for (i = 0; i < 8; i++) {
-        VITIS_LOOP_185_3: for (j = 0; j < i; j++) {
+    VITIS_LOOP_186_2: for (i = 0; i < 8; i++) {
+        VITIS_LOOP_187_3: for (j = 0; j < i; j++) {
             if (j < (i-3 +1)) {
                 digit_x_digit((mc[j]), (((digit_t*)p503p1)[i-j]), &(UV[0]));;
                 { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
@@ -881,11 +883,11 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
         t = 0;
     }
 
-    VITIS_LOOP_202_4: for (i = 8; i < 2*8 -1; i++) {
+    VITIS_LOOP_204_4: for (i = 8; i < 2*8 -1; i++) {
         if (count > 0) {
             count -= 1;
         }
-        VITIS_LOOP_206_5: for (j = i-8 +1; j < 8; j++) {
+        VITIS_LOOP_208_5: for (j = i-8 +1; j < 8; j++) {
             if (j < (8 -count)) {
                 digit_x_digit((mc[j]), (((digit_t*)p503p1)[i-j]), &(UV[0]));;
                 { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };

@@ -47,9 +47,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="1" op_0_bw="32">
+<Node id="5" bw="1" op_0_bw="64">
 <![CDATA[
-entry:0 %carry_loc = alloca i32 1
+entry:0 %carry_loc = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="carry_loc"/></StgValue>

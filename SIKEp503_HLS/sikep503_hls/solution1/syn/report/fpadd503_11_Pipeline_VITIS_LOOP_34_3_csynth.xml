@@ -63,7 +63,7 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <FF>335</FF>
-<LUT>700</LUT>
+<LUT>713</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
@@ -144,14 +144,14 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_offset</name>
-<Object>c_offset</Object>
+<name>zext_ln24_32</name>
+<Object>zext_ln24_32</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
+<Bits>4</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

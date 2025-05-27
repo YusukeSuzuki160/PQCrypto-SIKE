@@ -18,7 +18,7 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.040</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.243</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -34,15 +34,15 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/ec_isogeny.c:63</SourceLocation>
+<SourceLocation>src/ec_isogeny.c:64</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>56</BRAM_18K>
+<BRAM_18K>64</BRAM_18K>
 <DSP>304</DSP>
-<FF>80930</FF>
+<FF>80399</FF>
 <LUT>112578</LUT>
 <URAM>0</URAM>
 </Resources>

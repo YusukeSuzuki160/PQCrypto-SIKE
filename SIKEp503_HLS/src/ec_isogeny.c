@@ -32,6 +32,7 @@ void xDBLe(const point_proj_t P, point_proj_t Q, const f2elm_t A24plus, const f2
 
   copy_words((digit_t *)P, (digit_t *)Q, 2 * 2 * NWORDS_FIELD);
 
+  #pragma HLS loop_tripcount min=1 max=503 avg=252
   for (i = 0; i < e; i++)
   {
     xDBL(Q, Q, A24plus, C24);
@@ -116,6 +117,7 @@ void xTPLe(const point_proj_t P, point_proj_t Q, const f2elm_t A24minus, const f
 
   copy_words((digit_t *)P, (digit_t *)Q, 2 * 2 * NWORDS_FIELD);
 
+  #pragma HLS loop_tripcount min=1 max=503 avg=252
   for (i = 0; i < e; i++)
   {
     xTPL(Q, Q, A24minus, A24plus);
@@ -316,6 +318,7 @@ void LADDER3PT(const f2elm_t xP, const f2elm_t xQ, const f2elm_t xPQ, const digi
   // Main loop
   for (i = 0; i < nbits; i++)
   {
+    #pragma HLS loop_tripcount min=1 max=503 avg=252
     bit = (m[i >> LOG2RADIX] >> (i & (RADIX - 1))) & 1;
     swap = bit ^ prevbit;
     prevbit = bit;

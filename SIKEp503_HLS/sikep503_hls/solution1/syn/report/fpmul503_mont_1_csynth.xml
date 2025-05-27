@@ -46,7 +46,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:60</SourceLocation>
+<SourceLocation>src/fpx.c:61</SourceLocation>
 <SummaryOfLoopViolations>
 <Loop1>
 <Name>Loop 1</Name>
@@ -62,8 +62,8 @@
 <Resources>
 <BRAM_18K>2</BRAM_18K>
 <DSP>32</DSP>
-<FF>7517</FF>
-<LUT>9140</LUT>
+<FF>7526</FF>
+<LUT>9154</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

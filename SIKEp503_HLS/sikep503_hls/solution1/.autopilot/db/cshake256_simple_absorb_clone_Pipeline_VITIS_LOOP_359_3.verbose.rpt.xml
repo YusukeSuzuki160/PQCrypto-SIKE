@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_absorb_clone_Pipeline_VITIS_LOOP_359_3'" level="0">
-<item name = "Date">Tue May 20 14:38:34 2025
+<item name = "Date">Tue May 20 16:21:42 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -78,22 +78,22 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_280_fu_118_p2">+, 0, 0, 15, 8, 1</column>
-<column name="icmp_ln359_fu_112_p2">icmp, 0, 0, 15, 8, 8</column>
+<column name="i_280_fu_120_p2">+, 0, 0, 15, 8, 1</column>
+<column name="icmp_ln359_fu_114_p2">icmp, 0, 0, 15, 8, 8</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 8, 16</column>
-<column name="i_245_fu_44">9, 2, 8, 16</column>
+<column name="i_245_fu_46">9, 2, 8, 16</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="i_245_fu_44">8, 0, 8, 0</column>
+<column name="i_245_fu_46">8, 0, 8, 0</column>
 </table>
 </item>
 </section>

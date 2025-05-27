@@ -47,9 +47,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="1" op_0_bw="32">
+<Node id="4" bw="1" op_0_bw="64">
 <![CDATA[
-entry:0 %carry_217_loc = alloca i32 1
+entry:0 %carry_217_loc = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="carry_217_loc"/></StgValue>
@@ -64,7 +64,7 @@ entry:0 %carry_217_loc = alloca i32 1
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i64 %c
+entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %PKB
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -82,7 +82,7 @@ entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i64 %c
+entry:3 %call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %PKB
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>

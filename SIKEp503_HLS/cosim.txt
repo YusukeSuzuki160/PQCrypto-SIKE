@@ -1,0 +1,25 @@
+ Input Public Key (first 16 bytes): 00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+DEBUG: Starting crypto_kem_enc
+DEBUG: Generated random bytes for temp (first 16 bytes): 77 27 43 75 6a 5e 30 cd c1 fa db 25 2c 95 5c 4b 
+DEBUG: Generated ephemeralsk (first 16 bytes): 4c 25 1e cb d4 f2 37 47 d7 35 d1 31 56 1a ff 9c 
+DEBUG: Starting EphemeralKeyGeneration_A
+DEBUG: Input PrivateKeyA (first 16 bytes): 4c 25 1e cb d4 f2 37 47 d7 35 d1 31 56 1a ff 9c 
+DEBUG: Retrieved kernel point
+DEBUG: Generated public key (first 16 bytes): 9e 81 d6 cf d2 13 71 64 ef ac f3 12 a0 a0 7e 05 
+DEBUG: Finished EphemeralKeyGeneration_A
+DEBUG: Generated ephemeral key (first 16 bytes): 9e 81 d6 cf d2 13 71 64 ef ac f3 12 a0 a0 7e 05 
+DEBUG: Starting EphemeralSecretAgreement_A
+DEBUG: Input PrivateKeyA (first 16 bytes): 4c 25 1e cb d4 f2 37 47 d7 35 d1 31 56 1a ff 9c 
+DEBUG: Input PublicKeyB (first 16 bytes): 00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+DEBUG: Retrieved kernel point
+DEBUG: Generated shared secret (first 16 bytes): 76 d8 34 cd 5d 5c 78 64 f8 d3 1d e7 17 94 ee 11 
+DEBUG: Finished EphemeralSecretAgreement_A
+DEBUG: Generated j-invariant (first 16 bytes): 76 d8 34 cd 5d 5c 78 64 f8 d3 1d e7 17 94 ee 11 
+DEBUG: Generated h (first 16 bytes): 29 b5 8b a3 e3 48 d4 e1 67 95 aa 43 e7 e2 61 b7 
+DEBUG: Generated ciphertext (first 16 bytes): 9e 81 d6 cf d2 13 71 64 ef ac f3 12 a0 a0 7e 05 
+DEBUG: Generated shared secret (first 16 bytes): 86 e8 ec 16 74 a1 a7 5b 64 23 c4 4b a8 8e de d3 
+DEBUG: Finished crypto_kem_enc
+Output Ciphertext (first 16 bytes): 9e 81 d6 cf d2 13 71 64 ef ac f3 12 a0 a0 7e 05 
+Output Shared Secret (first 16 bytes): 86 e8 ec 16 74 a1 a7 5b 64 23 c4 4b a8 8e de d3 
+Ciphertext (first 16 bytes): 9e 81 d6 cf d2 13 71 64 ef ac f3 12 a0 a0 7e 05 
+Shared Secret (first 16 bytes): 86 e8 ec 16 74 a1 a7 5b 64 23 c4 4b a8 8e de d3 

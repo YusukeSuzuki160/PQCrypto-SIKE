@@ -23,7 +23,9 @@ void randombytes(unsigned char *x, unsigned long long xlen)
 	unsigned long long i;
 	uint32_t r;
 
+
 	for (i = 0; i < xlen; i++)
+	#pragma HLS loop_tripcount min=1 max=503 avg=252
 	{
 		if (i % 4 == 0)
 		{

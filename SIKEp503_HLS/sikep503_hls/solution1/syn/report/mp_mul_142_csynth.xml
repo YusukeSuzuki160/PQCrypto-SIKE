@@ -56,7 +56,7 @@
 <InstanceList>
 </InstanceList>
 </VITIS_LOOP_143_1>
-<VITIS_LOOP_156_3>
+<VITIS_LOOP_157_3>
 <Slack>7.30</Slack>
 <TripCount>7</TripCount>
 <Latency>
@@ -79,7 +79,7 @@
 </IterationLatency>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_156_3>
+</VITIS_LOOP_157_3>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -92,12 +92,12 @@
 <ViolationType>-</ViolationType>
 <SourceLocation>src/generic/fp_generic.c:143</SourceLocation>
 </VITIS_LOOP_143_1>
-<VITIS_LOOP_156_3>
-<Name>VITIS_LOOP_156_3</Name>
+<VITIS_LOOP_157_3>
+<Name>VITIS_LOOP_157_3</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/generic/fp_generic.c:156</SourceLocation>
-</VITIS_LOOP_156_3>
+<SourceLocation>src/generic/fp_generic.c:157</SourceLocation>
+</VITIS_LOOP_157_3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -105,7 +105,7 @@
 <AreaEstimates>
 <Resources>
 <DSP>16</DSP>
-<FF>3350</FF>
+<FF>3354</FF>
 <LUT>3518</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>

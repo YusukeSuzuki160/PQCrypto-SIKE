@@ -49,13 +49,13 @@ wire   [0:0] exitcond6720_fu_70_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [31:0] tmp_cast_fu_96_p1;
+wire   [63:0] tmp_cast_fu_96_p1;
 reg   [4:0] empty_fu_30;
-wire   [4:0] empty_465_fu_76_p2;
+wire   [4:0] empty_404_fu_76_p2;
 wire    ap_loop_init;
 reg   [4:0] ap_sig_allocacmp_p_load;
 reg    A24_we0_local;
-wire   [0:0] empty_466_fu_82_p1;
+wire   [0:0] empty_405_fu_82_p1;
 reg    A24_ce0_local;
 reg    A24_2_we0_local;
 reg    A24_2_ce0_local;
@@ -115,7 +115,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((exitcond6720_fu_70_p2 == 1'd0)) begin
-            empty_fu_30 <= empty_465_fu_76_p2;
+            empty_fu_30 <= empty_404_fu_76_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             empty_fu_30 <= 5'd0;
         end
@@ -131,7 +131,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((empty_466_fu_82_p1 == 1'd1) & (exitcond6720_fu_70_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((empty_405_fu_82_p1 == 1'd1) & (exitcond6720_fu_70_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         A24_2_we0_local = 1'b1;
     end else begin
         A24_2_we0_local = 1'b0;
@@ -147,7 +147,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((empty_466_fu_82_p1 == 1'd0) & (exitcond6720_fu_70_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((empty_405_fu_82_p1 == 1'd0) & (exitcond6720_fu_70_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         A24_we0_local = 1'b1;
     end else begin
         A24_we0_local = 1'b0;
@@ -241,9 +241,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign empty_465_fu_76_p2 = (ap_sig_allocacmp_p_load + 5'd1);
+assign empty_404_fu_76_p2 = (ap_sig_allocacmp_p_load + 5'd1);
 
-assign empty_466_fu_82_p1 = ap_sig_allocacmp_p_load[0:0];
+assign empty_405_fu_82_p1 = ap_sig_allocacmp_p_load[0:0];
 
 assign exitcond6720_fu_70_p2 = ((ap_sig_allocacmp_p_load == 5'd16) ? 1'b1 : 1'b0);
 

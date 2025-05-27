@@ -6,146 +6,56 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="sikep503_kem_enc_hw_sikep503_kem_enc_hw,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=822,HLS_SYN_DSP=0,HLS_SYN_FF=1118031,HLS_SYN_LUT=1642281,HLS_VERSION=2024_2_2}" *)
+(* CORE_GENERATION_INFO="sikep503_kem_enc_hw_sikep503_kem_enc_hw,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.243000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=903,HLS_SYN_DSP=0,HLS_SYN_FF=1112367,HLS_SYN_LUT=1640856,HLS_VERSION=2024_2_2}" *)
 
 module sikep503_kem_enc_hw (
         ap_clk,
         ap_rst_n,
-        m_axi_gmem0_AWVALID,
-        m_axi_gmem0_AWREADY,
-        m_axi_gmem0_AWADDR,
-        m_axi_gmem0_AWID,
-        m_axi_gmem0_AWLEN,
-        m_axi_gmem0_AWSIZE,
-        m_axi_gmem0_AWBURST,
-        m_axi_gmem0_AWLOCK,
-        m_axi_gmem0_AWCACHE,
-        m_axi_gmem0_AWPROT,
-        m_axi_gmem0_AWQOS,
-        m_axi_gmem0_AWREGION,
-        m_axi_gmem0_AWUSER,
-        m_axi_gmem0_WVALID,
-        m_axi_gmem0_WREADY,
-        m_axi_gmem0_WDATA,
-        m_axi_gmem0_WSTRB,
-        m_axi_gmem0_WLAST,
-        m_axi_gmem0_WID,
-        m_axi_gmem0_WUSER,
-        m_axi_gmem0_ARVALID,
-        m_axi_gmem0_ARREADY,
-        m_axi_gmem0_ARADDR,
-        m_axi_gmem0_ARID,
-        m_axi_gmem0_ARLEN,
-        m_axi_gmem0_ARSIZE,
-        m_axi_gmem0_ARBURST,
-        m_axi_gmem0_ARLOCK,
-        m_axi_gmem0_ARCACHE,
-        m_axi_gmem0_ARPROT,
-        m_axi_gmem0_ARQOS,
-        m_axi_gmem0_ARREGION,
-        m_axi_gmem0_ARUSER,
-        m_axi_gmem0_RVALID,
-        m_axi_gmem0_RREADY,
-        m_axi_gmem0_RDATA,
-        m_axi_gmem0_RLAST,
-        m_axi_gmem0_RID,
-        m_axi_gmem0_RUSER,
-        m_axi_gmem0_RRESP,
-        m_axi_gmem0_BVALID,
-        m_axi_gmem0_BREADY,
-        m_axi_gmem0_BRESP,
-        m_axi_gmem0_BID,
-        m_axi_gmem0_BUSER,
-        m_axi_gmem1_AWVALID,
-        m_axi_gmem1_AWREADY,
-        m_axi_gmem1_AWADDR,
-        m_axi_gmem1_AWID,
-        m_axi_gmem1_AWLEN,
-        m_axi_gmem1_AWSIZE,
-        m_axi_gmem1_AWBURST,
-        m_axi_gmem1_AWLOCK,
-        m_axi_gmem1_AWCACHE,
-        m_axi_gmem1_AWPROT,
-        m_axi_gmem1_AWQOS,
-        m_axi_gmem1_AWREGION,
-        m_axi_gmem1_AWUSER,
-        m_axi_gmem1_WVALID,
-        m_axi_gmem1_WREADY,
-        m_axi_gmem1_WDATA,
-        m_axi_gmem1_WSTRB,
-        m_axi_gmem1_WLAST,
-        m_axi_gmem1_WID,
-        m_axi_gmem1_WUSER,
-        m_axi_gmem1_ARVALID,
-        m_axi_gmem1_ARREADY,
-        m_axi_gmem1_ARADDR,
-        m_axi_gmem1_ARID,
-        m_axi_gmem1_ARLEN,
-        m_axi_gmem1_ARSIZE,
-        m_axi_gmem1_ARBURST,
-        m_axi_gmem1_ARLOCK,
-        m_axi_gmem1_ARCACHE,
-        m_axi_gmem1_ARPROT,
-        m_axi_gmem1_ARQOS,
-        m_axi_gmem1_ARREGION,
-        m_axi_gmem1_ARUSER,
-        m_axi_gmem1_RVALID,
-        m_axi_gmem1_RREADY,
-        m_axi_gmem1_RDATA,
-        m_axi_gmem1_RLAST,
-        m_axi_gmem1_RID,
-        m_axi_gmem1_RUSER,
-        m_axi_gmem1_RRESP,
-        m_axi_gmem1_BVALID,
-        m_axi_gmem1_BREADY,
-        m_axi_gmem1_BRESP,
-        m_axi_gmem1_BID,
-        m_axi_gmem1_BUSER,
-        m_axi_gmem2_AWVALID,
-        m_axi_gmem2_AWREADY,
-        m_axi_gmem2_AWADDR,
-        m_axi_gmem2_AWID,
-        m_axi_gmem2_AWLEN,
-        m_axi_gmem2_AWSIZE,
-        m_axi_gmem2_AWBURST,
-        m_axi_gmem2_AWLOCK,
-        m_axi_gmem2_AWCACHE,
-        m_axi_gmem2_AWPROT,
-        m_axi_gmem2_AWQOS,
-        m_axi_gmem2_AWREGION,
-        m_axi_gmem2_AWUSER,
-        m_axi_gmem2_WVALID,
-        m_axi_gmem2_WREADY,
-        m_axi_gmem2_WDATA,
-        m_axi_gmem2_WSTRB,
-        m_axi_gmem2_WLAST,
-        m_axi_gmem2_WID,
-        m_axi_gmem2_WUSER,
-        m_axi_gmem2_ARVALID,
-        m_axi_gmem2_ARREADY,
-        m_axi_gmem2_ARADDR,
-        m_axi_gmem2_ARID,
-        m_axi_gmem2_ARLEN,
-        m_axi_gmem2_ARSIZE,
-        m_axi_gmem2_ARBURST,
-        m_axi_gmem2_ARLOCK,
-        m_axi_gmem2_ARCACHE,
-        m_axi_gmem2_ARPROT,
-        m_axi_gmem2_ARQOS,
-        m_axi_gmem2_ARREGION,
-        m_axi_gmem2_ARUSER,
-        m_axi_gmem2_RVALID,
-        m_axi_gmem2_RREADY,
-        m_axi_gmem2_RDATA,
-        m_axi_gmem2_RLAST,
-        m_axi_gmem2_RID,
-        m_axi_gmem2_RUSER,
-        m_axi_gmem2_RRESP,
-        m_axi_gmem2_BVALID,
-        m_axi_gmem2_BREADY,
-        m_axi_gmem2_BRESP,
-        m_axi_gmem2_BID,
-        m_axi_gmem2_BUSER,
+        m_axi_gmem_AWVALID,
+        m_axi_gmem_AWREADY,
+        m_axi_gmem_AWADDR,
+        m_axi_gmem_AWID,
+        m_axi_gmem_AWLEN,
+        m_axi_gmem_AWSIZE,
+        m_axi_gmem_AWBURST,
+        m_axi_gmem_AWLOCK,
+        m_axi_gmem_AWCACHE,
+        m_axi_gmem_AWPROT,
+        m_axi_gmem_AWQOS,
+        m_axi_gmem_AWREGION,
+        m_axi_gmem_AWUSER,
+        m_axi_gmem_WVALID,
+        m_axi_gmem_WREADY,
+        m_axi_gmem_WDATA,
+        m_axi_gmem_WSTRB,
+        m_axi_gmem_WLAST,
+        m_axi_gmem_WID,
+        m_axi_gmem_WUSER,
+        m_axi_gmem_ARVALID,
+        m_axi_gmem_ARREADY,
+        m_axi_gmem_ARADDR,
+        m_axi_gmem_ARID,
+        m_axi_gmem_ARLEN,
+        m_axi_gmem_ARSIZE,
+        m_axi_gmem_ARBURST,
+        m_axi_gmem_ARLOCK,
+        m_axi_gmem_ARCACHE,
+        m_axi_gmem_ARPROT,
+        m_axi_gmem_ARQOS,
+        m_axi_gmem_ARREGION,
+        m_axi_gmem_ARUSER,
+        m_axi_gmem_RVALID,
+        m_axi_gmem_RREADY,
+        m_axi_gmem_RDATA,
+        m_axi_gmem_RLAST,
+        m_axi_gmem_RID,
+        m_axi_gmem_RUSER,
+        m_axi_gmem_RRESP,
+        m_axi_gmem_BVALID,
+        m_axi_gmem_BREADY,
+        m_axi_gmem_BRESP,
+        m_axi_gmem_BID,
+        m_axi_gmem_BUSER,
         s_axi_control_AWVALID,
         s_axi_control_AWREADY,
         s_axi_control_AWADDR,
@@ -172,185 +82,71 @@ parameter    ap_ST_fsm_state3 = 3'd4;
 parameter    C_S_AXI_CONTROL_DATA_WIDTH = 32;
 parameter    C_S_AXI_CONTROL_ADDR_WIDTH = 6;
 parameter    C_S_AXI_DATA_WIDTH = 32;
-parameter    C_M_AXI_GMEM0_ID_WIDTH = 1;
-parameter    C_M_AXI_GMEM0_ADDR_WIDTH = 32;
-parameter    C_M_AXI_GMEM0_DATA_WIDTH = 32;
-parameter    C_M_AXI_GMEM0_AWUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM0_ARUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM0_WUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM0_RUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM0_BUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM0_USER_VALUE = 0;
-parameter    C_M_AXI_GMEM0_PROT_VALUE = 0;
-parameter    C_M_AXI_GMEM0_CACHE_VALUE = 3;
+parameter    C_M_AXI_GMEM_ID_WIDTH = 1;
+parameter    C_M_AXI_GMEM_ADDR_WIDTH = 64;
+parameter    C_M_AXI_GMEM_DATA_WIDTH = 32;
+parameter    C_M_AXI_GMEM_AWUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_ARUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_WUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_RUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_BUSER_WIDTH = 1;
+parameter    C_M_AXI_GMEM_USER_VALUE = 0;
+parameter    C_M_AXI_GMEM_PROT_VALUE = 0;
+parameter    C_M_AXI_GMEM_CACHE_VALUE = 3;
 parameter    C_M_AXI_DATA_WIDTH = 32;
-parameter    C_M_AXI_GMEM1_ID_WIDTH = 1;
-parameter    C_M_AXI_GMEM1_ADDR_WIDTH = 32;
-parameter    C_M_AXI_GMEM1_DATA_WIDTH = 32;
-parameter    C_M_AXI_GMEM1_AWUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM1_ARUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM1_WUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM1_RUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM1_BUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM1_USER_VALUE = 0;
-parameter    C_M_AXI_GMEM1_PROT_VALUE = 0;
-parameter    C_M_AXI_GMEM1_CACHE_VALUE = 3;
-parameter    C_M_AXI_GMEM2_ID_WIDTH = 1;
-parameter    C_M_AXI_GMEM2_ADDR_WIDTH = 32;
-parameter    C_M_AXI_GMEM2_DATA_WIDTH = 32;
-parameter    C_M_AXI_GMEM2_AWUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM2_ARUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM2_WUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM2_RUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM2_BUSER_WIDTH = 1;
-parameter    C_M_AXI_GMEM2_USER_VALUE = 0;
-parameter    C_M_AXI_GMEM2_PROT_VALUE = 0;
-parameter    C_M_AXI_GMEM2_CACHE_VALUE = 3;
 
 parameter C_S_AXI_CONTROL_WSTRB_WIDTH = (32 / 8);
 parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
-parameter C_M_AXI_GMEM0_WSTRB_WIDTH = (32 / 8);
+parameter C_M_AXI_GMEM_WSTRB_WIDTH = (32 / 8);
 parameter C_M_AXI_WSTRB_WIDTH = (32 / 8);
-parameter C_M_AXI_GMEM1_WSTRB_WIDTH = (32 / 8);
-parameter C_M_AXI_GMEM2_WSTRB_WIDTH = (32 / 8);
 
 input   ap_clk;
 input   ap_rst_n;
-output   m_axi_gmem0_AWVALID;
-input   m_axi_gmem0_AWREADY;
-output  [C_M_AXI_GMEM0_ADDR_WIDTH - 1:0] m_axi_gmem0_AWADDR;
-output  [C_M_AXI_GMEM0_ID_WIDTH - 1:0] m_axi_gmem0_AWID;
-output  [7:0] m_axi_gmem0_AWLEN;
-output  [2:0] m_axi_gmem0_AWSIZE;
-output  [1:0] m_axi_gmem0_AWBURST;
-output  [1:0] m_axi_gmem0_AWLOCK;
-output  [3:0] m_axi_gmem0_AWCACHE;
-output  [2:0] m_axi_gmem0_AWPROT;
-output  [3:0] m_axi_gmem0_AWQOS;
-output  [3:0] m_axi_gmem0_AWREGION;
-output  [C_M_AXI_GMEM0_AWUSER_WIDTH - 1:0] m_axi_gmem0_AWUSER;
-output   m_axi_gmem0_WVALID;
-input   m_axi_gmem0_WREADY;
-output  [C_M_AXI_GMEM0_DATA_WIDTH - 1:0] m_axi_gmem0_WDATA;
-output  [C_M_AXI_GMEM0_WSTRB_WIDTH - 1:0] m_axi_gmem0_WSTRB;
-output   m_axi_gmem0_WLAST;
-output  [C_M_AXI_GMEM0_ID_WIDTH - 1:0] m_axi_gmem0_WID;
-output  [C_M_AXI_GMEM0_WUSER_WIDTH - 1:0] m_axi_gmem0_WUSER;
-output   m_axi_gmem0_ARVALID;
-input   m_axi_gmem0_ARREADY;
-output  [C_M_AXI_GMEM0_ADDR_WIDTH - 1:0] m_axi_gmem0_ARADDR;
-output  [C_M_AXI_GMEM0_ID_WIDTH - 1:0] m_axi_gmem0_ARID;
-output  [7:0] m_axi_gmem0_ARLEN;
-output  [2:0] m_axi_gmem0_ARSIZE;
-output  [1:0] m_axi_gmem0_ARBURST;
-output  [1:0] m_axi_gmem0_ARLOCK;
-output  [3:0] m_axi_gmem0_ARCACHE;
-output  [2:0] m_axi_gmem0_ARPROT;
-output  [3:0] m_axi_gmem0_ARQOS;
-output  [3:0] m_axi_gmem0_ARREGION;
-output  [C_M_AXI_GMEM0_ARUSER_WIDTH - 1:0] m_axi_gmem0_ARUSER;
-input   m_axi_gmem0_RVALID;
-output   m_axi_gmem0_RREADY;
-input  [C_M_AXI_GMEM0_DATA_WIDTH - 1:0] m_axi_gmem0_RDATA;
-input   m_axi_gmem0_RLAST;
-input  [C_M_AXI_GMEM0_ID_WIDTH - 1:0] m_axi_gmem0_RID;
-input  [C_M_AXI_GMEM0_RUSER_WIDTH - 1:0] m_axi_gmem0_RUSER;
-input  [1:0] m_axi_gmem0_RRESP;
-input   m_axi_gmem0_BVALID;
-output   m_axi_gmem0_BREADY;
-input  [1:0] m_axi_gmem0_BRESP;
-input  [C_M_AXI_GMEM0_ID_WIDTH - 1:0] m_axi_gmem0_BID;
-input  [C_M_AXI_GMEM0_BUSER_WIDTH - 1:0] m_axi_gmem0_BUSER;
-output   m_axi_gmem1_AWVALID;
-input   m_axi_gmem1_AWREADY;
-output  [C_M_AXI_GMEM1_ADDR_WIDTH - 1:0] m_axi_gmem1_AWADDR;
-output  [C_M_AXI_GMEM1_ID_WIDTH - 1:0] m_axi_gmem1_AWID;
-output  [7:0] m_axi_gmem1_AWLEN;
-output  [2:0] m_axi_gmem1_AWSIZE;
-output  [1:0] m_axi_gmem1_AWBURST;
-output  [1:0] m_axi_gmem1_AWLOCK;
-output  [3:0] m_axi_gmem1_AWCACHE;
-output  [2:0] m_axi_gmem1_AWPROT;
-output  [3:0] m_axi_gmem1_AWQOS;
-output  [3:0] m_axi_gmem1_AWREGION;
-output  [C_M_AXI_GMEM1_AWUSER_WIDTH - 1:0] m_axi_gmem1_AWUSER;
-output   m_axi_gmem1_WVALID;
-input   m_axi_gmem1_WREADY;
-output  [C_M_AXI_GMEM1_DATA_WIDTH - 1:0] m_axi_gmem1_WDATA;
-output  [C_M_AXI_GMEM1_WSTRB_WIDTH - 1:0] m_axi_gmem1_WSTRB;
-output   m_axi_gmem1_WLAST;
-output  [C_M_AXI_GMEM1_ID_WIDTH - 1:0] m_axi_gmem1_WID;
-output  [C_M_AXI_GMEM1_WUSER_WIDTH - 1:0] m_axi_gmem1_WUSER;
-output   m_axi_gmem1_ARVALID;
-input   m_axi_gmem1_ARREADY;
-output  [C_M_AXI_GMEM1_ADDR_WIDTH - 1:0] m_axi_gmem1_ARADDR;
-output  [C_M_AXI_GMEM1_ID_WIDTH - 1:0] m_axi_gmem1_ARID;
-output  [7:0] m_axi_gmem1_ARLEN;
-output  [2:0] m_axi_gmem1_ARSIZE;
-output  [1:0] m_axi_gmem1_ARBURST;
-output  [1:0] m_axi_gmem1_ARLOCK;
-output  [3:0] m_axi_gmem1_ARCACHE;
-output  [2:0] m_axi_gmem1_ARPROT;
-output  [3:0] m_axi_gmem1_ARQOS;
-output  [3:0] m_axi_gmem1_ARREGION;
-output  [C_M_AXI_GMEM1_ARUSER_WIDTH - 1:0] m_axi_gmem1_ARUSER;
-input   m_axi_gmem1_RVALID;
-output   m_axi_gmem1_RREADY;
-input  [C_M_AXI_GMEM1_DATA_WIDTH - 1:0] m_axi_gmem1_RDATA;
-input   m_axi_gmem1_RLAST;
-input  [C_M_AXI_GMEM1_ID_WIDTH - 1:0] m_axi_gmem1_RID;
-input  [C_M_AXI_GMEM1_RUSER_WIDTH - 1:0] m_axi_gmem1_RUSER;
-input  [1:0] m_axi_gmem1_RRESP;
-input   m_axi_gmem1_BVALID;
-output   m_axi_gmem1_BREADY;
-input  [1:0] m_axi_gmem1_BRESP;
-input  [C_M_AXI_GMEM1_ID_WIDTH - 1:0] m_axi_gmem1_BID;
-input  [C_M_AXI_GMEM1_BUSER_WIDTH - 1:0] m_axi_gmem1_BUSER;
-output   m_axi_gmem2_AWVALID;
-input   m_axi_gmem2_AWREADY;
-output  [C_M_AXI_GMEM2_ADDR_WIDTH - 1:0] m_axi_gmem2_AWADDR;
-output  [C_M_AXI_GMEM2_ID_WIDTH - 1:0] m_axi_gmem2_AWID;
-output  [7:0] m_axi_gmem2_AWLEN;
-output  [2:0] m_axi_gmem2_AWSIZE;
-output  [1:0] m_axi_gmem2_AWBURST;
-output  [1:0] m_axi_gmem2_AWLOCK;
-output  [3:0] m_axi_gmem2_AWCACHE;
-output  [2:0] m_axi_gmem2_AWPROT;
-output  [3:0] m_axi_gmem2_AWQOS;
-output  [3:0] m_axi_gmem2_AWREGION;
-output  [C_M_AXI_GMEM2_AWUSER_WIDTH - 1:0] m_axi_gmem2_AWUSER;
-output   m_axi_gmem2_WVALID;
-input   m_axi_gmem2_WREADY;
-output  [C_M_AXI_GMEM2_DATA_WIDTH - 1:0] m_axi_gmem2_WDATA;
-output  [C_M_AXI_GMEM2_WSTRB_WIDTH - 1:0] m_axi_gmem2_WSTRB;
-output   m_axi_gmem2_WLAST;
-output  [C_M_AXI_GMEM2_ID_WIDTH - 1:0] m_axi_gmem2_WID;
-output  [C_M_AXI_GMEM2_WUSER_WIDTH - 1:0] m_axi_gmem2_WUSER;
-output   m_axi_gmem2_ARVALID;
-input   m_axi_gmem2_ARREADY;
-output  [C_M_AXI_GMEM2_ADDR_WIDTH - 1:0] m_axi_gmem2_ARADDR;
-output  [C_M_AXI_GMEM2_ID_WIDTH - 1:0] m_axi_gmem2_ARID;
-output  [7:0] m_axi_gmem2_ARLEN;
-output  [2:0] m_axi_gmem2_ARSIZE;
-output  [1:0] m_axi_gmem2_ARBURST;
-output  [1:0] m_axi_gmem2_ARLOCK;
-output  [3:0] m_axi_gmem2_ARCACHE;
-output  [2:0] m_axi_gmem2_ARPROT;
-output  [3:0] m_axi_gmem2_ARQOS;
-output  [3:0] m_axi_gmem2_ARREGION;
-output  [C_M_AXI_GMEM2_ARUSER_WIDTH - 1:0] m_axi_gmem2_ARUSER;
-input   m_axi_gmem2_RVALID;
-output   m_axi_gmem2_RREADY;
-input  [C_M_AXI_GMEM2_DATA_WIDTH - 1:0] m_axi_gmem2_RDATA;
-input   m_axi_gmem2_RLAST;
-input  [C_M_AXI_GMEM2_ID_WIDTH - 1:0] m_axi_gmem2_RID;
-input  [C_M_AXI_GMEM2_RUSER_WIDTH - 1:0] m_axi_gmem2_RUSER;
-input  [1:0] m_axi_gmem2_RRESP;
-input   m_axi_gmem2_BVALID;
-output   m_axi_gmem2_BREADY;
-input  [1:0] m_axi_gmem2_BRESP;
-input  [C_M_AXI_GMEM2_ID_WIDTH - 1:0] m_axi_gmem2_BID;
-input  [C_M_AXI_GMEM2_BUSER_WIDTH - 1:0] m_axi_gmem2_BUSER;
+output   m_axi_gmem_AWVALID;
+input   m_axi_gmem_AWREADY;
+output  [C_M_AXI_GMEM_ADDR_WIDTH - 1:0] m_axi_gmem_AWADDR;
+output  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_AWID;
+output  [7:0] m_axi_gmem_AWLEN;
+output  [2:0] m_axi_gmem_AWSIZE;
+output  [1:0] m_axi_gmem_AWBURST;
+output  [1:0] m_axi_gmem_AWLOCK;
+output  [3:0] m_axi_gmem_AWCACHE;
+output  [2:0] m_axi_gmem_AWPROT;
+output  [3:0] m_axi_gmem_AWQOS;
+output  [3:0] m_axi_gmem_AWREGION;
+output  [C_M_AXI_GMEM_AWUSER_WIDTH - 1:0] m_axi_gmem_AWUSER;
+output   m_axi_gmem_WVALID;
+input   m_axi_gmem_WREADY;
+output  [C_M_AXI_GMEM_DATA_WIDTH - 1:0] m_axi_gmem_WDATA;
+output  [C_M_AXI_GMEM_WSTRB_WIDTH - 1:0] m_axi_gmem_WSTRB;
+output   m_axi_gmem_WLAST;
+output  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_WID;
+output  [C_M_AXI_GMEM_WUSER_WIDTH - 1:0] m_axi_gmem_WUSER;
+output   m_axi_gmem_ARVALID;
+input   m_axi_gmem_ARREADY;
+output  [C_M_AXI_GMEM_ADDR_WIDTH - 1:0] m_axi_gmem_ARADDR;
+output  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_ARID;
+output  [7:0] m_axi_gmem_ARLEN;
+output  [2:0] m_axi_gmem_ARSIZE;
+output  [1:0] m_axi_gmem_ARBURST;
+output  [1:0] m_axi_gmem_ARLOCK;
+output  [3:0] m_axi_gmem_ARCACHE;
+output  [2:0] m_axi_gmem_ARPROT;
+output  [3:0] m_axi_gmem_ARQOS;
+output  [3:0] m_axi_gmem_ARREGION;
+output  [C_M_AXI_GMEM_ARUSER_WIDTH - 1:0] m_axi_gmem_ARUSER;
+input   m_axi_gmem_RVALID;
+output   m_axi_gmem_RREADY;
+input  [C_M_AXI_GMEM_DATA_WIDTH - 1:0] m_axi_gmem_RDATA;
+input   m_axi_gmem_RLAST;
+input  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_RID;
+input  [C_M_AXI_GMEM_RUSER_WIDTH - 1:0] m_axi_gmem_RUSER;
+input  [1:0] m_axi_gmem_RRESP;
+input   m_axi_gmem_BVALID;
+output   m_axi_gmem_BREADY;
+input  [1:0] m_axi_gmem_BRESP;
+input  [C_M_AXI_GMEM_ID_WIDTH - 1:0] m_axi_gmem_BID;
+input  [C_M_AXI_GMEM_BUSER_WIDTH - 1:0] m_axi_gmem_BUSER;
 input   s_axi_control_AWVALID;
 output   s_axi_control_AWREADY;
 input  [C_S_AXI_CONTROL_ADDR_WIDTH - 1:0] s_axi_control_AWADDR;
@@ -377,144 +173,61 @@ reg    ap_idle;
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_ready;
-wire   [31:0] ct;
-wire   [31:0] pk;
-wire   [31:0] ss;
-reg   [31:0] ss_read_reg_157;
-reg   [31:0] pk_read_reg_162;
-reg   [31:0] ct_read_reg_167;
-wire    grp_crypto_kem_enc_1_fu_110_ap_start;
-wire    grp_crypto_kem_enc_1_fu_110_ap_done;
-wire    grp_crypto_kem_enc_1_fu_110_ap_idle;
-wire    grp_crypto_kem_enc_1_fu_110_ap_ready;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWVALID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWADDR;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWLEN;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWSIZE;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWBURST;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWLOCK;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWCACHE;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWPROT;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWQOS;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWREGION;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WVALID;
-wire   [7:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WDATA;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WSTRB;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WLAST;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WID;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARVALID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARADDR;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARLEN;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARSIZE;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARBURST;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARLOCK;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARCACHE;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARPROT;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARQOS;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARREGION;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_RREADY;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_BREADY;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWVALID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWADDR;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWLEN;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWSIZE;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWBURST;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWLOCK;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWCACHE;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWPROT;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWQOS;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWREGION;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WVALID;
-wire   [7:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WDATA;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WSTRB;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WLAST;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WID;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARVALID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARADDR;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARLEN;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARSIZE;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARBURST;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARLOCK;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARCACHE;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARPROT;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARQOS;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARREGION;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_RREADY;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_BREADY;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWVALID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWADDR;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWLEN;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWSIZE;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWBURST;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWLOCK;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWCACHE;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWPROT;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWQOS;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWREGION;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WVALID;
-wire   [7:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WDATA;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WSTRB;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WLAST;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WID;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARVALID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARADDR;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARID;
-wire   [31:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARLEN;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARSIZE;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARBURST;
-wire   [1:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARLOCK;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARCACHE;
-wire   [2:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARPROT;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARQOS;
-wire   [3:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARREGION;
-wire   [0:0] grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARUSER;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_RREADY;
-wire    grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_BREADY;
-reg    gmem0_0_AWVALID;
-wire    gmem0_0_AWREADY;
-reg    gmem0_0_WVALID;
-wire    gmem0_0_WREADY;
-reg    gmem0_0_ARVALID;
-wire    gmem0_0_ARREADY;
-wire    gmem0_0_RVALID;
-reg    gmem0_0_RREADY;
-wire   [7:0] gmem0_0_RDATA;
-wire   [10:0] gmem0_0_RFIFONUM;
-wire    gmem0_0_BVALID;
-reg    gmem0_0_BREADY;
-reg    gmem1_0_AWVALID;
-wire    gmem1_0_AWREADY;
-reg    gmem1_0_WVALID;
-wire    gmem1_0_WREADY;
-wire    gmem1_0_ARREADY;
-wire    gmem1_0_RVALID;
-wire   [7:0] gmem1_0_RDATA;
-wire   [10:0] gmem1_0_RFIFONUM;
-wire    gmem1_0_BVALID;
-reg    gmem1_0_BREADY;
-wire    gmem2_0_AWREADY;
-wire    gmem2_0_WREADY;
-reg    gmem2_0_ARVALID;
-wire    gmem2_0_ARREADY;
-wire    gmem2_0_RVALID;
-reg    gmem2_0_RREADY;
-wire   [7:0] gmem2_0_RDATA;
-wire   [10:0] gmem2_0_RFIFONUM;
-wire    gmem2_0_BVALID;
-reg    grp_crypto_kem_enc_1_fu_110_ap_start_reg;
+wire   [63:0] ct;
+wire   [63:0] pk;
+wire   [63:0] ss;
+reg   [63:0] ss_read_reg_147;
+reg   [63:0] pk_read_reg_152;
+reg   [63:0] ct_read_reg_157;
+wire    grp_crypto_kem_enc_1_fu_104_ap_start;
+wire    grp_crypto_kem_enc_1_fu_104_ap_done;
+wire    grp_crypto_kem_enc_1_fu_104_ap_idle;
+wire    grp_crypto_kem_enc_1_fu_104_ap_ready;
+wire    grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWVALID;
+wire   [63:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWADDR;
+wire   [0:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWID;
+wire   [31:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWLEN;
+wire   [2:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWSIZE;
+wire   [1:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWBURST;
+wire   [1:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWLOCK;
+wire   [3:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWCACHE;
+wire   [2:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWPROT;
+wire   [3:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWQOS;
+wire   [3:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWREGION;
+wire   [0:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWUSER;
+wire    grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WVALID;
+wire   [7:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WDATA;
+wire   [0:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WSTRB;
+wire    grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WLAST;
+wire   [0:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WID;
+wire   [0:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WUSER;
+wire    grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARVALID;
+wire   [63:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARADDR;
+wire   [0:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARID;
+wire   [31:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARLEN;
+wire   [2:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARSIZE;
+wire   [1:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARBURST;
+wire   [1:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARLOCK;
+wire   [3:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARCACHE;
+wire   [2:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARPROT;
+wire   [3:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARQOS;
+wire   [3:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARREGION;
+wire   [0:0] grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARUSER;
+wire    grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_RREADY;
+wire    grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_BREADY;
+reg    gmem_0_AWVALID;
+wire    gmem_0_AWREADY;
+reg    gmem_0_WVALID;
+wire    gmem_0_WREADY;
+reg    gmem_0_ARVALID;
+wire    gmem_0_ARREADY;
+wire    gmem_0_RVALID;
+reg    gmem_0_RREADY;
+wire   [7:0] gmem_0_RDATA;
+wire   [10:0] gmem_0_RFIFONUM;
+wire    gmem_0_BVALID;
+reg    gmem_0_BREADY;
+reg    grp_crypto_kem_enc_1_fu_104_ap_start_reg;
 wire    ap_CS_fsm_state2;
 wire    ap_CS_fsm_state3;
 reg   [2:0] ap_NS_fsm;
@@ -526,157 +239,65 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 3'd1;
-#0 grp_crypto_kem_enc_1_fu_110_ap_start_reg = 1'b0;
+#0 grp_crypto_kem_enc_1_fu_104_ap_start_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_crypto_kem_enc_1 grp_crypto_kem_enc_1_fu_110(
+sikep503_kem_enc_hw_crypto_kem_enc_1 grp_crypto_kem_enc_1_fu_104(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_crypto_kem_enc_1_fu_110_ap_start),
-    .ap_done(grp_crypto_kem_enc_1_fu_110_ap_done),
-    .ap_idle(grp_crypto_kem_enc_1_fu_110_ap_idle),
-    .ap_ready(grp_crypto_kem_enc_1_fu_110_ap_ready),
-    .m_axi_gmem0_0_AWVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWVALID),
-    .m_axi_gmem0_0_AWREADY(gmem0_0_AWREADY),
-    .m_axi_gmem0_0_AWADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWADDR),
-    .m_axi_gmem0_0_AWID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWID),
-    .m_axi_gmem0_0_AWLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWLEN),
-    .m_axi_gmem0_0_AWSIZE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWSIZE),
-    .m_axi_gmem0_0_AWBURST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWBURST),
-    .m_axi_gmem0_0_AWLOCK(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWLOCK),
-    .m_axi_gmem0_0_AWCACHE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWCACHE),
-    .m_axi_gmem0_0_AWPROT(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWPROT),
-    .m_axi_gmem0_0_AWQOS(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWQOS),
-    .m_axi_gmem0_0_AWREGION(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWREGION),
-    .m_axi_gmem0_0_AWUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWUSER),
-    .m_axi_gmem0_0_WVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WVALID),
-    .m_axi_gmem0_0_WREADY(gmem0_0_WREADY),
-    .m_axi_gmem0_0_WDATA(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WDATA),
-    .m_axi_gmem0_0_WSTRB(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WSTRB),
-    .m_axi_gmem0_0_WLAST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WLAST),
-    .m_axi_gmem0_0_WID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WID),
-    .m_axi_gmem0_0_WUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WUSER),
-    .m_axi_gmem0_0_ARVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARVALID),
-    .m_axi_gmem0_0_ARREADY(gmem0_0_ARREADY),
-    .m_axi_gmem0_0_ARADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARADDR),
-    .m_axi_gmem0_0_ARID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARID),
-    .m_axi_gmem0_0_ARLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARLEN),
-    .m_axi_gmem0_0_ARSIZE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARSIZE),
-    .m_axi_gmem0_0_ARBURST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARBURST),
-    .m_axi_gmem0_0_ARLOCK(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARLOCK),
-    .m_axi_gmem0_0_ARCACHE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARCACHE),
-    .m_axi_gmem0_0_ARPROT(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARPROT),
-    .m_axi_gmem0_0_ARQOS(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARQOS),
-    .m_axi_gmem0_0_ARREGION(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARREGION),
-    .m_axi_gmem0_0_ARUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARUSER),
-    .m_axi_gmem0_0_RVALID(gmem0_0_RVALID),
-    .m_axi_gmem0_0_RREADY(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_RREADY),
-    .m_axi_gmem0_0_RDATA(gmem0_0_RDATA),
-    .m_axi_gmem0_0_RLAST(1'b0),
-    .m_axi_gmem0_0_RID(1'd0),
-    .m_axi_gmem0_0_RFIFONUM(gmem0_0_RFIFONUM),
-    .m_axi_gmem0_0_RUSER(1'd0),
-    .m_axi_gmem0_0_RRESP(2'd0),
-    .m_axi_gmem0_0_BVALID(gmem0_0_BVALID),
-    .m_axi_gmem0_0_BREADY(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_BREADY),
-    .m_axi_gmem0_0_BRESP(2'd0),
-    .m_axi_gmem0_0_BID(1'd0),
-    .m_axi_gmem0_0_BUSER(1'd0),
-    .ct(ct_read_reg_167),
-    .m_axi_gmem1_0_AWVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWVALID),
-    .m_axi_gmem1_0_AWREADY(gmem1_0_AWREADY),
-    .m_axi_gmem1_0_AWADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWADDR),
-    .m_axi_gmem1_0_AWID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWID),
-    .m_axi_gmem1_0_AWLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWLEN),
-    .m_axi_gmem1_0_AWSIZE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWSIZE),
-    .m_axi_gmem1_0_AWBURST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWBURST),
-    .m_axi_gmem1_0_AWLOCK(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWLOCK),
-    .m_axi_gmem1_0_AWCACHE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWCACHE),
-    .m_axi_gmem1_0_AWPROT(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWPROT),
-    .m_axi_gmem1_0_AWQOS(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWQOS),
-    .m_axi_gmem1_0_AWREGION(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWREGION),
-    .m_axi_gmem1_0_AWUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWUSER),
-    .m_axi_gmem1_0_WVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WVALID),
-    .m_axi_gmem1_0_WREADY(gmem1_0_WREADY),
-    .m_axi_gmem1_0_WDATA(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WDATA),
-    .m_axi_gmem1_0_WSTRB(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WSTRB),
-    .m_axi_gmem1_0_WLAST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WLAST),
-    .m_axi_gmem1_0_WID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WID),
-    .m_axi_gmem1_0_WUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WUSER),
-    .m_axi_gmem1_0_ARVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARVALID),
-    .m_axi_gmem1_0_ARREADY(1'b0),
-    .m_axi_gmem1_0_ARADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARADDR),
-    .m_axi_gmem1_0_ARID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARID),
-    .m_axi_gmem1_0_ARLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARLEN),
-    .m_axi_gmem1_0_ARSIZE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARSIZE),
-    .m_axi_gmem1_0_ARBURST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARBURST),
-    .m_axi_gmem1_0_ARLOCK(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARLOCK),
-    .m_axi_gmem1_0_ARCACHE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARCACHE),
-    .m_axi_gmem1_0_ARPROT(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARPROT),
-    .m_axi_gmem1_0_ARQOS(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARQOS),
-    .m_axi_gmem1_0_ARREGION(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARREGION),
-    .m_axi_gmem1_0_ARUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_ARUSER),
-    .m_axi_gmem1_0_RVALID(1'b0),
-    .m_axi_gmem1_0_RREADY(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_RREADY),
-    .m_axi_gmem1_0_RDATA(8'd0),
-    .m_axi_gmem1_0_RLAST(1'b0),
-    .m_axi_gmem1_0_RID(1'd0),
-    .m_axi_gmem1_0_RFIFONUM(11'd0),
-    .m_axi_gmem1_0_RUSER(1'd0),
-    .m_axi_gmem1_0_RRESP(2'd0),
-    .m_axi_gmem1_0_BVALID(gmem1_0_BVALID),
-    .m_axi_gmem1_0_BREADY(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_BREADY),
-    .m_axi_gmem1_0_BRESP(2'd0),
-    .m_axi_gmem1_0_BID(1'd0),
-    .m_axi_gmem1_0_BUSER(1'd0),
-    .ss(pk_read_reg_162),
-    .m_axi_gmem2_0_AWVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWVALID),
-    .m_axi_gmem2_0_AWREADY(1'b0),
-    .m_axi_gmem2_0_AWADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWADDR),
-    .m_axi_gmem2_0_AWID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWID),
-    .m_axi_gmem2_0_AWLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWLEN),
-    .m_axi_gmem2_0_AWSIZE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWSIZE),
-    .m_axi_gmem2_0_AWBURST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWBURST),
-    .m_axi_gmem2_0_AWLOCK(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWLOCK),
-    .m_axi_gmem2_0_AWCACHE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWCACHE),
-    .m_axi_gmem2_0_AWPROT(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWPROT),
-    .m_axi_gmem2_0_AWQOS(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWQOS),
-    .m_axi_gmem2_0_AWREGION(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWREGION),
-    .m_axi_gmem2_0_AWUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_AWUSER),
-    .m_axi_gmem2_0_WVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WVALID),
-    .m_axi_gmem2_0_WREADY(1'b0),
-    .m_axi_gmem2_0_WDATA(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WDATA),
-    .m_axi_gmem2_0_WSTRB(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WSTRB),
-    .m_axi_gmem2_0_WLAST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WLAST),
-    .m_axi_gmem2_0_WID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WID),
-    .m_axi_gmem2_0_WUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_WUSER),
-    .m_axi_gmem2_0_ARVALID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARVALID),
-    .m_axi_gmem2_0_ARREADY(gmem2_0_ARREADY),
-    .m_axi_gmem2_0_ARADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARADDR),
-    .m_axi_gmem2_0_ARID(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARID),
-    .m_axi_gmem2_0_ARLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARLEN),
-    .m_axi_gmem2_0_ARSIZE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARSIZE),
-    .m_axi_gmem2_0_ARBURST(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARBURST),
-    .m_axi_gmem2_0_ARLOCK(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARLOCK),
-    .m_axi_gmem2_0_ARCACHE(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARCACHE),
-    .m_axi_gmem2_0_ARPROT(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARPROT),
-    .m_axi_gmem2_0_ARQOS(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARQOS),
-    .m_axi_gmem2_0_ARREGION(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARREGION),
-    .m_axi_gmem2_0_ARUSER(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARUSER),
-    .m_axi_gmem2_0_RVALID(gmem2_0_RVALID),
-    .m_axi_gmem2_0_RREADY(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_RREADY),
-    .m_axi_gmem2_0_RDATA(gmem2_0_RDATA),
-    .m_axi_gmem2_0_RLAST(1'b0),
-    .m_axi_gmem2_0_RID(1'd0),
-    .m_axi_gmem2_0_RFIFONUM(gmem2_0_RFIFONUM),
-    .m_axi_gmem2_0_RUSER(1'd0),
-    .m_axi_gmem2_0_RRESP(2'd0),
-    .m_axi_gmem2_0_BVALID(1'b0),
-    .m_axi_gmem2_0_BREADY(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_BREADY),
-    .m_axi_gmem2_0_BRESP(2'd0),
-    .m_axi_gmem2_0_BID(1'd0),
-    .m_axi_gmem2_0_BUSER(1'd0),
-    .pk(ss_read_reg_157)
+    .ap_start(grp_crypto_kem_enc_1_fu_104_ap_start),
+    .ap_done(grp_crypto_kem_enc_1_fu_104_ap_done),
+    .ap_idle(grp_crypto_kem_enc_1_fu_104_ap_idle),
+    .ap_ready(grp_crypto_kem_enc_1_fu_104_ap_ready),
+    .m_axi_gmem_0_AWVALID(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWVALID),
+    .m_axi_gmem_0_AWREADY(gmem_0_AWREADY),
+    .m_axi_gmem_0_AWADDR(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWADDR),
+    .m_axi_gmem_0_AWID(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWID),
+    .m_axi_gmem_0_AWLEN(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWLEN),
+    .m_axi_gmem_0_AWSIZE(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWSIZE),
+    .m_axi_gmem_0_AWBURST(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWBURST),
+    .m_axi_gmem_0_AWLOCK(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWLOCK),
+    .m_axi_gmem_0_AWCACHE(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWCACHE),
+    .m_axi_gmem_0_AWPROT(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWPROT),
+    .m_axi_gmem_0_AWQOS(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWQOS),
+    .m_axi_gmem_0_AWREGION(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWREGION),
+    .m_axi_gmem_0_AWUSER(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWUSER),
+    .m_axi_gmem_0_WVALID(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WVALID),
+    .m_axi_gmem_0_WREADY(gmem_0_WREADY),
+    .m_axi_gmem_0_WDATA(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WDATA),
+    .m_axi_gmem_0_WSTRB(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WSTRB),
+    .m_axi_gmem_0_WLAST(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WLAST),
+    .m_axi_gmem_0_WID(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WID),
+    .m_axi_gmem_0_WUSER(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WUSER),
+    .m_axi_gmem_0_ARVALID(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARVALID),
+    .m_axi_gmem_0_ARREADY(gmem_0_ARREADY),
+    .m_axi_gmem_0_ARADDR(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARADDR),
+    .m_axi_gmem_0_ARID(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARID),
+    .m_axi_gmem_0_ARLEN(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARLEN),
+    .m_axi_gmem_0_ARSIZE(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARSIZE),
+    .m_axi_gmem_0_ARBURST(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARBURST),
+    .m_axi_gmem_0_ARLOCK(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARLOCK),
+    .m_axi_gmem_0_ARCACHE(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARCACHE),
+    .m_axi_gmem_0_ARPROT(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARPROT),
+    .m_axi_gmem_0_ARQOS(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARQOS),
+    .m_axi_gmem_0_ARREGION(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARREGION),
+    .m_axi_gmem_0_ARUSER(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARUSER),
+    .m_axi_gmem_0_RVALID(gmem_0_RVALID),
+    .m_axi_gmem_0_RREADY(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_RREADY),
+    .m_axi_gmem_0_RDATA(gmem_0_RDATA),
+    .m_axi_gmem_0_RLAST(1'b0),
+    .m_axi_gmem_0_RID(1'd0),
+    .m_axi_gmem_0_RFIFONUM(gmem_0_RFIFONUM),
+    .m_axi_gmem_0_RUSER(1'd0),
+    .m_axi_gmem_0_RRESP(2'd0),
+    .m_axi_gmem_0_BVALID(gmem_0_BVALID),
+    .m_axi_gmem_0_BREADY(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_BREADY),
+    .m_axi_gmem_0_BRESP(2'd0),
+    .m_axi_gmem_0_BID(1'd0),
+    .m_axi_gmem_0_BUSER(1'd0),
+    .ct(ct_read_reg_157),
+    .ss(ss_read_reg_147),
+    .pk(pk_read_reg_152)
 );
 
 sikep503_kem_enc_hw_control_s_axi #(
@@ -713,274 +334,94 @@ control_s_axi_U(
     .ap_idle(ap_idle)
 );
 
-sikep503_kem_enc_hw_gmem0_m_axi #(
-    .CONSERVATIVE( 1 ),
-    .USER_MAXREQS( 4 ),
-    .MAX_READ_BURST_LENGTH( 16 ),
-    .MAX_WRITE_BURST_LENGTH( 16 ),
-    .C_M_AXI_ID_WIDTH( C_M_AXI_GMEM0_ID_WIDTH ),
-    .C_M_AXI_ADDR_WIDTH( C_M_AXI_GMEM0_ADDR_WIDTH ),
-    .C_M_AXI_DATA_WIDTH( C_M_AXI_GMEM0_DATA_WIDTH ),
-    .C_M_AXI_AWUSER_WIDTH( C_M_AXI_GMEM0_AWUSER_WIDTH ),
-    .C_M_AXI_ARUSER_WIDTH( C_M_AXI_GMEM0_ARUSER_WIDTH ),
-    .C_M_AXI_WUSER_WIDTH( C_M_AXI_GMEM0_WUSER_WIDTH ),
-    .C_M_AXI_RUSER_WIDTH( C_M_AXI_GMEM0_RUSER_WIDTH ),
-    .C_M_AXI_BUSER_WIDTH( C_M_AXI_GMEM0_BUSER_WIDTH ),
-    .C_USER_VALUE( C_M_AXI_GMEM0_USER_VALUE ),
-    .C_PROT_VALUE( C_M_AXI_GMEM0_PROT_VALUE ),
-    .C_CACHE_VALUE( C_M_AXI_GMEM0_CACHE_VALUE ),
-    .CH0_USER_RFIFONUM_WIDTH( 11 ),
-    .CH0_USER_DW( 8 ),
-    .CH0_USER_AW( 32 ),
-    .NUM_READ_OUTSTANDING( 16 ),
-    .NUM_WRITE_OUTSTANDING( 16 ))
-gmem0_m_axi_U(
-    .AWVALID(m_axi_gmem0_AWVALID),
-    .AWREADY(m_axi_gmem0_AWREADY),
-    .AWADDR(m_axi_gmem0_AWADDR),
-    .AWID(m_axi_gmem0_AWID),
-    .AWLEN(m_axi_gmem0_AWLEN),
-    .AWSIZE(m_axi_gmem0_AWSIZE),
-    .AWBURST(m_axi_gmem0_AWBURST),
-    .AWLOCK(m_axi_gmem0_AWLOCK),
-    .AWCACHE(m_axi_gmem0_AWCACHE),
-    .AWPROT(m_axi_gmem0_AWPROT),
-    .AWQOS(m_axi_gmem0_AWQOS),
-    .AWREGION(m_axi_gmem0_AWREGION),
-    .AWUSER(m_axi_gmem0_AWUSER),
-    .WVALID(m_axi_gmem0_WVALID),
-    .WREADY(m_axi_gmem0_WREADY),
-    .WDATA(m_axi_gmem0_WDATA),
-    .WSTRB(m_axi_gmem0_WSTRB),
-    .WLAST(m_axi_gmem0_WLAST),
-    .WID(m_axi_gmem0_WID),
-    .WUSER(m_axi_gmem0_WUSER),
-    .ARVALID(m_axi_gmem0_ARVALID),
-    .ARREADY(m_axi_gmem0_ARREADY),
-    .ARADDR(m_axi_gmem0_ARADDR),
-    .ARID(m_axi_gmem0_ARID),
-    .ARLEN(m_axi_gmem0_ARLEN),
-    .ARSIZE(m_axi_gmem0_ARSIZE),
-    .ARBURST(m_axi_gmem0_ARBURST),
-    .ARLOCK(m_axi_gmem0_ARLOCK),
-    .ARCACHE(m_axi_gmem0_ARCACHE),
-    .ARPROT(m_axi_gmem0_ARPROT),
-    .ARQOS(m_axi_gmem0_ARQOS),
-    .ARREGION(m_axi_gmem0_ARREGION),
-    .ARUSER(m_axi_gmem0_ARUSER),
-    .RVALID(m_axi_gmem0_RVALID),
-    .RREADY(m_axi_gmem0_RREADY),
-    .RDATA(m_axi_gmem0_RDATA),
-    .RLAST(m_axi_gmem0_RLAST),
-    .RID(m_axi_gmem0_RID),
-    .RUSER(m_axi_gmem0_RUSER),
-    .RRESP(m_axi_gmem0_RRESP),
-    .BVALID(m_axi_gmem0_BVALID),
-    .BREADY(m_axi_gmem0_BREADY),
-    .BRESP(m_axi_gmem0_BRESP),
-    .BID(m_axi_gmem0_BID),
-    .BUSER(m_axi_gmem0_BUSER),
-    .ACLK(ap_clk),
-    .ARESET(ap_rst_n_inv),
-    .ACLK_EN(1'b1),
-    .I_CH0_ARVALID(gmem0_0_ARVALID),
-    .I_CH0_ARREADY(gmem0_0_ARREADY),
-    .I_CH0_ARADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARADDR),
-    .I_CH0_ARLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARLEN),
-    .I_CH0_RVALID(gmem0_0_RVALID),
-    .I_CH0_RREADY(gmem0_0_RREADY),
-    .I_CH0_RDATA(gmem0_0_RDATA),
-    .I_CH0_RFIFONUM(gmem0_0_RFIFONUM),
-    .I_CH0_AWVALID(gmem0_0_AWVALID),
-    .I_CH0_AWREADY(gmem0_0_AWREADY),
-    .I_CH0_AWADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWADDR),
-    .I_CH0_AWLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWLEN),
-    .I_CH0_WVALID(gmem0_0_WVALID),
-    .I_CH0_WREADY(gmem0_0_WREADY),
-    .I_CH0_WDATA(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WDATA),
-    .I_CH0_WSTRB(grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WSTRB),
-    .I_CH0_BVALID(gmem0_0_BVALID),
-    .I_CH0_BREADY(gmem0_0_BREADY)
-);
-
-sikep503_kem_enc_hw_gmem1_m_axi #(
-    .CONSERVATIVE( 1 ),
-    .USER_MAXREQS( 4 ),
-    .MAX_READ_BURST_LENGTH( 16 ),
-    .MAX_WRITE_BURST_LENGTH( 16 ),
-    .C_M_AXI_ID_WIDTH( C_M_AXI_GMEM1_ID_WIDTH ),
-    .C_M_AXI_ADDR_WIDTH( C_M_AXI_GMEM1_ADDR_WIDTH ),
-    .C_M_AXI_DATA_WIDTH( C_M_AXI_GMEM1_DATA_WIDTH ),
-    .C_M_AXI_AWUSER_WIDTH( C_M_AXI_GMEM1_AWUSER_WIDTH ),
-    .C_M_AXI_ARUSER_WIDTH( C_M_AXI_GMEM1_ARUSER_WIDTH ),
-    .C_M_AXI_WUSER_WIDTH( C_M_AXI_GMEM1_WUSER_WIDTH ),
-    .C_M_AXI_RUSER_WIDTH( C_M_AXI_GMEM1_RUSER_WIDTH ),
-    .C_M_AXI_BUSER_WIDTH( C_M_AXI_GMEM1_BUSER_WIDTH ),
-    .C_USER_VALUE( C_M_AXI_GMEM1_USER_VALUE ),
-    .C_PROT_VALUE( C_M_AXI_GMEM1_PROT_VALUE ),
-    .C_CACHE_VALUE( C_M_AXI_GMEM1_CACHE_VALUE ),
-    .CH0_USER_RFIFONUM_WIDTH( 11 ),
-    .CH0_USER_DW( 8 ),
-    .CH0_USER_AW( 32 ),
-    .NUM_READ_OUTSTANDING( 0 ),
-    .NUM_WRITE_OUTSTANDING( 16 ))
-gmem1_m_axi_U(
-    .AWVALID(m_axi_gmem1_AWVALID),
-    .AWREADY(m_axi_gmem1_AWREADY),
-    .AWADDR(m_axi_gmem1_AWADDR),
-    .AWID(m_axi_gmem1_AWID),
-    .AWLEN(m_axi_gmem1_AWLEN),
-    .AWSIZE(m_axi_gmem1_AWSIZE),
-    .AWBURST(m_axi_gmem1_AWBURST),
-    .AWLOCK(m_axi_gmem1_AWLOCK),
-    .AWCACHE(m_axi_gmem1_AWCACHE),
-    .AWPROT(m_axi_gmem1_AWPROT),
-    .AWQOS(m_axi_gmem1_AWQOS),
-    .AWREGION(m_axi_gmem1_AWREGION),
-    .AWUSER(m_axi_gmem1_AWUSER),
-    .WVALID(m_axi_gmem1_WVALID),
-    .WREADY(m_axi_gmem1_WREADY),
-    .WDATA(m_axi_gmem1_WDATA),
-    .WSTRB(m_axi_gmem1_WSTRB),
-    .WLAST(m_axi_gmem1_WLAST),
-    .WID(m_axi_gmem1_WID),
-    .WUSER(m_axi_gmem1_WUSER),
-    .ARVALID(m_axi_gmem1_ARVALID),
-    .ARREADY(m_axi_gmem1_ARREADY),
-    .ARADDR(m_axi_gmem1_ARADDR),
-    .ARID(m_axi_gmem1_ARID),
-    .ARLEN(m_axi_gmem1_ARLEN),
-    .ARSIZE(m_axi_gmem1_ARSIZE),
-    .ARBURST(m_axi_gmem1_ARBURST),
-    .ARLOCK(m_axi_gmem1_ARLOCK),
-    .ARCACHE(m_axi_gmem1_ARCACHE),
-    .ARPROT(m_axi_gmem1_ARPROT),
-    .ARQOS(m_axi_gmem1_ARQOS),
-    .ARREGION(m_axi_gmem1_ARREGION),
-    .ARUSER(m_axi_gmem1_ARUSER),
-    .RVALID(m_axi_gmem1_RVALID),
-    .RREADY(m_axi_gmem1_RREADY),
-    .RDATA(m_axi_gmem1_RDATA),
-    .RLAST(m_axi_gmem1_RLAST),
-    .RID(m_axi_gmem1_RID),
-    .RUSER(m_axi_gmem1_RUSER),
-    .RRESP(m_axi_gmem1_RRESP),
-    .BVALID(m_axi_gmem1_BVALID),
-    .BREADY(m_axi_gmem1_BREADY),
-    .BRESP(m_axi_gmem1_BRESP),
-    .BID(m_axi_gmem1_BID),
-    .BUSER(m_axi_gmem1_BUSER),
-    .ACLK(ap_clk),
-    .ARESET(ap_rst_n_inv),
-    .ACLK_EN(1'b1),
-    .I_CH0_ARVALID(1'b0),
-    .I_CH0_ARREADY(gmem1_0_ARREADY),
-    .I_CH0_ARADDR(32'd0),
-    .I_CH0_ARLEN(32'd0),
-    .I_CH0_RVALID(gmem1_0_RVALID),
-    .I_CH0_RREADY(1'b0),
-    .I_CH0_RDATA(gmem1_0_RDATA),
-    .I_CH0_RFIFONUM(gmem1_0_RFIFONUM),
-    .I_CH0_AWVALID(gmem1_0_AWVALID),
-    .I_CH0_AWREADY(gmem1_0_AWREADY),
-    .I_CH0_AWADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWADDR),
-    .I_CH0_AWLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWLEN),
-    .I_CH0_WVALID(gmem1_0_WVALID),
-    .I_CH0_WREADY(gmem1_0_WREADY),
-    .I_CH0_WDATA(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WDATA),
-    .I_CH0_WSTRB(grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WSTRB),
-    .I_CH0_BVALID(gmem1_0_BVALID),
-    .I_CH0_BREADY(gmem1_0_BREADY)
-);
-
-sikep503_kem_enc_hw_gmem2_m_axi #(
+sikep503_kem_enc_hw_gmem_m_axi #(
     .CONSERVATIVE( 1 ),
     .USER_MAXREQS( 7 ),
     .MAX_READ_BURST_LENGTH( 16 ),
     .MAX_WRITE_BURST_LENGTH( 16 ),
-    .C_M_AXI_ID_WIDTH( C_M_AXI_GMEM2_ID_WIDTH ),
-    .C_M_AXI_ADDR_WIDTH( C_M_AXI_GMEM2_ADDR_WIDTH ),
-    .C_M_AXI_DATA_WIDTH( C_M_AXI_GMEM2_DATA_WIDTH ),
-    .C_M_AXI_AWUSER_WIDTH( C_M_AXI_GMEM2_AWUSER_WIDTH ),
-    .C_M_AXI_ARUSER_WIDTH( C_M_AXI_GMEM2_ARUSER_WIDTH ),
-    .C_M_AXI_WUSER_WIDTH( C_M_AXI_GMEM2_WUSER_WIDTH ),
-    .C_M_AXI_RUSER_WIDTH( C_M_AXI_GMEM2_RUSER_WIDTH ),
-    .C_M_AXI_BUSER_WIDTH( C_M_AXI_GMEM2_BUSER_WIDTH ),
-    .C_USER_VALUE( C_M_AXI_GMEM2_USER_VALUE ),
-    .C_PROT_VALUE( C_M_AXI_GMEM2_PROT_VALUE ),
-    .C_CACHE_VALUE( C_M_AXI_GMEM2_CACHE_VALUE ),
+    .C_M_AXI_ID_WIDTH( C_M_AXI_GMEM_ID_WIDTH ),
+    .C_M_AXI_ADDR_WIDTH( C_M_AXI_GMEM_ADDR_WIDTH ),
+    .C_M_AXI_DATA_WIDTH( C_M_AXI_GMEM_DATA_WIDTH ),
+    .C_M_AXI_AWUSER_WIDTH( C_M_AXI_GMEM_AWUSER_WIDTH ),
+    .C_M_AXI_ARUSER_WIDTH( C_M_AXI_GMEM_ARUSER_WIDTH ),
+    .C_M_AXI_WUSER_WIDTH( C_M_AXI_GMEM_WUSER_WIDTH ),
+    .C_M_AXI_RUSER_WIDTH( C_M_AXI_GMEM_RUSER_WIDTH ),
+    .C_M_AXI_BUSER_WIDTH( C_M_AXI_GMEM_BUSER_WIDTH ),
+    .C_USER_VALUE( C_M_AXI_GMEM_USER_VALUE ),
+    .C_PROT_VALUE( C_M_AXI_GMEM_PROT_VALUE ),
+    .C_CACHE_VALUE( C_M_AXI_GMEM_CACHE_VALUE ),
     .CH0_USER_RFIFONUM_WIDTH( 11 ),
     .CH0_USER_DW( 8 ),
-    .CH0_USER_AW( 32 ),
+    .CH0_USER_AW( 64 ),
     .NUM_READ_OUTSTANDING( 16 ),
-    .NUM_WRITE_OUTSTANDING( 0 ))
-gmem2_m_axi_U(
-    .AWVALID(m_axi_gmem2_AWVALID),
-    .AWREADY(m_axi_gmem2_AWREADY),
-    .AWADDR(m_axi_gmem2_AWADDR),
-    .AWID(m_axi_gmem2_AWID),
-    .AWLEN(m_axi_gmem2_AWLEN),
-    .AWSIZE(m_axi_gmem2_AWSIZE),
-    .AWBURST(m_axi_gmem2_AWBURST),
-    .AWLOCK(m_axi_gmem2_AWLOCK),
-    .AWCACHE(m_axi_gmem2_AWCACHE),
-    .AWPROT(m_axi_gmem2_AWPROT),
-    .AWQOS(m_axi_gmem2_AWQOS),
-    .AWREGION(m_axi_gmem2_AWREGION),
-    .AWUSER(m_axi_gmem2_AWUSER),
-    .WVALID(m_axi_gmem2_WVALID),
-    .WREADY(m_axi_gmem2_WREADY),
-    .WDATA(m_axi_gmem2_WDATA),
-    .WSTRB(m_axi_gmem2_WSTRB),
-    .WLAST(m_axi_gmem2_WLAST),
-    .WID(m_axi_gmem2_WID),
-    .WUSER(m_axi_gmem2_WUSER),
-    .ARVALID(m_axi_gmem2_ARVALID),
-    .ARREADY(m_axi_gmem2_ARREADY),
-    .ARADDR(m_axi_gmem2_ARADDR),
-    .ARID(m_axi_gmem2_ARID),
-    .ARLEN(m_axi_gmem2_ARLEN),
-    .ARSIZE(m_axi_gmem2_ARSIZE),
-    .ARBURST(m_axi_gmem2_ARBURST),
-    .ARLOCK(m_axi_gmem2_ARLOCK),
-    .ARCACHE(m_axi_gmem2_ARCACHE),
-    .ARPROT(m_axi_gmem2_ARPROT),
-    .ARQOS(m_axi_gmem2_ARQOS),
-    .ARREGION(m_axi_gmem2_ARREGION),
-    .ARUSER(m_axi_gmem2_ARUSER),
-    .RVALID(m_axi_gmem2_RVALID),
-    .RREADY(m_axi_gmem2_RREADY),
-    .RDATA(m_axi_gmem2_RDATA),
-    .RLAST(m_axi_gmem2_RLAST),
-    .RID(m_axi_gmem2_RID),
-    .RUSER(m_axi_gmem2_RUSER),
-    .RRESP(m_axi_gmem2_RRESP),
-    .BVALID(m_axi_gmem2_BVALID),
-    .BREADY(m_axi_gmem2_BREADY),
-    .BRESP(m_axi_gmem2_BRESP),
-    .BID(m_axi_gmem2_BID),
-    .BUSER(m_axi_gmem2_BUSER),
+    .NUM_WRITE_OUTSTANDING( 16 ))
+gmem_m_axi_U(
+    .AWVALID(m_axi_gmem_AWVALID),
+    .AWREADY(m_axi_gmem_AWREADY),
+    .AWADDR(m_axi_gmem_AWADDR),
+    .AWID(m_axi_gmem_AWID),
+    .AWLEN(m_axi_gmem_AWLEN),
+    .AWSIZE(m_axi_gmem_AWSIZE),
+    .AWBURST(m_axi_gmem_AWBURST),
+    .AWLOCK(m_axi_gmem_AWLOCK),
+    .AWCACHE(m_axi_gmem_AWCACHE),
+    .AWPROT(m_axi_gmem_AWPROT),
+    .AWQOS(m_axi_gmem_AWQOS),
+    .AWREGION(m_axi_gmem_AWREGION),
+    .AWUSER(m_axi_gmem_AWUSER),
+    .WVALID(m_axi_gmem_WVALID),
+    .WREADY(m_axi_gmem_WREADY),
+    .WDATA(m_axi_gmem_WDATA),
+    .WSTRB(m_axi_gmem_WSTRB),
+    .WLAST(m_axi_gmem_WLAST),
+    .WID(m_axi_gmem_WID),
+    .WUSER(m_axi_gmem_WUSER),
+    .ARVALID(m_axi_gmem_ARVALID),
+    .ARREADY(m_axi_gmem_ARREADY),
+    .ARADDR(m_axi_gmem_ARADDR),
+    .ARID(m_axi_gmem_ARID),
+    .ARLEN(m_axi_gmem_ARLEN),
+    .ARSIZE(m_axi_gmem_ARSIZE),
+    .ARBURST(m_axi_gmem_ARBURST),
+    .ARLOCK(m_axi_gmem_ARLOCK),
+    .ARCACHE(m_axi_gmem_ARCACHE),
+    .ARPROT(m_axi_gmem_ARPROT),
+    .ARQOS(m_axi_gmem_ARQOS),
+    .ARREGION(m_axi_gmem_ARREGION),
+    .ARUSER(m_axi_gmem_ARUSER),
+    .RVALID(m_axi_gmem_RVALID),
+    .RREADY(m_axi_gmem_RREADY),
+    .RDATA(m_axi_gmem_RDATA),
+    .RLAST(m_axi_gmem_RLAST),
+    .RID(m_axi_gmem_RID),
+    .RUSER(m_axi_gmem_RUSER),
+    .RRESP(m_axi_gmem_RRESP),
+    .BVALID(m_axi_gmem_BVALID),
+    .BREADY(m_axi_gmem_BREADY),
+    .BRESP(m_axi_gmem_BRESP),
+    .BID(m_axi_gmem_BID),
+    .BUSER(m_axi_gmem_BUSER),
     .ACLK(ap_clk),
     .ARESET(ap_rst_n_inv),
     .ACLK_EN(1'b1),
-    .I_CH0_ARVALID(gmem2_0_ARVALID),
-    .I_CH0_ARREADY(gmem2_0_ARREADY),
-    .I_CH0_ARADDR(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARADDR),
-    .I_CH0_ARLEN(grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARLEN),
-    .I_CH0_RVALID(gmem2_0_RVALID),
-    .I_CH0_RREADY(gmem2_0_RREADY),
-    .I_CH0_RDATA(gmem2_0_RDATA),
-    .I_CH0_RFIFONUM(gmem2_0_RFIFONUM),
-    .I_CH0_AWVALID(1'b0),
-    .I_CH0_AWREADY(gmem2_0_AWREADY),
-    .I_CH0_AWADDR(32'd0),
-    .I_CH0_AWLEN(32'd0),
-    .I_CH0_WVALID(1'b0),
-    .I_CH0_WREADY(gmem2_0_WREADY),
-    .I_CH0_WDATA(8'd0),
-    .I_CH0_WSTRB(1'd0),
-    .I_CH0_BVALID(gmem2_0_BVALID),
-    .I_CH0_BREADY(1'b0)
+    .I_CH0_ARVALID(gmem_0_ARVALID),
+    .I_CH0_ARREADY(gmem_0_ARREADY),
+    .I_CH0_ARADDR(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARADDR),
+    .I_CH0_ARLEN(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARLEN),
+    .I_CH0_RVALID(gmem_0_RVALID),
+    .I_CH0_RREADY(gmem_0_RREADY),
+    .I_CH0_RDATA(gmem_0_RDATA),
+    .I_CH0_RFIFONUM(gmem_0_RFIFONUM),
+    .I_CH0_AWVALID(gmem_0_AWVALID),
+    .I_CH0_AWREADY(gmem_0_AWREADY),
+    .I_CH0_AWADDR(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWADDR),
+    .I_CH0_AWLEN(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWLEN),
+    .I_CH0_WVALID(gmem_0_WVALID),
+    .I_CH0_WREADY(gmem_0_WREADY),
+    .I_CH0_WDATA(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WDATA),
+    .I_CH0_WSTRB(grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WSTRB),
+    .I_CH0_BVALID(gmem_0_BVALID),
+    .I_CH0_BREADY(gmem_0_BREADY)
 );
 
 always @ (posedge ap_clk) begin
@@ -993,21 +434,21 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_crypto_kem_enc_1_fu_110_ap_start_reg <= 1'b0;
+        grp_crypto_kem_enc_1_fu_104_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state2)) begin
-            grp_crypto_kem_enc_1_fu_110_ap_start_reg <= 1'b1;
-        end else if ((grp_crypto_kem_enc_1_fu_110_ap_ready == 1'b1)) begin
-            grp_crypto_kem_enc_1_fu_110_ap_start_reg <= 1'b0;
+            grp_crypto_kem_enc_1_fu_104_ap_start_reg <= 1'b1;
+        end else if ((grp_crypto_kem_enc_1_fu_104_ap_ready == 1'b1)) begin
+            grp_crypto_kem_enc_1_fu_104_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state1)) begin
-        ct_read_reg_167 <= ct;
-        pk_read_reg_162 <= pk;
-        ss_read_reg_157 <= ss;
+        ct_read_reg_157 <= ct;
+        pk_read_reg_152 <= pk;
+        ss_read_reg_147 <= ss;
     end
 end
 
@@ -1022,7 +463,7 @@ end
 assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_crypto_kem_enc_1_fu_110_ap_done == 1'b0)) begin
+    if ((grp_crypto_kem_enc_1_fu_104_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -1030,7 +471,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_crypto_kem_enc_1_fu_110_ap_done == 1'b1))) begin
+    if (((grp_crypto_kem_enc_1_fu_104_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -1046,7 +487,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_crypto_kem_enc_1_fu_110_ap_done == 1'b1))) begin
+    if (((grp_crypto_kem_enc_1_fu_104_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -1055,81 +496,41 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem0_0_ARVALID = grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_ARVALID;
+        gmem_0_ARVALID = grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_ARVALID;
     end else begin
-        gmem0_0_ARVALID = 1'b0;
+        gmem_0_ARVALID = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem0_0_AWVALID = grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_AWVALID;
+        gmem_0_AWVALID = grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_AWVALID;
     end else begin
-        gmem0_0_AWVALID = 1'b0;
+        gmem_0_AWVALID = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem0_0_BREADY = grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_BREADY;
+        gmem_0_BREADY = grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_BREADY;
     end else begin
-        gmem0_0_BREADY = 1'b0;
+        gmem_0_BREADY = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem0_0_RREADY = grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_RREADY;
+        gmem_0_RREADY = grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_RREADY;
     end else begin
-        gmem0_0_RREADY = 1'b0;
+        gmem_0_RREADY = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem0_0_WVALID = grp_crypto_kem_enc_1_fu_110_m_axi_gmem0_0_WVALID;
+        gmem_0_WVALID = grp_crypto_kem_enc_1_fu_104_m_axi_gmem_0_WVALID;
     end else begin
-        gmem0_0_WVALID = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem1_0_AWVALID = grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_AWVALID;
-    end else begin
-        gmem1_0_AWVALID = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem1_0_BREADY = grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_BREADY;
-    end else begin
-        gmem1_0_BREADY = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem1_0_WVALID = grp_crypto_kem_enc_1_fu_110_m_axi_gmem1_0_WVALID;
-    end else begin
-        gmem1_0_WVALID = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem2_0_ARVALID = grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_ARVALID;
-    end else begin
-        gmem2_0_ARVALID = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2))) begin
-        gmem2_0_RREADY = grp_crypto_kem_enc_1_fu_110_m_axi_gmem2_0_RREADY;
-    end else begin
-        gmem2_0_RREADY = 1'b0;
+        gmem_0_WVALID = 1'b0;
     end
 end
 
@@ -1146,7 +547,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (grp_crypto_kem_enc_1_fu_110_ap_done == 1'b1))) begin
+            if (((grp_crypto_kem_enc_1_fu_104_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -1168,6 +569,6 @@ always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign grp_crypto_kem_enc_1_fu_110_ap_start = grp_crypto_kem_enc_1_fu_110_ap_start_reg;
+assign grp_crypto_kem_enc_1_fu_104_ap_start = grp_crypto_kem_enc_1_fu_104_ap_start_reg;
 
 endmodule //sikep503_kem_enc_hw

@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:12~src/fpx.c:80~src/fpx.c:320</SourceLocation>
+<SourceLocation>src/fpx.c:12~src/fpx.c:81~src/fpx.c:321</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_14_1>
 <Name>VITIS_LOOP_14_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:15~src/fpx.c:80~src/fpx.c:320</SourceLocation>
+<SourceLocation>src/fpx.c:14~src/fpx.c:81~src/fpx.c:321</SourceLocation>
 </VITIS_LOOP_14_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -60,7 +60,7 @@
 
 <AreaEstimates>
 <Resources>
-<FF>10</FF>
+<FF>11</FF>
 <LUT>64</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_1_Pipeline_VITIS_LOOP_14_1230'
 ================================================================
-* Date:           Tue May 20 14:37:58 2025
+* Date:           Tue May 27 14:19:57 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.508 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  5.576 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -59,9 +59,9 @@
 |Instance         |        -|    -|       -|      -|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|     36|    -|
-|Register         |        -|    -|      10|      -|    -|
+|Register         |        -|    -|      11|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|      10|     64|    0|
+|Total            |        0|    0|      11|     64|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -85,8 +85,8 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln14_fu_79_p2   |         +|   0|  0|  13|           4|           1|
-    |icmp_ln14_fu_73_p2  |      icmp|   0|  0|  13|           4|           5|
+    |add_ln14_fu_81_p2   |         +|   0|  0|  13|           4|           1|
+    |icmp_ln14_fu_75_p2  |      icmp|   0|  0|  13|           4|           5|
     |ap_enable_pp0       |       xor|   0|  0|   2|           1|           2|
     +--------------------+----------+----+---+----+------------+------------+
     |Total               |          |   0|  0|  28|           9|           8|
@@ -99,7 +99,7 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_sig_allocacmp_i       |   9|          2|    4|          8|
-    |i_278_fu_34              |   9|          2|    4|          8|
+    |i_275_fu_36              |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  36|          8|   10|         20|
     +-------------------------+----+-----------+-----+-----------+
@@ -111,10 +111,10 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |i_278_fu_34              |  4|   0|    4|          0|
-    |zext_ln15_reg_117        |  3|   0|   32|         29|
+    |i_275_fu_36              |  4|   0|    4|          0|
+    |i_reg_120                |  4|   0|    4|          0|
     +-------------------------+---+----+-----+-----------+
-    |Total                    | 10|   0|   39|         29|
+    |Total                    | 11|   0|   11|          0|
     +-------------------------+---+----+-----+-----------+
 
 
@@ -123,21 +123,21 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+-----------------------------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
-+--------------+-----+-----+------------+-----------------------------------------+--------------+
-|ap_clk        |   in|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
-|ap_rst        |   in|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
-|ap_start      |   in|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
-|ap_done       |  out|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
-|ap_idle       |  out|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
-|ap_ready      |  out|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
-|PKB_address0  |  out|    6|   ap_memory|                                      PKB|         array|
-|PKB_ce0       |  out|    1|   ap_memory|                                      PKB|         array|
-|PKB_q0        |   in|   64|   ap_memory|                                      PKB|         array|
-|R_X_address0  |  out|    4|   ap_memory|                                      R_X|         array|
-|R_X_ce0       |  out|    1|   ap_memory|                                      R_X|         array|
-|R_X_we0       |  out|    1|   ap_memory|                                      R_X|         array|
-|R_X_d0        |  out|   64|   ap_memory|                                      R_X|         array|
-+--------------+-----+-----+------------+-----------------------------------------+--------------+
++-----------------+-----+-----+------------+-----------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
++-----------------+-----+-----+------------+-----------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  LADDER3PT.1_Pipeline_VITIS_LOOP_14_1230|  return value|
+|R2_X_4_address0  |  out|    3|   ap_memory|                                   R2_X_4|         array|
+|R2_X_4_ce0       |  out|    1|   ap_memory|                                   R2_X_4|         array|
+|R2_X_4_we0       |  out|    1|   ap_memory|                                   R2_X_4|         array|
+|R2_X_4_d0        |  out|   64|   ap_memory|                                   R2_X_4|         array|
+|PKB_address0     |  out|    6|   ap_memory|                                      PKB|         array|
+|PKB_ce0          |  out|    1|   ap_memory|                                      PKB|         array|
+|PKB_q0           |   in|   64|   ap_memory|                                      PKB|         array|
++-----------------+-----+-----+------------+-----------------------------------------+--------------+
 

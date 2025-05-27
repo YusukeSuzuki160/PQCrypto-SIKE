@@ -418,7 +418,7 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
     return (unsigned int)((x ^ ((x ^ y) | ((x - y) ^ y))) >> (64 -1));
 }
 # 11 "src/api.h" 2
-# 27 "src/api.h"
+# 31 "src/api.h"
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk);
 
 
@@ -432,37 +432,37 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
 
 int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned char *sk);
-# 66 "src/api.h"
-void random_mod_order_A(unsigned char* random_digits);
+# 68 "src/api.h"
+void random_mod_order_A(unsigned char *random_digits);
 
 
 
-void random_mod_order_B(unsigned char* random_digits);
-
-
-
-
-int EphemeralKeyGeneration_A(const unsigned char* PrivateKeyA, unsigned char* PublicKeyA);
+void random_mod_order_B(unsigned char *random_digits);
 
 
 
 
-
-int EphemeralKeyGeneration_B(const unsigned char* PrivateKeyB, unsigned char* PublicKeyB);
+int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA);
 
 
 
 
 
-
-int EphemeralSecretAgreement_A(const unsigned char* PrivateKeyA, const unsigned char* PublicKeyB, unsigned char* SharedSecretA);
+int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *PublicKeyB);
 
 
 
 
 
 
-int EphemeralSecretAgreement_B(const unsigned char* PrivateKeyB, const unsigned char* PublicKeyA, unsigned char* SharedSecretB);
+int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned char *PublicKeyB, unsigned char *SharedSecretA);
+
+
+
+
+
+
+int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned char *PublicKeyA, unsigned char *SharedSecretB);
 # 11 "src/P503_internal.h" 2
 # 62 "src/P503_internal.h"
 typedef digit_t felm_t[8];
@@ -720,6 +720,657 @@ void LADDER3PT(const f2elm_t xP, const f2elm_t xQ, const f2elm_t xPQ, const digi
 
 void randombytes(unsigned char *x, unsigned long long xlen);
 # 10 "src/sidh.c" 2
+# 1 "/usr/include/stdio.h" 1 3 4
+# 28 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 29 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 35 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 1 3 4
+# 30 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list va_list;
+# 48 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 38 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 1 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 1 3 4
+# 13 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 3 4
+typedef struct
+{
+  int __count;
+  union
+  {
+    unsigned int __wch;
+    char __wchb[4];
+  } __value;
+} __mbstate_t;
+# 6 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 2 3 4
+
+
+
+
+typedef struct _G_fpos_t
+{
+  __off_t __pos;
+  __mbstate_t __state;
+} __fpos_t;
+# 41 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 3 4
+typedef struct _G_fpos64_t
+{
+  __off64_t __pos;
+  __mbstate_t __state;
+} __fpos64_t;
+# 42 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+typedef struct _IO_FILE __FILE;
+# 43 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+
+
+typedef struct _IO_FILE FILE;
+# 44 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 3 4
+struct _IO_FILE;
+struct _IO_marker;
+struct _IO_codecvt;
+struct _IO_wide_data;
+
+
+
+
+typedef void _IO_lock_t;
+
+
+
+
+
+struct _IO_FILE
+{
+  int _flags;
+
+
+  char *_IO_read_ptr;
+  char *_IO_read_end;
+  char *_IO_read_base;
+  char *_IO_write_base;
+  char *_IO_write_ptr;
+  char *_IO_write_end;
+  char *_IO_buf_base;
+  char *_IO_buf_end;
+
+
+  char *_IO_save_base;
+  char *_IO_backup_base;
+  char *_IO_save_end;
+
+  struct _IO_marker *_markers;
+
+  struct _IO_FILE *_chain;
+
+  int _fileno;
+  int _flags2;
+  __off_t _old_offset;
+
+
+  unsigned short _cur_column;
+  signed char _vtable_offset;
+  char _shortbuf[1];
+
+  _IO_lock_t *_lock;
+
+
+
+
+
+
+
+  __off64_t _offset;
+
+  struct _IO_codecvt *_codecvt;
+  struct _IO_wide_data *_wide_data;
+  struct _IO_FILE *_freeres_list;
+  void *_freeres_buf;
+  size_t __pad5;
+  int _mode;
+
+  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+};
+# 45 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 3 4
+typedef __ssize_t cookie_read_function_t (void *__cookie, char *__buf,
+                                          size_t __nbytes);
+
+
+
+
+
+
+
+typedef __ssize_t cookie_write_function_t (void *__cookie, const char *__buf,
+                                           size_t __nbytes);
+
+
+
+
+
+
+
+typedef int cookie_seek_function_t (void *__cookie, __off64_t *__pos, int __w);
+
+
+typedef int cookie_close_function_t (void *__cookie);
+
+
+
+
+
+
+typedef struct _IO_cookie_io_functions_t
+{
+  cookie_read_function_t *read;
+  cookie_write_function_t *write;
+  cookie_seek_function_t *seek;
+  cookie_close_function_t *close;
+} cookie_io_functions_t;
+# 48 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+
+typedef __gnuc_va_list va_list;
+# 64 "/usr/include/stdio.h" 3 4
+typedef __off_t off_t;
+# 78 "/usr/include/stdio.h" 3 4
+typedef __ssize_t ssize_t;
+
+
+
+
+
+
+typedef __fpos_t fpos_t;
+# 129 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
+# 130 "/usr/include/stdio.h" 2 3 4
+# 149 "/usr/include/stdio.h" 3 4
+extern FILE *stdin;
+extern FILE *stdout;
+extern FILE *stderr;
+
+
+
+
+
+
+extern int remove (const char *__filename) __attribute__ ((__nothrow__ ));
+
+extern int rename (const char *__old, const char *__new) __attribute__ ((__nothrow__ ));
+
+
+
+extern int renameat (int __oldfd, const char *__old, int __newfd,
+       const char *__new) __attribute__ ((__nothrow__ ));
+# 184 "/usr/include/stdio.h" 3 4
+extern int fclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 194 "/usr/include/stdio.h" 3 4
+extern FILE *tmpfile (void)
+  __attribute__ ((__malloc__)) ;
+# 211 "/usr/include/stdio.h" 3 4
+extern char *tmpnam (char[20]) __attribute__ ((__nothrow__ )) ;
+
+
+
+
+extern char *tmpnam_r (char __s[20]) __attribute__ ((__nothrow__ )) ;
+# 228 "/usr/include/stdio.h" 3 4
+extern char *tempnam (const char *__dir, const char *__pfx)
+   __attribute__ ((__nothrow__ )) __attribute__ ((__malloc__)) ;
+
+
+
+
+
+
+extern int fflush (FILE *__stream);
+# 245 "/usr/include/stdio.h" 3 4
+extern int fflush_unlocked (FILE *__stream);
+# 264 "/usr/include/stdio.h" 3 4
+extern FILE *fopen (const char *__restrict __filename,
+      const char *__restrict __modes)
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+extern FILE *freopen (const char *__restrict __filename,
+        const char *__restrict __modes,
+        FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
+# 299 "/usr/include/stdio.h" 3 4
+extern FILE *fdopen (int __fd, const char *__modes) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+
+extern FILE *fopencookie (void *__restrict __magic_cookie,
+     const char *__restrict __modes,
+     cookie_io_functions_t __io_funcs) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+  __attribute__ ((__nothrow__ )) __attribute__ ((__malloc__)) ;
+
+
+
+
+extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__malloc__)) ;
+# 334 "/usr/include/stdio.h" 3 4
+extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) __attribute__ ((__nothrow__ ))
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
+      int __modes, size_t __n) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern void setbuffer (FILE *__restrict __stream, char *__restrict __buf,
+         size_t __size) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+extern void setlinebuf (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+extern int fprintf (FILE *__restrict __stream,
+      const char *__restrict __format, ...) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int printf (const char *__restrict __format, ...);
+
+extern int sprintf (char *__restrict __s,
+      const char *__restrict __format, ...) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int vprintf (const char *__restrict __format, __gnuc_va_list __arg);
+
+extern int vsprintf (char *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg) __attribute__ ((__nothrow__));
+
+
+
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+       const char *__restrict __format, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 4)));
+
+extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+        const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 0)));
+
+
+
+
+
+extern int vasprintf (char **__restrict __ptr, const char *__restrict __f,
+        __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 2, 0))) ;
+extern int __asprintf (char **__restrict __ptr,
+         const char *__restrict __fmt, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 2, 3))) ;
+extern int asprintf (char **__restrict __ptr,
+       const char *__restrict __fmt, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 2, 3))) ;
+
+
+
+
+extern int vdprintf (int __fd, const char *__restrict __fmt,
+       __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__printf__, 2, 0)));
+extern int dprintf (int __fd, const char *__restrict __fmt, ...)
+     __attribute__ ((__format__ (__printf__, 2, 3)));
+
+
+
+
+
+
+
+extern int fscanf (FILE *__restrict __stream,
+     const char *__restrict __format, ...) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int scanf (const char *__restrict __format, ...) ;
+
+extern int sscanf (const char *__restrict __s,
+     const char *__restrict __format, ...) __attribute__ ((__nothrow__ ));
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
+# 119 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
+# 214 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef float _Float32;
+# 251 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float64;
+# 268 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float32x;
+# 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef long double _Float64x;
+# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 438 "/usr/include/stdio.h" 2 3 4
+# 463 "/usr/include/stdio.h" 3 4
+extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc99_fscanf") __attribute__ ((__nonnull__ (1)));
+
+
+extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc99_scanf") ;
+
+extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) __asm__ ("" "__isoc99_sscanf") __attribute__ ((__nothrow__ ));
+# 490 "/usr/include/stdio.h" 3 4
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
+      __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+
+
+extern int vsscanf (const char *__restrict __s,
+      const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__ )) __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 540 "/usr/include/stdio.h" 3 4
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfscanf")
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
+
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vsscanf") __attribute__ ((__nothrow__ ))
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 575 "/usr/include/stdio.h" 3 4
+extern int fgetc (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern int getc (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern int getchar (void);
+
+
+
+
+
+
+extern int getc_unlocked (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+extern int getchar_unlocked (void);
+# 600 "/usr/include/stdio.h" 3 4
+extern int fgetc_unlocked (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 611 "/usr/include/stdio.h" 3 4
+extern int fputc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+extern int putc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+extern int putchar (int __c);
+# 627 "/usr/include/stdio.h" 3 4
+extern int fputc_unlocked (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+
+
+extern int putc_unlocked (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+extern int putchar_unlocked (int __c);
+
+
+
+
+
+
+extern int getw (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+extern int putw (int __w, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+
+
+extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
+                                                          __attribute__ ((__nonnull__ (3)));
+# 667 "/usr/include/stdio.h" 3 4
+extern char *gets (char *__s) __attribute__ ((__deprecated__));
+# 694 "/usr/include/stdio.h" 3 4
+extern __ssize_t __getdelim (char **__restrict __lineptr,
+                             size_t *__restrict __n, int __delimiter,
+                             FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
+extern __ssize_t getdelim (char **__restrict __lineptr,
+                           size_t *__restrict __n, int __delimiter,
+                           FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
+
+
+
+
+
+
+
+extern __ssize_t getline (char **__restrict __lineptr,
+                          size_t *__restrict __n,
+                          FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
+
+
+
+
+
+
+
+extern int fputs (const char *__restrict __s, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+extern int puts (const char *__s);
+
+
+
+
+
+
+extern int ungetc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+
+extern size_t fread (void *__restrict __ptr, size_t __size,
+       size_t __n, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (4)));
+
+
+
+
+extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+        size_t __n, FILE *__restrict __s) __attribute__ ((__nonnull__ (4)));
+# 766 "/usr/include/stdio.h" 3 4
+extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+         size_t __n, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (4)));
+extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+          size_t __n, FILE *__restrict __stream)
+  __attribute__ ((__nonnull__ (4)));
+
+
+
+
+
+
+
+extern int fseek (FILE *__stream, long int __off, int __whence)
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern long int ftell (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern void rewind (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 803 "/usr/include/stdio.h" 3 4
+extern int fseeko (FILE *__stream, __off_t __off, int __whence)
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern __off_t ftello (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+# 829 "/usr/include/stdio.h" 3 4
+extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos)
+  __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int fsetpos (FILE *__stream, const fpos_t *__pos) __attribute__ ((__nonnull__ (1)));
+# 860 "/usr/include/stdio.h" 3 4
+extern void clearerr (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+extern int feof (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+extern int ferror (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern void clearerr_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+extern int feof_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+extern int ferror_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+extern void perror (const char *__s) __attribute__ ((__cold__));
+
+
+
+
+extern int fileno (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int fileno_unlocked (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+# 897 "/usr/include/stdio.h" 3 4
+extern int pclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern FILE *popen (const char *__command, const char *__modes)
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+
+
+extern char *ctermid (char *__s) __attribute__ ((__nothrow__ ))
+                                     ;
+# 941 "/usr/include/stdio.h" 3 4
+extern void flockfile (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int ftrylockfile (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+
+
+extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1)));
+# 959 "/usr/include/stdio.h" 3 4
+extern int __uflow (FILE *);
+extern int __overflow (FILE *, int);
+# 11 "src/sidh.c" 2
 
 static void clear_words(void *mem, digit_t nwords)
 {
@@ -727,9 +1378,10 @@ static void clear_words(void *mem, digit_t nwords)
     unsigned int i;
     volatile digit_t *v = mem;
 
-    VITIS_LOOP_17_1: for (i = 0; i < nwords; i++)
+    VITIS_LOOP_18_1: for (i = 0; i < nwords; i++)
     {
-        v[i] = 0;
+#pragma HLS loop_tripcount min = 1 max = 503 avg = 252
+ v[i] = 0;
     }
 }
 
@@ -750,7 +1402,7 @@ static void fp2_encode(const f2elm_t x, unsigned char *enc)
     f2elm_t t;
 
     from_fp2mont(x, t);
-    VITIS_LOOP_40_1: for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
+    VITIS_LOOP_42_1: for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
     {
         enc[i] = ((unsigned char *)t)[i];
         enc[i + 2 * ((503 + 7) / 8) / 2] = ((unsigned char *)t)[i + 512 / 8];
@@ -761,9 +1413,9 @@ static void fp2_decode(const unsigned char *enc, f2elm_t x)
 {
     unsigned int i;
 
-    VITIS_LOOP_51_1: for (i = 0; i < 2 * (512 / 8); i++)
+    VITIS_LOOP_53_1: for (i = 0; i < 2 * (512 / 8); i++)
         ((unsigned char *)x)[i] = 0;
-    VITIS_LOOP_53_2: for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
+    VITIS_LOOP_55_2: for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
     {
         ((unsigned char *)x)[i] = enc[i];
         ((unsigned char *)x)[i + 512 / 8] = enc[i + 2 * ((503 + 7) / 8) / 2];
@@ -799,6 +1451,12 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     f2elm_t XPA, XQA, XRA, coeff[3], A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[7], npts = 0, ii = 0;
 
+    printf("DEBUG: Starting EphemeralKeyGeneration_A\n");
+    printf("DEBUG: Input PrivateKeyA (first 16 bytes): ");
+    VITIS_LOOP_93_1: for (i = 0; i < 16; i++)
+        printf("%02x ", PrivateKeyA[i]);
+    printf("\n");
+
 
     init_basis((digit_t *)A_gen, XPA, XQA, XRA);
     init_basis((digit_t *)B_gen, phiP->X, phiQ->X, phiR->X);
@@ -812,25 +1470,30 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
 
 
     LADDER3PT(XPA, XQA, XRA, (digit_t *)PrivateKeyA, 0, R, A);
+    printf("DEBUG: Retrieved kernel point\n");
 
 
     index = 0;
-    VITIS_LOOP_105_1: for (row = 1; row < 125; row++)
+    VITIS_LOOP_114_2: for (row = 1; row < 125; row++)
     {
-        VITIS_LOOP_107_2: while (index < 125 - row)
+        VITIS_LOOP_116_3: for (int j = 0; j < 125 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Alice[ii++];
-            xDBLe(R, R, A24plus, C24, (int)(2 * m));
-            index += m;
+#pragma HLS loop_tripcount min = 0 max = 125 avg = 125 / 2
+ if (index < 125 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Alice[ii++];
+                xDBLe(R, R, A24plus, C24, (int)(2 * m));
+                index += m;
+            }
         }
         get_4_isog(R, A24plus, C24, coeff);
-
-        VITIS_LOOP_118_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_130_4: for (i = 0; i < npts; i++)
         {
-            eval_4_isog(pts[i], coeff);
+#pragma HLS loop_tripcount min = 1 max = 503 avg = 252
+ eval_4_isog(pts[i], coeff);
         }
         eval_4_isog(phiP, coeff);
         eval_4_isog(phiQ, coeff);
@@ -856,6 +1519,12 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     fp2_encode(phiP->X, PublicKeyA);
     fp2_encode(phiQ->X, PublicKeyA + 2 * ((503 + 7) / 8));
     fp2_encode(phiR->X, PublicKeyA + 2 * 2 * ((503 + 7) / 8));
+
+    printf("DEBUG: Generated public key (first 16 bytes): ");
+    VITIS_LOOP_161_5: for (i = 0; i < 16; i++)
+        printf("%02x ", PublicKeyA[i]);
+    printf("\n");
+    printf("DEBUG: Finished EphemeralKeyGeneration_A\n");
 
     return 0;
 }
@@ -886,22 +1555,26 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
 
 
     index = 0;
-    VITIS_LOOP_176_1: for (row = 1; row < 159; row++)
+    VITIS_LOOP_195_1: for (row = 1; row < 159; row++)
     {
-        VITIS_LOOP_178_2: while (index < 159 - row)
+        VITIS_LOOP_197_2: for (int j = 0; j < 159 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Bob[ii++];
-            xTPLe(R, R, A24minus, A24plus, (int)m);
-            index += m;
+#pragma HLS loop_tripcount min = 0 max = 159 avg = 159 / 2
+ if (index < 159 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Bob[ii++];
+                xTPLe(R, R, A24minus, A24plus, (int)m);
+                index += m;
+            }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
-
-        VITIS_LOOP_189_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_211_3: for (i = 0; i < npts; i++)
         {
-            eval_3_isog(pts[i], coeff);
+#pragma HLS loop_tripcount min = 1 max = 503 avg = 252
+ eval_3_isog(pts[i], coeff);
         }
         eval_3_isog(phiP, coeff);
         eval_3_isog(phiQ, coeff);
@@ -941,8 +1614,7 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[7], npts = 0, ii = 0;
-
-
+# 266 "src/sidh.c"
     fp2_decode(PublicKeyB, PKB[0]);
     fp2_decode(PublicKeyB + 2 * ((503 + 7) / 8), PKB[1]);
     fp2_decode(PublicKeyB + 2 * 2 * ((503 + 7) / 8), PKB[2]);
@@ -957,23 +1629,28 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     LADDER3PT(PKB[0], PKB[1], PKB[2], (digit_t *)PrivateKeyA, 0, R, A);
 
 
+
     index = 0;
-    VITIS_LOOP_248_1: for (row = 1; row < 125; row++)
+    VITIS_LOOP_282_1: for (row = 1; row < 125; row++)
     {
-        VITIS_LOOP_250_2: while (index < 125 - row)
+        VITIS_LOOP_284_2: for (int j = 0; j < 125 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Alice[ii++];
-            xDBLe(R, R, A24plus, C24, (int)(2 * m));
-            index += m;
+#pragma HLS loop_tripcount min = 0 max = 125 avg = 125 / 2
+ if (index < 125 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Alice[ii++];
+                xDBLe(R, R, A24plus, C24, (int)(2 * m));
+                index += m;
+            }
         }
         get_4_isog(R, A24plus, C24, coeff);
-
-        VITIS_LOOP_261_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_298_3: for (i = 0; i < npts; i++)
         {
-            eval_4_isog(pts[i], coeff);
+#pragma HLS loop_tripcount min = 1 max = 503 avg = 252
+ eval_4_isog(pts[i], coeff);
         }
 
         fp2copy503(pts[npts - 1]->X, R->X);
@@ -988,6 +1665,11 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     fp2div2_503(C24, C24);
     j_inv(A24plus, C24, jinv);
     fp2_encode(jinv, SharedSecretA);
+
+
+
+
+
 
     return 0;
 }
@@ -1019,22 +1701,26 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
 
 
     index = 0;
-    VITIS_LOOP_309_1: for (row = 1; row < 159; row++)
+    VITIS_LOOP_352_1: for (row = 1; row < 159; row++)
     {
-        VITIS_LOOP_311_2: while (index < 159 - row)
+        VITIS_LOOP_354_2: for (int j = 0; j < 159 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Bob[ii++];
-            xTPLe(R, R, A24minus, A24plus, (int)m);
-            index += m;
+#pragma HLS loop_tripcount min = 1 max = 159 avg = 159 / 2
+ if (index < 159 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Bob[ii++];
+                xTPLe(R, R, A24minus, A24plus, (int)m);
+                index += m;
+            }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
-
-        VITIS_LOOP_322_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_368_3: for (i = 0; i < npts; i++)
         {
-            eval_3_isog(pts[i], coeff);
+#pragma HLS loop_tripcount min = 1 max = 503 avg = 252
+ eval_3_isog(pts[i], coeff);
         }
 
         fp2copy503(pts[npts - 1]->X, R->X);

@@ -68,14 +68,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 225 \
-    name a_offset1 \
+    name zext_ln48_8 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_a_offset1 \
+    corename dc_zext_ln48_8 \
     op interface \
-    ports { a_offset1 { I 1 vector } } \
+    ports { zext_ln48_8 { I 4 vector } } \
 } "
 }
 
@@ -83,14 +83,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 227 \
-    name b_offset2 \
+    name zext_ln48_7 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_b_offset2 \
+    corename dc_zext_ln48_7 \
     op interface \
-    ports { b_offset2 { I 1 vector } } \
+    ports { zext_ln48_7 { I 4 vector } } \
 } "
 }
 
@@ -98,14 +98,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 229 \
-    name c_offset \
+    name zext_ln48_6 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_c_offset \
+    corename dc_zext_ln48_6 \
     op interface \
-    ports { c_offset { I 1 vector } } \
+    ports { zext_ln48_6 { I 4 vector } } \
 } "
 }
 

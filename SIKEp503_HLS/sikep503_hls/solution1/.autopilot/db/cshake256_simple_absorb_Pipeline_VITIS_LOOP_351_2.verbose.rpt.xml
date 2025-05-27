@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_absorb_Pipeline_VITIS_LOOP_351_2'" level="0">
-<item name = "Date">Tue May 20 14:34:57 2025
+<item name = "Date">Tue May 20 16:18:05 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -78,12 +78,12 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln27_1_fu_260_p2">+, 0, 0, 14, 7, 7</column>
-<column name="add_ln27_fu_235_p2">+, 0, 0, 14, 7, 7</column>
-<column name="i_276_fu_199_p2">+, 0, 0, 13, 5, 1</column>
-<column name="icmp_ln351_fu_193_p2">icmp, 0, 0, 13, 5, 5</column>
+<column name="add_ln27_1_fu_262_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln27_fu_237_p2">+, 0, 0, 14, 7, 7</column>
+<column name="i_276_fu_201_p2">+, 0, 0, 13, 5, 1</column>
+<column name="icmp_ln351_fu_195_p2">icmp, 0, 0, 13, 5, 5</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln352_fu_294_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln353_fu_296_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -91,7 +91,7 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 5, 10</column>
-<column name="i_251_fu_58">9, 2, 5, 10</column>
+<column name="i_251_fu_60">9, 2, 5, 10</column>
 <column name="s_we0_local">9, 2, 8, 16</column>
 </table>
 </item>
@@ -102,11 +102,11 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="i_251_fu_58">5, 0, 5, 0</column>
-<column name="i_reg_312">5, 0, 5, 0</column>
-<column name="s_addr_reg_322">5, 0, 5, 0</column>
-<column name="s_addr_reg_322_pp0_iter1_reg">5, 0, 5, 0</column>
-<column name="s_load_reg_368">64, 0, 64, 0</column>
+<column name="i_251_fu_60">5, 0, 5, 0</column>
+<column name="i_reg_314">5, 0, 5, 0</column>
+<column name="s_addr_reg_324">5, 0, 5, 0</column>
+<column name="s_addr_reg_324_pp0_iter1_reg">5, 0, 5, 0</column>
+<column name="s_load_reg_370">64, 0, 64, 0</column>
 </table>
 </item>
 </section>

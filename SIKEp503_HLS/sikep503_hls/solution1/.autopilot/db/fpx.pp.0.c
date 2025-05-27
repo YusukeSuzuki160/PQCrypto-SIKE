@@ -418,7 +418,7 @@ static __inline unsigned int is_digit_lessthan_ct(digit_t x, digit_t y)
     return (unsigned int)((x ^ ((x ^ y) | ((x - y) ^ y))) >> (64 -1));
 }
 # 11 "src/api.h" 2
-# 27 "src/api.h"
+# 31 "src/api.h"
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk);
 
 
@@ -432,37 +432,37 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
 
 int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned char *sk);
-# 66 "src/api.h"
-void random_mod_order_A(unsigned char* random_digits);
+# 68 "src/api.h"
+void random_mod_order_A(unsigned char *random_digits);
 
 
 
-void random_mod_order_B(unsigned char* random_digits);
-
-
-
-
-int EphemeralKeyGeneration_A(const unsigned char* PrivateKeyA, unsigned char* PublicKeyA);
+void random_mod_order_B(unsigned char *random_digits);
 
 
 
 
-
-int EphemeralKeyGeneration_B(const unsigned char* PrivateKeyB, unsigned char* PublicKeyB);
+int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA);
 
 
 
 
 
-
-int EphemeralSecretAgreement_A(const unsigned char* PrivateKeyA, const unsigned char* PublicKeyB, unsigned char* SharedSecretA);
+int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *PublicKeyB);
 
 
 
 
 
 
-int EphemeralSecretAgreement_B(const unsigned char* PrivateKeyB, const unsigned char* PublicKeyA, unsigned char* SharedSecretB);
+int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned char *PublicKeyB, unsigned char *SharedSecretA);
+
+
+
+
+
+
+int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned char *PublicKeyA, unsigned char *SharedSecretB);
 # 11 "src/P503_internal.h" 2
 # 62 "src/P503_internal.h"
 typedef digit_t felm_t[8];
@@ -732,7 +732,8 @@ void copy_words(const digit_t* a, digit_t* c, const unsigned int nwords)
     unsigned int i;
 
     VITIS_LOOP_52_1: for (i = 0; i < nwords; i++) {
-        c[i] = a[i];
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ c[i] = a[i];
     }
 }
 
@@ -848,8 +849,9 @@ __inline unsigned int mp_sub(const digit_t* a, const digit_t* b, digit_t* c, con
 {
     unsigned int i, borrow = 0;
 
-    VITIS_LOOP_169_1: for (i = 0; i < nwords; i++) {
-        { digit_t tempReg = (a[i]) - (b[i]); unsigned int borrowReg = (is_digit_lessthan_ct((a[i]), (b[i])) | ((borrow) & is_digit_zero_ct(tempReg))); (c[i]) = tempReg - (digit_t)(borrow); (borrow) = borrowReg; };
+    VITIS_LOOP_170_1: for (i = 0; i < nwords; i++) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ { digit_t tempReg = (a[i]) - (b[i]); unsigned int borrowReg = (is_digit_lessthan_ct((a[i]), (b[i])) | ((borrow) & is_digit_zero_ct(tempReg))); (c[i]) = tempReg - (digit_t)(borrow); (borrow) = borrowReg; };
     }
 
     return borrow;
@@ -858,7 +860,6 @@ __inline unsigned int mp_sub(const digit_t* a, const digit_t* b, digit_t* c, con
 
 __inline static digit_t mp_subfast(const digit_t* a, const digit_t* b, digit_t* c)
 {
-
 
  return (0 - (digit_t)mp_sub(a, b, c, 2*8));
 }
@@ -878,7 +879,7 @@ void fp2mul503_mont(const f2elm_t a, const f2elm_t b, f2elm_t c)
     mp_addfast(a[0], a[1], t1);
     mp_addfast(b[0], b[1], t2);
     mask = mp_subfast(tt1, tt2, tt3);
-    VITIS_LOOP_199_1: for (i = 0; i < 8; i++) {
+    VITIS_LOOP_200_1: for (i = 0; i < 8; i++) {
         { digit_t tempReg = (tt3[8 +i]) + (digit_t)(borrow); (tt3[8 +i]) = (((digit_t*)p503)[i] & mask) + tempReg; (borrow) = (is_digit_lessthan_ct(tempReg, (digit_t)(borrow)) | is_digit_lessthan_ct((tt3[8 +i]), tempReg)); };
     }
     rdc_mont(tt3, c[0]);
@@ -897,95 +898,95 @@ void fpinv503_chain_mont(felm_t a)
 
     fpsqr503_mont(a, tt);
     fpmul503_mont(a, tt, t[0]);
-    VITIS_LOOP_218_1: for (i = 0; i <= 13; i++) fpmul503_mont(t[i], tt, t[i+1]);
+    VITIS_LOOP_219_1: for (i = 0; i <= 13; i++) fpmul503_mont(t[i], tt, t[i+1]);
 
     fpcopy503(a, tt);
-    VITIS_LOOP_221_2: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_222_2: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(a, tt, tt);
-    VITIS_LOOP_223_3: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_224_3: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[8], tt, tt);
-    VITIS_LOOP_225_4: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_226_4: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[6], tt, tt);
-    VITIS_LOOP_227_5: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_228_5: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[9], tt, tt);
-    VITIS_LOOP_229_6: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_230_6: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[0], tt, tt);
-    VITIS_LOOP_231_7: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_232_7: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(a, tt, tt);
-    VITIS_LOOP_233_8: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_234_8: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[6], tt, tt);
-    VITIS_LOOP_235_9: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_236_9: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[2], tt, tt);
-    VITIS_LOOP_237_10: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_238_10: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[8], tt, tt);
-    VITIS_LOOP_239_11: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_240_11: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(a, tt, tt);
-    VITIS_LOOP_241_12: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_242_12: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[10], tt, tt);
-    VITIS_LOOP_243_13: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_244_13: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[0], tt, tt);
-    VITIS_LOOP_245_14: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_246_14: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[10], tt, tt);
-    VITIS_LOOP_247_15: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_248_15: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[10], tt, tt);
-    VITIS_LOOP_249_16: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_250_16: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[5], tt, tt);
-    VITIS_LOOP_251_17: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_252_17: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[2], tt, tt);
-    VITIS_LOOP_253_18: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_254_18: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[6], tt, tt);
-    VITIS_LOOP_255_19: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_256_19: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[3], tt, tt);
-    VITIS_LOOP_257_20: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_258_20: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[5], tt, tt);
-    VITIS_LOOP_259_21: for (i = 0; i < 12; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_260_21: for (i = 0; i < 12; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[12], tt, tt);
-    VITIS_LOOP_261_22: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_262_22: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[8], tt, tt);
-    VITIS_LOOP_263_23: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_264_23: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[6], tt, tt);
-    VITIS_LOOP_265_24: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_266_24: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[12], tt, tt);
-    VITIS_LOOP_267_25: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_268_25: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[11], tt, tt);
-    VITIS_LOOP_269_26: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_270_26: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[6], tt, tt);
-    VITIS_LOOP_271_27: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_272_27: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[5], tt, tt);
-    VITIS_LOOP_273_28: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_274_28: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[14], tt, tt);
-    VITIS_LOOP_275_29: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_276_29: for (i = 0; i < 7; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[14], tt, tt);
-    VITIS_LOOP_277_30: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_278_30: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[5], tt, tt);
-    VITIS_LOOP_279_31: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_280_31: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[6], tt, tt);
-    VITIS_LOOP_281_32: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_282_32: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[8], tt, tt);
-    VITIS_LOOP_283_33: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_284_33: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(a, tt, tt);
-    VITIS_LOOP_285_34: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_286_34: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[4], tt, tt);
-    VITIS_LOOP_287_35: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_288_35: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[6], tt, tt);
-    VITIS_LOOP_289_36: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_290_36: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[5], tt, tt);
-    VITIS_LOOP_291_37: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_292_37: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[7], tt, tt);
-    VITIS_LOOP_293_38: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_294_38: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(a, tt, tt);
-    VITIS_LOOP_295_39: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_296_39: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[0], tt, tt);
-    VITIS_LOOP_297_40: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_298_40: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[11], tt, tt);
-    VITIS_LOOP_299_41: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_300_41: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[13], tt, tt);
-    VITIS_LOOP_301_42: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_302_42: for (i = 0; i < 8; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[1], tt, tt);
-    VITIS_LOOP_303_43: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_304_43: for (i = 0; i < 6; i++) fpsqr503_mont(tt, tt);
     fpmul503_mont(t[10], tt, tt);
-    VITIS_LOOP_305_44: for (j = 0; j < 49; j++) {
-        VITIS_LOOP_306_45: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
+    VITIS_LOOP_306_44: for (j = 0; j < 49; j++) {
+        VITIS_LOOP_307_45: for (i = 0; i < 5; i++) fpsqr503_mont(tt, tt);
         fpmul503_mont(t[14], tt, tt);
     }
     fpcopy503(tt, a);
@@ -1028,8 +1029,9 @@ __inline unsigned int mp_add(const digit_t* a, const digit_t* b, digit_t* c, con
 {
     unsigned int i, carry = 0;
 
-    VITIS_LOOP_349_1: for (i = 0; i < nwords; i++) {
-        { digit_t tempReg = (a[i]) + (digit_t)(carry); (c[i]) = (b[i]) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((c[i]), tempReg)); };
+    VITIS_LOOP_350_1: for (i = 0; i < nwords; i++) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ { digit_t tempReg = (a[i]) + (digit_t)(carry); (c[i]) = (b[i]) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((c[i]), tempReg)); };
     }
 
     return carry;
@@ -1040,18 +1042,26 @@ void mp_shiftleft(digit_t* x, unsigned int shift, const unsigned int nwords)
 {
     unsigned int i, j = 0;
 
-    VITIS_LOOP_361_1: while (shift > 64) {
+    VITIS_LOOP_363_1: while (shift > 64) {
         j += 1;
         shift -= 64;
     }
 
-    VITIS_LOOP_366_2: for (i = 0; i < nwords-j; i++)
-        x[nwords-1-i] = x[nwords-1-i-j];
-    VITIS_LOOP_368_3: for (i = nwords-j; i < nwords; i++)
-        x[nwords-1-i] = 0;
+    VITIS_LOOP_368_2: for (i = 0; i < nwords-j; i++) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ x[nwords-1-i] = x[nwords-1-i-j];
+    }
+
+    VITIS_LOOP_373_3: for (i = nwords-j; i < nwords; i++) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ x[nwords-1-i] = 0;
+    }
+
     if (shift != 0) {
-        VITIS_LOOP_371_4: for (j = nwords-1; j > 0; j--)
-            (x[j]) = ((x[j]) << (shift)) ^ ((x[j-1]) >> (64 - (shift)));;
+        VITIS_LOOP_379_4: for (j = nwords-1; j > 0; j--) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ (x[j]) = ((x[j]) << (shift)) ^ ((x[j-1]) >> (64 - (shift)));;
+        }
         x[0] <<= shift;
     }
 }
@@ -1061,8 +1071,9 @@ void mp_shiftr1(digit_t* x, const unsigned int nwords)
 {
     unsigned int i;
 
-    VITIS_LOOP_382_1: for (i = 0; i < nwords-1; i++) {
-        (x[i]) = ((x[i]) >> (1)) ^ ((x[i+1]) << (64 - (1)));;
+    VITIS_LOOP_392_1: for (i = 0; i < nwords-1; i++) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ (x[i]) = ((x[i]) >> (1)) ^ ((x[i+1]) << (64 - (1)));;
     }
     x[nwords-1] >>= 1;
 }
@@ -1072,8 +1083,9 @@ void mp_shiftl1(digit_t* x, const unsigned int nwords)
 {
     int i;
 
-    VITIS_LOOP_393_1: for (i = nwords-1; i > 0; i--) {
-        (x[i]) = ((x[i]) << (1)) ^ ((x[i-1]) >> (64 - (1)));;
+    VITIS_LOOP_404_1: for (i = nwords-1; i > 0; i--) {
+#pragma HLS loop_tripcount min=1 max=503 avg=252
+ (x[i]) = ((x[i]) << (1)) ^ ((x[i-1]) >> (64 - (1)));;
     }
     x[0] <<= 1;
 }

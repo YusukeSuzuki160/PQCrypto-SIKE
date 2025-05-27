@@ -521,55 +521,55 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state27)) begin
-        s_i_address0_local = 32'd22;
+        s_i_address0_local = 64'd22;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        s_i_address0_local = 32'd20;
+        s_i_address0_local = 64'd20;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        s_i_address0_local = 32'd18;
+        s_i_address0_local = 64'd18;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        s_i_address0_local = 32'd16;
+        s_i_address0_local = 64'd16;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        s_i_address0_local = 32'd14;
+        s_i_address0_local = 64'd14;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        s_i_address0_local = 32'd12;
+        s_i_address0_local = 64'd12;
     end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        s_i_address0_local = 32'd10;
+        s_i_address0_local = 64'd10;
     end else if ((1'b1 == ap_CS_fsm_state20)) begin
-        s_i_address0_local = 32'd8;
+        s_i_address0_local = 64'd8;
     end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        s_i_address0_local = 32'd6;
+        s_i_address0_local = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state18)) begin
-        s_i_address0_local = 32'd4;
+        s_i_address0_local = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
         s_i_address0_local = s_i_addr_2_reg_720;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         s_i_address0_local = s_i_addr_reg_704;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        s_i_address0_local = 32'd23;
+        s_i_address0_local = 64'd23;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        s_i_address0_local = 32'd21;
+        s_i_address0_local = 64'd21;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        s_i_address0_local = 32'd19;
+        s_i_address0_local = 64'd19;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        s_i_address0_local = 32'd17;
+        s_i_address0_local = 64'd17;
     end else if ((1'b1 == ap_CS_fsm_state9)) begin
-        s_i_address0_local = 32'd15;
+        s_i_address0_local = 64'd15;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        s_i_address0_local = 32'd13;
+        s_i_address0_local = 64'd13;
     end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        s_i_address0_local = 32'd11;
+        s_i_address0_local = 64'd11;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
-        s_i_address0_local = 32'd9;
+        s_i_address0_local = 64'd9;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        s_i_address0_local = 32'd7;
+        s_i_address0_local = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        s_i_address0_local = 32'd5;
+        s_i_address0_local = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        s_i_address0_local = 32'd3;
+        s_i_address0_local = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s_i_address0_local = 32'd2;
+        s_i_address0_local = 64'd2;
     end else if ((1'b1 == ap_CS_fsm_state1)) begin
-        s_i_address0_local = 32'd0;
+        s_i_address0_local = 64'd0;
     end else begin
         s_i_address0_local = 'bx;
     end
@@ -579,53 +579,53 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state28)) begin
         s_i_address1_local = s_i_addr_24_reg_961;
     end else if ((1'b1 == ap_CS_fsm_state27)) begin
-        s_i_address1_local = 32'd23;
+        s_i_address1_local = 64'd23;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        s_i_address1_local = 32'd21;
+        s_i_address1_local = 64'd21;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        s_i_address1_local = 32'd19;
+        s_i_address1_local = 64'd19;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        s_i_address1_local = 32'd17;
+        s_i_address1_local = 64'd17;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        s_i_address1_local = 32'd15;
+        s_i_address1_local = 64'd15;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        s_i_address1_local = 32'd13;
+        s_i_address1_local = 64'd13;
     end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        s_i_address1_local = 32'd11;
+        s_i_address1_local = 64'd11;
     end else if ((1'b1 == ap_CS_fsm_state20)) begin
-        s_i_address1_local = 32'd9;
+        s_i_address1_local = 64'd9;
     end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        s_i_address1_local = 32'd7;
+        s_i_address1_local = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state18)) begin
-        s_i_address1_local = 32'd5;
+        s_i_address1_local = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        s_i_address1_local = 32'd3;
+        s_i_address1_local = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         s_i_address1_local = s_i_addr_1_reg_714;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        s_i_address1_local = 32'd24;
+        s_i_address1_local = 64'd24;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        s_i_address1_local = 32'd22;
+        s_i_address1_local = 64'd22;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        s_i_address1_local = 32'd20;
+        s_i_address1_local = 64'd20;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        s_i_address1_local = 32'd18;
+        s_i_address1_local = 64'd18;
     end else if ((1'b1 == ap_CS_fsm_state9)) begin
-        s_i_address1_local = 32'd16;
+        s_i_address1_local = 64'd16;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        s_i_address1_local = 32'd14;
+        s_i_address1_local = 64'd14;
     end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        s_i_address1_local = 32'd12;
+        s_i_address1_local = 64'd12;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
-        s_i_address1_local = 32'd10;
+        s_i_address1_local = 64'd10;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        s_i_address1_local = 32'd8;
+        s_i_address1_local = 64'd8;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        s_i_address1_local = 32'd6;
+        s_i_address1_local = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        s_i_address1_local = 32'd4;
+        s_i_address1_local = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s_i_address1_local = 32'd1;
+        s_i_address1_local = 64'd1;
     end else begin
         s_i_address1_local = 'bx;
     end
@@ -883,13 +883,13 @@ assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
 assign grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_117_1_fu_396_ap_start = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_117_1_fu_396_ap_start_reg;
 
-assign s_i_addr_1_reg_714 = 32'd1;
+assign s_i_addr_1_reg_714 = 64'd1;
 
-assign s_i_addr_24_reg_961 = 32'd24;
+assign s_i_addr_24_reg_961 = 64'd24;
 
-assign s_i_addr_2_reg_720 = 32'd2;
+assign s_i_addr_2_reg_720 = 64'd2;
 
-assign s_i_addr_reg_704 = 32'd0;
+assign s_i_addr_reg_704 = 64'd0;
 
 assign s_i_address0 = s_i_address0_local;
 

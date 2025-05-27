@@ -18,7 +18,7 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.911</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.576</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -52,7 +52,7 @@
 <Name>VITIS_LOOP_14_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:15~src/ec_isogeny.c:311</SourceLocation>
+<SourceLocation>src/fpx.c:14~src/ec_isogeny.c:311</SourceLocation>
 </VITIS_LOOP_14_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -61,7 +61,7 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>74</FF>
+<FF>75</FF>
 <LUT>72</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -143,19 +143,19 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R2_Z_address0</name>
-<Object>R2_Z</Object>
+<name>R0_Z_address0</name>
+<Object>R0_Z</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>3</Bits>
+<Bits>4</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R2_Z_ce0</name>
-<Object>R2_Z</Object>
+<name>R0_Z_ce0</name>
+<Object>R0_Z</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -165,8 +165,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R2_Z_we0</name>
-<Object>R2_Z</Object>
+<name>R0_Z_we0</name>
+<Object>R0_Z</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -176,8 +176,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>R2_Z_d0</name>
-<Object>R2_Z</Object>
+<name>R0_Z_d0</name>
+<Object>R0_Z</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

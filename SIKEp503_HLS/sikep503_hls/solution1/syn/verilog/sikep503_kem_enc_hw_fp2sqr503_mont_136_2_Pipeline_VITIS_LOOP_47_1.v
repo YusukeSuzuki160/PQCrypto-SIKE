@@ -66,9 +66,9 @@ reg   [0:0] borrow_reg_93;
 reg   [0:0] icmp_ln47_reg_239;
 wire    ap_block_pp0_stage0_11001;
 reg   [0:0] icmp_ln47_reg_239_pp0_iter1_reg;
-wire   [31:0] zext_ln48_35_fu_130_p1;
-reg   [31:0] zext_ln48_35_reg_243;
-reg   [31:0] zext_ln48_35_reg_243_pp0_iter1_reg;
+wire   [63:0] zext_ln47_fu_126_p1;
+reg   [63:0] zext_ln47_reg_243;
+reg   [63:0] zext_ln47_reg_243_pp0_iter1_reg;
 reg   [63:0] c_load_reg_258;
 reg   [63:0] c_load_3_reg_264;
 wire   [63:0] tempReg_fu_153_p2;
@@ -77,7 +77,7 @@ wire   [0:0] borrowReg_fu_216_p2;
 reg    ap_condition_exit_pp0_iter1_stage0;
 wire    ap_block_pp0_stage0;
 wire    ap_loop_init;
-wire   [31:0] zext_ln48_39_fu_143_p1;
+wire   [63:0] zext_ln48_45_fu_143_p1;
 reg   [3:0] i_173_fu_44;
 wire   [3:0] add_ln47_fu_120_p2;
 reg   [3:0] ap_sig_allocacmp_i;
@@ -88,15 +88,15 @@ reg    c_ce0_local;
 reg    t2_we0_local;
 wire   [63:0] sub_ln48_fu_226_p2;
 reg    t2_ce0_local;
-wire   [2:0] trunc_ln48_fu_126_p1;
-wire   [3:0] tmp_903_cast_fu_135_p3;
+wire   [2:0] trunc_ln48_fu_131_p1;
+wire   [3:0] add_ln_fu_135_p3;
 wire   [63:0] xor_ln105_130_fu_163_p2;
 wire   [63:0] xor_ln105_fu_159_p2;
 wire   [63:0] or_ln105_fu_167_p2;
 wire   [63:0] xor_ln105_131_fu_173_p2;
 wire   [63:0] sub_ln95_fu_186_p2;
 wire   [63:0] or_ln95_fu_191_p2;
-wire   [0:0] tmp_243_fu_196_p3;
+wire   [0:0] tmp_213_fu_196_p3;
 wire   [0:0] xor_ln48_fu_204_p2;
 wire   [0:0] and_ln48_fu_210_p2;
 wire   [0:0] tmp_fu_178_p3;
@@ -201,8 +201,8 @@ always @ (posedge ap_clk) begin
         icmp_ln47_reg_239 <= icmp_ln47_fu_114_p2;
         icmp_ln47_reg_239_pp0_iter1_reg <= icmp_ln47_reg_239;
         tempReg_reg_270 <= tempReg_fu_153_p2;
-        zext_ln48_35_reg_243[2 : 0] <= zext_ln48_35_fu_130_p1[2 : 0];
-        zext_ln48_35_reg_243_pp0_iter1_reg[2 : 0] <= zext_ln48_35_reg_243[2 : 0];
+        zext_ln47_reg_243[3 : 0] <= zext_ln47_fu_126_p1[3 : 0];
+        zext_ln47_reg_243_pp0_iter1_reg[3 : 0] <= zext_ln47_reg_243[3 : 0];
     end
 end
 
@@ -322,6 +322,8 @@ end
 
 assign add_ln47_fu_120_p2 = (ap_sig_allocacmp_i + 4'd1);
 
+assign add_ln_fu_135_p3 = {{1'd1}, {trunc_ln48_fu_131_p1}};
+
 assign and_ln48_fu_210_p2 = (xor_ln48_fu_204_p2 & borrow_reg_93);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
@@ -348,9 +350,9 @@ assign borrowReg_fu_216_p2 = (tmp_fu_178_p3 | and_ln48_fu_210_p2);
 
 assign borrow_out = borrow_reg_93;
 
-assign c_address0 = zext_ln48_39_fu_143_p1;
+assign c_address0 = zext_ln48_45_fu_143_p1;
 
-assign c_address1 = zext_ln48_35_fu_130_p1;
+assign c_address1 = zext_ln47_fu_126_p1;
 
 assign c_ce0 = c_ce0_local;
 
@@ -366,7 +368,7 @@ assign sub_ln48_fu_226_p2 = (tempReg_reg_270 - zext_ln48_fu_222_p1);
 
 assign sub_ln95_fu_186_p2 = (64'd0 - tempReg_reg_270);
 
-assign t2_address0 = zext_ln48_35_reg_243_pp0_iter1_reg;
+assign t2_address0 = zext_ln47_reg_243_pp0_iter1_reg;
 
 assign t2_ce0 = t2_ce0_local;
 
@@ -376,13 +378,11 @@ assign t2_we0 = t2_we0_local;
 
 assign tempReg_fu_153_p2 = (c_q1 - c_q0);
 
-assign tmp_243_fu_196_p3 = or_ln95_fu_191_p2[32'd63];
-
-assign tmp_903_cast_fu_135_p3 = {{1'd1}, {trunc_ln48_fu_126_p1}};
+assign tmp_213_fu_196_p3 = or_ln95_fu_191_p2[32'd63];
 
 assign tmp_fu_178_p3 = xor_ln105_131_fu_173_p2[32'd63];
 
-assign trunc_ln48_fu_126_p1 = ap_sig_allocacmp_i[2:0];
+assign trunc_ln48_fu_131_p1 = ap_sig_allocacmp_i[2:0];
 
 assign xor_ln105_130_fu_163_p2 = (tempReg_reg_270 ^ c_load_3_reg_264);
 
@@ -390,17 +390,17 @@ assign xor_ln105_131_fu_173_p2 = (or_ln105_fu_167_p2 ^ c_load_reg_258);
 
 assign xor_ln105_fu_159_p2 = (c_load_reg_258 ^ c_load_3_reg_264);
 
-assign xor_ln48_fu_204_p2 = (tmp_243_fu_196_p3 ^ 1'd1);
+assign xor_ln48_fu_204_p2 = (tmp_213_fu_196_p3 ^ 1'd1);
 
-assign zext_ln48_35_fu_130_p1 = trunc_ln48_fu_126_p1;
+assign zext_ln47_fu_126_p1 = ap_sig_allocacmp_i;
 
-assign zext_ln48_39_fu_143_p1 = tmp_903_cast_fu_135_p3;
+assign zext_ln48_45_fu_143_p1 = add_ln_fu_135_p3;
 
 assign zext_ln48_fu_222_p1 = borrow_reg_93;
 
 always @ (posedge ap_clk) begin
-    zext_ln48_35_reg_243[31:3] <= 29'b00000000000000000000000000000;
-    zext_ln48_35_reg_243_pp0_iter1_reg[31:3] <= 29'b00000000000000000000000000000;
+    zext_ln47_reg_243[63:4] <= 60'b000000000000000000000000000000000000000000000000000000000000;
+    zext_ln47_reg_243_pp0_iter1_reg[63:4] <= 60'b000000000000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //sikep503_kem_enc_hw_fp2sqr503_mont_136_2_Pipeline_VITIS_LOOP_47_1

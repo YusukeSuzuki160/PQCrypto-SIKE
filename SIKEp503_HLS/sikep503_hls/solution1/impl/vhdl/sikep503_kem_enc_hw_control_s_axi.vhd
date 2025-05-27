@@ -35,9 +35,9 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
-    ct                    :out  STD_LOGIC_VECTOR(31 downto 0);
-    pk                    :out  STD_LOGIC_VECTOR(31 downto 0);
-    ss                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    ct                    :out  STD_LOGIC_VECTOR(63 downto 0);
+    pk                    :out  STD_LOGIC_VECTOR(63 downto 0);
+    ss                    :out  STD_LOGIC_VECTOR(63 downto 0);
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;
@@ -69,13 +69,19 @@ end entity sikep503_kem_enc_hw_control_s_axi;
 --        others - reserved
 -- 0x10 : Data signal of ct
 --        bit 31~0 - ct[31:0] (Read/Write)
--- 0x14 : reserved
--- 0x18 : Data signal of pk
+-- 0x14 : Data signal of ct
+--        bit 31~0 - ct[63:32] (Read/Write)
+-- 0x18 : reserved
+-- 0x1c : Data signal of pk
 --        bit 31~0 - pk[31:0] (Read/Write)
--- 0x1c : reserved
--- 0x20 : Data signal of ss
---        bit 31~0 - ss[31:0] (Read/Write)
+-- 0x20 : Data signal of pk
+--        bit 31~0 - pk[63:32] (Read/Write)
 -- 0x24 : reserved
+-- 0x28 : Data signal of ss
+--        bit 31~0 - ss[31:0] (Read/Write)
+-- 0x2c : Data signal of ss
+--        bit 31~0 - ss[63:32] (Read/Write)
+-- 0x30 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of sikep503_kem_enc_hw_control_s_axi is
@@ -88,11 +94,14 @@ architecture behave of sikep503_kem_enc_hw_control_s_axi is
     constant ADDR_IER       : INTEGER := 16#08#;
     constant ADDR_ISR       : INTEGER := 16#0c#;
     constant ADDR_CT_DATA_0 : INTEGER := 16#10#;
-    constant ADDR_CT_CTRL   : INTEGER := 16#14#;
-    constant ADDR_PK_DATA_0 : INTEGER := 16#18#;
-    constant ADDR_PK_CTRL   : INTEGER := 16#1c#;
-    constant ADDR_SS_DATA_0 : INTEGER := 16#20#;
-    constant ADDR_SS_CTRL   : INTEGER := 16#24#;
+    constant ADDR_CT_DATA_1 : INTEGER := 16#14#;
+    constant ADDR_CT_CTRL   : INTEGER := 16#18#;
+    constant ADDR_PK_DATA_0 : INTEGER := 16#1c#;
+    constant ADDR_PK_DATA_1 : INTEGER := 16#20#;
+    constant ADDR_PK_CTRL   : INTEGER := 16#24#;
+    constant ADDR_SS_DATA_0 : INTEGER := 16#28#;
+    constant ADDR_SS_DATA_1 : INTEGER := 16#2c#;
+    constant ADDR_SS_CTRL   : INTEGER := 16#30#;
     constant ADDR_BITS         : INTEGER := 6;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
@@ -121,9 +130,9 @@ architecture behave of sikep503_kem_enc_hw_control_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
-    signal int_ct              : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_pk              : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_ss              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_ct              : UNSIGNED(63 downto 0) := (others => '0');
+    signal int_pk              : UNSIGNED(63 downto 0) := (others => '0');
+    signal int_ss              : UNSIGNED(63 downto 0) := (others => '0');
 
 
 begin
@@ -254,10 +263,16 @@ begin
                         rdata_data(1 downto 0) <= int_isr;
                     when ADDR_CT_DATA_0 =>
                         rdata_data <= RESIZE(int_ct(31 downto 0), 32);
+                    when ADDR_CT_DATA_1 =>
+                        rdata_data <= RESIZE(int_ct(63 downto 32), 32);
                     when ADDR_PK_DATA_0 =>
                         rdata_data <= RESIZE(int_pk(31 downto 0), 32);
+                    when ADDR_PK_DATA_1 =>
+                        rdata_data <= RESIZE(int_pk(63 downto 32), 32);
                     when ADDR_SS_DATA_0 =>
                         rdata_data <= RESIZE(int_ss(31 downto 0), 32);
+                    when ADDR_SS_DATA_1 =>
+                        rdata_data <= RESIZE(int_ss(63 downto 32), 32);
                     when others =>
                         NULL;
                     end case;
@@ -463,6 +478,19 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ARESET = '1') then
+                int_ct(63 downto 32) <= (others => '0');
+            elsif (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_CT_DATA_1) then
+                    int_ct(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_ct(63 downto 32));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
                 int_pk(31 downto 0) <= (others => '0');
             elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_PK_DATA_0) then
@@ -476,10 +504,36 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ARESET = '1') then
+                int_pk(63 downto 32) <= (others => '0');
+            elsif (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_PK_DATA_1) then
+                    int_pk(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_pk(63 downto 32));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
                 int_ss(31 downto 0) <= (others => '0');
             elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_SS_DATA_0) then
                     int_ss(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_ss(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
+                int_ss(63 downto 32) <= (others => '0');
+            elsif (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_SS_DATA_1) then
+                    int_ss(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_ss(63 downto 32));
                 end if;
             end if;
         end if;

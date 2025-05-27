@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_10'
 ================================================================
-* Date:           Tue May 20 14:32:54 2025
+* Date:           Tue May 27 14:14:36 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -80,11 +80,11 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%carry_217_loc = alloca i32 1"   --->   Operation 7 'alloca' 'carry_217_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i64 %c"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%carry_217_loc = alloca i64 1"   --->   Operation 7 'alloca' 'carry_217_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %PKB"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %PKB, i64 %c"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_23_1, i64 %c, i64 %PKB"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.10_Pipeline_VITIS_LOOP_28_2, i64 %c, i1 %carry_217_loc, i64 %p503x2_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core

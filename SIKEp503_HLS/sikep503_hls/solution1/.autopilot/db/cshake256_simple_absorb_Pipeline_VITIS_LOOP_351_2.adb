@@ -255,7 +255,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -361,7 +361,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -467,7 +467,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -496,7 +496,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>66</item>
-            <item>186</item>
+            <item>187</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -531,7 +531,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -544,7 +544,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln351_fu_193_p2</rtlName>
+              <rtlName>icmp_ln351_fu_195_p2</rtlName>
               <control>auto</control>
               <opType>seteq</opType>
               <implIndex>auto</implIndex>
@@ -595,7 +595,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -608,7 +608,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>i</originalName>
-              <rtlName>i_276_fu_199_p2</rtlName>
+              <rtlName>i_276_fu_201_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -659,7 +659,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -704,47 +704,40 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>21</id>
-              <name>zext_ln27</name>
+              <id>18</id>
+              <name>zext_ln351</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>27</lineNumber>
-              <contextFuncName>load64</contextFuncName>
-              <contextNormFuncName>load64</contextNormFuncName>
+              <lineNumber>351</lineNumber>
+              <contextFuncName>keccak_absorb</contextFuncName>
+              <contextNormFuncName>keccak_absorb</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
                   <second>
-                    <count>3</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sha3/fips202.c</first>
-                        <second>load64</second>
-                      </first>
-                      <second>27</second>
+                      <second>351</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln27_fu_205_p1</rtlName>
+              <rtlName>zext_ln351_fu_207_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -754,7 +747,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -794,14 +787,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -814,7 +807,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>shl_ln_fu_215_p3</rtlName>
+              <rtlName>shl_ln_fu_217_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -847,7 +840,7 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>zext_ln27_1</name>
+              <name>zext_ln27</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>27</lineNumber>
@@ -866,14 +859,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -886,7 +879,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln27_1_fu_222_p1</rtlName>
+              <rtlName>zext_ln27_fu_224_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -917,46 +910,39 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>trunc_ln</name>
+              <name>trunc_ln1</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>27</lineNumber>
-              <contextFuncName>load64</contextFuncName>
-              <contextNormFuncName>load64</contextNormFuncName>
+              <lineNumber>351</lineNumber>
+              <contextFuncName>keccak_absorb</contextFuncName>
+              <contextNormFuncName>keccak_absorb</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
                   <second>
-                    <count>3</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sha3/fips202.c</first>
-                        <second>load64</second>
-                      </first>
-                      <second>27</second>
+                      <second>351</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln_fu_226_p4</rtlName>
+              <rtlName>trunc_ln1_fu_228_p4</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1009,14 +995,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1029,7 +1015,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln27_fu_235_p2</rtlName>
+              <rtlName>add_ln27_fu_237_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1061,7 +1047,7 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>zext_ln27_2</name>
+              <name>zext_ln27_1</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>27</lineNumber>
@@ -1080,14 +1066,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1100,7 +1086,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln27_2_fu_241_p1</rtlName>
+              <rtlName>zext_ln27_1_fu_243_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1110,7 +1096,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -1150,14 +1136,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1222,14 +1208,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1292,14 +1278,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1364,14 +1350,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1434,14 +1420,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1506,14 +1492,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1576,14 +1562,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1648,14 +1634,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1718,14 +1704,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1738,7 +1724,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln27_fu_249_p3</rtlName>
+              <rtlName>or_ln27_fu_251_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1771,7 +1757,7 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>zext_ln27_3</name>
+              <name>zext_ln27_2</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>27</lineNumber>
@@ -1790,14 +1776,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1810,7 +1796,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln27_3_fu_256_p1</rtlName>
+              <rtlName>zext_ln27_2_fu_258_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1860,14 +1846,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1880,7 +1866,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln27_1_fu_260_p2</rtlName>
+              <rtlName>add_ln27_1_fu_262_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1912,7 +1898,7 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>zext_ln27_4</name>
+              <name>zext_ln27_3</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>27</lineNumber>
@@ -1931,14 +1917,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -1951,7 +1937,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln27_4_fu_266_p1</rtlName>
+              <rtlName>zext_ln27_3_fu_268_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1961,7 +1947,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2001,14 +1987,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2073,14 +2059,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2143,14 +2129,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2215,14 +2201,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2285,14 +2271,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2357,14 +2343,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2427,14 +2413,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2499,14 +2485,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                     <item>
                       <first>
@@ -2553,7 +2539,7 @@
               <name>s_addr</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>352</lineNumber>
+              <lineNumber>353</lineNumber>
               <contextFuncName>keccak_absorb</contextFuncName>
               <contextNormFuncName>keccak_absorb</contextNormFuncName>
               <inlineStackInfo>
@@ -2569,14 +2555,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                   </second>
                 </item>
@@ -2618,7 +2604,7 @@
               <name>s_load</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>352</lineNumber>
+              <lineNumber>353</lineNumber>
               <contextFuncName>keccak_absorb</contextFuncName>
               <contextNormFuncName>keccak_absorb</contextNormFuncName>
               <inlineStackInfo>
@@ -2634,14 +2620,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                   </second>
                 </item>
@@ -2678,10 +2664,10 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>or_ln352_6</name>
+              <name>or_ln353_6</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>352</lineNumber>
+              <lineNumber>353</lineNumber>
               <contextFuncName>keccak_absorb</contextFuncName>
               <contextNormFuncName>keccak_absorb</contextNormFuncName>
               <inlineStackInfo>
@@ -2697,20 +2683,20 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln352_6_fu_274_p9</rtlName>
+              <rtlName>or_ln353_6_fu_276_p9</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2749,10 +2735,10 @@
             <Obj>
               <type>0</type>
               <id>50</id>
-              <name>xor_ln352</name>
+              <name>xor_ln353</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>352</lineNumber>
+              <lineNumber>353</lineNumber>
               <contextFuncName>keccak_absorb</contextFuncName>
               <contextNormFuncName>keccak_absorb</contextNormFuncName>
               <inlineStackInfo>
@@ -2768,20 +2754,20 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln352_fu_294_p2</rtlName>
+              <rtlName>xor_ln353_fu_296_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2813,10 +2799,10 @@
             <Obj>
               <type>0</type>
               <id>51</id>
-              <name>s_addr_write_ln352</name>
+              <name>s_addr_write_ln353</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>352</lineNumber>
+              <lineNumber>353</lineNumber>
               <contextFuncName>keccak_absorb</contextFuncName>
               <contextNormFuncName>keccak_absorb</contextNormFuncName>
               <inlineStackInfo>
@@ -2832,14 +2818,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_absorb</second>
                       </first>
-                      <second>352</second>
+                      <second>353</second>
                     </item>
                   </second>
                 </item>
@@ -2864,7 +2850,7 @@
             <item>152</item>
             <item>153</item>
             <item>155</item>
-            <item>185</item>
+            <item>186</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -2899,7 +2885,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -2929,8 +2915,8 @@
             <item_version>0</item_version>
             <item>156</item>
             <item>157</item>
-            <item>187</item>
             <item>188</item>
+            <item>189</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -2965,7 +2951,7 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple_absorb</second>
                       </first>
-                      <second>545</second>
+                      <second>559</second>
                     </item>
                     <item>
                       <first>
@@ -3292,7 +3278,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -3459,7 +3445,7 @@
           <node_objs>
             <count>33</count>
             <item_version>0</item_version>
-            <item>21</item>
+            <item>18</item>
             <item>22</item>
             <item>23</item>
             <item>24</item>
@@ -3624,7 +3610,7 @@
           <id>76</id>
           <edge_type>1</edge_type>
           <source_obj>13</source_obj>
-          <sink_obj>21</sink_obj>
+          <sink_obj>18</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_77">
@@ -3973,7 +3959,7 @@
         <item class_id_reference="20" object_id="_126">
           <id>136</id>
           <edge_type>1</edge_type>
-          <source_obj>21</source_obj>
+          <source_obj>18</source_obj>
           <sink_obj>47</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -4097,56 +4083,56 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_144">
-          <id>181</id>
+          <id>182</id>
           <edge_type>2</edge_type>
           <source_obj>12</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_145">
-          <id>182</id>
+          <id>183</id>
           <edge_type>2</edge_type>
           <source_obj>17</source_obj>
           <sink_obj>56</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_146">
-          <id>183</id>
+          <id>184</id>
           <edge_type>2</edge_type>
           <source_obj>17</source_obj>
           <sink_obj>54</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_147">
-          <id>184</id>
+          <id>185</id>
           <edge_type>2</edge_type>
           <source_obj>54</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>1</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_148">
-          <id>185</id>
+          <id>186</id>
           <edge_type>4</edge_type>
           <source_obj>48</source_obj>
           <sink_obj>51</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_149">
-          <id>186</id>
+          <id>187</id>
           <edge_type>4</edge_type>
           <source_obj>10</source_obj>
           <sink_obj>13</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_150">
-          <id>187</id>
+          <id>188</id>
           <edge_type>4</edge_type>
           <source_obj>10</source_obj>
           <sink_obj>52</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_151">
-          <id>188</id>
+          <id>189</id>
           <edge_type>4</edge_type>
           <source_obj>13</source_obj>
           <sink_obj>52</sink_obj>
@@ -4308,7 +4294,7 @@
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_167">
-              <id>21</id>
+              <id>18</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -4477,17 +4463,17 @@
             <count>15</count>
             <item_version>0</item_version>
             <item class_id_reference="28" object_id="_200">
-              <id>18</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_201">
               <id>19</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_202">
+            <item class_id_reference="28" object_id="_201">
               <id>20</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_202">
+              <id>21</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -4605,7 +4591,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln27_1_fu_260_p2 ( + ) </first>
+          <first>add_ln27_1_fu_262_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4628,7 +4614,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln27_fu_235_p2 ( + ) </first>
+          <first>add_ln27_fu_237_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4674,7 +4660,7 @@
           </second>
         </item>
         <item>
-          <first>i_276_fu_199_p2 ( + ) </first>
+          <first>i_276_fu_201_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4697,7 +4683,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln351_fu_193_p2 ( icmp ) </first>
+          <first>icmp_ln351_fu_195_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4720,7 +4706,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln352_fu_294_p2 ( xor ) </first>
+          <first>xor_ln353_fu_296_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4836,7 +4822,7 @@
           </second>
         </item>
         <item>
-          <first>i_251_fu_58</first>
+          <first>i_251_fu_60</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4989,7 +4975,7 @@
           </second>
         </item>
         <item>
-          <first>i_251_fu_58</first>
+          <first>i_251_fu_60</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5008,7 +4994,7 @@
           </second>
         </item>
         <item>
-          <first>i_reg_312</first>
+          <first>i_reg_314</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5027,7 +5013,7 @@
           </second>
         </item>
         <item>
-          <first>s_addr_reg_322</first>
+          <first>s_addr_reg_324</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5046,7 +5032,7 @@
           </second>
         </item>
         <item>
-          <first>s_addr_reg_322_pp0_iter1_reg</first>
+          <first>s_addr_reg_324_pp0_iter1_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5065,7 +5051,7 @@
           </second>
         </item>
         <item>
-          <first>s_load_reg_368</first>
+          <first>s_load_reg_370</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5103,7 +5089,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>add_ln27_1_fu_260_p2 ( + ) </first>
+          <first>add_ln27_1_fu_262_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5111,7 +5097,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln27_fu_235_p2 ( + ) </first>
+          <first>add_ln27_fu_237_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5119,7 +5105,7 @@
           </second>
         </item>
         <item>
-          <first>i_276_fu_199_p2 ( + ) </first>
+          <first>i_276_fu_201_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5127,7 +5113,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln351_fu_193_p2 ( icmp ) </first>
+          <first>icmp_ln351_fu_195_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5135,7 +5121,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln352_fu_294_p2 ( xor ) </first>
+          <first>xor_ln353_fu_296_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5212,7 +5198,7 @@
         </second>
       </item>
       <item>
-        <first>21</first>
+        <first>18</first>
         <second>
           <first>0</first>
           <second>0</second>
@@ -5511,7 +5497,7 @@
       <count>33</count>
       <item_version>0</item_version>
       <item class_id="51" tracking_level="0" version="0">
-        <first>58</first>
+        <first>60</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5519,7 +5505,7 @@
         </second>
       </item>
       <item>
-        <first>62</first>
+        <first>64</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5527,7 +5513,7 @@
         </second>
       </item>
       <item>
-        <first>68</first>
+        <first>70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5535,7 +5521,7 @@
         </second>
       </item>
       <item>
-        <first>75</first>
+        <first>77</first>
         <second>
           <count>3</count>
           <item_version>0</item_version>
@@ -5545,7 +5531,7 @@
         </second>
       </item>
       <item>
-        <first>85</first>
+        <first>87</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5553,7 +5539,7 @@
         </second>
       </item>
       <item>
-        <first>92</first>
+        <first>94</first>
         <second>
           <count>4</count>
           <item_version>0</item_version>
@@ -5564,7 +5550,7 @@
         </second>
       </item>
       <item>
-        <first>102</first>
+        <first>104</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5572,7 +5558,7 @@
         </second>
       </item>
       <item>
-        <first>109</first>
+        <first>111</first>
         <second>
           <count>4</count>
           <item_version>0</item_version>
@@ -5583,7 +5569,7 @@
         </second>
       </item>
       <item>
-        <first>119</first>
+        <first>121</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5591,7 +5577,7 @@
         </second>
       </item>
       <item>
-        <first>126</first>
+        <first>128</first>
         <second>
           <count>4</count>
           <item_version>0</item_version>
@@ -5602,7 +5588,7 @@
         </second>
       </item>
       <item>
-        <first>136</first>
+        <first>138</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5610,7 +5596,7 @@
         </second>
       </item>
       <item>
-        <first>143</first>
+        <first>145</first>
         <second>
           <count>4</count>
           <item_version>0</item_version>
@@ -5621,7 +5607,7 @@
         </second>
       </item>
       <item>
-        <first>153</first>
+        <first>155</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5629,7 +5615,7 @@
         </second>
       </item>
       <item>
-        <first>161</first>
+        <first>163</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5637,7 +5623,7 @@
         </second>
       </item>
       <item>
-        <first>169</first>
+        <first>171</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5645,7 +5631,7 @@
         </second>
       </item>
       <item>
-        <first>177</first>
+        <first>179</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5653,7 +5639,7 @@
         </second>
       </item>
       <item>
-        <first>185</first>
+        <first>187</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5661,7 +5647,7 @@
         </second>
       </item>
       <item>
-        <first>190</first>
+        <first>192</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5669,7 +5655,7 @@
         </second>
       </item>
       <item>
-        <first>193</first>
+        <first>195</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5677,7 +5663,7 @@
         </second>
       </item>
       <item>
-        <first>199</first>
+        <first>201</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5685,15 +5671,15 @@
         </second>
       </item>
       <item>
-        <first>205</first>
+        <first>207</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>21</item>
+          <item>18</item>
         </second>
       </item>
       <item>
-        <first>210</first>
+        <first>212</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5701,7 +5687,7 @@
         </second>
       </item>
       <item>
-        <first>215</first>
+        <first>217</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5709,7 +5695,7 @@
         </second>
       </item>
       <item>
-        <first>222</first>
+        <first>224</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5717,7 +5703,7 @@
         </second>
       </item>
       <item>
-        <first>226</first>
+        <first>228</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5725,7 +5711,7 @@
         </second>
       </item>
       <item>
-        <first>235</first>
+        <first>237</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5733,7 +5719,7 @@
         </second>
       </item>
       <item>
-        <first>241</first>
+        <first>243</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5741,7 +5727,7 @@
         </second>
       </item>
       <item>
-        <first>249</first>
+        <first>251</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5749,7 +5735,7 @@
         </second>
       </item>
       <item>
-        <first>256</first>
+        <first>258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5757,7 +5743,7 @@
         </second>
       </item>
       <item>
-        <first>260</first>
+        <first>262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5765,7 +5751,7 @@
         </second>
       </item>
       <item>
-        <first>266</first>
+        <first>268</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5773,7 +5759,7 @@
         </second>
       </item>
       <item>
-        <first>274</first>
+        <first>276</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5781,7 +5767,7 @@
         </second>
       </item>
       <item>
-        <first>294</first>
+        <first>296</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5793,7 +5779,7 @@
       <count>24</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>add_ln27_1_fu_260</first>
+        <first>add_ln27_1_fu_262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5801,7 +5787,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln27_fu_235</first>
+        <first>add_ln27_fu_237</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5809,7 +5795,7 @@
         </second>
       </item>
       <item>
-        <first>i_251_fu_58</first>
+        <first>i_251_fu_60</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5817,7 +5803,7 @@
         </second>
       </item>
       <item>
-        <first>i_276_fu_199</first>
+        <first>i_276_fu_201</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5825,7 +5811,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln351_fu_193</first>
+        <first>icmp_ln351_fu_195</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5833,7 +5819,7 @@
         </second>
       </item>
       <item>
-        <first>in_0_addr_1_gep_fu_153</first>
+        <first>in_0_addr_1_gep_fu_155</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5841,7 +5827,7 @@
         </second>
       </item>
       <item>
-        <first>in_0_addr_gep_fu_85</first>
+        <first>in_0_addr_gep_fu_87</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5849,7 +5835,7 @@
         </second>
       </item>
       <item>
-        <first>in_1_addr_1_gep_fu_161</first>
+        <first>in_1_addr_1_gep_fu_163</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5857,7 +5843,7 @@
         </second>
       </item>
       <item>
-        <first>in_1_addr_gep_fu_102</first>
+        <first>in_1_addr_gep_fu_104</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5865,7 +5851,7 @@
         </second>
       </item>
       <item>
-        <first>in_2_addr_1_gep_fu_169</first>
+        <first>in_2_addr_1_gep_fu_171</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5873,7 +5859,7 @@
         </second>
       </item>
       <item>
-        <first>in_2_addr_gep_fu_119</first>
+        <first>in_2_addr_gep_fu_121</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5881,7 +5867,7 @@
         </second>
       </item>
       <item>
-        <first>in_3_addr_1_gep_fu_177</first>
+        <first>in_3_addr_1_gep_fu_179</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5889,7 +5875,7 @@
         </second>
       </item>
       <item>
-        <first>in_3_addr_gep_fu_136</first>
+        <first>in_3_addr_gep_fu_138</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5897,7 +5883,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln27_fu_249</first>
+        <first>or_ln27_fu_251</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5905,7 +5891,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln352_6_fu_274</first>
+        <first>or_ln353_6_fu_276</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5913,7 +5899,7 @@
         </second>
       </item>
       <item>
-        <first>s_addr_gep_fu_68</first>
+        <first>s_addr_gep_fu_70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5921,7 +5907,7 @@
         </second>
       </item>
       <item>
-        <first>shl_ln_fu_215</first>
+        <first>shl_ln_fu_217</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5929,7 +5915,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln_fu_226</first>
+        <first>trunc_ln1_fu_228</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5937,7 +5923,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln352_fu_294</first>
+        <first>xor_ln353_fu_296</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5945,15 +5931,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln27_1_fu_222</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>23</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln27_2_fu_241</first>
+        <first>zext_ln27_1_fu_243</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5961,7 +5939,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln27_3_fu_256</first>
+        <first>zext_ln27_2_fu_258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5969,7 +5947,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln27_4_fu_266</first>
+        <first>zext_ln27_3_fu_268</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5977,11 +5955,19 @@
         </second>
       </item>
       <item>
-        <first>zext_ln27_fu_205</first>
+        <first>zext_ln27_fu_224</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>21</item>
+          <item>23</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln351_fu_207</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -5993,7 +5979,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>i_load_fu_190</first>
+        <first>i_load_fu_192</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6001,7 +5987,7 @@
         </second>
       </item>
       <item>
-        <first>idx_read_read_fu_62</first>
+        <first>idx_read_read_fu_64</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6009,7 +5995,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln346_store_fu_185</first>
+        <first>store_ln346_store_fu_187</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6017,7 +6003,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln346_store_fu_210</first>
+        <first>store_ln346_store_fu_212</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6156,7 +6142,7 @@
       <count>14</count>
       <item_version>0</item_version>
       <item>
-        <first>300</first>
+        <first>302</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6164,7 +6150,7 @@
         </second>
       </item>
       <item>
-        <first>307</first>
+        <first>309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6172,7 +6158,7 @@
         </second>
       </item>
       <item>
-        <first>312</first>
+        <first>314</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6180,7 +6166,7 @@
         </second>
       </item>
       <item>
-        <first>318</first>
+        <first>320</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6188,7 +6174,7 @@
         </second>
       </item>
       <item>
-        <first>322</first>
+        <first>324</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6196,7 +6182,7 @@
         </second>
       </item>
       <item>
-        <first>328</first>
+        <first>330</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6204,7 +6190,7 @@
         </second>
       </item>
       <item>
-        <first>333</first>
+        <first>335</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6212,7 +6198,7 @@
         </second>
       </item>
       <item>
-        <first>338</first>
+        <first>340</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6220,7 +6206,7 @@
         </second>
       </item>
       <item>
-        <first>343</first>
+        <first>345</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6228,7 +6214,7 @@
         </second>
       </item>
       <item>
-        <first>348</first>
+        <first>350</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6236,7 +6222,7 @@
         </second>
       </item>
       <item>
-        <first>353</first>
+        <first>355</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6244,7 +6230,7 @@
         </second>
       </item>
       <item>
-        <first>358</first>
+        <first>360</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6252,7 +6238,7 @@
         </second>
       </item>
       <item>
-        <first>363</first>
+        <first>365</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6260,7 +6246,7 @@
         </second>
       </item>
       <item>
-        <first>368</first>
+        <first>370</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6272,7 +6258,7 @@
       <count>14</count>
       <item_version>0</item_version>
       <item>
-        <first>i_251_reg_300</first>
+        <first>i_251_reg_302</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6280,7 +6266,7 @@
         </second>
       </item>
       <item>
-        <first>i_reg_312</first>
+        <first>i_reg_314</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6288,7 +6274,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln351_reg_318</first>
+        <first>icmp_ln351_reg_320</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6296,7 +6282,7 @@
         </second>
       </item>
       <item>
-        <first>idx_read_reg_307</first>
+        <first>idx_read_reg_309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6304,7 +6290,7 @@
         </second>
       </item>
       <item>
-        <first>in_0_addr_1_reg_348</first>
+        <first>in_0_addr_1_reg_350</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6312,7 +6298,7 @@
         </second>
       </item>
       <item>
-        <first>in_0_addr_reg_328</first>
+        <first>in_0_addr_reg_330</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6320,7 +6306,7 @@
         </second>
       </item>
       <item>
-        <first>in_1_addr_1_reg_353</first>
+        <first>in_1_addr_1_reg_355</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6328,7 +6314,7 @@
         </second>
       </item>
       <item>
-        <first>in_1_addr_reg_333</first>
+        <first>in_1_addr_reg_335</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6336,7 +6322,7 @@
         </second>
       </item>
       <item>
-        <first>in_2_addr_1_reg_358</first>
+        <first>in_2_addr_1_reg_360</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6344,7 +6330,7 @@
         </second>
       </item>
       <item>
-        <first>in_2_addr_reg_338</first>
+        <first>in_2_addr_reg_340</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6352,7 +6338,7 @@
         </second>
       </item>
       <item>
-        <first>in_3_addr_1_reg_363</first>
+        <first>in_3_addr_1_reg_365</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6360,7 +6346,7 @@
         </second>
       </item>
       <item>
-        <first>in_3_addr_reg_343</first>
+        <first>in_3_addr_reg_345</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6368,7 +6354,7 @@
         </second>
       </item>
       <item>
-        <first>s_addr_reg_322</first>
+        <first>s_addr_reg_324</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6376,7 +6362,7 @@
         </second>
       </item>
       <item>
-        <first>s_load_reg_368</first>
+        <first>s_load_reg_370</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

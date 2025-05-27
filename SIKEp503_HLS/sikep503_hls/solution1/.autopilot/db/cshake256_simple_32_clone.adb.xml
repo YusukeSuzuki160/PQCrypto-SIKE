@@ -59,9 +59,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="64" op_0_bw="32">
+<Node id="4" bw="64" op_0_bw="64">
 <![CDATA[
-entry:0 %s = alloca i32 1
+entry:0 %s = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="s"/><MemPortTyVec>2 2 </MemPortTyVec>
@@ -75,9 +75,9 @@ entry:0 %s = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="8" op_0_bw="32">
+<Node id="6" bw="8" op_0_bw="64">
 <![CDATA[
-entry:2 %t = alloca i32 1
+entry:2 %t = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t"/><MemPortTyVec>2 0 </MemPortTyVec>
@@ -91,9 +91,9 @@ entry:2 %t = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="8" op_0_bw="32">
+<Node id="7" bw="8" op_0_bw="64">
 <![CDATA[
-entry:3 %t_38 = alloca i32 1
+entry:3 %t_38 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t_38"/><MemPortTyVec>2 0 </MemPortTyVec>
@@ -107,9 +107,9 @@ entry:3 %t_38 = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="8" op_0_bw="32">
+<Node id="8" bw="8" op_0_bw="64">
 <![CDATA[
-entry:4 %t_39 = alloca i32 1
+entry:4 %t_39 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t_39"/><MemPortTyVec>2 0 </MemPortTyVec>
@@ -123,9 +123,9 @@ entry:4 %t_39 = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="8" op_0_bw="32">
+<Node id="9" bw="8" op_0_bw="64">
 <![CDATA[
-entry:5 %t_40 = alloca i32 1
+entry:5 %t_40 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t_40"/><MemPortTyVec>2 0 </MemPortTyVec>
@@ -141,10 +141,10 @@ entry:5 %t_40 = alloca i32 1
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="8" op_3_bw="64">
 <![CDATA[
-entry:6 %call_ln561 = call void @cshake256_simple_absorb.clone, i64 %s, i8 %in_r, i64 %KeccakF_RoundConstants
+entry:6 %call_ln623 = call void @cshake256_simple_absorb.clone, i64 %s, i8 %in_r, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln561"/></StgValue>
+<StgValue><ssdm name="call_ln623"/></StgValue>
 </operation>
 </state>
 
@@ -159,10 +159,10 @@ entry:6 %call_ln561 = call void @cshake256_simple_absorb.clone, i64 %s, i8 %in_r
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="8" op_3_bw="64">
 <![CDATA[
-entry:6 %call_ln561 = call void @cshake256_simple_absorb.clone, i64 %s, i8 %in_r, i64 %KeccakF_RoundConstants
+entry:6 %call_ln623 = call void @cshake256_simple_absorb.clone, i64 %s, i8 %in_r, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln561"/></StgValue>
+<StgValue><ssdm name="call_ln623"/></StgValue>
 </operation>
 </state>
 
@@ -177,10 +177,10 @@ entry:6 %call_ln561 = call void @cshake256_simple_absorb.clone, i64 %s, i8 %in_r
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
 <![CDATA[
-entry:7 %call_ln376 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants
+entry:7 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln376"/></StgValue>
+<StgValue><ssdm name="call_ln417"/></StgValue>
 </operation>
 </state>
 
@@ -195,10 +195,10 @@ entry:7 %call_ln376 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
 <![CDATA[
-entry:7 %call_ln376 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants
+entry:7 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln376"/></StgValue>
+<StgValue><ssdm name="call_ln417"/></StgValue>
 </operation>
 </state>
 
@@ -213,7 +213,7 @@ entry:7 %call_ln376 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:8 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_377_2, i8 %t_40, i8 %t_39, i8 %t_38, i8 %t, i64 %s
+entry:8 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_418_2, i8 %t_40, i8 %t_39, i8 %t_38, i8 %t, i64 %s
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -231,7 +231,7 @@ entry:8 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_377
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:8 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_377_2, i8 %t_40, i8 %t_39, i8 %t_38, i8 %t, i64 %s
+entry:8 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_418_2, i8 %t_40, i8 %t_39, i8 %t_38, i8 %t, i64 %s
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -249,7 +249,7 @@ entry:8 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_377
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:9 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_570_1, i8 %t, i8 %t_38, i8 %t_39, i8 %t_40, i8 %output_r
+entry:9 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_649_1, i8 %t, i8 %t_38, i8 %t_39, i8 %t_40, i8 %output_r
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -282,7 +282,7 @@ entry:1 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_Spec
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:9 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_570_1, i8 %t, i8 %t_38, i8 %t_39, i8 %t_40, i8 %output_r
+entry:9 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_649_1, i8 %t, i8 %t_38, i8 %t_39, i8 %t_40, i8 %output_r
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -297,10 +297,10 @@ entry:9 %call_ln0 = call void @cshake256_simple.32.clone_Pipeline_VITIS_LOOP_570
 
 <Node id="14" bw="0">
 <![CDATA[
-entry:10 %ret_ln573 = ret
+entry:10 %ret_ln655 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln573"/></StgValue>
+<StgValue><ssdm name="ret_ln655"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -333,35 +333,35 @@ entry:10 %ret_ln573 = ret
 </dataflow>
 <dataflow id="39" from="StgValue_34" to="t_40" fromId="34" toId="13">
 </dataflow>
-<dataflow id="41" from="cshake256_simple_absorb.clone" to="call_ln561" fromId="40" toId="14">
+<dataflow id="41" from="cshake256_simple_absorb.clone" to="call_ln623" fromId="40" toId="14">
 </dataflow>
-<dataflow id="42" from="s" to="call_ln561" fromId="9" toId="14">
+<dataflow id="42" from="s" to="call_ln623" fromId="9" toId="14">
 </dataflow>
-<dataflow id="43" from="in_r" to="call_ln561" fromId="32" toId="14">
+<dataflow id="43" from="in_r" to="call_ln623" fromId="32" toId="14">
 </dataflow>
-<dataflow id="44" from="KeccakF_RoundConstants" to="call_ln561" fromId="33" toId="14">
+<dataflow id="44" from="KeccakF_RoundConstants" to="call_ln623" fromId="33" toId="14">
 </dataflow>
-<dataflow id="45" from="cshake256_simple_absorb.clone" to="call_ln561" fromId="40" toId="15">
+<dataflow id="45" from="cshake256_simple_absorb.clone" to="call_ln623" fromId="40" toId="15">
 </dataflow>
-<dataflow id="46" from="s" to="call_ln561" fromId="9" toId="15">
+<dataflow id="46" from="s" to="call_ln623" fromId="9" toId="15">
 </dataflow>
-<dataflow id="47" from="in_r" to="call_ln561" fromId="32" toId="15">
+<dataflow id="47" from="in_r" to="call_ln623" fromId="32" toId="15">
 </dataflow>
-<dataflow id="48" from="KeccakF_RoundConstants" to="call_ln561" fromId="33" toId="15">
+<dataflow id="48" from="KeccakF_RoundConstants" to="call_ln623" fromId="33" toId="15">
 </dataflow>
-<dataflow id="50" from="KeccakF1600_StatePermute" to="call_ln376" fromId="49" toId="16">
+<dataflow id="50" from="KeccakF1600_StatePermute" to="call_ln417" fromId="49" toId="16">
 </dataflow>
-<dataflow id="51" from="s" to="call_ln376" fromId="9" toId="16">
+<dataflow id="51" from="s" to="call_ln417" fromId="9" toId="16">
 </dataflow>
-<dataflow id="52" from="KeccakF_RoundConstants" to="call_ln376" fromId="33" toId="16">
+<dataflow id="52" from="KeccakF_RoundConstants" to="call_ln417" fromId="33" toId="16">
 </dataflow>
-<dataflow id="53" from="KeccakF1600_StatePermute" to="call_ln376" fromId="49" toId="17">
+<dataflow id="53" from="KeccakF1600_StatePermute" to="call_ln417" fromId="49" toId="17">
 </dataflow>
-<dataflow id="54" from="s" to="call_ln376" fromId="9" toId="17">
+<dataflow id="54" from="s" to="call_ln417" fromId="9" toId="17">
 </dataflow>
-<dataflow id="55" from="KeccakF_RoundConstants" to="call_ln376" fromId="33" toId="17">
+<dataflow id="55" from="KeccakF_RoundConstants" to="call_ln417" fromId="33" toId="17">
 </dataflow>
-<dataflow id="57" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_377_2" to="call_ln0" fromId="56" toId="18">
+<dataflow id="57" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_418_2" to="call_ln0" fromId="56" toId="18">
 </dataflow>
 <dataflow id="58" from="t_40" to="call_ln0" fromId="13" toId="18">
 </dataflow>
@@ -373,7 +373,7 @@ entry:10 %ret_ln573 = ret
 </dataflow>
 <dataflow id="62" from="s" to="call_ln0" fromId="9" toId="18">
 </dataflow>
-<dataflow id="63" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_377_2" to="call_ln0" fromId="56" toId="19">
+<dataflow id="63" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_418_2" to="call_ln0" fromId="56" toId="19">
 </dataflow>
 <dataflow id="64" from="t_40" to="call_ln0" fromId="13" toId="19">
 </dataflow>
@@ -385,7 +385,7 @@ entry:10 %ret_ln573 = ret
 </dataflow>
 <dataflow id="68" from="s" to="call_ln0" fromId="9" toId="19">
 </dataflow>
-<dataflow id="70" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_570_1" to="call_ln0" fromId="69" toId="20">
+<dataflow id="70" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_649_1" to="call_ln0" fromId="69" toId="20">
 </dataflow>
 <dataflow id="71" from="t" to="call_ln0" fromId="10" toId="20">
 </dataflow>
@@ -401,7 +401,7 @@ entry:10 %ret_ln573 = ret
 </dataflow>
 <dataflow id="78" from="s" to="specbramwithbyteenable_ln0" fromId="9" toId="21">
 </dataflow>
-<dataflow id="79" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_570_1" to="call_ln0" fromId="69" toId="22">
+<dataflow id="79" from="cshake256_simple.32.clone_Pipeline_VITIS_LOOP_649_1" to="call_ln0" fromId="69" toId="22">
 </dataflow>
 <dataflow id="80" from="t" to="call_ln0" fromId="10" toId="22">
 </dataflow>

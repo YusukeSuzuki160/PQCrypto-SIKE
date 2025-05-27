@@ -59,14 +59,14 @@ attribute shreg_extract : string;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_done : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_idle : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_ready : STD_LOGIC;
-    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce0 : STD_LOGIC;
-    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce1 : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_address0 : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_ce0 : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_we0 : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce0 : STD_LOGIC;
+    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce1 : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28_ap_start : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28_ap_done : STD_LOGIC;
     signal grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28_ap_idle : STD_LOGIC;
@@ -119,16 +119,16 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
+        c_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
+        c_ce0 : OUT STD_LOGIC;
+        c_we0 : OUT STD_LOGIC;
+        c_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
         PKB_address0 : OUT STD_LOGIC_VECTOR (5 downto 0);
         PKB_ce0 : OUT STD_LOGIC;
         PKB_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
         PKB_address1 : OUT STD_LOGIC_VECTOR (5 downto 0);
         PKB_ce1 : OUT STD_LOGIC;
-        PKB_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
-        c_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
-        c_ce0 : OUT STD_LOGIC;
-        c_we0 : OUT STD_LOGIC;
-        c_d0 : OUT STD_LOGIC_VECTOR (63 downto 0) );
+        PKB_q1 : IN STD_LOGIC_VECTOR (63 downto 0) );
     end component;
 
 
@@ -181,16 +181,16 @@ begin
         ap_done => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_done,
         ap_idle => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_idle,
         ap_ready => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_ap_ready,
+        c_address0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_address0,
+        c_ce0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_ce0,
+        c_we0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_we0,
+        c_d0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_d0,
         PKB_address0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address0,
         PKB_ce0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce0,
         PKB_q0 => PKB_q0,
         PKB_address1 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_address1,
         PKB_ce1 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_PKB_ce1,
-        PKB_q1 => PKB_q1,
-        c_address0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_address0,
-        c_ce0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_ce0,
-        c_we0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_we0,
-        c_d0 => grp_fpadd503_10_Pipeline_VITIS_LOOP_23_1_fu_20_c_d0);
+        PKB_q1 => PKB_q1);
 
     grp_fpadd503_10_Pipeline_VITIS_LOOP_28_2_fu_28 : component sikep503_kem_enc_hw_fpadd503_10_Pipeline_VITIS_LOOP_28_2
     port map (

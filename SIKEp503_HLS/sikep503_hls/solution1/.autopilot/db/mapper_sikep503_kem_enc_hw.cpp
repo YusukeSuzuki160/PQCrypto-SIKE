@@ -243,45 +243,41 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void sikep503_kem_enc_hw(Byte<1>*, Byte<1>*, Byte<1>*, int, int, int);
+extern "C" void sikep503_kem_enc_hw(Byte<1>*, int, int, int);
 extern "C" void apatb_sikep503_kem_enc_hw_hw(volatile void * __xlx_apatb_param_ct, volatile void * __xlx_apatb_param_pk, volatile void * __xlx_apatb_param_ss) {
 using hls::sim::createStream;
-  // Collect __xlx_ct__tmp_vec
-std::vector<Byte<1>> __xlx_ct__tmp_vec;
-for (size_t i = 0; i < 1; ++i){
-__xlx_ct__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_ct)[i]);
+  // Collect __xlx_ct_pk_ss__tmp_vec
+std::vector<Byte<1>> __xlx_ct_pk_ss__tmp_vec;
+for (size_t i = 0; i < 402; ++i){
+__xlx_ct_pk_ss__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_ct)[i]);
 }
-  int __xlx_size_param_ct = 1;
+  int __xlx_size_param_ct = 402;
   int __xlx_offset_param_ct = 0;
   int __xlx_offset_byte_param_ct = 0*1;
-  // Collect __xlx_pk__tmp_vec
-std::vector<Byte<1>> __xlx_pk__tmp_vec;
-for (size_t i = 0; i < 1; ++i){
-__xlx_pk__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_pk)[i]);
+for (size_t i = 0; i < 378; ++i){
+__xlx_ct_pk_ss__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_pk)[i]);
 }
-  int __xlx_size_param_pk = 1;
-  int __xlx_offset_param_pk = 0;
-  int __xlx_offset_byte_param_pk = 0*1;
-  // Collect __xlx_ss__tmp_vec
-std::vector<Byte<1>> __xlx_ss__tmp_vec;
-for (size_t i = 0; i < 1; ++i){
-__xlx_ss__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_ss)[i]);
+  int __xlx_size_param_pk = 378;
+  int __xlx_offset_param_pk = 402;
+  int __xlx_offset_byte_param_pk = 402*1;
+for (size_t i = 0; i < 16; ++i){
+__xlx_ct_pk_ss__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_ss)[i]);
 }
-  int __xlx_size_param_ss = 1;
-  int __xlx_offset_param_ss = 0;
-  int __xlx_offset_byte_param_ss = 0*1;
+  int __xlx_size_param_ss = 16;
+  int __xlx_offset_param_ss = 780;
+  int __xlx_offset_byte_param_ss = 780*1;
   // DUT call
-  sikep503_kem_enc_hw(__xlx_ct__tmp_vec.data(), __xlx_pk__tmp_vec.data(), __xlx_ss__tmp_vec.data(), __xlx_offset_byte_param_ct, __xlx_offset_byte_param_pk, __xlx_offset_byte_param_ss);
+  sikep503_kem_enc_hw(__xlx_ct_pk_ss__tmp_vec.data(), __xlx_offset_byte_param_ct, __xlx_offset_byte_param_pk, __xlx_offset_byte_param_ss);
 // print __xlx_apatb_param_ct
 for (size_t i = 0; i < __xlx_size_param_ct; ++i) {
-((Byte<1>*)__xlx_apatb_param_ct)[i] = __xlx_ct__tmp_vec[__xlx_offset_param_ct+i];
+((Byte<1>*)__xlx_apatb_param_ct)[i] = __xlx_ct_pk_ss__tmp_vec[__xlx_offset_param_ct+i];
 }
 // print __xlx_apatb_param_pk
 for (size_t i = 0; i < __xlx_size_param_pk; ++i) {
-((Byte<1>*)__xlx_apatb_param_pk)[i] = __xlx_pk__tmp_vec[__xlx_offset_param_pk+i];
+((Byte<1>*)__xlx_apatb_param_pk)[i] = __xlx_ct_pk_ss__tmp_vec[__xlx_offset_param_pk+i];
 }
 // print __xlx_apatb_param_ss
 for (size_t i = 0; i < __xlx_size_param_ss; ++i) {
-((Byte<1>*)__xlx_apatb_param_ss)[i] = __xlx_ss__tmp_vec[__xlx_offset_param_ss+i];
+((Byte<1>*)__xlx_apatb_param_ss)[i] = __xlx_ct_pk_ss__tmp_vec[__xlx_offset_param_ss+i];
 }
 }

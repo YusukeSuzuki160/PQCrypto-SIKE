@@ -1,5 +1,10 @@
 # This script segment is generated automatically by AutoPilot
 
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1246_Montgomery_one_1_ROM_Acud BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -11,17 +16,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 112 \
-    name A24plus \
+    id 109 \
+    name phiP_Z \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename A24plus \
+    corename phiP_Z \
     op interface \
-    ports { A24plus_address0 { O 4 vector } A24plus_ce0 { O 1 bit } A24plus_we0 { O 1 bit } A24plus_d0 { O 64 vector } } \
+    ports { phiP_Z_address0 { O 4 vector } phiP_Z_ce0 { O 1 bit } phiP_Z_we0 { O 1 bit } phiP_Z_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z'"
 }
 }
 

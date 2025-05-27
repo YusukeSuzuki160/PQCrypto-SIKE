@@ -21,9 +21,9 @@ dict set ap_memory_interface_dict a { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM
 dict set ap_memory_interface_dict b { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict c { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ a_offset int 1 regular  }
+	{ zext_ln48_30 int 4 regular  }
 	{ a int 64 regular {array 16 { 1 3 } 1 1 }  }
-	{ b_offset int 1 regular  }
+	{ zext_ln48_29 int 4 regular  }
 	{ b int 64 regular {array 16 { 1 3 } 1 1 }  }
 	{ c int 64 regular {array 8 { 0 3 } 0 1 }  }
 	{ borrow_out int 1 regular {pointer 1}  }
@@ -32,9 +32,9 @@ set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "a_offset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
+	{ "Name" : "zext_ln48_30", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "a", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
- 	{ "Name" : "b_offset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
+ 	{ "Name" : "zext_ln48_29", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "b", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "c", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
  	{ "Name" : "borrow_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
@@ -47,11 +47,11 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ a_offset sc_in sc_lv 1 signal 0 } 
+	{ zext_ln48_30 sc_in sc_lv 4 signal 0 } 
 	{ a_address0 sc_out sc_lv 4 signal 1 } 
 	{ a_ce0 sc_out sc_logic 1 signal 1 } 
 	{ a_q0 sc_in sc_lv 64 signal 1 } 
-	{ b_offset sc_in sc_lv 1 signal 2 } 
+	{ zext_ln48_29 sc_in sc_lv 4 signal 2 } 
 	{ b_address0 sc_out sc_lv 4 signal 3 } 
 	{ b_ce0 sc_out sc_logic 1 signal 3 } 
 	{ b_q0 sc_in sc_lv 64 signal 3 } 
@@ -69,11 +69,11 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "a_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "a_offset", "role": "default" }} , 
+ 	{ "name": "zext_ln48_30", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "zext_ln48_30", "role": "default" }} , 
  	{ "name": "a_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "a", "role": "address0" }} , 
  	{ "name": "a_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "a", "role": "ce0" }} , 
  	{ "name": "a_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "a", "role": "q0" }} , 
- 	{ "name": "b_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "b_offset", "role": "default" }} , 
+ 	{ "name": "zext_ln48_29", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "zext_ln48_29", "role": "default" }} , 
  	{ "name": "b_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "b", "role": "address0" }} , 
  	{ "name": "b_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b", "role": "ce0" }} , 
  	{ "name": "b_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "b", "role": "q0" }} , 
@@ -100,9 +100,9 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "a_offset", "Type" : "None", "Direction" : "I"},
+			{"Name" : "zext_ln48_30", "Type" : "None", "Direction" : "I"},
 			{"Name" : "a", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "b_offset", "Type" : "None", "Direction" : "I"},
+			{"Name" : "zext_ln48_29", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "c", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "borrow_out", "Type" : "Vld", "Direction" : "O"}],
@@ -114,9 +114,9 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	fpsub503_Pipeline_VITIS_LOOP_47_1 {
-		a_offset {Type I LastRead 0 FirstWrite -1}
+		zext_ln48_30 {Type I LastRead 0 FirstWrite -1}
 		a {Type I LastRead 0 FirstWrite -1}
-		b_offset {Type I LastRead 0 FirstWrite -1}
+		zext_ln48_29 {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 0 FirstWrite -1}
 		c {Type O LastRead -1 FirstWrite 2}
 		borrow_out {Type O LastRead -1 FirstWrite 1}}}
@@ -133,9 +133,9 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	a_offset { ap_none {  { a_offset in_data 0 1 } } }
+	zext_ln48_30 { ap_none {  { zext_ln48_30 in_data 0 4 } } }
 	a { ap_memory {  { a_address0 mem_address 1 4 }  { a_ce0 mem_ce 1 1 }  { a_q0 mem_dout 0 64 } } }
-	b_offset { ap_none {  { b_offset in_data 0 1 } } }
+	zext_ln48_29 { ap_none {  { zext_ln48_29 in_data 0 4 } } }
 	b { ap_memory {  { b_address0 mem_address 1 4 }  { b_ce0 mem_ce 1 1 }  { b_q0 mem_dout 0 64 } } }
 	c { ap_memory {  { c_address0 mem_address 1 3 }  { c_ce0 mem_ce 1 1 }  { c_we0 mem_we 1 1 }  { c_d0 mem_din 1 64 } } }
 	borrow_out { ap_vld {  { borrow_out out_data 1 1 }  { borrow_out_ap_vld out_vld 1 1 } } }

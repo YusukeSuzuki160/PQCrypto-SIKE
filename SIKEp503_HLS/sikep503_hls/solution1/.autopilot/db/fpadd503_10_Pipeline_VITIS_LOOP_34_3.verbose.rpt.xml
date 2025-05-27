@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_10_Pipeline_VITIS_LOOP_34_3'" level="0">
-<item name = "Date">Tue May 20 14:37:36 2025
+<item name = "Date">Tue May 27 14:19:36 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -80,7 +80,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln34_fu_125_p2">+, 0, 0, 13, 4, 1</column>
-<column name="add_ln35_fu_173_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln35_24_fu_173_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_fu_162_p2">+, 0, 0, 71, 64, 64</column>
 <column name="and_ln35_14_fu_217_p2">and, 0, 0, 64, 64, 64</column>
 <column name="and_ln35_fu_168_p2">and, 0, 0, 64, 64, 64</column>

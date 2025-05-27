@@ -173,7 +173,7 @@
               <name>temp</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -189,14 +189,14 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>161</second>
+                      <second>162</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>60</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -236,7 +236,7 @@
               <name>temp_58</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -252,14 +252,14 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>60</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -299,7 +299,7 @@
               <name>t1</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>155</lineNumber>
+              <lineNumber>156</lineNumber>
               <contextFuncName>fp2sqr503_mont</contextFuncName>
               <contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -315,7 +315,7 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>155</second>
+                      <second>156</second>
                     </item>
                   </second>
                 </item>
@@ -355,7 +355,7 @@
               <name>t2</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>155</lineNumber>
+              <lineNumber>156</lineNumber>
               <contextFuncName>fp2sqr503_mont</contextFuncName>
               <contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -371,7 +371,7 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>155</second>
+                      <second>156</second>
                     </item>
                   </second>
                 </item>
@@ -411,7 +411,7 @@
               <name>t3</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>155</lineNumber>
+              <lineNumber>156</lineNumber>
               <contextFuncName>fp2sqr503_mont</contextFuncName>
               <contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -427,7 +427,7 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>155</second>
+                      <second>156</second>
                     </item>
                   </second>
                 </item>
@@ -475,7 +475,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1_fu_58</rtlName>
+              <rtlName>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1_fu_58</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -658,7 +658,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125_fu_98</rtlName>
+              <rtlName>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125_fu_98</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -736,10 +736,10 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>_ln62</name>
+              <name>_ln63</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>63</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -755,14 +755,14 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>62</second>
+                      <second>63</second>
                     </item>
                   </second>
                 </item>
@@ -805,10 +805,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>_ln63</name>
+              <name>_ln64</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>63</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -824,14 +824,14 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>63</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -865,7 +865,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>4.98</m_delay>
           <m_topoIndex>16</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -917,10 +917,10 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>_ln62</name>
+              <name>_ln63</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>63</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -936,14 +936,14 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>161</second>
+                      <second>162</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>62</second>
+                      <second>63</second>
                     </item>
                   </second>
                 </item>
@@ -986,10 +986,10 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>_ln63</name>
+              <name>_ln64</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>63</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>fpmul503_mont</contextFuncName>
               <contextNormFuncName>fpmul503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -1005,14 +1005,14 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>161</second>
+                      <second>162</second>
                     </item>
                     <item>
                       <first>
                         <first>src/fpx.c</first>
                         <second>fpmul503_mont</second>
                       </first>
-                      <second>63</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -1047,7 +1047,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>4.98</m_delay>
           <m_topoIndex>17</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1056,10 +1056,10 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>_ln162</name>
+              <name>_ln163</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>fp2sqr503_mont</contextFuncName>
               <contextNormFuncName>fp2sqr503_mont</contextNormFuncName>
               <inlineStackInfo>
@@ -1075,7 +1075,7 @@
                         <first>src/fpx.c</first>
                         <second>fp2sqr503_mont</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1136,7 +1136,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>64</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>1</content>
@@ -1146,7 +1146,7 @@
             <Obj>
               <type>2</type>
               <id>32</id>
-              <name>fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1</name>
+              <name>fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1170,7 +1170,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2sqr503_mont.86.87_Pipeline_VITIS_LOOP_349_1&gt;</content>
+          <content>&lt;constant:fp2sqr503_mont.86.87_Pipeline_VITIS_LOOP_350_1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_24">
           <Value>
@@ -1239,7 +1239,7 @@
             <Obj>
               <type>2</type>
               <id>48</id>
-              <name>fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125</name>
+              <name>fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1263,7 +1263,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2sqr503_mont.86.87_Pipeline_VITIS_LOOP_349_1125&gt;</content>
+          <content>&lt;constant:fp2sqr503_mont.86.87_Pipeline_VITIS_LOOP_350_1125&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_27">
           <Value>
@@ -2442,13 +2442,13 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125_fu_98 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125)</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125_fu_98 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>212</second>
+              <second>213</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2457,13 +2457,13 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1_fu_58 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1)</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1_fu_58 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>276</second>
+              <second>277</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2478,11 +2478,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>280</second>
+              <second>338</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>772</second>
+              <second>804</second>
             </item>
           </second>
         </item>
@@ -2516,7 +2516,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3331</second>
+              <second>3335</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2531,7 +2531,7 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>2670</second>
+              <second>2674</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2554,11 +2554,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>4168</second>
+              <second>4176</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>5495</second>
+              <second>5521</second>
             </item>
           </second>
         </item>
@@ -3876,7 +3876,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125_fu_98_ap_start_reg</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125_fu_98_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3895,7 +3895,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1_fu_58_ap_start_reg</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1_fu_58_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4027,14 +4027,14 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125_fu_98</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125_fu_98</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1_fu_58</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1_fu_58</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4096,7 +4096,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125_fu_98 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125)</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125_fu_98 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4104,7 +4104,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1_fu_58 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1)</first>
+          <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1_fu_58 (fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4568,7 +4568,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1125_fu_98</first>
+        <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1125_fu_98</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -4577,7 +4577,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_349_1_fu_58</first>
+        <first>grp_fp2sqr503_mont_86_87_Pipeline_VITIS_LOOP_350_1_fu_58</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

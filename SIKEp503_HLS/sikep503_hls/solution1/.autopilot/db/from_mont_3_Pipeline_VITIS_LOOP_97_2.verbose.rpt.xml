@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'from_mont_3_Pipeline_VITIS_LOOP_97_2'" level="0">
-<item name = "Date">Tue May 20 14:38:32 2025
+<item name = "Date">Tue May 27 14:20:33 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 727, -</column>
+<column name="Expression">-, -, 0, 759, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">0, -, 64, 8, -</column>
 <column name="Multiplexer">-, -, 0, 91, -</column>
-<column name="Register">-, -, 440, -, -</column>
+<column name="Register">-, -, 472, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
 </table>
@@ -84,8 +84,8 @@
 <column name="tempReg_fu_203_p2">+, 0, 0, 71, 64, 64</column>
 <column name="and_ln98_1_fu_258_p2">and, 0, 0, 64, 64, 64</column>
 <column name="and_ln98_fu_180_p2">and, 0, 0, 64, 64, 64</column>
-<column name="ap_condition_318">and, 0, 0, 2, 1, 1</column>
-<column name="addr_cmp_fu_159_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="ap_condition_317">and, 0, 0, 2, 1, 1</column>
+<column name="addr_cmp_fu_164_p2">icmp, 0, 0, 71, 64, 64</column>
 <column name="icmp_ln97_fu_133_p2">icmp, 0, 0, 13, 4, 5</column>
 <column name="or_ln98_1_fu_269_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln98_fu_228_p2">or, 0, 0, 64, 64, 64</column>
@@ -106,7 +106,7 @@
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="borrow_reg_96">9, 2, 1, 2</column>
 <column name="i_26_fu_60">9, 2, 4, 8</column>
-<column name="reuse_addr_reg_fu_52">9, 2, 31, 62</column>
+<column name="reuse_addr_reg_fu_52">9, 2, 63, 126</column>
 <column name="reuse_reg_fu_56">9, 2, 64, 128</column>
 <column name="t_i_address0_local">14, 3, 4, 12</column>
 </table>
@@ -126,7 +126,7 @@
 <column name="i_reg_309">4, 0, 4, 0</column>
 <column name="icmp_ln97_reg_314">1, 0, 1, 0</column>
 <column name="icmp_ln97_reg_314_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="reuse_addr_reg_fu_52">31, 0, 32, 1</column>
+<column name="reuse_addr_reg_fu_52">63, 0, 64, 1</column>
 <column name="reuse_reg_fu_56">64, 0, 64, 0</column>
 <column name="reuse_select_reg_344">64, 0, 64, 0</column>
 <column name="sext_ln89_cast_reg_304">64, 0, 64, 0</column>

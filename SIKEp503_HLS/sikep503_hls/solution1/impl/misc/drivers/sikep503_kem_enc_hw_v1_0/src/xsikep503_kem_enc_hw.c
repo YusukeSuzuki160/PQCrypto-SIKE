@@ -76,54 +76,60 @@ void XSikep503_kem_enc_hw_DisableAutoRestart(XSikep503_kem_enc_hw *InstancePtr) 
     XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-void XSikep503_kem_enc_hw_Set_ct(XSikep503_kem_enc_hw *InstancePtr, u32 Data) {
+void XSikep503_kem_enc_hw_Set_ct(XSikep503_kem_enc_hw *InstancePtr, u64 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_CT_DATA, Data);
+    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_CT_DATA, (u32)(Data));
+    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_CT_DATA + 4, (u32)(Data >> 32));
 }
 
-u32 XSikep503_kem_enc_hw_Get_ct(XSikep503_kem_enc_hw *InstancePtr) {
-    u32 Data;
+u64 XSikep503_kem_enc_hw_Get_ct(XSikep503_kem_enc_hw *InstancePtr) {
+    u64 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XSikep503_kem_enc_hw_ReadReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_CT_DATA);
+    Data += (u64)XSikep503_kem_enc_hw_ReadReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_CT_DATA + 4) << 32;
     return Data;
 }
 
-void XSikep503_kem_enc_hw_Set_pk(XSikep503_kem_enc_hw *InstancePtr, u32 Data) {
+void XSikep503_kem_enc_hw_Set_pk(XSikep503_kem_enc_hw *InstancePtr, u64 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_PK_DATA, Data);
+    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_PK_DATA, (u32)(Data));
+    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_PK_DATA + 4, (u32)(Data >> 32));
 }
 
-u32 XSikep503_kem_enc_hw_Get_pk(XSikep503_kem_enc_hw *InstancePtr) {
-    u32 Data;
+u64 XSikep503_kem_enc_hw_Get_pk(XSikep503_kem_enc_hw *InstancePtr) {
+    u64 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XSikep503_kem_enc_hw_ReadReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_PK_DATA);
+    Data += (u64)XSikep503_kem_enc_hw_ReadReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_PK_DATA + 4) << 32;
     return Data;
 }
 
-void XSikep503_kem_enc_hw_Set_ss(XSikep503_kem_enc_hw *InstancePtr, u32 Data) {
+void XSikep503_kem_enc_hw_Set_ss(XSikep503_kem_enc_hw *InstancePtr, u64 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_SS_DATA, Data);
+    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_SS_DATA, (u32)(Data));
+    XSikep503_kem_enc_hw_WriteReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_SS_DATA + 4, (u32)(Data >> 32));
 }
 
-u32 XSikep503_kem_enc_hw_Get_ss(XSikep503_kem_enc_hw *InstancePtr) {
-    u32 Data;
+u64 XSikep503_kem_enc_hw_Get_ss(XSikep503_kem_enc_hw *InstancePtr) {
+    u64 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XSikep503_kem_enc_hw_ReadReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_SS_DATA);
+    Data += (u64)XSikep503_kem_enc_hw_ReadReg(InstancePtr->Control_BaseAddress, XSIKEP503_KEM_ENC_HW_CONTROL_ADDR_SS_DATA + 4) << 32;
     return Data;
 }
 
