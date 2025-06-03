@@ -114,7 +114,7 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
-    signal empty_141_fu_107_p1 : STD_LOGIC_VECTOR (2 downto 0);
+    signal empty_148_fu_107_p1 : STD_LOGIC_VECTOR (2 downto 0);
     signal empty_fu_103_p1 : STD_LOGIC_VECTOR (2 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (5 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
@@ -525,12 +525,12 @@ begin
         end if; 
     end process;
 
-    empty_141_fu_107_p1 <= b_offset(3 - 1 downto 0);
+    empty_148_fu_107_p1 <= b_offset(3 - 1 downto 0);
     empty_fu_103_p1 <= a_offset(3 - 1 downto 0);
     grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_ap_start <= grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_ap_start_reg;
     grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_ap_start <= grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_ap_start_reg;
     grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_ap_start <= grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_ap_start_reg;
     tmp_501_fu_131_p4 <= ((empty_fu_103_p1 & a_offset2) & ap_const_lv3_0);
     tmp_fu_111_p3 <= (c_offset & ap_const_lv3_0);
-    tmp_s_fu_120_p4 <= ((empty_141_fu_107_p1 & b_offset4) & ap_const_lv3_0);
+    tmp_s_fu_120_p4 <= ((empty_148_fu_107_p1 & b_offset4) & ap_const_lv3_0);
 end behav;

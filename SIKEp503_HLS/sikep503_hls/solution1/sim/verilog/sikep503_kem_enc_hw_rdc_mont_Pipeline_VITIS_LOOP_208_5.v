@@ -214,7 +214,7 @@ wire   [31:0] zext_ln106_1_fu_418_p1;
 wire   [31:0] add_ln130_1_fu_424_p2;
 wire   [33:0] zext_ln130_2_fu_429_p1;
 wire   [33:0] zext_ln130_1_fu_421_p1;
-wire   [33:0] temp_1_fu_433_p2;
+wire   [33:0] temp_4_fu_433_p2;
 wire   [33:0] and_ln212_s_fu_460_p3;
 wire   [63:0] zext_ln212_fu_467_p1;
 wire   [63:0] and_ln_fu_453_p3;
@@ -272,7 +272,7 @@ initial begin
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_rdc_mont_14183_Pipeline_VITIS_LOOP_187_3_p503p1_1_ROM_AUTO_1R #(
+sikep503_kem_enc_hw_rdc_mont_14186_Pipeline_VITIS_LOOP_187_3_p503p1_1_ROM_AUTO_1R #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -480,7 +480,7 @@ always @ (posedge ap_clk) begin
         tmp_3_reg_821 <= {{grp_fu_849_p_dout0[63:32]}};
         tmp_3_reg_821_pp0_iter4_reg <= tmp_3_reg_821;
         tmp_3_reg_821_pp0_iter5_reg <= tmp_3_reg_821_pp0_iter4_reg;
-        tmp_4_reg_847 <= {{temp_1_fu_433_p2[33:32]}};
+        tmp_4_reg_847 <= {{temp_4_fu_433_p2[33:32]}};
         tmp_6_reg_867 <= xor_ln105_6_fu_585_p2[32'd63];
         tmp_s_reg_806 <= {{grp_fu_837_p_dout0[63:32]}};
         trunc_ln105_reg_842 <= trunc_ln105_fu_439_p1;
@@ -716,7 +716,7 @@ assign tempReg_1_fu_544_p2 = (xor_ln212_reg_852 + zext_ln105_2_fu_540_p1);
 
 assign tempReg_fu_496_p3 = {{trunc_ln125_reg_831_pp0_iter6_reg}, {trunc_ln106_reg_786_pp0_iter6_reg}};
 
-assign temp_1_fu_433_p2 = (zext_ln130_2_fu_429_p1 + zext_ln130_1_fu_421_p1);
+assign temp_4_fu_433_p2 = (zext_ln130_2_fu_429_p1 + zext_ln130_1_fu_421_p1);
 
 assign temp_fu_386_p2 = (zext_ln123_2_fu_382_p1 + zext_ln106_fu_367_p1);
 
@@ -724,7 +724,7 @@ assign tmp_5_fu_643_p3 = and_ln105_fu_638_p2[32'd63];
 
 assign trunc_ln105_1_fu_627_p1 = tempReg_1_reg_858_pp0_iter8_reg[62:0];
 
-assign trunc_ln105_fu_439_p1 = temp_1_fu_433_p2[31:0];
+assign trunc_ln105_fu_439_p1 = temp_4_fu_433_p2[31:0];
 
 assign trunc_ln106_1_fu_315_p1 = grp_fu_841_p_dout0[31:0];
 

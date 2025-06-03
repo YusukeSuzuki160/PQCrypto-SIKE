@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_130</name>
+						<name>i_128</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>20</lineNumber>
@@ -235,7 +235,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_130_write_ln20</name>
+						<name>i_128_write_ln20</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>20</lineNumber>
@@ -1422,7 +1422,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>xor_ln35_5</name>
+						<name>xor_ln35_4</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1594,7 +1594,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>xor_ln35_6</name>
+						<name>xor_ln35_7</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1707,7 +1707,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>xor_ln35_s</name>
+						<name>xor_ln35_5</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1822,7 +1822,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>xor_ln35_7</name>
+						<name>xor_ln35_6</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1994,7 +1994,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>i_130_write_ln20</name>
+						<name>i_128_write_ln20</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>20</lineNumber>

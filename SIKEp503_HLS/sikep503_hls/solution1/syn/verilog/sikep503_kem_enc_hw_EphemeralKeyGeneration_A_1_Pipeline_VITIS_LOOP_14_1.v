@@ -57,7 +57,7 @@ wire    ap_block_pp0_stage0;
 reg   [3:0] i_fu_30;
 wire   [3:0] add_ln14_fu_75_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_306;
+reg   [3:0] ap_sig_allocacmp_i_304;
 reg    B_gen_1_ce0_local;
 reg    phiP_X_we0_local;
 reg    phiP_X_ce0_local;
@@ -192,9 +192,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_306 = 4'd0;
+        ap_sig_allocacmp_i_304 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_306 = i_fu_30;
+        ap_sig_allocacmp_i_304 = i_fu_30;
     end
 end
 
@@ -229,7 +229,7 @@ assign B_gen_1_address0 = zext_ln14_fu_81_p1;
 
 assign B_gen_1_ce0 = B_gen_1_ce0_local;
 
-assign add_ln14_fu_75_p2 = (ap_sig_allocacmp_i_306 + 4'd1);
+assign add_ln14_fu_75_p2 = (ap_sig_allocacmp_i_304 + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -249,7 +249,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln14_fu_69_p2 = ((ap_sig_allocacmp_i_306 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln14_fu_69_p2 = ((ap_sig_allocacmp_i_304 == 4'd8) ? 1'b1 : 1'b0);
 
 assign phiP_X_address0 = zext_ln14_reg_101;
 
@@ -259,7 +259,7 @@ assign phiP_X_d0 = B_gen_1_q0;
 
 assign phiP_X_we0 = phiP_X_we0_local;
 
-assign zext_ln14_fu_81_p1 = ap_sig_allocacmp_i_306;
+assign zext_ln14_fu_81_p1 = ap_sig_allocacmp_i_304;
 
 always @ (posedge ap_clk) begin
     zext_ln14_reg_101[63:4] <= 60'b000000000000000000000000000000000000000000000000000000000000;

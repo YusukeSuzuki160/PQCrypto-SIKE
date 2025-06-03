@@ -153,8 +153,8 @@ reg   [31:0] trunc_ln125_reg_746;
 reg   [31:0] trunc_ln125_reg_746_pp0_iter5_reg;
 wire   [32:0] add_ln130_fu_376_p2;
 reg   [32:0] add_ln130_reg_752;
-wire   [33:0] temp_40_fu_397_p2;
-reg   [33:0] temp_40_reg_757;
+wire   [33:0] temp_43_fu_397_p2;
+reg   [33:0] temp_43_reg_757;
 reg   [1:0] tmp_205_reg_762;
 wire   [63:0] add_ln133_fu_444_p2;
 reg   [63:0] add_ln133_reg_767;
@@ -418,14 +418,14 @@ always @ (posedge ap_clk) begin
         icmp_ln145_reg_643_pp0_iter6_reg <= icmp_ln145_reg_643_pp0_iter5_reg;
         tempReg_reg_772 <= tempReg_fu_516_p2;
         tempReg_reg_772_pp0_iter7_reg <= tempReg_reg_772;
-        temp_40_reg_757 <= temp_40_fu_397_p2;
+        temp_43_reg_757 <= temp_43_fu_397_p2;
         tmp_201_reg_721 <= {{grp_fu_438_p_dout0[63:32]}};
         tmp_202_reg_741 <= {{temp_fu_350_p2[33:32]}};
         tmp_203_reg_726 <= {{grp_fu_446_p_dout0[63:32]}};
         tmp_204_reg_736 <= {{grp_fu_450_p_dout0[63:32]}};
         tmp_204_reg_736_pp0_iter4_reg <= tmp_204_reg_736;
         tmp_204_reg_736_pp0_iter5_reg <= tmp_204_reg_736_pp0_iter4_reg;
-        tmp_205_reg_762 <= {{temp_40_fu_397_p2[33:32]}};
+        tmp_205_reg_762 <= {{temp_43_fu_397_p2[33:32]}};
         trunc_ln106_123_reg_706 <= trunc_ln106_123_fu_279_p1;
         trunc_ln106_124_reg_711 <= trunc_ln106_124_fu_283_p1;
         trunc_ln106_125_reg_716 <= trunc_ln106_125_fu_287_p1;
@@ -673,7 +673,7 @@ assign sub_ln146_fu_211_p2 = (empty - trunc_ln145_fu_207_p1);
 
 assign tempReg_fu_516_p2 = (or_ln8_fu_508_p3 + zext_ln105_85_fu_494_p1);
 
-assign temp_40_fu_397_p2 = (zext_ln130_74_fu_393_p1 + zext_ln130_73_fu_385_p1);
+assign temp_43_fu_397_p2 = (zext_ln130_74_fu_393_p1 + zext_ln130_73_fu_385_p1);
 
 assign temp_fu_350_p2 = (zext_ln123_74_fu_346_p1 + zext_ln106_fu_331_p1);
 
@@ -681,7 +681,7 @@ assign tmp_126_fu_600_p3 = or_ln148_7_fu_594_p2[32'd63];
 
 assign tmp_s_fu_498_p4 = {{add_ln133_fu_444_p2[63:32]}};
 
-assign trunc_ln105_fu_423_p1 = temp_40_reg_757[31:0];
+assign trunc_ln105_fu_423_p1 = temp_43_reg_757[31:0];
 
 assign trunc_ln106_123_fu_279_p1 = grp_fu_442_p_dout0[31:0];
 

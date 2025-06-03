@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_7_Pipeline_VITIS_LOOP_170_1157'" level="0">
-<item name = "Date">Tue May 27 13:49:33 2025
+<item name = "Date">Tue Jun  3 14:13:33 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -85,12 +85,12 @@
 <column name="and_ln172_fu_172_p2">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln170_fu_92_p2">icmp, 0, 0, 14, 5, 6</column>
 <column name="borrowReg_fu_178_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln105_17_fu_129_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln105_16_fu_129_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln95_fu_153_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_149_fu_121_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_150_fu_125_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_151_fu_135_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_144_fu_121_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_145_fu_125_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_146_fu_135_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln172_fu_166_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -100,7 +100,7 @@
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 5, 10</column>
 <column name="borrow_reg_72">9, 2, 1, 2</column>
-<column name="i_195_fu_38">9, 2, 5, 10</column>
+<column name="i_192_fu_38">9, 2, 5, 10</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -111,7 +111,7 @@
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="borrow_reg_72">1, 0, 1, 0</column>
-<column name="i_195_fu_38">5, 0, 5, 0</column>
+<column name="i_192_fu_38">5, 0, 5, 0</column>
 <column name="icmp_ln170_reg_201">1, 0, 1, 0</column>
 <column name="icmp_ln170_reg_201_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="tempReg_reg_228">64, 0, 64, 0</column>

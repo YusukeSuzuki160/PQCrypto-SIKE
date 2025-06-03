@@ -165,7 +165,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "zext_ln157", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zext_ln146_26", "Type" : "None", "Direction" : "I"},
 			{"Name" : "a", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "i_25", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_27", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zext_ln146_25", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v_35_out", "Type" : "Vld", "Direction" : "O"},
@@ -175,10 +175,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "VITIS_LOOP_159_4", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter9", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter9", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163.flow_control_loop_pipe_sequential_init_U", "Parent" : "3"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1887", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1888", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1889", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1890", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1886", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1887", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1888", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1889", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -207,7 +207,7 @@ set ArgLastReadFirstWriteLatency {
 		zext_ln157 {Type I LastRead 0 FirstWrite -1}
 		zext_ln146_26 {Type I LastRead 0 FirstWrite -1}
 		a {Type I LastRead 1 FirstWrite -1}
-		i_25 {Type I LastRead 0 FirstWrite -1}
+		i_27 {Type I LastRead 0 FirstWrite -1}
 		zext_ln146_25 {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 1 FirstWrite -1}
 		v_35_out {Type O LastRead -1 FirstWrite 8}

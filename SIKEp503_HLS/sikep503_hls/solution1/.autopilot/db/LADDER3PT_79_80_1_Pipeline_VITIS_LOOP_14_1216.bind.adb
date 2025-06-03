@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>R0_Z</name>
+						<name>R2_X</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
-				<array_size>16</array_size>
+				<array_size>8</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -56,7 +56,7 @@
 					<Obj>
 						<type>0</type>
 						<id>3</id>
-						<name>i_261</name>
+						<name>i_263</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>12</lineNumber>
@@ -68,14 +68,21 @@
 							<item class_id="10" tracking_level="0" version="0">
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second class_id="11" tracking_level="0" version="0">
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -119,7 +126,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_261_write_ln12</name>
+						<name>i_263_write_ln12</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>12</lineNumber>
@@ -131,14 +138,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -237,14 +251,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -301,14 +322,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -365,14 +393,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -429,14 +464,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -494,14 +536,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -545,7 +594,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>R0_Z_addr</name>
+						<name>R2_X_addr</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
@@ -557,14 +606,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -587,7 +643,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>3</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -610,7 +666,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>Montgomery_one_1_addr</name>
+						<name>XRA_0_addr</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
@@ -622,14 +678,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -675,7 +738,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>Montgomery_one_1_load</name>
+						<name>XRA_0_load</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
@@ -687,14 +750,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -738,7 +808,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>R0_Z_addr_write_ln15</name>
+						<name>R2_X_addr_write_ln15</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
@@ -750,14 +820,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -793,7 +870,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.32</m_delay>
 				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -802,7 +879,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>i_261_write_ln12</name>
+						<name>i_263_write_ln12</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>12</lineNumber>
@@ -814,14 +891,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -880,14 +964,21 @@
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>src/ec_isogeny.c</first>
 											<second>LADDER3PT</second>
 										</first>
-										<second>311</second>
+										<second>312</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.c</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
 									</item>
 									<item>
 										<first>
@@ -1167,7 +1258,7 @@
 				<Obj>
 					<type>3</type>
 					<id>11</id>
-					<name>for.inc.i83</name>
+					<name>for.inc.i.i92</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1201,7 +1292,7 @@
 				<Obj>
 					<type>3</type>
 					<id>22</id>
-					<name>for.inc.i83.split</name>
+					<name>for.inc.i.i92.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1238,7 +1329,7 @@
 				<Obj>
 					<type>3</type>
 					<id>24</id>
-					<name>for.inc.i.i92.preheader.exitStub</name>
+					<name>for.inc.i10.i101.preheader.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1992,19 +2083,19 @@
 		<count>6</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>Montgomery_one_1_addr_gep_fu_34</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>17</item>
-			</second>
-		</item>
-		<item>
-			<first>R0_Z_addr_gep_fu_47</first>
+			<first>R2_X_addr_gep_fu_47</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>13</item>
+			</second>
+		</item>
+		<item>
+			<first>XRA_0_addr_gep_fu_34</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>17</item>
 			</second>
 		</item>
 		<item>
@@ -2016,7 +2107,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_261_fu_30</first>
+			<first>i_263_fu_30</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2081,7 +2172,18 @@
 		<item_version>0</item_version>
 		<item class_id="50" tracking_level="0" version="0">
 			<first class_id="51" tracking_level="0" version="0">
-				<first>Montgomery_one_1</first>
+				<first>R2_X</first>
+				<second>0</second>
+			</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>19</item>
+			</second>
+		</item>
+		<item>
+			<first>
+				<first>XRA_0</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -2089,17 +2191,6 @@
 				<item_version>0</item_version>
 				<item>18</item>
 				<item>18</item>
-			</second>
-		</item>
-		<item>
-			<first>
-				<first>R0_Z</first>
-				<second>0</second>
-			</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>19</item>
 			</second>
 		</item>
 	</dp_mem_port_nodes>
@@ -2135,7 +2226,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>Montgomery_one_1_addr_reg_106</first>
+			<first>XRA_0_addr_reg_106</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2143,7 +2234,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_261_reg_91</first>
+			<first>i_263_reg_91</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2171,7 +2262,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="53" tracking_level="0" version="0">
-			<first>R0_Z(p0)</first>
+			<first>R2_X(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'crypto_kem_enc_1'" level="0">
-<item name = "Date">Tue May 27 14:20:42 2025
+<item name = "Date">Tue Jun  3 12:37:51 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -37,12 +37,12 @@
 <column name="grp_EphemeralKeyGeneration_A_1_fu_255">EphemeralKeyGeneration_A_1, 6276331, 14738978858, 62.763 ms, 147.390 sec, 6276331, 14738978858, no</column>
 <column name="grp_EphemeralSecretAgreement_A_1_fu_290">EphemeralSecretAgreement_A_1, 3630853, 14736862361, 36.309 ms, 147.369 sec, 3630853, 14736862361, no</column>
 <column name="grp_cshake256_simple_32_clone_fu_315">cshake256_simple_32_clone, 388, 388, 3.880 us, 3.880 us, 388, 388, no</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323">crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6, 27, 27, 0.270 us, 0.270 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323">crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1, 27, 27, 0.270 us, 0.270 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_crypto_kem_enc_1_Pipeline_4_fu_335">crypto_kem_enc_1_Pipeline_4, 405, 405, 4.050 us, 4.050 us, 403, 403, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_cshake256_simple_absorb_fu_346">cshake256_simple_absorb, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_KeccakF1600_StatePermute_fu_359">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366">crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375">crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1, 19, 19, 0.190 us, 0.190 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366">crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375">crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1, 19, 19, 0.190 us, 0.190 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -79,9 +79,9 @@
 <column name="grp_crypto_kem_enc_1_Pipeline_2_fu_233">crypto_kem_enc_1_Pipeline_2, 0, 0, 41, 91, 0</column>
 <column name="grp_crypto_kem_enc_1_Pipeline_4_fu_335">crypto_kem_enc_1_Pipeline_4, 0, 0, 41, 91, 0</column>
 <column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219">crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1, 0, 0, 240, 442, 0</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366">crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2, 0, 0, 13, 64, 0</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375">crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1, 0, 0, 20, 96, 0</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323">crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6, 0, 0, 20, 103, 0</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366">crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2, 0, 0, 13, 64, 0</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323">crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1, 0, 0, 20, 103, 0</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375">crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1, 0, 0, 20, 96, 0</column>
 <column name="grp_cshake256_simple_32_fu_244">cshake256_simple_32, 8, 0, 10093, 35364, 0</column>
 <column name="grp_cshake256_simple_32_clone_fu_315">cshake256_simple_32_clone, 8, 0, 10111, 35735, 0</column>
 <column name="grp_cshake256_simple_absorb_fu_346">cshake256_simple_absorb, 2, 0, 5085, 17648, 0</column>
@@ -114,7 +114,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln81_fu_402_p2">+, 0, 0, 71, 64, 9</column>
+<column name="add_ln59_fu_402_p2">+, 0, 0, 71, 64, 9</column>
 <column name="ephemeralsk_we0">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
@@ -229,7 +229,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln81_reg_450">64, 0, 64, 0</column>
+<column name="add_ln59_reg_450">64, 0, 64, 0</column>
 <column name="ap_CS_fsm">51, 0, 51, 0</column>
 <column name="grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg">1, 0, 1, 0</column>
@@ -237,9 +237,9 @@
 <column name="grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_cshake256_simple_32_clone_fu_315_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_cshake256_simple_32_fu_244_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_cshake256_simple_absorb_fu_346_ap_start_reg">1, 0, 1, 0</column>

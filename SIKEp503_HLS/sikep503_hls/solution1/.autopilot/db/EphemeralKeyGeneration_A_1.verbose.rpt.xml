@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1'" level="0">
-<item name = "Date">Tue May 27 14:19:26 2025
+<item name = "Date">Tue Jun  3 14:14:29 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -44,7 +44,7 @@
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1249_fu_1349">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1249, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1245_fu_1356">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1245, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fpadd503_149_3_fu_1363">fpadd503_149_3, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_LADDER3PT_79_80_1_fu_1377">LADDER3PT_79_80_1, 1865690, 2848190, 18.657 ms, 28.482 ms, 1865690, 2848190, no</column>
+<column name="grp_LADDER3PT_75_76_1_fu_1377">LADDER3PT_75_76_1, 1865690, 2848190, 18.657 ms, 28.482 ms, 1865690, 2848190, no</column>
 <column name="grp_fpsub503_3_fu_1405">fpsub503_3, 40, 40, 0.400 us, 0.400 us, 40, 40, no</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1250_fu_1414">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1250, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1252_fu_1421">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1252, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
@@ -150,7 +150,7 @@
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1_fu_1806">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1, 0, 0, 308, 680, 0</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1260_fu_1814">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1260, 0, 0, 306, 694, 0</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1261_fu_1822">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1261, 0, 0, 306, 692, 0</column>
-<column name="grp_LADDER3PT_79_80_1_fu_1377">LADDER3PT_79_80_1, 102, 400, 115605, 169435, 0</column>
+<column name="grp_LADDER3PT_75_76_1_fu_1377">LADDER3PT_75_76_1, 102, 400, 115605, 169435, 0</column>
 <column name="grp_eval_4_isog_2_fu_1655">eval_4_isog_2, 64, 304, 80399, 112578, 0</column>
 <column name="grp_fp2inv503_mont_fu_1718">fp2inv503_mont, 28, 272, 64537, 81283, 0</column>
 <column name="grp_fp2mul503_mont_fu_1760">fp2mul503_mont, 12, 48, 12395, 16929, 0</column>
@@ -207,14 +207,14 @@
 <column name="t1_4_U">EphemeralKeyGeneration_A_1_t_i421_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
 <column name="A24plus_U">EphemeralKeyGeneration_A_1_t_i421_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
 <column name="C24_U">EphemeralKeyGeneration_A_1_t_i421_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="R_X_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="R_Z_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="phiP_X_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="phiP_Z_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="phiQ_X_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="phiQ_Z_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="phiR_X_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
-<column name="phiR_Z_U">LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="R_X_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="R_Z_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="phiP_X_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="phiP_Z_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="phiQ_X_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="phiQ_Z_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="phiR_X_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
+<column name="phiR_Z_U">LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W, 4, 0, 0, 0, 16, 64, 1, 1024</column>
 <column name="t3_U">fpsqr503_mont_1_temp_RAM_AUTO_1R1W, 2, 0, 0, 0, 16, 64, 1, 1024</column>
 </table>
 </item>
@@ -225,7 +225,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln114_fu_1926_p2">+, 0, 0, 14, 7, 2</column>
-<column name="i_307_fu_1987_p2">+, 0, 0, 14, 7, 1</column>
+<column name="i_305_fu_1987_p2">+, 0, 0, 14, 7, 1</column>
 <column name="ii_2_fu_1965_p2">+, 0, 0, 39, 32, 1</column>
 <column name="index_7_fu_1993_p2">+, 0, 0, 39, 32, 32</column>
 <column name="j_52_fu_1899_p2">+, 0, 0, 14, 7, 1</column>
@@ -493,7 +493,7 @@
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1260_fu_1814_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1261_fu_1822_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1_fu_1806_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_LADDER3PT_79_80_1_fu_1377_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_LADDER3PT_75_76_1_fu_1377_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_eval_4_isog_2_fu_1655_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_fp2inv503_mont_fu_1718_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_fp2mul503_mont_127_fu_1738_ap_start_reg">1, 0, 1, 0</column>
@@ -527,7 +527,7 @@
 <column name="grp_fpsub503_4_fu_1560_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_from_mont_25_fu_1776_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_from_mont_2_fu_1794_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_307_reg_2158">7, 0, 7, 0</column>
+<column name="i_305_reg_2158">7, 0, 7, 0</column>
 <column name="i_reg_1262">7, 0, 7, 0</column>
 <column name="ii_2_reg_2140">32, 0, 32, 0</column>
 <column name="ii_fu_260">32, 0, 32, 0</column>
@@ -563,12 +563,12 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1, return value</column>
-<column name="ephemeralsk_address0">out, 5, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_ce0">out, 1, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_q0">in, 8, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_address1">out, 5, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_ce1">out, 1, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_q1">in, 8, ap_memory, ephemeralsk, array</column>
+<column name="ephemeralsk_i_address0">out, 5, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_ce0">out, 1, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_q0">in, 8, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_address1">out, 5, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_ce1">out, 1, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_q1">in, 8, ap_memory, ephemeralsk_i, array</column>
 <column name="m_axi_gmem_0_AWVALID">out, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_0_AWREADY">in, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_0_AWADDR">out, 64, m_axi, gmem, pointer</column>

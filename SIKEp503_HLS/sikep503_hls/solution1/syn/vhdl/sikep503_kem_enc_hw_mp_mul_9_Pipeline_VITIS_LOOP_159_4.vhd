@@ -203,7 +203,7 @@ attribute shreg_extract : string;
     signal add_ln130_fu_472_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal zext_ln130_44_fu_496_p1 : STD_LOGIC_VECTOR (33 downto 0);
     signal zext_ln130_43_fu_482_p1 : STD_LOGIC_VECTOR (33 downto 0);
-    signal temp_25_fu_506_p2 : STD_LOGIC_VECTOR (33 downto 0);
+    signal temp_28_fu_506_p2 : STD_LOGIC_VECTOR (33 downto 0);
     signal and_ln133_6_fu_539_p3 : STD_LOGIC_VECTOR (33 downto 0);
     signal zext_ln133_fu_546_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal and_ln133_5_fu_532_p3 : STD_LOGIC_VECTOR (63 downto 0);
@@ -522,7 +522,7 @@ begin
                 tmp_115_reg_864 <= grp_fu_435_p_dout0(63 downto 32);
                 tmp_115_reg_864_pp0_iter5_reg <= tmp_115_reg_864;
                 tmp_115_reg_864_pp0_iter6_reg <= tmp_115_reg_864_pp0_iter5_reg;
-                tmp_116_reg_885 <= temp_25_fu_506_p2(33 downto 32);
+                tmp_116_reg_885 <= temp_28_fu_506_p2(33 downto 32);
                 trunc_ln106_78_reg_832 <= trunc_ln106_78_fu_369_p1;
                 trunc_ln106_79_reg_837 <= trunc_ln106_79_fu_373_p1;
                 trunc_ln106_80_reg_842 <= trunc_ln106_80_fu_377_p1;
@@ -712,7 +712,7 @@ begin
 
     t_fu_716_p2 <= std_logic_vector(unsigned(zext_ln163_fu_712_p1) + unsigned(t_33_fu_100));
     tempReg_fu_621_p2 <= std_logic_vector(unsigned(or_ln6_fu_614_p3) + unsigned(zext_ln105_60_fu_600_p1));
-    temp_25_fu_506_p2 <= std_logic_vector(unsigned(zext_ln130_44_fu_496_p1) + unsigned(zext_ln130_43_fu_482_p1));
+    temp_28_fu_506_p2 <= std_logic_vector(unsigned(zext_ln130_44_fu_496_p1) + unsigned(zext_ln130_43_fu_482_p1));
     temp_fu_440_p2 <= std_logic_vector(unsigned(zext_ln123_44_fu_436_p1) + unsigned(zext_ln106_fu_421_p1));
     tmp_4_fu_604_p4 <= add_ln133_fu_550_p2(63 downto 32);
     tmp_fu_704_p3 <= or_ln162_2_fu_698_p2(63 downto 63);

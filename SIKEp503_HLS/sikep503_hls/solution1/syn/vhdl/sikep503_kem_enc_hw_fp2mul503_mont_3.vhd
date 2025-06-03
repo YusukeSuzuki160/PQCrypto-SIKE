@@ -956,7 +956,7 @@ begin
         R_Z_d0 => grp_rdc_mont_2_fu_133_R_Z_d0,
         R_Z_q0 => R_Z_q0);
 
-    mul_32ns_32ns_64_2_1_U1311 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
+    mul_32ns_32ns_64_2_1_U1310 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -971,7 +971,7 @@ begin
         ce => grp_fu_155_ce,
         dout => grp_fu_155_p2);
 
-    mul_32ns_32ns_64_2_1_U1312 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
+    mul_32ns_32ns_64_2_1_U1311 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -986,7 +986,7 @@ begin
         ce => grp_fu_159_ce,
         dout => grp_fu_159_p2);
 
-    mul_32ns_32ns_64_2_1_U1313 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
+    mul_32ns_32ns_64_2_1_U1312 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -1001,7 +1001,7 @@ begin
         ce => grp_fu_163_ce,
         dout => grp_fu_163_p2);
 
-    mul_32ns_32ns_64_2_1_U1314 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
+    mul_32ns_32ns_64_2_1_U1313 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,

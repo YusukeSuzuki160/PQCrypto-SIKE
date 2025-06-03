@@ -78,7 +78,7 @@ wire   [63:0] zext_ln92_4_fu_137_p1;
 wire   [63:0] zext_ln91_fu_126_p1;
 reg   [3:0] i_fu_46;
 wire   [3:0] add_ln91_fu_120_p2;
-reg   [3:0] ap_sig_allocacmp_i_207;
+reg   [3:0] ap_sig_allocacmp_i_214;
 reg    ap_loop_exit_ready_pp0_iter1_reg;
 wire    ap_block_pp0_stage0_01001;
 reg    a_ce1_local;
@@ -296,9 +296,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_207 = 4'd0;
+        ap_sig_allocacmp_i_214 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_207 = i_fu_46;
+        ap_sig_allocacmp_i_214 = i_fu_46;
     end
 end
 
@@ -341,9 +341,9 @@ assign a_d0 = sub_ln92_fu_220_p2;
 
 assign a_we0 = a_we0_local;
 
-assign add_ln91_fu_120_p2 = (ap_sig_allocacmp_i_207 + 4'd1);
+assign add_ln91_fu_120_p2 = (ap_sig_allocacmp_i_214 + 4'd1);
 
-assign add_ln92_fu_131_p2 = (zext_ln92_3 + ap_sig_allocacmp_i_207);
+assign add_ln92_fu_131_p2 = (zext_ln92_3 + ap_sig_allocacmp_i_214);
 
 assign and_ln92_fu_204_p2 = (xor_ln92_fu_198_p2 & borrow_reg_93);
 
@@ -371,7 +371,7 @@ assign borrowReg_fu_210_p2 = (tmp_fu_172_p3 | and_ln92_fu_204_p2);
 
 assign borrow_out = borrow_reg_93;
 
-assign icmp_ln91_fu_114_p2 = ((ap_sig_allocacmp_i_207 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln91_fu_114_p2 = ((ap_sig_allocacmp_i_214 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln105_fu_161_p2 = (xor_ln105_fu_153_p2 | xor_ln105_84_fu_157_p2);
 
@@ -397,7 +397,7 @@ assign xor_ln105_fu_153_p2 = (p503_1_load_reg_254 ^ a_load_reg_248);
 
 assign xor_ln92_fu_198_p2 = (tmp_176_fu_190_p3 ^ 1'd1);
 
-assign zext_ln91_fu_126_p1 = ap_sig_allocacmp_i_207;
+assign zext_ln91_fu_126_p1 = ap_sig_allocacmp_i_214;
 
 assign zext_ln92_4_fu_137_p1 = add_ln92_fu_131_p2;
 

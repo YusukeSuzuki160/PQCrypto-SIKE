@@ -68,22 +68,22 @@ module sikep503_kem_enc_hw_fp2_decode_1 (
         Montgomery_R2_1_address0,
         Montgomery_R2_1_ce0,
         Montgomery_R2_1_q0,
-        grp_fu_1361_p_din0,
-        grp_fu_1361_p_din1,
-        grp_fu_1361_p_dout0,
-        grp_fu_1361_p_ce,
-        grp_fu_1365_p_din0,
-        grp_fu_1365_p_din1,
-        grp_fu_1365_p_dout0,
-        grp_fu_1365_p_ce,
-        grp_fu_1369_p_din0,
-        grp_fu_1369_p_din1,
-        grp_fu_1369_p_dout0,
-        grp_fu_1369_p_ce,
         grp_fu_1373_p_din0,
         grp_fu_1373_p_din1,
         grp_fu_1373_p_dout0,
-        grp_fu_1373_p_ce
+        grp_fu_1373_p_ce,
+        grp_fu_1377_p_din0,
+        grp_fu_1377_p_din1,
+        grp_fu_1377_p_dout0,
+        grp_fu_1377_p_ce,
+        grp_fu_1381_p_din0,
+        grp_fu_1381_p_din1,
+        grp_fu_1381_p_dout0,
+        grp_fu_1381_p_ce,
+        grp_fu_1385_p_din0,
+        grp_fu_1385_p_din1,
+        grp_fu_1385_p_dout0,
+        grp_fu_1385_p_ce
 );
 
 parameter    ap_ST_fsm_state1 = 12'd1;
@@ -160,22 +160,22 @@ input  [63:0] PKB_q0;
 output  [2:0] Montgomery_R2_1_address0;
 output   Montgomery_R2_1_ce0;
 input  [63:0] Montgomery_R2_1_q0;
-output  [31:0] grp_fu_1361_p_din0;
-output  [31:0] grp_fu_1361_p_din1;
-input  [63:0] grp_fu_1361_p_dout0;
-output   grp_fu_1361_p_ce;
-output  [31:0] grp_fu_1365_p_din0;
-output  [31:0] grp_fu_1365_p_din1;
-input  [63:0] grp_fu_1365_p_dout0;
-output   grp_fu_1365_p_ce;
-output  [31:0] grp_fu_1369_p_din0;
-output  [31:0] grp_fu_1369_p_din1;
-input  [63:0] grp_fu_1369_p_dout0;
-output   grp_fu_1369_p_ce;
 output  [31:0] grp_fu_1373_p_din0;
 output  [31:0] grp_fu_1373_p_din1;
 input  [63:0] grp_fu_1373_p_dout0;
 output   grp_fu_1373_p_ce;
+output  [31:0] grp_fu_1377_p_din0;
+output  [31:0] grp_fu_1377_p_din1;
+input  [63:0] grp_fu_1377_p_dout0;
+output   grp_fu_1377_p_ce;
+output  [31:0] grp_fu_1381_p_din0;
+output  [31:0] grp_fu_1381_p_din1;
+input  [63:0] grp_fu_1381_p_dout0;
+output   grp_fu_1381_p_ce;
+output  [31:0] grp_fu_1385_p_din0;
+output  [31:0] grp_fu_1385_p_din1;
+input  [63:0] grp_fu_1385_p_dout0;
+output   grp_fu_1385_p_ce;
 
 reg ap_done;
 reg ap_idle;
@@ -194,11 +194,11 @@ reg    temp_ce0;
 reg    temp_we0;
 reg   [63:0] temp_d0;
 wire   [63:0] temp_q0;
-reg   [3:0] temp_72_address0;
-reg    temp_72_ce0;
-reg    temp_72_we0;
-reg   [63:0] temp_72_d0;
-wire   [63:0] temp_72_q0;
+reg   [3:0] temp_75_address0;
+reg    temp_75_ce0;
+reg    temp_75_we0;
+reg   [63:0] temp_75_d0;
+wire   [63:0] temp_75_q0;
 wire    grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66_ap_start;
 wire    grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66_ap_done;
 wire    grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66_ap_idle;
@@ -211,10 +211,10 @@ wire    grp_fp2_decode_1_Pipeline_3_fu_72_ap_start;
 wire    grp_fp2_decode_1_Pipeline_3_fu_72_ap_done;
 wire    grp_fp2_decode_1_Pipeline_3_fu_72_ap_idle;
 wire    grp_fp2_decode_1_Pipeline_3_fu_72_ap_ready;
-wire   [3:0] grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_address0;
-wire    grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_ce0;
-wire    grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_we0;
-wire   [63:0] grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_d0;
+wire   [3:0] grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_address0;
+wire    grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_ce0;
+wire    grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_we0;
+wire   [63:0] grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_d0;
 wire    grp_fp2_decode_1_Pipeline_4_fu_78_ap_start;
 wire    grp_fp2_decode_1_Pipeline_4_fu_78_ap_done;
 wire    grp_fp2_decode_1_Pipeline_4_fu_78_ap_idle;
@@ -386,14 +386,14 @@ sikep503_kem_enc_hw_fpsqr503_mont_1_temp_RAM_AUTO_1R1W #(
     .DataWidth( 64 ),
     .AddressRange( 16 ),
     .AddressWidth( 4 ))
-temp_72_U(
+temp_75_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(temp_72_address0),
-    .ce0(temp_72_ce0),
-    .we0(temp_72_we0),
-    .d0(temp_72_d0),
-    .q0(temp_72_q0)
+    .address0(temp_75_address0),
+    .ce0(temp_75_ce0),
+    .we0(temp_75_we0),
+    .d0(temp_75_d0),
+    .q0(temp_75_q0)
 );
 
 sikep503_kem_enc_hw_fp2_decode_1_Pipeline_VITIS_LOOP_53_1 grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66(
@@ -416,10 +416,10 @@ sikep503_kem_enc_hw_fp2_decode_1_Pipeline_3 grp_fp2_decode_1_Pipeline_3_fu_72(
     .ap_done(grp_fp2_decode_1_Pipeline_3_fu_72_ap_done),
     .ap_idle(grp_fp2_decode_1_Pipeline_3_fu_72_ap_idle),
     .ap_ready(grp_fp2_decode_1_Pipeline_3_fu_72_ap_ready),
-    .temp_72_address0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_address0),
-    .temp_72_ce0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_ce0),
-    .temp_72_we0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_we0),
-    .temp_72_d0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_d0)
+    .temp_75_address0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_address0),
+    .temp_75_ce0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_ce0),
+    .temp_75_we0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_we0),
+    .temp_75_d0(grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_d0)
 );
 
 sikep503_kem_enc_hw_fp2_decode_1_Pipeline_4 grp_fp2_decode_1_Pipeline_4_fu_78(
@@ -511,19 +511,19 @@ sikep503_kem_enc_hw_mp_mul_6 grp_mp_mul_6_fu_94(
     .c_d0(grp_mp_mul_6_fu_94_c_d0),
     .grp_fu_139_p_din0(grp_mp_mul_6_fu_94_grp_fu_139_p_din0),
     .grp_fu_139_p_din1(grp_mp_mul_6_fu_94_grp_fu_139_p_din1),
-    .grp_fu_139_p_dout0(grp_fu_1361_p_dout0),
+    .grp_fu_139_p_dout0(grp_fu_1373_p_dout0),
     .grp_fu_139_p_ce(grp_mp_mul_6_fu_94_grp_fu_139_p_ce),
     .grp_fu_143_p_din0(grp_mp_mul_6_fu_94_grp_fu_143_p_din0),
     .grp_fu_143_p_din1(grp_mp_mul_6_fu_94_grp_fu_143_p_din1),
-    .grp_fu_143_p_dout0(grp_fu_1365_p_dout0),
+    .grp_fu_143_p_dout0(grp_fu_1377_p_dout0),
     .grp_fu_143_p_ce(grp_mp_mul_6_fu_94_grp_fu_143_p_ce),
     .grp_fu_147_p_din0(grp_mp_mul_6_fu_94_grp_fu_147_p_din0),
     .grp_fu_147_p_din1(grp_mp_mul_6_fu_94_grp_fu_147_p_din1),
-    .grp_fu_147_p_dout0(grp_fu_1369_p_dout0),
+    .grp_fu_147_p_dout0(grp_fu_1381_p_dout0),
     .grp_fu_147_p_ce(grp_mp_mul_6_fu_94_grp_fu_147_p_ce),
     .grp_fu_151_p_din0(grp_mp_mul_6_fu_94_grp_fu_151_p_din0),
     .grp_fu_151_p_din1(grp_mp_mul_6_fu_94_grp_fu_151_p_din1),
-    .grp_fu_151_p_dout0(grp_fu_1373_p_dout0),
+    .grp_fu_151_p_dout0(grp_fu_1385_p_dout0),
     .grp_fu_151_p_ce(grp_mp_mul_6_fu_94_grp_fu_151_p_ce)
 );
 
@@ -536,7 +536,7 @@ sikep503_kem_enc_hw_rdc_mont_3 grp_rdc_mont_3_fu_103(
     .ap_ready(grp_rdc_mont_3_fu_103_ap_ready),
     .ma_address0(grp_rdc_mont_3_fu_103_ma_address0),
     .ma_ce0(grp_rdc_mont_3_fu_103_ma_ce0),
-    .ma_q0(temp_72_q0),
+    .ma_q0(temp_75_q0),
     .PKB_address0(grp_rdc_mont_3_fu_103_PKB_address0),
     .PKB_ce0(grp_rdc_mont_3_fu_103_PKB_ce0),
     .PKB_we0(grp_rdc_mont_3_fu_103_PKB_we0),
@@ -882,45 +882,45 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        temp_72_address0 = grp_rdc_mont_3_fu_103_ma_address0;
+        temp_75_address0 = grp_rdc_mont_3_fu_103_ma_address0;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
-        temp_72_address0 = grp_mp_mul_6_fu_94_c_address0;
+        temp_75_address0 = grp_mp_mul_6_fu_94_c_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_72_address0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_address0;
+        temp_75_address0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_address0;
     end else begin
-        temp_72_address0 = 'bx;
+        temp_75_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        temp_72_ce0 = grp_rdc_mont_3_fu_103_ma_ce0;
+        temp_75_ce0 = grp_rdc_mont_3_fu_103_ma_ce0;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
-        temp_72_ce0 = grp_mp_mul_6_fu_94_c_ce0;
+        temp_75_ce0 = grp_mp_mul_6_fu_94_c_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_72_ce0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_ce0;
+        temp_75_ce0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_ce0;
     end else begin
-        temp_72_ce0 = 1'b0;
+        temp_75_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        temp_72_d0 = grp_mp_mul_6_fu_94_c_d0;
+        temp_75_d0 = grp_mp_mul_6_fu_94_c_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_72_d0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_d0;
+        temp_75_d0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_d0;
     end else begin
-        temp_72_d0 = 'bx;
+        temp_75_d0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        temp_72_we0 = grp_mp_mul_6_fu_94_c_we0;
+        temp_75_we0 = grp_mp_mul_6_fu_94_c_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_72_we0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_72_we0;
+        temp_75_we0 = grp_fp2_decode_1_Pipeline_3_fu_72_temp_75_we0;
     end else begin
-        temp_72_we0 = 1'b0;
+        temp_75_we0 = 1'b0;
     end
 end
 
@@ -1078,29 +1078,29 @@ assign grp_fp2_decode_1_Pipeline_VITIS_LOOP_53_1_fu_66_ap_start = grp_fp2_decode
 
 assign grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84_ap_start = grp_fp2_decode_1_Pipeline_VITIS_LOOP_55_2_fu_84_ap_start_reg;
 
-assign grp_fu_1361_p_ce = grp_fu_139_ce;
+assign grp_fu_1373_p_ce = grp_fu_139_ce;
 
-assign grp_fu_1361_p_din0 = grp_mp_mul_6_fu_94_grp_fu_139_p_din0;
+assign grp_fu_1373_p_din0 = grp_mp_mul_6_fu_94_grp_fu_139_p_din0;
 
-assign grp_fu_1361_p_din1 = grp_mp_mul_6_fu_94_grp_fu_139_p_din1;
+assign grp_fu_1373_p_din1 = grp_mp_mul_6_fu_94_grp_fu_139_p_din1;
 
-assign grp_fu_1365_p_ce = grp_fu_143_ce;
+assign grp_fu_1377_p_ce = grp_fu_143_ce;
 
-assign grp_fu_1365_p_din0 = grp_mp_mul_6_fu_94_grp_fu_143_p_din0;
+assign grp_fu_1377_p_din0 = grp_mp_mul_6_fu_94_grp_fu_143_p_din0;
 
-assign grp_fu_1365_p_din1 = grp_mp_mul_6_fu_94_grp_fu_143_p_din1;
+assign grp_fu_1377_p_din1 = grp_mp_mul_6_fu_94_grp_fu_143_p_din1;
 
-assign grp_fu_1369_p_ce = grp_fu_147_ce;
+assign grp_fu_1381_p_ce = grp_fu_147_ce;
 
-assign grp_fu_1369_p_din0 = grp_mp_mul_6_fu_94_grp_fu_147_p_din0;
+assign grp_fu_1381_p_din0 = grp_mp_mul_6_fu_94_grp_fu_147_p_din0;
 
-assign grp_fu_1369_p_din1 = grp_mp_mul_6_fu_94_grp_fu_147_p_din1;
+assign grp_fu_1381_p_din1 = grp_mp_mul_6_fu_94_grp_fu_147_p_din1;
 
-assign grp_fu_1373_p_ce = grp_fu_151_ce;
+assign grp_fu_1385_p_ce = grp_fu_151_ce;
 
-assign grp_fu_1373_p_din0 = grp_mp_mul_6_fu_94_grp_fu_151_p_din0;
+assign grp_fu_1385_p_din0 = grp_mp_mul_6_fu_94_grp_fu_151_p_din0;
 
-assign grp_fu_1373_p_din1 = grp_mp_mul_6_fu_94_grp_fu_151_p_din1;
+assign grp_fu_1385_p_din1 = grp_mp_mul_6_fu_94_grp_fu_151_p_din1;
 
 assign grp_mp_mul_6_fu_94_ap_start = grp_mp_mul_6_fu_94_ap_start_reg;
 

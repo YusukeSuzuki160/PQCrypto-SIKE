@@ -25,10 +25,10 @@
 
 <Node id="3" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_261 = alloca i32 1
+newFuncRoot:0 %i_263 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_261"/></StgValue>
+<StgValue><ssdm name="i_263"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -40,7 +40,7 @@ newFuncRoot:0 %i_261 = alloca i32 1
 
 <Node id="4" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:1 %store_ln12 = store i4 0, i4 %i_261
+newFuncRoot:1 %store_ln12 = store i4 0, i4 %i_263
 
 ]]></Node>
 <StgValue><ssdm name="store_ln12"/></StgValue>
@@ -55,7 +55,7 @@ newFuncRoot:1 %store_ln12 = store i4 0, i4 %i_261
 
 <Node id="5" bw="0" op_0_bw="0">
 <![CDATA[
-newFuncRoot:2 %br_ln0 = br void %for.inc.i83
+newFuncRoot:2 %br_ln0 = br void %for.inc.i.i92
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i83
 
 <Node id="7" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i83:0 %i = load i4 %i_261
+for.inc.i.i92:0 %i = load i4 %i_263
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -85,7 +85,7 @@ for.inc.i83:0 %i = load i4 %i_261
 
 <Node id="8" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i83:1 %icmp_ln14 = icmp_eq  i4 %i, i4 8
+for.inc.i.i92:1 %icmp_ln14 = icmp_eq  i4 %i, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln14"/></StgValue>
@@ -100,7 +100,7 @@ for.inc.i83:1 %icmp_ln14 = icmp_eq  i4 %i, i4 8
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i83:2 %add_ln14 = add i4 %i, i4 1
+for.inc.i.i92:2 %add_ln14 = add i4 %i, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln14"/></StgValue>
@@ -115,7 +115,7 @@ for.inc.i83:2 %add_ln14 = add i4 %i, i4 1
 
 <Node id="10" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-for.inc.i83:3 %br_ln14 = br i1 %icmp_ln14, void %for.inc.i83.split, void %for.inc.i.i92.preheader.exitStub
+for.inc.i.i92:3 %br_ln14 = br i1 %icmp_ln14, void %for.inc.i.i92.split, void %for.inc.i10.i101.preheader.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln14"/></StgValue>
@@ -131,7 +131,7 @@ for.inc.i83:3 %br_ln14 = br i1 %icmp_ln14, void %for.inc.i83.split, void %for.in
 
 <Node id="12" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.i83.split:0 %zext_ln14 = zext i4 %i
+for.inc.i.i92.split:0 %zext_ln14 = zext i4 %i
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln14"/></StgValue>
@@ -147,10 +147,10 @@ for.inc.i83.split:0 %zext_ln14 = zext i4 %i
 
 <Node id="17" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i83.split:5 %Montgomery_one_1_addr = getelementptr i64 %Montgomery_one_1, i64 0, i64 %zext_ln14
+for.inc.i.i92.split:5 %XRA_0_addr = getelementptr i64 %XRA_0, i64 0, i64 %zext_ln14
 
 ]]></Node>
-<StgValue><ssdm name="Montgomery_one_1_addr"/></StgValue>
+<StgValue><ssdm name="XRA_0_addr"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="2" lat="2">
@@ -163,10 +163,10 @@ for.inc.i83.split:5 %Montgomery_one_1_addr = getelementptr i64 %Montgomery_one_1
 
 <Node id="18" bw="64" op_0_bw="3">
 <![CDATA[
-for.inc.i83.split:6 %Montgomery_one_1_load = load i3 %Montgomery_one_1_addr
+for.inc.i.i92.split:6 %XRA_0_load = load i3 %XRA_0_addr
 
 ]]></Node>
-<StgValue><ssdm name="Montgomery_one_1_load"/></StgValue>
+<StgValue><ssdm name="XRA_0_load"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -179,7 +179,7 @@ for.inc.i83.split:6 %Montgomery_one_1_load = load i3 %Montgomery_one_1_addr
 
 <Node id="20" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i83.split:8 %store_ln12 = store i4 %add_ln14, i4 %i_261
+for.inc.i.i92.split:8 %store_ln12 = store i4 %add_ln14, i4 %i_263
 
 ]]></Node>
 <StgValue><ssdm name="store_ln12"/></StgValue>
@@ -195,7 +195,7 @@ for.inc.i83.split:8 %store_ln12 = store i4 %add_ln14, i4 %i_261
 
 <Node id="23" bw="0">
 <![CDATA[
-for.inc.i.i92.preheader.exitStub:0 %ret_ln0 = ret
+for.inc.i10.i101.preheader.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -211,12 +211,12 @@ for.inc.i.i92.preheader.exitStub:0 %ret_ln0 = ret
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
+<Node id="13" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i83.split:1 %R0_Z_addr = getelementptr i64 %R0_Z, i64 0, i64 %zext_ln14
+for.inc.i.i92.split:1 %R2_X_addr = getelementptr i64 %R2_X, i64 0, i64 %zext_ln14
 
 ]]></Node>
-<StgValue><ssdm name="R0_Z_addr"/></StgValue>
+<StgValue><ssdm name="R2_X_addr"/></StgValue>
 </operation>
 
 <operation id="17" st_id="2" stage="1" lat="1">
@@ -228,7 +228,7 @@ for.inc.i83.split:1 %R0_Z_addr = getelementptr i64 %R0_Z, i64 0, i64 %zext_ln14
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i83.split:2 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i.i92.split:2 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln12"/></StgValue>
@@ -243,7 +243,7 @@ for.inc.i83.split:2 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipelin
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.i83.split:3 %speclooptripcount_ln12 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
+for.inc.i.i92.split:3 %speclooptripcount_ln12 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln12"/></StgValue>
@@ -258,7 +258,7 @@ for.inc.i83.split:3 %speclooptripcount_ln12 = speclooptripcount void @_ssdm_op_S
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i83.split:4 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
+for.inc.i.i92.split:4 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln14"/></StgValue>
@@ -273,10 +273,10 @@ for.inc.i83.split:4 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopNam
 
 <Node id="18" bw="64" op_0_bw="3">
 <![CDATA[
-for.inc.i83.split:6 %Montgomery_one_1_load = load i3 %Montgomery_one_1_addr
+for.inc.i.i92.split:6 %XRA_0_load = load i3 %XRA_0_addr
 
 ]]></Node>
-<StgValue><ssdm name="Montgomery_one_1_load"/></StgValue>
+<StgValue><ssdm name="XRA_0_load"/></StgValue>
 </operation>
 
 <operation id="21" st_id="2" stage="1" lat="1">
@@ -286,9 +286,9 @@ for.inc.i83.split:6 %Montgomery_one_1_load = load i3 %Montgomery_one_1_addr
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="0" op_0_bw="64" op_1_bw="4">
+<Node id="19" bw="0" op_0_bw="64" op_1_bw="3">
 <![CDATA[
-for.inc.i83.split:7 %store_ln15 = store i64 %Montgomery_one_1_load, i4 %R0_Z_addr
+for.inc.i.i92.split:7 %store_ln15 = store i64 %XRA_0_load, i3 %R2_X_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln15"/></StgValue>
@@ -303,7 +303,7 @@ for.inc.i83.split:7 %store_ln15 = store i64 %Montgomery_one_1_load, i4 %R0_Z_add
 
 <Node id="21" bw="0" op_0_bw="0">
 <![CDATA[
-for.inc.i83.split:9 %br_ln14 = br void %for.inc.i83
+for.inc.i.i92.split:9 %br_ln14 = br void %for.inc.i.i92
 
 ]]></Node>
 <StgValue><ssdm name="br_ln14"/></StgValue>
@@ -313,25 +313,25 @@ for.inc.i83.split:9 %br_ln14 = br void %for.inc.i83
 
 
 <ports>
-<port id="33" name="R0_Z" dir="1" iftype="1">
-<core>RAM</core><StgValue><ssdm name="R0_Z"/><MemPortTyVec>0 3 </MemPortTyVec>
+<port id="33" name="R2_X" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="R2_X"/><MemPortTyVec>0 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="34" name="Montgomery_one_1" dir="0" iftype="1">
-<core>ROM</core><StgValue><ssdm name="Montgomery_one_1"/><MemPortTyVec>1 </MemPortTyVec>
+<port id="34" name="XRA_0" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="XRA_0"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
 
 
 <dataflows>
-<dataflow id="36" from="StgValue_35" to="i_261" fromId="35" toId="5">
+<dataflow id="36" from="StgValue_35" to="i_263" fromId="35" toId="5">
 </dataflow>
 <dataflow id="38" from="StgValue_37" to="store_ln12" fromId="37" toId="6">
 </dataflow>
-<dataflow id="39" from="i_261" to="store_ln12" fromId="5" toId="6">
+<dataflow id="39" from="i_263" to="store_ln12" fromId="5" toId="6">
 </dataflow>
-<dataflow id="40" from="i_261" to="i" fromId="5" toId="8">
+<dataflow id="40" from="i_263" to="i" fromId="5" toId="8">
 </dataflow>
 <dataflow id="41" from="i" to="icmp_ln14" fromId="8" toId="9">
 </dataflow>
@@ -345,23 +345,23 @@ for.inc.i83.split:9 %br_ln14 = br void %for.inc.i83
 </dataflow>
 <dataflow id="48" from="i" to="zext_ln14" fromId="8" toId="12">
 </dataflow>
-<dataflow id="49" from="Montgomery_one_1" to="Montgomery_one_1_addr" fromId="34" toId="13">
+<dataflow id="49" from="XRA_0" to="XRA_0_addr" fromId="34" toId="13">
 </dataflow>
-<dataflow id="51" from="StgValue_50" to="Montgomery_one_1_addr" fromId="50" toId="13">
+<dataflow id="51" from="StgValue_50" to="XRA_0_addr" fromId="50" toId="13">
 </dataflow>
-<dataflow id="52" from="zext_ln14" to="Montgomery_one_1_addr" fromId="12" toId="13">
+<dataflow id="52" from="zext_ln14" to="XRA_0_addr" fromId="12" toId="13">
 </dataflow>
-<dataflow id="53" from="Montgomery_one_1_addr" to="Montgomery_one_1_load" fromId="13" toId="14">
+<dataflow id="53" from="XRA_0_addr" to="XRA_0_load" fromId="13" toId="14">
 </dataflow>
 <dataflow id="54" from="add_ln14" to="store_ln12" fromId="10" toId="15">
 </dataflow>
-<dataflow id="55" from="i_261" to="store_ln12" fromId="5" toId="15">
+<dataflow id="55" from="i_263" to="store_ln12" fromId="5" toId="15">
 </dataflow>
-<dataflow id="56" from="R0_Z" to="R0_Z_addr" fromId="33" toId="16">
+<dataflow id="56" from="R2_X" to="R2_X_addr" fromId="33" toId="16">
 </dataflow>
-<dataflow id="57" from="StgValue_50" to="R0_Z_addr" fromId="50" toId="16">
+<dataflow id="57" from="StgValue_50" to="R2_X_addr" fromId="50" toId="16">
 </dataflow>
-<dataflow id="58" from="zext_ln14" to="R0_Z_addr" fromId="12" toId="16">
+<dataflow id="58" from="zext_ln14" to="R2_X_addr" fromId="12" toId="16">
 </dataflow>
 <dataflow id="60" from="_ssdm_op_SpecPipeline" to="specpipeline_ln12" fromId="59" toId="17">
 </dataflow>
@@ -387,11 +387,11 @@ for.inc.i83.split:9 %br_ln14 = br void %for.inc.i83
 </dataflow>
 <dataflow id="78" from="empty_2" to="specloopname_ln14" fromId="77" toId="19">
 </dataflow>
-<dataflow id="79" from="Montgomery_one_1_addr" to="Montgomery_one_1_load" fromId="13" toId="20">
+<dataflow id="79" from="XRA_0_addr" to="XRA_0_load" fromId="13" toId="20">
 </dataflow>
-<dataflow id="80" from="Montgomery_one_1_load" to="store_ln15" fromId="20" toId="21">
+<dataflow id="80" from="XRA_0_load" to="store_ln15" fromId="20" toId="21">
 </dataflow>
-<dataflow id="81" from="R0_Z_addr" to="store_ln15" fromId="16" toId="21">
+<dataflow id="81" from="R2_X_addr" to="store_ln15" fromId="16" toId="21">
 </dataflow>
 <dataflow id="82" from="icmp_ln14" to="StgValue_2" fromId="9" toId="2">
 </dataflow>

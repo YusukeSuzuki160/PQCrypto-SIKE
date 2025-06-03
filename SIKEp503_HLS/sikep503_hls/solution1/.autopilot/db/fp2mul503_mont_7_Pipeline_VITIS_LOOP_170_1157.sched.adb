@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>3</id>
-						<name>i_195</name>
+						<name>i_192</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>
@@ -162,7 +162,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_195_write_ln168</name>
+						<name>i_192_write_ln168</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>
@@ -1030,7 +1030,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>xor_ln105_149</name>
+						<name>xor_ln105_144</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1108,7 +1108,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>xor_ln105_150</name>
+						<name>xor_ln105_145</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1186,7 +1186,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>or_ln105_17</name>
+						<name>or_ln105_16</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1264,7 +1264,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>xor_ln105_151</name>
+						<name>xor_ln105_146</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -2089,7 +2089,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>i_195_write_ln168</name>
+						<name>i_192_write_ln168</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>

@@ -16,12 +16,12 @@ module sikep503_kem_enc_hw_mp_mul_151_Pipeline_VITIS_LOOP_145_2 (
         v_017,
         zext_ln143,
         indvars_iv31,
-        zext_ln146_12,
+        zext_ln146_13,
         a_address0,
         a_ce0,
         a_q0,
         i,
-        zext_ln146_11,
+        zext_ln146_12,
         b_address0,
         b_ce0,
         b_q0,
@@ -62,12 +62,12 @@ output   ap_ready;
 input  [63:0] v_017;
 input  [3:0] zext_ln143;
 input  [3:0] indvars_iv31;
-input  [3:0] zext_ln146_12;
+input  [3:0] zext_ln146_13;
 output  [3:0] a_address0;
 output   a_ce0;
 input  [63:0] a_q0;
 input  [2:0] i;
-input  [3:0] zext_ln146_11;
+input  [3:0] zext_ln146_12;
 output  [3:0] b_address0;
 output   b_ce0;
 input  [63:0] b_q0;
@@ -219,7 +219,7 @@ wire   [31:0] trunc_ln130_fu_423_p1;
 wire   [31:0] add_ln130_146_fu_403_p2;
 wire   [33:0] zext_ln130_118_fu_427_p1;
 wire   [33:0] zext_ln130_117_fu_413_p1;
-wire   [33:0] temp_62_fu_437_p2;
+wire   [33:0] temp_65_fu_437_p2;
 wire   [33:0] and_ln133_s_fu_470_p3;
 wire   [63:0] zext_ln133_fu_477_p1;
 wire   [63:0] and_ln_fu_463_p3;
@@ -451,7 +451,7 @@ always @ (posedge ap_clk) begin
         tmp_328_reg_795 <= {{grp_fu_493_p_dout0[63:32]}};
         tmp_328_reg_795_pp0_iter5_reg <= tmp_328_reg_795;
         tmp_328_reg_795_pp0_iter6_reg <= tmp_328_reg_795_pp0_iter5_reg;
-        tmp_329_reg_816 <= {{temp_62_fu_437_p2[33:32]}};
+        tmp_329_reg_816 <= {{temp_65_fu_437_p2[33:32]}};
         trunc_ln106_189_reg_763 <= trunc_ln106_189_fu_300_p1;
         trunc_ln106_190_reg_768 <= trunc_ln106_190_fu_304_p1;
         trunc_ln106_191_reg_773 <= trunc_ln106_191_fu_308_p1;
@@ -622,9 +622,9 @@ assign add_ln133_fu_481_p2 = (zext_ln133_fu_477_p1 + and_ln_fu_463_p3);
 
 assign add_ln145_fu_214_p2 = (ap_sig_allocacmp_j_33 + 4'd1);
 
-assign add_ln146_4_fu_238_p2 = (zext_ln146_11 + sub_ln146_fu_234_p2);
+assign add_ln146_4_fu_238_p2 = (zext_ln146_12 + sub_ln146_fu_234_p2);
 
-assign add_ln146_fu_225_p2 = (zext_ln146_12 + j_33_reg_694);
+assign add_ln146_fu_225_p2 = (zext_ln146_13 + j_33_reg_694);
 
 assign al_fu_248_p1 = a_q0[31:0];
 
@@ -708,7 +708,7 @@ assign sub_ln146_fu_234_p2 = (i_cast_reg_689 - j_33_reg_694);
 
 assign tempReg_fu_552_p2 = (or_ln30_fu_545_p3 + zext_ln105_129_fu_531_p1);
 
-assign temp_62_fu_437_p2 = (zext_ln130_118_fu_427_p1 + zext_ln130_117_fu_413_p1);
+assign temp_65_fu_437_p2 = (zext_ln130_118_fu_427_p1 + zext_ln130_117_fu_413_p1);
 
 assign temp_fu_371_p2 = (zext_ln123_118_fu_367_p1 + zext_ln106_fu_352_p1);
 

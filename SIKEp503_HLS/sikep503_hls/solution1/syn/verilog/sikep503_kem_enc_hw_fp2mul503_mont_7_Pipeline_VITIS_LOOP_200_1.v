@@ -74,7 +74,7 @@ wire    ap_loop_init;
 wire   [63:0] zext_ln201_fu_148_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln200_fu_131_p1;
-reg   [3:0] i_193_fu_52;
+reg   [3:0] i_190_fu_52;
 wire   [3:0] add_ln200_fu_125_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    tt3_ce1_local;
@@ -91,7 +91,7 @@ wire   [63:0] xor_ln201_5_fu_183_p2;
 wire   [0:0] bit_sel4_fu_193_p3;
 wire   [0:0] xor_ln201_6_fu_200_p2;
 wire   [62:0] trunc_ln201_3_fu_206_p1;
-wire   [63:0] xor_ln201_2_fu_209_p3;
+wire   [63:0] xor_ln201_8_fu_209_p3;
 wire   [63:0] or_ln201_fu_187_p2;
 wire   [63:0] xor_ln201_7_fu_222_p2;
 wire   [63:0] and_ln201_2_fu_217_p2;
@@ -113,7 +113,7 @@ initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 i_193_fu_52 = 4'd0;
+#0 i_190_fu_52 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -199,9 +199,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln200_fu_119_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_193_fu_52 <= add_ln200_fu_125_p2;
+            i_190_fu_52 <= add_ln200_fu_125_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_193_fu_52 <= 4'd0;
+            i_190_fu_52 <= 4'd0;
         end
     end
 end
@@ -287,7 +287,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_193_fu_52;
+        ap_sig_allocacmp_i = i_190_fu_52;
     end
 end
 
@@ -349,7 +349,7 @@ assign add_ln200_fu_125_p2 = (ap_sig_allocacmp_i + 4'd1);
 
 assign add_ln201_fu_173_p2 = (and_ln201_reg_283 + tempReg_reg_274);
 
-assign and_ln201_2_fu_217_p2 = (xor_ln201_2_fu_209_p3 & tt3_load_reg_269);
+assign and_ln201_2_fu_217_p2 = (xor_ln201_8_fu_209_p3 & tt3_load_reg_269);
 
 assign and_ln201_fu_168_p2 = (sext_ln192_cast_reg_249 & p503_1_q0);
 
@@ -411,13 +411,13 @@ assign tt3_d0 = add_ln201_fu_173_p2;
 
 assign tt3_we0 = tt3_we0_local;
 
-assign xor_ln201_2_fu_209_p3 = {{xor_ln201_6_fu_200_p2}, {trunc_ln201_3_fu_206_p1}};
-
 assign xor_ln201_5_fu_183_p2 = (tempReg_reg_274 ^ and_ln201_reg_283);
 
 assign xor_ln201_6_fu_200_p2 = (bit_sel4_fu_193_p3 ^ 1'd1);
 
 assign xor_ln201_7_fu_222_p2 = (or_ln201_fu_187_p2 ^ add_ln201_fu_173_p2);
+
+assign xor_ln201_8_fu_209_p3 = {{xor_ln201_6_fu_200_p2}, {trunc_ln201_3_fu_206_p1}};
 
 assign xor_ln201_fu_178_p2 = (tempReg_reg_274 ^ add_ln201_fu_173_p2);
 

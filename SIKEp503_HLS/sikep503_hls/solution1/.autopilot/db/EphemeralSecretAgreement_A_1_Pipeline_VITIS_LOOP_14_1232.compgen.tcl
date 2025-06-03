@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2882 \
-    name pts_X \
+    id 2863 \
+    name pts_Z \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename pts_X \
+    corename pts_Z \
     op interface \
-    ports { pts_X_address0 { O 7 vector } pts_X_ce0 { O 1 bit } pts_X_we0 { O 1 bit } pts_X_d0 { O 64 vector } } \
+    ports { pts_Z_address0 { O 7 vector } pts_Z_ce0 { O 1 bit } pts_Z_we0 { O 1 bit } pts_Z_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pts_X'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pts_Z'"
 }
 }
 
@@ -30,17 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2883 \
-    name R_X \
+    id 2864 \
+    name R_Z_i \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename R_X \
+    corename R_Z_i \
     op interface \
-    ports { R_X_address0 { O 4 vector } R_X_ce0 { O 1 bit } R_X_q0 { I 64 vector } } \
+    ports { R_Z_i_address0 { O 4 vector } R_Z_i_ce0 { O 1 bit } R_Z_i_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R_X'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R_Z_i'"
 }
 }
 
@@ -48,15 +48,15 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2881 \
-    name zext_ln15 \
+    id 2862 \
+    name npts_1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_zext_ln15 \
+    corename dc_npts_1 \
     op interface \
-    ports { zext_ln15 { I 7 vector } } \
+    ports { npts_1 { I 3 vector } } \
 } "
 }
 

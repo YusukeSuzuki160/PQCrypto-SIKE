@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_8_Pipeline_VITIS_LOOP_145_2'
 ================================================================
-* Date:           Tue May 27 14:14:37 2025
+* Date:           Tue Jun  3 14:09:42 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -181,8 +181,8 @@ ST_7 : Operation 85 [1/1] (2.55ns)   --->   "%add_ln130_62 = add i33 %zext_ln106
 ST_7 : Operation 86 [1/1] (0.00ns)   --->   "%trunc_ln130 = trunc i33 %add_ln130_62" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 86 'trunc' 'trunc_ln130' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln130_54 = zext i33 %add_ln130_62" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 87 'zext' 'zext_ln130_54' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 88 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln105 = add i32 %trunc_ln130, i32 %add_ln130_61" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:146]   --->   Operation 88 'add' 'add_ln105' <Predicate = true> <Delay = 4.37> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_7 : Operation 89 [1/1] (2.59ns)   --->   "%temp_30 = add i34 %zext_ln130_54, i34 %zext_ln130_53" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 89 'add' 'temp_30' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_150 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_30, i32 32, i32 33" [src/generic/fp_generic.c:133->src/generic/fp_generic.c:146]   --->   Operation 90 'partselect' 'tmp_150' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 89 [1/1] (2.59ns)   --->   "%temp_33 = add i34 %zext_ln130_54, i34 %zext_ln130_53" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 89 'add' 'temp_33' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_150 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_33, i32 32, i32 33" [src/generic/fp_generic.c:133->src/generic/fp_generic.c:146]   --->   Operation 90 'partselect' 'tmp_150' <Predicate = true> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 7.04>
 ST_8 : Operation 91 [1/1] (0.00ns)   --->   "%v_80_load = load i64 %v_80" [src/generic/fp_generic.c:147]   --->   Operation 91 'load' 'v_80_load' <Predicate = true> <Delay = 0.00>
@@ -214,9 +214,9 @@ ST_9 : Operation 133 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation
 
 State 10 <SV = 9> <Delay = 4.31>
 ST_10 : Operation 112 [1/1] (0.00ns)   --->   "%t_out_load = load i4 %t_out" [src/generic/fp_generic.c:149]   --->   Operation 112 'load' 't_out_load' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 113 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:139]   --->   Operation 113 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 113 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:139]   --->   Operation 113 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 114 [1/1] (0.00ns)   --->   "%speclooptripcount_ln139 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 8, i64 4" [src/generic/fp_generic.c:139]   --->   Operation 114 'speclooptripcount' 'speclooptripcount_ln139' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 115 [1/1] (0.00ns)   --->   "%specloopname_ln145 = specloopname void @_ssdm_op_SpecLoopName, void @empty_27" [src/generic/fp_generic.c:145]   --->   Operation 115 'specloopname' 'specloopname_ln145' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 115 [1/1] (0.00ns)   --->   "%specloopname_ln145 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [src/generic/fp_generic.c:145]   --->   Operation 115 'specloopname' 'specloopname_ln145' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 116 [1/1] (0.00ns) (grouped into LUT with out node xor_ln148_9)   --->   "%xor_ln148 = xor i64 %v, i64 %tempReg" [src/generic/fp_generic.c:148]   --->   Operation 116 'xor' 'xor_ln148' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node xor_ln148_9)   --->   "%xor_ln148_7 = xor i64 %tempReg, i64 %u_65_out_load" [src/generic/fp_generic.c:148]   --->   Operation 117 'xor' 'xor_ln148_7' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 118 [1/1] (0.00ns) (grouped into LUT with out node xor_ln148_9)   --->   "%or_ln148 = or i64 %xor_ln148, i64 %xor_ln148_7" [src/generic/fp_generic.c:148]   --->   Operation 118 'or' 'or_ln148' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -243,7 +243,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln139', src/generic/fp_generic.c:139) of constant 0 on local variable 'j', src/generic/fp_generic.c:139 [18]  (1.588 ns)
 	'load' operation 4 bit ('j', src/generic/fp_generic.c:145) on local variable 'j', src/generic/fp_generic.c:139 [24]  (0.000 ns)
-	'add' operation 4 bit ('add_ln145', src/generic/fp_generic.c:145) [26]  (1.735 ns)
+	'icmp' operation 1 bit ('icmp_ln145', src/generic/fp_generic.c:145) [25]  (1.735 ns)
 	'store' operation 0 bit ('store_ln139', src/generic/fp_generic.c:139) of variable 'add_ln145', src/generic/fp_generic.c:145 on local variable 'j', src/generic/fp_generic.c:139 [118]  (1.588 ns)
 
  <State 2>: 5.967ns

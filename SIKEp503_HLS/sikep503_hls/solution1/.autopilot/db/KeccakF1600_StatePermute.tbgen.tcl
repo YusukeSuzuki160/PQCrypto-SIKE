@@ -17,15 +17,15 @@ set cdfgNum 712
 set C_modelName {KeccakF1600_StatePermute}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict s_i { MEM_WIDTH 64 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict s { MEM_WIDTH 64 MEM_SIZE 200 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ s_i int 64 regular {array 25 { 2 2 } 1 1 }  }
+	{ s int 64 regular {array 25 { 2 2 } 1 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "s_i", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} ]}
+	{ "Name" : "s", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} ]}
 # RTL Port declarations: 
 set portNum 16
 set portList { 
@@ -35,16 +35,16 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ s_i_address0 sc_out sc_lv 5 signal 0 } 
-	{ s_i_ce0 sc_out sc_logic 1 signal 0 } 
-	{ s_i_we0 sc_out sc_lv 8 signal 0 } 
-	{ s_i_d0 sc_out sc_lv 64 signal 0 } 
-	{ s_i_q0 sc_in sc_lv 64 signal 0 } 
-	{ s_i_address1 sc_out sc_lv 5 signal 0 } 
-	{ s_i_ce1 sc_out sc_logic 1 signal 0 } 
-	{ s_i_we1 sc_out sc_lv 8 signal 0 } 
-	{ s_i_d1 sc_out sc_lv 64 signal 0 } 
-	{ s_i_q1 sc_in sc_lv 64 signal 0 } 
+	{ s_address0 sc_out sc_lv 5 signal 0 } 
+	{ s_ce0 sc_out sc_logic 1 signal 0 } 
+	{ s_we0 sc_out sc_lv 8 signal 0 } 
+	{ s_d0 sc_out sc_lv 64 signal 0 } 
+	{ s_q0 sc_in sc_lv 64 signal 0 } 
+	{ s_address1 sc_out sc_lv 5 signal 0 } 
+	{ s_ce1 sc_out sc_logic 1 signal 0 } 
+	{ s_we1 sc_out sc_lv 8 signal 0 } 
+	{ s_d1 sc_out sc_lv 64 signal 0 } 
+	{ s_q1 sc_in sc_lv 64 signal 0 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -53,16 +53,16 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "s_i_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "s_i", "role": "address0" }} , 
- 	{ "name": "s_i_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "s_i", "role": "ce0" }} , 
- 	{ "name": "s_i_we0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "s_i", "role": "we0" }} , 
- 	{ "name": "s_i_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s_i", "role": "d0" }} , 
- 	{ "name": "s_i_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s_i", "role": "q0" }} , 
- 	{ "name": "s_i_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "s_i", "role": "address1" }} , 
- 	{ "name": "s_i_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "s_i", "role": "ce1" }} , 
- 	{ "name": "s_i_we1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "s_i", "role": "we1" }} , 
- 	{ "name": "s_i_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s_i", "role": "d1" }} , 
- 	{ "name": "s_i_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s_i", "role": "q1" }}  ]}
+ 	{ "name": "s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "s", "role": "address0" }} , 
+ 	{ "name": "s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "s", "role": "ce0" }} , 
+ 	{ "name": "s_we0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "s", "role": "we0" }} , 
+ 	{ "name": "s_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s", "role": "d0" }} , 
+ 	{ "name": "s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s", "role": "q0" }} , 
+ 	{ "name": "s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "s", "role": "address1" }} , 
+ 	{ "name": "s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "s", "role": "ce1" }} , 
+ 	{ "name": "s_we1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "s", "role": "we1" }} , 
+ 	{ "name": "s_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s", "role": "d1" }} , 
+ 	{ "name": "s_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "s", "role": "q1" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -80,7 +80,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "s_i", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "s", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "KeccakF_RoundConstants", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "1", "SubInstance" : "grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396", "Port" : "KeccakF_RoundConstants", "Inst_start_state" : "14", "Inst_end_state" : "15"}]}]},
@@ -159,7 +159,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	KeccakF1600_StatePermute {
-		s_i {Type IO LastRead 13 FirstWrite 15}
+		s {Type IO LastRead 13 FirstWrite 15}
 		KeccakF_RoundConstants {Type I LastRead -1 FirstWrite -1}}
 	KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1 {
 		Asu {Type I LastRead 0 FirstWrite -1}
@@ -225,5 +225,5 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	s_i { ap_memory {  { s_i_address0 mem_address 1 5 }  { s_i_ce0 mem_ce 1 1 }  { s_i_we0 mem_we 1 8 }  { s_i_d0 mem_din 1 64 }  { s_i_q0 mem_dout 0 64 }  { s_i_address1 MemPortADDR2 1 5 }  { s_i_ce1 MemPortCE2 1 1 }  { s_i_we1 MemPortWE2 1 8 }  { s_i_d1 MemPortDIN2 1 64 }  { s_i_q1 MemPortDOUT2 0 64 } } }
+	s { ap_memory {  { s_address0 mem_address 1 5 }  { s_ce0 mem_ce 1 1 }  { s_we0 mem_we 1 8 }  { s_d0 mem_din 1 64 }  { s_q0 mem_dout 0 64 }  { s_address1 MemPortADDR2 1 5 }  { s_ce1 MemPortCE2 1 1 }  { s_we1 MemPortWE2 1 8 }  { s_d1 MemPortDIN2 1 64 }  { s_q1 MemPortDOUT2 0 64 } } }
 }

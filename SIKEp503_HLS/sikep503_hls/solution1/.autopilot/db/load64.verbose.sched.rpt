@@ -1,0 +1,191 @@
+
+
+================================================================
+== Vitis HLS Report for 'load64'
+================================================================
+* Date:           Tue May 27 15:17:05 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.077 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        4|  40.000 ns|  40.000 ns|    4|    4|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 4, D = 5, States = { 1 2 3 4 5 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.07>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%idx_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %idx" [src/sha3/fips202.c:22]   --->   Operation 6 'read' 'idx_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%zext_ln22 = zext i9 %idx_read" [src/sha3/fips202.c:22]   --->   Operation 7 'zext' 'zext_ln22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%x_addr = getelementptr i8 %x, i64 0, i64 %zext_ln22" [src/sha3/fips202.c:22]   --->   Operation 8 'getelementptr' 'x_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [2/2] (3.25ns)   --->   "%x_load = load i9 %x_addr" [src/sha3/fips202.c:28]   --->   Operation 9 'load' 'x_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_1 : Operation 10 [1/1] (1.82ns)   --->   "%add_ln28 = add i9 %idx_read, i9 1" [src/sha3/fips202.c:28]   --->   Operation 10 'add' 'add_ln28' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln28 = zext i9 %add_ln28" [src/sha3/fips202.c:28]   --->   Operation 11 'zext' 'zext_ln28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%x_addr_8 = getelementptr i8 %x, i64 0, i64 %zext_ln28" [src/sha3/fips202.c:28]   --->   Operation 12 'getelementptr' 'x_addr_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [2/2] (3.25ns)   --->   "%x_load_8 = load i9 %x_addr_8" [src/sha3/fips202.c:28]   --->   Operation 13 'load' 'x_load_8' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+
+State 2 <SV = 1> <Delay = 5.07>
+ST_2 : Operation 14 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load = load i9 %x_addr" [src/sha3/fips202.c:28]   --->   Operation 14 'load' 'x_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_2 : Operation 15 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load_8 = load i9 %x_addr_8" [src/sha3/fips202.c:28]   --->   Operation 15 'load' 'x_load_8' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_2 : Operation 16 [1/1] (1.82ns)   --->   "%add_ln28_7 = add i9 %idx_read, i9 2" [src/sha3/fips202.c:28]   --->   Operation 16 'add' 'add_ln28_7' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln28_7 = zext i9 %add_ln28_7" [src/sha3/fips202.c:28]   --->   Operation 17 'zext' 'zext_ln28_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%x_addr_9 = getelementptr i8 %x, i64 0, i64 %zext_ln28_7" [src/sha3/fips202.c:28]   --->   Operation 18 'getelementptr' 'x_addr_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (3.25ns)   --->   "%x_load_9 = load i9 %x_addr_9" [src/sha3/fips202.c:28]   --->   Operation 19 'load' 'x_load_9' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_2 : Operation 20 [1/1] (1.82ns)   --->   "%add_ln28_8 = add i9 %idx_read, i9 3" [src/sha3/fips202.c:28]   --->   Operation 20 'add' 'add_ln28_8' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln28_8 = zext i9 %add_ln28_8" [src/sha3/fips202.c:28]   --->   Operation 21 'zext' 'zext_ln28_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%x_addr_10 = getelementptr i8 %x, i64 0, i64 %zext_ln28_8" [src/sha3/fips202.c:28]   --->   Operation 22 'getelementptr' 'x_addr_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [2/2] (3.25ns)   --->   "%x_load_10 = load i9 %x_addr_10" [src/sha3/fips202.c:28]   --->   Operation 23 'load' 'x_load_10' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+
+State 3 <SV = 2> <Delay = 5.07>
+ST_3 : Operation 24 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load_9 = load i9 %x_addr_9" [src/sha3/fips202.c:28]   --->   Operation 24 'load' 'x_load_9' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_3 : Operation 25 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load_10 = load i9 %x_addr_10" [src/sha3/fips202.c:28]   --->   Operation 25 'load' 'x_load_10' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_3 : Operation 26 [1/1] (1.82ns)   --->   "%add_ln28_9 = add i9 %idx_read, i9 4" [src/sha3/fips202.c:28]   --->   Operation 26 'add' 'add_ln28_9' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln28_9 = zext i9 %add_ln28_9" [src/sha3/fips202.c:28]   --->   Operation 27 'zext' 'zext_ln28_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%x_addr_11 = getelementptr i8 %x, i64 0, i64 %zext_ln28_9" [src/sha3/fips202.c:28]   --->   Operation 28 'getelementptr' 'x_addr_11' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [2/2] (3.25ns)   --->   "%x_load_11 = load i9 %x_addr_11" [src/sha3/fips202.c:28]   --->   Operation 29 'load' 'x_load_11' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_3 : Operation 30 [1/1] (1.82ns)   --->   "%add_ln28_10 = add i9 %idx_read, i9 5" [src/sha3/fips202.c:28]   --->   Operation 30 'add' 'add_ln28_10' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln28_10 = zext i9 %add_ln28_10" [src/sha3/fips202.c:28]   --->   Operation 31 'zext' 'zext_ln28_10' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%x_addr_12 = getelementptr i8 %x, i64 0, i64 %zext_ln28_10" [src/sha3/fips202.c:28]   --->   Operation 32 'getelementptr' 'x_addr_12' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [2/2] (3.25ns)   --->   "%x_load_12 = load i9 %x_addr_12" [src/sha3/fips202.c:28]   --->   Operation 33 'load' 'x_load_12' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+
+State 4 <SV = 3> <Delay = 5.07>
+ST_4 : Operation 34 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load_11 = load i9 %x_addr_11" [src/sha3/fips202.c:28]   --->   Operation 34 'load' 'x_load_11' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_4 : Operation 35 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load_12 = load i9 %x_addr_12" [src/sha3/fips202.c:28]   --->   Operation 35 'load' 'x_load_12' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_4 : Operation 36 [1/1] (1.82ns)   --->   "%add_ln28_11 = add i9 %idx_read, i9 6" [src/sha3/fips202.c:28]   --->   Operation 36 'add' 'add_ln28_11' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln28_11 = zext i9 %add_ln28_11" [src/sha3/fips202.c:28]   --->   Operation 37 'zext' 'zext_ln28_11' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%x_addr_13 = getelementptr i8 %x, i64 0, i64 %zext_ln28_11" [src/sha3/fips202.c:28]   --->   Operation 38 'getelementptr' 'x_addr_13' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [2/2] (3.25ns)   --->   "%x_load_13 = load i9 %x_addr_13" [src/sha3/fips202.c:28]   --->   Operation 39 'load' 'x_load_13' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_4 : Operation 40 [1/1] (1.82ns)   --->   "%add_ln28_12 = add i9 %idx_read, i9 7" [src/sha3/fips202.c:28]   --->   Operation 40 'add' 'add_ln28_12' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln28_12 = zext i9 %add_ln28_12" [src/sha3/fips202.c:28]   --->   Operation 41 'zext' 'zext_ln28_12' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%x_addr_14 = getelementptr i8 %x, i64 0, i64 %zext_ln28_12" [src/sha3/fips202.c:28]   --->   Operation 42 'getelementptr' 'x_addr_14' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [2/2] (3.25ns)   --->   "%x_load_14 = load i9 %x_addr_14" [src/sha3/fips202.c:28]   --->   Operation 43 'load' 'x_load_14' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+
+State 5 <SV = 4> <Delay = 3.25>
+ST_5 : Operation 44 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load_13 = load i9 %x_addr_13" [src/sha3/fips202.c:28]   --->   Operation 44 'load' 'x_load_13' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_5 : Operation 45 [1/2] ( I:3.25ns O:3.25ns )   --->   "%x_load_14 = load i9 %x_addr_14" [src/sha3/fips202.c:28]   --->   Operation 45 'load' 'x_load_14' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 426> <RAM>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%r = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i8.i8.i8, i8 %x_load_14, i8 %x_load_13, i8 %x_load_12, i8 %x_load_11, i8 %x_load_10, i8 %x_load_9, i8 %x_load_8, i8 %x_load" [src/sha3/fips202.c:28]   --->   Operation 46 'bitconcatenate' 'r' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln30 = ret i64 %r" [src/sha3/fips202.c:30]   --->   Operation 47 'ret' 'ret_ln30' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.077ns
+The critical path consists of the following:
+	wire read operation ('idx_read', src/sha3/fips202.c:22) on port 'idx' (src/sha3/fips202.c:22) [3]  (0.000 ns)
+	'add' operation 9 bit ('add_ln28', src/sha3/fips202.c:28) [7]  (1.823 ns)
+	'getelementptr' operation 9 bit ('x_addr_8', src/sha3/fips202.c:28) [9]  (0.000 ns)
+	'load' operation 8 bit ('x_load_8', src/sha3/fips202.c:28) on array 'x' [10]  (3.254 ns)
+
+ <State 2>: 5.077ns
+The critical path consists of the following:
+	'add' operation 9 bit ('add_ln28_7', src/sha3/fips202.c:28) [11]  (1.823 ns)
+	'getelementptr' operation 9 bit ('x_addr_9', src/sha3/fips202.c:28) [13]  (0.000 ns)
+	'load' operation 8 bit ('x_load_9', src/sha3/fips202.c:28) on array 'x' [14]  (3.254 ns)
+
+ <State 3>: 5.077ns
+The critical path consists of the following:
+	'add' operation 9 bit ('add_ln28_9', src/sha3/fips202.c:28) [19]  (1.823 ns)
+	'getelementptr' operation 9 bit ('x_addr_11', src/sha3/fips202.c:28) [21]  (0.000 ns)
+	'load' operation 8 bit ('x_load_11', src/sha3/fips202.c:28) on array 'x' [22]  (3.254 ns)
+
+ <State 4>: 5.077ns
+The critical path consists of the following:
+	'add' operation 9 bit ('add_ln28_11', src/sha3/fips202.c:28) [27]  (1.823 ns)
+	'getelementptr' operation 9 bit ('x_addr_13', src/sha3/fips202.c:28) [29]  (0.000 ns)
+	'load' operation 8 bit ('x_load_13', src/sha3/fips202.c:28) on array 'x' [30]  (3.254 ns)
+
+ <State 5>: 3.254ns
+The critical path consists of the following:
+	'load' operation 8 bit ('x_load_13', src/sha3/fips202.c:28) on array 'x' [30]  (3.254 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -340,7 +340,7 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>i_292</name>
+              <name>i_290</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>44</lineNumber>
@@ -1426,7 +1426,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>gmem_addr_9_req</name>
+              <name>gmem_addr_8_req</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>44</lineNumber>
@@ -1558,7 +1558,7 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>gmem_addr_9_resp</name>
+              <name>gmem_addr_8_resp</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>44</lineNumber>
@@ -2197,7 +2197,7 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>gmem_addr_6</name>
+              <name>gmem_addr_5</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
@@ -2261,7 +2261,7 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>gmem_addr_10_req</name>
+              <name>gmem_addr_9_req</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
@@ -2327,7 +2327,7 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>gmem_addr_6_write_ln45</name>
+              <name>gmem_addr_5_write_ln45</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
@@ -2395,7 +2395,7 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>gmem_addr_10_resp</name>
+              <name>gmem_addr_9_resp</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
@@ -4827,7 +4827,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_292</first>
+          <first>ap_sig_allocacmp_i_290</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -5286,7 +5286,7 @@
           </second>
         </item>
         <item>
-          <first>gmem_addr_6_reg_310</first>
+          <first>gmem_addr_5_reg_310</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5324,7 +5324,7 @@
           </second>
         </item>
         <item>
-          <first>i_292_reg_273</first>
+          <first>i_290_reg_273</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6283,7 +6283,7 @@
         </second>
       </item>
       <item>
-        <first>gmem_addr_6_fu_223</first>
+        <first>gmem_addr_5_fu_223</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6477,7 +6477,7 @@
         </second>
       </item>
       <item>
-        <first>i_292_load_fu_142</first>
+        <first>i_290_load_fu_142</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6669,7 +6669,7 @@
         </second>
       </item>
       <item>
-        <first>gmem_addr_6_reg_310</first>
+        <first>gmem_addr_5_reg_310</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6685,7 +6685,7 @@
         </second>
       </item>
       <item>
-        <first>i_292_reg_273</first>
+        <first>i_290_reg_273</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

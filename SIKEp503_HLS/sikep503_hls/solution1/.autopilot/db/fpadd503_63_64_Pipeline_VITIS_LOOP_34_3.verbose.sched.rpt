@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_63_64_Pipeline_VITIS_LOOP_34_3'
 ================================================================
-* Date:           Tue May 27 14:15:09 2025
+* Date:           Tue Jun  3 12:32:20 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -170,7 +170,7 @@ The critical path consists of the following:
 
  <State 4>: 2.322ns
 The critical path consists of the following:
-	'store' operation 0 bit ('store_ln35', src/generic/fp_generic.c:35) of variable 'x', src/generic/fp_generic.c:35 on array 'c_1' [40]  (2.322 ns)
+	'store' operation 0 bit ('store_ln35', src/generic/fp_generic.c:35) of variable 'x', src/generic/fp_generic.c:35 on array 'c_0' [37]  (2.322 ns)
 
 
 ============================================================

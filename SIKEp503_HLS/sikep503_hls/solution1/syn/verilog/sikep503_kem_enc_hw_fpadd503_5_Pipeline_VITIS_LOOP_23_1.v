@@ -87,15 +87,15 @@ wire   [63:0] zext_ln24_fu_142_p1;
 wire   [4:0] zext_ln24_12_fu_157_p1;
 wire   [5:0] zext_ln24_s_fu_160_p3;
 wire   [63:0] xor_ln24_fu_173_p2;
-wire   [63:0] xor_ln24_23_fu_178_p2;
+wire   [63:0] xor_ln24_19_fu_178_p2;
 wire   [0:0] bit_sel_fu_188_p3;
-wire   [0:0] xor_ln24_24_fu_195_p2;
+wire   [0:0] xor_ln24_20_fu_195_p2;
 wire   [62:0] trunc_ln24_4_fu_201_p1;
 wire   [63:0] xor_ln24_s_fu_204_p3;
 wire   [63:0] or_ln24_fu_182_p2;
-wire   [63:0] xor_ln24_25_fu_217_p2;
+wire   [63:0] xor_ln24_21_fu_217_p2;
 wire   [63:0] and_ln24_fu_212_p2;
-wire   [63:0] or_ln24_8_fu_223_p2;
+wire   [63:0] or_ln24_7_fu_223_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -177,7 +177,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
         if ((1'b1 == ap_condition_274)) begin
-            carry_reg_96 <= or_ln24_8_fu_223_p2[32'd63];
+            carry_reg_96 <= or_ln24_7_fu_223_p2[32'd63];
         end else if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_loop_init == 1'b1))) begin
             carry_reg_96 <= 1'd0;
         end
@@ -381,9 +381,9 @@ assign coeff_we0 = coeff_we0_local;
 
 assign icmp_ln23_fu_115_p2 = ((ap_sig_allocacmp_i_218 == 4'd8) ? 1'b1 : 1'b0);
 
-assign or_ln24_8_fu_223_p2 = (xor_ln24_25_fu_217_p2 | and_ln24_fu_212_p2);
+assign or_ln24_7_fu_223_p2 = (xor_ln24_21_fu_217_p2 | and_ln24_fu_212_p2);
 
-assign or_ln24_fu_182_p2 = (xor_ln24_fu_173_p2 | xor_ln24_23_fu_178_p2);
+assign or_ln24_fu_182_p2 = (xor_ln24_fu_173_p2 | xor_ln24_19_fu_178_p2);
 
 assign tempReg_fu_146_p2 = (R_X_q0 + zext_ln24_fu_142_p1);
 
@@ -391,15 +391,15 @@ assign trunc_ln24_4_fu_201_p1 = tempReg_reg_268[62:0];
 
 assign trunc_ln24_fu_133_p1 = ap_sig_allocacmp_i_218[2:0];
 
-assign xor_ln24_23_fu_178_p2 = (tempReg_reg_268 ^ R_Z_load_reg_277);
+assign xor_ln24_19_fu_178_p2 = (tempReg_reg_268 ^ R_Z_load_reg_277);
 
-assign xor_ln24_24_fu_195_p2 = (bit_sel_fu_188_p3 ^ 1'd1);
+assign xor_ln24_20_fu_195_p2 = (bit_sel_fu_188_p3 ^ 1'd1);
 
-assign xor_ln24_25_fu_217_p2 = (or_ln24_fu_182_p2 ^ add_ln24_fu_152_p2);
+assign xor_ln24_21_fu_217_p2 = (or_ln24_fu_182_p2 ^ add_ln24_fu_152_p2);
 
 assign xor_ln24_fu_173_p2 = (tempReg_reg_268 ^ add_ln24_fu_152_p2);
 
-assign xor_ln24_s_fu_204_p3 = {{xor_ln24_24_fu_195_p2}, {trunc_ln24_4_fu_201_p1}};
+assign xor_ln24_s_fu_204_p3 = {{xor_ln24_20_fu_195_p2}, {trunc_ln24_4_fu_201_p1}};
 
 assign zext_ln23_fu_127_p1 = ap_sig_allocacmp_i_218;
 

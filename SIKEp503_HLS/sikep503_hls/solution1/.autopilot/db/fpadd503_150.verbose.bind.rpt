@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_150'
 ================================================================
-* Date:           Tue May 27 14:12:41 2025
+* Date:           Tue Jun  3 14:07:49 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -93,10 +93,10 @@ ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%b_offset_read = read i32 @_ssdm_op_
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%a_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset2"   --->   Operation 10 'read' 'a_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 11 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = trunc i32 %a_offset_read"   --->   Operation 12 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_141 = trunc i32 %b_offset_read"   --->   Operation 13 'trunc' 'empty_141' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_148 = trunc i32 %b_offset_read"   --->   Operation 13 'trunc' 'empty_148' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%carry_193_loc = alloca i64 1"   --->   Operation 14 'alloca' 'carry_193_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 15 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_141, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 16 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_148, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 16 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_501 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty, i1 %a_offset2_read, i3 0" [src/generic/fp_generic.c:24]   --->   Operation 17 'bitconcatenate' 'tmp_501' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 18 [2/2] (5.12ns)   --->   "%call_ln24 = call void @fpadd503.150_Pipeline_VITIS_LOOP_23_1, i7 %tmp_501, i64 %a, i7 %tmp_s, i64 %b, i4 %tmp, i64 %c" [src/generic/fp_generic.c:24]   --->   Operation 18 'call' 'call_ln24' <Predicate = true> <Delay = 5.12> <CoreType = "Generic">   --->   Generic Core
 
@@ -150,7 +150,7 @@ b_offset_read      (read          ) [ 0000000]
 a_offset2_read     (read          ) [ 0000000]
 a_offset_read      (read          ) [ 0000000]
 empty              (trunc         ) [ 0000000]
-empty_141          (trunc         ) [ 0000000]
+empty_148          (trunc         ) [ 0000000]
 carry_193_loc      (alloca        ) [ 0011110]
 tmp                (bitconcatenate) [ 0011111]
 tmp_s              (bitconcatenate) [ 0010000]
@@ -460,14 +460,14 @@ ret_ln37           (ret           ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="107" class="1004" name="empty_141_fu_107">
+<comp id="107" class="1004" name="empty_148_fu_107">
 <pin_list>
 <pin id="108" dir="0" index="0" bw="32" slack="0"/>
 <pin id="109" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_141/1 "/>
+<opset="empty_148/1 "/>
 </bind>
 </comp>
 
@@ -714,7 +714,7 @@ ret_ln37           (ret           ) [ 0000000]
 |          |             a_offset_read_read_fu_64            |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
 |   trunc  |                   empty_fu_103                  |    0    |    0    |    0    |
-|          |                 empty_141_fu_107                |    0    |    0    |    0    |
+|          |                 empty_148_fu_107                |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
 |          |                    tmp_fu_111                   |    0    |    0    |    0    |
 |bitconcatenate|                   tmp_s_fu_120                  |    0    |    0    |    0    |

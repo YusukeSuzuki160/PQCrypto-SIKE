@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_7_Pipeline_VITIS_LOOP_159_4'
 ================================================================
-* Date:           Tue May 27 14:19:42 2025
+* Date:           Tue Jun  3 14:14:45 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -96,23 +96,23 @@
     |add_ln160_fu_262_p2     |         +|   0|  0|  14|           9|           9|
     |t_fu_695_p2             |         +|   0|  0|  11|           3|           3|
     |tempReg_fu_600_p2       |         +|   0|  0|  71|          64|          64|
-    |temp_33_fu_485_p2       |         +|   0|  0|  41|          34|          34|
+    |temp_36_fu_485_p2       |         +|   0|  0|  41|          34|          34|
     |temp_fu_419_p2          |         +|   0|  0|  41|          34|          34|
     |u_fu_615_p2             |         +|   0|  0|  71|          64|          64|
     |v_122_fu_541_p2         |         +|   0|  0|  71|          64|          64|
     |sub_ln160_fu_282_p2     |         -|   0|  0|   7|           4|           4|
     |and_ln162_fu_667_p2     |       and|   0|  0|  64|          64|          64|
     |icmp_ln159_fu_234_p2    |      icmp|   0|  0|  13|           4|           5|
-    |or_ln105_5_fu_559_p2    |        or|   0|  0|  64|          64|          64|
+    |or_ln105_4_fu_559_p2    |        or|   0|  0|  64|          64|          64|
     |or_ln162_4_fu_677_p2    |        or|   0|  0|  64|          64|          64|
     |or_ln162_fu_637_p2      |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0           |       xor|   0|  0|   2|           1|           2|
-    |xor_ln105_23_fu_547_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln105_24_fu_553_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln105_25_fu_565_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln162_11_fu_633_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln162_12_fu_650_p2  |       xor|   0|  0|   2|           1|           2|
-    |xor_ln162_13_fu_672_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_18_fu_547_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_19_fu_553_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_20_fu_565_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln162_10_fu_633_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln162_11_fu_650_p2  |       xor|   0|  0|   2|           1|           2|
+    |xor_ln162_12_fu_672_p2  |       xor|   0|  0|  64|          64|          64|
     |xor_ln162_fu_629_p2     |       xor|   0|  0|  64|          64|          64|
     +------------------------+----------+----+---+----+------------+------------+
     |Total                   |          |   0|  0|1259|        1157|        1157|
@@ -125,7 +125,7 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_sig_allocacmp_j       |   9|          2|    4|          8|
-    |j_11_fu_106              |   9|          2|    4|          8|
+    |j_10_fu_106              |   9|          2|    4|          8|
     |t_33_fu_98               |   9|          2|    3|          6|
     |u_34_out_o               |  14|          3|   64|        192|
     |v_35_fu_102              |   9|          2|   64|        128|
@@ -164,7 +164,7 @@
     |bh_reg_787                             |  32|   0|   32|          0|
     |bl_reg_777                             |  32|   0|   32|          0|
     |icmp_ln159_reg_758                     |   1|   0|    1|          0|
-    |j_11_fu_106                            |   4|   0|    4|          0|
+    |j_10_fu_106                            |   4|   0|    4|          0|
     |j_reg_752                              |   4|   0|    4|          0|
     |t_33_fu_98                             |   3|   0|    3|          0|
     |tempReg_reg_884                        |  64|   0|   64|          0|
@@ -232,8 +232,8 @@
 |PKB_address0        |  out|    6|   ap_memory|                                 PKB|         array|
 |PKB_ce0             |  out|    1|   ap_memory|                                 PKB|         array|
 |PKB_q0              |   in|   64|   ap_memory|                                 PKB|         array|
-|i_17                |   in|    4|     ap_none|                                i_17|        scalar|
-|zext_ln146_9        |   in|    4|     ap_none|                        zext_ln146_9|        scalar|
+|i_18                |   in|    4|     ap_none|                                i_18|        scalar|
+|zext_ln146_7        |   in|    4|     ap_none|                        zext_ln146_7|        scalar|
 |b_address0          |  out|    4|   ap_memory|                                   b|         array|
 |b_ce0               |  out|    1|   ap_memory|                                   b|         array|
 |b_q0                |   in|   64|   ap_memory|                                   b|         array|

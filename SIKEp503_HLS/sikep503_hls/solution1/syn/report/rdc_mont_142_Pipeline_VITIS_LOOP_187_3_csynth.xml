@@ -356,8 +356,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>i_9</name>
-<Object>i_9</Object>
+<name>i_11</name>
+<Object>i_11</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

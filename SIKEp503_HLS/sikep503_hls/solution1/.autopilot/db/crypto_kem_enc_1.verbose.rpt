@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'crypto_kem_enc_1'
 ================================================================
-* Date:           Tue May 27 14:20:42 2025
+* Date:           Tue Jun  3 12:37:51 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -44,12 +44,12 @@
         |grp_EphemeralKeyGeneration_A_1_fu_255                  |EphemeralKeyGeneration_A_1                  |  6276331|  14738978858|  62.763 ms|  147.390 sec|  6276331|  14738978858|                                              no|
         |grp_EphemeralSecretAgreement_A_1_fu_290                |EphemeralSecretAgreement_A_1                |  3630853|  14736862361|  36.309 ms|  147.369 sec|  3630853|  14736862361|                                              no|
         |grp_cshake256_simple_32_clone_fu_315                   |cshake256_simple_32_clone                   |      388|          388|   3.880 us|     3.880 us|      388|          388|                                              no|
-        |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323   |crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6   |       27|           27|   0.270 us|     0.270 us|       25|           25|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323   |crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1   |       27|           27|   0.270 us|     0.270 us|       25|           25|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_crypto_kem_enc_1_Pipeline_4_fu_335                 |crypto_kem_enc_1_Pipeline_4                 |      405|          405|   4.050 us|     4.050 us|      403|          403|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_cshake256_simple_absorb_fu_346                     |cshake256_simple_absorb                     |        ?|            ?|          ?|            ?|        ?|            ?|                                              no|
         |grp_KeccakF1600_StatePermute_fu_359                    |KeccakF1600_StatePermute                    |       42|           42|   0.420 us|     0.420 us|       42|           42|                                              no|
-        |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2  |       19|           19|   0.190 us|     0.190 us|       18|           18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1  |       19|           19|   0.190 us|     0.190 us|       17|           17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2  |       19|           19|   0.190 us|     0.190 us|       18|           18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1  |       19|           19|   0.190 us|     0.190 us|       17|           17|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------------+--------------------------------------------+---------+-------------+-----------+-------------+---------+-------------+------------------------------------------------+
 
         * Loop: 
@@ -90,9 +90,9 @@
     |grp_crypto_kem_enc_1_Pipeline_2_fu_233                 |crypto_kem_enc_1_Pipeline_2                 |        0|     0|      41|      91|    0|
     |grp_crypto_kem_enc_1_Pipeline_4_fu_335                 |crypto_kem_enc_1_Pipeline_4                 |        0|     0|      41|      91|    0|
     |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219   |crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1   |        0|     0|     240|     442|    0|
-    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2  |        0|     0|      13|      64|    0|
-    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1  |        0|     0|      20|      96|    0|
-    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323   |crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6   |        0|     0|      20|     103|    0|
+    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2  |        0|     0|      13|      64|    0|
+    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323   |crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1   |        0|     0|      20|     103|    0|
+    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375  |crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1  |        0|     0|      20|      96|    0|
     |grp_cshake256_simple_32_fu_244                         |cshake256_simple_32                         |        8|     0|   10093|   35364|    0|
     |grp_cshake256_simple_32_clone_fu_315                   |cshake256_simple_32_clone                   |        8|     0|   10111|   35735|    0|
     |grp_cshake256_simple_absorb_fu_346                     |cshake256_simple_absorb                     |        2|     0|    5085|   17648|    0|
@@ -131,7 +131,7 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln81_fu_402_p2  |         +|   0|  0|  71|          64|           9|
+    |add_ln59_fu_402_p2  |         +|   0|  0|  71|          64|           9|
     |ephemeralsk_we0     |        or|   0|  0|   2|           1|           1|
     +--------------------+----------+----+---+----+------------+------------+
     |Total               |          |   0|  0|  73|          65|          10|
@@ -254,7 +254,7 @@
     +--------------------------------------------------------------------+----+----+-----+-----------+
     |                                Name                                | FF | LUT| Bits| Const Bits|
     +--------------------------------------------------------------------+----+----+-----+-----------+
-    |add_ln81_reg_450                                                    |  64|   0|   64|          0|
+    |add_ln59_reg_450                                                    |  64|   0|   64|          0|
     |ap_CS_fsm                                                           |  51|   0|   51|          0|
     |grp_EphemeralKeyGeneration_A_1_fu_255_ap_start_reg                  |   1|   0|    1|          0|
     |grp_EphemeralSecretAgreement_A_1_fu_290_ap_start_reg                |   1|   0|    1|          0|
@@ -262,9 +262,9 @@
     |grp_crypto_kem_enc_1_Pipeline_2_fu_233_ap_start_reg                 |   1|   0|    1|          0|
     |grp_crypto_kem_enc_1_Pipeline_4_fu_335_ap_start_reg                 |   1|   0|    1|          0|
     |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_27_1_fu_219_ap_start_reg   |   1|   0|    1|          0|
-    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg  |   1|   0|    1|          0|
-    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg  |   1|   0|    1|          0|
-    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg   |   1|   0|    1|          0|
+    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366_ap_start_reg  |   1|   0|    1|          0|
+    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323_ap_start_reg   |   1|   0|    1|          0|
+    |grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375_ap_start_reg  |   1|   0|    1|          0|
     |grp_cshake256_simple_32_clone_fu_315_ap_start_reg                   |   1|   0|    1|          0|
     |grp_cshake256_simple_32_fu_244_ap_start_reg                         |   1|   0|    1|          0|
     |grp_cshake256_simple_absorb_fu_346_ap_start_reg                     |   1|   0|    1|          0|
@@ -427,41 +427,41 @@ State 1 <SV = 0> <Delay = 7.30>
 ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%pk_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %pk"   --->   Operation 52 'read' 'pk_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 53 [1/1] (3.25ns)   --->   "%s_i = alloca i64 1"   --->   Operation 53 'alloca' 's_i' <Predicate = true> <Delay = 3.25>
 ST_1 : Operation 54 [1/1] (2.32ns)   --->   "%ephemeralsk = alloca i64 1"   --->   Operation 54 'alloca' 'ephemeralsk' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
-ST_1 : Operation 55 [1/1] (2.32ns)   --->   "%t = alloca i64 1" [src/sha3/fips202.c:620->src/sike.c:90]   --->   Operation 55 'alloca' 't' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 56 [1/1] (2.32ns)   --->   "%t_44 = alloca i64 1" [src/sha3/fips202.c:620->src/sike.c:90]   --->   Operation 56 'alloca' 't_44' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 57 [1/1] (2.32ns)   --->   "%t_45 = alloca i64 1" [src/sha3/fips202.c:620->src/sike.c:90]   --->   Operation 57 'alloca' 't_45' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 58 [1/1] (2.32ns)   --->   "%t_46 = alloca i64 1" [src/sha3/fips202.c:620->src/sike.c:90]   --->   Operation 58 'alloca' 't_46' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 59 [1/1] (2.32ns)   --->   "%jinvariant = alloca i64 1" [src/sike.c:40]   --->   Operation 59 'alloca' 'jinvariant' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 60 [1/1] (2.32ns)   --->   "%h = alloca i64 1" [src/sike.c:41]   --->   Operation 60 'alloca' 'h' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 61 [1/1] (2.32ns)   --->   "%temp = alloca i64 1" [src/sike.c:42]   --->   Operation 61 'alloca' 'temp' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 62 [1/1] (2.32ns)   --->   "%temp_1 = alloca i64 1" [src/sike.c:42]   --->   Operation 62 'alloca' 'temp_1' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 63 [1/1] (2.32ns)   --->   "%temp_2 = alloca i64 1" [src/sike.c:42]   --->   Operation 63 'alloca' 'temp_2' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 64 [1/1] (2.32ns)   --->   "%temp_3 = alloca i64 1" [src/sike.c:42]   --->   Operation 64 'alloca' 'temp_3' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 55 [1/1] (2.32ns)   --->   "%t = alloca i64 1" [src/sha3/fips202.c:635->src/sike.c:66]   --->   Operation 55 'alloca' 't' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 56 [1/1] (2.32ns)   --->   "%t_44 = alloca i64 1" [src/sha3/fips202.c:635->src/sike.c:66]   --->   Operation 56 'alloca' 't_44' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 57 [1/1] (2.32ns)   --->   "%t_45 = alloca i64 1" [src/sha3/fips202.c:635->src/sike.c:66]   --->   Operation 57 'alloca' 't_45' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 58 [1/1] (2.32ns)   --->   "%t_46 = alloca i64 1" [src/sha3/fips202.c:635->src/sike.c:66]   --->   Operation 58 'alloca' 't_46' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 59 [1/1] (2.32ns)   --->   "%jinvariant = alloca i64 1" [src/sike.c:41]   --->   Operation 59 'alloca' 'jinvariant' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 60 [1/1] (2.32ns)   --->   "%h = alloca i64 1" [src/sike.c:42]   --->   Operation 60 'alloca' 'h' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 61 [1/1] (2.32ns)   --->   "%temp = alloca i64 1" [src/sike.c:43]   --->   Operation 61 'alloca' 'temp' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 62 [1/1] (2.32ns)   --->   "%temp_1 = alloca i64 1" [src/sike.c:43]   --->   Operation 62 'alloca' 'temp_1' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 63 [1/1] (2.32ns)   --->   "%temp_2 = alloca i64 1" [src/sike.c:43]   --->   Operation 63 'alloca' 'temp_2' <Predicate = true> <Delay = 2.32>
+ST_1 : Operation 64 [1/1] (2.32ns)   --->   "%temp_3 = alloca i64 1" [src/sike.c:43]   --->   Operation 64 'alloca' 'temp_3' <Predicate = true> <Delay = 2.32>
 ST_1 : Operation 65 [2/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_27_1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i32 %lcg_state"   --->   Operation 65 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i8 %gmem, i64 %pk_read" [src/sike.c:49]   --->   Operation 66 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 67 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i8 %gmem, i64 %pk_read" [src/sike.c:48]   --->   Operation 66 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 67 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 2 <SV = 1> <Delay = 7.30>
 ST_2 : Operation 68 [1/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_27_1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i32 %lcg_state"   --->   Operation 68 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 69 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 69 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 69 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 69 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 3 <SV = 2> <Delay = 7.30>
-ST_3 : Operation 70 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 70 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 70 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 70 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 4 <SV = 3> <Delay = 7.30>
-ST_4 : Operation 71 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 71 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 71 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 71 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 5 <SV = 4> <Delay = 7.30>
-ST_5 : Operation 72 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 72 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 72 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 72 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 6 <SV = 5> <Delay = 7.30>
-ST_6 : Operation 73 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 73 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 73 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 73 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 7 <SV = 6> <Delay = 7.30>
-ST_7 : Operation 74 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 74 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 74 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 74 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 8 <SV = 7> <Delay = 7.30>
-ST_8 : Operation 75 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:49]   --->   Operation 75 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 75 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr, i64 378" [src/sike.c:48]   --->   Operation 75 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 76 [2/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_2, i8 %gmem, i64 %pk_read, i8 %temp_3, i8 %temp_2, i8 %temp_1, i8 %temp"   --->   Operation 76 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -470,88 +470,88 @@ State 10 <SV = 9> <Delay = 0.00>
 ST_10 : Operation 77 [1/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_2, i8 %gmem, i64 %pk_read, i8 %temp_3, i8 %temp_2, i8 %temp_1, i8 %temp"   --->   Operation 77 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 78 [2/2] (0.00ns)   --->   "%call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sike.c:55]   --->   Operation 78 'call' 'call_ln55' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 78 [2/2] (0.00ns)   --->   "%call_ln50 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sike.c:50]   --->   Operation 78 'call' 'call_ln50' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 79 [1/2] (0.00ns)   --->   "%call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sike.c:55]   --->   Operation 79 'call' 'call_ln55' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 79 [1/2] (0.00ns)   --->   "%call_ln50 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sike.c:50]   --->   Operation 79 'call' 'call_ln50' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 2.32>
-ST_13 : Operation 80 [1/1] (0.00ns)   --->   "%ephemeralsk_addr = getelementptr i8 %ephemeralsk, i64 0, i64 31" [src/sike.c:56]   --->   Operation 80 'getelementptr' 'ephemeralsk_addr' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 81 [2/2] (2.32ns)   --->   "%ephemeralsk_load = load i5 %ephemeralsk_addr" [src/sike.c:56]   --->   Operation 81 'load' 'ephemeralsk_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_13 : Operation 80 [1/1] (0.00ns)   --->   "%ephemeralsk_addr = getelementptr i8 %ephemeralsk, i64 0, i64 31" [src/sike.c:51]   --->   Operation 80 'getelementptr' 'ephemeralsk_addr' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 81 [2/2] (2.32ns)   --->   "%ephemeralsk_load = load i5 %ephemeralsk_addr" [src/sike.c:51]   --->   Operation 81 'load' 'ephemeralsk_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
 
 State 14 <SV = 13> <Delay = 4.64>
-ST_14 : Operation 82 [1/2] ( I:2.32ns O:2.32ns )   --->   "%ephemeralsk_load = load i5 %ephemeralsk_addr" [src/sike.c:56]   --->   Operation 82 'load' 'ephemeralsk_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
-ST_14 : Operation 83 [1/1] (0.00ns)   --->   "%trunc_ln56 = trunc i8 %ephemeralsk_load" [src/sike.c:56]   --->   Operation 83 'trunc' 'trunc_ln56' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln56 = zext i2 %trunc_ln56" [src/sike.c:56]   --->   Operation 84 'zext' 'zext_ln56' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 85 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln56 = store i8 %zext_ln56, i5 %ephemeralsk_addr" [src/sike.c:56]   --->   Operation 85 'store' 'store_ln56' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_14 : Operation 82 [1/2] ( I:2.32ns O:2.32ns )   --->   "%ephemeralsk_load = load i5 %ephemeralsk_addr" [src/sike.c:51]   --->   Operation 82 'load' 'ephemeralsk_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_14 : Operation 83 [1/1] (0.00ns)   --->   "%trunc_ln51 = trunc i8 %ephemeralsk_load" [src/sike.c:51]   --->   Operation 83 'trunc' 'trunc_ln51' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln51 = zext i2 %trunc_ln51" [src/sike.c:51]   --->   Operation 84 'zext' 'zext_ln51' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 85 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln51 = store i8 %zext_ln51, i5 %ephemeralsk_addr" [src/sike.c:51]   --->   Operation 85 'store' 'store_ln51' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
 
 State 15 <SV = 14> <Delay = 0.00>
 ST_15 : Operation 86 [1/1] (0.00ns)   --->   "%ct_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ct"   --->   Operation 86 'read' 'ct_read' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 87 [2/2] (0.00ns)   --->   "%call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:63]   --->   Operation 87 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 87 [2/2] (0.00ns)   --->   "%call_ln54 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:54]   --->   Operation 87 'call' 'call_ln54' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 16 <SV = 15> <Delay = 0.00>
-ST_16 : Operation 88 [1/2] (0.00ns)   --->   "%call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:63]   --->   Operation 88 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 88 [1/2] (0.00ns)   --->   "%call_ln54 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:54]   --->   Operation 88 'call' 'call_ln54' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 17 <SV = 16> <Delay = 3.52>
-ST_17 : Operation 89 [2/2] (3.52ns)   --->   "%call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:69]   --->   Operation 89 'call' 'call_ln69' <Predicate = true> <Delay = 3.52> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 89 [2/2] (3.52ns)   --->   "%call_ln55 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:55]   --->   Operation 89 'call' 'call_ln55' <Predicate = true> <Delay = 3.52> <CoreType = "Generic">   --->   Generic Core
 
 State 18 <SV = 17> <Delay = 0.00>
-ST_18 : Operation 90 [1/2] (0.00ns)   --->   "%call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:69]   --->   Operation 90 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_18 : Operation 90 [1/2] (0.00ns)   --->   "%call_ln55 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one" [src/sike.c:55]   --->   Operation 90 'call' 'call_ln55' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 19 <SV = 18> <Delay = 3.52>
-ST_19 : Operation 91 [2/2] (0.00ns)   --->   "%call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants" [src/sike.c:75]   --->   Operation 91 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_19 : Operation 92 [1/1] (3.52ns)   --->   "%add_ln81 = add i64 %ct_read, i64 378" [src/sike.c:81]   --->   Operation 92 'add' 'add_ln81' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 91 [2/2] (0.00ns)   --->   "%call_ln56 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants" [src/sike.c:56]   --->   Operation 91 'call' 'call_ln56' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_19 : Operation 92 [1/1] (3.52ns)   --->   "%add_ln59 = add i64 %ct_read, i64 378" [src/sike.c:59]   --->   Operation 92 'add' 'add_ln59' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 20 <SV = 19> <Delay = 7.30>
-ST_20 : Operation 93 [1/2] (0.00ns)   --->   "%call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants" [src/sike.c:75]   --->   Operation 93 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_20 : Operation 94 [1/1] (0.00ns)   --->   "%gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln81" [src/sike.c:81]   --->   Operation 94 'getelementptr' 'gmem_addr_3' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 95 [1/1] (7.30ns)   --->   "%empty_183 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i64 %gmem_addr_3, i64 24" [src/sike.c:81]   --->   Operation 95 'writereq' 'empty_183' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_20 : Operation 93 [1/2] (0.00ns)   --->   "%call_ln56 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants" [src/sike.c:56]   --->   Operation 93 'call' 'call_ln56' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_20 : Operation 94 [1/1] (0.00ns)   --->   "%gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln59" [src/sike.c:59]   --->   Operation 94 'getelementptr' 'gmem_addr_3' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 95 [1/1] (7.30ns)   --->   "%empty_183 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i64 %gmem_addr_3, i64 24" [src/sike.c:59]   --->   Operation 95 'writereq' 'empty_183' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 21 <SV = 20> <Delay = 0.00>
-ST_21 : Operation 96 [2/2] (0.00ns)   --->   "%call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %gmem, i64 %add_ln81, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h" [src/sike.c:81]   --->   Operation 96 'call' 'call_ln81' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_21 : Operation 96 [2/2] (0.00ns)   --->   "%call_ln59 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1, i8 %gmem, i64 %add_ln59, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h" [src/sike.c:59]   --->   Operation 96 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 22 <SV = 21> <Delay = 0.00>
-ST_22 : Operation 97 [1/2] (0.00ns)   --->   "%call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %gmem, i64 %add_ln81, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h" [src/sike.c:81]   --->   Operation 97 'call' 'call_ln81' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 97 [1/2] (0.00ns)   --->   "%call_ln59 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1, i8 %gmem, i64 %add_ln59, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h" [src/sike.c:59]   --->   Operation 97 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 23 <SV = 22> <Delay = 7.30>
-ST_23 : Operation 98 [5/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:89]   --->   Operation 98 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_23 : Operation 98 [5/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:65]   --->   Operation 98 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 24 <SV = 23> <Delay = 7.30>
-ST_24 : Operation 99 [4/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:89]   --->   Operation 99 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_24 : Operation 99 [4/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:65]   --->   Operation 99 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 25 <SV = 24> <Delay = 7.30>
-ST_25 : Operation 100 [3/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:89]   --->   Operation 100 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_25 : Operation 100 [3/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:65]   --->   Operation 100 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 26 <SV = 25> <Delay = 7.30>
-ST_26 : Operation 101 [2/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:89]   --->   Operation 101 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_26 : Operation 101 [2/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:65]   --->   Operation 101 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 27 <SV = 26> <Delay = 7.30>
-ST_27 : Operation 102 [1/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:89]   --->   Operation 102 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_27 : Operation 102 [1/5] (7.30ns)   --->   "%empty_184 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_3" [src/sike.c:65]   --->   Operation 102 'writeresp' 'empty_184' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 28 <SV = 27> <Delay = 7.30>
-ST_28 : Operation 103 [1/1] (0.00ns)   --->   "%gmem_addr_4 = getelementptr i8 %gmem, i64 %ct_read" [src/sike.c:89]   --->   Operation 103 'getelementptr' 'gmem_addr_4' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 104 [8/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 104 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_28 : Operation 103 [1/1] (0.00ns)   --->   "%gmem_addr_4 = getelementptr i8 %gmem, i64 %ct_read" [src/sike.c:65]   --->   Operation 103 'getelementptr' 'gmem_addr_4' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 104 [8/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 104 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 29 <SV = 28> <Delay = 7.30>
-ST_29 : Operation 105 [7/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 105 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_29 : Operation 105 [7/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 105 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 30 <SV = 29> <Delay = 7.30>
-ST_30 : Operation 106 [6/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 106 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_30 : Operation 106 [6/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 106 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 31 <SV = 30> <Delay = 7.30>
-ST_31 : Operation 107 [5/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 107 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_31 : Operation 107 [5/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 107 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 32 <SV = 31> <Delay = 7.30>
-ST_32 : Operation 108 [4/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 108 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_32 : Operation 108 [4/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 108 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 33 <SV = 32> <Delay = 7.30>
-ST_33 : Operation 109 [3/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 109 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_33 : Operation 109 [3/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 109 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 34 <SV = 33> <Delay = 7.30>
-ST_34 : Operation 110 [2/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 110 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_34 : Operation 110 [2/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 110 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 35 <SV = 34> <Delay = 7.30>
-ST_35 : Operation 111 [1/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:89]   --->   Operation 111 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_35 : Operation 111 [1/8] (7.30ns)   --->   "%empty_185 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i64 %gmem_addr_4, i64 402" [src/sike.c:65]   --->   Operation 111 'readreq' 'empty_185' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 36 <SV = 35> <Delay = 0.00>
 ST_36 : Operation 112 [2/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_4, i8 %gmem, i64 %ct_read, i8 %temp_3, i8 %temp_2, i8 %temp_1, i8 %temp"   --->   Operation 112 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -560,50 +560,50 @@ State 37 <SV = 36> <Delay = 0.00>
 ST_37 : Operation 113 [1/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_4, i8 %gmem, i64 %ct_read, i8 %temp_3, i8 %temp_2, i8 %temp_1, i8 %temp"   --->   Operation 113 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 38 <SV = 37> <Delay = 3.25>
-ST_38 : Operation 114 [2/2] (3.25ns)   --->   "%call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:623->src/sike.c:90]   --->   Operation 114 'call' 'call_ln623' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+ST_38 : Operation 114 [2/2] (3.25ns)   --->   "%call_ln638 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:638->src/sike.c:66]   --->   Operation 114 'call' 'call_ln638' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
 
 State 39 <SV = 38> <Delay = 0.00>
-ST_39 : Operation 115 [1/2] (0.00ns)   --->   "%call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:623->src/sike.c:90]   --->   Operation 115 'call' 'call_ln623' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_39 : Operation 115 [1/2] (0.00ns)   --->   "%call_ln638 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:638->src/sike.c:66]   --->   Operation 115 'call' 'call_ln638' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 40 <SV = 39> <Delay = 0.00>
-ST_40 : Operation 116 [2/2] (0.00ns)   --->   "%call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:417->src/sha3/fips202.c:644->src/sike.c:90]   --->   Operation 116 'call' 'call_ln417' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_40 : Operation 116 [2/2] (0.00ns)   --->   "%call_ln430 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:430->src/sha3/fips202.c:659->src/sike.c:66]   --->   Operation 116 'call' 'call_ln430' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 41 <SV = 40> <Delay = 0.00>
-ST_41 : Operation 117 [1/2] (0.00ns)   --->   "%call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:417->src/sha3/fips202.c:644->src/sike.c:90]   --->   Operation 117 'call' 'call_ln417' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_41 : Operation 117 [1/2] (0.00ns)   --->   "%call_ln430 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:430->src/sha3/fips202.c:659->src/sike.c:66]   --->   Operation 117 'call' 'call_ln430' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 42 <SV = 41> <Delay = 0.00>
-ST_42 : Operation 118 [2/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i"   --->   Operation 118 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_42 : Operation 118 [2/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i"   --->   Operation 118 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 43 <SV = 42> <Delay = 4.95>
-ST_43 : Operation 119 [1/2] (4.95ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i"   --->   Operation 119 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+ST_43 : Operation 119 [1/2] (4.95ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i"   --->   Operation 119 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 
 State 44 <SV = 43> <Delay = 7.30>
 ST_44 : Operation 120 [1/1] (0.00ns)   --->   "%ss_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ss"   --->   Operation 120 'read' 'ss_read' <Predicate = true> <Delay = 0.00>
-ST_44 : Operation 121 [1/1] (0.00ns)   --->   "%gmem_addr_5 = getelementptr i8 %gmem, i64 %ss_read" [src/sha3/fips202.c:649->src/sike.c:90]   --->   Operation 121 'getelementptr' 'gmem_addr_5' <Predicate = true> <Delay = 0.00>
-ST_44 : Operation 122 [1/1] (7.30ns)   --->   "%empty_186 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i64 %gmem_addr_5, i64 16" [src/sha3/fips202.c:649->src/sike.c:90]   --->   Operation 122 'writereq' 'empty_186' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_44 : Operation 121 [1/1] (0.00ns)   --->   "%gmem_addr_5 = getelementptr i8 %gmem, i64 %ss_read" [src/sha3/fips202.c:664->src/sike.c:66]   --->   Operation 121 'getelementptr' 'gmem_addr_5' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 122 [1/1] (7.30ns)   --->   "%empty_186 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i64 %gmem_addr_5, i64 16" [src/sha3/fips202.c:664->src/sike.c:66]   --->   Operation 122 'writereq' 'empty_186' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 45 <SV = 44> <Delay = 0.00>
-ST_45 : Operation 123 [2/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46"   --->   Operation 123 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_45 : Operation 123 [2/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46"   --->   Operation 123 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 46 <SV = 45> <Delay = 0.00>
-ST_46 : Operation 124 [1/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46"   --->   Operation 124 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_46 : Operation 124 [1/2] (0.00ns)   --->   "%call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46"   --->   Operation 124 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 47 <SV = 46> <Delay = 7.30>
-ST_47 : Operation 125 [5/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:655->src/sike.c:90]   --->   Operation 125 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_47 : Operation 125 [5/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:670->src/sike.c:66]   --->   Operation 125 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 48 <SV = 47> <Delay = 7.30>
-ST_48 : Operation 126 [4/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:655->src/sike.c:90]   --->   Operation 126 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_48 : Operation 126 [4/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:670->src/sike.c:66]   --->   Operation 126 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 49 <SV = 48> <Delay = 7.30>
-ST_49 : Operation 127 [3/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:655->src/sike.c:90]   --->   Operation 127 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_49 : Operation 127 [3/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:670->src/sike.c:66]   --->   Operation 127 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 50 <SV = 49> <Delay = 7.30>
-ST_50 : Operation 128 [2/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:655->src/sike.c:90]   --->   Operation 128 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_50 : Operation 128 [2/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:670->src/sike.c:66]   --->   Operation 128 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 51 <SV = 50> <Delay = 7.30>
 ST_51 : Operation 129 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0"   --->   Operation 129 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_51 : Operation 130 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %s_i"   --->   Operation 130 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_51 : Operation 131 [1/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:655->src/sike.c:90]   --->   Operation 131 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_51 : Operation 131 [1/5] (7.30ns)   --->   "%empty_187 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i64 %gmem_addr_5" [src/sha3/fips202.c:670->src/sike.c:66]   --->   Operation 131 'writeresp' 'empty_187' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_51 : Operation 132 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 132 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 
@@ -662,26 +662,26 @@ gmem_addr                  (getelementptr         ) [ 00111111100000000000000000
 call_ln0                   (call                  ) [ 0000000000000000000000000000000000000000000000000000]
 empty                      (readreq               ) [ 0000000000000000000000000000000000000000000000000000]
 call_ln0                   (call                  ) [ 0000000000000000000000000000000000000000000000000000]
-call_ln55                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
+call_ln50                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
 ephemeralsk_addr           (getelementptr         ) [ 0000000000000010000000000000000000000000000000000000]
 ephemeralsk_load           (load                  ) [ 0000000000000000000000000000000000000000000000000000]
-trunc_ln56                 (trunc                 ) [ 0000000000000000000000000000000000000000000000000000]
-zext_ln56                  (zext                  ) [ 0000000000000000000000000000000000000000000000000000]
-store_ln56                 (store                 ) [ 0000000000000000000000000000000000000000000000000000]
+trunc_ln51                 (trunc                 ) [ 0000000000000000000000000000000000000000000000000000]
+zext_ln51                  (zext                  ) [ 0000000000000000000000000000000000000000000000000000]
+store_ln51                 (store                 ) [ 0000000000000000000000000000000000000000000000000000]
 ct_read                    (read                  ) [ 0000000000000000111111111111111111111100000000000000]
-call_ln63                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
-call_ln69                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
-add_ln81                   (add                   ) [ 0000000000000000000011100000000000000000000000000000]
-call_ln75                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
+call_ln54                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
+call_ln55                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
+add_ln59                   (add                   ) [ 0000000000000000000011100000000000000000000000000000]
+call_ln56                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
 gmem_addr_3                (getelementptr         ) [ 0000000000000000000001111111000000000000000000000000]
 empty_183                  (writereq              ) [ 0000000000000000000000000000000000000000000000000000]
-call_ln81                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
+call_ln59                  (call                  ) [ 0000000000000000000000000000000000000000000000000000]
 empty_184                  (writeresp             ) [ 0000000000000000000000000000000000000000000000000000]
 gmem_addr_4                (getelementptr         ) [ 0000000000000000000000000000011111110000000000000000]
 empty_185                  (readreq               ) [ 0000000000000000000000000000000000000000000000000000]
 call_ln0                   (call                  ) [ 0000000000000000000000000000000000000000000000000000]
-call_ln623                 (call                  ) [ 0000000000000000000000000000000000000000000000000000]
-call_ln417                 (call                  ) [ 0000000000000000000000000000000000000000000000000000]
+call_ln638                 (call                  ) [ 0000000000000000000000000000000000000000000000000000]
+call_ln430                 (call                  ) [ 0000000000000000000000000000000000000000000000000000]
 call_ln0                   (call                  ) [ 0000000000000000000000000000000000000000000000000000]
 ss_read                    (read                  ) [ 0000000000000000000000000000000000000000000001100000]
 gmem_addr_5                (getelementptr         ) [ 0000000000000000000000000000000000000000000001111111]
@@ -1033,7 +1033,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 <pin id="71" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6"/></StgValue>
+<StgValue><ssdm name="crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1"/></StgValue>
 </bind>
 </comp>
 
@@ -1096,7 +1096,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 <pin id="85" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2"/></StgValue>
+<StgValue><ssdm name="crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2"/></StgValue>
 </bind>
 </comp>
 
@@ -1114,7 +1114,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 <pin id="89" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1"/></StgValue>
+<StgValue><ssdm name="crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1"/></StgValue>
 </bind>
 </comp>
 
@@ -1450,7 +1450,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="store"/>
-<opset="ephemeralsk_load/13 store_ln56/14 "/>
+<opset="ephemeralsk_load/13 store_ln51/14 "/>
 </bind>
 </comp>
 
@@ -1500,7 +1500,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln55/11 "/>
+<opset="call_ln50/11 "/>
 </bind>
 </comp>
 
@@ -1527,7 +1527,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln63/15 "/>
+<opset="call_ln54/15 "/>
 </bind>
 </comp>
 
@@ -1550,7 +1550,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln69/17 "/>
+<opset="call_ln55/17 "/>
 </bind>
 </comp>
 
@@ -1564,11 +1564,11 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln75/19 "/>
+<opset="call_ln56/19 "/>
 </bind>
 </comp>
 
-<comp id="323" class="1004" name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323">
+<comp id="323" class="1004" name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323">
 <pin_list>
 <pin id="324" dir="0" index="0" bw="0" slack="0"/>
 <pin id="325" dir="0" index="1" bw="8" slack="0"/>
@@ -1582,7 +1582,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln81/21 "/>
+<opset="call_ln59/21 "/>
 </bind>
 </comp>
 
@@ -1617,7 +1617,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln623/38 "/>
+<opset="call_ln638/38 "/>
 </bind>
 </comp>
 
@@ -1630,11 +1630,11 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln417/40 "/>
+<opset="call_ln430/40 "/>
 </bind>
 </comp>
 
-<comp id="366" class="1004" name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366">
+<comp id="366" class="1004" name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366">
 <pin_list>
 <pin id="367" dir="0" index="0" bw="0" slack="0"/>
 <pin id="368" dir="0" index="1" bw="8" slack="2147483647"/>
@@ -1650,7 +1650,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </bind>
 </comp>
 
-<comp id="375" class="1004" name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375">
+<comp id="375" class="1004" name="grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375">
 <pin_list>
 <pin id="376" dir="0" index="0" bw="0" slack="0"/>
 <pin id="377" dir="0" index="1" bw="8" slack="0"/>
@@ -1679,29 +1679,29 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </bind>
 </comp>
 
-<comp id="393" class="1004" name="trunc_ln56_fu_393">
+<comp id="393" class="1004" name="trunc_ln51_fu_393">
 <pin_list>
 <pin id="394" dir="0" index="0" bw="8" slack="0"/>
 <pin id="395" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln56/14 "/>
+<opset="trunc_ln51/14 "/>
 </bind>
 </comp>
 
-<comp id="397" class="1004" name="zext_ln56_fu_397">
+<comp id="397" class="1004" name="zext_ln51_fu_397">
 <pin_list>
 <pin id="398" dir="0" index="0" bw="2" slack="0"/>
 <pin id="399" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln56/14 "/>
+<opset="zext_ln51/14 "/>
 </bind>
 </comp>
 
-<comp id="402" class="1004" name="add_ln81_fu_402">
+<comp id="402" class="1004" name="add_ln59_fu_402">
 <pin_list>
 <pin id="403" dir="0" index="0" bw="64" slack="4"/>
 <pin id="404" dir="0" index="1" bw="10" slack="0"/>
@@ -1709,7 +1709,7 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln81/19 "/>
+<opset="add_ln59/19 "/>
 </bind>
 </comp>
 
@@ -1789,13 +1789,13 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 </bind>
 </comp>
 
-<comp id="450" class="1005" name="add_ln81_reg_450">
+<comp id="450" class="1005" name="add_ln59_reg_450">
 <pin_list>
 <pin id="451" dir="0" index="0" bw="64" slack="1"/>
 <pin id="452" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln81 "/>
+<opset="add_ln59 "/>
 </bind>
 </comp>
 
@@ -2143,9 +2143,9 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 	State 13
 		ephemeralsk_load : 1
 	State 14
-		trunc_ln56 : 1
-		zext_ln56 : 2
-		store_ln56 : 3
+		trunc_ln51 : 1
+		zext_ln51 : 2
+		store_ln51 : 3
 	State 15
 	State 16
 	State 17
@@ -2202,14 +2202,14 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 |          |         grp_EphemeralKeyGeneration_A_1_fu_255         |   482   |   6432  | 7271.39 |  720640 |  725893 |    0    |
 |          |        grp_EphemeralSecretAgreement_A_1_fu_290        |   388   |   5881  | 6660.31 |  657339 |  667840 |    0    |
 |   call   |          grp_cshake256_simple_32_clone_fu_315         |    4    |    0    |  66.897 |  13555  |  33752  |    0    |
-|          |  grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323 |    0    |    0    |   7.94  |    57   |    99   |    0    |
+|          |  grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323 |    0    |    0    |   7.94  |    57   |    99   |    0    |
 |          |         grp_crypto_kem_enc_1_Pipeline_4_fu_335        |    0    |    0    |    0    |    35   |    42   |    0    |
 |          |           grp_cshake256_simple_absorb_fu_346          |    0    |    0    | 36.6245 |   6828  |  16962  |    0    |
 |          |          grp_KeccakF1600_StatePermute_fu_359          |    0    |    0    | 20.7445 |   6605  |  16657  |    0    |
-|          | grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366 |    0    |    0    |  1.588  |    15   |    35   |    0    |
-|          | grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375 |    0    |    0    |  6.352  |    48   |    82   |    0    |
+|          | grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366 |    0    |    0    |  1.588  |    15   |    35   |    0    |
+|          | grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375 |    0    |    0    |  6.352  |    48   |    82   |    0    |
 |----------|-------------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|    add   |                    add_ln81_fu_402                    |    0    |    0    |    0    |    0    |    71   |    0    |
+|    add   |                    add_ln59_fu_402                    |    0    |    0    |    0    |    0    |    71   |    0    |
 |----------|-------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |          |                  pk_read_read_fu_158                  |    0    |    0    |    0    |    0    |    0    |    0    |
 |   read   |                  ct_read_read_fu_171                  |    0    |    0    |    0    |    0    |    0    |    0    |
@@ -2221,9 +2221,9 @@ ret_ln0                    (ret                   ) [ 00000000000000000000000000
 | writeresp|                  grp_writeresp_fu_177                 |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |                  grp_writeresp_fu_198                 |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   trunc  |                   trunc_ln56_fu_393                   |    0    |    0    |    0    |    0    |    0    |    0    |
+|   trunc  |                   trunc_ln51_fu_393                   |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   zext   |                    zext_ln56_fu_397                   |    0    |    0    |    0    |    0    |    0    |    0    |
+|   zext   |                    zext_ln51_fu_397                   |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   Total  |                                                       |   878   |  12313  | 14137.2 |1.4189e+06|1.49562e+06|    0    |
 |----------|-------------------------------------------------------|---------|---------|---------|---------|---------|---------|
@@ -2252,7 +2252,7 @@ Memories:
 +------------------------+--------+
 |                        |   FF   |
 +------------------------+--------+
-|    add_ln81_reg_450    |   64   |
+|    add_ln59_reg_450    |   64   |
 |     ct_read_reg_442    |   64   |
 |ephemeralsk_addr_reg_437|    5   |
 |   gmem_addr_3_reg_456  |    8   |

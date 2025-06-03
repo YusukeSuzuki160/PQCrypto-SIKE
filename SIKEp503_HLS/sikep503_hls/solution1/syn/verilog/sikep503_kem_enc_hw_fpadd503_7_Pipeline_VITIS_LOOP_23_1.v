@@ -75,15 +75,15 @@ wire   [63:0] add_ln24_fu_120_p2;
 wire    ap_block_pp0_stage1;
 wire   [63:0] zext_ln24_fu_110_p1;
 wire   [63:0] xor_ln24_fu_125_p2;
-wire   [63:0] xor_ln24_11_fu_130_p2;
+wire   [63:0] xor_ln24_8_fu_130_p2;
 wire   [0:0] bit_sel_fu_140_p3;
-wire   [0:0] xor_ln24_12_fu_147_p2;
+wire   [0:0] xor_ln24_9_fu_147_p2;
 wire   [62:0] trunc_ln24_fu_153_p1;
 wire   [63:0] xor_ln24_s_fu_156_p3;
 wire   [63:0] or_ln24_fu_134_p2;
-wire   [63:0] xor_ln24_13_fu_169_p2;
+wire   [63:0] xor_ln24_10_fu_169_p2;
 wire   [63:0] and_ln24_fu_164_p2;
-wire   [63:0] or_ln24_4_fu_175_p2;
+wire   [63:0] or_ln24_3_fu_175_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -165,7 +165,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
         if ((1'b1 == ap_condition_241)) begin
-            carry_reg_69 <= or_ln24_4_fu_175_p2[32'd63];
+            carry_reg_69 <= or_ln24_3_fu_175_p2[32'd63];
         end else if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
             carry_reg_69 <= 1'd0;
         end
@@ -361,23 +361,23 @@ assign coeff_we0 = coeff_we0_local;
 
 assign icmp_ln23_fu_88_p2 = ((ap_sig_allocacmp_i_213 == 4'd8) ? 1'b1 : 1'b0);
 
-assign or_ln24_4_fu_175_p2 = (xor_ln24_13_fu_169_p2 | and_ln24_fu_164_p2);
+assign or_ln24_3_fu_175_p2 = (xor_ln24_10_fu_169_p2 | and_ln24_fu_164_p2);
 
-assign or_ln24_fu_134_p2 = (xor_ln24_fu_125_p2 | xor_ln24_11_fu_130_p2);
+assign or_ln24_fu_134_p2 = (xor_ln24_fu_125_p2 | xor_ln24_8_fu_130_p2);
 
 assign tempReg_fu_114_p2 = (coeff_q1 + zext_ln24_fu_110_p1);
 
 assign trunc_ln24_fu_153_p1 = tempReg_reg_213[62:0];
 
-assign xor_ln24_11_fu_130_p2 = (tempReg_reg_213 ^ coeff_load_reg_206);
+assign xor_ln24_10_fu_169_p2 = (or_ln24_fu_134_p2 ^ add_ln24_fu_120_p2);
 
-assign xor_ln24_12_fu_147_p2 = (bit_sel_fu_140_p3 ^ 1'd1);
+assign xor_ln24_8_fu_130_p2 = (tempReg_reg_213 ^ coeff_load_reg_206);
 
-assign xor_ln24_13_fu_169_p2 = (or_ln24_fu_134_p2 ^ add_ln24_fu_120_p2);
+assign xor_ln24_9_fu_147_p2 = (bit_sel_fu_140_p3 ^ 1'd1);
 
 assign xor_ln24_fu_125_p2 = (tempReg_reg_213 ^ add_ln24_fu_120_p2);
 
-assign xor_ln24_s_fu_156_p3 = {{xor_ln24_12_fu_147_p2}, {trunc_ln24_fu_153_p1}};
+assign xor_ln24_s_fu_156_p3 = {{xor_ln24_9_fu_147_p2}, {trunc_ln24_fu_153_p1}};
 
 assign zext_ln23_fu_100_p1 = ap_sig_allocacmp_i_213;
 

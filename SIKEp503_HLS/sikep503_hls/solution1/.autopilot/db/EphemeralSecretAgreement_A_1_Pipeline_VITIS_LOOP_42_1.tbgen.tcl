@@ -17,20 +17,29 @@ set cdfgNum 712
 set C_modelName {EphemeralSecretAgreement_A.1_Pipeline_VITIS_LOOP_42_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
+dict set ap_memory_interface_dict SharedSecretA_3 { MEM_WIDTH 8 MEM_SIZE 32 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict SharedSecretA_2 { MEM_WIDTH 8 MEM_SIZE 32 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict SharedSecretA_1 { MEM_WIDTH 8 MEM_SIZE 32 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict SharedSecretA_0 { MEM_WIDTH 8 MEM_SIZE 32 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict t_i { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict SharedSecretA { MEM_WIDTH 8 MEM_SIZE 126 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
+	{ SharedSecretA_3 int 8 regular {array 32 { 0 3 } 0 1 }  }
+	{ SharedSecretA_2 int 8 regular {array 32 { 0 3 } 0 1 }  }
+	{ SharedSecretA_1 int 8 regular {array 32 { 0 3 } 0 1 }  }
+	{ SharedSecretA_0 int 8 regular {array 32 { 0 3 } 0 1 }  }
 	{ t_i int 64 regular {array 16 { 1 1 } 1 1 }  }
-	{ SharedSecretA int 8 regular {array 126 { 0 0 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "t_i", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
- 	{ "Name" : "SharedSecretA", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "SharedSecretA_3", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "SharedSecretA_2", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "SharedSecretA_1", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "SharedSecretA_0", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "t_i", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
-set portNum 20
+set portNum 28
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -38,20 +47,28 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ t_i_address0 sc_out sc_lv 4 signal 0 } 
-	{ t_i_ce0 sc_out sc_logic 1 signal 0 } 
-	{ t_i_q0 sc_in sc_lv 64 signal 0 } 
-	{ t_i_address1 sc_out sc_lv 4 signal 0 } 
-	{ t_i_ce1 sc_out sc_logic 1 signal 0 } 
-	{ t_i_q1 sc_in sc_lv 64 signal 0 } 
-	{ SharedSecretA_address0 sc_out sc_lv 7 signal 1 } 
-	{ SharedSecretA_ce0 sc_out sc_logic 1 signal 1 } 
-	{ SharedSecretA_we0 sc_out sc_logic 1 signal 1 } 
-	{ SharedSecretA_d0 sc_out sc_lv 8 signal 1 } 
-	{ SharedSecretA_address1 sc_out sc_lv 7 signal 1 } 
-	{ SharedSecretA_ce1 sc_out sc_logic 1 signal 1 } 
-	{ SharedSecretA_we1 sc_out sc_logic 1 signal 1 } 
-	{ SharedSecretA_d1 sc_out sc_lv 8 signal 1 } 
+	{ SharedSecretA_3_address0 sc_out sc_lv 5 signal 0 } 
+	{ SharedSecretA_3_ce0 sc_out sc_logic 1 signal 0 } 
+	{ SharedSecretA_3_we0 sc_out sc_logic 1 signal 0 } 
+	{ SharedSecretA_3_d0 sc_out sc_lv 8 signal 0 } 
+	{ SharedSecretA_2_address0 sc_out sc_lv 5 signal 1 } 
+	{ SharedSecretA_2_ce0 sc_out sc_logic 1 signal 1 } 
+	{ SharedSecretA_2_we0 sc_out sc_logic 1 signal 1 } 
+	{ SharedSecretA_2_d0 sc_out sc_lv 8 signal 1 } 
+	{ SharedSecretA_1_address0 sc_out sc_lv 5 signal 2 } 
+	{ SharedSecretA_1_ce0 sc_out sc_logic 1 signal 2 } 
+	{ SharedSecretA_1_we0 sc_out sc_logic 1 signal 2 } 
+	{ SharedSecretA_1_d0 sc_out sc_lv 8 signal 2 } 
+	{ SharedSecretA_0_address0 sc_out sc_lv 5 signal 3 } 
+	{ SharedSecretA_0_ce0 sc_out sc_logic 1 signal 3 } 
+	{ SharedSecretA_0_we0 sc_out sc_logic 1 signal 3 } 
+	{ SharedSecretA_0_d0 sc_out sc_lv 8 signal 3 } 
+	{ t_i_address0 sc_out sc_lv 4 signal 4 } 
+	{ t_i_ce0 sc_out sc_logic 1 signal 4 } 
+	{ t_i_q0 sc_in sc_lv 64 signal 4 } 
+	{ t_i_address1 sc_out sc_lv 4 signal 4 } 
+	{ t_i_ce1 sc_out sc_logic 1 signal 4 } 
+	{ t_i_q1 sc_in sc_lv 64 signal 4 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -60,20 +77,28 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "SharedSecretA_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "SharedSecretA_3", "role": "address0" }} , 
+ 	{ "name": "SharedSecretA_3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_3", "role": "ce0" }} , 
+ 	{ "name": "SharedSecretA_3_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_3", "role": "we0" }} , 
+ 	{ "name": "SharedSecretA_3_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "SharedSecretA_3", "role": "d0" }} , 
+ 	{ "name": "SharedSecretA_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "SharedSecretA_2", "role": "address0" }} , 
+ 	{ "name": "SharedSecretA_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_2", "role": "ce0" }} , 
+ 	{ "name": "SharedSecretA_2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_2", "role": "we0" }} , 
+ 	{ "name": "SharedSecretA_2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "SharedSecretA_2", "role": "d0" }} , 
+ 	{ "name": "SharedSecretA_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "SharedSecretA_1", "role": "address0" }} , 
+ 	{ "name": "SharedSecretA_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_1", "role": "ce0" }} , 
+ 	{ "name": "SharedSecretA_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_1", "role": "we0" }} , 
+ 	{ "name": "SharedSecretA_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "SharedSecretA_1", "role": "d0" }} , 
+ 	{ "name": "SharedSecretA_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "SharedSecretA_0", "role": "address0" }} , 
+ 	{ "name": "SharedSecretA_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_0", "role": "ce0" }} , 
+ 	{ "name": "SharedSecretA_0_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA_0", "role": "we0" }} , 
+ 	{ "name": "SharedSecretA_0_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "SharedSecretA_0", "role": "d0" }} , 
  	{ "name": "t_i_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_i", "role": "address0" }} , 
  	{ "name": "t_i_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t_i", "role": "ce0" }} , 
  	{ "name": "t_i_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "t_i", "role": "q0" }} , 
  	{ "name": "t_i_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_i", "role": "address1" }} , 
  	{ "name": "t_i_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t_i", "role": "ce1" }} , 
- 	{ "name": "t_i_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "t_i", "role": "q1" }} , 
- 	{ "name": "SharedSecretA_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "address0" }} , 
- 	{ "name": "SharedSecretA_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "ce0" }} , 
- 	{ "name": "SharedSecretA_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "we0" }} , 
- 	{ "name": "SharedSecretA_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "d0" }} , 
- 	{ "name": "SharedSecretA_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "address1" }} , 
- 	{ "name": "SharedSecretA_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "ce1" }} , 
- 	{ "name": "SharedSecretA_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "we1" }} , 
- 	{ "name": "SharedSecretA_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "SharedSecretA", "role": "d1" }}  ]}
+ 	{ "name": "t_i_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "t_i", "role": "q1" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -91,8 +116,11 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "t_i", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "SharedSecretA", "Type" : "Memory", "Direction" : "O"}],
+			{"Name" : "SharedSecretA_3", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SharedSecretA_2", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SharedSecretA_1", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SharedSecretA_0", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "t_i", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_42_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
@@ -101,8 +129,11 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	EphemeralSecretAgreement_A_1_Pipeline_VITIS_LOOP_42_1 {
-		t_i {Type I LastRead 1 FirstWrite -1}
-		SharedSecretA {Type O LastRead -1 FirstWrite 2}}}
+		SharedSecretA_3 {Type O LastRead -1 FirstWrite 2}
+		SharedSecretA_2 {Type O LastRead -1 FirstWrite 2}
+		SharedSecretA_1 {Type O LastRead -1 FirstWrite 2}
+		SharedSecretA_0 {Type O LastRead -1 FirstWrite 2}
+		t_i {Type I LastRead 1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -116,6 +147,9 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
+	SharedSecretA_3 { ap_memory {  { SharedSecretA_3_address0 mem_address 1 5 }  { SharedSecretA_3_ce0 mem_ce 1 1 }  { SharedSecretA_3_we0 mem_we 1 1 }  { SharedSecretA_3_d0 mem_din 1 8 } } }
+	SharedSecretA_2 { ap_memory {  { SharedSecretA_2_address0 mem_address 1 5 }  { SharedSecretA_2_ce0 mem_ce 1 1 }  { SharedSecretA_2_we0 mem_we 1 1 }  { SharedSecretA_2_d0 mem_din 1 8 } } }
+	SharedSecretA_1 { ap_memory {  { SharedSecretA_1_address0 mem_address 1 5 }  { SharedSecretA_1_ce0 mem_ce 1 1 }  { SharedSecretA_1_we0 mem_we 1 1 }  { SharedSecretA_1_d0 mem_din 1 8 } } }
+	SharedSecretA_0 { ap_memory {  { SharedSecretA_0_address0 mem_address 1 5 }  { SharedSecretA_0_ce0 mem_ce 1 1 }  { SharedSecretA_0_we0 mem_we 1 1 }  { SharedSecretA_0_d0 mem_din 1 8 } } }
 	t_i { ap_memory {  { t_i_address0 mem_address 1 4 }  { t_i_ce0 mem_ce 1 1 }  { t_i_q0 mem_dout 0 64 }  { t_i_address1 MemPortADDR2 1 4 }  { t_i_ce1 MemPortCE2 1 1 }  { t_i_q1 MemPortDOUT2 0 64 } } }
-	SharedSecretA { ap_memory {  { SharedSecretA_address0 mem_address 1 7 }  { SharedSecretA_ce0 mem_ce 1 1 }  { SharedSecretA_we0 mem_we 1 1 }  { SharedSecretA_d0 mem_din 1 8 }  { SharedSecretA_address1 MemPortADDR2 1 7 }  { SharedSecretA_ce1 MemPortCE2 1 1 }  { SharedSecretA_we1 MemPortWE2 1 1 }  { SharedSecretA_d1 MemPortDIN2 1 8 } } }
 }

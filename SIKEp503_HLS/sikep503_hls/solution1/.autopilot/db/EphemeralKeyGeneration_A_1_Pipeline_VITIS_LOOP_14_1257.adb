@@ -354,7 +354,7 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>i_298</name>
+              <name>i_296</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>15</lineNumber>
@@ -2584,7 +2584,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_298</first>
+          <first>ap_sig_allocacmp_i_296</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3238,7 +3238,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>i_298_load_fu_80</first>
+        <first>i_296_load_fu_80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

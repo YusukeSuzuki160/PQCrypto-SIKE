@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2sqr503_mont'
 ================================================================
-* Date:           Tue May 27 14:11:31 2025
+* Date:           Tue Jun  3 14:06:41 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -88,17 +88,17 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 13 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%temp = alloca i64 1" [src/fpx.c:61->src/fpx.c:162]   --->   Operation 14 'alloca' 'temp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%temp_64 = alloca i64 1" [src/fpx.c:61->src/fpx.c:161]   --->   Operation 15 'alloca' 'temp_64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%temp_67 = alloca i64 1" [src/fpx.c:61->src/fpx.c:161]   --->   Operation 15 'alloca' 'temp_67' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/fpx.c:156]   --->   Operation 16 'alloca' 't1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%t2 = alloca i64 1" [src/fpx.c:156]   --->   Operation 17 'alloca' 't2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%t3 = alloca i64 1" [src/fpx.c:156]   --->   Operation 18 'alloca' 't3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_VITIS_LOOP_350_1, i64 %a, i64 %t1"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_5, i64 %temp_64"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_5, i64 %temp_67"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_6, i64 %temp"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 4.95>
 ST_2 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_VITIS_LOOP_350_1, i64 %a, i64 %t1"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 23 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_5, i64 %temp_64"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 23 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_5, i64 %temp_67"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 24 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_6, i64 %temp"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
@@ -117,18 +117,18 @@ ST_6 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mo
 ST_6 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont_Pipeline_VITIS_LOOP_350_1139, i64 %a, i64 %t3"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_64" [src/fpx.c:63->src/fpx.c:161]   --->   Operation 32 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67" [src/fpx.c:63->src/fpx.c:161]   --->   Operation 32 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.150, i64 %t3, i64 %a, i64 %temp" [src/fpx.c:63->src/fpx.c:162]   --->   Operation 33 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 1.73>
-ST_8 : Operation 34 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_64" [src/fpx.c:63->src/fpx.c:161]   --->   Operation 34 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 34 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67" [src/fpx.c:63->src/fpx.c:161]   --->   Operation 34 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
 ST_8 : Operation 35 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.150, i64 %t3, i64 %a, i64 %temp" [src/fpx.c:63->src/fpx.c:162]   --->   Operation 35 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 4.98>
-ST_9 : Operation 36 [2/2] (4.98ns)   --->   "%call_ln64 = call void @rdc_mont.14186, i64 %temp_64, i64 %c, i1 0, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:161]   --->   Operation 36 'call' 'call_ln64' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 36 [2/2] (4.98ns)   --->   "%call_ln64 = call void @rdc_mont.14186, i64 %temp_67, i64 %c, i1 0, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:161]   --->   Operation 36 'call' 'call_ln64' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.14186, i64 %temp_64, i64 %c, i1 0, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:161]   --->   Operation 37 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.14186, i64 %temp_67, i64 %c, i1 0, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:161]   --->   Operation 37 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 4.98>
 ST_11 : Operation 38 [2/2] (4.98ns)   --->   "%call_ln64 = call void @rdc_mont.14186, i64 %temp, i64 %c, i1 1, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:162]   --->   Operation 38 'call' 'call_ln64' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core

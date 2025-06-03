@@ -734,7 +734,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>i_51</name>
+						<name>i_54</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>143</lineNumber>
@@ -1278,7 +1278,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.32</m_delay>
+				<m_delay>4.98</m_delay>
 				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1830,7 +1830,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>i_23</name>
+						<name>i_25</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
@@ -1886,7 +1886,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>i_23_write_ln139</name>
+						<name>i_25_write_ln139</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
@@ -2156,7 +2156,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>i_52</name>
+						<name>i_55</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>157</lineNumber>
@@ -2641,7 +2641,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.91</m_delay>
+				<m_delay>6.57</m_delay>
 				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3021,7 +3021,7 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>i_23_write_ln139</name>
+						<name>i_25_write_ln139</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
@@ -3254,7 +3254,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>v_load61</name>
+						<name>v_load47</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>170</lineNumber>
@@ -5126,8 +5126,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>227</mMinLatency>
-			<mMaxLatency>325</mMaxLatency>
+			<mMinLatency>212</mMinLatency>
+			<mMaxLatency>310</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5173,8 +5173,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>8</mMinTripCount>
 			<mMaxTripCount>8</mMaxTripCount>
-			<mMinLatency>120</mMinLatency>
-			<mMaxLatency>176</mMaxLatency>
+			<mMinLatency>112</mMinLatency>
+			<mMaxLatency>168</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5220,8 +5220,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>7</mMinTripCount>
 			<mMaxTripCount>7</mMaxTripCount>
-			<mMinLatency>105</mMinLatency>
-			<mMaxLatency>147</mMaxLatency>
+			<mMinLatency>98</mMinLatency>
+			<mMaxLatency>140</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

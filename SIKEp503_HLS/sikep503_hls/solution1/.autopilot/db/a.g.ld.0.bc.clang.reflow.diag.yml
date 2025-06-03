@@ -14,105 +14,105 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 393, Column: 15 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 419, Column: 10 }
 Function:        keccak_absorb
 Args:            
   - Callee:          load64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 23, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 395, Column: 5 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 5 }
 Function:        keccak_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 609, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 672, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 417, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 478, Column: 2 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          store64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 623, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 686, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 635, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -290,7 +290,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 352, Column: 87 }
 Function:        mp_add
 Args:            
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_add
@@ -470,12 +470,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/config.h, Line: 100, Column: 31 }
-Function:        is_digit_zero_ct.74
+Function:        is_digit_zero_ct.65
 Args:            
-  - Callee:          is_digit_nonzero_ct.75
+  - Callee:          is_digit_nonzero_ct.66
     DebugLoc:        { File: src/config.h, Line: 94, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          is_digit_zero_ct.74
+  - Caller:          is_digit_zero_ct.65
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -485,7 +485,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 65 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -498,7 +498,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 116 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_zero_ct.74
+  - Callee:          is_digit_zero_ct.65
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -576,7 +576,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 201, Column: 128 }
 Function:        fp2mul503_mont
 Args:            
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          fp2mul503_mont
@@ -1743,14 +1743,40 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
+DebugLoc:        { File: src/sike.c, Line: 47, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          randombytes
     DebugLoc:        { File: src/random/random.c, Line: 22, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sike.c, Line: 50, Column: 3 }
+Function:        crypto_kem_enc
+Args:            
+  - Callee:          cshake256_simple
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          crypto_kem_enc
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sike.c, Line: 54, Column: 3 }
+Function:        crypto_kem_enc
+Args:            
+  - Callee:          EphemeralKeyGeneration_A
+    DebugLoc:        { File: src/sidh.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          crypto_kem_enc
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1759,37 +1785,11 @@ Name:            NeverInline
 DebugLoc:        { File: src/sike.c, Line: 55, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
-  - Callee:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 63, Column: 3 }
-Function:        crypto_kem_enc
-Args:            
-  - Callee:          EphemeralKeyGeneration_A
-    DebugLoc:        { File: src/sidh.c, Line: 84, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 69, Column: 3 }
-Function:        crypto_kem_enc
-Args:            
   - Callee:          EphemeralSecretAgreement_A
     DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1799,7 +1799,7 @@ DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 33, Column: 9 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sikep503_kem_enc_hw
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
@@ -1808,7 +1808,91 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+Function:        keccak_absorb
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '100'
+  - String:          ' to '
+  - NewBound:        '17'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_444_4
+  - String:          ''' ('
+  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          keccak_absorb
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+Function:        keccak_absorb
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '100'
+  - String:          ' to '
+  - NewBound:        '17'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_444_4
+  - String:          ''' ('
+  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          keccak_absorb
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+Function:        keccak_absorb
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '100'
+  - String:          ' to '
+  - NewBound:        '17'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_416_2
+  - String:          ''' ('
+  - LoopLoc:         'src/sha3/fips202.c:416:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          keccak_absorb
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+Function:        keccak_absorb
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '100'
+  - String:          ' to '
+  - NewBound:        '17'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_416_2
+  - String:          ''' ('
+  - LoopLoc:         'src/sha3/fips202.c:416:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          keccak_absorb
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
 Function:        keccak_squeezeblocks
 Args:            
   - String:          'Updating loop '
@@ -1818,9 +1902,9 @@ Args:
   - String:          ' to '
   - NewBound:        '17'
   - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_418_2
+  - LoopName:        VITIS_LOOP_479_2
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:418:23'
+  - LoopLoc:         'src/sha3/fips202.c:479:23'
   - String:          ')'
   - String:          ' in function '''
   - String:          keccak_squeezeblocks
@@ -1829,7 +1913,7 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
 Function:        keccak_squeezeblocks
 Args:            
   - String:          'Updating loop '
@@ -1839,9 +1923,9 @@ Args:
   - String:          ' to '
   - NewBound:        '17'
   - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_418_2
+  - LoopName:        VITIS_LOOP_479_2
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:418:23'
+  - LoopLoc:         'src/sha3/fips202.c:479:23'
   - String:          ')'
   - String:          ' in function '''
   - String:          keccak_squeezeblocks
@@ -2154,7 +2238,7 @@ Args:
 --- !Failure
 Pass:            reflow-function-uniquification
 Name:            FunctionUniquification
-DebugLoc:        { File: src/sike.c, Line: 75, Column: 3 }
+DebugLoc:        { File: src/sike.c, Line: 56, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - String:          'Duplicating function '''
@@ -2164,7 +2248,7 @@ Args:
 --- !Failure
 Pass:            reflow-function-uniquification
 Name:            FunctionUniquification
-DebugLoc:        { File: src/sike.c, Line: 55, Column: 3 }
+DebugLoc:        { File: src/sike.c, Line: 50, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - String:          'Duplicating function '''
@@ -2174,7 +2258,7 @@ Args:
 --- !Failure
 Pass:            reflow-function-uniquification
 Name:            FunctionUniquification
-DebugLoc:        { File: src/sha3/fips202.c, Line: 635, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - String:          'Duplicating function '''
@@ -2184,7 +2268,7 @@ Args:
 --- !Failure
 Pass:            reflow-function-uniquification
 Name:            FunctionUniquification
-DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
 Function:        keccak_squeezeblocks
 Args:            
   - String:          'Duplicating function '''
@@ -2207,105 +2291,105 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 393, Column: 15 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 419, Column: 10 }
 Function:        keccak_absorb
 Args:            
   - Callee:          load64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 23, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 395, Column: 5 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 5 }
 Function:        keccak_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 609, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 672, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 417, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 478, Column: 2 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          store64.34
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 623, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 686, Column: 3 }
 Function:        cshake256_simple.32
 Args:            
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 635, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
 Function:        cshake256_simple.32
 Args:            
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -2483,7 +2567,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 352, Column: 87 }
 Function:        mp_add
 Args:            
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_add
@@ -2663,12 +2747,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/config.h, Line: 100, Column: 31 }
-Function:        is_digit_zero_ct.74
+Function:        is_digit_zero_ct.65
 Args:            
-  - Callee:          is_digit_nonzero_ct.75
+  - Callee:          is_digit_nonzero_ct.66
     DebugLoc:        { File: src/config.h, Line: 94, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          is_digit_zero_ct.74
+  - Caller:          is_digit_zero_ct.65
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -2678,7 +2762,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 65 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -2691,7 +2775,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 116 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_zero_ct.74
+  - Callee:          is_digit_zero_ct.65
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -2769,7 +2853,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 201, Column: 128 }
 Function:        fp2mul503_mont
 Args:            
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          fp2mul503_mont
@@ -3936,79 +4020,105 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 417, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 478, Column: 2 }
 Function:        keccak_squeezeblocks.33
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
 Function:        keccak_squeezeblocks.33
 Args:            
   - Callee:          store64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 623, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 686, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 635, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 644, Column: 5 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 707, Column: 5 }
 Function:        cshake256_simple
 Args:            
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
+DebugLoc:        { File: src/sike.c, Line: 47, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          randombytes
     DebugLoc:        { File: src/random/random.c, Line: 22, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sike.c, Line: 50, Column: 3 }
+Function:        crypto_kem_enc
+Args:            
+  - Callee:          cshake256_simple.32
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          crypto_kem_enc
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sike.c, Line: 54, Column: 3 }
+Function:        crypto_kem_enc
+Args:            
+  - Callee:          EphemeralKeyGeneration_A
+    DebugLoc:        { File: src/sidh.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          crypto_kem_enc
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -4017,50 +4127,24 @@ Name:            NeverInline
 DebugLoc:        { File: src/sike.c, Line: 55, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
-  - Callee:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 63, Column: 3 }
-Function:        crypto_kem_enc
-Args:            
-  - Callee:          EphemeralKeyGeneration_A
-    DebugLoc:        { File: src/sidh.c, Line: 84, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 69, Column: 3 }
-Function:        crypto_kem_enc
-Args:            
   - Callee:          EphemeralSecretAgreement_A
     DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 90, Column: 3 }
+DebugLoc:        { File: src/sike.c, Line: 66, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -4070,7 +4154,7 @@ DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 33, Column: 9 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sikep503_kem_enc_hw
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
@@ -4104,7 +4188,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
 Function:        keccak_absorb
 Args:            
   - String:          'Inlining function '''
@@ -4112,27 +4196,27 @@ Args:
     DebugLoc:        { File: src/sha3/fips202.c, Line: 23, Column: 0 }
   - String:          ''' into '''
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
 Function:        cshake256_simple_absorb
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
 Function:        keccak_squeezeblocks
 Args:            
   - String:          'Inlining function '''
@@ -4140,21 +4224,35 @@ Args:
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ''' into '''
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple.32
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          cshake256_simple_absorb
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          cshake256_simple.32
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -4318,7 +4416,7 @@ DebugLoc:        { File: src/fpx.c, Line: 347, Column: 0 }
 Function:        mp_add
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ''' into '''
   - Caller:          mp_add
@@ -4455,13 +4553,13 @@ Args:
 Pass:            reflow-inliner
 Name:            Inline
 DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
-Function:        is_digit_zero_ct.74
+Function:        is_digit_zero_ct.65
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_nonzero_ct.75
+  - Callee:          is_digit_nonzero_ct.66
     DebugLoc:        { File: src/config.h, Line: 94, Column: 0 }
   - String:          ''' into '''
-  - Caller:          is_digit_zero_ct.74
+  - Caller:          is_digit_zero_ct.65
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ''''
 ...
@@ -4472,7 +4570,7 @@ DebugLoc:        { File: src/fpx.c, Line: 167, Column: 0 }
 Function:        mp_sub
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ''' into '''
   - Caller:          mp_sub
@@ -4486,7 +4584,7 @@ DebugLoc:        { File: src/fpx.c, Line: 167, Column: 0 }
 Function:        mp_sub
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_zero_ct.74
+  - Callee:          is_digit_zero_ct.65
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ''' into '''
   - Caller:          mp_sub
@@ -4556,7 +4654,7 @@ DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
 Function:        fp2mul503_mont
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_lessthan_ct.73
+  - Callee:          is_digit_lessthan_ct.64
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ''' into '''
   - Caller:          fp2mul503_mont
@@ -5378,7 +5476,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
 Function:        keccak_squeezeblocks.33
 Args:            
   - String:          'Inlining function '''
@@ -5386,41 +5484,55 @@ Args:
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ''' into '''
   - Caller:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          cshake256_simple_absorb
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          cshake256_simple
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 411, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
 Function:        crypto_kem_enc
 Args:            
   - String:          'Inlining function '''
@@ -5428,28 +5540,28 @@ Args:
     DebugLoc:        { File: src/random/random.c, Line: 22, Column: 0 }
   - String:          ''' into '''
   - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Inlining function '''
-  - Callee:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+  - Callee:          crypto_kem_enc
+    DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
   - String:          ''' into '''
-  - Caller:          crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Caller:          sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Failure
 Pass:            reflow-syncheck
 Name:            WarningOutOfBoundArrayAccess
 DebugLoc:        { File: src/sha3/fips202.c, Line: 28, Column: 30 }
-Function:        cshake256_simple_absorb
+Function:        cshake256_simple.32
 Args:            
   - String:          The program may have out of bound array access
   - String:          ' on variable '''
@@ -5602,19 +5714,41 @@ Args:
 --- !Failure
 Pass:            reflow-syncheck
 Name:            WarningOutOfBoundArrayAccess
-DebugLoc:        { File: src/sha3/fips202.c, Line: 39, Column: 10 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sha3/fips202.c, Line: 28, Column: 30 }
+Function:        cshake256_simple
 Args:            
   - String:          The program may have out of bound array access
   - String:          ' on variable '''
-  - String:          t.i
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: src/sha3/fips202.c, Line: 39, Column: 10 }
+Function:        cshake256_simple
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          output
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: src/sha3/fips202.c, Line: 39, Column: 10 }
+Function:        cshake256_simple
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          t
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: src/sike.c, Line: 49, Column: 3 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -5622,28 +5756,28 @@ Args:
   - Length:          '378'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        pk4seq
+  - AccessID:        pk2seq
   - ArrayName:       pk
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
   - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'src/sike.c:49:3'
+  - LoopLoc:         'src/sike.c:48:3'
   - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
   - OrigDirection:   read
-  - OrigID:          load-store-loop2.load.3
+  - OrigID:          load-store-loop2.i.load.3
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: src/sike.c, Line: 81, Column: 20 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 59, Column: 20 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Sequential '
   - Direction:       write
@@ -5656,24 +5790,24 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_81_6
+  - LoopName:        VITIS_LOOP_59_1
   - String:          ' '
-  - LoopLoc:         'src/sike.c:81:20'
+  - LoopLoc:         'src/sike.c:59:20'
   - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: src/sike.c, Line: 82, Column: 17 }
+    DebugLoc:        { File: src/sike.c, Line: 61, Column: 17 }
   - OrigDirection:   write
-  - OrigID:          for.inc77.store.10
+  - OrigID:          for.inc.i.store.10
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: src/sike.c, Line: 89, Column: 3 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 65, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -5681,52 +5815,22 @@ Args:
   - Length:          '402'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        ct5seq
+  - AccessID:        ct3seq
   - ArrayName:       ct
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
   - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'src/sike.c:89:3'
+  - LoopLoc:         'src/sike.c:65:3'
   - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
   - OrigDirection:   read
-  - OrigID:          load-store-loop.load.3
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: src/sha3/fips202.c, Line: 649, Column: 23 }
-Function:        crypto_kem_enc
-Args:            
-  - String:          'Sequential '
-  - Direction:       write
-  - String:          ' of length '
-  - Length:          '16'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        ss6seq
-  - ArrayName:       ss
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_649_1
-  - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:649:23'
-  - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      store
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 652, Column: 12 }
-  - OrigDirection:   write
-  - OrigID:          for.inc.i12.store.6
+  - OrigID:          load-store-loop.i.load.3
 ...
 --- !Passed
 Pass:            reflow-burst-inference
@@ -5911,6 +6015,36 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
+DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        output1seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_712_1
+  - String:          ' '
+  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - String:          ' '
+  - Function:        cshake256_simple
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 715, Column: 12 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
 DebugLoc:        { File: src/sidh.c, Line: 55, Column: 22 }
 Function:        fp2_decode
 Args:            
@@ -5971,8 +6105,8 @@ Args:
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: src/sha3/fips202.c, Line: 649, Column: 23 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 65, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Could not widen since type '
   - Type:            i8
@@ -5980,53 +6114,26 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 649, Column: 23 }
-  - OrigDirection:   write
-  - OrigID:          ss6seq
-  - ArrayName:       ss
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_649_1
-  - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:649:23'
-  - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: src/sike.c, Line: 89, Column: 3 }
-Function:        crypto_kem_enc
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            i8
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: src/sike.c, Line: 89, Column: 3 }
+    DebugLoc:        { File: src/sike.c, Line: 65, Column: 3 }
   - OrigDirection:   read
-  - OrigID:          ct5seq
+  - OrigID:          ct3seq
   - ArrayName:       ct
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
   - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'src/sike.c:89:3'
+  - LoopLoc:         'src/sike.c:65:3'
   - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: src/sike.c, Line: 81, Column: 20 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 59, Column: 20 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Could not widen since type '
   - Type:            i8
@@ -6034,26 +6141,26 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: src/sike.c, Line: 81, Column: 20 }
+    DebugLoc:        { File: src/sike.c, Line: 59, Column: 20 }
   - OrigDirection:   write
   - OrigID:          scevgepseq
   - ArrayName:       ct
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_81_6
+  - LoopName:        VITIS_LOOP_59_1
   - String:          ' '
-  - LoopLoc:         'src/sike.c:81:20'
+  - LoopLoc:         'src/sike.c:59:20'
   - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: src/sike.c, Line: 49, Column: 3 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Could not widen since type '
   - Type:            i8
@@ -6061,19 +6168,19 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: src/sike.c, Line: 49, Column: 3 }
+    DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
   - OrigDirection:   read
-  - OrigID:          pk4seq
+  - OrigID:          pk2seq
   - ArrayName:       pk
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
   - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'src/sike.c:49:3'
+  - LoopLoc:         'src/sike.c:48:3'
   - String:          ' '
-  - Function:        crypto_kem_enc
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
@@ -6236,6 +6343,33 @@ Args:
   - String:          ' '
   - Function:        EphemeralKeyGeneration_A
     DebugLoc:        { File: src/sidh.c, Line: 84, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          output1seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_712_1
+  - String:          ' '
+  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - String:          ' '
+  - Function:        cshake256_simple
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
@@ -6418,9 +6552,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_593_1
+  - LoopName:        VITIS_LOOP_654_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:593:21'
+  - LoopLoc:         'src/sha3/fips202.c:654:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6428,9 +6562,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_400_3
+  - LoopName:        VITIS_LOOP_416_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:400:21'
+  - LoopLoc:         'src/sha3/fips202.c:416:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6438,9 +6572,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_402_4
+  - LoopName:        VITIS_LOOP_444_4
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:402:21'
+  - LoopLoc:         'src/sha3/fips202.c:444:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6448,9 +6582,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_406_5
+  - LoopName:        VITIS_LOOP_479_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:406:21'
+  - LoopLoc:         'src/sha3/fips202.c:479:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6458,9 +6592,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_418_2
+  - LoopName:        VITIS_LOOP_712_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:418:23'
+  - LoopLoc:         'src/sha3/fips202.c:712:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6468,9 +6602,39 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_649_1
+  - LoopName:        VITIS_LOOP_654_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:649:23'
+  - LoopLoc:         'src/sha3/fips202.c:654:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_444_4
+  - String:          '> at '
+  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_479_2
+  - String:          '> at '
+  - LoopLoc:         'src/sha3/fips202.c:479:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_712_1
+  - String:          '> at '
+  - LoopLoc:         'src/sha3/fips202.c:712:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7488,26 +7652,6 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_593_1
-  - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:593:21'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_392_2
-  - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:392:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
   - LoopName:        VITIS_LOOP_121_1
   - String:          '> at '
   - LoopLoc:         'src/sha3/fips202.c:121:21'
@@ -7518,9 +7662,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_400_3
+  - LoopName:        VITIS_LOOP_654_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:400:21'
+  - LoopLoc:         'src/sha3/fips202.c:654:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7528,9 +7672,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_402_4
+  - LoopName:        VITIS_LOOP_416_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:402:21'
+  - LoopLoc:         'src/sha3/fips202.c:416:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7538,9 +7682,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_406_5
+  - LoopName:        VITIS_LOOP_444_4
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:406:21'
+  - LoopLoc:         'src/sha3/fips202.c:444:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7548,9 +7692,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_418_2
+  - LoopName:        VITIS_LOOP_479_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:418:23'
+  - LoopLoc:         'src/sha3/fips202.c:479:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7558,9 +7702,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_649_1
+  - LoopName:        VITIS_LOOP_712_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:649:23'
+  - LoopLoc:         'src/sha3/fips202.c:712:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7580,7 +7724,7 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        unknown
   - String:          '> at '
-  - LoopLoc:         'src/sike.c:49:3'
+  - LoopLoc:         'src/sike.c:48:3'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7588,9 +7732,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_81_6
+  - LoopName:        VITIS_LOOP_59_1
   - String:          '> at '
-  - LoopLoc:         'src/sike.c:81:20'
+  - LoopLoc:         'src/sike.c:59:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7600,37 +7744,37 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        unknown
   - String:          '> at '
-  - LoopLoc:         'src/sike.c:89:3'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_418_2
-  - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:418:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_649_1
-  - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:649:23'
+  - LoopLoc:         'src/sike.c:65:3'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: src/sha3/fips202.c, Line: 37, Column: 20 }
-Function:        crypto_kem_enc
+Function:        cshake256_simple
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_37_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/sha3/fips202.c, Line: 452, Column: 13 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BYTE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/sha3/fips202.c, Line: 26, Column: 20 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_26_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -7646,11 +7790,11 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 26, Column: 20 }
-Function:        cshake256_simple_absorb.clone
+DebugLoc:        { File: src/sha3/fips202.c, Line: 452, Column: 13 }
+Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_26_1
+  - LoopName:        BYTE
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -7666,18 +7810,18 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 26, Column: 20 }
-Function:        cshake256_simple_absorb
+DebugLoc:        { File: src/sha3/fips202.c, Line: 452, Column: 13 }
+Function:        cshake256_simple.32
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_26_1
+  - LoopName:        BYTE
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: src/sha3/fips202.c, Line: 26, Column: 20 }
-Function:        cshake256_simple_absorb
+Function:        cshake256_simple.32
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_26_1
@@ -7686,8 +7830,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_37_1
@@ -7695,14 +7839,46 @@ Args:
   - LoopLoc:         'src/sha3/fips202.c:37:20'
   - String:          ') '
   - String:          'in function '''
-  - String:          crypto_kem_enc
+  - String:          cshake256_simple
   - String:          ''' completely with a factor of '
   - Factor:          '8'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        BYTE
+  - String:          ''' ('
+  - LoopLoc:         'src/sha3/fips202.c:452:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cshake256_simple
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ''' ('
+  - LoopLoc:         'src/sha3/fips202.c:26:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cshake256_simple
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Unrolling loop '''
@@ -7718,23 +7894,23 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-Function:        cshake256_simple_absorb.clone
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_26_1
+  - LoopName:        BYTE
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:26:20'
+  - LoopLoc:         'src/sha3/fips202.c:452:13'
   - String:          ') '
   - String:          'in function '''
-  - String:          cshake256_simple_absorb.clone
+  - String:          cshake256_simple.32.clone
   - String:          ''' completely with a factor of '
   - Factor:          '8'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Unrolling loop '''
@@ -7750,24 +7926,24 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-Function:        cshake256_simple_absorb
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple.32
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_26_1
+  - LoopName:        BYTE
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:26:20'
+  - LoopLoc:         'src/sha3/fips202.c:452:13'
   - String:          ') '
   - String:          'in function '''
-  - String:          cshake256_simple_absorb
+  - String:          cshake256_simple.32
   - String:          ''' completely with a factor of '
   - Factor:          '8'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-Function:        cshake256_simple_absorb
+DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+Function:        cshake256_simple.32
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_26_1
@@ -7775,25 +7951,25 @@ Args:
   - LoopLoc:         'src/sha3/fips202.c:26:20'
   - String:          ') '
   - String:          'in function '''
-  - String:          cshake256_simple_absorb
+  - String:          cshake256_simple.32
   - String:          ''' completely with a factor of '
   - Factor:          '8'
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            FlattenOffInference
-DebugLoc:        { File: src/sha3/fips202.c, Line: 390, Column: 21 }
-Function:        cshake256_simple_absorb
+DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+Function:        cshake256_simple.32
 Args:            
   - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        VITIS_LOOP_390_1
+  - LoopName:        VITIS_LOOP_413_1
   - String:          '''.'
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 390, Column: 21 }
-Function:        cshake256_simple_absorb
+DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+Function:        cshake256_simple.32
 Args:            
   - PragmaType:      loop_flatten
   - String:          ' '
@@ -7801,14 +7977,46 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cshake256_simple_absorb
+  - PragmaFunction:  cshake256_simple.32
   - String:          ' '
-  - PragmaSrcLoc:    'src/sha3/fips202.c:390:21'
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 390, Column: 21 }
-  - LoopName:        VITIS_LOOP_390_1
+  - PragmaSrcLoc:    'src/sha3/fips202.c:413:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+  - LoopName:        VITIS_LOOP_413_1
   - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:390:21'
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 390, Column: 21 }
+  - LoopLoc:         'src/sha3/fips202.c:413:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        VITIS_LOOP_413_1
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+Function:        cshake256_simple
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cshake256_simple
+  - String:          ' '
+  - PragmaSrcLoc:    'src/sha3/fips202.c:413:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+  - LoopName:        VITIS_LOOP_413_1
+  - String:          ' '
+  - LoopLoc:         'src/sha3/fips202.c:413:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
   - String:          ' '
 ...
 --- !Passed
@@ -8077,27 +8285,27 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sike.c, Line: 42, Column: 17 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 41, Column: 17 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=temp'
+  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=jinvariant.i'
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  crypto_kem_enc
+  - PragmaFunction:  sikep503_kem_enc_hw
   - String:          ' '
-  - varLoc:          'src/sike.c:42:17'
+  - varLoc:          'src/sike.c:41:17'
   - String:          ' '
-  - VarName:         temp
+  - VarName:         jinvariant.i
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/sike.c, Line: 42, Column: 17 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 41, Column: 17 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -8108,7 +8316,47 @@ Args:
   - String:          ' dim='
   - Dim:             '1'
   - String:          ''' for array '''
-  - Name:            temp
+  - Name:            jinvariant.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src/sike.c, Line: 43, Column: 17 }
+Function:        sikep503_kem_enc_hw
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=temp.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  sikep503_kem_enc_hw
+  - String:          ' '
+  - varLoc:          'src/sike.c:43:17'
+  - String:          ' '
+  - VarName:         temp.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src/sike.c, Line: 43, Column: 17 }
+Function:        sikep503_kem_enc_hw
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '4'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            temp.i
   - String:          ''''
   - String:          ' due to '
   - String:          pipeline
@@ -8311,127 +8559,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 387, Column: 17 }
-Function:        cshake256_simple_absorb
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=t.i'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  cshake256_simple_absorb
-  - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:387:17'
-  - String:          ' '
-  - VarName:         t.i
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 387, Column: 17 }
-Function:        cshake256_simple_absorb
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            cyclic
-  - String:          ' factor='
-  - Factor:          '4'
-  - String:          ' dim='
-  - Dim:             '1'
-  - String:          ''' for array '''
-  - Name:            t.i
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 387, Column: 17 }
-Function:        cshake256_simple_absorb.clone
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=t.i'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  cshake256_simple_absorb.clone
-  - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:387:17'
-  - String:          ' '
-  - VarName:         t.i
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 387, Column: 17 }
-Function:        cshake256_simple_absorb.clone
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            cyclic
-  - String:          ' factor='
-  - Factor:          '4'
-  - String:          ' dim='
-  - Dim:             '1'
-  - String:          ''' for array '''
-  - Name:            t.i
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
-Function:        cshake256_simple.32
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=t'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  cshake256_simple.32
-  - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:620:17'
-  - String:          ' '
-  - VarName:         t
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
-Function:        cshake256_simple.32
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            cyclic
-  - String:          ' factor='
-  - Factor:          '4'
-  - String:          ' dim='
-  - Dim:             '1'
-  - String:          ''' for array '''
-  - Name:            t
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
 Function:        cshake256_simple.32.clone
 Args:            
   - PragmaType:      array_partition
@@ -8442,7 +8570,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  cshake256_simple.32.clone
   - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:620:17'
+  - varLoc:          'src/sha3/fips202.c:683:17'
   - String:          ' '
   - VarName:         t
   - String:          ' '
@@ -8450,7 +8578,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Inferring pragma '''
@@ -8471,27 +8599,27 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+Function:        cshake256_simple.32
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=t.i'
+  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=t'
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  crypto_kem_enc
+  - PragmaFunction:  cshake256_simple.32
   - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:620:17'
+  - varLoc:          'src/sha3/fips202.c:683:17'
   - String:          ' '
-  - VarName:         t.i
+  - VarName:         t
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+Function:        cshake256_simple.32
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -8502,7 +8630,47 @@ Args:
   - String:          ' dim='
   - Dim:             '1'
   - String:          ''' for array '''
-  - Name:            t.i
+  - Name:            t
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+Function:        cshake256_simple
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=t'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cshake256_simple
+  - String:          ' '
+  - varLoc:          'src/sha3/fips202.c:683:17'
+  - String:          ' '
+  - VarName:         t
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+Function:        cshake256_simple
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '4'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            t
   - String:          ''''
   - String:          ' due to '
   - String:          pipeline
@@ -8562,27 +8730,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 387, Column: 17 }
-Function:        cshake256_simple_absorb
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          t.i
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '4'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Applying '
@@ -8696,27 +8844,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 387, Column: 17 }
-Function:        cshake256_simple_absorb.clone
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          t.i
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '4'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Applying '
@@ -8736,13 +8864,13 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 620, Column: 17 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+Function:        cshake256_simple
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          t.i
+  - UOName:          t
   - String:          ''':'
   - String:          ' '
   - Mode:            Cyclic
@@ -8756,13 +8884,33 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sike.c, Line: 42, Column: 17 }
-Function:        crypto_kem_enc
+DebugLoc:        { File: src/sike.c, Line: 41, Column: 17 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          temp
+  - UOName:          jinvariant.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/sike.c, Line: 43, Column: 17 }
+Function:        sikep503_kem_enc_hw
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          temp.i
   - String:          ''':'
   - String:          ' '
   - Mode:            Cyclic
@@ -8886,8 +9034,58 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: src/sike.c, Line: 49, Column: 3 }
-Function:        crypto_kem_enc.1
+DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+Function:        cshake256_simple.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_712_1
+  - String:          ' '
+  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - String:          ' '
+  - Function:        cshake256_simple.1
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+Function:        cshake256_simple.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_712_1
+  - String:          '''('
+  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -8905,17 +9103,17 @@ Args:
   - String:          ' '
   - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'src/sike.c:49:3'
+  - LoopLoc:         'src/sike.c:48:3'
   - String:          ' '
-  - Function:        crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: src/sike.c, Line: 49, Column: 3 }
-Function:        crypto_kem_enc.1
+DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -8926,7 +9124,7 @@ Args:
   - String:          ' in loop '''
   - LoopName:        anonymous
   - String:          '''('
-  - LoopLoc:         'src/sike.c:49:3'
+  - LoopLoc:         'src/sike.c:48:3'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -8936,8 +9134,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: src/sike.c, Line: 81, Column: 20 }
-Function:        crypto_kem_enc.1
+DebugLoc:        { File: src/sike.c, Line: 59, Column: 20 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
@@ -8953,19 +9151,19 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_81_6
+  - LoopName:        VITIS_LOOP_59_1
   - String:          ' '
-  - LoopLoc:         'src/sike.c:81:20'
+  - LoopLoc:         'src/sike.c:59:20'
   - String:          ' '
-  - Function:        crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: src/sike.c, Line: 81, Column: 20 }
-Function:        crypto_kem_enc.1
+DebugLoc:        { File: src/sike.c, Line: 59, Column: 20 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
@@ -8974,9 +9172,9 @@ Args:
   - String:          ' and bit width '
   - Width:           '8'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_81_6
+  - LoopName:        VITIS_LOOP_59_1
   - String:          '''('
-  - LoopLoc:         'src/sike.c:81:20'
+  - LoopLoc:         'src/sike.c:59:20'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -8986,8 +9184,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: src/sike.c, Line: 89, Column: 3 }
-Function:        crypto_kem_enc.1
+DebugLoc:        { File: src/sike.c, Line: 65, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -9005,17 +9203,17 @@ Args:
   - String:          ' '
   - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         'src/sike.c:89:3'
+  - LoopLoc:         'src/sike.c:65:3'
   - String:          ' '
-  - Function:        crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Function:        sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: src/sike.c, Line: 89, Column: 3 }
-Function:        crypto_kem_enc.1
+DebugLoc:        { File: src/sike.c, Line: 65, Column: 3 }
+Function:        sikep503_kem_enc_hw
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -9026,57 +9224,7 @@ Args:
   - String:          ' in loop '''
   - LoopName:        anonymous
   - String:          '''('
-  - LoopLoc:         'src/sike.c:89:3'
-  - String:          ')'
-  - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem
-  - String:          '''.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: src/sha3/fips202.c, Line: 649, Column: 23 }
-Function:        crypto_kem_enc.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       writes
-  - String:          ' of length '
-  - Length:          '16'
-  - String:          ' and bit width '
-  - Width:           '8'
-  - String:          ' has been inferred.'
-  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        seq3
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_649_1
-  - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:649:23'
-  - String:          ' '
-  - Function:        crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-burst-summary
-Name:            BurstInferredSummary
-DebugLoc:        { File: src/sha3/fips202.c, Line: 649, Column: 23 }
-Function:        crypto_kem_enc.1
-Args:            
-  - String:          'Multiple burst '
-  - Direction:       writes
-  - String:          ' of length '
-  - Length:          '16'
-  - String:          ' and bit width '
-  - Width:           '8'
-  - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_649_1
-  - String:          '''('
-  - LoopLoc:         'src/sha3/fips202.c:649:23'
+  - LoopLoc:         'src/sike.c:65:3'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -9086,40 +9234,14 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 3 }
-Function:        cshake256_simple_absorb
-Args:            
-  - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 623, Column: 3 }
-Function:        cshake256_simple.32
-Args:            
-  - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 417, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
 Function:        cshake256_simple.32
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -9191,12 +9313,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.69.70
+Function:        fp2mul503_mont.65.66
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.69.70
+  - Caller:          fp2mul503_mont.65.66
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9204,12 +9326,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.69.70
+Function:        fp2mul503_mont.65.66
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.69.70
+  - Caller:          fp2mul503_mont.65.66
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9217,12 +9339,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.71.74
+Function:        fp2mul503_mont.67.70
 Args:            
-  - Callee:          mp_mul.72.73
+  - Callee:          mp_mul.68.69
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.71.74
+  - Caller:          fp2mul503_mont.67.70
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9230,12 +9352,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.71.74
+Function:        fp2mul503_mont.67.70
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.71.74
+  - Caller:          fp2mul503_mont.67.70
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9243,12 +9365,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 205, Column: 5 }
-Function:        fp2mul503_mont.71.74
+Function:        fp2mul503_mont.67.70
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.71.74
+  - Caller:          fp2mul503_mont.67.70
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9256,12 +9378,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.75.76
+Function:        fp2sqr503_mont.71.72
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.75.76
+  - Caller:          fp2sqr503_mont.71.72
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9269,12 +9391,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 64, Column: 5 }
-Function:        fp2sqr503_mont.75.76
+Function:        fp2sqr503_mont.71.72
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.75.76
+  - Caller:          fp2sqr503_mont.71.72
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9282,12 +9404,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.77.78.1
+Function:        fp2mul503_mont.73.74.1
 Args:            
   - Callee:          mp_mul.1
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.77.78.1
+  - Caller:          fp2mul503_mont.73.74.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9295,12 +9417,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 196, Column: 5 }
-Function:        fp2mul503_mont.77.78.1
+Function:        fp2mul503_mont.73.74.1
 Args:            
   - Callee:          mp_mul.2
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.77.78.1
+  - Caller:          fp2mul503_mont.73.74.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9308,12 +9430,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.77.78.1
+Function:        fp2mul503_mont.73.74.1
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.77.78.1
+  - Caller:          fp2mul503_mont.73.74.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9321,12 +9443,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 205, Column: 5 }
-Function:        fp2mul503_mont.77.78.1
+Function:        fp2mul503_mont.73.74.1
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.77.78.1
+  - Caller:          fp2mul503_mont.73.74.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9334,12 +9456,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
-  - Callee:          fpadd503.63.64
+  - Callee:          fpadd503.59.60
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9347,12 +9469,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
-  - Callee:          fpadd503.65.66
+  - Callee:          fpadd503.61.62
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9360,12 +9482,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 306, Column: 3 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
   - Callee:          fp2div2_503
     DebugLoc:        { File: src/fpx.c, Line: 125, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9373,12 +9495,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
   - Callee:          fpadd503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9386,12 +9508,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 119, Column: 5 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
   - Callee:          fpsub503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9399,12 +9521,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 244, Column: 3 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
   - Callee:          fp2sqr503_mont
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9412,12 +9534,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 133, Column: 5 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
   - Callee:          fpcorrection503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 87, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9425,12 +9547,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 248, Column: 3 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
   - Callee:          fp2mul503_mont
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9438,12 +9560,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 250, Column: 3 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
-  - Callee:          fp2mul503_mont.69.70
+  - Callee:          fp2mul503_mont.65.66
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9451,12 +9573,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 253, Column: 3 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
-  - Callee:          fp2mul503_mont.71.74
+  - Callee:          fp2mul503_mont.67.70
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9464,12 +9586,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 258, Column: 3 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
-  - Callee:          fp2sqr503_mont.75.76
+  - Callee:          fp2sqr503_mont.71.72
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9477,12 +9599,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 260, Column: 3 }
-Function:        LADDER3PT.79.80.1
+Function:        LADDER3PT.75.76.1
 Args:            
-  - Callee:          fp2mul503_mont.77.78.1
+  - Callee:          fp2mul503_mont.73.74.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.79.80.1
+  - Caller:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10194,7 +10316,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.c, Line: 109, Column: 5 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          LADDER3PT.79.80.1
+  - Callee:          LADDER3PT.75.76.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -10701,7 +10823,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fpadd503.63.64
+  - Callee:          fpadd503.59.60
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10714,7 +10836,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fpadd503.65.66
+  - Callee:          fpadd503.61.62
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10805,7 +10927,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 250, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2mul503_mont.69.70
+  - Callee:          fp2mul503_mont.65.66
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10818,7 +10940,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 253, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2mul503_mont.71.74
+  - Callee:          fp2mul503_mont.67.70
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10831,7 +10953,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 258, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2sqr503_mont.75.76
+  - Callee:          fp2sqr503_mont.71.72
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10844,7 +10966,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 260, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2mul503_mont.77.78.1
+  - Callee:          fp2mul503_mont.73.74.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10855,12 +10977,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.93.96.1
+Function:        fp2mul503_mont.89.92.1
 Args:            
-  - Callee:          mp_mul.94.95
+  - Callee:          mp_mul.90.91
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.93.96.1
+  - Caller:          fp2mul503_mont.89.92.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10868,12 +10990,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.93.96.1
+Function:        fp2mul503_mont.89.92.1
 Args:            
   - Callee:          rdc_mont.1
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.93.96.1
+  - Caller:          fp2mul503_mont.89.92.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10881,12 +11003,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 205, Column: 5 }
-Function:        fp2mul503_mont.93.96.1
+Function:        fp2mul503_mont.89.92.1
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.93.96.1
+  - Caller:          fp2mul503_mont.89.92.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10894,12 +11016,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 207, Column: 5 }
-Function:        fp2mul503_mont.93.96.1
+Function:        fp2mul503_mont.89.92.1
 Args:            
   - Callee:          rdc_mont.2
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.93.96.1
+  - Caller:          fp2mul503_mont.89.92.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10907,12 +11029,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/generic/fp_generic.c, Line: 190, Column: 93 }
-Function:        rdc_mont.86.87
+Function:        rdc_mont.82.83
 Args:            
   - Callee:          is_digit_lessthan_ct
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          rdc_mont.86.87
+  - Caller:          rdc_mont.82.83
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10920,12 +11042,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.85.88.1
+Function:        fp2sqr503_mont.81.84.1
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.85.88.1
+  - Caller:          fp2sqr503_mont.81.84.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10933,12 +11055,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 64, Column: 5 }
-Function:        fp2sqr503_mont.85.88.1
+Function:        fp2sqr503_mont.81.84.1
 Args:            
-  - Callee:          rdc_mont.86.87
+  - Callee:          rdc_mont.82.83
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.85.88.1
+  - Caller:          fp2sqr503_mont.81.84.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10946,12 +11068,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.85.88.1
+Function:        fp2sqr503_mont.81.84.1
 Args:            
   - Callee:          mp_mul.5
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.85.88.1
+  - Caller:          fp2sqr503_mont.81.84.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10959,12 +11081,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.91.92
+Function:        fp2sqr503_mont.87.88
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.91.92
+  - Caller:          fp2sqr503_mont.87.88
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10972,12 +11094,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 64, Column: 5 }
-Function:        fp2sqr503_mont.91.92
+Function:        fp2sqr503_mont.87.88
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.91.92
+  - Caller:          fp2sqr503_mont.87.88
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10985,12 +11107,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.91.92
+Function:        fp2sqr503_mont.87.88
 Args:            
-  - Callee:          mp_mul.72.73
+  - Callee:          mp_mul.68.69
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.91.92
+  - Caller:          fp2sqr503_mont.87.88
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11169,7 +11291,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.c, Line: 272, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpadd503.81.82
+  - Callee:          fpadd503.77.78
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -11182,7 +11304,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpadd503.83.84
+  - Callee:          fpadd503.79.80
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -11195,7 +11317,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.c, Line: 274, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpadd503.63.64
+  - Callee:          fpadd503.59.60
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -11273,7 +11395,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 19, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fp2mul503_mont.93.96.1
+  - Callee:          fp2mul503_mont.89.92.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -11429,7 +11551,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 52, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fp2sqr503_mont.85.88.1
+  - Callee:          fp2sqr503_mont.81.84.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -11481,7 +11603,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 119, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpsub503.89.90
+  - Callee:          fpsub503.85.86
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -11494,7 +11616,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 219, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fp2sqr503_mont.91.92
+  - Callee:          fp2sqr503_mont.87.88
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -11530,128 +11652,89 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 3 }
-Function:        cshake256_simple_absorb.clone
-Args:            
-  - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          cshake256_simple_absorb.clone
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 623, Column: 3 }
-Function:        cshake256_simple.32.clone
-Args:            
-  - Callee:          cshake256_simple_absorb.clone
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          cshake256_simple.32.clone
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 417, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
 Function:        cshake256_simple.32.clone
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32.clone
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
+Function:        cshake256_simple.1
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cshake256_simple.1
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sike.c, Line: 50, Column: 3 }
+Function:        sikep503_kem_enc_hw
+Args:            
+  - Callee:          cshake256_simple.32
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sike.c, Line: 54, Column: 3 }
+Function:        sikep503_kem_enc_hw
+Args:            
+  - Callee:          EphemeralKeyGeneration_A.1
+    DebugLoc:        { File: src/sidh.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/sike.c, Line: 55, Column: 3 }
-Function:        crypto_kem_enc.1
-Args:            
-  - Callee:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 63, Column: 3 }
-Function:        crypto_kem_enc.1
-Args:            
-  - Callee:          EphemeralKeyGeneration_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 84, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 69, Column: 3 }
-Function:        crypto_kem_enc.1
+Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          EphemeralSecretAgreement_A.1
     DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Caller:          sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sike.c, Line: 75, Column: 3 }
-Function:        crypto_kem_enc.1
-Args:            
-  - Callee:          cshake256_simple.32.clone
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 618, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 623, Column: 3 }
-Function:        crypto_kem_enc.1
-Args:            
-  - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 589, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 417, Column: 2 }
-Function:        crypto_kem_enc.1
-Args:            
-  - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 33, Column: 9 }
+DebugLoc:        { File: src/sike.c, Line: 56, Column: 3 }
 Function:        sikep503_kem_enc_hw
 Args:            
-  - Callee:          crypto_kem_enc.1
-    DebugLoc:        { File: src/sike.c, Line: 32, Column: 0 }
+  - Callee:          cshake256_simple.32.clone
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sikep503_kem_enc_hw
+    DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/sike.c, Line: 66, Column: 3 }
+Function:        sikep503_kem_enc_hw
+Args:            
+  - Callee:          cshake256_simple.1
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sikep503_kem_enc_hw
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }

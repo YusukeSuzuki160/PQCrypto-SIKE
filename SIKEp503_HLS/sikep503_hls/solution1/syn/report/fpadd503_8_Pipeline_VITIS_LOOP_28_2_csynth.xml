@@ -199,8 +199,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>carry_157_out</name>
-<Object>carry_157_out</Object>
+<name>carry_151_out</name>
+<Object>carry_151_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -210,8 +210,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>carry_157_out_ap_vld</name>
-<Object>carry_157_out</Object>
+<name>carry_151_out_ap_vld</name>
+<Object>carry_151_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>

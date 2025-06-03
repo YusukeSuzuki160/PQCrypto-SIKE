@@ -31,10 +31,10 @@
 
 <Node id="3" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_239 = alloca i32 1
+newFuncRoot:0 %i_241 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_239"/></StgValue>
+<StgValue><ssdm name="i_241"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -46,7 +46,7 @@ newFuncRoot:0 %i_239 = alloca i32 1
 
 <Node id="4" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:1 %store_ln62 = store i4 0, i4 %i_239
+newFuncRoot:1 %store_ln62 = store i4 0, i4 %i_241
 
 ]]></Node>
 <StgValue><ssdm name="store_ln62"/></StgValue>
@@ -76,7 +76,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i43
 
 <Node id="8" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i43:1 %i = load i4 %i_239
+for.inc.i43:1 %i = load i4 %i_241
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -250,7 +250,7 @@ for.inc.i43.split:10 %a_load = load i4 %a_addr
 
 <Node id="39" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i43.split:26 %store_ln62 = store i4 %add_ln64, i4 %i_239
+for.inc.i43.split:26 %store_ln62 = store i4 %add_ln64, i4 %i_241
 
 ]]></Node>
 <StgValue><ssdm name="store_ln62"/></StgValue>
@@ -366,7 +366,7 @@ memset.loop.i46.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i43.split:5 %specpipeline_ln62 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i43.split:5 %specpipeline_ln62 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln62"/></StgValue>
@@ -398,7 +398,7 @@ for.inc.i43.split:6 %speclooptripcount_ln62 = speclooptripcount void @_ssdm_op_S
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i43.split:7 %specloopname_ln64 = specloopname void @_ssdm_op_SpecLoopName, void @empty_43
+for.inc.i43.split:7 %specloopname_ln64 = specloopname void @_ssdm_op_SpecLoopName, void @empty_30
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln64"/></StgValue>

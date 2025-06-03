@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont_137_Pipeline_VITIS_LOOP_208_5'" level="0">
-<item name = "Date">Wed May 21 14:56:08 2025
+<item name = "Date">Tue Jun  3 12:24:28 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -70,7 +70,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="p503p1_1_U">rdc_mont_14077_Pipeline_VITIS_LOOP_187_3_p503p1_1_ROM_AUTO_1R, 0, 64, 8, 0, 8, 64, 1, 512</column>
+<column name="p503p1_1_U">rdc_mont_13982_Pipeline_VITIS_LOOP_187_3_p503p1_1_ROM_AUTO_1R, 0, 64, 8, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -80,16 +80,16 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln123_fu_396_p2">+, 0, 0, 40, 33, 33</column>
-<column name="add_ln130_31_fu_444_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln130_32_fu_444_p2">+, 0, 0, 39, 32, 32</column>
 <column name="add_ln130_fu_432_p2">+, 0, 0, 40, 33, 33</column>
 <column name="add_ln208_fu_272_p2">+, 0, 0, 13, 4, 1</column>
 <column name="add_ln210_fu_236_p2">+, 0, 0, 14, 7, 7</column>
 <column name="add_ln212_fu_494_p2">+, 0, 0, 71, 64, 64</column>
-<column name="t_fu_680_p2">+, 0, 0, 71, 64, 64</column>
+<column name="t_27_fu_680_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_19_fu_564_p2">+, 0, 0, 71, 64, 64</column>
-<column name="temp_19_fu_453_p2">+, 0, 0, 41, 34, 34</column>
+<column name="temp_22_fu_453_p2">+, 0, 0, 41, 34, 34</column>
 <column name="temp_fu_406_p2">+, 0, 0, 41, 34, 34</column>
-<column name="u_66_fu_584_p2">+, 0, 0, 71, 64, 64</column>
+<column name="u_67_fu_584_p2">+, 0, 0, 71, 64, 64</column>
 <column name="v_75_fu_522_p2">+, 0, 0, 71, 64, 64</column>
 <column name="sub_ln210_fu_261_p2">-, 0, 0, 11, 3, 3</column>
 <column name="and_ln105_fu_658_p2">and, 0, 0, 64, 64, 64</column>
@@ -102,12 +102,12 @@
 <column name="u_5_fu_619_p3">select, 0, 0, 64, 1, 64</column>
 <column name="v_5_fu_569_p3">select, 0, 0, 64, 1, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_132_fu_534_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_133_fu_546_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_134_fu_641_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_135_fu_589_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_136_fu_594_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_137_fu_605_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_134_fu_534_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_135_fu_546_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_136_fu_641_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln105_137_fu_589_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_138_fu_594_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_139_fu_605_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln105_fu_528_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln212_fu_500_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
@@ -117,8 +117,8 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_j">9, 2, 4, 8</column>
-<column name="j_5_fu_96">9, 2, 4, 8</column>
-<column name="t_25_fu_84">9, 2, 64, 128</column>
+<column name="j_6_fu_96">9, 2, 4, 8</column>
+<column name="t_fu_84">9, 2, 64, 128</column>
 <column name="u_46_fu_88">9, 2, 64, 128</column>
 <column name="v_fu_92">9, 2, 64, 128</column>
 </table>
@@ -151,15 +151,15 @@
 <column name="bl_reg_767">32, 0, 32, 0</column>
 <column name="icmp_ln208_reg_741">1, 0, 1, 0</column>
 <column name="icmp_ln209_reg_750">1, 0, 1, 0</column>
-<column name="j_5_fu_96">4, 0, 4, 0</column>
-<column name="t_25_fu_84">64, 0, 64, 0</column>
+<column name="j_6_fu_96">4, 0, 4, 0</column>
+<column name="t_fu_84">64, 0, 64, 0</column>
 <column name="tempReg_19_reg_878">64, 0, 64, 0</column>
 <column name="tempReg_19_reg_878_pp0_iter8_reg">64, 0, 64, 0</column>
-<column name="tmp_77_reg_846">2, 0, 2, 0</column>
-<column name="tmp_78_reg_831">32, 0, 32, 0</column>
-<column name="tmp_79_reg_841">32, 0, 32, 0</column>
-<column name="tmp_80_reg_867">2, 0, 2, 0</column>
-<column name="tmp_82_reg_887">1, 0, 1, 0</column>
+<column name="tmp_78_reg_846">2, 0, 2, 0</column>
+<column name="tmp_79_reg_831">32, 0, 32, 0</column>
+<column name="tmp_80_reg_841">32, 0, 32, 0</column>
+<column name="tmp_81_reg_867">2, 0, 2, 0</column>
+<column name="tmp_83_reg_887">1, 0, 1, 0</column>
 <column name="tmp_s_reg_826">32, 0, 32, 0</column>
 <column name="trunc_ln105_reg_862">32, 0, 32, 0</column>
 <column name="trunc_ln106_59_reg_811">32, 0, 32, 0</column>
@@ -174,7 +174,7 @@
 <column name="xor_ln212_reg_872">64, 0, 64, 0</column>
 <column name="icmp_ln208_reg_741">64, 32, 1, 0</column>
 <column name="icmp_ln209_reg_750">64, 32, 1, 0</column>
-<column name="tmp_79_reg_841">64, 32, 32, 0</column>
+<column name="tmp_80_reg_841">64, 32, 32, 0</column>
 <column name="trunc_ln106_reg_806">64, 32, 32, 0</column>
 <column name="trunc_ln125_reg_851">64, 32, 32, 0</column>
 <column name="xor_ln212_reg_872">64, 32, 64, 0</column>
@@ -193,24 +193,24 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_936_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_936_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_936_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_936_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_940_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_940_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_940_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_940_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_944_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_944_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_944_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_944_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_948_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_948_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_948_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
-<column name="grp_fu_948_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_910_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_910_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_910_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_910_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_914_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_914_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_914_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_914_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_918_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_918_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_918_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_918_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_922_p_din0">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_922_p_din1">out, 32, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_922_p_dout0">in, 64, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
+<column name="grp_fu_922_p_ce">out, 1, ap_ctrl_hs, rdc_mont.137_Pipeline_VITIS_LOOP_208_5, return value</column>
 <column name="indvars_iv">in, 3, ap_none, indvars_iv, scalar</column>
-<column name="v_46">in, 64, ap_none, v_46, scalar</column>
+<column name="v_56">in, 64, ap_none, v_56, scalar</column>
 <column name="u">in, 64, ap_none, u, scalar</column>
 <column name="zext_ln183">in, 7, ap_none, zext_ln183, scalar</column>
 <column name="mc_address0">out, 7, ap_memory, mc, array</column>
@@ -218,12 +218,12 @@
 <column name="mc_q0">in, 64, ap_memory, mc, array</column>
 <column name="sub66">in, 32, ap_none, sub66, scalar</column>
 <column name="empty">in, 3, ap_none, empty, scalar</column>
-<column name="v_80_out">out, 64, ap_vld, v_80_out, pointer</column>
-<column name="v_80_out_ap_vld">out, 1, ap_vld, v_80_out, pointer</column>
+<column name="v_81_out">out, 64, ap_vld, v_81_out, pointer</column>
+<column name="v_81_out_ap_vld">out, 1, ap_vld, v_81_out, pointer</column>
 <column name="u_46_out">out, 64, ap_vld, u_46_out, pointer</column>
 <column name="u_46_out_ap_vld">out, 1, ap_vld, u_46_out, pointer</column>
-<column name="t_25_out">out, 64, ap_vld, t_25_out, pointer</column>
-<column name="t_25_out_ap_vld">out, 1, ap_vld, t_25_out, pointer</column>
+<column name="t_30_out">out, 64, ap_vld, t_30_out, pointer</column>
+<column name="t_30_out_ap_vld">out, 1, ap_vld, t_30_out, pointer</column>
 </table>
 </item>
 </section>

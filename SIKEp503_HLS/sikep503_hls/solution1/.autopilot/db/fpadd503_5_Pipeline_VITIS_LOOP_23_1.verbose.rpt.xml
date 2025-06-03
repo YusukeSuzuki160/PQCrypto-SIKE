@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_5_Pipeline_VITIS_LOOP_23_1'" level="0">
-<item name = "Date">Tue May 27 14:18:04 2025
+<item name = "Date">Tue Jun  3 14:13:07 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -84,12 +84,12 @@
 <column name="and_ln24_fu_212_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_274">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln23_fu_115_p2">icmp, 0, 0, 13, 4, 5</column>
-<column name="or_ln24_8_fu_223_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln24_7_fu_223_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln24_fu_182_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln24_23_fu_178_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln24_24_fu_195_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln24_25_fu_217_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_19_fu_178_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln24_20_fu_195_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln24_21_fu_217_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln24_fu_173_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>

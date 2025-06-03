@@ -400,8 +400,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>i_22</name>
-<Object>i_22</Object>
+<name>i_24</name>
+<Object>i_24</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

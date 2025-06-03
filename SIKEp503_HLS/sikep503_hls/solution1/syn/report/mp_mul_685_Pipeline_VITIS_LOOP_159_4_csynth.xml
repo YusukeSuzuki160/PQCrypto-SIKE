@@ -400,8 +400,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>zext_ln157_11</name>
-<Object>zext_ln157_11</Object>
+<name>zext_ln157_9</name>
+<Object>zext_ln157_9</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

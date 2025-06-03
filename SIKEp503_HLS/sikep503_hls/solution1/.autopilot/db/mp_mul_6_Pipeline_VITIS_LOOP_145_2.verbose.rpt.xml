@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mp_mul_6_Pipeline_VITIS_LOOP_145_2'" level="0">
-<item name = "Date">Tue May 27 14:19:29 2025
+<item name = "Date">Tue Jun  3 14:14:32 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -80,29 +80,29 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln123_fu_340_p2">+, 0, 0, 40, 33, 33</column>
-<column name="add_ln130_87_fu_388_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln130_77_fu_388_p2">+, 0, 0, 39, 32, 32</column>
 <column name="add_ln130_fu_376_p2">+, 0, 0, 40, 33, 33</column>
 <column name="add_ln133_fu_444_p2">+, 0, 0, 71, 64, 64</column>
 <column name="add_ln145_fu_196_p2">+, 0, 0, 13, 4, 1</column>
 <column name="tempReg_fu_516_p2">+, 0, 0, 71, 64, 64</column>
-<column name="temp_40_fu_397_p2">+, 0, 0, 41, 34, 34</column>
+<column name="temp_39_fu_397_p2">+, 0, 0, 41, 34, 34</column>
 <column name="temp_fu_350_p2">+, 0, 0, 41, 34, 34</column>
 <column name="u_fu_612_p2">+, 0, 0, 13, 4, 4</column>
-<column name="v_132_fu_456_p2">+, 0, 0, 71, 64, 64</column>
+<column name="v_126_fu_456_p2">+, 0, 0, 71, 64, 64</column>
 <column name="v_fu_531_p2">+, 0, 0, 71, 64, 64</column>
 <column name="sub_ln146_fu_211_p2">-, 0, 0, 11, 3, 3</column>
 <column name="and_ln148_fu_584_p2">and, 0, 0, 64, 64, 64</column>
 <column name="icmp_ln145_fu_190_p2">icmp, 0, 0, 13, 4, 4</column>
 <column name="or_ln105_fu_474_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln148_7_fu_594_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln148_5_fu_594_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln148_fu_554_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln105_26_fu_468_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln105_27_fu_480_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln105_fu_462_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln148_15_fu_550_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln148_16_fu_567_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln148_17_fu_589_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln148_13_fu_550_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln148_14_fu_567_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln148_15_fu_589_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln148_fu_546_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -110,7 +110,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_j_22">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_j_20">9, 2, 4, 8</column>
 <column name="j_fu_84">9, 2, 4, 8</column>
 <column name="t_out_o">14, 3, 4, 12</column>
 <column name="u_74_out_o">14, 3, 64, 192</column>
@@ -147,15 +147,15 @@
 <column name="j_fu_84">4, 0, 4, 0</column>
 <column name="tempReg_reg_772">64, 0, 64, 0</column>
 <column name="tempReg_reg_772_pp0_iter7_reg">64, 0, 64, 0</column>
-<column name="temp_40_reg_757">34, 0, 34, 0</column>
-<column name="tmp_201_reg_721">32, 0, 32, 0</column>
-<column name="tmp_202_reg_741">2, 0, 2, 0</column>
-<column name="tmp_203_reg_726">32, 0, 32, 0</column>
-<column name="tmp_204_reg_736">32, 0, 32, 0</column>
-<column name="tmp_205_reg_762">2, 0, 2, 0</column>
-<column name="trunc_ln106_123_reg_706">32, 0, 32, 0</column>
-<column name="trunc_ln106_124_reg_711">32, 0, 32, 0</column>
-<column name="trunc_ln106_125_reg_716">32, 0, 32, 0</column>
+<column name="temp_39_reg_757">34, 0, 34, 0</column>
+<column name="tmp_177_reg_721">32, 0, 32, 0</column>
+<column name="tmp_178_reg_741">2, 0, 2, 0</column>
+<column name="tmp_179_reg_726">32, 0, 32, 0</column>
+<column name="tmp_180_reg_736">32, 0, 32, 0</column>
+<column name="tmp_181_reg_762">2, 0, 2, 0</column>
+<column name="trunc_ln106_111_reg_706">32, 0, 32, 0</column>
+<column name="trunc_ln106_112_reg_711">32, 0, 32, 0</column>
+<column name="trunc_ln106_113_reg_716">32, 0, 32, 0</column>
 <column name="trunc_ln106_reg_701">32, 0, 32, 0</column>
 <column name="trunc_ln106_s_reg_731">32, 0, 32, 0</column>
 <column name="trunc_ln106_s_reg_731_pp0_iter4_reg">32, 0, 32, 0</column>
@@ -165,7 +165,7 @@
 <column name="v_101_fu_80">64, 0, 64, 0</column>
 <column name="v_reg_786">64, 0, 64, 0</column>
 <column name="icmp_ln145_reg_643">64, 32, 1, 0</column>
-<column name="tmp_204_reg_736">64, 32, 32, 0</column>
+<column name="tmp_180_reg_736">64, 32, 32, 0</column>
 <column name="trunc_ln106_reg_701">64, 32, 32, 0</column>
 </table>
 </item>

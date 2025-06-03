@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1'
 ================================================================
-* Date:           Tue May 27 14:14:17 2025
+* Date:           Tue Jun  3 14:09:22 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -94,14 +94,14 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 4.84>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/sidh.c:38->src/sidh.c:156]   --->   Operation 13 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_8, i32 0, i32 0, void @empty_60, i32 0, i32 402, void @empty_44, void @empty_72, void @empty_60, i32 16, i32 16, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%PublicKeyA_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %PublicKeyA"   --->   Operation 15 'read' 'PublicKeyA_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (1.58ns)   --->   "%store_ln38 = store i6 0, i6 %i" [src/sidh.c:38->src/sidh.c:156]   --->   Operation 16 'store' 'store_ln38' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i405"   --->   Operation 17 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%i_294 = load i6 %i" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 18 'load' 'i_294' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (1.82ns)   --->   "%icmp_ln42 = icmp_eq  i6 %i_294, i6 63" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 19 'icmp' 'icmp_ln42' <Predicate = true> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%i_292 = load i6 %i" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 18 'load' 'i_292' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.82ns)   --->   "%icmp_ln42 = icmp_eq  i6 %i_292, i6 63" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 19 'icmp' 'icmp_ln42' <Predicate = true> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln42 = br i1 %icmp_ln42, void %for.inc.i405.split, void %fp2_encode.exit.exitStub" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 20 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%lshr_ln44 = partselect i3 @_ssdm_op_PartSelect.i3.i6.i32.i32, i6 %i_294, i32 3, i32 5" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 21 'partselect' 'lshr_ln44' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%lshr_ln44 = partselect i3 @_ssdm_op_PartSelect.i3.i6.i32.i32, i6 %i_292, i32 3, i32 5" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 21 'partselect' 'lshr_ln44' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln44 = zext i3 %lshr_ln44" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 22 'zext' 'zext_ln44' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%t_i_addr = getelementptr i64 %t_i, i64 0, i64 %zext_ln44" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 23 'getelementptr' 't_i_addr' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 ST_1 : Operation 24 [2/2] (3.25ns)   --->   "%t_i_load = load i4 %t_i_addr" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 24 'load' 't_i_load' <Predicate = (!icmp_ln42)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
@@ -111,21 +111,21 @@ ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%t_i_addr_2 = getelementptr i64 %t_
 ST_1 : Operation 28 [2/2] (3.25ns)   --->   "%t_i_load_2 = load i4 %t_i_addr_2" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 28 'load' 't_i_load_2' <Predicate = (!icmp_ln42)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 
 State 2 <SV = 1> <Delay = 5.39>
-ST_2 : Operation 29 [1/1] (1.82ns)   --->   "%add_ln42 = add i6 %i_294, i6 1" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 29 'add' 'add_ln42' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln42 = zext i6 %i_294" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 30 'zext' 'zext_ln42' <Predicate = (!icmp_ln42)> <Delay = 0.00>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln42_2 = zext i6 %i_294" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 31 'zext' 'zext_ln42_2' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (1.82ns)   --->   "%add_ln42 = add i6 %i_292, i6 1" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 29 'add' 'add_ln42' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln42 = zext i6 %i_292" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 30 'zext' 'zext_ln42' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln42_1 = zext i6 %i_292" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 31 'zext' 'zext_ln42_1' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 ST_2 : Operation 32 [1/2] ( I:3.25ns O:3.25ns )   --->   "%t_i_load = load i4 %t_i_addr" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 32 'load' 't_i_load' <Predicate = (!icmp_ln42)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 33 [1/1] (3.52ns)   --->   "%add_ln44 = add i64 %zext_ln42, i64 %PublicKeyA_read" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 33 'add' 'add_ln44' <Predicate = (!icmp_ln42)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i8 %gmem, i64 %add_ln44" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 34 'getelementptr' 'gmem_addr' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 ST_2 : Operation 35 [1/2] ( I:3.25ns O:3.25ns )   --->   "%t_i_load_2 = load i4 %t_i_addr_2" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 35 'load' 't_i_load_2' <Predicate = (!icmp_ln42)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 36 [1/1] (1.87ns)   --->   "%add_ln45 = add i7 %zext_ln42_2, i7 63" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 36 'add' 'add_ln45' <Predicate = (!icmp_ln42)> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (1.87ns)   --->   "%add_ln45 = add i7 %zext_ln42_1, i7 63" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 36 'add' 'add_ln45' <Predicate = (!icmp_ln42)> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln45_2 = zext i7 %add_ln45" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 37 'zext' 'zext_ln45_2' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 ST_2 : Operation 38 [1/1] (3.52ns)   --->   "%add_ln45_1 = add i64 %zext_ln45_2, i64 %PublicKeyA_read" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 38 'add' 'add_ln45_1' <Predicate = (!icmp_ln42)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%gmem_addr_6 = getelementptr i8 %gmem, i64 %add_ln45_1" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 39 'getelementptr' 'gmem_addr_6' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%gmem_addr_5 = getelementptr i8 %gmem, i64 %add_ln45_1" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 39 'getelementptr' 'gmem_addr_5' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 ST_2 : Operation 40 [1/1] (1.58ns)   --->   "%store_ln38 = store i6 %add_ln42, i6 %i" [src/sidh.c:38->src/sidh.c:156]   --->   Operation 40 'store' 'store_ln38' <Predicate = (!icmp_ln42)> <Delay = 1.58>
 
 State 3 <SV = 2> <Delay = 7.30>
-ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%shl_ln44 = shl i6 %i_294, i6 3" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 41 'shl' 'shl_ln44' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%shl_ln44 = shl i6 %i_292, i6 3" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 41 'shl' 'shl_ln44' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln44_2 = zext i6 %shl_ln44" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 42 'zext' 'zext_ln44_2' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 43 [1/1] (4.59ns)   --->   "%lshr_ln44_2 = lshr i64 %t_i_load, i64 %zext_ln44_2" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 43 'lshr' 'lshr_ln44_2' <Predicate = true> <Delay = 4.59> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.59> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%trunc_ln44 = trunc i64 %lshr_ln44_2" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 44 'trunc' 'trunc_ln44' <Predicate = true> <Delay = 0.00>
@@ -135,34 +135,34 @@ State 4 <SV = 3> <Delay = 7.30>
 ST_4 : Operation 46 [1/1] (7.30ns)   --->   "%write_ln44 = write void @_ssdm_op_Write.m_axi.i8P1A, i8 %gmem_addr, i8 %trunc_ln44, i1 1" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 46 'write' 'write_ln44' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_4 : Operation 47 [1/1] (4.59ns)   --->   "%lshr_ln45 = lshr i64 %t_i_load_2, i64 %zext_ln44_2" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 47 'lshr' 'lshr_ln45' <Predicate = true> <Delay = 4.59> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.59> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln45 = trunc i64 %lshr_ln45" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 48 'trunc' 'trunc_ln45' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 49 [1/1] (7.30ns)   --->   "%gmem_addr_6_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i8P1A, i8 %gmem_addr_6, i64 1" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 49 'writereq' 'gmem_addr_6_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 49 [1/1] (7.30ns)   --->   "%gmem_addr_5_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i8P1A, i8 %gmem_addr_5, i64 1" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 49 'writereq' 'gmem_addr_5_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 5 <SV = 4> <Delay = 7.30>
 ST_5 : Operation 50 [5/5] (7.30ns)   --->   "%gmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 50 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_5 : Operation 51 [1/1] (7.30ns)   --->   "%write_ln45 = write void @_ssdm_op_Write.m_axi.i8P1A, i8 %gmem_addr_6, i8 %trunc_ln45, i1 1" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 51 'write' 'write_ln45' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 51 [1/1] (7.30ns)   --->   "%write_ln45 = write void @_ssdm_op_Write.m_axi.i8P1A, i8 %gmem_addr_5, i8 %trunc_ln45, i1 1" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 51 'write' 'write_ln45' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 6 <SV = 5> <Delay = 7.30>
 ST_6 : Operation 52 [4/5] (7.30ns)   --->   "%gmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 52 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_6 : Operation 53 [5/5] (7.30ns)   --->   "%gmem_addr_6_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_6" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 53 'writeresp' 'gmem_addr_6_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 53 [5/5] (7.30ns)   --->   "%gmem_addr_5_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_5" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 53 'writeresp' 'gmem_addr_5_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 7 <SV = 6> <Delay = 7.30>
 ST_7 : Operation 54 [3/5] (7.30ns)   --->   "%gmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 54 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_7 : Operation 55 [4/5] (7.30ns)   --->   "%gmem_addr_6_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_6" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 55 'writeresp' 'gmem_addr_6_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 55 [4/5] (7.30ns)   --->   "%gmem_addr_5_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_5" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 55 'writeresp' 'gmem_addr_5_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 8 <SV = 7> <Delay = 7.30>
 ST_8 : Operation 56 [2/5] (7.30ns)   --->   "%gmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 56 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_8 : Operation 57 [3/5] (7.30ns)   --->   "%gmem_addr_6_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_6" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 57 'writeresp' 'gmem_addr_6_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 57 [3/5] (7.30ns)   --->   "%gmem_addr_5_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_5" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 57 'writeresp' 'gmem_addr_5_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_8 : Operation 65 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 65 'ret' 'ret_ln0' <Predicate = (icmp_ln42)> <Delay = 1.58>
 
 State 9 <SV = 8> <Delay = 7.30>
 ST_9 : Operation 58 [1/5] (7.30ns)   --->   "%gmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr" [src/sidh.c:44->src/sidh.c:156]   --->   Operation 58 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_9 : Operation 59 [2/5] (7.30ns)   --->   "%gmem_addr_6_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_6" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 59 'writeresp' 'gmem_addr_6_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 59 [2/5] (7.30ns)   --->   "%gmem_addr_5_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_5" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 59 'writeresp' 'gmem_addr_5_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 10 <SV = 9> <Delay = 7.30>
-ST_10 : Operation 60 [1/1] (0.00ns)   --->   "%specpipeline_ln38 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/sidh.c:38->src/sidh.c:156]   --->   Operation 60 'specpipeline' 'specpipeline_ln38' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 60 [1/1] (0.00ns)   --->   "%specpipeline_ln38 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/sidh.c:38->src/sidh.c:156]   --->   Operation 60 'specpipeline' 'specpipeline_ln38' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%speclooptripcount_ln38 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 63, i64 63, i64 63" [src/sidh.c:38->src/sidh.c:156]   --->   Operation 61 'speclooptripcount' 'speclooptripcount_ln38' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%specloopname_ln42 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 62 'specloopname' 'specloopname_ln42' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 63 [1/5] (7.30ns)   --->   "%gmem_addr_6_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_6" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 63 'writeresp' 'gmem_addr_6_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%specloopname_ln42 = specloopname void @_ssdm_op_SpecLoopName, void @empty_54" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 62 'specloopname' 'specloopname_ln42' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 63 [1/5] (7.30ns)   --->   "%gmem_addr_5_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %gmem_addr_5" [src/sidh.c:45->src/sidh.c:156]   --->   Operation 63 'writeresp' 'gmem_addr_5_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_10 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln42 = br void %for.inc.i405" [src/sidh.c:42->src/sidh.c:156]   --->   Operation 64 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
 
 
@@ -191,7 +191,7 @@ specinterface_ln0      (specinterface    ) [ 00000000000]
 PublicKeyA_read        (read             ) [ 00100000000]
 store_ln38             (store            ) [ 00000000000]
 br_ln0                 (br               ) [ 00000000000]
-i_294                  (load             ) [ 01110000000]
+i_292                  (load             ) [ 01110000000]
 icmp_ln42              (icmp             ) [ 01111111100]
 br_ln42                (br               ) [ 00000000000]
 lshr_ln44              (partselect       ) [ 00000000000]
@@ -202,7 +202,7 @@ zext_ln45              (zext             ) [ 00000000000]
 t_i_addr_2             (getelementptr    ) [ 00100000000]
 add_ln42               (add              ) [ 00000000000]
 zext_ln42              (zext             ) [ 00000000000]
-zext_ln42_2            (zext             ) [ 00000000000]
+zext_ln42_1            (zext             ) [ 00000000000]
 t_i_load               (load             ) [ 01010000000]
 add_ln44               (add              ) [ 00000000000]
 gmem_addr              (getelementptr    ) [ 01111111110]
@@ -210,7 +210,7 @@ t_i_load_2             (load             ) [ 01111000000]
 add_ln45               (add              ) [ 00000000000]
 zext_ln45_2            (zext             ) [ 00000000000]
 add_ln45_1             (add              ) [ 00000000000]
-gmem_addr_6            (getelementptr    ) [ 01111111111]
+gmem_addr_5            (getelementptr    ) [ 01111111111]
 store_ln38             (store            ) [ 00000000000]
 shl_ln44               (shl              ) [ 00000000000]
 zext_ln44_2            (zext             ) [ 00101000000]
@@ -220,13 +220,13 @@ gmem_addr_req          (writereq         ) [ 00000000000]
 write_ln44             (write            ) [ 00000000000]
 lshr_ln45              (lshr             ) [ 00000000000]
 trunc_ln45             (trunc            ) [ 01000100000]
-gmem_addr_6_req        (writereq         ) [ 00000000000]
+gmem_addr_5_req        (writereq         ) [ 00000000000]
 write_ln45             (write            ) [ 00000000000]
 gmem_addr_resp         (writeresp        ) [ 00000000000]
 specpipeline_ln38      (specpipeline     ) [ 00000000000]
 speclooptripcount_ln38 (speclooptripcount) [ 00000000000]
 specloopname_ln42      (specloopname     ) [ 00000000000]
-gmem_addr_6_resp       (writeresp        ) [ 00000000000]
+gmem_addr_5_resp       (writeresp        ) [ 00000000000]
 br_ln42                (br               ) [ 00000000000]
 ret_ln0                (ret              ) [ 00000000000]
 </LifeTime>
@@ -286,7 +286,7 @@ ret_ln0                (ret              ) [ 00000000000]
 <pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_86"/></StgValue>
+<StgValue><ssdm name="empty_8"/></StgValue>
 </bind>
 </comp>
 
@@ -304,7 +304,7 @@ ret_ln0                (ret              ) [ 00000000000]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -322,7 +322,7 @@ ret_ln0                (ret              ) [ 00000000000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_58"/></StgValue>
+<StgValue><ssdm name="empty_44"/></StgValue>
 </bind>
 </comp>
 
@@ -331,7 +331,7 @@ ret_ln0                (ret              ) [ 00000000000]
 <pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_72"/></StgValue>
 </bind>
 </comp>
 
@@ -538,7 +538,7 @@ ret_ln0                (ret              ) [ 00000000000]
 <pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_54"/></StgValue>
 </bind>
 </comp>
 
@@ -601,7 +601,7 @@ ret_ln0                (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="writereq(1155) writeresp(1158) " fcode="writeresp"/>
-<opset="gmem_addr_6_req/4 gmem_addr_6_resp/6 "/>
+<opset="gmem_addr_5_req/4 gmem_addr_5_resp/6 "/>
 </bind>
 </comp>
 
@@ -674,14 +674,14 @@ ret_ln0                (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="140" class="1004" name="i_294_load_fu_140">
+<comp id="140" class="1004" name="i_292_load_fu_140">
 <pin_list>
 <pin id="141" dir="0" index="0" bw="6" slack="0"/>
 <pin id="142" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="i_294/1 "/>
+<opset="i_292/1 "/>
 </bind>
 </comp>
 
@@ -769,14 +769,14 @@ ret_ln0                (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="185" class="1004" name="zext_ln42_2_fu_185">
+<comp id="185" class="1004" name="zext_ln42_1_fu_185">
 <pin_list>
 <pin id="186" dir="0" index="0" bw="6" slack="1"/>
 <pin id="187" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln42_2/2 "/>
+<opset="zext_ln42_1/2 "/>
 </bind>
 </comp>
 
@@ -839,7 +839,7 @@ ret_ln0                (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="214" class="1004" name="gmem_addr_6_fu_214">
+<comp id="214" class="1004" name="gmem_addr_5_fu_214">
 <pin_list>
 <pin id="215" dir="0" index="0" bw="8" slack="0"/>
 <pin id="216" dir="0" index="1" bw="64" slack="0"/>
@@ -847,7 +847,7 @@ ret_ln0                (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="gmem_addr_6/2 "/>
+<opset="gmem_addr_5/2 "/>
 </bind>
 </comp>
 
@@ -952,13 +952,13 @@ ret_ln0                (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="264" class="1005" name="i_294_reg_264">
+<comp id="264" class="1005" name="i_292_reg_264">
 <pin_list>
 <pin id="265" dir="0" index="0" bw="6" slack="1"/>
 <pin id="266" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
-<opset="i_294 "/>
+<opset="i_292 "/>
 </bind>
 </comp>
 
@@ -1022,13 +1022,13 @@ ret_ln0                (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="302" class="1005" name="gmem_addr_6_reg_302">
+<comp id="302" class="1005" name="gmem_addr_5_reg_302">
 <pin_list>
 <pin id="303" dir="0" index="0" bw="8" slack="2"/>
 <pin id="304" dir="1" index="1" bw="8" slack="2"/>
 </pin_list>
 <bind>
-<opset="gmem_addr_6 "/>
+<opset="gmem_addr_5 "/>
 </bind>
 </comp>
 
@@ -1243,7 +1243,7 @@ ret_ln0                (ret              ) [ 00000000000]
   - Chain level:
 	State 1
 		store_ln38 : 1
-		i_294 : 1
+		i_292 : 1
 		icmp_ln42 : 2
 		br_ln42 : 3
 		lshr_ln44 : 2
@@ -1260,7 +1260,7 @@ ret_ln0                (ret              ) [ 00000000000]
 		add_ln45 : 1
 		zext_ln45_2 : 2
 		add_ln45_1 : 3
-		gmem_addr_6 : 4
+		gmem_addr_5 : 4
 		store_ln38 : 1
 	State 3
 		lshr_ln44_2 : 1
@@ -1306,7 +1306,7 @@ ret_ln0                (ret              ) [ 00000000000]
 |          |      zext_ln44_fu_159      |    0    |    0    |
 |          |      zext_ln45_fu_172      |    0    |    0    |
 |   zext   |      zext_ln42_fu_182      |    0    |    0    |
-|          |     zext_ln42_2_fu_185     |    0    |    0    |
+|          |     zext_ln42_1_fu_185     |    0    |    0    |
 |          |     zext_ln45_2_fu_205     |    0    |    0    |
 |          |     zext_ln44_2_fu_230     |    0    |    0    |
 |----------|----------------------------|---------|---------|
@@ -1328,9 +1328,9 @@ N/A
 |                       |   FF   |
 +-----------------------+--------+
 |PublicKeyA_read_reg_258|   64   |
-|  gmem_addr_6_reg_302  |    8   |
+|  gmem_addr_5_reg_302  |    8   |
 |   gmem_addr_reg_291   |    8   |
-|     i_294_reg_264     |    6   |
+|     i_292_reg_264     |    6   |
 |       i_reg_251       |    6   |
 |   icmp_ln42_reg_272   |    1   |
 |   t_i_addr_2_reg_281  |    4   |

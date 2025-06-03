@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_1_Pipeline_VITIS_LOOP_14_1223'" level="0">
-<item name = "Date">Tue May 27 13:50:59 2025
+<item name = "Date">Tue Jun  3 12:25:20 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -53,7 +53,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 36, -</column>
-<column name="Register">-, -, 11, -, -</column>
+<column name="Register">-, -, 10, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -97,7 +97,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="i_271_fu_36">4, 0, 4, 0</column>
-<column name="i_reg_124">4, 0, 4, 0</column>
+<column name="trunc_ln15_reg_139">3, 0, 3, 0</column>
 </table>
 </item>
 </section>
@@ -117,9 +117,9 @@
 <column name="R0_X_ce0">out, 1, ap_memory, R0_X, array</column>
 <column name="R0_X_we0">out, 1, ap_memory, R0_X, array</column>
 <column name="R0_X_d0">out, 64, ap_memory, R0_X, array</column>
-<column name="PKB_address0">out, 6, ap_memory, PKB, array</column>
-<column name="PKB_ce0">out, 1, ap_memory, PKB, array</column>
-<column name="PKB_q0">in, 64, ap_memory, PKB, array</column>
+<column name="PKB_i_address0">out, 6, ap_memory, PKB_i, array</column>
+<column name="PKB_i_ce0">out, 1, ap_memory, PKB_i, array</column>
+<column name="PKB_i_q0">in, 64, ap_memory, PKB_i, array</column>
 </table>
 </item>
 </section>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_5_Pipeline_VITIS_LOOP_23_1'
 ================================================================
-* Date:           Tue May 27 14:12:19 2025
+* Date:           Tue Jun  3 14:07:27 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -111,26 +111,26 @@ ST_2 : Operation 25 [1/2] ( I:3.25ns O:3.25ns )   --->   "%R_Z_load = load i4 %R
 ST_2 : Operation 47 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (icmp_ln23)> <Delay = 1.58>
 
 State 3 <SV = 2> <Delay = 6.77>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:20]   --->   Operation 26 'specpipeline' 'specpipeline_ln20' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:20]   --->   Operation 26 'specpipeline' 'specpipeline_ln20' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.c:20]   --->   Operation 27 'speclooptripcount' 'speclooptripcount_ln20' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_42" [src/generic/fp_generic.c:23]   --->   Operation 28 'specloopname' 'specloopname_ln23' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_82" [src/generic/fp_generic.c:23]   --->   Operation 28 'specloopname' 'specloopname_ln23' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (3.52ns)   --->   "%add_ln24 = add i64 %R_Z_load, i64 %tempReg" [src/generic/fp_generic.c:24]   --->   Operation 29 'add' 'add_ln24' <Predicate = (!icmp_ln23)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln24_12 = zext i3 %trunc_ln24" [src/generic/fp_generic.c:24]   --->   Operation 30 'zext' 'zext_ln24_12' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln24_s = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i1.i5, i1 1, i5 %zext_ln24_12" [src/generic/fp_generic.c:24]   --->   Operation 31 'bitconcatenate' 'zext_ln24_s' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln24_13 = zext i6 %zext_ln24_s" [src/generic/fp_generic.c:24]   --->   Operation 32 'zext' 'zext_ln24_13' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%coeff_addr = getelementptr i64 %coeff, i64 0, i64 %zext_ln24_13" [src/generic/fp_generic.c:24]   --->   Operation 33 'getelementptr' 'coeff_addr' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln24 = store void @_ssdm_op_Write.bram.i64, i6 %coeff_addr, i64 %add_ln24, i8 255" [src/generic/fp_generic.c:24]   --->   Operation 34 'store' 'store_ln24' <Predicate = (!icmp_ln23)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 48> <RAM>
-ST_3 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node xor_ln24_25)   --->   "%xor_ln24 = xor i64 %add_ln24, i64 %tempReg" [src/generic/fp_generic.c:24]   --->   Operation 35 'xor' 'xor_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node xor_ln24_25)   --->   "%xor_ln24_23 = xor i64 %R_Z_load, i64 %tempReg" [src/generic/fp_generic.c:24]   --->   Operation 36 'xor' 'xor_ln24_23' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node xor_ln24_25)   --->   "%or_ln24 = or i64 %xor_ln24, i64 %xor_ln24_23" [src/generic/fp_generic.c:24]   --->   Operation 37 'or' 'or_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_8)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg, i64 63" [src/generic/fp_generic.c:24]   --->   Operation 38 'bitselect' 'bit_sel' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_8)   --->   "%xor_ln24_24 = xor i1 %bit_sel, i1 1" [src/generic/fp_generic.c:24]   --->   Operation 39 'xor' 'xor_ln24_24' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_8)   --->   "%trunc_ln24_4 = trunc i64 %tempReg" [src/generic/fp_generic.c:24]   --->   Operation 40 'trunc' 'trunc_ln24_4' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_8)   --->   "%xor_ln24_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln24_24, i63 %trunc_ln24_4" [src/generic/fp_generic.c:24]   --->   Operation 41 'bitconcatenate' 'xor_ln24_s' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_8)   --->   "%and_ln24 = and i64 %R_X_load, i64 %xor_ln24_s" [src/generic/fp_generic.c:24]   --->   Operation 42 'and' 'and_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 43 [1/1] (0.99ns) (out node of the LUT)   --->   "%xor_ln24_25 = xor i64 %or_ln24, i64 %add_ln24" [src/generic/fp_generic.c:24]   --->   Operation 43 'xor' 'xor_ln24_25' <Predicate = (!icmp_ln23)> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 44 [1/1] (0.99ns) (out node of the LUT)   --->   "%or_ln24_8 = or i64 %xor_ln24_25, i64 %and_ln24" [src/generic/fp_generic.c:24]   --->   Operation 44 'or' 'or_ln24_8' <Predicate = (!icmp_ln23)> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln24_8, i32 63" [src/generic/fp_generic.c:23]   --->   Operation 45 'bitselect' 'tmp' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node xor_ln24_21)   --->   "%xor_ln24 = xor i64 %add_ln24, i64 %tempReg" [src/generic/fp_generic.c:24]   --->   Operation 35 'xor' 'xor_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node xor_ln24_21)   --->   "%xor_ln24_19 = xor i64 %R_Z_load, i64 %tempReg" [src/generic/fp_generic.c:24]   --->   Operation 36 'xor' 'xor_ln24_19' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node xor_ln24_21)   --->   "%or_ln24 = or i64 %xor_ln24, i64 %xor_ln24_19" [src/generic/fp_generic.c:24]   --->   Operation 37 'or' 'or_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_7)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg, i64 63" [src/generic/fp_generic.c:24]   --->   Operation 38 'bitselect' 'bit_sel' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_7)   --->   "%xor_ln24_20 = xor i1 %bit_sel, i1 1" [src/generic/fp_generic.c:24]   --->   Operation 39 'xor' 'xor_ln24_20' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_7)   --->   "%trunc_ln24_4 = trunc i64 %tempReg" [src/generic/fp_generic.c:24]   --->   Operation 40 'trunc' 'trunc_ln24_4' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_7)   --->   "%xor_ln24_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln24_20, i63 %trunc_ln24_4" [src/generic/fp_generic.c:24]   --->   Operation 41 'bitconcatenate' 'xor_ln24_s' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node or_ln24_7)   --->   "%and_ln24 = and i64 %R_X_load, i64 %xor_ln24_s" [src/generic/fp_generic.c:24]   --->   Operation 42 'and' 'and_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (0.99ns) (out node of the LUT)   --->   "%xor_ln24_21 = xor i64 %or_ln24, i64 %add_ln24" [src/generic/fp_generic.c:24]   --->   Operation 43 'xor' 'xor_ln24_21' <Predicate = (!icmp_ln23)> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.99ns) (out node of the LUT)   --->   "%or_ln24_7 = or i64 %xor_ln24_21, i64 %and_ln24" [src/generic/fp_generic.c:24]   --->   Operation 44 'or' 'or_ln24_7' <Predicate = (!icmp_ln23)> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln24_7, i32 63" [src/generic/fp_generic.c:23]   --->   Operation 45 'bitselect' 'tmp' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln23 = br void %for.inc" [src/generic/fp_generic.c:23]   --->   Operation 46 'br' 'br_ln23' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 
 
@@ -182,15 +182,15 @@ zext_ln24_13               (zext                  ) [ 0000]
 coeff_addr                 (getelementptr         ) [ 0000]
 store_ln24                 (store                 ) [ 0000]
 xor_ln24                   (xor                   ) [ 0000]
-xor_ln24_23                (xor                   ) [ 0000]
+xor_ln24_19                (xor                   ) [ 0000]
 or_ln24                    (or                    ) [ 0000]
 bit_sel                    (bitselect             ) [ 0000]
-xor_ln24_24                (xor                   ) [ 0000]
+xor_ln24_20                (xor                   ) [ 0000]
 trunc_ln24_4               (trunc                 ) [ 0000]
 xor_ln24_s                 (bitconcatenate        ) [ 0000]
 and_ln24                   (and                   ) [ 0000]
-xor_ln24_25                (xor                   ) [ 0000]
-or_ln24_8                  (or                    ) [ 0000]
+xor_ln24_21                (xor                   ) [ 0000]
+or_ln24_7                  (or                    ) [ 0000]
 tmp                        (bitselect             ) [ 0111]
 br_ln23                    (br                    ) [ 0111]
 ret_ln0                    (ret                   ) [ 0000]
@@ -324,7 +324,7 @@ ret_ln0                    (ret                   ) [ 0000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -360,7 +360,7 @@ ret_ln0                    (ret                   ) [ 0000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_42"/></StgValue>
+<StgValue><ssdm name="empty_82"/></StgValue>
 </bind>
 </comp>
 
@@ -721,7 +721,7 @@ ret_ln0                    (ret                   ) [ 0000]
 </bind>
 </comp>
 
-<comp id="178" class="1004" name="xor_ln24_23_fu_178">
+<comp id="178" class="1004" name="xor_ln24_19_fu_178">
 <pin_list>
 <pin id="179" dir="0" index="0" bw="64" slack="1"/>
 <pin id="180" dir="0" index="1" bw="64" slack="1"/>
@@ -729,7 +729,7 @@ ret_ln0                    (ret                   ) [ 0000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln24_23/3 "/>
+<opset="xor_ln24_19/3 "/>
 </bind>
 </comp>
 
@@ -758,7 +758,7 @@ ret_ln0                    (ret                   ) [ 0000]
 </bind>
 </comp>
 
-<comp id="195" class="1004" name="xor_ln24_24_fu_195">
+<comp id="195" class="1004" name="xor_ln24_20_fu_195">
 <pin_list>
 <pin id="196" dir="0" index="0" bw="1" slack="0"/>
 <pin id="197" dir="0" index="1" bw="1" slack="0"/>
@@ -766,7 +766,7 @@ ret_ln0                    (ret                   ) [ 0000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln24_24/3 "/>
+<opset="xor_ln24_20/3 "/>
 </bind>
 </comp>
 
@@ -806,7 +806,7 @@ ret_ln0                    (ret                   ) [ 0000]
 </bind>
 </comp>
 
-<comp id="217" class="1004" name="xor_ln24_25_fu_217">
+<comp id="217" class="1004" name="xor_ln24_21_fu_217">
 <pin_list>
 <pin id="218" dir="0" index="0" bw="64" slack="0"/>
 <pin id="219" dir="0" index="1" bw="64" slack="0"/>
@@ -814,11 +814,11 @@ ret_ln0                    (ret                   ) [ 0000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln24_25/3 "/>
+<opset="xor_ln24_21/3 "/>
 </bind>
 </comp>
 
-<comp id="223" class="1004" name="or_ln24_8_fu_223">
+<comp id="223" class="1004" name="or_ln24_7_fu_223">
 <pin_list>
 <pin id="224" dir="0" index="0" bw="64" slack="0"/>
 <pin id="225" dir="0" index="1" bw="64" slack="0"/>
@@ -826,7 +826,7 @@ ret_ln0                    (ret                   ) [ 0000]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln24_8/3 "/>
+<opset="or_ln24_7/3 "/>
 </bind>
 </comp>
 
@@ -1115,11 +1115,11 @@ ret_ln0                    (ret                   ) [ 0000]
 		store_ln24 : 4
 		xor_ln24 : 1
 		or_ln24 : 1
-		xor_ln24_24 : 1
+		xor_ln24_20 : 1
 		xor_ln24_s : 1
 		and_ln24 : 2
-		xor_ln24_25 : 1
-		or_ln24_8 : 2
+		xor_ln24_21 : 1
+		or_ln24_7 : 2
 		tmp : 2
 
 
@@ -1132,16 +1132,16 @@ ret_ln0                    (ret                   ) [ 0000]
 | Operation|   Functional Unit   |    FF   |   LUT   |
 |----------|---------------------|---------|---------|
 |          |   xor_ln24_fu_173   |    0    |    64   |
-|    xor   |  xor_ln24_23_fu_178 |    0    |    64   |
-|          |  xor_ln24_24_fu_195 |    0    |    2    |
-|          |  xor_ln24_25_fu_217 |    0    |    64   |
+|    xor   |  xor_ln24_19_fu_178 |    0    |    64   |
+|          |  xor_ln24_20_fu_195 |    0    |    2    |
+|          |  xor_ln24_21_fu_217 |    0    |    64   |
 |----------|---------------------|---------|---------|
 |          |   add_ln23_fu_121   |    0    |    13   |
 |    add   |    tempReg_fu_146   |    0    |    71   |
 |          |   add_ln24_fu_152   |    0    |    71   |
 |----------|---------------------|---------|---------|
 |    or    |    or_ln24_fu_182   |    0    |    64   |
-|          |   or_ln24_8_fu_223  |    0    |    64   |
+|          |   or_ln24_7_fu_223  |    0    |    64   |
 |----------|---------------------|---------|---------|
 |    and   |   and_ln24_fu_212   |    0    |    64   |
 |----------|---------------------|---------|---------|

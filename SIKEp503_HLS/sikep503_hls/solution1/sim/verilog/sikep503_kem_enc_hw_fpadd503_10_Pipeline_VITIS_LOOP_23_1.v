@@ -71,13 +71,13 @@ reg   [63:0] tempReg_reg_278;
 reg   [63:0] PKB_load_6_reg_287;
 wire    ap_block_pp0_stage0_subdone;
 wire    ap_loop_init;
-wire   [63:0] zext_ln24_39_fu_137_p1;
+wire   [63:0] zext_ln24_41_fu_137_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln24_40_fu_146_p1;
+wire   [63:0] zext_ln24_42_fu_146_p1;
 wire   [63:0] zext_ln24_fu_173_p1;
 reg   [3:0] i_fu_48;
 wire   [3:0] add_ln23_fu_115_p2;
-reg   [3:0] ap_sig_allocacmp_i_233;
+reg   [3:0] ap_sig_allocacmp_i_240;
 reg    PKB_ce1_local;
 reg    PKB_ce0_local;
 reg    c_we0_local;
@@ -87,7 +87,7 @@ wire   [2:0] trunc_ln24_10_fu_125_p1;
 wire  signed [3:0] zext_ln24_s_fu_129_p3;
 wire  signed [4:0] sext_ln24_fu_142_p1;
 wire    ap_block_pp0_stage1;
-wire   [63:0] zext_ln24_15_fu_156_p1;
+wire   [63:0] zext_ln24_17_fu_156_p1;
 wire   [3:0] add_ln_fu_166_p3;
 wire   [63:0] xor_ln24_fu_183_p2;
 wire   [63:0] xor_ln24_40_fu_188_p2;
@@ -291,9 +291,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_233 = 4'd0;
+        ap_sig_allocacmp_i_240 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_233 = i_fu_48;
+        ap_sig_allocacmp_i_240 = i_fu_48;
     end
 end
 
@@ -335,15 +335,15 @@ always @ (*) begin
     endcase
 end
 
-assign PKB_address0 = zext_ln24_40_fu_146_p1;
+assign PKB_address0 = zext_ln24_42_fu_146_p1;
 
-assign PKB_address1 = zext_ln24_39_fu_137_p1;
+assign PKB_address1 = zext_ln24_41_fu_137_p1;
 
 assign PKB_ce0 = PKB_ce0_local;
 
 assign PKB_ce1 = PKB_ce1_local;
 
-assign add_ln23_fu_115_p2 = (ap_sig_allocacmp_i_233 + 4'd1);
+assign add_ln23_fu_115_p2 = (ap_sig_allocacmp_i_240 + 4'd1);
 
 assign add_ln24_fu_178_p2 = (PKB_load_6_reg_287 + tempReg_reg_278);
 
@@ -389,7 +389,7 @@ assign c_d0 = add_ln24_fu_178_p2;
 
 assign c_we0 = c_we0_local;
 
-assign icmp_ln23_fu_109_p2 = ((ap_sig_allocacmp_i_233 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln23_fu_109_p2 = ((ap_sig_allocacmp_i_240 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln24_14_fu_233_p2 = (xor_ln24_42_fu_227_p2 | and_ln24_fu_222_p2);
 
@@ -397,13 +397,13 @@ assign or_ln24_fu_192_p2 = (xor_ln24_fu_183_p2 | xor_ln24_40_fu_188_p2);
 
 assign sext_ln24_fu_142_p1 = zext_ln24_s_fu_129_p3;
 
-assign tempReg_fu_160_p2 = (PKB_q1 + zext_ln24_15_fu_156_p1);
+assign tempReg_fu_160_p2 = (PKB_q1 + zext_ln24_17_fu_156_p1);
 
-assign trunc_ln24_10_fu_125_p1 = ap_sig_allocacmp_i_233[2:0];
+assign trunc_ln24_10_fu_125_p1 = ap_sig_allocacmp_i_240[2:0];
 
 assign trunc_ln24_11_fu_211_p1 = tempReg_reg_278[62:0];
 
-assign trunc_ln24_fu_121_p1 = ap_sig_allocacmp_i_233[2:0];
+assign trunc_ln24_fu_121_p1 = ap_sig_allocacmp_i_240[2:0];
 
 assign xor_ln24_40_fu_188_p2 = (tempReg_reg_278 ^ PKB_load_6_reg_287);
 
@@ -415,11 +415,11 @@ assign xor_ln24_fu_183_p2 = (tempReg_reg_278 ^ add_ln24_fu_178_p2);
 
 assign xor_ln24_s_fu_214_p3 = {{xor_ln24_55_fu_205_p2}, {trunc_ln24_11_fu_211_p1}};
 
-assign zext_ln24_15_fu_156_p1 = carry_reg_90;
+assign zext_ln24_17_fu_156_p1 = carry_reg_90;
 
-assign zext_ln24_39_fu_137_p1 = $unsigned(zext_ln24_s_fu_129_p3);
+assign zext_ln24_41_fu_137_p1 = $unsigned(zext_ln24_s_fu_129_p3);
 
-assign zext_ln24_40_fu_146_p1 = $unsigned(sext_ln24_fu_142_p1);
+assign zext_ln24_42_fu_146_p1 = $unsigned(sext_ln24_fu_142_p1);
 
 assign zext_ln24_fu_173_p1 = add_ln_fu_166_p3;
 

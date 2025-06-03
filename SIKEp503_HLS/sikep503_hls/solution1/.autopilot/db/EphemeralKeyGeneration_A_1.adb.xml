@@ -4620,7 +4620,7 @@ entry:235 %call_ln112 = call void @fpadd503.149.3, i64 %A24plus, i1 0, i64 %C24,
 
 <Node id="254" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="64" op_12_bw="64" op_13_bw="64" op_14_bw="0">
 <![CDATA[
-entry:237 %call_ln109 = call void @LADDER3PT.79.80.1, i8 %ephemeralsk, i64 %R_X, i64 %R_Z, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1
+entry:237 %call_ln109 = call void @LADDER3PT.75.76.1, i8 %ephemeralsk_i, i64 %R_X, i64 %R_Z, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -4668,7 +4668,7 @@ entry:235 %call_ln112 = call void @fpadd503.149.3, i64 %A24plus, i1 0, i64 %C24,
 
 <Node id="254" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="64" op_12_bw="64" op_13_bw="64" op_14_bw="0">
 <![CDATA[
-entry:237 %call_ln109 = call void @LADDER3PT.79.80.1, i8 %ephemeralsk, i64 %R_X, i64 %R_Z, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1
+entry:237 %call_ln109 = call void @LADDER3PT.75.76.1, i8 %ephemeralsk_i, i64 %R_X, i64 %R_Z, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -4704,7 +4704,7 @@ entry:236 %call_ln113 = call void @fpadd503.149.3, i64 %A24plus, i1 1, i64 %C24,
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0
+entry:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_8, i32 0, i32 0, void @empty_60, i32 0, i32 402, void @empty_44, void @empty_72, void @empty_60, i32 16, i32 16, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -4876,7 +4876,7 @@ VITIS_LOOP_116_3.split:2 %speclooptripcount_ln89 = speclooptripcount void @_ssdm
 
 <Node id="269" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_116_3.split:3 %specloopname_ln114 = specloopname void @_ssdm_op_SpecLoopName, void @empty_75
+VITIS_LOOP_116_3.split:3 %specloopname_ln114 = specloopname void @_ssdm_op_SpecLoopName, void @empty_25
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln114"/></StgValue>
@@ -5096,7 +5096,7 @@ for.body41.split:1 %trunc_ln116 = trunc i32 %npts_load
 
 <Node id="284" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body41.split:2 %specloopname_ln116 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26
+for.body41.split:2 %specloopname_ln116 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln116"/></StgValue>
@@ -5575,7 +5575,7 @@ if.then:16 %br_ln36 = br void %for.inc.i320
 
 <Node id="306" bw="7" op_0_bw="7" op_1_bw="0" op_2_bw="7" op_3_bw="0">
 <![CDATA[
-for.inc.i320:0 %i = phi i7 0, void %if.then, i7 %i_307, void %for.inc.i320.split
+for.inc.i320:0 %i = phi i7 0, void %if.then, i7 %i_305, void %for.inc.i320.split
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -5620,10 +5620,10 @@ for.inc.i320:2 %icmp_ln36 = icmp_eq  i7 %i, i7 %tmp_509
 
 <Node id="309" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-for.inc.i320:3 %i_307 = add i7 %i, i7 1
+for.inc.i320:3 %i_305 = add i7 %i, i7 1
 
 ]]></Node>
-<StgValue><ssdm name="i_307"/></StgValue>
+<StgValue><ssdm name="i_305"/></StgValue>
 </operation>
 
 <operation id="442" st_id="26" stage="1" lat="1">
@@ -6189,7 +6189,7 @@ for.inc.i320.split:14 %call_ln24 = call void @fp2mul503_mont.3, i64 %R_Z, i64 %t
 
 <Node id="312" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i320.split:0 %specloopname_ln36 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20
+for.inc.i320.split:0 %specloopname_ln36 = specloopname void @_ssdm_op_SpecLoopName, void @empty_28
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln36"/></StgValue>
@@ -8461,8 +8461,8 @@ for.end117:38 %ret_ln0 = ret
 
 
 <ports>
-<port id="745" name="ephemeralsk" dir="0" iftype="1">
-<core>RAM</core><StgValue><ssdm name="ephemeralsk"/><MemPortTyVec>1 1 </MemPortTyVec>
+<port id="745" name="ephemeralsk_i" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="ephemeralsk_i"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="746" name="gmem" dir="1" iftype="4">
@@ -9702,9 +9702,9 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1382" from="p503x2_1" to="call_ln112" fromId="750" toId="377">
 </dataflow>
-<dataflow id="1384" from="LADDER3PT.79.80.1" to="call_ln109" fromId="1383" toId="378">
+<dataflow id="1384" from="LADDER3PT.75.76.1" to="call_ln109" fromId="1383" toId="378">
 </dataflow>
-<dataflow id="1385" from="ephemeralsk" to="call_ln109" fromId="745" toId="378">
+<dataflow id="1385" from="ephemeralsk_i" to="call_ln109" fromId="745" toId="378">
 </dataflow>
 <dataflow id="1386" from="R_X" to="call_ln109" fromId="137" toId="378">
 </dataflow>
@@ -9748,9 +9748,9 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1406" from="p503x2_1" to="call_ln112" fromId="750" toId="380">
 </dataflow>
-<dataflow id="1407" from="LADDER3PT.79.80.1" to="call_ln109" fromId="1383" toId="381">
+<dataflow id="1407" from="LADDER3PT.75.76.1" to="call_ln109" fromId="1383" toId="381">
 </dataflow>
-<dataflow id="1408" from="ephemeralsk" to="call_ln109" fromId="745" toId="381">
+<dataflow id="1408" from="ephemeralsk_i" to="call_ln109" fromId="745" toId="381">
 </dataflow>
 <dataflow id="1409" from="R_X" to="call_ln109" fromId="137" toId="381">
 </dataflow>
@@ -9792,23 +9792,23 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1430" from="gmem" to="specinterface_ln0" fromId="746" toId="383">
 </dataflow>
-<dataflow id="1432" from="empty_86" to="specinterface_ln0" fromId="1431" toId="383">
+<dataflow id="1432" from="empty_8" to="specinterface_ln0" fromId="1431" toId="383">
 </dataflow>
 <dataflow id="1433" from="StgValue_852" to="specinterface_ln0" fromId="852" toId="383">
 </dataflow>
 <dataflow id="1434" from="StgValue_852" to="specinterface_ln0" fromId="852" toId="383">
 </dataflow>
-<dataflow id="1436" from="empty_44" to="specinterface_ln0" fromId="1435" toId="383">
+<dataflow id="1436" from="empty_60" to="specinterface_ln0" fromId="1435" toId="383">
 </dataflow>
 <dataflow id="1437" from="StgValue_852" to="specinterface_ln0" fromId="852" toId="383">
 </dataflow>
 <dataflow id="1439" from="StgValue_1438" to="specinterface_ln0" fromId="1438" toId="383">
 </dataflow>
-<dataflow id="1441" from="empty_58" to="specinterface_ln0" fromId="1440" toId="383">
+<dataflow id="1441" from="empty_44" to="specinterface_ln0" fromId="1440" toId="383">
 </dataflow>
-<dataflow id="1443" from="empty_28" to="specinterface_ln0" fromId="1442" toId="383">
+<dataflow id="1443" from="empty_72" to="specinterface_ln0" fromId="1442" toId="383">
 </dataflow>
-<dataflow id="1444" from="empty_44" to="specinterface_ln0" fromId="1435" toId="383">
+<dataflow id="1444" from="empty_60" to="specinterface_ln0" fromId="1435" toId="383">
 </dataflow>
 <dataflow id="1446" from="StgValue_1445" to="specinterface_ln0" fromId="1445" toId="383">
 </dataflow>
@@ -9818,9 +9818,9 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1449" from="StgValue_1445" to="specinterface_ln0" fromId="1445" toId="383">
 </dataflow>
-<dataflow id="1450" from="empty_44" to="specinterface_ln0" fromId="1435" toId="383">
+<dataflow id="1450" from="empty_60" to="specinterface_ln0" fromId="1435" toId="383">
 </dataflow>
-<dataflow id="1451" from="empty_44" to="specinterface_ln0" fromId="1435" toId="383">
+<dataflow id="1451" from="empty_60" to="specinterface_ln0" fromId="1435" toId="383">
 </dataflow>
 <dataflow id="1453" from="StgValue_1452" to="specinterface_ln0" fromId="1452" toId="383">
 </dataflow>
@@ -9870,7 +9870,7 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1482" from="_ssdm_op_SpecLoopName" to="specloopname_ln114" fromId="1481" toId="394">
 </dataflow>
-<dataflow id="1484" from="empty_75" to="specloopname_ln114" fromId="1483" toId="394">
+<dataflow id="1484" from="empty_25" to="specloopname_ln114" fromId="1483" toId="394">
 </dataflow>
 <dataflow id="1485" from="StgValue_1470" to="sub" fromId="1470" toId="395">
 </dataflow>
@@ -9948,7 +9948,7 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1515" from="_ssdm_op_SpecLoopName" to="specloopname_ln116" fromId="1481" toId="408">
 </dataflow>
-<dataflow id="1517" from="empty_26" to="specloopname_ln116" fromId="1516" toId="408">
+<dataflow id="1517" from="empty_1" to="specloopname_ln116" fromId="1516" toId="408">
 </dataflow>
 <dataflow id="1518" from="index_5" to="icmp_ln119" fromId="400" toId="409">
 </dataflow>
@@ -10101,7 +10101,7 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1599" from="br_ln36" to="i" fromId="437" toId="438">
 </dataflow>
-<dataflow id="1600" from="i_307" to="i" fromId="441" toId="438">
+<dataflow id="1600" from="i_305" to="i" fromId="441" toId="438">
 <BackEdge/>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -10122,9 +10122,9 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1608" from="tmp_509" to="icmp_ln36" fromId="436" toId="440">
 </dataflow>
-<dataflow id="1609" from="i" to="i_307" fromId="438" toId="441">
+<dataflow id="1609" from="i" to="i_305" fromId="438" toId="441">
 </dataflow>
-<dataflow id="1610" from="StgValue_860" to="i_307" fromId="860" toId="441">
+<dataflow id="1610" from="StgValue_860" to="i_305" fromId="860" toId="441">
 </dataflow>
 <dataflow id="1611" from="icmp_ln36" to="br_ln36" fromId="440" toId="442">
 </dataflow>
@@ -10416,7 +10416,7 @@ for.end117:38 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1767" from="_ssdm_op_SpecLoopName" to="specloopname_ln36" fromId="1481" toId="474">
 </dataflow>
-<dataflow id="1769" from="empty_20" to="specloopname_ln36" fromId="1768" toId="474">
+<dataflow id="1769" from="empty_28" to="specloopname_ln36" fromId="1768" toId="474">
 </dataflow>
 <dataflow id="1770" from="fp2mul503_mont.3" to="call_ln24" fromId="1761" toId="475">
 </dataflow>

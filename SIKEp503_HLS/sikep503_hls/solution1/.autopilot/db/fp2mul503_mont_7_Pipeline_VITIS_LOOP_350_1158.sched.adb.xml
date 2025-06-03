@@ -31,10 +31,10 @@
 
 <Node id="3" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_191 = alloca i32 1
+newFuncRoot:0 %i_198 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_191"/></StgValue>
+<StgValue><ssdm name="i_198"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -61,7 +61,7 @@ newFuncRoot:1 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_o
 
 <Node id="5" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:2 %store_ln348 = store i4 0, i4 %i_191
+newFuncRoot:2 %store_ln348 = store i4 0, i4 %i_198
 
 ]]></Node>
 <StgValue><ssdm name="store_ln348"/></StgValue>
@@ -91,7 +91,7 @@ newFuncRoot:3 %br_ln0 = br void %for.inc.i.i38
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i.i38:1 %i = load i4 %i_191
+for.inc.i.i38:1 %i = load i4 %i_198
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -280,7 +280,7 @@ for.inc.i.i38.split:11 %coeff_load_5 = load i6 %coeff_addr_5
 
 <Node id="41" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i.i38.split:26 %store_ln348 = store i4 %add_ln350, i4 %i_191
+for.inc.i.i38.split:26 %store_ln348 = store i4 %add_ln350, i4 %i_198
 
 ]]></Node>
 <StgValue><ssdm name="store_ln348"/></StgValue>
@@ -412,7 +412,7 @@ for.inc.i.i53.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.i38.split:1 %specpipeline_ln348 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i.i38.split:1 %specpipeline_ln348 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_70
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln348"/></StgValue>

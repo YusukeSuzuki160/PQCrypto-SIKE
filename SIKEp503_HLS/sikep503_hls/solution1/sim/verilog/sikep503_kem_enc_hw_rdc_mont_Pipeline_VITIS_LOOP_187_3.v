@@ -15,7 +15,7 @@ module sikep503_kem_enc_hw_rdc_mont_Pipeline_VITIS_LOOP_187_3 (
         ap_ready,
         v_025,
         u_024,
-        i_11,
+        i_13,
         mc_address0,
         mc_ce0,
         mc_q0,
@@ -55,7 +55,7 @@ output   ap_idle;
 output   ap_ready;
 input  [63:0] v_025;
 input  [63:0] u_024;
-input  [2:0] i_11;
+input  [2:0] i_13;
 output  [2:0] mc_address0;
 output   mc_ce0;
 input  [63:0] mc_q0;
@@ -212,7 +212,7 @@ wire   [31:0] zext_ln106_3_fu_408_p1;
 wire   [31:0] add_ln130_3_fu_414_p2;
 wire   [33:0] zext_ln130_4_fu_419_p1;
 wire   [33:0] zext_ln130_3_fu_411_p1;
-wire   [33:0] temp_2_fu_423_p2;
+wire   [33:0] temp_5_fu_423_p2;
 wire   [33:0] and_ln191_s_fu_450_p3;
 wire   [63:0] zext_ln191_fu_457_p1;
 wire   [63:0] and_ln_fu_443_p3;
@@ -270,7 +270,7 @@ initial begin
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_rdc_mont_14183_Pipeline_VITIS_LOOP_187_3_p503p1_1_ROM_AUTO_1R #(
+sikep503_kem_enc_hw_rdc_mont_14186_Pipeline_VITIS_LOOP_187_3_p503p1_1_ROM_AUTO_1R #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -479,7 +479,7 @@ always @ (posedge ap_clk) begin
         tmp_7_reg_811 <= {{grp_fu_849_p_dout0[63:32]}};
         tmp_7_reg_811_pp0_iter4_reg <= tmp_7_reg_811;
         tmp_7_reg_811_pp0_iter5_reg <= tmp_7_reg_811_pp0_iter4_reg;
-        tmp_8_reg_837 <= {{temp_2_fu_423_p2[33:32]}};
+        tmp_8_reg_837 <= {{temp_5_fu_423_p2[33:32]}};
         tmp_s_reg_796 <= {{grp_fu_837_p_dout0[63:32]}};
         trunc_ln105_reg_832 <= trunc_ln105_fu_429_p1;
         trunc_ln106_4_reg_781 <= trunc_ln106_4_fu_305_p1;
@@ -684,7 +684,7 @@ assign grp_fu_849_p_din0 = zext_ln112_fu_296_p1;
 
 assign grp_fu_849_p_din1 = zext_ln110_fu_286_p1;
 
-assign icmp_ln187_fu_214_p2 = ((ap_sig_allocacmp_j_2 == i_11) ? 1'b1 : 1'b0);
+assign icmp_ln187_fu_214_p2 = ((ap_sig_allocacmp_j_2 == i_13) ? 1'b1 : 1'b0);
 
 assign icmp_ln188_fu_231_p2 = ((zext_ln187_fu_210_p1 < add_ln187) ? 1'b1 : 1'b0);
 
@@ -712,7 +712,7 @@ assign tempReg_2_fu_534_p2 = (xor_ln191_reg_842 + zext_ln105_4_fu_530_p1);
 
 assign tempReg_fu_486_p3 = {{trunc_ln125_reg_821_pp0_iter6_reg}, {trunc_ln106_reg_776_pp0_iter6_reg}};
 
-assign temp_2_fu_423_p2 = (zext_ln130_4_fu_419_p1 + zext_ln130_3_fu_411_p1);
+assign temp_5_fu_423_p2 = (zext_ln130_4_fu_419_p1 + zext_ln130_3_fu_411_p1);
 
 assign temp_fu_376_p2 = (zext_ln123_4_fu_372_p1 + zext_ln106_fu_357_p1);
 
@@ -720,7 +720,7 @@ assign tmp_9_fu_633_p3 = and_ln105_fu_628_p2[32'd63];
 
 assign trunc_ln105_2_fu_617_p1 = tempReg_2_reg_848_pp0_iter8_reg[62:0];
 
-assign trunc_ln105_fu_429_p1 = temp_2_fu_423_p2[31:0];
+assign trunc_ln105_fu_429_p1 = temp_5_fu_423_p2[31:0];
 
 assign trunc_ln106_4_fu_305_p1 = grp_fu_841_p_dout0[31:0];
 

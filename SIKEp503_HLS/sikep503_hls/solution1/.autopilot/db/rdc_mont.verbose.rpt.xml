@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont'" level="0">
-<item name = "Date">Tue May 27 14:17:22 2025
+<item name = "Date">Tue Jun  3 14:12:26 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -66,10 +66,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_32ns_32ns_64_2_1_U682">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 <column name="mul_32ns_32ns_64_2_1_U683">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 <column name="mul_32ns_32ns_64_2_1_U684">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 <column name="mul_32ns_32ns_64_2_1_U685">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
-<column name="mul_32ns_32ns_64_2_1_U686">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_182_1_fu_177">rdc_mont_Pipeline_VITIS_LOOP_182_1, 0, 0, 6, 53, 0</column>
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_187_3_fu_183">rdc_mont_Pipeline_VITIS_LOOP_187_3, 0, 0, 1374, 1703, 0</column>
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_208_5_fu_199">rdc_mont_Pipeline_VITIS_LOOP_208_5, 0, 0, 1375, 1733, 0</column>
@@ -137,8 +137,8 @@
 <column name="grp_fu_849_ce">14, 3, 1, 3</column>
 <column name="grp_fu_849_p0">14, 3, 32, 96</column>
 <column name="grp_fu_849_p1">14, 3, 32, 96</column>
-<column name="i_11_fu_62">9, 2, 4, 8</column>
-<column name="i_12_fu_114">9, 2, 4, 8</column>
+<column name="i_13_fu_62">9, 2, 4, 8</column>
+<column name="i_14_fu_114">9, 2, 4, 8</column>
 <column name="indvars_iv_fu_110">9, 2, 4, 8</column>
 <column name="ma_address0_local">20, 4, 4, 16</column>
 <column name="mc_address0">20, 4, 3, 12</column>
@@ -161,9 +161,9 @@
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_182_1_fu_177_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_187_3_fu_183_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_208_5_fu_199_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_11_fu_62">4, 0, 4, 0</column>
-<column name="i_12_fu_114">4, 0, 4, 0</column>
-<column name="i_22_reg_779">4, 0, 4, 0</column>
+<column name="i_13_fu_62">4, 0, 4, 0</column>
+<column name="i_14_fu_114">4, 0, 4, 0</column>
+<column name="i_25_reg_779">4, 0, 4, 0</column>
 <column name="i_reg_694">4, 0, 4, 0</column>
 <column name="indvars_iv_fu_110">4, 0, 4, 0</column>
 <column name="reg_219">64, 0, 64, 0</column>

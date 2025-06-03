@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1261'
 ================================================================
-* Date:           Tue May 27 14:19:25 2025
+* Date:           Tue Jun  3 14:14:28 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -113,7 +113,7 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter0  |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_292   |   9|          2|    6|         12|
+    |ap_sig_allocacmp_i_290   |   9|          2|    6|         12|
     |gmem_blk_n_AW            |   9|          2|    1|          2|
     |gmem_blk_n_B             |   9|          2|    1|          2|
     |gmem_blk_n_W             |   9|          2|    1|          2|
@@ -142,9 +142,9 @@
     |ap_loop_exit_ready_pp0_iter1_reg           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter2_reg           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter3_reg           |   1|   0|    1|          0|
-    |gmem_addr_6_reg_310                        |  64|   0|   64|          0|
+    |gmem_addr_5_reg_310                        |  64|   0|   64|          0|
     |gmem_addr_reg_299                          |  64|   0|   64|          0|
-    |i_292_reg_273                              |   6|   0|    6|          0|
+    |i_290_reg_273                              |   6|   0|    6|          0|
     |i_fu_70                                    |   6|   0|    6|          0|
     |icmp_ln42_reg_280                          |   1|   0|    1|          0|
     |t_i421_load_1_reg_305                      |  64|   0|   64|          0|

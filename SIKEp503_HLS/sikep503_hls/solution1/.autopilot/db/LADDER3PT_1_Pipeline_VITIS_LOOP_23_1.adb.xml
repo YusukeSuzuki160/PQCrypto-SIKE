@@ -19,10 +19,10 @@
 
 <Node id="2" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_280 = alloca i32 1
+newFuncRoot:0 %i_278 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_280"/></StgValue>
+<StgValue><ssdm name="i_278"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -34,7 +34,7 @@ newFuncRoot:0 %i_280 = alloca i32 1
 
 <Node id="3" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:1 %store_ln21 = store i4 0, i4 %i_280
+newFuncRoot:1 %store_ln21 = store i4 0, i4 %i_278
 
 ]]></Node>
 <StgValue><ssdm name="store_ln21"/></StgValue>
@@ -64,7 +64,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i139
 
 <Node id="6" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i139:0 %i = load i4 %i_280
+for.inc.i139:0 %i = load i4 %i_278
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -125,7 +125,7 @@ for.inc.i139:3 %br_ln23 = br i1 %icmp_ln23, void %for.inc.i139.split, void %for.
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i139.split:0 %specpipeline_ln21 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i139.split:0 %specpipeline_ln21 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln21"/></StgValue>
@@ -157,7 +157,7 @@ for.inc.i139.split:1 %speclooptripcount_ln21 = speclooptripcount void @_ssdm_op_
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i139.split:2 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_42
+for.inc.i139.split:2 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_82
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln23"/></StgValue>
@@ -253,7 +253,7 @@ for.inc.i139.split:7 %store_ln24 = store i64 0, i4 %R_Z_addr
 
 <Node id="19" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i139.split:8 %store_ln21 = store i4 %add_ln23, i4 %i_280
+for.inc.i139.split:8 %store_ln21 = store i4 %add_ln23, i4 %i_278
 
 ]]></Node>
 <StgValue><ssdm name="store_ln21"/></StgValue>
@@ -303,13 +303,13 @@ for.inc.preheader.exitStub:0 %ret_ln0 = ret
 
 
 <dataflows>
-<dataflow id="30" from="StgValue_29" to="i_280" fromId="29" toId="4">
+<dataflow id="30" from="StgValue_29" to="i_278" fromId="29" toId="4">
 </dataflow>
 <dataflow id="32" from="StgValue_31" to="store_ln21" fromId="31" toId="5">
 </dataflow>
-<dataflow id="33" from="i_280" to="store_ln21" fromId="4" toId="5">
+<dataflow id="33" from="i_278" to="store_ln21" fromId="4" toId="5">
 </dataflow>
-<dataflow id="34" from="i_280" to="i" fromId="4" toId="7">
+<dataflow id="34" from="i_278" to="i" fromId="4" toId="7">
 </dataflow>
 <dataflow id="35" from="i" to="icmp_ln23" fromId="7" toId="8">
 </dataflow>
@@ -331,7 +331,7 @@ for.inc.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="49" from="StgValue_46" to="specpipeline_ln21" fromId="46" toId="11">
 </dataflow>
-<dataflow id="51" from="empty_44" to="specpipeline_ln21" fromId="50" toId="11">
+<dataflow id="51" from="empty_60" to="specpipeline_ln21" fromId="50" toId="11">
 </dataflow>
 <dataflow id="53" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln21" fromId="52" toId="12">
 </dataflow>
@@ -343,7 +343,7 @@ for.inc.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="59" from="_ssdm_op_SpecLoopName" to="specloopname_ln23" fromId="58" toId="13">
 </dataflow>
-<dataflow id="61" from="empty_42" to="specloopname_ln23" fromId="60" toId="13">
+<dataflow id="61" from="empty_82" to="specloopname_ln23" fromId="60" toId="13">
 </dataflow>
 <dataflow id="62" from="i" to="trunc_ln24" fromId="7" toId="14">
 </dataflow>
@@ -367,7 +367,7 @@ for.inc.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="75" from="add_ln23" to="store_ln21" fromId="9" toId="19">
 </dataflow>
-<dataflow id="76" from="i_280" to="store_ln21" fromId="4" toId="19">
+<dataflow id="76" from="i_278" to="store_ln21" fromId="4" toId="19">
 </dataflow>
 <dataflow id="77" from="icmp_ln23" to="StgValue_2" fromId="8" toId="2">
 </dataflow>

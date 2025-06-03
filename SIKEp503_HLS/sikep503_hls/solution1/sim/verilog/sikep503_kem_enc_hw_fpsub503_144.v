@@ -109,7 +109,7 @@ wire    ap_CS_fsm_state2;
 reg    grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_ap_start_reg;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
-wire   [2:0] empty_134_fu_96_p1;
+wire   [2:0] empty_142_fu_96_p1;
 wire   [2:0] empty_fu_92_p1;
 reg   [3:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
@@ -132,15 +132,15 @@ sikep503_kem_enc_hw_fpsub503_144_Pipeline_VITIS_LOOP_47_1 grp_fpsub503_144_Pipel
     .ap_done(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_ap_done),
     .ap_idle(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_ap_idle),
     .ap_ready(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_ap_ready),
-    .zext_ln48_26(tmp_492_reg_152),
+    .zext_ln48_27(tmp_492_reg_152),
     .a_address0(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_a_address0),
     .a_ce0(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_a_ce0),
     .a_q0(a_q0),
-    .zext_ln48_25(tmp_s_reg_147),
+    .zext_ln48_26(tmp_s_reg_147),
     .b_address0(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_b_address0),
     .b_ce0(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_b_ce0),
     .b_q0(b_q0),
-    .zext_ln48_24(tmp_reg_141),
+    .zext_ln48_25(tmp_reg_141),
     .c_address0(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_c_address0),
     .c_ce0(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_c_ce0),
     .c_we0(grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_c_we0),
@@ -156,7 +156,7 @@ sikep503_kem_enc_hw_fpsub503_144_Pipeline_VITIS_LOOP_53_2 grp_fpsub503_144_Pipel
     .ap_done(grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_ap_done),
     .ap_idle(grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_ap_idle),
     .ap_ready(grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_ap_ready),
-    .zext_ln48_24(tmp_reg_141),
+    .zext_ln48_25(tmp_reg_141),
     .c_address0(grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_c_address0),
     .c_ce0(grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_c_ce0),
     .c_we0(grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_c_we0),
@@ -355,7 +355,7 @@ assign b_ce0 = grp_fpsub503_144_Pipeline_VITIS_LOOP_47_1_fu_68_b_ce0;
 
 assign c_address1 = grp_fpsub503_144_Pipeline_VITIS_LOOP_53_2_fu_82_c_address1;
 
-assign empty_134_fu_96_p1 = b_offset[2:0];
+assign empty_142_fu_96_p1 = b_offset[2:0];
 
 assign empty_fu_92_p1 = a_offset[2:0];
 
@@ -367,7 +367,7 @@ assign tmp_492_fu_120_p4 = {{{empty_fu_92_p1}, {a_offset2}}, {3'd0}};
 
 assign tmp_fu_100_p3 = {{c_offset}, {3'd0}};
 
-assign tmp_s_fu_109_p4 = {{{empty_134_fu_96_p1}, {b_offset4}}, {3'd0}};
+assign tmp_s_fu_109_p4 = {{{empty_142_fu_96_p1}, {b_offset4}}, {3'd0}};
 
 always @ (posedge ap_clk) begin
     tmp_reg_141[2:0] <= 3'b000;

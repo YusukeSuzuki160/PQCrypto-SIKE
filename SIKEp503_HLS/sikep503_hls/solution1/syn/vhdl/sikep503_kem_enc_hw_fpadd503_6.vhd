@@ -74,8 +74,8 @@ attribute shreg_extract : string;
     signal grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_ce0 : STD_LOGIC;
     signal grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_we0 : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out_ap_vld : STD_LOGIC;
+    signal grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out_ap_vld : STD_LOGIC;
     signal grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_ap_start : STD_LOGIC;
     signal grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_ap_done : STD_LOGIC;
     signal grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_ap_idle : STD_LOGIC;
@@ -140,8 +140,8 @@ attribute shreg_extract : string;
         coeff_we0 : OUT STD_LOGIC_VECTOR (7 downto 0);
         coeff_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
         coeff_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
-        carry_172_out : OUT STD_LOGIC_VECTOR (0 downto 0);
-        carry_172_out_ap_vld : OUT STD_LOGIC );
+        carry_166_out : OUT STD_LOGIC_VECTOR (0 downto 0);
+        carry_166_out_ap_vld : OUT STD_LOGIC );
     end component;
 
 
@@ -196,8 +196,8 @@ begin
         coeff_we0 => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_we0,
         coeff_d0 => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_d0,
         coeff_q0 => coeff_q0,
-        carry_172_out => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out,
-        carry_172_out_ap_vld => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out_ap_vld);
+        carry_166_out => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out,
+        carry_166_out_ap_vld => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out_ap_vld);
 
     grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41 : component sikep503_kem_enc_hw_fpadd503_6_Pipeline_VITIS_LOOP_34_3
     port map (
@@ -212,7 +212,7 @@ begin
         coeff_we0 => grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_coeff_we0,
         coeff_d0 => grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_coeff_d0,
         coeff_q0 => coeff_q0,
-        sext_ln21 => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out);
+        sext_ln21 => grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out);
 
 
 

@@ -224,10 +224,10 @@
 
 <Node id="8" bw="32" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_305 = alloca i32 1
+newFuncRoot:0 %i_303 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_305"/></StgValue>
+<StgValue><ssdm name="i_303"/></StgValue>
 </operation>
 
 <operation id="36" st_id="1" stage="1" lat="1">
@@ -299,7 +299,7 @@ newFuncRoot:4 %t0 = alloca i64 1
 
 <Node id="13" bw="0" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-newFuncRoot:5 %store_ln89 = store i32 0, i32 %i_305
+newFuncRoot:5 %store_ln89 = store i32 0, i32 %i_303
 
 ]]></Node>
 <StgValue><ssdm name="store_ln89"/></StgValue>
@@ -332,7 +332,7 @@ newFuncRoot:6 %br_ln130 = br void %for.inc84
 
 <Node id="16" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-for.inc84:0 %i = load i32 %i_305
+for.inc84:0 %i = load i32 %i_303
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -393,7 +393,7 @@ for.inc84:3 %br_ln130 = br i1 %icmp_ln130, void %for.inc84.split, void %for.inc1
 
 <Node id="43" bw="0" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc84.split:22 %store_ln89 = store i32 %add_ln130, i32 %i_305
+for.inc84.split:22 %store_ln89 = store i32 %add_ln130, i32 %i_303
 
 ]]></Node>
 <StgValue><ssdm name="store_ln89"/></StgValue>
@@ -1120,7 +1120,7 @@ for.inc84.split:0 %speclooptripcount_ln132 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc84.split:1 %specloopname_ln130 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14
+for.inc84.split:1 %specloopname_ln130 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln130"/></StgValue>

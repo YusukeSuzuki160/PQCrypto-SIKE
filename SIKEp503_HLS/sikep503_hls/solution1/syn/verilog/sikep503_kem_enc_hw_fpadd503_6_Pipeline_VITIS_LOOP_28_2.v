@@ -18,8 +18,8 @@ module sikep503_kem_enc_hw_fpadd503_6_Pipeline_VITIS_LOOP_28_2 (
         coeff_we0,
         coeff_d0,
         coeff_q0,
-        carry_172_out,
-        carry_172_out_ap_vld
+        carry_166_out,
+        carry_166_out_ap_vld
 );
 
 parameter    ap_ST_fsm_state1 = 3'd1;
@@ -37,11 +37,11 @@ output   coeff_ce0;
 output  [7:0] coeff_we0;
 output  [63:0] coeff_d0;
 input  [63:0] coeff_q0;
-output  [0:0] carry_172_out;
-output   carry_172_out_ap_vld;
+output  [0:0] carry_166_out;
+output   carry_166_out_ap_vld;
 
 reg ap_idle;
-reg carry_172_out_ap_vld;
+reg carry_166_out_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
@@ -74,10 +74,10 @@ wire   [63:0] sub_ln29_fu_221_p2;
 reg    p503x2_1_ce0_local;
 wire   [2:0] trunc_ln29_fu_126_p1;
 wire   [5:0] zext_ln29_4_fu_130_p3;
-wire   [63:0] xor_ln105_100_fu_158_p2;
+wire   [63:0] xor_ln105_98_fu_158_p2;
 wire   [63:0] xor_ln105_fu_154_p2;
 wire   [63:0] or_ln105_fu_162_p2;
-wire   [63:0] xor_ln105_101_fu_168_p2;
+wire   [63:0] xor_ln105_99_fu_168_p2;
 wire   [63:0] sub_ln95_fu_181_p2;
 wire   [63:0] or_ln95_fu_186_p2;
 wire   [0:0] tmp_183_fu_191_p3;
@@ -237,9 +237,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_exit_ready == 1'b1) & (icmp_ln28_fu_109_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        carry_172_out_ap_vld = 1'b1;
+        carry_166_out_ap_vld = 1'b1;
     end else begin
-        carry_172_out_ap_vld = 1'b0;
+        carry_166_out_ap_vld = 1'b0;
     end
 end
 
@@ -322,7 +322,7 @@ assign ap_ready = ap_ready_sig;
 
 assign borrowReg_fu_211_p2 = (tmp_fu_173_p3 | and_ln29_fu_205_p2);
 
-assign carry_172_out = carry_reg_89;
+assign carry_166_out = carry_reg_89;
 
 assign coeff_address0 = coeff_address0_local;
 
@@ -334,7 +334,7 @@ assign coeff_we0 = coeff_we0_local;
 
 assign icmp_ln28_fu_109_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign or_ln105_fu_162_p2 = (xor_ln105_fu_154_p2 | xor_ln105_100_fu_158_p2);
+assign or_ln105_fu_162_p2 = (xor_ln105_fu_154_p2 | xor_ln105_98_fu_158_p2);
 
 assign or_ln95_fu_186_p2 = (tempReg_reg_259 | sub_ln95_fu_181_p2);
 
@@ -348,13 +348,13 @@ assign tempReg_fu_148_p2 = (coeff_q0 - p503x2_1_q0);
 
 assign tmp_183_fu_191_p3 = or_ln95_fu_186_p2[32'd63];
 
-assign tmp_fu_173_p3 = xor_ln105_101_fu_168_p2[32'd63];
+assign tmp_fu_173_p3 = xor_ln105_99_fu_168_p2[32'd63];
 
 assign trunc_ln29_fu_126_p1 = ap_sig_allocacmp_i[2:0];
 
-assign xor_ln105_100_fu_158_p2 = (tempReg_reg_259 ^ p503x2_1_load_reg_253);
+assign xor_ln105_98_fu_158_p2 = (tempReg_reg_259 ^ p503x2_1_load_reg_253);
 
-assign xor_ln105_101_fu_168_p2 = (or_ln105_fu_162_p2 ^ coeff_load_reg_247);
+assign xor_ln105_99_fu_168_p2 = (or_ln105_fu_162_p2 ^ coeff_load_reg_247);
 
 assign xor_ln105_fu_154_p2 = (p503x2_1_load_reg_253 ^ coeff_load_reg_247);
 

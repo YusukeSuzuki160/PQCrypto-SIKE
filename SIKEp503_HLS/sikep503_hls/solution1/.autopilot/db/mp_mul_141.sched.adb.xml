@@ -355,10 +355,10 @@ entry:17 %br_ln143 = br void %VITIS_LOOP_145_2
 
 <Node id="26" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_145_2:0 %i_81 = load i4 %i
+VITIS_LOOP_145_2:0 %i_84 = load i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="i_81"/></StgValue>
+<StgValue><ssdm name="i_84"/></StgValue>
 </operation>
 
 <operation id="29" st_id="2" stage="1" lat="1">
@@ -400,7 +400,7 @@ VITIS_LOOP_145_2:2 %v_201 = load i64 %v_017
 
 <Node id="29" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2:3 %icmp_ln143 = icmp_eq  i4 %i_81, i4 8
+VITIS_LOOP_145_2:3 %icmp_ln143 = icmp_eq  i4 %i_84, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln143"/></StgValue>
@@ -415,7 +415,7 @@ VITIS_LOOP_145_2:3 %icmp_ln143 = icmp_eq  i4 %i_81, i4 8
 
 <Node id="30" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2:4 %add_ln143 = add i4 %i_81, i4 1
+VITIS_LOOP_145_2:4 %add_ln143 = add i4 %i_84, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln143"/></StgValue>
@@ -510,10 +510,10 @@ VITIS_LOOP_159_4.preheader:2 %indvars_iv = alloca i32 1
 
 <Node id="50" bw="4" op_0_bw="32">
 <![CDATA[
-VITIS_LOOP_159_4.preheader:3 %i_25 = alloca i32 1
+VITIS_LOOP_159_4.preheader:3 %i_27 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_25"/></StgValue>
+<StgValue><ssdm name="i_27"/></StgValue>
 </operation>
 
 <operation id="39" st_id="2" stage="1" lat="1">
@@ -526,7 +526,7 @@ VITIS_LOOP_159_4.preheader:3 %i_25 = alloca i32 1
 
 <Node id="51" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4.preheader:4 %store_ln139 = store i4 8, i4 %i_25
+VITIS_LOOP_159_4.preheader:4 %store_ln139 = store i4 8, i4 %i_27
 
 ]]></Node>
 <StgValue><ssdm name="store_ln139"/></StgValue>
@@ -623,7 +623,7 @@ VITIS_LOOP_145_2.split:0 %indvars_iv31_load = load i4 %indvars_iv31
 
 <Node id="34" bw="3" op_0_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2.split:1 %trunc_ln143 = trunc i4 %i_81
+VITIS_LOOP_145_2.split:1 %trunc_ln143 = trunc i4 %i_84
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln143"/></StgValue>
@@ -704,7 +704,7 @@ VITIS_LOOP_145_2.split:5 %call_ln143 = call void @mp_mul.141_Pipeline_VITIS_LOOP
 
 <Node id="35" bw="64" op_0_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2.split:2 %zext_ln143 = zext i4 %i_81
+VITIS_LOOP_145_2.split:2 %zext_ln143 = zext i4 %i_84
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln143"/></StgValue>
@@ -734,7 +734,7 @@ VITIS_LOOP_145_2.split:3 %speclooptripcount_ln140 = speclooptripcount void @_ssd
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_145_2.split:4 %specloopname_ln143 = specloopname void @_ssdm_op_SpecLoopName, void @empty_74
+VITIS_LOOP_145_2.split:4 %specloopname_ln143 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln143"/></StgValue>
@@ -812,10 +812,10 @@ VITIS_LOOP_145_2.split:12 %br_ln143 = br void %VITIS_LOOP_145_2
 
 <Node id="57" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4:0 %i_82 = load i4 %i_25
+VITIS_LOOP_159_4:0 %i_85 = load i4 %i_27
 
 ]]></Node>
-<StgValue><ssdm name="i_82"/></StgValue>
+<StgValue><ssdm name="i_85"/></StgValue>
 </operation>
 
 <operation id="58" st_id="6" stage="1" lat="1">
@@ -827,7 +827,7 @@ VITIS_LOOP_159_4:0 %i_82 = load i4 %i_25
 
 <Node id="58" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4:1 %icmp_ln157 = icmp_eq  i4 %i_82, i4 15
+VITIS_LOOP_159_4:1 %icmp_ln157 = icmp_eq  i4 %i_85, i4 15
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln157"/></StgValue>
@@ -874,7 +874,7 @@ VITIS_LOOP_159_4.split:1 %v_load = load i64 %v
 
 <Node id="74" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4.split:13 %add_ln157 = add i4 %i_82, i4 1
+VITIS_LOOP_159_4.split:13 %add_ln157 = add i4 %i_85, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln157"/></StgValue>
@@ -890,7 +890,7 @@ VITIS_LOOP_159_4.split:13 %add_ln157 = add i4 %i_82, i4 1
 
 <Node id="76" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4.split:15 %store_ln139 = store i4 %add_ln157, i4 %i_25
+VITIS_LOOP_159_4.split:15 %store_ln139 = store i4 %add_ln157, i4 %i_27
 
 ]]></Node>
 <StgValue><ssdm name="store_ln139"/></StgValue>
@@ -1017,7 +1017,7 @@ VITIS_LOOP_159_4.split:3 %trunc_ln157 = trunc i4 %indvars_iv_load
 
 <Node id="68" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="4" op_4_bw="7" op_5_bw="64" op_6_bw="4" op_7_bw="4" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="3" op_12_bw="0" op_13_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4.split:7 %call_ln157 = call void @mp_mul.141_Pipeline_VITIS_LOOP_159_4, i3 %trunc_ln157, i64 %v_load, i4 %u_29_load, i7 %tmp_466, i64 %a, i4 %i_82, i4 %tmp_s, i64 %b, i64 %v_35_loc, i64 %v, i3 %t_33_loc
+VITIS_LOOP_159_4.split:7 %call_ln157 = call void @mp_mul.141_Pipeline_VITIS_LOOP_159_4, i3 %trunc_ln157, i64 %v_load, i4 %u_29_load, i7 %tmp_466, i64 %a, i4 %i_85, i4 %tmp_s, i64 %b, i64 %v_35_loc, i64 %v, i3 %t_33_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln157"/></StgValue>
@@ -1065,7 +1065,7 @@ VITIS_LOOP_159_4.split:16 %store_ln157 = store i4 %add_ln157_13, i4 %indvars_iv
 
 <Node id="68" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="4" op_4_bw="7" op_5_bw="64" op_6_bw="4" op_7_bw="4" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="3" op_12_bw="0" op_13_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4.split:7 %call_ln157 = call void @mp_mul.141_Pipeline_VITIS_LOOP_159_4, i3 %trunc_ln157, i64 %v_load, i4 %u_29_load, i7 %tmp_466, i64 %a, i4 %i_82, i4 %tmp_s, i64 %b, i64 %v_35_loc, i64 %v, i3 %t_33_loc
+VITIS_LOOP_159_4.split:7 %call_ln157 = call void @mp_mul.141_Pipeline_VITIS_LOOP_159_4, i3 %trunc_ln157, i64 %v_load, i4 %u_29_load, i7 %tmp_466, i64 %a, i4 %i_85, i4 %tmp_s, i64 %b, i64 %v_35_loc, i64 %v, i3 %t_33_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln157"/></StgValue>
@@ -1083,7 +1083,7 @@ VITIS_LOOP_159_4.split:7 %call_ln157 = call void @mp_mul.141_Pipeline_VITIS_LOOP
 
 <Node id="65" bw="64" op_0_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4.split:4 %zext_ln157 = zext i4 %i_82
+VITIS_LOOP_159_4.split:4 %zext_ln157 = zext i4 %i_85
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln157"/></StgValue>
@@ -1113,7 +1113,7 @@ VITIS_LOOP_159_4.split:5 %speclooptripcount_ln139 = speclooptripcount void @_ssd
 
 <Node id="67" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4.split:6 %specloopname_ln157 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40
+VITIS_LOOP_159_4.split:6 %specloopname_ln157 = specloopname void @_ssdm_op_SpecLoopName, void @empty_33
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln157"/></StgValue>

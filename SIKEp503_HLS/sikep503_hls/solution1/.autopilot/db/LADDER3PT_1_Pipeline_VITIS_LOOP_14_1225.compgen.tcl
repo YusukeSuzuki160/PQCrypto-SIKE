@@ -11,17 +11,36 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2852 \
-    name R0_Z \
+    id 2831 \
+    name R2_X \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename R0_Z \
+    corename R2_X \
     op interface \
-    ports { R0_Z_address0 { O 4 vector } R0_Z_ce0 { O 1 bit } R0_Z_we0 { O 1 bit } R0_Z_d0 { O 64 vector } } \
+    ports { R2_X_address0 { O 3 vector } R2_X_ce0 { O 1 bit } R2_X_we0 { O 1 bit } R2_X_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R0_Z'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R2_X'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 2832 \
+    name PKB_i \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename PKB_i \
+    op interface \
+    ports { PKB_i_address0 { O 6 vector } PKB_i_ce0 { O 1 bit } PKB_i_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'PKB_i'"
 }
 }
 

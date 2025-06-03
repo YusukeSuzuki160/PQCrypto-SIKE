@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_146_Pipeline_VITIS_LOOP_159_4'
 ================================================================
-* Date:           Tue May 27 14:17:17 2025
+* Date:           Tue Jun  3 14:12:21 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -92,11 +92,11 @@
     |add_ln130_fu_417_p2      |         +|   0|  0|  32|          32|          32|
     |add_ln133_fu_495_p2      |         +|   0|  0|  71|          64|          64|
     |add_ln159_fu_228_p2      |         +|   0|  0|  13|           4|           1|
-    |add_ln160_9_fu_252_p2    |         +|   0|  0|   7|           4|           4|
+    |add_ln160_10_fu_252_p2   |         +|   0|  0|   7|           4|           4|
     |add_ln160_fu_239_p2      |         +|   0|  0|  13|           4|           4|
     |t_fu_661_p2              |         +|   0|  0|  11|           3|           3|
     |tempReg_fu_566_p2        |         +|   0|  0|  71|          64|          64|
-    |temp_71_fu_451_p2        |         +|   0|  0|  41|          34|          34|
+    |temp_74_fu_451_p2        |         +|   0|  0|  41|          34|          34|
     |temp_fu_385_p2           |         +|   0|  0|  41|          34|          34|
     |u_fu_581_p2              |         +|   0|  0|  71|          64|          64|
     |v_178_fu_507_p2          |         +|   0|  0|  71|          64|          64|
@@ -232,7 +232,7 @@
 |a_address0          |  out|    4|   ap_memory|                                     a|         array|
 |a_ce0               |  out|    1|   ap_memory|                                     a|         array|
 |a_q0                |   in|   64|   ap_memory|                                     a|         array|
-|i_25                |   in|    4|     ap_none|                                  i_25|        scalar|
+|i_27                |   in|    4|     ap_none|                                  i_27|        scalar|
 |zext_ln146_18       |   in|    4|     ap_none|                         zext_ln146_18|        scalar|
 |b_address0          |  out|    4|   ap_memory|                                     b|         array|
 |b_ce0               |  out|    1|   ap_memory|                                     b|         array|

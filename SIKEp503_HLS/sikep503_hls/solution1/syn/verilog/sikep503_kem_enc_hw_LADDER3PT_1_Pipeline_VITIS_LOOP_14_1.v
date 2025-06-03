@@ -64,7 +64,7 @@ wire   [63:0] zext_ln12_fu_125_p1;
 reg   [3:0] i_fu_36;
 wire   [3:0] add_ln14_fu_95_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_287;
+reg   [3:0] ap_sig_allocacmp_i_284;
 reg    Montgomery_one_1_ce0_local;
 reg    A24_we0_local;
 reg    A24_ce0_local;
@@ -159,7 +159,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        lshr_ln_reg_144 <= {{ap_sig_allocacmp_i_287[2:1]}};
+        lshr_ln_reg_144 <= {{ap_sig_allocacmp_i_284[2:1]}};
         trunc_ln14_reg_140 <= trunc_ln14_fu_106_p1;
     end
 end
@@ -246,9 +246,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_287 = 4'd0;
+        ap_sig_allocacmp_i_284 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_287 = i_fu_36;
+        ap_sig_allocacmp_i_284 = i_fu_36;
     end
 end
 
@@ -281,7 +281,7 @@ assign A24_we0 = A24_we0_local;
 
 assign Montgomery_one_1_address0 = zext_ln14_fu_101_p1;
 
-assign add_ln14_fu_95_p2 = (ap_sig_allocacmp_i_287 + 4'd1);
+assign add_ln14_fu_95_p2 = (ap_sig_allocacmp_i_284 + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -301,12 +301,12 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln14_fu_89_p2 = ((ap_sig_allocacmp_i_287 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln14_fu_89_p2 = ((ap_sig_allocacmp_i_284 == 4'd8) ? 1'b1 : 1'b0);
 
-assign trunc_ln14_fu_106_p1 = ap_sig_allocacmp_i_287[0:0];
+assign trunc_ln14_fu_106_p1 = ap_sig_allocacmp_i_284[0:0];
 
 assign zext_ln12_fu_125_p1 = lshr_ln_reg_144;
 
-assign zext_ln14_fu_101_p1 = ap_sig_allocacmp_i_287;
+assign zext_ln14_fu_101_p1 = ap_sig_allocacmp_i_284;
 
 endmodule //sikep503_kem_enc_hw_LADDER3PT_1_Pipeline_VITIS_LOOP_14_1

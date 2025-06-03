@@ -411,8 +411,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>i_17</name>
-<Object>i_17</Object>
+<name>i_18</name>
+<Object>i_18</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -422,8 +422,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>zext_ln146_9</name>
-<Object>zext_ln146_9</Object>
+<name>zext_ln146_7</name>
+<Object>zext_ln146_7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

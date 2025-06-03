@@ -1196,10 +1196,10 @@ for.body65.split_ifconv:52 %zext_ln130_24 = zext i32 %add_ln130_24
 
 <Node id="86" bw="34" op_0_bw="34" op_1_bw="34">
 <![CDATA[
-for.body65.split_ifconv:53 %temp_15 = add i34 %zext_ln130_24, i34 %zext_ln130_23
+for.body65.split_ifconv:53 %temp_18 = add i34 %zext_ln130_24, i34 %zext_ln130_23
 
 ]]></Node>
-<StgValue><ssdm name="temp_15"/></StgValue>
+<StgValue><ssdm name="temp_18"/></StgValue>
 </operation>
 
 <operation id="87" st_id="6" stage="1" lat="1">
@@ -1211,7 +1211,7 @@ for.body65.split_ifconv:53 %temp_15 = add i34 %zext_ln130_24, i34 %zext_ln130_23
 
 <Node id="87" bw="32" op_0_bw="34">
 <![CDATA[
-for.body65.split_ifconv:54 %trunc_ln105 = trunc i34 %temp_15
+for.body65.split_ifconv:54 %trunc_ln105 = trunc i34 %temp_18
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln105"/></StgValue>
@@ -1226,7 +1226,7 @@ for.body65.split_ifconv:54 %trunc_ln105 = trunc i34 %temp_15
 
 <Node id="97" bw="2" op_0_bw="2" op_1_bw="34" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-for.body65.split_ifconv:64 %tmp_59 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_15, i32 32, i32 33
+for.body65.split_ifconv:64 %tmp_59 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_18, i32 32, i32 33
 
 ]]></Node>
 <StgValue><ssdm name="tmp_59"/></StgValue>
@@ -1805,7 +1805,7 @@ for.body65.split_ifconv:0 %t_load_10 = load i64 %t
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body65.split_ifconv:8 %specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.body65.split_ifconv:8 %specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln180"/></StgValue>
@@ -1835,7 +1835,7 @@ for.body65.split_ifconv:9 %speclooptripcount_ln180 = speclooptripcount void @_ss
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body65.split_ifconv:10 %specloopname_ln208 = specloopname void @_ssdm_op_SpecLoopName, void @empty
+for.body65.split_ifconv:10 %specloopname_ln208 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln208"/></StgValue>

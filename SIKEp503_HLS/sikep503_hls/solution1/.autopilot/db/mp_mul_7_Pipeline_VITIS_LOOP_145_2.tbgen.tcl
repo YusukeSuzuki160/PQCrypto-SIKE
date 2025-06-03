@@ -26,10 +26,10 @@ set C_modelArgList {
 	{ a_offset int 9 regular  }
 	{ PKB int 64 regular {array 48 { 1 3 } 1 1 }  }
 	{ i int 3 regular  }
-	{ zext_ln146_9 int 4 regular  }
+	{ zext_ln146_7 int 4 regular  }
 	{ b int 64 regular {array 16 { 1 3 } 1 1 }  }
-	{ v_94_out int 64 regular {pointer 1}  }
-	{ u_71_out int 64 regular {pointer 2}  }
+	{ v_87_out int 64 regular {pointer 1}  }
+	{ u_68_out int 64 regular {pointer 2}  }
 	{ t_out int 4 regular {pointer 2}  }
 }
 set hasAXIMCache 0
@@ -42,10 +42,10 @@ set C_modelArgMapList {[
  	{ "Name" : "a_offset", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
  	{ "Name" : "PKB", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "i", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
- 	{ "Name" : "zext_ln146_9", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
+ 	{ "Name" : "zext_ln146_7", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "b", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
- 	{ "Name" : "v_94_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "u_71_out", "interface" : "wire", "bitwidth" : 64, "direction" : "READWRITE"} , 
+ 	{ "Name" : "v_87_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "u_68_out", "interface" : "wire", "bitwidth" : 64, "direction" : "READWRITE"} , 
  	{ "Name" : "t_out", "interface" : "wire", "bitwidth" : 4, "direction" : "READWRITE"} ]}
 # RTL Port declarations: 
 set portNum 42
@@ -64,15 +64,15 @@ set portList {
 	{ PKB_ce0 sc_out sc_logic 1 signal 4 } 
 	{ PKB_q0 sc_in sc_lv 64 signal 4 } 
 	{ i sc_in sc_lv 3 signal 5 } 
-	{ zext_ln146_9 sc_in sc_lv 4 signal 6 } 
+	{ zext_ln146_7 sc_in sc_lv 4 signal 6 } 
 	{ b_address0 sc_out sc_lv 4 signal 7 } 
 	{ b_ce0 sc_out sc_logic 1 signal 7 } 
 	{ b_q0 sc_in sc_lv 64 signal 7 } 
-	{ v_94_out sc_out sc_lv 64 signal 8 } 
-	{ v_94_out_ap_vld sc_out sc_logic 1 outvld 8 } 
-	{ u_71_out_i sc_in sc_lv 64 signal 9 } 
-	{ u_71_out_o sc_out sc_lv 64 signal 9 } 
-	{ u_71_out_o_ap_vld sc_out sc_logic 1 outvld 9 } 
+	{ v_87_out sc_out sc_lv 64 signal 8 } 
+	{ v_87_out_ap_vld sc_out sc_logic 1 outvld 8 } 
+	{ u_68_out_i sc_in sc_lv 64 signal 9 } 
+	{ u_68_out_o sc_out sc_lv 64 signal 9 } 
+	{ u_68_out_o_ap_vld sc_out sc_logic 1 outvld 9 } 
 	{ t_out_i sc_in sc_lv 4 signal 10 } 
 	{ t_out_o sc_out sc_lv 4 signal 10 } 
 	{ t_out_o_ap_vld sc_out sc_logic 1 outvld 10 } 
@@ -108,15 +108,15 @@ set NewPortList {[
  	{ "name": "PKB_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "PKB", "role": "ce0" }} , 
  	{ "name": "PKB_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "PKB", "role": "q0" }} , 
  	{ "name": "i", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "i", "role": "default" }} , 
- 	{ "name": "zext_ln146_9", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "zext_ln146_9", "role": "default" }} , 
+ 	{ "name": "zext_ln146_7", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "zext_ln146_7", "role": "default" }} , 
  	{ "name": "b_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "b", "role": "address0" }} , 
  	{ "name": "b_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b", "role": "ce0" }} , 
  	{ "name": "b_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "b", "role": "q0" }} , 
- 	{ "name": "v_94_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "v_94_out", "role": "default" }} , 
- 	{ "name": "v_94_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "v_94_out", "role": "ap_vld" }} , 
- 	{ "name": "u_71_out_i", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "u_71_out", "role": "i" }} , 
- 	{ "name": "u_71_out_o", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "u_71_out", "role": "o" }} , 
- 	{ "name": "u_71_out_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "u_71_out", "role": "o_ap_vld" }} , 
+ 	{ "name": "v_87_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "v_87_out", "role": "default" }} , 
+ 	{ "name": "v_87_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "v_87_out", "role": "ap_vld" }} , 
+ 	{ "name": "u_68_out_i", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "u_68_out", "role": "i" }} , 
+ 	{ "name": "u_68_out_o", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "u_68_out", "role": "o" }} , 
+ 	{ "name": "u_68_out_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "u_68_out", "role": "o_ap_vld" }} , 
  	{ "name": "t_out_i", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_out", "role": "i" }} , 
  	{ "name": "t_out_o", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_out", "role": "o" }} , 
  	{ "name": "t_out_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "t_out", "role": "o_ap_vld" }} , 
@@ -159,10 +159,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "a_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "PKB", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "i", "Type" : "None", "Direction" : "I"},
-			{"Name" : "zext_ln146_9", "Type" : "None", "Direction" : "I"},
+			{"Name" : "zext_ln146_7", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v_94_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "u_71_out", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "v_87_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "u_68_out", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "t_out", "Type" : "OVld", "Direction" : "IO"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_145_2", "PipelineType" : "UPC",
@@ -178,10 +178,10 @@ set ArgLastReadFirstWriteLatency {
 		a_offset {Type I LastRead 0 FirstWrite -1}
 		PKB {Type I LastRead 1 FirstWrite -1}
 		i {Type I LastRead 0 FirstWrite -1}
-		zext_ln146_9 {Type I LastRead 0 FirstWrite -1}
+		zext_ln146_7 {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 1 FirstWrite -1}
-		v_94_out {Type O LastRead -1 FirstWrite 8}
-		u_71_out {Type IO LastRead 8 FirstWrite 0}
+		v_87_out {Type O LastRead -1 FirstWrite 8}
+		u_68_out {Type IO LastRead 8 FirstWrite 0}
 		t_out {Type IO LastRead 9 FirstWrite 0}}}
 
 set hasDtUnsupportedChannel 0
@@ -202,9 +202,9 @@ set Spec2ImplPortList {
 	a_offset { ap_none {  { a_offset in_data 0 9 } } }
 	PKB { ap_memory {  { PKB_address0 mem_address 1 6 }  { PKB_ce0 mem_ce 1 1 }  { PKB_q0 mem_dout 0 64 } } }
 	i { ap_none {  { i in_data 0 3 } } }
-	zext_ln146_9 { ap_none {  { zext_ln146_9 in_data 0 4 } } }
+	zext_ln146_7 { ap_none {  { zext_ln146_7 in_data 0 4 } } }
 	b { ap_memory {  { b_address0 mem_address 1 4 }  { b_ce0 mem_ce 1 1 }  { b_q0 mem_dout 0 64 } } }
-	v_94_out { ap_vld {  { v_94_out out_data 1 64 }  { v_94_out_ap_vld out_vld 1 1 } } }
-	u_71_out { ap_ovld {  { u_71_out_i in_data 0 64 }  { u_71_out_o out_data 1 64 }  { u_71_out_o_ap_vld out_vld 1 1 } } }
+	v_87_out { ap_vld {  { v_87_out out_data 1 64 }  { v_87_out_ap_vld out_vld 1 1 } } }
+	u_68_out { ap_ovld {  { u_68_out_i in_data 0 64 }  { u_68_out_o out_data 1 64 }  { u_68_out_o_ap_vld out_vld 1 1 } } }
 	t_out { ap_ovld {  { t_out_i in_data 0 4 }  { t_out_o out_data 1 4 }  { t_out_o_ap_vld out_vld 1 1 } } }
 }

@@ -352,7 +352,7 @@ wire    ap_CS_fsm_state32;
 reg    grp_fp2mul503_mont_133_1_fu_239_ap_start_reg;
 wire    ap_CS_fsm_state33;
 wire    ap_CS_fsm_state34;
-reg   [31:0] i_283_fu_64;
+reg   [31:0] i_281_fu_64;
 wire   [31:0] add_ln298_fu_265_p2;
 wire   [0:0] icmp_ln298_fu_260_p2;
 reg   [33:0] ap_NS_fsm;
@@ -410,7 +410,7 @@ initial begin
 #0 grp_fpadd503_149_fu_203_ap_start_reg = 1'b0;
 #0 grp_fpsub503_144_1_fu_223_ap_start_reg = 1'b0;
 #0 grp_fp2mul503_mont_133_1_fu_239_ap_start_reg = 1'b0;
-#0 i_283_fu_64 = 32'd0;
+#0 i_281_fu_64 = 32'd0;
 end
 
 sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1_Outline_VITIS_LOOP_298_3_t1_RAM_AUTO_1R1W #(
@@ -847,15 +847,15 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_283_fu_64 <= 32'd0;
+        i_281_fu_64 <= 32'd0;
     end else if (((icmp_ln298_fu_260_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_283_fu_64 <= add_ln298_fu_265_p2;
+        i_281_fu_64 <= add_ln298_fu_265_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_reg_288 <= i_283_fu_64;
+        i_reg_288 <= i_281_fu_64;
     end
 end
 
@@ -1871,7 +1871,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln298_fu_265_p2 = (i_283_fu_64 + 32'd1);
+assign add_ln298_fu_265_p2 = (i_281_fu_64 + 32'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -1979,6 +1979,6 @@ assign grp_fpsub503_144_275_fu_165_ap_start = grp_fpsub503_144_275_fu_165_ap_sta
 
 assign grp_fpsub503_144_fu_104_ap_start = grp_fpsub503_144_fu_104_ap_start_reg;
 
-assign icmp_ln298_fu_260_p2 = ((i_283_fu_64 == npts_1) ? 1'b1 : 1'b0);
+assign icmp_ln298_fu_260_p2 = ((i_281_fu_64 == npts_1) ? 1'b1 : 1'b0);
 
 endmodule //sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1_Outline_VITIS_LOOP_298_3

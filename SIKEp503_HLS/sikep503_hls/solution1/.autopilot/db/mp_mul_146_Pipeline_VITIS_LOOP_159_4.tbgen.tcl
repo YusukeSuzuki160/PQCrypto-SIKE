@@ -25,7 +25,7 @@ set C_modelArgList {
 	{ zext_ln157 int 4 regular  }
 	{ zext_ln146_19 int 4 regular  }
 	{ a int 64 regular {array 16 { 1 3 } 1 1 }  }
-	{ i_25 int 4 regular  }
+	{ i_27 int 4 regular  }
 	{ zext_ln146_18 int 4 regular  }
 	{ b int 64 regular {array 16 { 1 3 } 1 1 }  }
 	{ v_35_out int 64 regular {pointer 1}  }
@@ -41,7 +41,7 @@ set C_modelArgMapList {[
  	{ "Name" : "zext_ln157", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "zext_ln146_19", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "a", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
- 	{ "Name" : "i_25", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
+ 	{ "Name" : "i_27", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "zext_ln146_18", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "b", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "v_35_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
@@ -63,7 +63,7 @@ set portList {
 	{ a_address0 sc_out sc_lv 4 signal 4 } 
 	{ a_ce0 sc_out sc_logic 1 signal 4 } 
 	{ a_q0 sc_in sc_lv 64 signal 4 } 
-	{ i_25 sc_in sc_lv 4 signal 5 } 
+	{ i_27 sc_in sc_lv 4 signal 5 } 
 	{ zext_ln146_18 sc_in sc_lv 4 signal 6 } 
 	{ b_address0 sc_out sc_lv 4 signal 7 } 
 	{ b_ce0 sc_out sc_logic 1 signal 7 } 
@@ -106,7 +106,7 @@ set NewPortList {[
  	{ "name": "a_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "a", "role": "address0" }} , 
  	{ "name": "a_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "a", "role": "ce0" }} , 
  	{ "name": "a_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "a", "role": "q0" }} , 
- 	{ "name": "i_25", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "i_25", "role": "default" }} , 
+ 	{ "name": "i_27", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "i_27", "role": "default" }} , 
  	{ "name": "zext_ln146_18", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "zext_ln146_18", "role": "default" }} , 
  	{ "name": "b_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "b", "role": "address0" }} , 
  	{ "name": "b_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b", "role": "ce0" }} , 
@@ -156,7 +156,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "zext_ln157", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zext_ln146_19", "Type" : "None", "Direction" : "I"},
 			{"Name" : "a", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "i_25", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_27", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zext_ln146_18", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v_35_out", "Type" : "Vld", "Direction" : "O"},
@@ -175,7 +175,7 @@ set ArgLastReadFirstWriteLatency {
 		zext_ln157 {Type I LastRead 0 FirstWrite -1}
 		zext_ln146_19 {Type I LastRead 0 FirstWrite -1}
 		a {Type I LastRead 1 FirstWrite -1}
-		i_25 {Type I LastRead 0 FirstWrite -1}
+		i_27 {Type I LastRead 0 FirstWrite -1}
 		zext_ln146_18 {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 1 FirstWrite -1}
 		v_35_out {Type O LastRead -1 FirstWrite 8}
@@ -199,7 +199,7 @@ set Spec2ImplPortList {
 	zext_ln157 { ap_none {  { zext_ln157 in_data 0 4 } } }
 	zext_ln146_19 { ap_none {  { zext_ln146_19 in_data 0 4 } } }
 	a { ap_memory {  { a_address0 mem_address 1 4 }  { a_ce0 mem_ce 1 1 }  { a_q0 mem_dout 0 64 } } }
-	i_25 { ap_none {  { i_25 in_data 0 4 } } }
+	i_27 { ap_none {  { i_27 in_data 0 4 } } }
 	zext_ln146_18 { ap_none {  { zext_ln146_18 in_data 0 4 } } }
 	b { ap_memory {  { b_address0 mem_address 1 4 }  { b_ce0 mem_ce 1 1 }  { b_q0 mem_dout 0 64 } } }
 	v_35_out { ap_vld {  { v_35_out out_data 1 64 }  { v_35_out_ap_vld out_vld 1 1 } } }

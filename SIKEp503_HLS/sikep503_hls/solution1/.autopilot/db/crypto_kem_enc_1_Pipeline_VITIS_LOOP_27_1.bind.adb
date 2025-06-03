@@ -190,7 +190,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -253,7 +253,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -316,7 +316,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -422,7 +422,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -486,7 +486,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -550,7 +550,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -614,7 +614,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -679,7 +679,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -742,7 +742,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -805,7 +805,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -868,7 +868,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -934,7 +934,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -997,7 +997,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1061,7 +1061,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1133,7 +1133,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1203,7 +1203,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1274,7 +1274,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1345,7 +1345,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1416,7 +1416,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1487,7 +1487,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1558,7 +1558,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1629,7 +1629,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1700,7 +1700,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1771,7 +1771,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1842,7 +1842,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1913,7 +1913,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1984,7 +1984,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2055,7 +2055,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2126,7 +2126,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2197,7 +2197,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2268,7 +2268,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2339,7 +2339,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2410,7 +2410,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2481,7 +2481,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2552,7 +2552,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2617,7 +2617,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2725,7 +2725,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2788,7 +2788,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2853,7 +2853,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2918,7 +2918,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2983,7 +2983,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3048,7 +3048,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3118,7 +3118,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3182,7 +3182,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3245,7 +3245,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3309,7 +3309,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3372,7 +3372,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3436,7 +3436,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3499,7 +3499,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3563,7 +3563,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3626,7 +3626,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3692,7 +3692,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3757,7 +3757,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -3823,7 +3823,7 @@
 											<first>src/sike.c</first>
 											<second>crypto_kem_enc</second>
 										</first>
-										<second>48</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>

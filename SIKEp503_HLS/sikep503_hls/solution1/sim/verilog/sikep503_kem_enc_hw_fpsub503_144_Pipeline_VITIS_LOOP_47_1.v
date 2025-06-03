@@ -13,15 +13,15 @@ module sikep503_kem_enc_hw_fpsub503_144_Pipeline_VITIS_LOOP_47_1 (
         ap_done,
         ap_idle,
         ap_ready,
-        zext_ln48_26,
+        zext_ln48_27,
         a_address0,
         a_ce0,
         a_q0,
-        zext_ln48_25,
+        zext_ln48_26,
         b_address0,
         b_ce0,
         b_q0,
-        zext_ln48_24,
+        zext_ln48_25,
         c_address0,
         c_ce0,
         c_we0,
@@ -38,15 +38,15 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [6:0] zext_ln48_26;
+input  [6:0] zext_ln48_27;
 output  [6:0] a_address0;
 output   a_ce0;
 input  [63:0] a_q0;
-input  [6:0] zext_ln48_25;
+input  [6:0] zext_ln48_26;
 output  [6:0] b_address0;
 output   b_ce0;
 input  [63:0] b_q0;
-input  [3:0] zext_ln48_24;
+input  [3:0] zext_ln48_25;
 output  [3:0] c_address0;
 output   c_ce0;
 output   c_we0;
@@ -83,12 +83,12 @@ wire   [0:0] borrowReg_fu_259_p2;
 reg    ap_condition_exit_pp0_iter1_stage0;
 wire    ap_loop_init;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln48_18_fu_165_p1;
-wire   [63:0] zext_ln48_19_fu_176_p1;
-wire   [63:0] zext_ln48_20_fu_198_p1;
+wire   [63:0] zext_ln48_17_fu_165_p1;
+wire   [63:0] zext_ln48_18_fu_176_p1;
+wire   [63:0] zext_ln48_19_fu_198_p1;
 reg   [3:0] i_fu_54;
 wire   [3:0] add_ln47_fu_149_p2;
-reg   [3:0] ap_sig_allocacmp_i_105;
+reg   [3:0] ap_sig_allocacmp_i_111;
 reg    ap_loop_exit_ready_pp0_iter1_reg;
 wire    ap_block_pp0_stage0_01001;
 reg    a_ce0_local;
@@ -96,7 +96,7 @@ reg    b_ce0_local;
 reg    c_we0_local;
 wire   [63:0] sub_ln48_fu_269_p2;
 reg    c_ce0_local;
-wire   [6:0] zext_ln48_17_fu_155_p1;
+wire   [6:0] zext_ln48_16_fu_155_p1;
 wire   [6:0] add_ln48_fu_159_p2;
 wire   [6:0] add_ln48_5_fu_170_p2;
 wire   [63:0] xor_ln105_82_fu_206_p2;
@@ -275,9 +275,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_105 = 4'd0;
+        ap_sig_allocacmp_i_111 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_105 = i_fu_54;
+        ap_sig_allocacmp_i_111 = i_fu_54;
     end
 end
 
@@ -324,17 +324,17 @@ always @ (*) begin
     endcase
 end
 
-assign a_address0 = zext_ln48_18_fu_165_p1;
+assign a_address0 = zext_ln48_17_fu_165_p1;
 
 assign a_ce0 = a_ce0_local;
 
-assign add_ln47_fu_149_p2 = (ap_sig_allocacmp_i_105 + 4'd1);
+assign add_ln47_fu_149_p2 = (ap_sig_allocacmp_i_111 + 4'd1);
 
-assign add_ln48_5_fu_170_p2 = (zext_ln48_25 + zext_ln48_17_fu_155_p1);
+assign add_ln48_5_fu_170_p2 = (zext_ln48_26 + zext_ln48_16_fu_155_p1);
 
-assign add_ln48_6_fu_181_p2 = (zext_ln48_24 + ap_sig_allocacmp_i_105);
+assign add_ln48_6_fu_181_p2 = (zext_ln48_25 + ap_sig_allocacmp_i_111);
 
-assign add_ln48_fu_159_p2 = (zext_ln48_26 + zext_ln48_17_fu_155_p1);
+assign add_ln48_fu_159_p2 = (zext_ln48_27 + zext_ln48_16_fu_155_p1);
 
 assign and_ln48_fu_253_p2 = (xor_ln48_fu_247_p2 & borrow_reg_122);
 
@@ -358,7 +358,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign b_address0 = zext_ln48_19_fu_176_p1;
+assign b_address0 = zext_ln48_18_fu_176_p1;
 
 assign b_ce0 = b_ce0_local;
 
@@ -366,7 +366,7 @@ assign borrowReg_fu_259_p2 = (tmp_fu_221_p3 | and_ln48_fu_253_p2);
 
 assign borrow_out = borrow_reg_122;
 
-assign c_address0 = zext_ln48_20_fu_198_p1;
+assign c_address0 = zext_ln48_19_fu_198_p1;
 
 assign c_ce0 = c_ce0_local;
 
@@ -374,7 +374,7 @@ assign c_d0 = sub_ln48_fu_269_p2;
 
 assign c_we0 = c_we0_local;
 
-assign icmp_ln47_fu_143_p2 = ((ap_sig_allocacmp_i_105 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln47_fu_143_p2 = ((ap_sig_allocacmp_i_111 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln105_fu_210_p2 = (xor_ln105_fu_202_p2 | xor_ln105_82_fu_206_p2);
 
@@ -398,13 +398,13 @@ assign xor_ln105_fu_202_p2 = (b_load_reg_307 ^ a_load_reg_301);
 
 assign xor_ln48_fu_247_p2 = (tmp_168_fu_239_p3 ^ 1'd1);
 
-assign zext_ln48_17_fu_155_p1 = ap_sig_allocacmp_i_105;
+assign zext_ln48_16_fu_155_p1 = ap_sig_allocacmp_i_111;
 
-assign zext_ln48_18_fu_165_p1 = add_ln48_fu_159_p2;
+assign zext_ln48_17_fu_165_p1 = add_ln48_fu_159_p2;
 
-assign zext_ln48_19_fu_176_p1 = add_ln48_5_fu_170_p2;
+assign zext_ln48_18_fu_176_p1 = add_ln48_5_fu_170_p2;
 
-assign zext_ln48_20_fu_198_p1 = add_ln48_6_reg_296_pp0_iter1_reg;
+assign zext_ln48_19_fu_198_p1 = add_ln48_6_reg_296_pp0_iter1_reg;
 
 assign zext_ln48_fu_265_p1 = borrow_reg_122;
 

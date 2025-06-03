@@ -72,7 +72,7 @@ wire    ap_block_pp0_stage0_subdone;
 wire    ap_loop_init;
 wire   [63:0] zext_ln350_fu_109_p1;
 wire    ap_block_pp0_stage0;
-reg   [4:0] i_234_fu_44;
+reg   [4:0] i_236_fu_44;
 wire   [4:0] add_ln350_fu_103_p2;
 reg   [4:0] ap_sig_allocacmp_i;
 reg    tt1_ce1_local;
@@ -91,7 +91,7 @@ wire   [63:0] xor_ln352_s_fu_166_p3;
 wire   [63:0] or_ln352_fu_144_p2;
 wire   [63:0] xor_ln352_181_fu_179_p2;
 wire   [63:0] and_ln352_fu_174_p2;
-wire   [63:0] or_ln352_73_fu_185_p2;
+wire   [63:0] or_ln352_74_fu_185_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -109,7 +109,7 @@ initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 i_234_fu_44 = 5'd0;
+#0 i_236_fu_44 = 5'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -173,7 +173,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
         if ((1'b1 == ap_condition_254)) begin
-            carry_reg_78 <= or_ln352_73_fu_185_p2[32'd63];
+            carry_reg_78 <= or_ln352_74_fu_185_p2[32'd63];
         end else if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_loop_init == 1'b1))) begin
             carry_reg_78 <= 1'd0;
         end
@@ -183,9 +183,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln350_fu_97_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_234_fu_44 <= add_ln350_fu_103_p2;
+            i_236_fu_44 <= add_ln350_fu_103_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_234_fu_44 <= 5'd0;
+            i_236_fu_44 <= 5'd0;
         end
     end
 end
@@ -270,7 +270,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 5'd0;
     end else begin
-        ap_sig_allocacmp_i = i_234_fu_44;
+        ap_sig_allocacmp_i = i_236_fu_44;
     end
 end
 
@@ -366,7 +366,7 @@ assign bit_sel_fu_150_p3 = tempReg_reg_226[64'd63];
 
 assign icmp_ln350_fu_97_p2 = ((ap_sig_allocacmp_i == 5'd16) ? 1'b1 : 1'b0);
 
-assign or_ln352_73_fu_185_p2 = (xor_ln352_181_fu_179_p2 | and_ln352_fu_174_p2);
+assign or_ln352_74_fu_185_p2 = (xor_ln352_181_fu_179_p2 | and_ln352_fu_174_p2);
 
 assign or_ln352_fu_144_p2 = (xor_ln352_179_fu_140_p2 | xor_ln352_178_fu_135_p2);
 

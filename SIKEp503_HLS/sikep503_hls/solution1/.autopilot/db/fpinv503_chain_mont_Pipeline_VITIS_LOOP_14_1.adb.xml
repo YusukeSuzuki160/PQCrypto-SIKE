@@ -25,10 +25,10 @@
 
 <Node id="3" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_34 = alloca i32 1
+newFuncRoot:0 %i_36 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_34"/></StgValue>
+<StgValue><ssdm name="i_36"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -40,7 +40,7 @@ newFuncRoot:0 %i_34 = alloca i32 1
 
 <Node id="4" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:1 %store_ln12 = store i4 0, i4 %i_34
+newFuncRoot:1 %store_ln12 = store i4 0, i4 %i_36
 
 ]]></Node>
 <StgValue><ssdm name="store_ln12"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i
 
 <Node id="7" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i:0 %i = load i4 %i_34
+for.inc.i:0 %i = load i4 %i_36
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -179,7 +179,7 @@ for.inc.i.split:5 %a_load = load i3 %a_addr
 
 <Node id="20" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i.split:8 %store_ln12 = store i4 %add_ln14, i4 %i_34
+for.inc.i.split:8 %store_ln12 = store i4 %add_ln14, i4 %i_36
 
 ]]></Node>
 <StgValue><ssdm name="store_ln12"/></StgValue>
@@ -213,7 +213,7 @@ for.inc15.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.split:1 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i.split:1 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln12"/></StgValue>
@@ -243,7 +243,7 @@ for.inc.i.split:2 %speclooptripcount_ln12 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.split:3 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
+for.inc.i.split:3 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln14"/></StgValue>
@@ -325,13 +325,13 @@ for.inc.i.split:9 %br_ln14 = br void %for.inc.i
 
 
 <dataflows>
-<dataflow id="36" from="StgValue_35" to="i_34" fromId="35" toId="5">
+<dataflow id="36" from="StgValue_35" to="i_36" fromId="35" toId="5">
 </dataflow>
 <dataflow id="38" from="StgValue_37" to="store_ln12" fromId="37" toId="6">
 </dataflow>
-<dataflow id="39" from="i_34" to="store_ln12" fromId="5" toId="6">
+<dataflow id="39" from="i_36" to="store_ln12" fromId="5" toId="6">
 </dataflow>
-<dataflow id="40" from="i_34" to="i" fromId="5" toId="8">
+<dataflow id="40" from="i_36" to="i" fromId="5" toId="8">
 </dataflow>
 <dataflow id="41" from="i" to="icmp_ln14" fromId="8" toId="9">
 </dataflow>
@@ -355,7 +355,7 @@ for.inc.i.split:9 %br_ln14 = br void %for.inc.i
 </dataflow>
 <dataflow id="54" from="add_ln14" to="store_ln12" fromId="10" toId="15">
 </dataflow>
-<dataflow id="55" from="i_34" to="store_ln12" fromId="5" toId="15">
+<dataflow id="55" from="i_36" to="store_ln12" fromId="5" toId="15">
 </dataflow>
 <dataflow id="57" from="_ssdm_op_SpecPipeline" to="specpipeline_ln12" fromId="56" toId="16">
 </dataflow>
@@ -367,7 +367,7 @@ for.inc.i.split:9 %br_ln14 = br void %for.inc.i
 </dataflow>
 <dataflow id="63" from="StgValue_60" to="specpipeline_ln12" fromId="60" toId="16">
 </dataflow>
-<dataflow id="65" from="empty_44" to="specpipeline_ln12" fromId="64" toId="16">
+<dataflow id="65" from="empty_60" to="specpipeline_ln12" fromId="64" toId="16">
 </dataflow>
 <dataflow id="67" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln12" fromId="66" toId="17">
 </dataflow>
@@ -379,7 +379,7 @@ for.inc.i.split:9 %br_ln14 = br void %for.inc.i
 </dataflow>
 <dataflow id="73" from="_ssdm_op_SpecLoopName" to="specloopname_ln14" fromId="72" toId="18">
 </dataflow>
-<dataflow id="75" from="empty_2" to="specloopname_ln14" fromId="74" toId="18">
+<dataflow id="75" from="empty_31" to="specloopname_ln14" fromId="74" toId="18">
 </dataflow>
 <dataflow id="76" from="a_addr" to="a_load" fromId="13" toId="19">
 </dataflow>

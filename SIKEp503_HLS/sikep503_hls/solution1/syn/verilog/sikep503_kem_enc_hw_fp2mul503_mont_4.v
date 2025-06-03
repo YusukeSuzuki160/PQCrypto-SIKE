@@ -24,22 +24,22 @@ module sikep503_kem_enc_hw_fp2mul503_mont_4 (
         c_we0,
         c_d0,
         c_q0,
-        grp_fu_1361_p_din0,
-        grp_fu_1361_p_din1,
-        grp_fu_1361_p_dout0,
-        grp_fu_1361_p_ce,
-        grp_fu_1365_p_din0,
-        grp_fu_1365_p_din1,
-        grp_fu_1365_p_dout0,
-        grp_fu_1365_p_ce,
-        grp_fu_1369_p_din0,
-        grp_fu_1369_p_din1,
-        grp_fu_1369_p_dout0,
-        grp_fu_1369_p_ce,
         grp_fu_1373_p_din0,
         grp_fu_1373_p_din1,
         grp_fu_1373_p_dout0,
-        grp_fu_1373_p_ce
+        grp_fu_1373_p_ce,
+        grp_fu_1377_p_din0,
+        grp_fu_1377_p_din1,
+        grp_fu_1377_p_dout0,
+        grp_fu_1377_p_ce,
+        grp_fu_1381_p_din0,
+        grp_fu_1381_p_din1,
+        grp_fu_1381_p_dout0,
+        grp_fu_1381_p_ce,
+        grp_fu_1385_p_din0,
+        grp_fu_1385_p_din1,
+        grp_fu_1385_p_dout0,
+        grp_fu_1385_p_ce
 );
 
 parameter    ap_ST_fsm_state1 = 14'd1;
@@ -74,22 +74,22 @@ output   c_ce0;
 output   c_we0;
 output  [63:0] c_d0;
 input  [63:0] c_q0;
-output  [31:0] grp_fu_1361_p_din0;
-output  [31:0] grp_fu_1361_p_din1;
-input  [63:0] grp_fu_1361_p_dout0;
-output   grp_fu_1361_p_ce;
-output  [31:0] grp_fu_1365_p_din0;
-output  [31:0] grp_fu_1365_p_din1;
-input  [63:0] grp_fu_1365_p_dout0;
-output   grp_fu_1365_p_ce;
-output  [31:0] grp_fu_1369_p_din0;
-output  [31:0] grp_fu_1369_p_din1;
-input  [63:0] grp_fu_1369_p_dout0;
-output   grp_fu_1369_p_ce;
 output  [31:0] grp_fu_1373_p_din0;
 output  [31:0] grp_fu_1373_p_din1;
 input  [63:0] grp_fu_1373_p_dout0;
 output   grp_fu_1373_p_ce;
+output  [31:0] grp_fu_1377_p_din0;
+output  [31:0] grp_fu_1377_p_din1;
+input  [63:0] grp_fu_1377_p_dout0;
+output   grp_fu_1377_p_ce;
+output  [31:0] grp_fu_1381_p_din0;
+output  [31:0] grp_fu_1381_p_din1;
+input  [63:0] grp_fu_1381_p_dout0;
+output   grp_fu_1381_p_ce;
+output  [31:0] grp_fu_1385_p_din0;
+output  [31:0] grp_fu_1385_p_din1;
+input  [63:0] grp_fu_1385_p_dout0;
+output   grp_fu_1385_p_ce;
 
 reg ap_done;
 reg ap_idle;
@@ -444,19 +444,19 @@ sikep503_kem_enc_hw_mp_mul_8 grp_mp_mul_8_fu_60(
     .c_d0(grp_mp_mul_8_fu_60_c_d0),
     .grp_fu_149_p_din0(grp_mp_mul_8_fu_60_grp_fu_149_p_din0),
     .grp_fu_149_p_din1(grp_mp_mul_8_fu_60_grp_fu_149_p_din1),
-    .grp_fu_149_p_dout0(grp_fu_1361_p_dout0),
+    .grp_fu_149_p_dout0(grp_fu_1373_p_dout0),
     .grp_fu_149_p_ce(grp_mp_mul_8_fu_60_grp_fu_149_p_ce),
     .grp_fu_153_p_din0(grp_mp_mul_8_fu_60_grp_fu_153_p_din0),
     .grp_fu_153_p_din1(grp_mp_mul_8_fu_60_grp_fu_153_p_din1),
-    .grp_fu_153_p_dout0(grp_fu_1365_p_dout0),
+    .grp_fu_153_p_dout0(grp_fu_1377_p_dout0),
     .grp_fu_153_p_ce(grp_mp_mul_8_fu_60_grp_fu_153_p_ce),
     .grp_fu_157_p_din0(grp_mp_mul_8_fu_60_grp_fu_157_p_din0),
     .grp_fu_157_p_din1(grp_mp_mul_8_fu_60_grp_fu_157_p_din1),
-    .grp_fu_157_p_dout0(grp_fu_1369_p_dout0),
+    .grp_fu_157_p_dout0(grp_fu_1381_p_dout0),
     .grp_fu_157_p_ce(grp_mp_mul_8_fu_60_grp_fu_157_p_ce),
     .grp_fu_161_p_din0(grp_mp_mul_8_fu_60_grp_fu_161_p_din0),
     .grp_fu_161_p_din1(grp_mp_mul_8_fu_60_grp_fu_161_p_din1),
-    .grp_fu_161_p_dout0(grp_fu_1373_p_dout0),
+    .grp_fu_161_p_dout0(grp_fu_1385_p_dout0),
     .grp_fu_161_p_ce(grp_mp_mul_8_fu_60_grp_fu_161_p_ce)
 );
 
@@ -479,19 +479,19 @@ sikep503_kem_enc_hw_mp_mul_9 grp_mp_mul_9_fu_68(
     .c_d0(grp_mp_mul_9_fu_68_c_d0),
     .grp_fu_149_p_din0(grp_mp_mul_9_fu_68_grp_fu_149_p_din0),
     .grp_fu_149_p_din1(grp_mp_mul_9_fu_68_grp_fu_149_p_din1),
-    .grp_fu_149_p_dout0(grp_fu_1361_p_dout0),
+    .grp_fu_149_p_dout0(grp_fu_1373_p_dout0),
     .grp_fu_149_p_ce(grp_mp_mul_9_fu_68_grp_fu_149_p_ce),
     .grp_fu_153_p_din0(grp_mp_mul_9_fu_68_grp_fu_153_p_din0),
     .grp_fu_153_p_din1(grp_mp_mul_9_fu_68_grp_fu_153_p_din1),
-    .grp_fu_153_p_dout0(grp_fu_1365_p_dout0),
+    .grp_fu_153_p_dout0(grp_fu_1377_p_dout0),
     .grp_fu_153_p_ce(grp_mp_mul_9_fu_68_grp_fu_153_p_ce),
     .grp_fu_157_p_din0(grp_mp_mul_9_fu_68_grp_fu_157_p_din0),
     .grp_fu_157_p_din1(grp_mp_mul_9_fu_68_grp_fu_157_p_din1),
-    .grp_fu_157_p_dout0(grp_fu_1369_p_dout0),
+    .grp_fu_157_p_dout0(grp_fu_1381_p_dout0),
     .grp_fu_157_p_ce(grp_mp_mul_9_fu_68_grp_fu_157_p_ce),
     .grp_fu_161_p_din0(grp_mp_mul_9_fu_68_grp_fu_161_p_din0),
     .grp_fu_161_p_din1(grp_mp_mul_9_fu_68_grp_fu_161_p_din1),
-    .grp_fu_161_p_dout0(grp_fu_1373_p_dout0),
+    .grp_fu_161_p_dout0(grp_fu_1385_p_dout0),
     .grp_fu_161_p_ce(grp_mp_mul_9_fu_68_grp_fu_161_p_ce)
 );
 
@@ -1456,29 +1456,29 @@ assign grp_fp2mul503_mont_4_Pipeline_VITIS_LOOP_350_1171_fu_105_ap_start = grp_f
 
 assign grp_fp2mul503_mont_4_Pipeline_VITIS_LOOP_350_1_fu_75_ap_start = grp_fp2mul503_mont_4_Pipeline_VITIS_LOOP_350_1_fu_75_ap_start_reg;
 
-assign grp_fu_1361_p_ce = grp_fu_149_ce;
+assign grp_fu_1373_p_ce = grp_fu_149_ce;
 
-assign grp_fu_1361_p_din0 = grp_fu_149_p0;
+assign grp_fu_1373_p_din0 = grp_fu_149_p0;
 
-assign grp_fu_1361_p_din1 = grp_fu_149_p1;
+assign grp_fu_1373_p_din1 = grp_fu_149_p1;
 
-assign grp_fu_1365_p_ce = grp_fu_153_ce;
+assign grp_fu_1377_p_ce = grp_fu_153_ce;
 
-assign grp_fu_1365_p_din0 = grp_fu_153_p0;
+assign grp_fu_1377_p_din0 = grp_fu_153_p0;
 
-assign grp_fu_1365_p_din1 = grp_fu_153_p1;
+assign grp_fu_1377_p_din1 = grp_fu_153_p1;
 
-assign grp_fu_1369_p_ce = grp_fu_157_ce;
+assign grp_fu_1381_p_ce = grp_fu_157_ce;
 
-assign grp_fu_1369_p_din0 = grp_fu_157_p0;
+assign grp_fu_1381_p_din0 = grp_fu_157_p0;
 
-assign grp_fu_1369_p_din1 = grp_fu_157_p1;
+assign grp_fu_1381_p_din1 = grp_fu_157_p1;
 
-assign grp_fu_1373_p_ce = grp_fu_161_ce;
+assign grp_fu_1385_p_ce = grp_fu_161_ce;
 
-assign grp_fu_1373_p_din0 = grp_fu_161_p0;
+assign grp_fu_1385_p_din0 = grp_fu_161_p0;
 
-assign grp_fu_1373_p_din1 = grp_fu_161_p1;
+assign grp_fu_1385_p_din1 = grp_fu_161_p1;
 
 assign grp_mp_mul_152_fu_123_ap_start = grp_mp_mul_152_fu_123_ap_start_reg;
 

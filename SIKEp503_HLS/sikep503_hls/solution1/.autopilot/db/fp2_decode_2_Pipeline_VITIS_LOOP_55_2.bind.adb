@@ -200,7 +200,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>i_243</name>
+						<name>i_245</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -427,7 +427,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>i_243_write_ln51</name>
+						<name>i_245_write_ln51</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -2122,7 +2122,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>gmem_addr_1</name>
+						<name>gmem_addr_3</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>58</lineNumber>
@@ -2238,7 +2238,7 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>gmem_addr_1_read</name>
+						<name>gmem_addr_3_read</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>58</lineNumber>
@@ -3098,7 +3098,7 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>i_243_write_ln51</name>
+						<name>i_245_write_ln51</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -6237,7 +6237,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_1_fu_215</first>
+			<first>gmem_addr_3_fu_215</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6253,7 +6253,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_243_fu_82</first>
+			<first>i_245_fu_82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6485,7 +6485,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_1_read_read_fu_123</first>
+			<first>gmem_addr_3_read_read_fu_123</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6719,7 +6719,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_1_read_reg_411</first>
+			<first>gmem_addr_3_read_reg_411</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6727,7 +6727,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_1_reg_389</first>
+			<first>gmem_addr_3_reg_389</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6751,7 +6751,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_243_reg_348</first>
+			<first>i_245_reg_348</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

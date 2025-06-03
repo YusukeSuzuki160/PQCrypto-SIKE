@@ -1323,10 +1323,10 @@ for.inc58.split:60 %add_ln105 = add i32 %trunc_ln130, i32 %add_ln130
 
 <Node id="91" bw="34" op_0_bw="34" op_1_bw="34">
 <![CDATA[
-for.inc58.split:61 %temp_25 = add i34 %zext_ln130_44, i34 %zext_ln130_43
+for.inc58.split:61 %temp_28 = add i34 %zext_ln130_44, i34 %zext_ln130_43
 
 ]]></Node>
-<StgValue><ssdm name="temp_25"/></StgValue>
+<StgValue><ssdm name="temp_28"/></StgValue>
 </operation>
 
 <operation id="96" st_id="7" stage="1" lat="1">
@@ -1338,7 +1338,7 @@ for.inc58.split:61 %temp_25 = add i34 %zext_ln130_44, i34 %zext_ln130_43
 
 <Node id="94" bw="2" op_0_bw="2" op_1_bw="34" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-for.inc58.split:64 %tmp_116 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_25, i32 32, i32 33
+for.inc58.split:64 %tmp_116 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_28, i32 32, i32 33
 
 ]]></Node>
 <StgValue><ssdm name="tmp_116"/></StgValue>
@@ -1772,7 +1772,7 @@ for.inc58.split:0 %t_33_load = load i3 %t_33
 
 <Node id="34" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc58.split:4 %specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc58.split:4 %specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln139"/></StgValue>
@@ -1802,7 +1802,7 @@ for.inc58.split:5 %speclooptripcount_ln139 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="36" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc58.split:6 %specloopname_ln159 = specloopname void @_ssdm_op_SpecLoopName, void @empty_41
+for.inc58.split:6 %specloopname_ln159 = specloopname void @_ssdm_op_SpecLoopName, void @empty_43
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln159"/></StgValue>

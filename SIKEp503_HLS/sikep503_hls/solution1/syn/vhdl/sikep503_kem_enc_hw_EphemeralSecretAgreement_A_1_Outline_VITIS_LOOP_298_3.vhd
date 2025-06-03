@@ -386,7 +386,7 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state33 : signal is "none";
     signal ap_CS_fsm_state34 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state34 : signal is "none";
-    signal i_283_fu_64 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
+    signal i_281_fu_64 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal add_ln298_fu_265_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal icmp_ln298_fu_260_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (33 downto 0);
@@ -1215,13 +1215,13 @@ begin
     end process;
 
 
-    i_283_fu_64_assign_proc : process (ap_clk)
+    i_281_fu_64_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                i_283_fu_64 <= ap_const_lv32_0;
+                i_281_fu_64 <= ap_const_lv32_0;
             elsif (((icmp_ln298_fu_260_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
-                i_283_fu_64 <= add_ln298_fu_265_p2;
+                i_281_fu_64 <= add_ln298_fu_265_p2;
             end if; 
         end if;
     end process;
@@ -1229,7 +1229,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                i_reg_288 <= i_283_fu_64;
+                i_reg_288 <= i_281_fu_64;
             end if;
         end if;
     end process;
@@ -1381,7 +1381,7 @@ begin
                 ap_NS_fsm <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end case;
     end process;
-    add_ln298_fu_265_p2 <= std_logic_vector(unsigned(i_283_fu_64) + unsigned(ap_const_lv32_1));
+    add_ln298_fu_265_p2 <= std_logic_vector(unsigned(i_281_fu_64) + unsigned(ap_const_lv32_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
     ap_CS_fsm_state11 <= ap_CS_fsm(10);
@@ -1980,7 +1980,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln298_fu_260_p2 <= "1" when (i_283_fu_64 = npts_1) else "0";
+    icmp_ln298_fu_260_p2 <= "1" when (i_281_fu_64 = npts_1) else "0";
 
     pts_X_address0_assign_proc : process(grp_fpadd503_150_fu_82_a_address0, grp_fpsub503_144_fu_104_a_address0, grp_fp2mul503_mont_78_fu_126_c_address0, grp_fpsub503_144_275_fu_165_a_address0, grp_fpadd503_149_fu_203_c_address0, grp_fp2mul503_mont_133_1_fu_239_c_address0, ap_CS_fsm_state4, ap_CS_fsm_state6, ap_CS_fsm_state18, ap_CS_fsm_state20, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state22, ap_CS_fsm_state24, ap_CS_fsm_state26, ap_CS_fsm_state28, ap_CS_fsm_state30)
     begin

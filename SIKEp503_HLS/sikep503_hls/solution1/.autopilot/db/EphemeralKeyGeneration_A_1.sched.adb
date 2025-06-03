@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>ephemeralsk</name>
+						<name>ephemeralsk_i</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13367,7 +13367,7 @@
 					<Obj>
 						<type>0</type>
 						<id>309</id>
-						<name>i_307</name>
+						<name>i_305</name>
 						<fileName>src/ec_isogeny.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>36</lineNumber>
@@ -21188,7 +21188,7 @@
 					<Obj>
 						<type>2</type>
 						<id>992</id>
-						<name>LADDER3PT_79_80_1</name>
+						<name>LADDER3PT_75_76_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -21212,7 +21212,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.79.80.1&gt;</content>
+				<content>&lt;constant:LADDER3PT.75.76.1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_415">
 				<Value>

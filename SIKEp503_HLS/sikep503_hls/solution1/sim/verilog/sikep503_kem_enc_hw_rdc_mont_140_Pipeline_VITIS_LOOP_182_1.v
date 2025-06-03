@@ -47,7 +47,7 @@ wire   [63:0] zext_ln183_5_fu_82_p1;
 reg   [3:0] i_fu_32;
 wire   [3:0] add_ln182_fu_70_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_15;
+reg   [3:0] ap_sig_allocacmp_i_18;
 reg    mc_we0_local;
 reg    mc_ce0_local;
 wire   [3:0] add_ln183_fu_76_p2;
@@ -155,9 +155,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_15 = 4'd0;
+        ap_sig_allocacmp_i_18 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_15 = i_fu_32;
+        ap_sig_allocacmp_i_18 = i_fu_32;
     end
 end
 
@@ -188,9 +188,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln182_fu_70_p2 = (ap_sig_allocacmp_i_15 + 4'd1);
+assign add_ln182_fu_70_p2 = (ap_sig_allocacmp_i_18 + 4'd1);
 
-assign add_ln183_fu_76_p2 = (zext_ln183 + ap_sig_allocacmp_i_15);
+assign add_ln183_fu_76_p2 = (zext_ln183 + ap_sig_allocacmp_i_18);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -204,7 +204,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln182_fu_64_p2 = ((ap_sig_allocacmp_i_15 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln182_fu_64_p2 = ((ap_sig_allocacmp_i_18 == 4'd8) ? 1'b1 : 1'b0);
 
 assign mc_address0 = zext_ln183_5_fu_82_p1;
 

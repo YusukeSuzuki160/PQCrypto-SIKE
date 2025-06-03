@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_8'
 ================================================================
-* Date:           Tue May 27 14:18:13 2025
+* Date:           Tue Jun  3 14:13:17 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -182,25 +182,25 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%carry_157_loc = alloca i64 1"   --->   Operation 7 'alloca' 'carry_157_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%carry_151_loc = alloca i64 1"   --->   Operation 7 'alloca' 'carry_151_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_23_1, i64 %coeff"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 4.91>
 ST_2 : Operation 9 [1/2] (4.91ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_23_1, i64 %coeff"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_28_2, i64 %coeff, i1 %carry_157_loc, i64 %p503x2_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_28_2, i64 %coeff, i1 %carry_151_loc, i64 %p503x2_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 4.91>
-ST_4 : Operation 11 [1/2] (4.91ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_28_2, i64 %coeff, i1 %carry_157_loc, i64 %p503x2_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 11 [1/2] (4.91ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_28_2, i64 %coeff, i1 %carry_151_loc, i64 %p503x2_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.99>
-ST_5 : Operation 12 [1/1] (0.00ns)   --->   "%carry_157_loc_load = load i1 %carry_157_loc"   --->   Operation 12 'load' 'carry_157_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 13 [2/2] (0.99ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_34_3, i64 %coeff, i1 %carry_157_loc_load, i64 %p503x2_1"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 12 [1/1] (0.00ns)   --->   "%carry_151_loc_load = load i1 %carry_151_loc"   --->   Operation 12 'load' 'carry_151_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 13 [2/2] (0.99ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_34_3, i64 %coeff, i1 %carry_151_loc_load, i64 %p503x2_1"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 4.91>
 ST_6 : Operation 14 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %coeff"   --->   Operation 14 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 15 [1/2] (4.91ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_34_3, i64 %coeff, i1 %carry_157_loc_load, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 15 [1/2] (4.91ns)   --->   "%call_ln0 = call void @fpadd503.8_Pipeline_VITIS_LOOP_34_3, i64 %coeff, i1 %carry_151_loc_load, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
 ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [src/generic/fp_generic.c:37]   --->   Operation 16 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
 
 
@@ -223,10 +223,10 @@ Port [ p503x2_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; e
 
 <LifeTime>
 <method=bitvector/>
-carry_157_loc              (alloca                ) [ 0011110]
+carry_151_loc              (alloca                ) [ 0011110]
 call_ln0                   (call                  ) [ 0000000]
 call_ln0                   (call                  ) [ 0000000]
-carry_157_loc_load         (load                  ) [ 0000001]
+carry_151_loc_load         (load                  ) [ 0000001]
 specbramwithbyteenable_ln0 (specbramwithbyteenable) [ 0000000]
 call_ln0                   (call                  ) [ 0000000]
 ret_ln37                   (ret                   ) [ 0000000]
@@ -300,14 +300,14 @@ ret_ln37                   (ret                   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="14" class="1004" name="carry_157_loc_fu_14">
+<comp id="14" class="1004" name="carry_151_loc_fu_14">
 <pin_list>
 <pin id="15" dir="0" index="0" bw="1" slack="0"/>
 <pin id="16" dir="1" index="1" bw="1" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="carry_157_loc/1 "/>
+<opset="carry_151_loc/1 "/>
 </bind>
 </comp>
 
@@ -351,24 +351,24 @@ ret_ln37                   (ret                   ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="42" class="1004" name="carry_157_loc_load_load_fu_42">
+<comp id="42" class="1004" name="carry_151_loc_load_load_fu_42">
 <pin_list>
 <pin id="43" dir="0" index="0" bw="1" slack="4"/>
 <pin id="44" dir="1" index="1" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="carry_157_loc_load/5 "/>
+<opset="carry_151_loc_load/5 "/>
 </bind>
 </comp>
 
-<comp id="46" class="1005" name="carry_157_loc_reg_46">
+<comp id="46" class="1005" name="carry_151_loc_reg_46">
 <pin_list>
 <pin id="47" dir="0" index="0" bw="1" slack="2"/>
 <pin id="48" dir="1" index="1" bw="1" slack="2"/>
 </pin_list>
 <bind>
-<opset="carry_157_loc "/>
+<opset="carry_151_loc "/>
 </bind>
 </comp>
 
@@ -445,7 +445,7 @@ N/A
 +--------------------+--------+
 |                    |   FF   |
 +--------------------+--------+
-|carry_157_loc_reg_46|    1   |
+|carry_151_loc_reg_46|    1   |
 +--------------------+--------+
 |        Total       |    1   |
 +--------------------+--------+

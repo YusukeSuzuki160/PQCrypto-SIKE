@@ -255,7 +255,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -361,7 +361,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -467,7 +467,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -531,7 +531,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -595,7 +595,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -659,7 +659,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -724,7 +724,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -787,14 +787,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -859,14 +859,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -929,7 +929,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -995,14 +995,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1066,14 +1066,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1136,14 +1136,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1208,14 +1208,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1278,14 +1278,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1350,14 +1350,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1420,14 +1420,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1492,14 +1492,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1562,14 +1562,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1634,14 +1634,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1704,14 +1704,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1776,14 +1776,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1846,14 +1846,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1917,14 +1917,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -1987,14 +1987,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2059,14 +2059,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2129,14 +2129,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2201,14 +2201,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2271,14 +2271,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2343,14 +2343,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2413,14 +2413,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2485,14 +2485,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 									<item>
 										<first>
@@ -2539,7 +2539,7 @@
 						<name>s_addr</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>393</lineNumber>
+						<lineNumber>395</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -2555,14 +2555,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 								</second>
 							</item>
@@ -2604,7 +2604,7 @@
 						<name>s_load</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>393</lineNumber>
+						<lineNumber>395</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -2620,14 +2620,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 								</second>
 							</item>
@@ -2664,10 +2664,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>or_ln393_6</name>
+						<name>or_ln395_6</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>393</lineNumber>
+						<lineNumber>395</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -2683,14 +2683,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 								</second>
 							</item>
@@ -2735,10 +2735,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>xor_ln393</name>
+						<name>xor_ln395</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>393</lineNumber>
+						<lineNumber>395</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -2754,14 +2754,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 								</second>
 							</item>
@@ -2799,10 +2799,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>s_addr_write_ln393</name>
+						<name>s_addr_write_ln395</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>393</lineNumber>
+						<lineNumber>395</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -2818,14 +2818,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>393</second>
+										<second>395</second>
 									</item>
 								</second>
 							</item>
@@ -2885,7 +2885,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>
@@ -2951,7 +2951,7 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>609</second>
+										<second>624</second>
 									</item>
 									<item>
 										<first>

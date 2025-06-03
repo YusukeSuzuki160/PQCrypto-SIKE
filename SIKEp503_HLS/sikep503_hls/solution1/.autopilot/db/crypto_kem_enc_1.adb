@@ -380,7 +380,7 @@
               <name>t</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>620</lineNumber>
+              <lineNumber>635</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -396,14 +396,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>620</second>
+                      <second>635</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -443,7 +443,7 @@
               <name>t_44</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>620</lineNumber>
+              <lineNumber>635</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -459,14 +459,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>620</second>
+                      <second>635</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -506,7 +506,7 @@
               <name>t_45</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>620</lineNumber>
+              <lineNumber>635</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -522,14 +522,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>620</second>
+                      <second>635</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -569,7 +569,7 @@
               <name>t_46</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>620</lineNumber>
+              <lineNumber>635</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -585,14 +585,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>620</second>
+                      <second>635</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -632,7 +632,7 @@
               <name>jinvariant</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>40</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -648,7 +648,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>40</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
@@ -688,7 +688,7 @@
               <name>h</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>41</lineNumber>
+              <lineNumber>42</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -704,7 +704,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>41</second>
+                      <second>42</second>
                     </item>
                   </second>
                 </item>
@@ -744,7 +744,7 @@
               <name>temp</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -760,7 +760,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -800,7 +800,7 @@
               <name>temp_1</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -816,7 +816,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -856,7 +856,7 @@
               <name>temp_2</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -872,7 +872,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -912,7 +912,7 @@
               <name>temp_3</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -928,7 +928,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -1015,7 +1015,7 @@
               <name>gmem_addr</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1031,7 +1031,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -1072,7 +1072,7 @@
               <name>empty</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1088,7 +1088,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -1178,10 +1178,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>_ln55</name>
+              <name>_ln50</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>55</lineNumber>
+              <lineNumber>50</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1197,7 +1197,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>55</second>
+                      <second>50</second>
                     </item>
                   </second>
                 </item>
@@ -1245,7 +1245,7 @@
               <name>ephemeralsk_addr</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>56</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1261,7 +1261,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>56</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
@@ -1303,7 +1303,7 @@
               <name>ephemeralsk_load</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>56</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1319,7 +1319,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>56</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
@@ -1357,10 +1357,10 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>trunc_ln56</name>
+              <name>trunc_ln51</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>56</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1376,13 +1376,13 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>56</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln56_fu_393_p1</rtlName>
+              <rtlName>trunc_ln51_fu_393_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1413,10 +1413,10 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>zext_ln56</name>
+              <name>zext_ln51</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>56</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1432,13 +1432,13 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>56</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln56_fu_397_p1</rtlName>
+              <rtlName>zext_ln51_fu_397_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1469,10 +1469,10 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>ephemeralsk_addr_write_ln56</name>
+              <name>ephemeralsk_addr_write_ln51</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>56</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1488,7 +1488,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>56</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
@@ -1527,10 +1527,10 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>_ln63</name>
+              <name>_ln54</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>63</lineNumber>
+              <lineNumber>54</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1546,7 +1546,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>63</second>
+                      <second>54</second>
                     </item>
                   </second>
                 </item>
@@ -1602,10 +1602,10 @@
             <Obj>
               <type>0</type>
               <id>50</id>
-              <name>_ln69</name>
+              <name>_ln55</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>69</lineNumber>
+              <lineNumber>55</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1621,7 +1621,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>69</second>
+                      <second>55</second>
                     </item>
                   </second>
                 </item>
@@ -1673,10 +1673,10 @@
             <Obj>
               <type>0</type>
               <id>51</id>
-              <name>_ln75</name>
+              <name>_ln56</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>75</lineNumber>
+              <lineNumber>56</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1692,7 +1692,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>75</second>
+                      <second>56</second>
                     </item>
                   </second>
                 </item>
@@ -1734,10 +1734,10 @@
             <Obj>
               <type>0</type>
               <id>52</id>
-              <name>add_ln81</name>
+              <name>add_ln59</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>81</lineNumber>
+              <lineNumber>59</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1753,13 +1753,13 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>81</second>
+                      <second>59</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln81_fu_402_p2</rtlName>
+              <rtlName>add_ln59_fu_402_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1794,7 +1794,7 @@
               <name>gmem_addr_3</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>81</lineNumber>
+              <lineNumber>59</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1810,7 +1810,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>81</second>
+                      <second>59</second>
                     </item>
                   </second>
                 </item>
@@ -1851,7 +1851,7 @@
               <name>empty_183</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>81</lineNumber>
+              <lineNumber>59</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1867,7 +1867,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>81</second>
+                      <second>59</second>
                     </item>
                   </second>
                 </item>
@@ -1907,10 +1907,10 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>_ln81</name>
+              <name>_ln59</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>81</lineNumber>
+              <lineNumber>59</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1926,13 +1926,13 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>81</second>
+                      <second>59</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323</rtlName>
+              <rtlName>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1976,7 +1976,7 @@
               <name>empty_184</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>89</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1992,7 +1992,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>89</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
@@ -2034,7 +2034,7 @@
               <name>gmem_addr_4</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>89</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -2050,7 +2050,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>89</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
@@ -2091,7 +2091,7 @@
               <name>empty_185</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>89</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -2107,7 +2107,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>89</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
@@ -2198,10 +2198,10 @@
             <Obj>
               <type>0</type>
               <id>60</id>
-              <name>_ln623</name>
+              <name>_ln638</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>623</lineNumber>
+              <lineNumber>638</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -2217,14 +2217,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>623</second>
+                      <second>638</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2270,10 +2270,10 @@
             <Obj>
               <type>0</type>
               <id>61</id>
-              <name>_ln417</name>
+              <name>_ln430</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>417</lineNumber>
+              <lineNumber>430</lineNumber>
               <contextFuncName>keccak_squeezeblocks</contextFuncName>
               <contextNormFuncName>keccak_squeezeblocks</contextNormFuncName>
               <inlineStackInfo>
@@ -2289,21 +2289,21 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>644</second>
+                      <second>659</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sha3/fips202.c</first>
                         <second>keccak_squeezeblocks</second>
                       </first>
-                      <second>417</second>
+                      <second>430</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2355,7 +2355,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366</rtlName>
+              <rtlName>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2396,7 +2396,7 @@
               <name>gmem_addr_5</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>649</lineNumber>
+              <lineNumber>664</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -2412,14 +2412,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>649</second>
+                      <second>664</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2460,7 +2460,7 @@
               <name>empty_186</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>649</lineNumber>
+              <lineNumber>664</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -2476,14 +2476,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>649</second>
+                      <second>664</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2534,7 +2534,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375</rtlName>
+              <rtlName>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2577,7 +2577,7 @@
               <name>empty_187</name>
               <fileName>src/sha3/fips202.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>655</lineNumber>
+              <lineNumber>670</lineNumber>
               <contextFuncName>cshake256_simple</contextFuncName>
               <contextNormFuncName>cshake256_simple</contextNormFuncName>
               <inlineStackInfo>
@@ -2593,14 +2593,14 @@
                         <first>src/sha3/fips202.c</first>
                         <second>cshake256_simple</second>
                       </first>
-                      <second>655</second>
+                      <second>670</second>
                     </item>
                     <item>
                       <first>
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>90</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -3066,7 +3066,7 @@
             <Obj>
               <type>2</type>
               <id>151</id>
-              <name>crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6</name>
+              <name>crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3090,7 +3090,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6&gt;</content>
+          <content>&lt;constant:crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_62">
           <Value>
@@ -3252,7 +3252,7 @@
             <Obj>
               <type>2</type>
               <id>189</id>
-              <name>crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2</name>
+              <name>crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3276,7 +3276,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2&gt;</content>
+          <content>&lt;constant:crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_68">
           <Value>
@@ -3314,7 +3314,7 @@
             <Obj>
               <type>2</type>
               <id>202</id>
-              <name>crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1</name>
+              <name>crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3338,7 +3338,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1&gt;</content>
+          <content>&lt;constant:crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -6293,7 +6293,7 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2)</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -6308,22 +6308,7 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>20</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>96</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6)</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -6334,6 +6319,21 @@
             <item>
               <first>LUT</first>
               <second>103</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>20</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>96</second>
             </item>
           </second>
         </item>
@@ -6407,7 +6407,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln81_fu_402_p2 ( + ) </first>
+          <first>add_ln59_fu_402_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -9807,7 +9807,7 @@
         <count>14</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln81_reg_450</first>
+          <first>add_ln59_reg_450</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9959,7 +9959,7 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366_ap_start_reg</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9978,7 +9978,7 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375_ap_start_reg</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9997,7 +9997,7 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323_ap_start_reg</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -10119,21 +10119,21 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -10213,7 +10213,7 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2)</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10221,19 +10221,19 @@
           </second>
         </item>
         <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>65</item>
-          </second>
-        </item>
-        <item>
-          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6)</first>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>55</item>
+          </second>
+        </item>
+        <item>
+          <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375 (crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1)</first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>65</item>
           </second>
         </item>
         <item>
@@ -10265,7 +10265,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln81_fu_402_p2 ( + ) </first>
+          <first>add_ln59_fu_402_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11086,7 +11086,7 @@
       <count>20</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>add_ln81_fu_402</first>
+        <first>add_ln59_fu_402</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11230,7 +11230,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln56_fu_393</first>
+        <first>trunc_ln51_fu_393</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11238,7 +11238,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln56_fu_397</first>
+        <first>zext_ln51_fu_397</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11304,7 +11304,7 @@
         </second>
       </item>
       <item>
-        <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_418_2_fu_366</first>
+        <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_431_2_fu_366</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -11313,21 +11313,21 @@
         </second>
       </item>
       <item>
-        <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_649_1_fu_375</first>
+        <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_59_1_fu_323</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
-          <item>65</item>
-          <item>65</item>
+          <item>55</item>
+          <item>55</item>
         </second>
       </item>
       <item>
-        <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_81_6_fu_323</first>
+        <first>grp_crypto_kem_enc_1_Pipeline_VITIS_LOOP_664_1_fu_375</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
-          <item>55</item>
-          <item>55</item>
+          <item>65</item>
+          <item>65</item>
         </second>
       </item>
       <item>
@@ -11741,7 +11741,7 @@
       <count>9</count>
       <item_version>0</item_version>
       <item>
-        <first>add_ln81_reg_450</first>
+        <first>add_ln59_reg_450</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

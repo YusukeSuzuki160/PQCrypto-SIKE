@@ -19,10 +19,10 @@
 
 <Node id="2" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_280 = alloca i32 1
+newFuncRoot:0 %i_278 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_280"/></StgValue>
+<StgValue><ssdm name="i_278"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -34,7 +34,7 @@ newFuncRoot:0 %i_280 = alloca i32 1
 
 <Node id="3" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:1 %store_ln21 = store i4 0, i4 %i_280
+newFuncRoot:1 %store_ln21 = store i4 0, i4 %i_278
 
 ]]></Node>
 <StgValue><ssdm name="store_ln21"/></StgValue>
@@ -64,7 +64,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i139
 
 <Node id="6" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i139:0 %i = load i4 %i_280
+for.inc.i139:0 %i = load i4 %i_278
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -125,7 +125,7 @@ for.inc.i139:3 %br_ln23 = br i1 %icmp_ln23, void %for.inc.i139.split, void %for.
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i139.split:0 %specpipeline_ln21 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i139.split:0 %specpipeline_ln21 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln21"/></StgValue>
@@ -157,7 +157,7 @@ for.inc.i139.split:1 %speclooptripcount_ln21 = speclooptripcount void @_ssdm_op_
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i139.split:2 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_42
+for.inc.i139.split:2 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_82
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln23"/></StgValue>
@@ -253,7 +253,7 @@ for.inc.i139.split:7 %store_ln24 = store i64 0, i4 %R_Z_addr
 
 <Node id="19" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i139.split:8 %store_ln21 = store i4 %add_ln23, i4 %i_280
+for.inc.i139.split:8 %store_ln21 = store i4 %add_ln23, i4 %i_278
 
 ]]></Node>
 <StgValue><ssdm name="store_ln21"/></StgValue>

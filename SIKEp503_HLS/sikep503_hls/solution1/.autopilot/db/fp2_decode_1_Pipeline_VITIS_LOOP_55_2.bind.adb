@@ -128,7 +128,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_244</name>
+						<name>i_246</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -227,7 +227,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_244_write_ln51</name>
+						<name>i_246_write_ln51</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -1694,7 +1694,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>gmem_addr_2</name>
+						<name>gmem_addr_4</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>58</lineNumber>
@@ -1810,7 +1810,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>gmem_addr_2_read</name>
+						<name>gmem_addr_4_read</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>58</lineNumber>
@@ -2213,7 +2213,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>i_244_write_ln51</name>
+						<name>i_246_write_ln51</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -4830,7 +4830,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_2_fu_175</first>
+			<first>gmem_addr_4_fu_175</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4846,7 +4846,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_244_fu_72</first>
+			<first>i_246_fu_72</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5006,7 +5006,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_2_read_read_fu_101</first>
+			<first>gmem_addr_4_read_read_fu_101</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5184,7 +5184,7 @@
 		<count>10</count>
 		<item_version>0</item_version>
 		<item>
-			<first>gmem_addr_2_read_reg_310</first>
+			<first>gmem_addr_4_read_reg_310</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5192,7 +5192,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_2_reg_284</first>
+			<first>gmem_addr_4_reg_284</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5216,7 +5216,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_244_reg_259</first>
+			<first>i_246_reg_259</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

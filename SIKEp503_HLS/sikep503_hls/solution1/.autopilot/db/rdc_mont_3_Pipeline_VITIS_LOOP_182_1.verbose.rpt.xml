@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont_3_Pipeline_VITIS_LOOP_182_1'" level="0">
-<item name = "Date">Tue May 27 14:18:07 2025
+<item name = "Date">Tue Jun  3 14:13:10 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -86,7 +86,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="PKB_we0_local">9, 2, 8, 16</column>
 <column name="ap_done_int">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_6">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_9">9, 2, 4, 8</column>
 <column name="i_fu_34">9, 2, 4, 8</column>
 </table>
 </item>

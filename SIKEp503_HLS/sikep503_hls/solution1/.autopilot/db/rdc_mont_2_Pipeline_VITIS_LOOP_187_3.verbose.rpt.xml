@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont_2_Pipeline_VITIS_LOOP_187_3'" level="0">
-<item name = "Date">Tue May 27 14:17:47 2025
+<item name = "Date">Tue Jun  3 14:12:50 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -86,7 +86,7 @@
 <column name="add_ln191_fu_474_p2">+, 0, 0, 71, 64, 64</column>
 <column name="t_14_fu_660_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_10_fu_544_p2">+, 0, 0, 71, 64, 64</column>
-<column name="temp_10_fu_433_p2">+, 0, 0, 41, 34, 34</column>
+<column name="temp_13_fu_433_p2">+, 0, 0, 41, 34, 34</column>
 <column name="temp_fu_386_p2">+, 0, 0, 41, 34, 34</column>
 <column name="u_35_fu_564_p2">+, 0, 0, 71, 64, 64</column>
 <column name="v_39_fu_502_p2">+, 0, 0, 71, 64, 64</column>
@@ -210,7 +210,7 @@
 <column name="grp_fu_855_p_ce">out, 1, ap_ctrl_hs, rdc_mont.2_Pipeline_VITIS_LOOP_187_3, return value</column>
 <column name="v_025">in, 64, ap_none, v_025, scalar</column>
 <column name="u_024">in, 64, ap_none, u_024, scalar</column>
-<column name="i_7">in, 3, ap_none, i_7, scalar</column>
+<column name="i_9">in, 3, ap_none, i_9, scalar</column>
 <column name="add_ln187">in, 4, ap_none, add_ln187, scalar</column>
 <column name="R_Z_address0">out, 4, ap_memory, R_Z, array</column>
 <column name="R_Z_ce0">out, 1, ap_memory, R_Z, array</column>

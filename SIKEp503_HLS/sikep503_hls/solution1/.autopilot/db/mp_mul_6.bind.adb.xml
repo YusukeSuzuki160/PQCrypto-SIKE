@@ -280,10 +280,10 @@ entry:12 %br_ln143 = br void %VITIS_LOOP_145_2
 
 <Node id="18" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_145_2:0 %i_39 = load i4 %i
+VITIS_LOOP_145_2:0 %i_42 = load i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="i_39"/></StgValue>
+<StgValue><ssdm name="i_42"/></StgValue>
 </operation>
 
 <operation id="24" st_id="2" stage="1" lat="1">
@@ -325,7 +325,7 @@ VITIS_LOOP_145_2:2 %v_136 = load i64 %v_017
 
 <Node id="21" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2:3 %icmp_ln143 = icmp_eq  i4 %i_39, i4 8
+VITIS_LOOP_145_2:3 %icmp_ln143 = icmp_eq  i4 %i_42, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln143"/></StgValue>
@@ -340,7 +340,7 @@ VITIS_LOOP_145_2:3 %icmp_ln143 = icmp_eq  i4 %i_39, i4 8
 
 <Node id="22" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2:4 %add_ln143 = add i4 %i_39, i4 1
+VITIS_LOOP_145_2:4 %add_ln143 = add i4 %i_42, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln143"/></StgValue>
@@ -435,10 +435,10 @@ VITIS_LOOP_159_4.preheader:2 %indvars_iv = alloca i32 1
 
 <Node id="42" bw="4" op_0_bw="32">
 <![CDATA[
-VITIS_LOOP_159_4.preheader:3 %i_18 = alloca i32 1
+VITIS_LOOP_159_4.preheader:3 %i_20 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_18"/></StgValue>
+<StgValue><ssdm name="i_20"/></StgValue>
 </operation>
 
 <operation id="34" st_id="2" stage="1" lat="1">
@@ -451,7 +451,7 @@ VITIS_LOOP_159_4.preheader:3 %i_18 = alloca i32 1
 
 <Node id="43" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4.preheader:4 %store_ln139 = store i4 8, i4 %i_18
+VITIS_LOOP_159_4.preheader:4 %store_ln139 = store i4 8, i4 %i_20
 
 ]]></Node>
 <StgValue><ssdm name="store_ln139"/></StgValue>
@@ -548,7 +548,7 @@ VITIS_LOOP_145_2.split:0 %indvars_iv31_load = load i4 %indvars_iv31
 
 <Node id="27" bw="3" op_0_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2.split:2 %trunc_ln143 = trunc i4 %i_39
+VITIS_LOOP_145_2.split:2 %trunc_ln143 = trunc i4 %i_42
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln143"/></StgValue>
@@ -629,7 +629,7 @@ VITIS_LOOP_145_2.split:5 %call_ln143 = call void @mp_mul.6_Pipeline_VITIS_LOOP_1
 
 <Node id="26" bw="64" op_0_bw="4">
 <![CDATA[
-VITIS_LOOP_145_2.split:1 %zext_ln143 = zext i4 %i_39
+VITIS_LOOP_145_2.split:1 %zext_ln143 = zext i4 %i_42
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln143"/></StgValue>
@@ -659,7 +659,7 @@ VITIS_LOOP_145_2.split:3 %speclooptripcount_ln140 = speclooptripcount void @_ssd
 
 <Node id="29" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_145_2.split:4 %specloopname_ln143 = specloopname void @_ssdm_op_SpecLoopName, void @empty_74
+VITIS_LOOP_145_2.split:4 %specloopname_ln143 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln143"/></StgValue>
@@ -737,10 +737,10 @@ VITIS_LOOP_145_2.split:12 %br_ln143 = br void %VITIS_LOOP_145_2
 
 <Node id="49" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4:0 %i_40 = load i4 %i_18
+VITIS_LOOP_159_4:0 %i_43 = load i4 %i_20
 
 ]]></Node>
-<StgValue><ssdm name="i_40"/></StgValue>
+<StgValue><ssdm name="i_43"/></StgValue>
 </operation>
 
 <operation id="53" st_id="6" stage="1" lat="1">
@@ -752,7 +752,7 @@ VITIS_LOOP_159_4:0 %i_40 = load i4 %i_18
 
 <Node id="50" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4:1 %icmp_ln157 = icmp_eq  i4 %i_40, i4 15
+VITIS_LOOP_159_4:1 %icmp_ln157 = icmp_eq  i4 %i_43, i4 15
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln157"/></StgValue>
@@ -799,7 +799,7 @@ VITIS_LOOP_159_4.split:1 %v_load = load i64 %v
 
 <Node id="67" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4.split:14 %add_ln157 = add i4 %i_40, i4 1
+VITIS_LOOP_159_4.split:14 %add_ln157 = add i4 %i_43, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln157"/></StgValue>
@@ -815,7 +815,7 @@ VITIS_LOOP_159_4.split:14 %add_ln157 = add i4 %i_40, i4 1
 
 <Node id="69" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4.split:16 %store_ln139 = store i4 %add_ln157, i4 %i_18
+VITIS_LOOP_159_4.split:16 %store_ln139 = store i4 %add_ln157, i4 %i_20
 
 ]]></Node>
 <StgValue><ssdm name="store_ln139"/></StgValue>
@@ -942,7 +942,7 @@ VITIS_LOOP_159_4.split:3 %trunc_ln157 = trunc i4 %indvars_iv_load
 
 <Node id="58" bw="3" op_0_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4.split:5 %trunc_ln157_2 = trunc i4 %i_40
+VITIS_LOOP_159_4.split:5 %trunc_ln157_2 = trunc i4 %i_43
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln157_2"/></StgValue>
@@ -1023,7 +1023,7 @@ VITIS_LOOP_159_4.split:8 %call_ln157 = call void @mp_mul.6_Pipeline_VITIS_LOOP_1
 
 <Node id="57" bw="64" op_0_bw="4">
 <![CDATA[
-VITIS_LOOP_159_4.split:4 %zext_ln157 = zext i4 %i_40
+VITIS_LOOP_159_4.split:4 %zext_ln157 = zext i4 %i_43
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln157"/></StgValue>
@@ -1053,7 +1053,7 @@ VITIS_LOOP_159_4.split:6 %speclooptripcount_ln139 = speclooptripcount void @_ssd
 
 <Node id="60" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_159_4.split:7 %specloopname_ln157 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40
+VITIS_LOOP_159_4.split:7 %specloopname_ln157 = specloopname void @_ssdm_op_SpecLoopName, void @empty_33
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln157"/></StgValue>
@@ -1218,17 +1218,17 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="117" from="indvars_iv31" to="store_ln0" fromId="10" toId="21">
 </dataflow>
-<dataflow id="118" from="i" to="i_39" fromId="11" toId="23">
+<dataflow id="118" from="i" to="i_42" fromId="11" toId="23">
 </dataflow>
 <dataflow id="119" from="u_016" to="u" fromId="12" toId="24">
 </dataflow>
 <dataflow id="120" from="v_017" to="v_136" fromId="13" toId="25">
 </dataflow>
-<dataflow id="121" from="i_39" to="icmp_ln143" fromId="23" toId="26">
+<dataflow id="121" from="i_42" to="icmp_ln143" fromId="23" toId="26">
 </dataflow>
 <dataflow id="123" from="StgValue_122" to="icmp_ln143" fromId="122" toId="26">
 </dataflow>
-<dataflow id="124" from="i_39" to="add_ln143" fromId="23" toId="27">
+<dataflow id="124" from="i_42" to="add_ln143" fromId="23" toId="27">
 </dataflow>
 <dataflow id="125" from="StgValue_115" to="add_ln143" fromId="115" toId="27">
 </dataflow>
@@ -1244,11 +1244,11 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="131" from="StgValue_95" to="indvars_iv" fromId="95" toId="32">
 </dataflow>
-<dataflow id="132" from="StgValue_95" to="i_18" fromId="95" toId="33">
+<dataflow id="132" from="StgValue_95" to="i_20" fromId="95" toId="33">
 </dataflow>
 <dataflow id="133" from="StgValue_122" to="store_ln139" fromId="122" toId="34">
 </dataflow>
-<dataflow id="134" from="i_18" to="store_ln139" fromId="33" toId="34">
+<dataflow id="134" from="i_20" to="store_ln139" fromId="33" toId="34">
 </dataflow>
 <dataflow id="135" from="StgValue_115" to="store_ln0" fromId="115" toId="35">
 </dataflow>
@@ -1264,7 +1264,7 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="141" from="indvars_iv31" to="indvars_iv31_load" fromId="10" toId="39">
 </dataflow>
-<dataflow id="142" from="i_39" to="trunc_ln143" fromId="23" toId="40">
+<dataflow id="142" from="i_42" to="trunc_ln143" fromId="23" toId="40">
 </dataflow>
 <dataflow id="144" from="mp_mul.6_Pipeline_VITIS_LOOP_145_2" to="call_ln143" fromId="143" toId="41">
 </dataflow>
@@ -1314,7 +1314,7 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="167" from="Montgomery_R2_1" to="call_ln143" fromId="94" toId="44">
 </dataflow>
-<dataflow id="168" from="i_39" to="zext_ln143" fromId="23" toId="45">
+<dataflow id="168" from="i_42" to="zext_ln143" fromId="23" toId="45">
 </dataflow>
 <dataflow id="170" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln140" fromId="169" toId="46">
 </dataflow>
@@ -1326,7 +1326,7 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="176" from="_ssdm_op_SpecLoopName" to="specloopname_ln143" fromId="175" toId="47">
 </dataflow>
-<dataflow id="178" from="empty_74" to="specloopname_ln143" fromId="177" toId="47">
+<dataflow id="178" from="empty_24" to="specloopname_ln143" fromId="177" toId="47">
 </dataflow>
 <dataflow id="179" from="v_101_loc" to="v_101_loc_load" fromId="16" toId="48">
 </dataflow>
@@ -1340,9 +1340,9 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="184" from="c_addr_11" to="store_ln151" fromId="49" toId="50">
 </dataflow>
-<dataflow id="185" from="i_18" to="i_40" fromId="33" toId="52">
+<dataflow id="185" from="i_20" to="i_43" fromId="33" toId="52">
 </dataflow>
-<dataflow id="186" from="i_40" to="icmp_ln157" fromId="52" toId="53">
+<dataflow id="186" from="i_43" to="icmp_ln157" fromId="52" toId="53">
 </dataflow>
 <dataflow id="188" from="StgValue_187" to="icmp_ln157" fromId="187" toId="53">
 </dataflow>
@@ -1350,13 +1350,13 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="190" from="v" to="v_load" fromId="31" toId="55">
 </dataflow>
-<dataflow id="191" from="i_40" to="add_ln157" fromId="52" toId="56">
+<dataflow id="191" from="i_43" to="add_ln157" fromId="52" toId="56">
 </dataflow>
 <dataflow id="192" from="StgValue_115" to="add_ln157" fromId="115" toId="56">
 </dataflow>
 <dataflow id="193" from="add_ln157" to="store_ln139" fromId="56" toId="57">
 </dataflow>
-<dataflow id="194" from="i_18" to="store_ln139" fromId="33" toId="57">
+<dataflow id="194" from="i_20" to="store_ln139" fromId="33" toId="57">
 </dataflow>
 <dataflow id="195" from="v" to="v_load_21" fromId="31" toId="58">
 </dataflow>
@@ -1376,7 +1376,7 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="204" from="indvars_iv_load" to="trunc_ln157" fromId="63" toId="64">
 </dataflow>
-<dataflow id="205" from="i_40" to="trunc_ln157_2" fromId="52" toId="65">
+<dataflow id="205" from="i_43" to="trunc_ln157_2" fromId="52" toId="65">
 </dataflow>
 <dataflow id="207" from="mp_mul.6_Pipeline_VITIS_LOOP_159_4" to="call_ln157" fromId="206" toId="66">
 </dataflow>
@@ -1426,7 +1426,7 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="230" from="Montgomery_R2_1" to="call_ln157" fromId="94" toId="69">
 </dataflow>
-<dataflow id="231" from="i_40" to="zext_ln157" fromId="52" toId="70">
+<dataflow id="231" from="i_43" to="zext_ln157" fromId="52" toId="70">
 </dataflow>
 <dataflow id="232" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln139" fromId="169" toId="71">
 </dataflow>
@@ -1438,7 +1438,7 @@ VITIS_LOOP_159_4.split:19 %br_ln157 = br void %VITIS_LOOP_159_4
 </dataflow>
 <dataflow id="237" from="_ssdm_op_SpecLoopName" to="specloopname_ln157" fromId="175" toId="72">
 </dataflow>
-<dataflow id="239" from="empty_40" to="specloopname_ln157" fromId="238" toId="72">
+<dataflow id="239" from="empty_33" to="specloopname_ln157" fromId="238" toId="72">
 </dataflow>
 <dataflow id="240" from="v_35_loc" to="v_35_loc_load" fromId="15" toId="73">
 </dataflow>

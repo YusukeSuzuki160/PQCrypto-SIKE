@@ -49,7 +49,7 @@ wire   [63:0] zext_ln183_fu_132_p1;
 reg   [3:0] i_fu_52;
 wire   [3:0] add_ln182_fu_94_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_4;
+reg   [3:0] ap_sig_allocacmp_i_7;
 reg    PKB_ce0_local;
 reg   [7:0] PKB_we0_local;
 wire   [2:0] trunc_ln183_fu_100_p1;
@@ -177,9 +177,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_4 = 4'd0;
+        ap_sig_allocacmp_i_7 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_4 = i_fu_52;
+        ap_sig_allocacmp_i_7 = i_fu_52;
     end
 end
 
@@ -202,7 +202,7 @@ assign PKB_d0 = 64'd0;
 
 assign PKB_we0 = PKB_we0_local;
 
-assign add_ln182_fu_94_p2 = (ap_sig_allocacmp_i_4 + 4'd1);
+assign add_ln182_fu_94_p2 = (ap_sig_allocacmp_i_7 + 4'd1);
 
 assign add_ln183_fu_116_p2 = (zext_ln183_1_fu_112_p1 + mc);
 
@@ -218,13 +218,13 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln182_fu_88_p2 = ((ap_sig_allocacmp_i_4 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln182_fu_88_p2 = ((ap_sig_allocacmp_i_7 == 4'd8) ? 1'b1 : 1'b0);
 
 assign lshr_ln_fu_122_p4 = {{add_ln183_fu_116_p2[8:3]}};
 
 assign shl_ln_fu_104_p3 = {{trunc_ln183_fu_100_p1}, {3'd0}};
 
-assign trunc_ln183_fu_100_p1 = ap_sig_allocacmp_i_4[2:0];
+assign trunc_ln183_fu_100_p1 = ap_sig_allocacmp_i_7[2:0];
 
 assign zext_ln183_1_fu_112_p1 = shl_ln_fu_104_p3;
 

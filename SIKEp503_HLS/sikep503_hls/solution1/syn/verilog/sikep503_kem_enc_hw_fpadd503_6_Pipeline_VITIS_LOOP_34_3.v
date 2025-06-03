@@ -61,7 +61,7 @@ reg   [63:0] tempReg_reg_276;
 wire   [63:0] and_ln35_fu_172_p2;
 reg   [63:0] and_ln35_reg_285;
 wire    ap_loop_init;
-wire   [63:0] zext_ln35_fu_152_p1;
+wire   [63:0] zext_ln35_4_fu_152_p1;
 wire   [63:0] zext_ln34_fu_135_p1;
 reg   [3:0] i_138_fu_60;
 wire   [3:0] add_ln34_fu_129_p2;
@@ -73,15 +73,15 @@ wire   [63:0] add_ln35_fu_177_p2;
 reg    p503x2_1_ce0_local;
 wire   [2:0] trunc_ln35_fu_140_p1;
 wire   [5:0] zext_ln35_3_fu_144_p3;
-wire   [63:0] zext_ln35_4_fu_162_p1;
+wire   [63:0] zext_ln35_fu_162_p1;
 wire   [63:0] xor_ln35_fu_182_p2;
-wire   [63:0] xor_ln35_14_fu_187_p2;
+wire   [63:0] xor_ln35_13_fu_187_p2;
 wire   [0:0] bit_sel1_fu_197_p3;
-wire   [0:0] xor_ln35_15_fu_204_p2;
+wire   [0:0] xor_ln35_14_fu_204_p2;
 wire   [62:0] trunc_ln35_2_fu_210_p1;
 wire   [63:0] xor_ln35_s_fu_213_p3;
 wire   [63:0] or_ln35_fu_191_p2;
-wire   [63:0] xor_ln35_16_fu_226_p2;
+wire   [63:0] xor_ln35_15_fu_226_p2;
 wire   [63:0] and_ln35_5_fu_221_p2;
 wire   [63:0] or_ln35_5_fu_232_p2;
 reg    ap_done_reg;
@@ -178,7 +178,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        coeff_addr_reg_261[2 : 0] <= zext_ln35_fu_152_p1[2 : 0];
+        coeff_addr_reg_261[2 : 0] <= zext_ln35_4_fu_152_p1[2 : 0];
         sext_ln21_cast_reg_253 <= sext_ln21_cast_fu_107_p3;
     end
 end
@@ -239,7 +239,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
         coeff_address0_local = coeff_addr_reg_261;
     end else if (((icmp_ln34_fu_123_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        coeff_address0_local = zext_ln35_fu_152_p1;
+        coeff_address0_local = zext_ln35_4_fu_152_p1;
     end else begin
         coeff_address0_local = 'bx;
     end
@@ -328,37 +328,37 @@ assign coeff_we0 = coeff_we0_local;
 
 assign icmp_ln34_fu_123_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign or_ln35_5_fu_232_p2 = (xor_ln35_16_fu_226_p2 | and_ln35_5_fu_221_p2);
+assign or_ln35_5_fu_232_p2 = (xor_ln35_15_fu_226_p2 | and_ln35_5_fu_221_p2);
 
-assign or_ln35_fu_191_p2 = (xor_ln35_fu_182_p2 | xor_ln35_14_fu_187_p2);
+assign or_ln35_fu_191_p2 = (xor_ln35_fu_182_p2 | xor_ln35_13_fu_187_p2);
 
 assign p503x2_1_address0 = zext_ln34_fu_135_p1;
 
 assign sext_ln21_cast_fu_107_p3 = ((sext_ln21[0:0] == 1'b1) ? 64'd18446744073709551615 : 64'd0);
 
-assign tempReg_fu_166_p2 = (coeff_q0 + zext_ln35_4_fu_162_p1);
+assign tempReg_fu_166_p2 = (coeff_q0 + zext_ln35_fu_162_p1);
 
 assign trunc_ln35_2_fu_210_p1 = tempReg_reg_276[62:0];
 
 assign trunc_ln35_fu_140_p1 = ap_sig_allocacmp_i[2:0];
 
-assign xor_ln35_14_fu_187_p2 = (tempReg_reg_276 ^ and_ln35_reg_285);
+assign xor_ln35_13_fu_187_p2 = (tempReg_reg_276 ^ and_ln35_reg_285);
 
-assign xor_ln35_15_fu_204_p2 = (bit_sel1_fu_197_p3 ^ 1'd1);
+assign xor_ln35_14_fu_204_p2 = (bit_sel1_fu_197_p3 ^ 1'd1);
 
-assign xor_ln35_16_fu_226_p2 = (or_ln35_fu_191_p2 ^ add_ln35_fu_177_p2);
+assign xor_ln35_15_fu_226_p2 = (or_ln35_fu_191_p2 ^ add_ln35_fu_177_p2);
 
 assign xor_ln35_fu_182_p2 = (tempReg_reg_276 ^ add_ln35_fu_177_p2);
 
-assign xor_ln35_s_fu_213_p3 = {{xor_ln35_15_fu_204_p2}, {trunc_ln35_2_fu_210_p1}};
+assign xor_ln35_s_fu_213_p3 = {{xor_ln35_14_fu_204_p2}, {trunc_ln35_2_fu_210_p1}};
 
 assign zext_ln34_fu_135_p1 = ap_sig_allocacmp_i;
 
 assign zext_ln35_3_fu_144_p3 = {{3'd5}, {trunc_ln35_fu_140_p1}};
 
-assign zext_ln35_4_fu_162_p1 = carry_reg_96;
+assign zext_ln35_4_fu_152_p1 = zext_ln35_3_fu_144_p3;
 
-assign zext_ln35_fu_152_p1 = zext_ln35_3_fu_144_p3;
+assign zext_ln35_fu_162_p1 = carry_reg_96;
 
 always @ (posedge ap_clk) begin
     coeff_addr_reg_261[5:3] <= 3'b101;

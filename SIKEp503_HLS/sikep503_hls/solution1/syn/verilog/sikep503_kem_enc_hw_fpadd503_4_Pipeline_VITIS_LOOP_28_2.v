@@ -82,7 +82,7 @@ wire   [63:0] zext_ln28_fu_128_p1;
 reg   [63:0] reuse_addr_reg_fu_46;
 reg   [63:0] reuse_reg_fu_50;
 wire   [63:0] sub_ln29_fu_257_p2;
-reg   [3:0] i_141_fu_54;
+reg   [3:0] i_143_fu_54;
 wire   [3:0] add_ln28_fu_164_p2;
 reg    ap_loop_exit_ready_pp0_iter1_reg;
 wire    ap_block_pp0_stage1_01001;
@@ -124,7 +124,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
 #0 reuse_addr_reg_fu_46 = 64'd0;
 #0 reuse_reg_fu_50 = 64'd0;
-#0 i_141_fu_54 = 4'd0;
+#0 i_143_fu_54 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -220,9 +220,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            i_141_fu_54 <= 4'd0;
+            i_143_fu_54 <= 4'd0;
         end else if (((icmp_ln28_reg_294 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            i_141_fu_54 <= add_ln28_fu_164_p2;
+            i_143_fu_54 <= add_ln28_fu_164_p2;
         end
     end
 end
@@ -314,7 +314,7 @@ always @ (posedge ap_clk) begin
         R_Z_addr_reg_298_pp0_iter1_reg[2 : 0] <= R_Z_addr_reg_298[2 : 0];
         addr_cmp_reg_303 <= addr_cmp_fu_153_p2;
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-        i_reg_289 <= i_141_fu_54;
+        i_reg_289 <= i_143_fu_54;
         icmp_ln28_reg_294 <= icmp_ln28_fu_122_p2;
         icmp_ln28_reg_294_pp0_iter1_reg <= icmp_ln28_reg_294;
         tempReg_reg_325 <= tempReg_fu_183_p2;
@@ -510,7 +510,7 @@ assign borrowReg_fu_248_p2 = (tmp_reg_332 | and_ln29_fu_242_p2);
 
 assign carry_178_out = carry_reg_91;
 
-assign icmp_ln28_fu_122_p2 = ((i_141_fu_54 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln28_fu_122_p2 = ((i_143_fu_54 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln105_fu_198_p2 = (xor_ln105_fu_188_p2 | xor_ln105_104_fu_193_p2);
 
@@ -528,7 +528,7 @@ assign tempReg_fu_183_p2 = (reuse_select_fu_177_p3 - p503x2_1_load_reg_318);
 
 assign tmp_189_fu_228_p3 = or_ln95_fu_223_p2[32'd63];
 
-assign trunc_ln29_fu_133_p1 = i_141_fu_54[2:0];
+assign trunc_ln29_fu_133_p1 = i_143_fu_54[2:0];
 
 assign xor_ln105_104_fu_193_p2 = (tempReg_fu_183_p2 ^ p503x2_1_load_reg_318);
 
@@ -538,7 +538,7 @@ assign xor_ln105_fu_188_p2 = (reuse_select_fu_177_p3 ^ p503x2_1_load_reg_318);
 
 assign xor_ln29_fu_236_p2 = (tmp_189_fu_228_p3 ^ 1'd1);
 
-assign zext_ln28_fu_128_p1 = i_141_fu_54;
+assign zext_ln28_fu_128_p1 = i_143_fu_54;
 
 assign zext_ln29_8_fu_137_p3 = {{1'd1}, {trunc_ln29_fu_133_p1}};
 

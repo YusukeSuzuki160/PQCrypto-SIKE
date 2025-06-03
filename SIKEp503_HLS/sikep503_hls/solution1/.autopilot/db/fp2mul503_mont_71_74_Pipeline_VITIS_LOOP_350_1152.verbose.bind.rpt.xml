@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_71_74_Pipeline_VITIS_LOOP_350_1152'" level="0">
-<item name = "Date">Tue May 27 13:42:47 2025
+<item name = "Date">Tue Jun  3 10:04:16 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.040 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.774 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">20, 20, 0.200 us, 0.200 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">35, 35, 0.350 us, 0.350 us, 34, 34, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_350_1">18, 18, 4, 2, 1, 8, yes</column>
+<column name="- VITIS_LOOP_350_1">33, 33, 3, 2, 1, 16, yes</column>
 </table>
 </item>
 </section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_absorb'" level="0">
-<item name = "Date">Tue May 27 14:11:23 2025
+<item name = "Date">Tue Jun  3 12:28:39 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -31,14 +31,14 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_593_1_fu_67">cshake256_simple_absorb_Pipeline_VITIS_LOOP_593_1, 27, 27, 0.270 us, 0.270 us, 26, 26, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_KeccakF1600_StatePermute_fu_73">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
-<column name="grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2_fu_81">cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2, 20, 20, 0.200 us, 0.200 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_606_1_fu_71">cshake256_simple_absorb_Pipeline_VITIS_LOOP_606_1, 27, 27, 0.270 us, 0.270 us, 26, 26, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_KeccakF1600_StatePermute_fu_77">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
+<column name="grp_cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2_fu_85">cshake256_simple_absorb_Pipeline_VITIS_LOOP_392_2, 20, 20, 0.200 us, 0.200 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_390_1">?, ?, 66, -, -, inf, no</column>
+<column name="- VITIS_LOOP_389_1">6600, 6600, 66, -, -, 100, no</column>
 </table>
 </item>
 </section>

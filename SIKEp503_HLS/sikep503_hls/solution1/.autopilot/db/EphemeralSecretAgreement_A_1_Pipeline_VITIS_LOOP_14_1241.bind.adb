@@ -354,7 +354,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>i_290</name>
+						<name>i_287</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
@@ -2860,7 +2860,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_290_load_fu_80</first>
+			<first>i_287_load_fu_80</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

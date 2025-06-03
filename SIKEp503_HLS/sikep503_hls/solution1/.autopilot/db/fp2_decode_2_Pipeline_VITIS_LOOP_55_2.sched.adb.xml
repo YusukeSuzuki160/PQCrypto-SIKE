@@ -85,10 +85,10 @@
 
 <Node id="6" bw="6" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_243 = alloca i32 1
+newFuncRoot:0 %i_245 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_243"/></StgValue>
+<StgValue><ssdm name="i_245"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -175,7 +175,7 @@ newFuncRoot:5 %idx_cast_cast = zext i8 %idx_cast_read
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_8, i32 0, i32 0, void @empty_60, i32 0, i32 402, void @empty_44, void @empty_72, void @empty_60, i32 16, i32 16, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -190,7 +190,7 @@ newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 
 <Node id="13" bw="0" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-newFuncRoot:7 %store_ln51 = store i6 0, i6 %i_243
+newFuncRoot:7 %store_ln51 = store i6 0, i6 %i_245
 
 ]]></Node>
 <StgValue><ssdm name="store_ln51"/></StgValue>
@@ -220,7 +220,7 @@ newFuncRoot:8 %br_ln0 = br void %for.inc13
 
 <Node id="16" bw="6" op_0_bw="6" op_1_bw="0">
 <![CDATA[
-for.inc13:0 %i = load i6 %i_243
+for.inc13:0 %i = load i6 %i_245
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -444,10 +444,10 @@ for.inc13.split:26 %add_ln58 = add i64 %zext_ln58_2, i64 %add_ln58_1
 
 <Node id="48" bw="8" op_0_bw="8" op_1_bw="64">
 <![CDATA[
-for.inc13.split:27 %gmem_addr_1 = getelementptr i8 %gmem, i64 %add_ln58
+for.inc13.split:27 %gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln58
 
 ]]></Node>
-<StgValue><ssdm name="gmem_addr_1"/></StgValue>
+<StgValue><ssdm name="gmem_addr_3"/></StgValue>
 </operation>
 
 <operation id="39" st_id="2" stage="1" lat="1">
@@ -460,7 +460,7 @@ for.inc13.split:27 %gmem_addr_1 = getelementptr i8 %gmem, i64 %add_ln58
 
 <Node id="65" bw="0" op_0_bw="6" op_1_bw="6" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc13.split:44 %store_ln51 = store i6 %add_ln55, i6 %i_243
+for.inc13.split:44 %store_ln51 = store i6 %add_ln55, i6 %i_245
 
 ]]></Node>
 <StgValue><ssdm name="store_ln51"/></StgValue>
@@ -493,7 +493,7 @@ for.inc13.split:9 %gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -526,7 +526,7 @@ for.inc13.split:9 %gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -559,7 +559,7 @@ for.inc13.split:9 %gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -592,7 +592,7 @@ for.inc13.split:9 %gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -625,7 +625,7 @@ for.inc13.split:9 %gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -658,7 +658,7 @@ for.inc13.split:9 %gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -691,7 +691,7 @@ for.inc13.split:9 %gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -784,7 +784,7 @@ for.inc13.split:19 %lshr_ln = partselect i6 @_ssdm_op_PartSelect.i6.i9.i32.i32, 
 
 <Node id="49" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_1, i64 1
+for.inc13.split:28 %gmem_load_1_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr_3, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="gmem_load_1_req"/></StgValue>
@@ -953,10 +953,10 @@ for.inc13.split:22 %store_ln57 = store void @_ssdm_op_Write.bram.p0i64, i6 %PKB_
 
 <Node id="50" bw="8" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc13.split:29 %gmem_addr_1_read = read i8 @_ssdm_op_Read.m_axi.i8P1A, i8 %gmem_addr_1
+for.inc13.split:29 %gmem_addr_3_read = read i8 @_ssdm_op_Read.m_axi.i8P1A, i8 %gmem_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="gmem_addr_1_read"/></StgValue>
+<StgValue><ssdm name="gmem_addr_3_read"/></StgValue>
 </operation>
 
 <operation id="70" st_id="11" stage="1" lat="1">
@@ -1046,7 +1046,7 @@ for.inc13.split:40 %lshr_ln1 = partselect i6 @_ssdm_op_PartSelect.i6.i9.i32.i32,
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc13.split:3 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc13.split:3 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln51"/></StgValue>
@@ -1076,7 +1076,7 @@ for.inc13.split:4 %speclooptripcount_ln51 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc13.split:5 %specloopname_ln55 = specloopname void @_ssdm_op_SpecLoopName, void @empty_0
+for.inc13.split:5 %specloopname_ln55 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln55"/></StgValue>
@@ -1091,7 +1091,7 @@ for.inc13.split:5 %specloopname_ln55 = specloopname void @_ssdm_op_SpecLoopName,
 
 <Node id="54" bw="64" op_0_bw="8">
 <![CDATA[
-for.inc13.split:33 %zext_ln58 = zext i8 %gmem_addr_1_read
+for.inc13.split:33 %zext_ln58 = zext i8 %gmem_addr_3_read
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln58"/></StgValue>

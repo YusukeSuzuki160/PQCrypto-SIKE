@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'KeccakF1600_StatePermute'" level="0">
-<item name = "Date">Tue May 27 14:16:49 2025
+<item name = "Date">Tue Jun  3 14:11:52 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -84,12 +84,12 @@
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">130, 29, 1, 29</column>
-<column name="s_i_address0_local">117, 26, 5, 130</column>
-<column name="s_i_address1_local">117, 26, 5, 130</column>
-<column name="s_i_d0_local">65, 13, 64, 832</column>
-<column name="s_i_d1_local">65, 14, 64, 896</column>
-<column name="s_i_we0_local">9, 2, 8, 16</column>
-<column name="s_i_we1_local">9, 2, 8, 16</column>
+<column name="s_address0_local">117, 26, 5, 130</column>
+<column name="s_address1_local">117, 26, 5, 130</column>
+<column name="s_d0_local">65, 13, 64, 832</column>
+<column name="s_d1_local">65, 14, 64, 896</column>
+<column name="s_we0_local">9, 2, 8, 16</column>
+<column name="s_we1_local">9, 2, 8, 16</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -136,16 +136,16 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
-<column name="s_i_address0">out, 5, ap_memory, s_i, array</column>
-<column name="s_i_ce0">out, 1, ap_memory, s_i, array</column>
-<column name="s_i_we0">out, 8, ap_memory, s_i, array</column>
-<column name="s_i_d0">out, 64, ap_memory, s_i, array</column>
-<column name="s_i_q0">in, 64, ap_memory, s_i, array</column>
-<column name="s_i_address1">out, 5, ap_memory, s_i, array</column>
-<column name="s_i_ce1">out, 1, ap_memory, s_i, array</column>
-<column name="s_i_we1">out, 8, ap_memory, s_i, array</column>
-<column name="s_i_d1">out, 64, ap_memory, s_i, array</column>
-<column name="s_i_q1">in, 64, ap_memory, s_i, array</column>
+<column name="s_address0">out, 5, ap_memory, s, array</column>
+<column name="s_ce0">out, 1, ap_memory, s, array</column>
+<column name="s_we0">out, 8, ap_memory, s, array</column>
+<column name="s_d0">out, 64, ap_memory, s, array</column>
+<column name="s_q0">in, 64, ap_memory, s, array</column>
+<column name="s_address1">out, 5, ap_memory, s, array</column>
+<column name="s_ce1">out, 1, ap_memory, s, array</column>
+<column name="s_we1">out, 8, ap_memory, s, array</column>
+<column name="s_d1">out, 64, ap_memory, s, array</column>
+<column name="s_q1">in, 64, ap_memory, s, array</column>
 </table>
 </item>
 </section>

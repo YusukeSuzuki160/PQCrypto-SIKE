@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_absorb_clone'
 ================================================================
-* Date:           Tue May 27 14:16:36 2025
+* Date:           Tue Jun  3 12:33:46 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -83,48 +83,48 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%t = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:609]   --->   Operation 10 'alloca' 't' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%t_35 = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:609]   --->   Operation 11 'alloca' 't_35' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%t_36 = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:609]   --->   Operation 12 'alloca' 't_36' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%t_37 = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:609]   --->   Operation 13 'alloca' 't_37' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
-ST_1 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_593_1, i64 %s"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_400_3, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%t = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:624]   --->   Operation 10 'alloca' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%t_35 = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:624]   --->   Operation 11 'alloca' 't_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%t_36 = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:624]   --->   Operation 12 'alloca' 't_36' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%t_37 = alloca i64 1" [src/sha3/fips202.c:387->src/sha3/fips202.c:624]   --->   Operation 13 'alloca' 't_37' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
+ST_1 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_606_1, i64 %s"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_402_3, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 5.09>
-ST_2 : Operation 16 [1/2] (4.95ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_593_1, i64 %s"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 17 [1/2] (5.09ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_400_3, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 5.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 16 [1/2] (4.95ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_606_1, i64 %s"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 17 [1/2] (5.09ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_402_3, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 5.09> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%s_addr = getelementptr i64 %s, i64 0, i64 0" [src/sha3/fips202.c:597]   --->   Operation 18 'getelementptr' 's_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 19 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln604 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr, i64 580546434533377, i8 255" [src/sha3/fips202.c:604]   --->   Operation 19 'store' 'store_ln604' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%s_addr = getelementptr i64 %s, i64 0, i64 0" [src/sha3/fips202.c:612]   --->   Operation 18 'getelementptr' 's_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln619 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr, i64 580546434533377, i8 255" [src/sha3/fips202.c:619]   --->   Operation 19 'store' 'store_ln619' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln606 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:606]   --->   Operation 20 'call' 'call_ln606' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_402_4, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t, i8 %in_r"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln621 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:621]   --->   Operation 20 'call' 'call_ln621' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_407_4, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t, i8 %in_r"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 5.04>
-ST_5 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln606 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:606]   --->   Operation 22 'call' 'call_ln606' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_5 : Operation 23 [1/2] (5.04ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_402_4, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t, i8 %in_r"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 5.04> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln621 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:621]   --->   Operation 22 'call' 'call_ln621' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 23 [1/2] (5.04ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_407_4, i8 %t_37, i8 %t_36, i8 %t_35, i8 %t, i8 %in_r"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 5.04> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 2.32>
-ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%t_37_addr = getelementptr i8 %t_37, i64 0, i64 33" [src/sha3/fips202.c:405->src/sha3/fips202.c:609]   --->   Operation 24 'getelementptr' 't_37_addr' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 25 [2/2] (2.32ns)   --->   "%t_37_load = load i6 %t_37_addr" [src/sha3/fips202.c:405->src/sha3/fips202.c:609]   --->   Operation 25 'load' 't_37_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%t_37_addr = getelementptr i8 %t_37, i64 0, i64 33" [src/sha3/fips202.c:414->src/sha3/fips202.c:624]   --->   Operation 24 'getelementptr' 't_37_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [2/2] (2.32ns)   --->   "%t_37_load = load i6 %t_37_addr" [src/sha3/fips202.c:414->src/sha3/fips202.c:624]   --->   Operation 25 'load' 't_37_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
 
 State 7 <SV = 6> <Delay = 4.64>
-ST_7 : Operation 26 [1/1] (0.00ns)   --->   "%t_36_addr = getelementptr i8 %t_36, i64 0, i64 31" [src/sha3/fips202.c:404->src/sha3/fips202.c:609]   --->   Operation 26 'getelementptr' 't_36_addr' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 27 [1/2] ( I:2.32ns O:2.32ns )   --->   "%t_37_load = load i6 %t_37_addr" [src/sha3/fips202.c:405->src/sha3/fips202.c:609]   --->   Operation 27 'load' 't_37_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
-ST_7 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln405 = trunc i8 %t_37_load" [src/sha3/fips202.c:405->src/sha3/fips202.c:609]   --->   Operation 28 'trunc' 'trunc_ln405' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 29 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i1.i7, i1 1, i7 %trunc_ln405" [src/sha3/fips202.c:405->src/sha3/fips202.c:609]   --->   Operation 29 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 30 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln404 = store i8 4, i6 %t_36_addr" [src/sha3/fips202.c:404->src/sha3/fips202.c:609]   --->   Operation 30 'store' 'store_ln404' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
-ST_7 : Operation 31 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln405 = store i8 %or_ln, i6 %t_37_addr" [src/sha3/fips202.c:405->src/sha3/fips202.c:609]   --->   Operation 31 'store' 'store_ln405' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
+ST_7 : Operation 26 [1/1] (0.00ns)   --->   "%t_36_addr = getelementptr i8 %t_36, i64 0, i64 31" [src/sha3/fips202.c:413->src/sha3/fips202.c:624]   --->   Operation 26 'getelementptr' 't_36_addr' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 27 [1/2] ( I:2.32ns O:2.32ns )   --->   "%t_37_load = load i6 %t_37_addr" [src/sha3/fips202.c:414->src/sha3/fips202.c:624]   --->   Operation 27 'load' 't_37_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
+ST_7 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln414 = trunc i8 %t_37_load" [src/sha3/fips202.c:414->src/sha3/fips202.c:624]   --->   Operation 28 'trunc' 'trunc_ln414' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 29 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i1.i7, i1 1, i7 %trunc_ln414" [src/sha3/fips202.c:414->src/sha3/fips202.c:624]   --->   Operation 29 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 30 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln413 = store i8 4, i6 %t_36_addr" [src/sha3/fips202.c:413->src/sha3/fips202.c:624]   --->   Operation 30 'store' 'store_ln413' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
+ST_7 : Operation 31 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln414 = store i8 %or_ln, i6 %t_37_addr" [src/sha3/fips202.c:414->src/sha3/fips202.c:624]   --->   Operation 31 'store' 'store_ln414' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 50> <RAM>
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_406_5, i8 %t, i8 %t_35, i8 %t_36, i8 %t_37, i64 %s"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_415_5, i8 %t, i8 %t_35, i8 %t_36, i8 %t_37, i64 %s"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 33 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %s"   --->   Operation 33 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_406_5, i8 %t, i8 %t_35, i8 %t_36, i8 %t_37, i64 %s"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 35 [1/1] (0.00ns)   --->   "%ret_ln610 = ret" [src/sha3/fips202.c:610]   --->   Operation 35 'ret' 'ret_ln610' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_415_5, i8 %t, i8 %t_35, i8 %t_36, i8 %t_37, i64 %s"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 35 [1/1] (0.00ns)   --->   "%ret_ln625 = ret" [src/sha3/fips202.c:625]   --->   Operation 35 'ret' 'ret_ln625' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -137,29 +137,29 @@ The critical path consists of the following:
 
  <State 2>: 5.091ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_400_3' [13]  (5.091 ns)
+	'call' operation 0 bit ('call_ln0') to 'cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_402_3' [13]  (5.091 ns)
 
  <State 3>: 3.254ns
 The critical path consists of the following:
-	'getelementptr' operation 5 bit ('s_addr', src/sha3/fips202.c:597) [10]  (0.000 ns)
-	'store' operation 0 bit ('store_ln604', src/sha3/fips202.c:604) of constant <constant:_ssdm_op_Write.bram.i64> on array 's' [11]  (3.254 ns)
+	'getelementptr' operation 5 bit ('s_addr', src/sha3/fips202.c:612) [10]  (0.000 ns)
+	'store' operation 0 bit ('store_ln619', src/sha3/fips202.c:619) of constant <constant:_ssdm_op_Write.bram.i64> on array 's' [11]  (3.254 ns)
 
  <State 4>: 0.000ns
 The critical path consists of the following:
 
  <State 5>: 5.046ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_402_4' [14]  (5.046 ns)
+	'call' operation 0 bit ('call_ln0') to 'cshake256_simple_absorb.clone_Pipeline_VITIS_LOOP_407_4' [14]  (5.046 ns)
 
  <State 6>: 2.322ns
 The critical path consists of the following:
-	'getelementptr' operation 6 bit ('t_37_addr', src/sha3/fips202.c:405->src/sha3/fips202.c:609) [16]  (0.000 ns)
-	'load' operation 8 bit ('t_37_load', src/sha3/fips202.c:405->src/sha3/fips202.c:609) on array 't', src/sha3/fips202.c:387->src/sha3/fips202.c:609 [17]  (2.322 ns)
+	'getelementptr' operation 6 bit ('t_37_addr', src/sha3/fips202.c:414->src/sha3/fips202.c:624) [16]  (0.000 ns)
+	'load' operation 8 bit ('t_37_load', src/sha3/fips202.c:414->src/sha3/fips202.c:624) on array 't', src/sha3/fips202.c:387->src/sha3/fips202.c:624 [17]  (2.322 ns)
 
  <State 7>: 4.644ns
 The critical path consists of the following:
-	'load' operation 8 bit ('t_37_load', src/sha3/fips202.c:405->src/sha3/fips202.c:609) on array 't', src/sha3/fips202.c:387->src/sha3/fips202.c:609 [17]  (2.322 ns)
-	'store' operation 0 bit ('store_ln405', src/sha3/fips202.c:405->src/sha3/fips202.c:609) of variable 'or_ln', src/sha3/fips202.c:405->src/sha3/fips202.c:609 on array 't', src/sha3/fips202.c:387->src/sha3/fips202.c:609 [21]  (2.322 ns)
+	'load' operation 8 bit ('t_37_load', src/sha3/fips202.c:414->src/sha3/fips202.c:624) on array 't', src/sha3/fips202.c:387->src/sha3/fips202.c:624 [17]  (2.322 ns)
+	'store' operation 0 bit ('store_ln414', src/sha3/fips202.c:414->src/sha3/fips202.c:624) of variable 'or_ln', src/sha3/fips202.c:414->src/sha3/fips202.c:624 on array 't', src/sha3/fips202.c:387->src/sha3/fips202.c:624 [21]  (2.322 ns)
 
  <State 8>: 0.000ns
 The critical path consists of the following:

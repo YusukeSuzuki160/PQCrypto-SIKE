@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mp_mul_319_Pipeline_VITIS_LOOP_145_2'" level="0">
-<item name = "Date">Tue May 27 14:17:49 2025
+<item name = "Date">Tue Jun  3 14:12:53 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -86,7 +86,7 @@
 <column name="add_ln133_fu_520_p2">+, 0, 0, 71, 64, 64</column>
 <column name="add_ln145_fu_208_p2">+, 0, 0, 13, 4, 1</column>
 <column name="tempReg_fu_591_p2">+, 0, 0, 71, 64, 64</column>
-<column name="temp_52_fu_476_p2">+, 0, 0, 41, 34, 34</column>
+<column name="temp_55_fu_476_p2">+, 0, 0, 41, 34, 34</column>
 <column name="temp_fu_410_p2">+, 0, 0, 41, 34, 34</column>
 <column name="u_fu_687_p2">+, 0, 0, 13, 4, 4</column>
 <column name="v_149_fu_532_p2">+, 0, 0, 71, 64, 64</column>

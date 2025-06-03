@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_6_Pipeline_VITIS_LOOP_350_1164'" level="0">
-<item name = "Date">Tue May 27 14:18:24 2025
+<item name = "Date">Tue Jun  3 14:13:27 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -86,12 +86,12 @@
 <column name="and_ln352_fu_267_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_297">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln350_fu_135_p2">icmp, 0, 0, 13, 4, 5</column>
-<column name="or_ln352_35_fu_278_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln352_34_fu_278_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln352_fu_237_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln352_88_fu_233_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln352_89_fu_250_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln352_90_fu_272_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln352_87_fu_233_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln352_88_fu_250_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln352_89_fu_272_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln352_fu_228_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -103,7 +103,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="carry_reg_116">9, 2, 1, 2</column>
-<column name="i_201_fu_62">9, 2, 4, 8</column>
+<column name="i_203_fu_62">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -115,7 +115,7 @@
 <column name="carry_reg_116">1, 0, 1, 0</column>
 <column name="coeff_load_9_reg_333">64, 0, 64, 0</column>
 <column name="coeff_load_reg_319">64, 0, 64, 0</column>
-<column name="i_201_fu_62">4, 0, 4, 0</column>
+<column name="i_203_fu_62">4, 0, 4, 0</column>
 <column name="i_reg_299">4, 0, 4, 0</column>
 <column name="icmp_ln350_reg_305">1, 0, 1, 0</column>
 <column name="tempReg_reg_324">64, 0, 64, 0</column>

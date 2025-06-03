@@ -115,7 +115,7 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "coeff", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "carry_157_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "carry_151_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "p503x2_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_28_2", "PipelineType" : "UPC",
@@ -155,7 +155,7 @@ set ArgLastReadFirstWriteLatency {
 		coeff {Type IO LastRead 0 FirstWrite 2}}
 	fpadd503_8_Pipeline_VITIS_LOOP_28_2 {
 		coeff {Type IO LastRead 0 FirstWrite 2}
-		carry_157_out {Type O LastRead -1 FirstWrite 0}
+		carry_151_out {Type O LastRead -1 FirstWrite 0}
 		p503x2_1 {Type I LastRead -1 FirstWrite -1}}
 	fpadd503_8_Pipeline_VITIS_LOOP_34_3 {
 		coeff {Type IO LastRead 0 FirstWrite 2}

@@ -59,7 +59,7 @@ wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 reg   [0:0] carry_reg_92;
 wire    ap_block_pp0_stage0_11001;
-reg   [3:0] i_227_reg_237;
+reg   [3:0] i_229_reg_237;
 wire   [0:0] icmp_ln23_fu_111_p2;
 wire   [3:0] add_ln24_22_fu_133_p2;
 reg   [3:0] add_ln24_22_reg_252;
@@ -74,7 +74,7 @@ wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln24_35_fu_152_p1;
 reg   [3:0] i_fu_50;
 wire   [3:0] add_ln23_fu_128_p2;
-reg   [3:0] ap_sig_allocacmp_i_227;
+reg   [3:0] ap_sig_allocacmp_i_229;
 reg    b_ce0_local;
 reg    c_we0_local;
 wire   [63:0] add_ln24_24_fu_156_p2;
@@ -198,7 +198,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_227_reg_237 <= ap_sig_allocacmp_i_227;
+        i_229_reg_237 <= ap_sig_allocacmp_i_229;
         icmp_ln23_reg_243 <= icmp_ln23_fu_111_p2;
     end
 end
@@ -261,9 +261,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_227 = 4'd0;
+        ap_sig_allocacmp_i_229 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_227 = i_fu_50;
+        ap_sig_allocacmp_i_229 = i_fu_50;
     end
 end
 
@@ -313,13 +313,13 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln23_fu_128_p2 = (i_227_reg_237 + 4'd1);
+assign add_ln23_fu_128_p2 = (i_229_reg_237 + 4'd1);
 
-assign add_ln24_22_fu_133_p2 = (zext_ln24_23 + i_227_reg_237);
+assign add_ln24_22_fu_133_p2 = (zext_ln24_23 + i_229_reg_237);
 
 assign add_ln24_24_fu_156_p2 = (b_load_reg_257 + tempReg_reg_264);
 
-assign add_ln24_fu_117_p2 = (zext_ln24_24 + ap_sig_allocacmp_i_227);
+assign add_ln24_fu_117_p2 = (zext_ln24_24 + ap_sig_allocacmp_i_229);
 
 assign and_ln24_fu_200_p2 = (xor_ln24_s_fu_192_p3 & b_load_reg_257);
 
@@ -365,7 +365,7 @@ assign c_d0 = add_ln24_24_fu_156_p2;
 
 assign c_we0 = c_we0_local;
 
-assign icmp_ln23_fu_111_p2 = ((ap_sig_allocacmp_i_227 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln23_fu_111_p2 = ((ap_sig_allocacmp_i_229 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln24_16_fu_211_p2 = (xor_ln24_48_fu_205_p2 | and_ln24_fu_200_p2);
 

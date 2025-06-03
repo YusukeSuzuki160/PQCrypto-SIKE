@@ -1639,7 +1639,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>zext_ln146_13</name>
+						<name>zext_ln146_11</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>146</lineNumber>
@@ -2632,7 +2632,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>zext_ln105_108</name>
+						<name>zext_ln105_109</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -4801,7 +4801,7 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>temp_52</name>
+						<name>temp_55</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>130</lineNumber>
@@ -5690,7 +5690,7 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>zext_ln105_109</name>
+						<name>zext_ln105_110</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -12184,7 +12184,7 @@
 			</second>
 		</item>
 		<item>
-			<first>temp_52_fu_476</first>
+			<first>temp_55_fu_476</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12456,7 +12456,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln105_108_fu_325</first>
+			<first>zext_ln105_109_fu_325</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12464,7 +12464,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln105_109_fu_570</first>
+			<first>zext_ln105_110_fu_570</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12600,7 +12600,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln146_13_fu_243</first>
+			<first>zext_ln146_11_fu_243</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -13316,7 +13316,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln105_108_reg_776</first>
+			<first>zext_ln105_109_reg_776</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

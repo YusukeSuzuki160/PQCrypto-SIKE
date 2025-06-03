@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_144_275'
 ================================================================
-* Date:           Tue May 27 14:18:31 2025
+* Date:           Tue Jun  3 14:13:34 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -195,9 +195,9 @@ ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%c_offset_read = read i32 @_ssdm_op_
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%a_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset2"   --->   Operation 7 'read' 'a_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 8 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%empty = trunc i32 %a_offset_read"   --->   Operation 9 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%empty_133 = trunc i32 %c_offset_read"   --->   Operation 10 'trunc' 'empty_133' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%empty_140 = trunc i32 %c_offset_read"   --->   Operation 10 'trunc' 'empty_140' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 11 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_133, i1 %c_offset4_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 12 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_140, i1 %c_offset4_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 12 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty, i1 %a_offset2_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 13 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [2/2] (5.12ns)   --->   "%call_ln48 = call void @fpsub503.144.275_Pipeline_VITIS_LOOP_47_1, i7 %tmp_s, i64 %a, i7 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 14 'call' 'call_ln48' <Predicate = true> <Delay = 5.12> <CoreType = "Generic">   --->   Generic Core
 
@@ -242,7 +242,7 @@ c_offset_read   (read          ) [ 00000]
 a_offset2_read  (read          ) [ 00000]
 a_offset_read   (read          ) [ 00000]
 empty           (trunc         ) [ 00000]
-empty_133       (trunc         ) [ 00000]
+empty_140       (trunc         ) [ 00000]
 borrow_loc      (alloca        ) [ 01110]
 tmp             (bitconcatenate) [ 00111]
 tmp_s           (bitconcatenate) [ 00100]
@@ -485,14 +485,14 @@ ret_ln56        (ret           ) [ 00000]
 </bind>
 </comp>
 
-<comp id="81" class="1004" name="empty_133_fu_81">
+<comp id="81" class="1004" name="empty_140_fu_81">
 <pin_list>
 <pin id="82" dir="0" index="0" bw="32" slack="0"/>
 <pin id="83" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_133/1 "/>
+<opset="empty_140/1 "/>
 </bind>
 </comp>
 
@@ -686,7 +686,7 @@ ret_ln56        (ret           ) [ 00000]
 |          |               a_offset_read_read_fu_50              |    0    |    0    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|
 |   trunc  |                     empty_fu_77                     |    0    |    0    |    0    |
-|          |                   empty_133_fu_81                   |    0    |    0    |    0    |
+|          |                   empty_140_fu_81                   |    0    |    0    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|
 |bitconcatenate|                      tmp_fu_85                      |    0    |    0    |    0    |
 |          |                     tmp_s_fu_96                     |    0    |    0    |    0    |

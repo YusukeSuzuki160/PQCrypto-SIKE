@@ -1857,7 +1857,7 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>lshr_ln7</name>
+              <name>lshr_ln8</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>210</lineNumber>
@@ -1882,7 +1882,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>lshr_ln7_fu_276_p4</rtlName>
+              <rtlName>lshr_ln8_fu_276_p4</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4604,7 +4604,7 @@
             <Obj>
               <type>0</type>
               <id>90</id>
-              <name>temp_5</name>
+              <name>temp_8</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>130</lineNumber>
@@ -4636,7 +4636,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>temp</originalName>
-              <rtlName>temp_5_fu_483_p2</rtlName>
+              <rtlName>temp_8_fu_483_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -11062,7 +11062,7 @@
           </second>
         </item>
         <item>
-          <first>temp_5_fu_483_p2 ( + ) </first>
+          <first>temp_8_fu_483_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -12672,7 +12672,7 @@
           </second>
         </item>
         <item>
-          <first>temp_5_fu_483_p2 ( + ) </first>
+          <first>temp_8_fu_483_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -14834,7 +14834,7 @@
         </second>
       </item>
       <item>
-        <first>lshr_ln7_fu_276</first>
+        <first>lshr_ln8_fu_276</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -14930,7 +14930,7 @@
         </second>
       </item>
       <item>
-        <first>temp_5_fu_483</first>
+        <first>temp_8_fu_483</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

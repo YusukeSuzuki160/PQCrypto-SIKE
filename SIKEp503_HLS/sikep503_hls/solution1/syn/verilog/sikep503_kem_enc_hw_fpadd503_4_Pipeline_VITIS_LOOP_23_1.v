@@ -58,7 +58,7 @@ wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 reg   [0:0] carry_reg_86;
 wire    ap_block_pp0_stage0_11001;
-reg   [3:0] i_219_reg_293;
+reg   [3:0] i_221_reg_293;
 wire    ap_block_pp0_stage1_11001;
 reg   [0:0] icmp_ln23_reg_298;
 reg   [0:0] icmp_ln23_reg_298_pp0_iter1_reg;
@@ -302,7 +302,7 @@ always @ (posedge ap_clk) begin
         R_Z_addr_reg_307_pp0_iter1_reg[2 : 0] <= R_Z_addr_reg_307[2 : 0];
         addr_cmp_reg_312 <= addr_cmp_fu_158_p2;
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-        i_219_reg_293 <= i_fu_56;
+        i_221_reg_293 <= i_fu_56;
         icmp_ln23_reg_298 <= icmp_ln23_fu_115_p2;
         icmp_ln23_reg_298_pp0_iter1_reg <= icmp_ln23_reg_298;
         reuse_select_reg_328 <= reuse_select_fu_182_p3;
@@ -450,7 +450,7 @@ assign R_Z_d0 = add_ln24_7_fu_198_p2;
 
 assign R_Z_we0 = R_Z_we0_local;
 
-assign add_ln23_fu_169_p2 = (i_219_reg_293 + 4'd1);
+assign add_ln23_fu_169_p2 = (i_221_reg_293 + 4'd1);
 
 assign add_ln24_7_fu_198_p2 = (b_load_reg_322 + tempReg_reg_333);
 

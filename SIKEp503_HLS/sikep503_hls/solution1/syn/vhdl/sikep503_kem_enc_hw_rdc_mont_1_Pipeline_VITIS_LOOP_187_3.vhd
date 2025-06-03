@@ -18,7 +18,7 @@ port (
     ap_ready : OUT STD_LOGIC;
     v_025 : IN STD_LOGIC_VECTOR (63 downto 0);
     u_024 : IN STD_LOGIC_VECTOR (63 downto 0);
-    i_9 : IN STD_LOGIC_VECTOR (2 downto 0);
+    i_11 : IN STD_LOGIC_VECTOR (2 downto 0);
     add_ln187 : IN STD_LOGIC_VECTOR (3 downto 0);
     R_Z_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     R_Z_ce0 : OUT STD_LOGIC;
@@ -193,7 +193,7 @@ attribute shreg_extract : string;
     signal add_ln130_19_fu_414_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal zext_ln130_19_fu_419_p1 : STD_LOGIC_VECTOR (33 downto 0);
     signal zext_ln130_18_fu_411_p1 : STD_LOGIC_VECTOR (33 downto 0);
-    signal temp_12_fu_423_p2 : STD_LOGIC_VECTOR (33 downto 0);
+    signal temp_15_fu_423_p2 : STD_LOGIC_VECTOR (33 downto 0);
     signal and_ln191_9_fu_450_p3 : STD_LOGIC_VECTOR (33 downto 0);
     signal zext_ln191_fu_457_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal and_ln_fu_443_p3 : STD_LOGIC_VECTOR (63 downto 0);
@@ -551,7 +551,7 @@ begin
                 tmp_46_reg_811 <= grp_fu_845_p_dout0(63 downto 32);
                 tmp_46_reg_811_pp0_iter4_reg <= tmp_46_reg_811;
                 tmp_46_reg_811_pp0_iter5_reg <= tmp_46_reg_811_pp0_iter4_reg;
-                tmp_47_reg_837 <= temp_12_fu_423_p2(33 downto 32);
+                tmp_47_reg_837 <= temp_15_fu_423_p2(33 downto 32);
                 tmp_49_reg_857 <= xor_ln105_82_fu_575_p2(63 downto 63);
                 tmp_s_reg_796 <= grp_fu_833_p_dout0(63 downto 32);
                 trunc_ln105_reg_832 <= trunc_ln105_fu_429_p1;
@@ -707,7 +707,7 @@ begin
     grp_fu_845_p_ce <= ap_const_logic_1;
     grp_fu_845_p_din0 <= zext_ln112_fu_296_p1(32 - 1 downto 0);
     grp_fu_845_p_din1 <= zext_ln110_fu_286_p1(32 - 1 downto 0);
-    icmp_ln187_fu_214_p2 <= "1" when (ap_sig_allocacmp_j_7 = i_9) else "0";
+    icmp_ln187_fu_214_p2 <= "1" when (ap_sig_allocacmp_j_7 = i_11) else "0";
     icmp_ln188_fu_231_p2 <= "1" when (unsigned(zext_ln187_fu_210_p1) < unsigned(add_ln187)) else "0";
     or_ln105_14_fu_569_p2 <= (xor_ln105_81_fu_564_p2 or xor_ln105_80_fu_559_p2);
     or_ln105_fu_510_p2 <= (xor_ln105_fu_498_p2 or xor_ln105_77_fu_504_p2);
@@ -741,11 +741,11 @@ begin
 
     tempReg_12_fu_534_p2 <= std_logic_vector(unsigned(xor_ln191_reg_842) + unsigned(zext_ln105_27_fu_530_p1));
     tempReg_fu_486_p3 <= (trunc_ln125_reg_821_pp0_iter6_reg & trunc_ln106_reg_776_pp0_iter6_reg);
-    temp_12_fu_423_p2 <= std_logic_vector(unsigned(zext_ln130_19_fu_419_p1) + unsigned(zext_ln130_18_fu_411_p1));
+    temp_15_fu_423_p2 <= std_logic_vector(unsigned(zext_ln130_19_fu_419_p1) + unsigned(zext_ln130_18_fu_411_p1));
     temp_fu_376_p2 <= std_logic_vector(unsigned(zext_ln123_19_fu_372_p1) + unsigned(zext_ln106_fu_357_p1));
     tmp_48_fu_633_p3 <= and_ln105_fu_628_p2(63 downto 63);
     trunc_ln105_16_fu_617_p1 <= tempReg_12_reg_848_pp0_iter8_reg(63 - 1 downto 0);
-    trunc_ln105_fu_429_p1 <= temp_12_fu_423_p2(32 - 1 downto 0);
+    trunc_ln105_fu_429_p1 <= temp_15_fu_423_p2(32 - 1 downto 0);
     trunc_ln106_37_fu_305_p1 <= grp_fu_837_p_dout0(32 - 1 downto 0);
     trunc_ln106_38_fu_309_p1 <= grp_fu_841_p_dout0(32 - 1 downto 0);
     trunc_ln106_39_fu_313_p1 <= grp_fu_845_p_dout0(32 - 1 downto 0);

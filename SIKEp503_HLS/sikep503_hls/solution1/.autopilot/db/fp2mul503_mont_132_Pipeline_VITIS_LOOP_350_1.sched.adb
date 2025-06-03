@@ -506,7 +506,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>i_265</name>
+						<name>i_267</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>350</lineNumber>
@@ -2496,7 +2496,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>or_ln352_69</name>
+						<name>or_ln352_70</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>

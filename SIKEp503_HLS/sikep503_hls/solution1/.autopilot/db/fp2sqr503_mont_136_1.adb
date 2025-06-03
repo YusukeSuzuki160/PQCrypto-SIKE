@@ -354,7 +354,7 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>temp_64</name>
+              <name>temp_67</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>61</lineNumber>
@@ -386,7 +386,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>temp</originalName>
-              <rtlName>temp_64_U</rtlName>
+              <rtlName>temp_67_U</rtlName>
               <control>auto</control>
               <opType>ram_1p</opType>
               <implIndex>auto</implIndex>
@@ -3080,7 +3080,7 @@
           </second>
         </item>
         <item>
-          <first>temp_64_U</first>
+          <first>temp_67_U</first>
           <second>
             <count>8</count>
             <item_version>0</item_version>
@@ -3675,7 +3675,7 @@
           </second>
         </item>
         <item>
-          <first>temp_64_address0</first>
+          <first>temp_67_address0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3702,7 +3702,7 @@
           </second>
         </item>
         <item>
-          <first>temp_64_ce0</first>
+          <first>temp_67_ce0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3729,7 +3729,7 @@
           </second>
         </item>
         <item>
-          <first>temp_64_d0</first>
+          <first>temp_67_d0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3756,7 +3756,7 @@
           </second>
         </item>
         <item>
-          <first>temp_64_we0</first>
+          <first>temp_67_we0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4303,7 +4303,7 @@
           </second>
         </item>
         <item>
-          <first>temp_64_U</first>
+          <first>temp_67_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4697,7 +4697,7 @@
         </second>
       </item>
       <item>
-        <first>temp_64_alloca_fu_46</first>
+        <first>temp_67_alloca_fu_46</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

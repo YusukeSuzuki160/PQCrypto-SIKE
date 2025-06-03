@@ -168,7 +168,7 @@ reg    ap_block_pp0_stage0_subdone_grp4;
 wire    ap_block_pp0_stage0_11001_grp0;
 reg    ap_block_pp0_stage0_subdone_grp0_done_reg;
 wire    ap_block_pp0_stage0_subdone_grp0;
-reg   [5:0] i_293_reg_273;
+reg   [5:0] i_291_reg_273;
 reg    ap_block_pp0_stage0_11001;
 wire   [0:0] icmp_ln42_fu_145_p2;
 reg   [63:0] t_i406_load_reg_294;
@@ -178,7 +178,7 @@ wire    ap_block_pp0_stage1_subdone_grp0;
 reg   [63:0] gmem_addr_reg_299;
 reg    ap_block_pp0_stage1_11001_grp2;
 reg   [63:0] t_i406_load_1_reg_305;
-reg   [63:0] gmem_addr_7_reg_310;
+reg   [63:0] gmem_addr_6_reg_310;
 wire   [63:0] zext_ln44_fu_239_p1;
 reg   [63:0] zext_ln44_reg_316;
 wire   [7:0] trunc_ln44_fu_248_p1;
@@ -197,7 +197,7 @@ wire    ap_block_pp0_stage0_01001_grp4;
 reg   [5:0] i_fu_70;
 wire   [5:0] add_ln42_fu_179_p2;
 wire    ap_loop_init;
-reg   [5:0] ap_sig_allocacmp_i_293;
+reg   [5:0] ap_sig_allocacmp_i_291;
 reg    t_i406_ce1_local;
 reg    t_i406_ce0_local;
 wire   [2:0] lshr_ln44_3_fu_151_p4;
@@ -405,14 +405,14 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1_11001_grp2))) begin
-        gmem_addr_7_reg_310 <= add_ln45_2_fu_218_p2;
+        gmem_addr_6_reg_310 <= add_ln45_2_fu_218_p2;
         gmem_addr_reg_299 <= add_ln44_1_fu_197_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        i_293_reg_273 <= ap_sig_allocacmp_i_293;
+        i_291_reg_273 <= ap_sig_allocacmp_i_291;
         icmp_ln42_reg_280 <= icmp_ln42_fu_145_p2;
     end
 end
@@ -495,9 +495,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_i_293 = 6'd0;
+        ap_sig_allocacmp_i_291 = 6'd0;
     end else begin
-        ap_sig_allocacmp_i_293 = i_fu_70;
+        ap_sig_allocacmp_i_291 = i_fu_70;
     end
 end
 
@@ -528,7 +528,7 @@ end
 always @ (*) begin
     if ((ap_enable_reg_pp0_iter1 == 1'b1)) begin
         if (((1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1_11001_grp2))) begin
-            m_axi_gmem_0_AWADDR = gmem_addr_7_reg_310;
+            m_axi_gmem_0_AWADDR = gmem_addr_6_reg_310;
         end else if ((1'b1 == ap_condition_454)) begin
             m_axi_gmem_0_AWADDR = gmem_addr_reg_299;
         end else begin
@@ -611,7 +611,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln42_fu_179_p2 = (i_293_reg_273 + 6'd1);
+assign add_ln42_fu_179_p2 = (i_291_reg_273 + 6'd1);
 
 assign add_ln44_1_fu_197_p2 = (zext_ln44_4_fu_193_p1 + PublicKeyA);
 
@@ -703,9 +703,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage1;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln42_fu_145_p2 = ((ap_sig_allocacmp_i_293 == 6'd63) ? 1'b1 : 1'b0);
+assign icmp_ln42_fu_145_p2 = ((ap_sig_allocacmp_i_291 == 6'd63) ? 1'b1 : 1'b0);
 
-assign lshr_ln44_3_fu_151_p4 = {{ap_sig_allocacmp_i_293[5:3]}};
+assign lshr_ln44_3_fu_151_p4 = {{ap_sig_allocacmp_i_291[5:3]}};
 
 assign lshr_ln44_fu_243_p2 = t_i406_load_reg_294 >> zext_ln44_fu_239_p1;
 
@@ -765,7 +765,7 @@ assign m_axi_gmem_0_WSTRB = 1'd1;
 
 assign m_axi_gmem_0_WUSER = 1'd0;
 
-assign shl_ln44_fu_234_p2 = i_293_reg_273 << 6'd3;
+assign shl_ln44_fu_234_p2 = i_291_reg_273 << 6'd3;
 
 assign t_i406_address0 = zext_ln45_fu_174_p1;
 
@@ -779,7 +779,7 @@ assign trunc_ln44_fu_248_p1 = lshr_ln44_fu_243_p2[7:0];
 
 assign trunc_ln45_fu_256_p1 = lshr_ln45_fu_252_p2[7:0];
 
-assign zext_ln42_fu_184_p1 = i_293_reg_273;
+assign zext_ln42_fu_184_p1 = i_291_reg_273;
 
 assign zext_ln44_3_fu_161_p1 = lshr_ln44_3_fu_151_p4;
 

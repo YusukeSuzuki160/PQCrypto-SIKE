@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2div2_503_Pipeline_VITIS_LOOP_392_1216'
 ================================================================
-* Date:           Tue May 27 14:11:26 2025
+* Date:           Tue Jun  3 14:06:36 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -85,10 +85,10 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 5.56>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_242 = alloca i32 1" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 5 'alloca' 'i_242' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (1.58ns)   --->   "%store_ln390 = store i3 0, i3 %i_242" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 6 'store' 'store_ln390' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_244 = alloca i32 1" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 5 'alloca' 'i_244' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (1.58ns)   --->   "%store_ln390 = store i3 0, i3 %i_244" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 6 'store' 'store_ln390' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i.i41"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i3 %i_242" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 8 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i3 %i_244" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 8 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (1.65ns)   --->   "%icmp_ln392 = icmp_eq  i3 %i, i3 7" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 9 'icmp' 'icmp_ln392' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 10 [1/1] (1.65ns)   --->   "%add_ln394 = add i3 %i, i3 1" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 10 'add' 'add_ln394' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln392 = br i1 %icmp_ln392, void %for.inc.i.i41.split, void %fpdiv2_503.exit44.exitStub" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 11 'br' 'br_ln392' <Predicate = true> <Delay = 0.00>
@@ -110,9 +110,9 @@ ST_1 : Operation 26 [2/2] (2.32ns)   --->   "%c_1_load_1 = load i3 %c_1_addr_1" 
 ST_1 : Operation 48 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 48 'ret' 'ret_ln0' <Predicate = (icmp_ln392)> <Delay = 1.58>
 
 State 2 <SV = 1> <Delay = 6.05>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 27 'specpipeline' 'specpipeline_ln390' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 27 'specpipeline' 'specpipeline_ln390' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%speclooptripcount_ln390 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 7, i64 7, i64 7" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 28 'speclooptripcount' 'speclooptripcount_ln390' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_92" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 29 'specloopname' 'specloopname_ln392' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_89" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 29 'specloopname' 'specloopname_ln392' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 30 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 30 'load' 'c_0_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 31 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 31 'load' 'c_1_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_503 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load, i32 1, i32 63" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 32 'partselect' 'tmp_503' <Predicate = (trunc_ln392)> <Delay = 0.00>
@@ -129,7 +129,7 @@ ST_2 : Operation 42 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln394 = store i
 ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln394 = br void %arrayidx.i.i345614.exit" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 43 'br' 'br_ln394' <Predicate = (!trunc_ln392)> <Delay = 0.00>
 ST_2 : Operation 44 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln394 = store i64 %or_ln394_1, i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 44 'store' 'store_ln394' <Predicate = (trunc_ln392)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln394 = br void %arrayidx.i.i345614.exit" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 45 'br' 'br_ln394' <Predicate = (trunc_ln392)> <Delay = 0.00>
-ST_2 : Operation 46 [1/1] (1.58ns)   --->   "%store_ln390 = store i3 %add_ln394, i3 %i_242" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 46 'store' 'store_ln390' <Predicate = true> <Delay = 1.58>
+ST_2 : Operation 46 [1/1] (1.58ns)   --->   "%store_ln390 = store i3 %add_ln394, i3 %i_244" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 46 'store' 'store_ln390' <Predicate = true> <Delay = 1.58>
 ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln392 = br void %for.inc.i.i41" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 47 'br' 'br_ln392' <Predicate = true> <Delay = 0.00>
 
 

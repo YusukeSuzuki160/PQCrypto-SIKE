@@ -190,8 +190,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ephemeralsk_address0</name>
-<Object>ephemeralsk</Object>
+<name>ephemeralsk_i_address0</name>
+<Object>ephemeralsk_i</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -201,8 +201,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ephemeralsk_ce0</name>
-<Object>ephemeralsk</Object>
+<name>ephemeralsk_i_ce0</name>
+<Object>ephemeralsk_i</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -212,8 +212,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ephemeralsk_q0</name>
-<Object>ephemeralsk</Object>
+<name>ephemeralsk_i_q0</name>
+<Object>ephemeralsk_i</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -223,8 +223,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ephemeralsk_address1</name>
-<Object>ephemeralsk</Object>
+<name>ephemeralsk_i_address1</name>
+<Object>ephemeralsk_i</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -234,8 +234,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ephemeralsk_ce1</name>
-<Object>ephemeralsk</Object>
+<name>ephemeralsk_i_ce1</name>
+<Object>ephemeralsk_i</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -245,8 +245,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ephemeralsk_q1</name>
-<Object>ephemeralsk</Object>
+<name>ephemeralsk_i_q1</name>
+<Object>ephemeralsk_i</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

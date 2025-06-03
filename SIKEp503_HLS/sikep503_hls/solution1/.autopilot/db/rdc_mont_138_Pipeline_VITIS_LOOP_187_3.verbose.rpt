@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_138_Pipeline_VITIS_LOOP_187_3'
 ================================================================
-* Date:           Tue May 27 14:18:25 2025
+* Date:           Tue Jun  3 14:13:28 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -98,7 +98,7 @@
     |add_ln191_fu_494_p2      |         +|   0|  0|  71|          64|          64|
     |t_31_fu_680_p2           |         +|   0|  0|  71|          64|          64|
     |tempReg_22_fu_564_p2     |         +|   0|  0|  71|          64|          64|
-    |temp_22_fu_453_p2        |         +|   0|  0|  41|          34|          34|
+    |temp_25_fu_453_p2        |         +|   0|  0|  41|          34|          34|
     |temp_fu_406_p2           |         +|   0|  0|  41|          34|          34|
     |u_fu_584_p2              |         +|   0|  0|  71|          64|          64|
     |v_85_fu_522_p2           |         +|   0|  0|  71|          64|          64|
@@ -234,7 +234,7 @@
 |grp_fu_948_p_ce     |  out|    1|  ap_ctrl_hs|  rdc_mont.138_Pipeline_VITIS_LOOP_187_3|  return value|
 |v_025               |   in|   64|     ap_none|                                   v_025|        scalar|
 |u_024               |   in|   64|     ap_none|                                   u_024|        scalar|
-|i_11                |   in|    3|     ap_none|                                    i_11|        scalar|
+|i_13                |   in|    3|     ap_none|                                    i_13|        scalar|
 |mc_offset           |   in|    3|     ap_none|                               mc_offset|        scalar|
 |mc_offset2          |   in|    1|     ap_none|                              mc_offset2|        scalar|
 |mc_address0         |  out|    7|   ap_memory|                                      mc|         array|
@@ -307,7 +307,7 @@ ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp = read i3 @_ssdm_op_Read.ap_au
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%add_ln187_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %add_ln187"   --->   Operation 18 'read' 'add_ln187_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mc_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %mc_offset2"   --->   Operation 19 'read' 'mc_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mc_offset_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %mc_offset"   --->   Operation 20 'read' 'mc_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%i_11_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_11"   --->   Operation 21 'read' 'i_11_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%i_13_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_13"   --->   Operation 21 'read' 'i_13_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%u_024_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %u_024"   --->   Operation 22 'read' 'u_024_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%v_025_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %v_025"   --->   Operation 23 'read' 'v_025_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (1.58ns)   --->   "%store_ln179 = store i3 0, i3 %j" [src/generic/fp_generic.c:179]   --->   Operation 24 'store' 'store_ln179' <Predicate = true> <Delay = 1.58>
@@ -317,7 +317,7 @@ ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%store_ln180 = store i64 0, i64 %t"
 ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body6"   --->   Operation 28 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%j_12 = load i3 %j" [src/generic/fp_generic.c:187]   --->   Operation 29 'load' 'j_12' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln187 = zext i3 %j_12" [src/generic/fp_generic.c:187]   --->   Operation 30 'zext' 'zext_ln187' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (1.65ns)   --->   "%icmp_ln187 = icmp_eq  i3 %j_12, i3 %i_11_read" [src/generic/fp_generic.c:187]   --->   Operation 31 'icmp' 'icmp_ln187' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (1.65ns)   --->   "%icmp_ln187 = icmp_eq  i3 %j_12, i3 %i_13_read" [src/generic/fp_generic.c:187]   --->   Operation 31 'icmp' 'icmp_ln187' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 32 [1/1] (1.65ns)   --->   "%add_ln187_6 = add i3 %j_12, i3 1" [src/generic/fp_generic.c:187]   --->   Operation 32 'add' 'add_ln187_6' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln187 = br i1 %icmp_ln187, void %for.body6.split_ifconv, void %for.inc51.loopexit.exitStub" [src/generic/fp_generic.c:187]   --->   Operation 33 'br' 'br_ln187' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %mc_offset_read, i1 %mc_offset2_read, i3 %j_12" [src/generic/fp_generic.c:189]   --->   Operation 34 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln187)> <Delay = 0.00>
@@ -381,9 +381,9 @@ ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%zext_ln106_37 = zext i2 %tmp_94" [
 ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln130_37 = zext i33 %add_ln130" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:189]   --->   Operation 82 'zext' 'zext_ln130_37' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 83 [1/1] (2.55ns)   --->   "%add_ln130_38 = add i32 %trunc_ln106_s, i32 %zext_ln106_37" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:189]   --->   Operation 83 'add' 'add_ln130_38' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln130_38 = zext i32 %add_ln130_38" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:189]   --->   Operation 84 'zext' 'zext_ln130_38' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 85 [1/1] (2.59ns)   --->   "%temp_22 = add i34 %zext_ln130_38, i34 %zext_ln130_37" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:189]   --->   Operation 85 'add' 'temp_22' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%trunc_ln105 = trunc i34 %temp_22" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:189]   --->   Operation 86 'trunc' 'trunc_ln105' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_97 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_22, i32 32, i32 33" [src/generic/fp_generic.c:191]   --->   Operation 87 'partselect' 'tmp_97' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 85 [1/1] (2.59ns)   --->   "%temp_25 = add i34 %zext_ln130_38, i34 %zext_ln130_37" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:189]   --->   Operation 85 'add' 'temp_25' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%trunc_ln105 = trunc i34 %temp_25" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:189]   --->   Operation 86 'trunc' 'trunc_ln105' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_97 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_25, i32 32, i32 33" [src/generic/fp_generic.c:191]   --->   Operation 87 'partselect' 'tmp_97' <Predicate = true> <Delay = 0.00>
 
 State 7 <SV = 6> <Delay = 4.51>
 ST_7 : Operation 88 [1/1] (0.00ns)   --->   "%and_ln = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %tmp_96, i32 0" [src/generic/fp_generic.c:191]   --->   Operation 88 'bitconcatenate' 'and_ln' <Predicate = true> <Delay = 0.00>
@@ -428,9 +428,9 @@ ST_9 : Operation 138 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation
 
 State 10 <SV = 9> <Delay = 6.58>
 ST_10 : Operation 116 [1/1] (0.00ns)   --->   "%t_load = load i64 %t" [src/generic/fp_generic.c:192]   --->   Operation 116 'load' 't_load' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 117 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:180]   --->   Operation 117 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 117 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:180]   --->   Operation 117 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 118 [1/1] (0.00ns)   --->   "%speclooptripcount_ln180 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 7, i64 3" [src/generic/fp_generic.c:180]   --->   Operation 118 'speclooptripcount' 'speclooptripcount_ln180' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 119 [1/1] (0.00ns)   --->   "%specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [src/generic/fp_generic.c:187]   --->   Operation 119 'specloopname' 'specloopname_ln187' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 119 [1/1] (0.00ns)   --->   "%specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [src/generic/fp_generic.c:187]   --->   Operation 119 'specloopname' 'specloopname_ln187' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node t_31)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg_22, i64 63" [src/config.h:105->src/generic/fp_generic.c:191]   --->   Operation 120 'bitselect' 'bit_sel' <Predicate = (icmp_ln188)> <Delay = 0.00>
 ST_10 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node t_31)   --->   "%xor_ln105_161 = xor i1 %bit_sel, i1 1" [src/config.h:105->src/generic/fp_generic.c:191]   --->   Operation 121 'xor' 'xor_ln105_161' <Predicate = (icmp_ln188)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 122 [1/1] (0.00ns) (grouped into LUT with out node t_31)   --->   "%trunc_ln105_30 = trunc i64 %tempReg_22" [src/config.h:105->src/generic/fp_generic.c:191]   --->   Operation 122 'trunc' 'trunc_ln105_30' <Predicate = (icmp_ln188)> <Delay = 0.00>
@@ -458,7 +458,7 @@ STG Binding:
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ v_025]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ u_024]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ i_11]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ i_13]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ mc_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ mc_offset2]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ mc]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
@@ -482,7 +482,7 @@ tmp                     (read             ) [ 00000000000]
 add_ln187_read          (read             ) [ 00000000000]
 mc_offset2_read         (read             ) [ 00000000000]
 mc_offset_read          (read             ) [ 00000000000]
-i_11_read               (read             ) [ 00000000000]
+i_13_read               (read             ) [ 00000000000]
 u_024_read              (read             ) [ 00000000000]
 v_025_read              (read             ) [ 00000000000]
 store_ln179             (store            ) [ 00000000000]
@@ -540,7 +540,7 @@ zext_ln106_37           (zext             ) [ 00000000000]
 zext_ln130_37           (zext             ) [ 00000000000]
 add_ln130_38            (add              ) [ 00000000000]
 zext_ln130_38           (zext             ) [ 00000000000]
-temp_22                 (add              ) [ 00000000000]
+temp_25                 (add              ) [ 00000000000]
 trunc_ln105             (trunc            ) [ 01000001000]
 tmp_97                  (partselect       ) [ 01000001000]
 and_ln                  (bitconcatenate   ) [ 00000000000]
@@ -617,12 +617,12 @@ ret_ln0                 (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="i_11">
+<comp id="4" class="1000" name="i_13">
 <pin_list>
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="i_11"/></StgValue>
+<StgValue><ssdm name="i_13"/></StgValue>
 </bind>
 </comp>
 
@@ -894,7 +894,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 <pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -939,7 +939,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 <pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_26"/></StgValue>
 </bind>
 </comp>
 
@@ -1080,7 +1080,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="126" class="1004" name="i_11_read_read_fu_126">
+<comp id="126" class="1004" name="i_13_read_read_fu_126">
 <pin_list>
 <pin id="127" dir="0" index="0" bw="3" slack="0"/>
 <pin id="128" dir="0" index="1" bw="3" slack="0"/>
@@ -1088,7 +1088,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="i_11_read/1 "/>
+<opset="i_13_read/1 "/>
 </bind>
 </comp>
 
@@ -1787,7 +1787,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="453" class="1004" name="temp_22_fu_453">
+<comp id="453" class="1004" name="temp_25_fu_453">
 <pin_list>
 <pin id="454" dir="0" index="0" bw="32" slack="0"/>
 <pin id="455" dir="0" index="1" bw="33" slack="0"/>
@@ -1795,7 +1795,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="temp_22/6 "/>
+<opset="temp_25/6 "/>
 </bind>
 </comp>
 
@@ -3201,7 +3201,7 @@ ret_ln0                 (ret              ) [ 00000000000]
  - Input state : 
 	Port: rdc_mont.138_Pipeline_VITIS_LOOP_187_3 : v_025 | {1 }
 	Port: rdc_mont.138_Pipeline_VITIS_LOOP_187_3 : u_024 | {1 }
-	Port: rdc_mont.138_Pipeline_VITIS_LOOP_187_3 : i_11 | {1 }
+	Port: rdc_mont.138_Pipeline_VITIS_LOOP_187_3 : i_13 | {1 }
 	Port: rdc_mont.138_Pipeline_VITIS_LOOP_187_3 : mc_offset | {1 }
 	Port: rdc_mont.138_Pipeline_VITIS_LOOP_187_3 : mc_offset2 | {1 }
 	Port: rdc_mont.138_Pipeline_VITIS_LOOP_187_3 : mc | {1 2 }
@@ -3256,7 +3256,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 	State 6
 		add_ln130_38 : 1
 		zext_ln130_38 : 2
-		temp_22 : 3
+		temp_25 : 3
 		trunc_ln105 : 4
 		tmp_97 : 4
 	State 7
@@ -3316,7 +3316,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 |          |         temp_fu_406         |    0    |    0    |    40   |
 |          |       add_ln130_fu_432      |    0    |    0    |    39   |
 |          |     add_ln130_38_fu_444     |    0    |    0    |    39   |
-|    add   |        temp_22_fu_453       |    0    |    0    |    40   |
+|    add   |        temp_25_fu_453       |    0    |    0    |    40   |
 |          |       add_ln191_fu_494      |    0    |    0    |    71   |
 |          |         v_85_fu_522         |    0    |    0    |    71   |
 |          |      tempReg_22_fu_564      |    0    |    0    |    71   |
@@ -3351,7 +3351,7 @@ ret_ln0                 (ret              ) [ 00000000000]
 |          |  add_ln187_read_read_fu_108 |    0    |    0    |    0    |
 |          | mc_offset2_read_read_fu_114 |    0    |    0    |    0    |
 |   read   |  mc_offset_read_read_fu_120 |    0    |    0    |    0    |
-|          |    i_11_read_read_fu_126    |    0    |    0    |    0    |
+|          |    i_13_read_read_fu_126    |    0    |    0    |    0    |
 |          |    u_024_read_read_fu_132   |    0    |    0    |    0    |
 |          |    v_025_read_read_fu_138   |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|

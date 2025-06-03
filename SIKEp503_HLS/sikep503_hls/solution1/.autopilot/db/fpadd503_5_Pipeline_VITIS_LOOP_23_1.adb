@@ -1427,7 +1427,7 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>xor_ln24_23</name>
+              <name>xor_ln24_19</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>24</lineNumber>
@@ -1452,7 +1452,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln24_23_fu_178_p2</rtlName>
+              <rtlName>xor_ln24_19_fu_178_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1599,7 +1599,7 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>xor_ln24_24</name>
+              <name>xor_ln24_20</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>24</lineNumber>
@@ -1624,7 +1624,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln24_24_fu_195_p2</rtlName>
+              <rtlName>xor_ln24_20_fu_195_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1827,7 +1827,7 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>xor_ln24_25</name>
+              <name>xor_ln24_21</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>24</lineNumber>
@@ -1852,7 +1852,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln24_25_fu_217_p2</rtlName>
+              <rtlName>xor_ln24_21_fu_217_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1885,7 +1885,7 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>or_ln24_8</name>
+              <name>or_ln24_7</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>24</lineNumber>
@@ -1910,7 +1910,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln24_8_fu_223_p2</rtlName>
+              <rtlName>or_ln24_7_fu_223_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -3680,7 +3680,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln24_8_fu_223_p2 ( or ) </first>
+          <first>or_ln24_7_fu_223_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3749,7 +3749,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln24_23_fu_178_p2 ( xor ) </first>
+          <first>xor_ln24_19_fu_178_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3772,7 +3772,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln24_24_fu_195_p2 ( xor ) </first>
+          <first>xor_ln24_20_fu_195_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3795,7 +3795,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln24_25_fu_217_p2 ( xor ) </first>
+          <first>xor_ln24_21_fu_217_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4333,7 +4333,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln24_8_fu_223_p2 ( or ) </first>
+          <first>or_ln24_7_fu_223_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4357,7 +4357,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln24_23_fu_178_p2 ( xor ) </first>
+          <first>xor_ln24_19_fu_178_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4365,7 +4365,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln24_24_fu_195_p2 ( xor ) </first>
+          <first>xor_ln24_20_fu_195_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4373,7 +4373,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln24_25_fu_217_p2 ( xor ) </first>
+          <first>xor_ln24_21_fu_217_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5085,7 +5085,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln24_8_fu_223</first>
+        <first>or_ln24_7_fu_223</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5133,7 +5133,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln24_23_fu_178</first>
+        <first>xor_ln24_19_fu_178</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5141,7 +5141,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln24_24_fu_195</first>
+        <first>xor_ln24_20_fu_195</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5149,7 +5149,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln24_25_fu_217</first>
+        <first>xor_ln24_21_fu_217</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

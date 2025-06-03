@@ -739,10 +739,10 @@ entry:20 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_2, i8 %gmem, i64 %pk_r
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:21 %call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:21 %call_ln50 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln55"/></StgValue>
+<StgValue><ssdm name="call_ln50"/></StgValue>
 </operation>
 </state>
 
@@ -757,10 +757,10 @@ entry:21 %call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp,
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:21 %call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:21 %call_ln50 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln55"/></StgValue>
+<StgValue><ssdm name="call_ln50"/></StgValue>
 </operation>
 </state>
 
@@ -823,10 +823,10 @@ entry:23 %ephemeralsk_load = load i5 %ephemeralsk_addr
 
 <Node id="46" bw="2" op_0_bw="8">
 <![CDATA[
-entry:24 %trunc_ln56 = trunc i8 %ephemeralsk_load
+entry:24 %trunc_ln51 = trunc i8 %ephemeralsk_load
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln56"/></StgValue>
+<StgValue><ssdm name="trunc_ln51"/></StgValue>
 </operation>
 
 <operation id="84" st_id="14" stage="1" lat="1">
@@ -838,10 +838,10 @@ entry:24 %trunc_ln56 = trunc i8 %ephemeralsk_load
 
 <Node id="47" bw="8" op_0_bw="2">
 <![CDATA[
-entry:25 %zext_ln56 = zext i2 %trunc_ln56
+entry:25 %zext_ln51 = zext i2 %trunc_ln51
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln56"/></StgValue>
+<StgValue><ssdm name="zext_ln51"/></StgValue>
 </operation>
 
 <operation id="85" st_id="14" stage="1" lat="1">
@@ -853,10 +853,10 @@ entry:25 %zext_ln56 = zext i2 %trunc_ln56
 
 <Node id="48" bw="0" op_0_bw="8" op_1_bw="5" op_2_bw="0">
 <![CDATA[
-entry:26 %store_ln56 = store i8 %zext_ln56, i5 %ephemeralsk_addr
+entry:26 %store_ln51 = store i8 %zext_ln51, i5 %ephemeralsk_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln56"/></StgValue>
+<StgValue><ssdm name="store_ln51"/></StgValue>
 </operation>
 </state>
 
@@ -886,10 +886,10 @@ entry:3 %ct_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ct
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="64" op_12_bw="64" op_13_bw="64" op_14_bw="64" op_15_bw="6" op_16_bw="64" op_17_bw="0" op_18_bw="0" op_19_bw="0">
 <![CDATA[
-entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
+entry:27 %call_ln54 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln54"/></StgValue>
 </operation>
 </state>
 
@@ -904,10 +904,10 @@ entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="64" op_12_bw="64" op_13_bw="64" op_14_bw="64" op_15_bw="6" op_16_bw="64" op_17_bw="0" op_18_bw="0" op_19_bw="0">
 <![CDATA[
-entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
+entry:27 %call_ln54 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln54"/></StgValue>
 </operation>
 </state>
 
@@ -922,10 +922,10 @@ entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8
 
 <Node id="50" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="8" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="6" op_12_bw="64" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
+entry:28 %call_ln55 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln69"/></StgValue>
+<StgValue><ssdm name="call_ln55"/></StgValue>
 </operation>
 </state>
 
@@ -940,10 +940,10 @@ entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, 
 
 <Node id="50" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="8" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="6" op_12_bw="64" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
+entry:28 %call_ln55 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln69"/></StgValue>
+<StgValue><ssdm name="call_ln55"/></StgValue>
 </operation>
 </state>
 
@@ -958,10 +958,10 @@ entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, 
 
 <Node id="51" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
+entry:29 %call_ln56 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln75"/></StgValue>
+<StgValue><ssdm name="call_ln56"/></StgValue>
 </operation>
 
 <operation id="92" st_id="19" stage="1" lat="1">
@@ -973,10 +973,10 @@ entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvarian
 
 <Node id="52" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-entry:30 %add_ln81 = add i64 %ct_read, i64 378
+entry:30 %add_ln59 = add i64 %ct_read, i64 378
 
 ]]></Node>
-<StgValue><ssdm name="add_ln81"/></StgValue>
+<StgValue><ssdm name="add_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -991,10 +991,10 @@ entry:30 %add_ln81 = add i64 %ct_read, i64 378
 
 <Node id="51" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
+entry:29 %call_ln56 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln75"/></StgValue>
+<StgValue><ssdm name="call_ln56"/></StgValue>
 </operation>
 
 <operation id="94" st_id="20" stage="1" lat="1">
@@ -1006,7 +1006,7 @@ entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvarian
 
 <Node id="53" bw="8" op_0_bw="8" op_1_bw="64">
 <![CDATA[
-entry:31 %gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln81
+entry:31 %gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln59
 
 ]]></Node>
 <StgValue><ssdm name="gmem_addr_3"/></StgValue>
@@ -1039,10 +1039,10 @@ entry:32 %empty_183 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i8 %gmem_addr_3
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-entry:33 %call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %gmem, i64 %add_ln81, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
+entry:33 %call_ln59 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1, i8 %gmem, i64 %add_ln59, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
 
 ]]></Node>
-<StgValue><ssdm name="call_ln81"/></StgValue>
+<StgValue><ssdm name="call_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -1057,10 +1057,10 @@ entry:33 %call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-entry:33 %call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %gmem, i64 %add_ln81, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
+entry:33 %call_ln59 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1, i8 %gmem, i64 %add_ln59, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
 
 ]]></Node>
-<StgValue><ssdm name="call_ln81"/></StgValue>
+<StgValue><ssdm name="call_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -1360,10 +1360,10 @@ entry:37 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_4, i8 %gmem, i64 %ct_r
 
 <Node id="60" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="64" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:38 %call_ln638 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln623"/></StgValue>
+<StgValue><ssdm name="call_ln638"/></StgValue>
 </operation>
 </state>
 
@@ -1378,10 +1378,10 @@ entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %t
 
 <Node id="60" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="64" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:38 %call_ln638 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln623"/></StgValue>
+<StgValue><ssdm name="call_ln638"/></StgValue>
 </operation>
 </state>
 
@@ -1396,10 +1396,10 @@ entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %t
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
 <![CDATA[
-entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
+entry:39 %call_ln430 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln417"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -1414,10 +1414,10 @@ entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %Kecca
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
 <![CDATA[
-entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
+entry:39 %call_ln430 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln417"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -1432,7 +1432,7 @@ entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %Kecca
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
+entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1450,7 +1450,7 @@ entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
+entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1516,7 +1516,7 @@ entry:42 %empty_186 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i8 %gmem_addr_5
 
 <Node id="65" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
+entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1534,7 +1534,7 @@ entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %
 
 <Node id="65" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
+entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>

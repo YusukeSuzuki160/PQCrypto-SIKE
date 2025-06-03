@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_94_95_Pipeline_VITIS_LOOP_159_4'
 ================================================================
-* Date:           Tue May 27 14:15:25 2025
+* Date:           Tue Jun  3 12:32:35 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -253,7 +253,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln139', src/generic/fp_generic.c:139) of variable 'indvars_iv_cast' on local variable 'j', src/generic/fp_generic.c:139 [26]  (1.588 ns)
 	'load' operation 4 bit ('j', src/generic/fp_generic.c:159) on local variable 'j', src/generic/fp_generic.c:139 [32]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln159', src/generic/fp_generic.c:159) [33]  (1.735 ns)
+	'add' operation 4 bit ('add_ln159', src/generic/fp_generic.c:159) [129]  (1.735 ns)
 	'store' operation 0 bit ('store_ln139', src/generic/fp_generic.c:139) of variable 'add_ln159', src/generic/fp_generic.c:159 on local variable 'j', src/generic/fp_generic.c:139 [130]  (1.588 ns)
 
  <State 2>: 6.570ns

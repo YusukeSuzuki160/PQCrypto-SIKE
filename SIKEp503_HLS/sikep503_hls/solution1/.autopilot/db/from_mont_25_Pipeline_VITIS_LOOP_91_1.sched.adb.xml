@@ -76,10 +76,10 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i:1 %i_95 = load i4 %i
+for.inc.i:1 %i_98 = load i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="i_95"/></StgValue>
+<StgValue><ssdm name="i_98"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -91,7 +91,7 @@ for.inc.i:1 %i_95 = load i4 %i
 
 <Node id="10" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i:2 %icmp_ln91 = icmp_eq  i4 %i_95, i4 8
+for.inc.i:2 %icmp_ln91 = icmp_eq  i4 %i_98, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln91"/></StgValue>
@@ -106,7 +106,7 @@ for.inc.i:2 %icmp_ln91 = icmp_eq  i4 %i_95, i4 8
 
 <Node id="11" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i:3 %add_ln91 = add i4 %i_95, i4 1
+for.inc.i:3 %add_ln91 = add i4 %i_98, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln91"/></StgValue>
@@ -122,7 +122,7 @@ for.inc.i:3 %add_ln91 = add i4 %i_95, i4 1
 
 <Node id="14" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.i.split:0 %zext_ln91 = zext i4 %i_95
+for.inc.i.split:0 %zext_ln91 = zext i4 %i_98
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln91"/></StgValue>
@@ -334,7 +334,7 @@ for.end.i.exitStub:1 %ret_ln0 = ret
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.split:1 %specpipeline_ln88 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i.split:1 %specpipeline_ln88 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln88"/></StgValue>
@@ -366,7 +366,7 @@ for.inc.i.split:2 %speclooptripcount_ln88 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.split:3 %specloopname_ln91 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
+for.inc.i.split:3 %specloopname_ln91 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln91"/></StgValue>

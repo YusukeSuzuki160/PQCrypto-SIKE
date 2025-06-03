@@ -218,7 +218,7 @@ wire   [31:0] trunc_ln130_fu_440_p1;
 wire   [31:0] add_ln130_61_fu_420_p2;
 wire   [33:0] zext_ln130_54_fu_444_p1;
 wire   [33:0] zext_ln130_53_fu_430_p1;
-wire   [33:0] temp_30_fu_454_p2;
+wire   [33:0] temp_33_fu_454_p2;
 wire   [33:0] and_ln133_7_fu_487_p3;
 wire   [63:0] zext_ln133_fu_494_p1;
 wire   [63:0] and_ln_fu_480_p3;
@@ -450,7 +450,7 @@ always @ (posedge ap_clk) begin
         tmp_149_reg_802 <= {{grp_fu_435_p_dout0[63:32]}};
         tmp_149_reg_802_pp0_iter5_reg <= tmp_149_reg_802;
         tmp_149_reg_802_pp0_iter6_reg <= tmp_149_reg_802_pp0_iter5_reg;
-        tmp_150_reg_823 <= {{temp_30_fu_454_p2[33:32]}};
+        tmp_150_reg_823 <= {{temp_33_fu_454_p2[33:32]}};
         trunc_ln106_93_reg_770 <= trunc_ln106_93_fu_317_p1;
         trunc_ln106_94_reg_775 <= trunc_ln106_94_fu_321_p1;
         trunc_ln106_95_reg_780 <= trunc_ln106_95_fu_325_p1;
@@ -707,7 +707,7 @@ assign sub_ln146_fu_222_p2 = (i_cast_reg_696 - j_17_reg_701);
 
 assign tempReg_fu_569_p2 = (or_ln4_fu_562_p3 + zext_ln105_67_fu_548_p1);
 
-assign temp_30_fu_454_p2 = (zext_ln130_54_fu_444_p1 + zext_ln130_53_fu_430_p1);
+assign temp_33_fu_454_p2 = (zext_ln130_54_fu_444_p1 + zext_ln130_53_fu_430_p1);
 
 assign temp_fu_388_p2 = (zext_ln123_54_fu_384_p1 + zext_ln106_fu_369_p1);
 

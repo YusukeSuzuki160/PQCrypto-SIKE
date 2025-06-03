@@ -406,7 +406,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>temp_71</name>
+						<name>temp_74</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>61</lineNumber>
@@ -2453,7 +2453,7 @@
 			</second>
 		</item>
 		<item>
-			<first>temp_71_alloca_fu_60</first>
+			<first>temp_74_alloca_fu_60</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

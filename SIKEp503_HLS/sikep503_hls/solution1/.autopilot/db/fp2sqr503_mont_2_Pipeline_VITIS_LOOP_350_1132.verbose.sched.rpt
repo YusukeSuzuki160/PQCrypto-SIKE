@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2sqr503_mont_2_Pipeline_VITIS_LOOP_350_1132'
 ================================================================
-* Date:           Tue May 27 14:12:33 2025
+* Date:           Tue Jun  3 14:07:41 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -86,18 +86,18 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 4.91>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i_169 = alloca i32 1" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 6 'alloca' 'i_169' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i_171 = alloca i32 1" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 6 'alloca' 'i_171' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %coeff"   --->   Operation 7 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (1.58ns)   --->   "%store_ln348 = store i4 0, i4 %i_169" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 8 'store' 'store_ln348' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 8 [1/1] (1.58ns)   --->   "%store_ln348 = store i4 0, i4 %i_171" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 8 'store' 'store_ln348' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 9 [1/1] (1.58ns)   --->   "%br_ln0 = br void %for.inc.i.i39"   --->   Operation 9 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%i = load i4 %i_169" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 10 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%i = load i4 %i_171" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 10 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (1.73ns)   --->   "%icmp_ln350 = icmp_eq  i4 %i, i4 8" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 11 'icmp' 'icmp_ln350' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (1.73ns)   --->   "%add_ln350 = add i4 %i, i4 1" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 12 'add' 'add_ln350' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln350 = br i1 %icmp_ln350, void %for.inc.i.i39.split, void %memset.loop.i.preheader.exitStub" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 13 'br' 'br_ln350' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln350 = zext i4 %i" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 14 'zext' 'zext_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%coeff_addr = getelementptr i64 %coeff, i64 0, i64 %zext_ln350" [src/fpx.c:352->src/fpx.c:141->src/fpx.c:160]   --->   Operation 15 'getelementptr' 'coeff_addr' <Predicate = (!icmp_ln350)> <Delay = 0.00>
 ST_1 : Operation 16 [2/2] (3.25ns)   --->   "%coeff_load = load i6 %coeff_addr" [src/fpx.c:352->src/fpx.c:141->src/fpx.c:160]   --->   Operation 16 'load' 'coeff_load' <Predicate = (!icmp_ln350)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 48> <RAM>
-ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln348 = store i4 %add_ln350, i4 %i_169" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 17 'store' 'store_ln348' <Predicate = (!icmp_ln350)> <Delay = 1.58>
+ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln348 = store i4 %add_ln350, i4 %i_171" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 17 'store' 'store_ln348' <Predicate = (!icmp_ln350)> <Delay = 1.58>
 
 State 2 <SV = 1> <Delay = 6.77>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%carry = phi i1 %tmp, void %for.inc.i.i39.split, i1 0, void %newFuncRoot" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 18 'phi' 'carry' <Predicate = true> <Delay = 0.00>
@@ -108,8 +108,8 @@ ST_2 : Operation 22 [1/1] (3.52ns)   --->   "%tempReg = add i64 %coeff_load, i64
 ST_2 : Operation 40 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 40 'ret' 'ret_ln0' <Predicate = (icmp_ln350)> <Delay = 1.58>
 
 State 3 <SV = 2> <Delay = 5.84>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln348 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 23 'specpipeline' 'specpipeline_ln348' <Predicate = (!icmp_ln350)> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln350 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 24 'specloopname' 'specloopname_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln348 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/fpx.c:348->src/fpx.c:141->src/fpx.c:160]   --->   Operation 23 'specpipeline' 'specpipeline_ln348' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln350 = specloopname void @_ssdm_op_SpecLoopName, void @empty_88" [src/fpx.c:350->src/fpx.c:141->src/fpx.c:160]   --->   Operation 24 'specloopname' 'specloopname_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (3.52ns)   --->   "%add_ln352 = add i64 %coeff_load, i64 %tempReg" [src/fpx.c:352->src/fpx.c:141->src/fpx.c:160]   --->   Operation 25 'add' 'add_ln352' <Predicate = (!icmp_ln350)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%t3_addr = getelementptr i64 %t3, i64 0, i64 %zext_ln350" [src/fpx.c:352->src/fpx.c:141->src/fpx.c:160]   --->   Operation 26 'getelementptr' 't3_addr' <Predicate = (!icmp_ln350)> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln352 = store i64 %add_ln352, i3 %t3_addr" [src/fpx.c:352->src/fpx.c:141->src/fpx.c:160]   --->   Operation 27 'store' 'store_ln352' <Predicate = (!icmp_ln350)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
@@ -136,7 +136,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln348', src/fpx.c:348->src/fpx.c:141->src/fpx.c:160) of constant 0 on local variable 'i', src/fpx.c:348->src/fpx.c:141->src/fpx.c:160 [5]  (1.588 ns)
 	'load' operation 4 bit ('i', src/fpx.c:350->src/fpx.c:141->src/fpx.c:160) on local variable 'i', src/fpx.c:348->src/fpx.c:141->src/fpx.c:160 [9]  (0.000 ns)
-	'add' operation 4 bit ('add_ln350', src/fpx.c:350->src/fpx.c:141->src/fpx.c:160) [12]  (1.735 ns)
+	'icmp' operation 1 bit ('icmp_ln350', src/fpx.c:350->src/fpx.c:141->src/fpx.c:160) [10]  (1.735 ns)
 	'store' operation 0 bit ('store_ln348', src/fpx.c:348->src/fpx.c:141->src/fpx.c:160) of variable 'add_ln350', src/fpx.c:350->src/fpx.c:141->src/fpx.c:160 on local variable 'i', src/fpx.c:348->src/fpx.c:141->src/fpx.c:160 [36]  (1.588 ns)
 
  <State 2>: 6.774ns

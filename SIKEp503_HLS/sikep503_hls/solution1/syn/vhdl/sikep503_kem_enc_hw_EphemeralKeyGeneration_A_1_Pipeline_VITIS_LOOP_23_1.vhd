@@ -52,7 +52,7 @@ attribute shreg_extract : string;
     signal i_fu_32 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln23_fu_64_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_i_295 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_sig_allocacmp_i_293 : STD_LOGIC_VECTOR (3 downto 0);
     signal phiQ_X_we0_local : STD_LOGIC;
     signal phiQ_X_ce0_local : STD_LOGIC;
     signal trunc_ln24_fu_70_p1 : STD_LOGIC_VECTOR (2 downto 0);
@@ -155,7 +155,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    add_ln23_fu_64_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_295) + unsigned(ap_const_lv4_1));
+    add_ln23_fu_64_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_293) + unsigned(ap_const_lv4_1));
     add_ln_fu_74_p3 <= (ap_const_lv1_1 & trunc_ln24_fu_70_p1);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
 
@@ -218,16 +218,16 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_295_assign_proc : process(ap_CS_fsm_state1, i_fu_32, ap_loop_init)
+    ap_sig_allocacmp_i_293_assign_proc : process(ap_CS_fsm_state1, i_fu_32, ap_loop_init)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            ap_sig_allocacmp_i_295 <= ap_const_lv4_0;
+            ap_sig_allocacmp_i_293 <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i_295 <= i_fu_32;
+            ap_sig_allocacmp_i_293 <= i_fu_32;
         end if; 
     end process;
 
-    icmp_ln23_fu_58_p2 <= "1" when (ap_sig_allocacmp_i_295 = ap_const_lv4_8) else "0";
+    icmp_ln23_fu_58_p2 <= "1" when (ap_sig_allocacmp_i_293 = ap_const_lv4_8) else "0";
     phiQ_X_address0 <= zext_ln24_fu_82_p1(4 - 1 downto 0);
     phiQ_X_ce0 <= phiQ_X_ce0_local;
 
@@ -252,6 +252,6 @@ begin
         end if; 
     end process;
 
-    trunc_ln24_fu_70_p1 <= ap_sig_allocacmp_i_295(3 - 1 downto 0);
+    trunc_ln24_fu_70_p1 <= ap_sig_allocacmp_i_293(3 - 1 downto 0);
     zext_ln24_fu_82_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln_fu_74_p3),64));
 end behav;

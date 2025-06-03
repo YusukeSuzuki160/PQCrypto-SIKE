@@ -13,7 +13,7 @@ module sikep503_kem_enc_hw_fpsub503_144_275_Pipeline_VITIS_LOOP_53_2 (
         ap_done,
         ap_idle,
         ap_ready,
-        zext_ln48_18,
+        zext_ln48_19,
         c_address0,
         c_ce0,
         c_we0,
@@ -33,7 +33,7 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [6:0] zext_ln48_18;
+input  [6:0] zext_ln48_19;
 output  [6:0] c_address0;
 output   c_ce0;
 output   c_we0;
@@ -73,10 +73,10 @@ wire   [63:0] and_ln54_fu_174_p2;
 reg   [63:0] and_ln54_reg_289;
 wire    ap_block_pp0_stage0_subdone;
 wire    ap_loop_init;
-wire   [63:0] zext_ln54_13_fu_154_p1;
+wire   [63:0] zext_ln54_14_fu_154_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln53_fu_139_p1;
-reg   [3:0] i_33_fu_54;
+reg   [3:0] i_40_fu_54;
 wire   [3:0] add_ln53_fu_133_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    c_ce1_local;
@@ -84,7 +84,7 @@ reg    c_we0_local;
 wire   [63:0] add_ln54_16_fu_179_p2;
 reg    c_ce0_local;
 reg    p503x2_1_ce0_local;
-wire   [6:0] zext_ln54_12_fu_144_p1;
+wire   [6:0] zext_ln54_13_fu_144_p1;
 wire   [6:0] add_ln54_fu_148_p2;
 wire    ap_block_pp0_stage1;
 wire   [63:0] zext_ln54_fu_164_p1;
@@ -115,7 +115,7 @@ initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 i_33_fu_54 = 4'd0;
+#0 i_40_fu_54 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -201,9 +201,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln53_fu_127_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_33_fu_54 <= add_ln53_fu_133_p2;
+            i_40_fu_54 <= add_ln53_fu_133_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_33_fu_54 <= 4'd0;
+            i_40_fu_54 <= 4'd0;
         end
     end
 end
@@ -217,7 +217,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        c_addr_reg_264 <= zext_ln54_13_fu_154_p1;
+        c_addr_reg_264 <= zext_ln54_14_fu_154_p1;
         icmp_ln53_reg_260 <= icmp_ln53_fu_127_p2;
         sext_ln45_cast_reg_255 <= sext_ln45_cast_fu_111_p3;
     end
@@ -289,7 +289,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_33_fu_54;
+        ap_sig_allocacmp_i = i_40_fu_54;
     end
 end
 
@@ -351,7 +351,7 @@ assign add_ln53_fu_133_p2 = (ap_sig_allocacmp_i + 4'd1);
 
 assign add_ln54_16_fu_179_p2 = (and_ln54_reg_289 + tempReg_reg_280);
 
-assign add_ln54_fu_148_p2 = (zext_ln48_18 + zext_ln54_12_fu_144_p1);
+assign add_ln54_fu_148_p2 = (zext_ln48_19 + zext_ln54_13_fu_144_p1);
 
 assign and_ln54_6_fu_223_p2 = (xor_ln54_s_fu_215_p3 & c_load_reg_275);
 
@@ -389,7 +389,7 @@ assign bit_sel_fu_199_p3 = tempReg_reg_280[64'd63];
 
 assign c_address0 = c_addr_reg_264;
 
-assign c_address1 = zext_ln54_13_fu_154_p1;
+assign c_address1 = zext_ln54_14_fu_154_p1;
 
 assign c_ce0 = c_ce0_local;
 
@@ -425,9 +425,9 @@ assign xor_ln54_s_fu_215_p3 = {{xor_ln54_23_fu_206_p2}, {trunc_ln54_fu_212_p1}};
 
 assign zext_ln53_fu_139_p1 = ap_sig_allocacmp_i;
 
-assign zext_ln54_12_fu_144_p1 = ap_sig_allocacmp_i;
+assign zext_ln54_13_fu_144_p1 = ap_sig_allocacmp_i;
 
-assign zext_ln54_13_fu_154_p1 = add_ln54_fu_148_p2;
+assign zext_ln54_14_fu_154_p1 = add_ln54_fu_148_p2;
 
 assign zext_ln54_fu_164_p1 = borrow_reg_100;
 

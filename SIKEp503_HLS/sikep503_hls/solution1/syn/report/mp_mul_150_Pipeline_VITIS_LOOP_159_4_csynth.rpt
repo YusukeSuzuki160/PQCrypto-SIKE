@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_150_Pipeline_VITIS_LOOP_159_4'
 ================================================================
-* Date:           Tue May 27 14:17:07 2025
+* Date:           Tue Jun  3 14:12:10 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -94,7 +94,7 @@
     |add_ln159_fu_218_p2      |         +|   0|  0|  13|           4|           1|
     |t_fu_667_p2              |         +|   0|  0|  11|           3|           3|
     |tempReg_fu_572_p2        |         +|   0|  0|  71|          64|          64|
-    |temp_63_fu_457_p2        |         +|   0|  0|  41|          34|          34|
+    |temp_66_fu_457_p2        |         +|   0|  0|  41|          34|          34|
     |temp_fu_391_p2           |         +|   0|  0|  41|          34|          34|
     |u_fu_587_p2              |         +|   0|  0|  71|          64|          64|
     |v_166_fu_513_p2          |         +|   0|  0|  71|          64|          64|
@@ -230,7 +230,7 @@
 |a_address0          |  out|    3|   ap_memory|                                     a|         array|
 |a_ce0               |  out|    1|   ap_memory|                                     a|         array|
 |a_q0                |   in|   64|   ap_memory|                                     a|         array|
-|i_25                |   in|    4|     ap_none|                                  i_25|        scalar|
+|i_27                |   in|    4|     ap_none|                                  i_27|        scalar|
 |b_address0          |  out|    4|   ap_memory|                                     b|         array|
 |b_ce0               |  out|    1|   ap_memory|                                     b|         array|
 |b_q0                |   in|   64|   ap_memory|                                     b|         array|

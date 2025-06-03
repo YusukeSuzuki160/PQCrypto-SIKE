@@ -179,7 +179,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "v", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zext_ln157", "Type" : "None", "Direction" : "I"},
 			{"Name" : "a", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "i_23", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_25", "Type" : "None", "Direction" : "I"},
 			{"Name" : "R_X", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v_35_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "u_34_out", "Type" : "OVld", "Direction" : "IO"},
@@ -210,7 +210,7 @@ set ArgLastReadFirstWriteLatency {
 		v {Type I LastRead 0 FirstWrite -1}
 		zext_ln157 {Type I LastRead 0 FirstWrite -1}
 		a {Type I LastRead 0 FirstWrite -1}
-		i_23 {Type I LastRead 0 FirstWrite -1}
+		i_25 {Type I LastRead 0 FirstWrite -1}
 		R_X {Type I LastRead 0 FirstWrite -1}
 		v_35_out {Type O LastRead -1 FirstWrite 7}
 		u_34_out {Type IO LastRead 7 FirstWrite 0}

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mp_mul_147'" level="0">
-<item name = "Date">Wed May 21 15:13:39 2025
+<item name = "Date">Tue Jun  3 12:17:17 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -31,8 +31,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_147_Pipeline_VITIS_LOOP_145_2_fu_134">mp_mul_147_Pipeline_VITIS_LOOP_145_2, 11, 18, 0.110 us, 0.180 us, 2, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_mp_mul_147_Pipeline_VITIS_LOOP_159_4_fu_151">mp_mul_147_Pipeline_VITIS_LOOP_159_4, 11, 17, 0.110 us, 0.170 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_147_Pipeline_VITIS_LOOP_145_2_fu_112">mp_mul_147_Pipeline_VITIS_LOOP_145_2, 11, 18, 0.110 us, 0.180 us, 2, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_147_Pipeline_VITIS_LOOP_159_4_fu_127">mp_mul_147_Pipeline_VITIS_LOOP_159_4, 11, 17, 0.110 us, 0.170 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

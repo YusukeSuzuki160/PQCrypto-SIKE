@@ -74,7 +74,7 @@ wire    ap_loop_init;
 wire   [63:0] zext_ln201_fu_148_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln200_fu_131_p1;
-reg   [3:0] i_208_fu_52;
+reg   [3:0] i_215_fu_52;
 wire   [3:0] add_ln200_fu_125_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    tt3_ce1_local;
@@ -113,7 +113,7 @@ initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 i_208_fu_52 = 4'd0;
+#0 i_215_fu_52 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -199,9 +199,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln200_fu_119_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_208_fu_52 <= add_ln200_fu_125_p2;
+            i_215_fu_52 <= add_ln200_fu_125_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_208_fu_52 <= 4'd0;
+            i_215_fu_52 <= 4'd0;
         end
     end
 end
@@ -287,7 +287,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_208_fu_52;
+        ap_sig_allocacmp_i = i_215_fu_52;
     end
 end
 

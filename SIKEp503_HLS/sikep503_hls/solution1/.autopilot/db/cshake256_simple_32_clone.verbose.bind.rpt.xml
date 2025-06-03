@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_32_clone'" level="0">
-<item name = "Date">Tue May 27 14:16:39 2025
+<item name = "Date">Tue Jun  3 14:11:41 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,17 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">388, 388, 3.880 us, 3.880 us, 388, 388, no</column>
+<column name="">189, 189, 1.890 us, 1.890 us, 189, 189, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_cshake256_simple_absorb_clone_fu_38">cshake256_simple_absorb_clone, 294, 294, 2.940 us, 2.940 us, 294, 294, no</column>
-<column name="grp_KeccakF1600_StatePermute_fu_48">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
-<column name="grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_418_2_fu_55">cshake256_simple_32_clone_Pipeline_VITIS_LOOP_418_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_649_1_fu_64">cshake256_simple_32_clone_Pipeline_VITIS_LOOP_649_1, 26, 26, 0.260 us, 0.260 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_654_1_fu_66">cshake256_simple_32_clone_Pipeline_VITIS_LOOP_654_1, 27, 27, 0.270 us, 0.270 us, 26, 26, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_KeccakF1600_StatePermute_fu_72">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
+<column name="grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_444_4_fu_79">cshake256_simple_32_clone_Pipeline_VITIS_LOOP_444_4, 21, 21, 0.210 us, 0.210 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_479_2_fu_92">cshake256_simple_32_clone_Pipeline_VITIS_LOOP_479_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_clone_Pipeline_VITIS_LOOP_712_1_fu_101">cshake256_simple_32_clone_Pipeline_VITIS_LOOP_712_1, 26, 26, 0.260 us, 0.260 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

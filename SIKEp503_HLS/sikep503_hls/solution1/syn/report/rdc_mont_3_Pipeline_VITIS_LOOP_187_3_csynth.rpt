@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_3_Pipeline_VITIS_LOOP_187_3'
 ================================================================
-* Date:           Tue May 27 14:18:07 2025
+* Date:           Tue Jun  3 14:13:11 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -98,7 +98,7 @@
     |add_ln191_fu_466_p2     |         +|   0|  0|  71|          64|          64|
     |t_11_fu_652_p2          |         +|   0|  0|  71|          64|          64|
     |tempReg_8_fu_536_p2     |         +|   0|  0|  71|          64|          64|
-    |temp_8_fu_425_p2        |         +|   0|  0|  41|          34|          34|
+    |temp_11_fu_425_p2       |         +|   0|  0|  41|          34|          34|
     |temp_fu_378_p2          |         +|   0|  0|  41|          34|          34|
     |u_26_fu_556_p2          |         +|   0|  0|  71|          64|          64|
     |v_29_fu_494_p2          |         +|   0|  0|  71|          64|          64|
@@ -234,7 +234,7 @@
 |grp_fu_848_p_ce     |  out|    1|  ap_ctrl_hs|  rdc_mont.3_Pipeline_VITIS_LOOP_187_3|  return value|
 |v                   |   in|   64|     ap_none|                                     v|        scalar|
 |u                   |   in|   64|     ap_none|                                     u|        scalar|
-|i_5                 |   in|    3|     ap_none|                                   i_5|        scalar|
+|i_7                 |   in|    3|     ap_none|                                   i_7|        scalar|
 |add_ln187           |   in|    4|     ap_none|                             add_ln187|        scalar|
 |PKB_address0        |  out|    6|   ap_memory|                                   PKB|         array|
 |PKB_ce0             |  out|    1|   ap_memory|                                   PKB|         array|

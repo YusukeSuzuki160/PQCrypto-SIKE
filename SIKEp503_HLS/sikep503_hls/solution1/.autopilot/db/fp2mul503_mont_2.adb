@@ -2701,6 +2701,25 @@
           </second>
         </item>
         <item>
+          <first>mul_32ns_32ns_64_2_1_U1174 (mul_32ns_32ns_64_2_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>165</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>50</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>mul_32ns_32ns_64_2_1_U1175 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
@@ -2740,25 +2759,6 @@
         </item>
         <item>
           <first>mul_32ns_32ns_64_2_1_U1177 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>165</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>50</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U1178 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4558,6 +4558,13 @@
           </second>
         </item>
         <item>
+          <first>mul_32ns_32ns_64_2_1_U1174</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
           <first>mul_32ns_32ns_64_2_1_U1175</first>
           <second>
             <count>0</count>
@@ -4573,13 +4580,6 @@
         </item>
         <item>
           <first>mul_32ns_32ns_64_2_1_U1177</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U1178</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4678,7 +4678,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1175 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1174 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -4687,7 +4687,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1176 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1175 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -4696,7 +4696,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1177 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1176 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -4705,7 +4705,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1178 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1177 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>

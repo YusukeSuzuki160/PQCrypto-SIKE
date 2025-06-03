@@ -556,10 +556,10 @@ entry:24 %Asu_1_loc = alloca i64 1
 
 <Node id="29" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:26 %s_i_addr = getelementptr i64 %s_i, i64 0, i64 0
+entry:26 %s_addr = getelementptr i64 %s, i64 0, i64 0
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr"/></StgValue>
+<StgValue><ssdm name="s_addr"/></StgValue>
 </operation>
 
 <operation id="55" st_id="1" stage="2" lat="2">
@@ -571,7 +571,7 @@ entry:26 %s_i_addr = getelementptr i64 %s_i, i64 0, i64 0
 
 <Node id="30" bw="64" op_0_bw="5">
 <![CDATA[
-entry:27 %Aba = load i5 %s_i_addr
+entry:27 %Aba = load i5 %s_addr
 
 ]]></Node>
 <StgValue><ssdm name="Aba"/></StgValue>
@@ -589,7 +589,7 @@ entry:27 %Aba = load i5 %s_i_addr
 
 <Node id="30" bw="64" op_0_bw="5">
 <![CDATA[
-entry:27 %Aba = load i5 %s_i_addr
+entry:27 %Aba = load i5 %s_addr
 
 ]]></Node>
 <StgValue><ssdm name="Aba"/></StgValue>
@@ -604,10 +604,10 @@ entry:27 %Aba = load i5 %s_i_addr
 
 <Node id="31" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:28 %s_i_addr_1 = getelementptr i64 %s_i, i64 0, i64 1
+entry:28 %s_addr_1 = getelementptr i64 %s, i64 0, i64 1
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_1"/></StgValue>
+<StgValue><ssdm name="s_addr_1"/></StgValue>
 </operation>
 
 <operation id="58" st_id="2" stage="2" lat="2">
@@ -619,7 +619,7 @@ entry:28 %s_i_addr_1 = getelementptr i64 %s_i, i64 0, i64 1
 
 <Node id="32" bw="64" op_0_bw="5">
 <![CDATA[
-entry:29 %Abe = load i5 %s_i_addr_1
+entry:29 %Abe = load i5 %s_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="Abe"/></StgValue>
@@ -634,10 +634,10 @@ entry:29 %Abe = load i5 %s_i_addr_1
 
 <Node id="33" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:30 %s_i_addr_2 = getelementptr i64 %s_i, i64 0, i64 2
+entry:30 %s_addr_2 = getelementptr i64 %s, i64 0, i64 2
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_2"/></StgValue>
+<StgValue><ssdm name="s_addr_2"/></StgValue>
 </operation>
 
 <operation id="60" st_id="2" stage="2" lat="2">
@@ -649,7 +649,7 @@ entry:30 %s_i_addr_2 = getelementptr i64 %s_i, i64 0, i64 2
 
 <Node id="34" bw="64" op_0_bw="5">
 <![CDATA[
-entry:31 %Abi = load i5 %s_i_addr_2
+entry:31 %Abi = load i5 %s_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="Abi"/></StgValue>
@@ -667,7 +667,7 @@ entry:31 %Abi = load i5 %s_i_addr_2
 
 <Node id="32" bw="64" op_0_bw="5">
 <![CDATA[
-entry:29 %Abe = load i5 %s_i_addr_1
+entry:29 %Abe = load i5 %s_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="Abe"/></StgValue>
@@ -682,7 +682,7 @@ entry:29 %Abe = load i5 %s_i_addr_1
 
 <Node id="34" bw="64" op_0_bw="5">
 <![CDATA[
-entry:31 %Abi = load i5 %s_i_addr_2
+entry:31 %Abi = load i5 %s_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="Abi"/></StgValue>
@@ -697,10 +697,10 @@ entry:31 %Abi = load i5 %s_i_addr_2
 
 <Node id="35" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:32 %s_i_addr_3 = getelementptr i64 %s_i, i64 0, i64 3
+entry:32 %s_addr_3 = getelementptr i64 %s, i64 0, i64 3
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_3"/></StgValue>
+<StgValue><ssdm name="s_addr_3"/></StgValue>
 </operation>
 
 <operation id="64" st_id="3" stage="2" lat="2">
@@ -712,7 +712,7 @@ entry:32 %s_i_addr_3 = getelementptr i64 %s_i, i64 0, i64 3
 
 <Node id="36" bw="64" op_0_bw="5">
 <![CDATA[
-entry:33 %Abo = load i5 %s_i_addr_3
+entry:33 %Abo = load i5 %s_addr_3
 
 ]]></Node>
 <StgValue><ssdm name="Abo"/></StgValue>
@@ -727,10 +727,10 @@ entry:33 %Abo = load i5 %s_i_addr_3
 
 <Node id="37" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:34 %s_i_addr_4 = getelementptr i64 %s_i, i64 0, i64 4
+entry:34 %s_addr_4 = getelementptr i64 %s, i64 0, i64 4
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_4"/></StgValue>
+<StgValue><ssdm name="s_addr_4"/></StgValue>
 </operation>
 
 <operation id="66" st_id="3" stage="2" lat="2">
@@ -742,7 +742,7 @@ entry:34 %s_i_addr_4 = getelementptr i64 %s_i, i64 0, i64 4
 
 <Node id="38" bw="64" op_0_bw="5">
 <![CDATA[
-entry:35 %Abu = load i5 %s_i_addr_4
+entry:35 %Abu = load i5 %s_addr_4
 
 ]]></Node>
 <StgValue><ssdm name="Abu"/></StgValue>
@@ -760,7 +760,7 @@ entry:35 %Abu = load i5 %s_i_addr_4
 
 <Node id="36" bw="64" op_0_bw="5">
 <![CDATA[
-entry:33 %Abo = load i5 %s_i_addr_3
+entry:33 %Abo = load i5 %s_addr_3
 
 ]]></Node>
 <StgValue><ssdm name="Abo"/></StgValue>
@@ -775,7 +775,7 @@ entry:33 %Abo = load i5 %s_i_addr_3
 
 <Node id="38" bw="64" op_0_bw="5">
 <![CDATA[
-entry:35 %Abu = load i5 %s_i_addr_4
+entry:35 %Abu = load i5 %s_addr_4
 
 ]]></Node>
 <StgValue><ssdm name="Abu"/></StgValue>
@@ -790,10 +790,10 @@ entry:35 %Abu = load i5 %s_i_addr_4
 
 <Node id="39" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:36 %s_i_addr_5 = getelementptr i64 %s_i, i64 0, i64 5
+entry:36 %s_addr_5 = getelementptr i64 %s, i64 0, i64 5
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_5"/></StgValue>
+<StgValue><ssdm name="s_addr_5"/></StgValue>
 </operation>
 
 <operation id="70" st_id="4" stage="2" lat="2">
@@ -805,7 +805,7 @@ entry:36 %s_i_addr_5 = getelementptr i64 %s_i, i64 0, i64 5
 
 <Node id="40" bw="64" op_0_bw="5">
 <![CDATA[
-entry:37 %Aga = load i5 %s_i_addr_5
+entry:37 %Aga = load i5 %s_addr_5
 
 ]]></Node>
 <StgValue><ssdm name="Aga"/></StgValue>
@@ -820,10 +820,10 @@ entry:37 %Aga = load i5 %s_i_addr_5
 
 <Node id="41" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:38 %s_i_addr_6 = getelementptr i64 %s_i, i64 0, i64 6
+entry:38 %s_addr_6 = getelementptr i64 %s, i64 0, i64 6
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_6"/></StgValue>
+<StgValue><ssdm name="s_addr_6"/></StgValue>
 </operation>
 
 <operation id="72" st_id="4" stage="2" lat="2">
@@ -835,7 +835,7 @@ entry:38 %s_i_addr_6 = getelementptr i64 %s_i, i64 0, i64 6
 
 <Node id="42" bw="64" op_0_bw="5">
 <![CDATA[
-entry:39 %Age = load i5 %s_i_addr_6
+entry:39 %Age = load i5 %s_addr_6
 
 ]]></Node>
 <StgValue><ssdm name="Age"/></StgValue>
@@ -853,7 +853,7 @@ entry:39 %Age = load i5 %s_i_addr_6
 
 <Node id="40" bw="64" op_0_bw="5">
 <![CDATA[
-entry:37 %Aga = load i5 %s_i_addr_5
+entry:37 %Aga = load i5 %s_addr_5
 
 ]]></Node>
 <StgValue><ssdm name="Aga"/></StgValue>
@@ -868,7 +868,7 @@ entry:37 %Aga = load i5 %s_i_addr_5
 
 <Node id="42" bw="64" op_0_bw="5">
 <![CDATA[
-entry:39 %Age = load i5 %s_i_addr_6
+entry:39 %Age = load i5 %s_addr_6
 
 ]]></Node>
 <StgValue><ssdm name="Age"/></StgValue>
@@ -883,10 +883,10 @@ entry:39 %Age = load i5 %s_i_addr_6
 
 <Node id="43" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:40 %s_i_addr_7 = getelementptr i64 %s_i, i64 0, i64 7
+entry:40 %s_addr_7 = getelementptr i64 %s, i64 0, i64 7
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_7"/></StgValue>
+<StgValue><ssdm name="s_addr_7"/></StgValue>
 </operation>
 
 <operation id="76" st_id="5" stage="2" lat="2">
@@ -898,7 +898,7 @@ entry:40 %s_i_addr_7 = getelementptr i64 %s_i, i64 0, i64 7
 
 <Node id="44" bw="64" op_0_bw="5">
 <![CDATA[
-entry:41 %Agi = load i5 %s_i_addr_7
+entry:41 %Agi = load i5 %s_addr_7
 
 ]]></Node>
 <StgValue><ssdm name="Agi"/></StgValue>
@@ -913,10 +913,10 @@ entry:41 %Agi = load i5 %s_i_addr_7
 
 <Node id="45" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:42 %s_i_addr_8 = getelementptr i64 %s_i, i64 0, i64 8
+entry:42 %s_addr_8 = getelementptr i64 %s, i64 0, i64 8
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_8"/></StgValue>
+<StgValue><ssdm name="s_addr_8"/></StgValue>
 </operation>
 
 <operation id="78" st_id="5" stage="2" lat="2">
@@ -928,7 +928,7 @@ entry:42 %s_i_addr_8 = getelementptr i64 %s_i, i64 0, i64 8
 
 <Node id="46" bw="64" op_0_bw="5">
 <![CDATA[
-entry:43 %Ago = load i5 %s_i_addr_8
+entry:43 %Ago = load i5 %s_addr_8
 
 ]]></Node>
 <StgValue><ssdm name="Ago"/></StgValue>
@@ -946,7 +946,7 @@ entry:43 %Ago = load i5 %s_i_addr_8
 
 <Node id="44" bw="64" op_0_bw="5">
 <![CDATA[
-entry:41 %Agi = load i5 %s_i_addr_7
+entry:41 %Agi = load i5 %s_addr_7
 
 ]]></Node>
 <StgValue><ssdm name="Agi"/></StgValue>
@@ -961,7 +961,7 @@ entry:41 %Agi = load i5 %s_i_addr_7
 
 <Node id="46" bw="64" op_0_bw="5">
 <![CDATA[
-entry:43 %Ago = load i5 %s_i_addr_8
+entry:43 %Ago = load i5 %s_addr_8
 
 ]]></Node>
 <StgValue><ssdm name="Ago"/></StgValue>
@@ -976,10 +976,10 @@ entry:43 %Ago = load i5 %s_i_addr_8
 
 <Node id="47" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:44 %s_i_addr_9 = getelementptr i64 %s_i, i64 0, i64 9
+entry:44 %s_addr_9 = getelementptr i64 %s, i64 0, i64 9
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_9"/></StgValue>
+<StgValue><ssdm name="s_addr_9"/></StgValue>
 </operation>
 
 <operation id="82" st_id="6" stage="2" lat="2">
@@ -991,7 +991,7 @@ entry:44 %s_i_addr_9 = getelementptr i64 %s_i, i64 0, i64 9
 
 <Node id="48" bw="64" op_0_bw="5">
 <![CDATA[
-entry:45 %Agu = load i5 %s_i_addr_9
+entry:45 %Agu = load i5 %s_addr_9
 
 ]]></Node>
 <StgValue><ssdm name="Agu"/></StgValue>
@@ -1006,10 +1006,10 @@ entry:45 %Agu = load i5 %s_i_addr_9
 
 <Node id="49" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:46 %s_i_addr_10 = getelementptr i64 %s_i, i64 0, i64 10
+entry:46 %s_addr_10 = getelementptr i64 %s, i64 0, i64 10
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_10"/></StgValue>
+<StgValue><ssdm name="s_addr_10"/></StgValue>
 </operation>
 
 <operation id="84" st_id="6" stage="2" lat="2">
@@ -1021,7 +1021,7 @@ entry:46 %s_i_addr_10 = getelementptr i64 %s_i, i64 0, i64 10
 
 <Node id="50" bw="64" op_0_bw="5">
 <![CDATA[
-entry:47 %Aka = load i5 %s_i_addr_10
+entry:47 %Aka = load i5 %s_addr_10
 
 ]]></Node>
 <StgValue><ssdm name="Aka"/></StgValue>
@@ -1039,7 +1039,7 @@ entry:47 %Aka = load i5 %s_i_addr_10
 
 <Node id="48" bw="64" op_0_bw="5">
 <![CDATA[
-entry:45 %Agu = load i5 %s_i_addr_9
+entry:45 %Agu = load i5 %s_addr_9
 
 ]]></Node>
 <StgValue><ssdm name="Agu"/></StgValue>
@@ -1054,7 +1054,7 @@ entry:45 %Agu = load i5 %s_i_addr_9
 
 <Node id="50" bw="64" op_0_bw="5">
 <![CDATA[
-entry:47 %Aka = load i5 %s_i_addr_10
+entry:47 %Aka = load i5 %s_addr_10
 
 ]]></Node>
 <StgValue><ssdm name="Aka"/></StgValue>
@@ -1069,10 +1069,10 @@ entry:47 %Aka = load i5 %s_i_addr_10
 
 <Node id="51" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:48 %s_i_addr_11 = getelementptr i64 %s_i, i64 0, i64 11
+entry:48 %s_addr_11 = getelementptr i64 %s, i64 0, i64 11
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_11"/></StgValue>
+<StgValue><ssdm name="s_addr_11"/></StgValue>
 </operation>
 
 <operation id="88" st_id="7" stage="2" lat="2">
@@ -1084,7 +1084,7 @@ entry:48 %s_i_addr_11 = getelementptr i64 %s_i, i64 0, i64 11
 
 <Node id="52" bw="64" op_0_bw="5">
 <![CDATA[
-entry:49 %Ake = load i5 %s_i_addr_11
+entry:49 %Ake = load i5 %s_addr_11
 
 ]]></Node>
 <StgValue><ssdm name="Ake"/></StgValue>
@@ -1099,10 +1099,10 @@ entry:49 %Ake = load i5 %s_i_addr_11
 
 <Node id="53" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:50 %s_i_addr_12 = getelementptr i64 %s_i, i64 0, i64 12
+entry:50 %s_addr_12 = getelementptr i64 %s, i64 0, i64 12
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_12"/></StgValue>
+<StgValue><ssdm name="s_addr_12"/></StgValue>
 </operation>
 
 <operation id="90" st_id="7" stage="2" lat="2">
@@ -1114,7 +1114,7 @@ entry:50 %s_i_addr_12 = getelementptr i64 %s_i, i64 0, i64 12
 
 <Node id="54" bw="64" op_0_bw="5">
 <![CDATA[
-entry:51 %Aki = load i5 %s_i_addr_12
+entry:51 %Aki = load i5 %s_addr_12
 
 ]]></Node>
 <StgValue><ssdm name="Aki"/></StgValue>
@@ -1132,7 +1132,7 @@ entry:51 %Aki = load i5 %s_i_addr_12
 
 <Node id="52" bw="64" op_0_bw="5">
 <![CDATA[
-entry:49 %Ake = load i5 %s_i_addr_11
+entry:49 %Ake = load i5 %s_addr_11
 
 ]]></Node>
 <StgValue><ssdm name="Ake"/></StgValue>
@@ -1147,7 +1147,7 @@ entry:49 %Ake = load i5 %s_i_addr_11
 
 <Node id="54" bw="64" op_0_bw="5">
 <![CDATA[
-entry:51 %Aki = load i5 %s_i_addr_12
+entry:51 %Aki = load i5 %s_addr_12
 
 ]]></Node>
 <StgValue><ssdm name="Aki"/></StgValue>
@@ -1162,10 +1162,10 @@ entry:51 %Aki = load i5 %s_i_addr_12
 
 <Node id="55" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:52 %s_i_addr_13 = getelementptr i64 %s_i, i64 0, i64 13
+entry:52 %s_addr_13 = getelementptr i64 %s, i64 0, i64 13
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_13"/></StgValue>
+<StgValue><ssdm name="s_addr_13"/></StgValue>
 </operation>
 
 <operation id="94" st_id="8" stage="2" lat="2">
@@ -1177,7 +1177,7 @@ entry:52 %s_i_addr_13 = getelementptr i64 %s_i, i64 0, i64 13
 
 <Node id="56" bw="64" op_0_bw="5">
 <![CDATA[
-entry:53 %Ako = load i5 %s_i_addr_13
+entry:53 %Ako = load i5 %s_addr_13
 
 ]]></Node>
 <StgValue><ssdm name="Ako"/></StgValue>
@@ -1192,10 +1192,10 @@ entry:53 %Ako = load i5 %s_i_addr_13
 
 <Node id="57" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:54 %s_i_addr_14 = getelementptr i64 %s_i, i64 0, i64 14
+entry:54 %s_addr_14 = getelementptr i64 %s, i64 0, i64 14
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_14"/></StgValue>
+<StgValue><ssdm name="s_addr_14"/></StgValue>
 </operation>
 
 <operation id="96" st_id="8" stage="2" lat="2">
@@ -1207,7 +1207,7 @@ entry:54 %s_i_addr_14 = getelementptr i64 %s_i, i64 0, i64 14
 
 <Node id="58" bw="64" op_0_bw="5">
 <![CDATA[
-entry:55 %Aku = load i5 %s_i_addr_14
+entry:55 %Aku = load i5 %s_addr_14
 
 ]]></Node>
 <StgValue><ssdm name="Aku"/></StgValue>
@@ -1225,7 +1225,7 @@ entry:55 %Aku = load i5 %s_i_addr_14
 
 <Node id="56" bw="64" op_0_bw="5">
 <![CDATA[
-entry:53 %Ako = load i5 %s_i_addr_13
+entry:53 %Ako = load i5 %s_addr_13
 
 ]]></Node>
 <StgValue><ssdm name="Ako"/></StgValue>
@@ -1240,7 +1240,7 @@ entry:53 %Ako = load i5 %s_i_addr_13
 
 <Node id="58" bw="64" op_0_bw="5">
 <![CDATA[
-entry:55 %Aku = load i5 %s_i_addr_14
+entry:55 %Aku = load i5 %s_addr_14
 
 ]]></Node>
 <StgValue><ssdm name="Aku"/></StgValue>
@@ -1255,10 +1255,10 @@ entry:55 %Aku = load i5 %s_i_addr_14
 
 <Node id="59" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:56 %s_i_addr_15 = getelementptr i64 %s_i, i64 0, i64 15
+entry:56 %s_addr_15 = getelementptr i64 %s, i64 0, i64 15
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_15"/></StgValue>
+<StgValue><ssdm name="s_addr_15"/></StgValue>
 </operation>
 
 <operation id="100" st_id="9" stage="2" lat="2">
@@ -1270,7 +1270,7 @@ entry:56 %s_i_addr_15 = getelementptr i64 %s_i, i64 0, i64 15
 
 <Node id="60" bw="64" op_0_bw="5">
 <![CDATA[
-entry:57 %Ama = load i5 %s_i_addr_15
+entry:57 %Ama = load i5 %s_addr_15
 
 ]]></Node>
 <StgValue><ssdm name="Ama"/></StgValue>
@@ -1285,10 +1285,10 @@ entry:57 %Ama = load i5 %s_i_addr_15
 
 <Node id="61" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:58 %s_i_addr_16 = getelementptr i64 %s_i, i64 0, i64 16
+entry:58 %s_addr_16 = getelementptr i64 %s, i64 0, i64 16
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_16"/></StgValue>
+<StgValue><ssdm name="s_addr_16"/></StgValue>
 </operation>
 
 <operation id="102" st_id="9" stage="2" lat="2">
@@ -1300,7 +1300,7 @@ entry:58 %s_i_addr_16 = getelementptr i64 %s_i, i64 0, i64 16
 
 <Node id="62" bw="64" op_0_bw="5">
 <![CDATA[
-entry:59 %Ame = load i5 %s_i_addr_16
+entry:59 %Ame = load i5 %s_addr_16
 
 ]]></Node>
 <StgValue><ssdm name="Ame"/></StgValue>
@@ -1318,7 +1318,7 @@ entry:59 %Ame = load i5 %s_i_addr_16
 
 <Node id="60" bw="64" op_0_bw="5">
 <![CDATA[
-entry:57 %Ama = load i5 %s_i_addr_15
+entry:57 %Ama = load i5 %s_addr_15
 
 ]]></Node>
 <StgValue><ssdm name="Ama"/></StgValue>
@@ -1333,7 +1333,7 @@ entry:57 %Ama = load i5 %s_i_addr_15
 
 <Node id="62" bw="64" op_0_bw="5">
 <![CDATA[
-entry:59 %Ame = load i5 %s_i_addr_16
+entry:59 %Ame = load i5 %s_addr_16
 
 ]]></Node>
 <StgValue><ssdm name="Ame"/></StgValue>
@@ -1348,10 +1348,10 @@ entry:59 %Ame = load i5 %s_i_addr_16
 
 <Node id="63" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:60 %s_i_addr_17 = getelementptr i64 %s_i, i64 0, i64 17
+entry:60 %s_addr_17 = getelementptr i64 %s, i64 0, i64 17
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_17"/></StgValue>
+<StgValue><ssdm name="s_addr_17"/></StgValue>
 </operation>
 
 <operation id="106" st_id="10" stage="2" lat="2">
@@ -1363,7 +1363,7 @@ entry:60 %s_i_addr_17 = getelementptr i64 %s_i, i64 0, i64 17
 
 <Node id="64" bw="64" op_0_bw="5">
 <![CDATA[
-entry:61 %Ami = load i5 %s_i_addr_17
+entry:61 %Ami = load i5 %s_addr_17
 
 ]]></Node>
 <StgValue><ssdm name="Ami"/></StgValue>
@@ -1378,10 +1378,10 @@ entry:61 %Ami = load i5 %s_i_addr_17
 
 <Node id="65" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:62 %s_i_addr_18 = getelementptr i64 %s_i, i64 0, i64 18
+entry:62 %s_addr_18 = getelementptr i64 %s, i64 0, i64 18
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_18"/></StgValue>
+<StgValue><ssdm name="s_addr_18"/></StgValue>
 </operation>
 
 <operation id="108" st_id="10" stage="2" lat="2">
@@ -1393,7 +1393,7 @@ entry:62 %s_i_addr_18 = getelementptr i64 %s_i, i64 0, i64 18
 
 <Node id="66" bw="64" op_0_bw="5">
 <![CDATA[
-entry:63 %Amo = load i5 %s_i_addr_18
+entry:63 %Amo = load i5 %s_addr_18
 
 ]]></Node>
 <StgValue><ssdm name="Amo"/></StgValue>
@@ -1411,7 +1411,7 @@ entry:63 %Amo = load i5 %s_i_addr_18
 
 <Node id="64" bw="64" op_0_bw="5">
 <![CDATA[
-entry:61 %Ami = load i5 %s_i_addr_17
+entry:61 %Ami = load i5 %s_addr_17
 
 ]]></Node>
 <StgValue><ssdm name="Ami"/></StgValue>
@@ -1426,7 +1426,7 @@ entry:61 %Ami = load i5 %s_i_addr_17
 
 <Node id="66" bw="64" op_0_bw="5">
 <![CDATA[
-entry:63 %Amo = load i5 %s_i_addr_18
+entry:63 %Amo = load i5 %s_addr_18
 
 ]]></Node>
 <StgValue><ssdm name="Amo"/></StgValue>
@@ -1441,10 +1441,10 @@ entry:63 %Amo = load i5 %s_i_addr_18
 
 <Node id="67" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:64 %s_i_addr_19 = getelementptr i64 %s_i, i64 0, i64 19
+entry:64 %s_addr_19 = getelementptr i64 %s, i64 0, i64 19
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_19"/></StgValue>
+<StgValue><ssdm name="s_addr_19"/></StgValue>
 </operation>
 
 <operation id="112" st_id="11" stage="2" lat="2">
@@ -1456,7 +1456,7 @@ entry:64 %s_i_addr_19 = getelementptr i64 %s_i, i64 0, i64 19
 
 <Node id="68" bw="64" op_0_bw="5">
 <![CDATA[
-entry:65 %Amu = load i5 %s_i_addr_19
+entry:65 %Amu = load i5 %s_addr_19
 
 ]]></Node>
 <StgValue><ssdm name="Amu"/></StgValue>
@@ -1471,10 +1471,10 @@ entry:65 %Amu = load i5 %s_i_addr_19
 
 <Node id="69" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:66 %s_i_addr_20 = getelementptr i64 %s_i, i64 0, i64 20
+entry:66 %s_addr_20 = getelementptr i64 %s, i64 0, i64 20
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_20"/></StgValue>
+<StgValue><ssdm name="s_addr_20"/></StgValue>
 </operation>
 
 <operation id="114" st_id="11" stage="2" lat="2">
@@ -1486,7 +1486,7 @@ entry:66 %s_i_addr_20 = getelementptr i64 %s_i, i64 0, i64 20
 
 <Node id="70" bw="64" op_0_bw="5">
 <![CDATA[
-entry:67 %Asa = load i5 %s_i_addr_20
+entry:67 %Asa = load i5 %s_addr_20
 
 ]]></Node>
 <StgValue><ssdm name="Asa"/></StgValue>
@@ -1504,7 +1504,7 @@ entry:67 %Asa = load i5 %s_i_addr_20
 
 <Node id="68" bw="64" op_0_bw="5">
 <![CDATA[
-entry:65 %Amu = load i5 %s_i_addr_19
+entry:65 %Amu = load i5 %s_addr_19
 
 ]]></Node>
 <StgValue><ssdm name="Amu"/></StgValue>
@@ -1519,7 +1519,7 @@ entry:65 %Amu = load i5 %s_i_addr_19
 
 <Node id="70" bw="64" op_0_bw="5">
 <![CDATA[
-entry:67 %Asa = load i5 %s_i_addr_20
+entry:67 %Asa = load i5 %s_addr_20
 
 ]]></Node>
 <StgValue><ssdm name="Asa"/></StgValue>
@@ -1534,10 +1534,10 @@ entry:67 %Asa = load i5 %s_i_addr_20
 
 <Node id="71" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:68 %s_i_addr_21 = getelementptr i64 %s_i, i64 0, i64 21
+entry:68 %s_addr_21 = getelementptr i64 %s, i64 0, i64 21
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_21"/></StgValue>
+<StgValue><ssdm name="s_addr_21"/></StgValue>
 </operation>
 
 <operation id="118" st_id="12" stage="2" lat="2">
@@ -1549,7 +1549,7 @@ entry:68 %s_i_addr_21 = getelementptr i64 %s_i, i64 0, i64 21
 
 <Node id="72" bw="64" op_0_bw="5">
 <![CDATA[
-entry:69 %Ase = load i5 %s_i_addr_21
+entry:69 %Ase = load i5 %s_addr_21
 
 ]]></Node>
 <StgValue><ssdm name="Ase"/></StgValue>
@@ -1564,10 +1564,10 @@ entry:69 %Ase = load i5 %s_i_addr_21
 
 <Node id="73" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:70 %s_i_addr_22 = getelementptr i64 %s_i, i64 0, i64 22
+entry:70 %s_addr_22 = getelementptr i64 %s, i64 0, i64 22
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_22"/></StgValue>
+<StgValue><ssdm name="s_addr_22"/></StgValue>
 </operation>
 
 <operation id="120" st_id="12" stage="2" lat="2">
@@ -1579,7 +1579,7 @@ entry:70 %s_i_addr_22 = getelementptr i64 %s_i, i64 0, i64 22
 
 <Node id="74" bw="64" op_0_bw="5">
 <![CDATA[
-entry:71 %Asi = load i5 %s_i_addr_22
+entry:71 %Asi = load i5 %s_addr_22
 
 ]]></Node>
 <StgValue><ssdm name="Asi"/></StgValue>
@@ -1597,7 +1597,7 @@ entry:71 %Asi = load i5 %s_i_addr_22
 
 <Node id="72" bw="64" op_0_bw="5">
 <![CDATA[
-entry:69 %Ase = load i5 %s_i_addr_21
+entry:69 %Ase = load i5 %s_addr_21
 
 ]]></Node>
 <StgValue><ssdm name="Ase"/></StgValue>
@@ -1612,7 +1612,7 @@ entry:69 %Ase = load i5 %s_i_addr_21
 
 <Node id="74" bw="64" op_0_bw="5">
 <![CDATA[
-entry:71 %Asi = load i5 %s_i_addr_22
+entry:71 %Asi = load i5 %s_addr_22
 
 ]]></Node>
 <StgValue><ssdm name="Asi"/></StgValue>
@@ -1627,10 +1627,10 @@ entry:71 %Asi = load i5 %s_i_addr_22
 
 <Node id="75" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:72 %s_i_addr_23 = getelementptr i64 %s_i, i64 0, i64 23
+entry:72 %s_addr_23 = getelementptr i64 %s, i64 0, i64 23
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_23"/></StgValue>
+<StgValue><ssdm name="s_addr_23"/></StgValue>
 </operation>
 
 <operation id="124" st_id="13" stage="2" lat="2">
@@ -1642,7 +1642,7 @@ entry:72 %s_i_addr_23 = getelementptr i64 %s_i, i64 0, i64 23
 
 <Node id="76" bw="64" op_0_bw="5">
 <![CDATA[
-entry:73 %Aso = load i5 %s_i_addr_23
+entry:73 %Aso = load i5 %s_addr_23
 
 ]]></Node>
 <StgValue><ssdm name="Aso"/></StgValue>
@@ -1657,10 +1657,10 @@ entry:73 %Aso = load i5 %s_i_addr_23
 
 <Node id="77" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:74 %s_i_addr_24 = getelementptr i64 %s_i, i64 0, i64 24
+entry:74 %s_addr_24 = getelementptr i64 %s, i64 0, i64 24
 
 ]]></Node>
-<StgValue><ssdm name="s_i_addr_24"/></StgValue>
+<StgValue><ssdm name="s_addr_24"/></StgValue>
 </operation>
 
 <operation id="126" st_id="13" stage="2" lat="2">
@@ -1672,7 +1672,7 @@ entry:74 %s_i_addr_24 = getelementptr i64 %s_i, i64 0, i64 24
 
 <Node id="78" bw="64" op_0_bw="5">
 <![CDATA[
-entry:75 %Asu = load i5 %s_i_addr_24
+entry:75 %Asu = load i5 %s_addr_24
 
 ]]></Node>
 <StgValue><ssdm name="Asu"/></StgValue>
@@ -1690,7 +1690,7 @@ entry:75 %Asu = load i5 %s_i_addr_24
 
 <Node id="76" bw="64" op_0_bw="5">
 <![CDATA[
-entry:73 %Aso = load i5 %s_i_addr_23
+entry:73 %Aso = load i5 %s_addr_23
 
 ]]></Node>
 <StgValue><ssdm name="Aso"/></StgValue>
@@ -1705,7 +1705,7 @@ entry:73 %Aso = load i5 %s_i_addr_23
 
 <Node id="78" bw="64" op_0_bw="5">
 <![CDATA[
-entry:75 %Asu = load i5 %s_i_addr_24
+entry:75 %Asu = load i5 %s_addr_24
 
 ]]></Node>
 <StgValue><ssdm name="Asu"/></StgValue>
@@ -1786,7 +1786,7 @@ entry:79 %Abe_1_loc_load = load i64 %Abe_1_loc
 
 <Node id="105" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:102 %store_ln349 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr, i64 %Aba_1_loc_load, i8 255
+entry:102 %store_ln349 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr, i64 %Aba_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln349"/></StgValue>
@@ -1801,7 +1801,7 @@ entry:102 %store_ln349 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr, i64 
 
 <Node id="106" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:103 %store_ln350 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_1, i64 %Abe_1_loc_load, i8 255
+entry:103 %store_ln350 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_1, i64 %Abe_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln350"/></StgValue>
@@ -1849,7 +1849,7 @@ entry:81 %Abo_1_loc_load = load i64 %Abo_1_loc
 
 <Node id="107" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:104 %store_ln351 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_2, i64 %Abi_1_loc_load, i8 255
+entry:104 %store_ln351 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_2, i64 %Abi_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln351"/></StgValue>
@@ -1864,7 +1864,7 @@ entry:104 %store_ln351 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_2, i6
 
 <Node id="108" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:105 %store_ln352 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_3, i64 %Abo_1_loc_load, i8 255
+entry:105 %store_ln352 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_3, i64 %Abo_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln352"/></StgValue>
@@ -1912,7 +1912,7 @@ entry:83 %Aga_1_loc_load = load i64 %Aga_1_loc
 
 <Node id="109" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:106 %store_ln353 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_4, i64 %Abu_1_loc_load, i8 255
+entry:106 %store_ln353 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_4, i64 %Abu_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln353"/></StgValue>
@@ -1927,7 +1927,7 @@ entry:106 %store_ln353 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_4, i6
 
 <Node id="110" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:107 %store_ln354 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_5, i64 %Aga_1_loc_load, i8 255
+entry:107 %store_ln354 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_5, i64 %Aga_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln354"/></StgValue>
@@ -1975,7 +1975,7 @@ entry:85 %Agi_1_loc_load = load i64 %Agi_1_loc
 
 <Node id="111" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:108 %store_ln355 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_6, i64 %Age_1_loc_load, i8 255
+entry:108 %store_ln355 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_6, i64 %Age_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln355"/></StgValue>
@@ -1990,7 +1990,7 @@ entry:108 %store_ln355 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_6, i6
 
 <Node id="112" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:109 %store_ln356 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_7, i64 %Agi_1_loc_load, i8 255
+entry:109 %store_ln356 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_7, i64 %Agi_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln356"/></StgValue>
@@ -2038,7 +2038,7 @@ entry:87 %Agu_1_loc_load = load i64 %Agu_1_loc
 
 <Node id="113" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:110 %store_ln357 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_8, i64 %Ago_1_loc_load, i8 255
+entry:110 %store_ln357 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_8, i64 %Ago_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln357"/></StgValue>
@@ -2053,7 +2053,7 @@ entry:110 %store_ln357 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_8, i6
 
 <Node id="114" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:111 %store_ln358 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_9, i64 %Agu_1_loc_load, i8 255
+entry:111 %store_ln358 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_9, i64 %Agu_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln358"/></StgValue>
@@ -2101,7 +2101,7 @@ entry:89 %Ake_1_loc_load = load i64 %Ake_1_loc
 
 <Node id="115" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:112 %store_ln359 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_10, i64 %Aka_1_loc_load, i8 255
+entry:112 %store_ln359 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_10, i64 %Aka_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln359"/></StgValue>
@@ -2116,7 +2116,7 @@ entry:112 %store_ln359 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_10, i
 
 <Node id="116" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:113 %store_ln360 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_11, i64 %Ake_1_loc_load, i8 255
+entry:113 %store_ln360 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_11, i64 %Ake_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln360"/></StgValue>
@@ -2164,7 +2164,7 @@ entry:91 %Ako_1_loc_load = load i64 %Ako_1_loc
 
 <Node id="117" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:114 %store_ln361 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_12, i64 %Aki_1_loc_load, i8 255
+entry:114 %store_ln361 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_12, i64 %Aki_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln361"/></StgValue>
@@ -2179,7 +2179,7 @@ entry:114 %store_ln361 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_12, i
 
 <Node id="118" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:115 %store_ln362 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_13, i64 %Ako_1_loc_load, i8 255
+entry:115 %store_ln362 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_13, i64 %Ako_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln362"/></StgValue>
@@ -2227,7 +2227,7 @@ entry:93 %Ama_1_loc_load = load i64 %Ama_1_loc
 
 <Node id="119" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:116 %store_ln363 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_14, i64 %Aku_1_loc_load, i8 255
+entry:116 %store_ln363 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_14, i64 %Aku_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln363"/></StgValue>
@@ -2242,7 +2242,7 @@ entry:116 %store_ln363 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_14, i
 
 <Node id="120" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:117 %store_ln364 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_15, i64 %Ama_1_loc_load, i8 255
+entry:117 %store_ln364 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_15, i64 %Ama_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln364"/></StgValue>
@@ -2290,7 +2290,7 @@ entry:95 %Ami_1_loc_load = load i64 %Ami_1_loc
 
 <Node id="121" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:118 %store_ln365 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_16, i64 %Ame_1_loc_load, i8 255
+entry:118 %store_ln365 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_16, i64 %Ame_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln365"/></StgValue>
@@ -2305,7 +2305,7 @@ entry:118 %store_ln365 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_16, i
 
 <Node id="122" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:119 %store_ln366 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_17, i64 %Ami_1_loc_load, i8 255
+entry:119 %store_ln366 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_17, i64 %Ami_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln366"/></StgValue>
@@ -2353,7 +2353,7 @@ entry:97 %Amu_1_loc_load = load i64 %Amu_1_loc
 
 <Node id="123" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:120 %store_ln367 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_18, i64 %Amo_1_loc_load, i8 255
+entry:120 %store_ln367 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_18, i64 %Amo_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln367"/></StgValue>
@@ -2368,7 +2368,7 @@ entry:120 %store_ln367 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_18, i
 
 <Node id="124" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:121 %store_ln368 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_19, i64 %Amu_1_loc_load, i8 255
+entry:121 %store_ln368 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_19, i64 %Amu_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln368"/></StgValue>
@@ -2416,7 +2416,7 @@ entry:99 %Ase_1_loc_load = load i64 %Ase_1_loc
 
 <Node id="125" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:122 %store_ln369 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_20, i64 %Asa_1_loc_load, i8 255
+entry:122 %store_ln369 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_20, i64 %Asa_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln369"/></StgValue>
@@ -2431,7 +2431,7 @@ entry:122 %store_ln369 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_20, i
 
 <Node id="126" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:123 %store_ln370 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_21, i64 %Ase_1_loc_load, i8 255
+entry:123 %store_ln370 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_21, i64 %Ase_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln370"/></StgValue>
@@ -2479,7 +2479,7 @@ entry:101 %Aso_1_loc_load = load i64 %Aso_1_loc
 
 <Node id="127" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:124 %store_ln371 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_22, i64 %Asi_1_loc_load, i8 255
+entry:124 %store_ln371 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_22, i64 %Asi_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln371"/></StgValue>
@@ -2494,7 +2494,7 @@ entry:124 %store_ln371 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_22, i
 
 <Node id="128" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:125 %store_ln372 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_23, i64 %Aso_1_loc_load, i8 255
+entry:125 %store_ln372 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_23, i64 %Aso_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln372"/></StgValue>
@@ -2512,7 +2512,7 @@ entry:125 %store_ln372 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_23, i
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-entry:25 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %s_i
+entry:25 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %s
 
 ]]></Node>
 <StgValue><ssdm name="specbramwithbyteenable_ln0"/></StgValue>
@@ -2542,7 +2542,7 @@ entry:77 %Asu_1_loc_load = load i64 %Asu_1_loc
 
 <Node id="129" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-entry:126 %store_ln373 = store void @_ssdm_op_Write.bram.i64, i5 %s_i_addr_24, i64 %Asu_1_loc_load, i8 255
+entry:126 %store_ln373 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr_24, i64 %Asu_1_loc_load, i8 255
 
 ]]></Node>
 <StgValue><ssdm name="store_ln373"/></StgValue>

@@ -164,7 +164,7 @@
 					<Obj>
 						<type>0</type>
 						<id>5</id>
-						<name>i_192</name>
+						<name>i_189</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>
@@ -234,7 +234,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>i_192_write_ln168</name>
+						<name>i_189_write_ln168</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>
@@ -1180,7 +1180,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>xor_ln105_147</name>
+						<name>xor_ln105_142</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1336,7 +1336,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>xor_ln105_148</name>
+						<name>xor_ln105_143</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -2232,7 +2232,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>i_192_write_ln168</name>
+						<name>i_189_write_ln168</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>

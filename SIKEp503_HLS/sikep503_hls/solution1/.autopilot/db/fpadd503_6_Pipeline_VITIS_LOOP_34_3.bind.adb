@@ -792,7 +792,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>zext_ln35</name>
+						<name>zext_ln35_4</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -962,7 +962,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln35_4</name>
+						<name>zext_ln35</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1422,7 +1422,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>xor_ln35_14</name>
+						<name>xor_ln35_13</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1594,7 +1594,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>xor_ln35_15</name>
+						<name>xor_ln35_14</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1822,7 +1822,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>xor_ln35_16</name>
+						<name>xor_ln35_15</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -4382,7 +4382,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln35_14_fu_187</first>
+			<first>xor_ln35_13_fu_187</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4390,7 +4390,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln35_15_fu_204</first>
+			<first>xor_ln35_14_fu_204</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4398,7 +4398,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln35_16_fu_226</first>
+			<first>xor_ln35_15_fu_226</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4438,19 +4438,19 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln35_4_fu_162</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>26</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln35_fu_152</first>
+			<first>zext_ln35_4_fu_152</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>23</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln35_fu_162</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>26</item>
 			</second>
 		</item>
 	</dp_fu_nodes_expression>

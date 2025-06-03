@@ -2096,7 +2096,7 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>zext_ln105_172</name>
+						<name>zext_ln105_173</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -4265,7 +4265,7 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>temp_84</name>
+						<name>temp_87</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>130</lineNumber>
@@ -5154,7 +5154,7 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>zext_ln105_173</name>
+						<name>zext_ln105_174</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>

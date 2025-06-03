@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_79_80_1_Pipeline_VITIS_LOOP_14_1216'" level="0">
-<item name = "Date">Tue May 27 13:42:34 2025
+<item name = "Date">Tue Jun  3 10:04:02 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 5.576 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.911 ns, 2.70 ns</column>
 </table>
 </item>
 </section>

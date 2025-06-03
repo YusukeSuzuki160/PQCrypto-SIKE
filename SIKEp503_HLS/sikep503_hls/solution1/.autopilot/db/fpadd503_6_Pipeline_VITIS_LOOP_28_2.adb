@@ -52,7 +52,7 @@
             <Obj>
               <type>1</type>
               <id>2</id>
-              <name>carry_172_out</name>
+              <name>carry_166_out</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1097,7 +1097,7 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>xor_ln105_100</name>
+              <name>xor_ln105_98</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -1129,7 +1129,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_100_fu_158_p2</rtlName>
+              <rtlName>xor_ln105_98_fu_158_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1225,7 +1225,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>xor_ln105_101</name>
+              <name>xor_ln105_99</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -1257,7 +1257,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_101_fu_168_p2</rtlName>
+              <rtlName>xor_ln105_99_fu_168_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2014,7 +2014,7 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>carry_172_out_write_ln29</name>
+              <name>carry_166_out_write_ln29</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>29</lineNumber>
@@ -3734,7 +3734,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_100_fu_158_p2 ( xor ) </first>
+          <first>xor_ln105_98_fu_158_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3757,7 +3757,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_101_fu_168_p2 ( xor ) </first>
+          <first>xor_ln105_99_fu_168_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4309,7 +4309,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_100_fu_158_p2 ( xor ) </first>
+          <first>xor_ln105_98_fu_158_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4317,7 +4317,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_101_fu_168_p2 ( xor ) </first>
+          <first>xor_ln105_99_fu_168_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5106,7 +5106,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_100_fu_158</first>
+        <first>xor_ln105_98_fu_158</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5114,7 +5114,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_101_fu_168</first>
+        <first>xor_ln105_99_fu_168</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5407,7 +5407,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item class_id="64" tracking_level="0" version="0">
-        <first>carry_172_out</first>
+        <first>carry_166_out</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

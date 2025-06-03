@@ -239,7 +239,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>i_295</name>
+						<name>i_293</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>

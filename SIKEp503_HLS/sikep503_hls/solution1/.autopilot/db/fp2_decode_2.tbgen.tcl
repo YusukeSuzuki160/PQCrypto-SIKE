@@ -204,7 +204,7 @@ set RtlHierarchyInfo {[
 				"SubConnect" : [
 					{"ID" : "20", "SubInstance" : "grp_rdc_mont_4_fu_125", "Port" : "p503p1_1", "Inst_start_state" : "11", "Inst_end_state" : "12"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.temp_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.temp_71_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.temp_74_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_fp2_decode_2_Pipeline_VITIS_LOOP_53_1_fu_82", "Parent" : "0", "Child" : ["4"],
 		"CDFG" : "fp2_decode_2_Pipeline_VITIS_LOOP_53_1",
 		"Protocol" : "ap_ctrl_hs",
@@ -241,7 +241,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "temp_71", "Type" : "Memory", "Direction" : "O"}],
+			{"Name" : "temp_74", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "Loop 1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_state1", "FirstStateIter" : "", "FirstStateBlock" : "ap_ST_fsm_state1_blk", "LastState" : "ap_ST_fsm_state1", "LastStateIter" : "", "LastStateBlock" : "ap_ST_fsm_state1_blk", "QuitState" : "ap_ST_fsm_state1", "QuitStateIter" : "", "QuitStateBlock" : "ap_ST_fsm_state1_blk", "OneDepthLoop" : "1", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
@@ -345,8 +345,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "PKB", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v_94_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "u_71_out", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "v_87_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "u_68_out", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "t_out", "Type" : "OVld", "Direction" : "IO"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_145_2", "PipelineType" : "UPC",
@@ -381,10 +381,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "VITIS_LOOP_159_4", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter8", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter8", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "15", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.grp_mp_mul_862_Pipeline_VITIS_LOOP_159_4_fu_140.flow_control_loop_pipe_sequential_init_U", "Parent" : "14"},
-	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2569", "Parent" : "11"},
-	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2570", "Parent" : "11"},
-	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2571", "Parent" : "11"},
-	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2572", "Parent" : "11"},
+	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2568", "Parent" : "11"},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2569", "Parent" : "11"},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2570", "Parent" : "11"},
+	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_862_fu_115.mul_32ns_32ns_64_2_1_U2571", "Parent" : "11"},
 	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125", "Parent" : "0", "Child" : ["21", "23", "26", "29", "30", "31", "32"],
 		"CDFG" : "rdc_mont_4",
 		"Protocol" : "ap_ctrl_hs",
@@ -455,7 +455,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "v", "Type" : "None", "Direction" : "I"},
 			{"Name" : "u", "Type" : "None", "Direction" : "I"},
-			{"Name" : "i_3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_5", "Type" : "None", "Direction" : "I"},
 			{"Name" : "add_ln187", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mc", "Type" : "None", "Direction" : "I"},
 			{"Name" : "PKB", "Type" : "Memory", "Direction" : "I"},
@@ -500,10 +500,10 @@ set RtlHierarchyInfo {[
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter9", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter9", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "27", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.grp_rdc_mont_4_Pipeline_VITIS_LOOP_208_5_fu_224.p503p1_1_U", "Parent" : "26"},
 	{"ID" : "28", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.grp_rdc_mont_4_Pipeline_VITIS_LOOP_208_5_fu_224.flow_control_loop_pipe_sequential_init_U", "Parent" : "26"},
-	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1465", "Parent" : "20"},
-	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1466", "Parent" : "20"},
-	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1467", "Parent" : "20"},
-	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1468", "Parent" : "20"}]}
+	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1464", "Parent" : "20"},
+	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1465", "Parent" : "20"},
+	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1466", "Parent" : "20"},
+	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_4_fu_125.mul_32ns_32ns_64_2_1_U1467", "Parent" : "20"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -519,7 +519,7 @@ set ArgLastReadFirstWriteLatency {
 		x {Type I LastRead 0 FirstWrite -1}
 		PKB {Type O LastRead -1 FirstWrite 1}}
 	fp2_decode_2_Pipeline_3 {
-		temp_71 {Type O LastRead -1 FirstWrite 0}}
+		temp_74 {Type O LastRead -1 FirstWrite 0}}
 	fp2_decode_2_Pipeline_4 {
 		temp {Type O LastRead -1 FirstWrite 0}}
 	fp2_decode_2_Pipeline_VITIS_LOOP_55_2 {
@@ -541,8 +541,8 @@ set ArgLastReadFirstWriteLatency {
 		PKB {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 0 FirstWrite -1}
-		v_94_out {Type O LastRead -1 FirstWrite 7}
-		u_71_out {Type IO LastRead 7 FirstWrite 0}
+		v_87_out {Type O LastRead -1 FirstWrite 7}
+		u_68_out {Type IO LastRead 7 FirstWrite 0}
 		t_out {Type IO LastRead 8 FirstWrite 0}}
 	mp_mul_862_Pipeline_VITIS_LOOP_159_4 {
 		indvars_iv {Type I LastRead 0 FirstWrite -1}
@@ -567,7 +567,7 @@ set ArgLastReadFirstWriteLatency {
 	rdc_mont_4_Pipeline_VITIS_LOOP_187_3 {
 		v {Type I LastRead 0 FirstWrite -1}
 		u {Type I LastRead 0 FirstWrite -1}
-		i_3 {Type I LastRead 0 FirstWrite -1}
+		i_5 {Type I LastRead 0 FirstWrite -1}
 		add_ln187 {Type I LastRead 0 FirstWrite -1}
 		mc {Type I LastRead 0 FirstWrite -1}
 		PKB {Type I LastRead 0 FirstWrite -1}

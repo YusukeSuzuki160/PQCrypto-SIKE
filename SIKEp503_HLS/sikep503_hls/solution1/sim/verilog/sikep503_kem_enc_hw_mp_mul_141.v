@@ -72,7 +72,7 @@ wire   [3:0] tmp_s_fu_188_p3;
 reg   [3:0] tmp_s_reg_408;
 wire   [6:0] tmp_466_fu_196_p4;
 reg   [6:0] tmp_466_reg_414;
-reg   [3:0] i_81_reg_420;
+reg   [3:0] i_84_reg_420;
 wire    ap_CS_fsm_state2;
 reg   [3:0] u_reg_426;
 reg   [63:0] v_201_reg_431;
@@ -80,7 +80,7 @@ reg   [3:0] indvars_iv31_load_reg_467;
 wire    ap_CS_fsm_state3;
 wire   [2:0] trunc_ln143_fu_276_p1;
 reg   [2:0] trunc_ln143_reg_472;
-reg   [3:0] i_82_reg_477;
+reg   [3:0] i_85_reg_477;
 wire    ap_CS_fsm_state6;
 reg   [63:0] v_load_reg_486;
 wire   [2:0] trunc_ln157_fu_326_p1;
@@ -159,7 +159,7 @@ reg   [3:0] u_29_fu_82;
 wire   [3:0] zext_ln159_fu_353_p1;
 reg   [3:0] indvars_iv_fu_90;
 wire   [3:0] add_ln157_13_fu_331_p2;
-reg   [3:0] i_25_fu_94;
+reg   [3:0] i_27_fu_94;
 wire   [3:0] add_ln157_fu_308_p2;
 reg    c_we0_local;
 reg   [63:0] c_d0_local;
@@ -206,7 +206,7 @@ initial begin
 #0 i_fu_58 = 4'd0;
 #0 u_29_fu_82 = 4'd0;
 #0 indvars_iv_fu_90 = 4'd0;
-#0 i_25_fu_94 = 4'd0;
+#0 i_27_fu_94 = 4'd0;
 end
 
 sikep503_kem_enc_hw_mp_mul_141_Pipeline_VITIS_LOOP_145_2 grp_mp_mul_141_Pipeline_VITIS_LOOP_145_2_fu_146(
@@ -219,12 +219,12 @@ sikep503_kem_enc_hw_mp_mul_141_Pipeline_VITIS_LOOP_145_2 grp_mp_mul_141_Pipeline
     .v_017(v_201_reg_431),
     .zext_ln143(u_reg_426),
     .indvars_iv31(indvars_iv31_load_reg_467),
-    .zext_ln146_25(tmp_466_reg_414),
+    .zext_ln146_26(tmp_466_reg_414),
     .a_address0(grp_mp_mul_141_Pipeline_VITIS_LOOP_145_2_fu_146_a_address0),
     .a_ce0(grp_mp_mul_141_Pipeline_VITIS_LOOP_145_2_fu_146_a_ce0),
     .a_q0(a_q0),
     .i(trunc_ln143_reg_472),
-    .zext_ln146_24(tmp_s_reg_408),
+    .zext_ln146_25(tmp_s_reg_408),
     .b_address0(grp_mp_mul_141_Pipeline_VITIS_LOOP_145_2_fu_146_b_address0),
     .b_ce0(grp_mp_mul_141_Pipeline_VITIS_LOOP_145_2_fu_146_b_ce0),
     .b_q0(b_q0),
@@ -264,12 +264,12 @@ sikep503_kem_enc_hw_mp_mul_141_Pipeline_VITIS_LOOP_159_4 grp_mp_mul_141_Pipeline
     .indvars_iv(trunc_ln157_reg_494),
     .v(v_load_reg_486),
     .zext_ln157(u_29_fu_82),
-    .zext_ln146_25(tmp_466_reg_414),
+    .zext_ln146_26(tmp_466_reg_414),
     .a_address0(grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163_a_address0),
     .a_ce0(grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163_a_ce0),
     .a_q0(a_q0),
-    .i_25(i_82_reg_477),
-    .zext_ln146_24(tmp_s_reg_408),
+    .i_27(i_85_reg_477),
+    .zext_ln146_25(tmp_s_reg_408),
     .b_address0(grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163_b_address0),
     .b_ce0(grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163_b_ce0),
     .b_q0(b_q0),
@@ -304,7 +304,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1887(
+mul_32ns_32ns_64_2_1_U1867(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_499_p0),
@@ -319,7 +319,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1888(
+mul_32ns_32ns_64_2_1_U1868(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_503_p0),
@@ -334,7 +334,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1889(
+mul_32ns_32ns_64_2_1_U1869(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_507_p0),
@@ -349,7 +349,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1890(
+mul_32ns_32ns_64_2_1_U1870(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_511_p0),
@@ -392,9 +392,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln143_fu_235_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_25_fu_94 <= 4'd8;
+        i_27_fu_94 <= 4'd8;
     end else if (((icmp_ln157_fu_302_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
-        i_25_fu_94 <= add_ln157_fu_308_p2;
+        i_27_fu_94 <= add_ln157_fu_308_p2;
     end
 end
 
@@ -456,7 +456,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_81_reg_420 <= i_fu_58;
+        i_84_reg_420 <= i_fu_58;
         u_reg_426 <= u_016_fu_62;
         v_201_reg_431 <= v_017_fu_66;
     end
@@ -464,7 +464,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        i_82_reg_477 <= i_25_fu_94;
+        i_85_reg_477 <= i_27_fu_94;
         v_load_reg_486 <= v_fu_86;
     end
 end
@@ -810,7 +810,7 @@ assign add_ln143_fu_241_p2 = (i_fu_58 + 4'd1);
 
 assign add_ln157_13_fu_331_p2 = (indvars_iv_fu_90 + 4'd1);
 
-assign add_ln157_fu_308_p2 = (i_25_fu_94 + 4'd1);
+assign add_ln157_fu_308_p2 = (i_27_fu_94 + 4'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -846,19 +846,19 @@ assign grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163_ap_start = grp_mp_mul_141
 
 assign icmp_ln143_fu_235_p2 = ((i_fu_58 == 4'd8) ? 1'b1 : 1'b0);
 
-assign icmp_ln157_fu_302_p2 = ((i_25_fu_94 == 4'd15) ? 1'b1 : 1'b0);
+assign icmp_ln157_fu_302_p2 = ((i_27_fu_94 == 4'd15) ? 1'b1 : 1'b0);
 
 assign tmp_466_fu_196_p4 = {{{empty_fu_184_p1}, {a_offset2}}, {3'd0}};
 
 assign tmp_s_fu_188_p3 = {{b_offset}, {3'd0}};
 
-assign trunc_ln143_fu_276_p1 = i_81_reg_420[2:0];
+assign trunc_ln143_fu_276_p1 = i_84_reg_420[2:0];
 
 assign trunc_ln157_fu_326_p1 = indvars_iv_fu_90[2:0];
 
-assign zext_ln143_fu_291_p1 = i_81_reg_420;
+assign zext_ln143_fu_291_p1 = i_84_reg_420;
 
-assign zext_ln157_fu_342_p1 = i_82_reg_477;
+assign zext_ln157_fu_342_p1 = i_85_reg_477;
 
 assign zext_ln159_fu_353_p1 = grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163_t_33_out;
 

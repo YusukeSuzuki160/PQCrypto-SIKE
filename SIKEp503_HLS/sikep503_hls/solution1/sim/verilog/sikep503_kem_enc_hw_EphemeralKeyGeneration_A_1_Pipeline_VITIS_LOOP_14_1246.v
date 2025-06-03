@@ -13,10 +13,10 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_124
         ap_done,
         ap_idle,
         ap_ready,
-        A24plus_address0,
-        A24plus_ce0,
-        A24plus_we0,
-        A24plus_d0
+        phiP_Z_address0,
+        phiP_Z_ce0,
+        phiP_Z_we0,
+        phiP_Z_d0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -27,10 +27,10 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [3:0] A24plus_address0;
-output   A24plus_ce0;
-output   A24plus_we0;
-output  [63:0] A24plus_d0;
+output  [3:0] phiP_Z_address0;
+output   phiP_Z_ce0;
+output   phiP_Z_we0;
+output  [63:0] phiP_Z_d0;
 
 reg ap_idle;
 
@@ -50,13 +50,13 @@ wire   [63:0] zext_ln14_fu_81_p1;
 reg   [63:0] zext_ln14_reg_101;
 wire    ap_block_pp0_stage0_11001;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_302_fu_30;
+reg   [3:0] i_298_fu_30;
 wire   [3:0] add_ln14_fu_75_p2;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    Montgomery_one_1_ce0_local;
-reg    A24plus_we0_local;
-reg    A24plus_ce0_local;
+reg    phiP_Z_we0_local;
+reg    phiP_Z_ce0_local;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -71,11 +71,11 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_302_fu_30 = 4'd0;
+#0 i_298_fu_30 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1243_Montgomery_one_1_ROM_Acud #(
+sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1246_Montgomery_one_1_ROM_Acud #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -137,9 +137,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln14_fu_69_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_302_fu_30 <= add_ln14_fu_75_p2;
+            i_298_fu_30 <= add_ln14_fu_75_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_302_fu_30 <= 4'd0;
+            i_298_fu_30 <= 4'd0;
         end
     end
 end
@@ -147,22 +147,6 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         zext_ln14_reg_101[3 : 0] <= zext_ln14_fu_81_p1[3 : 0];
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        A24plus_ce0_local = 1'b1;
-    end else begin
-        A24plus_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        A24plus_we0_local = 1'b1;
-    end else begin
-        A24plus_we0_local = 1'b0;
     end
 end
 
@@ -218,7 +202,23 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_302_fu_30;
+        ap_sig_allocacmp_i = i_298_fu_30;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        phiP_Z_ce0_local = 1'b1;
+    end else begin
+        phiP_Z_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        phiP_Z_we0_local = 1'b1;
+    end else begin
+        phiP_Z_we0_local = 1'b0;
     end
 end
 
@@ -232,14 +232,6 @@ always @ (*) begin
         end
     endcase
 end
-
-assign A24plus_address0 = zext_ln14_reg_101;
-
-assign A24plus_ce0 = A24plus_ce0_local;
-
-assign A24plus_d0 = Montgomery_one_1_q0;
-
-assign A24plus_we0 = A24plus_we0_local;
 
 assign Montgomery_one_1_address0 = zext_ln14_fu_81_p1;
 
@@ -264,6 +256,14 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 assign ap_ready = ap_ready_sig;
 
 assign icmp_ln14_fu_69_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
+
+assign phiP_Z_address0 = zext_ln14_reg_101;
+
+assign phiP_Z_ce0 = phiP_Z_ce0_local;
+
+assign phiP_Z_d0 = Montgomery_one_1_q0;
+
+assign phiP_Z_we0 = phiP_Z_we0_local;
 
 assign zext_ln14_fu_81_p1 = ap_sig_allocacmp_i;
 

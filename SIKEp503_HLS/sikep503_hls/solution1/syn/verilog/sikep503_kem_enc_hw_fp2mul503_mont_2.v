@@ -666,7 +666,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1175(
+mul_32ns_32ns_64_2_1_U1174(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_157_p0),
@@ -681,7 +681,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1176(
+mul_32ns_32ns_64_2_1_U1175(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_161_p0),
@@ -696,7 +696,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1177(
+mul_32ns_32ns_64_2_1_U1176(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_165_p0),
@@ -711,7 +711,7 @@ sikep503_kem_enc_hw_mul_32ns_32ns_64_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-mul_32ns_32ns_64_2_1_U1178(
+mul_32ns_32ns_64_2_1_U1177(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_169_p0),

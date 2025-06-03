@@ -69,7 +69,7 @@ wire   [63:0] zext_ln24_36_fu_110_p1;
 wire    ap_block_pp0_stage0;
 reg   [3:0] i_fu_46;
 wire   [3:0] add_ln23_fu_98_p2;
-reg   [3:0] ap_sig_allocacmp_i_228;
+reg   [3:0] ap_sig_allocacmp_i_230;
 reg    c_ce1_local;
 reg    c_we0_local;
 wire   [63:0] add_ln24_26_fu_130_p2;
@@ -262,9 +262,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_228 = 4'd0;
+        ap_sig_allocacmp_i_230 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_228 = i_fu_46;
+        ap_sig_allocacmp_i_230 = i_fu_46;
     end
 end
 
@@ -314,11 +314,11 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln23_fu_98_p2 = (ap_sig_allocacmp_i_228 + 4'd1);
+assign add_ln23_fu_98_p2 = (ap_sig_allocacmp_i_230 + 4'd1);
 
 assign add_ln24_26_fu_130_p2 = (c_load_reg_216 + tempReg_reg_223);
 
-assign add_ln24_fu_104_p2 = (zext_ln24_25 + ap_sig_allocacmp_i_228);
+assign add_ln24_fu_104_p2 = (zext_ln24_25 + ap_sig_allocacmp_i_230);
 
 assign and_ln24_fu_174_p2 = (xor_ln24_s_fu_166_p3 & c_load_reg_216);
 
@@ -364,7 +364,7 @@ assign c_d0 = add_ln24_26_fu_130_p2;
 
 assign c_we0 = c_we0_local;
 
-assign icmp_ln23_fu_92_p2 = ((ap_sig_allocacmp_i_228 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln23_fu_92_p2 = ((ap_sig_allocacmp_i_230 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln24_16_fu_185_p2 = (xor_ln24_48_fu_179_p2 | and_ln24_fu_174_p2);
 

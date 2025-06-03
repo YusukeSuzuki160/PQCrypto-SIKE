@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_71_74_Pipeline_VITIS_LOOP_170_1157'
 ================================================================
-* Date:           Tue May 27 14:11:42 2025
+* Date:           Tue Jun  3 12:28:58 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -137,7 +137,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln168', src/fpx.c:168->src/fpx.c:182->src/fpx.c:206) of constant 0 on local variable 'i', src/fpx.c:168->src/fpx.c:182->src/fpx.c:206 [4]  (1.588 ns)
 	'load' operation 5 bit ('i', src/fpx.c:170->src/fpx.c:182->src/fpx.c:206) on local variable 'i', src/fpx.c:168->src/fpx.c:182->src/fpx.c:206 [8]  (0.000 ns)
-	'add' operation 5 bit ('add_ln170', src/fpx.c:170->src/fpx.c:182->src/fpx.c:206) [10]  (1.780 ns)
+	'icmp' operation 1 bit ('icmp_ln170', src/fpx.c:170->src/fpx.c:182->src/fpx.c:206) [9]  (1.780 ns)
 	'store' operation 0 bit ('store_ln168', src/fpx.c:168->src/fpx.c:182->src/fpx.c:206) of variable 'add_ln170', src/fpx.c:170->src/fpx.c:182->src/fpx.c:206 on local variable 'i', src/fpx.c:168->src/fpx.c:182->src/fpx.c:206 [36]  (1.588 ns)
 
  <State 2>: 6.774ns

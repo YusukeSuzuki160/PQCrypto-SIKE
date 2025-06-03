@@ -270,7 +270,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_210</name>
+						<name>i_212</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -555,7 +555,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>zext_ln24_3</name>
+						<name>zext_ln</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -783,7 +783,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>zext_ln24_4</name>
+						<name>zext_ln24_3</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1071,7 +1071,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>xor_ln24_5</name>
+						<name>xor_ln24_4</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1243,7 +1243,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>xor_ln24_6</name>
+						<name>xor_ln24_7</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1356,7 +1356,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>xor_ln24_s</name>
+						<name>xor_ln24_5</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1471,7 +1471,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>xor_ln24_7</name>
+						<name>xor_ln24_6</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -3729,7 +3729,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln24_5_fu_140</first>
+			<first>xor_ln24_4_fu_140</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3737,19 +3737,27 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln24_6_fu_157</first>
+			<first>xor_ln24_5_fu_166</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>29</item>
+				<item>31</item>
 			</second>
 		</item>
 		<item>
-			<first>xor_ln24_7_fu_179</first>
+			<first>xor_ln24_6_fu_179</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>33</item>
+			</second>
+		</item>
+		<item>
+			<first>xor_ln24_7_fu_157</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>29</item>
 			</second>
 		</item>
 		<item>
@@ -3761,23 +3769,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln24_s_fu_166</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>31</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln24_3_fu_102</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>17</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln24_4_fu_120</first>
+			<first>zext_ln24_3_fu_120</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3792,6 +3784,14 @@
 				<item>18</item>
 			</second>
 		</item>
+		<item>
+			<first>zext_ln_fu_102</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>17</item>
+			</second>
+		</item>
 	</dp_fu_nodes_expression>
 	<dp_fu_nodes_module>
 		<count>0</count>
@@ -3801,7 +3801,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_210_load_fu_83</first>
+			<first>i_212_load_fu_83</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 647 \
-    name b_0 \
+    id 689 \
+    name tt1 \
     reset_level 1 \
     sync_rst true \
-    dir I \
-    corename b_0 \
+    dir IO \
+    corename tt1 \
     op interface \
-    ports { b_0_address0 { O 3 vector } b_0_ce0 { O 1 bit } b_0_q0 { I 64 vector } b_0_address1 { O 3 vector } b_0_ce1 { O 1 bit } b_0_q1 { I 64 vector } } \
+    ports { tt1_address0 { O 4 vector } tt1_ce0 { O 1 bit } tt1_we0 { O 1 bit } tt1_d0 { O 64 vector } tt1_address1 { O 4 vector } tt1_ce1 { O 1 bit } tt1_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'tt1'"
 }
 }
 
@@ -30,36 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 648 \
-    name b_1 \
+    id 690 \
+    name tt2 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename b_1 \
+    corename tt2 \
     op interface \
-    ports { b_1_address0 { O 3 vector } b_1_ce0 { O 1 bit } b_1_q0 { I 64 vector } b_1_address1 { O 3 vector } b_1_ce1 { O 1 bit } b_1_q1 { I 64 vector } } \
+    ports { tt2_address0 { O 4 vector } tt2_ce0 { O 1 bit } tt2_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b_1'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 649 \
-    name t2 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename t2 \
-    op interface \
-    ports { t2_address0 { O 3 vector } t2_ce0 { O 1 bit } t2_we0 { O 1 bit } t2_d0 { O 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'tt2'"
 }
 }
 

@@ -348,7 +348,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_262</name>
+						<name>i_272</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>
@@ -917,7 +917,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>zext_ln352_64</name>
+						<name>zext_ln352_66</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>
@@ -987,7 +987,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>a_addr_16</name>
+						<name>a_addr_15</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>
@@ -1627,7 +1627,7 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>xor_ln352_146</name>
+						<name>xor_ln352_171</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>
@@ -1841,7 +1841,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>xor_ln352_161</name>
+						<name>xor_ln352_185</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>
@@ -2125,7 +2125,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>xor_ln352_148</name>
+						<name>xor_ln352_173</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>
@@ -2197,7 +2197,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>or_ln352_66</name>
+						<name>or_ln352_77</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>352</lineNumber>

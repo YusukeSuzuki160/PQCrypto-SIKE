@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_4_Pipeline_VITIS_LOOP_23_1'" level="0">
-<item name = "Date">Tue May 27 14:17:56 2025
+<item name = "Date">Tue Jun  3 14:13:00 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -122,7 +122,7 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="b_load_reg_322">64, 0, 64, 0</column>
 <column name="carry_reg_86">1, 0, 1, 0</column>
-<column name="i_219_reg_293">4, 0, 4, 0</column>
+<column name="i_221_reg_293">4, 0, 4, 0</column>
 <column name="i_fu_56">4, 0, 4, 0</column>
 <column name="icmp_ln23_reg_298">1, 0, 1, 0</column>
 <column name="icmp_ln23_reg_298_pp0_iter1_reg">1, 0, 1, 0</column>

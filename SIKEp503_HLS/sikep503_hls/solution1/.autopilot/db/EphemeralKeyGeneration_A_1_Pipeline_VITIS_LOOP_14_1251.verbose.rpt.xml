@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1251'" level="0">
-<item name = "Date">Tue May 27 14:17:37 2025
+<item name = "Date">Tue Jun  3 14:12:41 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -88,7 +88,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_304">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_302">9, 2, 4, 8</column>
 <column name="i_fu_38">9, 2, 4, 8</column>
 </table>
 </item>
@@ -97,7 +97,7 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="i_304_reg_142">4, 0, 4, 0</column>
+<column name="i_302_reg_142">4, 0, 4, 0</column>
 <column name="i_fu_38">4, 0, 4, 0</column>
 </table>
 </item>

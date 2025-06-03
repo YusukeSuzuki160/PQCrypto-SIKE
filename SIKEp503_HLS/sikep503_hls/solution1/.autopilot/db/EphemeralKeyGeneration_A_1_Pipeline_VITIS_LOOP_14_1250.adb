@@ -354,7 +354,7 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>i_305</name>
+              <name>i_303</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -2273,7 +2273,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_305</first>
+          <first>ap_sig_allocacmp_i_303</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2388,7 +2388,7 @@
           </second>
         </item>
         <item>
-          <first>i_305_reg_126</first>
+          <first>i_303_reg_126</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2850,7 +2850,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>i_305_load_fu_78</first>
+        <first>i_303_load_fu_78</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2961,7 +2961,7 @@
         </second>
       </item>
       <item>
-        <first>i_305_reg_126</first>
+        <first>i_303_reg_126</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

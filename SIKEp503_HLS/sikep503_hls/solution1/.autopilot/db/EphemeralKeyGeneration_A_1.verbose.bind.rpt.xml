@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1'" level="0">
-<item name = "Date">Tue May 27 14:14:19 2025
+<item name = "Date">Tue Jun  3 14:09:24 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -44,7 +44,7 @@
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1249_fu_1349">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1249, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1245_fu_1356">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1245, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fpadd503_149_3_fu_1363">fpadd503_149_3, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_LADDER3PT_79_80_1_fu_1377">LADDER3PT_79_80_1, 1865690, 2848190, 18.657 ms, 28.482 ms, 1865690, 2848190, no</column>
+<column name="grp_LADDER3PT_75_76_1_fu_1377">LADDER3PT_75_76_1, 1865690, 2848190, 18.657 ms, 28.482 ms, 1865690, 2848190, no</column>
 <column name="grp_fpsub503_3_fu_1405">fpsub503_3, 40, 40, 0.400 us, 0.400 us, 40, 40, no</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1250_fu_1414">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1250, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1252_fu_1421">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1252, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>

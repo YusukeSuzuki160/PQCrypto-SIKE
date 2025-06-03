@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_7_Pipeline_VITIS_LOOP_34_3'" level="0">
-<item name = "Date">Tue May 27 14:18:12 2025
+<item name = "Date">Tue Jun  3 14:13:15 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -82,17 +82,17 @@
 <column name="add_ln34_fu_129_p2">+, 0, 0, 13, 4, 1</column>
 <column name="add_ln35_fu_161_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_fu_150_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln35_4_fu_205_p2">and, 0, 0, 64, 64, 64</column>
+<column name="and_ln35_3_fu_205_p2">and, 0, 0, 64, 64, 64</column>
 <column name="and_ln35_fu_156_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_271">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln34_fu_123_p2">icmp, 0, 0, 13, 4, 5</column>
-<column name="or_ln35_4_fu_216_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln35_3_fu_216_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln35_fu_175_p2">or, 0, 0, 64, 64, 64</column>
 <column name="sext_ln21_cast_fu_107_p3">select, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_11_fu_171_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln35_12_fu_188_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_13_fu_210_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_10_fu_210_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_8_fu_171_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_9_fu_188_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln35_fu_166_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -105,7 +105,7 @@
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="carry_reg_96">9, 2, 1, 2</column>
 <column name="coeff_we0_local">9, 2, 8, 16</column>
-<column name="i_132_fu_56">9, 2, 4, 8</column>
+<column name="i_134_fu_56">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -118,7 +118,7 @@
 <column name="carry_reg_96">1, 0, 1, 0</column>
 <column name="coeff_addr_reg_246">4, 0, 6, 2</column>
 <column name="coeff_load_reg_257">64, 0, 64, 0</column>
-<column name="i_132_fu_56">4, 0, 4, 0</column>
+<column name="i_134_fu_56">4, 0, 4, 0</column>
 <column name="icmp_ln34_reg_242">1, 0, 1, 0</column>
 <column name="sext_ln21_cast_reg_237">64, 0, 64, 0</column>
 <column name="tempReg_reg_262">64, 0, 64, 0</column>

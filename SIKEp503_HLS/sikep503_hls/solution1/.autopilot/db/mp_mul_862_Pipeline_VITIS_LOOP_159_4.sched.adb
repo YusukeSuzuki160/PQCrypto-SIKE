@@ -1701,7 +1701,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>lshr_ln8</name>
+						<name>lshr_ln9</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>160</lineNumber>
@@ -4637,7 +4637,7 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>temp_31</name>
+						<name>temp_34</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>130</lineNumber>

@@ -4295,7 +4295,7 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>temp_13</name>
+						<name>temp_16</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>130</lineNumber>
@@ -12134,7 +12134,7 @@
 			</second>
 		</item>
 		<item>
-			<first>temp_13_fu_433</first>
+			<first>temp_16_fu_433</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

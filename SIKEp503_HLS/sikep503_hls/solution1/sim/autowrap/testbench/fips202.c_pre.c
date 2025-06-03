@@ -1617,41 +1617,56 @@ static void keccak_absorb(uint64_t *s, unsigned int r, const unsigned char *m, u
 {
   unsigned char t[200];
   unsigned long long i;
-
   while (mlen >= r)
   {
+#pragma HLS loop_tripcount min = 100 max = 100
     for (i = 0; i < r / 8; ++i)
+    {
+#pragma HLS loop_tripcount min = 100 max = 100
       s[i] ^= load64(m + 8 * i);
-    printf("\n");
+    }
     KeccakF1600_StatePermute(s);
     mlen -= r;
     m += r;
   }
 
   for (i = 0; i < r; ++i)
+  {
+#pragma HLS loop_tripcount min = 500 max = 500
     t[i] = 0;
+  }
   for (i = 0; i < mlen; ++i)
+  {
+#pragma HLS loop_tripcount min = 130 max = 130
+#pragma HLS PIPELINE II=1 rewind off
     t[i] = m[i];
+  }
+  i = mlen;
   t[i] = p;
   t[r - 1] |= 128;
   for (i = 0; i < r / 8; ++i)
+  {
+#pragma HLS loop_tripcount min = 100 max = 100
+#pragma HLS PIPELINE II=1 rewind off
     s[i] ^= load64(t + 8 * i);
+  }
 }
 
 static void keccak_squeezeblocks(unsigned char *h, unsigned long long int nblocks, uint64_t *s, unsigned int r)
 {
   unsigned int i;
+  const unsigned int fixed_r = 136;
 
   while (nblocks > 0)
   {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
     KeccakF1600_StatePermute(s);
-    for (i = 0; i < (r >> 3); i++)
+    for (i = 0; i < (fixed_r >> 3); i++)
     {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
       store64(h + 8 * i, s[i]);
     }
-    h += r;
+    h += fixed_r;
     nblocks--;
   }
 }
@@ -1734,7 +1749,7 @@ void cshake128_simple(unsigned char *output, unsigned long long outlen, uint16_t
 
 
   cshake128_simple_absorb(s, cstm, in, inlen);
-# 520 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sha3/fips202.c"
+# 535 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sha3/fips202.c"
   keccak_squeezeblocks(output, outlen / 168, s, 168);
   output += (outlen / 168) * 168;
 
@@ -1809,7 +1824,9 @@ void cshake256_simple_absorb(uint64_t s[25], uint16_t cstm, const unsigned char 
   unsigned int i;
 
   for (i = 0; i < 25; i++)
+  {
     s[i] = 0;
+  }
 
 
   sep[0] = 0x01;
@@ -1839,7 +1856,7 @@ void cshake256_simple(unsigned char *output, unsigned long long outlen, uint16_t
   unsigned int i;
 
   cshake256_simple_absorb(s, cstm, in, inlen);
-# 635 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sha3/fips202.c"
+# 652 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sha3/fips202.c"
   keccak_squeezeblocks(output, outlen / 136, s, 136);
   output += (outlen / 136) * 136;
 

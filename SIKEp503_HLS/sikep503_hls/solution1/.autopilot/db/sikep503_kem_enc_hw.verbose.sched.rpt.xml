@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sikep503_kem_enc_hw'" level="0">
-<item name = "Date">Tue May 27 14:16:44 2025
+<item name = "Date">Tue Jun  3 14:11:48 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, no</column>
+<column name="">9908965, 29475843000, 99.090 ms, 294.758 sec, 9908966, 29475843001, no</column>
 </table>
 </item>
 <item name = "Detail">

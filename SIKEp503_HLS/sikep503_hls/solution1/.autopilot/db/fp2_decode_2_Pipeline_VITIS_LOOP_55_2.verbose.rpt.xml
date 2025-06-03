@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2_decode_2_Pipeline_VITIS_LOOP_55_2'" level="0">
-<item name = "Date">Tue May 27 14:19:32 2025
+<item name = "Date">Tue Jun  3 14:14:35 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -115,7 +115,7 @@
 <column name="ap_sig_allocacmp_i">9, 2, 6, 12</column>
 <column name="gmem_blk_n_AR">9, 2, 1, 2</column>
 <column name="gmem_blk_n_R">9, 2, 1, 2</column>
-<column name="i_243_fu_82">9, 2, 6, 12</column>
+<column name="i_245_fu_82">9, 2, 6, 12</column>
 <column name="m_axi_gmem_0_ARADDR">14, 3, 64, 192</column>
 </table>
 </item>
@@ -139,11 +139,11 @@
 <column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter4_reg">1, 0, 1, 0</column>
-<column name="gmem_addr_1_read_reg_411">8, 0, 8, 0</column>
-<column name="gmem_addr_1_reg_389">64, 0, 64, 0</column>
+<column name="gmem_addr_3_read_reg_411">8, 0, 8, 0</column>
+<column name="gmem_addr_3_reg_389">64, 0, 64, 0</column>
 <column name="gmem_addr_read_reg_395">8, 0, 8, 0</column>
 <column name="gmem_addr_reg_383">64, 0, 64, 0</column>
-<column name="i_243_fu_82">6, 0, 6, 0</column>
+<column name="i_245_fu_82">6, 0, 6, 0</column>
 <column name="i_reg_371">6, 0, 6, 0</column>
 <column name="icmp_ln55_reg_379">1, 0, 1, 0</column>
 <column name="idx_cast_cast_reg_366">8, 0, 64, 56</column>

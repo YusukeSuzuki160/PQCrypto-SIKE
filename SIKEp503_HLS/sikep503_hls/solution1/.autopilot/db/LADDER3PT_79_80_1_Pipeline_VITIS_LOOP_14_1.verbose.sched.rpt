@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_79_80_1_Pipeline_VITIS_LOOP_14_1'
 ================================================================
-* Date:           Tue May 27 14:11:25 2025
+* Date:           Tue Jun  3 12:28:41 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -125,13 +125,13 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln12', src/fpx.c:12->src/ec_isogeny.c:303) of constant 0 on local variable 'i', src/fpx.c:12->src/ec_isogeny.c:303 [5]  (1.588 ns)
 	'load' operation 4 bit ('i', src/fpx.c:14->src/ec_isogeny.c:303) on local variable 'i', src/fpx.c:12->src/ec_isogeny.c:303 [8]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln14', src/fpx.c:14->src/ec_isogeny.c:303) [9]  (1.735 ns)
+	'add' operation 4 bit ('add_ln14', src/fpx.c:14->src/ec_isogeny.c:303) [10]  (1.735 ns)
 	'store' operation 0 bit ('store_ln12', src/fpx.c:12->src/ec_isogeny.c:303) of variable 'add_ln14', src/fpx.c:14->src/ec_isogeny.c:303 on local variable 'i', src/fpx.c:12->src/ec_isogeny.c:303 [32]  (1.588 ns)
 
  <State 2>: 4.644ns
 The critical path consists of the following:
 	'load' operation 64 bit ('Montgomery_one_1_load', src/fpx.c:15->src/ec_isogeny.c:303) on array 'Montgomery_one_1' [23]  (2.322 ns)
-	'store' operation 0 bit ('store_ln15', src/fpx.c:15->src/ec_isogeny.c:303) of variable 'Montgomery_one_1_load', src/fpx.c:15->src/ec_isogeny.c:303 on array 'A24_1' [29]  (2.322 ns)
+	'store' operation 0 bit ('store_ln15', src/fpx.c:15->src/ec_isogeny.c:303) of variable 'Montgomery_one_1_load', src/fpx.c:15->src/ec_isogeny.c:303 on array 'A24' [26]  (2.322 ns)
 
 
 ============================================================

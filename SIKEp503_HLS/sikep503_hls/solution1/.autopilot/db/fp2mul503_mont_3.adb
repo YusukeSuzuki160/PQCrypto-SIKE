@@ -1262,7 +1262,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32ns_32ns_64_2_1_U1311</rtlName>
+              <rtlName>mul_32ns_32ns_64_2_1_U1310</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1324,7 +1324,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32ns_32ns_64_2_1_U1312</rtlName>
+              <rtlName>mul_32ns_32ns_64_2_1_U1311</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1355,7 +1355,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32ns_32ns_64_2_1_U1314</rtlName>
+              <rtlName>mul_32ns_32ns_64_2_1_U1313</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2665,6 +2665,25 @@
           </second>
         </item>
         <item>
+          <first>mul_32ns_32ns_64_2_1_U1310 (mul_32ns_32ns_64_2_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>165</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>50</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>mul_32ns_32ns_64_2_1_U1311 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
@@ -2704,25 +2723,6 @@
         </item>
         <item>
           <first>mul_32ns_32ns_64_2_1_U1313 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>165</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>50</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U1314 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4468,6 +4468,13 @@
           </second>
         </item>
         <item>
+          <first>mul_32ns_32ns_64_2_1_U1310</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
           <first>mul_32ns_32ns_64_2_1_U1311</first>
           <second>
             <count>0</count>
@@ -4483,13 +4490,6 @@
         </item>
         <item>
           <first>mul_32ns_32ns_64_2_1_U1313</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U1314</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4588,7 +4588,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1311 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1310 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4598,7 +4598,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1312 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1311 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4608,7 +4608,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1313 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1312 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4618,7 +4618,7 @@
           </second>
         </item>
         <item>
-          <first>mul_32ns_32ns_64_2_1_U1314 (mul_32ns_32ns_64_2_1)</first>
+          <first>mul_32ns_32ns_64_2_1_U1313 (mul_32ns_32ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>

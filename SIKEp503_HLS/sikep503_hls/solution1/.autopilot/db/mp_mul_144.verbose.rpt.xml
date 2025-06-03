@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mp_mul_144'" level="0">
-<item name = "Date">Tue May 27 14:19:21 2025
+<item name = "Date">Tue Jun  3 14:14:24 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -67,10 +67,10 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_mp_mul_144_Pipeline_VITIS_LOOP_145_2_fu_126">mp_mul_144_Pipeline_VITIS_LOOP_145_2, 0, 0, 1178, 1426, 0</column>
 <column name="grp_mp_mul_144_Pipeline_VITIS_LOOP_159_4_fu_142">mp_mul_144_Pipeline_VITIS_LOOP_159_4, 0, 0, 1181, 1419, 0</column>
+<column name="mul_32ns_32ns_64_2_1_U2458">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 <column name="mul_32ns_32ns_64_2_1_U2459">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 <column name="mul_32ns_32ns_64_2_1_U2460">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 <column name="mul_32ns_32ns_64_2_1_U2461">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
-<column name="mul_32ns_32ns_64_2_1_U2462">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -116,7 +116,7 @@
 <column name="grp_fu_478_ce">14, 3, 1, 3</column>
 <column name="grp_fu_478_p0">14, 3, 32, 96</column>
 <column name="grp_fu_478_p1">14, 3, 32, 96</column>
-<column name="i_25_fu_86">9, 2, 4, 8</column>
+<column name="i_27_fu_86">9, 2, 4, 8</column>
 <column name="i_fu_50">9, 2, 4, 8</column>
 <column name="indvars_iv31_fu_46">9, 2, 4, 8</column>
 <column name="indvars_iv_fu_82">9, 2, 4, 8</column>
@@ -131,9 +131,9 @@
 <column name="ap_CS_fsm">9, 0, 9, 0</column>
 <column name="grp_mp_mul_144_Pipeline_VITIS_LOOP_145_2_fu_126_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_mp_mul_144_Pipeline_VITIS_LOOP_159_4_fu_142_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_25_fu_86">4, 0, 4, 0</column>
-<column name="i_71_reg_382">4, 0, 4, 0</column>
-<column name="i_72_reg_439">4, 0, 4, 0</column>
+<column name="i_27_fu_86">4, 0, 4, 0</column>
+<column name="i_74_reg_382">4, 0, 4, 0</column>
+<column name="i_75_reg_439">4, 0, 4, 0</column>
 <column name="i_fu_50">4, 0, 4, 0</column>
 <column name="indvars_iv31_fu_46">4, 0, 4, 0</column>
 <column name="indvars_iv31_load_reg_429">4, 0, 4, 0</column>

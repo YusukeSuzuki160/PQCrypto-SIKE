@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_2_Pipeline_3'
 ================================================================
-* Date:           Tue May 27 14:19:33 2025
+* Date:           Tue Jun  3 14:14:36 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -85,7 +85,7 @@
     +--------------------------+----------+----+---+----+------------+------------+
     |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------------+----------+----+---+----+------------+------------+
-    |empty_174_fu_56_p2        |         +|   0|  0|  13|           5|           1|
+    |empty_181_fu_56_p2        |         +|   0|  0|  13|           5|           1|
     |exitcond_i_i_i3_fu_50_p2  |      icmp|   0|  0|  14|           5|           6|
     +--------------------------+----------+----+---+----+------------+------------+
     |Total                     |          |   0|  0|  27|          10|           7|
@@ -128,9 +128,9 @@
 |ap_done           |  out|    1|  ap_ctrl_hs|  fp2_decode.2_Pipeline_3|  return value|
 |ap_idle           |  out|    1|  ap_ctrl_hs|  fp2_decode.2_Pipeline_3|  return value|
 |ap_ready          |  out|    1|  ap_ctrl_hs|  fp2_decode.2_Pipeline_3|  return value|
-|temp_71_address0  |  out|    4|   ap_memory|                  temp_71|         array|
-|temp_71_ce0       |  out|    1|   ap_memory|                  temp_71|         array|
-|temp_71_we0       |  out|    1|   ap_memory|                  temp_71|         array|
-|temp_71_d0        |  out|   64|   ap_memory|                  temp_71|         array|
+|temp_74_address0  |  out|    4|   ap_memory|                  temp_74|         array|
+|temp_74_ce0       |  out|    1|   ap_memory|                  temp_74|         array|
+|temp_74_we0       |  out|    1|   ap_memory|                  temp_74|         array|
+|temp_74_d0        |  out|   64|   ap_memory|                  temp_74|         array|
 +------------------+-----+-----+------------+-------------------------+--------------+
 

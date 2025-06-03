@@ -119,10 +119,10 @@
 
 <Node id="5" bw="4" op_0_bw="32">
 <![CDATA[
-entry:0 %i_11 = alloca i32 1
+entry:0 %i_13 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_11"/></StgValue>
+<StgValue><ssdm name="i_13"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -329,7 +329,7 @@ entry:16 %store_ln180 = store i64 0, i64 %u_024
 
 <Node id="22" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-entry:17 %store_ln179 = store i4 0, i4 %i_11
+entry:17 %store_ln179 = store i4 0, i4 %i_13
 
 ]]></Node>
 <StgValue><ssdm name="store_ln179"/></StgValue>
@@ -425,7 +425,7 @@ entry:18 %br_ln186 = br void %VITIS_LOOP_187_3
 
 <Node id="25" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_187_3:0 %i = load i4 %i_11
+VITIS_LOOP_187_3:0 %i = load i4 %i_13
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -580,7 +580,7 @@ VITIS_LOOP_187_3.split:10 %call_ln186 = call void @rdc_mont.139_Pipeline_VITIS_L
 
 <Node id="67" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_187_3.split:35 %store_ln179 = store i4 %add_ln186, i4 %i_11
+VITIS_LOOP_187_3.split:35 %store_ln179 = store i4 %add_ln186, i4 %i_13
 
 ]]></Node>
 <StgValue><ssdm name="store_ln179"/></StgValue>
@@ -660,10 +660,10 @@ for.body56.preheader:3 %indvars_iv = alloca i32 1
 
 <Node id="74" bw="4" op_0_bw="32">
 <![CDATA[
-for.body56.preheader:4 %i_12 = alloca i32 1
+for.body56.preheader:4 %i_14 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_12"/></StgValue>
+<StgValue><ssdm name="i_14"/></StgValue>
 </operation>
 
 <operation id="52" st_id="3" stage="1" lat="1">
@@ -676,7 +676,7 @@ for.body56.preheader:4 %i_12 = alloca i32 1
 
 <Node id="75" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.body56.preheader:5 %store_ln179 = store i4 8, i4 %i_12
+for.body56.preheader:5 %store_ln179 = store i4 8, i4 %i_14
 
 ]]></Node>
 <StgValue><ssdm name="store_ln179"/></StgValue>
@@ -1248,7 +1248,7 @@ VITIS_LOOP_187_3.split:6 %speclooptripcount_ln179 = speclooptripcount void @_ssd
 
 <Node id="39" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_187_3.split:7 %specloopname_ln186 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39
+VITIS_LOOP_187_3.split:7 %specloopname_ln186 = specloopname void @_ssdm_op_SpecLoopName, void @empty_27
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln186"/></StgValue>
@@ -1296,10 +1296,10 @@ VITIS_LOOP_187_3.split:36 %br_ln186 = br void %VITIS_LOOP_187_3
 
 <Node id="82" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.body56:0 %i_18 = load i4 %i_12
+for.body56:0 %i_21 = load i4 %i_14
 
 ]]></Node>
-<StgValue><ssdm name="i_18"/></StgValue>
+<StgValue><ssdm name="i_21"/></StgValue>
 </operation>
 
 <operation id="93" st_id="8" stage="1" lat="1">
@@ -1311,7 +1311,7 @@ for.body56:0 %i_18 = load i4 %i_12
 
 <Node id="83" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.body56:1 %icmp_ln204 = icmp_eq  i4 %i_18, i4 15
+for.body56:1 %icmp_ln204 = icmp_eq  i4 %i_21, i4 15
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln204"/></StgValue>
@@ -1422,7 +1422,7 @@ for.body56.split:12 %sub66 = sub i32 8, i32 %count_8
 
 <Node id="125" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.body56.split:39 %add_ln204 = add i4 %i_18, i4 1
+for.body56.split:39 %add_ln204 = add i4 %i_21, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln204"/></StgValue>
@@ -1438,7 +1438,7 @@ for.body56.split:39 %add_ln204 = add i4 %i_18, i4 1
 
 <Node id="127" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body56.split:41 %store_ln179 = store i4 %add_ln204, i4 %i_12
+for.body56.split:41 %store_ln179 = store i4 %add_ln204, i4 %i_14
 
 ]]></Node>
 <StgValue><ssdm name="store_ln179"/></StgValue>
@@ -1564,7 +1564,7 @@ for.body56.split:4 %trunc_ln204 = trunc i4 %indvars_iv_load
 
 <Node id="92" bw="3" op_0_bw="4">
 <![CDATA[
-for.body56.split:6 %trunc_ln204_9 = trunc i4 %i_18
+for.body56.split:6 %trunc_ln204_9 = trunc i4 %i_21
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln204_9"/></StgValue>
@@ -1627,7 +1627,7 @@ for.body56.split:42 %store_ln204 = store i4 %add_ln204_6, i4 %indvars_iv
 
 <Node id="91" bw="64" op_0_bw="4">
 <![CDATA[
-for.body56.split:5 %zext_ln204 = zext i4 %i_18
+for.body56.split:5 %zext_ln204 = zext i4 %i_21
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln204"/></StgValue>
@@ -2086,7 +2086,7 @@ for.body56.split:7 %speclooptripcount_ln179 = speclooptripcount void @_ssdm_op_S
 
 <Node id="94" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body56.split:8 %specloopname_ln204 = specloopname void @_ssdm_op_SpecLoopName, void @empty_97
+for.body56.split:8 %specloopname_ln204 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln204"/></StgValue>

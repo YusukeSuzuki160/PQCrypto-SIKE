@@ -182,7 +182,7 @@ wire    ap_block_pp0_stage1_subdone_grp0;
 reg   [63:0] gmem_addr_reg_291;
 reg    ap_block_pp0_stage1_11001_grp2;
 reg   [63:0] t_i_load_2_reg_297;
-reg   [63:0] gmem_addr_6_reg_302;
+reg   [63:0] gmem_addr_5_reg_302;
 reg    ap_block_pp0_stage1_11001_grp3;
 wire   [63:0] zext_ln44_2_fu_230_p1;
 reg   [63:0] zext_ln44_2_reg_308;
@@ -440,7 +440,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage1_11001_grp3) & (1'b0 == ap_block_pp0_stage1_subdone_grp3_done_reg) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        gmem_addr_6_reg_302 <= add_ln45_1_fu_209_p2;
+        gmem_addr_5_reg_302 <= add_ln45_1_fu_209_p2;
     end
 end
 
@@ -568,7 +568,7 @@ end
 always @ (*) begin
     if ((ap_enable_reg_pp0_iter1 == 1'b1)) begin
         if ((1'b1 == ap_condition_267)) begin
-            m_axi_gmem_0_AWADDR = gmem_addr_6_reg_302;
+            m_axi_gmem_0_AWADDR = gmem_addr_5_reg_302;
         end else if ((1'b1 == ap_condition_485)) begin
             m_axi_gmem_0_AWADDR = gmem_addr_reg_291;
         end else begin

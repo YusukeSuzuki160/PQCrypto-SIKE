@@ -75,11 +75,11 @@ reg    temp_ce0;
 reg    temp_we0;
 reg   [63:0] temp_d0;
 wire   [63:0] temp_q0;
-reg   [3:0] temp_64_address0;
-reg    temp_64_ce0;
-reg    temp_64_we0;
-reg   [63:0] temp_64_d0;
-wire   [63:0] temp_64_q0;
+reg   [3:0] temp_67_address0;
+reg    temp_67_ce0;
+reg    temp_67_we0;
+reg   [63:0] temp_67_d0;
+wire   [63:0] temp_67_q0;
 reg   [2:0] t1_address0;
 reg    t1_ce0;
 reg    t1_we0;
@@ -111,10 +111,10 @@ wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_ap_start;
 wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_ap_done;
 wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_ap_idle;
 wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_ap_ready;
-wire   [3:0] grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_address0;
-wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_ce0;
-wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_we0;
-wire   [63:0] grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_d0;
+wire   [3:0] grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_address0;
+wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_ce0;
+wire    grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_we0;
+wire   [63:0] grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_d0;
 wire    grp_fp2sqr503_mont_136_1_Pipeline_6_fu_84_ap_start;
 wire    grp_fp2sqr503_mont_136_1_Pipeline_6_fu_84_ap_done;
 wire    grp_fp2sqr503_mont_136_1_Pipeline_6_fu_84_ap_idle;
@@ -266,14 +266,14 @@ sikep503_kem_enc_hw_fpsqr503_mont_1_temp_RAM_AUTO_1R1W #(
     .DataWidth( 64 ),
     .AddressRange( 16 ),
     .AddressWidth( 4 ))
-temp_64_U(
+temp_67_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(temp_64_address0),
-    .ce0(temp_64_ce0),
-    .we0(temp_64_we0),
-    .d0(temp_64_d0),
-    .q0(temp_64_q0)
+    .address0(temp_67_address0),
+    .ce0(temp_67_ce0),
+    .we0(temp_67_we0),
+    .d0(temp_67_d0),
+    .q0(temp_67_q0)
 );
 
 sikep503_kem_enc_hw_fp2sqr503_mont_136_1_t1_RAM_AUTO_1R1W #(
@@ -349,10 +349,10 @@ sikep503_kem_enc_hw_fp2sqr503_mont_136_1_Pipeline_5 grp_fp2sqr503_mont_136_1_Pip
     .ap_done(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_ap_done),
     .ap_idle(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_ap_idle),
     .ap_ready(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_ap_ready),
-    .temp_64_address0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_address0),
-    .temp_64_ce0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_ce0),
-    .temp_64_we0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_we0),
-    .temp_64_d0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_d0)
+    .temp_67_address0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_address0),
+    .temp_67_ce0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_ce0),
+    .temp_67_we0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_we0),
+    .temp_67_d0(grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_d0)
 );
 
 sikep503_kem_enc_hw_fp2sqr503_mont_136_1_Pipeline_6 grp_fp2sqr503_mont_136_1_Pipeline_6_fu_84(
@@ -770,7 +770,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
         grp_rdc_mont_138_fu_123_ma_q0 = temp_q0;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        grp_rdc_mont_138_fu_123_ma_q0 = temp_64_q0;
+        grp_rdc_mont_138_fu_123_ma_q0 = temp_67_q0;
     end else begin
         grp_rdc_mont_138_fu_123_ma_q0 = 'bx;
     end
@@ -896,45 +896,45 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
-        temp_64_address0 = grp_rdc_mont_138_fu_123_ma_address0;
+        temp_67_address0 = grp_rdc_mont_138_fu_123_ma_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        temp_64_address0 = grp_mp_mul_152_fu_116_c_address0;
+        temp_67_address0 = grp_mp_mul_152_fu_116_c_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_64_address0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_address0;
+        temp_67_address0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_address0;
     end else begin
-        temp_64_address0 = 'bx;
+        temp_67_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
-        temp_64_ce0 = grp_rdc_mont_138_fu_123_ma_ce0;
+        temp_67_ce0 = grp_rdc_mont_138_fu_123_ma_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        temp_64_ce0 = grp_mp_mul_152_fu_116_c_ce0;
+        temp_67_ce0 = grp_mp_mul_152_fu_116_c_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_64_ce0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_ce0;
+        temp_67_ce0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_ce0;
     end else begin
-        temp_64_ce0 = 1'b0;
+        temp_67_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        temp_64_d0 = grp_mp_mul_152_fu_116_c_d0;
+        temp_67_d0 = grp_mp_mul_152_fu_116_c_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_64_d0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_d0;
+        temp_67_d0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_d0;
     end else begin
-        temp_64_d0 = 'bx;
+        temp_67_d0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        temp_64_we0 = grp_mp_mul_152_fu_116_c_we0;
+        temp_67_we0 = grp_mp_mul_152_fu_116_c_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        temp_64_we0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_64_we0;
+        temp_67_we0 = grp_fp2sqr503_mont_136_1_Pipeline_5_fu_78_temp_67_we0;
     end else begin
-        temp_64_we0 = 1'b0;
+        temp_67_we0 = 1'b0;
     end
 end
 

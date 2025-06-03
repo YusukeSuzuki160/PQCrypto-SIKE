@@ -88,7 +88,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>i_11</name>
+						<name>i_13</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -654,7 +654,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>i_11_read</name>
+						<name>i_13_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4254,7 +4254,7 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>temp_2</name>
+						<name>temp_5</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>130</lineNumber>

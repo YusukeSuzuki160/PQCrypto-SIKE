@@ -582,7 +582,7 @@
               <name>gmem_addr</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -598,7 +598,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -681,7 +681,7 @@
               <name>gmem_addr_read</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -697,7 +697,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -1090,10 +1090,10 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>temp_2_addr_write_ln49</name>
+              <name>temp_2_addr_write_ln48</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1109,7 +1109,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -1189,10 +1189,10 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>temp_1_addr_write_ln49</name>
+              <name>temp_1_addr_write_ln48</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1208,7 +1208,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -1288,10 +1288,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>temp_addr_write_ln49</name>
+              <name>temp_addr_write_ln48</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1307,7 +1307,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -1387,10 +1387,10 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>temp_3_addr_write_ln49</name>
+              <name>temp_3_addr_write_ln48</name>
               <fileName>src/sike.c</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>49</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>crypto_kem_enc</contextFuncName>
               <contextNormFuncName>crypto_kem_enc</contextNormFuncName>
               <inlineStackInfo>
@@ -1406,7 +1406,7 @@
                         <first>src/sike.c</first>
                         <second>crypto_kem_enc</second>
                       </first>
-                      <second>49</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -2231,7 +2231,7 @@
           <Obj>
             <type>3</type>
             <id>48</id>
-            <name>for.end.exitStub</name>
+            <name>memcpy-split1.exitStub</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpinv503_chain_mont_Pipeline_3'
 ================================================================
-* Date:           Tue May 27 14:19:04 2025
+* Date:           Tue Jun  3 14:14:07 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -85,7 +85,7 @@
     +-----------------------+----------+----+---+----+------------+------------+
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
-    |empty_138_fu_56_p2     |         +|   0|  0|  13|           5|           1|
+    |empty_145_fu_56_p2     |         +|   0|  0|  13|           5|           1|
     |exitcond1_i7_fu_50_p2  |      icmp|   0|  0|  14|           5|           6|
     +-----------------------+----------+----+---+----+------------+------------+
     |Total                  |          |   0|  0|  27|          10|           7|
@@ -128,9 +128,9 @@
 |ap_done            |  out|    1|  ap_ctrl_hs|  fpinv503_chain_mont_Pipeline_3|  return value|
 |ap_idle            |  out|    1|  ap_ctrl_hs|  fpinv503_chain_mont_Pipeline_3|  return value|
 |ap_ready           |  out|    1|  ap_ctrl_hs|  fpinv503_chain_mont_Pipeline_3|  return value|
-|temp_138_address0  |  out|    4|   ap_memory|                        temp_138|         array|
-|temp_138_ce0       |  out|    1|   ap_memory|                        temp_138|         array|
-|temp_138_we0       |  out|    1|   ap_memory|                        temp_138|         array|
-|temp_138_d0        |  out|   64|   ap_memory|                        temp_138|         array|
+|temp_141_address0  |  out|    4|   ap_memory|                        temp_141|         array|
+|temp_141_ce0       |  out|    1|   ap_memory|                        temp_141|         array|
+|temp_141_we0       |  out|    1|   ap_memory|                        temp_141|         array|
+|temp_141_d0        |  out|   64|   ap_memory|                        temp_141|         array|
 +-------------------+-----+-----+------------+--------------------------------+--------------+
 

@@ -354,7 +354,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>i_303</name>
+						<name>i_301</name>
 						<fileName>src/fpx.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -2503,7 +2503,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_303_load_fu_78</first>
+			<first>i_301_load_fu_78</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2614,7 +2614,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_303_reg_126</first>
+			<first>i_301_reg_126</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_1_Pipeline_VITIS_LOOP_55_2'
 ================================================================
-* Date:           Tue May 27 14:19:28 2025
+* Date:           Tue Jun  3 14:14:31 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -121,7 +121,7 @@
     |ap_sig_allocacmp_i       |   9|          2|    6|         12|
     |gmem_blk_n_AR            |   9|          2|    1|          2|
     |gmem_blk_n_R             |   9|          2|    1|          2|
-    |i_244_fu_72              |   9|          2|    6|         12|
+    |i_246_fu_72              |   9|          2|    6|         12|
     |m_axi_gmem_0_ARADDR      |  14|          3|   64|        192|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    | 133|         29|  160|        463|
@@ -149,11 +149,11 @@
     |ap_loop_exit_ready_pp0_iter2_reg           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter3_reg           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter4_reg           |   1|   0|    1|          0|
-    |gmem_addr_2_read_reg_310                   |   8|   0|    8|          0|
-    |gmem_addr_2_reg_284                        |  64|   0|   64|          0|
+    |gmem_addr_4_read_reg_310                   |   8|   0|    8|          0|
+    |gmem_addr_4_reg_284                        |  64|   0|   64|          0|
     |gmem_addr_read_reg_290                     |   8|   0|    8|          0|
     |gmem_addr_reg_278                          |  64|   0|   64|          0|
-    |i_244_fu_72                                |   6|   0|    6|          0|
+    |i_246_fu_72                                |   6|   0|    6|          0|
     |i_reg_266                                  |   6|   0|    6|          0|
     |icmp_ln55_reg_274                          |   1|   0|    1|          0|
     |lshr_ln_reg_305                            |   3|   0|    3|          0|

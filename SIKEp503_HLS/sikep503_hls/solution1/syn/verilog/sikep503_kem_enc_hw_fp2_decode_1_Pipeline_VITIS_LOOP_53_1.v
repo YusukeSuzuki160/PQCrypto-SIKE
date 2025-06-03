@@ -45,7 +45,7 @@ wire   [63:0] zext_ln54_4_fu_99_p1;
 reg   [7:0] i_fu_38;
 wire   [7:0] add_ln53_fu_68_p2;
 wire    ap_loop_init;
-reg   [7:0] ap_sig_allocacmp_i_274;
+reg   [7:0] ap_sig_allocacmp_i_276;
 reg    PKB_ce0_local;
 reg   [7:0] PKB_we0_local;
 wire   [7:0] shl_ln54_fu_82_p2;
@@ -172,9 +172,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_274 = 8'd0;
+        ap_sig_allocacmp_i_276 = 8'd0;
     end else begin
-        ap_sig_allocacmp_i_274 = i_fu_38;
+        ap_sig_allocacmp_i_276 = i_fu_38;
     end
 end
 
@@ -197,7 +197,7 @@ assign PKB_d0 = 64'd0;
 
 assign PKB_we0 = PKB_we0_local;
 
-assign add_ln53_fu_68_p2 = (ap_sig_allocacmp_i_274 + 8'd1);
+assign add_ln53_fu_68_p2 = (ap_sig_allocacmp_i_276 + 8'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -211,13 +211,13 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln53_fu_62_p2 = ((ap_sig_allocacmp_i_274 == 8'd128) ? 1'b1 : 1'b0);
+assign icmp_ln53_fu_62_p2 = ((ap_sig_allocacmp_i_276 == 8'd128) ? 1'b1 : 1'b0);
 
-assign lshr_ln_fu_89_p4 = {{ap_sig_allocacmp_i_274[6:3]}};
+assign lshr_ln_fu_89_p4 = {{ap_sig_allocacmp_i_276[6:3]}};
 
 assign shl_ln54_fu_82_p2 = 8'd1 << zext_ln54_fu_78_p1;
 
-assign trunc_ln54_fu_74_p1 = ap_sig_allocacmp_i_274[2:0];
+assign trunc_ln54_fu_74_p1 = ap_sig_allocacmp_i_276[2:0];
 
 assign zext_ln54_4_fu_99_p1 = lshr_ln_fu_89_p4;
 

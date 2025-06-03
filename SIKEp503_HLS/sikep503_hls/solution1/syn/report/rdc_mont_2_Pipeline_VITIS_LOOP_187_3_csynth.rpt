@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_2_Pipeline_VITIS_LOOP_187_3'
 ================================================================
-* Date:           Tue May 27 14:17:47 2025
+* Date:           Tue Jun  3 14:12:50 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -98,7 +98,7 @@
     |add_ln191_fu_474_p2     |         +|   0|  0|  71|          64|          64|
     |t_14_fu_660_p2          |         +|   0|  0|  71|          64|          64|
     |tempReg_10_fu_544_p2    |         +|   0|  0|  71|          64|          64|
-    |temp_10_fu_433_p2       |         +|   0|  0|  41|          34|          34|
+    |temp_13_fu_433_p2       |         +|   0|  0|  41|          34|          34|
     |temp_fu_386_p2          |         +|   0|  0|  41|          34|          34|
     |u_35_fu_564_p2          |         +|   0|  0|  71|          64|          64|
     |v_39_fu_502_p2          |         +|   0|  0|  71|          64|          64|
@@ -234,7 +234,7 @@
 |grp_fu_855_p_ce     |  out|    1|  ap_ctrl_hs|  rdc_mont.2_Pipeline_VITIS_LOOP_187_3|  return value|
 |v_025               |   in|   64|     ap_none|                                 v_025|        scalar|
 |u_024               |   in|   64|     ap_none|                                 u_024|        scalar|
-|i_7                 |   in|    3|     ap_none|                                   i_7|        scalar|
+|i_9                 |   in|    3|     ap_none|                                   i_9|        scalar|
 |add_ln187           |   in|    4|     ap_none|                             add_ln187|        scalar|
 |R_Z_address0        |  out|    4|   ap_memory|                                   R_Z|         array|
 |R_Z_ce0             |  out|    1|   ap_memory|                                   R_Z|         array|

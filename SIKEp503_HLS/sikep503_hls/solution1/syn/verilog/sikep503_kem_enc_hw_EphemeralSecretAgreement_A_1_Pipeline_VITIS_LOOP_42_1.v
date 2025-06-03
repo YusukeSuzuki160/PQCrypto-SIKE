@@ -13,20 +13,28 @@ module sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1_Pipeline_VITIS_LOOP_42_1
         ap_done,
         ap_idle,
         ap_ready,
+        SharedSecretA_3_address0,
+        SharedSecretA_3_ce0,
+        SharedSecretA_3_we0,
+        SharedSecretA_3_d0,
+        SharedSecretA_2_address0,
+        SharedSecretA_2_ce0,
+        SharedSecretA_2_we0,
+        SharedSecretA_2_d0,
+        SharedSecretA_1_address0,
+        SharedSecretA_1_ce0,
+        SharedSecretA_1_we0,
+        SharedSecretA_1_d0,
+        SharedSecretA_0_address0,
+        SharedSecretA_0_ce0,
+        SharedSecretA_0_we0,
+        SharedSecretA_0_d0,
         t_i_address0,
         t_i_ce0,
         t_i_q0,
         t_i_address1,
         t_i_ce1,
-        t_i_q1,
-        SharedSecretA_address0,
-        SharedSecretA_ce0,
-        SharedSecretA_we0,
-        SharedSecretA_d0,
-        SharedSecretA_address1,
-        SharedSecretA_ce1,
-        SharedSecretA_we1,
-        SharedSecretA_d1
+        t_i_q1
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -37,20 +45,28 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
+output  [4:0] SharedSecretA_3_address0;
+output   SharedSecretA_3_ce0;
+output   SharedSecretA_3_we0;
+output  [7:0] SharedSecretA_3_d0;
+output  [4:0] SharedSecretA_2_address0;
+output   SharedSecretA_2_ce0;
+output   SharedSecretA_2_we0;
+output  [7:0] SharedSecretA_2_d0;
+output  [4:0] SharedSecretA_1_address0;
+output   SharedSecretA_1_ce0;
+output   SharedSecretA_1_we0;
+output  [7:0] SharedSecretA_1_d0;
+output  [4:0] SharedSecretA_0_address0;
+output   SharedSecretA_0_ce0;
+output   SharedSecretA_0_we0;
+output  [7:0] SharedSecretA_0_d0;
 output  [3:0] t_i_address0;
 output   t_i_ce0;
 input  [63:0] t_i_q0;
 output  [3:0] t_i_address1;
 output   t_i_ce1;
 input  [63:0] t_i_q1;
-output  [6:0] SharedSecretA_address0;
-output   SharedSecretA_ce0;
-output   SharedSecretA_we0;
-output  [7:0] SharedSecretA_d0;
-output  [6:0] SharedSecretA_address1;
-output   SharedSecretA_ce1;
-output   SharedSecretA_we1;
-output  [7:0] SharedSecretA_d1;
 
 reg ap_idle;
 
@@ -61,40 +77,57 @@ reg    ap_enable_reg_pp0_iter1;
 reg    ap_enable_reg_pp0_iter2;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln42_fu_106_p2;
+wire   [0:0] icmp_ln42_fu_185_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [5:0] i_289_reg_205;
+reg   [5:0] i_286_reg_320;
 wire    ap_block_pp0_stage0_11001;
-reg   [5:0] i_289_reg_205_pp0_iter1_reg;
-reg   [63:0] t_i_load_reg_226;
-reg   [63:0] t_i_load_1_reg_231;
-wire   [63:0] zext_ln44_fu_128_p1;
+reg   [5:0] i_286_reg_320_pp0_iter1_reg;
+wire   [1:0] trunc_ln42_fu_197_p1;
+reg   [1:0] trunc_ln42_reg_331;
+reg   [1:0] trunc_ln42_reg_331_pp0_iter1_reg;
+reg   [63:0] t_i_load_reg_345;
+reg   [63:0] t_i_load_1_reg_350;
+wire   [63:0] zext_ln44_fu_211_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln45_fu_141_p1;
-wire   [63:0] zext_ln42_fu_151_p1;
-wire   [63:0] zext_ln45_1_fu_193_p1;
-reg   [5:0] i_fu_44;
-wire   [5:0] add_ln42_fu_112_p2;
+wire   [63:0] zext_ln45_fu_224_p1;
+wire   [63:0] zext_ln38_fu_246_p1;
+wire   [63:0] zext_ln45_1_fu_305_p1;
+reg   [5:0] i_fu_64;
+wire   [5:0] add_ln42_fu_191_p2;
 wire    ap_loop_init;
-reg   [5:0] ap_sig_allocacmp_i_289;
+reg   [5:0] ap_sig_allocacmp_i_286;
 reg    t_i_ce1_local;
 reg    t_i_ce0_local;
-reg    SharedSecretA_we1_local;
-wire   [7:0] trunc_ln44_fu_172_p1;
-reg    SharedSecretA_ce1_local;
-reg    SharedSecretA_we0_local;
-wire   [7:0] trunc_ln45_fu_182_p1;
-reg    SharedSecretA_ce0_local;
-wire   [2:0] lshr_ln44_fu_118_p4;
-wire   [3:0] zext_ln_fu_133_p3;
-wire   [5:0] shl_ln44_fu_158_p2;
-wire   [63:0] zext_ln44_1_fu_163_p1;
-wire   [63:0] lshr_ln44_1_fu_167_p2;
-wire   [63:0] lshr_ln45_fu_177_p2;
-wire   [6:0] zext_ln42_1_fu_155_p1;
-wire   [6:0] add_ln45_fu_187_p2;
+reg    SharedSecretA_2_we0_local;
+reg   [7:0] SharedSecretA_2_d0_local;
+wire   [7:0] trunc_ln44_fu_268_p1;
+reg    SharedSecretA_2_ce0_local;
+reg   [4:0] SharedSecretA_2_address0_local;
+wire   [7:0] trunc_ln45_fu_281_p1;
+reg    SharedSecretA_1_we0_local;
+reg   [7:0] SharedSecretA_1_d0_local;
+reg    SharedSecretA_1_ce0_local;
+reg   [4:0] SharedSecretA_1_address0_local;
+reg    SharedSecretA_0_we0_local;
+reg   [7:0] SharedSecretA_0_d0_local;
+reg    SharedSecretA_0_ce0_local;
+reg   [4:0] SharedSecretA_0_address0_local;
+reg    SharedSecretA_3_we0_local;
+reg   [7:0] SharedSecretA_3_d0_local;
+reg    SharedSecretA_3_ce0_local;
+reg   [4:0] SharedSecretA_3_address0_local;
+wire   [2:0] lshr_ln44_fu_201_p4;
+wire   [3:0] zext_ln_fu_216_p3;
+wire   [3:0] lshr_ln38_fu_237_p4;
+wire   [5:0] shl_ln44_fu_254_p2;
+wire   [63:0] zext_ln44_1_fu_259_p1;
+wire   [63:0] lshr_ln44_1_fu_263_p2;
+wire   [63:0] lshr_ln45_fu_276_p2;
+wire   [6:0] zext_ln42_fu_234_p1;
+wire   [6:0] add_ln45_fu_289_p2;
+wire   [4:0] lshr_ln45_2_fu_295_p4;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -111,7 +144,7 @@ initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter2 = 1'b0;
-#0 i_fu_44 = 6'd0;
+#0 i_fu_64 = 6'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -174,10 +207,10 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln42_fu_106_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_fu_44 <= add_ln42_fu_112_p2;
+        if (((icmp_ln42_fu_185_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_fu_64 <= add_ln42_fu_191_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_44 <= 6'd0;
+            i_fu_64 <= 6'd0;
         end
     end
 end
@@ -185,52 +218,198 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-        i_289_reg_205 <= ap_sig_allocacmp_i_289;
-        i_289_reg_205_pp0_iter1_reg <= i_289_reg_205;
+        i_286_reg_320 <= ap_sig_allocacmp_i_286;
+        i_286_reg_320_pp0_iter1_reg <= i_286_reg_320;
+        trunc_ln42_reg_331 <= trunc_ln42_fu_197_p1;
+        trunc_ln42_reg_331_pp0_iter1_reg <= trunc_ln42_reg_331;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        t_i_load_1_reg_231 <= t_i_q0;
-        t_i_load_reg_226 <= t_i_q1;
+        t_i_load_1_reg_350 <= t_i_q0;
+        t_i_load_reg_345 <= t_i_q1;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
-        SharedSecretA_ce0_local = 1'b1;
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0)) begin
+            SharedSecretA_0_address0_local = zext_ln38_fu_246_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1)) begin
+            SharedSecretA_0_address0_local = zext_ln45_1_fu_305_p1;
+        end else begin
+            SharedSecretA_0_address0_local = 'bx;
+        end
     end else begin
-        SharedSecretA_ce0_local = 1'b0;
+        SharedSecretA_0_address0_local = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
-        SharedSecretA_ce1_local = 1'b1;
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_0_ce0_local = 1'b1;
     end else begin
-        SharedSecretA_ce1_local = 1'b0;
+        SharedSecretA_0_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
-        SharedSecretA_we0_local = 1'b1;
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0)) begin
+            SharedSecretA_0_d0_local = trunc_ln44_fu_268_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1)) begin
+            SharedSecretA_0_d0_local = trunc_ln45_fu_281_p1;
+        end else begin
+            SharedSecretA_0_d0_local = 'bx;
+        end
     end else begin
-        SharedSecretA_we0_local = 1'b0;
+        SharedSecretA_0_d0_local = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
-        SharedSecretA_we1_local = 1'b1;
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_0_we0_local = 1'b1;
     end else begin
-        SharedSecretA_we1_local = 1'b0;
+        SharedSecretA_0_we0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln42_fu_106_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1)) begin
+            SharedSecretA_1_address0_local = zext_ln38_fu_246_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2)) begin
+            SharedSecretA_1_address0_local = zext_ln45_1_fu_305_p1;
+        end else begin
+            SharedSecretA_1_address0_local = 'bx;
+        end
+    end else begin
+        SharedSecretA_1_address0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_1_ce0_local = 1'b1;
+    end else begin
+        SharedSecretA_1_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1)) begin
+            SharedSecretA_1_d0_local = trunc_ln44_fu_268_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2)) begin
+            SharedSecretA_1_d0_local = trunc_ln45_fu_281_p1;
+        end else begin
+            SharedSecretA_1_d0_local = 'bx;
+        end
+    end else begin
+        SharedSecretA_1_d0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_1_we0_local = 1'b1;
+    end else begin
+        SharedSecretA_1_we0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3)) begin
+            SharedSecretA_2_address0_local = zext_ln45_1_fu_305_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2)) begin
+            SharedSecretA_2_address0_local = zext_ln38_fu_246_p1;
+        end else begin
+            SharedSecretA_2_address0_local = 'bx;
+        end
+    end else begin
+        SharedSecretA_2_address0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_2_ce0_local = 1'b1;
+    end else begin
+        SharedSecretA_2_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3)) begin
+            SharedSecretA_2_d0_local = trunc_ln45_fu_281_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2)) begin
+            SharedSecretA_2_d0_local = trunc_ln44_fu_268_p1;
+        end else begin
+            SharedSecretA_2_d0_local = 'bx;
+        end
+    end else begin
+        SharedSecretA_2_d0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_2_we0_local = 1'b1;
+    end else begin
+        SharedSecretA_2_we0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3)) begin
+            SharedSecretA_3_address0_local = zext_ln38_fu_246_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0)) begin
+            SharedSecretA_3_address0_local = zext_ln45_1_fu_305_p1;
+        end else begin
+            SharedSecretA_3_address0_local = 'bx;
+        end
+    end else begin
+        SharedSecretA_3_address0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_3_ce0_local = 1'b1;
+    end else begin
+        SharedSecretA_3_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+        if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3)) begin
+            SharedSecretA_3_d0_local = trunc_ln44_fu_268_p1;
+        end else if ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0)) begin
+            SharedSecretA_3_d0_local = trunc_ln45_fu_281_p1;
+        end else begin
+            SharedSecretA_3_d0_local = 'bx;
+        end
+    end else begin
+        SharedSecretA_3_d0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((trunc_ln42_reg_331_pp0_iter1_reg == 2'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((trunc_ln42_reg_331_pp0_iter1_reg == 2'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        SharedSecretA_3_we0_local = 1'b1;
+    end else begin
+        SharedSecretA_3_we0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((icmp_ln42_fu_185_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -246,7 +425,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_idle_pp0 == 1'b1) & (ap_start_int == 1'b0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((ap_start_int == 1'b0) & (ap_idle_pp0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -271,9 +450,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_289 = 6'd0;
+        ap_sig_allocacmp_i_286 = 6'd0;
     end else begin
-        ap_sig_allocacmp_i_289 = i_fu_44;
+        ap_sig_allocacmp_i_286 = i_fu_64;
     end
 end
 
@@ -304,25 +483,41 @@ always @ (*) begin
     endcase
 end
 
-assign SharedSecretA_address0 = zext_ln45_1_fu_193_p1;
+assign SharedSecretA_0_address0 = SharedSecretA_0_address0_local;
 
-assign SharedSecretA_address1 = zext_ln42_fu_151_p1;
+assign SharedSecretA_0_ce0 = SharedSecretA_0_ce0_local;
 
-assign SharedSecretA_ce0 = SharedSecretA_ce0_local;
+assign SharedSecretA_0_d0 = SharedSecretA_0_d0_local;
 
-assign SharedSecretA_ce1 = SharedSecretA_ce1_local;
+assign SharedSecretA_0_we0 = SharedSecretA_0_we0_local;
 
-assign SharedSecretA_d0 = trunc_ln45_fu_182_p1;
+assign SharedSecretA_1_address0 = SharedSecretA_1_address0_local;
 
-assign SharedSecretA_d1 = trunc_ln44_fu_172_p1;
+assign SharedSecretA_1_ce0 = SharedSecretA_1_ce0_local;
 
-assign SharedSecretA_we0 = SharedSecretA_we0_local;
+assign SharedSecretA_1_d0 = SharedSecretA_1_d0_local;
 
-assign SharedSecretA_we1 = SharedSecretA_we1_local;
+assign SharedSecretA_1_we0 = SharedSecretA_1_we0_local;
 
-assign add_ln42_fu_112_p2 = (ap_sig_allocacmp_i_289 + 6'd1);
+assign SharedSecretA_2_address0 = SharedSecretA_2_address0_local;
 
-assign add_ln45_fu_187_p2 = (zext_ln42_1_fu_155_p1 + 7'd63);
+assign SharedSecretA_2_ce0 = SharedSecretA_2_ce0_local;
+
+assign SharedSecretA_2_d0 = SharedSecretA_2_d0_local;
+
+assign SharedSecretA_2_we0 = SharedSecretA_2_we0_local;
+
+assign SharedSecretA_3_address0 = SharedSecretA_3_address0_local;
+
+assign SharedSecretA_3_ce0 = SharedSecretA_3_ce0_local;
+
+assign SharedSecretA_3_d0 = SharedSecretA_3_d0_local;
+
+assign SharedSecretA_3_we0 = SharedSecretA_3_we0_local;
+
+assign add_ln42_fu_191_p2 = (ap_sig_allocacmp_i_286 + 6'd1);
+
+assign add_ln45_fu_289_p2 = (zext_ln42_fu_234_p1 + 7'd63);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -342,40 +537,46 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln42_fu_106_p2 = ((ap_sig_allocacmp_i_289 == 6'd63) ? 1'b1 : 1'b0);
+assign icmp_ln42_fu_185_p2 = ((ap_sig_allocacmp_i_286 == 6'd63) ? 1'b1 : 1'b0);
 
-assign lshr_ln44_1_fu_167_p2 = t_i_load_reg_226 >> zext_ln44_1_fu_163_p1;
+assign lshr_ln38_fu_237_p4 = {{i_286_reg_320_pp0_iter1_reg[5:2]}};
 
-assign lshr_ln44_fu_118_p4 = {{ap_sig_allocacmp_i_289[5:3]}};
+assign lshr_ln44_1_fu_263_p2 = t_i_load_reg_345 >> zext_ln44_1_fu_259_p1;
 
-assign lshr_ln45_fu_177_p2 = t_i_load_1_reg_231 >> zext_ln44_1_fu_163_p1;
+assign lshr_ln44_fu_201_p4 = {{ap_sig_allocacmp_i_286[5:3]}};
 
-assign shl_ln44_fu_158_p2 = i_289_reg_205_pp0_iter1_reg << 6'd3;
+assign lshr_ln45_2_fu_295_p4 = {{add_ln45_fu_289_p2[6:2]}};
 
-assign t_i_address0 = zext_ln45_fu_141_p1;
+assign lshr_ln45_fu_276_p2 = t_i_load_1_reg_350 >> zext_ln44_1_fu_259_p1;
 
-assign t_i_address1 = zext_ln44_fu_128_p1;
+assign shl_ln44_fu_254_p2 = i_286_reg_320_pp0_iter1_reg << 6'd3;
+
+assign t_i_address0 = zext_ln45_fu_224_p1;
+
+assign t_i_address1 = zext_ln44_fu_211_p1;
 
 assign t_i_ce0 = t_i_ce0_local;
 
 assign t_i_ce1 = t_i_ce1_local;
 
-assign trunc_ln44_fu_172_p1 = lshr_ln44_1_fu_167_p2[7:0];
+assign trunc_ln42_fu_197_p1 = ap_sig_allocacmp_i_286[1:0];
 
-assign trunc_ln45_fu_182_p1 = lshr_ln45_fu_177_p2[7:0];
+assign trunc_ln44_fu_268_p1 = lshr_ln44_1_fu_263_p2[7:0];
 
-assign zext_ln42_1_fu_155_p1 = i_289_reg_205_pp0_iter1_reg;
+assign trunc_ln45_fu_281_p1 = lshr_ln45_fu_276_p2[7:0];
 
-assign zext_ln42_fu_151_p1 = i_289_reg_205_pp0_iter1_reg;
+assign zext_ln38_fu_246_p1 = lshr_ln38_fu_237_p4;
 
-assign zext_ln44_1_fu_163_p1 = shl_ln44_fu_158_p2;
+assign zext_ln42_fu_234_p1 = i_286_reg_320_pp0_iter1_reg;
 
-assign zext_ln44_fu_128_p1 = lshr_ln44_fu_118_p4;
+assign zext_ln44_1_fu_259_p1 = shl_ln44_fu_254_p2;
 
-assign zext_ln45_1_fu_193_p1 = add_ln45_fu_187_p2;
+assign zext_ln44_fu_211_p1 = lshr_ln44_fu_201_p4;
 
-assign zext_ln45_fu_141_p1 = zext_ln_fu_133_p3;
+assign zext_ln45_1_fu_305_p1 = lshr_ln45_2_fu_295_p4;
 
-assign zext_ln_fu_133_p3 = {{1'd1}, {lshr_ln44_fu_118_p4}};
+assign zext_ln45_fu_224_p1 = zext_ln_fu_216_p3;
+
+assign zext_ln_fu_216_p3 = {{1'd1}, {lshr_ln44_fu_201_p4}};
 
 endmodule //sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1_Pipeline_VITIS_LOOP_42_1

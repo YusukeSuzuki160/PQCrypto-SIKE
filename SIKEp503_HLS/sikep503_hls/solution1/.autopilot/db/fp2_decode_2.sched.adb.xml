@@ -115,10 +115,10 @@ entry:5 %temp = alloca i64 1
 
 <Node id="14" bw="64" op_0_bw="64">
 <![CDATA[
-entry:6 %temp_71 = alloca i64 1
+entry:6 %temp_74 = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="temp_71"/></StgValue>
+<StgValue><ssdm name="temp_74"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="2" lat="2">
@@ -145,7 +145,7 @@ entry:7 %call_ln0 = call void @fp2_decode.2_Pipeline_VITIS_LOOP_53_1, i9 %x_read
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-entry:9 %call_ln0 = call void @fp2_decode.2_Pipeline_3, i64 %temp_71
+entry:9 %call_ln0 = call void @fp2_decode.2_Pipeline_3, i64 %temp_74
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -193,7 +193,7 @@ entry:7 %call_ln0 = call void @fp2_decode.2_Pipeline_VITIS_LOOP_53_1, i9 %x_read
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-entry:9 %call_ln0 = call void @fp2_decode.2_Pipeline_3, i64 %temp_71
+entry:9 %call_ln0 = call void @fp2_decode.2_Pipeline_3, i64 %temp_74
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -292,7 +292,7 @@ entry:8 %call_ln0 = call void @fp2_decode.2_Pipeline_VITIS_LOOP_55_2, i64 %enc_r
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="9" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:10 %call_ln63 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgomery_R2_1, i64 %temp_71
+entry:10 %call_ln63 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgomery_R2_1, i64 %temp_74
 
 ]]></Node>
 <StgValue><ssdm name="call_ln63"/></StgValue>
@@ -310,7 +310,7 @@ entry:10 %call_ln63 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgome
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="9" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:10 %call_ln63 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgomery_R2_1, i64 %temp_71
+entry:10 %call_ln63 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgomery_R2_1, i64 %temp_74
 
 ]]></Node>
 <StgValue><ssdm name="call_ln63"/></StgValue>
@@ -328,7 +328,7 @@ entry:10 %call_ln63 = call void @mp_mul.862, i64 %PKB, i9 %x_read, i64 %Montgome
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="9" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:11 %call_ln64 = call void @rdc_mont.4, i64 %temp_71, i64 %PKB, i9 %x_read, i64 %p503p1_1
+entry:11 %call_ln64 = call void @rdc_mont.4, i64 %temp_74, i64 %PKB, i9 %x_read, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln64"/></StgValue>
@@ -346,7 +346,7 @@ entry:11 %call_ln64 = call void @rdc_mont.4, i64 %temp_71, i64 %PKB, i9 %x_read,
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="9" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:11 %call_ln64 = call void @rdc_mont.4, i64 %temp_71, i64 %PKB, i9 %x_read, i64 %p503p1_1
+entry:11 %call_ln64 = call void @rdc_mont.4, i64 %temp_74, i64 %PKB, i9 %x_read, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln64"/></StgValue>
@@ -433,7 +433,7 @@ entry:15 %call_ln64 = call void @rdc_mont.4, i64 %temp, i64 %PKB, i9 %add_ln63, 
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0
+entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_8, i32 0, i32 0, void @empty_60, i32 0, i32 402, void @empty_44, void @empty_72, void @empty_60, i32 16, i32 16, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>

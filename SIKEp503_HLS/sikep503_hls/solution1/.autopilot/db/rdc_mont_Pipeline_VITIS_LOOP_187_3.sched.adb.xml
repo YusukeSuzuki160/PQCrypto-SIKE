@@ -163,10 +163,10 @@ newFuncRoot:5 %add_ln187_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %add_ln187
 
 <Node id="17" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-newFuncRoot:6 %i_11_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_11
+newFuncRoot:6 %i_13_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_13
 
 ]]></Node>
-<StgValue><ssdm name="i_11_read"/></StgValue>
+<StgValue><ssdm name="i_13_read"/></StgValue>
 </operation>
 
 <operation id="20" st_id="1" stage="1" lat="1">
@@ -313,7 +313,7 @@ for.body6:1 %zext_ln187 = zext i3 %j_2
 
 <Node id="28" bw="1" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-for.body6:2 %icmp_ln187 = icmp_eq  i3 %j_2, i3 %i_11_read
+for.body6:2 %icmp_ln187 = icmp_eq  i3 %j_2, i3 %i_13_read
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln187"/></StgValue>
@@ -1132,10 +1132,10 @@ for.body6.split_ifconv:49 %zext_ln130_4 = zext i32 %add_ln130_3
 
 <Node id="82" bw="34" op_0_bw="34" op_1_bw="34">
 <![CDATA[
-for.body6.split_ifconv:50 %temp_2 = add i34 %zext_ln130_4, i34 %zext_ln130_3
+for.body6.split_ifconv:50 %temp_5 = add i34 %zext_ln130_4, i34 %zext_ln130_3
 
 ]]></Node>
-<StgValue><ssdm name="temp_2"/></StgValue>
+<StgValue><ssdm name="temp_5"/></StgValue>
 </operation>
 
 <operation id="83" st_id="6" stage="1" lat="1">
@@ -1147,7 +1147,7 @@ for.body6.split_ifconv:50 %temp_2 = add i34 %zext_ln130_4, i34 %zext_ln130_3
 
 <Node id="83" bw="32" op_0_bw="34">
 <![CDATA[
-for.body6.split_ifconv:51 %trunc_ln105 = trunc i34 %temp_2
+for.body6.split_ifconv:51 %trunc_ln105 = trunc i34 %temp_5
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln105"/></StgValue>
@@ -1162,7 +1162,7 @@ for.body6.split_ifconv:51 %trunc_ln105 = trunc i34 %temp_2
 
 <Node id="93" bw="2" op_0_bw="2" op_1_bw="34" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-for.body6.split_ifconv:61 %tmp_8 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_2, i32 32, i32 33
+for.body6.split_ifconv:61 %tmp_8 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_5, i32 32, i32 33
 
 ]]></Node>
 <StgValue><ssdm name="tmp_8"/></StgValue>
@@ -1741,7 +1741,7 @@ for.body6.split_ifconv:0 %t_load = load i64 %t
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body6.split_ifconv:5 %specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.body6.split_ifconv:5 %specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln180"/></StgValue>
@@ -1771,7 +1771,7 @@ for.body6.split_ifconv:6 %speclooptripcount_ln180 = speclooptripcount void @_ssd
 
 <Node id="39" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body6.split_ifconv:7 %specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38
+for.body6.split_ifconv:7 %specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln187"/></StgValue>

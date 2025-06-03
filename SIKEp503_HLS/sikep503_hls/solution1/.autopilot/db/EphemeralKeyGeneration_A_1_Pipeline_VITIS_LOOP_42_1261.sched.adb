@@ -340,7 +340,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_292</name>
+						<name>i_290</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
@@ -1426,7 +1426,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>gmem_addr_9_req</name>
+						<name>gmem_addr_8_req</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
@@ -1558,7 +1558,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>gmem_addr_9_resp</name>
+						<name>gmem_addr_8_resp</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
@@ -2197,7 +2197,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>gmem_addr_6</name>
+						<name>gmem_addr_5</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -2261,7 +2261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>gmem_addr_10_req</name>
+						<name>gmem_addr_9_req</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -2327,7 +2327,7 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>gmem_addr_6_write_ln45</name>
+						<name>gmem_addr_5_write_ln45</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -2395,7 +2395,7 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>gmem_addr_10_resp</name>
+						<name>gmem_addr_9_resp</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>

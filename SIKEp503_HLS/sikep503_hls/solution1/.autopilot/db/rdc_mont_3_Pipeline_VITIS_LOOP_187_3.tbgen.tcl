@@ -21,7 +21,7 @@ dict set ap_memory_interface_dict PKB { MEM_WIDTH 64 MEM_SIZE 384 MASTER_TYPE BR
 set C_modelArgList {
 	{ v int 64 regular  }
 	{ u int 64 regular  }
-	{ i_5 int 3 regular  }
+	{ i_7 int 3 regular  }
 	{ add_ln187 int 4 regular  }
 	{ PKB int 64 regular {array 48 { 1 3 } 1 1 }  }
 	{ empty int 3 regular  }
@@ -35,7 +35,7 @@ set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "v", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "u", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
- 	{ "Name" : "i_5", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
+ 	{ "Name" : "i_7", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "add_ln187", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "PKB", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "empty", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
@@ -53,7 +53,7 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ v sc_in sc_lv 64 signal 0 } 
 	{ u sc_in sc_lv 64 signal 1 } 
-	{ i_5 sc_in sc_lv 3 signal 2 } 
+	{ i_7 sc_in sc_lv 3 signal 2 } 
 	{ add_ln187 sc_in sc_lv 4 signal 3 } 
 	{ PKB_address0 sc_out sc_lv 6 signal 4 } 
 	{ PKB_ce0 sc_out sc_logic 1 signal 4 } 
@@ -91,7 +91,7 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "v", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "v", "role": "default" }} , 
  	{ "name": "u", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "u", "role": "default" }} , 
- 	{ "name": "i_5", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "i_5", "role": "default" }} , 
+ 	{ "name": "i_7", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "i_7", "role": "default" }} , 
  	{ "name": "add_ln187", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "add_ln187", "role": "default" }} , 
  	{ "name": "PKB_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "PKB", "role": "address0" }} , 
  	{ "name": "PKB_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "PKB", "role": "ce0" }} , 
@@ -138,7 +138,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "v", "Type" : "None", "Direction" : "I"},
 			{"Name" : "u", "Type" : "None", "Direction" : "I"},
-			{"Name" : "i_5", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_7", "Type" : "None", "Direction" : "I"},
 			{"Name" : "add_ln187", "Type" : "None", "Direction" : "I"},
 			{"Name" : "PKB", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
@@ -157,7 +157,7 @@ set ArgLastReadFirstWriteLatency {
 	rdc_mont_3_Pipeline_VITIS_LOOP_187_3 {
 		v {Type I LastRead 0 FirstWrite -1}
 		u {Type I LastRead 0 FirstWrite -1}
-		i_5 {Type I LastRead 0 FirstWrite -1}
+		i_7 {Type I LastRead 0 FirstWrite -1}
 		add_ln187 {Type I LastRead 0 FirstWrite -1}
 		PKB {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
@@ -180,7 +180,7 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	v { ap_none {  { v in_data 0 64 } } }
 	u { ap_none {  { u in_data 0 64 } } }
-	i_5 { ap_none {  { i_5 in_data 0 3 } } }
+	i_7 { ap_none {  { i_7 in_data 0 3 } } }
 	add_ln187 { ap_none {  { add_ln187 in_data 0 4 } } }
 	PKB { ap_memory {  { PKB_address0 mem_address 1 6 }  { PKB_ce0 mem_ce 1 1 }  { PKB_q0 mem_dout 0 64 } } }
 	empty { ap_none {  { empty in_data 0 3 } } }

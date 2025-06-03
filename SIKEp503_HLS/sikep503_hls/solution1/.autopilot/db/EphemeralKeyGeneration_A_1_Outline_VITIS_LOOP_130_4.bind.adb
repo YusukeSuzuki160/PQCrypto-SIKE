@@ -164,7 +164,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_305</name>
+						<name>i_303</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>89</lineNumber>
@@ -389,7 +389,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>i_305_write_ln89</name>
+						<name>i_303_write_ln89</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>89</lineNumber>
@@ -2244,7 +2244,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>i_305_write_ln89</name>
+						<name>i_303_write_ln89</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>89</lineNumber>
@@ -6239,7 +6239,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_305_fu_64</first>
+			<first>i_303_fu_64</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6526,7 +6526,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_305_reg_276</first>
+			<first>i_303_reg_276</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

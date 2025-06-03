@@ -86,7 +86,6 @@ proc check_tvin_file {} {
          "c.sikep503_kem_enc_hw.autotvin_gmem.dat"
          "c.sikep503_kem_enc_hw.autotvin_ct.dat"
          "c.sikep503_kem_enc_hw.autotvin_pk.dat"
-         "c.sikep503_kem_enc_hw.autotvin_ss.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

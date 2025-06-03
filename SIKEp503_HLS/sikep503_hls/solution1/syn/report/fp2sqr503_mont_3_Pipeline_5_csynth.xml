@@ -143,8 +143,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_61_address0</name>
-<Object>temp_61</Object>
+<name>temp_64_address0</name>
+<Object>temp_64</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -154,8 +154,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_61_ce0</name>
-<Object>temp_61</Object>
+<name>temp_64_ce0</name>
+<Object>temp_64</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -165,8 +165,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_61_we0</name>
-<Object>temp_61</Object>
+<name>temp_64_we0</name>
+<Object>temp_64</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -176,8 +176,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_61_d0</name>
-<Object>temp_61</Object>
+<name>temp_64_d0</name>
+<Object>temp_64</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

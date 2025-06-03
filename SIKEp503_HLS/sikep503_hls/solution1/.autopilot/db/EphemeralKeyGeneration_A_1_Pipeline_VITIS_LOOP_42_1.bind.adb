@@ -340,7 +340,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_294</name>
+						<name>i_292</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
@@ -660,7 +660,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>zext_ln42_2</name>
+						<name>zext_ln42_1</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
@@ -2133,7 +2133,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>gmem_addr_6</name>
+						<name>gmem_addr_5</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -2197,7 +2197,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>gmem_addr_6_req</name>
+						<name>gmem_addr_5_req</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -2263,7 +2263,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>gmem_addr_6_write_ln45</name>
+						<name>gmem_addr_5_write_ln45</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -2331,7 +2331,7 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>gmem_addr_6_resp</name>
+						<name>gmem_addr_5_resp</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -4901,7 +4901,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_6_fu_214</first>
+			<first>gmem_addr_5_fu_214</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4997,7 +4997,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln42_2_fu_185</first>
+			<first>zext_ln42_1_fu_185</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5095,7 +5095,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_294_load_fu_140</first>
+			<first>i_292_load_fu_140</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5287,7 +5287,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_6_reg_302</first>
+			<first>gmem_addr_5_reg_302</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5303,7 +5303,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_294_reg_264</first>
+			<first>i_292_reg_264</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

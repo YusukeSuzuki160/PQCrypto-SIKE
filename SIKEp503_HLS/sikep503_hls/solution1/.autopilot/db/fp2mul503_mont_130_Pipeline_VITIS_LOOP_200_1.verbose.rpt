@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_130_Pipeline_VITIS_LOOP_200_1'
 ================================================================
-* Date:           Tue May 27 14:18:55 2025
+* Date:           Tue Jun  3 14:13:58 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -120,7 +120,7 @@
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_sig_allocacmp_i       |   9|          2|    4|          8|
     |borrow_reg_92            |   9|          2|    1|          2|
-    |i_233_fu_52              |   9|          2|    4|          8|
+    |i_235_fu_52              |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  68|         15|   13|         27|
     +-------------------------+----+-----------+-----+-----------+
@@ -135,7 +135,7 @@
     |ap_enable_reg_pp0_iter0_reg  |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
     |borrow_reg_92                |   1|   0|    1|          0|
-    |i_233_fu_52                  |   4|   0|    4|          0|
+    |i_235_fu_52                  |   4|   0|    4|          0|
     |icmp_ln200_reg_254           |   1|   0|    1|          0|
     |sext_ln192_cast_reg_249      |  64|   0|   64|          0|
     |tempReg_reg_274              |  64|   0|   64|          0|
@@ -212,12 +212,12 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 4.91>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i_233 = alloca i32 1" [src/fpx.c:193]   --->   Operation 6 'alloca' 'i_233' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i_235 = alloca i32 1" [src/fpx.c:193]   --->   Operation 6 'alloca' 'i_235' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln192_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %sext_ln192"   --->   Operation 7 'read' 'sext_ln192_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.99ns)   --->   "%sext_ln192_cast = select i1 %sext_ln192_read, i64 18446744073709551615, i64 0"   --->   Operation 8 'select' 'sext_ln192_cast' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 9 [1/1] (1.58ns)   --->   "%store_ln193 = store i4 0, i4 %i_233" [src/fpx.c:193]   --->   Operation 9 'store' 'store_ln193' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 9 [1/1] (1.58ns)   --->   "%store_ln193 = store i4 0, i4 %i_235" [src/fpx.c:193]   --->   Operation 9 'store' 'store_ln193' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 10 [1/1] (1.58ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = load i4 %i_233" [src/fpx.c:201]   --->   Operation 11 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = load i4 %i_235" [src/fpx.c:201]   --->   Operation 11 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (1.73ns)   --->   "%icmp_ln200 = icmp_eq  i4 %i, i4 8" [src/fpx.c:200]   --->   Operation 12 'icmp' 'icmp_ln200' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 13 [1/1] (1.73ns)   --->   "%add_ln200 = add i4 %i, i4 1" [src/fpx.c:200]   --->   Operation 13 'add' 'add_ln200' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln200 = br i1 %icmp_ln200, void %for.inc.split, void %for.end.exitStub" [src/fpx.c:200]   --->   Operation 14 'br' 'br_ln200' <Predicate = true> <Delay = 0.00>
@@ -229,7 +229,7 @@ ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tt3_addr = getelementptr i64 %tt3,
 ST_1 : Operation 20 [2/2] (3.25ns)   --->   "%tt3_load = load i4 %tt3_addr" [src/fpx.c:201]   --->   Operation 20 'load' 'tt3_load' <Predicate = (!icmp_ln200)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p503_1_addr = getelementptr i64 %p503_1, i64 0, i64 %zext_ln200" [src/fpx.c:201]   --->   Operation 21 'getelementptr' 'p503_1_addr' <Predicate = (!icmp_ln200)> <Delay = 0.00>
 ST_1 : Operation 22 [2/2] (2.32ns)   --->   "%p503_1_load = load i3 %p503_1_addr" [src/fpx.c:201]   --->   Operation 22 'load' 'p503_1_load' <Predicate = (!icmp_ln200)> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
-ST_1 : Operation 23 [1/1] (1.58ns)   --->   "%store_ln193 = store i4 %add_ln200, i4 %i_233" [src/fpx.c:193]   --->   Operation 23 'store' 'store_ln193' <Predicate = (!icmp_ln200)> <Delay = 1.58>
+ST_1 : Operation 23 [1/1] (1.58ns)   --->   "%store_ln193 = store i4 %add_ln200, i4 %i_235" [src/fpx.c:193]   --->   Operation 23 'store' 'store_ln193' <Predicate = (!icmp_ln200)> <Delay = 1.58>
 
 State 2 <SV = 1> <Delay = 6.77>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%borrow = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc.split" [src/fpx.c:200]   --->   Operation 24 'phi' 'borrow' <Predicate = true> <Delay = 0.00>
@@ -241,9 +241,9 @@ ST_2 : Operation 29 [1/1] (0.99ns)   --->   "%and_ln201 = and i64 %p503_1_load, 
 ST_2 : Operation 47 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (icmp_ln200)> <Delay = 1.58>
 
 State 3 <SV = 2> <Delay = 6.77>
-ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%specpipeline_ln193 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/fpx.c:193]   --->   Operation 30 'specpipeline' 'specpipeline_ln193' <Predicate = (!icmp_ln200)> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%specpipeline_ln193 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/fpx.c:193]   --->   Operation 30 'specpipeline' 'specpipeline_ln193' <Predicate = (!icmp_ln200)> <Delay = 0.00>
 ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%speclooptripcount_ln193 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.c:193]   --->   Operation 31 'speclooptripcount' 'speclooptripcount_ln193' <Predicate = (!icmp_ln200)> <Delay = 0.00>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%specloopname_ln200 = specloopname void @_ssdm_op_SpecLoopName, void @empty_33" [src/fpx.c:200]   --->   Operation 32 'specloopname' 'specloopname_ln200' <Predicate = (!icmp_ln200)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%specloopname_ln200 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [src/fpx.c:200]   --->   Operation 32 'specloopname' 'specloopname_ln200' <Predicate = (!icmp_ln200)> <Delay = 0.00>
 ST_3 : Operation 33 [1/1] (3.52ns)   --->   "%add_ln201 = add i64 %and_ln201, i64 %tempReg" [src/fpx.c:201]   --->   Operation 33 'add' 'add_ln201' <Predicate = (!icmp_ln200)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 34 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln201 = store i64 %add_ln201, i4 %tt3_addr" [src/fpx.c:201]   --->   Operation 34 'store' 'store_ln201' <Predicate = (!icmp_ln200)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_3 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node xor_ln201_36)   --->   "%xor_ln201 = xor i64 %add_ln201, i64 %tempReg" [src/fpx.c:201]   --->   Operation 35 'xor' 'xor_ln201' <Predicate = (!icmp_ln200)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -280,7 +280,7 @@ Port [ p503_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; ext
 
 <LifeTime>
 <method=bitvector/>
-i_233                   (alloca           ) [ 0100]
+i_235                   (alloca           ) [ 0100]
 sext_ln192_read         (read             ) [ 0000]
 sext_ln192_cast         (select           ) [ 0010]
 store_ln193             (store            ) [ 0000]
@@ -476,7 +476,7 @@ ret_ln0                 (ret              ) [ 0000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -512,7 +512,7 @@ ret_ln0                 (ret              ) [ 0000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_33"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -561,14 +561,14 @@ ret_ln0                 (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="52" class="1004" name="i_233_fu_52">
+<comp id="52" class="1004" name="i_235_fu_52">
 <pin_list>
 <pin id="53" dir="0" index="0" bw="1" slack="0"/>
 <pin id="54" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="i_233/1 "/>
+<opset="i_235/1 "/>
 </bind>
 </comp>
 
@@ -963,13 +963,13 @@ ret_ln0                 (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="242" class="1005" name="i_233_reg_242">
+<comp id="242" class="1005" name="i_235_reg_242">
 <pin_list>
 <pin id="243" dir="0" index="0" bw="4" slack="0"/>
 <pin id="244" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_233 "/>
+<opset="i_235 "/>
 </bind>
 </comp>
 
@@ -1307,7 +1307,7 @@ N/A
 +-----------------------+--------+
 |   and_ln201_reg_283   |   64   |
 |     borrow_reg_92     |    1   |
-|     i_233_reg_242     |    4   |
+|     i_235_reg_242     |    4   |
 |   icmp_ln200_reg_254  |    1   |
 |  p503_1_addr_reg_264  |    3   |
 |sext_ln192_cast_reg_249|   64   |

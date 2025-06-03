@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_4'
 ================================================================
-* Date:           Tue May 27 14:19:41 2025
+* Date:           Tue Jun  3 14:14:44 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -210,22 +210,22 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1361_p_din0   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1361_p_din1   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1361_p_dout0  |   in|   64|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1361_p_ce     |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1365_p_din0   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1365_p_din1   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1365_p_dout0  |   in|   64|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1365_p_ce     |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1369_p_din0   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1369_p_din1   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1369_p_dout0  |   in|   64|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
-|grp_fu_1369_p_ce     |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
 |grp_fu_1373_p_din0   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
 |grp_fu_1373_p_din1   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
 |grp_fu_1373_p_dout0  |   in|   64|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
 |grp_fu_1373_p_ce     |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1377_p_din0   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1377_p_din1   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1377_p_dout0  |   in|   64|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1377_p_ce     |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1381_p_din0   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1381_p_din1   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1381_p_dout0  |   in|   64|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1381_p_ce     |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1385_p_din0   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1385_p_din1   |  out|   32|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1385_p_dout0  |   in|   64|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
+|grp_fu_1385_p_ce     |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.4|  return value|
 |PKB_address0         |  out|    6|   ap_memory|               PKB|         array|
 |PKB_ce0              |  out|    1|   ap_memory|               PKB|         array|
 |PKB_q0               |   in|   64|   ap_memory|               PKB|         array|

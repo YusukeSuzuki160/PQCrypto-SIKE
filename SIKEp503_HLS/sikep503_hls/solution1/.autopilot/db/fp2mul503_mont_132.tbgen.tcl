@@ -198,7 +198,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "zext_ln157", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zext_ln146_26", "Type" : "None", "Direction" : "I"},
 			{"Name" : "a", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "i_25", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_27", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zext_ln146_25", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v_35_out", "Type" : "Vld", "Direction" : "O"},
@@ -208,10 +208,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "VITIS_LOOP_159_4", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter9", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter9", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.grp_mp_mul_141_Pipeline_VITIS_LOOP_159_4_fu_163.flow_control_loop_pipe_sequential_init_U", "Parent" : "9"},
-	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1887", "Parent" : "6"},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1888", "Parent" : "6"},
-	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1889", "Parent" : "6"},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1890", "Parent" : "6"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1886", "Parent" : "6"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1887", "Parent" : "6"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1888", "Parent" : "6"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_141_fu_70.mul_32ns_32ns_64_2_1_U1889", "Parent" : "6"},
 	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_fp2mul503_mont_132_Pipeline_VITIS_LOOP_350_1_fu_88", "Parent" : "0", "Child" : ["16"],
 		"CDFG" : "fp2mul503_mont_132_Pipeline_VITIS_LOOP_350_1",
 		"Protocol" : "ap_ctrl_hs",
@@ -393,7 +393,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "v_025", "Type" : "None", "Direction" : "I"},
 			{"Name" : "u_024", "Type" : "None", "Direction" : "I"},
-			{"Name" : "i_11", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_13", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mc_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mc_offset2", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mc", "Type" : "Memory", "Direction" : "I"},
@@ -439,10 +439,10 @@ set RtlHierarchyInfo {[
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter9", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter9", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "33", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.grp_rdc_mont_138_Pipeline_VITIS_LOOP_208_5_fu_227.p503p1_1_U", "Parent" : "32"},
 	{"ID" : "34", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.grp_rdc_mont_138_Pipeline_VITIS_LOOP_208_5_fu_227.flow_control_loop_pipe_sequential_init_U", "Parent" : "32"},
-	{"ID" : "35", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1684", "Parent" : "26"},
-	{"ID" : "36", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1685", "Parent" : "26"},
-	{"ID" : "37", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1686", "Parent" : "26"},
-	{"ID" : "38", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1687", "Parent" : "26"},
+	{"ID" : "35", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1683", "Parent" : "26"},
+	{"ID" : "36", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1684", "Parent" : "26"},
+	{"ID" : "37", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1685", "Parent" : "26"},
+	{"ID" : "38", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_138_fu_126.mul_32ns_32ns_64_2_1_U1686", "Parent" : "26"},
 	{"ID" : "39", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139", "Parent" : "0", "Child" : ["40", "42", "44", "45", "46", "47"],
 		"CDFG" : "mp_mul_152",
 		"Protocol" : "ap_ctrl_hs",
@@ -528,10 +528,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "VITIS_LOOP_159_4", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter8", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter8", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "43", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.grp_mp_mul_152_Pipeline_VITIS_LOOP_159_4_fu_127.flow_control_loop_pipe_sequential_init_U", "Parent" : "42"},
-	{"ID" : "44", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U277", "Parent" : "39"},
-	{"ID" : "45", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U278", "Parent" : "39"},
-	{"ID" : "46", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U279", "Parent" : "39"},
-	{"ID" : "47", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U280", "Parent" : "39"},
+	{"ID" : "44", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U276", "Parent" : "39"},
+	{"ID" : "45", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U277", "Parent" : "39"},
+	{"ID" : "46", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U278", "Parent" : "39"},
+	{"ID" : "47", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mp_mul_152_fu_139.mul_32ns_32ns_64_2_1_U279", "Parent" : "39"},
 	{"ID" : "48", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_fp2mul503_mont_132_Pipeline_VITIS_LOOP_170_1193_fu_146", "Parent" : "0", "Child" : ["49"],
 		"CDFG" : "fp2mul503_mont_132_Pipeline_VITIS_LOOP_170_1193",
 		"Protocol" : "ap_ctrl_hs",
@@ -587,7 +587,7 @@ set ArgLastReadFirstWriteLatency {
 		zext_ln157 {Type I LastRead 0 FirstWrite -1}
 		zext_ln146_26 {Type I LastRead 0 FirstWrite -1}
 		a {Type I LastRead 1 FirstWrite -1}
-		i_25 {Type I LastRead 0 FirstWrite -1}
+		i_27 {Type I LastRead 0 FirstWrite -1}
 		zext_ln146_25 {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 1 FirstWrite -1}
 		v_35_out {Type O LastRead -1 FirstWrite 8}
@@ -625,7 +625,7 @@ set ArgLastReadFirstWriteLatency {
 	rdc_mont_138_Pipeline_VITIS_LOOP_187_3 {
 		v_025 {Type I LastRead 0 FirstWrite -1}
 		u_024 {Type I LastRead 0 FirstWrite -1}
-		i_11 {Type I LastRead 0 FirstWrite -1}
+		i_13 {Type I LastRead 0 FirstWrite -1}
 		mc_offset {Type I LastRead 0 FirstWrite -1}
 		mc_offset2 {Type I LastRead 0 FirstWrite -1}
 		mc {Type I LastRead 0 FirstWrite -1}

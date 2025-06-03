@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1'
 ================================================================
-* Date:           Tue May 27 14:11:22 2025
+* Date:           Tue Jun  3 14:06:32 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -171,8 +171,8 @@ ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln121 = zext i5 %round_1" [sr
 ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%KeccakF_RoundConstants_addr = getelementptr i64 %KeccakF_RoundConstants, i64 0, i64 %zext_ln121" [src/sha3/fips202.c:150]   --->   Operation 88 'getelementptr' 'KeccakF_RoundConstants_addr' <Predicate = (icmp_ln121)> <Delay = 0.00>
 ST_1 : Operation 89 [2/2] (3.25ns)   --->   "%KeccakF_RoundConstants_load = load i5 %KeccakF_RoundConstants_addr" [src/sha3/fips202.c:150]   --->   Operation 89 'load' 'KeccakF_RoundConstants_load' <Predicate = (icmp_ln121)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 24> <ROM>
 ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_s = partselect i4 @_ssdm_op_PartSelect.i4.i5.i32.i32, i5 %round_1, i32 1, i32 4" [src/sha3/fips202.c:262]   --->   Operation 90 'partselect' 'tmp_s' <Predicate = (icmp_ln121)> <Delay = 0.00>
-ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%or_ln68 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i4.i1, i4 %tmp_s, i1 1" [src/sha3/fips202.c:262]   --->   Operation 91 'bitconcatenate' 'or_ln68' <Predicate = (icmp_ln121)> <Delay = 0.00>
-ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln262 = zext i5 %or_ln68" [src/sha3/fips202.c:262]   --->   Operation 92 'zext' 'zext_ln262' <Predicate = (icmp_ln121)> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%or_ln72 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i4.i1, i4 %tmp_s, i1 1" [src/sha3/fips202.c:262]   --->   Operation 91 'bitconcatenate' 'or_ln72' <Predicate = (icmp_ln121)> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln262 = zext i5 %or_ln72" [src/sha3/fips202.c:262]   --->   Operation 92 'zext' 'zext_ln262' <Predicate = (icmp_ln121)> <Delay = 0.00>
 ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%KeccakF_RoundConstants_addr_1 = getelementptr i64 %KeccakF_RoundConstants, i64 0, i64 %zext_ln262" [src/sha3/fips202.c:262]   --->   Operation 93 'getelementptr' 'KeccakF_RoundConstants_addr_1' <Predicate = (icmp_ln121)> <Delay = 0.00>
 ST_1 : Operation 94 [2/2] (3.25ns)   --->   "%KeccakF_RoundConstants_load_1 = load i5 %KeccakF_RoundConstants_addr_1" [src/sha3/fips202.c:262]   --->   Operation 94 'load' 'KeccakF_RoundConstants_load_1' <Predicate = (icmp_ln121)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 24> <ROM>
 ST_1 : Operation 95 [1/1] (1.78ns)   --->   "%add_ln121 = add i5 %round_1, i5 2" [src/sha3/fips202.c:121]   --->   Operation 95 'add' 'add_ln121' <Predicate = (icmp_ln121)> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -230,20 +230,20 @@ ST_2 : Operation 144 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i64 @_ssdm
 ST_2 : Operation 145 [1/1] (0.99ns)   --->   "%Da = xor i64 %or_ln, i64 %BCu" [src/sha3/fips202.c:132]   --->   Operation 145 'xor' 'Da' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 146 [1/1] (0.00ns)   --->   "%trunc_ln133 = trunc i64 %BCi" [src/sha3/fips202.c:133]   --->   Operation 146 'trunc' 'trunc_ln133' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 147 [1/1] (0.00ns)   --->   "%tmp_268 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCi, i32 63" [src/sha3/fips202.c:133]   --->   Operation 147 'bitselect' 'tmp_268' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 148 [1/1] (0.00ns)   --->   "%or_ln59 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln133, i1 %tmp_268" [src/sha3/fips202.c:133]   --->   Operation 148 'bitconcatenate' 'or_ln59' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 149 [1/1] (0.99ns)   --->   "%De = xor i64 %or_ln59, i64 %BCa" [src/sha3/fips202.c:133]   --->   Operation 149 'xor' 'De' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 148 [1/1] (0.00ns)   --->   "%or_ln63 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln133, i1 %tmp_268" [src/sha3/fips202.c:133]   --->   Operation 148 'bitconcatenate' 'or_ln63' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 149 [1/1] (0.99ns)   --->   "%De = xor i64 %or_ln63, i64 %BCa" [src/sha3/fips202.c:133]   --->   Operation 149 'xor' 'De' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 150 [1/1] (0.00ns)   --->   "%trunc_ln134 = trunc i64 %BCo" [src/sha3/fips202.c:134]   --->   Operation 150 'trunc' 'trunc_ln134' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 151 [1/1] (0.00ns)   --->   "%tmp_269 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCo, i32 63" [src/sha3/fips202.c:134]   --->   Operation 151 'bitselect' 'tmp_269' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 152 [1/1] (0.00ns)   --->   "%or_ln60 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln134, i1 %tmp_269" [src/sha3/fips202.c:134]   --->   Operation 152 'bitconcatenate' 'or_ln60' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 153 [1/1] (0.99ns)   --->   "%Di = xor i64 %or_ln60, i64 %BCe" [src/sha3/fips202.c:134]   --->   Operation 153 'xor' 'Di' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 152 [1/1] (0.00ns)   --->   "%or_ln64 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln134, i1 %tmp_269" [src/sha3/fips202.c:134]   --->   Operation 152 'bitconcatenate' 'or_ln64' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 153 [1/1] (0.99ns)   --->   "%Di = xor i64 %or_ln64, i64 %BCe" [src/sha3/fips202.c:134]   --->   Operation 153 'xor' 'Di' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 154 [1/1] (0.00ns)   --->   "%trunc_ln135 = trunc i64 %BCu" [src/sha3/fips202.c:135]   --->   Operation 154 'trunc' 'trunc_ln135' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 155 [1/1] (0.00ns)   --->   "%tmp_270 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCu, i32 63" [src/sha3/fips202.c:135]   --->   Operation 155 'bitselect' 'tmp_270' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 156 [1/1] (0.00ns)   --->   "%or_ln61 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln135, i1 %tmp_270" [src/sha3/fips202.c:135]   --->   Operation 156 'bitconcatenate' 'or_ln61' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 157 [1/1] (0.99ns)   --->   "%Do = xor i64 %BCi, i64 %or_ln61" [src/sha3/fips202.c:135]   --->   Operation 157 'xor' 'Do' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 156 [1/1] (0.00ns)   --->   "%or_ln65 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln135, i1 %tmp_270" [src/sha3/fips202.c:135]   --->   Operation 156 'bitconcatenate' 'or_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 157 [1/1] (0.99ns)   --->   "%Do = xor i64 %BCi, i64 %or_ln65" [src/sha3/fips202.c:135]   --->   Operation 157 'xor' 'Do' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 158 [1/1] (0.00ns)   --->   "%trunc_ln136 = trunc i64 %BCa" [src/sha3/fips202.c:136]   --->   Operation 158 'trunc' 'trunc_ln136' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 159 [1/1] (0.00ns)   --->   "%tmp_271 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCa, i32 63" [src/sha3/fips202.c:136]   --->   Operation 159 'bitselect' 'tmp_271' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 160 [1/1] (0.00ns)   --->   "%or_ln62 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln136, i1 %tmp_271" [src/sha3/fips202.c:136]   --->   Operation 160 'bitconcatenate' 'or_ln62' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 161 [1/1] (0.99ns)   --->   "%Du = xor i64 %BCo, i64 %or_ln62" [src/sha3/fips202.c:136]   --->   Operation 161 'xor' 'Du' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 160 [1/1] (0.00ns)   --->   "%or_ln66 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln136, i1 %tmp_271" [src/sha3/fips202.c:136]   --->   Operation 160 'bitconcatenate' 'or_ln66' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 161 [1/1] (0.99ns)   --->   "%Du = xor i64 %BCo, i64 %or_ln66" [src/sha3/fips202.c:136]   --->   Operation 161 'xor' 'Du' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 162 [1/1] (0.99ns)   --->   "%Aba_4 = xor i64 %Da, i64 %Aba_1_load" [src/sha3/fips202.c:139]   --->   Operation 162 'xor' 'Aba_4' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 163 [1/1] (0.99ns)   --->   "%Age_2 = xor i64 %De, i64 %Age_1_load" [src/sha3/fips202.c:141]   --->   Operation 163 'xor' 'Age_2' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 164 [1/1] (0.00ns)   --->   "%trunc_ln142 = trunc i64 %Age_2" [src/sha3/fips202.c:142]   --->   Operation 164 'trunc' 'trunc_ln142' <Predicate = true> <Delay = 0.00>
@@ -440,24 +440,24 @@ ST_2 : Operation 354 [1/1] (0.00ns) (grouped into LUT with out node BCu_6)   ---
 ST_2 : Operation 355 [1/1] (0.99ns) (out node of the LUT)   --->   "%BCu_6 = xor i64 %xor_ln240_2, i64 %xor_ln240" [src/sha3/fips202.c:240]   --->   Operation 355 'xor' 'BCu_6' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 356 [1/1] (0.00ns)   --->   "%trunc_ln244 = trunc i64 %BCe_6" [src/sha3/fips202.c:244]   --->   Operation 356 'trunc' 'trunc_ln244' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 357 [1/1] (0.00ns)   --->   "%tmp_273 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCe_6, i32 63" [src/sha3/fips202.c:244]   --->   Operation 357 'bitselect' 'tmp_273' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 358 [1/1] (0.00ns)   --->   "%or_ln63 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln244, i1 %tmp_273" [src/sha3/fips202.c:244]   --->   Operation 358 'bitconcatenate' 'or_ln63' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 359 [1/1] (0.99ns)   --->   "%Da_1 = xor i64 %or_ln63, i64 %BCu_6" [src/sha3/fips202.c:244]   --->   Operation 359 'xor' 'Da_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 358 [1/1] (0.00ns)   --->   "%or_ln67 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln244, i1 %tmp_273" [src/sha3/fips202.c:244]   --->   Operation 358 'bitconcatenate' 'or_ln67' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 359 [1/1] (0.99ns)   --->   "%Da_1 = xor i64 %or_ln67, i64 %BCu_6" [src/sha3/fips202.c:244]   --->   Operation 359 'xor' 'Da_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 360 [1/1] (0.00ns)   --->   "%trunc_ln245 = trunc i64 %BCi_6" [src/sha3/fips202.c:245]   --->   Operation 360 'trunc' 'trunc_ln245' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 361 [1/1] (0.00ns)   --->   "%tmp_274 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCi_6, i32 63" [src/sha3/fips202.c:245]   --->   Operation 361 'bitselect' 'tmp_274' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 362 [1/1] (0.00ns)   --->   "%or_ln64 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln245, i1 %tmp_274" [src/sha3/fips202.c:245]   --->   Operation 362 'bitconcatenate' 'or_ln64' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 363 [1/1] (0.99ns)   --->   "%De_1 = xor i64 %BCa_6, i64 %or_ln64" [src/sha3/fips202.c:245]   --->   Operation 363 'xor' 'De_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 362 [1/1] (0.00ns)   --->   "%or_ln68 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln245, i1 %tmp_274" [src/sha3/fips202.c:245]   --->   Operation 362 'bitconcatenate' 'or_ln68' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 363 [1/1] (0.99ns)   --->   "%De_1 = xor i64 %BCa_6, i64 %or_ln68" [src/sha3/fips202.c:245]   --->   Operation 363 'xor' 'De_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 364 [1/1] (0.00ns)   --->   "%trunc_ln246 = trunc i64 %BCo_6" [src/sha3/fips202.c:246]   --->   Operation 364 'trunc' 'trunc_ln246' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 365 [1/1] (0.00ns)   --->   "%tmp_275 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCo_6, i32 63" [src/sha3/fips202.c:246]   --->   Operation 365 'bitselect' 'tmp_275' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 366 [1/1] (0.00ns)   --->   "%or_ln65 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln246, i1 %tmp_275" [src/sha3/fips202.c:246]   --->   Operation 366 'bitconcatenate' 'or_ln65' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 367 [1/1] (0.99ns)   --->   "%Di_1 = xor i64 %or_ln65, i64 %BCe_6" [src/sha3/fips202.c:246]   --->   Operation 367 'xor' 'Di_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 366 [1/1] (0.00ns)   --->   "%or_ln69 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln246, i1 %tmp_275" [src/sha3/fips202.c:246]   --->   Operation 366 'bitconcatenate' 'or_ln69' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 367 [1/1] (0.99ns)   --->   "%Di_1 = xor i64 %or_ln69, i64 %BCe_6" [src/sha3/fips202.c:246]   --->   Operation 367 'xor' 'Di_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 368 [1/1] (0.00ns)   --->   "%trunc_ln247 = trunc i64 %BCu_6" [src/sha3/fips202.c:247]   --->   Operation 368 'trunc' 'trunc_ln247' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 369 [1/1] (0.00ns)   --->   "%tmp_276 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCu_6, i32 63" [src/sha3/fips202.c:247]   --->   Operation 369 'bitselect' 'tmp_276' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 370 [1/1] (0.00ns)   --->   "%or_ln66 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln247, i1 %tmp_276" [src/sha3/fips202.c:247]   --->   Operation 370 'bitconcatenate' 'or_ln66' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 371 [1/1] (0.99ns)   --->   "%Do_1 = xor i64 %or_ln66, i64 %BCi_6" [src/sha3/fips202.c:247]   --->   Operation 371 'xor' 'Do_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 370 [1/1] (0.00ns)   --->   "%or_ln70 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln247, i1 %tmp_276" [src/sha3/fips202.c:247]   --->   Operation 370 'bitconcatenate' 'or_ln70' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 371 [1/1] (0.99ns)   --->   "%Do_1 = xor i64 %or_ln70, i64 %BCi_6" [src/sha3/fips202.c:247]   --->   Operation 371 'xor' 'Do_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 372 [1/1] (0.00ns)   --->   "%trunc_ln248 = trunc i64 %BCa_6" [src/sha3/fips202.c:248]   --->   Operation 372 'trunc' 'trunc_ln248' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 373 [1/1] (0.00ns)   --->   "%tmp_277 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %BCa_6, i32 63" [src/sha3/fips202.c:248]   --->   Operation 373 'bitselect' 'tmp_277' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 374 [1/1] (0.00ns)   --->   "%or_ln67 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln248, i1 %tmp_277" [src/sha3/fips202.c:248]   --->   Operation 374 'bitconcatenate' 'or_ln67' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 375 [1/1] (0.99ns)   --->   "%Du_1 = xor i64 %or_ln67, i64 %BCo_6" [src/sha3/fips202.c:248]   --->   Operation 375 'xor' 'Du_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 374 [1/1] (0.00ns)   --->   "%or_ln71 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i63.i1, i63 %trunc_ln248, i1 %tmp_277" [src/sha3/fips202.c:248]   --->   Operation 374 'bitconcatenate' 'or_ln71' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 375 [1/1] (0.99ns)   --->   "%Du_1 = xor i64 %or_ln71, i64 %BCo_6" [src/sha3/fips202.c:248]   --->   Operation 375 'xor' 'Du_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 376 [1/1] (0.99ns)   --->   "%Eba_2 = xor i64 %Eba, i64 %Da_1" [src/sha3/fips202.c:251]   --->   Operation 376 'xor' 'Eba_2' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 377 [1/1] (0.99ns)   --->   "%Ege_1 = xor i64 %De_1, i64 %Ege" [src/sha3/fips202.c:253]   --->   Operation 377 'xor' 'Ege_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 378 [1/1] (0.00ns)   --->   "%trunc_ln254 = trunc i64 %Ege_1" [src/sha3/fips202.c:254]   --->   Operation 378 'trunc' 'trunc_ln254' <Predicate = true> <Delay = 0.00>
@@ -585,9 +585,9 @@ ST_2 : Operation 628 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_
 ST_2 : Operation 629 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 629 'ret' 'ret_ln0' <Predicate = (!icmp_ln121)> <Delay = 1.58>
 
 State 3 <SV = 2> <Delay = 2.57>
-ST_3 : Operation 450 [1/1] (0.00ns)   --->   "%specpipeline_ln79 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/sha3/fips202.c:79]   --->   Operation 450 'specpipeline' 'specpipeline_ln79' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 450 [1/1] (0.00ns)   --->   "%specpipeline_ln79 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/sha3/fips202.c:79]   --->   Operation 450 'specpipeline' 'specpipeline_ln79' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 451 [1/1] (0.00ns)   --->   "%speclooptripcount_ln79 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 12, i64 12, i64 12" [src/sha3/fips202.c:79]   --->   Operation 451 'speclooptripcount' 'speclooptripcount_ln79' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 452 [1/1] (0.00ns)   --->   "%specloopname_ln121 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24" [src/sha3/fips202.c:121]   --->   Operation 452 'specloopname' 'specloopname_ln121' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 452 [1/1] (0.00ns)   --->   "%specloopname_ln121 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22" [src/sha3/fips202.c:121]   --->   Operation 452 'specloopname' 'specloopname_ln121' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 453 [1/1] (0.00ns)   --->   "%BCe_7 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i20.i44, i20 %trunc_ln254, i44 %lshr_ln24" [src/sha3/fips202.c:254]   --->   Operation 453 'bitconcatenate' 'BCe_7' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 454 [1/1] (0.00ns)   --->   "%BCi_7 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i21.i43, i21 %trunc_ln256, i43 %lshr_ln25" [src/sha3/fips202.c:256]   --->   Operation 454 'bitconcatenate' 'BCi_7' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 455 [1/1] (0.00ns)   --->   "%BCo_7 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i43.i21, i43 %trunc_ln258, i21 %lshr_ln26" [src/sha3/fips202.c:258]   --->   Operation 455 'bitconcatenate' 'BCo_7' <Predicate = true> <Delay = 0.00>
@@ -868,7 +868,7 @@ br_ln121                      (br               ) [ 0000]
 zext_ln121                    (zext             ) [ 0000]
 KeccakF_RoundConstants_addr   (getelementptr    ) [ 0110]
 tmp_s                         (partselect       ) [ 0000]
-or_ln68                       (bitconcatenate   ) [ 0000]
+or_ln72                       (bitconcatenate   ) [ 0000]
 zext_ln262                    (zext             ) [ 0000]
 KeccakF_RoundConstants_addr_1 (getelementptr    ) [ 0110]
 add_ln121                     (add              ) [ 0000]
@@ -924,19 +924,19 @@ or_ln                         (bitconcatenate   ) [ 0000]
 Da                            (xor              ) [ 0000]
 trunc_ln133                   (trunc            ) [ 0000]
 tmp_268                       (bitselect        ) [ 0000]
-or_ln59                       (bitconcatenate   ) [ 0000]
+or_ln63                       (bitconcatenate   ) [ 0000]
 De                            (xor              ) [ 0000]
 trunc_ln134                   (trunc            ) [ 0000]
 tmp_269                       (bitselect        ) [ 0000]
-or_ln60                       (bitconcatenate   ) [ 0000]
+or_ln64                       (bitconcatenate   ) [ 0000]
 Di                            (xor              ) [ 0000]
 trunc_ln135                   (trunc            ) [ 0000]
 tmp_270                       (bitselect        ) [ 0000]
-or_ln61                       (bitconcatenate   ) [ 0000]
+or_ln65                       (bitconcatenate   ) [ 0000]
 Do                            (xor              ) [ 0000]
 trunc_ln136                   (trunc            ) [ 0000]
 tmp_271                       (bitselect        ) [ 0000]
-or_ln62                       (bitconcatenate   ) [ 0000]
+or_ln66                       (bitconcatenate   ) [ 0000]
 Du                            (xor              ) [ 0000]
 Aba_4                         (xor              ) [ 0000]
 Age_2                         (xor              ) [ 0000]
@@ -1134,23 +1134,23 @@ xor_ln240_2                   (xor              ) [ 0000]
 BCu_6                         (xor              ) [ 0000]
 trunc_ln244                   (trunc            ) [ 0000]
 tmp_273                       (bitselect        ) [ 0000]
-or_ln63                       (bitconcatenate   ) [ 0000]
+or_ln67                       (bitconcatenate   ) [ 0000]
 Da_1                          (xor              ) [ 0000]
 trunc_ln245                   (trunc            ) [ 0000]
 tmp_274                       (bitselect        ) [ 0000]
-or_ln64                       (bitconcatenate   ) [ 0000]
+or_ln68                       (bitconcatenate   ) [ 0000]
 De_1                          (xor              ) [ 0000]
 trunc_ln246                   (trunc            ) [ 0000]
 tmp_275                       (bitselect        ) [ 0000]
-or_ln65                       (bitconcatenate   ) [ 0000]
+or_ln69                       (bitconcatenate   ) [ 0000]
 Di_1                          (xor              ) [ 0000]
 trunc_ln247                   (trunc            ) [ 0000]
 tmp_276                       (bitselect        ) [ 0000]
-or_ln66                       (bitconcatenate   ) [ 0000]
+or_ln70                       (bitconcatenate   ) [ 0000]
 Do_1                          (xor              ) [ 0000]
 trunc_ln248                   (trunc            ) [ 0000]
 tmp_277                       (bitselect        ) [ 0000]
-or_ln67                       (bitconcatenate   ) [ 0000]
+or_ln71                       (bitconcatenate   ) [ 0000]
 Du_1                          (xor              ) [ 0000]
 Eba_2                         (xor              ) [ 0101]
 Ege_1                         (xor              ) [ 0000]
@@ -2650,7 +2650,7 @@ ret_ln0                       (ret              ) [ 0000]
 <pin id="275" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -2686,7 +2686,7 @@ ret_ln0                       (ret              ) [ 0000]
 <pin id="283" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_24"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -4013,7 +4013,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="894" class="1004" name="or_ln68_fu_894">
+<comp id="894" class="1004" name="or_ln72_fu_894">
 <pin_list>
 <pin id="895" dir="0" index="0" bw="5" slack="0"/>
 <pin id="896" dir="0" index="1" bw="4" slack="0"/>
@@ -4022,7 +4022,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln68/1 "/>
+<opset="or_ln72/1 "/>
 </bind>
 </comp>
 
@@ -4649,7 +4649,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="1151" class="1004" name="or_ln59_fu_1151">
+<comp id="1151" class="1004" name="or_ln63_fu_1151">
 <pin_list>
 <pin id="1152" dir="0" index="0" bw="64" slack="0"/>
 <pin id="1153" dir="0" index="1" bw="63" slack="0"/>
@@ -4658,7 +4658,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln59/2 "/>
+<opset="or_ln63/2 "/>
 </bind>
 </comp>
 
@@ -4698,7 +4698,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="1177" class="1004" name="or_ln60_fu_1177">
+<comp id="1177" class="1004" name="or_ln64_fu_1177">
 <pin_list>
 <pin id="1178" dir="0" index="0" bw="64" slack="0"/>
 <pin id="1179" dir="0" index="1" bw="63" slack="0"/>
@@ -4707,7 +4707,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln60/2 "/>
+<opset="or_ln64/2 "/>
 </bind>
 </comp>
 
@@ -4747,7 +4747,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="1203" class="1004" name="or_ln61_fu_1203">
+<comp id="1203" class="1004" name="or_ln65_fu_1203">
 <pin_list>
 <pin id="1204" dir="0" index="0" bw="64" slack="0"/>
 <pin id="1205" dir="0" index="1" bw="63" slack="0"/>
@@ -4756,7 +4756,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln61/2 "/>
+<opset="or_ln65/2 "/>
 </bind>
 </comp>
 
@@ -4796,7 +4796,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="1229" class="1004" name="or_ln62_fu_1229">
+<comp id="1229" class="1004" name="or_ln66_fu_1229">
 <pin_list>
 <pin id="1230" dir="0" index="0" bw="64" slack="0"/>
 <pin id="1231" dir="0" index="1" bw="63" slack="0"/>
@@ -4805,7 +4805,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln62/2 "/>
+<opset="or_ln66/2 "/>
 </bind>
 </comp>
 
@@ -7208,7 +7208,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="2507" class="1004" name="or_ln63_fu_2507">
+<comp id="2507" class="1004" name="or_ln67_fu_2507">
 <pin_list>
 <pin id="2508" dir="0" index="0" bw="64" slack="0"/>
 <pin id="2509" dir="0" index="1" bw="63" slack="0"/>
@@ -7217,7 +7217,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln63/2 "/>
+<opset="or_ln67/2 "/>
 </bind>
 </comp>
 
@@ -7257,7 +7257,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="2533" class="1004" name="or_ln64_fu_2533">
+<comp id="2533" class="1004" name="or_ln68_fu_2533">
 <pin_list>
 <pin id="2534" dir="0" index="0" bw="64" slack="0"/>
 <pin id="2535" dir="0" index="1" bw="63" slack="0"/>
@@ -7266,7 +7266,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln64/2 "/>
+<opset="or_ln68/2 "/>
 </bind>
 </comp>
 
@@ -7306,7 +7306,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="2559" class="1004" name="or_ln65_fu_2559">
+<comp id="2559" class="1004" name="or_ln69_fu_2559">
 <pin_list>
 <pin id="2560" dir="0" index="0" bw="64" slack="0"/>
 <pin id="2561" dir="0" index="1" bw="63" slack="0"/>
@@ -7315,7 +7315,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln65/2 "/>
+<opset="or_ln69/2 "/>
 </bind>
 </comp>
 
@@ -7355,7 +7355,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="2585" class="1004" name="or_ln66_fu_2585">
+<comp id="2585" class="1004" name="or_ln70_fu_2585">
 <pin_list>
 <pin id="2586" dir="0" index="0" bw="64" slack="0"/>
 <pin id="2587" dir="0" index="1" bw="63" slack="0"/>
@@ -7364,7 +7364,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln66/2 "/>
+<opset="or_ln70/2 "/>
 </bind>
 </comp>
 
@@ -7404,7 +7404,7 @@ ret_ln0                       (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="2611" class="1004" name="or_ln67_fu_2611">
+<comp id="2611" class="1004" name="or_ln71_fu_2611">
 <pin_list>
 <pin id="2612" dir="0" index="0" bw="64" slack="0"/>
 <pin id="2613" dir="0" index="1" bw="63" slack="0"/>
@@ -7413,7 +7413,7 @@ ret_ln0                       (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="or_ln67/2 "/>
+<opset="or_ln71/2 "/>
 </bind>
 </comp>
 
@@ -13717,7 +13717,7 @@ ret_ln0                       (ret              ) [ 0000]
 		KeccakF_RoundConstants_addr : 3
 		KeccakF_RoundConstants_load : 4
 		tmp_s : 2
-		or_ln68 : 3
+		or_ln72 : 3
 		zext_ln262 : 4
 		KeccakF_RoundConstants_addr_1 : 5
 		KeccakF_RoundConstants_load_1 : 6
@@ -13750,19 +13750,19 @@ ret_ln0                       (ret              ) [ 0000]
 		Da : 3
 		trunc_ln133 : 1
 		tmp_268 : 1
-		or_ln59 : 2
+		or_ln63 : 2
 		De : 3
 		trunc_ln134 : 1
 		tmp_269 : 1
-		or_ln60 : 2
+		or_ln64 : 2
 		Di : 3
 		trunc_ln135 : 1
 		tmp_270 : 1
-		or_ln61 : 2
+		or_ln65 : 2
 		Do : 3
 		trunc_ln136 : 1
 		tmp_271 : 1
-		or_ln62 : 2
+		or_ln66 : 2
 		Du : 3
 		Aba_4 : 3
 		Age_2 : 3
@@ -13959,23 +13959,23 @@ ret_ln0                       (ret              ) [ 0000]
 		BCu_6 : 5
 		trunc_ln244 : 5
 		tmp_273 : 5
-		or_ln63 : 6
+		or_ln67 : 6
 		Da_1 : 7
 		trunc_ln245 : 5
 		tmp_274 : 5
-		or_ln64 : 6
+		or_ln68 : 6
 		De_1 : 7
 		trunc_ln246 : 5
 		tmp_275 : 5
-		or_ln65 : 6
+		or_ln69 : 6
 		Di_1 : 7
 		trunc_ln247 : 5
 		tmp_276 : 5
-		or_ln66 : 6
+		or_ln70 : 6
 		Do_1 : 7
 		trunc_ln248 : 5
 		tmp_277 : 5
-		or_ln67 : 6
+		or_ln71 : 6
 		Du_1 : 7
 		Eba_2 : 7
 		Ege_1 : 7
@@ -14543,12 +14543,12 @@ ret_ln0                       (ret              ) [ 0000]
 |          |    lshr_ln45_fu_3079   |    0    |    0    |
 |          |    lshr_ln46_fu_3099   |    0    |    0    |
 |----------|------------------------|---------|---------|
-|          |     or_ln68_fu_894     |    0    |    0    |
+|          |     or_ln72_fu_894     |    0    |    0    |
 |          |      or_ln_fu_1125     |    0    |    0    |
-|          |     or_ln59_fu_1151    |    0    |    0    |
-|          |     or_ln60_fu_1177    |    0    |    0    |
-|          |     or_ln61_fu_1203    |    0    |    0    |
-|          |     or_ln62_fu_1229    |    0    |    0    |
+|          |     or_ln63_fu_1151    |    0    |    0    |
+|          |     or_ln64_fu_1177    |    0    |    0    |
+|          |     or_ln65_fu_1203    |    0    |    0    |
+|          |     or_ln66_fu_1229    |    0    |    0    |
 |          |      BCe_1_fu_1269     |    0    |    0    |
 |          |      BCi_1_fu_1297     |    0    |    0    |
 |          |      BCo_1_fu_1325     |    0    |    0    |
@@ -14573,11 +14573,11 @@ ret_ln0                       (ret              ) [ 0000]
 |          |      BCi_5_fu_2221     |    0    |    0    |
 |          |      BCo_5_fu_2249     |    0    |    0    |
 |bitconcatenate|      BCu_5_fu_2277     |    0    |    0    |
-|          |     or_ln63_fu_2507    |    0    |    0    |
-|          |     or_ln64_fu_2533    |    0    |    0    |
-|          |     or_ln65_fu_2559    |    0    |    0    |
-|          |     or_ln66_fu_2585    |    0    |    0    |
-|          |     or_ln67_fu_2611    |    0    |    0    |
+|          |     or_ln67_fu_2507    |    0    |    0    |
+|          |     or_ln68_fu_2533    |    0    |    0    |
+|          |     or_ln69_fu_2559    |    0    |    0    |
+|          |     or_ln70_fu_2585    |    0    |    0    |
+|          |     or_ln71_fu_2611    |    0    |    0    |
 |          |      BCe_7_fu_3109     |    0    |    0    |
 |          |      BCi_7_fu_3115     |    0    |    0    |
 |          |      BCo_7_fu_3121     |    0    |    0    |

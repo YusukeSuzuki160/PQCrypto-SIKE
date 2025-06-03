@@ -56,7 +56,7 @@ wire    ap_block_pp0_stage0_11001;
 reg   [3:0] i_reg_126;
 wire   [63:0] zext_ln14_fu_93_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln15_7_fu_109_p1;
+wire   [63:0] zext_ln15_8_fu_109_p1;
 reg   [3:0] i_283_fu_36;
 wire   [3:0] add_ln14_fu_87_p2;
 wire    ap_loop_init;
@@ -255,7 +255,7 @@ assign ap_ready = ap_ready_sig;
 
 assign icmp_ln14_fu_81_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign pts_X_address0 = zext_ln15_7_fu_109_p1;
+assign pts_X_address0 = zext_ln15_8_fu_109_p1;
 
 assign pts_X_ce0 = pts_X_ce0_local;
 
@@ -267,6 +267,6 @@ assign tmp_s_fu_103_p3 = {{npts_1}, {i_reg_126}};
 
 assign zext_ln14_fu_93_p1 = ap_sig_allocacmp_i;
 
-assign zext_ln15_7_fu_109_p1 = tmp_s_fu_103_p3;
+assign zext_ln15_8_fu_109_p1 = tmp_s_fu_103_p3;
 
 endmodule //sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1_Pipeline_VITIS_LOOP_14_1

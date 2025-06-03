@@ -792,7 +792,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>zext_ln35</name>
+						<name>zext_ln35_4</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -962,7 +962,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln35_4</name>
+						<name>zext_ln35</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1422,7 +1422,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>xor_ln35_14</name>
+						<name>xor_ln35_13</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1594,7 +1594,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>xor_ln35_15</name>
+						<name>xor_ln35_14</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -1822,7 +1822,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>xor_ln35_16</name>
+						<name>xor_ln35_15</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>

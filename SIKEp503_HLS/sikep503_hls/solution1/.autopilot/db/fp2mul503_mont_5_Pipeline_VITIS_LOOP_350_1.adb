@@ -348,7 +348,7 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>i_256</name>
+              <name>i_258</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>352</lineNumber>
@@ -2409,7 +2409,7 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>or_ln352_42</name>
+              <name>or_ln352_43</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>352</lineNumber>
@@ -2448,7 +2448,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln352_42_fu_233_p2</rtlName>
+              <rtlName>or_ln352_43_fu_233_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -4286,7 +4286,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln352_42_fu_233_p2 ( or ) </first>
+          <first>or_ln352_43_fu_233_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4567,7 +4567,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_256</first>
+          <first>ap_sig_allocacmp_i_258</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4785,7 +4785,7 @@
           </second>
         </item>
         <item>
-          <first>i_256_reg_254</first>
+          <first>i_258_reg_254</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4912,7 +4912,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln352_42_fu_233_p2 ( or ) </first>
+          <first>or_ln352_43_fu_233_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5679,7 +5679,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln352_42_fu_233</first>
+        <first>or_ln352_43_fu_233</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5839,7 +5839,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_256_load_fu_110</first>
+        <first>i_258_load_fu_110</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6034,7 +6034,7 @@
         </second>
       </item>
       <item>
-        <first>i_256_reg_254</first>
+        <first>i_258_reg_254</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

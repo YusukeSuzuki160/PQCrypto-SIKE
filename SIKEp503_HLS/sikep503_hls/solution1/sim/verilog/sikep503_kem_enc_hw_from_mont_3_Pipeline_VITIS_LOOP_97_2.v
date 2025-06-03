@@ -82,7 +82,7 @@ wire   [63:0] zext_ln97_fu_139_p1;
 reg   [63:0] reuse_addr_reg_fu_52;
 reg   [63:0] reuse_reg_fu_56;
 wire   [63:0] add_ln98_fu_209_p2;
-reg   [3:0] i_26_fu_60;
+reg   [3:0] i_33_fu_60;
 wire   [3:0] add_ln97_fu_175_p2;
 reg    t_i_ce0_local;
 reg   [3:0] t_i_address0_local;
@@ -123,7 +123,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
 #0 reuse_addr_reg_fu_52 = 64'd0;
 #0 reuse_reg_fu_56 = 64'd0;
-#0 i_26_fu_60 = 4'd0;
+#0 i_33_fu_60 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -219,9 +219,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            i_26_fu_60 <= 4'd0;
+            i_33_fu_60 <= 4'd0;
         end else if (((icmp_ln97_reg_314 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            i_26_fu_60 <= add_ln97_fu_175_p2;
+            i_33_fu_60 <= add_ln97_fu_175_p2;
         end
     end
 end
@@ -311,7 +311,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
         addr_cmp_reg_323 <= addr_cmp_fu_164_p2;
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-        i_reg_309 <= i_26_fu_60;
+        i_reg_309 <= i_33_fu_60;
         icmp_ln97_reg_314 <= icmp_ln97_fu_133_p2;
         icmp_ln97_reg_314_pp0_iter1_reg <= icmp_ln97_reg_314;
         reuse_select_reg_344 <= reuse_select_fu_193_p3;
@@ -494,7 +494,7 @@ assign ap_ready = ap_ready_sig;
 
 assign bit_sel_fu_234_p3 = tempReg_reg_349[64'd63];
 
-assign icmp_ln97_fu_133_p2 = ((i_26_fu_60 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln97_fu_133_p2 = ((i_33_fu_60 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln98_1_fu_269_p2 = (xor_ln98_3_fu_263_p2 | and_ln98_1_fu_258_p2);
 
@@ -518,7 +518,7 @@ assign tempReg_fu_203_p2 = (reuse_select_fu_193_p3 + zext_ln98_1_fu_199_p1);
 
 assign trunc_ln98_1_fu_247_p1 = tempReg_reg_349[62:0];
 
-assign trunc_ln98_fu_144_p1 = i_26_fu_60[2:0];
+assign trunc_ln98_fu_144_p1 = i_33_fu_60[2:0];
 
 assign xor_ln98_1_fu_224_p2 = (tempReg_reg_349 ^ and_ln98_reg_338);
 
@@ -530,7 +530,7 @@ assign xor_ln98_4_fu_241_p2 = (bit_sel_fu_234_p3 ^ 1'd1);
 
 assign xor_ln98_fu_219_p2 = (tempReg_reg_349 ^ add_ln98_fu_209_p2);
 
-assign zext_ln97_fu_139_p1 = i_26_fu_60;
+assign zext_ln97_fu_139_p1 = i_33_fu_60;
 
 assign zext_ln98_1_fu_199_p1 = borrow_reg_96;
 

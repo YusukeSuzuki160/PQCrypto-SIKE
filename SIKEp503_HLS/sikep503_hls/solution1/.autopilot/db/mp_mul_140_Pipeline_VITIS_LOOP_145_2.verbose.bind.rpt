@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_140_Pipeline_VITIS_LOOP_145_2'
 ================================================================
-* Date:           Tue May 27 14:16:23 2025
+* Date:           Tue Jun  3 14:11:27 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -138,9 +138,9 @@ ST_5 : Operation 64 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 State 6 <SV = 5> <Delay = 6.84>
 ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%u_95_out_load = load i4 %u_95_out" [src/generic/fp_generic.c:148]   --->   Operation 43 'load' 'u_95_out_load' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%v_114_load = load i64 %v_114" [src/generic/fp_generic.c:147]   --->   Operation 44 'load' 'v_114_load' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 45 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:139]   --->   Operation 45 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 45 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:139]   --->   Operation 45 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 46 [1/1] (0.00ns)   --->   "%speclooptripcount_ln139 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 8, i64 4" [src/generic/fp_generic.c:139]   --->   Operation 46 'speclooptripcount' 'speclooptripcount_ln139' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln145 = specloopname void @_ssdm_op_SpecLoopName, void @empty_27" [src/generic/fp_generic.c:145]   --->   Operation 47 'specloopname' 'specloopname_ln145' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln145 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [src/generic/fp_generic.c:145]   --->   Operation 47 'specloopname' 'specloopname_ln145' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node v_202)   --->   "%and_ln106 = and i32 %al, i32 %select_ln106" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:146]   --->   Operation 48 'and' 'and_ln106' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %temp, i32 0" [src/generic/fp_generic.c:125->src/generic/fp_generic.c:146]   --->   Operation 49 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node v_202)   --->   "%or_ln = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %temp, i32 %and_ln106" [src/generic/fp_generic.c:147]   --->   Operation 50 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
@@ -417,7 +417,7 @@ ret_ln0                 (ret              ) [ 0000000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -471,7 +471,7 @@ ret_ln0                 (ret              ) [ 0000000]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_27"/></StgValue>
+<StgValue><ssdm name="empty_18"/></StgValue>
 </bind>
 </comp>
 

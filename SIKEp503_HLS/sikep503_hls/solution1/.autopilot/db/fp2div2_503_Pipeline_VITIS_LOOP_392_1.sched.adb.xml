@@ -25,10 +25,10 @@
 
 <Node id="3" bw="3" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_240 = alloca i32 1
+newFuncRoot:0 %i_242 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_240"/></StgValue>
+<StgValue><ssdm name="i_242"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -40,7 +40,7 @@ newFuncRoot:0 %i_240 = alloca i32 1
 
 <Node id="4" bw="0" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-newFuncRoot:1 %store_ln390 = store i3 0, i3 %i_240
+newFuncRoot:1 %store_ln390 = store i3 0, i3 %i_242
 
 ]]></Node>
 <StgValue><ssdm name="store_ln390"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i.i
 
 <Node id="7" bw="3" op_0_bw="3" op_1_bw="0">
 <![CDATA[
-for.inc.i.i:0 %i = load i3 %i_240
+for.inc.i.i:0 %i = load i3 %i_242
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -357,7 +357,7 @@ fpdiv2_503.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.i.split:1 %specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i.i.split:1 %specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln390"/></StgValue>
@@ -387,7 +387,7 @@ for.inc.i.i.split:2 %speclooptripcount_ln390 = speclooptripcount void @_ssdm_op_
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.i.split:3 %specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_92
+for.inc.i.i.split:3 %specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_89
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln392"/></StgValue>
@@ -648,7 +648,7 @@ arrayidx.i.i495.case.1:1 %br_ln394 = br void %arrayidx.i.i495.exit
 
 <Node id="43" bw="0" op_0_bw="3" op_1_bw="3" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-arrayidx.i.i495.exit:0 %store_ln390 = store i3 %add_ln394, i3 %i_240
+arrayidx.i.i495.exit:0 %store_ln390 = store i3 %add_ln394, i3 %i_242
 
 ]]></Node>
 <StgValue><ssdm name="store_ln390"/></StgValue>

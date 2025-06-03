@@ -36,17 +36,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2496 \
-    name ephemeralsk \
+    id 2495 \
+    name ephemeralsk_i \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename ephemeralsk \
+    corename ephemeralsk_i \
     op interface \
-    ports { ephemeralsk_address0 { O 5 vector } ephemeralsk_ce0 { O 1 bit } ephemeralsk_q0 { I 8 vector } ephemeralsk_address1 { O 5 vector } ephemeralsk_ce1 { O 1 bit } ephemeralsk_q1 { I 8 vector } } \
+    ports { ephemeralsk_i_address0 { O 5 vector } ephemeralsk_i_ce0 { O 1 bit } ephemeralsk_i_q0 { I 8 vector } ephemeralsk_i_address1 { O 5 vector } ephemeralsk_i_ce1 { O 1 bit } ephemeralsk_i_q1 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'ephemeralsk'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'ephemeralsk_i'"
 }
 }
 
@@ -55,7 +55,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2499 \
+    id 2498 \
     name strat_Alice_1 \
     reset_level 1 \
     sync_rst true \
@@ -73,7 +73,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2497 \
+    id 2496 \
     name gmem \
     type other \
     dir O \
@@ -88,7 +88,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2498 \
+    id 2497 \
     name PublicKeyA \
     type other \
     dir I \

@@ -194,7 +194,7 @@ reg    b_ce0_local;
 wire   [6:0] shl_ln8_fu_236_p3;
 wire   [8:0] zext_ln160_3_fu_244_p1;
 wire   [8:0] add_ln160_fu_248_p2;
-wire   [5:0] lshr_ln8_fu_254_p4;
+wire   [5:0] lshr_ln9_fu_254_p4;
 wire   [2:0] trunc_ln159_fu_232_p1;
 wire   [2:0] sub_ln160_fu_269_p2;
 wire   [32:0] zext_ln123_fu_398_p1;
@@ -213,7 +213,7 @@ wire   [31:0] trunc_ln130_fu_466_p1;
 wire   [31:0] add_ln130_fu_446_p2;
 wire   [33:0] zext_ln130_56_fu_470_p1;
 wire   [33:0] zext_ln130_55_fu_456_p1;
-wire   [33:0] temp_31_fu_480_p2;
+wire   [33:0] temp_34_fu_480_p2;
 wire   [33:0] and_ln133_9_fu_513_p3;
 wire   [63:0] zext_ln133_fu_520_p1;
 wire   [63:0] and_ln133_8_fu_506_p3;
@@ -438,7 +438,7 @@ always @ (posedge ap_clk) begin
         tmp_154_reg_827 <= {{grp_fu_468_p_dout0[63:32]}};
         tmp_154_reg_827_pp0_iter4_reg <= tmp_154_reg_827;
         tmp_154_reg_827_pp0_iter5_reg <= tmp_154_reg_827_pp0_iter4_reg;
-        tmp_155_reg_848 <= {{temp_31_fu_480_p2[33:32]}};
+        tmp_155_reg_848 <= {{temp_34_fu_480_p2[33:32]}};
         tmp_s_reg_811 <= {{grp_fu_456_p_dout0[63:32]}};
         trunc_ln106_96_reg_795 <= trunc_ln106_96_fu_343_p1;
         trunc_ln106_97_reg_800 <= trunc_ln106_97_fu_347_p1;
@@ -666,7 +666,7 @@ assign icmp_ln159_fu_226_p2 = ((ap_sig_allocacmp_j == 4'd8) ? 1'b1 : 1'b0);
 
 assign indvars_iv_cast_fu_198_p1 = indvars_iv;
 
-assign lshr_ln8_fu_254_p4 = {{add_ln160_fu_248_p2[8:3]}};
+assign lshr_ln9_fu_254_p4 = {{add_ln160_fu_248_p2[8:3]}};
 
 assign or_ln105_3_fu_554_p2 = (xor_ln105_14_fu_548_p2 | xor_ln105_13_fu_542_p2);
 
@@ -690,7 +690,7 @@ assign t_fu_690_p2 = (zext_ln163_fu_686_p1 + t_33_fu_96);
 
 assign tempReg_fu_595_p2 = (or_ln9_fu_588_p3 + zext_ln105_69_fu_574_p1);
 
-assign temp_31_fu_480_p2 = (zext_ln130_56_fu_470_p1 + zext_ln130_55_fu_456_p1);
+assign temp_34_fu_480_p2 = (zext_ln130_56_fu_470_p1 + zext_ln130_55_fu_456_p1);
 
 assign temp_fu_414_p2 = (zext_ln123_56_fu_410_p1 + zext_ln106_fu_395_p1);
 
@@ -774,7 +774,7 @@ assign zext_ln160_3_fu_244_p1 = shl_ln8_fu_236_p3;
 
 assign zext_ln160_4_fu_275_p1 = sub_ln160_fu_269_p2;
 
-assign zext_ln160_fu_264_p1 = lshr_ln8_fu_254_p4;
+assign zext_ln160_fu_264_p1 = lshr_ln9_fu_254_p4;
 
 assign zext_ln163_fu_686_p1 = tmp_120_fu_678_p3;
 

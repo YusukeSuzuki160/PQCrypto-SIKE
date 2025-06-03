@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_2_Pipeline_VITIS_LOOP_28_2'" level="0">
-<item name = "Date">Tue May 27 14:17:41 2025
+<item name = "Date">Tue Jun  3 14:12:44 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -101,7 +101,7 @@
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="carry_reg_85">9, 2, 1, 2</column>
-<column name="i_145_fu_44">9, 2, 4, 8</column>
+<column name="i_147_fu_44">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -115,7 +115,7 @@
 <column name="c_addr_reg_235_pp0_iter1_reg">3, 0, 4, 1</column>
 <column name="c_load_reg_246">64, 0, 64, 0</column>
 <column name="carry_reg_85">1, 0, 1, 0</column>
-<column name="i_145_fu_44">4, 0, 4, 0</column>
+<column name="i_147_fu_44">4, 0, 4, 0</column>
 <column name="icmp_ln28_reg_231">1, 0, 1, 0</column>
 <column name="icmp_ln28_reg_231_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="p503x2_1_load_reg_252">64, 0, 64, 0</column>

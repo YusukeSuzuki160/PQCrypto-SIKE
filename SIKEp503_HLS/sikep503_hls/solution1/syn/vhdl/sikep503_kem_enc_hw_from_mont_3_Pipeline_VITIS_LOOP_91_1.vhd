@@ -66,7 +66,7 @@ attribute shreg_extract : string;
     signal p503_1_q0 : STD_LOGIC_VECTOR (63 downto 0);
     signal borrow_reg_91 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
-    signal i_93_reg_289 : STD_LOGIC_VECTOR (3 downto 0);
+    signal i_96_reg_289 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_block_pp0_stage1_11001 : BOOLEAN;
     signal icmp_ln91_reg_294 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln91_reg_294_pp0_iter1_reg : STD_LOGIC_VECTOR (0 downto 0);
@@ -376,7 +376,7 @@ begin
             if (((ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1))) then
                 addr_cmp_reg_303 <= addr_cmp_fu_153_p2;
                 ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-                i_93_reg_289 <= i_fu_54;
+                i_96_reg_289 <= i_fu_54;
                 icmp_ln91_reg_294 <= icmp_ln91_fu_122_p2;
                 icmp_ln91_reg_294_pp0_iter1_reg <= icmp_ln91_reg_294;
                     t_i_addr_reg_298(2 downto 0) <= zext_ln92_2_fu_145_p1(4 - 1 downto 0)(2 downto 0);
@@ -425,7 +425,7 @@ begin
                 ap_NS_fsm <= "XX";
         end case;
     end process;
-    add_ln91_fu_164_p2 <= std_logic_vector(unsigned(i_93_reg_289) + unsigned(ap_const_lv4_1));
+    add_ln91_fu_164_p2 <= std_logic_vector(unsigned(i_96_reg_289) + unsigned(ap_const_lv4_1));
     addr_cmp_fu_153_p2 <= "1" when (reuse_addr_reg_fu_46 = zext_ln92_2_fu_145_p1) else "0";
     and_ln92_fu_242_p2 <= (xor_ln92_fu_236_p2 and borrow_reg_91);
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);

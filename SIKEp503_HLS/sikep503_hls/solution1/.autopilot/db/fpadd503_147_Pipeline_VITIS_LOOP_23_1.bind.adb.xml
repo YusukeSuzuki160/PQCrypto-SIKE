@@ -91,10 +91,10 @@ newFuncRoot:3 %br_ln0 = br void %for.inc
 
 <Node id="10" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc:1 %i_231 = load i4 %i
+for.inc:1 %i_233 = load i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="i_231"/></StgValue>
+<StgValue><ssdm name="i_233"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -106,7 +106,7 @@ for.inc:1 %i_231 = load i4 %i
 
 <Node id="11" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc:2 %icmp_ln23 = icmp_eq  i4 %i_231, i4 8
+for.inc:2 %icmp_ln23 = icmp_eq  i4 %i_233, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln23"/></StgValue>
@@ -121,7 +121,7 @@ for.inc:2 %icmp_ln23 = icmp_eq  i4 %i_231, i4 8
 
 <Node id="12" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc:3 %add_ln23 = add i4 %i_231, i4 1
+for.inc:3 %add_ln23 = add i4 %i_233, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln23"/></StgValue>
@@ -137,7 +137,7 @@ for.inc:3 %add_ln23 = add i4 %i_231, i4 1
 
 <Node id="15" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.split:0 %zext_ln23 = zext i4 %i_231
+for.inc.split:0 %zext_ln23 = zext i4 %i_233
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln23"/></StgValue>
@@ -169,7 +169,7 @@ for.inc.split:1 %a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln23
 
 <Node id="17" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.split:2 %add_ln24 = add i4 %zext_ln24_31_read, i4 %i_231
+for.inc.split:2 %add_ln24 = add i4 %zext_ln24_31_read, i4 %i_233
 
 ]]></Node>
 <StgValue><ssdm name="add_ln24"/></StgValue>
@@ -381,7 +381,7 @@ for.inc29.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:5 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.split:5 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln20"/></StgValue>
@@ -413,7 +413,7 @@ for.inc.split:6 %speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_SpecL
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:7 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_42
+for.inc.split:7 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_82
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln23"/></StgValue>
@@ -672,17 +672,17 @@ for.inc.split:26 %br_ln23 = br void %for.inc
 </dataflow>
 <dataflow id="67" from="i" to="store_ln20" fromId="6" toId="8">
 </dataflow>
-<dataflow id="68" from="i" to="i_231" fromId="6" toId="10">
+<dataflow id="68" from="i" to="i_233" fromId="6" toId="10">
 </dataflow>
-<dataflow id="69" from="i_231" to="icmp_ln23" fromId="10" toId="11">
+<dataflow id="69" from="i_233" to="icmp_ln23" fromId="10" toId="11">
 </dataflow>
 <dataflow id="71" from="StgValue_70" to="icmp_ln23" fromId="70" toId="11">
 </dataflow>
-<dataflow id="72" from="i_231" to="add_ln23" fromId="10" toId="12">
+<dataflow id="72" from="i_233" to="add_ln23" fromId="10" toId="12">
 </dataflow>
 <dataflow id="74" from="StgValue_73" to="add_ln23" fromId="73" toId="12">
 </dataflow>
-<dataflow id="75" from="i_231" to="zext_ln23" fromId="10" toId="13">
+<dataflow id="75" from="i_233" to="zext_ln23" fromId="10" toId="13">
 </dataflow>
 <dataflow id="76" from="a" to="a_addr" fromId="57" toId="14">
 </dataflow>
@@ -692,7 +692,7 @@ for.inc.split:26 %br_ln23 = br void %for.inc
 </dataflow>
 <dataflow id="80" from="zext_ln24_31_read" to="add_ln24" fromId="7" toId="15">
 </dataflow>
-<dataflow id="81" from="i_231" to="add_ln24" fromId="10" toId="15">
+<dataflow id="81" from="i_233" to="add_ln24" fromId="10" toId="15">
 </dataflow>
 <dataflow id="82" from="add_ln24" to="zext_ln24_39" fromId="15" toId="16">
 </dataflow>
@@ -749,7 +749,7 @@ for.inc.split:26 %br_ln23 = br void %for.inc
 </dataflow>
 <dataflow id="108" from="StgValue_105" to="specpipeline_ln20" fromId="105" toId="27">
 </dataflow>
-<dataflow id="110" from="empty_44" to="specpipeline_ln20" fromId="109" toId="27">
+<dataflow id="110" from="empty_60" to="specpipeline_ln20" fromId="109" toId="27">
 </dataflow>
 <dataflow id="112" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln20" fromId="111" toId="28">
 </dataflow>
@@ -761,7 +761,7 @@ for.inc.split:26 %br_ln23 = br void %for.inc
 </dataflow>
 <dataflow id="118" from="_ssdm_op_SpecLoopName" to="specloopname_ln23" fromId="117" toId="29">
 </dataflow>
-<dataflow id="120" from="empty_42" to="specloopname_ln23" fromId="119" toId="29">
+<dataflow id="120" from="empty_82" to="specloopname_ln23" fromId="119" toId="29">
 </dataflow>
 <dataflow id="121" from="c_load" to="add_ln24_32" fromId="26" toId="30">
 </dataflow>

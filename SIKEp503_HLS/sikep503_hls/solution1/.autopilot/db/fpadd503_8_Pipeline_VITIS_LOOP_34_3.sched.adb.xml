@@ -31,10 +31,10 @@
 
 <Node id="4" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_130 = alloca i32 1
+newFuncRoot:0 %i_128 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_130"/></StgValue>
+<StgValue><ssdm name="i_128"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -91,7 +91,7 @@ newFuncRoot:3 %sext_ln21_cast = select i1 %sext_ln21_read, i64 18446744073709551
 
 <Node id="8" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:4 %store_ln20 = store i4 0, i4 %i_130
+newFuncRoot:4 %store_ln20 = store i4 0, i4 %i_128
 
 ]]></Node>
 <StgValue><ssdm name="store_ln20"/></StgValue>
@@ -136,7 +136,7 @@ for.inc54:0 %carry = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc54.split
 
 <Node id="12" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc54:1 %i = load i4 %i_130
+for.inc54:1 %i = load i4 %i_128
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -325,7 +325,7 @@ for.inc54.split:12 %p503x2_1_load = load i3 %p503x2_1_addr
 
 <Node id="44" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc54.split:27 %store_ln20 = store i4 %add_ln34, i4 %i_130
+for.inc54.split:27 %store_ln20 = store i4 %add_ln34, i4 %i_128
 
 ]]></Node>
 <StgValue><ssdm name="store_ln20"/></StgValue>
@@ -437,7 +437,7 @@ for.inc54.split:13 %and_ln35 = and i64 %p503x2_1_load, i64 %sext_ln21_cast
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc54.split:1 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc54.split:1 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln20"/></StgValue>
@@ -467,7 +467,7 @@ for.inc54.split:2 %speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc54.split:3 %specloopname_ln34 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
+for.inc54.split:3 %specloopname_ln34 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln34"/></StgValue>
@@ -527,10 +527,10 @@ for.inc54.split:16 %xor_ln35 = xor i64 %add_ln35, i64 %tempReg
 
 <Node id="34" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc54.split:17 %xor_ln35_5 = xor i64 %and_ln35, i64 %tempReg
+for.inc54.split:17 %xor_ln35_4 = xor i64 %and_ln35, i64 %tempReg
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln35_5"/></StgValue>
+<StgValue><ssdm name="xor_ln35_4"/></StgValue>
 </operation>
 
 <operation id="38" st_id="3" stage="1" lat="1">
@@ -542,7 +542,7 @@ for.inc54.split:17 %xor_ln35_5 = xor i64 %and_ln35, i64 %tempReg
 
 <Node id="35" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc54.split:18 %or_ln35 = or i64 %xor_ln35, i64 %xor_ln35_5
+for.inc54.split:18 %or_ln35 = or i64 %xor_ln35, i64 %xor_ln35_4
 
 ]]></Node>
 <StgValue><ssdm name="or_ln35"/></StgValue>
@@ -572,10 +572,10 @@ for.inc54.split:19 %bit_sel1 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 
 
 <Node id="37" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc54.split:20 %xor_ln35_6 = xor i1 %bit_sel1, i1 1
+for.inc54.split:20 %xor_ln35_7 = xor i1 %bit_sel1, i1 1
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln35_6"/></StgValue>
+<StgValue><ssdm name="xor_ln35_7"/></StgValue>
 </operation>
 
 <operation id="41" st_id="3" stage="1" lat="1">
@@ -602,10 +602,10 @@ for.inc54.split:21 %trunc_ln35_1 = trunc i64 %tempReg
 
 <Node id="39" bw="64" op_0_bw="64" op_1_bw="1" op_2_bw="63">
 <![CDATA[
-for.inc54.split:22 %xor_ln35_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln35_6, i63 %trunc_ln35_1
+for.inc54.split:22 %xor_ln35_5 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln35_7, i63 %trunc_ln35_1
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln35_s"/></StgValue>
+<StgValue><ssdm name="xor_ln35_5"/></StgValue>
 </operation>
 
 <operation id="43" st_id="3" stage="1" lat="1">
@@ -617,7 +617,7 @@ for.inc54.split:22 %xor_ln35_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64
 
 <Node id="40" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc54.split:23 %and_ln35_2 = and i64 %coeff_load, i64 %xor_ln35_s
+for.inc54.split:23 %and_ln35_2 = and i64 %coeff_load, i64 %xor_ln35_5
 
 ]]></Node>
 <StgValue><ssdm name="and_ln35_2"/></StgValue>
@@ -632,10 +632,10 @@ for.inc54.split:23 %and_ln35_2 = and i64 %coeff_load, i64 %xor_ln35_s
 
 <Node id="41" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc54.split:24 %xor_ln35_7 = xor i64 %or_ln35, i64 %add_ln35
+for.inc54.split:24 %xor_ln35_6 = xor i64 %or_ln35, i64 %add_ln35
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln35_7"/></StgValue>
+<StgValue><ssdm name="xor_ln35_6"/></StgValue>
 </operation>
 
 <operation id="45" st_id="3" stage="1" lat="1">
@@ -647,7 +647,7 @@ for.inc54.split:24 %xor_ln35_7 = xor i64 %or_ln35, i64 %add_ln35
 
 <Node id="42" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc54.split:25 %or_ln35_2 = or i64 %xor_ln35_7, i64 %and_ln35_2
+for.inc54.split:25 %or_ln35_2 = or i64 %xor_ln35_6, i64 %and_ln35_2
 
 ]]></Node>
 <StgValue><ssdm name="or_ln35_2"/></StgValue>

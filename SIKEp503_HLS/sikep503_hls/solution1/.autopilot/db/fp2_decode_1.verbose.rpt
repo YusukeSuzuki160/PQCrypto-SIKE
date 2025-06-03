@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_1'
 ================================================================
-* Date:           Tue May 27 14:19:31 2025
+* Date:           Tue Jun  3 14:14:34 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -100,7 +100,7 @@
     |   Memory  |               Module               | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +-----------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |temp_U     |fpsqr503_mont_1_temp_RAM_AUTO_1R1W  |        2|  0|   0|    0|    16|   64|     1|         1024|
-    |temp_72_U  |fpsqr503_mont_1_temp_RAM_AUTO_1R1W  |        2|  0|   0|    0|    16|   64|     1|         1024|
+    |temp_75_U  |fpsqr503_mont_1_temp_RAM_AUTO_1R1W  |        2|  0|   0|    0|    16|   64|     1|         1024|
     +-----------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |Total      |                                    |        4|  0|   0|    0|    32|  128|     2|         2048|
     +-----------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
@@ -131,10 +131,10 @@
     |grp_fu_143_ce        |   9|          2|    1|          2|
     |grp_fu_147_ce        |   9|          2|    1|          2|
     |grp_fu_151_ce        |   9|          2|    1|          2|
-    |temp_72_address0     |  20|          4|    4|         16|
-    |temp_72_ce0          |  20|          4|    1|          4|
-    |temp_72_d0           |  14|          3|   64|        192|
-    |temp_72_we0          |  14|          3|    1|          3|
+    |temp_75_address0     |  20|          4|    4|         16|
+    |temp_75_ce0          |  20|          4|    1|          4|
+    |temp_75_d0           |  14|          3|   64|        192|
+    |temp_75_we0          |  14|          3|    1|          3|
     |temp_address0        |  20|          4|    4|         16|
     |temp_ce0             |  20|          4|    1|          4|
     |temp_d0              |  14|          3|   64|        192|
@@ -175,22 +175,22 @@
 |ap_done                   |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |ap_idle                   |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |ap_ready                  |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1361_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1361_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1361_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1361_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1365_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1365_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1365_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1365_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1369_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1369_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1369_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
-|grp_fu_1369_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |grp_fu_1373_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |grp_fu_1373_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |grp_fu_1373_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |grp_fu_1373_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1377_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1377_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1377_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1377_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1381_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1381_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1381_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1381_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1385_p_din0        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1385_p_din1        |  out|   32|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1385_p_dout0       |   in|   64|  ap_ctrl_hs|     fp2_decode.1|  return value|
+|grp_fu_1385_p_ce          |  out|    1|  ap_ctrl_hs|     fp2_decode.1|  return value|
 |m_axi_gmem_0_AWVALID      |  out|    1|       m_axi|             gmem|       pointer|
 |m_axi_gmem_0_AWREADY      |   in|    1|       m_axi|             gmem|       pointer|
 |m_axi_gmem_0_AWADDR       |  out|   64|       m_axi|             gmem|       pointer|
@@ -296,14 +296,14 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 3.25>
 ST_1 : Operation 13 [1/1] (3.25ns)   --->   "%temp = alloca i64 1" [src/fpx.c:61->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 13 'alloca' 'temp' <Predicate = true> <Delay = 3.25>
-ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%temp_72 = alloca i64 1" [src/fpx.c:61->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 14 'alloca' 'temp_72' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%temp_75 = alloca i64 1" [src/fpx.c:61->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 14 'alloca' 'temp_75' <Predicate = true> <Delay = 3.25>
 ST_1 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_53_1, i64 %PKB"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_3, i64 %temp_72"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_3, i64 %temp_75"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_4, i64 %temp"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 5.09>
 ST_2 : Operation 18 [1/2] (5.09ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_53_1, i64 %PKB"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 5.09> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 19 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_3, i64 %temp_72"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 19 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_3, i64 %temp_75"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 20 [1/2] (4.95ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_4, i64 %temp"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 3.52>
@@ -314,16 +314,16 @@ State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.1_Pipeline_VITIS_LOOP_55_2, i64 %enc_read, i8 %gmem, i64 %PKB"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.6, i64 %PKB, i64 %temp_72, i64 %Montgomery_R2_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 24 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.6, i64 %PKB, i64 %temp_75, i64 %Montgomery_R2_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 24 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.73>
-ST_6 : Operation 25 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.6, i64 %PKB, i64 %temp_72, i64 %Montgomery_R2_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 25 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 25 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.6, i64 %PKB, i64 %temp_75, i64 %Montgomery_R2_1" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 25 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.3, i64 %temp_72, i64 %PKB, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 26 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.3, i64 %temp_75, i64 %PKB, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 26 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.3, i64 %temp_72, i64 %PKB, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 27 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.3, i64 %temp_75, i64 %PKB, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:332->src/sidh.c:60]   --->   Operation 27 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.862, i64 %PKB, i9 64, i64 %Montgomery_R2_1, i64 %temp" [src/fpx.c:63->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 28 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -335,7 +335,7 @@ State 11 <SV = 10> <Delay = 5.07>
 ST_11 : Operation 30 [2/2] (5.07ns)   --->   "%call_ln64 = call void @rdc_mont.4, i64 %temp, i64 %PKB, i9 64, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 30 'call' 'call_ln64' <Predicate = true> <Delay = 5.07> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_86, i32 0, i32 0, void @empty_44, i32 0, i32 402, void @empty_58, void @empty_28, void @empty_44, i32 16, i32 16, i32 16, i32 16, void @empty_44, void @empty_44, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_8, i32 0, i32 0, void @empty_60, i32 0, i32 402, void @empty_44, void @empty_72, void @empty_60, i32 16, i32 16, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 32 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 32 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 33 [1/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.4, i64 %temp, i64 %PKB, i9 64, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:33->src/fpx.c:333->src/sidh.c:60]   --->   Operation 33 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_12 : Operation 34 [1/1] (0.00ns)   --->   "%ret_ln61 = ret" [src/sidh.c:61]   --->   Operation 34 'ret' 'ret_ln61' <Predicate = true> <Delay = 0.00>
@@ -364,7 +364,7 @@ Port [ p503p1_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; e
 <LifeTime>
 <method=bitvector/>
 temp                       (alloca                ) [ 0011111111111]
-temp_72                    (alloca                ) [ 0011111110000]
+temp_75                    (alloca                ) [ 0011111110000]
 call_ln0                   (call                  ) [ 0000000000000]
 call_ln0                   (call                  ) [ 0000000000000]
 call_ln0                   (call                  ) [ 0000000000000]
@@ -544,7 +544,7 @@ ret_ln61                   (ret                   ) [ 0000000000000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_86"/></StgValue>
+<StgValue><ssdm name="empty_8"/></StgValue>
 </bind>
 </comp>
 
@@ -562,7 +562,7 @@ ret_ln61                   (ret                   ) [ 0000000000000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -580,7 +580,7 @@ ret_ln61                   (ret                   ) [ 0000000000000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_58"/></StgValue>
+<StgValue><ssdm name="empty_44"/></StgValue>
 </bind>
 </comp>
 
@@ -589,7 +589,7 @@ ret_ln61                   (ret                   ) [ 0000000000000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_72"/></StgValue>
 </bind>
 </comp>
 
@@ -631,14 +631,14 @@ ret_ln61                   (ret                   ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="56" class="1004" name="temp_72_alloca_fu_56">
+<comp id="56" class="1004" name="temp_75_alloca_fu_56">
 <pin_list>
 <pin id="57" dir="0" index="0" bw="1" slack="0"/>
 <pin id="58" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="temp_72/1 "/>
+<opset="temp_75/1 "/>
 </bind>
 </comp>
 
@@ -949,7 +949,7 @@ Memories:
 |       |  BRAM  |   FF   |   LUT  |  URAM  |
 +-------+--------+--------+--------+--------+
 |  temp |    2   |    0   |    0   |    0   |
-|temp_72|    2   |    0   |    0   |    0   |
+|temp_75|    2   |    0   |    0   |    0   |
 +-------+--------+--------+--------+--------+
 | Total |    4   |    0   |    0   |    0   |
 +-------+--------+--------+--------+--------+

@@ -73,7 +73,7 @@ wire    ap_block_pp0_stage0_subdone;
 wire    ap_loop_init;
 wire   [63:0] zext_ln34_fu_135_p1;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_132_fu_56;
+reg   [3:0] i_134_fu_56;
 wire   [3:0] add_ln34_fu_129_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    coeff_ce1_local;
@@ -84,15 +84,15 @@ reg    p503x2_1_ce0_local;
 wire    ap_block_pp0_stage1;
 wire   [63:0] zext_ln35_fu_146_p1;
 wire   [63:0] xor_ln35_fu_166_p2;
-wire   [63:0] xor_ln35_11_fu_171_p2;
+wire   [63:0] xor_ln35_8_fu_171_p2;
 wire   [0:0] bit_sel1_fu_181_p3;
-wire   [0:0] xor_ln35_12_fu_188_p2;
+wire   [0:0] xor_ln35_9_fu_188_p2;
 wire   [62:0] trunc_ln35_fu_194_p1;
 wire   [63:0] xor_ln35_s_fu_197_p3;
 wire   [63:0] or_ln35_fu_175_p2;
-wire   [63:0] xor_ln35_13_fu_210_p2;
-wire   [63:0] and_ln35_4_fu_205_p2;
-wire   [63:0] or_ln35_4_fu_216_p2;
+wire   [63:0] xor_ln35_10_fu_210_p2;
+wire   [63:0] and_ln35_3_fu_205_p2;
+wire   [63:0] or_ln35_3_fu_216_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -110,7 +110,7 @@ initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 i_132_fu_56 = 4'd0;
+#0 i_134_fu_56 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -186,7 +186,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
         if ((1'b1 == ap_condition_271)) begin
-            carry_reg_96 <= or_ln35_4_fu_216_p2[32'd63];
+            carry_reg_96 <= or_ln35_3_fu_216_p2[32'd63];
         end else if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_loop_init == 1'b1))) begin
             carry_reg_96 <= 1'd0;
         end
@@ -196,9 +196,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln34_fu_123_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_132_fu_56 <= add_ln34_fu_129_p2;
+            i_134_fu_56 <= add_ln34_fu_129_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_132_fu_56 <= 4'd0;
+            i_134_fu_56 <= 4'd0;
         end
     end
 end
@@ -284,7 +284,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_132_fu_56;
+        ap_sig_allocacmp_i = i_134_fu_56;
     end
 end
 
@@ -346,7 +346,7 @@ assign add_ln34_fu_129_p2 = (ap_sig_allocacmp_i + 4'd1);
 
 assign add_ln35_fu_161_p2 = (and_ln35_reg_271 + tempReg_reg_262);
 
-assign and_ln35_4_fu_205_p2 = (xor_ln35_s_fu_197_p3 & coeff_load_reg_257);
+assign and_ln35_3_fu_205_p2 = (xor_ln35_s_fu_197_p3 & coeff_load_reg_257);
 
 assign and_ln35_fu_156_p2 = (sext_ln21_cast_reg_237 & p503x2_1_q0);
 
@@ -394,9 +394,9 @@ assign coeff_we0 = coeff_we0_local;
 
 assign icmp_ln34_fu_123_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign or_ln35_4_fu_216_p2 = (xor_ln35_13_fu_210_p2 | and_ln35_4_fu_205_p2);
+assign or_ln35_3_fu_216_p2 = (xor_ln35_10_fu_210_p2 | and_ln35_3_fu_205_p2);
 
-assign or_ln35_fu_175_p2 = (xor_ln35_fu_166_p2 | xor_ln35_11_fu_171_p2);
+assign or_ln35_fu_175_p2 = (xor_ln35_fu_166_p2 | xor_ln35_8_fu_171_p2);
 
 assign p503x2_1_address0 = zext_ln34_fu_135_p1;
 
@@ -406,15 +406,15 @@ assign tempReg_fu_150_p2 = (coeff_q1 + zext_ln35_fu_146_p1);
 
 assign trunc_ln35_fu_194_p1 = tempReg_reg_262[62:0];
 
-assign xor_ln35_11_fu_171_p2 = (tempReg_reg_262 ^ and_ln35_reg_271);
+assign xor_ln35_10_fu_210_p2 = (or_ln35_fu_175_p2 ^ add_ln35_fu_161_p2);
 
-assign xor_ln35_12_fu_188_p2 = (bit_sel1_fu_181_p3 ^ 1'd1);
+assign xor_ln35_8_fu_171_p2 = (tempReg_reg_262 ^ and_ln35_reg_271);
 
-assign xor_ln35_13_fu_210_p2 = (or_ln35_fu_175_p2 ^ add_ln35_fu_161_p2);
+assign xor_ln35_9_fu_188_p2 = (bit_sel1_fu_181_p3 ^ 1'd1);
 
 assign xor_ln35_fu_166_p2 = (tempReg_reg_262 ^ add_ln35_fu_161_p2);
 
-assign xor_ln35_s_fu_197_p3 = {{xor_ln35_12_fu_188_p2}, {trunc_ln35_fu_194_p1}};
+assign xor_ln35_s_fu_197_p3 = {{xor_ln35_9_fu_188_p2}, {trunc_ln35_fu_194_p1}};
 
 assign zext_ln34_fu_135_p1 = ap_sig_allocacmp_i;
 

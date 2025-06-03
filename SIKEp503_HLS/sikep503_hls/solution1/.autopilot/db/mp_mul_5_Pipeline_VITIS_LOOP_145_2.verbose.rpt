@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_5_Pipeline_VITIS_LOOP_145_2'
 ================================================================
-* Date:           Tue May 27 14:18:22 2025
+* Date:           Tue Jun  3 14:13:25 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -92,10 +92,10 @@
     |add_ln130_fu_443_p2     |         +|   0|  0|  40|          33|          33|
     |add_ln133_fu_517_p2     |         +|   0|  0|  71|          64|          64|
     |add_ln145_fu_228_p2     |         +|   0|  0|  13|           4|           1|
-    |add_ln146_3_fu_239_p2   |         +|   0|  0|  13|           4|           4|
+    |add_ln146_4_fu_239_p2   |         +|   0|  0|  13|           4|           4|
     |add_ln146_fu_264_p2     |         +|   0|  0|  14|           9|           9|
     |tempReg_fu_588_p2       |         +|   0|  0|  71|          64|          64|
-    |temp_44_fu_473_p2       |         +|   0|  0|  41|          34|          34|
+    |temp_47_fu_473_p2       |         +|   0|  0|  41|          34|          34|
     |temp_fu_407_p2          |         +|   0|  0|  41|          34|          34|
     |u_fu_684_p2             |         +|   0|  0|  13|           4|           4|
     |v_138_fu_529_p2         |         +|   0|  0|  71|          64|          64|
@@ -319,9 +319,9 @@ ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln145 = br i1 %icmp_ln145, void
 ST_1 : Operation 33 [1/1] (1.58ns)   --->   "%store_ln139 = store i4 %add_ln145, i4 %j" [src/generic/fp_generic.c:139]   --->   Operation 33 'store' 'store_ln139' <Predicate = (!icmp_ln145)> <Delay = 1.58>
 
 State 2 <SV = 1> <Delay = 6.81>
-ST_2 : Operation 34 [1/1] (1.73ns)   --->   "%add_ln146_3 = add i4 %zext_ln146_read, i4 %j_24" [src/generic/fp_generic.c:146]   --->   Operation 34 'add' 'add_ln146_3' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln146_11 = zext i4 %add_ln146_3" [src/generic/fp_generic.c:146]   --->   Operation 35 'zext' 'zext_ln146_11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln146_11" [src/generic/fp_generic.c:146]   --->   Operation 36 'getelementptr' 'a_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (1.73ns)   --->   "%add_ln146_4 = add i4 %zext_ln146_read, i4 %j_24" [src/generic/fp_generic.c:146]   --->   Operation 34 'add' 'add_ln146_4' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln146_8 = zext i4 %add_ln146_4" [src/generic/fp_generic.c:146]   --->   Operation 35 'zext' 'zext_ln146_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln146_8" [src/generic/fp_generic.c:146]   --->   Operation 36 'getelementptr' 'a_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 37 [2/2] (3.25ns)   --->   "%a_load = load i4 %a_addr" [src/generic/fp_generic.c:146]   --->   Operation 37 'load' 'a_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 38 [1/1] (1.73ns)   --->   "%sub_ln146 = sub i4 %i_cast, i4 %j_24" [src/generic/fp_generic.c:146]   --->   Operation 38 'sub' 'sub_ln146' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_224 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i4.i3, i4 %sub_ln146, i3 0" [src/generic/fp_generic.c:146]   --->   Operation 39 'bitconcatenate' 'tmp_224' <Predicate = true> <Delay = 0.00>
@@ -343,19 +343,19 @@ ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%bh = partselect i32 @_ssdm_op_Part
 State 4 <SV = 3> <Delay = 6.91>
 ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln105 = zext i32 %al" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:146]   --->   Operation 52 'zext' 'zext_ln105' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln110 = zext i32 %ah" [src/generic/fp_generic.c:110->src/generic/fp_generic.c:146]   --->   Operation 53 'zext' 'zext_ln110' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%zext_ln105_92 = zext i32 %bl" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:146]   --->   Operation 54 'zext' 'zext_ln105_92' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%zext_ln105_93 = zext i32 %bl" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:146]   --->   Operation 54 'zext' 'zext_ln105_93' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln112 = zext i32 %bh" [src/generic/fp_generic.c:112->src/generic/fp_generic.c:146]   --->   Operation 55 'zext' 'zext_ln112' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 56 [2/2] (6.91ns)   --->   "%albl = mul i64 %zext_ln105_92, i64 %zext_ln105" [src/generic/fp_generic.c:114->src/generic/fp_generic.c:146]   --->   Operation 56 'mul' 'albl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [2/2] (6.91ns)   --->   "%albl = mul i64 %zext_ln105_93, i64 %zext_ln105" [src/generic/fp_generic.c:114->src/generic/fp_generic.c:146]   --->   Operation 56 'mul' 'albl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 57 [2/2] (6.91ns)   --->   "%albh = mul i64 %zext_ln112, i64 %zext_ln105" [src/generic/fp_generic.c:115->src/generic/fp_generic.c:146]   --->   Operation 57 'mul' 'albh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 58 [2/2] (6.91ns)   --->   "%ahbl = mul i64 %zext_ln105_92, i64 %zext_ln110" [src/generic/fp_generic.c:116->src/generic/fp_generic.c:146]   --->   Operation 58 'mul' 'ahbl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 58 [2/2] (6.91ns)   --->   "%ahbl = mul i64 %zext_ln105_93, i64 %zext_ln110" [src/generic/fp_generic.c:116->src/generic/fp_generic.c:146]   --->   Operation 58 'mul' 'ahbl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 59 [2/2] (6.91ns)   --->   "%ahbh = mul i64 %zext_ln112, i64 %zext_ln110" [src/generic/fp_generic.c:117->src/generic/fp_generic.c:146]   --->   Operation 59 'mul' 'ahbh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 6.91>
-ST_5 : Operation 60 [1/2] (6.91ns)   --->   "%albl = mul i64 %zext_ln105_92, i64 %zext_ln105" [src/generic/fp_generic.c:114->src/generic/fp_generic.c:146]   --->   Operation 60 'mul' 'albl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 60 [1/2] (6.91ns)   --->   "%albl = mul i64 %zext_ln105_93, i64 %zext_ln105" [src/generic/fp_generic.c:114->src/generic/fp_generic.c:146]   --->   Operation 60 'mul' 'albl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln106 = trunc i64 %albl" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:146]   --->   Operation 61 'trunc' 'trunc_ln106' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 62 [1/2] (6.91ns)   --->   "%albh = mul i64 %zext_ln112, i64 %zext_ln105" [src/generic/fp_generic.c:115->src/generic/fp_generic.c:146]   --->   Operation 62 'mul' 'albh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%trunc_ln106_135 = trunc i64 %albh" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:146]   --->   Operation 63 'trunc' 'trunc_ln106_135' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 64 [1/2] (6.91ns)   --->   "%ahbl = mul i64 %zext_ln105_92, i64 %zext_ln110" [src/generic/fp_generic.c:116->src/generic/fp_generic.c:146]   --->   Operation 64 'mul' 'ahbl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 64 [1/2] (6.91ns)   --->   "%ahbl = mul i64 %zext_ln105_93, i64 %zext_ln110" [src/generic/fp_generic.c:116->src/generic/fp_generic.c:146]   --->   Operation 64 'mul' 'ahbl' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln106_136 = trunc i64 %ahbl" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:146]   --->   Operation 65 'trunc' 'trunc_ln106_136' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 66 [1/2] (6.91ns)   --->   "%ahbh = mul i64 %zext_ln112, i64 %zext_ln110" [src/generic/fp_generic.c:117->src/generic/fp_generic.c:146]   --->   Operation 66 'mul' 'ahbh' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln106_137 = trunc i64 %ahbh" [src/generic/fp_generic.c:106->src/generic/fp_generic.c:146]   --->   Operation 67 'trunc' 'trunc_ln106_137' <Predicate = true> <Delay = 0.00>
@@ -386,8 +386,8 @@ ST_7 : Operation 87 [1/1] (2.55ns)   --->   "%add_ln130_98 = add i33 %zext_ln106
 ST_7 : Operation 88 [1/1] (0.00ns)   --->   "%trunc_ln130 = trunc i33 %add_ln130_98" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 88 'trunc' 'trunc_ln130' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%zext_ln130_82 = zext i33 %add_ln130_98" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 89 'zext' 'zext_ln130_82' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 90 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln105 = add i32 %trunc_ln130, i32 %add_ln130_97" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:146]   --->   Operation 90 'add' 'add_ln105' <Predicate = true> <Delay = 4.37> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_7 : Operation 91 [1/1] (2.59ns)   --->   "%temp_44 = add i34 %zext_ln130_82, i34 %zext_ln130_81" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 91 'add' 'temp_44' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_230 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_44, i32 32, i32 33" [src/generic/fp_generic.c:133->src/generic/fp_generic.c:146]   --->   Operation 92 'partselect' 'tmp_230' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 91 [1/1] (2.59ns)   --->   "%temp_47 = add i34 %zext_ln130_82, i34 %zext_ln130_81" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:146]   --->   Operation 91 'add' 'temp_47' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_230 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_47, i32 32, i32 33" [src/generic/fp_generic.c:133->src/generic/fp_generic.c:146]   --->   Operation 92 'partselect' 'tmp_230' <Predicate = true> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 7.04>
 ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%v_108_load = load i64 %v_108" [src/generic/fp_generic.c:147]   --->   Operation 93 'load' 'v_108_load' <Predicate = true> <Delay = 0.00>
@@ -403,10 +403,10 @@ ST_8 : Operation 102 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   -
 ST_8 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   --->   "%or_ln105 = or i64 %xor_ln105, i64 %xor_ln105_31" [src/config.h:105->src/generic/fp_generic.c:147]   --->   Operation 103 'or' 'or_ln105' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 104 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   --->   "%xor_ln105_32 = xor i64 %or_ln105, i64 %v_138" [src/config.h:105->src/generic/fp_generic.c:147]   --->   Operation 104 'xor' 'xor_ln105_32' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 105 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   --->   "%carry = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_32, i32 63" [src/config.h:105->src/generic/fp_generic.c:147]   --->   Operation 105 'bitselect' 'carry' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 106 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   --->   "%zext_ln105_93 = zext i1 %carry" [src/config.h:105->src/generic/fp_generic.c:147]   --->   Operation 106 'zext' 'zext_ln105_93' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 106 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   --->   "%zext_ln105_94 = zext i1 %carry" [src/config.h:105->src/generic/fp_generic.c:147]   --->   Operation 106 'zext' 'zext_ln105_94' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 107 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   --->   "%tmp_s = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %add_ln133, i32 32, i32 63" [src/generic/fp_generic.c:148]   --->   Operation 107 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 108 [1/1] (0.00ns) (grouped into LUT with out node tempReg)   --->   "%or_ln12 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %tmp_s, i32 %add_ln105" [src/generic/fp_generic.c:148]   --->   Operation 108 'bitconcatenate' 'or_ln12' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 109 [1/1] (3.52ns) (out node of the LUT)   --->   "%tempReg = add i64 %or_ln12, i64 %zext_ln105_93" [src/generic/fp_generic.c:148]   --->   Operation 109 'add' 'tempReg' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 109 [1/1] (3.52ns) (out node of the LUT)   --->   "%tempReg = add i64 %or_ln12, i64 %zext_ln105_94" [src/generic/fp_generic.c:148]   --->   Operation 109 'add' 'tempReg' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 110 [1/1] (1.58ns)   --->   "%store_ln140 = store i64 %v_138, i64 %v_108" [src/generic/fp_generic.c:140]   --->   Operation 110 'store' 'store_ln140' <Predicate = true> <Delay = 1.58>
 
 State 9 <SV = 8> <Delay = 5.10>
@@ -419,9 +419,9 @@ ST_9 : Operation 135 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation
 
 State 10 <SV = 9> <Delay = 4.31>
 ST_10 : Operation 114 [1/1] (0.00ns)   --->   "%t_out_load = load i4 %t_out" [src/generic/fp_generic.c:149]   --->   Operation 114 'load' 't_out_load' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 115 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:139]   --->   Operation 115 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 115 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:139]   --->   Operation 115 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 116 [1/1] (0.00ns)   --->   "%speclooptripcount_ln139 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 8, i64 4" [src/generic/fp_generic.c:139]   --->   Operation 116 'speclooptripcount' 'speclooptripcount_ln139' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 117 [1/1] (0.00ns)   --->   "%specloopname_ln145 = specloopname void @_ssdm_op_SpecLoopName, void @empty_27" [src/generic/fp_generic.c:145]   --->   Operation 117 'specloopname' 'specloopname_ln145' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 117 [1/1] (0.00ns)   --->   "%specloopname_ln145 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [src/generic/fp_generic.c:145]   --->   Operation 117 'specloopname' 'specloopname_ln145' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 118 [1/1] (0.00ns) (grouped into LUT with out node xor_ln148_21)   --->   "%xor_ln148 = xor i64 %v, i64 %tempReg" [src/generic/fp_generic.c:148]   --->   Operation 118 'xor' 'xor_ln148' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node xor_ln148_21)   --->   "%xor_ln148_19 = xor i64 %tempReg, i64 %u_77_out_load" [src/generic/fp_generic.c:148]   --->   Operation 119 'xor' 'xor_ln148_19' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node xor_ln148_21)   --->   "%or_ln148 = or i64 %xor_ln148, i64 %xor_ln148_19" [src/generic/fp_generic.c:148]   --->   Operation 120 'or' 'or_ln148' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -488,8 +488,8 @@ icmp_ln145                 (icmp                  ) [ 01111111110]
 add_ln145                  (add                   ) [ 00000000000]
 br_ln145                   (br                    ) [ 00000000000]
 store_ln139                (store                 ) [ 00000000000]
-add_ln146_3                (add                   ) [ 00000000000]
-zext_ln146_11              (zext                  ) [ 00000000000]
+add_ln146_4                (add                   ) [ 00000000000]
+zext_ln146_8               (zext                  ) [ 00000000000]
 a_addr                     (getelementptr         ) [ 01010000000]
 sub_ln146                  (sub                   ) [ 00000000000]
 tmp_224                    (bitconcatenate        ) [ 00000000000]
@@ -506,7 +506,7 @@ ah                         (partselect            ) [ 01001000000]
 bh                         (partselect            ) [ 01001000000]
 zext_ln105                 (zext                  ) [ 01000100000]
 zext_ln110                 (zext                  ) [ 01000100000]
-zext_ln105_92              (zext                  ) [ 01000100000]
+zext_ln105_93              (zext                  ) [ 01000100000]
 zext_ln112                 (zext                  ) [ 01000100000]
 albl                       (mul                   ) [ 00000000000]
 trunc_ln106                (trunc                 ) [ 01000011100]
@@ -539,7 +539,7 @@ add_ln130_98               (add                   ) [ 00000000000]
 trunc_ln130                (trunc                 ) [ 00000000000]
 zext_ln130_82              (zext                  ) [ 00000000000]
 add_ln105                  (add                   ) [ 01000000100]
-temp_44                    (add                   ) [ 00000000000]
+temp_47                    (add                   ) [ 00000000000]
 tmp_230                    (partselect            ) [ 01000000100]
 v_108_load                 (load                  ) [ 00000000000]
 shl_ln                     (bitconcatenate        ) [ 00000000000]
@@ -554,7 +554,7 @@ xor_ln105_31               (xor                   ) [ 00000000000]
 or_ln105                   (or                    ) [ 00000000000]
 xor_ln105_32               (xor                   ) [ 00000000000]
 carry                      (bitselect             ) [ 00000000000]
-zext_ln105_93              (zext                  ) [ 00000000000]
+zext_ln105_94              (zext                  ) [ 00000000000]
 tmp_s                      (partselect            ) [ 00000000000]
 or_ln12                    (bitconcatenate        ) [ 00000000000]
 tempReg                    (add                   ) [ 01000000011]
@@ -920,7 +920,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 <pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -974,7 +974,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 <pin id="85" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_27"/></StgValue>
+<StgValue><ssdm name="empty_18"/></StgValue>
 </bind>
 </comp>
 
@@ -1347,7 +1347,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="239" class="1004" name="add_ln146_3_fu_239">
+<comp id="239" class="1004" name="add_ln146_4_fu_239">
 <pin_list>
 <pin id="240" dir="0" index="0" bw="4" slack="1"/>
 <pin id="241" dir="0" index="1" bw="4" slack="1"/>
@@ -1355,18 +1355,18 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln146_3/2 "/>
+<opset="add_ln146_4/2 "/>
 </bind>
 </comp>
 
-<comp id="243" class="1004" name="zext_ln146_11_fu_243">
+<comp id="243" class="1004" name="zext_ln146_8_fu_243">
 <pin_list>
 <pin id="244" dir="0" index="0" bw="4" slack="0"/>
 <pin id="245" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln146_11/2 "/>
+<opset="zext_ln146_8/2 "/>
 </bind>
 </comp>
 
@@ -1515,14 +1515,14 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="322" class="1004" name="zext_ln105_92_fu_322">
+<comp id="322" class="1004" name="zext_ln105_93_fu_322">
 <pin_list>
 <pin id="323" dir="0" index="0" bw="32" slack="1"/>
 <pin id="324" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln105_92/4 "/>
+<opset="zext_ln105_93/4 "/>
 </bind>
 </comp>
 
@@ -1855,7 +1855,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="473" class="1004" name="temp_44_fu_473">
+<comp id="473" class="1004" name="temp_47_fu_473">
 <pin_list>
 <pin id="474" dir="0" index="0" bw="33" slack="0"/>
 <pin id="475" dir="0" index="1" bw="33" slack="0"/>
@@ -1863,7 +1863,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="temp_44/7 "/>
+<opset="temp_47/7 "/>
 </bind>
 </comp>
 
@@ -2040,14 +2040,14 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="567" class="1004" name="zext_ln105_93_fu_567">
+<comp id="567" class="1004" name="zext_ln105_94_fu_567">
 <pin_list>
 <pin id="568" dir="0" index="0" bw="1" slack="0"/>
 <pin id="569" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln105_93/8 "/>
+<opset="zext_ln105_94/8 "/>
 </bind>
 </comp>
 
@@ -2478,13 +2478,13 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="782" class="1005" name="zext_ln105_92_reg_782">
+<comp id="782" class="1005" name="zext_ln105_93_reg_782">
 <pin_list>
 <pin id="783" dir="0" index="0" bw="64" slack="1"/>
 <pin id="784" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln105_92 "/>
+<opset="zext_ln105_93 "/>
 </bind>
 </comp>
 
@@ -3202,7 +3202,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 		br_ln145 : 3
 		store_ln139 : 3
 	State 2
-		zext_ln146_11 : 1
+		zext_ln146_8 : 1
 		a_addr : 2
 		a_load : 3
 		tmp_224 : 1
@@ -3244,7 +3244,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 		trunc_ln130 : 2
 		zext_ln130_82 : 2
 		add_ln105 : 3
-		temp_44 : 3
+		temp_47 : 3
 		tmp_230 : 4
 	State 8
 		zext_ln133 : 1
@@ -3255,7 +3255,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 		or_ln105 : 2
 		xor_ln105_32 : 2
 		carry : 2
-		zext_ln105_93 : 3
+		zext_ln105_94 : 3
 		tmp_s : 3
 		or_ln12 : 4
 		tempReg : 4
@@ -3289,7 +3289,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 |          |           grp_fu_185          |    4    |   165   |    50   |
 |----------|-------------------------------|---------|---------|---------|
 |          |        add_ln145_fu_228       |    0    |    0    |    13   |
-|          |       add_ln146_3_fu_239      |    0    |    0    |    13   |
+|          |       add_ln146_4_fu_239      |    0    |    0    |    13   |
 |          |        add_ln146_fu_264       |    0    |    0    |    14   |
 |          |        add_ln123_fu_397       |    0    |    0    |    39   |
 |          |          temp_fu_407          |    0    |    0    |    40   |
@@ -3297,7 +3297,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 |          |        add_ln130_fu_443       |    0    |    0    |    39   |
 |    add   |      add_ln130_98_fu_453      |    0    |    0    |    39   |
 |          |        add_ln105_fu_467       |    0    |    0    |    32   |
-|          |         temp_44_fu_473        |    0    |    0    |    40   |
+|          |         temp_47_fu_473        |    0    |    0    |    40   |
 |          |        add_ln133_fu_517       |    0    |    0    |    71   |
 |          |          v_138_fu_529         |    0    |    0    |    71   |
 |          |         tempReg_fu_588        |    0    |    0    |    71   |
@@ -3333,11 +3333,11 @@ ret_ln0                    (ret                   ) [ 00000000000]
 |----------|-------------------------------|---------|---------|---------|
 |          |         i_cast_fu_189         |    0    |    0    |    0    |
 |          |     zext_ln143_cast_fu_193    |    0    |    0    |    0    |
-|          |      zext_ln146_11_fu_243     |    0    |    0    |    0    |
+|          |      zext_ln146_8_fu_243      |    0    |    0    |    0    |
 |          |      zext_ln146_4_fu_279      |    0    |    0    |    0    |
 |          |       zext_ln105_fu_312       |    0    |    0    |    0    |
 |          |       zext_ln110_fu_317       |    0    |    0    |    0    |
-|          |      zext_ln105_92_fu_322     |    0    |    0    |    0    |
+|          |      zext_ln105_93_fu_322     |    0    |    0    |    0    |
 |          |       zext_ln112_fu_327       |    0    |    0    |    0    |
 |          |       zext_ln106_fu_388       |    0    |    0    |    0    |
 |          |       zext_ln123_fu_391       |    0    |    0    |    0    |
@@ -3350,7 +3350,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 |          |      zext_ln130_81_fu_449     |    0    |    0    |    0    |
 |          |      zext_ln130_82_fu_463     |    0    |    0    |    0    |
 |          |       zext_ln133_fu_513       |    0    |    0    |    0    |
-|          |      zext_ln105_93_fu_567     |    0    |    0    |    0    |
+|          |      zext_ln105_94_fu_567     |    0    |    0    |    0    |
 |          |       zext_ln149_fu_680       |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
 |          |         tmp_224_fu_252        |    0    |    0    |    0    |
@@ -3426,7 +3426,7 @@ N/A
 | u_77_out_load_reg_871 |   64   |
 |     v_108_reg_700     |   64   |
 |       v_reg_876       |   64   |
-| zext_ln105_92_reg_782 |   64   |
+| zext_ln105_93_reg_782 |   64   |
 |   zext_ln105_reg_770  |   64   |
 |   zext_ln110_reg_776  |   64   |
 |   zext_ln112_reg_788  |   64   |

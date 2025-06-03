@@ -134,7 +134,7 @@ reg   [31:0] ah_reg_694;
 reg   [31:0] bh_reg_699;
 wire   [63:0] zext_ln105_fu_267_p1;
 wire   [63:0] zext_ln110_fu_272_p1;
-wire   [63:0] zext_ln105_152_fu_277_p1;
+wire   [63:0] zext_ln105_153_fu_277_p1;
 wire   [63:0] zext_ln112_fu_282_p1;
 wire   [31:0] trunc_ln106_fu_287_p1;
 reg   [31:0] trunc_ln106_reg_728;
@@ -211,7 +211,7 @@ wire   [31:0] trunc_ln130_fu_414_p1;
 wire   [31:0] add_ln130_176_fu_394_p2;
 wire   [33:0] zext_ln130_142_fu_418_p1;
 wire   [33:0] zext_ln130_141_fu_404_p1;
-wire   [33:0] temp_74_fu_428_p2;
+wire   [33:0] temp_77_fu_428_p2;
 wire   [33:0] and_ln133_s_fu_461_p3;
 wire   [63:0] zext_ln133_fu_468_p1;
 wire   [63:0] and_ln_fu_454_p3;
@@ -224,7 +224,7 @@ wire   [63:0] xor_ln105_62_fu_508_p2;
 wire   [0:0] carry_fu_514_p3;
 wire   [31:0] tmp_s_fu_526_p4;
 wire   [63:0] or_ln42_fu_536_p3;
-wire   [63:0] zext_ln105_153_fu_522_p1;
+wire   [63:0] zext_ln105_154_fu_522_p1;
 wire   [63:0] xor_ln148_fu_573_p2;
 wire   [63:0] xor_ln148_37_fu_577_p2;
 wire   [0:0] bit_sel_fu_587_p3;
@@ -426,7 +426,7 @@ always @ (posedge ap_clk) begin
         tmp_398_reg_765 <= {{grp_fu_478_p_dout0[63:32]}};
         tmp_398_reg_765_pp0_iter4_reg <= tmp_398_reg_765;
         tmp_398_reg_765_pp0_iter5_reg <= tmp_398_reg_765_pp0_iter4_reg;
-        tmp_399_reg_786 <= {{temp_74_fu_428_p2[33:32]}};
+        tmp_399_reg_786 <= {{temp_77_fu_428_p2[33:32]}};
         trunc_ln106_225_reg_733 <= trunc_ln106_225_fu_291_p1;
         trunc_ln106_226_reg_738 <= trunc_ln106_226_fu_295_p1;
         trunc_ln106_227_reg_743 <= trunc_ln106_227_fu_299_p1;
@@ -641,7 +641,7 @@ assign carry_fu_514_p3 = xor_ln105_62_fu_508_p2[32'd63];
 
 assign grp_fu_466_p_ce = 1'b1;
 
-assign grp_fu_466_p_din0 = zext_ln105_152_fu_277_p1;
+assign grp_fu_466_p_din0 = zext_ln105_153_fu_277_p1;
 
 assign grp_fu_466_p_din1 = zext_ln105_fu_267_p1;
 
@@ -653,7 +653,7 @@ assign grp_fu_470_p_din1 = zext_ln105_fu_267_p1;
 
 assign grp_fu_474_p_ce = 1'b1;
 
-assign grp_fu_474_p_din0 = zext_ln105_152_fu_277_p1;
+assign grp_fu_474_p_din0 = zext_ln105_153_fu_277_p1;
 
 assign grp_fu_474_p_din1 = zext_ln110_fu_272_p1;
 
@@ -679,9 +679,9 @@ assign shl_ln_fu_447_p3 = {{trunc_ln125_reg_775_pp0_iter5_reg}, {32'd0}};
 
 assign sub_ln146_fu_223_p2 = (empty - trunc_ln145_fu_219_p1);
 
-assign tempReg_fu_543_p2 = (or_ln42_fu_536_p3 + zext_ln105_153_fu_522_p1);
+assign tempReg_fu_543_p2 = (or_ln42_fu_536_p3 + zext_ln105_154_fu_522_p1);
 
-assign temp_74_fu_428_p2 = (zext_ln130_142_fu_418_p1 + zext_ln130_141_fu_404_p1);
+assign temp_77_fu_428_p2 = (zext_ln130_142_fu_418_p1 + zext_ln130_141_fu_404_p1);
 
 assign temp_fu_362_p2 = (zext_ln123_142_fu_358_p1 + zext_ln106_fu_343_p1);
 
@@ -729,9 +729,9 @@ assign xor_ln148_fu_573_p2 = (v_reg_810 ^ tempReg_reg_796_pp0_iter7_reg);
 
 assign xor_ln148_s_fu_603_p3 = {{xor_ln148_45_fu_594_p2}, {trunc_ln148_fu_600_p1}};
 
-assign zext_ln105_152_fu_277_p1 = bl_reg_689;
+assign zext_ln105_153_fu_277_p1 = bl_reg_689;
 
-assign zext_ln105_153_fu_522_p1 = carry_fu_514_p3;
+assign zext_ln105_154_fu_522_p1 = carry_fu_514_p3;
 
 assign zext_ln105_fu_267_p1 = al_reg_684;
 

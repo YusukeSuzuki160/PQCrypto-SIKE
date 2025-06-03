@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_6_Pipeline_VITIS_LOOP_28_2'" level="0">
-<item name = "Date">Tue May 27 14:18:05 2025
+<item name = "Date">Tue Jun  3 14:13:08 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -88,8 +88,8 @@
 <column name="borrowReg_fu_211_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln105_fu_162_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln95_fu_186_p2">or, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_100_fu_158_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_101_fu_168_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_98_fu_158_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_99_fu_168_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln105_fu_154_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln29_fu_199_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
@@ -135,8 +135,8 @@
 <column name="coeff_we0">out, 8, ap_memory, coeff, array</column>
 <column name="coeff_d0">out, 64, ap_memory, coeff, array</column>
 <column name="coeff_q0">in, 64, ap_memory, coeff, array</column>
-<column name="carry_172_out">out, 1, ap_vld, carry_172_out, pointer</column>
-<column name="carry_172_out_ap_vld">out, 1, ap_vld, carry_172_out, pointer</column>
+<column name="carry_166_out">out, 1, ap_vld, carry_166_out, pointer</column>
+<column name="carry_166_out_ap_vld">out, 1, ap_vld, carry_166_out, pointer</column>
 </table>
 </item>
 </section>

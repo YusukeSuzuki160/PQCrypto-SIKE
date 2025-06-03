@@ -16,7 +16,7 @@ module sikep503_kem_enc_hw_mp_mul_144_Pipeline_VITIS_LOOP_159_4 (
         indvars_iv,
         v,
         zext_ln157,
-        zext_ln146_20,
+        zext_ln146_21,
         a_address0,
         a_ce0,
         a_q0,
@@ -60,7 +60,7 @@ output   ap_ready;
 input  [2:0] indvars_iv;
 input  [63:0] v;
 input  [3:0] zext_ln157;
-input  [3:0] zext_ln146_20;
+input  [3:0] zext_ln146_21;
 output  [3:0] a_address0;
 output   a_ce0;
 input  [63:0] a_q0;
@@ -210,7 +210,7 @@ wire   [31:0] trunc_ln130_fu_432_p1;
 wire   [31:0] add_ln130_fu_412_p2;
 wire   [33:0] zext_ln130_144_fu_436_p1;
 wire   [33:0] zext_ln130_143_fu_422_p1;
-wire   [33:0] temp_75_fu_446_p2;
+wire   [33:0] temp_78_fu_446_p2;
 wire   [33:0] and_ln133_s_fu_479_p3;
 wire   [63:0] zext_ln133_fu_486_p1;
 wire   [63:0] and_ln133_18_fu_472_p3;
@@ -435,7 +435,7 @@ always @ (posedge ap_clk) begin
         tmp_403_reg_793 <= {{grp_fu_478_p_dout0[63:32]}};
         tmp_403_reg_793_pp0_iter4_reg <= tmp_403_reg_793;
         tmp_403_reg_793_pp0_iter5_reg <= tmp_403_reg_793_pp0_iter4_reg;
-        tmp_404_reg_814 <= {{temp_75_fu_446_p2[33:32]}};
+        tmp_404_reg_814 <= {{temp_78_fu_446_p2[33:32]}};
         tmp_s_reg_777 <= {{grp_fu_466_p_dout0[63:32]}};
         trunc_ln106_228_reg_761 <= trunc_ln106_228_fu_309_p1;
         trunc_ln106_229_reg_766 <= trunc_ln106_229_fu_313_p1;
@@ -595,7 +595,7 @@ assign add_ln133_fu_490_p2 = (zext_ln133_fu_486_p1 + and_ln133_18_fu_472_p3);
 
 assign add_ln159_fu_246_p2 = (ap_sig_allocacmp_j + 4'd1);
 
-assign add_ln160_fu_220_p2 = (zext_ln146_20 + ap_sig_allocacmp_j);
+assign add_ln160_fu_220_p2 = (zext_ln146_21 + ap_sig_allocacmp_j);
 
 assign al_fu_257_p1 = a_q0[31:0];
 
@@ -683,7 +683,7 @@ assign t_fu_656_p2 = (zext_ln163_fu_652_p1 + t_33_fu_84);
 
 assign tempReg_fu_561_p2 = (or_ln43_fu_554_p3 + zext_ln105_155_fu_540_p1);
 
-assign temp_75_fu_446_p2 = (zext_ln130_144_fu_436_p1 + zext_ln130_143_fu_422_p1);
+assign temp_78_fu_446_p2 = (zext_ln130_144_fu_436_p1 + zext_ln130_143_fu_422_p1);
 
 assign temp_fu_380_p2 = (zext_ln123_144_fu_376_p1 + zext_ln106_fu_361_p1);
 

@@ -1340,14 +1340,18 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     index = 0;
     for (row = 1; row < 125; row++)
     {
-        while (index < 125 - row)
+        for (int j = 0; j < 125 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Alice[ii++];
-            xDBLe(R, R, A24plus, C24, (int)(2 * m));
-            index += m;
+#pragma HLS loop_tripcount min = 0 max = MAX_Alice avg = MAX_Alice / 2
+            if (index < 125 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Alice[ii++];
+                xDBLe(R, R, A24plus, C24, (int)(2 * m));
+                index += m;
+            }
         }
         get_4_isog(R, A24plus, C24, coeff);
         for (i = 0; i < npts; i++)
@@ -1417,14 +1421,18 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
     index = 0;
     for (row = 1; row < 159; row++)
     {
-        while (index < 159 - row)
+        for (int j = 0; j < 159 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Bob[ii++];
-            xTPLe(R, R, A24minus, A24plus, (int)m);
-            index += m;
+#pragma HLS loop_tripcount min = 0 max = MAX_Bob avg = MAX_Bob / 2
+            if (index < 159 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Bob[ii++];
+                xTPLe(R, R, A24minus, A24plus, (int)m);
+                index += m;
+            }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
         for (i = 0; i < npts; i++)
@@ -1470,18 +1478,7 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[7], npts = 0, ii = 0;
-
-    printf("DEBUG: Starting EphemeralSecretAgreement_A\n");
-    printf("DEBUG: Input PrivateKeyA (first 16 bytes): ");
-    for (i = 0; i < 16; i++)
-        printf("%02x ", PrivateKeyA[i]);
-    printf("\n");
-    printf("DEBUG: Input PublicKeyB (first 16 bytes): ");
-    for (i = 0; i < 16; i++)
-        printf("%02x ", PublicKeyB[i]);
-    printf("\n");
-
-
+# 266 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c"
     fp2_decode(PublicKeyB, PKB[0]);
     fp2_decode(PublicKeyB + 2 * ((503 + 7) / 8), PKB[1]);
     fp2_decode(PublicKeyB + 2 * 2 * ((503 + 7) / 8), PKB[2]);
@@ -1494,20 +1491,24 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
 
 
     LADDER3PT(PKB[0], PKB[1], PKB[2], (digit_t *)PrivateKeyA, 0, R, A);
-    printf("DEBUG: Retrieved kernel point\n");
+
 
 
     index = 0;
     for (row = 1; row < 125; row++)
     {
-        while (index < 125 - row)
+        for (int j = 0; j < 125 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Alice[ii++];
-            xDBLe(R, R, A24plus, C24, (int)(2 * m));
-            index += m;
+#pragma HLS loop_tripcount min = 0 max = MAX_Alice avg = MAX_Alice / 2
+            if (index < 125 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Alice[ii++];
+                xDBLe(R, R, A24plus, C24, (int)(2 * m));
+                index += m;
+            }
         }
         get_4_isog(R, A24plus, C24, coeff);
         for (i = 0; i < npts; i++)
@@ -1528,11 +1529,11 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     fp2div2_503(C24, C24);
     j_inv(A24plus, C24, jinv);
     fp2_encode(jinv, SharedSecretA);
-    printf("DEBUG: Generated shared secret (first 16 bytes): ");
-    for (i = 0; i < 16; i++)
-        printf("%02x ", SharedSecretA[i]);
-    printf("\n");
-    printf("DEBUG: Finished EphemeralSecretAgreement_A\n");
+
+
+
+
+
 
     return 0;
 }
@@ -1566,14 +1567,18 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
     index = 0;
     for (row = 1; row < 159; row++)
     {
-        while (index < 159 - row)
+        for (int j = 0; j < 159 - row; j++)
         {
-            fp2copy503(R->X, pts[npts]->X);
-            fp2copy503(R->Z, pts[npts]->Z);
-            pts_index[npts++] = index;
-            m = strat_Bob[ii++];
-            xTPLe(R, R, A24minus, A24plus, (int)m);
-            index += m;
+#pragma HLS loop_tripcount min = 1 max = MAX_Bob avg = MAX_Bob / 2
+            if (index < 159 - row)
+            {
+                fp2copy503(R->X, pts[npts]->X);
+                fp2copy503(R->Z, pts[npts]->Z);
+                pts_index[npts++] = index;
+                m = strat_Bob[ii++];
+                xTPLe(R, R, A24minus, A24plus, (int)m);
+                index += m;
+            }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
         for (i = 0; i < npts; i++)

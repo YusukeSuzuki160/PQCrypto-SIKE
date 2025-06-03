@@ -751,10 +751,10 @@ entry:20 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_2, i8 %gmem, i64 %pk_r
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:21 %call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:21 %call_ln50 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln55"/></StgValue>
+<StgValue><ssdm name="call_ln50"/></StgValue>
 </operation>
 </state>
 
@@ -769,10 +769,10 @@ entry:21 %call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp,
 
 <Node id="43" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:21 %call_ln55 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:21 %call_ln50 = call void @cshake256_simple.32, i8 %ephemeralsk, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln55"/></StgValue>
+<StgValue><ssdm name="call_ln50"/></StgValue>
 </operation>
 </state>
 
@@ -835,10 +835,10 @@ entry:23 %ephemeralsk_load = load i5 %ephemeralsk_addr
 
 <Node id="46" bw="2" op_0_bw="8">
 <![CDATA[
-entry:24 %trunc_ln56 = trunc i8 %ephemeralsk_load
+entry:24 %trunc_ln51 = trunc i8 %ephemeralsk_load
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln56"/></StgValue>
+<StgValue><ssdm name="trunc_ln51"/></StgValue>
 </operation>
 
 <operation id="84" st_id="14" stage="1" lat="1">
@@ -850,10 +850,10 @@ entry:24 %trunc_ln56 = trunc i8 %ephemeralsk_load
 
 <Node id="47" bw="8" op_0_bw="2">
 <![CDATA[
-entry:25 %zext_ln56 = zext i2 %trunc_ln56
+entry:25 %zext_ln51 = zext i2 %trunc_ln51
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln56"/></StgValue>
+<StgValue><ssdm name="zext_ln51"/></StgValue>
 </operation>
 
 <operation id="85" st_id="14" stage="1" lat="1">
@@ -865,10 +865,10 @@ entry:25 %zext_ln56 = zext i2 %trunc_ln56
 
 <Node id="48" bw="0" op_0_bw="8" op_1_bw="5" op_2_bw="0">
 <![CDATA[
-entry:26 %store_ln56 = store i8 %zext_ln56, i5 %ephemeralsk_addr
+entry:26 %store_ln51 = store i8 %zext_ln51, i5 %ephemeralsk_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln56"/></StgValue>
+<StgValue><ssdm name="store_ln51"/></StgValue>
 </operation>
 </state>
 
@@ -898,10 +898,10 @@ entry:3 %ct_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ct
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="64" op_12_bw="64" op_13_bw="64" op_14_bw="64" op_15_bw="6" op_16_bw="64" op_17_bw="0" op_18_bw="0" op_19_bw="0">
 <![CDATA[
-entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
+entry:27 %call_ln54 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln54"/></StgValue>
 </operation>
 </state>
 
@@ -916,10 +916,10 @@ entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="64" op_12_bw="64" op_13_bw="64" op_14_bw="64" op_15_bw="6" op_16_bw="64" op_17_bw="0" op_18_bw="0" op_19_bw="0">
 <![CDATA[
-entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
+entry:27 %call_ln54 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8 %gmem, i64 %ct_read, i64 %B_gen_1, i64 %Montgomery_one_1, i64 %p503x2_1, i64 %A, i64 %p503_1, i64 %XQA_0, i64 %XRA_0, i64 %XRA_1, i64 %XPA_0, i64 %XPA_1, i64 %p503p1_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln63"/></StgValue>
+<StgValue><ssdm name="call_ln54"/></StgValue>
 </operation>
 </state>
 
@@ -934,10 +934,10 @@ entry:27 %call_ln63 = call void @EphemeralKeyGeneration_A.1, i8 %ephemeralsk, i8
 
 <Node id="50" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="8" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="6" op_12_bw="64" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
+entry:28 %call_ln55 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln69"/></StgValue>
+<StgValue><ssdm name="call_ln55"/></StgValue>
 </operation>
 </state>
 
@@ -952,10 +952,10 @@ entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, 
 
 <Node id="50" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="8" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64" op_11_bw="6" op_12_bw="64" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
+entry:28 %call_ln55 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, i8 %gmem, i64 %pk_read, i8 %jinvariant, i64 %Montgomery_R2_1, i64 %p503p1_1, i64 %p503x2_1, i64 %p503_1, i64 %one_1, i64 %Montgomery_one_1, i6 %strat_Alice_1, i64 %one
 
 ]]></Node>
-<StgValue><ssdm name="call_ln69"/></StgValue>
+<StgValue><ssdm name="call_ln55"/></StgValue>
 </operation>
 </state>
 
@@ -970,10 +970,10 @@ entry:28 %call_ln69 = call void @EphemeralSecretAgreement_A.1, i8 %ephemeralsk, 
 
 <Node id="51" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
+entry:29 %call_ln56 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln75"/></StgValue>
+<StgValue><ssdm name="call_ln56"/></StgValue>
 </operation>
 
 <operation id="92" st_id="19" stage="1" lat="1">
@@ -985,10 +985,10 @@ entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvarian
 
 <Node id="52" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-entry:30 %add_ln81 = add i64 %ct_read, i64 378
+entry:30 %add_ln59 = add i64 %ct_read, i64 378
 
 ]]></Node>
-<StgValue><ssdm name="add_ln81"/></StgValue>
+<StgValue><ssdm name="add_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -1003,10 +1003,10 @@ entry:30 %add_ln81 = add i64 %ct_read, i64 378
 
 <Node id="51" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
+entry:29 %call_ln56 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvariant, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln75"/></StgValue>
+<StgValue><ssdm name="call_ln56"/></StgValue>
 </operation>
 
 <operation id="94" st_id="20" stage="1" lat="1">
@@ -1018,7 +1018,7 @@ entry:29 %call_ln75 = call void @cshake256_simple.32.clone, i8 %h, i8 %jinvarian
 
 <Node id="53" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-entry:31 %gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln81
+entry:31 %gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln59
 
 ]]></Node>
 <StgValue><ssdm name="gmem_addr_3"/></StgValue>
@@ -1051,10 +1051,10 @@ entry:32 %empty_183 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i64 %gmem_addr_
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-entry:33 %call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %gmem, i64 %add_ln81, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
+entry:33 %call_ln59 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1, i8 %gmem, i64 %add_ln59, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
 
 ]]></Node>
-<StgValue><ssdm name="call_ln81"/></StgValue>
+<StgValue><ssdm name="call_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -1069,10 +1069,10 @@ entry:33 %call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-entry:33 %call_ln81 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6, i8 %gmem, i64 %add_ln81, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
+entry:33 %call_ln59 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1, i8 %gmem, i64 %add_ln59, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h
 
 ]]></Node>
-<StgValue><ssdm name="call_ln81"/></StgValue>
+<StgValue><ssdm name="call_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -1372,10 +1372,10 @@ entry:37 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_4, i8 %gmem, i64 %ct_r
 
 <Node id="60" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="64" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:38 %call_ln638 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln623"/></StgValue>
+<StgValue><ssdm name="call_ln638"/></StgValue>
 </operation>
 </state>
 
@@ -1390,10 +1390,10 @@ entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %t
 
 <Node id="60" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="64" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
+entry:38 %call_ln638 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln623"/></StgValue>
+<StgValue><ssdm name="call_ln638"/></StgValue>
 </operation>
 </state>
 
@@ -1408,10 +1408,10 @@ entry:38 %call_ln623 = call void @cshake256_simple_absorb, i64 %s_i, i1 1, i8 %t
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
 <![CDATA[
-entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
+entry:39 %call_ln430 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln417"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -1426,10 +1426,10 @@ entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %Kecca
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0" op_4_bw="0">
 <![CDATA[
-entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
+entry:39 %call_ln430 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %KeccakF_RoundConstants
 
 ]]></Node>
-<StgValue><ssdm name="call_ln417"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -1444,7 +1444,7 @@ entry:39 %call_ln417 = call void @KeccakF1600_StatePermute, i64 %s_i, i64 %Kecca
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
+entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1462,7 +1462,7 @@ entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
+entry:40 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2, i8 %t_46, i8 %t_45, i8 %t_44, i8 %t, i64 %s_i
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1528,7 +1528,7 @@ entry:42 %empty_186 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i64 %gmem_addr_
 
 <Node id="65" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
+entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1546,7 +1546,7 @@ entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %
 
 <Node id="65" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
+entry:43 %call_ln0 = call void @crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1, i8 %gmem, i64 %ss_read, i8 %t, i8 %t_44, i8 %t_45, i8 %t_46
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1907,33 +1907,33 @@ entry:45 %ret_ln0 = ret
 </dataflow>
 <dataflow id="275" from="temp" to="call_ln0" fromId="61" toId="77">
 </dataflow>
-<dataflow id="277" from="cshake256_simple.32" to="call_ln55" fromId="276" toId="78">
+<dataflow id="277" from="cshake256_simple.32" to="call_ln50" fromId="276" toId="78">
 </dataflow>
-<dataflow id="278" from="ephemeralsk" to="call_ln55" fromId="54" toId="78">
+<dataflow id="278" from="ephemeralsk" to="call_ln50" fromId="54" toId="78">
 </dataflow>
-<dataflow id="279" from="temp" to="call_ln55" fromId="61" toId="78">
+<dataflow id="279" from="temp" to="call_ln50" fromId="61" toId="78">
 </dataflow>
-<dataflow id="280" from="temp_1" to="call_ln55" fromId="62" toId="78">
+<dataflow id="280" from="temp_1" to="call_ln50" fromId="62" toId="78">
 </dataflow>
-<dataflow id="281" from="temp_2" to="call_ln55" fromId="63" toId="78">
+<dataflow id="281" from="temp_2" to="call_ln50" fromId="63" toId="78">
 </dataflow>
-<dataflow id="282" from="temp_3" to="call_ln55" fromId="64" toId="78">
+<dataflow id="282" from="temp_3" to="call_ln50" fromId="64" toId="78">
 </dataflow>
-<dataflow id="283" from="KeccakF_RoundConstants" to="call_ln55" fromId="188" toId="78">
+<dataflow id="283" from="KeccakF_RoundConstants" to="call_ln50" fromId="188" toId="78">
 </dataflow>
-<dataflow id="284" from="cshake256_simple.32" to="call_ln55" fromId="276" toId="79">
+<dataflow id="284" from="cshake256_simple.32" to="call_ln50" fromId="276" toId="79">
 </dataflow>
-<dataflow id="285" from="ephemeralsk" to="call_ln55" fromId="54" toId="79">
+<dataflow id="285" from="ephemeralsk" to="call_ln50" fromId="54" toId="79">
 </dataflow>
-<dataflow id="286" from="temp" to="call_ln55" fromId="61" toId="79">
+<dataflow id="286" from="temp" to="call_ln50" fromId="61" toId="79">
 </dataflow>
-<dataflow id="287" from="temp_1" to="call_ln55" fromId="62" toId="79">
+<dataflow id="287" from="temp_1" to="call_ln50" fromId="62" toId="79">
 </dataflow>
-<dataflow id="288" from="temp_2" to="call_ln55" fromId="63" toId="79">
+<dataflow id="288" from="temp_2" to="call_ln50" fromId="63" toId="79">
 </dataflow>
-<dataflow id="289" from="temp_3" to="call_ln55" fromId="64" toId="79">
+<dataflow id="289" from="temp_3" to="call_ln50" fromId="64" toId="79">
 </dataflow>
-<dataflow id="290" from="KeccakF_RoundConstants" to="call_ln55" fromId="188" toId="79">
+<dataflow id="290" from="KeccakF_RoundConstants" to="call_ln50" fromId="188" toId="79">
 </dataflow>
 <dataflow id="291" from="ephemeralsk" to="ephemeralsk_addr" fromId="54" toId="80">
 </dataflow>
@@ -1945,161 +1945,161 @@ entry:45 %ret_ln0 = ret
 </dataflow>
 <dataflow id="297" from="ephemeralsk_addr" to="ephemeralsk_load" fromId="80" toId="82">
 </dataflow>
-<dataflow id="298" from="ephemeralsk_load" to="trunc_ln56" fromId="82" toId="83">
+<dataflow id="298" from="ephemeralsk_load" to="trunc_ln51" fromId="82" toId="83">
 </dataflow>
-<dataflow id="299" from="trunc_ln56" to="zext_ln56" fromId="83" toId="84">
+<dataflow id="299" from="trunc_ln51" to="zext_ln51" fromId="83" toId="84">
 </dataflow>
-<dataflow id="300" from="zext_ln56" to="store_ln56" fromId="84" toId="85">
+<dataflow id="300" from="zext_ln51" to="store_ln51" fromId="84" toId="85">
 </dataflow>
-<dataflow id="301" from="ephemeralsk_addr" to="store_ln56" fromId="80" toId="85">
+<dataflow id="301" from="ephemeralsk_addr" to="store_ln51" fromId="80" toId="85">
 </dataflow>
 <dataflow id="302" from="_ssdm_op_Read.ap_auto.i64" to="ct_read" fromId="204" toId="86">
 </dataflow>
 <dataflow id="303" from="ct" to="ct_read" fromId="184" toId="86">
 </dataflow>
-<dataflow id="305" from="EphemeralKeyGeneration_A.1" to="call_ln63" fromId="304" toId="87">
+<dataflow id="305" from="EphemeralKeyGeneration_A.1" to="call_ln54" fromId="304" toId="87">
 </dataflow>
-<dataflow id="306" from="ephemeralsk" to="call_ln63" fromId="54" toId="87">
+<dataflow id="306" from="ephemeralsk" to="call_ln54" fromId="54" toId="87">
 </dataflow>
-<dataflow id="307" from="gmem" to="call_ln63" fromId="183" toId="87">
+<dataflow id="307" from="gmem" to="call_ln54" fromId="183" toId="87">
 </dataflow>
-<dataflow id="308" from="ct_read" to="call_ln63" fromId="86" toId="87">
+<dataflow id="308" from="ct_read" to="call_ln54" fromId="86" toId="87">
 </dataflow>
-<dataflow id="309" from="B_gen_1" to="call_ln63" fromId="189" toId="87">
+<dataflow id="309" from="B_gen_1" to="call_ln54" fromId="189" toId="87">
 </dataflow>
-<dataflow id="310" from="Montgomery_one_1" to="call_ln63" fromId="190" toId="87">
+<dataflow id="310" from="Montgomery_one_1" to="call_ln54" fromId="190" toId="87">
 </dataflow>
-<dataflow id="311" from="p503x2_1" to="call_ln63" fromId="191" toId="87">
+<dataflow id="311" from="p503x2_1" to="call_ln54" fromId="191" toId="87">
 </dataflow>
-<dataflow id="312" from="A" to="call_ln63" fromId="192" toId="87">
+<dataflow id="312" from="A" to="call_ln54" fromId="192" toId="87">
 </dataflow>
-<dataflow id="313" from="p503_1" to="call_ln63" fromId="193" toId="87">
+<dataflow id="313" from="p503_1" to="call_ln54" fromId="193" toId="87">
 </dataflow>
-<dataflow id="314" from="XQA_0" to="call_ln63" fromId="194" toId="87">
+<dataflow id="314" from="XQA_0" to="call_ln54" fromId="194" toId="87">
 </dataflow>
-<dataflow id="315" from="XRA_0" to="call_ln63" fromId="195" toId="87">
+<dataflow id="315" from="XRA_0" to="call_ln54" fromId="195" toId="87">
 </dataflow>
-<dataflow id="316" from="XRA_1" to="call_ln63" fromId="196" toId="87">
+<dataflow id="316" from="XRA_1" to="call_ln54" fromId="196" toId="87">
 </dataflow>
-<dataflow id="317" from="XPA_0" to="call_ln63" fromId="197" toId="87">
+<dataflow id="317" from="XPA_0" to="call_ln54" fromId="197" toId="87">
 </dataflow>
-<dataflow id="318" from="XPA_1" to="call_ln63" fromId="198" toId="87">
+<dataflow id="318" from="XPA_1" to="call_ln54" fromId="198" toId="87">
 </dataflow>
-<dataflow id="319" from="p503p1_1" to="call_ln63" fromId="199" toId="87">
+<dataflow id="319" from="p503p1_1" to="call_ln54" fromId="199" toId="87">
 </dataflow>
-<dataflow id="320" from="strat_Alice_1" to="call_ln63" fromId="200" toId="87">
+<dataflow id="320" from="strat_Alice_1" to="call_ln54" fromId="200" toId="87">
 </dataflow>
-<dataflow id="321" from="one" to="call_ln63" fromId="201" toId="87">
+<dataflow id="321" from="one" to="call_ln54" fromId="201" toId="87">
 </dataflow>
-<dataflow id="322" from="EphemeralKeyGeneration_A.1" to="call_ln63" fromId="304" toId="88">
+<dataflow id="322" from="EphemeralKeyGeneration_A.1" to="call_ln54" fromId="304" toId="88">
 </dataflow>
-<dataflow id="323" from="ephemeralsk" to="call_ln63" fromId="54" toId="88">
+<dataflow id="323" from="ephemeralsk" to="call_ln54" fromId="54" toId="88">
 </dataflow>
-<dataflow id="324" from="gmem" to="call_ln63" fromId="183" toId="88">
+<dataflow id="324" from="gmem" to="call_ln54" fromId="183" toId="88">
 </dataflow>
-<dataflow id="325" from="ct_read" to="call_ln63" fromId="86" toId="88">
+<dataflow id="325" from="ct_read" to="call_ln54" fromId="86" toId="88">
 </dataflow>
-<dataflow id="326" from="B_gen_1" to="call_ln63" fromId="189" toId="88">
+<dataflow id="326" from="B_gen_1" to="call_ln54" fromId="189" toId="88">
 </dataflow>
-<dataflow id="327" from="Montgomery_one_1" to="call_ln63" fromId="190" toId="88">
+<dataflow id="327" from="Montgomery_one_1" to="call_ln54" fromId="190" toId="88">
 </dataflow>
-<dataflow id="328" from="p503x2_1" to="call_ln63" fromId="191" toId="88">
+<dataflow id="328" from="p503x2_1" to="call_ln54" fromId="191" toId="88">
 </dataflow>
-<dataflow id="329" from="A" to="call_ln63" fromId="192" toId="88">
+<dataflow id="329" from="A" to="call_ln54" fromId="192" toId="88">
 </dataflow>
-<dataflow id="330" from="p503_1" to="call_ln63" fromId="193" toId="88">
+<dataflow id="330" from="p503_1" to="call_ln54" fromId="193" toId="88">
 </dataflow>
-<dataflow id="331" from="XQA_0" to="call_ln63" fromId="194" toId="88">
+<dataflow id="331" from="XQA_0" to="call_ln54" fromId="194" toId="88">
 </dataflow>
-<dataflow id="332" from="XRA_0" to="call_ln63" fromId="195" toId="88">
+<dataflow id="332" from="XRA_0" to="call_ln54" fromId="195" toId="88">
 </dataflow>
-<dataflow id="333" from="XRA_1" to="call_ln63" fromId="196" toId="88">
+<dataflow id="333" from="XRA_1" to="call_ln54" fromId="196" toId="88">
 </dataflow>
-<dataflow id="334" from="XPA_0" to="call_ln63" fromId="197" toId="88">
+<dataflow id="334" from="XPA_0" to="call_ln54" fromId="197" toId="88">
 </dataflow>
-<dataflow id="335" from="XPA_1" to="call_ln63" fromId="198" toId="88">
+<dataflow id="335" from="XPA_1" to="call_ln54" fromId="198" toId="88">
 </dataflow>
-<dataflow id="336" from="p503p1_1" to="call_ln63" fromId="199" toId="88">
+<dataflow id="336" from="p503p1_1" to="call_ln54" fromId="199" toId="88">
 </dataflow>
-<dataflow id="337" from="strat_Alice_1" to="call_ln63" fromId="200" toId="88">
+<dataflow id="337" from="strat_Alice_1" to="call_ln54" fromId="200" toId="88">
 </dataflow>
-<dataflow id="338" from="one" to="call_ln63" fromId="201" toId="88">
+<dataflow id="338" from="one" to="call_ln54" fromId="201" toId="88">
 </dataflow>
-<dataflow id="340" from="EphemeralSecretAgreement_A.1" to="call_ln69" fromId="339" toId="89">
+<dataflow id="340" from="EphemeralSecretAgreement_A.1" to="call_ln55" fromId="339" toId="89">
 </dataflow>
-<dataflow id="341" from="ephemeralsk" to="call_ln69" fromId="54" toId="89">
+<dataflow id="341" from="ephemeralsk" to="call_ln55" fromId="54" toId="89">
 </dataflow>
-<dataflow id="342" from="gmem" to="call_ln69" fromId="183" toId="89">
+<dataflow id="342" from="gmem" to="call_ln55" fromId="183" toId="89">
 </dataflow>
-<dataflow id="343" from="pk_read" to="call_ln69" fromId="52" toId="89">
+<dataflow id="343" from="pk_read" to="call_ln55" fromId="52" toId="89">
 </dataflow>
-<dataflow id="344" from="jinvariant" to="call_ln69" fromId="59" toId="89">
+<dataflow id="344" from="jinvariant" to="call_ln55" fromId="59" toId="89">
 </dataflow>
-<dataflow id="345" from="Montgomery_R2_1" to="call_ln69" fromId="202" toId="89">
+<dataflow id="345" from="Montgomery_R2_1" to="call_ln55" fromId="202" toId="89">
 </dataflow>
-<dataflow id="346" from="p503p1_1" to="call_ln69" fromId="199" toId="89">
+<dataflow id="346" from="p503p1_1" to="call_ln55" fromId="199" toId="89">
 </dataflow>
-<dataflow id="347" from="p503x2_1" to="call_ln69" fromId="191" toId="89">
+<dataflow id="347" from="p503x2_1" to="call_ln55" fromId="191" toId="89">
 </dataflow>
-<dataflow id="348" from="p503_1" to="call_ln69" fromId="193" toId="89">
+<dataflow id="348" from="p503_1" to="call_ln55" fromId="193" toId="89">
 </dataflow>
-<dataflow id="349" from="one_1" to="call_ln69" fromId="203" toId="89">
+<dataflow id="349" from="one_1" to="call_ln55" fromId="203" toId="89">
 </dataflow>
-<dataflow id="350" from="Montgomery_one_1" to="call_ln69" fromId="190" toId="89">
+<dataflow id="350" from="Montgomery_one_1" to="call_ln55" fromId="190" toId="89">
 </dataflow>
-<dataflow id="351" from="strat_Alice_1" to="call_ln69" fromId="200" toId="89">
+<dataflow id="351" from="strat_Alice_1" to="call_ln55" fromId="200" toId="89">
 </dataflow>
-<dataflow id="352" from="one" to="call_ln69" fromId="201" toId="89">
+<dataflow id="352" from="one" to="call_ln55" fromId="201" toId="89">
 </dataflow>
-<dataflow id="353" from="EphemeralSecretAgreement_A.1" to="call_ln69" fromId="339" toId="90">
+<dataflow id="353" from="EphemeralSecretAgreement_A.1" to="call_ln55" fromId="339" toId="90">
 </dataflow>
-<dataflow id="354" from="ephemeralsk" to="call_ln69" fromId="54" toId="90">
+<dataflow id="354" from="ephemeralsk" to="call_ln55" fromId="54" toId="90">
 </dataflow>
-<dataflow id="355" from="gmem" to="call_ln69" fromId="183" toId="90">
+<dataflow id="355" from="gmem" to="call_ln55" fromId="183" toId="90">
 </dataflow>
-<dataflow id="356" from="pk_read" to="call_ln69" fromId="52" toId="90">
+<dataflow id="356" from="pk_read" to="call_ln55" fromId="52" toId="90">
 </dataflow>
-<dataflow id="357" from="jinvariant" to="call_ln69" fromId="59" toId="90">
+<dataflow id="357" from="jinvariant" to="call_ln55" fromId="59" toId="90">
 </dataflow>
-<dataflow id="358" from="Montgomery_R2_1" to="call_ln69" fromId="202" toId="90">
+<dataflow id="358" from="Montgomery_R2_1" to="call_ln55" fromId="202" toId="90">
 </dataflow>
-<dataflow id="359" from="p503p1_1" to="call_ln69" fromId="199" toId="90">
+<dataflow id="359" from="p503p1_1" to="call_ln55" fromId="199" toId="90">
 </dataflow>
-<dataflow id="360" from="p503x2_1" to="call_ln69" fromId="191" toId="90">
+<dataflow id="360" from="p503x2_1" to="call_ln55" fromId="191" toId="90">
 </dataflow>
-<dataflow id="361" from="p503_1" to="call_ln69" fromId="193" toId="90">
+<dataflow id="361" from="p503_1" to="call_ln55" fromId="193" toId="90">
 </dataflow>
-<dataflow id="362" from="one_1" to="call_ln69" fromId="203" toId="90">
+<dataflow id="362" from="one_1" to="call_ln55" fromId="203" toId="90">
 </dataflow>
-<dataflow id="363" from="Montgomery_one_1" to="call_ln69" fromId="190" toId="90">
+<dataflow id="363" from="Montgomery_one_1" to="call_ln55" fromId="190" toId="90">
 </dataflow>
-<dataflow id="364" from="strat_Alice_1" to="call_ln69" fromId="200" toId="90">
+<dataflow id="364" from="strat_Alice_1" to="call_ln55" fromId="200" toId="90">
 </dataflow>
-<dataflow id="365" from="one" to="call_ln69" fromId="201" toId="90">
+<dataflow id="365" from="one" to="call_ln55" fromId="201" toId="90">
 </dataflow>
-<dataflow id="367" from="cshake256_simple.32.clone" to="call_ln75" fromId="366" toId="91">
+<dataflow id="367" from="cshake256_simple.32.clone" to="call_ln56" fromId="366" toId="91">
 </dataflow>
-<dataflow id="368" from="h" to="call_ln75" fromId="60" toId="91">
+<dataflow id="368" from="h" to="call_ln56" fromId="60" toId="91">
 </dataflow>
-<dataflow id="369" from="jinvariant" to="call_ln75" fromId="59" toId="91">
+<dataflow id="369" from="jinvariant" to="call_ln56" fromId="59" toId="91">
 </dataflow>
-<dataflow id="370" from="KeccakF_RoundConstants" to="call_ln75" fromId="188" toId="91">
+<dataflow id="370" from="KeccakF_RoundConstants" to="call_ln56" fromId="188" toId="91">
 </dataflow>
-<dataflow id="371" from="ct_read" to="add_ln81" fromId="86" toId="92">
+<dataflow id="371" from="ct_read" to="add_ln59" fromId="86" toId="92">
 </dataflow>
-<dataflow id="372" from="StgValue_232" to="add_ln81" fromId="232" toId="92">
+<dataflow id="372" from="StgValue_232" to="add_ln59" fromId="232" toId="92">
 </dataflow>
-<dataflow id="373" from="cshake256_simple.32.clone" to="call_ln75" fromId="366" toId="93">
+<dataflow id="373" from="cshake256_simple.32.clone" to="call_ln56" fromId="366" toId="93">
 </dataflow>
-<dataflow id="374" from="h" to="call_ln75" fromId="60" toId="93">
+<dataflow id="374" from="h" to="call_ln56" fromId="60" toId="93">
 </dataflow>
-<dataflow id="375" from="jinvariant" to="call_ln75" fromId="59" toId="93">
+<dataflow id="375" from="jinvariant" to="call_ln56" fromId="59" toId="93">
 </dataflow>
-<dataflow id="376" from="KeccakF_RoundConstants" to="call_ln75" fromId="188" toId="93">
+<dataflow id="376" from="KeccakF_RoundConstants" to="call_ln56" fromId="188" toId="93">
 </dataflow>
 <dataflow id="377" from="gmem" to="gmem_addr_3" fromId="183" toId="94">
 </dataflow>
-<dataflow id="378" from="add_ln81" to="gmem_addr_3" fromId="92" toId="94">
+<dataflow id="378" from="add_ln59" to="gmem_addr_3" fromId="92" toId="94">
 </dataflow>
 <dataflow id="380" from="_ssdm_op_WriteReq.m_axi.p1i8" to="empty_183" fromId="379" toId="95">
 </dataflow>
@@ -2107,37 +2107,37 @@ entry:45 %ret_ln0 = ret
 </dataflow>
 <dataflow id="383" from="StgValue_382" to="empty_183" fromId="382" toId="95">
 </dataflow>
-<dataflow id="385" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6" to="call_ln81" fromId="384" toId="96">
+<dataflow id="385" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1" to="call_ln59" fromId="384" toId="96">
 </dataflow>
-<dataflow id="386" from="gmem" to="call_ln81" fromId="183" toId="96">
+<dataflow id="386" from="gmem" to="call_ln59" fromId="183" toId="96">
 </dataflow>
-<dataflow id="387" from="add_ln81" to="call_ln81" fromId="92" toId="96">
+<dataflow id="387" from="add_ln59" to="call_ln59" fromId="92" toId="96">
 </dataflow>
-<dataflow id="388" from="temp" to="call_ln81" fromId="61" toId="96">
+<dataflow id="388" from="temp" to="call_ln59" fromId="61" toId="96">
 </dataflow>
-<dataflow id="389" from="temp_1" to="call_ln81" fromId="62" toId="96">
+<dataflow id="389" from="temp_1" to="call_ln59" fromId="62" toId="96">
 </dataflow>
-<dataflow id="390" from="temp_2" to="call_ln81" fromId="63" toId="96">
+<dataflow id="390" from="temp_2" to="call_ln59" fromId="63" toId="96">
 </dataflow>
-<dataflow id="391" from="temp_3" to="call_ln81" fromId="64" toId="96">
+<dataflow id="391" from="temp_3" to="call_ln59" fromId="64" toId="96">
 </dataflow>
-<dataflow id="392" from="h" to="call_ln81" fromId="60" toId="96">
+<dataflow id="392" from="h" to="call_ln59" fromId="60" toId="96">
 </dataflow>
-<dataflow id="393" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_81_6" to="call_ln81" fromId="384" toId="97">
+<dataflow id="393" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_59_1" to="call_ln59" fromId="384" toId="97">
 </dataflow>
-<dataflow id="394" from="gmem" to="call_ln81" fromId="183" toId="97">
+<dataflow id="394" from="gmem" to="call_ln59" fromId="183" toId="97">
 </dataflow>
-<dataflow id="395" from="add_ln81" to="call_ln81" fromId="92" toId="97">
+<dataflow id="395" from="add_ln59" to="call_ln59" fromId="92" toId="97">
 </dataflow>
-<dataflow id="396" from="temp" to="call_ln81" fromId="61" toId="97">
+<dataflow id="396" from="temp" to="call_ln59" fromId="61" toId="97">
 </dataflow>
-<dataflow id="397" from="temp_1" to="call_ln81" fromId="62" toId="97">
+<dataflow id="397" from="temp_1" to="call_ln59" fromId="62" toId="97">
 </dataflow>
-<dataflow id="398" from="temp_2" to="call_ln81" fromId="63" toId="97">
+<dataflow id="398" from="temp_2" to="call_ln59" fromId="63" toId="97">
 </dataflow>
-<dataflow id="399" from="temp_3" to="call_ln81" fromId="64" toId="97">
+<dataflow id="399" from="temp_3" to="call_ln59" fromId="64" toId="97">
 </dataflow>
-<dataflow id="400" from="h" to="call_ln81" fromId="60" toId="97">
+<dataflow id="400" from="h" to="call_ln59" fromId="60" toId="97">
 </dataflow>
 <dataflow id="402" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_184" fromId="401" toId="98">
 </dataflow>
@@ -2239,51 +2239,51 @@ entry:45 %ret_ln0 = ret
 </dataflow>
 <dataflow id="453" from="temp" to="call_ln0" fromId="61" toId="113">
 </dataflow>
-<dataflow id="455" from="cshake256_simple_absorb" to="call_ln623" fromId="454" toId="114">
+<dataflow id="455" from="cshake256_simple_absorb" to="call_ln638" fromId="454" toId="114">
 </dataflow>
-<dataflow id="456" from="s_i" to="call_ln623" fromId="53" toId="114">
+<dataflow id="456" from="s_i" to="call_ln638" fromId="53" toId="114">
 </dataflow>
-<dataflow id="458" from="StgValue_457" to="call_ln623" fromId="457" toId="114">
+<dataflow id="458" from="StgValue_457" to="call_ln638" fromId="457" toId="114">
 </dataflow>
-<dataflow id="459" from="temp" to="call_ln623" fromId="61" toId="114">
+<dataflow id="459" from="temp" to="call_ln638" fromId="61" toId="114">
 </dataflow>
-<dataflow id="460" from="temp_1" to="call_ln623" fromId="62" toId="114">
+<dataflow id="460" from="temp_1" to="call_ln638" fromId="62" toId="114">
 </dataflow>
-<dataflow id="461" from="temp_2" to="call_ln623" fromId="63" toId="114">
+<dataflow id="461" from="temp_2" to="call_ln638" fromId="63" toId="114">
 </dataflow>
-<dataflow id="462" from="temp_3" to="call_ln623" fromId="64" toId="114">
+<dataflow id="462" from="temp_3" to="call_ln638" fromId="64" toId="114">
 </dataflow>
-<dataflow id="463" from="KeccakF_RoundConstants" to="call_ln623" fromId="188" toId="114">
+<dataflow id="463" from="KeccakF_RoundConstants" to="call_ln638" fromId="188" toId="114">
 </dataflow>
-<dataflow id="464" from="cshake256_simple_absorb" to="call_ln623" fromId="454" toId="115">
+<dataflow id="464" from="cshake256_simple_absorb" to="call_ln638" fromId="454" toId="115">
 </dataflow>
-<dataflow id="465" from="s_i" to="call_ln623" fromId="53" toId="115">
+<dataflow id="465" from="s_i" to="call_ln638" fromId="53" toId="115">
 </dataflow>
-<dataflow id="466" from="StgValue_457" to="call_ln623" fromId="457" toId="115">
+<dataflow id="466" from="StgValue_457" to="call_ln638" fromId="457" toId="115">
 </dataflow>
-<dataflow id="467" from="temp" to="call_ln623" fromId="61" toId="115">
+<dataflow id="467" from="temp" to="call_ln638" fromId="61" toId="115">
 </dataflow>
-<dataflow id="468" from="temp_1" to="call_ln623" fromId="62" toId="115">
+<dataflow id="468" from="temp_1" to="call_ln638" fromId="62" toId="115">
 </dataflow>
-<dataflow id="469" from="temp_2" to="call_ln623" fromId="63" toId="115">
+<dataflow id="469" from="temp_2" to="call_ln638" fromId="63" toId="115">
 </dataflow>
-<dataflow id="470" from="temp_3" to="call_ln623" fromId="64" toId="115">
+<dataflow id="470" from="temp_3" to="call_ln638" fromId="64" toId="115">
 </dataflow>
-<dataflow id="471" from="KeccakF_RoundConstants" to="call_ln623" fromId="188" toId="115">
+<dataflow id="471" from="KeccakF_RoundConstants" to="call_ln638" fromId="188" toId="115">
 </dataflow>
-<dataflow id="473" from="KeccakF1600_StatePermute" to="call_ln417" fromId="472" toId="116">
+<dataflow id="473" from="KeccakF1600_StatePermute" to="call_ln430" fromId="472" toId="116">
 </dataflow>
-<dataflow id="474" from="s_i" to="call_ln417" fromId="53" toId="116">
+<dataflow id="474" from="s_i" to="call_ln430" fromId="53" toId="116">
 </dataflow>
-<dataflow id="475" from="KeccakF_RoundConstants" to="call_ln417" fromId="188" toId="116">
+<dataflow id="475" from="KeccakF_RoundConstants" to="call_ln430" fromId="188" toId="116">
 </dataflow>
-<dataflow id="476" from="KeccakF1600_StatePermute" to="call_ln417" fromId="472" toId="117">
+<dataflow id="476" from="KeccakF1600_StatePermute" to="call_ln430" fromId="472" toId="117">
 </dataflow>
-<dataflow id="477" from="s_i" to="call_ln417" fromId="53" toId="117">
+<dataflow id="477" from="s_i" to="call_ln430" fromId="53" toId="117">
 </dataflow>
-<dataflow id="478" from="KeccakF_RoundConstants" to="call_ln417" fromId="188" toId="117">
+<dataflow id="478" from="KeccakF_RoundConstants" to="call_ln430" fromId="188" toId="117">
 </dataflow>
-<dataflow id="480" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2" to="call_ln0" fromId="479" toId="118">
+<dataflow id="480" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2" to="call_ln0" fromId="479" toId="118">
 </dataflow>
 <dataflow id="481" from="t_46" to="call_ln0" fromId="58" toId="118">
 </dataflow>
@@ -2295,7 +2295,7 @@ entry:45 %ret_ln0 = ret
 </dataflow>
 <dataflow id="485" from="s_i" to="call_ln0" fromId="53" toId="118">
 </dataflow>
-<dataflow id="486" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_418_2" to="call_ln0" fromId="479" toId="119">
+<dataflow id="486" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_431_2" to="call_ln0" fromId="479" toId="119">
 </dataflow>
 <dataflow id="487" from="t_46" to="call_ln0" fromId="58" toId="119">
 </dataflow>
@@ -2321,7 +2321,7 @@ entry:45 %ret_ln0 = ret
 </dataflow>
 <dataflow id="499" from="StgValue_498" to="empty_186" fromId="498" toId="122">
 </dataflow>
-<dataflow id="501" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1" to="call_ln0" fromId="500" toId="123">
+<dataflow id="501" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1" to="call_ln0" fromId="500" toId="123">
 </dataflow>
 <dataflow id="502" from="gmem" to="call_ln0" fromId="183" toId="123">
 </dataflow>
@@ -2335,7 +2335,7 @@ entry:45 %ret_ln0 = ret
 </dataflow>
 <dataflow id="507" from="t_46" to="call_ln0" fromId="58" toId="123">
 </dataflow>
-<dataflow id="508" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_649_1" to="call_ln0" fromId="500" toId="124">
+<dataflow id="508" from="crypto_kem_enc.1_Pipeline_VITIS_LOOP_664_1" to="call_ln0" fromId="500" toId="124">
 </dataflow>
 <dataflow id="509" from="gmem" to="call_ln0" fromId="183" toId="124">
 </dataflow>

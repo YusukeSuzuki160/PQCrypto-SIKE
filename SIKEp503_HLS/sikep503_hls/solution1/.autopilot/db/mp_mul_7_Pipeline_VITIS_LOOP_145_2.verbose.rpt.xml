@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mp_mul_7_Pipeline_VITIS_LOOP_145_2'" level="0">
-<item name = "Date">Tue May 27 14:19:41 2025
+<item name = "Date">Tue Jun  3 14:14:44 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -88,7 +88,7 @@
 <column name="add_ln146_1_fu_278_p2">+, 0, 0, 7, 4, 4</column>
 <column name="add_ln146_fu_254_p2">+, 0, 0, 14, 9, 9</column>
 <column name="tempReg_fu_592_p2">+, 0, 0, 71, 64, 64</column>
-<column name="temp_34_fu_477_p2">+, 0, 0, 41, 34, 34</column>
+<column name="temp_37_fu_477_p2">+, 0, 0, 41, 34, 34</column>
 <column name="temp_fu_411_p2">+, 0, 0, 41, 34, 34</column>
 <column name="u_fu_688_p2">+, 0, 0, 13, 4, 4</column>
 <column name="v_123_fu_533_p2">+, 0, 0, 71, 64, 64</column>
@@ -100,12 +100,12 @@
 <column name="or_ln148_4_fu_670_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln148_fu_630_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_21_fu_545_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_22_fu_557_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_16_fu_545_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_17_fu_557_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln105_fu_539_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln148_11_fu_626_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln148_12_fu_643_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln148_13_fu_665_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln148_10_fu_626_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln148_11_fu_643_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln148_12_fu_665_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln148_fu_622_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -116,8 +116,8 @@
 <column name="ap_sig_allocacmp_j_19">9, 2, 4, 8</column>
 <column name="j_fu_100">9, 2, 4, 8</column>
 <column name="t_out_o">14, 3, 4, 12</column>
-<column name="u_71_out_o">14, 3, 64, 192</column>
-<column name="v_94_fu_96">9, 2, 64, 128</column>
+<column name="u_68_out_o">14, 3, 64, 192</column>
+<column name="v_87_fu_96">9, 2, 64, 128</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -169,8 +169,8 @@
 <column name="trunc_ln106_reg_798">32, 0, 32, 0</column>
 <column name="trunc_ln125_reg_845">32, 0, 32, 0</column>
 <column name="trunc_ln125_reg_845_pp0_iter6_reg">32, 0, 32, 0</column>
-<column name="u_71_out_load_reg_875">64, 0, 64, 0</column>
-<column name="v_94_fu_96">64, 0, 64, 0</column>
+<column name="u_68_out_load_reg_875">64, 0, 64, 0</column>
+<column name="v_87_fu_96">64, 0, 64, 0</column>
 <column name="v_reg_880">64, 0, 64, 0</column>
 <column name="icmp_ln145_reg_740">64, 32, 1, 0</column>
 <column name="tmp_171_reg_835">64, 32, 32, 0</column>
@@ -214,15 +214,15 @@
 <column name="PKB_ce0">out, 1, ap_memory, PKB, array</column>
 <column name="PKB_q0">in, 64, ap_memory, PKB, array</column>
 <column name="i">in, 3, ap_none, i, scalar</column>
-<column name="zext_ln146_9">in, 4, ap_none, zext_ln146_9, scalar</column>
+<column name="zext_ln146_7">in, 4, ap_none, zext_ln146_7, scalar</column>
 <column name="b_address0">out, 4, ap_memory, b, array</column>
 <column name="b_ce0">out, 1, ap_memory, b, array</column>
 <column name="b_q0">in, 64, ap_memory, b, array</column>
-<column name="v_94_out">out, 64, ap_vld, v_94_out, pointer</column>
-<column name="v_94_out_ap_vld">out, 1, ap_vld, v_94_out, pointer</column>
-<column name="u_71_out_i">in, 64, ap_ovld, u_71_out, pointer</column>
-<column name="u_71_out_o">out, 64, ap_ovld, u_71_out, pointer</column>
-<column name="u_71_out_o_ap_vld">out, 1, ap_ovld, u_71_out, pointer</column>
+<column name="v_87_out">out, 64, ap_vld, v_87_out, pointer</column>
+<column name="v_87_out_ap_vld">out, 1, ap_vld, v_87_out, pointer</column>
+<column name="u_68_out_i">in, 64, ap_ovld, u_68_out, pointer</column>
+<column name="u_68_out_o">out, 64, ap_ovld, u_68_out, pointer</column>
+<column name="u_68_out_o_ap_vld">out, 1, ap_ovld, u_68_out, pointer</column>
 <column name="t_out_i">in, 4, ap_ovld, t_out, pointer</column>
 <column name="t_out_o">out, 4, ap_ovld, t_out, pointer</column>
 <column name="t_out_o_ap_vld">out, 1, ap_ovld, t_out, pointer</column>

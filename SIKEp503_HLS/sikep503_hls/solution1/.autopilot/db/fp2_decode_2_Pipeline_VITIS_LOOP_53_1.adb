@@ -290,7 +290,7 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>i_273</name>
+              <name>i_275</name>
               <fileName>src/sidh.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>53</lineNumber>
@@ -2317,7 +2317,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_273</first>
+          <first>ap_sig_allocacmp_i_275</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2982,7 +2982,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>i_273_load_fu_69</first>
+        <first>i_275_load_fu_69</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

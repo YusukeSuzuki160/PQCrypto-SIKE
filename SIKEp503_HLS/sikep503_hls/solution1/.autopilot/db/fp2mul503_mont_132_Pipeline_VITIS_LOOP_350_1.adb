@@ -506,7 +506,7 @@
             <Obj>
               <type>0</type>
               <id>12</id>
-              <name>i_265</name>
+              <name>i_267</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>350</lineNumber>
@@ -2496,7 +2496,7 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>or_ln352_69</name>
+              <name>or_ln352_70</name>
               <fileName>src/fpx.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>352</lineNumber>
@@ -2535,7 +2535,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln352_69_fu_240_p2</rtlName>
+              <rtlName>or_ln352_70_fu_240_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -4373,7 +4373,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln352_69_fu_240_p2 ( or ) </first>
+          <first>or_ln352_70_fu_240_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4654,7 +4654,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_265</first>
+          <first>ap_sig_allocacmp_i_267</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4872,7 +4872,7 @@
           </second>
         </item>
         <item>
-          <first>i_265_reg_261</first>
+          <first>i_267_reg_261</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5007,7 +5007,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln352_69_fu_240_p2 ( or ) </first>
+          <first>or_ln352_70_fu_240_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5797,7 +5797,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln352_69_fu_240</first>
+        <first>or_ln352_70_fu_240</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5949,7 +5949,7 @@
         </second>
       </item>
       <item>
-        <first>i_265_load_fu_124</first>
+        <first>i_267_load_fu_124</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6152,7 +6152,7 @@
         </second>
       </item>
       <item>
-        <first>i_265_reg_261</first>
+        <first>i_267_reg_261</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>i_160</name>
+              <name>i_177</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>44</lineNumber>
@@ -242,7 +242,7 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>i_160_write_ln44</name>
+              <name>i_177_write_ln44</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>44</lineNumber>
@@ -1376,7 +1376,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>xor_ln54_28</name>
+              <name>xor_ln54_37</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>54</lineNumber>
@@ -1408,7 +1408,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln54_28_fu_165_p2</rtlName>
+              <rtlName>xor_ln54_37_fu_165_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1569,7 +1569,7 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>xor_ln54_33</name>
+              <name>xor_ln54_38</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>54</lineNumber>
@@ -1601,7 +1601,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln54_33_fu_182_p2</rtlName>
+              <rtlName>xor_ln54_38_fu_182_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1761,7 +1761,7 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>and_ln54_10</name>
+              <name>and_ln54_13</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>54</lineNumber>
@@ -1793,7 +1793,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>and_ln54_10_fu_199_p2</rtlName>
+              <rtlName>and_ln54_13_fu_199_p2</rtlName>
               <control>auto</control>
               <opType>and</opType>
               <implIndex>auto</implIndex>
@@ -1825,7 +1825,7 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>xor_ln54_30</name>
+              <name>xor_ln54_39</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>54</lineNumber>
@@ -1857,7 +1857,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln54_30_fu_204_p2</rtlName>
+              <rtlName>xor_ln54_39_fu_204_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1890,7 +1890,7 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>or_ln54_10</name>
+              <name>or_ln54_13</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>54</lineNumber>
@@ -1922,7 +1922,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln54_10_fu_210_p2</rtlName>
+              <rtlName>or_ln54_13_fu_210_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -2019,7 +2019,7 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>i_160_write_ln44</name>
+              <name>i_177_write_ln44</name>
               <fileName>src/generic/fp_generic.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>44</lineNumber>
@@ -2208,7 +2208,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>94</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_147_3_Pipeline_VITIS_LOOP_28_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_146_3_Pipeline_VITIS_LOOP_28_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -3631,7 +3631,7 @@
           </second>
         </item>
         <item>
-          <first>and_ln54_10_fu_199_p2 ( and ) </first>
+          <first>and_ln54_13_fu_199_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3746,7 +3746,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln54_10_fu_210_p2 ( or ) </first>
+          <first>or_ln54_13_fu_210_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3842,7 +3842,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln54_28_fu_165_p2 ( xor ) </first>
+          <first>xor_ln54_37_fu_165_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3865,30 +3865,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln54_30_fu_204_p2 ( xor ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>64</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>64</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>64</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln54_33_fu_182_p2 ( xor ) </first>
+          <first>xor_ln54_38_fu_182_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3907,6 +3884,29 @@
             <item>
               <first>LUT</first>
               <second>2</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>xor_ln54_39_fu_204_p2 ( xor ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>64</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>64</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>64</second>
             </item>
           </second>
         </item>
@@ -4143,7 +4143,7 @@
           </second>
         </item>
         <item>
-          <first>i_160_fu_50</first>
+          <first>i_177_fu_50</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4288,7 +4288,7 @@
           </second>
         </item>
         <item>
-          <first>i_160_fu_50</first>
+          <first>i_177_fu_50</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4437,7 +4437,7 @@
           </second>
         </item>
         <item>
-          <first>and_ln54_10_fu_199_p2 ( and ) </first>
+          <first>and_ln54_13_fu_199_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4461,7 +4461,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln54_10_fu_210_p2 ( or ) </first>
+          <first>or_ln54_13_fu_210_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4493,7 +4493,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln54_28_fu_165_p2 ( xor ) </first>
+          <first>xor_ln54_37_fu_165_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4501,19 +4501,19 @@
           </second>
         </item>
         <item>
-          <first>xor_ln54_30_fu_204_p2 ( xor ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>37</item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln54_33_fu_182_p2 ( xor ) </first>
+          <first>xor_ln54_38_fu_182_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>33</item>
+          </second>
+        </item>
+        <item>
+          <first>xor_ln54_39_fu_204_p2 ( xor ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>37</item>
           </second>
         </item>
         <item>
@@ -5135,7 +5135,7 @@
         </second>
       </item>
       <item>
-        <first>and_ln54_10_fu_199</first>
+        <first>and_ln54_13_fu_199</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5167,7 +5167,7 @@
         </second>
       </item>
       <item>
-        <first>i_160_fu_50</first>
+        <first>i_177_fu_50</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5183,7 +5183,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln54_10_fu_210</first>
+        <first>or_ln54_13_fu_210</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5247,7 +5247,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln54_28_fu_165</first>
+        <first>xor_ln54_37_fu_165</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5255,19 +5255,19 @@
         </second>
       </item>
       <item>
-        <first>xor_ln54_30_fu_204</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>37</item>
-        </second>
-      </item>
-      <item>
-        <first>xor_ln54_33_fu_182</first>
+        <first>xor_ln54_38_fu_182</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>xor_ln54_39_fu_204</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
         </second>
       </item>
       <item>
@@ -5490,7 +5490,7 @@
         </second>
       </item>
       <item>
-        <first>i_160_reg_224</first>
+        <first>i_177_reg_224</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

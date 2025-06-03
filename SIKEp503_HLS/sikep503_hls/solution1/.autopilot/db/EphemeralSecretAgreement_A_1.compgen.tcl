@@ -36,17 +36,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3263 \
-    name ephemeralsk \
+    id 3265 \
+    name ephemeralsk_i \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename ephemeralsk \
+    corename ephemeralsk_i \
     op interface \
-    ports { ephemeralsk_address0 { O 5 vector } ephemeralsk_ce0 { O 1 bit } ephemeralsk_q0 { I 8 vector } ephemeralsk_address1 { O 5 vector } ephemeralsk_ce1 { O 1 bit } ephemeralsk_q1 { I 8 vector } } \
+    ports { ephemeralsk_i_address0 { O 5 vector } ephemeralsk_i_ce0 { O 1 bit } ephemeralsk_i_q0 { I 8 vector } ephemeralsk_i_address1 { O 5 vector } ephemeralsk_i_ce1 { O 1 bit } ephemeralsk_i_q1 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'ephemeralsk'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'ephemeralsk_i'"
 }
 }
 
@@ -55,17 +55,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3266 \
-    name SharedSecretA \
+    id 3268 \
+    name SharedSecretA_0 \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename SharedSecretA \
+    corename SharedSecretA_0 \
     op interface \
-    ports { SharedSecretA_address0 { O 7 vector } SharedSecretA_ce0 { O 1 bit } SharedSecretA_we0 { O 1 bit } SharedSecretA_d0 { O 8 vector } SharedSecretA_address1 { O 7 vector } SharedSecretA_ce1 { O 1 bit } SharedSecretA_we1 { O 1 bit } SharedSecretA_d1 { O 8 vector } } \
+    ports { SharedSecretA_0_address0 { O 5 vector } SharedSecretA_0_ce0 { O 1 bit } SharedSecretA_0_we0 { O 1 bit } SharedSecretA_0_d0 { O 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SharedSecretA'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SharedSecretA_0'"
 }
 }
 
@@ -74,7 +74,64 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3267 \
+    id 3269 \
+    name SharedSecretA_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename SharedSecretA_1 \
+    op interface \
+    ports { SharedSecretA_1_address0 { O 5 vector } SharedSecretA_1_ce0 { O 1 bit } SharedSecretA_1_we0 { O 1 bit } SharedSecretA_1_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SharedSecretA_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 3270 \
+    name SharedSecretA_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename SharedSecretA_2 \
+    op interface \
+    ports { SharedSecretA_2_address0 { O 5 vector } SharedSecretA_2_ce0 { O 1 bit } SharedSecretA_2_we0 { O 1 bit } SharedSecretA_2_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SharedSecretA_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 3271 \
+    name SharedSecretA_3 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename SharedSecretA_3 \
+    op interface \
+    ports { SharedSecretA_3_address0 { O 5 vector } SharedSecretA_3_ce0 { O 1 bit } SharedSecretA_3_we0 { O 1 bit } SharedSecretA_3_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SharedSecretA_3'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 3272 \
     name strat_Alice_1 \
     reset_level 1 \
     sync_rst true \
@@ -92,7 +149,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3264 \
+    id 3266 \
     name gmem \
     type other \
     dir I \
@@ -107,7 +164,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3265 \
+    id 3267 \
     name PublicKeyB \
     type other \
     dir I \

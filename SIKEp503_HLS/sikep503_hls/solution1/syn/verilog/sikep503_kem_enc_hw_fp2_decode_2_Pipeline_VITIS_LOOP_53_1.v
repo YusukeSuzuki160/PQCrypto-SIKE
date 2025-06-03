@@ -55,7 +55,7 @@ wire    ap_block_pp0_stage0;
 reg   [7:0] i_fu_42;
 wire   [7:0] add_ln53_fu_78_p2;
 wire    ap_loop_init;
-reg   [7:0] ap_sig_allocacmp_i_273;
+reg   [7:0] ap_sig_allocacmp_i_275;
 reg    PKB_ce0_local;
 reg   [7:0] PKB_we0_local;
 wire   [7:0] shl_ln54_fu_116_p2;
@@ -202,9 +202,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_273 = 8'd0;
+        ap_sig_allocacmp_i_275 = 8'd0;
     end else begin
-        ap_sig_allocacmp_i_273 = i_fu_42;
+        ap_sig_allocacmp_i_275 = i_fu_42;
     end
 end
 
@@ -227,7 +227,7 @@ assign PKB_d0 = 64'd0;
 
 assign PKB_we0 = PKB_we0_local;
 
-assign add_ln53_fu_78_p2 = (ap_sig_allocacmp_i_273 + 8'd1);
+assign add_ln53_fu_78_p2 = (ap_sig_allocacmp_i_275 + 8'd1);
 
 assign add_ln54_fu_88_p2 = (zext_ln53_fu_84_p1 + x);
 
@@ -249,13 +249,13 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln53_fu_72_p2 = ((ap_sig_allocacmp_i_273 == 8'd128) ? 1'b1 : 1'b0);
+assign icmp_ln53_fu_72_p2 = ((ap_sig_allocacmp_i_275 == 8'd128) ? 1'b1 : 1'b0);
 
 assign shl_ln54_fu_116_p2 = 8'd1 << zext_ln54_fu_113_p1;
 
 assign trunc_ln54_fu_94_p1 = add_ln54_fu_88_p2[2:0];
 
-assign zext_ln53_fu_84_p1 = ap_sig_allocacmp_i_273;
+assign zext_ln53_fu_84_p1 = ap_sig_allocacmp_i_275;
 
 assign zext_ln54_1_fu_123_p1 = lshr_ln_reg_142;
 

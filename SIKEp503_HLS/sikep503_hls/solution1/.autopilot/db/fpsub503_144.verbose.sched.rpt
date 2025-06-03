@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_144'
 ================================================================
-* Date:           Tue May 27 14:12:42 2025
+* Date:           Tue Jun  3 14:07:50 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -84,10 +84,10 @@ ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%b_offset_read = read i32 @_ssdm_op_
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%a_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset2"   --->   Operation 8 'read' 'a_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 9 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%empty = trunc i32 %a_offset_read"   --->   Operation 10 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%empty_134 = trunc i32 %b_offset_read"   --->   Operation 11 'trunc' 'empty_134' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%empty_141 = trunc i32 %b_offset_read"   --->   Operation 11 'trunc' 'empty_141' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 12 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 13 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_134, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 14 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_141, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 14 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_492 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty, i1 %a_offset2_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 15 'bitconcatenate' 'tmp_492' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [2/2] (5.12ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_47_1, i7 %tmp_492, i64 %a, i7 %tmp_s, i64 %b, i4 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 16 'call' 'call_ln48' <Predicate = true> <Delay = 5.12> <CoreType = "Generic">   --->   Generic Core
 

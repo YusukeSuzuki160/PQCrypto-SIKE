@@ -290,7 +290,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>i_273</name>
+						<name>i_275</name>
 						<fileName>src/sidh.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>53</lineNumber>
@@ -2527,7 +2527,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_273_load_fu_69</first>
+			<first>i_275_load_fu_69</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

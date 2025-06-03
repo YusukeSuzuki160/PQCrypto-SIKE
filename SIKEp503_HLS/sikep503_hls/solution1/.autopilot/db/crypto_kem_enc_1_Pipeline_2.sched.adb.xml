@@ -151,7 +151,7 @@ load-store-loop2:2 %empty = add i9 %loop_index3_load, i9 1
 
 <Node id="16" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-load-store-loop2:3 %br_ln0 = br i1 %exitcond710, void %load-store-loop2.split, void %for.end.exitStub
+load-store-loop2:3 %br_ln0 = br i1 %exitcond710, void %load-store-loop2.split, void %memcpy-split1.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -281,7 +281,7 @@ load-store-loop2.split:4 %gmem_addr_read = read i8 @_ssdm_op_Read.m_axi.p1i8, i8
 
 <Node id="47" bw="0">
 <![CDATA[
-for.end.exitStub:0 %ret_ln0 = ret
+memcpy-split1.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -420,10 +420,10 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %p
 
 <Node id="32" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.2:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_2_addr
+.case.2:0 %store_ln48 = store i8 %gmem_addr_read, i7 %temp_2_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln49"/></StgValue>
+<StgValue><ssdm name="store_ln48"/></StgValue>
 </operation>
 
 <operation id="31" st_id="3" stage="1" lat="1">
@@ -452,10 +452,10 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %p
 
 <Node id="35" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.1:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_1_addr
+.case.1:0 %store_ln48 = store i8 %gmem_addr_read, i7 %temp_1_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln49"/></StgValue>
+<StgValue><ssdm name="store_ln48"/></StgValue>
 </operation>
 
 <operation id="33" st_id="3" stage="1" lat="1">
@@ -484,10 +484,10 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %p
 
 <Node id="38" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.0:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_addr
+.case.0:0 %store_ln48 = store i8 %gmem_addr_read, i7 %temp_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln49"/></StgValue>
+<StgValue><ssdm name="store_ln48"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">
@@ -516,10 +516,10 @@ load-store-loop2.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %p
 
 <Node id="41" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.3:0 %store_ln49 = store i8 %gmem_addr_read, i7 %temp_3_addr
+.case.3:0 %store_ln48 = store i8 %gmem_addr_read, i7 %temp_3_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln49"/></StgValue>
+<StgValue><ssdm name="store_ln48"/></StgValue>
 </operation>
 
 <operation id="37" st_id="3" stage="1" lat="1">

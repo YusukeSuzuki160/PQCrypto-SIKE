@@ -59,7 +59,7 @@ wire   [2:0] p503_1_address0;
 wire   [63:0] p503_1_q0;
 reg   [0:0] borrow_reg_91;
 wire    ap_block_pp0_stage0_11001;
-reg   [3:0] i_93_reg_289;
+reg   [3:0] i_99_reg_289;
 wire    ap_block_pp0_stage1_11001;
 reg   [0:0] icmp_ln91_reg_294;
 reg   [0:0] icmp_ln91_reg_294_pp0_iter1_reg;
@@ -312,7 +312,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
         addr_cmp_reg_303 <= addr_cmp_fu_153_p2;
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-        i_93_reg_289 <= i_fu_54;
+        i_99_reg_289 <= i_fu_54;
         icmp_ln91_reg_294 <= icmp_ln91_fu_122_p2;
         icmp_ln91_reg_294_pp0_iter1_reg <= icmp_ln91_reg_294;
         t_i_addr_reg_298[2 : 0] <= zext_ln92_2_fu_145_p1[2 : 0];
@@ -462,7 +462,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln91_fu_164_p2 = (i_93_reg_289 + 4'd1);
+assign add_ln91_fu_164_p2 = (i_99_reg_289 + 4'd1);
 
 assign addr_cmp_fu_153_p2 = ((reuse_addr_reg_fu_46 == zext_ln92_2_fu_145_p1) ? 1'b1 : 1'b0);
 

@@ -958,7 +958,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>xor_ln24_11</name>
+						<name>xor_ln24_8</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1130,7 +1130,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>xor_ln24_12</name>
+						<name>xor_ln24_9</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1358,7 +1358,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>xor_ln24_13</name>
+						<name>xor_ln24_10</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -1416,7 +1416,7 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>or_ln24_4</name>
+						<name>or_ln24_3</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -3492,7 +3492,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln24_4_fu_175</first>
+			<first>or_ln24_3_fu_175</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3532,7 +3532,15 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln24_11_fu_130</first>
+			<first>xor_ln24_10_fu_169</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>31</item>
+			</second>
+		</item>
+		<item>
+			<first>xor_ln24_8_fu_130</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3540,19 +3548,11 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln24_12_fu_147</first>
+			<first>xor_ln24_9_fu_147</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>27</item>
-			</second>
-		</item>
-		<item>
-			<first>xor_ln24_13_fu_169</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>31</item>
 			</second>
 		</item>
 		<item>

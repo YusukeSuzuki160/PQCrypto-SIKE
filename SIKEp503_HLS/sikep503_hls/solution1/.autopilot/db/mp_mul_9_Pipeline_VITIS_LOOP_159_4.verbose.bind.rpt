@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_9_Pipeline_VITIS_LOOP_159_4'
 ================================================================
-* Date:           Tue May 27 14:14:39 2025
+* Date:           Tue Jun  3 14:09:44 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -187,8 +187,8 @@ ST_7 : Operation 91 [1/1] (2.55ns)   --->   "%add_ln130_47 = add i33 %zext_ln106
 ST_7 : Operation 92 [1/1] (0.00ns)   --->   "%trunc_ln130 = trunc i33 %add_ln130_47" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:160]   --->   Operation 92 'trunc' 'trunc_ln130' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%zext_ln130_44 = zext i33 %add_ln130_47" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:160]   --->   Operation 93 'zext' 'zext_ln130_44' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 94 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln105 = add i32 %trunc_ln130, i32 %add_ln130" [src/generic/fp_generic.c:105->src/generic/fp_generic.c:160]   --->   Operation 94 'add' 'add_ln105' <Predicate = true> <Delay = 4.37> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_7 : Operation 95 [1/1] (2.59ns)   --->   "%temp_25 = add i34 %zext_ln130_44, i34 %zext_ln130_43" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:160]   --->   Operation 95 'add' 'temp_25' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%tmp_116 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_25, i32 32, i32 33" [src/generic/fp_generic.c:133->src/generic/fp_generic.c:160]   --->   Operation 96 'partselect' 'tmp_116' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 95 [1/1] (2.59ns)   --->   "%temp_28 = add i34 %zext_ln130_44, i34 %zext_ln130_43" [src/generic/fp_generic.c:130->src/generic/fp_generic.c:160]   --->   Operation 95 'add' 'temp_28' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%tmp_116 = partselect i2 @_ssdm_op_PartSelect.i2.i34.i32.i32, i34 %temp_28, i32 32, i32 33" [src/generic/fp_generic.c:133->src/generic/fp_generic.c:160]   --->   Operation 96 'partselect' 'tmp_116' <Predicate = true> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 7.04>
 ST_8 : Operation 97 [1/1] (0.00ns)   --->   "%v_35_load = load i64 %v_35" [src/generic/fp_generic.c:161]   --->   Operation 97 'load' 'v_35_load' <Predicate = true> <Delay = 0.00>
@@ -222,9 +222,9 @@ ST_9 : Operation 141 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation
 
 State 10 <SV = 9> <Delay = 4.22>
 ST_10 : Operation 118 [1/1] (0.00ns)   --->   "%t_33_load = load i3 %t_33" [src/generic/fp_generic.c:163]   --->   Operation 118 'load' 't_33_load' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 119 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44" [src/generic/fp_generic.c:139]   --->   Operation 119 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 119 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:139]   --->   Operation 119 'specpipeline' 'specpipeline_ln139' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 120 [1/1] (0.00ns)   --->   "%speclooptripcount_ln139 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 7, i64 4" [src/generic/fp_generic.c:139]   --->   Operation 120 'speclooptripcount' 'speclooptripcount_ln139' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%specloopname_ln159 = specloopname void @_ssdm_op_SpecLoopName, void @empty_41" [src/generic/fp_generic.c:159]   --->   Operation 121 'specloopname' 'specloopname_ln159' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%specloopname_ln159 = specloopname void @_ssdm_op_SpecLoopName, void @empty_43" [src/generic/fp_generic.c:159]   --->   Operation 121 'specloopname' 'specloopname_ln159' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 122 [1/1] (0.00ns) (grouped into LUT with out node xor_ln162_6)   --->   "%xor_ln162 = xor i64 %u, i64 %tempReg" [src/generic/fp_generic.c:162]   --->   Operation 122 'xor' 'xor_ln162' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 123 [1/1] (0.00ns) (grouped into LUT with out node xor_ln162_6)   --->   "%xor_ln162_4 = xor i64 %tempReg, i64 %u_34_out_load" [src/generic/fp_generic.c:162]   --->   Operation 123 'xor' 'xor_ln162_4' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 124 [1/1] (0.00ns) (grouped into LUT with out node xor_ln162_6)   --->   "%or_ln162 = or i64 %xor_ln162, i64 %xor_ln162_4" [src/generic/fp_generic.c:162]   --->   Operation 124 'or' 'or_ln162' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -343,7 +343,7 @@ add_ln130_47               (add                   ) [ 00000000000]
 trunc_ln130                (trunc                 ) [ 00000000000]
 zext_ln130_44              (zext                  ) [ 00000000000]
 add_ln105                  (add                   ) [ 01000000100]
-temp_25                    (add                   ) [ 00000000000]
+temp_28                    (add                   ) [ 00000000000]
 tmp_116                    (partselect            ) [ 01000000100]
 v_35_load                  (load                  ) [ 00000000000]
 shl_ln125_8                (bitconcatenate        ) [ 00000000000]
@@ -734,7 +734,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 <pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </bind>
 </comp>
 
@@ -788,7 +788,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 <pin id="87" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_41"/></StgValue>
+<StgValue><ssdm name="empty_43"/></StgValue>
 </bind>
 </comp>
 
@@ -1729,7 +1729,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="506" class="1004" name="temp_25_fu_506">
+<comp id="506" class="1004" name="temp_28_fu_506">
 <pin_list>
 <pin id="507" dir="0" index="0" bw="33" slack="0"/>
 <pin id="508" dir="0" index="1" bw="33" slack="0"/>
@@ -1737,7 +1737,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="temp_25/7 "/>
+<opset="temp_28/7 "/>
 </bind>
 </comp>
 
@@ -3138,7 +3138,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 		trunc_ln130 : 2
 		zext_ln130_44 : 2
 		add_ln105 : 3
-		temp_25 : 3
+		temp_28 : 3
 		tmp_116 : 4
 	State 8
 		zext_ln133 : 1
@@ -3192,7 +3192,7 @@ ret_ln0                    (ret                   ) [ 00000000000]
 |          |      add_ln130_46_fu_476      |    0    |    0    |    39   |
 |    add   |      add_ln130_47_fu_486      |    0    |    0    |    39   |
 |          |        add_ln105_fu_500       |    0    |    0    |    32   |
-|          |         temp_25_fu_506        |    0    |    0    |    40   |
+|          |         temp_28_fu_506        |    0    |    0    |    40   |
 |          |        add_ln133_fu_550       |    0    |    0    |    71   |
 |          |          v_110_fu_562         |    0    |    0    |    71   |
 |          |         tempReg_fu_621        |    0    |    0    |    71   |

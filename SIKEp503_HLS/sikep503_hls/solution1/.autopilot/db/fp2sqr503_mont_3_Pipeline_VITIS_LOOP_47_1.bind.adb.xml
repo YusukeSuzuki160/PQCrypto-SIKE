@@ -31,10 +31,10 @@
 
 <Node id="4" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_164 = alloca i32 1
+newFuncRoot:0 %i_166 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_164"/></StgValue>
+<StgValue><ssdm name="i_166"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -46,7 +46,7 @@ newFuncRoot:0 %i_164 = alloca i32 1
 
 <Node id="5" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:1 %store_ln44 = store i4 0, i4 %i_164
+newFuncRoot:1 %store_ln44 = store i4 0, i4 %i_166
 
 ]]></Node>
 <StgValue><ssdm name="store_ln44"/></StgValue>
@@ -76,7 +76,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc.i
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i:1 %i = load i4 %i_164
+for.inc.i:1 %i = load i4 %i_166
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -250,7 +250,7 @@ for.inc.i.split:10 %R_X_load_1 = load i4 %R_X_addr_1
 
 <Node id="41" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i.split:27 %store_ln44 = store i4 %add_ln47, i4 %i_164
+for.inc.i.split:27 %store_ln44 = store i4 %add_ln47, i4 %i_166
 
 ]]></Node>
 <StgValue><ssdm name="store_ln44"/></StgValue>
@@ -382,7 +382,7 @@ for.end.i.exitStub:1 %ret_ln0 = ret
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.split:1 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_44
+for.inc.i.split:1 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln44"/></StgValue>
@@ -414,7 +414,7 @@ for.inc.i.split:2 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.split:3 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35
+for.inc.i.split:3 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln47"/></StgValue>
@@ -695,13 +695,13 @@ for.inc.i.split:28 %br_ln47 = br void %for.inc.i
 
 
 <dataflows>
-<dataflow id="63" from="StgValue_62" to="i_164" fromId="62" toId="6">
+<dataflow id="63" from="StgValue_62" to="i_166" fromId="62" toId="6">
 </dataflow>
 <dataflow id="65" from="StgValue_64" to="store_ln44" fromId="64" toId="7">
 </dataflow>
-<dataflow id="66" from="i_164" to="store_ln44" fromId="6" toId="7">
+<dataflow id="66" from="i_166" to="store_ln44" fromId="6" toId="7">
 </dataflow>
-<dataflow id="67" from="i_164" to="i" fromId="6" toId="9">
+<dataflow id="67" from="i_166" to="i" fromId="6" toId="9">
 </dataflow>
 <dataflow id="68" from="i" to="icmp_ln47" fromId="9" toId="10">
 </dataflow>
@@ -741,7 +741,7 @@ for.inc.i.split:28 %br_ln47 = br void %for.inc.i
 </dataflow>
 <dataflow id="91" from="add_ln47" to="store_ln44" fromId="11" toId="20">
 </dataflow>
-<dataflow id="92" from="i_164" to="store_ln44" fromId="6" toId="20">
+<dataflow id="92" from="i_166" to="store_ln44" fromId="6" toId="20">
 </dataflow>
 <dataflow id="93" from="borrowReg" to="borrow" fromId="39" toId="21">
 <BackEdge/>
@@ -780,7 +780,7 @@ for.inc.i.split:28 %br_ln47 = br void %for.inc.i
 </dataflow>
 <dataflow id="110" from="StgValue_107" to="specpipeline_ln44" fromId="107" toId="26">
 </dataflow>
-<dataflow id="112" from="empty_44" to="specpipeline_ln44" fromId="111" toId="26">
+<dataflow id="112" from="empty_60" to="specpipeline_ln44" fromId="111" toId="26">
 </dataflow>
 <dataflow id="114" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln44" fromId="113" toId="27">
 </dataflow>
@@ -792,7 +792,7 @@ for.inc.i.split:28 %br_ln47 = br void %for.inc.i
 </dataflow>
 <dataflow id="120" from="_ssdm_op_SpecLoopName" to="specloopname_ln47" fromId="119" toId="28">
 </dataflow>
-<dataflow id="122" from="empty_35" to="specloopname_ln47" fromId="121" toId="28">
+<dataflow id="122" from="empty_40" to="specloopname_ln47" fromId="121" toId="28">
 </dataflow>
 <dataflow id="123" from="R_X_load_1" to="xor_ln105" fromId="24" toId="29">
 </dataflow>

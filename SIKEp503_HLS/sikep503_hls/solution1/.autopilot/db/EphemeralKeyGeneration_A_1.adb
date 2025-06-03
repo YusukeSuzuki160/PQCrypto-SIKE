@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>ephemeralsk</name>
+              <name>ephemeralsk_i</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -582,7 +582,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -624,7 +624,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1114,7 +1114,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1874,7 +1874,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2634,7 +2634,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -3394,7 +3394,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4154,7 +4154,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4914,7 +4914,7 @@
               <isStorage>1</isStorage>
               <storageDepth>16</storageDepth>
               <coreId>81</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_79_80_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_LADDER3PT_75_76_1_R0_X_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -10846,7 +10846,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_LADDER3PT_79_80_1_fu_1377</rtlName>
+              <rtlName>grp_LADDER3PT_75_76_1_fu_1377</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -13367,7 +13367,7 @@
             <Obj>
               <type>0</type>
               <id>309</id>
-              <name>i_307</name>
+              <name>i_305</name>
               <fileName>src/ec_isogeny.c</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>36</lineNumber>
@@ -13399,7 +13399,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>i</originalName>
-              <rtlName>i_307_fu_1987_p2</rtlName>
+              <rtlName>i_305_fu_1987_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -21229,7 +21229,7 @@
             <Obj>
               <type>2</type>
               <id>992</id>
-              <name>LADDER3PT_79_80_1</name>
+              <name>LADDER3PT_75_76_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -21253,7 +21253,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:LADDER3PT.79.80.1&gt;</content>
+          <content>&lt;constant:LADDER3PT.75.76.1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_416">
           <Value>
@@ -40137,7 +40137,7 @@
           </second>
         </item>
         <item>
-          <first>grp_LADDER3PT_79_80_1_fu_1377 (LADDER3PT_79_80_1)</first>
+          <first>grp_LADDER3PT_75_76_1_fu_1377 (LADDER3PT_75_76_1)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -41445,7 +41445,7 @@
           </second>
         </item>
         <item>
-          <first>i_307_fu_1987_p2 ( + ) </first>
+          <first>i_305_fu_1987_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -48558,7 +48558,7 @@
           </second>
         </item>
         <item>
-          <first>grp_LADDER3PT_79_80_1_fu_1377_ap_start_reg</first>
+          <first>grp_LADDER3PT_75_76_1_fu_1377_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -49204,7 +49204,7 @@
           </second>
         </item>
         <item>
-          <first>i_307_reg_2158</first>
+          <first>i_305_reg_2158</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -49789,7 +49789,7 @@
           </second>
         </item>
         <item>
-          <first>grp_LADDER3PT_79_80_1_fu_1377</first>
+          <first>grp_LADDER3PT_75_76_1_fu_1377</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -50239,7 +50239,7 @@
           </second>
         </item>
         <item>
-          <first>grp_LADDER3PT_79_80_1_fu_1377 (LADDER3PT_79_80_1)</first>
+          <first>grp_LADDER3PT_75_76_1_fu_1377 (LADDER3PT_75_76_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -50556,7 +50556,7 @@
           </second>
         </item>
         <item>
-          <first>i_307_fu_1987_p2 ( + ) </first>
+          <first>i_305_fu_1987_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -55806,7 +55806,7 @@
         </second>
       </item>
       <item>
-        <first>i_307_fu_1987</first>
+        <first>i_305_fu_1987</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -57244,7 +57244,7 @@
         </second>
       </item>
       <item>
-        <first>grp_LADDER3PT_79_80_1_fu_1377</first>
+        <first>grp_LADDER3PT_75_76_1_fu_1377</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -58590,7 +58590,7 @@
         </second>
       </item>
       <item>
-        <first>i_307_reg_2158</first>
+        <first>i_305_reg_2158</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_141_1_Pipeline_VITIS_LOOP_159_4'
 ================================================================
-* Date:           Tue May 27 14:18:57 2025
+* Date:           Tue Jun  3 14:14:00 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -96,7 +96,7 @@
     |add_ln160_fu_228_p2      |         +|   0|  0|  13|           4|           4|
     |t_fu_650_p2              |         +|   0|  0|  11|           3|           3|
     |tempReg_fu_555_p2        |         +|   0|  0|  71|          64|          64|
-    |temp_85_fu_440_p2        |         +|   0|  0|  41|          34|          34|
+    |temp_88_fu_440_p2        |         +|   0|  0|  41|          34|          34|
     |temp_fu_374_p2           |         +|   0|  0|  41|          34|          34|
     |u_fu_570_p2              |         +|   0|  0|  71|          64|          64|
     |v_198_fu_496_p2          |         +|   0|  0|  71|          64|          64|
@@ -235,7 +235,7 @@
 |b_address1          |  out|    4|   ap_memory|                                       b|         array|
 |b_ce1               |  out|    1|   ap_memory|                                       b|         array|
 |b_q1                |   in|   64|   ap_memory|                                       b|         array|
-|i_25                |   in|    4|     ap_none|                                    i_25|        scalar|
+|i_27                |   in|    4|     ap_none|                                    i_27|        scalar|
 |v_35_out            |  out|   64|      ap_vld|                                v_35_out|       pointer|
 |v_35_out_ap_vld     |  out|    1|      ap_vld|                                v_35_out|       pointer|
 |u_34_out_i          |   in|   64|     ap_ovld|                                u_34_out|       pointer|

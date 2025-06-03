@@ -1557,6 +1557,10 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 12 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sike.c" 2
 
+
+
+
+
 int crypto_kem_keypair(unsigned char *pk, unsigned char *sk)
 {
 
@@ -1580,67 +1584,34 @@ int crypto_kem_enc(unsigned char *ct, unsigned char *ss, const unsigned char *pk
 
 
 
-  const uint16_t G = 0;
-  const uint16_t H = 1;
-  const uint16_t P = 2;
   unsigned char ephemeralsk[(250 + 7) / 8];
   unsigned char jinvariant[2 * ((503 + 7) / 8)];
   unsigned char h[24];
   unsigned char temp[402 + 24];
   unsigned int i;
 
-  printf("DEBUG: Starting crypto_kem_enc\n");
-
 
   randombytes(temp, 24);
   memcpy(&temp[24], pk, 378);
-  printf("DEBUG: Generated random bytes for temp (first 16 bytes): ");
-  for (i = 0; i < 16; i++)
-    printf("%02x ", temp[i]);
-  printf("\n");
 
-  cshake256_simple(ephemeralsk, (250 + 7) / 8, G, temp, 378 + 24);
+  cshake256_simple(ephemeralsk, (250 + 7) / 8, 0, temp, 378 + 24);
   ephemeralsk[(250 + 7) / 8 - 1] &= 0x03;
-  printf("DEBUG: Generated ephemeralsk (first 16 bytes): ");
-  for (i = 0; i < 16; i++)
-    printf("%02x ", ephemeralsk[i]);
-  printf("\n");
 
 
   EphemeralKeyGeneration_A(ephemeralsk, ct);
-  printf("DEBUG: Generated ephemeral key (first 16 bytes): ");
-  for (i = 0; i < 16; i++)
-    printf("%02x ", ct[i]);
-  printf("\n");
-
   EphemeralSecretAgreement_A(ephemeralsk, pk, jinvariant);
-  printf("DEBUG: Generated j-invariant (first 16 bytes): ");
-  for (i = 0; i < 16; i++)
-    printf("%02x ", jinvariant[i]);
-  printf("\n");
+  cshake256_simple(h, 24, 2, jinvariant, 2 * ((503 + 7) / 8));
 
-  cshake256_simple(h, 24, P, jinvariant, 2 * ((503 + 7) / 8));
-  printf("DEBUG: Generated h (first 16 bytes): ");
-  for (i = 0; i < 16; i++)
-    printf("%02x ", h[i]);
-  printf("\n");
 
   for (i = 0; i < 24; i++)
+  {
     ct[i + 378] = temp[i] ^ h[i];
-  printf("DEBUG: Generated ciphertext (first 16 bytes): ");
-  for (i = 0; i < 16; i++)
-    printf("%02x ", ct[i]);
-  printf("\n");
+  }
 
 
   memcpy(&temp[24], ct, 402);
-  cshake256_simple(ss, 16, H, temp, 402 + 24);
-  printf("DEBUG: Generated shared secret (first 16 bytes): ");
-  for (i = 0; i < 16; i++)
-    printf("%02x ", ss[i]);
-  printf("\n");
+  cshake256_simple(ss, 16, 1, temp, 402 + 24);
 
-  printf("DEBUG: Finished crypto_kem_enc\n");
   return 0;
 }
 
@@ -1649,9 +1620,6 @@ int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned ch
 
 
 
-  const uint16_t G = 0;
-  const uint16_t H = 1;
-  const uint16_t P = 2;
   unsigned char ephemeralsk_[(250 + 7) / 8];
   unsigned char jinvariant_[2 * ((503 + 7) / 8)];
   unsigned char h_[24];
@@ -1661,13 +1629,17 @@ int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned ch
 
 
   EphemeralSecretAgreement_B(sk + 24, ct, jinvariant_);
-  cshake256_simple(h_, 24, P, jinvariant_, 2 * ((503 + 7) / 8));
+  cshake256_simple(h_, 24, 2, jinvariant_, 2 * ((503 + 7) / 8));
+
+
   for (i = 0; i < 24; i++)
+  {
     temp[i] = ct[i + 378] ^ h_[i];
+  }
 
 
   memcpy(&temp[24], &sk[24 + (253 + 7) / 8], 378);
-  cshake256_simple(ephemeralsk_, (250 + 7) / 8, G, temp, 378 + 24);
+  cshake256_simple(ephemeralsk_, (250 + 7) / 8, 0, temp, 378 + 24);
   ephemeralsk_[(250 + 7) / 8 - 1] &= 0x03;
 
 
@@ -1677,7 +1649,7 @@ int crypto_kem_dec(unsigned char *ss, const unsigned char *ct, const unsigned ch
     memcpy(temp, sk, 24);
   }
   memcpy(&temp[24], ct, 402);
-  cshake256_simple(ss, 16, H, temp, 402 + 24);
+  cshake256_simple(ss, 16, 1, temp, 402 + 24);
 
   return 0;
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_32'" level="0">
-<item name = "Date">Tue May 27 14:16:50 2025
+<item name = "Date">Tue Jun  3 14:11:54 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,21 +24,24 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, no</column>
+<column name="">328, 328, 3.280 us, 3.280 us, 328, 328, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_cshake256_simple_absorb_fu_46">cshake256_simple_absorb, ?, ?, ?, ?, ?, ?, no</column>
-<column name="grp_KeccakF1600_StatePermute_fu_64">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
-<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71">cshake256_simple_32_Pipeline_VITIS_LOOP_418_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80">cshake256_simple_32_Pipeline_VITIS_LOOP_649_1, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_654_1_fu_102">cshake256_simple_32_Pipeline_VITIS_LOOP_654_1, 27, 27, 0.270 us, 0.270 us, 26, 26, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_KeccakF1600_StatePermute_fu_108">KeccakF1600_StatePermute, 42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_416_2_fu_115">cshake256_simple_32_Pipeline_VITIS_LOOP_416_2, 20, 20, 0.200 us, 0.200 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_444_4_fu_129">cshake256_simple_32_Pipeline_VITIS_LOOP_444_4, 20, 20, 0.200 us, 0.200 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_479_2_fu_142">cshake256_simple_32_Pipeline_VITIS_LOOP_479_2, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_712_1_fu_151">cshake256_simple_32_Pipeline_VITIS_LOOP_712_1, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_413_1">132, 132, 66, -, -, 2, no</column>
 </table>
 </item>
 </section>
@@ -51,24 +54,26 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 50, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">4, -, 10017, 34952, -</column>
+<column name="Instance">2, -, 5179, 17845, -</column>
 <column name="Memory">4, -, 64, 20, 0</column>
-<column name="Multiplexer">-, -, 0, 392, -</column>
-<column name="Register">-, -, 12, -, -</column>
+<column name="Multiplexer">-, -, 0, 713, -</column>
+<column name="Register">-, -, 46, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">2, 0, 9, 66, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 0, 4, 35, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_KeccakF1600_StatePermute_fu_64">KeccakF1600_StatePermute, 2, 0, 4904, 17154, 0</column>
-<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71">cshake256_simple_32_Pipeline_VITIS_LOOP_418_2, 0, 0, 13, 64, 0</column>
-<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80">cshake256_simple_32_Pipeline_VITIS_LOOP_649_1, 0, 0, 15, 86, 0</column>
-<column name="grp_cshake256_simple_absorb_fu_46">cshake256_simple_absorb, 2, 0, 5085, 17648, 0</column>
+<column name="grp_KeccakF1600_StatePermute_fu_108">KeccakF1600_StatePermute, 2, 0, 4904, 17154, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_416_2_fu_115">cshake256_simple_32_Pipeline_VITIS_LOOP_416_2, 0, 0, 95, 165, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_444_4_fu_129">cshake256_simple_32_Pipeline_VITIS_LOOP_444_4, 0, 0, 145, 314, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_479_2_fu_142">cshake256_simple_32_Pipeline_VITIS_LOOP_479_2, 0, 0, 13, 64, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_654_1_fu_102">cshake256_simple_32_Pipeline_VITIS_LOOP_654_1, 0, 0, 7, 62, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_712_1_fu_151">cshake256_simple_32_Pipeline_VITIS_LOOP_712_1, 0, 0, 15, 86, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -90,19 +95,41 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln413_fu_200_p2">+, 0, 0, 14, 9, 8</column>
+<column name="add_ln422_fu_194_p2">+, 0, 0, 14, 9, 9</column>
+<column name="icmp_ln413_fu_174_p2">icmp, 0, 0, 14, 9, 8</column>
+<column name="s_we0">or, 0, 0, 8, 8, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">48, 9, 1, 9</column>
-<column name="s_address0">20, 4, 5, 20</column>
-<column name="s_address1">14, 3, 5, 15</column>
-<column name="s_ce0">20, 4, 1, 4</column>
-<column name="s_ce1">14, 3, 1, 3</column>
-<column name="s_d0">14, 3, 64, 192</column>
-<column name="s_d1">14, 3, 64, 192</column>
-<column name="s_we0">14, 3, 8, 24</column>
-<column name="s_we1">14, 3, 8, 24</column>
+<column name="ap_NS_fsm">81, 17, 1, 17</column>
+<column name="idx_fu_62">9, 2, 9, 18</column>
+<column name="in_0_address0">14, 3, 7, 21</column>
+<column name="in_0_address1">14, 3, 7, 21</column>
+<column name="in_0_ce0">14, 3, 1, 3</column>
+<column name="in_0_ce1">14, 3, 1, 3</column>
+<column name="in_1_address0">14, 3, 7, 21</column>
+<column name="in_1_address1">14, 3, 7, 21</column>
+<column name="in_1_ce0">14, 3, 1, 3</column>
+<column name="in_1_ce1">14, 3, 1, 3</column>
+<column name="in_2_address0">14, 3, 7, 21</column>
+<column name="in_2_address1">14, 3, 7, 21</column>
+<column name="in_2_ce0">14, 3, 1, 3</column>
+<column name="in_2_ce1">14, 3, 1, 3</column>
+<column name="in_3_address0">14, 3, 7, 21</column>
+<column name="in_3_address1">14, 3, 7, 21</column>
+<column name="in_3_ce0">14, 3, 1, 3</column>
+<column name="in_3_ce1">14, 3, 1, 3</column>
+<column name="mlen_assign_fu_66">9, 2, 9, 18</column>
+<column name="s_address0">31, 6, 5, 30</column>
+<column name="s_address1">20, 4, 5, 20</column>
+<column name="s_ce0">31, 6, 1, 6</column>
+<column name="s_ce1">20, 4, 1, 4</column>
+<column name="s_d0">25, 5, 64, 320</column>
+<column name="s_we0">25, 5, 8, 40</column>
+<column name="s_we0_local">9, 2, 8, 16</column>
+<column name="s_we1">9, 2, 8, 16</column>
 <column name="t_41_address0">14, 3, 6, 18</column>
 <column name="t_41_ce0">14, 3, 1, 3</column>
 <column name="t_41_ce1">9, 2, 1, 2</column>
@@ -127,11 +154,16 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">8, 0, 8, 0</column>
-<column name="grp_KeccakF1600_StatePermute_fu_64_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_418_2_fu_71_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_649_1_fu_80_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_cshake256_simple_absorb_fu_46_ap_start_reg">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">16, 0, 16, 0</column>
+<column name="grp_KeccakF1600_StatePermute_fu_108_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_416_2_fu_115_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_444_4_fu_129_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_479_2_fu_142_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_654_1_fu_102_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_712_1_fu_151_ap_start_reg">1, 0, 1, 0</column>
+<column name="idx_fu_62">9, 0, 9, 0</column>
+<column name="mlen_assign_fu_66">9, 0, 9, 0</column>
+<column name="tmp_s_reg_233">6, 0, 6, 0</column>
 </table>
 </item>
 </section>
@@ -147,10 +179,10 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, cshake256_simple.32, return value</column>
-<column name="ephemeralsk_address0">out, 5, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_ce0">out, 1, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_we0">out, 1, ap_memory, ephemeralsk, array</column>
-<column name="ephemeralsk_d0">out, 8, ap_memory, ephemeralsk, array</column>
+<column name="ephemeralsk_i_address0">out, 5, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_ce0">out, 1, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_we0">out, 1, ap_memory, ephemeralsk_i, array</column>
+<column name="ephemeralsk_i_d0">out, 8, ap_memory, ephemeralsk_i, array</column>
 <column name="in_0_address0">out, 7, ap_memory, in_0, array</column>
 <column name="in_0_ce0">out, 1, ap_memory, in_0, array</column>
 <column name="in_0_q0">in, 8, ap_memory, in_0, array</column>

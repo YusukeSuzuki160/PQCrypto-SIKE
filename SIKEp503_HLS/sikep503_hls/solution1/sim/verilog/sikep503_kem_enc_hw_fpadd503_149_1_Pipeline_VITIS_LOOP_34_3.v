@@ -13,7 +13,7 @@ module sikep503_kem_enc_hw_fpadd503_149_1_Pipeline_VITIS_LOOP_34_3 (
         ap_done,
         ap_idle,
         ap_ready,
-        zext_ln24_24,
+        zext_ln24_26,
         c_address0,
         c_ce0,
         c_we0,
@@ -33,7 +33,7 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [3:0] zext_ln24_24;
+input  [3:0] zext_ln24_26;
 output  [3:0] c_address0;
 output   c_ce0;
 output   c_we0;
@@ -76,7 +76,7 @@ wire    ap_loop_init;
 wire   [63:0] zext_ln35_16_fu_150_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln34_fu_139_p1;
-reg   [3:0] i_154_fu_54;
+reg   [3:0] i_161_fu_54;
 wire   [3:0] add_ln34_fu_133_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    c_ce1_local;
@@ -114,7 +114,7 @@ initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 i_154_fu_54 = 4'd0;
+#0 i_161_fu_54 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -200,9 +200,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln34_fu_127_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_154_fu_54 <= add_ln34_fu_133_p2;
+            i_161_fu_54 <= add_ln34_fu_133_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_154_fu_54 <= 4'd0;
+            i_161_fu_54 <= 4'd0;
         end
     end
 end
@@ -288,7 +288,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_154_fu_54;
+        ap_sig_allocacmp_i = i_161_fu_54;
     end
 end
 
@@ -350,7 +350,7 @@ assign add_ln34_fu_133_p2 = (ap_sig_allocacmp_i + 4'd1);
 
 assign add_ln35_16_fu_175_p2 = (and_ln35_reg_285 + tempReg_reg_276);
 
-assign add_ln35_fu_144_p2 = (zext_ln24_24 + ap_sig_allocacmp_i);
+assign add_ln35_fu_144_p2 = (zext_ln24_26 + ap_sig_allocacmp_i);
 
 assign and_ln35_16_fu_219_p2 = (xor_ln35_s_fu_211_p3 & c_load_reg_271);
 

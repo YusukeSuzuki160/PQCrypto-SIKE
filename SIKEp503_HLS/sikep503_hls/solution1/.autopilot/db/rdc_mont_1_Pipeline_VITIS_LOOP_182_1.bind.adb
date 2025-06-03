@@ -211,7 +211,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>i_10</name>
+						<name>i_13</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>182</lineNumber>
@@ -1737,7 +1737,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_10_load_fu_51</first>
+			<first>i_13_load_fu_51</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

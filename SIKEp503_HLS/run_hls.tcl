@@ -68,7 +68,7 @@ csim_design
 csynth_design
 
 # Run C/RTL cosimulation
-# cosim_design
+cosim_design
 
 # Export RTL
 export_design -format ip_catalog

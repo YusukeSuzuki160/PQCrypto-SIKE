@@ -125,7 +125,7 @@ wire    ap_CS_fsm_state4;
 reg    grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_ap_start_reg;
 wire    ap_CS_fsm_state5;
 wire    ap_CS_fsm_state6;
-wire   [2:0] empty_141_fu_107_p1;
+wire   [2:0] empty_149_fu_107_p1;
 wire   [2:0] empty_fu_103_p1;
 reg   [5:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
@@ -151,15 +151,15 @@ sikep503_kem_enc_hw_fpadd503_150_Pipeline_VITIS_LOOP_23_1 grp_fpadd503_150_Pipel
     .ap_done(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_ap_done),
     .ap_idle(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_ap_idle),
     .ap_ready(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_ap_ready),
-    .zext_ln24_20(tmp_501_reg_164),
+    .zext_ln24_22(tmp_501_reg_164),
     .a_address0(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_a_address0),
     .a_ce0(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_a_ce0),
     .a_q0(a_q0),
-    .zext_ln24_19(tmp_s_reg_159),
+    .zext_ln24_21(tmp_s_reg_159),
     .b_address0(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_b_address0),
     .b_ce0(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_b_ce0),
     .b_q0(b_q0),
-    .zext_ln24_18(tmp_reg_152),
+    .zext_ln24_20(tmp_reg_152),
     .c_address0(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_c_address0),
     .c_ce0(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_c_ce0),
     .c_we0(grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_c_we0),
@@ -173,7 +173,7 @@ sikep503_kem_enc_hw_fpadd503_150_Pipeline_VITIS_LOOP_28_2 grp_fpadd503_150_Pipel
     .ap_done(grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_ap_done),
     .ap_idle(grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_ap_idle),
     .ap_ready(grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_ap_ready),
-    .zext_ln24_18(tmp_reg_152),
+    .zext_ln24_20(tmp_reg_152),
     .c_address0(grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_c_address0),
     .c_ce0(grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_c_ce0),
     .c_we0(grp_fpadd503_150_Pipeline_VITIS_LOOP_28_2_fu_83_c_we0),
@@ -192,7 +192,7 @@ sikep503_kem_enc_hw_fpadd503_150_Pipeline_VITIS_LOOP_34_3 grp_fpadd503_150_Pipel
     .ap_done(grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_ap_done),
     .ap_idle(grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_ap_idle),
     .ap_ready(grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_ap_ready),
-    .zext_ln24_18(tmp_reg_152),
+    .zext_ln24_20(tmp_reg_152),
     .c_address0(grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_c_address0),
     .c_ce0(grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_c_ce0),
     .c_we0(grp_fpadd503_150_Pipeline_VITIS_LOOP_34_3_fu_93_c_we0),
@@ -445,7 +445,7 @@ assign b_address0 = grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_b_address0;
 
 assign b_ce0 = grp_fpadd503_150_Pipeline_VITIS_LOOP_23_1_fu_70_b_ce0;
 
-assign empty_141_fu_107_p1 = b_offset[2:0];
+assign empty_149_fu_107_p1 = b_offset[2:0];
 
 assign empty_fu_103_p1 = a_offset[2:0];
 
@@ -459,7 +459,7 @@ assign tmp_501_fu_131_p4 = {{{empty_fu_103_p1}, {a_offset2}}, {3'd0}};
 
 assign tmp_fu_111_p3 = {{c_offset}, {3'd0}};
 
-assign tmp_s_fu_120_p4 = {{{empty_141_fu_107_p1}, {b_offset4}}, {3'd0}};
+assign tmp_s_fu_120_p4 = {{{empty_149_fu_107_p1}, {b_offset4}}, {3'd0}};
 
 always @ (posedge ap_clk) begin
     tmp_reg_152[2:0] <= 3'b000;
