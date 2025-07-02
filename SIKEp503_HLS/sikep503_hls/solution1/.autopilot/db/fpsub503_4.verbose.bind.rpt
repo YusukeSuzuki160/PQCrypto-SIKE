@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_4'
 ================================================================
-* Date:           Tue Jun  3 14:07:27 2025
+* Date:           Wed Jul  2 14:03:41 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.774 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.267 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -90,13 +90,13 @@ ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpsub503.4_Pi
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 7 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpsub503.4_Pipeline_VITIS_LOOP_47_1, i64 %R_X, i64 %R_Z, i64 %coeff, i1 %borrow_loc"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 0.99>
+State 3 <SV = 2> <Delay = 0.81>
 ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 8 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 9 [2/2] (0.99ns)   --->   "%call_ln0 = call void @fpsub503.4_Pipeline_VITIS_LOOP_53_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 9 [2/2] (0.81ns)   --->   "%call_ln0 = call void @fpsub503.4_Pipeline_VITIS_LOOP_53_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.81> <CoreType = "Generic">   --->   Generic Core
 
-State 4 <SV = 3> <Delay = 4.91>
+State 4 <SV = 3> <Delay = 3.59>
 ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %coeff"   --->   Operation 10 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 11 [1/2] (4.91ns)   --->   "%call_ln0 = call void @fpsub503.4_Pipeline_VITIS_LOOP_53_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 11 [1/2] (3.59ns)   --->   "%call_ln0 = call void @fpsub503.4_Pipeline_VITIS_LOOP_53_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 3.59> <CoreType = "Generic">   --->   Generic Core
 ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%ret_ln56 = ret" [src/generic/fp_generic.c:56]   --->   Operation 12 'ret' 'ret_ln56' <Predicate = true> <Delay = 0.00>
 
 
@@ -326,10 +326,10 @@ ret_ln56                   (ret                   ) [ 00000]
 |----------|-----------------------------------------------|---------|---------|---------|
 | Operation|                Functional Unit                |  Delay  |    FF   |   LUT   |
 |----------|-----------------------------------------------|---------|---------|---------|
-|   call   | grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_20 |  4.764  |   211   |   592   |
-|          | grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_31 |  3.176  |   271   |   638   |
+|   call   | grp_fpsub503_4_Pipeline_VITIS_LOOP_47_1_fu_20 |  3.894  |    84   |   554   |
+|          | grp_fpsub503_4_Pipeline_VITIS_LOOP_53_2_fu_31 |  2.596  |   271   |   609   |
 |----------|-----------------------------------------------|---------|---------|---------|
-|   Total  |                                               |   7.94  |   482   |   1230  |
+|   Total  |                                               |   6.49  |   355   |   1163  |
 |----------|-----------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -357,10 +357,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    7   |   482  |  1230  |
+|  Function |    6   |   355  |  1163  |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |
 |  Register |    -   |    1   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    7   |   483  |  1230  |
+|   Total   |    6   |   356  |  1163  |
 +-----------+--------+--------+--------+

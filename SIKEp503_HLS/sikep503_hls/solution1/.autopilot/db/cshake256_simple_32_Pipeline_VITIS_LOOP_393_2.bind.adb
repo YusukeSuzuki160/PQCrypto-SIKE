@@ -236,10 +236,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>i_254</name>
+						<name>i_249</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>388</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -255,21 +255,21 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>388</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -391,10 +391,10 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_254_write_ln388</name>
+						<name>i_249_write_ln389</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>388</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -410,21 +410,21 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>388</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -453,7 +453,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -523,14 +523,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -594,14 +594,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -637,7 +637,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.78</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -646,7 +646,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>i_281</name>
+						<name>i_278</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>393</lineNumber>
@@ -665,14 +665,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -708,7 +708,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.78</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -736,14 +736,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -808,14 +808,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -878,14 +878,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -930,7 +930,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -957,14 +957,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1007,7 +1007,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_19">
@@ -1034,14 +1034,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1084,8 +1084,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_delay>1.28</m_delay>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_20">
@@ -1093,7 +1093,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln28_8</name>
+						<name>zext_ln28_1</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1112,14 +1112,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1162,7 +1162,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_21">
@@ -1189,14 +1189,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1241,7 +1241,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1268,14 +1268,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1317,8 +1317,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>19</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1345,14 +1345,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1397,7 +1397,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1424,14 +1424,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1473,8 +1473,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1501,14 +1501,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1553,7 +1553,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_26">
@@ -1580,14 +1580,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1629,8 +1629,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_27">
@@ -1657,14 +1657,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1709,7 +1709,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_28">
@@ -1736,14 +1736,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1785,8 +1785,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1813,14 +1813,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1865,7 +1865,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1873,7 +1873,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>zext_ln28_9</name>
+						<name>zext_ln28_2</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1892,14 +1892,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1942,7 +1942,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>27</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1969,14 +1969,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2019,8 +2019,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
-				<m_topoIndex>28</m_topoIndex>
+				<m_delay>1.28</m_delay>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_32">
@@ -2028,7 +2028,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>zext_ln28_10</name>
+						<name>zext_ln28_3</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2047,14 +2047,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2097,7 +2097,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
+				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_33">
@@ -2105,7 +2105,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>in_0_addr_1</name>
+						<name>in_0_addr_2</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2124,14 +2124,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2176,7 +2176,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_34">
@@ -2203,14 +2203,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2252,8 +2252,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_35">
@@ -2261,7 +2261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>in_1_addr_1</name>
+						<name>in_1_addr_2</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2280,14 +2280,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2332,7 +2332,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_36">
@@ -2359,14 +2359,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2408,8 +2408,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>33</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_37">
@@ -2417,7 +2417,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>in_2_addr_1</name>
+						<name>in_2_addr_2</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2436,14 +2436,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2488,7 +2488,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>34</m_topoIndex>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_38">
@@ -2515,14 +2515,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2564,8 +2564,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>35</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_39">
@@ -2573,7 +2573,7 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>in_3_addr_1</name>
+						<name>in_3_addr_2</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2592,14 +2592,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2644,7 +2644,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>36</m_topoIndex>
+				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_40">
@@ -2671,14 +2671,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2720,8 +2720,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>37</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_41">
@@ -2748,14 +2748,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2793,7 +2793,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_topoIndex>35</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_42">
@@ -2820,14 +2820,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2862,8 +2862,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_delay>2.77</m_delay>
+				<m_topoIndex>36</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_43">
@@ -2890,14 +2890,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2968,14 +2968,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -3011,7 +3011,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
+				<m_delay>0.80</m_delay>
 				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3039,14 +3039,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -3085,7 +3085,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>41</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3094,10 +3094,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>i_254_write_ln388</name>
+						<name>i_249_write_ln389</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>388</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -3113,21 +3113,21 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>388</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -3158,8 +3158,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_delay>1.29</m_delay>
+				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_47">
@@ -3186,14 +3186,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -3269,7 +3269,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>38</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4329,8 +4329,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>20</mMinLatency>
-			<mMaxLatency>20</mMaxLatency>
+			<mMinLatency>19</mMinLatency>
+			<mMaxLatency>19</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4373,11 +4373,11 @@
 				<item>54</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
+			<mDepth>2</mDepth>
 			<mMinTripCount>17</mMinTripCount>
 			<mMaxTripCount>17</mMaxTripCount>
-			<mMinLatency>18</mMinLatency>
-			<mMaxLatency>18</mMaxLatency>
+			<mMinLatency>17</mMinLatency>
+			<mMaxLatency>17</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4407,12 +4407,12 @@
 	</cdfg_regions>
 	<fsm class_id="24" tracking_level="1" version="0" object_id="_152">
 		<states class_id="25" tracking_level="0" version="0">
-			<count>3</count>
+			<count>2</count>
 			<item_version>0</item_version>
 			<item class_id="26" tracking_level="1" version="0" object_id="_153">
 				<id>1</id>
 				<operations class_id="27" tracking_level="0" version="0">
-					<count>14</count>
+					<count>39</count>
 					<item_version>0</item_version>
 					<item class_id="28" tracking_level="1" version="0" object_id="_154">
 						<id>7</id>
@@ -4470,235 +4470,228 @@
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_165">
-						<id>47</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_166">
-						<id>48</id>
-						<stage>2</stage>
-						<latency>2</latency>
-					</item>
-					<item class_id_reference="28" object_id="_167">
-						<id>52</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-				</operations>
-			</item>
-			<item class_id_reference="26" object_id="_168">
-				<id>2</id>
-				<operations>
-					<count>26</count>
-					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_169">
 						<id>23</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_170">
+					<item class_id_reference="28" object_id="_166">
 						<id>24</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_171">
+					<item class_id_reference="28" object_id="_167">
 						<id>25</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_172">
+					<item class_id_reference="28" object_id="_168">
 						<id>26</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_173">
+					<item class_id_reference="28" object_id="_169">
 						<id>27</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_174">
+					<item class_id_reference="28" object_id="_170">
 						<id>28</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_175">
+					<item class_id_reference="28" object_id="_171">
 						<id>29</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_176">
+					<item class_id_reference="28" object_id="_172">
 						<id>30</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_177">
+					<item class_id_reference="28" object_id="_173">
 						<id>31</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_178">
+					<item class_id_reference="28" object_id="_174">
 						<id>32</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_179">
+					<item class_id_reference="28" object_id="_175">
 						<id>33</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_180">
+					<item class_id_reference="28" object_id="_176">
 						<id>34</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_181">
+					<item class_id_reference="28" object_id="_177">
 						<id>35</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_182">
+					<item class_id_reference="28" object_id="_178">
 						<id>36</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_183">
+					<item class_id_reference="28" object_id="_179">
 						<id>37</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_184">
+					<item class_id_reference="28" object_id="_180">
 						<id>38</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_185">
+					<item class_id_reference="28" object_id="_181">
 						<id>39</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_186">
+					<item class_id_reference="28" object_id="_182">
 						<id>40</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_187">
+					<item class_id_reference="28" object_id="_183">
 						<id>41</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_188">
+					<item class_id_reference="28" object_id="_184">
 						<id>42</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_189">
+					<item class_id_reference="28" object_id="_185">
 						<id>43</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_190">
+					<item class_id_reference="28" object_id="_186">
 						<id>44</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_191">
+					<item class_id_reference="28" object_id="_187">
 						<id>45</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_192">
+					<item class_id_reference="28" object_id="_188">
 						<id>46</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_193">
-						<id>48</id>
+					<item class_id_reference="28" object_id="_189">
+						<id>47</id>
 						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_190">
+						<id>48</id>
+						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_194">
+					<item class_id_reference="28" object_id="_191">
+						<id>52</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_192">
 						<id>55</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_195">
-				<id>3</id>
+			<item class_id_reference="26" object_id="_193">
+				<id>2</id>
 				<operations>
-					<count>15</count>
+					<count>16</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_196">
+					<item class_id_reference="28" object_id="_194">
 						<id>20</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_197">
+					<item class_id_reference="28" object_id="_195">
 						<id>21</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_198">
+					<item class_id_reference="28" object_id="_196">
 						<id>22</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_199">
+					<item class_id_reference="28" object_id="_197">
 						<id>28</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_200">
+					<item class_id_reference="28" object_id="_198">
 						<id>30</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_201">
+					<item class_id_reference="28" object_id="_199">
 						<id>32</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_202">
+					<item class_id_reference="28" object_id="_200">
 						<id>34</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_203">
+					<item class_id_reference="28" object_id="_201">
 						<id>40</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_204">
+					<item class_id_reference="28" object_id="_202">
 						<id>42</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_205">
+					<item class_id_reference="28" object_id="_203">
 						<id>44</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_206">
+					<item class_id_reference="28" object_id="_204">
 						<id>46</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_207">
+					<item class_id_reference="28" object_id="_205">
+						<id>48</id>
+						<stage>1</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="28" object_id="_206">
 						<id>49</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_208">
+					<item class_id_reference="28" object_id="_207">
 						<id>50</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_209">
+					<item class_id_reference="28" object_id="_208">
 						<id>51</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_210">
+					<item class_id_reference="28" object_id="_209">
 						<id>53</id>
 						<stage>1</stage>
 						<latency>1</latency>
@@ -4707,32 +4700,17 @@
 			</item>
 		</states>
 		<transitions class_id="29" tracking_level="0" version="0">
-			<count>2</count>
+			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="30" tracking_level="1" version="0" object_id="_211">
-				<inState>2</inState>
-				<outState>3</outState>
+			<item class_id="30" tracking_level="1" version="0" object_id="_210">
+				<inState>1</inState>
+				<outState>2</outState>
 				<condition class_id="31" tracking_level="0" version="0">
 					<id>-1</id>
 					<sop class_id="32" tracking_level="0" version="0">
 						<count>1</count>
 						<item_version>0</item_version>
 						<item class_id="33" tracking_level="0" version="0">
-							<count>0</count>
-							<item_version>0</item_version>
-						</item>
-					</sop>
-				</condition>
-			</item>
-			<item class_id_reference="30" object_id="_212">
-				<inState>1</inState>
-				<outState>2</outState>
-				<condition>
-					<id>-1</id>
-					<sop>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>
 							<count>0</count>
 							<item_version>0</item_version>
 						</item>
@@ -4818,168 +4796,168 @@
 		<item>
 			<first>23</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>36</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>38</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>40</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
@@ -5000,21 +4978,21 @@
 		<item>
 			<first>49</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5028,14 +5006,14 @@
 		<item>
 			<first>53</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5061,7 +5039,7 @@
 			<first>54</first>
 			<second>
 				<first>1</first>
-				<second>3</second>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
@@ -5075,7 +5053,7 @@
 	<regions class_id="41" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="42" tracking_level="1" version="0" object_id="_213">
+		<item class_id="42" tracking_level="1" version="0" object_id="_211">
 			<region_name>VITIS_LOOP_393_2</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -5090,7 +5068,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>2</pipe_depth>
 			<mDBIIViolationVec class_id="43" tracking_level="0" version="0">
 				<count>0</count>
 				<item_version>0</item_version>
@@ -5121,17 +5099,18 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>47</item>
+				<item>27</item>
 			</second>
 		</item>
 		<item>
 			<first>71</first>
 			<second>
-				<count>3</count>
+				<count>4</count>
 				<item_version>0</item_version>
-				<item>48</item>
-				<item>48</item>
-				<item>51</item>
+				<item>28</item>
+				<item>28</item>
+				<item>40</item>
+				<item>40</item>
 			</second>
 		</item>
 		<item>
@@ -5139,7 +5118,7 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>27</item>
+				<item>29</item>
 			</second>
 		</item>
 		<item>
@@ -5147,10 +5126,10 @@
 			<second>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>28</item>
-				<item>28</item>
-				<item>40</item>
-				<item>40</item>
+				<item>30</item>
+				<item>30</item>
+				<item>42</item>
+				<item>42</item>
 			</second>
 		</item>
 		<item>
@@ -5158,7 +5137,7 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>29</item>
+				<item>31</item>
 			</second>
 		</item>
 		<item>
@@ -5166,10 +5145,10 @@
 			<second>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>30</item>
-				<item>30</item>
-				<item>42</item>
-				<item>42</item>
+				<item>32</item>
+				<item>32</item>
+				<item>44</item>
+				<item>44</item>
 			</second>
 		</item>
 		<item>
@@ -5177,7 +5156,7 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>31</item>
+				<item>33</item>
 			</second>
 		</item>
 		<item>
@@ -5185,10 +5164,10 @@
 			<second>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>32</item>
-				<item>32</item>
-				<item>44</item>
-				<item>44</item>
+				<item>34</item>
+				<item>34</item>
+				<item>46</item>
+				<item>46</item>
 			</second>
 		</item>
 		<item>
@@ -5196,30 +5175,11 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>33</item>
-			</second>
-		</item>
-		<item>
-			<first>139</first>
-			<second>
-				<count>4</count>
-				<item_version>0</item_version>
-				<item>34</item>
-				<item>34</item>
-				<item>46</item>
-				<item>46</item>
-			</second>
-		</item>
-		<item>
-			<first>149</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
 				<item>39</item>
 			</second>
 		</item>
 		<item>
-			<first>157</first>
+			<first>140</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5227,7 +5187,7 @@
 			</second>
 		</item>
 		<item>
-			<first>165</first>
+			<first>148</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5235,11 +5195,29 @@
 			</second>
 		</item>
 		<item>
-			<first>173</first>
+			<first>156</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>45</item>
+			</second>
+		</item>
+		<item>
+			<first>164</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>47</item>
+			</second>
+		</item>
+		<item>
+			<first>171</first>
+			<second>
+				<count>3</count>
+				<item_version>0</item_version>
+				<item>48</item>
+				<item>48</item>
+				<item>51</item>
 			</second>
 		</item>
 		<item>
@@ -5295,19 +5273,11 @@
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>52</item>
-			</second>
-		</item>
-		<item>
-			<first>215</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
 				<item>23</item>
 			</second>
 		</item>
 		<item>
-			<first>222</first>
+			<first>218</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5315,7 +5285,7 @@
 			</second>
 		</item>
 		<item>
-			<first>226</first>
+			<first>222</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5323,7 +5293,7 @@
 			</second>
 		</item>
 		<item>
-			<first>231</first>
+			<first>228</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5331,7 +5301,7 @@
 			</second>
 		</item>
 		<item>
-			<first>239</first>
+			<first>236</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5339,7 +5309,7 @@
 			</second>
 		</item>
 		<item>
-			<first>246</first>
+			<first>244</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5347,7 +5317,7 @@
 			</second>
 		</item>
 		<item>
-			<first>250</first>
+			<first>248</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5355,7 +5325,7 @@
 			</second>
 		</item>
 		<item>
-			<first>255</first>
+			<first>254</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5363,7 +5333,15 @@
 			</second>
 		</item>
 		<item>
-			<first>263</first>
+			<first>262</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>52</item>
+			</second>
+		</item>
+		<item>
+			<first>267</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5371,7 +5349,7 @@
 			</second>
 		</item>
 		<item>
-			<first>283</first>
+			<first>287</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5383,7 +5361,7 @@
 		<count>24</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>add_ln28_1_fu_250</first>
+			<first>add_ln28_1_fu_248</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5391,7 +5369,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln28_fu_226</first>
+			<first>add_ln28_fu_222</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5399,7 +5377,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_254_fu_54</first>
+			<first>i_249_fu_54</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5407,7 +5385,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_281_fu_199</first>
+			<first>i_278_fu_199</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5423,7 +5401,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_0_addr_1_gep_fu_149</first>
+			<first>in_0_addr_2_gep_fu_132</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5431,7 +5409,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_0_addr_gep_fu_81</first>
+			<first>in_0_addr_gep_fu_64</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5439,7 +5417,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_1_addr_1_gep_fu_157</first>
+			<first>in_1_addr_2_gep_fu_140</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5447,7 +5425,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_1_addr_gep_fu_98</first>
+			<first>in_1_addr_gep_fu_81</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5455,7 +5433,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_2_addr_1_gep_fu_165</first>
+			<first>in_2_addr_2_gep_fu_148</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5463,7 +5441,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_2_addr_gep_fu_115</first>
+			<first>in_2_addr_gep_fu_98</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5471,7 +5449,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_3_addr_1_gep_fu_173</first>
+			<first>in_3_addr_2_gep_fu_156</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5479,7 +5457,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_3_addr_gep_fu_132</first>
+			<first>in_3_addr_gep_fu_115</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5487,7 +5465,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln28_fu_239</first>
+			<first>or_ln28_fu_236</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5495,7 +5473,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln396_6_fu_263</first>
+			<first>or_ln396_6_fu_267</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5503,7 +5481,7 @@
 			</second>
 		</item>
 		<item>
-			<first>s_addr_gep_fu_64</first>
+			<first>s_addr_gep_fu_164</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5511,7 +5489,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln_fu_215</first>
+			<first>shl_ln_fu_210</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5519,7 +5497,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln396_fu_283</first>
+			<first>xor_ln396_fu_287</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5527,15 +5505,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln28_10_fu_255</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>38</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_8_fu_231</first>
+			<first>zext_ln28_1_fu_228</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5543,7 +5513,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln28_9_fu_246</first>
+			<first>zext_ln28_2_fu_244</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5551,7 +5521,15 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln28_fu_222</first>
+			<first>zext_ln28_3_fu_254</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>38</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_fu_218</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5591,7 +5569,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln388_store_fu_185</first>
+			<first>store_ln389_store_fu_185</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5599,7 +5577,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln388_store_fu_210</first>
+			<first>store_ln389_store_fu_262</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5743,10 +5721,10 @@
 		</item>
 	</dp_mem_port_nodes>
 	<dp_reg_nodes>
-		<count>14</count>
+		<count>10</count>
 		<item_version>0</item_version>
 		<item>
-			<first>289</first>
+			<first>294</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5754,39 +5732,7 @@
 			</second>
 		</item>
 		<item>
-			<first>296</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>10</item>
-			</second>
-		</item>
-		<item>
-			<first>302</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>14</item>
-			</second>
-		</item>
-		<item>
-			<first>308</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>15</item>
-			</second>
-		</item>
-		<item>
-			<first>312</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>47</item>
-			</second>
-		</item>
-		<item>
-			<first>318</first>
+			<first>304</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5794,7 +5740,7 @@
 			</second>
 		</item>
 		<item>
-			<first>323</first>
+			<first>309</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5802,7 +5748,7 @@
 			</second>
 		</item>
 		<item>
-			<first>328</first>
+			<first>314</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5810,7 +5756,7 @@
 			</second>
 		</item>
 		<item>
-			<first>333</first>
+			<first>319</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5818,7 +5764,7 @@
 			</second>
 		</item>
 		<item>
-			<first>338</first>
+			<first>324</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5826,7 +5772,7 @@
 			</second>
 		</item>
 		<item>
-			<first>343</first>
+			<first>329</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5834,7 +5780,7 @@
 			</second>
 		</item>
 		<item>
-			<first>348</first>
+			<first>334</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5842,7 +5788,7 @@
 			</second>
 		</item>
 		<item>
-			<first>353</first>
+			<first>339</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5850,19 +5796,19 @@
 			</second>
 		</item>
 		<item>
-			<first>358</first>
+			<first>344</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>48</item>
+				<item>47</item>
 			</second>
 		</item>
 	</dp_reg_nodes>
 	<dp_regname_nodes>
-		<count>14</count>
+		<count>10</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_254_reg_289</first>
+			<first>i_249_reg_294</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5870,23 +5816,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_reg_302</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>14</item>
-			</second>
-		</item>
-		<item>
-			<first>icmp_ln393_reg_308</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>15</item>
-			</second>
-		</item>
-		<item>
-			<first>in_0_addr_1_reg_338</first>
+			<first>in_0_addr_2_reg_324</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5894,7 +5824,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_0_addr_reg_318</first>
+			<first>in_0_addr_reg_304</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5902,7 +5832,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_1_addr_1_reg_343</first>
+			<first>in_1_addr_2_reg_329</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5910,7 +5840,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_1_addr_reg_323</first>
+			<first>in_1_addr_reg_309</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5918,7 +5848,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_2_addr_1_reg_348</first>
+			<first>in_2_addr_2_reg_334</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5926,7 +5856,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_2_addr_reg_328</first>
+			<first>in_2_addr_reg_314</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5934,7 +5864,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_3_addr_1_reg_353</first>
+			<first>in_3_addr_2_reg_339</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5942,7 +5872,7 @@
 			</second>
 		</item>
 		<item>
-			<first>in_3_addr_reg_333</first>
+			<first>in_3_addr_reg_319</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5950,27 +5880,11 @@
 			</second>
 		</item>
 		<item>
-			<first>s_addr_reg_312</first>
+			<first>s_addr_reg_344</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>47</item>
-			</second>
-		</item>
-		<item>
-			<first>s_load_reg_358</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>48</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln393_1_cast_reg_296</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>10</item>
 			</second>
 		</item>
 	</dp_regname_nodes>

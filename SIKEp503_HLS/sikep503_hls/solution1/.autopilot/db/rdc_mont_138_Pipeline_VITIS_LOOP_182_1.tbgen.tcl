@@ -19,7 +19,7 @@ set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict mc { MEM_WIDTH 64 MEM_SIZE 896 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ mc int 64 regular {array 112 { 0 3 } 0 1 }  }
+	{ mc int 64 regular {array 112 { 0 } 0 1 }  }
 	{ zext_ln183 int 7 regular  }
 }
 set hasAXIMCache 0

@@ -3,79 +3,79 @@
 
 <trans_list>
 
-<trans id="46" from="1" to="2">
+<trans id="47" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="47" from="2" to="3">
+<trans id="48" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="48" from="3" to="4">
+<trans id="49" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="49" from="4" to="5">
+<trans id="50" from="4" to="5">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="50" from="5" to="6">
+<trans id="51" from="5" to="6">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="51" from="6" to="7">
+<trans id="52" from="6" to="7">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="52" from="7" to="8">
+<trans id="53" from="7" to="8">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="53" from="8" to="9">
+<trans id="54" from="8" to="9">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="54" from="9" to="10">
+<trans id="55" from="9" to="10">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="55" from="10" to="11">
+<trans id="56" from="10" to="11">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="56" from="11" to="12">
+<trans id="57" from="11" to="12">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="57" from="12" to="13">
+<trans id="58" from="12" to="13">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="58" from="13" to="14">
+<trans id="59" from="13" to="14">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -155,9 +155,9 @@ entry:3 %tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %empty, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="64" op_0_bw="64">
+<Node id="10" bw="64" op_0_bw="64">
 <![CDATA[
-entry:4 %temp = alloca i64 1
+entry:5 %temp = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="temp"/></StgValue>
@@ -170,9 +170,9 @@ entry:4 %temp = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="64" op_0_bw="64">
+<Node id="11" bw="64" op_0_bw="64">
 <![CDATA[
-entry:5 %temp_67 = alloca i64 1
+entry:6 %temp_67 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="temp_67"/></StgValue>
@@ -185,9 +185,9 @@ entry:5 %temp_67 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="64" op_0_bw="64">
+<Node id="12" bw="64" op_0_bw="64">
 <![CDATA[
-entry:6 %t1 = alloca i64 1
+entry:7 %t1 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t1"/></StgValue>
@@ -200,9 +200,9 @@ entry:6 %t1 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="64" op_0_bw="64">
+<Node id="13" bw="64" op_0_bw="64">
 <![CDATA[
-entry:7 %t2 = alloca i64 1
+entry:8 %t2 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t2"/></StgValue>
@@ -215,9 +215,9 @@ entry:7 %t2 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="64" op_0_bw="64">
+<Node id="14" bw="64" op_0_bw="64">
 <![CDATA[
-entry:8 %t3 = alloca i64 1
+entry:9 %t3 = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="t3"/></StgValue>
@@ -230,9 +230,9 @@ entry:8 %t3 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64">
 <![CDATA[
-entry:9 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1, i3 %empty, i64 %c, i7 %tmp, i64 %t1
+entry:10 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1, i3 %empty, i64 %c, i7 %tmp, i64 %t1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln352"/></StgValue>
@@ -245,9 +245,9 @@ entry:9 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="0" op_0_bw="0" op_1_bw="64">
+<Node id="20" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-entry:14 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_5, i64 %temp_67
+entry:15 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_5, i64 %temp_67
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -260,9 +260,9 @@ entry:14 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_5, i64 %temp_67
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="0" op_1_bw="64">
+<Node id="23" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-entry:17 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_6, i64 %temp
+entry:18 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_6, i64 %temp
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -278,9 +278,9 @@ entry:17 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_6, i64 %temp
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64">
 <![CDATA[
-entry:9 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1, i3 %empty, i64 %c, i7 %tmp, i64 %t1
+entry:10 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1, i3 %empty, i64 %c, i7 %tmp, i64 %t1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln352"/></StgValue>
@@ -293,9 +293,9 @@ entry:9 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="0" op_0_bw="0" op_1_bw="64">
+<Node id="20" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-entry:14 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_5, i64 %temp_67
+entry:15 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_5, i64 %temp_67
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -308,9 +308,9 @@ entry:14 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_5, i64 %temp_67
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="0" op_1_bw="64">
+<Node id="23" bw="0" op_0_bw="0" op_1_bw="64">
 <![CDATA[
-entry:17 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_6, i64 %temp
+entry:18 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_6, i64 %temp
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -326,9 +326,9 @@ entry:17 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_6, i64 %temp
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64" op_5_bw="1" op_6_bw="0" op_7_bw="0">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64" op_5_bw="1" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:10 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_47_1, i3 %empty, i64 %c, i7 %tmp, i64 %t2, i1 %borrow_loc
+entry:11 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_47_1, i3 %empty, i64 %c, i7 %tmp, i64 %t2, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln352"/></StgValue>
@@ -344,9 +344,9 @@ entry:10 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_47_1,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64" op_5_bw="1" op_6_bw="0" op_7_bw="0">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="7" op_4_bw="64" op_5_bw="1" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:10 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_47_1, i3 %empty, i64 %c, i7 %tmp, i64 %t2, i1 %borrow_loc
+entry:11 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_47_1, i3 %empty, i64 %c, i7 %tmp, i64 %t2, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln352"/></StgValue>
@@ -362,9 +362,9 @@ entry:10 %call_ln352 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_47_1,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="1" op_0_bw="1" op_1_bw="0">
+<Node id="17" bw="1" op_0_bw="1" op_1_bw="0">
 <![CDATA[
-entry:11 %borrow_loc_load = load i1 %borrow_loc
+entry:12 %borrow_loc_load = load i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="borrow_loc_load"/></StgValue>
@@ -377,9 +377,9 @@ entry:11 %borrow_loc_load = load i1 %borrow_loc
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_53_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1
+entry:13 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_53_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -392,9 +392,9 @@ entry:12 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_53_2, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="64" op_4_bw="0">
+<Node id="19" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="64" op_4_bw="0">
 <![CDATA[
-entry:13 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1135, i3 %empty, i64 %c, i64 %t3
+entry:14 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1135, i3 %empty, i64 %c, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -410,9 +410,9 @@ entry:13 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_113
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_53_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1
+entry:13 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_53_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -425,9 +425,9 @@ entry:12 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_53_2, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="64" op_4_bw="0">
+<Node id="19" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="64" op_3_bw="64" op_4_bw="0">
 <![CDATA[
-entry:13 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1135, i3 %empty, i64 %c, i64 %t3
+entry:14 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_1135, i3 %empty, i64 %c, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -443,9 +443,9 @@ entry:13 %call_ln0 = call void @fp2sqr503_mont.136.1_Pipeline_VITIS_LOOP_350_113
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:15 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67
+entry:16 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67
 
 ]]></Node>
 <StgValue><ssdm name="call_ln63"/></StgValue>
@@ -461,9 +461,9 @@ entry:15 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:15 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67
+entry:16 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67
 
 ]]></Node>
 <StgValue><ssdm name="call_ln63"/></StgValue>
@@ -479,9 +479,9 @@ entry:15 %call_ln63 = call void @mp_mul.152, i64 %t1, i64 %t2, i64 %temp_67
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0">
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:16 %call_ln64 = call void @rdc_mont.138, i64 %temp_67, i64 %c, i32 %c_offset_read, i1 0, i64 %p503p1_1
+entry:17 %call_ln64 = call void @rdc_mont.138, i64 %temp_67, i64 %c, i32 %c_offset_read, i1 0, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln64"/></StgValue>
@@ -497,9 +497,9 @@ entry:16 %call_ln64 = call void @rdc_mont.138, i64 %temp_67, i64 %c, i32 %c_offs
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0">
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:16 %call_ln64 = call void @rdc_mont.138, i64 %temp_67, i64 %c, i32 %c_offset_read, i1 0, i64 %p503p1_1
+entry:17 %call_ln64 = call void @rdc_mont.138, i64 %temp_67, i64 %c, i32 %c_offset_read, i1 0, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln64"/></StgValue>
@@ -515,9 +515,9 @@ entry:16 %call_ln64 = call void @rdc_mont.138, i64 %temp_67, i64 %c, i32 %c_offs
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:18 %call_ln63 = call void @mp_mul.142, i64 %t3, i64 %c, i32 %c_offset_read, i64 %temp
+entry:19 %call_ln63 = call void @mp_mul.142, i64 %t3, i64 %c, i32 %c_offset_read, i64 %temp
 
 ]]></Node>
 <StgValue><ssdm name="call_ln63"/></StgValue>
@@ -533,9 +533,9 @@ entry:18 %call_ln63 = call void @mp_mul.142, i64 %t3, i64 %c, i32 %c_offset_read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:18 %call_ln63 = call void @mp_mul.142, i64 %t3, i64 %c, i32 %c_offset_read, i64 %temp
+entry:19 %call_ln63 = call void @mp_mul.142, i64 %t3, i64 %c, i32 %c_offset_read, i64 %temp
 
 ]]></Node>
 <StgValue><ssdm name="call_ln63"/></StgValue>
@@ -551,9 +551,9 @@ entry:18 %call_ln63 = call void @mp_mul.142, i64 %t3, i64 %c, i32 %c_offset_read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0">
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:19 %call_ln64 = call void @rdc_mont.138, i64 %temp, i64 %c, i32 %c_offset_read, i1 1, i64 %p503p1_1
+entry:20 %call_ln64 = call void @rdc_mont.138, i64 %temp, i64 %c, i32 %c_offset_read, i1 1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln64"/></StgValue>
@@ -562,31 +562,46 @@ entry:19 %call_ln64 = call void @rdc_mont.138, i64 %temp, i64 %c, i32 %c_offset_
 
 <state id="14" st_id="14">
 
-<operation id="44" st_id="14" stage="1" lat="2">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0">
-<![CDATA[
-entry:19 %call_ln64 = call void @rdc_mont.138, i64 %temp, i64 %c, i32 %c_offset_read, i1 1, i64 %p503p1_1
-
-]]></Node>
-<StgValue><ssdm name="call_ln64"/></StgValue>
-</operation>
-
-<operation id="45" st_id="14" stage="1" lat="1">
+<operation id="44" st_id="14" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0">
+<Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:20 %ret_ln163 = ret
+entry:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 18, i64 18446744073709551615
+
+]]></Node>
+<StgValue><ssdm name="specmemcore_ln0"/></StgValue>
+</operation>
+
+<operation id="45" st_id="14" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="32" op_4_bw="1" op_5_bw="64" op_6_bw="0" op_7_bw="0">
+<![CDATA[
+entry:20 %call_ln64 = call void @rdc_mont.138, i64 %temp, i64 %c, i32 %c_offset_read, i1 1, i64 %p503p1_1
+
+]]></Node>
+<StgValue><ssdm name="call_ln64"/></StgValue>
+</operation>
+
+<operation id="46" st_id="14" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="0">
+<![CDATA[
+entry:21 %ret_ln163 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln163"/></StgValue>

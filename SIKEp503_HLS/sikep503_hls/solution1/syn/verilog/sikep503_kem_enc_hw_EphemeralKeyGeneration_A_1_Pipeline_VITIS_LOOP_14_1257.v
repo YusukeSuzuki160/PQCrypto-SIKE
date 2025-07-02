@@ -48,26 +48,26 @@ wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln14_fu_83_p2;
+wire   [0:0] icmp_ln14_fu_91_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 wire    ap_block_pp0_stage0_11001;
-wire   [2:0] trunc_ln15_fu_110_p1;
-reg   [2:0] trunc_ln15_reg_146;
-wire   [63:0] zext_ln15_15_fu_105_p1;
+wire   [2:0] trunc_ln15_fu_118_p1;
+reg   [2:0] trunc_ln15_reg_154;
+wire   [63:0] zext_ln15_15_fu_113_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln15_16_fu_126_p1;
-reg   [3:0] i_fu_38;
-wire   [3:0] add_ln14_fu_89_p2;
+wire   [63:0] zext_ln15_16_fu_134_p1;
+reg   [3:0] i_fu_46;
+wire   [3:0] add_ln14_fu_97_p2;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_i_296;
 reg    pts_Z_ce0_local;
 reg    R_Z_we0_local;
 reg    R_Z_ce0_local;
-wire   [6:0] zext_ln15_fu_95_p1;
-wire   [6:0] add_ln15_fu_99_p2;
-wire   [3:0] zext_ln15_s_fu_119_p3;
+wire   [6:0] zext_ln15_fu_103_p1;
+wire   [6:0] add_ln15_fu_107_p2;
+wire   [3:0] zext_ln15_s_fu_127_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -82,7 +82,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_fu_38 = 4'd0;
+#0 i_fu_46 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -135,17 +135,17 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln14_fu_83_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_fu_38 <= add_ln14_fu_89_p2;
+        if (((icmp_ln14_fu_91_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_fu_46 <= add_ln14_fu_97_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_38 <= 4'd0;
+            i_fu_46 <= 4'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        trunc_ln15_reg_146 <= trunc_ln15_fu_110_p1;
+        trunc_ln15_reg_154 <= trunc_ln15_fu_118_p1;
     end
 end
 
@@ -166,7 +166,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln14_fu_83_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln14_fu_91_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -209,7 +209,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_i_296 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_296 = i_fu_38;
+        ap_sig_allocacmp_i_296 = i_fu_46;
     end
 end
 
@@ -232,7 +232,7 @@ always @ (*) begin
     endcase
 end
 
-assign R_Z_address0 = zext_ln15_16_fu_126_p1;
+assign R_Z_address0 = zext_ln15_16_fu_134_p1;
 
 assign R_Z_ce0 = R_Z_ce0_local;
 
@@ -240,9 +240,9 @@ assign R_Z_d0 = pts_Z_q0;
 
 assign R_Z_we0 = R_Z_we0_local;
 
-assign add_ln14_fu_89_p2 = (ap_sig_allocacmp_i_296 + 4'd1);
+assign add_ln14_fu_97_p2 = (ap_sig_allocacmp_i_296 + 4'd1);
 
-assign add_ln15_fu_99_p2 = (zext_ln15_22 + zext_ln15_fu_95_p1);
+assign add_ln15_fu_107_p2 = (zext_ln15_22 + zext_ln15_fu_103_p1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -262,20 +262,20 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln14_fu_83_p2 = ((ap_sig_allocacmp_i_296 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln14_fu_91_p2 = ((ap_sig_allocacmp_i_296 == 4'd8) ? 1'b1 : 1'b0);
 
-assign pts_Z_address0 = zext_ln15_15_fu_105_p1;
+assign pts_Z_address0 = zext_ln15_15_fu_113_p1;
 
 assign pts_Z_ce0 = pts_Z_ce0_local;
 
-assign trunc_ln15_fu_110_p1 = ap_sig_allocacmp_i_296[2:0];
+assign trunc_ln15_fu_118_p1 = ap_sig_allocacmp_i_296[2:0];
 
-assign zext_ln15_15_fu_105_p1 = add_ln15_fu_99_p2;
+assign zext_ln15_15_fu_113_p1 = add_ln15_fu_107_p2;
 
-assign zext_ln15_16_fu_126_p1 = zext_ln15_s_fu_119_p3;
+assign zext_ln15_16_fu_134_p1 = zext_ln15_s_fu_127_p3;
 
-assign zext_ln15_fu_95_p1 = ap_sig_allocacmp_i_296;
+assign zext_ln15_fu_103_p1 = ap_sig_allocacmp_i_296;
 
-assign zext_ln15_s_fu_119_p3 = {{1'd1}, {trunc_ln15_reg_146}};
+assign zext_ln15_s_fu_127_p3 = {{1'd1}, {trunc_ln15_reg_154}};
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1257

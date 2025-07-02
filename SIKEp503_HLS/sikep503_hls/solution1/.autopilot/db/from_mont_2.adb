@@ -505,7 +505,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.99</m_delay>
+          <m_delay>0.81</m_delay>
           <m_topoIndex>8</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1113,8 +1113,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>469</mMinLatency>
-        <mMaxLatency>729</mMaxLatency>
+        <mMinLatency>393</mMinLatency>
+        <mMaxLatency>637</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -1419,7 +1419,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>54</second>
+              <second>40</second>
             </item>
           </second>
         </item>
@@ -1434,11 +1434,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>409</second>
+              <second>403</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>803</second>
+              <second>752</second>
             </item>
           </second>
         </item>
@@ -1453,11 +1453,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>536</second>
+              <second>463</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>858</second>
+              <second>816</second>
             </item>
           </second>
         </item>
@@ -1468,15 +1468,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3336</second>
+              <second>2084</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>3512</second>
+              <second>2923</second>
             </item>
           </second>
         </item>
@@ -1491,15 +1491,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4174</second>
+              <second>3208</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>5484</second>
+              <second>4811</second>
             </item>
           </second>
         </item>
@@ -1591,7 +1591,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>9</count>
+        <count>11</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -1616,7 +1616,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>59</second>
+              <second>45</second>
             </item>
           </second>
         </item>
@@ -1643,7 +1643,34 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>t_i_address1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>12</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1670,7 +1697,34 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>t_i_ce1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1697,7 +1751,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1724,7 +1778,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1751,7 +1805,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1778,7 +1832,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1805,7 +1859,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1832,7 +1886,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -2054,7 +2108,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>45</item>
+            <item>48</item>
           </second>
         </item>
         <item>
@@ -2062,7 +2116,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>52</item>
+            <item>55</item>
           </second>
         </item>
       </dp_memory_map>

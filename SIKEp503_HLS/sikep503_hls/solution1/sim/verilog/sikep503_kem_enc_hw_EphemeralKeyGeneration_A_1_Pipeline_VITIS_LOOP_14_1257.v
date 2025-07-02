@@ -61,7 +61,7 @@ wire   [63:0] zext_ln15_16_fu_126_p1;
 reg   [3:0] i_fu_38;
 wire   [3:0] add_ln14_fu_89_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_298;
+reg   [3:0] ap_sig_allocacmp_i_296;
 reg    pts_Z_ce0_local;
 reg    R_Z_we0_local;
 reg    R_Z_ce0_local;
@@ -207,9 +207,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_298 = 4'd0;
+        ap_sig_allocacmp_i_296 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_298 = i_fu_38;
+        ap_sig_allocacmp_i_296 = i_fu_38;
     end
 end
 
@@ -240,7 +240,7 @@ assign R_Z_d0 = pts_Z_q0;
 
 assign R_Z_we0 = R_Z_we0_local;
 
-assign add_ln14_fu_89_p2 = (ap_sig_allocacmp_i_298 + 4'd1);
+assign add_ln14_fu_89_p2 = (ap_sig_allocacmp_i_296 + 4'd1);
 
 assign add_ln15_fu_99_p2 = (zext_ln15_22 + zext_ln15_fu_95_p1);
 
@@ -262,19 +262,19 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln14_fu_83_p2 = ((ap_sig_allocacmp_i_298 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln14_fu_83_p2 = ((ap_sig_allocacmp_i_296 == 4'd8) ? 1'b1 : 1'b0);
 
 assign pts_Z_address0 = zext_ln15_15_fu_105_p1;
 
 assign pts_Z_ce0 = pts_Z_ce0_local;
 
-assign trunc_ln15_fu_110_p1 = ap_sig_allocacmp_i_298[2:0];
+assign trunc_ln15_fu_110_p1 = ap_sig_allocacmp_i_296[2:0];
 
 assign zext_ln15_15_fu_105_p1 = add_ln15_fu_99_p2;
 
 assign zext_ln15_16_fu_126_p1 = zext_ln15_s_fu_119_p3;
 
-assign zext_ln15_fu_95_p1 = ap_sig_allocacmp_i_298;
+assign zext_ln15_fu_95_p1 = ap_sig_allocacmp_i_296;
 
 assign zext_ln15_s_fu_119_p3 = {{1'd1}, {trunc_ln15_reg_146}};
 

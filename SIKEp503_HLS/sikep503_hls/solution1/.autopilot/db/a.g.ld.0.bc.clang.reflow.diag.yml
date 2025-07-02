@@ -14,105 +14,105 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 419, Column: 10 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 394, Column: 10 }
 Function:        keccak_absorb
 Args:            
   - Callee:          load64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 23, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 5 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 396, Column: 5 }
 Function:        keccak_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 625, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 672, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 628, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 478, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 435, Column: 2 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 438, Column: 7 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          store64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 686, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 642, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 654, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -290,7 +290,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 352, Column: 87 }
 Function:        mp_add
 Args:            
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_add
@@ -470,12 +470,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/config.h, Line: 100, Column: 31 }
-Function:        is_digit_zero_ct.65
+Function:        is_digit_zero_ct.60
 Args:            
-  - Callee:          is_digit_nonzero_ct.66
+  - Callee:          is_digit_nonzero_ct.61
     DebugLoc:        { File: src/config.h, Line: 94, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          is_digit_zero_ct.65
+  - Caller:          is_digit_zero_ct.60
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -485,7 +485,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 65 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -498,7 +498,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 116 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_zero_ct.65
+  - Callee:          is_digit_zero_ct.60
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -576,7 +576,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 201, Column: 128 }
 Function:        fp2mul503_mont
 Args:            
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          fp2mul503_mont
@@ -1249,7 +1249,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 98, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 104, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          init_basis
@@ -1262,7 +1262,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 100, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 106, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fpcopy503
@@ -1275,7 +1275,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 106, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 112, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2add503
@@ -1288,7 +1288,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 109, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 115, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          LADDER3PT
@@ -1301,7 +1301,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 121, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 128, Column: 17 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2copy503
@@ -1314,7 +1314,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 125, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 132, Column: 17 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          xDBLe
@@ -1327,7 +1327,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 129, Column: 9 }
+DebugLoc:        { File: src/sidh.c, Line: 136, Column: 9 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          get_4_isog
@@ -1340,7 +1340,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 133, Column: 2 }
+DebugLoc:        { File: src/sidh.c, Line: 140, Column: 2 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          eval_4_isog
@@ -1353,7 +1353,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 150, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 157, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          inv_3_way
@@ -1366,7 +1366,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 151, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 158, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2mul503_mont
@@ -1379,7 +1379,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 156, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 163, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2_encode
@@ -1574,170 +1574,170 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 266, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 276, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2_decode
     DebugLoc:        { File: src/sidh.c, Line: 50, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 271, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 281, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          get_A
     DebugLoc:        { File: src/ec_isogeny.c, Line: 191, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 272, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 282, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fpadd503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 273, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 283, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2add503
     DebugLoc:        { File: src/fpx.c, Line: 111, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 277, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 287, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          LADDER3PT
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 289, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 300, Column: 17 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2copy503
     DebugLoc:        { File: src/fpx.c, Line: 90, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 293, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 304, Column: 17 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          xDBLe
     DebugLoc:        { File: src/ec_isogeny.c, Line: 28, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 297, Column: 9 }
+DebugLoc:        { File: src/sidh.c, Line: 308, Column: 9 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          get_4_isog
     DebugLoc:        { File: src/ec_isogeny.c, Line: 43, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 301, Column: 2 }
+DebugLoc:        { File: src/sidh.c, Line: 312, Column: 2 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          eval_4_isog
     DebugLoc:        { File: src/ec_isogeny.c, Line: 60, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 311, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 322, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2div2_503
     DebugLoc:        { File: src/fpx.c, Line: 125, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 312, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 323, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2sub503
     DebugLoc:        { File: src/fpx.c, Line: 118, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 314, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 325, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          j_inv
     DebugLoc:        { File: src/ec_isogeny.c, Line: 213, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 315, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 326, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2_encode
     DebugLoc:        { File: src/sidh.c, Line: 37, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1760,7 +1760,7 @@ DebugLoc:        { File: src/sike.c, Line: 50, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
     DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
@@ -1786,7 +1786,7 @@ DebugLoc:        { File: src/sike.c, Line: 55, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
     DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
@@ -1795,7 +1795,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 33, Column: 9 }
+DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 33, Column: 2 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          crypto_kem_enc
@@ -1808,7 +1808,7 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
 Function:        keccak_absorb
 Args:            
   - String:          'Updating loop '
@@ -1818,9 +1818,9 @@ Args:
   - String:          ' to '
   - NewBound:        '17'
   - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_444_4
+  - LoopName:        VITIS_LOOP_400_3
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - LoopLoc:         'src/sha3/fips202.c:400:21'
   - String:          ')'
   - String:          ' in function '''
   - String:          keccak_absorb
@@ -1829,7 +1829,7 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
 Function:        keccak_absorb
 Args:            
   - String:          'Updating loop '
@@ -1839,9 +1839,9 @@ Args:
   - String:          ' to '
   - NewBound:        '17'
   - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_444_4
+  - LoopName:        VITIS_LOOP_400_3
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - LoopLoc:         'src/sha3/fips202.c:400:21'
   - String:          ')'
   - String:          ' in function '''
   - String:          keccak_absorb
@@ -1850,7 +1850,7 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
 Function:        keccak_absorb
 Args:            
   - String:          'Updating loop '
@@ -1860,9 +1860,9 @@ Args:
   - String:          ' to '
   - NewBound:        '17'
   - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_416_2
+  - LoopName:        VITIS_LOOP_391_2
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:416:20'
+  - LoopLoc:         'src/sha3/fips202.c:391:20'
   - String:          ')'
   - String:          ' in function '''
   - String:          keccak_absorb
@@ -1871,7 +1871,7 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
 Function:        keccak_absorb
 Args:            
   - String:          'Updating loop '
@@ -1881,54 +1881,12 @@ Args:
   - String:          ' to '
   - NewBound:        '17'
   - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_416_2
+  - LoopName:        VITIS_LOOP_391_2
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:416:20'
+  - LoopLoc:         'src/sha3/fips202.c:391:20'
   - String:          ')'
   - String:          ' in function '''
   - String:          keccak_absorb
-  - String:          '''.'
-...
---- !Missed
-Pass:            reflow-infer-loop-tripcount
-Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
-Function:        keccak_squeezeblocks
-Args:            
-  - String:          'Updating loop '
-  - String:          lower
-  - String:          ' bound from '
-  - OldBound:        '1'
-  - String:          ' to '
-  - NewBound:        '17'
-  - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_479_2
-  - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:479:23'
-  - String:          ')'
-  - String:          ' in function '''
-  - String:          keccak_squeezeblocks
-  - String:          '''.'
-...
---- !Missed
-Pass:            reflow-infer-loop-tripcount
-Name:            UpdateLoopBound
-DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
-Function:        keccak_squeezeblocks
-Args:            
-  - String:          'Updating loop '
-  - String:          upper
-  - String:          ' bound from '
-  - OldBound:        '503'
-  - String:          ' to '
-  - NewBound:        '17'
-  - String:          ' for loop '''
-  - LoopName:        VITIS_LOOP_479_2
-  - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:479:23'
-  - String:          ')'
-  - String:          ' in function '''
-  - String:          keccak_squeezeblocks
   - String:          '''.'
 ...
 --- !Missed
@@ -2228,7 +2186,7 @@ Args:
 --- !Failure
 Pass:            reflow-function-uniquification
 Name:            FunctionUniquification
-DebugLoc:        { File: src/sidh.c, Line: 315, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 326, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Duplicating function '''
@@ -2258,7 +2216,7 @@ Args:
 --- !Failure
 Pass:            reflow-function-uniquification
 Name:            FunctionUniquification
-DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 654, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - String:          'Duplicating function '''
@@ -2268,7 +2226,7 @@ Args:
 --- !Failure
 Pass:            reflow-function-uniquification
 Name:            FunctionUniquification
-DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 438, Column: 7 }
 Function:        keccak_squeezeblocks
 Args:            
   - String:          'Duplicating function '''
@@ -2291,105 +2249,105 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 419, Column: 10 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 394, Column: 10 }
 Function:        keccak_absorb
 Args:            
   - Callee:          load64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 23, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 421, Column: 5 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 396, Column: 5 }
 Function:        keccak_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 625, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 672, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 628, Column: 3 }
 Function:        cshake256_simple_absorb
 Args:            
   - Callee:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 478, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 435, Column: 2 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 438, Column: 7 }
 Function:        keccak_squeezeblocks
 Args:            
   - Callee:          store64.34
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 686, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 642, Column: 3 }
 Function:        cshake256_simple.32
 Args:            
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 654, Column: 3 }
 Function:        cshake256_simple.32
 Args:            
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -2567,7 +2525,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 352, Column: 87 }
 Function:        mp_add
 Args:            
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_add
@@ -2747,12 +2705,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/config.h, Line: 100, Column: 31 }
-Function:        is_digit_zero_ct.65
+Function:        is_digit_zero_ct.60
 Args:            
-  - Callee:          is_digit_nonzero_ct.66
+  - Callee:          is_digit_nonzero_ct.61
     DebugLoc:        { File: src/config.h, Line: 94, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          is_digit_zero_ct.65
+  - Caller:          is_digit_zero_ct.60
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -2762,7 +2720,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 65 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -2775,7 +2733,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 172, Column: 116 }
 Function:        mp_sub
 Args:            
-  - Callee:          is_digit_zero_ct.65
+  - Callee:          is_digit_zero_ct.60
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          mp_sub
@@ -2853,7 +2811,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 201, Column: 128 }
 Function:        fp2mul503_mont
 Args:            
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          fp2mul503_mont
@@ -3526,7 +3484,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 99, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 105, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          init_basis
@@ -3539,7 +3497,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 100, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 106, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fpcopy503
@@ -3552,7 +3510,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 106, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 112, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2add503
@@ -3565,7 +3523,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 109, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 115, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          LADDER3PT
@@ -3578,7 +3536,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 121, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 128, Column: 17 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2copy503
@@ -3591,7 +3549,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 125, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 132, Column: 17 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          xDBLe
@@ -3604,7 +3562,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 129, Column: 9 }
+DebugLoc:        { File: src/sidh.c, Line: 136, Column: 9 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          get_4_isog
@@ -3617,7 +3575,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 133, Column: 2 }
+DebugLoc:        { File: src/sidh.c, Line: 140, Column: 2 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          eval_4_isog
@@ -3630,7 +3588,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 150, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 157, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          inv_3_way
@@ -3643,7 +3601,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 151, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 158, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2mul503_mont
@@ -3656,7 +3614,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 156, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 163, Column: 5 }
 Function:        EphemeralKeyGeneration_A
 Args:            
   - Callee:          fp2_encode
@@ -3851,235 +3809,235 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 266, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 276, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2_decode
     DebugLoc:        { File: src/sidh.c, Line: 50, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 271, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 281, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          get_A
     DebugLoc:        { File: src/ec_isogeny.c, Line: 191, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 272, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 282, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fpadd503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 273, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 283, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2add503
     DebugLoc:        { File: src/fpx.c, Line: 111, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 277, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 287, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          LADDER3PT
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 289, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 300, Column: 17 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2copy503
     DebugLoc:        { File: src/fpx.c, Line: 90, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 293, Column: 17 }
+DebugLoc:        { File: src/sidh.c, Line: 304, Column: 17 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          xDBLe
     DebugLoc:        { File: src/ec_isogeny.c, Line: 28, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 297, Column: 9 }
+DebugLoc:        { File: src/sidh.c, Line: 308, Column: 9 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          get_4_isog
     DebugLoc:        { File: src/ec_isogeny.c, Line: 43, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 301, Column: 2 }
+DebugLoc:        { File: src/sidh.c, Line: 312, Column: 2 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          eval_4_isog
     DebugLoc:        { File: src/ec_isogeny.c, Line: 60, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 311, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 322, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2div2_503
     DebugLoc:        { File: src/fpx.c, Line: 125, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 312, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 323, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2sub503
     DebugLoc:        { File: src/fpx.c, Line: 118, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 314, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 325, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          j_inv
     DebugLoc:        { File: src/ec_isogeny.c, Line: 213, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 315, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 326, Column: 5 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - Callee:          fp2_encode.31
     DebugLoc:        { File: src/sidh.c, Line: 37, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 478, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 435, Column: 2 }
 Function:        keccak_squeezeblocks.33
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 482, Column: 2 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 438, Column: 7 }
 Function:        keccak_squeezeblocks.33
 Args:            
   - Callee:          store64
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 686, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 642, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 698, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 654, Column: 3 }
 Function:        cshake256_simple
 Args:            
   - Callee:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 707, Column: 5 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 663, Column: 5 }
 Function:        cshake256_simple
 Args:            
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -4102,7 +4060,7 @@ DebugLoc:        { File: src/sike.c, Line: 50, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
     DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
@@ -4128,7 +4086,7 @@ DebugLoc:        { File: src/sike.c, Line: 55, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
     DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
@@ -4141,7 +4099,7 @@ DebugLoc:        { File: src/sike.c, Line: 66, Column: 3 }
 Function:        crypto_kem_enc
 Args:            
   - Callee:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          crypto_kem_enc
     DebugLoc:        { File: src/sike.c, Line: 36, Column: 0 }
@@ -4150,7 +4108,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 33, Column: 9 }
+DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 33, Column: 2 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          crypto_kem_enc
@@ -4188,7 +4146,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
 Function:        keccak_absorb
 Args:            
   - String:          'Inlining function '''
@@ -4196,27 +4154,27 @@ Args:
     DebugLoc:        { File: src/sha3/fips202.c, Line: 23, Column: 0 }
   - String:          ''' into '''
   - Caller:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
 Function:        cshake256_simple_absorb
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 410, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 386, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
 Function:        keccak_squeezeblocks
 Args:            
   - String:          'Inlining function '''
@@ -4224,35 +4182,35 @@ Args:
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ''' into '''
   - Caller:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Inlining function '''
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -4416,7 +4374,7 @@ DebugLoc:        { File: src/fpx.c, Line: 347, Column: 0 }
 Function:        mp_add
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ''' into '''
   - Caller:          mp_add
@@ -4553,13 +4511,13 @@ Args:
 Pass:            reflow-inliner
 Name:            Inline
 DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
-Function:        is_digit_zero_ct.65
+Function:        is_digit_zero_ct.60
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_nonzero_ct.66
+  - Callee:          is_digit_nonzero_ct.61
     DebugLoc:        { File: src/config.h, Line: 94, Column: 0 }
   - String:          ''' into '''
-  - Caller:          is_digit_zero_ct.65
+  - Caller:          is_digit_zero_ct.60
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ''''
 ...
@@ -4570,7 +4528,7 @@ DebugLoc:        { File: src/fpx.c, Line: 167, Column: 0 }
 Function:        mp_sub
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ''' into '''
   - Caller:          mp_sub
@@ -4584,7 +4542,7 @@ DebugLoc:        { File: src/fpx.c, Line: 167, Column: 0 }
 Function:        mp_sub
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_zero_ct.65
+  - Callee:          is_digit_zero_ct.60
     DebugLoc:        { File: src/config.h, Line: 99, Column: 0 }
   - String:          ''' into '''
   - Caller:          mp_sub
@@ -4654,7 +4612,7 @@ DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
 Function:        fp2mul503_mont
 Args:            
   - String:          'Inlining function '''
-  - Callee:          is_digit_lessthan_ct.64
+  - Callee:          is_digit_lessthan_ct.59
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ''' into '''
   - Caller:          fp2mul503_mont
@@ -5350,7 +5308,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5358,13 +5316,13 @@ Args:
     DebugLoc:        { File: src/ec_isogeny.c, Line: 191, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5372,13 +5330,13 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 111, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5386,13 +5344,13 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 90, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5400,13 +5358,13 @@ Args:
     DebugLoc:        { File: src/ec_isogeny.c, Line: 28, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5414,13 +5372,13 @@ Args:
     DebugLoc:        { File: src/ec_isogeny.c, Line: 43, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5428,13 +5386,13 @@ Args:
     DebugLoc:        { File: src/ec_isogeny.c, Line: 60, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5442,13 +5400,13 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 118, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5456,13 +5414,13 @@ Args:
     DebugLoc:        { File: src/ec_isogeny.c, Line: 213, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inlining function '''
@@ -5470,13 +5428,13 @@ Args:
     DebugLoc:        { File: src/sidh.c, Line: 37, Column: 0 }
   - String:          ''' into '''
   - Caller:          EphemeralSecretAgreement_A
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
 Function:        keccak_squeezeblocks.33
 Args:            
   - String:          'Inlining function '''
@@ -5484,49 +5442,49 @@ Args:
     DebugLoc:        { File: src/sha3/fips202.c, Line: 34, Column: 0 }
   - String:          ''' into '''
   - Caller:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Inlining function '''
   - Callee:          cshake256_simple_absorb
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 650, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 606, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_squeezeblocks.33
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_squeezeblocks
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 471, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 428, Column: 0 }
   - String:          ''' into '''
   - Caller:          cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -5756,7 +5714,7 @@ Args:
   - Length:          '378'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        pk2seq
+  - AccessID:        pkseq
   - ArrayName:       pk
   - String:          ' '
   - BundleName:      gmem
@@ -5815,7 +5773,7 @@ Args:
   - Length:          '402'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        ct3seq
+  - AccessID:        ctseq
   - ArrayName:       ct
   - String:          ' '
   - BundleName:      gmem
@@ -5844,7 +5802,7 @@ Args:
   - Length:          '63'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        PublicKeyA37seq
+  - AccessID:        PublicKeyAseq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -5874,7 +5832,7 @@ Args:
   - Length:          '63'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        scevgep38seq
+  - AccessID:        scevgep31seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -5904,7 +5862,7 @@ Args:
   - Length:          '63'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        scevgep39seq
+  - AccessID:        scevgep32seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -5934,7 +5892,7 @@ Args:
   - Length:          '63'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        scevgep40seq
+  - AccessID:        scevgep33seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -5964,7 +5922,7 @@ Args:
   - Length:          '63'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        scevgep41seq
+  - AccessID:        scevgep34seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -5994,7 +5952,7 @@ Args:
   - Length:          '63'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        scevgep42seq
+  - AccessID:        scevgep35seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -6015,7 +5973,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 668, Column: 23 }
 Function:        cshake256_simple
 Args:            
   - String:          'Sequential '
@@ -6024,23 +5982,53 @@ Args:
   - Length:          '16'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        output1seq
+  - AccessID:        outputseq
   - ArrayName:       output
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_712_1
+  - LoopName:        VITIS_LOOP_668_1
   - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - LoopLoc:         'src/sha3/fips202.c:668:23'
   - String:          ' '
   - Function:        cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 715, Column: 12 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 671, Column: 12 }
   - OrigDirection:   write
   - OrigID:          for.inc.store.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/sidh.c, Line: 55, Column: 22 }
+Function:        fp2_decode
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '63'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        encseq
+  - ArrayName:       enc
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ' '
+  - LoopLoc:         'src/sidh.c:55:22'
+  - String:          ' '
+  - Function:        fp2_decode
+    DebugLoc:        { File: src/sidh.c, Line: 50, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/sidh.c, Line: 57, Column: 35 }
+  - OrigDirection:   read
+  - OrigID:          for.inc13.load.4
 ...
 --- !Passed
 Pass:            reflow-burst-inference
@@ -6068,39 +6056,9 @@ Args:
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: src/sidh.c, Line: 57, Column: 35 }
-  - OrigDirection:   read
-  - OrigID:          for.inc13.load.5
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: src/sidh.c, Line: 55, Column: 22 }
-Function:        fp2_decode
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '63'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        scevgep1seq
-  - ArrayName:       enc
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_55_2
-  - String:          ' '
-  - LoopLoc:         'src/sidh.c:55:22'
-  - String:          ' '
-  - Function:        fp2_decode
-    DebugLoc:        { File: src/sidh.c, Line: 50, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
     DebugLoc:        { File: src/sidh.c, Line: 58, Column: 45 }
   - OrigDirection:   read
-  - OrigID:          for.inc13.load.12
+  - OrigID:          for.inc13.load.10
 ...
 --- !Missed
 Pass:            reflow-burst-widen
@@ -6116,7 +6074,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sike.c, Line: 65, Column: 3 }
   - OrigDirection:   read
-  - OrigID:          ct3seq
+  - OrigID:          ctseq
   - ArrayName:       ct
   - String:          ' '
   - BundleName:      gmem
@@ -6170,7 +6128,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sike.c, Line: 48, Column: 3 }
   - OrigDirection:   read
-  - OrigID:          pk2seq
+  - OrigID:          pkseq
   - ArrayName:       pk
   - String:          ' '
   - BundleName:      gmem
@@ -6197,7 +6155,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 42, Column: 22 }
   - OrigDirection:   write
-  - OrigID:          scevgep41seq
+  - OrigID:          scevgep34seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -6224,7 +6182,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 42, Column: 22 }
   - OrigDirection:   write
-  - OrigID:          scevgep42seq
+  - OrigID:          scevgep35seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -6251,7 +6209,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 42, Column: 22 }
   - OrigDirection:   write
-  - OrigID:          scevgep39seq
+  - OrigID:          scevgep32seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -6278,7 +6236,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 42, Column: 22 }
   - OrigDirection:   write
-  - OrigID:          scevgep40seq
+  - OrigID:          scevgep33seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -6305,7 +6263,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 42, Column: 22 }
   - OrigDirection:   write
-  - OrigID:          PublicKeyA37seq
+  - OrigID:          PublicKeyAseq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -6332,7 +6290,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 42, Column: 22 }
   - OrigDirection:   write
-  - OrigID:          scevgep38seq
+  - OrigID:          scevgep31seq
   - ArrayName:       PublicKeyA
   - String:          ' '
   - BundleName:      gmem
@@ -6348,7 +6306,7 @@ Args:
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 668, Column: 23 }
 Function:        cshake256_simple
 Args:            
   - String:          'Could not widen since type '
@@ -6357,19 +6315,19 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 668, Column: 23 }
   - OrigDirection:   write
-  - OrigID:          output1seq
+  - OrigID:          outputseq
   - ArrayName:       output
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_712_1
+  - LoopName:        VITIS_LOOP_668_1
   - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - LoopLoc:         'src/sha3/fips202.c:668:23'
   - String:          ' '
   - Function:        cshake256_simple
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
@@ -6386,7 +6344,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 55, Column: 22 }
   - OrigDirection:   read
-  - OrigID:          scevgepseq
+  - OrigID:          encseq
   - ArrayName:       enc
   - String:          ' '
   - BundleName:      gmem
@@ -6413,7 +6371,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/sidh.c, Line: 55, Column: 22 }
   - OrigDirection:   read
-  - OrigID:          scevgep1seq
+  - OrigID:          scevgepseq
   - ArrayName:       enc
   - String:          ' '
   - BundleName:      gmem
@@ -6552,9 +6510,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_654_1
+  - LoopName:        VITIS_LOOP_610_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:654:21'
+  - LoopLoc:         'src/sha3/fips202.c:610:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6562,9 +6520,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_416_2
+  - LoopName:        VITIS_LOOP_391_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:416:20'
+  - LoopLoc:         'src/sha3/fips202.c:391:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6572,9 +6530,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_444_4
+  - LoopName:        VITIS_LOOP_400_3
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - LoopLoc:         'src/sha3/fips202.c:400:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6582,9 +6540,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_479_2
+  - LoopName:        VITIS_LOOP_436_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:479:23'
+  - LoopLoc:         'src/sha3/fips202.c:436:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6592,9 +6550,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_712_1
+  - LoopName:        VITIS_LOOP_668_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - LoopLoc:         'src/sha3/fips202.c:668:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6602,9 +6560,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_654_1
+  - LoopName:        VITIS_LOOP_610_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:654:21'
+  - LoopLoc:         'src/sha3/fips202.c:610:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6612,9 +6570,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_444_4
+  - LoopName:        VITIS_LOOP_400_3
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - LoopLoc:         'src/sha3/fips202.c:400:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6622,9 +6580,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_479_2
+  - LoopName:        VITIS_LOOP_436_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:479:23'
+  - LoopLoc:         'src/sha3/fips202.c:436:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6632,9 +6590,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_712_1
+  - LoopName:        VITIS_LOOP_668_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - LoopLoc:         'src/sha3/fips202.c:668:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6705,6 +6663,46 @@ Args:
   - LoopName:        unknown
   - String:          '> at '
   - LoopLoc:         ''
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_14_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:14:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_14_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:14:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_14_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:14:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_14_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:14:22'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6892,6 +6890,96 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_350_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:350:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_350_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:350:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_170_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:170:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_200_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:200:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_350_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:350:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_170_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.c:170:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_91_1
+  - String:          '> at '
+  - LoopLoc:         'src/generic/fp_generic.c:91:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_97_2
+  - String:          '> at '
+  - LoopLoc:         'src/generic/fp_generic.c:97:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_182_1
+  - String:          '> at '
+  - LoopLoc:         'src/generic/fp_generic.c:182:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
   - LoopName:        VITIS_LOOP_187_3
   - String:          '> at '
   - LoopLoc:         'src/generic/fp_generic.c:187:27'
@@ -6935,16 +7023,6 @@ Args:
   - LoopName:        unknown
   - String:          '> at '
   - LoopLoc:         ''
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_182_1
-  - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.c:182:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7242,66 +7320,6 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_170_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:170:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_350_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:350:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_200_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:200:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_170_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:170:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_350_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:350:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_350_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:350:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
   - LoopName:        VITIS_LOOP_14_1
   - String:          '> at '
   - LoopLoc:         'src/fpx.c:14:22'
@@ -7335,66 +7353,6 @@ Args:
   - LoopName:        VITIS_LOOP_14_1
   - String:          '> at '
   - LoopLoc:         'src/fpx.c:14:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_14_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:14:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_14_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:14:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_14_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:14:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_14_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.c:14:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_97_2
-  - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.c:97:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_91_1
-  - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.c:91:22'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7662,9 +7620,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_654_1
+  - LoopName:        VITIS_LOOP_610_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:654:21'
+  - LoopLoc:         'src/sha3/fips202.c:610:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7672,9 +7630,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_416_2
+  - LoopName:        VITIS_LOOP_391_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:416:20'
+  - LoopLoc:         'src/sha3/fips202.c:391:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7682,9 +7640,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_444_4
+  - LoopName:        VITIS_LOOP_400_3
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:444:21'
+  - LoopLoc:         'src/sha3/fips202.c:400:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7692,9 +7650,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_479_2
+  - LoopName:        VITIS_LOOP_436_2
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:479:23'
+  - LoopLoc:         'src/sha3/fips202.c:436:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7702,9 +7660,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_712_1
+  - LoopName:        VITIS_LOOP_668_1
   - String:          '> at '
-  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - LoopLoc:         'src/sha3/fips202.c:668:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7760,7 +7718,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 452, Column: 13 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 409, Column: 13 }
 Function:        cshake256_simple
 Args:            
   - String:          'Loop '''
@@ -7790,7 +7748,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 452, Column: 13 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 409, Column: 13 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Loop '''
@@ -7810,7 +7768,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 452, Column: 13 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 409, Column: 13 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Loop '''
@@ -7830,7 +7788,7 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Unrolling loop '''
@@ -7846,13 +7804,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        BYTE
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:452:13'
+  - LoopLoc:         'src/sha3/fips202.c:409:13'
   - String:          ') '
   - String:          'in function '''
   - String:          cshake256_simple
@@ -7862,7 +7820,7 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple
 Args:            
   - String:          'Unrolling loop '''
@@ -7878,7 +7836,7 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Unrolling loop '''
@@ -7894,13 +7852,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        BYTE
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:452:13'
+  - LoopLoc:         'src/sha3/fips202.c:409:13'
   - String:          ') '
   - String:          'in function '''
   - String:          cshake256_simple.32.clone
@@ -7910,7 +7868,7 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Unrolling loop '''
@@ -7926,13 +7884,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        BYTE
   - String:          ''' ('
-  - LoopLoc:         'src/sha3/fips202.c:452:13'
+  - LoopLoc:         'src/sha3/fips202.c:409:13'
   - String:          ') '
   - String:          'in function '''
   - String:          cshake256_simple.32
@@ -7942,7 +7900,7 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Unrolling loop '''
@@ -7958,17 +7916,17 @@ Args:
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            FlattenOffInference
-DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        VITIS_LOOP_413_1
+  - LoopName:        VITIS_LOOP_388_1
   - String:          '''.'
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
 Function:        cshake256_simple.32
 Args:            
   - PragmaType:      loop_flatten
@@ -7979,28 +7937,28 @@ Args:
   - String:          ' '
   - PragmaFunction:  cshake256_simple.32
   - String:          ' '
-  - PragmaSrcLoc:    'src/sha3/fips202.c:413:21'
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
-  - LoopName:        VITIS_LOOP_413_1
+  - PragmaSrcLoc:    'src/sha3/fips202.c:388:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
+  - LoopName:        VITIS_LOOP_388_1
   - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:413:21'
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+  - LoopLoc:         'src/sha3/fips202.c:388:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            FlattenOffInference
-DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
 Function:        cshake256_simple
 Args:            
   - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        VITIS_LOOP_413_1
+  - LoopName:        VITIS_LOOP_388_1
   - String:          '''.'
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
 Function:        cshake256_simple
 Args:            
   - PragmaType:      loop_flatten
@@ -8011,12 +7969,12 @@ Args:
   - String:          ' '
   - PragmaFunction:  cshake256_simple
   - String:          ' '
-  - PragmaSrcLoc:    'src/sha3/fips202.c:413:21'
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
-  - LoopName:        VITIS_LOOP_413_1
+  - PragmaSrcLoc:    'src/sha3/fips202.c:388:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
+  - LoopName:        VITIS_LOOP_388_1
   - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:413:21'
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 413, Column: 21 }
+  - LoopLoc:         'src/sha3/fips202.c:388:21'
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 388, Column: 21 }
   - String:          ' '
 ...
 --- !Passed
@@ -8365,7 +8323,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sidh.c, Line: 252, Column: 28 }
+DebugLoc:        { File: src/sidh.c, Line: 262, Column: 28 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - PragmaType:      array_partition
@@ -8376,7 +8334,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  EphemeralSecretAgreement_A
   - String:          ' '
-  - varLoc:          'src/sidh.c:252:28'
+  - varLoc:          'src/sidh.c:262:28'
   - String:          ' '
   - VarName:         C24
   - String:          ' '
@@ -8384,7 +8342,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/sidh.c, Line: 252, Column: 28 }
+DebugLoc:        { File: src/sidh.c, Line: 262, Column: 28 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inferring pragma '''
@@ -8559,7 +8517,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
 Function:        cshake256_simple.32.clone
 Args:            
   - PragmaType:      array_partition
@@ -8570,7 +8528,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  cshake256_simple.32.clone
   - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:683:17'
+  - varLoc:          'src/sha3/fips202.c:639:17'
   - String:          ' '
   - VarName:         t
   - String:          ' '
@@ -8578,7 +8536,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Inferring pragma '''
@@ -8599,8 +8557,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
-Function:        cshake256_simple.32
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
+Function:        cshake256_simple
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -8608,9 +8566,9 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cshake256_simple.32
+  - PragmaFunction:  cshake256_simple
   - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:683:17'
+  - varLoc:          'src/sha3/fips202.c:639:17'
   - String:          ' '
   - VarName:         t
   - String:          ' '
@@ -8618,8 +8576,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
-Function:        cshake256_simple.32
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
+Function:        cshake256_simple
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -8639,8 +8597,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
-Function:        cshake256_simple
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
+Function:        cshake256_simple.32
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -8648,9 +8606,9 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  cshake256_simple
+  - PragmaFunction:  cshake256_simple.32
   - String:          ' '
-  - varLoc:          'src/sha3/fips202.c:683:17'
+  - varLoc:          'src/sha3/fips202.c:639:17'
   - String:          ' '
   - VarName:         t
   - String:          ' '
@@ -8658,8 +8616,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
-Function:        cshake256_simple
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
+Function:        cshake256_simple.32
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -8730,7 +8688,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
 Function:        cshake256_simple.32
 Args:            
   - String:          'Applying '
@@ -8824,7 +8782,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sidh.c, Line: 252, Column: 28 }
+DebugLoc:        { File: src/sidh.c, Line: 262, Column: 28 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Applying '
@@ -8844,7 +8802,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
 Function:        cshake256_simple.32.clone
 Args:            
   - String:          'Applying '
@@ -8864,7 +8822,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/sha3/fips202.c, Line: 683, Column: 17 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 639, Column: 17 }
 Function:        cshake256_simple
 Args:            
   - String:          'Applying '
@@ -9034,7 +8992,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 668, Column: 23 }
 Function:        cshake256_simple.1
 Args:            
   - String:          'Multiple burst '
@@ -9051,18 +9009,18 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_712_1
+  - LoopName:        VITIS_LOOP_668_1
   - String:          ' '
-  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - LoopLoc:         'src/sha3/fips202.c:668:23'
   - String:          ' '
   - Function:        cshake256_simple.1
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: src/sha3/fips202.c, Line: 712, Column: 23 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 668, Column: 23 }
 Function:        cshake256_simple.1
 Args:            
   - String:          'Multiple burst '
@@ -9072,9 +9030,9 @@ Args:
   - String:          ' and bit width '
   - Width:           '8'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_712_1
+  - LoopName:        VITIS_LOOP_668_1
   - String:          '''('
-  - LoopLoc:         'src/sha3/fips202.c:712:23'
+  - LoopLoc:         'src/sha3/fips202.c:668:23'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -9234,14 +9192,14 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 625, Column: 3 }
 Function:        cshake256_simple.32
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -9313,12 +9271,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.65.66
+Function:        fp2mul503_mont.63.64
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.65.66
+  - Caller:          fp2mul503_mont.63.64
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9326,12 +9284,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.65.66
+Function:        fp2mul503_mont.63.64
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.65.66
+  - Caller:          fp2mul503_mont.63.64
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9339,12 +9297,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.67.70
+Function:        fp2mul503_mont.65.68
 Args:            
-  - Callee:          mp_mul.68.69
+  - Callee:          mp_mul.66.67
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.67.70
+  - Caller:          fp2mul503_mont.65.68
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9352,12 +9310,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.67.70
+Function:        fp2mul503_mont.65.68
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.67.70
+  - Caller:          fp2mul503_mont.65.68
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9365,12 +9323,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 205, Column: 5 }
-Function:        fp2mul503_mont.67.70
+Function:        fp2mul503_mont.65.68
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.67.70
+  - Caller:          fp2mul503_mont.65.68
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9378,12 +9336,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.71.72
+Function:        fp2sqr503_mont.69.70
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.71.72
+  - Caller:          fp2sqr503_mont.69.70
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9391,12 +9349,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 64, Column: 5 }
-Function:        fp2sqr503_mont.71.72
+Function:        fp2sqr503_mont.69.70
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.71.72
+  - Caller:          fp2sqr503_mont.69.70
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9404,12 +9362,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.73.74.1
+Function:        fp2mul503_mont.71.72.1
 Args:            
   - Callee:          mp_mul.1
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.73.74.1
+  - Caller:          fp2mul503_mont.71.72.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9417,12 +9375,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 196, Column: 5 }
-Function:        fp2mul503_mont.73.74.1
+Function:        fp2mul503_mont.71.72.1
 Args:            
   - Callee:          mp_mul.2
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.73.74.1
+  - Caller:          fp2mul503_mont.71.72.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9430,12 +9388,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.73.74.1
+Function:        fp2mul503_mont.71.72.1
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.73.74.1
+  - Caller:          fp2mul503_mont.71.72.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9443,12 +9401,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 205, Column: 5 }
-Function:        fp2mul503_mont.73.74.1
+Function:        fp2mul503_mont.71.72.1
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.73.74.1
+  - Caller:          fp2mul503_mont.71.72.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9456,12 +9414,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
-  - Callee:          fpadd503.59.60
+  - Callee:          fpadd503.57.58
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9469,12 +9427,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
-  - Callee:          fpadd503.61.62
+  - Callee:          fpadd503.59.60
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9482,12 +9440,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 306, Column: 3 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
   - Callee:          fp2div2_503
     DebugLoc:        { File: src/fpx.c, Line: 125, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9495,12 +9453,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
   - Callee:          fpadd503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9508,12 +9466,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 119, Column: 5 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
   - Callee:          fpsub503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9521,12 +9479,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 244, Column: 3 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
   - Callee:          fp2sqr503_mont
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9534,12 +9492,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 133, Column: 5 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
   - Callee:          fpcorrection503
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 87, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9547,12 +9505,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 248, Column: 3 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
   - Callee:          fp2mul503_mont
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9560,12 +9518,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 250, Column: 3 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
-  - Callee:          fp2mul503_mont.65.66
+  - Callee:          fp2mul503_mont.63.64
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9573,12 +9531,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 253, Column: 3 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
-  - Callee:          fp2mul503_mont.67.70
+  - Callee:          fp2mul503_mont.65.68
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9586,12 +9544,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 258, Column: 3 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
-  - Callee:          fp2sqr503_mont.71.72
+  - Callee:          fp2sqr503_mont.69.70
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -9599,12 +9557,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 260, Column: 3 }
-Function:        LADDER3PT.75.76.1
+Function:        LADDER3PT.73.74.1
 Args:            
-  - Callee:          fp2mul503_mont.73.74.1
+  - Callee:          fp2mul503_mont.71.72.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          LADDER3PT.75.76.1
+  - Caller:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10313,10 +10271,10 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 109, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 115, Column: 5 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          LADDER3PT.75.76.1
+  - Callee:          LADDER3PT.73.74.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -10599,7 +10557,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 133, Column: 2 }
+DebugLoc:        { File: src/sidh.c, Line: 140, Column: 2 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
   - Callee:          eval_4_isog.1
@@ -10823,7 +10781,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fpadd503.59.60
+  - Callee:          fpadd503.57.58
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10836,7 +10794,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fpadd503.61.62
+  - Callee:          fpadd503.59.60
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10927,7 +10885,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 250, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2mul503_mont.65.66
+  - Callee:          fp2mul503_mont.63.64
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10940,7 +10898,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 253, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2mul503_mont.67.70
+  - Callee:          fp2mul503_mont.65.68
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10953,7 +10911,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 258, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2sqr503_mont.71.72
+  - Callee:          fp2sqr503_mont.69.70
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10966,7 +10924,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 260, Column: 3 }
 Function:        LADDER3PT.1
 Args:            
-  - Callee:          fp2mul503_mont.73.74.1
+  - Callee:          fp2mul503_mont.71.72.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          LADDER3PT.1
@@ -10977,12 +10935,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 195, Column: 5 }
-Function:        fp2mul503_mont.89.92.1
+Function:        fp2mul503_mont.87.90.1
 Args:            
-  - Callee:          mp_mul.90.91
+  - Callee:          mp_mul.88.89
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.89.92.1
+  - Caller:          fp2mul503_mont.87.90.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10990,12 +10948,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 203, Column: 5 }
-Function:        fp2mul503_mont.89.92.1
+Function:        fp2mul503_mont.87.90.1
 Args:            
   - Callee:          rdc_mont.1
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.89.92.1
+  - Caller:          fp2mul503_mont.87.90.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11003,12 +10961,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 205, Column: 5 }
-Function:        fp2mul503_mont.89.92.1
+Function:        fp2mul503_mont.87.90.1
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.89.92.1
+  - Caller:          fp2mul503_mont.87.90.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11016,12 +10974,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 207, Column: 5 }
-Function:        fp2mul503_mont.89.92.1
+Function:        fp2mul503_mont.87.90.1
 Args:            
   - Callee:          rdc_mont.2
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2mul503_mont.89.92.1
+  - Caller:          fp2mul503_mont.87.90.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11029,12 +10987,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/generic/fp_generic.c, Line: 190, Column: 93 }
-Function:        rdc_mont.82.83
+Function:        rdc_mont.80.81
 Args:            
   - Callee:          is_digit_lessthan_ct
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          rdc_mont.82.83
+  - Caller:          rdc_mont.80.81
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11042,12 +11000,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.81.84.1
+Function:        fp2sqr503_mont.79.82.1
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.81.84.1
+  - Caller:          fp2sqr503_mont.79.82.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11055,12 +11013,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 64, Column: 5 }
-Function:        fp2sqr503_mont.81.84.1
+Function:        fp2sqr503_mont.79.82.1
 Args:            
-  - Callee:          rdc_mont.82.83
+  - Callee:          rdc_mont.80.81
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.81.84.1
+  - Caller:          fp2sqr503_mont.79.82.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11068,12 +11026,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.81.84.1
+Function:        fp2sqr503_mont.79.82.1
 Args:            
   - Callee:          mp_mul.5
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.81.84.1
+  - Caller:          fp2sqr503_mont.79.82.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11081,12 +11039,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.87.88
+Function:        fp2sqr503_mont.85.86
 Args:            
   - Callee:          mp_mul
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.87.88
+  - Caller:          fp2sqr503_mont.85.86
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11094,12 +11052,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 64, Column: 5 }
-Function:        fp2sqr503_mont.87.88
+Function:        fp2sqr503_mont.85.86
 Args:            
   - Callee:          rdc_mont
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 175, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.87.88
+  - Caller:          fp2sqr503_mont.85.86
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11107,39 +11065,39 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 63, Column: 5 }
-Function:        fp2sqr503_mont.87.88
+Function:        fp2sqr503_mont.85.86
 Args:            
-  - Callee:          mp_mul.68.69
+  - Callee:          mp_mul.66.67
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 138, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          fp2sqr503_mont.87.88
+  - Caller:          fp2sqr503_mont.85.86
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 266, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 276, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
   - Callee:          fp2_decode.1
     DebugLoc:        { File: src/sidh.c, Line: 50, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 267, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 277, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
   - Callee:          fp2_decode.2
     DebugLoc:        { File: src/sidh.c, Line: 50, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11152,7 +11110,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11165,7 +11123,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11178,7 +11136,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11191,7 +11149,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11204,7 +11162,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11217,7 +11175,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11230,7 +11188,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11243,7 +11201,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11256,7 +11214,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11269,7 +11227,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 315, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11282,20 +11240,20 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 272, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 282, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpadd503.77.78
+  - Callee:          fpadd503.75.76
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11304,37 +11262,37 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 112, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpadd503.79.80
+  - Callee:          fpadd503.77.78
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 274, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 284, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpadd503.59.60
+  - Callee:          fpadd503.57.58
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 277, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 287, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
   - Callee:          LADDER3PT.1
     DebugLoc:        { File: src/ec_isogeny.c, Line: 287, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11347,7 +11305,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11360,7 +11318,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11373,7 +11331,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11386,7 +11344,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11395,11 +11353,11 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 19, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fp2mul503_mont.89.92.1
+  - Callee:          fp2mul503_mont.87.90.1
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11412,7 +11370,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11425,7 +11383,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11438,7 +11396,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11451,7 +11409,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11464,7 +11422,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11477,7 +11435,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11490,7 +11448,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11503,7 +11461,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11516,7 +11474,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11529,7 +11487,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11542,7 +11500,7 @@ Args:
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 17, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11551,11 +11509,11 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 52, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fp2sqr503_mont.81.84.1
+  - Callee:          fp2sqr503_mont.79.82.1
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11568,7 +11526,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11581,20 +11539,20 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 187, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sidh.c, Line: 311, Column: 5 }
+DebugLoc:        { File: src/sidh.c, Line: 322, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
   - Callee:          fp2div2_503
     DebugLoc:        { File: src/fpx.c, Line: 125, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11603,11 +11561,11 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.c, Line: 119, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fpsub503.85.86
+  - Callee:          fpsub503.83.84
     DebugLoc:        { File: src/generic/fp_generic.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11616,11 +11574,11 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.c, Line: 219, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          fp2sqr503_mont.87.88
+  - Callee:          fp2sqr503_mont.85.86
     DebugLoc:        { File: src/fpx.c, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11633,7 +11591,7 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 38, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11646,33 +11604,33 @@ Args:
     DebugLoc:        { File: src/fpx.c, Line: 38, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 625, Column: 3 }
 Function:        cshake256_simple.32.clone
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.32.clone
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/sha3/fips202.c, Line: 669, Column: 3 }
+DebugLoc:        { File: src/sha3/fips202.c, Line: 625, Column: 3 }
 Function:        cshake256_simple.1
 Args:            
   - Callee:          KeccakF1600_StatePermute
     DebugLoc:        { File: src/sha3/fips202.c, Line: 72, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          cshake256_simple.1
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11682,7 +11640,7 @@ DebugLoc:        { File: src/sike.c, Line: 50, Column: 3 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          cshake256_simple.32
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sikep503_kem_enc_hw
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
@@ -11708,7 +11666,7 @@ DebugLoc:        { File: src/sike.c, Line: 55, Column: 3 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          EphemeralSecretAgreement_A.1
-    DebugLoc:        { File: src/sidh.c, Line: 245, Column: 0 }
+    DebugLoc:        { File: src/sidh.c, Line: 254, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sikep503_kem_enc_hw
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
@@ -11721,7 +11679,7 @@ DebugLoc:        { File: src/sike.c, Line: 56, Column: 3 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          cshake256_simple.32.clone
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sikep503_kem_enc_hw
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }
@@ -11734,7 +11692,7 @@ DebugLoc:        { File: src/sike.c, Line: 66, Column: 3 }
 Function:        sikep503_kem_enc_hw
 Args:            
   - Callee:          cshake256_simple.1
-    DebugLoc:        { File: src/sha3/fips202.c, Line: 681, Column: 0 }
+    DebugLoc:        { File: src/sha3/fips202.c, Line: 637, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sikep503_kem_enc_hw
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 23, Column: 0 }

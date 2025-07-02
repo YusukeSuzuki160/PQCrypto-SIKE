@@ -3,8 +3,8 @@
 # SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
 # IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
 # SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
-# Start of session at: Tue May 27 23:13:26 2025
-# Process ID         : 378461
+# Start of session at: Thu Jun  5 04:20:20 2025
+# Process ID         : 1163816
 # Current directory  : /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/impl/ip
 # Command line       : vivado -notrace -mode batch -source run_ippack.tcl
 # Log file           : /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/impl/ip/vivado.log
@@ -13,12 +13,12 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13600K
-# CPU Frequency      : 800.000 MHz
+# CPU Frequency      : 5099.077 MHz
 # CPU Physical cores : 14
 # CPU Logical cores  : 20
 # Host memory        : 100993 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 109583 MB
-# Available Virtual  : 87575 MB
+# Available Virtual  : 86581 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace

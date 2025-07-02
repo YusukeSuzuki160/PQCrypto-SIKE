@@ -37,130 +37,150 @@ Diagnostics:
         Offset:          39413
         Length:          0
         ReplacementText: 'VITIS_LOOP_55_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_93_1:  '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
     FileOffset:      93
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
-      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          40543
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_93_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_114_2:  '
-    FileOffset:      114
+    Message:         'Added loop label VITIS_LOOP_99_1:  '
+    FileOffset:      99
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          41138
+        Offset:          41039
         Length:          0
-        ReplacementText: 'VITIS_LOOP_114_2: '
+        ReplacementText: 'VITIS_LOOP_99_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_116_3:  '
-    FileOffset:      116
+    Message:         'Added loop label VITIS_LOOP_120_2:  '
+    FileOffset:      120
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          41184
+        Offset:          41634
         Length:          0
-        ReplacementText: 'VITIS_LOOP_116_3: '
+        ReplacementText: 'VITIS_LOOP_120_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_130_4:  '
-    FileOffset:      130
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          41666
+        Offset:          41696
         Length:          0
-        ReplacementText: 'VITIS_LOOP_130_4: '
+        ReplacementText: 'VITIS_LOOP_123_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_161_5:  '
-    FileOffset:      161
+    Message:         'Added loop label VITIS_LOOP_137_4:  '
+    FileOffset:      137
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          42593
+        Offset:          42142
         Length:          0
-        ReplacementText: 'VITIS_LOOP_161_5: '
+        ReplacementText: 'VITIS_LOOP_137_4: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_195_1:  '
-    FileOffset:      195
+    Message:         'Added loop label VITIS_LOOP_168_5:  '
+    FileOffset:      168
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          43586
+        Offset:          43069
         Length:          0
-        ReplacementText: 'VITIS_LOOP_195_1: '
+        ReplacementText: 'VITIS_LOOP_168_5: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      181
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
+    Replacements:    
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_197_2:  '
-    FileOffset:      197
+    Message:         'Added loop label VITIS_LOOP_203_1:  '
+    FileOffset:      203
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          43632
+        Offset:          44114
         Length:          0
-        ReplacementText: 'VITIS_LOOP_197_2: '
+        ReplacementText: 'VITIS_LOOP_203_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_211_3:  '
-    FileOffset:      211
+    Message:         'Added loop label VITIS_LOOP_206_2:  '
+    FileOffset:      206
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          44116
+        Offset:          44176
         Length:          0
-        ReplacementText: 'VITIS_LOOP_211_3: '
+        ReplacementText: 'VITIS_LOOP_206_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_282_1:  '
-    FileOffset:      282
+    Message:         'Added loop label VITIS_LOOP_220_3:  '
+    FileOffset:      220
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          45774
+        Offset:          44624
         Length:          0
-        ReplacementText: 'VITIS_LOOP_282_1: '
+        ReplacementText: 'VITIS_LOOP_220_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      260
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
+    Replacements:    
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_284_2:  '
-    FileOffset:      284
+    Message:         'Added loop label VITIS_LOOP_292_1:  '
+    FileOffset:      292
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          45820
+        Offset:          46334
         Length:          0
-        ReplacementText: 'VITIS_LOOP_284_2: '
+        ReplacementText: 'VITIS_LOOP_292_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_298_3:  '
-    FileOffset:      298
+    Message:         'Added loop label VITIS_LOOP_295_2:  '
+    FileOffset:      295
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          46302
+        Offset:          46396
         Length:          0
-        ReplacementText: 'VITIS_LOOP_298_3: '
+        ReplacementText: 'VITIS_LOOP_295_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_352_1:  '
-    FileOffset:      352
+    Message:         'Added loop label VITIS_LOOP_309_3:  '
+    FileOffset:      309
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          47580
+        Offset:          46842
         Length:          0
-        ReplacementText: 'VITIS_LOOP_352_1: '
+        ReplacementText: 'VITIS_LOOP_309_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      343
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
+    Replacements:    
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_354_2:  '
-    FileOffset:      354
+    Message:         'Added loop label VITIS_LOOP_364_1:  '
+    FileOffset:      364
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          47626
+        Offset:          48172
         Length:          0
-        ReplacementText: 'VITIS_LOOP_354_2: '
+        ReplacementText: 'VITIS_LOOP_364_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_368_3:  '
-    FileOffset:      368
+    Message:         'Added loop label VITIS_LOOP_367_2:  '
+    FileOffset:      367
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
-        Offset:          48110
+        Offset:          48234
         Length:          0
-        ReplacementText: 'VITIS_LOOP_368_3: '
+        ReplacementText: 'VITIS_LOOP_367_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_3:  '
+    FileOffset:      381
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.c
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sidh.pp.0.c
+        Offset:          48682
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_3: '
 ...

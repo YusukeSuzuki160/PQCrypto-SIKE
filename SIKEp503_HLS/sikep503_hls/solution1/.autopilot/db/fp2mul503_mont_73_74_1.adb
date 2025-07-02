@@ -789,7 +789,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.99</m_delay>
+          <m_delay>0.81</m_delay>
           <m_topoIndex>13</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1297,7 +1297,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32ns_32ns_64_2_1_U928</rtlName>
+              <rtlName/>
               <control/>
               <opType/>
               <implIndex/>
@@ -1328,7 +1328,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_32ns_32ns_64_2_1_U929</rtlName>
+              <rtlName/>
               <control/>
               <opType/>
               <implIndex/>
@@ -2009,8 +2009,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>927</mMinLatency>
-        <mMaxLatency>1425</mMaxLatency>
+        <mMinLatency>732</mMinLatency>
+        <mMaxLatency>1213</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2470,7 +2470,7 @@
     </fsm>
     <res class_id="34" tracking_level="1" version="0" object_id="_160">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
-        <count>14</count>
+        <count>10</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
           <first>grp_fp2mul503_mont_73_74_1_Pipeline_VITIS_LOOP_170_1154_fu_130 (fp2mul503_mont_73_74_1_Pipeline_VITIS_LOOP_170_1154)</first>
@@ -2479,11 +2479,11 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>213</second>
+              <second>86</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>613</second>
+              <second>576</second>
             </item>
           </second>
         </item>
@@ -2494,11 +2494,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>215</second>
+              <second>88</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>613</second>
+              <second>576</second>
             </item>
           </second>
         </item>
@@ -2513,11 +2513,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>334</second>
+              <second>404</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>700</second>
+              <second>712</second>
             </item>
           </second>
         </item>
@@ -2528,11 +2528,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>207</second>
+              <second>88</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>626</second>
+              <second>574</second>
             </item>
           </second>
         </item>
@@ -2543,11 +2543,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>208</second>
+              <second>279</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>627</second>
+              <second>638</second>
             </item>
           </second>
         </item>
@@ -2558,11 +2558,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>207</second>
+              <second>85</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>626</second>
+              <second>574</second>
             </item>
           </second>
         </item>
@@ -2573,45 +2573,53 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3335</second>
+              <second>2083</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>3486</second>
+              <second>2911</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_mp_mul_1_fu_56 (mp_mul_1)</first>
           <second>
-            <count>2</count>
+            <count>3</count>
             <item_version>0</item_version>
             <item>
+              <first>DSP</first>
+              <second>32</second>
+            </item>
+            <item>
               <first>FF</first>
-              <second>2672</second>
+              <second>2080</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>3290</second>
+              <second>2915</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_mp_mul_2_fu_66 (mp_mul_2)</first>
           <second>
-            <count>2</count>
+            <count>3</count>
             <item_version>0</item_version>
             <item>
+              <first>DSP</first>
+              <second>32</second>
+            </item>
+            <item>
               <first>FF</first>
-              <second>2687</second>
+              <second>2080</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>3294</second>
+              <second>2919</second>
             </item>
           </second>
         </item>
@@ -2626,91 +2634,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4174</second>
+              <second>3207</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>5482</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U927 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>165</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>50</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U928 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>165</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>50</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U929 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>165</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>50</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U930 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>165</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>50</second>
+              <second>4805</second>
             </item>
           </second>
         </item>
@@ -2737,7 +2669,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2760,7 +2692,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2783,7 +2715,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2992,7 +2924,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>45</count>
+        <count>33</count>
         <item_version>0</item_version>
         <item>
           <first>R_X_address0</first>
@@ -3017,7 +2949,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -3044,7 +2976,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -3098,7 +3030,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>65</second>
+              <second>61</second>
             </item>
           </second>
         </item>
@@ -3125,7 +3057,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -3152,7 +3084,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -3206,7 +3138,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -3233,7 +3165,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -3265,330 +3197,6 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_149_ce</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_149_p0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_149_p1</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_153_ce</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_153_p0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_153_p1</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_157_ce</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_157_p0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_157_p1</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_161_ce</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_161_p0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_161_p1</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>96</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>grp_rdc_mont_fu_113_ma_q0</first>
           <second>
             <count>5</count>
@@ -3611,7 +3219,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3638,7 +3246,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3665,7 +3273,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3692,7 +3300,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3746,7 +3354,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3773,7 +3381,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3827,7 +3435,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>25</second>
+              <second>21</second>
             </item>
           </second>
         </item>
@@ -3854,7 +3462,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>25</second>
+              <second>21</second>
             </item>
           </second>
         </item>
@@ -3908,7 +3516,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3935,7 +3543,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -3962,7 +3570,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>37</second>
+              <second>29</second>
             </item>
           </second>
         </item>
@@ -3989,7 +3597,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>37</second>
+              <second>29</second>
             </item>
           </second>
         </item>
@@ -4043,7 +3651,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -4070,7 +3678,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -4097,7 +3705,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -4124,7 +3732,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -4178,7 +3786,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -4205,7 +3813,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -4424,7 +4032,7 @@
         </item>
       </dp_register_resource>
       <dp_dsp_resource>
-        <count>14</count>
+        <count>10</count>
         <item_version>0</item_version>
         <item>
           <first>grp_fp2mul503_mont_73_74_1_Pipeline_VITIS_LOOP_170_1154_fu_130</first>
@@ -4496,37 +4104,9 @@
             <item_version>0</item_version>
           </second>
         </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U927</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U928</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U929</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U930</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
       </dp_dsp_resource>
       <dp_component_map class_id="39" tracking_level="0" version="0">
-        <count>14</count>
+        <count>10</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
           <first>grp_fp2mul503_mont_73_74_1_Pipeline_VITIS_LOOP_170_1154_fu_130 (fp2mul503_mont_73_74_1_Pipeline_VITIS_LOOP_170_1154)</first>
@@ -4607,42 +4187,6 @@
             <item_version>0</item_version>
             <item>19</item>
             <item>23</item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U927 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>50</item>
-            <item>55</item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U928 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>52</item>
-            <item>57</item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U929 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>54</item>
-            <item>59</item>
-          </second>
-        </item>
-        <item>
-          <first>mul_32ns_32ns_64_2_1_U930 (mul_32ns_32ns_64_2_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>56</item>
-            <item>61</item>
           </second>
         </item>
       </dp_component_map>

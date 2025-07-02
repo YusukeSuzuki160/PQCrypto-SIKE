@@ -46,7 +46,7 @@ newFuncRoot:0 %loop_index_i = alloca i32 1
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_8, i32 0, i32 0, void @empty_60, i32 0, i32 402, void @empty_44, void @empty_72, void @empty_60, i32 16, i32 16, i32 16, i32 16, void @empty_60, void @empty_60, i32 4294967295, i32 0, i32 0
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_88, i32 0, i32 0, void @empty_56, i32 0, i32 0, void @empty_71, void @empty_58, void @empty_56, i32 16, i32 16, i32 16, i32 16, void @empty_56, void @empty_56, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -198,10 +198,10 @@ load-store-loop.i.split:0 %gmem_addr = getelementptr i8 %gmem, i64 %ct_read
 
 <Node id="20" bw="2" op_0_bw="9">
 <![CDATA[
-load-store-loop.i.split:1 %empty_127 = trunc i9 %loop_index_i_load
+load-store-loop.i.split:1 %empty_129 = trunc i9 %loop_index_i_load
 
 ]]></Node>
-<StgValue><ssdm name="empty_127"/></StgValue>
+<StgValue><ssdm name="empty_129"/></StgValue>
 </operation>
 
 <operation id="18" st_id="1" stage="1" lat="1">
@@ -230,7 +230,7 @@ load-store-loop.i.split:5 %loop_index_i_udiv_cast = partselect i7 @_ssdm_op_Part
 
 <Node id="31" bw="0" op_0_bw="2" op_1_bw="0" op_2_bw="2" op_3_bw="0" op_4_bw="2" op_5_bw="0" op_6_bw="2" op_7_bw="0">
 <![CDATA[
-load-store-loop.i.split:12 %switch_ln0 = switch i2 %empty_127, void %.case.326, i2 0, void %.case.023, i2 1, void %.case.124, i2 2, void %.case.225
+load-store-loop.i.split:12 %switch_ln0 = switch i2 %empty_129, void %.case.324, i2 0, void %.case.021, i2 1, void %.case.122, i2 2, void %.case.223
 
 ]]></Node>
 <StgValue><ssdm name="switch_ln0"/></StgValue>
@@ -246,7 +246,7 @@ load-store-loop.i.split:12 %switch_ln0 = switch i2 %empty_127, void %.case.326, 
 
 <Node id="45" bw="0" op_0_bw="9" op_1_bw="9" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-.exit22:0 %store_ln0 = store i9 %empty, i9 %loop_index_i
+.exit20:0 %store_ln0 = store i9 %empty, i9 %loop_index_i
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -262,7 +262,7 @@ load-store-loop.i.split:12 %switch_ln0 = switch i2 %empty_127, void %.case.326, 
 
 <Node id="46" bw="0" op_0_bw="0">
 <![CDATA[
-.exit22:1 %br_ln0 = br void %load-store-loop.i
+.exit20:1 %br_ln0 = br void %load-store-loop.i
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -314,7 +314,7 @@ crypto_kem_enc.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-load-store-loop.i.split:2 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
+load-store-loop.i.split:2 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -344,10 +344,10 @@ load-store-loop.i.split:3 %speclooptripcount_ln0 = speclooptripcount void @_ssdm
 
 <Node id="25" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-load-store-loop.i.split:6 %empty_128 = add i7 %loop_index_i_udiv_cast, i7 6
+load-store-loop.i.split:6 %empty_130 = add i7 %loop_index_i_udiv_cast, i7 6
 
 ]]></Node>
-<StgValue><ssdm name="empty_128"/></StgValue>
+<StgValue><ssdm name="empty_130"/></StgValue>
 </operation>
 
 <operation id="26" st_id="3" stage="1" lat="1">
@@ -359,7 +359,7 @@ load-store-loop.i.split:6 %empty_128 = add i7 %loop_index_i_udiv_cast, i7 6
 
 <Node id="26" bw="64" op_0_bw="7">
 <![CDATA[
-load-store-loop.i.split:7 %p_cast2 = zext i7 %empty_128
+load-store-loop.i.split:7 %p_cast2 = zext i7 %empty_130
 
 ]]></Node>
 <StgValue><ssdm name="p_cast2"/></StgValue>
@@ -429,13 +429,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="-2"/>
+<or_exp><and_exp><literal name="empty_129" val="-2"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="33" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.225:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_2_addr
+.case.223:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln65"/></StgValue>
@@ -445,13 +445,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="-2"/>
+<or_exp><and_exp><literal name="empty_129" val="-2"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="34" bw="0" op_0_bw="0">
 <![CDATA[
-.case.225:1 %br_ln0 = br void %.exit22
+.case.223:1 %br_ln0 = br void %.exit20
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -461,13 +461,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="1"/>
+<or_exp><and_exp><literal name="empty_129" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="36" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.124:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_1_addr
+.case.122:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln65"/></StgValue>
@@ -477,13 +477,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="1"/>
+<or_exp><and_exp><literal name="empty_129" val="1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="37" bw="0" op_0_bw="0">
 <![CDATA[
-.case.124:1 %br_ln0 = br void %.exit22
+.case.122:1 %br_ln0 = br void %.exit20
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -493,13 +493,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="0"/>
+<or_exp><and_exp><literal name="empty_129" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="39" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.023:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_addr
+.case.021:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln65"/></StgValue>
@@ -509,13 +509,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="0"/>
+<or_exp><and_exp><literal name="empty_129" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="40" bw="0" op_0_bw="0">
 <![CDATA[
-.case.023:1 %br_ln0 = br void %.exit22
+.case.021:1 %br_ln0 = br void %.exit20
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -525,13 +525,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="-1"/>
+<or_exp><and_exp><literal name="empty_129" val="-1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="42" bw="0" op_0_bw="8" op_1_bw="7">
 <![CDATA[
-.case.326:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_3_addr
+.case.324:0 %store_ln65 = store i8 %gmem_addr_read, i7 %temp_3_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln65"/></StgValue>
@@ -541,13 +541,13 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_127" val="-1"/>
+<or_exp><and_exp><literal name="empty_129" val="-1"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="43" bw="0" op_0_bw="0">
 <![CDATA[
-.case.326:1 %br_ln0 = br void %.exit22
+.case.324:1 %br_ln0 = br void %.exit20
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>

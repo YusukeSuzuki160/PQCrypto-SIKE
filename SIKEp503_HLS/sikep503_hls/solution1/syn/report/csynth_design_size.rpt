@@ -6,30 +6,30 @@
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                        | Instructions | Description                                                                            |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                             | 498,266 *    | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                             | 498,179 *    | After all functions are compiled and linked into a single design                       |
 |               |                             |              |                                                                                        |
 | Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                  | 463,420 *    | user unroll pragmas are applied                                                        |
-|               | (2) simplification          | 414,133 *    | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                  | 365,270 *    | user inline pragmas are applied                                                        |
-|               | (4) simplification          | 345,307 *    | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                  | 463,416 *    | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 414,144 *    | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 365,278 *    | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 345,315 *    | simplification of applied user inline pragmas                                          |
 |               |                             |              |                                                                                        |
 | Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition         | 333,390 *    | user array partition pragmas are applied                                               |
-|               | (2) simplification          | 333,390 *    | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate  | 333,390 *    | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape           | 333,390 *    | apply array reshape pragmas                                                            |
-|               | (5) access patterns         | 345,680 *    | array access pattern optmizations                                                      |
+|               | (1) array partition         | 333,391 *    | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 333,391 *    | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 333,391 *    | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 333,391 *    | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 345,677 *    | array access pattern optmizations                                                      |
 |               |                             |              |                                                                                        |
 | Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification     | 345,656 *    | loop and instruction simplification                                                    |
-|               | (2) parallelization         | 334,350 *    | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition         | 338,628 *    | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification          | 337,467 *    | simplification of design after performance transformations                             |
+|               | (1) loop simplification     | 345,655 *    | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 334,349 *    | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 338,627 *    | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 337,466 *    | simplification of design after performance transformations                             |
 |               |                             |              |                                                                                        |
 | HW Transforms |                             |              | After hardware transfomations                                                          |
-|               | (1) lowering                | 338,732 *    | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations           | 363,535 *    | high level synthesis optimizations                                                     |
+|               | (1) lowering                | 338,734 *    | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 363,537 *    | high level synthesis optimizations                                                     |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
     * - Exceeded design size warning message threshold
 
@@ -37,20 +37,20 @@
 +---------------------------------+----------------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
 | Function                        | Location                   | Compile/Link        | Unroll/Inline       | Array/Struct        | Performance         | HW Transforms       |
 +---------------------------------+----------------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
-| + sikep503_kem_enc_hw           | sikep503_kem_enc_hw.cpp:19 | 498,266 *           | 345,307 *           | 345,680 *           | 337,467 *           | 363,535 *           |
-|  + crypto_kem_enc               | sike.c:35                  | 498,211             |                     |                     |                     |                     |
+| + sikep503_kem_enc_hw           | sikep503_kem_enc_hw.cpp:19 | 498,179 *           | 345,315 *           | 345,677 *           | 337,466 *           | 363,537 *           |
+|  + crypto_kem_enc               | sike.c:35                  | 498,165             |                     |                     |                     |                     |
 |   + randombytes                 | random.c:21                |     27              |                     |                     |                     |                     |
 |      lcg_rand                   | random.c:15                |      6              |                     |                     |                     |                     |
-|   + cshake256_simple            | fips202.c:680              |  7,641 (3 calls)    |                     |                     |                     |                     |
-|    + cshake256_simple_absorb    | fips202.c:649              |  3,867 (3 calls)    |                     |                     |                     |                     |
+|   + cshake256_simple            | fips202.c:636              |  7,593 (3 calls)    |                     |                     |                     |                     |
+|    + cshake256_simple_absorb    | fips202.c:605              |  3,819 (3 calls)    |                     |                     |                     |                     |
 |       KeccakF1600_StatePermute  | fips202.c:71               |  1,701 (3 calls)    |                     |                     |                     |                     |
-|     + keccak_absorb             | fips202.c:409              |  2,055 (3 calls)    |                     |                     |                     |                     |
+|     + keccak_absorb             | fips202.c:385              |  2,007 (3 calls)    |                     |                     |                     |                     |
 |        load64                   | fips202.c:22               |     48 (3 calls)    |                     |                     |                     |                     |
 |        KeccakF1600_StatePermute | fips202.c:71               |  1,701 (3 calls)    |                     |                     |                     |                     |
-|    + keccak_squeezeblocks       | fips202.c:470              |  3,648 (6 calls)    |                     |                     |                     |                     |
+|    + keccak_squeezeblocks       | fips202.c:427              |  3,648 (6 calls)    |                     |                     |                     |                     |
 |       KeccakF1600_StatePermute  | fips202.c:71               |  3,402 (6 calls)    |                     |                     |                     |                     |
 |       store64                   | fips202.c:33               |     90 (6 calls)    |                     |                     |                     |                     |
-|   + EphemeralKeyGeneration_A    | sidh.c:83                  | 256,980             |                     |                     |                     |                     |
+|   + EphemeralKeyGeneration_A    | sidh.c:83                  | 256,981             |                     |                     |                     |                     |
 |    + init_basis                 | sidh.c:25                  |    220 (2 calls)    |                     |                     |                     |                     |
 |       fpcopy503                 | fpx.c:10                   |    150 (10 calls)   |                     |                     |                     |                     |
 |       fpzero503                 | fpx.c:19                   |     24 (2 calls)    |                     |                     |                     |                     |
@@ -374,7 +374,7 @@
 |          is_digit_lessthan_ct   | config.h:103               |    144 (18 calls)   |                     |                     |                     |                     |
 |        + is_digit_zero_ct       | config.h:98                |     48 (6 calls)    |                     |                     |                     |                     |
 |           is_digit_nonzero_ct   | config.h:93                |     30 (6 calls)    |                     |                     |                     |                     |
-|   + EphemeralSecretAgreement_A  | sidh.c:244                 | 233,495             |                     |                     |                     |                     |
+|   + EphemeralSecretAgreement_A  | sidh.c:253                 | 233,496             |                     |                     |                     |                     |
 |    + fp2_decode                 | sidh.c:49                  |  4,233 (3 calls)    |                     |                     |                     |                     |
 |     + to_fp2mont                | fpx.c:328                  |  4,119 (3 calls)    |                     |                     |                     |                     |
 |      + to_mont                  | fpx.c:28                   |  4,086 (6 calls)    |                     |                     |                     |                     |
@@ -822,9 +822,9 @@
 |          is_digit_lessthan_ct   | config.h:103               |     48 (6 calls)    |                     |                     |                     |                     |
 |        + is_digit_zero_ct       | config.h:98                |     16 (2 calls)    |                     |                     |                     |                     |
 |           is_digit_nonzero_ct   | config.h:93                |     10 (2 calls)    |                     |                     |                     |                     |
-|  + cshake256_simple             | fips202.c:680              |                     |  6,960 (3 calls)    |  4,836 (3 calls)    |  5,046 (3 calls)    |  5,093 (3 calls)    |
+|  + cshake256_simple             | fips202.c:636              |                     |  6,960 (3 calls)    |  4,835 (3 calls)    |  5,045 (3 calls)    |  5,093 (3 calls)    |
 |     KeccakF1600_StatePermute    | fips202.c:71               |                     |  6,432 (12 calls)   |  4,496 (8 calls)    |  4,296 (8 calls)    |  4,336 (8 calls)    |
-|  + EphemeralKeyGeneration_A     | sidh.c:83                  |                     | 174,463             | 175,836             | 171,154             | 184,813             |
+|  + EphemeralKeyGeneration_A     | sidh.c:83                  |                     | 174,465             | 175,837             | 171,155             | 184,815             |
 |     fpadd503                    | fp_generic.c:16            |                     |  1,716 (22 calls)   |  1,738 (22 calls)   |  1,716 (22 calls)   |  2,042 (22 calls)   |
 |   + LADDER3PT                   | ec_isogeny.c:286           |                     | 15,610              | 15,743              | 15,664              | 16,997              |
 |      fpadd503                   | fp_generic.c:16            |                     |    936 (12 calls)   |    948 (12 calls)   |  1,090 (12 calls)   |  1,234 (12 calls)   |
@@ -876,8 +876,8 @@
 |      mp_mul                     | fp_generic.c:137           |                     |    906 (6 calls)    |    960 (6 calls)    |    906 (6 calls)    |    990 (6 calls)    |
 |    + rdc_mont                   | fp_generic.c:174           |                     |  2,022 (6 calls)    |  1,992 (6 calls)    |  1,956 (6 calls)    |  2,091 (6 calls)    |
 |       is_digit_lessthan_ct      | config.h:103               |                     |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |
-|  + EphemeralSecretAgreement_A   | sidh.c:244                 |                     | 163,798             | 164,914             | 161,064             | 173,433             |
-|   + fp2_decode                  | sidh.c:49                  |                     |  3,090 (3 calls)    |  3,120 (3 calls)    |  3,030 (3 calls)    |  3,420 (3 calls)    |
+|  + EphemeralSecretAgreement_A   | sidh.c:253                 |                     | 163,800             | 164,912             | 161,062             | 173,433             |
+|   + fp2_decode                  | sidh.c:49                  |                     |  3,090 (3 calls)    |  3,114 (3 calls)    |  3,024 (3 calls)    |  3,416 (3 calls)    |
 |      mp_mul                     | fp_generic.c:137           |                     |    906 (6 calls)    |    960 (6 calls)    |    906 (6 calls)    |  1,026 (6 calls)    |
 |    + rdc_mont                   | fp_generic.c:174           |                     |  2,022 (6 calls)    |  1,992 (6 calls)    |  1,956 (6 calls)    |  2,142 (6 calls)    |
 |       is_digit_lessthan_ct      | config.h:103               |                     |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |    768 (96 calls)   |

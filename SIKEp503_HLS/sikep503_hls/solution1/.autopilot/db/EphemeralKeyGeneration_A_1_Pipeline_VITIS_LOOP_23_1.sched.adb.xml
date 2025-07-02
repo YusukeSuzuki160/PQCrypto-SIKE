@@ -189,7 +189,7 @@ for.inc.i25.i.split:3 %phiQ_X_addr = getelementptr i64 %phiQ_X, i64 0, i64 %zext
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i25.i.split:4 %specpipeline_ln21 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
+for.inc.i25.i.split:4 %specpipeline_ln21 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln21"/></StgValue>
@@ -221,7 +221,7 @@ for.inc.i25.i.split:5 %speclooptripcount_ln21 = speclooptripcount void @_ssdm_op
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i25.i.split:6 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_82
+for.inc.i25.i.split:6 %specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_28
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln23"/></StgValue>

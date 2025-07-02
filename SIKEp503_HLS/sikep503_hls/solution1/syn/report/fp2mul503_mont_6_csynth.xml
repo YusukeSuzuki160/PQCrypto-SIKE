@@ -7,7 +7,7 @@
 <UserAssignments>
 <unit>ns</unit>
 <ProductFamily>zynq</ProductFamily>
-<Part>xc7z020-clg484-1</Part>
+<Part>xc7z045-ffg900-2</Part>
 <TopModelName>fp2mul503_mont_6</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
@@ -18,18 +18,18 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.040</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>942</Best-caseLatency>
-<Average-caseLatency>1228</Average-caseLatency>
-<Worst-caseLatency>1440</Worst-caseLatency>
-<Best-caseRealTimeLatency>9.420 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>12.280 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>14.400 us</Worst-caseRealTimeLatency>
-<Interval-min>942</Interval-min>
-<Interval-max>1440</Interval-max>
+<Best-caseLatency>733</Best-caseLatency>
+<Average-caseLatency>1003</Average-caseLatency>
+<Worst-caseLatency>1215</Worst-caseLatency>
+<Best-caseRealTimeLatency>7.330 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>10.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>12.150 us</Worst-caseRealTimeLatency>
+<Interval-min>733</Interval-min>
+<Interval-max>1215</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -41,16 +41,16 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>12</BRAM_18K>
-<DSP>48</DSP>
-<FF>12419</FF>
-<LUT>16997</LUT>
+<DSP>96</DSP>
+<FF>8582</FF>
+<LUT>14901</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>280</BRAM_18K>
-<DSP>220</DSP>
-<FF>106400</FF>
-<LUT>53200</LUT>
+<BRAM_18K>1090</BRAM_18K>
+<DSP>900</DSP>
+<FF>437200</FF>
+<LUT>218600</LUT>
 <URAM>0</URAM>
 </AvailableResources>
 </AreaEstimates>

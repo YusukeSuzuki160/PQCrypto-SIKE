@@ -1445,15 +1445,21 @@ void random_mod_order_B(unsigned char *random_digits)
 
 int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA)
 {
-
-
-    point_proj_t R, phiP = {0}, phiQ = {0}, phiR = {0}, pts[7];
-    f2elm_t XPA, XQA, XRA, coeff[3], A24plus = {0}, C24 = {0}, A = {0};
+#pragma HLS ALLOCATION instances = fp2mul503_mont limit = 1 function
+#pragma HLS ALLOCATION instances = fp2add503 limit = 1 function
+#pragma HLS ALLOCATION instances = fp2sub503 limit = 1 function
+#pragma HLS ALLOCATION instances = eval_4_isog limit = 1 function
+#pragma HLS ALLOCATION instances = eval_3_isog limit = 1 function
+#pragma HLS ALLOCATION instances = xDBLe limit = 1 function
+#pragma HLS ALLOCATION instances = xTPLe limit = 1 function
+ point_proj_t R, phiP = {0}, phiQ = {0}, phiR = {0}, pts[7];
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
+ f2elm_t XPA, XQA, XRA, coeff[3], A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[7], npts = 0, ii = 0;
 
     printf("DEBUG: Starting EphemeralKeyGeneration_A\n");
     printf("DEBUG: Input PrivateKeyA (first 16 bytes): ");
-    VITIS_LOOP_93_1: for (i = 0; i < 16; i++)
+    VITIS_LOOP_99_1: for (i = 0; i < 16; i++)
         printf("%02x ", PrivateKeyA[i]);
     printf("\n");
 
@@ -1474,11 +1480,12 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
 
 
     index = 0;
-    VITIS_LOOP_114_2: for (row = 1; row < 125; row++)
+    VITIS_LOOP_120_2: for (row = 1; row < 125; row++)
     {
-        VITIS_LOOP_116_3: for (int j = 0; j < 125 - row; j++)
+#pragma HLS unroll off
+ VITIS_LOOP_123_3: for (int j = 0; j < 125 - row; j++)
         {
-#pragma HLS loop_tripcount min = 0 max = 125 avg = 125 / 2
+#pragma HLS unroll off
  if (index < 125 - row)
             {
                 fp2copy503(R->X, pts[npts]->X);
@@ -1490,7 +1497,7 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
             }
         }
         get_4_isog(R, A24plus, C24, coeff);
-        VITIS_LOOP_130_4: for (i = 0; i < npts; i++)
+        VITIS_LOOP_137_4: for (i = 0; i < npts; i++)
         {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  eval_4_isog(pts[i], coeff);
@@ -1521,7 +1528,7 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     fp2_encode(phiR->X, PublicKeyA + 2 * 2 * ((503 + 7) / 8));
 
     printf("DEBUG: Generated public key (first 16 bytes): ");
-    VITIS_LOOP_161_5: for (i = 0; i < 16; i++)
+    VITIS_LOOP_168_5: for (i = 0; i < 16; i++)
         printf("%02x ", PublicKeyA[i]);
     printf("\n");
     printf("DEBUG: Finished EphemeralKeyGeneration_A\n");
@@ -1534,7 +1541,8 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
 
 
     point_proj_t R, phiP = {0}, phiQ = {0}, phiR = {0}, pts[8];
-    f2elm_t XPB, XQB, XRB, coeff[3], A24plus = {0}, A24minus = {0}, A = {0};
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
+ f2elm_t XPB, XQB, XRB, coeff[3], A24plus = {0}, A24minus = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[8], npts = 0, ii = 0;
 
 
@@ -1555,11 +1563,12 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
 
 
     index = 0;
-    VITIS_LOOP_195_1: for (row = 1; row < 159; row++)
+    VITIS_LOOP_203_1: for (row = 1; row < 159; row++)
     {
-        VITIS_LOOP_197_2: for (int j = 0; j < 159 - row; j++)
+#pragma HLS unroll off
+ VITIS_LOOP_206_2: for (int j = 0; j < 159 - row; j++)
         {
-#pragma HLS loop_tripcount min = 0 max = 159 avg = 159 / 2
+#pragma HLS unroll off
  if (index < 159 - row)
             {
                 fp2copy503(R->X, pts[npts]->X);
@@ -1571,7 +1580,7 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
             }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
-        VITIS_LOOP_211_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_220_3: for (i = 0; i < npts; i++)
         {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  eval_3_isog(pts[i], coeff);
@@ -1611,10 +1620,11 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
 
 
     point_proj_t R, pts[7];
-    f2elm_t coeff[3], PKB[3], jinv;
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
+ f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[7], npts = 0, ii = 0;
-# 266 "src/sidh.c"
+# 276 "src/sidh.c"
     fp2_decode(PublicKeyB, PKB[0]);
     fp2_decode(PublicKeyB + 2 * ((503 + 7) / 8), PKB[1]);
     fp2_decode(PublicKeyB + 2 * 2 * ((503 + 7) / 8), PKB[2]);
@@ -1631,11 +1641,12 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
 
 
     index = 0;
-    VITIS_LOOP_282_1: for (row = 1; row < 125; row++)
+    VITIS_LOOP_292_1: for (row = 1; row < 125; row++)
     {
-        VITIS_LOOP_284_2: for (int j = 0; j < 125 - row; j++)
+#pragma HLS unroll off
+ VITIS_LOOP_295_2: for (int j = 0; j < 125 - row; j++)
         {
-#pragma HLS loop_tripcount min = 0 max = 125 avg = 125 / 2
+#pragma HLS unroll off
  if (index < 125 - row)
             {
                 fp2copy503(R->X, pts[npts]->X);
@@ -1647,7 +1658,7 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
             }
         }
         get_4_isog(R, A24plus, C24, coeff);
-        VITIS_LOOP_298_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_309_3: for (i = 0; i < npts; i++)
         {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  eval_4_isog(pts[i], coeff);
@@ -1681,7 +1692,8 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
 
 
     point_proj_t R, pts[8];
-    f2elm_t coeff[3], PKB[3], jinv;
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
+ f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, A24minus = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[8], npts = 0, ii = 0;
 
@@ -1701,11 +1713,12 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
 
 
     index = 0;
-    VITIS_LOOP_352_1: for (row = 1; row < 159; row++)
+    VITIS_LOOP_364_1: for (row = 1; row < 159; row++)
     {
-        VITIS_LOOP_354_2: for (int j = 0; j < 159 - row; j++)
+#pragma HLS unroll off
+ VITIS_LOOP_367_2: for (int j = 0; j < 159 - row; j++)
         {
-#pragma HLS loop_tripcount min = 1 max = 159 avg = 159 / 2
+#pragma HLS unroll off
  if (index < 159 - row)
             {
                 fp2copy503(R->X, pts[npts]->X);
@@ -1717,7 +1730,7 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
             }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
-        VITIS_LOOP_368_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_381_3: for (i = 0; i < npts; i++)
         {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  eval_3_isog(pts[i], coeff);

@@ -1485,32 +1485,16 @@ extern "C"
 #line 68 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE TOP name=sikep503_kem_enc_hw
 # 23 "src/sikep503_kem_enc_hw.cpp"
+;
 
+#pragma HLS INTERFACE m_axi port=ct offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=pk offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=ss offset=slave bundle=gmem
+#pragma HLS INTERFACE s_axilite port=ct bundle=control
+#pragma HLS INTERFACE s_axilite port=pk bundle=control
+#pragma HLS INTERFACE s_axilite port=ss bundle=control
+#pragma HLS INTERFACE s_axilite port=return bundle=control
 
-        printf("Input Public Key (first 16 bytes): ");
-        VITIS_LOOP_26_1: for (int i = 0; i < 16; i++)
-        {
-            printf("%02x ", pk[i]);
-        }
-        printf("\n");
-
-
-        crypto_kem_enc(ct, ss, pk);
-
-
-        printf("Output Ciphertext (first 16 bytes): ");
-        VITIS_LOOP_37_2: for (int i = 0; i < 16; i++)
-        {
-            printf("%02x ", ct[i]);
-        }
-        printf("\n");
-
-
-        printf("Output Shared Secret (first 16 bytes): ");
-        VITIS_LOOP_45_3: for (int i = 0; i < 16; i++)
-        {
-            printf("%02x ", ss[i]);
-        }
-        printf("\n");
+ crypto_kem_enc(ct, ss, pk);
     }
 }

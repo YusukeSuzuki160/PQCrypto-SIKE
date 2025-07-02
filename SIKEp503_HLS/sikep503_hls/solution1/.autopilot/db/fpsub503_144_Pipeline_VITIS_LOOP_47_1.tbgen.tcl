@@ -22,9 +22,9 @@ dict set ap_memory_interface_dict b { MEM_WIDTH 64 MEM_SIZE 896 MASTER_TYPE BRAM
 dict set ap_memory_interface_dict c { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ zext_ln48_27 int 7 regular  }
-	{ a int 64 regular {array 112 { 1 3 } 1 1 }  }
+	{ a int 64 regular {array 112 { 1 } 1 1 }  }
 	{ zext_ln48_26 int 7 regular  }
-	{ b int 64 regular {array 112 { 1 3 } 1 1 }  }
+	{ b int 64 regular {array 112 { 1 } 1 1 }  }
 	{ zext_ln48_25 int 4 regular  }
 	{ c int 64 regular {array 16 { 0 3 } 0 1 }  }
 	{ borrow_out int 1 regular {pointer 1}  }

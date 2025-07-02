@@ -24,16 +24,18 @@
 `define AUTOTB_TVIN_gmem  "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvin_gmem.dat"
 `define AUTOTB_TVIN_ct  "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvin_ct.dat"
 `define AUTOTB_TVIN_pk  "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvin_pk.dat"
+`define AUTOTB_TVIN_ss  "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvin_ss.dat"
 `define AUTOTB_TVIN_gmem_out_wrapc  "../tv/rtldatafile/rtl.sikep503_kem_enc_hw.autotvin_gmem.dat"
 `define AUTOTB_TVIN_ct_out_wrapc  "../tv/rtldatafile/rtl.sikep503_kem_enc_hw.autotvin_ct.dat"
 `define AUTOTB_TVIN_pk_out_wrapc  "../tv/rtldatafile/rtl.sikep503_kem_enc_hw.autotvin_pk.dat"
+`define AUTOTB_TVIN_ss_out_wrapc  "../tv/rtldatafile/rtl.sikep503_kem_enc_hw.autotvin_ss.dat"
 `define AUTOTB_TVOUT_gmem  "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvout_gmem.dat"
 `define AUTOTB_TVOUT_gmem_out_wrapc  "../tv/rtldatafile/rtl.sikep503_kem_enc_hw.autotvout_gmem.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = -1;
+parameter LATENCY_ESTIMATION = 2147483647;
 parameter LENGTH_ct = 1;
 parameter LENGTH_gmem = 796;
 parameter LENGTH_pk = 1;
@@ -448,6 +450,9 @@ reg [31:0] size_ct_backup;
 reg end_pk;
 reg [31:0] size_pk;
 reg [31:0] size_pk_backup;
+reg end_ss;
+reg [31:0] size_ss;
+reg [31:0] size_ss_backup;
 
 initial begin : initial_process
     integer proc_rand;

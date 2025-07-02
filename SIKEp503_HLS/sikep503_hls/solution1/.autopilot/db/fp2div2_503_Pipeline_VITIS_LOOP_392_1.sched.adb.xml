@@ -357,7 +357,7 @@ fpdiv2_503.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.i.split:1 %specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
+for.inc.i.i.split:1 %specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln390"/></StgValue>
@@ -387,7 +387,7 @@ for.inc.i.i.split:2 %speclooptripcount_ln390 = speclooptripcount void @_ssdm_op_
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.i.split:3 %specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_89
+for.inc.i.i.split:3 %specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_90
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln392"/></StgValue>

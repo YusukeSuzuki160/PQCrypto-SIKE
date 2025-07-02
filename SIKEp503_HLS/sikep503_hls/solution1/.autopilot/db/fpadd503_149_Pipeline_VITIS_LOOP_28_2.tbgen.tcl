@@ -20,7 +20,7 @@ set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict c { MEM_WIDTH 64 MEM_SIZE 896 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ zext_ln24_28 int 7 regular  }
-	{ c int 64 regular {array 112 { 0 1 } 1 1 }  }
+	{ c int 64 regular {array 112 { 2 } 1 1 }  }
 	{ carry_205_out int 1 regular {pointer 1}  }
 }
 set hasAXIMCache 0
@@ -31,7 +31,7 @@ set C_modelArgMapList {[
  	{ "Name" : "c", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
  	{ "Name" : "carry_205_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 16
+set portNum 14
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -44,9 +44,7 @@ set portList {
 	{ c_ce0 sc_out sc_logic 1 signal 1 } 
 	{ c_we0 sc_out sc_logic 1 signal 1 } 
 	{ c_d0 sc_out sc_lv 64 signal 1 } 
-	{ c_address1 sc_out sc_lv 7 signal 1 } 
-	{ c_ce1 sc_out sc_logic 1 signal 1 } 
-	{ c_q1 sc_in sc_lv 64 signal 1 } 
+	{ c_q0 sc_in sc_lv 64 signal 1 } 
 	{ carry_205_out sc_out sc_lv 1 signal 2 } 
 	{ carry_205_out_ap_vld sc_out sc_logic 1 outvld 2 } 
 }
@@ -62,9 +60,7 @@ set NewPortList {[
  	{ "name": "c_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "ce0" }} , 
  	{ "name": "c_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "we0" }} , 
  	{ "name": "c_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "d0" }} , 
- 	{ "name": "c_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "c", "role": "address1" }} , 
- 	{ "name": "c_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "ce1" }} , 
- 	{ "name": "c_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "q1" }} , 
+ 	{ "name": "c_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "q0" }} , 
  	{ "name": "carry_205_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "carry_205_out", "role": "default" }} , 
  	{ "name": "carry_205_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "carry_205_out", "role": "ap_vld" }}  ]}
 
@@ -75,7 +71,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "11", "EstimateLatencyMax" : "11",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "20", "EstimateLatencyMax" : "20",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -90,7 +86,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "p503x2_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_28_2", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.p503x2_1_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
@@ -98,15 +94,15 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	fpadd503_149_Pipeline_VITIS_LOOP_28_2 {
 		zext_ln24_28 {Type I LastRead 0 FirstWrite -1}
-		c {Type IO LastRead 0 FirstWrite 2}
-		carry_205_out {Type O LastRead -1 FirstWrite 1}
+		c {Type IO LastRead 0 FirstWrite 3}
+		carry_205_out {Type O LastRead -1 FirstWrite 2}
 		p503x2_1 {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "11", "Max" : "11"}
-	, {"Name" : "Interval", "Min" : "11", "Max" : "11"}
+	{"Name" : "Latency", "Min" : "20", "Max" : "20"}
+	, {"Name" : "Interval", "Min" : "20", "Max" : "20"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -115,6 +111,6 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	zext_ln24_28 { ap_none {  { zext_ln24_28 in_data 0 7 } } }
-	c { ap_memory {  { c_address0 mem_address 1 7 }  { c_ce0 mem_ce 1 1 }  { c_we0 mem_we 1 1 }  { c_d0 mem_din 1 64 }  { c_address1 MemPortADDR2 1 7 }  { c_ce1 MemPortCE2 1 1 }  { c_q1 MemPortDOUT2 0 64 } } }
+	c { ap_memory {  { c_address0 mem_address 1 7 }  { c_ce0 mem_ce 1 1 }  { c_we0 mem_we 1 1 }  { c_d0 mem_din 1 64 }  { c_q0 mem_dout 0 64 } } }
 	carry_205_out { ap_vld {  { carry_205_out out_data 1 1 }  { carry_205_out_ap_vld out_vld 1 1 } } }
 }

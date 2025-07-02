@@ -3,8 +3,8 @@
 # SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
 # IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
 # SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
-# Start of session at: Tue Jun  3 13:47:48 2025
-# Process ID         : 3573648
+# Start of session at: Tue Jul  1 17:36:14 2025
+# Process ID         : 3049506
 # Current directory  : /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/sim/verilog
 # Command line       : xsim -mode tcl -source {xsim.dir/sikep503_kem_enc_hw/xsim_script.tcl}
 # Log file           : /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/sim/verilog/xsim.log
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13600K
-# CPU Frequency      : 5100.000 MHz
+# CPU Frequency      : 5087.971 MHz
 # CPU Physical cores : 14
 # CPU Logical cores  : 20
 # Host memory        : 100993 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 109583 MB
-# Available Virtual  : 86431 MB
+# Available Virtual  : 85810 MB
 #-----------------------------------------------------------
 source xsim.dir/sikep503_kem_enc_hw/xsim_script.tcl
 source sikep503_kem_enc_hw.tcl

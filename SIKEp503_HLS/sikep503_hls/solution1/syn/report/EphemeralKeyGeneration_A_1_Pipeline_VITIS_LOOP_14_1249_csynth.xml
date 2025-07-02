@@ -7,7 +7,7 @@
 <UserAssignments>
 <unit>ns</unit>
 <ProductFamily>zynq</ProductFamily>
-<Part>xc7z020-clg484-1</Part>
+<Part>xc7z045-ffg900-2</Part>
 <TopModelName>EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_14_1249</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
@@ -18,7 +18,7 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.576</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.526</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:12~src/sidh.c:105</SourceLocation>
+<SourceLocation>src/fpx.c:12~src/sidh.c:111</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_14_1>
 <Name>VITIS_LOOP_14_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:14~src/sidh.c:105</SourceLocation>
+<SourceLocation>src/fpx.c:14~src/sidh.c:111</SourceLocation>
 </VITIS_LOOP_14_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -62,15 +62,15 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <FF>75</FF>
-<LUT>72</LUT>
+<LUT>59</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>280</BRAM_18K>
-<DSP>220</DSP>
-<FF>106400</FF>
-<LUT>53200</LUT>
+<BRAM_18K>1090</BRAM_18K>
+<DSP>900</DSP>
+<FF>437200</FF>
+<LUT>218600</LUT>
 <URAM>0</URAM>
 </AvailableResources>
 </AreaEstimates>

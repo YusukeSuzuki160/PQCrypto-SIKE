@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_1_Pipeline_4'
 ================================================================
-* Date:           Tue Jun  3 14:09:31 2025
+* Date:           Wed Jul  2 14:05:35 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.622 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  5.091 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -83,22 +83,22 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 6.62>
+State 1 <SV = 0> <Delay = 5.09>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%empty = alloca i32 1"   --->   Operation 4 'alloca' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (1.58ns)   --->   "%store_ln0 = store i5 0, i5 %empty"   --->   Operation 5 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (1.29ns)   --->   "%store_ln0 = store i5 0, i5 %empty"   --->   Operation 5 'store' 'store_ln0' <Predicate = true> <Delay = 1.29>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop.i.i7.i"   --->   Operation 6 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_load = load i5 %empty"   --->   Operation 7 'load' 'p_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (1.78ns)   --->   "%exitcond_i_i6_i1 = icmp_eq  i5 %p_load, i5 16"   --->   Operation 8 'icmp' 'exitcond_i_i6_i1' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 9 [1/1] (1.78ns)   --->   "%empty_182 = add i5 %p_load, i5 1"   --->   Operation 9 'add' 'empty_182' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond_i_i6_i1, void %memset.loop.i.i7.i.split, void %to_fp2mont.exit.exitStub"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_cast4 = zext i5 %p_load"   --->   Operation 11 'zext' 'p_cast4' <Predicate = (!exitcond_i_i6_i1)> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60"   --->   Operation 12 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond_i_i6_i1)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 13 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!exitcond_i_i6_i1)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%temp_addr = getelementptr i64 %temp, i64 0, i64 %p_cast4"   --->   Operation 14 'getelementptr' 'temp_addr' <Predicate = (!exitcond_i_i6_i1)> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln0 = store i64 0, i4 %temp_addr"   --->   Operation 15 'store' 'store_ln0' <Predicate = (!exitcond_i_i6_i1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 16 [1/1] (1.58ns)   --->   "%store_ln0 = store i5 %empty_182, i5 %empty"   --->   Operation 16 'store' 'store_ln0' <Predicate = (!exitcond_i_i6_i1)> <Delay = 1.58>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop.i.i7.i"   --->   Operation 17 'br' 'br_ln0' <Predicate = (!exitcond_i_i6_i1)> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 18 'ret' 'ret_ln0' <Predicate = (exitcond_i_i6_i1)> <Delay = 1.58>
+ST_1 : Operation 8 [1/1] (1.02ns)   --->   "%exitcond_i_i6_i2 = icmp_eq  i5 %p_load, i5 16"   --->   Operation 8 'icmp' 'exitcond_i_i6_i2' <Predicate = true> <Delay = 1.02> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (1.02ns)   --->   "%empty_184 = add i5 %p_load, i5 1"   --->   Operation 9 'add' 'empty_184' <Predicate = true> <Delay = 1.02> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond_i_i6_i2, void %memset.loop.i.i7.i.split, void %to_fp2mont.exit.exitStub"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_cast4 = zext i5 %p_load"   --->   Operation 11 'zext' 'p_cast4' <Predicate = (!exitcond_i_i6_i2)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56"   --->   Operation 12 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond_i_i6_i2)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 13 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!exitcond_i_i6_i2)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%temp_addr = getelementptr i64 %temp, i64 0, i64 %p_cast4"   --->   Operation 14 'getelementptr' 'temp_addr' <Predicate = (!exitcond_i_i6_i2)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln0 = store i64 0, i4 %temp_addr"   --->   Operation 15 'store' 'store_ln0' <Predicate = (!exitcond_i_i6_i2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 16 [1/1] (1.29ns)   --->   "%store_ln0 = store i5 %empty_184, i5 %empty"   --->   Operation 16 'store' 'store_ln0' <Predicate = (!exitcond_i_i6_i2)> <Delay = 1.29>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop.i.i7.i"   --->   Operation 17 'br' 'br_ln0' <Predicate = (!exitcond_i_i6_i2)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 18 'ret' 'ret_ln0' <Predicate = (exitcond_i_i6_i2)> <Delay = 1.29>
 
 
 ============================================================
@@ -123,8 +123,8 @@ empty                 (alloca           ) [ 01]
 store_ln0             (store            ) [ 00]
 br_ln0                (br               ) [ 00]
 p_load                (load             ) [ 00]
-exitcond_i_i6_i1      (icmp             ) [ 01]
-empty_182             (add              ) [ 00]
+exitcond_i_i6_i2      (icmp             ) [ 01]
+empty_184             (add              ) [ 00]
 br_ln0                (br               ) [ 00]
 p_cast4               (zext             ) [ 00]
 specpipeline_ln0      (specpipeline     ) [ 00]
@@ -217,7 +217,7 @@ ret_ln0               (ret              ) [ 00]
 <pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_60"/></StgValue>
+<StgValue><ssdm name="empty_56"/></StgValue>
 </bind>
 </comp>
 
@@ -308,7 +308,7 @@ ret_ln0               (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="exitcond_i_i6_i1_fu_50">
+<comp id="50" class="1004" name="exitcond_i_i6_i2_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="5" slack="0"/>
 <pin id="52" dir="0" index="1" bw="5" slack="0"/>
@@ -316,11 +316,11 @@ ret_ln0               (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="exitcond_i_i6_i1/1 "/>
+<opset="exitcond_i_i6_i2/1 "/>
 </bind>
 </comp>
 
-<comp id="56" class="1004" name="empty_182_fu_56">
+<comp id="56" class="1004" name="empty_184_fu_56">
 <pin_list>
 <pin id="57" dir="0" index="0" bw="5" slack="0"/>
 <pin id="58" dir="0" index="1" bw="1" slack="0"/>
@@ -328,7 +328,7 @@ ret_ln0               (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="empty_182/1 "/>
+<opset="empty_184/1 "/>
 </bind>
 </comp>
 
@@ -415,8 +415,8 @@ ret_ln0               (ret              ) [ 00]
 	State 1
 		store_ln0 : 1
 		p_load : 1
-		exitcond_i_i6_i1 : 2
-		empty_182 : 2
+		exitcond_i_i6_i2 : 2
+		empty_184 : 2
 		br_ln0 : 3
 		p_cast4 : 2
 		temp_addr : 3
@@ -432,13 +432,13 @@ ret_ln0               (ret              ) [ 00]
 |----------|------------------------|---------|---------|
 | Operation|     Functional Unit    |    FF   |   LUT   |
 |----------|------------------------|---------|---------|
-|   icmp   | exitcond_i_i6_i1_fu_50 |    0    |    13   |
+|   icmp   | exitcond_i_i6_i2_fu_50 |    0    |    7    |
 |----------|------------------------|---------|---------|
-|    add   |     empty_182_fu_56    |    0    |    13   |
+|    add   |     empty_184_fu_56    |    0    |    7    |
 |----------|------------------------|---------|---------|
 |   zext   |      p_cast4_fu_62     |    0    |    0    |
 |----------|------------------------|---------|---------|
-|   Total  |                        |    0    |    26   |
+|   Total  |                        |    0    |    14   |
 |----------|------------------------|---------|---------|
 
 Memories:
@@ -466,10 +466,10 @@ N/A
 +-----------+--------+--------+
 |           |   FF   |   LUT  |
 +-----------+--------+--------+
-|  Function |    0   |   26   |
+|  Function |    0   |   14   |
 |   Memory  |    -   |    -   |
 |Multiplexer|    -   |    -   |
 |  Register |    5   |    -   |
 +-----------+--------+--------+
-|   Total   |    5   |   26   |
+|   Total   |    5   |   14   |
 +-----------+--------+--------+

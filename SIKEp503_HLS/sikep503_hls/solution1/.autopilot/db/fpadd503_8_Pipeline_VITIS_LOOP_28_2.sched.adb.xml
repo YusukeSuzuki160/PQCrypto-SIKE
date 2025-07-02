@@ -380,56 +380,8 @@ for.inc29.split:11 %tempReg = sub i64 %coeff_load, i64 %p503x2_1_load
 ]]></Node>
 <StgValue><ssdm name="tempReg"/></StgValue>
 </operation>
-</state>
 
-<state id="3" st_id="4">
-
-<operation id="27" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
-<![CDATA[
-for.inc29.split:1 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
-
-]]></Node>
-<StgValue><ssdm name="specpipeline_ln20"/></StgValue>
-</operation>
-
-<operation id="28" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
-<![CDATA[
-for.inc29.split:2 %speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
-
-]]></Node>
-<StgValue><ssdm name="speclooptripcount_ln20"/></StgValue>
-</operation>
-
-<operation id="29" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
-<![CDATA[
-for.inc29.split:3 %specloopname_ln28 = specloopname void @_ssdm_op_SpecLoopName, void @empty_58
-
-]]></Node>
-<StgValue><ssdm name="specloopname_ln28"/></StgValue>
-</operation>
-
-<operation id="30" st_id="3" stage="1" lat="1">
+<operation id="27" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -444,7 +396,7 @@ for.inc29.split:12 %xor_ln105 = xor i64 %p503x2_1_load, i64 %coeff_load
 <StgValue><ssdm name="xor_ln105"/></StgValue>
 </operation>
 
-<operation id="31" st_id="3" stage="1" lat="1">
+<operation id="28" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -459,7 +411,7 @@ for.inc29.split:13 %xor_ln105_88 = xor i64 %p503x2_1_load, i64 %tempReg
 <StgValue><ssdm name="xor_ln105_88"/></StgValue>
 </operation>
 
-<operation id="32" st_id="3" stage="1" lat="1">
+<operation id="29" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -474,7 +426,7 @@ for.inc29.split:14 %or_ln105 = or i64 %xor_ln105_88, i64 %xor_ln105
 <StgValue><ssdm name="or_ln105"/></StgValue>
 </operation>
 
-<operation id="33" st_id="3" stage="1" lat="1">
+<operation id="30" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -489,7 +441,7 @@ for.inc29.split:15 %xor_ln105_89 = xor i64 %coeff_load, i64 %or_ln105
 <StgValue><ssdm name="xor_ln105_89"/></StgValue>
 </operation>
 
-<operation id="34" st_id="3" stage="1" lat="1">
+<operation id="31" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -502,6 +454,54 @@ for.inc29.split:16 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="4">
+
+<operation id="32" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<![CDATA[
+for.inc29.split:1 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
+
+]]></Node>
+<StgValue><ssdm name="specpipeline_ln20"/></StgValue>
+</operation>
+
+<operation id="33" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+for.inc29.split:2 %speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
+
+]]></Node>
+<StgValue><ssdm name="speclooptripcount_ln20"/></StgValue>
+</operation>
+
+<operation id="34" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+for.inc29.split:3 %specloopname_ln28 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36
+
+]]></Node>
+<StgValue><ssdm name="specloopname_ln28"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">

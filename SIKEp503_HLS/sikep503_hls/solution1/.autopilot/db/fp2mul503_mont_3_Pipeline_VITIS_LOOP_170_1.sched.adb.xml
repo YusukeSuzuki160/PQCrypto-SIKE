@@ -289,6 +289,86 @@ for.inc.i.i53.split:8 %tempReg = sub i64 %tt1_load, i64 %tt2_load
 <StgValue><ssdm name="tempReg"/></StgValue>
 </operation>
 
+<operation id="23" st_id="2" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="64" op_0_bw="64" op_1_bw="64">
+<![CDATA[
+for.inc.i.i53.split:9 %xor_ln105 = xor i64 %tt2_load, i64 %tt1_load
+
+]]></Node>
+<StgValue><ssdm name="xor_ln105"/></StgValue>
+</operation>
+
+<operation id="24" st_id="2" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="64" op_0_bw="64" op_1_bw="64">
+<![CDATA[
+for.inc.i.i53.split:10 %xor_ln105_172 = xor i64 %tt2_load, i64 %tempReg
+
+]]></Node>
+<StgValue><ssdm name="xor_ln105_172"/></StgValue>
+</operation>
+
+<operation id="25" st_id="2" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="64" op_0_bw="64" op_1_bw="64">
+<![CDATA[
+for.inc.i.i53.split:11 %or_ln105 = or i64 %xor_ln105_172, i64 %xor_ln105
+
+]]></Node>
+<StgValue><ssdm name="or_ln105"/></StgValue>
+</operation>
+
+<operation id="26" st_id="2" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="64" op_0_bw="64" op_1_bw="64">
+<![CDATA[
+for.inc.i.i53.split:12 %xor_ln105_173 = xor i64 %tt1_load, i64 %or_ln105
+
+]]></Node>
+<StgValue><ssdm name="xor_ln105_173"/></StgValue>
+</operation>
+
+<operation id="27" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="28" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
+<![CDATA[
+for.inc.i.i53.split:13 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_173, i32 63
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
 <operation id="42" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -324,7 +404,7 @@ mp_subfast.exit.exitStub:1 %ret_ln0 = ret
 
 <state id="3" st_id="4">
 
-<operation id="23" st_id="3" stage="1" lat="1">
+<operation id="28" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -334,13 +414,13 @@ mp_subfast.exit.exitStub:1 %ret_ln0 = ret
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.i53.split:1 %specpipeline_ln168 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
+for.inc.i.i53.split:1 %specpipeline_ln168 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln168"/></StgValue>
 </operation>
 
-<operation id="24" st_id="3" stage="1" lat="1">
+<operation id="29" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -356,7 +436,7 @@ for.inc.i.i53.split:2 %speclooptripcount_ln168 = speclooptripcount void @_ssdm_o
 <StgValue><ssdm name="speclooptripcount_ln168"/></StgValue>
 </operation>
 
-<operation id="25" st_id="3" stage="1" lat="1">
+<operation id="30" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -366,90 +446,10 @@ for.inc.i.i53.split:2 %speclooptripcount_ln168 = speclooptripcount void @_ssdm_o
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.i53.split:3 %specloopname_ln170 = specloopname void @_ssdm_op_SpecLoopName, void @empty_42
+for.inc.i.i53.split:3 %specloopname_ln170 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln170"/></StgValue>
-</operation>
-
-<operation id="26" st_id="3" stage="1" lat="1">
-<core>LogicGate</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="24" bw="64" op_0_bw="64" op_1_bw="64">
-<![CDATA[
-for.inc.i.i53.split:9 %xor_ln105 = xor i64 %tt2_load, i64 %tt1_load
-
-]]></Node>
-<StgValue><ssdm name="xor_ln105"/></StgValue>
-</operation>
-
-<operation id="27" st_id="3" stage="1" lat="1">
-<core>LogicGate</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="25" bw="64" op_0_bw="64" op_1_bw="64">
-<![CDATA[
-for.inc.i.i53.split:10 %xor_ln105_172 = xor i64 %tt2_load, i64 %tempReg
-
-]]></Node>
-<StgValue><ssdm name="xor_ln105_172"/></StgValue>
-</operation>
-
-<operation id="28" st_id="3" stage="1" lat="1">
-<core>LogicGate</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="26" bw="64" op_0_bw="64" op_1_bw="64">
-<![CDATA[
-for.inc.i.i53.split:11 %or_ln105 = or i64 %xor_ln105_172, i64 %xor_ln105
-
-]]></Node>
-<StgValue><ssdm name="or_ln105"/></StgValue>
-</operation>
-
-<operation id="29" st_id="3" stage="1" lat="1">
-<core>LogicGate</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="27" bw="64" op_0_bw="64" op_1_bw="64">
-<![CDATA[
-for.inc.i.i53.split:12 %xor_ln105_173 = xor i64 %tt1_load, i64 %or_ln105
-
-]]></Node>
-<StgValue><ssdm name="xor_ln105_173"/></StgValue>
-</operation>
-
-<operation id="30" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln170" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="28" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
-<![CDATA[
-for.inc.i.i53.split:13 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_173, i32 63
-
-]]></Node>
-<StgValue><ssdm name="tmp"/></StgValue>
 </operation>
 
 <operation id="31" st_id="3" stage="1" lat="1">

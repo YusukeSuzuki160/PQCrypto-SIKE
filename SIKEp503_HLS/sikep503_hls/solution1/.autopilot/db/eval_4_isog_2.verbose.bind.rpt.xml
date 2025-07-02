@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'eval_4_isog_2'" level="0">
-<item name = "Date">Tue Jun  3 14:08:28 2025
+<item name = "Date">Wed Jul  2 14:04:37 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg484-1</item>
+<item name = "Target device">xc7z045-ffg900-2</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.243 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,24 +24,24 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7778, 11806, 77.780 us, 0.118 ms, 7778, 11806, no</column>
+<column name="">6113, 9981, 61.130 us, 99.810 us, 6113, 9981, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpadd503_15184_fu_54">fpadd503_15184, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_fpsub503_14682_fu_75">fpsub503_14682, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fp2mul503_mont_781110_fu_95">fp2mul503_mont_781110, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
-<column name="grp_fp2mul503_mont_133_2_fu_112">fp2mul503_mont_133_2, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
-<column name="grp_fp2mul503_mont_7_fu_122">fp2mul503_mont_7, 927, 1425, 9.270 us, 14.250 us, 927, 1425, no</column>
-<column name="grp_fpsub503_144_278_fu_133">fpsub503_144_278, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fp2sqr503_mont_136_2_fu_149">fp2sqr503_mont_136_2, 881, 1401, 8.810 us, 14.010 us, 881, 1401, no</column>
-<column name="grp_fp2sqr503_mont_13673_fu_158">fp2sqr503_mont_13673, 881, 1401, 8.810 us, 14.010 us, 881, 1401, no</column>
-<column name="grp_fpadd503_152109_fu_168">fpadd503_152109, 54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
-<column name="grp_fpsub503_144_277111_fu_187">fpsub503_144_277111, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fp2mul503_mont_1339880_fu_202">fp2mul503_mont_1339880, 942, 1440, 9.420 us, 14.400 us, 942, 1440, no</column>
+<column name="grp_fpadd503_15184_fu_54">fpadd503_15184, 40, 40, 0.400 us, 0.400 us, 40, 40, no</column>
+<column name="grp_fpsub503_14682_fu_75">fpsub503_14682, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
+<column name="grp_fp2mul503_mont_781110_fu_95">fp2mul503_mont_781110, 733, 1215, 7.330 us, 12.150 us, 733, 1215, no</column>
+<column name="grp_fp2mul503_mont_133_2_fu_112">fp2mul503_mont_133_2, 733, 1215, 7.330 us, 12.150 us, 733, 1215, no</column>
+<column name="grp_fp2mul503_mont_7_fu_122">fp2mul503_mont_7, 733, 1215, 7.330 us, 12.150 us, 733, 1215, no</column>
+<column name="grp_fpsub503_144_278_fu_133">fpsub503_144_278, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
+<column name="grp_fp2sqr503_mont_136_2_fu_149">fp2sqr503_mont_136_2, 710, 1198, 7.100 us, 11.980 us, 710, 1198, no</column>
+<column name="grp_fp2sqr503_mont_13673_fu_158">fp2sqr503_mont_13673, 710, 1198, 7.100 us, 11.980 us, 710, 1198, no</column>
+<column name="grp_fpadd503_152109_fu_168">fpadd503_152109, 40, 40, 0.400 us, 0.400 us, 40, 40, no</column>
+<column name="grp_fpsub503_144_277111_fu_187">fpsub503_144_277111, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
+<column name="grp_fp2mul503_mont_1339880_fu_202">fp2mul503_mont_1339880, 733, 1215, 7.330 us, 12.150 us, 733, 1215, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

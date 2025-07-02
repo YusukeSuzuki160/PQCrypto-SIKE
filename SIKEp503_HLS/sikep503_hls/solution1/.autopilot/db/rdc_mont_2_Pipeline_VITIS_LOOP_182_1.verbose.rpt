@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_2_Pipeline_VITIS_LOOP_182_1'
 ================================================================
-* Date:           Tue Jun  3 14:12:50 2025
+* Date:           Wed Jul  2 14:08:43 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.577 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  5.066 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -50,23 +50,23 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+-----------------+---------+-----+--------+-------+-----+
-|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
-+-----------------+---------+-----+--------+-------+-----+
-|DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|     26|    -|
-|FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        -|    -|       -|      -|    -|
-|Memory           |        -|    -|       -|      -|    -|
-|Multiplexer      |        -|    -|       0|     27|    -|
-|Register         |        -|    -|       6|      -|    -|
-+-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|       6|     53|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Available        |      280|  220|  106400|  53200|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
-+-----------------+---------+-----+--------+-------+-----+
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      13|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      27|    -|
+|Register         |        -|    -|       6|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|       6|      40|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |     1090|  900|  437200|  218600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
     * Instance: 
@@ -85,10 +85,10 @@
     +---------------------+----------+----+---+----+------------+------------+
     |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------+----------+----+---+----+------------+------------+
-    |add_ln182_fu_64_p2   |         +|   0|  0|  13|           4|           1|
-    |icmp_ln182_fu_58_p2  |      icmp|   0|  0|  13|           4|           5|
+    |add_ln182_fu_64_p2   |         +|   0|  0|   6|           4|           1|
+    |icmp_ln182_fu_58_p2  |      icmp|   0|  0|   7|           4|           5|
     +---------------------+----------+----+---+----+------------+------------+
-    |Total                |          |   0|  0|  26|           8|           6|
+    |Total                |          |   0|  0|  13|           8|           6|
     +---------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -173,25 +173,25 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 6.57>
+State 1 <SV = 0> <Delay = 5.06>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/generic/fp_generic.c:179]   --->   Operation 4 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (1.58ns)   --->   "%store_ln179 = store i4 0, i4 %i" [src/generic/fp_generic.c:179]   --->   Operation 5 'store' 'store_ln179' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (1.29ns)   --->   "%store_ln179 = store i4 0, i4 %i" [src/generic/fp_generic.c:179]   --->   Operation 5 'store' 'store_ln179' <Predicate = true> <Delay = 1.29>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 6 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i_11 = load i4 %i" [src/generic/fp_generic.c:183]   --->   Operation 7 'load' 'i_11' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (1.73ns)   --->   "%icmp_ln182 = icmp_eq  i4 %i_11, i4 8" [src/generic/fp_generic.c:182]   --->   Operation 8 'icmp' 'icmp_ln182' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 9 [1/1] (1.73ns)   --->   "%add_ln182 = add i4 %i_11, i4 1" [src/generic/fp_generic.c:182]   --->   Operation 9 'add' 'add_ln182' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.99ns)   --->   "%icmp_ln182 = icmp_eq  i4 %i_11, i4 8" [src/generic/fp_generic.c:182]   --->   Operation 8 'icmp' 'icmp_ln182' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.99ns)   --->   "%add_ln182 = add i4 %i_11, i4 1" [src/generic/fp_generic.c:182]   --->   Operation 9 'add' 'add_ln182' <Predicate = true> <Delay = 0.99> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln182 = br i1 %icmp_ln182, void %for.inc.split, void %VITIS_LOOP_187_3.preheader.exitStub" [src/generic/fp_generic.c:182]   --->   Operation 10 'br' 'br_ln182' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln179 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:179]   --->   Operation 11 'specpipeline' 'specpipeline_ln179' <Predicate = (!icmp_ln182)> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln179 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56" [src/generic/fp_generic.c:179]   --->   Operation 11 'specpipeline' 'specpipeline_ln179' <Predicate = (!icmp_ln182)> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%speclooptripcount_ln179 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.c:179]   --->   Operation 12 'speclooptripcount' 'speclooptripcount_ln179' <Predicate = (!icmp_ln182)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specloopname_ln182 = specloopname void @_ssdm_op_SpecLoopName, void @empty_73" [src/generic/fp_generic.c:182]   --->   Operation 13 'specloopname' 'specloopname_ln182' <Predicate = (!icmp_ln182)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specloopname_ln182 = specloopname void @_ssdm_op_SpecLoopName, void @empty_97" [src/generic/fp_generic.c:182]   --->   Operation 13 'specloopname' 'specloopname_ln182' <Predicate = (!icmp_ln182)> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln183 = trunc i4 %i_11" [src/generic/fp_generic.c:183]   --->   Operation 14 'trunc' 'trunc_ln183' <Predicate = (!icmp_ln182)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln183_2 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln183" [src/generic/fp_generic.c:183]   --->   Operation 15 'bitconcatenate' 'zext_ln183_2' <Predicate = (!icmp_ln182)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln183 = zext i4 %zext_ln183_2" [src/generic/fp_generic.c:183]   --->   Operation 16 'zext' 'zext_ln183' <Predicate = (!icmp_ln182)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%R_Z_addr = getelementptr i64 %R_Z, i64 0, i64 %zext_ln183" [src/generic/fp_generic.c:183]   --->   Operation 17 'getelementptr' 'R_Z_addr' <Predicate = (!icmp_ln182)> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln183 = store i64 0, i4 %R_Z_addr" [src/generic/fp_generic.c:183]   --->   Operation 18 'store' 'store_ln183' <Predicate = (!icmp_ln182)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 19 [1/1] (1.58ns)   --->   "%store_ln179 = store i4 %add_ln182, i4 %i" [src/generic/fp_generic.c:179]   --->   Operation 19 'store' 'store_ln179' <Predicate = (!icmp_ln182)> <Delay = 1.58>
+ST_1 : Operation 18 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln183 = store i64 0, i4 %R_Z_addr" [src/generic/fp_generic.c:183]   --->   Operation 18 'store' 'store_ln183' <Predicate = (!icmp_ln182)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 19 [1/1] (1.29ns)   --->   "%store_ln179 = store i4 %add_ln182, i4 %i" [src/generic/fp_generic.c:179]   --->   Operation 19 'store' 'store_ln179' <Predicate = (!icmp_ln182)> <Delay = 1.29>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln182 = br void %for.inc" [src/generic/fp_generic.c:182]   --->   Operation 20 'br' 'br_ln182' <Predicate = (!icmp_ln182)> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 21 'ret' 'ret_ln0' <Predicate = (icmp_ln182)> <Delay = 1.58>
+ST_1 : Operation 21 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 21 'ret' 'ret_ln0' <Predicate = (icmp_ln182)> <Delay = 1.29>
 
 
 ============================================================
@@ -313,7 +313,7 @@ ret_ln0                 (ret              ) [ 00]
 <pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_60"/></StgValue>
+<StgValue><ssdm name="empty_56"/></StgValue>
 </bind>
 </comp>
 
@@ -349,7 +349,7 @@ ret_ln0                 (ret              ) [ 00]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_97"/></StgValue>
 </bind>
 </comp>
 
@@ -599,9 +599,9 @@ ret_ln0                 (ret              ) [ 00]
 |----------|--------------------|---------|---------|
 | Operation|   Functional Unit  |    FF   |   LUT   |
 |----------|--------------------|---------|---------|
-|   icmp   |  icmp_ln182_fu_58  |    0    |    13   |
+|   icmp   |  icmp_ln182_fu_58  |    0    |    6    |
 |----------|--------------------|---------|---------|
-|    add   |   add_ln182_fu_64  |    0    |    13   |
+|    add   |   add_ln182_fu_64  |    0    |    6    |
 |----------|--------------------|---------|---------|
 |   trunc  |  trunc_ln183_fu_70 |    0    |    0    |
 |----------|--------------------|---------|---------|
@@ -609,7 +609,7 @@ ret_ln0                 (ret              ) [ 00]
 |----------|--------------------|---------|---------|
 |   zext   |  zext_ln183_fu_82  |    0    |    0    |
 |----------|--------------------|---------|---------|
-|   Total  |                    |    0    |    26   |
+|   Total  |                    |    0    |    12   |
 |----------|--------------------|---------|---------|
 
 Memories:
@@ -637,10 +637,10 @@ N/A
 +-----------+--------+--------+
 |           |   FF   |   LUT  |
 +-----------+--------+--------+
-|  Function |    0   |   26   |
+|  Function |    0   |   12   |
 |   Memory  |    -   |    -   |
 |Multiplexer|    -   |    -   |
 |  Register |    4   |    -   |
 +-----------+--------+--------+
-|   Total   |    4   |   26   |
+|   Total   |    4   |   12   |
 +-----------+--------+--------+

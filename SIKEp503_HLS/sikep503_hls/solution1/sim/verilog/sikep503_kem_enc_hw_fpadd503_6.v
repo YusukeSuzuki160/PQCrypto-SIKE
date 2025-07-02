@@ -81,8 +81,8 @@ wire   [5:0] grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_address0;
 wire    grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_ce0;
 wire   [7:0] grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_we0;
 wire   [63:0] grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_d0;
-wire   [0:0] grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out;
-wire    grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out_ap_vld;
+wire   [0:0] grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out;
+wire    grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out_ap_vld;
 wire    grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_ap_start;
 wire    grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_ap_done;
 wire    grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_ap_idle;
@@ -147,8 +147,8 @@ sikep503_kem_enc_hw_fpadd503_6_Pipeline_VITIS_LOOP_28_2 grp_fpadd503_6_Pipeline_
     .coeff_we0(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_we0),
     .coeff_d0(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_coeff_d0),
     .coeff_q0(coeff_q0),
-    .carry_172_out(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out),
-    .carry_172_out_ap_vld(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out_ap_vld)
+    .carry_166_out(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out),
+    .carry_166_out_ap_vld(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out_ap_vld)
 );
 
 sikep503_kem_enc_hw_fpadd503_6_Pipeline_VITIS_LOOP_34_3 grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41(
@@ -163,7 +163,7 @@ sikep503_kem_enc_hw_fpadd503_6_Pipeline_VITIS_LOOP_34_3 grp_fpadd503_6_Pipeline_
     .coeff_we0(grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_coeff_we0),
     .coeff_d0(grp_fpadd503_6_Pipeline_VITIS_LOOP_34_3_fu_41_coeff_d0),
     .coeff_q0(coeff_q0),
-    .sext_ln21(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_172_out)
+    .sext_ln21(grp_fpadd503_6_Pipeline_VITIS_LOOP_28_2_fu_32_carry_166_out)
 );
 
 always @ (posedge ap_clk) begin

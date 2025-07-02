@@ -225,14 +225,14 @@ entry:7 %ret_ln37 = ret
 
 <ports>
 <port id="23" name="c_0" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="c_0"/><MemPortTyVec>2 1 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="c_0"/><MemPortTyVec>0 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="24" name="c_0_offset" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="c_0_offset"/></StgValue>
 </port>
 <port id="25" name="c_1" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="c_1"/><MemPortTyVec>2 1 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="c_1"/><MemPortTyVec>0 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="26" name="c_1_offset" dir="0" iftype="0">

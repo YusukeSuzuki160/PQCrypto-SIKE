@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_32'
 ================================================================
-* Date:           Tue Jun  3 14:06:33 2025
+* Date:           Wed Jul  2 14:02:53 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.214 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.801 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      328|      328|  3.280 us|  3.280 us|  328|  328|       no|
+    |      325|      325|  3.250 us|  3.250 us|  325|  325|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,12 +38,12 @@
         |                                                          |                                               |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                         Instance                         |                     Module                    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +----------------------------------------------------------+-----------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_654_1_fu_102  |cshake256_simple_32_Pipeline_VITIS_LOOP_654_1  |       27|       27|  0.270 us|  0.270 us|   26|   26|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_610_1_fu_102  |cshake256_simple_32_Pipeline_VITIS_LOOP_610_1  |       27|       27|  0.270 us|  0.270 us|   26|   26|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_KeccakF1600_StatePermute_fu_108                       |KeccakF1600_StatePermute                       |       42|       42|  0.420 us|  0.420 us|   42|   42|                                              no|
-        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_416_2_fu_115  |cshake256_simple_32_Pipeline_VITIS_LOOP_416_2  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_444_4_fu_129  |cshake256_simple_32_Pipeline_VITIS_LOOP_444_4  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_479_2_fu_142  |cshake256_simple_32_Pipeline_VITIS_LOOP_479_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_712_1_fu_151  |cshake256_simple_32_Pipeline_VITIS_LOOP_712_1  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_391_2_fu_115  |cshake256_simple_32_Pipeline_VITIS_LOOP_391_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_400_3_fu_129  |cshake256_simple_32_Pipeline_VITIS_LOOP_400_3  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_436_2_fu_142  |cshake256_simple_32_Pipeline_VITIS_LOOP_436_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_32_Pipeline_VITIS_LOOP_668_1_fu_151  |cshake256_simple_32_Pipeline_VITIS_LOOP_668_1  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +----------------------------------------------------------+-----------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -51,7 +51,7 @@
         |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_413_1  |      132|      132|        66|          -|          -|     2|        no|
+        |- VITIS_LOOP_388_1  |      130|      130|        65|          -|          -|     2|        no|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
@@ -104,79 +104,79 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.25>
+State 1 <SV = 0> <Delay = 2.77>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%idx = alloca i32 1"   --->   Operation 17 'alloca' 'idx' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mlen_assign = alloca i32 1" [src/sha3/fips202.c:409->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 18 'alloca' 'mlen_assign' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (3.25ns)   --->   "%s = alloca i64 1"   --->   Operation 19 'alloca' 's' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
-ST_1 : Operation 20 [1/1] (2.32ns)   --->   "%t = alloca i64 1" [src/sha3/fips202.c:683]   --->   Operation 20 'alloca' 't' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 21 [1/1] (2.32ns)   --->   "%t_41 = alloca i64 1" [src/sha3/fips202.c:683]   --->   Operation 21 'alloca' 't_41' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 22 [1/1] (2.32ns)   --->   "%t_42 = alloca i64 1" [src/sha3/fips202.c:683]   --->   Operation 22 'alloca' 't_42' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 23 [1/1] (2.32ns)   --->   "%t_43 = alloca i64 1" [src/sha3/fips202.c:683]   --->   Operation 23 'alloca' 't_43' <Predicate = true> <Delay = 2.32>
-ST_1 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_654_1, i64 %s"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln409 = store i9 402, i9 %mlen_assign" [src/sha3/fips202.c:409->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 25 'store' 'store_ln409' <Predicate = true> <Delay = 1.58>
-ST_1 : Operation 26 [1/1] (1.58ns)   --->   "%store_ln0 = store i9 0, i9 %idx"   --->   Operation 26 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mlen_assign = alloca i32 1" [src/sha3/fips202.c:385->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 18 'alloca' 'mlen_assign' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (2.77ns)   --->   "%s = alloca i64 1"   --->   Operation 19 'alloca' 's' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_1 : Operation 20 [1/1] (1.75ns)   --->   "%t = alloca i64 1" [src/sha3/fips202.c:639]   --->   Operation 20 'alloca' 't' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 21 [1/1] (1.75ns)   --->   "%t_41 = alloca i64 1" [src/sha3/fips202.c:639]   --->   Operation 21 'alloca' 't_41' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 22 [1/1] (1.75ns)   --->   "%t_42 = alloca i64 1" [src/sha3/fips202.c:639]   --->   Operation 22 'alloca' 't_42' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 23 [1/1] (1.75ns)   --->   "%t_43 = alloca i64 1" [src/sha3/fips202.c:639]   --->   Operation 23 'alloca' 't_43' <Predicate = true> <Delay = 1.75>
+ST_1 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_610_1, i64 %s"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 25 [1/1] (1.29ns)   --->   "%store_ln385 = store i9 402, i9 %mlen_assign" [src/sha3/fips202.c:385->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 25 'store' 'store_ln385' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 26 [1/1] (1.29ns)   --->   "%store_ln0 = store i9 0, i9 %idx"   --->   Operation 26 'store' 'store_ln0' <Predicate = true> <Delay = 1.29>
 
-State 2 <SV = 1> <Delay = 4.95>
-ST_2 : Operation 27 [1/2] (4.95ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_654_1, i64 %s"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 3.61>
+ST_2 : Operation 27 [1/2] (3.61ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_610_1, i64 %s"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 3.61> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%s_addr = getelementptr i64 %s, i64 0, i64 0" [src/sha3/fips202.c:660->src/sha3/fips202.c:686]   --->   Operation 28 'getelementptr' 's_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 29 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln667 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr, i64 17596481112065, i8 255" [src/sha3/fips202.c:667->src/sha3/fips202.c:686]   --->   Operation 29 'store' 'store_ln667' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+State 3 <SV = 2> <Delay = 2.77>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%s_addr = getelementptr i64 %s, i64 0, i64 0" [src/sha3/fips202.c:616->src/sha3/fips202.c:642]   --->   Operation 28 'getelementptr' 's_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln623 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr, i64 17596481112065, i8 255" [src/sha3/fips202.c:623->src/sha3/fips202.c:642]   --->   Operation 29 'store' 'store_ln623' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln669 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:669->src/sha3/fips202.c:686]   --->   Operation 30 'call' 'call_ln669' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln625 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:625->src/sha3/fips202.c:642]   --->   Operation 30 'call' 'call_ln625' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
 ST_5 : Operation 31 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %s"   --->   Operation 31 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln669 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:669->src/sha3/fips202.c:686]   --->   Operation 32 'call' 'call_ln669' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln413 = br void %VITIS_LOOP_416_2.i.i" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 33 'br' 'br_ln413' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln625 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:625->src/sha3/fips202.c:642]   --->   Operation 32 'call' 'call_ln625' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln388 = br void %VITIS_LOOP_391_2.i.i" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 33 'br' 'br_ln388' <Predicate = true> <Delay = 0.00>
 
-State 6 <SV = 5> <Delay = 3.41>
-ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%mlen_assign_load = load i9 %mlen_assign" [src/sha3/fips202.c:422->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 34 'load' 'mlen_assign_load' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 35 [1/1] (1.82ns)   --->   "%icmp_ln413 = icmp_ugt  i9 %mlen_assign_load, i9 135" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 35 'icmp' 'icmp_ln413' <Predicate = true> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+State 6 <SV = 5> <Delay = 4.39>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%mlen_assign_load = load i9 %mlen_assign" [src/sha3/fips202.c:397->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 34 'load' 'mlen_assign_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (1.36ns)   --->   "%icmp_ln388 = icmp_ugt  i9 %mlen_assign_load, i9 135" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 35 'icmp' 'icmp_ln388' <Predicate = true> <Delay = 1.36> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 2, i64 2, i64 2"   --->   Operation 36 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln413 = br i1 %icmp_ln413, void %BYTE.i.i.preheader, void %VITIS_LOOP_416_2.i.i.split" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 37 'br' 'br_ln413' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%idx_load = load i9 %idx" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 38 'load' 'idx_load' <Predicate = (icmp_ln413)> <Delay = 0.00>
-ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_s = partselect i6 @_ssdm_op_PartSelect.i6.i9.i32.i32, i9 %idx_load, i32 2, i32 7" [src/sha3/fips202.c:416->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 39 'partselect' 'tmp_s' <Predicate = (icmp_ln413)> <Delay = 0.00>
-ST_6 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln416 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_416_2, i6 %tmp_s, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s" [src/sha3/fips202.c:416->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 40 'call' 'call_ln416' <Predicate = (icmp_ln413)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 41 [1/1] (1.82ns)   --->   "%add_ln422 = add i9 %mlen_assign_load, i9 376" [src/sha3/fips202.c:422->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 41 'add' 'add_ln422' <Predicate = (icmp_ln413)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 42 [1/1] (1.82ns)   --->   "%add_ln413 = add i9 %idx_load, i9 136" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 42 'add' 'add_ln413' <Predicate = (icmp_ln413)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 43 [1/1] (1.58ns)   --->   "%store_ln409 = store i9 %add_ln422, i9 %mlen_assign" [src/sha3/fips202.c:409->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 43 'store' 'store_ln409' <Predicate = (icmp_ln413)> <Delay = 1.58>
-ST_6 : Operation 44 [1/1] (1.58ns)   --->   "%store_ln413 = store i9 %add_ln413, i9 %idx" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 44 'store' 'store_ln413' <Predicate = (icmp_ln413)> <Delay = 1.58>
-ST_6 : Operation 45 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_444_4, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s"   --->   Operation 45 'call' 'call_ln0' <Predicate = (!icmp_ln413)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln388 = br i1 %icmp_ln388, void %BYTE.i.i.preheader, void %VITIS_LOOP_391_2.i.i.split" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 37 'br' 'br_ln388' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%idx_load = load i9 %idx" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 38 'load' 'idx_load' <Predicate = (icmp_ln388)> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_s = partselect i6 @_ssdm_op_PartSelect.i6.i9.i32.i32, i9 %idx_load, i32 2, i32 7" [src/sha3/fips202.c:391->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 39 'partselect' 'tmp_s' <Predicate = (icmp_ln388)> <Delay = 0.00>
+ST_6 : Operation 40 [2/2] (3.03ns)   --->   "%call_ln391 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_391_2, i6 %tmp_s, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s" [src/sha3/fips202.c:391->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 40 'call' 'call_ln391' <Predicate = (icmp_ln388)> <Delay = 3.03> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 41 [1/1] (1.36ns)   --->   "%add_ln397 = add i9 %mlen_assign_load, i9 376" [src/sha3/fips202.c:397->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 41 'add' 'add_ln397' <Predicate = (icmp_ln388)> <Delay = 1.36> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 42 [1/1] (1.36ns)   --->   "%add_ln388 = add i9 %idx_load, i9 136" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 42 'add' 'add_ln388' <Predicate = (icmp_ln388)> <Delay = 1.36> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 43 [1/1] (1.29ns)   --->   "%store_ln385 = store i9 %add_ln397, i9 %mlen_assign" [src/sha3/fips202.c:385->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 43 'store' 'store_ln385' <Predicate = (icmp_ln388)> <Delay = 1.29>
+ST_6 : Operation 44 [1/1] (1.29ns)   --->   "%store_ln388 = store i9 %add_ln388, i9 %idx" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 44 'store' 'store_ln388' <Predicate = (icmp_ln388)> <Delay = 1.29>
+ST_6 : Operation 45 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_400_3, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s"   --->   Operation 45 'call' 'call_ln0' <Predicate = (!icmp_ln388)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 46 [1/2] (0.00ns)   --->   "%call_ln416 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_416_2, i6 %tmp_s, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s" [src/sha3/fips202.c:416->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 46 'call' 'call_ln416' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 7 <SV = 6> <Delay = 3.61>
+ST_7 : Operation 46 [1/2] (3.61ns)   --->   "%call_ln391 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_391_2, i6 %tmp_s, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s" [src/sha3/fips202.c:391->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 46 'call' 'call_ln391' <Predicate = true> <Delay = 3.61> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln421 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:421->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 47 'call' 'call_ln421' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln396 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:396->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 47 'call' 'call_ln396' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln413 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 48 'specloopname' 'specloopname_ln413' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln421 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:421->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 49 'call' 'call_ln421' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln413 = br void %VITIS_LOOP_416_2.i.i" [src/sha3/fips202.c:413->src/sha3/fips202.c:672->src/sha3/fips202.c:686]   --->   Operation 50 'br' 'br_ln413' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln388 = specloopname void @_ssdm_op_SpecLoopName, void @empty_69" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 48 'specloopname' 'specloopname_ln388' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln396 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:396->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 49 'call' 'call_ln396' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln388 = br void %VITIS_LOOP_391_2.i.i" [src/sha3/fips202.c:388->src/sha3/fips202.c:628->src/sha3/fips202.c:642]   --->   Operation 50 'br' 'br_ln388' <Predicate = true> <Delay = 0.00>
 
-State 10 <SV = 6> <Delay = 0.00>
-ST_10 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_444_4, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s"   --->   Operation 51 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 10 <SV = 6> <Delay = 3.61>
+ST_10 : Operation 51 [1/2] (3.61ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_400_3, i8 %in_0, i8 %in_1, i8 %in_2, i8 %in_3, i64 %s"   --->   Operation 51 'call' 'call_ln0' <Predicate = true> <Delay = 3.61> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 7> <Delay = 0.00>
-ST_11 : Operation 52 [2/2] (0.00ns)   --->   "%call_ln478 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:478->src/sha3/fips202.c:707]   --->   Operation 52 'call' 'call_ln478' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 52 [2/2] (0.00ns)   --->   "%call_ln435 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:435->src/sha3/fips202.c:663]   --->   Operation 52 'call' 'call_ln435' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 8> <Delay = 0.00>
-ST_12 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln478 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:478->src/sha3/fips202.c:707]   --->   Operation 53 'call' 'call_ln478' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln435 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.c:435->src/sha3/fips202.c:663]   --->   Operation 53 'call' 'call_ln435' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 9> <Delay = 0.00>
-ST_13 : Operation 54 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_479_2, i8 %t_43, i8 %t_42, i8 %t_41, i8 %t, i64 %s"   --->   Operation 54 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 54 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_436_2, i8 %t_43, i8 %t_42, i8 %t_41, i8 %t, i64 %s"   --->   Operation 54 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 14 <SV = 10> <Delay = 4.95>
-ST_14 : Operation 55 [1/2] (4.95ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_479_2, i8 %t_43, i8 %t_42, i8 %t_41, i8 %t, i64 %s"   --->   Operation 55 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+State 14 <SV = 10> <Delay = 3.61>
+ST_14 : Operation 55 [1/2] (3.61ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_436_2, i8 %t_43, i8 %t_42, i8 %t_41, i8 %t, i64 %s"   --->   Operation 55 'call' 'call_ln0' <Predicate = true> <Delay = 3.61> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 11> <Delay = 0.00>
-ST_15 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_712_1, i8 %t, i8 %t_41, i8 %t_42, i8 %t_43, i8 %ephemeralsk_i"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_41, i8 %t_42, i8 %t_43, i8 %ephemeralsk_i"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 16 <SV = 12> <Delay = 5.00>
-ST_16 : Operation 57 [1/2] (5.00ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_712_1, i8 %t, i8 %t_41, i8 %t_42, i8 %t_43, i8 %ephemeralsk_i"   --->   Operation 57 'call' 'call_ln0' <Predicate = true> <Delay = 5.00> <CoreType = "Generic">   --->   Generic Core
-ST_16 : Operation 58 [1/1] (0.00ns)   --->   "%ret_ln718 = ret" [src/sha3/fips202.c:718]   --->   Operation 58 'ret' 'ret_ln718' <Predicate = true> <Delay = 0.00>
+State 16 <SV = 12> <Delay = 3.87>
+ST_16 : Operation 57 [1/2] (3.87ns)   --->   "%call_ln0 = call void @cshake256_simple.32_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_41, i8 %t_42, i8 %t_43, i8 %ephemeralsk_i"   --->   Operation 57 'call' 'call_ln0' <Predicate = true> <Delay = 3.87> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 58 [1/1] (0.00ns)   --->   "%ret_ln674 = ret" [src/sha3/fips202.c:674]   --->   Operation 58 'ret' 'ret_ln674' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -209,33 +209,33 @@ t                          (alloca                ) [ 00111111111111111]
 t_41                       (alloca                ) [ 00111111111111111]
 t_42                       (alloca                ) [ 00111111111111111]
 t_43                       (alloca                ) [ 00111111111111111]
-store_ln409                (store                 ) [ 00000000000000000]
+store_ln385                (store                 ) [ 00000000000000000]
 store_ln0                  (store                 ) [ 00000000000000000]
 call_ln0                   (call                  ) [ 00000000000000000]
 s_addr                     (getelementptr         ) [ 00000000000000000]
-store_ln667                (store                 ) [ 00000000000000000]
+store_ln623                (store                 ) [ 00000000000000000]
 specbramwithbyteenable_ln0 (specbramwithbyteenable) [ 00000000000000000]
-call_ln669                 (call                  ) [ 00000000000000000]
-br_ln413                   (br                    ) [ 00000000000000000]
+call_ln625                 (call                  ) [ 00000000000000000]
+br_ln388                   (br                    ) [ 00000000000000000]
 mlen_assign_load           (load                  ) [ 00000000000000000]
-icmp_ln413                 (icmp                  ) [ 00000011110000000]
+icmp_ln388                 (icmp                  ) [ 00000011110000000]
 speclooptripcount_ln0      (speclooptripcount     ) [ 00000000000000000]
-br_ln413                   (br                    ) [ 00000000000000000]
+br_ln388                   (br                    ) [ 00000000000000000]
 idx_load                   (load                  ) [ 00000000000000000]
 tmp_s                      (partselect            ) [ 00000001000000000]
-add_ln422                  (add                   ) [ 00000000000000000]
-add_ln413                  (add                   ) [ 00000000000000000]
-store_ln409                (store                 ) [ 00000000000000000]
-store_ln413                (store                 ) [ 00000000000000000]
-call_ln416                 (call                  ) [ 00000000000000000]
-specloopname_ln413         (specloopname          ) [ 00000000000000000]
-call_ln421                 (call                  ) [ 00000000000000000]
-br_ln413                   (br                    ) [ 00000000000000000]
+add_ln397                  (add                   ) [ 00000000000000000]
+add_ln388                  (add                   ) [ 00000000000000000]
+store_ln385                (store                 ) [ 00000000000000000]
+store_ln388                (store                 ) [ 00000000000000000]
+call_ln391                 (call                  ) [ 00000000000000000]
+specloopname_ln388         (specloopname          ) [ 00000000000000000]
+call_ln396                 (call                  ) [ 00000000000000000]
+br_ln388                   (br                    ) [ 00000000000000000]
 call_ln0                   (call                  ) [ 00000000000000000]
-call_ln478                 (call                  ) [ 00000000000000000]
+call_ln435                 (call                  ) [ 00000000000000000]
 call_ln0                   (call                  ) [ 00000000000000000]
 call_ln0                   (call                  ) [ 00000000000000000]
-ret_ln718                  (ret                   ) [ 00000000000000000]
+ret_ln674                  (ret                   ) [ 00000000000000000]
 </LifeTime>
 
 <model>
@@ -324,7 +324,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 <pin id="17" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_654_1"/></StgValue>
+<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_610_1"/></StgValue>
 </bind>
 </comp>
 
@@ -459,7 +459,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 <pin id="47" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_416_2"/></StgValue>
+<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_391_2"/></StgValue>
 </bind>
 </comp>
 
@@ -486,7 +486,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 <pin id="53" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_444_4"/></StgValue>
+<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_400_3"/></StgValue>
 </bind>
 </comp>
 
@@ -504,7 +504,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 <pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_4"/></StgValue>
+<StgValue><ssdm name="empty_69"/></StgValue>
 </bind>
 </comp>
 
@@ -513,7 +513,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 <pin id="59" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_479_2"/></StgValue>
+<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_436_2"/></StgValue>
 </bind>
 </comp>
 
@@ -522,7 +522,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 <pin id="61" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_712_1"/></StgValue>
+<StgValue><ssdm name="cshake256_simple.32_Pipeline_VITIS_LOOP_668_1"/></StgValue>
 </bind>
 </comp>
 
@@ -616,7 +616,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </bind>
 </comp>
 
-<comp id="97" class="1004" name="store_ln667_access_fu_97">
+<comp id="97" class="1004" name="store_ln623_access_fu_97">
 <pin_list>
 <pin id="98" dir="0" index="0" bw="5" slack="2147483647"/>
 <pin id="99" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -625,11 +625,11 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln667/3 "/>
+<opset="store_ln623/3 "/>
 </bind>
 </comp>
 
-<comp id="102" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_654_1_fu_102">
+<comp id="102" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_610_1_fu_102">
 <pin_list>
 <pin id="103" dir="0" index="0" bw="0" slack="0"/>
 <pin id="104" dir="0" index="1" bw="64" slack="0"/>
@@ -650,11 +650,11 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln669/4 call_ln421/8 call_ln478/11 "/>
+<opset="call_ln625/4 call_ln396/8 call_ln435/11 "/>
 </bind>
 </comp>
 
-<comp id="115" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_416_2_fu_115">
+<comp id="115" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_391_2_fu_115">
 <pin_list>
 <pin id="116" dir="0" index="0" bw="0" slack="0"/>
 <pin id="117" dir="0" index="1" bw="6" slack="0"/>
@@ -667,11 +667,11 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln416/6 "/>
+<opset="call_ln391/6 "/>
 </bind>
 </comp>
 
-<comp id="129" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_444_4_fu_129">
+<comp id="129" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_400_3_fu_129">
 <pin_list>
 <pin id="130" dir="0" index="0" bw="0" slack="0"/>
 <pin id="131" dir="0" index="1" bw="8" slack="0"/>
@@ -687,7 +687,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </bind>
 </comp>
 
-<comp id="142" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_479_2_fu_142">
+<comp id="142" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_436_2_fu_142">
 <pin_list>
 <pin id="143" dir="0" index="0" bw="0" slack="0"/>
 <pin id="144" dir="0" index="1" bw="8" slack="2147483647"/>
@@ -703,7 +703,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </bind>
 </comp>
 
-<comp id="151" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_712_1_fu_151">
+<comp id="151" class="1004" name="grp_cshake256_simple_32_Pipeline_VITIS_LOOP_668_1_fu_151">
 <pin_list>
 <pin id="152" dir="0" index="0" bw="0" slack="0"/>
 <pin id="153" dir="0" index="1" bw="8" slack="2147483647"/>
@@ -719,7 +719,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </bind>
 </comp>
 
-<comp id="161" class="1004" name="store_ln409_store_fu_161">
+<comp id="161" class="1004" name="store_ln385_store_fu_161">
 <pin_list>
 <pin id="162" dir="0" index="0" bw="8" slack="0"/>
 <pin id="163" dir="0" index="1" bw="9" slack="0"/>
@@ -727,7 +727,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln409/1 "/>
+<opset="store_ln385/1 "/>
 </bind>
 </comp>
 
@@ -754,7 +754,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </bind>
 </comp>
 
-<comp id="174" class="1004" name="icmp_ln413_fu_174">
+<comp id="174" class="1004" name="icmp_ln388_fu_174">
 <pin_list>
 <pin id="175" dir="0" index="0" bw="9" slack="0"/>
 <pin id="176" dir="0" index="1" bw="9" slack="0"/>
@@ -762,7 +762,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln413/6 "/>
+<opset="icmp_ln388/6 "/>
 </bind>
 </comp>
 
@@ -791,7 +791,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </bind>
 </comp>
 
-<comp id="194" class="1004" name="add_ln422_fu_194">
+<comp id="194" class="1004" name="add_ln397_fu_194">
 <pin_list>
 <pin id="195" dir="0" index="0" bw="9" slack="0"/>
 <pin id="196" dir="0" index="1" bw="9" slack="0"/>
@@ -799,11 +799,11 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln422/6 "/>
+<opset="add_ln397/6 "/>
 </bind>
 </comp>
 
-<comp id="200" class="1004" name="add_ln413_fu_200">
+<comp id="200" class="1004" name="add_ln388_fu_200">
 <pin_list>
 <pin id="201" dir="0" index="0" bw="9" slack="0"/>
 <pin id="202" dir="0" index="1" bw="9" slack="0"/>
@@ -811,11 +811,11 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln413/6 "/>
+<opset="add_ln388/6 "/>
 </bind>
 </comp>
 
-<comp id="206" class="1004" name="store_ln409_store_fu_206">
+<comp id="206" class="1004" name="store_ln385_store_fu_206">
 <pin_list>
 <pin id="207" dir="0" index="0" bw="9" slack="0"/>
 <pin id="208" dir="0" index="1" bw="9" slack="5"/>
@@ -823,11 +823,11 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln409/6 "/>
+<opset="store_ln385/6 "/>
 </bind>
 </comp>
 
-<comp id="211" class="1004" name="store_ln413_store_fu_211">
+<comp id="211" class="1004" name="store_ln388_store_fu_211">
 <pin_list>
 <pin id="212" dir="0" index="0" bw="9" slack="0"/>
 <pin id="213" dir="0" index="1" bw="9" slack="5"/>
@@ -835,7 +835,7 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln413/6 "/>
+<opset="store_ln388/6 "/>
 </bind>
 </comp>
 
@@ -991,22 +991,22 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
   - Chain level:
 	State 1
 		call_ln0 : 1
-		store_ln409 : 1
+		store_ln385 : 1
 		store_ln0 : 1
 	State 2
 	State 3
-		store_ln667 : 1
+		store_ln623 : 1
 	State 4
 	State 5
 	State 6
-		icmp_ln413 : 1
-		br_ln413 : 2
+		icmp_ln388 : 1
+		br_ln388 : 2
 		tmp_s : 1
-		call_ln416 : 2
-		add_ln422 : 1
-		add_ln413 : 1
-		store_ln409 : 2
-		store_ln413 : 2
+		call_ln391 : 2
+		add_ln397 : 1
+		add_ln388 : 1
+		store_ln385 : 2
+		store_ln388 : 2
 	State 7
 	State 8
 	State 9
@@ -1027,21 +1027,21 @@ ret_ln718                  (ret                   ) [ 00000000000000000]
 |----------|----------------------------------------------------------|---------|---------|---------|
 | Operation|                      Functional Unit                     |  Delay  |    FF   |   LUT   |
 |----------|----------------------------------------------------------|---------|---------|---------|
-|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_654_1_fu_102 |    0    |    5    |    26   |
-|          |            grp_KeccakF1600_StatePermute_fu_108           | 20.7445 |   6605  |  16657  |
-|   call   | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_416_2_fu_115 |  14.292 |   143   |   199   |
-|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_444_4_fu_129 |  14.292 |   250   |   349   |
-|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_479_2_fu_142 |  1.588  |    15   |    35   |
-|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_712_1_fu_151 |  6.352  |    36   |    84   |
+|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_610_1_fu_102 |    0    |    5    |    14   |
+|          |            grp_KeccakF1600_StatePermute_fu_108           | 14.9599 |   6541  |  16612  |
+|   call   | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_391_2_fu_115 |  11.682 |    66   |   171   |
+|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_400_3_fu_129 |  11.682 |    71   |   281   |
+|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_436_2_fu_142 |  1.298  |    15   |    23   |
+|          | grp_cshake256_simple_32_Pipeline_VITIS_LOOP_668_1_fu_151 |  5.192  |    36   |    65   |
 |----------|----------------------------------------------------------|---------|---------|---------|
-|    add   |                     add_ln422_fu_194                     |    0    |    0    |    14   |
-|          |                     add_ln413_fu_200                     |    0    |    0    |    14   |
+|    add   |                     add_ln397_fu_194                     |    0    |    0    |    9    |
+|          |                     add_ln388_fu_200                     |    0    |    0    |    9    |
 |----------|----------------------------------------------------------|---------|---------|---------|
-|   icmp   |                     icmp_ln413_fu_174                    |    0    |    0    |    14   |
+|   icmp   |                     icmp_ln388_fu_174                    |    0    |    0    |    9    |
 |----------|----------------------------------------------------------|---------|---------|---------|
 |partselect|                       tmp_s_fu_183                       |    0    |    0    |    0    |
 |----------|----------------------------------------------------------|---------|---------|---------|
-|   Total  |                                                          | 57.2685 |   7054  |  17392  |
+|   Total  |                                                          | 44.8139 |   6734  |  17193  |
 |----------|----------------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -1072,9 +1072,9 @@ Memories:
 |----------------------------------------------------------|------|------|------|--------||---------||---------||---------|
 |                           Comp                           |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |----------------------------------------------------------|------|------|------|--------||---------||---------||---------|
-| grp_cshake256_simple_32_Pipeline_VITIS_LOOP_416_2_fu_115 |  p1  |   2  |   6  |   12   ||    0    ||    9    |
+| grp_cshake256_simple_32_Pipeline_VITIS_LOOP_391_2_fu_115 |  p1  |   2  |   6  |   12   ||    0    ||    9    |
 |----------------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|                           Total                          |      |      |      |   12   ||  1.588  ||    0    ||    9    |
+|                           Total                          |      |      |      |   12   ||  1.298  ||    0    ||    9    |
 |----------------------------------------------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -1083,10 +1083,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |   57   |  7054  |  17392 |    -   |
+|  Function |    -   |   44   |  6734  |  17193 |    -   |
 |   Memory  |    4   |    -   |   64   |   20   |    0   |
 |Multiplexer|    -   |    1   |    0   |    9   |    -   |
 |  Register |    -   |    -   |   24   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    4   |   58   |  7142  |  17421 |    0   |
+|   Total   |    4   |   46   |  6822  |  17222 |    0   |
 +-----------+--------+--------+--------+--------+--------+

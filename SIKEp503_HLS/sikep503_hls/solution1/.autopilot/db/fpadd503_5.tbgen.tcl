@@ -79,7 +79,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "76", "EstimateLatencyMax" : "76",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "69", "EstimateLatencyMax" : "69",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -109,7 +109,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "19", "EstimateLatencyMax" : "19",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "12", "EstimateLatencyMax" : "12",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -123,7 +123,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "coeff", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_23_1", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_fpadd503_5_Pipeline_VITIS_LOOP_23_1_fu_22.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_fpadd503_5_Pipeline_VITIS_LOOP_28_2_fu_32", "Parent" : "0", "Child" : ["4", "5"],
 		"CDFG" : "fpadd503_5_Pipeline_VITIS_LOOP_28_2",
@@ -176,13 +176,13 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	fpadd503_5 {
 		R_X {Type I LastRead 0 FirstWrite -1}
-		R_Z {Type I LastRead 0 FirstWrite -1}
+		R_Z {Type I LastRead 1 FirstWrite -1}
 		coeff {Type IO LastRead 0 FirstWrite 2}
 		p503x2_1 {Type I LastRead -1 FirstWrite -1}}
 	fpadd503_5_Pipeline_VITIS_LOOP_23_1 {
 		R_X {Type I LastRead 0 FirstWrite -1}
-		R_Z {Type I LastRead 0 FirstWrite -1}
-		coeff {Type O LastRead -1 FirstWrite 2}}
+		R_Z {Type I LastRead 1 FirstWrite -1}
+		coeff {Type O LastRead -1 FirstWrite 3}}
 	fpadd503_5_Pipeline_VITIS_LOOP_28_2 {
 		coeff {Type IO LastRead 0 FirstWrite 2}
 		carry_175_out {Type O LastRead -1 FirstWrite 0}
@@ -195,8 +195,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "76", "Max" : "76"}
-	, {"Name" : "Interval", "Min" : "76", "Max" : "76"}
+	{"Name" : "Latency", "Min" : "69", "Max" : "69"}
+	, {"Name" : "Interval", "Min" : "69", "Max" : "69"}
 ]}
 
 set PipelineEnableSignalInfo {[

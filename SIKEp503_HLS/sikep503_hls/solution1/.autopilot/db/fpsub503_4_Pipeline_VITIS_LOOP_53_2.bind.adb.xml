@@ -425,26 +425,11 @@ for.inc32.split:13 %p503x2_1_load = load i3 %p503x2_1_addr
 ]]></Node>
 <StgValue><ssdm name="p503x2_1_load"/></StgValue>
 </operation>
-
-<operation id="31" st_id="2" stage="1" lat="1">
-<core>LogicGate</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="31" bw="64" op_0_bw="64" op_1_bw="64">
-<![CDATA[
-for.inc32.split:14 %and_ln54 = and i64 %p503x2_1_load, i64 %sext_ln45_cast
-
-]]></Node>
-<StgValue><ssdm name="and_ln54"/></StgValue>
-</operation>
 </state>
 
 <state id="3" st_id="4">
 
-<operation id="32" st_id="3" stage="1" lat="1">
+<operation id="31" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -453,13 +438,13 @@ for.inc32.split:14 %and_ln54 = and i64 %p503x2_1_load, i64 %sext_ln45_cast
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc32.split:1 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
+for.inc32.split:1 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln44"/></StgValue>
 </operation>
 
-<operation id="33" st_id="3" stage="1" lat="1">
+<operation id="32" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -474,7 +459,7 @@ for.inc32.split:2 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_Spe
 <StgValue><ssdm name="speclooptripcount_ln44"/></StgValue>
 </operation>
 
-<operation id="34" st_id="3" stage="1" lat="1">
+<operation id="33" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -483,10 +468,25 @@ for.inc32.split:2 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc32.split:3 %specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19
+for.inc32.split:3 %specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln53"/></StgValue>
+</operation>
+
+<operation id="34" st_id="3" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="31" bw="64" op_0_bw="64" op_1_bw="64">
+<![CDATA[
+for.inc32.split:14 %and_ln54 = and i64 %p503x2_1_load, i64 %sext_ln45_cast
+
+]]></Node>
+<StgValue><ssdm name="and_ln54"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">
@@ -810,35 +810,35 @@ for.inc32.split:29 %br_ln53 = br void %for.inc32
 </dataflow>
 <dataflow id="116" from="p503x2_1_addr" to="p503x2_1_load" fromId="24" toId="30">
 </dataflow>
-<dataflow id="117" from="p503x2_1_load" to="and_ln54" fromId="30" toId="31">
+<dataflow id="118" from="_ssdm_op_SpecPipeline" to="specpipeline_ln44" fromId="117" toId="31">
 </dataflow>
-<dataflow id="118" from="sext_ln45_cast" to="and_ln54" fromId="9" toId="31">
+<dataflow id="120" from="StgValue_119" to="specpipeline_ln44" fromId="119" toId="31">
 </dataflow>
-<dataflow id="120" from="_ssdm_op_SpecPipeline" to="specpipeline_ln44" fromId="119" toId="32">
+<dataflow id="122" from="StgValue_121" to="specpipeline_ln44" fromId="121" toId="31">
 </dataflow>
-<dataflow id="122" from="StgValue_121" to="specpipeline_ln44" fromId="121" toId="32">
+<dataflow id="123" from="StgValue_121" to="specpipeline_ln44" fromId="121" toId="31">
 </dataflow>
-<dataflow id="124" from="StgValue_123" to="specpipeline_ln44" fromId="123" toId="32">
+<dataflow id="124" from="StgValue_121" to="specpipeline_ln44" fromId="121" toId="31">
 </dataflow>
-<dataflow id="125" from="StgValue_123" to="specpipeline_ln44" fromId="123" toId="32">
+<dataflow id="126" from="empty_56" to="specpipeline_ln44" fromId="125" toId="31">
 </dataflow>
-<dataflow id="126" from="StgValue_123" to="specpipeline_ln44" fromId="123" toId="32">
+<dataflow id="128" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln44" fromId="127" toId="32">
 </dataflow>
-<dataflow id="128" from="empty_60" to="specpipeline_ln44" fromId="127" toId="32">
+<dataflow id="130" from="StgValue_129" to="speclooptripcount_ln44" fromId="129" toId="32">
 </dataflow>
-<dataflow id="130" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln44" fromId="129" toId="33">
+<dataflow id="131" from="StgValue_129" to="speclooptripcount_ln44" fromId="129" toId="32">
 </dataflow>
-<dataflow id="132" from="StgValue_131" to="speclooptripcount_ln44" fromId="131" toId="33">
+<dataflow id="132" from="StgValue_129" to="speclooptripcount_ln44" fromId="129" toId="32">
 </dataflow>
-<dataflow id="133" from="StgValue_131" to="speclooptripcount_ln44" fromId="131" toId="33">
+<dataflow id="134" from="_ssdm_op_SpecLoopName" to="specloopname_ln53" fromId="133" toId="33">
 </dataflow>
-<dataflow id="134" from="StgValue_131" to="speclooptripcount_ln44" fromId="131" toId="33">
+<dataflow id="136" from="empty_5" to="specloopname_ln53" fromId="135" toId="33">
 </dataflow>
-<dataflow id="136" from="_ssdm_op_SpecLoopName" to="specloopname_ln53" fromId="135" toId="34">
+<dataflow id="137" from="p503x2_1_load" to="and_ln54" fromId="30" toId="34">
 </dataflow>
-<dataflow id="138" from="empty_19" to="specloopname_ln53" fromId="137" toId="34">
+<dataflow id="138" from="sext_ln45_cast" to="and_ln54" fromId="9" toId="34">
 </dataflow>
-<dataflow id="139" from="and_ln54" to="add_ln54" fromId="31" toId="35">
+<dataflow id="139" from="and_ln54" to="add_ln54" fromId="34" toId="35">
 </dataflow>
 <dataflow id="140" from="tempReg" to="add_ln54" fromId="29" toId="35">
 </dataflow>
@@ -854,7 +854,7 @@ for.inc32.split:29 %br_ln53 = br void %for.inc32
 </dataflow>
 <dataflow id="148" from="tempReg" to="xor_ln54" fromId="29" toId="37">
 </dataflow>
-<dataflow id="149" from="and_ln54" to="xor_ln54_4" fromId="31" toId="38">
+<dataflow id="149" from="and_ln54" to="xor_ln54_4" fromId="34" toId="38">
 </dataflow>
 <dataflow id="150" from="tempReg" to="xor_ln54_4" fromId="29" toId="38">
 </dataflow>

@@ -297,7 +297,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.99</m_delay>
+          <m_delay>0.81</m_delay>
           <m_topoIndex>4</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -757,11 +757,11 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>210</second>
+              <second>83</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>621</second>
+              <second>585</second>
             </item>
           </second>
         </item>
@@ -780,7 +780,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>707</second>
+              <second>676</second>
             </item>
           </second>
         </item>
@@ -823,7 +823,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>25</second>
+              <second>21</second>
             </item>
           </second>
         </item>
@@ -850,7 +850,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -877,7 +877,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -904,7 +904,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -931,7 +931,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>

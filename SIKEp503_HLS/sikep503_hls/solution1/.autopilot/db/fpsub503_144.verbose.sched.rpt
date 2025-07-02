@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_144'
 ================================================================
-* Date:           Tue Jun  3 14:07:50 2025
+* Date:           Wed Jul  2 14:04:02 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.774 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.992 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       33|       33|  0.330 us|  0.330 us|   33|   33|       no|
+    |       26|       26|  0.260 us|  0.260 us|   26|   26|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -77,30 +77,32 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 5.12>
+State 1 <SV = 0> <Delay = 4.08>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%c_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_offset"   --->   Operation 5 'read' 'c_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%b_offset4_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %b_offset4"   --->   Operation 6 'read' 'b_offset4_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%b_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_offset"   --->   Operation 7 'read' 'b_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%a_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset2"   --->   Operation 8 'read' 'a_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 9 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%empty = trunc i32 %a_offset_read"   --->   Operation 10 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%empty_141 = trunc i32 %b_offset_read"   --->   Operation 11 'trunc' 'empty_141' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%empty_143 = trunc i32 %b_offset_read"   --->   Operation 11 'trunc' 'empty_143' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 12 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 13 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_141, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 14 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_143, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 14 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_492 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty, i1 %a_offset2_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 15 'bitconcatenate' 'tmp_492' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [2/2] (5.12ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_47_1, i7 %tmp_492, i64 %a, i7 %tmp_s, i64 %b, i4 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 16 'call' 'call_ln48' <Predicate = true> <Delay = 5.12> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 16 [2/2] (4.08ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_47_1, i7 %tmp_492, i64 %a, i7 %tmp_s, i64 %b, i4 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 16 'call' 'call_ln48' <Predicate = true> <Delay = 4.08> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_47_1, i7 %tmp_492, i64 %a, i7 %tmp_s, i64 %b, i4 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 17 'call' 'call_ln48' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 4.98>
+State 3 <SV = 2> <Delay = 3.76>
 ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 18 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 19 [2/2] (4.98ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_53_2, i4 %tmp, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:48]   --->   Operation 19 'call' 'call_ln48' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 19 [2/2] (3.76ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_53_2, i4 %tmp, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:48]   --->   Operation 19 'call' 'call_ln48' <Predicate = true> <Delay = 3.76> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_53_2, i4 %tmp, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:48]   --->   Operation 20 'call' 'call_ln48' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln56 = ret" [src/generic/fp_generic.c:56]   --->   Operation 21 'ret' 'ret_ln56' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln48 = call void @fpsub503.144_Pipeline_VITIS_LOOP_53_2, i4 %tmp, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:48]   --->   Operation 22 'call' 'call_ln48' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln56 = ret" [src/generic/fp_generic.c:56]   --->   Operation 23 'ret' 'ret_ln56' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -108,18 +110,18 @@ ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln56 = ret" [src/generic/fp_ge
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 5.124ns
+ <State 1>: 4.087ns
 The critical path consists of the following:
 	wire read operation ('c_offset_read') on port 'c_offset' [10]  (0.000 ns)
-	'call' operation 0 bit ('call_ln48', src/generic/fp_generic.c:48) to 'fpsub503.144_Pipeline_VITIS_LOOP_47_1' [21]  (5.124 ns)
+	'call' operation 0 bit ('call_ln48', src/generic/fp_generic.c:48) to 'fpsub503.144_Pipeline_VITIS_LOOP_47_1' [23]  (4.087 ns)
 
  <State 2>: 0.000ns
 The critical path consists of the following:
 
- <State 3>: 4.989ns
+ <State 3>: 3.768ns
 The critical path consists of the following:
-	'load' operation 1 bit ('borrow_loc_load') on local variable 'borrow_loc' [22]  (0.000 ns)
-	'call' operation 0 bit ('call_ln48', src/generic/fp_generic.c:48) to 'fpsub503.144_Pipeline_VITIS_LOOP_53_2' [23]  (4.989 ns)
+	'load' operation 1 bit ('borrow_loc_load') on local variable 'borrow_loc' [24]  (0.000 ns)
+	'call' operation 0 bit ('call_ln48', src/generic/fp_generic.c:48) to 'fpsub503.144_Pipeline_VITIS_LOOP_53_2' [25]  (3.768 ns)
 
  <State 4>: 0.000ns
 The critical path consists of the following:

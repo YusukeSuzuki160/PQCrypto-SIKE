@@ -290,7 +290,7 @@ for.inc.i10.i101.split:1 %R2_X_4_addr = getelementptr i64 %R2_X_4, i64 0, i64 %z
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i10.i101.split:2 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
+for.inc.i10.i101.split:2 %specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln12"/></StgValue>
@@ -320,7 +320,7 @@ for.inc.i10.i101.split:3 %speclooptripcount_ln12 = speclooptripcount void @_ssdm
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i10.i101.split:4 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
+for.inc.i10.i101.split:4 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_33
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln14"/></StgValue>

@@ -195,7 +195,7 @@ entry:5 %ret_ln37 = ret
 
 <ports>
 <port id="21" name="R_Z" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="R_Z"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="R_Z"/><MemPortTyVec>0 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="22" name="b" dir="0" iftype="1">

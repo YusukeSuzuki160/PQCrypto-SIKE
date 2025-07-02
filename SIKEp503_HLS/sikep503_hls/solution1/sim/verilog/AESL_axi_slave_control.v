@@ -43,6 +43,7 @@ module AESL_axi_slave_control (
 //------------------------Parameter----------------------
 `define TV_IN_ct "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvin_ct.dat"
 `define TV_IN_pk "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvin_pk.dat"
+`define TV_IN_ss "../tv/cdatafile/c.sikep503_kem_enc_hw.autotvin_ss.dat"
 parameter ADDR_WIDTH = 6;
 parameter DATA_WIDTH = 32;
 parameter ct_DEPTH = 1;
@@ -51,6 +52,9 @@ parameter ct_c_bitwidth = 64;
 parameter pk_DEPTH = 1;
 reg [31 : 0] pk_OPERATE_DEPTH = 0;
 parameter pk_c_bitwidth = 64;
+parameter ss_DEPTH = 1;
+reg [31 : 0] ss_OPERATE_DEPTH = 0;
+parameter ss_c_bitwidth = 64;
 parameter START_ADDR = 0;
 parameter sikep503_kem_enc_hw_continue_addr = 0;
 parameter sikep503_kem_enc_hw_auto_start_addr = 0;
@@ -105,6 +109,9 @@ reg ct_write_data_finish;
 reg [pk_c_bitwidth - 1 : 0] mem_pk [pk_DEPTH - 1 : 0] = '{default : 'h0};
 reg [DATA_WIDTH-1 : 0] image_mem_pk [ (pk_c_bitwidth+DATA_WIDTH-1)/DATA_WIDTH * pk_DEPTH -1 : 0] = '{default : 'hz};
 reg pk_write_data_finish;
+reg [ss_c_bitwidth - 1 : 0] mem_ss [ss_DEPTH - 1 : 0] = '{default : 'h0};
+reg [DATA_WIDTH-1 : 0] image_mem_ss [ (ss_c_bitwidth+DATA_WIDTH-1)/DATA_WIDTH * ss_DEPTH -1 : 0] = '{default : 'hz};
+reg ss_write_data_finish;
 reg AESL_ready_out_index_reg = 0;
 reg AESL_write_start_finish = 0;
 reg AESL_ready_reg;
@@ -116,6 +123,7 @@ reg process_0_finish = 0;
 reg process_1_finish = 0;
 reg process_2_finish = 0;
 reg process_3_finish = 0;
+reg process_4_finish = 0;
 //write ct reg
 reg [31 : 0] write_ct_count = 0;
 reg [31 : 0] ct_diff_count = 0;
@@ -126,6 +134,11 @@ reg [31 : 0] write_pk_count = 0;
 reg [31 : 0] pk_diff_count = 0;
 reg write_pk_run_flag = 0;
 reg write_one_pk_data_done = 0;
+//write ss reg
+reg [31 : 0] write_ss_count = 0;
+reg [31 : 0] ss_diff_count = 0;
+reg write_ss_run_flag = 0;
+reg write_one_ss_data_done = 0;
 reg [31 : 0] write_start_count = 0;
 reg write_start_run_flag = 0;
 
@@ -148,13 +161,13 @@ assign TRAN_control_write_start_finish = AESL_write_start_finish;
 assign TRAN_control_done_out = AESL_done_index_reg;
 assign TRAN_control_ready_out = AESL_ready_out_index_reg;
 assign TRAN_control_idle_out = AESL_idle_index_reg;
-assign TRAN_control_write_data_finish = 1 & ct_write_data_finish & pk_write_data_finish;
+assign TRAN_control_write_data_finish = 1 & ct_write_data_finish & pk_write_data_finish & ss_write_data_finish;
 always @(TRAN_control_ready_in or ready_initial) 
 begin
     AESL_ready_reg <= TRAN_control_ready_in | ready_initial;
 end
 
-always @(reset or process_0_finish or process_1_finish or process_2_finish or process_3_finish ) begin
+always @(reset or process_0_finish or process_1_finish or process_2_finish or process_3_finish or process_4_finish ) begin
     if (reset == 0) begin
         ongoing_process_number <= 0;
     end
@@ -168,6 +181,9 @@ always @(reset or process_0_finish or process_1_finish or process_2_finish or pr
             ongoing_process_number <= ongoing_process_number + 1;
     end
     else if (ongoing_process_number == 3 && process_3_finish == 1) begin
+            ongoing_process_number <= ongoing_process_number + 1;
+    end
+    else if (ongoing_process_number == 4 && process_4_finish == 1) begin
             ongoing_process_number <= 0;
     end
 end
@@ -627,6 +643,148 @@ initial begin : write_pk
     end    
 end
 
+always @(reset or posedge clk) begin
+    if (reset == 0) begin
+        write_ss_run_flag <= 0; 
+        count_operate_depth_by_bitwidth_and_depth (ss_c_bitwidth, ss_DEPTH, ss_OPERATE_DEPTH);
+    end
+    else begin
+        if (AESL_ready_reg === 1) begin
+            write_ss_run_flag <= 1; 
+        end
+        else if ((write_one_ss_data_done == 1 && write_ss_count == ss_diff_count - 1) || ss_diff_count == 0) begin
+            write_ss_run_flag <= 0; 
+        end
+    end
+end
+
+always @(reset or posedge clk) begin
+    if (reset == 0) begin
+        write_ss_count = 0;
+    end
+    else begin
+        if (AESL_ready_reg === 1) begin
+            write_ss_count = 0;
+        end
+        if (write_one_ss_data_done === 1) begin
+            write_ss_count = write_ss_count + 1;
+        end
+    end
+end
+
+always @(reset or posedge clk) begin
+    if (reset == 0) begin
+        ss_write_data_finish <= 0;
+    end
+    else begin
+        if (TRAN_control_start_in === 1) begin
+            ss_write_data_finish <= 0;
+        end
+        if (write_ss_run_flag == 1 && write_ss_count == ss_diff_count) begin
+            ss_write_data_finish <= 1;
+        end
+    end
+end
+
+initial begin : initial_diff_counter_ss
+    integer four_byte_num;
+    integer ceil_align_to_pow_of_two_four_byte_num;
+    integer c_bitwidth;
+    integer i;
+    integer j;
+    integer k;
+    reg [31 : 0] ss_data_tmp_reg;
+    wait(reset === 1);
+    @(posedge clk);
+    c_bitwidth = ss_c_bitwidth;
+    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num);
+    ceil_align_to_pow_of_two_four_byte_num = ceil_align_to_pow_of_two(four_byte_num);
+    while (1) begin
+        wait (AESL_ready_reg === 1);
+        ss_diff_count = 0;
+
+        for (k = 0; k < ss_OPERATE_DEPTH; k = k + 1) begin
+            for (i = 0; i < four_byte_num; i = i + 1) begin
+                if (ss_c_bitwidth < 32) begin
+                    ss_data_tmp_reg = mem_ss[k];
+                end
+                else begin
+                    for (j = 0; j < 32; j = j + 1) begin
+                        if (i*32 + j < ss_c_bitwidth) begin
+                            ss_data_tmp_reg[j] = mem_ss[k][i*32 + j];
+                        end
+                        else begin
+                            ss_data_tmp_reg[j] = 0;
+                        end
+                    end
+                end
+                if(image_mem_ss[k * four_byte_num  + i]!==ss_data_tmp_reg) begin
+                ss_diff_count = ss_diff_count + 1;
+                end
+            end
+        end
+
+        @(posedge clk);
+    end
+end
+
+initial begin : write_ss
+    integer write_ss_resp;
+    integer process_num ;
+    integer get_ack;
+    integer four_byte_num;
+    integer ceil_align_to_pow_of_two_four_byte_num;
+    integer c_bitwidth;
+    integer i;
+    integer j;
+    integer check_ss_count;
+    reg [31 : 0] ss_data_tmp_reg;
+    wait(reset === 1);
+    @(posedge clk);
+    c_bitwidth = ss_c_bitwidth;
+    process_num = 3;
+    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num);
+    ceil_align_to_pow_of_two_four_byte_num = ceil_align_to_pow_of_two(four_byte_num);
+    while (1) begin
+        process_3_finish <= 0;
+
+        for (check_ss_count = 0; check_ss_count < ss_OPERATE_DEPTH; check_ss_count = check_ss_count + 1) begin
+            wait (ongoing_process_number === process_num && process_busy === 0);
+            get_ack = 1;
+            if (write_ss_run_flag === 1 && get_ack === 1) begin
+                process_busy = 1;
+                //write ss data 
+                for (i = 0; i < four_byte_num; i = i + 1) begin
+                    if (ss_c_bitwidth < 32) begin
+                        ss_data_tmp_reg = mem_ss[check_ss_count];
+                    end
+                    else begin
+                        for (j = 0; j < 32; j = j + 1) begin
+                            if (i*32 + j < ss_c_bitwidth) begin
+                                ss_data_tmp_reg[j] = mem_ss[check_ss_count][i*32 + j];
+                            end
+                            else begin
+                                ss_data_tmp_reg[j] = 0;
+                            end
+                        end
+                    end
+                    if(image_mem_ss[check_ss_count * four_byte_num  + i]!==ss_data_tmp_reg) begin
+                        image_mem_ss[check_ss_count * four_byte_num + i]=ss_data_tmp_reg;
+                        write (ss_data_in_addr + check_ss_count * ceil_align_to_pow_of_two_four_byte_num * 4 + i * 4, ss_data_tmp_reg, write_ss_resp);
+                        write_one_ss_data_done <= 1;
+                        @(posedge clk);
+                        write_one_ss_data_done <= 0;
+                    end
+                end
+            end
+            process_busy = 0;
+        end
+
+        process_3_finish <= 1;
+        @(posedge clk);
+    end    
+end
+
 
 always @(reset or posedge clk) begin
     if (reset == 0) begin
@@ -653,9 +811,9 @@ initial begin : write_start
     integer write_start_resp;
     wait(reset === 1);
     @(posedge clk);
-    process_num = 3;
+    process_num = 4;
     while (1) begin
-        process_3_finish = 0;
+        process_4_finish = 0;
         if (ongoing_process_number === process_num && process_busy === 0 ) begin
             if (write_start_run_flag === 1) begin
                 process_busy = 1;
@@ -667,7 +825,7 @@ initial begin : write_start
                 @(posedge clk);
                 AESL_write_start_finish <= 0;
             end
-            process_3_finish <= 1;
+            process_4_finish <= 1;
         end 
         @(posedge clk);
     end
@@ -914,6 +1072,139 @@ initial begin : read_pk_file_process
 end 
  
 task write_binary_pk;
+    input integer fp;
+    input reg[64-1:0] in;
+    input integer in_bw;
+    reg [63:0] tmp_long;
+    reg[64-1:0] local_in;
+    integer char_num;
+    integer long_num;
+    integer i;
+    integer j;
+    begin
+        long_num = (in_bw + 63) / 64;
+        char_num = ((in_bw - 1) % 64 + 7) / 8;
+        for(i=long_num;i>0;i=i-1) begin
+             local_in = in;
+             tmp_long = local_in >> ((i-1)*64);
+             for(j=0;j<64;j=j+1)
+                 if (tmp_long[j] === 1'bx)
+                     tmp_long[j] = 1'b0;
+             if (i == long_num) begin
+                 case(char_num)
+                     1: $fwrite(fp,"%c",tmp_long[7:0]);
+                     2: $fwrite(fp,"%c%c",tmp_long[15:8],tmp_long[7:0]);
+                     3: $fwrite(fp,"%c%c%c",tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     4: $fwrite(fp,"%c%c%c%c",tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     5: $fwrite(fp,"%c%c%c%c%c",tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     6: $fwrite(fp,"%c%c%c%c%c%c",tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     7: $fwrite(fp,"%c%c%c%c%c%c%c",tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     8: $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     default: ;
+                 endcase
+             end
+             else begin
+                 $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+             end
+        end
+    end
+endtask;
+//------------------------Read file------------------------ 
+ 
+// Read data from file 
+initial begin : read_ss_file_process 
+  integer fp; 
+  integer ret; 
+  integer factor; 
+  reg [151 : 0] token; 
+  reg [151 : 0] token_tmp; 
+  //reg [ss_c_bitwidth - 1 : 0] token_tmp; 
+  reg [DATA_WIDTH - 1 : 0] tmp_cache_mem; 
+  reg [ 8*5 : 1] str;
+    reg [63:0] trans_depth;
+  integer transaction_idx; 
+  integer i; 
+  transaction_idx = 0; 
+  tmp_cache_mem [DATA_WIDTH - 1 : 0] = 0;
+  count_seperate_factor_by_bitwidth (ss_c_bitwidth , factor);
+  fp = $fopen(`TV_IN_ss ,"r"); 
+  if(fp == 0) begin                               // Failed to open file 
+      $display("Failed to open file \"%s\"!", `TV_IN_ss); 
+      $finish; 
+  end 
+  read_token(fp, token); 
+  if (token != "[[[runtime]]]") begin             // Illegal format 
+      $display("ERROR: Simulation using HLS TB failed.");
+      $finish; 
+  end 
+  read_token(fp, token); 
+  while (token != "[[[/runtime]]]") begin 
+      if (token != "[[transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token);                        // skip transaction number 
+      @(posedge clk);
+      # 0.2;
+      while(AESL_ready_reg !== 1) begin
+          @(posedge clk); 
+          # 0.2;
+      end
+      for(i = 0; i < ss_DEPTH; i = i + 1) begin 
+          read_token(fp, token); 
+          ret = $sscanf(token, "0x%x", token_tmp); 
+          if (factor == 4) begin
+              if (i%factor == 0) begin
+                  tmp_cache_mem [7 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  tmp_cache_mem [15 : 8] = token_tmp;
+              end
+              if (i%factor == 2) begin
+                  tmp_cache_mem [23 : 16] = token_tmp;
+              end
+              if (i%factor == 3) begin
+                  tmp_cache_mem [31 : 24] = token_tmp;
+                  mem_ss [i/factor] = tmp_cache_mem;
+                  tmp_cache_mem [DATA_WIDTH - 1 : 0] = 0;
+              end
+          end
+          if (factor == 2) begin
+              if (i%factor == 0) begin
+                  tmp_cache_mem [15 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  tmp_cache_mem [31 : 16] = token_tmp;
+                  mem_ss [i/factor] = tmp_cache_mem;
+                  tmp_cache_mem [DATA_WIDTH - 1: 0] = 0;
+              end
+          end
+          if (factor == 1) begin
+              mem_ss [i] = token_tmp;
+          end
+      end 
+      if (factor == 4) begin
+          if (i%factor != 0) begin
+              mem_ss [i/factor] = tmp_cache_mem;
+          end
+      end
+      if (factor == 2) begin
+          if (i%factor != 0) begin
+              mem_ss [i/factor] = tmp_cache_mem;
+          end
+      end 
+      read_token(fp, token); 
+      if(token != "[[/transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token); 
+      transaction_idx = transaction_idx + 1; 
+  end 
+  $fclose(fp); 
+end 
+ 
+task write_binary_ss;
     input integer fp;
     input reg[64-1:0] in;
     input integer in_bw;

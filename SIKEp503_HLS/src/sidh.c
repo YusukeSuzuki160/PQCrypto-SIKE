@@ -81,10 +81,16 @@ void random_mod_order_B(unsigned char *random_digits)
 }
 
 int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *PublicKeyA)
-{ // Alice's ephemeral public key generation
-  // Input:  a private key PrivateKeyA in the range [0, 2^eA - 1].
-  // Output: the public key PublicKeyA consisting of 3 elements in GF(p^2) which are encoded by removing leading 0 bytes.
+{
+#pragma HLS ALLOCATION instances = fp2mul_mont limit = 1 function
+#pragma HLS ALLOCATION instances = fp2add limit = 1 function
+#pragma HLS ALLOCATION instances = fp2sub limit = 1 function
+#pragma HLS ALLOCATION instances = eval_4_isog limit = 1 function
+#pragma HLS ALLOCATION instances = eval_3_isog limit = 1 function
+#pragma HLS ALLOCATION instances = xDBLe limit = 1 function
+#pragma HLS ALLOCATION instances = xTPLe limit = 1 function
     point_proj_t R, phiP = {0}, phiQ = {0}, phiR = {0}, pts[MAX_INT_POINTS_ALICE];
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
     f2elm_t XPA, XQA, XRA, coeff[3], A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[MAX_INT_POINTS_ALICE], npts = 0, ii = 0;
 
@@ -113,9 +119,10 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     index = 0;
     for (row = 1; row < MAX_Alice; row++)
     {
+#pragma HLS unroll off
         for (int j = 0; j < MAX_Alice - row; j++)
         {
-#pragma HLS loop_tripcount min = 0 max = MAX_Alice avg = MAX_Alice / 2
+#pragma HLS unroll off
             if (index < MAX_Alice - row)
             {
                 fp2copy(R->X, pts[npts]->X);
@@ -171,6 +178,7 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
   // Input:  a private key PrivateKeyB in the range [0, 2^Floor(Log(2,oB)) - 1].
   // Output: the public key PublicKeyB consisting of 3 elements in GF(p^2) which are encoded by removing leading 0 bytes.
     point_proj_t R, phiP = {0}, phiQ = {0}, phiR = {0}, pts[MAX_INT_POINTS_BOB];
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
     f2elm_t XPB, XQB, XRB, coeff[3], A24plus = {0}, A24minus = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[MAX_INT_POINTS_BOB], npts = 0, ii = 0;
 
@@ -194,9 +202,10 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
     index = 0;
     for (row = 1; row < MAX_Bob; row++)
     {
+#pragma HLS unroll off
         for (int j = 0; j < MAX_Bob - row; j++)
         {
-#pragma HLS loop_tripcount min = 0 max = MAX_Bob avg = MAX_Bob / 2
+#pragma HLS unroll off
             if (index < MAX_Bob - row)
             {
                 fp2copy(R->X, pts[npts]->X);
@@ -248,6 +257,7 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
   //         Bob's PublicKeyB consists of 3 elements in GF(p^2) encoded by removing leading 0 bytes.
   // Output: a shared secret SharedSecretA that consists of one element in GF(p^2) encoded by removing leading 0 bytes.
     point_proj_t R, pts[MAX_INT_POINTS_ALICE];
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
     f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[MAX_INT_POINTS_ALICE], npts = 0, ii = 0;
@@ -281,9 +291,10 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     index = 0;
     for (row = 1; row < MAX_Alice; row++)
     {
+#pragma HLS unroll off
         for (int j = 0; j < MAX_Alice - row; j++)
         {
-#pragma HLS loop_tripcount min = 0 max = MAX_Alice avg = MAX_Alice / 2
+#pragma HLS unroll off
             if (index < MAX_Alice - row)
             {
                 fp2copy(R->X, pts[npts]->X);
@@ -329,6 +340,7 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
   //         Alice's PublicKeyA consists of 3 elements in GF(p^2) encoded by removing leading 0 bytes.
   // Output: a shared secret SharedSecretB that consists of one element in GF(p^2) encoded by removing leading 0 bytes.
     point_proj_t R, pts[MAX_INT_POINTS_BOB];
+#pragma HLS RESOURCE variable = pts core = RAM_1P_BRAM
     f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, A24minus = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[MAX_INT_POINTS_BOB], npts = 0, ii = 0;
@@ -351,9 +363,10 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
     index = 0;
     for (row = 1; row < MAX_Bob; row++)
     {
+#pragma HLS unroll off
         for (int j = 0; j < MAX_Bob - row; j++)
         {
-#pragma HLS loop_tripcount min = 1 max = MAX_Bob avg = MAX_Bob / 2
+#pragma HLS unroll off
             if (index < MAX_Bob - row)
             {
                 fp2copy(R->X, pts[npts]->X);

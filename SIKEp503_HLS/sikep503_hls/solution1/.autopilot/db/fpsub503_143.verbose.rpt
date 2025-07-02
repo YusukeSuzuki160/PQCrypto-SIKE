@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_143'
 ================================================================
-* Date:           Tue Jun  3 14:12:12 2025
+* Date:           Wed Jul  2 14:08:06 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.832 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.992 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       33|       33|  0.330 us|  0.330 us|   33|   33|       no|
+    |       26|       26|  0.260 us|  0.260 us|   26|   26|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -39,7 +39,7 @@
         |                     Instance                    |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
         |grp_fpsub503_143_Pipeline_VITIS_LOOP_47_1_fu_32  |fpsub503_143_Pipeline_VITIS_LOOP_47_1  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpsub503_143_Pipeline_VITIS_LOOP_53_2_fu_44  |fpsub503_143_Pipeline_VITIS_LOOP_53_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpsub503_143_Pipeline_VITIS_LOOP_53_2_fu_44  |fpsub503_143_Pipeline_VITIS_LOOP_53_2  |       12|       12|  0.120 us|  0.120 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -51,33 +51,33 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+-----------------+---------+-----+--------+-------+-----+
-|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
-+-----------------+---------+-----+--------+-------+-----+
-|DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       -|      -|    -|
-|FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|     420|   1338|    -|
-|Memory           |        -|    -|       -|      -|    -|
-|Multiplexer      |        -|    -|       0|     90|    -|
-|Register         |        -|    -|       7|      -|    -|
-+-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     427|   1428|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Available        |      280|  220|  106400|  53200|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|      2|    0|
-+-----------------+---------+-----+--------+-------+-----+
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       -|       -|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        0|    -|     490|    1300|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      82|    -|
+|Register         |        -|    -|       7|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|     497|    1382|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |     1090|  900|  437200|  218600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
     * Instance: 
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
     |                     Instance                    |                 Module                | BRAM_18K| DSP|  FF | LUT | URAM|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
-    |grp_fpsub503_143_Pipeline_VITIS_LOOP_47_1_fu_32  |fpsub503_143_Pipeline_VITIS_LOOP_47_1  |        0|   0|   85|  625|    0|
-    |grp_fpsub503_143_Pipeline_VITIS_LOOP_53_2_fu_44  |fpsub503_143_Pipeline_VITIS_LOOP_53_2  |        0|   0|  335|  713|    0|
+    |grp_fpsub503_143_Pipeline_VITIS_LOOP_47_1_fu_32  |fpsub503_143_Pipeline_VITIS_LOOP_47_1  |        0|   0|   85|  582|    0|
+    |grp_fpsub503_143_Pipeline_VITIS_LOOP_53_2_fu_44  |fpsub503_143_Pipeline_VITIS_LOOP_53_2  |        0|   0|  405|  718|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
-    |Total                                            |                                       |        0|   0|  420| 1338|    0|
+    |Total                                            |                                       |        0|   0|  490| 1300|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -96,14 +96,14 @@
     +------------+----+-----------+-----+-----------+
     |    Name    | LUT| Input Size| Bits| Total Bits|
     +------------+----+-----------+-----+-----------+
-    |ap_NS_fsm   |  25|          5|    1|          5|
-    |c_address0  |  14|          3|    4|         12|
-    |c_ce0       |  14|          3|    1|          3|
+    |ap_NS_fsm   |  21|          5|    1|          5|
+    |c_address0  |  13|          3|    4|         12|
+    |c_ce0       |  13|          3|    1|          3|
     |c_ce1       |   9|          2|    1|          2|
-    |c_d0        |  14|          3|   64|        192|
-    |c_we0       |  14|          3|    1|          3|
+    |c_d0        |  13|          3|   64|        192|
+    |c_we0       |  13|          3|    1|          3|
     +------------+----+-----------+-----+-----------+
-    |Total       |  90|         19|   72|        217|
+    |Total       |  82|         19|   72|        217|
     +------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -187,18 +187,18 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.73>
+State 1 <SV = 0> <Delay = 0.99>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%c_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_offset"   --->   Operation 5 'read' 'c_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 6 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset_read, i3 0" [src/generic/fp_generic.c:48]   --->   Operation 7 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [2/2] (1.73ns)   --->   "%call_ln48 = call void @fpsub503.143_Pipeline_VITIS_LOOP_47_1, i64 %a, i64 %b, i4 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 8 'call' 'call_ln48' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 8 [2/2] (0.99ns)   --->   "%call_ln48 = call void @fpsub503.143_Pipeline_VITIS_LOOP_47_1, i64 %a, i64 %b, i4 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 8 'call' 'call_ln48' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln48 = call void @fpsub503.143_Pipeline_VITIS_LOOP_47_1, i64 %a, i64 %b, i4 %tmp, i64 %c, i1 %borrow_loc" [src/generic/fp_generic.c:48]   --->   Operation 9 'call' 'call_ln48' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 4.98>
+State 3 <SV = 2> <Delay = 3.76>
 ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 10 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 11 [2/2] (4.98ns)   --->   "%call_ln48 = call void @fpsub503.143_Pipeline_VITIS_LOOP_53_2, i4 %tmp, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:48]   --->   Operation 11 'call' 'call_ln48' <Predicate = true> <Delay = 4.98> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 11 [2/2] (3.76ns)   --->   "%call_ln48 = call void @fpsub503.143_Pipeline_VITIS_LOOP_53_2, i4 %tmp, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:48]   --->   Operation 11 'call' 'call_ln48' <Predicate = true> <Delay = 3.76> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln48 = call void @fpsub503.143_Pipeline_VITIS_LOOP_53_2, i4 %tmp, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1" [src/generic/fp_generic.c:48]   --->   Operation 12 'call' 'call_ln48' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -517,14 +517,14 @@ ret_ln56        (ret           ) [ 00000]
 |----------|-------------------------------------------------|---------|---------|---------|
 | Operation|                 Functional Unit                 |  Delay  |    FF   |   LUT   |
 |----------|-------------------------------------------------|---------|---------|---------|
-|   call   | grp_fpsub503_143_Pipeline_VITIS_LOOP_47_1_fu_32 |  4.764  |    82   |   605   |
-|          | grp_fpsub503_143_Pipeline_VITIS_LOOP_53_2_fu_44 |  3.176  |   270   |   713   |
+|   call   | grp_fpsub503_143_Pipeline_VITIS_LOOP_47_1_fu_32 |  3.894  |    82   |   560   |
+|          | grp_fpsub503_143_Pipeline_VITIS_LOOP_53_2_fu_44 |  2.596  |   210   |   677   |
 |----------|-------------------------------------------------|---------|---------|---------|
 |   read   |             c_offset_read_read_fu_26            |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
 |bitconcatenate|                    tmp_fu_54                    |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
-|   Total  |                                                 |   7.94  |   352   |   1318  |
+|   Total  |                                                 |   6.49  |   292   |   1237  |
 |----------|-------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -546,7 +546,7 @@ N/A
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 | grp_fpsub503_143_Pipeline_VITIS_LOOP_47_1_fu_32 |  p3  |   2  |   4  |    8   ||    0    ||    9    |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|                      Total                      |      |      |      |    8   ||  1.588  ||    0    ||    9    |
+|                      Total                      |      |      |      |    8   ||  1.298  ||    0    ||    9    |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -555,10 +555,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    7   |   352  |  1318  |
+|  Function |    6   |   292  |  1237  |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    1   |    0   |    9   |
 |  Register |    -   |    5   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    9   |   357  |  1327  |
+|   Total   |    7   |   297  |  1246  |
 +-----------+--------+--------+--------+

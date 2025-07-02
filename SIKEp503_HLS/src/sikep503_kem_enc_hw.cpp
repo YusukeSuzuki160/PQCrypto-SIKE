@@ -20,32 +20,16 @@ extern "C"
         unsigned char *ct,
         const unsigned char *pk,
         unsigned char *ss)
-    {
-        // Debug: Print input public key
-        printf("Input Public Key (first 16 bytes): ");
-        for (int i = 0; i < 16; i++)
-        {
-            printf("%02x ", pk[i]);
-        }
-        printf("\n");
+    {;
 
-        // Call the encryption function
-        crypto_kem_enc(ct, ss, pk);
+#pragma HLS INTERFACE m_axi     port=ct offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi     port=pk offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi     port=ss offset=slave bundle=gmem
+#pragma HLS INTERFACE s_axilite port=ct bundle=control
+#pragma HLS INTERFACE s_axilite port=pk bundle=control
+#pragma HLS INTERFACE s_axilite port=ss bundle=control
+#pragma HLS INTERFACE s_axilite port=return bundle=control
 
-        // Debug: Print output ciphertext
-        printf("Output Ciphertext (first 16 bytes): ");
-        for (int i = 0; i < 16; i++)
-        {
-            printf("%02x ", ct[i]);
-        }
-        printf("\n");
-
-        // Debug: Print output shared secret
-        printf("Output Shared Secret (first 16 bytes): ");
-        for (int i = 0; i < 16; i++)
-        {
-            printf("%02x ", ss[i]);
-        }
-        printf("\n");
+    crypto_kem_enc(ct, ss, pk);
     }
 }

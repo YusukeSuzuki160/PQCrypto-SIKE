@@ -477,7 +477,7 @@ for.inc.split:5 %c_addr = getelementptr i64 %c, i64 0, i64 %zext_ln48_36
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:6 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60
+for.inc.split:6 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln44"/></StgValue>
@@ -509,7 +509,7 @@ for.inc.split:7 %speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecL
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:8 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40
+for.inc.split:8 %specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln47"/></StgValue>

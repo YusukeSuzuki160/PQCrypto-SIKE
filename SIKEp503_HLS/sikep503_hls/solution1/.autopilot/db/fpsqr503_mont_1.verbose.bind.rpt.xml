@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpsqr503_mont_1'" level="0">
-<item name = "Date">Tue Jun  3 14:08:52 2025
+<item name = "Date">Wed Jul  2 14:05:00 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg484-1</item>
+<item name = "Target device">xc7z045-ffg900-2</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.040 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">423, 683, 4.230 us, 6.830 us, 423, 683, no</column>
+<column name="">348, 592, 3.480 us, 5.920 us, 348, 592, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_141_2_fu_53">mp_mul_141_2, 212, 310, 2.120 us, 3.100 us, 212, 310, no</column>
-<column name="grp_rdc_mont_142_fu_60">rdc_mont_142, 190, 352, 1.900 us, 3.520 us, 190, 352, no</column>
+<column name="grp_mp_mul_141_2_fu_53">mp_mul_141_2, 167, 265, 1.670 us, 2.650 us, 167, 265, no</column>
+<column name="grp_rdc_mont_142_fu_60">rdc_mont_142, 160, 306, 1.600 us, 3.060 us, 160, 306, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -437,7 +437,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -607,7 +607,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
+				<m_delay>1.89</m_delay>
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -664,7 +664,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
+				<m_delay>1.89</m_delay>
 				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -801,8 +801,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_delay>4.08</m_delay>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -882,7 +882,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -963,7 +963,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1044,7 +1044,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1116,7 +1116,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1188,7 +1188,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1406,7 +1406,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1486,7 +1486,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1564,7 +1564,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1642,7 +1642,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1777,7 +1777,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1859,7 +1859,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.98</m_delay>
+				<m_delay>3.76</m_delay>
 				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1939,7 +1939,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.98</m_delay>
+				<m_delay>3.76</m_delay>
 				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2018,7 +2018,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2096,7 +2096,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.12</m_delay>
+				<m_delay>4.08</m_delay>
 				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2294,8 +2294,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_delay>1.29</m_delay>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_36">
@@ -2392,7 +2392,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
@@ -4641,8 +4641,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>7781</mMinLatency>
-			<mMaxLatency>5939425</mMaxLatency>
+			<mMinLatency>6115</mMinLatency>
+			<mMaxLatency>5020947</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4688,8 +4688,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>1</mMinTripCount>
 			<mMaxTripCount>503</mMaxTripCount>
-			<mMinLatency>7780</mMinLatency>
-			<mMaxLatency>5939424</mMaxLatency>
+			<mMinLatency>6114</mMinLatency>
+			<mMaxLatency>5020946</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4795,140 +4795,140 @@
 		<item>
 			<first>23</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>8</first>
+				<first>7</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>12</first>
+				<first>11</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>14</first>
+				<first>13</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>16</first>
+				<first>15</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>16</first>
+				<first>15</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>18</first>
+				<first>17</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>20</first>
+				<first>19</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>22</first>
+				<first>21</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>20</first>
+				<first>19</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>36</first>
 			<second>
-				<first>24</first>
+				<first>23</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
-				<first>24</first>
+				<first>23</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>38</first>
 			<second>
-				<first>26</first>
+				<first>25</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>28</first>
+				<first>27</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>40</first>
 			<second>
-				<first>30</first>
+				<first>29</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>28</first>
+				<first>27</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>32</first>
+				<first>31</first>
 				<second>1</second>
 			</second>
 		</item>
@@ -4942,7 +4942,7 @@
 		<item>
 			<first>44</first>
 			<second>
-				<first>33</first>
+				<first>32</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4975,7 +4975,7 @@
 			<first>45</first>
 			<second>
 				<first>1</first>
-				<second>33</second>
+				<second>32</second>
 			</second>
 		</item>
 		<item>

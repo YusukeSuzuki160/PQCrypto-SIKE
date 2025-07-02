@@ -1750,15 +1750,15 @@ extern size_t strlcat (char *__restrict __dest,
          const char *__restrict __src, size_t __n)
   __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1, 2))) ;
 # 383 "src/sha3/fips202.c" 2
-# 409 "src/sha3/fips202.c"
+
+
 static void keccak_absorb(uint64_t *s, unsigned int r, const unsigned char *m, unsigned long long int mlen, unsigned char p)
 {
-  unsigned char t[200];
   unsigned long long i;
-  VITIS_LOOP_413_1: while (mlen >= r)
+  VITIS_LOOP_388_1: while (mlen >= r)
   {
 #pragma HLS loop_tripcount min = 100 max = 100
- VITIS_LOOP_416_2: for (i = 0; i < r / 8; ++i)
+ VITIS_LOOP_391_2: for (i = 0; i < r / 8; ++i)
     {
 #pragma HLS loop_tripcount min = 100 max = 100
  s[i] ^= load64(m + 8 * i);
@@ -1767,15 +1767,9 @@ static void keccak_absorb(uint64_t *s, unsigned int r, const unsigned char *m, u
     mlen -= r;
     m += r;
   }
-
-  VITIS_LOOP_426_3: for (i = 0; i < r; ++i)
-  {
-#pragma HLS loop_tripcount min = 500 max = 500
- t[i] = 0;
-  }
-# 444 "src/sha3/fips202.c"
-  VITIS_LOOP_444_4: for (unsigned lane = 0; lane < r / 8; ++lane) {
+  VITIS_LOOP_400_3: for (unsigned lane = 0; lane < r / 8; ++lane) {
 #pragma HLS loop_tripcount min=100 max=100
+
 
 
 
@@ -1805,14 +1799,13 @@ static void keccak_squeezeblocks(unsigned char *h, unsigned long long int nblock
   unsigned int i;
   const unsigned int fixed_r = 136;
 
-  VITIS_LOOP_475_1: while (nblocks > 0)
+  VITIS_LOOP_432_1: while (nblocks > 0)
   {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  KeccakF1600_StatePermute(s);
-    VITIS_LOOP_479_2: for (i = 0; i < (fixed_r >> 3); i++)
+    VITIS_LOOP_436_2: for (i = 0; i < (fixed_r >> 3); i++)
     {
-#pragma HLS loop_tripcount min = 1 max = 503 avg = 252
- store64(h + 8 * i, s[i]);
+      store64(h + 8 * i, s[i]);
     }
     h += fixed_r;
     nblocks--;
@@ -1850,7 +1843,7 @@ void shake128(unsigned char *output, unsigned long long outlen, const unsigned c
   if (outlen)
   {
     keccak_squeezeblocks(t, 1, s, 168);
-    VITIS_LOOP_520_1: for (i = 0; i < outlen; i++)
+    VITIS_LOOP_476_1: for (i = 0; i < outlen; i++)
     {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  output[i] = t[i];
@@ -1865,7 +1858,7 @@ void cshake128_simple_absorb(uint64_t s[25], uint16_t cstm, const unsigned char 
   unsigned char *sep = (unsigned char *)s;
   unsigned int i;
 
-  VITIS_LOOP_535_1: for (i = 0; i < 25; i++)
+  VITIS_LOOP_491_1: for (i = 0; i < 25; i++)
     s[i] = 0;
 
 
@@ -1897,7 +1890,7 @@ void cshake128_simple(unsigned char *output, unsigned long long outlen, uint16_t
 
 
   cshake128_simple_absorb(s, cstm, in, inlen);
-# 581 "src/sha3/fips202.c"
+# 537 "src/sha3/fips202.c"
   keccak_squeezeblocks(output, outlen / 168, s, 168);
   output += (outlen / 168) * 168;
 
@@ -1914,7 +1907,7 @@ void cshake128_simple(unsigned char *output, unsigned long long outlen, uint16_t
 
 
 
-    VITIS_LOOP_597_1: for (i = 0; i < outlen % 168; i++)
+    VITIS_LOOP_553_1: for (i = 0; i < outlen % 168; i++)
     {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  output[i] = t[i];
@@ -1941,7 +1934,7 @@ void shake256(unsigned char *output, unsigned long long outlen, const unsigned c
   unsigned long long nblocks = outlen / 136;
   size_t i;
 
-  VITIS_LOOP_624_1: for (i = 0; i < 25; ++i)
+  VITIS_LOOP_580_1: for (i = 0; i < 25; ++i)
     s[i] = 0;
 
 
@@ -1956,7 +1949,7 @@ void shake256(unsigned char *output, unsigned long long outlen, const unsigned c
   if (outlen)
   {
     keccak_squeezeblocks(t, 1, s, 136);
-    VITIS_LOOP_639_2: for (i = 0; i < outlen; i++)
+    VITIS_LOOP_595_2: for (i = 0; i < outlen; i++)
     {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  output[i] = t[i];
@@ -1971,7 +1964,7 @@ void cshake256_simple_absorb(uint64_t s[25], uint16_t cstm, const unsigned char 
   unsigned char *sep = (unsigned char *)s;
   unsigned int i;
 
-  VITIS_LOOP_654_1: for (i = 0; i < 25; i++)
+  VITIS_LOOP_610_1: for (i = 0; i < 25; i++)
   {
     s[i] = 0;
   }
@@ -2004,7 +1997,7 @@ void cshake256_simple(unsigned char *output, unsigned long long outlen, uint16_t
   unsigned int i;
 
   cshake256_simple_absorb(s, cstm, in, inlen);
-# 698 "src/sha3/fips202.c"
+# 654 "src/sha3/fips202.c"
   keccak_squeezeblocks(output, outlen / 136, s, 136);
   output += (outlen / 136) * 136;
 
@@ -2019,7 +2012,7 @@ void cshake256_simple(unsigned char *output, unsigned long long outlen, uint16_t
 
 
 
-    VITIS_LOOP_712_1: for (i = 0; i < outlen % 136; i++)
+    VITIS_LOOP_668_1: for (i = 0; i < outlen % 136; i++)
     {
 #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
  output[i] = t[i];

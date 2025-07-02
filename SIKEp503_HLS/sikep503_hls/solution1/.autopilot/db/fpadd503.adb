@@ -496,7 +496,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.98</m_delay>
+          <m_delay>3.76</m_delay>
           <m_topoIndex>6</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -633,7 +633,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.99</m_delay>
+          <m_delay>0.81</m_delay>
           <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1111,8 +1111,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>54</mMinLatency>
-        <mMaxLatency>54</mMaxLatency>
+        <mMinLatency>40</mMinLatency>
+        <mMaxLatency>40</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -1320,11 +1320,11 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>207</second>
+              <second>85</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>652</second>
+              <second>586</second>
             </item>
           </second>
         </item>
@@ -1343,7 +1343,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>620</second>
+              <second>584</second>
             </item>
           </second>
         </item>
@@ -1358,11 +1358,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>334</second>
+              <second>215</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>700</second>
+              <second>648</second>
             </item>
           </second>
         </item>
@@ -1405,7 +1405,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>37</second>
+              <second>29</second>
             </item>
           </second>
         </item>
@@ -1432,7 +1432,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1459,7 +1459,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1486,7 +1486,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1513,7 +1513,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1540,7 +1540,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1567,7 +1567,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>

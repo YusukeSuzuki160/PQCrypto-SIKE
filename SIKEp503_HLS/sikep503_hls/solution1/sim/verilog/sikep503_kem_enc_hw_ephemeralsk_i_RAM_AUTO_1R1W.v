@@ -16,7 +16,7 @@ module sikep503_kem_enc_hw_ephemeralsk_i_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 1;
+parameter DataWidth = 8;
 parameter AddressWidth = 5;
 parameter AddressRange = 32;
  

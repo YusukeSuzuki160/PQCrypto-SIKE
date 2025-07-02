@@ -309,7 +309,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.99</m_delay>
+          <m_delay>0.81</m_delay>
           <m_topoIndex>5</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -710,8 +710,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>56</mMinLatency>
-        <mMaxLatency>56</mMaxLatency>
+        <mMinLatency>40</mMinLatency>
+        <mMaxLatency>40</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -903,11 +903,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>206</second>
+              <second>147</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>634</second>
+              <second>582</second>
             </item>
           </second>
         </item>
@@ -922,11 +922,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>408</second>
+              <second>151</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>780</second>
+              <second>648</second>
             </item>
           </second>
         </item>
@@ -941,11 +941,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>410</second>
+              <second>218</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>799</second>
+              <second>712</second>
             </item>
           </second>
         </item>
@@ -963,7 +963,7 @@
         <item_version>0</item_version>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>11</count>
+        <count>13</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -988,7 +988,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>37</second>
+              <second>29</second>
             </item>
           </second>
         </item>
@@ -1015,7 +1015,34 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>c_0_address1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>9</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1042,7 +1069,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1053,7 +1080,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
-              <second>2</second>
+              <second>3</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -1061,7 +1088,7 @@
             </item>
             <item>
               <first>(2Count)</first>
-              <second>2</second>
+              <second>3</second>
             </item>
             <item>
               <first>FF</first>
@@ -1069,7 +1096,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1096,7 +1123,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1123,7 +1150,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1150,7 +1177,34 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>c_1_address1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>9</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1177,7 +1231,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1188,7 +1242,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
-              <second>2</second>
+              <second>3</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -1196,7 +1250,7 @@
             </item>
             <item>
               <first>(2Count)</first>
-              <second>2</second>
+              <second>3</second>
             </item>
             <item>
               <first>FF</first>
@@ -1204,7 +1258,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -1231,7 +1285,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>
@@ -1258,7 +1312,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>17</second>
             </item>
           </second>
         </item>

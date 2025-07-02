@@ -21,7 +21,7 @@ dict set ap_memory_interface_dict c { MEM_WIDTH 64 MEM_SIZE 896 MASTER_TYPE BRAM
 dict set ap_memory_interface_dict t1 { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ c_offset int 3 regular  }
-	{ c int 64 regular {array 112 { 1 1 } 1 1 }  }
+	{ c int 64 regular {array 112 { 1 } 1 1 }  }
 	{ zext_ln352_66 int 7 regular  }
 	{ t1 int 64 regular {array 8 { 0 3 } 0 1 }  }
 }
@@ -34,7 +34,7 @@ set C_modelArgMapList {[
  	{ "Name" : "zext_ln352_66", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
  	{ "Name" : "t1", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 18
+set portNum 15
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -46,9 +46,6 @@ set portList {
 	{ c_address0 sc_out sc_lv 7 signal 1 } 
 	{ c_ce0 sc_out sc_logic 1 signal 1 } 
 	{ c_q0 sc_in sc_lv 64 signal 1 } 
-	{ c_address1 sc_out sc_lv 7 signal 1 } 
-	{ c_ce1 sc_out sc_logic 1 signal 1 } 
-	{ c_q1 sc_in sc_lv 64 signal 1 } 
 	{ zext_ln352_66 sc_in sc_lv 7 signal 2 } 
 	{ t1_address0 sc_out sc_lv 3 signal 3 } 
 	{ t1_ce0 sc_out sc_logic 1 signal 3 } 
@@ -66,9 +63,6 @@ set NewPortList {[
  	{ "name": "c_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "c", "role": "address0" }} , 
  	{ "name": "c_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "ce0" }} , 
  	{ "name": "c_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "q0" }} , 
- 	{ "name": "c_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "c", "role": "address1" }} , 
- 	{ "name": "c_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "ce1" }} , 
- 	{ "name": "c_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "q1" }} , 
  	{ "name": "zext_ln352_66", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "zext_ln352_66", "role": "default" }} , 
  	{ "name": "t1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "t1", "role": "address0" }} , 
  	{ "name": "t1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t1", "role": "ce0" }} , 
@@ -121,7 +115,7 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	c_offset { ap_none {  { c_offset in_data 0 3 } } }
-	c { ap_memory {  { c_address0 mem_address 1 7 }  { c_ce0 mem_ce 1 1 }  { c_q0 mem_dout 0 64 }  { c_address1 MemPortADDR2 1 7 }  { c_ce1 MemPortCE2 1 1 }  { c_q1 MemPortDOUT2 0 64 } } }
+	c { ap_memory {  { c_address0 mem_address 1 7 }  { c_ce0 mem_ce 1 1 }  { c_q0 mem_dout 0 64 } } }
 	zext_ln352_66 { ap_none {  { zext_ln352_66 in_data 0 7 } } }
 	t1 { ap_memory {  { t1_address0 mem_address 1 3 }  { t1_ce0 mem_ce 1 1 }  { t1_we0 mem_we 1 1 }  { t1_d0 mem_din 1 64 } } }
 }

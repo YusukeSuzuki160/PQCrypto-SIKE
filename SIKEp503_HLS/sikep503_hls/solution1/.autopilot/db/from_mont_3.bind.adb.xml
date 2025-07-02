@@ -311,7 +311,7 @@ entry:8 %ret_ln45 = ret
 </StgValue>
 </port>
 <port id="35" name="t_i" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="t_i"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="t_i"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="36" name="one" dir="0" iftype="1">

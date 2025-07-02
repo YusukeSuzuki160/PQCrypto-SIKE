@@ -119,61 +119,61 @@ wire   [4:0] s_addr_24_reg_961;
 reg   [63:0] Aso_reg_967;
 wire    ap_CS_fsm_state14;
 reg   [63:0] Asu_reg_972;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_done;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_idle;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_ready;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asu_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asu_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aba_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aba_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abe_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abe_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abi_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abi_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abo_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abo_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abu_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abu_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aga_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aga_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Age_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Age_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agi_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agi_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ago_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ago_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agu_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agu_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aka_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aka_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ake_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ake_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aki_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aki_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ako_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ako_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aku_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aku_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ama_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ama_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ame_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ame_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ami_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ami_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amo_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amo_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amu_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amu_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asa_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asa_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ase_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ase_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asi_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asi_1_out_ap_vld;
-wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aso_1_out;
-wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aso_1_out_ap_vld;
-reg    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start_reg;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_done;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_idle;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_ready;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asu_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asu_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aba_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aba_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abe_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abe_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abi_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abi_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abo_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abo_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abu_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abu_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aga_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aga_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Age_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Age_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agi_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agi_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ago_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ago_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agu_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agu_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aka_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aka_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ake_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ake_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aki_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aki_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ako_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ako_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aku_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aku_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ama_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ama_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ame_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ame_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ami_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ami_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amo_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amo_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amu_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amu_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asa_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asa_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ase_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ase_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asi_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asi_1_out_ap_vld;
+wire   [63:0] grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aso_1_out;
+wire    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aso_1_out_ap_vld;
+reg    grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start_reg;
 wire    ap_CS_fsm_state15;
 wire    ap_CS_fsm_state27;
 wire    ap_CS_fsm_state26;
@@ -230,16 +230,16 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 28'd1;
-#0 grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start_reg = 1'b0;
+#0 grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1 grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396(
+sikep503_kem_enc_hw_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1 grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start),
-    .ap_done(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_done),
-    .ap_idle(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_idle),
-    .ap_ready(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_ready),
+    .ap_start(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start),
+    .ap_done(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_done),
+    .ap_idle(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_idle),
+    .ap_ready(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_ready),
     .Asu(Asu_reg_972),
     .Aba(Aba_reg_709),
     .Abe(Abe_reg_725),
@@ -265,56 +265,56 @@ sikep503_kem_enc_hw_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1 grp_Kecca
     .Ase(Ase_reg_945),
     .Asi(Asi_reg_950),
     .Aso(Aso_reg_967),
-    .Asu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asu_1_out),
-    .Asu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asu_1_out_ap_vld),
-    .Aba_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aba_1_out),
-    .Aba_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aba_1_out_ap_vld),
-    .Abe_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abe_1_out),
-    .Abe_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abe_1_out_ap_vld),
-    .Abi_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abi_1_out),
-    .Abi_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abi_1_out_ap_vld),
-    .Abo_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abo_1_out),
-    .Abo_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abo_1_out_ap_vld),
-    .Abu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abu_1_out),
-    .Abu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abu_1_out_ap_vld),
-    .Aga_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aga_1_out),
-    .Aga_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aga_1_out_ap_vld),
-    .Age_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Age_1_out),
-    .Age_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Age_1_out_ap_vld),
-    .Agi_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agi_1_out),
-    .Agi_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agi_1_out_ap_vld),
-    .Ago_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ago_1_out),
-    .Ago_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ago_1_out_ap_vld),
-    .Agu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agu_1_out),
-    .Agu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agu_1_out_ap_vld),
-    .Aka_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aka_1_out),
-    .Aka_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aka_1_out_ap_vld),
-    .Ake_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ake_1_out),
-    .Ake_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ake_1_out_ap_vld),
-    .Aki_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aki_1_out),
-    .Aki_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aki_1_out_ap_vld),
-    .Ako_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ako_1_out),
-    .Ako_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ako_1_out_ap_vld),
-    .Aku_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aku_1_out),
-    .Aku_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aku_1_out_ap_vld),
-    .Ama_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ama_1_out),
-    .Ama_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ama_1_out_ap_vld),
-    .Ame_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ame_1_out),
-    .Ame_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ame_1_out_ap_vld),
-    .Ami_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ami_1_out),
-    .Ami_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ami_1_out_ap_vld),
-    .Amo_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amo_1_out),
-    .Amo_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amo_1_out_ap_vld),
-    .Amu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amu_1_out),
-    .Amu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amu_1_out_ap_vld),
-    .Asa_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asa_1_out),
-    .Asa_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asa_1_out_ap_vld),
-    .Ase_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ase_1_out),
-    .Ase_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ase_1_out_ap_vld),
-    .Asi_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asi_1_out),
-    .Asi_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asi_1_out_ap_vld),
-    .Aso_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aso_1_out),
-    .Aso_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aso_1_out_ap_vld)
+    .Asu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asu_1_out),
+    .Asu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asu_1_out_ap_vld),
+    .Aba_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aba_1_out),
+    .Aba_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aba_1_out_ap_vld),
+    .Abe_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abe_1_out),
+    .Abe_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abe_1_out_ap_vld),
+    .Abi_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abi_1_out),
+    .Abi_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abi_1_out_ap_vld),
+    .Abo_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abo_1_out),
+    .Abo_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abo_1_out_ap_vld),
+    .Abu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abu_1_out),
+    .Abu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abu_1_out_ap_vld),
+    .Aga_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aga_1_out),
+    .Aga_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aga_1_out_ap_vld),
+    .Age_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Age_1_out),
+    .Age_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Age_1_out_ap_vld),
+    .Agi_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agi_1_out),
+    .Agi_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agi_1_out_ap_vld),
+    .Ago_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ago_1_out),
+    .Ago_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ago_1_out_ap_vld),
+    .Agu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agu_1_out),
+    .Agu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agu_1_out_ap_vld),
+    .Aka_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aka_1_out),
+    .Aka_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aka_1_out_ap_vld),
+    .Ake_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ake_1_out),
+    .Ake_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ake_1_out_ap_vld),
+    .Aki_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aki_1_out),
+    .Aki_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aki_1_out_ap_vld),
+    .Ako_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ako_1_out),
+    .Ako_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ako_1_out_ap_vld),
+    .Aku_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aku_1_out),
+    .Aku_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aku_1_out_ap_vld),
+    .Ama_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ama_1_out),
+    .Ama_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ama_1_out_ap_vld),
+    .Ame_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ame_1_out),
+    .Ame_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ame_1_out_ap_vld),
+    .Ami_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ami_1_out),
+    .Ami_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ami_1_out_ap_vld),
+    .Amo_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amo_1_out),
+    .Amo_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amo_1_out_ap_vld),
+    .Amu_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amu_1_out),
+    .Amu_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amu_1_out_ap_vld),
+    .Asa_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asa_1_out),
+    .Asa_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asa_1_out_ap_vld),
+    .Ase_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ase_1_out),
+    .Ase_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ase_1_out_ap_vld),
+    .Asi_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asi_1_out),
+    .Asi_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asi_1_out_ap_vld),
+    .Aso_1_out(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aso_1_out),
+    .Aso_1_out_ap_vld(grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aso_1_out_ap_vld)
 );
 
 always @ (posedge ap_clk) begin
@@ -327,12 +327,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start_reg <= 1'b0;
+        grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state14)) begin
-            grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start_reg <= 1'b1;
-        end else if ((grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_ready == 1'b1)) begin
-            grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start_reg <= 1'b0;
+            grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start_reg <= 1'b1;
+        end else if ((grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_ready == 1'b1)) begin
+            grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -438,7 +438,7 @@ assign ap_ST_fsm_state13_blk = 1'b0;
 assign ap_ST_fsm_state14_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_done == 1'b0)) begin
+    if ((grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_done == 1'b0)) begin
         ap_ST_fsm_state15_blk = 1'b1;
     end else begin
         ap_ST_fsm_state15_blk = 1'b0;
@@ -649,29 +649,29 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state27)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asi_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asi_1_out;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asa_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asa_1_out;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amo_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amo_1_out;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ame_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ame_1_out;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aku_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aku_1_out;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aki_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aki_1_out;
     end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aka_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aka_1_out;
     end else if ((1'b1 == ap_CS_fsm_state20)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ago_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ago_1_out;
     end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Age_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Age_1_out;
     end else if ((1'b1 == ap_CS_fsm_state18)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abu_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abu_1_out;
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abi_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abi_1_out;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aba_1_out;
+        s_d0_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aba_1_out;
     end else begin
         s_d0_local = 'bx;
     end
@@ -679,31 +679,31 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state28)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Asu_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Asu_1_out;
     end else if ((1'b1 == ap_CS_fsm_state27)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aso_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aso_1_out;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ase_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ase_1_out;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Amu_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Amu_1_out;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ami_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ami_1_out;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ama_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ama_1_out;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ako_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ako_1_out;
     end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Ake_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Ake_1_out;
     end else if ((1'b1 == ap_CS_fsm_state20)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agu_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agu_1_out;
     end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Agi_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Agi_1_out;
     end else if ((1'b1 == ap_CS_fsm_state18)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Aga_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Aga_1_out;
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abo_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abo_1_out;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_Abe_1_out;
+        s_d1_local = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_Abe_1_out;
     end else begin
         s_d1_local = 'bx;
     end
@@ -774,7 +774,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state15;
         end
         ap_ST_fsm_state15 : begin
-            if (((grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state15))) begin
+            if (((grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state15))) begin
                 ap_NS_fsm = ap_ST_fsm_state16;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state15;
@@ -881,7 +881,7 @@ assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
-assign grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396_ap_start_reg;
+assign grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start = grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_122_1_fu_396_ap_start_reg;
 
 assign s_addr_1_reg_714 = 64'd1;
 

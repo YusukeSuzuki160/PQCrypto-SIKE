@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fp2sqr503_mont_71_72_Pipeline_VITIS_LOOP_47_1'
 ================================================================
-* Date:           Tue Jun  3 14:12:33 2025
+* Date:           Tue Jul  1 16:42:49 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.832 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  5.251 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -50,23 +50,23 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+-----------------+---------+-----+--------+-------+-----+
-|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
-+-----------------+---------+-----+--------+-------+-----+
-|DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|    567|    -|
-|FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        -|    -|       -|      -|    -|
-|Memory           |        -|    -|       -|      -|    -|
-|Multiplexer      |        -|    -|       0|     45|    -|
-|Register         |        -|    -|      85|      -|    -|
-+-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|      85|    612|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Available        |      280|  220|  106400|  53200|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|      1|    0|
-+-----------------+---------+-----+--------+-------+-----+
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     531|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      45|    -|
+|Register         |        -|    -|      85|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      85|     576|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |     1090|  900|  437200|  218600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
     * Instance: 
@@ -85,13 +85,13 @@
     +-------------------------+----------+----+---+----+------------+------------+
     |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-------------------------+----------+----+---+----+------------+------------+
-    |add_ln47_fu_121_p2       |         +|   0|  0|  13|           4|           1|
-    |sub_ln48_fu_215_p2       |         -|   0|  0|  71|          64|          64|
-    |sub_ln95_fu_176_p2       |         -|   0|  0|  71|           1|          64|
-    |tempReg_fu_138_p2        |         -|   0|  0|  71|          64|          64|
-    |and_ln48_fu_200_p2       |       and|   0|  0|   2|           1|           1|
-    |icmp_ln47_fu_115_p2      |      icmp|   0|  0|  13|           4|           5|
-    |borrowReg_fu_206_p2      |        or|   0|  0|   2|           1|           1|
+    |add_ln47_fu_121_p2       |         +|   0|  0|   6|           4|           1|
+    |sub_ln48_fu_215_p2       |         -|   0|  0|  64|          64|          64|
+    |sub_ln95_fu_176_p2       |         -|   0|  0|  64|           1|          64|
+    |tempReg_fu_138_p2        |         -|   0|  0|  64|          64|          64|
+    |and_ln48_fu_200_p2       |       and|   0|  0|   1|           1|           1|
+    |icmp_ln47_fu_115_p2      |      icmp|   0|  0|   7|           4|           5|
+    |borrowReg_fu_206_p2      |        or|   0|  0|   1|           1|           1|
     |or_ln105_fu_156_p2       |        or|   0|  0|  64|          64|          64|
     |or_ln95_fu_181_p2        |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
@@ -100,7 +100,7 @@
     |xor_ln105_fu_144_p2      |       xor|   0|  0|  64|          64|          64|
     |xor_ln48_fu_194_p2       |       xor|   0|  0|   2|           1|           2|
     +-------------------------+----------+----+---+----+------------+------------+
-    |Total                    |          |   0|  0| 567|         461|         524|
+    |Total                    |          |   0|  0| 531|         461|         524|
     +-------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -207,48 +207,48 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 4.91>
+State 1 <SV = 0> <Delay = 3.59>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i_163 = alloca i32 1" [src/generic/fp_generic.c:44->src/fpx.c:159]   --->   Operation 6 'alloca' 'i_163' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (1.58ns)   --->   "%store_ln44 = store i4 0, i4 %i_163" [src/generic/fp_generic.c:44->src/fpx.c:159]   --->   Operation 7 'store' 'store_ln44' <Predicate = true> <Delay = 1.58>
-ST_1 : Operation 8 [1/1] (1.58ns)   --->   "%br_ln0 = br void %for.inc.i"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 7 [1/1] (1.29ns)   --->   "%store_ln44 = store i4 0, i4 %i_163" [src/generic/fp_generic.c:44->src/fpx.c:159]   --->   Operation 7 'store' 'store_ln44' <Predicate = true> <Delay = 1.29>
+ST_1 : Operation 8 [1/1] (1.29ns)   --->   "%br_ln0 = br void %for.inc.i"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 1.29>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = load i4 %i_163" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 9 'load' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (1.73ns)   --->   "%icmp_ln47 = icmp_eq  i4 %i, i4 8" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 10 'icmp' 'icmp_ln47' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (1.73ns)   --->   "%add_ln47 = add i4 %i, i4 1" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 11 'add' 'add_ln47' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.99ns)   --->   "%icmp_ln47 = icmp_eq  i4 %i, i4 8" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 10 'icmp' 'icmp_ln47' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.99ns)   --->   "%add_ln47 = add i4 %i, i4 1" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 11 'add' 'add_ln47' <Predicate = true> <Delay = 0.99> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i4 %i" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 12 'zext' 'zext_ln47' <Predicate = (!icmp_ln47)> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%c_0_addr = getelementptr i64 %c_0, i64 0, i64 %zext_ln47" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 13 'getelementptr' 'c_0_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%c_1_addr = getelementptr i64 %c_1, i64 0, i64 %zext_ln47" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 14 'getelementptr' 'c_1_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_1 : Operation 15 [2/2] (2.32ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 15 'load' 'c_0_load' <Predicate = (!icmp_ln47)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 16 [2/2] (2.32ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 16 'load' 'c_1_load' <Predicate = (!icmp_ln47)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln44 = store i4 %add_ln47, i4 %i_163" [src/generic/fp_generic.c:44->src/fpx.c:159]   --->   Operation 17 'store' 'store_ln44' <Predicate = (!icmp_ln47)> <Delay = 1.58>
+ST_1 : Operation 15 [2/2] (1.75ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 15 'load' 'c_0_load' <Predicate = (!icmp_ln47)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 16 [2/2] (1.75ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 16 'load' 'c_1_load' <Predicate = (!icmp_ln47)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 17 [1/1] (1.29ns)   --->   "%store_ln44 = store i4 %add_ln47, i4 %i_163" [src/generic/fp_generic.c:44->src/fpx.c:159]   --->   Operation 17 'store' 'store_ln44' <Predicate = (!icmp_ln47)> <Delay = 1.29>
 
-State 2 <SV = 1> <Delay = 6.83>
+State 2 <SV = 1> <Delay = 5.25>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%borrow = phi i1 %borrowReg, void %for.inc.i.split, i1 0, void %newFuncRoot"   --->   Operation 18 'phi' 'borrow' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %icmp_ln47, void %for.inc.i.split, void %for.end.i.exitStub" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 19 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 20 'load' 'c_0_load' <Predicate = (!icmp_ln47)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 21 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 21 'load' 'c_1_load' <Predicate = (!icmp_ln47)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 22 [1/1] (3.52ns)   --->   "%tempReg = sub i64 %c_0_load, i64 %c_1_load" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 22 'sub' 'tempReg' <Predicate = (!icmp_ln47)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105 = xor i64 %c_1_load, i64 %c_0_load" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 23 'xor' 'xor_ln105' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_122 = xor i64 %c_1_load, i64 %tempReg" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 24 'xor' 'xor_ln105_122' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%or_ln105 = or i64 %xor_ln105_122, i64 %xor_ln105" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 25 'or' 'or_ln105' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_123 = xor i64 %c_0_load, i64 %or_ln105" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 26 'xor' 'xor_ln105_123' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (0.99ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_123, i32 63" [src/config.h:98->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 27 'bitselect' 'tmp' <Predicate = (!icmp_ln47)> <Delay = 0.99>
+ST_2 : Operation 20 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 20 'load' 'c_0_load' <Predicate = (!icmp_ln47)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 21 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 21 'load' 'c_1_load' <Predicate = (!icmp_ln47)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 22 [1/1] (2.69ns)   --->   "%tempReg = sub i64 %c_0_load, i64 %c_1_load" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 22 'sub' 'tempReg' <Predicate = (!icmp_ln47)> <Delay = 2.69> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.69> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105 = xor i64 %c_1_load, i64 %c_0_load" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 23 'xor' 'xor_ln105' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_122 = xor i64 %c_1_load, i64 %tempReg" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 24 'xor' 'xor_ln105_122' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%or_ln105 = or i64 %xor_ln105_122, i64 %xor_ln105" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 25 'or' 'or_ln105' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_123 = xor i64 %c_0_load, i64 %or_ln105" [src/config.h:105->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 26 'xor' 'xor_ln105_123' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.80ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_123, i32 63" [src/config.h:98->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 27 'bitselect' 'tmp' <Predicate = (!icmp_ln47)> <Delay = 0.80>
 ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%write_ln48 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %borrow_out, i1 %borrow" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 42 'write' 'write_ln48' <Predicate = (icmp_ln47)> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 43 'ret' 'ret_ln0' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_2 : Operation 43 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 43 'ret' 'ret_ln0' <Predicate = (icmp_ln47)> <Delay = 1.29>
 
-State 3 <SV = 2> <Delay = 6.09>
+State 3 <SV = 2> <Delay = 4.79>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/generic/fp_generic.c:44->src/fpx.c:159]   --->   Operation 28 'specpipeline' 'specpipeline_ln44' <Predicate = (!icmp_ln47)> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.c:44->src/fpx.c:159]   --->   Operation 29 'speclooptripcount' 'speclooptripcount_ln44' <Predicate = (!icmp_ln47)> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 30 'specloopname' 'specloopname_ln47' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_3 : Operation 31 [1/1] (3.52ns)   --->   "%sub_ln95 = sub i64 0, i64 %tempReg" [src/config.h:95->src/config.h:100->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 31 'sub' 'sub_ln95' <Predicate = (!icmp_ln47)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%or_ln95 = or i64 %tempReg, i64 %sub_ln95" [src/config.h:95->src/config.h:100->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 32 'or' 'or_ln95' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (2.69ns)   --->   "%sub_ln95 = sub i64 0, i64 %tempReg" [src/config.h:95->src/config.h:100->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 31 'sub' 'sub_ln95' <Predicate = (!icmp_ln47)> <Delay = 2.69> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.69> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%or_ln95 = or i64 %tempReg, i64 %sub_ln95" [src/config.h:95->src/config.h:100->src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 32 'or' 'or_ln95' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_207 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 33 'bitselect' 'tmp_207' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_3 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln48 = xor i1 %tmp_207, i1 1" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 34 'xor' 'xor_ln48' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%and_ln48 = and i1 %borrow, i1 %xor_ln48" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 35 'and' 'and_ln48' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 36 [1/1] (0.99ns) (out node of the LUT)   --->   "%borrowReg = or i1 %and_ln48, i1 %tmp" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 36 'or' 'borrowReg' <Predicate = (!icmp_ln47)> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln48 = xor i1 %tmp_207, i1 1" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 34 'xor' 'xor_ln48' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%and_ln48 = and i1 %borrow, i1 %xor_ln48" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 35 'and' 'and_ln48' <Predicate = (!icmp_ln47)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.80ns) (out node of the LUT)   --->   "%borrowReg = or i1 %and_ln48, i1 %tmp" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 36 'or' 'borrowReg' <Predicate = (!icmp_ln47)> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln48 = zext i1 %borrow" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 37 'zext' 'zext_ln48' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_3 : Operation 38 [1/1] (3.52ns)   --->   "%sub_ln48 = sub i64 %tempReg, i64 %zext_ln48" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 38 'sub' 'sub_ln48' <Predicate = (!icmp_ln47)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (2.69ns)   --->   "%sub_ln48 = sub i64 %tempReg, i64 %zext_ln48" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 38 'sub' 'sub_ln48' <Predicate = (!icmp_ln47)> <Delay = 2.69> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.69> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%t2_addr = getelementptr i64 %t2, i64 0, i64 %zext_ln47" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 39 'getelementptr' 't2_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_3 : Operation 40 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln48 = store i64 %sub_ln48, i3 %t2_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 40 'store' 'store_ln48' <Predicate = (!icmp_ln47)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 40 [1/1] ( I:1.75ns O:1.75ns )   --->   "%store_ln48 = store i64 %sub_ln48, i3 %t2_addr" [src/generic/fp_generic.c:48->src/fpx.c:159]   --->   Operation 40 'store' 'store_ln48' <Predicate = (!icmp_ln47)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln47 = br void %for.inc.i" [src/generic/fp_generic.c:47->src/fpx.c:159]   --->   Operation 41 'br' 'br_ln47' <Predicate = (!icmp_ln47)> <Delay = 0.00>
 
 
@@ -1155,24 +1155,24 @@ ret_ln0                (ret              ) [ 0000]
 |----------|------------------------|---------|---------|
 | Operation|     Functional Unit    |    FF   |   LUT   |
 |----------|------------------------|---------|---------|
-|          |     tempReg_fu_138     |    0    |    71   |
-|    sub   |     sub_ln95_fu_176    |    0    |    71   |
-|          |     sub_ln48_fu_215    |    0    |    71   |
-|----------|------------------------|---------|---------|
 |          |    xor_ln105_fu_144    |    0    |    64   |
 |    xor   |  xor_ln105_122_fu_150  |    0    |    64   |
 |          |  xor_ln105_123_fu_162  |    0    |    64   |
-|          |     xor_ln48_fu_194    |    0    |    2    |
+|          |     xor_ln48_fu_194    |    0    |    1    |
+|----------|------------------------|---------|---------|
+|          |     tempReg_fu_138     |    0    |    64   |
+|    sub   |     sub_ln95_fu_176    |    0    |    64   |
+|          |     sub_ln48_fu_215    |    0    |    64   |
 |----------|------------------------|---------|---------|
 |          |     or_ln105_fu_156    |    0    |    64   |
 |    or    |     or_ln95_fu_181     |    0    |    64   |
-|          |    borrowReg_fu_206    |    0    |    2    |
+|          |    borrowReg_fu_206    |    0    |    1    |
 |----------|------------------------|---------|---------|
-|   icmp   |    icmp_ln47_fu_115    |    0    |    13   |
+|   icmp   |    icmp_ln47_fu_115    |    0    |    6    |
 |----------|------------------------|---------|---------|
-|    add   |     add_ln47_fu_121    |    0    |    13   |
+|    add   |     add_ln47_fu_121    |    0    |    6    |
 |----------|------------------------|---------|---------|
-|    and   |     and_ln48_fu_200    |    0    |    2    |
+|    and   |     and_ln48_fu_200    |    0    |    1    |
 |----------|------------------------|---------|---------|
 |   write  | write_ln48_write_fu_48 |    0    |    0    |
 |----------|------------------------|---------|---------|
@@ -1182,7 +1182,7 @@ ret_ln0                (ret              ) [ 0000]
 | bitselect|       tmp_fu_168       |    0    |    0    |
 |          |     tmp_207_fu_186     |    0    |    0    |
 |----------|------------------------|---------|---------|
-|   Total  |                        |    0    |   565   |
+|   Total  |                        |    0    |   527   |
 |----------|------------------------|---------|---------|
 
 Memories:
@@ -1213,7 +1213,7 @@ N/A
 | grp_access_fu_75 |  p0  |   2  |   3  |    6   ||    0    ||    9    |
 |   borrow_reg_94  |  p0  |   2  |   1  |    2   ||    0    ||    9    |
 |------------------|------|------|------|--------||---------||---------||---------|
-|       Total      |      |      |      |   14   ||  4.764  ||    0    ||    27   |
+|       Total      |      |      |      |   14   ||  3.894  ||    0    ||    27   |
 |------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -1222,10 +1222,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    -   |    0   |   565  |
+|  Function |    -   |    0   |   527  |
 |   Memory  |    -   |    -   |    -   |
-|Multiplexer|    4   |    0   |   27   |
+|Multiplexer|    3   |    0   |   27   |
 |  Register |    -   |   142  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    4   |   142  |   592  |
+|   Total   |    3   |   142  |   554  |
 +-----------+--------+--------+--------+

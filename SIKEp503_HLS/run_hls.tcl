@@ -45,7 +45,7 @@ set_top sikep503_kem_enc_hw
 open_solution "solution1" -flow_target vivado
 
 # Set target device
-set_part {xc7z020clg484-1}
+set_part {xc7z045ffg900-2}
 
 # Set target clock period
 create_clock -period 10

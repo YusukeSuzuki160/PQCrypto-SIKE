@@ -42,7 +42,7 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xc7z020:-clg484:-1
+set TargetInfo xc7z045:-ffg900:-2
 set SourceFiles {sc {} c {../.././src/sha3/fips202.c ../.././src/random/random.c ../.././src/generic/fp_generic.c ../.././src/sikep503_kem_enc_hw.cpp ../.././src/P503.c ../.././src/sike.c ../.././src/sidh.c ../.././src/ec_isogeny.c ../.././src/fpx.c ../.././src/sha3/fips202.h ../.././src/random/random.h ../.././src/api.h ../.././src/config.h ../.././src/sike.h ../.././src/sidh.h ../.././src/ec_isogeny.h ../.././src/fpx.h ../.././src/P503_internal.h ../../src/sha3/fips202.c ../../src/random/random.c ../../src/generic/fp_generic.c ../../src/sikep503_kem_enc_hw.cpp ../../src/P503.c ../../src/sike.c ../../src/sidh.c ../../src/ec_isogeny.c ../../src/fpx.c}}
 set SourceFlags {sc {} c {{ } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} { } {} {} {} {} {} {} {} {} {} {}}}
 set DirectiveFile {}

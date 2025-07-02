@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_11'" level="0">
-<item name = "Date">Tue Jun  3 14:14:53 2025
+<item name = "Date">Tue Jul  1 16:45:06 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg484-1</item>
+<item name = "Target device">xc7z045-ffg900-2</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.774 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.073 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">54, 54, 0.540 us, 0.540 us, 54, 54, no</column>
+<column name="">40, 40, 0.400 us, 0.400 us, 40, 40, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_44">fpadd503_11_Pipeline_VITIS_LOOP_23_1, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_44">fpadd503_11_Pipeline_VITIS_LOOP_23_1, 12, 12, 0.120 us, 0.120 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_55">fpadd503_11_Pipeline_VITIS_LOOP_28_2, 11, 11, 0.110 us, 0.110 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_65">fpadd503_11_Pipeline_VITIS_LOOP_34_3, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_65">fpadd503_11_Pipeline_VITIS_LOOP_34_3, 12, 12, 0.120 us, 0.120 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,21 +52,21 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, -, 818, 1999, -</column>
+<column name="Instance">0, -, 830, 1961, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 157, -</column>
+<column name="Multiplexer">-, -, 0, 131, -</column>
 <column name="Register">-, -, 10, -, -</column>
-<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, ~0, 4, 0</specialColumn>
+<specialColumn name="Available">1090, 900, 437200, 218600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_44">fpadd503_11_Pipeline_VITIS_LOOP_23_1, 0, 0, 207, 653, 0</column>
-<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_55">fpadd503_11_Pipeline_VITIS_LOOP_28_2, 0, 0, 276, 633, 0</column>
-<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_65">fpadd503_11_Pipeline_VITIS_LOOP_34_3, 0, 0, 335, 713, 0</column>
+<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_23_1_fu_44">fpadd503_11_Pipeline_VITIS_LOOP_23_1, 0, 0, 276, 653, 0</column>
+<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_28_2_fu_55">fpadd503_11_Pipeline_VITIS_LOOP_28_2, 0, 0, 149, 590, 0</column>
+<column name="grp_fpadd503_11_Pipeline_VITIS_LOOP_34_3_fu_65">fpadd503_11_Pipeline_VITIS_LOOP_34_3, 0, 0, 405, 718, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -87,13 +87,13 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">37, 7, 1, 7</column>
-<column name="c_address0">20, 4, 4, 16</column>
-<column name="c_address1">20, 4, 4, 16</column>
-<column name="c_ce0">20, 4, 1, 4</column>
-<column name="c_ce1">20, 4, 1, 4</column>
-<column name="c_d0">20, 4, 64, 256</column>
-<column name="c_we0">20, 4, 1, 4</column>
+<column name="ap_NS_fsm">29, 7, 1, 7</column>
+<column name="c_address0">17, 4, 4, 16</column>
+<column name="c_address1">17, 4, 4, 16</column>
+<column name="c_ce0">17, 4, 1, 4</column>
+<column name="c_ce1">17, 4, 1, 4</column>
+<column name="c_d0">17, 4, 64, 256</column>
+<column name="c_we0">17, 4, 1, 4</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">

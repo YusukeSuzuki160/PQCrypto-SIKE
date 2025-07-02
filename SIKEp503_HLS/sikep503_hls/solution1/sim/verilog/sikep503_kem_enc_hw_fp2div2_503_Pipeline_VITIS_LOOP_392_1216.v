@@ -75,7 +75,7 @@ reg   [2:0] c_0_addr_reg_247;
 reg   [2:0] c_1_addr_reg_253;
 wire   [63:0] zext_ln394_fu_140_p1;
 wire   [63:0] zext_ln394_1_fu_164_p1;
-reg   [2:0] i_249_fu_44;
+reg   [2:0] i_244_fu_44;
 wire    ap_loop_init;
 reg   [2:0] ap_sig_allocacmp_i;
 reg    c_0_ce1_local;
@@ -88,9 +88,9 @@ reg    c_1_ce0_local;
 reg   [2:0] c_1_address0_local;
 reg    c_1_we0_local;
 wire   [1:0] tmp_s_fu_122_p4;
-wire   [2:0] tmp_829_cast_fu_132_p3;
+wire   [2:0] tmp_828_cast_fu_132_p3;
 wire   [1:0] tmp_505_fu_146_p4;
-wire   [2:0] tmp_833_cast_fu_156_p3;
+wire   [2:0] tmp_832_cast_fu_156_p3;
 wire   [62:0] tmp_503_fu_170_p4;
 wire   [62:0] tmp_504_fu_180_p4;
 wire   [0:0] trunc_ln394_fu_197_p1;
@@ -111,7 +111,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_249_fu_44 = 3'd0;
+#0 i_244_fu_44 = 3'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -152,9 +152,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_249_fu_44 <= 3'd0;
+        i_244_fu_44 <= 3'd0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_249_fu_44 <= add_ln394_reg_236;
+        i_244_fu_44 <= add_ln394_reg_236;
     end
 end
 
@@ -213,7 +213,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 3'd0;
     end else begin
-        ap_sig_allocacmp_i = i_249_fu_44;
+        ap_sig_allocacmp_i = i_244_fu_44;
     end
 end
 
@@ -359,9 +359,9 @@ assign tmp_504_fu_180_p4 = {{c_0_q1[63:1]}};
 
 assign tmp_505_fu_146_p4 = {{add_ln394_fu_112_p2[2:1]}};
 
-assign tmp_829_cast_fu_132_p3 = {{1'd1}, {tmp_s_fu_122_p4}};
+assign tmp_828_cast_fu_132_p3 = {{1'd1}, {tmp_s_fu_122_p4}};
 
-assign tmp_833_cast_fu_156_p3 = {{1'd1}, {tmp_505_fu_146_p4}};
+assign tmp_832_cast_fu_156_p3 = {{1'd1}, {tmp_505_fu_146_p4}};
 
 assign tmp_s_fu_122_p4 = {{ap_sig_allocacmp_i[2:1]}};
 
@@ -371,9 +371,9 @@ assign trunc_ln394_1_fu_201_p1 = c_1_q0[0:0];
 
 assign trunc_ln394_fu_197_p1 = c_0_q0[0:0];
 
-assign zext_ln394_1_fu_164_p1 = tmp_833_cast_fu_156_p3;
+assign zext_ln394_1_fu_164_p1 = tmp_832_cast_fu_156_p3;
 
-assign zext_ln394_fu_140_p1 = tmp_829_cast_fu_132_p3;
+assign zext_ln394_fu_140_p1 = tmp_828_cast_fu_132_p3;
 
 always @ (posedge ap_clk) begin
     c_0_addr_reg_247[2] <= 1'b1;

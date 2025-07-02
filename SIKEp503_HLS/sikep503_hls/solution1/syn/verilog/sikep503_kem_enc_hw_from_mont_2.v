@@ -20,7 +20,10 @@ module sikep503_kem_enc_hw_from_mont_2 (
         t_i_ce0,
         t_i_we0,
         t_i_d0,
-        t_i_q0
+        t_i_q0,
+        t_i_address1,
+        t_i_ce1,
+        t_i_q1
 );
 
 parameter    ap_ST_fsm_state1 = 10'd1;
@@ -48,6 +51,9 @@ output   t_i_ce0;
 output   t_i_we0;
 output  [63:0] t_i_d0;
 input  [63:0] t_i_q0;
+output  [3:0] t_i_address1;
+output   t_i_ce1;
+input  [63:0] t_i_q1;
 
 reg ap_done;
 reg ap_idle;
@@ -56,6 +62,8 @@ reg[3:0] t_i_address0;
 reg t_i_ce0;
 reg t_i_we0;
 reg[63:0] t_i_d0;
+reg[3:0] t_i_address1;
+reg t_i_ce1;
 
 (* fsm_encoding = "none" *) reg   [9:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
@@ -103,6 +111,8 @@ wire   [3:0] grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_address0;
 wire    grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_ce0;
 wire    grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_we0;
 wire   [63:0] grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_d0;
+wire   [3:0] grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_address1;
+wire    grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_ce1;
 wire   [0:0] grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_borrow_out;
 wire    grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_borrow_out_ap_vld;
 wire    grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_ap_start;
@@ -113,6 +123,8 @@ wire   [3:0] grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_address0;
 wire    grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_ce0;
 wire    grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_we0;
 wire   [63:0] grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_d0;
+wire   [3:0] grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_address1;
+wire    grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_ce1;
 reg    grp_from_mont_2_Pipeline_1_fu_32_ap_start_reg;
 wire    ap_CS_fsm_state2;
 reg    grp_mp_mul_144_fu_38_ap_start_reg;
@@ -237,7 +249,9 @@ sikep503_kem_enc_hw_from_mont_2_Pipeline_VITIS_LOOP_91_1 grp_from_mont_2_Pipelin
     .t_i_ce0(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_ce0),
     .t_i_we0(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_we0),
     .t_i_d0(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_d0),
-    .t_i_q0(t_i_q0),
+    .t_i_address1(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_address1),
+    .t_i_ce1(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_ce1),
+    .t_i_q1(t_i_q1),
     .borrow_out(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_borrow_out),
     .borrow_out_ap_vld(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_borrow_out_ap_vld)
 );
@@ -253,7 +267,9 @@ sikep503_kem_enc_hw_from_mont_2_Pipeline_VITIS_LOOP_97_2 grp_from_mont_2_Pipelin
     .t_i_ce0(grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_ce0),
     .t_i_we0(grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_we0),
     .t_i_d0(grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_d0),
-    .t_i_q0(t_i_q0),
+    .t_i_address1(grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_address1),
+    .t_i_ce1(grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_ce1),
+    .t_i_q1(t_i_q1),
     .sext_ln89(grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_borrow_out)
 );
 
@@ -419,6 +435,16 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
+        t_i_address1 = grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_address1;
+    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+        t_i_address1 = grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_address1;
+    end else begin
+        t_i_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state10)) begin
         t_i_ce0 = grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
         t_i_ce0 = grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_ce0;
@@ -426,6 +452,16 @@ always @ (*) begin
         t_i_ce0 = grp_rdc_mont_2_fu_49_R_Z_ce0;
     end else begin
         t_i_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state10)) begin
+        t_i_ce1 = grp_from_mont_2_Pipeline_VITIS_LOOP_97_2_fu_67_t_i_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+        t_i_ce1 = grp_from_mont_2_Pipeline_VITIS_LOOP_91_1_fu_58_t_i_ce1;
+    end else begin
+        t_i_ce1 = 1'b0;
     end
 end
 

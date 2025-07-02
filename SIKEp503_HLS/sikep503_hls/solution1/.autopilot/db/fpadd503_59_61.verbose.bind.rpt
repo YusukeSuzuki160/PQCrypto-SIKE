@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_59_61'
 ================================================================
-* Date:           Tue Jun  3 14:06:35 2025
+* Date:           Tue Jul  1 16:37:03 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.040 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.135 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       57|       57|  0.570 us|  0.570 us|   57|   57|       no|
+    |       40|       40|  0.400 us|  0.400 us|   40|   40|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,9 +38,9 @@
         |                                                   |                                         |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                      Instance                     |                  Module                 |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpadd503_59_61_Pipeline_VITIS_LOOP_23_1_fu_36  |fpadd503_59_61_Pipeline_VITIS_LOOP_23_1  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_59_61_Pipeline_VITIS_LOOP_28_2_fu_48  |fpadd503_59_61_Pipeline_VITIS_LOOP_28_2  |       12|       12|  0.120 us|  0.120 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_59_61_Pipeline_VITIS_LOOP_34_3_fu_61  |fpadd503_59_61_Pipeline_VITIS_LOOP_34_3  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_59_61_Pipeline_VITIS_LOOP_23_1_fu_36  |fpadd503_59_61_Pipeline_VITIS_LOOP_23_1  |       12|       12|  0.120 us|  0.120 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_59_61_Pipeline_VITIS_LOOP_28_2_fu_48  |fpadd503_59_61_Pipeline_VITIS_LOOP_28_2  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_59_61_Pipeline_VITIS_LOOP_34_3_fu_61  |fpadd503_59_61_Pipeline_VITIS_LOOP_34_3  |       12|       12|  0.120 us|  0.120 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -86,24 +86,24 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.32>
+State 1 <SV = 0> <Delay = 1.75>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%c_1_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_1_offset"   --->   Operation 7 'read' 'c_1_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%c_0_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_0_offset"   --->   Operation 8 'read' 'c_0_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%carry_loc = alloca i64 1"   --->   Operation 9 'alloca' 'carry_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [2/2] (2.32ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_23_1, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 10 [2/2] (1.75ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_23_1, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 1.75> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_23_1, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 2.32>
-ST_3 : Operation 12 [2/2] (2.32ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_28_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 1.75>
+ST_3 : Operation 12 [2/2] (1.75ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_28_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 1.75> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_28_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 5 <SV = 4> <Delay = 2.32>
+State 5 <SV = 4> <Delay = 1.75>
 ST_5 : Operation 14 [1/1] (0.00ns)   --->   "%carry_loc_load = load i1 %carry_loc"   --->   Operation 14 'load' 'carry_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 15 [2/2] (2.32ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_34_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 15 [2/2] (1.75ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_34_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 1.75> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 0.00>
 ST_6 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.59.61_Pipeline_VITIS_LOOP_34_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -121,9 +121,9 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ c_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ c_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[01]; IO mode=ap_memory:ce=0
 Port [ c_0_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ c_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ c_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[01]; IO mode=ap_memory:ce=0
 Port [ c_1_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ p503x2_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
@@ -150,7 +150,7 @@ ret_ln37        (ret   ) [ 0000000]
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="c_0"/><MemPortTyVec>2 1 </MemPortTyVec>
+<StgValue><ssdm name="c_0"/><MemPortTyVec>0 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -169,7 +169,7 @@ ret_ln37        (ret   ) [ 0000000]
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="c_1"/><MemPortTyVec>2 1 </MemPortTyVec>
+<StgValue><ssdm name="c_1"/><MemPortTyVec>0 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -459,14 +459,14 @@ ret_ln37        (ret   ) [ 0000000]
 |----------|---------------------------------------------------|---------|---------|---------|
 | Operation|                  Functional Unit                  |  Delay  |    FF   |   LUT   |
 |----------|---------------------------------------------------|---------|---------|---------|
-|          | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_23_1_fu_36 |  3.176  |   210   |   636   |
-|   call   | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_28_2_fu_48 |  6.352  |   150   |   665   |
-|          | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_34_3_fu_61 |  4.764  |   341   |   711   |
+|          | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_23_1_fu_36 |  2.596  |    78   |   607   |
+|   call   | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_28_2_fu_48 |  5.192  |    82   |   627   |
+|          | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_34_3_fu_61 |  3.894  |   149   |   682   |
 |----------|---------------------------------------------------|---------|---------|---------|
 |   read   |             c_1_offset_read_read_fu_24            |    0    |    0    |    0    |
 |          |             c_0_offset_read_read_fu_30            |    0    |    0    |    0    |
 |----------|---------------------------------------------------|---------|---------|---------|
-|   Total  |                                                   |  14.292 |   701   |   2012  |
+|   Total  |                                                   |  11.682 |   309   |   1916  |
 |----------|---------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -490,7 +490,7 @@ N/A
 | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_23_1_fu_36 |  p1  |   2  |   1  |    2   ||    0    ||    9    |
 | grp_fpadd503_59_61_Pipeline_VITIS_LOOP_23_1_fu_36 |  p3  |   2  |   1  |    2   ||    0    ||    9    |
 |---------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|                       Total                       |      |      |      |    4   ||  3.176  ||    0    ||    18   |
+|                       Total                       |      |      |      |    4   ||  2.596  ||    0    ||    18   |
 |---------------------------------------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -499,10 +499,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |   14   |   701  |  2012  |
+|  Function |   11   |   309  |  1916  |
 |   Memory  |    -   |    -   |    -   |
-|Multiplexer|    3   |    0   |   18   |
+|Multiplexer|    2   |    0   |   18   |
 |  Register |    -   |    3   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |   17   |   704  |  2030  |
+|   Total   |   14   |   312  |  1934  |
 +-----------+--------+--------+--------+

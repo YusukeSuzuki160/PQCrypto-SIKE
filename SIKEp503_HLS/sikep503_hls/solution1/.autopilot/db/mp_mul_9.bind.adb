@@ -386,7 +386,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>v_73_loc</name>
+						<name>v_66_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -590,7 +590,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -633,7 +633,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -698,7 +698,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>i_28</name>
+						<name>i_26</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>143</lineNumber>
@@ -798,7 +798,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>v_115</name>
+						<name>v_112</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -889,7 +889,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
+				<m_delay>0.99</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -946,7 +946,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
+				<m_delay>0.99</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1241,7 +1241,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.32</m_delay>
+				<m_delay>5.08</m_delay>
 				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1250,7 +1250,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>v_73_loc_load</name>
+						<name>v_66_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1293,7 +1293,7 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>c_addr_3</name>
+						<name>c_addr_1</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>151</lineNumber>
@@ -1351,7 +1351,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>c_addr_3_write_ln151</name>
+						<name>c_addr_1_write_ln151</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>151</lineNumber>
@@ -1399,7 +1399,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1408,7 +1408,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>add_ln143_2</name>
+						<name>add_ln143_1</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>143</lineNumber>
@@ -1456,7 +1456,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
+				<m_delay>0.99</m_delay>
 				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1515,7 +1515,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1574,7 +1574,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1793,7 +1793,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>i_16</name>
+						<name>i_15</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
@@ -1849,7 +1849,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>i_16_write_ln139</name>
+						<name>i_15_write_ln139</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
@@ -1897,7 +1897,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1940,7 +1940,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2054,7 +2054,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2119,7 +2119,7 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>i_29</name>
+						<name>i_27</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>157</lineNumber>
@@ -2224,7 +2224,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
+				<m_delay>0.99</m_delay>
 				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2603,7 +2603,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.91</m_delay>
+				<m_delay>6.42</m_delay>
 				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2754,7 +2754,7 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>c_addr_4</name>
+						<name>c_addr_2</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -2812,7 +2812,7 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>c_addr_4_write_ln165</name>
+						<name>c_addr_2_write_ln165</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -2860,7 +2860,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>60</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2917,7 +2917,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
+				<m_delay>0.99</m_delay>
 				<m_topoIndex>43</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2926,7 +2926,7 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>add_ln157_2</name>
+						<name>add_ln157_1</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>157</lineNumber>
@@ -2974,7 +2974,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.73</m_delay>
+				<m_delay>0.99</m_delay>
 				<m_topoIndex>53</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2983,7 +2983,7 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>i_16_write_ln139</name>
+						<name>i_15_write_ln139</name>
 						<fileName>src/generic/fp_generic.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
@@ -3033,7 +3033,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3092,7 +3092,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>54</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3151,7 +3151,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>61</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3379,7 +3379,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5074,8 +5074,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>227</mMinLatency>
-			<mMaxLatency>325</mMaxLatency>
+			<mMinLatency>167</mMinLatency>
+			<mMaxLatency>265</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5121,8 +5121,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>8</mMinTripCount>
 			<mMaxTripCount>8</mMaxTripCount>
-			<mMinLatency>120</mMinLatency>
-			<mMaxLatency>176</mMaxLatency>
+			<mMinLatency>88</mMinLatency>
+			<mMaxLatency>144</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5168,8 +5168,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>7</mMinTripCount>
 			<mMaxTripCount>7</mMaxTripCount>
-			<mMinLatency>105</mMinLatency>
-			<mMaxLatency>147</mMaxLatency>
+			<mMinLatency>77</mMinLatency>
+			<mMaxLatency>119</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -6716,7 +6716,7 @@
 		<count>25</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>add_ln143_2_fu_216</first>
+			<first>add_ln143_1_fu_216</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6732,7 +6732,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln157_2_fu_267</first>
+			<first>add_ln157_1_fu_267</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6748,7 +6748,7 @@
 			</second>
 		</item>
 		<item>
-			<first>c_addr_3_gep_fu_82</first>
+			<first>c_addr_1_gep_fu_82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6756,7 +6756,7 @@
 			</second>
 		</item>
 		<item>
-			<first>c_addr_4_gep_fu_104</first>
+			<first>c_addr_2_gep_fu_104</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6772,7 +6772,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_16_fu_78</first>
+			<first>i_15_fu_78</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6876,7 +6876,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_73_loc_fu_62</first>
+			<first>v_66_loc_fu_62</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6951,7 +6951,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_28_load_fu_162</first>
+			<first>i_26_load_fu_162</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6959,7 +6959,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_29_load_fu_235</first>
+			<first>i_27_load_fu_235</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7111,7 +7111,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_115_load_fu_168</first>
+			<first>v_112_load_fu_168</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7127,7 +7127,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_73_loc_load_load_fu_231</first>
+			<first>v_66_loc_load_load_fu_231</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7316,7 +7316,7 @@
 		<count>19</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_16_reg_384</first>
+			<first>i_15_reg_384</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7324,7 +7324,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_28_reg_344</first>
+			<first>i_26_reg_344</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7332,7 +7332,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_29_reg_401</first>
+			<first>i_27_reg_401</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7428,7 +7428,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_115_reg_355</first>
+			<first>v_112_reg_355</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7444,7 +7444,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_73_loc_reg_338</first>
+			<first>v_66_loc_reg_338</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

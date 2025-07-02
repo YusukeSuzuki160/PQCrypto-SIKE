@@ -248,24 +248,24 @@ extern "C" void apatb_sikep503_kem_enc_hw_hw(volatile void * __xlx_apatb_param_c
 using hls::sim::createStream;
   // Collect __xlx_ct_pk_ss__tmp_vec
 std::vector<Byte<1>> __xlx_ct_pk_ss__tmp_vec;
-for (size_t i = 0; i < 402; ++i){
+for (size_t i = 0; i < 1; ++i){
 __xlx_ct_pk_ss__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_ct)[i]);
 }
-  int __xlx_size_param_ct = 402;
+  int __xlx_size_param_ct = 1;
   int __xlx_offset_param_ct = 0;
   int __xlx_offset_byte_param_ct = 0*1;
-for (size_t i = 0; i < 378; ++i){
+for (size_t i = 0; i < 1; ++i){
 __xlx_ct_pk_ss__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_pk)[i]);
 }
-  int __xlx_size_param_pk = 378;
-  int __xlx_offset_param_pk = 402;
-  int __xlx_offset_byte_param_pk = 402*1;
-for (size_t i = 0; i < 16; ++i){
+  int __xlx_size_param_pk = 1;
+  int __xlx_offset_param_pk = 1;
+  int __xlx_offset_byte_param_pk = 1*1;
+for (size_t i = 0; i < 1; ++i){
 __xlx_ct_pk_ss__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_ss)[i]);
 }
-  int __xlx_size_param_ss = 16;
-  int __xlx_offset_param_ss = 780;
-  int __xlx_offset_byte_param_ss = 780*1;
+  int __xlx_size_param_ss = 1;
+  int __xlx_offset_param_ss = 2;
+  int __xlx_offset_byte_param_ss = 2*1;
   // DUT call
   sikep503_kem_enc_hw(__xlx_ct_pk_ss__tmp_vec.data(), __xlx_offset_byte_param_ct, __xlx_offset_byte_param_pk, __xlx_offset_byte_param_ss);
 // print __xlx_apatb_param_ct

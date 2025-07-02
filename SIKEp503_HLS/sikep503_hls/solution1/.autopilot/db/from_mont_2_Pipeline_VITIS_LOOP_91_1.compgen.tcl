@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2474 \
+    id 2311 \
     name t_i \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename t_i \
     op interface \
-    ports { t_i_address0 { O 4 vector } t_i_ce0 { O 1 bit } t_i_we0 { O 1 bit } t_i_d0 { O 64 vector } t_i_q0 { I 64 vector } } \
+    ports { t_i_address0 { O 4 vector } t_i_ce0 { O 1 bit } t_i_we0 { O 1 bit } t_i_d0 { O 64 vector } t_i_address1 { O 4 vector } t_i_ce1 { O 1 bit } t_i_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_i'"
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2475 \
+    id 2312 \
     name borrow_out \
     type other \
     dir O \

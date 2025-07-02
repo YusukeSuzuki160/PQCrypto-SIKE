@@ -21,7 +21,7 @@ dict set ap_memory_interface_dict pts_Z { MEM_WIDTH 64 MEM_SIZE 896 MASTER_TYPE 
 dict set ap_memory_interface_dict R_Z { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
 	{ npts_5 int 3 regular  }
-	{ pts_Z int 64 regular {array 112 { 0 3 } 0 1 }  }
+	{ pts_Z int 64 regular {array 112 { 0 } 0 1 }  }
 	{ R_Z int 64 regular {array 16 { 1 3 } 1 1 }  }
 }
 set hasAXIMCache 0

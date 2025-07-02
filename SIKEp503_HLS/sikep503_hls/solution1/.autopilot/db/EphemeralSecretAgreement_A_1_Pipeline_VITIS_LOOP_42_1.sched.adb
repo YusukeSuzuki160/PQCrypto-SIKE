@@ -219,7 +219,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -282,7 +282,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -318,7 +318,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -388,7 +388,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -452,7 +452,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -488,7 +488,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
+				<m_delay>1.28</m_delay>
 				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -516,7 +516,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -552,7 +552,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
+				<m_delay>1.28</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -580,7 +580,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -645,7 +645,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -681,7 +681,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -708,7 +708,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -771,7 +771,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -810,7 +810,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -837,7 +837,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -873,7 +873,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -900,7 +900,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -966,7 +966,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1029,7 +1029,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1094,7 +1094,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1129,7 +1129,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1157,7 +1157,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1194,7 +1194,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1221,7 +1221,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1257,7 +1257,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1284,7 +1284,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1320,8 +1320,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.59</m_delay>
-				<m_topoIndex>26</m_topoIndex>
+				<m_delay>3.60</m_delay>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1348,7 +1348,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1384,7 +1384,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>27</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1411,7 +1411,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1449,7 +1449,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>28</m_topoIndex>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_26">
@@ -1476,7 +1476,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1514,7 +1514,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_27">
@@ -1541,7 +1541,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1579,7 +1579,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_28">
@@ -1606,7 +1606,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1644,7 +1644,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1671,7 +1671,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1736,7 +1736,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1799,7 +1799,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1864,7 +1864,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1899,7 +1899,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1927,7 +1927,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -1963,8 +1963,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.59</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_delay>3.60</m_delay>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_34">
@@ -1991,7 +1991,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2027,7 +2027,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>33</m_topoIndex>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_35">
@@ -2054,7 +2054,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2090,7 +2090,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.87</m_delay>
+				<m_delay>1.31</m_delay>
 				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2118,7 +2118,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2184,7 +2184,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2247,7 +2247,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2312,7 +2312,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2377,7 +2377,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2442,7 +2442,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2507,7 +2507,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2549,7 +2549,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.56</m_delay>
+				<m_delay>0.63</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2577,7 +2577,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2613,7 +2613,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>41</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2641,7 +2641,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2677,7 +2677,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>42</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2705,7 +2705,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2768,7 +2768,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2804,7 +2804,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2832,7 +2832,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2868,7 +2868,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>45</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2896,7 +2896,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2959,7 +2959,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -2995,7 +2995,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3023,7 +3023,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -3059,7 +3059,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3087,7 +3087,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -3150,7 +3150,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -3186,7 +3186,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>50</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3214,7 +3214,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -3250,7 +3250,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>1.75</m_delay>
 				<m_topoIndex>51</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3278,7 +3278,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -3341,7 +3341,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -3379,7 +3379,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3407,7 +3407,7 @@
 											<first>src/sidh.c</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>315</second>
+										<second>326</second>
 									</item>
 									<item>
 										<first>
@@ -3483,8 +3483,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_delay>1.29</m_delay>
+				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
@@ -4091,7 +4091,7 @@
 				<Obj>
 					<type>3</type>
 					<id>52</id>
-					<name>arrayidx9.i4.case.1</name>
+					<name>arrayidx9.i2.case.1</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4124,7 +4124,7 @@
 				<Obj>
 					<type>3</type>
 					<id>56</id>
-					<name>arrayidx9.i4.case.0</name>
+					<name>arrayidx9.i2.case.0</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4157,7 +4157,7 @@
 				<Obj>
 					<type>3</type>
 					<id>60</id>
-					<name>arrayidx9.i4.case.3</name>
+					<name>arrayidx9.i2.case.3</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4190,7 +4190,7 @@
 				<Obj>
 					<type>3</type>
 					<id>64</id>
-					<name>arrayidx9.i4.case.2</name>
+					<name>arrayidx9.i2.case.2</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4223,7 +4223,7 @@
 				<Obj>
 					<type>3</type>
 					<id>67</id>
-					<name>arrayidx9.i4.exit</name>
+					<name>arrayidx9.i2.exit</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5331,28 +5331,28 @@
 		<item>
 			<first>26</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5415,14 +5415,14 @@
 		<item>
 			<first>38</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>

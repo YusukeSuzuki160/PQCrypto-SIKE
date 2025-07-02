@@ -382,33 +382,8 @@ void KeccakF1600_StatePermute(uint64_t *state)
 #include <string.h>
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
-// static uint64_t mk_lane(const unsigned char *m,
-//                         unsigned long long mlen,
-//                         unsigned idx,        // 0-based byte index
-//                         unsigned char p,
-//                         unsigned r)
-// {
-//     #pragma HLS inline
-//     uint64_t lane = 0;
-
-//     // 8byte を 1cycle で生成（バイト毎に条件付き代入）
-//     BYTE_LOOP: for (int b = 0; b < 8; ++b) {
-//         unsigned off = idx + b;
-//         unsigned char v = 0;
-
-//         if (off < mlen)           v = m[off];     // 元データ
-//         else if (off == mlen)     v = p;          // 1 byte パディング
-//         else                      v = 0;          // ゼロ埋め
-
-//         if (off == r - 1)         v |= 0x80;      // 末尾 128
-//         lane |= (uint64_t)v << (8 * b);
-//     }
-//     return lane;
-// }
-
 static void keccak_absorb(uint64_t *s, unsigned int r, const unsigned char *m, unsigned long long int mlen, unsigned char p)
 {
-  unsigned char t[200];
   unsigned long long i;
   while (mlen >= r)
   {
@@ -422,27 +397,9 @@ static void keccak_absorb(uint64_t *s, unsigned int r, const unsigned char *m, u
     mlen -= r;
     m += r;
   }
-
-  for (i = 0; i < r; ++i)
-  {
-#pragma HLS loop_tripcount min = 500 max = 500
-    t[i] = 0;
-  }
-//   for (i = 0; i < mlen; ++i)
-//   {
-// #pragma HLS loop_tripcount min = 130 max = 130
-//     t[i] = m[i];
-//   }
-//   i = mlen;
-//   t[i] = p;
-//   t[r - 1] |= 128;
-//   for (i = 0; i < r / 8; ++i)
-//   {
-// #pragma HLS loop_tripcount min = 100 max = 100
-//     s[i] ^= load64(t + 8 * i);
-//   }
   for (unsigned lane = 0; lane < r / 8; ++lane) {
 #pragma HLS loop_tripcount min=100 max=100   // (例) r = 800 bit
+
 
       /* ------------------------------------------------------------
       * 8 つのバイトを “その場で” 合成 → 64bit 値にして XOR
@@ -478,7 +435,6 @@ static void keccak_squeezeblocks(unsigned char *h, unsigned long long int nblock
     KeccakF1600_StatePermute(s);
     for (i = 0; i < (fixed_r >> 3); i++)
     {
-#pragma HLS loop_tripcount min = 1 max = 503 avg = 252
       store64(h + 8 * i, s[i]);
     }
     h += fixed_r;

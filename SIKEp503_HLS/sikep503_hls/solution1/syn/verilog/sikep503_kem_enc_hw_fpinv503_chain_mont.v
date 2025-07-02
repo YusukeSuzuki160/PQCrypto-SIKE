@@ -1434,7 +1434,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fpmul503_mont_1_fu_476_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state24))) begin
+    if (((icmp_ln224_fu_564_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state22))) begin
         i_41_fu_220 <= 3'd0;
     end else if (((icmp_ln226_fu_589_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state25))) begin
         i_41_fu_220 <= i_129_fu_595_p2;
@@ -1442,7 +1442,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fpmul503_mont_1_fu_476_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state27))) begin
+    if (((icmp_ln226_fu_589_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state25))) begin
         i_43_fu_224 <= 3'd0;
     end else if (((icmp_ln228_fu_614_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
         i_43_fu_224 <= i_131_fu_620_p2;
@@ -1450,7 +1450,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fpmul503_mont_1_fu_476_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state30))) begin
+    if (((icmp_ln228_fu_614_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state28))) begin
         i_45_fu_228 <= 3'd0;
     end else if (((icmp_ln230_fu_639_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state31))) begin
         i_45_fu_228 <= i_133_fu_645_p2;
@@ -1466,7 +1466,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fpmul503_mont_2_fu_467_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state36))) begin
+    if (((icmp_ln232_fu_664_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state34))) begin
         i_49_fu_236 <= 3'd0;
     end else if (((icmp_ln234_fu_689_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state37))) begin
         i_49_fu_236 <= i_137_fu_695_p2;
@@ -1474,7 +1474,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fpmul503_mont_1_fu_476_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state39))) begin
+    if (((icmp_ln234_fu_689_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state37))) begin
         i_51_fu_240 <= 3'd0;
     end else if (((icmp_ln236_fu_714_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state40))) begin
         i_51_fu_240 <= i_139_fu_720_p2;
@@ -1506,7 +1506,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fpmul503_mont_1_fu_476_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state51))) begin
+    if (((icmp_ln242_fu_789_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state49))) begin
         i_59_fu_256 <= 3'd0;
     end else if (((icmp_ln244_fu_814_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state52))) begin
         i_59_fu_256 <= i_147_fu_820_p2;

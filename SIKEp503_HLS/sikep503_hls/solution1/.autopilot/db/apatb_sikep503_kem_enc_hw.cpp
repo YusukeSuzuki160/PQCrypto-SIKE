@@ -1297,7 +1297,7 @@ void apatb_sikep503_kem_enc_hw_hw(void* __xlx_apatb_param_ct, void* __xlx_apatb_
   };
   port3.param = { __xlx_apatb_param_ct, __xlx_apatb_param_pk, __xlx_apatb_param_ss };
   port3.mname = { "ct", "pk", "ss" };
-  port3.nbytes = { 402, 378, 16 };
+  port3.nbytes = { 0, 0, 0 };
   for (size_t off = 0, i = 0; i < port3.nbytes.size(); ++i) {
     port3.offset.push_back(off);
     off += hls::sim::divide_ceil(port3.nbytes[i], port3.asize);

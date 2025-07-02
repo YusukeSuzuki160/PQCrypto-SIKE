@@ -236,10 +236,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>i_262</name>
+						<name>i_253</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>388</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -255,21 +255,21 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>388</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -349,10 +349,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_262_write_ln388</name>
+						<name>i_253_write_ln389</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>388</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -368,21 +368,21 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>388</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -411,7 +411,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -481,14 +481,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -552,14 +552,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -595,7 +595,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.78</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -604,7 +604,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>i_288</name>
+						<name>i_281</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>393</lineNumber>
@@ -623,14 +623,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -666,7 +666,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.78</m_delay>
+				<m_delay>1.02</m_delay>
 				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -694,14 +694,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -766,14 +766,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -836,14 +836,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -888,7 +888,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -915,14 +915,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -965,7 +965,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -992,14 +992,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1042,8 +1042,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.87</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_delay>1.31</m_delay>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_19">
@@ -1051,7 +1051,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>zext_ln28_18</name>
+						<name>zext_ln28_4</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1070,14 +1070,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1120,7 +1120,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_20">
@@ -1147,14 +1147,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1199,7 +1199,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_21">
@@ -1226,14 +1226,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1275,8 +1275,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1303,14 +1303,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1355,7 +1355,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>19</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1382,14 +1382,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1431,8 +1431,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1459,14 +1459,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1511,7 +1511,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1538,14 +1538,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1587,8 +1587,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_26">
@@ -1615,14 +1615,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1667,7 +1667,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_27">
@@ -1694,14 +1694,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1743,8 +1743,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_28">
@@ -1771,14 +1771,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1823,7 +1823,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1831,7 +1831,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>zext_ln28_19</name>
+						<name>zext_ln28_5</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1850,14 +1850,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1900,7 +1900,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1927,14 +1927,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -1977,8 +1977,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.87</m_delay>
-				<m_topoIndex>27</m_topoIndex>
+				<m_delay>1.31</m_delay>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1986,7 +1986,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>zext_ln28_20</name>
+						<name>zext_ln28_6</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2005,14 +2005,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2055,7 +2055,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>28</m_topoIndex>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_32">
@@ -2063,7 +2063,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>in_0_addr_2</name>
+						<name>in_0_addr_4</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2082,14 +2082,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2134,7 +2134,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
+				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_33">
@@ -2161,14 +2161,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2210,8 +2210,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_34">
@@ -2219,7 +2219,7 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>in_1_addr_2</name>
+						<name>in_1_addr_4</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2238,14 +2238,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2290,7 +2290,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_35">
@@ -2317,14 +2317,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2366,8 +2366,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_36">
@@ -2375,7 +2375,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>in_2_addr_2</name>
+						<name>in_2_addr_4</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2394,14 +2394,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2446,7 +2446,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>33</m_topoIndex>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_37">
@@ -2473,14 +2473,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2522,8 +2522,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>34</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_38">
@@ -2531,7 +2531,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>in_3_addr_2</name>
+						<name>in_3_addr_4</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2550,14 +2550,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2602,7 +2602,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>35</m_topoIndex>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_39">
@@ -2629,14 +2629,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2678,8 +2678,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
-				<m_topoIndex>36</m_topoIndex>
+				<m_delay>1.75</m_delay>
+				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_40">
@@ -2706,14 +2706,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2751,7 +2751,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
+				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_41">
@@ -2778,14 +2778,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2820,8 +2820,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_delay>2.77</m_delay>
+				<m_topoIndex>35</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_42">
@@ -2848,14 +2848,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2926,14 +2926,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -2969,7 +2969,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
+				<m_delay>0.80</m_delay>
 				<m_topoIndex>39</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2997,14 +2997,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -3043,7 +3043,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
+				<m_delay>2.77</m_delay>
 				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3052,10 +3052,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>i_262_write_ln388</name>
+						<name>i_253_write_ln389</name>
 						<fileName>src/sha3/fips202.c</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>388</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>keccak_absorb</contextFuncName>
 						<contextNormFuncName>keccak_absorb</contextNormFuncName>
 						<inlineStackInfo>
@@ -3071,21 +3071,21 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>keccak_absorb</second>
 										</first>
-										<second>388</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -3116,8 +3116,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_delay>1.29</m_delay>
+				<m_topoIndex>36</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_46">
@@ -3144,14 +3144,14 @@
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple</second>
 										</first>
-										<second>648</second>
+										<second>644</second>
 									</item>
 									<item>
 										<first>
 											<first>src/sha3/fips202.c</first>
 											<second>cshake256_simple_absorb</second>
 										</first>
-										<second>634</second>
+										<second>630</second>
 									</item>
 									<item>
 										<first>
@@ -3227,7 +3227,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>1.29</m_delay>
 				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4279,8 +4279,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>20</mMinLatency>
-			<mMaxLatency>20</mMaxLatency>
+			<mMinLatency>19</mMinLatency>
+			<mMaxLatency>19</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4323,11 +4323,11 @@
 				<item>53</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
+			<mDepth>2</mDepth>
 			<mMinTripCount>17</mMinTripCount>
 			<mMaxTripCount>17</mMaxTripCount>
-			<mMinLatency>18</mMinLatency>
-			<mMaxLatency>18</mMaxLatency>
+			<mMinLatency>17</mMinLatency>
+			<mMaxLatency>17</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4426,168 +4426,168 @@
 		<item>
 			<first>22</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>23</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>36</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>38</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>40</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
@@ -4608,21 +4608,21 @@
 		<item>
 			<first>48</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>49</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4636,14 +4636,14 @@
 		<item>
 			<first>52</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4669,7 +4669,7 @@
 			<first>53</first>
 			<second>
 				<first>1</first>
-				<second>3</second>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
@@ -4698,7 +4698,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>2</pipe_depth>
 			<mDBIIViolationVec class_id="34" tracking_level="0" version="0">
 				<count>0</count>
 				<item_version>0</item_version>

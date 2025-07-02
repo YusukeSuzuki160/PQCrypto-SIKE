@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'from_mont_3'
 ================================================================
-* Date:           Tue Jun  3 14:15:36 2025
+* Date:           Tue Jul  1 16:45:48 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.040 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      469|      729|  4.690 us|  7.290 us|  469|  729|       no|
+    |      393|      637|  3.930 us|  6.370 us|  393|  637|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -39,10 +39,10 @@
         |                    Instance                    |                Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
         |grp_from_mont_3_Pipeline_1_fu_32                |from_mont_3_Pipeline_1                |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_mp_mul_145_fu_38                            |mp_mul_145                            |      212|      310|  2.120 us|  3.100 us|  212|  310|                                              no|
-        |grp_rdc_mont_2_fu_49                            |rdc_mont_2                            |      190|      352|  1.900 us|  3.520 us|  190|  352|                                              no|
-        |grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58  |from_mont_3_Pipeline_VITIS_LOOP_91_1  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67  |from_mont_3_Pipeline_VITIS_LOOP_97_2  |       20|       20|  0.200 us|  0.200 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_mp_mul_145_fu_38                            |mp_mul_145                            |      167|      265|  1.670 us|  2.650 us|  167|  265|                                              no|
+        |grp_rdc_mont_2_fu_49                            |rdc_mont_2                            |      161|      307|  1.610 us|  3.070 us|  161|  307|                                              no|
+        |grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58  |from_mont_3_Pipeline_VITIS_LOOP_91_1  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67  |from_mont_3_Pipeline_VITIS_LOOP_97_2  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -54,36 +54,36 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+-----------------+---------+-----+--------+-------+-----+
-|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
-+-----------------+---------+-----+--------+-------+-----+
-|DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       -|      -|    -|
-|FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|   32|    8462|  10711|    -|
-|Memory           |        2|    -|      64|      8|    0|
-|Multiplexer      |        -|    -|       0|    207|    -|
-|Register         |        -|    -|      15|      -|    -|
-+-----------------+---------+-----+--------+-------+-----+
-|Total            |        2|   32|    8541|  10926|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Available        |      280|  220|  106400|  53200|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |       ~0|   14|       8|     20|    0|
-+-----------------+---------+-----+--------+-------+-----+
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       -|       -|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        0|   64|    6165|    9342|    -|
+|Memory           |        2|    -|      64|       8|    0|
+|Multiplexer      |        -|    -|       0|     199|    -|
+|Register         |        -|    -|      15|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        2|   64|    6244|    9549|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |     1090|  900|  437200|  218600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |       ~0|    7|       1|       4|    0|
++-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
     * Instance: 
     +------------------------------------------------+--------------------------------------+---------+----+------+------+-----+
     |                    Instance                    |                Module                | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +------------------------------------------------+--------------------------------------+---------+----+------+------+-----+
-    |grp_from_mont_3_Pipeline_1_fu_32                |from_mont_3_Pipeline_1                |        0|   0|     7|    54|    0|
-    |grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58  |from_mont_3_Pipeline_VITIS_LOOP_91_1  |        0|   0|   409|   803|    0|
-    |grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67  |from_mont_3_Pipeline_VITIS_LOOP_97_2  |        0|   0|   536|   858|    0|
-    |grp_mp_mul_145_fu_38                            |mp_mul_145                            |        0|  16|  3336|  3512|    0|
-    |grp_rdc_mont_2_fu_49                            |rdc_mont_2                            |        0|  16|  4174|  5484|    0|
+    |grp_from_mont_3_Pipeline_1_fu_32                |from_mont_3_Pipeline_1                |        0|   0|     7|    40|    0|
+    |grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58  |from_mont_3_Pipeline_VITIS_LOOP_91_1  |        0|   0|   403|   752|    0|
+    |grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67  |from_mont_3_Pipeline_VITIS_LOOP_97_2  |        0|   0|   463|   816|    0|
+    |grp_mp_mul_145_fu_38                            |mp_mul_145                            |        0|  32|  2084|  2923|    0|
+    |grp_rdc_mont_2_fu_49                            |rdc_mont_2                            |        0|  32|  3208|  4811|    0|
     +------------------------------------------------+--------------------------------------+---------+----+------+------+-----+
-    |Total                                           |                                      |        0|  32|  8462| 10711|    0|
+    |Total                                           |                                      |        0|  64|  6165|  9342|    0|
     +------------------------------------------------+--------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -109,17 +109,19 @@
     +---------------+----+-----------+-----+-----------+
     |      Name     | LUT| Input Size| Bits| Total Bits|
     +---------------+----+-----------+-----+-----------+
-    |ap_NS_fsm      |  59|         11|    1|         11|
-    |t_i_address0   |  20|          4|    4|         16|
-    |t_i_ce0        |  20|          4|    1|          4|
-    |t_i_d0         |  20|          4|   64|        256|
-    |t_i_we0        |  20|          4|    1|          4|
-    |temp_address0  |  20|          4|    4|         16|
-    |temp_ce0       |  20|          4|    1|          4|
-    |temp_d0        |  14|          3|   64|        192|
-    |temp_we0       |  14|          3|    1|          3|
+    |ap_NS_fsm      |  45|         11|    1|         11|
+    |t_i_address0   |  17|          4|    4|         16|
+    |t_i_address1   |  13|          3|    4|         12|
+    |t_i_ce0        |  17|          4|    1|          4|
+    |t_i_ce1        |  13|          3|    1|          3|
+    |t_i_d0         |  17|          4|   64|        256|
+    |t_i_we0        |  17|          4|    1|          4|
+    |temp_address0  |  17|          4|    4|         16|
+    |temp_ce0       |  17|          4|    1|          4|
+    |temp_d0        |  13|          3|   64|        192|
+    |temp_we0       |  13|          3|    1|          3|
     +---------------+----+-----------+-----+-----------+
-    |Total          | 207|         41|  141|        506|
+    |Total          | 199|         47|  146|        521|
     +---------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -159,6 +161,9 @@
 |t_i_we0       |  out|    1|   ap_memory|           t_i|         array|
 |t_i_d0        |  out|   64|   ap_memory|           t_i|         array|
 |t_i_q0        |   in|   64|   ap_memory|           t_i|         array|
+|t_i_address1  |  out|    4|   ap_memory|           t_i|         array|
+|t_i_ce1       |  out|    1|   ap_memory|           t_i|         array|
+|t_i_q1        |   in|   64|   ap_memory|           t_i|         array|
 +--------------+-----+-----+------------+--------------+--------------+
 
 ============================================================
@@ -205,19 +210,19 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.25>
+State 1 <SV = 0> <Delay = 2.77>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 11 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (3.25ns)   --->   "%temp = alloca i64 1" [src/fpx.c:61->src/fpx.c:43]   --->   Operation 12 'alloca' 'temp' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 12 [1/1] (2.77ns)   --->   "%temp = alloca i64 1" [src/fpx.c:61->src/fpx.c:43]   --->   Operation 12 'alloca' 'temp' <Predicate = true> <Delay = 2.77>
 ST_1 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln0 = call void @from_mont.3_Pipeline_1, i64 %temp"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 4.95>
-ST_2 : Operation 14 [1/2] (4.95ns)   --->   "%call_ln0 = call void @from_mont.3_Pipeline_1, i64 %temp"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 3.61>
+ST_2 : Operation 14 [1/2] (3.61ns)   --->   "%call_ln0 = call void @from_mont.3_Pipeline_1, i64 %temp"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 3.61> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln63 = call void @mp_mul.145, i64 %ma, i1 1, i64 %one, i64 %temp" [src/fpx.c:63->src/fpx.c:43]   --->   Operation 15 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 4 <SV = 3> <Delay = 1.73>
-ST_4 : Operation 16 [1/2] (1.73ns)   --->   "%call_ln63 = call void @mp_mul.145, i64 %ma, i1 1, i64 %one, i64 %temp" [src/fpx.c:63->src/fpx.c:43]   --->   Operation 16 'call' 'call_ln63' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+State 4 <SV = 3> <Delay = 0.99>
+ST_4 : Operation 16 [1/2] (0.99ns)   --->   "%call_ln63 = call void @mp_mul.145, i64 %ma, i1 1, i64 %one, i64 %temp" [src/fpx.c:63->src/fpx.c:43]   --->   Operation 16 'call' 'call_ln63' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
 ST_5 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln64 = call void @rdc_mont.2, i64 %temp, i64 %t_i, i64 %p503p1_1" [src/fpx.c:64->src/fpx.c:43]   --->   Operation 17 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -231,9 +236,9 @@ ST_7 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln0 = call void @from_mont.3_
 State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln0 = call void @from_mont.3_Pipeline_VITIS_LOOP_91_1, i64 %t_i, i1 %borrow_loc, i64 %p503_1"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 9 <SV = 8> <Delay = 0.99>
+State 9 <SV = 8> <Delay = 0.81>
 ST_9 : Operation 21 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 21 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 22 [2/2] (0.99ns)   --->   "%call_ln0 = call void @from_mont.3_Pipeline_VITIS_LOOP_97_2, i64 %t_i, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 22 [2/2] (0.81ns)   --->   "%call_ln0 = call void @from_mont.3_Pipeline_VITIS_LOOP_97_2, i64 %t_i, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 0.81> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 0.00>
 ST_10 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @from_mont.3_Pipeline_VITIS_LOOP_97_2, i64 %t_i, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -252,7 +257,7 @@ STG Binding:
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ ma]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ t_i]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ t_i]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ one]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
 Port [ p503p1_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ p503_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
@@ -291,7 +296,7 @@ ret_ln45        (ret   ) [ 00000000000]
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="t_i"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="t_i"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -586,13 +591,13 @@ ret_ln45        (ret   ) [ 00000000000]
 |----------|------------------------------------------------|---------|---------|---------|---------|
 | Operation|                 Functional Unit                |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|------------------------------------------------|---------|---------|---------|---------|
-|          |        grp_from_mont_3_Pipeline_1_fu_32        |    0    |    0    |    5    |    26   |
-|          |              grp_mp_mul_145_fu_38              |    48   | 41.5266 |   4503  |   3420  |
-|   call   |              grp_rdc_mont_2_fu_49              |    48   | 46.7678 |   5330  |   5185  |
-|          | grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58 |    0    |  4.764  |   340   |   727   |
-|          | grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67 |    0    |  3.176  |   467   |   835   |
+|          |        grp_from_mont_3_Pipeline_1_fu_32        |    0    |    0    |    5    |    14   |
+|          |              grp_mp_mul_145_fu_38              |    32   | 13.0341 |   1879  |   2602  |
+|   call   |              grp_rdc_mont_2_fu_49              |    32   | 18.3344 |   2734  |   4281  |
+|          | grp_from_mont_3_Pipeline_VITIS_LOOP_91_1_fu_58 |    0    |  3.894  |   339   |   682   |
+|          | grp_from_mont_3_Pipeline_VITIS_LOOP_97_2_fu_67 |    0    |  2.596  |   399   |   799   |
 |----------|------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                |    96   | 96.2344 |  10645  |  10193  |
+|   Total  |                                                |    64   | 37.8586 |   5356  |   8378  |
 |----------|------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -626,10 +631,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |   96   |   96   |  10645 |  10193 |    -   |
+|  Function |    -   |   64   |   37   |  5356  |  8378  |    -   |
 |   Memory  |    2   |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    1   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    2   |   96   |   96   |  10646 |  10193 |    0   |
+|   Total   |    2   |   64   |   37   |  5357  |  8378  |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

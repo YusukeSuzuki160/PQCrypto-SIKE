@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_59_1'" level="0">
-<item name = "Date">Tue Jun  3 14:15:41 2025
+<item name = "Date">Tue Jul  1 16:45:52 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg484-1</item>
+<item name = "Target device">xc7z045-ffg900-2</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -48,13 +48,13 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 38, -</column>
+<column name="Expression">-, -, 0, 25, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 0, 20, -</column>
+<column name="Instance">-, -, 0, 17, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 45, -</column>
 <column name="Register">-, -, 20, -, -</column>
-<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Available">1090, 900, 437200, 218600, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_9_2_8_1_1_U3296">sparsemux_9_2_8_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_8_1_1_U3084">sparsemux_9_2_8_1_1, 0, 0, 0, 17, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -79,9 +79,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln59_1_fu_175_p2">+, 0, 0, 13, 5, 1</column>
-<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln59_fu_169_p2">icmp, 0, 0, 13, 5, 5</column>
+<column name="add_ln59_1_fu_175_p2">+, 0, 0, 7, 5, 1</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 1, 1, 1</column>
+<column name="icmp_ln59_fu_169_p2">icmp, 0, 0, 7, 5, 5</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln61_fu_242_p2">xor, 0, 0, 8, 8, 8</column>
 </table>

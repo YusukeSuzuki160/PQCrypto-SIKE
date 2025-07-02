@@ -48,7 +48,7 @@ set C_modelArgMapList {[
  	{ "Name" : "u_77_out", "interface" : "wire", "bitwidth" : 64, "direction" : "READWRITE"} , 
  	{ "Name" : "t_out", "interface" : "wire", "bitwidth" : 4, "direction" : "READWRITE"} ]}
 # RTL Port declarations: 
-set portNum 42
+set portNum 26
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -76,22 +76,6 @@ set portList {
 	{ t_out_i sc_in sc_lv 4 signal 10 } 
 	{ t_out_o sc_out sc_lv 4 signal 10 } 
 	{ t_out_o_ap_vld sc_out sc_logic 1 outvld 10 } 
-	{ grp_fu_477_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_477_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_477_p_dout0 sc_in sc_lv 64 signal -1 } 
-	{ grp_fu_477_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_481_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_481_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_481_p_dout0 sc_in sc_lv 64 signal -1 } 
-	{ grp_fu_481_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_485_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_485_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_485_p_dout0 sc_in sc_lv 64 signal -1 } 
-	{ grp_fu_485_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_489_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_489_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_489_p_dout0 sc_in sc_lv 64 signal -1 } 
-	{ grp_fu_489_p_ce sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -119,32 +103,16 @@ set NewPortList {[
  	{ "name": "u_77_out_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "u_77_out", "role": "o_ap_vld" }} , 
  	{ "name": "t_out_i", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_out", "role": "i" }} , 
  	{ "name": "t_out_o", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_out", "role": "o" }} , 
- 	{ "name": "t_out_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "t_out", "role": "o_ap_vld" }} , 
- 	{ "name": "grp_fu_477_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_477_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_477_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_477_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_477_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "grp_fu_477_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_477_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_477_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_481_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_481_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_481_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_481_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_481_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "grp_fu_481_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_481_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_481_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_485_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_485_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_485_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_485_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_485_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "grp_fu_485_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_485_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_485_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_489_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_489_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_489_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_489_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_489_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "grp_fu_489_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_489_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_489_p_ce", "role": "default" }}  ]}
+ 	{ "name": "t_out_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "t_out", "role": "o_ap_vld" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5"],
 		"CDFG" : "mp_mul_5_Pipeline_VITIS_LOOP_145_2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "11", "EstimateLatencyMax" : "18",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "7", "EstimateLatencyMax" : "14",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -166,8 +134,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "t_out", "Type" : "OVld", "Direction" : "IO"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_145_2", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter9", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter9", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter5", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter5", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_1_1_U1494", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_1_1_U1495", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_1_1_U1496", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_1_1_U1497", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -176,19 +148,19 @@ set ArgLastReadFirstWriteLatency {
 		zext_ln143 {Type I LastRead 0 FirstWrite -1}
 		indvars_iv31 {Type I LastRead 0 FirstWrite -1}
 		zext_ln146 {Type I LastRead 0 FirstWrite -1}
-		a {Type I LastRead 1 FirstWrite -1}
+		a {Type I LastRead 0 FirstWrite -1}
 		i {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 0 FirstWrite -1}
-		coeff {Type I LastRead 1 FirstWrite -1}
-		v_108_out {Type O LastRead -1 FirstWrite 8}
-		u_77_out {Type IO LastRead 8 FirstWrite 0}
-		t_out {Type IO LastRead 9 FirstWrite 0}}}
+		coeff {Type I LastRead 0 FirstWrite -1}
+		v_108_out {Type O LastRead -1 FirstWrite 4}
+		u_77_out {Type IO LastRead 5 FirstWrite 0}
+		t_out {Type IO LastRead 5 FirstWrite 0}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "11", "Max" : "18"}
-	, {"Name" : "Interval", "Min" : "11", "Max" : "18"}
+	{"Name" : "Latency", "Min" : "7", "Max" : "14"}
+	, {"Name" : "Interval", "Min" : "7", "Max" : "14"}
 ]}
 
 set PipelineEnableSignalInfo {[

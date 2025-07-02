@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fp2div2_503_Pipeline_VITIS_LOOP_392_1'
 ================================================================
-* Date:           Tue Jun  3 14:12:01 2025
+* Date:           Wed Jul  2 14:07:56 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynq
-* Target device:  xc7z020-clg484-1
+* Target device:  xc7z045-ffg900-2
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.058 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  4.646 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -50,23 +50,23 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+-----------------+---------+-----+--------+-------+-----+
-|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
-+-----------------+---------+-----+--------+-------+-----+
-|DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|     87|    -|
-|FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        -|    -|       -|      -|    -|
-|Memory           |        -|    -|       -|      -|    -|
-|Multiplexer      |        -|    -|       0|     69|    -|
-|Register         |        -|    -|      14|      -|    -|
-+-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|      14|    156|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Available        |      280|  220|  106400|  53200|    0|
-+-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
-+-----------------+---------+-----+--------+-------+-----+
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      73|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      66|    -|
+|Register         |        -|    -|      14|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      14|     139|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |     1090|  900|  437200|  218600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
     * Instance: 
@@ -85,26 +85,26 @@
     +--------------------------+----------+----+---+----+------------+------------+
     |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------------+----------+----+---+----+------------+------------+
-    |add_ln394_fu_108_p2       |         +|   0|  0|  11|           3|           1|
-    |icmp_ln392_fu_102_p2      |      icmp|   0|  0|  11|           3|           2|
+    |add_ln394_fu_108_p2       |         +|   0|  0|   4|           3|           1|
+    |icmp_ln392_fu_102_p2      |      icmp|   0|  0|   4|           3|           2|
     |select_ln394_2_fu_185_p3  |    select|   0|  0|   2|           1|           1|
     |select_ln394_fu_170_p3    |    select|   0|  0|  63|           1|          63|
     +--------------------------+----------+----+---+----+------------+------------+
-    |Total                     |          |   0|  0|  87|           8|          67|
+    |Total                     |          |   0|  0|  73|           8|          67|
     +--------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
     +--------------------+----+-----------+-----+-----------+
     |        Name        | LUT| Input Size| Bits| Total Bits|
     +--------------------+----+-----------+-----+-----------+
-    |ap_NS_fsm           |  14|          3|    1|          3|
+    |ap_NS_fsm           |  13|          3|    1|          3|
     |ap_done_int         |   9|          2|    1|          2|
     |ap_sig_allocacmp_i  |   9|          2|    3|          6|
-    |c_0_address0_local  |  14|          3|    3|          9|
-    |c_1_address0_local  |  14|          3|    3|          9|
+    |c_0_address0_local  |  13|          3|    3|          9|
+    |c_1_address0_local  |  13|          3|    3|          9|
     |i_242_fu_40         |   9|          2|    3|          6|
     +--------------------+----+-----------+-----+-----------+
-    |Total               |  69|         15|   14|         35|
+    |Total               |  66|         15|   14|         35|
     +--------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -195,50 +195,50 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 5.56>
+State 1 <SV = 0> <Delay = 3.82>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_242 = alloca i32 1" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 5 'alloca' 'i_242' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (1.58ns)   --->   "%store_ln390 = store i3 0, i3 %i_242" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 6 'store' 'store_ln390' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 6 [1/1] (1.29ns)   --->   "%store_ln390 = store i3 0, i3 %i_242" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 6 'store' 'store_ln390' <Predicate = true> <Delay = 1.29>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i.i"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i3 %i_242" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 8 'load' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (1.65ns)   --->   "%icmp_ln392 = icmp_eq  i3 %i, i3 7" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 9 'icmp' 'icmp_ln392' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (1.65ns)   --->   "%add_ln394 = add i3 %i, i3 1" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 10 'add' 'add_ln394' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.76ns)   --->   "%icmp_ln392 = icmp_eq  i3 %i, i3 7" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 9 'icmp' 'icmp_ln392' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.76ns)   --->   "%add_ln394 = add i3 %i, i3 1" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 10 'add' 'add_ln394' <Predicate = true> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln392 = br i1 %icmp_ln392, void %for.inc.i.i.split, void %fpdiv2_503.exit.exitStub" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 11 'br' 'br_ln392' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln392 = trunc i3 %i" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 12 'trunc' 'trunc_ln392' <Predicate = (!icmp_ln392)> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i2 @_ssdm_op_PartSelect.i2.i3.i32.i32, i3 %i, i32 1, i32 2" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 13 'partselect' 'lshr_ln' <Predicate = (!icmp_ln392)> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln390 = zext i2 %lshr_ln" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 14 'zext' 'zext_ln390' <Predicate = (!icmp_ln392)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%c_0_addr = getelementptr i64 %c_0, i64 0, i64 %zext_ln390" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 15 'getelementptr' 'c_0_addr' <Predicate = (!icmp_ln392)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%c_1_addr = getelementptr i64 %c_1, i64 0, i64 %zext_ln390" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 16 'getelementptr' 'c_1_addr' <Predicate = (!icmp_ln392)> <Delay = 0.00>
-ST_1 : Operation 17 [2/2] (2.32ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 17 'load' 'c_0_load' <Predicate = (!icmp_ln392)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 18 [2/2] (2.32ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 18 'load' 'c_1_load' <Predicate = (!icmp_ln392)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 17 [2/2] (1.75ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 17 'load' 'c_0_load' <Predicate = (!icmp_ln392)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 18 [2/2] (1.75ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 18 'load' 'c_1_load' <Predicate = (!icmp_ln392)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%lshr_ln394_1 = partselect i2 @_ssdm_op_PartSelect.i2.i3.i32.i32, i3 %add_ln394, i32 1, i32 2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 19 'partselect' 'lshr_ln394_1' <Predicate = (!icmp_ln392)> <Delay = 0.00>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln394 = zext i2 %lshr_ln394_1" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 20 'zext' 'zext_ln394' <Predicate = (!icmp_ln392)> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%c_0_addr_2 = getelementptr i64 %c_0, i64 0, i64 %zext_ln394" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 21 'getelementptr' 'c_0_addr_2' <Predicate = (!icmp_ln392)> <Delay = 0.00>
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%c_1_addr_2 = getelementptr i64 %c_1, i64 0, i64 %zext_ln394" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 22 'getelementptr' 'c_1_addr_2' <Predicate = (!icmp_ln392)> <Delay = 0.00>
-ST_1 : Operation 23 [2/2] (2.32ns)   --->   "%c_0_load_2 = load i3 %c_0_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 23 'load' 'c_0_load_2' <Predicate = (!icmp_ln392)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 24 [2/2] (2.32ns)   --->   "%c_1_load_2 = load i3 %c_1_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 24 'load' 'c_1_load_2' <Predicate = (!icmp_ln392)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 46 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 46 'ret' 'ret_ln0' <Predicate = (icmp_ln392)> <Delay = 1.58>
+ST_1 : Operation 23 [2/2] (1.75ns)   --->   "%c_0_load_2 = load i3 %c_0_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 23 'load' 'c_0_load_2' <Predicate = (!icmp_ln392)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 24 [2/2] (1.75ns)   --->   "%c_1_load_2 = load i3 %c_1_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 24 'load' 'c_1_load_2' <Predicate = (!icmp_ln392)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 46 [1/1] (1.29ns)   --->   "%ret_ln0 = ret"   --->   Operation 46 'ret' 'ret_ln0' <Predicate = (icmp_ln392)> <Delay = 1.29>
 
-State 2 <SV = 1> <Delay = 6.05>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_60" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 25 'specpipeline' 'specpipeline_ln390' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 4.64>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln390 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 25 'specpipeline' 'specpipeline_ln390' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln390 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 7, i64 7, i64 7" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln390' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_89" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 27 'specloopname' 'specloopname_ln392' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 28 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 28 'load' 'c_0_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 29 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 29 'load' 'c_1_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln392 = specloopname void @_ssdm_op_SpecLoopName, void @empty_90" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 27 'specloopname' 'specloopname_ln392' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 28 'load' 'c_0_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 29 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 29 'load' 'c_1_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load, i32 1, i32 63" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 30 'partselect' 'tmp' <Predicate = (trunc_ln392)> <Delay = 0.00>
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_s = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_0_load, i32 1, i32 63" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 31 'partselect' 'tmp_s' <Predicate = (!trunc_ln392)> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (1.41ns)   --->   "%select_ln394 = select i1 %trunc_ln392, i63 %tmp, i63 %tmp_s" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 32 'select' 'select_ln394' <Predicate = true> <Delay = 1.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 33 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_0_load_2 = load i3 %c_0_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 33 'load' 'c_0_load_2' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 34 [1/2] ( I:2.32ns O:2.32ns )   --->   "%c_1_load_2 = load i3 %c_1_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 34 'load' 'c_1_load_2' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 32 [1/1] (1.13ns)   --->   "%select_ln394 = select i1 %trunc_ln392, i63 %tmp, i63 %tmp_s" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 32 'select' 'select_ln394' <Predicate = true> <Delay = 1.13> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 33 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_0_load_2 = load i3 %c_0_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 33 'load' 'c_0_load_2' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 34 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_1_load_2 = load i3 %c_1_addr_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 34 'load' 'c_1_load_2' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%trunc_ln394 = trunc i64 %c_0_load_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 35 'trunc' 'trunc_ln394' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln394_2 = trunc i64 %c_1_load_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 36 'trunc' 'trunc_ln394_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 37 [1/1] (0.99ns)   --->   "%select_ln394_2 = select i1 %trunc_ln392, i1 %trunc_ln394, i1 %trunc_ln394_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 37 'select' 'select_ln394_2' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.81ns)   --->   "%select_ln394_2 = select i1 %trunc_ln392, i1 %trunc_ln394, i1 %trunc_ln394_2" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 37 'select' 'select_ln394_2' <Predicate = true> <Delay = 0.81> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.81> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %select_ln394_2, i63 %select_ln394" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 38 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln394 = br i1 %trunc_ln392, void %arrayidx.i.i495.case.0, void %arrayidx.i.i495.case.1" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 39 'br' 'br_ln394' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 40 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln394 = store i64 %or_ln, i3 %c_0_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 40 'store' 'store_ln394' <Predicate = (!trunc_ln392)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 40 [1/1] ( I:1.75ns O:1.75ns )   --->   "%store_ln394 = store i64 %or_ln, i3 %c_0_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 40 'store' 'store_ln394' <Predicate = (!trunc_ln392)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln394 = br void %arrayidx.i.i495.exit" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 41 'br' 'br_ln394' <Predicate = (!trunc_ln392)> <Delay = 0.00>
-ST_2 : Operation 42 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln394 = store i64 %or_ln, i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 42 'store' 'store_ln394' <Predicate = (trunc_ln392)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 42 [1/1] ( I:1.75ns O:1.75ns )   --->   "%store_ln394 = store i64 %or_ln, i3 %c_1_addr" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 42 'store' 'store_ln394' <Predicate = (trunc_ln392)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln394 = br void %arrayidx.i.i495.exit" [src/fpx.c:394->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 43 'br' 'br_ln394' <Predicate = (trunc_ln392)> <Delay = 0.00>
-ST_2 : Operation 44 [1/1] (1.58ns)   --->   "%store_ln390 = store i3 %add_ln394, i3 %i_242" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 44 'store' 'store_ln390' <Predicate = true> <Delay = 1.58>
+ST_2 : Operation 44 [1/1] (1.29ns)   --->   "%store_ln390 = store i3 %add_ln394, i3 %i_242" [src/fpx.c:390->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 44 'store' 'store_ln390' <Predicate = true> <Delay = 1.29>
 ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln392 = br void %for.inc.i.i" [src/fpx.c:392->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 45 'br' 'br_ln392' <Predicate = true> <Delay = 0.00>
 
 
@@ -419,7 +419,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_60"/></StgValue>
+<StgValue><ssdm name="empty_56"/></StgValue>
 </bind>
 </comp>
 
@@ -455,7 +455,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_89"/></StgValue>
+<StgValue><ssdm name="empty_90"/></StgValue>
 </bind>
 </comp>
 
@@ -1062,9 +1062,9 @@ ret_ln0                 (ret              ) [ 000]
 |  select  |  select_ln394_fu_170  |    0    |    63   |
 |          | select_ln394_2_fu_185 |    0    |    2    |
 |----------|-----------------------|---------|---------|
-|   icmp   |   icmp_ln392_fu_102   |    0    |    11   |
+|   icmp   |   icmp_ln392_fu_102   |    0    |    4    |
 |----------|-----------------------|---------|---------|
-|    add   |    add_ln394_fu_108   |    0    |    11   |
+|    add   |    add_ln394_fu_108   |    0    |    4    |
 |----------|-----------------------|---------|---------|
 |          |   trunc_ln392_fu_114  |    0    |    0    |
 |   trunc  |   trunc_ln394_fu_177  |    0    |    0    |
@@ -1080,7 +1080,7 @@ ret_ln0                 (ret              ) [ 000]
 |----------|-----------------------|---------|---------|
 |bitconcatenate|      or_ln_fu_192     |    0    |    0    |
 |----------|-----------------------|---------|---------|
-|   Total  |                       |    0    |    87   |
+|   Total  |                       |    0    |    73   |
 |----------|-----------------------|---------|---------|
 
 Memories:
@@ -1105,12 +1105,12 @@ N/A
 |------------------|------|------|------|--------||---------||---------||---------|
 |       Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |------------------|------|------|------|--------||---------||---------||---------|
-| grp_access_fu_58 |  p0  |   3  |   3  |    9   ||    0    ||    14   |
+| grp_access_fu_58 |  p0  |   3  |   3  |    9   ||    0    ||    13   |
 | grp_access_fu_58 |  p2  |   2  |   0  |    0   ||    0    ||    9    |
-| grp_access_fu_68 |  p0  |   3  |   3  |    9   ||    0    ||    14   |
+| grp_access_fu_68 |  p0  |   3  |   3  |    9   ||    0    ||    13   |
 | grp_access_fu_68 |  p2  |   2  |   0  |    0   ||    0    ||    9    |
 |------------------|------|------|------|--------||---------||---------||---------|
-|       Total      |      |      |      |   18   ||  6.5906 ||    0    ||    46   |
+|       Total      |      |      |      |   18   || 5.24614 ||    0    ||    44   |
 |------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -1119,10 +1119,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    -   |    0   |   87   |
+|  Function |    -   |    0   |   73   |
 |   Memory  |    -   |    -   |    -   |
-|Multiplexer|    6   |    0   |   46   |
+|Multiplexer|    5   |    0   |   44   |
 |  Register |    -   |   19   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    6   |   19   |   133  |
+|   Total   |    5   |   19   |   117  |
 +-----------+--------+--------+--------+

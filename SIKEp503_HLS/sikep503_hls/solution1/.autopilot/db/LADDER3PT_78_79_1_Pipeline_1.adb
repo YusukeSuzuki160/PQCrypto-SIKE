@@ -168,7 +168,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.58</m_delay>
+          <m_delay>1.29</m_delay>
           <m_topoIndex>2</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -296,7 +296,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.78</m_delay>
+          <m_delay>1.02</m_delay>
           <m_topoIndex>5</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -305,7 +305,7 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>empty_435</name>
+              <name>empty_432</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -316,7 +316,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_435_fu_76_p2</rtlName>
+              <rtlName>empty_432_fu_76_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -339,7 +339,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.78</m_delay>
+          <m_delay>1.02</m_delay>
           <m_topoIndex>6</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -392,7 +392,7 @@
             <Obj>
               <type>0</type>
               <id>12</id>
-              <name>empty_436</name>
+              <name>empty_433</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -403,7 +403,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_436_fu_82_p1</rtlName>
+              <rtlName>empty_433_fu_82_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -687,7 +687,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.32</m_delay>
+          <m_delay>1.75</m_delay>
           <m_topoIndex>14</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -772,7 +772,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.32</m_delay>
+          <m_delay>1.75</m_delay>
           <m_topoIndex>16</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -859,7 +859,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.58</m_delay>
+          <m_delay>1.29</m_delay>
           <m_topoIndex>18</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -942,7 +942,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.58</m_delay>
+          <m_delay>1.29</m_delay>
           <m_topoIndex>20</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1943,7 +1943,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>empty_435_fu_76_p2 ( + ) </first>
+          <first>empty_432_fu_76_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1961,7 +1961,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>13</second>
+              <second>7</second>
             </item>
           </second>
         </item>
@@ -1984,7 +1984,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>14</second>
+              <second>6</second>
             </item>
           </second>
         </item>
@@ -2162,7 +2162,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="32" tracking_level="0" version="0">
-          <first>empty_435_fu_76_p2 ( + ) </first>
+          <first>empty_432_fu_76_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2540,7 +2540,7 @@
         </second>
       </item>
       <item>
-        <first>empty_435_fu_76</first>
+        <first>empty_432_fu_76</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2548,7 +2548,7 @@
         </second>
       </item>
       <item>
-        <first>empty_436_fu_82</first>
+        <first>empty_433_fu_82</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
