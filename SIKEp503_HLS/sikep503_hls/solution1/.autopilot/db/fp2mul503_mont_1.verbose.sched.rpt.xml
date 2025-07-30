@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_1'" level="0">
-<item name = "Date">Wed Jul  2 14:03:28 2025
+<item name = "Date">Wed Jul 30 17:31:04 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z045-ffg900-2</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 5.675 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">733, 1215, 7.330 us, 12.150 us, 733, 1215, no</column>
+<column name="">323, 535, 3.230 us, 5.350 us, 323, 535, no</column>
 </table>
 </item>
 <item name = "Detail">

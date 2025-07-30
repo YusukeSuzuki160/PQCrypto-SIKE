@@ -1,0 +1,367 @@
+
+
+================================================================
+== Vitis HLS Report for 'fpcorrection503_73'
+================================================================
+* Date:           Wed Jul 30 15:22:47 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.137 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        7|        7|  70.000 ns|  70.000 ns|    8|    8|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 8, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 8, D = 8, States = { 1 2 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.71>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%t_addr = getelementptr i64 %t, i64 0, i64 0" [src/generic/fp_generic.cpp:111]   --->   Operation 9 'getelementptr' 't_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [2/2] (0.71ns)   --->   "%t_load = load i4 %t_addr" [src/generic/fp_generic.cpp:111]   --->   Operation 10 'load' 't_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%t_addr_12 = getelementptr i64 %t, i64 0, i64 1" [src/generic/fp_generic.cpp:111]   --->   Operation 11 'getelementptr' 't_addr_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [2/2] (0.71ns)   --->   "%t_load_10 = load i4 %t_addr_12" [src/generic/fp_generic.cpp:111]   --->   Operation 12 'load' 't_load_10' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+
+State 2 <SV = 1> <Delay = 3.29>
+ST_2 : Operation 13 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load = load i4 %t_addr" [src/generic/fp_generic.cpp:111]   --->   Operation 13 'load' 't_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_2 : Operation 14 [1/1] (1.14ns)   --->   "%tempReg = add i64 %t_load, i64 1" [src/generic/fp_generic.cpp:111]   --->   Operation 14 'add' 'tempReg' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (1.43ns)   --->   "%borrowReg = call i1 @is_digit_lessthan_ct, i64 %t_load, i64 18446744073709551615" [src/generic/fp_generic.cpp:111]   --->   Operation 15 'call' 'borrowReg' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 16 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load_10 = load i4 %t_addr_12" [src/generic/fp_generic.cpp:111]   --->   Operation 16 'load' 't_load_10' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_2 : Operation 17 [1/1] (1.14ns)   --->   "%tempReg_1090 = add i64 %t_load_10, i64 1" [src/generic/fp_generic.cpp:111]   --->   Operation 17 'add' 'tempReg_1090' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (1.43ns)   --->   "%tmp = call i1 @is_digit_lessthan_ct, i64 %t_load_10, i64 18446744073709551615" [src/generic/fp_generic.cpp:111]   --->   Operation 18 'call' 'tmp' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%bit_sel1 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %t_load_10, i64 63" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 19 'bitselect' 'bit_sel1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%xor_ln95_3 = xor i1 %bit_sel1, i1 1" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 20 'xor' 'xor_ln95_3' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%trunc_ln95 = trunc i64 %t_load_10" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 21 'trunc' 'trunc_ln95' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%xor_ln = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln95_3, i63 %trunc_ln95" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 22 'bitconcatenate' 'xor_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%or_ln95 = or i64 %tempReg_1090, i64 %xor_ln" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 23 'or' 'or_ln95' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%tmp_730 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 24 'bitselect' 'tmp_730' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%xor_ln100 = xor i1 %tmp_730, i1 1" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 25 'xor' 'xor_ln100' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_259)   --->   "%and_ln111 = and i1 %borrowReg, i1 %xor_ln100" [src/generic/fp_generic.cpp:111]   --->   Operation 26 'and' 'and_ln111' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg_259 = or i1 %and_ln111, i1 %tmp" [src/generic/fp_generic.cpp:111]   --->   Operation 27 'or' 'borrowReg_259' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%t_addr_13 = getelementptr i64 %t, i64 0, i64 2" [src/generic/fp_generic.cpp:111]   --->   Operation 28 'getelementptr' 't_addr_13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [2/2] (0.71ns)   --->   "%t_load_11 = load i4 %t_addr_13" [src/generic/fp_generic.cpp:111]   --->   Operation 29 'load' 't_load_11' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%t_addr_14 = getelementptr i64 %t, i64 0, i64 3" [src/generic/fp_generic.cpp:111]   --->   Operation 30 'getelementptr' 't_addr_14' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [2/2] (0.71ns)   --->   "%t_load_12 = load i4 %t_addr_14" [src/generic/fp_generic.cpp:111]   --->   Operation 31 'load' 't_load_12' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_2 : Operation 32 [1/1] (1.43ns)   --->   "%tmp_716 = call i1 @is_digit_lessthan_ct, i64 %tempReg, i64 0" [src/generic/fp_generic.cpp:117]   --->   Operation 32 'call' 'tmp_716' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 2.43>
+ST_3 : Operation 33 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load_11 = load i4 %t_addr_13" [src/generic/fp_generic.cpp:111]   --->   Operation 33 'load' 't_load_11' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_3 : Operation 34 [1/1] (1.14ns)   --->   "%tempReg_1091 = add i64 %t_load_11, i64 1" [src/generic/fp_generic.cpp:111]   --->   Operation 34 'add' 'tempReg_1091' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (1.43ns)   --->   "%tmp_s = call i1 @is_digit_lessthan_ct, i64 %t_load_11, i64 18446744073709551615" [src/generic/fp_generic.cpp:111]   --->   Operation 35 'call' 'tmp_s' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %t_load_11, i64 63" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 36 'bitselect' 'bit_sel' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%xor_ln95 = xor i1 %bit_sel, i1 1" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 37 'xor' 'xor_ln95' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%trunc_ln95_2 = trunc i64 %t_load_11" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 38 'trunc' 'trunc_ln95_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%xor_ln95_2 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln95, i63 %trunc_ln95_2" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 39 'bitconcatenate' 'xor_ln95_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%or_ln95_192 = or i64 %tempReg_1091, i64 %xor_ln95_2" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 40 'or' 'or_ln95_192' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%tmp_731 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95_192, i32 63" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 41 'bitselect' 'tmp_731' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%xor_ln100_192 = xor i1 %tmp_731, i1 1" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 42 'xor' 'xor_ln100_192' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_260)   --->   "%and_ln111_7 = and i1 %borrowReg_259, i1 %xor_ln100_192" [src/generic/fp_generic.cpp:111]   --->   Operation 43 'and' 'and_ln111_7' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg_260 = or i1 %and_ln111_7, i1 %tmp_s" [src/generic/fp_generic.cpp:111]   --->   Operation 44 'or' 'borrowReg_260' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 45 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load_12 = load i4 %t_addr_14" [src/generic/fp_generic.cpp:111]   --->   Operation 45 'load' 't_load_12' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_3 : Operation 46 [1/1] (1.43ns)   --->   "%tmp_711 = call i1 @is_digit_lessthan_ct, i64 %t_load_12, i64 12393906174523604991" [src/generic/fp_generic.cpp:111]   --->   Operation 46 'call' 'tmp_711' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%t_addr_15 = getelementptr i64 %t, i64 0, i64 4" [src/generic/fp_generic.cpp:111]   --->   Operation 47 'getelementptr' 't_addr_15' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [2/2] (0.71ns)   --->   "%t_load_13 = load i4 %t_addr_15" [src/generic/fp_generic.cpp:111]   --->   Operation 48 'load' 't_load_13' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%t_addr_16 = getelementptr i64 %t, i64 0, i64 5" [src/generic/fp_generic.cpp:111]   --->   Operation 49 'getelementptr' 't_addr_16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [2/2] (0.71ns)   --->   "%t_load_14 = load i4 %t_addr_16" [src/generic/fp_generic.cpp:111]   --->   Operation 50 'load' 't_load_14' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+
+State 4 <SV = 3> <Delay = 2.72>
+ST_4 : Operation 51 [1/1] (1.14ns)   --->   "%tempReg_1092 = add i64 %t_load_12, i64 6052837899185946625" [src/generic/fp_generic.cpp:111]   --->   Operation 51 'add' 'tempReg_1092' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (1.14ns)   --->   "%sub_ln95 = sub i64 12393906174523604991, i64 %t_load_12" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 52 'sub' 'sub_ln95' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_261)   --->   "%or_ln95_193 = or i64 %sub_ln95, i64 %tempReg_1092" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 53 'or' 'or_ln95_193' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_261)   --->   "%tmp_732 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95_193, i32 63" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 54 'bitselect' 'tmp_732' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_261)   --->   "%xor_ln100_193 = xor i1 %tmp_732, i1 1" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 55 'xor' 'xor_ln100_193' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_261)   --->   "%and_ln111_8 = and i1 %borrowReg_260, i1 %xor_ln100_193" [src/generic/fp_generic.cpp:111]   --->   Operation 56 'and' 'and_ln111_8' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 57 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg_261 = or i1 %and_ln111_8, i1 %tmp_711" [src/generic/fp_generic.cpp:111]   --->   Operation 57 'or' 'borrowReg_261' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 58 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load_13 = load i4 %t_addr_15" [src/generic/fp_generic.cpp:111]   --->   Operation 58 'load' 't_load_13' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_4 : Operation 59 [1/1] (1.14ns)   --->   "%tempReg_1093 = add i64 %t_load_13, i64 17075296994742638688" [src/generic/fp_generic.cpp:111]   --->   Operation 59 'add' 'tempReg_1093' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 60 [1/1] (1.43ns)   --->   "%tmp_712 = call i1 @is_digit_lessthan_ct, i64 %t_load_13, i64 1371447078966912928" [src/generic/fp_generic.cpp:111]   --->   Operation 60 'call' 'tmp_712' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 61 [1/1] (1.14ns)   --->   "%sub_ln95_188 = sub i64 1371447078966912928, i64 %t_load_13" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 61 'sub' 'sub_ln95_188' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_262)   --->   "%or_ln95_194 = or i64 %sub_ln95_188, i64 %tempReg_1093" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 62 'or' 'or_ln95_194' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_262)   --->   "%tmp_733 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95_194, i32 63" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 63 'bitselect' 'tmp_733' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_262)   --->   "%xor_ln100_194 = xor i1 %tmp_733, i1 1" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 64 'xor' 'xor_ln100_194' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 65 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_262)   --->   "%and_ln111_9 = and i1 %borrowReg_261, i1 %xor_ln100_194" [src/generic/fp_generic.cpp:111]   --->   Operation 65 'and' 'and_ln111_9' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 66 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg_262 = or i1 %and_ln111_9, i1 %tmp_712" [src/generic/fp_generic.cpp:111]   --->   Operation 66 'or' 'borrowReg_262' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 67 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load_14 = load i4 %t_addr_16" [src/generic/fp_generic.cpp:111]   --->   Operation 67 'load' 't_load_14' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_4 : Operation 68 [1/1] (1.14ns)   --->   "%tempReg_1094 = add i64 %t_load_14, i64 16457289072369566289" [src/generic/fp_generic.cpp:111]   --->   Operation 68 'add' 'tempReg_1094' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 69 [1/1] (1.43ns)   --->   "%tmp_713 = call i1 @is_digit_lessthan_ct, i64 %t_load_14, i64 1989455001339985327" [src/generic/fp_generic.cpp:111]   --->   Operation 69 'call' 'tmp_713' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 70 [1/1] (1.14ns)   --->   "%sub_ln95_189 = sub i64 1989455001339985327, i64 %t_load_14" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 70 'sub' 'sub_ln95_189' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_263)   --->   "%or_ln95_195 = or i64 %sub_ln95_189, i64 %tempReg_1094" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 71 'or' 'or_ln95_195' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_263)   --->   "%tmp_734 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95_195, i32 63" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 72 'bitselect' 'tmp_734' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_263)   --->   "%xor_ln100_195 = xor i1 %tmp_734, i1 1" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 73 'xor' 'xor_ln100_195' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 74 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_263)   --->   "%and_ln111_10 = and i1 %borrowReg_262, i1 %xor_ln100_195" [src/generic/fp_generic.cpp:111]   --->   Operation 74 'and' 'and_ln111_10' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 75 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg_263 = or i1 %and_ln111_10, i1 %tmp_713" [src/generic/fp_generic.cpp:111]   --->   Operation 75 'or' 'borrowReg_263' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%t_addr_17 = getelementptr i64 %t, i64 0, i64 6" [src/generic/fp_generic.cpp:111]   --->   Operation 76 'getelementptr' 't_addr_17' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 77 [2/2] (0.71ns)   --->   "%t_load_15 = load i4 %t_addr_17" [src/generic/fp_generic.cpp:111]   --->   Operation 77 'load' 't_load_15' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%t_addr_18 = getelementptr i64 %t, i64 0, i64 7" [src/generic/fp_generic.cpp:111]   --->   Operation 78 'getelementptr' 't_addr_18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [2/2] (0.71ns)   --->   "%t_load_16 = load i4 %t_addr_18" [src/generic/fp_generic.cpp:111]   --->   Operation 79 'load' 't_load_16' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+
+State 5 <SV = 4> <Delay = 8.13>
+ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%zext_ln111 = zext i1 %borrowReg" [src/generic/fp_generic.cpp:111]   --->   Operation 80 'zext' 'zext_ln111' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 81 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln111 = sub i64 %tempReg_1090, i64 %zext_ln111" [src/generic/fp_generic.cpp:111]   --->   Operation 81 'sub' 'sub_ln111' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 82 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load_15 = load i4 %t_addr_17" [src/generic/fp_generic.cpp:111]   --->   Operation 82 'load' 't_load_15' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_5 : Operation 83 [1/1] (1.14ns)   --->   "%tempReg_1095 = add i64 %t_load_15, i64 11509574753959041840" [src/generic/fp_generic.cpp:111]   --->   Operation 83 'add' 'tempReg_1095' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 84 [1/1] (1.43ns)   --->   "%tmp_714 = call i1 @is_digit_lessthan_ct, i64 %t_load_15, i64 6937169319750509776" [src/generic/fp_generic.cpp:111]   --->   Operation 84 'call' 'tmp_714' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 85 [1/1] (1.14ns)   --->   "%sub_ln95_190 = sub i64 6937169319750509776, i64 %t_load_15" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 85 'sub' 'sub_ln95_190' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 86 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_264)   --->   "%or_ln95_196 = or i64 %sub_ln95_190, i64 %tempReg_1095" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 86 'or' 'or_ln95_196' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 87 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_264)   --->   "%tmp_735 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95_196, i32 63" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 87 'bitselect' 'tmp_735' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 88 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_264)   --->   "%xor_ln100_196 = xor i1 %tmp_735, i1 1" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 88 'xor' 'xor_ln100_196' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_264)   --->   "%and_ln111_11 = and i1 %borrowReg_263, i1 %xor_ln100_196" [src/generic/fp_generic.cpp:111]   --->   Operation 89 'and' 'and_ln111_11' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 90 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg_264 = or i1 %and_ln111_11, i1 %tmp_714" [src/generic/fp_generic.cpp:111]   --->   Operation 90 'or' 'borrowReg_264' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 91 [1/2] ( I:0.71ns O:0.71ns )   --->   "%t_load_16 = load i4 %t_addr_18" [src/generic/fp_generic.cpp:111]   --->   Operation 91 'load' 't_load_16' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_5 : Operation 92 [1/1] (1.14ns)   --->   "%tempReg_1096 = add i64 %t_load_16, i64 18428616471648068066" [src/generic/fp_generic.cpp:111]   --->   Operation 92 'add' 'tempReg_1096' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 93 [1/1] (1.43ns)   --->   "%tmp_715 = call i1 @is_digit_lessthan_ct, i64 %t_load_16, i64 18127602061483550" [src/generic/fp_generic.cpp:111]   --->   Operation 93 'call' 'tmp_715' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 94 [1/1] (1.14ns)   --->   "%sub_ln95_191 = sub i64 18127602061483550, i64 %t_load_16" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 94 'sub' 'sub_ln95_191' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 95 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_265)   --->   "%or_ln95_197 = or i64 %sub_ln95_191, i64 %tempReg_1096" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 95 'or' 'or_ln95_197' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 96 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_265)   --->   "%tmp_736 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95_197, i32 63" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 96 'bitselect' 'tmp_736' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 97 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_265)   --->   "%xor_ln100_197 = xor i1 %tmp_736, i1 1" [src/config.h:100->src/generic/fp_generic.cpp:111]   --->   Operation 97 'xor' 'xor_ln100_197' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node borrowReg_265)   --->   "%and_ln111_12 = and i1 %borrowReg_264, i1 %xor_ln100_197" [src/generic/fp_generic.cpp:111]   --->   Operation 98 'and' 'and_ln111_12' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 99 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg_265 = or i1 %and_ln111_12, i1 %tmp_715" [src/generic/fp_generic.cpp:111]   --->   Operation 99 'or' 'borrowReg_265' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%zext_ln113 = zext i1 %borrowReg_265" [src/generic/fp_generic.cpp:113]   --->   Operation 100 'zext' 'zext_ln113' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 101 [1/1] (1.14ns)   --->   "%sub_ln117 = sub i64 %tempReg, i64 %zext_ln113" [src/generic/fp_generic.cpp:117]   --->   Operation 101 'sub' 'sub_ln117' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 102 [1/1] (1.43ns)   --->   "%tmp_717 = call i1 @is_digit_lessthan_ct, i64 %sub_ln117, i64 %tempReg" [src/generic/fp_generic.cpp:117]   --->   Operation 102 'call' 'tmp_717' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 103 [1/1] (0.12ns)   --->   "%borrow_698 = or i1 %tmp_717, i1 %tmp_716" [src/generic/fp_generic.cpp:117]   --->   Operation 103 'or' 'borrow_698' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%zext_ln117 = zext i1 %borrow_698" [src/generic/fp_generic.cpp:117]   --->   Operation 104 'zext' 'zext_ln117' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 105 [1/1] (0.84ns) (root node of TernaryAdder)   --->   "%tempReg_1097 = add i64 %sub_ln111, i64 %zext_ln117" [src/generic/fp_generic.cpp:117]   --->   Operation 105 'add' 'tempReg_1097' <Predicate = true> <Delay = 0.84> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 106 [1/1] (1.14ns)   --->   "%sub_ln117_3 = sub i64 %tempReg_1097, i64 %zext_ln113" [src/generic/fp_generic.cpp:117]   --->   Operation 106 'sub' 'sub_ln117_3' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 107 [1/1] (1.43ns)   --->   "%tmp_718 = call i1 @is_digit_lessthan_ct, i64 %tempReg_1097, i64 %zext_ln117" [src/generic/fp_generic.cpp:117]   --->   Operation 107 'call' 'tmp_718' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 108 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %sub_ln117, i4 %t_addr" [src/generic/fp_generic.cpp:117]   --->   Operation 108 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_5 : Operation 109 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %sub_ln117_3, i4 %t_addr_12" [src/generic/fp_generic.cpp:117]   --->   Operation 109 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+
+State 6 <SV = 5> <Delay = 7.81>
+ST_6 : Operation 110 [1/1] (0.00ns)   --->   "%zext_ln111_7 = zext i1 %borrowReg_259" [src/generic/fp_generic.cpp:111]   --->   Operation 110 'zext' 'zext_ln111_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 111 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln111_6 = sub i64 %tempReg_1091, i64 %zext_ln111_7" [src/generic/fp_generic.cpp:111]   --->   Operation 111 'sub' 'sub_ln111_6' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 112 [1/1] (0.00ns)   --->   "%zext_ln111_8 = zext i1 %borrowReg_260" [src/generic/fp_generic.cpp:111]   --->   Operation 112 'zext' 'zext_ln111_8' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 113 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln111_7 = sub i64 %tempReg_1092, i64 %zext_ln111_8" [src/generic/fp_generic.cpp:111]   --->   Operation 113 'sub' 'sub_ln111_7' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 114 [1/1] (1.43ns)   --->   "%tmp_719 = call i1 @is_digit_lessthan_ct, i64 %sub_ln117_3, i64 %tempReg_1097" [src/generic/fp_generic.cpp:117]   --->   Operation 114 'call' 'tmp_719' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 115 [1/1] (0.12ns)   --->   "%borrow_699 = or i1 %tmp_719, i1 %tmp_718" [src/generic/fp_generic.cpp:117]   --->   Operation 115 'or' 'borrow_699' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln117_7 = zext i1 %borrow_699" [src/generic/fp_generic.cpp:117]   --->   Operation 116 'zext' 'zext_ln117_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 117 [1/1] (0.84ns) (root node of TernaryAdder)   --->   "%tempReg_1098 = add i64 %sub_ln111_6, i64 %zext_ln117_7" [src/generic/fp_generic.cpp:117]   --->   Operation 117 'add' 'tempReg_1098' <Predicate = true> <Delay = 0.84> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 118 [1/1] (1.14ns)   --->   "%sub_ln117_4 = sub i64 %tempReg_1098, i64 %zext_ln113" [src/generic/fp_generic.cpp:117]   --->   Operation 118 'sub' 'sub_ln117_4' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 119 [1/1] (1.43ns)   --->   "%tmp_720 = call i1 @is_digit_lessthan_ct, i64 %tempReg_1098, i64 %zext_ln117_7" [src/generic/fp_generic.cpp:117]   --->   Operation 119 'call' 'tmp_720' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 120 [1/1] (1.43ns)   --->   "%tmp_721 = call i1 @is_digit_lessthan_ct, i64 %sub_ln117_4, i64 %tempReg_1098" [src/generic/fp_generic.cpp:117]   --->   Operation 120 'call' 'tmp_721' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 121 [1/1] (0.12ns)   --->   "%borrow_700 = or i1 %tmp_721, i1 %tmp_720" [src/generic/fp_generic.cpp:117]   --->   Operation 121 'or' 'borrow_700' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 122 [1/1] (0.00ns)   --->   "%zext_ln117_8 = zext i1 %borrow_700" [src/generic/fp_generic.cpp:117]   --->   Operation 122 'zext' 'zext_ln117_8' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 123 [1/1] (0.84ns) (root node of TernaryAdder)   --->   "%tempReg_1099 = add i64 %sub_ln111_7, i64 %zext_ln117_8" [src/generic/fp_generic.cpp:117]   --->   Operation 123 'add' 'tempReg_1099' <Predicate = true> <Delay = 0.84> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 124 [1/1] (0.00ns) (grouped into LUT with out node add_ln117)   --->   "%select_ln117 = select i1 %borrowReg_265, i64 12393906174523604991, i64 0" [src/generic/fp_generic.cpp:117]   --->   Operation 124 'select' 'select_ln117' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 125 [1/1] (1.14ns) (out node of the LUT)   --->   "%add_ln117 = add i64 %tempReg_1099, i64 %select_ln117" [src/generic/fp_generic.cpp:117]   --->   Operation 125 'add' 'add_ln117' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 126 [1/1] (1.43ns)   --->   "%tmp_722 = call i1 @is_digit_lessthan_ct, i64 %tempReg_1099, i64 %zext_ln117_8" [src/generic/fp_generic.cpp:117]   --->   Operation 126 'call' 'tmp_722' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 127 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %sub_ln117_4, i4 %t_addr_13" [src/generic/fp_generic.cpp:117]   --->   Operation 127 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_6 : Operation 128 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %add_ln117, i4 %t_addr_14" [src/generic/fp_generic.cpp:117]   --->   Operation 128 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+
+State 7 <SV = 6> <Delay = 7.81>
+ST_7 : Operation 129 [1/1] (0.00ns)   --->   "%zext_ln111_9 = zext i1 %borrowReg_261" [src/generic/fp_generic.cpp:111]   --->   Operation 129 'zext' 'zext_ln111_9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 130 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln111_8 = sub i64 %tempReg_1093, i64 %zext_ln111_9" [src/generic/fp_generic.cpp:111]   --->   Operation 130 'sub' 'sub_ln111_8' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln111_10 = zext i1 %borrowReg_262" [src/generic/fp_generic.cpp:111]   --->   Operation 131 'zext' 'zext_ln111_10' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 132 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln111_9 = sub i64 %tempReg_1094, i64 %zext_ln111_10" [src/generic/fp_generic.cpp:111]   --->   Operation 132 'sub' 'sub_ln111_9' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 133 [1/1] (1.43ns)   --->   "%tmp_723 = call i1 @is_digit_lessthan_ct, i64 %add_ln117, i64 %tempReg_1099" [src/generic/fp_generic.cpp:117]   --->   Operation 133 'call' 'tmp_723' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 134 [1/1] (0.12ns)   --->   "%borrow_701 = or i1 %tmp_723, i1 %tmp_722" [src/generic/fp_generic.cpp:117]   --->   Operation 134 'or' 'borrow_701' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 135 [1/1] (0.00ns)   --->   "%zext_ln117_9 = zext i1 %borrow_701" [src/generic/fp_generic.cpp:117]   --->   Operation 135 'zext' 'zext_ln117_9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 136 [1/1] (0.84ns) (root node of TernaryAdder)   --->   "%tempReg_1100 = add i64 %sub_ln111_8, i64 %zext_ln117_9" [src/generic/fp_generic.cpp:117]   --->   Operation 136 'add' 'tempReg_1100' <Predicate = true> <Delay = 0.84> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 137 [1/1] (0.00ns) (grouped into LUT with out node add_ln117_10)   --->   "%select_ln117_5 = select i1 %borrowReg_265, i64 1371447078966912928, i64 0" [src/generic/fp_generic.cpp:117]   --->   Operation 137 'select' 'select_ln117_5' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 138 [1/1] (1.14ns) (out node of the LUT)   --->   "%add_ln117_10 = add i64 %tempReg_1100, i64 %select_ln117_5" [src/generic/fp_generic.cpp:117]   --->   Operation 138 'add' 'add_ln117_10' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 139 [1/1] (1.43ns)   --->   "%tmp_724 = call i1 @is_digit_lessthan_ct, i64 %tempReg_1100, i64 %zext_ln117_9" [src/generic/fp_generic.cpp:117]   --->   Operation 139 'call' 'tmp_724' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 140 [1/1] (1.43ns)   --->   "%tmp_725 = call i1 @is_digit_lessthan_ct, i64 %add_ln117_10, i64 %tempReg_1100" [src/generic/fp_generic.cpp:117]   --->   Operation 140 'call' 'tmp_725' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 141 [1/1] (0.12ns)   --->   "%borrow_702 = or i1 %tmp_725, i1 %tmp_724" [src/generic/fp_generic.cpp:117]   --->   Operation 141 'or' 'borrow_702' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 142 [1/1] (0.00ns)   --->   "%zext_ln117_10 = zext i1 %borrow_702" [src/generic/fp_generic.cpp:117]   --->   Operation 142 'zext' 'zext_ln117_10' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 143 [1/1] (0.84ns) (root node of TernaryAdder)   --->   "%tempReg_1101 = add i64 %sub_ln111_9, i64 %zext_ln117_10" [src/generic/fp_generic.cpp:117]   --->   Operation 143 'add' 'tempReg_1101' <Predicate = true> <Delay = 0.84> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 144 [1/1] (0.00ns) (grouped into LUT with out node add_ln117_12)   --->   "%select_ln117_6 = select i1 %borrowReg_265, i64 1989455001339985327, i64 0" [src/generic/fp_generic.cpp:117]   --->   Operation 144 'select' 'select_ln117_6' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 145 [1/1] (1.14ns) (out node of the LUT)   --->   "%add_ln117_12 = add i64 %tempReg_1101, i64 %select_ln117_6" [src/generic/fp_generic.cpp:117]   --->   Operation 145 'add' 'add_ln117_12' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 146 [1/1] (1.43ns)   --->   "%tmp_726 = call i1 @is_digit_lessthan_ct, i64 %tempReg_1101, i64 %zext_ln117_10" [src/generic/fp_generic.cpp:117]   --->   Operation 146 'call' 'tmp_726' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 147 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %add_ln117_10, i4 %t_addr_15" [src/generic/fp_generic.cpp:117]   --->   Operation 147 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_7 : Operation 148 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %add_ln117_12, i4 %t_addr_16" [src/generic/fp_generic.cpp:117]   --->   Operation 148 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+
+State 8 <SV = 7> <Delay = 6.66>
+ST_8 : Operation 149 [1/1] (0.00ns)   --->   "%specpipeline_ln111 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_34" [src/generic/fp_generic.cpp:111]   --->   Operation 149 'specpipeline' 'specpipeline_ln111' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 150 [1/1] (0.00ns)   --->   "%zext_ln111_11 = zext i1 %borrowReg_263" [src/generic/fp_generic.cpp:111]   --->   Operation 150 'zext' 'zext_ln111_11' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 151 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln111_10 = sub i64 %tempReg_1095, i64 %zext_ln111_11" [src/generic/fp_generic.cpp:111]   --->   Operation 151 'sub' 'sub_ln111_10' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 152 [1/1] (0.00ns)   --->   "%zext_ln111_12 = zext i1 %borrowReg_264" [src/generic/fp_generic.cpp:111]   --->   Operation 152 'zext' 'zext_ln111_12' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 153 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln111_11 = sub i64 %tempReg_1096, i64 %zext_ln111_12" [src/generic/fp_generic.cpp:111]   --->   Operation 153 'sub' 'sub_ln111_11' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 154 [1/1] (1.43ns)   --->   "%tmp_727 = call i1 @is_digit_lessthan_ct, i64 %add_ln117_12, i64 %tempReg_1101" [src/generic/fp_generic.cpp:117]   --->   Operation 154 'call' 'tmp_727' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 155 [1/1] (0.12ns)   --->   "%borrow_703 = or i1 %tmp_727, i1 %tmp_726" [src/generic/fp_generic.cpp:117]   --->   Operation 155 'or' 'borrow_703' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 156 [1/1] (0.00ns)   --->   "%zext_ln117_11 = zext i1 %borrow_703" [src/generic/fp_generic.cpp:117]   --->   Operation 156 'zext' 'zext_ln117_11' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 157 [1/1] (0.84ns) (root node of TernaryAdder)   --->   "%tempReg_1102 = add i64 %sub_ln111_10, i64 %zext_ln117_11" [src/generic/fp_generic.cpp:117]   --->   Operation 157 'add' 'tempReg_1102' <Predicate = true> <Delay = 0.84> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 158 [1/1] (0.00ns) (grouped into LUT with out node add_ln117_14)   --->   "%select_ln117_7 = select i1 %borrowReg_265, i64 6937169319750509776, i64 0" [src/generic/fp_generic.cpp:117]   --->   Operation 158 'select' 'select_ln117_7' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 159 [1/1] (1.14ns) (out node of the LUT)   --->   "%add_ln117_14 = add i64 %tempReg_1102, i64 %select_ln117_7" [src/generic/fp_generic.cpp:117]   --->   Operation 159 'add' 'add_ln117_14' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 160 [1/1] (1.43ns)   --->   "%tmp_728 = call i1 @is_digit_lessthan_ct, i64 %tempReg_1102, i64 %zext_ln117_11" [src/generic/fp_generic.cpp:117]   --->   Operation 160 'call' 'tmp_728' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 161 [1/1] (1.43ns)   --->   "%tmp_729 = call i1 @is_digit_lessthan_ct, i64 %add_ln117_14, i64 %tempReg_1102" [src/generic/fp_generic.cpp:117]   --->   Operation 161 'call' 'tmp_729' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 162 [1/1] (0.12ns)   --->   "%borrow_704 = or i1 %tmp_729, i1 %tmp_728" [src/generic/fp_generic.cpp:117]   --->   Operation 162 'or' 'borrow_704' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 163 [1/1] (0.26ns)   --->   "%select_ln117_8 = select i1 %borrowReg_265, i54 9063801030741775, i54 0" [src/generic/fp_generic.cpp:117]   --->   Operation 163 'select' 'select_ln117_8' <Predicate = true> <Delay = 0.26> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.26> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 164 [1/1] (0.00ns)   --->   "%tmp1 = bitconcatenate i55 @_ssdm_op_BitConcatenate.i55.i54.i1, i54 %select_ln117_8, i1 %borrow_704" [src/generic/fp_generic.cpp:117]   --->   Operation 164 'bitconcatenate' 'tmp1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 165 [1/1] (0.00ns)   --->   "%zext_ln117_12 = zext i55 %tmp1" [src/generic/fp_generic.cpp:117]   --->   Operation 165 'zext' 'zext_ln117_12' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 166 [1/1] (0.84ns) (root node of TernaryAdder)   --->   "%add_ln117_16 = add i64 %zext_ln117_12, i64 %sub_ln111_11" [src/generic/fp_generic.cpp:117]   --->   Operation 166 'add' 'add_ln117_16' <Predicate = true> <Delay = 0.84> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.42> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 167 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %add_ln117_14, i4 %t_addr_17" [src/generic/fp_generic.cpp:117]   --->   Operation 167 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_8 : Operation 168 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln117 = store i64 %add_ln117_16, i4 %t_addr_18" [src/generic/fp_generic.cpp:117]   --->   Operation 168 'store' 'store_ln117' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_8 : Operation 169 [1/1] (0.00ns)   --->   "%ret_ln119 = ret" [src/generic/fp_generic.cpp:119]   --->   Operation 169 'ret' 'ret_ln119' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('t_addr', src/generic/fp_generic.cpp:111) [3]  (0.000 ns)
+	'load' operation 64 bit ('t_load', src/generic/fp_generic.cpp:111) on array 't' [4]  (0.714 ns)
+
+ <State 2>: 3.297ns
+The critical path consists of the following:
+	'load' operation 64 bit ('t_load', src/generic/fp_generic.cpp:111) on array 't' [4]  (0.714 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:111) [5]  (1.147 ns)
+	'call' operation 1 bit ('tmp_716', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [99]  (1.436 ns)
+
+ <State 3>: 2.439ns
+The critical path consists of the following:
+	'load' operation 64 bit ('t_load_11', src/generic/fp_generic.cpp:111) on array 't' [23]  (0.714 ns)
+	'call' operation 1 bit ('tmp_s', src/generic/fp_generic.cpp:111) to 'is_digit_lessthan_ct' [25]  (1.436 ns)
+	'or' operation 1 bit ('borrowReg', src/generic/fp_generic.cpp:111) [34]  (0.289 ns)
+
+ <State 4>: 2.728ns
+The critical path consists of the following:
+	'load' operation 64 bit ('t_load_13', src/generic/fp_generic.cpp:111) on array 't' [50]  (0.714 ns)
+	'call' operation 1 bit ('tmp_712', src/generic/fp_generic.cpp:111) to 'is_digit_lessthan_ct' [52]  (1.436 ns)
+	'or' operation 1 bit ('borrowReg', src/generic/fp_generic.cpp:111) [58]  (0.289 ns)
+	'and' operation 1 bit ('and_ln111_10', src/generic/fp_generic.cpp:111) [69]  (0.000 ns)
+	'or' operation 1 bit ('borrowReg', src/generic/fp_generic.cpp:111) [70]  (0.289 ns)
+
+ <State 5>: 8.137ns
+The critical path consists of the following:
+	'load' operation 64 bit ('t_load_15', src/generic/fp_generic.cpp:111) on array 't' [74]  (0.714 ns)
+	'call' operation 1 bit ('tmp_714', src/generic/fp_generic.cpp:111) to 'is_digit_lessthan_ct' [76]  (1.436 ns)
+	'or' operation 1 bit ('borrowReg', src/generic/fp_generic.cpp:111) [82]  (0.289 ns)
+	'and' operation 1 bit ('and_ln111_12', src/generic/fp_generic.cpp:111) [93]  (0.000 ns)
+	'or' operation 1 bit ('borrowReg', src/generic/fp_generic.cpp:111) [94]  (0.289 ns)
+	'sub' operation 64 bit ('sub_ln117', src/generic/fp_generic.cpp:117) [98]  (1.147 ns)
+	'call' operation 1 bit ('tmp_717', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [100]  (1.436 ns)
+	'or' operation 1 bit ('borrow', src/generic/fp_generic.cpp:117) [101]  (0.122 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:117) [103]  (0.843 ns)
+	'sub' operation 64 bit ('sub_ln117_3', src/generic/fp_generic.cpp:117) [104]  (1.147 ns)
+	'store' operation 0 bit ('store_ln117', src/generic/fp_generic.cpp:117) of variable 'sub_ln117_3', src/generic/fp_generic.cpp:117 on array 't' [147]  (0.714 ns)
+
+ <State 6>: 7.810ns
+The critical path consists of the following:
+	'call' operation 1 bit ('tmp_719', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [106]  (1.436 ns)
+	'or' operation 1 bit ('borrow', src/generic/fp_generic.cpp:117) [107]  (0.122 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:117) [109]  (0.843 ns)
+	'sub' operation 64 bit ('sub_ln117_4', src/generic/fp_generic.cpp:117) [110]  (1.147 ns)
+	'call' operation 1 bit ('tmp_721', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [112]  (1.436 ns)
+	'or' operation 1 bit ('borrow', src/generic/fp_generic.cpp:117) [113]  (0.122 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:117) [115]  (0.843 ns)
+	'add' operation 64 bit ('add_ln117', src/generic/fp_generic.cpp:117) [117]  (1.147 ns)
+	'store' operation 0 bit ('store_ln117', src/generic/fp_generic.cpp:117) of variable 'add_ln117', src/generic/fp_generic.cpp:117 on array 't' [149]  (0.714 ns)
+
+ <State 7>: 7.810ns
+The critical path consists of the following:
+	'call' operation 1 bit ('tmp_723', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [119]  (1.436 ns)
+	'or' operation 1 bit ('borrow', src/generic/fp_generic.cpp:117) [120]  (0.122 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:117) [122]  (0.843 ns)
+	'add' operation 64 bit ('add_ln117_10', src/generic/fp_generic.cpp:117) [124]  (1.147 ns)
+	'call' operation 1 bit ('tmp_725', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [126]  (1.436 ns)
+	'or' operation 1 bit ('borrow', src/generic/fp_generic.cpp:117) [127]  (0.122 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:117) [129]  (0.843 ns)
+	'add' operation 64 bit ('add_ln117_12', src/generic/fp_generic.cpp:117) [131]  (1.147 ns)
+	'store' operation 0 bit ('store_ln117', src/generic/fp_generic.cpp:117) of variable 'add_ln117_12', src/generic/fp_generic.cpp:117 on array 't' [151]  (0.714 ns)
+
+ <State 8>: 6.663ns
+The critical path consists of the following:
+	'call' operation 1 bit ('tmp_727', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [133]  (1.436 ns)
+	'or' operation 1 bit ('borrow', src/generic/fp_generic.cpp:117) [134]  (0.122 ns)
+	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:117) [136]  (0.843 ns)
+	'add' operation 64 bit ('add_ln117_14', src/generic/fp_generic.cpp:117) [138]  (1.147 ns)
+	'call' operation 1 bit ('tmp_729', src/generic/fp_generic.cpp:117) to 'is_digit_lessthan_ct' [140]  (1.436 ns)
+	'or' operation 1 bit ('borrow', src/generic/fp_generic.cpp:117) [141]  (0.122 ns)
+	'add' operation 64 bit ('add_ln117_16', src/generic/fp_generic.cpp:117) [145]  (0.843 ns)
+	'store' operation 0 bit ('store_ln117', src/generic/fp_generic.cpp:117) of variable 'add_ln117_16', src/generic/fp_generic.cpp:117 on array 't' [153]  (0.714 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

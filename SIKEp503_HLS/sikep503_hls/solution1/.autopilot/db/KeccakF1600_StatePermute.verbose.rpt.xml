@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'KeccakF1600_StatePermute'" level="0">
-<item name = "Date">Wed Jul  2 14:07:48 2025
+<item name = "Date">Wed Jul 30 17:34:54 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z045-ffg900-2</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.801 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.699 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
+<column name="">41, 41, 0.410 us, 0.410 us, 41, 41, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396">KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1, 15, 15, 0.150 us, 0.150 us, 13, 13, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396">KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1, 14, 14, 0.140 us, 0.140 us, 13, 13, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,19 +50,21 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, -, 3211, 16630, -</column>
+<column name="Instance">0, -, 1672, 16480, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 531, -</column>
+<column name="Multiplexer">-, -, 0, 551, -</column>
 <column name="Register">-, -, 1629, -, -</column>
-<specialColumn name="Available">1090, 900, 437200, 218600, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 0, 1, 7, 0</specialColumn>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, 3, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396">KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1, 2, 0, 3211, 16630, 0</column>
+<column name="grp_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1_fu_396">KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1, 0, 0, 1672, 16480, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -86,8 +88,8 @@
 <column name="ap_NS_fsm">145, 29, 1, 29</column>
 <column name="s_address0_local">129, 26, 5, 130</column>
 <column name="s_address1_local">129, 26, 5, 130</column>
-<column name="s_d0_local">53, 13, 64, 832</column>
-<column name="s_d1_local">57, 14, 64, 896</column>
+<column name="s_d0_local">65, 13, 64, 832</column>
+<column name="s_d1_local">65, 14, 64, 896</column>
 <column name="s_we0_local">9, 2, 8, 16</column>
 <column name="s_we1_local">9, 2, 8, 16</column>
 </table>

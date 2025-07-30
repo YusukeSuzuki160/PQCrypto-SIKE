@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fp2_decode_44'" level="0">
+<item name = "Date">Wed Jul 30 15:23:03 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">772, 1196, 7.720 us, 11.960 us, 772, 1196, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_fp2_decode_44_Pipeline_VITIS_LOOP_53_1_fu_70">fp2_decode_44_Pipeline_VITIS_LOOP_53_1, 130, 130, 1.300 us, 1.300 us, 129, 129, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2_decode_44_Pipeline_3_fu_78">fp2_decode_44_Pipeline_3, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2_decode_44_Pipeline_4_fu_84">fp2_decode_44_Pipeline_4, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2_decode_44_Pipeline_VITIS_LOOP_55_2_fu_90">fp2_decode_44_Pipeline_VITIS_LOOP_55_2, 137, 137, 1.370 us, 1.370 us, 128, 128, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_118_fu_101">mp_mul_118, 137, 235, 1.370 us, 2.350 us, 137, 235, no</column>
+<column name="grp_rdc_mont_98_fu_111">rdc_mont_98, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -128,8 +128,8 @@ void KeccakF1600_StatePermute(uint64_t * state)
             BCi = Abi^Agi^Aki^Ami^Asi;
             BCo = Abo^Ago^Ako^Amo^Aso;
             BCu = Abu^Agu^Aku^Amu^Asu;
-            //printf("DEBUG: BCa: %02lx, BCe: %02lx, BCi: %02lx, BCo: %02lx, BCu: %02lx\n", BCa, BCe, BCi, BCo, BCu);
-            //thetaRhoPiChiIotaPrepareTheta(round  , A, E)
+            // printf("DEBUG: BCa: %02lx, BCe: %02lx, BCi: %02lx, BCo: %02lx, BCu: %02lx\n", BCa, BCe, BCi, BCo, BCu);
+            // thetaRhoPiChiIotaPrepareTheta(round  , A, E)
             Da = BCu^ROL(BCe, 1);
             De = BCa^ROL(BCi, 1);
             Di = BCe^ROL(BCo, 1);
@@ -392,7 +392,7 @@ static void keccak_absorb(uint64_t *s, unsigned int r, const unsigned char *m, u
 {
   unsigned long long i;
   unsigned char t[200];
- 
+
   while (mlen >= r) 
   {
     for (i = 0; i < r / 8; ++i)
@@ -605,7 +605,7 @@ void cshake256_simple(unsigned char *output, unsigned long long outlen, uint16_t
   unsigned int i;
 
   cshake256_simple_absorb(s, cstm, in, inlen);
-  printf("s: ");
+  // printf("s: ");
   // for (i = 0; i < 25; i++)
   //   printf("%02x ", s[i]);
   // printf("\n");

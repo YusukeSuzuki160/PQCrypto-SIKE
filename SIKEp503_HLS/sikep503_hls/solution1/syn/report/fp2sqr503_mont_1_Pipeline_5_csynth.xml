@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>zynq</ProductFamily>
-<Part>xc7z045-ffg900-2</Part>
+<ProductFamily>virtexuplus58g</ProductFamily>
+<Part>xcvu29p-fsga2577-2L-e</Part>
 <TopModelName>fp2sqr503_mont_1_Pipeline_5</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
@@ -18,7 +18,7 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.091</EstimatedClockPeriod>
+<EstimatedClockPeriod>1.808</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -61,17 +61,17 @@
 <AreaEstimates>
 <Resources>
 <FF>7</FF>
-<LUT>40</LUT>
+<LUT>52</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>1090</BRAM_18K>
-<DSP>900</DSP>
-<FF>437200</FF>
-<LUT>218600</LUT>
-<URAM>0</URAM>
+<BRAM_18K>5376</BRAM_18K>
+<DSP>12288</DSP>
+<FF>3456000</FF>
+<LUT>1728000</LUT>
+<URAM>1280</URAM>
 </AvailableResources>
 </AreaEstimates>
 
@@ -143,8 +143,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_66_address0</name>
-<Object>temp_66</Object>
+<name>temp_12_address0</name>
+<Object>temp_12</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -154,8 +154,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_66_ce0</name>
-<Object>temp_66</Object>
+<name>temp_12_ce0</name>
+<Object>temp_12</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -165,8 +165,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_66_we0</name>
-<Object>temp_66</Object>
+<name>temp_12_we0</name>
+<Object>temp_12</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -176,8 +176,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>temp_66_d0</name>
-<Object>temp_66</Object>
+<name>temp_12_d0</name>
+<Object>temp_12</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

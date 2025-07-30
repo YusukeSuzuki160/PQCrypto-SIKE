@@ -94,10 +94,10 @@ memset.loop.i44:1 %exitcond_i431 = icmp_eq  i5 %p_load, i5 16
 
 <Node id="8" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-memset.loop.i44:2 %empty_161 = add i5 %p_load, i5 1
+memset.loop.i44:2 %empty_165 = add i5 %p_load, i5 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_161"/></StgValue>
+<StgValue><ssdm name="empty_165"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -109,7 +109,7 @@ memset.loop.i44:2 %empty_161 = add i5 %p_load, i5 1
 
 <Node id="9" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-memset.loop.i44:3 %br_ln0 = br i1 %exitcond_i431, void %memset.loop.i44.split, void %fpmul503_mont.exit46.exitStub
+memset.loop.i44:3 %br_ln0 = br i1 %exitcond_i431, void %memset.loop.i44.split, void %_Z13fpmul503_montPKmS0_Pm.exit46.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -125,10 +125,10 @@ memset.loop.i44:3 %br_ln0 = br i1 %exitcond_i431, void %memset.loop.i44.split, v
 
 <Node id="11" bw="64" op_0_bw="5">
 <![CDATA[
-memset.loop.i44.split:0 %p_cast4 = zext i5 %p_load
+memset.loop.i44.split:0 %p_cast2 = zext i5 %p_load
 
 ]]></Node>
-<StgValue><ssdm name="p_cast4"/></StgValue>
+<StgValue><ssdm name="p_cast2"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -141,7 +141,7 @@ memset.loop.i44.split:0 %p_cast4 = zext i5 %p_load
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-memset.loop.i44.split:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
+memset.loop.i44.split:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -173,7 +173,7 @@ memset.loop.i44.split:2 %speclooptripcount_ln0 = speclooptripcount void @_ssdm_o
 
 <Node id="14" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-memset.loop.i44.split:3 %temp_addr = getelementptr i64 %temp, i64 0, i64 %p_cast4
+memset.loop.i44.split:3 %temp_addr = getelementptr i64 %temp, i64 0, i64 %p_cast2
 
 ]]></Node>
 <StgValue><ssdm name="temp_addr"/></StgValue>
@@ -205,7 +205,7 @@ memset.loop.i44.split:4 %store_ln0 = store i64 0, i4 %temp_addr
 
 <Node id="16" bw="0" op_0_bw="5" op_1_bw="5" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-memset.loop.i44.split:5 %store_ln0 = store i5 %empty_161, i5 %empty
+memset.loop.i44.split:5 %store_ln0 = store i5 %empty_165, i5 %empty
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -237,7 +237,7 @@ memset.loop.i44.split:6 %br_ln0 = br void %memset.loop.i44
 
 <Node id="19" bw="0">
 <![CDATA[
-fpmul503_mont.exit46.exitStub:0 %ret_ln0 = ret
+_Z13fpmul503_montPKmS0_Pm.exit46.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>

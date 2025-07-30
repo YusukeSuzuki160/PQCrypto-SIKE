@@ -17,7 +17,7 @@ config:
     - XSikep503_kem_enc_hw_Config
 required:
     - compatible
-    - reg
+    - reg: 2
 additionalProperties:
    - interrupts
    - interrupt-parent

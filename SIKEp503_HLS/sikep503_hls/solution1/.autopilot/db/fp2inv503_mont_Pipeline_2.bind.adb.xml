@@ -94,10 +94,10 @@ memset.loop.i19:1 %exitcond_i1811 = icmp_eq  i5 %p_load, i5 16
 
 <Node id="8" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-memset.loop.i19:2 %empty_178 = add i5 %p_load, i5 1
+memset.loop.i19:2 %empty_182 = add i5 %p_load, i5 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_178"/></StgValue>
+<StgValue><ssdm name="empty_182"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -109,7 +109,7 @@ memset.loop.i19:2 %empty_178 = add i5 %p_load, i5 1
 
 <Node id="9" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-memset.loop.i19:3 %br_ln0 = br i1 %exitcond_i1811, void %memset.loop.i19.split, void %fpsqr503_mont.exit21.exitStub
+memset.loop.i19:3 %br_ln0 = br i1 %exitcond_i1811, void %memset.loop.i19.split, void %_Z13fpsqr503_montPKmPm.exit21.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -141,7 +141,7 @@ memset.loop.i19.split:0 %p_cast1 = zext i5 %p_load
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-memset.loop.i19.split:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_56
+memset.loop.i19.split:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -173,10 +173,10 @@ memset.loop.i19.split:2 %speclooptripcount_ln0 = speclooptripcount void @_ssdm_o
 
 <Node id="14" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-memset.loop.i19.split:3 %temp_72_addr = getelementptr i64 %temp_72, i64 0, i64 %p_cast1
+memset.loop.i19.split:3 %temp_15_addr = getelementptr i64 %temp_15, i64 0, i64 %p_cast1
 
 ]]></Node>
-<StgValue><ssdm name="temp_72_addr"/></StgValue>
+<StgValue><ssdm name="temp_15_addr"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -189,7 +189,7 @@ memset.loop.i19.split:3 %temp_72_addr = getelementptr i64 %temp_72, i64 0, i64 %
 
 <Node id="15" bw="0" op_0_bw="64" op_1_bw="4">
 <![CDATA[
-memset.loop.i19.split:4 %store_ln0 = store i64 0, i4 %temp_72_addr
+memset.loop.i19.split:4 %store_ln0 = store i64 0, i4 %temp_15_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -205,7 +205,7 @@ memset.loop.i19.split:4 %store_ln0 = store i64 0, i4 %temp_72_addr
 
 <Node id="16" bw="0" op_0_bw="5" op_1_bw="5" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-memset.loop.i19.split:5 %store_ln0 = store i5 %empty_178, i5 %empty
+memset.loop.i19.split:5 %store_ln0 = store i5 %empty_182, i5 %empty
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -237,7 +237,7 @@ memset.loop.i19.split:6 %br_ln0 = br void %memset.loop.i19
 
 <Node id="19" bw="0">
 <![CDATA[
-fpsqr503_mont.exit21.exitStub:0 %ret_ln0 = ret
+_Z13fpsqr503_montPKmPm.exit21.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -247,8 +247,8 @@ fpsqr503_mont.exit21.exitStub:0 %ret_ln0 = ret
 
 
 <ports>
-<port id="25" name="temp_72" dir="1" iftype="1">
-<core>RAM</core><StgValue><ssdm name="temp_72"/><MemPortTyVec>0 3 </MemPortTyVec>
+<port id="25" name="temp_15" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="temp_15"/><MemPortTyVec>0 3 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
@@ -267,9 +267,9 @@ fpsqr503_mont.exit21.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="34" from="StgValue_33" to="exitcond_i1811" fromId="33" toId="8">
 </dataflow>
-<dataflow id="35" from="p_load" to="empty_178" fromId="7" toId="9">
+<dataflow id="35" from="p_load" to="empty_182" fromId="7" toId="9">
 </dataflow>
-<dataflow id="37" from="StgValue_36" to="empty_178" fromId="36" toId="9">
+<dataflow id="37" from="StgValue_36" to="empty_182" fromId="36" toId="9">
 </dataflow>
 <dataflow id="38" from="exitcond_i1811" to="br_ln0" fromId="8" toId="10">
 </dataflow>
@@ -285,7 +285,7 @@ fpsqr503_mont.exit21.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="47" from="StgValue_44" to="specpipeline_ln0" fromId="44" toId="12">
 </dataflow>
-<dataflow id="49" from="empty_56" to="specpipeline_ln0" fromId="48" toId="12">
+<dataflow id="49" from="empty_73" to="specpipeline_ln0" fromId="48" toId="12">
 </dataflow>
 <dataflow id="51" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln0" fromId="50" toId="13">
 </dataflow>
@@ -295,17 +295,17 @@ fpsqr503_mont.exit21.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="55" from="StgValue_52" to="speclooptripcount_ln0" fromId="52" toId="13">
 </dataflow>
-<dataflow id="56" from="temp_72" to="temp_72_addr" fromId="25" toId="14">
+<dataflow id="56" from="temp_15" to="temp_15_addr" fromId="25" toId="14">
 </dataflow>
-<dataflow id="58" from="StgValue_57" to="temp_72_addr" fromId="57" toId="14">
+<dataflow id="58" from="StgValue_57" to="temp_15_addr" fromId="57" toId="14">
 </dataflow>
-<dataflow id="59" from="p_cast1" to="temp_72_addr" fromId="11" toId="14">
+<dataflow id="59" from="p_cast1" to="temp_15_addr" fromId="11" toId="14">
 </dataflow>
 <dataflow id="60" from="StgValue_57" to="store_ln0" fromId="57" toId="15">
 </dataflow>
-<dataflow id="61" from="temp_72_addr" to="store_ln0" fromId="14" toId="15">
+<dataflow id="61" from="temp_15_addr" to="store_ln0" fromId="14" toId="15">
 </dataflow>
-<dataflow id="62" from="empty_178" to="store_ln0" fromId="9" toId="16">
+<dataflow id="62" from="empty_182" to="store_ln0" fromId="9" toId="16">
 </dataflow>
 <dataflow id="63" from="empty" to="store_ln0" fromId="4" toId="16">
 </dataflow>

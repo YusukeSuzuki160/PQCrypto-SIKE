@@ -58,12 +58,6 @@ ss {
 	offset 40
 	offset_end 51
 }
-ap_start { }
-ap_done { }
-ap_ready { }
-ap_idle { }
-interrupt {
-}
 }
 dict set axilite_register_dict control $port_control
 
@@ -72,7 +66,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 3133 \
+			id 2919 \
 			corename sikep503_kem_enc_hw_control_axilite \
 			name sikep503_kem_enc_hw_control_s_axi \
 			ports {$port_control} \
@@ -90,6 +84,41 @@ if {${::AESL::PGuard_simmodel_gen}} {
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler sikep503_kem_enc_hw_control_s_axi BINDTYPE interface TYPE interface_s_axilite
+}
+
+set port_control_r {
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
+interrupt {
+}
+}
+dict set axilite_register_dict control_r $port_control_r
+
+
+# Native S_AXILite:
+if {${::AESL::PGuard_simmodel_gen}} {
+	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
+		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
+			id 2920 \
+			corename sikep503_kem_enc_hw_control_r_axilite \
+			name sikep503_kem_enc_hw_control_r_s_axi \
+			ports {$port_control_r} \
+			op interface \
+			interrupt_clear_mode TOW \
+			interrupt_trigger_type default \
+			is_flushable 0 \
+			is_datawidth64 0 \
+			is_addrwidth64 1 \
+		} "
+	} else {
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control_r'"
+	}
+}
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler sikep503_kem_enc_hw_control_r_s_axi BINDTYPE interface TYPE interface_s_axilite
 }
 
 

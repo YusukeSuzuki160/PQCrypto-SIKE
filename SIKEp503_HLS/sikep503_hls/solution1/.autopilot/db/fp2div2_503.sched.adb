@@ -93,9 +93,9 @@
 						<type>0</type>
 						<id>4</id>
 						<name>c_0_addr</name>
-						<fileName>src/fpx.c</fileName>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>126</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>fp2div2_503</contextFuncName>
 						<contextNormFuncName>fp2div2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -108,10 +108,10 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -151,9 +151,9 @@
 						<type>0</type>
 						<id>5</id>
 						<name>c_0_addr_3</name>
-						<fileName>src/fpx.c</fileName>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>114</lineNumber>
 						<contextFuncName>fp2div2_503</contextFuncName>
 						<contextNormFuncName>fp2div2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -166,10 +166,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 								</second>
 							</item>
@@ -209,9 +209,9 @@
 						<type>0</type>
 						<id>6</id>
 						<name>c_1_addr</name>
-						<fileName>src/fpx.c</fileName>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -224,24 +224,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -281,9 +281,9 @@
 						<type>0</type>
 						<id>7</id>
 						<name>c_1_addr_3</name>
-						<fileName>src/fpx.c</fileName>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -296,24 +296,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -353,9 +353,9 @@
 						<type>0</type>
 						<id>8</id>
 						<name>c_0_load</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>fpdiv2_503</contextFuncName>
 						<contextNormFuncName>fpdiv2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -368,17 +368,17 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>77</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -406,7 +406,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -416,9 +416,9 @@
 						<type>0</type>
 						<id>9</id>
 						<name>mask</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>fpdiv2_503</contextFuncName>
 						<contextNormFuncName>fpdiv2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -431,17 +431,17 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>77</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -478,10 +478,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>_ln77</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln86</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>fpdiv2_503</contextFuncName>
 						<contextNormFuncName>fpdiv2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -494,17 +494,17 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>77</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -537,7 +537,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.81</m_delay>
+				<m_delay>0.27</m_delay>
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -593,9 +593,9 @@
 						<type>0</type>
 						<id>12</id>
 						<name>c_1_load</name>
-						<fileName>src/fpx.c</fileName>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -608,24 +608,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -654,7 +654,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -664,9 +664,9 @@
 						<type>0</type>
 						<id>13</id>
 						<name>lshr_ln</name>
-						<fileName>src/fpx.c</fileName>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -679,24 +679,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -736,10 +736,10 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>zext_ln396</name>
-						<fileName>src/fpx.c</fileName>
+						<name>zext_ln421</name>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -752,24 +752,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -806,10 +806,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>c_1_addr_write_ln396</name>
-						<fileName>src/fpx.c</fileName>
+						<name>c_1_addr_write_ln421</name>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -822,24 +822,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>126</second>
+										<second>113</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -869,7 +869,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -879,9 +879,9 @@
 						<type>0</type>
 						<id>16</id>
 						<name>c_0_load_3</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>fpdiv2_503</contextFuncName>
 						<contextNormFuncName>fpdiv2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -894,17 +894,17 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>77</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -933,7 +933,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -943,9 +943,9 @@
 						<type>0</type>
 						<id>17</id>
 						<name>mask_1</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>fpdiv2_503</contextFuncName>
 						<contextNormFuncName>fpdiv2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -958,17 +958,17 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>77</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -1005,10 +1005,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>_ln77</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln86</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>fpdiv2_503</contextFuncName>
 						<contextNormFuncName>fpdiv2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -1021,17 +1021,17 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>77</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -1066,7 +1066,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.81</m_delay>
+				<m_delay>0.27</m_delay>
 				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1122,9 +1122,9 @@
 						<type>0</type>
 						<id>20</id>
 						<name>c_1_load_3</name>
-						<fileName>src/fpx.c</fileName>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -1137,24 +1137,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1183,7 +1183,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1192,10 +1192,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>lshr_ln396_1</name>
-						<fileName>src/fpx.c</fileName>
+						<name>lshr_ln421_1</name>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -1208,24 +1208,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1265,10 +1265,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>zext_ln396_1</name>
-						<fileName>src/fpx.c</fileName>
+						<name>zext_ln421_1</name>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -1281,24 +1281,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1335,10 +1335,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>c_1_addr_3_write_ln396</name>
-						<fileName>src/fpx.c</fileName>
+						<name>c_1_addr_3_write_ln421</name>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>396</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>mp_shiftr1</contextFuncName>
 						<contextNormFuncName>mp_shiftr1</contextNormFuncName>
 						<inlineStackInfo>
@@ -1351,24 +1351,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>127</second>
+										<second>114</second>
 									</item>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>mp_shiftr1</second>
 										</first>
-										<second>396</second>
+										<second>421</second>
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpdiv2_503</second>
 										</first>
-										<second>82</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1398,7 +1398,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1407,10 +1407,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>_ln128</name>
-						<fileName>src/fpx.c</fileName>
+						<name>_ln115</name>
+						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>115</lineNumber>
 						<contextFuncName>fp2div2_503</contextFuncName>
 						<contextNormFuncName>fp2div2_503</contextNormFuncName>
 						<inlineStackInfo>
@@ -1423,10 +1423,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/fpx.c</first>
+											<first>src/fpx.cpp</first>
 											<second>fp2div2_503</second>
 										</first>
-										<second>128</second>
+										<second>115</second>
 									</item>
 								</second>
 							</item>
@@ -1590,7 +1590,7 @@
 					<Obj>
 						<type>2</type>
 						<id>44</id>
-						<name>fp2div2_503_Pipeline_VITIS_LOOP_78_1</name>
+						<name>fp2div2_503_Pipeline_VITIS_LOOP_87_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1614,14 +1614,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_78_1&gt;</content>
+				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_87_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_29">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>49</id>
-						<name>fp2div2_503_Pipeline_VITIS_LOOP_392_1</name>
+						<name>fp2div2_503_Pipeline_VITIS_LOOP_416_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1645,7 +1645,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_392_1&gt;</content>
+				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_416_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_30">
 				<Value>
@@ -1714,7 +1714,7 @@
 					<Obj>
 						<type>2</type>
 						<id>66</id>
-						<name>fp2div2_503_Pipeline_VITIS_LOOP_78_1215</name>
+						<name>fp2div2_503_Pipeline_VITIS_LOOP_87_1320</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1738,14 +1738,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_78_1215&gt;</content>
+				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_87_1320&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_33">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>71</id>
-						<name>fp2div2_503_Pipeline_VITIS_LOOP_392_1216</name>
+						<name>fp2div2_503_Pipeline_VITIS_LOOP_416_1321</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1769,7 +1769,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_392_1216&gt;</content>
+				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_416_1321&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2266,8 +2266,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>69</mMinLatency>
-			<mMaxLatency>69</mMaxLatency>
+			<mMinLatency>65</mMinLatency>
+			<mMaxLatency>65</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

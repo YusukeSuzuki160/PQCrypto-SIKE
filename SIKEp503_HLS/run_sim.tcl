@@ -22,21 +22,21 @@ add_files src/random/random.h
 add_files src/sha3/fips202.h
 
 # Add source files in dependency order
-add_files src/fpx.c
-add_files src/ec_isogeny.c
-add_files src/sidh.c
-add_files src/sike.c
-add_files src/P503.c
+add_files src/fpx.cpp
+add_files src/ec_isogeny.cpp
+add_files src/sidh.cpp
+add_files src/sike.cpp
+add_files src/P503.cpp
 add_files src/sikep503_kem_enc_hw.cpp
 
 # Add generic directory files
-add_files src/generic/fp_generic.c
+add_files src/generic/fp_generic.cpp
 
 # Add random directory files
-add_files src/random/random.c
+add_files src/random/random.cpp
 
 # Add sha3 directory files
-add_files src/sha3/fips202.c
+add_files src/sha3/fips202.cpp
 
 # Set the top-level function
 set_top sikep503_kem_enc_hw

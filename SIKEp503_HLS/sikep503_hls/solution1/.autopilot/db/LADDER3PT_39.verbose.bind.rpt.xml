@@ -1,0 +1,78 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'LADDER3PT_39'" level="0">
+<item name = "Date">Wed Jul 30 17:32:42 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.675 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">695568, 1119568, 6.956 ms, 11.196 ms, 695568, 1119568, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_LADDER3PT_39_Pipeline_1_fu_883">LADDER3PT_39_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1_fu_891">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_232_fu_899">fpadd503_232, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1326_fu_913">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1326, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1328_fu_920">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1328, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1327_fu_927">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1327, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1331_fu_934">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1331, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_251_fu_941">fpadd503_251, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1329_fu_960">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1329, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1334_fu_967">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1334, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1330_fu_975">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1330, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_21_1_fu_982">LADDER3PT_39_Pipeline_VITIS_LOOP_21_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2div2_503_fu_988">fp2div2_503, 65, 65, 0.650 us, 0.650 us, 65, 65, no</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1332_fu_996">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1332, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_13_1333_fu_1004">LADDER3PT_39_Pipeline_VITIS_LOOP_13_1333, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_39_Pipeline_VITIS_LOOP_269_1_fu_1012">LADDER3PT_39_Pipeline_VITIS_LOOP_269_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_13865_fu_1025">fpadd503_13865, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fpsub503_1_fu_1043">fpsub503_1, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_fpsub503_463_fu_1055">fpsub503_463, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_fpadd503_135_fu_1073">fpadd503_135, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fpcorrection503_fu_1081">fpcorrection503, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_fp2sqr503_mont_fu_1091">fp2sqr503_mont, 286, 498, 2.860 us, 4.980 us, 286, 498, no</column>
+<column name="grp_fp2mul503_mont_325_2_fu_1101">fp2mul503_mont_325_2, 323, 535, 3.230 us, 5.350 us, 323, 535, no</column>
+<column name="grp_fp2mul503_mont_3_fu_1111">fp2mul503_mont_3, 323, 535, 3.230 us, 5.350 us, 323, 535, no</column>
+<column name="grp_fpsub503_fu_1122">fpsub503, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_fp2mul503_mont_fu_1137">fp2mul503_mont, 323, 535, 3.230 us, 5.350 us, 323, 535, no</column>
+<column name="grp_fp2mul503_mont_4_fu_1147">fp2mul503_mont_4, 323, 535, 3.230 us, 5.350 us, 323, 535, no</column>
+<column name="grp_fpadd503_134_fu_1160">fpadd503_134, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fp2sqr503_mont_5_fu_1171">fp2sqr503_mont_5, 181, 287, 1.810 us, 2.870 us, 181, 287, no</column>
+<column name="grp_fpadd503_fu_1181">fpadd503, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fp2mul503_mont_43_fu_1196">fp2mul503_mont_43, 323, 535, 3.230 us, 5.350 us, 323, 535, no</column>
+<column name="grp_fp2mul503_mont_3257261_fu_1209">fp2mul503_mont_3257261, 323, 535, 3.230 us, 5.350 us, 323, 535, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_319_1">695250, 1119250, 2781 ~ 4477, -, -, 250, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

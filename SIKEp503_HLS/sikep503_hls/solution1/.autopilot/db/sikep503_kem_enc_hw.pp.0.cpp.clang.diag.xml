@@ -105,11 +105,11 @@
       <key>filename</key>
       <string>src/sikep503_kem_enc_hw.cpp</string>
       <key>line</key>
-      <integer>25</integer>
+      <integer>35</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=m_axi port=ct offset=slave bundle=gmem_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=m_axi port = ct offset = slave bundle = gmem_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -121,11 +121,11 @@
       <key>filename</key>
       <string>src/sikep503_kem_enc_hw.cpp</string>
       <key>line</key>
-      <integer>26</integer>
+      <integer>36</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=m_axi port=pk offset=slave bundle=gmem_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=m_axi port = pk offset = slave bundle = gmem_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -137,11 +137,11 @@
       <key>filename</key>
       <string>src/sikep503_kem_enc_hw.cpp</string>
       <key>line</key>
-      <integer>27</integer>
+      <integer>37</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=m_axi port=ss offset=slave bundle=gmem_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=m_axi port = ss offset = slave bundle = gmem_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -153,11 +153,11 @@
       <key>filename</key>
       <string>src/sikep503_kem_enc_hw.cpp</string>
       <key>line</key>
-      <integer>28</integer>
+      <integer>38</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port=ct bundle=control_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port = ct bundle = control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -169,11 +169,11 @@
       <key>filename</key>
       <string>src/sikep503_kem_enc_hw.cpp</string>
       <key>line</key>
-      <integer>29</integer>
+      <integer>39</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port=pk bundle=control_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port = pk bundle = control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -185,11 +185,11 @@
       <key>filename</key>
       <string>src/sikep503_kem_enc_hw.cpp</string>
       <key>line</key>
-      <integer>30</integer>
+      <integer>40</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port=ss bundle=control_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port = ss bundle = control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -201,11 +201,11 @@
       <key>filename</key>
       <string>src/sikep503_kem_enc_hw.cpp</string>
       <key>line</key>
-      <integer>31</integer>
+      <integer>41</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sikep503_kem_enc_hw_XLX_SEP_ PragmaOptions=s_axilite port = return bundle = control_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

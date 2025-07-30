@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_3'
 ================================================================
-* Date:           Wed Jul  2 14:08:58 2025
+* Date:           Wed Jul 30 17:39:54 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
-* Product family: zynq
-* Target device:  xc7z045-ffg900-2
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.267 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  3.722 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       40|       40|  0.400 us|  0.400 us|   40|   40|       no|
+    |       23|       23|  0.230 us|  0.230 us|   23|   23|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                               |                                     |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                    Instance                   |                Module               |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpsub503_3_Pipeline_VITIS_LOOP_47_1_fu_20  |fpsub503_3_Pipeline_VITIS_LOOP_47_1  |       11|       11|  0.110 us|  0.110 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpsub503_3_Pipeline_VITIS_LOOP_53_2_fu_31  |fpsub503_3_Pipeline_VITIS_LOOP_53_2  |       26|       26|  0.260 us|  0.260 us|   25|   25|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpsub503_3_Pipeline_VITIS_LOOP_57_1_fu_48  |fpsub503_3_Pipeline_VITIS_LOOP_57_1  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpsub503_3_Pipeline_VITIS_LOOP_64_2_fu_62  |fpsub503_3_Pipeline_VITIS_LOOP_64_2  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -51,33 +51,37 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+-----------------+---------+-----+--------+--------+-----+
-|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
-+-----------------+---------+-----+--------+--------+-----+
-|DSP              |        -|    -|       -|       -|    -|
-|Expression       |        -|    -|       -|       -|    -|
-|FIFO             |        -|    -|       -|       -|    -|
-|Instance         |        0|    -|     415|    1261|    -|
-|Memory           |        -|    -|       -|       -|    -|
-|Multiplexer      |        -|    -|       0|      73|    -|
-|Register         |        -|    -|       6|       -|    -|
-+-----------------+---------+-----+--------+--------+-----+
-|Total            |        0|    0|     421|    1334|    0|
-+-----------------+---------+-----+--------+--------+-----+
-|Available        |     1090|  900|  437200|  218600|    0|
-+-----------------+---------+-----+--------+--------+-----+
-|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
-+-----------------+---------+-----+--------+--------+-----+
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        -|        -|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        0|      -|      154|     1392|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        0|       91|     -|
+|Register             |        -|      -|        9|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|      163|     1483|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
     * Instance: 
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
     |                    Instance                   |                Module               | BRAM_18K| DSP|  FF | LUT | URAM|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
-    |grp_fpsub503_3_Pipeline_VITIS_LOOP_47_1_fu_20  |fpsub503_3_Pipeline_VITIS_LOOP_47_1  |        0|   0|   83|  585|    0|
-    |grp_fpsub503_3_Pipeline_VITIS_LOOP_53_2_fu_31  |fpsub503_3_Pipeline_VITIS_LOOP_53_2  |        0|   0|  332|  676|    0|
+    |grp_fpsub503_3_Pipeline_VITIS_LOOP_57_1_fu_48  |fpsub503_3_Pipeline_VITIS_LOOP_57_1  |        0|   0|   13|  648|    0|
+    |grp_fpsub503_3_Pipeline_VITIS_LOOP_64_2_fu_62  |fpsub503_3_Pipeline_VITIS_LOOP_64_2  |        0|   0|  141|  744|    0|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
-    |Total                                          |                                     |        0|   0|  415| 1261|    0|
+    |Total                                          |                                     |        0|   0|  154| 1392|    0|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -93,27 +97,31 @@
     N/A
 
     * Multiplexer: 
-    +----------------+----+-----------+-----+-----------+
-    |      Name      | LUT| Input Size| Bits| Total Bits|
-    +----------------+----+-----------+-----+-----------+
-    |ap_NS_fsm       |  21|          5|    1|          5|
-    |coeff_address0  |  13|          3|    6|         18|
-    |coeff_ce0       |  13|          3|    1|          3|
-    |coeff_d0        |  13|          3|   64|        192|
-    |coeff_we0       |  13|          3|    8|         24|
-    +----------------+----+-----------+-----+-----------+
-    |Total           |  73|         17|   80|        242|
-    +----------------+----+-----------+-----+-----------+
+    +------------+----+-----------+-----+-----------+
+    |    Name    | LUT| Input Size| Bits| Total Bits|
+    +------------+----+-----------+-----+-----------+
+    |ap_NS_fsm   |  26|          5|    1|          5|
+    |c_address0  |  14|          3|    4|         12|
+    |c_ce0       |  14|          3|    1|          3|
+    |c_ce1       |   9|          2|    1|          2|
+    |c_d0        |  14|          3|   64|        192|
+    |c_we0       |  14|          3|    1|          3|
+    +------------+----+-----------+-----+-----------+
+    |Total       |  91|         19|   72|        217|
+    +------------+----+-----------+-----+-----------+
 
     * Register: 
     +------------------------------------------------------------+---+----+-----+-----------+
     |                            Name                            | FF| LUT| Bits| Const Bits|
     +------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                   |  4|   0|    4|          0|
-    |grp_fpsub503_3_Pipeline_VITIS_LOOP_47_1_fu_20_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpsub503_3_Pipeline_VITIS_LOOP_53_2_fu_31_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpsub503_3_Pipeline_VITIS_LOOP_57_1_fu_48_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpsub503_3_Pipeline_VITIS_LOOP_64_2_fu_62_ap_start_reg  |  1|   0|    1|          0|
+    |tmp_12_reg_120                                              |  1|   0|    4|          3|
+    |tmp_reg_109                                                 |  1|   0|    4|          3|
+    |tmp_s_reg_115                                               |  1|   0|    4|          3|
     +------------------------------------------------------------+---+----+-----+-----------+
-    |Total                                                       |  6|   0|    6|          0|
+    |Total                                                       |  9|   0|   18|          9|
     +------------------------------------------------------------+---+----+-----+-----------+
 
 
@@ -122,25 +130,30 @@
 == Interface
 ================================================================
 * Summary: 
-+----------------+-----+-----+------------+--------------+--------------+
-|    RTL Ports   | Dir | Bits|  Protocol  | Source Object|    C Type    |
-+----------------+-----+-----+------------+--------------+--------------+
-|ap_clk          |   in|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
-|ap_rst          |   in|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
-|ap_start        |   in|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
-|ap_done         |  out|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
-|ap_idle         |  out|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
-|ap_ready        |  out|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
-|R_X_address0    |  out|    4|   ap_memory|           R_X|         array|
-|R_X_ce0         |  out|    1|   ap_memory|           R_X|         array|
-|R_X_q0          |   in|   64|   ap_memory|           R_X|         array|
-|R_Z_address0    |  out|    4|   ap_memory|           R_Z|         array|
-|R_Z_ce0         |  out|    1|   ap_memory|           R_Z|         array|
-|R_Z_q0          |   in|   64|   ap_memory|           R_Z|         array|
-|coeff_address0  |  out|    6|   ap_memory|         coeff|         array|
-|coeff_ce0       |  out|    1|   ap_memory|         coeff|         array|
-|coeff_we0       |  out|    8|   ap_memory|         coeff|         array|
-|coeff_d0        |  out|   64|   ap_memory|         coeff|         array|
-|coeff_q0        |   in|   64|   ap_memory|         coeff|         array|
-+----------------+-----+-----+------------+--------------+--------------+
++------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------+-----+-----+------------+--------------+--------------+
+|ap_clk      |   in|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
+|ap_rst      |   in|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
+|ap_start    |   in|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
+|ap_done     |  out|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
+|ap_idle     |  out|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
+|ap_ready    |  out|    1|  ap_ctrl_hs|    fpsub503.3|  return value|
+|a_address0  |  out|    4|   ap_memory|             a|         array|
+|a_ce0       |  out|    1|   ap_memory|             a|         array|
+|a_q0        |   in|   64|   ap_memory|             a|         array|
+|a_offset    |   in|    1|     ap_none|      a_offset|        scalar|
+|b_address0  |  out|    4|   ap_memory|             b|         array|
+|b_ce0       |  out|    1|   ap_memory|             b|         array|
+|b_q0        |   in|   64|   ap_memory|             b|         array|
+|b_offset    |   in|    1|     ap_none|      b_offset|        scalar|
+|c_address0  |  out|    4|   ap_memory|             c|         array|
+|c_ce0       |  out|    1|   ap_memory|             c|         array|
+|c_we0       |  out|    1|   ap_memory|             c|         array|
+|c_d0        |  out|   64|   ap_memory|             c|         array|
+|c_address1  |  out|    4|   ap_memory|             c|         array|
+|c_ce1       |  out|    1|   ap_memory|             c|         array|
+|c_q1        |   in|   64|   ap_memory|             c|         array|
+|c_offset    |   in|    1|     ap_none|      c_offset|        scalar|
++------------+-----+-----+------------+--------------+--------------+
 

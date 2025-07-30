@@ -1454,47 +1454,66 @@ extern int __overflow (FILE *, int);
 }
 # 15 "src/sikep503_kem_enc_hw.cpp" 2
 
-extern "C"
+void print_hex(const char *label, const unsigned char *data, size_t len)
 {
-
-    __attribute__((sdx_kernel("sikep503_kem_enc_hw", 0))) void sikep503_kem_enc_hw(
-        unsigned char *ct,
-        const unsigned char *pk,
-        unsigned char *ss)
+    printf("%s (%zu bytes):\n", label, len);
+    VITIS_LOOP_19_1: for (size_t i = 0; i < len; i++)
     {
+        printf("%02x ", data[i]);
+        if ((i + 1) % 16 == 0)
+            printf("\n");
+    }
+    printf("\n");
+}
+
+extern "C" __attribute__((sdx_kernel("sikep503_kem_enc_hw", 0))) void sikep503_kem_enc_hw(
+    unsigned char *ct,
+    const unsigned char *pk,
+    unsigned char *ss)
+{
 #line 54 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE ap_ctrl_hs port=return
-# 23 "src/sikep503_kem_enc_hw.cpp"
+# 32 "src/sikep503_kem_enc_hw.cpp"
 
 #line 55 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE s_axilite port=return
-# 23 "src/sikep503_kem_enc_hw.cpp"
+# 32 "src/sikep503_kem_enc_hw.cpp"
 
 #line 56 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE m_axi depth=402 port=ct
-# 23 "src/sikep503_kem_enc_hw.cpp"
+# 32 "src/sikep503_kem_enc_hw.cpp"
 
 #line 57 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE m_axi depth=378 port=pk
-# 23 "src/sikep503_kem_enc_hw.cpp"
+# 32 "src/sikep503_kem_enc_hw.cpp"
 
 #line 58 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE m_axi depth=16 port=ss
-# 23 "src/sikep503_kem_enc_hw.cpp"
+# 32 "src/sikep503_kem_enc_hw.cpp"
 
 #line 68 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE TOP name=sikep503_kem_enc_hw
-# 23 "src/sikep503_kem_enc_hw.cpp"
-;
+# 32 "src/sikep503_kem_enc_hw.cpp"
 
-#pragma HLS INTERFACE m_axi port=ct offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=pk offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=ss offset=slave bundle=gmem
-#pragma HLS INTERFACE s_axilite port=ct bundle=control
-#pragma HLS INTERFACE s_axilite port=pk bundle=control
-#pragma HLS INTERFACE s_axilite port=ss bundle=control
-#pragma HLS INTERFACE s_axilite port=return bundle=control
+    ;
 
- crypto_kem_enc(ct, ss, pk);
-    }
+#pragma HLS INTERFACE m_axi port = ct offset = slave bundle = gmem
+#pragma HLS INTERFACE m_axi port = pk offset = slave bundle = gmem
+#pragma HLS INTERFACE m_axi port = ss offset = slave bundle = gmem
+#pragma HLS INTERFACE s_axilite port = ct bundle = control
+#pragma HLS INTERFACE s_axilite port = pk bundle = control
+#pragma HLS INTERFACE s_axilite port = ss bundle = control
+#pragma HLS INTERFACE s_axilite port = return bundle = control
+
+ printf("Starting encryption\n");
+    print_hex("Input Public Key", pk, 378);
+
+    crypto_kem_enc(ct, ss, pk);
+    printf("Encryption complete\n");
+
+    print_hex("Output Ciphertext", ct, 402);
+
+
+    print_hex("Output Shared Secret", ss, 16);
+    printf("Encryption complete\n");
 }

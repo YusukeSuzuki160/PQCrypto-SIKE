@@ -1,0 +1,60 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'eval_4_isog'" level="0">
+<item name = "Date">Wed Jul 30 15:21:43 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 9.967 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3700, 6174, 37.000 us, 61.740 us, 3700, 6174, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_fpadd503_10_fu_326">fpadd503_10, 12, 12, 0.120 us, 0.120 us, 4, 4, yes</column>
+<column name="grp_fpsub503_101_fu_344">fpsub503_101, 8, 8, 80.000 ns, 80.000 ns, 4, 4, yes</column>
+<column name="grp_fpsub503_102_fu_361">fpsub503_102, 8, 8, 80.000 ns, 80.000 ns, 4, 4, yes</column>
+<column name="grp_fp2mul503_mont_103_fu_378">fp2mul503_mont_103, 590, 998, 5.900 us, 9.980 us, 590, 998, no</column>
+<column name="grp_fp2mul503_mont_2_2_fu_403">fp2mul503_mont_2_2, 585, 1006, 5.850 us, 10.060 us, 585, 1006, no</column>
+<column name="grp_fpadd503_104_fu_427">fpadd503_104, 9, 9, 90.000 ns, 90.000 ns, 4, 4, yes</column>
+<column name="grp_fpadd503_105_fu_444">fpadd503_105, 9, 9, 90.000 ns, 90.000 ns, 4, 4, yes</column>
+<column name="grp_fpsub503_fu_461">fpsub503, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_fp2mul503_mont_54_fu_477">fp2mul503_mont_54, 615, 1036, 6.150 us, 10.360 us, 615, 1036, no</column>
+<column name="grp_fp2sqr503_mont_24_fu_495">fp2sqr503_mont_24, 575, 999, 5.750 us, 9.990 us, 575, 999, no</column>
+<column name="grp_fp2sqr503_mont_fu_509">fp2sqr503_mont, 543, 967, 5.430 us, 9.670 us, 543, 967, no</column>
+<column name="grp_fpadd503_106_fu_518">fpadd503_106, 13, 13, 0.130 us, 0.130 us, 4, 4, yes</column>
+<column name="grp_fpadd503_107_fu_541">fpadd503_107, 13, 13, 0.130 us, 0.130 us, 4, 4, yes</column>
+<column name="grp_fpsub503_12_fu_572">fpsub503_12, 8, 8, 80.000 ns, 80.000 ns, 4, 4, yes</column>
+<column name="grp_fp2mul503_mont_13_fu_598">fp2mul503_mont_13, 591, 999, 5.910 us, 9.990 us, 591, 999, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

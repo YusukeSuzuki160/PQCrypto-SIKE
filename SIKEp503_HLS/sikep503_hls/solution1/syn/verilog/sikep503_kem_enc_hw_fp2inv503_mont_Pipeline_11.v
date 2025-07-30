@@ -13,10 +13,10 @@ module sikep503_kem_enc_hw_fp2inv503_mont_Pipeline_11 (
         ap_done,
         ap_idle,
         ap_ready,
-        temp_68_address0,
-        temp_68_ce0,
-        temp_68_we0,
-        temp_68_d0
+        temp_13_address0,
+        temp_13_ce0,
+        temp_13_we0,
+        temp_13_d0
 );
 
 parameter    ap_ST_fsm_state1 = 1'd1;
@@ -27,27 +27,27 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [3:0] temp_68_address0;
-output   temp_68_ce0;
-output   temp_68_we0;
-output  [63:0] temp_68_d0;
+output  [3:0] temp_13_address0;
+output   temp_13_ce0;
+output   temp_13_we0;
+output  [63:0] temp_13_d0;
 
 reg ap_idle;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_block_state1_pp0_stage0_iter0;
-wire   [0:0] exitcond_i452_fu_50_p2;
+wire   [0:0] exitcond_i706_fu_50_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [63:0] p_cast6_fu_62_p1;
+wire   [63:0] p_cast5_fu_62_p1;
 reg   [4:0] empty_fu_24;
-wire   [4:0] empty_180_fu_56_p2;
+wire   [4:0] empty_184_fu_56_p2;
 wire    ap_loop_init;
 reg   [4:0] ap_sig_allocacmp_p_load;
-reg    temp_68_we0_local;
-reg    temp_68_ce0_local;
+reg    temp_13_we0_local;
+reg    temp_13_ce0_local;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -102,8 +102,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((exitcond_i452_fu_50_p2 == 1'd0)) begin
-            empty_fu_24 <= empty_180_fu_56_p2;
+        if ((exitcond_i706_fu_50_p2 == 1'd0)) begin
+            empty_fu_24 <= empty_184_fu_56_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             empty_fu_24 <= 5'd0;
         end
@@ -119,7 +119,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i452_fu_50_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((exitcond_i706_fu_50_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -160,17 +160,17 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        temp_68_ce0_local = 1'b1;
+        temp_13_ce0_local = 1'b1;
     end else begin
-        temp_68_ce0_local = 1'b0;
+        temp_13_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((exitcond_i452_fu_50_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        temp_68_we0_local = 1'b1;
+    if (((exitcond_i706_fu_50_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        temp_13_we0_local = 1'b1;
     end else begin
-        temp_68_we0_local = 1'b0;
+        temp_13_we0_local = 1'b0;
     end
 end
 
@@ -197,18 +197,18 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign empty_180_fu_56_p2 = (ap_sig_allocacmp_p_load + 5'd1);
+assign empty_184_fu_56_p2 = (ap_sig_allocacmp_p_load + 5'd1);
 
-assign exitcond_i452_fu_50_p2 = ((ap_sig_allocacmp_p_load == 5'd16) ? 1'b1 : 1'b0);
+assign exitcond_i706_fu_50_p2 = ((ap_sig_allocacmp_p_load == 5'd16) ? 1'b1 : 1'b0);
 
-assign p_cast6_fu_62_p1 = ap_sig_allocacmp_p_load;
+assign p_cast5_fu_62_p1 = ap_sig_allocacmp_p_load;
 
-assign temp_68_address0 = p_cast6_fu_62_p1;
+assign temp_13_address0 = p_cast5_fu_62_p1;
 
-assign temp_68_ce0 = temp_68_ce0_local;
+assign temp_13_ce0 = temp_13_ce0_local;
 
-assign temp_68_d0 = 64'd0;
+assign temp_13_d0 = 64'd0;
 
-assign temp_68_we0 = temp_68_we0_local;
+assign temp_13_we0 = temp_13_we0_local;
 
 endmodule //sikep503_kem_enc_hw_fp2inv503_mont_Pipeline_11

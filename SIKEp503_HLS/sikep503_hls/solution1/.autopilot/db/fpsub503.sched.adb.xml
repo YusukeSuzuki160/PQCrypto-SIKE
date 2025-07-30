@@ -112,10 +112,10 @@ entry:4 %tmp_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %a_offs
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="64" op_3_bw="4" op_4_bw="64" op_5_bw="64" op_6_bw="1">
 <![CDATA[
-entry:5 %call_ln48 = call void @fpsub503_Pipeline_VITIS_LOOP_47_1, i4 %tmp_s, i64 %a, i4 %tmp, i64 %b, i64 %c, i1 %borrow_loc
+entry:5 %call_ln59 = call void @fpsub503_Pipeline_VITIS_LOOP_57_1, i4 %tmp_s, i64 %a, i4 %tmp, i64 %b, i64 %c, i1 %borrow_loc
 
 ]]></Node>
-<StgValue><ssdm name="call_ln48"/></StgValue>
+<StgValue><ssdm name="call_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -130,10 +130,10 @@ entry:5 %call_ln48 = call void @fpsub503_Pipeline_VITIS_LOOP_47_1, i4 %tmp_s, i6
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="64" op_3_bw="4" op_4_bw="64" op_5_bw="64" op_6_bw="1">
 <![CDATA[
-entry:5 %call_ln48 = call void @fpsub503_Pipeline_VITIS_LOOP_47_1, i4 %tmp_s, i64 %a, i4 %tmp, i64 %b, i64 %c, i1 %borrow_loc
+entry:5 %call_ln59 = call void @fpsub503_Pipeline_VITIS_LOOP_57_1, i4 %tmp_s, i64 %a, i4 %tmp, i64 %b, i64 %c, i1 %borrow_loc
 
 ]]></Node>
-<StgValue><ssdm name="call_ln48"/></StgValue>
+<StgValue><ssdm name="call_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -163,7 +163,7 @@ entry:6 %borrow_loc_load = load i1 %borrow_loc
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:7 %call_ln0 = call void @fpsub503_Pipeline_VITIS_LOOP_53_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1
+entry:7 %call_ln0 = call void @fpsub503_Pipeline_VITIS_LOOP_64_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -181,7 +181,7 @@ entry:7 %call_ln0 = call void @fpsub503_Pipeline_VITIS_LOOP_53_2, i64 %c, i1 %bo
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:7 %call_ln0 = call void @fpsub503_Pipeline_VITIS_LOOP_53_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1
+entry:7 %call_ln0 = call void @fpsub503_Pipeline_VITIS_LOOP_64_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -196,10 +196,10 @@ entry:7 %call_ln0 = call void @fpsub503_Pipeline_VITIS_LOOP_53_2, i64 %c, i1 %bo
 
 <Node id="15" bw="0">
 <![CDATA[
-entry:8 %ret_ln56 = ret
+entry:8 %ret_ln68 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln56"/></StgValue>
+<StgValue><ssdm name="ret_ln68"/></StgValue>
 </operation>
 </state>
 </state_list>

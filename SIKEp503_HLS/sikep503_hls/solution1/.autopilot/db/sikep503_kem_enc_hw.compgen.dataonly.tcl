@@ -26,6 +26,11 @@ ss {
 	offset 40
 	offset_end 51
 }
+}
+dict set axilite_register_dict control $port_control
+
+
+set port_control_r {
 ap_start { }
 ap_done { }
 ap_ready { }
@@ -33,6 +38,6 @@ ap_idle { }
 interrupt {
 }
 }
-dict set axilite_register_dict control $port_control
+dict set axilite_register_dict control_r $port_control_r
 
 

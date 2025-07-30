@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>zynq</ProductFamily>
-<Part>xc7z045-ffg900-2</Part>
+<ProductFamily>virtexuplus58g</ProductFamily>
+<Part>xcvu29p-fsga2577-2L-e</Part>
 <TopModelName>fp2inv503_mont</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
@@ -18,40 +18,40 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.675</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>214779</Best-caseLatency>
-<Average-caseLatency>299459</Average-caseLatency>
-<Worst-caseLatency>364490</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.148 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.995 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>3.645 ms</Worst-caseRealTimeLatency>
-<Interval-min>214779</Interval-min>
-<Interval-max>364490</Interval-max>
+<Best-caseLatency>90301</Best-caseLatency>
+<Average-caseLatency>122843</Average-caseLatency>
+<Worst-caseLatency>155385</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.903 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.228 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.554 ms</Worst-caseRealTimeLatency>
+<Interval-min>90301</Interval-min>
+<Interval-max>155385</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:61~src/fpx.c:324</SourceLocation>
+<SourceLocation>src/fpx.cpp:56~src/fpx.cpp:347</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>28</BRAM_18K>
-<DSP>544</DSP>
-<FF>44870</FF>
-<LUT>69431</LUT>
+<BRAM_18K>2</BRAM_18K>
+<DSP>3888</DSP>
+<FF>36251</FF>
+<LUT>110372</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>1090</BRAM_18K>
-<DSP>900</DSP>
-<FF>437200</FF>
-<LUT>218600</LUT>
-<URAM>0</URAM>
+<BRAM_18K>5376</BRAM_18K>
+<DSP>12288</DSP>
+<FF>3456000</FF>
+<LUT>1728000</LUT>
+<URAM>1280</URAM>
 </AvailableResources>
 </AreaEstimates>
 

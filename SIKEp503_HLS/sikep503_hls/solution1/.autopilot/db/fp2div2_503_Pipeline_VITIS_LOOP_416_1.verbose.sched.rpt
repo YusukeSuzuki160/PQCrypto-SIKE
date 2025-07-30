@@ -1,0 +1,169 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2div2_503_Pipeline_VITIS_LOOP_416_1'
+================================================================
+* Date:           Wed Jul 30 17:27:24 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.820 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_416_1  |       14|       14|         2|          2|          1|     7|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.67>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_348 = alloca i32 1" [src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 5 'alloca' 'i_348' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln414 = store i3 0, i3 %i_348" [src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 6 'store' 'store_ln414' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i.i"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i3 %i_348" [src/fpx.cpp:416->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 8 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.57ns)   --->   "%icmp_ln416 = icmp_eq  i3 %i, i3 7" [src/fpx.cpp:416->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 9 'icmp' 'icmp_ln416' <Predicate = true> <Delay = 0.57> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.57ns)   --->   "%add_ln419 = add i3 %i, i3 1" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 10 'add' 'add_ln419' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln416 = br i1 %icmp_ln416, void %for.inc.i.i.split, void %_Z10fpdiv2_503PKmPm.exit.exitStub" [src/fpx.cpp:416->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 11 'br' 'br_ln416' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln416 = trunc i3 %i" [src/fpx.cpp:416->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 12 'trunc' 'trunc_ln416' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i2 @_ssdm_op_PartSelect.i2.i3.i32.i32, i3 %i, i32 1, i32 2" [src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 13 'partselect' 'lshr_ln' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln414 = zext i2 %lshr_ln" [src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 14 'zext' 'zext_ln414' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%c_0_addr = getelementptr i64 %c_0, i64 0, i64 %zext_ln414" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 15 'getelementptr' 'c_0_addr' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%c_1_addr = getelementptr i64 %c_1, i64 0, i64 %zext_ln414" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 16 'getelementptr' 'c_1_addr' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (0.71ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 17 'load' 'c_0_load' <Predicate = (!icmp_ln416)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 18 [2/2] (0.71ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 18 'load' 'c_1_load' <Predicate = (!icmp_ln416)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%lshr_ln419_1 = partselect i2 @_ssdm_op_PartSelect.i2.i3.i32.i32, i3 %add_ln419, i32 1, i32 2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 19 'partselect' 'lshr_ln419_1' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln419 = zext i2 %lshr_ln419_1" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 20 'zext' 'zext_ln419' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%c_0_addr_2 = getelementptr i64 %c_0, i64 0, i64 %zext_ln419" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 21 'getelementptr' 'c_0_addr_2' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%c_1_addr_2 = getelementptr i64 %c_1, i64 0, i64 %zext_ln419" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 22 'getelementptr' 'c_1_addr_2' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_1 : Operation 23 [2/2] (0.71ns)   --->   "%c_0_load_2 = load i3 %c_0_addr_2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 23 'load' 'c_0_load_2' <Predicate = (!icmp_ln416)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 24 [2/2] (0.71ns)   --->   "%c_1_load_2 = load i3 %c_1_addr_2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 24 'load' 'c_1_load_2' <Predicate = (!icmp_ln416)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 46 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 46 'ret' 'ret_ln0' <Predicate = (icmp_ln416)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 1.81>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln414 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3" [src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 25 'specpipeline' 'specpipeline_ln414' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln414 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 7, i64 7, i64 7" [src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln414' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln416 = specloopname void @_ssdm_op_SpecLoopName, void @empty_82" [src/fpx.cpp:416->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 27 'specloopname' 'specloopname_ln416' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 28 'load' 'c_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 29 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 29 'load' 'c_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load, i32 1, i32 63" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 30 'partselect' 'tmp' <Predicate = (trunc_ln416)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_s = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_0_load, i32 1, i32 63" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 31 'partselect' 'tmp_s' <Predicate = (!trunc_ln416)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.39ns)   --->   "%select_ln419 = select i1 %trunc_ln416, i63 %tmp, i63 %tmp_s" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 32 'select' 'select_ln419' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 33 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_0_load_2 = load i3 %c_0_addr_2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 33 'load' 'c_0_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 34 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_1_load_2 = load i3 %c_1_addr_2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 34 'load' 'c_1_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%trunc_ln419 = trunc i64 %c_0_load_2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 35 'trunc' 'trunc_ln419' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln419_2 = trunc i64 %c_1_load_2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 36 'trunc' 'trunc_ln419_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.27ns)   --->   "%select_ln419_2 = select i1 %trunc_ln416, i1 %trunc_ln419, i1 %trunc_ln419_2" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 37 'select' 'select_ln419_2' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %select_ln419_2, i63 %select_ln419" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 38 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln419 = br i1 %trunc_ln416, void %arrayidx.i.i495.case.0, void %arrayidx.i.i495.case.1" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 39 'br' 'br_ln419' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln419 = store i64 %or_ln, i3 %c_0_addr" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 40 'store' 'store_ln419' <Predicate = (!trunc_ln416)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln419 = br void %arrayidx.i.i495.exit" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 41 'br' 'br_ln419' <Predicate = (!trunc_ln416)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln419 = store i64 %or_ln, i3 %c_1_addr" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 42 'store' 'store_ln419' <Predicate = (trunc_ln416)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln419 = br void %arrayidx.i.i495.exit" [src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 43 'br' 'br_ln419' <Predicate = (trunc_ln416)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.38ns)   --->   "%store_ln414 = store i3 %add_ln419, i3 %i_348" [src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 44 'store' 'store_ln414' <Predicate = true> <Delay = 0.38>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln416 = br void %for.inc.i.i" [src/fpx.cpp:416->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 45 'br' 'br_ln416' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.673ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln414', src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) of constant 0 on local variable 'i', src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113 [4]  (0.387 ns)
+	'load' operation 3 bit ('i', src/fpx.cpp:416->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) on local variable 'i', src/fpx.cpp:414->src/generic/fp_generic.cpp:91->src/fpx.cpp:113 [7]  (0.000 ns)
+	'add' operation 3 bit ('add_ln419', src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) [9]  (0.572 ns)
+	'getelementptr' operation 3 bit ('c_0_addr_2', src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) [27]  (0.000 ns)
+	'load' operation 64 bit ('c_0_load_2', src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) on array 'c_0' [29]  (0.714 ns)
+
+ <State 2>: 1.820ns
+The critical path consists of the following:
+	'load' operation 64 bit ('c_0_load', src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) on array 'c_0' [20]  (0.714 ns)
+	'select' operation 63 bit ('select_ln419', src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) [24]  (0.392 ns)
+	'store' operation 0 bit ('store_ln419', src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113) of variable 'or_ln', src/fpx.cpp:419->src/generic/fp_generic.cpp:91->src/fpx.cpp:113 on array 'c_0' [37]  (0.714 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

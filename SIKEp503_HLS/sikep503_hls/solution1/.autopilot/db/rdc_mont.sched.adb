@@ -93,9 +93,9 @@
 						<type>0</type>
 						<id>4</id>
 						<name>i_13</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -108,10 +108,10 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -148,10 +148,10 @@
 					<Obj>
 						<type>0</type>
 						<id>5</id>
-						<name>u_024</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>u</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -164,10 +164,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -204,10 +204,10 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>v_025</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -220,10 +220,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -302,7 +302,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>u_46_loc</name>
+						<name>u_61_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -344,7 +344,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>v_108_loc</name>
+						<name>v_113_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -428,7 +428,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>u_54_loc</name>
+						<name>u_57_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -470,7 +470,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>v_104_loc</name>
+						<name>v_109_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -513,9 +513,9 @@
 						<type>0</type>
 						<id>13</id>
 						<name>mc_addr</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>225</lineNumber>
+						<lineNumber>348</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -528,10 +528,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>225</second>
+										<second>348</second>
 									</item>
 								</second>
 							</item>
@@ -613,10 +613,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>v_025_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -629,10 +629,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -661,7 +661,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -670,10 +670,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>u_024_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>u_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -686,10 +686,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -718,7 +718,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -727,10 +727,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>i_13_write_ln179</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>i_13_write_ln286</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -743,10 +743,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -775,7 +775,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -784,10 +784,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>br_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>br_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -800,10 +800,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -841,9 +841,9 @@
 						<type>0</type>
 						<id>20</id>
 						<name>i</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -856,10 +856,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -897,7 +897,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>u_87</name>
+						<name>u_83</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -940,7 +940,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>v_100</name>
+						<name>v_109</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -983,10 +983,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>icmp_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>icmp_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -999,10 +999,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -1031,7 +1031,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1040,10 +1040,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>add_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>add_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1056,10 +1056,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -1088,7 +1088,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1097,10 +1097,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>br_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>br_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1113,10 +1113,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -1155,10 +1155,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>trunc_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>trunc_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1171,10 +1171,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -1211,10 +1211,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>zext_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>zext_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1227,10 +1227,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -1268,9 +1268,9 @@
 						<type>0</type>
 						<id>29</id>
 						<name>mc_addr_11</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<lineNumber>314</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1283,10 +1283,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>198</second>
+										<second>314</second>
 									</item>
 								</second>
 							</item>
@@ -1325,10 +1325,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>zext_ln187</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>zext_ln299</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>187</lineNumber>
+						<lineNumber>299</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1341,10 +1341,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>187</second>
+										<second>299</second>
 									</item>
 								</second>
 							</item>
@@ -1381,10 +1381,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>add_ln187</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>add_ln299</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>187</lineNumber>
+						<lineNumber>299</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1397,10 +1397,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>187</second>
+										<second>299</second>
 									</item>
 								</second>
 							</item>
@@ -1429,7 +1429,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
+				<m_delay>0.57</m_delay>
 				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1438,10 +1438,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1454,10 +1454,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -1496,7 +1496,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.52</m_delay>
+				<m_delay>1.28</m_delay>
 				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1505,7 +1505,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>v_104_loc_load</name>
+						<name>v_109_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1548,7 +1548,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>u_54_loc_load</name>
+						<name>u_57_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1583,7 +1583,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>45</m_topoIndex>
+				<m_topoIndex>43</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_32">
@@ -1626,7 +1626,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>46</m_topoIndex>
+				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_33">
@@ -1635,9 +1635,9 @@
 						<type>0</type>
 						<id>38</id>
 						<name>ma_addr_11</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<lineNumber>311</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1650,10 +1650,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -1693,9 +1693,9 @@
 						<type>0</type>
 						<id>39</id>
 						<name>ma_load_11</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<lineNumber>311</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1708,10 +1708,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -1739,7 +1739,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1748,10 +1748,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>v_101</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_110</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<lineNumber>311</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -1764,10 +1764,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -1796,8 +1796,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
-				<m_topoIndex>43</m_topoIndex>
+				<m_delay>1.14</m_delay>
+				<m_topoIndex>45</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_36">
@@ -1828,10 +1828,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -1861,7 +1861,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>47</m_topoIndex>
+				<m_topoIndex>46</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_37">
@@ -1869,7 +1869,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>xor_ln105_179</name>
+						<name>xor_ln105_173</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1892,10 +1892,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -1925,7 +1925,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>48</m_topoIndex>
+				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_38">
@@ -1956,10 +1956,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -1989,7 +1989,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>49</m_topoIndex>
+				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_39">
@@ -1997,7 +1997,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>xor_ln105_180</name>
+						<name>xor_ln105_174</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -2020,10 +2020,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -2053,7 +2053,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>50</m_topoIndex>
+				<m_topoIndex>49</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_40">
@@ -2084,10 +2084,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -2118,7 +2118,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>51</m_topoIndex>
+				<m_topoIndex>50</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_41">
@@ -2149,10 +2149,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>195</second>
+										<second>311</second>
 									</item>
 								</second>
 							</item>
@@ -2181,7 +2181,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>52</m_topoIndex>
+				<m_topoIndex>51</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_42">
@@ -2189,10 +2189,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>v_105</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_116</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>196</lineNumber>
+						<lineNumber>312</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -2205,10 +2205,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2237,8 +2237,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
-				<m_topoIndex>53</m_topoIndex>
+				<m_delay>1.14</m_delay>
+				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_43">
@@ -2269,10 +2269,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2303,7 +2303,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>54</m_topoIndex>
+				<m_topoIndex>53</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_44">
@@ -2311,7 +2311,7 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>xor_ln105_181</name>
+						<name>xor_ln105_175</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -2334,10 +2334,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2367,7 +2367,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>55</m_topoIndex>
+				<m_topoIndex>54</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_45">
@@ -2398,10 +2398,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2430,7 +2430,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>56</m_topoIndex>
+				<m_topoIndex>55</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_46">
@@ -2461,10 +2461,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2495,7 +2495,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>57</m_topoIndex>
+				<m_topoIndex>56</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_47">
@@ -2526,10 +2526,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2559,7 +2559,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>58</m_topoIndex>
+				<m_topoIndex>57</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_48">
@@ -2590,10 +2590,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2624,7 +2624,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>59</m_topoIndex>
+				<m_topoIndex>58</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_49">
@@ -2632,7 +2632,7 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>zext_ln105_52</name>
+						<name>zext_ln105_31</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -2655,10 +2655,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>196</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -2687,7 +2687,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>60</m_topoIndex>
+				<m_topoIndex>59</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_50">
@@ -2695,10 +2695,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>u_92</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>u_88</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>197</lineNumber>
+						<lineNumber>313</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -2711,10 +2711,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>197</second>
+										<second>313</second>
 									</item>
 								</second>
 							</item>
@@ -2743,8 +2743,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
-				<m_topoIndex>61</m_topoIndex>
+				<m_delay>1.14</m_delay>
+				<m_topoIndex>60</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_51">
@@ -2752,10 +2752,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>mc_addr_11_write_ln198</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>mc_addr_11_write_ln314</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<lineNumber>314</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -2768,10 +2768,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>198</second>
+										<second>314</second>
 									</item>
 								</second>
 							</item>
@@ -2801,8 +2801,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
-				<m_topoIndex>44</m_topoIndex>
+				<m_delay>0.71</m_delay>
+				<m_topoIndex>61</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_52">
@@ -2810,10 +2810,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>v_025_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -2826,10 +2826,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -2860,7 +2860,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>62</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2869,10 +2869,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>u_024_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>u_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -2885,10 +2885,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -2919,7 +2919,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>63</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2928,10 +2928,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>i_13_write_ln179</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>i_13_write_ln286</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -2944,10 +2944,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -2978,7 +2978,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2987,10 +2987,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>br_ln186</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>br_ln297</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>186</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3003,10 +3003,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>186</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -3044,9 +3044,9 @@
 						<type>0</type>
 						<id>62</id>
 						<name>count</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3059,10 +3059,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -3099,10 +3099,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>u</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>u_53</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3115,10 +3115,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -3155,10 +3155,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>v_56</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_59</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3171,10 +3171,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -3254,9 +3254,9 @@
 						<type>0</type>
 						<id>66</id>
 						<name>i_14</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3269,10 +3269,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -3309,10 +3309,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>i_14_write_ln179</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>i_14_write_ln286</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3325,10 +3325,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -3357,7 +3357,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3400,7 +3400,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3409,10 +3409,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>v_56_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_59_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3425,10 +3425,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -3457,7 +3457,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3466,10 +3466,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>u_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>u_53_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3482,10 +3482,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -3514,7 +3514,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>35</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3523,10 +3523,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>count_write_ln179</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>count_write_ln286</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3539,10 +3539,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -3571,7 +3571,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>36</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3580,10 +3580,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>br_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>br_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3596,10 +3596,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -3637,9 +3637,9 @@
 						<type>0</type>
 						<id>74</id>
 						<name>i_25</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3652,10 +3652,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -3693,10 +3693,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>icmp_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>icmp_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3709,10 +3709,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -3741,7 +3741,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>66</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3750,10 +3750,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>br_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>br_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3766,10 +3766,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -3809,9 +3809,9 @@
 						<type>0</type>
 						<id>78</id>
 						<name>count_load</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>206</lineNumber>
+						<lineNumber>325</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3824,10 +3824,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>206</second>
+										<second>325</second>
 									</item>
 								</second>
 							</item>
@@ -3865,7 +3865,7 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>u_load</name>
+						<name>u_53_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3900,7 +3900,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>77</m_topoIndex>
+				<m_topoIndex>69</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_72">
@@ -3908,7 +3908,7 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>v_56_load_5</name>
+						<name>v_59_load_5</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3943,7 +3943,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>78</m_topoIndex>
+				<m_topoIndex>70</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_73">
@@ -3952,9 +3952,9 @@
 						<type>0</type>
 						<id>81</id>
 						<name>indvars_iv_load</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -3967,10 +3967,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -4000,7 +4000,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>79</m_topoIndex>
+				<m_topoIndex>71</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_74">
@@ -4008,10 +4008,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>trunc_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>trunc_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4024,10 +4024,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -4056,7 +4056,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>80</m_topoIndex>
+				<m_topoIndex>72</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_75">
@@ -4064,10 +4064,10 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>zext_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>zext_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4080,10 +4080,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -4120,10 +4120,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>trunc_ln204_12</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>trunc_ln321_12</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4136,10 +4136,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -4168,7 +4168,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>81</m_topoIndex>
+				<m_topoIndex>73</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_77">
@@ -4176,10 +4176,10 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>icmp_ln205</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>icmp_ln323</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>205</lineNumber>
+						<lineNumber>323</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4192,10 +4192,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>205</second>
+										<second>323</second>
 									</item>
 								</second>
 							</item>
@@ -4224,8 +4224,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.89</m_delay>
-				<m_topoIndex>69</m_topoIndex>
+				<m_delay>0.88</m_delay>
+				<m_topoIndex>74</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_78">
@@ -4233,10 +4233,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>add_ln206</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>add_ln325</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>206</lineNumber>
+						<lineNumber>325</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4249,10 +4249,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>206</second>
+										<second>325</second>
 									</item>
 								</second>
 							</item>
@@ -4281,8 +4281,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.89</m_delay>
-				<m_topoIndex>70</m_topoIndex>
+				<m_delay>0.88</m_delay>
+				<m_topoIndex>75</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_79">
@@ -4291,9 +4291,9 @@
 						<type>0</type>
 						<id>89</id>
 						<name>count_11</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>205</lineNumber>
+						<lineNumber>323</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4306,10 +4306,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>205</second>
+										<second>323</second>
 									</item>
 								</second>
 							</item>
@@ -4339,8 +4339,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>71</m_topoIndex>
+				<m_delay>0.22</m_delay>
+				<m_topoIndex>76</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_80">
@@ -4348,10 +4348,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>sub66</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>sub67</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>205</lineNumber>
+						<lineNumber>323</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4364,10 +4364,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>205</second>
+										<second>323</second>
 									</item>
 								</second>
 							</item>
@@ -4396,8 +4396,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.89</m_delay>
-				<m_topoIndex>82</m_topoIndex>
+				<m_delay>0.88</m_delay>
+				<m_topoIndex>77</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_81">
@@ -4405,10 +4405,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4421,10 +4421,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -4463,8 +4463,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.82</m_delay>
-				<m_topoIndex>83</m_topoIndex>
+				<m_delay>1.67</m_delay>
+				<m_topoIndex>78</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_82">
@@ -4472,7 +4472,7 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>v_108_loc_load</name>
+						<name>v_113_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4515,7 +4515,7 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>u_46_loc_load</name>
+						<name>u_61_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4550,7 +4550,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>94</m_topoIndex>
+				<m_topoIndex>90</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_84">
@@ -4593,7 +4593,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>95</m_topoIndex>
+				<m_topoIndex>91</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_85">
@@ -4602,9 +4602,9 @@
 						<type>0</type>
 						<id>95</id>
 						<name>ma_addr_12</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<lineNumber>339</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4617,10 +4617,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -4660,9 +4660,9 @@
 						<type>0</type>
 						<id>96</id>
 						<name>ma_load_12</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<lineNumber>339</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4675,10 +4675,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -4706,7 +4706,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>88</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4715,10 +4715,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>v_103</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_114</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<lineNumber>339</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -4731,10 +4731,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -4763,8 +4763,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
-				<m_topoIndex>90</m_topoIndex>
+				<m_delay>1.14</m_delay>
+				<m_topoIndex>92</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_88">
@@ -4772,7 +4772,7 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>xor_ln105_182</name>
+						<name>xor_ln105_176</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -4795,10 +4795,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -4828,7 +4828,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>96</m_topoIndex>
+				<m_topoIndex>93</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_89">
@@ -4836,7 +4836,7 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>xor_ln105_183</name>
+						<name>xor_ln105_177</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -4859,10 +4859,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -4892,7 +4892,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>97</m_topoIndex>
+				<m_topoIndex>94</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_90">
@@ -4923,10 +4923,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -4956,7 +4956,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>98</m_topoIndex>
+				<m_topoIndex>95</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_91">
@@ -4964,7 +4964,7 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>xor_ln105_184</name>
+						<name>xor_ln105_178</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -4987,10 +4987,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -5020,7 +5020,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>99</m_topoIndex>
+				<m_topoIndex>96</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_92">
@@ -5051,10 +5051,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -5085,7 +5085,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>100</m_topoIndex>
+				<m_topoIndex>97</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_93">
@@ -5093,7 +5093,7 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>zext_ln105_53</name>
+						<name>zext_ln105_32</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -5116,10 +5116,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>216</second>
+										<second>339</second>
 									</item>
 								</second>
 							</item>
@@ -5148,7 +5148,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>101</m_topoIndex>
+				<m_topoIndex>98</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_94">
@@ -5157,9 +5157,9 @@
 						<type>0</type>
 						<id>104</id>
 						<name>tempReg</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>217</lineNumber>
+						<lineNumber>340</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -5172,10 +5172,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5204,8 +5204,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
-				<m_topoIndex>102</m_topoIndex>
+				<m_delay>1.14</m_delay>
+				<m_topoIndex>99</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_95">
@@ -5236,10 +5236,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5270,7 +5270,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>103</m_topoIndex>
+				<m_topoIndex>100</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_96">
@@ -5278,7 +5278,7 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>xor_ln105_185</name>
+						<name>xor_ln105_179</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -5301,10 +5301,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5334,7 +5334,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>104</m_topoIndex>
+				<m_topoIndex>101</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_97">
@@ -5342,7 +5342,7 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>trunc_ln105_33</name>
+						<name>trunc_ln105_11</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -5365,10 +5365,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5397,7 +5397,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>105</m_topoIndex>
+				<m_topoIndex>102</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_98">
@@ -5428,10 +5428,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5462,7 +5462,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>106</m_topoIndex>
+				<m_topoIndex>103</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_99">
@@ -5493,10 +5493,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5526,7 +5526,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>107</m_topoIndex>
+				<m_topoIndex>104</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_100">
@@ -5557,10 +5557,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5591,7 +5591,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>108</m_topoIndex>
+				<m_topoIndex>105</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_101">
@@ -5599,7 +5599,7 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>zext_ln105_54</name>
+						<name>zext_ln105_33</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -5622,10 +5622,10 @@
 									</item>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>217</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -5654,7 +5654,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>109</m_topoIndex>
+				<m_topoIndex>106</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_102">
@@ -5663,9 +5663,9 @@
 						<type>0</type>
 						<id>112</id>
 						<name>t</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>218</lineNumber>
+						<lineNumber>341</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -5678,10 +5678,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>218</second>
+										<second>341</second>
 									</item>
 								</second>
 							</item>
@@ -5710,8 +5710,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
-				<m_topoIndex>110</m_topoIndex>
+				<m_delay>1.14</m_delay>
+				<m_topoIndex>107</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_103">
@@ -5719,10 +5719,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>zext_ln219</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>zext_ln342</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>219</lineNumber>
+						<lineNumber>342</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -5735,10 +5735,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>219</second>
+										<second>342</second>
 									</item>
 								</second>
 							</item>
@@ -5767,7 +5767,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>91</m_topoIndex>
+				<m_topoIndex>108</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_104">
@@ -5776,9 +5776,9 @@
 						<type>0</type>
 						<id>114</id>
 						<name>mc_addr_12</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>219</lineNumber>
+						<lineNumber>342</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -5791,10 +5791,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>219</second>
+										<second>342</second>
 									</item>
 								</second>
 							</item>
@@ -5825,7 +5825,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>92</m_topoIndex>
+				<m_topoIndex>109</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_105">
@@ -5833,10 +5833,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>mc_addr_12_write_ln219</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>mc_addr_12_write_ln342</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>219</lineNumber>
+						<lineNumber>342</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -5849,10 +5849,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>219</second>
+										<second>342</second>
 									</item>
 								</second>
 							</item>
@@ -5882,8 +5882,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
-				<m_topoIndex>93</m_topoIndex>
+				<m_delay>0.71</m_delay>
+				<m_topoIndex>110</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_106">
@@ -5891,10 +5891,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>add_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>add_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -5907,10 +5907,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -5939,8 +5939,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
-				<m_topoIndex>72</m_topoIndex>
+				<m_delay>0.70</m_delay>
+				<m_topoIndex>79</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_107">
@@ -5948,10 +5948,10 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>add_ln204_6</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>add_ln321_6</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -5964,10 +5964,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -5996,8 +5996,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
-				<m_topoIndex>84</m_topoIndex>
+				<m_delay>0.70</m_delay>
+				<m_topoIndex>80</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_108">
@@ -6005,10 +6005,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>i_14_write_ln179</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>i_14_write_ln286</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6021,10 +6021,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -6055,8 +6055,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
-				<m_topoIndex>73</m_topoIndex>
+				<m_delay>0.38</m_delay>
+				<m_topoIndex>81</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_109">
@@ -6064,10 +6064,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>indvars_iv_write_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>indvars_iv_write_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6080,10 +6080,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -6114,8 +6114,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
-				<m_topoIndex>85</m_topoIndex>
+				<m_delay>0.38</m_delay>
+				<m_topoIndex>82</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_110">
@@ -6123,10 +6123,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>v_56_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_59_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6139,10 +6139,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -6173,7 +6173,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>111</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6182,10 +6182,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>u_write_ln180</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>u_53_write_ln287</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6198,10 +6198,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>180</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -6232,7 +6232,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>112</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6241,10 +6241,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>count_write_ln179</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>count_write_ln286</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6257,10 +6257,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>179</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -6291,8 +6291,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
-				<m_topoIndex>74</m_topoIndex>
+				<m_delay>0.38</m_delay>
+				<m_topoIndex>83</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_113">
@@ -6300,10 +6300,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>br_ln204</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>br_ln321</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>204</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6316,10 +6316,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>204</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -6356,10 +6356,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>v_56_load</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_59_load</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>224</lineNumber>
+						<lineNumber>347</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6372,10 +6372,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>224</second>
+										<second>347</second>
 									</item>
 								</second>
 							</item>
@@ -6414,9 +6414,9 @@
 						<type>0</type>
 						<id>126</id>
 						<name>ma_addr</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>224</lineNumber>
+						<lineNumber>347</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6429,10 +6429,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>224</second>
+										<second>347</second>
 									</item>
 								</second>
 							</item>
@@ -6463,7 +6463,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>75</m_topoIndex>
+				<m_topoIndex>84</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_116">
@@ -6472,9 +6472,9 @@
 						<type>0</type>
 						<id>127</id>
 						<name>ma_load</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>224</lineNumber>
+						<lineNumber>347</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6487,10 +6487,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>224</second>
+										<second>347</second>
 									</item>
 								</second>
 							</item>
@@ -6518,8 +6518,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
-				<m_topoIndex>76</m_topoIndex>
+				<m_delay>0.71</m_delay>
+				<m_topoIndex>85</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_117">
@@ -6527,10 +6527,10 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>v</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>v_113</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>224</lineNumber>
+						<lineNumber>347</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6543,10 +6543,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>224</second>
+										<second>347</second>
 									</item>
 								</second>
 							</item>
@@ -6575,7 +6575,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
+				<m_delay>1.14</m_delay>
 				<m_topoIndex>115</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6584,10 +6584,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>mc_addr_write_ln225</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>mc_addr_write_ln348</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>225</lineNumber>
+						<lineNumber>348</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6600,10 +6600,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>225</second>
+										<second>348</second>
 									</item>
 								</second>
 							</item>
@@ -6632,7 +6632,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>116</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6641,10 +6641,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>_ln226</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln349</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>226</lineNumber>
+						<lineNumber>349</lineNumber>
 						<contextFuncName>rdc_mont</contextFuncName>
 						<contextNormFuncName>rdc_mont</contextNormFuncName>
 						<inlineStackInfo>
@@ -6657,10 +6657,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>rdc_mont</second>
 										</first>
-										<second>226</second>
+										<second>349</second>
 									</item>
 								</second>
 							</item>
@@ -6824,7 +6824,7 @@
 					<Obj>
 						<type>2</type>
 						<id>148</id>
-						<name>rdc_mont_Pipeline_VITIS_LOOP_182_1</name>
+						<name>rdc_mont_Pipeline_VITIS_LOOP_291_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6848,7 +6848,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:rdc_mont_Pipeline_VITIS_LOOP_182_1&gt;</content>
+				<content>&lt;constant:rdc_mont_Pipeline_VITIS_LOOP_291_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_125">
 				<Value>
@@ -7010,7 +7010,7 @@
 					<Obj>
 						<type>2</type>
 						<id>197</id>
-						<name>rdc_mont_Pipeline_VITIS_LOOP_187_3</name>
+						<name>rdc_mont_Pipeline_VITIS_LOOP_299_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7034,7 +7034,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:rdc_mont_Pipeline_VITIS_LOOP_187_3&gt;</content>
+				<content>&lt;constant:rdc_mont_Pipeline_VITIS_LOOP_299_3&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_131">
 				<Value>
@@ -7258,7 +7258,7 @@
 					<Obj>
 						<type>2</type>
 						<id>289</id>
-						<name>rdc_mont_Pipeline_VITIS_LOOP_208_5</name>
+						<name>rdc_mont_Pipeline_VITIS_LOOP_327_5</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7282,7 +7282,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:rdc_mont_Pipeline_VITIS_LOOP_208_5&gt;</content>
+				<content>&lt;constant:rdc_mont_Pipeline_VITIS_LOOP_327_5&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_139">
 				<Value>
@@ -7368,7 +7368,7 @@
 				<Obj>
 					<type>3</type>
 					<id>26</id>
-					<name>VITIS_LOOP_187_3</name>
+					<name>VITIS_LOOP_299_3</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -7404,7 +7404,7 @@
 				<Obj>
 					<type>3</type>
 					<id>61</id>
-					<name>VITIS_LOOP_187_3.split</name>
+					<name>VITIS_LOOP_299_3.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -7466,7 +7466,7 @@
 				<Obj>
 					<type>3</type>
 					<id>73</id>
-					<name>for.body56.preheader</name>
+					<name>for.body58.preheader</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -7507,7 +7507,7 @@
 				<Obj>
 					<type>3</type>
 					<id>77</id>
-					<name>for.body56</name>
+					<name>for.body58</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -7540,7 +7540,7 @@
 				<Obj>
 					<type>3</type>
 					<id>124</id>
-					<name>for.body56.split</name>
+					<name>for.body58.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -7614,7 +7614,7 @@
 				<Obj>
 					<type>3</type>
 					<id>131</id>
-					<name>for.end120</name>
+					<name>for.end126</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -9448,8 +9448,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>160</mMinLatency>
-			<mMaxLatency>306</mMaxLatency>
+			<mMinLatency>103</mMinLatency>
+			<mMaxLatency>209</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -9478,8 +9478,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_402">
 			<mId>3</mId>
-			<mTag>VITIS_LOOP_186_2</mTag>
-			<mNormTag>VITIS_LOOP_186_2</mNormTag>
+			<mTag>VITIS_LOOP_297_2</mTag>
+			<mNormTag>VITIS_LOOP_297_2</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -9495,8 +9495,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>8</mMinTripCount>
 			<mMaxTripCount>8</mMaxTripCount>
-			<mMinLatency>48</mMinLatency>
-			<mMaxLatency>152</mMaxLatency>
+			<mMinLatency>40</mMinLatency>
+			<mMaxLatency>104</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -9525,8 +9525,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_404">
 			<mId>5</mId>
-			<mTag>VITIS_LOOP_204_4</mTag>
-			<mNormTag>VITIS_LOOP_204_4</mNormTag>
+			<mTag>VITIS_LOOP_321_4</mTag>
+			<mNormTag>VITIS_LOOP_321_4</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -9542,8 +9542,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>7</mMinTripCount>
 			<mMaxTripCount>7</mMaxTripCount>
-			<mMinLatency>98</mMinLatency>
-			<mMaxLatency>140</mMaxLatency>
+			<mMinLatency>49</mMinLatency>
+			<mMaxLatency>91</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -9775,14 +9775,14 @@
 		<item>
 			<first>36</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9810,105 +9810,105 @@
 		<item>
 			<first>41</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>47</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>49</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9922,14 +9922,14 @@
 		<item>
 			<first>57</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9943,7 +9943,7 @@
 		<item>
 			<first>60</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -10027,371 +10027,371 @@
 		<item>
 			<first>74</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>75</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>76</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>78</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>79</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>80</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>81</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>82</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>83</first>
 			<second>
-				<first>8</first>
+				<first>6</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>84</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>87</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>88</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>89</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>90</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>91</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>92</first>
 			<second>
-				<first>9</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>93</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>94</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>95</first>
 			<second>
-				<first>8</first>
+				<first>6</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>96</first>
 			<second>
-				<first>8</first>
+				<first>6</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>97</first>
 			<second>
-				<first>9</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>98</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>99</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>100</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>101</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>102</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>103</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>104</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>105</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>106</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>107</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>108</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>109</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>110</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>111</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>112</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>113</first>
 			<second>
-				<first>9</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>114</first>
 			<second>
-				<first>9</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>115</first>
 			<second>
-				<first>9</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>116</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>117</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>118</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>119</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>120</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>121</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>122</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>123</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>125</first>
 			<second>
-				<first>11</first>
+				<first>8</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>126</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>127</first>
 			<second>
-				<first>6</first>
+				<first>5</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>128</first>
 			<second>
-				<first>11</first>
+				<first>8</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>129</first>
 			<second>
-				<first>11</first>
+				<first>8</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>130</first>
 			<second>
-				<first>11</first>
+				<first>8</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -10417,7 +10417,7 @@
 			<first>61</first>
 			<second>
 				<first>2</first>
-				<second>5</second>
+				<second>4</second>
 			</second>
 		</item>
 		<item>
@@ -10438,7 +10438,7 @@
 			<first>124</first>
 			<second>
 				<first>3</first>
-				<second>7</second>
+				<second>5</second>
 			</second>
 		</item>
 		<item>

@@ -129,7 +129,7 @@
 						<type>0</type>
 						<id>4</id>
 						<name>i</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -144,14 +144,14 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -235,7 +235,7 @@
 						<type>0</type>
 						<id>7</id>
 						<name>i_write_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -250,14 +250,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -289,7 +289,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -340,8 +340,8 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_292</name>
-						<fileName>src/sidh.c</fileName>
+						<name>i_397</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -356,14 +356,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -405,7 +405,7 @@
 						<type>0</type>
 						<id>11</id>
 						<name>icmp_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -420,14 +420,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -459,7 +459,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.28</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -469,7 +469,7 @@
 						<type>0</type>
 						<id>12</id>
 						<name>add_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -484,14 +484,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -523,7 +523,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.28</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -533,7 +533,7 @@
 						<type>0</type>
 						<id>13</id>
 						<name>br_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -548,14 +548,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -598,7 +598,7 @@
 						<type>0</type>
 						<id>15</id>
 						<name>zext_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -613,14 +613,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -661,7 +661,7 @@
 						<type>0</type>
 						<id>16</id>
 						<name>zext_ln42_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -676,14 +676,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -724,7 +724,7 @@
 						<type>0</type>
 						<id>20</id>
 						<name>lshr_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -739,14 +739,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -790,7 +790,7 @@
 						<type>0</type>
 						<id>21</id>
 						<name>zext_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -805,14 +805,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -853,7 +853,7 @@
 						<type>0</type>
 						<id>22</id>
 						<name>t_i_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -868,14 +868,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -918,7 +918,7 @@
 						<type>0</type>
 						<id>23</id>
 						<name>t_i_load</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -933,14 +933,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -971,7 +971,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -981,7 +981,7 @@
 						<type>0</type>
 						<id>24</id>
 						<name>shl_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -996,14 +996,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1044,8 +1044,8 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>zext_ln44_2</name>
-						<fileName>src/sidh.c</fileName>
+						<name>zext_ln44_9</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1060,14 +1060,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1108,7 +1108,7 @@
 						<type>0</type>
 						<id>26</id>
 						<name>lshr_ln44_2</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1123,14 +1123,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1162,7 +1162,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.60</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1172,7 +1172,7 @@
 						<type>0</type>
 						<id>27</id>
 						<name>trunc_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1187,14 +1187,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1235,7 +1235,7 @@
 						<type>0</type>
 						<id>28</id>
 						<name>add_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1250,14 +1250,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1289,7 +1289,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
+				<m_delay>1.14</m_delay>
 				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1299,7 +1299,7 @@
 						<type>0</type>
 						<id>29</id>
 						<name>gmem_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1314,14 +1314,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1363,7 +1363,7 @@
 						<type>0</type>
 						<id>30</id>
 						<name>gmem_addr_req</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1378,14 +1378,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1428,7 +1428,7 @@
 						<type>0</type>
 						<id>31</id>
 						<name>gmem_addr_write_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1443,14 +1443,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1495,7 +1495,7 @@
 						<type>0</type>
 						<id>32</id>
 						<name>gmem_addr_resp</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1510,14 +1510,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1560,7 +1560,7 @@
 						<type>0</type>
 						<id>33</id>
 						<name>zext_ln</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1575,14 +1575,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1625,7 +1625,7 @@
 						<type>0</type>
 						<id>34</id>
 						<name>zext_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1640,14 +1640,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1688,7 +1688,7 @@
 						<type>0</type>
 						<id>35</id>
 						<name>t_i_addr_2</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1703,14 +1703,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1753,7 +1753,7 @@
 						<type>0</type>
 						<id>36</id>
 						<name>t_i_load_2</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1768,14 +1768,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1806,7 +1806,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1816,7 +1816,7 @@
 						<type>0</type>
 						<id>37</id>
 						<name>lshr_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1831,14 +1831,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1870,7 +1870,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.60</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1880,7 +1880,7 @@
 						<type>0</type>
 						<id>38</id>
 						<name>trunc_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1895,14 +1895,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1943,7 +1943,7 @@
 						<type>0</type>
 						<id>39</id>
 						<name>add_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1958,14 +1958,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1997,7 +1997,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.31</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2007,7 +2007,7 @@
 						<type>0</type>
 						<id>40</id>
 						<name>zext_ln45_2</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2022,14 +2022,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2070,7 +2070,7 @@
 						<type>0</type>
 						<id>41</id>
 						<name>add_ln45_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2085,14 +2085,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2124,7 +2124,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.69</m_delay>
+				<m_delay>1.14</m_delay>
 				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2134,7 +2134,7 @@
 						<type>0</type>
 						<id>42</id>
 						<name>gmem_addr_5</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2149,14 +2149,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2198,7 +2198,7 @@
 						<type>0</type>
 						<id>43</id>
 						<name>gmem_addr_5_req</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2213,14 +2213,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2264,7 +2264,7 @@
 						<type>0</type>
 						<id>44</id>
 						<name>gmem_addr_5_write_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2279,14 +2279,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2332,7 +2332,7 @@
 						<type>0</type>
 						<id>45</id>
 						<name>gmem_addr_5_resp</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2347,14 +2347,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2398,7 +2398,7 @@
 						<type>0</type>
 						<id>46</id>
 						<name>i_write_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2413,14 +2413,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -2454,7 +2454,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2464,7 +2464,7 @@
 						<type>0</type>
 						<id>47</id>
 						<name>br_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2479,14 +2479,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>163</second>
+										<second>148</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -2558,7 +2558,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>38</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2949,7 +2949,7 @@
 				<Obj>
 					<type>3</type>
 					<id>14</id>
-					<name>for.inc.i405</name>
+					<name>for.inc.i409</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2983,7 +2983,7 @@
 				<Obj>
 					<type>3</type>
 					<id>48</id>
-					<name>for.inc.i405.split</name>
+					<name>for.inc.i409.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3043,7 +3043,7 @@
 				<Obj>
 					<type>3</type>
 					<id>50</id>
-					<name>fp2_encode.exit.exitStub</name>
+					<name>_ZL10fp2_encodePA8_KmPh.exit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

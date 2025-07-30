@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1'" level="0">
-<item name = "Date">Wed Jul  2 14:05:29 2025
+<item name = "Date">Wed Jul 30 17:31:17 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z045-ffg900-2</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4972556, 12502999269, 49.726 ms, 125.030 sec, 4972556, 12502999269, no</column>
+<column name="">2329241, 5432515355, 23.292 ms, 54.325 sec, 2329241, 5432515355, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_120_2">3254008, 12500172904, 26242 ~ 100807846, -, -, 124, no</column>
-<column name=" + VITIS_LOOP_123_3">2, 95733208, 2 ~ 772042, -, -, 1 ~ 124, no</column>
-<column name="  ++ VITIS_LOOP_36_1">7824, 772016, 3912 ~ 6328, -, -, 2 ~ 122, no</column>
+<column name="- VITIS_LOOP_107_1">1530904, 5431220832, 12346 ~ 43800168, -, -, 124, no</column>
+<column name=" + VITIS_LOOP_109_2">2, 43753400, 2 ~ 352850, -, -, 1 ~ 124, no</column>
+<column name="  ++ VITIS_LOOP_36_1">3664, 352824, 1832 ~ 2892, -, -, 2 ~ 122, no</column>
 </table>
 </item>
 </section>

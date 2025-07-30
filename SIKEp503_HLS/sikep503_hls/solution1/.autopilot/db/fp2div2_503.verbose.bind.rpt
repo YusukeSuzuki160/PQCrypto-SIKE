@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'fp2div2_503'
 ================================================================
-* Date:           Wed Jul  2 14:02:56 2025
+* Date:           Wed Jul 30 17:27:24 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
 * Solution:       solution1 (Vivado IP Flow Target)
-* Product family: zynq
-* Target device:  xc7z045-ffg900-2
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.135 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  4.133 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       69|       69|  0.690 us|  0.690 us|   69|   69|       no|
+    |       65|       65|  0.650 us|  0.650 us|   65|   65|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,10 +38,10 @@
         |                                                     |                                          |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                       Instance                      |                  Module                  |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1_fu_74       |fp2div2_503_Pipeline_VITIS_LOOP_78_1      |       12|       12|  0.120 us|  0.120 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1_fu_85      |fp2div2_503_Pipeline_VITIS_LOOP_392_1     |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1215_fu_93    |fp2div2_503_Pipeline_VITIS_LOOP_78_1215   |       12|       12|  0.120 us|  0.120 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1216_fu_104  |fp2div2_503_Pipeline_VITIS_LOOP_392_1216  |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_Pipeline_VITIS_LOOP_87_1_fu_74       |fp2div2_503_Pipeline_VITIS_LOOP_87_1      |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_Pipeline_VITIS_LOOP_416_1_fu_85      |fp2div2_503_Pipeline_VITIS_LOOP_416_1     |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_Pipeline_VITIS_LOOP_87_1320_fu_93    |fp2div2_503_Pipeline_VITIS_LOOP_87_1320   |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_Pipeline_VITIS_LOOP_416_1321_fu_104  |fp2div2_503_Pipeline_VITIS_LOOP_416_1321  |       16|       16|  0.160 us|  0.160 us|   15|   15|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -95,62 +95,62 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.75>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%c_0_addr = getelementptr i64 %c_0, i64 0, i64 0" [src/fpx.c:126]   --->   Operation 15 'getelementptr' 'c_0_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [2/2] (1.75ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 16 'load' 'c_0_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+State 1 <SV = 0> <Delay = 0.71>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%c_0_addr = getelementptr i64 %c_0, i64 0, i64 0" [src/fpx.cpp:113]   --->   Operation 15 'getelementptr' 'c_0_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (0.71ns)   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.cpp:86->src/fpx.cpp:113]   --->   Operation 16 'load' 'c_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 
-State 2 <SV = 1> <Delay = 1.75>
-ST_2 : Operation 17 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 17 'load' 'c_0_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%mask = trunc i64 %c_0_load" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 18 'trunc' 'mask' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 0.71>
+ST_2 : Operation 17 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_0_load = load i3 %c_0_addr" [src/generic/fp_generic.cpp:86->src/fpx.cpp:113]   --->   Operation 17 'load' 'c_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%mask = trunc i64 %c_0_load" [src/generic/fp_generic.cpp:86->src/fpx.cpp:113]   --->   Operation 18 'trunc' 'mask' <Predicate = true> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 0.81>
-ST_3 : Operation 19 [2/2] (0.81ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1, i64 %c_0, i64 %c_1, i1 %mask, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 19 'call' 'call_ln77' <Predicate = true> <Delay = 0.81> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 0.27>
+ST_3 : Operation 19 [2/2] (0.27ns)   --->   "%call_ln86 = call void @fp2div2_503_Pipeline_VITIS_LOOP_87_1, i64 %c_0, i64 %c_1, i1 %mask, i64 %p503_1" [src/generic/fp_generic.cpp:86->src/fpx.cpp:113]   --->   Operation 19 'call' 'call_ln86' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
 
-State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1, i64 %c_0, i64 %c_1, i1 %mask, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:126]   --->   Operation 20 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 4 <SV = 3> <Delay = 1.48>
+ST_4 : Operation 20 [1/2] (1.48ns)   --->   "%call_ln86 = call void @fp2div2_503_Pipeline_VITIS_LOOP_87_1, i64 %c_0, i64 %c_1, i1 %mask, i64 %p503_1" [src/generic/fp_generic.cpp:86->src/fpx.cpp:113]   --->   Operation 20 'call' 'call_ln86' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_392_1, i64 %c_0, i64 %c_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_416_1, i64 %c_0, i64 %c_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 6 <SV = 5> <Delay = 3.36>
-ST_6 : Operation 22 [1/2] (3.36ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_392_1, i64 %c_0, i64 %c_1"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 3.36> <CoreType = "Generic">   --->   Generic Core
+State 6 <SV = 5> <Delay = 1.34>
+ST_6 : Operation 22 [1/2] (1.34ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_416_1, i64 %c_0, i64 %c_1"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 1.34> <CoreType = "Generic">   --->   Generic Core
 
-State 7 <SV = 6> <Delay = 1.75>
-ST_7 : Operation 23 [1/1] (0.00ns)   --->   "%c_0_addr_3 = getelementptr i64 %c_0, i64 0, i64 4" [src/fpx.c:127]   --->   Operation 23 'getelementptr' 'c_0_addr_3' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%c_1_addr = getelementptr i64 %c_1, i64 0, i64 3" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 24 'getelementptr' 'c_1_addr' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 25 [2/2] (1.75ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 25 'load' 'c_1_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_7 : Operation 26 [2/2] (1.75ns)   --->   "%c_0_load_3 = load i3 %c_0_addr_3" [src/generic/fp_generic.c:77->src/fpx.c:127]   --->   Operation 26 'load' 'c_0_load_3' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+State 7 <SV = 6> <Delay = 0.71>
+ST_7 : Operation 23 [1/1] (0.00ns)   --->   "%c_0_addr_3 = getelementptr i64 %c_0, i64 0, i64 4" [src/fpx.cpp:114]   --->   Operation 23 'getelementptr' 'c_0_addr_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%c_1_addr = getelementptr i64 %c_1, i64 0, i64 3" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 24 'getelementptr' 'c_1_addr' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 25 [2/2] (0.71ns)   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 25 'load' 'c_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_7 : Operation 26 [2/2] (0.71ns)   --->   "%c_0_load_3 = load i3 %c_0_addr_3" [src/generic/fp_generic.cpp:86->src/fpx.cpp:114]   --->   Operation 26 'load' 'c_0_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 
-State 8 <SV = 7> <Delay = 3.51>
-ST_8 : Operation 27 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 27 'load' 'c_1_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load, i32 1, i32 63" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 28 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln396 = zext i63 %lshr_ln" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 29 'zext' 'zext_ln396' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 30 [1/1] ( I:1.75ns O:1.75ns )   --->   "%store_ln396 = store i64 %zext_ln396, i3 %c_1_addr" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:126]   --->   Operation 30 'store' 'store_ln396' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_8 : Operation 31 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_0_load_3 = load i3 %c_0_addr_3" [src/generic/fp_generic.c:77->src/fpx.c:127]   --->   Operation 31 'load' 'c_0_load_3' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%mask_1 = trunc i64 %c_0_load_3" [src/generic/fp_generic.c:77->src/fpx.c:127]   --->   Operation 32 'trunc' 'mask_1' <Predicate = true> <Delay = 0.00>
+State 8 <SV = 7> <Delay = 1.42>
+ST_8 : Operation 27 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_1_load = load i3 %c_1_addr" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 27 'load' 'c_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load, i32 1, i32 63" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 28 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln421 = zext i63 %lshr_ln" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 29 'zext' 'zext_ln421' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln421 = store i64 %zext_ln421, i3 %c_1_addr" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:113]   --->   Operation 30 'store' 'store_ln421' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 31 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_0_load_3 = load i3 %c_0_addr_3" [src/generic/fp_generic.cpp:86->src/fpx.cpp:114]   --->   Operation 31 'load' 'c_0_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%mask_1 = trunc i64 %c_0_load_3" [src/generic/fp_generic.cpp:86->src/fpx.cpp:114]   --->   Operation 32 'trunc' 'mask_1' <Predicate = true> <Delay = 0.00>
 
-State 9 <SV = 8> <Delay = 0.81>
-ST_9 : Operation 33 [2/2] (0.81ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1215, i64 %c_0, i64 %c_1, i1 %mask_1, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:127]   --->   Operation 33 'call' 'call_ln77' <Predicate = true> <Delay = 0.81> <CoreType = "Generic">   --->   Generic Core
+State 9 <SV = 8> <Delay = 0.27>
+ST_9 : Operation 33 [2/2] (0.27ns)   --->   "%call_ln86 = call void @fp2div2_503_Pipeline_VITIS_LOOP_87_1320, i64 %c_0, i64 %c_1, i1 %mask_1, i64 %p503_1" [src/generic/fp_generic.cpp:86->src/fpx.cpp:114]   --->   Operation 33 'call' 'call_ln86' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
 
-State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln77 = call void @fp2div2_503_Pipeline_VITIS_LOOP_78_1215, i64 %c_0, i64 %c_1, i1 %mask_1, i64 %p503_1" [src/generic/fp_generic.c:77->src/fpx.c:127]   --->   Operation 34 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 10 <SV = 9> <Delay = 1.48>
+ST_10 : Operation 34 [1/2] (1.48ns)   --->   "%call_ln86 = call void @fp2div2_503_Pipeline_VITIS_LOOP_87_1320, i64 %c_0, i64 %c_1, i1 %mask_1, i64 %p503_1" [src/generic/fp_generic.cpp:86->src/fpx.cpp:114]   --->   Operation 34 'call' 'call_ln86' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_392_1216, i64 %c_0, i64 %c_1"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_416_1321, i64 %c_0, i64 %c_1"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 12 <SV = 11> <Delay = 3.36>
-ST_12 : Operation 36 [1/2] (3.36ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_392_1216, i64 %c_0, i64 %c_1"   --->   Operation 36 'call' 'call_ln0' <Predicate = true> <Delay = 3.36> <CoreType = "Generic">   --->   Generic Core
+State 12 <SV = 11> <Delay = 1.34>
+ST_12 : Operation 36 [1/2] (1.34ns)   --->   "%call_ln0 = call void @fp2div2_503_Pipeline_VITIS_LOOP_416_1321, i64 %c_0, i64 %c_1"   --->   Operation 36 'call' 'call_ln0' <Predicate = true> <Delay = 1.34> <CoreType = "Generic">   --->   Generic Core
 
-State 13 <SV = 12> <Delay = 1.75>
-ST_13 : Operation 37 [1/1] (0.00ns)   --->   "%c_1_addr_3 = getelementptr i64 %c_1, i64 0, i64 7" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 37 'getelementptr' 'c_1_addr_3' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 38 [2/2] (1.75ns)   --->   "%c_1_load_3 = load i3 %c_1_addr_3" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 38 'load' 'c_1_load_3' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+State 13 <SV = 12> <Delay = 0.71>
+ST_13 : Operation 37 [1/1] (0.00ns)   --->   "%c_1_addr_3 = getelementptr i64 %c_1, i64 0, i64 7" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:114]   --->   Operation 37 'getelementptr' 'c_1_addr_3' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 38 [2/2] (0.71ns)   --->   "%c_1_load_3 = load i3 %c_1_addr_3" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:114]   --->   Operation 38 'load' 'c_1_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
 
-State 14 <SV = 13> <Delay = 3.51>
-ST_14 : Operation 39 [1/2] ( I:1.75ns O:1.75ns )   --->   "%c_1_load_3 = load i3 %c_1_addr_3" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 39 'load' 'c_1_load_3' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_14 : Operation 40 [1/1] (0.00ns)   --->   "%lshr_ln396_1 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load_3, i32 1, i32 63" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 40 'partselect' 'lshr_ln396_1' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln396_1 = zext i63 %lshr_ln396_1" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 41 'zext' 'zext_ln396_1' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 42 [1/1] ( I:1.75ns O:1.75ns )   --->   "%store_ln396 = store i64 %zext_ln396_1, i3 %c_1_addr_3" [src/fpx.c:396->src/generic/fp_generic.c:82->src/fpx.c:127]   --->   Operation 42 'store' 'store_ln396' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_14 : Operation 43 [1/1] (0.00ns)   --->   "%ret_ln128 = ret" [src/fpx.c:128]   --->   Operation 43 'ret' 'ret_ln128' <Predicate = true> <Delay = 0.00>
+State 14 <SV = 13> <Delay = 1.42>
+ST_14 : Operation 39 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_1_load_3 = load i3 %c_1_addr_3" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:114]   --->   Operation 39 'load' 'c_1_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_14 : Operation 40 [1/1] (0.00ns)   --->   "%lshr_ln421_1 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %c_1_load_3, i32 1, i32 63" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:114]   --->   Operation 40 'partselect' 'lshr_ln421_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln421_1 = zext i63 %lshr_ln421_1" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:114]   --->   Operation 41 'zext' 'zext_ln421_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 42 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln421 = store i64 %zext_ln421_1, i3 %c_1_addr_3" [src/fpx.cpp:421->src/generic/fp_generic.cpp:91->src/fpx.cpp:114]   --->   Operation 42 'store' 'store_ln421' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_14 : Operation 43 [1/1] (0.00ns)   --->   "%ret_ln115 = ret" [src/fpx.cpp:115]   --->   Operation 43 'ret' 'ret_ln115' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -176,24 +176,24 @@ Port [ p503_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; ext
 c_0_addr     (getelementptr) [ 001000000000000]
 c_0_load     (load         ) [ 000000000000000]
 mask         (trunc        ) [ 000110000000000]
-call_ln77    (call         ) [ 000000000000000]
+call_ln86    (call         ) [ 000000000000000]
 call_ln0     (call         ) [ 000000000000000]
 c_0_addr_3   (getelementptr) [ 000000001000000]
 c_1_addr     (getelementptr) [ 000000001000000]
 c_1_load     (load         ) [ 000000000000000]
 lshr_ln      (partselect   ) [ 000000000000000]
-zext_ln396   (zext         ) [ 000000000000000]
-store_ln396  (store        ) [ 000000000000000]
+zext_ln421   (zext         ) [ 000000000000000]
+store_ln421  (store        ) [ 000000000000000]
 c_0_load_3   (load         ) [ 000000000000000]
 mask_1       (trunc        ) [ 000000000110000]
-call_ln77    (call         ) [ 000000000000000]
+call_ln86    (call         ) [ 000000000000000]
 call_ln0     (call         ) [ 000000000000000]
 c_1_addr_3   (getelementptr) [ 000000000000001]
 c_1_load_3   (load         ) [ 000000000000000]
-lshr_ln396_1 (partselect   ) [ 000000000000000]
-zext_ln396_1 (zext         ) [ 000000000000000]
-store_ln396  (store        ) [ 000000000000000]
-ret_ln128    (ret          ) [ 000000000000000]
+lshr_ln421_1 (partselect   ) [ 000000000000000]
+zext_ln421_1 (zext         ) [ 000000000000000]
+store_ln421  (store        ) [ 000000000000000]
+ret_ln115    (ret          ) [ 000000000000000]
 </LifeTime>
 
 <model>
@@ -243,7 +243,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 <pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_78_1"/></StgValue>
+<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_87_1"/></StgValue>
 </bind>
 </comp>
 
@@ -252,7 +252,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_392_1"/></StgValue>
+<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_416_1"/></StgValue>
 </bind>
 </comp>
 
@@ -306,7 +306,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 <pin id="23" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_78_1215"/></StgValue>
+<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_87_1320"/></StgValue>
 </bind>
 </comp>
 
@@ -315,7 +315,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 <pin id="25" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_392_1216"/></StgValue>
+<StgValue><ssdm name="fp2div2_503_Pipeline_VITIS_LOOP_416_1321"/></StgValue>
 </bind>
 </comp>
 
@@ -389,7 +389,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="store"/>
-<opset="c_1_load/7 store_ln396/8 c_1_load_3/13 store_ln396/14 "/>
+<opset="c_1_load/7 store_ln421/8 c_1_load_3/13 store_ln421/14 "/>
 </bind>
 </comp>
 
@@ -406,7 +406,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="74" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1_fu_74">
+<comp id="74" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_87_1_fu_74">
 <pin_list>
 <pin id="75" dir="0" index="0" bw="0" slack="0"/>
 <pin id="76" dir="0" index="1" bw="64" slack="0"/>
@@ -417,11 +417,11 @@ ret_ln128    (ret          ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln77/3 "/>
+<opset="call_ln86/3 "/>
 </bind>
 </comp>
 
-<comp id="85" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1_fu_85">
+<comp id="85" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_416_1_fu_85">
 <pin_list>
 <pin id="86" dir="0" index="0" bw="0" slack="0"/>
 <pin id="87" dir="0" index="1" bw="64" slack="0"/>
@@ -434,7 +434,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="93" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1215_fu_93">
+<comp id="93" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_87_1320_fu_93">
 <pin_list>
 <pin id="94" dir="0" index="0" bw="0" slack="0"/>
 <pin id="95" dir="0" index="1" bw="64" slack="0"/>
@@ -445,11 +445,11 @@ ret_ln128    (ret          ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln77/9 "/>
+<opset="call_ln86/9 "/>
 </bind>
 </comp>
 
-<comp id="104" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1216_fu_104">
+<comp id="104" class="1004" name="grp_fp2div2_503_Pipeline_VITIS_LOOP_416_1321_fu_104">
 <pin_list>
 <pin id="105" dir="0" index="0" bw="0" slack="0"/>
 <pin id="106" dir="0" index="1" bw="64" slack="0"/>
@@ -472,7 +472,7 @@ ret_ln128    (ret          ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="lshr_ln/8 lshr_ln396_1/14 "/>
+<opset="lshr_ln/8 lshr_ln421_1/14 "/>
 </bind>
 </comp>
 
@@ -487,14 +487,14 @@ ret_ln128    (ret          ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="126" class="1004" name="zext_ln396_fu_126">
+<comp id="126" class="1004" name="zext_ln421_fu_126">
 <pin_list>
 <pin id="127" dir="0" index="0" bw="63" slack="0"/>
 <pin id="128" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln396/8 "/>
+<opset="zext_ln421/8 "/>
 </bind>
 </comp>
 
@@ -509,14 +509,14 @@ ret_ln128    (ret          ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="135" class="1004" name="zext_ln396_1_fu_135">
+<comp id="135" class="1004" name="zext_ln421_1_fu_135">
 <pin_list>
 <pin id="136" dir="0" index="0" bw="63" slack="0"/>
 <pin id="137" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln396_1/14 "/>
+<opset="zext_ln421_1/14 "/>
 </bind>
 </comp>
 
@@ -714,8 +714,8 @@ ret_ln128    (ret          ) [ 000000000000000]
 		c_0_load_3 : 1
 	State 8
 		lshr_ln : 1
-		zext_ln396 : 2
-		store_ln396 : 3
+		zext_ln421 : 2
+		store_ln421 : 3
 		mask_1 : 1
 	State 9
 	State 10
@@ -724,9 +724,9 @@ ret_ln128    (ret          ) [ 000000000000000]
 	State 13
 		c_1_load_3 : 1
 	State 14
-		lshr_ln396_1 : 1
-		zext_ln396_1 : 2
-		store_ln396 : 3
+		lshr_ln421_1 : 1
+		zext_ln421_1 : 2
+		store_ln421 : 3
 
 
 ============================================================
@@ -737,20 +737,20 @@ ret_ln128    (ret          ) [ 000000000000000]
 |----------|-----------------------------------------------------|---------|---------|---------|
 | Operation|                   Functional Unit                   |  Delay  |    FF   |   LUT   |
 |----------|-----------------------------------------------------|---------|---------|---------|
-|          |    grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1_fu_74   |  3.894  |   149   |   682   |
-|   call   |   grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1_fu_85   | 5.24614 |    19   |   117   |
-|          |  grp_fp2div2_503_Pipeline_VITIS_LOOP_78_1215_fu_93  |  3.894  |   149   |   682   |
-|          | grp_fp2div2_503_Pipeline_VITIS_LOOP_392_1216_fu_104 | 5.24614 |    19   |   117   |
+|          |    grp_fp2div2_503_Pipeline_VITIS_LOOP_87_1_fu_74   |  1.161  |    81   |   708   |
+|   call   |   grp_fp2div2_503_Pipeline_VITIS_LOOP_416_1_fu_85   | 1.61371 |    19   |   130   |
+|          |  grp_fp2div2_503_Pipeline_VITIS_LOOP_87_1320_fu_93  |  1.161  |    81   |   708   |
+|          | grp_fp2div2_503_Pipeline_VITIS_LOOP_416_1321_fu_104 | 1.61371 |    19   |   130   |
 |----------|-----------------------------------------------------|---------|---------|---------|
 |partselect|                      grp_fu_112                     |    0    |    0    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|
 |   trunc  |                     mask_fu_122                     |    0    |    0    |    0    |
 |          |                    mask_1_fu_131                    |    0    |    0    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|
-|   zext   |                  zext_ln396_fu_126                  |    0    |    0    |    0    |
-|          |                 zext_ln396_1_fu_135                 |    0    |    0    |    0    |
+|   zext   |                  zext_ln421_fu_126                  |    0    |    0    |    0    |
+|          |                 zext_ln421_1_fu_135                 |    0    |    0    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|
-|   Total  |                                                     | 18.2803 |   336   |   1598  |
+|   Total  |                                                     | 5.54943 |   200   |   1676  |
 |----------|-----------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -774,11 +774,11 @@ N/A
 |------------------|------|------|------|--------||---------||---------||---------|
 |       Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |------------------|------|------|------|--------||---------||---------||---------|
-| grp_access_fu_36 |  p0  |   4  |   3  |   12   ||    0    ||    17   |
-| grp_access_fu_58 |  p0  |   4  |   3  |   12   ||    0    ||    17   |
+| grp_access_fu_36 |  p0  |   4  |   3  |   12   ||    0    ||    20   |
+| grp_access_fu_58 |  p0  |   4  |   3  |   12   ||    0    ||    20   |
 | grp_access_fu_58 |  p1  |   2  |  64  |   128  ||    0    ||    9    |
 |------------------|------|------|------|--------||---------||---------||---------|
-|       Total      |      |      |      |   152  || 4.00229 ||    0    ||    43   |
+|       Total      |      |      |      |   152  || 1.29243 ||    0    ||    49   |
 |------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -787,10 +787,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |   18   |   336  |  1598  |
+|  Function |    5   |   200  |  1676  |
 |   Memory  |    -   |    -   |    -   |
-|Multiplexer|    4   |    0   |   43   |
+|Multiplexer|    1   |    0   |   49   |
 |  Register |    -   |   14   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |   22   |   350  |  1641  |
+|   Total   |    6   |   214  |  1725  |
 +-----------+--------+--------+--------+

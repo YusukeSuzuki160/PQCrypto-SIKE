@@ -1821,7 +1821,7 @@
 						<type>0</type>
 						<id>52</id>
 						<name>Aso_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -1836,7 +1836,7 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -1877,7 +1877,7 @@
 						<type>0</type>
 						<id>53</id>
 						<name>Asi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -1892,7 +1892,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -1933,7 +1933,7 @@
 						<type>0</type>
 						<id>54</id>
 						<name>Ase_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -1948,7 +1948,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -1989,7 +1989,7 @@
 						<type>0</type>
 						<id>55</id>
 						<name>Asa_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2004,7 +2004,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -2045,7 +2045,7 @@
 						<type>0</type>
 						<id>56</id>
 						<name>Amu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2060,7 +2060,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -2101,7 +2101,7 @@
 						<type>0</type>
 						<id>57</id>
 						<name>Amo_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2116,7 +2116,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -2157,7 +2157,7 @@
 						<type>0</type>
 						<id>58</id>
 						<name>Ami_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2172,7 +2172,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -2213,7 +2213,7 @@
 						<type>0</type>
 						<id>59</id>
 						<name>Ame_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2228,7 +2228,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -2269,7 +2269,7 @@
 						<type>0</type>
 						<id>60</id>
 						<name>Ama_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2284,7 +2284,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -2325,7 +2325,7 @@
 						<type>0</type>
 						<id>61</id>
 						<name>Aku_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2340,7 +2340,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -2381,7 +2381,7 @@
 						<type>0</type>
 						<id>62</id>
 						<name>Ako_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2396,7 +2396,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -2437,7 +2437,7 @@
 						<type>0</type>
 						<id>63</id>
 						<name>Aki_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2452,7 +2452,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -2493,7 +2493,7 @@
 						<type>0</type>
 						<id>64</id>
 						<name>Ake_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2508,7 +2508,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -2549,7 +2549,7 @@
 						<type>0</type>
 						<id>65</id>
 						<name>Aka_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2564,7 +2564,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -2605,7 +2605,7 @@
 						<type>0</type>
 						<id>66</id>
 						<name>Agu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2620,7 +2620,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -2661,7 +2661,7 @@
 						<type>0</type>
 						<id>67</id>
 						<name>Ago_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2676,7 +2676,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -2717,7 +2717,7 @@
 						<type>0</type>
 						<id>68</id>
 						<name>Agi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2732,7 +2732,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -2773,7 +2773,7 @@
 						<type>0</type>
 						<id>69</id>
 						<name>Age_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2788,7 +2788,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -2829,7 +2829,7 @@
 						<type>0</type>
 						<id>70</id>
 						<name>Aga_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2844,7 +2844,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -2885,7 +2885,7 @@
 						<type>0</type>
 						<id>71</id>
 						<name>Abu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2900,7 +2900,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -2941,7 +2941,7 @@
 						<type>0</type>
 						<id>72</id>
 						<name>Abo_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -2956,7 +2956,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -2997,7 +2997,7 @@
 						<type>0</type>
 						<id>73</id>
 						<name>Abi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -3012,7 +3012,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -3053,7 +3053,7 @@
 						<type>0</type>
 						<id>74</id>
 						<name>Abe_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -3068,7 +3068,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -3109,7 +3109,7 @@
 						<type>0</type>
 						<id>75</id>
 						<name>Aba_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -3124,7 +3124,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -3165,7 +3165,7 @@
 						<type>0</type>
 						<id>76</id>
 						<name>Asu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -3180,7 +3180,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -3221,7 +3221,7 @@
 						<type>0</type>
 						<id>77</id>
 						<name>round</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>73</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -3236,7 +3236,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>73</second>
@@ -4352,7 +4352,7 @@
 						<type>0</type>
 						<id>103</id>
 						<name>round_write_ln73</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>73</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4367,7 +4367,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>73</second>
@@ -4399,7 +4399,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4409,7 +4409,7 @@
 						<type>0</type>
 						<id>104</id>
 						<name>Asu_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4424,7 +4424,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -4456,7 +4456,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>53</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4466,7 +4466,7 @@
 						<type>0</type>
 						<id>105</id>
 						<name>Aba_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4481,7 +4481,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -4513,7 +4513,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>54</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4523,7 +4523,7 @@
 						<type>0</type>
 						<id>106</id>
 						<name>Abe_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4538,7 +4538,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -4570,7 +4570,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>55</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4580,7 +4580,7 @@
 						<type>0</type>
 						<id>107</id>
 						<name>Abi_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4595,7 +4595,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -4627,7 +4627,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>56</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4637,7 +4637,7 @@
 						<type>0</type>
 						<id>108</id>
 						<name>Abo_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4652,7 +4652,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -4684,7 +4684,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>57</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4694,7 +4694,7 @@
 						<type>0</type>
 						<id>109</id>
 						<name>Abu_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4709,7 +4709,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -4741,7 +4741,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>58</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4751,7 +4751,7 @@
 						<type>0</type>
 						<id>110</id>
 						<name>Aga_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4766,7 +4766,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -4798,7 +4798,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>59</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4808,7 +4808,7 @@
 						<type>0</type>
 						<id>111</id>
 						<name>Age_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4823,7 +4823,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -4855,7 +4855,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>60</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4865,7 +4865,7 @@
 						<type>0</type>
 						<id>112</id>
 						<name>Agi_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4880,7 +4880,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -4912,7 +4912,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>61</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4922,7 +4922,7 @@
 						<type>0</type>
 						<id>113</id>
 						<name>Ago_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4937,7 +4937,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -4969,7 +4969,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>62</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4979,7 +4979,7 @@
 						<type>0</type>
 						<id>114</id>
 						<name>Agu_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -4994,7 +4994,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -5026,7 +5026,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>63</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5036,7 +5036,7 @@
 						<type>0</type>
 						<id>115</id>
 						<name>Aka_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5051,7 +5051,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -5083,7 +5083,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>64</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5093,7 +5093,7 @@
 						<type>0</type>
 						<id>116</id>
 						<name>Ake_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5108,7 +5108,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -5140,7 +5140,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>65</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5150,7 +5150,7 @@
 						<type>0</type>
 						<id>117</id>
 						<name>Aki_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5165,7 +5165,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -5197,7 +5197,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>66</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5207,7 +5207,7 @@
 						<type>0</type>
 						<id>118</id>
 						<name>Ako_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5222,7 +5222,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -5254,7 +5254,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>67</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5264,7 +5264,7 @@
 						<type>0</type>
 						<id>119</id>
 						<name>Aku_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5279,7 +5279,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -5311,7 +5311,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>68</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5321,7 +5321,7 @@
 						<type>0</type>
 						<id>120</id>
 						<name>Ama_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5336,7 +5336,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -5368,7 +5368,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>69</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5378,7 +5378,7 @@
 						<type>0</type>
 						<id>121</id>
 						<name>Ame_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5393,7 +5393,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -5425,7 +5425,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>70</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5435,7 +5435,7 @@
 						<type>0</type>
 						<id>122</id>
 						<name>Ami_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5450,7 +5450,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -5482,7 +5482,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>71</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5492,7 +5492,7 @@
 						<type>0</type>
 						<id>123</id>
 						<name>Amo_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5507,7 +5507,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -5539,7 +5539,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>72</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5549,7 +5549,7 @@
 						<type>0</type>
 						<id>124</id>
 						<name>Amu_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5564,7 +5564,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -5596,7 +5596,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>73</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5606,7 +5606,7 @@
 						<type>0</type>
 						<id>125</id>
 						<name>Asa_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5621,7 +5621,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -5653,7 +5653,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>74</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5663,7 +5663,7 @@
 						<type>0</type>
 						<id>126</id>
 						<name>Ase_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5678,7 +5678,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -5710,7 +5710,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>75</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5720,7 +5720,7 @@
 						<type>0</type>
 						<id>127</id>
 						<name>Asi_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5735,7 +5735,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -5767,7 +5767,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>76</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5777,7 +5777,7 @@
 						<type>0</type>
 						<id>128</id>
 						<name>Aso_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5792,7 +5792,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -5824,7 +5824,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>77</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5876,7 +5876,7 @@
 						<type>0</type>
 						<id>131</id>
 						<name>round_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5891,7 +5891,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>121</second>
@@ -5933,7 +5933,7 @@
 						<type>0</type>
 						<id>132</id>
 						<name>icmp_ln121</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -5948,7 +5948,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>121</second>
@@ -5980,7 +5980,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.02</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>80</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5990,7 +5990,7 @@
 						<type>0</type>
 						<id>133</id>
 						<name>br_ln121</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6005,7 +6005,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>121</second>
@@ -6048,7 +6048,7 @@
 						<type>0</type>
 						<id>135</id>
 						<name>Aso_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>205</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6063,7 +6063,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>205</second>
@@ -6096,7 +6096,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>92</m_topoIndex>
+				<m_topoIndex>143</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_133">
@@ -6105,7 +6105,7 @@
 						<type>0</type>
 						<id>136</id>
 						<name>Asi_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>167</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6120,7 +6120,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>167</second>
@@ -6153,7 +6153,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>93</m_topoIndex>
+				<m_topoIndex>144</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_134">
@@ -6162,7 +6162,7 @@
 						<type>0</type>
 						<id>137</id>
 						<name>Ase_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>224</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6177,7 +6177,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>224</second>
@@ -6210,7 +6210,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>94</m_topoIndex>
+				<m_topoIndex>145</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_135">
@@ -6219,7 +6219,7 @@
 						<type>0</type>
 						<id>138</id>
 						<name>Asa_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>186</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6234,7 +6234,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>186</second>
@@ -6267,7 +6267,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>95</m_topoIndex>
+				<m_topoIndex>146</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_136">
@@ -6276,7 +6276,7 @@
 						<type>0</type>
 						<id>139</id>
 						<name>Amu_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>184</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6291,7 +6291,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>184</second>
@@ -6324,7 +6324,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>96</m_topoIndex>
+				<m_topoIndex>147</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_137">
@@ -6333,7 +6333,7 @@
 						<type>0</type>
 						<id>140</id>
 						<name>Amo_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6348,7 +6348,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>145</second>
@@ -6381,7 +6381,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>97</m_topoIndex>
+				<m_topoIndex>148</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_138">
@@ -6390,7 +6390,7 @@
 						<type>0</type>
 						<id>141</id>
 						<name>Ami_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>203</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6405,7 +6405,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>203</second>
@@ -6438,7 +6438,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>98</m_topoIndex>
+				<m_topoIndex>149</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_139">
@@ -6447,7 +6447,7 @@
 						<type>0</type>
 						<id>142</id>
 						<name>Ame_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>165</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6462,7 +6462,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>165</second>
@@ -6495,7 +6495,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>99</m_topoIndex>
+				<m_topoIndex>150</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_140">
@@ -6504,7 +6504,7 @@
 						<type>0</type>
 						<id>143</id>
 						<name>Ama_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>222</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6519,7 +6519,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>222</second>
@@ -6552,7 +6552,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>100</m_topoIndex>
+				<m_topoIndex>151</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_141">
@@ -6561,7 +6561,7 @@
 						<type>0</type>
 						<id>144</id>
 						<name>Aku_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>220</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6576,7 +6576,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>220</second>
@@ -6609,7 +6609,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>101</m_topoIndex>
+				<m_topoIndex>152</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_142">
@@ -6618,7 +6618,7 @@
 						<type>0</type>
 						<id>145</id>
 						<name>Ako_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>182</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6633,7 +6633,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>182</second>
@@ -6666,7 +6666,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>102</m_topoIndex>
+				<m_topoIndex>153</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_143">
@@ -6675,7 +6675,7 @@
 						<type>0</type>
 						<id>146</id>
 						<name>Aki_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6690,7 +6690,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>143</second>
@@ -6723,7 +6723,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>103</m_topoIndex>
+				<m_topoIndex>154</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_144">
@@ -6732,7 +6732,7 @@
 						<type>0</type>
 						<id>147</id>
 						<name>Ake_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>201</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6747,7 +6747,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>201</second>
@@ -6780,7 +6780,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>104</m_topoIndex>
+				<m_topoIndex>155</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_145">
@@ -6789,7 +6789,7 @@
 						<type>0</type>
 						<id>148</id>
 						<name>Aka_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>163</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6804,7 +6804,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>163</second>
@@ -6837,7 +6837,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>105</m_topoIndex>
+				<m_topoIndex>156</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_146">
@@ -6846,7 +6846,7 @@
 						<type>0</type>
 						<id>149</id>
 						<name>Agu_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6861,7 +6861,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>161</second>
@@ -6894,7 +6894,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>106</m_topoIndex>
+				<m_topoIndex>157</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_147">
@@ -6903,7 +6903,7 @@
 						<type>0</type>
 						<id>150</id>
 						<name>Ago_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>218</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6918,7 +6918,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>218</second>
@@ -6951,7 +6951,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>107</m_topoIndex>
+				<m_topoIndex>158</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_148">
@@ -6960,7 +6960,7 @@
 						<type>0</type>
 						<id>151</id>
 						<name>Agi_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>180</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -6975,7 +6975,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>180</second>
@@ -7008,7 +7008,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>108</m_topoIndex>
+				<m_topoIndex>159</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_149">
@@ -7017,7 +7017,7 @@
 						<type>0</type>
 						<id>152</id>
 						<name>Age_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>141</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7032,7 +7032,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>141</second>
@@ -7065,7 +7065,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>109</m_topoIndex>
+				<m_topoIndex>160</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_150">
@@ -7074,7 +7074,7 @@
 						<type>0</type>
 						<id>153</id>
 						<name>Aga_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>199</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7089,7 +7089,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>199</second>
@@ -7122,7 +7122,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>110</m_topoIndex>
+				<m_topoIndex>161</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_151">
@@ -7131,7 +7131,7 @@
 						<type>0</type>
 						<id>154</id>
 						<name>Abu_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>197</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7146,7 +7146,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>197</second>
@@ -7179,7 +7179,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>111</m_topoIndex>
+				<m_topoIndex>162</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_152">
@@ -7188,7 +7188,7 @@
 						<type>0</type>
 						<id>155</id>
 						<name>Abo_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>159</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7203,7 +7203,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>159</second>
@@ -7236,7 +7236,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>112</m_topoIndex>
+				<m_topoIndex>163</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_153">
@@ -7245,7 +7245,7 @@
 						<type>0</type>
 						<id>156</id>
 						<name>Abi_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>216</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7260,7 +7260,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>216</second>
@@ -7293,7 +7293,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>113</m_topoIndex>
+				<m_topoIndex>164</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_154">
@@ -7302,7 +7302,7 @@
 						<type>0</type>
 						<id>157</id>
 						<name>Abe_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>178</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7317,7 +7317,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>178</second>
@@ -7350,7 +7350,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>114</m_topoIndex>
+				<m_topoIndex>165</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_155">
@@ -7359,7 +7359,7 @@
 						<type>0</type>
 						<id>158</id>
 						<name>Aba_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7374,7 +7374,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>139</second>
@@ -7407,7 +7407,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>115</m_topoIndex>
+				<m_topoIndex>166</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_156">
@@ -7416,7 +7416,7 @@
 						<type>0</type>
 						<id>159</id>
 						<name>Asu_1_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>147</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7431,7 +7431,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>147</second>
@@ -7464,7 +7464,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>116</m_topoIndex>
+				<m_topoIndex>167</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_157">
@@ -7473,7 +7473,7 @@
 						<type>0</type>
 						<id>160</id>
 						<name>zext_ln121</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7488,7 +7488,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>121</second>
@@ -7529,7 +7529,7 @@
 						<type>0</type>
 						<id>164</id>
 						<name>xor_ln124</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>124</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7544,7 +7544,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>124</second>
@@ -7577,7 +7577,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>117</m_topoIndex>
+				<m_topoIndex>168</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_159">
@@ -7586,7 +7586,7 @@
 						<type>0</type>
 						<id>165</id>
 						<name>xor_ln124_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>124</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7601,7 +7601,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>124</second>
@@ -7634,7 +7634,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>118</m_topoIndex>
+				<m_topoIndex>169</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_160">
@@ -7643,7 +7643,7 @@
 						<type>0</type>
 						<id>166</id>
 						<name>xor_ln124_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>124</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7658,7 +7658,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>124</second>
@@ -7691,7 +7691,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>119</m_topoIndex>
+				<m_topoIndex>170</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_161">
@@ -7700,7 +7700,7 @@
 						<type>0</type>
 						<id>167</id>
 						<name>BCa</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>124</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7715,7 +7715,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>124</second>
@@ -7747,8 +7747,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>120</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>171</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_162">
@@ -7757,7 +7757,7 @@
 						<type>0</type>
 						<id>168</id>
 						<name>xor_ln125</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>125</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7772,7 +7772,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>125</second>
@@ -7805,7 +7805,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>121</m_topoIndex>
+				<m_topoIndex>172</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_163">
@@ -7814,7 +7814,7 @@
 						<type>0</type>
 						<id>169</id>
 						<name>xor_ln125_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>125</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7829,7 +7829,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>125</second>
@@ -7862,7 +7862,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>122</m_topoIndex>
+				<m_topoIndex>173</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_164">
@@ -7871,7 +7871,7 @@
 						<type>0</type>
 						<id>170</id>
 						<name>xor_ln125_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>125</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7886,7 +7886,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>125</second>
@@ -7919,7 +7919,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>123</m_topoIndex>
+				<m_topoIndex>174</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_165">
@@ -7928,7 +7928,7 @@
 						<type>0</type>
 						<id>171</id>
 						<name>BCe</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>125</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -7943,7 +7943,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>125</second>
@@ -7975,8 +7975,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>124</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>175</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_166">
@@ -7985,7 +7985,7 @@
 						<type>0</type>
 						<id>172</id>
 						<name>xor_ln126</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>126</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8000,7 +8000,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>126</second>
@@ -8033,7 +8033,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>125</m_topoIndex>
+				<m_topoIndex>176</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_167">
@@ -8042,7 +8042,7 @@
 						<type>0</type>
 						<id>173</id>
 						<name>xor_ln126_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>126</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8057,7 +8057,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>126</second>
@@ -8090,7 +8090,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>126</m_topoIndex>
+				<m_topoIndex>177</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_168">
@@ -8099,7 +8099,7 @@
 						<type>0</type>
 						<id>174</id>
 						<name>xor_ln126_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>126</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8114,7 +8114,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>126</second>
@@ -8147,7 +8147,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>127</m_topoIndex>
+				<m_topoIndex>178</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_169">
@@ -8156,7 +8156,7 @@
 						<type>0</type>
 						<id>175</id>
 						<name>BCi</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>126</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8171,7 +8171,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>126</second>
@@ -8203,8 +8203,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>128</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>179</m_topoIndex>
 				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_170">
@@ -8213,7 +8213,7 @@
 						<type>0</type>
 						<id>176</id>
 						<name>xor_ln127</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>127</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8228,7 +8228,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>127</second>
@@ -8261,7 +8261,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>129</m_topoIndex>
+				<m_topoIndex>180</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_171">
@@ -8270,7 +8270,7 @@
 						<type>0</type>
 						<id>177</id>
 						<name>xor_ln127_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>127</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8285,7 +8285,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>127</second>
@@ -8318,7 +8318,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>130</m_topoIndex>
+				<m_topoIndex>181</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_172">
@@ -8327,7 +8327,7 @@
 						<type>0</type>
 						<id>178</id>
 						<name>xor_ln127_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>127</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8342,7 +8342,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>127</second>
@@ -8375,7 +8375,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>131</m_topoIndex>
+				<m_topoIndex>182</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_173">
@@ -8384,7 +8384,7 @@
 						<type>0</type>
 						<id>179</id>
 						<name>BCo</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>127</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8399,7 +8399,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>127</second>
@@ -8431,8 +8431,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>132</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>183</m_topoIndex>
 				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_174">
@@ -8441,7 +8441,7 @@
 						<type>0</type>
 						<id>180</id>
 						<name>xor_ln128</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>128</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8456,7 +8456,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>128</second>
@@ -8489,7 +8489,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>133</m_topoIndex>
+				<m_topoIndex>184</m_topoIndex>
 				<m_clusterGroupNumber>5</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_175">
@@ -8498,7 +8498,7 @@
 						<type>0</type>
 						<id>181</id>
 						<name>xor_ln128_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>128</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8513,7 +8513,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>128</second>
@@ -8546,7 +8546,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>134</m_topoIndex>
+				<m_topoIndex>185</m_topoIndex>
 				<m_clusterGroupNumber>5</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_176">
@@ -8555,7 +8555,7 @@
 						<type>0</type>
 						<id>182</id>
 						<name>xor_ln128_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>128</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8570,7 +8570,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>128</second>
@@ -8603,7 +8603,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>135</m_topoIndex>
+				<m_topoIndex>186</m_topoIndex>
 				<m_clusterGroupNumber>5</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_177">
@@ -8612,7 +8612,7 @@
 						<type>0</type>
 						<id>183</id>
 						<name>BCu</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>128</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8627,7 +8627,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>128</second>
@@ -8659,8 +8659,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>136</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>187</m_topoIndex>
 				<m_clusterGroupNumber>5</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_178">
@@ -8669,7 +8669,7 @@
 						<type>0</type>
 						<id>184</id>
 						<name>trunc_ln132</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8684,7 +8684,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>132</second>
@@ -8716,7 +8716,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>137</m_topoIndex>
+				<m_topoIndex>188</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_179">
@@ -8725,7 +8725,7 @@
 						<type>0</type>
 						<id>185</id>
 						<name>tmp</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8740,7 +8740,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>132</second>
@@ -8774,7 +8774,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>138</m_topoIndex>
+				<m_topoIndex>189</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_180">
@@ -8783,7 +8783,7 @@
 						<type>0</type>
 						<id>186</id>
 						<name>or_ln</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8798,7 +8798,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>132</second>
@@ -8832,7 +8832,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>139</m_topoIndex>
+				<m_topoIndex>190</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_181">
@@ -8841,7 +8841,7 @@
 						<type>0</type>
 						<id>187</id>
 						<name>Da</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8856,7 +8856,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>132</second>
@@ -8888,8 +8888,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>140</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>191</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_182">
@@ -8898,7 +8898,7 @@
 						<type>0</type>
 						<id>188</id>
 						<name>trunc_ln133</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>133</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8913,7 +8913,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>133</second>
@@ -8945,7 +8945,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>141</m_topoIndex>
+				<m_topoIndex>192</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_183">
@@ -8953,8 +8953,8 @@
 					<Obj>
 						<type>0</type>
 						<id>189</id>
-						<name>tmp_268</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_208</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>133</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -8969,7 +8969,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>133</second>
@@ -9003,7 +9003,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>142</m_topoIndex>
+				<m_topoIndex>193</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_184">
@@ -9011,8 +9011,8 @@
 					<Obj>
 						<type>0</type>
 						<id>190</id>
-						<name>or_ln63</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln4</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>133</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9027,7 +9027,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>133</second>
@@ -9061,7 +9061,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>143</m_topoIndex>
+				<m_topoIndex>194</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_185">
@@ -9070,7 +9070,7 @@
 						<type>0</type>
 						<id>191</id>
 						<name>De</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>133</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9085,7 +9085,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>133</second>
@@ -9117,8 +9117,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>144</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>195</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_186">
@@ -9127,7 +9127,7 @@
 						<type>0</type>
 						<id>192</id>
 						<name>trunc_ln134</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>134</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9142,7 +9142,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>134</second>
@@ -9174,7 +9174,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>145</m_topoIndex>
+				<m_topoIndex>196</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_187">
@@ -9182,8 +9182,8 @@
 					<Obj>
 						<type>0</type>
 						<id>193</id>
-						<name>tmp_269</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_209</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>134</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9198,7 +9198,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>134</second>
@@ -9232,7 +9232,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>146</m_topoIndex>
+				<m_topoIndex>197</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_188">
@@ -9240,8 +9240,8 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>or_ln64</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln5</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>134</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9256,7 +9256,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>134</second>
@@ -9290,7 +9290,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>147</m_topoIndex>
+				<m_topoIndex>198</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_189">
@@ -9299,7 +9299,7 @@
 						<type>0</type>
 						<id>195</id>
 						<name>Di</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>134</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9314,7 +9314,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>134</second>
@@ -9346,8 +9346,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>148</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>199</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_190">
@@ -9356,7 +9356,7 @@
 						<type>0</type>
 						<id>196</id>
 						<name>trunc_ln135</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9371,7 +9371,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>135</second>
@@ -9403,7 +9403,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>149</m_topoIndex>
+				<m_topoIndex>200</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_191">
@@ -9411,8 +9411,8 @@
 					<Obj>
 						<type>0</type>
 						<id>197</id>
-						<name>tmp_270</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_210</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9427,7 +9427,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>135</second>
@@ -9461,7 +9461,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>150</m_topoIndex>
+				<m_topoIndex>201</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_192">
@@ -9469,8 +9469,8 @@
 					<Obj>
 						<type>0</type>
 						<id>198</id>
-						<name>or_ln65</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln6</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9485,7 +9485,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>135</second>
@@ -9519,7 +9519,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>151</m_topoIndex>
+				<m_topoIndex>202</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_193">
@@ -9528,7 +9528,7 @@
 						<type>0</type>
 						<id>199</id>
 						<name>Do</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9543,7 +9543,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>135</second>
@@ -9575,8 +9575,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>152</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>203</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_194">
@@ -9585,7 +9585,7 @@
 						<type>0</type>
 						<id>200</id>
 						<name>trunc_ln136</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9600,7 +9600,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>136</second>
@@ -9632,7 +9632,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>153</m_topoIndex>
+				<m_topoIndex>204</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_195">
@@ -9640,8 +9640,8 @@
 					<Obj>
 						<type>0</type>
 						<id>201</id>
-						<name>tmp_271</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_211</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9656,7 +9656,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>136</second>
@@ -9690,7 +9690,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>154</m_topoIndex>
+				<m_topoIndex>205</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_196">
@@ -9698,8 +9698,8 @@
 					<Obj>
 						<type>0</type>
 						<id>202</id>
-						<name>or_ln66</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln7</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9714,7 +9714,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>136</second>
@@ -9748,7 +9748,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>155</m_topoIndex>
+				<m_topoIndex>206</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_197">
@@ -9757,7 +9757,7 @@
 						<type>0</type>
 						<id>203</id>
 						<name>Du</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9772,7 +9772,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>136</second>
@@ -9804,8 +9804,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>156</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>207</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_198">
@@ -9814,7 +9814,7 @@
 						<type>0</type>
 						<id>204</id>
 						<name>Aba_4</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>139</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9829,7 +9829,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>139</second>
@@ -9861,8 +9861,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>157</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>208</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_199">
@@ -9871,7 +9871,7 @@
 						<type>0</type>
 						<id>205</id>
 						<name>Age_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>141</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9886,7 +9886,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>141</second>
@@ -9918,8 +9918,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>158</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>209</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_200">
@@ -9928,7 +9928,7 @@
 						<type>0</type>
 						<id>206</id>
 						<name>trunc_ln142</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9943,7 +9943,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>142</second>
@@ -9975,7 +9975,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>159</m_topoIndex>
+				<m_topoIndex>210</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_201">
@@ -9984,7 +9984,7 @@
 						<type>0</type>
 						<id>207</id>
 						<name>lshr_ln</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -9999,7 +9999,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>142</second>
@@ -10034,7 +10034,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>160</m_topoIndex>
+				<m_topoIndex>211</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_202">
@@ -10043,7 +10043,7 @@
 						<type>0</type>
 						<id>208</id>
 						<name>BCe_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10058,7 +10058,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>142</second>
@@ -10092,7 +10092,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>161</m_topoIndex>
+				<m_topoIndex>212</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_203">
@@ -10101,7 +10101,7 @@
 						<type>0</type>
 						<id>209</id>
 						<name>Aki_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10116,7 +10116,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>143</second>
@@ -10148,8 +10148,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>162</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>213</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_204">
@@ -10158,7 +10158,7 @@
 						<type>0</type>
 						<id>210</id>
 						<name>trunc_ln144</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10173,7 +10173,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>144</second>
@@ -10205,7 +10205,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>163</m_topoIndex>
+				<m_topoIndex>214</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_205">
@@ -10214,7 +10214,7 @@
 						<type>0</type>
 						<id>211</id>
 						<name>lshr_ln2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10229,7 +10229,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>144</second>
@@ -10264,7 +10264,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>164</m_topoIndex>
+				<m_topoIndex>215</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_206">
@@ -10273,7 +10273,7 @@
 						<type>0</type>
 						<id>212</id>
 						<name>BCi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10288,7 +10288,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>144</second>
@@ -10322,7 +10322,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>165</m_topoIndex>
+				<m_topoIndex>216</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_207">
@@ -10331,7 +10331,7 @@
 						<type>0</type>
 						<id>213</id>
 						<name>Amo_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10346,7 +10346,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>145</second>
@@ -10378,8 +10378,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>166</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>217</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_208">
@@ -10388,7 +10388,7 @@
 						<type>0</type>
 						<id>214</id>
 						<name>trunc_ln146</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>146</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10403,7 +10403,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>146</second>
@@ -10435,7 +10435,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>167</m_topoIndex>
+				<m_topoIndex>218</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_209">
@@ -10444,7 +10444,7 @@
 						<type>0</type>
 						<id>215</id>
 						<name>lshr_ln3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>146</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10459,7 +10459,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>146</second>
@@ -10494,7 +10494,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>168</m_topoIndex>
+				<m_topoIndex>219</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_210">
@@ -10503,7 +10503,7 @@
 						<type>0</type>
 						<id>216</id>
 						<name>BCo_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>146</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10518,7 +10518,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>146</second>
@@ -10552,7 +10552,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>169</m_topoIndex>
+				<m_topoIndex>220</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_211">
@@ -10561,7 +10561,7 @@
 						<type>0</type>
 						<id>217</id>
 						<name>Asu_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>147</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10576,7 +10576,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>147</second>
@@ -10608,8 +10608,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>170</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>221</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_212">
@@ -10618,7 +10618,7 @@
 						<type>0</type>
 						<id>218</id>
 						<name>trunc_ln148</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10633,7 +10633,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>148</second>
@@ -10665,7 +10665,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>171</m_topoIndex>
+				<m_topoIndex>222</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_213">
@@ -10674,7 +10674,7 @@
 						<type>0</type>
 						<id>219</id>
 						<name>lshr_ln4</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10689,7 +10689,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>148</second>
@@ -10724,7 +10724,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>172</m_topoIndex>
+				<m_topoIndex>223</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_214">
@@ -10733,7 +10733,7 @@
 						<type>0</type>
 						<id>220</id>
 						<name>BCu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10748,7 +10748,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>148</second>
@@ -10782,7 +10782,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>173</m_topoIndex>
+				<m_topoIndex>224</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_215">
@@ -10791,7 +10791,7 @@
 						<type>0</type>
 						<id>221</id>
 						<name>KeccakF_RoundConstants_addr</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>150</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10806,7 +10806,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>150</second>
@@ -10849,7 +10849,7 @@
 						<type>0</type>
 						<id>222</id>
 						<name>KeccakF_RoundConstants_load</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>150</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10864,7 +10864,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>150</second>
@@ -10895,7 +10895,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>84</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -10905,7 +10905,7 @@
 						<type>0</type>
 						<id>223</id>
 						<name>xor_ln150</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>150</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10920,7 +10920,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>150</second>
@@ -10953,7 +10953,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>174</m_topoIndex>
+				<m_topoIndex>225</m_topoIndex>
 				<m_clusterGroupNumber>6</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_218">
@@ -10962,7 +10962,7 @@
 						<type>0</type>
 						<id>224</id>
 						<name>and_ln150</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>150</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -10977,7 +10977,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>150</second>
@@ -11010,7 +11010,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>175</m_topoIndex>
+				<m_topoIndex>226</m_topoIndex>
 				<m_clusterGroupNumber>6</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_219">
@@ -11019,7 +11019,7 @@
 						<type>0</type>
 						<id>225</id>
 						<name>xor_ln150_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>150</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11034,7 +11034,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>150</second>
@@ -11067,7 +11067,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>176</m_topoIndex>
+				<m_topoIndex>227</m_topoIndex>
 				<m_clusterGroupNumber>6</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_220">
@@ -11076,7 +11076,7 @@
 						<type>0</type>
 						<id>226</id>
 						<name>Eba</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>150</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11091,7 +11091,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>150</second>
@@ -11123,8 +11123,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>177</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>228</m_topoIndex>
 				<m_clusterGroupNumber>6</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_221">
@@ -11133,7 +11133,7 @@
 						<type>0</type>
 						<id>227</id>
 						<name>xor_ln151</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11148,7 +11148,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>151</second>
@@ -11181,7 +11181,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>178</m_topoIndex>
+				<m_topoIndex>229</m_topoIndex>
 				<m_clusterGroupNumber>7</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_222">
@@ -11190,7 +11190,7 @@
 						<type>0</type>
 						<id>228</id>
 						<name>and_ln151</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11205,7 +11205,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>151</second>
@@ -11238,7 +11238,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>179</m_topoIndex>
+				<m_topoIndex>230</m_topoIndex>
 				<m_clusterGroupNumber>7</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_223">
@@ -11247,7 +11247,7 @@
 						<type>0</type>
 						<id>229</id>
 						<name>Ebe</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11262,7 +11262,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>151</second>
@@ -11294,8 +11294,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>180</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>231</m_topoIndex>
 				<m_clusterGroupNumber>7</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_224">
@@ -11304,7 +11304,7 @@
 						<type>0</type>
 						<id>230</id>
 						<name>xor_ln152</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11319,7 +11319,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>152</second>
@@ -11352,7 +11352,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>181</m_topoIndex>
+				<m_topoIndex>232</m_topoIndex>
 				<m_clusterGroupNumber>8</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_225">
@@ -11361,7 +11361,7 @@
 						<type>0</type>
 						<id>231</id>
 						<name>and_ln152</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11376,7 +11376,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>152</second>
@@ -11409,7 +11409,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>182</m_topoIndex>
+				<m_topoIndex>233</m_topoIndex>
 				<m_clusterGroupNumber>8</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_226">
@@ -11418,7 +11418,7 @@
 						<type>0</type>
 						<id>232</id>
 						<name>Ebi</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11433,7 +11433,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>152</second>
@@ -11465,8 +11465,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>183</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>234</m_topoIndex>
 				<m_clusterGroupNumber>8</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_227">
@@ -11475,7 +11475,7 @@
 						<type>0</type>
 						<id>233</id>
 						<name>xor_ln153</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>153</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11490,7 +11490,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>153</second>
@@ -11523,7 +11523,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>184</m_topoIndex>
+				<m_topoIndex>235</m_topoIndex>
 				<m_clusterGroupNumber>9</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_228">
@@ -11532,7 +11532,7 @@
 						<type>0</type>
 						<id>234</id>
 						<name>and_ln153</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>153</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11547,7 +11547,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>153</second>
@@ -11580,7 +11580,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>185</m_topoIndex>
+				<m_topoIndex>236</m_topoIndex>
 				<m_clusterGroupNumber>9</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_229">
@@ -11589,7 +11589,7 @@
 						<type>0</type>
 						<id>235</id>
 						<name>Ebo</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>153</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11604,7 +11604,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>153</second>
@@ -11636,8 +11636,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>186</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>237</m_topoIndex>
 				<m_clusterGroupNumber>9</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_230">
@@ -11646,7 +11646,7 @@
 						<type>0</type>
 						<id>236</id>
 						<name>xor_ln154</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11661,7 +11661,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>154</second>
@@ -11694,7 +11694,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>187</m_topoIndex>
+				<m_topoIndex>238</m_topoIndex>
 				<m_clusterGroupNumber>10</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_231">
@@ -11703,7 +11703,7 @@
 						<type>0</type>
 						<id>237</id>
 						<name>and_ln154</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11718,7 +11718,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>154</second>
@@ -11751,7 +11751,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>188</m_topoIndex>
+				<m_topoIndex>239</m_topoIndex>
 				<m_clusterGroupNumber>10</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_232">
@@ -11760,7 +11760,7 @@
 						<type>0</type>
 						<id>238</id>
 						<name>Ebu</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11775,7 +11775,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>154</second>
@@ -11807,8 +11807,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>189</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>240</m_topoIndex>
 				<m_clusterGroupNumber>10</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_233">
@@ -11817,7 +11817,7 @@
 						<type>0</type>
 						<id>239</id>
 						<name>Abo_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>159</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11832,7 +11832,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>159</second>
@@ -11864,8 +11864,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>190</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>241</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_234">
@@ -11874,7 +11874,7 @@
 						<type>0</type>
 						<id>240</id>
 						<name>trunc_ln160</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>160</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11889,7 +11889,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>160</second>
@@ -11921,7 +11921,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>191</m_topoIndex>
+				<m_topoIndex>242</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_235">
@@ -11930,7 +11930,7 @@
 						<type>0</type>
 						<id>241</id>
 						<name>lshr_ln5</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>160</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -11945,7 +11945,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>160</second>
@@ -11980,7 +11980,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>192</m_topoIndex>
+				<m_topoIndex>243</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_236">
@@ -11989,7 +11989,7 @@
 						<type>0</type>
 						<id>242</id>
 						<name>BCa_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>160</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12004,7 +12004,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>160</second>
@@ -12038,7 +12038,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>193</m_topoIndex>
+				<m_topoIndex>244</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_237">
@@ -12047,7 +12047,7 @@
 						<type>0</type>
 						<id>243</id>
 						<name>Agu_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12062,7 +12062,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>161</second>
@@ -12094,8 +12094,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>194</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>245</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_238">
@@ -12104,7 +12104,7 @@
 						<type>0</type>
 						<id>244</id>
 						<name>trunc_ln162</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>162</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12119,7 +12119,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>162</second>
@@ -12151,7 +12151,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>195</m_topoIndex>
+				<m_topoIndex>246</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_239">
@@ -12160,7 +12160,7 @@
 						<type>0</type>
 						<id>245</id>
 						<name>lshr_ln6</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>162</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12175,7 +12175,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>162</second>
@@ -12210,7 +12210,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>196</m_topoIndex>
+				<m_topoIndex>247</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_240">
@@ -12219,7 +12219,7 @@
 						<type>0</type>
 						<id>246</id>
 						<name>BCe_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>162</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12234,7 +12234,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>162</second>
@@ -12268,7 +12268,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>197</m_topoIndex>
+				<m_topoIndex>248</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_241">
@@ -12277,7 +12277,7 @@
 						<type>0</type>
 						<id>247</id>
 						<name>Aka_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>163</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12292,7 +12292,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>163</second>
@@ -12324,8 +12324,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>198</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>249</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_242">
@@ -12334,7 +12334,7 @@
 						<type>0</type>
 						<id>248</id>
 						<name>trunc_ln164</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>164</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12349,7 +12349,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>164</second>
@@ -12381,7 +12381,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>199</m_topoIndex>
+				<m_topoIndex>250</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_243">
@@ -12390,7 +12390,7 @@
 						<type>0</type>
 						<id>249</id>
 						<name>lshr_ln7</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>164</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12405,7 +12405,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>164</second>
@@ -12440,7 +12440,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>200</m_topoIndex>
+				<m_topoIndex>251</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_244">
@@ -12449,7 +12449,7 @@
 						<type>0</type>
 						<id>250</id>
 						<name>BCi_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>164</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12464,7 +12464,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>164</second>
@@ -12498,7 +12498,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>201</m_topoIndex>
+				<m_topoIndex>252</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_245">
@@ -12507,7 +12507,7 @@
 						<type>0</type>
 						<id>251</id>
 						<name>Ame_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>165</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12522,7 +12522,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>165</second>
@@ -12554,8 +12554,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>202</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>253</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_246">
@@ -12564,7 +12564,7 @@
 						<type>0</type>
 						<id>252</id>
 						<name>trunc_ln166</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>166</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12579,7 +12579,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>166</second>
@@ -12611,7 +12611,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>203</m_topoIndex>
+				<m_topoIndex>254</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_247">
@@ -12620,7 +12620,7 @@
 						<type>0</type>
 						<id>253</id>
 						<name>lshr_ln8</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>166</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12635,7 +12635,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>166</second>
@@ -12670,7 +12670,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>204</m_topoIndex>
+				<m_topoIndex>255</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_248">
@@ -12679,7 +12679,7 @@
 						<type>0</type>
 						<id>254</id>
 						<name>BCo_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>166</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12694,7 +12694,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>166</second>
@@ -12728,7 +12728,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>205</m_topoIndex>
+				<m_topoIndex>256</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_249">
@@ -12737,7 +12737,7 @@
 						<type>0</type>
 						<id>255</id>
 						<name>Asi_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>167</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12752,7 +12752,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>167</second>
@@ -12784,8 +12784,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>206</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>257</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_250">
@@ -12794,7 +12794,7 @@
 						<type>0</type>
 						<id>256</id>
 						<name>trunc_ln168</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12809,7 +12809,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>168</second>
@@ -12841,7 +12841,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>207</m_topoIndex>
+				<m_topoIndex>258</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_251">
@@ -12850,7 +12850,7 @@
 						<type>0</type>
 						<id>257</id>
 						<name>lshr_ln9</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12865,7 +12865,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>168</second>
@@ -12900,7 +12900,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>208</m_topoIndex>
+				<m_topoIndex>259</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_252">
@@ -12909,7 +12909,7 @@
 						<type>0</type>
 						<id>258</id>
 						<name>BCu_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>168</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12924,7 +12924,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>168</second>
@@ -12958,7 +12958,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>209</m_topoIndex>
+				<m_topoIndex>260</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_253">
@@ -12967,7 +12967,7 @@
 						<type>0</type>
 						<id>259</id>
 						<name>xor_ln169</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>169</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -12982,7 +12982,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>169</second>
@@ -13015,7 +13015,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>210</m_topoIndex>
+				<m_topoIndex>261</m_topoIndex>
 				<m_clusterGroupNumber>11</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_254">
@@ -13024,7 +13024,7 @@
 						<type>0</type>
 						<id>260</id>
 						<name>and_ln169</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>169</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13039,7 +13039,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>169</second>
@@ -13072,7 +13072,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>211</m_topoIndex>
+				<m_topoIndex>262</m_topoIndex>
 				<m_clusterGroupNumber>11</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_255">
@@ -13081,7 +13081,7 @@
 						<type>0</type>
 						<id>261</id>
 						<name>Ega</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>169</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13096,7 +13096,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>169</second>
@@ -13128,8 +13128,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>212</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>263</m_topoIndex>
 				<m_clusterGroupNumber>11</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_256">
@@ -13138,7 +13138,7 @@
 						<type>0</type>
 						<id>262</id>
 						<name>xor_ln170</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>170</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13153,7 +13153,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>170</second>
@@ -13186,7 +13186,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>213</m_topoIndex>
+				<m_topoIndex>264</m_topoIndex>
 				<m_clusterGroupNumber>12</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_257">
@@ -13195,7 +13195,7 @@
 						<type>0</type>
 						<id>263</id>
 						<name>and_ln170</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>170</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13210,7 +13210,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>170</second>
@@ -13243,7 +13243,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>214</m_topoIndex>
+				<m_topoIndex>265</m_topoIndex>
 				<m_clusterGroupNumber>12</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_258">
@@ -13252,7 +13252,7 @@
 						<type>0</type>
 						<id>264</id>
 						<name>Ege</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>170</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13267,7 +13267,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>170</second>
@@ -13299,8 +13299,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>215</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>266</m_topoIndex>
 				<m_clusterGroupNumber>12</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_259">
@@ -13309,7 +13309,7 @@
 						<type>0</type>
 						<id>265</id>
 						<name>xor_ln171</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>171</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13324,7 +13324,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>171</second>
@@ -13357,7 +13357,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>216</m_topoIndex>
+				<m_topoIndex>267</m_topoIndex>
 				<m_clusterGroupNumber>13</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_260">
@@ -13366,7 +13366,7 @@
 						<type>0</type>
 						<id>266</id>
 						<name>and_ln171</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>171</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13381,7 +13381,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>171</second>
@@ -13414,7 +13414,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>217</m_topoIndex>
+				<m_topoIndex>268</m_topoIndex>
 				<m_clusterGroupNumber>13</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_261">
@@ -13423,7 +13423,7 @@
 						<type>0</type>
 						<id>267</id>
 						<name>Egi</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>171</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13438,7 +13438,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>171</second>
@@ -13470,8 +13470,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>218</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>269</m_topoIndex>
 				<m_clusterGroupNumber>13</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_262">
@@ -13480,7 +13480,7 @@
 						<type>0</type>
 						<id>268</id>
 						<name>xor_ln172</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>172</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13495,7 +13495,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>172</second>
@@ -13528,7 +13528,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>219</m_topoIndex>
+				<m_topoIndex>270</m_topoIndex>
 				<m_clusterGroupNumber>14</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_263">
@@ -13537,7 +13537,7 @@
 						<type>0</type>
 						<id>269</id>
 						<name>and_ln172</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>172</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13552,7 +13552,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>172</second>
@@ -13585,7 +13585,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>220</m_topoIndex>
+				<m_topoIndex>271</m_topoIndex>
 				<m_clusterGroupNumber>14</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_264">
@@ -13594,7 +13594,7 @@
 						<type>0</type>
 						<id>270</id>
 						<name>Ego</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>172</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13609,7 +13609,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>172</second>
@@ -13641,8 +13641,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>221</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>272</m_topoIndex>
 				<m_clusterGroupNumber>14</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_265">
@@ -13651,7 +13651,7 @@
 						<type>0</type>
 						<id>271</id>
 						<name>xor_ln173</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>173</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13666,7 +13666,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>173</second>
@@ -13699,7 +13699,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>222</m_topoIndex>
+				<m_topoIndex>273</m_topoIndex>
 				<m_clusterGroupNumber>15</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_266">
@@ -13708,7 +13708,7 @@
 						<type>0</type>
 						<id>272</id>
 						<name>and_ln173</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>173</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13723,7 +13723,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>173</second>
@@ -13756,7 +13756,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>223</m_topoIndex>
+				<m_topoIndex>274</m_topoIndex>
 				<m_clusterGroupNumber>15</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_267">
@@ -13765,7 +13765,7 @@
 						<type>0</type>
 						<id>273</id>
 						<name>Egu</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>173</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13780,7 +13780,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>173</second>
@@ -13812,8 +13812,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>224</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>275</m_topoIndex>
 				<m_clusterGroupNumber>15</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_268">
@@ -13822,7 +13822,7 @@
 						<type>0</type>
 						<id>274</id>
 						<name>Abe_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>178</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13837,7 +13837,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>178</second>
@@ -13869,8 +13869,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>225</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>276</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_269">
@@ -13879,7 +13879,7 @@
 						<type>0</type>
 						<id>275</id>
 						<name>trunc_ln179</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>179</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13894,7 +13894,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>179</second>
@@ -13926,7 +13926,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>226</m_topoIndex>
+				<m_topoIndex>277</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_270">
@@ -13934,8 +13934,8 @@
 					<Obj>
 						<type>0</type>
 						<id>276</id>
-						<name>tmp_272</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_212</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>179</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -13950,7 +13950,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>179</second>
@@ -13984,7 +13984,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>227</m_topoIndex>
+				<m_topoIndex>278</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_271">
@@ -13993,7 +13993,7 @@
 						<type>0</type>
 						<id>277</id>
 						<name>BCa_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>179</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14008,7 +14008,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>179</second>
@@ -14042,7 +14042,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>228</m_topoIndex>
+				<m_topoIndex>279</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_272">
@@ -14051,7 +14051,7 @@
 						<type>0</type>
 						<id>278</id>
 						<name>Agi_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>180</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14066,7 +14066,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>180</second>
@@ -14098,8 +14098,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>229</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>280</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_273">
@@ -14108,7 +14108,7 @@
 						<type>0</type>
 						<id>279</id>
 						<name>trunc_ln181</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>181</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14123,7 +14123,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>181</second>
@@ -14155,7 +14155,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>230</m_topoIndex>
+				<m_topoIndex>281</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_274">
@@ -14164,7 +14164,7 @@
 						<type>0</type>
 						<id>280</id>
 						<name>lshr_ln10</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>181</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14179,7 +14179,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>181</second>
@@ -14214,7 +14214,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>231</m_topoIndex>
+				<m_topoIndex>282</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_275">
@@ -14223,7 +14223,7 @@
 						<type>0</type>
 						<id>281</id>
 						<name>BCe_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>181</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14238,7 +14238,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>181</second>
@@ -14272,7 +14272,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>232</m_topoIndex>
+				<m_topoIndex>283</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_276">
@@ -14281,7 +14281,7 @@
 						<type>0</type>
 						<id>282</id>
 						<name>Ako_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>182</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14296,7 +14296,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>182</second>
@@ -14328,8 +14328,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>233</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>284</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_277">
@@ -14338,7 +14338,7 @@
 						<type>0</type>
 						<id>283</id>
 						<name>trunc_ln183</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>183</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14353,7 +14353,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>183</second>
@@ -14385,7 +14385,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>234</m_topoIndex>
+				<m_topoIndex>285</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_278">
@@ -14394,7 +14394,7 @@
 						<type>0</type>
 						<id>284</id>
 						<name>lshr_ln11</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>183</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14409,7 +14409,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>183</second>
@@ -14444,7 +14444,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>235</m_topoIndex>
+				<m_topoIndex>286</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_279">
@@ -14453,7 +14453,7 @@
 						<type>0</type>
 						<id>285</id>
 						<name>BCi_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>183</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14468,7 +14468,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>183</second>
@@ -14502,7 +14502,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>236</m_topoIndex>
+				<m_topoIndex>287</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_280">
@@ -14511,7 +14511,7 @@
 						<type>0</type>
 						<id>286</id>
 						<name>Amu_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>184</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14526,7 +14526,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>184</second>
@@ -14558,8 +14558,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>237</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>288</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_281">
@@ -14568,7 +14568,7 @@
 						<type>0</type>
 						<id>287</id>
 						<name>trunc_ln185</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>185</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14583,7 +14583,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>185</second>
@@ -14615,7 +14615,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>238</m_topoIndex>
+				<m_topoIndex>289</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_282">
@@ -14624,7 +14624,7 @@
 						<type>0</type>
 						<id>288</id>
 						<name>lshr_ln12</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>185</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14639,7 +14639,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>185</second>
@@ -14674,7 +14674,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>239</m_topoIndex>
+				<m_topoIndex>290</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_283">
@@ -14683,7 +14683,7 @@
 						<type>0</type>
 						<id>289</id>
 						<name>BCo_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>185</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14698,7 +14698,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>185</second>
@@ -14732,7 +14732,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>240</m_topoIndex>
+				<m_topoIndex>291</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_284">
@@ -14741,7 +14741,7 @@
 						<type>0</type>
 						<id>290</id>
 						<name>Asa_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>186</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14756,7 +14756,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>186</second>
@@ -14788,8 +14788,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>241</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>292</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_285">
@@ -14798,7 +14798,7 @@
 						<type>0</type>
 						<id>291</id>
 						<name>trunc_ln187</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>187</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14813,7 +14813,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>187</second>
@@ -14845,7 +14845,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>242</m_topoIndex>
+				<m_topoIndex>293</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_286">
@@ -14854,7 +14854,7 @@
 						<type>0</type>
 						<id>292</id>
 						<name>lshr_ln13</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>187</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14869,7 +14869,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>187</second>
@@ -14904,7 +14904,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>243</m_topoIndex>
+				<m_topoIndex>294</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_287">
@@ -14913,7 +14913,7 @@
 						<type>0</type>
 						<id>293</id>
 						<name>BCu_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>187</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14928,7 +14928,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>187</second>
@@ -14962,7 +14962,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>244</m_topoIndex>
+				<m_topoIndex>295</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_288">
@@ -14971,7 +14971,7 @@
 						<type>0</type>
 						<id>294</id>
 						<name>xor_ln188</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>188</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -14986,7 +14986,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>188</second>
@@ -15019,7 +15019,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>245</m_topoIndex>
+				<m_topoIndex>296</m_topoIndex>
 				<m_clusterGroupNumber>16</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_289">
@@ -15028,7 +15028,7 @@
 						<type>0</type>
 						<id>295</id>
 						<name>and_ln188</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>188</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15043,7 +15043,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>188</second>
@@ -15076,7 +15076,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>246</m_topoIndex>
+				<m_topoIndex>297</m_topoIndex>
 				<m_clusterGroupNumber>16</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_290">
@@ -15085,7 +15085,7 @@
 						<type>0</type>
 						<id>296</id>
 						<name>Eka</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>188</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15100,7 +15100,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>188</second>
@@ -15132,8 +15132,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>247</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>298</m_topoIndex>
 				<m_clusterGroupNumber>16</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_291">
@@ -15142,7 +15142,7 @@
 						<type>0</type>
 						<id>297</id>
 						<name>xor_ln189</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>189</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15157,7 +15157,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>189</second>
@@ -15190,7 +15190,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>248</m_topoIndex>
+				<m_topoIndex>299</m_topoIndex>
 				<m_clusterGroupNumber>17</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_292">
@@ -15199,7 +15199,7 @@
 						<type>0</type>
 						<id>298</id>
 						<name>and_ln189</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>189</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15214,7 +15214,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>189</second>
@@ -15247,7 +15247,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>249</m_topoIndex>
+				<m_topoIndex>300</m_topoIndex>
 				<m_clusterGroupNumber>17</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_293">
@@ -15256,7 +15256,7 @@
 						<type>0</type>
 						<id>299</id>
 						<name>Eke</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>189</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15271,7 +15271,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>189</second>
@@ -15303,8 +15303,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>250</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>301</m_topoIndex>
 				<m_clusterGroupNumber>17</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_294">
@@ -15313,7 +15313,7 @@
 						<type>0</type>
 						<id>300</id>
 						<name>xor_ln190</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>190</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15328,7 +15328,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>190</second>
@@ -15361,7 +15361,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>251</m_topoIndex>
+				<m_topoIndex>302</m_topoIndex>
 				<m_clusterGroupNumber>18</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_295">
@@ -15370,7 +15370,7 @@
 						<type>0</type>
 						<id>301</id>
 						<name>and_ln190</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>190</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15385,7 +15385,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>190</second>
@@ -15418,7 +15418,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>252</m_topoIndex>
+				<m_topoIndex>303</m_topoIndex>
 				<m_clusterGroupNumber>18</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_296">
@@ -15427,7 +15427,7 @@
 						<type>0</type>
 						<id>302</id>
 						<name>Eki</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>190</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15442,7 +15442,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>190</second>
@@ -15474,8 +15474,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>253</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>304</m_topoIndex>
 				<m_clusterGroupNumber>18</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_297">
@@ -15484,7 +15484,7 @@
 						<type>0</type>
 						<id>303</id>
 						<name>xor_ln191</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>191</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15499,7 +15499,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>191</second>
@@ -15532,7 +15532,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>254</m_topoIndex>
+				<m_topoIndex>305</m_topoIndex>
 				<m_clusterGroupNumber>19</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_298">
@@ -15541,7 +15541,7 @@
 						<type>0</type>
 						<id>304</id>
 						<name>and_ln191</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>191</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15556,7 +15556,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>191</second>
@@ -15589,7 +15589,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>255</m_topoIndex>
+				<m_topoIndex>306</m_topoIndex>
 				<m_clusterGroupNumber>19</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_299">
@@ -15598,7 +15598,7 @@
 						<type>0</type>
 						<id>305</id>
 						<name>Eko</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>191</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15613,7 +15613,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>191</second>
@@ -15645,8 +15645,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>256</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>307</m_topoIndex>
 				<m_clusterGroupNumber>19</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_300">
@@ -15655,7 +15655,7 @@
 						<type>0</type>
 						<id>306</id>
 						<name>xor_ln192</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>192</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15670,7 +15670,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>192</second>
@@ -15703,7 +15703,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>257</m_topoIndex>
+				<m_topoIndex>308</m_topoIndex>
 				<m_clusterGroupNumber>20</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_301">
@@ -15712,7 +15712,7 @@
 						<type>0</type>
 						<id>307</id>
 						<name>and_ln192</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>192</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15727,7 +15727,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>192</second>
@@ -15760,7 +15760,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>258</m_topoIndex>
+				<m_topoIndex>309</m_topoIndex>
 				<m_clusterGroupNumber>20</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_302">
@@ -15769,7 +15769,7 @@
 						<type>0</type>
 						<id>308</id>
 						<name>Eku</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>192</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15784,7 +15784,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>192</second>
@@ -15816,8 +15816,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>259</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>310</m_topoIndex>
 				<m_clusterGroupNumber>20</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_303">
@@ -15826,7 +15826,7 @@
 						<type>0</type>
 						<id>309</id>
 						<name>Abu_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>197</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15841,7 +15841,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>197</second>
@@ -15873,8 +15873,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>260</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>311</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_304">
@@ -15883,7 +15883,7 @@
 						<type>0</type>
 						<id>310</id>
 						<name>trunc_ln198</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>198</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15898,7 +15898,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>198</second>
@@ -15930,7 +15930,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>261</m_topoIndex>
+				<m_topoIndex>312</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_305">
@@ -15939,7 +15939,7 @@
 						<type>0</type>
 						<id>311</id>
 						<name>lshr_ln14</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>198</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -15954,7 +15954,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>198</second>
@@ -15989,7 +15989,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>262</m_topoIndex>
+				<m_topoIndex>313</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_306">
@@ -15998,7 +15998,7 @@
 						<type>0</type>
 						<id>312</id>
 						<name>BCa_4</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>198</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16013,7 +16013,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>198</second>
@@ -16047,7 +16047,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>263</m_topoIndex>
+				<m_topoIndex>314</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_307">
@@ -16056,7 +16056,7 @@
 						<type>0</type>
 						<id>313</id>
 						<name>Aga_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>199</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16071,7 +16071,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>199</second>
@@ -16103,8 +16103,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>264</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>315</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_308">
@@ -16113,7 +16113,7 @@
 						<type>0</type>
 						<id>314</id>
 						<name>trunc_ln200</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>200</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16128,7 +16128,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>200</second>
@@ -16160,7 +16160,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>265</m_topoIndex>
+				<m_topoIndex>316</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_309">
@@ -16169,7 +16169,7 @@
 						<type>0</type>
 						<id>315</id>
 						<name>lshr_ln15</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>200</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16184,7 +16184,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>200</second>
@@ -16219,7 +16219,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>266</m_topoIndex>
+				<m_topoIndex>317</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_310">
@@ -16228,7 +16228,7 @@
 						<type>0</type>
 						<id>316</id>
 						<name>BCe_4</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>200</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16243,7 +16243,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>200</second>
@@ -16277,7 +16277,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>267</m_topoIndex>
+				<m_topoIndex>318</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_311">
@@ -16286,7 +16286,7 @@
 						<type>0</type>
 						<id>317</id>
 						<name>Ake_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>201</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16301,7 +16301,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>201</second>
@@ -16333,8 +16333,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>268</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>319</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_312">
@@ -16343,7 +16343,7 @@
 						<type>0</type>
 						<id>318</id>
 						<name>trunc_ln202</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>202</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16358,7 +16358,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>202</second>
@@ -16390,7 +16390,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>269</m_topoIndex>
+				<m_topoIndex>320</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_313">
@@ -16399,7 +16399,7 @@
 						<type>0</type>
 						<id>319</id>
 						<name>lshr_ln16</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>202</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16414,7 +16414,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>202</second>
@@ -16449,7 +16449,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>270</m_topoIndex>
+				<m_topoIndex>321</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_314">
@@ -16458,7 +16458,7 @@
 						<type>0</type>
 						<id>320</id>
 						<name>BCi_4</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>202</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16473,7 +16473,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>202</second>
@@ -16507,7 +16507,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>271</m_topoIndex>
+				<m_topoIndex>322</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_315">
@@ -16516,7 +16516,7 @@
 						<type>0</type>
 						<id>321</id>
 						<name>Ami_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>203</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16531,7 +16531,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>203</second>
@@ -16563,8 +16563,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>272</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>323</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_316">
@@ -16573,7 +16573,7 @@
 						<type>0</type>
 						<id>322</id>
 						<name>trunc_ln204</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>204</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16588,7 +16588,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>204</second>
@@ -16620,7 +16620,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>273</m_topoIndex>
+				<m_topoIndex>324</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_317">
@@ -16629,7 +16629,7 @@
 						<type>0</type>
 						<id>323</id>
 						<name>lshr_ln17</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>204</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16644,7 +16644,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>204</second>
@@ -16679,7 +16679,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>274</m_topoIndex>
+				<m_topoIndex>325</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_318">
@@ -16688,7 +16688,7 @@
 						<type>0</type>
 						<id>324</id>
 						<name>BCo_4</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>204</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16703,7 +16703,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>204</second>
@@ -16737,7 +16737,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>275</m_topoIndex>
+				<m_topoIndex>326</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_319">
@@ -16746,7 +16746,7 @@
 						<type>0</type>
 						<id>325</id>
 						<name>Aso_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>205</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16761,7 +16761,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>205</second>
@@ -16793,8 +16793,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>276</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>327</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_320">
@@ -16803,7 +16803,7 @@
 						<type>0</type>
 						<id>326</id>
 						<name>trunc_ln206</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>206</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16818,7 +16818,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>206</second>
@@ -16850,7 +16850,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>277</m_topoIndex>
+				<m_topoIndex>328</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_321">
@@ -16859,7 +16859,7 @@
 						<type>0</type>
 						<id>327</id>
 						<name>lshr_ln18</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>206</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16874,7 +16874,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>206</second>
@@ -16909,7 +16909,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>278</m_topoIndex>
+				<m_topoIndex>329</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_322">
@@ -16918,7 +16918,7 @@
 						<type>0</type>
 						<id>328</id>
 						<name>BCu_4</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>206</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16933,7 +16933,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>206</second>
@@ -16967,7 +16967,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>279</m_topoIndex>
+				<m_topoIndex>330</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_323">
@@ -16976,7 +16976,7 @@
 						<type>0</type>
 						<id>329</id>
 						<name>xor_ln207</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>207</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -16991,7 +16991,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>207</second>
@@ -17024,7 +17024,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>280</m_topoIndex>
+				<m_topoIndex>331</m_topoIndex>
 				<m_clusterGroupNumber>21</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_324">
@@ -17033,7 +17033,7 @@
 						<type>0</type>
 						<id>330</id>
 						<name>and_ln207</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>207</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17048,7 +17048,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>207</second>
@@ -17081,7 +17081,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>281</m_topoIndex>
+				<m_topoIndex>332</m_topoIndex>
 				<m_clusterGroupNumber>21</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_325">
@@ -17090,7 +17090,7 @@
 						<type>0</type>
 						<id>331</id>
 						<name>Ema</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>207</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17105,7 +17105,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>207</second>
@@ -17137,8 +17137,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>282</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>333</m_topoIndex>
 				<m_clusterGroupNumber>21</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_326">
@@ -17147,7 +17147,7 @@
 						<type>0</type>
 						<id>332</id>
 						<name>xor_ln208</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>208</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17162,7 +17162,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>208</second>
@@ -17195,7 +17195,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>283</m_topoIndex>
+				<m_topoIndex>334</m_topoIndex>
 				<m_clusterGroupNumber>22</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_327">
@@ -17204,7 +17204,7 @@
 						<type>0</type>
 						<id>333</id>
 						<name>and_ln208</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>208</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17219,7 +17219,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>208</second>
@@ -17252,7 +17252,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>284</m_topoIndex>
+				<m_topoIndex>335</m_topoIndex>
 				<m_clusterGroupNumber>22</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_328">
@@ -17261,7 +17261,7 @@
 						<type>0</type>
 						<id>334</id>
 						<name>Eme</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>208</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17276,7 +17276,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>208</second>
@@ -17308,8 +17308,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>285</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>336</m_topoIndex>
 				<m_clusterGroupNumber>22</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_329">
@@ -17318,7 +17318,7 @@
 						<type>0</type>
 						<id>335</id>
 						<name>xor_ln209</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>209</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17333,7 +17333,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>209</second>
@@ -17366,7 +17366,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>286</m_topoIndex>
+				<m_topoIndex>337</m_topoIndex>
 				<m_clusterGroupNumber>23</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_330">
@@ -17375,7 +17375,7 @@
 						<type>0</type>
 						<id>336</id>
 						<name>and_ln209</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>209</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17390,7 +17390,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>209</second>
@@ -17423,7 +17423,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>287</m_topoIndex>
+				<m_topoIndex>338</m_topoIndex>
 				<m_clusterGroupNumber>23</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_331">
@@ -17432,7 +17432,7 @@
 						<type>0</type>
 						<id>337</id>
 						<name>Emi</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>209</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17447,7 +17447,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>209</second>
@@ -17479,8 +17479,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>288</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>339</m_topoIndex>
 				<m_clusterGroupNumber>23</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_332">
@@ -17489,7 +17489,7 @@
 						<type>0</type>
 						<id>338</id>
 						<name>xor_ln210</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>210</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17504,7 +17504,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>210</second>
@@ -17537,7 +17537,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>289</m_topoIndex>
+				<m_topoIndex>340</m_topoIndex>
 				<m_clusterGroupNumber>24</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_333">
@@ -17546,7 +17546,7 @@
 						<type>0</type>
 						<id>339</id>
 						<name>and_ln210</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>210</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17561,7 +17561,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>210</second>
@@ -17594,7 +17594,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>290</m_topoIndex>
+				<m_topoIndex>341</m_topoIndex>
 				<m_clusterGroupNumber>24</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_334">
@@ -17603,7 +17603,7 @@
 						<type>0</type>
 						<id>340</id>
 						<name>Emo</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>210</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17618,7 +17618,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>210</second>
@@ -17650,8 +17650,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>291</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>342</m_topoIndex>
 				<m_clusterGroupNumber>24</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_335">
@@ -17660,7 +17660,7 @@
 						<type>0</type>
 						<id>341</id>
 						<name>xor_ln211</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>211</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17675,7 +17675,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>211</second>
@@ -17708,7 +17708,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>292</m_topoIndex>
+				<m_topoIndex>343</m_topoIndex>
 				<m_clusterGroupNumber>25</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_336">
@@ -17717,7 +17717,7 @@
 						<type>0</type>
 						<id>342</id>
 						<name>and_ln211</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>211</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17732,7 +17732,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>211</second>
@@ -17765,7 +17765,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>293</m_topoIndex>
+				<m_topoIndex>344</m_topoIndex>
 				<m_clusterGroupNumber>25</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_337">
@@ -17774,7 +17774,7 @@
 						<type>0</type>
 						<id>343</id>
 						<name>Emu</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>211</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17789,7 +17789,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>211</second>
@@ -17821,8 +17821,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>294</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>345</m_topoIndex>
 				<m_clusterGroupNumber>25</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_338">
@@ -17831,7 +17831,7 @@
 						<type>0</type>
 						<id>344</id>
 						<name>Abi_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>216</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17846,7 +17846,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>216</second>
@@ -17878,8 +17878,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>295</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>346</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_339">
@@ -17888,7 +17888,7 @@
 						<type>0</type>
 						<id>345</id>
 						<name>trunc_ln217</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>217</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17903,7 +17903,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>217</second>
@@ -17935,7 +17935,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>296</m_topoIndex>
+				<m_topoIndex>347</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_340">
@@ -17944,7 +17944,7 @@
 						<type>0</type>
 						<id>346</id>
 						<name>lshr_ln19</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>217</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -17959,7 +17959,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>217</second>
@@ -17994,7 +17994,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>297</m_topoIndex>
+				<m_topoIndex>348</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_341">
@@ -18003,7 +18003,7 @@
 						<type>0</type>
 						<id>347</id>
 						<name>BCa_5</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>217</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18018,7 +18018,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>217</second>
@@ -18052,7 +18052,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>298</m_topoIndex>
+				<m_topoIndex>349</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_342">
@@ -18061,7 +18061,7 @@
 						<type>0</type>
 						<id>348</id>
 						<name>Ago_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>218</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18076,7 +18076,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>218</second>
@@ -18108,8 +18108,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>299</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>350</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_343">
@@ -18118,7 +18118,7 @@
 						<type>0</type>
 						<id>349</id>
 						<name>trunc_ln219</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>219</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18133,7 +18133,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>219</second>
@@ -18165,7 +18165,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>300</m_topoIndex>
+				<m_topoIndex>351</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_344">
@@ -18174,7 +18174,7 @@
 						<type>0</type>
 						<id>350</id>
 						<name>lshr_ln20</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>219</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18189,7 +18189,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>219</second>
@@ -18224,7 +18224,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>301</m_topoIndex>
+				<m_topoIndex>352</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_345">
@@ -18233,7 +18233,7 @@
 						<type>0</type>
 						<id>351</id>
 						<name>BCe_5</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>219</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18248,7 +18248,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>219</second>
@@ -18282,7 +18282,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>302</m_topoIndex>
+				<m_topoIndex>353</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_346">
@@ -18291,7 +18291,7 @@
 						<type>0</type>
 						<id>352</id>
 						<name>Aku_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>220</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18306,7 +18306,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>220</second>
@@ -18338,8 +18338,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>303</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>354</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_347">
@@ -18348,7 +18348,7 @@
 						<type>0</type>
 						<id>353</id>
 						<name>trunc_ln221</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>221</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18363,7 +18363,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>221</second>
@@ -18395,7 +18395,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>304</m_topoIndex>
+				<m_topoIndex>355</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_348">
@@ -18404,7 +18404,7 @@
 						<type>0</type>
 						<id>354</id>
 						<name>lshr_ln21</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>221</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18419,7 +18419,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>221</second>
@@ -18454,7 +18454,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>305</m_topoIndex>
+				<m_topoIndex>356</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_349">
@@ -18463,7 +18463,7 @@
 						<type>0</type>
 						<id>355</id>
 						<name>BCi_5</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>221</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18478,7 +18478,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>221</second>
@@ -18512,7 +18512,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>306</m_topoIndex>
+				<m_topoIndex>357</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_350">
@@ -18521,7 +18521,7 @@
 						<type>0</type>
 						<id>356</id>
 						<name>Ama_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>222</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18536,7 +18536,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>222</second>
@@ -18568,8 +18568,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>307</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>358</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_351">
@@ -18578,7 +18578,7 @@
 						<type>0</type>
 						<id>357</id>
 						<name>trunc_ln223</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>223</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18593,7 +18593,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>223</second>
@@ -18625,7 +18625,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>308</m_topoIndex>
+				<m_topoIndex>359</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_352">
@@ -18634,7 +18634,7 @@
 						<type>0</type>
 						<id>358</id>
 						<name>lshr_ln22</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>223</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18649,7 +18649,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>223</second>
@@ -18684,7 +18684,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>309</m_topoIndex>
+				<m_topoIndex>360</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_353">
@@ -18693,7 +18693,7 @@
 						<type>0</type>
 						<id>359</id>
 						<name>BCo_5</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>223</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18708,7 +18708,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>223</second>
@@ -18742,7 +18742,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>310</m_topoIndex>
+				<m_topoIndex>361</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_354">
@@ -18751,7 +18751,7 @@
 						<type>0</type>
 						<id>360</id>
 						<name>Ase_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>224</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18766,7 +18766,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>224</second>
@@ -18798,8 +18798,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>311</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>362</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_355">
@@ -18808,7 +18808,7 @@
 						<type>0</type>
 						<id>361</id>
 						<name>trunc_ln225</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>225</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18823,7 +18823,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>225</second>
@@ -18855,7 +18855,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>312</m_topoIndex>
+				<m_topoIndex>363</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_356">
@@ -18864,7 +18864,7 @@
 						<type>0</type>
 						<id>362</id>
 						<name>lshr_ln23</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>225</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18879,7 +18879,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>225</second>
@@ -18914,7 +18914,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>313</m_topoIndex>
+				<m_topoIndex>364</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_357">
@@ -18923,7 +18923,7 @@
 						<type>0</type>
 						<id>363</id>
 						<name>BCu_5</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>225</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18938,7 +18938,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>225</second>
@@ -18972,7 +18972,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>314</m_topoIndex>
+				<m_topoIndex>365</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_358">
@@ -18981,7 +18981,7 @@
 						<type>0</type>
 						<id>364</id>
 						<name>xor_ln226</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>226</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -18996,7 +18996,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>226</second>
@@ -19029,7 +19029,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>315</m_topoIndex>
+				<m_topoIndex>366</m_topoIndex>
 				<m_clusterGroupNumber>26</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_359">
@@ -19038,7 +19038,7 @@
 						<type>0</type>
 						<id>365</id>
 						<name>and_ln226</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>226</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19053,7 +19053,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>226</second>
@@ -19086,7 +19086,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>316</m_topoIndex>
+				<m_topoIndex>367</m_topoIndex>
 				<m_clusterGroupNumber>26</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_360">
@@ -19095,7 +19095,7 @@
 						<type>0</type>
 						<id>366</id>
 						<name>Esa</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>226</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19110,7 +19110,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>226</second>
@@ -19142,8 +19142,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>317</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>368</m_topoIndex>
 				<m_clusterGroupNumber>26</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_361">
@@ -19152,7 +19152,7 @@
 						<type>0</type>
 						<id>367</id>
 						<name>xor_ln227</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>227</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19167,7 +19167,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>227</second>
@@ -19200,7 +19200,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>318</m_topoIndex>
+				<m_topoIndex>369</m_topoIndex>
 				<m_clusterGroupNumber>27</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_362">
@@ -19209,7 +19209,7 @@
 						<type>0</type>
 						<id>368</id>
 						<name>and_ln227</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>227</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19224,7 +19224,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>227</second>
@@ -19257,7 +19257,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>319</m_topoIndex>
+				<m_topoIndex>370</m_topoIndex>
 				<m_clusterGroupNumber>27</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_363">
@@ -19266,7 +19266,7 @@
 						<type>0</type>
 						<id>369</id>
 						<name>Ese</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>227</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19281,7 +19281,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>227</second>
@@ -19313,8 +19313,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>320</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>371</m_topoIndex>
 				<m_clusterGroupNumber>27</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_364">
@@ -19323,7 +19323,7 @@
 						<type>0</type>
 						<id>370</id>
 						<name>xor_ln228</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>228</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19338,7 +19338,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>228</second>
@@ -19371,7 +19371,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>321</m_topoIndex>
+				<m_topoIndex>372</m_topoIndex>
 				<m_clusterGroupNumber>28</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_365">
@@ -19380,7 +19380,7 @@
 						<type>0</type>
 						<id>371</id>
 						<name>and_ln228</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>228</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19395,7 +19395,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>228</second>
@@ -19428,7 +19428,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>322</m_topoIndex>
+				<m_topoIndex>373</m_topoIndex>
 				<m_clusterGroupNumber>28</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_366">
@@ -19437,7 +19437,7 @@
 						<type>0</type>
 						<id>372</id>
 						<name>Esi</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>228</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19452,7 +19452,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>228</second>
@@ -19484,8 +19484,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>323</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>374</m_topoIndex>
 				<m_clusterGroupNumber>28</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_367">
@@ -19494,7 +19494,7 @@
 						<type>0</type>
 						<id>373</id>
 						<name>xor_ln229</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>229</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19509,7 +19509,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>229</second>
@@ -19542,7 +19542,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>324</m_topoIndex>
+				<m_topoIndex>375</m_topoIndex>
 				<m_clusterGroupNumber>29</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_368">
@@ -19551,7 +19551,7 @@
 						<type>0</type>
 						<id>374</id>
 						<name>and_ln229</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>229</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19566,7 +19566,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>229</second>
@@ -19599,7 +19599,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>325</m_topoIndex>
+				<m_topoIndex>376</m_topoIndex>
 				<m_clusterGroupNumber>29</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_369">
@@ -19608,7 +19608,7 @@
 						<type>0</type>
 						<id>375</id>
 						<name>Eso</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>229</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19623,7 +19623,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>229</second>
@@ -19655,8 +19655,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>326</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>377</m_topoIndex>
 				<m_clusterGroupNumber>29</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_370">
@@ -19665,7 +19665,7 @@
 						<type>0</type>
 						<id>376</id>
 						<name>xor_ln230</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>230</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19680,7 +19680,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>230</second>
@@ -19713,7 +19713,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>327</m_topoIndex>
+				<m_topoIndex>378</m_topoIndex>
 				<m_clusterGroupNumber>30</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_371">
@@ -19722,7 +19722,7 @@
 						<type>0</type>
 						<id>377</id>
 						<name>and_ln230</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>230</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19737,7 +19737,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>230</second>
@@ -19770,7 +19770,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>328</m_topoIndex>
+				<m_topoIndex>379</m_topoIndex>
 				<m_clusterGroupNumber>30</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_372">
@@ -19779,7 +19779,7 @@
 						<type>0</type>
 						<id>378</id>
 						<name>Esu</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>230</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19794,7 +19794,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>230</second>
@@ -19826,8 +19826,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>329</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>380</m_topoIndex>
 				<m_clusterGroupNumber>30</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_373">
@@ -19836,7 +19836,7 @@
 						<type>0</type>
 						<id>379</id>
 						<name>xor_ln236</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>236</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19851,7 +19851,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>236</second>
@@ -19884,7 +19884,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>330</m_topoIndex>
+				<m_topoIndex>381</m_topoIndex>
 				<m_clusterGroupNumber>31</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_374">
@@ -19893,7 +19893,7 @@
 						<type>0</type>
 						<id>380</id>
 						<name>xor_ln236_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>236</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19908,7 +19908,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>236</second>
@@ -19941,7 +19941,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>331</m_topoIndex>
+				<m_topoIndex>382</m_topoIndex>
 				<m_clusterGroupNumber>31</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_375">
@@ -19950,7 +19950,7 @@
 						<type>0</type>
 						<id>381</id>
 						<name>xor_ln236_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>236</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -19965,7 +19965,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>236</second>
@@ -19998,7 +19998,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>332</m_topoIndex>
+				<m_topoIndex>383</m_topoIndex>
 				<m_clusterGroupNumber>31</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_376">
@@ -20007,7 +20007,7 @@
 						<type>0</type>
 						<id>382</id>
 						<name>BCa_6</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>236</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20022,7 +20022,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>236</second>
@@ -20054,8 +20054,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>333</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>384</m_topoIndex>
 				<m_clusterGroupNumber>31</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_377">
@@ -20064,7 +20064,7 @@
 						<type>0</type>
 						<id>383</id>
 						<name>xor_ln237_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>237</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20079,7 +20079,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>237</second>
@@ -20112,7 +20112,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>334</m_topoIndex>
+				<m_topoIndex>385</m_topoIndex>
 				<m_clusterGroupNumber>32</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_378">
@@ -20121,7 +20121,7 @@
 						<type>0</type>
 						<id>384</id>
 						<name>xor_ln237</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>237</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20136,7 +20136,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>237</second>
@@ -20169,7 +20169,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>335</m_topoIndex>
+				<m_topoIndex>386</m_topoIndex>
 				<m_clusterGroupNumber>32</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_379">
@@ -20178,7 +20178,7 @@
 						<type>0</type>
 						<id>385</id>
 						<name>xor_ln237_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>237</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20193,7 +20193,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>237</second>
@@ -20226,7 +20226,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>336</m_topoIndex>
+				<m_topoIndex>387</m_topoIndex>
 				<m_clusterGroupNumber>32</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_380">
@@ -20235,7 +20235,7 @@
 						<type>0</type>
 						<id>386</id>
 						<name>BCe_6</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>237</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20250,7 +20250,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>237</second>
@@ -20282,8 +20282,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>337</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>388</m_topoIndex>
 				<m_clusterGroupNumber>32</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_381">
@@ -20292,7 +20292,7 @@
 						<type>0</type>
 						<id>387</id>
 						<name>xor_ln238_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>238</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20307,7 +20307,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>238</second>
@@ -20340,7 +20340,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>338</m_topoIndex>
+				<m_topoIndex>389</m_topoIndex>
 				<m_clusterGroupNumber>33</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_382">
@@ -20349,7 +20349,7 @@
 						<type>0</type>
 						<id>388</id>
 						<name>xor_ln238</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>238</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20364,7 +20364,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>238</second>
@@ -20397,7 +20397,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>339</m_topoIndex>
+				<m_topoIndex>390</m_topoIndex>
 				<m_clusterGroupNumber>33</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_383">
@@ -20406,7 +20406,7 @@
 						<type>0</type>
 						<id>389</id>
 						<name>xor_ln238_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>238</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20421,7 +20421,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>238</second>
@@ -20454,7 +20454,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>340</m_topoIndex>
+				<m_topoIndex>391</m_topoIndex>
 				<m_clusterGroupNumber>33</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_384">
@@ -20463,7 +20463,7 @@
 						<type>0</type>
 						<id>390</id>
 						<name>BCi_6</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>238</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20478,7 +20478,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>238</second>
@@ -20510,8 +20510,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>341</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>392</m_topoIndex>
 				<m_clusterGroupNumber>33</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_385">
@@ -20520,7 +20520,7 @@
 						<type>0</type>
 						<id>391</id>
 						<name>xor_ln239</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>239</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20535,7 +20535,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>239</second>
@@ -20568,7 +20568,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>342</m_topoIndex>
+				<m_topoIndex>393</m_topoIndex>
 				<m_clusterGroupNumber>34</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_386">
@@ -20577,7 +20577,7 @@
 						<type>0</type>
 						<id>392</id>
 						<name>xor_ln239_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>239</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20592,7 +20592,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>239</second>
@@ -20625,7 +20625,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>343</m_topoIndex>
+				<m_topoIndex>394</m_topoIndex>
 				<m_clusterGroupNumber>34</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_387">
@@ -20634,7 +20634,7 @@
 						<type>0</type>
 						<id>393</id>
 						<name>xor_ln239_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>239</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20649,7 +20649,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>239</second>
@@ -20682,7 +20682,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>344</m_topoIndex>
+				<m_topoIndex>395</m_topoIndex>
 				<m_clusterGroupNumber>34</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_388">
@@ -20691,7 +20691,7 @@
 						<type>0</type>
 						<id>394</id>
 						<name>BCo_6</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>239</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20706,7 +20706,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>239</second>
@@ -20738,8 +20738,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>345</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>396</m_topoIndex>
 				<m_clusterGroupNumber>34</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_389">
@@ -20748,7 +20748,7 @@
 						<type>0</type>
 						<id>395</id>
 						<name>xor_ln240</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>240</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20763,7 +20763,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>240</second>
@@ -20796,7 +20796,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>346</m_topoIndex>
+				<m_topoIndex>397</m_topoIndex>
 				<m_clusterGroupNumber>35</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_390">
@@ -20805,7 +20805,7 @@
 						<type>0</type>
 						<id>396</id>
 						<name>xor_ln240_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>240</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20820,7 +20820,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>240</second>
@@ -20853,7 +20853,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>347</m_topoIndex>
+				<m_topoIndex>398</m_topoIndex>
 				<m_clusterGroupNumber>35</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_391">
@@ -20862,7 +20862,7 @@
 						<type>0</type>
 						<id>397</id>
 						<name>xor_ln240_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>240</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20877,7 +20877,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>240</second>
@@ -20910,7 +20910,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>348</m_topoIndex>
+				<m_topoIndex>399</m_topoIndex>
 				<m_clusterGroupNumber>35</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_392">
@@ -20919,7 +20919,7 @@
 						<type>0</type>
 						<id>398</id>
 						<name>BCu_6</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>240</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20934,7 +20934,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>240</second>
@@ -20966,8 +20966,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>349</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>400</m_topoIndex>
 				<m_clusterGroupNumber>35</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_393">
@@ -20976,7 +20976,7 @@
 						<type>0</type>
 						<id>399</id>
 						<name>trunc_ln244</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>244</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -20991,7 +20991,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>244</second>
@@ -21023,7 +21023,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>350</m_topoIndex>
+				<m_topoIndex>401</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_394">
@@ -21031,8 +21031,8 @@
 					<Obj>
 						<type>0</type>
 						<id>400</id>
-						<name>tmp_273</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_213</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>244</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21047,7 +21047,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>244</second>
@@ -21081,7 +21081,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>351</m_topoIndex>
+				<m_topoIndex>402</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_395">
@@ -21089,8 +21089,8 @@
 					<Obj>
 						<type>0</type>
 						<id>401</id>
-						<name>or_ln67</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln8</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>244</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21105,7 +21105,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>244</second>
@@ -21139,7 +21139,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>352</m_topoIndex>
+				<m_topoIndex>403</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_396">
@@ -21148,7 +21148,7 @@
 						<type>0</type>
 						<id>402</id>
 						<name>Da_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>244</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21163,7 +21163,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>244</second>
@@ -21195,8 +21195,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>353</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>404</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_397">
@@ -21205,7 +21205,7 @@
 						<type>0</type>
 						<id>403</id>
 						<name>trunc_ln245</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>245</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21220,7 +21220,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>245</second>
@@ -21252,7 +21252,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>354</m_topoIndex>
+				<m_topoIndex>405</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_398">
@@ -21260,8 +21260,8 @@
 					<Obj>
 						<type>0</type>
 						<id>404</id>
-						<name>tmp_274</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_214</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>245</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21276,7 +21276,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>245</second>
@@ -21310,7 +21310,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>355</m_topoIndex>
+				<m_topoIndex>406</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_399">
@@ -21318,8 +21318,8 @@
 					<Obj>
 						<type>0</type>
 						<id>405</id>
-						<name>or_ln68</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln9</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>245</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21334,7 +21334,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>245</second>
@@ -21368,7 +21368,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>356</m_topoIndex>
+				<m_topoIndex>407</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_400">
@@ -21377,7 +21377,7 @@
 						<type>0</type>
 						<id>406</id>
 						<name>De_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>245</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21392,7 +21392,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>245</second>
@@ -21424,8 +21424,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>357</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>408</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_401">
@@ -21434,7 +21434,7 @@
 						<type>0</type>
 						<id>407</id>
 						<name>trunc_ln246</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>246</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21449,7 +21449,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>246</second>
@@ -21481,7 +21481,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>358</m_topoIndex>
+				<m_topoIndex>409</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_402">
@@ -21489,8 +21489,8 @@
 					<Obj>
 						<type>0</type>
 						<id>408</id>
-						<name>tmp_275</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_215</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>246</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21505,7 +21505,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>246</second>
@@ -21539,7 +21539,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>359</m_topoIndex>
+				<m_topoIndex>410</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_403">
@@ -21547,8 +21547,8 @@
 					<Obj>
 						<type>0</type>
 						<id>409</id>
-						<name>or_ln69</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln10</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>246</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21563,7 +21563,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>246</second>
@@ -21597,7 +21597,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>360</m_topoIndex>
+				<m_topoIndex>411</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_404">
@@ -21606,7 +21606,7 @@
 						<type>0</type>
 						<id>410</id>
 						<name>Di_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>246</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21621,7 +21621,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>246</second>
@@ -21653,8 +21653,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>361</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>412</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_405">
@@ -21663,7 +21663,7 @@
 						<type>0</type>
 						<id>411</id>
 						<name>trunc_ln247</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>247</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21678,7 +21678,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>247</second>
@@ -21710,7 +21710,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>362</m_topoIndex>
+				<m_topoIndex>413</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_406">
@@ -21718,8 +21718,8 @@
 					<Obj>
 						<type>0</type>
 						<id>412</id>
-						<name>tmp_276</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_216</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>247</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21734,7 +21734,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>247</second>
@@ -21768,7 +21768,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>363</m_topoIndex>
+				<m_topoIndex>414</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_407">
@@ -21776,8 +21776,8 @@
 					<Obj>
 						<type>0</type>
 						<id>413</id>
-						<name>or_ln70</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln11</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>247</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21792,7 +21792,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>247</second>
@@ -21826,7 +21826,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>364</m_topoIndex>
+				<m_topoIndex>415</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_408">
@@ -21835,7 +21835,7 @@
 						<type>0</type>
 						<id>414</id>
 						<name>Do_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>247</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21850,7 +21850,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>247</second>
@@ -21882,8 +21882,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>365</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>416</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_409">
@@ -21892,7 +21892,7 @@
 						<type>0</type>
 						<id>415</id>
 						<name>trunc_ln248</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>248</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21907,7 +21907,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>248</second>
@@ -21939,7 +21939,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>366</m_topoIndex>
+				<m_topoIndex>417</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_410">
@@ -21947,8 +21947,8 @@
 					<Obj>
 						<type>0</type>
 						<id>416</id>
-						<name>tmp_277</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_217</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>248</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -21963,7 +21963,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>248</second>
@@ -21997,7 +21997,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>367</m_topoIndex>
+				<m_topoIndex>418</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_411">
@@ -22005,8 +22005,8 @@
 					<Obj>
 						<type>0</type>
 						<id>417</id>
-						<name>or_ln71</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln12</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>248</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22021,7 +22021,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>248</second>
@@ -22055,7 +22055,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>368</m_topoIndex>
+				<m_topoIndex>419</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_412">
@@ -22064,7 +22064,7 @@
 						<type>0</type>
 						<id>418</id>
 						<name>Du_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>248</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22079,7 +22079,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>248</second>
@@ -22111,8 +22111,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>369</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>420</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_413">
@@ -22121,7 +22121,7 @@
 						<type>0</type>
 						<id>419</id>
 						<name>Eba_2</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>251</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22136,7 +22136,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>251</second>
@@ -22168,8 +22168,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>370</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>421</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_414">
@@ -22178,7 +22178,7 @@
 						<type>0</type>
 						<id>420</id>
 						<name>Ege_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>253</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22193,7 +22193,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>253</second>
@@ -22225,8 +22225,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>371</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>422</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_415">
@@ -22235,7 +22235,7 @@
 						<type>0</type>
 						<id>421</id>
 						<name>trunc_ln254</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>254</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22250,7 +22250,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>254</second>
@@ -22282,7 +22282,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>372</m_topoIndex>
+				<m_topoIndex>423</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_416">
@@ -22291,7 +22291,7 @@
 						<type>0</type>
 						<id>422</id>
 						<name>lshr_ln24</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>254</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22306,7 +22306,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>254</second>
@@ -22341,7 +22341,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>373</m_topoIndex>
+				<m_topoIndex>424</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_417">
@@ -22350,7 +22350,7 @@
 						<type>0</type>
 						<id>423</id>
 						<name>BCe_7</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>254</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22365,7 +22365,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>254</second>
@@ -22399,7 +22399,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>374</m_topoIndex>
+				<m_topoIndex>425</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_418">
@@ -22408,7 +22408,7 @@
 						<type>0</type>
 						<id>424</id>
 						<name>Eki_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>255</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22423,7 +22423,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>255</second>
@@ -22455,8 +22455,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>375</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>426</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_419">
@@ -22465,7 +22465,7 @@
 						<type>0</type>
 						<id>425</id>
 						<name>trunc_ln256</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>256</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22480,7 +22480,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>256</second>
@@ -22512,7 +22512,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>376</m_topoIndex>
+				<m_topoIndex>427</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_420">
@@ -22521,7 +22521,7 @@
 						<type>0</type>
 						<id>426</id>
 						<name>lshr_ln25</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>256</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22536,7 +22536,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>256</second>
@@ -22571,7 +22571,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>377</m_topoIndex>
+				<m_topoIndex>428</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_421">
@@ -22580,7 +22580,7 @@
 						<type>0</type>
 						<id>427</id>
 						<name>BCi_7</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>256</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22595,7 +22595,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>256</second>
@@ -22629,7 +22629,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>378</m_topoIndex>
+				<m_topoIndex>429</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_422">
@@ -22638,7 +22638,7 @@
 						<type>0</type>
 						<id>428</id>
 						<name>Emo_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>257</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22653,7 +22653,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>257</second>
@@ -22685,8 +22685,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>379</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>430</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_423">
@@ -22695,7 +22695,7 @@
 						<type>0</type>
 						<id>429</id>
 						<name>trunc_ln258</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>258</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22710,7 +22710,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>258</second>
@@ -22742,7 +22742,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>380</m_topoIndex>
+				<m_topoIndex>431</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_424">
@@ -22751,7 +22751,7 @@
 						<type>0</type>
 						<id>430</id>
 						<name>lshr_ln26</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>258</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22766,7 +22766,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>258</second>
@@ -22801,7 +22801,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>381</m_topoIndex>
+				<m_topoIndex>432</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_425">
@@ -22810,7 +22810,7 @@
 						<type>0</type>
 						<id>431</id>
 						<name>BCo_7</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>258</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22825,7 +22825,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>258</second>
@@ -22859,7 +22859,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>382</m_topoIndex>
+				<m_topoIndex>433</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_426">
@@ -22868,7 +22868,7 @@
 						<type>0</type>
 						<id>432</id>
 						<name>Esu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>259</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22883,7 +22883,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>259</second>
@@ -22915,8 +22915,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>383</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>434</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_427">
@@ -22925,7 +22925,7 @@
 						<type>0</type>
 						<id>433</id>
 						<name>trunc_ln260</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>260</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22940,7 +22940,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>260</second>
@@ -22972,7 +22972,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>384</m_topoIndex>
+				<m_topoIndex>435</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_428">
@@ -22981,7 +22981,7 @@
 						<type>0</type>
 						<id>434</id>
 						<name>lshr_ln27</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>260</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -22996,7 +22996,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>260</second>
@@ -23031,7 +23031,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>385</m_topoIndex>
+				<m_topoIndex>436</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_429">
@@ -23040,7 +23040,7 @@
 						<type>0</type>
 						<id>435</id>
 						<name>BCu_7</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>260</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23055,7 +23055,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>260</second>
@@ -23089,7 +23089,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>386</m_topoIndex>
+				<m_topoIndex>437</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_430">
@@ -23098,7 +23098,7 @@
 						<type>0</type>
 						<id>436</id>
 						<name>tmp_s</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23113,7 +23113,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23156,8 +23156,8 @@
 					<Obj>
 						<type>0</type>
 						<id>437</id>
-						<name>or_ln72</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>or_ln13</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23172,7 +23172,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23215,7 +23215,7 @@
 						<type>0</type>
 						<id>438</id>
 						<name>zext_ln262</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23230,7 +23230,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23271,7 +23271,7 @@
 						<type>0</type>
 						<id>439</id>
 						<name>KeccakF_RoundConstants_addr_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23286,7 +23286,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23329,7 +23329,7 @@
 						<type>0</type>
 						<id>440</id>
 						<name>KeccakF_RoundConstants_load_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23344,7 +23344,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23375,7 +23375,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>89</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -23385,7 +23385,7 @@
 						<type>0</type>
 						<id>441</id>
 						<name>xor_ln262</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23400,7 +23400,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23433,7 +23433,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>387</m_topoIndex>
+				<m_topoIndex>438</m_topoIndex>
 				<m_clusterGroupNumber>36</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_436">
@@ -23442,7 +23442,7 @@
 						<type>0</type>
 						<id>442</id>
 						<name>and_ln262</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23457,7 +23457,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23490,7 +23490,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>388</m_topoIndex>
+				<m_topoIndex>439</m_topoIndex>
 				<m_clusterGroupNumber>36</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_437">
@@ -23499,7 +23499,7 @@
 						<type>0</type>
 						<id>443</id>
 						<name>xor_ln262_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23514,7 +23514,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23547,7 +23547,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>389</m_topoIndex>
+				<m_topoIndex>440</m_topoIndex>
 				<m_clusterGroupNumber>36</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_438">
@@ -23556,7 +23556,7 @@
 						<type>0</type>
 						<id>444</id>
 						<name>Aba_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>262</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23571,7 +23571,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>262</second>
@@ -23603,8 +23603,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>390</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>441</m_topoIndex>
 				<m_clusterGroupNumber>36</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_439">
@@ -23613,7 +23613,7 @@
 						<type>0</type>
 						<id>445</id>
 						<name>xor_ln263</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>263</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23628,7 +23628,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>263</second>
@@ -23661,7 +23661,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>391</m_topoIndex>
+				<m_topoIndex>442</m_topoIndex>
 				<m_clusterGroupNumber>37</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_440">
@@ -23670,7 +23670,7 @@
 						<type>0</type>
 						<id>446</id>
 						<name>and_ln263</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>263</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23685,7 +23685,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>263</second>
@@ -23718,7 +23718,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>392</m_topoIndex>
+				<m_topoIndex>443</m_topoIndex>
 				<m_clusterGroupNumber>37</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_441">
@@ -23727,7 +23727,7 @@
 						<type>0</type>
 						<id>447</id>
 						<name>Abe_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>263</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23742,7 +23742,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>263</second>
@@ -23774,8 +23774,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>393</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>444</m_topoIndex>
 				<m_clusterGroupNumber>37</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_442">
@@ -23784,7 +23784,7 @@
 						<type>0</type>
 						<id>448</id>
 						<name>xor_ln264</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23799,7 +23799,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>264</second>
@@ -23832,7 +23832,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>394</m_topoIndex>
+				<m_topoIndex>445</m_topoIndex>
 				<m_clusterGroupNumber>38</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_443">
@@ -23841,7 +23841,7 @@
 						<type>0</type>
 						<id>449</id>
 						<name>and_ln264</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23856,7 +23856,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>264</second>
@@ -23889,7 +23889,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>395</m_topoIndex>
+				<m_topoIndex>446</m_topoIndex>
 				<m_clusterGroupNumber>38</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_444">
@@ -23898,7 +23898,7 @@
 						<type>0</type>
 						<id>450</id>
 						<name>Abi_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23913,7 +23913,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>264</second>
@@ -23945,8 +23945,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>396</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>447</m_topoIndex>
 				<m_clusterGroupNumber>38</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_445">
@@ -23955,7 +23955,7 @@
 						<type>0</type>
 						<id>451</id>
 						<name>xor_ln265</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>265</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -23970,7 +23970,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>265</second>
@@ -24003,7 +24003,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>397</m_topoIndex>
+				<m_topoIndex>448</m_topoIndex>
 				<m_clusterGroupNumber>39</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_446">
@@ -24012,7 +24012,7 @@
 						<type>0</type>
 						<id>452</id>
 						<name>and_ln265</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>265</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24027,7 +24027,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>265</second>
@@ -24060,7 +24060,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>398</m_topoIndex>
+				<m_topoIndex>449</m_topoIndex>
 				<m_clusterGroupNumber>39</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_447">
@@ -24069,7 +24069,7 @@
 						<type>0</type>
 						<id>453</id>
 						<name>Abo_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>265</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24084,7 +24084,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>265</second>
@@ -24116,8 +24116,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>399</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>450</m_topoIndex>
 				<m_clusterGroupNumber>39</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_448">
@@ -24126,7 +24126,7 @@
 						<type>0</type>
 						<id>454</id>
 						<name>xor_ln266</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>266</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24141,7 +24141,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>266</second>
@@ -24174,7 +24174,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>400</m_topoIndex>
+				<m_topoIndex>451</m_topoIndex>
 				<m_clusterGroupNumber>40</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_449">
@@ -24183,7 +24183,7 @@
 						<type>0</type>
 						<id>455</id>
 						<name>and_ln266</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>266</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24198,7 +24198,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>266</second>
@@ -24231,7 +24231,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>401</m_topoIndex>
+				<m_topoIndex>452</m_topoIndex>
 				<m_clusterGroupNumber>40</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_450">
@@ -24240,7 +24240,7 @@
 						<type>0</type>
 						<id>456</id>
 						<name>Abu_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>266</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24255,7 +24255,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>266</second>
@@ -24287,8 +24287,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>402</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>453</m_topoIndex>
 				<m_clusterGroupNumber>40</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_451">
@@ -24297,7 +24297,7 @@
 						<type>0</type>
 						<id>457</id>
 						<name>Ebo_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>271</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24312,7 +24312,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>271</second>
@@ -24344,8 +24344,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>403</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>454</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_452">
@@ -24354,7 +24354,7 @@
 						<type>0</type>
 						<id>458</id>
 						<name>trunc_ln272</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>272</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24369,7 +24369,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>272</second>
@@ -24401,7 +24401,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>404</m_topoIndex>
+				<m_topoIndex>455</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_453">
@@ -24410,7 +24410,7 @@
 						<type>0</type>
 						<id>459</id>
 						<name>lshr_ln28</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>272</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24425,7 +24425,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>272</second>
@@ -24460,7 +24460,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>405</m_topoIndex>
+				<m_topoIndex>456</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_454">
@@ -24469,7 +24469,7 @@
 						<type>0</type>
 						<id>460</id>
 						<name>BCa_8</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>272</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24484,7 +24484,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>272</second>
@@ -24518,7 +24518,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>514</m_topoIndex>
+				<m_topoIndex>457</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_455">
@@ -24527,7 +24527,7 @@
 						<type>0</type>
 						<id>461</id>
 						<name>Egu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>273</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24542,7 +24542,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>273</second>
@@ -24574,8 +24574,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>406</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>458</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_456">
@@ -24584,7 +24584,7 @@
 						<type>0</type>
 						<id>462</id>
 						<name>trunc_ln274</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>274</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24599,7 +24599,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>274</second>
@@ -24631,7 +24631,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>407</m_topoIndex>
+				<m_topoIndex>459</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_457">
@@ -24640,7 +24640,7 @@
 						<type>0</type>
 						<id>463</id>
 						<name>lshr_ln29</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>274</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24655,7 +24655,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>274</second>
@@ -24690,7 +24690,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>408</m_topoIndex>
+				<m_topoIndex>460</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_458">
@@ -24699,7 +24699,7 @@
 						<type>0</type>
 						<id>464</id>
 						<name>BCe_8</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>274</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24714,7 +24714,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>274</second>
@@ -24748,7 +24748,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>515</m_topoIndex>
+				<m_topoIndex>461</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_459">
@@ -24757,7 +24757,7 @@
 						<type>0</type>
 						<id>465</id>
 						<name>Eka_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>275</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24772,7 +24772,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>275</second>
@@ -24804,8 +24804,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>409</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>462</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_460">
@@ -24814,7 +24814,7 @@
 						<type>0</type>
 						<id>466</id>
 						<name>trunc_ln276</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>276</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24829,7 +24829,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>276</second>
@@ -24861,7 +24861,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>410</m_topoIndex>
+				<m_topoIndex>463</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_461">
@@ -24870,7 +24870,7 @@
 						<type>0</type>
 						<id>467</id>
 						<name>lshr_ln30</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>276</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24885,7 +24885,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>276</second>
@@ -24920,7 +24920,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>411</m_topoIndex>
+				<m_topoIndex>464</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_462">
@@ -24929,7 +24929,7 @@
 						<type>0</type>
 						<id>468</id>
 						<name>BCi_8</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>276</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -24944,7 +24944,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>276</second>
@@ -24978,7 +24978,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>516</m_topoIndex>
+				<m_topoIndex>465</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_463">
@@ -24987,7 +24987,7 @@
 						<type>0</type>
 						<id>469</id>
 						<name>Eme_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>277</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25002,7 +25002,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>277</second>
@@ -25034,8 +25034,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>412</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>466</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_464">
@@ -25044,7 +25044,7 @@
 						<type>0</type>
 						<id>470</id>
 						<name>trunc_ln278</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>278</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25059,7 +25059,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>278</second>
@@ -25091,7 +25091,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>413</m_topoIndex>
+				<m_topoIndex>467</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_465">
@@ -25100,7 +25100,7 @@
 						<type>0</type>
 						<id>471</id>
 						<name>lshr_ln31</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>278</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25115,7 +25115,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>278</second>
@@ -25150,7 +25150,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>414</m_topoIndex>
+				<m_topoIndex>468</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_466">
@@ -25159,7 +25159,7 @@
 						<type>0</type>
 						<id>472</id>
 						<name>BCo_8</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>278</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25174,7 +25174,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>278</second>
@@ -25208,7 +25208,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>517</m_topoIndex>
+				<m_topoIndex>469</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_467">
@@ -25217,7 +25217,7 @@
 						<type>0</type>
 						<id>473</id>
 						<name>Esi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>279</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25232,7 +25232,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>279</second>
@@ -25264,8 +25264,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>415</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>470</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_468">
@@ -25274,7 +25274,7 @@
 						<type>0</type>
 						<id>474</id>
 						<name>trunc_ln280</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>280</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25289,7 +25289,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>280</second>
@@ -25321,7 +25321,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>416</m_topoIndex>
+				<m_topoIndex>471</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_469">
@@ -25330,7 +25330,7 @@
 						<type>0</type>
 						<id>475</id>
 						<name>lshr_ln32</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>280</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25345,7 +25345,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>280</second>
@@ -25380,7 +25380,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>417</m_topoIndex>
+				<m_topoIndex>472</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_470">
@@ -25389,7 +25389,7 @@
 						<type>0</type>
 						<id>476</id>
 						<name>BCu_8</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>280</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25404,7 +25404,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>280</second>
@@ -25438,7 +25438,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>518</m_topoIndex>
+				<m_topoIndex>473</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_471">
@@ -25447,7 +25447,7 @@
 						<type>0</type>
 						<id>477</id>
 						<name>xor_ln281</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>281</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25462,7 +25462,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>281</second>
@@ -25495,7 +25495,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>519</m_topoIndex>
+				<m_topoIndex>474</m_topoIndex>
 				<m_clusterGroupNumber>41</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_472">
@@ -25504,7 +25504,7 @@
 						<type>0</type>
 						<id>478</id>
 						<name>and_ln281</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>281</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25519,7 +25519,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>281</second>
@@ -25552,7 +25552,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>520</m_topoIndex>
+				<m_topoIndex>475</m_topoIndex>
 				<m_clusterGroupNumber>41</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_473">
@@ -25561,7 +25561,7 @@
 						<type>0</type>
 						<id>479</id>
 						<name>Aga_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>281</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25576,7 +25576,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>281</second>
@@ -25608,8 +25608,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>521</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>476</m_topoIndex>
 				<m_clusterGroupNumber>41</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_474">
@@ -25618,7 +25618,7 @@
 						<type>0</type>
 						<id>480</id>
 						<name>xor_ln282</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>282</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25633,7 +25633,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>282</second>
@@ -25666,7 +25666,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>522</m_topoIndex>
+				<m_topoIndex>477</m_topoIndex>
 				<m_clusterGroupNumber>42</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_475">
@@ -25675,7 +25675,7 @@
 						<type>0</type>
 						<id>481</id>
 						<name>and_ln282</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>282</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25690,7 +25690,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>282</second>
@@ -25723,7 +25723,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>523</m_topoIndex>
+				<m_topoIndex>478</m_topoIndex>
 				<m_clusterGroupNumber>42</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_476">
@@ -25732,7 +25732,7 @@
 						<type>0</type>
 						<id>482</id>
 						<name>Age_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>282</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25747,7 +25747,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>282</second>
@@ -25779,8 +25779,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>524</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>479</m_topoIndex>
 				<m_clusterGroupNumber>42</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_477">
@@ -25789,7 +25789,7 @@
 						<type>0</type>
 						<id>483</id>
 						<name>xor_ln283</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>283</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25804,7 +25804,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>283</second>
@@ -25837,7 +25837,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>525</m_topoIndex>
+				<m_topoIndex>480</m_topoIndex>
 				<m_clusterGroupNumber>43</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_478">
@@ -25846,7 +25846,7 @@
 						<type>0</type>
 						<id>484</id>
 						<name>and_ln283</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>283</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25861,7 +25861,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>283</second>
@@ -25894,7 +25894,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>526</m_topoIndex>
+				<m_topoIndex>481</m_topoIndex>
 				<m_clusterGroupNumber>43</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_479">
@@ -25903,7 +25903,7 @@
 						<type>0</type>
 						<id>485</id>
 						<name>Agi_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>283</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25918,7 +25918,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>283</second>
@@ -25950,8 +25950,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>527</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>482</m_topoIndex>
 				<m_clusterGroupNumber>43</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_480">
@@ -25960,7 +25960,7 @@
 						<type>0</type>
 						<id>486</id>
 						<name>xor_ln284</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>284</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -25975,7 +25975,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>284</second>
@@ -26008,7 +26008,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>528</m_topoIndex>
+				<m_topoIndex>483</m_topoIndex>
 				<m_clusterGroupNumber>44</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_481">
@@ -26017,7 +26017,7 @@
 						<type>0</type>
 						<id>487</id>
 						<name>and_ln284</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>284</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26032,7 +26032,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>284</second>
@@ -26065,7 +26065,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>529</m_topoIndex>
+				<m_topoIndex>484</m_topoIndex>
 				<m_clusterGroupNumber>44</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_482">
@@ -26074,7 +26074,7 @@
 						<type>0</type>
 						<id>488</id>
 						<name>Ago_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>284</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26089,7 +26089,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>284</second>
@@ -26121,8 +26121,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>530</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>485</m_topoIndex>
 				<m_clusterGroupNumber>44</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_483">
@@ -26131,7 +26131,7 @@
 						<type>0</type>
 						<id>489</id>
 						<name>xor_ln285</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>285</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26146,7 +26146,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>285</second>
@@ -26179,7 +26179,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>531</m_topoIndex>
+				<m_topoIndex>486</m_topoIndex>
 				<m_clusterGroupNumber>45</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_484">
@@ -26188,7 +26188,7 @@
 						<type>0</type>
 						<id>490</id>
 						<name>and_ln285</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>285</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26203,7 +26203,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>285</second>
@@ -26236,7 +26236,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>532</m_topoIndex>
+				<m_topoIndex>487</m_topoIndex>
 				<m_clusterGroupNumber>45</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_485">
@@ -26245,7 +26245,7 @@
 						<type>0</type>
 						<id>491</id>
 						<name>Agu_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>285</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26260,7 +26260,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>285</second>
@@ -26292,8 +26292,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>533</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>488</m_topoIndex>
 				<m_clusterGroupNumber>45</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_486">
@@ -26302,7 +26302,7 @@
 						<type>0</type>
 						<id>492</id>
 						<name>Ebe_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>290</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26317,7 +26317,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>290</second>
@@ -26349,8 +26349,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>418</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>489</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_487">
@@ -26359,7 +26359,7 @@
 						<type>0</type>
 						<id>493</id>
 						<name>trunc_ln291</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>291</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26374,7 +26374,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>291</second>
@@ -26406,7 +26406,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>419</m_topoIndex>
+				<m_topoIndex>490</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_488">
@@ -26414,8 +26414,8 @@
 					<Obj>
 						<type>0</type>
 						<id>494</id>
-						<name>tmp_278</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<name>tmp_218</name>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>291</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26430,7 +26430,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>291</second>
@@ -26464,7 +26464,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>420</m_topoIndex>
+				<m_topoIndex>491</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_489">
@@ -26473,7 +26473,7 @@
 						<type>0</type>
 						<id>495</id>
 						<name>BCa_9</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>291</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26488,7 +26488,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>291</second>
@@ -26522,7 +26522,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>534</m_topoIndex>
+				<m_topoIndex>492</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_490">
@@ -26531,7 +26531,7 @@
 						<type>0</type>
 						<id>496</id>
 						<name>Egi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>292</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26546,7 +26546,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>292</second>
@@ -26578,8 +26578,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>421</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>493</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_491">
@@ -26588,7 +26588,7 @@
 						<type>0</type>
 						<id>497</id>
 						<name>trunc_ln293</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>293</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26603,7 +26603,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>293</second>
@@ -26635,7 +26635,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>422</m_topoIndex>
+				<m_topoIndex>494</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_492">
@@ -26644,7 +26644,7 @@
 						<type>0</type>
 						<id>498</id>
 						<name>lshr_ln33</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>293</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26659,7 +26659,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>293</second>
@@ -26694,7 +26694,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>423</m_topoIndex>
+				<m_topoIndex>495</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_493">
@@ -26703,7 +26703,7 @@
 						<type>0</type>
 						<id>499</id>
 						<name>BCe_9</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>293</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26718,7 +26718,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>293</second>
@@ -26752,7 +26752,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>535</m_topoIndex>
+				<m_topoIndex>496</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_494">
@@ -26761,7 +26761,7 @@
 						<type>0</type>
 						<id>500</id>
 						<name>Eko_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>294</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26776,7 +26776,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>294</second>
@@ -26808,8 +26808,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>424</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>497</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_495">
@@ -26818,7 +26818,7 @@
 						<type>0</type>
 						<id>501</id>
 						<name>trunc_ln295</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>295</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26833,7 +26833,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>295</second>
@@ -26865,7 +26865,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>425</m_topoIndex>
+				<m_topoIndex>498</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_496">
@@ -26874,7 +26874,7 @@
 						<type>0</type>
 						<id>502</id>
 						<name>lshr_ln34</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>295</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26889,7 +26889,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>295</second>
@@ -26924,7 +26924,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>426</m_topoIndex>
+				<m_topoIndex>499</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_497">
@@ -26933,7 +26933,7 @@
 						<type>0</type>
 						<id>503</id>
 						<name>BCi_9</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>295</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -26948,7 +26948,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>295</second>
@@ -26982,7 +26982,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>536</m_topoIndex>
+				<m_topoIndex>500</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_498">
@@ -26991,7 +26991,7 @@
 						<type>0</type>
 						<id>504</id>
 						<name>Emu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>296</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27006,7 +27006,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>296</second>
@@ -27038,8 +27038,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>427</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>501</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_499">
@@ -27048,7 +27048,7 @@
 						<type>0</type>
 						<id>505</id>
 						<name>trunc_ln297</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>297</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27063,7 +27063,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>297</second>
@@ -27095,7 +27095,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>428</m_topoIndex>
+				<m_topoIndex>502</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_500">
@@ -27104,7 +27104,7 @@
 						<type>0</type>
 						<id>506</id>
 						<name>lshr_ln35</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>297</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27119,7 +27119,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>297</second>
@@ -27154,7 +27154,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>429</m_topoIndex>
+				<m_topoIndex>503</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_501">
@@ -27163,7 +27163,7 @@
 						<type>0</type>
 						<id>507</id>
 						<name>BCo_9</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>297</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27178,7 +27178,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>297</second>
@@ -27212,7 +27212,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>537</m_topoIndex>
+				<m_topoIndex>504</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_502">
@@ -27221,7 +27221,7 @@
 						<type>0</type>
 						<id>508</id>
 						<name>Esa_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>298</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27236,7 +27236,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>298</second>
@@ -27268,8 +27268,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>430</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>505</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_503">
@@ -27278,7 +27278,7 @@
 						<type>0</type>
 						<id>509</id>
 						<name>trunc_ln299</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>299</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27293,7 +27293,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>299</second>
@@ -27325,7 +27325,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>431</m_topoIndex>
+				<m_topoIndex>506</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_504">
@@ -27334,7 +27334,7 @@
 						<type>0</type>
 						<id>510</id>
 						<name>lshr_ln36</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>299</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27349,7 +27349,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>299</second>
@@ -27384,7 +27384,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>432</m_topoIndex>
+				<m_topoIndex>507</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_505">
@@ -27393,7 +27393,7 @@
 						<type>0</type>
 						<id>511</id>
 						<name>BCu_9</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>299</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27408,7 +27408,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>299</second>
@@ -27442,7 +27442,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>538</m_topoIndex>
+				<m_topoIndex>508</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_506">
@@ -27451,7 +27451,7 @@
 						<type>0</type>
 						<id>512</id>
 						<name>xor_ln300</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>300</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27466,7 +27466,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>300</second>
@@ -27499,7 +27499,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>539</m_topoIndex>
+				<m_topoIndex>509</m_topoIndex>
 				<m_clusterGroupNumber>46</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_507">
@@ -27508,7 +27508,7 @@
 						<type>0</type>
 						<id>513</id>
 						<name>and_ln300</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>300</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27523,7 +27523,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>300</second>
@@ -27556,7 +27556,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>540</m_topoIndex>
+				<m_topoIndex>510</m_topoIndex>
 				<m_clusterGroupNumber>46</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_508">
@@ -27565,7 +27565,7 @@
 						<type>0</type>
 						<id>514</id>
 						<name>Aka_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>300</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27580,7 +27580,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>300</second>
@@ -27612,8 +27612,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>541</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>511</m_topoIndex>
 				<m_clusterGroupNumber>46</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_509">
@@ -27622,7 +27622,7 @@
 						<type>0</type>
 						<id>515</id>
 						<name>xor_ln301</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>301</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27637,7 +27637,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>301</second>
@@ -27670,7 +27670,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>542</m_topoIndex>
+				<m_topoIndex>512</m_topoIndex>
 				<m_clusterGroupNumber>47</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_510">
@@ -27679,7 +27679,7 @@
 						<type>0</type>
 						<id>516</id>
 						<name>and_ln301</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>301</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27694,7 +27694,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>301</second>
@@ -27727,7 +27727,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>543</m_topoIndex>
+				<m_topoIndex>513</m_topoIndex>
 				<m_clusterGroupNumber>47</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_511">
@@ -27736,7 +27736,7 @@
 						<type>0</type>
 						<id>517</id>
 						<name>Ake_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>301</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27751,7 +27751,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>301</second>
@@ -27783,8 +27783,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>544</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>514</m_topoIndex>
 				<m_clusterGroupNumber>47</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_512">
@@ -27793,7 +27793,7 @@
 						<type>0</type>
 						<id>518</id>
 						<name>xor_ln302</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>302</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27808,7 +27808,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>302</second>
@@ -27841,7 +27841,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>545</m_topoIndex>
+				<m_topoIndex>515</m_topoIndex>
 				<m_clusterGroupNumber>48</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_513">
@@ -27850,7 +27850,7 @@
 						<type>0</type>
 						<id>519</id>
 						<name>and_ln302</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>302</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27865,7 +27865,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>302</second>
@@ -27898,7 +27898,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>546</m_topoIndex>
+				<m_topoIndex>516</m_topoIndex>
 				<m_clusterGroupNumber>48</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_514">
@@ -27907,7 +27907,7 @@
 						<type>0</type>
 						<id>520</id>
 						<name>Aki_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>302</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27922,7 +27922,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>302</second>
@@ -27954,8 +27954,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>547</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>517</m_topoIndex>
 				<m_clusterGroupNumber>48</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_515">
@@ -27964,7 +27964,7 @@
 						<type>0</type>
 						<id>521</id>
 						<name>xor_ln303</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>303</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -27979,7 +27979,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>303</second>
@@ -28012,7 +28012,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>548</m_topoIndex>
+				<m_topoIndex>518</m_topoIndex>
 				<m_clusterGroupNumber>49</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_516">
@@ -28021,7 +28021,7 @@
 						<type>0</type>
 						<id>522</id>
 						<name>and_ln303</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>303</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28036,7 +28036,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>303</second>
@@ -28069,7 +28069,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>549</m_topoIndex>
+				<m_topoIndex>519</m_topoIndex>
 				<m_clusterGroupNumber>49</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_517">
@@ -28078,7 +28078,7 @@
 						<type>0</type>
 						<id>523</id>
 						<name>Ako_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>303</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28093,7 +28093,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>303</second>
@@ -28125,8 +28125,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>550</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>520</m_topoIndex>
 				<m_clusterGroupNumber>49</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_518">
@@ -28135,7 +28135,7 @@
 						<type>0</type>
 						<id>524</id>
 						<name>xor_ln304</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>304</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28150,7 +28150,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>304</second>
@@ -28183,7 +28183,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>551</m_topoIndex>
+				<m_topoIndex>521</m_topoIndex>
 				<m_clusterGroupNumber>50</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_519">
@@ -28192,7 +28192,7 @@
 						<type>0</type>
 						<id>525</id>
 						<name>and_ln304</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>304</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28207,7 +28207,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>304</second>
@@ -28240,7 +28240,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>552</m_topoIndex>
+				<m_topoIndex>522</m_topoIndex>
 				<m_clusterGroupNumber>50</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_520">
@@ -28249,7 +28249,7 @@
 						<type>0</type>
 						<id>526</id>
 						<name>Aku_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>304</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28264,7 +28264,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>304</second>
@@ -28296,8 +28296,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>553</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>523</m_topoIndex>
 				<m_clusterGroupNumber>50</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_521">
@@ -28306,7 +28306,7 @@
 						<type>0</type>
 						<id>527</id>
 						<name>Ebu_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>309</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28321,7 +28321,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>309</second>
@@ -28353,8 +28353,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>433</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>524</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_522">
@@ -28363,7 +28363,7 @@
 						<type>0</type>
 						<id>528</id>
 						<name>trunc_ln310</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>310</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28378,7 +28378,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>310</second>
@@ -28410,7 +28410,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>434</m_topoIndex>
+				<m_topoIndex>525</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_523">
@@ -28419,7 +28419,7 @@
 						<type>0</type>
 						<id>529</id>
 						<name>lshr_ln37</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>310</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28434,7 +28434,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>310</second>
@@ -28469,7 +28469,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>435</m_topoIndex>
+				<m_topoIndex>526</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_524">
@@ -28478,7 +28478,7 @@
 						<type>0</type>
 						<id>530</id>
 						<name>BCa_10</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>310</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28493,7 +28493,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>310</second>
@@ -28527,7 +28527,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>554</m_topoIndex>
+				<m_topoIndex>527</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_525">
@@ -28536,7 +28536,7 @@
 						<type>0</type>
 						<id>531</id>
 						<name>Ega_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>311</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28551,7 +28551,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>311</second>
@@ -28583,8 +28583,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>436</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>528</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_526">
@@ -28593,7 +28593,7 @@
 						<type>0</type>
 						<id>532</id>
 						<name>trunc_ln312</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>312</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28608,7 +28608,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>312</second>
@@ -28640,7 +28640,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>437</m_topoIndex>
+				<m_topoIndex>529</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_527">
@@ -28649,7 +28649,7 @@
 						<type>0</type>
 						<id>533</id>
 						<name>lshr_ln38</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>312</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28664,7 +28664,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>312</second>
@@ -28699,7 +28699,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>438</m_topoIndex>
+				<m_topoIndex>530</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_528">
@@ -28708,7 +28708,7 @@
 						<type>0</type>
 						<id>534</id>
 						<name>BCe_10</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>312</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28723,7 +28723,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>312</second>
@@ -28757,7 +28757,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>555</m_topoIndex>
+				<m_topoIndex>531</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_529">
@@ -28766,7 +28766,7 @@
 						<type>0</type>
 						<id>535</id>
 						<name>Eke_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>313</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28781,7 +28781,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>313</second>
@@ -28813,8 +28813,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>439</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>532</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_530">
@@ -28823,7 +28823,7 @@
 						<type>0</type>
 						<id>536</id>
 						<name>trunc_ln314</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>314</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28838,7 +28838,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>314</second>
@@ -28870,7 +28870,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>440</m_topoIndex>
+				<m_topoIndex>533</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_531">
@@ -28879,7 +28879,7 @@
 						<type>0</type>
 						<id>537</id>
 						<name>lshr_ln39</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>314</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28894,7 +28894,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>314</second>
@@ -28929,7 +28929,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>441</m_topoIndex>
+				<m_topoIndex>534</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_532">
@@ -28938,7 +28938,7 @@
 						<type>0</type>
 						<id>538</id>
 						<name>BCi_10</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>314</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -28953,7 +28953,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>314</second>
@@ -28987,7 +28987,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>556</m_topoIndex>
+				<m_topoIndex>535</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_533">
@@ -28996,7 +28996,7 @@
 						<type>0</type>
 						<id>539</id>
 						<name>Emi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>315</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29011,7 +29011,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>315</second>
@@ -29043,8 +29043,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>442</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>536</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_534">
@@ -29053,7 +29053,7 @@
 						<type>0</type>
 						<id>540</id>
 						<name>trunc_ln316</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>316</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29068,7 +29068,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>316</second>
@@ -29100,7 +29100,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>443</m_topoIndex>
+				<m_topoIndex>537</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_535">
@@ -29109,7 +29109,7 @@
 						<type>0</type>
 						<id>541</id>
 						<name>lshr_ln40</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>316</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29124,7 +29124,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>316</second>
@@ -29159,7 +29159,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>444</m_topoIndex>
+				<m_topoIndex>538</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_536">
@@ -29168,7 +29168,7 @@
 						<type>0</type>
 						<id>542</id>
 						<name>BCo_10</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>316</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29183,7 +29183,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>316</second>
@@ -29217,7 +29217,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>557</m_topoIndex>
+				<m_topoIndex>539</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_537">
@@ -29226,7 +29226,7 @@
 						<type>0</type>
 						<id>543</id>
 						<name>Eso_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>317</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29241,7 +29241,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>317</second>
@@ -29273,8 +29273,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>445</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>540</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_538">
@@ -29283,7 +29283,7 @@
 						<type>0</type>
 						<id>544</id>
 						<name>trunc_ln318</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>318</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29298,7 +29298,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>318</second>
@@ -29330,7 +29330,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>446</m_topoIndex>
+				<m_topoIndex>541</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_539">
@@ -29339,7 +29339,7 @@
 						<type>0</type>
 						<id>545</id>
 						<name>lshr_ln41</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>318</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29354,7 +29354,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>318</second>
@@ -29389,7 +29389,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>447</m_topoIndex>
+				<m_topoIndex>542</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_540">
@@ -29398,7 +29398,7 @@
 						<type>0</type>
 						<id>546</id>
 						<name>BCu_10</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>318</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29413,7 +29413,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>318</second>
@@ -29447,7 +29447,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>558</m_topoIndex>
+				<m_topoIndex>543</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_541">
@@ -29456,7 +29456,7 @@
 						<type>0</type>
 						<id>547</id>
 						<name>xor_ln319</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>319</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29471,7 +29471,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>319</second>
@@ -29504,7 +29504,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>559</m_topoIndex>
+				<m_topoIndex>544</m_topoIndex>
 				<m_clusterGroupNumber>51</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_542">
@@ -29513,7 +29513,7 @@
 						<type>0</type>
 						<id>548</id>
 						<name>and_ln319</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>319</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29528,7 +29528,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>319</second>
@@ -29561,7 +29561,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>560</m_topoIndex>
+				<m_topoIndex>545</m_topoIndex>
 				<m_clusterGroupNumber>51</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_543">
@@ -29570,7 +29570,7 @@
 						<type>0</type>
 						<id>549</id>
 						<name>Ama_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>319</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29585,7 +29585,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>319</second>
@@ -29617,8 +29617,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>561</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>546</m_topoIndex>
 				<m_clusterGroupNumber>51</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_544">
@@ -29627,7 +29627,7 @@
 						<type>0</type>
 						<id>550</id>
 						<name>xor_ln320</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>320</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29642,7 +29642,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>320</second>
@@ -29675,7 +29675,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>562</m_topoIndex>
+				<m_topoIndex>547</m_topoIndex>
 				<m_clusterGroupNumber>52</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_545">
@@ -29684,7 +29684,7 @@
 						<type>0</type>
 						<id>551</id>
 						<name>and_ln320</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>320</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29699,7 +29699,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>320</second>
@@ -29732,7 +29732,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>563</m_topoIndex>
+				<m_topoIndex>548</m_topoIndex>
 				<m_clusterGroupNumber>52</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_546">
@@ -29741,7 +29741,7 @@
 						<type>0</type>
 						<id>552</id>
 						<name>Ame_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>320</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29756,7 +29756,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>320</second>
@@ -29788,8 +29788,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>564</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>549</m_topoIndex>
 				<m_clusterGroupNumber>52</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_547">
@@ -29798,7 +29798,7 @@
 						<type>0</type>
 						<id>553</id>
 						<name>xor_ln321</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>321</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29813,7 +29813,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>321</second>
@@ -29846,7 +29846,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>565</m_topoIndex>
+				<m_topoIndex>550</m_topoIndex>
 				<m_clusterGroupNumber>53</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_548">
@@ -29855,7 +29855,7 @@
 						<type>0</type>
 						<id>554</id>
 						<name>and_ln321</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>321</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29870,7 +29870,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>321</second>
@@ -29903,7 +29903,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>566</m_topoIndex>
+				<m_topoIndex>551</m_topoIndex>
 				<m_clusterGroupNumber>53</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_549">
@@ -29912,7 +29912,7 @@
 						<type>0</type>
 						<id>555</id>
 						<name>Ami_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>321</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29927,7 +29927,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>321</second>
@@ -29959,8 +29959,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>567</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>552</m_topoIndex>
 				<m_clusterGroupNumber>53</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_550">
@@ -29969,7 +29969,7 @@
 						<type>0</type>
 						<id>556</id>
 						<name>xor_ln322</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>322</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -29984,7 +29984,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>322</second>
@@ -30017,7 +30017,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>568</m_topoIndex>
+				<m_topoIndex>553</m_topoIndex>
 				<m_clusterGroupNumber>54</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_551">
@@ -30026,7 +30026,7 @@
 						<type>0</type>
 						<id>557</id>
 						<name>and_ln322</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>322</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30041,7 +30041,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>322</second>
@@ -30074,7 +30074,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>569</m_topoIndex>
+				<m_topoIndex>554</m_topoIndex>
 				<m_clusterGroupNumber>54</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_552">
@@ -30083,7 +30083,7 @@
 						<type>0</type>
 						<id>558</id>
 						<name>Amo_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>322</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30098,7 +30098,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>322</second>
@@ -30130,8 +30130,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>570</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>555</m_topoIndex>
 				<m_clusterGroupNumber>54</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_553">
@@ -30140,7 +30140,7 @@
 						<type>0</type>
 						<id>559</id>
 						<name>xor_ln323</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>323</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30155,7 +30155,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>323</second>
@@ -30188,7 +30188,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>571</m_topoIndex>
+				<m_topoIndex>556</m_topoIndex>
 				<m_clusterGroupNumber>55</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_554">
@@ -30197,7 +30197,7 @@
 						<type>0</type>
 						<id>560</id>
 						<name>and_ln323</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>323</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30212,7 +30212,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>323</second>
@@ -30245,7 +30245,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>572</m_topoIndex>
+				<m_topoIndex>557</m_topoIndex>
 				<m_clusterGroupNumber>55</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_555">
@@ -30254,7 +30254,7 @@
 						<type>0</type>
 						<id>561</id>
 						<name>Amu_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>323</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30269,7 +30269,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>323</second>
@@ -30301,8 +30301,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>573</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>558</m_topoIndex>
 				<m_clusterGroupNumber>55</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_556">
@@ -30311,7 +30311,7 @@
 						<type>0</type>
 						<id>562</id>
 						<name>Ebi_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>328</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30326,7 +30326,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>328</second>
@@ -30358,8 +30358,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>448</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>559</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_557">
@@ -30368,7 +30368,7 @@
 						<type>0</type>
 						<id>563</id>
 						<name>trunc_ln329</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>329</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30383,7 +30383,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>329</second>
@@ -30415,7 +30415,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>449</m_topoIndex>
+				<m_topoIndex>560</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_558">
@@ -30424,7 +30424,7 @@
 						<type>0</type>
 						<id>564</id>
 						<name>lshr_ln42</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>329</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30439,7 +30439,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>329</second>
@@ -30474,7 +30474,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>450</m_topoIndex>
+				<m_topoIndex>561</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_559">
@@ -30483,7 +30483,7 @@
 						<type>0</type>
 						<id>565</id>
 						<name>BCa_11</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>329</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30498,7 +30498,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>329</second>
@@ -30532,7 +30532,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>574</m_topoIndex>
+				<m_topoIndex>562</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_560">
@@ -30541,7 +30541,7 @@
 						<type>0</type>
 						<id>566</id>
 						<name>Ego_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>330</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30556,7 +30556,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>330</second>
@@ -30588,8 +30588,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>451</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>563</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_561">
@@ -30598,7 +30598,7 @@
 						<type>0</type>
 						<id>567</id>
 						<name>trunc_ln331</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>331</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30613,7 +30613,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>331</second>
@@ -30645,7 +30645,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>452</m_topoIndex>
+				<m_topoIndex>564</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_562">
@@ -30654,7 +30654,7 @@
 						<type>0</type>
 						<id>568</id>
 						<name>lshr_ln43</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>331</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30669,7 +30669,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>331</second>
@@ -30704,7 +30704,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>453</m_topoIndex>
+				<m_topoIndex>565</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_563">
@@ -30713,7 +30713,7 @@
 						<type>0</type>
 						<id>569</id>
 						<name>BCe_11</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>331</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30728,7 +30728,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>331</second>
@@ -30762,7 +30762,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>575</m_topoIndex>
+				<m_topoIndex>566</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_564">
@@ -30771,7 +30771,7 @@
 						<type>0</type>
 						<id>570</id>
 						<name>Eku_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>332</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30786,7 +30786,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>332</second>
@@ -30818,8 +30818,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>454</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>567</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_565">
@@ -30828,7 +30828,7 @@
 						<type>0</type>
 						<id>571</id>
 						<name>trunc_ln333</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>333</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30843,7 +30843,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>333</second>
@@ -30875,7 +30875,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>455</m_topoIndex>
+				<m_topoIndex>568</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_566">
@@ -30884,7 +30884,7 @@
 						<type>0</type>
 						<id>572</id>
 						<name>lshr_ln44</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>333</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30899,7 +30899,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>333</second>
@@ -30934,7 +30934,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>456</m_topoIndex>
+				<m_topoIndex>569</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_567">
@@ -30943,7 +30943,7 @@
 						<type>0</type>
 						<id>573</id>
 						<name>BCi_11</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>333</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -30958,7 +30958,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>333</second>
@@ -30992,7 +30992,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>576</m_topoIndex>
+				<m_topoIndex>570</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_568">
@@ -31001,7 +31001,7 @@
 						<type>0</type>
 						<id>574</id>
 						<name>Ema_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>334</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31016,7 +31016,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>334</second>
@@ -31048,8 +31048,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>457</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>571</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_569">
@@ -31058,7 +31058,7 @@
 						<type>0</type>
 						<id>575</id>
 						<name>trunc_ln335</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>335</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31073,7 +31073,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>335</second>
@@ -31105,7 +31105,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>458</m_topoIndex>
+				<m_topoIndex>572</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_570">
@@ -31114,7 +31114,7 @@
 						<type>0</type>
 						<id>576</id>
 						<name>lshr_ln45</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>335</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31129,7 +31129,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>335</second>
@@ -31164,7 +31164,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>459</m_topoIndex>
+				<m_topoIndex>573</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_571">
@@ -31173,7 +31173,7 @@
 						<type>0</type>
 						<id>577</id>
 						<name>BCo_11</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>335</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31188,7 +31188,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>335</second>
@@ -31222,7 +31222,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>577</m_topoIndex>
+				<m_topoIndex>574</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_572">
@@ -31231,7 +31231,7 @@
 						<type>0</type>
 						<id>578</id>
 						<name>Ese_1</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>336</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31246,7 +31246,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>336</second>
@@ -31278,8 +31278,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
-				<m_topoIndex>460</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>575</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_573">
@@ -31288,7 +31288,7 @@
 						<type>0</type>
 						<id>579</id>
 						<name>trunc_ln337</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>337</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31303,7 +31303,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>337</second>
@@ -31335,7 +31335,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>461</m_topoIndex>
+				<m_topoIndex>576</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_574">
@@ -31344,7 +31344,7 @@
 						<type>0</type>
 						<id>580</id>
 						<name>lshr_ln46</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>337</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31359,7 +31359,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>337</second>
@@ -31394,7 +31394,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>462</m_topoIndex>
+				<m_topoIndex>577</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_575">
@@ -31403,7 +31403,7 @@
 						<type>0</type>
 						<id>581</id>
 						<name>BCu_11</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>337</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31418,7 +31418,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>337</second>
@@ -31461,7 +31461,7 @@
 						<type>0</type>
 						<id>582</id>
 						<name>xor_ln338</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>338</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31476,7 +31476,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>338</second>
@@ -31518,7 +31518,7 @@
 						<type>0</type>
 						<id>583</id>
 						<name>and_ln338</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>338</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31533,7 +31533,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>338</second>
@@ -31575,7 +31575,7 @@
 						<type>0</type>
 						<id>584</id>
 						<name>Asa_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>338</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31590,7 +31590,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>338</second>
@@ -31622,7 +31622,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
+				<m_delay>0.28</m_delay>
 				<m_topoIndex>581</m_topoIndex>
 				<m_clusterGroupNumber>56</m_clusterGroupNumber>
 			</item>
@@ -31632,7 +31632,7 @@
 						<type>0</type>
 						<id>585</id>
 						<name>xor_ln339</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>339</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31647,7 +31647,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>339</second>
@@ -31689,7 +31689,7 @@
 						<type>0</type>
 						<id>586</id>
 						<name>and_ln339</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>339</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31704,7 +31704,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>339</second>
@@ -31746,7 +31746,7 @@
 						<type>0</type>
 						<id>587</id>
 						<name>Ase_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>339</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31761,7 +31761,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>339</second>
@@ -31793,7 +31793,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
+				<m_delay>0.28</m_delay>
 				<m_topoIndex>584</m_topoIndex>
 				<m_clusterGroupNumber>57</m_clusterGroupNumber>
 			</item>
@@ -31803,7 +31803,7 @@
 						<type>0</type>
 						<id>588</id>
 						<name>xor_ln340</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>340</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31818,7 +31818,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>340</second>
@@ -31860,7 +31860,7 @@
 						<type>0</type>
 						<id>589</id>
 						<name>and_ln340</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>340</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31875,7 +31875,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>340</second>
@@ -31917,7 +31917,7 @@
 						<type>0</type>
 						<id>590</id>
 						<name>Asi_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>340</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31932,7 +31932,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>340</second>
@@ -31964,7 +31964,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
+				<m_delay>0.28</m_delay>
 				<m_topoIndex>587</m_topoIndex>
 				<m_clusterGroupNumber>58</m_clusterGroupNumber>
 			</item>
@@ -31974,7 +31974,7 @@
 						<type>0</type>
 						<id>591</id>
 						<name>xor_ln341</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>341</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -31989,7 +31989,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>341</second>
@@ -32031,7 +32031,7 @@
 						<type>0</type>
 						<id>592</id>
 						<name>and_ln341</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>341</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32046,7 +32046,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>341</second>
@@ -32088,7 +32088,7 @@
 						<type>0</type>
 						<id>593</id>
 						<name>Aso_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>341</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32103,7 +32103,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>341</second>
@@ -32135,7 +32135,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
+				<m_delay>0.28</m_delay>
 				<m_topoIndex>590</m_topoIndex>
 				<m_clusterGroupNumber>59</m_clusterGroupNumber>
 			</item>
@@ -32145,7 +32145,7 @@
 						<type>0</type>
 						<id>594</id>
 						<name>xor_ln342</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>342</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32160,7 +32160,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>342</second>
@@ -32202,7 +32202,7 @@
 						<type>0</type>
 						<id>595</id>
 						<name>and_ln342</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>342</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32217,7 +32217,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>342</second>
@@ -32259,7 +32259,7 @@
 						<type>0</type>
 						<id>596</id>
 						<name>Asu_3</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>342</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32274,7 +32274,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>342</second>
@@ -32306,7 +32306,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.80</m_delay>
+				<m_delay>0.28</m_delay>
 				<m_topoIndex>593</m_topoIndex>
 				<m_clusterGroupNumber>60</m_clusterGroupNumber>
 			</item>
@@ -32316,7 +32316,7 @@
 						<type>0</type>
 						<id>597</id>
 						<name>add_ln121</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32331,7 +32331,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>121</second>
@@ -32363,7 +32363,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.02</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>90</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32373,7 +32373,7 @@
 						<type>0</type>
 						<id>598</id>
 						<name>round_write_ln73</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>73</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32388,7 +32388,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>73</second>
@@ -32422,7 +32422,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>91</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32432,7 +32432,7 @@
 						<type>0</type>
 						<id>599</id>
 						<name>Asu_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32447,7 +32447,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -32481,7 +32481,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>594</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32491,7 +32491,7 @@
 						<type>0</type>
 						<id>600</id>
 						<name>Aba_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32506,7 +32506,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -32540,7 +32540,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>595</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32550,7 +32550,7 @@
 						<type>0</type>
 						<id>601</id>
 						<name>Abe_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32565,7 +32565,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -32599,7 +32599,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>596</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32609,7 +32609,7 @@
 						<type>0</type>
 						<id>602</id>
 						<name>Abi_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32624,7 +32624,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -32658,7 +32658,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>597</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32668,7 +32668,7 @@
 						<type>0</type>
 						<id>603</id>
 						<name>Abo_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32683,7 +32683,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -32717,7 +32717,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>598</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32727,7 +32727,7 @@
 						<type>0</type>
 						<id>604</id>
 						<name>Abu_1_write_ln75</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>75</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32742,7 +32742,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>75</second>
@@ -32776,7 +32776,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>599</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32786,7 +32786,7 @@
 						<type>0</type>
 						<id>605</id>
 						<name>Aga_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32801,7 +32801,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -32835,7 +32835,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>600</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32845,7 +32845,7 @@
 						<type>0</type>
 						<id>606</id>
 						<name>Age_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32860,7 +32860,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -32894,7 +32894,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>601</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32904,7 +32904,7 @@
 						<type>0</type>
 						<id>607</id>
 						<name>Agi_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32919,7 +32919,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -32953,7 +32953,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>602</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -32963,7 +32963,7 @@
 						<type>0</type>
 						<id>608</id>
 						<name>Ago_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -32978,7 +32978,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -33012,7 +33012,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>603</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33022,7 +33022,7 @@
 						<type>0</type>
 						<id>609</id>
 						<name>Agu_1_write_ln76</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>76</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33037,7 +33037,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>76</second>
@@ -33071,7 +33071,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>604</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33081,7 +33081,7 @@
 						<type>0</type>
 						<id>610</id>
 						<name>Aka_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33096,7 +33096,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -33130,7 +33130,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>605</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33140,7 +33140,7 @@
 						<type>0</type>
 						<id>611</id>
 						<name>Ake_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33155,7 +33155,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -33189,7 +33189,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>606</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33199,7 +33199,7 @@
 						<type>0</type>
 						<id>612</id>
 						<name>Aki_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33214,7 +33214,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -33248,7 +33248,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>607</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33258,7 +33258,7 @@
 						<type>0</type>
 						<id>613</id>
 						<name>Ako_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33273,7 +33273,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -33307,7 +33307,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>608</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33317,7 +33317,7 @@
 						<type>0</type>
 						<id>614</id>
 						<name>Aku_1_write_ln77</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>77</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33332,7 +33332,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>77</second>
@@ -33366,7 +33366,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>609</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33376,7 +33376,7 @@
 						<type>0</type>
 						<id>615</id>
 						<name>Ama_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33391,7 +33391,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -33425,7 +33425,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>610</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33435,7 +33435,7 @@
 						<type>0</type>
 						<id>616</id>
 						<name>Ame_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33450,7 +33450,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -33484,7 +33484,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>611</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33494,7 +33494,7 @@
 						<type>0</type>
 						<id>617</id>
 						<name>Ami_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33509,7 +33509,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -33543,7 +33543,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>612</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33553,7 +33553,7 @@
 						<type>0</type>
 						<id>618</id>
 						<name>Amo_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33568,7 +33568,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -33602,7 +33602,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>613</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33612,7 +33612,7 @@
 						<type>0</type>
 						<id>619</id>
 						<name>Amu_1_write_ln78</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>78</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33627,7 +33627,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>78</second>
@@ -33661,7 +33661,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>614</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33671,7 +33671,7 @@
 						<type>0</type>
 						<id>620</id>
 						<name>Asa_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33686,7 +33686,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -33720,7 +33720,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>615</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33730,7 +33730,7 @@
 						<type>0</type>
 						<id>621</id>
 						<name>Ase_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33745,7 +33745,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -33779,7 +33779,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>616</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33789,7 +33789,7 @@
 						<type>0</type>
 						<id>622</id>
 						<name>Asi_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33804,7 +33804,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -33838,7 +33838,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>617</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33848,7 +33848,7 @@
 						<type>0</type>
 						<id>623</id>
 						<name>Aso_1_write_ln79</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>79</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33863,7 +33863,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>79</second>
@@ -33897,7 +33897,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>618</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -33907,7 +33907,7 @@
 						<type>0</type>
 						<id>624</id>
 						<name>br_ln121</name>
-						<fileName>src/sha3/fips202.c</fileName>
+						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>KeccakF1600_StatePermute</contextFuncName>
@@ -33922,7 +33922,7 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sha3/fips202.c</first>
+											<first>src/sha3/fips202.cpp</first>
 											<second>KeccakF1600_StatePermute</second>
 										</first>
 										<second>121</second>
@@ -33997,7 +33997,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>463</m_topoIndex>
+				<m_topoIndex>92</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_620">
@@ -34040,7 +34040,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>464</m_topoIndex>
+				<m_topoIndex>93</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_621">
@@ -34083,7 +34083,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>465</m_topoIndex>
+				<m_topoIndex>94</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_622">
@@ -34126,7 +34126,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>466</m_topoIndex>
+				<m_topoIndex>95</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_623">
@@ -34169,7 +34169,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>467</m_topoIndex>
+				<m_topoIndex>96</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_624">
@@ -34212,7 +34212,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>468</m_topoIndex>
+				<m_topoIndex>97</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_625">
@@ -34255,7 +34255,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>469</m_topoIndex>
+				<m_topoIndex>98</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_626">
@@ -34298,7 +34298,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>470</m_topoIndex>
+				<m_topoIndex>99</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_627">
@@ -34341,7 +34341,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>471</m_topoIndex>
+				<m_topoIndex>100</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_628">
@@ -34384,7 +34384,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>472</m_topoIndex>
+				<m_topoIndex>101</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_629">
@@ -34427,7 +34427,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>473</m_topoIndex>
+				<m_topoIndex>102</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_630">
@@ -34470,7 +34470,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>474</m_topoIndex>
+				<m_topoIndex>103</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_631">
@@ -34513,7 +34513,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>475</m_topoIndex>
+				<m_topoIndex>104</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_632">
@@ -34556,7 +34556,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>476</m_topoIndex>
+				<m_topoIndex>105</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_633">
@@ -34599,7 +34599,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>477</m_topoIndex>
+				<m_topoIndex>106</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_634">
@@ -34642,7 +34642,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>478</m_topoIndex>
+				<m_topoIndex>107</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_635">
@@ -34685,7 +34685,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>479</m_topoIndex>
+				<m_topoIndex>108</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_636">
@@ -34728,7 +34728,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>480</m_topoIndex>
+				<m_topoIndex>109</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_637">
@@ -34771,7 +34771,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>481</m_topoIndex>
+				<m_topoIndex>110</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_638">
@@ -34814,7 +34814,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>482</m_topoIndex>
+				<m_topoIndex>111</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_639">
@@ -34857,7 +34857,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>483</m_topoIndex>
+				<m_topoIndex>112</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_640">
@@ -34900,7 +34900,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>484</m_topoIndex>
+				<m_topoIndex>113</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_641">
@@ -34943,7 +34943,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>485</m_topoIndex>
+				<m_topoIndex>114</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_642">
@@ -34986,7 +34986,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>486</m_topoIndex>
+				<m_topoIndex>115</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_643">
@@ -35029,7 +35029,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>487</m_topoIndex>
+				<m_topoIndex>116</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_644">
@@ -35073,7 +35073,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>488</m_topoIndex>
+				<m_topoIndex>117</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_645">
@@ -35117,7 +35117,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>489</m_topoIndex>
+				<m_topoIndex>118</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_646">
@@ -35161,7 +35161,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>490</m_topoIndex>
+				<m_topoIndex>119</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_647">
@@ -35205,7 +35205,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>491</m_topoIndex>
+				<m_topoIndex>120</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_648">
@@ -35249,7 +35249,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>492</m_topoIndex>
+				<m_topoIndex>121</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_649">
@@ -35293,7 +35293,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>493</m_topoIndex>
+				<m_topoIndex>122</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_650">
@@ -35337,7 +35337,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>494</m_topoIndex>
+				<m_topoIndex>123</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_651">
@@ -35381,7 +35381,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>495</m_topoIndex>
+				<m_topoIndex>124</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_652">
@@ -35425,7 +35425,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>496</m_topoIndex>
+				<m_topoIndex>125</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_653">
@@ -35469,7 +35469,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>497</m_topoIndex>
+				<m_topoIndex>126</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_654">
@@ -35513,7 +35513,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>498</m_topoIndex>
+				<m_topoIndex>127</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_655">
@@ -35557,7 +35557,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>499</m_topoIndex>
+				<m_topoIndex>128</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_656">
@@ -35601,7 +35601,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>500</m_topoIndex>
+				<m_topoIndex>129</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_657">
@@ -35645,7 +35645,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>501</m_topoIndex>
+				<m_topoIndex>130</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_658">
@@ -35689,7 +35689,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>502</m_topoIndex>
+				<m_topoIndex>131</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_659">
@@ -35733,7 +35733,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>503</m_topoIndex>
+				<m_topoIndex>132</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_660">
@@ -35777,7 +35777,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>504</m_topoIndex>
+				<m_topoIndex>133</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_661">
@@ -35821,7 +35821,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>505</m_topoIndex>
+				<m_topoIndex>134</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_662">
@@ -35865,7 +35865,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>506</m_topoIndex>
+				<m_topoIndex>135</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_663">
@@ -35909,7 +35909,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>507</m_topoIndex>
+				<m_topoIndex>136</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_664">
@@ -35953,7 +35953,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>508</m_topoIndex>
+				<m_topoIndex>137</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_665">
@@ -35997,7 +35997,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>509</m_topoIndex>
+				<m_topoIndex>138</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_666">
@@ -36041,7 +36041,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>510</m_topoIndex>
+				<m_topoIndex>139</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_667">
@@ -36085,7 +36085,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>511</m_topoIndex>
+				<m_topoIndex>140</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_668">
@@ -36129,7 +36129,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>512</m_topoIndex>
+				<m_topoIndex>141</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_669">
@@ -36169,8 +36169,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
-				<m_topoIndex>513</m_topoIndex>
+				<m_delay>0.38</m_delay>
+				<m_topoIndex>142</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
@@ -46530,8 +46530,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>15</mMinLatency>
-			<mMaxLatency>15</mMaxLatency>
+			<mMinLatency>14</mMinLatency>
+			<mMaxLatency>14</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -46574,11 +46574,11 @@
 				<item>625</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
+			<mDepth>2</mDepth>
 			<mMinTripCount>12</mMinTripCount>
 			<mMaxTripCount>12</mMaxTripCount>
-			<mMinLatency>13</mMinLatency>
-			<mMaxLatency>13</mMaxLatency>
+			<mMinLatency>12</mMinLatency>
+			<mMaxLatency>12</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -49435,7 +49435,7 @@
 		<item>
 			<first>460</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49463,7 +49463,7 @@
 		<item>
 			<first>464</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49491,7 +49491,7 @@
 		<item>
 			<first>468</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49519,7 +49519,7 @@
 		<item>
 			<first>472</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49547,112 +49547,112 @@
 		<item>
 			<first>476</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>477</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>478</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>479</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>480</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>481</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>482</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>483</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>484</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>485</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>486</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>487</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>488</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>489</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>490</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>491</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49680,7 +49680,7 @@
 		<item>
 			<first>495</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49708,7 +49708,7 @@
 		<item>
 			<first>499</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49736,7 +49736,7 @@
 		<item>
 			<first>503</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49764,7 +49764,7 @@
 		<item>
 			<first>507</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49792,112 +49792,112 @@
 		<item>
 			<first>511</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>512</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>513</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>514</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>515</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>516</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>517</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>518</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>519</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>520</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>521</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>522</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>523</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>524</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>525</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>526</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49925,7 +49925,7 @@
 		<item>
 			<first>530</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49953,7 +49953,7 @@
 		<item>
 			<first>534</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -49981,7 +49981,7 @@
 		<item>
 			<first>538</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50009,7 +50009,7 @@
 		<item>
 			<first>542</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50037,112 +50037,112 @@
 		<item>
 			<first>546</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>547</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>548</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>549</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>550</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>551</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>552</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>553</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>554</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>555</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>556</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>557</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>558</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>559</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>560</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>561</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50170,7 +50170,7 @@
 		<item>
 			<first>565</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50198,7 +50198,7 @@
 		<item>
 			<first>569</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50226,7 +50226,7 @@
 		<item>
 			<first>573</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50254,7 +50254,7 @@
 		<item>
 			<first>577</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50282,112 +50282,112 @@
 		<item>
 			<first>581</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>582</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>583</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>584</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>585</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>586</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>587</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>588</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>589</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>590</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>591</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>592</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>593</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>594</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>595</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>596</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50408,539 +50408,539 @@
 		<item>
 			<first>599</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>600</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>601</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>602</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>603</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>604</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>605</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>606</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>607</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>608</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>609</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>610</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>611</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>612</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>613</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>614</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>615</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>616</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>617</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>618</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>619</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>620</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>621</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>622</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>623</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>624</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>626</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>627</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>628</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>629</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>630</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>631</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>632</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>633</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>634</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>635</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>636</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>637</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>638</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>639</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>640</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>641</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>642</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>643</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>644</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>645</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>646</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>647</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>648</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>649</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>650</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>651</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>652</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>653</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>654</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>655</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>656</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>657</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>658</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>659</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>660</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>661</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>662</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>663</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>664</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>665</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>666</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>667</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>668</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>669</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>670</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>671</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>672</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>673</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>674</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>675</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>676</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -50966,7 +50966,7 @@
 			<first>625</first>
 			<second>
 				<first>1</first>
-				<second>3</second>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
@@ -50995,7 +50995,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>2</pipe_depth>
 			<mDBIIViolationVec class_id="34" tracking_level="0" version="0">
 				<count>0</count>
 				<item_version>0</item_version>

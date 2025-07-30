@@ -1,0 +1,117 @@
+
+
+================================================================
+== Vitis HLS Report for 'digit_x_digit_hls'
+================================================================
+* Date:           Wed Jul 30 14:58:23 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.430 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.43>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specpipeline_ln163 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_34" [src/generic/fp_generic.cpp:163]   --->   Operation 2 'specpipeline' 'specpipeline_ln163' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln163 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_27, i32 0, i32 0, void @empty_34, i32 0, i32 0, void @empty_34, void @empty_34, void @empty_34, i32 0, i32 0, i32 0, i32 0, void @empty_34, void @empty_34, i32 4294967295, i32 0, i32 0" [src/generic/fp_generic.cpp:163]   --->   Operation 3 'specinterface' 'specinterface_ln163' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%b_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %b" [src/generic/fp_generic.cpp:157]   --->   Operation 4 'read' 'b_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%a_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a" [src/generic/fp_generic.cpp:157]   --->   Operation 5 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln164 = zext i64 %a_read" [src/generic/fp_generic.cpp:164]   --->   Operation 6 'zext' 'zext_ln164' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%zext_ln164_1 = zext i64 %b_read" [src/generic/fp_generic.cpp:164]   --->   Operation 7 'zext' 'zext_ln164_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (4.43ns)   --->   "%mul_ln164 = mul i128 %zext_ln164_1, i128 %zext_ln164" [src/generic/fp_generic.cpp:164]   --->   Operation 8 'mul' 'mul_ln164' <Predicate = true> <Delay = 4.43> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln165 = ret i128 %mul_ln164" [src/generic/fp_generic.cpp:165]   --->   Operation 9 'ret' 'ret_ln165' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.430ns
+The critical path consists of the following:
+	wire read operation ('b_read', src/generic/fp_generic.cpp:157) on port 'b' (src/generic/fp_generic.cpp:157) [5]  (0.000 ns)
+	'mul' operation 128 bit ('c', src/generic/fp_generic.cpp:164) [9]  (4.430 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

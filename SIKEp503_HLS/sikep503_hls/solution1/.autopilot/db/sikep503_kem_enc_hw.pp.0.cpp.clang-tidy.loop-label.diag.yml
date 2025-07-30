@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sikep503_kem_enc_hw.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_19_1:  '
+    FileOffset:      19
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sikep503_kem_enc_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/sikep503_kem_enc_hw.pp.0.cpp
+        Offset:          42325
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_19_1: '
+...

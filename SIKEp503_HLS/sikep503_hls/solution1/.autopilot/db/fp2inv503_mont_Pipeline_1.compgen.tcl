@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1957 \
-    name temp_73 \
+    id 1744 \
+    name temp_15 \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename temp_73 \
+    corename temp_15 \
     op interface \
-    ports { temp_73_address0 { O 4 vector } temp_73_ce0 { O 1 bit } temp_73_we0 { O 1 bit } temp_73_d0 { O 64 vector } } \
+    ports { temp_15_address0 { O 4 vector } temp_15_ce0 { O 1 bit } temp_15_we0 { O 1 bit } temp_15_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'temp_73'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'temp_15'"
 }
 }
 

@@ -1,0 +1,165 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mp_mul_5019_Pipeline_VITIS_LOOP_194_4'" level="0">
+<item name = "Date">Wed Jul 30 17:01:22 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.144 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">4, 10, 40.000 ns, 0.100 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_194_4">2, 8, 3, 1, 1, 1 ~ 7, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 905, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 16, 0, 45, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 68, -</column>
+<column name="Register">-, -, 205, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, ~0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_64ns_64ns_128_1_1_U1199">mul_64ns_64ns_128_1_1, 0, 16, 0, 45, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln194_fu_244_p2">+, 0, 0, 12, 4, 1</column>
+<column name="t_45_fu_410_p2">+, 0, 0, 10, 3, 3</column>
+<column name="tempReg_47_fu_326_p2">+, 0, 0, 71, 64, 64</column>
+<column name="u_fu_331_p2">+, 0, 0, 71, 64, 64</column>
+<column name="v_160_fu_287_p2">+, 0, 0, 71, 64, 64</column>
+<column name="sub_ln196_fu_203_p2">-, 0, 0, 12, 4, 4</column>
+<column name="and_ln200_fu_381_p2">and, 0, 0, 64, 64, 64</column>
+<column name="icmp_ln194_fu_192_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="or_ln105_8_fu_302_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln200_8_fu_392_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln200_fu_349_p2">or, 0, 0, 64, 64, 64</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln105_38_fu_292_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_39_fu_297_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_40_fu_308_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln196_fu_221_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln200_22_fu_343_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln200_24_fu_386_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln200_25_fu_363_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln200_fu_337_p2">xor, 0, 0, 64, 64, 64</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_j">9, 2, 4, 8</column>
+<column name="j_14_fu_88">9, 2, 4, 8</column>
+<column name="t_fu_80">9, 2, 3, 6</column>
+<column name="u_134_out_o">14, 3, 64, 192</column>
+<column name="v_140_fu_84">9, 2, 64, 128</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="hi_reg_484">64, 0, 64, 0</column>
+<column name="icmp_ln194_reg_463">1, 0, 1, 0</column>
+<column name="j_14_fu_88">4, 0, 4, 0</column>
+<column name="lo_reg_477">64, 0, 64, 0</column>
+<column name="t_fu_80">3, 0, 3, 0</column>
+<column name="v_140_fu_84">64, 0, 64, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, mp_mul.5019_Pipeline_VITIS_LOOP_194_4, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, mp_mul.5019_Pipeline_VITIS_LOOP_194_4, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, mp_mul.5019_Pipeline_VITIS_LOOP_194_4, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, mp_mul.5019_Pipeline_VITIS_LOOP_194_4, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, mp_mul.5019_Pipeline_VITIS_LOOP_194_4, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, mp_mul.5019_Pipeline_VITIS_LOOP_194_4, return value</column>
+<column name="indvars_iv">in, 3, ap_none, indvars_iv, scalar</column>
+<column name="v">in, 64, ap_none, v, scalar</column>
+<column name="zext_ln192">in, 4, ap_none, zext_ln192, scalar</column>
+<column name="a_address0">out, 3, ap_memory, a, array</column>
+<column name="a_ce0">out, 1, ap_memory, a, array</column>
+<column name="a_q0">in, 64, ap_memory, a, array</column>
+<column name="i_22">in, 4, ap_none, i_22, scalar</column>
+<column name="R_X_address0">out, 4, ap_memory, R_X, array</column>
+<column name="R_X_ce0">out, 1, ap_memory, R_X, array</column>
+<column name="R_X_q0">in, 64, ap_memory, R_X, array</column>
+<column name="v_140_out">out, 64, ap_vld, v_140_out, pointer</column>
+<column name="v_140_out_ap_vld">out, 1, ap_vld, v_140_out, pointer</column>
+<column name="u_134_out_i">in, 64, ap_ovld, u_134_out, pointer</column>
+<column name="u_134_out_o">out, 64, ap_ovld, u_134_out, pointer</column>
+<column name="u_134_out_o_ap_vld">out, 1, ap_ovld, u_134_out, pointer</column>
+<column name="t_58_out">out, 3, ap_vld, t_58_out, pointer</column>
+<column name="t_58_out_ap_vld">out, 1, ap_vld, t_58_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

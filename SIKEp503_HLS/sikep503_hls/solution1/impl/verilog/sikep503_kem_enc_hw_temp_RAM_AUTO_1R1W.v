@@ -17,8 +17,8 @@ module sikep503_kem_enc_hw_temp_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 8;
-parameter AddressWidth = 9;
-parameter AddressRange = 426;
+parameter AddressWidth = 7;
+parameter AddressRange = 107;
  
 input[AddressWidth-1:0] address0;
 input ce0;

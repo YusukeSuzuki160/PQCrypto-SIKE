@@ -1,14 +1,14 @@
 <AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" name="sikep503_hls" ideType="classic" top="sikep503_kem_enc_hw">
     <files>
-        <file name="src/sha3/fips202.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/random/random.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/generic/fp_generic.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/sha3/fips202.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/random/random.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/generic/fp_generic.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/sikep503_kem_enc_hw.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/P503.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/sike.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/sidh.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/ec_isogeny.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/fpx.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/P503.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/sike.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/sidh.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/ec_isogeny.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/fpx.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/sha3/fips202.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/random/random.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/api.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

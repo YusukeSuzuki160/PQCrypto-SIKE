@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>t_i421</name>
+						<name>t_i410</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -129,7 +129,7 @@
 						<type>0</type>
 						<id>4</id>
 						<name>i</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -144,14 +144,14 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -235,7 +235,7 @@
 						<type>0</type>
 						<id>7</id>
 						<name>i_write_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -250,14 +250,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -289,7 +289,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -341,7 +341,7 @@
 						<type>0</type>
 						<id>10</id>
 						<name>i_291</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -356,14 +356,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -388,7 +388,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>61</item>
-					<item>203</item>
+					<item>202</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -405,7 +405,7 @@
 						<type>0</type>
 						<id>11</id>
 						<name>icmp_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -420,14 +420,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -459,7 +459,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -469,7 +469,7 @@
 						<type>0</type>
 						<id>12</id>
 						<name>add_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -484,14 +484,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -523,8 +523,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_delay>0.70</m_delay>
+				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_11">
@@ -533,7 +533,7 @@
 						<type>0</type>
 						<id>13</id>
 						<name>br_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -548,14 +548,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -589,7 +589,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>7</m_topoIndex>
+				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_12">
@@ -598,7 +598,7 @@
 						<type>0</type>
 						<id>15</id>
 						<name>zext_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -613,14 +613,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -639,7 +639,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -652,7 +652,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_13">
@@ -660,8 +660,8 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>lshr_ln44_4</name>
-						<fileName>src/sidh.c</fileName>
+						<name>lshr_ln44_7</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -676,14 +676,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -718,7 +718,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>8</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -726,8 +726,8 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>zext_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<name>zext_ln44_11</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -742,14 +742,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -781,7 +781,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>9</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_15">
@@ -789,8 +789,8 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>t_i421_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<name>t_i410_addr</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -805,14 +805,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -846,7 +846,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -854,8 +854,8 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>t_i421_load</name>
-						<fileName>src/sidh.c</fileName>
+						<name>t_i410_load</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -870,14 +870,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -893,7 +893,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>81</coreId>
+						<coreId>82</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -908,8 +908,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_delay>0.71</m_delay>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -918,7 +918,7 @@
 						<type>0</type>
 						<id>23</id>
 						<name>shl_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -933,14 +933,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -981,8 +981,8 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>zext_ln44_1</name>
-						<fileName>src/sidh.c</fileName>
+						<name>zext_ln44_12</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -997,14 +997,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1045,7 +1045,7 @@
 						<type>0</type>
 						<id>25</id>
 						<name>lshr_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1060,14 +1060,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1099,7 +1099,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.59</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1109,7 +1109,7 @@
 						<type>0</type>
 						<id>26</id>
 						<name>trunc_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1124,14 +1124,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1171,8 +1171,8 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>add_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<name>add_ln44_1</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1187,14 +1187,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1213,7 +1213,7 @@
 						<coreId>1</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1226,8 +1226,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_delay>0.70</m_delay>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1235,8 +1235,8 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>zext_ln44_2</name>
-						<fileName>src/sidh.c</fileName>
+						<name>zext_ln44_13</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1251,14 +1251,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1290,7 +1290,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>19</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1298,8 +1298,8 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>add_ln44_1</name>
-						<fileName>src/sidh.c</fileName>
+						<name>add_ln44_2</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1314,14 +1314,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1353,8 +1353,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.52</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_delay>1.14</m_delay>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1363,7 +1363,7 @@
 						<type>0</type>
 						<id>30</id>
 						<name>gmem_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1378,14 +1378,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1418,7 +1418,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1426,8 +1426,8 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>gmem_addr_8_req</name>
-						<fileName>src/sidh.c</fileName>
+						<name>gmem_addr_6_req</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1442,14 +1442,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1465,7 +1465,7 @@
 						<coreName>m_axi</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>111</coreId>
+						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1492,7 +1492,7 @@
 						<type>0</type>
 						<id>32</id>
 						<name>gmem_addr_write_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1507,14 +1507,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1530,7 +1530,7 @@
 						<coreName>m_axi</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>111</coreId>
+						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1542,7 +1542,7 @@
 					<item>107</item>
 					<item>108</item>
 					<item>110</item>
-					<item>201</item>
+					<item>200</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
@@ -1558,8 +1558,8 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>gmem_addr_8_resp</name>
-						<fileName>src/sidh.c</fileName>
+						<name>gmem_addr_6_resp</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1574,14 +1574,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1597,7 +1597,7 @@
 						<coreName>m_axi</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>111</coreId>
+						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1607,7 +1607,7 @@
 					<item_version>0</item_version>
 					<item>112</item>
 					<item>113</item>
-					<item>199</item>
+					<item>198</item>
 				</oprand_edges>
 				<opcode>writeresp</opcode>
 				<m_Display>0</m_Display>
@@ -1623,8 +1623,8 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>zext_ln45_4</name>
-						<fileName>src/sidh.c</fileName>
+						<name>zext_ln45_3</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1639,14 +1639,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1680,7 +1680,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1689,7 +1689,7 @@
 						<type>0</type>
 						<id>35</id>
 						<name>zext_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1704,14 +1704,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1743,7 +1743,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1751,8 +1751,8 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>t_i421_addr_1</name>
-						<fileName>src/sidh.c</fileName>
+						<name>t_i410_addr_1</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1767,14 +1767,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1808,7 +1808,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1816,8 +1816,8 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>t_i421_load_1</name>
-						<fileName>src/sidh.c</fileName>
+						<name>t_i410_load_1</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1832,14 +1832,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1855,7 +1855,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>81</coreId>
+						<coreId>82</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1870,8 +1870,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.25</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_delay>0.71</m_delay>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_32">
@@ -1880,7 +1880,7 @@
 						<type>0</type>
 						<id>38</id>
 						<name>lshr_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1895,14 +1895,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1934,7 +1934,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.59</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1944,7 +1944,7 @@
 						<type>0</type>
 						<id>39</id>
 						<name>trunc_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1959,14 +1959,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2007,7 +2007,7 @@
 						<type>0</type>
 						<id>40</id>
 						<name>add_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2022,14 +2022,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2048,7 +2048,7 @@
 						<coreId>1</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2061,7 +2061,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2070,8 +2070,8 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>zext_ln45_1</name>
-						<fileName>src/sidh.c</fileName>
+						<name>zext_ln45_4</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2086,14 +2086,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2133,8 +2133,8 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>add_ln45_1</name>
-						<fileName>src/sidh.c</fileName>
+						<name>add_ln45_2</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2149,14 +2149,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2188,7 +2188,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.52</m_delay>
+				<m_delay>1.14</m_delay>
 				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2198,7 +2198,7 @@
 						<type>0</type>
 						<id>43</id>
 						<name>gmem_addr_5</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2213,14 +2213,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2261,8 +2261,8 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>gmem_addr_9_req</name>
-						<fileName>src/sidh.c</fileName>
+						<name>gmem_addr_7_req</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2277,14 +2277,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2300,7 +2300,7 @@
 						<coreName>m_axi</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>111</coreId>
+						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2311,7 +2311,7 @@
 					<item>134</item>
 					<item>135</item>
 					<item>136</item>
-					<item>202</item>
+					<item>201</item>
 				</oprand_edges>
 				<opcode>writereq</opcode>
 				<m_Display>0</m_Display>
@@ -2328,7 +2328,7 @@
 						<type>0</type>
 						<id>45</id>
 						<name>gmem_addr_5_write_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2343,14 +2343,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2366,7 +2366,7 @@
 						<coreName>m_axi</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>111</coreId>
+						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2378,8 +2378,8 @@
 					<item>138</item>
 					<item>139</item>
 					<item>140</item>
-					<item>197</item>
-					<item>200</item>
+					<item>196</item>
+					<item>199</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
@@ -2395,8 +2395,8 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>gmem_addr_9_resp</name>
-						<fileName>src/sidh.c</fileName>
+						<name>gmem_addr_7_resp</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2411,14 +2411,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2434,7 +2434,7 @@
 						<coreName>m_axi</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>111</coreId>
+						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2444,8 +2444,8 @@
 					<item_version>0</item_version>
 					<item>141</item>
 					<item>142</item>
-					<item>196</item>
-					<item>198</item>
+					<item>195</item>
+					<item>197</item>
 				</oprand_edges>
 				<opcode>writeresp</opcode>
 				<m_Display>0</m_Display>
@@ -2462,7 +2462,7 @@
 						<type>0</type>
 						<id>47</id>
 						<name>i_write_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2477,14 +2477,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -2510,15 +2510,15 @@
 					<item_version>0</item_version>
 					<item>143</item>
 					<item>144</item>
+					<item>203</item>
 					<item>204</item>
-					<item>205</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2528,7 +2528,7 @@
 						<type>0</type>
 						<id>48</id>
 						<name>br_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2543,14 +2543,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>158</second>
+										<second>149</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -2622,7 +2622,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>39</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2904,10 +2904,10 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>252</content>
+				<content>126</content>
 			</item>
 			<item class_id_reference="16" object_id="_53">
 				<Value>
@@ -2997,10 +2997,10 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>315</content>
+				<content>189</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -3044,7 +3044,7 @@
 				<Obj>
 					<type>3</type>
 					<id>14</id>
-					<name>for.inc.i434</name>
+					<name>for.inc.i423</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3078,7 +3078,7 @@
 				<Obj>
 					<type>3</type>
 					<id>49</id>
-					<name>for.inc.i434.split</name>
+					<name>for.inc.i423.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3139,7 +3139,7 @@
 				<Obj>
 					<type>3</type>
 					<id>51</id>
-					<name>fp2_encode.exit435.exitStub</name>
+					<name>_ZL10fp2_encodePA8_KmPh.exit424.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3640,98 +3640,98 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_127">
-				<id>192</id>
+				<id>191</id>
 				<edge_type>2</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_128">
-				<id>193</id>
+				<id>192</id>
 				<edge_type>2</edge_type>
 				<source_obj>14</source_obj>
 				<sink_obj>51</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_129">
-				<id>194</id>
+				<id>193</id>
 				<edge_type>2</edge_type>
 				<source_obj>14</source_obj>
 				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_130">
-				<id>195</id>
+				<id>194</id>
 				<edge_type>2</edge_type>
 				<source_obj>49</source_obj>
 				<sink_obj>14</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_131">
-				<id>196</id>
+				<id>195</id>
 				<edge_type>4</edge_type>
 				<source_obj>45</source_obj>
 				<sink_obj>46</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_132">
-				<id>197</id>
+				<id>196</id>
 				<edge_type>4</edge_type>
 				<source_obj>44</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_133">
-				<id>198</id>
+				<id>197</id>
 				<edge_type>4</edge_type>
 				<source_obj>33</source_obj>
 				<sink_obj>46</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_134">
-				<id>199</id>
+				<id>198</id>
 				<edge_type>4</edge_type>
 				<source_obj>32</source_obj>
 				<sink_obj>33</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_135">
-				<id>200</id>
+				<id>199</id>
 				<edge_type>4</edge_type>
 				<source_obj>32</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_136">
-				<id>201</id>
+				<id>200</id>
 				<edge_type>4</edge_type>
 				<source_obj>31</source_obj>
 				<sink_obj>32</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_137">
-				<id>202</id>
+				<id>201</id>
 				<edge_type>4</edge_type>
 				<source_obj>31</source_obj>
 				<sink_obj>44</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_138">
-				<id>203</id>
+				<id>202</id>
 				<edge_type>4</edge_type>
 				<source_obj>7</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_139">
-				<id>204</id>
+				<id>203</id>
 				<edge_type>4</edge_type>
 				<source_obj>7</source_obj>
 				<sink_obj>47</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_140">
-				<id>205</id>
+				<id>204</id>
 				<edge_type>4</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>47</sink_obj>
@@ -3762,8 +3762,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>135</mMinLatency>
-			<mMaxLatency>135</mMaxLatency>
+			<mMinLatency>134</mMinLatency>
+			<mMaxLatency>134</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -3806,11 +3806,11 @@
 				<item>49</item>
 			</basic_blocks>
 			<mII>2</mII>
-			<mDepth>10</mDepth>
+			<mDepth>9</mDepth>
 			<mMinTripCount>63</mMinTripCount>
 			<mMaxTripCount>63</mMaxTripCount>
-			<mMinLatency>133</mMinLatency>
-			<mMaxLatency>133</mMaxLatency>
+			<mMinLatency>132</mMinLatency>
+			<mMaxLatency>132</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -3840,12 +3840,12 @@
 	</cdfg_regions>
 	<fsm class_id="24" tracking_level="1" version="0" object_id="_145">
 		<states class_id="25" tracking_level="0" version="0">
-			<count>10</count>
+			<count>9</count>
 			<item_version>0</item_version>
 			<item class_id="26" tracking_level="1" version="0" object_id="_146">
 				<id>1</id>
 				<operations class_id="27" tracking_level="0" version="0">
-					<count>16</count>
+					<count>27</count>
 					<item_version>0</item_version>
 					<item class_id="28" tracking_level="1" version="0" object_id="_147">
 						<id>4</id>
@@ -3883,299 +3883,292 @@
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_154">
-						<id>13</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_155">
-						<id>19</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_156">
-						<id>20</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_157">
-						<id>21</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_158">
-						<id>22</id>
-						<stage>2</stage>
-						<latency>2</latency>
-					</item>
-					<item class_id_reference="28" object_id="_159">
-						<id>34</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_160">
-						<id>35</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_161">
-						<id>36</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_162">
-						<id>37</id>
-						<stage>2</stage>
-						<latency>2</latency>
-					</item>
-				</operations>
-			</item>
-			<item class_id_reference="26" object_id="_163">
-				<id>2</id>
-				<operations>
-					<count>13</count>
-					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_164">
 						<id>12</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_165">
+					<item class_id_reference="28" object_id="_155">
+						<id>13</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_156">
 						<id>15</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_166">
-						<id>22</id>
+					<item class_id_reference="28" object_id="_157">
+						<id>19</id>
 						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_158">
+						<id>20</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_159">
+						<id>21</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_160">
+						<id>22</id>
+						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_167">
+					<item class_id_reference="28" object_id="_161">
 						<id>27</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_168">
+					<item class_id_reference="28" object_id="_162">
 						<id>28</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_169">
+					<item class_id_reference="28" object_id="_163">
 						<id>29</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_170">
+					<item class_id_reference="28" object_id="_164">
 						<id>30</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_171">
-						<id>37</id>
+					<item class_id_reference="28" object_id="_165">
+						<id>34</id>
 						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_166">
+						<id>35</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_167">
+						<id>36</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_168">
+						<id>37</id>
+						<stage>2</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_172">
+					<item class_id_reference="28" object_id="_169">
 						<id>40</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_173">
+					<item class_id_reference="28" object_id="_170">
 						<id>41</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_174">
+					<item class_id_reference="28" object_id="_171">
 						<id>42</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_175">
+					<item class_id_reference="28" object_id="_172">
 						<id>43</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_176">
+					<item class_id_reference="28" object_id="_173">
 						<id>47</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_177">
-				<id>3</id>
+			<item class_id_reference="26" object_id="_174">
+				<id>2</id>
 				<operations>
-					<count>5</count>
+					<count>7</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_178">
+					<item class_id_reference="28" object_id="_175">
+						<id>22</id>
+						<stage>1</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="28" object_id="_176">
 						<id>23</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_179">
+					<item class_id_reference="28" object_id="_177">
 						<id>24</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_180">
+					<item class_id_reference="28" object_id="_178">
 						<id>25</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_181">
+					<item class_id_reference="28" object_id="_179">
 						<id>26</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_182">
+					<item class_id_reference="28" object_id="_180">
 						<id>31</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
+					<item class_id_reference="28" object_id="_181">
+						<id>37</id>
+						<stage>1</stage>
+						<latency>2</latency>
+					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_183">
-				<id>4</id>
+			<item class_id_reference="26" object_id="_182">
+				<id>3</id>
 				<operations>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_184">
+					<item class_id_reference="28" object_id="_183">
 						<id>32</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_185">
+					<item class_id_reference="28" object_id="_184">
 						<id>38</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_186">
+					<item class_id_reference="28" object_id="_185">
 						<id>39</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_187">
+					<item class_id_reference="28" object_id="_186">
 						<id>44</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_188">
-				<id>5</id>
+			<item class_id_reference="26" object_id="_187">
+				<id>4</id>
 				<operations>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_189">
+					<item class_id_reference="28" object_id="_188">
 						<id>33</id>
 						<stage>5</stage>
 						<latency>5</latency>
 					</item>
-					<item class_id_reference="28" object_id="_190">
+					<item class_id_reference="28" object_id="_189">
 						<id>45</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_191">
-				<id>6</id>
+			<item class_id_reference="26" object_id="_190">
+				<id>5</id>
 				<operations>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_192">
+					<item class_id_reference="28" object_id="_191">
 						<id>33</id>
 						<stage>4</stage>
 						<latency>5</latency>
 					</item>
-					<item class_id_reference="28" object_id="_193">
+					<item class_id_reference="28" object_id="_192">
 						<id>46</id>
 						<stage>5</stage>
 						<latency>5</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_194">
-				<id>7</id>
+			<item class_id_reference="26" object_id="_193">
+				<id>6</id>
 				<operations>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_195">
+					<item class_id_reference="28" object_id="_194">
 						<id>33</id>
 						<stage>3</stage>
 						<latency>5</latency>
 					</item>
-					<item class_id_reference="28" object_id="_196">
+					<item class_id_reference="28" object_id="_195">
 						<id>46</id>
 						<stage>4</stage>
 						<latency>5</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_197">
-				<id>8</id>
+			<item class_id_reference="26" object_id="_196">
+				<id>7</id>
 				<operations>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_198">
+					<item class_id_reference="28" object_id="_197">
 						<id>33</id>
 						<stage>2</stage>
 						<latency>5</latency>
 					</item>
-					<item class_id_reference="28" object_id="_199">
+					<item class_id_reference="28" object_id="_198">
 						<id>46</id>
 						<stage>3</stage>
 						<latency>5</latency>
 					</item>
-					<item class_id_reference="28" object_id="_200">
+					<item class_id_reference="28" object_id="_199">
 						<id>50</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_201">
-				<id>9</id>
+			<item class_id_reference="26" object_id="_200">
+				<id>8</id>
 				<operations>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_202">
+					<item class_id_reference="28" object_id="_201">
 						<id>33</id>
 						<stage>1</stage>
 						<latency>5</latency>
 					</item>
-					<item class_id_reference="28" object_id="_203">
+					<item class_id_reference="28" object_id="_202">
 						<id>46</id>
 						<stage>2</stage>
 						<latency>5</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_204">
-				<id>10</id>
+			<item class_id_reference="26" object_id="_203">
+				<id>9</id>
 				<operations>
 					<count>5</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_205">
+					<item class_id_reference="28" object_id="_204">
 						<id>16</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_206">
+					<item class_id_reference="28" object_id="_205">
 						<id>17</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_207">
+					<item class_id_reference="28" object_id="_206">
 						<id>18</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_208">
+					<item class_id_reference="28" object_id="_207">
 						<id>46</id>
 						<stage>1</stage>
 						<latency>5</latency>
 					</item>
-					<item class_id_reference="28" object_id="_209">
+					<item class_id_reference="28" object_id="_208">
 						<id>48</id>
 						<stage>1</stage>
 						<latency>1</latency>
@@ -4184,11 +4177,11 @@
 			</item>
 		</states>
 		<transitions class_id="29" tracking_level="0" version="0">
-			<count>9</count>
+			<count>8</count>
 			<item_version>0</item_version>
-			<item class_id="30" tracking_level="1" version="0" object_id="_210">
-				<inState>1</inState>
-				<outState>2</outState>
+			<item class_id="30" tracking_level="1" version="0" object_id="_209">
+				<inState>2</inState>
+				<outState>3</outState>
 				<condition class_id="31" tracking_level="0" version="0">
 					<id>-1</id>
 					<sop class_id="32" tracking_level="0" version="0">
@@ -4201,7 +4194,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_211">
+			<item class_id_reference="30" object_id="_210">
 				<inState>3</inState>
 				<outState>4</outState>
 				<condition>
@@ -4216,7 +4209,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_212">
+			<item class_id_reference="30" object_id="_211">
 				<inState>4</inState>
 				<outState>5</outState>
 				<condition>
@@ -4231,7 +4224,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_213">
+			<item class_id_reference="30" object_id="_212">
 				<inState>5</inState>
 				<outState>6</outState>
 				<condition>
@@ -4246,7 +4239,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_214">
+			<item class_id_reference="30" object_id="_213">
 				<inState>6</inState>
 				<outState>7</outState>
 				<condition>
@@ -4261,7 +4254,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_215">
+			<item class_id_reference="30" object_id="_214">
 				<inState>7</inState>
 				<outState>8</outState>
 				<condition>
@@ -4276,7 +4269,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_216">
+			<item class_id_reference="30" object_id="_215">
 				<inState>8</inState>
 				<outState>9</outState>
 				<condition>
@@ -4291,24 +4284,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_217">
-				<inState>9</inState>
-				<outState>10</outState>
-				<condition>
-					<id>-1</id>
-					<sop>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>
-							<count>0</count>
-							<item_version>0</item_version>
-						</item>
-					</sop>
-				</condition>
-			</item>
-			<item class_id_reference="30" object_id="_218">
-				<inState>2</inState>
-				<outState>3</outState>
+			<item class_id_reference="30" object_id="_216">
+				<inState>1</inState>
+				<outState>2</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -4372,7 +4350,7 @@
 		<item>
 			<first>12</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4386,7 +4364,7 @@
 		<item>
 			<first>15</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4421,77 +4399,77 @@
 		<item>
 			<first>23</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>4</second>
 			</second>
 		</item>
@@ -4526,84 +4504,84 @@
 		<item>
 			<first>38</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>40</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>4</second>
 			</second>
 		</item>
 		<item>
 			<first>47</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>9</first>
+				<first>8</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>7</first>
+				<first>6</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4622,28 +4600,28 @@
 			<first>14</first>
 			<second>
 				<first>1</first>
-				<second>2</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>49</first>
 			<second>
 				<first>1</first>
-				<second>10</second>
+				<second>9</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>3</first>
-				<second>3</second>
+				<first>2</first>
+				<second>2</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="41" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="42" tracking_level="1" version="0" object_id="_219">
+		<item class_id="42" tracking_level="1" version="0" object_id="_217">
 			<region_name>VITIS_LOOP_42_1</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -4658,11 +4636,11 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>2</interval>
-			<pipe_depth>10</pipe_depth>
+			<pipe_depth>9</pipe_depth>
 			<mDBIIViolationVec class_id="43" tracking_level="0" version="0">
 				<count>1</count>
 				<item_version>0</item_version>
-				<item class_id="44" tracking_level="1" version="0" object_id="_220">
+				<item class_id="44" tracking_level="1" version="0" object_id="_218">
 					<mType>1</mType>
 					<mFailedII>1</mFailedII>
 					<mDependenceDistance>-1</mDependenceDistance>
@@ -4677,14 +4655,14 @@
 						<item class_id="47" tracking_level="0" version="0">
 							<first class_id="48" tracking_level="0" version="0">
 								<first class_id_reference="9" object_id_reference="_16"></first>
-								<second>core:RAM:t_i421::load:store</second>
+								<second>core:RAM:t_i410::load:store</second>
 							</first>
 							<second>22</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_31"></first>
-								<second>core:RAM:t_i421::load:store</second>
+								<second>core:RAM:t_i410::load:store</second>
 							</first>
 							<second>37</second>
 						</item>
@@ -4718,7 +4696,7 @@
 		<count>33</count>
 		<item_version>0</item_version>
 		<item class_id="50" tracking_level="0" version="0">
-			<first>70</first>
+			<first>68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4726,7 +4704,7 @@
 			</second>
 		</item>
 		<item>
-			<first>74</first>
+			<first>72</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4734,7 +4712,7 @@
 			</second>
 		</item>
 		<item>
-			<first>80</first>
+			<first>78</first>
 			<second>
 				<count>6</count>
 				<item_version>0</item_version>
@@ -4747,7 +4725,7 @@
 			</second>
 		</item>
 		<item>
-			<first>87</first>
+			<first>85</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4755,7 +4733,7 @@
 			</second>
 		</item>
 		<item>
-			<first>95</first>
+			<first>93</first>
 			<second>
 				<count>6</count>
 				<item_version>0</item_version>
@@ -4768,7 +4746,7 @@
 			</second>
 		</item>
 		<item>
-			<first>103</first>
+			<first>101</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4776,7 +4754,7 @@
 			</second>
 		</item>
 		<item>
-			<first>112</first>
+			<first>110</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4784,7 +4762,7 @@
 			</second>
 		</item>
 		<item>
-			<first>119</first>
+			<first>117</first>
 			<second>
 				<count>4</count>
 				<item_version>0</item_version>
@@ -4795,7 +4773,7 @@
 			</second>
 		</item>
 		<item>
-			<first>129</first>
+			<first>127</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4803,7 +4781,7 @@
 			</second>
 		</item>
 		<item>
-			<first>137</first>
+			<first>135</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4811,7 +4789,7 @@
 			</second>
 		</item>
 		<item>
-			<first>142</first>
+			<first>140</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4819,7 +4797,7 @@
 			</second>
 		</item>
 		<item>
-			<first>145</first>
+			<first>143</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4827,39 +4805,7 @@
 			</second>
 		</item>
 		<item>
-			<first>151</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>19</item>
-			</second>
-		</item>
-		<item>
-			<first>161</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>20</item>
-			</second>
-		</item>
-		<item>
-			<first>166</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>34</item>
-			</second>
-		</item>
-		<item>
-			<first>174</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>35</item>
-			</second>
-		</item>
-		<item>
-			<first>179</first>
+			<first>149</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4867,7 +4813,7 @@
 			</second>
 		</item>
 		<item>
-			<first>184</first>
+			<first>155</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4875,7 +4821,23 @@
 			</second>
 		</item>
 		<item>
-			<first>187</first>
+			<first>159</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>19</item>
+			</second>
+		</item>
+		<item>
+			<first>169</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>20</item>
+			</second>
+		</item>
+		<item>
+			<first>174</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4883,7 +4845,7 @@
 			</second>
 		</item>
 		<item>
-			<first>193</first>
+			<first>180</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4891,7 +4853,7 @@
 			</second>
 		</item>
 		<item>
-			<first>197</first>
+			<first>184</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4899,7 +4861,7 @@
 			</second>
 		</item>
 		<item>
-			<first>202</first>
+			<first>190</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4907,7 +4869,23 @@
 			</second>
 		</item>
 		<item>
-			<first>208</first>
+			<first>196</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>34</item>
+			</second>
+		</item>
+		<item>
+			<first>204</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>35</item>
+			</second>
+		</item>
+		<item>
+			<first>209</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4915,7 +4893,7 @@
 			</second>
 		</item>
 		<item>
-			<first>214</first>
+			<first>215</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4923,7 +4901,7 @@
 			</second>
 		</item>
 		<item>
-			<first>218</first>
+			<first>219</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4931,7 +4909,7 @@
 			</second>
 		</item>
 		<item>
-			<first>223</first>
+			<first>225</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4939,7 +4917,7 @@
 			</second>
 		</item>
 		<item>
-			<first>229</first>
+			<first>231</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4947,7 +4925,7 @@
 			</second>
 		</item>
 		<item>
-			<first>234</first>
+			<first>236</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4955,7 +4933,7 @@
 			</second>
 		</item>
 		<item>
-			<first>239</first>
+			<first>241</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4963,7 +4941,7 @@
 			</second>
 		</item>
 		<item>
-			<first>243</first>
+			<first>245</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4971,7 +4949,7 @@
 			</second>
 		</item>
 		<item>
-			<first>248</first>
+			<first>251</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4979,7 +4957,7 @@
 			</second>
 		</item>
 		<item>
-			<first>252</first>
+			<first>255</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4987,7 +4965,7 @@
 			</second>
 		</item>
 		<item>
-			<first>256</first>
+			<first>259</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4999,7 +4977,7 @@
 		<count>24</count>
 		<item_version>0</item_version>
 		<item class_id="53" tracking_level="0" version="0">
-			<first>add_ln42_fu_179</first>
+			<first>add_ln42_fu_149</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5007,15 +4985,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln44_1_fu_197</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>29</item>
-			</second>
-		</item>
-		<item>
-			<first>add_ln44_fu_187</first>
+			<first>add_ln44_1_fu_174</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5023,7 +4993,15 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln45_1_fu_218</first>
+			<first>add_ln44_2_fu_184</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>29</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln45_2_fu_219</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5031,7 +5009,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln45_fu_208</first>
+			<first>add_ln45_fu_209</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5039,7 +5017,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_5_fu_223</first>
+			<first>gmem_addr_5_fu_225</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5047,7 +5025,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_fu_202</first>
+			<first>gmem_addr_fu_190</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5055,7 +5033,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_fu_70</first>
+			<first>i_fu_68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5063,7 +5041,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln42_fu_145</first>
+			<first>icmp_ln42_fu_143</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5071,7 +5049,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln44_4_fu_151</first>
+			<first>lshr_ln44_7_fu_159</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5079,7 +5057,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln44_fu_243</first>
+			<first>lshr_ln44_fu_245</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5087,7 +5065,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln45_fu_252</first>
+			<first>lshr_ln45_fu_255</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5095,7 +5073,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln44_fu_234</first>
+			<first>shl_ln44_fu_236</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5103,7 +5081,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421_addr_1_gep_fu_129</first>
+			<first>t_i410_addr_1_gep_fu_127</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5111,7 +5089,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421_addr_gep_fu_112</first>
+			<first>t_i410_addr_gep_fu_110</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5119,7 +5097,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln44_fu_248</first>
+			<first>trunc_ln44_fu_251</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5127,7 +5105,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln45_fu_256</first>
+			<first>trunc_ln45_fu_259</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5135,7 +5113,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln42_fu_184</first>
+			<first>zext_ln42_fu_155</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5143,23 +5121,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln44_1_fu_239</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>24</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln44_2_fu_193</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>28</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln44_fu_161</first>
+			<first>zext_ln44_11_fu_169</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5167,15 +5129,23 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln45_1_fu_214</first>
+			<first>zext_ln44_12_fu_241</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>41</item>
+				<item>24</item>
 			</second>
 		</item>
 		<item>
-			<first>zext_ln45_4_fu_166</first>
+			<first>zext_ln44_13_fu_180</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>28</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln45_3_fu_196</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5183,7 +5153,15 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln45_fu_174</first>
+			<first>zext_ln45_4_fu_215</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>41</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln45_fu_204</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5199,7 +5177,7 @@
 		<count>8</count>
 		<item_version>0</item_version>
 		<item>
-			<first>PublicKeyA_read_read_fu_74</first>
+			<first>PublicKeyA_read_read_fu_72</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5207,7 +5185,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_writeresp_fu_80</first>
+			<first>grp_writeresp_fu_78</first>
 			<second>
 				<count>6</count>
 				<item_version>0</item_version>
@@ -5220,7 +5198,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_writeresp_fu_95</first>
+			<first>grp_writeresp_fu_93</first>
 			<second>
 				<count>6</count>
 				<item_version>0</item_version>
@@ -5233,7 +5211,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_291_load_fu_142</first>
+			<first>i_291_load_fu_140</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5241,7 +5219,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln38_store_fu_137</first>
+			<first>store_ln38_store_fu_135</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5249,7 +5227,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln38_store_fu_229</first>
+			<first>store_ln38_store_fu_231</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5257,7 +5235,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln44_write_fu_87</first>
+			<first>write_ln44_write_fu_85</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5265,7 +5243,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln45_write_fu_103</first>
+			<first>write_ln45_write_fu_101</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5282,7 +5260,7 @@
 		<item_version>0</item_version>
 		<item class_id="55" tracking_level="0" version="0">
 			<first class_id="56" tracking_level="0" version="0">
-				<first>t_i421</first>
+				<first>t_i410</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -5294,7 +5272,7 @@
 		</item>
 		<item>
 			<first>
-				<first>t_i421</first>
+				<first>t_i410</first>
 				<second>1</second>
 			</first>
 			<second>
@@ -5306,10 +5284,10 @@
 		</item>
 	</dp_mem_port_nodes>
 	<dp_reg_nodes>
-		<count>13</count>
+		<count>11</count>
 		<item_version>0</item_version>
 		<item>
-			<first>260</first>
+			<first>263</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5317,15 +5295,7 @@
 			</second>
 		</item>
 		<item>
-			<first>267</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>6</item>
-			</second>
-		</item>
-		<item>
-			<first>273</first>
+			<first>270</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5333,7 +5303,7 @@
 			</second>
 		</item>
 		<item>
-			<first>280</first>
+			<first>275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5341,7 +5311,7 @@
 			</second>
 		</item>
 		<item>
-			<first>284</first>
+			<first>279</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5349,23 +5319,7 @@
 			</second>
 		</item>
 		<item>
-			<first>289</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>36</item>
-			</second>
-		</item>
-		<item>
-			<first>294</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>22</item>
-			</second>
-		</item>
-		<item>
-			<first>299</first>
+			<first>284</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5373,15 +5327,15 @@
 			</second>
 		</item>
 		<item>
-			<first>305</first>
+			<first>290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>37</item>
+				<item>36</item>
 			</second>
 		</item>
 		<item>
-			<first>310</first>
+			<first>295</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5389,7 +5343,7 @@
 			</second>
 		</item>
 		<item>
-			<first>316</first>
+			<first>301</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5397,7 +5351,7 @@
 			</second>
 		</item>
 		<item>
-			<first>321</first>
+			<first>306</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5405,7 +5359,15 @@
 			</second>
 		</item>
 		<item>
-			<first>326</first>
+			<first>311</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>37</item>
+			</second>
+		</item>
+		<item>
+			<first>316</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5414,18 +5376,10 @@
 		</item>
 	</dp_reg_nodes>
 	<dp_regname_nodes>
-		<count>13</count>
+		<count>11</count>
 		<item_version>0</item_version>
 		<item>
-			<first>PublicKeyA_read_reg_267</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>6</item>
-			</second>
-		</item>
-		<item>
-			<first>gmem_addr_5_reg_310</first>
+			<first>gmem_addr_5_reg_295</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5433,7 +5387,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_addr_reg_299</first>
+			<first>gmem_addr_reg_284</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5441,7 +5395,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_291_reg_273</first>
+			<first>i_291_reg_270</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5449,7 +5403,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_reg_260</first>
+			<first>i_reg_263</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5457,7 +5411,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln42_reg_280</first>
+			<first>icmp_ln42_reg_275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5465,7 +5419,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421_addr_1_reg_289</first>
+			<first>t_i410_addr_1_reg_290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5473,7 +5427,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421_addr_reg_284</first>
+			<first>t_i410_addr_reg_279</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5481,7 +5435,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421_load_1_reg_305</first>
+			<first>t_i410_load_1_reg_311</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5489,15 +5443,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421_load_reg_294</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>22</item>
-			</second>
-		</item>
-		<item>
-			<first>trunc_ln44_reg_321</first>
+			<first>trunc_ln44_reg_306</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5505,7 +5451,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln45_reg_326</first>
+			<first>trunc_ln45_reg_316</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5513,7 +5459,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln44_1_reg_316</first>
+			<first>zext_ln44_12_reg_301</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5582,7 +5528,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421(p0)</first>
+			<first>t_i410(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5598,7 +5544,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_i421(p1)</first>
+			<first>t_i410(p1)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

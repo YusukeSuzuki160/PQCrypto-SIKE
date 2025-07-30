@@ -286,7 +286,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>carry_223_loc</name>
+						<name>carry_191_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -329,9 +329,9 @@
 						<type>0</type>
 						<id>10</id>
 						<name>tmp</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>31</lineNumber>
 						<contextFuncName>fpadd503</contextFuncName>
 						<contextNormFuncName>fpadd503</contextNormFuncName>
 						<inlineStackInfo>
@@ -344,10 +344,10 @@
 									<item_version>0</item_version>
 									<item class_id="13" tracking_level="0" version="0">
 										<first class_id="14" tracking_level="0" version="0">
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpadd503</second>
 										</first>
-										<second>24</second>
+										<second>31</second>
 									</item>
 								</second>
 							</item>
@@ -387,9 +387,9 @@
 						<type>0</type>
 						<id>11</id>
 						<name>tmp_s</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>31</lineNumber>
 						<contextFuncName>fpadd503</contextFuncName>
 						<contextNormFuncName>fpadd503</contextNormFuncName>
 						<inlineStackInfo>
@@ -402,10 +402,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpadd503</second>
 										</first>
-										<second>24</second>
+										<second>31</second>
 									</item>
 								</second>
 							</item>
@@ -444,10 +444,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>_ln24</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln31</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>31</lineNumber>
 						<contextFuncName>fpadd503</contextFuncName>
 						<contextNormFuncName>fpadd503</contextNormFuncName>
 						<inlineStackInfo>
@@ -460,10 +460,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpadd503</second>
 										</first>
-										<second>24</second>
+										<second>31</second>
 									</item>
 								</second>
 							</item>
@@ -496,7 +496,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.76</m_delay>
+				<m_delay>1.42</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -552,7 +552,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>carry_223_loc_load</name>
+						<name>carry_191_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -633,7 +633,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.81</m_delay>
+				<m_delay>0.27</m_delay>
 				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -642,10 +642,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>_ln37</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln46</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>37</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>fpadd503</contextFuncName>
 						<contextNormFuncName>fpadd503</contextNormFuncName>
 						<inlineStackInfo>
@@ -658,10 +658,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpadd503</second>
 										</first>
-										<second>37</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -763,7 +763,7 @@
 					<Obj>
 						<type>2</type>
 						<id>33</id>
-						<name>fpadd503_Pipeline_VITIS_LOOP_23_1</name>
+						<name>fpadd503_Pipeline_VITIS_LOOP_29_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -787,14 +787,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503_Pipeline_VITIS_LOOP_23_1&gt;</content>
+				<content>&lt;constant:fpadd503_Pipeline_VITIS_LOOP_29_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_19">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>40</id>
-						<name>fpadd503_Pipeline_VITIS_LOOP_28_2</name>
+						<name>fpadd503_Pipeline_VITIS_LOOP_35_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -818,14 +818,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503_Pipeline_VITIS_LOOP_28_2&gt;</content>
+				<content>&lt;constant:fpadd503_Pipeline_VITIS_LOOP_35_2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_20">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>45</id>
-						<name>fpadd503_Pipeline_VITIS_LOOP_34_3</name>
+						<name>fpadd503_Pipeline_VITIS_LOOP_42_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -849,7 +849,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503_Pipeline_VITIS_LOOP_34_3&gt;</content>
+				<content>&lt;constant:fpadd503_Pipeline_VITIS_LOOP_42_3&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -1111,8 +1111,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>40</mMinLatency>
-			<mMaxLatency>40</mMaxLatency>
+			<mMinLatency>35</mMinLatency>
+			<mMaxLatency>35</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

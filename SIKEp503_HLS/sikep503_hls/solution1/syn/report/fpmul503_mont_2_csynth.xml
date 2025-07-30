@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>zynq</ProductFamily>
-<Part>xc7z045-ffg900-2</Part>
+<ProductFamily>virtexuplus58g</ProductFamily>
+<Part>xcvu29p-fsga2577-2L-e</Part>
 <TopModelName>fpmul503_mont_2</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
@@ -18,60 +18,40 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.675</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>348</Best-caseLatency>
-<Average-caseLatency>486</Average-caseLatency>
-<Worst-caseLatency>592</Worst-caseLatency>
-<Best-caseRealTimeLatency>3.480 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>4.860 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>5.920 us</Worst-caseRealTimeLatency>
-<Interval-min>348</Interval-min>
-<Interval-max>592</Interval-max>
+<Best-caseLatency>145</Best-caseLatency>
+<Average-caseLatency>198</Average-caseLatency>
+<Worst-caseLatency>251</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.450 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.980 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.510 us</Worst-caseRealTimeLatency>
+<Interval-min>145</Interval-min>
+<Interval-max>251</Interval-max>
 </SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<Loop1>
-<Slack>7.30</Slack>
-<TripCount>16</TripCount>
-<Latency>16</Latency>
-<AbsoluteTimeLatency>160</AbsoluteTimeLatency>
-<PipelineII>1</PipelineII>
-<PipelineDepth>1</PipelineDepth>
-<InstanceList>
-</InstanceList>
-</Loop1>
-</SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/fpx.c:61</SourceLocation>
-<SummaryOfLoopViolations>
-<Loop1>
-<Name>Loop 1</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>-</SourceLocation>
-</Loop1>
-</SummaryOfLoopViolations>
+<SourceLocation>src/fpx.cpp:56</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>2</BRAM_18K>
-<DSP>64</DSP>
-<FF>5303</FF>
-<LUT>7847</LUT>
+<BRAM_18K>0</BRAM_18K>
+<DSP>932</DSP>
+<FF>3738</FF>
+<LUT>10444</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>1090</BRAM_18K>
-<DSP>900</DSP>
-<FF>437200</FF>
-<LUT>218600</LUT>
-<URAM>0</URAM>
+<BRAM_18K>5376</BRAM_18K>
+<DSP>12288</DSP>
+<FF>3456000</FF>
+<LUT>1728000</LUT>
+<URAM>1280</URAM>
 </AvailableResources>
 </AreaEstimates>
 

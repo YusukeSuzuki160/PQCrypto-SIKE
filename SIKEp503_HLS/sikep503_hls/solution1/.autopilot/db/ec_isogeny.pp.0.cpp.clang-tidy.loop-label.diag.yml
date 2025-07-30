@@ -1,0 +1,40 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_1:  '
+    FileOffset:      36
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          25048
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_121_1:  '
+    FileOffset:      121
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          27039
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_121_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_269_1:  '
+    FileOffset:      269
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          30317
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_269_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_319_1:  '
+    FileOffset:      319
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          31622
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_319_1: '
+...

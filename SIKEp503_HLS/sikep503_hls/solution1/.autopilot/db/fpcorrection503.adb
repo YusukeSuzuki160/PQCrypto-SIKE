@@ -178,9 +178,9 @@
               <type>0</type>
               <id>6</id>
               <name>tmp</name>
-              <fileName>src/generic/fp_generic.c</fileName>
+              <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>103</lineNumber>
               <contextFuncName>fpcorrection503</contextFuncName>
               <contextNormFuncName>fpcorrection503</contextNormFuncName>
               <inlineStackInfo>
@@ -193,10 +193,10 @@
                     <item_version>0</item_version>
                     <item class_id="13" tracking_level="0" version="0">
                       <first class_id="14" tracking_level="0" version="0">
-                        <first>src/generic/fp_generic.c</first>
+                        <first>src/generic/fp_generic.cpp</first>
                         <second>fpcorrection503</second>
                       </first>
-                      <second>92</second>
+                      <second>103</second>
                     </item>
                   </second>
                 </item>
@@ -235,10 +235,10 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>_ln92</name>
-              <fileName>src/generic/fp_generic.c</fileName>
+              <name>_ln103</name>
+              <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>103</lineNumber>
               <contextFuncName>fpcorrection503</contextFuncName>
               <contextNormFuncName>fpcorrection503</contextNormFuncName>
               <inlineStackInfo>
@@ -251,16 +251,16 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>src/generic/fp_generic.c</first>
+                        <first>src/generic/fp_generic.cpp</first>
                         <second>fpcorrection503</second>
                       </first>
-                      <second>92</second>
+                      <second>103</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28</rtlName>
+              <rtlName>grp_fpcorrection503_Pipeline_VITIS_LOOP_101_1_fu_28</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -286,7 +286,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.76</m_delay>
+          <m_delay>1.42</m_delay>
           <m_topoIndex>4</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -338,10 +338,10 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>_ln92</name>
-              <fileName>src/generic/fp_generic.c</fileName>
+              <name>_ln103</name>
+              <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>103</lineNumber>
               <contextFuncName>fpcorrection503</contextFuncName>
               <contextNormFuncName>fpcorrection503</contextNormFuncName>
               <inlineStackInfo>
@@ -354,16 +354,16 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>src/generic/fp_generic.c</first>
+                        <first>src/generic/fp_generic.cpp</first>
                         <second>fpcorrection503</second>
                       </first>
-                      <second>92</second>
+                      <second>103</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38</rtlName>
+              <rtlName>grp_fpcorrection503_Pipeline_VITIS_LOOP_107_2_fu_38</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -391,7 +391,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.76</m_delay>
+          <m_delay>1.42</m_delay>
           <m_topoIndex>6</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -400,10 +400,10 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>_ln100</name>
-              <fileName>src/generic/fp_generic.c</fileName>
+              <name>_ln111</name>
+              <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>100</lineNumber>
+              <lineNumber>111</lineNumber>
               <contextFuncName>fpcorrection503</contextFuncName>
               <contextNormFuncName>fpcorrection503</contextNormFuncName>
               <inlineStackInfo>
@@ -416,10 +416,10 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>src/generic/fp_generic.c</first>
+                        <first>src/generic/fp_generic.cpp</first>
                         <second>fpcorrection503</second>
                       </first>
-                      <second>100</second>
+                      <second>111</second>
                     </item>
                   </second>
                 </item>
@@ -521,7 +521,7 @@
             <Obj>
               <type>2</type>
               <id>22</id>
-              <name>fpcorrection503_Pipeline_VITIS_LOOP_91_1</name>
+              <name>fpcorrection503_Pipeline_VITIS_LOOP_101_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -545,14 +545,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fpcorrection503_Pipeline_VITIS_LOOP_91_1&gt;</content>
+          <content>&lt;constant:fpcorrection503_Pipeline_VITIS_LOOP_101_1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_13">
           <Value>
             <Obj>
               <type>2</type>
               <id>28</id>
-              <name>fpcorrection503_Pipeline_VITIS_LOOP_97_2</name>
+              <name>fpcorrection503_Pipeline_VITIS_LOOP_107_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -576,7 +576,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fpcorrection503_Pipeline_VITIS_LOOP_97_2&gt;</content>
+          <content>&lt;constant:fpcorrection503_Pipeline_VITIS_LOOP_107_2&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -772,8 +772,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>26</mMinLatency>
-        <mMaxLatency>26</mMaxLatency>
+        <mMinLatency>23</mMinLatency>
+        <mMaxLatency>23</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -911,7 +911,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28 (fpcorrection503_Pipeline_VITIS_LOOP_91_1)</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_101_1_fu_28 (fpcorrection503_Pipeline_VITIS_LOOP_101_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -921,16 +921,16 @@
             </item>
             <item>
               <first>FF</first>
-              <second>149</second>
+              <second>77</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>590</second>
+              <second>689</second>
             </item>
           </second>
         </item>
         <item>
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38 (fpcorrection503_Pipeline_VITIS_LOOP_97_2)</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_107_2_fu_38 (fpcorrection503_Pipeline_VITIS_LOOP_107_2)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -940,11 +940,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>405</second>
+              <second>141</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>718</second>
+              <second>744</second>
             </item>
           </second>
         </item>
@@ -987,7 +987,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>13</second>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -1014,7 +1014,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>13</second>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -1041,7 +1041,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>13</second>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -1068,7 +1068,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>13</second>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -1095,7 +1095,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>13</second>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -1122,7 +1122,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>13</second>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -1149,7 +1149,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>21</second>
+              <second>26</second>
             </item>
           </second>
         </item>
@@ -1177,7 +1177,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28_ap_start_reg</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_101_1_fu_28_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1196,7 +1196,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38_ap_start_reg</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_107_2_fu_38_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1238,14 +1238,14 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_101_1_fu_28</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_107_2_fu_38</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -1256,7 +1256,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28 (fpcorrection503_Pipeline_VITIS_LOOP_91_1)</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_101_1_fu_28 (fpcorrection503_Pipeline_VITIS_LOOP_101_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1264,7 +1264,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38 (fpcorrection503_Pipeline_VITIS_LOOP_97_2)</first>
+          <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_107_2_fu_38 (fpcorrection503_Pipeline_VITIS_LOOP_107_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1431,7 +1431,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_91_1_fu_28</first>
+        <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_101_1_fu_28</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1440,7 +1440,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_97_2_fu_38</first>
+        <first>grp_fpcorrection503_Pipeline_VITIS_LOOP_107_2_fu_38</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

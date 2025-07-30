@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sikep503_kem_enc_hw'" level="0">
-<item name = "Date">Wed Jul  2 14:07:44 2025
+<item name = "Date">Wed Jul 30 17:34:49 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z045-ffg900-2</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7878191, 25002634676, 78.782 ms, 250.026 sec, 7878192, 25002634677, no</column>
+<column name="">3692292, 10863495406, 36.923 ms, 108.635 sec, 3692293, 10863495407, no</column>
 </table>
 </item>
 <item name = "Detail">

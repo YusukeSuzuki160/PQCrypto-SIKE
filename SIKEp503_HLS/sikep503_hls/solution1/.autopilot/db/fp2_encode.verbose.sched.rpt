@@ -1,0 +1,382 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2_encode'
+================================================================
+* Date:           Wed Jul 30 15:22:50 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.137 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      561|      871|  5.610 us|  8.710 us|  561|  871|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 26
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%t = alloca i64 1"   --->   Operation 27 'alloca' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%temp = alloca i64 1" [src/fpx.cpp:56->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 28 'alloca' 'temp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%temp_19 = alloca i64 1" [src/fpx.cpp:56->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 29 'alloca' 'temp_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_encode_Pipeline_1, i64 %temp_19"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_encode_Pipeline_2, i64 %temp"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.48>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%x_0_addr = getelementptr i64 %x_0, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 32 'getelementptr' 'x_0_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%x_1_addr = getelementptr i64 %x_1, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 33 'getelementptr' 'x_1_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%x_2_addr = getelementptr i64 %x_2, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 34 'getelementptr' 'x_2_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%x_3_addr = getelementptr i64 %x_3, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 35 'getelementptr' 'x_3_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%x_4_addr = getelementptr i64 %x_4, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 36 'getelementptr' 'x_4_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%x_5_addr = getelementptr i64 %x_5, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 37 'getelementptr' 'x_5_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%x_6_addr = getelementptr i64 %x_6, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 38 'getelementptr' 'x_6_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%x_7_addr = getelementptr i64 %x_7, i64 0, i64 0" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 39 'getelementptr' 'x_7_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2_encode_Pipeline_1, i64 %temp_19"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 41 [2/2] (0.71ns)   --->   "%x_0_load = load i1 %x_0_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 41 'load' 'x_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 42 [2/2] (0.71ns)   --->   "%x_1_load = load i1 %x_1_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 42 'load' 'x_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 43 [2/2] (0.71ns)   --->   "%x_2_load = load i1 %x_2_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 43 'load' 'x_2_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 44 [2/2] (0.71ns)   --->   "%x_3_load = load i1 %x_3_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 44 'load' 'x_3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 45 [2/2] (0.71ns)   --->   "%x_4_load = load i1 %x_4_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 45 'load' 'x_4_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 46 [2/2] (0.71ns)   --->   "%x_5_load = load i1 %x_5_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 46 'load' 'x_5_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 47 [2/2] (0.71ns)   --->   "%x_6_load = load i1 %x_6_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 47 'load' 'x_6_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 48 [2/2] (0.71ns)   --->   "%x_7_load = load i1 %x_7_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 48 'load' 'x_7_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 49 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2_encode_Pipeline_2, i64 %temp"   --->   Operation 49 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.71>
+ST_3 : Operation 50 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_0_load = load i1 %x_0_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 50 'load' 'x_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 51 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_1_load = load i1 %x_1_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 51 'load' 'x_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 52 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_2_load = load i1 %x_2_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 52 'load' 'x_2_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 53 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_3_load = load i1 %x_3_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 53 'load' 'x_3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 54 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_4_load = load i1 %x_4_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 54 'load' 'x_4_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 55 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_5_load = load i1 %x_5_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 55 'load' 'x_5_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 56 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_6_load = load i1 %x_6_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 56 'load' 'x_6_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 57 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_7_load = load i1 %x_7_addr" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 57 'load' 'x_7_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_3 : Operation 58 [2/2] (0.00ns)   --->   "%call_ln58 = call void @mp_mul.10, i64 %x_0_load, i64 %x_1_load, i64 %x_2_load, i64 %x_3_load, i64 %x_4_load, i64 %x_5_load, i64 %x_6_load, i64 %x_7_load, i64 %temp_19, i1 %one" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 58 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.71>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%x_0_addr_1 = getelementptr i64 %x_0, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 59 'getelementptr' 'x_0_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%x_1_addr_1 = getelementptr i64 %x_1, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 60 'getelementptr' 'x_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%x_2_addr_1 = getelementptr i64 %x_2, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 61 'getelementptr' 'x_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 62 [1/1] (0.00ns)   --->   "%x_3_addr_1 = getelementptr i64 %x_3, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 62 'getelementptr' 'x_3_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%x_4_addr_1 = getelementptr i64 %x_4, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 63 'getelementptr' 'x_4_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%x_5_addr_1 = getelementptr i64 %x_5, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 64 'getelementptr' 'x_5_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%x_6_addr_1 = getelementptr i64 %x_6, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 65 'getelementptr' 'x_6_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%x_7_addr_1 = getelementptr i64 %x_7, i64 0, i64 1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 66 'getelementptr' 'x_7_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/2] (0.70ns)   --->   "%call_ln58 = call void @mp_mul.10, i64 %x_0_load, i64 %x_1_load, i64 %x_2_load, i64 %x_3_load, i64 %x_4_load, i64 %x_5_load, i64 %x_6_load, i64 %x_7_load, i64 %temp_19, i1 %one" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 67 'call' 'call_ln58' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 68 [2/2] (0.71ns)   --->   "%x_0_load_1 = load i1 %x_0_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 68 'load' 'x_0_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_4 : Operation 69 [2/2] (0.71ns)   --->   "%x_1_load_1 = load i1 %x_1_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 69 'load' 'x_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_4 : Operation 70 [2/2] (0.71ns)   --->   "%x_2_load_1 = load i1 %x_2_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 70 'load' 'x_2_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_4 : Operation 71 [2/2] (0.71ns)   --->   "%x_3_load_1 = load i1 %x_3_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 71 'load' 'x_3_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_4 : Operation 72 [2/2] (0.71ns)   --->   "%x_4_load_1 = load i1 %x_4_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 72 'load' 'x_4_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_4 : Operation 73 [2/2] (0.71ns)   --->   "%x_5_load_1 = load i1 %x_5_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 73 'load' 'x_5_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_4 : Operation 74 [2/2] (0.71ns)   --->   "%x_6_load_1 = load i1 %x_6_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 74 'load' 'x_6_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_4 : Operation 75 [2/2] (0.71ns)   --->   "%x_7_load_1 = load i1 %x_7_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 75 'load' 'x_7_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+
+State 5 <SV = 4> <Delay = 0.71>
+ST_5 : Operation 76 [2/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.72, i64 %temp_19, i64 %t, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 76 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 77 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_0_load_1 = load i1 %x_0_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 77 'load' 'x_0_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 78 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_1_load_1 = load i1 %x_1_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 78 'load' 'x_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 79 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_2_load_1 = load i1 %x_2_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 79 'load' 'x_2_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 80 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_3_load_1 = load i1 %x_3_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 80 'load' 'x_3_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 81 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_4_load_1 = load i1 %x_4_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 81 'load' 'x_4_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 82 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_5_load_1 = load i1 %x_5_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 82 'load' 'x_5_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 83 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_6_load_1 = load i1 %x_6_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 83 'load' 'x_6_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 84 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_7_load_1 = load i1 %x_7_addr_1" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 84 'load' 'x_7_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_5 : Operation 85 [2/2] (0.00ns)   --->   "%call_ln58 = call void @mp_mul.10, i64 %x_0_load_1, i64 %x_1_load_1, i64 %x_2_load_1, i64 %x_3_load_1, i64 %x_4_load_1, i64 %x_5_load_1, i64 %x_6_load_1, i64 %x_7_load_1, i64 %temp, i1 %one" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 85 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.70>
+ST_6 : Operation 86 [1/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.72, i64 %temp_19, i64 %t, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 86 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 87 [1/2] (0.70ns)   --->   "%call_ln58 = call void @mp_mul.10, i64 %x_0_load_1, i64 %x_1_load_1, i64 %x_2_load_1, i64 %x_3_load_1, i64 %x_4_load_1, i64 %x_5_load_1, i64 %x_6_load_1, i64 %x_7_load_1, i64 %temp, i1 %one" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 87 'call' 'call_ln58' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 88 [8/8] (0.00ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 88 'call' 'call_ln40' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 8.13>
+ST_8 : Operation 89 [7/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 89 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 8.13>
+ST_9 : Operation 90 [6/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 90 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 8.13>
+ST_10 : Operation 91 [5/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 91 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 8.13>
+ST_11 : Operation 92 [4/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 92 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 8.13>
+ST_12 : Operation 93 [3/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 93 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 8.13>
+ST_13 : Operation 94 [2/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 94 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 95 [1/8] (0.00ns)   --->   "%call_ln40 = call void @fpcorrection503.73, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 95 'call' 'call_ln40' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 96 [2/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.74, i64 %temp, i64 %t, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 96 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 97 [1/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.74, i64 %temp, i64 %t, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 97 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 98 [8/8] (0.00ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 98 'call' 'call_ln40' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 8.13>
+ST_18 : Operation 99 [7/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 99 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 8.13>
+ST_19 : Operation 100 [6/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 100 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 8.13>
+ST_20 : Operation 101 [5/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 101 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 8.13>
+ST_21 : Operation 102 [4/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 102 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 8.13>
+ST_22 : Operation 103 [3/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 103 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 8.13>
+ST_23 : Operation 104 [2/8] (8.13ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 104 'call' 'call_ln40' <Predicate = true> <Delay = 8.13> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 105 [1/8] (0.00ns)   --->   "%call_ln40 = call void @fpcorrection503.75, i64 %t" [src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41]   --->   Operation 105 'call' 'call_ln40' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 1.14>
+ST_25 : Operation 106 [1/1] (0.00ns)   --->   "%enc_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %enc" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 106 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 107 [2/2] (1.14ns)   --->   "%call_ln58 = call void @fp2_encode_Pipeline_VITIS_LOOP_42_1, i64 %t, i64 %enc_read, i8 %gmem" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 107 'call' 'call_ln58' <Predicate = true> <Delay = 1.14> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 0.00>
+ST_26 : Operation 108 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_9, i32 0, i32 0, void @empty_34, i32 0, i32 0, void @empty_4, void @empty_5, void @empty_34, i32 16, i32 16, i32 16, i32 16, void @empty_34, void @empty_34, i32 4294967295, i32 0, i32 0"   --->   Operation 108 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 109 [1/2] (0.00ns)   --->   "%call_ln58 = call void @fp2_encode_Pipeline_VITIS_LOOP_42_1, i64 %t, i64 %enc_read, i8 %gmem" [src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41]   --->   Operation 109 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_26 : Operation 110 [1/1] (0.00ns)   --->   "%ret_ln47 = ret" [src/sidh.cpp:47]   --->   Operation 110 'ret' 'ret_ln47' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 1.481ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2_encode_Pipeline_1' [34]  (1.481 ns)
+
+ <State 3>: 0.714ns
+The critical path consists of the following:
+	'load' operation 64 bit ('x_0_load', src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41) on array 'x_0' [35]  (0.714 ns)
+
+ <State 4>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 1 bit ('x_0_addr_1', src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41) [15]  (0.000 ns)
+	'load' operation 64 bit ('x_0_load_1', src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41) on array 'x_0' [47]  (0.714 ns)
+
+ <State 5>: 0.714ns
+The critical path consists of the following:
+	'load' operation 64 bit ('x_0_load_1', src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41) on array 'x_0' [47]  (0.714 ns)
+
+ <State 6>: 0.708ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln58', src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:363->src/sidh.cpp:41) to 'mp_mul.10' [55]  (0.708 ns)
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41) to 'fpcorrection503.73' [45]  (8.137 ns)
+
+ <State 9>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41) to 'fpcorrection503.73' [45]  (8.137 ns)
+
+ <State 10>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41) to 'fpcorrection503.73' [45]  (8.137 ns)
+
+ <State 11>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41) to 'fpcorrection503.73' [45]  (8.137 ns)
+
+ <State 12>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41) to 'fpcorrection503.73' [45]  (8.137 ns)
+
+ <State 13>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:362->src/sidh.cpp:41) to 'fpcorrection503.73' [45]  (8.137 ns)
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 0.000ns
+The critical path consists of the following:
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41) to 'fpcorrection503.75' [57]  (8.137 ns)
+
+ <State 19>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41) to 'fpcorrection503.75' [57]  (8.137 ns)
+
+ <State 20>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41) to 'fpcorrection503.75' [57]  (8.137 ns)
+
+ <State 21>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41) to 'fpcorrection503.75' [57]  (8.137 ns)
+
+ <State 22>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41) to 'fpcorrection503.75' [57]  (8.137 ns)
+
+ <State 23>: 8.137ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln40', src/fpx.cpp:40->src/fpx.cpp:363->src/sidh.cpp:41) to 'fpcorrection503.75' [57]  (8.137 ns)
+
+ <State 24>: 0.000ns
+The critical path consists of the following:
+
+ <State 25>: 1.147ns
+The critical path consists of the following:
+	wire read operation ('enc_read', src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41) on port 'enc' (src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41) [13]  (0.000 ns)
+	'call' operation 0 bit ('call_ln58', src/fpx.cpp:58->src/fpx.cpp:39->src/fpx.cpp:362->src/sidh.cpp:41) to 'fp2_encode_Pipeline_VITIS_LOOP_42_1' [58]  (1.147 ns)
+
+ <State 26>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

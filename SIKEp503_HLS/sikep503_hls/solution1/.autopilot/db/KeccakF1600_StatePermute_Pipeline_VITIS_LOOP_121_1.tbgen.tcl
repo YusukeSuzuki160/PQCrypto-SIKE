@@ -13,7 +13,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 712
+set cdfgNum 855
 set C_modelName {KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_121_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -298,7 +298,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "15", "EstimateLatencyMax" : "15",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "14", "EstimateLatencyMax" : "14",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -360,7 +360,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "KeccakF_RoundConstants", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_121_1", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.KeccakF_RoundConstants_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
@@ -392,38 +392,38 @@ set ArgLastReadFirstWriteLatency {
 		Ase {Type I LastRead 0 FirstWrite -1}
 		Asi {Type I LastRead 0 FirstWrite -1}
 		Aso {Type I LastRead 0 FirstWrite -1}
-		Asu_1_out {Type O LastRead -1 FirstWrite 1}
-		Aba_1_out {Type O LastRead -1 FirstWrite 1}
-		Abe_1_out {Type O LastRead -1 FirstWrite 1}
-		Abi_1_out {Type O LastRead -1 FirstWrite 1}
-		Abo_1_out {Type O LastRead -1 FirstWrite 1}
-		Abu_1_out {Type O LastRead -1 FirstWrite 1}
-		Aga_1_out {Type O LastRead -1 FirstWrite 1}
-		Age_1_out {Type O LastRead -1 FirstWrite 1}
-		Agi_1_out {Type O LastRead -1 FirstWrite 1}
-		Ago_1_out {Type O LastRead -1 FirstWrite 1}
-		Agu_1_out {Type O LastRead -1 FirstWrite 1}
-		Aka_1_out {Type O LastRead -1 FirstWrite 1}
-		Ake_1_out {Type O LastRead -1 FirstWrite 1}
-		Aki_1_out {Type O LastRead -1 FirstWrite 1}
-		Ako_1_out {Type O LastRead -1 FirstWrite 1}
-		Aku_1_out {Type O LastRead -1 FirstWrite 1}
-		Ama_1_out {Type O LastRead -1 FirstWrite 1}
-		Ame_1_out {Type O LastRead -1 FirstWrite 1}
-		Ami_1_out {Type O LastRead -1 FirstWrite 1}
-		Amo_1_out {Type O LastRead -1 FirstWrite 1}
-		Amu_1_out {Type O LastRead -1 FirstWrite 1}
-		Asa_1_out {Type O LastRead -1 FirstWrite 1}
-		Ase_1_out {Type O LastRead -1 FirstWrite 1}
-		Asi_1_out {Type O LastRead -1 FirstWrite 1}
-		Aso_1_out {Type O LastRead -1 FirstWrite 1}
+		Asu_1_out {Type O LastRead -1 FirstWrite 0}
+		Aba_1_out {Type O LastRead -1 FirstWrite 0}
+		Abe_1_out {Type O LastRead -1 FirstWrite 0}
+		Abi_1_out {Type O LastRead -1 FirstWrite 0}
+		Abo_1_out {Type O LastRead -1 FirstWrite 0}
+		Abu_1_out {Type O LastRead -1 FirstWrite 0}
+		Aga_1_out {Type O LastRead -1 FirstWrite 0}
+		Age_1_out {Type O LastRead -1 FirstWrite 0}
+		Agi_1_out {Type O LastRead -1 FirstWrite 0}
+		Ago_1_out {Type O LastRead -1 FirstWrite 0}
+		Agu_1_out {Type O LastRead -1 FirstWrite 0}
+		Aka_1_out {Type O LastRead -1 FirstWrite 0}
+		Ake_1_out {Type O LastRead -1 FirstWrite 0}
+		Aki_1_out {Type O LastRead -1 FirstWrite 0}
+		Ako_1_out {Type O LastRead -1 FirstWrite 0}
+		Aku_1_out {Type O LastRead -1 FirstWrite 0}
+		Ama_1_out {Type O LastRead -1 FirstWrite 0}
+		Ame_1_out {Type O LastRead -1 FirstWrite 0}
+		Ami_1_out {Type O LastRead -1 FirstWrite 0}
+		Amo_1_out {Type O LastRead -1 FirstWrite 0}
+		Amu_1_out {Type O LastRead -1 FirstWrite 0}
+		Asa_1_out {Type O LastRead -1 FirstWrite 0}
+		Ase_1_out {Type O LastRead -1 FirstWrite 0}
+		Asi_1_out {Type O LastRead -1 FirstWrite 0}
+		Aso_1_out {Type O LastRead -1 FirstWrite 0}
 		KeccakF_RoundConstants {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "15", "Max" : "15"}
-	, {"Name" : "Interval", "Min" : "15", "Max" : "15"}
+	{"Name" : "Latency", "Min" : "14", "Max" : "14"}
+	, {"Name" : "Interval", "Min" : "14", "Max" : "14"}
 ]}
 
 set PipelineEnableSignalInfo {[

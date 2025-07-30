@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fips202.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>src/sha3/fips202.cpp</string>
+      <key>line</key>
+      <integer>427</integer>
+      <key>column</key>
+      <integer>110</integer>
+      <key>message</key>
+      <string>unused parameter &apos;r&apos;</string>
+      <key>ID</key>
+      <integer>5292</integer>
+      <key>WarningOption</key>
+      <string>unused-parameter</string>
+    </dict>
+  </array>
+</dict>

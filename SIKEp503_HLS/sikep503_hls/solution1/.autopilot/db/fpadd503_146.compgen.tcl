@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1831 \
+    id 1334 \
     name a \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename a \
     op interface \
-    ports { a_address0 { O 4 vector } a_ce0 { O 1 bit } a_q0 { I 64 vector } } \
+    ports { a_address0 { O 7 vector } a_ce0 { O 1 bit } a_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a'"
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1833 \
+    id 1337 \
     name b \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename b \
     op interface \
-    ports { b_address0 { O 4 vector } b_ce0 { O 1 bit } b_q0 { I 64 vector } } \
+    ports { b_address0 { O 7 vector } b_ce0 { O 1 bit } b_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b'"
@@ -49,14 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1835 \
+    id 1340 \
     name c \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename c \
     op interface \
-    ports { c_address0 { O 7 vector } c_ce0 { O 1 bit } c_we0 { O 1 bit } c_d0 { O 64 vector } c_address1 { O 7 vector } c_ce1 { O 1 bit } c_q1 { I 64 vector } } \
+    ports { c_address0 { O 4 vector } c_ce0 { O 1 bit } c_we0 { O 1 bit } c_d0 { O 64 vector } c_address1 { O 4 vector } c_ce1 { O 1 bit } c_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c'"
@@ -67,7 +67,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1832 \
+    id 1335 \
     name a_offset \
     type other \
     dir I \
@@ -75,14 +75,29 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_a_offset \
     op interface \
-    ports { a_offset { I 1 vector } } \
+    ports { a_offset { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1834 \
+    id 1336 \
+    name a_offset2 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_a_offset2 \
+    op interface \
+    ports { a_offset2 { I 1 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1338 \
     name b_offset \
     type other \
     dir I \
@@ -90,14 +105,29 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_b_offset \
     op interface \
-    ports { b_offset { I 1 vector } } \
+    ports { b_offset { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1836 \
+    id 1339 \
+    name b_offset4 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_b_offset4 \
+    op interface \
+    ports { b_offset4 { I 1 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1341 \
     name c_offset \
     type other \
     dir I \
@@ -105,22 +135,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_c_offset \
     op interface \
-    ports { c_offset { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 1837 \
-    name c_offset2 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_c_offset2 \
-    op interface \
-    ports { c_offset2 { I 1 vector } } \
+    ports { c_offset { I 1 vector } } \
 } "
 }
 

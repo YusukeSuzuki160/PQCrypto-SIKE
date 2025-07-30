@@ -201,7 +201,7 @@
 						<type>0</type>
 						<id>6</id>
 						<name>i</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -216,14 +216,14 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -264,7 +264,7 @@
 						<type>0</type>
 						<id>7</id>
 						<name>i_write_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -279,14 +279,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -318,7 +318,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -369,8 +369,8 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_286</name>
-						<fileName>src/sidh.c</fileName>
+						<name>i_384</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -385,14 +385,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -434,7 +434,7 @@
 						<type>0</type>
 						<id>11</id>
 						<name>icmp_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -449,14 +449,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -488,7 +488,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.28</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -498,7 +498,7 @@
 						<type>0</type>
 						<id>12</id>
 						<name>add_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -513,14 +513,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -552,7 +552,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.28</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -562,7 +562,7 @@
 						<type>0</type>
 						<id>13</id>
 						<name>br_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -577,14 +577,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -627,7 +627,7 @@
 						<type>0</type>
 						<id>15</id>
 						<name>zext_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -642,14 +642,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -681,7 +681,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>27</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -690,7 +690,7 @@
 						<type>0</type>
 						<id>16</id>
 						<name>trunc_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -705,14 +705,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -753,7 +753,7 @@
 						<type>0</type>
 						<id>20</id>
 						<name>lshr_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -768,14 +768,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -810,7 +810,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>28</m_topoIndex>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -819,7 +819,7 @@
 						<type>0</type>
 						<id>21</id>
 						<name>zext_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -834,14 +834,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -873,7 +873,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -882,7 +882,7 @@
 						<type>0</type>
 						<id>22</id>
 						<name>lshr_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -897,14 +897,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -948,7 +948,7 @@
 						<type>0</type>
 						<id>23</id>
 						<name>zext_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -963,14 +963,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1011,7 +1011,7 @@
 						<type>0</type>
 						<id>24</id>
 						<name>t_i_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1026,14 +1026,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1076,7 +1076,7 @@
 						<type>0</type>
 						<id>25</id>
 						<name>t_i_load</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1091,14 +1091,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1129,7 +1129,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1139,7 +1139,7 @@
 						<type>0</type>
 						<id>26</id>
 						<name>shl_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1154,14 +1154,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1194,7 +1194,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1202,8 +1202,8 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>zext_ln44_1</name>
-						<fileName>src/sidh.c</fileName>
+						<name>zext_ln44_8</name>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1218,14 +1218,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1257,7 +1257,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1266,7 +1266,7 @@
 						<type>0</type>
 						<id>28</id>
 						<name>lshr_ln44_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1281,14 +1281,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1320,8 +1320,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.60</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_delay>1.09</m_delay>
+				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1330,7 +1330,7 @@
 						<type>0</type>
 						<id>29</id>
 						<name>trunc_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1345,14 +1345,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1384,7 +1384,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1393,7 +1393,7 @@
 						<type>0</type>
 						<id>30</id>
 						<name>SharedSecretA_0_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1408,14 +1408,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1449,7 +1449,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_26">
@@ -1458,7 +1458,7 @@
 						<type>0</type>
 						<id>31</id>
 						<name>SharedSecretA_1_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1473,14 +1473,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1514,7 +1514,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_27">
@@ -1523,7 +1523,7 @@
 						<type>0</type>
 						<id>32</id>
 						<name>SharedSecretA_2_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1538,14 +1538,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1579,7 +1579,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_28">
@@ -1588,7 +1588,7 @@
 						<type>0</type>
 						<id>33</id>
 						<name>SharedSecretA_3_addr</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1603,14 +1603,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -1644,7 +1644,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>33</m_topoIndex>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1653,7 +1653,7 @@
 						<type>0</type>
 						<id>34</id>
 						<name>zext_ln</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1668,14 +1668,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1718,7 +1718,7 @@
 						<type>0</type>
 						<id>35</id>
 						<name>zext_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1733,14 +1733,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1781,7 +1781,7 @@
 						<type>0</type>
 						<id>36</id>
 						<name>t_i_addr_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1796,14 +1796,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1846,7 +1846,7 @@
 						<type>0</type>
 						<id>37</id>
 						<name>t_i_load_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1861,14 +1861,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1899,7 +1899,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.77</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1909,7 +1909,7 @@
 						<type>0</type>
 						<id>38</id>
 						<name>lshr_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1924,14 +1924,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -1963,8 +1963,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.60</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_delay>1.09</m_delay>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_34">
@@ -1973,7 +1973,7 @@
 						<type>0</type>
 						<id>39</id>
 						<name>trunc_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -1988,14 +1988,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2027,7 +2027,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_35">
@@ -2036,7 +2036,7 @@
 						<type>0</type>
 						<id>40</id>
 						<name>add_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2051,14 +2051,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2090,7 +2090,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.31</m_delay>
+				<m_delay>0.70</m_delay>
 				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2100,7 +2100,7 @@
 						<type>0</type>
 						<id>41</id>
 						<name>lshr_ln45_2</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2115,14 +2115,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2166,7 +2166,7 @@
 						<type>0</type>
 						<id>42</id>
 						<name>zext_ln45_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2181,14 +2181,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2229,7 +2229,7 @@
 						<type>0</type>
 						<id>43</id>
 						<name>SharedSecretA_0_addr_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2244,14 +2244,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2294,7 +2294,7 @@
 						<type>0</type>
 						<id>44</id>
 						<name>SharedSecretA_1_addr_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2309,14 +2309,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2359,7 +2359,7 @@
 						<type>0</type>
 						<id>45</id>
 						<name>SharedSecretA_2_addr_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2374,14 +2374,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2424,7 +2424,7 @@
 						<type>0</type>
 						<id>46</id>
 						<name>SharedSecretA_3_addr_1</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2439,14 +2439,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2489,7 +2489,7 @@
 						<type>0</type>
 						<id>47</id>
 						<name>_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2504,14 +2504,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -2549,7 +2549,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.63</m_delay>
+				<m_delay>0.43</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2559,7 +2559,7 @@
 						<type>0</type>
 						<id>49</id>
 						<name>SharedSecretA_2_addr_write_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2574,14 +2574,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -2613,7 +2613,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>41</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2623,7 +2623,7 @@
 						<type>0</type>
 						<id>50</id>
 						<name>SharedSecretA_1_addr_1_write_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2638,14 +2638,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2677,7 +2677,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>42</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2687,7 +2687,7 @@
 						<type>0</type>
 						<id>51</id>
 						<name>br_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2702,14 +2702,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2750,7 +2750,7 @@
 						<type>0</type>
 						<id>53</id>
 						<name>SharedSecretA_1_addr_write_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2765,14 +2765,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -2804,7 +2804,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2814,7 +2814,7 @@
 						<type>0</type>
 						<id>54</id>
 						<name>SharedSecretA_0_addr_1_write_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2829,14 +2829,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2868,7 +2868,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>45</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2878,7 +2878,7 @@
 						<type>0</type>
 						<id>55</id>
 						<name>br_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2893,14 +2893,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -2941,7 +2941,7 @@
 						<type>0</type>
 						<id>57</id>
 						<name>SharedSecretA_0_addr_write_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -2956,14 +2956,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -2995,7 +2995,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3005,7 +3005,7 @@
 						<type>0</type>
 						<id>58</id>
 						<name>SharedSecretA_3_addr_1_write_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -3020,14 +3020,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -3059,7 +3059,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3069,7 +3069,7 @@
 						<type>0</type>
 						<id>59</id>
 						<name>br_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -3084,14 +3084,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -3132,7 +3132,7 @@
 						<type>0</type>
 						<id>61</id>
 						<name>SharedSecretA_3_addr_write_ln44</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>44</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -3147,14 +3147,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>44</second>
@@ -3186,7 +3186,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>50</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3196,7 +3196,7 @@
 						<type>0</type>
 						<id>62</id>
 						<name>SharedSecretA_2_addr_1_write_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -3211,14 +3211,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -3250,7 +3250,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.75</m_delay>
+				<m_delay>0.66</m_delay>
 				<m_topoIndex>51</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3260,7 +3260,7 @@
 						<type>0</type>
 						<id>63</id>
 						<name>br_ln45</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -3275,14 +3275,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>45</second>
@@ -3323,7 +3323,7 @@
 						<type>0</type>
 						<id>65</id>
 						<name>i_write_ln38</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -3338,14 +3338,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>38</second>
@@ -3379,7 +3379,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
+				<m_delay>0.38</m_delay>
 				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3389,7 +3389,7 @@
 						<type>0</type>
 						<id>66</id>
 						<name>br_ln42</name>
-						<fileName>src/sidh.c</fileName>
+						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>fp2_encode</contextFuncName>
@@ -3404,14 +3404,14 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>EphemeralSecretAgreement_A</second>
 										</first>
-										<second>326</second>
+										<second>305</second>
 									</item>
 									<item>
 										<first>
-											<first>src/sidh.c</first>
+											<first>src/sidh.cpp</first>
 											<second>fp2_encode</second>
 										</first>
 										<second>42</second>
@@ -3483,8 +3483,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.29</m_delay>
-				<m_topoIndex>26</m_topoIndex>
+				<m_delay>0.38</m_delay>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
@@ -4255,7 +4255,7 @@
 				<Obj>
 					<type>3</type>
 					<id>69</id>
-					<name>fp2_encode.31.exit.exitStub</name>
+					<name>_ZL10fp2_encodePA8_KmPh.43.exit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5137,8 +5137,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>66</mMinLatency>
-			<mMaxLatency>66</mMaxLatency>
+			<mMinLatency>65</mMinLatency>
+			<mMaxLatency>65</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5186,11 +5186,11 @@
 				<item>67</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>3</mDepth>
+			<mDepth>2</mDepth>
 			<mMinTripCount>63</mMinTripCount>
 			<mMaxTripCount>63</mMaxTripCount>
-			<mMinLatency>64</mMinLatency>
-			<mMaxLatency>64</mMaxLatency>
+			<mMinLatency>63</mMinLatency>
+			<mMaxLatency>63</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5275,7 +5275,7 @@
 		<item>
 			<first>15</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5289,14 +5289,14 @@
 		<item>
 			<first>20</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>21</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5359,28 +5359,28 @@
 		<item>
 			<first>30</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5429,49 +5429,49 @@
 		<item>
 			<first>40</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5485,84 +5485,84 @@
 		<item>
 			<first>49</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5583,7 +5583,7 @@
 		<item>
 			<first>68</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5609,35 +5609,35 @@
 			<first>48</first>
 			<second>
 				<first>1</first>
-				<second>3</second>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>3</first>
-				<second>3</second>
+				<first>2</first>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>56</first>
 			<second>
-				<first>3</first>
-				<second>3</second>
+				<first>2</first>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>3</first>
-				<second>3</second>
+				<first>2</first>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>64</first>
 			<second>
-				<first>3</first>
-				<second>3</second>
+				<first>2</first>
+				<second>2</second>
 			</second>
 		</item>
 		<item>
@@ -5678,7 +5678,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<pipe_depth>2</pipe_depth>
 			<mDBIIViolationVec class_id="34" tracking_level="0" version="0">
 				<count>0</count>
 				<item_version>0</item_version>

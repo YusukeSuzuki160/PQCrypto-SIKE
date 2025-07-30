@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sikep503_kem_enc_hw'" level="0">
-<item name = "Date">Wed Jul  2 14:07:44 2025
+<item name = "Date">Wed Jul 30 17:34:50 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z045-ffg900-2</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -24,22 +24,23 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7878191, 25002634676, 78.782 ms, 250.026 sec, 7878192, 25002634677, no</column>
+<column name="">3692292, 10863495406, 36.923 ms, 108.635 sec, 3692293, 10863495407, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_27_1_fu_215">sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_27_1, 26, 26, 0.260 us, 0.260 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_sikep503_kem_enc_hw_Pipeline_2_fu_229">sikep503_kem_enc_hw_Pipeline_2, 381, 381, 3.810 us, 3.810 us, 379, 379, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_cshake256_simple_32_fu_240">cshake256_simple_32, 325, 325, 3.250 us, 3.250 us, 325, 325, no</column>
-<column name="grp_EphemeralKeyGeneration_A_1_fu_251">EphemeralKeyGeneration_A_1, 4972556, 12502999269, 49.726 ms, 125.030 sec, 4972556, 12502999269, no</column>
-<column name="grp_EphemeralSecretAgreement_A_1_fu_285">EphemeralSecretAgreement_A_1, 2903863, 12499633635, 29.039 ms, 124.996 sec, 2903863, 12499633635, no</column>
-<column name="grp_cshake256_simple_32_clone_fu_313">cshake256_simple_32_clone, 187, 187, 1.870 us, 1.870 us, 187, 187, no</column>
-<column name="grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_59_1_fu_324">sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_59_1, 27, 27, 0.270 us, 0.270 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_sikep503_kem_enc_hw_Pipeline_4_fu_336">sikep503_kem_enc_hw_Pipeline_4, 405, 405, 4.050 us, 4.050 us, 403, 403, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_cshake256_simple_1_fu_347">cshake256_simple_1, 381, 381, 3.810 us, 3.810 us, 381, 381, no</column>
+<column name="grp_sikep503_kem_enc_hw_Pipeline_1_fu_213">sikep503_kem_enc_hw_Pipeline_1, 428, 428, 4.280 us, 4.280 us, 427, 427, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1_fu_225">sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1, 26, 26, 0.260 us, 0.260 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_sikep503_kem_enc_hw_Pipeline_3_fu_235">sikep503_kem_enc_hw_Pipeline_3, 381, 381, 3.810 us, 3.810 us, 379, 379, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_fu_246">cshake256_simple, 321, 321, 3.210 us, 3.210 us, 321, 321, no</column>
+<column name="grp_EphemeralKeyGeneration_A_1_fu_257">EphemeralKeyGeneration_A_1, 2329241, 5432515355, 23.292 ms, 54.325 sec, 2329241, 5432515355, no</column>
+<column name="grp_EphemeralSecretAgreement_A_1_fu_289">EphemeralSecretAgreement_A_1, 1360860, 5430977860, 13.609 ms, 54.310 sec, 1360860, 5430977860, no</column>
+<column name="grp_cshake256_simple_11_fu_313">cshake256_simple_11, 185, 185, 1.850 us, 1.850 us, 185, 185, no</column>
+<column name="grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_324">sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1, 27, 27, 0.270 us, 0.270 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_sikep503_kem_enc_hw_Pipeline_5_fu_336">sikep503_kem_enc_hw_Pipeline_5, 405, 405, 4.050 us, 4.050 us, 403, 403, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cshake256_simple_12_fu_347">cshake256_simple_12, 376, 376, 3.760 us, 3.760 us, 376, 376, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

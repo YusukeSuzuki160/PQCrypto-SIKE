@@ -329,9 +329,9 @@
 						<type>0</type>
 						<id>10</id>
 						<name>tmp</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>fpsub503</contextFuncName>
 						<contextNormFuncName>fpsub503</contextNormFuncName>
 						<inlineStackInfo>
@@ -344,10 +344,10 @@
 									<item_version>0</item_version>
 									<item class_id="13" tracking_level="0" version="0">
 										<first class_id="14" tracking_level="0" version="0">
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpsub503</second>
 										</first>
-										<second>48</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -387,9 +387,9 @@
 						<type>0</type>
 						<id>11</id>
 						<name>tmp_s</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>fpsub503</contextFuncName>
 						<contextNormFuncName>fpsub503</contextNormFuncName>
 						<inlineStackInfo>
@@ -402,10 +402,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpsub503</second>
 										</first>
-										<second>48</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -444,10 +444,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>_ln48</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln59</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>fpsub503</contextFuncName>
 						<contextNormFuncName>fpsub503</contextNormFuncName>
 						<inlineStackInfo>
@@ -460,10 +460,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpsub503</second>
 										</first>
-										<second>48</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -497,7 +497,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.76</m_delay>
+				<m_delay>1.42</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -587,7 +587,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.81</m_delay>
+				<m_delay>0.27</m_delay>
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -596,10 +596,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>_ln56</name>
-						<fileName>src/generic/fp_generic.c</fileName>
+						<name>_ln68</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>fpsub503</contextFuncName>
 						<contextNormFuncName>fpsub503</contextNormFuncName>
 						<inlineStackInfo>
@@ -612,10 +612,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>src/generic/fp_generic.c</first>
+											<first>src/generic/fp_generic.cpp</first>
 											<second>fpsub503</second>
 										</first>
-										<second>56</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -717,7 +717,7 @@
 					<Obj>
 						<type>2</type>
 						<id>32</id>
-						<name>fpsub503_Pipeline_VITIS_LOOP_47_1</name>
+						<name>fpsub503_Pipeline_VITIS_LOOP_57_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -741,14 +741,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpsub503_Pipeline_VITIS_LOOP_47_1&gt;</content>
+				<content>&lt;constant:fpsub503_Pipeline_VITIS_LOOP_57_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_18">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>41</id>
-						<name>fpsub503_Pipeline_VITIS_LOOP_53_2</name>
+						<name>fpsub503_Pipeline_VITIS_LOOP_64_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -772,7 +772,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpsub503_Pipeline_VITIS_LOOP_53_2&gt;</content>
+				<content>&lt;constant:fpsub503_Pipeline_VITIS_LOOP_64_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -998,8 +998,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>26</mMinLatency>
-			<mMaxLatency>26</mMaxLatency>
+			<mMinLatency>23</mMinLatency>
+			<mMaxLatency>23</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1327,7 +1327,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_fpsub503_Pipeline_VITIS_LOOP_47_1_fu_40</first>
+			<first>grp_fpsub503_Pipeline_VITIS_LOOP_57_1_fu_40</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1336,7 +1336,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_fpsub503_Pipeline_VITIS_LOOP_53_2_fu_53</first>
+			<first>grp_fpsub503_Pipeline_VITIS_LOOP_64_2_fu_53</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
