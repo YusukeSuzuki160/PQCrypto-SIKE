@@ -1,0 +1,47 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mp_mul_orig'" level="0">
+<item name = "Date">Fri Aug 15 16:18:42 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">mpx_compare_orig</item>
+<item name = "Solution">orig (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.30 ns, 6.100 ns, 0.89 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">287, 293, 1.751 us, 1.787 us, 288, 294, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_mp_mul_orig_Pipeline_outer1_fu_188">mp_mul_orig_Pipeline_outer1, 142, 142, 0.866 us, 0.866 us, 141, 141, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_orig_Pipeline_outer2_fu_208">mp_mul_orig_Pipeline_outer2, 129, 129, 0.787 us, 0.787 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-802]" key="HLS 200-802" tag="" content="Generated output file export_orig.zip" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command export_design Elapsed time: 00:00:18; Allocated memory: 3.512 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: set_top mp_mul_packed" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: add_files -cflags -I./include -I./src /home2/meltpoint/Xilinx/Vivado/2024.2/include/ ./src/mp_mul_packed.cpp" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;./src/mp_mul_packed.cpp&apos; to the project" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: add_files -cflags -I./include -I./src /home2/meltpoint/Xilinx/Vivado/2024.2/include/ ./src/types.hpp" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;./src/types.hpp&apos; to the project" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: add_files -cflags -I./include -I./src /home2/meltpoint/Xilinx/Vivado/2024.2/include/ ./include/mpx_packed.hpp" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;./include/mpx_packed.hpp&apos; to the project" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: add_files -tb -cflags -I./include -I./src /home2/meltpoint/Xilinx/Vivado/2024.2/include/ ./tb/tb_mul_packed.cpp" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding test bench file &apos;./tb/tb_mul_packed.cpp&apos; to the project" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: open_solution -reset packed" resolution=""/>
+</Messages>

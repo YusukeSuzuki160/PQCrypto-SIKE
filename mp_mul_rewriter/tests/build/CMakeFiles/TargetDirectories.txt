@@ -1,0 +1,3 @@
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/tests/build/CMakeFiles/test_mpx_packed.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/tests/build/CMakeFiles/edit_cache.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/tests/build/CMakeFiles/rebuild_cache.dir

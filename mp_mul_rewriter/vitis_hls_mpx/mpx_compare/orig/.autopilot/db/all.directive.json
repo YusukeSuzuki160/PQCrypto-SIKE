@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "mp_mul_orig",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "mp_mul_orig"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/vitis_hls_mpx/scripts/run_hls.tcl",
+    "sourceLine": 32,
+    "success": true
+  }
+]

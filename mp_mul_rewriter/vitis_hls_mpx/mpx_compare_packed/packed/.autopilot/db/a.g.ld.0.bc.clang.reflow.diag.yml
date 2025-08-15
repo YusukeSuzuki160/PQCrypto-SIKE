@@ -1,0 +1,332 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 117, Column: 15 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::pack(unsigned long const*, unsigned int)'
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 26, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 116, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 120, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void mpx::PackedOps<unsigned long, 8u, true>::unpack<ap_uint<1024> >(ap_uint<1024> const&, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 46, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 116, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 15, Column: 3 }
+Function:        mp_mul_packed
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 116, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 15, Column: 3 }
+Function:        mp_mul_packed
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 116, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_mp_mul_packed_ir
+Args:            
+  - Callee:          mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_mp_mul_packed_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 116, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 30, Column: 24 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        aseq
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          ' '
+  - LoopLoc:         './src/../include/mpx_packed.hpp:30:24'
+  - String:          ' '
+  - Function:        mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 37, 
+                       Column: 38 }
+  - OrigDirection:   read
+  - OrigID:          if.then.i.i.load.3
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 30, Column: 24 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bseq
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          ' '
+  - LoopLoc:         './src/../include/mpx_packed.hpp:30:24'
+  - String:          ' '
+  - Function:        mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 37, 
+                       Column: 38 }
+  - OrigDirection:   read
+  - OrigID:          if.then.i52.i.load.3
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 49, Column: 19 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        cseq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_49_1
+  - String:          ' '
+  - LoopLoc:         './src/../include/mpx_packed.hpp:49:19'
+  - String:          ' '
+  - Function:        mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 57, 
+                       Column: 18 }
+  - OrigDirection:   write
+  - OrigID:          if.then.i14.i.store.7
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 30, Column: 24 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          ' '
+  - LoopLoc:         './src/../include/mpx_packed.hpp:30:24'
+  - String:          ' '
+  - Function:        mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 30, Column: 24 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          '''('
+  - LoopLoc:         './src/../include/mpx_packed.hpp:30:24'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 30, Column: 24 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          ' '
+  - LoopLoc:         './src/../include/mpx_packed.hpp:30:24'
+  - String:          ' '
+  - Function:        mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 30, Column: 24 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          '''('
+  - LoopLoc:         './src/../include/mpx_packed.hpp:30:24'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 49, Column: 19 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_49_1
+  - String:          ' '
+  - LoopLoc:         './src/../include/mpx_packed.hpp:49:19'
+  - String:          ' '
+  - Function:        mp_mul_packed
+    DebugLoc:        { File: src/mp_mul_packed.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ./src/../include/mpx_packed.hpp, Line: 49, Column: 19 }
+Function:        mp_mul_packed
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_49_1
+  - String:          '''('
+  - LoopLoc:         './src/../include/mpx_packed.hpp:49:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

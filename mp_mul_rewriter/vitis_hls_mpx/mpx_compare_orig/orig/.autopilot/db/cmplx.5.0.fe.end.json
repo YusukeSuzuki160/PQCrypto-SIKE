@@ -1,0 +1,50 @@
+{
+    "1": {
+        "name": "mp_mul_orig_Pipeline_outer2",
+        "file": "src\/mp_mul_orig.cpp",
+        "fileloc": "34",
+        "instructions": "331",
+        "total_instructions": "331",
+        "calls": "",
+        "basicblocks": "20",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "mp_mul_orig",
+        "file": "mp_mul_orig.cpp",
+        "fileloc": "23",
+        "instructions": "89",
+        "total_instructions": "768",
+        "calls": "2 1",
+        "basicblocks": "3",
+        "loads": {
+            "L": "3"
+        }
+    },
+    "2": {
+        "name": "mp_mul_orig_Pipeline_outer1",
+        "file": "src\/mp_mul_orig.cpp",
+        "fileloc": "34",
+        "instructions": "348",
+        "total_instructions": "348",
+        "calls": "",
+        "basicblocks": "20",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

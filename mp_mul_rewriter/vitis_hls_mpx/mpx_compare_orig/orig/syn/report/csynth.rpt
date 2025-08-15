@@ -1,0 +1,302 @@
+
+
+================================================================
+== Synthesis Summary Report of 'mp_mul_orig'
+================================================================
++ General Information: 
+    * Date:           Fri Aug 15 16:18:43 2025
+    * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+    * Project:        mpx_compare_orig
+    * Solution:       orig (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcu250-figd2104-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----------+-------------+-------------+-----+
+    |             Modules            |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |         |          |             |             |     |
+    |             & Loops            |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |    DSP   |      FF     |     LUT     | URAM|
+    +--------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----------+-------------+-------------+-----+
+    |+ mp_mul_orig                   |  Timing|  -3.69|      293|  1.787e+03|         -|      294|     -|        no|  4 (~0%)|  16 (~0%)|  10013 (~0%)|  10787 (~0%)|    -|
+    | + mp_mul_orig_Pipeline_outer1  |  Timing|  -3.69|      142|    866.200|         -|      142|     -|        no|        -|         -|   3876 (~0%)|   3865 (~0%)|    -|
+    |  o outer1                      |      II|   2.41|      140|    854.000|        29|       16|     8|       yes|        -|         -|            -|            -|    -|
+    | + mp_mul_orig_Pipeline_outer2  |  Timing|  -3.69|      129|    786.900|         -|      129|     -|        no|        -|         -|   3514 (~0%)|   3717 (~0%)|    -|
+    |  o outer2                      |      II|   2.41|      127|    774.700|        27|       14|     8|       yes|        -|         -|            -|            -|    -|
+    +--------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | READ_WRITE | 64 -> 64   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=4            |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | a_1      | 0x10   | 32    | W      | Data signal of a                 |                                                                      |
+| s_axi_control | a_2      | 0x14   | 32    | W      | Data signal of a                 |                                                                      |
+| s_axi_control | b_1      | 0x1c   | 32    | W      | Data signal of b                 |                                                                      |
+| s_axi_control | b_2      | 0x20   | 32    | W      | Data signal of b                 |                                                                      |
+| s_axi_control | c_1      | 0x28   | 32    | W      | Data signal of c                 |                                                                      |
+| s_axi_control | c_2      | 0x2c   | 32    | W      | Data signal of c                 |                                                                      |
+| s_axi_control | nwords   | 0x34   | 32    | W      | Data signal of nwords            |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------+
+| Argument | Direction | Datatype                  |
++----------+-----------+---------------------------+
+| a        | inout     | long unsigned int const * |
+| b        | inout     | long unsigned int const * |
+| c        | inout     | long unsigned int*        |
+| nwords   | in        | unsigned int const        |
++----------+-----------+---------------------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                          |
++----------+---------------+-----------+----------+----------------------------------+
+| a        | m_axi_gmem    | interface |          | channel=0                        |
+| a        | s_axi_control | register  | offset   | name=a_1 offset=0x10 range=32    |
+| a        | s_axi_control | register  | offset   | name=a_2 offset=0x14 range=32    |
+| b        | m_axi_gmem    | interface |          | channel=0                        |
+| b        | s_axi_control | register  | offset   | name=b_1 offset=0x1c range=32    |
+| b        | s_axi_control | register  | offset   | name=b_2 offset=0x20 range=32    |
+| c        | m_axi_gmem    | interface |          | channel=0                        |
+| c        | s_axi_control | register  | offset   | name=c_1 offset=0x28 range=32    |
+| c        | s_axi_control | register  | offset   | name=c_2 offset=0x2c range=32    |
+| nwords   | s_axi_control | register  |          | name=nwords offset=0x34 range=32 |
++----------+---------------+-----------+----------+----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+----------+-------+--------+--------------------------+
+| HW Interface | Direction | Length   | Width | Loop   | Loop Location            |
++--------------+-----------+----------+-------+--------+--------------------------+
+| m_axi_gmem   | write     | variable | 64    | outer1 | src/mp_mul_orig.cpp:40:3 |
+| m_axi_gmem   | write     | variable | 64    | outer2 | src/mp_mul_orig.cpp:69:3 |
++--------------+-----------+----------+-------+--------+--------------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+----------------------------+-----------+--------------+----------+--------+--------------------------+------------+----------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location            | Direction | Burst Status | Length   | Loop   | Loop Location            | Resolution | Problem                                                                                |
++--------------+----------+----------------------------+-----------+--------------+----------+--------+--------------------------+------------+----------------------------------------------------------------------------------------+
+| m_axi_gmem   |          | src/mp_mul_orig.cpp:40:3   | read      | Fail         |          |        |                          | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region. |
+| m_axi_gmem   | b        | src/mp_mul_orig.cpp:53:148 | read      | Fail         |          |        |                          | 214-231    | Access is clobbered by load                                                            |
+| m_axi_gmem   | a        | src/mp_mul_orig.cpp:53:106 | read      | Fail         |          | outer1 | src/mp_mul_orig.cpp:40:3 | 214-229    | Could not analyze pattern                                                              |
+| m_axi_gmem   | b        | src/mp_mul_orig.cpp:53:148 | read      | Inferred     | variable | outer1 | src/mp_mul_orig.cpp:40:3 |            |                                                                                        |
+| m_axi_gmem   | c        | src/mp_mul_orig.cpp:60:13  | write     | Inferred     | variable | outer1 | src/mp_mul_orig.cpp:40:3 |            |                                                                                        |
+| m_axi_gmem   | b        | src/mp_mul_orig.cpp:83:148 | read      | Fail         |          | outer2 | src/mp_mul_orig.cpp:69:3 | 214-232    | Access load is in the conditional branch                                               |
+| m_axi_gmem   | a        | src/mp_mul_orig.cpp:83:106 | read      | Fail         |          | outer2 | src/mp_mul_orig.cpp:69:3 | 214-232    | Access load is in the conditional branch                                               |
+| m_axi_gmem   | c        | src/mp_mul_orig.cpp:90:13  | write     | Inferred     | variable | outer2 | src/mp_mul_orig.cpp:69:3 |            |                                                                                        |
++--------------+----------+----------------------------+-----------+--------------+----------+--------+--------------------------+------------+----------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------+-----+--------+-------------+--------+----------+---------+
+| Name                           | DSP | Pragma | Variable    | Op     | Impl     | Latency |
++--------------------------------+-----+--------+-------------+--------+----------+---------+
+| + mp_mul_orig                  | 16  |        |             |        |          |         |
+|   empty_fu_345_p2              |     |        | empty       | add    | fabric   | 0       |
+|   empty_26_fu_350_p2           |     |        | empty_26    | add    | fabric   | 0       |
+|   empty_27_fu_355_p2           |     |        | empty_27    | add    | fabric   | 0       |
+|   empty_28_fu_360_p2           |     |        | empty_28    | add    | fabric   | 0       |
+|   empty_29_fu_365_p2           |     |        | empty_29    | add    | fabric   | 0       |
+|   empty_30_fu_370_p2           |     |        | empty_30    | add    | fabric   | 0       |
+|   empty_31_fu_375_p2           |     |        | empty_31    | add    | fabric   | 0       |
+|   icmp_ln40_fu_249_p2          |     |        | icmp_ln40   | seteq  | auto     | 0       |
+|   select_ln40_fu_255_p3        |     |        | select_ln40 | select | auto_sel | 0       |
+|   sub48_fu_457_p2              |     |        | sub48       | add    | fabric   | 0       |
+|   icmp33_fu_303_p2             |     |        | icmp33      | setne  | auto     | 0       |
+|   cmp57_2_fu_538_p2            |     |        | cmp57_2     | setgt  | auto     | 0       |
+|   icmp36_fu_319_p2             |     |        | icmp36      | setne  | auto     | 0       |
+|   cmp57_4_fu_544_p2            |     |        | cmp57_4     | setgt  | auto     | 0       |
+|   cmp57_5_fu_550_p2            |     |        | cmp57_5     | setgt  | auto     | 0       |
+|   cmp57_6_fu_556_p2            |     |        | cmp57_6     | setgt  | auto     | 0       |
+|   icmp39_fu_325_p2             |     |        | icmp39      | setne  | auto     | 0       |
+|   icmp_ln69_fu_476_p2          |     |        | icmp_ln69   | seteq  | auto     | 0       |
+|   select_ln69_fu_482_p3        |     |        | select_ln69 | select | auto_sel | 0       |
+|   add_ln69_fu_501_p2           |     |        | add_ln69    | add    | fabric   | 0       |
+|   icmp_ln98_fu_565_p2          |     |        | icmp_ln98   | seteq  | auto     | 0       |
+|   add_ln100_fu_575_p2          |     |        | add_ln100   | add    | fabric   | 0       |
+|   add_ln100_1_fu_593_p2        |     |        | add_ln100_1 | add    | fabric   | 0       |
+|  + mp_mul_orig_Pipeline_outer1 | 0   |        |             |        |          |         |
+|    icmp_ln40_fu_728_p2         |     |        | icmp_ln40   | seteq  | auto     | 0       |
+|    add_ln40_fu_734_p2          |     |        | add_ln40    | add    | fabric   | 0       |
+|    icmp_ln43_fu_744_p2         |     |        | icmp_ln43   | setlt  | auto     | 0       |
+|    add_ln53_fu_764_p2          |     |        | add_ln53    | add    | fabric   | 0       |
+|    v_fu_1227_p2                |     |        | v           | add    | fabric   | 0       |
+|    p_s_fu_1232_p2              |     |        | p_s         | add    | fabric   | 0       |
+|    icmp_ln49_fu_779_p2         |     |        | icmp_ln49   | seteq  | auto     | 0       |
+|    add_ln53_1_fu_793_p2        |     |        | add_ln53_1  | add    | fabric   | 0       |
+|    add_ln53_2_fu_811_p2        |     |        | add_ln53_2  | add    | fabric   | 0       |
+|    v_16_fu_1307_p2             |     |        | v_16        | add    | fabric   | 0       |
+|    p_s_17_fu_1293_p2           |     |        | p_s_17      | add    | fabric   | 0       |
+|    t_fu_1348_p2                |     |        | t           | add    | fabric   | 0       |
+|    icmp_ln49_1_fu_845_p2       |     |        | icmp_ln49_1 | seteq  | auto     | 0       |
+|    add_ln53_3_fu_860_p2        |     |        | add_ln53_3  | add    | fabric   | 0       |
+|    add_ln53_4_fu_878_p2        |     |        | add_ln53_4  | add    | fabric   | 0       |
+|    v_19_fu_1387_p2             |     |        | v_19        | add    | fabric   | 0       |
+|    p_s_21_fu_1373_p2           |     |        | p_s_21      | add    | fabric   | 0       |
+|    t_13_fu_1431_p2             |     |        | t_13        | add    | fabric   | 0       |
+|    icmp_ln49_2_fu_903_p2       |     |        | icmp_ln49_2 | setgt  | auto     | 0       |
+|    add_ln53_5_fu_917_p2        |     |        | add_ln53_5  | add    | fabric   | 0       |
+|    add_ln53_6_fu_935_p2        |     |        | add_ln53_6  | add    | fabric   | 0       |
+|    v_20_fu_1475_p2             |     |        | v_20        | add    | fabric   | 0       |
+|    p_s_25_fu_1461_p2           |     |        | p_s_25      | add    | fabric   | 0       |
+|    t_14_fu_1519_p2             |     |        | t_14        | add    | fabric   | 0       |
+|    icmp_ln49_3_fu_969_p2       |     |        | icmp_ln49_3 | seteq  | auto     | 0       |
+|    add_ln53_7_fu_996_p2        |     |        | add_ln53_7  | add    | fabric   | 0       |
+|    v_23_fu_1558_p2             |     |        | v_23        | add    | fabric   | 0       |
+|    p_s_29_fu_1544_p2           |     |        | p_s_29      | add    | fabric   | 0       |
+|    t_17_fu_1602_p2             |     |        | t_17        | add    | fabric   | 0       |
+|    icmp_ln49_4_fu_1030_p2      |     |        | icmp_ln49_4 | setgt  | auto     | 0       |
+|    add_ln53_8_fu_1044_p2       |     |        | add_ln53_8  | add    | fabric   | 0       |
+|    add_ln53_9_fu_1062_p2       |     |        | add_ln53_9  | add    | fabric   | 0       |
+|    v_24_fu_1642_p2             |     |        | v_24        | add    | fabric   | 0       |
+|    p_s_31_fu_1628_p2           |     |        | p_s_31      | add    | fabric   | 0       |
+|    t_18_fu_1686_p2             |     |        | t_18        | add    | fabric   | 0       |
+|    icmp_ln49_5_fu_1096_p2      |     |        | icmp_ln49_5 | setgt  | auto     | 0       |
+|    add_ln53_10_fu_1116_p2      |     |        | add_ln53_10 | add    | fabric   | 0       |
+|    v_25_fu_1703_p2             |     |        | v_25        | add    | fabric   | 0       |
+|    p_s_33_fu_1708_p2           |     |        | p_s_33      | add    | fabric   | 0       |
+|    t_19_fu_1767_p2             |     |        | t_19        | add    | fabric   | 0       |
+|    icmp_ln49_6_fu_1154_p2      |     |        | icmp_ln49_6 | setgt  | auto     | 0       |
+|    select_ln53_fu_1168_p3      |     |        | select_ln53 | select | auto_sel | 0       |
+|    add_ln53_11_fu_1176_p2      |     |        | add_ln53_11 | add    | fabric   | 0       |
+|    v_27_fu_1791_p2             |     |        | v_27        | add    | fabric   | 0       |
+|    p_s_35_fu_1798_p2           |     |        | p_s_35      | add    | fabric   | 0       |
+|    t_21_fu_1853_p2             |     |        | t_21        | add    | fabric   | 0       |
+|  + mp_mul_orig_Pipeline_outer2 | 0   |        |             |        |          |         |
+|    icmp_ln69_fu_756_p2         |     |        | icmp_ln69   | seteq  | auto     | 0       |
+|    add_ln69_fu_762_p2          |     |        | add_ln69    | add    | fabric   | 0       |
+|    icmp_ln72_fu_772_p2         |     |        | icmp_ln72   | setlt  | auto     | 0       |
+|    ci_fu_786_p2                |     |        | ci          | add    | fabric   | 0       |
+|    icmp_ln79_fu_802_p2         |     |        | icmp_ln79   | seteq  | auto     | 0       |
+|    and_ln79_fu_808_p2          |     |        | and_ln79    | and    | auto     | 0       |
+|    bj_1_fu_915_p2              |     |        | bj_1        | add    | fabric   | 0       |
+|    add_ln83_fu_932_p2          |     |        | add_ln83    | add    | fabric   | 0       |
+|    v_2_fu_1290_p2              |     |        | v_2         | add    | fabric   | 0       |
+|    p_s_fu_1295_p2              |     |        | p_s         | add    | fabric   | 0       |
+|    icmp_ln79_1_fu_814_p2       |     |        | icmp_ln79_1 | setlt  | auto     | 0       |
+|    and_ln79_1_fu_820_p2        |     |        | and_ln79_1  | and    | auto     | 0       |
+|    bj_2_fu_963_p2              |     |        | bj_2        | add    | fabric   | 0       |
+|    add_ln83_1_fu_980_p2        |     |        | add_ln83_1  | add    | fabric   | 0       |
+|    v_4_fu_1369_p2              |     |        | v_4         | add    | fabric   | 0       |
+|    p_s_2_fu_1374_p2            |     |        | p_s_2       | add    | fabric   | 0       |
+|    t_1_fu_1427_p2              |     |        | t_1         | add    | fabric   | 0       |
+|    icmp_ln79_2_fu_836_p2       |     |        | icmp_ln79_2 | seteq  | auto     | 0       |
+|    and_ln79_2_fu_842_p2        |     |        | and_ln79_2  | and    | auto     | 0       |
+|    bj_3_fu_1011_p2             |     |        | bj_3        | add    | fabric   | 0       |
+|    add_ln83_2_fu_1028_p2       |     |        | add_ln83_2  | add    | fabric   | 0       |
+|    v_6_fu_1466_p2              |     |        | v_6         | add    | fabric   | 0       |
+|    p_s_4_fu_1452_p2            |     |        | p_s_4       | add    | fabric   | 0       |
+|    t_3_fu_1510_p2              |     |        | t_3         | add    | fabric   | 0       |
+|    icmp_ln79_3_fu_848_p2       |     |        | icmp_ln79_3 | setlt  | auto     | 0       |
+|    and_ln79_3_fu_854_p2        |     |        | and_ln79_3  | and    | auto     | 0       |
+|    bj_4_fu_1059_p2             |     |        | bj_4        | add    | fabric   | 0       |
+|    add_ln83_3_fu_1076_p2       |     |        | add_ln83_3  | add    | fabric   | 0       |
+|    v_8_fu_1554_p2              |     |        | v_8         | add    | fabric   | 0       |
+|    p_s_6_fu_1540_p2            |     |        | p_s_6       | add    | fabric   | 0       |
+|    t_5_fu_1598_p2              |     |        | t_5         | add    | fabric   | 0       |
+|    icmp_ln79_4_fu_860_p2       |     |        | icmp_ln79_4 | setlt  | auto     | 0       |
+|    and_ln79_4_fu_866_p2        |     |        | and_ln79_4  | and    | auto     | 0       |
+|    bj_5_fu_1107_p2             |     |        | bj_5        | add    | fabric   | 0       |
+|    add_ln83_4_fu_1124_p2       |     |        | add_ln83_4  | add    | fabric   | 0       |
+|    v_10_fu_1637_p2             |     |        | v_10        | add    | fabric   | 0       |
+|    p_s_8_fu_1623_p2            |     |        | p_s_8       | add    | fabric   | 0       |
+|    t_7_fu_1681_p2              |     |        | t_7         | add    | fabric   | 0       |
+|    icmp_ln79_5_fu_872_p2       |     |        | icmp_ln79_5 | setlt  | auto     | 0       |
+|    and_ln79_5_fu_878_p2        |     |        | and_ln79_5  | and    | auto     | 0       |
+|    bj_6_fu_1164_p2             |     |        | bj_6        | add    | fabric   | 0       |
+|    add_ln83_5_fu_1181_p2       |     |        | add_ln83_5  | add    | fabric   | 0       |
+|    v_12_fu_1698_p2             |     |        | v_12        | add    | fabric   | 0       |
+|    p_s_10_fu_1703_p2           |     |        | p_s_10      | add    | fabric   | 0       |
+|    t_9_fu_1762_p2              |     |        | t_9         | add    | fabric   | 0       |
+|    xor_ln79_fu_892_p2          |     |        | xor_ln79    | xor    | auto     | 0       |
+|    and_ln79_6_fu_898_p2        |     |        | and_ln79_6  | and    | auto     | 0       |
+|    bj_fu_1196_p2               |     |        | bj          | add    | fabric   | 0       |
+|    add_ln83_6_fu_1213_p2       |     |        | add_ln83_6  | add    | fabric   | 0       |
+|    v_14_fu_1781_p2             |     |        | v_14        | add    | fabric   | 0       |
+|    p_s_12_fu_1788_p2           |     |        | p_s_12      | add    | fabric   | 0       |
+|    t_11_fu_1843_p2             |     |        | t_11        | add    | fabric   | 0       |
++--------------------------------+-----+--------+-------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name              | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                   |           |           |      |      |        |          |      |         | Banks            |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + mp_mul_orig     |           |           | 4    | 0    |        |          |      |         |                  |
+|   control_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
+|   gmem_m_axi_U    | interface | m_axi     | 4    |      |        |          |      |         |                  |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------------+---------------------------------------+
+| Type      | Options                                     | Location                              |
++-----------+---------------------------------------------+---------------------------------------+
+| interface | m_axi port = a offset = slave bundle = gmem | src/mp_mul_orig.cpp:25 in mp_mul_orig |
+| interface | m_axi port = b offset = slave bundle = gmem | src/mp_mul_orig.cpp:26 in mp_mul_orig |
+| interface | m_axi port = c offset = slave bundle = gmem | src/mp_mul_orig.cpp:27 in mp_mul_orig |
+| interface | s_axilite port = a bundle = control         | src/mp_mul_orig.cpp:28 in mp_mul_orig |
+| interface | s_axilite port = b bundle = control         | src/mp_mul_orig.cpp:29 in mp_mul_orig |
+| interface | s_axilite port = c bundle = control         | src/mp_mul_orig.cpp:30 in mp_mul_orig |
+| interface | s_axilite port = nwords bundle = control    | src/mp_mul_orig.cpp:31 in mp_mul_orig |
+| interface | s_axilite port = return bundle = control    | src/mp_mul_orig.cpp:32 in mp_mul_orig |
+| pipeline  | II = 1                                      | src/mp_mul_orig.cpp:42 in mp_mul_orig |
+| unroll    | factor = 2 skip_exit_check                  | src/mp_mul_orig.cpp:48 in mp_mul_orig |
+| pipeline  | II = 1                                      | src/mp_mul_orig.cpp:71 in mp_mul_orig |
+| unroll    | factor = 2 skip_exit_check                  | src/mp_mul_orig.cpp:78 in mp_mul_orig |
++-----------+---------------------------------------------+---------------------------------------+
+
+

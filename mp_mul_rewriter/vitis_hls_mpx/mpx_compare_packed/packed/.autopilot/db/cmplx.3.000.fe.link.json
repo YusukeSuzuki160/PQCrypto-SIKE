@@ -1,0 +1,50 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "1",
+    "file": "mp_mul_packed.cpp",
+    "fileloc": 4,
+    "instructions": 14,
+    "name": "mp_mul_packed",
+    "total_instructions": 496
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "2 2 3",
+    "file": "mpx_packed.hpp",
+    "fileloc": 114,
+    "instructions": 37,
+    "loads": {
+      "L": 2
+    },
+    "name": "mul",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 482
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "mpx_packed.hpp",
+    "fileloc": 25,
+    "instructions": 40,
+    "loads": {
+      "L": 1
+    },
+    "name": "pack",
+    "total_instructions": 143
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "mpx_packed.hpp",
+    "fileloc": 45,
+    "instructions": 35,
+    "name": "unpack<ap_uint<1024> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 80
+  }
+}

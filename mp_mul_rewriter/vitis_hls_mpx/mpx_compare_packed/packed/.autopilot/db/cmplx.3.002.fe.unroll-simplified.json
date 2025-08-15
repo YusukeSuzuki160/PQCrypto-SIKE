@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "1",
+    "file": "mp_mul_packed.cpp",
+    "fileloc": 4,
+    "instructions": 13,
+    "name": "mp_mul_packed",
+    "total_instructions": 67
+  },
+  "1": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "mpx_packed.hpp",
+    "fileloc": 114,
+    "instructions": 54,
+    "loads": {
+      "L": 2
+    },
+    "name": "mul",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 54
+  }
+}

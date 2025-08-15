@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdditionalInfo>
+  <CTypeInfo>
+  </CTypeInfo>
+  <DesignConstraint>
+    <clk_period>3.3</clk_period>
+  </DesignConstraint>
+  <Machine>64</Machine>
+  <modelParameters>
+    <combinational>0</combinational>
+    <latency>287</latency>
+    <II>288 ~ 294</II>
+  </modelParameters>
+</AdditionalInfo>

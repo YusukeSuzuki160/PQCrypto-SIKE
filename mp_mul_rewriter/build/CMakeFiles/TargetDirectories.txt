@@ -1,0 +1,8 @@
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/intrinsics_gen.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/omp_gen.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/acc_gen.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/clang-tablegen-targets.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/mp_mul_rewriter.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/mpx_rewriter_v2.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/edit_cache.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/build/CMakeFiles/rebuild_cache.dir

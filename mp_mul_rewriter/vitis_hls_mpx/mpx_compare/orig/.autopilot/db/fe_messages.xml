@@ -1,0 +1,54 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/vitis_hls_mpx/scripts/run_hls.tcl:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mp_mul_orig" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=a offset=slave bundle=gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=b offset=slave bundle=gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=c offset=slave bundle=gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=a bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=b bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=c bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=nwords bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2 skip_exit_check" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2 skip_exit_check" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/mp_mul_orig.cpp:57:5" msg_body="Loop 'inner2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="inner2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/mp_mul_orig.cpp:38:5" msg_body="Loop 'inner1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="inner1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:57:5" msg_body="Cannot unroll loop 'inner2' (src/mp_mul_orig.cpp:57:5) in function 'mp_mul_orig' as it has a variable trip count">
+        <args LoopLoc="src/mp_mul_orig.cpp:57:5" LoopName="inner2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/mp_mul_orig.cpp:38:5" msg_body="Cannot unroll loop 'inner1' (src/mp_mul_orig.cpp:38:5) in function 'mp_mul_orig' as it has a variable trip count">
+        <args LoopLoc="src/mp_mul_orig.cpp:38:5" LoopName="inner1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

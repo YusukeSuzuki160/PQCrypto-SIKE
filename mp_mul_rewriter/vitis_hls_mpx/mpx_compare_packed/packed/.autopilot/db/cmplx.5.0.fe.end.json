@@ -1,0 +1,68 @@
+{
+    "1": {
+        "name": "mp_mul_packed_Pipeline_VITIS_LOOP_49_1",
+        "file": "src\/mp_mul_packed.cpp",
+        "fileloc": "15",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "mp_mul_packed_Pipeline_VITIS_LOOP_30_1",
+        "file": "src\/mp_mul_packed.cpp",
+        "fileloc": "15",
+        "instructions": "35",
+        "total_instructions": "35",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "mp_mul_packed",
+        "file": "mp_mul_packed.cpp",
+        "fileloc": "4",
+        "instructions": "53",
+        "total_instructions": "151",
+        "calls": "2 3 1",
+        "basicblocks": "3",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "3": {
+        "name": "mp_mul_packed_Pipeline_VITIS_LOOP_30_11",
+        "file": "src\/mp_mul_packed.cpp",
+        "fileloc": "15",
+        "instructions": "35",
+        "total_instructions": "35",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "0": {
+        "name": "mp_mul_orig",
+        "file": "mp_mul_orig.cpp",
+        "fileloc": "19",
+        "instructions": "220",
+        "total_instructions": "220",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "2",
+            "N": "2"
+        }
+    }
+}

@@ -1,0 +1,1002 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 76, Column: 7 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inner2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 46, Column: 7 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inner1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        inner2
+  - String:          ''' ('
+  - LoopLoc:         'src/mp_mul_orig.cpp:76:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          mp_mul_orig
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        inner1
+  - String:          ''' ('
+  - LoopLoc:         'src/mp_mul_orig.cpp:46:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          mp_mul_orig
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_mp_mul_orig_ir
+Args:            
+  - Callee:          mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_mp_mul_orig_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 40, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bseq
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.load.8
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 40, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        cseq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 60, Column: 13 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.7.store.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 69, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 90, Column: 13 }
+  - OrigDirection:   write
+  - OrigID:          for.inc109.7.store.10
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.load.5
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.1.load.0
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.2.load.0
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.3.load.0
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.4.load.0
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.5.load.0
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.6.load.0
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.7.load.0
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.1.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.2.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.3.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.4.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.5.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.6.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 53, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end37.7.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.1.load.2
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.2.load.2
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.3.load.2
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.4.load.2
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.5.load.2
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.6.load.2
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 106 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.7.load.2
+  - ArrayName:       a
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.1.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.2.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.3.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.4.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.5.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.6.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 83, Column: 148 }
+  - OrigDirection:   read
+  - OrigID:          do.end105.7.load.5
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 40, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 40, Column: 3 }
+  - OrigDirection:   read
+  - OrigID:          seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 40, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer1
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 40, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        outer1
+  - String:          '''('
+  - LoopLoc:         'src/mp_mul_orig.cpp:40:3'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 69, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        outer2
+  - String:          ' '
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ' '
+  - Function:        mp_mul_orig
+    DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mp_mul_orig.cpp, Line: 69, Column: 3 }
+Function:        mp_mul_orig
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        outer2
+  - String:          '''('
+  - LoopLoc:         'src/mp_mul_orig.cpp:69:3'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

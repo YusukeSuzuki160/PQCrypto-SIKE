@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "mp_mul_packed.cpp",
+    "fileloc": 4,
+    "instructions": 65,
+    "loads": {
+      "T": 2
+    },
+    "name": "mp_mul_packed",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 65
+  }
+}
