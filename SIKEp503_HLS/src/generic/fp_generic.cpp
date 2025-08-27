@@ -210,69 +210,69 @@ void digit_x_digit_hls(ap_uint<W> a, ap_uint<W> b, ap_uint<2 * W> &c)
 // }
 
 
-static const unsigned MAX_NWORDS = 8;
-// オリジナルと同じシグネチャ
-void mp_mul(const digit_t *a, const digit_t *b, digit_t *c, const unsigned int nwords)
-{
-  // 1) 配列 a, b を「一発で乗算できる大きなレジスタ」にパック
-  ap_uint<W*MAX_NWORDS> A = 0, B = 0;
-  for (unsigned i = 0; i < nwords; i++) {
-    A |= (ap_uint<W*MAX_NWORDS>)a[i] << (i * W);
-    B |= (ap_uint<W*MAX_NWORDS>)b[i] << (i * W);
-  }
-
-  // 2) 一度だけ普通に 乗算
-  ap_uint<2*W*MAX_NWORDS> P = A * B;
-
-  // 3) 結果をワードごとにスライスして出力
-  for (unsigned i = 0; i < 2 * nwords; i++) {
-    c[i] = P.range((i+1)*W-1, i*W);
-  }
-}
-
-// void mp_mul(const digit_t* a, const digit_t* b, digit_t* c, const unsigned int nwords)
+// static const unsigned MAX_NWORDS = 8;
+// // オリジナルと同じシグネチャ
+// void mp_mul(const digit_t *a, const digit_t *b, digit_t *c, const unsigned int nwords)
 // {
-//     // AXI4 interfaces
-// // #pragma HLS INTERFACE m_axi      port=a     offset=slave bundle=gmem
-// // #pragma HLS INTERFACE m_axi      port=b     offset=slave bundle=gmem
-// // #pragma HLS INTERFACE m_axi      port=c     offset=slave bundle=gmem
-// // #pragma HLS INTERFACE s_axilite  port=a     bundle=control
-// // #pragma HLS INTERFACE s_axilite  port=b     bundle=control
-// // #pragma HLS INTERFACE s_axilite  port=c     bundle=control
-// // #pragma HLS INTERFACE s_axilite  port=nwords bundle=control
-// // #pragma HLS INTERFACE s_axilite  port=return  bundle=control
+//   // 1) 配列 a, b を「一発で乗算できる大きなレジスタ」にパック
+//   ap_uint<W*MAX_NWORDS> A = 0, B = 0;
+//   for (unsigned i = 0; i < nwords; i++) {
+//     A |= (ap_uint<W*MAX_NWORDS>)a[i] << (i * W);
+//     B |= (ap_uint<W*MAX_NWORDS>)b[i] << (i * W);
+//   }
 
-//     // Local variables
-//     unsigned int i, j;
-//     digit_t      t = 0, u = 0, v = 0, UV[2];
-//     unsigned int carry = 0;
+//   // 2) 一度だけ普通に 乗算
+//   ap_uint<2*W*MAX_NWORDS> P = A * B;
 
-//     // Outer loop pipelined
-//     for (i = 0; i < nwords; i++) {
-//         // Inner loop fully unrolled
-//         for (j = 0; j <= i; j++) {
-//             MUL(a[j],     b[i-j], UV+1, UV[0]);
-//             ADDC(0,       UV[0],   v,     carry, v);
-//             ADDC(carry,   UV[1],   u,     carry, u);
-//             t += carry;
-//         }
-//         c[i] = v;
-//         v    = u;  u = t;  t = 0;
-//     }
-
-//     // Upper words
-//     for (i = nwords; i < 2*nwords-1; i++) {
-//         for (j = i-nwords+1; j < nwords; j++) {
-//             MUL(a[j],     b[i-j], UV+1, UV[0]);
-//             ADDC(0,       UV[0],   v,     carry, v);
-//             ADDC(carry,   UV[1],   u,     carry, u);
-//             t += carry;
-//         }
-//         c[i] = v;
-//         v    = u;  u = t;  t = 0;
-//     }
-//     c[2*nwords-1] = v;
+//   // 3) 結果をワードごとにスライスして出力
+//   for (unsigned i = 0; i < 2 * nwords; i++) {
+//     c[i] = P.range((i+1)*W-1, i*W);
+//   }
 // }
+
+void mp_mul(const digit_t* a, const digit_t* b, digit_t* c, const unsigned int nwords)
+{
+    // AXI4 interfaces
+// #pragma HLS INTERFACE m_axi      port=a     offset=slave bundle=gmem
+// #pragma HLS INTERFACE m_axi      port=b     offset=slave bundle=gmem
+// #pragma HLS INTERFACE m_axi      port=c     offset=slave bundle=gmem
+// #pragma HLS INTERFACE s_axilite  port=a     bundle=control
+// #pragma HLS INTERFACE s_axilite  port=b     bundle=control
+// #pragma HLS INTERFACE s_axilite  port=c     bundle=control
+// #pragma HLS INTERFACE s_axilite  port=nwords bundle=control
+// #pragma HLS INTERFACE s_axilite  port=return  bundle=control
+
+    // Local variables
+    unsigned int i, j;
+    digit_t      t = 0, u = 0, v = 0, UV[2];
+    unsigned int carry = 0;
+
+    // Outer loop pipelined
+    for (i = 0; i < nwords; i++) {
+        // Inner loop fully unrolled
+        for (j = 0; j <= i; j++) {
+            MUL(a[j],     b[i-j], UV+1, UV[0]);
+            ADDC(0,       UV[0],   v,     carry, v);
+            ADDC(carry,   UV[1],   u,     carry, u);
+            t += carry;
+        }
+        c[i] = v;
+        v    = u;  u = t;  t = 0;
+    }
+
+    // Upper words
+    for (i = nwords; i < 2*nwords-1; i++) {
+        for (j = i-nwords+1; j < nwords; j++) {
+            MUL(a[j],     b[i-j], UV+1, UV[0]);
+            ADDC(0,       UV[0],   v,     carry, v);
+            ADDC(carry,   UV[1],   u,     carry, u);
+            t += carry;
+        }
+        c[i] = v;
+        v    = u;  u = t;  t = 0;
+    }
+    c[2*nwords-1] = v;
+}
 
 void rdc_mont(const dfelm_t ma, felm_t mc)
 {
