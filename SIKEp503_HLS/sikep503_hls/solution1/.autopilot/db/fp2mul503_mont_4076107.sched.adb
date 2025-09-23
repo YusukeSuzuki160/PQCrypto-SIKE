@@ -529,19 +529,19 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>_ln174</name>
-						<fileName>src/fpx.cpp</fileName>
+						<name>_ln283</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>174</lineNumber>
-						<contextFuncName>fp2mul503_mont</contextFuncName>
-						<contextNormFuncName>fp2mul503_mont</contextNormFuncName>
+						<lineNumber>283</lineNumber>
+						<contextFuncName>mp_mul</contextFuncName>
+						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
@@ -549,6 +549,13 @@
 											<second>fp2mul503_mont</second>
 										</first>
 										<second>174</second>
+									</item>
+									<item>
+										<first>
+											<first>src/generic/fp_generic.cpp</first>
+											<second>mp_mul</second>
+										</first>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -581,7 +588,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
+				<m_delay>1.42</m_delay>
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -590,19 +597,19 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>add_ln175</name>
-						<fileName>src/fpx.cpp</fileName>
+						<name>add_ln283</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>175</lineNumber>
-						<contextFuncName>fp2mul503_mont</contextFuncName>
-						<contextNormFuncName>fp2mul503_mont</contextNormFuncName>
+						<lineNumber>283</lineNumber>
+						<contextFuncName>mp_mul</contextFuncName>
+						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
@@ -610,6 +617,13 @@
 											<second>fp2mul503_mont</second>
 										</first>
 										<second>175</second>
+									</item>
+									<item>
+										<first>
+											<first>src/generic/fp_generic.cpp</first>
+											<second>mp_mul</second>
+										</first>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -647,19 +661,19 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>_ln175</name>
-						<fileName>src/fpx.cpp</fileName>
+						<name>_ln283</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>175</lineNumber>
-						<contextFuncName>fp2mul503_mont</contextFuncName>
-						<contextNormFuncName>fp2mul503_mont</contextNormFuncName>
+						<lineNumber>283</lineNumber>
+						<contextFuncName>mp_mul</contextFuncName>
+						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
@@ -667,6 +681,13 @@
 											<second>fp2mul503_mont</second>
 										</first>
 										<second>175</second>
+									</item>
+									<item>
+										<first>
+											<first>src/generic/fp_generic.cpp</first>
+											<second>mp_mul</second>
+										</first>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -701,7 +722,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
+				<m_delay>1.42</m_delay>
 				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -756,19 +777,19 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>_ln175</name>
-						<fileName>src/fpx.cpp</fileName>
+						<name>_ln283</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>175</lineNumber>
-						<contextFuncName>fp2mul503_mont</contextFuncName>
-						<contextNormFuncName>fp2mul503_mont</contextNormFuncName>
+						<lineNumber>283</lineNumber>
+						<contextFuncName>mp_mul</contextFuncName>
+						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
@@ -776,6 +797,13 @@
 											<second>fp2mul503_mont</second>
 										</first>
 										<second>175</second>
+									</item>
+									<item>
+										<first>
+											<first>src/generic/fp_generic.cpp</first>
+											<second>mp_mul</second>
+										</first>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -1059,19 +1087,19 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>_ln185</name>
-						<fileName>src/fpx.cpp</fileName>
+						<name>_ln283</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>185</lineNumber>
-						<contextFuncName>fp2mul503_mont</contextFuncName>
-						<contextNormFuncName>fp2mul503_mont</contextNormFuncName>
+						<lineNumber>283</lineNumber>
+						<contextFuncName>mp_mul</contextFuncName>
+						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
@@ -1079,6 +1107,13 @@
 											<second>fp2mul503_mont</second>
 										</first>
 										<second>185</second>
+									</item>
+									<item>
+										<first>
+											<first>src/generic/fp_generic.cpp</first>
+											<second>mp_mul</second>
+										</first>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -1321,7 +1356,7 @@
 					<Obj>
 						<type>2</type>
 						<id>40</id>
-						<name>mp_mul_54</name>
+						<name>mul_54</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1345,7 +1380,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.54&gt;</content>
+				<content>&lt;constant:mul.54&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_28">
 				<Value>
@@ -1476,7 +1511,7 @@
 					<Obj>
 						<type>2</type>
 						<id>62</id>
-						<name>fp2mul503_mont_4076107_Pipeline_VITIS_LOOP_370_1149</name>
+						<name>fp2mul503_mont_4076107_Pipeline_VITIS_LOOP_370_1181</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1500,7 +1535,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.4076107_Pipeline_VITIS_LOOP_370_1149&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.4076107_Pipeline_VITIS_LOOP_370_1181&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_33">
 				<Value>
@@ -1600,7 +1635,7 @@
 					<Obj>
 						<type>2</type>
 						<id>84</id>
-						<name>fp2mul503_mont_4076107_Pipeline_VITIS_LOOP_370_1150</name>
+						<name>fp2mul503_mont_4076107_Pipeline_VITIS_LOOP_370_1182</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1624,14 +1659,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.4076107_Pipeline_VITIS_LOOP_370_1150&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.4076107_Pipeline_VITIS_LOOP_370_1182&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_37">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>88</id>
-						<name>mp_mul_4119</name>
+						<name>mul_4119</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1655,14 +1690,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.4119&gt;</content>
+				<content>&lt;constant:mul.4119&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_38">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>93</id>
-						<name>fp2mul503_mont_4076107_Pipeline_VITIS_LOOP_152_1151</name>
+						<name>fp2mul503_mont_4076107_Pipeline_VITIS_LOOP_152_1183</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1686,7 +1721,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.4076107_Pipeline_VITIS_LOOP_152_1151&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.4076107_Pipeline_VITIS_LOOP_152_1183&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2316,8 +2351,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>536</mMinLatency>
-			<mMaxLatency>936</mMaxLatency>
+			<mMinLatency>345</mMinLatency>
+			<mMaxLatency>557</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

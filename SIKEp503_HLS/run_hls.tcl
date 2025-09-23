@@ -20,6 +20,7 @@ add_files src/config.h
 add_files src/api.h
 add_files src/random/random.h
 add_files src/sha3/fips202.h
+add_files src/generic/mpx_packed.hpp
 
 # Add source files in dependency order
 add_files src/fpx.cpp
@@ -49,6 +50,7 @@ set_part {xcvu29p-fsga2577-2L-e}
 
 # Set target clock period
 create_clock -period 10
+
 
 # Set interface directives
 set_directive_interface -mode ap_ctrl_hs sikep503_kem_enc_hw

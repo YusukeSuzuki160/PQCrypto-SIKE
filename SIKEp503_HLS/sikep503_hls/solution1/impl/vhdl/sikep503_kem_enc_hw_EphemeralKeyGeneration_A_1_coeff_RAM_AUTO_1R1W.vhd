@@ -13,18 +13,18 @@ entity sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_coeff_RAM_AUTO_1R1W is
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 64; 
         AddressWidth    : integer   := 6;
-        AddressRange    : integer   := 48
+        AddressRange    : integer   := 48;
+        COL_WIDTH       : integer := 8;
+        NUM_COL         : integer := 64/8
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 
         ce0         : in std_logic; 
         d0          : in std_logic_vector(DataWidth-1 downto 0); 
-        we0         : in std_logic; 
+        we0         : in std_logic_vector(NUM_COL-1 downto 0); 
         q0          : out std_logic_vector(DataWidth-1 downto 0);
         address1    : in std_logic_vector(AddressWidth-1 downto 0); 
         ce1         : in std_logic; 
-        d1          : in std_logic_vector(DataWidth-1 downto 0); 
-        we1         : in std_logic; 
         q1          : out std_logic_vector(DataWidth-1 downto 0);
         reset           : in std_logic; 
         clk             : in std_logic 
@@ -69,13 +69,14 @@ begin
     if (clk'event and clk = '1') then
         if (ce0 = '1') then 
             q0 <= ram(CONV_INTEGER(address0_tmp));
-            if (we0 = '1') then 
-                ram(CONV_INTEGER(address0_tmp)) := d0; 
-            end if; 
+            for i in 0 to NUM_COL - 1 loop
+                if (we0(i) = '1') then
+                    ram(CONV_INTEGER(address0_tmp))((i + 1) * COL_WIDTH - 1 downto i * COL_WIDTH) := d0((i + 1) * COL_WIDTH - 1 downto i * COL_WIDTH); 
+                end if;
+            end loop;
         end if;
     end if;
 end process;
-
 
  
 memory_access_guard_1: process (address1) 
@@ -92,16 +93,11 @@ end process;   --
 
 
 
-
---  read first
-p_memory_access_1: process (clk)  
+p_memory_access_1: process (clk)
 begin 
     if (clk'event and clk = '1') then
         if (ce1 = '1') then 
             q1 <= ram(CONV_INTEGER(address1_tmp));
-            if (we1 = '1') then 
-                ram(CONV_INTEGER(address1_tmp)) := d1; 
-            end if; 
         end if;
     end if;
 end process;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'from_mont_33'" level="0">
-<item name = "Date">Wed Jul 30 17:02:35 2025
+<item name = "Date">Wed Sep  3 15:19:41 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 5.675 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.162 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">272, 476, 2.720 us, 4.760 us, 272, 476, no</column>
+<column name="">186, 292, 1.860 us, 2.920 us, 186, 292, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,10 +32,10 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_from_mont_33_Pipeline_1_fu_32">from_mont_33_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_mp_mul_4111_fu_38">mp_mul_4111, 122, 220, 1.220 us, 2.200 us, 122, 220, no</column>
+<column name="grp_mul_4111_fu_38">mul_4111, 36, 36, 0.360 us, 0.360 us, 36, 36, no</column>
 <column name="grp_rdc_mont_47_fu_49">rdc_mont_47, 103, 209, 1.030 us, 2.090 us, 103, 209, no</column>
-<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_101_1_fu_58">from_mont_33_Pipeline_VITIS_LOOP_101_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_107_2_fu_67">from_mont_33_Pipeline_VITIS_LOOP_107_2, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_105_1_fu_58">from_mont_33_Pipeline_VITIS_LOOP_105_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_111_2_fu_67">from_mont_33_Pipeline_VITIS_LOOP_111_2, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -54,14 +54,14 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 64, 2435, 8346, -</column>
-<column name="Memory">0, -, 128, 130, 0</column>
+<column name="Instance">0, 344, 10246, 26404, -</column>
+<column name="Memory">0, -, 64, 65, 0</column>
 <column name="Multiplexer">-, -, 0, 235, -</column>
 <column name="Register">-, -, 15, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 2, ~0, 2, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 11, 1, 6, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
-<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 2, ~0, 1, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -69,10 +69,10 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_from_mont_33_Pipeline_1_fu_32">from_mont_33_Pipeline_1, 0, 0, 7, 52, 0</column>
-<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_101_1_fu_58">from_mont_33_Pipeline_VITIS_LOOP_101_1, 0, 0, 205, 827, 0</column>
-<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_107_2_fu_67">from_mont_33_Pipeline_VITIS_LOOP_107_2, 0, 0, 269, 882, 0</column>
-<column name="grp_mp_mul_4111_fu_38">mp_mul_4111, 0, 32, 724, 2353, 0</column>
-<column name="grp_rdc_mont_47_fu_49">rdc_mont_47, 0, 32, 1230, 4232, 0</column>
+<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_105_1_fu_58">from_mont_33_Pipeline_VITIS_LOOP_105_1, 0, 0, 205, 827, 0</column>
+<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_111_2_fu_67">from_mont_33_Pipeline_VITIS_LOOP_111_2, 0, 0, 269, 882, 0</column>
+<column name="grp_mul_4111_fu_38">mul_4111, 0, 312, 8469, 19669, 0</column>
+<column name="grp_rdc_mont_47_fu_49">rdc_mont_47, 0, 32, 1296, 4974, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,7 +82,6 @@
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
 <column name="temp_U">fpsqr503_mont_1_temp_RAM_AUTO_1R1W, 0, 64, 65, 0, 16, 64, 1, 1024</column>
-<column name="one_U">from_mont_33_one_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -112,9 +111,9 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">10, 0, 10, 0</column>
 <column name="grp_from_mont_33_Pipeline_1_fu_32_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_101_1_fu_58_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_107_2_fu_67_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_mp_mul_4111_fu_38_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_105_1_fu_58_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_from_mont_33_Pipeline_VITIS_LOOP_111_2_fu_67_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_mul_4111_fu_38_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_rdc_mont_47_fu_49_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>

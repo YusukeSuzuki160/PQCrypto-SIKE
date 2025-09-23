@@ -506,7 +506,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>i_264</name>
+						<name>i_268</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>370</lineNumber>
@@ -1286,7 +1286,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>c_addr_42</name>
+						<name>c_addr_16</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>373</lineNumber>
@@ -4808,7 +4808,7 @@
 			</second>
 		</item>
 		<item>
-			<first>c_addr_42_gep_fu_77</first>
+			<first>c_addr_16_gep_fu_77</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5000,7 +5000,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_264_load_fu_124</first>
+			<first>i_268_load_fu_124</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5139,7 +5139,7 @@
 		<count>7</count>
 		<item_version>0</item_version>
 		<item>
-			<first>c_addr_42_reg_284</first>
+			<first>c_addr_16_reg_284</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5163,7 +5163,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_264_reg_270</first>
+			<first>i_268_reg_270</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

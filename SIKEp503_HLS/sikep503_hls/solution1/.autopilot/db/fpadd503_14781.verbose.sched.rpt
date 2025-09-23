@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_14781'
 ================================================================
-* Date:           Wed Jul 30 16:55:10 2025
+* Date:           Wed Sep  3 15:10:33 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -83,28 +83,28 @@ State 1 <SV = 0> <Delay = 1.42>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%c_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_offset"   --->   Operation 7 'read' 'c_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%b_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %b_offset2"   --->   Operation 8 'read' 'b_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%a_offset1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset1"   --->   Operation 9 'read' 'a_offset1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%carry_201_loc = alloca i64 1"   --->   Operation 10 'alloca' 'carry_201_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset_read, i3 0" [src/generic/fp_generic.cpp:31]   --->   Operation 11 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %b_offset2_read, i3 0" [src/generic/fp_generic.cpp:31]   --->   Operation 12 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_31 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %a_offset1_read, i3 0" [src/generic/fp_generic.cpp:31]   --->   Operation 13 'bitconcatenate' 'tmp_31' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [2/2] (1.42ns)   --->   "%call_ln31 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_29_1, i4 %tmp_31, i64 %a, i4 %tmp_s, i64 %b, i4 %tmp, i64 %c" [src/generic/fp_generic.cpp:31]   --->   Operation 14 'call' 'call_ln31' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%carry_158_loc = alloca i64 1"   --->   Operation 10 'alloca' 'carry_158_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %c_offset_read, i3 0" [src/generic/fp_generic.cpp:35]   --->   Operation 11 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %b_offset2_read, i3 0" [src/generic/fp_generic.cpp:35]   --->   Operation 12 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_558 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %a_offset1_read, i3 0" [src/generic/fp_generic.cpp:35]   --->   Operation 13 'bitconcatenate' 'tmp_558' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [2/2] (1.42ns)   --->   "%call_ln35 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_33_1, i4 %tmp_558, i64 %a, i4 %tmp_s, i64 %b, i4 %tmp, i64 %c" [src/generic/fp_generic.cpp:35]   --->   Operation 14 'call' 'call_ln35' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 1.48>
-ST_2 : Operation 15 [1/2] (1.48ns)   --->   "%call_ln31 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_29_1, i4 %tmp_31, i64 %a, i4 %tmp_s, i64 %b, i4 %tmp, i64 %c" [src/generic/fp_generic.cpp:31]   --->   Operation 15 'call' 'call_ln31' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 15 [1/2] (1.48ns)   --->   "%call_ln35 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_33_1, i4 %tmp_558, i64 %a, i4 %tmp_s, i64 %b, i4 %tmp, i64 %c" [src/generic/fp_generic.cpp:35]   --->   Operation 15 'call' 'call_ln35' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 1.42>
-ST_3 : Operation 16 [2/2] (1.42ns)   --->   "%call_ln31 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_35_2, i4 %tmp, i64 %c, i1 %carry_201_loc, i64 %p503x2_1" [src/generic/fp_generic.cpp:31]   --->   Operation 16 'call' 'call_ln31' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 16 [2/2] (1.42ns)   --->   "%call_ln35 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_39_2, i4 %tmp, i64 %c, i1 %carry_158_loc, i64 %p503x2_1" [src/generic/fp_generic.cpp:35]   --->   Operation 16 'call' 'call_ln35' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
-ST_4 : Operation 17 [1/2] (1.48ns)   --->   "%call_ln31 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_35_2, i4 %tmp, i64 %c, i1 %carry_201_loc, i64 %p503x2_1" [src/generic/fp_generic.cpp:31]   --->   Operation 17 'call' 'call_ln31' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 17 [1/2] (1.48ns)   --->   "%call_ln35 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_39_2, i4 %tmp, i64 %c, i1 %carry_158_loc, i64 %p503x2_1" [src/generic/fp_generic.cpp:35]   --->   Operation 17 'call' 'call_ln35' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 1.42>
-ST_5 : Operation 18 [1/1] (0.00ns)   --->   "%carry_201_loc_load = load i1 %carry_201_loc"   --->   Operation 18 'load' 'carry_201_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 19 [2/2] (1.42ns)   --->   "%call_ln31 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_42_3, i4 %tmp, i64 %c, i1 %carry_201_loc_load, i64 %p503x2_1" [src/generic/fp_generic.cpp:31]   --->   Operation 19 'call' 'call_ln31' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 18 [1/1] (0.00ns)   --->   "%carry_158_loc_load = load i1 %carry_158_loc"   --->   Operation 18 'load' 'carry_158_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 19 [2/2] (1.42ns)   --->   "%call_ln35 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_46_3, i4 %tmp, i64 %c, i1 %carry_158_loc_load, i64 %p503x2_1" [src/generic/fp_generic.cpp:35]   --->   Operation 19 'call' 'call_ln35' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.48>
-ST_6 : Operation 20 [1/2] (1.48ns)   --->   "%call_ln31 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_42_3, i4 %tmp, i64 %c, i1 %carry_201_loc_load, i64 %p503x2_1" [src/generic/fp_generic.cpp:31]   --->   Operation 20 'call' 'call_ln31' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln46 = ret" [src/generic/fp_generic.cpp:46]   --->   Operation 21 'ret' 'ret_ln46' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 20 [1/2] (1.48ns)   --->   "%call_ln35 = call void @fpadd503.14781_Pipeline_VITIS_LOOP_46_3, i4 %tmp, i64 %c, i1 %carry_158_loc_load, i64 %p503x2_1" [src/generic/fp_generic.cpp:35]   --->   Operation 20 'call' 'call_ln35' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln50 = ret" [src/generic/fp_generic.cpp:50]   --->   Operation 21 'ret' 'ret_ln50' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -115,28 +115,28 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
  <State 1>: 1.422ns
 The critical path consists of the following:
 	wire read operation ('c_offset_read') on port 'c_offset' [8]  (0.000 ns)
-	'call' operation 0 bit ('call_ln31', src/generic/fp_generic.cpp:31) to 'fpadd503.14781_Pipeline_VITIS_LOOP_29_1' [15]  (1.422 ns)
+	'call' operation 0 bit ('call_ln35', src/generic/fp_generic.cpp:35) to 'fpadd503.14781_Pipeline_VITIS_LOOP_33_1' [15]  (1.422 ns)
 
  <State 2>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln31', src/generic/fp_generic.cpp:31) to 'fpadd503.14781_Pipeline_VITIS_LOOP_29_1' [15]  (1.482 ns)
+	'call' operation 0 bit ('call_ln35', src/generic/fp_generic.cpp:35) to 'fpadd503.14781_Pipeline_VITIS_LOOP_33_1' [15]  (1.482 ns)
 
  <State 3>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln31', src/generic/fp_generic.cpp:31) to 'fpadd503.14781_Pipeline_VITIS_LOOP_35_2' [16]  (1.422 ns)
+	'call' operation 0 bit ('call_ln35', src/generic/fp_generic.cpp:35) to 'fpadd503.14781_Pipeline_VITIS_LOOP_39_2' [16]  (1.422 ns)
 
  <State 4>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln31', src/generic/fp_generic.cpp:31) to 'fpadd503.14781_Pipeline_VITIS_LOOP_35_2' [16]  (1.482 ns)
+	'call' operation 0 bit ('call_ln35', src/generic/fp_generic.cpp:35) to 'fpadd503.14781_Pipeline_VITIS_LOOP_39_2' [16]  (1.482 ns)
 
  <State 5>: 1.422ns
 The critical path consists of the following:
-	'load' operation 1 bit ('carry_201_loc_load') on local variable 'carry_201_loc' [17]  (0.000 ns)
-	'call' operation 0 bit ('call_ln31', src/generic/fp_generic.cpp:31) to 'fpadd503.14781_Pipeline_VITIS_LOOP_42_3' [18]  (1.422 ns)
+	'load' operation 1 bit ('carry_158_loc_load') on local variable 'carry_158_loc' [17]  (0.000 ns)
+	'call' operation 0 bit ('call_ln35', src/generic/fp_generic.cpp:35) to 'fpadd503.14781_Pipeline_VITIS_LOOP_46_3' [18]  (1.422 ns)
 
  <State 6>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln31', src/generic/fp_generic.cpp:31) to 'fpadd503.14781_Pipeline_VITIS_LOOP_42_3' [18]  (1.482 ns)
+	'call' operation 0 bit ('call_ln35', src/generic/fp_generic.cpp:35) to 'fpadd503.14781_Pipeline_VITIS_LOOP_46_3' [18]  (1.482 ns)
 
 
 ============================================================

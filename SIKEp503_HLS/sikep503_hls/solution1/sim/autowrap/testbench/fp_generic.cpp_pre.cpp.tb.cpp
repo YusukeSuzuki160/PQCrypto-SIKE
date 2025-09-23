@@ -12,9 +12,6 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
-
-
-
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/include/ap_int.h" 1
 # 10 "/home2/meltpoint/Xilinx/Vitis/2024.2/include/ap_int.h"
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/include/etc/ap_common.h" 1
@@ -59346,14 +59343,181 @@ inline bool operator!=(
 }
 # 370 "/home2/meltpoint/Xilinx/Vitis/2024.2/include/ap_fixed.h" 2
 # 365 "/home2/meltpoint/Xilinx/Vitis/2024.2/include/ap_int.h" 2
+# 2 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 1 3
+# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 3
+# 3 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
+
+# 1 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp" 1
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/include/ap_int.h" 1
+# 4 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp" 2
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 1 3
+# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 3
+# 6 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp" 2
+
+
+namespace mpx
+{
+
+
+
+  template <class Digit, unsigned MAX_NWORDS, bool LSW_FIRST = true>
+  struct PackedOps
+  {
+    static_assert(std::is_unsigned<Digit>::value,
+                  "Digit must be an unsigned integer type.");
+    static constexpr unsigned W = 8 * sizeof(Digit);
+    static_assert(W >= 8, "Digit width must be >= 8 bits.");
+
+    using Big = ap_uint<W * MAX_NWORDS>;
+    using Big2 = ap_uint<2 * W * MAX_NWORDS>;
+
+
+    static Big pack(const Digit *x, unsigned nwords)
+    {
+#pragma HLS INLINE
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = x core = RAM_1P
+      Big A = 0;
+
+      for (unsigned i = 0; i < MAX_NWORDS; ++i)
+      {
+#pragma HLS UNROLL
+        if (i < nwords)
+        {
+          const unsigned src =
+              LSW_FIRST ? i : (nwords - 1u - i);
+          ap_uint<W> w = (ap_uint<W>)x[src];
+          A |= (Big)w << (i * W);
+        }
+      }
+      return A;
+    }
+
+    template <class Wide>
+    static void unpack(const Wide &P, Digit *y, unsigned out_words)
+    {
+#pragma HLS INLINE
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = y core = RAM_1P
+      for (unsigned i = 0; i < out_words; ++i)
+      {
+#pragma HLS UNROLL
+        ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
+        const unsigned dst =
+            LSW_FIRST ? i : (out_words - 1u - i);
+        y[dst] = (Digit)w;
+      }
+    }
+
+
+
+    static unsigned add(const Digit *a, const Digit *b,
+                        Digit *c, unsigned nwords)
+    {
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+      Big A = pack(a, nwords);
+      Big B = pack(b, nwords);
+
+      ap_uint<W * MAX_NWORDS + 1> S = A + B;
+
+      Big result = S.range(W * MAX_NWORDS - 1, 0);
+      unpack(result, c, nwords);
+
+      ap_uint<1> carry = 0;
+      if (nwords < MAX_NWORDS)
+      {
+
+        carry = S[W * nwords];
+      }
+      else
+      {
+
+        carry = S[W * MAX_NWORDS];
+      }
+      return (unsigned)carry;
+    }
+
+    static unsigned sub(const Digit *a, const Digit *b,
+                        Digit *c, unsigned nwords)
+    {
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+      Big A = pack(a, nwords);
+      Big B = pack(b, nwords);
+
+      ap_uint<W * MAX_NWORDS + 1> D = A - B;
+
+      Big result = D.range(W * MAX_NWORDS - 1, 0);
+      unpack(result, c, nwords);
+
+      ap_uint<1> borrow = 0;
+      if (nwords < MAX_NWORDS)
+      {
+
+        borrow = D[W * nwords];
+      }
+      else
+      {
+
+        borrow = D[W * MAX_NWORDS];
+      }
+      return (unsigned)borrow;
+    }
+
+    static void mul(const Digit *a, const Digit *b,
+                    Digit *c, unsigned nwords)
+    {
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS ALLOCATION instances = mul limit = 1 function
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+#pragma HLS BIND_STORAGE variable = a type = RAM_1P
+#pragma HLS BIND_STORAGE variable = b type = RAM_1P
+#pragma HLS BIND_STORAGE variable = c type = RAM_1P
+#pragma HLS RESOURCE core = Mul_LUT
+      Big A = pack(a, nwords);
+      Big B = pack(b, nwords);
+      Big2 P = (Big)A * (Big)B;
+      unpack(P, c, 2 * nwords);
+    }
+
+    static void sqr(const Digit *a, Digit *c, unsigned nwords)
+    {
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+#pragma HLS RESOURCE core = Mul_LUT
+      Big A = pack(a, nwords);
+      Big2 P = (Big)A * (Big)A;
+      unpack(P, c, 2 * nwords);
+    }
+  };
+
+}
 # 5 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/include/ap_int.h" 1
+# 9 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 1 3
 # 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 3
 
 
 # 1 "/usr/include/assert.h" 1 3 4
 # 45 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 2 3
-# 6 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
+# 10 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
 
 
 # 1 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/../P503_internal.h" 1
@@ -59658,7 +59822,7 @@ extern const uint64_t Montgomery_R2[((503 + 63) / 64)];
 extern const uint64_t Montgomery_one[((503 + 63) / 64)];
 extern const unsigned int strat_Alice[125 - 1];
 extern const unsigned int strat_Bob[159 - 1];
-# 9 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
+# 13 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp" 2
 
 extern const uint64_t p503[8];
 extern const uint64_t p503p1[8];
@@ -59762,44 +59926,80 @@ void fpcorrection503(digit_t *a)
         { digit_t tempReg = (a[i]) + (digit_t)(borrow); (a[i]) = (((digit_t *)p503)[i] & mask) + tempReg; (borrow) = (is_digit_lessthan_ct(tempReg, (digit_t)(borrow)) | is_digit_lessthan_ct((a[i]), tempReg)); };
     }
 }
-# 148 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp"
-void digit_x_digit_hls(ap_uint<W> a, ap_uint<W> b, ap_uint<2 * W> &c)
+# 152 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp"
+void digit_x_digit(const digit_t a, const digit_t b, digit_t *c)
 {
-    c = a * b;
-}
-# 213 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp"
-static const unsigned MAX_NWORDS = 8;
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE core = Mul_LUT
 
+    register digit_t al, ah, bl, bh, temp;
+    digit_t albl, albh, ahbl, ahbh, res1, res2, res3, carry;
+    digit_t mask_low = (digit_t)(-1) >> (sizeof(digit_t) * 4);
+    digit_t mask_high = (digit_t)(-1) << (sizeof(digit_t) * 4);
+
+    al = a & mask_low;
+    ah = a >> (sizeof(digit_t) * 4);
+    bl = b & mask_low;
+    bh = b >> (sizeof(digit_t) * 4);
+
+    albl = al * bl;
+    albh = al * bh;
+    ahbl = ah * bl;
+    ahbh = ah * bh;
+    c[0] = albl & mask_low;
+
+    res1 = albl >> (sizeof(digit_t) * 4);
+    res2 = ahbl & mask_low;
+    res3 = albh & mask_low;
+    temp = res1 + res2 + res3;
+    carry = temp >> (sizeof(digit_t) * 4);
+    c[0] ^= temp << (sizeof(digit_t) * 4);
+
+    res1 = ahbl >> (sizeof(digit_t) * 4);
+    res2 = albh >> (sizeof(digit_t) * 4);
+    res3 = ahbh & mask_low;
+    temp = res1 + res2 + res3 + carry;
+    c[1] = temp & mask_low;
+    carry = temp & mask_high;
+    c[1] ^= (ahbh & mask_high) + carry;
+}
+# 269 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp"
 void mp_mul(const digit_t *a, const digit_t *b, digit_t *c, const unsigned int nwords)
 {
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS ALLOCATION instances = mul limit = 1 function
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+#pragma HLS ARRAY_PARTITION variable = a complete dim = 1
+#pragma HLS ARRAY_PARTITION variable = b complete dim = 1
+#pragma HLS ARRAY_PARTITION variable = c complete dim = 1
+#pragma HLS BIND_STORAGE variable = a type = RAM_1P
+#pragma HLS BIND_STORAGE variable = b type = RAM_1P
+#pragma HLS BIND_STORAGE variable = c type = RAM_1P
+#pragma HLS RESOURCE core = Mul_LUT
 
-  ap_uint<W*MAX_NWORDS> A = 0, B = 0;
-  for (unsigned i = 0; i < nwords; i++) {
-    A |= (ap_uint<W*MAX_NWORDS>)a[i] << (i * W);
-    B |= (ap_uint<W*MAX_NWORDS>)b[i] << (i * W);
-  }
-
-
-  ap_uint<2*W*MAX_NWORDS> P = A * B;
-
-
-  for (unsigned i = 0; i < 2 * nwords; i++) {
-    c[i] = P.range((i+1)*W-1, i*W);
-  }
+    constexpr unsigned MAX_NWORDS = 8;
+    using DigitA = std::remove_cv_t<std::remove_pointer_t<decltype(a)>>;
+    using DigitB = std::remove_cv_t<std::remove_pointer_t<decltype(b)>>;
+    using DigitC = std::remove_cv_t<std::remove_pointer_t<decltype(c)>>;
+    static_assert(sizeof(DigitA) == sizeof(DigitB) && sizeof(DigitA) == sizeof(DigitC),
+                  "a,b,c digits must have the same size");
+    static_assert(std::is_unsigned<DigitA>::value || std::is_class<DigitA>::value,
+                  "Digit type must be unsigned or ap_uint-like");
+    using Digit = DigitA;
+    if (nwords > MAX_NWORDS)
+        return;
+    mpx::PackedOps<Digit, MAX_NWORDS, true>::mul(a, b, c, nwords);
 }
-# 277 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp"
+
 void rdc_mont(const dfelm_t ma, felm_t mc)
 {
 
-
-
-
-
-
-
     unsigned int i, j, carry, count = 3;
-    digit_t t = 0, u = 0, v = 0;
-    ap_uint<2 * W> tmp;
+    digit_t UV[2], t = 0, u = 0, v = 0;
 
 
     for (i = 0; i < 8; i++)
@@ -59814,11 +60014,9 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
         {
             if (j < (i - 3 + 1))
             {
-                digit_x_digit_hls(mc[j], ((digit_t *)p503p1)[i - j], tmp);
-                digit_t lo = tmp.range(W - 1, 0);
-                digit_t hi = tmp.range(2 * W - 1, W);
-                { digit_t tempReg = (lo) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
-                { digit_t tempReg = (hi) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
+                digit_x_digit((mc[j]), (((digit_t *)p503p1)[i - j]), &(UV[0]));;
+                { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
+                { digit_t tempReg = (UV[1]) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
                 t += carry;
             }
         }
@@ -59842,11 +60040,9 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
         {
             if (j < (8 - count))
             {
-                digit_x_digit_hls(mc[j], ((digit_t *)p503p1)[i - j], tmp);
-                digit_t lo = tmp.range(W - 1, 0);
-                digit_t hi = tmp.range(2 * W - 1, W);
-                { digit_t tempReg = (lo) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
-                { digit_t tempReg = (hi) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
+                digit_x_digit((mc[j]), (((digit_t *)p503p1)[i - j]), &(UV[0]));;
+                { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
+                { digit_t tempReg = (UV[1]) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
                 t += carry;
             }
         }

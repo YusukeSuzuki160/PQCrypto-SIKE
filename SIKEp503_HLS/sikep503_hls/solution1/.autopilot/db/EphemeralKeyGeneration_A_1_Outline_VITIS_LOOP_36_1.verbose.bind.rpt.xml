@@ -1,0 +1,47 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_36_1'" level="0">
+<item name = "Date">Fri Sep 12 16:08:47 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.113 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3347, 315371, 33.470 us, 3.154 ms, 3347, 315371, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_xDBL_fu_370">xDBL, 1671, 2583, 16.710 us, 25.830 us, 1671, 2583, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_36_1">3346, 315370, 1673 ~ 2585, -, -, 2 ~ 122, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

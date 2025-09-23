@@ -3,19 +3,19 @@
 
 <trans_list>
 
-<trans id="14" from="1" to="2">
+<trans id="13" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="15" from="2" to="3">
+<trans id="14" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="16" from="3" to="4">
+<trans id="15" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -35,155 +35,137 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="1" op_0_bw="1" op_1_bw="1">
+<Node id="3" bw="1" op_0_bw="64">
 <![CDATA[
-entry:0 %a_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset
-
-]]></Node>
-<StgValue><ssdm name="a_offset_read"/></StgValue>
-</operation>
-
-<operation id="6" st_id="1" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="5" bw="1" op_0_bw="64">
-<![CDATA[
-entry:1 %borrow_loc = alloca i64 1
+entry:0 %borrow_loc = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="borrow_loc"/></StgValue>
 </operation>
 
-<operation id="7" st_id="1" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="6" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
-<![CDATA[
-entry:2 %tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %a_offset_read, i3 0
-
-]]></Node>
-<StgValue><ssdm name="tmp"/></StgValue>
-</operation>
-
-<operation id="8" st_id="1" stage="2" lat="2">
+<operation id="6" st_id="1" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="64" op_3_bw="1" op_4_bw="64">
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64">
 <![CDATA[
-entry:3 %call_ln103 = call void @fpcorrection503_Pipeline_VITIS_LOOP_101_1, i4 %tmp, i64 %a, i1 %borrow_loc, i64 %p503_1
+entry:2 %call_ln0 = call void @fpcorrection503_Pipeline_VITIS_LOOP_105_1, i64 %a, i1 %borrow_loc, i64 %p503_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln103"/></StgValue>
+<StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
 </state>
 
 <state id="2" st_id="2">
 
-<operation id="9" st_id="2" stage="1" lat="2">
+<operation id="7" st_id="2" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="64" op_3_bw="1" op_4_bw="64">
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64">
 <![CDATA[
-entry:3 %call_ln103 = call void @fpcorrection503_Pipeline_VITIS_LOOP_101_1, i4 %tmp, i64 %a, i1 %borrow_loc, i64 %p503_1
+entry:2 %call_ln0 = call void @fpcorrection503_Pipeline_VITIS_LOOP_105_1, i64 %a, i1 %borrow_loc, i64 %p503_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln103"/></StgValue>
+<StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
 </state>
 
 <state id="3" st_id="3">
 
-<operation id="10" st_id="3" stage="1" lat="1">
+<operation id="8" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="1" op_0_bw="1" op_1_bw="0">
+<Node id="6" bw="1" op_0_bw="1" op_1_bw="0">
 <![CDATA[
-entry:4 %borrow_loc_load = load i1 %borrow_loc
+entry:3 %borrow_loc_load = load i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="borrow_loc_load"/></StgValue>
 </operation>
 
-<operation id="11" st_id="3" stage="2" lat="2">
+<operation id="9" st_id="3" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:5 %call_ln103 = call void @fpcorrection503_Pipeline_VITIS_LOOP_107_2, i4 %tmp, i64 %a, i1 %borrow_loc_load, i64 %p503_1
+entry:4 %call_ln0 = call void @fpcorrection503_Pipeline_VITIS_LOOP_111_2, i64 %a, i1 %borrow_loc_load, i64 %p503_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln103"/></StgValue>
+<StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
 </state>
 
 <state id="4" st_id="4">
 
-<operation id="12" st_id="4" stage="1" lat="2">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="9" bw="0" op_0_bw="0" op_1_bw="4" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
-<![CDATA[
-entry:5 %call_ln103 = call void @fpcorrection503_Pipeline_VITIS_LOOP_107_2, i4 %tmp, i64 %a, i1 %borrow_loc_load, i64 %p503_1
-
-]]></Node>
-<StgValue><ssdm name="call_ln103"/></StgValue>
-</operation>
-
-<operation id="13" st_id="4" stage="1" lat="1">
+<operation id="10" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="0">
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:6 %ret_ln111 = ret
+entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln111"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln0"/></StgValue>
+</operation>
+
+<operation id="11" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
+<![CDATA[
+entry:4 %call_ln0 = call void @fpcorrection503_Pipeline_VITIS_LOOP_111_2, i64 %a, i1 %borrow_loc_load, i64 %p503_1
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="12" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0">
+<![CDATA[
+entry:5 %ret_ln115 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln115"/></StgValue>
 </operation>
 </state>
 </state_list>
 
 
 <ports>
-<port id="17" name="a" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="a"/><MemPortTyVec>0 1 </MemPortTyVec>
+<port id="16" name="a" dir="2" iftype="1">
+<core>RAM_1P</core><StgValue><ssdm name="a"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="18" name="a_offset" dir="0" iftype="0">
-<core>NULL</core><StgValue><ssdm name="a_offset"/></StgValue>
-</port>
-<port id="19" name="p503_1" dir="0" iftype="1">
+<port id="17" name="p503_1" dir="0" iftype="1">
 <core>ROM</core><StgValue><ssdm name="p503_1"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </port>
@@ -191,59 +173,51 @@ entry:6 %ret_ln111 = ret
 
 
 <dataflows>
-<dataflow id="21" from="_ssdm_op_Read.ap_auto.i1" to="a_offset_read" fromId="20" toId="5">
+<dataflow id="19" from="StgValue_18" to="borrow_loc" fromId="18" toId="5">
 </dataflow>
-<dataflow id="22" from="a_offset" to="a_offset_read" fromId="18" toId="5">
+<dataflow id="21" from="fpcorrection503_Pipeline_VITIS_LOOP_105_1" to="call_ln0" fromId="20" toId="6">
 </dataflow>
-<dataflow id="24" from="StgValue_23" to="borrow_loc" fromId="23" toId="6">
+<dataflow id="22" from="a" to="call_ln0" fromId="16" toId="6">
 </dataflow>
-<dataflow id="26" from="_ssdm_op_BitConcatenate.i4.i1.i3" to="tmp" fromId="25" toId="7">
+<dataflow id="23" from="borrow_loc" to="call_ln0" fromId="5" toId="6">
 </dataflow>
-<dataflow id="27" from="a_offset_read" to="tmp" fromId="5" toId="7">
+<dataflow id="24" from="p503_1" to="call_ln0" fromId="17" toId="6">
 </dataflow>
-<dataflow id="29" from="StgValue_28" to="tmp" fromId="28" toId="7">
+<dataflow id="25" from="fpcorrection503_Pipeline_VITIS_LOOP_105_1" to="call_ln0" fromId="20" toId="7">
 </dataflow>
-<dataflow id="31" from="fpcorrection503_Pipeline_VITIS_LOOP_101_1" to="call_ln103" fromId="30" toId="8">
+<dataflow id="26" from="a" to="call_ln0" fromId="16" toId="7">
 </dataflow>
-<dataflow id="32" from="tmp" to="call_ln103" fromId="7" toId="8">
+<dataflow id="27" from="borrow_loc" to="call_ln0" fromId="5" toId="7">
 </dataflow>
-<dataflow id="33" from="a" to="call_ln103" fromId="17" toId="8">
+<dataflow id="28" from="p503_1" to="call_ln0" fromId="17" toId="7">
 </dataflow>
-<dataflow id="34" from="borrow_loc" to="call_ln103" fromId="6" toId="8">
+<dataflow id="29" from="borrow_loc" to="borrow_loc_load" fromId="5" toId="8">
 </dataflow>
-<dataflow id="35" from="p503_1" to="call_ln103" fromId="19" toId="8">
+<dataflow id="31" from="fpcorrection503_Pipeline_VITIS_LOOP_111_2" to="call_ln0" fromId="30" toId="9">
 </dataflow>
-<dataflow id="36" from="fpcorrection503_Pipeline_VITIS_LOOP_101_1" to="call_ln103" fromId="30" toId="9">
+<dataflow id="32" from="a" to="call_ln0" fromId="16" toId="9">
 </dataflow>
-<dataflow id="37" from="tmp" to="call_ln103" fromId="7" toId="9">
+<dataflow id="33" from="borrow_loc_load" to="call_ln0" fromId="8" toId="9">
 </dataflow>
-<dataflow id="38" from="a" to="call_ln103" fromId="17" toId="9">
+<dataflow id="34" from="p503_1" to="call_ln0" fromId="17" toId="9">
 </dataflow>
-<dataflow id="39" from="borrow_loc" to="call_ln103" fromId="6" toId="9">
+<dataflow id="36" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="35" toId="10">
 </dataflow>
-<dataflow id="40" from="p503_1" to="call_ln103" fromId="19" toId="9">
+<dataflow id="37" from="a" to="specmemcore_ln0" fromId="16" toId="10">
 </dataflow>
-<dataflow id="41" from="borrow_loc" to="borrow_loc_load" fromId="6" toId="10">
+<dataflow id="39" from="StgValue_38" to="specmemcore_ln0" fromId="38" toId="10">
 </dataflow>
-<dataflow id="43" from="fpcorrection503_Pipeline_VITIS_LOOP_107_2" to="call_ln103" fromId="42" toId="11">
+<dataflow id="41" from="StgValue_40" to="specmemcore_ln0" fromId="40" toId="10">
 </dataflow>
-<dataflow id="44" from="tmp" to="call_ln103" fromId="7" toId="11">
+<dataflow id="43" from="StgValue_42" to="specmemcore_ln0" fromId="42" toId="10">
 </dataflow>
-<dataflow id="45" from="a" to="call_ln103" fromId="17" toId="11">
+<dataflow id="44" from="fpcorrection503_Pipeline_VITIS_LOOP_111_2" to="call_ln0" fromId="30" toId="11">
 </dataflow>
-<dataflow id="46" from="borrow_loc_load" to="call_ln103" fromId="10" toId="11">
+<dataflow id="45" from="a" to="call_ln0" fromId="16" toId="11">
 </dataflow>
-<dataflow id="47" from="p503_1" to="call_ln103" fromId="19" toId="11">
+<dataflow id="46" from="borrow_loc_load" to="call_ln0" fromId="8" toId="11">
 </dataflow>
-<dataflow id="48" from="fpcorrection503_Pipeline_VITIS_LOOP_107_2" to="call_ln103" fromId="42" toId="12">
-</dataflow>
-<dataflow id="49" from="tmp" to="call_ln103" fromId="7" toId="12">
-</dataflow>
-<dataflow id="50" from="a" to="call_ln103" fromId="17" toId="12">
-</dataflow>
-<dataflow id="51" from="borrow_loc_load" to="call_ln103" fromId="10" toId="12">
-</dataflow>
-<dataflow id="52" from="p503_1" to="call_ln103" fromId="19" toId="12">
+<dataflow id="47" from="p503_1" to="call_ln0" fromId="17" toId="11">
 </dataflow>
 </dataflows>
 

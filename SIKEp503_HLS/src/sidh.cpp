@@ -41,8 +41,21 @@ static void fp2_encode(const f2elm_t x, unsigned char *enc)
     from_fp2mont(x, t);
     for (i = 0; i < FP2_ENCODED_BYTES / 2; i++)
     {
-        enc[i] = ((unsigned char *)t)[i];
-        enc[i + FP2_ENCODED_BYTES / 2] = ((unsigned char *)t)[i + MAXBITS_FIELD / 8];
+        // Extract bytes from first field element
+        if (i < NWORDS_FIELD * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            enc[i] = (unsigned char)(t[0][word_idx] >> (byte_idx * 8));
+        }
+
+        // Extract bytes from second field element
+        if (i < NWORDS_FIELD * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            enc[i + FP2_ENCODED_BYTES / 2] = (unsigned char)(t[1][word_idx] >> (byte_idx * 8));
+        }
     }
 }
 
@@ -50,13 +63,35 @@ static void fp2_decode(const unsigned char *enc, f2elm_t x)
 { // Parse byte sequence back into GF(p^2) element, and conversion to Montgomery representation
     unsigned int i;
 
-    for (i = 0; i < 2 * (MAXBITS_FIELD / 8); i++)
-        ((unsigned char *)x)[i] = 0;
+    // Initialize x array to zero
+    for (i = 0; i < 2; i++)
+    {
+        for (unsigned int j = 0; j < NWORDS_FIELD; j++)
+        {
+            x[i][j] = 0;
+        }
+    }
+
+    // Copy encoded data directly to x array elements
     for (i = 0; i < FP2_ENCODED_BYTES / 2; i++)
     {
-        ((unsigned char *)x)[i] = enc[i];
-        ((unsigned char *)x)[i + MAXBITS_FIELD / 8] = enc[i + FP2_ENCODED_BYTES / 2];
+        // Copy to first field element
+        if (i < NWORDS_FIELD * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            x[0][word_idx] |= ((digit_t)enc[i]) << (byte_idx * 8);
+        }
+
+        // Copy to second field element
+        if (i < NWORDS_FIELD * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            x[1][word_idx] |= ((digit_t)enc[i + FP2_ENCODED_BYTES / 2]) << (byte_idx * 8);
+        }
     }
+
     to_fp2mont(x, x);
 }
 
@@ -92,7 +127,6 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     fpcopy((digit_t *)&Montgomery_one, (phiP->Z)[0]);
     fpcopy((digit_t *)&Montgomery_one, (phiQ->Z)[0]);
     fpcopy((digit_t *)&Montgomery_one, (phiR->Z)[0]);
-    
 
     // Initialize constants
     fpcopy((digit_t *)&Montgomery_one, A24plus[0]);

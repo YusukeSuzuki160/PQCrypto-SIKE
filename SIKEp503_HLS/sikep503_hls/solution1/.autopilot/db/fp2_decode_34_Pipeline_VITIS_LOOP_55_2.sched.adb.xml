@@ -85,10 +85,10 @@
 
 <Node id="5" bw="6" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_245 = alloca i32 1
+newFuncRoot:0 %i_257 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_245"/></StgValue>
+<StgValue><ssdm name="i_257"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -115,7 +115,7 @@ newFuncRoot:1 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_o
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-newFuncRoot:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_0, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_72, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0
+newFuncRoot:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty, i32 0, i32 0, void @empty_82, i32 0, i32 0, void @empty_72, void @empty_73, void @empty_82, i32 16, i32 16, i32 16, i32 16, void @empty_82, void @empty_82, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -160,7 +160,7 @@ newFuncRoot:4 %enc_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %enc
 
 <Node id="10" bw="0" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-newFuncRoot:5 %store_ln51 = store i6 0, i6 %i_245
+newFuncRoot:5 %store_ln51 = store i6 0, i6 %i_257
 
 ]]></Node>
 <StgValue><ssdm name="store_ln51"/></StgValue>
@@ -190,7 +190,7 @@ newFuncRoot:6 %br_ln0 = br void %for.inc13
 
 <Node id="13" bw="6" op_0_bw="6" op_1_bw="0">
 <![CDATA[
-for.inc13:0 %i = load i6 %i_245
+for.inc13:0 %i = load i6 %i_257
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -379,7 +379,7 @@ for.inc13.split:25 %gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln58
 
 <Node id="60" bw="0" op_0_bw="6" op_1_bw="6" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc13.split:42 %store_ln51 = store i6 %add_ln55, i6 %i_245
+for.inc13.split:42 %store_ln51 = store i6 %add_ln55, i6 %i_257
 
 ]]></Node>
 <StgValue><ssdm name="store_ln51"/></StgValue>
@@ -909,7 +909,7 @@ for.inc13.split:27 %gmem_addr_3_read = read i8 @_ssdm_op_Read.m_axi.i8P1A, i8 %g
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc13.split:3 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+for.inc13.split:3 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_82
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln51"/></StgValue>
@@ -939,7 +939,7 @@ for.inc13.split:4 %speclooptripcount_ln51 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc13.split:5 %specloopname_ln55 = specloopname void @_ssdm_op_SpecLoopName, void @empty
+for.inc13.split:5 %specloopname_ln55 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln55"/></StgValue>
@@ -1134,10 +1134,10 @@ for.inc13.split:39 %zext_ln58_3 = zext i6 %lshr_ln1
 
 <Node id="58" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc13.split:40 %PKB_addr_15 = getelementptr i64 %PKB, i64 0, i64 %zext_ln58_3
+for.inc13.split:40 %PKB_addr_11 = getelementptr i64 %PKB, i64 0, i64 %zext_ln58_3
 
 ]]></Node>
-<StgValue><ssdm name="PKB_addr_15"/></StgValue>
+<StgValue><ssdm name="PKB_addr_11"/></StgValue>
 </operation>
 
 <operation id="82" st_id="12" stage="1" lat="1">
@@ -1149,7 +1149,7 @@ for.inc13.split:40 %PKB_addr_15 = getelementptr i64 %PKB, i64 0, i64 %zext_ln58_
 
 <Node id="59" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="8" op_4_bw="0">
 <![CDATA[
-for.inc13.split:41 %store_ln58 = store void @_ssdm_op_Write.bram.p0i64, i6 %PKB_addr_15, i64 %shl_ln58_2, i8 %shl_ln58
+for.inc13.split:41 %store_ln58 = store void @_ssdm_op_Write.bram.p0i64, i6 %PKB_addr_11, i64 %shl_ln58_2, i8 %shl_ln58
 
 ]]></Node>
 <StgValue><ssdm name="store_ln58"/></StgValue>

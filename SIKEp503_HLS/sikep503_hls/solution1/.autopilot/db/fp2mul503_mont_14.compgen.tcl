@@ -1,12 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sikep503_kem_enc_hw_fp2mul503_mont_14_t1_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sikep503_kem_enc_hw_fp2mul503_mont_14_tt1_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler sikep503_kem_enc_hw_fp2mul503_mont_14_tt3_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -21,17 +16,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4403 \
-    name phiP_Z_0 \
+    id 2220 \
+    name a_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_0 \
+    corename a_0 \
     op interface \
-    ports { phiP_Z_0_address0 { O 1 vector } phiP_Z_0_ce0 { O 1 bit } phiP_Z_0_q0 { I 64 vector } phiP_Z_0_address1 { O 1 vector } phiP_Z_0_ce1 { O 1 bit } phiP_Z_0_q1 { I 64 vector } } \
+    ports { a_0_address0 { O 1 vector } a_0_ce0 { O 1 bit } a_0_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_0'"
 }
 }
 
@@ -40,17 +35,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4404 \
-    name phiP_Z_1 \
+    id 2221 \
+    name a_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_1 \
+    corename a_1 \
     op interface \
-    ports { phiP_Z_1_address0 { O 1 vector } phiP_Z_1_ce0 { O 1 bit } phiP_Z_1_q0 { I 64 vector } phiP_Z_1_address1 { O 1 vector } phiP_Z_1_ce1 { O 1 bit } phiP_Z_1_q1 { I 64 vector } } \
+    ports { a_1_address0 { O 1 vector } a_1_ce0 { O 1 bit } a_1_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_1'"
 }
 }
 
@@ -59,17 +54,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4405 \
-    name phiP_Z_2 \
+    id 2222 \
+    name a_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_2 \
+    corename a_2 \
     op interface \
-    ports { phiP_Z_2_address0 { O 1 vector } phiP_Z_2_ce0 { O 1 bit } phiP_Z_2_q0 { I 64 vector } phiP_Z_2_address1 { O 1 vector } phiP_Z_2_ce1 { O 1 bit } phiP_Z_2_q1 { I 64 vector } } \
+    ports { a_2_address0 { O 1 vector } a_2_ce0 { O 1 bit } a_2_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_2'"
 }
 }
 
@@ -78,17 +73,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4406 \
-    name phiP_Z_3 \
+    id 2223 \
+    name a_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_3 \
+    corename a_3 \
     op interface \
-    ports { phiP_Z_3_address0 { O 1 vector } phiP_Z_3_ce0 { O 1 bit } phiP_Z_3_q0 { I 64 vector } phiP_Z_3_address1 { O 1 vector } phiP_Z_3_ce1 { O 1 bit } phiP_Z_3_q1 { I 64 vector } } \
+    ports { a_3_address0 { O 1 vector } a_3_ce0 { O 1 bit } a_3_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_3'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_3'"
 }
 }
 
@@ -97,17 +92,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4407 \
-    name phiP_Z_4 \
+    id 2224 \
+    name a_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_4 \
+    corename a_4 \
     op interface \
-    ports { phiP_Z_4_address0 { O 1 vector } phiP_Z_4_ce0 { O 1 bit } phiP_Z_4_q0 { I 64 vector } phiP_Z_4_address1 { O 1 vector } phiP_Z_4_ce1 { O 1 bit } phiP_Z_4_q1 { I 64 vector } } \
+    ports { a_4_address0 { O 1 vector } a_4_ce0 { O 1 bit } a_4_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_4'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_4'"
 }
 }
 
@@ -116,17 +111,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4408 \
-    name phiP_Z_5 \
+    id 2225 \
+    name a_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_5 \
+    corename a_5 \
     op interface \
-    ports { phiP_Z_5_address0 { O 1 vector } phiP_Z_5_ce0 { O 1 bit } phiP_Z_5_q0 { I 64 vector } phiP_Z_5_address1 { O 1 vector } phiP_Z_5_ce1 { O 1 bit } phiP_Z_5_q1 { I 64 vector } } \
+    ports { a_5_address0 { O 1 vector } a_5_ce0 { O 1 bit } a_5_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_5'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_5'"
 }
 }
 
@@ -135,17 +130,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4409 \
-    name phiP_Z_6 \
+    id 2226 \
+    name a_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_6 \
+    corename a_6 \
     op interface \
-    ports { phiP_Z_6_address0 { O 1 vector } phiP_Z_6_ce0 { O 1 bit } phiP_Z_6_q0 { I 64 vector } phiP_Z_6_address1 { O 1 vector } phiP_Z_6_ce1 { O 1 bit } phiP_Z_6_q1 { I 64 vector } } \
+    ports { a_6_address0 { O 1 vector } a_6_ce0 { O 1 bit } a_6_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_6'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_6'"
 }
 }
 
@@ -154,17 +149,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4410 \
-    name phiP_Z_7 \
+    id 2227 \
+    name a_7 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiP_Z_7 \
+    corename a_7 \
     op interface \
-    ports { phiP_Z_7_address0 { O 1 vector } phiP_Z_7_ce0 { O 1 bit } phiP_Z_7_q0 { I 64 vector } phiP_Z_7_address1 { O 1 vector } phiP_Z_7_ce1 { O 1 bit } phiP_Z_7_q1 { I 64 vector } } \
+    ports { a_7_address0 { O 1 vector } a_7_ce0 { O 1 bit } a_7_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_Z_7'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_7'"
 }
 }
 
@@ -173,17 +168,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4411 \
-    name phiQ_Z_0 \
+    id 2228 \
+    name A24_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_0 \
+    corename A24_0 \
     op interface \
-    ports { phiQ_Z_0_address0 { O 1 vector } phiQ_Z_0_ce0 { O 1 bit } phiQ_Z_0_q0 { I 64 vector } phiQ_Z_0_address1 { O 1 vector } phiQ_Z_0_ce1 { O 1 bit } phiQ_Z_0_q1 { I 64 vector } } \
+    ports { A24_0_address0 { O 1 vector } A24_0_ce0 { O 1 bit } A24_0_q0 { I 64 vector } A24_0_address1 { O 1 vector } A24_0_ce1 { O 1 bit } A24_0_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_0'"
 }
 }
 
@@ -192,17 +187,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4412 \
-    name phiQ_Z_1 \
+    id 2229 \
+    name A24_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_1 \
+    corename A24_1 \
     op interface \
-    ports { phiQ_Z_1_address0 { O 1 vector } phiQ_Z_1_ce0 { O 1 bit } phiQ_Z_1_q0 { I 64 vector } phiQ_Z_1_address1 { O 1 vector } phiQ_Z_1_ce1 { O 1 bit } phiQ_Z_1_q1 { I 64 vector } } \
+    ports { A24_1_address0 { O 1 vector } A24_1_ce0 { O 1 bit } A24_1_q0 { I 64 vector } A24_1_address1 { O 1 vector } A24_1_ce1 { O 1 bit } A24_1_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_1'"
 }
 }
 
@@ -211,17 +206,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4413 \
-    name phiQ_Z_2 \
+    id 2230 \
+    name A24_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_2 \
+    corename A24_2 \
     op interface \
-    ports { phiQ_Z_2_address0 { O 1 vector } phiQ_Z_2_ce0 { O 1 bit } phiQ_Z_2_q0 { I 64 vector } phiQ_Z_2_address1 { O 1 vector } phiQ_Z_2_ce1 { O 1 bit } phiQ_Z_2_q1 { I 64 vector } } \
+    ports { A24_2_address0 { O 1 vector } A24_2_ce0 { O 1 bit } A24_2_q0 { I 64 vector } A24_2_address1 { O 1 vector } A24_2_ce1 { O 1 bit } A24_2_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_2'"
 }
 }
 
@@ -230,17 +225,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4414 \
-    name phiQ_Z_3 \
+    id 2231 \
+    name A24_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_3 \
+    corename A24_3 \
     op interface \
-    ports { phiQ_Z_3_address0 { O 1 vector } phiQ_Z_3_ce0 { O 1 bit } phiQ_Z_3_q0 { I 64 vector } phiQ_Z_3_address1 { O 1 vector } phiQ_Z_3_ce1 { O 1 bit } phiQ_Z_3_q1 { I 64 vector } } \
+    ports { A24_3_address0 { O 1 vector } A24_3_ce0 { O 1 bit } A24_3_q0 { I 64 vector } A24_3_address1 { O 1 vector } A24_3_ce1 { O 1 bit } A24_3_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_3'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_3'"
 }
 }
 
@@ -249,17 +244,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4415 \
-    name phiQ_Z_4 \
+    id 2232 \
+    name A24_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_4 \
+    corename A24_4 \
     op interface \
-    ports { phiQ_Z_4_address0 { O 1 vector } phiQ_Z_4_ce0 { O 1 bit } phiQ_Z_4_q0 { I 64 vector } phiQ_Z_4_address1 { O 1 vector } phiQ_Z_4_ce1 { O 1 bit } phiQ_Z_4_q1 { I 64 vector } } \
+    ports { A24_4_address0 { O 1 vector } A24_4_ce0 { O 1 bit } A24_4_q0 { I 64 vector } A24_4_address1 { O 1 vector } A24_4_ce1 { O 1 bit } A24_4_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_4'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_4'"
 }
 }
 
@@ -268,17 +263,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4416 \
-    name phiQ_Z_5 \
+    id 2233 \
+    name A24_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_5 \
+    corename A24_5 \
     op interface \
-    ports { phiQ_Z_5_address0 { O 1 vector } phiQ_Z_5_ce0 { O 1 bit } phiQ_Z_5_q0 { I 64 vector } phiQ_Z_5_address1 { O 1 vector } phiQ_Z_5_ce1 { O 1 bit } phiQ_Z_5_q1 { I 64 vector } } \
+    ports { A24_5_address0 { O 1 vector } A24_5_ce0 { O 1 bit } A24_5_q0 { I 64 vector } A24_5_address1 { O 1 vector } A24_5_ce1 { O 1 bit } A24_5_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_5'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_5'"
 }
 }
 
@@ -287,17 +282,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4417 \
-    name phiQ_Z_6 \
+    id 2234 \
+    name A24_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_6 \
+    corename A24_6 \
     op interface \
-    ports { phiQ_Z_6_address0 { O 1 vector } phiQ_Z_6_ce0 { O 1 bit } phiQ_Z_6_q0 { I 64 vector } phiQ_Z_6_address1 { O 1 vector } phiQ_Z_6_ce1 { O 1 bit } phiQ_Z_6_q1 { I 64 vector } } \
+    ports { A24_6_address0 { O 1 vector } A24_6_ce0 { O 1 bit } A24_6_q0 { I 64 vector } A24_6_address1 { O 1 vector } A24_6_ce1 { O 1 bit } A24_6_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_6'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_6'"
 }
 }
 
@@ -306,17 +301,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4418 \
-    name phiQ_Z_7 \
+    id 2235 \
+    name A24_7 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename phiQ_Z_7 \
+    corename A24_7 \
     op interface \
-    ports { phiQ_Z_7_address0 { O 1 vector } phiQ_Z_7_ce0 { O 1 bit } phiQ_Z_7_q0 { I 64 vector } phiQ_Z_7_address1 { O 1 vector } phiQ_Z_7_ce1 { O 1 bit } phiQ_Z_7_q1 { I 64 vector } } \
+    ports { A24_7_address0 { O 1 vector } A24_7_ce0 { O 1 bit } A24_7_q0 { I 64 vector } A24_7_address1 { O 1 vector } A24_7_ce1 { O 1 bit } A24_7_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiQ_Z_7'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24_7'"
 }
 }
 
@@ -325,17 +320,36 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4419 \
-    name c \
+    id 2236 \
+    name c_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename c \
+    corename c_0 \
     op interface \
-    ports { c_address0 { O 4 vector } c_ce0 { O 1 bit } c_we0 { O 1 bit } c_d0 { O 64 vector } c_q0 { I 64 vector } } \
+    ports { c_0_address0 { O 3 vector } c_0_ce0 { O 1 bit } c_0_we0 { O 1 bit } c_0_d0 { O 64 vector } c_0_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 2237 \
+    name c_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename c_1 \
+    op interface \
+    ports { c_1_address0 { O 3 vector } c_1_ce0 { O 1 bit } c_1_we0 { O 1 bit } c_1_d0 { O 64 vector } c_1_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c_1'"
 }
 }
 

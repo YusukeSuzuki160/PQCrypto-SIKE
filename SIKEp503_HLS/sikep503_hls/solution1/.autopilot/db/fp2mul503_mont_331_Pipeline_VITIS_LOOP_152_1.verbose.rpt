@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_331_Pipeline_VITIS_LOOP_152_1'
 ================================================================
-* Date:           Wed Jul 30 17:01:51 2025
+* Date:           Wed Sep  3 15:18:50 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -100,8 +100,8 @@
     |or_ln105_fu_155_p2       |        or|   0|  0|  64|          64|          64|
     |or_ln95_fu_181_p2        |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
-    |xor_ln105_187_fu_149_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln105_188_fu_161_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_122_fu_149_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln105_123_fu_161_p2  |       xor|   0|  0|  64|          64|          64|
     |xor_ln105_fu_143_p2      |       xor|   0|  0|  64|          64|          64|
     |xor_ln155_fu_195_p2      |       xor|   0|  0|   2|           1|           2|
     +-------------------------+----------+----+---+----+------------+------------+
@@ -116,7 +116,7 @@
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_sig_allocacmp_i       |   9|          2|    5|         10|
     |borrow_reg_94            |   9|          2|    1|          2|
-    |i_234_fu_44              |   9|          2|    5|         10|
+    |i_246_fu_44              |   9|          2|    5|         10|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  45|         10|   13|         26|
     +-------------------------+----+-----------+-----+-----------+
@@ -129,7 +129,7 @@
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
     |borrow_reg_94            |  1|   0|    1|          0|
-    |i_234_fu_44              |  5|   0|    5|          0|
+    |i_246_fu_44              |  5|   0|    5|          0|
     |icmp_ln152_reg_231       |  1|   0|    1|          0|
     |zext_ln152_reg_235       |  5|   0|   64|         59|
     +-------------------------+---+----+-----+-----------+
@@ -206,11 +206,11 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.48>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_234 = alloca i32 1" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 5 'alloca' 'i_234' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 0, i5 %i_234" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 6 'store' 'store_ln150' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_246 = alloca i32 1" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 5 'alloca' 'i_246' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 0, i5 %i_246" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 6 'store' 'store_ln150' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 7 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.inc.i.i53"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%borrow = phi i1 %borrowReg, void %for.inc.i.i53.split, i1 0, void %newFuncRoot"   --->   Operation 8 'phi' 'borrow' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = load i5 %i_234" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 9 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = load i5 %i_246" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 9 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln152 = icmp_eq  i5 %i, i5 16" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 10 'icmp' 'icmp_ln152' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln152 = add i5 %i, i5 1" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 11 'add' 'add_ln152' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln152 = br i1 %icmp_ln152, void %for.inc.i.i53.split, void %_ZL10mp_subfastPKmS0_Pm.exit.exitStub" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 12 'br' 'br_ln152' <Predicate = true> <Delay = 0.00>
@@ -219,26 +219,26 @@ ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tt1_addr = getelementptr i64 %tt1,
 ST_1 : Operation 15 [2/2] (0.71ns)   --->   "%tt1_load = load i4 %tt1_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 15 'load' 'tt1_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tt2_addr = getelementptr i64 %tt2, i64 0, i64 %zext_ln152" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 16 'getelementptr' 'tt2_addr' <Predicate = (!icmp_ln152)> <Delay = 0.00>
 ST_1 : Operation 17 [2/2] (0.71ns)   --->   "%tt2_load = load i4 %tt2_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 17 'load' 'tt2_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 %add_ln152, i5 %i_234" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 18 'store' 'store_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.38>
+ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 %add_ln152, i5 %i_246" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 18 'store' 'store_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.38>
 ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln155 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %borrow_out, i1 %borrow" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 41 'write' 'write_ln155' <Predicate = (icmp_ln152)> <Delay = 0.00>
 ST_1 : Operation 42 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 42 'ret' 'ret_ln0' <Predicate = (icmp_ln152)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln150 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 19 'specpipeline' 'specpipeline_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln150 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_82" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 19 'specpipeline' 'specpipeline_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%speclooptripcount_ln150 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 20 'speclooptripcount' 'speclooptripcount_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln152 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 21 'specloopname' 'specloopname_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln152 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 21 'specloopname' 'specloopname_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
 ST_2 : Operation 22 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt1_load = load i4 %tt1_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 22 'load' 'tt1_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 23 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt2_load = load i4 %tt2_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 23 'load' 'tt2_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 24 [1/1] (1.14ns)   --->   "%tempReg = sub i64 %tt1_load, i64 %tt2_load" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 24 'sub' 'tempReg' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105 = xor i64 %tt2_load, i64 %tt1_load" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 25 'xor' 'xor_ln105' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_187 = xor i64 %tt2_load, i64 %tempReg" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 26 'xor' 'xor_ln105_187' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%or_ln105 = or i64 %xor_ln105_187, i64 %xor_ln105" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 27 'or' 'or_ln105' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_188 = xor i64 %tt1_load, i64 %or_ln105" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 28 'xor' 'xor_ln105_188' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 29 [1/1] (0.28ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_188, i32 63" [src/config.h:98->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 29 'bitselect' 'tmp' <Predicate = (!icmp_ln152)> <Delay = 0.28>
+ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_122 = xor i64 %tt2_load, i64 %tempReg" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 26 'xor' 'xor_ln105_122' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%or_ln105 = or i64 %xor_ln105_122, i64 %xor_ln105" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 27 'or' 'or_ln105' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_123 = xor i64 %tt1_load, i64 %or_ln105" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 28 'xor' 'xor_ln105_123' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.28ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_123, i32 63" [src/config.h:98->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 29 'bitselect' 'tmp' <Predicate = (!icmp_ln152)> <Delay = 0.28>
 ST_2 : Operation 30 [1/1] (1.14ns)   --->   "%sub_ln95 = sub i64 0, i64 %tempReg" [src/config.h:95->src/config.h:100->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 30 'sub' 'sub_ln95' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%or_ln95 = or i64 %tempReg, i64 %sub_ln95" [src/config.h:95->src/config.h:100->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 31 'or' 'or_ln95' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_350 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 32 'bitselect' 'tmp_350' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln155 = xor i1 %tmp_350, i1 1" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 33 'xor' 'xor_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_195 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 32 'bitselect' 'tmp_195' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln155 = xor i1 %tmp_195, i1 1" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 33 'xor' 'xor_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%and_ln155 = and i1 %borrow, i1 %xor_ln155" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 34 'and' 'and_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 35 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg = or i1 %and_ln155, i1 %tmp" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 35 'or' 'borrowReg' <Predicate = (!icmp_ln152)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln155 = zext i1 %borrow" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 36 'zext' 'zext_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00>
@@ -269,7 +269,7 @@ Port [ borrow_out]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0;
 
 <LifeTime>
 <method=bitvector/>
-i_234                   (alloca           ) [ 010]
+i_246                   (alloca           ) [ 010]
 store_ln150             (store            ) [ 000]
 br_ln0                  (br               ) [ 000]
 borrow                  (phi              ) [ 011]
@@ -288,13 +288,13 @@ tt1_load                (load             ) [ 000]
 tt2_load                (load             ) [ 000]
 tempReg                 (sub              ) [ 000]
 xor_ln105               (xor              ) [ 000]
-xor_ln105_187           (xor              ) [ 000]
+xor_ln105_122           (xor              ) [ 000]
 or_ln105                (or               ) [ 000]
-xor_ln105_188           (xor              ) [ 000]
+xor_ln105_123           (xor              ) [ 000]
 tmp                     (bitselect        ) [ 000]
 sub_ln95                (sub              ) [ 000]
 or_ln95                 (or               ) [ 000]
-tmp_350                 (bitselect        ) [ 000]
+tmp_195                 (bitselect        ) [ 000]
 xor_ln155               (xor              ) [ 000]
 and_ln155               (and              ) [ 000]
 borrowReg               (or               ) [ 011]
@@ -435,7 +435,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_82"/></StgValue>
 </bind>
 </comp>
 
@@ -471,7 +471,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_39"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -511,14 +511,14 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="44" class="1004" name="i_234_fu_44">
+<comp id="44" class="1004" name="i_246_fu_44">
 <pin_list>
 <pin id="45" dir="0" index="0" bw="1" slack="0"/>
 <pin id="46" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="i_234/1 "/>
+<opset="i_246/1 "/>
 </bind>
 </comp>
 
@@ -731,7 +731,7 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="149" class="1004" name="xor_ln105_187_fu_149">
+<comp id="149" class="1004" name="xor_ln105_122_fu_149">
 <pin_list>
 <pin id="150" dir="0" index="0" bw="64" slack="0"/>
 <pin id="151" dir="0" index="1" bw="64" slack="0"/>
@@ -739,7 +739,7 @@ ret_ln0                 (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln105_187/2 "/>
+<opset="xor_ln105_122/2 "/>
 </bind>
 </comp>
 
@@ -755,7 +755,7 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="161" class="1004" name="xor_ln105_188_fu_161">
+<comp id="161" class="1004" name="xor_ln105_123_fu_161">
 <pin_list>
 <pin id="162" dir="0" index="0" bw="64" slack="0"/>
 <pin id="163" dir="0" index="1" bw="64" slack="0"/>
@@ -763,7 +763,7 @@ ret_ln0                 (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln105_188/2 "/>
+<opset="xor_ln105_123/2 "/>
 </bind>
 </comp>
 
@@ -804,7 +804,7 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="187" class="1004" name="tmp_350_fu_187">
+<comp id="187" class="1004" name="tmp_195_fu_187">
 <pin_list>
 <pin id="188" dir="0" index="0" bw="1" slack="0"/>
 <pin id="189" dir="0" index="1" bw="64" slack="0"/>
@@ -813,7 +813,7 @@ ret_ln0                 (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_350/2 "/>
+<opset="tmp_195/2 "/>
 </bind>
 </comp>
 
@@ -876,13 +876,13 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="224" class="1005" name="i_234_reg_224">
+<comp id="224" class="1005" name="i_246_reg_224">
 <pin_list>
 <pin id="225" dir="0" index="0" bw="5" slack="0"/>
 <pin id="226" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_234 "/>
+<opset="i_246 "/>
 </bind>
 </comp>
 
@@ -1103,13 +1103,13 @@ ret_ln0                 (ret              ) [ 000]
 	State 2
 		tempReg : 1
 		xor_ln105 : 1
-		xor_ln105_187 : 2
+		xor_ln105_122 : 2
 		or_ln105 : 2
-		xor_ln105_188 : 2
+		xor_ln105_123 : 2
 		tmp : 2
 		sub_ln95 : 2
 		or_ln95 : 3
-		tmp_350 : 3
+		tmp_195 : 3
 		xor_ln155 : 4
 		and_ln155 : 4
 		borrowReg : 4
@@ -1130,8 +1130,8 @@ ret_ln0                 (ret              ) [ 000]
 |          |     sub_ln155_fu_217    |    0    |    71   |
 |----------|-------------------------|---------|---------|
 |          |     xor_ln105_fu_143    |    0    |    64   |
-|    xor   |   xor_ln105_187_fu_149  |    0    |    64   |
-|          |   xor_ln105_188_fu_161  |    0    |    64   |
+|    xor   |   xor_ln105_122_fu_149  |    0    |    64   |
+|          |   xor_ln105_123_fu_161  |    0    |    64   |
 |          |     xor_ln155_fu_195    |    0    |    2    |
 |----------|-------------------------|---------|---------|
 |          |     or_ln105_fu_155     |    0    |    64   |
@@ -1150,7 +1150,7 @@ ret_ln0                 (ret              ) [ 000]
 |          |    zext_ln155_fu_213    |    0    |    0    |
 |----------|-------------------------|---------|---------|
 | bitselect|        tmp_fu_167       |    0    |    0    |
-|          |      tmp_350_fu_187     |    0    |    0    |
+|          |      tmp_195_fu_187     |    0    |    0    |
 |----------|-------------------------|---------|---------|
 |   Total  |                         |    0    |   563   |
 |----------|-------------------------|---------|---------|
@@ -1164,7 +1164,7 @@ N/A
 +------------------+--------+
 | borrowReg_reg_250|    1   |
 |   borrow_reg_94  |    1   |
-|   i_234_reg_224  |    5   |
+|   i_246_reg_224  |    5   |
 |icmp_ln152_reg_231|    1   |
 | tt1_addr_reg_240 |    4   |
 | tt2_addr_reg_245 |    4   |

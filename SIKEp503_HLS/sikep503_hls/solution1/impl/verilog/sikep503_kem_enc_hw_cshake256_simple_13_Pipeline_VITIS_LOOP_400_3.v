@@ -129,7 +129,7 @@ wire   [4:0] sub_ln414_fu_252_p2;
 wire   [4:0] add_ln414_fu_258_p2;
 wire   [7:0] tmp_s_fu_277_p3;
 wire   [0:0] icmp_ln414_fu_284_p2;
-wire   [7:0] or_ln61_fu_306_p3;
+wire   [7:0] or_ln6_fu_306_p3;
 wire   [0:0] icmp_ln414_5_fu_313_p2;
 wire   [7:0] or_ln410_4_fu_335_p3;
 wire   [0:0] icmp_ln414_6_fu_342_p2;
@@ -139,18 +139,18 @@ wire   [0:0] icmp_ln414_7_fu_371_p2;
 wire   [7:0] select_ln411_cast_fu_383_p3;
 wire   [7:0] or_ln410_6_fu_399_p3;
 wire   [0:0] icmp_ln414_8_fu_406_p2;
-wire   [7:0] v_183_fu_412_p3;
+wire   [7:0] v_97_fu_412_p3;
 wire   [6:0] trunc_ln418_fu_426_p1;
 wire   [0:0] icmp_ln418_fu_420_p2;
-wire   [7:0] or_ln62_fu_430_p3;
-wire   [7:0] v_240_fu_438_p3;
-wire   [7:0] v_181_fu_391_p3;
-wire   [7:0] v_178_fu_356_p3;
-wire   [7:0] v_176_fu_348_p3;
-wire   [7:0] v_174_fu_327_p3;
-wire   [7:0] v_172_fu_319_p3;
-wire   [7:0] v_170_fu_298_p3;
-wire   [7:0] v_168_fu_290_p3;
+wire   [7:0] or_ln7_fu_430_p3;
+wire   [7:0] v_134_fu_438_p3;
+wire   [7:0] v_95_fu_391_p3;
+wire   [7:0] v_92_fu_356_p3;
+wire   [7:0] v_90_fu_348_p3;
+wire   [7:0] v_88_fu_327_p3;
+wire   [7:0] v_86_fu_319_p3;
+wire   [7:0] v_84_fu_298_p3;
+wire   [7:0] v_82_fu_290_p3;
 wire   [63:0] word_fu_446_p9;
 reg    ap_done_reg;
 wire    ap_continue_int;
@@ -405,7 +405,7 @@ assign ap_ready = ap_ready_sig;
 
 assign icmp_ln400_fu_203_p2 = ((ap_sig_allocacmp_lane_3 == 5'd17) ? 1'b1 : 1'b0);
 
-assign icmp_ln414_5_fu_313_p2 = ((or_ln61_fu_306_p3 < 8'd126) ? 1'b1 : 1'b0);
+assign icmp_ln414_5_fu_313_p2 = ((or_ln6_fu_306_p3 < 8'd126) ? 1'b1 : 1'b0);
 
 assign icmp_ln414_6_fu_342_p2 = ((or_ln410_4_fu_335_p3 < 8'd126) ? 1'b1 : 1'b0);
 
@@ -457,9 +457,9 @@ assign or_ln410_5_fu_364_p3 = {{lane_3_reg_480}, {3'd6}};
 
 assign or_ln410_6_fu_399_p3 = {{lane_3_reg_480}, {3'd7}};
 
-assign or_ln61_fu_306_p3 = {{lane_3_reg_480}, {3'd2}};
+assign or_ln6_fu_306_p3 = {{lane_3_reg_480}, {3'd2}};
 
-assign or_ln62_fu_430_p3 = {{1'd1}, {trunc_ln418_fu_426_p1}};
+assign or_ln7_fu_430_p3 = {{1'd1}, {trunc_ln418_fu_426_p1}};
 
 assign or_ln_fu_238_p3 = {{trunc_ln414_fu_234_p1}, {3'd1}};
 
@@ -487,27 +487,27 @@ assign tmp_s_fu_277_p3 = {{lane_3_reg_480}, {3'd0}};
 
 assign trunc_ln414_fu_234_p1 = ap_sig_allocacmp_lane_3[1:0];
 
-assign trunc_ln418_fu_426_p1 = v_183_fu_412_p3[6:0];
+assign trunc_ln418_fu_426_p1 = v_97_fu_412_p3[6:0];
 
-assign v_168_fu_290_p3 = ((icmp_ln414_fu_284_p2[0:0] == 1'b1) ? in_0_q1 : 8'd0);
+assign v_134_fu_438_p3 = ((icmp_ln418_fu_420_p2[0:0] == 1'b1) ? or_ln7_fu_430_p3 : v_97_fu_412_p3);
 
-assign v_170_fu_298_p3 = ((icmp_ln414_fu_284_p2[0:0] == 1'b1) ? in_1_q1 : 8'd0);
+assign v_82_fu_290_p3 = ((icmp_ln414_fu_284_p2[0:0] == 1'b1) ? in_0_q1 : 8'd0);
 
-assign v_172_fu_319_p3 = ((icmp_ln414_5_fu_313_p2[0:0] == 1'b1) ? in_2_q1 : 8'd0);
+assign v_84_fu_298_p3 = ((icmp_ln414_fu_284_p2[0:0] == 1'b1) ? in_1_q1 : 8'd0);
 
-assign v_174_fu_327_p3 = ((icmp_ln414_5_fu_313_p2[0:0] == 1'b1) ? in_3_q1 : 8'd0);
+assign v_86_fu_319_p3 = ((icmp_ln414_5_fu_313_p2[0:0] == 1'b1) ? in_2_q1 : 8'd0);
 
-assign v_176_fu_348_p3 = ((icmp_ln414_6_fu_342_p2[0:0] == 1'b1) ? in_0_q0 : 8'd0);
+assign v_88_fu_327_p3 = ((icmp_ln414_5_fu_313_p2[0:0] == 1'b1) ? in_3_q1 : 8'd0);
 
-assign v_178_fu_356_p3 = ((icmp_ln414_6_fu_342_p2[0:0] == 1'b1) ? in_1_q0 : 8'd0);
+assign v_90_fu_348_p3 = ((icmp_ln414_6_fu_342_p2[0:0] == 1'b1) ? in_0_q0 : 8'd0);
 
-assign v_181_fu_391_p3 = ((icmp_ln414_7_fu_371_p2[0:0] == 1'b1) ? in_2_q0 : select_ln411_cast_fu_383_p3);
+assign v_92_fu_356_p3 = ((icmp_ln414_6_fu_342_p2[0:0] == 1'b1) ? in_1_q0 : 8'd0);
 
-assign v_183_fu_412_p3 = ((icmp_ln414_8_fu_406_p2[0:0] == 1'b1) ? in_3_q0 : 8'd0);
+assign v_95_fu_391_p3 = ((icmp_ln414_7_fu_371_p2[0:0] == 1'b1) ? in_2_q0 : select_ln411_cast_fu_383_p3);
 
-assign v_240_fu_438_p3 = ((icmp_ln418_fu_420_p2[0:0] == 1'b1) ? or_ln62_fu_430_p3 : v_183_fu_412_p3);
+assign v_97_fu_412_p3 = ((icmp_ln414_8_fu_406_p2[0:0] == 1'b1) ? in_3_q0 : 8'd0);
 
-assign word_fu_446_p9 = {{{{{{{{v_240_fu_438_p3}, {v_181_fu_391_p3}}, {v_178_fu_356_p3}}, {v_176_fu_348_p3}}, {v_174_fu_327_p3}}, {v_172_fu_319_p3}}, {v_170_fu_298_p3}}, {v_168_fu_290_p3}};
+assign word_fu_446_p9 = {{{{{{{{v_134_fu_438_p3}, {v_95_fu_391_p3}}, {v_92_fu_356_p3}}, {v_90_fu_348_p3}}, {v_88_fu_327_p3}}, {v_86_fu_319_p3}}, {v_84_fu_298_p3}}, {v_82_fu_290_p3}};
 
 assign xor_ln423_fu_466_p2 = (word_fu_446_p9 ^ s_q1);
 

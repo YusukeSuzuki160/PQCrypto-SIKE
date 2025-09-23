@@ -1,0 +1,388 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2_decode_57'
+================================================================
+* Date:           Wed Sep  3 14:24:33 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      498|      710|  4.980 us|  7.100 us|  498|  710|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 28
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.95>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%x_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %x"   --->   Operation 29 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [2/2] (1.95ns)   --->   "%call_ln0 = call void @fp2_decode.57_Pipeline_VITIS_LOOP_53_1, i9 %x_read, i64 %PKB"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 1.95> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.47>
+ST_2 : Operation 31 [1/2] (1.47ns)   --->   "%call_ln0 = call void @fp2_decode.57_Pipeline_VITIS_LOOP_53_1, i9 %x_read, i64 %PKB"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 1.47> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 1.14>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%enc_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %enc"   --->   Operation 32 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [2/2] (1.14ns)   --->   "%call_ln0 = call void @fp2_decode.57_Pipeline_VITIS_LOOP_55_2, i64 %enc_read, i8 %gmem, i9 %x_read, i64 %PKB"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 1.14> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2_decode.57_Pipeline_VITIS_LOOP_55_2, i64 %enc_read, i8 %gmem, i9 %x_read, i64 %PKB"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 6.07>
+ST_5 : Operation 35 [10/10] (6.07ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 35 'call' 'call_ret21' <Predicate = true> <Delay = 6.07> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.23>
+ST_6 : Operation 36 [9/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 36 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.23>
+ST_7 : Operation 37 [8/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 37 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 7.23>
+ST_8 : Operation 38 [7/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 38 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 7.23>
+ST_9 : Operation 39 [6/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 39 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 7.23>
+ST_10 : Operation 40 [5/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 40 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 7.23>
+ST_11 : Operation 41 [4/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 41 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 7.23>
+ST_12 : Operation 42 [3/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 42 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 7.23>
+ST_13 : Operation 43 [2/10] (7.23ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 43 'call' 'call_ret21' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 4.34>
+ST_14 : Operation 44 [1/10] (4.34ns)   --->   "%call_ret21 = call i1024 @mp_mul.121, i64 %PKB, i9 %x_read, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 44 'call' 'call_ret21' <Predicate = true> <Delay = 4.34> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 45 [1/1] (0.00ns)   --->   "%temp = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 45 'extractvalue' 'temp' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 46 [1/1] (0.00ns)   --->   "%temp_597 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 46 'extractvalue' 'temp_597' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 47 [1/1] (0.00ns)   --->   "%temp_598 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 47 'extractvalue' 'temp_598' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 48 [1/1] (0.00ns)   --->   "%temp_599 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 48 'extractvalue' 'temp_599' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 49 [1/1] (0.00ns)   --->   "%temp_600 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 49 'extractvalue' 'temp_600' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 50 [1/1] (0.00ns)   --->   "%temp_601 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 50 'extractvalue' 'temp_601' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 51 [1/1] (0.00ns)   --->   "%temp_602 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 51 'extractvalue' 'temp_602' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 52 [1/1] (0.00ns)   --->   "%temp_603 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 52 'extractvalue' 'temp_603' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 53 [1/1] (0.00ns)   --->   "%temp_604 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 53 'extractvalue' 'temp_604' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 54 [1/1] (0.00ns)   --->   "%temp_605 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 54 'extractvalue' 'temp_605' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 55 [1/1] (0.00ns)   --->   "%temp_606 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 55 'extractvalue' 'temp_606' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 56 [1/1] (0.00ns)   --->   "%temp_607 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 56 'extractvalue' 'temp_607' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 57 [1/1] (0.00ns)   --->   "%temp_608 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 57 'extractvalue' 'temp_608' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 58 [1/1] (0.00ns)   --->   "%temp_609 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 58 'extractvalue' 'temp_609' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 59 [1/1] (0.00ns)   --->   "%temp_610 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 59 'extractvalue' 'temp_610' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 60 [1/1] (0.00ns)   --->   "%temp_611 = extractvalue i1024 %call_ret21" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 60 'extractvalue' 'temp_611' <Predicate = true> <Delay = 0.00>
+
+State 15 <SV = 14> <Delay = 1.42>
+ST_15 : Operation 61 [2/2] (1.42ns)   --->   "%call_ln59 = call void @rdc_mont.111, i64 %temp, i64 %temp_597, i64 %temp_598, i64 %temp_599, i64 %temp_600, i64 %temp_601, i64 %temp_602, i64 %temp_603, i64 %temp_604, i64 %temp_605, i64 %temp_606, i64 %temp_607, i64 %temp_608, i64 %temp_609, i64 %temp_610, i64 %temp_611, i64 %PKB, i9 %x_read, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 61 'call' 'call_ln59' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 0.70>
+ST_16 : Operation 62 [1/2] (0.70ns)   --->   "%call_ln59 = call void @rdc_mont.111, i64 %temp, i64 %temp_597, i64 %temp_598, i64 %temp_599, i64 %temp_600, i64 %temp_601, i64 %temp_602, i64 %temp_603, i64 %temp_604, i64 %temp_605, i64 %temp_606, i64 %temp_607, i64 %temp_608, i64 %temp_609, i64 %temp_610, i64 %temp_611, i64 %PKB, i9 %x_read, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60]   --->   Operation 62 'call' 'call_ln59' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 6.78>
+ST_17 : Operation 63 [1/1] (0.71ns)   --->   "%add_ln58_1 = add i9 %x_read, i9 64" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 63 'add' 'add_ln58_1' <Predicate = true> <Delay = 0.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 64 [10/10] (6.07ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 64 'call' 'call_ret' <Predicate = true> <Delay = 6.07> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 7.23>
+ST_18 : Operation 65 [9/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 65 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 7.23>
+ST_19 : Operation 66 [8/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 66 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 7.23>
+ST_20 : Operation 67 [7/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 67 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 7.23>
+ST_21 : Operation 68 [6/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 68 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 7.23>
+ST_22 : Operation 69 [5/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 69 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 7.23>
+ST_23 : Operation 70 [4/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 70 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 7.23>
+ST_24 : Operation 71 [3/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 71 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 7.23>
+ST_25 : Operation 72 [2/10] (7.23ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 72 'call' 'call_ret' <Predicate = true> <Delay = 7.23> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 4.34>
+ST_26 : Operation 73 [1/10] (4.34ns)   --->   "%call_ret = call i1024 @mp_mul.121, i64 %PKB, i9 %add_ln58_1, i64 5947461595517747487, i64 11207248842288190137, i64 11795883816894656890, i64 6612826553991653612, i64 11408068157014623267, i64 13801731633100576405, i64 5109635575176285622, i64 17852757024708465" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 73 'call' 'call_ret' <Predicate = true> <Delay = 4.34> <CoreType = "Generic">   --->   Generic Core
+ST_26 : Operation 74 [1/1] (0.00ns)   --->   "%temp_612 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 74 'extractvalue' 'temp_612' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 75 [1/1] (0.00ns)   --->   "%temp_613 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 75 'extractvalue' 'temp_613' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 76 [1/1] (0.00ns)   --->   "%temp_614 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 76 'extractvalue' 'temp_614' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 77 [1/1] (0.00ns)   --->   "%temp_615 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 77 'extractvalue' 'temp_615' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 78 [1/1] (0.00ns)   --->   "%temp_616 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 78 'extractvalue' 'temp_616' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 79 [1/1] (0.00ns)   --->   "%temp_617 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 79 'extractvalue' 'temp_617' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 80 [1/1] (0.00ns)   --->   "%temp_618 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 80 'extractvalue' 'temp_618' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 81 [1/1] (0.00ns)   --->   "%temp_619 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 81 'extractvalue' 'temp_619' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 82 [1/1] (0.00ns)   --->   "%temp_620 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 82 'extractvalue' 'temp_620' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 83 [1/1] (0.00ns)   --->   "%temp_621 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 83 'extractvalue' 'temp_621' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 84 [1/1] (0.00ns)   --->   "%temp_622 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 84 'extractvalue' 'temp_622' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 85 [1/1] (0.00ns)   --->   "%temp_623 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 85 'extractvalue' 'temp_623' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 86 [1/1] (0.00ns)   --->   "%temp_624 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 86 'extractvalue' 'temp_624' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 87 [1/1] (0.00ns)   --->   "%temp_625 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 87 'extractvalue' 'temp_625' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 88 [1/1] (0.00ns)   --->   "%temp_626 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 88 'extractvalue' 'temp_626' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 89 [1/1] (0.00ns)   --->   "%temp_627 = extractvalue i1024 %call_ret" [src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 89 'extractvalue' 'temp_627' <Predicate = true> <Delay = 0.00>
+
+State 27 <SV = 26> <Delay = 1.42>
+ST_27 : Operation 90 [2/2] (1.42ns)   --->   "%call_ln59 = call void @rdc_mont.111, i64 %temp_612, i64 %temp_613, i64 %temp_614, i64 %temp_615, i64 %temp_616, i64 %temp_617, i64 %temp_618, i64 %temp_619, i64 %temp_620, i64 %temp_621, i64 %temp_622, i64 %temp_623, i64 %temp_624, i64 %temp_625, i64 %temp_626, i64 %temp_627, i64 %PKB, i9 %add_ln58_1, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 90 'call' 'call_ln59' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+
+State 28 <SV = 27> <Delay = 0.70>
+ST_28 : Operation 91 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_14, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_30, void @empty_16, void @empty_15, i32 16, i32 16, i32 16, i32 16, void @empty_15, void @empty_15, i32 4294967295, i32 0, i32 0"   --->   Operation 91 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 92 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 92 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 93 [1/2] (0.70ns)   --->   "%call_ln59 = call void @rdc_mont.111, i64 %temp_612, i64 %temp_613, i64 %temp_614, i64 %temp_615, i64 %temp_616, i64 %temp_617, i64 %temp_618, i64 %temp_619, i64 %temp_620, i64 %temp_621, i64 %temp_622, i64 %temp_623, i64 %temp_624, i64 %temp_625, i64 %temp_626, i64 %temp_627, i64 %PKB, i9 %add_ln58_1, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60]   --->   Operation 93 'call' 'call_ln59' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 94 [1/1] (0.00ns)   --->   "%ret_ln61 = ret" [src/sidh.cpp:61]   --->   Operation 94 'ret' 'ret_ln61' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.951ns
+The critical path consists of the following:
+	wire read operation ('x_read') on port 'x' [6]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2_decode.57_Pipeline_VITIS_LOOP_53_1' [10]  (1.951 ns)
+
+ <State 2>: 1.479ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2_decode.57_Pipeline_VITIS_LOOP_53_1' [10]  (1.479 ns)
+
+ <State 3>: 1.147ns
+The critical path consists of the following:
+	wire read operation ('enc_read') on port 'enc' [7]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2_decode.57_Pipeline_VITIS_LOOP_55_2' [11]  (1.147 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 6.070ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (6.070 ns)
+
+ <State 6>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 7>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 8>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 9>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 10>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 11>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 12>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 13>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (7.237 ns)
+
+ <State 14>: 4.349ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret21', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'mp_mul.121' [12]  (4.349 ns)
+
+ <State 15>: 1.429ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln59', src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'rdc_mont.111' [29]  (1.429 ns)
+
+ <State 16>: 0.708ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln59', src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:354->src/sidh.cpp:60) to 'rdc_mont.111' [29]  (0.708 ns)
+
+ <State 17>: 6.785ns
+The critical path consists of the following:
+	'add' operation 9 bit ('add_ln58_1', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) [30]  (0.715 ns)
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (6.070 ns)
+
+ <State 18>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 19>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 20>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 21>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 22>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 23>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 24>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 25>: 7.237ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (7.237 ns)
+
+ <State 26>: 4.349ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/fpx.cpp:58->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'mp_mul.121' [31]  (4.349 ns)
+
+ <State 27>: 1.429ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln59', src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'rdc_mont.111' [48]  (1.429 ns)
+
+ <State 28>: 0.708ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln59', src/fpx.cpp:59->src/fpx.cpp:30->src/fpx.cpp:355->src/sidh.cpp:60) to 'rdc_mont.111' [48]  (0.708 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

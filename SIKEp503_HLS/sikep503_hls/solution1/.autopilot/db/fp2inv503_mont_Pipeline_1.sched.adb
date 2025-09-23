@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>temp_15</name>
+						<name>temp_34</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -226,7 +226,7 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>exitcond_i16</name>
+						<name>exitcond_i12</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -269,7 +269,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>empty_185</name>
+						<name>empty_195</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -398,7 +398,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>temp_15_addr</name>
+						<name>temp_34_addr</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -442,7 +442,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>temp_15_addr_write_ln0</name>
+						<name>temp_34_addr_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -877,7 +877,7 @@
 				<Obj>
 					<type>3</type>
 					<id>20</id>
-					<name>for.inc.i.i.preheader.exitStub</name>
+					<name>_Z13fpsqr503_montPKmPm.exit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

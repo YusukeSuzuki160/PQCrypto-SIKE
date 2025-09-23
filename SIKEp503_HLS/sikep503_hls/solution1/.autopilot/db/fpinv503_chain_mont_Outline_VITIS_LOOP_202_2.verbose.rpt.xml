@@ -1,0 +1,209 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fpinv503_chain_mont_Outline_VITIS_LOOP_202_2'" level="0">
+<item name = "Date">Fri Sep 12 14:17:01 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.854 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1113, 1961, 11.130 us, 19.610 us, 1113, 1961, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_fpsqr503_mont_fu_98">fpsqr503_mont, 136, 242, 1.360 us, 2.420 us, 136, 242, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_202_2">1112, 1960, 139 ~ 245, -, -, 8, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 24, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 179, -</column>
+<column name="Register">-, -, 1033, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_50_fu_142_p2">+, 0, 0, 12, 4, 1</column>
+<column name="icmp_ln202_fu_136_p2">icmp, 0, 0, 12, 4, 5</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">26, 5, 1, 5</column>
+<column name="i_16_fu_46">9, 2, 4, 8</column>
+<column name="tt_1_o">9, 2, 64, 128</column>
+<column name="tt_1_o_ap_vld">9, 2, 1, 2</column>
+<column name="tt_2_o">9, 2, 64, 128</column>
+<column name="tt_2_o_ap_vld">9, 2, 1, 2</column>
+<column name="tt_3_o">9, 2, 64, 128</column>
+<column name="tt_3_o_ap_vld">9, 2, 1, 2</column>
+<column name="tt_4_o">9, 2, 64, 128</column>
+<column name="tt_4_o_ap_vld">9, 2, 1, 2</column>
+<column name="tt_5_o">9, 2, 64, 128</column>
+<column name="tt_5_o_ap_vld">9, 2, 1, 2</column>
+<column name="tt_6_o">9, 2, 64, 128</column>
+<column name="tt_6_o_ap_vld">9, 2, 1, 2</column>
+<column name="tt_7_o">9, 2, 64, 128</column>
+<column name="tt_7_o_ap_vld">9, 2, 1, 2</column>
+<column name="tt_o">9, 2, 64, 128</column>
+<column name="tt_o_ap_vld">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="grp_fpsqr503_mont_fu_98_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_16_fu_46">4, 0, 4, 0</column>
+<column name="tt_1_o_reg">64, 0, 64, 0</column>
+<column name="tt_1_read_reg_168">64, 0, 64, 0</column>
+<column name="tt_2_o_reg">64, 0, 64, 0</column>
+<column name="tt_2_read_reg_173">64, 0, 64, 0</column>
+<column name="tt_3_o_reg">64, 0, 64, 0</column>
+<column name="tt_3_read_reg_178">64, 0, 64, 0</column>
+<column name="tt_4_o_reg">64, 0, 64, 0</column>
+<column name="tt_4_read_reg_183">64, 0, 64, 0</column>
+<column name="tt_5_o_reg">64, 0, 64, 0</column>
+<column name="tt_5_read_reg_188">64, 0, 64, 0</column>
+<column name="tt_6_o_reg">64, 0, 64, 0</column>
+<column name="tt_6_read_reg_193">64, 0, 64, 0</column>
+<column name="tt_7_o_reg">64, 0, 64, 0</column>
+<column name="tt_7_read_reg_198">64, 0, 64, 0</column>
+<column name="tt_o_reg">64, 0, 64, 0</column>
+<column name="tt_read_reg_163">64, 0, 64, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din1">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din2">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din3">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din4">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din5">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din6">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din7">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din8">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din9">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din9_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din9_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din10">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din10_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din10_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din11">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din11_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din11_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din12">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din12_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din12_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din13">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din13_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din13_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din14">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din14_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din14_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din15">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din15_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din15_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din16">out, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din16_o">in, 64, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_din16_o_ap_vld">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_start">out, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_ready">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_done">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="grp_fpsqr503_mont_fu_1287_p_idle">in, 1, ap_ctrl_hs, fpinv503_chain_mont_Outline_VITIS_LOOP_202_2, return value</column>
+<column name="tt_i">in, 64, ap_ovld, tt, pointer</column>
+<column name="tt_o">out, 64, ap_ovld, tt, pointer</column>
+<column name="tt_o_ap_vld">out, 1, ap_ovld, tt, pointer</column>
+<column name="tt_1_i">in, 64, ap_ovld, tt_1, pointer</column>
+<column name="tt_1_o">out, 64, ap_ovld, tt_1, pointer</column>
+<column name="tt_1_o_ap_vld">out, 1, ap_ovld, tt_1, pointer</column>
+<column name="tt_2_i">in, 64, ap_ovld, tt_2, pointer</column>
+<column name="tt_2_o">out, 64, ap_ovld, tt_2, pointer</column>
+<column name="tt_2_o_ap_vld">out, 1, ap_ovld, tt_2, pointer</column>
+<column name="tt_3_i">in, 64, ap_ovld, tt_3, pointer</column>
+<column name="tt_3_o">out, 64, ap_ovld, tt_3, pointer</column>
+<column name="tt_3_o_ap_vld">out, 1, ap_ovld, tt_3, pointer</column>
+<column name="tt_4_i">in, 64, ap_ovld, tt_4, pointer</column>
+<column name="tt_4_o">out, 64, ap_ovld, tt_4, pointer</column>
+<column name="tt_4_o_ap_vld">out, 1, ap_ovld, tt_4, pointer</column>
+<column name="tt_5_i">in, 64, ap_ovld, tt_5, pointer</column>
+<column name="tt_5_o">out, 64, ap_ovld, tt_5, pointer</column>
+<column name="tt_5_o_ap_vld">out, 1, ap_ovld, tt_5, pointer</column>
+<column name="tt_6_i">in, 64, ap_ovld, tt_6, pointer</column>
+<column name="tt_6_o">out, 64, ap_ovld, tt_6, pointer</column>
+<column name="tt_6_o_ap_vld">out, 1, ap_ovld, tt_6, pointer</column>
+<column name="tt_7_i">in, 64, ap_ovld, tt_7, pointer</column>
+<column name="tt_7_o">out, 64, ap_ovld, tt_7, pointer</column>
+<column name="tt_7_o_ap_vld">out, 1, ap_ovld, tt_7, pointer</column>
+</table>
+</item>
+</section>
+</profile>

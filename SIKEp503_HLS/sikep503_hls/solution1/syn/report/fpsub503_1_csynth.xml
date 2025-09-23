@@ -22,27 +22,27 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>23</Best-caseLatency>
-<Average-caseLatency>23</Average-caseLatency>
-<Worst-caseLatency>23</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.230 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.230 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.230 us</Worst-caseRealTimeLatency>
-<Interval-min>23</Interval-min>
-<Interval-max>23</Interval-max>
+<Best-caseLatency>39</Best-caseLatency>
+<Average-caseLatency>39</Average-caseLatency>
+<Worst-caseLatency>39</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.390 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.390 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.390 us</Worst-caseRealTimeLatency>
+<Interval-min>39</Interval-min>
+<Interval-max>39</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>src/generic/fp_generic.cpp:59</SourceLocation>
+<SourceLocation>src/generic/fp_generic.cpp:72</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>161</FF>
-<LUT>1459</LUT>
+<FF>156</FF>
+<LUT>1456</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
@@ -156,39 +156,6 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>b_address0</name>
-<Object>b</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>3</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>b_ce0</name>
-<Object>b</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>b_q0</name>
-<Object>b</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>c_address0</name>
 <Object>c</Object>
 <Type>array</Type>
@@ -196,7 +163,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>3</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -233,29 +200,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_address1</name>
-<Object>c</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>c_ce1</name>
-<Object>c</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>c_q1</name>
+<name>c_q0</name>
 <Object>c</Object>
 <Type>array</Type>
 <Scope></Scope>
@@ -263,17 +208,6 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>c_offset</name>
-<Object>c_offset</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

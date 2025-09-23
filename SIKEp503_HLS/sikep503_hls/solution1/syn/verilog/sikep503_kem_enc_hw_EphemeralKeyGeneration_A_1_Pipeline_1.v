@@ -13,6 +13,10 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_1 (
         ap_done,
         ap_idle,
         ap_ready,
+        A24plus_2_address0,
+        A24plus_2_ce0,
+        A24plus_2_we0,
+        A24plus_2_d0,
         A24plus_address0,
         A24plus_ce0,
         A24plus_we0,
@@ -27,7 +31,11 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [3:0] A24plus_address0;
+output  [2:0] A24plus_2_address0;
+output   A24plus_2_ce0;
+output   A24plus_2_we0;
+output  [63:0] A24plus_2_d0;
+output  [2:0] A24plus_address0;
 output   A24plus_ce0;
 output   A24plus_we0;
 output  [63:0] A24plus_d0;
@@ -37,18 +45,22 @@ reg ap_idle;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_block_state1_pp0_stage0_iter0;
-wire   [0:0] exitcond26434_fu_50_p2;
+wire   [0:0] exitcond26434_fu_82_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [63:0] p_cast_cast_fu_66_p1;
-reg   [4:0] empty_fu_24;
-wire   [4:0] empty_415_fu_56_p2;
+wire   [63:0] p_cast8_fu_98_p1;
+reg   [4:0] empty_fu_42;
+wire   [4:0] empty_403_fu_88_p2;
 wire    ap_loop_init;
 reg   [4:0] ap_sig_allocacmp_p_load;
+reg    A24plus_2_we0_local;
+wire   [0:0] icmp_fu_114_p2;
+reg    A24plus_2_ce0_local;
 reg    A24plus_we0_local;
 reg    A24plus_ce0_local;
-wire   [3:0] empty_416_fu_62_p1;
+wire   [2:0] empty_404_fu_94_p1;
+wire   [1:0] tmp_fu_104_p4;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -62,7 +74,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 1'd1;
-#0 empty_fu_24 = 5'd0;
+#0 empty_fu_42 = 5'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -103,11 +115,27 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((exitcond26434_fu_50_p2 == 1'd0)) begin
-            empty_fu_24 <= empty_415_fu_56_p2;
+        if ((exitcond26434_fu_82_p2 == 1'd0)) begin
+            empty_fu_42 <= empty_403_fu_88_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            empty_fu_24 <= 5'd0;
+            empty_fu_42 <= 5'd0;
         end
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        A24plus_2_ce0_local = 1'b1;
+    end else begin
+        A24plus_2_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((icmp_fu_114_p2 == 1'd0) & (exitcond26434_fu_82_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        A24plus_2_we0_local = 1'b1;
+    end else begin
+        A24plus_2_we0_local = 1'b0;
     end
 end
 
@@ -120,7 +148,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond26434_fu_50_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((icmp_fu_114_p2 == 1'd1) & (exitcond26434_fu_82_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         A24plus_we0_local = 1'b1;
     end else begin
         A24plus_we0_local = 1'b0;
@@ -136,7 +164,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond26434_fu_50_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((exitcond26434_fu_82_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -152,7 +180,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_start_int == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((1'b1 == ap_CS_fsm_state1) & (ap_start_int == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -171,7 +199,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_p_load = 5'd0;
     end else begin
-        ap_sig_allocacmp_p_load = empty_fu_24;
+        ap_sig_allocacmp_p_load = empty_fu_42;
     end
 end
 
@@ -186,7 +214,15 @@ always @ (*) begin
     endcase
 end
 
-assign A24plus_address0 = p_cast_cast_fu_66_p1;
+assign A24plus_2_address0 = p_cast8_fu_98_p1;
+
+assign A24plus_2_ce0 = A24plus_2_ce0_local;
+
+assign A24plus_2_d0 = 64'd0;
+
+assign A24plus_2_we0 = A24plus_2_we0_local;
+
+assign A24plus_address0 = p_cast8_fu_98_p1;
 
 assign A24plus_ce0 = A24plus_ce0_local;
 
@@ -206,12 +242,16 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign empty_415_fu_56_p2 = (ap_sig_allocacmp_p_load + 5'd1);
+assign empty_403_fu_88_p2 = (ap_sig_allocacmp_p_load + 5'd1);
 
-assign empty_416_fu_62_p1 = ap_sig_allocacmp_p_load[3:0];
+assign empty_404_fu_94_p1 = ap_sig_allocacmp_p_load[2:0];
 
-assign exitcond26434_fu_50_p2 = ((ap_sig_allocacmp_p_load == 5'd16) ? 1'b1 : 1'b0);
+assign exitcond26434_fu_82_p2 = ((ap_sig_allocacmp_p_load == 5'd16) ? 1'b1 : 1'b0);
 
-assign p_cast_cast_fu_66_p1 = empty_416_fu_62_p1;
+assign icmp_fu_114_p2 = ((tmp_fu_104_p4 == 2'd0) ? 1'b1 : 1'b0);
+
+assign p_cast8_fu_98_p1 = empty_404_fu_94_p1;
+
+assign tmp_fu_104_p4 = {{ap_sig_allocacmp_p_load[4:3]}};
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_1

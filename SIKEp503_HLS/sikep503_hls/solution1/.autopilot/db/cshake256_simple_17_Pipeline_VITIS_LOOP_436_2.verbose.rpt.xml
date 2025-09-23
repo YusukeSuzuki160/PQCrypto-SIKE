@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_17_Pipeline_VITIS_LOOP_436_2'" level="0">
-<item name = "Date">Wed Jul 30 15:29:11 2025
+<item name = "Date">Tue Sep 23 15:49:05 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -90,7 +90,7 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 5, 10</column>
-<column name="i_250_fu_74">9, 2, 5, 10</column>
+<column name="i_240_fu_74">9, 2, 5, 10</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -98,7 +98,7 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="i_250_fu_74">5, 0, 5, 0</column>
+<column name="i_240_fu_74">5, 0, 5, 0</column>
 <column name="i_reg_340">5, 0, 5, 0</column>
 </table>
 </item>
@@ -115,30 +115,30 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, cshake256_simple.17_Pipeline_VITIS_LOOP_436_2, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, cshake256_simple.17_Pipeline_VITIS_LOOP_436_2, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, cshake256_simple.17_Pipeline_VITIS_LOOP_436_2, return value</column>
-<column name="t_192_address0">out, 6, ap_memory, t_192, array</column>
-<column name="t_192_ce0">out, 1, ap_memory, t_192, array</column>
-<column name="t_192_we0">out, 1, ap_memory, t_192, array</column>
-<column name="t_192_d0">out, 8, ap_memory, t_192, array</column>
-<column name="t_192_address1">out, 6, ap_memory, t_192, array</column>
-<column name="t_192_ce1">out, 1, ap_memory, t_192, array</column>
-<column name="t_192_we1">out, 1, ap_memory, t_192, array</column>
-<column name="t_192_d1">out, 8, ap_memory, t_192, array</column>
-<column name="t_191_address0">out, 6, ap_memory, t_191, array</column>
-<column name="t_191_ce0">out, 1, ap_memory, t_191, array</column>
-<column name="t_191_we0">out, 1, ap_memory, t_191, array</column>
-<column name="t_191_d0">out, 8, ap_memory, t_191, array</column>
-<column name="t_191_address1">out, 6, ap_memory, t_191, array</column>
-<column name="t_191_ce1">out, 1, ap_memory, t_191, array</column>
-<column name="t_191_we1">out, 1, ap_memory, t_191, array</column>
-<column name="t_191_d1">out, 8, ap_memory, t_191, array</column>
-<column name="t_190_address0">out, 6, ap_memory, t_190, array</column>
-<column name="t_190_ce0">out, 1, ap_memory, t_190, array</column>
-<column name="t_190_we0">out, 1, ap_memory, t_190, array</column>
-<column name="t_190_d0">out, 8, ap_memory, t_190, array</column>
-<column name="t_190_address1">out, 6, ap_memory, t_190, array</column>
-<column name="t_190_ce1">out, 1, ap_memory, t_190, array</column>
-<column name="t_190_we1">out, 1, ap_memory, t_190, array</column>
-<column name="t_190_d1">out, 8, ap_memory, t_190, array</column>
+<column name="t_76_address0">out, 6, ap_memory, t_76, array</column>
+<column name="t_76_ce0">out, 1, ap_memory, t_76, array</column>
+<column name="t_76_we0">out, 1, ap_memory, t_76, array</column>
+<column name="t_76_d0">out, 8, ap_memory, t_76, array</column>
+<column name="t_76_address1">out, 6, ap_memory, t_76, array</column>
+<column name="t_76_ce1">out, 1, ap_memory, t_76, array</column>
+<column name="t_76_we1">out, 1, ap_memory, t_76, array</column>
+<column name="t_76_d1">out, 8, ap_memory, t_76, array</column>
+<column name="t_75_address0">out, 6, ap_memory, t_75, array</column>
+<column name="t_75_ce0">out, 1, ap_memory, t_75, array</column>
+<column name="t_75_we0">out, 1, ap_memory, t_75, array</column>
+<column name="t_75_d0">out, 8, ap_memory, t_75, array</column>
+<column name="t_75_address1">out, 6, ap_memory, t_75, array</column>
+<column name="t_75_ce1">out, 1, ap_memory, t_75, array</column>
+<column name="t_75_we1">out, 1, ap_memory, t_75, array</column>
+<column name="t_75_d1">out, 8, ap_memory, t_75, array</column>
+<column name="t_74_address0">out, 6, ap_memory, t_74, array</column>
+<column name="t_74_ce0">out, 1, ap_memory, t_74, array</column>
+<column name="t_74_we0">out, 1, ap_memory, t_74, array</column>
+<column name="t_74_d0">out, 8, ap_memory, t_74, array</column>
+<column name="t_74_address1">out, 6, ap_memory, t_74, array</column>
+<column name="t_74_ce1">out, 1, ap_memory, t_74, array</column>
+<column name="t_74_we1">out, 1, ap_memory, t_74, array</column>
+<column name="t_74_d1">out, 8, ap_memory, t_74, array</column>
 <column name="t_address0">out, 6, ap_memory, t, array</column>
 <column name="t_ce0">out, 1, ap_memory, t, array</column>
 <column name="t_we0">out, 1, ap_memory, t, array</column>

@@ -7,43 +7,125 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# XIL_BRAM:
+# Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2344 \
-    name c_0 \
+eval "cg_default_interface_gen_dc { \
+    id 10256 \
+    name a_read \
+    type other \
+    dir I \
     reset_level 1 \
     sync_rst true \
-    dir IO \
-    corename c_0 \
+    corename dc_a_read \
     op interface \
-    ports { c_0_address0 { O 3 vector } c_0_ce0 { O 1 bit } c_0_we0 { O 1 bit } c_0_d0 { O 64 vector } c_0_address1 { O 3 vector } c_0_ce1 { O 1 bit } c_0_q1 { I 64 vector } } \
+    ports { a_read { I 64 vector } } \
 } "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c_0'"
-}
 }
 
-
-# XIL_BRAM:
+# Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2345 \
-    name c_1 \
+eval "cg_default_interface_gen_dc { \
+    id 10257 \
+    name a_read_448 \
+    type other \
+    dir I \
     reset_level 1 \
     sync_rst true \
-    dir IO \
-    corename c_1 \
+    corename dc_a_read_448 \
     op interface \
-    ports { c_1_address0 { O 3 vector } c_1_ce0 { O 1 bit } c_1_we0 { O 1 bit } c_1_d0 { O 64 vector } c_1_address1 { O 3 vector } c_1_ce1 { O 1 bit } c_1_q1 { I 64 vector } } \
+    ports { a_read_448 { I 64 vector } } \
 } "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c_1'"
-}
 }
 
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10258 \
+    name a_read_449 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_a_read_449 \
+    op interface \
+    ports { a_read_449 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10259 \
+    name a_read_450 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_a_read_450 \
+    op interface \
+    ports { a_read_450 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10260 \
+    name a_read_451 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_a_read_451 \
+    op interface \
+    ports { a_read_451 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10261 \
+    name a_read_452 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_a_read_452 \
+    op interface \
+    ports { a_read_452 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10262 \
+    name a_read_453 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_a_read_453 \
+    op interface \
+    ports { a_read_453 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10263 \
+    name a_read_454 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_a_read_454 \
+    op interface \
+    ports { a_read_454 { I 64 vector } } \
+} "
+}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
@@ -59,6 +141,20 @@ eval "cg_default_interface_gen_dc { \
 } "
 }
 
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id -2 \
+    name ap_return \
+    type ap_return \
+    reset_level 1 \
+    sync_rst true \
+    corename ap_return \
+    op interface \
+    ports { ap_return { O 1 vector } } \
+} "
+}
+
 
 # Adapter definition:
 set PortName ap_clk
@@ -66,7 +162,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -3 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -86,7 +182,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -4 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \

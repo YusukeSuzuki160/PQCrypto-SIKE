@@ -94,10 +94,10 @@ newFuncRoot:4 %br_ln0 = br void %for.inc
 
 <Node id="9" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.inc:0 %i_276 = load i8 %i
+for.inc:0 %i_280 = load i8 %i
 
 ]]></Node>
-<StgValue><ssdm name="i_276"/></StgValue>
+<StgValue><ssdm name="i_280"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -109,7 +109,7 @@ for.inc:0 %i_276 = load i8 %i
 
 <Node id="10" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-for.inc:1 %icmp_ln53 = icmp_eq  i8 %i_276, i8 128
+for.inc:1 %icmp_ln53 = icmp_eq  i8 %i_280, i8 128
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln53"/></StgValue>
@@ -124,7 +124,7 @@ for.inc:1 %icmp_ln53 = icmp_eq  i8 %i_276, i8 128
 
 <Node id="11" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-for.inc:2 %add_ln53 = add i8 %i_276, i8 1
+for.inc:2 %add_ln53 = add i8 %i_280, i8 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln53"/></StgValue>
@@ -155,7 +155,7 @@ for.inc:3 %br_ln53 = br i1 %icmp_ln53, void %for.inc.split, void %for.inc13.preh
 
 <Node id="14" bw="9" op_0_bw="8">
 <![CDATA[
-for.inc.split:0 %zext_ln53 = zext i8 %i_276
+for.inc.split:0 %zext_ln53 = zext i8 %i_280
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln53"/></StgValue>
@@ -171,7 +171,7 @@ for.inc.split:0 %zext_ln53 = zext i8 %i_276
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:1 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+for.inc.split:1 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_82
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln51"/></StgValue>
@@ -203,7 +203,7 @@ for.inc.split:2 %speclooptripcount_ln51 = speclooptripcount void @_ssdm_op_SpecL
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:3 %specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, void @empty_30
+for.inc.split:3 %specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln53"/></StgValue>

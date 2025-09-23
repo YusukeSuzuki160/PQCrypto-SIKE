@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_38_Pipeline_VITIS_LOOP_152_1'" level="0">
-<item name = "Date">Wed Jul 30 17:39:25 2025
+<item name = "Date">Wed Sep  3 15:20:05 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -91,8 +91,8 @@
 <column name="or_ln105_fu_155_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln95_fu_181_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_87_fu_149_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_88_fu_161_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_92_fu_149_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_93_fu_161_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln105_fu_143_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln155_fu_195_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
@@ -103,7 +103,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 5, 10</column>
 <column name="borrow_reg_94">9, 2, 1, 2</column>
-<column name="i_254_fu_44">9, 2, 5, 10</column>
+<column name="i_216_fu_44">9, 2, 5, 10</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -112,7 +112,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="borrow_reg_94">1, 0, 1, 0</column>
-<column name="i_254_fu_44">5, 0, 5, 0</column>
+<column name="i_216_fu_44">5, 0, 5, 0</column>
 <column name="icmp_ln152_reg_231">1, 0, 1, 0</column>
 <column name="zext_ln152_reg_235">5, 0, 64, 59</column>
 </table>

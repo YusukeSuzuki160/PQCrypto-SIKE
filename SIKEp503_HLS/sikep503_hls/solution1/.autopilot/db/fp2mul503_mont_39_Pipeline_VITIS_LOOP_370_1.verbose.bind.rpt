@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_39_Pipeline_VITIS_LOOP_370_1'
 ================================================================
-* Date:           Wed Jul 30 16:56:16 2025
+* Date:           Wed Sep  3 15:12:00 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -89,29 +89,29 @@ ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/fpx.cpp:368-
 ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln368 = store i4 0, i4 %i" [src/fpx.cpp:368->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 6 'store' 'store_ln368' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 7 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.inc.i.i"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%carry = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc.i.i.split" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 8 'phi' 'carry' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_257 = load i4 %i" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 9 'load' 'i_257' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln370 = icmp_eq  i4 %i_257, i4 8" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 10 'icmp' 'icmp_ln370' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_261 = load i4 %i" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 9 'load' 'i_261' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln370 = icmp_eq  i4 %i_261, i4 8" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 10 'icmp' 'icmp_ln370' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8"   --->   Operation 11 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%add_ln370 = add i4 %i_257, i4 1" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 12 'add' 'add_ln370' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%add_ln370 = add i4 %i_261, i4 1" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 12 'add' 'add_ln370' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln370 = br i1 %icmp_ln370, void %for.inc.i.i.split, void %for.inc.i.i38.preheader.exitStub" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 13 'br' 'br_ln370' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln370 = zext i4 %i_257" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 14 'zext' 'zext_ln370' <Predicate = (!icmp_ln370)> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%a_addr_8 = getelementptr i64 %a, i64 0, i64 %zext_ln370" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 15 'getelementptr' 'a_addr_8' <Predicate = (!icmp_ln370)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln373 = trunc i4 %i_257" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 16 'trunc' 'trunc_ln373' <Predicate = (!icmp_ln370)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln370 = zext i4 %i_261" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 14 'zext' 'zext_ln370' <Predicate = (!icmp_ln370)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln370" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 15 'getelementptr' 'a_addr' <Predicate = (!icmp_ln370)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln373 = trunc i4 %i_261" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 16 'trunc' 'trunc_ln373' <Predicate = (!icmp_ln370)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%add_ln373_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln373" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 17 'bitconcatenate' 'add_ln373_s' <Predicate = (!icmp_ln370)> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln373 = zext i4 %add_ln373_s" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 18 'zext' 'zext_ln373' <Predicate = (!icmp_ln370)> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln373" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 19 'getelementptr' 'a_addr' <Predicate = (!icmp_ln370)> <Delay = 0.00>
-ST_1 : Operation 20 [2/2] (0.71ns)   --->   "%a_load = load i4 %a_addr_8" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 20 'load' 'a_load' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 21 [2/2] (0.71ns)   --->   "%a_load_6 = load i4 %a_addr" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 21 'load' 'a_load_6' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%a_addr_7 = getelementptr i64 %a, i64 0, i64 %zext_ln373" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 19 'getelementptr' 'a_addr_7' <Predicate = (!icmp_ln370)> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (0.71ns)   --->   "%a_load = load i4 %a_addr" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 20 'load' 'a_load' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 21 [2/2] (0.71ns)   --->   "%a_load_6 = load i4 %a_addr_7" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 21 'load' 'a_load_6' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_1 : Operation 22 [1/1] (0.38ns)   --->   "%store_ln368 = store i4 %add_ln370, i4 %i" [src/fpx.cpp:368->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 22 'store' 'store_ln368' <Predicate = (!icmp_ln370)> <Delay = 0.38>
 ST_1 : Operation 44 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 44 'ret' 'ret_ln0' <Predicate = (icmp_ln370)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln368 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:368->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 23 'specpipeline' 'specpipeline_ln368' <Predicate = (!icmp_ln370)> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln370 = specloopname void @_ssdm_op_SpecLoopName, void @empty_17" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 24 'specloopname' 'specloopname_ln370' <Predicate = (!icmp_ln370)> <Delay = 0.00>
-ST_2 : Operation 25 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_load = load i4 %a_addr_8" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 25 'load' 'a_load' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln368 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_82" [src/fpx.cpp:368->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 23 'specpipeline' 'specpipeline_ln368' <Predicate = (!icmp_ln370)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln370 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [src/fpx.cpp:370->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 24 'specloopname' 'specloopname_ln370' <Predicate = (!icmp_ln370)> <Delay = 0.00>
+ST_2 : Operation 25 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_load = load i4 %a_addr" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 25 'load' 'a_load' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln373_30 = zext i1 %carry" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 26 'zext' 'zext_ln373_30' <Predicate = (!icmp_ln370)> <Delay = 0.00>
 ST_2 : Operation 27 [1/1] (1.14ns)   --->   "%tempReg = add i64 %a_load, i64 %zext_ln373_30" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 27 'add' 'tempReg' <Predicate = (!icmp_ln370)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 28 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_load_6 = load i4 %a_addr" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 28 'load' 'a_load_6' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_2 : Operation 28 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_load_6 = load i4 %a_addr_7" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 28 'load' 'a_load_6' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 29 [1/1] (1.14ns)   --->   "%add_ln373 = add i64 %a_load_6, i64 %tempReg" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 29 'add' 'add_ln373' <Predicate = (!icmp_ln370)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%t1_addr = getelementptr i64 %t1, i64 0, i64 %zext_ln370" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 30 'getelementptr' 't1_addr' <Predicate = (!icmp_ln370)> <Delay = 0.00>
 ST_2 : Operation 31 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln373 = store i64 %add_ln373, i3 %t1_addr" [src/fpx.cpp:373->src/fpx.cpp:126->src/fpx.cpp:176]   --->   Operation 31 'store' 'store_ln373' <Predicate = (!icmp_ln370)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
@@ -152,17 +152,17 @@ i                     (alloca           ) [ 010]
 store_ln368           (store            ) [ 000]
 br_ln0                (br               ) [ 000]
 carry                 (phi              ) [ 011]
-i_257                 (load             ) [ 000]
+i_261                 (load             ) [ 000]
 icmp_ln370            (icmp             ) [ 011]
 speclooptripcount_ln0 (speclooptripcount) [ 000]
 add_ln370             (add              ) [ 000]
 br_ln370              (br               ) [ 000]
 zext_ln370            (zext             ) [ 011]
-a_addr_8              (getelementptr    ) [ 011]
+a_addr                (getelementptr    ) [ 011]
 trunc_ln373           (trunc            ) [ 000]
 add_ln373_s           (bitconcatenate   ) [ 000]
 zext_ln373            (zext             ) [ 000]
-a_addr                (getelementptr    ) [ 011]
+a_addr_7              (getelementptr    ) [ 011]
 store_ln368           (store            ) [ 000]
 specpipeline_ln368    (specpipeline     ) [ 000]
 specloopname_ln370    (specloopname     ) [ 000]
@@ -333,7 +333,7 @@ ret_ln0               (ret              ) [ 000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_82"/></StgValue>
 </bind>
 </comp>
 
@@ -351,7 +351,7 @@ ret_ln0               (ret              ) [ 000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_17"/></StgValue>
+<StgValue><ssdm name="empty_14"/></StgValue>
 </bind>
 </comp>
 
@@ -411,7 +411,7 @@ ret_ln0               (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="a_addr_8_gep_fu_50">
+<comp id="50" class="1004" name="a_addr_gep_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="64" slack="0"/>
 <pin id="52" dir="0" index="1" bw="1" slack="0"/>
@@ -420,11 +420,11 @@ ret_ln0               (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="a_addr_8/1 "/>
+<opset="a_addr/1 "/>
 </bind>
 </comp>
 
-<comp id="57" class="1004" name="a_addr_gep_fu_57">
+<comp id="57" class="1004" name="a_addr_7_gep_fu_57">
 <pin_list>
 <pin id="58" dir="0" index="0" bw="64" slack="0"/>
 <pin id="59" dir="0" index="1" bw="1" slack="0"/>
@@ -433,7 +433,7 @@ ret_ln0               (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="a_addr/1 "/>
+<opset="a_addr_7/1 "/>
 </bind>
 </comp>
 
@@ -516,14 +516,14 @@ ret_ln0               (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="104" class="1004" name="i_257_load_fu_104">
+<comp id="104" class="1004" name="i_261_load_fu_104">
 <pin_list>
 <pin id="105" dir="0" index="0" bw="4" slack="0"/>
 <pin id="106" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="i_257/1 "/>
+<opset="i_261/1 "/>
 </bind>
 </comp>
 
@@ -808,23 +808,23 @@ ret_ln0               (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="249" class="1005" name="a_addr_8_reg_249">
+<comp id="249" class="1005" name="a_addr_reg_249">
 <pin_list>
 <pin id="250" dir="0" index="0" bw="4" slack="1"/>
 <pin id="251" dir="1" index="1" bw="4" slack="1"/>
 </pin_list>
 <bind>
-<opset="a_addr_8 "/>
+<opset="a_addr "/>
 </bind>
 </comp>
 
-<comp id="254" class="1005" name="a_addr_reg_254">
+<comp id="254" class="1005" name="a_addr_7_reg_254">
 <pin_list>
 <pin id="255" dir="0" index="0" bw="4" slack="1"/>
 <pin id="256" dir="1" index="1" bw="4" slack="1"/>
 </pin_list>
 <bind>
-<opset="a_addr "/>
+<opset="a_addr_7 "/>
 </bind>
 </comp>
 
@@ -993,16 +993,16 @@ ret_ln0               (ret              ) [ 000]
 	State 1
 		store_ln368 : 1
 		carry : 1
-		i_257 : 1
+		i_261 : 1
 		icmp_ln370 : 2
 		add_ln370 : 2
 		br_ln370 : 3
 		zext_ln370 : 2
-		a_addr_8 : 3
+		a_addr : 3
 		trunc_ln373 : 2
 		add_ln373_s : 3
 		zext_ln373 : 4
-		a_addr : 5
+		a_addr_7 : 5
 		a_load : 4
 		a_load_6 : 6
 		store_ln368 : 3
@@ -1070,8 +1070,8 @@ N/A
 +------------------+--------+
 |                  |   FF   |
 +------------------+--------+
-| a_addr_8_reg_249 |    4   |
-|  a_addr_reg_254  |    4   |
+| a_addr_7_reg_254 |    4   |
+|  a_addr_reg_249  |    4   |
 |   carry_reg_88   |    1   |
 |     i_reg_233    |    4   |
 |icmp_ln370_reg_240|    1   |

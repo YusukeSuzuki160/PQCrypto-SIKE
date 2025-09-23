@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1'
 ================================================================
-* Date:           Wed Jul 30 17:34:57 2025
+* Date:           Tue Sep 23 15:46:02 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -89,8 +89,8 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln13_fu_75_p2   |         +|   0|  0|  12|           4|           1|
-    |icmp_ln13_fu_69_p2  |      icmp|   0|  0|  12|           4|           5|
+    |add_ln13_fu_83_p2   |         +|   0|  0|  12|           4|           1|
+    |icmp_ln13_fu_77_p2  |      icmp|   0|  0|  12|           4|           5|
     |ap_enable_pp0       |       xor|   0|  0|   2|           1|           2|
     +--------------------+----------+----+---+----+------------+------------+
     |Total               |          |   0|  0|  26|           9|           8|
@@ -102,8 +102,8 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_412   |   9|          2|    4|          8|
-    |i_fu_30                  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_294   |   9|          2|    4|          8|
+    |i_fu_38                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  36|          8|   10|         20|
     +-------------------------+----+-----------+-----+-----------+
@@ -115,8 +115,8 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |i_fu_30                  |  4|   0|    4|          0|
-    |zext_ln13_reg_101        |  4|   0|   64|         60|
+    |i_fu_38                  |  4|   0|    4|          0|
+    |zext_ln13_reg_109        |  4|   0|   64|         60|
     +-------------------------+---+----+-----+-----------+
     |Total                    | 11|   0|   71|         60|
     +-------------------------+---+----+-----+-----------+
@@ -136,7 +136,7 @@
 |ap_done           |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1|  return value|
 |ap_idle           |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1|  return value|
 |ap_ready          |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1|  return value|
-|phiP_X_address0   |  out|    4|   ap_memory|                                               phiP_X|         array|
+|phiP_X_address0   |  out|    3|   ap_memory|                                               phiP_X|         array|
 |phiP_X_ce0        |  out|    1|   ap_memory|                                               phiP_X|         array|
 |phiP_X_we0        |  out|    1|   ap_memory|                                               phiP_X|         array|
 |phiP_X_d0         |  out|   64|   ap_memory|                                               phiP_X|         array|

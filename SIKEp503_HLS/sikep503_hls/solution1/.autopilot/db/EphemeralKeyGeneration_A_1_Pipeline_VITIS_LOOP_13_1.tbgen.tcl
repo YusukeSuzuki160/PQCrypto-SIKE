@@ -13,14 +13,14 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 855
+set cdfgNum 684
 set C_modelName {EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict phiP_X { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict phiP_X { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict B_gen_1 { MEM_WIDTH 64 MEM_SIZE 320 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ phiP_X int 64 regular {array 16 { 0 3 } 0 1 }  }
+	{ phiP_X int 64 regular {array 8 { 0 } 0 1 }  }
 	{ B_gen_1 int 64 regular {array 40 { 1 } 1 1 } {global 0}  }
 }
 set hasAXIMCache 0
@@ -38,7 +38,7 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ phiP_X_address0 sc_out sc_lv 4 signal 0 } 
+	{ phiP_X_address0 sc_out sc_lv 3 signal 0 } 
 	{ phiP_X_ce0 sc_out sc_logic 1 signal 0 } 
 	{ phiP_X_we0 sc_out sc_logic 1 signal 0 } 
 	{ phiP_X_d0 sc_out sc_lv 64 signal 0 } 
@@ -53,7 +53,7 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "phiP_X_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "phiP_X", "role": "address0" }} , 
+ 	{ "name": "phiP_X_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "phiP_X", "role": "address0" }} , 
  	{ "name": "phiP_X_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "phiP_X", "role": "ce0" }} , 
  	{ "name": "phiP_X_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "phiP_X", "role": "we0" }} , 
  	{ "name": "phiP_X_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "phiP_X", "role": "d0" }} , 
@@ -102,6 +102,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	phiP_X { ap_memory {  { phiP_X_address0 mem_address 1 4 }  { phiP_X_ce0 mem_ce 1 1 }  { phiP_X_we0 mem_we 1 1 }  { phiP_X_d0 mem_din 1 64 } } }
+	phiP_X { ap_memory {  { phiP_X_address0 mem_address 1 3 }  { phiP_X_ce0 mem_ce 1 1 }  { phiP_X_we0 mem_we 1 1 }  { phiP_X_d0 mem_din 1 64 } } }
 	B_gen_1 { ap_memory {  { B_gen_1_address0 mem_address 1 6 }  { B_gen_1_ce0 mem_ce 1 1 }  { B_gen_1_q0 mem_dout 0 64 } } }
 }

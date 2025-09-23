@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_59'" level="0">
-<item name = "Date">Wed Jul 30 15:27:06 2025
+<item name = "Date">Wed Sep  3 14:31:32 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.271 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.684 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,49 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">8, 8, 80.000 ns, 80.000 ns, 1, 1, yes</column>
+<column name="">36, 36, 0.360 us, 0.360 us, 36, 36, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="tmp_is_digit_lessthan_ct_fu_316">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_s_is_digit_lessthan_ct_fu_324">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_948_is_digit_lessthan_ct_fu_331">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_949_is_digit_lessthan_ct_fu_337">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="borrowReg_is_digit_lessthan_ct_fu_343">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_950_is_digit_lessthan_ct_fu_350">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_951_is_digit_lessthan_ct_fu_357">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_952_is_digit_lessthan_ct_fu_363">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_953_is_digit_lessthan_ct_fu_369">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_954_is_digit_lessthan_ct_fu_376">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_955_is_digit_lessthan_ct_fu_382">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_957_is_digit_lessthan_ct_fu_388">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_958_is_digit_lessthan_ct_fu_394">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_960_is_digit_lessthan_ct_fu_400">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_961_is_digit_lessthan_ct_fu_406">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_963_is_digit_lessthan_ct_fu_412">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_964_is_digit_lessthan_ct_fu_418">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_947_is_digit_lessthan_ct_fu_424">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_956_is_digit_lessthan_ct_fu_431">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_959_is_digit_lessthan_ct_fu_438">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_962_is_digit_lessthan_ct_fu_445">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_965_is_digit_lessthan_ct_fu_452">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_966_is_digit_lessthan_ct_fu_459">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_967_is_digit_lessthan_ct_fu_466">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_968_is_digit_lessthan_ct_fu_472">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_969_is_digit_lessthan_ct_fu_478">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_970_is_digit_lessthan_ct_fu_484">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_971_is_digit_lessthan_ct_fu_490">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_972_is_digit_lessthan_ct_fu_496">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_973_is_digit_lessthan_ct_fu_502">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_974_is_digit_lessthan_ct_fu_508">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_975_is_digit_lessthan_ct_fu_514">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_976_is_digit_lessthan_ct_fu_520">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_977_is_digit_lessthan_ct_fu_526">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_978_is_digit_lessthan_ct_fu_532">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_979_is_digit_lessthan_ct_fu_538">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_33_1_fu_182">fpadd503_59_Pipeline_VITIS_LOOP_33_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_39_2_fu_212">fpadd503_59_Pipeline_VITIS_LOOP_39_2, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_46_3_fu_235">fpadd503_59_Pipeline_VITIS_LOOP_46_3, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -83,14 +50,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 4195, -</column>
+<column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 0, 11772, -</column>
+<column name="Instance">0, -, 1764, 2312, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, -, -</column>
-<column name="Register">-, -, 3930, 576, -</column>
+<column name="Multiplexer">-, -, 0, 43, -</column>
+<column name="Register">-, -, 10, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 0, ~0, 3, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -99,42 +66,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="tmp_is_digit_lessthan_ct_fu_316">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_s_is_digit_lessthan_ct_fu_324">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_948_is_digit_lessthan_ct_fu_331">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_949_is_digit_lessthan_ct_fu_337">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="borrowReg_is_digit_lessthan_ct_fu_343">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_950_is_digit_lessthan_ct_fu_350">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_951_is_digit_lessthan_ct_fu_357">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_952_is_digit_lessthan_ct_fu_363">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_953_is_digit_lessthan_ct_fu_369">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_954_is_digit_lessthan_ct_fu_376">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_955_is_digit_lessthan_ct_fu_382">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_957_is_digit_lessthan_ct_fu_388">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_958_is_digit_lessthan_ct_fu_394">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_960_is_digit_lessthan_ct_fu_400">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_961_is_digit_lessthan_ct_fu_406">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_963_is_digit_lessthan_ct_fu_412">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_964_is_digit_lessthan_ct_fu_418">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_947_is_digit_lessthan_ct_fu_424">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_956_is_digit_lessthan_ct_fu_431">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_959_is_digit_lessthan_ct_fu_438">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_962_is_digit_lessthan_ct_fu_445">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_965_is_digit_lessthan_ct_fu_452">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_966_is_digit_lessthan_ct_fu_459">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_967_is_digit_lessthan_ct_fu_466">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_968_is_digit_lessthan_ct_fu_472">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_969_is_digit_lessthan_ct_fu_478">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_970_is_digit_lessthan_ct_fu_484">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_971_is_digit_lessthan_ct_fu_490">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_972_is_digit_lessthan_ct_fu_496">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_973_is_digit_lessthan_ct_fu_502">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_974_is_digit_lessthan_ct_fu_508">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_975_is_digit_lessthan_ct_fu_514">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_976_is_digit_lessthan_ct_fu_520">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_977_is_digit_lessthan_ct_fu_526">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_978_is_digit_lessthan_ct_fu_532">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
-<column name="tmp_979_is_digit_lessthan_ct_fu_538">is_digit_lessthan_ct, 0, 0, 0, 327, 0</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_33_1_fu_182">fpadd503_59_Pipeline_VITIS_LOOP_33_1, 0, 0, 524, 673, 0</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_39_2_fu_212">fpadd503_59_Pipeline_VITIS_LOOP_39_2, 0, 0, 588, 792, 0</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_46_3_fu_235">fpadd503_59_Pipeline_VITIS_LOOP_46_3, 0, 0, 652, 847, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -151,201 +85,19 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln33_80_fu_570_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln33_82_fu_655_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln33_84_fu_743_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln33_86_fu_765_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln33_88_fu_786_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln33_90_fu_809_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln33_91_fu_1006_p2">+, 0, 0, 64, 64, 64</column>
-<column name="add_ln33_92_fu_1011_p2">+, 0, 0, 64, 64, 64</column>
-<column name="add_ln33_fu_544_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln46_70_fu_1182_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln46_72_fu_1214_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln46_74_fu_1260_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln46_76_fu_1292_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln46_77_fu_1324_p2">+, 0, 0, 64, 64, 64</column>
-<column name="add_ln46_fu_1069_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1360_fu_821_p2">+, 0, 0, 71, 64, 2</column>
-<column name="tempReg_1374_fu_562_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1375_fu_648_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1376_fu_737_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1377_fu_758_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1378_fu_781_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1379_fu_802_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1380_fu_587_p2">+, 0, 0, 71, 64, 1</column>
-<column name="tempReg_1381_fu_673_p2">+, 0, 0, 71, 64, 1</column>
-<column name="tempReg_1382_fu_836_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_1383_fu_877_p2">+, 0, 0, 71, 64, 63</column>
-<column name="tempReg_1384_fu_919_p2">+, 0, 0, 71, 64, 63</column>
-<column name="tempReg_1385_fu_964_p2">+, 0, 0, 71, 64, 62</column>
-<column name="tempReg_1386_fu_1017_p2">+, 0, 0, 71, 64, 57</column>
-<column name="tempReg_1387_fu_1086_p2">+, 0, 0, 64, 64, 64</column>
-<column name="tempReg_1388_fu_1128_p2">+, 0, 0, 64, 64, 64</column>
-<column name="tempReg_1389_fu_1153_p2">+, 0, 0, 64, 64, 64</column>
-<column name="tempReg_1390_fu_1199_p2">+, 0, 0, 64, 64, 64</column>
-<column name="tempReg_1391_fu_1231_p2">+, 0, 0, 64, 64, 64</column>
-<column name="tempReg_1392_fu_1277_p2">+, 0, 0, 64, 64, 64</column>
-<column name="sub_ln39_31_fu_1095_p2">-, 0, 0, 64, 64, 64</column>
-<column name="sub_ln39_32_fu_1103_p2">-, 0, 0, 64, 64, 64</column>
-<column name="sub_ln39_33_fu_1162_p2">-, 0, 0, 64, 64, 64</column>
-<column name="sub_ln39_34_fu_1170_p2">-, 0, 0, 64, 64, 64</column>
-<column name="sub_ln39_35_fu_1240_p2">-, 0, 0, 64, 64, 64</column>
-<column name="sub_ln39_36_fu_1248_p2">-, 0, 0, 64, 64, 64</column>
-<column name="sub_ln39_fu_831_p2">-, 0, 0, 64, 64, 64</column>
-<column name="sub_ln46_7_fu_1136_p2">-, 0, 0, 71, 64, 64</column>
-<column name="sub_ln46_fu_1111_p2">-, 0, 0, 71, 64, 64</column>
-<column name="sub_ln95_220_fu_882_p2">-, 0, 0, 71, 62, 64</column>
-<column name="sub_ln95_221_fu_924_p2">-, 0, 0, 71, 62, 64</column>
-<column name="sub_ln95_222_fu_969_p2">-, 0, 0, 71, 63, 64</column>
-<column name="sub_ln95_223_fu_1023_p2">-, 0, 0, 71, 56, 64</column>
-<column name="sub_ln95_fu_841_p2">-, 0, 0, 71, 63, 64</column>
-<column name="and_ln39_37_fu_725_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln39_38_fu_866_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln39_39_fu_907_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln39_40_fu_949_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln39_41_fu_994_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln39_42_fu_1049_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln39_fu_636_p2">and, 0, 0, 2, 1, 1</column>
-<column name="borrowReg_315_fu_642_p2">or, 0, 0, 2, 1, 1</column>
-<column name="borrowReg_316_fu_731_p2">or, 0, 0, 2, 1, 1</column>
-<column name="borrowReg_317_fu_871_p2">or, 0, 0, 2, 1, 1</column>
-<column name="borrowReg_318_fu_913_p2">or, 0, 0, 2, 1, 1</column>
-<column name="borrowReg_319_fu_955_p2">or, 0, 0, 2, 1, 1</column>
-<column name="borrowReg_320_fu_1000_p2">or, 0, 0, 2, 1, 1</column>
-<column name="borrowReg_321_fu_1055_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_336_fu_577_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_337_fu_662_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_338_fu_748_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_339_fu_771_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_340_fu_791_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_341_fu_815_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_342_fu_1076_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_343_fu_1117_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_344_fu_1143_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_345_fu_1188_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_346_fu_1221_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_347_fu_1266_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_348_fu_1299_p2">or, 0, 0, 2, 1, 1</column>
-<column name="carry_fu_551_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln95_240_fu_705_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln95_241_fu_846_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln95_242_fu_887_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln95_243_fu_929_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln95_244_fu_974_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln95_245_fu_1029_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln95_fu_616_p2">or, 0, 0, 64, 64, 64</column>
-<column name="select_ln46_31_fu_1175_p3">select, 0, 0, 62, 1, 63</column>
-<column name="select_ln46_32_fu_1207_p3">select, 0, 0, 61, 1, 62</column>
-<column name="select_ln46_33_fu_1253_p3">select, 0, 0, 61, 1, 62</column>
-<column name="select_ln46_34_fu_1285_p3">select, 0, 0, 62, 1, 63</column>
-<column name="select_ln46_35_fu_1305_p3">select, 0, 0, 55, 1, 55</column>
-<column name="select_ln46_fu_1061_p3">select, 0, 0, 3, 1, 3</column>
-<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln100_240_fu_719_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln100_241_fu_860_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln100_242_fu_901_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln100_243_fu_943_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln100_244_fu_988_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln100_245_fu_1043_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln100_fu_630_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln95_11_fu_599_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln95_fu_687_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">43, 8, 1, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln33_80_reg_1459">64, 0, 64, 0</column>
-<column name="add_ln33_84_reg_1568">64, 0, 64, 0</column>
-<column name="add_ln33_86_reg_1576">64, 0, 64, 0</column>
-<column name="add_ln33_86_reg_1576_pp0_iter4_reg">64, 0, 64, 0</column>
-<column name="add_ln33_88_reg_1595">64, 0, 64, 0</column>
-<column name="add_ln33_90_reg_1602">64, 0, 64, 0</column>
-<column name="add_ln33_reg_1453">64, 0, 64, 0</column>
-<column name="add_ln46_70_reg_1708">64, 0, 64, 0</column>
-<column name="add_ln46_72_reg_1713">64, 0, 64, 0</column>
-<column name="add_ln46_reg_1669">64, 0, 64, 0</column>
-<column name="ap_CS_fsm">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter7">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter8">1, 0, 1, 0</column>
-<column name="b_2_load_reg_1477">64, 0, 64, 0</column>
-<column name="b_3_load_reg_1487">64, 0, 64, 0</column>
-<column name="b_4_load_reg_1497">64, 0, 64, 0</column>
-<column name="b_4_load_reg_1497_pp0_iter2_reg">64, 0, 64, 0</column>
-<column name="b_5_load_reg_1507">64, 0, 64, 0</column>
-<column name="b_6_load_reg_1517">64, 0, 64, 0</column>
-<column name="b_7_load_reg_1527">64, 0, 64, 0</column>
-<column name="borrowReg_315_reg_1542">1, 0, 1, 0</column>
-<column name="borrowReg_316_reg_1552">1, 0, 1, 0</column>
-<column name="borrowReg_317_reg_1619">1, 0, 1, 0</column>
-<column name="borrowReg_317_reg_1619_pp0_iter6_reg">1, 0, 1, 0</column>
-<column name="borrowReg_318_reg_1629">1, 0, 1, 0</column>
-<column name="borrowReg_318_reg_1629_pp0_iter6_reg">1, 0, 1, 0</column>
-<column name="borrowReg_319_reg_1639">1, 0, 1, 0</column>
-<column name="borrowReg_320_reg_1649">1, 0, 1, 0</column>
-<column name="borrowReg_321_reg_1659">1, 0, 1, 0</column>
-<column name="borrowReg_reg_1532">1, 0, 1, 0</column>
-<column name="carry_336_reg_1467">1, 0, 1, 0</column>
-<column name="carry_341_reg_1609">1, 0, 1, 0</column>
-<column name="sub_ln46_7_reg_1691">64, 0, 64, 0</column>
-<column name="sub_ln46_7_reg_1691_pp0_iter7_reg">64, 0, 64, 0</column>
-<column name="sub_ln46_reg_1686">64, 0, 64, 0</column>
-<column name="sub_ln46_reg_1686_pp0_iter7_reg">64, 0, 64, 0</column>
-<column name="t1_2_load_reg_1472">64, 0, 64, 0</column>
-<column name="t1_3_load_reg_1482">64, 0, 64, 0</column>
-<column name="t1_4_load_reg_1492">64, 0, 64, 0</column>
-<column name="t1_4_load_reg_1492_pp0_iter2_reg">64, 0, 64, 0</column>
-<column name="t1_5_load_reg_1502">64, 0, 64, 0</column>
-<column name="t1_5_load_reg_1502_pp0_iter2_reg">64, 0, 64, 0</column>
-<column name="t1_6_load_reg_1512">64, 0, 64, 0</column>
-<column name="t1_7_load_reg_1522">64, 0, 64, 0</column>
-<column name="tempReg_1376_reg_1558">64, 0, 64, 0</column>
-<column name="tempReg_1378_reg_1588">64, 0, 64, 0</column>
-<column name="tempReg_1380_reg_1537">64, 0, 64, 0</column>
-<column name="tempReg_1381_reg_1547">64, 0, 64, 0</column>
-<column name="tempReg_1382_reg_1614">64, 0, 64, 0</column>
-<column name="tempReg_1383_reg_1624">64, 0, 64, 0</column>
-<column name="tempReg_1383_reg_1624_pp0_iter6_reg">64, 0, 64, 0</column>
-<column name="tempReg_1384_reg_1634">64, 0, 64, 0</column>
-<column name="tempReg_1384_reg_1634_pp0_iter6_reg">64, 0, 64, 0</column>
-<column name="tempReg_1385_reg_1644">64, 0, 64, 0</column>
-<column name="tempReg_1386_reg_1654">64, 0, 64, 0</column>
-<column name="tempReg_1387_reg_1679">64, 0, 64, 0</column>
-<column name="tempReg_1389_reg_1701">64, 0, 64, 0</column>
-<column name="tempReg_1391_reg_1723">64, 0, 64, 0</column>
-<column name="tmp_954_reg_1563">1, 0, 1, 0</column>
-<column name="zext_ln33_38_reg_1583">1, 0, 64, 63</column>
-<column name="zext_ln46_38_reg_1696">1, 0, 64, 63</column>
-<column name="zext_ln46_40_reg_1718">1, 0, 64, 63</column>
-<column name="zext_ln46_reg_1674">1, 0, 64, 63</column>
-<column name="add_ln33_84_reg_1568">64, 32, 64, 0</column>
-<column name="add_ln33_reg_1453">64, 32, 64, 0</column>
-<column name="add_ln46_reg_1669">64, 32, 64, 0</column>
-<column name="b_5_load_reg_1507">64, 32, 64, 0</column>
-<column name="b_6_load_reg_1517">64, 32, 64, 0</column>
-<column name="b_7_load_reg_1527">64, 32, 64, 0</column>
-<column name="borrowReg_315_reg_1542">64, 32, 1, 0</column>
-<column name="borrowReg_316_reg_1552">64, 32, 1, 0</column>
-<column name="borrowReg_319_reg_1639">64, 32, 1, 0</column>
-<column name="borrowReg_320_reg_1649">64, 32, 1, 0</column>
-<column name="borrowReg_321_reg_1659">64, 32, 1, 0</column>
-<column name="borrowReg_reg_1532">64, 32, 1, 0</column>
-<column name="t1_6_load_reg_1512">64, 32, 64, 0</column>
-<column name="t1_7_load_reg_1522">64, 32, 64, 0</column>
-<column name="tempReg_1380_reg_1537">64, 32, 64, 0</column>
-<column name="tempReg_1381_reg_1547">64, 32, 64, 0</column>
-<column name="tempReg_1385_reg_1644">64, 32, 64, 0</column>
-<column name="tempReg_1386_reg_1654">64, 32, 64, 0</column>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_33_1_fu_182_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_39_2_fu_212_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_59_Pipeline_VITIS_LOOP_46_3_fu_235_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -361,7 +113,6 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, fpadd503.59, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, fpadd503.59, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, fpadd503.59, return value</column>
-<column name="ap_ce">in, 1, ap_ctrl_hs, fpadd503.59, return value</column>
 <column name="ap_return_0">out, 64, ap_ctrl_hs, fpadd503.59, return value</column>
 <column name="ap_return_1">out, 64, ap_ctrl_hs, fpadd503.59, return value</column>
 <column name="ap_return_2">out, 64, ap_ctrl_hs, fpadd503.59, return value</column>
@@ -370,54 +121,20 @@
 <column name="ap_return_5">out, 64, ap_ctrl_hs, fpadd503.59, return value</column>
 <column name="ap_return_6">out, 64, ap_ctrl_hs, fpadd503.59, return value</column>
 <column name="ap_return_7">out, 64, ap_ctrl_hs, fpadd503.59, return value</column>
-<column name="t1_0_address0">out, 1, ap_memory, t1_0, array</column>
-<column name="t1_0_ce0">out, 1, ap_memory, t1_0, array</column>
-<column name="t1_0_q0">in, 64, ap_memory, t1_0, array</column>
-<column name="t1_1_address0">out, 1, ap_memory, t1_1, array</column>
-<column name="t1_1_ce0">out, 1, ap_memory, t1_1, array</column>
-<column name="t1_1_q0">in, 64, ap_memory, t1_1, array</column>
-<column name="t1_2_address0">out, 1, ap_memory, t1_2, array</column>
-<column name="t1_2_ce0">out, 1, ap_memory, t1_2, array</column>
-<column name="t1_2_q0">in, 64, ap_memory, t1_2, array</column>
-<column name="t1_3_address0">out, 1, ap_memory, t1_3, array</column>
-<column name="t1_3_ce0">out, 1, ap_memory, t1_3, array</column>
-<column name="t1_3_q0">in, 64, ap_memory, t1_3, array</column>
-<column name="t1_4_address0">out, 1, ap_memory, t1_4, array</column>
-<column name="t1_4_ce0">out, 1, ap_memory, t1_4, array</column>
-<column name="t1_4_q0">in, 64, ap_memory, t1_4, array</column>
-<column name="t1_5_address0">out, 1, ap_memory, t1_5, array</column>
-<column name="t1_5_ce0">out, 1, ap_memory, t1_5, array</column>
-<column name="t1_5_q0">in, 64, ap_memory, t1_5, array</column>
-<column name="t1_6_address0">out, 1, ap_memory, t1_6, array</column>
-<column name="t1_6_ce0">out, 1, ap_memory, t1_6, array</column>
-<column name="t1_6_q0">in, 64, ap_memory, t1_6, array</column>
-<column name="t1_7_address0">out, 1, ap_memory, t1_7, array</column>
-<column name="t1_7_ce0">out, 1, ap_memory, t1_7, array</column>
-<column name="t1_7_q0">in, 64, ap_memory, t1_7, array</column>
-<column name="b_0_address0">out, 1, ap_memory, b_0, array</column>
-<column name="b_0_ce0">out, 1, ap_memory, b_0, array</column>
-<column name="b_0_q0">in, 64, ap_memory, b_0, array</column>
-<column name="b_1_address0">out, 1, ap_memory, b_1, array</column>
-<column name="b_1_ce0">out, 1, ap_memory, b_1, array</column>
-<column name="b_1_q0">in, 64, ap_memory, b_1, array</column>
-<column name="b_2_address0">out, 1, ap_memory, b_2, array</column>
-<column name="b_2_ce0">out, 1, ap_memory, b_2, array</column>
-<column name="b_2_q0">in, 64, ap_memory, b_2, array</column>
-<column name="b_3_address0">out, 1, ap_memory, b_3, array</column>
-<column name="b_3_ce0">out, 1, ap_memory, b_3, array</column>
-<column name="b_3_q0">in, 64, ap_memory, b_3, array</column>
-<column name="b_4_address0">out, 1, ap_memory, b_4, array</column>
-<column name="b_4_ce0">out, 1, ap_memory, b_4, array</column>
-<column name="b_4_q0">in, 64, ap_memory, b_4, array</column>
-<column name="b_5_address0">out, 1, ap_memory, b_5, array</column>
-<column name="b_5_ce0">out, 1, ap_memory, b_5, array</column>
-<column name="b_5_q0">in, 64, ap_memory, b_5, array</column>
-<column name="b_6_address0">out, 1, ap_memory, b_6, array</column>
-<column name="b_6_ce0">out, 1, ap_memory, b_6, array</column>
-<column name="b_6_q0">in, 64, ap_memory, b_6, array</column>
-<column name="b_7_address0">out, 1, ap_memory, b_7, array</column>
-<column name="b_7_ce0">out, 1, ap_memory, b_7, array</column>
-<column name="b_7_q0">in, 64, ap_memory, b_7, array</column>
+<column name="PKB_address0">out, 6, ap_memory, PKB, array</column>
+<column name="PKB_ce0">out, 1, ap_memory, PKB, array</column>
+<column name="PKB_q0">in, 64, ap_memory, PKB, array</column>
+<column name="PKB_address1">out, 6, ap_memory, PKB, array</column>
+<column name="PKB_ce1">out, 1, ap_memory, PKB, array</column>
+<column name="PKB_q1">in, 64, ap_memory, PKB, array</column>
+<column name="c_read">in, 64, ap_none, c_read, scalar</column>
+<column name="c_read_174">in, 64, ap_none, c_read_174, scalar</column>
+<column name="c_read_175">in, 64, ap_none, c_read_175, scalar</column>
+<column name="c_read_176">in, 64, ap_none, c_read_176, scalar</column>
+<column name="c_read_177">in, 64, ap_none, c_read_177, scalar</column>
+<column name="c_read_178">in, 64, ap_none, c_read_178, scalar</column>
+<column name="c_read_179">in, 64, ap_none, c_read_179, scalar</column>
+<column name="c_read_180">in, 64, ap_none, c_read_180, scalar</column>
 </table>
 </item>
 </section>

@@ -240,19 +240,19 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>_ln58</name>
-						<fileName>src/fpx.cpp</fileName>
+						<name>_ln283</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>58</lineNumber>
-						<contextFuncName>fpmul503_mont</contextFuncName>
-						<contextNormFuncName>fpmul503_mont</contextNormFuncName>
+						<lineNumber>283</lineNumber>
+						<contextFuncName>mp_mul</contextFuncName>
+						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
 								<second>
-									<count>2</count>
+									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
@@ -267,6 +267,13 @@
 											<second>from_mont</second>
 										</first>
 										<second>39</second>
+									</item>
+									<item>
+										<first>
+											<first>src/generic/fp_generic.cpp</first>
+											<second>mp_mul</second>
+										</first>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -291,7 +298,7 @@
 					<item>24</item>
 					<item>26</item>
 					<item>27</item>
-					<item>28</item>
+					<item>41</item>
 					<item>48</item>
 					<item>50</item>
 				</oprand_edges>
@@ -300,7 +307,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
+				<m_delay>1.42</m_delay>
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -356,9 +363,9 @@
 				<oprand_edges>
 					<count>6</count>
 					<item_version>0</item_version>
+					<item>29</item>
 					<item>30</item>
 					<item>31</item>
-					<item>32</item>
 					<item>42</item>
 					<item>47</item>
 					<item>51</item>
@@ -403,9 +410,9 @@
 				<oprand_edges>
 					<count>6</count>
 					<item_version>0</item_version>
+					<item>33</item>
 					<item>34</item>
 					<item>35</item>
-					<item>36</item>
 					<item>43</item>
 					<item>46</item>
 					<item>52</item>
@@ -450,7 +457,7 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>37</item>
+					<item>36</item>
 					<item>49</item>
 				</oprand_edges>
 				<opcode>load</opcode>
@@ -493,9 +500,9 @@
 				<oprand_edges>
 					<count>6</count>
 					<item_version>0</item_version>
+					<item>38</item>
 					<item>39</item>
 					<item>40</item>
-					<item>41</item>
 					<item>44</item>
 					<item>45</item>
 					<item>53</item>
@@ -635,7 +642,7 @@
 					<Obj>
 						<type>2</type>
 						<id>22</id>
-						<name>mp_mul_4111</name>
+						<name>mul_4111</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -659,7 +666,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.4111&gt;</content>
+				<content>&lt;constant:mul.4111&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_15">
 				<Value>
@@ -696,7 +703,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>29</id>
+						<id>28</id>
 						<name>rdc_mont_47</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -727,8 +734,8 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>33</id>
-						<name>from_mont_33_Pipeline_VITIS_LOOP_101_1</name>
+						<id>32</id>
+						<name>from_mont_33_Pipeline_VITIS_LOOP_105_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -752,14 +759,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:from_mont.33_Pipeline_VITIS_LOOP_101_1&gt;</content>
+				<content>&lt;constant:from_mont.33_Pipeline_VITIS_LOOP_105_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_18">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>38</id>
-						<name>from_mont_33_Pipeline_VITIS_LOOP_107_2</name>
+						<id>37</id>
+						<name>from_mont_33_Pipeline_VITIS_LOOP_111_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -783,7 +790,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:from_mont.33_Pipeline_VITIS_LOOP_107_2&gt;</content>
+				<content>&lt;constant:from_mont.33_Pipeline_VITIS_LOOP_111_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -884,49 +891,49 @@
 			<item class_id_reference="20" object_id="_27">
 				<id>27</id>
 				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
+				<source_obj>7</source_obj>
 				<sink_obj>9</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_28">
-				<id>28</id>
+				<id>29</id>
 				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>9</sink_obj>
+				<source_obj>28</source_obj>
+				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_29">
 				<id>30</id>
 				<edge_type>1</edge_type>
-				<source_obj>29</source_obj>
+				<source_obj>7</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_30">
 				<id>31</id>
 				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
+				<source_obj>2</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_31">
-				<id>32</id>
+				<id>33</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
-				<sink_obj>10</sink_obj>
+				<source_obj>32</source_obj>
+				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_32">
 				<id>34</id>
 				<edge_type>1</edge_type>
-				<source_obj>33</source_obj>
+				<source_obj>2</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_33">
 				<id>35</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>6</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -934,35 +941,35 @@
 				<id>36</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
-				<sink_obj>11</sink_obj>
+				<sink_obj>12</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_35">
-				<id>37</id>
+				<id>38</id>
 				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
-				<sink_obj>12</sink_obj>
+				<source_obj>37</source_obj>
+				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_36">
 				<id>39</id>
 				<edge_type>1</edge_type>
-				<source_obj>38</source_obj>
+				<source_obj>2</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_37">
 				<id>40</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>12</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_38">
 				<id>41</id>
 				<edge_type>1</edge_type>
-				<source_obj>12</source_obj>
-				<sink_obj>13</sink_obj>
+				<source_obj>3</source_obj>
+				<sink_obj>9</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_39">
@@ -1072,8 +1079,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>272</mMinLatency>
-			<mMaxLatency>476</mMaxLatency>
+			<mMinLatency>186</mMinLatency>
+			<mMaxLatency>292</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1552,7 +1559,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_from_mont_33_Pipeline_VITIS_LOOP_101_1_fu_58</first>
+			<first>grp_from_mont_33_Pipeline_VITIS_LOOP_105_1_fu_58</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1561,7 +1568,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_from_mont_33_Pipeline_VITIS_LOOP_107_2_fu_67</first>
+			<first>grp_from_mont_33_Pipeline_VITIS_LOOP_111_2_fu_67</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1570,7 +1577,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_mp_mul_4111_fu_38</first>
+			<first>grp_mul_4111_fu_38</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

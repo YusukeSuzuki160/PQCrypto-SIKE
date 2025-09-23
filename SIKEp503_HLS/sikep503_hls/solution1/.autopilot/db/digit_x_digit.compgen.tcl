@@ -16,7 +16,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 542 \
+    id 242 \
     name a \
     type other \
     dir I \
@@ -31,7 +31,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 543 \
+    id 243 \
     name b \
     type other \
     dir I \

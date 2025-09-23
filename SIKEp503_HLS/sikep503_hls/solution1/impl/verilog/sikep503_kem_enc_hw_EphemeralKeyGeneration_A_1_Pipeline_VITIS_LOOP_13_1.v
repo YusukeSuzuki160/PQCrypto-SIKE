@@ -90,15 +90,15 @@ wire    ap_block_pp0_stage0;
 reg   [3:0] i_fu_60;
 wire   [3:0] add_ln13_fu_219_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_301;
+reg   [3:0] ap_sig_allocacmp_i_403;
 reg   [63:0] empty_fu_64;
-reg   [63:0] empty_585_fu_68;
-reg   [63:0] empty_586_fu_72;
-reg   [63:0] empty_587_fu_76;
-reg   [63:0] empty_588_fu_80;
-reg   [63:0] empty_589_fu_84;
-reg   [63:0] empty_590_fu_88;
-reg   [63:0] empty_591_fu_92;
+reg   [63:0] empty_645_fu_68;
+reg   [63:0] empty_646_fu_72;
+reg   [63:0] empty_647_fu_76;
+reg   [63:0] empty_648_fu_80;
+reg   [63:0] empty_649_fu_84;
+reg   [63:0] empty_650_fu_88;
+reg   [63:0] empty_651_fu_92;
 wire    ap_block_pp0_stage0_01001;
 reg    B_gen_1_ce0_local;
 reg    ap_done_reg;
@@ -117,13 +117,13 @@ initial begin
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 i_fu_60 = 4'd0;
 #0 empty_fu_64 = 64'd0;
-#0 empty_585_fu_68 = 64'd0;
-#0 empty_586_fu_72 = 64'd0;
-#0 empty_587_fu_76 = 64'd0;
-#0 empty_588_fu_80 = 64'd0;
-#0 empty_589_fu_84 = 64'd0;
-#0 empty_590_fu_88 = 64'd0;
-#0 empty_591_fu_92 = 64'd0;
+#0 empty_645_fu_68 = 64'd0;
+#0 empty_646_fu_72 = 64'd0;
+#0 empty_647_fu_76 = 64'd0;
+#0 empty_648_fu_80 = 64'd0;
+#0 empty_649_fu_84 = 64'd0;
+#0 empty_650_fu_88 = 64'd0;
+#0 empty_651_fu_92 = 64'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -177,9 +177,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_585_fu_68 <= 64'd0;
+            empty_645_fu_68 <= 64'd0;
         end else if (((trunc_ln13_reg_377 == 3'd5) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            empty_585_fu_68 <= B_gen_1_q0;
+            empty_645_fu_68 <= B_gen_1_q0;
         end
     end
 end
@@ -187,9 +187,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_586_fu_72 <= 64'd0;
+            empty_646_fu_72 <= 64'd0;
         end else if (((trunc_ln13_reg_377 == 3'd4) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            empty_586_fu_72 <= B_gen_1_q0;
+            empty_646_fu_72 <= B_gen_1_q0;
         end
     end
 end
@@ -197,9 +197,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_587_fu_76 <= 64'd0;
+            empty_647_fu_76 <= 64'd0;
         end else if (((trunc_ln13_reg_377 == 3'd3) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            empty_587_fu_76 <= B_gen_1_q0;
+            empty_647_fu_76 <= B_gen_1_q0;
         end
     end
 end
@@ -207,9 +207,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_588_fu_80 <= 64'd0;
+            empty_648_fu_80 <= 64'd0;
         end else if (((trunc_ln13_reg_377 == 3'd2) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            empty_588_fu_80 <= B_gen_1_q0;
+            empty_648_fu_80 <= B_gen_1_q0;
         end
     end
 end
@@ -217,9 +217,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_589_fu_84 <= 64'd0;
+            empty_649_fu_84 <= 64'd0;
         end else if (((trunc_ln13_reg_377 == 3'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            empty_589_fu_84 <= B_gen_1_q0;
+            empty_649_fu_84 <= B_gen_1_q0;
         end
     end
 end
@@ -227,9 +227,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_590_fu_88 <= 64'd0;
+            empty_650_fu_88 <= 64'd0;
         end else if (((trunc_ln13_reg_377 == 3'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            empty_590_fu_88 <= B_gen_1_q0;
+            empty_650_fu_88 <= B_gen_1_q0;
         end
     end
 end
@@ -237,9 +237,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_591_fu_92 <= 64'd0;
+            empty_651_fu_92 <= 64'd0;
         end else if (((trunc_ln13_reg_377 == 3'd7) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
-            empty_591_fu_92 <= B_gen_1_q0;
+            empty_651_fu_92 <= B_gen_1_q0;
         end
     end
 end
@@ -320,9 +320,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_301 = 4'd0;
+        ap_sig_allocacmp_i_403 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_301 = i_fu_60;
+        ap_sig_allocacmp_i_403 = i_fu_60;
     end
 end
 
@@ -405,7 +405,7 @@ assign B_gen_1_address0 = zext_ln13_fu_225_p1;
 
 assign B_gen_1_ce0 = B_gen_1_ce0_local;
 
-assign add_ln13_fu_219_p2 = (ap_sig_allocacmp_i_301 + 4'd1);
+assign add_ln13_fu_219_p2 = (ap_sig_allocacmp_i_403 + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -427,26 +427,26 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln13_fu_213_p2 = ((ap_sig_allocacmp_i_301 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln13_fu_213_p2 = ((ap_sig_allocacmp_i_403 == 4'd8) ? 1'b1 : 1'b0);
 
-assign p_out = empty_591_fu_92;
+assign p_out = empty_651_fu_92;
 
-assign p_out1 = empty_590_fu_88;
+assign p_out1 = empty_650_fu_88;
 
-assign p_out2 = empty_589_fu_84;
+assign p_out2 = empty_649_fu_84;
 
-assign p_out3 = empty_588_fu_80;
+assign p_out3 = empty_648_fu_80;
 
-assign p_out4 = empty_587_fu_76;
+assign p_out4 = empty_647_fu_76;
 
-assign p_out5 = empty_586_fu_72;
+assign p_out5 = empty_646_fu_72;
 
-assign p_out6 = empty_585_fu_68;
+assign p_out6 = empty_645_fu_68;
 
 assign p_out7 = empty_fu_64;
 
-assign trunc_ln13_fu_230_p1 = ap_sig_allocacmp_i_301[2:0];
+assign trunc_ln13_fu_230_p1 = ap_sig_allocacmp_i_403[2:0];
 
-assign zext_ln13_fu_225_p1 = ap_sig_allocacmp_i_301;
+assign zext_ln13_fu_225_p1 = ap_sig_allocacmp_i_403;
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1

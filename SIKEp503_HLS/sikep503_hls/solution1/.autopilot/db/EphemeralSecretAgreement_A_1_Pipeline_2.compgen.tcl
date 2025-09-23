@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2122 \
-    name C24 \
+    id 1490 \
+    name C24_3 \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename C24 \
+    corename C24_3 \
     op interface \
-    ports { C24_address0 { O 3 vector } C24_ce0 { O 1 bit } C24_we0 { O 1 bit } C24_d0 { O 64 vector } } \
+    ports { C24_3_address0 { O 2 vector } C24_3_ce0 { O 1 bit } C24_3_we0 { O 1 bit } C24_3_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'C24'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'C24_3'"
 }
 }
 
@@ -30,17 +30,55 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2123 \
+    id 1491 \
+    name C24_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename C24_2 \
+    op interface \
+    ports { C24_2_address0 { O 2 vector } C24_2_ce0 { O 1 bit } C24_2_we0 { O 1 bit } C24_2_d0 { O 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'C24_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1492 \
     name C24_1 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename C24_1 \
     op interface \
-    ports { C24_1_address0 { O 3 vector } C24_1_ce0 { O 1 bit } C24_1_we0 { O 1 bit } C24_1_d0 { O 64 vector } } \
+    ports { C24_1_address0 { O 2 vector } C24_1_ce0 { O 1 bit } C24_1_we0 { O 1 bit } C24_1_d0 { O 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'C24_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1493 \
+    name C24 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename C24 \
+    op interface \
+    ports { C24_address0 { O 2 vector } C24_ce0 { O 1 bit } C24_we0 { O 1 bit } C24_d0 { O 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'C24'"
 }
 }
 

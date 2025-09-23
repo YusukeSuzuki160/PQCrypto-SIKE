@@ -1,16 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-set name sikep503_kem_enc_hw_mul_512ns_503ns_1014_2_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sikep503_kem_enc_hw_fp2_decode_temp_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -22,17 +11,36 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2146 \
-    name PKB \
+    id 1548 \
+    name x_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename PKB \
+    corename x_0 \
     op interface \
-    ports { PKB_address0 { O 6 vector } PKB_ce0 { O 1 bit } PKB_we0 { O 8 vector } PKB_d0 { O 64 vector } PKB_q0 { I 64 vector } } \
+    ports { x_0_address0 { O 5 vector } x_0_ce0 { O 1 bit } x_0_we0 { O 1 bit } x_0_d0 { O 64 vector } x_0_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'PKB'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1550 \
+    name x_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename x_1 \
+    op interface \
+    ports { x_1_address0 { O 5 vector } x_1_ce0 { O 1 bit } x_1_we0 { O 1 bit } x_1_d0 { O 64 vector } x_1_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x_1'"
 }
 }
 
@@ -40,7 +48,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2144 \
+    id 1546 \
     name gmem \
     type other \
     dir I \
@@ -55,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2145 \
+    id 1547 \
     name enc \
     type other \
     dir I \
@@ -64,6 +72,36 @@ eval "cg_default_interface_gen_dc { \
     corename dc_enc \
     op interface \
     ports { enc { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1549 \
+    name x_0_offset \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_x_0_offset \
+    op interface \
+    ports { x_0_offset { I 2 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1551 \
+    name x_1_offset \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_x_1_offset \
+    op interface \
+    ports { x_1_offset { I 2 vector } } \
 } "
 }
 

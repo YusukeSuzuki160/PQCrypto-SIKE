@@ -30,7 +30,7 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [3:0] phiP_X_address0;
+output  [2:0] phiP_X_address0;
 output   phiP_X_ce0;
 output   phiP_X_we0;
 output  [63:0] phiP_X_d0;
@@ -46,18 +46,18 @@ wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln13_fu_69_p2;
+wire   [0:0] icmp_ln13_fu_77_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [63:0] zext_ln13_fu_81_p1;
-reg   [63:0] zext_ln13_reg_101;
+wire   [63:0] zext_ln13_fu_89_p1;
+reg   [63:0] zext_ln13_reg_109;
 wire    ap_block_pp0_stage0_11001;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_fu_30;
-wire   [3:0] add_ln13_fu_75_p2;
+reg   [3:0] i_fu_38;
+wire   [3:0] add_ln13_fu_83_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_412;
+reg   [3:0] ap_sig_allocacmp_i_294;
 reg    B_gen_1_ce0_local;
 reg    phiP_X_we0_local;
 reg    phiP_X_ce0_local;
@@ -75,7 +75,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_fu_30 = 4'd0;
+#0 i_fu_38 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -128,17 +128,17 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln13_fu_69_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_fu_30 <= add_ln13_fu_75_p2;
+        if (((icmp_ln13_fu_77_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_fu_38 <= add_ln13_fu_83_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_30 <= 4'd0;
+            i_fu_38 <= 4'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        zext_ln13_reg_101[3 : 0] <= zext_ln13_fu_81_p1[3 : 0];
+        zext_ln13_reg_109[3 : 0] <= zext_ln13_fu_89_p1[3 : 0];
     end
 end
 
@@ -151,7 +151,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln13_fu_69_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln13_fu_77_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -192,9 +192,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_412 = 4'd0;
+        ap_sig_allocacmp_i_294 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_412 = i_fu_30;
+        ap_sig_allocacmp_i_294 = i_fu_38;
     end
 end
 
@@ -225,11 +225,11 @@ always @ (*) begin
     endcase
 end
 
-assign B_gen_1_address0 = zext_ln13_fu_81_p1;
+assign B_gen_1_address0 = zext_ln13_fu_89_p1;
 
 assign B_gen_1_ce0 = B_gen_1_ce0_local;
 
-assign add_ln13_fu_75_p2 = (ap_sig_allocacmp_i_412 + 4'd1);
+assign add_ln13_fu_83_p2 = (ap_sig_allocacmp_i_294 + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -249,9 +249,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln13_fu_69_p2 = ((ap_sig_allocacmp_i_412 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln13_fu_77_p2 = ((ap_sig_allocacmp_i_294 == 4'd8) ? 1'b1 : 1'b0);
 
-assign phiP_X_address0 = zext_ln13_reg_101;
+assign phiP_X_address0 = zext_ln13_reg_109;
 
 assign phiP_X_ce0 = phiP_X_ce0_local;
 
@@ -259,10 +259,10 @@ assign phiP_X_d0 = B_gen_1_q0;
 
 assign phiP_X_we0 = phiP_X_we0_local;
 
-assign zext_ln13_fu_81_p1 = ap_sig_allocacmp_i_412;
+assign zext_ln13_fu_89_p1 = ap_sig_allocacmp_i_294;
 
 always @ (posedge ap_clk) begin
-    zext_ln13_reg_101[63:4] <= 60'b000000000000000000000000000000000000000000000000000000000000;
+    zext_ln13_reg_109[63:4] <= 60'b000000000000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1

@@ -79,10 +79,10 @@ newFuncRoot:3 %br_ln0 = br void %for.inc
 
 <Node id="7" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.inc:0 %i_352 = load i8 %i
+for.inc:0 %i_279 = load i8 %i
 
 ]]></Node>
-<StgValue><ssdm name="i_352"/></StgValue>
+<StgValue><ssdm name="i_279"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -94,7 +94,7 @@ for.inc:0 %i_352 = load i8 %i
 
 <Node id="8" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-for.inc:1 %icmp_ln53 = icmp_eq  i8 %i_352, i8 128
+for.inc:1 %icmp_ln53 = icmp_eq  i8 %i_279, i8 128
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln53"/></StgValue>
@@ -109,7 +109,7 @@ for.inc:1 %icmp_ln53 = icmp_eq  i8 %i_352, i8 128
 
 <Node id="9" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-for.inc:2 %add_ln53 = add i8 %i_352, i8 1
+for.inc:2 %add_ln53 = add i8 %i_279, i8 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln53"/></StgValue>
@@ -140,7 +140,7 @@ for.inc:3 %br_ln53 = br i1 %icmp_ln53, void %for.inc.split, void %for.inc13.preh
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:0 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3
+for.inc.split:0 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_82
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln51"/></StgValue>
@@ -172,7 +172,7 @@ for.inc.split:1 %speclooptripcount_ln51 = speclooptripcount void @_ssdm_op_SpecL
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:2 %specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, void @empty
+for.inc.split:2 %specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln53"/></StgValue>
@@ -188,7 +188,7 @@ for.inc.split:2 %specloopname_ln53 = specloopname void @_ssdm_op_SpecLoopName, v
 
 <Node id="15" bw="3" op_0_bw="8">
 <![CDATA[
-for.inc.split:3 %trunc_ln54 = trunc i8 %i_352
+for.inc.split:3 %trunc_ln54 = trunc i8 %i_279
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln54"/></StgValue>
@@ -236,7 +236,7 @@ for.inc.split:5 %shl_ln54 = shl i8 1, i8 %zext_ln54
 
 <Node id="18" bw="4" op_0_bw="4" op_1_bw="8" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-for.inc.split:6 %lshr_ln = partselect i4 @_ssdm_op_PartSelect.i4.i8.i32.i32, i8 %i_352, i32 3, i32 6
+for.inc.split:6 %lshr_ln = partselect i4 @_ssdm_op_PartSelect.i4.i8.i32.i32, i8 %i_279, i32 3, i32 6
 
 ]]></Node>
 <StgValue><ssdm name="lshr_ln"/></StgValue>

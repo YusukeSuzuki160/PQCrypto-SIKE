@@ -1382,8 +1382,21 @@ static void fp2_encode(const f2elm_t x, unsigned char *enc)
     from_fp2mont(x, t);
     for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
     {
-        enc[i] = ((unsigned char *)t)[i];
-        enc[i + 2 * ((503 + 7) / 8) / 2] = ((unsigned char *)t)[i + 512 / 8];
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            enc[i] = (unsigned char)(t[0][word_idx] >> (byte_idx * 8));
+        }
+
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            enc[i + 2 * ((503 + 7) / 8) / 2] = (unsigned char)(t[1][word_idx] >> (byte_idx * 8));
+        }
     }
 }
 
@@ -1391,13 +1404,35 @@ static void fp2_decode(const unsigned char *enc, f2elm_t x)
 {
     unsigned int i;
 
-    for (i = 0; i < 2 * (512 / 8); i++)
-        ((unsigned char *)x)[i] = 0;
+
+    for (i = 0; i < 2; i++)
+    {
+        for (unsigned int j = 0; j < 8; j++)
+        {
+            x[i][j] = 0;
+        }
+    }
+
+
     for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
     {
-        ((unsigned char *)x)[i] = enc[i];
-        ((unsigned char *)x)[i + 512 / 8] = enc[i + 2 * ((503 + 7) / 8) / 2];
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            x[0][word_idx] |= ((digit_t)enc[i]) << (byte_idx * 8);
+        }
+
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            x[1][word_idx] |= ((digit_t)enc[i + 2 * ((503 + 7) / 8) / 2]) << (byte_idx * 8);
+        }
     }
+
     to_fp2mont(x, x);
 }
 
@@ -1433,7 +1468,6 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     fpcopy503((digit_t *)&Montgomery_one, (phiP->Z)[0]);
     fpcopy503((digit_t *)&Montgomery_one, (phiQ->Z)[0]);
     fpcopy503((digit_t *)&Montgomery_one, (phiR->Z)[0]);
-
 
 
     fpcopy503((digit_t *)&Montgomery_one, A24plus[0]);
@@ -1583,7 +1617,7 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[7], npts = 0, ii = 0;
-# 257 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.cpp"
+# 291 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/sidh.cpp"
     fp2_decode(PublicKeyB, PKB[0]);
     fp2_decode(PublicKeyB + 2 * ((503 + 7) / 8), PKB[1]);
     fp2_decode(PublicKeyB + 2 * 2 * ((503 + 7) / 8), PKB[2]);

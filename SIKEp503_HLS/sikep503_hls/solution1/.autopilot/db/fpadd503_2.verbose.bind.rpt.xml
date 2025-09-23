@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_2'" level="0">
-<item name = "Date">Wed Jul 30 15:22:12 2025
+<item name = "Date">Tue Sep 23 15:41:03 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.096 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.133 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,49 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7, 7, 70.000 ns, 70.000 ns, 1, 1, yes</column>
+<column name="">59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="tmp_is_digit_lessthan_ct_fu_190">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_s_is_digit_lessthan_ct_fu_198">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="borrowReg_is_digit_lessthan_ct_fu_205">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1572_is_digit_lessthan_ct_fu_212">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1573_is_digit_lessthan_ct_fu_218">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1574_is_digit_lessthan_ct_fu_224">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1575_is_digit_lessthan_ct_fu_231">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1576_is_digit_lessthan_ct_fu_237">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1577_is_digit_lessthan_ct_fu_243">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1578_is_digit_lessthan_ct_fu_250">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1579_is_digit_lessthan_ct_fu_256">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1581_is_digit_lessthan_ct_fu_262">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1582_is_digit_lessthan_ct_fu_268">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1584_is_digit_lessthan_ct_fu_274">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1585_is_digit_lessthan_ct_fu_280">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1587_is_digit_lessthan_ct_fu_286">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1588_is_digit_lessthan_ct_fu_292">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1571_is_digit_lessthan_ct_fu_298">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1580_is_digit_lessthan_ct_fu_305">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1583_is_digit_lessthan_ct_fu_312">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1586_is_digit_lessthan_ct_fu_319">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1589_is_digit_lessthan_ct_fu_326">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1590_is_digit_lessthan_ct_fu_333">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1591_is_digit_lessthan_ct_fu_340">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1592_is_digit_lessthan_ct_fu_346">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1593_is_digit_lessthan_ct_fu_352">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1594_is_digit_lessthan_ct_fu_358">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1595_is_digit_lessthan_ct_fu_364">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1596_is_digit_lessthan_ct_fu_370">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1597_is_digit_lessthan_ct_fu_376">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1598_is_digit_lessthan_ct_fu_382">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1599_is_digit_lessthan_ct_fu_388">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1600_is_digit_lessthan_ct_fu_394">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1601_is_digit_lessthan_ct_fu_400">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1602_is_digit_lessthan_ct_fu_406">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="tmp_1603_is_digit_lessthan_ct_fu_412">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_fpadd503_2_Pipeline_VITIS_LOOP_33_1_fu_26">fpadd503_2_Pipeline_VITIS_LOOP_33_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_2_Pipeline_VITIS_LOOP_39_2_fu_34">fpadd503_2_Pipeline_VITIS_LOOP_39_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_2_Pipeline_VITIS_LOOP_46_3_fu_45">fpadd503_2_Pipeline_VITIS_LOOP_46_3, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

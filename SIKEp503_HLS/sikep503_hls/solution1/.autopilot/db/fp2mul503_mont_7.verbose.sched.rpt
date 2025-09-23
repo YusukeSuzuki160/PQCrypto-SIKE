@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_7'
 ================================================================
-* Date:           Wed Jul 30 15:20:29 2025
+* Date:           Tue Sep 23 15:43:10 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.005 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+-----------+-----+------+---------+
-    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
-    |   min   |   max   |    min   |    max    | min |  max |   Type  |
-    +---------+---------+----------+-----------+-----+------+---------+
-    |      584|     1005|  5.840 us|  10.050 us|  584|  1005|       no|
-    +---------+---------+----------+-----------+-----+------+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -65,7 +65,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 14
+* Number of FSM states : 12
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -81,229 +81,82 @@ IsGatedGlobalClock: 0
 9 --> 10 
 10 --> 11 
 11 --> 12 
-12 --> 13 
-13 --> 14 
-14 --> 
+12 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.71>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 15 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/fpx.cpp:169]   --->   Operation 16 'alloca' 't1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%t2 = alloca i64 1" [src/fpx.cpp:169]   --->   Operation 17 'alloca' 't2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tt1 = alloca i64 1" [src/fpx.cpp:170]   --->   Operation 18 'alloca' 'tt1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tt2 = alloca i64 1" [src/fpx.cpp:170]   --->   Operation 19 'alloca' 'tt2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tt3 = alloca i64 1" [src/fpx.cpp:170]   --->   Operation 20 'alloca' 'tt3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%a_0_addr = getelementptr i64 %a_0, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 21 'getelementptr' 'a_0_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%a_1_addr = getelementptr i64 %a_1, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 22 'getelementptr' 'a_1_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%a_2_addr = getelementptr i64 %a_2, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 23 'getelementptr' 'a_2_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%a_3_addr = getelementptr i64 %a_3, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 24 'getelementptr' 'a_3_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%a_4_addr = getelementptr i64 %a_4, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 25 'getelementptr' 'a_4_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%a_5_addr = getelementptr i64 %a_5, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 26 'getelementptr' 'a_5_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%a_6_addr = getelementptr i64 %a_6, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 27 'getelementptr' 'a_6_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%a_7_addr = getelementptr i64 %a_7, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 28 'getelementptr' 'a_7_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%b_0_addr = getelementptr i64 %b_0, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 29 'getelementptr' 'b_0_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%b_1_addr = getelementptr i64 %b_1, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 30 'getelementptr' 'b_1_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%b_2_addr = getelementptr i64 %b_2, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 31 'getelementptr' 'b_2_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%b_3_addr = getelementptr i64 %b_3, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 32 'getelementptr' 'b_3_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%b_4_addr = getelementptr i64 %b_4, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 33 'getelementptr' 'b_4_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%b_5_addr = getelementptr i64 %b_5, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 34 'getelementptr' 'b_5_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%b_6_addr = getelementptr i64 %b_6, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 35 'getelementptr' 'b_6_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%b_7_addr = getelementptr i64 %b_7, i64 0, i64 0" [src/fpx.cpp:174]   --->   Operation 36 'getelementptr' 'b_7_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 37 [2/2] (0.71ns)   --->   "%a_0_load_2 = load i1 %a_0_addr" [src/fpx.cpp:174]   --->   Operation 37 'load' 'a_0_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 38 [2/2] (0.71ns)   --->   "%a_1_load_2 = load i1 %a_1_addr" [src/fpx.cpp:174]   --->   Operation 38 'load' 'a_1_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 39 [2/2] (0.71ns)   --->   "%a_2_load_2 = load i1 %a_2_addr" [src/fpx.cpp:174]   --->   Operation 39 'load' 'a_2_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 40 [2/2] (0.71ns)   --->   "%a_3_load_2 = load i1 %a_3_addr" [src/fpx.cpp:174]   --->   Operation 40 'load' 'a_3_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 41 [2/2] (0.71ns)   --->   "%a_4_load_2 = load i1 %a_4_addr" [src/fpx.cpp:174]   --->   Operation 41 'load' 'a_4_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 42 [2/2] (0.71ns)   --->   "%a_5_load_2 = load i1 %a_5_addr" [src/fpx.cpp:174]   --->   Operation 42 'load' 'a_5_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 43 [2/2] (0.71ns)   --->   "%a_6_load_2 = load i1 %a_6_addr" [src/fpx.cpp:174]   --->   Operation 43 'load' 'a_6_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 44 [2/2] (0.71ns)   --->   "%a_7_load_2 = load i1 %a_7_addr" [src/fpx.cpp:174]   --->   Operation 44 'load' 'a_7_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 45 [2/2] (0.71ns)   --->   "%b_0_load_3 = load i1 %b_0_addr" [src/fpx.cpp:174]   --->   Operation 45 'load' 'b_0_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 46 [2/2] (0.71ns)   --->   "%b_1_load_3 = load i1 %b_1_addr" [src/fpx.cpp:174]   --->   Operation 46 'load' 'b_1_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 47 [2/2] (0.71ns)   --->   "%b_2_load_3 = load i1 %b_2_addr" [src/fpx.cpp:174]   --->   Operation 47 'load' 'b_2_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 48 [2/2] (0.71ns)   --->   "%b_3_load_3 = load i1 %b_3_addr" [src/fpx.cpp:174]   --->   Operation 48 'load' 'b_3_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 49 [2/2] (0.71ns)   --->   "%b_4_load_3 = load i1 %b_4_addr" [src/fpx.cpp:174]   --->   Operation 49 'load' 'b_4_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 50 [2/2] (0.71ns)   --->   "%b_5_load_3 = load i1 %b_5_addr" [src/fpx.cpp:174]   --->   Operation 50 'load' 'b_5_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 51 [2/2] (0.71ns)   --->   "%b_6_load_3 = load i1 %b_6_addr" [src/fpx.cpp:174]   --->   Operation 51 'load' 'b_6_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 52 [2/2] (0.71ns)   --->   "%b_7_load_3 = load i1 %b_7_addr" [src/fpx.cpp:174]   --->   Operation 52 'load' 'b_7_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%a_0_addr_1 = getelementptr i64 %a_0, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 53 'getelementptr' 'a_0_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%a_1_addr_1 = getelementptr i64 %a_1, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 54 'getelementptr' 'a_1_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%a_2_addr_1 = getelementptr i64 %a_2, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 55 'getelementptr' 'a_2_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%a_3_addr_1 = getelementptr i64 %a_3, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 56 'getelementptr' 'a_3_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%a_4_addr_1 = getelementptr i64 %a_4, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 57 'getelementptr' 'a_4_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%a_5_addr_1 = getelementptr i64 %a_5, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 58 'getelementptr' 'a_5_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%a_6_addr_1 = getelementptr i64 %a_6, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 59 'getelementptr' 'a_6_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%a_7_addr_1 = getelementptr i64 %a_7, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 60 'getelementptr' 'a_7_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%b_0_addr_2 = getelementptr i64 %b_0, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 61 'getelementptr' 'b_0_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%b_1_addr_2 = getelementptr i64 %b_1, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 62 'getelementptr' 'b_1_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%b_2_addr_2 = getelementptr i64 %b_2, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 63 'getelementptr' 'b_2_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%b_3_addr_2 = getelementptr i64 %b_3, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 64 'getelementptr' 'b_3_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%b_4_addr_2 = getelementptr i64 %b_4, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 65 'getelementptr' 'b_4_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%b_5_addr_2 = getelementptr i64 %b_5, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 66 'getelementptr' 'b_5_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%b_6_addr_2 = getelementptr i64 %b_6, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 67 'getelementptr' 'b_6_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%b_7_addr_2 = getelementptr i64 %b_7, i64 0, i64 1" [src/fpx.cpp:175]   --->   Operation 68 'getelementptr' 'b_7_addr_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 69 [2/2] (0.71ns)   --->   "%a_0_load_3 = load i1 %a_0_addr_1" [src/fpx.cpp:175]   --->   Operation 69 'load' 'a_0_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 70 [2/2] (0.71ns)   --->   "%a_1_load_3 = load i1 %a_1_addr_1" [src/fpx.cpp:175]   --->   Operation 70 'load' 'a_1_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 71 [2/2] (0.71ns)   --->   "%a_2_load_3 = load i1 %a_2_addr_1" [src/fpx.cpp:175]   --->   Operation 71 'load' 'a_2_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 72 [2/2] (0.71ns)   --->   "%a_3_load_3 = load i1 %a_3_addr_1" [src/fpx.cpp:175]   --->   Operation 72 'load' 'a_3_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 73 [2/2] (0.71ns)   --->   "%a_4_load_3 = load i1 %a_4_addr_1" [src/fpx.cpp:175]   --->   Operation 73 'load' 'a_4_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 74 [2/2] (0.71ns)   --->   "%a_5_load_3 = load i1 %a_5_addr_1" [src/fpx.cpp:175]   --->   Operation 74 'load' 'a_5_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 75 [2/2] (0.71ns)   --->   "%a_6_load_3 = load i1 %a_6_addr_1" [src/fpx.cpp:175]   --->   Operation 75 'load' 'a_6_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 76 [2/2] (0.71ns)   --->   "%a_7_load_3 = load i1 %a_7_addr_1" [src/fpx.cpp:175]   --->   Operation 76 'load' 'a_7_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 77 [2/2] (0.71ns)   --->   "%b_0_load_4 = load i1 %b_0_addr_2" [src/fpx.cpp:175]   --->   Operation 77 'load' 'b_0_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 78 [2/2] (0.71ns)   --->   "%b_1_load_4 = load i1 %b_1_addr_2" [src/fpx.cpp:175]   --->   Operation 78 'load' 'b_1_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 79 [2/2] (0.71ns)   --->   "%b_2_load_4 = load i1 %b_2_addr_2" [src/fpx.cpp:175]   --->   Operation 79 'load' 'b_2_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 80 [2/2] (0.71ns)   --->   "%b_3_load_4 = load i1 %b_3_addr_2" [src/fpx.cpp:175]   --->   Operation 80 'load' 'b_3_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 81 [2/2] (0.71ns)   --->   "%b_4_load_4 = load i1 %b_4_addr_2" [src/fpx.cpp:175]   --->   Operation 81 'load' 'b_4_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 82 [2/2] (0.71ns)   --->   "%b_5_load_4 = load i1 %b_5_addr_2" [src/fpx.cpp:175]   --->   Operation 82 'load' 'b_5_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 83 [2/2] (0.71ns)   --->   "%b_6_load_4 = load i1 %b_6_addr_2" [src/fpx.cpp:175]   --->   Operation 83 'load' 'b_6_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_1 : Operation 84 [2/2] (0.71ns)   --->   "%b_7_load_4 = load i1 %b_7_addr_2" [src/fpx.cpp:175]   --->   Operation 84 'load' 'b_7_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 13 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/fpx.cpp:177]   --->   Operation 14 'alloca' 't1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%t2 = alloca i64 1" [src/fpx.cpp:177]   --->   Operation 15 'alloca' 't2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tt1 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 16 'alloca' 'tt1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tt2 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 17 'alloca' 'tt2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tt3 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 18 'alloca' 'tt3' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln182 = call void @mp_mul.1, i64 %a_0, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 19 'call' 'call_ln182' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln183 = call void @mp_mul.1, i64 %a_1, i64 %b_1, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 20 'call' 'call_ln183' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 0.71>
-ST_2 : Operation 85 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_0_load_2 = load i1 %a_0_addr" [src/fpx.cpp:174]   --->   Operation 85 'load' 'a_0_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 86 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_1_load_2 = load i1 %a_1_addr" [src/fpx.cpp:174]   --->   Operation 86 'load' 'a_1_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 87 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_2_load_2 = load i1 %a_2_addr" [src/fpx.cpp:174]   --->   Operation 87 'load' 'a_2_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 88 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_3_load_2 = load i1 %a_3_addr" [src/fpx.cpp:174]   --->   Operation 88 'load' 'a_3_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 89 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_4_load_2 = load i1 %a_4_addr" [src/fpx.cpp:174]   --->   Operation 89 'load' 'a_4_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 90 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_5_load_2 = load i1 %a_5_addr" [src/fpx.cpp:174]   --->   Operation 90 'load' 'a_5_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 91 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_6_load_2 = load i1 %a_6_addr" [src/fpx.cpp:174]   --->   Operation 91 'load' 'a_6_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 92 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_7_load_2 = load i1 %a_7_addr" [src/fpx.cpp:174]   --->   Operation 92 'load' 'a_7_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 93 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_0_load_3 = load i1 %b_0_addr" [src/fpx.cpp:174]   --->   Operation 93 'load' 'b_0_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 94 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_1_load_3 = load i1 %b_1_addr" [src/fpx.cpp:174]   --->   Operation 94 'load' 'b_1_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 95 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_2_load_3 = load i1 %b_2_addr" [src/fpx.cpp:174]   --->   Operation 95 'load' 'b_2_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 96 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_3_load_3 = load i1 %b_3_addr" [src/fpx.cpp:174]   --->   Operation 96 'load' 'b_3_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 97 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_4_load_3 = load i1 %b_4_addr" [src/fpx.cpp:174]   --->   Operation 97 'load' 'b_4_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 98 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_5_load_3 = load i1 %b_5_addr" [src/fpx.cpp:174]   --->   Operation 98 'load' 'b_5_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 99 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_6_load_3 = load i1 %b_6_addr" [src/fpx.cpp:174]   --->   Operation 99 'load' 'b_6_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 100 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_7_load_3 = load i1 %b_7_addr" [src/fpx.cpp:174]   --->   Operation 100 'load' 'b_7_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 101 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_0_load_3 = load i1 %a_0_addr_1" [src/fpx.cpp:175]   --->   Operation 101 'load' 'a_0_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 102 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_1_load_3 = load i1 %a_1_addr_1" [src/fpx.cpp:175]   --->   Operation 102 'load' 'a_1_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 103 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_2_load_3 = load i1 %a_2_addr_1" [src/fpx.cpp:175]   --->   Operation 103 'load' 'a_2_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 104 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_3_load_3 = load i1 %a_3_addr_1" [src/fpx.cpp:175]   --->   Operation 104 'load' 'a_3_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 105 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_4_load_3 = load i1 %a_4_addr_1" [src/fpx.cpp:175]   --->   Operation 105 'load' 'a_4_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 106 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_5_load_3 = load i1 %a_5_addr_1" [src/fpx.cpp:175]   --->   Operation 106 'load' 'a_5_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 107 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_6_load_3 = load i1 %a_6_addr_1" [src/fpx.cpp:175]   --->   Operation 107 'load' 'a_6_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 108 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_7_load_3 = load i1 %a_7_addr_1" [src/fpx.cpp:175]   --->   Operation 108 'load' 'a_7_load_3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 109 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_0_load_4 = load i1 %b_0_addr_2" [src/fpx.cpp:175]   --->   Operation 109 'load' 'b_0_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 110 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_1_load_4 = load i1 %b_1_addr_2" [src/fpx.cpp:175]   --->   Operation 110 'load' 'b_1_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 111 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_2_load_4 = load i1 %b_2_addr_2" [src/fpx.cpp:175]   --->   Operation 111 'load' 'b_2_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 112 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_3_load_4 = load i1 %b_3_addr_2" [src/fpx.cpp:175]   --->   Operation 112 'load' 'b_3_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 113 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_4_load_4 = load i1 %b_4_addr_2" [src/fpx.cpp:175]   --->   Operation 113 'load' 'b_4_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 114 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_5_load_4 = load i1 %b_5_addr_2" [src/fpx.cpp:175]   --->   Operation 114 'load' 'b_5_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 115 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_6_load_4 = load i1 %b_6_addr_2" [src/fpx.cpp:175]   --->   Operation 115 'load' 'b_6_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 116 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_7_load_4 = load i1 %b_7_addr_2" [src/fpx.cpp:175]   --->   Operation 116 'load' 'b_7_load_4' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 117 [2/2] (0.00ns)   --->   "%call_ln175 = call void @mp_mul.7, i64 %a_0_load_3, i64 %a_1_load_3, i64 %a_2_load_3, i64 %a_3_load_3, i64 %a_4_load_3, i64 %a_5_load_3, i64 %a_6_load_3, i64 %a_7_load_3, i64 %b_0_load_4, i64 %b_1_load_4, i64 %b_2_load_4, i64 %b_3_load_4, i64 %b_4_load_4, i64 %b_5_load_4, i64 %b_6_load_4, i64 %b_7_load_4, i64 %tt2" [src/fpx.cpp:175]   --->   Operation 117 'call' 'call_ln175' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 118 [2/2] (0.71ns)   --->   "%a_0_load = load i1 %a_0_addr" [src/fpx.cpp:174]   --->   Operation 118 'load' 'a_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 119 [2/2] (0.71ns)   --->   "%a_1_load = load i1 %a_1_addr" [src/fpx.cpp:174]   --->   Operation 119 'load' 'a_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 120 [2/2] (0.71ns)   --->   "%a_2_load = load i1 %a_2_addr" [src/fpx.cpp:174]   --->   Operation 120 'load' 'a_2_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 121 [2/2] (0.71ns)   --->   "%a_3_load = load i1 %a_3_addr" [src/fpx.cpp:174]   --->   Operation 121 'load' 'a_3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 122 [2/2] (0.71ns)   --->   "%a_4_load = load i1 %a_4_addr" [src/fpx.cpp:174]   --->   Operation 122 'load' 'a_4_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 123 [2/2] (0.71ns)   --->   "%a_5_load = load i1 %a_5_addr" [src/fpx.cpp:174]   --->   Operation 123 'load' 'a_5_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 124 [2/2] (0.71ns)   --->   "%a_6_load = load i1 %a_6_addr" [src/fpx.cpp:174]   --->   Operation 124 'load' 'a_6_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 125 [2/2] (0.71ns)   --->   "%a_7_load = load i1 %a_7_addr" [src/fpx.cpp:174]   --->   Operation 125 'load' 'a_7_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 126 [2/2] (0.71ns)   --->   "%a_0_load_1 = load i1 %a_0_addr_1" [src/fpx.cpp:175]   --->   Operation 126 'load' 'a_0_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 127 [2/2] (0.71ns)   --->   "%a_1_load_1 = load i1 %a_1_addr_1" [src/fpx.cpp:175]   --->   Operation 127 'load' 'a_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 128 [2/2] (0.71ns)   --->   "%a_2_load_1 = load i1 %a_2_addr_1" [src/fpx.cpp:175]   --->   Operation 128 'load' 'a_2_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 129 [2/2] (0.71ns)   --->   "%a_3_load_1 = load i1 %a_3_addr_1" [src/fpx.cpp:175]   --->   Operation 129 'load' 'a_3_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 130 [2/2] (0.71ns)   --->   "%a_4_load_1 = load i1 %a_4_addr_1" [src/fpx.cpp:175]   --->   Operation 130 'load' 'a_4_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 131 [2/2] (0.71ns)   --->   "%a_5_load_1 = load i1 %a_5_addr_1" [src/fpx.cpp:175]   --->   Operation 131 'load' 'a_5_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 132 [2/2] (0.71ns)   --->   "%a_6_load_1 = load i1 %a_6_addr_1" [src/fpx.cpp:175]   --->   Operation 132 'load' 'a_6_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 133 [2/2] (0.71ns)   --->   "%a_7_load_1 = load i1 %a_7_addr_1" [src/fpx.cpp:175]   --->   Operation 133 'load' 'a_7_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 134 [2/2] (0.71ns)   --->   "%b_0_load = load i1 %b_0_addr" [src/fpx.cpp:174]   --->   Operation 134 'load' 'b_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 135 [2/2] (0.71ns)   --->   "%b_1_load = load i1 %b_1_addr" [src/fpx.cpp:174]   --->   Operation 135 'load' 'b_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 136 [2/2] (0.71ns)   --->   "%b_2_load = load i1 %b_2_addr" [src/fpx.cpp:174]   --->   Operation 136 'load' 'b_2_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 137 [2/2] (0.71ns)   --->   "%b_3_load = load i1 %b_3_addr" [src/fpx.cpp:174]   --->   Operation 137 'load' 'b_3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 138 [2/2] (0.71ns)   --->   "%b_4_load = load i1 %b_4_addr" [src/fpx.cpp:174]   --->   Operation 138 'load' 'b_4_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 139 [2/2] (0.71ns)   --->   "%b_5_load = load i1 %b_5_addr" [src/fpx.cpp:174]   --->   Operation 139 'load' 'b_5_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 140 [2/2] (0.71ns)   --->   "%b_6_load = load i1 %b_6_addr" [src/fpx.cpp:174]   --->   Operation 140 'load' 'b_6_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 141 [2/2] (0.71ns)   --->   "%b_7_load = load i1 %b_7_addr" [src/fpx.cpp:174]   --->   Operation 141 'load' 'b_7_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 142 [2/2] (0.71ns)   --->   "%b_0_load_2 = load i1 %b_0_addr_2" [src/fpx.cpp:175]   --->   Operation 142 'load' 'b_0_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 143 [2/2] (0.71ns)   --->   "%b_1_load_2 = load i1 %b_1_addr_2" [src/fpx.cpp:175]   --->   Operation 143 'load' 'b_1_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 144 [2/2] (0.71ns)   --->   "%b_2_load_2 = load i1 %b_2_addr_2" [src/fpx.cpp:175]   --->   Operation 144 'load' 'b_2_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 145 [2/2] (0.71ns)   --->   "%b_3_load_2 = load i1 %b_3_addr_2" [src/fpx.cpp:175]   --->   Operation 145 'load' 'b_3_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 146 [2/2] (0.71ns)   --->   "%b_4_load_2 = load i1 %b_4_addr_2" [src/fpx.cpp:175]   --->   Operation 146 'load' 'b_4_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 147 [2/2] (0.71ns)   --->   "%b_5_load_2 = load i1 %b_5_addr_2" [src/fpx.cpp:175]   --->   Operation 147 'load' 'b_5_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 148 [2/2] (0.71ns)   --->   "%b_6_load_2 = load i1 %b_6_addr_2" [src/fpx.cpp:175]   --->   Operation 148 'load' 'b_6_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_2 : Operation 149 [2/2] (0.71ns)   --->   "%b_7_load_2 = load i1 %b_7_addr_2" [src/fpx.cpp:175]   --->   Operation 149 'load' 'b_7_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+State 2 <SV = 1> <Delay = 0.70>
+ST_2 : Operation 21 [1/2] (0.70ns)   --->   "%call_ln182 = call void @mp_mul.1, i64 %a_0, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 21 'call' 'call_ln182' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 22 [1/2] (0.70ns)   --->   "%call_ln183 = call void @mp_mul.1, i64 %a_1, i64 %b_1, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 22 'call' 'call_ln183' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 4.30>
-ST_3 : Operation 150 [2/2] (0.00ns)   --->   "%call_ln174 = call void @mp_mul.7, i64 %a_0_load_2, i64 %a_1_load_2, i64 %a_2_load_2, i64 %a_3_load_2, i64 %a_4_load_2, i64 %a_5_load_2, i64 %a_6_load_2, i64 %a_7_load_2, i64 %b_0_load_3, i64 %b_1_load_3, i64 %b_2_load_3, i64 %b_3_load_3, i64 %b_4_load_3, i64 %b_5_load_3, i64 %b_6_load_3, i64 %b_7_load_3, i64 %tt1" [src/fpx.cpp:174]   --->   Operation 150 'call' 'call_ln174' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 151 [1/2] (0.70ns)   --->   "%call_ln175 = call void @mp_mul.7, i64 %a_0_load_3, i64 %a_1_load_3, i64 %a_2_load_3, i64 %a_3_load_3, i64 %a_4_load_3, i64 %a_5_load_3, i64 %a_6_load_3, i64 %a_7_load_3, i64 %b_0_load_4, i64 %b_1_load_4, i64 %b_2_load_4, i64 %b_3_load_4, i64 %b_4_load_4, i64 %b_5_load_4, i64 %b_6_load_4, i64 %b_7_load_4, i64 %tt2" [src/fpx.cpp:175]   --->   Operation 151 'call' 'call_ln175' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 152 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_0_load = load i1 %a_0_addr" [src/fpx.cpp:174]   --->   Operation 152 'load' 'a_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 153 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_1_load = load i1 %a_1_addr" [src/fpx.cpp:174]   --->   Operation 153 'load' 'a_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 154 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_2_load = load i1 %a_2_addr" [src/fpx.cpp:174]   --->   Operation 154 'load' 'a_2_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 155 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_3_load = load i1 %a_3_addr" [src/fpx.cpp:174]   --->   Operation 155 'load' 'a_3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 156 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_4_load = load i1 %a_4_addr" [src/fpx.cpp:174]   --->   Operation 156 'load' 'a_4_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 157 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_5_load = load i1 %a_5_addr" [src/fpx.cpp:174]   --->   Operation 157 'load' 'a_5_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 158 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_6_load = load i1 %a_6_addr" [src/fpx.cpp:174]   --->   Operation 158 'load' 'a_6_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 159 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_7_load = load i1 %a_7_addr" [src/fpx.cpp:174]   --->   Operation 159 'load' 'a_7_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 160 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_0_load_1 = load i1 %a_0_addr_1" [src/fpx.cpp:175]   --->   Operation 160 'load' 'a_0_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 161 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_1_load_1 = load i1 %a_1_addr_1" [src/fpx.cpp:175]   --->   Operation 161 'load' 'a_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 162 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_2_load_1 = load i1 %a_2_addr_1" [src/fpx.cpp:175]   --->   Operation 162 'load' 'a_2_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 163 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_3_load_1 = load i1 %a_3_addr_1" [src/fpx.cpp:175]   --->   Operation 163 'load' 'a_3_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 164 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_4_load_1 = load i1 %a_4_addr_1" [src/fpx.cpp:175]   --->   Operation 164 'load' 'a_4_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 165 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_5_load_1 = load i1 %a_5_addr_1" [src/fpx.cpp:175]   --->   Operation 165 'load' 'a_5_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 166 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_6_load_1 = load i1 %a_6_addr_1" [src/fpx.cpp:175]   --->   Operation 166 'load' 'a_6_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 167 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_7_load_1 = load i1 %a_7_addr_1" [src/fpx.cpp:175]   --->   Operation 167 'load' 'a_7_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 168 [2/2] (3.59ns)   --->   "%call_ln174 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_1, i64 %a_0_load, i64 %a_1_load, i64 %a_2_load, i64 %a_3_load, i64 %a_4_load, i64 %a_5_load, i64 %a_6_load, i64 %a_7_load, i64 %a_0_load_1, i64 %a_1_load_1, i64 %a_2_load_1, i64 %a_3_load_1, i64 %a_4_load_1, i64 %a_5_load_1, i64 %a_6_load_1, i64 %a_7_load_1, i64 %t1" [src/fpx.cpp:174]   --->   Operation 168 'call' 'call_ln174' <Predicate = true> <Delay = 3.59> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 169 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_0_load = load i1 %b_0_addr" [src/fpx.cpp:174]   --->   Operation 169 'load' 'b_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 170 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_1_load = load i1 %b_1_addr" [src/fpx.cpp:174]   --->   Operation 170 'load' 'b_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 171 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_2_load = load i1 %b_2_addr" [src/fpx.cpp:174]   --->   Operation 171 'load' 'b_2_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 172 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_3_load = load i1 %b_3_addr" [src/fpx.cpp:174]   --->   Operation 172 'load' 'b_3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 173 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_4_load = load i1 %b_4_addr" [src/fpx.cpp:174]   --->   Operation 173 'load' 'b_4_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 174 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_5_load = load i1 %b_5_addr" [src/fpx.cpp:174]   --->   Operation 174 'load' 'b_5_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 175 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_6_load = load i1 %b_6_addr" [src/fpx.cpp:174]   --->   Operation 175 'load' 'b_6_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 176 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_7_load = load i1 %b_7_addr" [src/fpx.cpp:174]   --->   Operation 176 'load' 'b_7_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 177 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_0_load_2 = load i1 %b_0_addr_2" [src/fpx.cpp:175]   --->   Operation 177 'load' 'b_0_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 178 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_1_load_2 = load i1 %b_1_addr_2" [src/fpx.cpp:175]   --->   Operation 178 'load' 'b_1_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 179 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_2_load_2 = load i1 %b_2_addr_2" [src/fpx.cpp:175]   --->   Operation 179 'load' 'b_2_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 180 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_3_load_2 = load i1 %b_3_addr_2" [src/fpx.cpp:175]   --->   Operation 180 'load' 'b_3_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 181 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_4_load_2 = load i1 %b_4_addr_2" [src/fpx.cpp:175]   --->   Operation 181 'load' 'b_4_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 182 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_5_load_2 = load i1 %b_5_addr_2" [src/fpx.cpp:175]   --->   Operation 182 'load' 'b_5_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 183 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_6_load_2 = load i1 %b_6_addr_2" [src/fpx.cpp:175]   --->   Operation 183 'load' 'b_6_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 184 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_7_load_2 = load i1 %b_7_addr_2" [src/fpx.cpp:175]   --->   Operation 184 'load' 'b_7_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
-ST_3 : Operation 185 [2/2] (3.59ns)   --->   "%call_ln174 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_171, i64 %b_0_load, i64 %b_1_load, i64 %b_2_load, i64 %b_3_load, i64 %b_4_load, i64 %b_5_load, i64 %b_6_load, i64 %b_7_load, i64 %b_0_load_2, i64 %b_1_load_2, i64 %b_2_load_2, i64 %b_3_load_2, i64 %b_4_load_2, i64 %b_5_load_2, i64 %b_6_load_2, i64 %b_7_load_2, i64 %t2" [src/fpx.cpp:174]   --->   Operation 185 'call' 'call_ln174' <Predicate = true> <Delay = 3.59> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 23 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_378_1, i64 %a_0, i64 %a_1, i64 %t1"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_378_193, i64 %b_0, i64 %b_1, i64 %t2"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
-ST_4 : Operation 186 [1/2] (0.70ns)   --->   "%call_ln174 = call void @mp_mul.7, i64 %a_0_load_2, i64 %a_1_load_2, i64 %a_2_load_2, i64 %a_3_load_2, i64 %a_4_load_2, i64 %a_5_load_2, i64 %a_6_load_2, i64 %a_7_load_2, i64 %b_0_load_3, i64 %b_1_load_3, i64 %b_2_load_3, i64 %b_3_load_3, i64 %b_4_load_3, i64 %b_5_load_3, i64 %b_6_load_3, i64 %b_7_load_3, i64 %tt1" [src/fpx.cpp:174]   --->   Operation 186 'call' 'call_ln174' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 187 [1/2] (1.48ns)   --->   "%call_ln174 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_1, i64 %a_0_load, i64 %a_1_load, i64 %a_2_load, i64 %a_3_load, i64 %a_4_load, i64 %a_5_load, i64 %a_6_load, i64 %a_7_load, i64 %a_0_load_1, i64 %a_1_load_1, i64 %a_2_load_1, i64 %a_3_load_1, i64 %a_4_load_1, i64 %a_5_load_1, i64 %a_6_load_1, i64 %a_7_load_1, i64 %t1" [src/fpx.cpp:174]   --->   Operation 187 'call' 'call_ln174' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 188 [1/2] (1.48ns)   --->   "%call_ln174 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_171, i64 %b_0_load, i64 %b_1_load, i64 %b_2_load, i64 %b_3_load, i64 %b_4_load, i64 %b_5_load, i64 %b_6_load, i64 %b_7_load, i64 %b_0_load_2, i64 %b_1_load_2, i64 %b_2_load_2, i64 %b_3_load_2, i64 %b_4_load_2, i64 %b_5_load_2, i64 %b_6_load_2, i64 %b_7_load_2, i64 %t2" [src/fpx.cpp:174]   --->   Operation 188 'call' 'call_ln174' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 26 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_378_1, i64 %a_0, i64 %a_1, i64 %t1"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 27 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_378_193, i64 %b_0, i64 %b_1, i64 %t2"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 28 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
-State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 189 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_152_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 189 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 5 <SV = 4> <Delay = 0.27>
+ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 29 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 30 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_378_194, i64 %tt1, i64 %tt2"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.48>
-ST_6 : Operation 190 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_152_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 190 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 32 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 33 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_378_194, i64 %tt1, i64 %tt2"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
-State 7 <SV = 6> <Delay = 0.27>
-ST_7 : Operation 191 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 191 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 192 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_179_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 192 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
-ST_7 : Operation 193 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_172, i64 %tt1, i64 %tt2"   --->   Operation 193 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 7 <SV = 6> <Delay = 1.42>
+ST_7 : Operation 34 [2/2] (1.42ns)   --->   "%call_ln191 = call void @rdc_mont.4, i64 %tt3, i64 %c, i1 0, i64 %p503p1_1" [src/fpx.cpp:191]   --->   Operation 34 'call' 'call_ln191' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln193 = call void @mp_mul.5111, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 35 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 8 <SV = 7> <Delay = 1.48>
-ST_8 : Operation 194 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_179_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 194 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_8 : Operation 195 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_172, i64 %tt1, i64 %tt2"   --->   Operation 195 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+State 8 <SV = 7> <Delay = 0.70>
+ST_8 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln191 = call void @rdc_mont.4, i64 %tt3, i64 %c, i1 0, i64 %p503p1_1" [src/fpx.cpp:191]   --->   Operation 36 'call' 'call_ln191' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 37 [1/2] (0.70ns)   --->   "%call_ln193 = call void @mp_mul.5111, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 37 'call' 'call_ln193' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 196 [2/2] (0.00ns)   --->   "%call_ln183 = call void @rdc_mont.4, i64 %tt3, i64 %c_0_0, i64 %c_0_1, i64 %c_0_2, i64 %c_0_3, i64 %c_0_4, i64 %c_0_5, i64 %c_0_6, i64 %c_0_7, i64 %p503p1_1" [src/fpx.cpp:183]   --->   Operation 196 'call' 'call_ln183' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 197 [2/2] (0.00ns)   --->   "%call_ln185 = call void @mp_mul.1218, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:185]   --->   Operation 197 'call' 'call_ln185' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 38 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_160_195, i64 %tt2, i64 %tt1"   --->   Operation 38 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 10 <SV = 9> <Delay = 0.70>
-ST_10 : Operation 198 [1/2] (0.00ns)   --->   "%call_ln183 = call void @rdc_mont.4, i64 %tt3, i64 %c_0_0, i64 %c_0_1, i64 %c_0_2, i64 %c_0_3, i64 %c_0_4, i64 %c_0_5, i64 %c_0_6, i64 %c_0_7, i64 %p503p1_1" [src/fpx.cpp:183]   --->   Operation 198 'call' 'call_ln183' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 199 [1/2] (0.70ns)   --->   "%call_ln185 = call void @mp_mul.1218, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:185]   --->   Operation 199 'call' 'call_ln185' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+State 10 <SV = 9> <Delay = 1.48>
+ST_10 : Operation 39 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_160_195, i64 %tt2, i64 %tt1"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
-State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 200 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_152_173, i64 %tt2, i64 %tt1"   --->   Operation 200 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 11 <SV = 10> <Delay = 1.42>
+ST_11 : Operation 40 [2/2] (1.42ns)   --->   "%call_ln195 = call void @rdc_mont.4, i64 %tt2, i64 %c, i1 1, i64 %p503p1_1" [src/fpx.cpp:195]   --->   Operation 40 'call' 'call_ln195' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
-State 12 <SV = 11> <Delay = 1.48>
-ST_12 : Operation 201 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.7_Pipeline_VITIS_LOOP_152_173, i64 %tt2, i64 %tt1"   --->   Operation 201 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-
-State 13 <SV = 12> <Delay = 0.00>
-ST_13 : Operation 202 [2/2] (0.00ns)   --->   "%call_ln187 = call void @rdc_mont.4, i64 %tt2, i64 %c_1_0, i64 %c_1_1, i64 %c_1_2, i64 %c_1_3, i64 %c_1_4, i64 %c_1_5, i64 %c_1_6, i64 %c_1_7, i64 %p503p1_1" [src/fpx.cpp:187]   --->   Operation 202 'call' 'call_ln187' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 14 <SV = 13> <Delay = 0.00>
-ST_14 : Operation 203 [1/2] (0.00ns)   --->   "%call_ln187 = call void @rdc_mont.4, i64 %tt2, i64 %c_1_0, i64 %c_1_1, i64 %c_1_2, i64 %c_1_3, i64 %c_1_4, i64 %c_1_5, i64 %c_1_6, i64 %c_1_7, i64 %p503p1_1" [src/fpx.cpp:187]   --->   Operation 203 'call' 'call_ln187' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_14 : Operation 204 [1/1] (0.00ns)   --->   "%ret_ln188 = ret" [src/fpx.cpp:188]   --->   Operation 204 'ret' 'ret_ln188' <Predicate = true> <Delay = 0.00>
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 41 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i64 %c, i64 0, i64 8" [src/fpx.cpp:195]   --->   Operation 41 'getelementptr' 'c_addr' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 42 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 42 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 43 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 43 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 44 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 44 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 45 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 45 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 46 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 46 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 47 [1/1] (0.00ns)   --->   "%specmemcore_ln182 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:182]   --->   Operation 47 'specmemcore' 'specmemcore_ln182' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 48 [1/1] (0.00ns)   --->   "%specmemcore_ln182 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:182]   --->   Operation 48 'specmemcore' 'specmemcore_ln182' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 49 [1/1] (0.00ns)   --->   "%specmemcore_ln183 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:183]   --->   Operation 49 'specmemcore' 'specmemcore_ln183' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 50 [1/1] (0.00ns)   --->   "%specmemcore_ln183 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:183]   --->   Operation 50 'specmemcore' 'specmemcore_ln183' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 51 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt3, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 51 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 52 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 52 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 53 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 53 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 54 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 54 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 55 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 55 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 56 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 56 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 57 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 57 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 58 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 58 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 59 [1/2] (0.00ns)   --->   "%call_ln195 = call void @rdc_mont.4, i64 %tt2, i64 %c, i1 1, i64 %p503p1_1" [src/fpx.cpp:195]   --->   Operation 59 'call' 'call_ln195' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%specmemcore_ln195 = specmemcore void @_ssdm_op_SpecMemCore, i4 %c_addr, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:195]   --->   Operation 60 'specmemcore' 'specmemcore_ln195' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 61 [1/1] (0.00ns)   --->   "%ret_ln196 = ret" [src/fpx.cpp:196]   --->   Operation 61 'ret' 'ret_ln196' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -311,58 +164,49 @@ ST_14 : Operation 204 [1/1] (0.00ns)   --->   "%ret_ln188 = ret" [src/fpx.cpp:18
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 0.714ns
+ <State 1>: 0.000ns
 The critical path consists of the following:
-	'getelementptr' operation 1 bit ('a_0_addr', src/fpx.cpp:174) [41]  (0.000 ns)
-	'load' operation 64 bit ('a_0_load_2', src/fpx.cpp:174) on array 'a_0' [57]  (0.714 ns)
 
- <State 2>: 0.714ns
+ <State 2>: 0.708ns
 The critical path consists of the following:
-	'load' operation 64 bit ('a_0_load_2', src/fpx.cpp:174) on array 'a_0' [57]  (0.714 ns)
+	'call' operation 0 bit ('call_ln182', src/fpx.cpp:182) to 'mp_mul.1' [22]  (0.708 ns)
 
- <State 3>: 4.306ns
+ <State 3>: 0.000ns
 The critical path consists of the following:
-	'load' operation 64 bit ('a_0_load', src/fpx.cpp:174) on array 'a_0' [107]  (0.714 ns)
-	'call' operation 0 bit ('call_ln174', src/fpx.cpp:174) to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_1' [123]  (3.592 ns)
 
  <State 4>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln174', src/fpx.cpp:174) to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_370_1' [123]  (1.482 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_378_1' [27]  (1.482 ns)
 
- <State 5>: 0.000ns
+ <State 5>: 0.278ns
 The critical path consists of the following:
+	'load' operation 1 bit ('borrow_loc_load') on local variable 'borrow_loc' [30]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_187_1' [31]  (0.278 ns)
 
- <State 6>: 1.481ns
+ <State 6>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_152_1' [141]  (1.481 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_187_1' [31]  (1.482 ns)
 
- <State 7>: 0.278ns
+ <State 7>: 1.422ns
 The critical path consists of the following:
-	'load' operation 1 bit ('borrow_loc_load') on local variable 'borrow_loc' [142]  (0.000 ns)
-	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_179_1' [143]  (0.278 ns)
+	'call' operation 0 bit ('call_ln191', src/fpx.cpp:191) to 'rdc_mont.4' [32]  (1.422 ns)
 
- <State 8>: 1.482ns
+ <State 8>: 0.708ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_179_1' [143]  (1.482 ns)
+	'call' operation 0 bit ('call_ln193', src/fpx.cpp:193) to 'mp_mul.5111' [41]  (0.708 ns)
 
  <State 9>: 0.000ns
 The critical path consists of the following:
 
- <State 10>: 0.708ns
+ <State 10>: 1.481ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln185', src/fpx.cpp:185) to 'mp_mul.1218' [146]  (0.708 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_160_195' [42]  (1.481 ns)
 
- <State 11>: 0.000ns
+ <State 11>: 1.422ns
 The critical path consists of the following:
+	'call' operation 0 bit ('call_ln195', src/fpx.cpp:195) to 'rdc_mont.4' [43]  (1.422 ns)
 
- <State 12>: 1.481ns
-The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.7_Pipeline_VITIS_LOOP_152_173' [147]  (1.481 ns)
-
- <State 13>: 0.000ns
-The critical path consists of the following:
-
- <State 14>: 0.000ns
+ <State 12>: 0.000ns
 The critical path consists of the following:
 
 
@@ -386,8 +230,6 @@ N/A
 	State 10
 	State 11
 	State 12
-	State 13
-	State 14
 
 
 ============================================================

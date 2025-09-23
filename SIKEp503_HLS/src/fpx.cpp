@@ -53,6 +53,10 @@ void copy_words(const digit_t *a, digit_t *c, const unsigned int nwords)
 
 void fpmul_mont(const felm_t ma, const felm_t mb, felm_t mc)
 { // Multiprecision multiplication, c = a*b mod p.
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE core = Mul_LUT
+#pragma HLS DATAFLOW off
     dfelm_t temp = {0};
 
     mp_mul(ma, mb, temp, NWORDS_FIELD);
@@ -61,6 +65,10 @@ void fpmul_mont(const felm_t ma, const felm_t mb, felm_t mc)
 
 void fpsqr_mont(const felm_t ma, felm_t mc)
 { // Multiprecision squaring, c = a^2 mod p.
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE core = Mul_LUT
+#pragma HLS DATAFLOW off
     dfelm_t temp = {0};
 
     mp_mul(ma, ma, temp, NWORDS_FIELD);

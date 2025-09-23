@@ -7734,7 +7734,7 @@
 					<Obj>
 						<type>0</type>
 						<id>177</id>
-						<name>i_284</name>
+						<name>i_291</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>319</lineNumber>
@@ -13268,7 +13268,7 @@
 					<Obj>
 						<type>2</type>
 						<id>648</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1214</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1246</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13292,14 +13292,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1214&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1246&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_268">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>652</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1215</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1247</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13323,14 +13323,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1215&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1247&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_269">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>656</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1216</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1248</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13354,14 +13354,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1216&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1248&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_270">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>659</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1217</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1249</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13385,14 +13385,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1217&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1249&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_271">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>663</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1218</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1250</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13416,14 +13416,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1218&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1250&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_272">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>667</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1219</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1251</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13447,14 +13447,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1219&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1251&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_273">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>670</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1220</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1252</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13478,14 +13478,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1220&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1252&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_274">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>674</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1221</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1253</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13509,14 +13509,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1221&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1253&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_275">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>678</id>
-						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1222</name>
+						<name>LADDER3PT_41_Pipeline_VITIS_LOOP_13_1254</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13540,7 +13540,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1222&gt;</content>
+				<content>&lt;constant:LADDER3PT.41_Pipeline_VITIS_LOOP_13_1254&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_276">
 				<Value>
@@ -21067,8 +21067,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1083318</mMinLatency>
-			<mMaxLatency>1862818</mMaxLatency>
+			<mMinLatency>732318</mMinLatency>
+			<mMaxLatency>1156318</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -21114,8 +21114,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>250</mMinTripCount>
 			<mMaxTripCount>250</mMaxTripCount>
-			<mMinLatency>1083000</mMinLatency>
-			<mMaxLatency>1862500</mMaxLatency>
+			<mMinLatency>732000</mMinLatency>
+			<mMaxLatency>1156000</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

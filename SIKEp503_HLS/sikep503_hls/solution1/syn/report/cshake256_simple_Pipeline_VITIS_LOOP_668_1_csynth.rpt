@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_Pipeline_VITIS_LOOP_668_1'
 ================================================================
-* Date:           Wed Jul 30 17:34:56 2025
+* Date:           Tue Sep 23 15:46:01 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -108,8 +108,8 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_358   |   9|          2|    6|         12|
-    |i_fu_54                  |   9|          2|    6|         12|
+    |ap_sig_allocacmp_i       |   9|          2|    6|         12|
+    |i_245_fu_54              |   9|          2|    6|         12|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  36|          8|   14|         28|
     +-------------------------+----+-----------+-----+-----------+
@@ -121,8 +121,8 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |i_358_reg_205            |  6|   0|    6|          0|
-    |i_fu_54                  |  6|   0|    6|          0|
+    |i_245_fu_54              |  6|   0|    6|          0|
+    |i_reg_205                |  6|   0|    6|          0|
     +-------------------------+---+----+-----+-----------+
     |Total                    | 15|   0|   15|          0|
     +-------------------------+---+----+-----+-----------+
@@ -145,15 +145,15 @@
 |t_address0              |  out|    6|   ap_memory|                                           t|         array|
 |t_ce0                   |  out|    1|   ap_memory|                                           t|         array|
 |t_q0                    |   in|    8|   ap_memory|                                           t|         array|
-|t_78_address0           |  out|    6|   ap_memory|                                        t_78|         array|
-|t_78_ce0                |  out|    1|   ap_memory|                                        t_78|         array|
-|t_78_q0                 |   in|    8|   ap_memory|                                        t_78|         array|
-|t_79_address0           |  out|    6|   ap_memory|                                        t_79|         array|
-|t_79_ce0                |  out|    1|   ap_memory|                                        t_79|         array|
-|t_79_q0                 |   in|    8|   ap_memory|                                        t_79|         array|
 |t_80_address0           |  out|    6|   ap_memory|                                        t_80|         array|
 |t_80_ce0                |  out|    1|   ap_memory|                                        t_80|         array|
 |t_80_q0                 |   in|    8|   ap_memory|                                        t_80|         array|
+|t_81_address0           |  out|    6|   ap_memory|                                        t_81|         array|
+|t_81_ce0                |  out|    1|   ap_memory|                                        t_81|         array|
+|t_81_q0                 |   in|    8|   ap_memory|                                        t_81|         array|
+|t_82_address0           |  out|    6|   ap_memory|                                        t_82|         array|
+|t_82_ce0                |  out|    1|   ap_memory|                                        t_82|         array|
+|t_82_q0                 |   in|    8|   ap_memory|                                        t_82|         array|
 |ephemeralsk_i_address0  |  out|    5|   ap_memory|                               ephemeralsk_i|         array|
 |ephemeralsk_i_ce0       |  out|    1|   ap_memory|                               ephemeralsk_i|         array|
 |ephemeralsk_i_we0       |  out|    1|   ap_memory|                               ephemeralsk_i|         array|

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'eval_4_isog_1'
 ================================================================
-* Date:           Wed Jul 30 17:29:38 2025
+* Date:           Wed Sep  3 15:12:45 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.675 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.162 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     2839|     4535|  28.390 us|  45.350 us|  2839|  4535|       no|
+    |     2991|     4687|  29.910 us|  46.870 us|  2991|  4687|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -108,109 +108,109 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 1.42>
 ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%t0 = alloca i64 1" [src/ec_isogeny.cpp:64]   --->   Operation 33 'alloca' 't0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/ec_isogeny.cpp:64]   --->   Operation 34 'alloca' 't1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 35 [2/2] (1.42ns)   --->   "%call_ln101 = call void @fpadd503.13865, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:66]   --->   Operation 35 'call' 'call_ln101' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 35 [2/2] (1.42ns)   --->   "%call_ln101 = call void @fpadd503.14781, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:66]   --->   Operation 35 'call' 'call_ln101' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln101 = call void @fpadd503.13865, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:66]   --->   Operation 36 'call' 'call_ln101' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln101 = call void @fpadd503.14781, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:66]   --->   Operation 36 'call' 'call_ln101' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 1.42>
-ST_3 : Operation 37 [2/2] (1.42ns)   --->   "%call_ln102 = call void @fpadd503.13865, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:66]   --->   Operation 37 'call' 'call_ln102' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 37 [2/2] (1.42ns)   --->   "%call_ln102 = call void @fpadd503.14781, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:66]   --->   Operation 37 'call' 'call_ln102' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln102 = call void @fpadd503.13865, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:66]   --->   Operation 38 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln102 = call void @fpadd503.14781, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:66]   --->   Operation 38 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 1.42>
-ST_5 : Operation 39 [2/2] (1.42ns)   --->   "%call_ln107 = call void @fpsub503.463, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:67]   --->   Operation 39 'call' 'call_ln107' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 39 [2/2] (1.42ns)   --->   "%call_ln107 = call void @fpsub503.479, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:67]   --->   Operation 39 'call' 'call_ln107' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 40 [1/2] (0.00ns)   --->   "%call_ln107 = call void @fpsub503.463, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:67]   --->   Operation 40 'call' 'call_ln107' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 40 [1/2] (0.00ns)   --->   "%call_ln107 = call void @fpsub503.479, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:67]   --->   Operation 40 'call' 'call_ln107' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 1.42>
-ST_7 : Operation 41 [2/2] (1.42ns)   --->   "%call_ln108 = call void @fpsub503.463, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:67]   --->   Operation 41 'call' 'call_ln108' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 41 [2/2] (1.42ns)   --->   "%call_ln108 = call void @fpsub503.479, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:67]   --->   Operation 41 'call' 'call_ln108' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 42 [1/2] (0.00ns)   --->   "%call_ln108 = call void @fpsub503.463, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:67]   --->   Operation 42 'call' 'call_ln108' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 42 [1/2] (0.00ns)   --->   "%call_ln108 = call void @fpsub503.479, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:67]   --->   Operation 42 'call' 'call_ln108' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 1.42>
-ST_9 : Operation 43 [2/2] (1.42ns)   --->   "%call_ln68 = call void @fp2mul503_mont.386383, i64 %t0, i64 %coeff, i9 128, i64 %P_X, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 43 'call' 'call_ln68' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 43 [2/2] (1.42ns)   --->   "%call_ln68 = call void @fp2mul503_mont.4076107, i64 %t0, i64 %coeff, i9 128, i64 %P_X, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 43 'call' 'call_ln68' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 44 [1/2] (0.00ns)   --->   "%call_ln68 = call void @fp2mul503_mont.386383, i64 %t0, i64 %coeff, i9 128, i64 %P_X, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 44 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 44 [1/2] (0.00ns)   --->   "%call_ln68 = call void @fp2mul503_mont.4076107, i64 %t0, i64 %coeff, i9 128, i64 %P_X, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 44 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 1.42>
-ST_11 : Operation 45 [2/2] (1.42ns)   --->   "%call_ln69 = call void @fp2mul503_mont.386383, i64 %t1, i64 %coeff, i9 256, i64 %P_Z, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 45 'call' 'call_ln69' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 45 [2/2] (1.42ns)   --->   "%call_ln69 = call void @fp2mul503_mont.4076107, i64 %t1, i64 %coeff, i9 256, i64 %P_Z, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 45 'call' 'call_ln69' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 46 [1/2] (0.00ns)   --->   "%call_ln69 = call void @fp2mul503_mont.386383, i64 %t1, i64 %coeff, i9 256, i64 %P_Z, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 46 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 46 [1/2] (0.00ns)   --->   "%call_ln69 = call void @fp2mul503_mont.4076107, i64 %t1, i64 %coeff, i9 256, i64 %P_Z, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 46 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 0.00>
-ST_13 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln70 = call void @fp2mul503_mont.325.2, i64 %t0, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:70]   --->   Operation 47 'call' 'call_ln70' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln70 = call void @fp2mul503_mont.332.2, i64 %t0, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:70]   --->   Operation 47 'call' 'call_ln70' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 14 <SV = 13> <Delay = 0.00>
-ST_14 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln70 = call void @fp2mul503_mont.325.2, i64 %t0, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:70]   --->   Operation 48 'call' 'call_ln70' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln70 = call void @fp2mul503_mont.332.2, i64 %t0, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:70]   --->   Operation 48 'call' 'call_ln70' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 14> <Delay = 1.42>
-ST_15 : Operation 49 [2/2] (0.00ns)   --->   "%call_ln71 = call void @fp2mul503_mont.42, i64 %t0, i64 %coeff, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:71]   --->   Operation 49 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_15 : Operation 50 [2/2] (1.42ns)   --->   "%call_ln101 = call void @fpadd503.13865, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:72]   --->   Operation 50 'call' 'call_ln101' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 49 [2/2] (0.00ns)   --->   "%call_ln71 = call void @fp2mul503_mont.44, i64 %t0, i64 %coeff, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:71]   --->   Operation 49 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 50 [2/2] (1.42ns)   --->   "%call_ln101 = call void @fpadd503.14781, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:72]   --->   Operation 50 'call' 'call_ln101' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 16 <SV = 15> <Delay = 0.00>
-ST_16 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln71 = call void @fp2mul503_mont.42, i64 %t0, i64 %coeff, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:71]   --->   Operation 51 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_16 : Operation 52 [1/2] (0.00ns)   --->   "%call_ln101 = call void @fpadd503.13865, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:72]   --->   Operation 52 'call' 'call_ln101' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln71 = call void @fp2mul503_mont.44, i64 %t0, i64 %coeff, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:71]   --->   Operation 51 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 52 [1/2] (0.00ns)   --->   "%call_ln101 = call void @fpadd503.14781, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %t1, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:72]   --->   Operation 52 'call' 'call_ln101' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 17 <SV = 16> <Delay = 1.42>
-ST_17 : Operation 53 [2/2] (1.42ns)   --->   "%call_ln102 = call void @fpadd503.13865, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:72]   --->   Operation 53 'call' 'call_ln102' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 53 [2/2] (1.42ns)   --->   "%call_ln102 = call void @fpadd503.14781, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:72]   --->   Operation 53 'call' 'call_ln102' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 18 <SV = 17> <Delay = 0.00>
-ST_18 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln102 = call void @fpadd503.13865, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:72]   --->   Operation 54 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_18 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln102 = call void @fpadd503.14781, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %t1, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:72]   --->   Operation 54 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 19 <SV = 18> <Delay = 1.42>
-ST_19 : Operation 55 [2/2] (1.42ns)   --->   "%call_ln107 = call void @fpsub503.2.260, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:73]   --->   Operation 55 'call' 'call_ln107' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_19 : Operation 55 [2/2] (1.42ns)   --->   "%call_ln107 = call void @fpsub503.2.273, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:73]   --->   Operation 55 'call' 'call_ln107' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 ST_19 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln74 = call void @fp2sqr503_mont.2.2, i64 %t1, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:74]   --->   Operation 56 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 20 <SV = 19> <Delay = 0.00>
-ST_20 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln107 = call void @fpsub503.2.260, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:73]   --->   Operation 57 'call' 'call_ln107' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_20 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln107 = call void @fpsub503.2.273, i64 %P_X, i1 0, i64 %P_Z, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:73]   --->   Operation 57 'call' 'call_ln107' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_20 : Operation 58 [1/2] (0.00ns)   --->   "%call_ln74 = call void @fp2sqr503_mont.2.2, i64 %t1, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:74]   --->   Operation 58 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 21 <SV = 20> <Delay = 1.42>
-ST_21 : Operation 59 [2/2] (1.42ns)   --->   "%call_ln108 = call void @fpsub503.2.260, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:73]   --->   Operation 59 'call' 'call_ln108' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_21 : Operation 59 [2/2] (1.42ns)   --->   "%call_ln108 = call void @fpsub503.2.273, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:73]   --->   Operation 59 'call' 'call_ln108' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 22 <SV = 21> <Delay = 0.00>
-ST_22 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln108 = call void @fpsub503.2.260, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:73]   --->   Operation 60 'call' 'call_ln108' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln108 = call void @fpsub503.2.273, i64 %P_X, i1 1, i64 %P_Z, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:73]   --->   Operation 60 'call' 'call_ln108' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 23 <SV = 22> <Delay = 1.42>
-ST_23 : Operation 61 [2/2] (0.00ns)   --->   "%call_ln75 = call void @fp2sqr503_mont.255, i64 %P_Z, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:75]   --->   Operation 61 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_23 : Operation 62 [2/2] (1.42ns)   --->   "%call_ln101 = call void @fpadd503.13982, i64 %t1, i1 0, i64 %t0, i1 0, i64 %P_X, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:76]   --->   Operation 62 'call' 'call_ln101' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_23 : Operation 61 [2/2] (0.00ns)   --->   "%call_ln75 = call void @fp2sqr503_mont.268, i64 %P_Z, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:75]   --->   Operation 61 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_23 : Operation 62 [2/2] (1.42ns)   --->   "%call_ln101 = call void @fpadd503.148106, i64 %t1, i1 0, i64 %t0, i1 0, i64 %P_X, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:76]   --->   Operation 62 'call' 'call_ln101' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 24 <SV = 23> <Delay = 0.00>
-ST_24 : Operation 63 [1/2] (0.00ns)   --->   "%call_ln75 = call void @fp2sqr503_mont.255, i64 %P_Z, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:75]   --->   Operation 63 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_24 : Operation 64 [1/2] (0.00ns)   --->   "%call_ln101 = call void @fpadd503.13982, i64 %t1, i1 0, i64 %t0, i1 0, i64 %P_X, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:76]   --->   Operation 64 'call' 'call_ln101' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_24 : Operation 63 [1/2] (0.00ns)   --->   "%call_ln75 = call void @fp2sqr503_mont.268, i64 %P_Z, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:75]   --->   Operation 63 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_24 : Operation 64 [1/2] (0.00ns)   --->   "%call_ln101 = call void @fpadd503.148106, i64 %t1, i1 0, i64 %t0, i1 0, i64 %P_X, i1 0, i64 %p503x2_1" [src/fpx.cpp:101->src/ec_isogeny.cpp:76]   --->   Operation 64 'call' 'call_ln101' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 25 <SV = 24> <Delay = 1.42>
-ST_25 : Operation 65 [2/2] (1.42ns)   --->   "%call_ln102 = call void @fpadd503.13982, i64 %t1, i1 1, i64 %t0, i1 1, i64 %P_X, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:76]   --->   Operation 65 'call' 'call_ln102' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_25 : Operation 65 [2/2] (1.42ns)   --->   "%call_ln102 = call void @fpadd503.148106, i64 %t1, i1 1, i64 %t0, i1 1, i64 %P_X, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:76]   --->   Operation 65 'call' 'call_ln102' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 26 <SV = 25> <Delay = 0.00>
-ST_26 : Operation 66 [1/2] (0.00ns)   --->   "%call_ln102 = call void @fpadd503.13982, i64 %t1, i1 1, i64 %t0, i1 1, i64 %P_X, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:76]   --->   Operation 66 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_26 : Operation 66 [1/2] (0.00ns)   --->   "%call_ln102 = call void @fpadd503.148106, i64 %t1, i1 1, i64 %t0, i1 1, i64 %P_X, i1 1, i64 %p503x2_1" [src/fpx.cpp:102->src/ec_isogeny.cpp:76]   --->   Operation 66 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 27 <SV = 26> <Delay = 1.42>
-ST_27 : Operation 67 [2/2] (1.42ns)   --->   "%call_ln107 = call void @fpsub503.2.25984, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:77]   --->   Operation 67 'call' 'call_ln107' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
-ST_27 : Operation 68 [2/2] (0.00ns)   --->   "%call_ln78 = call void @fp2mul503_mont.3257261, i64 %P_X, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:78]   --->   Operation 68 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_27 : Operation 67 [2/2] (1.42ns)   --->   "%call_ln107 = call void @fpsub503.2.272108, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:77]   --->   Operation 67 'call' 'call_ln107' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_27 : Operation 68 [2/2] (0.00ns)   --->   "%call_ln78 = call void @fp2mul503_mont.3328977, i64 %P_X, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:78]   --->   Operation 68 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 28 <SV = 27> <Delay = 0.00>
-ST_28 : Operation 69 [1/2] (0.00ns)   --->   "%call_ln107 = call void @fpsub503.2.25984, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:77]   --->   Operation 69 'call' 'call_ln107' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_28 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln78 = call void @fp2mul503_mont.3257261, i64 %P_X, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:78]   --->   Operation 70 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 69 [1/2] (0.00ns)   --->   "%call_ln107 = call void @fpsub503.2.272108, i64 %P_Z, i1 0, i64 %t0, i1 0, i64 %p503x2_1" [src/fpx.cpp:107->src/ec_isogeny.cpp:77]   --->   Operation 69 'call' 'call_ln107' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln78 = call void @fp2mul503_mont.3328977, i64 %P_X, i64 %t1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:78]   --->   Operation 70 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 29 <SV = 28> <Delay = 1.42>
-ST_29 : Operation 71 [2/2] (1.42ns)   --->   "%call_ln108 = call void @fpsub503.2.25984, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:77]   --->   Operation 71 'call' 'call_ln108' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_29 : Operation 71 [2/2] (1.42ns)   --->   "%call_ln108 = call void @fpsub503.2.272108, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:77]   --->   Operation 71 'call' 'call_ln108' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 30 <SV = 29> <Delay = 0.00>
-ST_30 : Operation 72 [1/2] (0.00ns)   --->   "%call_ln108 = call void @fpsub503.2.25984, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:77]   --->   Operation 72 'call' 'call_ln108' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_30 : Operation 72 [1/2] (0.00ns)   --->   "%call_ln108 = call void @fpsub503.2.272108, i64 %P_Z, i1 1, i64 %t0, i1 1, i64 %p503x2_1" [src/fpx.cpp:108->src/ec_isogeny.cpp:77]   --->   Operation 72 'call' 'call_ln108' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 31 <SV = 30> <Delay = 0.00>
-ST_31 : Operation 73 [2/2] (0.00ns)   --->   "%call_ln79 = call void @fp2mul503_mont.3257261, i64 %P_Z, i64 %t0, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:79]   --->   Operation 73 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_31 : Operation 73 [2/2] (0.00ns)   --->   "%call_ln79 = call void @fp2mul503_mont.3328977, i64 %P_Z, i64 %t0, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:79]   --->   Operation 73 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 32 <SV = 31> <Delay = 0.00>
 ST_32 : Operation 74 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %coeff"   --->   Operation 74 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 75 [1/2] (0.00ns)   --->   "%call_ln79 = call void @fp2mul503_mont.3257261, i64 %P_Z, i64 %t0, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:79]   --->   Operation 75 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_32 : Operation 75 [1/2] (0.00ns)   --->   "%call_ln79 = call void @fp2mul503_mont.3328977, i64 %P_Z, i64 %t0, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:79]   --->   Operation 75 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_32 : Operation 76 [1/1] (0.00ns)   --->   "%ret_ln80 = ret" [src/ec_isogeny.cpp:80]   --->   Operation 76 'ret' 'ret_ln80' <Predicate = true> <Delay = 0.00>
 
 
@@ -222,42 +222,42 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
  <State 1>: 1.422ns
 The critical path consists of the following:
 	'alloca' operation 64 bit ('t0', src/ec_isogeny.cpp:64) [8]  (0.000 ns)
-	'call' operation 0 bit ('call_ln101', src/fpx.cpp:101->src/ec_isogeny.cpp:66) to 'fpadd503.13865' [10]  (1.422 ns)
+	'call' operation 0 bit ('call_ln101', src/fpx.cpp:101->src/ec_isogeny.cpp:66) to 'fpadd503.14781' [10]  (1.422 ns)
 
  <State 2>: 0.000ns
 The critical path consists of the following:
 
  <State 3>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln102', src/fpx.cpp:102->src/ec_isogeny.cpp:66) to 'fpadd503.13865' [11]  (1.422 ns)
+	'call' operation 0 bit ('call_ln102', src/fpx.cpp:102->src/ec_isogeny.cpp:66) to 'fpadd503.14781' [11]  (1.422 ns)
 
  <State 4>: 0.000ns
 The critical path consists of the following:
 
  <State 5>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln107', src/fpx.cpp:107->src/ec_isogeny.cpp:67) to 'fpsub503.463' [12]  (1.422 ns)
+	'call' operation 0 bit ('call_ln107', src/fpx.cpp:107->src/ec_isogeny.cpp:67) to 'fpsub503.479' [12]  (1.422 ns)
 
  <State 6>: 0.000ns
 The critical path consists of the following:
 
  <State 7>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln108', src/fpx.cpp:108->src/ec_isogeny.cpp:67) to 'fpsub503.463' [13]  (1.422 ns)
+	'call' operation 0 bit ('call_ln108', src/fpx.cpp:108->src/ec_isogeny.cpp:67) to 'fpsub503.479' [13]  (1.422 ns)
 
  <State 8>: 0.000ns
 The critical path consists of the following:
 
  <State 9>: 1.429ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln68', src/ec_isogeny.cpp:68) to 'fp2mul503_mont.386383' [14]  (1.429 ns)
+	'call' operation 0 bit ('call_ln68', src/ec_isogeny.cpp:68) to 'fp2mul503_mont.4076107' [14]  (1.429 ns)
 
  <State 10>: 0.000ns
 The critical path consists of the following:
 
  <State 11>: 1.429ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln69', src/ec_isogeny.cpp:69) to 'fp2mul503_mont.386383' [15]  (1.429 ns)
+	'call' operation 0 bit ('call_ln69', src/ec_isogeny.cpp:69) to 'fp2mul503_mont.4076107' [15]  (1.429 ns)
 
  <State 12>: 0.000ns
 The critical path consists of the following:
@@ -270,56 +270,56 @@ The critical path consists of the following:
 
  <State 15>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln101', src/fpx.cpp:101->src/ec_isogeny.cpp:72) to 'fpadd503.13865' [18]  (1.422 ns)
+	'call' operation 0 bit ('call_ln101', src/fpx.cpp:101->src/ec_isogeny.cpp:72) to 'fpadd503.14781' [18]  (1.422 ns)
 
  <State 16>: 0.000ns
 The critical path consists of the following:
 
  <State 17>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln102', src/fpx.cpp:102->src/ec_isogeny.cpp:72) to 'fpadd503.13865' [19]  (1.422 ns)
+	'call' operation 0 bit ('call_ln102', src/fpx.cpp:102->src/ec_isogeny.cpp:72) to 'fpadd503.14781' [19]  (1.422 ns)
 
  <State 18>: 0.000ns
 The critical path consists of the following:
 
  <State 19>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln107', src/fpx.cpp:107->src/ec_isogeny.cpp:73) to 'fpsub503.2.260' [20]  (1.422 ns)
+	'call' operation 0 bit ('call_ln107', src/fpx.cpp:107->src/ec_isogeny.cpp:73) to 'fpsub503.2.273' [20]  (1.422 ns)
 
  <State 20>: 0.000ns
 The critical path consists of the following:
 
  <State 21>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln108', src/fpx.cpp:108->src/ec_isogeny.cpp:73) to 'fpsub503.2.260' [21]  (1.422 ns)
+	'call' operation 0 bit ('call_ln108', src/fpx.cpp:108->src/ec_isogeny.cpp:73) to 'fpsub503.2.273' [21]  (1.422 ns)
 
  <State 22>: 0.000ns
 The critical path consists of the following:
 
  <State 23>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln101', src/fpx.cpp:101->src/ec_isogeny.cpp:76) to 'fpadd503.13982' [24]  (1.422 ns)
+	'call' operation 0 bit ('call_ln101', src/fpx.cpp:101->src/ec_isogeny.cpp:76) to 'fpadd503.148106' [24]  (1.422 ns)
 
  <State 24>: 0.000ns
 The critical path consists of the following:
 
  <State 25>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln102', src/fpx.cpp:102->src/ec_isogeny.cpp:76) to 'fpadd503.13982' [25]  (1.422 ns)
+	'call' operation 0 bit ('call_ln102', src/fpx.cpp:102->src/ec_isogeny.cpp:76) to 'fpadd503.148106' [25]  (1.422 ns)
 
  <State 26>: 0.000ns
 The critical path consists of the following:
 
  <State 27>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln107', src/fpx.cpp:107->src/ec_isogeny.cpp:77) to 'fpsub503.2.25984' [26]  (1.422 ns)
+	'call' operation 0 bit ('call_ln107', src/fpx.cpp:107->src/ec_isogeny.cpp:77) to 'fpsub503.2.272108' [26]  (1.422 ns)
 
  <State 28>: 0.000ns
 The critical path consists of the following:
 
  <State 29>: 1.422ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln108', src/fpx.cpp:108->src/ec_isogeny.cpp:77) to 'fpsub503.2.25984' [27]  (1.422 ns)
+	'call' operation 0 bit ('call_ln108', src/fpx.cpp:108->src/ec_isogeny.cpp:77) to 'fpsub503.2.272108' [27]  (1.422 ns)
 
  <State 30>: 0.000ns
 The critical path consists of the following:

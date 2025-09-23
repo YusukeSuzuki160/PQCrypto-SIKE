@@ -13,7 +13,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 855
+set cdfgNum 684
 set C_modelName {cshake256_simple}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -155,9 +155,9 @@ set RtlHierarchyInfo {[
 				"LoopDec" : {"FSMBitwidth" : "16", "FirstState" : "ap_ST_fsm_state6", "LastState" : ["ap_ST_fsm_state9"], "QuitState" : ["ap_ST_fsm_state6"], "PreState" : ["ap_ST_fsm_state5"], "PostState" : ["ap_ST_fsm_state10"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.s_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.t_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.t_46_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.t_47_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.t_48_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.t_44_U", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.t_45_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.t_46_U", "Parent" : "0"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_cshake256_simple_Pipeline_VITIS_LOOP_610_1_fu_102", "Parent" : "0", "Child" : ["7"],
 		"CDFG" : "cshake256_simple_Pipeline_VITIS_LOOP_610_1",
 		"Protocol" : "ap_ctrl_hs",
@@ -332,9 +332,9 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
+			{"Name" : "t_82", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "t_81", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "t_80", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "t_79", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "t_78", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "t", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "s", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
@@ -357,9 +357,9 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "t", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "t_78", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "t_79", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "t_80", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "t_81", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "t_82", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "ephemeralsk_i", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_668_1", "PipelineType" : "UPC",
@@ -447,16 +447,16 @@ set ArgLastReadFirstWriteLatency {
 		in_3 {Type I LastRead 1 FirstWrite -1}
 		s {Type IO LastRead 0 FirstWrite 1}}
 	cshake256_simple_Pipeline_VITIS_LOOP_436_2 {
+		t_82 {Type O LastRead -1 FirstWrite 1}
+		t_81 {Type O LastRead -1 FirstWrite 1}
 		t_80 {Type O LastRead -1 FirstWrite 1}
-		t_79 {Type O LastRead -1 FirstWrite 1}
-		t_78 {Type O LastRead -1 FirstWrite 1}
 		t {Type O LastRead -1 FirstWrite 1}
 		s {Type I LastRead 0 FirstWrite -1}}
 	cshake256_simple_Pipeline_VITIS_LOOP_668_1 {
 		t {Type I LastRead 0 FirstWrite -1}
-		t_78 {Type I LastRead 0 FirstWrite -1}
-		t_79 {Type I LastRead 0 FirstWrite -1}
 		t_80 {Type I LastRead 0 FirstWrite -1}
+		t_81 {Type I LastRead 0 FirstWrite -1}
+		t_82 {Type I LastRead 0 FirstWrite -1}
 		ephemeralsk_i {Type O LastRead -1 FirstWrite 1}}}
 
 set hasDtUnsupportedChannel 0

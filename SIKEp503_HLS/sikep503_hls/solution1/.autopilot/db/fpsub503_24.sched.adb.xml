@@ -52,7 +52,7 @@ entry:1 %borrow_loc = alloca i64 1
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="1">
 <![CDATA[
-entry:2 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_57_1, i64 %R_X, i64 %R_Z, i64 %coeff, i1 %borrow_loc
+entry:2 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %R_Z, i64 %coeff, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -70,7 +70,7 @@ entry:2 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_57_1, i64 %R_X, i
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="1">
 <![CDATA[
-entry:2 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_57_1, i64 %R_X, i64 %R_Z, i64 %coeff, i1 %borrow_loc
+entry:2 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %R_Z, i64 %coeff, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -103,7 +103,7 @@ entry:3 %borrow_loc_load = load i1 %borrow_loc
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:4 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_64_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1
+entry:4 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_68_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -136,7 +136,7 @@ entry:0 %specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_Spec
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:4 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_64_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1
+entry:4 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_68_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -151,10 +151,10 @@ entry:4 %call_ln0 = call void @fpsub503.24_Pipeline_VITIS_LOOP_64_2, i64 %coeff,
 
 <Node id="10" bw="0">
 <![CDATA[
-entry:5 %ret_ln68 = ret
+entry:5 %ret_ln72 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln68"/></StgValue>
+<StgValue><ssdm name="ret_ln72"/></StgValue>
 </operation>
 </state>
 </state_list>

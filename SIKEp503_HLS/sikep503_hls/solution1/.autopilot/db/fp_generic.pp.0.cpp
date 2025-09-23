@@ -153,9 +153,6 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "src/generic/fp_generic.cpp" 2
-
-
-
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
 # 10 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h"
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" 1
@@ -5696,9 +5693,9 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 370 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_fixed.h" 2
 # 365 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 2
-# 5 "src/generic/fp_generic.cpp" 2
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 1 3
-# 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 3
+# 2 "src/generic/fp_generic.cpp" 2
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 1 3
+# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 3
 
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
 # 236 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
@@ -5758,1920 +5755,48 @@ namespace __gnu_cxx
 
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/cpu_defines.h" 1 3
 # 512 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
-# 44 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 2 3
-# 1 "/usr/include/assert.h" 1 3 4
-# 66 "/usr/include/assert.h" 3 4
-extern "C" {
-
-
-extern void __assert_fail (const char *__assertion, const char *__file,
-      unsigned int __line, const char *__function)
-     noexcept (true) __attribute__ ((__noreturn__));
-
-
-extern void __assert_perror_fail (int __errnum, const char *__file,
-      unsigned int __line, const char *__function)
-     noexcept (true) __attribute__ ((__noreturn__));
-
-
-
-
-extern void __assert (const char *__assertion, const char *__file, int __line)
-     noexcept (true) __attribute__ ((__noreturn__));
-
-
-}
-# 45 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 2 3
-# 6 "src/generic/fp_generic.cpp" 2
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 1 3
-# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception.h" 1 3
-# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception.h" 3
-
-#pragma GCC visibility push(default)
-
-
-
-extern "C++" {
-
-namespace std
-{
-# 60 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception.h" 3
-  class exception
-  {
-  public:
-    exception() noexcept { }
-    virtual ~exception() noexcept;
-
-
-
-    virtual const char*
-    what() const noexcept;
-  };
-
-}
-
-}
-
-#pragma GCC visibility pop
-# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 2 3
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/hash_bytes.h" 1 3
-# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/hash_bytes.h" 3
-
-
-
-namespace std
-{
-
-
-
-
-
-
-
-  size_t
-  _Hash_bytes(const void* __ptr, size_t __len, size_t __seed);
-
-
-
-
-
-  size_t
-  _Fnv_hash_bytes(const void* __ptr, size_t __len, size_t __seed);
-
-
-}
-# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 2 3
-
-
-#pragma GCC visibility push(default)
-
-extern "C++" {
-
-namespace __cxxabiv1
-{
-  class __class_type_info;
-}
-# 80 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
-namespace std
-{
-
-
-
-
-
-
-  class type_info
-  {
-  public:
-
-
-
-
-    virtual ~type_info();
-
-
-
-    const char* name() const noexcept
-    { return __name[0] == '*' ? __name + 1 : __name; }
-# 115 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
-    bool before(const type_info& __arg) const noexcept
-    { return (__name[0] == '*' && __arg.__name[0] == '*')
- ? __name < __arg.__name
- : __builtin_strcmp (__name, __arg.__name) < 0; }
-
-    bool operator==(const type_info& __arg) const noexcept
-    {
-      return ((__name == __arg.__name)
-       || (__name[0] != '*' &&
-    __builtin_strcmp (__name, __arg.__name) == 0));
-    }
-# 136 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
-    bool operator!=(const type_info& __arg) const noexcept
-    { return !operator==(__arg); }
-
-
-    size_t hash_code() const noexcept
-    {
-
-      return _Hash_bytes(name(), __builtin_strlen(name()),
-    static_cast<size_t>(0xc70f6907UL));
-
-
-
-    }
-
-
-
-    virtual bool __is_pointer_p() const;
-
-
-    virtual bool __is_function_p() const;
-
-
-
-
-
-
-
-    virtual bool __do_catch(const type_info *__thr_type, void **__thr_obj,
-       unsigned __outer) const;
-
-
-    virtual bool __do_upcast(const __cxxabiv1::__class_type_info *__target,
-        void **__obj_ptr) const;
-
-  protected:
-    const char *__name;
-
-    explicit type_info(const char *__n): __name(__n) { }
-
-  private:
-
-    type_info& operator=(const type_info&);
-    type_info(const type_info&);
-  };
-
-
-
-
-
-
-
-  class bad_cast : public exception
-  {
-  public:
-    bad_cast() noexcept { }
-
-
-
-    virtual ~bad_cast() noexcept;
-
-
-    virtual const char* what() const noexcept;
-  };
-
-
-
-
-
-  class bad_typeid : public exception
-  {
-  public:
-    bad_typeid () noexcept { }
-
-
-
-    virtual ~bad_typeid() noexcept;
-
-
-    virtual const char* what() const noexcept;
-  };
-}
-
-}
-
-#pragma GCC visibility pop
-# 7 "src/generic/fp_generic.cpp" 2
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 1 3
-# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 3
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ostream" 1 3
-# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ostream" 3
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ios" 1 3
-# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ios" 3
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 1 3
-# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 3
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 1 3
-# 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 3
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/memoryfwd.h" 1 3
-# 47 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/memoryfwd.h" 3
-
-
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-# 63 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/memoryfwd.h" 3
-  template<typename>
-    class allocator;
-
-  template<>
-    class allocator<void>;
-
-
-  template<typename, typename>
-    struct uses_allocator;
-
-
-
-
-}
-# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 2 3
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-# 52 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 3
-  template<class _CharT>
-    struct char_traits;
-
-  template<> struct char_traits<char>;
-
-
-  template<> struct char_traits<wchar_t>;
-
-
-
-
-  template<> struct char_traits<char16_t>;
-  template<> struct char_traits<char32_t>;
-
-
-namespace __cxx11 {
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT>,
-           typename _Alloc = allocator<_CharT> >
-    class basic_string;
-
-
-  typedef basic_string<char> string;
-
-
-
-  typedef basic_string<wchar_t> wstring;
-
-
-
-
-
-  typedef basic_string<char16_t> u16string;
-
-
-  typedef basic_string<char32_t> u32string;
-
-
-}
-
-
-
-
-}
-# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 2 3
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 1 3
-# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 1 3
-# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
-
-
-
-
-# 1 "/usr/include/wchar.h" 1 3 4
-# 27 "/usr/include/wchar.h" 3 4
+# 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 2 3
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/limits.h" 1 3
+# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/limits.h" 3
+# 1 "/usr/include/limits.h" 1 3 4
+# 26 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 28 "/usr/include/wchar.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
-# 119 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
-# 214 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
-typedef float _Float32;
-# 251 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
-typedef double _Float64;
-# 268 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
-typedef double _Float32x;
-# 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
-typedef long double _Float64x;
-# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
-# 31 "/usr/include/wchar.h" 2 3 4
-
-
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 62 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
-typedef long unsigned int size_t;
-# 36 "/usr/include/wchar.h" 2 3 4
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 1 3 4
-# 30 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
-typedef __builtin_va_list va_list;
-# 48 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
-typedef __builtin_va_list __gnuc_va_list;
-# 39 "/usr/include/wchar.h" 2 3 4
-
-
-
-
-typedef __gnuc_va_list va_list;
-
-
-
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
-# 52 "/usr/include/wchar.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 3 4
-typedef unsigned int wint_t;
-# 53 "/usr/include/wchar.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 1 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 1 3 4
-# 13 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 3 4
-typedef struct
-{
-  int __count;
-  union
-  {
-    unsigned int __wch;
-    char __wchb[4];
-  } __value;
-} __mbstate_t;
-# 5 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 2 3 4
-
-typedef __mbstate_t mbstate_t;
-# 54 "/usr/include/wchar.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
-
-
-
-struct _IO_FILE;
-typedef struct _IO_FILE __FILE;
-# 55 "/usr/include/wchar.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
-
-
-
-struct _IO_FILE;
-
-
-typedef struct _IO_FILE FILE;
-# 58 "/usr/include/wchar.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
-struct __locale_struct
-{
-
-  struct __locale_data *__locales[13];
-
-
-  const unsigned short int *__ctype_b;
-  const int *__ctype_tolower;
-  const int *__ctype_toupper;
-
-
-  const char *__names[13];
-};
-
-typedef struct __locale_struct *__locale_t;
-# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
-
-typedef __locale_t locale_t;
-# 61 "/usr/include/wchar.h" 2 3 4
-# 90 "/usr/include/wchar.h" 3 4
+# 27 "/usr/include/limits.h" 2 3 4
+# 195 "/usr/include/limits.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 2 3 4
+# 161 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 1 3 4
+# 38 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 3 4
+# 1 "/usr/include/linux/limits.h" 1 3 4
+# 39 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 2 3 4
+# 81 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h" 3 4
 extern "C" {
-
-
-
-struct tm;
-
-
-
-extern wchar_t *wcscpy (wchar_t *__restrict __dest,
-   const wchar_t *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern wchar_t *wcsncpy (wchar_t *__restrict __dest,
-    const wchar_t *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-extern size_t wcslcpy (wchar_t *__restrict __dest,
-         const wchar_t *__restrict __src, size_t __n)
-  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) ;
-
-
-
-extern size_t wcslcat (wchar_t *__restrict __dest,
-         const wchar_t *__restrict __src, size_t __n)
-  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) ;
-
-
-
-extern wchar_t *wcscat (wchar_t *__restrict __dest,
-   const wchar_t *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-extern wchar_t *wcsncat (wchar_t *__restrict __dest,
-    const wchar_t *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int wcscmp (const wchar_t *__s1, const wchar_t *__s2)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-extern int wcsncmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-extern int wcscasecmp (const wchar_t *__s1, const wchar_t *__s2) noexcept (true);
-
-
-extern int wcsncasecmp (const wchar_t *__s1, const wchar_t *__s2,
-   size_t __n) noexcept (true);
-
-
-
-extern int wcscasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
-    locale_t __loc) noexcept (true);
-
-extern int wcsncasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
-     size_t __n, locale_t __loc) noexcept (true);
-
-
-
-
-extern int wcscoll (const wchar_t *__s1, const wchar_t *__s2) noexcept (true);
-
-
-
-extern size_t wcsxfrm (wchar_t *__restrict __s1,
-         const wchar_t *__restrict __s2, size_t __n) noexcept (true);
-
-
-
-
-
-
-
-extern int wcscoll_l (const wchar_t *__s1, const wchar_t *__s2,
-        locale_t __loc) noexcept (true);
-
-
-
-
-extern size_t wcsxfrm_l (wchar_t *__s1, const wchar_t *__s2,
-    size_t __n, locale_t __loc) noexcept (true);
-
-
-extern wchar_t *wcsdup (const wchar_t *__s) noexcept (true)
-  __attribute__ ((__malloc__)) ;
-# 189 "/usr/include/wchar.h" 3 4
-extern wchar_t *wcschr (const wchar_t *__wcs, wchar_t __wc)
-     noexcept (true) __attribute__ ((__pure__));
-# 199 "/usr/include/wchar.h" 3 4
-extern wchar_t *wcsrchr (const wchar_t *__wcs, wchar_t __wc)
-     noexcept (true) __attribute__ ((__pure__));
-
-
-
-
-
-extern wchar_t *wcschrnul (const wchar_t *__s, wchar_t __wc)
-     noexcept (true) __attribute__ ((__pure__));
-
-
-
-
-extern size_t wcscspn (const wchar_t *__wcs, const wchar_t *__reject)
-     noexcept (true) __attribute__ ((__pure__));
-
-
-extern size_t wcsspn (const wchar_t *__wcs, const wchar_t *__accept)
-     noexcept (true) __attribute__ ((__pure__));
-# 226 "/usr/include/wchar.h" 3 4
-extern wchar_t *wcspbrk (const wchar_t *__wcs, const wchar_t *__accept)
-     noexcept (true) __attribute__ ((__pure__));
-# 237 "/usr/include/wchar.h" 3 4
-extern wchar_t *wcsstr (const wchar_t *__haystack, const wchar_t *__needle)
-     noexcept (true) __attribute__ ((__pure__));
-
-
-
-extern wchar_t *wcstok (wchar_t *__restrict __s,
-   const wchar_t *__restrict __delim,
-   wchar_t **__restrict __ptr) noexcept (true);
-
-
-extern size_t wcslen (const wchar_t *__s) noexcept (true) __attribute__ ((__pure__));
-# 258 "/usr/include/wchar.h" 3 4
-extern wchar_t *wcswcs (const wchar_t *__haystack, const wchar_t *__needle)
-     noexcept (true) __attribute__ ((__pure__));
-
-
-
-
-
-extern size_t wcsnlen (const wchar_t *__s, size_t __maxlen)
-     noexcept (true) __attribute__ ((__pure__));
-# 278 "/usr/include/wchar.h" 3 4
-extern wchar_t *wmemchr (const wchar_t *__s, wchar_t __c, size_t __n)
-     noexcept (true) __attribute__ ((__pure__));
-
-
-
-extern int wmemcmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__));
-
-
-extern wchar_t *wmemcpy (wchar_t *__restrict __s1,
-    const wchar_t *__restrict __s2, size_t __n) noexcept (true);
-
-
-
-extern wchar_t *wmemmove (wchar_t *__s1, const wchar_t *__s2, size_t __n)
-     noexcept (true);
-
-
-extern wchar_t *wmemset (wchar_t *__s, wchar_t __c, size_t __n) noexcept (true);
-
-
-
-
-extern wchar_t *wmempcpy (wchar_t *__restrict __s1,
-     const wchar_t *__restrict __s2, size_t __n)
-     noexcept (true);
-
-
-
-
-
-extern wint_t btowc (int __c) noexcept (true);
-
-
-
-extern int wctob (wint_t __c) noexcept (true);
-
-
-
-extern int mbsinit (const mbstate_t *__ps) noexcept (true) __attribute__ ((__pure__));
-
-
-
-extern size_t mbrtowc (wchar_t *__restrict __pwc,
-         const char *__restrict __s, size_t __n,
-         mbstate_t *__restrict __p) noexcept (true);
-
-
-extern size_t wcrtomb (char *__restrict __s, wchar_t __wc,
-         mbstate_t *__restrict __ps) noexcept (true);
-
-
-extern size_t __mbrlen (const char *__restrict __s, size_t __n,
-   mbstate_t *__restrict __ps) noexcept (true);
-extern size_t mbrlen (const char *__restrict __s, size_t __n,
-        mbstate_t *__restrict __ps) noexcept (true);
-# 362 "/usr/include/wchar.h" 3 4
-extern size_t mbsrtowcs (wchar_t *__restrict __dst,
-    const char **__restrict __src, size_t __len,
-    mbstate_t *__restrict __ps) noexcept (true);
-
-
-
-extern size_t wcsrtombs (char *__restrict __dst,
-    const wchar_t **__restrict __src, size_t __len,
-    mbstate_t *__restrict __ps) noexcept (true);
-
-
-
-
-
-extern size_t mbsnrtowcs (wchar_t *__restrict __dst,
-     const char **__restrict __src, size_t __nmc,
-     size_t __len, mbstate_t *__restrict __ps) noexcept (true);
-
-
-
-extern size_t wcsnrtombs (char *__restrict __dst,
-     const wchar_t **__restrict __src,
-     size_t __nwc, size_t __len,
-     mbstate_t *__restrict __ps) noexcept (true);
-
-
-
-
-
-
-extern int wcwidth (wchar_t __c) noexcept (true);
-
-
-
-extern int wcswidth (const wchar_t *__s, size_t __n) noexcept (true);
-
-
-
-
-
-extern double wcstod (const wchar_t *__restrict __nptr,
-        wchar_t **__restrict __endptr) noexcept (true);
-
-
-
-extern float wcstof (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
-extern long double wcstold (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
-# 422 "/usr/include/wchar.h" 3 4
-extern _Float32 wcstof32 (const wchar_t *__restrict __nptr,
-     wchar_t **__restrict __endptr) noexcept (true);
-
-
-
-extern _Float64 wcstof64 (const wchar_t *__restrict __nptr,
-     wchar_t **__restrict __endptr) noexcept (true);
-# 437 "/usr/include/wchar.h" 3 4
-extern _Float32x wcstof32x (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
-
-
-
-extern _Float64x wcstof64x (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
-# 455 "/usr/include/wchar.h" 3 4
-extern long int wcstol (const wchar_t *__restrict __nptr,
-   wchar_t **__restrict __endptr, int __base) noexcept (true);
-
-
-
-extern unsigned long int wcstoul (const wchar_t *__restrict __nptr,
-      wchar_t **__restrict __endptr, int __base)
-     noexcept (true);
-
-
-
-
-__extension__
-extern long long int wcstoll (const wchar_t *__restrict __nptr,
-         wchar_t **__restrict __endptr, int __base)
-     noexcept (true);
-
-
-
-__extension__
-extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr,
-     wchar_t **__restrict __endptr,
-     int __base) noexcept (true);
-
-
-
-
-
-__extension__
-extern long long int wcstoq (const wchar_t *__restrict __nptr,
-        wchar_t **__restrict __endptr, int __base)
-     noexcept (true);
-
-
-
-__extension__
-extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr,
-           wchar_t **__restrict __endptr,
-           int __base) noexcept (true);
-
-
-
-
-
-
-extern long int wcstol (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstol");
-
-
-extern unsigned long int wcstoul (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoul");
-
-
-
-__extension__
-extern long long int wcstoll (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoll");
-
-
-
-__extension__
-extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoull");
-
-
-
-
-__extension__
-extern long long int wcstoq (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoll");
-
-
-__extension__
-extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoull");
-# 561 "/usr/include/wchar.h" 3 4
-extern long int wcstol_l (const wchar_t *__restrict __nptr,
-     wchar_t **__restrict __endptr, int __base,
-     locale_t __loc) noexcept (true);
-
-extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr,
-        wchar_t **__restrict __endptr,
-        int __base, locale_t __loc) noexcept (true);
-
-__extension__
-extern long long int wcstoll_l (const wchar_t *__restrict __nptr,
-    wchar_t **__restrict __endptr,
-    int __base, locale_t __loc) noexcept (true);
-
-__extension__
-extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr,
-       int __base, locale_t __loc)
-     noexcept (true);
-
-
-
-
-
-extern long int wcstol_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstol_l");
-
-
-
-extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoul_l");
-
-
-
-
-__extension__
-extern long long int wcstoll_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoll_l");
-
-
-
-
-__extension__
-extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoull_l");
-# 630 "/usr/include/wchar.h" 3 4
-extern double wcstod_l (const wchar_t *__restrict __nptr,
-   wchar_t **__restrict __endptr, locale_t __loc)
-     noexcept (true);
-
-extern float wcstof_l (const wchar_t *__restrict __nptr,
-         wchar_t **__restrict __endptr, locale_t __loc)
-     noexcept (true);
-
-extern long double wcstold_l (const wchar_t *__restrict __nptr,
-         wchar_t **__restrict __endptr,
-         locale_t __loc) noexcept (true);
-# 649 "/usr/include/wchar.h" 3 4
-extern _Float32 wcstof32_l (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr,
-       locale_t __loc) noexcept (true);
-
-
-
-extern _Float64 wcstof64_l (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr,
-       locale_t __loc) noexcept (true);
-# 667 "/usr/include/wchar.h" 3 4
-extern _Float32x wcstof32x_l (const wchar_t *__restrict __nptr,
-         wchar_t **__restrict __endptr,
-         locale_t __loc) noexcept (true);
-
-
-
-extern _Float64x wcstof64x_l (const wchar_t *__restrict __nptr,
-         wchar_t **__restrict __endptr,
-         locale_t __loc) noexcept (true);
-# 689 "/usr/include/wchar.h" 3 4
-extern wchar_t *wcpcpy (wchar_t *__restrict __dest,
-   const wchar_t *__restrict __src) noexcept (true);
-
-
-
-extern wchar_t *wcpncpy (wchar_t *__restrict __dest,
-    const wchar_t *__restrict __src, size_t __n)
-     noexcept (true);
-# 718 "/usr/include/wchar.h" 3 4
-extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) noexcept (true)
-  __attribute__ ((__malloc__)) ;
-
-
-
-
-
-extern int fwide (__FILE *__fp, int __mode) noexcept (true);
-
-
-
-
-
-
-extern int fwprintf (__FILE *__restrict __stream,
-       const wchar_t *__restrict __format, ...)
-                                                           ;
-
-
-
-
-extern int wprintf (const wchar_t *__restrict __format, ...)
-                                                           ;
-
-extern int swprintf (wchar_t *__restrict __s, size_t __n,
-       const wchar_t *__restrict __format, ...)
-     noexcept (true) ;
-
-
-
-
-
-extern int vfwprintf (__FILE *__restrict __s,
-        const wchar_t *__restrict __format,
-        __gnuc_va_list __arg)
-                                                           ;
-
-
-
-
-extern int vwprintf (const wchar_t *__restrict __format,
-       __gnuc_va_list __arg)
-                                                           ;
-
-
-extern int vswprintf (wchar_t *__restrict __s, size_t __n,
-        const wchar_t *__restrict __format,
-        __gnuc_va_list __arg)
-     noexcept (true) ;
-
-
-
-
-
-
-extern int fwscanf (__FILE *__restrict __stream,
-      const wchar_t *__restrict __format, ...)
-                                                          ;
-
-
-
-
-extern int wscanf (const wchar_t *__restrict __format, ...)
-                                                          ;
-
-extern int swscanf (const wchar_t *__restrict __s,
-      const wchar_t *__restrict __format, ...)
-     noexcept (true) ;
-# 795 "/usr/include/wchar.h" 3 4
-extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc23_fwscanf")
-
-
-                                                          ;
-extern int wscanf (const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc23_wscanf")
-
-                                                          ;
-extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc23_swscanf")
-
-
-                                                          ;
-# 851 "/usr/include/wchar.h" 3 4
-extern int vfwscanf (__FILE *__restrict __s,
-       const wchar_t *__restrict __format,
-       __gnuc_va_list __arg)
-                                                          ;
-
-
-
-
-extern int vwscanf (const wchar_t *__restrict __format,
-      __gnuc_va_list __arg)
-                                                          ;
-
-extern int vswscanf (const wchar_t *__restrict __s,
-       const wchar_t *__restrict __format,
-       __gnuc_va_list __arg)
-     noexcept (true) ;
-# 875 "/usr/include/wchar.h" 3 4
-extern int vfwscanf (__FILE *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vfwscanf")
-
-
-                                                          ;
-extern int vwscanf (const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vwscanf")
-
-                                                          ;
-extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc23_vswscanf")
-
-
-                                                          ;
-# 935 "/usr/include/wchar.h" 3 4
-extern wint_t fgetwc (__FILE *__stream);
-extern wint_t getwc (__FILE *__stream);
-
-
-
-
-
-extern wint_t getwchar (void);
-
-
-
-
-
-
-extern wint_t fputwc (wchar_t __wc, __FILE *__stream);
-extern wint_t putwc (wchar_t __wc, __FILE *__stream);
-
-
-
-
-
-extern wint_t putwchar (wchar_t __wc);
-
-
-
-
-
-
-
-extern wchar_t *fgetws (wchar_t *__restrict __ws, int __n,
-   __FILE *__restrict __stream);
-
-
-
-
-
-extern int fputws (const wchar_t *__restrict __ws,
-     __FILE *__restrict __stream);
-
-
-
-
-
-
-extern wint_t ungetwc (wint_t __wc, __FILE *__stream);
-# 990 "/usr/include/wchar.h" 3 4
-extern wint_t getwc_unlocked (__FILE *__stream);
-extern wint_t getwchar_unlocked (void);
-
-
-
-
-
-
-
-extern wint_t fgetwc_unlocked (__FILE *__stream);
-
-
-
-
-
-
-
-extern wint_t fputwc_unlocked (wchar_t __wc, __FILE *__stream);
-# 1016 "/usr/include/wchar.h" 3 4
-extern wint_t putwc_unlocked (wchar_t __wc, __FILE *__stream);
-extern wint_t putwchar_unlocked (wchar_t __wc);
-# 1026 "/usr/include/wchar.h" 3 4
-extern wchar_t *fgetws_unlocked (wchar_t *__restrict __ws, int __n,
-     __FILE *__restrict __stream);
-
-
-
-
-
-
-
-extern int fputws_unlocked (const wchar_t *__restrict __ws,
-       __FILE *__restrict __stream);
-
-
-
-
-
-
-extern size_t wcsftime (wchar_t *__restrict __s, size_t __maxsize,
-   const wchar_t *__restrict __format,
-   const struct tm *__restrict __tp) noexcept (true);
-
-
-
-
-extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
-     const wchar_t *__restrict __format,
-     const struct tm *__restrict __tp,
-     locale_t __loc) noexcept (true);
-# 1073 "/usr/include/wchar.h" 3 4
+extern long int __sysconf (int __name) noexcept (true);
 }
-# 45 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 2 3
-# 62 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
-namespace std
-{
-  using ::mbstate_t;
-}
-# 135 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
+# 82 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 2 3 4
+# 162 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 2 3 4
+# 196 "/usr/include/limits.h" 2 3 4
 
 
-  using ::wint_t;
 
-  using ::btowc;
-  using ::fgetwc;
-  using ::fgetws;
-  using ::fputwc;
-  using ::fputws;
-  using ::fwide;
-  using ::fwprintf;
-  using ::fwscanf;
-  using ::getwc;
-  using ::getwchar;
-  using ::mbrlen;
-  using ::mbrtowc;
-  using ::mbsinit;
-  using ::mbsrtowcs;
-  using ::putwc;
-  using ::putwchar;
+# 1 "/usr/include/x86_64-linux-gnu/bits/posix2_lim.h" 1 3 4
+# 200 "/usr/include/limits.h" 2 3 4
 
-  using ::swprintf;
 
-  using ::swscanf;
-  using ::ungetwc;
-  using ::vfwprintf;
 
-  using ::vfwscanf;
-
-
-  using ::vswprintf;
-
-
-  using ::vswscanf;
-
-  using ::vwprintf;
-
-  using ::vwscanf;
-
-  using ::wcrtomb;
-  using ::wcscat;
-  using ::wcscmp;
-  using ::wcscoll;
-  using ::wcscpy;
-  using ::wcscspn;
-  using ::wcsftime;
-  using ::wcslen;
-  using ::wcsncat;
-  using ::wcsncmp;
-  using ::wcsncpy;
-  using ::wcsrtombs;
-  using ::wcsspn;
-  using ::wcstod;
-
-  using ::wcstof;
-
-  using ::wcstok;
-  using ::wcstol;
-  using ::wcstoul;
-  using ::wcsxfrm;
-  using ::wctob;
-  using ::wmemcmp;
-  using ::wmemcpy;
-  using ::wmemmove;
-  using ::wmemset;
-  using ::wprintf;
-  using ::wscanf;
-  using ::wcschr;
-  using ::wcspbrk;
-  using ::wcsrchr;
-  using ::wcsstr;
-  using ::wmemchr;
-
-
-  inline wchar_t*
-  wcschr(wchar_t* __p, wchar_t __c)
-  { return wcschr(const_cast<const wchar_t*>(__p), __c); }
-
-  inline wchar_t*
-  wcspbrk(wchar_t* __s1, const wchar_t* __s2)
-  { return wcspbrk(const_cast<const wchar_t*>(__s1), __s2); }
-
-  inline wchar_t*
-  wcsrchr(wchar_t* __p, wchar_t __c)
-  { return wcsrchr(const_cast<const wchar_t*>(__p), __c); }
-
-  inline wchar_t*
-  wcsstr(wchar_t* __s1, const wchar_t* __s2)
-  { return wcsstr(const_cast<const wchar_t*>(__s1), __s2); }
-
-  inline wchar_t*
-  wmemchr(wchar_t* __p, wchar_t __c, size_t __n)
-  { return wmemchr(const_cast<const wchar_t*>(__p), __c, __n); }
-
-
-
-}
-
-
-
-
-
-
-
-namespace __gnu_cxx
-{
-
-
-
-
-
-  using ::wcstold;
-# 257 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
-  using ::wcstoll;
-  using ::wcstoull;
-
-}
-
-namespace std
-{
-  using ::__gnu_cxx::wcstold;
-  using ::__gnu_cxx::wcstoll;
-  using ::__gnu_cxx::wcstoull;
-}
-# 277 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
-namespace std
-{
-
-  using std::wcstof;
-
-
-  using std::vfwscanf;
-
-
-  using std::vswscanf;
-
-
-  using std::vwscanf;
-
-
-
-  using std::wcstold;
-  using std::wcstoll;
-  using std::wcstoull;
-
-}
-# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 2 3
-# 68 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-# 88 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
-  typedef long streamoff;
-# 98 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
-  typedef ptrdiff_t streamsize;
-# 111 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
-  template<typename _StateT>
-    class fpos
-    {
-    private:
-      streamoff _M_off;
-      _StateT _M_state;
-
-    public:
-
-
-
-
-      fpos()
-      : _M_off(0), _M_state() { }
-# 133 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
-      fpos(streamoff __off)
-      : _M_off(__off), _M_state() { }
-
-
-      operator streamoff() const { return _M_off; }
-
-
-      void
-      state(_StateT __st)
-      { _M_state = __st; }
-
-
-      _StateT
-      state() const
-      { return _M_state; }
-
-
-
-
-
-      fpos&
-      operator+=(streamoff __off)
-      {
- _M_off += __off;
- return *this;
-      }
-
-
-
-
-
-      fpos&
-      operator-=(streamoff __off)
-      {
- _M_off -= __off;
- return *this;
-      }
-
-
-
-
-
-
-
-      fpos
-      operator+(streamoff __off) const
-      {
- fpos __pos(*this);
- __pos += __off;
- return __pos;
-      }
-
-
-
-
-
-
-
-      fpos
-      operator-(streamoff __off) const
-      {
- fpos __pos(*this);
- __pos -= __off;
- return __pos;
-      }
-
-
-
-
-
-
-      streamoff
-      operator-(const fpos& __other) const
-      { return _M_off - __other._M_off; }
-    };
-
-
-
-
-
-
-  template<typename _StateT>
-    inline bool
-    operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
-    { return streamoff(__lhs) == streamoff(__rhs); }
-
-  template<typename _StateT>
-    inline bool
-    operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
-    { return streamoff(__lhs) != streamoff(__rhs); }
-
-
-
-
-
-  typedef fpos<mbstate_t> streampos;
-
-  typedef fpos<mbstate_t> wstreampos;
-
-
-
-  typedef fpos<mbstate_t> u16streampos;
-
-  typedef fpos<mbstate_t> u32streampos;
-
-
-
-}
-# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 2 3
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-# 74 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 3
-  class ios_base;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_ios;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_streambuf;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_istream;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_ostream;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_iostream;
-
-
-namespace __cxx11 {
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT>,
-     typename _Alloc = allocator<_CharT> >
-    class basic_stringbuf;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT>,
-    typename _Alloc = allocator<_CharT> >
-    class basic_istringstream;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT>,
-    typename _Alloc = allocator<_CharT> >
-    class basic_ostringstream;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT>,
-    typename _Alloc = allocator<_CharT> >
-    class basic_stringstream;
-
-}
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_filebuf;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_ifstream;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_ofstream;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class basic_fstream;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class istreambuf_iterator;
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT> >
-    class ostreambuf_iterator;
-
-
-
-  typedef basic_ios<char> ios;
-
-
-  typedef basic_streambuf<char> streambuf;
-
-
-  typedef basic_istream<char> istream;
-
-
-  typedef basic_ostream<char> ostream;
-
-
-  typedef basic_iostream<char> iostream;
-
-
-  typedef basic_stringbuf<char> stringbuf;
-
-
-  typedef basic_istringstream<char> istringstream;
-
-
-  typedef basic_ostringstream<char> ostringstream;
-
-
-  typedef basic_stringstream<char> stringstream;
-
-
-  typedef basic_filebuf<char> filebuf;
-
-
-  typedef basic_ifstream<char> ifstream;
-
-
-  typedef basic_ofstream<char> ofstream;
-
-
-  typedef basic_fstream<char> fstream;
-
-
-
-  typedef basic_ios<wchar_t> wios;
-
-
-  typedef basic_streambuf<wchar_t> wstreambuf;
-
-
-  typedef basic_istream<wchar_t> wistream;
-
-
-  typedef basic_ostream<wchar_t> wostream;
-
-
-  typedef basic_iostream<wchar_t> wiostream;
-
-
-  typedef basic_stringbuf<wchar_t> wstringbuf;
-
-
-  typedef basic_istringstream<wchar_t> wistringstream;
-
-
-  typedef basic_ostringstream<wchar_t> wostringstream;
-
-
-  typedef basic_stringstream<wchar_t> wstringstream;
-
-
-  typedef basic_filebuf<wchar_t> wfilebuf;
-
-
-  typedef basic_ifstream<wchar_t> wifstream;
-
-
-  typedef basic_ofstream<wchar_t> wofstream;
-
-
-  typedef basic_fstream<wchar_t> wfstream;
-
-
-
-
-}
-# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ios" 2 3
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 1 3
-# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 3
-
-#pragma GCC visibility push(default)
-
-
-
-
-extern "C++" {
-
-namespace std
-{
-
-
-  class bad_exception : public exception
-  {
-  public:
-    bad_exception() noexcept { }
-
-
-
-    virtual ~bad_exception() noexcept;
-
-
-    virtual const char*
-    what() const noexcept;
-  };
-
-
-  typedef void (*terminate_handler) ();
-
-
-  typedef void (*unexpected_handler) ();
-
-
-  terminate_handler set_terminate(terminate_handler) noexcept;
-
-
-
-  terminate_handler get_terminate() noexcept;
-
-
-
-
-  void terminate() noexcept __attribute__ ((__noreturn__));
-
-
-  unexpected_handler set_unexpected(unexpected_handler) noexcept;
-
-
-
-  unexpected_handler get_unexpected() noexcept;
-
-
-
-
-  void unexpected() __attribute__ ((__noreturn__));
-# 102 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 3
-  bool uncaught_exception() noexcept __attribute__ ((__pure__));
-
-
-
-
-  int uncaught_exceptions() noexcept __attribute__ ((__pure__));
-
-
-
-}
-
-namespace __gnu_cxx
-{
-# 133 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 3
-  void __verbose_terminate_handler();
-
-
-}
-
-}
-
-#pragma GCC visibility pop
-
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 1 3
-# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
-#pragma GCC visibility push(default)
-
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_defines.h" 1 3
-# 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 2 3
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 1 3
-# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 3
-
-#pragma GCC visibility push(default)
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
-# 51 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long int ptrdiff_t;
-# 118 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/__stddef_max_align_t.h" 1 3
-# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/__stddef_max_align_t.h" 3
-typedef struct {
-  long long __clang_max_align_nonce1
-      __attribute__((__aligned__(__alignof__(long long))));
-  long double __clang_max_align_nonce2
-      __attribute__((__aligned__(__alignof__(long double))));
-} max_align_t;
-# 119 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 2 3
-# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 2 3
-# 50 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 3
-namespace std
-{
-  class type_info;
-}
-
-namespace __cxxabiv1
-{
-  struct __cxa_refcounted_exception;
-
-  extern "C"
-    {
-
-      void*
-      __cxa_allocate_exception(size_t) noexcept;
-
-      void
-      __cxa_free_exception(void*) noexcept;
-
-
-      __cxa_refcounted_exception*
-      __cxa_init_primary_exception(void *object, std::type_info *tinfo,
-                void ( *dest) (void *)) noexcept;
-
-    }
-}
-
-
-
-#pragma GCC visibility pop
-# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 2 3
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 1 3
-# 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 1 3
-# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 2 3
-
-#pragma GCC visibility push(default)
-
-extern "C++" {
-
-namespace std
-{
-
-
-
-
-
-
-  class bad_alloc : public exception
-  {
-  public:
-    bad_alloc() throw() { }
-
-
-
-    virtual ~bad_alloc() throw();
-
-
-    virtual const char* what() const throw();
-  };
-
-
-  class bad_array_new_length : public bad_alloc
-  {
-  public:
-    bad_array_new_length() throw() { }
-
-
-
-    virtual ~bad_array_new_length() throw();
-
-
-    virtual const char* what() const throw();
-  };
-
-
-
-
-
-
-  struct nothrow_t
-  {
-
-    explicit nothrow_t() = default;
-
-  };
-
-  extern const nothrow_t nothrow;
-
-
-
-  typedef void (*new_handler)();
-
-
-
-  new_handler set_new_handler(new_handler) throw();
-
-
-
-  new_handler get_new_handler() noexcept;
-
-}
-# 120 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
-void* operator new(std::size_t)
-  __attribute__((__externally_visible__));
-void* operator new[](std::size_t)
-  __attribute__((__externally_visible__));
-void operator delete(void*) noexcept
-  __attribute__((__externally_visible__));
-void operator delete[](void*) noexcept
-  __attribute__((__externally_visible__));
-
-
-
-
-
-
-void* operator new(std::size_t, const std::nothrow_t&) noexcept
-  __attribute__((__externally_visible__));
-void* operator new[](std::size_t, const std::nothrow_t&) noexcept
-  __attribute__((__externally_visible__));
-void operator delete(void*, const std::nothrow_t&) noexcept
-  __attribute__((__externally_visible__));
-void operator delete[](void*, const std::nothrow_t&) noexcept
-  __attribute__((__externally_visible__));
-# 168 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
-inline void* operator new(std::size_t, void* __p) noexcept
-{ return __p; }
-inline void* operator new[](std::size_t, void* __p) noexcept
-{ return __p; }
-
-
-inline void operator delete (void*, void*) noexcept { }
-inline void operator delete[](void*, void*) noexcept { }
-
-}
-# 216 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
-#pragma GCC visibility pop
-# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 2 3
-
-extern "C++" {
-
-namespace std
-{
-  class type_info;
-
-
-
-
-
-  namespace __exception_ptr
-  {
-    class exception_ptr;
-  }
-
-  using __exception_ptr::exception_ptr;
-
-
-
-
-
-  exception_ptr current_exception() noexcept;
-
-  template<typename _Ex>
-  exception_ptr make_exception_ptr(_Ex) noexcept;
-
-
-  void rethrow_exception(exception_ptr) __attribute__ ((__noreturn__));
-
-  namespace __exception_ptr
-  {
-    using std::rethrow_exception;
-
-
-
-
-
-    class exception_ptr
-    {
-      void* _M_exception_object;
-
-      explicit exception_ptr(void* __e) noexcept;
-
-      void _M_addref() noexcept;
-      void _M_release() noexcept;
-
-      void *_M_get() const noexcept __attribute__ ((__pure__));
-
-      friend exception_ptr std::current_exception() noexcept;
-      friend void std::rethrow_exception(exception_ptr);
-      template<typename _Ex>
-      friend exception_ptr std::make_exception_ptr(_Ex) noexcept;
-
-    public:
-      exception_ptr() noexcept;
-
-      exception_ptr(const exception_ptr&) noexcept;
-
-
-      exception_ptr(nullptr_t) noexcept
-      : _M_exception_object(0)
-      { }
-
-      exception_ptr(exception_ptr&& __o) noexcept
-      : _M_exception_object(__o._M_exception_object)
-      { __o._M_exception_object = 0; }
-# 117 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
-      exception_ptr&
-      operator=(const exception_ptr&) noexcept;
-
-
-      exception_ptr&
-      operator=(exception_ptr&& __o) noexcept
-      {
-        exception_ptr(static_cast<exception_ptr&&>(__o)).swap(*this);
-        return *this;
-      }
-
-
-      ~exception_ptr() noexcept;
-
-      void
-      swap(exception_ptr&) noexcept;
-# 144 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
-      explicit operator bool() const
-      { return _M_exception_object; }
-
-
-      friend bool
-      operator==(const exception_ptr&, const exception_ptr&)
- noexcept __attribute__ ((__pure__));
-
-      const class std::type_info*
-      __cxa_exception_type() const noexcept
- __attribute__ ((__pure__));
-    };
-
-    bool
-    operator==(const exception_ptr&, const exception_ptr&)
-      noexcept __attribute__ ((__pure__));
-
-    bool
-    operator!=(const exception_ptr&, const exception_ptr&)
-      noexcept __attribute__ ((__pure__));
-
-    inline void
-    swap(exception_ptr& __lhs, exception_ptr& __rhs)
-    { __lhs.swap(__rhs); }
-
-    template<typename _Ex>
-      inline void
-      __dest_thunk(void* __x)
-      { static_cast<_Ex*>(__x)->~_Ex(); }
-
-  }
-
-
-  template<typename _Ex>
-    exception_ptr
-    make_exception_ptr(_Ex __ex) noexcept
-    {
-# 206 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
-      return exception_ptr();
-
-    }
-
-
-}
-
-}
-
-#pragma GCC visibility pop
-# 144 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 2 3
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/nested_exception.h" 1 3
-# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/nested_exception.h" 3
-#pragma GCC visibility push(default)
-
-
-
-
-
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 1 3
-# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 3
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/concept_check.h" 1 3
-# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/concept_check.h" 3
-# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 2 3
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-
-
-
-
-
-
-  template<typename _Tp>
-    inline constexpr _Tp*
-    __addressof(_Tp& __r) noexcept
-    { return __builtin_addressof(__r); }
-
-
-
-
-}
-
-
+# 1 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 1 3 4
+# 64 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/uio_lim.h" 1 3 4
+# 65 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
+# 204 "/usr/include/limits.h" 2 3 4
+# 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/limits.h" 2 3
+# 43 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 2 3
+# 3 "src/generic/fp_generic.cpp" 2
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 1 3
 # 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
 
@@ -10155,7 +8280,2399 @@ namespace std __attribute__ ((__visibility__ ("default")))
   };
 # 2974 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
 }
-# 56 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 2 3
+# 4 "src/generic/fp_generic.cpp" 2
+# 1 "src/generic/mpx_packed.hpp" 1
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
+# 4 "src/generic/mpx_packed.hpp" 2
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 1 3
+# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 3
+# 6 "src/generic/mpx_packed.hpp" 2
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
+# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
+
+
+
+
+
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
+# 63 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/usr/include/stdint.h" 1 3 4
+# 26 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
+# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 28 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 29 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 30 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+typedef __int8_t int8_t;
+typedef __int16_t int16_t;
+typedef __int32_t int32_t;
+typedef __int64_t int64_t;
+# 35 "/usr/include/stdint.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+typedef __uint8_t uint8_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __uint64_t uint64_t;
+# 38 "/usr/include/stdint.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
+
+
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
+# 42 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+
+typedef signed char int_fast8_t;
+
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+# 60 "/usr/include/stdint.h" 3 4
+typedef unsigned char uint_fast8_t;
+
+typedef unsigned long int uint_fast16_t;
+typedef unsigned long int uint_fast32_t;
+typedef unsigned long int uint_fast64_t;
+# 76 "/usr/include/stdint.h" 3 4
+typedef long int intptr_t;
+
+
+typedef unsigned long int uintptr_t;
+# 90 "/usr/include/stdint.h" 3 4
+typedef __intmax_t intmax_t;
+typedef __uintmax_t uintmax_t;
+# 64 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
+
+
+
+
+namespace std
+{
+  using ::int8_t;
+  using ::int16_t;
+  using ::int32_t;
+  using ::int64_t;
+
+  using ::int_fast8_t;
+  using ::int_fast16_t;
+  using ::int_fast32_t;
+  using ::int_fast64_t;
+
+  using ::int_least8_t;
+  using ::int_least16_t;
+  using ::int_least32_t;
+  using ::int_least64_t;
+
+  using ::intmax_t;
+  using ::intptr_t;
+
+  using ::uint8_t;
+  using ::uint16_t;
+  using ::uint32_t;
+  using ::uint64_t;
+
+  using ::uint_fast8_t;
+  using ::uint_fast16_t;
+  using ::uint_fast32_t;
+  using ::uint_fast64_t;
+
+  using ::uint_least8_t;
+  using ::uint_least16_t;
+  using ::uint_least32_t;
+  using ::uint_least64_t;
+
+  using ::uintmax_t;
+  using ::uintptr_t;
+}
+# 7 "src/generic/mpx_packed.hpp" 2
+
+namespace mpx
+{
+
+
+
+  template <class Digit, unsigned MAX_NWORDS, bool LSW_FIRST = true>
+  struct PackedOps
+  {
+    static_assert(std::is_unsigned<Digit>::value,
+                  "Digit must be an unsigned integer type.");
+    static constexpr unsigned W = 8 * sizeof(Digit);
+    static_assert(W >= 8, "Digit width must be >= 8 bits.");
+
+    using Big = ap_uint<W * MAX_NWORDS>;
+    using Big2 = ap_uint<2 * W * MAX_NWORDS>;
+
+
+    static Big pack(const Digit *x, unsigned nwords)
+    {
+      Big A = 0;
+
+      VITIS_LOOP_29_1: for (unsigned i = 0; i < MAX_NWORDS; ++i)
+      {
+#pragma HLS UNROLL factor = 1
+ if (i < nwords)
+        {
+          const unsigned src =
+              LSW_FIRST ? i : (nwords - 1u - i);
+          ap_uint<W> w = (ap_uint<W>)x[src];
+          A |= (Big)w << (i * W);
+        }
+      }
+      return A;
+    }
+
+    template <class Wide>
+    static void unpack(const Wide &P, Digit *y, unsigned out_words)
+    {
+      VITIS_LOOP_46_1: for (unsigned i = 0; i < out_words; ++i)
+      {
+        ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
+        const unsigned dst =
+            LSW_FIRST ? i : (out_words - 1u - i);
+        y[dst] = (Digit)w;
+      }
+    }
+
+
+
+    static unsigned add(const Digit *a, const Digit *b,
+                        Digit *c, unsigned nwords)
+    {
+      Big A = pack(a, nwords);
+      Big B = pack(b, nwords);
+
+      ap_uint<W * MAX_NWORDS + 1> S = A + B;
+
+      Big result = S.range(W * MAX_NWORDS - 1, 0);
+      unpack(result, c, nwords);
+
+      ap_uint<1> carry = 0;
+      if (nwords < MAX_NWORDS)
+      {
+
+        carry = S[W * nwords];
+      }
+      else
+      {
+
+        carry = S[W * MAX_NWORDS];
+      }
+      return (unsigned)carry;
+    }
+
+    static unsigned sub(const Digit *a, const Digit *b,
+                        Digit *c, unsigned nwords)
+    {
+      Big A = pack(a, nwords);
+      Big B = pack(b, nwords);
+
+      ap_uint<W * MAX_NWORDS + 1> D = A - B;
+
+      Big result = D.range(W * MAX_NWORDS - 1, 0);
+      unpack(result, c, nwords);
+
+      ap_uint<1> borrow = 0;
+      if (nwords < MAX_NWORDS)
+      {
+
+        borrow = D[W * nwords];
+      }
+      else
+      {
+
+        borrow = D[W * MAX_NWORDS];
+      }
+      return (unsigned)borrow;
+    }
+
+    static void mul(const Digit *a, const Digit *b,
+                    Digit *c, unsigned nwords)
+    {
+
+      VITIS_LOOP_111_1: for (unsigned i = 0; i < 2 * nwords; ++i)
+      {
+        c[i] = 0;
+      }
+
+
+      VITIS_LOOP_117_2: for (unsigned i = 0; i < nwords; ++i)
+      {
+        VITIS_LOOP_119_3: for (unsigned j = 0; j < nwords; ++j)
+        {
+
+          ap_uint<128> product = (ap_uint<64>)a[i] * (ap_uint<64>)b[j];
+          ap_uint<64> low = product.range(63, 0);
+          ap_uint<64> high = product.range(127, 64);
+
+
+          ap_uint<128> sum = c[i + j] + low;
+          c[i + j] = sum.range(63, 0);
+          ap_uint<64> carry = sum.range(127, 64);
+
+
+          unsigned int pos = i + j + 1;
+          VITIS_LOOP_133_4: while (carry > 0 && pos < 2 * nwords)
+          {
+            ap_uint<128> next_sum = c[pos] + carry;
+            c[pos] = next_sum.range(63, 0);
+            carry = next_sum.range(127, 64);
+            pos++;
+          }
+
+
+          if (i + j + 1 < 2 * nwords)
+          {
+            ap_uint<128> high_sum = c[i + j + 1] + high;
+            c[i + j + 1] = high_sum.range(63, 0);
+            ap_uint<64> high_carry = high_sum.range(127, 64);
+
+
+            pos = i + j + 2;
+            VITIS_LOOP_150_5: while (high_carry > 0 && pos < 2 * nwords)
+            {
+              ap_uint<128> next_sum = c[pos] + high_carry;
+              c[pos] = next_sum.range(63, 0);
+              high_carry = next_sum.range(127, 64);
+              pos++;
+            }
+          }
+        }
+      }
+    }
+
+    static void sqr(const Digit *a, Digit *c, unsigned nwords)
+    {
+
+      VITIS_LOOP_165_1: for (unsigned i = 0; i < 2 * nwords; ++i)
+      {
+        c[i] = 0;
+      }
+
+
+      VITIS_LOOP_171_2: for (unsigned i = 0; i < nwords; ++i)
+      {
+        VITIS_LOOP_173_3: for (unsigned j = 0; j < nwords; ++j)
+        {
+
+          ap_uint<128> product = (ap_uint<64>)a[i] * (ap_uint<64>)a[j];
+          ap_uint<64> low = product.range(63, 0);
+          ap_uint<64> high = product.range(127, 64);
+
+
+          ap_uint<128> sum = c[i + j] + low;
+          c[i + j] = sum.range(63, 0);
+          ap_uint<64> carry = sum.range(127, 64);
+
+
+          unsigned int pos = i + j + 1;
+          VITIS_LOOP_187_4: while (carry > 0 && pos < 2 * nwords)
+          {
+            ap_uint<128> next_sum = c[pos] + carry;
+            c[pos] = next_sum.range(63, 0);
+            carry = next_sum.range(127, 64);
+            pos++;
+          }
+
+
+          if (i + j + 1 < 2 * nwords)
+          {
+            ap_uint<128> high_sum = c[i + j + 1] + high;
+            c[i + j + 1] = high_sum.range(63, 0);
+            ap_uint<64> high_carry = high_sum.range(127, 64);
+
+
+            pos = i + j + 2;
+            VITIS_LOOP_204_5: while (high_carry > 0 && pos < 2 * nwords)
+            {
+              ap_uint<128> next_sum = c[pos] + high_carry;
+              c[pos] = next_sum.range(63, 0);
+              high_carry = next_sum.range(127, 64);
+              pos++;
+            }
+          }
+        }
+      }
+    }
+  };
+
+}
+# 5 "src/generic/fp_generic.cpp" 2
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
+# 9 "src/generic/fp_generic.cpp" 2
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 1 3
+# 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 3
+
+
+# 1 "/usr/include/assert.h" 1 3 4
+# 66 "/usr/include/assert.h" 3 4
+extern "C" {
+
+
+extern void __assert_fail (const char *__assertion, const char *__file,
+      unsigned int __line, const char *__function)
+     noexcept (true) __attribute__ ((__noreturn__));
+
+
+extern void __assert_perror_fail (int __errnum, const char *__file,
+      unsigned int __line, const char *__function)
+     noexcept (true) __attribute__ ((__noreturn__));
+
+
+
+
+extern void __assert (const char *__assertion, const char *__file, int __line)
+     noexcept (true) __attribute__ ((__noreturn__));
+
+
+}
+# 45 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cassert" 2 3
+# 10 "src/generic/fp_generic.cpp" 2
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 1 3
+# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception.h" 1 3
+# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception.h" 3
+
+#pragma GCC visibility push(default)
+
+
+
+extern "C++" {
+
+namespace std
+{
+# 60 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception.h" 3
+  class exception
+  {
+  public:
+    exception() noexcept { }
+    virtual ~exception() noexcept;
+
+
+
+    virtual const char*
+    what() const noexcept;
+  };
+
+}
+
+}
+
+#pragma GCC visibility pop
+# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 2 3
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/hash_bytes.h" 1 3
+# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/hash_bytes.h" 3
+
+
+
+namespace std
+{
+
+
+
+
+
+
+
+  size_t
+  _Hash_bytes(const void* __ptr, size_t __len, size_t __seed);
+
+
+
+
+
+  size_t
+  _Fnv_hash_bytes(const void* __ptr, size_t __len, size_t __seed);
+
+
+}
+# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 2 3
+
+
+#pragma GCC visibility push(default)
+
+extern "C++" {
+
+namespace __cxxabiv1
+{
+  class __class_type_info;
+}
+# 80 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
+namespace std
+{
+
+
+
+
+
+
+  class type_info
+  {
+  public:
+
+
+
+
+    virtual ~type_info();
+
+
+
+    const char* name() const noexcept
+    { return __name[0] == '*' ? __name + 1 : __name; }
+# 115 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
+    bool before(const type_info& __arg) const noexcept
+    { return (__name[0] == '*' && __arg.__name[0] == '*')
+ ? __name < __arg.__name
+ : __builtin_strcmp (__name, __arg.__name) < 0; }
+
+    bool operator==(const type_info& __arg) const noexcept
+    {
+      return ((__name == __arg.__name)
+       || (__name[0] != '*' &&
+    __builtin_strcmp (__name, __arg.__name) == 0));
+    }
+# 136 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/typeinfo" 3
+    bool operator!=(const type_info& __arg) const noexcept
+    { return !operator==(__arg); }
+
+
+    size_t hash_code() const noexcept
+    {
+
+      return _Hash_bytes(name(), __builtin_strlen(name()),
+    static_cast<size_t>(0xc70f6907UL));
+
+
+
+    }
+
+
+
+    virtual bool __is_pointer_p() const;
+
+
+    virtual bool __is_function_p() const;
+
+
+
+
+
+
+
+    virtual bool __do_catch(const type_info *__thr_type, void **__thr_obj,
+       unsigned __outer) const;
+
+
+    virtual bool __do_upcast(const __cxxabiv1::__class_type_info *__target,
+        void **__obj_ptr) const;
+
+  protected:
+    const char *__name;
+
+    explicit type_info(const char *__n): __name(__n) { }
+
+  private:
+
+    type_info& operator=(const type_info&);
+    type_info(const type_info&);
+  };
+
+
+
+
+
+
+
+  class bad_cast : public exception
+  {
+  public:
+    bad_cast() noexcept { }
+
+
+
+    virtual ~bad_cast() noexcept;
+
+
+    virtual const char* what() const noexcept;
+  };
+
+
+
+
+
+  class bad_typeid : public exception
+  {
+  public:
+    bad_typeid () noexcept { }
+
+
+
+    virtual ~bad_typeid() noexcept;
+
+
+    virtual const char* what() const noexcept;
+  };
+}
+
+}
+
+#pragma GCC visibility pop
+# 11 "src/generic/fp_generic.cpp" 2
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 1 3
+# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 3
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ostream" 1 3
+# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ostream" 3
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ios" 1 3
+# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ios" 3
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 1 3
+# 37 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 3
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 1 3
+# 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 3
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/memoryfwd.h" 1 3
+# 47 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/memoryfwd.h" 3
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 63 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/memoryfwd.h" 3
+  template<typename>
+    class allocator;
+
+  template<>
+    class allocator<void>;
+
+
+  template<typename, typename>
+    struct uses_allocator;
+
+
+
+
+}
+# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 52 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stringfwd.h" 3
+  template<class _CharT>
+    struct char_traits;
+
+  template<> struct char_traits<char>;
+
+
+  template<> struct char_traits<wchar_t>;
+
+
+
+
+  template<> struct char_traits<char16_t>;
+  template<> struct char_traits<char32_t>;
+
+
+namespace __cxx11 {
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+           typename _Alloc = allocator<_CharT> >
+    class basic_string;
+
+
+  typedef basic_string<char> string;
+
+
+
+  typedef basic_string<wchar_t> wstring;
+
+
+
+
+
+  typedef basic_string<char16_t> u16string;
+
+
+  typedef basic_string<char32_t> u32string;
+
+
+}
+
+
+
+
+}
+# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 2 3
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 1 3
+# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 1 3
+# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
+
+
+
+
+# 1 "/usr/include/wchar.h" 1 3 4
+# 27 "/usr/include/wchar.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 28 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
+# 119 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
+# 214 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef float _Float32;
+# 251 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float64;
+# 268 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float32x;
+# 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef long double _Float64x;
+# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 31 "/usr/include/wchar.h" 2 3 4
+
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 62 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 36 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 1 3 4
+# 30 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list va_list;
+# 48 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 39 "/usr/include/wchar.h" 2 3 4
+
+
+
+
+typedef __gnuc_va_list va_list;
+# 52 "/usr/include/wchar.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 3 4
+typedef unsigned int wint_t;
+# 53 "/usr/include/wchar.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 1 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 1 3 4
+# 13 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 3 4
+typedef struct
+{
+  int __count;
+  union
+  {
+    unsigned int __wch;
+    char __wchb[4];
+  } __value;
+} __mbstate_t;
+# 5 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 2 3 4
+
+typedef __mbstate_t mbstate_t;
+# 54 "/usr/include/wchar.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+typedef struct _IO_FILE __FILE;
+# 55 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+
+
+typedef struct _IO_FILE FILE;
+# 58 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
+struct __locale_struct
+{
+
+  struct __locale_data *__locales[13];
+
+
+  const unsigned short int *__ctype_b;
+  const int *__ctype_tolower;
+  const int *__ctype_toupper;
+
+
+  const char *__names[13];
+};
+
+typedef struct __locale_struct *__locale_t;
+# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
+
+typedef __locale_t locale_t;
+# 61 "/usr/include/wchar.h" 2 3 4
+# 90 "/usr/include/wchar.h" 3 4
+extern "C" {
+
+
+
+struct tm;
+
+
+
+extern wchar_t *wcscpy (wchar_t *__restrict __dest,
+   const wchar_t *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern wchar_t *wcsncpy (wchar_t *__restrict __dest,
+    const wchar_t *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern size_t wcslcpy (wchar_t *__restrict __dest,
+         const wchar_t *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) ;
+
+
+
+extern size_t wcslcat (wchar_t *__restrict __dest,
+         const wchar_t *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) ;
+
+
+
+extern wchar_t *wcscat (wchar_t *__restrict __dest,
+   const wchar_t *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+extern wchar_t *wcsncat (wchar_t *__restrict __dest,
+    const wchar_t *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int wcscmp (const wchar_t *__s1, const wchar_t *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int wcsncmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern int wcscasecmp (const wchar_t *__s1, const wchar_t *__s2) noexcept (true);
+
+
+extern int wcsncasecmp (const wchar_t *__s1, const wchar_t *__s2,
+   size_t __n) noexcept (true);
+
+
+
+extern int wcscasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
+    locale_t __loc) noexcept (true);
+
+extern int wcsncasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
+     size_t __n, locale_t __loc) noexcept (true);
+
+
+
+
+extern int wcscoll (const wchar_t *__s1, const wchar_t *__s2) noexcept (true);
+
+
+
+extern size_t wcsxfrm (wchar_t *__restrict __s1,
+         const wchar_t *__restrict __s2, size_t __n) noexcept (true);
+
+
+
+
+
+
+
+extern int wcscoll_l (const wchar_t *__s1, const wchar_t *__s2,
+        locale_t __loc) noexcept (true);
+
+
+
+
+extern size_t wcsxfrm_l (wchar_t *__s1, const wchar_t *__s2,
+    size_t __n, locale_t __loc) noexcept (true);
+
+
+extern wchar_t *wcsdup (const wchar_t *__s) noexcept (true)
+  __attribute__ ((__malloc__)) ;
+# 189 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcschr (const wchar_t *__wcs, wchar_t __wc)
+     noexcept (true) __attribute__ ((__pure__));
+# 199 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcsrchr (const wchar_t *__wcs, wchar_t __wc)
+     noexcept (true) __attribute__ ((__pure__));
+
+
+
+
+
+extern wchar_t *wcschrnul (const wchar_t *__s, wchar_t __wc)
+     noexcept (true) __attribute__ ((__pure__));
+
+
+
+
+extern size_t wcscspn (const wchar_t *__wcs, const wchar_t *__reject)
+     noexcept (true) __attribute__ ((__pure__));
+
+
+extern size_t wcsspn (const wchar_t *__wcs, const wchar_t *__accept)
+     noexcept (true) __attribute__ ((__pure__));
+# 226 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcspbrk (const wchar_t *__wcs, const wchar_t *__accept)
+     noexcept (true) __attribute__ ((__pure__));
+# 237 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcsstr (const wchar_t *__haystack, const wchar_t *__needle)
+     noexcept (true) __attribute__ ((__pure__));
+
+
+
+extern wchar_t *wcstok (wchar_t *__restrict __s,
+   const wchar_t *__restrict __delim,
+   wchar_t **__restrict __ptr) noexcept (true);
+
+
+extern size_t wcslen (const wchar_t *__s) noexcept (true) __attribute__ ((__pure__));
+# 258 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcswcs (const wchar_t *__haystack, const wchar_t *__needle)
+     noexcept (true) __attribute__ ((__pure__));
+
+
+
+
+
+extern size_t wcsnlen (const wchar_t *__s, size_t __maxlen)
+     noexcept (true) __attribute__ ((__pure__));
+# 278 "/usr/include/wchar.h" 3 4
+extern wchar_t *wmemchr (const wchar_t *__s, wchar_t __c, size_t __n)
+     noexcept (true) __attribute__ ((__pure__));
+
+
+
+extern int wmemcmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__));
+
+
+extern wchar_t *wmemcpy (wchar_t *__restrict __s1,
+    const wchar_t *__restrict __s2, size_t __n) noexcept (true);
+
+
+
+extern wchar_t *wmemmove (wchar_t *__s1, const wchar_t *__s2, size_t __n)
+     noexcept (true);
+
+
+extern wchar_t *wmemset (wchar_t *__s, wchar_t __c, size_t __n) noexcept (true);
+
+
+
+
+extern wchar_t *wmempcpy (wchar_t *__restrict __s1,
+     const wchar_t *__restrict __s2, size_t __n)
+     noexcept (true);
+
+
+
+
+
+extern wint_t btowc (int __c) noexcept (true);
+
+
+
+extern int wctob (wint_t __c) noexcept (true);
+
+
+
+extern int mbsinit (const mbstate_t *__ps) noexcept (true) __attribute__ ((__pure__));
+
+
+
+extern size_t mbrtowc (wchar_t *__restrict __pwc,
+         const char *__restrict __s, size_t __n,
+         mbstate_t *__restrict __p) noexcept (true);
+
+
+extern size_t wcrtomb (char *__restrict __s, wchar_t __wc,
+         mbstate_t *__restrict __ps) noexcept (true);
+
+
+extern size_t __mbrlen (const char *__restrict __s, size_t __n,
+   mbstate_t *__restrict __ps) noexcept (true);
+extern size_t mbrlen (const char *__restrict __s, size_t __n,
+        mbstate_t *__restrict __ps) noexcept (true);
+# 362 "/usr/include/wchar.h" 3 4
+extern size_t mbsrtowcs (wchar_t *__restrict __dst,
+    const char **__restrict __src, size_t __len,
+    mbstate_t *__restrict __ps) noexcept (true);
+
+
+
+extern size_t wcsrtombs (char *__restrict __dst,
+    const wchar_t **__restrict __src, size_t __len,
+    mbstate_t *__restrict __ps) noexcept (true);
+
+
+
+
+
+extern size_t mbsnrtowcs (wchar_t *__restrict __dst,
+     const char **__restrict __src, size_t __nmc,
+     size_t __len, mbstate_t *__restrict __ps) noexcept (true);
+
+
+
+extern size_t wcsnrtombs (char *__restrict __dst,
+     const wchar_t **__restrict __src,
+     size_t __nwc, size_t __len,
+     mbstate_t *__restrict __ps) noexcept (true);
+
+
+
+
+
+
+extern int wcwidth (wchar_t __c) noexcept (true);
+
+
+
+extern int wcswidth (const wchar_t *__s, size_t __n) noexcept (true);
+
+
+
+
+
+extern double wcstod (const wchar_t *__restrict __nptr,
+        wchar_t **__restrict __endptr) noexcept (true);
+
+
+
+extern float wcstof (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) noexcept (true);
+extern long double wcstold (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) noexcept (true);
+# 422 "/usr/include/wchar.h" 3 4
+extern _Float32 wcstof32 (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr) noexcept (true);
+
+
+
+extern _Float64 wcstof64 (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr) noexcept (true);
+# 437 "/usr/include/wchar.h" 3 4
+extern _Float32x wcstof32x (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) noexcept (true);
+
+
+
+extern _Float64x wcstof64x (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) noexcept (true);
+# 455 "/usr/include/wchar.h" 3 4
+extern long int wcstol (const wchar_t *__restrict __nptr,
+   wchar_t **__restrict __endptr, int __base) noexcept (true);
+
+
+
+extern unsigned long int wcstoul (const wchar_t *__restrict __nptr,
+      wchar_t **__restrict __endptr, int __base)
+     noexcept (true);
+
+
+
+
+__extension__
+extern long long int wcstoll (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr, int __base)
+     noexcept (true);
+
+
+
+__extension__
+extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr,
+     int __base) noexcept (true);
+
+
+
+
+
+__extension__
+extern long long int wcstoq (const wchar_t *__restrict __nptr,
+        wchar_t **__restrict __endptr, int __base)
+     noexcept (true);
+
+
+
+__extension__
+extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr,
+           wchar_t **__restrict __endptr,
+           int __base) noexcept (true);
+
+
+
+
+
+
+extern long int wcstol (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstol");
+
+
+extern unsigned long int wcstoul (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoul");
+
+
+
+__extension__
+extern long long int wcstoll (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoll");
+
+
+
+__extension__
+extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoull");
+
+
+
+
+__extension__
+extern long long int wcstoq (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoll");
+
+
+__extension__
+extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_wcstoull");
+# 561 "/usr/include/wchar.h" 3 4
+extern long int wcstol_l (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr, int __base,
+     locale_t __loc) noexcept (true);
+
+extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr,
+        wchar_t **__restrict __endptr,
+        int __base, locale_t __loc) noexcept (true);
+
+__extension__
+extern long long int wcstoll_l (const wchar_t *__restrict __nptr,
+    wchar_t **__restrict __endptr,
+    int __base, locale_t __loc) noexcept (true);
+
+__extension__
+extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr,
+       int __base, locale_t __loc)
+     noexcept (true);
+
+
+
+
+
+extern long int wcstol_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstol_l");
+
+
+
+extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoul_l");
+
+
+
+
+__extension__
+extern long long int wcstoll_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoll_l");
+
+
+
+
+__extension__
+extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr, wchar_t **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_wcstoull_l");
+# 630 "/usr/include/wchar.h" 3 4
+extern double wcstod_l (const wchar_t *__restrict __nptr,
+   wchar_t **__restrict __endptr, locale_t __loc)
+     noexcept (true);
+
+extern float wcstof_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr, locale_t __loc)
+     noexcept (true);
+
+extern long double wcstold_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr,
+         locale_t __loc) noexcept (true);
+# 649 "/usr/include/wchar.h" 3 4
+extern _Float32 wcstof32_l (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr,
+       locale_t __loc) noexcept (true);
+
+
+
+extern _Float64 wcstof64_l (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr,
+       locale_t __loc) noexcept (true);
+# 667 "/usr/include/wchar.h" 3 4
+extern _Float32x wcstof32x_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr,
+         locale_t __loc) noexcept (true);
+
+
+
+extern _Float64x wcstof64x_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr,
+         locale_t __loc) noexcept (true);
+# 689 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcpcpy (wchar_t *__restrict __dest,
+   const wchar_t *__restrict __src) noexcept (true);
+
+
+
+extern wchar_t *wcpncpy (wchar_t *__restrict __dest,
+    const wchar_t *__restrict __src, size_t __n)
+     noexcept (true);
+# 718 "/usr/include/wchar.h" 3 4
+extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) noexcept (true)
+  __attribute__ ((__malloc__)) ;
+
+
+
+
+
+extern int fwide (__FILE *__fp, int __mode) noexcept (true);
+
+
+
+
+
+
+extern int fwprintf (__FILE *__restrict __stream,
+       const wchar_t *__restrict __format, ...)
+                                                           ;
+
+
+
+
+extern int wprintf (const wchar_t *__restrict __format, ...)
+                                                           ;
+
+extern int swprintf (wchar_t *__restrict __s, size_t __n,
+       const wchar_t *__restrict __format, ...)
+     noexcept (true) ;
+
+
+
+
+
+extern int vfwprintf (__FILE *__restrict __s,
+        const wchar_t *__restrict __format,
+        __gnuc_va_list __arg)
+                                                           ;
+
+
+
+
+extern int vwprintf (const wchar_t *__restrict __format,
+       __gnuc_va_list __arg)
+                                                           ;
+
+
+extern int vswprintf (wchar_t *__restrict __s, size_t __n,
+        const wchar_t *__restrict __format,
+        __gnuc_va_list __arg)
+     noexcept (true) ;
+
+
+
+
+
+
+extern int fwscanf (__FILE *__restrict __stream,
+      const wchar_t *__restrict __format, ...)
+                                                          ;
+
+
+
+
+extern int wscanf (const wchar_t *__restrict __format, ...)
+                                                          ;
+
+extern int swscanf (const wchar_t *__restrict __s,
+      const wchar_t *__restrict __format, ...)
+     noexcept (true) ;
+# 795 "/usr/include/wchar.h" 3 4
+extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc23_fwscanf")
+
+
+                                                          ;
+extern int wscanf (const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc23_wscanf")
+
+                                                          ;
+extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc23_swscanf")
+
+
+                                                          ;
+# 851 "/usr/include/wchar.h" 3 4
+extern int vfwscanf (__FILE *__restrict __s,
+       const wchar_t *__restrict __format,
+       __gnuc_va_list __arg)
+                                                          ;
+
+
+
+
+extern int vwscanf (const wchar_t *__restrict __format,
+      __gnuc_va_list __arg)
+                                                          ;
+
+extern int vswscanf (const wchar_t *__restrict __s,
+       const wchar_t *__restrict __format,
+       __gnuc_va_list __arg)
+     noexcept (true) ;
+# 875 "/usr/include/wchar.h" 3 4
+extern int vfwscanf (__FILE *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vfwscanf")
+
+
+                                                          ;
+extern int vwscanf (const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vwscanf")
+
+                                                          ;
+extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc23_vswscanf")
+
+
+                                                          ;
+# 935 "/usr/include/wchar.h" 3 4
+extern wint_t fgetwc (__FILE *__stream);
+extern wint_t getwc (__FILE *__stream);
+
+
+
+
+
+extern wint_t getwchar (void);
+
+
+
+
+
+
+extern wint_t fputwc (wchar_t __wc, __FILE *__stream);
+extern wint_t putwc (wchar_t __wc, __FILE *__stream);
+
+
+
+
+
+extern wint_t putwchar (wchar_t __wc);
+
+
+
+
+
+
+
+extern wchar_t *fgetws (wchar_t *__restrict __ws, int __n,
+   __FILE *__restrict __stream);
+
+
+
+
+
+extern int fputws (const wchar_t *__restrict __ws,
+     __FILE *__restrict __stream);
+
+
+
+
+
+
+extern wint_t ungetwc (wint_t __wc, __FILE *__stream);
+# 990 "/usr/include/wchar.h" 3 4
+extern wint_t getwc_unlocked (__FILE *__stream);
+extern wint_t getwchar_unlocked (void);
+
+
+
+
+
+
+
+extern wint_t fgetwc_unlocked (__FILE *__stream);
+
+
+
+
+
+
+
+extern wint_t fputwc_unlocked (wchar_t __wc, __FILE *__stream);
+# 1016 "/usr/include/wchar.h" 3 4
+extern wint_t putwc_unlocked (wchar_t __wc, __FILE *__stream);
+extern wint_t putwchar_unlocked (wchar_t __wc);
+# 1026 "/usr/include/wchar.h" 3 4
+extern wchar_t *fgetws_unlocked (wchar_t *__restrict __ws, int __n,
+     __FILE *__restrict __stream);
+
+
+
+
+
+
+
+extern int fputws_unlocked (const wchar_t *__restrict __ws,
+       __FILE *__restrict __stream);
+
+
+
+
+
+
+extern size_t wcsftime (wchar_t *__restrict __s, size_t __maxsize,
+   const wchar_t *__restrict __format,
+   const struct tm *__restrict __tp) noexcept (true);
+
+
+
+
+extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
+     const wchar_t *__restrict __format,
+     const struct tm *__restrict __tp,
+     locale_t __loc) noexcept (true);
+# 1073 "/usr/include/wchar.h" 3 4
+}
+# 45 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 2 3
+# 62 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
+namespace std
+{
+  using ::mbstate_t;
+}
+# 135 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  using ::wint_t;
+
+  using ::btowc;
+  using ::fgetwc;
+  using ::fgetws;
+  using ::fputwc;
+  using ::fputws;
+  using ::fwide;
+  using ::fwprintf;
+  using ::fwscanf;
+  using ::getwc;
+  using ::getwchar;
+  using ::mbrlen;
+  using ::mbrtowc;
+  using ::mbsinit;
+  using ::mbsrtowcs;
+  using ::putwc;
+  using ::putwchar;
+
+  using ::swprintf;
+
+  using ::swscanf;
+  using ::ungetwc;
+  using ::vfwprintf;
+
+  using ::vfwscanf;
+
+
+  using ::vswprintf;
+
+
+  using ::vswscanf;
+
+  using ::vwprintf;
+
+  using ::vwscanf;
+
+  using ::wcrtomb;
+  using ::wcscat;
+  using ::wcscmp;
+  using ::wcscoll;
+  using ::wcscpy;
+  using ::wcscspn;
+  using ::wcsftime;
+  using ::wcslen;
+  using ::wcsncat;
+  using ::wcsncmp;
+  using ::wcsncpy;
+  using ::wcsrtombs;
+  using ::wcsspn;
+  using ::wcstod;
+
+  using ::wcstof;
+
+  using ::wcstok;
+  using ::wcstol;
+  using ::wcstoul;
+  using ::wcsxfrm;
+  using ::wctob;
+  using ::wmemcmp;
+  using ::wmemcpy;
+  using ::wmemmove;
+  using ::wmemset;
+  using ::wprintf;
+  using ::wscanf;
+  using ::wcschr;
+  using ::wcspbrk;
+  using ::wcsrchr;
+  using ::wcsstr;
+  using ::wmemchr;
+
+
+  inline wchar_t*
+  wcschr(wchar_t* __p, wchar_t __c)
+  { return wcschr(const_cast<const wchar_t*>(__p), __c); }
+
+  inline wchar_t*
+  wcspbrk(wchar_t* __s1, const wchar_t* __s2)
+  { return wcspbrk(const_cast<const wchar_t*>(__s1), __s2); }
+
+  inline wchar_t*
+  wcsrchr(wchar_t* __p, wchar_t __c)
+  { return wcsrchr(const_cast<const wchar_t*>(__p), __c); }
+
+  inline wchar_t*
+  wcsstr(wchar_t* __s1, const wchar_t* __s2)
+  { return wcsstr(const_cast<const wchar_t*>(__s1), __s2); }
+
+  inline wchar_t*
+  wmemchr(wchar_t* __p, wchar_t __c, size_t __n)
+  { return wmemchr(const_cast<const wchar_t*>(__p), __c, __n); }
+
+
+
+}
+
+
+
+
+
+
+
+namespace __gnu_cxx
+{
+
+
+
+
+
+  using ::wcstold;
+# 257 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
+  using ::wcstoll;
+  using ::wcstoull;
+
+}
+
+namespace std
+{
+  using ::__gnu_cxx::wcstold;
+  using ::__gnu_cxx::wcstoll;
+  using ::__gnu_cxx::wcstoull;
+}
+# 277 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
+namespace std
+{
+
+  using std::wcstof;
+
+
+  using std::vfwscanf;
+
+
+  using std::vswscanf;
+
+
+  using std::vwscanf;
+
+
+
+  using std::wcstold;
+  using std::wcstoll;
+  using std::wcstoull;
+
+}
+# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 2 3
+# 68 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 88 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
+  typedef long streamoff;
+# 98 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
+  typedef ptrdiff_t streamsize;
+# 111 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
+  template<typename _StateT>
+    class fpos
+    {
+    private:
+      streamoff _M_off;
+      _StateT _M_state;
+
+    public:
+
+
+
+
+      fpos()
+      : _M_off(0), _M_state() { }
+# 133 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/postypes.h" 3
+      fpos(streamoff __off)
+      : _M_off(__off), _M_state() { }
+
+
+      operator streamoff() const { return _M_off; }
+
+
+      void
+      state(_StateT __st)
+      { _M_state = __st; }
+
+
+      _StateT
+      state() const
+      { return _M_state; }
+
+
+
+
+
+      fpos&
+      operator+=(streamoff __off)
+      {
+ _M_off += __off;
+ return *this;
+      }
+
+
+
+
+
+      fpos&
+      operator-=(streamoff __off)
+      {
+ _M_off -= __off;
+ return *this;
+      }
+
+
+
+
+
+
+
+      fpos
+      operator+(streamoff __off) const
+      {
+ fpos __pos(*this);
+ __pos += __off;
+ return __pos;
+      }
+
+
+
+
+
+
+
+      fpos
+      operator-(streamoff __off) const
+      {
+ fpos __pos(*this);
+ __pos -= __off;
+ return __pos;
+      }
+
+
+
+
+
+
+      streamoff
+      operator-(const fpos& __other) const
+      { return _M_off - __other._M_off; }
+    };
+
+
+
+
+
+
+  template<typename _StateT>
+    inline bool
+    operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+    { return streamoff(__lhs) == streamoff(__rhs); }
+
+  template<typename _StateT>
+    inline bool
+    operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+    { return streamoff(__lhs) != streamoff(__rhs); }
+
+
+
+
+
+  typedef fpos<mbstate_t> streampos;
+
+  typedef fpos<mbstate_t> wstreampos;
+
+
+
+  typedef fpos<mbstate_t> u16streampos;
+
+  typedef fpos<mbstate_t> u32streampos;
+
+
+
+}
+# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 74 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iosfwd" 3
+  class ios_base;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ios;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_streambuf;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_istream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ostream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_iostream;
+
+
+namespace __cxx11 {
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+     typename _Alloc = allocator<_CharT> >
+    class basic_stringbuf;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+    typename _Alloc = allocator<_CharT> >
+    class basic_istringstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+    typename _Alloc = allocator<_CharT> >
+    class basic_ostringstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+    typename _Alloc = allocator<_CharT> >
+    class basic_stringstream;
+
+}
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_filebuf;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ifstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ofstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_fstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class istreambuf_iterator;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class ostreambuf_iterator;
+
+
+
+  typedef basic_ios<char> ios;
+
+
+  typedef basic_streambuf<char> streambuf;
+
+
+  typedef basic_istream<char> istream;
+
+
+  typedef basic_ostream<char> ostream;
+
+
+  typedef basic_iostream<char> iostream;
+
+
+  typedef basic_stringbuf<char> stringbuf;
+
+
+  typedef basic_istringstream<char> istringstream;
+
+
+  typedef basic_ostringstream<char> ostringstream;
+
+
+  typedef basic_stringstream<char> stringstream;
+
+
+  typedef basic_filebuf<char> filebuf;
+
+
+  typedef basic_ifstream<char> ifstream;
+
+
+  typedef basic_ofstream<char> ofstream;
+
+
+  typedef basic_fstream<char> fstream;
+
+
+
+  typedef basic_ios<wchar_t> wios;
+
+
+  typedef basic_streambuf<wchar_t> wstreambuf;
+
+
+  typedef basic_istream<wchar_t> wistream;
+
+
+  typedef basic_ostream<wchar_t> wostream;
+
+
+  typedef basic_iostream<wchar_t> wiostream;
+
+
+  typedef basic_stringbuf<wchar_t> wstringbuf;
+
+
+  typedef basic_istringstream<wchar_t> wistringstream;
+
+
+  typedef basic_ostringstream<wchar_t> wostringstream;
+
+
+  typedef basic_stringstream<wchar_t> wstringstream;
+
+
+  typedef basic_filebuf<wchar_t> wfilebuf;
+
+
+  typedef basic_ifstream<wchar_t> wifstream;
+
+
+  typedef basic_ofstream<wchar_t> wofstream;
+
+
+  typedef basic_fstream<wchar_t> wfstream;
+
+
+
+
+}
+# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ios" 2 3
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 1 3
+# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 3
+
+#pragma GCC visibility push(default)
+
+
+
+
+extern "C++" {
+
+namespace std
+{
+
+
+  class bad_exception : public exception
+  {
+  public:
+    bad_exception() noexcept { }
+
+
+
+    virtual ~bad_exception() noexcept;
+
+
+    virtual const char*
+    what() const noexcept;
+  };
+
+
+  typedef void (*terminate_handler) ();
+
+
+  typedef void (*unexpected_handler) ();
+
+
+  terminate_handler set_terminate(terminate_handler) noexcept;
+
+
+
+  terminate_handler get_terminate() noexcept;
+
+
+
+
+  void terminate() noexcept __attribute__ ((__noreturn__));
+
+
+  unexpected_handler set_unexpected(unexpected_handler) noexcept;
+
+
+
+  unexpected_handler get_unexpected() noexcept;
+
+
+
+
+  void unexpected() __attribute__ ((__noreturn__));
+# 102 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 3
+  bool uncaught_exception() noexcept __attribute__ ((__pure__));
+
+
+
+
+  int uncaught_exceptions() noexcept __attribute__ ((__pure__));
+
+
+
+}
+
+namespace __gnu_cxx
+{
+# 133 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 3
+  void __verbose_terminate_handler();
+
+
+}
+
+}
+
+#pragma GCC visibility pop
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 1 3
+# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
+#pragma GCC visibility push(default)
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_defines.h" 1 3
+# 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 2 3
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 1 3
+# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 3
+
+#pragma GCC visibility push(default)
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
+# 51 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
+typedef long int ptrdiff_t;
+# 118 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/__stddef_max_align_t.h" 1 3
+# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/__stddef_max_align_t.h" 3
+typedef struct {
+  long long __clang_max_align_nonce1
+      __attribute__((__aligned__(__alignof__(long long))));
+  long double __clang_max_align_nonce2
+      __attribute__((__aligned__(__alignof__(long double))));
+} max_align_t;
+# 119 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 2 3
+# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 2 3
+# 50 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cxxabi_init_exception.h" 3
+namespace std
+{
+  class type_info;
+}
+
+namespace __cxxabiv1
+{
+  struct __cxa_refcounted_exception;
+
+  extern "C"
+    {
+
+      void*
+      __cxa_allocate_exception(size_t) noexcept;
+
+      void
+      __cxa_free_exception(void*) noexcept;
+
+
+      __cxa_refcounted_exception*
+      __cxa_init_primary_exception(void *object, std::type_info *tinfo,
+                void ( *dest) (void *)) noexcept;
+
+    }
+}
+
+
+
+#pragma GCC visibility pop
+# 39 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 2 3
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 1 3
+# 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 1 3
+# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 2 3
+
+#pragma GCC visibility push(default)
+
+extern "C++" {
+
+namespace std
+{
+
+
+
+
+
+
+  class bad_alloc : public exception
+  {
+  public:
+    bad_alloc() throw() { }
+
+
+
+    virtual ~bad_alloc() throw();
+
+
+    virtual const char* what() const throw();
+  };
+
+
+  class bad_array_new_length : public bad_alloc
+  {
+  public:
+    bad_array_new_length() throw() { }
+
+
+
+    virtual ~bad_array_new_length() throw();
+
+
+    virtual const char* what() const throw();
+  };
+
+
+
+
+
+
+  struct nothrow_t
+  {
+
+    explicit nothrow_t() = default;
+
+  };
+
+  extern const nothrow_t nothrow;
+
+
+
+  typedef void (*new_handler)();
+
+
+
+  new_handler set_new_handler(new_handler) throw();
+
+
+
+  new_handler get_new_handler() noexcept;
+
+}
+# 120 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
+void* operator new(std::size_t)
+  __attribute__((__externally_visible__));
+void* operator new[](std::size_t)
+  __attribute__((__externally_visible__));
+void operator delete(void*) noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*) noexcept
+  __attribute__((__externally_visible__));
+
+
+
+
+
+
+void* operator new(std::size_t, const std::nothrow_t&) noexcept
+  __attribute__((__externally_visible__));
+void* operator new[](std::size_t, const std::nothrow_t&) noexcept
+  __attribute__((__externally_visible__));
+void operator delete(void*, const std::nothrow_t&) noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*, const std::nothrow_t&) noexcept
+  __attribute__((__externally_visible__));
+# 168 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
+inline void* operator new(std::size_t, void* __p) noexcept
+{ return __p; }
+inline void* operator new[](std::size_t, void* __p) noexcept
+{ return __p; }
+
+
+inline void operator delete (void*, void*) noexcept { }
+inline void operator delete[](void*, void*) noexcept { }
+
+}
+# 216 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/new" 3
+#pragma GCC visibility pop
+# 41 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 2 3
+
+extern "C++" {
+
+namespace std
+{
+  class type_info;
+
+
+
+
+
+  namespace __exception_ptr
+  {
+    class exception_ptr;
+  }
+
+  using __exception_ptr::exception_ptr;
+
+
+
+
+
+  exception_ptr current_exception() noexcept;
+
+  template<typename _Ex>
+  exception_ptr make_exception_ptr(_Ex) noexcept;
+
+
+  void rethrow_exception(exception_ptr) __attribute__ ((__noreturn__));
+
+  namespace __exception_ptr
+  {
+    using std::rethrow_exception;
+
+
+
+
+
+    class exception_ptr
+    {
+      void* _M_exception_object;
+
+      explicit exception_ptr(void* __e) noexcept;
+
+      void _M_addref() noexcept;
+      void _M_release() noexcept;
+
+      void *_M_get() const noexcept __attribute__ ((__pure__));
+
+      friend exception_ptr std::current_exception() noexcept;
+      friend void std::rethrow_exception(exception_ptr);
+      template<typename _Ex>
+      friend exception_ptr std::make_exception_ptr(_Ex) noexcept;
+
+    public:
+      exception_ptr() noexcept;
+
+      exception_ptr(const exception_ptr&) noexcept;
+
+
+      exception_ptr(nullptr_t) noexcept
+      : _M_exception_object(0)
+      { }
+
+      exception_ptr(exception_ptr&& __o) noexcept
+      : _M_exception_object(__o._M_exception_object)
+      { __o._M_exception_object = 0; }
+# 117 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
+      exception_ptr&
+      operator=(const exception_ptr&) noexcept;
+
+
+      exception_ptr&
+      operator=(exception_ptr&& __o) noexcept
+      {
+        exception_ptr(static_cast<exception_ptr&&>(__o)).swap(*this);
+        return *this;
+      }
+
+
+      ~exception_ptr() noexcept;
+
+      void
+      swap(exception_ptr&) noexcept;
+# 144 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
+      explicit operator bool() const
+      { return _M_exception_object; }
+
+
+      friend bool
+      operator==(const exception_ptr&, const exception_ptr&)
+ noexcept __attribute__ ((__pure__));
+
+      const class std::type_info*
+      __cxa_exception_type() const noexcept
+ __attribute__ ((__pure__));
+    };
+
+    bool
+    operator==(const exception_ptr&, const exception_ptr&)
+      noexcept __attribute__ ((__pure__));
+
+    bool
+    operator!=(const exception_ptr&, const exception_ptr&)
+      noexcept __attribute__ ((__pure__));
+
+    inline void
+    swap(exception_ptr& __lhs, exception_ptr& __rhs)
+    { __lhs.swap(__rhs); }
+
+    template<typename _Ex>
+      inline void
+      __dest_thunk(void* __x)
+      { static_cast<_Ex*>(__x)->~_Ex(); }
+
+  }
+
+
+  template<typename _Ex>
+    exception_ptr
+    make_exception_ptr(_Ex __ex) noexcept
+    {
+# 206 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_ptr.h" 3
+      return exception_ptr();
+
+    }
+
+
+}
+
+}
+
+#pragma GCC visibility pop
+# 144 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/exception" 2 3
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/nested_exception.h" 1 3
+# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/nested_exception.h" 3
+#pragma GCC visibility push(default)
+
+
+
+
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 1 3
+# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 3
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/concept_check.h" 1 3
+# 34 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/concept_check.h" 3
+# 35 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+
+
+
+  template<typename _Tp>
+    inline constexpr _Tp*
+    __addressof(_Tp& __r) noexcept
+    { return __builtin_addressof(__r); }
+
+
+
+
+}
+
+
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -14497,263 +15014,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
-# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
-
-
-
-
-
-
-
-
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
-# 1 "/usr/include/stdint.h" 1 3 4
-# 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
-# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-
-
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
-
-
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
-
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
-
-
-
-
-
-
-typedef __int8_t __int_least8_t;
-typedef __uint8_t __uint_least8_t;
-typedef __int16_t __int_least16_t;
-typedef __uint16_t __uint_least16_t;
-typedef __int32_t __int_least32_t;
-typedef __uint32_t __uint_least32_t;
-typedef __int64_t __int_least64_t;
-typedef __uint64_t __uint_least64_t;
-
-
-
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
-
-
-
-
-
-
-
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
-# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
-# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-
-
-typedef unsigned long int __dev_t;
-typedef unsigned int __uid_t;
-typedef unsigned int __gid_t;
-typedef unsigned long int __ino_t;
-typedef unsigned long int __ino64_t;
-typedef unsigned int __mode_t;
-typedef unsigned long int __nlink_t;
-typedef long int __off_t;
-typedef long int __off64_t;
-typedef int __pid_t;
-typedef struct { int __val[2]; } __fsid_t;
-typedef long int __clock_t;
-typedef unsigned long int __rlim_t;
-typedef unsigned long int __rlim64_t;
-typedef unsigned int __id_t;
-typedef long int __time_t;
-typedef unsigned int __useconds_t;
-typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
-
-typedef int __daddr_t;
-typedef int __key_t;
-
-
-typedef int __clockid_t;
-
-
-typedef void * __timer_t;
-
-
-typedef long int __blksize_t;
-
-
-
-
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
-
-
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
-
-
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
-
-
-typedef long int __fsword_t;
-
-typedef long int __ssize_t;
-
-
-typedef long int __syscall_slong_t;
-
-typedef unsigned long int __syscall_ulong_t;
-
-
-
-typedef __off64_t __loff_t;
-typedef char *__caddr_t;
-
-
-typedef long int __intptr_t;
-
-
-typedef unsigned int __socklen_t;
-
-
-
-
-typedef int __sig_atomic_t;
-# 28 "/usr/include/stdint.h" 2 3 4
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 30 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-# 35 "/usr/include/stdint.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
-typedef __uint8_t uint8_t;
-typedef __uint16_t uint16_t;
-typedef __uint32_t uint32_t;
-typedef __uint64_t uint64_t;
-# 38 "/usr/include/stdint.h" 2 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
-typedef __int_least8_t int_least8_t;
-typedef __int_least16_t int_least16_t;
-typedef __int_least32_t int_least32_t;
-typedef __int_least64_t int_least64_t;
-
-
-typedef __uint_least8_t uint_least8_t;
-typedef __uint_least16_t uint_least16_t;
-typedef __uint_least32_t uint_least32_t;
-typedef __uint_least64_t uint_least64_t;
-# 42 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-
-typedef signed char int_fast8_t;
-
-typedef long int int_fast16_t;
-typedef long int int_fast32_t;
-typedef long int int_fast64_t;
-# 60 "/usr/include/stdint.h" 3 4
-typedef unsigned char uint_fast8_t;
-
-typedef unsigned long int uint_fast16_t;
-typedef unsigned long int uint_fast32_t;
-typedef unsigned long int uint_fast64_t;
-# 76 "/usr/include/stdint.h" 3 4
-typedef long int intptr_t;
-
-
-typedef unsigned long int uintptr_t;
-# 90 "/usr/include/stdint.h" 3 4
-typedef __intmax_t intmax_t;
-typedef __uintmax_t uintmax_t;
-# 64 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
-# 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
-
-
-
-
-namespace std
-{
-  using ::int8_t;
-  using ::int16_t;
-  using ::int32_t;
-  using ::int64_t;
-
-  using ::int_fast8_t;
-  using ::int_fast16_t;
-  using ::int_fast32_t;
-  using ::int_fast64_t;
-
-  using ::int_least8_t;
-  using ::int_least16_t;
-  using ::int_least32_t;
-  using ::int_least64_t;
-
-  using ::intmax_t;
-  using ::intptr_t;
-
-  using ::uint8_t;
-  using ::uint16_t;
-  using ::uint32_t;
-  using ::uint64_t;
-
-  using ::uint_fast8_t;
-  using ::uint_fast16_t;
-  using ::uint_fast32_t;
-  using ::uint_fast64_t;
-
-  using ::uint_least8_t;
-  using ::uint_least16_t;
-  using ::uint_least32_t;
-  using ::uint_least64_t;
-
-  using ::uintmax_t;
-  using ::uintptr_t;
-}
-# 504 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/char_traits.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -16162,12 +16422,7 @@ struct __jmp_buf_tag
   };
 # 32 "/usr/include/pthread.h" 2 3 4
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h" 3 4
-extern "C" {
-extern long int __sysconf (int __name) noexcept (true);
-}
-# 34 "/usr/include/pthread.h" 2 3 4
+
 
 
 
@@ -34051,7 +34306,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 8 "src/generic/fp_generic.cpp" 2
+# 12 "src/generic/fp_generic.cpp" 2
 # 1 "src/generic/../P503_internal.h" 1
 # 10 "src/generic/../P503_internal.h"
 # 1 "src/api.h" 1
@@ -34356,7 +34611,7 @@ extern const uint64_t Montgomery_R2[((503 + 63) / 64)];
 extern const uint64_t Montgomery_one[((503 + 63) / 64)];
 extern const unsigned int strat_Alice[125 - 1];
 extern const unsigned int strat_Bob[159 - 1];
-# 9 "src/generic/fp_generic.cpp" 2
+# 13 "src/generic/fp_generic.cpp" 2
 
 extern const uint64_t p503[8];
 extern const uint64_t p503p1[8];
@@ -34377,20 +34632,20 @@ void fpadd503(const digit_t *a, const digit_t *b, digit_t *c)
     digit_t mask;
 
 
-    VITIS_LOOP_29_1: for (i = 0; i < 8; i++)
+    VITIS_LOOP_33_1: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (a[i]) + (digit_t)(carry); (c[i]) = (b[i]) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((c[i]), tempReg)); };
     }
 
     carry = 0;
-    VITIS_LOOP_35_2: for (i = 0; i < 8; i++)
+    VITIS_LOOP_39_2: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (c[i]) - (((digit_t *)p503x2)[i]); unsigned int borrowReg = (is_digit_lessthan_ct((c[i]), (((digit_t *)p503x2)[i])) | ((carry) & is_digit_zero_ct(tempReg))); (c[i]) = tempReg - (digit_t)(carry); (carry) = borrowReg; };
     }
     mask = 0 - (digit_t)carry;
 
     carry = 0;
-    VITIS_LOOP_42_3: for (i = 0; i < 8; i++)
+    VITIS_LOOP_46_3: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (c[i]) + (digit_t)(carry); (c[i]) = (((digit_t *)p503x2)[i] & mask) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((c[i]), tempReg)); };
     }
@@ -34405,14 +34660,14 @@ void fpsub503(const digit_t *a, const digit_t *b, digit_t *c)
     digit_t mask;
 
 
-    VITIS_LOOP_57_1: for (i = 0; i < 8; i++)
+    VITIS_LOOP_61_1: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (a[i]) - (b[i]); unsigned int borrowReg = (is_digit_lessthan_ct((a[i]), (b[i])) | ((borrow) & is_digit_zero_ct(tempReg))); (c[i]) = tempReg - (digit_t)(borrow); (borrow) = borrowReg; };
     }
     mask = 0 - (digit_t)borrow;
 
     borrow = 0;
-    VITIS_LOOP_64_2: for (i = 0; i < 8; i++)
+    VITIS_LOOP_68_2: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (c[i]) + (digit_t)(borrow); (c[i]) = (((digit_t *)p503x2)[i] & mask) + tempReg; (borrow) = (is_digit_lessthan_ct(tempReg, (digit_t)(borrow)) | is_digit_lessthan_ct((c[i]), tempReg)); };
     }
@@ -34423,7 +34678,7 @@ void fpsub503(const digit_t *a, const digit_t *b, digit_t *c)
 void fpneg503(digit_t *a)
 {
     unsigned int i, borrow = 0;
-    VITIS_LOOP_75_1: for (i = 0; i < 8; i++)
+    VITIS_LOOP_79_1: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (((digit_t *)p503x2)[i]) - (a[i]); unsigned int borrowReg = (is_digit_lessthan_ct((((digit_t *)p503x2)[i]), (a[i])) | ((borrow) & is_digit_zero_ct(tempReg))); (a[i]) = tempReg - (digit_t)(borrow); (borrow) = borrowReg; };
     }
@@ -34435,7 +34690,7 @@ void fpdiv2_503(const digit_t *a, digit_t *c)
 {
     unsigned int i, carry = 0;
     digit_t mask = 0 - (digit_t)(a[0] & 1);
-    VITIS_LOOP_87_1: for (i = 0; i < 8; i++)
+    VITIS_LOOP_91_1: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (a[i]) + (digit_t)(carry); (c[i]) = (((digit_t *)p503)[i] & mask) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((c[i]), tempReg)); };
     }
@@ -34449,74 +34704,107 @@ void fpcorrection503(digit_t *a)
     unsigned int i, borrow = 0;
     digit_t mask;
 
-    VITIS_LOOP_101_1: for (i = 0; i < 8; i++)
+    VITIS_LOOP_105_1: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (a[i]) - (((digit_t *)p503)[i]); unsigned int borrowReg = (is_digit_lessthan_ct((a[i]), (((digit_t *)p503)[i])) | ((borrow) & is_digit_zero_ct(tempReg))); (a[i]) = tempReg - (digit_t)(borrow); (borrow) = borrowReg; };
     }
     mask = 0 - (digit_t)borrow;
     borrow = 0;
-    VITIS_LOOP_107_2: for (i = 0; i < 8; i++)
+    VITIS_LOOP_111_2: for (i = 0; i < 8; i++)
     {
         { digit_t tempReg = (a[i]) + (digit_t)(borrow); (a[i]) = (((digit_t *)p503)[i] & mask) + tempReg; (borrow) = (is_digit_lessthan_ct(tempReg, (digit_t)(borrow)) | is_digit_lessthan_ct((a[i]), tempReg)); };
     }
 }
-# 148 "src/generic/fp_generic.cpp"
-void digit_x_digit_hls(ap_uint<W> a, ap_uint<W> b, ap_uint<2 * W> &c)
+# 152 "src/generic/fp_generic.cpp"
+void digit_x_digit(const digit_t a, const digit_t b, digit_t *c)
 {
-    c = a * b;
-}
-# 213 "src/generic/fp_generic.cpp"
-static const unsigned MAX_NWORDS = 8;
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE core = Mul_LUT
+#pragma HLS DATAFLOW off
 
+ register digit_t al, ah, bl, bh, temp;
+    digit_t albl, albh, ahbl, ahbh, res1, res2, res3, carry;
+    digit_t mask_low = (digit_t)(-1) >> (sizeof(digit_t) * 4);
+    digit_t mask_high = (digit_t)(-1) << (sizeof(digit_t) * 4);
+
+    al = a & mask_low;
+    ah = a >> (sizeof(digit_t) * 4);
+    bl = b & mask_low;
+    bh = b >> (sizeof(digit_t) * 4);
+
+    albl = al * bl;
+    albh = al * bh;
+    ahbl = ah * bl;
+    ahbh = ah * bh;
+    c[0] = albl & mask_low;
+
+    res1 = albl >> (sizeof(digit_t) * 4);
+    res2 = ahbl & mask_low;
+    res3 = albh & mask_low;
+    temp = res1 + res2 + res3;
+    carry = temp >> (sizeof(digit_t) * 4);
+    c[0] ^= temp << (sizeof(digit_t) * 4);
+
+    res1 = ahbl >> (sizeof(digit_t) * 4);
+    res2 = albh >> (sizeof(digit_t) * 4);
+    res3 = ahbh & mask_low;
+    temp = res1 + res2 + res3 + carry;
+    c[1] = temp & mask_low;
+    carry = temp & mask_high;
+    c[1] ^= (ahbh & mask_high) + carry;
+}
+# 270 "src/generic/fp_generic.cpp"
 void mp_mul(const digit_t *a, const digit_t *b, digit_t *c, const unsigned int nwords)
 {
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS ALLOCATION instances = mul limit = 1 function
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+#pragma HLS BIND_STORAGE variable = a type = RAM_1P
+#pragma HLS BIND_STORAGE variable = b type = RAM_1P
+#pragma HLS BIND_STORAGE variable = c type = RAM_1P
+#pragma HLS RESOURCE core = Mul_LUT
+#pragma HLS DATAFLOW off
 
-  ap_uint<W*MAX_NWORDS> A = 0, B = 0;
-  VITIS_LOOP_219_1: for (unsigned i = 0; i < nwords; i++) {
-    A |= (ap_uint<W*MAX_NWORDS>)a[i] << (i * W);
-    B |= (ap_uint<W*MAX_NWORDS>)b[i] << (i * W);
-  }
-
-
-  ap_uint<2*W*MAX_NWORDS> P = A * B;
-
-
-  VITIS_LOOP_228_2: for (unsigned i = 0; i < 2 * nwords; i++) {
-    c[i] = P.range((i+1)*W-1, i*W);
-  }
+ constexpr unsigned MAX_NWORDS = 8;
+    using DigitA = std::remove_cv_t<std::remove_pointer_t<decltype(a)>>;
+    using DigitB = std::remove_cv_t<std::remove_pointer_t<decltype(b)>>;
+    using DigitC = std::remove_cv_t<std::remove_pointer_t<decltype(c)>>;
+    static_assert(sizeof(DigitA) == sizeof(DigitB) && sizeof(DigitA) == sizeof(DigitC),
+                  "a,b,c digits must have the same size");
+    static_assert(std::is_unsigned<DigitA>::value || std::is_class<DigitA>::value,
+                  "Digit type must be unsigned or ap_uint-like");
+    using Digit = DigitA;
+    if (nwords > MAX_NWORDS)
+        return;
+    mpx::PackedOps<Digit, MAX_NWORDS, true>::mul(a, b, c, nwords);
 }
-# 277 "src/generic/fp_generic.cpp"
+
 void rdc_mont(const dfelm_t ma, felm_t mc)
 {
 
-
-
-
-
-
-
     unsigned int i, j, carry, count = 3;
-    digit_t t = 0, u = 0, v = 0;
-    ap_uint<2 * W> tmp;
+    digit_t UV[2], t = 0, u = 0, v = 0;
 
 
-    VITIS_LOOP_291_1: for (i = 0; i < 8; i++)
+    VITIS_LOOP_305_1: for (i = 0; i < 8; i++)
     {
         mc[i] = 0;
     }
 
 
-    VITIS_LOOP_297_2: for (i = 0; i < 8; i++)
+    VITIS_LOOP_311_2: for (i = 0; i < 8; i++)
     {
-        VITIS_LOOP_299_3: for (j = 0; j < i; j++)
+        VITIS_LOOP_313_3: for (j = 0; j < i; j++)
         {
             if (j < (i - 3 + 1))
             {
-                digit_x_digit_hls(mc[j], ((digit_t *)p503p1)[i - j], tmp);
-                digit_t lo = tmp.range(W - 1, 0);
-                digit_t hi = tmp.range(2 * W - 1, W);
-                { digit_t tempReg = (lo) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
-                { digit_t tempReg = (hi) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
+                digit_x_digit((mc[j]), (((digit_t *)p503p1)[i - j]), &(UV[0]));;
+                { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
+                { digit_t tempReg = (UV[1]) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
                 t += carry;
             }
         }
@@ -34530,21 +34818,19 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
     }
 
 
-    VITIS_LOOP_321_4: for (i = 8; i < 2 * 8 - 1; i++)
+    VITIS_LOOP_333_4: for (i = 8; i < 2 * 8 - 1; i++)
     {
         if (count > 0)
         {
             count--;
         }
-        VITIS_LOOP_327_5: for (j = i - 8 + 1; j < 8; j++)
+        VITIS_LOOP_339_5: for (j = i - 8 + 1; j < 8; j++)
         {
             if (j < (8 - count))
             {
-                digit_x_digit_hls(mc[j], ((digit_t *)p503p1)[i - j], tmp);
-                digit_t lo = tmp.range(W - 1, 0);
-                digit_t hi = tmp.range(2 * W - 1, W);
-                { digit_t tempReg = (lo) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
-                { digit_t tempReg = (hi) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
+                digit_x_digit((mc[j]), (((digit_t *)p503p1)[i - j]), &(UV[0]));;
+                { digit_t tempReg = (UV[0]) + (digit_t)(0); (v) = (v) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(0)) | is_digit_lessthan_ct((v), tempReg)); };
+                { digit_t tempReg = (UV[1]) + (digit_t)(carry); (u) = (u) + tempReg; (carry) = (is_digit_lessthan_ct(tempReg, (digit_t)(carry)) | is_digit_lessthan_ct((u), tempReg)); };
                 t += carry;
             }
         }

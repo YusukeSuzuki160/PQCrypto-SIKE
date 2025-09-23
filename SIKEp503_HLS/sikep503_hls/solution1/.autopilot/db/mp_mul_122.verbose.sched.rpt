@@ -1,0 +1,229 @@
+
+
+================================================================
+== Vitis HLS Report for 'mp_mul_122'
+================================================================
+* Date:           Wed Sep  3 14:24:41 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.116 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       13|       13|  0.130 us|  0.130 us|    8|    8|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 8, depth = 14
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 1
+  Pipeline-0 : II = 8, D = 14, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 15 [14/14] (0.00ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 15 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 7.11>
+ST_2 : Operation 16 [13/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 16 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 7.11>
+ST_3 : Operation 17 [12/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 17 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 7.11>
+ST_4 : Operation 18 [11/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 18 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.11>
+ST_5 : Operation 19 [10/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 19 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.11>
+ST_6 : Operation 20 [9/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 20 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.11>
+ST_7 : Operation 21 [8/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 21 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 7.11>
+ST_8 : Operation 22 [7/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 22 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 7.11>
+ST_9 : Operation 23 [6/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 23 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 7.11>
+ST_10 : Operation 24 [5/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 24 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 7.11>
+ST_11 : Operation 25 [4/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 25 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 7.11>
+ST_12 : Operation 26 [3/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 26 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 7.11>
+ST_13 : Operation 27 [2/14] (7.11ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 27 'call' 'call_ret' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 4.34>
+ST_14 : Operation 28 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 2, i32 0, i32 0, i32 0, void @empty_15"   --->   Operation 28 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 29 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 29 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 30 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln0 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i64 %PKB"   --->   Operation 30 'specbramwithbyteenable' 'specbramwithbyteenable_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 31 [1/14] (4.34ns)   --->   "%call_ret = call i1024 @mul.146, i64 %PKB" [src/generic/fp_generic.cpp:283]   --->   Operation 31 'call' 'call_ret' <Predicate = true> <Delay = 4.34> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln284 = ret i1024 %call_ret" [src/generic/fp_generic.cpp:284]   --->   Operation 32 'ret' 'ret_ln284' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 3>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 4>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 5>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 6>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 7>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 8>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 9>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 10>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 11>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 12>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 13>: 7.116ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (7.116 ns)
+
+ <State 14>: 4.349ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('call_ret', src/generic/fp_generic.cpp:283) to 'mul.146' [5]  (4.349 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

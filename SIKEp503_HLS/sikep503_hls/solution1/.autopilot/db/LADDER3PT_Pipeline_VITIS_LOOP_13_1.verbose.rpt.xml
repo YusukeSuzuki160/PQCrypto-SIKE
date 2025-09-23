@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_Pipeline_VITIS_LOOP_13_1'" level="0">
-<item name = "Date">Wed Jul 30 17:35:02 2025
+<item name = "Date">Tue Sep 23 15:46:06 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="Montgomery_one_1_U">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1355_Montgomery_one_1_ROM_Acud, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="Montgomery_one_1_U">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1199_Montgomery_one_1_ROM_Acud, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -81,8 +81,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln13_fu_95_p2">+, 0, 0, 12, 4, 1</column>
-<column name="icmp_ln13_fu_89_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="add_ln13_fu_103_p2">+, 0, 0, 12, 4, 1</column>
+<column name="icmp_ln13_fu_97_p2">icmp, 0, 0, 12, 4, 5</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -90,8 +90,8 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_379">9, 2, 4, 8</column>
-<column name="i_fu_36">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_275">9, 2, 4, 8</column>
+<column name="i_fu_44">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -99,9 +99,9 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="i_fu_36">4, 0, 4, 0</column>
-<column name="lshr_ln_reg_144">2, 0, 2, 0</column>
-<column name="trunc_ln13_reg_140">1, 0, 1, 0</column>
+<column name="i_fu_44">4, 0, 4, 0</column>
+<column name="lshr_ln_reg_152">2, 0, 2, 0</column>
+<column name="trunc_ln13_reg_148">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -117,14 +117,14 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, LADDER3PT_Pipeline_VITIS_LOOP_13_1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, LADDER3PT_Pipeline_VITIS_LOOP_13_1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, LADDER3PT_Pipeline_VITIS_LOOP_13_1, return value</column>
-<column name="A24_address0">out, 3, ap_memory, A24, array</column>
+<column name="A24_4_address0">out, 2, ap_memory, A24_4, array</column>
+<column name="A24_4_ce0">out, 1, ap_memory, A24_4, array</column>
+<column name="A24_4_we0">out, 1, ap_memory, A24_4, array</column>
+<column name="A24_4_d0">out, 64, ap_memory, A24_4, array</column>
+<column name="A24_address0">out, 2, ap_memory, A24, array</column>
 <column name="A24_ce0">out, 1, ap_memory, A24, array</column>
 <column name="A24_we0">out, 1, ap_memory, A24, array</column>
 <column name="A24_d0">out, 64, ap_memory, A24, array</column>
-<column name="A24_2_address0">out, 3, ap_memory, A24_2, array</column>
-<column name="A24_2_ce0">out, 1, ap_memory, A24_2, array</column>
-<column name="A24_2_we0">out, 1, ap_memory, A24_2, array</column>
-<column name="A24_2_d0">out, 64, ap_memory, A24_2, array</column>
 </table>
 </item>
 </section>

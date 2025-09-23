@@ -192,7 +192,7 @@ wire    ap_block_pp0_stage0;
 wire   [63:0] add_ln58_fu_185_p2;
 reg    ap_block_pp0_stage1_11001_grp1;
 reg    ap_block_pp0_stage0_11001_grp2;
-reg   [5:0] i_245_fu_76;
+reg   [5:0] i_257_fu_76;
 wire   [5:0] add_ln55_fu_149_p2;
 wire    ap_loop_init;
 reg   [5:0] ap_sig_allocacmp_i;
@@ -260,7 +260,7 @@ initial begin
 #0 ap_block_pp0_stage0_subdone_grp2_done_reg = 1'b0;
 #0 ap_block_pp0_stage0_subdone_grp4_done_reg = 1'b0;
 #0 ap_block_pp0_stage0_subdone_grp0_done_reg = 1'b0;
-#0 i_245_fu_76 = 6'd0;
+#0 i_257_fu_76 = 6'd0;
 #0 ap_block_pp0_stage1_subdone_grp0_done_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
 end
@@ -449,9 +449,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         if (((icmp_ln55_fu_143_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_245_fu_76 <= add_ln55_fu_149_p2;
+            i_257_fu_76 <= add_ln55_fu_149_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_245_fu_76 <= 6'd0;
+            i_257_fu_76 <= 6'd0;
         end
     end
 end
@@ -601,7 +601,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
         ap_sig_allocacmp_i = 6'd0;
     end else begin
-        ap_sig_allocacmp_i = i_245_fu_76;
+        ap_sig_allocacmp_i = i_257_fu_76;
     end
 end
 

@@ -80,7 +80,7 @@ wire   [0:0] icmp_ln42_fu_185_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [5:0] i_reg_322;
+reg   [5:0] i_376_reg_322;
 wire    ap_block_pp0_stage0_11001;
 wire   [1:0] trunc_ln42_fu_197_p1;
 reg   [1:0] trunc_ln42_reg_332;
@@ -88,11 +88,11 @@ wire   [63:0] zext_ln44_fu_211_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln45_fu_224_p1;
 wire   [63:0] zext_ln38_fu_246_p1;
-wire   [63:0] zext_ln45_2_fu_307_p1;
-reg   [5:0] i_283_fu_64;
+wire   [63:0] zext_ln45_1_fu_307_p1;
+reg   [5:0] i_fu_64;
 wire   [5:0] add_ln42_fu_191_p2;
 wire    ap_loop_init;
-reg   [5:0] ap_sig_allocacmp_i;
+reg   [5:0] ap_sig_allocacmp_i_376;
 reg    t_i_ce1_local;
 reg    t_i_ce0_local;
 reg    SharedSecretA_2_we0_local;
@@ -117,12 +117,12 @@ wire   [2:0] lshr_ln44_fu_201_p4;
 wire   [3:0] zext_ln_fu_216_p3;
 wire   [3:0] lshr_ln38_fu_237_p4;
 wire   [5:0] shl_ln44_fu_254_p2;
-wire   [63:0] zext_ln44_2_fu_259_p1;
+wire   [63:0] zext_ln44_1_fu_259_p1;
 wire   [63:0] lshr_ln44_1_fu_263_p2;
 wire   [63:0] lshr_ln45_fu_277_p2;
 wire   [6:0] zext_ln42_fu_234_p1;
 wire   [6:0] add_ln45_fu_291_p2;
-wire   [4:0] lshr_ln45_3_fu_297_p4;
+wire   [4:0] lshr_ln45_2_fu_297_p4;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -138,7 +138,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_283_fu_64 = 6'd0;
+#0 i_fu_64 = 6'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -192,16 +192,16 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln42_fu_185_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_283_fu_64 <= add_ln42_fu_191_p2;
+            i_fu_64 <= add_ln42_fu_191_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_283_fu_64 <= 6'd0;
+            i_fu_64 <= 6'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_reg_322 <= ap_sig_allocacmp_i;
+        i_376_reg_322 <= ap_sig_allocacmp_i_376;
         trunc_ln42_reg_332 <= trunc_ln42_fu_197_p1;
     end
 end
@@ -211,7 +211,7 @@ always @ (*) begin
         if ((trunc_ln42_reg_332 == 2'd0)) begin
             SharedSecretA_0_address0_local = zext_ln38_fu_246_p1;
         end else if ((trunc_ln42_reg_332 == 2'd1)) begin
-            SharedSecretA_0_address0_local = zext_ln45_2_fu_307_p1;
+            SharedSecretA_0_address0_local = zext_ln45_1_fu_307_p1;
         end else begin
             SharedSecretA_0_address0_local = 'bx;
         end
@@ -255,7 +255,7 @@ always @ (*) begin
         if ((trunc_ln42_reg_332 == 2'd1)) begin
             SharedSecretA_1_address0_local = zext_ln38_fu_246_p1;
         end else if ((trunc_ln42_reg_332 == 2'd2)) begin
-            SharedSecretA_1_address0_local = zext_ln45_2_fu_307_p1;
+            SharedSecretA_1_address0_local = zext_ln45_1_fu_307_p1;
         end else begin
             SharedSecretA_1_address0_local = 'bx;
         end
@@ -297,7 +297,7 @@ end
 always @ (*) begin
     if ((1'b1 == ap_condition_107)) begin
         if ((trunc_ln42_reg_332 == 2'd3)) begin
-            SharedSecretA_2_address0_local = zext_ln45_2_fu_307_p1;
+            SharedSecretA_2_address0_local = zext_ln45_1_fu_307_p1;
         end else if ((trunc_ln42_reg_332 == 2'd2)) begin
             SharedSecretA_2_address0_local = zext_ln38_fu_246_p1;
         end else begin
@@ -343,7 +343,7 @@ always @ (*) begin
         if ((trunc_ln42_reg_332 == 2'd3)) begin
             SharedSecretA_3_address0_local = zext_ln38_fu_246_p1;
         end else if ((trunc_ln42_reg_332 == 2'd0)) begin
-            SharedSecretA_3_address0_local = zext_ln45_2_fu_307_p1;
+            SharedSecretA_3_address0_local = zext_ln45_1_fu_307_p1;
         end else begin
             SharedSecretA_3_address0_local = 'bx;
         end
@@ -424,9 +424,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i = 6'd0;
+        ap_sig_allocacmp_i_376 = 6'd0;
     end else begin
-        ap_sig_allocacmp_i = i_283_fu_64;
+        ap_sig_allocacmp_i_376 = i_fu_64;
     end
 end
 
@@ -489,7 +489,7 @@ assign SharedSecretA_3_d0 = SharedSecretA_3_d0_local;
 
 assign SharedSecretA_3_we0 = SharedSecretA_3_we0_local;
 
-assign add_ln42_fu_191_p2 = (ap_sig_allocacmp_i + 6'd1);
+assign add_ln42_fu_191_p2 = (ap_sig_allocacmp_i_376 + 6'd1);
 
 assign add_ln45_fu_291_p2 = (zext_ln42_fu_234_p1 + 7'd63);
 
@@ -515,19 +515,19 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln42_fu_185_p2 = ((ap_sig_allocacmp_i == 6'd63) ? 1'b1 : 1'b0);
+assign icmp_ln42_fu_185_p2 = ((ap_sig_allocacmp_i_376 == 6'd63) ? 1'b1 : 1'b0);
 
-assign lshr_ln38_fu_237_p4 = {{i_reg_322[5:2]}};
+assign lshr_ln38_fu_237_p4 = {{i_376_reg_322[5:2]}};
 
-assign lshr_ln44_1_fu_263_p2 = t_i_q1 >> zext_ln44_2_fu_259_p1;
+assign lshr_ln44_1_fu_263_p2 = t_i_q1 >> zext_ln44_1_fu_259_p1;
 
-assign lshr_ln44_fu_201_p4 = {{ap_sig_allocacmp_i[5:3]}};
+assign lshr_ln44_fu_201_p4 = {{ap_sig_allocacmp_i_376[5:3]}};
 
-assign lshr_ln45_3_fu_297_p4 = {{add_ln45_fu_291_p2[6:2]}};
+assign lshr_ln45_2_fu_297_p4 = {{add_ln45_fu_291_p2[6:2]}};
 
-assign lshr_ln45_fu_277_p2 = t_i_q0 >> zext_ln44_2_fu_259_p1;
+assign lshr_ln45_fu_277_p2 = t_i_q0 >> zext_ln44_1_fu_259_p1;
 
-assign shl_ln44_fu_254_p2 = i_reg_322 << 6'd3;
+assign shl_ln44_fu_254_p2 = i_376_reg_322 << 6'd3;
 
 assign t_i_address0 = zext_ln45_fu_224_p1;
 
@@ -537,7 +537,7 @@ assign t_i_ce0 = t_i_ce0_local;
 
 assign t_i_ce1 = t_i_ce1_local;
 
-assign trunc_ln42_fu_197_p1 = ap_sig_allocacmp_i[1:0];
+assign trunc_ln42_fu_197_p1 = ap_sig_allocacmp_i_376[1:0];
 
 assign trunc_ln44_fu_269_p1 = lshr_ln44_1_fu_263_p2[7:0];
 
@@ -545,13 +545,13 @@ assign trunc_ln45_fu_283_p1 = lshr_ln45_fu_277_p2[7:0];
 
 assign zext_ln38_fu_246_p1 = lshr_ln38_fu_237_p4;
 
-assign zext_ln42_fu_234_p1 = i_reg_322;
+assign zext_ln42_fu_234_p1 = i_376_reg_322;
 
-assign zext_ln44_2_fu_259_p1 = shl_ln44_fu_254_p2;
+assign zext_ln44_1_fu_259_p1 = shl_ln44_fu_254_p2;
 
 assign zext_ln44_fu_211_p1 = lshr_ln44_fu_201_p4;
 
-assign zext_ln45_2_fu_307_p1 = lshr_ln45_3_fu_297_p4;
+assign zext_ln45_1_fu_307_p1 = lshr_ln45_2_fu_297_p4;
 
 assign zext_ln45_fu_224_p1 = zext_ln_fu_216_p3;
 

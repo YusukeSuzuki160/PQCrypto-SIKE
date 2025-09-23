@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_26_Pipeline_VITIS_LOOP_179_1'" level="0">
-<item name = "Date">Wed Jul 30 15:26:13 2025
+<item name = "Date">Wed Sep  3 14:30:43 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="p503_1_U">fp2mul503_mont_71_Pipeline_VITIS_LOOP_179_1_p503_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="p503_1_U">fp2div2_503_Pipeline_VITIS_LOOP_91_1_p503_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -84,17 +84,17 @@
 <column name="add_ln179_fu_125_p2">+, 0, 0, 12, 4, 1</column>
 <column name="add_ln181_fu_173_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_fu_162_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln181_10_fu_224_p2">and, 0, 0, 64, 64, 64</column>
+<column name="and_ln181_15_fu_224_p2">and, 0, 0, 64, 64, 64</column>
 <column name="and_ln181_fu_168_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_247">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln179_fu_119_p2">icmp, 0, 0, 12, 4, 5</column>
-<column name="or_ln181_10_fu_236_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln181_13_fu_236_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln181_fu_192_p2">or, 0, 0, 64, 64, 64</column>
 <column name="sext_ln171_cast_fu_103_p3">select, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln181_28_fu_186_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln181_30_fu_230_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln181_31_fu_206_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln181_37_fu_186_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln181_38_fu_206_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln181_39_fu_230_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln181_fu_180_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -102,9 +102,9 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_305">9, 2, 4, 8</column>
 <column name="borrow_reg_92">9, 2, 1, 2</column>
-<column name="i_198_fu_52">9, 2, 4, 8</column>
+<column name="i_fu_52">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -113,7 +113,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="borrow_reg_92">1, 0, 1, 0</column>
-<column name="i_198_fu_52">4, 0, 4, 0</column>
+<column name="i_fu_52">4, 0, 4, 0</column>
 <column name="icmp_ln179_reg_262">1, 0, 1, 0</column>
 <column name="sext_ln171_cast_reg_257">64, 0, 64, 0</column>
 <column name="tt3_addr_reg_266">3, 0, 4, 1</column>

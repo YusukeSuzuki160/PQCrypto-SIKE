@@ -2,22 +2,109 @@
     <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="src/sha3/fips202.cpp:427:110" msg_body="unused parameter 'r'">
         <args ClangWarningOption="unused-parameter"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:54:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="" msg_id="207-4801" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:159:2" msg_body="'register' storage class specifier is deprecated and incompatible with C++17">
+        <args ClangWarningOption="deprecated-register"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:55:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:155:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:156:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:156:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5569" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:157:22" msg_body="unexpected pragma parameter 'off'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:273:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:274:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:275:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:276:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:277:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:281:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:281:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5569" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:282:22" msg_body="unexpected pragma parameter 'off'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_packed.hpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:155:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="0" ARG_PragmaOptions="core = Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:272:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:274:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:275:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = a core = RAM_1P" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:276:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b core = RAM_1P" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:277:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = c core = RAM_1P" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:278:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = a type = RAM_1P" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:279:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b type = RAM_1P" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:280:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = c type = RAM_1P" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="0" ARG_PragmaOptions="core = Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:282:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:56:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=402 port=ct" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:57:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=378 port=pk" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=402 port=ct" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=378 port=pk" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:60:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16 port=ss" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:68:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl:70:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sikep503_kem_enc_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/sikep503_kem_enc_hw.cpp:35:9" msg_body="HLS pragma dump">
@@ -41,10 +128,10 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/sikep503_kem_enc_hw.cpp:41:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/sidh.cpp:124:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/sidh.cpp:158:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="EphemeralKeyGeneration_A" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 7" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/sidh.cpp:290:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/sidh.cpp:324:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="EphemeralSecretAgreement_A" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 7" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_INVALID" msg_id="207-5589" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:35:9" msg_body="'#pragma HLS loop_tripcount' can only be applied inside loop body">
@@ -62,13 +149,61 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:321:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="LADDER3PT" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 503 avg = 252" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src/fpx.cpp:57:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src/fpx.cpp:58:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src/fpx.cpp:58:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5569" msg_severity="WARNING" msg_loc="src/fpx.cpp:59:22" msg_body="unexpected pragma parameter 'off'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src/fpx.cpp:69:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src/fpx.cpp:70:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src/fpx.cpp:70:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5569" msg_severity="WARNING" msg_loc="src/fpx.cpp:71:22" msg_body="unexpected pragma parameter 'off'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="core = Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="core = Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Updating loop lower bound from 1 to 250 for loop 'VITIS_LOOP_319_1' (src/ec_isogeny.cpp:319:21) in function 'LADDER3PT'.">
         <args LoopLoc="src/ec_isogeny.cpp:319:21" LoopName="VITIS_LOOP_319_1" NewBound="250" OldBound="1"/>
     </msg>
     <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Updating loop upper bound from 503 to 250 for loop 'VITIS_LOOP_319_1' (src/ec_isogeny.cpp:319:21) in function 'LADDER3PT'.">
         <args LoopLoc="src/ec_isogeny.cpp:319:21" LoopName="VITIS_LOOP_319_1" NewBound="250" OldBound="503"/>
     </msg>
-    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/sidh.cpp:305:5" msg_body="Duplicating function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/sidh.cpp:339:5" msg_body="Duplicating function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
         <args Name="fp2_encode(unsigned long const (*) [8], unsigned char*)"/>
     </msg>
     <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/sike.cpp:89:3" msg_body="Duplicating function 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
@@ -92,14 +227,14 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:606:0" msg_body="Inlining function 'keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)' into 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)'">
         <args Callee="keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 386 Column 0" Caller="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long) (.46)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)'">
-        <args Callee="store64(unsigned char*, unsigned long) (.46)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long) (.34)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)'">
+        <args Callee="store64(unsigned char*, unsigned long) (.34)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.44)'">
-        <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.44)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)'">
+        <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.44)'">
-        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.44)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)'">
+        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:26:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])'">
         <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/sidh.cpp Line 26 Column 0"/>
@@ -110,266 +245,236 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/config.h:99:0" msg_body="Inlining function 'is_digit_nonzero_ct(unsigned long)' into 'is_digit_zero_ct(unsigned long)'">
         <args Callee="is_digit_nonzero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 94 Column 0" Caller="is_digit_zero_ct(unsigned long)" Caller-DebugLoc="File src/config.h Line 99 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:23:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 23 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:27:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 27 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:23:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 23 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:27:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 27 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:84:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpdiv2_503(unsigned long const*, unsigned long*)'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpdiv2_503(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:88:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpdiv2_503(unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpdiv2_503(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 88 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:84:0" msg_body="Inlining function 'mp_shiftr1(unsigned long*, unsigned int)' into 'fpdiv2_503(unsigned long const*, unsigned long*)'">
-        <args Callee="mp_shiftr1(unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 413 Column 0" Caller="fpdiv2_503(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:88:0" msg_body="Inlining function 'mp_shiftr1(unsigned long*, unsigned int)' into 'fpdiv2_503(unsigned long const*, unsigned long*)'">
+        <args Callee="mp_shiftr1(unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 421 Column 0" Caller="fpdiv2_503(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 88 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:112:0" msg_body="Inlining function 'fpdiv2_503(unsigned long const*, unsigned long*)' into 'fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fpdiv2_503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 84 Column 0" Caller="fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 112 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:120:0" msg_body="Inlining function 'fpdiv2_503(unsigned long const*, unsigned long*)' into 'fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpdiv2_503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 88 Column 0" Caller="fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 120 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:82:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 82 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:90:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 90 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:51:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 51 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:55:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 55 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:51:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 51 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:55:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 55 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:367:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.60)' into 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.60)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/fpx.cpp Line 367 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:375:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.60)' into 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.60)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/fpx.cpp Line 375 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:124:0" msg_body="Inlining function 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 367 Column 0" Caller="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 124 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:132:0" msg_body="Inlining function 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 375 Column 0" Caller="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 132 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:278:0" msg_body="Inlining function 'digit_x_digit_hls(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;128&gt;&amp;)' into 'rdc_mont(unsigned long const*, unsigned long*)'">
-        <args Callee="digit_x_digit_hls(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;128&gt;&amp;)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 149 Column 0" Caller="rdc_mont(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 278 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:271:0" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/generic/mpx_packed.hpp Line 109 Column 0" Caller="mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 271 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:55:0" msg_body="Inlining function 'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 216 Column 0" Caller="fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 55 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:144:0" msg_body="Inlining function 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 132 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 144 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:136:0" msg_body="Inlining function 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 124 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 136 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:144:0" msg_body="Inlining function 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 55 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 144 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:136:0" msg_body="Inlining function 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 51 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 136 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:101:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpcorrection503(unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpcorrection503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 101 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:136:0" msg_body="Inlining function 'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 55 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 136 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:97:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpcorrection503(unsigned long*)'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpcorrection503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 97 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:97:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpcorrection503(unsigned long*)'">
-        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpcorrection503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 97 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:101:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpcorrection503(unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpcorrection503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 101 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/config.h:99:0" msg_body="Inlining function 'is_digit_nonzero_ct(unsigned long) (.64)' into 'is_digit_zero_ct(unsigned long) (.63)'">
         <args Callee="is_digit_nonzero_ct(unsigned long) (.64)" Callee-DebugLoc="File src/config.h Line 94 Column 0" Caller="is_digit_zero_ct(unsigned long) (.63)" Caller-DebugLoc="File src/config.h Line 99 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:149:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.60)' into 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.60)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/fpx.cpp Line 149 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:157:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.60)' into 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.60)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/fpx.cpp Line 157 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:149:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long) (.63)' into 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="is_digit_zero_ct(unsigned long) (.63)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/fpx.cpp Line 149 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:157:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long) (.63)' into 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="is_digit_zero_ct(unsigned long) (.63)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/fpx.cpp Line 157 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:162:0" msg_body="Inlining function 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 149 Column 0" Caller="mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 162 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:170:0" msg_body="Inlining function 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 157 Column 0" Caller="mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 170 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:130:0" msg_body="Inlining function 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)'">
-        <args Callee="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 367 Column 0" Caller="mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 130 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:138:0" msg_body="Inlining function 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 375 Column 0" Caller="mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 138 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:168:0" msg_body="Inlining function 'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 216 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 168 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:176:0" msg_body="Inlining function 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 132 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 176 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:168:0" msg_body="Inlining function 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 124 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 168 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:176:0" msg_body="Inlining function 'mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 170 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 176 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:168:0" msg_body="Inlining function 'mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 162 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 168 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:176:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.60)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.60)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 176 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:168:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.60)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.60)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 168 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:168:0" msg_body="Inlining function 'mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 130 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 168 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:176:0" msg_body="Inlining function 'mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 138 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 176 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:237:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 237 Column 0"/>
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 237 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:237:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 106 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 237 Column 0"/>
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 237 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:237:0" msg_body="Inlining function 'fp2correction503(unsigned long (*) [8])' into 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])'">
-        <args Callee="fp2correction503(unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 118 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 237 Column 0"/>
+        <args Callee="fp2correction503(unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 126 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 237 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
         <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
-        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 82 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 90 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'fpzero503(unsigned long*)' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
         <args Callee="fpzero503(unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 18 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'swap_points(point_proj*, point_proj*, unsigned long) (.37)' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
-        <args Callee="swap_points(point_proj*, point_proj*, unsigned long) (.37)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 264 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'swap_points(point_proj*, point_proj*, unsigned long) (.25)' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="swap_points(point_proj*, point_proj*, unsigned long) (.25)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 264 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
-        <args Callee="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 237 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.28)'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 106 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.28)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.28)'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.28)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:28:0" msg_body="Inlining function 'copy_words(unsigned long const*, unsigned long*, unsigned int)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
         <args Callee="copy_words(unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 44 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:28:0" msg_body="Inlining function 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.28)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
-        <args Callee="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.28)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:28:0" msg_body="Inlining function 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
+        <args Callee="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:43:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 106 Column 0" Caller="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0"/>
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:43:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0"/>
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:60:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'eval_4_isog(point_proj*, unsigned long (*) [2][8])'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 60 Column 0"/>
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 60 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:60:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'eval_4_isog(point_proj*, unsigned long (*) [2][8])'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 106 Column 0" Caller="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 60 Column 0"/>
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 60 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:63:0" msg_body="Inlining function 'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'fpsqr503_mont(unsigned long const*, unsigned long*)'">
-        <args Callee="mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 216 Column 0" Caller="fpsqr503_mont(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 63 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:199:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fpinv503_chain_mont(unsigned long*)'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="fpinv503_chain_mont(unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 199 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:191:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fpinv503_chain_mont(unsigned long*)'">
-        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="fpinv503_chain_mont(unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 191 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:79:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fpinv503_mont(unsigned long*)'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="fpinv503_mont(unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 79 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:71:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fpinv503_mont(unsigned long*)'">
-        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="fpinv503_mont(unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 71 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:77:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpneg503(unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpneg503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 77 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:71:0" msg_body="Inlining function 'fpsqr503_mont(unsigned long const*, unsigned long*)' into 'fpinv503_mont(unsigned long*)'">
-        <args Callee="fpsqr503_mont(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 63 Column 0" Caller="fpinv503_mont(unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 71 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:77:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpneg503(unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpneg503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 77 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:71:0" msg_body="Inlining function 'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)' into 'fpinv503_mont(unsigned long*)'">
-        <args Callee="fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 55 Column 0" Caller="fpinv503_mont(unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 71 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:346:0" msg_body="Inlining function 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
+        <args Callee="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 27 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 346 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:73:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpneg503(unsigned long*)'">
-        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src/config.h Line 104 Column 0" Caller="fpneg503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:346:0" msg_body="Inlining function 'fpinv503_mont(unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
+        <args Callee="fpinv503_mont(unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 79 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 346 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:73:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpneg503(unsigned long*)'">
-        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src/config.h Line 99 Column 0" Caller="fpneg503(unsigned long*)" Caller-DebugLoc="File src/generic/fp_generic.cpp Line 73 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:338:0" msg_body="Inlining function 'fpsqr503_mont(unsigned long const*, unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
-        <args Callee="fpsqr503_mont(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 63 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 338 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:338:0" msg_body="Inlining function 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
-        <args Callee="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 23 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 338 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:338:0" msg_body="Inlining function 'fpneg503(unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
-        <args Callee="fpneg503(unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 73 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 338 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:338:0" msg_body="Inlining function 'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
-        <args Callee="fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 55 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 338 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:346:0" msg_body="Inlining function 'fpneg503(unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
+        <args Callee="fpneg503(unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 77 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 346 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:175:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])'">
-        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 82 Column 0" Caller="inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 175 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:34:0" msg_body="Inlining function 'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)' into 'from_mont(unsigned long const*, unsigned long*)'">
-        <args Callee="fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 55 Column 0" Caller="from_mont(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 34 Column 0"/>
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 90 Column 0" Caller="inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 175 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:34:0" msg_body="Inlining function 'fpcorrection503(unsigned long*)' into 'from_mont(unsigned long const*, unsigned long*)'">
-        <args Callee="fpcorrection503(unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 97 Column 0" Caller="from_mont(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 34 Column 0"/>
+        <args Callee="fpcorrection503(unsigned long*)" Callee-DebugLoc="File src/generic/fp_generic.cpp Line 101 Column 0" Caller="from_mont(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 34 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:37:0" msg_body="Inlining function 'from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_encode(unsigned long const (*) [8], unsigned char*)'">
-        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 359 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*)" Caller-DebugLoc="File src/sidh.cpp Line 37 Column 0"/>
+        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 367 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*)" Caller-DebugLoc="File src/sidh.cpp Line 37 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
-        <args Callee="init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/sidh.cpp Line 26 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/sidh.cpp Line 26 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'EphemeralKeyGeneration_A'">
-        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
-        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 82 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 90 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)' into 'EphemeralKeyGeneration_A'">
-        <args Callee="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)' into 'EphemeralKeyGeneration_A'">
+        <args Callee="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])' into 'EphemeralKeyGeneration_A'">
-        <args Callee="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
-        <args Callee="inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 175 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 175 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:84:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' into 'EphemeralKeyGeneration_A'">
-        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*)" Callee-DebugLoc="File src/sidh.cpp Line 37 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 84 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:119:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*)" Callee-DebugLoc="File src/sidh.cpp Line 37 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src/sidh.cpp Line 119 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:26:0" msg_body="Inlining function 'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)' into 'to_mont(unsigned long const*, unsigned long*)'">
-        <args Callee="fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 55 Column 0" Caller="to_mont(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 26 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:359:0" msg_body="Inlining function 'to_mont(unsigned long const*, unsigned long*)' into 'to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="to_mont(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 26 Column 0" Caller="to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 359 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:351:0" msg_body="Inlining function 'to_mont(unsigned long const*, unsigned long*)' into 'to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="to_mont(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 26 Column 0" Caller="to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 351 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:50:0" msg_body="Inlining function 'to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_decode(unsigned char const*, unsigned long (*) [8])'">
-        <args Callee="to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 351 Column 0" Caller="fp2_decode(unsigned char const*, unsigned long (*) [8])" Caller-DebugLoc="File src/sidh.cpp Line 50 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:63:0" msg_body="Inlining function 'to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_decode(unsigned char const*, unsigned long (*) [8])'">
+        <args Callee="to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 359 Column 0" Caller="fp2_decode(unsigned char const*, unsigned long (*) [8])" Caller-DebugLoc="File src/sidh.cpp Line 63 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:191:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 191 Column 0"/>
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 191 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:191:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 106 Column 0" Caller="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 191 Column 0"/>
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 191 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:213:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0"/>
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:213:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 106 Column 0" Caller="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0"/>
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:37:0" msg_body="Inlining function 'from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.43)'">
-        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 359 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*) (.43)" Caller-DebugLoc="File src/sidh.cpp Line 37 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:37:0" msg_body="Inlining function 'from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)'">
+        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 367 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)" Caller-DebugLoc="File src/sidh.cpp Line 37 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
-        <args Callee="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 191 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 191 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 100 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
-        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 82 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 90 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)' into 'EphemeralSecretAgreement_A'">
-        <args Callee="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)' into 'EphemeralSecretAgreement_A'">
+        <args Callee="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])' into 'EphemeralSecretAgreement_A'">
-        <args Callee="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'eval_4_isog(point_proj*, unsigned long (*) [2][8])' into 'EphemeralSecretAgreement_A'">
-        <args Callee="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 60 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'eval_4_isog(point_proj*, unsigned long (*) [2][8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 60 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 106 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
-        <args Callee="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:236:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.43)' into 'EphemeralSecretAgreement_A'">
-        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*) (.43)" Callee-DebugLoc="File src/sidh.cpp Line 37 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 236 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)" Callee-DebugLoc="File src/sidh.cpp Line 37 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.45)'">
-        <args Callee="store64(unsigned char*, unsigned long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.45)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)'">
+        <args Callee="store64(unsigned char*, unsigned long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
         <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.45)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
-        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.45)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
+        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
         <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
@@ -383,15 +488,6 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sha3/fips202.cpp:28:30" msg_body="The program may have out of bound array access on variable 'in'"/>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sha3/fips202.cpp:39:10" msg_body="The program may have out of bound array access on variable 'output'"/>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sha3/fips202.cpp:39:10" msg_body="The program may have out of bound array access on variable 't'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:44:18" msg_body="The program may have out of bound array access on variable 't.i'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:45:44" msg_body="The program may have out of bound array access on variable 't.i'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:44:18" msg_body="The program may have out of bound array access on variable 't.i410'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:45:44" msg_body="The program may have out of bound array access on variable 't.i410'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:44:18" msg_body="The program may have out of bound array access on variable 't.i425'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:45:44" msg_body="The program may have out of bound array access on variable 't.i425'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:54:33" msg_body="The program may have out of bound array access on variable 'x'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:57:33" msg_body="The program may have out of bound array access on variable 'x'"/>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sidh.cpp:58:43" msg_body="The program may have out of bound array access on variable 'x'"/>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:37:20" msg_body="Loop 'VITIS_LOOP_37_1' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_37_1"/>
     </msg>
@@ -422,23 +518,44 @@
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:319:21" msg_body="loop_flatten 0 1 LADDER3PT src/ec_isogeny.cpp:319:21VITIS_LOOP_319_1 src/ec_isogeny.cpp:319:21">
         <args LoopLoc="src/ec_isogeny.cpp:319:21" LoopLoc-DebugLoc="File src/ec_isogeny.cpp Line 319 Column 21" LoopName="VITIS_LOOP_319_1" PragmaFunction="LADDER3PT" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src/ec_isogeny.cpp:319:21" PragmaSrcLoc-DebugLoc="File src/ec_isogeny.cpp Line 319 Column 21" PragmaType="loop_flatten"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:321:23" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_321_4'.">
-        <args LoopName="VITIS_LOOP_321_4"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:333:23" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_333_4'.">
+        <args LoopName="VITIS_LOOP_333_4"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:321:23" msg_body="loop_flatten 0 1 rdc_mont src/generic/fp_generic.cpp:321:23VITIS_LOOP_321_4 src/generic/fp_generic.cpp:321:23">
-        <args LoopLoc="src/generic/fp_generic.cpp:321:23" LoopLoc-DebugLoc="File src/generic/fp_generic.cpp Line 321 Column 23" LoopName="VITIS_LOOP_321_4" PragmaFunction="rdc_mont" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src/generic/fp_generic.cpp:321:23" PragmaSrcLoc-DebugLoc="File src/generic/fp_generic.cpp Line 321 Column 23" PragmaType="loop_flatten"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:333:23" msg_body="loop_flatten 0 1 rdc_mont src/generic/fp_generic.cpp:333:23VITIS_LOOP_333_4 src/generic/fp_generic.cpp:333:23">
+        <args LoopLoc="src/generic/fp_generic.cpp:333:23" LoopLoc-DebugLoc="File src/generic/fp_generic.cpp Line 333 Column 23" LoopName="VITIS_LOOP_333_4" PragmaFunction="rdc_mont" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src/generic/fp_generic.cpp:333:23" PragmaSrcLoc-DebugLoc="File src/generic/fp_generic.cpp Line 333 Column 23" PragmaType="loop_flatten"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:297:23" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_297_2'.">
-        <args LoopName="VITIS_LOOP_297_2"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:311:23" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_311_2'.">
+        <args LoopName="VITIS_LOOP_311_2"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:297:23" msg_body="loop_flatten 0 1 rdc_mont src/generic/fp_generic.cpp:297:23VITIS_LOOP_297_2 src/generic/fp_generic.cpp:297:23">
-        <args LoopLoc="src/generic/fp_generic.cpp:297:23" LoopLoc-DebugLoc="File src/generic/fp_generic.cpp Line 297 Column 23" LoopName="VITIS_LOOP_297_2" PragmaFunction="rdc_mont" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src/generic/fp_generic.cpp:297:23" PragmaSrcLoc-DebugLoc="File src/generic/fp_generic.cpp Line 297 Column 23" PragmaType="loop_flatten"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:311:23" msg_body="loop_flatten 0 1 rdc_mont src/generic/fp_generic.cpp:311:23VITIS_LOOP_311_2 src/generic/fp_generic.cpp:311:23">
+        <args LoopLoc="src/generic/fp_generic.cpp:311:23" LoopLoc-DebugLoc="File src/generic/fp_generic.cpp Line 311 Column 23" LoopName="VITIS_LOOP_311_2" PragmaFunction="rdc_mont" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src/generic/fp_generic.cpp:311:23" PragmaSrcLoc-DebugLoc="File src/generic/fp_generic.cpp Line 311 Column 23" PragmaType="loop_flatten"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src/fpx.cpp:328:24" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_328_44'.">
-        <args LoopName="VITIS_LOOP_328_44"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src/fpx.cpp:336:24" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_336_44'.">
+        <args LoopName="VITIS_LOOP_336_44"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:328:24" msg_body="loop_flatten 0 1 fpinv503_chain_mont src/fpx.cpp:328:24VITIS_LOOP_328_44 src/fpx.cpp:328:24">
-        <args LoopLoc="src/fpx.cpp:328:24" LoopLoc-DebugLoc="File src/fpx.cpp Line 328 Column 24" LoopName="VITIS_LOOP_328_44" PragmaFunction="fpinv503_chain_mont" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src/fpx.cpp:328:24" PragmaSrcLoc-DebugLoc="File src/fpx.cpp Line 328 Column 24" PragmaType="loop_flatten"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:336:24" msg_body="loop_flatten 0 1 fpinv503_chain_mont src/fpx.cpp:336:24VITIS_LOOP_336_44 src/fpx.cpp:336:24">
+        <args LoopLoc="src/fpx.cpp:336:24" LoopLoc-DebugLoc="File src/fpx.cpp Line 336 Column 24" LoopName="VITIS_LOOP_336_44" PragmaFunction="fpinv503_chain_mont" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src/fpx.cpp:336:24" PragmaSrcLoc-DebugLoc="File src/fpx.cpp Line 336 Column 24" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:302:13" msg_body="Automatically partitioning small array 'UV' completely based on array size.">
+        <args Value="UV"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="array_partition dim=1 type=complete  variable=t0.i.i 1 EphemeralKeyGeneration_A src/ec_isogeny.cpp:13:11 t0.i.i">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i.i" PragmaType="array_partition" VarName="t0.i.i" varLoc="src/ec_isogeny.cpp:13:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t0.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="array_partition dim=1 type=complete  variable=t0.i.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:13:11 t0.i.i">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i.i" PragmaType="array_partition" VarName="t0.i.i" varLoc="src/ec_isogeny.cpp:13:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:15" msg_body="array_partition dim=1 type=complete  variable=t1.i.i 1 EphemeralKeyGeneration_A src/ec_isogeny.cpp:13:15 t1.i.i">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1.i.i" PragmaType="array_partition" VarName="t1.i.i" varLoc="src/ec_isogeny.cpp:13:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:15" msg_body="array_partition dim=1 type=complete  variable=t1.i.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:13:15 t1.i.i">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1.i.i" PragmaType="array_partition" VarName="t1.i.i" varLoc="src/ec_isogeny.cpp:13:15"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sike.cpp:41:17" msg_body="array_partition dim=1 type=cyclic factor=4 variable=jinvariant.i 1 sikep503_kem_enc_hw src/sike.cpp:41:17 jinvariant.i">
         <args PragmaFunction="sikep503_kem_enc_hw" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=4 variable=jinvariant.i" PragmaType="array_partition" VarName="jinvariant.i" varLoc="src/sike.cpp:41:17"/>
@@ -452,11 +569,197 @@
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sike.cpp:43:17" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'temp.i' due to pipeline pragma">
         <args Dim="1" Factor="4" Mode="cyclic" Name="temp.i" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:243:28" msg_body="array_partition dim=2 type=cyclic factor=2 variable=C24 1 EphemeralSecretAgreement_A src/sidh.cpp:243:28 C24">
-        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=2 variable=C24" PragmaType="array_partition" VarName="C24" varLoc="src/sidh.cpp:243:28"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:11" msg_body="array_partition dim=1 type=complete  variable=t0 1 eval_4_isog src/ec_isogeny.cpp:64:11 t0">
+        <args PragmaFunction="eval_4_isog" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0" PragmaType="array_partition" VarName="t0" varLoc="src/ec_isogeny.cpp:64:11"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:243:28" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=2' for array 'C24' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:11" msg_body="array_partition dim=1 type=complete  variable=t0.i94 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:64:11 t0.i94">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i94" PragmaType="array_partition" VarName="t0.i94" varLoc="src/ec_isogeny.cpp:64:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0.i94' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t0.i94" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="array_partition dim=1 type=complete  variable=t1 1 eval_4_isog src/ec_isogeny.cpp:64:15 t1">
+        <args PragmaFunction="eval_4_isog" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1" PragmaType="array_partition" VarName="t1" varLoc="src/ec_isogeny.cpp:64:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="array_partition dim=1 type=complete  variable=t1.i95 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:64:15 t1.i95">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1.i95" PragmaType="array_partition" VarName="t1.i95" varLoc="src/ec_isogeny.cpp:64:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1.i95' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1.i95" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:120:21" msg_body="array_partition dim=2 type=complete  variable=phiP.X 1 EphemeralKeyGeneration_A src/sidh.cpp:120:21 phiP.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=phiP.X" PragmaType="array_partition" VarName="phiP.X" varLoc="src/sidh.cpp:120:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:120:21" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'phiP.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="phiP.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:120:21" msg_body="array_partition dim=2 type=complete  variable=phiP.Z 1 EphemeralKeyGeneration_A src/sidh.cpp:120:21 phiP.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=phiP.Z" PragmaType="array_partition" VarName="phiP.Z" varLoc="src/sidh.cpp:120:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:120:21" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'phiP.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="phiP.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:120:33" msg_body="array_partition dim=2 type=complete  variable=phiQ.X 1 EphemeralKeyGeneration_A src/sidh.cpp:120:33 phiQ.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=phiQ.X" PragmaType="array_partition" VarName="phiQ.X" varLoc="src/sidh.cpp:120:33"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:120:33" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'phiQ.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="phiQ.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:120:33" msg_body="array_partition dim=2 type=complete  variable=phiQ.Z 1 EphemeralKeyGeneration_A src/sidh.cpp:120:33 phiQ.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=phiQ.Z" PragmaType="array_partition" VarName="phiQ.Z" varLoc="src/sidh.cpp:120:33"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:120:33" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'phiQ.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="phiQ.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:120:45" msg_body="array_partition dim=2 type=complete  variable=phiR.X 1 EphemeralKeyGeneration_A src/sidh.cpp:120:45 phiR.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=phiR.X" PragmaType="array_partition" VarName="phiR.X" varLoc="src/sidh.cpp:120:45"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:120:45" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'phiR.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="phiR.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:120:45" msg_body="array_partition dim=2 type=complete  variable=phiR.Z 1 EphemeralKeyGeneration_A src/sidh.cpp:120:45 phiR.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=phiR.Z" PragmaType="array_partition" VarName="phiR.Z" varLoc="src/sidh.cpp:120:45"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:120:45" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'phiR.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="phiR.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:121:38" msg_body="array_partition dim=1 type=complete  variable=A24plus 1 EphemeralKeyGeneration_A src/sidh.cpp:121:38 A24plus">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=A24plus" PragmaType="array_partition" VarName="A24plus" varLoc="src/sidh.cpp:121:38"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:121:38" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'A24plus' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="A24plus" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:121:53" msg_body="array_partition dim=1 type=complete  variable=C24 1 EphemeralKeyGeneration_A src/sidh.cpp:121:53 C24">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=C24" PragmaType="array_partition" VarName="C24" varLoc="src/sidh.cpp:121:53"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:121:53" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'C24' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="C24" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:11" msg_body="array_partition dim=1 type=complete  variable=t0.i 1 EphemeralKeyGeneration_A src/ec_isogeny.cpp:178:11 t0.i">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i" PragmaType="array_partition" VarName="t0.i" varLoc="src/ec_isogeny.cpp:178:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t0.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:15" msg_body="array_partition dim=1 type=complete  variable=t1.i 1 EphemeralKeyGeneration_A src/ec_isogeny.cpp:178:15 t1.i">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1.i" PragmaType="array_partition" VarName="t1.i" varLoc="src/ec_isogeny.cpp:178:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:19" msg_body="array_partition dim=1 type=complete  variable=t2.i 1 EphemeralKeyGeneration_A src/ec_isogeny.cpp:178:19 t2.i">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t2.i" PragmaType="array_partition" VarName="t2.i" varLoc="src/ec_isogeny.cpp:178:19"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:19" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't2.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t2.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:194:11" msg_body="array_partition dim=1 type=complete  variable=t0.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:194:11 t0.i">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i" PragmaType="array_partition" VarName="t0.i" varLoc="src/ec_isogeny.cpp:194:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:194:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t0.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:194:15" msg_body="array_partition dim=1 type=complete  variable=t1.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:194:15 t1.i">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1.i" PragmaType="array_partition" VarName="t1.i" varLoc="src/ec_isogeny.cpp:194:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:194:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:216:11" msg_body="array_partition dim=1 type=complete  variable=t0.i208 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:216:11 t0.i208">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i208" PragmaType="array_partition" VarName="t0.i208" varLoc="src/ec_isogeny.cpp:216:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:216:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0.i208' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t0.i208" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:216:15" msg_body="array_partition dim=1 type=complete  variable=t1.i209 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:216:15 t1.i209">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1.i209" PragmaType="array_partition" VarName="t1.i209" varLoc="src/ec_isogeny.cpp:216:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:216:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1.i209' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1.i209" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:11" msg_body="array_partition dim=1 type=complete  variable=t0 1 xDBLADD src/ec_isogeny.cpp:240:11 t0">
+        <args PragmaFunction="xDBLADD" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0" PragmaType="array_partition" VarName="t0" varLoc="src/ec_isogeny.cpp:240:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:15" msg_body="array_partition dim=1 type=complete  variable=t1 1 xDBLADD src/ec_isogeny.cpp:240:15 t1">
+        <args PragmaFunction="xDBLADD" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1" PragmaType="array_partition" VarName="t1" varLoc="src/ec_isogeny.cpp:240:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:19" msg_body="array_partition dim=1 type=complete  variable=t2 1 xDBLADD src/ec_isogeny.cpp:240:19 t2">
+        <args PragmaFunction="xDBLADD" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t2" PragmaType="array_partition" VarName="t2" varLoc="src/ec_isogeny.cpp:240:19"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:19" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:275:21" msg_body="array_partition dim=3 type=complete  variable=pts.X 1 EphemeralSecretAgreement_A src/sidh.cpp:275:21 pts.X">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=pts.X" PragmaType="array_partition" VarName="pts.X" varLoc="src/sidh.cpp:275:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:275:21" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'pts.X' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="pts.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:275:21" msg_body="array_partition dim=3 type=complete  variable=pts.Z 1 EphemeralSecretAgreement_A src/sidh.cpp:275:21 pts.Z">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=pts.Z" PragmaType="array_partition" VarName="pts.Z" varLoc="src/sidh.cpp:275:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:275:21" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'pts.Z' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="pts.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:276:23" msg_body="array_partition dim=2 type=complete  variable=PKB 1 EphemeralSecretAgreement_A src/sidh.cpp:276:23 PKB">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=PKB" PragmaType="array_partition" VarName="PKB" varLoc="src/sidh.cpp:276:23"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:276:23" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'PKB' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="PKB" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:276:31" msg_body="array_partition dim=1 type=complete  variable=jinv 1 EphemeralSecretAgreement_A src/sidh.cpp:276:31 jinv">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=jinv" PragmaType="array_partition" VarName="jinv" varLoc="src/sidh.cpp:276:31"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:276:31" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'jinv' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="jinv" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:277:39" msg_body="array_partition dim=1 type=complete  variable=A 1 EphemeralSecretAgreement_A src/sidh.cpp:277:39 A">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=A" PragmaType="array_partition" VarName="A" varLoc="src/sidh.cpp:277:39"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:277:39" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'A' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="A" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:277:13" msg_body="array_partition dim=1 type=complete  variable=A24plus 1 EphemeralSecretAgreement_A src/sidh.cpp:277:13 A24plus">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=A24plus" PragmaType="array_partition" VarName="A24plus" varLoc="src/sidh.cpp:277:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:277:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'A24plus' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="A24plus" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:277:28" msg_body="array_partition dim=1 type=complete  variable=C24 1 EphemeralSecretAgreement_A src/sidh.cpp:277:28 C24">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=C24" PragmaType="array_partition" VarName="C24" varLoc="src/sidh.cpp:277:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:277:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'C24' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="C24" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:277:28" msg_body="array_partition dim=2 type=cyclic factor=2 variable=C24 1 EphemeralSecretAgreement_A src/sidh.cpp:277:28 C24">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=2 variable=C24" PragmaType="array_partition" VarName="C24" varLoc="src/sidh.cpp:277:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sidh.cpp:277:28" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=2' for array 'C24' due to pipeline pragma">
         <args Dim="2" Factor="2" Mode="cyclic" Name="C24" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:16" msg_body="array_partition dim=2 type=complete  variable=R0.X 1 LADDER3PT src/ec_isogeny.cpp:288:16 R0.X">
+        <args PragmaFunction="LADDER3PT" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R0.X" PragmaType="array_partition" VarName="R0.X" varLoc="src/ec_isogeny.cpp:288:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:16" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R0.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R0.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:16" msg_body="array_partition dim=2 type=complete  variable=R0.Z 1 LADDER3PT src/ec_isogeny.cpp:288:16 R0.Z">
+        <args PragmaFunction="LADDER3PT" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R0.Z" PragmaType="array_partition" VarName="R0.Z" varLoc="src/ec_isogeny.cpp:288:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:16" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R0.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R0.Z" PragmaType="array_partition"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:26" msg_body="array_partition dim=2 type=complete  variable=R2.X 1 LADDER3PT src/ec_isogeny.cpp:288:26 R2.X">
         <args PragmaFunction="LADDER3PT" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R2.X" PragmaType="array_partition" VarName="R2.X" varLoc="src/ec_isogeny.cpp:288:26"/>
@@ -470,16 +773,28 @@
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R2.Z' due to pipeline pragma">
         <args Dim="2" Mode="complete" Name="R2.Z" PragmaType="array_partition"/>
     </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:289:11" msg_body="array_partition dim=1 type=complete  variable=A24 1 LADDER3PT src/ec_isogeny.cpp:289:11 A24">
+        <args PragmaFunction="LADDER3PT" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=A24" PragmaType="array_partition" VarName="A24" varLoc="src/ec_isogeny.cpp:289:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:289:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'A24' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="A24" PragmaType="array_partition"/>
+    </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:289:11" msg_body="array_partition dim=2 type=cyclic factor=2 variable=A24 1 LADDER3PT src/ec_isogeny.cpp:289:11 A24">
         <args PragmaFunction="LADDER3PT" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=2 variable=A24" PragmaType="array_partition" VarName="A24" varLoc="src/ec_isogeny.cpp:289:11"/>
     </msg>
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:289:11" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=2' for array 'A24' due to pipeline pragma">
         <args Dim="2" Factor="2" Mode="cyclic" Name="A24" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:339:13" msg_body="array_partition dim=1 type=complete  variable=t1 1 fp2inv503_mont src/fpx.cpp:339:13 t1">
-        <args PragmaFunction="fp2inv503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1" PragmaType="array_partition" VarName="t1" varLoc="src/fpx.cpp:339:13"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:302:13" msg_body="array_partition dim=1 type=complete  variable=UV 1 rdc_mont src/generic/fp_generic.cpp:302:13 UV">
+        <args PragmaFunction="rdc_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=UV" PragmaType="array_partition" VarName="UV" varLoc="src/generic/fp_generic.cpp:302:13"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/fpx.cpp:339:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:302:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'UV' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="UV" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:347:13" msg_body="array_partition dim=1 type=complete  variable=t1 1 fp2inv503_mont src/fpx.cpp:347:13 t1">
+        <args PragmaFunction="fp2inv503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1" PragmaType="array_partition" VarName="t1" varLoc="src/fpx.cpp:347:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/fpx.cpp:347:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1' due to pipeline pragma">
         <args Dim="1" Mode="complete" Name="t1" PragmaType="array_partition"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:639:17" msg_body="array_partition dim=1 type=cyclic factor=4 variable=t 1 cshake256_simple src/sha3/fips202.cpp:639:17 t">
@@ -491,20 +806,119 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:639:17" msg_body="Applying array_partition to 't': Cyclic partitioning with factor 4 on dimension 1.">
         <args Dim="1" Factor="4" Mode="Cyclic" UOName="t"/>
     </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:302:13" msg_body="Applying array_partition to 'UV': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="UV"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:11" msg_body="Applying array_partition to 't0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:15" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:19" msg_body="Applying array_partition to 't2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:16" msg_body="Applying array_partition to 'R0.X': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R0.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:16" msg_body="Applying array_partition to 'R0.Z': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R0.Z"/>
+    </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:26" msg_body="Applying array_partition to 'R2.X': Complete partitioning on dimension 2.">
         <args Dim="2" Mode="Complete" UOName="R2.X"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:288:26" msg_body="Applying array_partition to 'R2.Z': Complete partitioning on dimension 2.">
         <args Dim="2" Mode="Complete" UOName="R2.Z"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:289:11" msg_body="Applying array_partition to 'A24': Cyclic partitioning with factor 2 on dimension 2.">
-        <args Dim="2" Factor="2" Mode="Cyclic" UOName="A24"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:289:11" msg_body="Applying array_partition to 'A24': Complete partitioning on dimension 1. Cyclic partitioning with factor 2 on dimension 2.">
+        <args Dim="islist 1 2" Factor="2" Mode="islist Complete Cyclic" UOName="A24"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/fpx.cpp:339:13" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:11" msg_body="Applying array_partition to 't0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="t1"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:243:28" msg_body="Applying array_partition to 'C24': Cyclic partitioning with factor 2 on dimension 2.">
-        <args Dim="2" Factor="2" Mode="Cyclic" UOName="C24"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/fpx.cpp:347:13" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:11" msg_body="Applying array_partition to 't0.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t0.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:15" msg_body="Applying array_partition to 't1.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:19" msg_body="Applying array_partition to 't2.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t2.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="Applying array_partition to 't0.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t0.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:15" msg_body="Applying array_partition to 't1.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:120:21" msg_body="Applying array_partition to 'phiP.X': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="phiP.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:120:21" msg_body="Applying array_partition to 'phiP.Z': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="phiP.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:120:33" msg_body="Applying array_partition to 'phiQ.X': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="phiQ.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:120:33" msg_body="Applying array_partition to 'phiQ.Z': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="phiQ.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:120:45" msg_body="Applying array_partition to 'phiR.X': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="phiR.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:120:45" msg_body="Applying array_partition to 'phiR.Z': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="phiR.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:121:38" msg_body="Applying array_partition to 'A24plus': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="A24plus"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:121:53" msg_body="Applying array_partition to 'C24': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="C24"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:216:11" msg_body="Applying array_partition to 't0.i208': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t0.i208"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:216:15" msg_body="Applying array_partition to 't1.i209': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1.i209"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:11" msg_body="Applying array_partition to 't0.i94': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t0.i94"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="Applying array_partition to 't1.i95': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1.i95"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:194:11" msg_body="Applying array_partition to 't0.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t0.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:194:15" msg_body="Applying array_partition to 't1.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:275:21" msg_body="Applying array_partition to 'pts.X': Complete partitioning on dimension 3.">
+        <args Dim="3" Mode="Complete" UOName="pts.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:275:21" msg_body="Applying array_partition to 'pts.Z': Complete partitioning on dimension 3.">
+        <args Dim="3" Mode="Complete" UOName="pts.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:276:23" msg_body="Applying array_partition to 'PKB': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="PKB"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:276:31" msg_body="Applying array_partition to 'jinv': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="jinv"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:277:13" msg_body="Applying array_partition to 'A24plus': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="A24plus"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:277:28" msg_body="Applying array_partition to 'C24': Complete partitioning on dimension 1. Cyclic partitioning with factor 2 on dimension 2.">
+        <args Dim="islist 1 2" Factor="2" Mode="islist Complete Cyclic" UOName="C24"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sidh.cpp:277:39" msg_body="Applying array_partition to 'A': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="A"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sike.cpp:41:17" msg_body="Applying array_partition to 'jinvariant.i': Cyclic partitioning with factor 4 on dimension 1.">
         <args Dim="1" Factor="4" Mode="Cyclic" UOName="jinvariant.i"/>

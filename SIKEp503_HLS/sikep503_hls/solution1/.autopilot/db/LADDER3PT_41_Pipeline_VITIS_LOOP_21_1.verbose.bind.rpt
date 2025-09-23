@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_41_Pipeline_VITIS_LOOP_21_1'
 ================================================================
-* Date:           Wed Jul 30 16:58:40 2025
+* Date:           Wed Sep  3 15:15:06 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -84,22 +84,22 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.80>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i_266 = alloca i32 1" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 4 'alloca' 'i_266' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.38ns)   --->   "%store_ln19 = store i4 0, i4 %i_266" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 5 'store' 'store_ln19' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i_278 = alloca i32 1" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 4 'alloca' 'i_278' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.38ns)   --->   "%store_ln19 = store i4 0, i4 %i_278" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 5 'store' 'store_ln19' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i139"   --->   Operation 6 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i = load i4 %i_266" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 7 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i = load i4 %i_278" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 7 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.70ns)   --->   "%icmp_ln21 = icmp_eq  i4 %i, i4 8" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 8 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%add_ln21 = add i4 %i, i4 1" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 9 'add' 'add_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln21 = br i1 %icmp_ln21, void %for.inc.i139.split, void %for.inc.preheader.exitStub" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 10 'br' 'br_ln21' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 11 'specpipeline' 'specpipeline_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_82" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 11 'specpipeline' 'specpipeline_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%speclooptripcount_ln19 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 12 'speclooptripcount' 'speclooptripcount_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 13 'specloopname' 'specloopname_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 13 'specloopname' 'specloopname_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln22 = trunc i4 %i" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 14 'trunc' 'trunc_ln22' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln22" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 15 'bitconcatenate' 'zext_ln' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln22 = zext i4 %zext_ln" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 16 'zext' 'zext_ln22' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%R_Z_addr = getelementptr i64 %R_Z, i64 0, i64 %zext_ln22" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 17 'getelementptr' 'R_Z_addr' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln22 = store i64 0, i4 %R_Z_addr" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 18 'store' 'store_ln22' <Predicate = (!icmp_ln21)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 19 [1/1] (0.38ns)   --->   "%store_ln19 = store i4 %add_ln21, i4 %i_266" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 19 'store' 'store_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.38>
+ST_1 : Operation 19 [1/1] (0.38ns)   --->   "%store_ln19 = store i4 %add_ln21, i4 %i_278" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 19 'store' 'store_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.38>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln21 = br void %for.inc.i139" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 20 'br' 'br_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 21 'ret' 'ret_ln0' <Predicate = (icmp_ln21)> <Delay = 0.38>
 
@@ -122,7 +122,7 @@ Port [ R_Z]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern
 
 <LifeTime>
 <method=bitvector/>
-i_266                  (alloca           ) [ 01]
+i_278                  (alloca           ) [ 01]
 store_ln19             (store            ) [ 00]
 br_ln0                 (br               ) [ 00]
 i                      (load             ) [ 00]
@@ -223,7 +223,7 @@ ret_ln0                (ret              ) [ 00]
 <pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_82"/></StgValue>
 </bind>
 </comp>
 
@@ -259,7 +259,7 @@ ret_ln0                (ret              ) [ 00]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_24"/></StgValue>
+<StgValue><ssdm name="empty_12"/></StgValue>
 </bind>
 </comp>
 
@@ -290,14 +290,14 @@ ret_ln0                (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="32" class="1004" name="i_266_fu_32">
+<comp id="32" class="1004" name="i_278_fu_32">
 <pin_list>
 <pin id="33" dir="0" index="0" bw="1" slack="0"/>
 <pin id="34" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="i_266/1 "/>
+<opset="i_278/1 "/>
 </bind>
 </comp>
 
@@ -421,13 +421,13 @@ ret_ln0                (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="92" class="1005" name="i_266_reg_92">
+<comp id="92" class="1005" name="i_278_reg_92">
 <pin_list>
 <pin id="93" dir="0" index="0" bw="4" slack="0"/>
 <pin id="94" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_266 "/>
+<opset="i_278 "/>
 </bind>
 </comp>
 
@@ -528,7 +528,7 @@ N/A
 +------------+--------+
 |            |   FF   |
 +------------+--------+
-|i_266_reg_92|    4   |
+|i_278_reg_92|    4   |
 +------------+--------+
 |    Total   |    4   |
 +------------+--------+

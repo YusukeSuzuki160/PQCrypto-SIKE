@@ -1,1 +1,1 @@
-/usr/bin/clang++-14 -O3 -DNDEBUG CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o -o mp_test_program 
+/home/meltpoint/.pyenv/shims/c++ CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o -o mp_test_program 

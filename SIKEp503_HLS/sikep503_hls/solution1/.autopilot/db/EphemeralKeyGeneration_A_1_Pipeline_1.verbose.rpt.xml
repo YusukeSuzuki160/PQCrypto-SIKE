@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_1'" level="0">
-<item name = "Date">Wed Jul 30 17:34:56 2025
+<item name = "Date">Tue Sep 23 15:46:02 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -48,7 +48,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 25, -</column>
+<column name="Expression">-, -, 0, 34, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
@@ -80,22 +80,23 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_415_fu_56_p2">+, 0, 0, 12, 5, 1</column>
-<column name="exitcond26434_fu_50_p2">icmp, 0, 0, 13, 5, 6</column>
+<column name="empty_403_fu_88_p2">+, 0, 0, 12, 5, 1</column>
+<column name="exitcond26434_fu_82_p2">icmp, 0, 0, 13, 5, 6</column>
+<column name="icmp_fu_114_p2">icmp, 0, 0, 9, 2, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_p_load">9, 2, 5, 10</column>
-<column name="empty_fu_24">9, 2, 5, 10</column>
+<column name="empty_fu_42">9, 2, 5, 10</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="empty_fu_24">5, 0, 5, 0</column>
+<column name="empty_fu_42">5, 0, 5, 0</column>
 </table>
 </item>
 </section>
@@ -111,7 +112,11 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_1, return value</column>
-<column name="A24plus_address0">out, 4, ap_memory, A24plus, array</column>
+<column name="A24plus_2_address0">out, 3, ap_memory, A24plus_2, array</column>
+<column name="A24plus_2_ce0">out, 1, ap_memory, A24plus_2, array</column>
+<column name="A24plus_2_we0">out, 1, ap_memory, A24plus_2, array</column>
+<column name="A24plus_2_d0">out, 64, ap_memory, A24plus_2, array</column>
+<column name="A24plus_address0">out, 3, ap_memory, A24plus, array</column>
 <column name="A24plus_ce0">out, 1, ap_memory, A24plus, array</column>
 <column name="A24plus_we0">out, 1, ap_memory, A24plus, array</column>
 <column name="A24plus_d0">out, 64, ap_memory, A24plus, array</column>

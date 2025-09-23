@@ -13,15 +13,15 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 855
+set cdfgNum 684
 set C_modelName {fpinv503_chain_mont_Pipeline_VITIS_LOOP_13_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict a { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict tt { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ a int 64 regular {array 8 { 1 3 } 1 1 }  }
-	{ tt int 64 regular {array 8 { 0 3 } 0 1 }  }
+	{ a int 64 regular {array 8 { 1 } 1 1 }  }
+	{ tt int 64 regular {array 8 { 0 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]

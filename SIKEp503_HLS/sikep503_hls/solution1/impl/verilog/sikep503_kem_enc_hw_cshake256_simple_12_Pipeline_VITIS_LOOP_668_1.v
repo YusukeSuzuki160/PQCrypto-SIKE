@@ -13,65 +13,22 @@ module sikep503_kem_enc_hw_cshake256_simple_12_Pipeline_VITIS_LOOP_668_1 (
         ap_done,
         ap_idle,
         ap_ready,
-        m_axi_gmem_0_AWVALID,
-        m_axi_gmem_0_AWREADY,
-        m_axi_gmem_0_AWADDR,
-        m_axi_gmem_0_AWID,
-        m_axi_gmem_0_AWLEN,
-        m_axi_gmem_0_AWSIZE,
-        m_axi_gmem_0_AWBURST,
-        m_axi_gmem_0_AWLOCK,
-        m_axi_gmem_0_AWCACHE,
-        m_axi_gmem_0_AWPROT,
-        m_axi_gmem_0_AWQOS,
-        m_axi_gmem_0_AWREGION,
-        m_axi_gmem_0_AWUSER,
-        m_axi_gmem_0_WVALID,
-        m_axi_gmem_0_WREADY,
-        m_axi_gmem_0_WDATA,
-        m_axi_gmem_0_WSTRB,
-        m_axi_gmem_0_WLAST,
-        m_axi_gmem_0_WID,
-        m_axi_gmem_0_WUSER,
-        m_axi_gmem_0_ARVALID,
-        m_axi_gmem_0_ARREADY,
-        m_axi_gmem_0_ARADDR,
-        m_axi_gmem_0_ARID,
-        m_axi_gmem_0_ARLEN,
-        m_axi_gmem_0_ARSIZE,
-        m_axi_gmem_0_ARBURST,
-        m_axi_gmem_0_ARLOCK,
-        m_axi_gmem_0_ARCACHE,
-        m_axi_gmem_0_ARPROT,
-        m_axi_gmem_0_ARQOS,
-        m_axi_gmem_0_ARREGION,
-        m_axi_gmem_0_ARUSER,
-        m_axi_gmem_0_RVALID,
-        m_axi_gmem_0_RREADY,
-        m_axi_gmem_0_RDATA,
-        m_axi_gmem_0_RLAST,
-        m_axi_gmem_0_RID,
-        m_axi_gmem_0_RFIFONUM,
-        m_axi_gmem_0_RUSER,
-        m_axi_gmem_0_RRESP,
-        m_axi_gmem_0_BVALID,
-        m_axi_gmem_0_BREADY,
-        m_axi_gmem_0_BRESP,
-        m_axi_gmem_0_BID,
-        m_axi_gmem_0_BUSER,
-        output_r,
         t_address0,
         t_ce0,
         t_q0,
-        t_66_address0,
-        t_66_ce0,
-        t_66_q0,
-        t_67_address0,
-        t_67_ce0,
-        t_67_q0,
-        t_68_address0,
-        t_68_ce0,
-        t_68_q0
+        t_74_address0,
+        t_74_ce0,
+        t_74_q0,
+        t_75_address0,
+        t_75_ce0,
+        t_75_q0,
+        t_76_address0,
+        t_76_ce0,
+        t_76_q0,
+        output_r_address0,
+        output_r_ce0,
+        output_r_we0,
+        output_r_d0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -82,122 +39,73 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output   m_axi_gmem_0_AWVALID;
-input   m_axi_gmem_0_AWREADY;
-output  [63:0] m_axi_gmem_0_AWADDR;
-output  [0:0] m_axi_gmem_0_AWID;
-output  [31:0] m_axi_gmem_0_AWLEN;
-output  [2:0] m_axi_gmem_0_AWSIZE;
-output  [1:0] m_axi_gmem_0_AWBURST;
-output  [1:0] m_axi_gmem_0_AWLOCK;
-output  [3:0] m_axi_gmem_0_AWCACHE;
-output  [2:0] m_axi_gmem_0_AWPROT;
-output  [3:0] m_axi_gmem_0_AWQOS;
-output  [3:0] m_axi_gmem_0_AWREGION;
-output  [0:0] m_axi_gmem_0_AWUSER;
-output   m_axi_gmem_0_WVALID;
-input   m_axi_gmem_0_WREADY;
-output  [7:0] m_axi_gmem_0_WDATA;
-output  [0:0] m_axi_gmem_0_WSTRB;
-output   m_axi_gmem_0_WLAST;
-output  [0:0] m_axi_gmem_0_WID;
-output  [0:0] m_axi_gmem_0_WUSER;
-output   m_axi_gmem_0_ARVALID;
-input   m_axi_gmem_0_ARREADY;
-output  [63:0] m_axi_gmem_0_ARADDR;
-output  [0:0] m_axi_gmem_0_ARID;
-output  [31:0] m_axi_gmem_0_ARLEN;
-output  [2:0] m_axi_gmem_0_ARSIZE;
-output  [1:0] m_axi_gmem_0_ARBURST;
-output  [1:0] m_axi_gmem_0_ARLOCK;
-output  [3:0] m_axi_gmem_0_ARCACHE;
-output  [2:0] m_axi_gmem_0_ARPROT;
-output  [3:0] m_axi_gmem_0_ARQOS;
-output  [3:0] m_axi_gmem_0_ARREGION;
-output  [0:0] m_axi_gmem_0_ARUSER;
-input   m_axi_gmem_0_RVALID;
-output   m_axi_gmem_0_RREADY;
-input  [7:0] m_axi_gmem_0_RDATA;
-input   m_axi_gmem_0_RLAST;
-input  [0:0] m_axi_gmem_0_RID;
-input  [10:0] m_axi_gmem_0_RFIFONUM;
-input  [0:0] m_axi_gmem_0_RUSER;
-input  [1:0] m_axi_gmem_0_RRESP;
-input   m_axi_gmem_0_BVALID;
-output   m_axi_gmem_0_BREADY;
-input  [1:0] m_axi_gmem_0_BRESP;
-input  [0:0] m_axi_gmem_0_BID;
-input  [0:0] m_axi_gmem_0_BUSER;
-input  [63:0] output_r;
 output  [5:0] t_address0;
 output   t_ce0;
 input  [7:0] t_q0;
-output  [5:0] t_66_address0;
-output   t_66_ce0;
-input  [7:0] t_66_q0;
-output  [5:0] t_67_address0;
-output   t_67_ce0;
-input  [7:0] t_67_q0;
-output  [5:0] t_68_address0;
-output   t_68_ce0;
-input  [7:0] t_68_q0;
+output  [5:0] t_74_address0;
+output   t_74_ce0;
+input  [7:0] t_74_q0;
+output  [5:0] t_75_address0;
+output   t_75_ce0;
+input  [7:0] t_75_q0;
+output  [5:0] t_76_address0;
+output   t_76_ce0;
+input  [7:0] t_76_q0;
+output  [4:0] output_r_address0;
+output   output_r_ce0;
+output   output_r_we0;
+output  [7:0] output_r_d0;
 
 reg ap_idle;
-reg m_axi_gmem_0_WVALID;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
 wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
-reg    ap_enable_reg_pp0_iter2;
 reg    ap_idle_pp0;
-reg    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln668_fu_150_p2;
+wire    ap_block_pp0_stage0_subdone;
+wire   [0:0] icmp_ln668_fu_131_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg    gmem_blk_n_W;
-wire    ap_block_pp0_stage0_grp1;
-reg    ap_block_pp0_stage0_11001;
-reg    ap_block_pp0_stage0_11001_grp1;
-wire   [1:0] trunc_ln668_fu_168_p1;
-reg   [1:0] trunc_ln668_reg_234;
-wire   [7:0] tmp_fu_195_p11;
-reg   [7:0] tmp_reg_259;
-wire   [63:0] zext_ln640_fu_182_p1;
+reg   [4:0] i_reg_205;
+wire    ap_block_pp0_stage0_11001;
+wire   [63:0] zext_ln640_fu_153_p1;
 wire    ap_block_pp0_stage0;
-wire    ap_block_pp0_stage0_01001_grp1;
-reg   [4:0] i_fu_72;
-wire   [4:0] add_ln668_fu_156_p2;
+wire   [63:0] zext_ln668_fu_166_p1;
+reg   [4:0] i_148_fu_54;
+wire   [4:0] add_ln668_fu_137_p2;
 wire    ap_loop_init;
-reg   [4:0] ap_sig_allocacmp_i_363;
+reg   [4:0] ap_sig_allocacmp_i;
 reg    t_ce0_local;
-reg    t_66_ce0_local;
-reg    t_67_ce0_local;
-reg    t_68_ce0_local;
-wire   [1:0] lshr_ln_fu_172_p4;
-wire   [7:0] tmp_fu_195_p9;
+reg    t_74_ce0_local;
+reg    t_75_ce0_local;
+reg    t_76_ce0_local;
+reg    output_r_we0_local;
+wire   [7:0] tmp_fu_173_p11;
+reg    output_r_ce0_local;
+wire   [2:0] lshr_ln_fu_143_p4;
+wire   [7:0] tmp_fu_173_p9;
+wire   [1:0] tmp_fu_173_p10;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
-reg    ap_loop_exit_ready_pp0_iter1_reg;
 reg   [0:0] ap_NS_fsm;
 wire    ap_enable_pp0;
 wire    ap_start_int;
 wire    ap_ready_sig;
 wire    ap_done_sig;
-wire   [1:0] tmp_fu_195_p1;
-wire   [1:0] tmp_fu_195_p3;
-wire  signed [1:0] tmp_fu_195_p5;
-wire  signed [1:0] tmp_fu_195_p7;
+wire   [1:0] tmp_fu_173_p1;
+wire   [1:0] tmp_fu_173_p3;
+wire  signed [1:0] tmp_fu_173_p5;
+wire  signed [1:0] tmp_fu_173_p7;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 ap_enable_reg_pp0_iter2 = 1'b0;
-#0 i_fu_72 = 5'd0;
+#0 i_148_fu_54 = 5'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -215,14 +123,14 @@ end
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_9_2_8_1_1_U2899(
+sparsemux_9_2_8_1_1_U7090(
     .din0(t_q0),
-    .din1(t_66_q0),
-    .din2(t_67_q0),
-    .din3(t_68_q0),
-    .def(tmp_fu_195_p9),
-    .sel(trunc_ln668_reg_234),
-    .dout(tmp_fu_195_p11)
+    .din1(t_74_q0),
+    .din2(t_75_q0),
+    .din3(t_76_q0),
+    .def(tmp_fu_173_p9),
+    .sel(tmp_fu_173_p10),
+    .dout(tmp_fu_173_p11)
 );
 
 sikep503_kem_enc_hw_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
@@ -254,7 +162,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue_int == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        end else if (((ap_loop_exit_ready == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -273,35 +181,23 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        ap_enable_reg_pp0_iter2 <= 1'b0;
-    end else begin
-        if ((1'b0 == ap_block_pp0_stage0_subdone)) begin
-            ap_enable_reg_pp0_iter2 <= ap_enable_reg_pp0_iter1;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln668_fu_150_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_fu_72 <= add_ln668_fu_156_p2;
+        if (((icmp_ln668_fu_131_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_148_fu_54 <= add_ln668_fu_137_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_72 <= 5'd0;
+            i_148_fu_54 <= 5'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-        tmp_reg_259 <= tmp_fu_195_p11;
-        trunc_ln668_reg_234 <= trunc_ln668_fu_168_p1;
+        i_reg_205 <= ap_sig_allocacmp_i;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln668_fu_150_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln668_fu_131_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -309,7 +205,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((ap_loop_exit_ready == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_done_int = 1'b1;
     end else begin
         ap_done_int = ap_done_reg;
@@ -325,7 +221,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter2 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b0))) begin
+    if (((ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b0))) begin
         ap_idle_pp0 = 1'b1;
     end else begin
         ap_idle_pp0 = 1'b0;
@@ -342,49 +238,49 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_363 = 5'd0;
+        ap_sig_allocacmp_i = 5'd0;
     end else begin
-        ap_sig_allocacmp_i_363 = i_fu_72;
+        ap_sig_allocacmp_i = i_148_fu_54;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
-        gmem_blk_n_W = m_axi_gmem_0_WREADY;
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        output_r_ce0_local = 1'b1;
     end else begin
-        gmem_blk_n_W = 1'b1;
+        output_r_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
-        m_axi_gmem_0_WVALID = 1'b1;
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        output_r_we0_local = 1'b1;
     end else begin
-        m_axi_gmem_0_WVALID = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        t_66_ce0_local = 1'b1;
-    end else begin
-        t_66_ce0_local = 1'b0;
+        output_r_we0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        t_67_ce0_local = 1'b1;
+        t_74_ce0_local = 1'b1;
     end else begin
-        t_67_ce0_local = 1'b0;
+        t_74_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        t_68_ce0_local = 1'b1;
+        t_75_ce0_local = 1'b1;
     end else begin
-        t_68_ce0_local = 1'b0;
+        t_75_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        t_76_ce0_local = 1'b1;
+    end else begin
+        t_76_ce0_local = 1'b0;
     end
 end
 
@@ -407,27 +303,15 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln668_fu_156_p2 = (ap_sig_allocacmp_i_363 + 5'd1);
+assign add_ln668_fu_137_p2 = (ap_sig_allocacmp_i + 5'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
 assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
-assign ap_block_pp0_stage0_01001_grp1 = ~(1'b1 == 1'b1);
+assign ap_block_pp0_stage0_11001 = ~(1'b1 == 1'b1);
 
-always @ (*) begin
-    ap_block_pp0_stage0_11001 = ((m_axi_gmem_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1));
-end
-
-always @ (*) begin
-    ap_block_pp0_stage0_11001_grp1 = ((m_axi_gmem_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1));
-end
-
-assign ap_block_pp0_stage0_grp1 = ~(1'b1 == 1'b1);
-
-always @ (*) begin
-    ap_block_pp0_stage0_subdone = ((m_axi_gmem_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1));
-end
+assign ap_block_pp0_stage0_subdone = ~(1'b1 == 1'b1);
 
 assign ap_done = ap_done_sig;
 
@@ -439,92 +323,40 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln668_fu_150_p2 = ((ap_sig_allocacmp_i_363 == 5'd16) ? 1'b1 : 1'b0);
+assign icmp_ln668_fu_131_p2 = ((ap_sig_allocacmp_i == 5'd24) ? 1'b1 : 1'b0);
 
-assign lshr_ln_fu_172_p4 = {{ap_sig_allocacmp_i_363[3:2]}};
+assign lshr_ln_fu_143_p4 = {{ap_sig_allocacmp_i[4:2]}};
 
-assign m_axi_gmem_0_ARADDR = 64'd0;
+assign output_r_address0 = zext_ln668_fu_166_p1;
 
-assign m_axi_gmem_0_ARBURST = 2'd0;
+assign output_r_ce0 = output_r_ce0_local;
 
-assign m_axi_gmem_0_ARCACHE = 4'd0;
+assign output_r_d0 = tmp_fu_173_p11;
 
-assign m_axi_gmem_0_ARID = 1'd0;
+assign output_r_we0 = output_r_we0_local;
 
-assign m_axi_gmem_0_ARLEN = 32'd0;
+assign t_74_address0 = zext_ln640_fu_153_p1;
 
-assign m_axi_gmem_0_ARLOCK = 2'd0;
+assign t_74_ce0 = t_74_ce0_local;
 
-assign m_axi_gmem_0_ARPROT = 3'd0;
+assign t_75_address0 = zext_ln640_fu_153_p1;
 
-assign m_axi_gmem_0_ARQOS = 4'd0;
+assign t_75_ce0 = t_75_ce0_local;
 
-assign m_axi_gmem_0_ARREGION = 4'd0;
+assign t_76_address0 = zext_ln640_fu_153_p1;
 
-assign m_axi_gmem_0_ARSIZE = 3'd0;
+assign t_76_ce0 = t_76_ce0_local;
 
-assign m_axi_gmem_0_ARUSER = 1'd0;
-
-assign m_axi_gmem_0_ARVALID = 1'b0;
-
-assign m_axi_gmem_0_AWADDR = 64'd0;
-
-assign m_axi_gmem_0_AWBURST = 2'd0;
-
-assign m_axi_gmem_0_AWCACHE = 4'd0;
-
-assign m_axi_gmem_0_AWID = 1'd0;
-
-assign m_axi_gmem_0_AWLEN = 32'd0;
-
-assign m_axi_gmem_0_AWLOCK = 2'd0;
-
-assign m_axi_gmem_0_AWPROT = 3'd0;
-
-assign m_axi_gmem_0_AWQOS = 4'd0;
-
-assign m_axi_gmem_0_AWREGION = 4'd0;
-
-assign m_axi_gmem_0_AWSIZE = 3'd0;
-
-assign m_axi_gmem_0_AWUSER = 1'd0;
-
-assign m_axi_gmem_0_AWVALID = 1'b0;
-
-assign m_axi_gmem_0_BREADY = 1'b0;
-
-assign m_axi_gmem_0_RREADY = 1'b0;
-
-assign m_axi_gmem_0_WDATA = tmp_reg_259;
-
-assign m_axi_gmem_0_WID = 1'd0;
-
-assign m_axi_gmem_0_WLAST = 1'b0;
-
-assign m_axi_gmem_0_WSTRB = 1'd1;
-
-assign m_axi_gmem_0_WUSER = 1'd0;
-
-assign t_66_address0 = zext_ln640_fu_182_p1;
-
-assign t_66_ce0 = t_66_ce0_local;
-
-assign t_67_address0 = zext_ln640_fu_182_p1;
-
-assign t_67_ce0 = t_67_ce0_local;
-
-assign t_68_address0 = zext_ln640_fu_182_p1;
-
-assign t_68_ce0 = t_68_ce0_local;
-
-assign t_address0 = zext_ln640_fu_182_p1;
+assign t_address0 = zext_ln640_fu_153_p1;
 
 assign t_ce0 = t_ce0_local;
 
-assign tmp_fu_195_p9 = 'bx;
+assign tmp_fu_173_p10 = i_reg_205[1:0];
 
-assign trunc_ln668_fu_168_p1 = ap_sig_allocacmp_i_363[1:0];
+assign tmp_fu_173_p9 = 'bx;
 
-assign zext_ln640_fu_182_p1 = lshr_ln_fu_172_p4;
+assign zext_ln640_fu_153_p1 = lshr_ln_fu_143_p4;
+
+assign zext_ln668_fu_166_p1 = i_reg_205;
 
 endmodule //sikep503_kem_enc_hw_cshake256_simple_12_Pipeline_VITIS_LOOP_668_1

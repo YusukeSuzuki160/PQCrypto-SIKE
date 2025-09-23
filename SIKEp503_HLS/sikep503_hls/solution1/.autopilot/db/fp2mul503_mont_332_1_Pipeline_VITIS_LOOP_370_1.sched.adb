@@ -506,7 +506,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>i_263</name>
+						<name>i_267</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>370</lineNumber>
@@ -1286,7 +1286,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>c_addr_41</name>
+						<name>c_addr_15</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>373</lineNumber>

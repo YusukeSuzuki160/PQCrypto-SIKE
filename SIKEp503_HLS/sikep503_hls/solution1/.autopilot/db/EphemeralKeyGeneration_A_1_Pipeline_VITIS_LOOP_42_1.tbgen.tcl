@@ -13,13 +13,13 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 855
+set cdfgNum 684
 set C_modelName {EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_42_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict t_i { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict t_84 { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ t_i int 64 regular {array 16 { 1 1 } 1 1 }  }
+	{ t_84 int 64 regular {array 16 { 1 } 1 1 }  }
 	{ PublicKeyA int 64 regular  }
 	{ gmem int 8 regular {axi_master 1}  }
 }
@@ -27,11 +27,11 @@ set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "t_i", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
+	{ "Name" : "t_84", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "PublicKeyA", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 8, "direction" : "WRITEONLY", "bitSlice":[ {"cElement": [{"cName": "ct","offset": { "type": "dynamic","port_name": "ct","bundle": "control"},"direction": "READWRITE"},{"cName": "pk","offset": { "type": "dynamic","port_name": "pk","bundle": "control"},"direction": "READONLY"},{"cName": "ss","offset": { "type": "dynamic","port_name": "ss","bundle": "control"},"direction": "WRITEONLY"}]}]} ]}
 # RTL Port declarations: 
-set portNum 59
+set portNum 56
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -85,12 +85,9 @@ set portList {
 	{ m_axi_gmem_0_BRESP sc_in sc_lv 2 signal 2 } 
 	{ m_axi_gmem_0_BID sc_in sc_lv 1 signal 2 } 
 	{ m_axi_gmem_0_BUSER sc_in sc_lv 1 signal 2 } 
-	{ t_i_address0 sc_out sc_lv 4 signal 0 } 
-	{ t_i_ce0 sc_out sc_logic 1 signal 0 } 
-	{ t_i_q0 sc_in sc_lv 64 signal 0 } 
-	{ t_i_address1 sc_out sc_lv 4 signal 0 } 
-	{ t_i_ce1 sc_out sc_logic 1 signal 0 } 
-	{ t_i_q1 sc_in sc_lv 64 signal 0 } 
+	{ t_84_address0 sc_out sc_lv 4 signal 0 } 
+	{ t_84_ce0 sc_out sc_logic 1 signal 0 } 
+	{ t_84_q0 sc_in sc_lv 64 signal 0 } 
 	{ PublicKeyA sc_in sc_lv 64 signal 1 } 
 }
 set NewPortList {[ 
@@ -146,12 +143,9 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_0_BRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem", "role": "0_BRESP" }} , 
  	{ "name": "m_axi_gmem_0_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "0_BID" }} , 
  	{ "name": "m_axi_gmem_0_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "0_BUSER" }} , 
- 	{ "name": "t_i_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_i", "role": "address0" }} , 
- 	{ "name": "t_i_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t_i", "role": "ce0" }} , 
- 	{ "name": "t_i_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "t_i", "role": "q0" }} , 
- 	{ "name": "t_i_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_i", "role": "address1" }} , 
- 	{ "name": "t_i_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t_i", "role": "ce1" }} , 
- 	{ "name": "t_i_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "t_i", "role": "q1" }} , 
+ 	{ "name": "t_84_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t_84", "role": "address0" }} , 
+ 	{ "name": "t_84_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t_84", "role": "ce0" }} , 
+ 	{ "name": "t_84_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "t_84", "role": "q0" }} , 
  	{ "name": "PublicKeyA", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "PublicKeyA", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
@@ -170,7 +164,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "t_i", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "t_84", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "PublicKeyA", "Type" : "None", "Direction" : "I"},
 			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "O",
 				"BlockSignal" : [
@@ -185,7 +179,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1 {
-		t_i {Type I LastRead 1 FirstWrite -1}
+		t_84 {Type I LastRead 1 FirstWrite -1}
 		PublicKeyA {Type I LastRead 0 FirstWrite -1}
 		gmem {Type O LastRead 4 FirstWrite 2}}}
 
@@ -201,7 +195,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	t_i { ap_memory {  { t_i_address0 mem_address 1 4 }  { t_i_ce0 mem_ce 1 1 }  { t_i_q0 mem_dout 0 64 }  { t_i_address1 MemPortADDR2 1 4 }  { t_i_ce1 MemPortCE2 1 1 }  { t_i_q1 MemPortDOUT2 0 64 } } }
+	t_84 { ap_memory {  { t_84_address0 mem_address 1 4 }  { t_84_ce0 mem_ce 1 1 }  { t_84_q0 mem_dout 0 64 } } }
 	PublicKeyA { ap_none {  { PublicKeyA in_data 0 64 } } }
 	 { m_axi {  { m_axi_gmem_0_AWVALID VALID 1 1 }  { m_axi_gmem_0_AWREADY READY 0 1 }  { m_axi_gmem_0_AWADDR ADDR 1 64 }  { m_axi_gmem_0_AWID ID 1 1 }  { m_axi_gmem_0_AWLEN SIZE 1 32 }  { m_axi_gmem_0_AWSIZE BURST 1 3 }  { m_axi_gmem_0_AWBURST LOCK 1 2 }  { m_axi_gmem_0_AWLOCK CACHE 1 2 }  { m_axi_gmem_0_AWCACHE PROT 1 4 }  { m_axi_gmem_0_AWPROT QOS 1 3 }  { m_axi_gmem_0_AWQOS REGION 1 4 }  { m_axi_gmem_0_AWREGION USER 1 4 }  { m_axi_gmem_0_AWUSER DATA 1 1 }  { m_axi_gmem_0_WVALID VALID 1 1 }  { m_axi_gmem_0_WREADY READY 0 1 }  { m_axi_gmem_0_WDATA FIFONUM 1 8 }  { m_axi_gmem_0_WSTRB STRB 1 1 }  { m_axi_gmem_0_WLAST LAST 1 1 }  { m_axi_gmem_0_WID ID 1 1 }  { m_axi_gmem_0_WUSER DATA 1 1 }  { m_axi_gmem_0_ARVALID VALID 1 1 }  { m_axi_gmem_0_ARREADY READY 0 1 }  { m_axi_gmem_0_ARADDR ADDR 1 64 }  { m_axi_gmem_0_ARID ID 1 1 }  { m_axi_gmem_0_ARLEN SIZE 1 32 }  { m_axi_gmem_0_ARSIZE BURST 1 3 }  { m_axi_gmem_0_ARBURST LOCK 1 2 }  { m_axi_gmem_0_ARLOCK CACHE 1 2 }  { m_axi_gmem_0_ARCACHE PROT 1 4 }  { m_axi_gmem_0_ARPROT QOS 1 3 }  { m_axi_gmem_0_ARQOS REGION 1 4 }  { m_axi_gmem_0_ARREGION USER 1 4 }  { m_axi_gmem_0_ARUSER DATA 1 1 }  { m_axi_gmem_0_RVALID VALID 0 1 }  { m_axi_gmem_0_RREADY READY 1 1 }  { m_axi_gmem_0_RDATA FIFONUM 0 8 }  { m_axi_gmem_0_RLAST LAST 0 1 }  { m_axi_gmem_0_RID ID 0 1 }  { m_axi_gmem_0_RFIFONUM LEN 0 11 }  { m_axi_gmem_0_RUSER DATA 0 1 }  { m_axi_gmem_0_RRESP RESP 0 2 }  { m_axi_gmem_0_BVALID VALID 0 1 }  { m_axi_gmem_0_BREADY READY 1 1 }  { m_axi_gmem_0_BRESP RESP 0 2 }  { m_axi_gmem_0_BID ID 0 1 }  { m_axi_gmem_0_BUSER DATA 0 1 } } }
 }

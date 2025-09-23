@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_18_Pipeline_VITIS_LOOP_152_1'
 ================================================================
-* Date:           Wed Jul 30 17:28:04 2025
+* Date:           Wed Sep  3 14:26:19 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  3.722 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  3.888 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -41,7 +41,7 @@
         |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_152_1  |       16|       16|         2|          1|          1|    16|       yes|
+        |- VITIS_LOOP_152_1  |       16|       16|         1|          1|          1|    16|       yes|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
@@ -67,64 +67,90 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 2
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 2
+* Number of FSM states : 1
 * Pipeline : 1
-  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 2 
-2 --> 
+1 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.48>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_309 = alloca i32 1" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 5 'alloca' 'i_309' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 0, i5 %i_309" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 6 'store' 'store_ln150' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 7 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.inc.i.i79"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%borrow = phi i1 %borrowReg, void %for.inc.i.i79.split, i1 0, void %newFuncRoot"   --->   Operation 8 'phi' 'borrow' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = load i5 %i_309" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 9 'load' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln152 = icmp_eq  i5 %i, i5 16" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 10 'icmp' 'icmp_ln152' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln152 = add i5 %i, i5 1" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 11 'add' 'add_ln152' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln152 = br i1 %icmp_ln152, void %for.inc.i.i79.split, void %_ZL10mp_subfastPKmS0_Pm.exit.exitStub" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 12 'br' 'br_ln152' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln152 = zext i5 %i" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 13 'zext' 'zext_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tt1_addr = getelementptr i64 %tt1, i64 0, i64 %zext_ln152" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 14 'getelementptr' 'tt1_addr' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_1 : Operation 15 [2/2] (0.71ns)   --->   "%tt1_load = load i4 %tt1_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 15 'load' 'tt1_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tt2_addr = getelementptr i64 %tt2, i64 0, i64 %zext_ln152" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 16 'getelementptr' 'tt2_addr' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_1 : Operation 17 [2/2] (0.71ns)   --->   "%tt2_load = load i4 %tt2_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 17 'load' 'tt2_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 %add_ln152, i5 %i_309" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 18 'store' 'store_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.38>
-ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln155 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %borrow_out, i1 %borrow" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 41 'write' 'write_ln155' <Predicate = (icmp_ln152)> <Delay = 0.00>
-ST_1 : Operation 42 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 42 'ret' 'ret_ln0' <Predicate = (icmp_ln152)> <Delay = 0.38>
-
-State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln150 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 19 'specpipeline' 'specpipeline_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%speclooptripcount_ln150 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 20 'speclooptripcount' 'speclooptripcount_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln152 = specloopname void @_ssdm_op_SpecLoopName, void @empty_37" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 21 'specloopname' 'specloopname_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 22 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt1_load = load i4 %tt1_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 22 'load' 'tt1_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 23 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt2_load = load i4 %tt2_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 23 'load' 'tt2_load' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 24 [1/1] (1.14ns)   --->   "%tempReg = sub i64 %tt1_load, i64 %tt2_load" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 24 'sub' 'tempReg' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105 = xor i64 %tt2_load, i64 %tt1_load" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 25 'xor' 'xor_ln105' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_112 = xor i64 %tt2_load, i64 %tempReg" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 26 'xor' 'xor_ln105_112' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%or_ln105 = or i64 %xor_ln105_112, i64 %xor_ln105" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 27 'or' 'or_ln105' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_113 = xor i64 %tt1_load, i64 %or_ln105" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 28 'xor' 'xor_ln105_113' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 29 [1/1] (0.28ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_113, i32 63" [src/config.h:98->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 29 'bitselect' 'tmp' <Predicate = (!icmp_ln152)> <Delay = 0.28>
-ST_2 : Operation 30 [1/1] (1.14ns)   --->   "%sub_ln95 = sub i64 0, i64 %tempReg" [src/config.h:95->src/config.h:100->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 30 'sub' 'sub_ln95' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%or_ln95 = or i64 %tempReg, i64 %sub_ln95" [src/config.h:95->src/config.h:100->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 31 'or' 'or_ln95' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_203 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 32 'bitselect' 'tmp_203' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln155 = xor i1 %tmp_203, i1 1" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 33 'xor' 'xor_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%and_ln155 = and i1 %borrow, i1 %xor_ln155" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 34 'and' 'and_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg = or i1 %and_ln155, i1 %tmp" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 35 'or' 'borrowReg' <Predicate = (!icmp_ln152)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln155 = zext i1 %borrow" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 36 'zext' 'zext_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 37 [1/1] (1.14ns)   --->   "%sub_ln155 = sub i64 %tempReg, i64 %zext_ln155" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 37 'sub' 'sub_ln155' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%tt3_addr = getelementptr i64 %tt3, i64 0, i64 %zext_ln152" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 38 'getelementptr' 'tt3_addr' <Predicate = (!icmp_ln152)> <Delay = 0.00>
-ST_2 : Operation 39 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln155 = store i64 %sub_ln155, i4 %tt3_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 39 'store' 'store_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln152 = br void %for.inc.i.i79" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 40 'br' 'br_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 3.88>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i_324 = alloca i32 1" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 4 'alloca' 'i_324' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tt2_724_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_724"   --->   Operation 5 'read' 'tt2_724_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%tt2_723_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_723"   --->   Operation 6 'read' 'tt2_723_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tt2_722_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_722"   --->   Operation 7 'read' 'tt2_722_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tt2_721_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_721"   --->   Operation 8 'read' 'tt2_721_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%tt2_720_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_720"   --->   Operation 9 'read' 'tt2_720_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tt2_719_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_719"   --->   Operation 10 'read' 'tt2_719_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tt2_718_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_718"   --->   Operation 11 'read' 'tt2_718_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tt2_717_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_717"   --->   Operation 12 'read' 'tt2_717_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tt2_716_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_716"   --->   Operation 13 'read' 'tt2_716_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tt2_715_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_715"   --->   Operation 14 'read' 'tt2_715_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tt2_714_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_714"   --->   Operation 15 'read' 'tt2_714_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tt2_713_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_713"   --->   Operation 16 'read' 'tt2_713_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tt2_712_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_712"   --->   Operation 17 'read' 'tt2_712_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tt2_711_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_711"   --->   Operation 18 'read' 'tt2_711_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tt2_710_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_710"   --->   Operation 19 'read' 'tt2_710_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tt2_709_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt2_709"   --->   Operation 20 'read' 'tt2_709_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tt1_388_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_388"   --->   Operation 21 'read' 'tt1_388_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tt1_387_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_387"   --->   Operation 22 'read' 'tt1_387_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tt1_386_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_386"   --->   Operation 23 'read' 'tt1_386_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tt1_385_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_385"   --->   Operation 24 'read' 'tt1_385_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%tt1_384_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_384"   --->   Operation 25 'read' 'tt1_384_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tt1_383_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_383"   --->   Operation 26 'read' 'tt1_383_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tt1_382_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_382"   --->   Operation 27 'read' 'tt1_382_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tt1_381_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_381"   --->   Operation 28 'read' 'tt1_381_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%tt1_380_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_380"   --->   Operation 29 'read' 'tt1_380_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%tt1_379_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_379"   --->   Operation 30 'read' 'tt1_379_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%tt1_378_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_378"   --->   Operation 31 'read' 'tt1_378_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%tt1_377_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_377"   --->   Operation 32 'read' 'tt1_377_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%tt1_376_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_376"   --->   Operation 33 'read' 'tt1_376_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%tt1_375_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_375"   --->   Operation 34 'read' 'tt1_375_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tt1_374_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_374"   --->   Operation 35 'read' 'tt1_374_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%tt1_373_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tt1_373"   --->   Operation 36 'read' 'tt1_373_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 0, i5 %i_324" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 37 'store' 'store_ln150' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 38 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.inc.i.i53"   --->   Operation 38 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%borrow = phi i1 %borrowReg, void %for.inc.i.i53.split, i1 0, void %newFuncRoot"   --->   Operation 39 'phi' 'borrow' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%i = load i5 %i_324" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 40 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.70ns)   --->   "%icmp_ln152 = icmp_eq  i5 %i, i5 16" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 41 'icmp' 'icmp_ln152' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (0.70ns)   --->   "%add_ln152 = add i5 %i, i5 1" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 42 'add' 'add_ln152' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln152 = br i1 %icmp_ln152, void %for.inc.i.i53.split, void %_ZL10mp_subfastPKmS0_Pm.exit.exitStub" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 43 'br' 'br_ln152' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln152 = zext i5 %i" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 44 'zext' 'zext_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln152 = trunc i5 %i" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 45 'trunc' 'trunc_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%specpipeline_ln150 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_15" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 46 'specpipeline' 'specpipeline_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%speclooptripcount_ln150 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 47 'speclooptripcount' 'speclooptripcount_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln152 = specloopname void @_ssdm_op_SpecLoopName, void @empty_66" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 48 'specloopname' 'specloopname_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.49ns)   --->   "%x_assign = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.16i64.i64.i4, i4 0, i64 %tt1_373_read, i4 1, i64 %tt1_374_read, i4 2, i64 %tt1_375_read, i4 3, i64 %tt1_376_read, i4 4, i64 %tt1_377_read, i4 5, i64 %tt1_378_read, i4 6, i64 %tt1_379_read, i4 7, i64 %tt1_380_read, i4 8, i64 %tt1_381_read, i4 9, i64 %tt1_382_read, i4 10, i64 %tt1_383_read, i4 11, i64 %tt1_384_read, i4 12, i64 %tt1_385_read, i4 13, i64 %tt1_386_read, i4 14, i64 %tt1_387_read, i4 15, i64 %tt1_388_read, i64 0, i4 %trunc_ln152" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 49 'sparsemux' 'x_assign' <Predicate = (!icmp_ln152)> <Delay = 0.49> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 159 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.49ns)   --->   "%y_assign_s = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.16i64.i64.i4, i4 0, i64 %tt2_709_read, i4 1, i64 %tt2_710_read, i4 2, i64 %tt2_711_read, i4 3, i64 %tt2_712_read, i4 4, i64 %tt2_713_read, i4 5, i64 %tt2_714_read, i4 6, i64 %tt2_715_read, i4 7, i64 %tt2_716_read, i4 8, i64 %tt2_717_read, i4 9, i64 %tt2_718_read, i4 10, i64 %tt2_719_read, i4 11, i64 %tt2_720_read, i4 12, i64 %tt2_721_read, i4 13, i64 %tt2_722_read, i4 14, i64 %tt2_723_read, i4 15, i64 %tt2_724_read, i64 0, i4 %trunc_ln152" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 50 'sparsemux' 'y_assign_s' <Predicate = (!icmp_ln152)> <Delay = 0.49> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 159 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 51 [1/1] (1.14ns)   --->   "%tempReg = sub i64 %x_assign, i64 %y_assign_s" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 51 'sub' 'tempReg' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105 = xor i64 %y_assign_s, i64 %x_assign" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 52 'xor' 'xor_ln105' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_231 = xor i64 %tempReg, i64 %y_assign_s" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 53 'xor' 'xor_ln105_231' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%or_ln105 = or i64 %xor_ln105_231, i64 %xor_ln105" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 54 'or' 'or_ln105' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 55 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->   "%xor_ln105_232 = xor i64 %or_ln105, i64 %x_assign" [src/config.h:105->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 55 'xor' 'xor_ln105_232' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 56 [1/1] (0.28ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_232, i32 63" [src/config.h:98->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 56 'bitselect' 'tmp' <Predicate = (!icmp_ln152)> <Delay = 0.28>
+ST_1 : Operation 57 [1/1] (1.14ns)   --->   "%sub_ln95 = sub i64 0, i64 %tempReg" [src/config.h:95->src/config.h:100->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 57 'sub' 'sub_ln95' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 58 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%or_ln95 = or i64 %tempReg, i64 %sub_ln95" [src/config.h:95->src/config.h:100->src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 58 'or' 'or_ln95' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_919 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 59 'bitselect' 'tmp_919' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln155 = xor i1 %tmp_919, i1 1" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 60 'xor' 'xor_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%and_ln155 = and i1 %borrow, i1 %xor_ln155" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 61 'and' 'and_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 62 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg = or i1 %and_ln155, i1 %tmp" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 62 'or' 'borrowReg' <Predicate = (!icmp_ln152)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln155 = zext i1 %borrow" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 63 'zext' 'zext_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (1.14ns)   --->   "%sub_ln155 = sub i64 %tempReg, i64 %zext_ln155" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 64 'sub' 'sub_ln155' <Predicate = (!icmp_ln152)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%tt3_addr = getelementptr i64 %tt3, i64 0, i64 %zext_ln152" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 65 'getelementptr' 'tt3_addr' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln155 = store i64 %sub_ln155, i4 %tt3_addr" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 66 'store' 'store_ln155' <Predicate = (!icmp_ln152)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 67 [1/1] (0.38ns)   --->   "%store_ln150 = store i5 %add_ln152, i5 %i_324" [src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 67 'store' 'store_ln150' <Predicate = (!icmp_ln152)> <Delay = 0.38>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln152 = br void %for.inc.i.i53" [src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 68 'br' 'br_ln152' <Predicate = (!icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%write_ln155 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %borrow_out, i1 %borrow" [src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178]   --->   Operation 69 'write' 'write_ln155' <Predicate = (icmp_ln152)> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 70 'ret' 'ret_ln0' <Predicate = (icmp_ln152)> <Delay = 0.38>
 
 
 ============================================================
@@ -132,19 +158,14 @@ ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln152 = br void %for.inc.i.i79"
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 1.481ns
+ <State 1>: 3.888ns
 The critical path consists of the following:
-	'store' operation 0 bit ('store_ln150', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178) of constant 0 on local variable 'i', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178 [6]  (0.387 ns)
-	'load' operation 5 bit ('i', src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178) on local variable 'i', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178 [10]  (0.000 ns)
-	'add' operation 5 bit ('add_ln152', src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178) [12]  (0.707 ns)
-	'store' operation 0 bit ('store_ln150', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178) of variable 'add_ln152', src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178 on local variable 'i', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178 [39]  (0.387 ns)
-
- <State 2>: 3.722ns
-The critical path consists of the following:
-	'load' operation 64 bit ('x', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) on array 'tt1' [20]  (0.714 ns)
-	'sub' operation 64 bit ('tempReg', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) [23]  (1.147 ns)
-	'sub' operation 64 bit ('sub_ln155', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) [36]  (1.147 ns)
-	'store' operation 0 bit ('store_ln155', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) of variable 'sub_ln155', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178 on array 'tt3' [38]  (0.714 ns)
+	'store' operation 0 bit ('store_ln150', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178) of constant 0 on local variable 'i', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178 [68]  (0.387 ns)
+	'load' operation 5 bit ('i', src/fpx.cpp:152->src/fpx.cpp:164->src/fpx.cpp:178) on local variable 'i', src/fpx.cpp:150->src/fpx.cpp:164->src/fpx.cpp:178 [72]  (0.000 ns)
+	'sparsemux' operation 64 bit ('y', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) [83]  (0.493 ns)
+	'sub' operation 64 bit ('tempReg', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) [84]  (1.147 ns)
+	'sub' operation 64 bit ('sub_ln155', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) [97]  (1.147 ns)
+	'store' operation 0 bit ('store_ln155', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178) of variable 'sub_ln155', src/fpx.cpp:155->src/fpx.cpp:164->src/fpx.cpp:178 on array 'tt3' [99]  (0.714 ns)
 
 
 ============================================================
@@ -156,7 +177,6 @@ N/A
  - Input state : 
   - Chain level:
 	State 1
-	State 2
 
 
 ============================================================

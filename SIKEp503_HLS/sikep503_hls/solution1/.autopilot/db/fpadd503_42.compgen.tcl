@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3327 \
-    name A24plus_0 \
+    id 788 \
+    name R_Z \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename A24plus_0 \
+    corename R_Z \
     op interface \
-    ports { A24plus_0_address0 { O 1 vector } A24plus_0_ce0 { O 1 bit } A24plus_0_we0 { O 1 bit } A24plus_0_d0 { O 64 vector } A24plus_0_q0 { I 64 vector } } \
+    ports { R_Z_address0 { O 4 vector } R_Z_ce0 { O 1 bit } R_Z_we0 { O 1 bit } R_Z_d0 { O 64 vector } R_Z_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R_Z'"
 }
 }
 
@@ -30,131 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3328 \
-    name A24plus_1 \
+    id 789 \
+    name b \
     reset_level 1 \
     sync_rst true \
-    dir IO \
-    corename A24plus_1 \
+    dir I \
+    corename b \
     op interface \
-    ports { A24plus_1_address0 { O 1 vector } A24plus_1_ce0 { O 1 bit } A24plus_1_we0 { O 1 bit } A24plus_1_d0 { O 64 vector } A24plus_1_q0 { I 64 vector } } \
+    ports { b_address0 { O 3 vector } b_ce0 { O 1 bit } b_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_1'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3329 \
-    name A24plus_2 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename A24plus_2 \
-    op interface \
-    ports { A24plus_2_address0 { O 1 vector } A24plus_2_ce0 { O 1 bit } A24plus_2_we0 { O 1 bit } A24plus_2_d0 { O 64 vector } A24plus_2_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_2'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3330 \
-    name A24plus_3 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename A24plus_3 \
-    op interface \
-    ports { A24plus_3_address0 { O 1 vector } A24plus_3_ce0 { O 1 bit } A24plus_3_we0 { O 1 bit } A24plus_3_d0 { O 64 vector } A24plus_3_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_3'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3331 \
-    name A24plus_4 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename A24plus_4 \
-    op interface \
-    ports { A24plus_4_address0 { O 1 vector } A24plus_4_ce0 { O 1 bit } A24plus_4_we0 { O 1 bit } A24plus_4_d0 { O 64 vector } A24plus_4_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_4'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3332 \
-    name A24plus_5 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename A24plus_5 \
-    op interface \
-    ports { A24plus_5_address0 { O 1 vector } A24plus_5_ce0 { O 1 bit } A24plus_5_we0 { O 1 bit } A24plus_5_d0 { O 64 vector } A24plus_5_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_5'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3333 \
-    name A24plus_6 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename A24plus_6 \
-    op interface \
-    ports { A24plus_6_address0 { O 1 vector } A24plus_6_ce0 { O 1 bit } A24plus_6_we0 { O 1 bit } A24plus_6_d0 { O 64 vector } A24plus_6_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_6'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3334 \
-    name A24plus_7 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename A24plus_7 \
-    op interface \
-    ports { A24plus_7_address0 { O 1 vector } A24plus_7_ce0 { O 1 bit } A24plus_7_we0 { O 1 bit } A24plus_7_d0 { O 64 vector } A24plus_7_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'A24plus_7'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b'"
 }
 }
 
@@ -210,26 +96,6 @@ eval "cg_default_interface_gen_reset { \
 }"
 } else {
 puts "@W \[IMPL-114\] Cannot find bus interface model in the library. Ignored generation of bus interface for '${PortName}'"
-}
-}
-
-
-# Adapter definition:
-set PortName ap_ce
-set DataWd 1 
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc cg_default_interface_gen_ce] == "cg_default_interface_gen_ce"} {
-eval "cg_default_interface_gen_ce { \
-    id -4 \
-    name ${PortName} \
-    reset_level 1 \
-    sync_rst true \
-    corename apif_ap_ce \
-    data_wd ${DataWd} \
-    op interface \
-}"
-} else {
-puts "@W \[IMPL-113\] Cannot find bus interface model in the library. Ignored generation of bus interface for '${PortName}'"
 }
 }
 

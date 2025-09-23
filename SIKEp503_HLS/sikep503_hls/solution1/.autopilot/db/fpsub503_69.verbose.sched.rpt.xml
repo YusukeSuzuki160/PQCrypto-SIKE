@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpsub503_69'" level="0">
-<item name = "Date">Wed Jul 30 15:24:48 2025
+<item name = "Date">Wed Sep  3 14:25:21 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.096 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.306 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">5, 5, 50.000 ns, 50.000 ns, 1, 1, yes</column>
+<column name="">24, 24, 0.240 us, 0.240 us, 24, 24, no</column>
 </table>
 </item>
 <item name = "Detail">

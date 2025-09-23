@@ -217,10 +217,10 @@ entry:8 %tt3 = alloca i64 1
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="1" op_6_bw="64">
 <![CDATA[
-entry:9 %call_ln174 = call void @mp_mul.2, i64 %c, i32 %c_offset_read, i1 0, i64 %b, i1 0, i64 %tt1
+entry:9 %call_ln283 = call void @mul.2, i64 %c, i32 %c_offset_read, i1 0, i64 %b, i1 0, i64 %tt1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln174"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -235,10 +235,10 @@ entry:9 %call_ln174 = call void @mp_mul.2, i64 %c, i32 %c_offset_read, i1 0, i64
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="1" op_6_bw="64">
 <![CDATA[
-entry:9 %call_ln174 = call void @mp_mul.2, i64 %c, i32 %c_offset_read, i1 0, i64 %b, i1 0, i64 %tt1
+entry:9 %call_ln283 = call void @mul.2, i64 %c, i32 %c_offset_read, i1 0, i64 %b, i1 0, i64 %tt1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln174"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -253,10 +253,10 @@ entry:9 %call_ln174 = call void @mp_mul.2, i64 %c, i32 %c_offset_read, i1 0, i64
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="1" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:10 %call_ln175 = call void @mp_mul.2, i64 %c, i32 %c_offset_read, i1 1, i64 %b, i1 1, i64 %tt2
+entry:10 %call_ln283 = call void @mul.2, i64 %c, i32 %c_offset_read, i1 1, i64 %b, i1 1, i64 %tt2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln175"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -271,10 +271,10 @@ entry:10 %call_ln175 = call void @mp_mul.2, i64 %c, i32 %c_offset_read, i1 1, i6
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="1" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:10 %call_ln175 = call void @mp_mul.2, i64 %c, i32 %c_offset_read, i1 1, i64 %b, i1 1, i64 %tt2
+entry:10 %call_ln283 = call void @mul.2, i64 %c, i32 %c_offset_read, i1 1, i64 %b, i1 1, i64 %tt2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln175"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -319,7 +319,7 @@ entry:11 %call_ln373 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1173, i64 %b, i64 %t2
+entry:12 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1205, i64 %b, i64 %t2
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -367,7 +367,7 @@ entry:11 %call_ln373 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1173, i64 %b, i64 %t2
+entry:12 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1205, i64 %b, i64 %t2
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -430,7 +430,7 @@ entry:15 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_179_1, 
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:17 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1174, i64 %tt1, i64 %tt2
+entry:17 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1206, i64 %tt1, i64 %tt2
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -463,7 +463,7 @@ entry:15 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_179_1, 
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:17 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1174, i64 %tt1, i64 %tt2
+entry:17 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_370_1206, i64 %tt1, i64 %tt2
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -496,10 +496,10 @@ entry:16 %call_ln183 = call void @rdc_mont.1, i64 %tt3, i64 %c, i32 %c_offset_re
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:18 %call_ln185 = call void @mp_mul.4119, i64 %t1, i64 %t2, i64 %tt2
+entry:18 %call_ln283 = call void @mul.4119, i64 %t1, i64 %t2, i64 %tt2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln185"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -529,10 +529,10 @@ entry:16 %call_ln183 = call void @rdc_mont.1, i64 %tt3, i64 %c, i32 %c_offset_re
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:18 %call_ln185 = call void @mp_mul.4119, i64 %t1, i64 %t2, i64 %tt2
+entry:18 %call_ln283 = call void @mul.4119, i64 %t1, i64 %t2, i64 %tt2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln185"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -547,7 +547,7 @@ entry:18 %call_ln185 = call void @mp_mul.4119, i64 %t1, i64 %t2, i64 %tt2
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:19 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_152_1175, i64 %tt2, i64 %tt1
+entry:19 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_152_1207, i64 %tt2, i64 %tt1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -565,7 +565,7 @@ entry:19 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_152_117
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:19 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_152_1175, i64 %tt2, i64 %tt1
+entry:19 %call_ln0 = call void @fp2mul503_mont.332.1_Pipeline_VITIS_LOOP_152_1207, i64 %tt2, i64 %tt1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>

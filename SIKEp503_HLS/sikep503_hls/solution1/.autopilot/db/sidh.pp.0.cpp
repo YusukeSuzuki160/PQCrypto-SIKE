@@ -1525,8 +1525,21 @@ static void fp2_encode(const f2elm_t x, unsigned char *enc)
     from_fp2mont(x, t);
     VITIS_LOOP_42_1: for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
     {
-        enc[i] = ((unsigned char *)t)[i];
-        enc[i + 2 * ((503 + 7) / 8) / 2] = ((unsigned char *)t)[i + 512 / 8];
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            enc[i] = (unsigned char)(t[0][word_idx] >> (byte_idx * 8));
+        }
+
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            enc[i + 2 * ((503 + 7) / 8) / 2] = (unsigned char)(t[1][word_idx] >> (byte_idx * 8));
+        }
     }
 }
 
@@ -1534,13 +1547,35 @@ static void fp2_decode(const unsigned char *enc, f2elm_t x)
 {
     unsigned int i;
 
-    VITIS_LOOP_53_1: for (i = 0; i < 2 * (512 / 8); i++)
-        ((unsigned char *)x)[i] = 0;
-    VITIS_LOOP_55_2: for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
+
+    VITIS_LOOP_67_1: for (i = 0; i < 2; i++)
     {
-        ((unsigned char *)x)[i] = enc[i];
-        ((unsigned char *)x)[i + 512 / 8] = enc[i + 2 * ((503 + 7) / 8) / 2];
+        VITIS_LOOP_69_2: for (unsigned int j = 0; j < 8; j++)
+        {
+            x[i][j] = 0;
+        }
     }
+
+
+    VITIS_LOOP_76_3: for (i = 0; i < 2 * ((503 + 7) / 8) / 2; i++)
+    {
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            x[0][word_idx] |= ((digit_t)enc[i]) << (byte_idx * 8);
+        }
+
+
+        if (i < 8 * sizeof(digit_t))
+        {
+            unsigned int word_idx = i / sizeof(digit_t);
+            unsigned int byte_idx = i % sizeof(digit_t);
+            x[1][word_idx] |= ((digit_t)enc[i + 2 * ((503 + 7) / 8) / 2]) << (byte_idx * 8);
+        }
+    }
+
     to_fp2mont(x, x);
 }
 
@@ -1578,7 +1613,6 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
     fpcopy503((digit_t *)&Montgomery_one, (phiR->Z)[0]);
 
 
-
     fpcopy503((digit_t *)&Montgomery_one, A24plus[0]);
     fp2add503(A24plus, A24plus, C24);
 
@@ -1588,9 +1622,9 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
 
 
     index = 0;
-    VITIS_LOOP_107_1: for (row = 1; row < 125; row++)
+    VITIS_LOOP_141_1: for (row = 1; row < 125; row++)
     {
-        VITIS_LOOP_109_2: for (int j = 0; j < 125 - row; j++)
+        VITIS_LOOP_143_2: for (int j = 0; j < 125 - row; j++)
         {
             if (index < 125 - row)
             {
@@ -1603,7 +1637,7 @@ int EphemeralKeyGeneration_A(const unsigned char *PrivateKeyA, unsigned char *Pu
             }
         }
         get_4_isog(R, A24plus, C24, coeff);
-        VITIS_LOOP_122_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_156_3: for (i = 0; i < npts; i++)
         {
 #pragma HLS loop_tripcount min = 1 max = 7
  eval_4_isog(pts[i], coeff);
@@ -1668,9 +1702,9 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
 
 
     index = 0;
-    VITIS_LOOP_187_1: for (row = 1; row < 159; row++)
+    VITIS_LOOP_221_1: for (row = 1; row < 159; row++)
     {
-        VITIS_LOOP_189_2: for (int j = 0; j < 159 - row; j++)
+        VITIS_LOOP_223_2: for (int j = 0; j < 159 - row; j++)
         {
             if (index < 159 - row)
             {
@@ -1683,7 +1717,7 @@ int EphemeralKeyGeneration_B(const unsigned char *PrivateKeyB, unsigned char *Pu
             }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
-        VITIS_LOOP_202_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_236_3: for (i = 0; i < npts; i++)
         {
 
             eval_3_isog(pts[i], coeff);
@@ -1726,7 +1760,7 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
     f2elm_t coeff[3], PKB[3], jinv;
     f2elm_t A24plus = {0}, C24 = {0}, A = {0};
     unsigned int i, row, m, index = 0, pts_index[7], npts = 0, ii = 0;
-# 257 "src/sidh.cpp"
+# 291 "src/sidh.cpp"
     fp2_decode(PublicKeyB, PKB[0]);
     fp2_decode(PublicKeyB + 2 * ((503 + 7) / 8), PKB[1]);
     fp2_decode(PublicKeyB + 2 * 2 * ((503 + 7) / 8), PKB[2]);
@@ -1743,9 +1777,9 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
 
 
     index = 0;
-    VITIS_LOOP_273_1: for (row = 1; row < 125; row++)
+    VITIS_LOOP_307_1: for (row = 1; row < 125; row++)
     {
-        VITIS_LOOP_275_2: for (int j = 0; j < 125 - row; j++)
+        VITIS_LOOP_309_2: for (int j = 0; j < 125 - row; j++)
         {
             if (index < 125 - row)
             {
@@ -1758,7 +1792,7 @@ int EphemeralSecretAgreement_A(const unsigned char *PrivateKeyA, const unsigned 
             }
         }
         get_4_isog(R, A24plus, C24, coeff);
-        VITIS_LOOP_288_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_322_3: for (i = 0; i < npts; i++)
         {
 #pragma HLS loop_tripcount min = 1 max = 7
  eval_4_isog(pts[i], coeff);
@@ -1812,9 +1846,9 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
 
 
     index = 0;
-    VITIS_LOOP_342_1: for (row = 1; row < 159; row++)
+    VITIS_LOOP_376_1: for (row = 1; row < 159; row++)
     {
-        VITIS_LOOP_344_2: for (int j = 0; j < 159 - row; j++)
+        VITIS_LOOP_378_2: for (int j = 0; j < 159 - row; j++)
         {
             if (index < 159 - row)
             {
@@ -1827,7 +1861,7 @@ int EphemeralSecretAgreement_B(const unsigned char *PrivateKeyB, const unsigned 
             }
         }
         get_3_isog(R, A24minus, A24plus, coeff);
-        VITIS_LOOP_357_3: for (i = 0; i < npts; i++)
+        VITIS_LOOP_391_3: for (i = 0; i < npts; i++)
         {
 
             eval_3_isog(pts[i], coeff);

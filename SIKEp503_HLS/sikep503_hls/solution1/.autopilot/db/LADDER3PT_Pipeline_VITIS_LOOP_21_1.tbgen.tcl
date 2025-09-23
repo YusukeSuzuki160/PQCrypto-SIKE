@@ -13,13 +13,13 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 855
+set cdfgNum 684
 set C_modelName {LADDER3PT_Pipeline_VITIS_LOOP_21_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict R_Z { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ R_Z int 64 regular {array 16 { 0 3 } 0 1 }  }
+	{ R_Z int 64 regular {array 16 { 0 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]

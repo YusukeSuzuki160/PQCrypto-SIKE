@@ -73,15 +73,15 @@ CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o: CMakeFiles/mpx_auto_re
 CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o: /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_auto_rewriter.cpp
 CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o: CMakeFiles/mpx_auto_rewriter.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o -MF CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o.d -o CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o -c /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_auto_rewriter.cpp
+	/home/meltpoint/.pyenv/shims/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o -MF CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o.d -o CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.o -c /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_auto_rewriter.cpp
 
 CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.i"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_auto_rewriter.cpp > CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.i
+	/home/meltpoint/.pyenv/shims/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_auto_rewriter.cpp > CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.i
 
 CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.s"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_auto_rewriter.cpp -o CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.s
+	/home/meltpoint/.pyenv/shims/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_auto_rewriter.cpp -o CMakeFiles/mpx_auto_rewriter.dir/mpx_auto_rewriter.cpp.s
 
 # Object files for target mpx_auto_rewriter
 mpx_auto_rewriter_OBJECTS = \

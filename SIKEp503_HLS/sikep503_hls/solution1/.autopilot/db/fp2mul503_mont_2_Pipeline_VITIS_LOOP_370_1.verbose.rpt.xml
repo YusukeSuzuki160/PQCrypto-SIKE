@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_2_Pipeline_VITIS_LOOP_370_1'" level="0">
-<item name = "Date">Wed Jul 30 17:38:09 2025
+<item name = "Date">Wed Sep  3 15:19:31 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -84,14 +84,14 @@
 <column name="add_ln373_fu_156_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_fu_150_p2">+, 0, 0, 71, 64, 64</column>
 <column name="and_ln373_fu_207_p2">and, 0, 0, 64, 64, 64</column>
-<column name="ap_condition_234">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_235">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln370_fu_107_p2">icmp, 0, 0, 12, 4, 5</column>
-<column name="or_ln373_76_fu_219_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln373_77_fu_219_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln373_fu_175_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln373_171_fu_169_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln373_173_fu_213_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln373_181_fu_189_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln373_182_fu_189_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln373_fu_163_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -99,9 +99,9 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_272">9, 2, 4, 8</column>
 <column name="carry_reg_88">9, 2, 1, 2</column>
-<column name="i_329_fu_46">9, 2, 4, 8</column>
+<column name="i_fu_46">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -110,7 +110,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="carry_reg_88">1, 0, 1, 0</column>
-<column name="i_329_fu_46">4, 0, 4, 0</column>
+<column name="i_fu_46">4, 0, 4, 0</column>
 <column name="icmp_ln370_reg_240">1, 0, 1, 0</column>
 <column name="zext_ln370_reg_244">4, 0, 64, 60</column>
 </table>

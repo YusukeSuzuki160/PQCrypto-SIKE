@@ -128,7 +128,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>i</name>
+              <name>i_258</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
@@ -227,7 +227,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_write_ln51</name>
+              <name>i_258_write_ln51</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
@@ -326,7 +326,7 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>i_351</name>
+              <name>i</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>57</lineNumber>
@@ -2096,7 +2096,7 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>PKB_addr_12</name>
+              <name>PKB_addr_10</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>58</lineNumber>
@@ -2154,7 +2154,7 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>PKB_addr_12_write_ln58</name>
+              <name>PKB_addr_10_write_ln58</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>58</lineNumber>
@@ -2213,7 +2213,7 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>i_write_ln51</name>
+              <name>i_258_write_ln51</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
@@ -4740,7 +4740,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_351</first>
+          <first>ap_sig_allocacmp_i</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4821,7 +4821,7 @@
           </second>
         </item>
         <item>
-          <first>i_fu_70</first>
+          <first>i_258_fu_70</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -5297,7 +5297,7 @@
           </second>
         </item>
         <item>
-          <first>i_351_reg_265</first>
+          <first>i_258_fu_70</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5316,7 +5316,7 @@
           </second>
         </item>
         <item>
-          <first>i_fu_70</first>
+          <first>i_reg_265</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6175,7 +6175,7 @@
       <count>26</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>PKB_addr_12_gep_fu_116</first>
+        <first>PKB_addr_10_gep_fu_116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6239,7 +6239,7 @@
         </second>
       </item>
       <item>
-        <first>i_fu_70</first>
+        <first>i_258_fu_70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6445,7 +6445,7 @@
         </second>
       </item>
       <item>
-        <first>i_351_load_fu_128</first>
+        <first>i_load_fu_128</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6609,19 +6609,19 @@
         </second>
       </item>
       <item>
-        <first>i_351_reg_265</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>11</item>
-        </second>
-      </item>
-      <item>
-        <first>i_reg_258</first>
+        <first>i_258_reg_258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>4</item>
+        </second>
+      </item>
+      <item>
+        <first>i_reg_265</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>11</item>
         </second>
       </item>
       <item>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_330_Pipeline_VITIS_LOOP_179_1'
 ================================================================
-* Date:           Wed Jul 30 16:56:53 2025
+* Date:           Wed Sep  3 15:12:50 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -85,13 +85,13 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.48>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_235 = alloca i32 1" [src/fpx.cpp:172]   --->   Operation 5 'alloca' 'i_235' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_247 = alloca i32 1" [src/fpx.cpp:172]   --->   Operation 5 'alloca' 'i_247' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln171_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %sext_ln171"   --->   Operation 6 'read' 'sext_ln171_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.27ns)   --->   "%sext_ln171_cast = select i1 %sext_ln171_read, i64 18446744073709551615, i64 0"   --->   Operation 7 'select' 'sext_ln171_cast' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 8 [1/1] (0.38ns)   --->   "%store_ln172 = store i4 0, i4 %i_235" [src/fpx.cpp:172]   --->   Operation 8 'store' 'store_ln172' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 8 [1/1] (0.38ns)   --->   "%store_ln172 = store i4 0, i4 %i_247" [src/fpx.cpp:172]   --->   Operation 8 'store' 'store_ln172' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 9 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%borrow = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc.split" [src/fpx.cpp:179]   --->   Operation 10 'phi' 'borrow' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = load i4 %i_235" [src/fpx.cpp:181]   --->   Operation 11 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = load i4 %i_247" [src/fpx.cpp:181]   --->   Operation 11 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%icmp_ln179 = icmp_eq  i4 %i, i4 8" [src/fpx.cpp:179]   --->   Operation 12 'icmp' 'icmp_ln179' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 13 [1/1] (0.70ns)   --->   "%add_ln179 = add i4 %i, i4 1" [src/fpx.cpp:179]   --->   Operation 13 'add' 'add_ln179' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln179 = br i1 %icmp_ln179, void %for.inc.split, void %for.end.exitStub" [src/fpx.cpp:179]   --->   Operation 14 'br' 'br_ln179' <Predicate = true> <Delay = 0.00>
@@ -103,16 +103,16 @@ ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tt3_addr = getelementptr i64 %tt3,
 ST_1 : Operation 20 [2/2] (0.71ns)   --->   "%tt3_load = load i4 %tt3_addr" [src/fpx.cpp:181]   --->   Operation 20 'load' 'tt3_load' <Predicate = (!icmp_ln179)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p503_1_addr = getelementptr i64 %p503_1, i64 0, i64 %zext_ln179" [src/fpx.cpp:181]   --->   Operation 21 'getelementptr' 'p503_1_addr' <Predicate = (!icmp_ln179)> <Delay = 0.00>
 ST_1 : Operation 22 [2/2] (0.71ns)   --->   "%p503_1_load = load i3 %p503_1_addr" [src/fpx.cpp:181]   --->   Operation 22 'load' 'p503_1_load' <Predicate = (!icmp_ln179)> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
-ST_1 : Operation 23 [1/1] (0.38ns)   --->   "%store_ln172 = store i4 %add_ln179, i4 %i_235" [src/fpx.cpp:172]   --->   Operation 23 'store' 'store_ln172' <Predicate = (!icmp_ln179)> <Delay = 0.38>
+ST_1 : Operation 23 [1/1] (0.38ns)   --->   "%store_ln172 = store i4 %add_ln179, i4 %i_247" [src/fpx.cpp:172]   --->   Operation 23 'store' 'store_ln172' <Predicate = (!icmp_ln179)> <Delay = 0.38>
 ST_1 : Operation 46 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 46 'ret' 'ret_ln0' <Predicate = (icmp_ln179)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specpipeline_ln172 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:172]   --->   Operation 24 'specpipeline' 'specpipeline_ln172' <Predicate = (!icmp_ln179)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specpipeline_ln172 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_82" [src/fpx.cpp:172]   --->   Operation 24 'specpipeline' 'specpipeline_ln172' <Predicate = (!icmp_ln179)> <Delay = 0.00>
 ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%speclooptripcount_ln172 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:172]   --->   Operation 25 'speclooptripcount' 'speclooptripcount_ln172' <Predicate = (!icmp_ln179)> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln179 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [src/fpx.cpp:179]   --->   Operation 26 'specloopname' 'specloopname_ln179' <Predicate = (!icmp_ln179)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln179 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31" [src/fpx.cpp:179]   --->   Operation 26 'specloopname' 'specloopname_ln179' <Predicate = (!icmp_ln179)> <Delay = 0.00>
 ST_2 : Operation 27 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt3_load = load i4 %tt3_addr" [src/fpx.cpp:181]   --->   Operation 27 'load' 'tt3_load' <Predicate = (!icmp_ln179)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln181_15 = zext i1 %borrow" [src/fpx.cpp:181]   --->   Operation 28 'zext' 'zext_ln181_15' <Predicate = (!icmp_ln179)> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (1.14ns)   --->   "%tempReg = add i64 %tt3_load, i64 %zext_ln181_15" [src/fpx.cpp:181]   --->   Operation 29 'add' 'tempReg' <Predicate = (!icmp_ln179)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln181_54 = zext i1 %borrow" [src/fpx.cpp:181]   --->   Operation 28 'zext' 'zext_ln181_54' <Predicate = (!icmp_ln179)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (1.14ns)   --->   "%tempReg = add i64 %tt3_load, i64 %zext_ln181_54" [src/fpx.cpp:181]   --->   Operation 29 'add' 'tempReg' <Predicate = (!icmp_ln179)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 30 [1/2] ( I:0.71ns O:0.71ns )   --->   "%p503_1_load = load i3 %p503_1_addr" [src/fpx.cpp:181]   --->   Operation 30 'load' 'p503_1_load' <Predicate = (!icmp_ln179)> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
 ST_2 : Operation 31 [1/1] (0.28ns)   --->   "%and_ln181 = and i64 %p503_1_load, i64 %sext_ln171_cast" [src/fpx.cpp:181]   --->   Operation 31 'and' 'and_ln181' <Predicate = (!icmp_ln179)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 32 [1/1] (1.14ns)   --->   "%add_ln181 = add i64 %and_ln181, i64 %tempReg" [src/fpx.cpp:181]   --->   Operation 32 'add' 'add_ln181' <Predicate = (!icmp_ln179)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -124,9 +124,9 @@ ST_2 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node or_ln181_12) 
 ST_2 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node or_ln181_12)   --->   "%xor_ln181_35 = xor i1 %bit_sel4, i1 1" [src/fpx.cpp:181]   --->   Operation 38 'xor' 'xor_ln181_35' <Predicate = (!icmp_ln179)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node or_ln181_12)   --->   "%trunc_ln181_18 = trunc i64 %tempReg" [src/fpx.cpp:181]   --->   Operation 39 'trunc' 'trunc_ln181_18' <Predicate = (!icmp_ln179)> <Delay = 0.00>
 ST_2 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node or_ln181_12)   --->   "%xor_ln181_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln181_35, i63 %trunc_ln181_18" [src/fpx.cpp:181]   --->   Operation 40 'bitconcatenate' 'xor_ln181_s' <Predicate = (!icmp_ln179)> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node or_ln181_12)   --->   "%and_ln181_12 = and i64 %tt3_load, i64 %xor_ln181_s" [src/fpx.cpp:181]   --->   Operation 41 'and' 'and_ln181_12' <Predicate = (!icmp_ln179)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node or_ln181_12)   --->   "%and_ln181_15 = and i64 %tt3_load, i64 %xor_ln181_s" [src/fpx.cpp:181]   --->   Operation 41 'and' 'and_ln181_15' <Predicate = (!icmp_ln179)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 42 [1/1] (0.28ns) (out node of the LUT)   --->   "%xor_ln181_36 = xor i64 %or_ln181, i64 %add_ln181" [src/fpx.cpp:181]   --->   Operation 42 'xor' 'xor_ln181_36' <Predicate = (!icmp_ln179)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 43 [1/1] (0.28ns) (out node of the LUT)   --->   "%or_ln181_12 = or i64 %xor_ln181_36, i64 %and_ln181_12" [src/fpx.cpp:181]   --->   Operation 43 'or' 'or_ln181_12' <Predicate = (!icmp_ln179)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.28ns) (out node of the LUT)   --->   "%or_ln181_12 = or i64 %xor_ln181_36, i64 %and_ln181_15" [src/fpx.cpp:181]   --->   Operation 43 'or' 'or_ln181_12' <Predicate = (!icmp_ln179)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln181_12, i32 63" [src/fpx.cpp:179]   --->   Operation 44 'bitselect' 'tmp' <Predicate = (!icmp_ln179)> <Delay = 0.00>
 ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln179 = br void %for.inc" [src/fpx.cpp:179]   --->   Operation 45 'br' 'br_ln179' <Predicate = (!icmp_ln179)> <Delay = 0.00>
 
@@ -151,7 +151,7 @@ Port [ p503_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; ext
 
 <LifeTime>
 <method=bitvector/>
-i_235                   (alloca           ) [ 010]
+i_247                   (alloca           ) [ 010]
 sext_ln171_read         (read             ) [ 000]
 sext_ln171_cast         (select           ) [ 011]
 store_ln172             (store            ) [ 000]
@@ -172,7 +172,7 @@ specpipeline_ln172      (specpipeline     ) [ 000]
 speclooptripcount_ln172 (speclooptripcount) [ 000]
 specloopname_ln179      (specloopname     ) [ 000]
 tt3_load                (load             ) [ 000]
-zext_ln181_15           (zext             ) [ 000]
+zext_ln181_54           (zext             ) [ 000]
 tempReg                 (add              ) [ 000]
 p503_1_load             (load             ) [ 000]
 and_ln181               (and              ) [ 000]
@@ -185,7 +185,7 @@ bit_sel4                (bitselect        ) [ 000]
 xor_ln181_35            (xor              ) [ 000]
 trunc_ln181_18          (trunc            ) [ 000]
 xor_ln181_s             (bitconcatenate   ) [ 000]
-and_ln181_12            (and              ) [ 000]
+and_ln181_15            (and              ) [ 000]
 xor_ln181_36            (xor              ) [ 000]
 or_ln181_12             (or               ) [ 000]
 tmp                     (bitselect        ) [ 011]
@@ -347,7 +347,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_82"/></StgValue>
 </bind>
 </comp>
 
@@ -383,7 +383,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_14"/></StgValue>
+<StgValue><ssdm name="empty_31"/></StgValue>
 </bind>
 </comp>
 
@@ -432,14 +432,14 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="52" class="1004" name="i_235_fu_52">
+<comp id="52" class="1004" name="i_247_fu_52">
 <pin_list>
 <pin id="53" dir="0" index="0" bw="1" slack="0"/>
 <pin id="54" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="i_235/1 "/>
+<opset="i_247/1 "/>
 </bind>
 </comp>
 
@@ -653,14 +653,14 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="158" class="1004" name="zext_ln181_15_fu_158">
+<comp id="158" class="1004" name="zext_ln181_54_fu_158">
 <pin_list>
 <pin id="159" dir="0" index="0" bw="1" slack="1"/>
 <pin id="160" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln181_15/2 "/>
+<opset="zext_ln181_54/2 "/>
 </bind>
 </comp>
 
@@ -785,7 +785,7 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="224" class="1004" name="and_ln181_12_fu_224">
+<comp id="224" class="1004" name="and_ln181_15_fu_224">
 <pin_list>
 <pin id="225" dir="0" index="0" bw="64" slack="0"/>
 <pin id="226" dir="0" index="1" bw="64" slack="0"/>
@@ -793,7 +793,7 @@ ret_ln0                 (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln181_12/2 "/>
+<opset="and_ln181_15/2 "/>
 </bind>
 </comp>
 
@@ -834,13 +834,13 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="250" class="1005" name="i_235_reg_250">
+<comp id="250" class="1005" name="i_247_reg_250">
 <pin_list>
 <pin id="251" dir="0" index="0" bw="4" slack="0"/>
 <pin id="252" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_235 "/>
+<opset="i_247 "/>
 </bind>
 </comp>
 
@@ -1084,7 +1084,7 @@ ret_ln0                 (ret              ) [ 000]
 		xor_ln181_35 : 3
 		trunc_ln181_18 : 2
 		xor_ln181_s : 3
-		and_ln181_12 : 4
+		and_ln181_15 : 4
 		xor_ln181_36 : 2
 		or_ln181_12 : 2
 		tmp : 2
@@ -1108,7 +1108,7 @@ ret_ln0                 (ret              ) [ 000]
 |          |      add_ln181_fu_173      |    0    |    71   |
 |----------|----------------------------|---------|---------|
 |    and   |      and_ln181_fu_168      |    0    |    64   |
-|          |     and_ln181_12_fu_224    |    0    |    64   |
+|          |     and_ln181_15_fu_224    |    0    |    64   |
 |----------|----------------------------|---------|---------|
 |    or    |       or_ln181_fu_192      |    0    |    64   |
 |          |     or_ln181_12_fu_236     |    0    |    64   |
@@ -1121,7 +1121,7 @@ ret_ln0                 (ret              ) [ 000]
 |----------|----------------------------|---------|---------|
 |          |      zext_ln179_fu_131     |    0    |    0    |
 |   zext   |      zext_ln181_fu_148     |    0    |    0    |
-|          |    zext_ln181_15_fu_158    |    0    |    0    |
+|          |    zext_ln181_54_fu_158    |    0    |    0    |
 |----------|----------------------------|---------|---------|
 |   trunc  |     trunc_ln181_fu_136     |    0    |    0    |
 |          |    trunc_ln181_18_fu_212   |    0    |    0    |
@@ -1143,7 +1143,7 @@ N/A
 |                       |   FF   |
 +-----------------------+--------+
 |     borrow_reg_92     |    1   |
-|     i_235_reg_250     |    4   |
+|     i_247_reg_250     |    4   |
 |   icmp_ln179_reg_262  |    1   |
 |  p503_1_addr_reg_272  |    3   |
 |sext_ln171_cast_reg_257|   64   |

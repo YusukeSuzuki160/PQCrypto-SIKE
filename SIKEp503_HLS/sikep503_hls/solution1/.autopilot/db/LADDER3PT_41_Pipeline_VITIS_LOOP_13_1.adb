@@ -261,7 +261,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_283</name>
+              <name>i_290</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>13</lineNumber>
@@ -1539,7 +1539,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>100</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1243_Montgomery_one_1_ROM_Acud</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1275_Montgomery_one_1_ROM_Acud</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -2808,7 +2808,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_283</first>
+          <first>ap_sig_allocacmp_i_290</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3510,7 +3510,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_283_load_fu_86</first>
+        <first>i_290_load_fu_86</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

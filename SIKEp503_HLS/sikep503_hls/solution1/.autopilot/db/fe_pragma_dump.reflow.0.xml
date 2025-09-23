@@ -1,12 +1,14 @@
 <pragmas>
+<pragma file="src/fpx.cpp" line="68" pragmaType="inline" parentfunction="fpsqr503_mont" off="1" region="0" recursive="0"/>
+<pragma file="src/fpx.cpp" line="56" pragmaType="inline" parentfunction="fpmul503_mont" off="1" region="0" recursive="0"/>
 <pragma file="src/ec_isogeny.cpp" line="321" pragmaType="loop_tripcount" parentfunction="LADDER3PT" min="1" max="503" avg="252"/>
-<pragma file="src/sidh.cpp" line="124" pragmaType="loop_tripcount" parentfunction="EphemeralKeyGeneration_A" min="1" max="7" avg="4"/>
-<pragma file="src/sidh.cpp" line="290" pragmaType="loop_tripcount" parentfunction="EphemeralSecretAgreement_A" min="1" max="7" avg="4"/>
-<pragma file="src/sikep503_kem_enc_hw.cpp" line="54" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="ap_ctrl_hs" port="return" name=""/>
-<pragma file="src/sikep503_kem_enc_hw.cpp" line="55" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="src/sikep503_kem_enc_hw.cpp" line="56" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="" offset="" name="" depth="402" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="src/sikep503_kem_enc_hw.cpp" line="57" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="" offset="" name="" depth="378" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="src/sikep503_kem_enc_hw.cpp" line="58" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="" offset="" name="" depth="16" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sidh.cpp" line="324" pragmaType="loop_tripcount" parentfunction="EphemeralSecretAgreement_A" min="1" max="7" avg="4"/>
+<pragma file="src/sidh.cpp" line="158" pragmaType="loop_tripcount" parentfunction="EphemeralKeyGeneration_A" min="1" max="7" avg="4"/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="56" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="57" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="58" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="" offset="" name="" depth="402" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="59" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="" offset="" name="" depth="378" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src/sikep503_kem_enc_hw.cpp" line="60" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="" offset="" name="" depth="16" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
 <pragma file="src/sikep503_kem_enc_hw.cpp" line="35" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
 <pragma file="src/sikep503_kem_enc_hw.cpp" line="36" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
 <pragma file="src/sikep503_kem_enc_hw.cpp" line="37" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
@@ -14,36 +16,41 @@
 <pragma file="src/sikep503_kem_enc_hw.cpp" line="39" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="pk" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
 <pragma file="src/sikep503_kem_enc_hw.cpp" line="40" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="ss" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
 <pragma file="src/sikep503_kem_enc_hw.cpp" line="41" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base(unsigned long)" off="0" region="0" recursive="0"/>
-<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int(unsigned long)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<128, false>::ap_range_ref(ap_int_base<128, false>*, int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint(unsigned long)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<128, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
-<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi512ELb0EEC2EDq512_j" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<512, false>::ap_int_base(unsigned long)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1024ELb0EEC2EDq1024_j" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<512, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<512>::ap_uint<512, false>(ap_int_base<512, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1024, false>::ap_int_base<512, false>(ap_int_base<512, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1024, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1024>::ap_uint<1024, false>(ap_int_base<1024, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<1024, false>::ap_range_ref(ap_int_base<1024, false>*, int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<512, false>::RType<512, false>::mult operator*<512, false, 512, false>(ap_int_base<512, false> const&, ap_int_base<512, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<1024, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<512>::ap_uint(unsigned long)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<512, false>::RType<512, false>::arg1 operator<<<512, false>(ap_int_base<512, false> const&, unsigned int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<128>::ap_uint<128, false>(ap_int_base<128, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<128, false>::ssdm_int(unsigned __int128)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<512>::ap_uint(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<64, false>::mult operator*<64, false, 64, false>(ap_int_base<64, false> const&, ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<512, false>& ap_int_base<512, false>::operator|=<512, false>(ap_int_base<512, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<128>::ap_uint<128, false>(ap_int_base<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<128, false>::ap_range_ref(ap_int_base<128, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<65>::ap_uint<65, false>(ap_int_base<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi65ELb0EEC2EDq65_j" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<128, false>(ap_range_ref<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<64, false>::plus operator+<64, false, 64, false>(ap_int_base<64, false> const&, ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<128, false>::ssdm_int(unsigned __int128)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::ap_int_base<65, false>(ap_int_base<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator><64, false>(ap_int_base<64, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<64, false>::operator><32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<128, false>(ap_range_ref<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<($_0)64, false>::plus operator+<64, false>(unsigned long, ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<128>::ap_uint<65>(ap_uint<65> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<128, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<64, false>::mult operator*<64, false, 64, false>(ap_int_base<64, false> const&, ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="src/generic/fp_generic.cpp" line="154" pragmaType="inline" parentfunction="digit_x_digit" off="1" region="0" recursive="0"/>
+<pragma file="src/generic/fp_generic.cpp" line="272" pragmaType="inline" parentfunction="mp_mul" off="1" region="0" recursive="0"/>
+<pragma file="src/generic/fp_generic.cpp" line="275" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="17" latency="-1" variable="a"/>
+<pragma file="src/generic/fp_generic.cpp" line="276" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="17" latency="-1" variable="b"/>
+<pragma file="src/generic/fp_generic.cpp" line="277" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="17" latency="-1" variable="c"/>
+<pragma file="src/generic/fp_generic.cpp" line="278" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="207" latency="-1" variable="a"/>
+<pragma file="src/generic/fp_generic.cpp" line="279" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="207" latency="-1" variable="b"/>
+<pragma file="src/generic/fp_generic.cpp" line="280" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="207" latency="-1" variable="c"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
 </pragmas>

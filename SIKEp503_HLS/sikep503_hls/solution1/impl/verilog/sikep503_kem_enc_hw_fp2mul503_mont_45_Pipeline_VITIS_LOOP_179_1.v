@@ -64,7 +64,7 @@ wire    ap_loop_init;
 wire   [63:0] zext_ln181_fu_148_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln179_fu_131_p1;
-reg   [3:0] i_185_fu_52;
+reg   [3:0] i_197_fu_52;
 wire   [3:0] add_ln179_fu_125_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    tt3_ce1_local;
@@ -74,7 +74,7 @@ reg    tt3_ce0_local;
 reg    p503_1_ce0_local;
 wire   [2:0] trunc_ln181_fu_136_p1;
 wire   [3:0] zext_ln181_cast_fu_140_p3;
-wire   [63:0] zext_ln181_2_fu_158_p1;
+wire   [63:0] zext_ln181_39_fu_158_p1;
 wire   [63:0] and_ln181_fu_168_p2;
 wire   [63:0] tempReg_fu_162_p2;
 wire   [63:0] xor_ln181_fu_180_p2;
@@ -102,11 +102,11 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_185_fu_52 = 4'd0;
+#0 i_197_fu_52 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_fp2div2_503_Pipeline_VITIS_LOOP_87_1_p503_1_ROM_AUTO_1R #(
+sikep503_kem_enc_hw_fp2div2_503_Pipeline_VITIS_LOOP_91_1_p503_1_ROM_AUTO_1R #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -178,9 +178,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln179_fu_119_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_185_fu_52 <= add_ln179_fu_125_p2;
+            i_197_fu_52 <= add_ln179_fu_125_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_185_fu_52 <= 4'd0;
+            i_197_fu_52 <= 4'd0;
         end
     end
 end
@@ -237,7 +237,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_185_fu_52;
+        ap_sig_allocacmp_i = i_197_fu_52;
     end
 end
 
@@ -326,7 +326,7 @@ assign p503_1_address0 = zext_ln179_fu_131_p1;
 
 assign sext_ln171_cast_fu_103_p3 = ((sext_ln171[0:0] == 1'b1) ? 64'd18446744073709551615 : 64'd0);
 
-assign tempReg_fu_162_p2 = (tt3_q1 + zext_ln181_2_fu_158_p1);
+assign tempReg_fu_162_p2 = (tt3_q1 + zext_ln181_39_fu_158_p1);
 
 assign trunc_ln181_3_fu_212_p1 = tempReg_fu_162_p2[62:0];
 
@@ -356,7 +356,7 @@ assign xor_ln181_fu_180_p2 = (tempReg_fu_162_p2 ^ add_ln181_fu_173_p2);
 
 assign zext_ln179_fu_131_p1 = ap_sig_allocacmp_i;
 
-assign zext_ln181_2_fu_158_p1 = borrow_reg_92;
+assign zext_ln181_39_fu_158_p1 = borrow_reg_92;
 
 assign zext_ln181_cast_fu_140_p3 = {{1'd1}, {trunc_ln181_fu_136_p1}};
 

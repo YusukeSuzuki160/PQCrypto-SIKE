@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpsub503_2_1'" level="0">
-<item name = "Date">Wed Jul 30 17:37:08 2025
+<item name = "Date">Wed Sep  3 15:18:47 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -31,8 +31,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_57_1_fu_50">fpsub503_2_1_Pipeline_VITIS_LOOP_57_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_64_2_fu_61">fpsub503_2_1_Pipeline_VITIS_LOOP_64_2, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_61_1_fu_50">fpsub503_2_1_Pipeline_VITIS_LOOP_61_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_68_2_fu_61">fpsub503_2_1_Pipeline_VITIS_LOOP_68_2, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -65,8 +65,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_57_1_fu_50">fpsub503_2_1_Pipeline_VITIS_LOOP_57_1, 0, 0, 13, 638, 0</column>
-<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_64_2_fu_61">fpsub503_2_1_Pipeline_VITIS_LOOP_64_2, 0, 0, 141, 744, 0</column>
+<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_61_1_fu_50">fpsub503_2_1_Pipeline_VITIS_LOOP_61_1, 0, 0, 13, 638, 0</column>
+<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_68_2_fu_61">fpsub503_2_1_Pipeline_VITIS_LOOP_68_2, 0, 0, 141, 744, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -99,8 +99,8 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
-<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_57_1_fu_50_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_64_2_fu_61_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_61_1_fu_50_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpsub503_2_1_Pipeline_VITIS_LOOP_68_2_fu_61_ap_start_reg">1, 0, 1, 0</column>
 <column name="tmp_reg_105">1, 0, 4, 3</column>
 <column name="tmp_s_reg_111">4, 0, 7, 3</column>
 </table>

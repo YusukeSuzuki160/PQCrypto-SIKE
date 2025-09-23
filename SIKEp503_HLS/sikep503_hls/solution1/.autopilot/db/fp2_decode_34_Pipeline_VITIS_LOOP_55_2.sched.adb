@@ -164,7 +164,7 @@
 					<Obj>
 						<type>0</type>
 						<id>5</id>
-						<name>i_245</name>
+						<name>i_257</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -306,7 +306,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_245_write_ln51</name>
+						<name>i_257_write_ln51</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -2744,7 +2744,7 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>PKB_addr_15</name>
+						<name>PKB_addr_11</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>58</lineNumber>
@@ -2802,7 +2802,7 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>PKB_addr_15_write_ln58</name>
+						<name>PKB_addr_11_write_ln58</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>58</lineNumber>
@@ -2863,7 +2863,7 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>i_245_write_ln51</name>
+						<name>i_257_write_ln51</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>51</lineNumber>

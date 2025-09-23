@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_Pipeline_VITIS_LOOP_436_2'
 ================================================================
-* Date:           Wed Jul 30 17:34:55 2025
+* Date:           Tue Sep 23 15:46:01 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -102,8 +102,8 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_360   |   9|          2|    5|         10|
-    |i_fu_74                  |   9|          2|    5|         10|
+    |ap_sig_allocacmp_i       |   9|          2|    5|         10|
+    |i_244_fu_74              |   9|          2|    5|         10|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  36|          8|   12|         24|
     +-------------------------+----+-----------+-----+-----------+
@@ -115,8 +115,8 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |i_360_reg_340            |  5|   0|    5|          0|
-    |i_fu_74                  |  5|   0|    5|          0|
+    |i_244_fu_74              |  5|   0|    5|          0|
+    |i_reg_340                |  5|   0|    5|          0|
     +-------------------------+---+----+-----+-----------+
     |Total                    | 13|   0|   13|          0|
     +-------------------------+---+----+-----+-----------+
@@ -136,6 +136,22 @@
 |ap_done        |  out|    1|  ap_ctrl_hs|  cshake256_simple_Pipeline_VITIS_LOOP_436_2|  return value|
 |ap_idle        |  out|    1|  ap_ctrl_hs|  cshake256_simple_Pipeline_VITIS_LOOP_436_2|  return value|
 |ap_ready       |  out|    1|  ap_ctrl_hs|  cshake256_simple_Pipeline_VITIS_LOOP_436_2|  return value|
+|t_82_address0  |  out|    6|   ap_memory|                                        t_82|         array|
+|t_82_ce0       |  out|    1|   ap_memory|                                        t_82|         array|
+|t_82_we0       |  out|    1|   ap_memory|                                        t_82|         array|
+|t_82_d0        |  out|    8|   ap_memory|                                        t_82|         array|
+|t_82_address1  |  out|    6|   ap_memory|                                        t_82|         array|
+|t_82_ce1       |  out|    1|   ap_memory|                                        t_82|         array|
+|t_82_we1       |  out|    1|   ap_memory|                                        t_82|         array|
+|t_82_d1        |  out|    8|   ap_memory|                                        t_82|         array|
+|t_81_address0  |  out|    6|   ap_memory|                                        t_81|         array|
+|t_81_ce0       |  out|    1|   ap_memory|                                        t_81|         array|
+|t_81_we0       |  out|    1|   ap_memory|                                        t_81|         array|
+|t_81_d0        |  out|    8|   ap_memory|                                        t_81|         array|
+|t_81_address1  |  out|    6|   ap_memory|                                        t_81|         array|
+|t_81_ce1       |  out|    1|   ap_memory|                                        t_81|         array|
+|t_81_we1       |  out|    1|   ap_memory|                                        t_81|         array|
+|t_81_d1        |  out|    8|   ap_memory|                                        t_81|         array|
 |t_80_address0  |  out|    6|   ap_memory|                                        t_80|         array|
 |t_80_ce0       |  out|    1|   ap_memory|                                        t_80|         array|
 |t_80_we0       |  out|    1|   ap_memory|                                        t_80|         array|
@@ -144,22 +160,6 @@
 |t_80_ce1       |  out|    1|   ap_memory|                                        t_80|         array|
 |t_80_we1       |  out|    1|   ap_memory|                                        t_80|         array|
 |t_80_d1        |  out|    8|   ap_memory|                                        t_80|         array|
-|t_79_address0  |  out|    6|   ap_memory|                                        t_79|         array|
-|t_79_ce0       |  out|    1|   ap_memory|                                        t_79|         array|
-|t_79_we0       |  out|    1|   ap_memory|                                        t_79|         array|
-|t_79_d0        |  out|    8|   ap_memory|                                        t_79|         array|
-|t_79_address1  |  out|    6|   ap_memory|                                        t_79|         array|
-|t_79_ce1       |  out|    1|   ap_memory|                                        t_79|         array|
-|t_79_we1       |  out|    1|   ap_memory|                                        t_79|         array|
-|t_79_d1        |  out|    8|   ap_memory|                                        t_79|         array|
-|t_78_address0  |  out|    6|   ap_memory|                                        t_78|         array|
-|t_78_ce0       |  out|    1|   ap_memory|                                        t_78|         array|
-|t_78_we0       |  out|    1|   ap_memory|                                        t_78|         array|
-|t_78_d0        |  out|    8|   ap_memory|                                        t_78|         array|
-|t_78_address1  |  out|    6|   ap_memory|                                        t_78|         array|
-|t_78_ce1       |  out|    1|   ap_memory|                                        t_78|         array|
-|t_78_we1       |  out|    1|   ap_memory|                                        t_78|         array|
-|t_78_d1        |  out|    8|   ap_memory|                                        t_78|         array|
 |t_address0     |  out|    6|   ap_memory|                                           t|         array|
 |t_ce0          |  out|    1|   ap_memory|                                           t|         array|
 |t_we0          |  out|    1|   ap_memory|                                           t|         array|

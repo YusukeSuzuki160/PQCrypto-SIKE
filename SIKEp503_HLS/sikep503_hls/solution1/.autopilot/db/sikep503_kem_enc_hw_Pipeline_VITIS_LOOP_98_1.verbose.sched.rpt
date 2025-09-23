@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1'
 ================================================================
-* Date:           Wed Jul 30 17:34:41 2025
+* Date:           Tue Sep 23 15:45:49 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -87,7 +87,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 1.48>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_38, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_40, void @empty_33, void @empty_3, i32 16, i32 16, i32 16, i32 16, void @empty_3, void @empty_3, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%add_ln98_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %add_ln98"   --->   Operation 8 'read' 'add_ln98_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln44 = store i5 0, i5 %i" [src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 9 'store' 'store_ln44' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
@@ -124,9 +124,9 @@ ST_2 : Operation 38 [1/1] (0.22ns)   --->   "%xor_ln100 = xor i8 %h_load, i8 %tm
 ST_2 : Operation 44 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 44 'ret' 'ret_ln0' <Predicate = (icmp_ln98)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 7.30>
-ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3" [src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 39 'specpipeline' 'specpipeline_ln44' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 39 'specpipeline' 'specpipeline_ln44' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%speclooptripcount_ln44 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 24, i64 24, i64 24" [src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 40 'speclooptripcount' 'speclooptripcount_ln44' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln98 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 41 'specloopname' 'specloopname_ln98' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln98 = specloopname void @_ssdm_op_SpecLoopName, void @empty_23" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 41 'specloopname' 'specloopname_ln98' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 42 [1/1] (7.30ns)   --->   "%write_ln100 = write void @_ssdm_op_Write.m_axi.p1i8, i8 %gmem_addr, i8 %xor_ln100, i1 1" [src/sike.cpp:100->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 42 'write' 'write_ln100' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln98 = br void %for.inc.i" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 43 'br' 'br_ln98' <Predicate = true> <Delay = 0.00>
 
@@ -140,7 +140,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln44', src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46) of constant 0 on local variable 'i', src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46 [11]  (0.387 ns)
 	'load' operation 5 bit ('i', src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46) on local variable 'i', src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46 [14]  (0.000 ns)
-	'add' operation 5 bit ('add_ln98_1', src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46) [17]  (0.707 ns)
+	'icmp' operation 1 bit ('icmp_ln98', src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46) [16]  (0.707 ns)
 	'store' operation 0 bit ('store_ln44', src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46) of variable 'add_ln98_1', src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46 on local variable 'i', src/sike.cpp:44->src/sikep503_kem_enc_hw.cpp:46 [41]  (0.387 ns)
 
  <State 2>: 1.250ns

@@ -12,8 +12,8 @@ entity sikep503_kem_enc_hw_fpinv503_chain_mont_t_RAM_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 64; 
-        AddressWidth    : integer   := 7;
-        AddressRange    : integer   := 120
+        AddressWidth    : integer   := 4;
+        AddressRange    : integer   := 15
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

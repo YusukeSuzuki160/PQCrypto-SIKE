@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          280679
+        Offset:          280676
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -16,7 +16,7 @@ Diagnostics:
     FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          281145
+        Offset:          281142
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -25,7 +25,7 @@ Diagnostics:
     FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          281612
+        Offset:          281609
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -34,151 +34,271 @@ Diagnostics:
     FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          565425
+        Offset:          565422
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_29_1:  '
     FileOffset:      29
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1714491
+        Offset:          1009412
         Length:          0
         ReplacementText: 'VITIS_LOOP_29_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_35_2:  '
-    FileOffset:      35
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_46_1:  '
+    FileOffset:      46
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1714733
+        Offset:          1009825
         Length:          0
-        ReplacementText: 'VITIS_LOOP_35_2: '
+        ReplacementText: 'VITIS_LOOP_46_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_42_3:  '
-    FileOffset:      42
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_111_1:  '
+    FileOffset:      111
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1715067
+        Offset:          1011197
         Length:          0
-        ReplacementText: 'VITIS_LOOP_42_3: '
+        ReplacementText: 'VITIS_LOOP_111_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_57_1:  '
-    FileOffset:      57
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_117_2:  '
+    FileOffset:      117
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1715456
+        Offset:          1011281
         Length:          0
-        ReplacementText: 'VITIS_LOOP_57_1: '
+        ReplacementText: 'VITIS_LOOP_117_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_64_2:  '
-    FileOffset:      64
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_119_3:  '
+    FileOffset:      119
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1715759
+        Offset:          1011335
         Length:          0
-        ReplacementText: 'VITIS_LOOP_64_2: '
+        ReplacementText: 'VITIS_LOOP_119_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_75_1:  '
-    FileOffset:      75
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_133_4:  '
+    FileOffset:      133
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1716078
+        Offset:          1011747
         Length:          0
-        ReplacementText: 'VITIS_LOOP_75_1: '
+        ReplacementText: 'VITIS_LOOP_133_4: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_87_1:  '
-    FileOffset:      87
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_150_5:  '
+    FileOffset:      150
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1716496
+        Offset:          1012233
         Length:          0
-        ReplacementText: 'VITIS_LOOP_87_1: '
+        ReplacementText: 'VITIS_LOOP_150_5: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_101_1:  '
-    FileOffset:      101
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_165_1:  '
+    FileOffset:      165
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1716858
+        Offset:          1012595
         Length:          0
-        ReplacementText: 'VITIS_LOOP_101_1: '
+        ReplacementText: 'VITIS_LOOP_165_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_107_2:  '
-    FileOffset:      107
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_171_2:  '
+    FileOffset:      171
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1717192
+        Offset:          1012679
         Length:          0
-        ReplacementText: 'VITIS_LOOP_107_2: '
+        ReplacementText: 'VITIS_LOOP_171_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_219_1:  '
-    FileOffset:      219
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_173_3:  '
+    FileOffset:      173
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1717770
+        Offset:          1012733
         Length:          0
-        ReplacementText: 'VITIS_LOOP_219_1: '
+        ReplacementText: 'VITIS_LOOP_173_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_228_2:  '
-    FileOffset:      228
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_187_4:  '
+    FileOffset:      187
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1717955
+        Offset:          1013145
         Length:          0
-        ReplacementText: 'VITIS_LOOP_228_2: '
+        ReplacementText: 'VITIS_LOOP_187_4: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_291_1:  '
-    FileOffset:      291
-    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Message:         'Added loop label VITIS_LOOP_204_5:  '
+    FileOffset:      204
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/mpx_packed.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1718232
+        Offset:          1013631
         Length:          0
-        ReplacementText: 'VITIS_LOOP_291_1: '
+        ReplacementText: 'VITIS_LOOP_204_5: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_297_2:  '
-    FileOffset:      297
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1718293
+        Offset:          1721987
         Length:          0
-        ReplacementText: 'VITIS_LOOP_297_2: '
+        ReplacementText: 'VITIS_LOOP_33_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_299_3:  '
-    FileOffset:      299
+    Message:         'Added loop label VITIS_LOOP_39_2:  '
+    FileOffset:      39
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1718331
+        Offset:          1722229
         Length:          0
-        ReplacementText: 'VITIS_LOOP_299_3: '
+        ReplacementText: 'VITIS_LOOP_39_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_321_4:  '
-    FileOffset:      321
+    Message:         'Added loop label VITIS_LOOP_46_3:  '
+    FileOffset:      46
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1719441
+        Offset:          1722563
         Length:          0
-        ReplacementText: 'VITIS_LOOP_321_4: '
+        ReplacementText: 'VITIS_LOOP_46_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_327_5:  '
-    FileOffset:      327
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
-        Offset:          1719551
+        Offset:          1722952
         Length:          0
-        ReplacementText: 'VITIS_LOOP_327_5: '
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_2:  '
+    FileOffset:      68
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1723255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_79_1:  '
+    FileOffset:      79
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1723574
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_79_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_1:  '
+    FileOffset:      91
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1723992
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_1:  '
+    FileOffset:      105
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1724354
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_111_2:  '
+    FileOffset:      111
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1724688
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_111_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      275
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      276
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_1P pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      277
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P +  is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      278
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P +  is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      279
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P +  is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      280
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_305_1:  '
+    FileOffset:      305
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1727561
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_305_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_311_2:  '
+    FileOffset:      311
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1727622
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_311_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_313_3:  '
+    FileOffset:      313
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1727660
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_313_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_333_4:  '
+    FileOffset:      333
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1728678
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_333_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_339_5:  '
+    FileOffset:      339
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/generic/fp_generic.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/.autopilot/db/fp_generic.pp.0.cpp
+        Offset:          1728788
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_339_5: '
 ...

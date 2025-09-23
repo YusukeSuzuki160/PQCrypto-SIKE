@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'digit_x_digit'" level="0">
-<item name = "Date">Wed Jul 30 15:25:22 2025
+<item name = "Date">Tue Sep 23 15:46:15 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -63,10 +63,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_32ns_32ns_64_1_1_U537">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
-<column name="mul_32ns_32ns_64_1_1_U538">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
-<column name="mul_32ns_32ns_64_1_1_U539">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
-<column name="mul_32ns_32ns_64_1_1_U540">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U237">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U238">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U239">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U240">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -83,16 +83,16 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln125_fu_244_p2">+, 0, 0, 32, 32, 32</column>
-<column name="add_ln144_fu_148_p2">+, 0, 0, 40, 33, 33</column>
-<column name="add_ln151_1_fu_230_p2">+, 0, 0, 40, 33, 33</column>
-<column name="add_ln151_3_fu_214_p2">+, 0, 0, 32, 32, 32</column>
-<column name="add_ln151_fu_220_p2">+, 0, 0, 40, 33, 33</column>
-<column name="add_ln154_fu_303_p2">+, 0, 0, 71, 64, 64</column>
-<column name="temp_22_fu_250_p2">+, 0, 0, 41, 34, 34</column>
-<column name="temp_fu_158_p2">+, 0, 0, 41, 34, 34</column>
+<column name="add_ln159_fu_238_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln178_fu_142_p2">+, 0, 0, 40, 33, 33</column>
+<column name="add_ln185_1_fu_224_p2">+, 0, 0, 40, 33, 33</column>
+<column name="add_ln185_3_fu_208_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln185_fu_214_p2">+, 0, 0, 40, 33, 33</column>
+<column name="add_ln188_fu_297_p2">+, 0, 0, 71, 64, 64</column>
+<column name="temp_4_fu_244_p2">+, 0, 0, 41, 34, 34</column>
+<column name="temp_fu_152_p2">+, 0, 0, 41, 34, 34</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln154_fu_309_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln188_fu_303_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -101,13 +101,13 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln125_reg_337">32, 0, 32, 0</column>
+<column name="add_ln159_reg_331">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="tmp_324_reg_342">2, 0, 2, 0</column>
-<column name="tmp_325_reg_347">32, 0, 32, 0</column>
-<column name="trunc_ln126_reg_327">32, 0, 32, 0</column>
-<column name="trunc_ln146_reg_332">32, 0, 32, 0</column>
+<column name="tmp_16_reg_336">2, 0, 2, 0</column>
+<column name="tmp_17_reg_341">32, 0, 32, 0</column>
+<column name="trunc_ln160_reg_321">32, 0, 32, 0</column>
+<column name="trunc_ln180_reg_326">32, 0, 32, 0</column>
 </table>
 </item>
 </section>

@@ -614,6 +614,9 @@ void copy_words(const digit_t *a, digit_t *c, const unsigned int nwords)
 
 void fpmul503_mont(const felm_t ma, const felm_t mb, felm_t mc)
 {
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE core = Mul_LUT
     dfelm_t temp = {0};
 
     mp_mul(ma, mb, temp, 8);
@@ -622,6 +625,9 @@ void fpmul503_mont(const felm_t ma, const felm_t mb, felm_t mc)
 
 void fpsqr503_mont(const felm_t ma, felm_t mc)
 {
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE core = Mul_LUT
     dfelm_t temp = {0};
 
     mp_mul(ma, ma, temp, 8);

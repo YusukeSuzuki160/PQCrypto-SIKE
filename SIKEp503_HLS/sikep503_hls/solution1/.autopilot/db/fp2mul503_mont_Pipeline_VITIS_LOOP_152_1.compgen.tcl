@@ -11,45 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 462 \
-    name tt1 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename tt1 \
-    op interface \
-    ports { tt1_address0 { O 4 vector } tt1_ce0 { O 1 bit } tt1_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'tt1'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 463 \
-    name tt2 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename tt2 \
-    op interface \
-    ports { tt2_address0 { O 4 vector } tt2_ce0 { O 1 bit } tt2_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'tt2'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 464 \
+    id 1728 \
     name tt3 \
     reset_level 1 \
     sync_rst true \
@@ -67,7 +29,487 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 465 \
+    id 1696 \
+    name tt1_84 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_84 \
+    op interface \
+    ports { tt1_84 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1697 \
+    name tt1_85 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_85 \
+    op interface \
+    ports { tt1_85 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1698 \
+    name tt1_86 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_86 \
+    op interface \
+    ports { tt1_86 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1699 \
+    name tt1_87 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_87 \
+    op interface \
+    ports { tt1_87 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1700 \
+    name tt1_88 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_88 \
+    op interface \
+    ports { tt1_88 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1701 \
+    name tt1_89 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_89 \
+    op interface \
+    ports { tt1_89 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1702 \
+    name tt1_90 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_90 \
+    op interface \
+    ports { tt1_90 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1703 \
+    name tt1_91 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_91 \
+    op interface \
+    ports { tt1_91 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1704 \
+    name tt1_92 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_92 \
+    op interface \
+    ports { tt1_92 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1705 \
+    name tt1_93 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_93 \
+    op interface \
+    ports { tt1_93 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1706 \
+    name tt1_94 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_94 \
+    op interface \
+    ports { tt1_94 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1707 \
+    name tt1_95 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_95 \
+    op interface \
+    ports { tt1_95 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1708 \
+    name tt1_96 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_96 \
+    op interface \
+    ports { tt1_96 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1709 \
+    name tt1_97 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_97 \
+    op interface \
+    ports { tt1_97 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1710 \
+    name tt1_98 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_98 \
+    op interface \
+    ports { tt1_98 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1711 \
+    name tt1_99 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt1_99 \
+    op interface \
+    ports { tt1_99 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1712 \
+    name tt2_148 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_148 \
+    op interface \
+    ports { tt2_148 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1713 \
+    name tt2_149 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_149 \
+    op interface \
+    ports { tt2_149 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1714 \
+    name tt2_150 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_150 \
+    op interface \
+    ports { tt2_150 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1715 \
+    name tt2_151 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_151 \
+    op interface \
+    ports { tt2_151 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1716 \
+    name tt2_152 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_152 \
+    op interface \
+    ports { tt2_152 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1717 \
+    name tt2_153 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_153 \
+    op interface \
+    ports { tt2_153 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1718 \
+    name tt2_154 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_154 \
+    op interface \
+    ports { tt2_154 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1719 \
+    name tt2_155 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_155 \
+    op interface \
+    ports { tt2_155 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1720 \
+    name tt2_156 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_156 \
+    op interface \
+    ports { tt2_156 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1721 \
+    name tt2_157 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_157 \
+    op interface \
+    ports { tt2_157 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1722 \
+    name tt2_158 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_158 \
+    op interface \
+    ports { tt2_158 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1723 \
+    name tt2_159 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_159 \
+    op interface \
+    ports { tt2_159 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1724 \
+    name tt2_160 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_160 \
+    op interface \
+    ports { tt2_160 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1725 \
+    name tt2_161 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_161 \
+    op interface \
+    ports { tt2_161 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1726 \
+    name tt2_162 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_162 \
+    op interface \
+    ports { tt2_162 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1727 \
+    name tt2_163 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tt2_163 \
+    op interface \
+    ports { tt2_163 { I 64 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1729 \
     name borrow_out \
     type other \
     dir O \

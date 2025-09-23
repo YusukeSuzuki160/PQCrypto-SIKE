@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503'
 ================================================================
-* Date:           Wed Jul 30 17:35:37 2025
+* Date:           Tue Sep 23 15:47:36 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       23|       23|  0.230 us|  0.230 us|   23|   23|       no|
+    |       39|       39|  0.390 us|  0.390 us|   39|   39|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                             |                                   |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                   Instance                  |               Module              |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +---------------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpsub503_Pipeline_VITIS_LOOP_57_1_fu_40  |fpsub503_Pipeline_VITIS_LOOP_57_1  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpsub503_Pipeline_VITIS_LOOP_64_2_fu_53  |fpsub503_Pipeline_VITIS_LOOP_64_2  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpsub503_Pipeline_VITIS_LOOP_61_1_fu_26  |fpsub503_Pipeline_VITIS_LOOP_61_1  |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpsub503_Pipeline_VITIS_LOOP_68_2_fu_35  |fpsub503_Pipeline_VITIS_LOOP_68_2  |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +---------------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -57,12 +57,12 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        -|        -|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        0|      -|      153|     1368|     -|
+|Instance             |        0|      -|      150|     1374|     -|
 |Memory               |        -|      -|        -|        -|     -|
-|Multiplexer          |        -|      -|        0|       91|     -|
-|Register             |        -|      -|        8|        -|     -|
+|Multiplexer          |        -|      -|        0|       82|     -|
+|Register             |        -|      -|        6|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|      0|      161|     1459|     0|
+|Total                |        0|      0|      156|     1456|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
@@ -78,10 +78,10 @@
     +---------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
     |                   Instance                  |               Module              | BRAM_18K| DSP|  FF | LUT | URAM|
     +---------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
-    |grp_fpsub503_Pipeline_VITIS_LOOP_57_1_fu_40  |fpsub503_Pipeline_VITIS_LOOP_57_1  |        0|   0|   13|  636|    0|
-    |grp_fpsub503_Pipeline_VITIS_LOOP_64_2_fu_53  |fpsub503_Pipeline_VITIS_LOOP_64_2  |        0|   0|  140|  732|    0|
+    |grp_fpsub503_Pipeline_VITIS_LOOP_61_1_fu_26  |fpsub503_Pipeline_VITIS_LOOP_61_1  |        0|   0|   11|  627|    0|
+    |grp_fpsub503_Pipeline_VITIS_LOOP_68_2_fu_35  |fpsub503_Pipeline_VITIS_LOOP_68_2  |        0|   0|  139|  747|    0|
     +---------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
-    |Total                                        |                                   |        0|   0|  153| 1368|    0|
+    |Total                                        |                                   |        0|   0|  150| 1374|    0|
     +---------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -103,11 +103,10 @@
     |ap_NS_fsm   |  26|          5|    1|          5|
     |c_address0  |  14|          3|    3|          9|
     |c_ce0       |  14|          3|    1|          3|
-    |c_ce1       |   9|          2|    1|          2|
     |c_d0        |  14|          3|   64|        192|
     |c_we0       |  14|          3|    1|          3|
     +------------+----+-----------+-----+-----------+
-    |Total       |  91|         19|   71|        214|
+    |Total       |  82|         17|   70|        212|
     +------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -115,12 +114,10 @@
     |                           Name                           | FF| LUT| Bits| Const Bits|
     +----------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                 |  4|   0|    4|          0|
-    |grp_fpsub503_Pipeline_VITIS_LOOP_57_1_fu_40_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpsub503_Pipeline_VITIS_LOOP_64_2_fu_53_ap_start_reg  |  1|   0|    1|          0|
-    |tmp_reg_90                                                |  1|   0|    4|          3|
-    |tmp_s_reg_95                                              |  1|   0|    4|          3|
+    |grp_fpsub503_Pipeline_VITIS_LOOP_61_1_fu_26_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpsub503_Pipeline_VITIS_LOOP_68_2_fu_35_ap_start_reg  |  1|   0|    1|          0|
     +----------------------------------------------------------+---+----+-----+-----------+
-    |Total                                                     |  8|   0|   14|          6|
+    |Total                                                     |  6|   0|    6|          0|
     +----------------------------------------------------------+---+----+-----+-----------+
 
 
@@ -138,20 +135,13 @@
 |ap_done     |  out|    1|  ap_ctrl_hs|      fpsub503|  return value|
 |ap_idle     |  out|    1|  ap_ctrl_hs|      fpsub503|  return value|
 |ap_ready    |  out|    1|  ap_ctrl_hs|      fpsub503|  return value|
-|a_address0  |  out|    4|   ap_memory|             a|         array|
+|a_address0  |  out|    3|   ap_memory|             a|         array|
 |a_ce0       |  out|    1|   ap_memory|             a|         array|
 |a_q0        |   in|   64|   ap_memory|             a|         array|
-|a_offset    |   in|    1|     ap_none|      a_offset|        scalar|
-|b_address0  |  out|    4|   ap_memory|             b|         array|
-|b_ce0       |  out|    1|   ap_memory|             b|         array|
-|b_q0        |   in|   64|   ap_memory|             b|         array|
-|b_offset    |   in|    1|     ap_none|      b_offset|        scalar|
 |c_address0  |  out|    3|   ap_memory|             c|         array|
 |c_ce0       |  out|    1|   ap_memory|             c|         array|
 |c_we0       |  out|    1|   ap_memory|             c|         array|
 |c_d0        |  out|   64|   ap_memory|             c|         array|
-|c_address1  |  out|    3|   ap_memory|             c|         array|
-|c_ce1       |  out|    1|   ap_memory|             c|         array|
-|c_q1        |   in|   64|   ap_memory|             c|         array|
+|c_q0        |   in|   64|   ap_memory|             c|         array|
 +------------+-----+-----+------------+--------------+--------------+
 

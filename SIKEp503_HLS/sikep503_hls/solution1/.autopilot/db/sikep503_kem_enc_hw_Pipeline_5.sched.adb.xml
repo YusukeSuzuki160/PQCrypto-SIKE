@@ -46,7 +46,7 @@ newFuncRoot:0 %loop_index_i = alloca i32 1
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_38, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_40, void @empty_33, void @empty_3, i32 16, i32 16, i32 16, i32 16, void @empty_3, void @empty_3, i32 4294967295, i32 0, i32 0
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -198,10 +198,10 @@ load-store-loop.i.split:0 %gmem_addr = getelementptr i8 %gmem, i64 %ct_read
 
 <Node id="20" bw="2" op_0_bw="9">
 <![CDATA[
-load-store-loop.i.split:1 %empty_130 = trunc i9 %loop_index_i_load
+load-store-loop.i.split:1 %empty_132 = trunc i9 %loop_index_i_load
 
 ]]></Node>
-<StgValue><ssdm name="empty_130"/></StgValue>
+<StgValue><ssdm name="empty_132"/></StgValue>
 </operation>
 
 <operation id="18" st_id="1" stage="1" lat="1">
@@ -230,7 +230,7 @@ load-store-loop.i.split:5 %loop_index_i_udiv_cast = partselect i7 @_ssdm_op_Part
 
 <Node id="31" bw="0" op_0_bw="2" op_1_bw="0" op_2_bw="2" op_3_bw="0" op_4_bw="2" op_5_bw="0" op_6_bw="2" op_7_bw="0">
 <![CDATA[
-load-store-loop.i.split:12 %switch_ln0 = switch i2 %empty_130, void %.case.333, i2 0, void %.case.030, i2 1, void %.case.131, i2 2, void %.case.232
+load-store-loop.i.split:12 %switch_ln0 = switch i2 %empty_132, void %.case.333, i2 0, void %.case.030, i2 1, void %.case.131, i2 2, void %.case.232
 
 ]]></Node>
 <StgValue><ssdm name="switch_ln0"/></StgValue>
@@ -314,7 +314,7 @@ crypto_kem_enc.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-load-store-loop.i.split:2 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3
+load-store-loop.i.split:2 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -344,10 +344,10 @@ load-store-loop.i.split:3 %speclooptripcount_ln0 = speclooptripcount void @_ssdm
 
 <Node id="25" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-load-store-loop.i.split:6 %empty_131 = add i7 %loop_index_i_udiv_cast, i7 6
+load-store-loop.i.split:6 %empty_133 = add i7 %loop_index_i_udiv_cast, i7 6
 
 ]]></Node>
-<StgValue><ssdm name="empty_131"/></StgValue>
+<StgValue><ssdm name="empty_133"/></StgValue>
 </operation>
 
 <operation id="26" st_id="3" stage="1" lat="1">
@@ -359,7 +359,7 @@ load-store-loop.i.split:6 %empty_131 = add i7 %loop_index_i_udiv_cast, i7 6
 
 <Node id="26" bw="64" op_0_bw="7">
 <![CDATA[
-load-store-loop.i.split:7 %p_cast4 = zext i7 %empty_131
+load-store-loop.i.split:7 %p_cast4 = zext i7 %empty_133
 
 ]]></Node>
 <StgValue><ssdm name="p_cast4"/></StgValue>
@@ -429,7 +429,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="-2"/>
+<or_exp><and_exp><literal name="empty_132" val="-2"/>
 </and_exp></or_exp>
 </condition>
 
@@ -445,7 +445,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="-2"/>
+<or_exp><and_exp><literal name="empty_132" val="-2"/>
 </and_exp></or_exp>
 </condition>
 
@@ -461,7 +461,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="1"/>
+<or_exp><and_exp><literal name="empty_132" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -477,7 +477,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="1"/>
+<or_exp><and_exp><literal name="empty_132" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -493,7 +493,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="0"/>
+<or_exp><and_exp><literal name="empty_132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -509,7 +509,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="0"/>
+<or_exp><and_exp><literal name="empty_132" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -525,7 +525,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="-1"/>
+<or_exp><and_exp><literal name="empty_132" val="-1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -541,7 +541,7 @@ load-store-loop.i.split:11 %temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="empty_130" val="-1"/>
+<or_exp><and_exp><literal name="empty_132" val="-1"/>
 </and_exp></or_exp>
 </condition>
 

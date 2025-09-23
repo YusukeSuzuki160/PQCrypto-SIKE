@@ -73,15 +73,15 @@ CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o: CMakeFiles/mp_test_program
 CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o: /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mp_test_program.cpp
 CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o: CMakeFiles/mp_test_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o -MF CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o.d -o CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o -c /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mp_test_program.cpp
+	/home/meltpoint/.pyenv/shims/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o -MF CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o.d -o CMakeFiles/mp_test_program.dir/mp_test_program.cpp.o -c /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mp_test_program.cpp
 
 CMakeFiles/mp_test_program.dir/mp_test_program.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mp_test_program.dir/mp_test_program.cpp.i"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mp_test_program.cpp > CMakeFiles/mp_test_program.dir/mp_test_program.cpp.i
+	/home/meltpoint/.pyenv/shims/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mp_test_program.cpp > CMakeFiles/mp_test_program.dir/mp_test_program.cpp.i
 
 CMakeFiles/mp_test_program.dir/mp_test_program.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mp_test_program.dir/mp_test_program.cpp.s"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mp_test_program.cpp -o CMakeFiles/mp_test_program.dir/mp_test_program.cpp.s
+	/home/meltpoint/.pyenv/shims/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mp_test_program.cpp -o CMakeFiles/mp_test_program.dir/mp_test_program.cpp.s
 
 # Object files for target mp_test_program
 mp_test_program_OBJECTS = \

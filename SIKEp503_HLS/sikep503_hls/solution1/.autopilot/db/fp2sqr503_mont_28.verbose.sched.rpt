@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2sqr503_mont_28'
 ================================================================
-* Date:           Wed Jul 30 16:56:02 2025
+* Date:           Wed Sep  3 15:11:41 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.675 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.162 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      377|      687|  3.770 us|  6.870 us|  377|  687|       no|
+    |      291|      503|  2.910 us|  5.030 us|  291|  503|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -88,47 +88,47 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 13 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%temp = alloca i64 1" [src/fpx.cpp:56->src/fpx.cpp:145]   --->   Operation 14 'alloca' 'temp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%temp_8 = alloca i64 1" [src/fpx.cpp:56->src/fpx.cpp:144]   --->   Operation 15 'alloca' 'temp_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%temp_26 = alloca i64 1" [src/fpx.cpp:56->src/fpx.cpp:144]   --->   Operation 15 'alloca' 'temp_26' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/fpx.cpp:139]   --->   Operation 16 'alloca' 't1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%t2 = alloca i64 1" [src/fpx.cpp:139]   --->   Operation 17 'alloca' 't2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%t3 = alloca i64 1" [src/fpx.cpp:139]   --->   Operation 18 'alloca' 't3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_370_1, i64 %R_Z, i64 %t1"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_5, i64 %temp_8"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_5, i64 %temp_26"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_6, i64 %temp"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 1.48>
 ST_2 : Operation 22 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_370_1, i64 %R_Z, i64 %t1"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 23 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_5, i64 %temp_8"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 23 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_5, i64 %temp_26"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 24 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_6, i64 %temp"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_57_1, i64 %R_Z, i64 %t2, i1 %borrow_loc"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_61_1, i64 %R_Z, i64 %t2, i1 %borrow_loc"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
-ST_4 : Operation 26 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_57_1, i64 %R_Z, i64 %t2, i1 %borrow_loc"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 26 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_61_1, i64 %R_Z, i64 %t2, i1 %borrow_loc"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.27>
 ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 27 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 28 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_64_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
-ST_5 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_370_1129, i64 %R_Z, i64 %t3"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 28 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_68_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_370_1161, i64 %R_Z, i64 %t3"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.48>
-ST_6 : Operation 30 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_64_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 31 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_370_1129, i64 %R_Z, i64 %t3"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 30 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_68_2, i64 %t2, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 31 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2sqr503_mont.28_Pipeline_VITIS_LOOP_370_1161, i64 %R_Z, i64 %t3"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln58 = call void @mp_mul.4119, i64 %t1, i64 %t2, i64 %temp_8" [src/fpx.cpp:58->src/fpx.cpp:144]   --->   Operation 32 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln58 = call void @mp_mul.5019, i64 %t3, i64 %R_Z, i64 %temp" [src/fpx.cpp:58->src/fpx.cpp:145]   --->   Operation 33 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln283 = call void @mul.4119, i64 %t1, i64 %t2, i64 %temp_26" [src/generic/fp_generic.cpp:283->src/fpx.cpp:58->src/fpx.cpp:144]   --->   Operation 32 'call' 'call_ln283' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln283 = call void @mul.5019, i64 %t3, i64 %R_Z, i64 %temp" [src/generic/fp_generic.cpp:283->src/fpx.cpp:58->src/fpx.cpp:145]   --->   Operation 33 'call' 'call_ln283' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 8 <SV = 7> <Delay = 0.70>
-ST_8 : Operation 34 [1/2] (0.70ns)   --->   "%call_ln58 = call void @mp_mul.4119, i64 %t1, i64 %t2, i64 %temp_8" [src/fpx.cpp:58->src/fpx.cpp:144]   --->   Operation 34 'call' 'call_ln58' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
-ST_8 : Operation 35 [1/2] (0.70ns)   --->   "%call_ln58 = call void @mp_mul.5019, i64 %t3, i64 %R_Z, i64 %temp" [src/fpx.cpp:58->src/fpx.cpp:145]   --->   Operation 35 'call' 'call_ln58' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln283 = call void @mul.4119, i64 %t1, i64 %t2, i64 %temp_26" [src/generic/fp_generic.cpp:283->src/fpx.cpp:58->src/fpx.cpp:144]   --->   Operation 34 'call' 'call_ln283' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln283 = call void @mul.5019, i64 %t3, i64 %R_Z, i64 %temp" [src/generic/fp_generic.cpp:283->src/fpx.cpp:58->src/fpx.cpp:145]   --->   Operation 35 'call' 'call_ln283' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.52, i64 %temp_8, i64 %coeff, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:144]   --->   Operation 36 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.52, i64 %temp_26, i64 %coeff, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:144]   --->   Operation 36 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.52, i64 %temp_8, i64 %coeff, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:144]   --->   Operation 37 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln59 = call void @rdc_mont.52, i64 %temp_26, i64 %coeff, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:144]   --->   Operation 37 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 1.42>
 ST_11 : Operation 38 [2/2] (1.42ns)   --->   "%call_ln59 = call void @rdc_mont.53, i64 %temp, i64 %coeff, i9 64, i64 %p503p1_1" [src/fpx.cpp:59->src/fpx.cpp:145]   --->   Operation 38 'call' 'call_ln59' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
@@ -156,23 +156,22 @@ The critical path consists of the following:
 
  <State 4>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'fp2sqr503_mont.28_Pipeline_VITIS_LOOP_57_1' [13]  (1.482 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2sqr503_mont.28_Pipeline_VITIS_LOOP_61_1' [13]  (1.482 ns)
 
  <State 5>: 0.278ns
 The critical path consists of the following:
 	'load' operation 1 bit ('borrow_loc_load') on local variable 'borrow_loc' [14]  (0.000 ns)
-	'call' operation 0 bit ('call_ln0') to 'fp2sqr503_mont.28_Pipeline_VITIS_LOOP_64_2' [15]  (0.278 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2sqr503_mont.28_Pipeline_VITIS_LOOP_68_2' [15]  (0.278 ns)
 
  <State 6>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'fp2sqr503_mont.28_Pipeline_VITIS_LOOP_64_2' [15]  (1.482 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2sqr503_mont.28_Pipeline_VITIS_LOOP_68_2' [15]  (1.482 ns)
 
  <State 7>: 0.000ns
 The critical path consists of the following:
 
- <State 8>: 0.708ns
+ <State 8>: 0.000ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln58', src/fpx.cpp:58->src/fpx.cpp:144) to 'mp_mul.4119' [18]  (0.708 ns)
 
  <State 9>: 0.000ns
 The critical path consists of the following:

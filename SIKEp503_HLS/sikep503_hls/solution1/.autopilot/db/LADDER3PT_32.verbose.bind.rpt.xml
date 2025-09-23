@@ -1,0 +1,82 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'LADDER3PT_32'" level="0">
+<item name = "Date">Tue Sep 23 15:22:32 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">793357, 1249357, 7.934 ms, 12.494 ms, 793357, 1249357, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_LADDER3PT_32_Pipeline_1_fu_883">LADDER3PT_32_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1_fu_895">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_2_fu_903">fpadd503_2, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
+<column name="grp_fpadd503_4_fu_911">fpadd503_4, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1183_fu_922">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1183, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1184_fu_929">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1184, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1185_fu_936">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1185, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1186_fu_943">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1186, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1187_fu_950">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1187, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1188_fu_957">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1188, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2div2_503_fu_964">fp2div2_503, 73, 73, 0.730 us, 0.730 us, 73, 73, no</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1189_fu_974">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1189, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1191_fu_982">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1191, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_13_1190_fu_990">LADDER3PT_32_Pipeline_VITIS_LOOP_13_1190, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_21_1_fu_998">LADDER3PT_32_Pipeline_VITIS_LOOP_21_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_LADDER3PT_32_Pipeline_VITIS_LOOP_269_1_fu_1004">LADDER3PT_32_Pipeline_VITIS_LOOP_269_1, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_1_fu_1017">fpadd503_1, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_fpadd503_1_fu_1026">fpadd503_1, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_fpsub503_2_fu_1035">fpsub503_2, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
+<column name="grp_fpsub503_2_fu_1044">fpsub503_2, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
+<column name="grp_fp2sqr503_mont_5_fu_1053">fp2sqr503_mont_5, 375, 603, 3.750 us, 6.030 us, 375, 603, no</column>
+<column name="grp_fpcorrection503_fu_1065">fpcorrection503, 39, 39, 0.390 us, 0.390 us, 39, 39, no</column>
+<column name="grp_fpcorrection503_fu_1072">fpcorrection503, 39, 39, 0.390 us, 0.390 us, 39, 39, no</column>
+<column name="grp_fpadd503_246_1_fu_1079">fpadd503_246_1, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
+<column name="grp_fpadd503_246_1_fu_1087">fpadd503_246_1, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
+<column name="grp_fp2mul503_mont_127_2_fu_1095">fp2mul503_mont_127_2, 350, 578, 3.500 us, 5.780 us, 350, 578, no</column>
+<column name="grp_fp2mul503_mont_126_fu_1107">fp2mul503_mont_126, 350, 578, 3.500 us, 5.780 us, 350, 578, no</column>
+<column name="grp_fpsub503_3_fu_1119">fpsub503_3, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
+<column name="grp_fpsub503_3_fu_1128">fpsub503_3, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
+<column name="grp_fp2mul503_mont_124_fu_1137">fp2mul503_mont_124, 350, 578, 3.500 us, 5.780 us, 350, 578, no</column>
+<column name="grp_fp2mul503_mont_7_fu_1149">fp2mul503_mont_7, 350, 578, 3.500 us, 5.780 us, 350, 578, no</column>
+<column name="grp_fp2sqr503_mont_4_fu_1165">fp2sqr503_mont_4, 375, 603, 3.750 us, 6.030 us, 375, 603, no</column>
+<column name="grp_fpadd503_246_fu_1175">fpadd503_246, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
+<column name="grp_fp2mul503_mont_35_fu_1183">fp2mul503_mont_35, 386, 614, 3.860 us, 6.140 us, 386, 614, no</column>
+<column name="grp_fpadd503_fu_1196">fpadd503, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_fp2mul503_mont_125_fu_1205">fp2mul503_mont_125, 350, 578, 3.500 us, 5.780 us, 350, 578, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_319_1">793000, 1249000, 3172 ~ 4996, -, -, 250, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

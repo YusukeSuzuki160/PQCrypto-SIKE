@@ -7,257 +7,55 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# Direct connection:
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4600 \
-    name a_read \
-    type other \
-    dir I \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 141 \
+    name c_0 \
     reset_level 1 \
     sync_rst true \
-    corename dc_a_read \
+    dir IO \
+    corename c_0 \
     op interface \
-    ports { a_read { I 64 vector } } \
+    ports { c_0_address0 { O 2 vector } c_0_ce0 { O 1 bit } c_0_we0 { O 1 bit } c_0_d0 { O 64 vector } c_0_q0 { I 64 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c_0'"
+}
 }
 
-# Direct connection:
+
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4601 \
-    name a_read_645 \
-    type other \
-    dir I \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 142 \
+    name c_1 \
     reset_level 1 \
     sync_rst true \
-    corename dc_a_read_645 \
+    dir IO \
+    corename c_1 \
     op interface \
-    ports { a_read_645 { I 64 vector } } \
+    ports { c_1_address0 { O 2 vector } c_1_ce0 { O 1 bit } c_1_we0 { O 1 bit } c_1_d0 { O 64 vector } c_1_q0 { I 64 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c_1'"
+}
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4602 \
-    name a_read_646 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_a_read_646 \
-    op interface \
-    ports { a_read_646 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4603 \
-    name a_read_647 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_a_read_647 \
-    op interface \
-    ports { a_read_647 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4604 \
-    name a_read_648 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_a_read_648 \
-    op interface \
-    ports { a_read_648 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4605 \
-    name a_read_649 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_a_read_649 \
-    op interface \
-    ports { a_read_649 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4606 \
-    name a_read_650 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_a_read_650 \
-    op interface \
-    ports { a_read_650 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4607 \
-    name a_read_651 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_a_read_651 \
-    op interface \
-    ports { a_read_651 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4608 \
-    name b_read \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read \
-    op interface \
-    ports { b_read { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4609 \
-    name b_read_358 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read_358 \
-    op interface \
-    ports { b_read_358 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4610 \
-    name b_read_359 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read_359 \
-    op interface \
-    ports { b_read_359 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4611 \
-    name b_read_360 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read_360 \
-    op interface \
-    ports { b_read_360 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4612 \
-    name b_read_361 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read_361 \
-    op interface \
-    ports { b_read_361 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4613 \
-    name b_read_362 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read_362 \
-    op interface \
-    ports { b_read_362 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4614 \
-    name b_read_363 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read_363 \
-    op interface \
-    ports { b_read_363 { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4615 \
-    name b_read_364 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_b_read_364 \
-    op interface \
-    ports { b_read_364 { I 64 vector } } \
-} "
-}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id -1 \
-    name ap_return \
-    type ap_return \
+    name ap_ctrl \
+    type ap_ctrl \
     reset_level 1 \
     sync_rst true \
-    corename ap_return \
+    corename ap_ctrl \
     op interface \
-    ports { ap_return { O 1 vector } } \
+    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
 } "
 }
 

@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_14'
+================================================================
+* Date:           Tue Sep 23 15:23:05 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.581 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       32|       32|  0.320 us|  0.320 us|   32|   32|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%A_26_loc = alloca i64 1"   --->   Operation 6 'alloca' 'A_26_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%A_1_loc = alloca i64 1"   --->   Operation 7 'alloca' 'A_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mul.14_Pipeline_VITIS_LOOP_32_1, i64 %a, i512 %A_1_loc"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mul.14_Pipeline_VITIS_LOOP_32_198, i64 %b_0, i64 %b_1, i512 %A_26_loc"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.48>
+ST_2 : Operation 10 [1/2] (1.48ns)   --->   "%call_ln0 = call void @mul.14_Pipeline_VITIS_LOOP_32_1, i64 %a, i512 %A_1_loc"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 11 [1/2] (1.48ns)   --->   "%call_ln0 = call void @mul.14_Pipeline_VITIS_LOOP_32_198, i64 %b_0, i64 %b_1, i512 %A_26_loc"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 3.61>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%A_1_loc_load = load i512 %A_1_loc"   --->   Operation 12 'load' 'A_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%A_26_loc_load = load i512 %A_26_loc"   --->   Operation 13 'load' 'A_26_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln138 = zext i512 %A_1_loc_load" [src/generic/mpx_packed.hpp:138]   --->   Operation 14 'zext' 'zext_ln138' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln138_9 = zext i512 %A_26_loc_load" [src/generic/mpx_packed.hpp:138]   --->   Operation 15 'zext' 'zext_ln138_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [2/2] (3.61ns)   --->   "%P = mul i1024 %zext_ln138_9, i1024 %zext_ln138" [src/generic/mpx_packed.hpp:138]   --->   Operation 16 'mul' 'P' <Predicate = true> <Delay = 3.61> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 3.61> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.58>
+ST_4 : Operation 17 [1/2] (3.61ns)   --->   "%P = mul i1024 %zext_ln138_9, i1024 %zext_ln138" [src/generic/mpx_packed.hpp:138]   --->   Operation 17 'mul' 'P' <Predicate = true> <Delay = 3.61> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 3.61> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 18 [2/2] (1.96ns)   --->   "%call_ln138 = call void @mul.14_Pipeline_VITIS_LOOP_52_1, i1024 %P, i64 %c" [src/generic/mpx_packed.hpp:138]   --->   Operation 18 'call' 'call_ln138' <Predicate = true> <Delay = 1.96> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 1.48>
+ST_5 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 23 [1/2] (1.48ns)   --->   "%call_ln138 = call void @mul.14_Pipeline_VITIS_LOOP_52_1, i1024 %P, i64 %c" [src/generic/mpx_packed.hpp:138]   --->   Operation 23 'call' 'call_ln138' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln140 = ret" [src/generic/mpx_packed.hpp:140]   --->   Operation 24 'ret' 'ret_ln140' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'mul.14_Pipeline_VITIS_LOOP_32_1' [11]  (1.482 ns)
+
+ <State 3>: 3.612ns
+The critical path consists of the following:
+	'load' operation 512 bit ('A_1_loc_load') on local variable 'A_1_loc' [12]  (0.000 ns)
+	'mul' operation 1024 bit ('P', src/generic/mpx_packed.hpp:138) [17]  (3.612 ns)
+
+ <State 4>: 5.581ns
+The critical path consists of the following:
+	'mul' operation 1024 bit ('P', src/generic/mpx_packed.hpp:138) [17]  (3.612 ns)
+	'call' operation 0 bit ('call_ln138', src/generic/mpx_packed.hpp:138) to 'mul.14_Pipeline_VITIS_LOOP_52_1' [18]  (1.969 ns)
+
+ <State 5>: 1.481ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln138', src/generic/mpx_packed.hpp:138) to 'mul.14_Pipeline_VITIS_LOOP_52_1' [18]  (1.481 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,868 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2mul503_mont_50'
+================================================================
+* Date:           Tue Sep 23 15:20:34 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      386|      614|  3.860 us|  6.140 us|  386|  614|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------+------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                           |                                                |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                          Instance                         |                     Module                     |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +-----------------------------------------------------------+------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_mp_mul_63_fu_68                                        |mp_mul_63                                       |       33|       33|  0.330 us|  0.330 us|   33|   33|                                              no|
+        |grp_mp_mul_62_fu_78                                        |mp_mul_62                                       |       33|       33|  0.330 us|  0.330 us|   33|   33|                                              no|
+        |grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1_fu_89      |fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1     |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1124_fu_98   |fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1124  |       19|       19|  0.190 us|  0.190 us|   18|   18|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1_fu_105     |fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1     |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_187_1_fu_113     |fp2mul503_mont_50_Pipeline_VITIS_LOOP_187_1     |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1125_fu_121  |fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1125  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_rdc_mont_6_fu_127                                      |rdc_mont_6                                      |      110|      224|  1.100 us|  2.240 us|  110|  224|                                              no|
+        |grp_mp_mul_6105_fu_137                                     |mp_mul_6105                                     |       33|       33|  0.330 us|  0.330 us|   33|   33|                                              no|
+        |grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1126_fu_144  |fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1126  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +-----------------------------------------------------------+------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.71>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 15 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.71ns)   --->   "%t1 = alloca i64 1" [src/fpx.cpp:177]   --->   Operation 16 'alloca' 't1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 17 [1/1] (0.71ns)   --->   "%t2 = alloca i64 1" [src/fpx.cpp:177]   --->   Operation 17 'alloca' 't2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 18 [1/1] (0.71ns)   --->   "%tt1 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 18 'alloca' 'tt1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 19 [1/1] (0.71ns)   --->   "%tt2 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 19 'alloca' 'tt2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 20 [1/1] (0.71ns)   --->   "%tt3 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 20 'alloca' 'tt3' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln182 = call void @mp_mul.63, i64 %c_0, i64 %coeff, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 21 'call' 'call_ln182' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln182 = call void @mp_mul.63, i64 %c_0, i64 %coeff, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 22 'call' 'call_ln182' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 1.42>
+ST_3 : Operation 23 [2/2] (1.42ns)   --->   "%call_ln183 = call void @mp_mul.62, i64 %c_1, i64 %coeff, i9 64, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 23 'call' 'call_ln183' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 24 [1/2] (0.00ns)   --->   "%call_ln183 = call void @mp_mul.62, i64 %c_1, i64 %coeff, i9 64, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 24 'call' 'call_ln183' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1, i64 %c_0, i64 %c_1, i64 %t1"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1124, i64 %coeff, i64 %t2"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 1.48>
+ST_6 : Operation 28 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1, i64 %c_0, i64 %c_1, i64 %t1"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1124, i64 %coeff, i64 %t2"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 30 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.27>
+ST_7 : Operation 31 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 31 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 32 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1125, i64 %tt1, i64 %tt2"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 1.48>
+ST_8 : Operation 34 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 35 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1125, i64 %tt1, i64 %tt2"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln191 = call void @rdc_mont.6, i64 %tt3, i64 %c_0, i64 %p503p1_1" [src/fpx.cpp:191]   --->   Operation 36 'call' 'call_ln191' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 37 [2/2] (0.00ns)   --->   "%call_ln193 = call void @mp_mul.6105, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 37 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln191 = call void @rdc_mont.6, i64 %tt3, i64 %c_0, i64 %p503p1_1" [src/fpx.cpp:191]   --->   Operation 38 'call' 'call_ln191' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 39 [1/2] (0.00ns)   --->   "%call_ln193 = call void @mp_mul.6105, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 39 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_160_1126, i64 %tt2, i64 %tt1"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 1.48>
+ST_12 : Operation 41 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.50_Pipeline_VITIS_LOOP_160_1126, i64 %tt2, i64 %tt1"   --->   Operation 41 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln195 = call void @rdc_mont.6, i64 %tt2, i64 %c_1, i64 %p503p1_1" [src/fpx.cpp:195]   --->   Operation 42 'call' 'call_ln195' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 43 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 43 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 44 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 44 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 45 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 45 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 46 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 46 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 47 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 47 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 48 [1/1] (0.00ns)   --->   "%specmemcore_ln182 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:182]   --->   Operation 48 'specmemcore' 'specmemcore_ln182' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 49 [1/1] (0.00ns)   --->   "%specmemcore_ln182 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:182]   --->   Operation 49 'specmemcore' 'specmemcore_ln182' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 50 [1/1] (0.00ns)   --->   "%specmemcore_ln182 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:182]   --->   Operation 50 'specmemcore' 'specmemcore_ln182' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 51 [1/1] (0.00ns)   --->   "%specmemcore_ln182 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:182]   --->   Operation 51 'specmemcore' 'specmemcore_ln182' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 52 [1/1] (0.00ns)   --->   "%specmemcore_ln182 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:182]   --->   Operation 52 'specmemcore' 'specmemcore_ln182' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 53 [1/1] (0.00ns)   --->   "%specmemcore_ln183 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:183]   --->   Operation 53 'specmemcore' 'specmemcore_ln183' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 54 [1/1] (0.00ns)   --->   "%specmemcore_ln183 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:183]   --->   Operation 54 'specmemcore' 'specmemcore_ln183' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 55 [1/1] (0.00ns)   --->   "%specmemcore_ln183 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:183]   --->   Operation 55 'specmemcore' 'specmemcore_ln183' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 56 [1/1] (0.00ns)   --->   "%specmemcore_ln183 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:183]   --->   Operation 56 'specmemcore' 'specmemcore_ln183' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 57 [1/1] (0.00ns)   --->   "%specmemcore_ln183 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:183]   --->   Operation 57 'specmemcore' 'specmemcore_ln183' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 58 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt3, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 58 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 59 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 59 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 60 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 60 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 61 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 61 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 62 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 62 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 63 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 63 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 64 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 64 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 65 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 65 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 66 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 66 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 67 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 67 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 68 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 68 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 69 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 69 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 70 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 70 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 71 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 71 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 72 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 72 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 73 [1/1] (0.00ns)   --->   "%specmemcore_ln193 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt2, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:193]   --->   Operation 73 'specmemcore' 'specmemcore_ln193' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 74 [1/2] (0.00ns)   --->   "%call_ln195 = call void @rdc_mont.6, i64 %tt2, i64 %c_1, i64 %p503p1_1" [src/fpx.cpp:195]   --->   Operation 74 'call' 'call_ln195' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 75 [1/1] (0.00ns)   --->   "%ret_ln196 = ret" [src/fpx.cpp:196]   --->   Operation 75 'ret' 'ret_ln196' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ c_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ c_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ coeff]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ p503_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ p503p1_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+borrow_loc        (alloca     ) [ 001111110000000]
+t1                (alloca     ) [ 001111111111111]
+t2                (alloca     ) [ 001111111111111]
+tt1               (alloca     ) [ 001111111111111]
+tt2               (alloca     ) [ 001111111111111]
+tt3               (alloca     ) [ 001111111111111]
+call_ln182        (call       ) [ 000000000000000]
+call_ln183        (call       ) [ 000000000000000]
+call_ln0          (call       ) [ 000000000000000]
+call_ln0          (call       ) [ 000000000000000]
+call_ln0          (call       ) [ 000000000000000]
+borrow_loc_load   (load       ) [ 000000001000000]
+call_ln0          (call       ) [ 000000000000000]
+call_ln0          (call       ) [ 000000000000000]
+call_ln191        (call       ) [ 000000000000000]
+call_ln193        (call       ) [ 000000000000000]
+call_ln0          (call       ) [ 000000000000000]
+specmemcore_ln0   (specmemcore) [ 000000000000000]
+specmemcore_ln0   (specmemcore) [ 000000000000000]
+specmemcore_ln0   (specmemcore) [ 000000000000000]
+specmemcore_ln0   (specmemcore) [ 000000000000000]
+specmemcore_ln0   (specmemcore) [ 000000000000000]
+specmemcore_ln182 (specmemcore) [ 000000000000000]
+specmemcore_ln182 (specmemcore) [ 000000000000000]
+specmemcore_ln182 (specmemcore) [ 000000000000000]
+specmemcore_ln182 (specmemcore) [ 000000000000000]
+specmemcore_ln182 (specmemcore) [ 000000000000000]
+specmemcore_ln183 (specmemcore) [ 000000000000000]
+specmemcore_ln183 (specmemcore) [ 000000000000000]
+specmemcore_ln183 (specmemcore) [ 000000000000000]
+specmemcore_ln183 (specmemcore) [ 000000000000000]
+specmemcore_ln183 (specmemcore) [ 000000000000000]
+specmemcore_ln0   (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+specmemcore_ln193 (specmemcore) [ 000000000000000]
+call_ln195        (call       ) [ 000000000000000]
+ret_ln196         (ret        ) [ 000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="c_0">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="c_0"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="c_1">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="c_1"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="coeff">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="coeff"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="p503_1">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p503_1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="p503p1_1">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p503p1_1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mp_mul.63"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mp_mul.62"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1124"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fp2mul503_mont.50_Pipeline_VITIS_LOOP_160_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fp2mul503_mont.50_Pipeline_VITIS_LOOP_187_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fp2mul503_mont.50_Pipeline_VITIS_LOOP_378_1125"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rdc_mont.6"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mp_mul.6105"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fp2mul503_mont.50_Pipeline_VITIS_LOOP_160_1126"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1004" name="borrow_loc_fu_44">
+<pin_list>
+<pin id="45" dir="0" index="0" bw="1" slack="0"/>
+<pin id="46" dir="1" index="1" bw="1" slack="4"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="borrow_loc/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="t1_alloca_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="1" slack="0"/>
+<pin id="50" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="t1/1 "/>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="t2_alloca_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="1" slack="0"/>
+<pin id="54" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="t2/1 "/>
+</bind>
+</comp>
+
+<comp id="56" class="1004" name="tt1_alloca_fu_56">
+<pin_list>
+<pin id="57" dir="0" index="0" bw="1" slack="0"/>
+<pin id="58" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="tt1/1 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1004" name="tt2_alloca_fu_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="1" slack="0"/>
+<pin id="62" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="tt2/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="tt3_alloca_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="1" slack="0"/>
+<pin id="66" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="tt3/1 "/>
+</bind>
+</comp>
+
+<comp id="68" class="1004" name="grp_mp_mul_63_fu_68">
+<pin_list>
+<pin id="69" dir="0" index="0" bw="0" slack="0"/>
+<pin id="70" dir="0" index="1" bw="64" slack="0"/>
+<pin id="71" dir="0" index="2" bw="64" slack="0"/>
+<pin id="72" dir="0" index="3" bw="64" slack="0"/>
+<pin id="73" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln182/1 "/>
+</bind>
+</comp>
+
+<comp id="78" class="1004" name="grp_mp_mul_62_fu_78">
+<pin_list>
+<pin id="79" dir="0" index="0" bw="0" slack="0"/>
+<pin id="80" dir="0" index="1" bw="64" slack="0"/>
+<pin id="81" dir="0" index="2" bw="64" slack="0"/>
+<pin id="82" dir="0" index="3" bw="8" slack="0"/>
+<pin id="83" dir="0" index="4" bw="64" slack="2147483647"/>
+<pin id="84" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln183/3 "/>
+</bind>
+</comp>
+
+<comp id="89" class="1004" name="grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1_fu_89">
+<pin_list>
+<pin id="90" dir="0" index="0" bw="0" slack="0"/>
+<pin id="91" dir="0" index="1" bw="64" slack="0"/>
+<pin id="92" dir="0" index="2" bw="64" slack="0"/>
+<pin id="93" dir="0" index="3" bw="64" slack="2147483647"/>
+<pin id="94" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/5 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1124_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="0" slack="0"/>
+<pin id="100" dir="0" index="1" bw="64" slack="0"/>
+<pin id="101" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="102" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/5 "/>
+</bind>
+</comp>
+
+<comp id="105" class="1004" name="grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1_fu_105">
+<pin_list>
+<pin id="106" dir="0" index="0" bw="0" slack="0"/>
+<pin id="107" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="108" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="109" dir="0" index="3" bw="64" slack="2147483647"/>
+<pin id="110" dir="0" index="4" bw="1" slack="4"/>
+<pin id="111" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/5 "/>
+</bind>
+</comp>
+
+<comp id="113" class="1004" name="grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_187_1_fu_113">
+<pin_list>
+<pin id="114" dir="0" index="0" bw="0" slack="0"/>
+<pin id="115" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="116" dir="0" index="2" bw="1" slack="0"/>
+<pin id="117" dir="0" index="3" bw="64" slack="0"/>
+<pin id="118" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/7 "/>
+</bind>
+</comp>
+
+<comp id="121" class="1004" name="grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1125_fu_121">
+<pin_list>
+<pin id="122" dir="0" index="0" bw="0" slack="0"/>
+<pin id="123" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="124" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="125" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/7 "/>
+</bind>
+</comp>
+
+<comp id="127" class="1004" name="grp_rdc_mont_6_fu_127">
+<pin_list>
+<pin id="128" dir="0" index="0" bw="0" slack="0"/>
+<pin id="129" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="130" dir="0" index="2" bw="64" slack="0"/>
+<pin id="131" dir="0" index="3" bw="64" slack="0"/>
+<pin id="132" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln191/9 call_ln195/13 "/>
+</bind>
+</comp>
+
+<comp id="137" class="1004" name="grp_mp_mul_6105_fu_137">
+<pin_list>
+<pin id="138" dir="0" index="0" bw="0" slack="0"/>
+<pin id="139" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="140" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="141" dir="0" index="3" bw="64" slack="2147483647"/>
+<pin id="142" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln193/9 "/>
+</bind>
+</comp>
+
+<comp id="144" class="1004" name="grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1126_fu_144">
+<pin_list>
+<pin id="145" dir="0" index="0" bw="0" slack="0"/>
+<pin id="146" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="147" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="148" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/11 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1004" name="borrow_loc_load_load_fu_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="1" slack="6"/>
+<pin id="152" dir="1" index="1" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="borrow_loc_load/7 "/>
+</bind>
+</comp>
+
+<comp id="154" class="1005" name="borrow_loc_reg_154">
+<pin_list>
+<pin id="155" dir="0" index="0" bw="1" slack="4"/>
+<pin id="156" dir="1" index="1" bw="1" slack="4"/>
+</pin_list>
+<bind>
+<opset="borrow_loc "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="47"><net_src comp="10" pin="0"/><net_sink comp="44" pin=0"/></net>
+
+<net id="51"><net_src comp="10" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="55"><net_src comp="10" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="59"><net_src comp="10" pin="0"/><net_sink comp="56" pin=0"/></net>
+
+<net id="63"><net_src comp="10" pin="0"/><net_sink comp="60" pin=0"/></net>
+
+<net id="67"><net_src comp="10" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="74"><net_src comp="12" pin="0"/><net_sink comp="68" pin=0"/></net>
+
+<net id="75"><net_src comp="0" pin="0"/><net_sink comp="68" pin=1"/></net>
+
+<net id="76"><net_src comp="4" pin="0"/><net_sink comp="68" pin=2"/></net>
+
+<net id="77"><net_src comp="56" pin="1"/><net_sink comp="68" pin=3"/></net>
+
+<net id="85"><net_src comp="14" pin="0"/><net_sink comp="78" pin=0"/></net>
+
+<net id="86"><net_src comp="2" pin="0"/><net_sink comp="78" pin=1"/></net>
+
+<net id="87"><net_src comp="4" pin="0"/><net_sink comp="78" pin=2"/></net>
+
+<net id="88"><net_src comp="16" pin="0"/><net_sink comp="78" pin=3"/></net>
+
+<net id="95"><net_src comp="18" pin="0"/><net_sink comp="89" pin=0"/></net>
+
+<net id="96"><net_src comp="0" pin="0"/><net_sink comp="89" pin=1"/></net>
+
+<net id="97"><net_src comp="2" pin="0"/><net_sink comp="89" pin=2"/></net>
+
+<net id="103"><net_src comp="20" pin="0"/><net_sink comp="98" pin=0"/></net>
+
+<net id="104"><net_src comp="4" pin="0"/><net_sink comp="98" pin=1"/></net>
+
+<net id="112"><net_src comp="22" pin="0"/><net_sink comp="105" pin=0"/></net>
+
+<net id="119"><net_src comp="24" pin="0"/><net_sink comp="113" pin=0"/></net>
+
+<net id="120"><net_src comp="6" pin="0"/><net_sink comp="113" pin=3"/></net>
+
+<net id="126"><net_src comp="26" pin="0"/><net_sink comp="121" pin=0"/></net>
+
+<net id="133"><net_src comp="28" pin="0"/><net_sink comp="127" pin=0"/></net>
+
+<net id="134"><net_src comp="0" pin="0"/><net_sink comp="127" pin=2"/></net>
+
+<net id="135"><net_src comp="8" pin="0"/><net_sink comp="127" pin=3"/></net>
+
+<net id="136"><net_src comp="2" pin="0"/><net_sink comp="127" pin=2"/></net>
+
+<net id="143"><net_src comp="30" pin="0"/><net_sink comp="137" pin=0"/></net>
+
+<net id="149"><net_src comp="32" pin="0"/><net_sink comp="144" pin=0"/></net>
+
+<net id="153"><net_src comp="150" pin="1"/><net_sink comp="113" pin=2"/></net>
+
+<net id="157"><net_src comp="44" pin="1"/><net_sink comp="154" pin=0"/></net>
+
+<net id="158"><net_src comp="154" pin="1"/><net_sink comp="105" pin=4"/></net>
+
+<net id="159"><net_src comp="154" pin="1"/><net_sink comp="150" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: c_0 | {9 10 }
+	Port: c_1 | {13 14 }
+ - Input state : 
+	Port: fp2mul503_mont.50 : c_0 | {1 2 5 6 9 10 }
+	Port: fp2mul503_mont.50 : c_1 | {3 4 5 6 13 14 }
+	Port: fp2mul503_mont.50 : coeff | {1 2 3 4 5 6 }
+	Port: fp2mul503_mont.50 : p503_1 | {7 8 }
+	Port: fp2mul503_mont.50 : p503p1_1 | {9 10 13 14 }
+  - Chain level:
+	State 1
+		call_ln182 : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+		call_ln0 : 1
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|
+| Operation|                      Functional Unit                      |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|
+|          |                    grp_mp_mul_63_fu_68                    |   900   |  1.935  |   5509  |   1954  |
+|          |                    grp_mp_mul_62_fu_78                    |   900   |  2.709  |   5527  |   1988  |
+|          |   grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1_fu_89   |    0    |  0.774  |    77   |   570   |
+|          |  grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1124_fu_98 |    0    | 0.839714|   150   |   581   |
+|   call   |   grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1_fu_105  |    0    |  0.774  |    80   |   581   |
+|          |   grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_187_1_fu_113  |    0    |  0.774  |    77   |   636   |
+|          | grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_378_1125_fu_121 |    0    |  0.774  |    15   |   570   |
+|          |                   grp_rdc_mont_6_fu_127                   |    32   | 5.61514 |   1804  |   4337  |
+|          |                   grp_mp_mul_6105_fu_137                  |   900   |  1.935  |   5506  |   1954  |
+|          | grp_fp2mul503_mont_50_Pipeline_VITIS_LOOP_160_1126_fu_144 |    0    |  0.774  |    15   |   581   |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|
+|   Total  |                                                           |   2732  | 16.9039 |  18760  |  13752  |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|
+
+Memories:
++----+--------+--------+--------+--------+
+|    |  BRAM  |   FF   |   LUT  |  URAM  |
++----+--------+--------+--------+--------+
+| t1 |    0   |   64   |   65   |    0   |
+| t2 |    0   |   64   |   65   |    0   |
+| tt1|    0   |   64   |   65   |    0   |
+| tt2|    0   |   64   |   65   |    0   |
+| tt3|    0   |   64   |   65   |    0   |
++----+--------+--------+--------+--------+
+|Total|    0   |   320  |   325  |    0   |
++----+--------+--------+--------+--------+
+
+* Register list:
++------------------+--------+
+|                  |   FF   |
++------------------+--------+
+|borrow_loc_reg_154|    1   |
++------------------+--------+
+|       Total      |    1   |
++------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------------------|------|------|------|--------||---------||---------||---------|
+|          Comp         |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|-----------------------|------|------|------|--------||---------||---------||---------|
+| grp_rdc_mont_6_fu_127 |  p2  |   2  |  64  |   128  ||    0    ||    9    |
+|-----------------------|------|------|------|--------||---------||---------||---------|
+|         Total         |      |      |      |   128  ||  0.387  ||    0    ||    9    |
+|-----------------------|------|------|------|--------||---------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    -   |  2732  |   16   |  18760 |  13752 |    -   |
+|   Memory  |    0   |    -   |    -   |   320  |   325  |    0   |
+|Multiplexer|    -   |    -   |    0   |    0   |    9   |    -   |
+|  Register |    -   |    -   |    -   |    1   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |    0   |  2732  |   17   |  19081 |  14086 |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

@@ -272,7 +272,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_268</name>
+              <name>i_280</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -422,7 +422,7 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>i_268_write_ln267</name>
+              <name>i_280_write_ln267</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -1939,7 +1939,7 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>R_X_addr_5</name>
+              <name>R_X_addr_4</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>277</lineNumber>
@@ -2322,7 +2322,7 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>temp_26</name>
+              <name>temp_46</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>277</lineNumber>
@@ -2354,7 +2354,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>temp_26_fu_252_p2</rtlName>
+              <rtlName>temp_46_fu_252_p2</rtlName>
               <control>auto</control>
               <opType>and</opType>
               <implIndex>auto</implIndex>
@@ -2450,7 +2450,7 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>R_X_addr_5_write_ln278</name>
+              <name>R_X_addr_4_write_ln278</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>278</lineNumber>
@@ -2837,7 +2837,7 @@
             <Obj>
               <type>0</type>
               <id>54</id>
-              <name>temp_25</name>
+              <name>temp_45</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>274</lineNumber>
@@ -2869,7 +2869,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>temp_25_fu_277_p2</rtlName>
+              <rtlName>temp_45_fu_277_p2</rtlName>
               <control>auto</control>
               <opType>and</opType>
               <implIndex>auto</implIndex>
@@ -3221,7 +3221,7 @@
             <Obj>
               <type>0</type>
               <id>60</id>
-              <name>temp_27</name>
+              <name>temp_47</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>280</lineNumber>
@@ -3253,7 +3253,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>temp_27_fu_302_p2</rtlName>
+              <rtlName>temp_47_fu_302_p2</rtlName>
               <control>auto</control>
               <opType>and</opType>
               <implIndex>auto</implIndex>
@@ -3608,7 +3608,7 @@
             <Obj>
               <type>0</type>
               <id>66</id>
-              <name>i_268_write_ln267</name>
+              <name>i_280_write_ln267</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -4147,7 +4147,7 @@
           <Obj>
             <type>3</type>
             <id>70</id>
-            <name>_Z11swap_pointsP10point_projS0_m.40.exit.exitStub</name>
+            <name>_Z11swap_pointsP10point_projS0_m.25.exit.exitStub</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -5582,7 +5582,7 @@
           </second>
         </item>
         <item>
-          <first>temp_25_fu_277_p2 ( and ) </first>
+          <first>temp_45_fu_277_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5605,7 +5605,7 @@
           </second>
         </item>
         <item>
-          <first>temp_26_fu_252_p2 ( and ) </first>
+          <first>temp_46_fu_252_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5628,7 +5628,7 @@
           </second>
         </item>
         <item>
-          <first>temp_27_fu_302_p2 ( and ) </first>
+          <first>temp_47_fu_302_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6259,7 +6259,7 @@
           </second>
         </item>
         <item>
-          <first>i_268_fu_48</first>
+          <first>i_280_fu_48</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -6366,7 +6366,7 @@
           </second>
         </item>
         <item>
-          <first>R_X_addr_5_reg_369</first>
+          <first>R_X_addr_4_reg_369</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6480,7 +6480,7 @@
           </second>
         </item>
         <item>
-          <first>i_268_fu_48</first>
+          <first>i_280_fu_48</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6561,7 +6561,7 @@
           </second>
         </item>
         <item>
-          <first>temp_25_fu_277_p2 ( and ) </first>
+          <first>temp_45_fu_277_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6569,7 +6569,7 @@
           </second>
         </item>
         <item>
-          <first>temp_26_fu_252_p2 ( and ) </first>
+          <first>temp_46_fu_252_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6577,7 +6577,7 @@
           </second>
         </item>
         <item>
-          <first>temp_27_fu_302_p2 ( and ) </first>
+          <first>temp_47_fu_302_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7573,7 +7573,7 @@
         </second>
       </item>
       <item>
-        <first>R_X_addr_5_gep_fu_126</first>
+        <first>R_X_addr_4_gep_fu_126</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7613,7 +7613,7 @@
         </second>
       </item>
       <item>
-        <first>i_268_fu_48</first>
+        <first>i_280_fu_48</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7637,7 +7637,7 @@
         </second>
       </item>
       <item>
-        <first>temp_25_fu_277</first>
+        <first>temp_45_fu_277</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7645,7 +7645,7 @@
         </second>
       </item>
       <item>
-        <first>temp_26_fu_252</first>
+        <first>temp_46_fu_252</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7653,7 +7653,7 @@
         </second>
       </item>
       <item>
-        <first>temp_27_fu_302</first>
+        <first>temp_47_fu_302</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8069,7 +8069,7 @@
         </second>
       </item>
       <item>
-        <first>R_X_addr_5_reg_369</first>
+        <first>R_X_addr_4_reg_369</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8101,7 +8101,7 @@
         </second>
       </item>
       <item>
-        <first>i_268_reg_321</first>
+        <first>i_280_reg_321</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

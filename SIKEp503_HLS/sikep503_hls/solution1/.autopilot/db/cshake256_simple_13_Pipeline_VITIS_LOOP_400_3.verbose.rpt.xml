@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_13_Pipeline_VITIS_LOOP_400_3'" level="0">
-<item name = "Date">Wed Jul 30 17:03:46 2025
+<item name = "Date">Fri Sep 12 16:11:46 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -92,15 +92,15 @@
 <column name="icmp_ln415_fu_377_p2">icmp, 0, 0, 15, 8, 7</column>
 <column name="icmp_ln418_fu_420_p2">icmp, 0, 0, 15, 8, 8</column>
 <column name="select_ln411_cast_fu_383_p3">select, 0, 0, 3, 1, 3</column>
-<column name="v_192_fu_290_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_194_fu_298_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_196_fu_319_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_198_fu_327_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_200_fu_348_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_202_fu_356_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_205_fu_391_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_207_fu_412_p3">select, 0, 0, 8, 1, 8</column>
-<column name="v_255_fu_438_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_127_fu_438_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_61_fu_290_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_63_fu_298_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_65_fu_319_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_67_fu_327_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_69_fu_348_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_71_fu_356_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_74_fu_391_p3">select, 0, 0, 8, 1, 8</column>
+<column name="v_76_fu_412_p3">select, 0, 0, 8, 1, 8</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln423_fu_466_p2">xor, 0, 0, 64, 64, 64</column>
 </table>

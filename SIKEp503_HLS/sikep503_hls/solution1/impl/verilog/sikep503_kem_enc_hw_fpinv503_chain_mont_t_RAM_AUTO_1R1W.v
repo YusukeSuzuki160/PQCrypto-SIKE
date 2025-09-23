@@ -13,8 +13,8 @@ module sikep503_kem_enc_hw_fpinv503_chain_mont_t_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 64;
-parameter AddressWidth = 7;
-parameter AddressRange = 120;
+parameter AddressWidth = 4;
+parameter AddressRange = 15;
  
 input[AddressWidth-1:0] address0;
 input ce0;

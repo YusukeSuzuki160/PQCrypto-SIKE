@@ -121,7 +121,7 @@ reg    s_ce1_local;
 reg    s_ce0_local;
 reg   [7:0] s_we0_local;
 wire   [63:0] xor_ln423_fu_425_p2;
-wire   [5:0] shl_ln_fu_220_p3;
+wire   [5:0] shl_ln4_fu_220_p3;
 wire   [6:0] zext_ln414_fu_228_p1;
 wire   [6:0] add_ln414_fu_232_p2;
 wire   [6:0] add_ln414_1_fu_246_p2;
@@ -135,16 +135,16 @@ wire   [7:0] or_ln410_8_fu_337_p3;
 wire   [0:0] icmp_ln414_2_fu_344_p2;
 wire   [7:0] or_ln410_9_fu_358_p3;
 wire   [0:0] icmp_ln414_3_fu_365_p2;
-wire   [7:0] v_116_fu_371_p3;
+wire   [7:0] v_112_fu_371_p3;
 wire   [6:0] trunc_ln418_fu_385_p1;
 wire   [0:0] icmp_ln418_fu_379_p2;
 wire   [7:0] or_ln1_fu_389_p3;
-wire   [7:0] v_124_fu_397_p3;
-wire   [7:0] v_114_fu_350_p3;
-wire   [7:0] v_112_fu_329_p3;
-wire   [7:0] v_110_fu_321_p3;
-wire   [7:0] v_108_fu_300_p3;
-wire   [7:0] v_106_fu_292_p3;
+wire   [7:0] v_120_fu_397_p3;
+wire   [7:0] v_110_fu_350_p3;
+wire   [7:0] v_108_fu_329_p3;
+wire   [7:0] v_106_fu_321_p3;
+wire   [7:0] v_104_fu_300_p3;
+wire   [7:0] v_102_fu_292_p3;
 wire   [63:0] word_fu_405_p9;
 reg    ap_done_reg;
 wire    ap_continue_int;
@@ -469,25 +469,25 @@ assign s_we0 = s_we0_local;
 
 assign select_ln411_cast_fu_284_p3 = ((icmp_ln415_fu_278_p2[0:0] == 1'b1) ? 8'd4 : 8'd0);
 
-assign shl_ln_fu_220_p3 = {{ap_sig_allocacmp_lane_1}, {1'd0}};
+assign shl_ln4_fu_220_p3 = {{ap_sig_allocacmp_lane_1}, {1'd0}};
 
-assign trunc_ln418_fu_385_p1 = v_116_fu_371_p3[6:0];
+assign trunc_ln418_fu_385_p1 = v_112_fu_371_p3[6:0];
 
-assign v_106_fu_292_p3 = ((icmp_ln414_fu_272_p2[0:0] == 1'b1) ? in_2_q1 : select_ln411_cast_fu_284_p3);
+assign v_102_fu_292_p3 = ((icmp_ln414_fu_272_p2[0:0] == 1'b1) ? in_2_q1 : select_ln411_cast_fu_284_p3);
 
-assign v_108_fu_300_p3 = ((icmp_ln414_fu_272_p2[0:0] == 1'b1) ? in_3_q1 : 8'd0);
+assign v_104_fu_300_p3 = ((icmp_ln414_fu_272_p2[0:0] == 1'b1) ? in_3_q1 : 8'd0);
 
-assign v_110_fu_321_p3 = ((icmp_ln414_1_fu_315_p2[0:0] == 1'b1) ? in_0_q0 : 8'd0);
+assign v_106_fu_321_p3 = ((icmp_ln414_1_fu_315_p2[0:0] == 1'b1) ? in_0_q0 : 8'd0);
 
-assign v_112_fu_329_p3 = ((icmp_ln414_1_fu_315_p2[0:0] == 1'b1) ? in_1_q0 : 8'd0);
+assign v_108_fu_329_p3 = ((icmp_ln414_1_fu_315_p2[0:0] == 1'b1) ? in_1_q0 : 8'd0);
 
-assign v_114_fu_350_p3 = ((icmp_ln414_2_fu_344_p2[0:0] == 1'b1) ? in_2_q0 : 8'd0);
+assign v_110_fu_350_p3 = ((icmp_ln414_2_fu_344_p2[0:0] == 1'b1) ? in_2_q0 : 8'd0);
 
-assign v_116_fu_371_p3 = ((icmp_ln414_3_fu_365_p2[0:0] == 1'b1) ? in_3_q0 : 8'd0);
+assign v_112_fu_371_p3 = ((icmp_ln414_3_fu_365_p2[0:0] == 1'b1) ? in_3_q0 : 8'd0);
 
-assign v_124_fu_397_p3 = ((icmp_ln418_fu_379_p2[0:0] == 1'b1) ? or_ln1_fu_389_p3 : v_116_fu_371_p3);
+assign v_120_fu_397_p3 = ((icmp_ln418_fu_379_p2[0:0] == 1'b1) ? or_ln1_fu_389_p3 : v_112_fu_371_p3);
 
-assign word_fu_405_p9 = {{{{{{{{v_124_fu_397_p3}, {v_114_fu_350_p3}}, {v_112_fu_329_p3}}, {v_110_fu_321_p3}}, {v_108_fu_300_p3}}, {v_106_fu_292_p3}}, {in_1_q1}}, {in_0_q1}};
+assign word_fu_405_p9 = {{{{{{{{v_120_fu_397_p3}, {v_110_fu_350_p3}}, {v_108_fu_329_p3}}, {v_106_fu_321_p3}}, {v_104_fu_300_p3}}, {v_102_fu_292_p3}}, {in_1_q1}}, {in_0_q1}};
 
 assign xor_ln423_fu_425_p2 = (word_fu_405_p9 ^ s_q1);
 
@@ -497,6 +497,6 @@ assign zext_ln414_1_fu_238_p1 = add_ln414_fu_232_p2;
 
 assign zext_ln414_2_fu_252_p1 = add_ln414_1_fu_246_p2;
 
-assign zext_ln414_fu_228_p1 = shl_ln_fu_220_p3;
+assign zext_ln414_fu_228_p1 = shl_ln4_fu_220_p3;
 
 endmodule //sikep503_kem_enc_hw_cshake256_simple_Pipeline_VITIS_LOOP_400_3

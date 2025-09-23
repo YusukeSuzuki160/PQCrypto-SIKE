@@ -139,10 +139,10 @@ entry:2 %call_ln0 = call void @from_mont.34_Pipeline_1, i64 %temp
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:3 %call_ln58 = call void @mp_mul.4112, i64 %ma, i1 1, i64 %one, i64 %temp
+entry:3 %call_ln283 = call void @mul.4112, i64 %ma, i1 1, i64 %one, i64 %temp
 
 ]]></Node>
-<StgValue><ssdm name="call_ln58"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -157,10 +157,10 @@ entry:3 %call_ln58 = call void @mp_mul.4112, i64 %ma, i1 1, i64 %one, i64 %temp
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:3 %call_ln58 = call void @mp_mul.4112, i64 %ma, i1 1, i64 %one, i64 %temp
+entry:3 %call_ln283 = call void @mul.4112, i64 %ma, i1 1, i64 %one, i64 %temp
 
 ]]></Node>
-<StgValue><ssdm name="call_ln58"/></StgValue>
+<StgValue><ssdm name="call_ln283"/></StgValue>
 </operation>
 </state>
 
@@ -211,7 +211,7 @@ entry:4 %call_ln59 = call void @rdc_mont.47, i64 %temp, i64 %t_i, i64 %p503p1_1
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:5 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_101_1, i64 %t_i, i1 %borrow_loc, i64 %p503_1
+entry:5 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_105_1, i64 %t_i, i1 %borrow_loc, i64 %p503_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -229,7 +229,7 @@ entry:5 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_101_1, i64 %t_i,
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:5 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_101_1, i64 %t_i, i1 %borrow_loc, i64 %p503_1
+entry:5 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_105_1, i64 %t_i, i1 %borrow_loc, i64 %p503_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -262,7 +262,7 @@ entry:6 %borrow_loc_load = load i1 %borrow_loc
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:7 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_107_2, i64 %t_i, i1 %borrow_loc_load, i64 %p503_1
+entry:7 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_111_2, i64 %t_i, i1 %borrow_loc_load, i64 %p503_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -280,7 +280,7 @@ entry:7 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_107_2, i64 %t_i,
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:7 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_107_2, i64 %t_i, i1 %borrow_loc_load, i64 %p503_1
+entry:7 %call_ln0 = call void @from_mont.34_Pipeline_VITIS_LOOP_111_2, i64 %t_i, i1 %borrow_loc_load, i64 %p503_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'get_A'" level="0">
-<item name = "Date">Wed Jul 30 15:23:28 2025
+<item name = "Date">Fri Sep 12 16:09:49 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.287 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.113 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,34 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">168629, 300709, 1.686 ms, 3.007 ms, 168629, 300709, no</column>
+<column name="">89347, 159571, 0.893 ms, 1.596 ms, 89347, 159571, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpadd503_119_fu_748">fpadd503_119, 15, 15, 0.150 us, 0.150 us, 8, 8, yes</column>
-<column name="grp_fpadd503_120_fu_770">fpadd503_120, 15, 15, 0.150 us, 0.150 us, 8, 8, yes</column>
-<column name="grp_fp2mul503_mont_121_fu_776">fp2mul503_mont_121, 612, 1033, 6.120 us, 10.330 us, 612, 1033, no</column>
-<column name="grp_get_A_Pipeline_3_fu_794">get_A_Pipeline_3, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_get_A_Pipeline_4_fu_799">get_A_Pipeline_4, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_122_fu_804">fp2mul503_mont_122, 614, 1035, 6.140 us, 10.350 us, 614, 1035, no</column>
-<column name="grp_fp2mul503_mont_5317_1_fu_838">fp2mul503_mont_5317_1, 614, 1035, 6.140 us, 10.350 us, 614, 1035, no</column>
-<column name="grp_fpadd503_2_1_fu_856">fpadd503_2_1, 7, 7, 70.000 ns, 70.000 ns, 1, 1, yes</column>
-<column name="grp_fpadd503_2_1_fu_876">fpadd503_2_1, 7, 7, 70.000 ns, 70.000 ns, 1, 1, yes</column>
-<column name="grp_fpadd503_272_fu_896">fpadd503_272, 7, 7, 70.000 ns, 70.000 ns, 1, 1, yes</column>
-<column name="grp_fpadd503_272_fu_916">fpadd503_272, 7, 7, 70.000 ns, 70.000 ns, 1, 1, yes</column>
-<column name="grp_fpadd503_123_fu_936">fpadd503_123, 10, 10, 0.100 us, 0.100 us, 4, 4, yes</column>
-<column name="grp_fpsub503_4_1_fu_961">fpsub503_4_1, 4, 4, 40.000 ns, 40.000 ns, 1, 1, yes</column>
-<column name="grp_fpsub503_4_1_fu_989">fpsub503_4_1, 4, 4, 40.000 ns, 40.000 ns, 1, 1, yes</column>
-<column name="grp_get_A_Pipeline_VITIS_LOOP_370_1_fu_1017">get_A_Pipeline_VITIS_LOOP_370_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_get_A_Pipeline_VITIS_LOOP_370_151_fu_1038">get_A_Pipeline_VITIS_LOOP_370_151, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpsub503_4_fu_1051">fpsub503_4, 4, 4, 40.000 ns, 40.000 ns, 1, 1, yes</column>
-<column name="grp_mp_mul_3_fu_1071">mp_mul_3, 137, 235, 1.370 us, 2.350 us, 137, 235, no</column>
-<column name="grp_fp2inv503_mont_fu_1093">fp2inv503_mont, 165713, 295783, 1.657 ms, 2.958 ms, 165713, 295783, no</column>
-<column name="grp_rdc_mont_6_fu_1107">rdc_mont_6, 134, 248, 1.340 us, 2.480 us, 134, 248, no</column>
-<column name="grp_fp2mul503_mont_2_2_fu_1154">fp2mul503_mont_2_2, 585, 1006, 5.850 us, 10.060 us, 585, 1006, no</column>
+<column name="grp_fpadd503_527_fu_1140">fpadd503_527, 53, 53, 0.530 us, 0.530 us, 53, 53, no</column>
+<column name="grp_fp2mul503_mont_1_fu_1250">fp2mul503_mont_1, 326, 554, 3.260 us, 5.540 us, 326, 554, no</column>
+<column name="grp_fpadd503_527_1_fu_1330">fpadd503_527_1, 60, 60, 0.600 us, 0.600 us, 60, 60, no</column>
+<column name="grp_fpadd503_527_2_fu_1408">fpadd503_527_2, 60, 60, 0.600 us, 0.600 us, 60, 60, no</column>
+<column name="grp_fpsub503_8_fu_1486">fpsub503_8, 39, 39, 0.390 us, 0.390 us, 39, 39, no</column>
+<column name="grp_fpadd503_527_4_fu_1537">fpadd503_527_4, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
+<column name="grp_fp2sqr503_mont_3_1_fu_1575">fp2sqr503_mont_3_1, 345, 573, 3.450 us, 5.730 us, 345, 573, no</column>
+<column name="grp_fp2inv503_mont_fu_1599">fp2inv503_mont, 87176, 156260, 0.872 ms, 1.563 ms, 87176, 156260, no</column>
+<column name="grp_fpsub503_3_1_fu_1615">fpsub503_3_1, 40, 40, 0.400 us, 0.400 us, 40, 40, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

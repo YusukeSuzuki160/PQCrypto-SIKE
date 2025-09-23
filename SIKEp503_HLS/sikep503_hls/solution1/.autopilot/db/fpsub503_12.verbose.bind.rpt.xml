@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpsub503_12'" level="0">
-<item name = "Date">Wed Jul 30 15:21:37 2025
+<item name = "Date">Tue Sep 23 15:45:21 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.096 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.133 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">8, 8, 80.000 ns, 80.000 ns, 4, 4, yes</column>
+<column name="">39, 39, 0.390 us, 0.390 us, 39, 39, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_is_digit_lessthan_ct_fu_215">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_is_digit_lessthan_ct_fu_223">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_is_digit_lessthan_ct_fu_230">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_is_digit_lessthan_ct_fu_243">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_is_digit_lessthan_ct_fu_249">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_is_digit_lessthan_ct_fu_255">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_fpsub503_12_Pipeline_VITIS_LOOP_61_1_fu_26">fpsub503_12_Pipeline_VITIS_LOOP_61_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpsub503_12_Pipeline_VITIS_LOOP_68_2_fu_37">fpsub503_12_Pipeline_VITIS_LOOP_68_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

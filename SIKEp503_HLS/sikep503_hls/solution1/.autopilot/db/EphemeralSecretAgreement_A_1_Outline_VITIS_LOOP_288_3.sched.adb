@@ -164,7 +164,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i</name>
+						<name>i_293</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>244</lineNumber>
@@ -389,7 +389,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>i_write_ln244</name>
+						<name>i_293_write_ln244</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>244</lineNumber>
@@ -502,7 +502,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>i_393</name>
+						<name>i</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>288</lineNumber>
@@ -2165,7 +2165,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.20</m_delay>
+				<m_delay>1.90</m_delay>
 				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2235,7 +2235,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.20</m_delay>
+				<m_delay>1.90</m_delay>
 				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2244,7 +2244,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>i_write_ln244</name>
+						<name>i_293_write_ln244</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>244</lineNumber>
@@ -2497,7 +2497,7 @@
 					<Obj>
 						<type>2</type>
 						<id>68</id>
-						<name>fpadd503_137</name>
+						<name>fpadd503_146</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2521,7 +2521,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.137&gt;</content>
+				<content>&lt;constant:fpadd503.146&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_42">
 				<Value>
@@ -2621,7 +2621,7 @@
 					<Obj>
 						<type>2</type>
 						<id>108</id>
-						<name>fp2mul503_mont_38</name>
+						<name>fp2mul503_mont_40</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2645,7 +2645,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.38&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.40&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_46">
 				<Value>
@@ -2714,7 +2714,7 @@
 					<Obj>
 						<type>2</type>
 						<id>123</id>
-						<name>fp2mul503_mont_325_2</name>
+						<name>fp2mul503_mont_332_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2738,14 +2738,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.325.2&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.332.2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_49">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>127</id>
-						<name>fp2mul503_mont_42</name>
+						<name>fp2mul503_mont_44</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2769,14 +2769,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.42&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.44&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_50">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>149</id>
-						<name>fpsub503_2_257</name>
+						<name>fpsub503_2_270</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2800,7 +2800,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpsub503.2.257&gt;</content>
+				<content>&lt;constant:fpsub503.2.270&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_51">
 				<Value>
@@ -2869,7 +2869,7 @@
 					<Obj>
 						<type>2</type>
 						<id>171</id>
-						<name>fpadd503_136</name>
+						<name>fpadd503_145</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2893,7 +2893,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.136&gt;</content>
+				<content>&lt;constant:fpadd503.145&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_54">
 				<Value>
@@ -2931,7 +2931,7 @@
 					<Obj>
 						<type>2</type>
 						<id>201</id>
-						<name>fp2mul503_mont_325_1</name>
+						<name>fp2mul503_mont_332_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2955,7 +2955,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.325.1&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.332.1&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -4641,8 +4641,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2841</mMinLatency>
-			<mMaxLatency>31753</mMaxLatency>
+			<mMinLatency>2993</mMinLatency>
+			<mMaxLatency>32817</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4688,8 +4688,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>1</mMinTripCount>
 			<mMaxTripCount>7</mMaxTripCount>
-			<mMinLatency>2840</mMinLatency>
-			<mMaxLatency>31752</mMaxLatency>
+			<mMinLatency>2992</mMinLatency>
+			<mMaxLatency>32816</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

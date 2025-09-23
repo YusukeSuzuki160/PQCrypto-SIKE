@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vitis HLS Report for 'mp_mul_12956'
+================================================================
+* Date:           Wed Sep  3 14:22:11 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.270 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        9|        9|  90.000 ns|  90.000 ns|    4|    4|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 10
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 4, D = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.20>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 11 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [10/10] (1.20ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 12 'call' 'tmp1' <Predicate = true> <Delay = 1.20> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 7.27>
+ST_2 : Operation 13 [9/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 13 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 7.27>
+ST_3 : Operation 14 [8/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 14 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 7.27>
+ST_4 : Operation 15 [7/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 15 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.27>
+ST_5 : Operation 16 [6/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 16 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.27>
+ST_6 : Operation 17 [5/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 17 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.27>
+ST_7 : Operation 18 [4/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 18 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 7.27>
+ST_8 : Operation 19 [3/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 19 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 7.27>
+ST_9 : Operation 20 [2/10] (7.27ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 20 'call' 'tmp1' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 4.34>
+ST_10 : Operation 21 [1/1] (0.00ns)   --->   "%specpipeline_ln267 = specpipeline void @_ssdm_op_SpecPipeline, i32 2, i32 0, i32 0, i32 0, void @empty_15" [src/generic/fp_generic.cpp:267]   --->   Operation 21 'specpipeline' 'specpipeline_ln267' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 22 [1/10] (4.34ns)   --->   "%tmp1 = call i1024 @mul.15259, i64 %a, i32 %a_offset_read, i64 %t1_i95_0, i64 %t1_i95_1, i64 %t1_i95_2, i64 %t1_i95_3, i64 %t1_i95_4, i64 %t1_i95_5, i64 %t1_i95_6, i64 %t1_i95_7" [src/generic/fp_generic.cpp:283]   --->   Operation 22 'call' 'tmp1' <Predicate = true> <Delay = 4.34> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln284 = ret i1024 %tmp1" [src/generic/fp_generic.cpp:284]   --->   Operation 23 'ret' 'ret_ln284' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.200ns
+The critical path consists of the following:
+	wire read operation ('a_offset_read') on port 'a_offset' [11]  (0.000 ns)
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (1.200 ns)
+
+ <State 2>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 3>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 4>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 5>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 6>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 7>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 8>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 9>: 7.270ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (7.270 ns)
+
+ <State 10>: 4.349ns
+The critical path consists of the following:
+	'call' operation 1024 bit ('tmp1', src/generic/fp_generic.cpp:283) to 'mul.15259' [13]  (4.349 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

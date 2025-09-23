@@ -13,22 +13,22 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 855
+set cdfgNum 684
 set C_modelName {EphemeralSecretAgreement_A.1_Pipeline_VITIS_LOOP_13_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict pts_X { MEM_WIDTH 64 MEM_SIZE 896 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict pts_X { MEM_WIDTH 64 MEM_SIZE 448 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict R_X { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ npts_1 int 3 regular  }
-	{ pts_X int 64 regular {array 112 { 0 3 } 0 1 }  }
-	{ R_X int 64 regular {array 16 { 1 3 } 1 1 }  }
+	{ zext_ln14 int 6 regular  }
+	{ pts_X int 64 regular {array 56 { 0 } 0 1 }  }
+	{ R_X int 64 regular {array 16 { 1 } 1 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "npts_1", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
+	{ "Name" : "zext_ln14", "interface" : "wire", "bitwidth" : 6, "direction" : "READONLY"} , 
  	{ "Name" : "pts_X", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
  	{ "Name" : "R_X", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
@@ -40,8 +40,8 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ npts_1 sc_in sc_lv 3 signal 0 } 
-	{ pts_X_address0 sc_out sc_lv 7 signal 1 } 
+	{ zext_ln14 sc_in sc_lv 6 signal 0 } 
+	{ pts_X_address0 sc_out sc_lv 6 signal 1 } 
 	{ pts_X_ce0 sc_out sc_logic 1 signal 1 } 
 	{ pts_X_we0 sc_out sc_logic 1 signal 1 } 
 	{ pts_X_d0 sc_out sc_lv 64 signal 1 } 
@@ -56,8 +56,8 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "npts_1", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "npts_1", "role": "default" }} , 
- 	{ "name": "pts_X_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "pts_X", "role": "address0" }} , 
+ 	{ "name": "zext_ln14", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "zext_ln14", "role": "default" }} , 
+ 	{ "name": "pts_X_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "pts_X", "role": "address0" }} , 
  	{ "name": "pts_X_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pts_X", "role": "ce0" }} , 
  	{ "name": "pts_X_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pts_X", "role": "we0" }} , 
  	{ "name": "pts_X_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "pts_X", "role": "d0" }} , 
@@ -81,7 +81,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "npts_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "zext_ln14", "Type" : "None", "Direction" : "I"},
 			{"Name" : "pts_X", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "R_X", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
@@ -92,7 +92,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	EphemeralSecretAgreement_A_1_Pipeline_VITIS_LOOP_13_1 {
-		npts_1 {Type I LastRead 0 FirstWrite -1}
+		zext_ln14 {Type I LastRead 0 FirstWrite -1}
 		pts_X {Type O LastRead -1 FirstWrite 1}
 		R_X {Type I LastRead 0 FirstWrite -1}}}
 
@@ -108,7 +108,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	npts_1 { ap_none {  { npts_1 in_data 0 3 } } }
-	pts_X { ap_memory {  { pts_X_address0 mem_address 1 7 }  { pts_X_ce0 mem_ce 1 1 }  { pts_X_we0 mem_we 1 1 }  { pts_X_d0 mem_din 1 64 } } }
+	zext_ln14 { ap_none {  { zext_ln14 in_data 0 6 } } }
+	pts_X { ap_memory {  { pts_X_address0 mem_address 1 6 }  { pts_X_ce0 mem_ce 1 1 }  { pts_X_we0 mem_we 1 1 }  { pts_X_d0 mem_din 1 64 } } }
 	R_X { ap_memory {  { R_X_address0 mem_address 1 4 }  { R_X_ce0 mem_ce 1 1 }  { R_X_q0 mem_dout 0 64 } } }
 }

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_21_1'
 ================================================================
-* Date:           Wed Jul 30 17:34:58 2025
+* Date:           Tue Sep 23 15:46:03 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -89,8 +89,8 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln21_fu_64_p2   |         +|   0|  0|  12|           4|           1|
-    |icmp_ln21_fu_58_p2  |      icmp|   0|  0|  12|           4|           5|
+    |add_ln21_fu_68_p2   |         +|   0|  0|  12|           4|           1|
+    |icmp_ln21_fu_62_p2  |      icmp|   0|  0|  12|           4|           5|
     +--------------------+----------+----+---+----+------------+------------+
     |Total               |          |   0|  0|  24|           8|           6|
     +--------------------+----------+----+---+----+------------+------------+
@@ -100,8 +100,8 @@
     |          Name          | LUT| Input Size| Bits| Total Bits|
     +------------------------+----+-----------+-----+-----------+
     |ap_done_int             |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_398  |   9|          2|    4|          8|
-    |i_fu_32                 |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_283  |   9|          2|    4|          8|
+    |i_fu_36                 |   9|          2|    4|          8|
     +------------------------+----+-----------+-----+-----------+
     |Total                   |  27|          6|    9|         18|
     +------------------------+----+-----------+-----+-----------+
@@ -112,7 +112,7 @@
     +-------------+---+----+-----+-----------+
     |ap_CS_fsm    |  1|   0|    1|          0|
     |ap_done_reg  |  1|   0|    1|          0|
-    |i_fu_32      |  4|   0|    4|          0|
+    |i_fu_36      |  4|   0|    4|          0|
     +-------------+---+----+-----+-----------+
     |Total        |  6|   0|    6|          0|
     +-------------+---+----+-----+-----------+
@@ -123,18 +123,18 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------+-----+-----+------------+-----------------------------------------------------+--------------+
-|    RTL Ports    | Dir | Bits|  Protocol  |                    Source Object                    |    C Type    |
-+-----------------+-----+-----+------------+-----------------------------------------------------+--------------+
-|ap_clk           |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
-|ap_rst           |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
-|ap_start         |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
-|ap_done          |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
-|ap_idle          |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
-|ap_ready         |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
-|phiQ_X_address0  |  out|    4|   ap_memory|                                               phiQ_X|         array|
-|phiQ_X_ce0       |  out|    1|   ap_memory|                                               phiQ_X|         array|
-|phiQ_X_we0       |  out|    1|   ap_memory|                                               phiQ_X|         array|
-|phiQ_X_d0        |  out|   64|   ap_memory|                                               phiQ_X|         array|
-+-----------------+-----+-----+------------+-----------------------------------------------------+--------------+
++-------------------+-----+-----+------------+-----------------------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |                    Source Object                    |    C Type    |
++-------------------+-----+-----+------------+-----------------------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_21_1|  return value|
+|phiQ_X_1_address0  |  out|    3|   ap_memory|                                             phiQ_X_1|         array|
+|phiQ_X_1_ce0       |  out|    1|   ap_memory|                                             phiQ_X_1|         array|
+|phiQ_X_1_we0       |  out|    1|   ap_memory|                                             phiQ_X_1|         array|
+|phiQ_X_1_d0        |  out|   64|   ap_memory|                                             phiQ_X_1|         array|
++-------------------+-----+-----+------------+-----------------------------------------------------+--------------+
 

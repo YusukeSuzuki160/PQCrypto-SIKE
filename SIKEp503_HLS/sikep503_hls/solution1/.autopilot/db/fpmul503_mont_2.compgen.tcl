@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sikep503_kem_enc_hw_fpmul503_mont_2_temp_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler sikep503_kem_enc_hw_fpmul503_mont_2_one_RAM_1P_AUTO_1R1W BINDTYPE {storage} TYPE {ram_1p} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -16,7 +16,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1877 \
+    id 1459 \
     name ma \
     reset_level 1 \
     sync_rst true \
@@ -35,20 +35,35 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1878 \
+    id 1460 \
     name mc \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename mc \
     op interface \
-    ports { mc_address0 { O 3 vector } mc_ce0 { O 1 bit } mc_we0 { O 1 bit } mc_d0 { O 64 vector } mc_q0 { I 64 vector } } \
+    ports { mc_address0 { O 4 vector } mc_ce0 { O 1 bit } mc_we0 { O 1 bit } mc_d0 { O 64 vector } mc_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'mc'"
 }
 }
 
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1461 \
+    name mc_offset \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_mc_offset \
+    op interface \
+    ports { mc_offset { I 1 vector } } \
+} "
+}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

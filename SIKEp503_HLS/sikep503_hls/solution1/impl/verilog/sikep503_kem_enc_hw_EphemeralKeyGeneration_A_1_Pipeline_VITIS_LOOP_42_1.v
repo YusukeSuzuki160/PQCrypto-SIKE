@@ -170,15 +170,15 @@ wire    ap_block_pp0_stage0_grp3;
 reg    ap_block_pp0_stage0_subdone_grp3_done_reg;
 reg    ap_block_pp0_stage0_subdone_grp3;
 wire    ap_block_pp0_stage1_grp4;
-reg   [5:0] i_292_reg_262;
+reg   [5:0] i_389_reg_262;
 reg    ap_block_pp0_stage0_11001;
 wire   [0:0] icmp_ln42_fu_141_p2;
 reg   [0:0] icmp_ln42_reg_267_pp0_iter1_reg;
 reg   [0:0] icmp_ln42_reg_267_pp0_iter2_reg;
 reg   [63:0] gmem_addr_reg_276;
 reg   [63:0] gmem_addr_5_reg_287;
-wire   [63:0] zext_ln44_10_fu_233_p1;
-reg   [63:0] zext_ln44_10_reg_293;
+wire   [63:0] zext_ln44_2_fu_233_p1;
+reg   [63:0] zext_ln44_2_reg_293;
 wire    ap_block_pp0_stage1_11001_grp0;
 reg    ap_block_pp0_stage1_subdone_grp0_done_reg;
 wire    ap_block_pp0_stage1_subdone_grp0;
@@ -204,7 +204,7 @@ wire    ap_block_pp0_stage1_01001_grp4;
 reg   [5:0] i_fu_66;
 wire   [5:0] add_ln42_fu_147_p2;
 wire    ap_loop_init;
-reg   [5:0] ap_sig_allocacmp_i_292;
+reg   [5:0] ap_sig_allocacmp_i_389;
 reg    t_i_ce1_local;
 reg    t_i_ce0_local;
 wire   [2:0] lshr_ln44_fu_161_p4;
@@ -466,7 +466,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         gmem_addr_5_reg_287 <= add_ln45_1_fu_211_p2;
         gmem_addr_reg_276 <= add_ln44_fu_176_p2;
-        i_292_reg_262 <= ap_sig_allocacmp_i_292;
+        i_389_reg_262 <= ap_sig_allocacmp_i_389;
         icmp_ln42_reg_267 <= icmp_ln42_fu_141_p2;
         icmp_ln42_reg_267_pp0_iter1_reg <= icmp_ln42_reg_267;
         icmp_ln42_reg_267_pp0_iter2_reg <= icmp_ln42_reg_267_pp0_iter1_reg;
@@ -482,7 +482,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1_subdone_grp0_done_reg) & (1'b0 == ap_block_pp0_stage1_11001_grp0))) begin
         trunc_ln44_reg_298 <= trunc_ln44_fu_243_p1;
-        zext_ln44_10_reg_293[5 : 0] <= zext_ln44_10_fu_233_p1[5 : 0];
+        zext_ln44_2_reg_293[5 : 0] <= zext_ln44_2_fu_233_p1[5 : 0];
     end
 end
 
@@ -566,9 +566,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_i_292 = 6'd0;
+        ap_sig_allocacmp_i_389 = 6'd0;
     end else begin
-        ap_sig_allocacmp_i_292 = i_fu_66;
+        ap_sig_allocacmp_i_389 = i_fu_66;
     end
 end
 
@@ -684,7 +684,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln42_fu_147_p2 = (ap_sig_allocacmp_i_292 + 6'd1);
+assign add_ln42_fu_147_p2 = (ap_sig_allocacmp_i_389 + 6'd1);
 
 assign add_ln44_fu_176_p2 = (zext_ln42_fu_153_p1 + PublicKeyA);
 
@@ -790,13 +790,13 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage1;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln42_fu_141_p2 = ((ap_sig_allocacmp_i_292 == 6'd63) ? 1'b1 : 1'b0);
+assign icmp_ln42_fu_141_p2 = ((ap_sig_allocacmp_i_389 == 6'd63) ? 1'b1 : 1'b0);
 
-assign lshr_ln44_2_fu_237_p2 = t_i_q1 >> zext_ln44_10_fu_233_p1;
+assign lshr_ln44_2_fu_237_p2 = t_i_q1 >> zext_ln44_2_fu_233_p1;
 
-assign lshr_ln44_fu_161_p4 = {{ap_sig_allocacmp_i_292[5:3]}};
+assign lshr_ln44_fu_161_p4 = {{ap_sig_allocacmp_i_389[5:3]}};
 
-assign lshr_ln45_fu_247_p2 = t_i_load_2_reg_303 >> zext_ln44_10_reg_293;
+assign lshr_ln45_fu_247_p2 = t_i_load_2_reg_303 >> zext_ln44_2_reg_293;
 
 assign m_axi_gmem_0_ARADDR = 64'd0;
 
@@ -852,7 +852,7 @@ assign m_axi_gmem_0_WSTRB = 1'd1;
 
 assign m_axi_gmem_0_WUSER = 1'd0;
 
-assign shl_ln44_fu_228_p2 = i_292_reg_262 << 6'd3;
+assign shl_ln44_fu_228_p2 = i_389_reg_262 << 6'd3;
 
 assign t_i_address0 = zext_ln45_fu_196_p1;
 
@@ -866,11 +866,11 @@ assign trunc_ln44_fu_243_p1 = lshr_ln44_2_fu_237_p2[7:0];
 
 assign trunc_ln45_fu_251_p1 = lshr_ln45_fu_247_p2[7:0];
 
-assign zext_ln42_1_fu_157_p1 = ap_sig_allocacmp_i_292;
+assign zext_ln42_1_fu_157_p1 = ap_sig_allocacmp_i_389;
 
-assign zext_ln42_fu_153_p1 = ap_sig_allocacmp_i_292;
+assign zext_ln42_fu_153_p1 = ap_sig_allocacmp_i_389;
 
-assign zext_ln44_10_fu_233_p1 = shl_ln44_fu_228_p2;
+assign zext_ln44_2_fu_233_p1 = shl_ln44_fu_228_p2;
 
 assign zext_ln44_fu_171_p1 = lshr_ln44_fu_161_p4;
 
@@ -881,7 +881,7 @@ assign zext_ln45_fu_196_p1 = zext_ln_fu_188_p3;
 assign zext_ln_fu_188_p3 = {{1'd1}, {lshr_ln44_fu_161_p4}};
 
 always @ (posedge ap_clk) begin
-    zext_ln44_10_reg_293[63:6] <= 58'b0000000000000000000000000000000000000000000000000000000000;
+    zext_ln44_2_reg_293[63:6] <= 58'b0000000000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1

@@ -54,7 +54,7 @@ attribute shreg_extract : string;
     signal i_fu_38 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal add_ln53_fu_68_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_i_271 : STD_LOGIC_VECTOR (7 downto 0);
+    signal ap_sig_allocacmp_i_349 : STD_LOGIC_VECTOR (7 downto 0);
     signal PKB_ce0_local : STD_LOGIC;
     signal PKB_we0_local : STD_LOGIC_VECTOR (7 downto 0);
     signal shl_ln54_fu_82_p2 : STD_LOGIC_VECTOR (7 downto 0);
@@ -183,7 +183,7 @@ begin
         end if; 
     end process;
 
-    add_ln53_fu_68_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_271) + unsigned(ap_const_lv8_1));
+    add_ln53_fu_68_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_349) + unsigned(ap_const_lv8_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_block_state1_pp0_stage0_iter0)
@@ -245,19 +245,19 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_271_assign_proc : process(ap_CS_fsm_state1, i_fu_38, ap_loop_init)
+    ap_sig_allocacmp_i_349_assign_proc : process(ap_CS_fsm_state1, i_fu_38, ap_loop_init)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            ap_sig_allocacmp_i_271 <= ap_const_lv8_0;
+            ap_sig_allocacmp_i_349 <= ap_const_lv8_0;
         else 
-            ap_sig_allocacmp_i_271 <= i_fu_38;
+            ap_sig_allocacmp_i_349 <= i_fu_38;
         end if; 
     end process;
 
-    icmp_ln53_fu_62_p2 <= "1" when (ap_sig_allocacmp_i_271 = ap_const_lv8_80) else "0";
-    lshr_ln_fu_89_p4 <= ap_sig_allocacmp_i_271(6 downto 3);
+    icmp_ln53_fu_62_p2 <= "1" when (ap_sig_allocacmp_i_349 = ap_const_lv8_80) else "0";
+    lshr_ln_fu_89_p4 <= ap_sig_allocacmp_i_349(6 downto 3);
     shl_ln54_fu_82_p2 <= std_logic_vector(shift_left(unsigned(ap_const_lv8_1),to_integer(unsigned('0' & zext_ln54_fu_78_p1(8-1 downto 0)))));
-    trunc_ln54_fu_74_p1 <= ap_sig_allocacmp_i_271(3 - 1 downto 0);
+    trunc_ln54_fu_74_p1 <= ap_sig_allocacmp_i_349(3 - 1 downto 0);
     zext_ln54_1_fu_99_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(lshr_ln_fu_89_p4),64));
     zext_ln54_fu_78_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln54_fu_74_p1),8));
 end behav;

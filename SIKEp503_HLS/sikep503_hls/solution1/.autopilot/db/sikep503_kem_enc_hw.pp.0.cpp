@@ -1471,27 +1471,27 @@ extern "C" __attribute__((sdx_kernel("sikep503_kem_enc_hw", 0))) void sikep503_k
     const unsigned char *pk,
     unsigned char *ss)
 {
-#line 54 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
+#line 56 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE ap_ctrl_hs port=return
 # 32 "src/sikep503_kem_enc_hw.cpp"
 
-#line 55 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
+#line 57 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE s_axilite port=return
 # 32 "src/sikep503_kem_enc_hw.cpp"
 
-#line 56 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
+#line 58 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE m_axi depth=402 port=ct
 # 32 "src/sikep503_kem_enc_hw.cpp"
 
-#line 57 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
+#line 59 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE m_axi depth=378 port=pk
 # 32 "src/sikep503_kem_enc_hw.cpp"
 
-#line 58 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
+#line 60 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE INTERFACE m_axi depth=16 port=ss
 # 32 "src/sikep503_kem_enc_hw.cpp"
 
-#line 68 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
+#line 70 "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls.tcl"
 #pragma HLSDIRECTIVE TOP name=sikep503_kem_enc_hw
 # 32 "src/sikep503_kem_enc_hw.cpp"
 

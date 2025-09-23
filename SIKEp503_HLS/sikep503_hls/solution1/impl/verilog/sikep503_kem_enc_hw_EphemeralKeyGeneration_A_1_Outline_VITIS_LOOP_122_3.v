@@ -21,8 +21,6 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_122_3 (
         pts_X_q0,
         pts_X_address1,
         pts_X_ce1,
-        pts_X_we1,
-        pts_X_d1,
         pts_X_q1,
         pts_Z_address0,
         pts_Z_ce0,
@@ -31,8 +29,6 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_122_3 (
         pts_Z_q0,
         pts_Z_address1,
         pts_Z_ce1,
-        pts_Z_we1,
-        pts_Z_d1,
         pts_Z_q1,
         coeff_address0,
         coeff_ce0,
@@ -40,50 +36,43 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_122_3 (
         coeff_address1,
         coeff_ce1,
         coeff_q1,
-        grp_is_digit_lessthan_ct_fu_1343_p_din1,
-        grp_is_digit_lessthan_ct_fu_1343_p_din2,
-        grp_is_digit_lessthan_ct_fu_1343_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1343_p_ready,
-        grp_is_digit_lessthan_ct_fu_1348_p_din1,
-        grp_is_digit_lessthan_ct_fu_1348_p_din2,
-        grp_is_digit_lessthan_ct_fu_1348_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1348_p_ready,
-        grp_is_digit_lessthan_ct_fu_1353_p_din1,
-        grp_is_digit_lessthan_ct_fu_1353_p_din2,
-        grp_is_digit_lessthan_ct_fu_1353_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1353_p_ready,
-        grp_is_digit_lessthan_ct_fu_1358_p_din1,
-        grp_is_digit_lessthan_ct_fu_1358_p_din2,
-        grp_is_digit_lessthan_ct_fu_1358_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1358_p_ready,
-        grp_is_digit_lessthan_ct_fu_1363_p_din1,
-        grp_is_digit_lessthan_ct_fu_1363_p_din2,
-        grp_is_digit_lessthan_ct_fu_1363_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1363_p_ready,
-        grp_is_digit_lessthan_ct_fu_1368_p_din1,
-        grp_is_digit_lessthan_ct_fu_1368_p_din2,
-        grp_is_digit_lessthan_ct_fu_1368_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1368_p_ready,
-        grp_is_digit_lessthan_ct_fu_1373_p_din1,
-        grp_is_digit_lessthan_ct_fu_1373_p_din2,
-        grp_is_digit_lessthan_ct_fu_1373_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1373_p_ready,
-        grp_is_digit_lessthan_ct_fu_1378_p_din1,
-        grp_is_digit_lessthan_ct_fu_1378_p_din2,
-        grp_is_digit_lessthan_ct_fu_1378_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1378_p_ready,
-        grp_is_digit_lessthan_ct_fu_1383_p_din1,
-        grp_is_digit_lessthan_ct_fu_1383_p_din2,
-        grp_is_digit_lessthan_ct_fu_1383_p_dout0,
-        grp_is_digit_lessthan_ct_fu_1383_p_ready,
-        tmp_1931_is_digit_lessthan_ct_fu_1388_p_din1,
-        tmp_1931_is_digit_lessthan_ct_fu_1388_p_din2,
-        tmp_1931_is_digit_lessthan_ct_fu_1388_p_dout0,
-        tmp_1931_is_digit_lessthan_ct_fu_1388_p_ready,
-        tmp_digit_x_digit_hls_fu_1393_p_din1,
-        tmp_digit_x_digit_hls_fu_1393_p_din2,
-        tmp_digit_x_digit_hls_fu_1393_p_dout0,
-        tmp_digit_x_digit_hls_fu_1393_p_ready
+        grp_mp_mul_1_fu_1321_p_din1,
+        grp_mp_mul_1_fu_1321_p_din2,
+        grp_mp_mul_1_fu_1321_p_din3,
+        grp_mp_mul_1_fu_1321_p_din4,
+        grp_mp_mul_1_fu_1321_p_din5,
+        grp_mp_mul_1_fu_1321_p_din6,
+        grp_mp_mul_1_fu_1321_p_din7,
+        grp_mp_mul_1_fu_1321_p_din8,
+        grp_mp_mul_1_fu_1321_p_din9,
+        grp_mp_mul_1_fu_1321_p_din10,
+        grp_mp_mul_1_fu_1321_p_din11,
+        grp_mp_mul_1_fu_1321_p_din12,
+        grp_mp_mul_1_fu_1321_p_din13,
+        grp_mp_mul_1_fu_1321_p_din14,
+        grp_mp_mul_1_fu_1321_p_din15,
+        grp_mp_mul_1_fu_1321_p_din16,
+        grp_mp_mul_1_fu_1321_p_dout0_0,
+        grp_mp_mul_1_fu_1321_p_dout0_1,
+        grp_mp_mul_1_fu_1321_p_dout0_2,
+        grp_mp_mul_1_fu_1321_p_dout0_3,
+        grp_mp_mul_1_fu_1321_p_dout0_4,
+        grp_mp_mul_1_fu_1321_p_dout0_5,
+        grp_mp_mul_1_fu_1321_p_dout0_6,
+        grp_mp_mul_1_fu_1321_p_dout0_7,
+        grp_mp_mul_1_fu_1321_p_dout0_8,
+        grp_mp_mul_1_fu_1321_p_dout0_9,
+        grp_mp_mul_1_fu_1321_p_dout0_10,
+        grp_mp_mul_1_fu_1321_p_dout0_11,
+        grp_mp_mul_1_fu_1321_p_dout0_12,
+        grp_mp_mul_1_fu_1321_p_dout0_13,
+        grp_mp_mul_1_fu_1321_p_dout0_14,
+        grp_mp_mul_1_fu_1321_p_dout0_15,
+        grp_mp_mul_1_fu_1321_p_ce,
+        grp_mp_mul_1_fu_1321_p_start,
+        grp_mp_mul_1_fu_1321_p_ready,
+        grp_mp_mul_1_fu_1321_p_done,
+        grp_mp_mul_1_fu_1321_p_idle
 );
 
 parameter    ap_ST_fsm_state1 = 3'd1;
@@ -104,8 +93,6 @@ output  [63:0] pts_X_d0;
 input  [63:0] pts_X_q0;
 output  [6:0] pts_X_address1;
 output   pts_X_ce1;
-output   pts_X_we1;
-output  [63:0] pts_X_d1;
 input  [63:0] pts_X_q1;
 output  [6:0] pts_Z_address0;
 output   pts_Z_ce0;
@@ -114,8 +101,6 @@ output  [63:0] pts_Z_d0;
 input  [63:0] pts_Z_q0;
 output  [6:0] pts_Z_address1;
 output   pts_Z_ce1;
-output   pts_Z_we1;
-output  [63:0] pts_Z_d1;
 input  [63:0] pts_Z_q1;
 output  [5:0] coeff_address0;
 output   coeff_ce0;
@@ -123,50 +108,43 @@ input  [63:0] coeff_q0;
 output  [5:0] coeff_address1;
 output   coeff_ce1;
 input  [63:0] coeff_q1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1343_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1343_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1343_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1343_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1348_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1348_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1348_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1348_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1353_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1353_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1353_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1353_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1358_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1358_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1358_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1358_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1363_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1363_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1363_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1363_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1368_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1368_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1368_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1368_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1373_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1373_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1373_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1373_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1378_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1378_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1378_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1378_p_ready;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1383_p_din1;
-output  [63:0] grp_is_digit_lessthan_ct_fu_1383_p_din2;
-input  [0:0] grp_is_digit_lessthan_ct_fu_1383_p_dout0;
-input   grp_is_digit_lessthan_ct_fu_1383_p_ready;
-output  [63:0] tmp_1931_is_digit_lessthan_ct_fu_1388_p_din1;
-output  [63:0] tmp_1931_is_digit_lessthan_ct_fu_1388_p_din2;
-input  [0:0] tmp_1931_is_digit_lessthan_ct_fu_1388_p_dout0;
-input   tmp_1931_is_digit_lessthan_ct_fu_1388_p_ready;
-output  [63:0] tmp_digit_x_digit_hls_fu_1393_p_din1;
-output  [63:0] tmp_digit_x_digit_hls_fu_1393_p_din2;
-input  [127:0] tmp_digit_x_digit_hls_fu_1393_p_dout0;
-input   tmp_digit_x_digit_hls_fu_1393_p_ready;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din1;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din2;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din3;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din4;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din5;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din6;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din7;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din8;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din9;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din10;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din11;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din12;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din13;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din14;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din15;
+output  [63:0] grp_mp_mul_1_fu_1321_p_din16;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_0;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_1;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_2;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_3;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_4;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_5;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_6;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_7;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_8;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_9;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_10;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_11;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_12;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_13;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_14;
+input  [63:0] grp_mp_mul_1_fu_1321_p_dout0_15;
+output   grp_mp_mul_1_fu_1321_p_ce;
+output   grp_mp_mul_1_fu_1321_p_start;
+input   grp_mp_mul_1_fu_1321_p_ready;
+input   grp_mp_mul_1_fu_1321_p_done;
+input   grp_mp_mul_1_fu_1321_p_idle;
 
 reg ap_done;
 reg ap_idle;
@@ -174,59 +152,53 @@ reg ap_ready;
 
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [31:0] i_302_reg_94;
+reg   [31:0] i_404_reg_100;
 wire    ap_CS_fsm_state2;
-wire    grp_eval_4_isog_fu_42_ap_start;
-wire    grp_eval_4_isog_fu_42_ap_done;
-wire    grp_eval_4_isog_fu_42_ap_idle;
-wire    grp_eval_4_isog_fu_42_ap_ready;
-wire   [6:0] grp_eval_4_isog_fu_42_P_X_address0;
-wire    grp_eval_4_isog_fu_42_P_X_ce0;
-wire    grp_eval_4_isog_fu_42_P_X_we0;
-wire   [63:0] grp_eval_4_isog_fu_42_P_X_d0;
-wire   [6:0] grp_eval_4_isog_fu_42_P_X_address1;
-wire    grp_eval_4_isog_fu_42_P_X_ce1;
-wire    grp_eval_4_isog_fu_42_P_X_we1;
-wire   [63:0] grp_eval_4_isog_fu_42_P_X_d1;
-wire   [6:0] grp_eval_4_isog_fu_42_P_Z_address0;
-wire    grp_eval_4_isog_fu_42_P_Z_ce0;
-wire    grp_eval_4_isog_fu_42_P_Z_we0;
-wire   [63:0] grp_eval_4_isog_fu_42_P_Z_d0;
-wire   [6:0] grp_eval_4_isog_fu_42_P_Z_address1;
-wire    grp_eval_4_isog_fu_42_P_Z_ce1;
-wire    grp_eval_4_isog_fu_42_P_Z_we1;
-wire   [63:0] grp_eval_4_isog_fu_42_P_Z_d1;
-wire   [5:0] grp_eval_4_isog_fu_42_coeff_address0;
-wire    grp_eval_4_isog_fu_42_coeff_ce0;
-wire   [5:0] grp_eval_4_isog_fu_42_coeff_address1;
-wire    grp_eval_4_isog_fu_42_coeff_ce1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_102_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_102_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_107_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_107_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_112_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_112_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_117_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_117_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_122_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_122_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_127_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_127_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_132_p_din1;
-wire  signed [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_132_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_137_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_137_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_142_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_142_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_tmp_1931_is_digit_lessthan_ct_fu_147_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_tmp_1931_is_digit_lessthan_ct_fu_147_p_din2;
-wire   [63:0] grp_eval_4_isog_fu_42_tmp_digit_x_digit_hls_fu_152_p_din1;
-wire   [63:0] grp_eval_4_isog_fu_42_tmp_digit_x_digit_hls_fu_152_p_din2;
-reg    grp_eval_4_isog_fu_42_ap_start_reg;
-wire   [0:0] icmp_ln122_fu_66_p2;
+wire    grp_eval_4_isog_fu_46_ap_start;
+wire    grp_eval_4_isog_fu_46_ap_done;
+wire    grp_eval_4_isog_fu_46_ap_idle;
+wire    grp_eval_4_isog_fu_46_ap_ready;
+wire   [6:0] grp_eval_4_isog_fu_46_P_X_address0;
+wire    grp_eval_4_isog_fu_46_P_X_ce0;
+wire    grp_eval_4_isog_fu_46_P_X_we0;
+wire   [63:0] grp_eval_4_isog_fu_46_P_X_d0;
+wire   [6:0] grp_eval_4_isog_fu_46_P_X_address1;
+wire    grp_eval_4_isog_fu_46_P_X_ce1;
+wire   [6:0] grp_eval_4_isog_fu_46_P_Z_address0;
+wire    grp_eval_4_isog_fu_46_P_Z_ce0;
+wire    grp_eval_4_isog_fu_46_P_Z_we0;
+wire   [63:0] grp_eval_4_isog_fu_46_P_Z_d0;
+wire   [6:0] grp_eval_4_isog_fu_46_P_Z_address1;
+wire    grp_eval_4_isog_fu_46_P_Z_ce1;
+wire   [5:0] grp_eval_4_isog_fu_46_coeff_address0;
+wire    grp_eval_4_isog_fu_46_coeff_ce0;
+wire   [5:0] grp_eval_4_isog_fu_46_coeff_address1;
+wire    grp_eval_4_isog_fu_46_coeff_ce1;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din1;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din2;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din3;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din4;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din5;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din6;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din7;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din8;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din9;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din10;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din11;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din12;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din13;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din14;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din15;
+wire   [63:0] grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din16;
+wire    grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_ce;
+wire    grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_start;
+reg    grp_mp_mul_1_fu_108_ap_start;
+reg    grp_mp_mul_1_fu_108_ap_ce;
+reg    grp_eval_4_isog_fu_46_ap_start_reg;
+wire   [0:0] icmp_ln122_fu_72_p2;
 wire    ap_CS_fsm_state3;
-reg   [31:0] i_fu_32;
-wire   [31:0] add_ln122_fu_71_p2;
+reg   [31:0] i_fu_36;
+wire   [31:0] add_ln122_fu_77_p2;
 reg   [2:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -236,88 +208,77 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 3'd1;
-#0 grp_eval_4_isog_fu_42_ap_start_reg = 1'b0;
-#0 i_fu_32 = 32'd0;
+#0 grp_eval_4_isog_fu_46_ap_start_reg = 1'b0;
+#0 i_fu_36 = 32'd0;
 end
 
-sikep503_kem_enc_hw_eval_4_isog grp_eval_4_isog_fu_42(
+sikep503_kem_enc_hw_eval_4_isog grp_eval_4_isog_fu_46(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_eval_4_isog_fu_42_ap_start),
-    .ap_done(grp_eval_4_isog_fu_42_ap_done),
-    .ap_idle(grp_eval_4_isog_fu_42_ap_idle),
-    .ap_ready(grp_eval_4_isog_fu_42_ap_ready),
-    .P_X_address0(grp_eval_4_isog_fu_42_P_X_address0),
-    .P_X_ce0(grp_eval_4_isog_fu_42_P_X_ce0),
-    .P_X_we0(grp_eval_4_isog_fu_42_P_X_we0),
-    .P_X_d0(grp_eval_4_isog_fu_42_P_X_d0),
+    .ap_start(grp_eval_4_isog_fu_46_ap_start),
+    .ap_done(grp_eval_4_isog_fu_46_ap_done),
+    .ap_idle(grp_eval_4_isog_fu_46_ap_idle),
+    .ap_ready(grp_eval_4_isog_fu_46_ap_ready),
+    .P_X_address0(grp_eval_4_isog_fu_46_P_X_address0),
+    .P_X_ce0(grp_eval_4_isog_fu_46_P_X_ce0),
+    .P_X_we0(grp_eval_4_isog_fu_46_P_X_we0),
+    .P_X_d0(grp_eval_4_isog_fu_46_P_X_d0),
     .P_X_q0(pts_X_q0),
-    .P_X_address1(grp_eval_4_isog_fu_42_P_X_address1),
-    .P_X_ce1(grp_eval_4_isog_fu_42_P_X_ce1),
-    .P_X_we1(grp_eval_4_isog_fu_42_P_X_we1),
-    .P_X_d1(grp_eval_4_isog_fu_42_P_X_d1),
+    .P_X_address1(grp_eval_4_isog_fu_46_P_X_address1),
+    .P_X_ce1(grp_eval_4_isog_fu_46_P_X_ce1),
     .P_X_q1(pts_X_q1),
-    .P_X_offset(i_302_reg_94),
-    .P_Z_address0(grp_eval_4_isog_fu_42_P_Z_address0),
-    .P_Z_ce0(grp_eval_4_isog_fu_42_P_Z_ce0),
-    .P_Z_we0(grp_eval_4_isog_fu_42_P_Z_we0),
-    .P_Z_d0(grp_eval_4_isog_fu_42_P_Z_d0),
+    .P_X_offset(i_404_reg_100),
+    .P_Z_address0(grp_eval_4_isog_fu_46_P_Z_address0),
+    .P_Z_ce0(grp_eval_4_isog_fu_46_P_Z_ce0),
+    .P_Z_we0(grp_eval_4_isog_fu_46_P_Z_we0),
+    .P_Z_d0(grp_eval_4_isog_fu_46_P_Z_d0),
     .P_Z_q0(pts_Z_q0),
-    .P_Z_address1(grp_eval_4_isog_fu_42_P_Z_address1),
-    .P_Z_ce1(grp_eval_4_isog_fu_42_P_Z_ce1),
-    .P_Z_we1(grp_eval_4_isog_fu_42_P_Z_we1),
-    .P_Z_d1(grp_eval_4_isog_fu_42_P_Z_d1),
+    .P_Z_address1(grp_eval_4_isog_fu_46_P_Z_address1),
+    .P_Z_ce1(grp_eval_4_isog_fu_46_P_Z_ce1),
     .P_Z_q1(pts_Z_q1),
-    .coeff_address0(grp_eval_4_isog_fu_42_coeff_address0),
-    .coeff_ce0(grp_eval_4_isog_fu_42_coeff_ce0),
+    .coeff_address0(grp_eval_4_isog_fu_46_coeff_address0),
+    .coeff_ce0(grp_eval_4_isog_fu_46_coeff_ce0),
     .coeff_q0(coeff_q0),
-    .coeff_address1(grp_eval_4_isog_fu_42_coeff_address1),
-    .coeff_ce1(grp_eval_4_isog_fu_42_coeff_ce1),
+    .coeff_address1(grp_eval_4_isog_fu_46_coeff_address1),
+    .coeff_ce1(grp_eval_4_isog_fu_46_coeff_ce1),
     .coeff_q1(coeff_q1),
-    .grp_is_digit_lessthan_ct_fu_102_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_102_p_din1),
-    .grp_is_digit_lessthan_ct_fu_102_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_102_p_din2),
-    .grp_is_digit_lessthan_ct_fu_102_p_dout0(grp_is_digit_lessthan_ct_fu_1343_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_102_p_ready(grp_is_digit_lessthan_ct_fu_1343_p_ready),
-    .grp_is_digit_lessthan_ct_fu_107_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_107_p_din1),
-    .grp_is_digit_lessthan_ct_fu_107_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_107_p_din2),
-    .grp_is_digit_lessthan_ct_fu_107_p_dout0(grp_is_digit_lessthan_ct_fu_1348_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_107_p_ready(grp_is_digit_lessthan_ct_fu_1348_p_ready),
-    .grp_is_digit_lessthan_ct_fu_112_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_112_p_din1),
-    .grp_is_digit_lessthan_ct_fu_112_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_112_p_din2),
-    .grp_is_digit_lessthan_ct_fu_112_p_dout0(grp_is_digit_lessthan_ct_fu_1353_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_112_p_ready(grp_is_digit_lessthan_ct_fu_1353_p_ready),
-    .grp_is_digit_lessthan_ct_fu_117_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_117_p_din1),
-    .grp_is_digit_lessthan_ct_fu_117_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_117_p_din2),
-    .grp_is_digit_lessthan_ct_fu_117_p_dout0(grp_is_digit_lessthan_ct_fu_1358_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_117_p_ready(grp_is_digit_lessthan_ct_fu_1358_p_ready),
-    .grp_is_digit_lessthan_ct_fu_122_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_122_p_din1),
-    .grp_is_digit_lessthan_ct_fu_122_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_122_p_din2),
-    .grp_is_digit_lessthan_ct_fu_122_p_dout0(grp_is_digit_lessthan_ct_fu_1363_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_122_p_ready(grp_is_digit_lessthan_ct_fu_1363_p_ready),
-    .grp_is_digit_lessthan_ct_fu_127_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_127_p_din1),
-    .grp_is_digit_lessthan_ct_fu_127_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_127_p_din2),
-    .grp_is_digit_lessthan_ct_fu_127_p_dout0(grp_is_digit_lessthan_ct_fu_1368_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_127_p_ready(grp_is_digit_lessthan_ct_fu_1368_p_ready),
-    .grp_is_digit_lessthan_ct_fu_132_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_132_p_din1),
-    .grp_is_digit_lessthan_ct_fu_132_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_132_p_din2),
-    .grp_is_digit_lessthan_ct_fu_132_p_dout0(grp_is_digit_lessthan_ct_fu_1373_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_132_p_ready(grp_is_digit_lessthan_ct_fu_1373_p_ready),
-    .grp_is_digit_lessthan_ct_fu_137_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_137_p_din1),
-    .grp_is_digit_lessthan_ct_fu_137_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_137_p_din2),
-    .grp_is_digit_lessthan_ct_fu_137_p_dout0(grp_is_digit_lessthan_ct_fu_1378_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_137_p_ready(grp_is_digit_lessthan_ct_fu_1378_p_ready),
-    .grp_is_digit_lessthan_ct_fu_142_p_din1(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_142_p_din1),
-    .grp_is_digit_lessthan_ct_fu_142_p_din2(grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_142_p_din2),
-    .grp_is_digit_lessthan_ct_fu_142_p_dout0(grp_is_digit_lessthan_ct_fu_1383_p_dout0),
-    .grp_is_digit_lessthan_ct_fu_142_p_ready(grp_is_digit_lessthan_ct_fu_1383_p_ready),
-    .tmp_1931_is_digit_lessthan_ct_fu_147_p_din1(grp_eval_4_isog_fu_42_tmp_1931_is_digit_lessthan_ct_fu_147_p_din1),
-    .tmp_1931_is_digit_lessthan_ct_fu_147_p_din2(grp_eval_4_isog_fu_42_tmp_1931_is_digit_lessthan_ct_fu_147_p_din2),
-    .tmp_1931_is_digit_lessthan_ct_fu_147_p_dout0(tmp_1931_is_digit_lessthan_ct_fu_1388_p_dout0),
-    .tmp_1931_is_digit_lessthan_ct_fu_147_p_ready(tmp_1931_is_digit_lessthan_ct_fu_1388_p_ready),
-    .tmp_digit_x_digit_hls_fu_152_p_din1(grp_eval_4_isog_fu_42_tmp_digit_x_digit_hls_fu_152_p_din1),
-    .tmp_digit_x_digit_hls_fu_152_p_din2(grp_eval_4_isog_fu_42_tmp_digit_x_digit_hls_fu_152_p_din2),
-    .tmp_digit_x_digit_hls_fu_152_p_dout0(tmp_digit_x_digit_hls_fu_1393_p_dout0),
-    .tmp_digit_x_digit_hls_fu_152_p_ready(tmp_digit_x_digit_hls_fu_1393_p_ready)
+    .grp_mp_mul_1_fu_108_p_din1(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din1),
+    .grp_mp_mul_1_fu_108_p_din2(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din2),
+    .grp_mp_mul_1_fu_108_p_din3(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din3),
+    .grp_mp_mul_1_fu_108_p_din4(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din4),
+    .grp_mp_mul_1_fu_108_p_din5(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din5),
+    .grp_mp_mul_1_fu_108_p_din6(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din6),
+    .grp_mp_mul_1_fu_108_p_din7(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din7),
+    .grp_mp_mul_1_fu_108_p_din8(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din8),
+    .grp_mp_mul_1_fu_108_p_din9(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din9),
+    .grp_mp_mul_1_fu_108_p_din10(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din10),
+    .grp_mp_mul_1_fu_108_p_din11(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din11),
+    .grp_mp_mul_1_fu_108_p_din12(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din12),
+    .grp_mp_mul_1_fu_108_p_din13(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din13),
+    .grp_mp_mul_1_fu_108_p_din14(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din14),
+    .grp_mp_mul_1_fu_108_p_din15(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din15),
+    .grp_mp_mul_1_fu_108_p_din16(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din16),
+    .grp_mp_mul_1_fu_108_p_dout0_0(grp_mp_mul_1_fu_1321_p_dout0_0),
+    .grp_mp_mul_1_fu_108_p_dout0_1(grp_mp_mul_1_fu_1321_p_dout0_1),
+    .grp_mp_mul_1_fu_108_p_dout0_2(grp_mp_mul_1_fu_1321_p_dout0_2),
+    .grp_mp_mul_1_fu_108_p_dout0_3(grp_mp_mul_1_fu_1321_p_dout0_3),
+    .grp_mp_mul_1_fu_108_p_dout0_4(grp_mp_mul_1_fu_1321_p_dout0_4),
+    .grp_mp_mul_1_fu_108_p_dout0_5(grp_mp_mul_1_fu_1321_p_dout0_5),
+    .grp_mp_mul_1_fu_108_p_dout0_6(grp_mp_mul_1_fu_1321_p_dout0_6),
+    .grp_mp_mul_1_fu_108_p_dout0_7(grp_mp_mul_1_fu_1321_p_dout0_7),
+    .grp_mp_mul_1_fu_108_p_dout0_8(grp_mp_mul_1_fu_1321_p_dout0_8),
+    .grp_mp_mul_1_fu_108_p_dout0_9(grp_mp_mul_1_fu_1321_p_dout0_9),
+    .grp_mp_mul_1_fu_108_p_dout0_10(grp_mp_mul_1_fu_1321_p_dout0_10),
+    .grp_mp_mul_1_fu_108_p_dout0_11(grp_mp_mul_1_fu_1321_p_dout0_11),
+    .grp_mp_mul_1_fu_108_p_dout0_12(grp_mp_mul_1_fu_1321_p_dout0_12),
+    .grp_mp_mul_1_fu_108_p_dout0_13(grp_mp_mul_1_fu_1321_p_dout0_13),
+    .grp_mp_mul_1_fu_108_p_dout0_14(grp_mp_mul_1_fu_1321_p_dout0_14),
+    .grp_mp_mul_1_fu_108_p_dout0_15(grp_mp_mul_1_fu_1321_p_dout0_15),
+    .grp_mp_mul_1_fu_108_p_ce(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_ce),
+    .grp_mp_mul_1_fu_108_p_start(grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_start),
+    .grp_mp_mul_1_fu_108_p_ready(grp_mp_mul_1_fu_1321_p_ready),
+    .grp_mp_mul_1_fu_108_p_done(grp_mp_mul_1_fu_1321_p_done),
+    .grp_mp_mul_1_fu_108_p_idle(grp_mp_mul_1_fu_1321_p_idle)
 );
 
 always @ (posedge ap_clk) begin
@@ -330,27 +291,27 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_eval_4_isog_fu_42_ap_start_reg <= 1'b0;
+        grp_eval_4_isog_fu_46_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln122_fu_66_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-            grp_eval_4_isog_fu_42_ap_start_reg <= 1'b1;
-        end else if ((grp_eval_4_isog_fu_42_ap_ready == 1'b1)) begin
-            grp_eval_4_isog_fu_42_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln122_fu_72_p2 == 1'd0))) begin
+            grp_eval_4_isog_fu_46_ap_start_reg <= 1'b1;
+        end else if ((grp_eval_4_isog_fu_46_ap_ready == 1'b1)) begin
+            grp_eval_4_isog_fu_46_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_fu_32 <= 32'd0;
-    end else if (((icmp_ln122_fu_66_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_fu_32 <= add_ln122_fu_71_p2;
+        i_fu_36 <= 32'd0;
+    end else if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln122_fu_72_p2 == 1'd0))) begin
+        i_fu_36 <= add_ln122_fu_77_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_302_reg_94 <= i_fu_32;
+        i_404_reg_100 <= i_fu_36;
     end
 end
 
@@ -365,7 +326,7 @@ end
 assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_eval_4_isog_fu_42_ap_done == 1'b0)) begin
+    if ((grp_eval_4_isog_fu_46_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -373,7 +334,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((icmp_ln122_fu_66_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((((1'b1 == ap_CS_fsm_state2) & (icmp_ln122_fu_72_p2 == 1'd1)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -389,10 +350,26 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln122_fu_66_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln122_fu_72_p2 == 1'd1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        grp_mp_mul_1_fu_108_ap_ce = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_ce;
+    end else begin
+        grp_mp_mul_1_fu_108_ap_ce = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        grp_mp_mul_1_fu_108_ap_start = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_start;
+    end else begin
+        grp_mp_mul_1_fu_108_ap_start = 1'b0;
     end
 end
 
@@ -406,14 +383,14 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((icmp_ln122_fu_66_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln122_fu_72_p2 == 1'd1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((grp_eval_4_isog_fu_42_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((grp_eval_4_isog_fu_46_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -425,7 +402,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln122_fu_71_p2 = (i_fu_32 + 32'd1);
+assign add_ln122_fu_77_p2 = (i_fu_36 + 32'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -433,92 +410,76 @@ assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
-assign coeff_address0 = grp_eval_4_isog_fu_42_coeff_address0;
+assign coeff_address0 = grp_eval_4_isog_fu_46_coeff_address0;
 
-assign coeff_address1 = grp_eval_4_isog_fu_42_coeff_address1;
+assign coeff_address1 = grp_eval_4_isog_fu_46_coeff_address1;
 
-assign coeff_ce0 = grp_eval_4_isog_fu_42_coeff_ce0;
+assign coeff_ce0 = grp_eval_4_isog_fu_46_coeff_ce0;
 
-assign coeff_ce1 = grp_eval_4_isog_fu_42_coeff_ce1;
+assign coeff_ce1 = grp_eval_4_isog_fu_46_coeff_ce1;
 
-assign grp_eval_4_isog_fu_42_ap_start = grp_eval_4_isog_fu_42_ap_start_reg;
+assign grp_eval_4_isog_fu_46_ap_start = grp_eval_4_isog_fu_46_ap_start_reg;
 
-assign grp_is_digit_lessthan_ct_fu_1343_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_102_p_din1;
+assign grp_mp_mul_1_fu_1321_p_ce = grp_mp_mul_1_fu_108_ap_ce;
 
-assign grp_is_digit_lessthan_ct_fu_1343_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_102_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din1 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din1;
 
-assign grp_is_digit_lessthan_ct_fu_1348_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_107_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din10 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din10;
 
-assign grp_is_digit_lessthan_ct_fu_1348_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_107_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din11 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din11;
 
-assign grp_is_digit_lessthan_ct_fu_1353_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_112_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din12 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din12;
 
-assign grp_is_digit_lessthan_ct_fu_1353_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_112_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din13 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din13;
 
-assign grp_is_digit_lessthan_ct_fu_1358_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_117_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din14 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din14;
 
-assign grp_is_digit_lessthan_ct_fu_1358_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_117_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din15 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din15;
 
-assign grp_is_digit_lessthan_ct_fu_1363_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_122_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din16 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din16;
 
-assign grp_is_digit_lessthan_ct_fu_1363_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_122_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din2 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din2;
 
-assign grp_is_digit_lessthan_ct_fu_1368_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_127_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din3 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din3;
 
-assign grp_is_digit_lessthan_ct_fu_1368_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_127_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din4 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din4;
 
-assign grp_is_digit_lessthan_ct_fu_1373_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_132_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din5 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din5;
 
-assign grp_is_digit_lessthan_ct_fu_1373_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_132_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din6 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din6;
 
-assign grp_is_digit_lessthan_ct_fu_1378_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_137_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din7 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din7;
 
-assign grp_is_digit_lessthan_ct_fu_1378_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_137_p_din2;
+assign grp_mp_mul_1_fu_1321_p_din8 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din8;
 
-assign grp_is_digit_lessthan_ct_fu_1383_p_din1 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_142_p_din1;
+assign grp_mp_mul_1_fu_1321_p_din9 = grp_eval_4_isog_fu_46_grp_mp_mul_1_fu_108_p_din9;
 
-assign grp_is_digit_lessthan_ct_fu_1383_p_din2 = grp_eval_4_isog_fu_42_grp_is_digit_lessthan_ct_fu_142_p_din2;
+assign grp_mp_mul_1_fu_1321_p_start = grp_mp_mul_1_fu_108_ap_start;
 
-assign icmp_ln122_fu_66_p2 = ((i_fu_32 == npts_5) ? 1'b1 : 1'b0);
+assign icmp_ln122_fu_72_p2 = ((i_fu_36 == npts_5) ? 1'b1 : 1'b0);
 
-assign pts_X_address0 = grp_eval_4_isog_fu_42_P_X_address0;
+assign pts_X_address0 = grp_eval_4_isog_fu_46_P_X_address0;
 
-assign pts_X_address1 = grp_eval_4_isog_fu_42_P_X_address1;
+assign pts_X_address1 = grp_eval_4_isog_fu_46_P_X_address1;
 
-assign pts_X_ce0 = grp_eval_4_isog_fu_42_P_X_ce0;
+assign pts_X_ce0 = grp_eval_4_isog_fu_46_P_X_ce0;
 
-assign pts_X_ce1 = grp_eval_4_isog_fu_42_P_X_ce1;
+assign pts_X_ce1 = grp_eval_4_isog_fu_46_P_X_ce1;
 
-assign pts_X_d0 = grp_eval_4_isog_fu_42_P_X_d0;
+assign pts_X_d0 = grp_eval_4_isog_fu_46_P_X_d0;
 
-assign pts_X_d1 = grp_eval_4_isog_fu_42_P_X_d1;
+assign pts_X_we0 = grp_eval_4_isog_fu_46_P_X_we0;
 
-assign pts_X_we0 = grp_eval_4_isog_fu_42_P_X_we0;
+assign pts_Z_address0 = grp_eval_4_isog_fu_46_P_Z_address0;
 
-assign pts_X_we1 = grp_eval_4_isog_fu_42_P_X_we1;
+assign pts_Z_address1 = grp_eval_4_isog_fu_46_P_Z_address1;
 
-assign pts_Z_address0 = grp_eval_4_isog_fu_42_P_Z_address0;
+assign pts_Z_ce0 = grp_eval_4_isog_fu_46_P_Z_ce0;
 
-assign pts_Z_address1 = grp_eval_4_isog_fu_42_P_Z_address1;
+assign pts_Z_ce1 = grp_eval_4_isog_fu_46_P_Z_ce1;
 
-assign pts_Z_ce0 = grp_eval_4_isog_fu_42_P_Z_ce0;
+assign pts_Z_d0 = grp_eval_4_isog_fu_46_P_Z_d0;
 
-assign pts_Z_ce1 = grp_eval_4_isog_fu_42_P_Z_ce1;
-
-assign pts_Z_d0 = grp_eval_4_isog_fu_42_P_Z_d0;
-
-assign pts_Z_d1 = grp_eval_4_isog_fu_42_P_Z_d1;
-
-assign pts_Z_we0 = grp_eval_4_isog_fu_42_P_Z_we0;
-
-assign pts_Z_we1 = grp_eval_4_isog_fu_42_P_Z_we1;
-
-assign tmp_1931_is_digit_lessthan_ct_fu_1388_p_din1 = grp_eval_4_isog_fu_42_tmp_1931_is_digit_lessthan_ct_fu_147_p_din1;
-
-assign tmp_1931_is_digit_lessthan_ct_fu_1388_p_din2 = grp_eval_4_isog_fu_42_tmp_1931_is_digit_lessthan_ct_fu_147_p_din2;
-
-assign tmp_digit_x_digit_hls_fu_1393_p_din1 = grp_eval_4_isog_fu_42_tmp_digit_x_digit_hls_fu_152_p_din1;
-
-assign tmp_digit_x_digit_hls_fu_1393_p_din2 = grp_eval_4_isog_fu_42_tmp_digit_x_digit_hls_fu_152_p_din2;
+assign pts_Z_we0 = grp_eval_4_isog_fu_46_P_Z_we0;
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_122_3

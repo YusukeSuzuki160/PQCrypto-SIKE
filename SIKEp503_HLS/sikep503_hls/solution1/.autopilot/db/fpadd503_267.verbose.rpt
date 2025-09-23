@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_267'
 ================================================================
-* Date:           Wed Jul 30 17:00:12 2025
+* Date:           Wed Sep  3 15:16:55 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -38,9 +38,9 @@
         |                                                 |                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                     Instance                    |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50  |fpadd503_267_Pipeline_VITIS_LOOP_29_1  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_267_Pipeline_VITIS_LOOP_35_2_fu_65  |fpadd503_267_Pipeline_VITIS_LOOP_35_2  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_267_Pipeline_VITIS_LOOP_42_3_fu_78  |fpadd503_267_Pipeline_VITIS_LOOP_42_3  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50  |fpadd503_267_Pipeline_VITIS_LOOP_33_1  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_267_Pipeline_VITIS_LOOP_39_2_fu_65  |fpadd503_267_Pipeline_VITIS_LOOP_39_2  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_267_Pipeline_VITIS_LOOP_46_3_fu_78  |fpadd503_267_Pipeline_VITIS_LOOP_46_3  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -79,9 +79,9 @@
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
     |                     Instance                    |                 Module                | BRAM_18K| DSP|  FF | LUT | URAM|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
-    |grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50  |fpadd503_267_Pipeline_VITIS_LOOP_29_1  |        0|   0|   16|  676|    0|
-    |grp_fpadd503_267_Pipeline_VITIS_LOOP_35_2_fu_65  |fpadd503_267_Pipeline_VITIS_LOOP_35_2  |        0|   0|   80|  740|    0|
-    |grp_fpadd503_267_Pipeline_VITIS_LOOP_42_3_fu_78  |fpadd503_267_Pipeline_VITIS_LOOP_42_3  |        0|   0|  144|  795|    0|
+    |grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50  |fpadd503_267_Pipeline_VITIS_LOOP_33_1  |        0|   0|   16|  676|    0|
+    |grp_fpadd503_267_Pipeline_VITIS_LOOP_39_2_fu_65  |fpadd503_267_Pipeline_VITIS_LOOP_39_2  |        0|   0|   80|  740|    0|
+    |grp_fpadd503_267_Pipeline_VITIS_LOOP_46_3_fu_78  |fpadd503_267_Pipeline_VITIS_LOOP_46_3  |        0|   0|  144|  795|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
     |Total                                            |                                       |        0|   0|  240| 2211|    0|
     +-------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
@@ -124,9 +124,9 @@
     |                             Name                             | FF| LUT| Bits| Const Bits|
     +--------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                     |  6|   0|    6|          0|
-    |grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpadd503_267_Pipeline_VITIS_LOOP_35_2_fu_65_ap_start_reg  |  1|   0|    1|          0|
-    |grp_fpadd503_267_Pipeline_VITIS_LOOP_42_3_fu_78_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_267_Pipeline_VITIS_LOOP_39_2_fu_65_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fpadd503_267_Pipeline_VITIS_LOOP_46_3_fu_78_ap_start_reg  |  1|   0|    1|          0|
     |tmp_reg_124                                                   |  1|   0|    4|          3|
     +--------------------------------------------------------------+---+----+-----+-----------+
     |Total                                                         | 10|   0|   13|          3|
@@ -214,25 +214,25 @@ ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%c_1_offset_read = read i1 @_ssdm_op
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%c_0_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_0_offset"   --->   Operation 8 'read' 'c_0_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%a_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset"   --->   Operation 9 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%carry_loc = alloca i64 1"   --->   Operation 10 'alloca' 'carry_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %a_offset_read, i3 0" [src/generic/fp_generic.cpp:31]   --->   Operation 11 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [2/2] (1.42ns)   --->   "%call_ln31 = call void @fpadd503.267_Pipeline_VITIS_LOOP_29_1, i4 %tmp, i64 %a, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1" [src/generic/fp_generic.cpp:31]   --->   Operation 12 'call' 'call_ln31' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 %a_offset_read, i3 0" [src/generic/fp_generic.cpp:35]   --->   Operation 11 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [2/2] (1.42ns)   --->   "%call_ln35 = call void @fpadd503.267_Pipeline_VITIS_LOOP_33_1, i4 %tmp, i64 %a, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1" [src/generic/fp_generic.cpp:35]   --->   Operation 12 'call' 'call_ln35' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 1.48>
-ST_2 : Operation 13 [1/2] (1.48ns)   --->   "%call_ln31 = call void @fpadd503.267_Pipeline_VITIS_LOOP_29_1, i4 %tmp, i64 %a, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1" [src/generic/fp_generic.cpp:31]   --->   Operation 13 'call' 'call_ln31' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 13 [1/2] (1.48ns)   --->   "%call_ln35 = call void @fpadd503.267_Pipeline_VITIS_LOOP_33_1, i4 %tmp, i64 %a, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1" [src/generic/fp_generic.cpp:35]   --->   Operation 13 'call' 'call_ln35' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.71>
-ST_3 : Operation 14 [2/2] (0.71ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_35_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.71> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 14 [2/2] (0.71ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_39_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.71> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
-ST_4 : Operation 15 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_35_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 15 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_39_2, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc, i64 %p503x2_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.71>
 ST_5 : Operation 16 [1/1] (0.00ns)   --->   "%carry_loc_load = load i1 %carry_loc"   --->   Operation 16 'load' 'carry_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 17 [2/2] (0.71ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_42_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.71> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 17 [2/2] (0.71ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_46_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.71> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.48>
-ST_6 : Operation 18 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_42_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln46 = ret" [src/generic/fp_generic.cpp:46]   --->   Operation 19 'ret' 'ret_ln46' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 18 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.267_Pipeline_VITIS_LOOP_46_3, i1 %c_0_offset_read, i64 %c_0, i1 %c_1_offset_read, i64 %c_1, i1 %carry_loc_load, i64 %p503x2_1"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln50 = ret" [src/generic/fp_generic.cpp:50]   --->   Operation 19 'ret' 'ret_ln50' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -264,11 +264,11 @@ c_0_offset_read (read          ) [ 0011111]
 a_offset_read   (read          ) [ 0000000]
 carry_loc       (alloca        ) [ 0011110]
 tmp             (bitconcatenate) [ 0010000]
-call_ln31       (call          ) [ 0000000]
+call_ln35       (call          ) [ 0000000]
 call_ln0        (call          ) [ 0000000]
 carry_loc_load  (load          ) [ 0000001]
 call_ln0        (call          ) [ 0000000]
-ret_ln46        (ret           ) [ 0000000]
+ret_ln50        (ret           ) [ 0000000]
 </LifeTime>
 
 <model>
@@ -382,7 +382,7 @@ ret_ln46        (ret           ) [ 0000000]
 <pin id="23" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fpadd503.267_Pipeline_VITIS_LOOP_29_1"/></StgValue>
+<StgValue><ssdm name="fpadd503.267_Pipeline_VITIS_LOOP_33_1"/></StgValue>
 </bind>
 </comp>
 
@@ -391,7 +391,7 @@ ret_ln46        (ret           ) [ 0000000]
 <pin id="25" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fpadd503.267_Pipeline_VITIS_LOOP_35_2"/></StgValue>
+<StgValue><ssdm name="fpadd503.267_Pipeline_VITIS_LOOP_39_2"/></StgValue>
 </bind>
 </comp>
 
@@ -400,7 +400,7 @@ ret_ln46        (ret           ) [ 0000000]
 <pin id="27" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fpadd503.267_Pipeline_VITIS_LOOP_42_3"/></StgValue>
+<StgValue><ssdm name="fpadd503.267_Pipeline_VITIS_LOOP_46_3"/></StgValue>
 </bind>
 </comp>
 
@@ -451,7 +451,7 @@ ret_ln46        (ret           ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50">
+<comp id="50" class="1004" name="grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="0" slack="0"/>
 <pin id="52" dir="0" index="1" bw="4" slack="0"/>
@@ -464,11 +464,11 @@ ret_ln46        (ret           ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln31/1 "/>
+<opset="call_ln35/1 "/>
 </bind>
 </comp>
 
-<comp id="65" class="1004" name="grp_fpadd503_267_Pipeline_VITIS_LOOP_35_2_fu_65">
+<comp id="65" class="1004" name="grp_fpadd503_267_Pipeline_VITIS_LOOP_39_2_fu_65">
 <pin_list>
 <pin id="66" dir="0" index="0" bw="0" slack="0"/>
 <pin id="67" dir="0" index="1" bw="1" slack="2"/>
@@ -485,7 +485,7 @@ ret_ln46        (ret           ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="78" class="1004" name="grp_fpadd503_267_Pipeline_VITIS_LOOP_42_3_fu_78">
+<comp id="78" class="1004" name="grp_fpadd503_267_Pipeline_VITIS_LOOP_46_3_fu_78">
 <pin_list>
 <pin id="79" dir="0" index="0" bw="0" slack="0"/>
 <pin id="80" dir="0" index="1" bw="1" slack="4"/>
@@ -668,7 +668,7 @@ ret_ln46        (ret           ) [ 0000000]
 	Port: fpadd503.267 : p503x2_1 | {3 4 5 6 }
   - Chain level:
 	State 1
-		call_ln31 : 1
+		call_ln35 : 1
 	State 2
 	State 3
 	State 4
@@ -685,9 +685,9 @@ ret_ln46        (ret           ) [ 0000000]
 |----------|-------------------------------------------------|---------|---------|---------|
 | Operation|                 Functional Unit                 |  Delay  |    FF   |   LUT   |
 |----------|-------------------------------------------------|---------|---------|---------|
-|          | grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50 |  1.161  |    18   |   654   |
-|   call   | grp_fpadd503_267_Pipeline_VITIS_LOOP_35_2_fu_65 |  1.161  |    17   |   653   |
-|          | grp_fpadd503_267_Pipeline_VITIS_LOOP_42_3_fu_78 |  1.161  |    81   |   769   |
+|          | grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50 |  1.161  |    18   |   654   |
+|   call   | grp_fpadd503_267_Pipeline_VITIS_LOOP_39_2_fu_65 |  1.161  |    17   |   653   |
+|          | grp_fpadd503_267_Pipeline_VITIS_LOOP_46_3_fu_78 |  1.161  |    81   |   769   |
 |----------|-------------------------------------------------|---------|---------|---------|
 |          |            c_1_offset_read_read_fu_32           |    0    |    0    |    0    |
 |   read   |            c_0_offset_read_read_fu_38           |    0    |    0    |    0    |
@@ -717,9 +717,9 @@ N/A
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 |                       Comp                      |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
-| grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50 |  p1  |   2  |   4  |    8   ||    0    ||    9    |
-| grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50 |  p3  |   2  |   1  |    2   ||    0    ||    9    |
-| grp_fpadd503_267_Pipeline_VITIS_LOOP_29_1_fu_50 |  p5  |   2  |   1  |    2   ||    0    ||    9    |
+| grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50 |  p1  |   2  |   4  |    8   ||    0    ||    9    |
+| grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50 |  p3  |   2  |   1  |    2   ||    0    ||    9    |
+| grp_fpadd503_267_Pipeline_VITIS_LOOP_33_1_fu_50 |  p5  |   2  |   1  |    2   ||    0    ||    9    |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|
 |                      Total                      |      |      |      |   12   ||  1.161  ||    0    ||    27   |
 |-------------------------------------------------|------|------|------|--------||---------||---------||---------|

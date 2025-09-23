@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_52'" level="0">
-<item name = "Date">Wed Jul 30 15:21:48 2025
+<item name = "Date">Tue Sep 23 15:22:42 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,22 +24,24 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">614, 1035, 6.140 us, 10.350 us, 614, 1035, no</column>
+<column name="">350, 578, 3.500 us, 5.780 us, 350, 578, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_124_fu_308">mp_mul_124, 137, 235, 1.370 us, 2.350 us, 137, 235, no</column>
-<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_370_1_fu_326">fp2mul503_mont_52_Pipeline_VITIS_LOOP_370_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_370_192_fu_363">fp2mul503_mont_52_Pipeline_VITIS_LOOP_370_192, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_152_1_fu_370">fp2mul503_mont_52_Pipeline_VITIS_LOOP_152_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_179_1_fu_378">fp2mul503_mont_52_Pipeline_VITIS_LOOP_179_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_370_193_fu_386">fp2mul503_mont_52_Pipeline_VITIS_LOOP_370_193, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_rdc_mont_7_fu_392">rdc_mont_7, 134, 248, 1.340 us, 2.480 us, 134, 248, no</column>
-<column name="grp_mp_mul_1218_fu_439">mp_mul_1218, 137, 235, 1.370 us, 2.350 us, 137, 235, no</column>
-<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_152_194_fu_446">fp2mul503_mont_52_Pipeline_VITIS_LOOP_152_194, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_19_fu_74">mp_mul_19, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_mp_mul_19_fu_86">mp_mul_19, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_378_1_fu_98">fp2mul503_mont_52_Pipeline_VITIS_LOOP_378_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_378_1118_fu_111">fp2mul503_mont_52_Pipeline_VITIS_LOOP_378_1118, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_160_1_fu_120">fp2mul503_mont_52_Pipeline_VITIS_LOOP_160_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_187_1_fu_128">fp2mul503_mont_52_Pipeline_VITIS_LOOP_187_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_378_1119_fu_136">fp2mul503_mont_52_Pipeline_VITIS_LOOP_378_1119, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_56_fu_142">rdc_mont_56, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
+<column name="grp_mp_mul_6105_fu_151">mp_mul_6105, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_fp2mul503_mont_52_Pipeline_VITIS_LOOP_160_1120_fu_158">fp2mul503_mont_52_Pipeline_VITIS_LOOP_160_1120, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_57_fu_164">rdc_mont_57, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

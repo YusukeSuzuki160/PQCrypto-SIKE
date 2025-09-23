@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont_96'" level="0">
-<item name = "Date">Wed Jul 30 15:21:04 2025
+<item name = "Date">Wed Sep  3 14:20:40 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.854 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
+<column name="">126, 232, 1.260 us, 2.320 us, 126, 232, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_rdc_mont_96_Pipeline_VITIS_LOOP_356_1_fu_181">rdc_mont_96_Pipeline_VITIS_LOOP_356_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_rdc_mont_96_Pipeline_VITIS_LOOP_362_3_fu_187">rdc_mont_96_Pipeline_VITIS_LOOP_362_3, 2, 11, 20.000 ns, 0.110 us, 1, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_rdc_mont_96_Pipeline_VITIS_LOOP_379_5_fu_203">rdc_mont_96_Pipeline_VITIS_LOOP_379_5, 5, 11, 50.000 ns, 0.110 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_96_Pipeline_VITIS_LOOP_293_1_fu_394">rdc_mont_96_Pipeline_VITIS_LOOP_293_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_96_Pipeline_VITIS_LOOP_299_3_fu_414">rdc_mont_96_Pipeline_VITIS_LOOP_299_3, 2, 10, 20.000 ns, 0.100 us, 1, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_96_Pipeline_VITIS_LOOP_316_5_fu_442">rdc_mont_96_Pipeline_VITIS_LOOP_316_5, 4, 10, 40.000 ns, 0.100 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_361_2">40, 112, 5 ~ 14, -, -, 8, no</column>
-<column name="- VITIS_LOOP_377_4">56, 98, 8 ~ 14, -, -, 7, no</column>
+<column name="- VITIS_LOOP_298_2">56, 120, 7 ~ 15, -, -, 8, no</column>
+<column name="- VITIS_LOOP_314_4">56, 98, 8 ~ 14, -, -, 7, no</column>
 </table>
 </item>
 </section>

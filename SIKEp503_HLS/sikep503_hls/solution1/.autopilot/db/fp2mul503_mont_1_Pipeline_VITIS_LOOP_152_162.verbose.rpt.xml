@@ -1,0 +1,212 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fp2mul503_mont_1_Pipeline_VITIS_LOOP_152_162'" level="0">
+<item name = "Date">Fri Sep 12 14:16:26 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.170 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_152_1">16, 16, 1, 1, 1, 16, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 564, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 130, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 180, -</column>
+<column name="Register">-, -, 8, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_33_4_64_1_1_U1477">sparsemux_33_4_64_1_1, 0, 0, 0, 65, 0</column>
+<column name="sparsemux_33_4_64_1_1_U1478">sparsemux_33_4_64_1_1, 0, 0, 0, 65, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln152_fu_472_p2">+, 0, 0, 12, 5, 1</column>
+<column name="sub_ln95_fu_664_p2">-, 0, 0, 71, 1, 64</column>
+<column name="tempReg_fu_626_p2">-, 0, 0, 71, 64, 64</column>
+<column name="tt2_146_fu_706_p2">-, 0, 0, 71, 64, 64</column>
+<column name="and_ln155_fu_690_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln152_fu_466_p2">icmp, 0, 0, 13, 5, 6</column>
+<column name="borrow_29_fu_696_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln105_3_fu_644_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln95_fu_670_p2">or, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_35_fu_632_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_36_fu_638_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_37_fu_650_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln155_fu_684_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_phi_mux_borrow_phi_fu_451_p4">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_i">9, 2, 5, 10</column>
+<column name="i_133_fu_140">9, 2, 5, 10</column>
+<column name="tt2_10_o">9, 2, 64, 128</column>
+<column name="tt2_11_o">9, 2, 64, 128</column>
+<column name="tt2_12_o">9, 2, 64, 128</column>
+<column name="tt2_13_o">9, 2, 64, 128</column>
+<column name="tt2_14_o">9, 2, 64, 128</column>
+<column name="tt2_15_o">9, 2, 64, 128</column>
+<column name="tt2_1_o">9, 2, 64, 128</column>
+<column name="tt2_2_o">9, 2, 64, 128</column>
+<column name="tt2_3_o">9, 2, 64, 128</column>
+<column name="tt2_4_o">9, 2, 64, 128</column>
+<column name="tt2_5_o">9, 2, 64, 128</column>
+<column name="tt2_6_o">9, 2, 64, 128</column>
+<column name="tt2_7_o">9, 2, 64, 128</column>
+<column name="tt2_8_o">9, 2, 64, 128</column>
+<column name="tt2_9_o">9, 2, 64, 128</column>
+<column name="tt2_o">9, 2, 64, 128</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="borrow_reg_448">1, 0, 1, 0</column>
+<column name="i_133_fu_140">5, 0, 5, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, fp2mul503_mont.1_Pipeline_VITIS_LOOP_152_162, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, fp2mul503_mont.1_Pipeline_VITIS_LOOP_152_162, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, fp2mul503_mont.1_Pipeline_VITIS_LOOP_152_162, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, fp2mul503_mont.1_Pipeline_VITIS_LOOP_152_162, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, fp2mul503_mont.1_Pipeline_VITIS_LOOP_152_162, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, fp2mul503_mont.1_Pipeline_VITIS_LOOP_152_162, return value</column>
+<column name="tt2_i">in, 64, ap_ovld, tt2, pointer</column>
+<column name="tt2_o">out, 64, ap_ovld, tt2, pointer</column>
+<column name="tt2_o_ap_vld">out, 1, ap_ovld, tt2, pointer</column>
+<column name="tt2_15_i">in, 64, ap_ovld, tt2_15, pointer</column>
+<column name="tt2_15_o">out, 64, ap_ovld, tt2_15, pointer</column>
+<column name="tt2_15_o_ap_vld">out, 1, ap_ovld, tt2_15, pointer</column>
+<column name="tt2_14_i">in, 64, ap_ovld, tt2_14, pointer</column>
+<column name="tt2_14_o">out, 64, ap_ovld, tt2_14, pointer</column>
+<column name="tt2_14_o_ap_vld">out, 1, ap_ovld, tt2_14, pointer</column>
+<column name="tt2_13_i">in, 64, ap_ovld, tt2_13, pointer</column>
+<column name="tt2_13_o">out, 64, ap_ovld, tt2_13, pointer</column>
+<column name="tt2_13_o_ap_vld">out, 1, ap_ovld, tt2_13, pointer</column>
+<column name="tt2_12_i">in, 64, ap_ovld, tt2_12, pointer</column>
+<column name="tt2_12_o">out, 64, ap_ovld, tt2_12, pointer</column>
+<column name="tt2_12_o_ap_vld">out, 1, ap_ovld, tt2_12, pointer</column>
+<column name="tt2_11_i">in, 64, ap_ovld, tt2_11, pointer</column>
+<column name="tt2_11_o">out, 64, ap_ovld, tt2_11, pointer</column>
+<column name="tt2_11_o_ap_vld">out, 1, ap_ovld, tt2_11, pointer</column>
+<column name="tt2_10_i">in, 64, ap_ovld, tt2_10, pointer</column>
+<column name="tt2_10_o">out, 64, ap_ovld, tt2_10, pointer</column>
+<column name="tt2_10_o_ap_vld">out, 1, ap_ovld, tt2_10, pointer</column>
+<column name="tt2_9_i">in, 64, ap_ovld, tt2_9, pointer</column>
+<column name="tt2_9_o">out, 64, ap_ovld, tt2_9, pointer</column>
+<column name="tt2_9_o_ap_vld">out, 1, ap_ovld, tt2_9, pointer</column>
+<column name="tt2_8_i">in, 64, ap_ovld, tt2_8, pointer</column>
+<column name="tt2_8_o">out, 64, ap_ovld, tt2_8, pointer</column>
+<column name="tt2_8_o_ap_vld">out, 1, ap_ovld, tt2_8, pointer</column>
+<column name="tt2_7_i">in, 64, ap_ovld, tt2_7, pointer</column>
+<column name="tt2_7_o">out, 64, ap_ovld, tt2_7, pointer</column>
+<column name="tt2_7_o_ap_vld">out, 1, ap_ovld, tt2_7, pointer</column>
+<column name="tt2_6_i">in, 64, ap_ovld, tt2_6, pointer</column>
+<column name="tt2_6_o">out, 64, ap_ovld, tt2_6, pointer</column>
+<column name="tt2_6_o_ap_vld">out, 1, ap_ovld, tt2_6, pointer</column>
+<column name="tt2_5_i">in, 64, ap_ovld, tt2_5, pointer</column>
+<column name="tt2_5_o">out, 64, ap_ovld, tt2_5, pointer</column>
+<column name="tt2_5_o_ap_vld">out, 1, ap_ovld, tt2_5, pointer</column>
+<column name="tt2_4_i">in, 64, ap_ovld, tt2_4, pointer</column>
+<column name="tt2_4_o">out, 64, ap_ovld, tt2_4, pointer</column>
+<column name="tt2_4_o_ap_vld">out, 1, ap_ovld, tt2_4, pointer</column>
+<column name="tt2_3_i">in, 64, ap_ovld, tt2_3, pointer</column>
+<column name="tt2_3_o">out, 64, ap_ovld, tt2_3, pointer</column>
+<column name="tt2_3_o_ap_vld">out, 1, ap_ovld, tt2_3, pointer</column>
+<column name="tt2_2_i">in, 64, ap_ovld, tt2_2, pointer</column>
+<column name="tt2_2_o">out, 64, ap_ovld, tt2_2, pointer</column>
+<column name="tt2_2_o_ap_vld">out, 1, ap_ovld, tt2_2, pointer</column>
+<column name="tt2_1_i">in, 64, ap_ovld, tt2_1, pointer</column>
+<column name="tt2_1_o">out, 64, ap_ovld, tt2_1, pointer</column>
+<column name="tt2_1_o_ap_vld">out, 1, ap_ovld, tt2_1, pointer</column>
+<column name="tt1_load_reload">in, 64, ap_none, tt1_load_reload, scalar</column>
+<column name="tt1_1_load_reload">in, 64, ap_none, tt1_1_load_reload, scalar</column>
+<column name="tt1_2_load_reload">in, 64, ap_none, tt1_2_load_reload, scalar</column>
+<column name="tt1_3_load_reload">in, 64, ap_none, tt1_3_load_reload, scalar</column>
+<column name="tt1_4_load_reload">in, 64, ap_none, tt1_4_load_reload, scalar</column>
+<column name="tt1_5_load_reload">in, 64, ap_none, tt1_5_load_reload, scalar</column>
+<column name="tt1_6_load_reload">in, 64, ap_none, tt1_6_load_reload, scalar</column>
+<column name="tt1_7_load_reload">in, 64, ap_none, tt1_7_load_reload, scalar</column>
+<column name="tt1_8_load_reload">in, 64, ap_none, tt1_8_load_reload, scalar</column>
+<column name="tt1_9_load_reload">in, 64, ap_none, tt1_9_load_reload, scalar</column>
+<column name="tt1_10_load_reload">in, 64, ap_none, tt1_10_load_reload, scalar</column>
+<column name="tt1_11_load_reload">in, 64, ap_none, tt1_11_load_reload, scalar</column>
+<column name="tt1_12_load_reload">in, 64, ap_none, tt1_12_load_reload, scalar</column>
+<column name="tt1_13_load_reload">in, 64, ap_none, tt1_13_load_reload, scalar</column>
+<column name="tt1_14_load_reload">in, 64, ap_none, tt1_14_load_reload, scalar</column>
+<column name="tt1_15_load_reload">in, 64, ap_none, tt1_15_load_reload, scalar</column>
+</table>
+</item>
+</section>
+</profile>

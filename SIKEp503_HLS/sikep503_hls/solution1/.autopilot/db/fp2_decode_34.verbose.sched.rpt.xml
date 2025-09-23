@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2_decode_34'" level="0">
-<item name = "Date">Wed Jul 30 16:57:55 2025
+<item name = "Date">Wed Sep  3 15:14:09 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">728, 1136, 7.280 us, 11.360 us, 728, 1136, no</column>
+<column name="">556, 768, 5.560 us, 7.680 us, 556, 768, no</column>
 </table>
 </item>
 <item name = "Detail">
