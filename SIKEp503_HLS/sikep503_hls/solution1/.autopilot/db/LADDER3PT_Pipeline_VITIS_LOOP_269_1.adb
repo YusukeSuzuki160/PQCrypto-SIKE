@@ -272,7 +272,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_269</name>
+              <name>i_259</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -422,7 +422,7 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>i_269_write_ln267</name>
+              <name>i_259_write_ln267</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -3608,7 +3608,7 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>i_269_write_ln267</name>
+              <name>i_259_write_ln267</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -6333,7 +6333,7 @@
           </second>
         </item>
         <item>
-          <first>i_269_fu_56</first>
+          <first>i_259_fu_56</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -6592,7 +6592,7 @@
           </second>
         </item>
         <item>
-          <first>i_269_fu_56</first>
+          <first>i_259_fu_56</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7928,7 +7928,7 @@
         </second>
       </item>
       <item>
-        <first>i_269_fu_56</first>
+        <first>i_259_fu_56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8486,7 +8486,7 @@
         </second>
       </item>
       <item>
-        <first>i_269_reg_320</first>
+        <first>i_259_reg_320</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

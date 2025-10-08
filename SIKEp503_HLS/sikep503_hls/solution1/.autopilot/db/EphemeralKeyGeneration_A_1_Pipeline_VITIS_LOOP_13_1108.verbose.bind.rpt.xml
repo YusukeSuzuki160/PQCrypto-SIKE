@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1108'" level="0">
-<item name = "Date">Fri Sep 12 16:08:39 2025
+<item name = "Date">Wed Oct  8 20:25:13 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 1.809 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.293 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_13_1">8, 8, 1, 1, 1, 8, yes</column>
+<column name="- VITIS_LOOP_13_1">8, 8, 2, 1, 1, 8, yes</column>
 </table>
 </item>
 </section>

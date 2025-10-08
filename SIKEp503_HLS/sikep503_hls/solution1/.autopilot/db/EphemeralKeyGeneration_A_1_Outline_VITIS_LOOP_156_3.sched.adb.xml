@@ -206,10 +206,10 @@
 
 <Node id="8" bw="32" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_292 = alloca i32 1
+newFuncRoot:0 %i_282 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_292"/></StgValue>
+<StgValue><ssdm name="i_282"/></StgValue>
 </operation>
 
 <operation id="33" st_id="1" stage="1" lat="1">
@@ -296,7 +296,7 @@ newFuncRoot:5 %t0 = alloca i64 1
 
 <Node id="14" bw="0" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-newFuncRoot:6 %store_ln122 = store i32 0, i32 %i_292
+newFuncRoot:6 %store_ln122 = store i32 0, i32 %i_282
 
 ]]></Node>
 <StgValue><ssdm name="store_ln122"/></StgValue>
@@ -329,7 +329,7 @@ newFuncRoot:7 %br_ln156 = br void %for.inc72
 
 <Node id="17" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-for.inc72:0 %i = load i32 %i_292
+for.inc72:0 %i = load i32 %i_282
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -518,10 +518,10 @@ for.inc72.split:7 %zext_ln159 = zext i7 %tmp_s
 
 <Node id="30" bw="7" op_0_bw="7" op_1_bw="3" op_2_bw="4">
 <![CDATA[
-for.inc72.split:8 %tmp_20 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %trunc_ln156, i4 8
+for.inc72.split:8 %tmp_14 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %trunc_ln156, i4 8
 
 ]]></Node>
-<StgValue><ssdm name="tmp_20"/></StgValue>
+<StgValue><ssdm name="tmp_14"/></StgValue>
 </operation>
 
 <operation id="53" st_id="2" stage="1" lat="1">
@@ -534,7 +534,7 @@ for.inc72.split:8 %tmp_20 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4,
 
 <Node id="31" bw="64" op_0_bw="7">
 <![CDATA[
-for.inc72.split:9 %zext_ln159_2 = zext i7 %tmp_20
+for.inc72.split:9 %zext_ln159_2 = zext i7 %tmp_14
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln159_2"/></StgValue>
@@ -934,7 +934,7 @@ for.inc72.split:37 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64">
 <![CDATA[
-for.inc72.split:39 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t0, i64 %p503x2_1
+for.inc72.split:39 %call_ln109 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t0, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -950,7 +950,7 @@ for.inc72.split:39 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1
 
 <Node id="129" bw="0" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc72.split:107 %store_ln122 = store i32 %add_ln156, i32 %i_292
+for.inc72.split:107 %store_ln122 = store i32 %add_ln156, i32 %i_282
 
 ]]></Node>
 <StgValue><ssdm name="store_ln122"/></StgValue>
@@ -984,7 +984,7 @@ for.inc103.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="61" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64">
 <![CDATA[
-for.inc72.split:39 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t0, i64 %p503x2_1
+for.inc72.split:39 %call_ln109 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t0, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -1002,7 +1002,7 @@ for.inc72.split:39 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:40 %call_ln110 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t0_8, i64 %p503x2_1
+for.inc72.split:40 %call_ln110 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t0_8, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln110"/></StgValue>
@@ -1020,7 +1020,7 @@ for.inc72.split:40 %call_ln110 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:40 %call_ln110 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t0_8, i64 %p503x2_1
+for.inc72.split:40 %call_ln110 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t0_8, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln110"/></StgValue>
@@ -1110,7 +1110,7 @@ for.inc72.split:42 %call_ln116 = call void @fpsub503.4, i64 %pts_X, i32 %i, i1 1
 
 <Node id="71" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="9" op_5_bw="64" op_6_bw="32" op_7_bw="64" op_8_bw="64" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:49 %call_ln68 = call void @fp2mul503_mont.54, i64 %t0, i64 %t0_8, i64 %coeff, i9 128, i64 %pts_X, i32 %i, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:49 %call_ln68 = call void @fp2mul503_mont.57, i64 %t0, i64 %t0_8, i64 %coeff, i9 128, i64 %pts_X, i32 %i, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln68"/></StgValue>
@@ -1128,7 +1128,7 @@ for.inc72.split:49 %call_ln68 = call void @fp2mul503_mont.54, i64 %t0, i64 %t0_8
 
 <Node id="71" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="9" op_5_bw="64" op_6_bw="32" op_7_bw="64" op_8_bw="64" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:49 %call_ln68 = call void @fp2mul503_mont.54, i64 %t0, i64 %t0_8, i64 %coeff, i9 128, i64 %pts_X, i32 %i, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:49 %call_ln68 = call void @fp2mul503_mont.57, i64 %t0, i64 %t0_8, i64 %coeff, i9 128, i64 %pts_X, i32 %i, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln68"/></StgValue>
@@ -1146,7 +1146,7 @@ for.inc72.split:49 %call_ln68 = call void @fp2mul503_mont.54, i64 %t0, i64 %t0_8
 
 <Node id="78" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="9" op_5_bw="64" op_6_bw="32" op_7_bw="64" op_8_bw="64" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:56 %call_ln69 = call void @fp2mul503_mont.54, i64 %t1, i64 %t1_8, i64 %coeff, i9 256, i64 %pts_Z, i32 %i, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:56 %call_ln69 = call void @fp2mul503_mont.57, i64 %t1, i64 %t1_8, i64 %coeff, i9 256, i64 %pts_Z, i32 %i, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln69"/></StgValue>
@@ -1164,7 +1164,7 @@ for.inc72.split:56 %call_ln69 = call void @fp2mul503_mont.54, i64 %t1, i64 %t1_8
 
 <Node id="78" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="9" op_5_bw="64" op_6_bw="32" op_7_bw="64" op_8_bw="64" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:56 %call_ln69 = call void @fp2mul503_mont.54, i64 %t1, i64 %t1_8, i64 %coeff, i9 256, i64 %pts_Z, i32 %i, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:56 %call_ln69 = call void @fp2mul503_mont.57, i64 %t1, i64 %t1_8, i64 %coeff, i9 256, i64 %pts_Z, i32 %i, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln69"/></StgValue>
@@ -1182,7 +1182,7 @@ for.inc72.split:56 %call_ln69 = call void @fp2mul503_mont.54, i64 %t1, i64 %t1_8
 
 <Node id="91" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-for.inc72.split:69 %call_ln70 = call void @fp2mul503_mont.122.3, i64 %t0, i64 %t0_8, i64 %t1, i64 %t1_8, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:69 %call_ln70 = call void @fp2mul503_mont.126.3, i64 %t0, i64 %t0_8, i64 %t1, i64 %t1_8, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln70"/></StgValue>
@@ -1200,7 +1200,7 @@ for.inc72.split:69 %call_ln70 = call void @fp2mul503_mont.122.3, i64 %t0, i64 %t
 
 <Node id="91" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-for.inc72.split:69 %call_ln70 = call void @fp2mul503_mont.122.3, i64 %t0, i64 %t0_8, i64 %t1, i64 %t1_8, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:69 %call_ln70 = call void @fp2mul503_mont.126.3, i64 %t0, i64 %t0_8, i64 %t1, i64 %t1_8, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln70"/></StgValue>
@@ -1218,7 +1218,7 @@ for.inc72.split:69 %call_ln70 = call void @fp2mul503_mont.122.3, i64 %t0, i64 %t
 
 <Node id="98" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-for.inc72.split:76 %call_ln71 = call void @fp2mul503_mont.42, i64 %t0, i64 %t0_8, i64 %coeff, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:76 %call_ln71 = call void @fp2mul503_mont.45, i64 %t0, i64 %t0_8, i64 %coeff, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln71"/></StgValue>
@@ -1233,7 +1233,7 @@ for.inc72.split:76 %call_ln71 = call void @fp2mul503_mont.42, i64 %t0, i64 %t0_8
 
 <Node id="99" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64" op_9_bw="0">
 <![CDATA[
-for.inc72.split:77 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t1, i64 %p503x2_1
+for.inc72.split:77 %call_ln109 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t1, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -1251,7 +1251,7 @@ for.inc72.split:77 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1
 
 <Node id="98" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-for.inc72.split:76 %call_ln71 = call void @fp2mul503_mont.42, i64 %t0, i64 %t0_8, i64 %coeff, i64 %p503_1, i64 %p503p1_1
+for.inc72.split:76 %call_ln71 = call void @fp2mul503_mont.45, i64 %t0, i64 %t0_8, i64 %coeff, i64 %p503_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln71"/></StgValue>
@@ -1266,7 +1266,7 @@ for.inc72.split:76 %call_ln71 = call void @fp2mul503_mont.42, i64 %t0, i64 %t0_8
 
 <Node id="99" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64" op_9_bw="0">
 <![CDATA[
-for.inc72.split:77 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t1, i64 %p503x2_1
+for.inc72.split:77 %call_ln109 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t1, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -1284,7 +1284,7 @@ for.inc72.split:77 %call_ln109 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1
 
 <Node id="100" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64" op_9_bw="0">
 <![CDATA[
-for.inc72.split:78 %call_ln110 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t1_8, i64 %p503x2_1
+for.inc72.split:78 %call_ln110 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t1_8, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln110"/></StgValue>
@@ -1302,7 +1302,7 @@ for.inc72.split:78 %call_ln110 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1
 
 <Node id="100" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="64" op_9_bw="0">
 <![CDATA[
-for.inc72.split:78 %call_ln110 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t1_8, i64 %p503x2_1
+for.inc72.split:78 %call_ln110 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %t1_8, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln110"/></StgValue>
@@ -1320,7 +1320,7 @@ for.inc72.split:78 %call_ln110 = call void @fpadd503.240, i64 %pts_X, i32 %i, i1
 
 <Node id="101" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="0">
 <![CDATA[
-for.inc72.split:79 %call_ln115 = call void @fpsub503.4.262, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %p503x2_1
+for.inc72.split:79 %call_ln115 = call void @fpsub503.4.269, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln115"/></StgValue>
@@ -1353,7 +1353,7 @@ for.inc72.split:83 %call_ln74 = call void @fp2sqr503_mont.6.2, i64 %t1, i64 %t1_
 
 <Node id="101" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="0">
 <![CDATA[
-for.inc72.split:79 %call_ln115 = call void @fpsub503.4.262, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %p503x2_1
+for.inc72.split:79 %call_ln115 = call void @fpsub503.4.269, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln115"/></StgValue>
@@ -1386,7 +1386,7 @@ for.inc72.split:83 %call_ln74 = call void @fp2sqr503_mont.6.2, i64 %t1, i64 %t1_
 
 <Node id="102" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="0">
 <![CDATA[
-for.inc72.split:80 %call_ln116 = call void @fpsub503.4.262, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %p503x2_1
+for.inc72.split:80 %call_ln116 = call void @fpsub503.4.269, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln116"/></StgValue>
@@ -1404,7 +1404,7 @@ for.inc72.split:80 %call_ln116 = call void @fpsub503.4.262, i64 %pts_X, i32 %i, 
 
 <Node id="102" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="32" op_3_bw="1" op_4_bw="64" op_5_bw="32" op_6_bw="1" op_7_bw="64" op_8_bw="0">
 <![CDATA[
-for.inc72.split:80 %call_ln116 = call void @fpsub503.4.262, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %p503x2_1
+for.inc72.split:80 %call_ln116 = call void @fpsub503.4.269, i64 %pts_X, i32 %i, i1 1, i64 %pts_Z, i32 %i, i1 1, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln116"/></StgValue>
@@ -1437,7 +1437,7 @@ for.inc72.split:84 %call_ln75 = call void @fp2sqr503_mont, i64 %pts_Z, i32 %i, i
 
 <Node id="107" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="32" op_5_bw="1" op_6_bw="64" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:85 %call_ln109 = call void @fpadd503.239, i64 %t1, i64 %t0, i64 %pts_X, i32 %i, i1 0, i64 %p503x2_1
+for.inc72.split:85 %call_ln109 = call void @fpadd503.246, i64 %t1, i64 %t0, i64 %pts_X, i32 %i, i1 0, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -1470,7 +1470,7 @@ for.inc72.split:84 %call_ln75 = call void @fp2sqr503_mont, i64 %pts_Z, i32 %i, i
 
 <Node id="107" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="32" op_5_bw="1" op_6_bw="64" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-for.inc72.split:85 %call_ln109 = call void @fpadd503.239, i64 %t1, i64 %t0, i64 %pts_X, i32 %i, i1 0, i64 %p503x2_1
+for.inc72.split:85 %call_ln109 = call void @fpadd503.246, i64 %t1, i64 %t0, i64 %pts_X, i32 %i, i1 0, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln109"/></StgValue>
@@ -1488,7 +1488,7 @@ for.inc72.split:85 %call_ln109 = call void @fpadd503.239, i64 %t1, i64 %t0, i64 
 
 <Node id="108" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="32" op_5_bw="1" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-for.inc72.split:86 %call_ln110 = call void @fpadd503.239, i64 %t1_8, i64 %t0_8, i64 %pts_X, i32 %i, i1 1, i64 %p503x2_1
+for.inc72.split:86 %call_ln110 = call void @fpadd503.246, i64 %t1_8, i64 %t0_8, i64 %pts_X, i32 %i, i1 1, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln110"/></StgValue>
@@ -1521,7 +1521,7 @@ for.inc72.split:87 %call_ln115 = call void @fpsub503.4.1, i64 %pts_Z, i32 %i, i1
 
 <Node id="108" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="32" op_5_bw="1" op_6_bw="64" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-for.inc72.split:86 %call_ln110 = call void @fpadd503.239, i64 %t1_8, i64 %t0_8, i64 %pts_X, i32 %i, i1 1, i64 %p503x2_1
+for.inc72.split:86 %call_ln110 = call void @fpadd503.246, i64 %t1_8, i64 %t0_8, i64 %pts_X, i32 %i, i1 1, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln110"/></StgValue>
@@ -1653,7 +1653,7 @@ for.inc72.split:14 %speclooptripcount_ln158 = speclooptripcount void @_ssdm_op_S
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc72.split:15 %specloopname_ln156 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26
+for.inc72.split:15 %specloopname_ln156 = specloopname void @_ssdm_op_SpecLoopName, void @empty_52
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln156"/></StgValue>

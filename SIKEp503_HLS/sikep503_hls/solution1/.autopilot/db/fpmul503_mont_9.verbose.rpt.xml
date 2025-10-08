@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpmul503_mont_9'" level="0">
-<item name = "Date">Tue Sep 23 15:47:47 2025
+<item name = "Date">Wed Oct  8 20:39:05 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.005 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, no</column>
+<column name="">264, 490, 2.640 us, 4.900 us, 264, 490, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_5103_fu_83">mp_mul_5103, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_mp_mul_5_fu_83">mp_mul_5, 133, 245, 1.330 us, 2.450 us, 133, 245, no</column>
 <column name="grp_rdc_mont_2_fu_93">rdc_mont_2, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
 </table>
 </item>
@@ -52,7 +52,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 27, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 32, 1976, 5620, -</column>
+<column name="Instance">0, 32, 2061, 5220, -</column>
 <column name="Memory">0, -, 64, 65, 0</column>
 <column name="Multiplexer">-, -, 0, 129, -</column>
 <column name="Register">-, -, 13, -, -</column>
@@ -66,7 +66,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_mp_mul_5103_fu_83">mp_mul_5103, 0, 16, 343, 1159, 0</column>
+<column name="grp_mp_mul_5_fu_83">mp_mul_5, 0, 16, 428, 759, 0</column>
 <column name="grp_rdc_mont_2_fu_93">rdc_mont_2, 0, 16, 1633, 4461, 0</column>
 </table>
 </item>
@@ -85,7 +85,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_152_fu_117_p2">+, 0, 0, 12, 5, 1</column>
+<column name="empty_150_fu_117_p2">+, 0, 0, 12, 5, 1</column>
 <column name="exitcond1_fu_111_p2">icmp, 0, 0, 13, 5, 6</column>
 <column name="temp_we0">or, 0, 0, 2, 1, 1</column>
 </table>
@@ -107,7 +107,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">6, 0, 6, 0</column>
 <column name="empty_fu_50">5, 0, 5, 0</column>
-<column name="grp_mp_mul_5103_fu_83_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_mp_mul_5_fu_83_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_rdc_mont_2_fu_93_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>

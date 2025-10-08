@@ -67,7 +67,7 @@ reg   [62:0] select_ln427_reg_236;
 wire    ap_CS_fsm_state2;
 wire   [63:0] zext_ln422_fu_128_p1;
 wire   [63:0] zext_ln427_fu_170_p1;
-reg   [2:0] i_232_fu_48;
+reg   [2:0] i_222_fu_48;
 wire    ap_loop_init;
 reg   [2:0] ap_sig_allocacmp_i;
 reg    c_0_0_ce0_local;
@@ -99,7 +99,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 3'd1;
-#0 i_232_fu_48 = 3'd0;
+#0 i_222_fu_48 = 3'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -140,9 +140,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_232_fu_48 <= 3'd0;
+        i_222_fu_48 <= 3'd0;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_232_fu_48 <= add_ln427_reg_214;
+        i_222_fu_48 <= add_ln427_reg_214;
     end
 end
 
@@ -209,7 +209,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 3'd0;
     end else begin
-        ap_sig_allocacmp_i = i_232_fu_48;
+        ap_sig_allocacmp_i = i_222_fu_48;
     end
 end
 

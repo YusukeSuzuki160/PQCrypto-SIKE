@@ -145,7 +145,7 @@ sikep503_kem_enc_hw_fpadd503_3_Pipeline_VITIS_LOOP_33_1 grp_fpadd503_3_Pipeline_
     .ap_done(grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_ap_done),
     .ap_idle(grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_ap_idle),
     .ap_ready(grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_ap_ready),
-    .zext_ln35_3(tmp_reg_94),
+    .zext_ln35_6(tmp_reg_94),
     .a_address0(grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_a_address0),
     .a_ce0(grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_a_ce0),
     .a_q0(a_q0),

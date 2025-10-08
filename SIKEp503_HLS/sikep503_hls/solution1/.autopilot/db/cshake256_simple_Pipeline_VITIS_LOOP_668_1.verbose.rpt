@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_Pipeline_VITIS_LOOP_668_1'
 ================================================================
-* Date:           Tue Sep 23 15:46:01 2025
+* Date:           Wed Oct  8 20:37:21 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -109,7 +109,7 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_sig_allocacmp_i       |   9|          2|    6|         12|
-    |i_245_fu_54              |   9|          2|    6|         12|
+    |i_235_fu_54              |   9|          2|    6|         12|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  36|          8|   14|         28|
     +-------------------------+----+-----------+-----+-----------+
@@ -121,7 +121,7 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |i_245_fu_54              |  6|   0|    6|          0|
+    |i_235_fu_54              |  6|   0|    6|          0|
     |i_reg_205                |  6|   0|    6|          0|
     +-------------------------+---+----+-----+-----------+
     |Total                    | 15|   0|   15|          0|
@@ -201,10 +201,10 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.48>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_245 = alloca i32 1" [src/sha3/fips202.cpp:640]   --->   Operation 5 'alloca' 'i_245' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln640 = store i6 0, i6 %i_245" [src/sha3/fips202.cpp:640]   --->   Operation 6 'store' 'store_ln640' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_235 = alloca i32 1" [src/sha3/fips202.cpp:640]   --->   Operation 5 'alloca' 'i_235' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln640 = store i6 0, i6 %i_235" [src/sha3/fips202.cpp:640]   --->   Operation 6 'store' 'store_ln640' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i6 %i_245" [src/sha3/fips202.cpp:668]   --->   Operation 8 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i6 %i_235" [src/sha3/fips202.cpp:668]   --->   Operation 8 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%icmp_ln668 = icmp_eq  i6 %i, i6 32" [src/sha3/fips202.cpp:668]   --->   Operation 9 'icmp' 'icmp_ln668' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 10 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln668 = add i6 %i, i6 1" [src/sha3/fips202.cpp:668]   --->   Operation 11 'add' 'add_ln668' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -219,14 +219,14 @@ ST_1 : Operation 19 [2/2] (0.66ns)   --->   "%t_load = load i6 %t_addr" [src/sha
 ST_1 : Operation 20 [2/2] (0.66ns)   --->   "%t_80_load = load i6 %t_80_addr" [src/sha3/fips202.cpp:671]   --->   Operation 20 'load' 't_80_load' <Predicate = (!icmp_ln668)> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 34> <RAM>
 ST_1 : Operation 21 [2/2] (0.66ns)   --->   "%t_81_load = load i6 %t_81_addr" [src/sha3/fips202.cpp:671]   --->   Operation 21 'load' 't_81_load' <Predicate = (!icmp_ln668)> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 34> <RAM>
 ST_1 : Operation 22 [2/2] (0.66ns)   --->   "%t_82_load = load i6 %t_82_addr" [src/sha3/fips202.cpp:671]   --->   Operation 22 'load' 't_82_load' <Predicate = (!icmp_ln668)> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 34> <RAM>
-ST_1 : Operation 23 [1/1] (0.38ns)   --->   "%store_ln640 = store i6 %add_ln668, i6 %i_245" [src/sha3/fips202.cpp:640]   --->   Operation 23 'store' 'store_ln640' <Predicate = (!icmp_ln668)> <Delay = 0.38>
+ST_1 : Operation 23 [1/1] (0.38ns)   --->   "%store_ln640 = store i6 %add_ln668, i6 %i_235" [src/sha3/fips202.cpp:640]   --->   Operation 23 'store' 'store_ln640' <Predicate = (!icmp_ln668)> <Delay = 0.38>
 ST_1 : Operation 36 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 36 'ret' 'ret_ln0' <Predicate = (icmp_ln668)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 1.78>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln668 = zext i6 %i" [src/sha3/fips202.cpp:668]   --->   Operation 24 'zext' 'zext_ln668' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln668 = trunc i6 %i" [src/sha3/fips202.cpp:668]   --->   Operation 25 'trunc' 'trunc_ln668' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln640 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sha3/fips202.cpp:640]   --->   Operation 26 'specpipeline' 'specpipeline_ln640' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln668 = specloopname void @_ssdm_op_SpecLoopName, void @empty_96" [src/sha3/fips202.cpp:668]   --->   Operation 27 'specloopname' 'specloopname_ln668' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln640 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/sha3/fips202.cpp:640]   --->   Operation 26 'specpipeline' 'specpipeline_ln640' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln668 = specloopname void @_ssdm_op_SpecLoopName, void @empty_89" [src/sha3/fips202.cpp:668]   --->   Operation 27 'specloopname' 'specloopname_ln668' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/2] ( I:0.66ns O:0.66ns )   --->   "%t_load = load i6 %t_addr" [src/sha3/fips202.cpp:671]   --->   Operation 28 'load' 't_load' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 34> <RAM>
 ST_2 : Operation 29 [1/2] ( I:0.66ns O:0.66ns )   --->   "%t_80_load = load i6 %t_80_addr" [src/sha3/fips202.cpp:671]   --->   Operation 29 'load' 't_80_load' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 34> <RAM>
 ST_2 : Operation 30 [1/2] ( I:0.66ns O:0.66ns )   --->   "%t_81_load = load i6 %t_81_addr" [src/sha3/fips202.cpp:671]   --->   Operation 30 'load' 't_81_load' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 34> <RAM>
@@ -259,7 +259,7 @@ Port [ ephemeralsk_i]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static
 
 <LifeTime>
 <method=bitvector/>
-i_245                 (alloca           ) [ 010]
+i_235                 (alloca           ) [ 010]
 store_ln640           (store            ) [ 000]
 br_ln0                (br               ) [ 000]
 i                     (load             ) [ 011]
@@ -464,7 +464,7 @@ ret_ln0               (ret              ) [ 000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_73"/></StgValue>
 </bind>
 </comp>
 
@@ -482,7 +482,7 @@ ret_ln0               (ret              ) [ 000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_96"/></StgValue>
+<StgValue><ssdm name="empty_89"/></StgValue>
 </bind>
 </comp>
 
@@ -540,14 +540,14 @@ ret_ln0               (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="54" class="1004" name="i_245_fu_54">
+<comp id="54" class="1004" name="i_235_fu_54">
 <pin_list>
 <pin id="55" dir="0" index="0" bw="1" slack="0"/>
 <pin id="56" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="i_245/1 "/>
+<opset="i_235/1 "/>
 </bind>
 </comp>
 
@@ -808,13 +808,13 @@ ret_ln0               (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="198" class="1005" name="i_245_reg_198">
+<comp id="198" class="1005" name="i_235_reg_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="6" slack="0"/>
 <pin id="200" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_245 "/>
+<opset="i_235 "/>
 </bind>
 </comp>
 
@@ -1058,7 +1058,7 @@ N/A
 +-----------------+--------+
 |                 |   FF   |
 +-----------------+--------+
-|  i_245_reg_198  |    6   |
+|  i_235_reg_198  |    6   |
 |    i_reg_205    |    6   |
 |t_80_addr_reg_219|    6   |
 |t_81_addr_reg_224|    6   |

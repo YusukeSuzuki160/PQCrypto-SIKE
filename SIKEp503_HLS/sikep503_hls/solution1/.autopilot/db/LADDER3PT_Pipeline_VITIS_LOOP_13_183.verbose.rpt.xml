@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_Pipeline_VITIS_LOOP_13_183'" level="0">
-<item name = "Date">Fri Sep 12 16:10:31 2025
+<item name = "Date">Wed Oct  8 20:27:00 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -52,8 +52,8 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">0, -, 64, 65, -</column>
-<column name="Multiplexer">-, -, 0, 108, -</column>
-<column name="Register">-, -, 522, -, -</column>
+<column name="Multiplexer">-, -, 0, 36, -</column>
+<column name="Register">-, -, 11, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="Montgomery_one_1_U">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1101_Montgomery_one_1_ROM_Acud, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="XRA_1_U">LADDER3PT_Pipeline_VITIS_LOOP_13_183_XRA_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -81,8 +81,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln13_fu_219_p2">+, 0, 0, 12, 4, 1</column>
-<column name="icmp_ln13_fu_213_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="add_ln13_fu_83_p2">+, 0, 0, 12, 4, 1</column>
+<column name="icmp_ln13_fu_77_p2">icmp, 0, 0, 12, 4, 5</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -90,16 +90,8 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
-<column name="empty_471_fu_68">9, 2, 64, 128</column>
-<column name="empty_472_fu_72">9, 2, 64, 128</column>
-<column name="empty_473_fu_76">9, 2, 64, 128</column>
-<column name="empty_474_fu_80">9, 2, 64, 128</column>
-<column name="empty_475_fu_84">9, 2, 64, 128</column>
-<column name="empty_476_fu_88">9, 2, 64, 128</column>
-<column name="empty_477_fu_92">9, 2, 64, 128</column>
-<column name="empty_fu_64">9, 2, 64, 128</column>
-<column name="i_165_fu_60">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_201">9, 2, 4, 8</column>
+<column name="i_fu_38">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -107,16 +99,8 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="empty_471_fu_68">64, 0, 64, 0</column>
-<column name="empty_472_fu_72">64, 0, 64, 0</column>
-<column name="empty_473_fu_76">64, 0, 64, 0</column>
-<column name="empty_474_fu_80">64, 0, 64, 0</column>
-<column name="empty_475_fu_84">64, 0, 64, 0</column>
-<column name="empty_476_fu_88">64, 0, 64, 0</column>
-<column name="empty_477_fu_92">64, 0, 64, 0</column>
-<column name="empty_fu_64">64, 0, 64, 0</column>
-<column name="i_165_fu_60">4, 0, 4, 0</column>
-<column name="trunc_ln13_reg_377">3, 0, 3, 0</column>
+<column name="i_fu_38">4, 0, 4, 0</column>
+<column name="zext_ln13_reg_109">4, 0, 64, 60</column>
 </table>
 </item>
 </section>
@@ -132,22 +116,10 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, LADDER3PT_Pipeline_VITIS_LOOP_13_183, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, LADDER3PT_Pipeline_VITIS_LOOP_13_183, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, LADDER3PT_Pipeline_VITIS_LOOP_13_183, return value</column>
-<column name="p_out">out, 64, ap_vld, p_out, pointer</column>
-<column name="p_out_ap_vld">out, 1, ap_vld, p_out, pointer</column>
-<column name="p_out1">out, 64, ap_vld, p_out1, pointer</column>
-<column name="p_out1_ap_vld">out, 1, ap_vld, p_out1, pointer</column>
-<column name="p_out2">out, 64, ap_vld, p_out2, pointer</column>
-<column name="p_out2_ap_vld">out, 1, ap_vld, p_out2, pointer</column>
-<column name="p_out3">out, 64, ap_vld, p_out3, pointer</column>
-<column name="p_out3_ap_vld">out, 1, ap_vld, p_out3, pointer</column>
-<column name="p_out4">out, 64, ap_vld, p_out4, pointer</column>
-<column name="p_out4_ap_vld">out, 1, ap_vld, p_out4, pointer</column>
-<column name="p_out5">out, 64, ap_vld, p_out5, pointer</column>
-<column name="p_out5_ap_vld">out, 1, ap_vld, p_out5, pointer</column>
-<column name="p_out6">out, 64, ap_vld, p_out6, pointer</column>
-<column name="p_out6_ap_vld">out, 1, ap_vld, p_out6, pointer</column>
-<column name="p_out7">out, 64, ap_vld, p_out7, pointer</column>
-<column name="p_out7_ap_vld">out, 1, ap_vld, p_out7, pointer</column>
+<column name="R2_X_4_address0">out, 3, ap_memory, R2_X_4, array</column>
+<column name="R2_X_4_ce0">out, 1, ap_memory, R2_X_4, array</column>
+<column name="R2_X_4_we0">out, 1, ap_memory, R2_X_4, array</column>
+<column name="R2_X_4_d0">out, 64, ap_memory, R2_X_4, array</column>
 </table>
 </item>
 </section>

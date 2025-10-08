@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_122_Pipeline_VITIS_LOOP_378_1'
 ================================================================
-* Date:           Tue Sep 23 15:48:11 2025
+* Date:           Wed Oct  8 20:38:58 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -89,19 +89,19 @@
     +-------------------------+----------+----+---+----+------------+------------+
     |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-------------------------+----------+----+---+----+------------+------------+
-    |add_ln378_fu_124_p2      |         +|   0|  0|  12|           4|           1|
-    |add_ln381_fu_163_p2      |         +|   0|  0|  71|          64|          64|
-    |tempReg_fu_157_p2        |         +|   0|  0|  71|          64|          64|
-    |and_ln381_fu_214_p2      |       and|   0|  0|  64|          64|          64|
-    |ap_condition_232         |       and|   0|  0|   2|           1|           1|
-    |icmp_ln378_fu_118_p2     |      icmp|   0|  0|  12|           4|           5|
-    |or_ln381_61_fu_226_p2    |        or|   0|  0|  64|          64|          64|
-    |or_ln381_fu_182_p2       |        or|   0|  0|  64|          64|          64|
+    |add_ln378_fu_122_p2      |         +|   0|  0|  12|           4|           1|
+    |add_ln381_fu_149_p2      |         +|   0|  0|  71|          64|          64|
+    |tempReg_fu_143_p2        |         +|   0|  0|  71|          64|          64|
+    |and_ln381_fu_200_p2      |       and|   0|  0|  64|          64|          64|
+    |ap_condition_225         |       and|   0|  0|   2|           1|           1|
+    |icmp_ln378_fu_116_p2     |      icmp|   0|  0|  12|           4|           5|
+    |or_ln381_77_fu_212_p2    |        or|   0|  0|  64|          64|          64|
+    |or_ln381_fu_168_p2       |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
-    |xor_ln381_171_fu_176_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln381_173_fu_220_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln381_176_fu_196_p2  |       xor|   0|  0|   2|           1|           2|
-    |xor_ln381_fu_170_p2      |       xor|   0|  0|  64|          64|          64|
+    |xor_ln381_171_fu_162_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln381_173_fu_206_p2  |       xor|   0|  0|  64|          64|          64|
+    |xor_ln381_187_fu_182_p2  |       xor|   0|  0|   2|           1|           2|
+    |xor_ln381_fu_156_p2      |       xor|   0|  0|  64|          64|          64|
     +-------------------------+----------+----+---+----+------------+------------+
     |Total                    |          |   0|  0| 556|         523|         523|
     +-------------------------+----------+----+---+----+------------+------------+
@@ -112,9 +112,9 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_258   |   9|          2|    4|          8|
-    |carry_reg_99             |   9|          2|    1|          2|
-    |i_fu_56                  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_255   |   9|          2|    4|          8|
+    |carry_reg_97             |   9|          2|    1|          2|
+    |i_fu_54                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  45|         10|   11|         22|
     +-------------------------+----+-----------+-----+-----------+
@@ -126,12 +126,12 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |carry_reg_99             |  1|   0|    1|          0|
-    |i_258_reg_247            |  4|   0|    4|          0|
-    |i_fu_56                  |  4|   0|    4|          0|
-    |icmp_ln378_reg_252       |  1|   0|    1|          0|
+    |carry_reg_97             |  1|   0|    1|          0|
+    |i_fu_54                  |  4|   0|    4|          0|
+    |icmp_ln378_reg_233       |  1|   0|    1|          0|
+    |zext_ln378_reg_237       |  4|   0|   64|         60|
     +-------------------------+---+----+-----+-----------+
-    |Total                    | 13|   0|   13|          0|
+    |Total                    | 13|   0|   73|         60|
     +-------------------------+---+----+-----+-----------+
 
 
@@ -149,10 +149,10 @@
 |ap_done       |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.122_Pipeline_VITIS_LOOP_378_1|  return value|
 |ap_idle       |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.122_Pipeline_VITIS_LOOP_378_1|  return value|
 |ap_ready      |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.122_Pipeline_VITIS_LOOP_378_1|  return value|
-|a_0_address0  |  out|    5|   ap_memory|                                           a_0|         array|
+|a_0_address0  |  out|    3|   ap_memory|                                           a_0|         array|
 |a_0_ce0       |  out|    1|   ap_memory|                                           a_0|         array|
 |a_0_q0        |   in|   64|   ap_memory|                                           a_0|         array|
-|a_1_address0  |  out|    5|   ap_memory|                                           a_1|         array|
+|a_1_address0  |  out|    3|   ap_memory|                                           a_1|         array|
 |a_1_ce0       |  out|    1|   ap_memory|                                           a_1|         array|
 |a_1_q0        |   in|   64|   ap_memory|                                           a_1|         array|
 |t1_address0   |  out|    3|   ap_memory|                                            t1|         array|

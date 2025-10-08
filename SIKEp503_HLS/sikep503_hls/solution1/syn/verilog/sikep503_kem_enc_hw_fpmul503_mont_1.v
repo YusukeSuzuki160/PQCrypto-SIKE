@@ -92,7 +92,7 @@ wire   [63:0] p_cast_fu_103_p1;
 wire    ap_CS_fsm_state2;
 wire   [0:0] exitcond1_fu_91_p2;
 reg   [4:0] empty_fu_44;
-wire   [4:0] empty_173_fu_97_p2;
+wire   [4:0] empty_171_fu_97_p2;
 reg    temp_we0_local;
 reg    temp_ce0_local;
 reg   [5:0] ap_NS_fsm;
@@ -142,8 +142,7 @@ sikep503_kem_enc_hw_mp_mul_1 grp_mp_mul_1_fu_65(
     .c_address0(grp_mp_mul_1_fu_65_c_address0),
     .c_ce0(grp_mp_mul_1_fu_65_c_ce0),
     .c_we0(grp_mp_mul_1_fu_65_c_we0),
-    .c_d0(grp_mp_mul_1_fu_65_c_d0),
-    .c_q0(temp_q0)
+    .c_d0(grp_mp_mul_1_fu_65_c_d0)
 );
 
 sikep503_kem_enc_hw_rdc_mont grp_rdc_mont_fu_74(
@@ -199,7 +198,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
         empty_fu_44 <= 5'd0;
     end else if (((1'b1 == ap_CS_fsm_state2) & (exitcond1_fu_91_p2 == 1'd0))) begin
-        empty_fu_44 <= empty_173_fu_97_p2;
+        empty_fu_44 <= empty_171_fu_97_p2;
     end
 end
 
@@ -391,7 +390,7 @@ assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
 
 assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
-assign empty_173_fu_97_p2 = (empty_fu_44 + 5'd1);
+assign empty_171_fu_97_p2 = (empty_fu_44 + 5'd1);
 
 assign exitcond1_fu_91_p2 = ((empty_fu_44 == 5'd16) ? 1'b1 : 1'b0);
 

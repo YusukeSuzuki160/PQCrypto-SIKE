@@ -52,7 +52,7 @@ entry:0 %borrow_loc = alloca i64 1
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="1">
 <![CDATA[
-entry:4 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %R_Z, i64 %coeff, i1 %borrow_loc
+entry:4 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %R_Z, i64 %c, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -70,7 +70,7 @@ entry:4 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="1">
 <![CDATA[
-entry:4 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %R_Z, i64 %coeff, i1 %borrow_loc
+entry:4 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %R_Z, i64 %c, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -103,7 +103,7 @@ entry:5 %borrow_loc_load = load i1 %borrow_loc
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:6 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_68_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1
+entry:6 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_68_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -121,7 +121,7 @@ entry:6 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_68_2, i64 %coeff,
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 17, i64 18446744073709551615
+entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -151,7 +151,7 @@ entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_X, i64
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_Z, i64 666, i64 17, i64 18446744073709551615
+entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_Z, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -166,7 +166,7 @@ entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_Z, i64
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:6 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_68_2, i64 %coeff, i1 %borrow_loc_load, i64 %p503x2_1
+entry:6 %call_ln0 = call void @fpsub503.22_Pipeline_VITIS_LOOP_68_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>

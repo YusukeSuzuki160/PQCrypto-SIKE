@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_127'" level="0">
-<item name = "Date">Tue Sep 23 15:22:01 2025
+<item name = "Date">Wed Oct  8 20:35:15 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,23 +24,23 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">350, 578, 3.500 us, 5.780 us, 350, 578, no</column>
+<column name="">489, 939, 4.890 us, 9.390 us, 489, 939, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_6102_fu_72">mp_mul_6102, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_mp_mul_6102_fu_84">mp_mul_6102, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1_fu_96">fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1154_fu_105">fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1154, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1_fu_114">fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_187_1_fu_122">fp2mul503_mont_127_Pipeline_VITIS_LOOP_187_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1155_fu_130">fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1155, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_rdc_mont_6_fu_136">rdc_mont_6, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
-<column name="grp_mp_mul_6105_fu_146">mp_mul_6105, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1156_fu_153">fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1156, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mp_mul_6113_fu_66">mp_mul_6113, 149, 373, 1.490 us, 3.730 us, 149, 373, no</column>
+<column name="grp_mp_mul_6113_fu_74">mp_mul_6113, 149, 373, 1.490 us, 3.730 us, 149, 373, no</column>
+<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1_fu_82">fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1_fu_91">fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1142_fu_99">fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1142, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_187_1_fu_108">fp2mul503_mont_127_Pipeline_VITIS_LOOP_187_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1143_fu_116">fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1143, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_7_fu_122">rdc_mont_7, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
+<column name="grp_mp_mul_6117_fu_132">mp_mul_6117, 133, 245, 1.330 us, 2.450 us, 133, 245, no</column>
+<column name="grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1144_fu_139">fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1144, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -52,7 +52,7 @@ reg   [2:0] a_1_addr_reg_220;
 wire   [0:0] borrowReg_fu_188_p2;
 wire    ap_loop_init;
 wire   [63:0] zext_ln79_fu_107_p1;
-reg   [3:0] i_231_fu_46;
+reg   [3:0] i_221_fu_46;
 wire   [3:0] add_ln79_fu_101_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    p503x2_1_ce0_local;
@@ -67,7 +67,7 @@ wire   [63:0] or_ln105_13_fu_136_p2;
 wire   [63:0] xor_ln105_123_fu_142_p2;
 wire   [63:0] sub_ln95_fu_156_p2;
 wire   [63:0] or_ln95_fu_162_p2;
-wire   [0:0] tmp_324_fu_168_p3;
+wire   [0:0] tmp_232_fu_168_p3;
 wire   [0:0] xor_ln81_fu_176_p2;
 wire   [0:0] and_ln81_fu_182_p2;
 wire   [0:0] tmp_fu_148_p3;
@@ -86,11 +86,11 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_231_fu_46 = 4'd0;
+#0 i_221_fu_46 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_fpadd503_239_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
+sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -148,9 +148,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln79_fu_95_p2 == 1'd0)) begin
-            i_231_fu_46 <= add_ln79_fu_101_p2;
+            i_221_fu_46 <= add_ln79_fu_101_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_231_fu_46 <= 4'd0;
+            i_221_fu_46 <= 4'd0;
         end
     end
 end
@@ -233,7 +233,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_231_fu_46;
+        ap_sig_allocacmp_i = i_221_fu_46;
     end
 end
 
@@ -307,7 +307,7 @@ assign sub_ln95_fu_156_p2 = (64'd0 - tempReg_fu_118_p2);
 
 assign tempReg_fu_118_p2 = (p503x2_1_q0 - a_1_q0);
 
-assign tmp_324_fu_168_p3 = or_ln95_fu_162_p2[32'd63];
+assign tmp_232_fu_168_p3 = or_ln95_fu_162_p2[32'd63];
 
 assign tmp_fu_148_p3 = xor_ln105_123_fu_142_p2[32'd63];
 
@@ -317,7 +317,7 @@ assign xor_ln105_122_fu_130_p2 = (tempReg_fu_118_p2 ^ a_1_q0);
 
 assign xor_ln105_123_fu_142_p2 = (p503x2_1_q0 ^ or_ln105_13_fu_136_p2);
 
-assign xor_ln81_fu_176_p2 = (tmp_324_fu_168_p3 ^ 1'd1);
+assign xor_ln81_fu_176_p2 = (tmp_232_fu_168_p3 ^ 1'd1);
 
 assign zext_ln79_fu_107_p1 = ap_sig_allocacmp_i;
 

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sikep503_kem_enc_hw_Pipeline_5'
 ================================================================
-* Date:           Tue Sep 23 15:45:50 2025
+* Date:           Wed Oct  8 20:37:11 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -87,7 +87,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 1.48>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%loop_index_i = alloca i32 1"   --->   Operation 6 'alloca' 'loop_index_i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_18, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_57, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ct_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ct"   --->   Operation 8 'read' 'ct_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln0 = store i9 0, i9 %loop_index_i"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop.i"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
@@ -108,7 +108,7 @@ ST_2 : Operation 22 [1/1] (7.30ns)   --->   "%gmem_addr_read = read i8 @_ssdm_op
 ST_2 : Operation 39 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 39 'ret' 'ret_ln0' <Predicate = (exitcond_i3)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 1.27>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102"   --->   Operation 23 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73"   --->   Operation 23 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 402, i64 402, i64 402"   --->   Operation 24 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.70ns)   --->   "%empty_133 = add i7 %loop_index_i_udiv_cast, i7 6"   --->   Operation 25 'add' 'empty_133' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%p_cast4 = zext i7 %empty_133"   --->   Operation 26 'zext' 'p_cast4' <Predicate = true> <Delay = 0.00>
@@ -135,7 +135,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'loop_index_i' [10]  (0.387 ns)
 	'load' operation 9 bit ('loop_index_i_load') on local variable 'loop_index_i' [13]  (0.000 ns)
-	'icmp' operation 1 bit ('exitcond_i3') [15]  (0.715 ns)
+	'add' operation 9 bit ('empty') [16]  (0.715 ns)
 	'store' operation 0 bit ('store_ln0') of variable 'empty' on local variable 'loop_index_i' [45]  (0.387 ns)
 
  <State 2>: 7.300ns
@@ -145,8 +145,8 @@ The critical path consists of the following:
  <State 3>: 1.275ns
 The critical path consists of the following:
 	'add' operation 7 bit ('empty_133') [25]  (0.706 ns)
-	'getelementptr' operation 7 bit ('temp_1_addr') [28]  (0.000 ns)
-	'store' operation 0 bit ('store_ln111', src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46) of variable 'gmem_addr_read', src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46 on array 'temp_1' [36]  (0.569 ns)
+	'getelementptr' operation 7 bit ('temp_addr') [27]  (0.000 ns)
+	'store' operation 0 bit ('store_ln111', src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46) of variable 'gmem_addr_read', src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46 on array 'temp' [39]  (0.569 ns)
 
 
 ============================================================

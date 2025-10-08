@@ -164,10 +164,10 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>_ln295</name>
+						<name>_ln296</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>295</lineNumber>
+						<lineNumber>296</lineNumber>
 						<contextFuncName>mp_mul</contextFuncName>
 						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
@@ -183,7 +183,7 @@
 											<first>src/generic/fp_generic.cpp</first>
 											<second>mp_mul</second>
 										</first>
-										<second>295</second>
+										<second>296</second>
 									</item>
 								</second>
 							</item>
@@ -224,10 +224,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>_ln296</name>
+						<name>_ln297</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>297</lineNumber>
 						<contextFuncName>mp_mul</contextFuncName>
 						<contextNormFuncName>mp_mul</contextNormFuncName>
 						<inlineStackInfo>
@@ -243,7 +243,7 @@
 											<first>src/generic/fp_generic.cpp</first>
 											<second>mp_mul</second>
 										</first>
-										<second>296</second>
+										<second>297</second>
 									</item>
 								</second>
 							</item>
@@ -407,8 +407,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>33</mMinLatency>
-			<mMaxLatency>33</mMaxLatency>
+			<mMinLatency>133</mMinLatency>
+			<mMaxLatency>245</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -525,7 +525,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="43" tracking_level="0" version="0">
-			<first>18</first>
+			<first>20</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -542,7 +542,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>grp_mul_5_fu_18</first>
+			<first>grp_mul_5_fu_20</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

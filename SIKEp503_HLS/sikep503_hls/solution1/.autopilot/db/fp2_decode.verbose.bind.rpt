@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode'
 ================================================================
-* Date:           Tue Sep 23 15:43:32 2025
+* Date:           Wed Oct  8 20:35:07 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -25,12 +25,12 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+-----+-----+---------+
-    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-    |   min   |   max   |    min   |    max   | min | max |   Type  |
-    +---------+---------+----------+----------+-----+-----+---------+
-    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
-    +---------+---------+----------+----------+-----+-----+---------+
+    +---------+---------+----------+-----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min   |    max    | min |  max |   Type  |
+    +---------+---------+----------+-----------+-----+------+---------+
+    |      690|     1142|  6.900 us|  11.420 us|  690|  1142|       no|
+    +---------+---------+----------+-----------+-----+------+---------+
 
     + Detail: 
         * Instance: 
@@ -40,7 +40,7 @@
         +---------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
         |grp_fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2_fu_74  |fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2  |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_fp2_decode_Pipeline_VITIS_LOOP_76_3_fu_84                  |fp2_decode_Pipeline_VITIS_LOOP_76_3                  |      137|      137|  1.370 us|  1.370 us|  128|  128|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpmul503_mont_3_2_fu_98                                    |fpmul503_mont_3_2                                    |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fpmul503_mont_3_2_fu_98                                    |fpmul503_mont_3_2                                    |      264|      490|  2.640 us|  4.900 us|  264|  490|                                              no|
         +---------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -118,7 +118,7 @@ State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_18, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_57, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln30 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:30->src/fpx.cpp:362->src/sidh.cpp:95]   --->   Operation 25 'specmemcore' 'specmemcore_ln30' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln30 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:30->src/fpx.cpp:362->src/sidh.cpp:95]   --->   Operation 26 'specmemcore' 'specmemcore_ln30' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln30 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:30->src/fpx.cpp:363->src/sidh.cpp:95]   --->   Operation 27 'specmemcore' 'specmemcore_ln30' <Predicate = true> <Delay = 0.00>
@@ -374,7 +374,7 @@ ret_ln96          (ret           ) [ 000000000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_41"/></StgValue>
+<StgValue><ssdm name="empty_18"/></StgValue>
 </bind>
 </comp>
 
@@ -392,7 +392,7 @@ ret_ln96          (ret           ) [ 000000000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_73"/></StgValue>
 </bind>
 </comp>
 
@@ -401,7 +401,7 @@ ret_ln96          (ret           ) [ 000000000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_74"/></StgValue>
+<StgValue><ssdm name="empty_23"/></StgValue>
 </bind>
 </comp>
 
@@ -410,7 +410,7 @@ ret_ln96          (ret           ) [ 000000000]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_75"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </bind>
 </comp>
 
@@ -712,7 +712,7 @@ ret_ln96          (ret           ) [ 000000000]
 |----------|---------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |          | grp_fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2_fu_74 |    0    |    0    |    0    |    11   |    96   |    0    |
 |   call   |         grp_fp2_decode_Pipeline_VITIS_LOOP_76_3_fu_84         |    0    |    0    |  0.774  |   384   |   628   |    0    |
-|          |                  grp_fpmul503_mont_3_2_fu_98                  |    0    |    48   | 9.19671 |   2295  |   5325  |    0    |
+|          |                  grp_fpmul503_mont_3_2_fu_98                  |    0    |    48   | 8.71114 |   2414  |   5105  |    0    |
 |----------|---------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |          |                   x_1_offset_read_read_fu_56                  |    0    |    0    |    0    |    0    |    0    |    0    |
 |   read   |                   x_0_offset_read_read_fu_62                  |    0    |    0    |    0    |    0    |    0    |    0    |
@@ -721,7 +721,7 @@ ret_ln96          (ret           ) [ 000000000]
 |bitconcatenate|                           tmp_fu_110                          |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |                          tmp_s_fu_119                         |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                               |    0    |    48   | 9.97071 |   2690  |   6049  |    0    |
+|   Total  |                                                               |    0    |    48   | 9.48514 |   2809  |   5829  |    0    |
 |----------|---------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -759,10 +759,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    0   |   48   |    9   |  2690  |  6049  |    0   |
+|  Function |    0   |   48   |    9   |  2809  |  5829  |    0   |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    1   |    0   |   45   |    -   |
 |  Register |    -   |    -   |    -   |   78   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |   48   |   11   |  2768  |  6094  |    0   |
+|   Total   |    0   |   48   |   11   |  2887  |  5874  |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

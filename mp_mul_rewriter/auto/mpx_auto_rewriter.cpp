@@ -71,12 +71,16 @@ static llvm::cl::opt<bool> FallbackMode(
     llvm::cl::init(false), llvm::cl::cat(Cat));
 
 static llvm::cl::opt<bool> NoHLSDirectives(
-  "no-hls-directives", llvm::cl::desc("Do not insert HLS directives in generated code"),
-  llvm::cl::init(false), llvm::cl::cat(Cat));
+    "no-hls-directives", llvm::cl::desc("Do not insert HLS directives in generated code"),
+    llvm::cl::init(false), llvm::cl::cat(Cat));
 
 static llvm::cl::opt<std::string> OutputFile(
-  "output", llvm::cl::desc("Output file name (if not specified, overwrites input file)"),
-  llvm::cl::init(""), llvm::cl::cat(Cat));
+    "output", llvm::cl::desc("Output file name (if not specified, overwrites input file)"),
+    llvm::cl::init(""), llvm::cl::cat(Cat));
+
+static llvm::cl::opt<std::string> PackedOpsType(
+    "packed-ops-type", llvm::cl::desc("Type of PackedOps to use (default, schoolbook-16, schoolbook-32, schoolbook-64, schoolbook-128, schoolbook-256)"),
+    llvm::cl::init("default"), llvm::cl::cat(Cat));
 
 static llvm::cl::opt<bool> DryRun(
     "dry-run", llvm::cl::desc("Detect only; do not rewrite"),
@@ -1055,7 +1059,18 @@ private:
 
 // =======================================================
 
-// 学校式乗算の実装を生成する関数
+// PackedOpsタイプに基づいて乗算コードを生成する関数
+static void generatePackedOpsMul(std::ostringstream &oss,
+                                 const std::string &aName, const std::string &bName,
+                                 const std::string &cName, const std::string &nName,
+                                 const std::string &packedOpsType, bool lswFirst)
+{
+  // すべてのPackedOpsタイプで同じ関数名を使用
+  oss << "  mpx::PackedOps<Digit, MAX_NWORDS, " << (lswFirst ? "true" : "false")
+      << ">::mul(" << aName << ", " << bName << ", " << cName << ", " << nName << ");\n";
+}
+
+// 学校式乗算の実装を生成する関数（後方互換性のため保持）
 static void generateSchoolbookMul(std::ostringstream &oss,
                                   const std::string &aName, const std::string &bName,
                                   const std::string &cName, const std::string &nName,
@@ -1331,47 +1346,65 @@ public:
     if (!hlsPragmas.empty() && !NoHLSDirectives)
       oss << "  " << hlsPragmas;
 
+    // 統合されたPackedOpsベースのアプローチ
+    oss << "  // Auto-converted by mpx_auto_rewriter_v4_2 (packed ops multiplication)\n"
+        << "  constexpr unsigned MAX_NWORDS = " << MaxNWords << ";\n";
+
+    // 必要なインクルードを追加
+    if (PackedOpsType.getValue() == "schoolbook-16")
+    {
+      oss << "  #include \"mpx_packed_16bit.hpp\"\n";
+    }
+    else if (PackedOpsType.getValue() == "schoolbook-32")
+    {
+      oss << "  #include \"mpx_packed_32bit.hpp\"\n";
+    }
+    else if (PackedOpsType.getValue() == "schoolbook-64")
+    {
+      oss << "  #include \"mpx_packed_64bit.hpp\"\n";
+    }
+    else if (PackedOpsType.getValue() == "schoolbook-128")
+    {
+      oss << "  #include \"mpx_packed_128bit.hpp\"\n";
+    }
+    else if (PackedOpsType.getValue() == "schoolbook-256")
+    {
+      oss << "  #include \"mpx_packed_256bit.hpp\"\n";
+    }
+    else
+    {
+      oss << "  #include \"mpx_packed.hpp\"\n";
+    }
+
+    // 後方互換性のため、古いオプションもサポート
     if (UseSchoolbook && MulBits > 0)
     {
-      // 学校式演算モード
-      oss << "  // Auto-converted by mpx_auto_rewriter_v4_2 (schoolbook multiplication)\n"
-          << "  constexpr unsigned MAX_NWORDS = " << MaxNWords << ";\n"
-          << "  constexpr unsigned MUL_BITS = " << MulBits << ";\n"
-          << "  using DigitA = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(A) << ")>>;\n"
-          << "  using DigitB = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(B) << ")>>;\n"
-          << "  using DigitC = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(C) << ")>>;\n"
-          << "  static_assert(sizeof(DigitA) == sizeof(DigitB) && sizeof(DigitA) == sizeof(DigitC),\n"
-          << "                \"a,b,c digits must have the same size\");\n";
-      if (UnsignedOnly)
-      {
-        oss << "  static_assert(std::is_unsigned<DigitA>::value || std::is_class<DigitA>::value,\n"
-            << "                \"Digit type must be unsigned or ap_uint-like\");\n";
-      }
-      oss << "  using Digit = DigitA;\n"
-          << "  if (" << nameOf(N) << " > MAX_NWORDS) return;\n";
+      oss << "  constexpr unsigned MUL_BITS = " << MulBits << ";\n";
+    }
 
-      // 学校式乗算の実装を生成
+    oss << "  using DigitA = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(A) << ")>>;\n"
+        << "  using DigitB = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(B) << ")>>;\n"
+        << "  using DigitC = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(C) << ")>>;\n"
+        << "  static_assert(sizeof(DigitA) == sizeof(DigitB) && sizeof(DigitA) == sizeof(DigitC),\n"
+        << "                \"a,b,c digits must have the same size\");\n";
+    if (UnsignedOnly)
+    {
+      oss << "  static_assert(std::is_unsigned<DigitA>::value || std::is_class<DigitA>::value,\n"
+          << "                \"Digit type must be unsigned or ap_uint-like\");\n";
+    }
+    oss << "  using Digit = DigitA;\n"
+        << "  if (" << nameOf(N) << " > MAX_NWORDS) return;\n";
+
+    // 後方互換性のため、古い学校式モードもサポート
+    if (UseSchoolbook && MulBits > 0)
+    {
+      // 古い学校式モード（直接実装）
       generateSchoolbookMul(oss, nameOf(A), nameOf(B), nameOf(C), nameOf(N), MulBits, lswFirst);
     }
     else
     {
-      // 従来のPackedOpsモード
-      oss << "  // Auto-converted by mpx_auto_rewriter_v4_2 (pack × mul × unpack)\n"
-          << "  constexpr unsigned MAX_NWORDS = " << MaxNWords << ";\n"
-          << "  using DigitA = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(A) << ")>>;\n"
-          << "  using DigitB = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(B) << ")>>;\n"
-          << "  using DigitC = std::remove_cv_t<std::remove_pointer_t<decltype(" << nameOf(C) << ")>>;\n"
-          << "  static_assert(sizeof(DigitA) == sizeof(DigitB) && sizeof(DigitA) == sizeof(DigitC),\n"
-          << "                \"a,b,c digits must have the same size\");\n";
-      if (UnsignedOnly)
-      {
-        oss << "  static_assert(std::is_unsigned<DigitA>::value || std::is_class<DigitA>::value,\n"
-            << "                \"Digit type must be unsigned or ap_uint-like\");\n";
-      }
-      oss << "  using Digit = DigitA;\n"
-          << "  if (" << nameOf(N) << " > MAX_NWORDS) return;\n"
-          << "  mpx::PackedOps<Digit, MAX_NWORDS, " << (lswFirst ? "true" : "false")
-          << ">::mul(" << nameOf(A) << ", " << nameOf(B) << ", " << nameOf(C) << ", " << nameOf(N) << ");\n";
+      // 新しいPackedOpsベースのアプローチ
+      generatePackedOpsMul(oss, nameOf(A), nameOf(B), nameOf(C), nameOf(N), PackedOpsType.getValue(), lswFirst);
     }
 
     oss << "}\n";
@@ -1403,14 +1436,19 @@ private:
 class Action : public ASTFrontendAction
 {
 public:
-  void EndSourceFileAction() override { 
-    if (OutputFile.getValue().empty()) {
+  void EndSourceFileAction() override
+  {
+    if (OutputFile.getValue().empty())
+    {
       TheRewriter.overwriteChangedFiles();
-    } else {
+    }
+    else
+    {
       // 指定されたファイル名に出力
       std::error_code EC;
       llvm::raw_fd_ostream OS(OutputFile.getValue(), EC);
-      if (EC) {
+      if (EC)
+      {
         llvm::errs() << "Error opening output file: " << EC.message() << "\n";
         return;
       }

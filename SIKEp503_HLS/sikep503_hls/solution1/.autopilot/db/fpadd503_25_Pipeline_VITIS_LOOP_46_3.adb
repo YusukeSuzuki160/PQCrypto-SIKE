@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>R_Z</name>
+              <name>c</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
           </Value>
           <direction>2</direction>
           <if_type>1</if_type>
-          <array_size>16</array_size>
+          <array_size>8</array_size>
           <bit_vecs class_id="7" tracking_level="0" version="0">
             <count>0</count>
             <item_version>0</item_version>
@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>i_138</name>
+              <name>i_128</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -235,7 +235,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_138_write_ln28</name>
+              <name>i_128_write_ln28</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -678,7 +678,7 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>R_Z_addr</name>
+              <name>c_addr</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>48</lineNumber>
@@ -713,7 +713,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>4</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
@@ -736,7 +736,7 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>R_Z_load</name>
+              <name>c_load</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>48</lineNumber>
@@ -1133,7 +1133,7 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>R_Z_addr_write_ln48</name>
+              <name>c_addr_write_ln48</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>48</lineNumber>
@@ -1820,7 +1820,7 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>i_138_write_ln28</name>
+              <name>i_128_write_ln28</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -1995,7 +1995,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>100</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_239_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -3684,33 +3684,6 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>R_Z_address0_local</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>12</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>ap_NS_fsm</first>
           <second>
             <count>5</count>
@@ -3792,6 +3765,33 @@
           </second>
         </item>
         <item>
+          <first>c_address0_local</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>9</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>carry_reg_92</first>
           <second>
             <count>5</count>
@@ -3819,7 +3819,7 @@
           </second>
         </item>
         <item>
-          <first>i_138_fu_56</first>
+          <first>i_128_fu_56</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3849,25 +3849,6 @@
       <dp_register_resource>
         <count>6</count>
         <item_version>0</item_version>
-        <item>
-          <first>R_Z_addr_reg_249</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>4</second>
-            </item>
-          </second>
-        </item>
         <item>
           <first>ap_CS_fsm</first>
           <second>
@@ -3907,6 +3888,25 @@
           </second>
         </item>
         <item>
+          <first>c_addr_reg_249</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>3</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>carry_reg_92</first>
           <second>
             <count>3</count>
@@ -3926,7 +3926,7 @@
           </second>
         </item>
         <item>
-          <first>i_138_fu_56</first>
+          <first>i_128_fu_56</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4422,7 +4422,7 @@
               <item class_id="53" tracking_level="0" version="0">
                 <first class_id="54" tracking_level="0" version="0">
                   <first class_id_reference="9" object_id_reference="_22"/>
-                  <second>core:RAM_1P:R_Z::load:store</second>
+                  <second>core:RAM_1P:c::load:store</second>
                 </first>
                 <second>29</second>
               </item>
@@ -4681,14 +4681,6 @@
       <count>23</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>R_Z_addr_gep_fu_66</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>21</item>
-        </second>
-      </item>
-      <item>
         <first>add_ln46_fu_125</first>
         <second>
           <count>1</count>
@@ -4729,6 +4721,14 @@
         </second>
       </item>
       <item>
+        <first>c_addr_gep_fu_66</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>21</item>
+        </second>
+      </item>
+      <item>
         <first>carry_phi_fu_95</first>
         <second>
           <count>1</count>
@@ -4737,7 +4737,7 @@
         </second>
       </item>
       <item>
-        <first>i_138_fu_56</first>
+        <first>i_128_fu_56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4914,7 +4914,7 @@
       <item_version>0</item_version>
       <item class_id="61" tracking_level="0" version="0">
         <first class_id="62" tracking_level="0" version="0">
-          <first>R_Z</first>
+          <first>c</first>
           <second>0</second>
         </first>
         <second>
@@ -4994,7 +4994,7 @@
       <count>6</count>
       <item_version>0</item_version>
       <item>
-        <first>R_Z_addr_reg_249</first>
+        <first>c_addr_reg_249</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5010,7 +5010,7 @@
         </second>
       </item>
       <item>
-        <first>i_138_reg_234</first>
+        <first>i_128_reg_234</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5070,7 +5070,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item class_id="64" tracking_level="0" version="0">
-        <first>R_Z(p0)</first>
+        <first>c(p0)</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

@@ -1,0 +1,348 @@
+
+
+================================================================
+== Vitis HLS Report for 'eval_4_isog_40'
+================================================================
+* Date:           Wed Oct  8 20:34:17 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     4550|     7818|  45.500 us|  78.180 us|  4550|  7818|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 22
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%t0 = alloca i64 1" [src/ec_isogeny.cpp:64]   --->   Operation 23 'alloca' 't0' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%t0_1 = alloca i64 1" [src/ec_isogeny.cpp:64]   --->   Operation 24 'alloca' 't0_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/ec_isogeny.cpp:64]   --->   Operation 25 'alloca' 't1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%t1_1 = alloca i64 1" [src/ec_isogeny.cpp:64]   --->   Operation 26 'alloca' 't1_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.1, i64 %P_X_0, i64 %P_Z_0, i64 %t0, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:66]   --->   Operation 27 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.1, i64 %P_X_0, i64 %P_Z_0, i64 %t0, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:66]   --->   Operation 28 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.1, i64 %P_X_1, i64 %P_Z_1, i64 %t0_1, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:66]   --->   Operation 29 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln115 = call void @fpsub503.2, i64 %P_X_0, i64 %P_Z_0, i64 %t1, i64 %p503x2_1" [src/fpx.cpp:115->src/ec_isogeny.cpp:67]   --->   Operation 30 'call' 'call_ln115' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.1, i64 %P_X_1, i64 %P_Z_1, i64 %t0_1, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:66]   --->   Operation 31 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln115 = call void @fpsub503.2, i64 %P_X_0, i64 %P_Z_0, i64 %t1, i64 %p503x2_1" [src/fpx.cpp:115->src/ec_isogeny.cpp:67]   --->   Operation 32 'call' 'call_ln115' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503.2, i64 %P_X_1, i64 %P_Z_1, i64 %t1_1, i64 %p503x2_1" [src/fpx.cpp:116->src/ec_isogeny.cpp:67]   --->   Operation 33 'call' 'call_ln116' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503.2, i64 %P_X_1, i64 %P_Z_1, i64 %t1_1, i64 %p503x2_1" [src/fpx.cpp:116->src/ec_isogeny.cpp:67]   --->   Operation 34 'call' 'call_ln116' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln68 = call void @fp2mul503_mont.44, i64 %t0, i64 %t0_1, i64 %coeff, i9 128, i64 %P_X_0, i64 %P_X_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 35 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln68 = call void @fp2mul503_mont.44, i64 %t0, i64 %t0_1, i64 %coeff, i9 128, i64 %P_X_0, i64 %P_X_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 36 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 37 [2/2] (0.00ns)   --->   "%call_ln69 = call void @fp2mul503_mont.44, i64 %t1, i64 %t1_1, i64 %coeff, i9 256, i64 %P_Z_0, i64 %P_Z_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 37 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln69 = call void @fp2mul503_mont.44, i64 %t1, i64 %t1_1, i64 %coeff, i9 256, i64 %P_Z_0, i64 %P_Z_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 38 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 39 [2/2] (0.00ns)   --->   "%call_ln70 = call void @fp2mul503_mont.126.3, i64 %t0, i64 %t0_1, i64 %t1, i64 %t1_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:70]   --->   Operation 39 'call' 'call_ln70' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 40 [1/2] (0.00ns)   --->   "%call_ln70 = call void @fp2mul503_mont.126.3, i64 %t0, i64 %t0_1, i64 %t1, i64 %t1_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:70]   --->   Operation 40 'call' 'call_ln70' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 41 [2/2] (0.00ns)   --->   "%call_ln71 = call void @fp2mul503_mont.45, i64 %t0, i64 %t0_1, i64 %coeff, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:71]   --->   Operation 41 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.1, i64 %P_X_0, i64 %P_Z_0, i64 %t1, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:72]   --->   Operation 42 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 43 [2/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.1, i64 %P_X_1, i64 %P_Z_1, i64 %t1_1, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:72]   --->   Operation 43 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 44 [1/2] (0.00ns)   --->   "%call_ln71 = call void @fp2mul503_mont.45, i64 %t0, i64 %t0_1, i64 %coeff, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:71]   --->   Operation 44 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 45 [1/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.1, i64 %P_X_0, i64 %P_Z_0, i64 %t1, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:72]   --->   Operation 45 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 46 [1/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.1, i64 %P_X_1, i64 %P_Z_1, i64 %t1_1, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:72]   --->   Operation 46 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln115 = call void @fpsub503.1, i64 %P_X_0, i64 %P_Z_0, i64 %p503x2_1" [src/fpx.cpp:115->src/ec_isogeny.cpp:73]   --->   Operation 47 'call' 'call_ln115' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 48 [2/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503.1, i64 %P_X_1, i64 %P_Z_1, i64 %p503x2_1" [src/fpx.cpp:116->src/ec_isogeny.cpp:73]   --->   Operation 48 'call' 'call_ln116' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 49 [2/2] (0.00ns)   --->   "%call_ln74 = call void @fp2sqr503_mont.6.2, i64 %t1, i64 %t1_1, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:74]   --->   Operation 49 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 50 [1/2] (0.00ns)   --->   "%call_ln115 = call void @fpsub503.1, i64 %P_X_0, i64 %P_Z_0, i64 %p503x2_1" [src/fpx.cpp:115->src/ec_isogeny.cpp:73]   --->   Operation 50 'call' 'call_ln115' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503.1, i64 %P_X_1, i64 %P_Z_1, i64 %p503x2_1" [src/fpx.cpp:116->src/ec_isogeny.cpp:73]   --->   Operation 51 'call' 'call_ln116' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 52 [1/2] (0.00ns)   --->   "%call_ln74 = call void @fp2sqr503_mont.6.2, i64 %t1, i64 %t1_1, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:74]   --->   Operation 52 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 53 [2/2] (0.00ns)   --->   "%call_ln75 = call void @fp2sqr503_mont.4, i64 %P_Z_0, i64 %P_Z_1, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:75]   --->   Operation 53 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 54 [2/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503, i64 %t1, i64 %t0, i64 %P_X_0, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:76]   --->   Operation 54 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 55 [2/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503, i64 %t1_1, i64 %t0_1, i64 %P_X_1, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:76]   --->   Operation 55 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln75 = call void @fp2sqr503_mont.4, i64 %P_Z_0, i64 %P_Z_1, i64 %p503x2_1, i64 %p503p1_1" [src/ec_isogeny.cpp:75]   --->   Operation 56 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_18 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503, i64 %t1, i64 %t0, i64 %P_X_0, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:76]   --->   Operation 57 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_18 : Operation 58 [1/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503, i64 %t1_1, i64 %t0_1, i64 %P_X_1, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:76]   --->   Operation 58 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 0.00>
+ST_19 : Operation 59 [2/2] (0.00ns)   --->   "%call_ln115 = call void @fpsub503, i64 %P_Z_0, i64 %t0, i64 %p503x2_1" [src/fpx.cpp:115->src/ec_isogeny.cpp:77]   --->   Operation 59 'call' 'call_ln115' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_19 : Operation 60 [2/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503, i64 %P_Z_1, i64 %t0_1, i64 %p503x2_1" [src/fpx.cpp:116->src/ec_isogeny.cpp:77]   --->   Operation 60 'call' 'call_ln116' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_19 : Operation 61 [2/2] (0.00ns)   --->   "%call_ln78 = call void @fp2mul503_mont.124, i64 %P_X_0, i64 %P_X_1, i64 %t1, i64 %t1_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:78]   --->   Operation 61 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 62 [1/2] (0.00ns)   --->   "%call_ln115 = call void @fpsub503, i64 %P_Z_0, i64 %t0, i64 %p503x2_1" [src/fpx.cpp:115->src/ec_isogeny.cpp:77]   --->   Operation 62 'call' 'call_ln115' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_20 : Operation 63 [1/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503, i64 %P_Z_1, i64 %t0_1, i64 %p503x2_1" [src/fpx.cpp:116->src/ec_isogeny.cpp:77]   --->   Operation 63 'call' 'call_ln116' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_20 : Operation 64 [1/2] (0.00ns)   --->   "%call_ln78 = call void @fp2mul503_mont.124, i64 %P_X_0, i64 %P_X_1, i64 %t1, i64 %t1_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:78]   --->   Operation 64 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 65 [2/2] (0.00ns)   --->   "%call_ln79 = call void @fp2mul503_mont.124, i64 %P_Z_0, i64 %P_Z_1, i64 %t0, i64 %t0_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:79]   --->   Operation 65 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 0.00>
+ST_22 : Operation 66 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 66 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 67 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_X_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 67 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 68 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_X_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 68 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 69 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_Z_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 69 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 70 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_Z_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 70 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 71 [1/1] (0.00ns)   --->   "%specmemcore_ln68 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:68]   --->   Operation 71 'specmemcore' 'specmemcore_ln68' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 72 [1/1] (0.00ns)   --->   "%specmemcore_ln68 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:68]   --->   Operation 72 'specmemcore' 'specmemcore_ln68' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 73 [1/1] (0.00ns)   --->   "%specmemcore_ln68 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:68]   --->   Operation 73 'specmemcore' 'specmemcore_ln68' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 74 [1/1] (0.00ns)   --->   "%specmemcore_ln68 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:68]   --->   Operation 74 'specmemcore' 'specmemcore_ln68' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 75 [1/1] (0.00ns)   --->   "%specmemcore_ln68 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:68]   --->   Operation 75 'specmemcore' 'specmemcore_ln68' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 76 [1/1] (0.00ns)   --->   "%specmemcore_ln68 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:68]   --->   Operation 76 'specmemcore' 'specmemcore_ln68' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 77 [1/1] (0.00ns)   --->   "%specmemcore_ln69 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:69]   --->   Operation 77 'specmemcore' 'specmemcore_ln69' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 78 [1/1] (0.00ns)   --->   "%specmemcore_ln69 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:69]   --->   Operation 78 'specmemcore' 'specmemcore_ln69' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 79 [1/1] (0.00ns)   --->   "%specmemcore_ln69 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:69]   --->   Operation 79 'specmemcore' 'specmemcore_ln69' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 80 [1/1] (0.00ns)   --->   "%specmemcore_ln69 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:69]   --->   Operation 80 'specmemcore' 'specmemcore_ln69' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 81 [1/1] (0.00ns)   --->   "%specmemcore_ln69 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:69]   --->   Operation 81 'specmemcore' 'specmemcore_ln69' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 82 [1/1] (0.00ns)   --->   "%specmemcore_ln69 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:69]   --->   Operation 82 'specmemcore' 'specmemcore_ln69' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 83 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 83 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 84 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 84 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 85 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 85 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 86 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 86 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 87 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 87 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 88 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 88 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 89 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 89 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 90 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 90 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 91 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 91 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 92 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 92 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 93 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 93 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 94 [1/1] (0.00ns)   --->   "%specmemcore_ln70 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:70]   --->   Operation 94 'specmemcore' 'specmemcore_ln70' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 95 [1/1] (0.00ns)   --->   "%specmemcore_ln71 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:71]   --->   Operation 95 'specmemcore' 'specmemcore_ln71' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 96 [1/1] (0.00ns)   --->   "%specmemcore_ln71 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:71]   --->   Operation 96 'specmemcore' 'specmemcore_ln71' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 97 [1/1] (0.00ns)   --->   "%specmemcore_ln71 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:71]   --->   Operation 97 'specmemcore' 'specmemcore_ln71' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 98 [1/1] (0.00ns)   --->   "%specmemcore_ln71 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:71]   --->   Operation 98 'specmemcore' 'specmemcore_ln71' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 99 [1/1] (0.00ns)   --->   "%specmemcore_ln71 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:71]   --->   Operation 99 'specmemcore' 'specmemcore_ln71' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 100 [1/1] (0.00ns)   --->   "%specmemcore_ln71 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:71]   --->   Operation 100 'specmemcore' 'specmemcore_ln71' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 101 [1/1] (0.00ns)   --->   "%specmemcore_ln74 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:74]   --->   Operation 101 'specmemcore' 'specmemcore_ln74' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 102 [1/1] (0.00ns)   --->   "%specmemcore_ln74 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:74]   --->   Operation 102 'specmemcore' 'specmemcore_ln74' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 103 [1/1] (0.00ns)   --->   "%specmemcore_ln78 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:78]   --->   Operation 103 'specmemcore' 'specmemcore_ln78' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 104 [1/1] (0.00ns)   --->   "%specmemcore_ln78 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:78]   --->   Operation 104 'specmemcore' 'specmemcore_ln78' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 105 [1/1] (0.00ns)   --->   "%specmemcore_ln78 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:78]   --->   Operation 105 'specmemcore' 'specmemcore_ln78' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 106 [1/1] (0.00ns)   --->   "%specmemcore_ln78 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:78]   --->   Operation 106 'specmemcore' 'specmemcore_ln78' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 107 [1/1] (0.00ns)   --->   "%specmemcore_ln78 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:78]   --->   Operation 107 'specmemcore' 'specmemcore_ln78' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 108 [1/1] (0.00ns)   --->   "%specmemcore_ln78 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:78]   --->   Operation 108 'specmemcore' 'specmemcore_ln78' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 109 [1/1] (0.00ns)   --->   "%specmemcore_ln79 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:79]   --->   Operation 109 'specmemcore' 'specmemcore_ln79' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 110 [1/1] (0.00ns)   --->   "%specmemcore_ln79 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:79]   --->   Operation 110 'specmemcore' 'specmemcore_ln79' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 111 [1/1] (0.00ns)   --->   "%specmemcore_ln79 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:79]   --->   Operation 111 'specmemcore' 'specmemcore_ln79' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 112 [1/1] (0.00ns)   --->   "%specmemcore_ln79 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:79]   --->   Operation 112 'specmemcore' 'specmemcore_ln79' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 113 [1/1] (0.00ns)   --->   "%specmemcore_ln79 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:79]   --->   Operation 113 'specmemcore' 'specmemcore_ln79' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 114 [1/1] (0.00ns)   --->   "%specmemcore_ln79 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:79]   --->   Operation 114 'specmemcore' 'specmemcore_ln79' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 115 [1/2] (0.00ns)   --->   "%call_ln79 = call void @fp2mul503_mont.124, i64 %P_Z_0, i64 %P_Z_1, i64 %t0, i64 %t0_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:79]   --->   Operation 115 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 116 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_X_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 116 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 117 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_X_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 117 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 118 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_Z_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 118 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 119 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %P_Z_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 119 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 120 [1/1] (0.00ns)   --->   "%ret_ln80 = ret" [src/ec_isogeny.cpp:80]   --->   Operation 120 'ret' 'ret_ln80' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 0.000ns
+The critical path consists of the following:
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 0.000ns
+The critical path consists of the following:
+
+ <State 19>: 0.000ns
+The critical path consists of the following:
+
+ <State 20>: 0.000ns
+The critical path consists of the following:
+
+ <State 21>: 0.000ns
+The critical path consists of the following:
+
+ <State 22>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

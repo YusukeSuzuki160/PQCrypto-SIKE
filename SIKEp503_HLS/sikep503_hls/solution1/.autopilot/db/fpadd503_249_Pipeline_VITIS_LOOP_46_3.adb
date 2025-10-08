@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>i_153</name>
+              <name>i_130</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -235,7 +235,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_153_write_ln28</name>
+              <name>i_130_write_ln28</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -1820,7 +1820,7 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>i_153_write_ln28</name>
+              <name>i_130_write_ln28</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -1995,7 +1995,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>100</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_247_1_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -3819,7 +3819,7 @@
           </second>
         </item>
         <item>
-          <first>i_153_fu_56</first>
+          <first>i_130_fu_56</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3926,7 +3926,7 @@
           </second>
         </item>
         <item>
-          <first>i_153_fu_56</first>
+          <first>i_130_fu_56</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4737,7 +4737,7 @@
         </second>
       </item>
       <item>
-        <first>i_153_fu_56</first>
+        <first>i_130_fu_56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5010,7 +5010,7 @@
         </second>
       </item>
       <item>
-        <first>i_153_reg_234</first>
+        <first>i_130_reg_234</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -129,7 +129,7 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        zext_ln35_3 : IN STD_LOGIC_VECTOR (3 downto 0);
+        zext_ln35_6 : IN STD_LOGIC_VECTOR (3 downto 0);
         a_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         a_ce0 : OUT STD_LOGIC;
         a_q0 : IN STD_LOGIC_VECTOR (0 downto 0);
@@ -201,7 +201,7 @@ begin
         ap_done => grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_ap_done,
         ap_idle => grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_ap_idle,
         ap_ready => grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_ap_ready,
-        zext_ln35_3 => tmp_reg_94,
+        zext_ln35_6 => tmp_reg_94,
         a_address0 => grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_a_address0,
         a_ce0 => grp_fpadd503_3_Pipeline_VITIS_LOOP_33_1_fu_42_a_ce0,
         a_q0 => a_q0,

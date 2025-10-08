@@ -17,20 +17,17 @@ set cdfgNum 684
 set C_modelName {EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict t3 { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict phiP_Z_2 { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict phiP_Z { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ t3 int 64 regular {array 16 { 1 } 1 1 }  }
-	{ phiP_Z_2 int 64 regular {array 8 { 0 } 0 1 }  }
+	{ phiP_Z int 64 regular {array 8 { 0 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "t3", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
- 	{ "Name" : "phiP_Z_2", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "phiP_Z", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 13
+set portNum 10
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -38,13 +35,10 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ t3_address0 sc_out sc_lv 4 signal 0 } 
-	{ t3_ce0 sc_out sc_logic 1 signal 0 } 
-	{ t3_q0 sc_in sc_lv 64 signal 0 } 
-	{ phiP_Z_2_address0 sc_out sc_lv 3 signal 1 } 
-	{ phiP_Z_2_ce0 sc_out sc_logic 1 signal 1 } 
-	{ phiP_Z_2_we0 sc_out sc_logic 1 signal 1 } 
-	{ phiP_Z_2_d0 sc_out sc_lv 64 signal 1 } 
+	{ phiP_Z_address0 sc_out sc_lv 3 signal 0 } 
+	{ phiP_Z_ce0 sc_out sc_logic 1 signal 0 } 
+	{ phiP_Z_we0 sc_out sc_logic 1 signal 0 } 
+	{ phiP_Z_d0 sc_out sc_lv 64 signal 0 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -53,16 +47,13 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "t3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "t3", "role": "address0" }} , 
- 	{ "name": "t3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "t3", "role": "ce0" }} , 
- 	{ "name": "t3_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "t3", "role": "q0" }} , 
- 	{ "name": "phiP_Z_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "phiP_Z_2", "role": "address0" }} , 
- 	{ "name": "phiP_Z_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "phiP_Z_2", "role": "ce0" }} , 
- 	{ "name": "phiP_Z_2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "phiP_Z_2", "role": "we0" }} , 
- 	{ "name": "phiP_Z_2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "phiP_Z_2", "role": "d0" }}  ]}
+ 	{ "name": "phiP_Z_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "phiP_Z", "role": "address0" }} , 
+ 	{ "name": "phiP_Z_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "phiP_Z", "role": "ce0" }} , 
+ 	{ "name": "phiP_Z_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "phiP_Z", "role": "we0" }} , 
+ 	{ "name": "phiP_Z_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "phiP_Z", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
 		"CDFG" : "EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -77,18 +68,19 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "t3", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "phiP_Z_2", "Type" : "Memory", "Direction" : "O"}],
+			{"Name" : "phiP_Z", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "Montgomery_one_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_13_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Montgomery_one_1_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212 {
-		t3 {Type I LastRead 0 FirstWrite -1}
-		phiP_Z_2 {Type O LastRead -1 FirstWrite 1}}}
+		phiP_Z {Type O LastRead -1 FirstWrite 1}
+		Montgomery_one_1 {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -102,6 +94,5 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	t3 { ap_memory {  { t3_address0 mem_address 1 4 }  { t3_ce0 mem_ce 1 1 }  { t3_q0 mem_dout 0 64 } } }
-	phiP_Z_2 { ap_memory {  { phiP_Z_2_address0 mem_address 1 3 }  { phiP_Z_2_ce0 mem_ce 1 1 }  { phiP_Z_2_we0 mem_we 1 1 }  { phiP_Z_2_d0 mem_din 1 64 } } }
+	phiP_Z { ap_memory {  { phiP_Z_address0 mem_address 1 3 }  { phiP_Z_ce0 mem_ce 1 1 }  { phiP_Z_we0 mem_we 1 1 }  { phiP_Z_d0 mem_din 1 64 } } }
 }

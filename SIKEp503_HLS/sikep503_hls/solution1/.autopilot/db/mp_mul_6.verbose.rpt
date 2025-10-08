@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_6'
 ================================================================
-* Date:           Tue Sep 23 15:23:56 2025
+* Date:           Wed Oct  8 20:37:46 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.581 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.336 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       33|       33|  0.330 us|  0.330 us|   33|   33|       no|
+    |      133|      245|  1.330 us|  2.450 us|  133|  245|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                 |       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |     Instance    | Module|   min   |   max   |    min   |    max   | min | max |   Type  |
         +-----------------+-------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mul_5_fu_18  |mul_5  |       32|       32|  0.320 us|  0.320 us|   32|   32|       no|
+        |grp_mul_5_fu_20  |mul_5  |      132|      244|  1.320 us|  2.440 us|  132|  244|       no|
         +-----------------+-------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -56,31 +56,31 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        -|        -|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        -|    900|     2445|     6105|     -|
+|Instance             |        -|     16|      422|      794|     -|
 |Memory               |        -|      -|        -|        -|     -|
 |Multiplexer          |        -|      -|        0|       14|     -|
 |Register             |        -|      -|        3|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|    900|     2448|     6119|     0|
+|Total                |        0|     16|      425|      808|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization SLR (%)  |        0|     29|       ~0|        1|     0|
+|Utilization SLR (%)  |        0|     ~0|       ~0|       ~0|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available            |     5376|  12288|  3456000|  1728000|  1280|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization (%)      |        0|      7|       ~0|       ~0|     0|
+|Utilization (%)      |        0|     ~0|       ~0|       ~0|     0|
 +---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
     * Instance: 
-    +-----------------+-------+---------+-----+------+------+-----+
-    |     Instance    | Module| BRAM_18K| DSP |  FF  |  LUT | URAM|
-    +-----------------+-------+---------+-----+------+------+-----+
-    |grp_mul_5_fu_18  |mul_5  |        0|  900|  2445|  6105|    0|
-    +-----------------+-------+---------+-----+------+------+-----+
-    |Total            |       |        0|  900|  2445|  6105|    0|
-    +-----------------+-------+---------+-----+------+------+-----+
+    +-----------------+-------+---------+----+-----+-----+-----+
+    |     Instance    | Module| BRAM_18K| DSP|  FF | LUT | URAM|
+    +-----------------+-------+---------+----+-----+-----+-----+
+    |grp_mul_5_fu_20  |mul_5  |        0|  16|  422|  794|    0|
+    +-----------------+-------+---------+----+-----+-----+-----+
+    |Total            |       |        0|  16|  422|  794|    0|
+    +-----------------+-------+---------+----+-----+-----+-----+
 
     * DSP: 
     N/A
@@ -108,7 +108,7 @@
     |             Name             | FF| LUT| Bits| Const Bits|
     +------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                     |  2|   0|    2|          0|
-    |grp_mul_5_fu_18_ap_start_reg  |  1|   0|    1|          0|
+    |grp_mul_5_fu_20_ap_start_reg  |  1|   0|    1|          0|
     +------------------------------+---+----+-----+-----------+
     |Total                         |  3|   0|    3|          0|
     +------------------------------+---+----+-----+-----------+
@@ -180,15 +180,15 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln295 = call void @mul.5, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:295]   --->   Operation 3 'call' 'call_ln295' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.5, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 3 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 4 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 1.09>
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 4 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln295 = call void @mul.5, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:295]   --->   Operation 8 'call' 'call_ln295' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln296 = ret" [src/generic/fp_generic.cpp:296]   --->   Operation 9 'ret' 'ret_ln296' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/2] (1.09ns)   --->   "%call_ln296 = call void @mul.5, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 9 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -216,8 +216,8 @@ specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
-call_ln295      (call       ) [ 000]
-ret_ln296       (ret        ) [ 000]
+call_ln296      (call       ) [ 000]
+ret_ln297       (ret        ) [ 000]
 </LifeTime>
 
 <model>
@@ -308,33 +308,42 @@ ret_ln296       (ret        ) [ 000]
 </bind>
 </comp>
 
-<comp id="18" class="1004" name="grp_mul_5_fu_18">
+<comp id="18" class="1001" name="const_18">
 <pin_list>
-<pin id="19" dir="0" index="0" bw="0" slack="0"/>
-<pin id="20" dir="0" index="1" bw="64" slack="0"/>
-<pin id="21" dir="0" index="2" bw="64" slack="0"/>
-<pin id="22" dir="0" index="3" bw="64" slack="0"/>
-<pin id="23" dir="0" index="4" bw="64" slack="0"/>
-<pin id="24" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1004" name="grp_mul_5_fu_20">
+<pin_list>
+<pin id="21" dir="0" index="0" bw="0" slack="0"/>
+<pin id="22" dir="0" index="1" bw="64" slack="0"/>
+<pin id="23" dir="0" index="2" bw="64" slack="0"/>
+<pin id="24" dir="0" index="3" bw="64" slack="0"/>
+<pin id="25" dir="0" index="4" bw="64" slack="0"/>
+<pin id="26" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln295/1 "/>
+<opset="call_ln296/1 "/>
 </bind>
 </comp>
 
 </comp_list>
 
 <net_list>
-<net id="25"><net_src comp="8" pin="0"/><net_sink comp="18" pin=0"/></net>
+<net id="27"><net_src comp="8" pin="0"/><net_sink comp="20" pin=0"/></net>
 
-<net id="26"><net_src comp="0" pin="0"/><net_sink comp="18" pin=1"/></net>
+<net id="28"><net_src comp="0" pin="0"/><net_sink comp="20" pin=1"/></net>
 
-<net id="27"><net_src comp="2" pin="0"/><net_sink comp="18" pin=2"/></net>
+<net id="29"><net_src comp="2" pin="0"/><net_sink comp="20" pin=2"/></net>
 
-<net id="28"><net_src comp="4" pin="0"/><net_sink comp="18" pin=3"/></net>
+<net id="30"><net_src comp="4" pin="0"/><net_sink comp="20" pin=3"/></net>
 
-<net id="29"><net_src comp="6" pin="0"/><net_sink comp="18" pin=4"/></net>
+<net id="31"><net_src comp="6" pin="0"/><net_sink comp="20" pin=4"/></net>
 
 </net_list>
 
@@ -364,9 +373,9 @@ ret_ln296       (ret        ) [ 000]
 |----------|-----------------|---------|---------|---------|---------|
 | Operation| Functional Unit |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|-----------------|---------|---------|---------|---------|
-|   call   | grp_mul_5_fu_18 |   900   |  2.322  |   5508  |   2026  |
+|   call   | grp_mul_5_fu_20 |    16   |  2.709  |   570   |   685   |
 |----------|-----------------|---------|---------|---------|---------|
-|   Total  |                 |   900   |  2.322  |   5508  |   2026  |
+|   Total  |                 |    16   |  2.709  |   570   |   685   |
 |----------|-----------------|---------|---------|---------|---------|
 
 Memories:
@@ -388,10 +397,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   900  |    2   |  5508  |  2026  |
+|  Function |   16   |    2   |   570  |   685  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   900  |    2   |  5508  |  2026  |
+|   Total   |   16   |    2   |   570  |   685  |
 +-----------+--------+--------+--------+--------+

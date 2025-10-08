@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_2'" level="0">
-<item name = "Date">Tue Sep 23 15:46:02 2025
+<item name = "Date">Wed Oct  8 20:37:22 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -80,7 +80,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_401_fu_88_p2">+, 0, 0, 12, 5, 1</column>
+<column name="empty_405_fu_88_p2">+, 0, 0, 12, 5, 1</column>
 <column name="exitcond26333_fu_82_p2">icmp, 0, 0, 13, 5, 6</column>
 <column name="icmp1006_fu_114_p2">icmp, 0, 0, 9, 2, 1</column>
 </table>

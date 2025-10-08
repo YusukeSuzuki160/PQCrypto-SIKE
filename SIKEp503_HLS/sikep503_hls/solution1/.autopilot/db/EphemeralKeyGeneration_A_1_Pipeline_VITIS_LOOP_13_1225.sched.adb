@@ -289,7 +289,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>i_295</name>
+						<name>i_274</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -1683,7 +1683,7 @@
 				<Obj>
 					<type>3</type>
 					<id>27</id>
-					<name>for.inc.i10.i.split.i</name>
+					<name>for.inc.i10.i.i.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1723,7 +1723,7 @@
 				<Obj>
 					<type>3</type>
 					<id>29</id>
-					<name>inv_3_way.region_end.exitStub</name>
+					<name>_Z9inv_3_wayPA8_mS0_S0_.exit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

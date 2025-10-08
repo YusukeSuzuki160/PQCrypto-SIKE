@@ -13,14 +13,13 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_123
         ap_done,
         ap_idle,
         ap_ready,
-        zext_ln14_20,
-        pts_Z_address0,
-        pts_Z_ce0,
-        pts_Z_we0,
-        pts_Z_d0,
-        R_Z_address0,
-        R_Z_ce0,
-        R_Z_q0
+        phiP_X_1_address0,
+        phiP_X_1_ce0,
+        phiP_X_1_we0,
+        phiP_X_1_d0,
+        B_gen_1_address0,
+        B_gen_1_ce0,
+        B_gen_1_q0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -31,14 +30,13 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [6:0] zext_ln14_20;
-output  [6:0] pts_Z_address0;
-output   pts_Z_ce0;
-output   pts_Z_we0;
-output  [63:0] pts_Z_d0;
-output  [3:0] R_Z_address0;
-output   R_Z_ce0;
-input  [63:0] R_Z_q0;
+output  [2:0] phiP_X_1_address0;
+output   phiP_X_1_ce0;
+output   phiP_X_1_we0;
+output  [63:0] phiP_X_1_d0;
+output  [5:0] B_gen_1_address0;
+output   B_gen_1_ce0;
+input  [63:0] B_gen_1_q0;
 
 reg ap_idle;
 
@@ -48,26 +46,24 @@ wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln13_fu_83_p2;
+wire   [0:0] icmp_ln13_fu_81_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
+reg   [3:0] i_reg_126;
 wire    ap_block_pp0_stage0_11001;
-reg   [3:0] i_396_reg_142;
-wire   [63:0] zext_ln14_21_fu_107_p1;
+wire   [63:0] zext_ln14_fu_105_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln14_19_fu_125_p1;
-reg   [3:0] i_fu_38;
-wire   [3:0] add_ln13_fu_89_p2;
+wire   [63:0] zext_ln13_fu_115_p1;
+reg   [3:0] i_271_fu_42;
+wire   [3:0] add_ln13_fu_87_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_396;
-reg    R_Z_ce0_local;
-reg    pts_Z_we0_local;
-reg    pts_Z_ce0_local;
-wire   [2:0] trunc_ln14_fu_95_p1;
-wire   [3:0] zext_ln14_s_fu_99_p3;
-wire   [6:0] zext_ln14_fu_117_p1;
-wire   [6:0] add_ln14_fu_120_p2;
+reg   [3:0] ap_sig_allocacmp_i;
+reg    B_gen_1_ce0_local;
+reg    phiP_X_1_we0_local;
+reg    phiP_X_1_ce0_local;
+wire   [2:0] trunc_ln14_fu_93_p1;
+wire   [3:0] zext_ln14_cast_fu_97_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -82,7 +78,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_fu_38 = 4'd0;
+#0 i_271_fu_42 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -135,30 +131,30 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln13_fu_83_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_fu_38 <= add_ln13_fu_89_p2;
+        if (((icmp_ln13_fu_81_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_271_fu_42 <= add_ln13_fu_87_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_38 <= 4'd0;
+            i_271_fu_42 <= 4'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_396_reg_142 <= ap_sig_allocacmp_i_396;
+        i_reg_126 <= ap_sig_allocacmp_i;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        R_Z_ce0_local = 1'b1;
+        B_gen_1_ce0_local = 1'b1;
     end else begin
-        R_Z_ce0_local = 1'b0;
+        B_gen_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln13_fu_83_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln13_fu_81_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -199,25 +195,25 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_396 = 4'd0;
+        ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_396 = i_fu_38;
+        ap_sig_allocacmp_i = i_271_fu_42;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        pts_Z_ce0_local = 1'b1;
+        phiP_X_1_ce0_local = 1'b1;
     end else begin
-        pts_Z_ce0_local = 1'b0;
+        phiP_X_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        pts_Z_we0_local = 1'b1;
+        phiP_X_1_we0_local = 1'b1;
     end else begin
-        pts_Z_we0_local = 1'b0;
+        phiP_X_1_we0_local = 1'b0;
     end
 end
 
@@ -232,13 +228,11 @@ always @ (*) begin
     endcase
 end
 
-assign R_Z_address0 = zext_ln14_21_fu_107_p1;
+assign B_gen_1_address0 = zext_ln14_fu_105_p1;
 
-assign R_Z_ce0 = R_Z_ce0_local;
+assign B_gen_1_ce0 = B_gen_1_ce0_local;
 
-assign add_ln13_fu_89_p2 = (ap_sig_allocacmp_i_396 + 4'd1);
-
-assign add_ln14_fu_120_p2 = (zext_ln14_20 + zext_ln14_fu_117_p1);
+assign add_ln13_fu_87_p2 = (ap_sig_allocacmp_i + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -258,24 +252,22 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln13_fu_83_p2 = ((ap_sig_allocacmp_i_396 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln13_fu_81_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign pts_Z_address0 = zext_ln14_19_fu_125_p1;
+assign phiP_X_1_address0 = zext_ln13_fu_115_p1;
 
-assign pts_Z_ce0 = pts_Z_ce0_local;
+assign phiP_X_1_ce0 = phiP_X_1_ce0_local;
 
-assign pts_Z_d0 = R_Z_q0;
+assign phiP_X_1_d0 = B_gen_1_q0;
 
-assign pts_Z_we0 = pts_Z_we0_local;
+assign phiP_X_1_we0 = phiP_X_1_we0_local;
 
-assign trunc_ln14_fu_95_p1 = ap_sig_allocacmp_i_396[2:0];
+assign trunc_ln14_fu_93_p1 = ap_sig_allocacmp_i[2:0];
 
-assign zext_ln14_19_fu_125_p1 = add_ln14_fu_120_p2;
+assign zext_ln13_fu_115_p1 = i_reg_126;
 
-assign zext_ln14_21_fu_107_p1 = zext_ln14_s_fu_99_p3;
+assign zext_ln14_cast_fu_97_p3 = {{1'd1}, {trunc_ln14_fu_93_p1}};
 
-assign zext_ln14_fu_117_p1 = i_396_reg_142;
-
-assign zext_ln14_s_fu_99_p3 = {{1'd1}, {trunc_ln14_fu_95_p1}};
+assign zext_ln14_fu_105_p1 = zext_ln14_cast_fu_97_p3;
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1232

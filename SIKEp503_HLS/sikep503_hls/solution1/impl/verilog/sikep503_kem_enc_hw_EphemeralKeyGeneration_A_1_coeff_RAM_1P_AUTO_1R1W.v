@@ -13,8 +13,8 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_coeff_RAM_1P_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 64;
-parameter AddressWidth = 3;
-parameter AddressRange = 6;
+parameter AddressWidth = 6;
+parameter AddressRange = 48;
  
 input[AddressWidth-1:0] address0;
 input ce0;

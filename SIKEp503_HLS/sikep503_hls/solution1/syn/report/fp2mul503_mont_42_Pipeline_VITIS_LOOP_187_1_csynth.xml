@@ -22,22 +22,22 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>18</Best-caseLatency>
-<Average-caseLatency>18</Average-caseLatency>
-<Worst-caseLatency>18</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.180 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.180 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.180 us</Worst-caseRealTimeLatency>
-<Interval-min>17</Interval-min>
-<Interval-max>17</Interval-max>
+<Best-caseLatency>10</Best-caseLatency>
+<Average-caseLatency>10</Average-caseLatency>
+<Worst-caseLatency>10</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+<Interval-min>9</Interval-min>
+<Interval-max>9</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_187_1>
 <Slack>7.30</Slack>
 <TripCount>8</TripCount>
-<Latency>16</Latency>
-<AbsoluteTimeLatency>160</AbsoluteTimeLatency>
-<PipelineII>2</PipelineII>
+<Latency>8</Latency>
+<AbsoluteTimeLatency>80</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
 <PipelineDepth>2</PipelineDepth>
 <InstanceList>
 </InstanceList>
@@ -50,8 +50,8 @@
 <SummaryOfLoopViolations>
 <VITIS_LOOP_187_1>
 <Name>VITIS_LOOP_187_1</Name>
-<IssueType>II Violation</IssueType>
-<ViolationType>Resource Limitation</ViolationType>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
 <SourceLocation>src/fpx.cpp:187</SourceLocation>
 </VITIS_LOOP_187_1>
 </SummaryOfLoopViolations>
@@ -61,8 +61,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>139</FF>
-<LUT>747</LUT>
+<FF>140</FF>
+<LUT>732</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
@@ -187,7 +187,29 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>tt3_q0</name>
+<name>tt3_address1</name>
+<Object>tt3</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>4</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>tt3_ce1</name>
+<Object>tt3</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>tt3_q1</name>
 <Object>tt3</Object>
 <Type>array</Type>
 <Scope></Scope>

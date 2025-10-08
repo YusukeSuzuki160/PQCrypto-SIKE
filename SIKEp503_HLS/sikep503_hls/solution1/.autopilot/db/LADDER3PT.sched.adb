@@ -8059,7 +8059,7 @@
 					<Obj>
 						<type>0</type>
 						<id>191</id>
-						<name>i_278</name>
+						<name>i_268</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>319</lineNumber>
@@ -13323,7 +13323,7 @@
 					<Obj>
 						<type>2</type>
 						<id>766</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1179</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1192</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13347,14 +13347,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1179&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1192&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_265">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>769</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1180</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1193</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13378,14 +13378,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1180&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1193&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_266">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>772</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1181</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1194</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13409,14 +13409,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1181&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1194&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_267">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>775</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1182</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1195</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13440,14 +13440,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1182&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1195&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_268">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>778</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1183</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1196</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13471,14 +13471,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1183&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1196&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_269">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>781</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1184</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1197</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13502,14 +13502,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1184&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1197&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_270">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>784</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1185</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1198</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13533,14 +13533,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1185&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1198&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_271">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>787</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1186</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1199</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13564,14 +13564,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1186&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1199&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_272">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>790</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1187</name>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1200</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -13595,7 +13595,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1187&gt;</content>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1200&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_273">
 				<Value>
@@ -14191,7 +14191,7 @@
 					<Obj>
 						<type>2</type>
 						<id>957</id>
-						<name>fpadd503_238_1</name>
+						<name>fpadd503_245_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14215,14 +14215,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.238.1&gt;</content>
+				<content>&lt;constant:fpadd503.245.1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_293">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>964</id>
-						<name>fp2mul503_mont_122_3</name>
+						<name>fp2mul503_mont_126_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14246,14 +14246,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.122.3&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.126.3&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_294">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>975</id>
-						<name>fp2mul503_mont_121</name>
+						<name>fp2mul503_mont_125</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14277,7 +14277,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.121&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.125&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_295">
 				<Value>
@@ -14315,7 +14315,7 @@
 					<Obj>
 						<type>2</type>
 						<id>995</id>
-						<name>fp2mul503_mont_6</name>
+						<name>fp2mul503_mont_7</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14339,7 +14339,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.6&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.7&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_297">
 				<Value>
@@ -14377,7 +14377,7 @@
 					<Obj>
 						<type>2</type>
 						<id>1014</id>
-						<name>fpadd503_238</name>
+						<name>fpadd503_245</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14401,7 +14401,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.238&gt;</content>
+				<content>&lt;constant:fpadd503.245&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_299">
 				<Value>
@@ -14439,7 +14439,7 @@
 					<Obj>
 						<type>2</type>
 						<id>1030</id>
-						<name>fp2mul503_mont_120</name>
+						<name>fp2mul503_mont_124</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14463,7 +14463,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.120&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.124&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_301">
 				<Value>
@@ -14501,7 +14501,7 @@
 					<Obj>
 						<type>2</type>
 						<id>1043</id>
-						<name>fp2mul503_mont_43</name>
+						<name>fp2mul503_mont_46</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14525,7 +14525,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.43&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.46&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -20881,8 +20881,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-1</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>1166357</mMinLatency>
+			<mMaxLatency>2012357</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -20928,8 +20928,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>250</mMinTripCount>
 			<mMaxTripCount>250</mMaxTripCount>
-			<mMinLatency>-1</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>1166000</mMinLatency>
+			<mMaxLatency>2012000</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

@@ -164,10 +164,10 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>_ln295</name>
+              <name>_ln296</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>295</lineNumber>
+              <lineNumber>296</lineNumber>
               <contextFuncName>mp_mul</contextFuncName>
               <contextNormFuncName>mp_mul</contextNormFuncName>
               <inlineStackInfo>
@@ -183,13 +183,13 @@
                         <first>src/generic/fp_generic.cpp</first>
                         <second>mp_mul</second>
                       </first>
-                      <second>295</second>
+                      <second>296</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_mul_14_fu_18</rtlName>
+              <rtlName>grp_mul_14_fu_20</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -224,10 +224,10 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>_ln296</name>
+              <name>_ln297</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>296</lineNumber>
+              <lineNumber>297</lineNumber>
               <contextFuncName>mp_mul</contextFuncName>
               <contextNormFuncName>mp_mul</contextNormFuncName>
               <inlineStackInfo>
@@ -243,7 +243,7 @@
                         <first>src/generic/fp_generic.cpp</first>
                         <second>mp_mul</second>
                       </first>
-                      <second>296</second>
+                      <second>297</second>
                     </item>
                   </second>
                 </item>
@@ -407,8 +407,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>33</mMinLatency>
-        <mMaxLatency>33</mMaxLatency>
+        <mMinLatency>133</mMinLatency>
+        <mMaxLatency>245</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -492,21 +492,21 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_mul_14_fu_18 (mul_14)</first>
+          <first>grp_mul_14_fu_20 (mul_14)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>900</second>
+              <second>16</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2445</second>
+              <second>422</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>6105</second>
+              <second>794</second>
             </item>
           </second>
         </item>
@@ -577,7 +577,7 @@
           </second>
         </item>
         <item>
-          <first>grp_mul_14_fu_18_ap_start_reg</first>
+          <first>grp_mul_14_fu_20_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -600,7 +600,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_mul_14_fu_18</first>
+          <first>grp_mul_14_fu_20</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -611,7 +611,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_mul_14_fu_18 (mul_14)</first>
+          <first>grp_mul_14_fu_20 (mul_14)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -669,7 +669,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="49" tracking_level="0" version="0">
-        <first>18</first>
+        <first>20</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -686,7 +686,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>grp_mul_14_fu_18</first>
+        <first>grp_mul_14_fu_20</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_42_Pipeline_VITIS_LOOP_160_1'" level="0">
-<item name = "Date">Tue Sep 23 15:47:23 2025
+<item name = "Date">Wed Oct  8 20:39:48 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -85,14 +85,14 @@
 <column name="sub_ln95_fu_183_p2">-, 0, 0, 71, 1, 64</column>
 <column name="tempReg_fu_145_p2">-, 0, 0, 71, 64, 64</column>
 <column name="and_ln163_fu_209_p2">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_235">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_236">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln160_fu_122_p2">icmp, 0, 0, 13, 5, 6</column>
 <column name="borrowReg_fu_215_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln105_fu_163_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln95_fu_189_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_79_fu_157_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_80_fu_169_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_89_fu_157_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_90_fu_169_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln105_fu_151_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln163_fu_203_p2">xor, 0, 0, 2, 1, 2</column>
 </table>

@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="sikep503_kem_enc_hw_sikep503_kem_enc_hw,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu29p-fsga2577-2L-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=10,HLS_SYN_DSP=0,HLS_SYN_FF=322567,HLS_SYN_LUT=1261988,HLS_VERSION=2024_2_2}" *)
+(* CORE_GENERATION_INFO="sikep503_kem_enc_hw_sikep503_kem_enc_hw,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu29p-fsga2577-2L-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=10,HLS_SYN_DSP=0,HLS_SYN_FF=336852,HLS_SYN_LUT=1193368,HLS_VERSION=2024_2_2}" *)
 
 module sikep503_kem_enc_hw (
         ap_clk,
@@ -556,30 +556,30 @@ wire    grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_3_we0;
 wire   [7:0] grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_3_d0;
 wire   [6:0] grp_EphemeralSecretAgreement_A_1_fu_295_strat_Alice_1_address0;
 wire    grp_EphemeralSecretAgreement_A_1_fu_295_strat_Alice_1_ce0;
-wire    grp_cshake256_simple_17_fu_323_ap_start;
-wire    grp_cshake256_simple_17_fu_323_ap_done;
-wire    grp_cshake256_simple_17_fu_323_ap_idle;
-wire    grp_cshake256_simple_17_fu_323_ap_ready;
-wire   [4:0] grp_cshake256_simple_17_fu_323_output_r_address0;
-wire    grp_cshake256_simple_17_fu_323_output_r_ce0;
-wire    grp_cshake256_simple_17_fu_323_output_r_we0;
-wire   [7:0] grp_cshake256_simple_17_fu_323_output_r_d0;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_0_address0;
-wire    grp_cshake256_simple_17_fu_323_in_0_ce0;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_0_address1;
-wire    grp_cshake256_simple_17_fu_323_in_0_ce1;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_1_address0;
-wire    grp_cshake256_simple_17_fu_323_in_1_ce0;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_1_address1;
-wire    grp_cshake256_simple_17_fu_323_in_1_ce1;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_2_address0;
-wire    grp_cshake256_simple_17_fu_323_in_2_ce0;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_2_address1;
-wire    grp_cshake256_simple_17_fu_323_in_2_ce1;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_3_address0;
-wire    grp_cshake256_simple_17_fu_323_in_3_ce0;
-wire   [4:0] grp_cshake256_simple_17_fu_323_in_3_address1;
-wire    grp_cshake256_simple_17_fu_323_in_3_ce1;
+wire    grp_cshake256_simple_20_fu_323_ap_start;
+wire    grp_cshake256_simple_20_fu_323_ap_done;
+wire    grp_cshake256_simple_20_fu_323_ap_idle;
+wire    grp_cshake256_simple_20_fu_323_ap_ready;
+wire   [4:0] grp_cshake256_simple_20_fu_323_output_r_address0;
+wire    grp_cshake256_simple_20_fu_323_output_r_ce0;
+wire    grp_cshake256_simple_20_fu_323_output_r_we0;
+wire   [7:0] grp_cshake256_simple_20_fu_323_output_r_d0;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_0_address0;
+wire    grp_cshake256_simple_20_fu_323_in_0_ce0;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_0_address1;
+wire    grp_cshake256_simple_20_fu_323_in_0_ce1;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_1_address0;
+wire    grp_cshake256_simple_20_fu_323_in_1_ce0;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_1_address1;
+wire    grp_cshake256_simple_20_fu_323_in_1_ce1;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_2_address0;
+wire    grp_cshake256_simple_20_fu_323_in_2_ce0;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_2_address1;
+wire    grp_cshake256_simple_20_fu_323_in_2_ce1;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_3_address0;
+wire    grp_cshake256_simple_20_fu_323_in_3_ce0;
+wire   [4:0] grp_cshake256_simple_20_fu_323_in_3_address1;
+wire    grp_cshake256_simple_20_fu_323_in_3_ce1;
 wire    grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_ap_start;
 wire    grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_ap_done;
 wire    grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_ap_idle;
@@ -678,58 +678,58 @@ wire   [6:0] grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_address0;
 wire    grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_ce0;
 wire    grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_we0;
 wire   [7:0] grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_d0;
-wire    grp_cshake256_simple_18_fu_357_ap_start;
-wire    grp_cshake256_simple_18_fu_357_ap_done;
-wire    grp_cshake256_simple_18_fu_357_ap_idle;
-wire    grp_cshake256_simple_18_fu_357_ap_ready;
-wire    grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWVALID;
-wire   [63:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWADDR;
-wire   [0:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWID;
-wire   [31:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWLEN;
-wire   [2:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWSIZE;
-wire   [1:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWBURST;
-wire   [1:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWLOCK;
-wire   [3:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWCACHE;
-wire   [2:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWPROT;
-wire   [3:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWQOS;
-wire   [3:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWREGION;
-wire   [0:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWUSER;
-wire    grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WVALID;
-wire   [7:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WDATA;
-wire   [0:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WSTRB;
-wire    grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WLAST;
-wire   [0:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WID;
-wire   [0:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WUSER;
-wire    grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARVALID;
-wire   [63:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARADDR;
-wire   [0:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARID;
-wire   [31:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARLEN;
-wire   [2:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARSIZE;
-wire   [1:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARBURST;
-wire   [1:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARLOCK;
-wire   [3:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARCACHE;
-wire   [2:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARPROT;
-wire   [3:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARQOS;
-wire   [3:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARREGION;
-wire   [0:0] grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARUSER;
-wire    grp_cshake256_simple_18_fu_357_m_axi_gmem_0_RREADY;
-wire    grp_cshake256_simple_18_fu_357_m_axi_gmem_0_BREADY;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_0_address0;
-wire    grp_cshake256_simple_18_fu_357_in_0_ce0;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_0_address1;
-wire    grp_cshake256_simple_18_fu_357_in_0_ce1;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_1_address0;
-wire    grp_cshake256_simple_18_fu_357_in_1_ce0;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_1_address1;
-wire    grp_cshake256_simple_18_fu_357_in_1_ce1;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_2_address0;
-wire    grp_cshake256_simple_18_fu_357_in_2_ce0;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_2_address1;
-wire    grp_cshake256_simple_18_fu_357_in_2_ce1;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_3_address0;
-wire    grp_cshake256_simple_18_fu_357_in_3_ce0;
-wire   [6:0] grp_cshake256_simple_18_fu_357_in_3_address1;
-wire    grp_cshake256_simple_18_fu_357_in_3_ce1;
+wire    grp_cshake256_simple_21_fu_357_ap_start;
+wire    grp_cshake256_simple_21_fu_357_ap_done;
+wire    grp_cshake256_simple_21_fu_357_ap_idle;
+wire    grp_cshake256_simple_21_fu_357_ap_ready;
+wire    grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWVALID;
+wire   [63:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWADDR;
+wire   [0:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWID;
+wire   [31:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWLEN;
+wire   [2:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWSIZE;
+wire   [1:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWBURST;
+wire   [1:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWLOCK;
+wire   [3:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWCACHE;
+wire   [2:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWPROT;
+wire   [3:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWQOS;
+wire   [3:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWREGION;
+wire   [0:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWUSER;
+wire    grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WVALID;
+wire   [7:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WDATA;
+wire   [0:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WSTRB;
+wire    grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WLAST;
+wire   [0:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WID;
+wire   [0:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WUSER;
+wire    grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARVALID;
+wire   [63:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARADDR;
+wire   [0:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARID;
+wire   [31:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARLEN;
+wire   [2:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARSIZE;
+wire   [1:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARBURST;
+wire   [1:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARLOCK;
+wire   [3:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARCACHE;
+wire   [2:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARPROT;
+wire   [3:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARQOS;
+wire   [3:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARREGION;
+wire   [0:0] grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARUSER;
+wire    grp_cshake256_simple_21_fu_357_m_axi_gmem_0_RREADY;
+wire    grp_cshake256_simple_21_fu_357_m_axi_gmem_0_BREADY;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_0_address0;
+wire    grp_cshake256_simple_21_fu_357_in_0_ce0;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_0_address1;
+wire    grp_cshake256_simple_21_fu_357_in_0_ce1;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_1_address0;
+wire    grp_cshake256_simple_21_fu_357_in_1_ce0;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_1_address1;
+wire    grp_cshake256_simple_21_fu_357_in_1_ce1;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_2_address0;
+wire    grp_cshake256_simple_21_fu_357_in_2_ce0;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_2_address1;
+wire    grp_cshake256_simple_21_fu_357_in_2_ce1;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_3_address0;
+wire    grp_cshake256_simple_21_fu_357_in_3_ce0;
+wire   [6:0] grp_cshake256_simple_21_fu_357_in_3_address1;
+wire    grp_cshake256_simple_21_fu_357_in_3_ce1;
 reg    gmem_0_AWVALID;
 wire    gmem_0_AWREADY;
 reg   [63:0] gmem_0_AWADDR;
@@ -765,14 +765,14 @@ wire    ap_CS_fsm_state20;
 reg    grp_EphemeralSecretAgreement_A_1_fu_295_ap_start_reg;
 wire    ap_CS_fsm_state21;
 wire    ap_CS_fsm_state22;
-reg    grp_cshake256_simple_17_fu_323_ap_start_reg;
+reg    grp_cshake256_simple_20_fu_323_ap_start_reg;
 reg    grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_ap_start_reg;
 wire    ap_CS_fsm_state25;
 wire    ap_CS_fsm_state26;
 reg    grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_ap_start_reg;
 wire    ap_CS_fsm_state40;
 wire    ap_CS_fsm_state41;
-reg    grp_cshake256_simple_18_fu_357_ap_start_reg;
+reg    grp_cshake256_simple_21_fu_357_ap_start_reg;
 wire    ap_CS_fsm_state42;
 wire    ap_CS_fsm_state43;
 reg    ephemeralsk_i_ce0_local;
@@ -836,10 +836,10 @@ initial begin
 #0 grp_cshake256_simple_fu_250_ap_start_reg = 1'b0;
 #0 grp_EphemeralKeyGeneration_A_1_fu_261_ap_start_reg = 1'b0;
 #0 grp_EphemeralSecretAgreement_A_1_fu_295_ap_start_reg = 1'b0;
-#0 grp_cshake256_simple_17_fu_323_ap_start_reg = 1'b0;
+#0 grp_cshake256_simple_20_fu_323_ap_start_reg = 1'b0;
 #0 grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_ap_start_reg = 1'b0;
 #0 grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_ap_start_reg = 1'b0;
-#0 grp_cshake256_simple_18_fu_357_ap_start_reg = 1'b0;
+#0 grp_cshake256_simple_21_fu_357_ap_start_reg = 1'b0;
 end
 
 sikep503_kem_enc_hw_strat_Alice_1_ROM_AUTO_1R #(
@@ -883,7 +883,7 @@ jinvariant_U(
     .we0(jinvariant_we0),
     .d0(grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_0_d0),
     .q0(jinvariant_q0),
-    .address1(grp_cshake256_simple_17_fu_323_in_0_address1),
+    .address1(grp_cshake256_simple_20_fu_323_in_0_address1),
     .ce1(jinvariant_ce1),
     .q1(jinvariant_q1)
 );
@@ -900,7 +900,7 @@ jinvariant_1_U(
     .we0(jinvariant_1_we0),
     .d0(grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_1_d0),
     .q0(jinvariant_1_q0),
-    .address1(grp_cshake256_simple_17_fu_323_in_1_address1),
+    .address1(grp_cshake256_simple_20_fu_323_in_1_address1),
     .ce1(jinvariant_1_ce1),
     .q1(jinvariant_1_q1)
 );
@@ -917,7 +917,7 @@ jinvariant_2_U(
     .we0(jinvariant_2_we0),
     .d0(grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_2_d0),
     .q0(jinvariant_2_q0),
-    .address1(grp_cshake256_simple_17_fu_323_in_2_address1),
+    .address1(grp_cshake256_simple_20_fu_323_in_2_address1),
     .ce1(jinvariant_2_ce1),
     .q1(jinvariant_2_q1)
 );
@@ -934,7 +934,7 @@ jinvariant_3_U(
     .we0(jinvariant_3_we0),
     .d0(grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_3_d0),
     .q0(jinvariant_3_q0),
-    .address1(grp_cshake256_simple_17_fu_323_in_3_address1),
+    .address1(grp_cshake256_simple_20_fu_323_in_3_address1),
     .ce1(jinvariant_3_ce1),
     .q1(jinvariant_3_q1)
 );
@@ -949,7 +949,7 @@ h_U(
     .address0(h_address0),
     .ce0(h_ce0),
     .we0(h_we0),
-    .d0(grp_cshake256_simple_17_fu_323_output_r_d0),
+    .d0(grp_cshake256_simple_20_fu_323_output_r_d0),
     .q0(h_q0)
 );
 
@@ -1326,40 +1326,40 @@ sikep503_kem_enc_hw_EphemeralSecretAgreement_A_1 grp_EphemeralSecretAgreement_A_
     .strat_Alice_1_q0(strat_Alice_1_q0)
 );
 
-sikep503_kem_enc_hw_cshake256_simple_17 grp_cshake256_simple_17_fu_323(
+sikep503_kem_enc_hw_cshake256_simple_20 grp_cshake256_simple_20_fu_323(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_cshake256_simple_17_fu_323_ap_start),
-    .ap_done(grp_cshake256_simple_17_fu_323_ap_done),
-    .ap_idle(grp_cshake256_simple_17_fu_323_ap_idle),
-    .ap_ready(grp_cshake256_simple_17_fu_323_ap_ready),
-    .output_r_address0(grp_cshake256_simple_17_fu_323_output_r_address0),
-    .output_r_ce0(grp_cshake256_simple_17_fu_323_output_r_ce0),
-    .output_r_we0(grp_cshake256_simple_17_fu_323_output_r_we0),
-    .output_r_d0(grp_cshake256_simple_17_fu_323_output_r_d0),
-    .in_0_address0(grp_cshake256_simple_17_fu_323_in_0_address0),
-    .in_0_ce0(grp_cshake256_simple_17_fu_323_in_0_ce0),
+    .ap_start(grp_cshake256_simple_20_fu_323_ap_start),
+    .ap_done(grp_cshake256_simple_20_fu_323_ap_done),
+    .ap_idle(grp_cshake256_simple_20_fu_323_ap_idle),
+    .ap_ready(grp_cshake256_simple_20_fu_323_ap_ready),
+    .output_r_address0(grp_cshake256_simple_20_fu_323_output_r_address0),
+    .output_r_ce0(grp_cshake256_simple_20_fu_323_output_r_ce0),
+    .output_r_we0(grp_cshake256_simple_20_fu_323_output_r_we0),
+    .output_r_d0(grp_cshake256_simple_20_fu_323_output_r_d0),
+    .in_0_address0(grp_cshake256_simple_20_fu_323_in_0_address0),
+    .in_0_ce0(grp_cshake256_simple_20_fu_323_in_0_ce0),
     .in_0_q0(jinvariant_q0),
-    .in_0_address1(grp_cshake256_simple_17_fu_323_in_0_address1),
-    .in_0_ce1(grp_cshake256_simple_17_fu_323_in_0_ce1),
+    .in_0_address1(grp_cshake256_simple_20_fu_323_in_0_address1),
+    .in_0_ce1(grp_cshake256_simple_20_fu_323_in_0_ce1),
     .in_0_q1(jinvariant_q1),
-    .in_1_address0(grp_cshake256_simple_17_fu_323_in_1_address0),
-    .in_1_ce0(grp_cshake256_simple_17_fu_323_in_1_ce0),
+    .in_1_address0(grp_cshake256_simple_20_fu_323_in_1_address0),
+    .in_1_ce0(grp_cshake256_simple_20_fu_323_in_1_ce0),
     .in_1_q0(jinvariant_1_q0),
-    .in_1_address1(grp_cshake256_simple_17_fu_323_in_1_address1),
-    .in_1_ce1(grp_cshake256_simple_17_fu_323_in_1_ce1),
+    .in_1_address1(grp_cshake256_simple_20_fu_323_in_1_address1),
+    .in_1_ce1(grp_cshake256_simple_20_fu_323_in_1_ce1),
     .in_1_q1(jinvariant_1_q1),
-    .in_2_address0(grp_cshake256_simple_17_fu_323_in_2_address0),
-    .in_2_ce0(grp_cshake256_simple_17_fu_323_in_2_ce0),
+    .in_2_address0(grp_cshake256_simple_20_fu_323_in_2_address0),
+    .in_2_ce0(grp_cshake256_simple_20_fu_323_in_2_ce0),
     .in_2_q0(jinvariant_2_q0),
-    .in_2_address1(grp_cshake256_simple_17_fu_323_in_2_address1),
-    .in_2_ce1(grp_cshake256_simple_17_fu_323_in_2_ce1),
+    .in_2_address1(grp_cshake256_simple_20_fu_323_in_2_address1),
+    .in_2_ce1(grp_cshake256_simple_20_fu_323_in_2_ce1),
     .in_2_q1(jinvariant_2_q1),
-    .in_3_address0(grp_cshake256_simple_17_fu_323_in_3_address0),
-    .in_3_ce0(grp_cshake256_simple_17_fu_323_in_3_ce0),
+    .in_3_address0(grp_cshake256_simple_20_fu_323_in_3_address0),
+    .in_3_ce0(grp_cshake256_simple_20_fu_323_in_3_ce0),
     .in_3_q0(jinvariant_3_q0),
-    .in_3_address1(grp_cshake256_simple_17_fu_323_in_3_address1),
-    .in_3_ce1(grp_cshake256_simple_17_fu_323_in_3_ce1),
+    .in_3_address1(grp_cshake256_simple_20_fu_323_in_3_address1),
+    .in_3_ce1(grp_cshake256_simple_20_fu_323_in_3_ce1),
     .in_3_q1(jinvariant_3_q1)
 );
 
@@ -1506,48 +1506,48 @@ sikep503_kem_enc_hw_sikep503_kem_enc_hw_Pipeline_5 grp_sikep503_kem_enc_hw_Pipel
     .temp_d0(grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_d0)
 );
 
-sikep503_kem_enc_hw_cshake256_simple_18 grp_cshake256_simple_18_fu_357(
+sikep503_kem_enc_hw_cshake256_simple_21 grp_cshake256_simple_21_fu_357(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_cshake256_simple_18_fu_357_ap_start),
-    .ap_done(grp_cshake256_simple_18_fu_357_ap_done),
-    .ap_idle(grp_cshake256_simple_18_fu_357_ap_idle),
-    .ap_ready(grp_cshake256_simple_18_fu_357_ap_ready),
-    .m_axi_gmem_0_AWVALID(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWVALID),
+    .ap_start(grp_cshake256_simple_21_fu_357_ap_start),
+    .ap_done(grp_cshake256_simple_21_fu_357_ap_done),
+    .ap_idle(grp_cshake256_simple_21_fu_357_ap_idle),
+    .ap_ready(grp_cshake256_simple_21_fu_357_ap_ready),
+    .m_axi_gmem_0_AWVALID(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWVALID),
     .m_axi_gmem_0_AWREADY(gmem_0_AWREADY),
-    .m_axi_gmem_0_AWADDR(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWADDR),
-    .m_axi_gmem_0_AWID(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWID),
-    .m_axi_gmem_0_AWLEN(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWLEN),
-    .m_axi_gmem_0_AWSIZE(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWSIZE),
-    .m_axi_gmem_0_AWBURST(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWBURST),
-    .m_axi_gmem_0_AWLOCK(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWLOCK),
-    .m_axi_gmem_0_AWCACHE(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWCACHE),
-    .m_axi_gmem_0_AWPROT(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWPROT),
-    .m_axi_gmem_0_AWQOS(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWQOS),
-    .m_axi_gmem_0_AWREGION(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWREGION),
-    .m_axi_gmem_0_AWUSER(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWUSER),
-    .m_axi_gmem_0_WVALID(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WVALID),
+    .m_axi_gmem_0_AWADDR(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWADDR),
+    .m_axi_gmem_0_AWID(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWID),
+    .m_axi_gmem_0_AWLEN(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWLEN),
+    .m_axi_gmem_0_AWSIZE(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWSIZE),
+    .m_axi_gmem_0_AWBURST(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWBURST),
+    .m_axi_gmem_0_AWLOCK(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWLOCK),
+    .m_axi_gmem_0_AWCACHE(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWCACHE),
+    .m_axi_gmem_0_AWPROT(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWPROT),
+    .m_axi_gmem_0_AWQOS(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWQOS),
+    .m_axi_gmem_0_AWREGION(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWREGION),
+    .m_axi_gmem_0_AWUSER(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWUSER),
+    .m_axi_gmem_0_WVALID(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WVALID),
     .m_axi_gmem_0_WREADY(gmem_0_WREADY),
-    .m_axi_gmem_0_WDATA(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WDATA),
-    .m_axi_gmem_0_WSTRB(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WSTRB),
-    .m_axi_gmem_0_WLAST(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WLAST),
-    .m_axi_gmem_0_WID(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WID),
-    .m_axi_gmem_0_WUSER(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WUSER),
-    .m_axi_gmem_0_ARVALID(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARVALID),
+    .m_axi_gmem_0_WDATA(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WDATA),
+    .m_axi_gmem_0_WSTRB(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WSTRB),
+    .m_axi_gmem_0_WLAST(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WLAST),
+    .m_axi_gmem_0_WID(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WID),
+    .m_axi_gmem_0_WUSER(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WUSER),
+    .m_axi_gmem_0_ARVALID(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARVALID),
     .m_axi_gmem_0_ARREADY(1'b0),
-    .m_axi_gmem_0_ARADDR(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARADDR),
-    .m_axi_gmem_0_ARID(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARID),
-    .m_axi_gmem_0_ARLEN(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARLEN),
-    .m_axi_gmem_0_ARSIZE(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARSIZE),
-    .m_axi_gmem_0_ARBURST(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARBURST),
-    .m_axi_gmem_0_ARLOCK(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARLOCK),
-    .m_axi_gmem_0_ARCACHE(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARCACHE),
-    .m_axi_gmem_0_ARPROT(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARPROT),
-    .m_axi_gmem_0_ARQOS(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARQOS),
-    .m_axi_gmem_0_ARREGION(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARREGION),
-    .m_axi_gmem_0_ARUSER(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_ARUSER),
+    .m_axi_gmem_0_ARADDR(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARADDR),
+    .m_axi_gmem_0_ARID(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARID),
+    .m_axi_gmem_0_ARLEN(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARLEN),
+    .m_axi_gmem_0_ARSIZE(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARSIZE),
+    .m_axi_gmem_0_ARBURST(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARBURST),
+    .m_axi_gmem_0_ARLOCK(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARLOCK),
+    .m_axi_gmem_0_ARCACHE(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARCACHE),
+    .m_axi_gmem_0_ARPROT(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARPROT),
+    .m_axi_gmem_0_ARQOS(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARQOS),
+    .m_axi_gmem_0_ARREGION(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARREGION),
+    .m_axi_gmem_0_ARUSER(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_ARUSER),
     .m_axi_gmem_0_RVALID(1'b0),
-    .m_axi_gmem_0_RREADY(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_RREADY),
+    .m_axi_gmem_0_RREADY(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_RREADY),
     .m_axi_gmem_0_RDATA(8'd0),
     .m_axi_gmem_0_RLAST(1'b0),
     .m_axi_gmem_0_RID(1'd0),
@@ -1555,34 +1555,34 @@ sikep503_kem_enc_hw_cshake256_simple_18 grp_cshake256_simple_18_fu_357(
     .m_axi_gmem_0_RUSER(1'd0),
     .m_axi_gmem_0_RRESP(2'd0),
     .m_axi_gmem_0_BVALID(gmem_0_BVALID),
-    .m_axi_gmem_0_BREADY(grp_cshake256_simple_18_fu_357_m_axi_gmem_0_BREADY),
+    .m_axi_gmem_0_BREADY(grp_cshake256_simple_21_fu_357_m_axi_gmem_0_BREADY),
     .m_axi_gmem_0_BRESP(2'd0),
     .m_axi_gmem_0_BID(1'd0),
     .m_axi_gmem_0_BUSER(1'd0),
     .output_r(ss_read_reg_402),
-    .in_0_address0(grp_cshake256_simple_18_fu_357_in_0_address0),
-    .in_0_ce0(grp_cshake256_simple_18_fu_357_in_0_ce0),
+    .in_0_address0(grp_cshake256_simple_21_fu_357_in_0_address0),
+    .in_0_ce0(grp_cshake256_simple_21_fu_357_in_0_ce0),
     .in_0_q0(temp_q0),
-    .in_0_address1(grp_cshake256_simple_18_fu_357_in_0_address1),
-    .in_0_ce1(grp_cshake256_simple_18_fu_357_in_0_ce1),
+    .in_0_address1(grp_cshake256_simple_21_fu_357_in_0_address1),
+    .in_0_ce1(grp_cshake256_simple_21_fu_357_in_0_ce1),
     .in_0_q1(temp_q1),
-    .in_1_address0(grp_cshake256_simple_18_fu_357_in_1_address0),
-    .in_1_ce0(grp_cshake256_simple_18_fu_357_in_1_ce0),
+    .in_1_address0(grp_cshake256_simple_21_fu_357_in_1_address0),
+    .in_1_ce0(grp_cshake256_simple_21_fu_357_in_1_ce0),
     .in_1_q0(temp_1_q0),
-    .in_1_address1(grp_cshake256_simple_18_fu_357_in_1_address1),
-    .in_1_ce1(grp_cshake256_simple_18_fu_357_in_1_ce1),
+    .in_1_address1(grp_cshake256_simple_21_fu_357_in_1_address1),
+    .in_1_ce1(grp_cshake256_simple_21_fu_357_in_1_ce1),
     .in_1_q1(temp_1_q1),
-    .in_2_address0(grp_cshake256_simple_18_fu_357_in_2_address0),
-    .in_2_ce0(grp_cshake256_simple_18_fu_357_in_2_ce0),
+    .in_2_address0(grp_cshake256_simple_21_fu_357_in_2_address0),
+    .in_2_ce0(grp_cshake256_simple_21_fu_357_in_2_ce0),
     .in_2_q0(temp_2_q0),
-    .in_2_address1(grp_cshake256_simple_18_fu_357_in_2_address1),
-    .in_2_ce1(grp_cshake256_simple_18_fu_357_in_2_ce1),
+    .in_2_address1(grp_cshake256_simple_21_fu_357_in_2_address1),
+    .in_2_ce1(grp_cshake256_simple_21_fu_357_in_2_ce1),
     .in_2_q1(temp_2_q1),
-    .in_3_address0(grp_cshake256_simple_18_fu_357_in_3_address0),
-    .in_3_ce0(grp_cshake256_simple_18_fu_357_in_3_ce0),
+    .in_3_address0(grp_cshake256_simple_21_fu_357_in_3_address0),
+    .in_3_ce0(grp_cshake256_simple_21_fu_357_in_3_ce0),
     .in_3_q0(temp_3_q0),
-    .in_3_address1(grp_cshake256_simple_18_fu_357_in_3_address1),
-    .in_3_ce1(grp_cshake256_simple_18_fu_357_in_3_ce1),
+    .in_3_address1(grp_cshake256_simple_21_fu_357_in_3_address1),
+    .in_3_ce1(grp_cshake256_simple_21_fu_357_in_3_ce1),
     .in_3_q1(temp_3_q1)
 );
 
@@ -1770,24 +1770,24 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_cshake256_simple_17_fu_323_ap_start_reg <= 1'b0;
+        grp_cshake256_simple_20_fu_323_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state23)) begin
-            grp_cshake256_simple_17_fu_323_ap_start_reg <= 1'b1;
-        end else if ((grp_cshake256_simple_17_fu_323_ap_ready == 1'b1)) begin
-            grp_cshake256_simple_17_fu_323_ap_start_reg <= 1'b0;
+            grp_cshake256_simple_20_fu_323_ap_start_reg <= 1'b1;
+        end else if ((grp_cshake256_simple_20_fu_323_ap_ready == 1'b1)) begin
+            grp_cshake256_simple_20_fu_323_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_cshake256_simple_18_fu_357_ap_start_reg <= 1'b0;
+        grp_cshake256_simple_21_fu_357_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state42)) begin
-            grp_cshake256_simple_18_fu_357_ap_start_reg <= 1'b1;
-        end else if ((grp_cshake256_simple_18_fu_357_ap_ready == 1'b1)) begin
-            grp_cshake256_simple_18_fu_357_ap_start_reg <= 1'b0;
+            grp_cshake256_simple_21_fu_357_ap_start_reg <= 1'b1;
+        end else if ((grp_cshake256_simple_21_fu_357_ap_ready == 1'b1)) begin
+            grp_cshake256_simple_21_fu_357_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -1939,7 +1939,7 @@ end
 assign ap_ST_fsm_state23_blk = 1'b0;
 
 always @ (*) begin
-    if (((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_17_fu_323_ap_done == 1'b0))) begin
+    if (((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_20_fu_323_ap_done == 1'b0))) begin
         ap_ST_fsm_state24_blk = 1'b1;
     end else begin
         ap_ST_fsm_state24_blk = 1'b0;
@@ -2017,7 +2017,7 @@ end
 assign ap_ST_fsm_state42_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_cshake256_simple_18_fu_357_ap_done == 1'b0)) begin
+    if ((grp_cshake256_simple_21_fu_357_ap_done == 1'b0)) begin
         ap_ST_fsm_state43_blk = 1'b1;
     end else begin
         ap_ST_fsm_state43_blk = 1'b0;
@@ -2049,7 +2049,7 @@ assign ap_ST_fsm_state8_blk = 1'b0;
 assign ap_ST_fsm_state9_blk = 1'b0;
 
 always @ (*) begin
-    if (((grp_cshake256_simple_18_fu_357_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state43))) begin
+    if (((grp_cshake256_simple_21_fu_357_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state43))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -2065,7 +2065,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_cshake256_simple_18_fu_357_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state43))) begin
+    if (((grp_cshake256_simple_21_fu_357_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state43))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -2205,10 +2205,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_17_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
+    if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_20_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
         gmem_0_AWADDR = add_ln98_reg_432;
     end else if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42))) begin
-        gmem_0_AWADDR = grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWADDR;
+        gmem_0_AWADDR = grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWADDR;
     end else if (((1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
         gmem_0_AWADDR = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_m_axi_gmem_0_AWADDR;
     end else if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19))) begin
@@ -2219,10 +2219,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_17_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
+    if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_20_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
         gmem_0_AWLEN = 64'd24;
     end else if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42))) begin
-        gmem_0_AWLEN = grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWLEN;
+        gmem_0_AWLEN = grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWLEN;
     end else if (((1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
         gmem_0_AWLEN = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_m_axi_gmem_0_AWLEN;
     end else if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19))) begin
@@ -2233,10 +2233,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_17_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
+    if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_20_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
         gmem_0_AWVALID = 1'b1;
     end else if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42))) begin
-        gmem_0_AWVALID = grp_cshake256_simple_18_fu_357_m_axi_gmem_0_AWVALID;
+        gmem_0_AWVALID = grp_cshake256_simple_21_fu_357_m_axi_gmem_0_AWVALID;
     end else if (((1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
         gmem_0_AWVALID = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_m_axi_gmem_0_AWVALID;
     end else if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19))) begin
@@ -2250,7 +2250,7 @@ always @ (*) begin
     if (((gmem_0_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state31))) begin
         gmem_0_BREADY = 1'b1;
     end else if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42))) begin
-        gmem_0_BREADY = grp_cshake256_simple_18_fu_357_m_axi_gmem_0_BREADY;
+        gmem_0_BREADY = grp_cshake256_simple_21_fu_357_m_axi_gmem_0_BREADY;
     end else if (((1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
         gmem_0_BREADY = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_m_axi_gmem_0_BREADY;
     end else if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19))) begin
@@ -2274,7 +2274,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42))) begin
-        gmem_0_WDATA = grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WDATA;
+        gmem_0_WDATA = grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WDATA;
     end else if (((1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
         gmem_0_WDATA = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_m_axi_gmem_0_WDATA;
     end else if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19))) begin
@@ -2286,7 +2286,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42))) begin
-        gmem_0_WSTRB = grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WSTRB;
+        gmem_0_WSTRB = grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WSTRB;
     end else if (((1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
         gmem_0_WSTRB = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_m_axi_gmem_0_WSTRB;
     end else if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19))) begin
@@ -2298,7 +2298,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42))) begin
-        gmem_0_WVALID = grp_cshake256_simple_18_fu_357_m_axi_gmem_0_WVALID;
+        gmem_0_WVALID = grp_cshake256_simple_21_fu_357_m_axi_gmem_0_WVALID;
     end else if (((1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
         gmem_0_WVALID = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_m_axi_gmem_0_WVALID;
     end else if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19))) begin
@@ -2336,7 +2336,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state26)) begin
         h_address0 = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_h_address0;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        h_address0 = grp_cshake256_simple_17_fu_323_output_r_address0;
+        h_address0 = grp_cshake256_simple_20_fu_323_output_r_address0;
     end else begin
         h_address0 = 'bx;
     end
@@ -2346,7 +2346,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state26)) begin
         h_ce0 = grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334_h_ce0;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        h_ce0 = grp_cshake256_simple_17_fu_323_output_r_ce0;
+        h_ce0 = grp_cshake256_simple_20_fu_323_output_r_ce0;
     end else begin
         h_ce0 = 1'b0;
     end
@@ -2354,7 +2354,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        h_we0 = grp_cshake256_simple_17_fu_323_output_r_we0;
+        h_we0 = grp_cshake256_simple_20_fu_323_output_r_we0;
     end else begin
         h_we0 = 1'b0;
     end
@@ -2362,7 +2362,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_1_address0 = grp_cshake256_simple_17_fu_323_in_1_address0;
+        jinvariant_1_address0 = grp_cshake256_simple_20_fu_323_in_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_1_address0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_1_address0;
     end else begin
@@ -2372,7 +2372,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_1_ce0 = grp_cshake256_simple_17_fu_323_in_1_ce0;
+        jinvariant_1_ce0 = grp_cshake256_simple_20_fu_323_in_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_1_ce0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_1_ce0;
     end else begin
@@ -2382,7 +2382,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_1_ce1 = grp_cshake256_simple_17_fu_323_in_1_ce1;
+        jinvariant_1_ce1 = grp_cshake256_simple_20_fu_323_in_1_ce1;
     end else begin
         jinvariant_1_ce1 = 1'b0;
     end
@@ -2398,7 +2398,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_2_address0 = grp_cshake256_simple_17_fu_323_in_2_address0;
+        jinvariant_2_address0 = grp_cshake256_simple_20_fu_323_in_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_2_address0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_2_address0;
     end else begin
@@ -2408,7 +2408,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_2_ce0 = grp_cshake256_simple_17_fu_323_in_2_ce0;
+        jinvariant_2_ce0 = grp_cshake256_simple_20_fu_323_in_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_2_ce0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_2_ce0;
     end else begin
@@ -2418,7 +2418,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_2_ce1 = grp_cshake256_simple_17_fu_323_in_2_ce1;
+        jinvariant_2_ce1 = grp_cshake256_simple_20_fu_323_in_2_ce1;
     end else begin
         jinvariant_2_ce1 = 1'b0;
     end
@@ -2434,7 +2434,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_3_address0 = grp_cshake256_simple_17_fu_323_in_3_address0;
+        jinvariant_3_address0 = grp_cshake256_simple_20_fu_323_in_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_3_address0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_3_address0;
     end else begin
@@ -2444,7 +2444,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_3_ce0 = grp_cshake256_simple_17_fu_323_in_3_ce0;
+        jinvariant_3_ce0 = grp_cshake256_simple_20_fu_323_in_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_3_ce0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_3_ce0;
     end else begin
@@ -2454,7 +2454,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_3_ce1 = grp_cshake256_simple_17_fu_323_in_3_ce1;
+        jinvariant_3_ce1 = grp_cshake256_simple_20_fu_323_in_3_ce1;
     end else begin
         jinvariant_3_ce1 = 1'b0;
     end
@@ -2470,7 +2470,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_address0 = grp_cshake256_simple_17_fu_323_in_0_address0;
+        jinvariant_address0 = grp_cshake256_simple_20_fu_323_in_0_address0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_address0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_0_address0;
     end else begin
@@ -2480,7 +2480,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_ce0 = grp_cshake256_simple_17_fu_323_in_0_ce0;
+        jinvariant_ce0 = grp_cshake256_simple_20_fu_323_in_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
         jinvariant_ce0 = grp_EphemeralSecretAgreement_A_1_fu_295_SharedSecretA_0_ce0;
     end else begin
@@ -2490,7 +2490,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state24)) begin
-        jinvariant_ce1 = grp_cshake256_simple_17_fu_323_in_0_ce1;
+        jinvariant_ce1 = grp_cshake256_simple_20_fu_323_in_0_ce1;
     end else begin
         jinvariant_ce1 = 1'b0;
     end
@@ -2526,7 +2526,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_1_address0 = grp_cshake256_simple_18_fu_357_in_1_address0;
+        temp_1_address0 = grp_cshake256_simple_21_fu_357_in_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_1_address0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2546,7 +2546,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_1_address1 = grp_cshake256_simple_18_fu_357_in_1_address1;
+        temp_1_address1 = grp_cshake256_simple_21_fu_357_in_1_address1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_1_address1 = grp_cshake256_simple_fu_250_in_1_address1;
     end else begin
@@ -2556,7 +2556,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_1_ce0 = grp_cshake256_simple_18_fu_357_in_1_ce0;
+        temp_1_ce0 = grp_cshake256_simple_21_fu_357_in_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_1_ce0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2576,7 +2576,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_1_ce1 = grp_cshake256_simple_18_fu_357_in_1_ce1;
+        temp_1_ce1 = grp_cshake256_simple_21_fu_357_in_1_ce1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_1_ce1 = grp_cshake256_simple_fu_250_in_1_ce1;
     end else begin
@@ -2614,7 +2614,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_2_address0 = grp_cshake256_simple_18_fu_357_in_2_address0;
+        temp_2_address0 = grp_cshake256_simple_21_fu_357_in_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_2_address0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2634,7 +2634,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_2_address1 = grp_cshake256_simple_18_fu_357_in_2_address1;
+        temp_2_address1 = grp_cshake256_simple_21_fu_357_in_2_address1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_2_address1 = grp_cshake256_simple_fu_250_in_2_address1;
     end else begin
@@ -2644,7 +2644,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_2_ce0 = grp_cshake256_simple_18_fu_357_in_2_ce0;
+        temp_2_ce0 = grp_cshake256_simple_21_fu_357_in_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_2_ce0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2664,7 +2664,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_2_ce1 = grp_cshake256_simple_18_fu_357_in_2_ce1;
+        temp_2_ce1 = grp_cshake256_simple_21_fu_357_in_2_ce1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_2_ce1 = grp_cshake256_simple_fu_250_in_2_ce1;
     end else begin
@@ -2702,7 +2702,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_3_address0 = grp_cshake256_simple_18_fu_357_in_3_address0;
+        temp_3_address0 = grp_cshake256_simple_21_fu_357_in_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_3_address0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2722,7 +2722,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_3_address1 = grp_cshake256_simple_18_fu_357_in_3_address1;
+        temp_3_address1 = grp_cshake256_simple_21_fu_357_in_3_address1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_3_address1 = grp_cshake256_simple_fu_250_in_3_address1;
     end else begin
@@ -2732,7 +2732,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_3_ce0 = grp_cshake256_simple_18_fu_357_in_3_ce0;
+        temp_3_ce0 = grp_cshake256_simple_21_fu_357_in_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_3_ce0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2752,7 +2752,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_3_ce1 = grp_cshake256_simple_18_fu_357_in_3_ce1;
+        temp_3_ce1 = grp_cshake256_simple_21_fu_357_in_3_ce1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_3_ce1 = grp_cshake256_simple_fu_250_in_3_ce1;
     end else begin
@@ -2790,7 +2790,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_address0 = grp_cshake256_simple_18_fu_357_in_0_address0;
+        temp_address0 = grp_cshake256_simple_21_fu_357_in_0_address0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_address0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_address0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2810,7 +2810,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_address1 = grp_cshake256_simple_18_fu_357_in_0_address1;
+        temp_address1 = grp_cshake256_simple_21_fu_357_in_0_address1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_address1 = grp_cshake256_simple_fu_250_in_0_address1;
     end else begin
@@ -2820,7 +2820,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_ce0 = grp_cshake256_simple_18_fu_357_in_0_ce0;
+        temp_ce0 = grp_cshake256_simple_21_fu_357_in_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state41)) begin
         temp_ce0 = grp_sikep503_kem_enc_hw_Pipeline_5_fu_346_temp_ce0;
     end else if ((1'b1 == ap_CS_fsm_state26)) begin
@@ -2840,7 +2840,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state43)) begin
-        temp_ce1 = grp_cshake256_simple_18_fu_357_in_0_ce1;
+        temp_ce1 = grp_cshake256_simple_21_fu_357_in_0_ce1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         temp_ce1 = grp_cshake256_simple_fu_250_in_0_ce1;
     end else begin
@@ -2980,7 +2980,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state24;
         end
         ap_ST_fsm_state24 : begin
-            if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_17_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
+            if ((~((gmem_0_AWREADY == 1'b0) | (grp_cshake256_simple_20_fu_323_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state24))) begin
                 ap_NS_fsm = ap_ST_fsm_state25;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state24;
@@ -3057,7 +3057,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state43;
         end
         ap_ST_fsm_state43 : begin
-            if (((grp_cshake256_simple_18_fu_357_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state43))) begin
+            if (((grp_cshake256_simple_21_fu_357_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state43))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state43;
@@ -3133,9 +3133,9 @@ assign grp_EphemeralKeyGeneration_A_1_fu_261_ap_start = grp_EphemeralKeyGenerati
 
 assign grp_EphemeralSecretAgreement_A_1_fu_295_ap_start = grp_EphemeralSecretAgreement_A_1_fu_295_ap_start_reg;
 
-assign grp_cshake256_simple_17_fu_323_ap_start = grp_cshake256_simple_17_fu_323_ap_start_reg;
+assign grp_cshake256_simple_20_fu_323_ap_start = grp_cshake256_simple_20_fu_323_ap_start_reg;
 
-assign grp_cshake256_simple_18_fu_357_ap_start = grp_cshake256_simple_18_fu_357_ap_start_reg;
+assign grp_cshake256_simple_21_fu_357_ap_start = grp_cshake256_simple_21_fu_357_ap_start_reg;
 
 assign grp_cshake256_simple_fu_250_ap_start = grp_cshake256_simple_fu_250_ap_start_reg;
 

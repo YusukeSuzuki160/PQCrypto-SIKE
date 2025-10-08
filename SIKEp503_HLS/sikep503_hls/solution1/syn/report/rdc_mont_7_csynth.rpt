@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_7'
 ================================================================
-* Date:           Tue Sep 23 15:46:20 2025
+* Date:           Wed Oct  8 20:37:39 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -38,9 +38,9 @@
         |                                                 |                                      |  Latency (cycles) |  Latency (absolute)  |  Interval |                    Pipeline                    |
         |                     Instance                    |                Module                |   min   |   max   |    min    |    max   | min | max |                      Type                      |
         +-------------------------------------------------+--------------------------------------+---------+---------+-----------+----------+-----+-----+------------------------------------------------+
-        |grp_rdc_mont_7_Pipeline_VITIS_LOOP_305_1_fu_186  |rdc_mont_7_Pipeline_VITIS_LOOP_305_1  |       10|       10|   0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_rdc_mont_7_Pipeline_VITIS_LOOP_313_3_fu_192  |rdc_mont_7_Pipeline_VITIS_LOOP_313_3  |        2|       11|  20.000 ns|  0.110 us|    1|    8|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_rdc_mont_7_Pipeline_VITIS_LOOP_339_5_fu_208  |rdc_mont_7_Pipeline_VITIS_LOOP_339_5  |        5|       11|  50.000 ns|  0.110 us|    2|    8|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_rdc_mont_7_Pipeline_VITIS_LOOP_306_1_fu_186  |rdc_mont_7_Pipeline_VITIS_LOOP_306_1  |       10|       10|   0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_rdc_mont_7_Pipeline_VITIS_LOOP_314_3_fu_192  |rdc_mont_7_Pipeline_VITIS_LOOP_314_3  |        2|       11|  20.000 ns|  0.110 us|    1|    8|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_rdc_mont_7_Pipeline_VITIS_LOOP_340_5_fu_208  |rdc_mont_7_Pipeline_VITIS_LOOP_340_5  |        5|       11|  50.000 ns|  0.110 us|    2|    8|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------+--------------------------------------+---------+---------+-----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -48,8 +48,8 @@
         |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_311_2  |       40|      112|    5 ~ 14|          -|          -|     8|        no|
-        |- VITIS_LOOP_333_4  |       56|       98|    8 ~ 14|          -|          -|     7|        no|
+        |- VITIS_LOOP_312_2  |       40|      112|    5 ~ 14|          -|          -|     8|        no|
+        |- VITIS_LOOP_334_4  |       56|       98|    8 ~ 14|          -|          -|     7|        no|
         +--------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -86,9 +86,9 @@
     |                     Instance                    |                Module                | BRAM_18K| DSP|  FF |  LUT | URAM|
     +-------------------------------------------------+--------------------------------------+---------+----+-----+------+-----+
     |grp_digit_x_digit_fu_820                         |digit_x_digit                         |        0|  16|  132|   483|    0|
-    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_305_1_fu_186  |rdc_mont_7_Pipeline_VITIS_LOOP_305_1  |        0|   0|    6|    51|    0|
-    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_313_3_fu_192  |rdc_mont_7_Pipeline_VITIS_LOOP_313_3  |        0|   0|  525|  1102|    0|
-    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_339_5_fu_208  |rdc_mont_7_Pipeline_VITIS_LOOP_339_5  |        0|   0|  526|  1133|    0|
+    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_306_1_fu_186  |rdc_mont_7_Pipeline_VITIS_LOOP_306_1  |        0|   0|    6|    51|    0|
+    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_314_3_fu_192  |rdc_mont_7_Pipeline_VITIS_LOOP_314_3  |        0|   0|  525|  1102|    0|
+    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_340_5_fu_208  |rdc_mont_7_Pipeline_VITIS_LOOP_340_5  |        0|   0|  526|  1133|    0|
     +-------------------------------------------------+--------------------------------------+---------+----+-----+------+-----+
     |Total                                            |                                      |        0|  16| 1189|  2769|    0|
     +-------------------------------------------------+--------------------------------------+---------+----+-----+------+-----+
@@ -106,11 +106,11 @@
     +------------------------+----------+----+---+----+------------+------------+
     |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------+----------+----+---+----+------------+------------+
-    |add_ln311_fu_260_p2     |         +|   0|  0|  12|           4|           1|
-    |add_ln313_fu_276_p2     |         +|   0|  0|  12|           4|           3|
-    |add_ln333_1_fu_497_p2   |         +|   0|  0|  12|           4|           1|
-    |add_ln333_fu_491_p2     |         +|   0|  0|  12|           4|           1|
-    |add_ln337_fu_470_p2     |         +|   0|  0|  39|          32|           2|
+    |add_ln312_fu_260_p2     |         +|   0|  0|  12|           4|           1|
+    |add_ln314_fu_276_p2     |         +|   0|  0|  12|           4|           3|
+    |add_ln334_1_fu_497_p2   |         +|   0|  0|  12|           4|           1|
+    |add_ln334_fu_491_p2     |         +|   0|  0|  12|           4|           1|
+    |add_ln338_fu_470_p2     |         +|   0|  0|  39|          32|           2|
     |t_fu_624_p2             |         +|   0|  0|  71|          64|          64|
     |tempReg_fu_574_p2       |         +|   0|  0|  71|          64|          64|
     |u_12_fu_419_p2          |         +|   0|  0|  71|          64|          64|
@@ -121,9 +121,9 @@
     |sub65_fu_484_p2         |         -|   0|  0|  39|           4|          32|
     |and_ln105_1_fu_606_p2   |       and|   0|  0|  64|          64|          64|
     |and_ln105_fu_401_p2     |       and|   0|  0|  64|          64|          64|
-    |icmp_ln311_fu_254_p2    |      icmp|   0|  0|  12|           4|           5|
-    |icmp_ln333_fu_438_p2    |      icmp|   0|  0|  12|           4|           2|
-    |icmp_ln335_fu_464_p2    |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln312_fu_254_p2    |      icmp|   0|  0|  12|           4|           5|
+    |icmp_ln334_fu_438_p2    |      icmp|   0|  0|  12|           4|           2|
+    |icmp_ln336_fu_464_p2    |      icmp|   0|  0|  39|          32|           1|
     |mc_we0                  |        or|   0|  0|   2|           1|           1|
     |or_ln105_3_fu_550_p2    |        or|   0|  0|  64|          64|          64|
     |or_ln105_fu_345_p2      |        or|   0|  0|  64|          64|          64|
@@ -171,27 +171,27 @@
     +--------------------------------------------------------------+----+----+-----+-----------+
     |                             Name                             | FF | LUT| Bits| Const Bits|
     +--------------------------------------------------------------+----+----+-----+-----------+
-    |add_ln313_reg_728                                             |   4|   0|    4|          0|
+    |add_ln314_reg_728                                             |   4|   0|    4|          0|
     |ap_CS_fsm                                                     |   9|   0|    9|          0|
     |count_fu_106                                                  |  32|   0|   32|          0|
-    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_305_1_fu_186_ap_start_reg  |   1|   0|    1|          0|
-    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_313_3_fu_192_ap_start_reg  |   1|   0|    1|          0|
-    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_339_5_fu_208_ap_start_reg  |   1|   0|    1|          0|
+    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_306_1_fu_186_ap_start_reg  |   1|   0|    1|          0|
+    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_314_3_fu_192_ap_start_reg  |   1|   0|    1|          0|
+    |grp_rdc_mont_7_Pipeline_VITIS_LOOP_340_5_fu_208_ap_start_reg  |   1|   0|    1|          0|
     |i_3_fu_70                                                     |   4|   0|    4|          0|
     |i_4_fu_122                                                    |   4|   0|    4|          0|
     |i_6_reg_778                                                   |   4|   0|    4|          0|
     |i_reg_708                                                     |   4|   0|    4|          0|
     |indvars_iv_fu_118                                             |   4|   0|    4|          0|
     |sub65_reg_805                                                 |  32|   0|   32|          0|
-    |trunc_ln311_reg_722                                           |   3|   0|    3|          0|
-    |trunc_ln333_1_reg_799                                         |   3|   0|    3|          0|
-    |trunc_ln333_reg_794                                           |   3|   0|    3|          0|
+    |trunc_ln312_reg_722                                           |   3|   0|    3|          0|
+    |trunc_ln334_1_reg_799                                         |   3|   0|    3|          0|
+    |trunc_ln334_reg_794                                           |   3|   0|    3|          0|
     |u_1_fu_74                                                     |  64|   0|   64|          0|
     |u_fu_110                                                      |  64|   0|   64|          0|
     |v_1_fu_78                                                     |  64|   0|   64|          0|
     |v_3_fu_114                                                    |  64|   0|   64|          0|
     |v_3_load_1_reg_789                                            |  64|   0|   64|          0|
-    |zext_ln311_reg_768                                            |   4|   0|   64|         60|
+    |zext_ln312_reg_768                                            |   4|   0|   64|         60|
     +--------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                         | 433|   0|  493|         60|
     +--------------------------------------------------------------+----+----+-----+-----------+

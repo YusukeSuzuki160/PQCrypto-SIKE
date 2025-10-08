@@ -12,8 +12,8 @@ entity sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_pts_X_RAM_1P_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 64; 
-        AddressWidth    : integer   := 3;
-        AddressRange    : integer   := 7
+        AddressWidth    : integer   := 7;
+        AddressRange    : integer   := 112
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

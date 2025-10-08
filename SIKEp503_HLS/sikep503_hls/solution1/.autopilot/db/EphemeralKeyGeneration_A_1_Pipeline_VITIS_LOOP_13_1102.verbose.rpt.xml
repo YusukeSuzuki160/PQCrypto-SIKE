@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1102'" level="0">
-<item name = "Date">Fri Sep 12 16:10:27 2025
+<item name = "Date">Wed Oct  8 20:26:56 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -53,7 +53,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">0, -, 64, 65, -</column>
 <column name="Multiplexer">-, -, 0, 36, -</column>
-<column name="Register">-, -, 10, -, -</column>
+<column name="Register">-, -, 11, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="Montgomery_one_1_U">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1101_Montgomery_one_1_ROM_Acud, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="Montgomery_one_1_U">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_199_Montgomery_one_1_ROM_AUcud, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -81,8 +81,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln13_fu_217_p2">+, 0, 0, 12, 4, 1</column>
-<column name="icmp_ln13_fu_211_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="add_ln13_fu_83_p2">+, 0, 0, 12, 4, 1</column>
+<column name="icmp_ln13_fu_77_p2">icmp, 0, 0, 12, 4, 5</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -90,8 +90,8 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
-<column name="i_192_fu_66">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_241">9, 2, 4, 8</column>
+<column name="i_fu_38">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -99,8 +99,8 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="i_192_fu_66">4, 0, 4, 0</column>
-<column name="trunc_ln13_reg_247">3, 0, 3, 0</column>
+<column name="i_fu_38">4, 0, 4, 0</column>
+<column name="zext_ln13_reg_109">4, 0, 64, 60</column>
 </table>
 </item>
 </section>
@@ -116,38 +116,10 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1102, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1102, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1102, return value</column>
-<column name="phiQ_Z_address0">out, 1, ap_memory, phiQ_Z, array</column>
-<column name="phiQ_Z_ce0">out, 1, ap_memory, phiQ_Z, array</column>
-<column name="phiQ_Z_we0">out, 1, ap_memory, phiQ_Z, array</column>
-<column name="phiQ_Z_d0">out, 64, ap_memory, phiQ_Z, array</column>
-<column name="phiQ_Z_1_address0">out, 1, ap_memory, phiQ_Z_1, array</column>
-<column name="phiQ_Z_1_ce0">out, 1, ap_memory, phiQ_Z_1, array</column>
-<column name="phiQ_Z_1_we0">out, 1, ap_memory, phiQ_Z_1, array</column>
-<column name="phiQ_Z_1_d0">out, 64, ap_memory, phiQ_Z_1, array</column>
-<column name="phiQ_Z_2_address0">out, 1, ap_memory, phiQ_Z_2, array</column>
-<column name="phiQ_Z_2_ce0">out, 1, ap_memory, phiQ_Z_2, array</column>
-<column name="phiQ_Z_2_we0">out, 1, ap_memory, phiQ_Z_2, array</column>
-<column name="phiQ_Z_2_d0">out, 64, ap_memory, phiQ_Z_2, array</column>
-<column name="phiQ_Z_3_address0">out, 1, ap_memory, phiQ_Z_3, array</column>
-<column name="phiQ_Z_3_ce0">out, 1, ap_memory, phiQ_Z_3, array</column>
-<column name="phiQ_Z_3_we0">out, 1, ap_memory, phiQ_Z_3, array</column>
-<column name="phiQ_Z_3_d0">out, 64, ap_memory, phiQ_Z_3, array</column>
-<column name="phiQ_Z_4_address0">out, 1, ap_memory, phiQ_Z_4, array</column>
-<column name="phiQ_Z_4_ce0">out, 1, ap_memory, phiQ_Z_4, array</column>
-<column name="phiQ_Z_4_we0">out, 1, ap_memory, phiQ_Z_4, array</column>
-<column name="phiQ_Z_4_d0">out, 64, ap_memory, phiQ_Z_4, array</column>
-<column name="phiQ_Z_5_address0">out, 1, ap_memory, phiQ_Z_5, array</column>
-<column name="phiQ_Z_5_ce0">out, 1, ap_memory, phiQ_Z_5, array</column>
-<column name="phiQ_Z_5_we0">out, 1, ap_memory, phiQ_Z_5, array</column>
-<column name="phiQ_Z_5_d0">out, 64, ap_memory, phiQ_Z_5, array</column>
-<column name="phiQ_Z_6_address0">out, 1, ap_memory, phiQ_Z_6, array</column>
-<column name="phiQ_Z_6_ce0">out, 1, ap_memory, phiQ_Z_6, array</column>
-<column name="phiQ_Z_6_we0">out, 1, ap_memory, phiQ_Z_6, array</column>
-<column name="phiQ_Z_6_d0">out, 64, ap_memory, phiQ_Z_6, array</column>
-<column name="phiQ_Z_7_address0">out, 1, ap_memory, phiQ_Z_7, array</column>
-<column name="phiQ_Z_7_ce0">out, 1, ap_memory, phiQ_Z_7, array</column>
-<column name="phiQ_Z_7_we0">out, 1, ap_memory, phiQ_Z_7, array</column>
-<column name="phiQ_Z_7_d0">out, 64, ap_memory, phiQ_Z_7, array</column>
+<column name="A24plus_address0">out, 3, ap_memory, A24plus, array</column>
+<column name="A24plus_ce0">out, 1, ap_memory, A24plus, array</column>
+<column name="A24plus_we0">out, 1, ap_memory, A24plus, array</column>
+<column name="A24plus_d0">out, 64, ap_memory, A24plus, array</column>
 </table>
 </item>
 </section>

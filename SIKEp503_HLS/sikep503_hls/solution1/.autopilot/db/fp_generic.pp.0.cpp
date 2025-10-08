@@ -8281,482 +8281,249 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 2974 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
 }
 # 4 "src/generic/fp_generic.cpp" 2
-# 1 "src/generic/mpx_packed.hpp" 1
+# 1 "src/generic/mpx_camba_mul.hpp" 1
+
+
+
+
 
 
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
-# 4 "src/generic/mpx_packed.hpp" 2
+# 8 "src/generic/mpx_camba_mul.hpp" 2
 
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 1 3
-# 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 3
-# 6 "src/generic/mpx_packed.hpp" 2
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
-# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
 
+namespace mpx {
 
 
+static constexpr unsigned MPX_CHUNK_BITS = 64;
 
 
 
 
+template <typename T, typename = void>
+struct bitwidth {
+  static constexpr unsigned value = 8u * sizeof(T);
+};
 
-# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
-# 1 "/usr/include/stdint.h" 1 3 4
-# 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
-# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
+template <unsigned N>
+struct bitwidth<ap_uint<N>, void> {
+  static constexpr unsigned value = N;
+};
 
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
 
-
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
-
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
-
-
-
-
-
-
-typedef __int8_t __int_least8_t;
-typedef __uint8_t __uint_least8_t;
-typedef __int16_t __int_least16_t;
-typedef __uint16_t __uint_least16_t;
-typedef __int32_t __int_least32_t;
-typedef __uint32_t __uint_least32_t;
-typedef __int64_t __int_least64_t;
-typedef __uint64_t __uint_least64_t;
-
-
-
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
-
-
-
-
-
-
-
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
-# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
-# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-
-
-typedef unsigned long int __dev_t;
-typedef unsigned int __uid_t;
-typedef unsigned int __gid_t;
-typedef unsigned long int __ino_t;
-typedef unsigned long int __ino64_t;
-typedef unsigned int __mode_t;
-typedef unsigned long int __nlink_t;
-typedef long int __off_t;
-typedef long int __off64_t;
-typedef int __pid_t;
-typedef struct { int __val[2]; } __fsid_t;
-typedef long int __clock_t;
-typedef unsigned long int __rlim_t;
-typedef unsigned long int __rlim64_t;
-typedef unsigned int __id_t;
-typedef long int __time_t;
-typedef unsigned int __useconds_t;
-typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
-
-typedef int __daddr_t;
-typedef int __key_t;
-
-
-typedef int __clockid_t;
-
-
-typedef void * __timer_t;
-
-
-typedef long int __blksize_t;
-
-
-
-
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
-
-
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
-
-
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
-
-
-typedef long int __fsword_t;
-
-typedef long int __ssize_t;
-
-
-typedef long int __syscall_slong_t;
-
-typedef unsigned long int __syscall_ulong_t;
-
-
-
-typedef __off64_t __loff_t;
-typedef char *__caddr_t;
-
-
-typedef long int __intptr_t;
-
-
-typedef unsigned int __socklen_t;
-
-
-
-
-typedef int __sig_atomic_t;
-# 28 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
-# 29 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 30 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-# 35 "/usr/include/stdint.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
-typedef __uint8_t uint8_t;
-typedef __uint16_t uint16_t;
-typedef __uint32_t uint32_t;
-typedef __uint64_t uint64_t;
-# 38 "/usr/include/stdint.h" 2 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
-typedef __int_least8_t int_least8_t;
-typedef __int_least16_t int_least16_t;
-typedef __int_least32_t int_least32_t;
-typedef __int_least64_t int_least64_t;
-
-
-typedef __uint_least8_t uint_least8_t;
-typedef __uint_least16_t uint_least16_t;
-typedef __uint_least32_t uint_least32_t;
-typedef __uint_least64_t uint_least64_t;
-# 42 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-
-typedef signed char int_fast8_t;
-
-typedef long int int_fast16_t;
-typedef long int int_fast32_t;
-typedef long int int_fast64_t;
-# 60 "/usr/include/stdint.h" 3 4
-typedef unsigned char uint_fast8_t;
-
-typedef unsigned long int uint_fast16_t;
-typedef unsigned long int uint_fast32_t;
-typedef unsigned long int uint_fast64_t;
-# 76 "/usr/include/stdint.h" 3 4
-typedef long int intptr_t;
-
-
-typedef unsigned long int uintptr_t;
-# 90 "/usr/include/stdint.h" 3 4
-typedef __intmax_t intmax_t;
-typedef __uintmax_t uintmax_t;
-# 64 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
-# 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
-
-
-
-
-namespace std
-{
-  using ::int8_t;
-  using ::int16_t;
-  using ::int32_t;
-  using ::int64_t;
-
-  using ::int_fast8_t;
-  using ::int_fast16_t;
-  using ::int_fast32_t;
-  using ::int_fast64_t;
-
-  using ::int_least8_t;
-  using ::int_least16_t;
-  using ::int_least32_t;
-  using ::int_least64_t;
-
-  using ::intmax_t;
-  using ::intptr_t;
-
-  using ::uint8_t;
-  using ::uint16_t;
-  using ::uint32_t;
-  using ::uint64_t;
-
-  using ::uint_fast8_t;
-  using ::uint_fast16_t;
-  using ::uint_fast32_t;
-  using ::uint_fast64_t;
-
-  using ::uint_least8_t;
-  using ::uint_least16_t;
-  using ::uint_least32_t;
-  using ::uint_least64_t;
-
-  using ::uintmax_t;
-  using ::uintptr_t;
+constexpr unsigned ceil_div_u(unsigned x, unsigned y) {
+  return (x + y - 1) / y;
 }
-# 7 "src/generic/mpx_packed.hpp" 2
-
-namespace mpx
-{
 
 
-
-  template <class Digit, unsigned MAX_NWORDS, bool LSW_FIRST = true>
-  struct PackedOps
-  {
-    static_assert(std::is_unsigned<Digit>::value,
-                  "Digit must be an unsigned integer type.");
-    static constexpr unsigned W = 8 * sizeof(Digit);
-    static_assert(W >= 8, "Digit width must be >= 8 bits.");
-
-    using Big = ap_uint<W * MAX_NWORDS>;
-    using Big2 = ap_uint<2 * W * MAX_NWORDS>;
+constexpr unsigned clog2_constexpr(unsigned x) {
+  return (x <= 1u) ? 0u : 1u + clog2_constexpr((x + 1u) >> 1u);
+}
 
 
-    static Big pack(const Digit *x, unsigned nwords)
-    {
-      Big A = 0;
 
-      VITIS_LOOP_29_1: for (unsigned i = 0; i < MAX_NWORDS; ++i)
-      {
-#pragma HLS UNROLL factor = 1
- if (i < nwords)
-        {
-          const unsigned src =
-              LSW_FIRST ? i : (nwords - 1u - i);
-          ap_uint<W> w = (ap_uint<W>)x[src];
-          A |= (Big)w << (i * W);
+
+template <class Digit, unsigned MAX_NWORDS, bool UseComba>
+struct PackedOps;
+
+template <class Digit, unsigned MAX_NWORDS>
+struct PackedOps<Digit, MAX_NWORDS, true> {
+
+  static constexpr unsigned W = bitwidth<Digit>::value;
+  static_assert(W >= 1 && W <= 256, "Digit width must be in 1..256");
+
+
+  static constexpr unsigned CHUNK_BITS = MPX_CHUNK_BITS;
+  static_assert(CHUNK_BITS >= 1 && CHUNK_BITS <= 256, "MPX_CHUNK_BITS must be in 1..256");
+
+  using chunk_t = ap_uint<CHUNK_BITS>;
+  using prod_t = ap_uint<2 * CHUNK_BITS>;
+
+
+  static constexpr unsigned NMAX_CHUNKS = ceil_div_u(MAX_NWORDS * W, CHUNK_BITS);
+
+  static constexpr unsigned ACC_BITS = (2 * CHUNK_BITS) + clog2_constexpr(NMAX_CHUNKS ? NMAX_CHUNKS : 1) + 2;
+
+
+  static constexpr unsigned NA_MAX = ceil_div_u(MAX_NWORDS * W, CHUNK_BITS);
+  static constexpr unsigned NB_MAX = NA_MAX;
+  static constexpr unsigned NOUT_MAX = NA_MAX + NB_MAX;
+  static constexpr unsigned INNER_MAX = (NA_MAX < NB_MAX) ? NA_MAX : NB_MAX;
+  static constexpr unsigned NEEDW_MAX = ceil_div_u(CHUNK_BITS, W);
+  static constexpr unsigned PACK_ITERS_MAX = ceil_div_u(CHUNK_BITS, W);
+
+
+  static inline chunk_t CHUNK_MASK() {
+#pragma HLS INLINE
+ return (chunk_t)(-1);
+  }
+
+
+
+  static inline chunk_t get_bits_as_chunk(const Digit* arr, unsigned nwords, unsigned bitpos) {
+#pragma HLS INLINE
+ const unsigned NEED_WORDS = ceil_div_u(CHUNK_BITS, W);
+    chunk_t out = 0;
+    unsigned filled = 0;
+
+    VITIS_LOOP_85_1: for (unsigned w = 0; w < NEED_WORDS; ++w) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=1 max=NEEDW_MAX
+ const unsigned cur_bit = bitpos + w * W;
+      const unsigned wi = cur_bit / W;
+      if (wi >= nwords) break;
+
+      const unsigned bit_in_word = cur_bit % W;
+
+      ap_uint<W> lo = (ap_uint<W>)((ap_uint<W>)arr[wi] >> bit_in_word);
+
+      ap_uint<W> word_chunk = lo;
+      if (bit_in_word != 0 && wi + 1 < nwords) {
+        const unsigned remain = W - bit_in_word;
+        ap_uint<W> hi = (ap_uint<W>)arr[wi + 1];
+        word_chunk = lo | (hi << remain);
+      }
+
+
+      const unsigned need = (CHUNK_BITS > filled) ? (CHUNK_BITS - filled) : 0;
+      const unsigned take = (need < W) ? need : W;
+
+
+      ap_uint<W> maskW;
+      if (take == 0) {
+        maskW = (ap_uint<W>)0;
+      } else if (take >= W) {
+        maskW = (ap_uint<W>)(-1);
+      } else {
+        maskW = ((ap_uint<W>)1 << take) - (ap_uint<W>)1;
+      }
+
+      word_chunk = (ap_uint<W>)(word_chunk & maskW);
+
+      out |= ((chunk_t)word_chunk) << filled;
+      filled += take;
+      if (filled >= CHUNK_BITS) break;
+    }
+    return (chunk_t)(out & CHUNK_MASK());
+  }
+
+
+  struct ChunkPacker {
+    Digit* c;
+    unsigned c_words;
+    unsigned wi;
+    unsigned used;
+    Digit cur;
+
+    inline void init(Digit* c_, unsigned c_words_) {
+#pragma HLS INLINE
+ c = c_; c_words = c_words_; wi = 0; used = 0; cur = 0;
+    }
+    inline void push(chunk_t x) {
+#pragma HLS INLINE
+ unsigned remaining = CHUNK_BITS;
+      unsigned shift = 0;
+      VITIS_LOOP_142_1: while (remaining > 0) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=1 max=PACK_ITERS_MAX
+ const unsigned space = W - used;
+        const unsigned take = (remaining < space) ? remaining : space;
+
+
+        chunk_t maskC;
+        if (take == 0) {
+          maskC = (chunk_t)0;
+        } else if (take >= CHUNK_BITS) {
+          maskC = CHUNK_MASK();
+        } else {
+          maskC = ((chunk_t)1 << take) - (chunk_t)1;
         }
-      }
-      return A;
-    }
 
-    template <class Wide>
-    static void unpack(const Wide &P, Digit *y, unsigned out_words)
-    {
-      VITIS_LOOP_46_1: for (unsigned i = 0; i < out_words; ++i)
-      {
-        ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
-        const unsigned dst =
-            LSW_FIRST ? i : (out_words - 1u - i);
-        y[dst] = (Digit)w;
-      }
-    }
+        ap_uint<W> part = (ap_uint<W>)(((chunk_t)(x >> shift)) & maskC);
+        cur |= (Digit)(part) << used;
 
+        used += take;
+        shift += take;
+        remaining -= take;
 
-
-    static unsigned add(const Digit *a, const Digit *b,
-                        Digit *c, unsigned nwords)
-    {
-      Big A = pack(a, nwords);
-      Big B = pack(b, nwords);
-
-      ap_uint<W * MAX_NWORDS + 1> S = A + B;
-
-      Big result = S.range(W * MAX_NWORDS - 1, 0);
-      unpack(result, c, nwords);
-
-      ap_uint<1> carry = 0;
-      if (nwords < MAX_NWORDS)
-      {
-
-        carry = S[W * nwords];
-      }
-      else
-      {
-
-        carry = S[W * MAX_NWORDS];
-      }
-      return (unsigned)carry;
-    }
-
-    static unsigned sub(const Digit *a, const Digit *b,
-                        Digit *c, unsigned nwords)
-    {
-      Big A = pack(a, nwords);
-      Big B = pack(b, nwords);
-
-      ap_uint<W * MAX_NWORDS + 1> D = A - B;
-
-      Big result = D.range(W * MAX_NWORDS - 1, 0);
-      unpack(result, c, nwords);
-
-      ap_uint<1> borrow = 0;
-      if (nwords < MAX_NWORDS)
-      {
-
-        borrow = D[W * nwords];
-      }
-      else
-      {
-
-        borrow = D[W * MAX_NWORDS];
-      }
-      return (unsigned)borrow;
-    }
-
-    static void mul(const Digit *a, const Digit *b,
-                    Digit *c, unsigned nwords)
-    {
-
-      VITIS_LOOP_111_1: for (unsigned i = 0; i < 2 * nwords; ++i)
-      {
-        c[i] = 0;
-      }
-
-
-      VITIS_LOOP_117_2: for (unsigned i = 0; i < nwords; ++i)
-      {
-        VITIS_LOOP_119_3: for (unsigned j = 0; j < nwords; ++j)
-        {
-
-          ap_uint<128> product = (ap_uint<64>)a[i] * (ap_uint<64>)b[j];
-          ap_uint<64> low = product.range(63, 0);
-          ap_uint<64> high = product.range(127, 64);
-
-
-          ap_uint<128> sum = c[i + j] + low;
-          c[i + j] = sum.range(63, 0);
-          ap_uint<64> carry = sum.range(127, 64);
-
-
-          unsigned int pos = i + j + 1;
-          VITIS_LOOP_133_4: while (carry > 0 && pos < 2 * nwords)
-          {
-            ap_uint<128> next_sum = c[pos] + carry;
-            c[pos] = next_sum.range(63, 0);
-            carry = next_sum.range(127, 64);
-            pos++;
-          }
-
-
-          if (i + j + 1 < 2 * nwords)
-          {
-            ap_uint<128> high_sum = c[i + j + 1] + high;
-            c[i + j + 1] = high_sum.range(63, 0);
-            ap_uint<64> high_carry = high_sum.range(127, 64);
-
-
-            pos = i + j + 2;
-            VITIS_LOOP_150_5: while (high_carry > 0 && pos < 2 * nwords)
-            {
-              ap_uint<128> next_sum = c[pos] + high_carry;
-              c[pos] = next_sum.range(63, 0);
-              high_carry = next_sum.range(127, 64);
-              pos++;
-            }
-          }
+        if (used == W) {
+          if (wi < c_words) c[wi] = cur;
+          ++wi; used = 0; cur = 0;
         }
       }
     }
-
-    static void sqr(const Digit *a, Digit *c, unsigned nwords)
-    {
-
-      VITIS_LOOP_165_1: for (unsigned i = 0; i < 2 * nwords; ++i)
-      {
-        c[i] = 0;
+    inline void flush() {
+#pragma HLS INLINE
+ if (used != 0 && wi < c_words) {
+        c[wi] = cur;
+        ++wi; used = 0; cur = 0;
       }
-
-
-      VITIS_LOOP_171_2: for (unsigned i = 0; i < nwords; ++i)
-      {
-        VITIS_LOOP_173_3: for (unsigned j = 0; j < nwords; ++j)
-        {
-
-          ap_uint<128> product = (ap_uint<64>)a[i] * (ap_uint<64>)a[j];
-          ap_uint<64> low = product.range(63, 0);
-          ap_uint<64> high = product.range(127, 64);
-
-
-          ap_uint<128> sum = c[i + j] + low;
-          c[i + j] = sum.range(63, 0);
-          ap_uint<64> carry = sum.range(127, 64);
-
-
-          unsigned int pos = i + j + 1;
-          VITIS_LOOP_187_4: while (carry > 0 && pos < 2 * nwords)
-          {
-            ap_uint<128> next_sum = c[pos] + carry;
-            c[pos] = next_sum.range(63, 0);
-            carry = next_sum.range(127, 64);
-            pos++;
-          }
-
-
-          if (i + j + 1 < 2 * nwords)
-          {
-            ap_uint<128> high_sum = c[i + j + 1] + high;
-            c[i + j + 1] = high_sum.range(63, 0);
-            ap_uint<64> high_carry = high_sum.range(127, 64);
-
-
-            pos = i + j + 2;
-            VITIS_LOOP_204_5: while (high_carry > 0 && pos < 2 * nwords)
-            {
-              ap_uint<128> next_sum = c[pos] + high_carry;
-              c[pos] = next_sum.range(63, 0);
-              high_carry = next_sum.range(127, 64);
-              pos++;
-            }
-          }
-        }
+      VITIS_LOOP_177_1: while (wi < c_words) {
+#pragma HLS LOOP_TRIPCOUNT min=0 max=(2*MAX_NWORDS)
+ c[wi++] = 0;
       }
     }
   };
+
+
+  static void mul(const Digit* a, const Digit* b, Digit* c, unsigned nwords) {
+#pragma HLS INLINE off
+
+ VITIS_LOOP_188_1: for (unsigned i = 0; i < 2 * nwords; ++i) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=1 max=(2*MAX_NWORDS)
+ c[i] = 0;
+    }
+
+    const unsigned A_BITS = nwords * W;
+    const unsigned B_BITS = nwords * W;
+
+    const unsigned N_A = ceil_div_u(A_BITS, CHUNK_BITS);
+    const unsigned N_B = ceil_div_u(B_BITS, CHUNK_BITS);
+    const unsigned N_OUT = N_A + N_B;
+
+    ChunkPacker pack;
+    pack.init(c, 2 * nwords);
+
+    ap_uint<ACC_BITS> carry = 0;
+
+
+    VITIS_LOOP_207_2: for (unsigned t = 0; t < N_OUT; ++t) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=1 max=NOUT_MAX
+ const unsigned j_start = (t < (N_B - 1)) ? 0 : (t - (N_B - 1));
+      const unsigned j_end = (t < (N_A - 1)) ? t : (N_A - 1);
+
+      ap_uint<ACC_BITS> sum = carry;
+
+      VITIS_LOOP_215_3: for (unsigned j = j_start; j <= j_end; ++j) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=1 max=INNER_MAX
+ const unsigned ia = j;
+        const unsigned ib = t - j;
+        const unsigned a_bitpos = ia * CHUNK_BITS;
+        const unsigned b_bitpos = ib * CHUNK_BITS;
+
+        const chunk_t aj = get_bits_as_chunk(a, nwords, a_bitpos);
+        const chunk_t bj = get_bits_as_chunk(b, nwords, b_bitpos);
+
+        const prod_t p = (prod_t)aj * (prod_t)bj;
+        sum += (ap_uint<ACC_BITS>)p;
+      }
+
+      const chunk_t out = (chunk_t)(sum & CHUNK_MASK());
+      pack.push(out);
+
+      carry = (ap_uint<ACC_BITS>)(sum >> CHUNK_BITS);
+    }
+
+
+    pack.push((chunk_t)carry);
+
+    pack.flush();
+  }
+};
 
 }
 # 5 "src/generic/fp_generic.cpp" 2
@@ -9127,7 +8894,16 @@ typedef __builtin_va_list __gnuc_va_list;
 
 
 typedef __gnuc_va_list va_list;
-# 52 "/usr/include/wchar.h" 3 4
+
+
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 52 "/usr/include/wchar.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 1 3 4
 # 20 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 3 4
 typedef unsigned int wint_t;
@@ -15014,6 +14790,263 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
+# 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
+
+
+
+
+
+
+
+
+# 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
+# 63 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/usr/include/stdint.h" 1 3 4
+# 26 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
+# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 28 "/usr/include/stdint.h" 2 3 4
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 30 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+typedef __int8_t int8_t;
+typedef __int16_t int16_t;
+typedef __int32_t int32_t;
+typedef __int64_t int64_t;
+# 35 "/usr/include/stdint.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+typedef __uint8_t uint8_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __uint64_t uint64_t;
+# 38 "/usr/include/stdint.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
+
+
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
+# 42 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+
+typedef signed char int_fast8_t;
+
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+# 60 "/usr/include/stdint.h" 3 4
+typedef unsigned char uint_fast8_t;
+
+typedef unsigned long int uint_fast16_t;
+typedef unsigned long int uint_fast32_t;
+typedef unsigned long int uint_fast64_t;
+# 76 "/usr/include/stdint.h" 3 4
+typedef long int intptr_t;
+
+
+typedef unsigned long int uintptr_t;
+# 90 "/usr/include/stdint.h" 3 4
+typedef __intmax_t intmax_t;
+typedef __uintmax_t uintmax_t;
+# 64 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 42 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
+
+
+
+
+namespace std
+{
+  using ::int8_t;
+  using ::int16_t;
+  using ::int32_t;
+  using ::int64_t;
+
+  using ::int_fast8_t;
+  using ::int_fast16_t;
+  using ::int_fast32_t;
+  using ::int_fast64_t;
+
+  using ::int_least8_t;
+  using ::int_least16_t;
+  using ::int_least32_t;
+  using ::int_least64_t;
+
+  using ::intmax_t;
+  using ::intptr_t;
+
+  using ::uint8_t;
+  using ::uint16_t;
+  using ::uint32_t;
+  using ::uint64_t;
+
+  using ::uint_fast8_t;
+  using ::uint_fast16_t;
+  using ::uint_fast32_t;
+  using ::uint_fast64_t;
+
+  using ::uint_least8_t;
+  using ::uint_least16_t;
+  using ::uint_least32_t;
+  using ::uint_least64_t;
+
+  using ::uintmax_t;
+  using ::uintptr_t;
+}
+# 504 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/char_traits.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -34768,6 +34801,7 @@ void mp_mul(const digit_t *a, const digit_t *b, digit_t *c, const unsigned int n
 #pragma HLS BIND_STORAGE variable = c type = RAM_1P
 #pragma HLS RESOURCE core = Mul_LUT
 #pragma HLS DATAFLOW off
+#pragma HLS loop_tripcount min = 1 max = 8
 
  constexpr unsigned MAX_NWORDS = 8;
     using DigitA = std::remove_cv_t<std::remove_pointer_t<decltype(a)>>;
@@ -34790,15 +34824,15 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
     digit_t UV[2], t = 0, u = 0, v = 0;
 
 
-    VITIS_LOOP_305_1: for (i = 0; i < 8; i++)
+    VITIS_LOOP_306_1: for (i = 0; i < 8; i++)
     {
         mc[i] = 0;
     }
 
 
-    VITIS_LOOP_311_2: for (i = 0; i < 8; i++)
+    VITIS_LOOP_312_2: for (i = 0; i < 8; i++)
     {
-        VITIS_LOOP_313_3: for (j = 0; j < i; j++)
+        VITIS_LOOP_314_3: for (j = 0; j < i; j++)
         {
             if (j < (i - 3 + 1))
             {
@@ -34818,13 +34852,13 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
     }
 
 
-    VITIS_LOOP_333_4: for (i = 8; i < 2 * 8 - 1; i++)
+    VITIS_LOOP_334_4: for (i = 8; i < 2 * 8 - 1; i++)
     {
         if (count > 0)
         {
             count--;
         }
-        VITIS_LOOP_339_5: for (j = i - 8 + 1; j < 8; j++)
+        VITIS_LOOP_340_5: for (j = i - 8 + 1; j < 8; j++)
         {
             if (j < (8 - count))
             {

@@ -238,7 +238,7 @@ entry:11 %call_ln0 = call void @fp2sqr503_mont.5_Pipeline_VITIS_LOOP_68_2, i64 %
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_185, i64 %a_0, i64 %t3
+entry:12 %call_ln0 = call void @fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_198, i64 %a_0, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -271,7 +271,7 @@ entry:11 %call_ln0 = call void @fp2sqr503_mont.5_Pipeline_VITIS_LOOP_68_2, i64 %
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_185, i64 %a_0, i64 %t3
+entry:12 %call_ln0 = call void @fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_198, i64 %a_0, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -600,7 +600,7 @@ entry:21 %ret_ln154 = ret
 </dataflow>
 <dataflow id="84" from="p503x2_1" to="call_ln0" fromId="52" toId="20">
 </dataflow>
-<dataflow id="86" from="fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_185" to="call_ln0" fromId="85" toId="21">
+<dataflow id="86" from="fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_198" to="call_ln0" fromId="85" toId="21">
 </dataflow>
 <dataflow id="87" from="a_0" to="call_ln0" fromId="48" toId="21">
 </dataflow>
@@ -614,7 +614,7 @@ entry:21 %ret_ln154 = ret
 </dataflow>
 <dataflow id="92" from="p503x2_1" to="call_ln0" fromId="52" toId="22">
 </dataflow>
-<dataflow id="93" from="fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_185" to="call_ln0" fromId="85" toId="23">
+<dataflow id="93" from="fp2sqr503_mont.5_Pipeline_VITIS_LOOP_378_198" to="call_ln0" fromId="85" toId="23">
 </dataflow>
 <dataflow id="94" from="a_0" to="call_ln0" fromId="48" toId="23">
 </dataflow>

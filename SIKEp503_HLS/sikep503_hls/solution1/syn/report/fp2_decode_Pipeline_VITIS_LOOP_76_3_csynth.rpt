@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_Pipeline_VITIS_LOOP_76_3'
 ================================================================
-* Date:           Tue Sep 23 15:48:03 2025
+* Date:           Wed Oct  8 20:39:21 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -126,7 +126,7 @@
     |ap_sig_allocacmp_i       |   9|          2|    6|         12|
     |gmem_blk_n_AR            |   9|          2|    1|          2|
     |gmem_blk_n_R             |   9|          2|    1|          2|
-    |i_235_fu_94              |   9|          2|    6|         12|
+    |i_225_fu_94              |   9|          2|    6|         12|
     |m_axi_gmem_0_ARADDR      |  14|          3|   64|        192|
     |reuse_addr_reg5_fu_78    |   9|          2|   64|        128|
     |reuse_addr_reg_fu_86     |   9|          2|   64|        128|
@@ -166,7 +166,7 @@
     |gmem_addr_3_reg_444                        |  64|   0|   64|          0|
     |gmem_addr_read_reg_450                     |   8|   0|    8|          0|
     |gmem_addr_reg_438                          |  64|   0|   64|          0|
-    |i_235_fu_94                                |   6|   0|    6|          0|
+    |i_225_fu_94                                |   6|   0|    6|          0|
     |i_reg_428                                  |   6|   0|    6|          0|
     |icmp_ln76_reg_434                          |   1|   0|    1|          0|
     |reuse_addr_reg5_fu_78                      |  64|   0|   64|          0|

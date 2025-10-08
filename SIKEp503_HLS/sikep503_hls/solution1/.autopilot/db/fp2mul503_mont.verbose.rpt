@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont'
 ================================================================
-* Date:           Tue Sep 23 15:46:25 2025
+* Date:           Wed Oct  8 20:37:45 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.005 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    |      473|      811|  4.730 us|  8.110 us|  473|  811|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,16 +38,16 @@
         |                                                        |                                             |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                        Instance                        |                    Module                   |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +--------------------------------------------------------+---------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_mp_mul_2_fu_66                                      |mp_mul_2                                     |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
-        |grp_mp_mul_2_fu_76                                      |mp_mul_2                                     |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_mp_mul_2_fu_66                                      |mp_mul_2                                     |      133|      245|  1.330 us|  2.450 us|  133|  245|                                              no|
+        |grp_mp_mul_2_fu_76                                      |mp_mul_2                                     |      133|      245|  1.330 us|  2.450 us|  133|  245|                                              no|
         |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1_fu_86      |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1     |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165_fu_95   |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178_fu_95   |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1_fu_104     |fp2mul503_mont_Pipeline_VITIS_LOOP_160_1     |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_187_1_fu_112     |fp2mul503_mont_Pipeline_VITIS_LOOP_187_1     |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166_fu_120  |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179_fu_120  |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_rdc_mont_fu_126                                     |rdc_mont                                     |      110|      224|  1.100 us|  2.240 us|  110|  224|                                              no|
-        |grp_mp_mul_5111_fu_136                                  |mp_mul_5111                                  |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
-        |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167_fu_143  |fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_mp_mul_6117_fu_136                                  |mp_mul_6117                                  |      133|      245|  1.330 us|  2.450 us|  133|  245|                                              no|
+        |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180_fu_143  |fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180  |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +--------------------------------------------------------+---------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -65,12 +65,12 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        0|        8|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        0|     64|     2845|    11661|     -|
+|Instance             |        0|     64|     3100|    10461|     -|
 |Memory               |        0|      -|      320|      325|     0|
 |Multiplexer          |        -|      -|        0|      583|     -|
 |Register             |        -|      -|       22|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|     64|     3187|    12577|     0|
+|Total                |        0|     64|     3442|    11377|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
@@ -87,17 +87,17 @@
     |                        Instance                        |                    Module                   | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +--------------------------------------------------------+---------------------------------------------+---------+----+------+------+-----+
     |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1_fu_104     |fp2mul503_mont_Pipeline_VITIS_LOOP_160_1     |        0|   0|    15|   613|    0|
-    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167_fu_143  |fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167  |        0|   0|    13|   628|    0|
+    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180_fu_143  |fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180  |        0|   0|    13|   628|    0|
     |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_187_1_fu_112     |fp2mul503_mont_Pipeline_VITIS_LOOP_187_1     |        0|   0|   139|   747|    0|
     |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1_fu_86      |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1     |        0|   0|    13|   601|    0|
-    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165_fu_95   |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165  |        0|   0|    13|   601|    0|
-    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166_fu_120  |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166  |        0|   0|    13|   617|    0|
-    |grp_mp_mul_2_fu_66                                      |mp_mul_2                                     |        0|  16|   339|  1145|    0|
-    |grp_mp_mul_2_fu_76                                      |mp_mul_2                                     |        0|  16|   339|  1145|    0|
-    |grp_mp_mul_5111_fu_136                                  |mp_mul_5111                                  |        0|  16|   339|  1145|    0|
+    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178_fu_95   |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178  |        0|   0|    13|   601|    0|
+    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179_fu_120  |fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179  |        0|   0|    13|   617|    0|
+    |grp_mp_mul_2_fu_66                                      |mp_mul_2                                     |        0|  16|   424|   745|    0|
+    |grp_mp_mul_2_fu_76                                      |mp_mul_2                                     |        0|  16|   424|   745|    0|
+    |grp_mp_mul_6117_fu_136                                  |mp_mul_6117                                  |        0|  16|   424|   745|    0|
     |grp_rdc_mont_fu_126                                     |rdc_mont                                     |        0|  16|  1622|  4419|    0|
     +--------------------------------------------------------+---------------------------------------------+---------+----+------+------+-----+
-    |Total                                                   |                                             |        0|  64|  2845| 11661|    0|
+    |Total                                                   |                                             |        0|  64|  3100| 10461|    0|
     +--------------------------------------------------------+---------------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -175,15 +175,15 @@
     |                                 Name                                | FF | LUT| Bits| Const Bits|
     +---------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                            |  12|   0|   12|          0|
-    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167_fu_143_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180_fu_143_ap_start_reg  |   1|   0|    1|          0|
     |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1_fu_104_ap_start_reg     |   1|   0|    1|          0|
     |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_187_1_fu_112_ap_start_reg     |   1|   0|    1|          0|
-    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165_fu_95_ap_start_reg   |   1|   0|    1|          0|
-    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166_fu_120_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178_fu_95_ap_start_reg   |   1|   0|    1|          0|
+    |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179_fu_120_ap_start_reg  |   1|   0|    1|          0|
     |grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1_fu_86_ap_start_reg      |   1|   0|    1|          0|
     |grp_mp_mul_2_fu_66_ap_start_reg                                      |   1|   0|    1|          0|
     |grp_mp_mul_2_fu_76_ap_start_reg                                      |   1|   0|    1|          0|
-    |grp_mp_mul_5111_fu_136_ap_start_reg                                  |   1|   0|    1|          0|
+    |grp_mp_mul_6117_fu_136_ap_start_reg                                  |   1|   0|    1|          0|
     |grp_rdc_mont_fu_126_ap_start_reg                                     |   1|   0|    1|          0|
     +---------------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                                |  22|   0|   22|          0|
@@ -278,42 +278,42 @@ ST_1 : Operation 18 [1/1] (0.71ns)   --->   "%tt3 = alloca i64 1" [src/fpx.cpp:1
 ST_1 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln182 = call void @mp_mul.2, i64 %c_0, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 19 'call' 'call_ln182' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln183 = call void @mp_mul.2, i64 %c_1, i64 %b_1, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 20 'call' 'call_ln183' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 0.70>
-ST_2 : Operation 21 [1/2] (0.70ns)   --->   "%call_ln182 = call void @mp_mul.2, i64 %c_0, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 21 'call' 'call_ln182' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 22 [1/2] (0.70ns)   --->   "%call_ln183 = call void @mp_mul.2, i64 %c_1, i64 %b_1, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 22 'call' 'call_ln183' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln182 = call void @mp_mul.2, i64 %c_0, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 21 'call' 'call_ln182' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln183 = call void @mp_mul.2, i64 %c_1, i64 %b_1, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 22 'call' 'call_ln183' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 23 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1, i64 %c_0, i64 %c_1, i64 %t1"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165, i64 %b_0, i64 %b_1, i64 %t2"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178, i64 %b_0, i64 %b_1, i64 %t2"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_3 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
 ST_4 : Operation 26 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1, i64 %c_0, i64 %c_1, i64 %t1"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 27 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165, i64 %b_0, i64 %b_1, i64 %t2"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 27 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178, i64 %b_0, i64 %b_1, i64 %t2"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 ST_4 : Operation 28 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.27>
 ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 29 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 30 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
-ST_5 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166, i64 %tt1, i64 %tt2"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179, i64 %tt1, i64 %tt2"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.48>
 ST_6 : Operation 32 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 33 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166, i64 %tt1, i64 %tt2"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 33 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179, i64 %tt1, i64 %tt2"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
 ST_7 : Operation 34 [2/2] (0.00ns)   --->   "%call_ln191 = call void @rdc_mont, i64 %tt3, i64 %c_0, i64 %p503p1_1" [src/fpx.cpp:191]   --->   Operation 34 'call' 'call_ln191' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_7 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln193 = call void @mp_mul.5111, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 35 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln193 = call void @mp_mul.6117, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 35 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 8 <SV = 7> <Delay = 0.70>
+State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln191 = call void @rdc_mont, i64 %tt3, i64 %c_0, i64 %p503p1_1" [src/fpx.cpp:191]   --->   Operation 36 'call' 'call_ln191' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_8 : Operation 37 [1/2] (0.70ns)   --->   "%call_ln193 = call void @mp_mul.5111, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 37 'call' 'call_ln193' <Predicate = true> <Delay = 0.70> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln193 = call void @mp_mul.6117, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 37 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 38 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167, i64 %tt2, i64 %tt1"   --->   Operation 38 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 38 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180, i64 %tt2, i64 %tt1"   --->   Operation 38 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 1.48>
-ST_10 : Operation 39 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167, i64 %tt2, i64 %tt1"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 39 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180, i64 %tt2, i64 %tt1"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
 ST_11 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln195 = call void @rdc_mont, i64 %tt2, i64 %c_1, i64 %p503p1_1" [src/fpx.cpp:195]   --->   Operation 40 'call' 'call_ln195' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -496,7 +496,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 <pin id="19" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165"/></StgValue>
+<StgValue><ssdm name="fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178"/></StgValue>
 </bind>
 </comp>
 
@@ -523,7 +523,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 <pin id="25" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166"/></StgValue>
+<StgValue><ssdm name="fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179"/></StgValue>
 </bind>
 </comp>
 
@@ -541,7 +541,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 <pin id="29" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="mp_mul.5111"/></StgValue>
+<StgValue><ssdm name="mp_mul.6117"/></StgValue>
 </bind>
 </comp>
 
@@ -550,7 +550,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 <pin id="31" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167"/></StgValue>
+<StgValue><ssdm name="fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180"/></StgValue>
 </bind>
 </comp>
 
@@ -707,7 +707,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="95" class="1004" name="grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165_fu_95">
+<comp id="95" class="1004" name="grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178_fu_95">
 <pin_list>
 <pin id="96" dir="0" index="0" bw="0" slack="0"/>
 <pin id="97" dir="0" index="1" bw="64" slack="0"/>
@@ -750,7 +750,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="120" class="1004" name="grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166_fu_120">
+<comp id="120" class="1004" name="grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179_fu_120">
 <pin_list>
 <pin id="121" dir="0" index="0" bw="0" slack="0"/>
 <pin id="122" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -777,7 +777,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="136" class="1004" name="grp_mp_mul_5111_fu_136">
+<comp id="136" class="1004" name="grp_mp_mul_6117_fu_136">
 <pin_list>
 <pin id="137" dir="0" index="0" bw="0" slack="0"/>
 <pin id="138" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -791,7 +791,7 @@ ret_ln196         (ret        ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="143" class="1004" name="grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167_fu_143">
+<comp id="143" class="1004" name="grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180_fu_143">
 <pin_list>
 <pin id="144" dir="0" index="0" bw="0" slack="0"/>
 <pin id="145" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -940,18 +940,18 @@ ret_ln196         (ret        ) [ 0000000000000]
 |----------|--------------------------------------------------------|---------|---------|---------|---------|
 | Operation|                     Functional Unit                    |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------------|---------|---------|---------|---------|
-|          |                   grp_mp_mul_2_fu_66                   |    16   | 3.19457 |   456   |   842   |
-|          |                   grp_mp_mul_2_fu_76                   |    16   | 3.19457 |   456   |   842   |
+|          |                   grp_mp_mul_2_fu_66                   |    16   |  2.322  |   568   |   613   |
+|          |                   grp_mp_mul_2_fu_76                   |    16   |  2.322  |   568   |   613   |
 |          |   grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1_fu_86   |    0    |  0.774  |    77   |   570   |
-|          |  grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1165_fu_95 |    0    |  0.774  |    77   |   570   |
+|          |  grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1178_fu_95 |    0    |  0.774  |    77   |   570   |
 |   call   |   grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1_fu_104  |    0    |  0.774  |    80   |   581   |
 |          |   grp_fp2mul503_mont_Pipeline_VITIS_LOOP_187_1_fu_112  |    0    |  0.774  |    77   |   697   |
-|          | grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1166_fu_120 |    0    |  0.774  |    15   |   570   |
+|          | grp_fp2mul503_mont_Pipeline_VITIS_LOOP_378_1179_fu_120 |    0    |  0.774  |    15   |   570   |
 |          |                   grp_rdc_mont_fu_126                  |    48   | 5.61514 |   1937  |   4813  |
-|          |                 grp_mp_mul_5111_fu_136                 |    16   | 3.19457 |   456   |   842   |
-|          | grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1167_fu_143 |    0    |  0.774  |    15   |   581   |
+|          |                 grp_mp_mul_6117_fu_136                 |    16   |  2.322  |   568   |   613   |
+|          | grp_fp2mul503_mont_Pipeline_VITIS_LOOP_160_1180_fu_143 |    0    |  0.774  |    15   |   581   |
 |----------|--------------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                        |    96   | 19.8429 |   3646  |  10908  |
+|   Total  |                                                        |    96   | 17.2251 |   3982  |  10221  |
 |----------|--------------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -991,10 +991,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |   96   |   19   |  3646  |  10908 |    -   |
+|  Function |    -   |   96   |   17   |  3982  |  10221 |    -   |
 |   Memory  |    0   |    -   |    -   |   320  |   325  |    0   |
 |Multiplexer|    -   |    -   |    0   |    0   |    9   |    -   |
 |  Register |    -   |    -   |    -   |    1   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |   96   |   20   |  3967  |  11242 |    0   |
+|   Total   |    0   |   96   |   17   |  4303  |  10555 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

@@ -327,7 +327,7 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>i_268</name>
+              <name>i_258</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>33</lineNumber>
@@ -1416,7 +1416,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>xor_ln35_49</name>
+              <name>xor_ln35_48</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>35</lineNumber>
@@ -1448,7 +1448,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln35_49_fu_167_p2</rtlName>
+              <rtlName>xor_ln35_48_fu_167_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -3473,7 +3473,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln35_49_fu_167_p2 ( xor ) </first>
+          <first>xor_ln35_48_fu_167_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3585,7 +3585,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_268</first>
+          <first>ap_sig_allocacmp_i_258</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3883,7 +3883,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln35_49_fu_167_p2 ( xor ) </first>
+          <first>xor_ln35_48_fu_167_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4561,7 +4561,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln35_49_fu_167</first>
+        <first>xor_ln35_48_fu_167</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4609,7 +4609,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_268_load_fu_98</first>
+        <first>i_258_load_fu_98</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

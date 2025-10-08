@@ -25,10 +25,10 @@
 
 <Node id="6" bw="6" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_245 = alloca i32 1
+newFuncRoot:0 %i_235 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_245"/></StgValue>
+<StgValue><ssdm name="i_235"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -40,7 +40,7 @@ newFuncRoot:0 %i_245 = alloca i32 1
 
 <Node id="7" bw="0" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-newFuncRoot:1 %store_ln640 = store i6 0, i6 %i_245
+newFuncRoot:1 %store_ln640 = store i6 0, i6 %i_235
 
 ]]></Node>
 <StgValue><ssdm name="store_ln640"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %br_ln0 = br void %for.inc
 
 <Node id="10" bw="6" op_0_bw="6" op_1_bw="0">
 <![CDATA[
-for.inc:0 %i = load i6 %i_245
+for.inc:0 %i = load i6 %i_235
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -306,7 +306,7 @@ for.inc.split:13 %t_82_load = load i6 %t_82_addr
 
 <Node id="33" bw="0" op_0_bw="6" op_1_bw="6" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.split:17 %store_ln640 = store i6 %add_ln668, i6 %i_245
+for.inc.split:17 %store_ln640 = store i6 %add_ln668, i6 %i_235
 
 ]]></Node>
 <StgValue><ssdm name="store_ln640"/></StgValue>
@@ -370,7 +370,7 @@ for.inc.split:1 %trunc_ln668 = trunc i6 %i
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:2 %specpipeline_ln640 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.split:2 %specpipeline_ln640 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln640"/></StgValue>
@@ -385,7 +385,7 @@ for.inc.split:2 %specpipeline_ln640 = specpipeline void @_ssdm_op_SpecPipeline, 
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:3 %specloopname_ln668 = specloopname void @_ssdm_op_SpecLoopName, void @empty_96
+for.inc.split:3 %specloopname_ln668 = specloopname void @_ssdm_op_SpecLoopName, void @empty_89
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln668"/></StgValue>

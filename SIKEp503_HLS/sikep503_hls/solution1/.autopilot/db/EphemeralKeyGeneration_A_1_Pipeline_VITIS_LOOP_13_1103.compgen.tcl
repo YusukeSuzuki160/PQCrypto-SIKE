@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 184 \
-    name phiR_Z \
+    id 393 \
+    name pts_X \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename phiR_Z \
+    corename pts_X \
     op interface \
-    ports { phiR_Z_address0 { O 1 vector } phiR_Z_ce0 { O 1 bit } phiR_Z_we0 { O 1 bit } phiR_Z_d0 { O 64 vector } } \
+    ports { pts_X_address0 { O 7 vector } pts_X_ce0 { O 1 bit } pts_X_we0 { O 1 bit } pts_X_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pts_X'"
 }
 }
 
@@ -30,134 +30,35 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 185 \
-    name phiR_Z_1 \
+    id 394 \
+    name R_X \
     reset_level 1 \
     sync_rst true \
-    dir O \
-    corename phiR_Z_1 \
+    dir I \
+    corename R_X \
     op interface \
-    ports { phiR_Z_1_address0 { O 1 vector } phiR_Z_1_ce0 { O 1 bit } phiR_Z_1_we0 { O 1 bit } phiR_Z_1_d0 { O 64 vector } } \
+    ports { R_X_address0 { O 4 vector } R_X_ce0 { O 1 bit } R_X_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z_1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R_X'"
 }
 }
 
 
-# XIL_BRAM:
+# Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 186 \
-    name phiR_Z_2 \
+eval "cg_default_interface_gen_dc { \
+    id 392 \
+    name npts_5 \
+    type other \
+    dir I \
     reset_level 1 \
     sync_rst true \
-    dir O \
-    corename phiR_Z_2 \
+    corename dc_npts_5 \
     op interface \
-    ports { phiR_Z_2_address0 { O 1 vector } phiR_Z_2_ce0 { O 1 bit } phiR_Z_2_we0 { O 1 bit } phiR_Z_2_d0 { O 64 vector } } \
+    ports { npts_5 { I 3 vector } } \
 } "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z_2'"
 }
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 187 \
-    name phiR_Z_3 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename phiR_Z_3 \
-    op interface \
-    ports { phiR_Z_3_address0 { O 1 vector } phiR_Z_3_ce0 { O 1 bit } phiR_Z_3_we0 { O 1 bit } phiR_Z_3_d0 { O 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z_3'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 188 \
-    name phiR_Z_4 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename phiR_Z_4 \
-    op interface \
-    ports { phiR_Z_4_address0 { O 1 vector } phiR_Z_4_ce0 { O 1 bit } phiR_Z_4_we0 { O 1 bit } phiR_Z_4_d0 { O 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z_4'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 189 \
-    name phiR_Z_5 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename phiR_Z_5 \
-    op interface \
-    ports { phiR_Z_5_address0 { O 1 vector } phiR_Z_5_ce0 { O 1 bit } phiR_Z_5_we0 { O 1 bit } phiR_Z_5_d0 { O 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z_5'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 190 \
-    name phiR_Z_6 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename phiR_Z_6 \
-    op interface \
-    ports { phiR_Z_6_address0 { O 1 vector } phiR_Z_6_ce0 { O 1 bit } phiR_Z_6_we0 { O 1 bit } phiR_Z_6_d0 { O 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z_6'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 191 \
-    name phiR_Z_7 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename phiR_Z_7 \
-    op interface \
-    ports { phiR_Z_7_address0 { O 1 vector } phiR_Z_7_ce0 { O 1 bit } phiR_Z_7_we0 { O 1 bit } phiR_Z_7_d0 { O 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_Z_7'"
-}
-}
-
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

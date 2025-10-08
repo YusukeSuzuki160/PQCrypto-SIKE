@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls/solution1/./sim/autowrap/testbench/sikep503_kem_enc_hw.cpp_pre.cpp.tb.cpp

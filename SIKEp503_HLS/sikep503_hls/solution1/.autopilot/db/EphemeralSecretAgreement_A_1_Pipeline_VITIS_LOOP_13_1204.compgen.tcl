@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1923 \
+    id 2155 \
     name pts_X \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pts_X \
     op interface \
-    ports { pts_X_address0 { O 7 vector } pts_X_ce0 { O 1 bit } pts_X_q0 { I 64 vector } } \
+    ports { pts_X_address0 { O 6 vector } pts_X_ce0 { O 1 bit } pts_X_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pts_X'"
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1924 \
+    id 2156 \
     name R_X \
     reset_level 1 \
     sync_rst true \
@@ -48,15 +48,15 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1922 \
-    name npts_4 \
+    id 2154 \
+    name zext_ln14_1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_npts_4 \
+    corename dc_zext_ln14_1 \
     op interface \
-    ports { npts_4 { I 3 vector } } \
+    ports { zext_ln14_1 { I 6 vector } } \
 } "
 }
 

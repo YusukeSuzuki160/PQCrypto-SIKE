@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'from_mont_1'" level="0">
-<item name = "Date">Tue Sep 23 15:49:03 2025
+<item name = "Date">Wed Oct  8 20:40:19 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.005 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, no</column>
+<column name="">305, 531, 3.050 us, 5.310 us, 305, 531, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpmul503_mont_6_fu_46">fpmul503_mont_6, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_fpmul503_mont_6_fu_46">fpmul503_mont_6, 264, 490, 2.640 us, 4.900 us, 264, 490, no</column>
 <column name="grp_from_mont_1_Pipeline_VITIS_LOOP_105_1_fu_60">from_mont_1_Pipeline_VITIS_LOOP_105_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_from_mont_1_Pipeline_VITIS_LOOP_111_2_fu_70">from_mont_1_Pipeline_VITIS_LOOP_111_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
@@ -52,7 +52,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 32, 2320, 7312, 0</column>
+<column name="Instance">0, 32, 2405, 6912, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 117, -</column>
 <column name="Register">-, -, 10, -, -</column>
@@ -66,7 +66,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_fpmul503_mont_6_fu_46">fpmul503_mont_6, 0, 32, 2104, 5849, 0</column>
+<column name="grp_fpmul503_mont_6_fu_46">fpmul503_mont_6, 0, 32, 2189, 5449, 0</column>
 <column name="grp_from_mont_1_Pipeline_VITIS_LOOP_105_1_fu_60">from_mont_1_Pipeline_VITIS_LOOP_105_1, 0, 0, 76, 704, 0</column>
 <column name="grp_from_mont_1_Pipeline_VITIS_LOOP_111_2_fu_70">from_mont_1_Pipeline_VITIS_LOOP_111_2, 0, 0, 140, 759, 0</column>
 </table>

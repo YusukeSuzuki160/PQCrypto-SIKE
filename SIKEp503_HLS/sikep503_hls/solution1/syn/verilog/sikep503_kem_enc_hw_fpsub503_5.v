@@ -94,7 +94,7 @@ wire    ap_CS_fsm_state2;
 reg    grp_fpsub503_5_Pipeline_VITIS_LOOP_68_2_fu_63_ap_start_reg;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
-wire   [2:0] empty_146_fu_76_p1;
+wire   [2:0] empty_144_fu_76_p1;
 wire   [2:0] empty_fu_72_p1;
 reg   [3:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
@@ -325,7 +325,7 @@ assign b_address0 = grp_fpsub503_5_Pipeline_VITIS_LOOP_61_1_fu_50_b_address0;
 
 assign b_ce0 = grp_fpsub503_5_Pipeline_VITIS_LOOP_61_1_fu_50_b_ce0;
 
-assign empty_146_fu_76_p1 = b_offset[2:0];
+assign empty_144_fu_76_p1 = b_offset[2:0];
 
 assign empty_fu_72_p1 = a_offset[2:0];
 
@@ -333,7 +333,7 @@ assign grp_fpsub503_5_Pipeline_VITIS_LOOP_61_1_fu_50_ap_start = grp_fpsub503_5_P
 
 assign grp_fpsub503_5_Pipeline_VITIS_LOOP_68_2_fu_63_ap_start = grp_fpsub503_5_Pipeline_VITIS_LOOP_68_2_fu_63_ap_start_reg;
 
-assign tmp_fu_80_p3 = {{empty_146_fu_76_p1}, {3'd0}};
+assign tmp_fu_80_p3 = {{empty_144_fu_76_p1}, {3'd0}};
 
 assign tmp_s_fu_89_p3 = {{empty_fu_72_p1}, {3'd0}};
 

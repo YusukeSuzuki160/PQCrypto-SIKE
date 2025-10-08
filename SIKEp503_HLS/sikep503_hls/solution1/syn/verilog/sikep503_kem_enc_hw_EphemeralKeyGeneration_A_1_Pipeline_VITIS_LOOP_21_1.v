@@ -45,7 +45,7 @@ wire   [63:0] zext_ln21_fu_74_p1;
 reg   [3:0] i_fu_36;
 wire   [3:0] add_ln21_fu_68_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_283;
+reg   [3:0] ap_sig_allocacmp_i_273;
 reg    phiQ_X_1_we0_local;
 reg    phiQ_X_1_ce0_local;
 reg    ap_done_reg;
@@ -152,9 +152,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_283 = 4'd0;
+        ap_sig_allocacmp_i_273 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_283 = i_fu_36;
+        ap_sig_allocacmp_i_273 = i_fu_36;
     end
 end
 
@@ -185,7 +185,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln21_fu_68_p2 = (ap_sig_allocacmp_i_283 + 4'd1);
+assign add_ln21_fu_68_p2 = (ap_sig_allocacmp_i_273 + 4'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -199,7 +199,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln21_fu_62_p2 = ((ap_sig_allocacmp_i_283 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln21_fu_62_p2 = ((ap_sig_allocacmp_i_273 == 4'd8) ? 1'b1 : 1'b0);
 
 assign phiQ_X_1_address0 = zext_ln21_fu_74_p1;
 
@@ -209,6 +209,6 @@ assign phiQ_X_1_d0 = 64'd0;
 
 assign phiQ_X_1_we0 = phiQ_X_1_we0_local;
 
-assign zext_ln21_fu_74_p1 = ap_sig_allocacmp_i_283;
+assign zext_ln21_fu_74_p1 = ap_sig_allocacmp_i_273;
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_21_1

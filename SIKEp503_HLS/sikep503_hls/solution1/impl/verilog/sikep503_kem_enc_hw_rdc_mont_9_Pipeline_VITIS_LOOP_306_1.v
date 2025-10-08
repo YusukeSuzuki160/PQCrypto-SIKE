@@ -13,22 +13,14 @@ module sikep503_kem_enc_hw_rdc_mont_9_Pipeline_VITIS_LOOP_306_1 (
         ap_done,
         ap_idle,
         ap_ready,
-        mc_0,
-        mc_0_ap_vld,
-        mc_7,
-        mc_7_ap_vld,
-        mc_6,
-        mc_6_ap_vld,
-        mc_5,
-        mc_5_ap_vld,
-        mc_4,
-        mc_4_ap_vld,
-        mc_3,
-        mc_3_ap_vld,
-        mc_2,
-        mc_2_ap_vld,
-        mc_1,
-        mc_1_ap_vld
+        mc_1_address0,
+        mc_1_ce0,
+        mc_1_we0,
+        mc_1_d0,
+        mc_0_address0,
+        mc_0_ce0,
+        mc_0_we0,
+        mc_0_d0
 );
 
 parameter    ap_ST_fsm_state1 = 1'd1;
@@ -39,45 +31,35 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [63:0] mc_0;
-output   mc_0_ap_vld;
-output  [63:0] mc_7;
-output   mc_7_ap_vld;
-output  [63:0] mc_6;
-output   mc_6_ap_vld;
-output  [63:0] mc_5;
-output   mc_5_ap_vld;
-output  [63:0] mc_4;
-output   mc_4_ap_vld;
-output  [63:0] mc_3;
-output   mc_3_ap_vld;
-output  [63:0] mc_2;
-output   mc_2_ap_vld;
-output  [63:0] mc_1;
-output   mc_1_ap_vld;
+output  [1:0] mc_1_address0;
+output   mc_1_ce0;
+output   mc_1_we0;
+output  [63:0] mc_1_d0;
+output  [1:0] mc_0_address0;
+output   mc_0_ce0;
+output   mc_0_we0;
+output  [63:0] mc_0_d0;
 
 reg ap_idle;
-reg mc_0_ap_vld;
-reg mc_7_ap_vld;
-reg mc_6_ap_vld;
-reg mc_5_ap_vld;
-reg mc_4_ap_vld;
-reg mc_3_ap_vld;
-reg mc_2_ap_vld;
-reg mc_1_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_block_state1_pp0_stage0_iter0;
-wire   [0:0] icmp_ln306_fu_142_p2;
+wire   [0:0] icmp_ln306_fu_82_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [3:0] i_fu_66;
-wire   [3:0] add_ln306_fu_148_p2;
+wire   [63:0] zext_ln302_fu_108_p1;
+reg   [3:0] i_fu_42;
+wire   [3:0] add_ln306_fu_88_p2;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_i_5;
-wire   [2:0] trunc_ln306_fu_154_p1;
+reg    mc_0_we0_local;
+wire   [0:0] trunc_ln306_fu_94_p1;
+reg    mc_0_ce0_local;
+reg    mc_1_we0_local;
+reg    mc_1_ce0_local;
+wire   [1:0] lshr_ln_fu_98_p4;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -91,7 +73,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 1'd1;
-#0 i_fu_66 = 4'd0;
+#0 i_fu_42 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -132,10 +114,10 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((icmp_ln306_fu_142_p2 == 1'd0)) begin
-            i_fu_66 <= add_ln306_fu_148_p2;
+        if ((icmp_ln306_fu_82_p2 == 1'd0)) begin
+            i_fu_42 <= add_ln306_fu_88_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_66 <= 4'd0;
+            i_fu_42 <= 4'd0;
         end
     end
 end
@@ -149,7 +131,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln306_fu_142_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((icmp_ln306_fu_82_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -184,71 +166,39 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i_5 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_5 = i_fu_66;
+        ap_sig_allocacmp_i_5 = i_fu_42;
     end
 end
 
 always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd0) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_0_ap_vld = 1'b1;
+    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        mc_0_ce0_local = 1'b1;
     end else begin
-        mc_0_ap_vld = 1'b0;
+        mc_0_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd1) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_1_ap_vld = 1'b1;
+    if (((trunc_ln306_fu_94_p1 == 1'd0) & (icmp_ln306_fu_82_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        mc_0_we0_local = 1'b1;
     end else begin
-        mc_1_ap_vld = 1'b0;
+        mc_0_we0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd2) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_2_ap_vld = 1'b1;
+    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        mc_1_ce0_local = 1'b1;
     end else begin
-        mc_2_ap_vld = 1'b0;
+        mc_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd3) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_3_ap_vld = 1'b1;
+    if (((trunc_ln306_fu_94_p1 == 1'd1) & (icmp_ln306_fu_82_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        mc_1_we0_local = 1'b1;
     end else begin
-        mc_3_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd4) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_4_ap_vld = 1'b1;
-    end else begin
-        mc_4_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd5) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_5_ap_vld = 1'b1;
-    end else begin
-        mc_5_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd6) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_6_ap_vld = 1'b1;
-    end else begin
-        mc_6_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln306_fu_154_p1 == 3'd7) & (icmp_ln306_fu_142_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        mc_7_ap_vld = 1'b1;
-    end else begin
-        mc_7_ap_vld = 1'b0;
+        mc_1_we0_local = 1'b0;
     end
 end
 
@@ -263,7 +213,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln306_fu_148_p2 = (ap_sig_allocacmp_i_5 + 4'd1);
+assign add_ln306_fu_88_p2 = (ap_sig_allocacmp_i_5 + 4'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -277,24 +227,28 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln306_fu_142_p2 = ((ap_sig_allocacmp_i_5 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln306_fu_82_p2 = ((ap_sig_allocacmp_i_5 == 4'd8) ? 1'b1 : 1'b0);
 
-assign mc_0 = 64'd0;
+assign lshr_ln_fu_98_p4 = {{ap_sig_allocacmp_i_5[2:1]}};
 
-assign mc_1 = 64'd0;
+assign mc_0_address0 = zext_ln302_fu_108_p1;
 
-assign mc_2 = 64'd0;
+assign mc_0_ce0 = mc_0_ce0_local;
 
-assign mc_3 = 64'd0;
+assign mc_0_d0 = 64'd0;
 
-assign mc_4 = 64'd0;
+assign mc_0_we0 = mc_0_we0_local;
 
-assign mc_5 = 64'd0;
+assign mc_1_address0 = zext_ln302_fu_108_p1;
 
-assign mc_6 = 64'd0;
+assign mc_1_ce0 = mc_1_ce0_local;
 
-assign mc_7 = 64'd0;
+assign mc_1_d0 = 64'd0;
 
-assign trunc_ln306_fu_154_p1 = ap_sig_allocacmp_i_5[2:0];
+assign mc_1_we0 = mc_1_we0_local;
+
+assign trunc_ln306_fu_94_p1 = ap_sig_allocacmp_i_5[0:0];
+
+assign zext_ln302_fu_108_p1 = lshr_ln_fu_98_p4;
 
 endmodule //sikep503_kem_enc_hw_rdc_mont_9_Pipeline_VITIS_LOOP_306_1

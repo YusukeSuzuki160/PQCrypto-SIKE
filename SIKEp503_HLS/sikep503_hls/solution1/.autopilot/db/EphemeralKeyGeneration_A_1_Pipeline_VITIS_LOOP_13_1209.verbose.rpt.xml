@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1209'" level="0">
-<item name = "Date">Tue Sep 23 15:47:38 2025
+<item name = "Date">Wed Oct  8 20:37:23 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 1.914 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 1.482 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -80,8 +80,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln13_fu_95_p2">+, 0, 0, 12, 4, 1</column>
-<column name="icmp_ln13_fu_89_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="add_ln13_fu_87_p2">+, 0, 0, 12, 4, 1</column>
+<column name="icmp_ln13_fu_81_p2">icmp, 0, 0, 12, 4, 5</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -89,8 +89,8 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_287">9, 2, 4, 8</column>
-<column name="i_fu_44">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
+<column name="i_272_fu_42">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -98,8 +98,8 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="i_287_reg_130">4, 0, 4, 0</column>
-<column name="i_fu_44">4, 0, 4, 0</column>
+<column name="i_272_fu_42">4, 0, 4, 0</column>
+<column name="i_reg_122">4, 0, 4, 0</column>
 </table>
 </item>
 </section>
@@ -115,14 +115,13 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209, return value</column>
-<column name="npts_7">in, 3, ap_none, npts_7, scalar</column>
-<column name="pts_Z_address0">out, 7, ap_memory, pts_Z, array</column>
-<column name="pts_Z_ce0">out, 1, ap_memory, pts_Z, array</column>
-<column name="pts_Z_q0">in, 64, ap_memory, pts_Z, array</column>
-<column name="R_Z_address0">out, 4, ap_memory, R_Z, array</column>
-<column name="R_Z_ce0">out, 1, ap_memory, R_Z, array</column>
-<column name="R_Z_we0">out, 1, ap_memory, R_Z, array</column>
-<column name="R_Z_d0">out, 64, ap_memory, R_Z, array</column>
+<column name="phiQ_X_address0">out, 3, ap_memory, phiQ_X, array</column>
+<column name="phiQ_X_ce0">out, 1, ap_memory, phiQ_X, array</column>
+<column name="phiQ_X_we0">out, 1, ap_memory, phiQ_X, array</column>
+<column name="phiQ_X_d0">out, 64, ap_memory, phiQ_X, array</column>
+<column name="B_gen_1_address0">out, 6, ap_memory, B_gen_1, array</column>
+<column name="B_gen_1_ce0">out, 1, ap_memory, B_gen_1, array</column>
+<column name="B_gen_1_q0">in, 64, ap_memory, B_gen_1, array</column>
 </table>
 </item>
 </section>

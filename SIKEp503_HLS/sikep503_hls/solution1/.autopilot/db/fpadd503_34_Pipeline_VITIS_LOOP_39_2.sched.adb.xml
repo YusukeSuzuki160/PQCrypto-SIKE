@@ -61,10 +61,10 @@ newFuncRoot:1 %reuse_reg = alloca i32 1
 
 <Node id="6" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:2 %i_125 = alloca i32 1
+newFuncRoot:2 %i_117 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_125"/></StgValue>
+<StgValue><ssdm name="i_117"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -91,7 +91,7 @@ newFuncRoot:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %co
 
 <Node id="8" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:4 %store_ln28 = store i4 0, i4 %i_125
+newFuncRoot:4 %store_ln28 = store i4 0, i4 %i_117
 
 ]]></Node>
 <StgValue><ssdm name="store_ln28"/></StgValue>
@@ -169,7 +169,7 @@ for.inc29:0 %carry = phi i1 %borrowReg, void %for.inc29.split, i1 0, void %newFu
 
 <Node id="14" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc29:1 %i = load i4 %i_125
+for.inc29:1 %i = load i4 %i_117
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -260,12 +260,12 @@ for.inc29.split:4 %trunc_ln41 = trunc i4 %i
 </and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="4" op_0_bw="4" op_1_bw="1" op_2_bw="3">
+<Node id="24" bw="6" op_0_bw="6" op_1_bw="3" op_2_bw="3">
 <![CDATA[
-for.inc29.split:5 %zext_ln41_1 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln41
+for.inc29.split:5 %zext_ln41_2 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 5, i3 %trunc_ln41
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln41_1"/></StgValue>
+<StgValue><ssdm name="zext_ln41_2"/></StgValue>
 </operation>
 
 <operation id="21" st_id="2" stage="1" lat="1">
@@ -276,12 +276,12 @@ for.inc29.split:5 %zext_ln41_1 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i
 </and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="64" op_0_bw="4">
+<Node id="25" bw="64" op_0_bw="6">
 <![CDATA[
-for.inc29.split:6 %zext_ln41_2 = zext i4 %zext_ln41_1
+for.inc29.split:6 %zext_ln41_3 = zext i6 %zext_ln41_2
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln41_2"/></StgValue>
+<StgValue><ssdm name="zext_ln41_3"/></StgValue>
 </operation>
 
 <operation id="22" st_id="2" stage="1" lat="1">
@@ -294,7 +294,7 @@ for.inc29.split:6 %zext_ln41_2 = zext i4 %zext_ln41_1
 
 <Node id="26" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc29.split:7 %coeff_addr = getelementptr i64 %coeff, i64 0, i64 %zext_ln41_2
+for.inc29.split:7 %coeff_addr = getelementptr i64 %coeff, i64 0, i64 %zext_ln41_3
 
 ]]></Node>
 <StgValue><ssdm name="coeff_addr"/></StgValue>
@@ -342,7 +342,7 @@ for.inc29.split:10 %coeff_load = load i6 %coeff_addr
 
 <Node id="30" bw="1" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc29.split:11 %addr_cmp = icmp_eq  i64 %reuse_addr_reg_load, i64 %zext_ln41_2
+for.inc29.split:11 %addr_cmp = icmp_eq  i64 %reuse_addr_reg_load, i64 %zext_ln41_3
 
 ]]></Node>
 <StgValue><ssdm name="addr_cmp"/></StgValue>
@@ -390,7 +390,7 @@ for.inc29.split:14 %p503x2_1_load = load i3 %p503x2_1_addr
 
 <Node id="50" bw="0" op_0_bw="64" op_1_bw="64" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc29.split:31 %store_ln41 = store i64 %zext_ln41_2, i64 %reuse_addr_reg
+for.inc29.split:31 %store_ln41 = store i64 %zext_ln41_3, i64 %reuse_addr_reg
 
 ]]></Node>
 <StgValue><ssdm name="store_ln41"/></StgValue>
@@ -406,7 +406,7 @@ for.inc29.split:31 %store_ln41 = store i64 %zext_ln41_2, i64 %reuse_addr_reg
 
 <Node id="51" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc29.split:32 %store_ln28 = store i4 %add_ln39, i4 %i_125
+for.inc29.split:32 %store_ln28 = store i4 %add_ln39, i4 %i_117
 
 ]]></Node>
 <StgValue><ssdm name="store_ln28"/></StgValue>
@@ -422,7 +422,7 @@ for.inc29.split:32 %store_ln28 = store i4 %add_ln39, i4 %i_125
 
 <Node id="54" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-for.end31.exitStub:0 %write_ln41 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry_136_out, i1 %carry
+for.end31.exitStub:0 %write_ln41 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %carry_141_out, i1 %carry
 
 ]]></Node>
 <StgValue><ssdm name="write_ln41"/></StgValue>
@@ -456,7 +456,7 @@ for.end31.exitStub:1 %ret_ln0 = ret
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc29.split:1 %specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc29.split:1 %specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln28"/></StgValue>
@@ -486,7 +486,7 @@ for.inc29.split:2 %speclooptripcount_ln28 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc29.split:3 %specloopname_ln39 = specloopname void @_ssdm_op_SpecLoopName, void @empty_60
+for.inc29.split:3 %specloopname_ln39 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln39"/></StgValue>
@@ -592,10 +592,10 @@ for.inc29.split:16 %xor_ln105 = xor i64 %p503x2_1_load, i64 %reuse_select
 
 <Node id="36" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc29.split:17 %xor_ln105_23 = xor i64 %p503x2_1_load, i64 %tempReg
+for.inc29.split:17 %xor_ln105_25 = xor i64 %p503x2_1_load, i64 %tempReg
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln105_23"/></StgValue>
+<StgValue><ssdm name="xor_ln105_25"/></StgValue>
 </operation>
 
 <operation id="40" st_id="3" stage="1" lat="1">
@@ -607,7 +607,7 @@ for.inc29.split:17 %xor_ln105_23 = xor i64 %p503x2_1_load, i64 %tempReg
 
 <Node id="37" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc29.split:18 %or_ln105 = or i64 %xor_ln105_23, i64 %xor_ln105
+for.inc29.split:18 %or_ln105 = or i64 %xor_ln105_25, i64 %xor_ln105
 
 ]]></Node>
 <StgValue><ssdm name="or_ln105"/></StgValue>
@@ -622,10 +622,10 @@ for.inc29.split:18 %or_ln105 = or i64 %xor_ln105_23, i64 %xor_ln105
 
 <Node id="38" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-for.inc29.split:19 %xor_ln105_24 = xor i64 %reuse_select, i64 %or_ln105
+for.inc29.split:19 %xor_ln105_26 = xor i64 %reuse_select, i64 %or_ln105
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln105_24"/></StgValue>
+<StgValue><ssdm name="xor_ln105_26"/></StgValue>
 </operation>
 
 <operation id="42" st_id="3" stage="1" lat="1">
@@ -637,7 +637,7 @@ for.inc29.split:19 %xor_ln105_24 = xor i64 %reuse_select, i64 %or_ln105
 
 <Node id="39" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
-for.inc29.split:20 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_24, i32 63
+for.inc29.split:20 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_26, i32 63
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -682,10 +682,10 @@ for.inc29.split:22 %or_ln95 = or i64 %tempReg, i64 %sub_ln95
 
 <Node id="42" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
-for.inc29.split:23 %tmp_242 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
+for.inc29.split:23 %tmp_151 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
 
 ]]></Node>
-<StgValue><ssdm name="tmp_242"/></StgValue>
+<StgValue><ssdm name="tmp_151"/></StgValue>
 </operation>
 
 <operation id="46" st_id="3" stage="1" lat="1">
@@ -697,7 +697,7 @@ for.inc29.split:23 %tmp_242 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %
 
 <Node id="43" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc29.split:24 %xor_ln41 = xor i1 %tmp_242, i1 1
+for.inc29.split:24 %xor_ln41 = xor i1 %tmp_151, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln41"/></StgValue>

@@ -519,7 +519,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>empty_152</name>
+						<name>empty_150</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1189,7 +1189,7 @@
 					<Obj>
 						<type>2</type>
 						<id>68</id>
-						<name>mp_mul_5103</name>
+						<name>mp_mul_5</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1213,7 +1213,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.5103&gt;</content>
+				<content>&lt;constant:mp_mul.5&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_30">
 				<Value>
@@ -1718,8 +1718,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-1</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>264</mMinLatency>
+			<mMaxLatency>490</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1788,8 +1788,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-2</mMinLatency>
-			<mMaxLatency>-2</mMaxLatency>
+			<mMinLatency>246</mMinLatency>
+			<mMaxLatency>472</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -2395,7 +2395,7 @@
 		<count>6</count>
 		<item_version>0</item_version>
 		<item class_id="50" tracking_level="0" version="0">
-			<first>empty_152_fu_117</first>
+			<first>empty_150_fu_117</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2447,7 +2447,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_mp_mul_5103_fu_83</first>
+			<first>grp_mp_mul_5_fu_83</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

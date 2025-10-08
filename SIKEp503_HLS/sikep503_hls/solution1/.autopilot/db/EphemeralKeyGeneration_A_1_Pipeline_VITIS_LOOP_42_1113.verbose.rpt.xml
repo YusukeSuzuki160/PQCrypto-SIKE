@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1113'" level="0">
-<item name = "Date">Fri Sep 12 16:11:26 2025
+<item name = "Date">Wed Oct  8 20:28:01 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -52,8 +52,8 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 150, -</column>
-<column name="Register">-, -, 308, 32, -</column>
+<column name="Multiplexer">-, -, 0, 164, -</column>
+<column name="Register">-, -, 246, 32, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
@@ -80,19 +80,19 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln42_fu_149_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln49_1_fu_197_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln49_fu_187_p2">+, 0, 0, 15, 8, 7</column>
-<column name="add_ln57_1_fu_219_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln57_fu_209_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln42_fu_153_p2">+, 0, 0, 13, 6, 1</column>
+<column name="add_ln49_1_fu_188_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln49_fu_178_p2">+, 0, 0, 15, 8, 7</column>
+<column name="add_ln57_1_fu_210_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln57_fu_200_p2">+, 0, 0, 15, 8, 8</column>
 <column name="ap_block_pp0_stage0_11001_grp2">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_11001_grp4">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state2_io_grp1">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_489">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_493">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln42_fu_143_p2">icmp, 0, 0, 13, 6, 2</column>
-<column name="lshr_ln49_fu_245_p2">lshr, 0, 0, 182, 64, 64</column>
-<column name="lshr_ln57_fu_255_p2">lshr, 0, 0, 182, 64, 64</column>
+<column name="ap_condition_471">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_475">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln42_fu_147_p2">icmp, 0, 0, 13, 6, 2</column>
+<column name="lshr_ln49_fu_248_p2">lshr, 0, 0, 182, 64, 64</column>
+<column name="lshr_ln57_fu_258_p2">lshr, 0, 0, 182, 64, 64</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_11001_grp3">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_11001">or, 0, 0, 2, 1, 1</column>
@@ -110,19 +110,19 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter2_reg">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter3_reg">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i">9, 2, 6, 12</column>
+<column name="ap_sig_allocacmp_i_223">9, 2, 6, 12</column>
 <column name="gmem_blk_n_AW">9, 2, 1, 2</column>
 <column name="gmem_blk_n_B">9, 2, 1, 2</column>
 <column name="gmem_blk_n_W">9, 2, 1, 2</column>
-<column name="i_196_fu_68">9, 2, 6, 12</column>
+<column name="i_fu_76">9, 2, 6, 12</column>
 <column name="m_axi_gmem_0_AWADDR">14, 3, 64, 192</column>
 <column name="m_axi_gmem_0_WDATA">14, 3, 8, 24</column>
+<column name="t_86_address0_local">14, 3, 4, 12</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
-<column name="ap_block_pp0_stage0_subdone_grp0_done_reg">1, 0, 1, 0</column>
 <column name="ap_block_pp0_stage0_subdone_grp2_done_reg">1, 0, 1, 0</column>
 <column name="ap_block_pp0_stage0_subdone_grp3_done_reg">1, 0, 1, 0</column>
 <column name="ap_block_pp0_stage1_subdone_grp0_done_reg">1, 0, 1, 0</column>
@@ -137,16 +137,16 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
-<column name="gmem_addr_5_reg_295">64, 0, 64, 0</column>
-<column name="gmem_addr_reg_289">64, 0, 64, 0</column>
-<column name="i_196_fu_68">6, 0, 6, 0</column>
-<column name="i_reg_270">6, 0, 6, 0</column>
-<column name="icmp_ln42_reg_275">1, 0, 1, 0</column>
-<column name="t_93_load_1_reg_311">64, 0, 64, 0</column>
-<column name="trunc_ln49_reg_306">8, 0, 8, 0</column>
-<column name="trunc_ln57_reg_316">8, 0, 8, 0</column>
-<column name="zext_ln49_reg_301">6, 0, 64, 58</column>
-<column name="icmp_ln42_reg_275">64, 32, 1, 0</column>
+<column name="gmem_addr_5_reg_299">64, 0, 64, 0</column>
+<column name="gmem_addr_reg_293">64, 0, 64, 0</column>
+<column name="i_223_reg_274">6, 0, 6, 0</column>
+<column name="i_fu_76">6, 0, 6, 0</column>
+<column name="icmp_ln42_reg_279">1, 0, 1, 0</column>
+<column name="trunc_ln49_reg_315">8, 0, 8, 0</column>
+<column name="trunc_ln57_reg_320">8, 0, 8, 0</column>
+<column name="word_idx_1_reg_283">3, 0, 3, 0</column>
+<column name="zext_ln49_reg_310">6, 0, 64, 58</column>
+<column name="icmp_ln42_reg_279">64, 32, 1, 0</column>
 </table>
 </item>
 </section>
@@ -208,12 +208,9 @@
 <column name="m_axi_gmem_0_BRESP">in, 2, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_0_BID">in, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_0_BUSER">in, 1, m_axi, gmem, pointer</column>
-<column name="t_93_address0">out, 4, ap_memory, t_93, array</column>
-<column name="t_93_ce0">out, 1, ap_memory, t_93, array</column>
-<column name="t_93_q0">in, 64, ap_memory, t_93, array</column>
-<column name="t_93_address1">out, 4, ap_memory, t_93, array</column>
-<column name="t_93_ce1">out, 1, ap_memory, t_93, array</column>
-<column name="t_93_q1">in, 64, ap_memory, t_93, array</column>
+<column name="t_86_address0">out, 4, ap_memory, t_86, array</column>
+<column name="t_86_ce0">out, 1, ap_memory, t_86, array</column>
+<column name="t_86_q0">in, 64, ap_memory, t_86, array</column>
 <column name="PublicKeyA">in, 64, ap_none, PublicKeyA, scalar</column>
 </table>
 </item>

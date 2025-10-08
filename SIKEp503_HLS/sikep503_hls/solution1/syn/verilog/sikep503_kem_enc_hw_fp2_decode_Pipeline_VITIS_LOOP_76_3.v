@@ -225,7 +225,7 @@ wire   [63:0] or_ln83_fu_327_p2;
 reg   [63:0] reuse_addr_reg_fu_86;
 reg   [63:0] reuse_reg_fu_90;
 wire   [63:0] or_ln91_fu_371_p2;
-reg   [5:0] i_235_fu_94;
+reg   [5:0] i_225_fu_94;
 wire   [5:0] add_ln76_fu_200_p2;
 reg   [5:0] ap_sig_allocacmp_i;
 reg    x_0_ce0_local;
@@ -238,10 +238,10 @@ wire   [63:0] zext_ln76_fu_206_p1;
 wire   [6:0] zext_ln76_1_fu_210_p1;
 wire   [6:0] add_ln91_1_fu_226_p2;
 wire   [63:0] zext_ln91_2_fu_232_p1;
-wire   [4:0] tmp_11_fu_262_p3;
+wire   [4:0] tmp_5_fu_262_p3;
 wire   [5:0] shl_ln83_1_fu_291_p2;
 wire   [63:0] zext_ln83_fu_288_p1;
-wire   [4:0] tmp_12_fu_306_p3;
+wire   [4:0] tmp_6_fu_306_p3;
 wire   [63:0] reuse_select9_fu_320_p3;
 wire   [63:0] shl_ln83_fu_300_p2;
 wire   [63:0] zext_ln91_fu_353_p1;
@@ -283,7 +283,7 @@ initial begin
 #0 reuse_reg4_fu_82 = 64'd0;
 #0 reuse_addr_reg_fu_86 = 64'd0;
 #0 reuse_reg_fu_90 = 64'd0;
-#0 i_235_fu_94 = 6'd0;
+#0 i_225_fu_94 = 6'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -471,9 +471,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         if (((icmp_ln76_fu_194_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_235_fu_94 <= add_ln76_fu_200_p2;
+            i_225_fu_94 <= add_ln76_fu_200_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_235_fu_94 <= 6'd0;
+            i_225_fu_94 <= 6'd0;
         end
     end
 end
@@ -624,7 +624,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
         ap_sig_allocacmp_i = 6'd0;
     end else begin
-        ap_sig_allocacmp_i = i_235_fu_94;
+        ap_sig_allocacmp_i = i_225_fu_94;
     end
 end
 
@@ -924,9 +924,9 @@ assign shl_ln83_fu_300_p2 = zext_ln83_fu_288_p1 << zext_ln83_1_fu_296_p1;
 
 assign shl_ln91_fu_356_p2 = zext_ln91_fu_353_p1 << zext_ln83_1_reg_470;
 
-assign tmp_11_fu_262_p3 = {{x_0_offset}, {tmp_s_fu_253_p4}};
+assign tmp_5_fu_262_p3 = {{x_0_offset}, {tmp_s_fu_253_p4}};
 
-assign tmp_12_fu_306_p3 = {{x_1_offset}, {tmp_s_reg_455}};
+assign tmp_6_fu_306_p3 = {{x_1_offset}, {tmp_s_reg_455}};
 
 assign tmp_s_fu_253_p4 = {{i_reg_428_pp0_iter4_reg[5:3]}};
 
@@ -952,11 +952,11 @@ assign zext_ln76_fu_206_p1 = ap_sig_allocacmp_i;
 
 assign zext_ln83_1_fu_296_p1 = shl_ln83_1_fu_291_p2;
 
-assign zext_ln83_2_fu_269_p1 = tmp_11_fu_262_p3;
+assign zext_ln83_2_fu_269_p1 = tmp_5_fu_262_p3;
 
 assign zext_ln83_fu_288_p1 = gmem_addr_read_reg_450;
 
-assign zext_ln91_1_fu_312_p1 = tmp_12_fu_306_p3;
+assign zext_ln91_1_fu_312_p1 = tmp_6_fu_306_p3;
 
 assign zext_ln91_2_fu_232_p1 = add_ln91_1_fu_226_p2;
 

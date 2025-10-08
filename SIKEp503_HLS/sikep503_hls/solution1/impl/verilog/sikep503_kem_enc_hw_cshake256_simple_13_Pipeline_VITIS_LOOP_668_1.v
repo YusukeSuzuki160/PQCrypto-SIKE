@@ -16,15 +16,15 @@ module sikep503_kem_enc_hw_cshake256_simple_13_Pipeline_VITIS_LOOP_668_1 (
         t_address0,
         t_ce0,
         t_q0,
-        t_311_address0,
-        t_311_ce0,
-        t_311_q0,
-        t_312_address0,
-        t_312_ce0,
-        t_312_q0,
-        t_313_address0,
-        t_313_ce0,
-        t_313_q0,
+        t_77_address0,
+        t_77_ce0,
+        t_77_q0,
+        t_78_address0,
+        t_78_ce0,
+        t_78_q0,
+        t_79_address0,
+        t_79_ce0,
+        t_79_q0,
         output_r_address0,
         output_r_ce0,
         output_r_we0,
@@ -42,15 +42,15 @@ output   ap_ready;
 output  [5:0] t_address0;
 output   t_ce0;
 input  [7:0] t_q0;
-output  [5:0] t_311_address0;
-output   t_311_ce0;
-input  [7:0] t_311_q0;
-output  [5:0] t_312_address0;
-output   t_312_ce0;
-input  [7:0] t_312_q0;
-output  [5:0] t_313_address0;
-output   t_313_ce0;
-input  [7:0] t_313_q0;
+output  [5:0] t_77_address0;
+output   t_77_ce0;
+input  [7:0] t_77_q0;
+output  [5:0] t_78_address0;
+output   t_78_ce0;
+input  [7:0] t_78_q0;
+output  [5:0] t_79_address0;
+output   t_79_ce0;
+input  [7:0] t_79_q0;
 output  [4:0] output_r_address0;
 output   output_r_ce0;
 output   output_r_we0;
@@ -73,14 +73,14 @@ wire    ap_block_pp0_stage0_11001;
 wire   [63:0] zext_ln640_fu_153_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln668_fu_166_p1;
-reg   [4:0] i_264_fu_54;
+reg   [4:0] i_193_fu_54;
 wire   [4:0] add_ln668_fu_137_p2;
 wire    ap_loop_init;
 reg   [4:0] ap_sig_allocacmp_i;
 reg    t_ce0_local;
-reg    t_311_ce0_local;
-reg    t_312_ce0_local;
-reg    t_313_ce0_local;
+reg    t_77_ce0_local;
+reg    t_78_ce0_local;
+reg    t_79_ce0_local;
 reg    output_r_we0_local;
 wire   [7:0] tmp_fu_173_p11;
 reg    output_r_ce0_local;
@@ -105,7 +105,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_264_fu_54 = 5'd0;
+#0 i_193_fu_54 = 5'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -123,11 +123,11 @@ end
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_9_2_8_1_1_U2815(
+sparsemux_9_2_8_1_1_U1508(
     .din0(t_q0),
-    .din1(t_311_q0),
-    .din2(t_312_q0),
-    .din3(t_313_q0),
+    .din1(t_77_q0),
+    .din2(t_78_q0),
+    .din3(t_79_q0),
     .def(tmp_fu_173_p9),
     .sel(tmp_fu_173_p10),
     .dout(tmp_fu_173_p11)
@@ -183,9 +183,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln668_fu_131_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_264_fu_54 <= add_ln668_fu_137_p2;
+            i_193_fu_54 <= add_ln668_fu_137_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_264_fu_54 <= 5'd0;
+            i_193_fu_54 <= 5'd0;
         end
     end
 end
@@ -240,7 +240,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 5'd0;
     end else begin
-        ap_sig_allocacmp_i = i_264_fu_54;
+        ap_sig_allocacmp_i = i_193_fu_54;
     end
 end
 
@@ -262,25 +262,25 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        t_311_ce0_local = 1'b1;
+        t_77_ce0_local = 1'b1;
     end else begin
-        t_311_ce0_local = 1'b0;
+        t_77_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        t_312_ce0_local = 1'b1;
+        t_78_ce0_local = 1'b1;
     end else begin
-        t_312_ce0_local = 1'b0;
+        t_78_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        t_313_ce0_local = 1'b1;
+        t_79_ce0_local = 1'b1;
     end else begin
-        t_313_ce0_local = 1'b0;
+        t_79_ce0_local = 1'b0;
     end
 end
 
@@ -335,17 +335,17 @@ assign output_r_d0 = tmp_fu_173_p11;
 
 assign output_r_we0 = output_r_we0_local;
 
-assign t_311_address0 = zext_ln640_fu_153_p1;
+assign t_77_address0 = zext_ln640_fu_153_p1;
 
-assign t_311_ce0 = t_311_ce0_local;
+assign t_77_ce0 = t_77_ce0_local;
 
-assign t_312_address0 = zext_ln640_fu_153_p1;
+assign t_78_address0 = zext_ln640_fu_153_p1;
 
-assign t_312_ce0 = t_312_ce0_local;
+assign t_78_ce0 = t_78_ce0_local;
 
-assign t_313_address0 = zext_ln640_fu_153_p1;
+assign t_79_address0 = zext_ln640_fu_153_p1;
 
-assign t_313_ce0 = t_313_ce0_local;
+assign t_79_ce0 = t_79_ce0_local;
 
 assign t_address0 = zext_ln640_fu_153_p1;
 

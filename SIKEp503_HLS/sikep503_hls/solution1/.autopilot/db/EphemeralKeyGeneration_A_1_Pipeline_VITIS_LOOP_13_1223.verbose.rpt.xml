@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1223'" level="0">
-<item name = "Date">Tue Sep 23 15:25:07 2025
+<item name = "Date">Wed Oct  8 20:38:56 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -90,7 +90,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_297">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_276">9, 2, 4, 8</column>
 <column name="i_fu_46">9, 2, 4, 8</column>
 </table>
 </item>
@@ -116,7 +116,7 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1223, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1223, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1223, return value</column>
-<column name="zext_ln14_17">in, 7, ap_none, zext_ln14_17, scalar</column>
+<column name="zext_ln14_11">in, 7, ap_none, zext_ln14_11, scalar</column>
 <column name="pts_Z_address0">out, 7, ap_memory, pts_Z, array</column>
 <column name="pts_Z_ce0">out, 1, ap_memory, pts_Z, array</column>
 <column name="pts_Z_q0">in, 64, ap_memory, pts_Z, array</column>

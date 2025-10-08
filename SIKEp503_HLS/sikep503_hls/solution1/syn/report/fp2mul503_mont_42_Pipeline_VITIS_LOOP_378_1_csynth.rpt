@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_42_Pipeline_VITIS_LOOP_378_1'
 ================================================================
-* Date:           Tue Sep 23 15:47:22 2025
+* Date:           Wed Oct  8 20:39:47 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  3.722 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  4.133 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -54,14 +54,14 @@
 |         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
 +---------------------+---------+-------+---------+---------+------+
 |DSP                  |        -|      -|        -|        -|     -|
-|Expression           |        -|      -|        0|      556|     -|
+|Expression           |        -|      -|        0|      682|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
 |Instance             |        -|      -|        -|        -|     -|
 |Memory               |        -|      -|        -|        -|     -|
 |Multiplexer          |        -|      -|        0|       45|     -|
 |Register             |        -|      -|       13|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|      0|       13|      601|     0|
+|Total                |        0|      0|       13|      727|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
@@ -86,25 +86,27 @@
     N/A
 
     * Expression: 
-    +------------------------+----------+----+---+----+------------+------------+
-    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +------------------------+----------+----+---+----+------------+------------+
-    |add_ln378_fu_124_p2     |         +|   0|  0|  12|           4|           1|
-    |add_ln381_fu_151_p2     |         +|   0|  0|  71|          64|          64|
-    |tempReg_fu_145_p2       |         +|   0|  0|  71|          64|          64|
-    |and_ln381_fu_202_p2     |       and|   0|  0|  64|          64|          64|
-    |ap_condition_225        |       and|   0|  0|   2|           1|           1|
-    |icmp_ln378_fu_118_p2    |      icmp|   0|  0|  12|           4|           5|
-    |or_ln381_31_fu_214_p2   |        or|   0|  0|  64|          64|          64|
-    |or_ln381_fu_170_p2      |        or|   0|  0|  64|          64|          64|
-    |ap_enable_pp0           |       xor|   0|  0|   2|           1|           2|
-    |xor_ln381_87_fu_164_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln381_88_fu_184_p2  |       xor|   0|  0|   2|           1|           2|
-    |xor_ln381_89_fu_208_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln381_fu_158_p2     |       xor|   0|  0|  64|          64|          64|
-    +------------------------+----------+----+---+----+------------+------------+
-    |Total                   |          |   0|  0| 556|         523|         523|
-    +------------------------+----------+----+---+----+------------+------------+
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln378_fu_158_p2       |         +|   0|  0|  12|           4|           1|
+    |add_ln381_fu_220_p2       |         +|   0|  0|  71|          64|          64|
+    |tempReg_fu_206_p2         |         +|   0|  0|  71|          64|          64|
+    |and_ln381_fu_271_p2       |       and|   0|  0|  64|          64|          64|
+    |ap_condition_274          |       and|   0|  0|   2|           1|           1|
+    |icmp_ln378_fu_152_p2      |      icmp|   0|  0|  12|           4|           5|
+    |or_ln381_40_fu_283_p2     |        or|   0|  0|  64|          64|          64|
+    |or_ln381_fu_239_p2        |        or|   0|  0|  64|          64|          64|
+    |select_ln381_3_fu_212_p3  |    select|   0|  0|  63|           1|          64|
+    |select_ln381_fu_194_p3    |    select|   0|  0|  63|           1|          64|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    |xor_ln381_113_fu_233_p2   |       xor|   0|  0|  64|          64|          64|
+    |xor_ln381_114_fu_253_p2   |       xor|   0|  0|   2|           1|           2|
+    |xor_ln381_115_fu_277_p2   |       xor|   0|  0|  64|          64|          64|
+    |xor_ln381_fu_227_p2       |       xor|   0|  0|  64|          64|          64|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 682|         525|         651|
+    +--------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
     +-------------------------+----+-----------+-----+-----------+
@@ -112,9 +114,9 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_248   |   9|          2|    4|          8|
-    |carry_reg_99             |   9|          2|    1|          2|
-    |i_fu_56                  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_241   |   9|          2|    4|          8|
+    |carry_reg_133            |   9|          2|    1|          2|
+    |i_fu_64                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  45|         10|   11|         22|
     +-------------------------+----+-----------+-----+-----------+
@@ -126,12 +128,12 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |carry_reg_99             |  1|   0|    1|          0|
-    |i_fu_56                  |  4|   0|    4|          0|
-    |icmp_ln378_reg_235       |  1|   0|    1|          0|
-    |zext_ln378_reg_239       |  4|   0|   64|         60|
+    |carry_reg_133            |  1|   0|    1|          0|
+    |i_241_reg_304            |  4|   0|    4|          0|
+    |i_fu_64                  |  4|   0|    4|          0|
+    |icmp_ln378_reg_310       |  1|   0|    1|          0|
     +-------------------------+---+----+-----+-----------+
-    |Total                    | 13|   0|   73|         60|
+    |Total                    | 13|   0|   13|          0|
     +-------------------------+---+----+-----+-----------+
 
 
@@ -140,24 +142,30 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+---------------------------------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |                Source Object                |    C Type    |
-+--------------+-----+-----+------------+---------------------------------------------+--------------+
-|ap_clk        |   in|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
-|ap_rst        |   in|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
-|ap_start      |   in|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
-|ap_done       |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
-|ap_idle       |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
-|ap_ready      |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
-|c_0_address0  |  out|    3|   ap_memory|                                          c_0|         array|
-|c_0_ce0       |  out|    1|   ap_memory|                                          c_0|         array|
-|c_0_q0        |   in|   64|   ap_memory|                                          c_0|         array|
-|c_1_address0  |  out|    3|   ap_memory|                                          c_1|         array|
-|c_1_ce0       |  out|    1|   ap_memory|                                          c_1|         array|
-|c_1_q0        |   in|   64|   ap_memory|                                          c_1|         array|
-|t1_address0   |  out|    3|   ap_memory|                                           t1|         array|
-|t1_ce0        |  out|    1|   ap_memory|                                           t1|         array|
-|t1_we0        |  out|    1|   ap_memory|                                           t1|         array|
-|t1_d0         |  out|   64|   ap_memory|                                           t1|         array|
-+--------------+-----+-----+------------+---------------------------------------------+--------------+
++----------------+-----+-----+------------+---------------------------------------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |                Source Object                |    C Type    |
++----------------+-----+-----+------------+---------------------------------------------+--------------+
+|ap_clk          |   in|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
+|ap_rst          |   in|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
+|ap_start        |   in|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
+|ap_done         |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
+|ap_idle         |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
+|ap_ready        |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.42_Pipeline_VITIS_LOOP_378_1|  return value|
+|a_0_0_address0  |  out|    2|   ap_memory|                                        a_0_0|         array|
+|a_0_0_ce0       |  out|    1|   ap_memory|                                        a_0_0|         array|
+|a_0_0_q0        |   in|   64|   ap_memory|                                        a_0_0|         array|
+|a_0_1_address0  |  out|    2|   ap_memory|                                        a_0_1|         array|
+|a_0_1_ce0       |  out|    1|   ap_memory|                                        a_0_1|         array|
+|a_0_1_q0        |   in|   64|   ap_memory|                                        a_0_1|         array|
+|a_1_0_address0  |  out|    2|   ap_memory|                                        a_1_0|         array|
+|a_1_0_ce0       |  out|    1|   ap_memory|                                        a_1_0|         array|
+|a_1_0_q0        |   in|   64|   ap_memory|                                        a_1_0|         array|
+|a_1_1_address0  |  out|    2|   ap_memory|                                        a_1_1|         array|
+|a_1_1_ce0       |  out|    1|   ap_memory|                                        a_1_1|         array|
+|a_1_1_q0        |   in|   64|   ap_memory|                                        a_1_1|         array|
+|t1_address0     |  out|    3|   ap_memory|                                           t1|         array|
+|t1_ce0          |  out|    1|   ap_memory|                                           t1|         array|
+|t1_we0          |  out|    1|   ap_memory|                                           t1|         array|
+|t1_d0           |  out|   64|   ap_memory|                                           t1|         array|
++----------------+-----+-----+------------+---------------------------------------------+--------------+
 

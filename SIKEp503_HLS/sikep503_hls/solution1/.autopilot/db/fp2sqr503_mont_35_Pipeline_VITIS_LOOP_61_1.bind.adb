@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>coeff</name>
+						<name>R_Z</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>48</array_size>
+				<array_size>16</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -128,7 +128,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_156</name>
+						<name>i_149</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -191,7 +191,7 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>i_156_write_ln56</name>
+						<name>i_149_write_ln56</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -662,7 +662,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>coeff_addr</name>
+						<name>R_Z_addr</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -704,7 +704,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>6</bitwidth>
+					<bitwidth>4</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -727,7 +727,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>coeff_load</name>
+						<name>R_Z_load</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -918,7 +918,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>zext_ln63_30</name>
+						<name>zext_ln63_31</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -981,7 +981,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>coeff_addr_7</name>
+						<name>R_Z_addr_5</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -1023,7 +1023,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>6</bitwidth>
+					<bitwidth>4</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1046,7 +1046,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>coeff_load_3</name>
+						<name>R_Z_load_1</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -1244,7 +1244,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>xor_ln105_51</name>
+						<name>xor_ln105_53</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1386,7 +1386,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>xor_ln105_52</name>
+						<name>xor_ln105_54</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1685,7 +1685,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>tmp_271</name>
+						<name>tmp_180</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -2198,7 +2198,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>i_156_write_ln56</name>
+						<name>i_149_write_ln56</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -4058,7 +4058,7 @@
 						<item class_id="47" tracking_level="0" version="0">
 							<first class_id="48" tracking_level="0" version="0">
 								<first class_id_reference="9" object_id_reference="_19"></first>
-								<second>core:RAM_1P:coeff::load:store</second>
+								<second>core:RAM_1P:R_Z::load:store</second>
 							</first>
 							<second>26</second>
 						</item>
@@ -4333,6 +4333,22 @@
 		<count>25</count>
 		<item_version>0</item_version>
 		<item class_id="53" tracking_level="0" version="0">
+			<first>R_Z_addr_5_gep_fu_78</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>25</item>
+			</second>
+		</item>
+		<item>
+			<first>R_Z_addr_gep_fu_65</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>20</item>
+			</second>
+		</item>
+		<item>
 			<first>add_ln61_fu_126</first>
 			<second>
 				<count>1</count>
@@ -4365,23 +4381,7 @@
 			</second>
 		</item>
 		<item>
-			<first>coeff_addr_7_gep_fu_78</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>25</item>
-			</second>
-		</item>
-		<item>
-			<first>coeff_addr_gep_fu_65</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>20</item>
-			</second>
-		</item>
-		<item>
-			<first>i_156_fu_54</first>
+			<first>i_149_fu_54</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4445,7 +4445,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_271_fu_205</first>
+			<first>tmp_180_fu_205</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4469,7 +4469,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_51_fu_168</first>
+			<first>xor_ln105_53_fu_168</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4477,7 +4477,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_52_fu_180</first>
+			<first>xor_ln105_54_fu_180</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4509,7 +4509,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln63_30_fu_153</first>
+			<first>zext_ln63_31_fu_153</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4582,7 +4582,7 @@
 		<item_version>0</item_version>
 		<item class_id="55" tracking_level="0" version="0">
 			<first class_id="56" tracking_level="0" version="0">
-				<first>coeff</first>
+				<first>R_Z</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -4686,6 +4686,30 @@
 		<count>9</count>
 		<item_version>0</item_version>
 		<item>
+			<first>R_Z_addr_5_reg_275</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>25</item>
+			</second>
+		</item>
+		<item>
+			<first>R_Z_addr_reg_258</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>20</item>
+			</second>
+		</item>
+		<item>
+			<first>R_Z_load_reg_268</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>21</item>
+			</second>
+		</item>
+		<item>
 			<first>borrowReg_reg_280</first>
 			<second>
 				<count>1</count>
@@ -4702,31 +4726,7 @@
 			</second>
 		</item>
 		<item>
-			<first>coeff_addr_7_reg_275</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>25</item>
-			</second>
-		</item>
-		<item>
-			<first>coeff_addr_reg_258</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>20</item>
-			</second>
-		</item>
-		<item>
-			<first>coeff_load_reg_268</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>21</item>
-			</second>
-		</item>
-		<item>
-			<first>i_156_reg_242</first>
+			<first>i_149_reg_242</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4786,22 +4786,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item class_id="58" tracking_level="0" version="0">
-			<first>borrow_out</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>write</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>46</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>coeff(p0)</first>
+			<first>R_Z(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4814,6 +4799,21 @@
 						<item>21</item>
 						<item>26</item>
 						<item>26</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>borrow_out</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>write</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>46</item>
 					</second>
 				</item>
 			</second>

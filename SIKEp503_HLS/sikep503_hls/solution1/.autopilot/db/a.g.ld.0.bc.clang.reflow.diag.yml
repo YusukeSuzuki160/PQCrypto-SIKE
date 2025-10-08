@@ -310,14 +310,136 @@ Args:
     DebugLoc:        { File: src/fpx.cpp, Line: 132, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 123, Column: 28 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE17get_bits_as_chunkEPKmjj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::CHUNK_MASK()'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 72, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 153, Column: 19 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE11ChunkPacker4pushE7ap_uintILi64EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::CHUNK_MASK()'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 72, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::push(ap_uint<64>)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 138, 
+                       Column: 0 }
+  - String:          ''''
+...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 295, Column: 5 }
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 197, Column: 26 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::ceil_div_u(unsigned int, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 202, Column: 10 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::init(unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 134, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 239, Column: 10 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::flush()'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 171, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 237, Column: 10 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::push(ap_uint<64>)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 138, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 230, Column: 43 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::CHUNK_MASK()'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 72, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 224, Column: 28 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 79, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_packed.hpp, Line: 109, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
@@ -326,27 +448,27 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -369,7 +491,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
@@ -577,7 +699,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
 Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
@@ -954,7 +1076,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 75, Column: 5 }
 Function:        _Z13fpsqr503_montPKmPm
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpsqr503_mont(unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 67, Column: 0 }
@@ -1805,6 +1927,68 @@ Args:
     DebugLoc:        { File: src/sikep503_kem_enc_hw.cpp, Line: 32, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '16'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_207_2
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:207:23'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '16'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_188_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:188:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          '''.'
+...
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
@@ -2212,11 +2396,12 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 295, Column: 5 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_packed.hpp, Line: 109, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
@@ -2225,27 +2410,27 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -2268,7 +2453,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
@@ -2476,7 +2661,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
 Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
@@ -2853,7 +3038,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 75, Column: 5 }
 Function:        _Z13fpsqr503_montPKmPm
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpsqr503_mont(unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 67, Column: 0 }
@@ -4044,20 +4229,6 @@ Args:
   - String:          ''' into '''
   - Caller:          'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 132, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
-Function:        _Z6mp_mulPKmS0_Pmj
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_packed.hpp, Line: 109, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -5451,38 +5622,6 @@ Args:
   - OrigID:          for.body11.load.24
 ...
 --- !Missed
-Pass:            reflow-burst-inference
-Name:            CouldNotAnalyzeBoundsPattern
-DebugLoc:        { File: src/generic/mpx_packed.hpp, Line: 133, Column: 29 }
-Function:        _Z6mp_mulPKmS0_Pmj
-Args:            
-  - String:          Could not analyze the loop bounds
-  - String:          ' _XLX_SEP_ '
-  - LoopName:        VITIS_LOOP_133_4
-  - String:          ' '
-  - LoopLoc:         'src/generic/mpx_packed.hpp:133:29'
-  - String:          ' '
-  - Function:        'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            CouldNotAnalyzeBoundsPattern
-DebugLoc:        { File: src/generic/mpx_packed.hpp, Line: 150, Column: 31 }
-Function:        _Z6mp_mulPKmS0_Pmj
-Args:            
-  - String:          Could not analyze the loop bounds
-  - String:          ' _XLX_SEP_ '
-  - LoopName:        VITIS_LOOP_150_5
-  - String:          ' '
-  - LoopLoc:         'src/generic/mpx_packed.hpp:150:31'
-  - String:          ' '
-  - Function:        'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
-  - String:          ' '
-...
---- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
 DebugLoc:        { File: src/sike.cpp, Line: 111, Column: 3 }
@@ -5806,6 +5945,28 @@ Args:
     DebugLoc:        { File: src/sidh.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          '''('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:142:25'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
 --- !HLSReportInfo
 Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
@@ -5951,6 +6112,86 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '> at '
+  - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
   - LoopName:        VITIS_LOOP_42_1
   - String:          '> at '
   - LoopLoc:         'src/sidh.cpp:42:22'
@@ -5994,6 +6235,16 @@ Args:
   - LoopName:        VITIS_LOOP_13_1
   - String:          '> at '
   - LoopLoc:         'src/fpx.cpp:13:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         ''
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6051,9 +6302,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_313_3
+  - LoopName:        VITIS_LOOP_378_1
   - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.cpp:313:27'
+  - LoopLoc:         'src/fpx.cpp:378:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6061,9 +6312,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_339_5
+  - LoopName:        VITIS_LOOP_378_1
   - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.cpp:339:27'
+  - LoopLoc:         'src/fpx.cpp:378:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6071,9 +6322,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_111_1
+  - LoopName:        VITIS_LOOP_160_1
   - String:          '> at '
-  - LoopLoc:         'src/generic/mpx_packed.hpp:111:25'
+  - LoopLoc:         'src/fpx.cpp:160:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6081,9 +6332,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_150_5
+  - LoopName:        VITIS_LOOP_187_1
   - String:          '> at '
-  - LoopLoc:         'src/generic/mpx_packed.hpp:150:31'
+  - LoopLoc:         'src/fpx.cpp:187:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6091,9 +6342,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_133_4
+  - LoopName:        VITIS_LOOP_378_1
   - String:          '> at '
-  - LoopLoc:         'src/generic/mpx_packed.hpp:133:29'
+  - LoopLoc:         'src/fpx.cpp:378:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6101,9 +6352,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        unknown
+  - LoopName:        VITIS_LOOP_160_1
   - String:          '> at '
-  - LoopLoc:         ''
+  - LoopLoc:         'src/fpx.cpp:160:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6111,9 +6362,59 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_305_1
+  - LoopName:        VITIS_LOOP_105_1
   - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.cpp:305:23'
+  - LoopLoc:         'src/generic/fp_generic.cpp:105:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_111_2
+  - String:          '> at '
+  - LoopLoc:         'src/generic/fp_generic.cpp:111:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_306_1
+  - String:          '> at '
+  - LoopLoc:         'src/generic/fp_generic.cpp:306:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_314_3
+  - String:          '> at '
+  - LoopLoc:         'src/generic/fp_generic.cpp:314:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_340_5
+  - String:          '> at '
+  - LoopLoc:         'src/generic/fp_generic.cpp:340:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_177_1
+  - String:          '> at '
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:177:25'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6384,166 +6685,6 @@ Args:
   - LoopName:        VITIS_LOOP_46_3
   - String:          '> at '
   - LoopLoc:         'src/generic/fp_generic.cpp:46:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_160_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:160:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_378_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:378:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_187_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:187:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_160_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:160:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_378_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:378:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_378_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:378:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_13_1
-  - String:          '> at '
-  - LoopLoc:         'src/fpx.cpp:13:22'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_111_2
-  - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.cpp:111:23'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_105_1
-  - String:          '> at '
-  - LoopLoc:         'src/generic/fp_generic.cpp:105:23'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -6959,6 +7100,16 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 37, Column: 20 }
 Function:        _Z16cshake256_simplePhytPKhy.32
 Args:            
@@ -7065,6 +7216,22 @@ Args:
   - String:          cshake256_simple
   - String:          ''' completely with a factor of '
   - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -7213,17 +7380,17 @@ Args:
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            FlattenOffInference
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 333, Column: 23 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 334, Column: 23 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        VITIS_LOOP_333_4
+  - LoopName:        VITIS_LOOP_334_4
   - String:          '''.'
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 333, Column: 23 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 334, Column: 23 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - PragmaType:      loop_flatten
@@ -7234,28 +7401,28 @@ Args:
   - String:          ' '
   - PragmaFunction:  rdc_mont
   - String:          ' '
-  - PragmaSrcLoc:    'src/generic/fp_generic.cpp:333:23'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 333, Column: 23 }
-  - LoopName:        VITIS_LOOP_333_4
+  - PragmaSrcLoc:    'src/generic/fp_generic.cpp:334:23'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 334, Column: 23 }
+  - LoopName:        VITIS_LOOP_334_4
   - String:          ' '
-  - LoopLoc:         'src/generic/fp_generic.cpp:333:23'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 333, Column: 23 }
+  - LoopLoc:         'src/generic/fp_generic.cpp:334:23'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 334, Column: 23 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            FlattenOffInference
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 311, Column: 23 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 312, Column: 23 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        VITIS_LOOP_311_2
+  - LoopName:        VITIS_LOOP_312_2
   - String:          '''.'
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 311, Column: 23 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 312, Column: 23 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - PragmaType:      loop_flatten
@@ -7266,12 +7433,12 @@ Args:
   - String:          ' '
   - PragmaFunction:  rdc_mont
   - String:          ' '
-  - PragmaSrcLoc:    'src/generic/fp_generic.cpp:311:23'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 311, Column: 23 }
-  - LoopName:        VITIS_LOOP_311_2
+  - PragmaSrcLoc:    'src/generic/fp_generic.cpp:312:23'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 312, Column: 23 }
+  - LoopName:        VITIS_LOOP_312_2
   - String:          ' '
-  - LoopLoc:         'src/generic/fp_generic.cpp:311:23'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 311, Column: 23 }
+  - LoopLoc:         'src/generic/fp_generic.cpp:312:23'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 312, Column: 23 }
   - String:          ' '
 ...
 --- !Passed
@@ -7342,7 +7509,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoSmallArrayPartition
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 302, Column: 13 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 303, Column: 13 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - String:          'Automatically partitioning small array '''
@@ -7455,44 +7622,6 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 11 }
-Function:        EphemeralKeyGeneration_A
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=1 type=complete  variable=t0.i.i'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  EphemeralKeyGeneration_A
-  - String:          ' '
-  - varLoc:          'src/ec_isogeny.cpp:13:11'
-  - String:          ' '
-  - VarName:         t0.i.i
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 11 }
-Function:        EphemeralKeyGeneration_A
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            complete
-  - String:          ' dim='
-  - Dim:             '1'
-  - String:          ''' for array '''
-  - Name:            t0.i.i
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 11 }
 Function:        EphemeralSecretAgreement_A
 Args:            
   - PragmaType:      array_partition
@@ -7530,8 +7659,46 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 15 }
+DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 11 }
 Function:        EphemeralKeyGeneration_A
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=t0.i.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  EphemeralKeyGeneration_A
+  - String:          ' '
+  - varLoc:          'src/ec_isogeny.cpp:13:11'
+  - String:          ' '
+  - VarName:         t0.i.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 11 }
+Function:        EphemeralKeyGeneration_A
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            t0.i.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 15 }
+Function:        EphemeralSecretAgreement_A
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -7539,7 +7706,7 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  EphemeralKeyGeneration_A
+  - PragmaFunction:  EphemeralSecretAgreement_A
   - String:          ' '
   - varLoc:          'src/ec_isogeny.cpp:13:15'
   - String:          ' '
@@ -7550,7 +7717,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 15 }
-Function:        EphemeralKeyGeneration_A
+Function:        EphemeralSecretAgreement_A
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -7569,7 +7736,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 15 }
-Function:        EphemeralSecretAgreement_A
+Function:        EphemeralKeyGeneration_A
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -7577,7 +7744,7 @@ Args:
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
-  - PragmaFunction:  EphemeralSecretAgreement_A
+  - PragmaFunction:  EphemeralKeyGeneration_A
   - String:          ' '
   - varLoc:          'src/ec_isogeny.cpp:13:15'
   - String:          ' '
@@ -7588,7 +7755,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 13, Column: 15 }
-Function:        EphemeralSecretAgreement_A
+Function:        EphemeralKeyGeneration_A
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -9058,7 +9225,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 302, Column: 13 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 303, Column: 13 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - PragmaType:      array_partition
@@ -9069,7 +9236,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  rdc_mont
   - String:          ' '
-  - varLoc:          'src/generic/fp_generic.cpp:302:13'
+  - varLoc:          'src/generic/fp_generic.cpp:303:13'
   - String:          ' '
   - VarName:         UV
   - String:          ' '
@@ -9077,7 +9244,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 302, Column: 13 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 303, Column: 13 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - String:          'Inferring pragma '''
@@ -9175,7 +9342,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy.32
+Function:        _Z16cshake256_simplePhytPKhy.32.clone
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -9194,7 +9361,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy.32
+Function:        _Z16cshake256_simplePhytPKhy.32.clone
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -9215,7 +9382,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy.32.clone
+Function:        _Z16cshake256_simplePhytPKhy.32
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -9234,7 +9401,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy.32.clone
+Function:        _Z16cshake256_simplePhytPKhy.32
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -9325,7 +9492,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 302, Column: 13 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 303, Column: 13 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - String:          'Applying '
@@ -10426,6 +10593,256 @@ Args:
   - String:          '''.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.117.118
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.124.125
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.6
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.5
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.4
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.3
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.83.84
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.117.118
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.124.125
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.6
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.5
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.4
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.3
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.2
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.83.84
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
@@ -10442,27 +10859,41 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
 Function:        _Z8rdc_montPKmPm
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -10485,7 +10916,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
@@ -10495,12 +10926,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 152, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.78.79
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.79.80
 Args:            
   - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.78.79)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.79.80)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10508,12 +10939,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.63.64
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.64.65
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.63.64)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.64.65)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10521,25 +10952,39 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.63.64
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.64.65
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.63.64)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.64.65)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.82.85
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.83.84)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.82.85)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.80.83
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.81.86
 Args:            
-  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.81.82)'
+  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.82.85)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.80.83)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.81.86)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10547,12 +10992,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.80.83
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.81.86
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.80.83)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.81.86)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10560,25 +11005,53 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.80.83
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.81.86
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.80.83)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.81.86)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.1
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.1)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.1)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.2
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.2)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.2)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.3
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.3
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.1)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.3)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10586,12 +11059,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 183, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.3
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.3
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.2)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.3)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10599,12 +11072,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.3
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.3
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.3)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10612,12 +11085,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.3
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.3
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.3)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10653,7 +11126,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 244, Column: 3 }
 Function:        _Z7xDBLADDP10point_projS0_PA8_KmS3_.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.78.79)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.79.80)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.1)'
@@ -10679,7 +11152,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 248, Column: 3 }
 Function:        _Z7xDBLADDP10point_projS0_PA8_KmS3_.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.63.64)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.64.65)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.1)'
@@ -10692,7 +11165,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 253, Column: 3 }
 Function:        _Z7xDBLADDP10point_projS0_PA8_KmS3_.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.80.83)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.81.86)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.1)'
@@ -10705,7 +11178,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 260, Column: 3 }
 Function:        _Z7xDBLADDP10point_projS0_PA8_KmS3_.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.3)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.1)'
@@ -10716,12 +11189,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 109, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.85.86.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.88.89.1
 Args:            
-  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.71.72)'
+  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.72.73)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.85.86.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.88.89.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10729,12 +11202,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 109, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.85.86.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.88.89.1
 Args:            
-  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.73.74)'
+  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.74.75)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.85.86.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.88.89.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10742,12 +11215,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 306, Column: 3 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.85.86.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.88.89.1
 Args:            
   - Callee:          'fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])'
     DebugLoc:        { File: src/fpx.cpp, Line: 120, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.85.86.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.88.89.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10755,12 +11228,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 328, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.85.86.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.88.89.1
 Args:            
   - Callee:          'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 237, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.85.86.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.88.89.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10768,77 +11241,77 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 329, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.85.86.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.88.89.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.3)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.85.86.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.88.89.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
 Function:        _Z8rdc_montPKmPm.1
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.1)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
 Function:        _Z8rdc_montPKmPm.1
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.1)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
 Function:        _Z8rdc_montPKmPm.2
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.2)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
 Function:        _Z8rdc_montPKmPm.2
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.2)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.93.94.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.96.97.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.93.94.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.96.97.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10846,12 +11319,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.93.94.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.96.97.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.1)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.93.94.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.96.97.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10859,12 +11332,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 195, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.93.94.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.96.97.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.2)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.93.94.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.96.97.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10872,12 +11345,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.1)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10885,12 +11358,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 183, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.2)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10898,12 +11371,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.1)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10911,12 +11384,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10924,25 +11397,53 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 195, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.2)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.3
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.3)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.3)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.4
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.4)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.4)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.69.70.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.70.71.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.3)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10950,12 +11451,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 183, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.69.70.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.70.71.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.4)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10963,12 +11464,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.69.70.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.70.71.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.1)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10976,12 +11477,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.69.70.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.70.71.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -10989,39 +11490,39 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 195, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.69.70.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.70.71.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.2)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
 Function:        _Z8rdc_montPKmPm.3
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.3)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
 Function:        _Z8rdc_montPKmPm.3
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.3)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11044,7 +11545,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.3)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
@@ -11053,27 +11554,27 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
 Function:        _Z8rdc_montPKmPm.4
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.4)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
 Function:        _Z8rdc_montPKmPm.4
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.4)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -11096,7 +11597,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm.2
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.4)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
@@ -11131,6 +11632,20 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.5
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 62, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm.3
 Args:            
@@ -11148,7 +11663,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm.3
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
@@ -11158,12 +11673,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 152, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.87.88.1
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.90.91.1
 Args:            
   - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.87.88.1)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.90.91.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11171,12 +11686,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 153, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.87.88.1
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.90.91.1
 Args:            
   - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.87.88.1)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.90.91.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11200,7 +11715,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
 Function:        _Z13fpmul503_montPKmS0_Pm.4
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.4)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
@@ -11210,12 +11725,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 152, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.87.88.2
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.90.91.2
 Args:            
   - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.87.88.2)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.90.91.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11223,12 +11738,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 153, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.87.88.2
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.90.91.2
 Args:            
   - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.4)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.87.88.2)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.90.91.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11236,12 +11751,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.2
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.2
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.2)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11249,12 +11764,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.2
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.2
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.2)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11262,25 +11777,39 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.67.68.2
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.68.69.2
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.2)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.6
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.6)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.6)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.2
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.2
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.6)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.2)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11288,12 +11817,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 183, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.2
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.2
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.2)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11301,12 +11830,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.2
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.2
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.2)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11314,12 +11843,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.2
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.2
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.2)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11340,12 +11869,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.69.70
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.70.71
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11353,12 +11882,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.69.70
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.70.71
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11394,7 +11923,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 68, Column: 3 }
 Function:        _Z11eval_4_isogP10point_projPA2_A8_m.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.2)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.1)'
@@ -11407,7 +11936,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 70, Column: 3 }
 Function:        _Z11eval_4_isogP10point_projPA2_A8_m.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.63.64)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.64.65)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.1)'
@@ -11420,7 +11949,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 71, Column: 3 }
 Function:        _Z11eval_4_isogP10point_projPA2_A8_m.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.2)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.1)'
@@ -11433,7 +11962,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 74, Column: 3 }
 Function:        _Z11eval_4_isogP10point_projPA2_A8_m.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.78.79)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.79.80)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.1)'
@@ -11459,7 +11988,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 78, Column: 3 }
 Function:        _Z11eval_4_isogP10point_projPA2_A8_m.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.1)'
@@ -11470,12 +11999,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11483,12 +12012,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11496,12 +12025,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.65.66.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.66.67.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11509,12 +12038,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 109, Column: 5 }
-Function:        _Z11eval_4_isogP10point_projPA2_A8_m.89.90.1
+Function:        _Z11eval_4_isogP10point_projPA2_A8_m.92.93.1
 Args:            
   - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.89.90.1)'
+  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.92.93.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 60, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11522,12 +12051,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 115, Column: 5 }
-Function:        _Z11eval_4_isogP10point_projPA2_A8_m.89.90.1
+Function:        _Z11eval_4_isogP10point_projPA2_A8_m.92.93.1
 Args:            
   - Callee:          'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.89.90.1)'
+  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.92.93.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 60, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11535,12 +12064,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 68, Column: 3 }
-Function:        _Z11eval_4_isogP10point_projPA2_A8_m.89.90.1
+Function:        _Z11eval_4_isogP10point_projPA2_A8_m.92.93.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.89.90.1)'
+  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.92.93.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 60, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11548,12 +12077,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 70, Column: 3 }
-Function:        _Z11eval_4_isogP10point_projPA2_A8_m.89.90.1
+Function:        _Z11eval_4_isogP10point_projPA2_A8_m.92.93.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.63.64)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.64.65)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.89.90.1)'
+  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.92.93.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 60, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11561,12 +12090,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 71, Column: 3 }
-Function:        _Z11eval_4_isogP10point_projPA2_A8_m.89.90.1
+Function:        _Z11eval_4_isogP10point_projPA2_A8_m.92.93.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.2)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.89.90.1)'
+  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.92.93.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 60, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11574,12 +12103,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 74, Column: 3 }
-Function:        _Z11eval_4_isogP10point_projPA2_A8_m.89.90.1
+Function:        _Z11eval_4_isogP10point_projPA2_A8_m.92.93.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.78.79)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.79.80)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.89.90.1)'
+  - Caller:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.92.93.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 60, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11603,7 +12132,7 @@ DebugLoc:        { File: src/fpx.cpp, Line: 75, Column: 5 }
 Function:        _Z13fpsqr503_montPKmPm
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'fpsqr503_mont(unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 67, Column: 0 }
@@ -11678,12 +12207,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.93.94
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.96.97
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.93.94)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.96.97)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11691,12 +12220,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.93.94
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.96.97
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.93.94)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.96.97)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -11732,7 +12261,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.cpp, Line: 136, Column: 5 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.85.86.1)'
+  - Callee:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.88.89.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -11797,7 +12326,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 17, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.78.79)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.79.80)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -11810,7 +12339,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 19, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.93.94.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.96.97.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -11823,7 +12352,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 20, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -11849,7 +12378,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 22, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.63.64)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.64.65)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -11888,7 +12417,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 24, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -11992,7 +12521,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 52, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.87.88.1)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.90.91.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -12005,7 +12534,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 54, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.87.88.2)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.90.91.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -12031,7 +12560,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.cpp, Line: 161, Column: 9 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.89.90.1)'
+  - Callee:          'eval_4_isog(point_proj*, unsigned long (*) [2][8]) (.92.93.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 60, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -12057,7 +12586,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 184, Column: 3 }
 Function:        EphemeralKeyGeneration_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.93.94)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.96.97)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralKeyGeneration_A.1
@@ -12094,12 +12623,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 109, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.101.102.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.104.105.1
 Args:            
-  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.71.72)'
+  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.72.73)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.101.102.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.104.105.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12107,12 +12636,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 109, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.101.102.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.104.105.1
 Args:            
-  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.73.74)'
+  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.74.75)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.101.102.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.104.105.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12120,12 +12649,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 306, Column: 3 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.101.102.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.104.105.1
 Args:            
   - Callee:          'fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])'
     DebugLoc:        { File: src/fpx.cpp, Line: 120, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.101.102.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.104.105.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12133,12 +12662,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 328, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.101.102.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.104.105.1
 Args:            
   - Callee:          'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 237, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.101.102.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.104.105.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12146,25 +12675,39 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 329, Column: 5 }
-Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.101.102.1
+Function:        _Z9LADDER3PTPA8_KmS1_S1_PS_jP10point_projS1_.104.105.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.3)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.3)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.101.102.1)'
+  - Caller:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.104.105.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.117.120.1
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.123.126
 Args:            
-  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.118.119)'
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.124.125)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.123.126)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/fpx.cpp, Line: 182, Column: 5 }
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.122.127.1
+Args:            
+  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.123.126)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.117.120.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.122.127.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12172,12 +12715,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 191, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.117.120.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.122.127.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.1)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.117.120.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.122.127.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12185,12 +12728,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 193, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.117.120.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.122.127.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.117.120.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.122.127.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12198,51 +12741,51 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 195, Column: 5 }
-Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.117.120.1
+Function:        _Z14fp2mul503_montPA8_KmS1_PA8_m.122.127.1
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.2)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.117.120.1)'
+  - Caller:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.122.127.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 317, Column: 17 }
-Function:        _Z8rdc_montPKmPm.105.106
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 17 }
+Function:        _Z8rdc_montPKmPm.108.109
 Args:            
   - Callee:          'digit_x_digit(unsigned long, unsigned long, unsigned long*)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 153, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.105.106)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+  - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.108.109)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 318, Column: 93 }
-Function:        _Z8rdc_montPKmPm.105.106
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 319, Column: 93 }
+Function:        _Z8rdc_montPKmPm.108.109
 Args:            
   - Callee:          'is_digit_lessthan_ct(unsigned long, unsigned long)'
     DebugLoc:        { File: src/config.h, Line: 104, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.105.106)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+  - Caller:          'rdc_mont(unsigned long const*, unsigned long*) (.108.109)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 62, Column: 5 }
-Function:        _Z13fpmul503_montPKmS0_Pm.104.107
+Function:        _Z13fpmul503_montPKmS0_Pm.107.110
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.104.107)'
+  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.107.110)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12250,12 +12793,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
-Function:        _Z13fpmul503_montPKmS0_Pm.104.107
+Function:        _Z13fpmul503_montPKmS0_Pm.107.110
 Args:            
-  - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.105.106)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+  - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.108.109)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.104.107)'
+  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.107.110)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12263,12 +12806,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 62, Column: 5 }
-Function:        _Z13fpmul503_montPKmS0_Pm.104.107.1
+Function:        _Z13fpmul503_montPKmS0_Pm.107.110.1
 Args:            
   - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.104.107.1)'
+  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.107.110.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12276,12 +12819,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
-Function:        _Z13fpmul503_montPKmS0_Pm.104.107.1
+Function:        _Z13fpmul503_montPKmS0_Pm.107.110.1
 Args:            
-  - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.105.106)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+  - Callee:          'rdc_mont(unsigned long const*, unsigned long*) (.108.109)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.104.107.1)'
+  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.107.110.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12289,12 +12832,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 152, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.103.108.1
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.106.111.1
 Args:            
-  - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.104.107)'
+  - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.107.110)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.103.108.1)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.106.111.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12302,25 +12845,39 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 153, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.103.108.1
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.106.111.1
 Args:            
-  - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.104.107.1)'
+  - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.107.110.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.103.108.1)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.106.111.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
+Function:        _Z6mp_mulPKmS0_Pmj.116.119
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.117.118)'
+    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.116.119)'
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 62, Column: 5 }
-Function:        _Z13fpmul503_montPKmS0_Pm.112.115
+Function:        _Z13fpmul503_montPKmS0_Pm.115.120
 Args:            
-  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.113.114)'
+  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.116.119)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 271, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.112.115)'
+  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.115.120)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12328,12 +12885,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 63, Column: 5 }
-Function:        _Z13fpmul503_montPKmS0_Pm.112.115
+Function:        _Z13fpmul503_montPKmS0_Pm.115.120
 Args:            
   - Callee:          'rdc_mont(unsigned long const*, unsigned long*)'
-    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 299, Column: 0 }
+    DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 300, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.112.115)'
+  - Caller:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.115.120)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12341,12 +12898,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 152, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.111.116
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.114.121
 Args:            
   - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.111.116)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.114.121)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12354,12 +12911,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 153, Column: 5 }
-Function:        _Z14fp2sqr503_montPA8_KmPA8_m.111.116
+Function:        _Z14fp2sqr503_montPA8_KmPA8_m.114.121
 Args:            
-  - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.112.115)'
+  - Callee:          'fpmul503_mont(unsigned long const*, unsigned long const*, unsigned long*) (.115.120)'
     DebugLoc:        { File: src/fpx.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.111.116)'
+  - Caller:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.114.121)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -12395,7 +12952,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 198, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.63.64)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.64.65)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12421,7 +12978,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 206, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.78.79)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.79.80)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12447,7 +13004,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.cpp, Line: 297, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.97.98)'
+  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.100.101)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12460,7 +13017,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 109, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.99.100)'
+  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.102.103)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12473,7 +13030,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.cpp, Line: 299, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.71.72)'
+  - Callee:          'fpadd503(unsigned long const*, unsigned long const*, unsigned long*) (.72.73)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12486,7 +13043,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/sidh.cpp, Line: 302, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.101.102.1)'
+  - Callee:          'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8]) (.104.105.1)'
     DebugLoc:        { File: src/ec_isogeny.cpp, Line: 287, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12551,7 +13108,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 19, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.117.120.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.122.127.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12564,7 +13121,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 20, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.67.68.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.68.69.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12603,7 +13160,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 24, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.69.70.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.70.71.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12707,7 +13264,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 52, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.103.108.1)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.106.111.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12720,7 +13277,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 54, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.87.88.2)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.90.91.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12733,7 +13290,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 68, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.1)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.1)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12746,7 +13303,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 71, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.65.66.2)'
+  - Callee:          'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8]) (.66.67.2)'
     DebugLoc:        { File: src/fpx.cpp, Line: 176, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12772,7 +13329,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/fpx.cpp, Line: 115, Column: 5 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fpsub503(unsigned long const*, unsigned long const*, unsigned long*) (.109.110)'
+  - Callee:          'fpsub503(unsigned long const*, unsigned long const*, unsigned long*) (.112.113)'
     DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1
@@ -12785,7 +13342,7 @@ Name:            NeverInline
 DebugLoc:        { File: src/ec_isogeny.cpp, Line: 219, Column: 3 }
 Function:        EphemeralSecretAgreement_A.1
 Args:            
-  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.111.116)'
+  - Callee:          'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8]) (.114.121)'
     DebugLoc:        { File: src/fpx.cpp, Line: 144, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          EphemeralSecretAgreement_A.1

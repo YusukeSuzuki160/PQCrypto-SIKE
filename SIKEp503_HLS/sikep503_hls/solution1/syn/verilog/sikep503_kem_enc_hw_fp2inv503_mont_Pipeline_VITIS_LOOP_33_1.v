@@ -57,7 +57,7 @@ wire    ap_loop_init;
 wire   [63:0] zext_ln33_fu_113_p1;
 reg   [3:0] i_fu_52;
 wire   [3:0] add_ln33_fu_107_p2;
-reg   [3:0] ap_sig_allocacmp_i_268;
+reg   [3:0] ap_sig_allocacmp_i_258;
 reg    t1_ce0_local;
 reg   [2:0] t1_address0_local;
 reg    t1_we0_local;
@@ -68,7 +68,7 @@ wire   [63:0] tempReg_fu_128_p2;
 wire   [63:0] xor_ln35_fu_141_p2;
 wire   [63:0] xor_ln35_40_fu_147_p2;
 wire   [0:0] bit_sel_fu_159_p3;
-wire   [0:0] xor_ln35_49_fu_167_p2;
+wire   [0:0] xor_ln35_48_fu_167_p2;
 wire   [62:0] trunc_ln35_fu_173_p1;
 wire   [63:0] xor_ln35_s_fu_177_p3;
 wire   [63:0] or_ln35_fu_153_p2;
@@ -196,9 +196,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_268 = 4'd0;
+        ap_sig_allocacmp_i_258 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_268 = i_fu_52;
+        ap_sig_allocacmp_i_258 = i_fu_52;
     end
 end
 
@@ -256,7 +256,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln33_fu_107_p2 = (ap_sig_allocacmp_i_268 + 4'd1);
+assign add_ln33_fu_107_p2 = (ap_sig_allocacmp_i_258 + 4'd1);
 
 assign add_ln35_fu_134_p2 = (t1_1_q0 + tempReg_fu_128_p2);
 
@@ -278,7 +278,7 @@ assign ap_ready = ap_ready_sig;
 
 assign bit_sel_fu_159_p3 = tempReg_fu_128_p2[64'd63];
 
-assign icmp_ln33_fu_101_p2 = ((ap_sig_allocacmp_i_268 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln33_fu_101_p2 = ((ap_sig_allocacmp_i_258 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln35_14_fu_197_p2 = (xor_ln35_42_fu_191_p2 | and_ln35_fu_185_p2);
 
@@ -304,13 +304,13 @@ assign xor_ln35_40_fu_147_p2 = (tempReg_fu_128_p2 ^ t1_1_q0);
 
 assign xor_ln35_42_fu_191_p2 = (or_ln35_fu_153_p2 ^ add_ln35_fu_134_p2);
 
-assign xor_ln35_49_fu_167_p2 = (bit_sel_fu_159_p3 ^ 1'd1);
+assign xor_ln35_48_fu_167_p2 = (bit_sel_fu_159_p3 ^ 1'd1);
 
 assign xor_ln35_fu_141_p2 = (tempReg_fu_128_p2 ^ add_ln35_fu_134_p2);
 
-assign xor_ln35_s_fu_177_p3 = {{xor_ln35_49_fu_167_p2}, {trunc_ln35_fu_173_p1}};
+assign xor_ln35_s_fu_177_p3 = {{xor_ln35_48_fu_167_p2}, {trunc_ln35_fu_173_p1}};
 
-assign zext_ln33_fu_113_p1 = ap_sig_allocacmp_i_268;
+assign zext_ln33_fu_113_p1 = ap_sig_allocacmp_i_258;
 
 assign zext_ln35_fu_124_p1 = carry_reg_82;
 

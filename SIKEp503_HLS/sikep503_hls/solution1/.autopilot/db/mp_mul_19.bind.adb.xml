@@ -25,10 +25,10 @@
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:4 %call_ln295 = call void @mul.18, i64 %a_0, i64 %a_1, i64 %b, i64 %c
+entry:4 %call_ln296 = call void @mul.18, i64 %a_0, i64 %a_1, i64 %b, i64 %c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln295"/></StgValue>
+<StgValue><ssdm name="call_ln296"/></StgValue>
 </operation>
 </state>
 
@@ -43,7 +43,7 @@ entry:4 %call_ln295 = call void @mul.18, i64 %a_0, i64 %a_1, i64 %b, i64 %c
 
 <Node id="5" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:0 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615
+entry:0 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -58,7 +58,7 @@ entry:0 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 6
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_0, i64 666, i64 17, i64 18446744073709551615
+entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_1, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -73,7 +73,7 @@ entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_0, i64
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_1, i64 666, i64 17, i64 18446744073709551615
+entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_0, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -103,10 +103,10 @@ entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 6
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:4 %call_ln295 = call void @mul.18, i64 %a_0, i64 %a_1, i64 %b, i64 %c
+entry:4 %call_ln296 = call void @mul.18, i64 %a_0, i64 %a_1, i64 %b, i64 %c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln295"/></StgValue>
+<StgValue><ssdm name="call_ln296"/></StgValue>
 </operation>
 
 <operation id="9" st_id="2" stage="1" lat="1">
@@ -118,10 +118,10 @@ entry:4 %call_ln295 = call void @mul.18, i64 %a_0, i64 %a_1, i64 %b, i64 %c
 
 <Node id="10" bw="0">
 <![CDATA[
-entry:5 %ret_ln296 = ret
+entry:5 %ret_ln297 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln296"/></StgValue>
+<StgValue><ssdm name="ret_ln297"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -148,15 +148,15 @@ entry:5 %ret_ln296 = ret
 
 
 <dataflows>
-<dataflow id="16" from="mul.18" to="call_ln295" fromId="15" toId="3">
+<dataflow id="16" from="mul.18" to="call_ln296" fromId="15" toId="3">
 </dataflow>
-<dataflow id="17" from="a_0" to="call_ln295" fromId="11" toId="3">
+<dataflow id="17" from="a_0" to="call_ln296" fromId="11" toId="3">
 </dataflow>
-<dataflow id="18" from="a_1" to="call_ln295" fromId="12" toId="3">
+<dataflow id="18" from="a_1" to="call_ln296" fromId="12" toId="3">
 </dataflow>
-<dataflow id="19" from="b" to="call_ln295" fromId="13" toId="3">
+<dataflow id="19" from="b" to="call_ln296" fromId="13" toId="3">
 </dataflow>
-<dataflow id="20" from="c" to="call_ln295" fromId="14" toId="3">
+<dataflow id="20" from="c" to="call_ln296" fromId="14" toId="3">
 </dataflow>
 <dataflow id="22" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="21" toId="4">
 </dataflow>
@@ -170,43 +170,43 @@ entry:5 %ret_ln296 = ret
 </dataflow>
 <dataflow id="30" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="21" toId="5">
 </dataflow>
-<dataflow id="31" from="a_0" to="specmemcore_ln0" fromId="11" toId="5">
+<dataflow id="31" from="a_1" to="specmemcore_ln0" fromId="12" toId="5">
 </dataflow>
 <dataflow id="32" from="StgValue_24" to="specmemcore_ln0" fromId="24" toId="5">
 </dataflow>
-<dataflow id="33" from="StgValue_26" to="specmemcore_ln0" fromId="26" toId="5">
+<dataflow id="34" from="StgValue_33" to="specmemcore_ln0" fromId="33" toId="5">
 </dataflow>
-<dataflow id="34" from="StgValue_28" to="specmemcore_ln0" fromId="28" toId="5">
+<dataflow id="35" from="StgValue_28" to="specmemcore_ln0" fromId="28" toId="5">
 </dataflow>
-<dataflow id="35" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="21" toId="6">
+<dataflow id="36" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="21" toId="6">
 </dataflow>
-<dataflow id="36" from="a_1" to="specmemcore_ln0" fromId="12" toId="6">
+<dataflow id="37" from="a_0" to="specmemcore_ln0" fromId="11" toId="6">
 </dataflow>
-<dataflow id="37" from="StgValue_24" to="specmemcore_ln0" fromId="24" toId="6">
+<dataflow id="38" from="StgValue_24" to="specmemcore_ln0" fromId="24" toId="6">
 </dataflow>
-<dataflow id="38" from="StgValue_26" to="specmemcore_ln0" fromId="26" toId="6">
+<dataflow id="39" from="StgValue_33" to="specmemcore_ln0" fromId="33" toId="6">
 </dataflow>
-<dataflow id="39" from="StgValue_28" to="specmemcore_ln0" fromId="28" toId="6">
+<dataflow id="40" from="StgValue_28" to="specmemcore_ln0" fromId="28" toId="6">
 </dataflow>
-<dataflow id="40" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="21" toId="7">
+<dataflow id="41" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="21" toId="7">
 </dataflow>
-<dataflow id="41" from="b" to="specmemcore_ln0" fromId="13" toId="7">
+<dataflow id="42" from="b" to="specmemcore_ln0" fromId="13" toId="7">
 </dataflow>
-<dataflow id="42" from="StgValue_24" to="specmemcore_ln0" fromId="24" toId="7">
+<dataflow id="43" from="StgValue_24" to="specmemcore_ln0" fromId="24" toId="7">
 </dataflow>
-<dataflow id="43" from="StgValue_26" to="specmemcore_ln0" fromId="26" toId="7">
+<dataflow id="44" from="StgValue_33" to="specmemcore_ln0" fromId="33" toId="7">
 </dataflow>
-<dataflow id="44" from="StgValue_28" to="specmemcore_ln0" fromId="28" toId="7">
+<dataflow id="45" from="StgValue_28" to="specmemcore_ln0" fromId="28" toId="7">
 </dataflow>
-<dataflow id="45" from="mul.18" to="call_ln295" fromId="15" toId="8">
+<dataflow id="46" from="mul.18" to="call_ln296" fromId="15" toId="8">
 </dataflow>
-<dataflow id="46" from="a_0" to="call_ln295" fromId="11" toId="8">
+<dataflow id="47" from="a_0" to="call_ln296" fromId="11" toId="8">
 </dataflow>
-<dataflow id="47" from="a_1" to="call_ln295" fromId="12" toId="8">
+<dataflow id="48" from="a_1" to="call_ln296" fromId="12" toId="8">
 </dataflow>
-<dataflow id="48" from="b" to="call_ln295" fromId="13" toId="8">
+<dataflow id="49" from="b" to="call_ln296" fromId="13" toId="8">
 </dataflow>
-<dataflow id="49" from="c" to="call_ln295" fromId="14" toId="8">
+<dataflow id="50" from="c" to="call_ln296" fromId="14" toId="8">
 </dataflow>
 </dataflows>
 

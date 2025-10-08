@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7728 \
-    name pts_Z \
+    id 111 \
+    name phiR_X_1 \
     reset_level 1 \
     sync_rst true \
-    dir I \
-    corename pts_Z \
+    dir O \
+    corename phiR_X_1 \
     op interface \
-    ports { pts_Z_address0 { O 7 vector } pts_Z_ce0 { O 1 bit } pts_Z_q0 { I 64 vector } } \
+    ports { phiR_X_1_address0 { O 3 vector } phiR_X_1_ce0 { O 1 bit } phiR_X_1_we0 { O 1 bit } phiR_X_1_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pts_Z'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiR_X_1'"
 }
 }
 
@@ -30,35 +30,20 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7729 \
-    name R_Z \
+    id 112 \
+    name B_gen_1 \
     reset_level 1 \
     sync_rst true \
-    dir O \
-    corename R_Z \
+    dir I \
+    corename B_gen_1 \
     op interface \
-    ports { R_Z_address0 { O 4 vector } R_Z_ce0 { O 1 bit } R_Z_we0 { O 1 bit } R_Z_d0 { O 64 vector } } \
+    ports { B_gen_1_address0 { O 6 vector } B_gen_1_ce0 { O 1 bit } B_gen_1_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R_Z'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'B_gen_1'"
 }
 }
 
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 7727 \
-    name npts_7 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_npts_7 \
-    op interface \
-    ports { npts_7 { I 3 vector } } \
-} "
-}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

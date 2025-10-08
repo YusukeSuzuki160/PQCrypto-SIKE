@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sikep503_kem_enc_hw'
 ================================================================
-* Date:           Tue Sep 23 15:49:12 2025
+* Date:           Wed Oct  8 20:40:27 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -25,30 +25,30 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+-----+-----+---------+
-    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-    |   min   |   max   |    min   |    max   | min | max |   Type  |
-    +---------+---------+----------+----------+-----+-----+---------+
-    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
-    +---------+---------+----------+----------+-----+-----+---------+
+    +---------+-------------+-----------+-------------+---------+-------------+---------+
+    |    Latency (cycles)   |    Latency (absolute)   |        Interval       | Pipeline|
+    |   min   |     max     |    min    |     max     |   min   |     max     |   Type  |
+    +---------+-------------+-----------+-------------+---------+-------------+---------+
+    |  6291953|  19814381129|  62.920 ms|  198.144 sec|  6291954|  19814381130|       no|
+    +---------+-------------+-----------+-------------+---------+-------------+---------+
 
     + Detail: 
         * Instance: 
-        +---------------------------------------------------------+----------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |                                                         |                                              |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
-        |                         Instance                        |                    Module                    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
-        +---------------------------------------------------------+----------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_sikep503_kem_enc_hw_Pipeline_1_fu_217                |sikep503_kem_enc_hw_Pipeline_1                |      428|      428|  4.280 us|  4.280 us|  427|  427|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1_fu_229  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1  |       26|       26|  0.260 us|  0.260 us|   25|   25|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_sikep503_kem_enc_hw_Pipeline_3_fu_239                |sikep503_kem_enc_hw_Pipeline_3                |      381|      381|  3.810 us|  3.810 us|  379|  379|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_cshake256_simple_fu_250                              |cshake256_simple                              |      321|      321|  3.210 us|  3.210 us|  321|  321|                                              no|
-        |grp_EphemeralKeyGeneration_A_1_fu_261                    |EphemeralKeyGeneration_A_1                    |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
-        |grp_EphemeralSecretAgreement_A_1_fu_295                  |EphemeralSecretAgreement_A_1                  |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
-        |grp_cshake256_simple_17_fu_323                           |cshake256_simple_17                           |      185|      185|  1.850 us|  1.850 us|  185|  185|                                              no|
-        |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1  |       27|       27|  0.270 us|  0.270 us|   25|   25|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_sikep503_kem_enc_hw_Pipeline_5_fu_346                |sikep503_kem_enc_hw_Pipeline_5                |      405|      405|  4.050 us|  4.050 us|  403|  403|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_cshake256_simple_18_fu_357                           |cshake256_simple_18                           |      376|      376|  3.760 us|  3.760 us|  376|  376|                                              no|
-        +---------------------------------------------------------+----------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        +---------------------------------------------------------+----------------------------------------------+---------+------------+-----------+------------+---------+------------+------------------------------------------------+
+        |                                                         |                                              |   Latency (cycles)   |   Latency (absolute)   |       Interval       |                    Pipeline                    |
+        |                         Instance                        |                    Module                    |   min   |     max    |    min    |     max    |   min   |     max    |                      Type                      |
+        +---------------------------------------------------------+----------------------------------------------+---------+------------+-----------+------------+---------+------------+------------------------------------------------+
+        |grp_sikep503_kem_enc_hw_Pipeline_1_fu_217                |sikep503_kem_enc_hw_Pipeline_1                |      428|         428|   4.280 us|    4.280 us|      427|         427|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1_fu_229  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1  |       26|          26|   0.260 us|    0.260 us|       25|          25|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_sikep503_kem_enc_hw_Pipeline_3_fu_239                |sikep503_kem_enc_hw_Pipeline_3                |      381|         381|   3.810 us|    3.810 us|      379|         379|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_fu_250                              |cshake256_simple                              |      321|         321|   3.210 us|    3.210 us|      321|         321|                                              no|
+        |grp_EphemeralKeyGeneration_A_1_fu_261                    |EphemeralKeyGeneration_A_1                    |  3937799|  9908767837|  39.378 ms|  99.088 sec|  3937799|  9908767837|                                              no|
+        |grp_EphemeralSecretAgreement_A_1_fu_295                  |EphemeralSecretAgreement_A_1                  |  2351963|  9905611101|  23.520 ms|  99.056 sec|  2351963|  9905611101|                                              no|
+        |grp_cshake256_simple_20_fu_323                           |cshake256_simple_20                           |      185|         185|   1.850 us|    1.850 us|      185|         185|                                              no|
+        |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1  |       27|          27|   0.270 us|    0.270 us|       25|          25|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_sikep503_kem_enc_hw_Pipeline_5_fu_346                |sikep503_kem_enc_hw_Pipeline_5                |      405|         405|   4.050 us|    4.050 us|      403|         403|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_cshake256_simple_21_fu_357                           |cshake256_simple_21                           |      376|         376|   3.760 us|    3.760 us|      376|         376|                                              no|
+        +---------------------------------------------------------+----------------------------------------------+---------+------------+-----------+------------+---------+------------+------------------------------------------------+
 
         * Loop: 
         N/A
@@ -65,20 +65,20 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        0|       73|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |       10|   4416|   322170|  1260271|     0|
+|Instance             |       10|   4416|   336455|  1191651|     0|
 |Memory               |        0|      -|       88|      139|     0|
 |Multiplexer          |        -|      -|        0|     1505|     -|
 |Register             |        -|      -|      309|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |       10|   4416|   322567|  1261988|     0|
+|Total                |       10|   4416|   336852|  1193368|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization SLR (%)  |       ~0|    143|       37|      292|     0|
+|Utilization SLR (%)  |       ~0|    143|       38|      276|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available            |     5376|  12288|  3456000|  1728000|  1280|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization (%)      |       ~0|     35|        9|       73|     0|
+|Utilization (%)      |       ~0|     35|        9|       69|     0|
 +---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
@@ -86,13 +86,13 @@
     +---------------------------------------------------------+----------------------------------------------+---------+------+--------+--------+-----+
     |                         Instance                        |                    Module                    | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
     +---------------------------------------------------------+----------------------------------------------+---------+------+--------+--------+-----+
-    |grp_EphemeralKeyGeneration_A_1_fu_261                    |EphemeralKeyGeneration_A_1                    |        6|  2384|  164555|  629701|    0|
-    |grp_EphemeralSecretAgreement_A_1_fu_295                  |EphemeralSecretAgreement_A_1                  |        2|  2032|  145986|  573018|    0|
+    |grp_EphemeralKeyGeneration_A_1_fu_261                    |EphemeralKeyGeneration_A_1                    |        6|  2384|  172373|  592513|    0|
+    |grp_EphemeralSecretAgreement_A_1_fu_295                  |EphemeralSecretAgreement_A_1                  |        2|  2032|  152453|  541586|    0|
     |control_r_s_axi_U                                        |control_r_s_axi                               |        0|     0|      36|      40|    0|
     |control_s_axi_U                                          |control_s_axi                                 |        0|     0|     240|     424|    0|
     |grp_cshake256_simple_fu_250                              |cshake256_simple                              |        0|     0|    3509|   18585|    0|
-    |grp_cshake256_simple_17_fu_323                           |cshake256_simple_17                           |        0|     0|    3466|   18102|    0|
-    |grp_cshake256_simple_18_fu_357                           |cshake256_simple_18                           |        0|     0|    3521|   18819|    0|
+    |grp_cshake256_simple_20_fu_323                           |cshake256_simple_20                           |        0|     0|    3466|   18102|    0|
+    |grp_cshake256_simple_21_fu_357                           |cshake256_simple_21                           |        0|     0|    3521|   18819|    0|
     |gmem_m_axi_U                                             |gmem_m_axi                                    |        2|     0|     681|     810|    0|
     |grp_sikep503_kem_enc_hw_Pipeline_1_fu_217                |sikep503_kem_enc_hw_Pipeline_1                |        0|     0|      11|      59|    0|
     |grp_sikep503_kem_enc_hw_Pipeline_3_fu_239                |sikep503_kem_enc_hw_Pipeline_3                |        0|     0|      41|      95|    0|
@@ -100,7 +100,7 @@
     |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1_fu_229  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1  |        0|     0|      63|     422|    0|
     |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1  |        0|     0|      20|     101|    0|
     +---------------------------------------------------------+----------------------------------------------+---------+------+--------+--------+-----+
-    |Total                                                    |                                              |       10|  4416|  322170| 1260271|    0|
+    |Total                                                    |                                              |       10|  4416|  336455| 1191651|    0|
     +---------------------------------------------------------+----------------------------------------------+---------+------+--------+--------+-----+
 
     * DSP: 
@@ -222,8 +222,8 @@
     |ct_read_reg_414                                                       |  64|   0|   64|          0|
     |grp_EphemeralKeyGeneration_A_1_fu_261_ap_start_reg                    |   1|   0|    1|          0|
     |grp_EphemeralSecretAgreement_A_1_fu_295_ap_start_reg                  |   1|   0|    1|          0|
-    |grp_cshake256_simple_17_fu_323_ap_start_reg                           |   1|   0|    1|          0|
-    |grp_cshake256_simple_18_fu_357_ap_start_reg                           |   1|   0|    1|          0|
+    |grp_cshake256_simple_20_fu_323_ap_start_reg                           |   1|   0|    1|          0|
+    |grp_cshake256_simple_21_fu_357_ap_start_reg                           |   1|   0|    1|          0|
     |grp_cshake256_simple_fu_250_ap_start_reg                              |   1|   0|    1|          0|
     |grp_sikep503_kem_enc_hw_Pipeline_1_fu_217_ap_start_reg                |   1|   0|    1|          0|
     |grp_sikep503_kem_enc_hw_Pipeline_3_fu_239_ap_start_reg                |   1|   0|    1|          0|

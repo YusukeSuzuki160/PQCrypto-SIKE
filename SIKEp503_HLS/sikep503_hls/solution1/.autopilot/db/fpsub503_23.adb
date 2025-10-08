@@ -88,7 +88,7 @@
             <Obj>
               <type>1</type>
               <id>3</id>
-              <name>coeff</name>
+              <name>c</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -98,7 +98,7 @@
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>c</originalName>
               <rtlName/>
               <control/>
               <opType/>
@@ -113,7 +113,7 @@
           </Value>
           <direction>2</direction>
           <if_type>1</if_type>
-          <array_size>48</array_size>
+          <array_size>8</array_size>
           <bit_vecs>
             <count>0</count>
             <item_version>0</item_version>
@@ -181,7 +181,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_26</rtlName>
+              <rtlName>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -243,7 +243,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>22</item>
-            <item>48</item>
+            <item>49</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -270,7 +270,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_37</rtlName>
+              <rtlName>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_39</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -289,8 +289,8 @@
             <item>25</item>
             <item>26</item>
             <item>27</item>
-            <item>47</item>
-            <item>49</item>
+            <item>48</item>
+            <item>50</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -574,21 +574,21 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_24">
-          <id>47</id>
+          <id>48</id>
           <edge_type>4</edge_type>
           <source_obj>9</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_25">
-          <id>48</id>
+          <id>49</id>
           <edge_type>4</edge_type>
           <source_obj>9</source_obj>
           <sink_obj>10</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_26">
-          <id>49</id>
+          <id>50</id>
           <edge_type>4</edge_type>
           <source_obj>9</source_obj>
           <sink_obj>11</sink_obj>
@@ -761,13 +761,13 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_26 (fpsub503_23_Pipeline_VITIS_LOOP_61_1)</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28 (fpsub503_23_Pipeline_VITIS_LOOP_61_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>12</second>
+              <second>13</second>
             </item>
             <item>
               <first>LUT</first>
@@ -776,7 +776,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_37 (fpsub503_23_Pipeline_VITIS_LOOP_68_2)</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_39 (fpsub503_23_Pipeline_VITIS_LOOP_68_2)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -786,11 +786,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>268</second>
+              <second>139</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>910</second>
+              <second>747</second>
             </item>
           </second>
         </item>
@@ -838,7 +838,7 @@
           </second>
         </item>
         <item>
-          <first>coeff_address0</first>
+          <first>c_address0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -848,11 +848,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>6</second>
+              <second>3</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>18</second>
+              <second>9</second>
             </item>
             <item>
               <first>FF</first>
@@ -865,7 +865,7 @@
           </second>
         </item>
         <item>
-          <first>coeff_ce0</first>
+          <first>c_ce0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -892,7 +892,7 @@
           </second>
         </item>
         <item>
-          <first>coeff_d0</first>
+          <first>c_d0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -919,7 +919,7 @@
           </second>
         </item>
         <item>
-          <first>coeff_we0</first>
+          <first>c_we0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -969,7 +969,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_26_ap_start_reg</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -988,7 +988,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_37_ap_start_reg</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_39_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1011,14 +1011,14 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_26</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_37</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_39</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -1029,7 +1029,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_26 (fpsub503_23_Pipeline_VITIS_LOOP_61_1)</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28 (fpsub503_23_Pipeline_VITIS_LOOP_61_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1037,7 +1037,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_37 (fpsub503_23_Pipeline_VITIS_LOOP_68_2)</first>
+          <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_39 (fpsub503_23_Pipeline_VITIS_LOOP_68_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1116,7 +1116,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item class_id="49" tracking_level="0" version="0">
-        <first>22</first>
+        <first>24</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1124,7 +1124,7 @@
         </second>
       </item>
       <item>
-        <first>26</first>
+        <first>28</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1133,7 +1133,7 @@
         </second>
       </item>
       <item>
-        <first>37</first>
+        <first>39</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1142,7 +1142,7 @@
         </second>
       </item>
       <item>
-        <first>46</first>
+        <first>48</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1154,7 +1154,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>borrow_loc_fu_22</first>
+        <first>borrow_loc_fu_24</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1166,7 +1166,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_26</first>
+        <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1175,7 +1175,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_37</first>
+        <first>grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_39</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1188,7 +1188,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>borrow_loc_load_load_fu_46</first>
+        <first>borrow_loc_load_load_fu_48</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1219,7 +1219,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>50</first>
+        <first>52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1231,7 +1231,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>borrow_loc_reg_50</first>
+        <first>borrow_loc_reg_52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

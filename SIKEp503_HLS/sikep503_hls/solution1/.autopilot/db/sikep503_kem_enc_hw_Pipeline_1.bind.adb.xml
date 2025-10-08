@@ -141,7 +141,7 @@ memset.loop.i.split:0 %empty_139 = trunc i9 %p_load
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-memset.loop.i.split:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+memset.loop.i.split:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -513,7 +513,7 @@ for.body.i.i.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="63" from="StgValue_60" to="specpipeline_ln0" fromId="60" toId="12">
 </dataflow>
-<dataflow id="65" from="empty_102" to="specpipeline_ln0" fromId="64" toId="12">
+<dataflow id="65" from="empty_73" to="specpipeline_ln0" fromId="64" toId="12">
 </dataflow>
 <dataflow id="67" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln0" fromId="66" toId="13">
 </dataflow>

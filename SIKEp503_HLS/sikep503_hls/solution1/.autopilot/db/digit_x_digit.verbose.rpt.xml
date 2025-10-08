@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'digit_x_digit'" level="0">
-<item name = "Date">Tue Sep 23 15:46:15 2025
+<item name = "Date">Wed Oct  8 20:37:35 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -63,10 +63,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_32ns_32ns_64_1_1_U237">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
-<column name="mul_32ns_32ns_64_1_1_U238">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
-<column name="mul_32ns_32ns_64_1_1_U239">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
-<column name="mul_32ns_32ns_64_1_1_U240">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U242">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U243">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U244">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
+<column name="mul_32ns_32ns_64_1_1_U245">mul_32ns_32ns_64_1_1, 0, 4, 0, 20, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -104,8 +104,8 @@
 <column name="add_ln159_reg_331">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="tmp_16_reg_336">2, 0, 2, 0</column>
-<column name="tmp_17_reg_341">32, 0, 32, 0</column>
+<column name="tmp_10_reg_336">2, 0, 2, 0</column>
+<column name="tmp_11_reg_341">32, 0, 32, 0</column>
 <column name="trunc_ln160_reg_321">32, 0, 32, 0</column>
 <column name="trunc_ln180_reg_326">32, 0, 32, 0</column>
 </table>

@@ -143,8 +143,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_0_address0</name>
-<Object>c_0</Object>
+<name>a_0_address0</name>
+<Object>a_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -154,8 +154,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_0_ce0</name>
-<Object>c_0</Object>
+<name>a_0_ce0</name>
+<Object>a_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -165,8 +165,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_0_q0</name>
-<Object>c_0</Object>
+<name>a_0_q0</name>
+<Object>a_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -176,8 +176,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_1_address0</name>
-<Object>c_1</Object>
+<name>a_1_address0</name>
+<Object>a_1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -187,8 +187,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_1_ce0</name>
-<Object>c_1</Object>
+<name>a_1_ce0</name>
+<Object>a_1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -198,8 +198,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>c_1_q0</name>
-<Object>c_1</Object>
+<name>a_1_q0</name>
+<Object>a_1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

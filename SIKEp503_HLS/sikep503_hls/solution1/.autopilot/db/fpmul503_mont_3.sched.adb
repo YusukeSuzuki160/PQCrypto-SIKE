@@ -476,7 +476,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>empty_167</name>
+						<name>empty_165</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1145,7 +1145,7 @@
 					<Obj>
 						<type>2</type>
 						<id>65</id>
-						<name>mp_mul_5111</name>
+						<name>mp_mul_6117</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1169,7 +1169,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.5111&gt;</content>
+				<content>&lt;constant:mp_mul.6117&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_29">
 				<Value>
@@ -1659,8 +1659,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-1</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>264</mMinLatency>
+			<mMaxLatency>490</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1729,8 +1729,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-2</mMinLatency>
-			<mMaxLatency>-2</mMaxLatency>
+			<mMinLatency>246</mMinLatency>
+			<mMaxLatency>472</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

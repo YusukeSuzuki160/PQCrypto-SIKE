@@ -73,7 +73,7 @@ attribute shreg_extract : string;
     signal zext_ln56_fu_157_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal i_fu_56 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln61_fu_132_p2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_sig_allocacmp_i_53 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_sig_allocacmp_i_72 : STD_LOGIC_VECTOR (3 downto 0);
     signal c_ce0_local : STD_LOGIC;
     signal c_address0_local : STD_LOGIC_VECTOR (2 downto 0);
     signal c_we0_local : STD_LOGIC;
@@ -89,7 +89,7 @@ attribute shreg_extract : string;
     signal xor_ln105_14_fu_199_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal sub_ln95_fu_213_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal or_ln95_fu_219_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_100_fu_225_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_192_fu_225_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal xor_ln63_fu_233_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal and_ln63_fu_239_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp_fu_205_p3 : STD_LOGIC_VECTOR (0 downto 0);
@@ -221,7 +221,7 @@ begin
                 ap_NS_fsm <= "XX";
         end case;
     end process;
-    add_ln61_fu_132_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_53) + unsigned(ap_const_lv4_1));
+    add_ln61_fu_132_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_72) + unsigned(ap_const_lv4_1));
     and_ln63_fu_239_p2 <= (xor_ln63_fu_233_p2 and borrow_reg_106);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
@@ -286,12 +286,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_53_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_fu_56)
+    ap_sig_allocacmp_i_72_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_fu_56)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            ap_sig_allocacmp_i_53 <= ap_const_lv4_0;
+            ap_sig_allocacmp_i_72 <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i_53 <= i_fu_56;
+            ap_sig_allocacmp_i_72 <= i_fu_56;
         end if; 
     end process;
 
@@ -367,8 +367,8 @@ begin
         end if; 
     end process;
 
-    icmp_ln61_fu_126_p2 <= "1" when (ap_sig_allocacmp_i_53 = ap_const_lv4_8) else "0";
-    lshr_ln_fu_147_p4 <= ap_sig_allocacmp_i_53(2 downto 1);
+    icmp_ln61_fu_126_p2 <= "1" when (ap_sig_allocacmp_i_72 = ap_const_lv4_8) else "0";
+    lshr_ln_fu_147_p4 <= ap_sig_allocacmp_i_72(2 downto 1);
     or_ln105_fu_193_p2 <= (xor_ln105_fu_181_p2 or xor_ln105_13_fu_187_p2);
     or_ln95_fu_219_p2 <= (tempReg_fu_175_p2 or sub_ln95_fu_213_p2);
     select_ln63_fu_168_p3 <= 
@@ -377,14 +377,14 @@ begin
     sub_ln63_fu_255_p2 <= std_logic_vector(unsigned(tempReg_fu_175_p2) - unsigned(zext_ln63_fu_251_p1));
     sub_ln95_fu_213_p2 <= std_logic_vector(unsigned(ap_const_lv64_0) - unsigned(tempReg_fu_175_p2));
     tempReg_fu_175_p2 <= std_logic_vector(unsigned(c_q0) - unsigned(select_ln63_fu_168_p3));
-    tmp_100_fu_225_p3 <= or_ln95_fu_219_p2(63 downto 63);
+    tmp_192_fu_225_p3 <= or_ln95_fu_219_p2(63 downto 63);
     tmp_fu_205_p3 <= xor_ln105_14_fu_199_p2(63 downto 63);
-    trunc_ln61_fu_143_p1 <= ap_sig_allocacmp_i_53(1 - 1 downto 0);
+    trunc_ln61_fu_143_p1 <= ap_sig_allocacmp_i_72(1 - 1 downto 0);
     xor_ln105_13_fu_187_p2 <= (tempReg_fu_175_p2 xor select_ln63_fu_168_p3);
     xor_ln105_14_fu_199_p2 <= (or_ln105_fu_193_p2 xor c_q0);
     xor_ln105_fu_181_p2 <= (select_ln63_fu_168_p3 xor c_q0);
-    xor_ln63_fu_233_p2 <= (tmp_100_fu_225_p3 xor ap_const_lv1_1);
+    xor_ln63_fu_233_p2 <= (tmp_192_fu_225_p3 xor ap_const_lv1_1);
     zext_ln56_fu_157_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(lshr_ln_fu_147_p4),64));
-    zext_ln61_fu_138_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_53),64));
+    zext_ln61_fu_138_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_72),64));
     zext_ln63_fu_251_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(borrow_reg_106),64));
 end behav;

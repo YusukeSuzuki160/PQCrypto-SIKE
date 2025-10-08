@@ -17,12 +17,12 @@ set cdfgNum 684
 set C_modelName {fp2mul503_mont.122_Pipeline_VITIS_LOOP_378_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict a_0 { MEM_WIDTH 64 MEM_SIZE 192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict a_1 { MEM_WIDTH 64 MEM_SIZE 192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict a_0 { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict a_1 { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict t1 { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ a_0 int 64 regular {array 24 { 1 } 1 1 }  }
-	{ a_1 int 64 regular {array 24 { 1 } 1 1 }  }
+	{ a_0 int 64 regular {array 8 { 1 } 1 1 }  }
+	{ a_1 int 64 regular {array 8 { 1 } 1 1 }  }
 	{ t1 int 64 regular {array 8 { 0 } 0 1 }  }
 }
 set hasAXIMCache 0
@@ -41,10 +41,10 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ a_0_address0 sc_out sc_lv 5 signal 0 } 
+	{ a_0_address0 sc_out sc_lv 3 signal 0 } 
 	{ a_0_ce0 sc_out sc_logic 1 signal 0 } 
 	{ a_0_q0 sc_in sc_lv 64 signal 0 } 
-	{ a_1_address0 sc_out sc_lv 5 signal 1 } 
+	{ a_1_address0 sc_out sc_lv 3 signal 1 } 
 	{ a_1_ce0 sc_out sc_logic 1 signal 1 } 
 	{ a_1_q0 sc_in sc_lv 64 signal 1 } 
 	{ t1_address0 sc_out sc_lv 3 signal 2 } 
@@ -59,10 +59,10 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "a_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "a_0", "role": "address0" }} , 
+ 	{ "name": "a_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "a_0", "role": "address0" }} , 
  	{ "name": "a_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "a_0", "role": "ce0" }} , 
  	{ "name": "a_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "a_0", "role": "q0" }} , 
- 	{ "name": "a_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "a_1", "role": "address0" }} , 
+ 	{ "name": "a_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "a_1", "role": "address0" }} , 
  	{ "name": "a_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "a_1", "role": "ce0" }} , 
  	{ "name": "a_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "a_1", "role": "q0" }} , 
  	{ "name": "t1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "t1", "role": "address0" }} , 
@@ -113,7 +113,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	a_0 { ap_memory {  { a_0_address0 mem_address 1 5 }  { a_0_ce0 mem_ce 1 1 }  { a_0_q0 mem_dout 0 64 } } }
-	a_1 { ap_memory {  { a_1_address0 mem_address 1 5 }  { a_1_ce0 mem_ce 1 1 }  { a_1_q0 mem_dout 0 64 } } }
+	a_0 { ap_memory {  { a_0_address0 mem_address 1 3 }  { a_0_ce0 mem_ce 1 1 }  { a_0_q0 mem_dout 0 64 } } }
+	a_1 { ap_memory {  { a_1_address0 mem_address 1 3 }  { a_1_ce0 mem_ce 1 1 }  { a_1_q0 mem_dout 0 64 } } }
 	t1 { ap_memory {  { t1_address0 mem_address 1 3 }  { t1_ce0 mem_ce 1 1 }  { t1_we0 mem_we 1 1 }  { t1_d0 mem_din 1 64 } } }
 }

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1209'
 ================================================================
-* Date:           Tue Sep 23 15:47:38 2025
+* Date:           Wed Oct  8 20:37:23 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  1.914 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  1.482 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -89,8 +89,8 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln13_fu_95_p2   |         +|   0|  0|  12|           4|           1|
-    |icmp_ln13_fu_89_p2  |      icmp|   0|  0|  12|           4|           5|
+    |add_ln13_fu_87_p2   |         +|   0|  0|  12|           4|           1|
+    |icmp_ln13_fu_81_p2  |      icmp|   0|  0|  12|           4|           5|
     |ap_enable_pp0       |       xor|   0|  0|   2|           1|           2|
     +--------------------+----------+----+---+----+------------+------------+
     |Total               |          |   0|  0|  26|           9|           8|
@@ -102,8 +102,8 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_287   |   9|          2|    4|          8|
-    |i_fu_44                  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i       |   9|          2|    4|          8|
+    |i_272_fu_42              |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  36|          8|   10|         20|
     +-------------------------+----+-----------+-----+-----------+
@@ -115,8 +115,8 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |i_287_reg_130            |  4|   0|    4|          0|
-    |i_fu_44                  |  4|   0|    4|          0|
+    |i_272_fu_42              |  4|   0|    4|          0|
+    |i_reg_122                |  4|   0|    4|          0|
     +-------------------------+---+----+-----+-----------+
     |Total                    | 11|   0|   11|          0|
     +-------------------------+---+----+-----+-----------+
@@ -127,22 +127,21 @@
 == Interface
 ================================================================
 * Summary: 
-+----------------+-----+-----+------------+--------------------------------------------------------+--------------+
-|    RTL Ports   | Dir | Bits|  Protocol  |                      Source Object                     |    C Type    |
-+----------------+-----+-----+------------+--------------------------------------------------------+--------------+
-|ap_clk          |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
-|ap_rst          |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
-|ap_start        |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
-|ap_done         |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
-|ap_idle         |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
-|ap_ready        |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
-|npts_7          |   in|    3|     ap_none|                                                  npts_7|        scalar|
-|pts_Z_address0  |  out|    7|   ap_memory|                                                   pts_Z|         array|
-|pts_Z_ce0       |  out|    1|   ap_memory|                                                   pts_Z|         array|
-|pts_Z_q0        |   in|   64|   ap_memory|                                                   pts_Z|         array|
-|R_Z_address0    |  out|    4|   ap_memory|                                                     R_Z|         array|
-|R_Z_ce0         |  out|    1|   ap_memory|                                                     R_Z|         array|
-|R_Z_we0         |  out|    1|   ap_memory|                                                     R_Z|         array|
-|R_Z_d0          |  out|   64|   ap_memory|                                                     R_Z|         array|
-+----------------+-----+-----+------------+--------------------------------------------------------+--------------+
++------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |                      Source Object                     |    C Type    |
++------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1209|  return value|
+|phiQ_X_address0   |  out|    3|   ap_memory|                                                  phiQ_X|         array|
+|phiQ_X_ce0        |  out|    1|   ap_memory|                                                  phiQ_X|         array|
+|phiQ_X_we0        |  out|    1|   ap_memory|                                                  phiQ_X|         array|
+|phiQ_X_d0         |  out|   64|   ap_memory|                                                  phiQ_X|         array|
+|B_gen_1_address0  |  out|    6|   ap_memory|                                                 B_gen_1|         array|
+|B_gen_1_ce0       |  out|    1|   ap_memory|                                                 B_gen_1|         array|
+|B_gen_1_q0        |   in|   64|   ap_memory|                                                 B_gen_1|         array|
++------------------+-----+-----+------------+--------------------------------------------------------+--------------+
 

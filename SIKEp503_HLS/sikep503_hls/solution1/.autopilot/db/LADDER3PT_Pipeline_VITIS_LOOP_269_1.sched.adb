@@ -272,7 +272,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_269</name>
+						<name>i_259</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>267</lineNumber>
@@ -422,7 +422,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>i_269_write_ln267</name>
+						<name>i_259_write_ln267</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>267</lineNumber>
@@ -3608,7 +3608,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>i_269_write_ln267</name>
+						<name>i_259_write_ln267</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>267</lineNumber>

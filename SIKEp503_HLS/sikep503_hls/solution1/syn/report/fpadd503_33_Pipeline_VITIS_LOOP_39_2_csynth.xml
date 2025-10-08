@@ -18,7 +18,7 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.722</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.133</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -52,7 +52,7 @@
 <Name>VITIS_LOOP_39_2</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>src/generic/fp_generic.cpp:39</SourceLocation>
+<SourceLocation>src/generic/fp_generic.cpp:41</SourceLocation>
 </VITIS_LOOP_39_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -61,8 +61,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>76</FF>
-<LUT>692</LUT>
+<FF>205</FF>
+<LUT>855</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
@@ -198,8 +198,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>carry_139_out</name>
-<Object>carry_139_out</Object>
+<name>carry_144_out</name>
+<Object>carry_144_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -209,8 +209,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>carry_139_out_ap_vld</name>
-<Object>carry_139_out</Object>
+<name>carry_144_out_ap_vld</name>
+<Object>carry_144_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>

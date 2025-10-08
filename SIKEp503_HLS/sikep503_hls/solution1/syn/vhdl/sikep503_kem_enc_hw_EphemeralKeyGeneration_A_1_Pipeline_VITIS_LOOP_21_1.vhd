@@ -52,7 +52,7 @@ attribute shreg_extract : string;
     signal i_fu_36 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln21_fu_68_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_i_283 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_sig_allocacmp_i_273 : STD_LOGIC_VECTOR (3 downto 0);
     signal phiQ_X_1_we0_local : STD_LOGIC;
     signal phiQ_X_1_ce0_local : STD_LOGIC;
     signal ap_done_reg : STD_LOGIC := '0';
@@ -153,7 +153,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    add_ln21_fu_68_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_283) + unsigned(ap_const_lv4_1));
+    add_ln21_fu_68_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_273) + unsigned(ap_const_lv4_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_block_state1_pp0_stage0_iter0)
@@ -215,16 +215,16 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_283_assign_proc : process(ap_CS_fsm_state1, i_fu_36, ap_loop_init)
+    ap_sig_allocacmp_i_273_assign_proc : process(ap_CS_fsm_state1, i_fu_36, ap_loop_init)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            ap_sig_allocacmp_i_283 <= ap_const_lv4_0;
+            ap_sig_allocacmp_i_273 <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i_283 <= i_fu_36;
+            ap_sig_allocacmp_i_273 <= i_fu_36;
         end if; 
     end process;
 
-    icmp_ln21_fu_62_p2 <= "1" when (ap_sig_allocacmp_i_283 = ap_const_lv4_8) else "0";
+    icmp_ln21_fu_62_p2 <= "1" when (ap_sig_allocacmp_i_273 = ap_const_lv4_8) else "0";
     phiQ_X_1_address0 <= zext_ln21_fu_74_p1(3 - 1 downto 0);
     phiQ_X_1_ce0 <= phiQ_X_1_ce0_local;
 
@@ -249,5 +249,5 @@ begin
         end if; 
     end process;
 
-    zext_ln21_fu_74_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_283),64));
+    zext_ln21_fu_74_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_273),64));
 end behav;

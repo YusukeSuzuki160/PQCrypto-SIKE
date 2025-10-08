@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212'
 ================================================================
-* Date:           Tue Sep 23 15:47:58 2025
+* Date:           Wed Oct  8 20:37:24 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -57,11 +57,11 @@
 |Expression           |        -|      -|        0|       26|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
 |Instance             |        -|      -|        -|        -|     -|
-|Memory               |        -|      -|        -|        -|     -|
+|Memory               |        0|      -|       64|       65|     -|
 |Multiplexer          |        -|      -|        0|       36|     -|
 |Register             |        -|      -|       11|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|      0|       11|       62|     0|
+|Total                |        0|      0|       75|      127|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
@@ -80,7 +80,13 @@
     N/A
 
     * Memory: 
-    N/A
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |       Memory       |                                      Module                                      | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Montgomery_one_1_U  |EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212_Montgomery_one_1_ROM_Acud  |        0|  64|  65|    0|     8|   64|     1|          512|
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total               |                                                                                  |        0|  64|  65|    0|     8|   64|     1|          512|
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
 
     * FIFO: 
     N/A
@@ -89,8 +95,8 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln13_fu_87_p2   |         +|   0|  0|  12|           4|           1|
-    |icmp_ln13_fu_81_p2  |      icmp|   0|  0|  12|           4|           5|
+    |add_ln13_fu_83_p2   |         +|   0|  0|  12|           4|           1|
+    |icmp_ln13_fu_77_p2  |      icmp|   0|  0|  12|           4|           5|
     |ap_enable_pp0       |       xor|   0|  0|   2|           1|           2|
     +--------------------+----------+----+---+----+------------+------------+
     |Total               |          |   0|  0|  26|           9|           8|
@@ -102,8 +108,8 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_284   |   9|          2|    4|          8|
-    |i_fu_42                  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i       |   9|          2|    4|          8|
+    |i_276_fu_38              |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  36|          8|   10|         20|
     +-------------------------+----+-----------+-----+-----------+
@@ -115,10 +121,10 @@
     |ap_CS_fsm                |  1|   0|    1|          0|
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
-    |i_284_reg_126            |  4|   0|    4|          0|
-    |i_fu_42                  |  4|   0|    4|          0|
+    |i_276_fu_38              |  4|   0|    4|          0|
+    |zext_ln13_reg_109        |  4|   0|   64|         60|
     +-------------------------+---+----+-----+-----------+
-    |Total                    | 11|   0|   11|          0|
+    |Total                    | 11|   0|   71|         60|
     +-------------------------+---+----+-----+-----------+
 
 
@@ -127,21 +133,18 @@
 == Interface
 ================================================================
 * Summary: 
-+-------------------+-----+-----+------------+--------------------------------------------------------+--------------+
-|     RTL Ports     | Dir | Bits|  Protocol  |                      Source Object                     |    C Type    |
-+-------------------+-----+-----+------------+--------------------------------------------------------+--------------+
-|ap_clk             |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
-|ap_rst             |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
-|ap_start           |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
-|ap_done            |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
-|ap_idle            |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
-|ap_ready           |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
-|t3_address0        |  out|    4|   ap_memory|                                                      t3|         array|
-|t3_ce0             |  out|    1|   ap_memory|                                                      t3|         array|
-|t3_q0              |   in|   64|   ap_memory|                                                      t3|         array|
-|phiP_Z_2_address0  |  out|    3|   ap_memory|                                                phiP_Z_2|         array|
-|phiP_Z_2_ce0       |  out|    1|   ap_memory|                                                phiP_Z_2|         array|
-|phiP_Z_2_we0       |  out|    1|   ap_memory|                                                phiP_Z_2|         array|
-|phiP_Z_2_d0        |  out|   64|   ap_memory|                                                phiP_Z_2|         array|
-+-------------------+-----+-----+------------+--------------------------------------------------------+--------------+
++-----------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |                      Source Object                     |    C Type    |
++-----------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1212|  return value|
+|phiP_Z_address0  |  out|    3|   ap_memory|                                                  phiP_Z|         array|
+|phiP_Z_ce0       |  out|    1|   ap_memory|                                                  phiP_Z|         array|
+|phiP_Z_we0       |  out|    1|   ap_memory|                                                  phiP_Z|         array|
+|phiP_Z_d0        |  out|   64|   ap_memory|                                                  phiP_Z|         array|
++-----------------+-----+-----+------------+--------------------------------------------------------+--------------+
 

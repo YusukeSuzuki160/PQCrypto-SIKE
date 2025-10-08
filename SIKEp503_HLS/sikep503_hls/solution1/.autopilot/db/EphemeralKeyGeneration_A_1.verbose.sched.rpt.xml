@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1'" level="0">
-<item name = "Date">Tue Sep 23 15:43:23 2025
+<item name = "Date">Wed Oct  8 20:34:58 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, no</column>
+<column name="">3937799, 9908767837, 39.378 ms, 99.088 sec, 3937799, 9908767837, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_141_1">?, ?, ?, -, -, 124, no</column>
-<column name=" + VITIS_LOOP_143_2">?, ?, ?, -, -, 1 ~ 124, no</column>
-<column name="  ++ VITIS_LOOP_36_1">?, ?, ?, -, -, 2 ~ 122, no</column>
+<column name="- VITIS_LOOP_141_1">2579820, 9906354668, 20805 ~ 79889957, -, -, 124, no</column>
+<column name=" + VITIS_LOOP_143_2">2, 79803424, 2 ~ 643576, -, -, 1 ~ 124, no</column>
+<column name="  ++ VITIS_LOOP_36_1">6266, 643550, 3133 ~ 5275, -, -, 2 ~ 122, no</column>
 </table>
 </item>
 </section>

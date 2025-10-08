@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>c</name>
+						<name>R_Z</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>16</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_142</name>
+						<name>i_128</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -235,7 +235,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_142_write_ln28</name>
+						<name>i_128_write_ln28</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -678,7 +678,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>c_addr</name>
+						<name>R_Z_addr</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -713,7 +713,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>4</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -736,7 +736,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>c_load</name>
+						<name>R_Z_load</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -1133,7 +1133,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>c_addr_write_ln48</name>
+						<name>R_Z_addr_write_ln48</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -1248,7 +1248,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>xor_ln48_31</name>
+						<name>xor_ln48_25</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -1420,7 +1420,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>xor_ln48_48</name>
+						<name>xor_ln48_44</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -1591,7 +1591,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>and_ln48_11</name>
+						<name>and_ln48_9</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -1648,7 +1648,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>xor_ln48_33</name>
+						<name>xor_ln48_27</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -1705,7 +1705,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>or_ln48_11</name>
+						<name>or_ln48_9</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>48</lineNumber>
@@ -1820,7 +1820,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>i_142_write_ln28</name>
+						<name>i_128_write_ln28</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3351,7 +3351,7 @@
 						<item class_id="38" tracking_level="0" version="0">
 							<first class_id="39" tracking_level="0" version="0">
 								<first class_id_reference="9" object_id_reference="_22"></first>
-								<second>core:RAM_1P:c::load:store</second>
+								<second>core:RAM_1P:R_Z::load:store</second>
 							</first>
 							<second>29</second>
 						</item>

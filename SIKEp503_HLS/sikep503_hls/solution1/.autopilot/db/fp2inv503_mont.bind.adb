@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>5</id>
-						<name>carry_255_loc</name>
+						<name>carry_257_loc</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -521,7 +521,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>carry_255_loc_load</name>
+						<name>carry_257_loc_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1401,7 +1401,7 @@
 					<Obj>
 						<type>2</type>
 						<id>97</id>
-						<name>fpmul503_mont_3_355</name>
+						<name>fpmul503_mont_3_362</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1425,7 +1425,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpmul503_mont.3.355&gt;</content>
+				<content>&lt;constant:fpmul503_mont.3.362&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_31">
 				<Value>
@@ -2063,8 +2063,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-1</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>171557</mMinLatency>
+			<mMaxLatency>366881</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -3217,7 +3217,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>carry_255_loc_fu_38</first>
+			<first>carry_257_loc_fu_38</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3307,7 +3307,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_fpmul503_mont_3_355_fu_115</first>
+			<first>grp_fpmul503_mont_3_362_fu_115</first>
 			<second>
 				<count>6</count>
 				<item_version>0</item_version>
@@ -3346,7 +3346,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>carry_255_loc_load_load_fu_125</first>
+			<first>carry_257_loc_load_load_fu_125</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3409,7 +3409,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>carry_255_loc_reg_129</first>
+			<first>carry_257_loc_reg_129</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

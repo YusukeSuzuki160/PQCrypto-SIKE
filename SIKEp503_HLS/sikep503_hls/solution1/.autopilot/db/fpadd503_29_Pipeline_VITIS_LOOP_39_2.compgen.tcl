@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1269 \
-    name coeff \
+    id 806 \
+    name R_Z \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename coeff \
+    corename R_Z \
     op interface \
-    ports { coeff_address0 { O 6 vector } coeff_ce0 { O 1 bit } coeff_we0 { O 8 vector } coeff_d0 { O 64 vector } coeff_address1 { O 6 vector } coeff_ce1 { O 1 bit } coeff_q1 { I 64 vector } } \
+    ports { R_Z_address0 { O 4 vector } R_Z_ce0 { O 1 bit } R_Z_we0 { O 1 bit } R_Z_d0 { O 64 vector } R_Z_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'coeff'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R_Z'"
 }
 }
 
@@ -29,15 +29,15 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1270 \
-    name carry_128_out \
+    id 807 \
+    name carry_150_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_carry_128_out \
+    corename dc_carry_150_out \
     op interface \
-    ports { carry_128_out { O 1 vector } carry_128_out_ap_vld { O 1 bit } } \
+    ports { carry_150_out { O 1 vector } carry_150_out_ap_vld { O 1 bit } } \
 } "
 }
 

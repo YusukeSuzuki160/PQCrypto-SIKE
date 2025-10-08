@@ -2757,7 +2757,7 @@
 					<Obj>
 						<type>2</type>
 						<id>147</id>
-						<name>cshake256_simple_17</name>
+						<name>cshake256_simple_20</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2781,7 +2781,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:cshake256_simple.17&gt;</content>
+				<content>&lt;constant:cshake256_simple.20&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_53">
 				<Value>
@@ -2912,7 +2912,7 @@
 					<Obj>
 						<type>2</type>
 						<id>189</id>
-						<name>cshake256_simple_18</name>
+						<name>cshake256_simple_21</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2936,7 +2936,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:cshake256_simple.18&gt;</content>
+				<content>&lt;constant:cshake256_simple.21&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -4107,8 +4107,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-1</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>6291953</mMinLatency>
+			<mMaxLatency>-1660455351</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -6187,7 +6187,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_cshake256_simple_17_fu_323</first>
+			<first>grp_cshake256_simple_20_fu_323</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -6196,7 +6196,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_cshake256_simple_18_fu_357</first>
+			<first>grp_cshake256_simple_21_fu_357</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

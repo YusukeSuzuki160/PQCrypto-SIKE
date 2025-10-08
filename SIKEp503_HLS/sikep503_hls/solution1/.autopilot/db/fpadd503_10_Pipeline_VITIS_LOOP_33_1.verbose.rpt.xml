@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_10_Pipeline_VITIS_LOOP_33_1'" level="0">
-<item name = "Date">Tue Sep 23 15:25:49 2025
+<item name = "Date">Wed Oct  8 20:39:38 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -80,29 +80,29 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln33_fu_141_p2">+, 0, 0, 12, 4, 1</column>
-<column name="add_ln35_fu_194_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_fu_181_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln35_fu_245_p2">and, 0, 0, 64, 64, 64</column>
+<column name="add_ln33_fu_143_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln35_fu_196_p2">+, 0, 0, 71, 64, 64</column>
+<column name="tempReg_fu_183_p2">+, 0, 0, 71, 64, 64</column>
+<column name="and_ln35_fu_247_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_257">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln33_fu_135_p2">icmp, 0, 0, 12, 4, 5</column>
-<column name="or_ln35_12_fu_257_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln35_fu_213_p2">or, 0, 0, 64, 64, 64</column>
-<column name="select_ln35_fu_187_p3">select, 0, 0, 63, 1, 64</column>
+<column name="icmp_ln33_fu_137_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="or_ln35_12_fu_259_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln35_fu_215_p2">or, 0, 0, 64, 64, 64</column>
+<column name="select_ln35_fu_189_p3">select, 0, 0, 63, 1, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_34_fu_207_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln35_36_fu_251_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln35_44_fu_227_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_fu_201_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_34_fu_209_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_36_fu_253_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_47_fu_229_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln35_fu_203_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_243">9, 2, 4, 8</column>
-<column name="carry_reg_116">9, 2, 1, 2</column>
-<column name="i_fu_60">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_221">9, 2, 4, 8</column>
+<column name="carry_reg_118">9, 2, 1, 2</column>
+<column name="i_fu_62">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -110,11 +110,11 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="carry_reg_116">1, 0, 1, 0</column>
-<column name="i_fu_60">4, 0, 4, 0</column>
-<column name="icmp_ln33_reg_278">1, 0, 1, 0</column>
-<column name="trunc_ln33_reg_287">1, 0, 1, 0</column>
-<column name="zext_ln33_reg_282">4, 0, 64, 60</column>
+<column name="carry_reg_118">1, 0, 1, 0</column>
+<column name="i_fu_62">4, 0, 4, 0</column>
+<column name="icmp_ln33_reg_280">1, 0, 1, 0</column>
+<column name="trunc_ln33_reg_289">1, 0, 1, 0</column>
+<column name="zext_ln33_reg_284">4, 0, 64, 60</column>
 </table>
 </item>
 </section>

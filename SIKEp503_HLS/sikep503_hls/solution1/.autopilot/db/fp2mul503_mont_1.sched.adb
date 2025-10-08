@@ -1426,7 +1426,7 @@
 					<Obj>
 						<type>2</type>
 						<id>63</id>
-						<name>mp_mul_5109</name>
+						<name>mp_mul_6115</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1450,7 +1450,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.5109&gt;</content>
+				<content>&lt;constant:mp_mul.6115&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_30">
 				<Value>
@@ -1550,7 +1550,7 @@
 					<Obj>
 						<type>2</type>
 						<id>84</id>
-						<name>fp2mul503_mont_1_Pipeline_VITIS_LOOP_378_1162</name>
+						<name>fp2mul503_mont_1_Pipeline_VITIS_LOOP_378_1175</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1574,7 +1574,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.1_Pipeline_VITIS_LOOP_378_1162&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.1_Pipeline_VITIS_LOOP_378_1175&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_34">
 				<Value>
@@ -1674,7 +1674,7 @@
 					<Obj>
 						<type>2</type>
 						<id>106</id>
-						<name>fp2mul503_mont_1_Pipeline_VITIS_LOOP_378_1163</name>
+						<name>fp2mul503_mont_1_Pipeline_VITIS_LOOP_378_1176</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1698,14 +1698,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.1_Pipeline_VITIS_LOOP_378_1163&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.1_Pipeline_VITIS_LOOP_378_1176&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_38">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>110</id>
-						<name>mp_mul_5111</name>
+						<name>mp_mul_6117</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1729,14 +1729,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.5111&gt;</content>
+				<content>&lt;constant:mp_mul.6117&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_39">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>115</id>
-						<name>fp2mul503_mont_1_Pipeline_VITIS_LOOP_160_1164</name>
+						<name>fp2mul503_mont_1_Pipeline_VITIS_LOOP_160_1177</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1760,7 +1760,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.1_Pipeline_VITIS_LOOP_160_1164&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.1_Pipeline_VITIS_LOOP_160_1177&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2419,8 +2419,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>-1</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>609</mMinLatency>
+			<mMaxLatency>1059</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

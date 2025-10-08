@@ -54,7 +54,7 @@ attribute shreg_extract : string;
     signal i_fu_34 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
     signal add_ln610_fu_64_p2 : STD_LOGIC_VECTOR (4 downto 0);
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_i_285 : STD_LOGIC_VECTOR (4 downto 0);
+    signal ap_sig_allocacmp_i_194 : STD_LOGIC_VECTOR (4 downto 0);
     signal s_ce0_local : STD_LOGIC;
     signal s_we0_local : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_done_reg : STD_LOGIC := '0';
@@ -155,7 +155,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    add_ln610_fu_64_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_285) + unsigned(ap_const_lv5_1));
+    add_ln610_fu_64_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_194) + unsigned(ap_const_lv5_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_block_state1_pp0_stage0_iter0)
@@ -217,16 +217,16 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_285_assign_proc : process(ap_CS_fsm_state1, i_fu_34, ap_loop_init)
+    ap_sig_allocacmp_i_194_assign_proc : process(ap_CS_fsm_state1, i_fu_34, ap_loop_init)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            ap_sig_allocacmp_i_285 <= ap_const_lv5_0;
+            ap_sig_allocacmp_i_194 <= ap_const_lv5_0;
         else 
-            ap_sig_allocacmp_i_285 <= i_fu_34;
+            ap_sig_allocacmp_i_194 <= i_fu_34;
         end if; 
     end process;
 
-    icmp_ln610_fu_58_p2 <= "1" when (ap_sig_allocacmp_i_285 = ap_const_lv5_19) else "0";
+    icmp_ln610_fu_58_p2 <= "1" when (ap_sig_allocacmp_i_194 = ap_const_lv5_19) else "0";
     s_address0 <= zext_ln610_fu_70_p1(5 - 1 downto 0);
     s_ce0 <= s_ce0_local;
 
@@ -251,5 +251,5 @@ begin
         end if; 
     end process;
 
-    zext_ln610_fu_70_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_285),64));
+    zext_ln610_fu_70_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_194),64));
 end behav;

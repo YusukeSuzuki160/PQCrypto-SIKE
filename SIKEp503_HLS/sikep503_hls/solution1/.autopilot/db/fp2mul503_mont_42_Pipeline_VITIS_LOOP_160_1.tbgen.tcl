@@ -23,7 +23,7 @@ dict set ap_memory_interface_dict tt3 { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BR
 set C_modelArgList {
 	{ tt1 int 64 regular {array 16 { 1 } 1 1 }  }
 	{ tt2 int 64 regular {array 16 { 1 } 1 1 }  }
-	{ tt3 int 64 regular {array 16 { 0 } 0 1 }  }
+	{ tt3 int 64 regular {array 16 { 0 3 } 0 1 }  }
 	{ borrow_out int 1 regular {pointer 1}  }
 }
 set hasAXIMCache 0

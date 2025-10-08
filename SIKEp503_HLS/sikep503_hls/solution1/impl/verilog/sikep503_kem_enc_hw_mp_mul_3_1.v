@@ -45,17 +45,17 @@ reg ap_ready;
 
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire    grp_mul_3_1_fu_14_ap_start;
-wire    grp_mul_3_1_fu_14_ap_done;
-wire    grp_mul_3_1_fu_14_ap_idle;
-wire    grp_mul_3_1_fu_14_ap_ready;
-wire   [2:0] grp_mul_3_1_fu_14_b_address0;
-wire    grp_mul_3_1_fu_14_b_ce0;
-wire   [3:0] grp_mul_3_1_fu_14_c_address0;
-wire    grp_mul_3_1_fu_14_c_ce0;
-wire    grp_mul_3_1_fu_14_c_we0;
-wire   [63:0] grp_mul_3_1_fu_14_c_d0;
-reg    grp_mul_3_1_fu_14_ap_start_reg;
+wire    grp_mul_3_1_fu_16_ap_start;
+wire    grp_mul_3_1_fu_16_ap_done;
+wire    grp_mul_3_1_fu_16_ap_idle;
+wire    grp_mul_3_1_fu_16_ap_ready;
+wire   [2:0] grp_mul_3_1_fu_16_b_address0;
+wire    grp_mul_3_1_fu_16_b_ce0;
+wire   [3:0] grp_mul_3_1_fu_16_c_address0;
+wire    grp_mul_3_1_fu_16_c_ce0;
+wire    grp_mul_3_1_fu_16_c_we0;
+wire   [63:0] grp_mul_3_1_fu_16_c_d0;
+reg    grp_mul_3_1_fu_16_ap_start_reg;
 wire    ap_CS_fsm_state2;
 reg   [1:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
@@ -65,23 +65,23 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 grp_mul_3_1_fu_14_ap_start_reg = 1'b0;
+#0 grp_mul_3_1_fu_16_ap_start_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_mul_3_1 grp_mul_3_1_fu_14(
+sikep503_kem_enc_hw_mul_3_1 grp_mul_3_1_fu_16(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_mul_3_1_fu_14_ap_start),
-    .ap_done(grp_mul_3_1_fu_14_ap_done),
-    .ap_idle(grp_mul_3_1_fu_14_ap_idle),
-    .ap_ready(grp_mul_3_1_fu_14_ap_ready),
-    .b_address0(grp_mul_3_1_fu_14_b_address0),
-    .b_ce0(grp_mul_3_1_fu_14_b_ce0),
+    .ap_start(grp_mul_3_1_fu_16_ap_start),
+    .ap_done(grp_mul_3_1_fu_16_ap_done),
+    .ap_idle(grp_mul_3_1_fu_16_ap_idle),
+    .ap_ready(grp_mul_3_1_fu_16_ap_ready),
+    .b_address0(grp_mul_3_1_fu_16_b_address0),
+    .b_ce0(grp_mul_3_1_fu_16_b_ce0),
     .b_q0(b_q0),
-    .c_address0(grp_mul_3_1_fu_14_c_address0),
-    .c_ce0(grp_mul_3_1_fu_14_c_ce0),
-    .c_we0(grp_mul_3_1_fu_14_c_we0),
-    .c_d0(grp_mul_3_1_fu_14_c_d0)
+    .c_address0(grp_mul_3_1_fu_16_c_address0),
+    .c_ce0(grp_mul_3_1_fu_16_c_ce0),
+    .c_we0(grp_mul_3_1_fu_16_c_we0),
+    .c_d0(grp_mul_3_1_fu_16_c_d0)
 );
 
 always @ (posedge ap_clk) begin
@@ -94,12 +94,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_mul_3_1_fu_14_ap_start_reg <= 1'b0;
+        grp_mul_3_1_fu_16_ap_start_reg <= 1'b0;
     end else begin
         if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_mul_3_1_fu_14_ap_start_reg <= 1'b1;
-        end else if ((grp_mul_3_1_fu_14_ap_ready == 1'b1)) begin
-            grp_mul_3_1_fu_14_ap_start_reg <= 1'b0;
+            grp_mul_3_1_fu_16_ap_start_reg <= 1'b1;
+        end else if ((grp_mul_3_1_fu_16_ap_ready == 1'b1)) begin
+            grp_mul_3_1_fu_16_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -113,7 +113,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((grp_mul_3_1_fu_14_ap_done == 1'b0)) begin
+    if ((grp_mul_3_1_fu_16_ap_done == 1'b0)) begin
         ap_ST_fsm_state2_blk = 1'b1;
     end else begin
         ap_ST_fsm_state2_blk = 1'b0;
@@ -121,7 +121,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((grp_mul_3_1_fu_14_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2)))) begin
+    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((grp_mul_3_1_fu_16_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -137,7 +137,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_mul_3_1_fu_14_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((grp_mul_3_1_fu_16_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -154,7 +154,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_mul_3_1_fu_14_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_mul_3_1_fu_16_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -170,18 +170,18 @@ assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign b_address0 = grp_mul_3_1_fu_14_b_address0;
+assign b_address0 = grp_mul_3_1_fu_16_b_address0;
 
-assign b_ce0 = grp_mul_3_1_fu_14_b_ce0;
+assign b_ce0 = grp_mul_3_1_fu_16_b_ce0;
 
-assign c_address0 = grp_mul_3_1_fu_14_c_address0;
+assign c_address0 = grp_mul_3_1_fu_16_c_address0;
 
-assign c_ce0 = grp_mul_3_1_fu_14_c_ce0;
+assign c_ce0 = grp_mul_3_1_fu_16_c_ce0;
 
-assign c_d0 = grp_mul_3_1_fu_14_c_d0;
+assign c_d0 = grp_mul_3_1_fu_16_c_d0;
 
-assign c_we0 = grp_mul_3_1_fu_14_c_we0;
+assign c_we0 = grp_mul_3_1_fu_16_c_we0;
 
-assign grp_mul_3_1_fu_14_ap_start = grp_mul_3_1_fu_14_ap_start_reg;
+assign grp_mul_3_1_fu_16_ap_start = grp_mul_3_1_fu_16_ap_start_reg;
 
 endmodule //sikep503_kem_enc_hw_mp_mul_3_1

@@ -13,11 +13,11 @@ module sikep503_kem_enc_hw_fpadd503_25_Pipeline_VITIS_LOOP_46_3 (
         ap_done,
         ap_idle,
         ap_ready,
-        R_Z_address0,
-        R_Z_ce0,
-        R_Z_we0,
-        R_Z_d0,
-        R_Z_q0,
+        c_address0,
+        c_ce0,
+        c_we0,
+        c_d0,
+        c_q0,
         sext_ln30
 );
 
@@ -30,11 +30,11 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [3:0] R_Z_address0;
-output   R_Z_ce0;
-output   R_Z_we0;
-output  [63:0] R_Z_d0;
-input  [63:0] R_Z_q0;
+output  [2:0] c_address0;
+output   c_ce0;
+output   c_we0;
+output  [63:0] c_d0;
+input  [63:0] c_q0;
 input  [0:0] sext_ln30;
 
 reg ap_idle;
@@ -52,15 +52,15 @@ wire   [63:0] p503x2_1_q0;
 reg   [0:0] carry_reg_92;
 wire   [63:0] sext_ln30_cast_fu_103_p3;
 reg   [63:0] sext_ln30_cast_reg_241;
-reg   [3:0] R_Z_addr_reg_249;
+reg   [2:0] c_addr_reg_249;
 wire    ap_loop_init;
 wire   [63:0] zext_ln46_fu_131_p1;
-reg   [3:0] i_138_fu_56;
+reg   [3:0] i_128_fu_56;
 wire   [3:0] add_ln46_fu_125_p2;
 reg   [3:0] ap_sig_allocacmp_i;
-reg    R_Z_ce0_local;
-reg   [3:0] R_Z_address0_local;
-reg    R_Z_we0_local;
+reg    c_ce0_local;
+reg   [2:0] c_address0_local;
+reg    c_we0_local;
 wire   [63:0] add_ln48_fu_157_p2;
 reg    p503x2_1_ce0_local;
 wire   [63:0] zext_ln48_fu_142_p1;
@@ -90,11 +90,11 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_138_fu_56 = 4'd0;
+#0 i_128_fu_56 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_fpadd503_239_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
+sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -152,43 +152,17 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln46_fu_119_p2 == 1'd0)) begin
-            i_138_fu_56 <= add_ln46_fu_125_p2;
+            i_128_fu_56 <= add_ln46_fu_125_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_138_fu_56 <= 4'd0;
+            i_128_fu_56 <= 4'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        R_Z_addr_reg_249 <= zext_ln46_fu_131_p1;
+        c_addr_reg_249 <= zext_ln46_fu_131_p1;
         sext_ln30_cast_reg_241 <= sext_ln30_cast_fu_103_p3;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        R_Z_address0_local = R_Z_addr_reg_249;
-    end else if (((icmp_ln46_fu_119_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        R_Z_address0_local = zext_ln46_fu_131_p1;
-    end else begin
-        R_Z_address0_local = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state2) | ((icmp_ln46_fu_119_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1)))) begin
-        R_Z_ce0_local = 1'b1;
-    end else begin
-        R_Z_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        R_Z_we0_local = 1'b1;
-    end else begin
-        R_Z_we0_local = 1'b0;
     end
 end
 
@@ -238,7 +212,33 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_138_fu_56;
+        ap_sig_allocacmp_i = i_128_fu_56;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        c_address0_local = c_addr_reg_249;
+    end else if (((icmp_ln46_fu_119_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+        c_address0_local = zext_ln46_fu_131_p1;
+    end else begin
+        c_address0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state2) | ((icmp_ln46_fu_119_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1)))) begin
+        c_ce0_local = 1'b1;
+    end else begin
+        c_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        c_we0_local = 1'b1;
+    end else begin
+        c_we0_local = 1'b0;
     end
 end
 
@@ -270,19 +270,11 @@ always @ (*) begin
     endcase
 end
 
-assign R_Z_address0 = R_Z_address0_local;
-
-assign R_Z_ce0 = R_Z_ce0_local;
-
-assign R_Z_d0 = add_ln48_fu_157_p2;
-
-assign R_Z_we0 = R_Z_we0_local;
-
 assign add_ln46_fu_125_p2 = (ap_sig_allocacmp_i + 4'd1);
 
 assign add_ln48_fu_157_p2 = (and_ln48_fu_152_p2 + tempReg_fu_146_p2);
 
-assign and_ln48_9_fu_208_p2 = (xor_ln48_s_fu_200_p3 & R_Z_q0);
+assign and_ln48_9_fu_208_p2 = (xor_ln48_s_fu_200_p3 & c_q0);
 
 assign and_ln48_fu_152_p2 = (sext_ln30_cast_reg_241 & p503x2_1_q0);
 
@@ -302,6 +294,14 @@ assign ap_ready = ap_ready_sig;
 
 assign bit_sel1_fu_182_p3 = tempReg_fu_146_p2[64'd63];
 
+assign c_address0 = c_address0_local;
+
+assign c_ce0 = c_ce0_local;
+
+assign c_d0 = add_ln48_fu_157_p2;
+
+assign c_we0 = c_we0_local;
+
 assign icmp_ln46_fu_119_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln48_9_fu_220_p2 = (xor_ln48_27_fu_214_p2 | and_ln48_9_fu_208_p2);
@@ -312,7 +312,7 @@ assign p503x2_1_address0 = zext_ln46_fu_131_p1;
 
 assign sext_ln30_cast_fu_103_p3 = ((sext_ln30[0:0] == 1'b1) ? 64'd18446744073709551615 : 64'd0);
 
-assign tempReg_fu_146_p2 = (R_Z_q0 + zext_ln48_fu_142_p1);
+assign tempReg_fu_146_p2 = (c_q0 + zext_ln48_fu_142_p1);
 
 assign trunc_ln48_fu_196_p1 = tempReg_fu_146_p2[62:0];
 

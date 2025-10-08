@@ -121,14 +121,14 @@ reg    s_ce1_local;
 reg    s_ce0_local;
 reg   [7:0] s_we0_local;
 wire   [63:0] xor_ln423_fu_460_p2;
-wire   [5:0] shl_ln_fu_222_p3;
+wire   [5:0] shl_ln1_fu_222_p3;
 wire   [5:0] add_ln414_fu_230_p2;
 wire  signed [6:0] sext_ln414_fu_236_p1;
 wire   [5:0] add_ln414_1_fu_248_p2;
 wire  signed [6:0] sext_ln414_1_fu_254_p1;
 wire   [7:0] tmp_s_fu_271_p3;
 wire   [0:0] icmp_ln414_fu_278_p2;
-wire   [7:0] or_ln3_fu_300_p3;
+wire   [7:0] or_ln5_fu_300_p3;
 wire   [0:0] icmp_ln415_fu_313_p2;
 wire   [0:0] icmp_ln414_1_fu_307_p2;
 wire   [7:0] select_ln411_cast_fu_319_p3;
@@ -141,8 +141,8 @@ wire   [0:0] icmp_ln414_4_fu_400_p2;
 wire   [7:0] v_80_fu_406_p3;
 wire   [6:0] trunc_ln418_fu_420_p1;
 wire   [0:0] icmp_ln418_fu_414_p2;
-wire   [7:0] or_ln4_fu_424_p3;
-wire   [7:0] v_126_fu_432_p3;
+wire   [7:0] or_ln6_fu_424_p3;
+wire   [7:0] v_135_fu_432_p3;
 wire   [7:0] v_78_fu_385_p3;
 wire   [7:0] v_76_fu_364_p3;
 wire   [7:0] v_74_fu_356_p3;
@@ -382,9 +382,9 @@ end
 
 assign add_ln400_fu_211_p2 = (ap_sig_allocacmp_lane_2 + 5'd1);
 
-assign add_ln414_1_fu_248_p2 = ($signed(shl_ln_fu_222_p3) + $signed(6'd39));
+assign add_ln414_1_fu_248_p2 = ($signed(shl_ln1_fu_222_p3) + $signed(6'd39));
 
-assign add_ln414_fu_230_p2 = ($signed(shl_ln_fu_222_p3) + $signed(6'd38));
+assign add_ln414_fu_230_p2 = ($signed(shl_ln1_fu_222_p3) + $signed(6'd38));
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -406,7 +406,7 @@ assign ap_ready = ap_ready_sig;
 
 assign icmp_ln400_fu_205_p2 = ((ap_sig_allocacmp_lane_2 == 5'd17) ? 1'b1 : 1'b0);
 
-assign icmp_ln414_1_fu_307_p2 = ((or_ln3_fu_300_p3 < 8'd18) ? 1'b1 : 1'b0);
+assign icmp_ln414_1_fu_307_p2 = ((or_ln5_fu_300_p3 < 8'd18) ? 1'b1 : 1'b0);
 
 assign icmp_ln414_2_fu_350_p2 = ((or_ln410_1_fu_343_p3 < 8'd18) ? 1'b1 : 1'b0);
 
@@ -416,7 +416,7 @@ assign icmp_ln414_4_fu_400_p2 = ((or_ln410_3_fu_393_p3 < 8'd18) ? 1'b1 : 1'b0);
 
 assign icmp_ln414_fu_278_p2 = ((tmp_s_fu_271_p3 < 8'd18) ? 1'b1 : 1'b0);
 
-assign icmp_ln415_fu_313_p2 = ((or_ln3_fu_300_p3 == 8'd18) ? 1'b1 : 1'b0);
+assign icmp_ln415_fu_313_p2 = ((or_ln5_fu_300_p3 == 8'd18) ? 1'b1 : 1'b0);
 
 assign icmp_ln418_fu_414_p2 = ((or_ln410_3_fu_393_p3 == 8'd135) ? 1'b1 : 1'b0);
 
@@ -452,15 +452,15 @@ assign in_3_ce0 = in_3_ce0_local;
 
 assign in_3_ce1 = in_3_ce1_local;
 
-assign or_ln3_fu_300_p3 = {{lane_2_reg_474}, {3'd2}};
-
 assign or_ln410_1_fu_343_p3 = {{lane_2_reg_474}, {3'd4}};
 
 assign or_ln410_2_fu_372_p3 = {{lane_2_reg_474}, {3'd6}};
 
 assign or_ln410_3_fu_393_p3 = {{lane_2_reg_474}, {3'd7}};
 
-assign or_ln4_fu_424_p3 = {{1'd1}, {trunc_ln418_fu_420_p1}};
+assign or_ln5_fu_300_p3 = {{lane_2_reg_474}, {3'd2}};
+
+assign or_ln6_fu_424_p3 = {{1'd1}, {trunc_ln418_fu_420_p1}};
 
 assign s_address0 = s_addr_reg_526;
 
@@ -480,13 +480,13 @@ assign sext_ln414_1_fu_254_p1 = $signed(add_ln414_1_fu_248_p2);
 
 assign sext_ln414_fu_236_p1 = $signed(add_ln414_fu_230_p2);
 
-assign shl_ln_fu_222_p3 = {{ap_sig_allocacmp_lane_2}, {1'd0}};
+assign shl_ln1_fu_222_p3 = {{ap_sig_allocacmp_lane_2}, {1'd0}};
 
 assign tmp_s_fu_271_p3 = {{lane_2_reg_474}, {3'd0}};
 
 assign trunc_ln418_fu_420_p1 = v_80_fu_406_p3[6:0];
 
-assign v_126_fu_432_p3 = ((icmp_ln418_fu_414_p2[0:0] == 1'b1) ? or_ln4_fu_424_p3 : v_80_fu_406_p3);
+assign v_135_fu_432_p3 = ((icmp_ln418_fu_414_p2[0:0] == 1'b1) ? or_ln6_fu_424_p3 : v_80_fu_406_p3);
 
 assign v_65_fu_284_p3 = ((icmp_ln414_fu_278_p2[0:0] == 1'b1) ? in_0_q1 : 8'd0);
 
@@ -504,7 +504,7 @@ assign v_78_fu_385_p3 = ((icmp_ln414_3_fu_379_p2[0:0] == 1'b1) ? in_2_q0 : 8'd0)
 
 assign v_80_fu_406_p3 = ((icmp_ln414_4_fu_400_p2[0:0] == 1'b1) ? in_3_q0 : 8'd0);
 
-assign word_fu_440_p9 = {{{{{{{{v_126_fu_432_p3}, {v_78_fu_385_p3}}, {v_76_fu_364_p3}}, {v_74_fu_356_p3}}, {v_72_fu_335_p3}}, {v_70_fu_327_p3}}, {v_67_fu_292_p3}}, {v_65_fu_284_p3}};
+assign word_fu_440_p9 = {{{{{{{{v_135_fu_432_p3}, {v_78_fu_385_p3}}, {v_76_fu_364_p3}}, {v_74_fu_356_p3}}, {v_72_fu_335_p3}}, {v_70_fu_327_p3}}, {v_67_fu_292_p3}}, {v_65_fu_284_p3}};
 
 assign xor_ln423_fu_460_p2 = (word_fu_440_p9 ^ s_q1);
 

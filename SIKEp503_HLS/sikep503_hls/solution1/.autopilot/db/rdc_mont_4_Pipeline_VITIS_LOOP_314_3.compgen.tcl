@@ -7,55 +7,89 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1476 \
+    name mc \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename mc \
+    op interface \
+    ports { mc_address0 { O 4 vector } mc_ce0 { O 1 bit } mc_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'mc'"
+}
+}
+
+
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4561 \
-    name v_1 \
+    id 1472 \
+    name v_026 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_v_1 \
+    corename dc_v_026 \
     op interface \
-    ports { v_1 { I 64 vector } } \
+    ports { v_026 { I 64 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4562 \
-    name u_1 \
+    id 1473 \
+    name u_025 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_u_1 \
+    corename dc_u_025 \
     op interface \
-    ports { u_1 { I 64 vector } } \
+    ports { u_025 { I 64 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4563 \
-    name i_3 \
+    id 1474 \
+    name i_11 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_i_3 \
+    corename dc_i_11 \
     op interface \
-    ports { i_3 { I 3 vector } } \
+    ports { i_11 { I 3 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4564 \
+    id 1475 \
+    name mc_offset \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_mc_offset \
+    op interface \
+    ports { mc_offset { I 1 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1477 \
     name add_ln314 \
     type other \
     dir I \
@@ -70,112 +104,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4565 \
-    name mc_0_load \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_mc_0_load \
-    op interface \
-    ports { mc_0_load { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4566 \
-    name mc_1_load \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_mc_1_load \
-    op interface \
-    ports { mc_1_load { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4567 \
-    name mc_2_load \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_mc_2_load \
-    op interface \
-    ports { mc_2_load { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4568 \
-    name mc_3_load \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_mc_3_load \
-    op interface \
-    ports { mc_3_load { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4569 \
-    name mc_4_load \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_mc_4_load \
-    op interface \
-    ports { mc_4_load { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4570 \
-    name mc_5_load \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_mc_5_load \
-    op interface \
-    ports { mc_5_load { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4571 \
-    name mc_6_load \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_mc_6_load \
-    op interface \
-    ports { mc_6_load { I 64 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4572 \
+    id 1478 \
     name empty \
     type other \
     dir I \
@@ -190,45 +119,45 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4573 \
-    name v_out \
+    id 1479 \
+    name v_73_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_v_out \
+    corename dc_v_73_out \
     op interface \
-    ports { v_out { O 64 vector } v_out_ap_vld { O 1 bit } } \
+    ports { v_73_out { O 64 vector } v_73_out_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4574 \
-    name u_out \
+    id 1480 \
+    name u_54_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_u_out \
+    corename dc_u_54_out \
     op interface \
-    ports { u_out { O 64 vector } u_out_ap_vld { O 1 bit } } \
+    ports { u_54_out { O 64 vector } u_54_out_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4575 \
-    name t_1_out \
+    id 1481 \
+    name t_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_t_1_out \
+    corename dc_t_out \
     op interface \
-    ports { t_1_out { O 64 vector } t_1_out_ap_vld { O 1 bit } } \
+    ports { t_out { O 64 vector } t_out_ap_vld { O 1 bit } } \
 } "
 }
 

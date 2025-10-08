@@ -62,18 +62,18 @@ reg    temp_ce0;
 reg    temp_we0;
 reg   [63:0] temp_d0;
 wire   [63:0] temp_q0;
-wire    grp_mp_mul_5111_fu_69_ap_start;
-wire    grp_mp_mul_5111_fu_69_ap_done;
-wire    grp_mp_mul_5111_fu_69_ap_idle;
-wire    grp_mp_mul_5111_fu_69_ap_ready;
-wire   [2:0] grp_mp_mul_5111_fu_69_a_address0;
-wire    grp_mp_mul_5111_fu_69_a_ce0;
-wire   [2:0] grp_mp_mul_5111_fu_69_b_address0;
-wire    grp_mp_mul_5111_fu_69_b_ce0;
-wire   [3:0] grp_mp_mul_5111_fu_69_c_address0;
-wire    grp_mp_mul_5111_fu_69_c_ce0;
-wire    grp_mp_mul_5111_fu_69_c_we0;
-wire   [63:0] grp_mp_mul_5111_fu_69_c_d0;
+wire    grp_mp_mul_6117_fu_69_ap_start;
+wire    grp_mp_mul_6117_fu_69_ap_done;
+wire    grp_mp_mul_6117_fu_69_ap_idle;
+wire    grp_mp_mul_6117_fu_69_ap_ready;
+wire   [2:0] grp_mp_mul_6117_fu_69_a_address0;
+wire    grp_mp_mul_6117_fu_69_a_ce0;
+wire   [2:0] grp_mp_mul_6117_fu_69_b_address0;
+wire    grp_mp_mul_6117_fu_69_b_ce0;
+wire   [3:0] grp_mp_mul_6117_fu_69_c_address0;
+wire    grp_mp_mul_6117_fu_69_c_ce0;
+wire    grp_mp_mul_6117_fu_69_c_we0;
+wire   [63:0] grp_mp_mul_6117_fu_69_c_d0;
 wire    grp_rdc_mont_2_fu_78_ap_start;
 wire    grp_rdc_mont_2_fu_78_ap_done;
 wire    grp_rdc_mont_2_fu_78_ap_idle;
@@ -84,7 +84,7 @@ wire   [6:0] grp_rdc_mont_2_fu_78_mc_address0;
 wire    grp_rdc_mont_2_fu_78_mc_ce0;
 wire    grp_rdc_mont_2_fu_78_mc_we0;
 wire   [63:0] grp_rdc_mont_2_fu_78_mc_d0;
-reg    grp_mp_mul_5111_fu_69_ap_start_reg;
+reg    grp_mp_mul_6117_fu_69_ap_start_reg;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
 wire    temp_we0_out;
@@ -95,7 +95,7 @@ wire   [63:0] p_cast_fu_109_p1;
 wire    ap_CS_fsm_state2;
 wire   [0:0] exitcond1_fu_97_p2;
 reg   [4:0] empty_fu_48;
-wire   [4:0] empty_172_fu_103_p2;
+wire   [4:0] empty_170_fu_103_p2;
 reg    temp_we0_local;
 reg    temp_ce0_local;
 reg   [5:0] ap_NS_fsm;
@@ -110,7 +110,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 6'd1;
-#0 grp_mp_mul_5111_fu_69_ap_start_reg = 1'b0;
+#0 grp_mp_mul_6117_fu_69_ap_start_reg = 1'b0;
 #0 grp_rdc_mont_2_fu_78_ap_start_reg = 1'b0;
 #0 empty_fu_48 = 5'd0;
 end
@@ -129,24 +129,23 @@ temp_U(
     .q0(temp_q0)
 );
 
-sikep503_kem_enc_hw_mp_mul_5111 grp_mp_mul_5111_fu_69(
+sikep503_kem_enc_hw_mp_mul_6117 grp_mp_mul_6117_fu_69(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_mp_mul_5111_fu_69_ap_start),
-    .ap_done(grp_mp_mul_5111_fu_69_ap_done),
-    .ap_idle(grp_mp_mul_5111_fu_69_ap_idle),
-    .ap_ready(grp_mp_mul_5111_fu_69_ap_ready),
-    .a_address0(grp_mp_mul_5111_fu_69_a_address0),
-    .a_ce0(grp_mp_mul_5111_fu_69_a_ce0),
+    .ap_start(grp_mp_mul_6117_fu_69_ap_start),
+    .ap_done(grp_mp_mul_6117_fu_69_ap_done),
+    .ap_idle(grp_mp_mul_6117_fu_69_ap_idle),
+    .ap_ready(grp_mp_mul_6117_fu_69_ap_ready),
+    .a_address0(grp_mp_mul_6117_fu_69_a_address0),
+    .a_ce0(grp_mp_mul_6117_fu_69_a_ce0),
     .a_q0(ma_q0),
-    .b_address0(grp_mp_mul_5111_fu_69_b_address0),
-    .b_ce0(grp_mp_mul_5111_fu_69_b_ce0),
+    .b_address0(grp_mp_mul_6117_fu_69_b_address0),
+    .b_ce0(grp_mp_mul_6117_fu_69_b_ce0),
     .b_q0(mb_q0),
-    .c_address0(grp_mp_mul_5111_fu_69_c_address0),
-    .c_ce0(grp_mp_mul_5111_fu_69_c_ce0),
-    .c_we0(grp_mp_mul_5111_fu_69_c_we0),
-    .c_d0(grp_mp_mul_5111_fu_69_c_d0),
-    .c_q0(temp_q0)
+    .c_address0(grp_mp_mul_6117_fu_69_c_address0),
+    .c_ce0(grp_mp_mul_6117_fu_69_c_ce0),
+    .c_we0(grp_mp_mul_6117_fu_69_c_we0),
+    .c_d0(grp_mp_mul_6117_fu_69_c_d0)
 );
 
 sikep503_kem_enc_hw_rdc_mont_2 grp_rdc_mont_2_fu_78(
@@ -177,12 +176,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_mp_mul_5111_fu_69_ap_start_reg <= 1'b0;
+        grp_mp_mul_6117_fu_69_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_mp_mul_5111_fu_69_ap_start_reg <= 1'b1;
-        end else if ((grp_mp_mul_5111_fu_69_ap_ready == 1'b1)) begin
-            grp_mp_mul_5111_fu_69_ap_start_reg <= 1'b0;
+            grp_mp_mul_6117_fu_69_ap_start_reg <= 1'b1;
+        end else if ((grp_mp_mul_6117_fu_69_ap_ready == 1'b1)) begin
+            grp_mp_mul_6117_fu_69_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -203,7 +202,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
         empty_fu_48 <= 5'd0;
     end else if (((1'b1 == ap_CS_fsm_state2) & (exitcond1_fu_97_p2 == 1'd0))) begin
-        empty_fu_48 <= empty_172_fu_103_p2;
+        empty_fu_48 <= empty_170_fu_103_p2;
     end
 end
 
@@ -220,7 +219,7 @@ assign ap_ST_fsm_state2_blk = 1'b0;
 assign ap_ST_fsm_state3_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_mp_mul_5111_fu_69_ap_done == 1'b0)) begin
+    if ((grp_mp_mul_6117_fu_69_ap_done == 1'b0)) begin
         ap_ST_fsm_state4_blk = 1'b1;
     end else begin
         ap_ST_fsm_state4_blk = 1'b0;
@@ -265,7 +264,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
         temp_address0 = grp_rdc_mont_2_fu_78_ma_address0;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        temp_address0 = grp_mp_mul_5111_fu_69_c_address0;
+        temp_address0 = grp_mp_mul_6117_fu_69_c_address0;
     end else begin
         temp_address0 = p_cast_fu_109_p1;
     end
@@ -275,7 +274,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
         temp_ce0 = grp_rdc_mont_2_fu_78_ma_ce0;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        temp_ce0 = grp_mp_mul_5111_fu_69_c_ce0;
+        temp_ce0 = grp_mp_mul_6117_fu_69_c_ce0;
     end else begin
         temp_ce0 = temp_ce0_local;
     end
@@ -291,7 +290,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        temp_d0 = grp_mp_mul_5111_fu_69_c_d0;
+        temp_d0 = grp_mp_mul_6117_fu_69_c_d0;
     end else begin
         temp_d0 = 64'd0;
     end
@@ -299,7 +298,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        temp_we0 = grp_mp_mul_5111_fu_69_c_we0;
+        temp_we0 = grp_mp_mul_6117_fu_69_c_we0;
     end else begin
         temp_we0 = (temp_we0_out | 1'b0);
     end
@@ -333,7 +332,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((grp_mp_mul_5111_fu_69_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((grp_mp_mul_6117_fu_69_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state5;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -367,21 +366,21 @@ assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
 
 assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
-assign empty_172_fu_103_p2 = (empty_fu_48 + 5'd1);
+assign empty_170_fu_103_p2 = (empty_fu_48 + 5'd1);
 
 assign exitcond1_fu_97_p2 = ((empty_fu_48 == 5'd16) ? 1'b1 : 1'b0);
 
-assign grp_mp_mul_5111_fu_69_ap_start = grp_mp_mul_5111_fu_69_ap_start_reg;
+assign grp_mp_mul_6117_fu_69_ap_start = grp_mp_mul_6117_fu_69_ap_start_reg;
 
 assign grp_rdc_mont_2_fu_78_ap_start = grp_rdc_mont_2_fu_78_ap_start_reg;
 
-assign ma_address0 = grp_mp_mul_5111_fu_69_a_address0;
+assign ma_address0 = grp_mp_mul_6117_fu_69_a_address0;
 
-assign ma_ce0 = grp_mp_mul_5111_fu_69_a_ce0;
+assign ma_ce0 = grp_mp_mul_6117_fu_69_a_ce0;
 
-assign mb_address0 = grp_mp_mul_5111_fu_69_b_address0;
+assign mb_address0 = grp_mp_mul_6117_fu_69_b_address0;
 
-assign mb_ce0 = grp_mp_mul_5111_fu_69_b_ce0;
+assign mb_ce0 = grp_mp_mul_6117_fu_69_b_ce0;
 
 assign mc_address0 = grp_rdc_mont_2_fu_78_mc_address0;
 

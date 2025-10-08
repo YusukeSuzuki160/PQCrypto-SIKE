@@ -20,14 +20,14 @@ set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict coeff { MEM_WIDTH 64 MEM_SIZE 384 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ coeff int 64 regular {array 48 { 2 } 1 1 }  }
-	{ carry_139_out int 1 regular {pointer 1}  }
+	{ carry_144_out int 1 regular {pointer 1}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "coeff", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
- 	{ "Name" : "carry_139_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "carry_144_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 13
 set portList { 
@@ -42,8 +42,8 @@ set portList {
 	{ coeff_we0 sc_out sc_logic 1 signal 0 } 
 	{ coeff_d0 sc_out sc_lv 64 signal 0 } 
 	{ coeff_q0 sc_in sc_lv 64 signal 0 } 
-	{ carry_139_out sc_out sc_lv 1 signal 1 } 
-	{ carry_139_out_ap_vld sc_out sc_logic 1 outvld 1 } 
+	{ carry_144_out sc_out sc_lv 1 signal 1 } 
+	{ carry_144_out_ap_vld sc_out sc_logic 1 outvld 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -57,8 +57,8 @@ set NewPortList {[
  	{ "name": "coeff_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "coeff", "role": "we0" }} , 
  	{ "name": "coeff_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "coeff", "role": "d0" }} , 
  	{ "name": "coeff_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "coeff", "role": "q0" }} , 
- 	{ "name": "carry_139_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "carry_139_out", "role": "default" }} , 
- 	{ "name": "carry_139_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "carry_139_out", "role": "ap_vld" }}  ]}
+ 	{ "name": "carry_144_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "carry_144_out", "role": "default" }} , 
+ 	{ "name": "carry_144_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "carry_144_out", "role": "ap_vld" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
@@ -77,19 +77,19 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "coeff", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "carry_139_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "carry_144_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "p503x2_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_39_2", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_state1", "FirstStateIter" : "", "FirstStateBlock" : "ap_ST_fsm_state1_blk", "LastState" : "ap_ST_fsm_state2", "LastStateIter" : "", "LastStateBlock" : "ap_ST_fsm_state2_blk", "QuitState" : "ap_ST_fsm_state2", "QuitStateIter" : "", "QuitStateBlock" : "ap_ST_fsm_state2_blk", "OneDepthLoop" : "1", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.p503x2_1_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	fpadd503_33_Pipeline_VITIS_LOOP_39_2 {
-		coeff {Type IO LastRead 0 FirstWrite 1}
-		carry_139_out {Type O LastRead -1 FirstWrite 0}
+		coeff {Type IO LastRead 1 FirstWrite 2}
+		carry_144_out {Type O LastRead -1 FirstWrite 1}
 		p503x2_1 {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
@@ -100,9 +100,10 @@ set PerformanceInfo {[
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 
 	coeff { ap_memory {  { coeff_address0 mem_address 1 6 }  { coeff_ce0 mem_ce 1 1 }  { coeff_we0 mem_we 1 1 }  { coeff_d0 mem_din 1 64 }  { coeff_q0 mem_dout 0 64 } } }
-	carry_139_out { ap_vld {  { carry_139_out out_data 1 1 }  { carry_139_out_ap_vld out_vld 1 1 } } }
+	carry_144_out { ap_vld {  { carry_144_out out_data 1 1 }  { carry_144_out_ap_vld out_vld 1 1 } } }
 }

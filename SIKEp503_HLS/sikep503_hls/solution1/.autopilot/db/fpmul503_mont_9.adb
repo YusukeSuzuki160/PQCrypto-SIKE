@@ -519,7 +519,7 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>empty_152</name>
+              <name>empty_150</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -530,7 +530,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_152_fu_117_p2</rtlName>
+              <rtlName>empty_150_fu_117_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -847,7 +847,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_mp_mul_5103_fu_83</rtlName>
+              <rtlName>grp_mp_mul_5_fu_83</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1189,7 +1189,7 @@
             <Obj>
               <type>2</type>
               <id>68</id>
-              <name>mp_mul_5103</name>
+              <name>mp_mul_5</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1213,7 +1213,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:mp_mul.5103&gt;</content>
+          <content>&lt;constant:mp_mul.5&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_30">
           <Value>
@@ -1718,8 +1718,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>-1</mMinLatency>
-        <mMaxLatency>-1</mMaxLatency>
+        <mMinLatency>264</mMinLatency>
+        <mMaxLatency>490</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -1788,8 +1788,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>-2</mMinLatency>
-        <mMaxLatency>-2</mMaxLatency>
+        <mMinLatency>246</mMinLatency>
+        <mMaxLatency>472</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2090,7 +2090,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>grp_mp_mul_5103_fu_83 (mp_mul_5103)</first>
+          <first>grp_mp_mul_5_fu_83 (mp_mul_5)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -2100,11 +2100,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>343</second>
+              <second>428</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1159</second>
+              <second>759</second>
             </item>
           </second>
         </item>
@@ -2136,7 +2136,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>empty_152_fu_117_p2 ( + ) </first>
+          <first>empty_150_fu_117_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2541,7 +2541,7 @@
           </second>
         </item>
         <item>
-          <first>grp_mp_mul_5103_fu_83_ap_start_reg</first>
+          <first>grp_mp_mul_5_fu_83_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2583,7 +2583,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_mp_mul_5103_fu_83</first>
+          <first>grp_mp_mul_5_fu_83</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2601,7 +2601,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>grp_mp_mul_5103_fu_83 (mp_mul_5103)</first>
+          <first>grp_mp_mul_5_fu_83 (mp_mul_5)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2621,7 +2621,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>empty_152_fu_117_p2 ( + ) </first>
+          <first>empty_150_fu_117_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2963,7 +2963,7 @@
       <count>6</count>
       <item_version>0</item_version>
       <item class_id="56" tracking_level="0" version="0">
-        <first>empty_152_fu_117</first>
+        <first>empty_150_fu_117</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3015,7 +3015,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_mp_mul_5103_fu_83</first>
+        <first>grp_mp_mul_5_fu_83</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

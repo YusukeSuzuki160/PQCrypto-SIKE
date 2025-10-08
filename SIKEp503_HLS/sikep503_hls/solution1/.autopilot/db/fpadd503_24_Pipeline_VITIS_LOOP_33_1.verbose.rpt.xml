@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_24_Pipeline_VITIS_LOOP_33_1'" level="0">
-<item name = "Date">Tue Sep 23 15:24:32 2025
+<item name = "Date">Wed Oct  8 20:38:01 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -53,7 +53,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 45, -</column>
-<column name="Register">-, -, 12, -, -</column>
+<column name="Register">-, -, 13, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
@@ -81,25 +81,25 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln33_fu_124_p2">+, 0, 0, 12, 4, 1</column>
-<column name="add_ln35_fu_155_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_fu_149_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln35_fu_222_p2">and, 0, 0, 64, 64, 64</column>
-<column name="ap_condition_238">and, 0, 0, 2, 1, 1</column>
+<column name="add_ln35_fu_151_p2">+, 0, 0, 71, 64, 64</column>
+<column name="tempReg_fu_145_p2">+, 0, 0, 71, 64, 64</column>
+<column name="and_ln35_fu_202_p2">and, 0, 0, 64, 64, 64</column>
+<column name="ap_condition_225">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln33_fu_118_p2">icmp, 0, 0, 12, 4, 5</column>
-<column name="or_ln35_10_fu_234_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln35_fu_190_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln35_9_fu_214_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln35_fu_170_p2">or, 0, 0, 64, 64, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_25_fu_184_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln35_26_fu_204_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln35_27_fu_228_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln35_fu_178_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_26_fu_164_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_27_fu_184_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln35_28_fu_208_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln35_fu_158_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_232">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_209">9, 2, 4, 8</column>
 <column name="carry_reg_99">9, 2, 1, 2</column>
 <column name="i_fu_56">9, 2, 4, 8</column>
 </table>
@@ -111,8 +111,8 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="carry_reg_99">1, 0, 1, 0</column>
 <column name="i_fu_56">4, 0, 4, 0</column>
-<column name="icmp_ln33_reg_255">1, 0, 1, 0</column>
-<column name="trunc_ln35_reg_269">3, 0, 3, 0</column>
+<column name="icmp_ln33_reg_235">1, 0, 1, 0</column>
+<column name="zext_ln33_reg_239">4, 0, 64, 60</column>
 </table>
 </item>
 </section>
@@ -134,10 +134,10 @@
 <column name="R_Z_address0">out, 4, ap_memory, R_Z, array</column>
 <column name="R_Z_ce0">out, 1, ap_memory, R_Z, array</column>
 <column name="R_Z_q0">in, 64, ap_memory, R_Z, array</column>
-<column name="coeff_address0">out, 6, ap_memory, coeff, array</column>
-<column name="coeff_ce0">out, 1, ap_memory, coeff, array</column>
-<column name="coeff_we0">out, 1, ap_memory, coeff, array</column>
-<column name="coeff_d0">out, 64, ap_memory, coeff, array</column>
+<column name="c_address0">out, 3, ap_memory, c, array</column>
+<column name="c_ce0">out, 1, ap_memory, c, array</column>
+<column name="c_we0">out, 1, ap_memory, c, array</column>
+<column name="c_d0">out, 64, ap_memory, c, array</column>
 </table>
 </item>
 </section>

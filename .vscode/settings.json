@@ -5,6 +5,7 @@
         "limits": "c",
         "semaphore": "c",
         "algorithm": "c",
-        "ratio": "c"
+        "ratio": "c",
+        "type_traits": "cpp"
     }
 }

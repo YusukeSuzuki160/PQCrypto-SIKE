@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_59'
 ================================================================
-* Date:           Tue Sep 23 15:20:00 2025
+* Date:           Wed Oct  8 20:33:42 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.581 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.336 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       33|       33|  0.330 us|  0.330 us|   33|   33|       no|
+    |      133|      245|  1.330 us|  2.450 us|  133|  245|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                  |        |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |     Instance     | Module |   min   |   max   |    min   |    max   | min | max |   Type  |
         +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mul_67_fu_16  |mul_67  |       32|       32|  0.320 us|  0.320 us|   32|   32|       no|
+        |grp_mul_67_fu_28  |mul_67  |      132|      244|  1.320 us|  2.440 us|  132|  244|       no|
         +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -81,14 +81,15 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln295 = call void @mul.67, i64 %R_Z, i64 %b, i64 %c" [src/generic/fp_generic.cpp:295]   --->   Operation 3 'call' 'call_ln295' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%b_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %b"   --->   Operation 3 'read' 'b_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.67, i64 %a, i64 %coeff, i9 %b_read, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 4 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 4 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_Z, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 7 [1/2] (0.00ns)   --->   "%call_ln295 = call void @mul.67, i64 %R_Z, i64 %b, i64 %c" [src/generic/fp_generic.cpp:295]   --->   Operation 7 'call' 'call_ln295' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln296 = ret" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'ret' 'ret_ln296' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 1.09>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/2] (1.09ns)   --->   "%call_ln296 = call void @mul.67, i64 %a, i64 %coeff, i9 %b_read, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 9 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -102,8 +103,9 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ R_Z]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ b]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ coeff]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ b]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[0]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
@@ -111,39 +113,49 @@ Port [ c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0
 
 <LifeTime>
 <method=bitvector/>
+b_read          (read       ) [ 001]
 specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
-call_ln295      (call       ) [ 000]
-ret_ln296       (ret        ) [ 000]
+call_ln296      (call       ) [ 000]
+ret_ln297       (ret        ) [ 000]
 </LifeTime>
 
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="R_Z">
+<comp id="0" class="1000" name="a">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="R_Z"/><MemPortTyVec>1 </MemPortTyVec>
+<StgValue><ssdm name="a"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="b">
+<comp id="2" class="1000" name="coeff">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="b"/><MemPortTyVec>1 </MemPortTyVec>
+<StgValue><ssdm name="coeff"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="c">
+<comp id="4" class="1000" name="b">
 <pin_list>
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="b"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="c">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="c"/><MemPortTyVec>0 </MemPortTyVec>
@@ -151,30 +163,21 @@ ret_ln296       (ret        ) [ 000]
 </bind>
 </comp>
 
-<comp id="6" class="1001" name="const_6">
-<pin_list>
-<pin id="7" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="mul.67"/></StgValue>
-</bind>
-</comp>
-
 <comp id="8" class="1001" name="const_8">
 <pin_list>
-<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i9"/></StgValue>
 </bind>
 </comp>
 
 <comp id="10" class="1001" name="const_10">
 <pin_list>
-<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="mul.67"/></StgValue>
 </bind>
 </comp>
 
@@ -183,7 +186,7 @@ ret_ln296       (ret        ) [ 000]
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
 </bind>
 </comp>
 
@@ -196,30 +199,90 @@ ret_ln296       (ret        ) [ 000]
 </bind>
 </comp>
 
-<comp id="16" class="1004" name="grp_mul_67_fu_16">
+<comp id="16" class="1001" name="const_16">
 <pin_list>
-<pin id="17" dir="0" index="0" bw="0" slack="0"/>
-<pin id="18" dir="0" index="1" bw="64" slack="0"/>
-<pin id="19" dir="0" index="2" bw="64" slack="0"/>
-<pin id="20" dir="0" index="3" bw="64" slack="0"/>
-<pin id="21" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1004" name="b_read_read_fu_22">
+<pin_list>
+<pin id="23" dir="0" index="0" bw="9" slack="0"/>
+<pin id="24" dir="0" index="1" bw="9" slack="0"/>
+<pin id="25" dir="1" index="2" bw="9" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="b_read/1 "/>
+</bind>
+</comp>
+
+<comp id="28" class="1004" name="grp_mul_67_fu_28">
+<pin_list>
+<pin id="29" dir="0" index="0" bw="0" slack="0"/>
+<pin id="30" dir="0" index="1" bw="64" slack="0"/>
+<pin id="31" dir="0" index="2" bw="64" slack="0"/>
+<pin id="32" dir="0" index="3" bw="9" slack="0"/>
+<pin id="33" dir="0" index="4" bw="64" slack="0"/>
+<pin id="34" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln295/1 "/>
+<opset="call_ln296/1 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1005" name="b_read_reg_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="9" slack="1"/>
+<pin id="42" dir="1" index="1" bw="9" slack="1"/>
+</pin_list>
+<bind>
+<opset="b_read "/>
 </bind>
 </comp>
 
 </comp_list>
 
 <net_list>
-<net id="22"><net_src comp="6" pin="0"/><net_sink comp="16" pin=0"/></net>
+<net id="26"><net_src comp="8" pin="0"/><net_sink comp="22" pin=0"/></net>
 
-<net id="23"><net_src comp="0" pin="0"/><net_sink comp="16" pin=1"/></net>
+<net id="27"><net_src comp="4" pin="0"/><net_sink comp="22" pin=1"/></net>
 
-<net id="24"><net_src comp="2" pin="0"/><net_sink comp="16" pin=2"/></net>
+<net id="35"><net_src comp="10" pin="0"/><net_sink comp="28" pin=0"/></net>
 
-<net id="25"><net_src comp="4" pin="0"/><net_sink comp="16" pin=3"/></net>
+<net id="36"><net_src comp="0" pin="0"/><net_sink comp="28" pin=1"/></net>
+
+<net id="37"><net_src comp="2" pin="0"/><net_sink comp="28" pin=2"/></net>
+
+<net id="38"><net_src comp="22" pin="2"/><net_sink comp="28" pin=3"/></net>
+
+<net id="39"><net_src comp="6" pin="0"/><net_sink comp="28" pin=4"/></net>
+
+<net id="43"><net_src comp="22" pin="2"/><net_sink comp="40" pin=0"/></net>
+
+<net id="44"><net_src comp="40" pin="1"/><net_sink comp="28" pin=3"/></net>
 
 </net_list>
 
@@ -230,8 +293,9 @@ ret_ln296       (ret        ) [ 000]
   - Output states:
 	Port: c | {1 2 }
  - Input state : 
-	Port: mp_mul.59 : R_Z | {1 2 }
-	Port: mp_mul.59 : b | {1 2 }
+	Port: mp_mul.59 : a | {1 2 }
+	Port: mp_mul.59 : coeff | {1 2 }
+	Port: mp_mul.59 : b | {1 }
   - Chain level:
 	State 1
 	State 2
@@ -242,26 +306,36 @@ ret_ln296       (ret        ) [ 000]
 ============================================================
 
 * Functional unit list:
-|----------|------------------|---------|---------|---------|---------|
-| Operation|  Functional Unit |   DSP   |  Delay  |    FF   |   LUT   |
-|----------|------------------|---------|---------|---------|---------|
-|   call   | grp_mul_67_fu_16 |   900   |  1.935  |   5507  |   1954  |
-|----------|------------------|---------|---------|---------|---------|
-|   Total  |                  |   900   |  1.935  |   5507  |   1954  |
-|----------|------------------|---------|---------|---------|---------|
+|----------|-------------------|---------|---------|---------|---------|
+| Operation|  Functional Unit  |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-------------------|---------|---------|---------|---------|
+|   call   |  grp_mul_67_fu_28 |    16   |  2.322  |   589   |   629   |
+|----------|-------------------|---------|---------|---------|---------|
+|   read   | b_read_read_fu_22 |    0    |    0    |    0    |    0    |
+|----------|-------------------|---------|---------|---------|---------|
+|   Total  |                   |    16   |  2.322  |   589   |   629   |
+|----------|-------------------|---------|---------|---------|---------|
 
 Memories:
 N/A
 
 * Register list:
-N/A
++-------------+--------+
+|             |   FF   |
++-------------+--------+
+|b_read_reg_40|    9   |
++-------------+--------+
+|    Total    |    9   |
++-------------+--------+
 
 * Multiplexer (MUX) list: 
-|--------|------|------|------|--------|
-|  Comp  |  Pin | Size |  BW  | S x BW |
-|--------|------|------|------|--------|
-|  Total |      |      |      |    0   |
-|--------|------|------|------|--------|
+|------------------|------|------|------|--------||---------||---------||---------|
+|       Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|------------------|------|------|------|--------||---------||---------||---------|
+| grp_mul_67_fu_28 |  p3  |   2  |   9  |   18   ||    0    ||    9    |
+|------------------|------|------|------|--------||---------||---------||---------|
+|       Total      |      |      |      |   18   ||  0.387  ||    0    ||    9    |
+|------------------|------|------|------|--------||---------||---------||---------|
 
 
 
@@ -269,10 +343,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   900  |    1   |  5507  |  1954  |
+|  Function |   16   |    2   |   589  |   629  |
 |   Memory  |    -   |    -   |    -   |    -   |
-|Multiplexer|    -   |    -   |    -   |    -   |
-|  Register |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    0   |    0   |    9   |
+|  Register |    -   |    -   |    9   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   900  |    1   |  5507  |  1954  |
+|   Total   |   16   |    2   |   598  |   638  |
 +-----------+--------+--------+--------+--------+

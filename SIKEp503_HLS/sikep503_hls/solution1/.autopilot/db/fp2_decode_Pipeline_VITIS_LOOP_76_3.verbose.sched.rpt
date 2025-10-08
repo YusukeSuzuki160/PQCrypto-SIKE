@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_Pipeline_VITIS_LOOP_76_3'
 ================================================================
-* Date:           Tue Sep 23 15:43:26 2025
+* Date:           Wed Oct  8 20:35:01 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -99,20 +99,20 @@ ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%reuse_addr_reg5 = alloca i32 1"   
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%reuse_reg4 = alloca i32 1"   --->   Operation 16 'alloca' 'reuse_reg4' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%reuse_addr_reg = alloca i32 1"   --->   Operation 17 'alloca' 'reuse_addr_reg' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%reuse_reg = alloca i32 1"   --->   Operation 18 'alloca' 'reuse_reg' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%i_235 = alloca i32 1" [src/sidh.cpp:64]   --->   Operation 19 'alloca' 'i_235' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%i_225 = alloca i32 1" [src/sidh.cpp:64]   --->   Operation 19 'alloca' 'i_225' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_18, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_57, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%x_1_offset_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %x_1_offset"   --->   Operation 23 'read' 'x_1_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%x_0_offset_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %x_0_offset"   --->   Operation 24 'read' 'x_0_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%enc_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %enc"   --->   Operation 25 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (0.38ns)   --->   "%store_ln64 = store i6 0, i6 %i_235" [src/sidh.cpp:64]   --->   Operation 26 'store' 'store_ln64' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 26 [1/1] (0.38ns)   --->   "%store_ln64 = store i6 0, i6 %i_225" [src/sidh.cpp:64]   --->   Operation 26 'store' 'store_ln64' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 27 [1/1] (0.38ns)   --->   "%store_ln0 = store i64 0, i64 %reuse_reg"   --->   Operation 27 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 28 [1/1] (0.38ns)   --->   "%store_ln0 = store i64 18446744073709551615, i64 %reuse_addr_reg"   --->   Operation 28 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 29 [1/1] (0.38ns)   --->   "%store_ln0 = store i64 0, i64 %reuse_reg4"   --->   Operation 29 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 30 [1/1] (0.38ns)   --->   "%store_ln0 = store i64 18446744073709551615, i64 %reuse_addr_reg5"   --->   Operation 30 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body11"   --->   Operation 31 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%i = load i6 %i_235" [src/sidh.cpp:83]   --->   Operation 32 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%i = load i6 %i_225" [src/sidh.cpp:83]   --->   Operation 32 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 33 [1/1] (0.70ns)   --->   "%icmp_ln76 = icmp_eq  i6 %i, i6 63" [src/sidh.cpp:76]   --->   Operation 33 'icmp' 'icmp_ln76' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 34 [1/1] (0.70ns)   --->   "%add_ln76 = add i6 %i, i6 1" [src/sidh.cpp:76]   --->   Operation 34 'add' 'add_ln76' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln76 = br i1 %icmp_ln76, void %for.body11.split, void %for.end47.exitStub" [src/sidh.cpp:76]   --->   Operation 35 'br' 'br_ln76' <Predicate = true> <Delay = 0.00>
@@ -124,7 +124,7 @@ ST_1 : Operation 40 [1/1] (0.70ns)   --->   "%add_ln91_1 = add i7 %zext_ln76_1, 
 ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln91_2 = zext i7 %add_ln91_1" [src/sidh.cpp:91]   --->   Operation 41 'zext' 'zext_ln91_2' <Predicate = (!icmp_ln76)> <Delay = 0.00>
 ST_1 : Operation 42 [1/1] (1.14ns)   --->   "%add_ln91 = add i64 %zext_ln91_2, i64 %enc_read" [src/sidh.cpp:91]   --->   Operation 42 'add' 'add_ln91' <Predicate = (!icmp_ln76)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%gmem_addr_3 = getelementptr i8 %gmem, i64 %add_ln91" [src/sidh.cpp:91]   --->   Operation 43 'getelementptr' 'gmem_addr_3' <Predicate = (!icmp_ln76)> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.38ns)   --->   "%store_ln64 = store i6 %add_ln76, i6 %i_235" [src/sidh.cpp:64]   --->   Operation 44 'store' 'store_ln64' <Predicate = (!icmp_ln76)> <Delay = 0.38>
+ST_1 : Operation 44 [1/1] (0.38ns)   --->   "%store_ln64 = store i6 %add_ln76, i6 %i_225" [src/sidh.cpp:64]   --->   Operation 44 'store' 'store_ln64' <Predicate = (!icmp_ln76)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 7.30>
 ST_2 : Operation 45 [8/8] (7.30ns)   --->   "%gmem_load_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i8P1A, i8 %gmem_addr, i64 1" [src/sidh.cpp:83]   --->   Operation 45 'readreq' 'gmem_load_req' <Predicate = (!icmp_ln76)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
@@ -160,8 +160,8 @@ ST_9 : Operation 59 [2/8] (7.30ns)   --->   "%gmem_load_1_req = readreq i1 @_ssd
 State 10 <SV = 9> <Delay = 7.30>
 ST_10 : Operation 60 [1/1] (7.30ns)   --->   "%gmem_addr_read = read i8 @_ssdm_op_Read.m_axi.i8P1A, i8 %gmem_addr" [src/sidh.cpp:83]   --->   Operation 60 'read' 'gmem_addr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_s = partselect i3 @_ssdm_op_PartSelect.i3.i6.i32.i32, i6 %i, i32 3, i32 5" [src/sidh.cpp:83]   --->   Operation 61 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_11 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %x_0_offset_read, i3 %tmp_s" [src/sidh.cpp:83]   --->   Operation 62 'bitconcatenate' 'tmp_11' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln83_2 = zext i5 %tmp_11" [src/sidh.cpp:83]   --->   Operation 63 'zext' 'zext_ln83_2' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_5 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %x_0_offset_read, i3 %tmp_s" [src/sidh.cpp:83]   --->   Operation 62 'bitconcatenate' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln83_2 = zext i5 %tmp_5" [src/sidh.cpp:83]   --->   Operation 63 'zext' 'zext_ln83_2' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 64 [1/1] (0.00ns)   --->   "%x_0_addr = getelementptr i64 %x_0, i64 0, i64 %zext_ln83_2" [src/sidh.cpp:83]   --->   Operation 64 'getelementptr' 'x_0_addr' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 65 [1/1] (0.00ns)   --->   "%reuse_addr_reg5_load = load i64 %reuse_addr_reg5"   --->   Operation 65 'load' 'reuse_addr_reg5_load' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 66 [2/2] (0.71ns)   --->   "%x_0_load = load i5 %x_0_addr" [src/sidh.cpp:83]   --->   Operation 66 'load' 'x_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
@@ -175,8 +175,8 @@ ST_11 : Operation 70 [1/1] (0.00ns)   --->   "%zext_ln83 = zext i8 %gmem_addr_re
 ST_11 : Operation 71 [1/1] (0.00ns)   --->   "%shl_ln83_1 = shl i6 %i, i6 3" [src/sidh.cpp:83]   --->   Operation 71 'shl' 'shl_ln83_1' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln83_1 = zext i6 %shl_ln83_1" [src/sidh.cpp:83]   --->   Operation 72 'zext' 'zext_ln83_1' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 73 [1/1] (0.70ns)   --->   "%shl_ln83 = shl i64 %zext_ln83, i64 %zext_ln83_1" [src/sidh.cpp:83]   --->   Operation 73 'shl' 'shl_ln83' <Predicate = true> <Delay = 0.70> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_12 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %x_1_offset_read, i3 %tmp_s" [src/sidh.cpp:91]   --->   Operation 74 'bitconcatenate' 'tmp_12' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln91_1 = zext i5 %tmp_12" [src/sidh.cpp:91]   --->   Operation 75 'zext' 'zext_ln91_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_6 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %x_1_offset_read, i3 %tmp_s" [src/sidh.cpp:91]   --->   Operation 74 'bitconcatenate' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln91_1 = zext i5 %tmp_6" [src/sidh.cpp:91]   --->   Operation 75 'zext' 'zext_ln91_1' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 76 [1/1] (0.00ns)   --->   "%x_1_addr = getelementptr i64 %x_1, i64 0, i64 %zext_ln91_1" [src/sidh.cpp:91]   --->   Operation 76 'getelementptr' 'x_1_addr' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 77 [1/1] (0.00ns)   --->   "%reuse_reg4_load = load i64 %reuse_reg4"   --->   Operation 77 'load' 'reuse_reg4_load' <Predicate = (addr_cmp8)> <Delay = 0.00>
 ST_11 : Operation 78 [1/2] ( I:0.71ns O:0.71ns )   --->   "%x_0_load = load i5 %x_0_addr" [src/sidh.cpp:83]   --->   Operation 78 'load' 'x_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
@@ -191,9 +191,9 @@ ST_11 : Operation 86 [1/1] (0.38ns)   --->   "%store_ln83 = store i64 %or_ln83, 
 ST_11 : Operation 87 [1/1] (0.38ns)   --->   "%store_ln91 = store i64 %zext_ln91_1, i64 %reuse_addr_reg" [src/sidh.cpp:91]   --->   Operation 87 'store' 'store_ln91' <Predicate = true> <Delay = 0.38>
 
 State 12 <SV = 11> <Delay = 2.12>
-ST_12 : Operation 88 [1/1] (0.00ns)   --->   "%specpipeline_ln64 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sidh.cpp:64]   --->   Operation 88 'specpipeline' 'specpipeline_ln64' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 88 [1/1] (0.00ns)   --->   "%specpipeline_ln64 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/sidh.cpp:64]   --->   Operation 88 'specpipeline' 'specpipeline_ln64' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 89 [1/1] (0.00ns)   --->   "%speclooptripcount_ln64 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 63, i64 63, i64 63" [src/sidh.cpp:64]   --->   Operation 89 'speclooptripcount' 'speclooptripcount_ln64' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 90 [1/1] (0.00ns)   --->   "%specloopname_ln76 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [src/sidh.cpp:76]   --->   Operation 90 'specloopname' 'specloopname_ln76' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 90 [1/1] (0.00ns)   --->   "%specloopname_ln76 = specloopname void @_ssdm_op_SpecLoopName, void @empty" [src/sidh.cpp:76]   --->   Operation 90 'specloopname' 'specloopname_ln76' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i8 %gmem_addr_3_read" [src/sidh.cpp:91]   --->   Operation 91 'zext' 'zext_ln91' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 92 [1/1] (0.70ns)   --->   "%shl_ln91 = shl i64 %zext_ln91, i64 %zext_ln83_1" [src/sidh.cpp:91]   --->   Operation 92 'shl' 'shl_ln91' <Predicate = true> <Delay = 0.70> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 93 [1/1] (0.00ns)   --->   "%reuse_reg_load = load i64 %reuse_reg"   --->   Operation 93 'load' 'reuse_reg_load' <Predicate = (addr_cmp)> <Delay = 0.00>

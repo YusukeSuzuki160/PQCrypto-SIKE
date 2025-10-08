@@ -199,7 +199,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_9_2_8_1_1_U2166 : component sikep503_kem_enc_hw_sparsemux_9_2_8_1_1
+    sparsemux_9_2_8_1_1_U2302 : component sikep503_kem_enc_hw_sparsemux_9_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

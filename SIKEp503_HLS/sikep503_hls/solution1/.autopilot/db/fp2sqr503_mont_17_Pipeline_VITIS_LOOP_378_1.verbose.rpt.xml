@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2sqr503_mont_17_Pipeline_VITIS_LOOP_378_1'" level="0">
-<item name = "Date">Tue Sep 23 15:26:08 2025
+<item name = "Date">Wed Oct  8 20:40:13 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -86,14 +86,14 @@
 <column name="and_ln381_fu_269_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_274">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln378_fu_150_p2">icmp, 0, 0, 12, 4, 5</column>
-<column name="or_ln381_12_fu_281_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln381_13_fu_281_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln381_fu_237_p2">or, 0, 0, 64, 64, 64</column>
 <column name="select_ln381_1_fu_210_p3">select, 0, 0, 63, 1, 64</column>
 <column name="select_ln381_fu_192_p3">select, 0, 0, 63, 1, 64</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln381_34_fu_231_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln381_35_fu_251_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln381_36_fu_275_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln381_35_fu_231_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln381_36_fu_251_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln381_37_fu_275_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln381_fu_225_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -101,7 +101,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_253">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_232">9, 2, 4, 8</column>
 <column name="carry_reg_131">9, 2, 1, 2</column>
 <column name="i_fu_62">9, 2, 4, 8</column>
 </table>
@@ -112,7 +112,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="carry_reg_131">1, 0, 1, 0</column>
-<column name="i_253_reg_302">4, 0, 4, 0</column>
+<column name="i_232_reg_302">4, 0, 4, 0</column>
 <column name="i_fu_62">4, 0, 4, 0</column>
 <column name="icmp_ln378_reg_308">1, 0, 1, 0</column>
 </table>

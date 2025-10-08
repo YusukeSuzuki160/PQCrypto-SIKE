@@ -139,7 +139,7 @@ wire   [7:0] v_112_fu_371_p3;
 wire   [6:0] trunc_ln418_fu_385_p1;
 wire   [0:0] icmp_ln418_fu_379_p2;
 wire   [7:0] or_ln1_fu_389_p3;
-wire   [7:0] v_120_fu_397_p3;
+wire   [7:0] v_119_fu_397_p3;
 wire   [7:0] v_110_fu_350_p3;
 wire   [7:0] v_108_fu_329_p3;
 wire   [7:0] v_106_fu_321_p3;
@@ -485,9 +485,9 @@ assign v_110_fu_350_p3 = ((icmp_ln414_2_fu_344_p2[0:0] == 1'b1) ? in_2_q0 : 8'd0
 
 assign v_112_fu_371_p3 = ((icmp_ln414_3_fu_365_p2[0:0] == 1'b1) ? in_3_q0 : 8'd0);
 
-assign v_120_fu_397_p3 = ((icmp_ln418_fu_379_p2[0:0] == 1'b1) ? or_ln1_fu_389_p3 : v_112_fu_371_p3);
+assign v_119_fu_397_p3 = ((icmp_ln418_fu_379_p2[0:0] == 1'b1) ? or_ln1_fu_389_p3 : v_112_fu_371_p3);
 
-assign word_fu_405_p9 = {{{{{{{{v_120_fu_397_p3}, {v_110_fu_350_p3}}, {v_108_fu_329_p3}}, {v_106_fu_321_p3}}, {v_104_fu_300_p3}}, {v_102_fu_292_p3}}, {in_1_q1}}, {in_0_q1}};
+assign word_fu_405_p9 = {{{{{{{{v_119_fu_397_p3}, {v_110_fu_350_p3}}, {v_108_fu_329_p3}}, {v_106_fu_321_p3}}, {v_104_fu_300_p3}}, {v_102_fu_292_p3}}, {in_1_q1}}, {in_0_q1}};
 
 assign xor_ln423_fu_425_p2 = (word_fu_405_p9 ^ s_q1);
 

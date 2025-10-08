@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>c</name>
+						<name>R_Z</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
-				<array_size>8</array_size>
+				<array_size>16</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>carry_193_out</name>
+						<name>carry_187_out</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_141</name>
+						<name>i_127</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -148,7 +148,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>i_141_write_ln28</name>
+						<name>i_127_write_ln28</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -577,7 +577,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>c_addr</name>
+						<name>R_Z_addr</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>41</lineNumber>
@@ -612,7 +612,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>4</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -635,7 +635,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>c_load</name>
+						<name>R_Z_load</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>41</lineNumber>
@@ -926,7 +926,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>xor_ln105_39</name>
+						<name>xor_ln105_35</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1054,7 +1054,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>xor_ln105_40</name>
+						<name>xor_ln105_36</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -1325,7 +1325,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_261</name>
+						<name>tmp_136</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>41</lineNumber>
@@ -1667,7 +1667,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>c_addr_write_ln41</name>
+						<name>R_Z_addr_write_ln41</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>41</lineNumber>
@@ -1725,7 +1725,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>i_141_write_ln28</name>
+						<name>i_127_write_ln28</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1840,7 +1840,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>carry_193_out_write_ln41</name>
+						<name>carry_187_out_write_ln41</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>41</lineNumber>
@@ -3215,7 +3215,7 @@
 						<item class_id="38" tracking_level="0" version="0">
 							<first class_id="39" tracking_level="0" version="0">
 								<first class_id_reference="9" object_id_reference="_30"></first>
-								<second>core:RAM_1P:c::load:store</second>
+								<second>core:RAM_1P:R_Z::load:store</second>
 							</first>
 							<second>37</second>
 						</item>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2sqr503_mont_Pipeline_VITIS_LOOP_378_1'
 ================================================================
-* Date:           Tue Sep 23 15:47:25 2025
+* Date:           Wed Oct  8 20:38:43 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -115,7 +115,7 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter0  |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_232   |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_222   |   9|          2|    4|          8|
     |c_address0_local         |  14|          3|    7|         21|
     |carry_reg_112            |   9|          2|    1|          2|
     |i_fu_62                  |   9|          2|    4|          8|
@@ -133,7 +133,7 @@
     |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
     |c_load_reg_296               |  64|   0|   64|          0|
     |carry_reg_112                |   1|   0|    1|          0|
-    |i_232_reg_276                |   4|   0|    4|          0|
+    |i_222_reg_276                |   4|   0|    4|          0|
     |i_fu_62                      |   4|   0|    4|          0|
     |icmp_ln378_reg_282           |   1|   0|    1|          0|
     +-----------------------------+----+----+-----+-----------+

@@ -4,6 +4,7 @@
     </Simulation>
     <files>
         <file name="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/tb_top.cpp" sc="0" tb="1" cflags="-Wno-unknown-pragmas" csimflags="" blackbox="false"/>
+        <file name="src/generic/mpx_camba_mul.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/generic/mpx_packed.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/sha3/fips202.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/random/random.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

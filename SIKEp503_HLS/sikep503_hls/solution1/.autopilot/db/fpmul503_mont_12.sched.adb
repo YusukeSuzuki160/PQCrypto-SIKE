@@ -190,7 +190,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>38</item>
+					<item>35</item>
 				</oprand_edges>
 				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
@@ -246,7 +246,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>40</item>
+					<item>37</item>
 				</oprand_edges>
 				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
@@ -288,8 +288,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>42</item>
-					<item>43</item>
+					<item>39</item>
+					<item>40</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -331,7 +331,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>44</item>
+					<item>41</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -373,8 +373,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>45</item>
-					<item>147</item>
+					<item>42</item>
+					<item>129</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -416,8 +416,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>46</item>
-					<item>48</item>
+					<item>43</item>
+					<item>45</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
@@ -433,7 +433,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>empty_162</name>
+						<name>empty_168</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -459,8 +459,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>49</item>
-					<item>51</item>
+					<item>46</item>
+					<item>48</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
@@ -502,9 +502,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>52</item>
-					<item>53</item>
-					<item>54</item>
+					<item>49</item>
+					<item>50</item>
+					<item>51</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -546,7 +546,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>55</item>
+					<item>52</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -588,9 +588,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
+					<item>53</item>
+					<item>55</item>
 					<item>56</item>
-					<item>58</item>
-					<item>59</item>
 				</oprand_edges>
 				<opcode>getelementptr</opcode>
 				<m_Display>0</m_Display>
@@ -632,8 +632,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>60</item>
-					<item>61</item>
+					<item>57</item>
+					<item>58</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -675,10 +675,10 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>62</item>
-					<item>63</item>
-					<item>148</item>
-					<item>149</item>
+					<item>59</item>
+					<item>60</item>
+					<item>130</item>
+					<item>131</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -720,7 +720,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>64</item>
+					<item>61</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -735,7 +735,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>33</id>
+						<id>30</id>
 						<name>_ln62</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
@@ -776,10 +776,10 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
+					<item>63</item>
+					<item>64</item>
+					<item>65</item>
 					<item>66</item>
-					<item>67</item>
-					<item>68</item>
-					<item>69</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -794,7 +794,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>34</id>
+						<id>31</id>
 						<name>_ln63</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
@@ -835,13 +835,13 @@
 				<oprand_edges>
 					<count>7</count>
 					<item_version>0</item_version>
+					<item>68</item>
+					<item>69</item>
+					<item>70</item>
 					<item>71</item>
 					<item>72</item>
-					<item>73</item>
-					<item>74</item>
-					<item>75</item>
-					<item>146</item>
-					<item>150</item>
+					<item>128</item>
+					<item>132</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -856,7 +856,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>35</id>
+						<id>32</id>
 						<name>_ln64</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
@@ -915,7 +915,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>37</id>
+						<id>34</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -946,7 +946,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>39</id>
+						<id>36</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -977,7 +977,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>41</id>
+						<id>38</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1008,7 +1008,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>47</id>
+						<id>44</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1039,7 +1039,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>50</id>
+						<id>47</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1070,7 +1070,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>57</id>
+						<id>54</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1101,8 +1101,8 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>65</id>
-						<name>mp_mul_6105</name>
+						<id>62</id>
+						<name>mp_mul_6117</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1126,13 +1126,13 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mp_mul.6105&gt;</content>
+				<content>&lt;constant:mp_mul.6117&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_28">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>70</id>
+						<id>67</id>
 						<name>rdc_mont_11</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1269,7 +1269,7 @@
 			<item class_id_reference="18" object_id="_32">
 				<Obj>
 					<type>3</type>
-					<id>36</id>
+					<id>33</id>
 					<name>split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1294,9 +1294,9 @@
 				<node_objs>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>33</item>
-					<item>34</item>
-					<item>35</item>
+					<item>30</item>
+					<item>31</item>
+					<item>32</item>
 				</node_objs>
 			</item>
 		</blocks>
@@ -1304,283 +1304,283 @@
 			<count>40</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_33">
-				<id>38</id>
+				<id>35</id>
 				<edge_type>1</edge_type>
-				<source_obj>37</source_obj>
+				<source_obj>34</source_obj>
 				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_34">
-				<id>40</id>
+				<id>37</id>
 				<edge_type>1</edge_type>
-				<source_obj>39</source_obj>
+				<source_obj>36</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_35">
-				<id>42</id>
+				<id>39</id>
 				<edge_type>1</edge_type>
-				<source_obj>41</source_obj>
+				<source_obj>38</source_obj>
 				<sink_obj>12</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_36">
-				<id>43</id>
+				<id>40</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>12</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_37">
-				<id>44</id>
+				<id>41</id>
 				<edge_type>2</edge_type>
 				<source_obj>19</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_38">
-				<id>45</id>
+				<id>42</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>15</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_39">
-				<id>46</id>
+				<id>43</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>16</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_40">
-				<id>48</id>
+				<id>45</id>
 				<edge_type>1</edge_type>
-				<source_obj>47</source_obj>
+				<source_obj>44</source_obj>
 				<sink_obj>16</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_41">
-				<id>49</id>
+				<id>46</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_42">
-				<id>51</id>
+				<id>48</id>
 				<edge_type>1</edge_type>
-				<source_obj>50</source_obj>
+				<source_obj>47</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_43">
-				<id>52</id>
+				<id>49</id>
 				<edge_type>1</edge_type>
 				<source_obj>16</source_obj>
 				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_44">
-				<id>53</id>
+				<id>50</id>
 				<edge_type>2</edge_type>
 				<source_obj>27</source_obj>
 				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_45">
-				<id>54</id>
+				<id>51</id>
 				<edge_type>2</edge_type>
-				<source_obj>36</source_obj>
+				<source_obj>33</source_obj>
 				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_46">
-				<id>55</id>
+				<id>52</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>20</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_47">
-				<id>56</id>
+				<id>53</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_48">
-				<id>58</id>
+				<id>55</id>
 				<edge_type>1</edge_type>
-				<source_obj>57</source_obj>
+				<source_obj>54</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_49">
-				<id>59</id>
+				<id>56</id>
 				<edge_type>1</edge_type>
 				<source_obj>20</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_50">
-				<id>60</id>
+				<id>57</id>
 				<edge_type>1</edge_type>
-				<source_obj>57</source_obj>
+				<source_obj>54</source_obj>
 				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_51">
-				<id>61</id>
+				<id>58</id>
 				<edge_type>1</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_52">
-				<id>62</id>
+				<id>59</id>
 				<edge_type>1</edge_type>
 				<source_obj>17</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_53">
-				<id>63</id>
+				<id>60</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_54">
-				<id>64</id>
+				<id>61</id>
 				<edge_type>2</edge_type>
 				<source_obj>19</source_obj>
 				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_55">
-				<id>66</id>
+				<id>63</id>
 				<edge_type>1</edge_type>
-				<source_obj>65</source_obj>
-				<sink_obj>33</sink_obj>
+				<source_obj>62</source_obj>
+				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_56">
-				<id>67</id>
+				<id>64</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>33</sink_obj>
+				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_57">
-				<id>68</id>
+				<id>65</id>
 				<edge_type>1</edge_type>
 				<source_obj>2</source_obj>
-				<sink_obj>33</sink_obj>
+				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_58">
-				<id>69</id>
+				<id>66</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
-				<sink_obj>33</sink_obj>
+				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_59">
-				<id>71</id>
+				<id>68</id>
 				<edge_type>1</edge_type>
-				<source_obj>70</source_obj>
-				<sink_obj>34</sink_obj>
+				<source_obj>67</source_obj>
+				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_60">
-				<id>72</id>
+				<id>69</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
-				<sink_obj>34</sink_obj>
+				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_61">
-				<id>73</id>
+				<id>70</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
-				<sink_obj>34</sink_obj>
+				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_62">
-				<id>74</id>
+				<id>71</id>
 				<edge_type>1</edge_type>
 				<source_obj>4</source_obj>
-				<sink_obj>34</sink_obj>
+				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_63">
-				<id>75</id>
+				<id>72</id>
 				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
-				<sink_obj>34</sink_obj>
+				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_64">
-				<id>142</id>
+				<id>124</id>
 				<edge_type>2</edge_type>
 				<source_obj>14</source_obj>
 				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_65">
-				<id>143</id>
+				<id>125</id>
 				<edge_type>2</edge_type>
 				<source_obj>19</source_obj>
-				<sink_obj>36</sink_obj>
+				<sink_obj>33</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_66">
-				<id>144</id>
+				<id>126</id>
 				<edge_type>2</edge_type>
 				<source_obj>19</source_obj>
 				<sink_obj>27</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_67">
-				<id>145</id>
+				<id>127</id>
 				<edge_type>2</edge_type>
 				<source_obj>27</source_obj>
 				<sink_obj>19</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_68">
-				<id>146</id>
+				<id>128</id>
 				<edge_type>4</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>34</sink_obj>
+				<source_obj>30</source_obj>
+				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_69">
-				<id>147</id>
+				<id>129</id>
 				<edge_type>4</edge_type>
 				<source_obj>12</source_obj>
 				<sink_obj>15</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_70">
-				<id>148</id>
+				<id>130</id>
 				<edge_type>4</edge_type>
 				<source_obj>12</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_71">
-				<id>149</id>
+				<id>131</id>
 				<edge_type>4</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_72">
-				<id>150</id>
+				<id>132</id>
 				<edge_type>4</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>34</sink_obj>
+				<source_obj>30</source_obj>
+				<sink_obj>31</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -1608,8 +1608,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>164</mMinLatency>
-			<mMaxLatency>278</mMaxLatency>
+			<mMinLatency>264</mMinLatency>
+			<mMaxLatency>490</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1672,14 +1672,14 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>36</item>
+				<item>33</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>146</mMinLatency>
-			<mMaxLatency>260</mMaxLatency>
+			<mMinLatency>246</mMinLatency>
+			<mMaxLatency>472</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1781,21 +1781,21 @@
 			</second>
 		</item>
 		<item>
-			<first>33</first>
+			<first>30</first>
 			<second>
 				<first>2</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>34</first>
+			<first>31</first>
 			<second>
 				<first>4</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>35</first>
+			<first>32</first>
 			<second>
 				<first>5</first>
 				<second>0</second>
@@ -1827,7 +1827,7 @@
 			</second>
 		</item>
 		<item>
-			<first>36</first>
+			<first>33</first>
 			<second>
 				<first>2</first>
 				<second>5</second>

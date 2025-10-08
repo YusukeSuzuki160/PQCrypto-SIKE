@@ -340,7 +340,7 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>i_282</name>
+              <name>i_272</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>49</lineNumber>
@@ -4826,7 +4826,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_282</first>
+          <first>ap_sig_allocacmp_i_272</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -5369,7 +5369,7 @@
           </second>
         </item>
         <item>
-          <first>i_282_reg_266</first>
+          <first>i_272_reg_266</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6451,7 +6451,7 @@
         </second>
       </item>
       <item>
-        <first>i_282_load_fu_142</first>
+        <first>i_272_load_fu_142</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6625,7 +6625,7 @@
         </second>
       </item>
       <item>
-        <first>i_282_reg_266</first>
+        <first>i_272_reg_266</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

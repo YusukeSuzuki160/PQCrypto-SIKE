@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>c</name>
+						<name>a</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -39,7 +39,7 @@
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
-				<direction>2</direction>
+				<direction>0</direction>
 				<if_type>1</if_type>
 				<array_size>8</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>b</name>
+						<name>c</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -75,7 +75,7 @@
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
-				<direction>0</direction>
+				<direction>2</direction>
 				<if_type>1</if_type>
 				<array_size>8</array_size>
 				<bit_vecs>
@@ -306,7 +306,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_241</name>
+						<name>i_217</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>33</lineNumber>
@@ -590,8 +590,8 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>16</id>
-						<name>c_addr</name>
+						<id>19</id>
+						<name>a_addr</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -648,66 +648,8 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>17</id>
-						<name>b_addr</name>
-						<fileName>src/generic/fp_generic.cpp</fileName>
-						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>35</lineNumber>
-						<contextFuncName>fpadd503</contextFuncName>
-						<contextNormFuncName>fpadd503</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/generic/fp_generic.cpp</first>
-											<second>fpadd503</second>
-										</first>
-										<second>35</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>3</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>69</item>
-					<item>70</item>
-					<item>71</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>11</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_14">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>21</id>
-						<name>c_load</name>
+						<id>20</id>
+						<name>a_load</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -747,22 +689,22 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>72</item>
+					<item>69</item>
 				</oprand_edges>
 				<opcode>load</opcode>
-				<m_Display>1</m_Display>
+				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.71</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_15">
+			<item class_id_reference="9" object_id="_14">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>22</id>
+						<id>21</id>
 						<name>zext_ln35</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
@@ -803,7 +745,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>73</item>
+					<item>70</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -814,11 +756,11 @@
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_16">
+			<item class_id_reference="9" object_id="_15">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>23</id>
+						<id>22</id>
 						<name>tempReg</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
@@ -859,8 +801,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>74</item>
-					<item>75</item>
+					<item>71</item>
+					<item>72</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
@@ -871,12 +813,70 @@
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
+			<item class_id_reference="9" object_id="_16">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>23</id>
+						<name>c_addr</name>
+						<fileName>src/generic/fp_generic.cpp</fileName>
+						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>fpadd503</contextFuncName>
+						<contextNormFuncName>fpadd503</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/generic/fp_generic.cpp</first>
+											<second>fpadd503</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>3</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>73</item>
+					<item>74</item>
+					<item>75</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>12</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
 			<item class_id_reference="9" object_id="_17">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>b_load</name>
+						<name>c_load</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -919,10 +919,10 @@
 					<item>76</item>
 				</oprand_edges>
 				<opcode>load</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>1</m_isStartOfPath>
 				<m_delay>0.71</m_delay>
 				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
@@ -1276,7 +1276,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>xor_ln35_42</name>
+						<name>xor_ln35_43</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -2211,8 +2211,8 @@
 					<count>22</count>
 					<item_version>0</item_version>
 					<item>15</item>
-					<item>16</item>
-					<item>17</item>
+					<item>19</item>
+					<item>20</item>
 					<item>21</item>
 					<item>22</item>
 					<item>23</item>
@@ -2392,76 +2392,76 @@
 				<id>65</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>16</sink_obj>
+				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_65">
 				<id>67</id>
 				<edge_type>1</edge_type>
 				<source_obj>66</source_obj>
-				<sink_obj>16</sink_obj>
+				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_66">
 				<id>68</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
-				<sink_obj>16</sink_obj>
+				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_67">
 				<id>69</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
-				<sink_obj>17</sink_obj>
+				<source_obj>19</source_obj>
+				<sink_obj>20</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_68">
 				<id>70</id>
 				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>17</sink_obj>
+				<source_obj>9</source_obj>
+				<sink_obj>21</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_69">
 				<id>71</id>
 				<edge_type>1</edge_type>
-				<source_obj>15</source_obj>
-				<sink_obj>17</sink_obj>
+				<source_obj>20</source_obj>
+				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_70">
 				<id>72</id>
 				<edge_type>1</edge_type>
-				<source_obj>16</source_obj>
-				<sink_obj>21</sink_obj>
+				<source_obj>21</source_obj>
+				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_71">
 				<id>73</id>
 				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>22</sink_obj>
+				<source_obj>2</source_obj>
+				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_72">
 				<id>74</id>
 				<edge_type>1</edge_type>
-				<source_obj>21</source_obj>
+				<source_obj>66</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_73">
 				<id>75</id>
 				<edge_type>1</edge_type>
-				<source_obj>22</source_obj>
+				<source_obj>15</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_74">
 				<id>76</id>
 				<edge_type>1</edge_type>
-				<source_obj>17</source_obj>
+				<source_obj>23</source_obj>
 				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2475,7 +2475,7 @@
 			<item class_id_reference="20" object_id="_76">
 				<id>78</id>
 				<edge_type>1</edge_type>
-				<source_obj>23</source_obj>
+				<source_obj>22</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2489,7 +2489,7 @@
 			<item class_id_reference="20" object_id="_78">
 				<id>80</id>
 				<edge_type>1</edge_type>
-				<source_obj>16</source_obj>
+				<source_obj>23</source_obj>
 				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2503,7 +2503,7 @@
 			<item class_id_reference="20" object_id="_80">
 				<id>82</id>
 				<edge_type>1</edge_type>
-				<source_obj>23</source_obj>
+				<source_obj>22</source_obj>
 				<sink_obj>27</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2517,7 +2517,7 @@
 			<item class_id_reference="20" object_id="_82">
 				<id>84</id>
 				<edge_type>1</edge_type>
-				<source_obj>23</source_obj>
+				<source_obj>22</source_obj>
 				<sink_obj>28</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2538,7 +2538,7 @@
 			<item class_id_reference="20" object_id="_85">
 				<id>89</id>
 				<edge_type>1</edge_type>
-				<source_obj>23</source_obj>
+				<source_obj>22</source_obj>
 				<sink_obj>30</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2566,7 +2566,7 @@
 			<item class_id_reference="20" object_id="_89">
 				<id>95</id>
 				<edge_type>1</edge_type>
-				<source_obj>23</source_obj>
+				<source_obj>22</source_obj>
 				<sink_obj>32</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2587,7 +2587,7 @@
 			<item class_id_reference="20" object_id="_92">
 				<id>100</id>
 				<edge_type>1</edge_type>
-				<source_obj>21</source_obj>
+				<source_obj>20</source_obj>
 				<sink_obj>34</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2692,7 +2692,7 @@
 			<item class_id_reference="20" object_id="_107">
 				<id>152</id>
 				<edge_type>4</edge_type>
-				<source_obj>21</source_obj>
+				<source_obj>24</source_obj>
 				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2887,24 +2887,24 @@
 			</second>
 		</item>
 		<item>
-			<first>16</first>
+			<first>19</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>17</first>
+			<first>20</first>
 			<second>
 				<first>0</first>
-				<second>0</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>21</first>
 			<second>
-				<first>0</first>
-				<second>1</second>
+				<first>1</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
@@ -2917,7 +2917,7 @@
 		<item>
 			<first>23</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -3101,14 +3101,21 @@
 					<mDependenceDistance>-1</mDependenceDistance>
 					<mNumPorts>1</mNumPorts>
 					<mLimitedResource class_id="36" tracking_level="0" version="0">
-						<first class_id_reference="3" object_id_reference="_1"></first>
-						<second>1</second>
+						<first class_id_reference="3" object_id_reference="_2"></first>
+						<second>2</second>
 					</mLimitedResource>
 					<mNodesInfo class_id="37" tracking_level="0" version="0">
-						<count>2</count>
+						<count>3</count>
 						<item_version>0</item_version>
 						<item class_id="38" tracking_level="0" version="0">
 							<first class_id="39" tracking_level="0" version="0">
+								<first class_id_reference="9" object_id_reference="_13"></first>
+								<second>core:RAM_1P:a::load:store</second>
+							</first>
+							<second>20</second>
+						</item>
+						<item>
+							<first>
 								<first class_id_reference="9" object_id_reference="_19"></first>
 								<second>core:RAM_1P:c::load:store</second>
 							</first>
@@ -3116,10 +3123,10 @@
 						</item>
 						<item>
 							<first>
-								<first class_id_reference="9" object_id_reference="_14"></first>
+								<first class_id_reference="9" object_id_reference="_17"></first>
 								<second></second>
 							</first>
-							<second>21</second>
+							<second>24</second>
 						</item>
 					</mNodesInfo>
 				</item>

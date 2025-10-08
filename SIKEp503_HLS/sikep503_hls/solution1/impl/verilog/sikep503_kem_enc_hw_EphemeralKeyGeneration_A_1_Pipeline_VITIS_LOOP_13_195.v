@@ -13,38 +13,13 @@ module sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_195
         ap_done,
         ap_idle,
         ap_ready,
-        phiR_Z_address0,
-        phiR_Z_ce0,
-        phiR_Z_we0,
-        phiR_Z_d0,
-        phiR_Z_1_address0,
-        phiR_Z_1_ce0,
-        phiR_Z_1_we0,
-        phiR_Z_1_d0,
-        phiR_Z_2_address0,
-        phiR_Z_2_ce0,
-        phiR_Z_2_we0,
-        phiR_Z_2_d0,
-        phiR_Z_3_address0,
-        phiR_Z_3_ce0,
-        phiR_Z_3_we0,
-        phiR_Z_3_d0,
-        phiR_Z_4_address0,
-        phiR_Z_4_ce0,
-        phiR_Z_4_we0,
-        phiR_Z_4_d0,
-        phiR_Z_5_address0,
-        phiR_Z_5_ce0,
-        phiR_Z_5_we0,
-        phiR_Z_5_d0,
-        phiR_Z_6_address0,
-        phiR_Z_6_ce0,
-        phiR_Z_6_we0,
-        phiR_Z_6_d0,
-        phiR_Z_7_address0,
-        phiR_Z_7_ce0,
-        phiR_Z_7_we0,
-        phiR_Z_7_d0
+        phiP_X_1_address0,
+        phiP_X_1_ce0,
+        phiP_X_1_we0,
+        phiP_X_1_d0,
+        B_gen_1_address0,
+        B_gen_1_ce0,
+        B_gen_1_q0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -55,38 +30,13 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [0:0] phiR_Z_address0;
-output   phiR_Z_ce0;
-output   phiR_Z_we0;
-output  [63:0] phiR_Z_d0;
-output  [0:0] phiR_Z_1_address0;
-output   phiR_Z_1_ce0;
-output   phiR_Z_1_we0;
-output  [63:0] phiR_Z_1_d0;
-output  [0:0] phiR_Z_2_address0;
-output   phiR_Z_2_ce0;
-output   phiR_Z_2_we0;
-output  [63:0] phiR_Z_2_d0;
-output  [0:0] phiR_Z_3_address0;
-output   phiR_Z_3_ce0;
-output   phiR_Z_3_we0;
-output  [63:0] phiR_Z_3_d0;
-output  [0:0] phiR_Z_4_address0;
-output   phiR_Z_4_ce0;
-output   phiR_Z_4_we0;
-output  [63:0] phiR_Z_4_d0;
-output  [0:0] phiR_Z_5_address0;
-output   phiR_Z_5_ce0;
-output   phiR_Z_5_we0;
-output  [63:0] phiR_Z_5_d0;
-output  [0:0] phiR_Z_6_address0;
-output   phiR_Z_6_ce0;
-output   phiR_Z_6_we0;
-output  [63:0] phiR_Z_6_d0;
-output  [0:0] phiR_Z_7_address0;
-output   phiR_Z_7_ce0;
-output   phiR_Z_7_we0;
-output  [63:0] phiR_Z_7_d0;
+output  [2:0] phiP_X_1_address0;
+output   phiP_X_1_ce0;
+output   phiP_X_1_we0;
+output  [63:0] phiP_X_1_d0;
+output  [5:0] B_gen_1_address0;
+output   B_gen_1_ce0;
+input  [63:0] B_gen_1_q0;
 
 reg ap_idle;
 
@@ -96,38 +46,24 @@ wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln13_fu_211_p2;
+wire   [0:0] icmp_ln13_fu_81_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [2:0] Montgomery_one_1_address0;
-wire   [63:0] Montgomery_one_1_q0;
-wire   [2:0] trunc_ln13_fu_228_p1;
-reg   [2:0] trunc_ln13_reg_247;
+reg   [3:0] i_230_reg_126;
 wire    ap_block_pp0_stage0_11001;
-wire   [63:0] zext_ln13_fu_223_p1;
+wire   [63:0] zext_ln14_fu_105_p1;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_191_fu_66;
-wire   [3:0] add_ln13_fu_217_p2;
+wire   [63:0] zext_ln13_fu_115_p1;
+reg   [3:0] i_fu_42;
+wire   [3:0] add_ln13_fu_87_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i;
-reg    Montgomery_one_1_ce0_local;
-reg    phiR_Z_6_we0_local;
-reg    phiR_Z_6_ce0_local;
-reg    phiR_Z_5_we0_local;
-reg    phiR_Z_5_ce0_local;
-reg    phiR_Z_4_we0_local;
-reg    phiR_Z_4_ce0_local;
-reg    phiR_Z_3_we0_local;
-reg    phiR_Z_3_ce0_local;
-reg    phiR_Z_2_we0_local;
-reg    phiR_Z_2_ce0_local;
-reg    phiR_Z_1_we0_local;
-reg    phiR_Z_1_ce0_local;
-reg    phiR_Z_we0_local;
-reg    phiR_Z_ce0_local;
-reg    phiR_Z_7_we0_local;
-reg    phiR_Z_7_ce0_local;
+reg   [3:0] ap_sig_allocacmp_i_230;
+reg    B_gen_1_ce0_local;
+reg    phiP_X_1_we0_local;
+reg    phiP_X_1_ce0_local;
+wire   [2:0] trunc_ln14_fu_93_p1;
+wire   [3:0] zext_ln14_cast_fu_97_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -142,21 +78,9 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_191_fu_66 = 4'd0;
+#0 i_fu_42 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
-
-sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_193_Montgomery_one_1_ROM_AUcud #(
-    .DataWidth( 64 ),
-    .AddressRange( 8 ),
-    .AddressWidth( 3 ))
-Montgomery_one_1_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(Montgomery_one_1_address0),
-    .ce0(Montgomery_one_1_ce0_local),
-    .q0(Montgomery_one_1_q0)
-);
 
 sikep503_kem_enc_hw_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
     .ap_clk(ap_clk),
@@ -207,30 +131,30 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln13_fu_211_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_191_fu_66 <= add_ln13_fu_217_p2;
+        if (((icmp_ln13_fu_81_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_fu_42 <= add_ln13_fu_87_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_191_fu_66 <= 4'd0;
+            i_fu_42 <= 4'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        trunc_ln13_reg_247 <= trunc_ln13_fu_228_p1;
+        i_230_reg_126 <= ap_sig_allocacmp_i_230;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        Montgomery_one_1_ce0_local = 1'b1;
+        B_gen_1_ce0_local = 1'b1;
     end else begin
-        Montgomery_one_1_ce0_local = 1'b0;
+        B_gen_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln13_fu_211_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln13_fu_81_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -246,7 +170,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_start_int == 1'b0) & (ap_idle_pp0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((ap_idle_pp0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_start_int == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -270,138 +194,26 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i = 4'd0;
+    if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        ap_sig_allocacmp_i_230 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_191_fu_66;
+        ap_sig_allocacmp_i_230 = i_fu_42;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_1_ce0_local = 1'b1;
+        phiP_X_1_ce0_local = 1'b1;
     end else begin
-        phiR_Z_1_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_1_we0_local = 1'b1;
-    end else begin
-        phiR_Z_1_we0_local = 1'b0;
+        phiP_X_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_2_ce0_local = 1'b1;
+        phiP_X_1_we0_local = 1'b1;
     end else begin
-        phiR_Z_2_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd2) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_2_we0_local = 1'b1;
-    end else begin
-        phiR_Z_2_we0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_3_ce0_local = 1'b1;
-    end else begin
-        phiR_Z_3_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_3_we0_local = 1'b1;
-    end else begin
-        phiR_Z_3_we0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_4_ce0_local = 1'b1;
-    end else begin
-        phiR_Z_4_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd4) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_4_we0_local = 1'b1;
-    end else begin
-        phiR_Z_4_we0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_5_ce0_local = 1'b1;
-    end else begin
-        phiR_Z_5_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd5) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_5_we0_local = 1'b1;
-    end else begin
-        phiR_Z_5_we0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_6_ce0_local = 1'b1;
-    end else begin
-        phiR_Z_6_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd6) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_6_we0_local = 1'b1;
-    end else begin
-        phiR_Z_6_we0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_7_ce0_local = 1'b1;
-    end else begin
-        phiR_Z_7_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd7) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_7_we0_local = 1'b1;
-    end else begin
-        phiR_Z_7_we0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_ce0_local = 1'b1;
-    end else begin
-        phiR_Z_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((trunc_ln13_reg_247 == 3'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        phiR_Z_we0_local = 1'b1;
-    end else begin
-        phiR_Z_we0_local = 1'b0;
+        phiP_X_1_we0_local = 1'b0;
     end
 end
 
@@ -416,9 +228,11 @@ always @ (*) begin
     endcase
 end
 
-assign Montgomery_one_1_address0 = zext_ln13_fu_223_p1;
+assign B_gen_1_address0 = zext_ln14_fu_105_p1;
 
-assign add_ln13_fu_217_p2 = (ap_sig_allocacmp_i + 4'd1);
+assign B_gen_1_ce0 = B_gen_1_ce0_local;
+
+assign add_ln13_fu_87_p2 = (ap_sig_allocacmp_i_230 + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -438,74 +252,22 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln13_fu_211_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln13_fu_81_p2 = ((ap_sig_allocacmp_i_230 == 4'd8) ? 1'b1 : 1'b0);
 
-assign phiR_Z_1_address0 = 64'd0;
+assign phiP_X_1_address0 = zext_ln13_fu_115_p1;
 
-assign phiR_Z_1_ce0 = phiR_Z_1_ce0_local;
+assign phiP_X_1_ce0 = phiP_X_1_ce0_local;
 
-assign phiR_Z_1_d0 = Montgomery_one_1_q0;
+assign phiP_X_1_d0 = B_gen_1_q0;
 
-assign phiR_Z_1_we0 = phiR_Z_1_we0_local;
+assign phiP_X_1_we0 = phiP_X_1_we0_local;
 
-assign phiR_Z_2_address0 = 64'd0;
+assign trunc_ln14_fu_93_p1 = ap_sig_allocacmp_i_230[2:0];
 
-assign phiR_Z_2_ce0 = phiR_Z_2_ce0_local;
+assign zext_ln13_fu_115_p1 = i_230_reg_126;
 
-assign phiR_Z_2_d0 = Montgomery_one_1_q0;
+assign zext_ln14_cast_fu_97_p3 = {{1'd1}, {trunc_ln14_fu_93_p1}};
 
-assign phiR_Z_2_we0 = phiR_Z_2_we0_local;
-
-assign phiR_Z_3_address0 = 64'd0;
-
-assign phiR_Z_3_ce0 = phiR_Z_3_ce0_local;
-
-assign phiR_Z_3_d0 = Montgomery_one_1_q0;
-
-assign phiR_Z_3_we0 = phiR_Z_3_we0_local;
-
-assign phiR_Z_4_address0 = 64'd0;
-
-assign phiR_Z_4_ce0 = phiR_Z_4_ce0_local;
-
-assign phiR_Z_4_d0 = Montgomery_one_1_q0;
-
-assign phiR_Z_4_we0 = phiR_Z_4_we0_local;
-
-assign phiR_Z_5_address0 = 64'd0;
-
-assign phiR_Z_5_ce0 = phiR_Z_5_ce0_local;
-
-assign phiR_Z_5_d0 = Montgomery_one_1_q0;
-
-assign phiR_Z_5_we0 = phiR_Z_5_we0_local;
-
-assign phiR_Z_6_address0 = 64'd0;
-
-assign phiR_Z_6_ce0 = phiR_Z_6_ce0_local;
-
-assign phiR_Z_6_d0 = Montgomery_one_1_q0;
-
-assign phiR_Z_6_we0 = phiR_Z_6_we0_local;
-
-assign phiR_Z_7_address0 = 64'd0;
-
-assign phiR_Z_7_ce0 = phiR_Z_7_ce0_local;
-
-assign phiR_Z_7_d0 = Montgomery_one_1_q0;
-
-assign phiR_Z_7_we0 = phiR_Z_7_we0_local;
-
-assign phiR_Z_address0 = 64'd0;
-
-assign phiR_Z_ce0 = phiR_Z_ce0_local;
-
-assign phiR_Z_d0 = Montgomery_one_1_q0;
-
-assign phiR_Z_we0 = phiR_Z_we0_local;
-
-assign trunc_ln13_fu_228_p1 = ap_sig_allocacmp_i[2:0];
-
-assign zext_ln13_fu_223_p1 = ap_sig_allocacmp_i;
+assign zext_ln14_fu_105_p1 = zext_ln14_cast_fu_97_p3;
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_195

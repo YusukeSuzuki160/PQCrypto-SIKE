@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_246_1'" level="0">
-<item name = "Date">Tue Sep 23 15:23:47 2025
+<item name = "Date">Wed Oct  8 20:39:31 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -117,14 +117,14 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, fpadd503.246.1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, fpadd503.246.1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, fpadd503.246.1, return value</column>
+<column name="a_address0">out, 3, ap_memory, a, array</column>
+<column name="a_ce0">out, 1, ap_memory, a, array</column>
+<column name="a_q0">in, 64, ap_memory, a, array</column>
 <column name="c_address0">out, 3, ap_memory, c, array</column>
 <column name="c_ce0">out, 1, ap_memory, c, array</column>
 <column name="c_we0">out, 1, ap_memory, c, array</column>
 <column name="c_d0">out, 64, ap_memory, c, array</column>
 <column name="c_q0">in, 64, ap_memory, c, array</column>
-<column name="b_address0">out, 3, ap_memory, b, array</column>
-<column name="b_ce0">out, 1, ap_memory, b, array</column>
-<column name="b_q0">in, 64, ap_memory, b, array</column>
 </table>
 </item>
 </section>

@@ -489,7 +489,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>t_34</name>
+						<name>t_80</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>639</lineNumber>
@@ -545,7 +545,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>t_35</name>
+						<name>t_81</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>639</lineNumber>
@@ -601,7 +601,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>t_36</name>
+						<name>t_82</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>639</lineNumber>
@@ -2288,7 +2288,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>empty_167</name>
+						<name>empty_176</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>674</lineNumber>

@@ -225,7 +225,7 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>i_283</name>
+						<name>i_264</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>610</lineNumber>

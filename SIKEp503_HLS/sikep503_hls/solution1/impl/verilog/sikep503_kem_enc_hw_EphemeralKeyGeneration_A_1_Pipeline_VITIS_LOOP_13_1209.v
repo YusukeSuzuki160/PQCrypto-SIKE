@@ -55,14 +55,14 @@ wire    ap_block_pp0_stage0_11001;
 wire   [63:0] zext_ln14_fu_101_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln13_fu_111_p1;
-reg   [3:0] i_293_fu_42;
+reg   [3:0] i_272_fu_42;
 wire   [3:0] add_ln13_fu_87_p2;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    B_gen_1_ce0_local;
 reg    phiQ_X_we0_local;
 reg    phiQ_X_ce0_local;
-wire   [4:0] zext_ln14_10_cast_fu_93_p3;
+wire   [4:0] zext_ln14_6_cast_fu_93_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -77,7 +77,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_293_fu_42 = 4'd0;
+#0 i_272_fu_42 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -131,9 +131,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln13_fu_81_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_293_fu_42 <= add_ln13_fu_87_p2;
+            i_272_fu_42 <= add_ln13_fu_87_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_293_fu_42 <= 4'd0;
+            i_272_fu_42 <= 4'd0;
         end
     end
 end
@@ -196,7 +196,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_293_fu_42;
+        ap_sig_allocacmp_i = i_272_fu_42;
     end
 end
 
@@ -263,8 +263,8 @@ assign phiQ_X_we0 = phiQ_X_we0_local;
 
 assign zext_ln13_fu_111_p1 = i_reg_122;
 
-assign zext_ln14_10_cast_fu_93_p3 = {{1'd1}, {ap_sig_allocacmp_i}};
+assign zext_ln14_6_cast_fu_93_p3 = {{1'd1}, {ap_sig_allocacmp_i}};
 
-assign zext_ln14_fu_101_p1 = zext_ln14_10_cast_fu_93_p3;
+assign zext_ln14_fu_101_p1 = zext_ln14_6_cast_fu_93_p3;
 
 endmodule //sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1209

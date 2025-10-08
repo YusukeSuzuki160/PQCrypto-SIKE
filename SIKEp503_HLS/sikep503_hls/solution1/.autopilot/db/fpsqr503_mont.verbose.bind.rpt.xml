@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpsqr503_mont'" level="0">
-<item name = "Date">Tue Sep 23 15:42:52 2025
+<item name = "Date">Wed Oct  8 20:34:28 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.005 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, no</column>
+<column name="">280, 618, 2.800 us, 6.180 us, 280, 618, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_3_1_fu_65">mp_mul_3_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_mp_mul_3_1_fu_65">mp_mul_3_1, 149, 373, 1.490 us, 3.730 us, 149, 373, no</column>
 <column name="grp_rdc_mont_7_fu_72">rdc_mont_7, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
 </table>
 </item>

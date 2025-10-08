@@ -20,14 +20,14 @@ set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict c { MEM_WIDTH 64 MEM_SIZE 64 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ c int 64 regular {array 8 { 2 } 1 1 }  }
-	{ carry_202_out int 1 regular {pointer 1}  }
+	{ carry_204_out int 1 regular {pointer 1}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "c", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
- 	{ "Name" : "carry_202_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "carry_204_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 13
 set portList { 
@@ -42,8 +42,8 @@ set portList {
 	{ c_we0 sc_out sc_logic 1 signal 0 } 
 	{ c_d0 sc_out sc_lv 64 signal 0 } 
 	{ c_q0 sc_in sc_lv 64 signal 0 } 
-	{ carry_202_out sc_out sc_lv 1 signal 1 } 
-	{ carry_202_out_ap_vld sc_out sc_logic 1 outvld 1 } 
+	{ carry_204_out sc_out sc_lv 1 signal 1 } 
+	{ carry_204_out_ap_vld sc_out sc_logic 1 outvld 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -57,8 +57,8 @@ set NewPortList {[
  	{ "name": "c_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "we0" }} , 
  	{ "name": "c_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "d0" }} , 
  	{ "name": "c_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "q0" }} , 
- 	{ "name": "carry_202_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "carry_202_out", "role": "default" }} , 
- 	{ "name": "carry_202_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "carry_202_out", "role": "ap_vld" }}  ]}
+ 	{ "name": "carry_204_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "carry_204_out", "role": "default" }} , 
+ 	{ "name": "carry_204_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "carry_204_out", "role": "ap_vld" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
@@ -77,7 +77,7 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "c", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "carry_202_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "carry_204_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "p503x2_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_39_2", "PipelineType" : "UPC",
@@ -89,7 +89,7 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	fpadd503_Pipeline_VITIS_LOOP_39_2 {
 		c {Type IO LastRead 0 FirstWrite 1}
-		carry_202_out {Type O LastRead -1 FirstWrite 0}
+		carry_204_out {Type O LastRead -1 FirstWrite 0}
 		p503x2_1 {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
@@ -104,5 +104,5 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	c { ap_memory {  { c_address0 mem_address 1 3 }  { c_ce0 mem_ce 1 1 }  { c_we0 mem_we 1 1 }  { c_d0 mem_din 1 64 }  { c_q0 mem_dout 0 64 } } }
-	carry_202_out { ap_vld {  { carry_202_out out_data 1 1 }  { carry_202_out_ap_vld out_vld 1 1 } } }
+	carry_204_out { ap_vld {  { carry_204_out out_data 1 1 }  { carry_204_out_ap_vld out_vld 1 1 } } }
 }

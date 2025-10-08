@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1227'" level="0">
-<item name = "Date">Tue Sep 23 15:25:29 2025
+<item name = "Date">Wed Oct  8 20:39:18 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -110,7 +110,7 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter2_reg">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter3_reg">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_292">9, 2, 6, 12</column>
+<column name="ap_sig_allocacmp_i_270">9, 2, 6, 12</column>
 <column name="gmem_blk_n_AW">9, 2, 1, 2</column>
 <column name="gmem_blk_n_B">9, 2, 1, 2</column>
 <column name="gmem_blk_n_W">9, 2, 1, 2</column>
@@ -139,7 +139,7 @@
 <column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
 <column name="gmem_addr_4_reg_299">64, 0, 64, 0</column>
 <column name="gmem_addr_reg_293">64, 0, 64, 0</column>
-<column name="i_292_reg_274">6, 0, 6, 0</column>
+<column name="i_270_reg_274">6, 0, 6, 0</column>
 <column name="i_fu_76">6, 0, 6, 0</column>
 <column name="icmp_ln42_reg_279">1, 0, 1, 0</column>
 <column name="trunc_ln49_reg_315">8, 0, 8, 0</column>

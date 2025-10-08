@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_120_Pipeline_VITIS_LOOP_378_1'
 ================================================================
-* Date:           Tue Sep 23 15:46:32 2025
+* Date:           Wed Oct  8 20:39:14 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -95,12 +95,12 @@
     |and_ln381_fu_200_p2      |       and|   0|  0|  64|          64|          64|
     |ap_condition_225         |       and|   0|  0|   2|           1|           1|
     |icmp_ln378_fu_116_p2     |      icmp|   0|  0|  12|           4|           5|
-    |or_ln381_76_fu_212_p2    |        or|   0|  0|  64|          64|          64|
+    |or_ln381_77_fu_212_p2    |        or|   0|  0|  64|          64|          64|
     |or_ln381_fu_168_p2       |        or|   0|  0|  64|          64|          64|
     |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
     |xor_ln381_171_fu_162_p2  |       xor|   0|  0|  64|          64|          64|
     |xor_ln381_173_fu_206_p2  |       xor|   0|  0|  64|          64|          64|
-    |xor_ln381_185_fu_182_p2  |       xor|   0|  0|   2|           1|           2|
+    |xor_ln381_189_fu_182_p2  |       xor|   0|  0|   2|           1|           2|
     |xor_ln381_fu_156_p2      |       xor|   0|  0|  64|          64|          64|
     +-------------------------+----------+----+---+----+------------+------------+
     |Total                    |          |   0|  0| 556|         523|         523|
@@ -112,7 +112,7 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_263   |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_257   |   9|          2|    4|          8|
     |carry_reg_97             |   9|          2|    1|          2|
     |i_fu_54                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
@@ -149,12 +149,12 @@
 |ap_done       |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.120_Pipeline_VITIS_LOOP_378_1|  return value|
 |ap_idle       |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.120_Pipeline_VITIS_LOOP_378_1|  return value|
 |ap_ready      |  out|    1|  ap_ctrl_hs|  fp2mul503_mont.120_Pipeline_VITIS_LOOP_378_1|  return value|
-|c_0_address0  |  out|    3|   ap_memory|                                           c_0|         array|
-|c_0_ce0       |  out|    1|   ap_memory|                                           c_0|         array|
-|c_0_q0        |   in|   64|   ap_memory|                                           c_0|         array|
-|c_1_address0  |  out|    3|   ap_memory|                                           c_1|         array|
-|c_1_ce0       |  out|    1|   ap_memory|                                           c_1|         array|
-|c_1_q0        |   in|   64|   ap_memory|                                           c_1|         array|
+|a_0_address0  |  out|    3|   ap_memory|                                           a_0|         array|
+|a_0_ce0       |  out|    1|   ap_memory|                                           a_0|         array|
+|a_0_q0        |   in|   64|   ap_memory|                                           a_0|         array|
+|a_1_address0  |  out|    3|   ap_memory|                                           a_1|         array|
+|a_1_ce0       |  out|    1|   ap_memory|                                           a_1|         array|
+|a_1_q0        |   in|   64|   ap_memory|                                           a_1|         array|
 |t1_address0   |  out|    3|   ap_memory|                                            t1|         array|
 |t1_ce0        |  out|    1|   ap_memory|                                            t1|         array|
 |t1_we0        |  out|    1|   ap_memory|                                            t1|         array|

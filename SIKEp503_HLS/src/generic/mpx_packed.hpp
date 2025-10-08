@@ -24,6 +24,9 @@ namespace mpx
     // ---- pack / unpack -------------------------------------------------
     static Big pack(const Digit *x, unsigned nwords)
     {
+#pragma HLS INLINE
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = x core = RAM_1P
       Big A = 0;
       // MAX_NWORDS まで固定ループ（HLSで展開・パイプライン可能）
       for (unsigned i = 0; i < MAX_NWORDS; ++i)
@@ -43,8 +46,12 @@ namespace mpx
     template <class Wide> // Big または Big2
     static void unpack(const Wide &P, Digit *y, unsigned out_words)
     {
+#pragma HLS INLINE
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = y core = RAM_1P
       for (unsigned i = 0; i < out_words; ++i)
       {
+#pragma HLS UNROLL factor = 1
         ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
         const unsigned dst =
             LSW_FIRST ? i : (out_words - 1u - i);
@@ -57,6 +64,10 @@ namespace mpx
     static unsigned add(const Digit *a, const Digit *b,
                         Digit *c, unsigned nwords)
     {
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
       Big A = pack(a, nwords);
       Big B = pack(b, nwords);
       // キャリーを正しく計算するために、より大きなビット幅で計算
@@ -82,6 +93,10 @@ namespace mpx
     static unsigned sub(const Digit *a, const Digit *b,
                         Digit *c, unsigned nwords)
     {
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
       Big A = pack(a, nwords);
       Big B = pack(b, nwords);
       // ボローを正しく計算するために、より大きなビット幅で計算
@@ -107,53 +122,40 @@ namespace mpx
     static void mul(const Digit *a, const Digit *b,
                     Digit *c, unsigned nwords)
     {
+#pragma HLS INLINE off
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS ALLOCATION instances = mul limit = 1 function
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = b core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+#pragma HLS BIND_STORAGE variable = a type = RAM_1P
+#pragma HLS BIND_STORAGE variable = b type = RAM_1P
+#pragma HLS BIND_STORAGE variable = c type = RAM_1P
+#pragma HLS RESOURCE core = Mul_LUT
+#pragma HLS DATAFLOW off
       // 大きな乗算を避けて、小さな乗算に分割
       for (unsigned i = 0; i < 2 * nwords; ++i)
       {
         c[i] = 0;
       }
 
-      // 学校式乗算アルゴリズム
       for (unsigned i = 0; i < nwords; ++i)
       {
         for (unsigned j = 0; j < nwords; ++j)
         {
-          // 64ビット×64ビットの乗算
+          // 64ビット×64ビットの乗算のみ
           ap_uint<128> product = (ap_uint<64>)a[i] * (ap_uint<64>)b[j];
           ap_uint<64> low = product.range(63, 0);
           ap_uint<64> high = product.range(127, 64);
 
-          // 現在の位置に加算
-          ap_uint<128> sum = c[i + j] + low;
+          // 結果を加算
+          ap_uint<64> sum = c[i + j] + low;
           c[i + j] = sum.range(63, 0);
           ap_uint<64> carry = sum.range(127, 64);
 
-          // キャリーを次の位置に伝播
-          unsigned int pos = i + j + 1;
-          while (carry > 0 && pos < 2 * nwords)
-          {
-            ap_uint<128> next_sum = c[pos] + carry;
-            c[pos] = next_sum.range(63, 0);
-            carry = next_sum.range(127, 64);
-            pos++;
-          }
-
-          // 上位ビットを加算
           if (i + j + 1 < 2 * nwords)
           {
-            ap_uint<128> high_sum = c[i + j + 1] + high;
-            c[i + j + 1] = high_sum.range(63, 0);
-            ap_uint<64> high_carry = high_sum.range(127, 64);
-
-            // 上位ビットのキャリーも伝播
-            pos = i + j + 2;
-            while (high_carry > 0 && pos < 2 * nwords)
-            {
-              ap_uint<128> next_sum = c[pos] + high_carry;
-              c[pos] = next_sum.range(63, 0);
-              high_carry = next_sum.range(127, 64);
-              pos++;
-            }
+            c[i + j + 1] += high + carry;
           }
         }
       }
@@ -161,53 +163,34 @@ namespace mpx
 
     static void sqr(const Digit *a, Digit *c, unsigned nwords)
     {
+#pragma HLS ALLOCATION instances = mul limit = 1 operation
+#pragma HLS RESOURCE variable = a core = RAM_1P
+#pragma HLS RESOURCE variable = c core = RAM_1P
+#pragma HLS RESOURCE core = Mul_LUT
+#pragma HLS DATAFLOW off
       // 大きな乗算を避けて、小さな乗算に分割
       for (unsigned i = 0; i < 2 * nwords; ++i)
       {
         c[i] = 0;
       }
 
-      // 学校式平方アルゴリズム
       for (unsigned i = 0; i < nwords; ++i)
       {
         for (unsigned j = 0; j < nwords; ++j)
         {
-          // 64ビット×64ビットの乗算
+          // 64ビット×64ビットの乗算のみ
           ap_uint<128> product = (ap_uint<64>)a[i] * (ap_uint<64>)a[j];
           ap_uint<64> low = product.range(63, 0);
           ap_uint<64> high = product.range(127, 64);
 
-          // 現在の位置に加算
-          ap_uint<128> sum = c[i + j] + low;
+          // 結果を加算
+          ap_uint<64> sum = c[i + j] + low;
           c[i + j] = sum.range(63, 0);
           ap_uint<64> carry = sum.range(127, 64);
 
-          // キャリーを次の位置に伝播
-          unsigned int pos = i + j + 1;
-          while (carry > 0 && pos < 2 * nwords)
-          {
-            ap_uint<128> next_sum = c[pos] + carry;
-            c[pos] = next_sum.range(63, 0);
-            carry = next_sum.range(127, 64);
-            pos++;
-          }
-
-          // 上位ビットを加算
           if (i + j + 1 < 2 * nwords)
           {
-            ap_uint<128> high_sum = c[i + j + 1] + high;
-            c[i + j + 1] = high_sum.range(63, 0);
-            ap_uint<64> high_carry = high_sum.range(127, 64);
-
-            // 上位ビットのキャリーも伝播
-            pos = i + j + 2;
-            while (high_carry > 0 && pos < 2 * nwords)
-            {
-              ap_uint<128> next_sum = c[pos] + high_carry;
-              c[pos] = next_sum.range(63, 0);
-              high_carry = next_sum.range(127, 64);
-              pos++;
-            }
+            c[i + j + 1] += high + carry;
           }
         }
       }

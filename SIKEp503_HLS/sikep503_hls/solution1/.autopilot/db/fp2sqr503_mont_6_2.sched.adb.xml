@@ -235,7 +235,7 @@ entry:11 %call_ln0 = call void @fp2sqr503_mont.6.2_Pipeline_VITIS_LOOP_68_2, i64
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2sqr503_mont.6.2_Pipeline_VITIS_LOOP_378_182, i64 %c_0, i64 %t3
+entry:12 %call_ln0 = call void @fp2sqr503_mont.6.2_Pipeline_VITIS_LOOP_378_195, i64 %c_0, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -268,7 +268,7 @@ entry:11 %call_ln0 = call void @fp2sqr503_mont.6.2_Pipeline_VITIS_LOOP_68_2, i64
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:12 %call_ln0 = call void @fp2sqr503_mont.6.2_Pipeline_VITIS_LOOP_378_182, i64 %c_0, i64 %t3
+entry:12 %call_ln0 = call void @fp2sqr503_mont.6.2_Pipeline_VITIS_LOOP_378_195, i64 %c_0, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -286,7 +286,7 @@ entry:12 %call_ln0 = call void @fp2sqr503_mont.6.2_Pipeline_VITIS_LOOP_378_182, 
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:17 %call_ln152 = call void @fpmul503_mont.1192, i64 %t1, i64 %t2, i64 %c_0, i64 %p503p1_1
+entry:17 %call_ln152 = call void @fpmul503_mont.11, i64 %t1, i64 %t2, i64 %c_0, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln152"/></StgValue>
@@ -304,7 +304,7 @@ entry:17 %call_ln152 = call void @fpmul503_mont.1192, i64 %t1, i64 %t2, i64 %c_0
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:17 %call_ln152 = call void @fpmul503_mont.1192, i64 %t1, i64 %t2, i64 %c_0, i64 %p503p1_1
+entry:17 %call_ln152 = call void @fpmul503_mont.11, i64 %t1, i64 %t2, i64 %c_0, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln152"/></StgValue>

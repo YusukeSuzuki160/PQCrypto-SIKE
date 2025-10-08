@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>c</name>
+              <name>R_Z</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
           </Value>
           <direction>2</direction>
           <if_type>1</if_type>
-          <array_size>8</array_size>
+          <array_size>16</array_size>
           <bit_vecs class_id="7" tracking_level="0" version="0">
             <count>0</count>
             <item_version>0</item_version>
@@ -52,7 +52,7 @@
             <Obj>
               <type>1</type>
               <id>2</id>
-              <name>carry_193_out</name>
+              <name>carry_187_out</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>i_141</name>
+              <name>i_127</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -148,7 +148,7 @@
             <Obj>
               <type>0</type>
               <id>6</id>
-              <name>i_141_write_ln28</name>
+              <name>i_127_write_ln28</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -577,7 +577,7 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>c_addr</name>
+              <name>R_Z_addr</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>41</lineNumber>
@@ -612,7 +612,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>3</bitwidth>
+            <bitwidth>4</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
@@ -635,7 +635,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>c_load</name>
+              <name>R_Z_load</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>41</lineNumber>
@@ -926,7 +926,7 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>xor_ln105_39</name>
+              <name>xor_ln105_35</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -958,7 +958,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_39_fu_142_p2</rtlName>
+              <rtlName>xor_ln105_35_fu_142_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1054,7 +1054,7 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>xor_ln105_40</name>
+              <name>xor_ln105_36</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -1086,7 +1086,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_40_fu_154_p2</rtlName>
+              <rtlName>xor_ln105_36_fu_154_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1325,7 +1325,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>tmp_261</name>
+              <name>tmp_136</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>41</lineNumber>
@@ -1350,7 +1350,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_261_fu_180_p3</rtlName>
+              <rtlName>tmp_136_fu_180_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1667,7 +1667,7 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>c_addr_write_ln41</name>
+              <name>R_Z_addr_write_ln41</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>41</lineNumber>
@@ -1725,7 +1725,7 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>i_141_write_ln28</name>
+              <name>i_127_write_ln28</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>28</lineNumber>
@@ -1840,7 +1840,7 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>carry_193_out_write_ln41</name>
+              <name>carry_187_out_write_ln41</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>41</lineNumber>
@@ -1958,7 +1958,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>100</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_239_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_222_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -3409,7 +3409,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_39_fu_142_p2 ( xor ) </first>
+          <first>xor_ln105_35_fu_142_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3432,7 +3432,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_40_fu_154_p2 ( xor ) </first>
+          <first>xor_ln105_36_fu_154_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3548,6 +3548,33 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
+          <first>R_Z_address0_local</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>12</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>ap_NS_fsm</first>
           <second>
             <count>5</count>
@@ -3629,33 +3656,6 @@
           </second>
         </item>
         <item>
-          <first>c_address0_local</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>9</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>carry_reg_87</first>
           <second>
             <count>5</count>
@@ -3683,7 +3683,7 @@
           </second>
         </item>
         <item>
-          <first>i_141_fu_50</first>
+          <first>i_127_fu_50</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3713,6 +3713,25 @@
       <dp_register_resource>
         <count>5</count>
         <item_version>0</item_version>
+        <item>
+          <first>R_Z_addr_reg_227</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>4</second>
+            </item>
+          </second>
+        </item>
         <item>
           <first>ap_CS_fsm</first>
           <second>
@@ -3752,25 +3771,6 @@
           </second>
         </item>
         <item>
-          <first>c_addr_reg_227</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>3</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>carry_reg_87</first>
           <second>
             <count>3</count>
@@ -3790,7 +3790,7 @@
           </second>
         </item>
         <item>
-          <first>i_141_fu_50</first>
+          <first>i_127_fu_50</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3900,7 +3900,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_39_fu_142_p2 ( xor ) </first>
+          <first>xor_ln105_35_fu_142_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3908,7 +3908,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_40_fu_154_p2 ( xor ) </first>
+          <first>xor_ln105_36_fu_154_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4253,7 +4253,7 @@
               <item class_id="53" tracking_level="0" version="0">
                 <first class_id="54" tracking_level="0" version="0">
                   <first class_id_reference="9" object_id_reference="_30"/>
-                  <second>core:RAM_1P:c::load:store</second>
+                  <second>core:RAM_1P:R_Z::load:store</second>
                 </first>
                 <second>37</second>
               </item>
@@ -4496,6 +4496,14 @@
       <count>21</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
+        <first>R_Z_addr_gep_fu_61</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>19</item>
+        </second>
+      </item>
+      <item>
         <first>add_ln39_fu_113</first>
         <second>
           <count>1</count>
@@ -4520,14 +4528,6 @@
         </second>
       </item>
       <item>
-        <first>c_addr_gep_fu_61</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>19</item>
-        </second>
-      </item>
-      <item>
         <first>carry_phi_fu_90</first>
         <second>
           <count>1</count>
@@ -4536,7 +4536,7 @@
         </second>
       </item>
       <item>
-        <first>i_141_fu_50</first>
+        <first>i_127_fu_50</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4600,7 +4600,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_261_fu_180</first>
+        <first>tmp_136_fu_180</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4616,7 +4616,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_39_fu_142</first>
+        <first>xor_ln105_35_fu_142</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4624,7 +4624,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_40_fu_154</first>
+        <first>xor_ln105_36_fu_154</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4713,7 +4713,7 @@
       <item_version>0</item_version>
       <item class_id="61" tracking_level="0" version="0">
         <first class_id="62" tracking_level="0" version="0">
-          <first>c</first>
+          <first>R_Z</first>
           <second>0</second>
         </first>
         <second>
@@ -4785,19 +4785,19 @@
       <count>5</count>
       <item_version>0</item_version>
       <item>
+        <first>R_Z_addr_reg_227</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>19</item>
+        </second>
+      </item>
+      <item>
         <first>borrowReg_reg_237</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>34</item>
-        </second>
-      </item>
-      <item>
-        <first>c_addr_reg_227</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>19</item>
         </second>
       </item>
       <item>
@@ -4809,7 +4809,7 @@
         </second>
       </item>
       <item>
-        <first>i_141_reg_217</first>
+        <first>i_127_reg_217</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4853,7 +4853,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item class_id="64" tracking_level="0" version="0">
-        <first>c(p0)</first>
+        <first>R_Z(p0)</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -4877,7 +4877,7 @@
         </second>
       </item>
       <item>
-        <first>carry_193_out</first>
+        <first>carry_187_out</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

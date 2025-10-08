@@ -61,7 +61,7 @@ attribute shreg_extract : string;
     signal borrowReg_fu_188_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal zext_ln79_fu_107_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal i_231_fu_46 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    signal i_221_fu_46 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln79_fu_101_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_sig_allocacmp_i : STD_LOGIC_VECTOR (3 downto 0);
     signal p503x2_1_ce0_local : STD_LOGIC;
@@ -76,7 +76,7 @@ attribute shreg_extract : string;
     signal xor_ln105_123_fu_142_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal sub_ln95_fu_156_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal or_ln95_fu_162_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_324_fu_168_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_232_fu_168_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal xor_ln81_fu_176_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal and_ln81_fu_182_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp_fu_148_p3 : STD_LOGIC_VECTOR (0 downto 0);
@@ -92,7 +92,7 @@ attribute shreg_extract : string;
     signal ap_done_sig : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component sikep503_kem_enc_hw_fpadd503_239_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R IS
+    component sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -125,7 +125,7 @@ attribute shreg_extract : string;
 
 
 begin
-    p503x2_1_U : component sikep503_kem_enc_hw_fpadd503_239_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R
+    p503x2_1_U : component sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R
     generic map (
         DataWidth => 64,
         AddressRange => 8,
@@ -195,14 +195,14 @@ begin
         end if;
     end process;
 
-    i_231_fu_46_assign_proc : process (ap_clk)
+    i_221_fu_46_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1_pp0_stage0_iter0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                 if ((icmp_ln79_fu_95_p2 = ap_const_lv1_0)) then 
-                    i_231_fu_46 <= add_ln79_fu_101_p2;
+                    i_221_fu_46 <= add_ln79_fu_101_p2;
                 elsif ((ap_loop_init = ap_const_logic_1)) then 
-                    i_231_fu_46 <= ap_const_lv4_0;
+                    i_221_fu_46 <= ap_const_lv4_0;
                 end if;
             end if; 
         end if;
@@ -334,12 +334,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_231_fu_46)
+    ap_sig_allocacmp_i_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_221_fu_46)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             ap_sig_allocacmp_i <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i <= i_231_fu_46;
+            ap_sig_allocacmp_i <= i_221_fu_46;
         end if; 
     end process;
 
@@ -361,12 +361,12 @@ begin
     sub_ln81_fu_198_p2 <= std_logic_vector(unsigned(tempReg_fu_118_p2) - unsigned(zext_ln81_fu_194_p1));
     sub_ln95_fu_156_p2 <= std_logic_vector(unsigned(ap_const_lv64_0) - unsigned(tempReg_fu_118_p2));
     tempReg_fu_118_p2 <= std_logic_vector(unsigned(p503x2_1_q0) - unsigned(a_1_q0));
-    tmp_324_fu_168_p3 <= or_ln95_fu_162_p2(63 downto 63);
+    tmp_232_fu_168_p3 <= or_ln95_fu_162_p2(63 downto 63);
     tmp_fu_148_p3 <= xor_ln105_123_fu_142_p2(63 downto 63);
     xor_ln105_121_fu_124_p2 <= (p503x2_1_q0 xor a_1_q0);
     xor_ln105_122_fu_130_p2 <= (tempReg_fu_118_p2 xor a_1_q0);
     xor_ln105_123_fu_142_p2 <= (p503x2_1_q0 xor or_ln105_13_fu_136_p2);
-    xor_ln81_fu_176_p2 <= (tmp_324_fu_168_p3 xor ap_const_lv1_1);
+    xor_ln81_fu_176_p2 <= (tmp_232_fu_168_p3 xor ap_const_lv1_1);
     zext_ln79_fu_107_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i),64));
     zext_ln81_fu_194_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(borrow_reg_76),64));
 end behav;

@@ -25,10 +25,10 @@
 
 <Node id="5" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_246 = alloca i32 1
+newFuncRoot:0 %i_223 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_246"/></StgValue>
+<StgValue><ssdm name="i_223"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -100,7 +100,7 @@ newFuncRoot:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_
 
 <Node id="10" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:5 %store_ln89 = store i4 0, i4 %i_246
+newFuncRoot:5 %store_ln89 = store i4 0, i4 %i_223
 
 ]]></Node>
 <StgValue><ssdm name="store_ln89"/></StgValue>
@@ -145,7 +145,7 @@ for.inc.i31:0 %carry = phi i1 0, void %newFuncRoot, i1 %tmp, void %arrayidx7.i15
 
 <Node id="14" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i31:1 %i = load i4 %i_246
+for.inc.i31:1 %i = load i4 %i_223
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -384,7 +384,7 @@ for.inc.i.i41.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i31.split:2 %specpipeline_ln89 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_70
+for.inc.i31.split:2 %specpipeline_ln89 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln89"/></StgValue>
@@ -414,7 +414,7 @@ for.inc.i31.split:3 %speclooptripcount_ln89 = speclooptripcount void @_ssdm_op_S
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i31.split:4 %specloopname_ln91 = specloopname void @_ssdm_op_SpecLoopName, void @empty_90
+for.inc.i31.split:4 %specloopname_ln91 = specloopname void @_ssdm_op_SpecLoopName, void @empty_87
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln91"/></StgValue>
@@ -793,7 +793,7 @@ arrayidx7.i155312.exit:10 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i6
 
 <Node id="56" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-arrayidx7.i155312.exit:11 %store_ln89 = store i4 %add_ln91, i4 %i_246
+arrayidx7.i155312.exit:11 %store_ln89 = store i4 %add_ln91, i4 %i_223
 
 ]]></Node>
 <StgValue><ssdm name="store_ln89"/></StgValue>

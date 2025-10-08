@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2sqr503_mont_6_2'
 ================================================================
-* Date:           Tue Sep 23 15:46:44 2025
+* Date:           Wed Oct  8 20:38:04 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.005 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+-----+-----+---------+
-    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-    |   min   |   max   |    min   |    max   | min | max |   Type  |
-    +---------+---------+----------+----------+-----+-----+---------+
-    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
-    +---------+---------+----------+----------+-----+-----+---------+
+    +---------+---------+----------+-----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min   |    max    | min |  max |   Type  |
+    +---------+---------+----------+-----------+-----+------+---------+
+    |      575|     1027|  5.750 us|  10.270 us|  575|  1027|       no|
+    +---------+---------+----------+-----------+-----+------+---------+
 
     + Detail: 
         * Instance: 
@@ -41,9 +41,9 @@
         |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_1_fu_48    |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_1    |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_61_1_fu_58     |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_61_1     |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_68_2_fu_68     |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_68_2     |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_182_fu_76  |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_182  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpmul503_mont_1192_fu_83                              |fpmul503_mont_1192                              |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
-        |grp_fpmul503_mont_3_4_fu_93                               |fpmul503_mont_3_4                               |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_195_fu_76  |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_195  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpmul503_mont_11_fu_83                                |fpmul503_mont_11                                |      264|      490|  2.640 us|  4.900 us|  264|  490|                                              no|
+        |grp_fpmul503_mont_3_4_fu_93                               |fpmul503_mont_3_4                               |      264|      490|  2.640 us|  4.900 us|  264|  490|                                              no|
         +----------------------------------------------------------+------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -61,12 +61,12 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        0|        2|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        0|     64|     4254|    14094|     0|
+|Instance             |        0|     64|     4424|    13294|     0|
 |Memory               |        0|      -|      192|      195|     0|
 |Multiplexer          |        -|      -|        0|      311|     -|
 |Register             |        -|      -|       16|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|     64|     4462|    14602|     0|
+|Total                |        0|     64|     4632|    13802|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
@@ -83,13 +83,13 @@
     |                         Instance                         |                     Module                     | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +----------------------------------------------------------+------------------------------------------------+---------+----+------+------+-----+
     |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_1_fu_48    |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_1    |        0|   0|    13|   601|    0|
-    |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_182_fu_76  |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_182  |        0|   0|    13|   601|    0|
+    |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_195_fu_76  |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_195  |        0|   0|    13|   601|    0|
     |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_61_1_fu_58     |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_61_1     |        0|   0|    13|   612|    0|
     |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_68_2_fu_68     |fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_68_2     |        0|   0|   139|   747|    0|
-    |grp_fpmul503_mont_1192_fu_83                              |fpmul503_mont_1192                              |        0|  32|  2038|  5748|    0|
-    |grp_fpmul503_mont_3_4_fu_93                               |fpmul503_mont_3_4                               |        0|  32|  2038|  5785|    0|
+    |grp_fpmul503_mont_11_fu_83                                |fpmul503_mont_11                                |        0|  32|  2123|  5348|    0|
+    |grp_fpmul503_mont_3_4_fu_93                               |fpmul503_mont_3_4                               |        0|  32|  2123|  5385|    0|
     +----------------------------------------------------------+------------------------------------------------+---------+----+------+------+-----+
-    |Total                                                     |                                                |        0|  64|  4254| 14094|    0|
+    |Total                                                     |                                                |        0|  64|  4424| 13294|    0|
     +----------------------------------------------------------+------------------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -148,11 +148,11 @@
     |                                  Name                                 | FF | LUT| Bits| Const Bits|
     +-----------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                              |  10|   0|   10|          0|
-    |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_182_fu_76_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_195_fu_76_ap_start_reg  |   1|   0|    1|          0|
     |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_378_1_fu_48_ap_start_reg    |   1|   0|    1|          0|
     |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_61_1_fu_58_ap_start_reg     |   1|   0|    1|          0|
     |grp_fp2sqr503_mont_6_2_Pipeline_VITIS_LOOP_68_2_fu_68_ap_start_reg     |   1|   0|    1|          0|
-    |grp_fpmul503_mont_1192_fu_83_ap_start_reg                              |   1|   0|    1|          0|
+    |grp_fpmul503_mont_11_fu_83_ap_start_reg                                |   1|   0|    1|          0|
     |grp_fpmul503_mont_3_4_fu_93_ap_start_reg                               |   1|   0|    1|          0|
     +-----------------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                                  |  16|   0|   16|          0|

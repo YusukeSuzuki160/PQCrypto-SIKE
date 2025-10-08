@@ -37,7 +37,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>7</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>pts_Z</name>
+						<name>pts_Z_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -77,7 +77,7 @@
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
-				<array_size>112</array_size>
+				<array_size>56</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -128,7 +128,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i</name>
+						<name>i_267</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>11</lineNumber>
@@ -219,7 +219,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>7</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -241,7 +241,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_write_ln11</name>
+						<name>i_267_write_ln11</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>11</lineNumber>
@@ -354,7 +354,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_290</name>
+						<name>i</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -688,7 +688,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>7</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -758,7 +758,7 @@
 						<coreId>1</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>7</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -850,7 +850,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>pts_Z_addr</name>
+						<name>pts_Z_1_addr</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -899,7 +899,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>7</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -992,7 +992,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>zext_ln14_7</name>
+						<name>zext_ln14_4</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -1276,7 +1276,7 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>pts_Z_addr_write_ln14</name>
+						<name>pts_Z_1_addr_write_ln14</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -1338,7 +1338,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.20</m_delay>
+				<m_delay>0.71</m_delay>
 				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1347,7 +1347,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>i_write_ln11</name>
+						<name>i_267_write_ln11</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>11</lineNumber>
@@ -1758,7 +1758,7 @@
 				<Obj>
 					<type>3</type>
 					<id>15</id>
-					<name>for.inc.i10.i79</name>
+					<name>for.inc.i10.i80</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1792,7 +1792,7 @@
 				<Obj>
 					<type>3</type>
 					<id>31</id>
-					<name>for.inc.i10.i79.split</name>
+					<name>for.inc.i10.i80.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1834,7 +1834,7 @@
 				<Obj>
 					<type>3</type>
 					<id>33</id>
-					<name>_Z10fp2copy503PA8_KmPA8_m.exit80.exitStub</name>
+					<name>_Z10fp2copy503PA8_KmPA8_m.exit81.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2798,7 +2798,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_fu_46</first>
+			<first>i_267_fu_46</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2814,7 +2814,7 @@
 			</second>
 		</item>
 		<item>
-			<first>pts_Z_addr_gep_fu_69</first>
+			<first>pts_Z_1_addr_gep_fu_69</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2838,7 +2838,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln14_7_fu_107</first>
+			<first>zext_ln14_4_fu_107</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2870,7 +2870,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_290_load_fu_88</first>
+			<first>i_load_fu_88</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2923,7 +2923,7 @@
 		</item>
 		<item>
 			<first>
-				<first>pts_Z</first>
+				<first>pts_Z_1</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -2981,19 +2981,19 @@
 			</second>
 		</item>
 		<item>
-			<first>i_290_reg_150</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>11</item>
-			</second>
-		</item>
-		<item>
-			<first>i_reg_138</first>
+			<first>i_267_reg_138</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>4</item>
+			</second>
+		</item>
+		<item>
+			<first>i_reg_150</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>11</item>
 			</second>
 		</item>
 		<item>
@@ -3033,7 +3033,7 @@
 			</second>
 		</item>
 		<item>
-			<first>pts_Z(p0)</first>
+			<first>pts_Z_1(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

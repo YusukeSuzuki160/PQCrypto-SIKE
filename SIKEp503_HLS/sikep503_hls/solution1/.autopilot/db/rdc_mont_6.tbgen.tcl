@@ -86,21 +86,21 @@ set RtlHierarchyInfo {[
 			{"Name" : "ma", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "mc", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_305_1_fu_200", "Port" : "mc", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "3", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_313_3_fu_207", "Port" : "mc", "Inst_start_state" : "3", "Inst_end_state" : "4"},
-					{"ID" : "6", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_339_5_fu_224", "Port" : "mc", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "1", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_306_1_fu_200", "Port" : "mc", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "3", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_314_3_fu_207", "Port" : "mc", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "6", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_340_5_fu_224", "Port" : "mc", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "mc_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p503p1_1", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_313_3_fu_207", "Port" : "p503p1_1", "Inst_start_state" : "3", "Inst_end_state" : "4"},
-					{"ID" : "6", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_339_5_fu_224", "Port" : "p503p1_1", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}],
+					{"ID" : "3", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_314_3_fu_207", "Port" : "p503p1_1", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "6", "SubInstance" : "grp_rdc_mont_6_Pipeline_VITIS_LOOP_340_5_fu_224", "Port" : "p503p1_1", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_311_2", "PipelineType" : "no",
+			{"Name" : "VITIS_LOOP_312_2", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "9", "FirstState" : "ap_ST_fsm_state3", "LastState" : ["ap_ST_fsm_state5"], "QuitState" : ["ap_ST_fsm_state3"], "PreState" : ["ap_ST_fsm_state2"], "PostState" : ["ap_ST_fsm_state6"], "OneDepthLoop" : "0", "OneStateBlock": ""}},
-			{"Name" : "VITIS_LOOP_333_4", "PipelineType" : "no",
+			{"Name" : "VITIS_LOOP_334_4", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "9", "FirstState" : "ap_ST_fsm_state6", "LastState" : ["ap_ST_fsm_state8"], "QuitState" : ["ap_ST_fsm_state6"], "PreState" : ["ap_ST_fsm_state3"], "PostState" : ["ap_ST_fsm_state9"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_305_1_fu_200", "Parent" : "0", "Child" : ["2"],
-		"CDFG" : "rdc_mont_6_Pipeline_VITIS_LOOP_305_1",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_306_1_fu_200", "Parent" : "0", "Child" : ["2"],
+		"CDFG" : "rdc_mont_6_Pipeline_VITIS_LOOP_306_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -115,13 +115,13 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "mc", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "zext_ln307", "Type" : "None", "Direction" : "I"}],
+			{"Name" : "zext_ln308", "Type" : "None", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_305_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_306_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_state1", "FirstStateIter" : "", "FirstStateBlock" : "ap_ST_fsm_state1_blk", "LastState" : "ap_ST_fsm_state1", "LastStateIter" : "", "LastStateBlock" : "ap_ST_fsm_state1_blk", "QuitState" : "ap_ST_fsm_state1", "QuitStateIter" : "", "QuitStateBlock" : "ap_ST_fsm_state1_blk", "OneDepthLoop" : "1", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_305_1_fu_200.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_313_3_fu_207", "Parent" : "0", "Child" : ["4", "5"],
-		"CDFG" : "rdc_mont_6_Pipeline_VITIS_LOOP_313_3",
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_306_1_fu_200.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_314_3_fu_207", "Parent" : "0", "Child" : ["4", "5"],
+		"CDFG" : "rdc_mont_6_Pipeline_VITIS_LOOP_314_3",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -135,24 +135,24 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "v_14", "Type" : "None", "Direction" : "I"},
-			{"Name" : "u_13", "Type" : "None", "Direction" : "I"},
-			{"Name" : "i_5", "Type" : "None", "Direction" : "I"},
+			{"Name" : "v_026", "Type" : "None", "Direction" : "I"},
+			{"Name" : "u_025", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i_7", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mc_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mc", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "add_ln313", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add_ln314", "Type" : "None", "Direction" : "I"},
 			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
-			{"Name" : "v_18_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "u_16_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "v_36_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "u_30_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "t_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "p503p1_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_313_3", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_314_3", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_313_3_fu_207.p503p1_1_U", "Parent" : "3"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_313_3_fu_207.flow_control_loop_pipe_sequential_init_U", "Parent" : "3"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_339_5_fu_224", "Parent" : "0", "Child" : ["7", "8"],
-		"CDFG" : "rdc_mont_6_Pipeline_VITIS_LOOP_339_5",
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_314_3_fu_207.p503p1_1_U", "Parent" : "3"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_314_3_fu_207.flow_control_loop_pipe_sequential_init_U", "Parent" : "3"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_340_5_fu_224", "Parent" : "0", "Child" : ["7", "8"],
+		"CDFG" : "rdc_mont_6_Pipeline_VITIS_LOOP_340_5",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -167,21 +167,21 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "indvars_iv", "Type" : "None", "Direction" : "I"},
-			{"Name" : "v_15", "Type" : "None", "Direction" : "I"},
+			{"Name" : "v_32", "Type" : "None", "Direction" : "I"},
 			{"Name" : "u", "Type" : "None", "Direction" : "I"},
-			{"Name" : "zext_ln307", "Type" : "None", "Direction" : "I"},
+			{"Name" : "zext_ln308", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mc", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "sub65", "Type" : "None", "Direction" : "I"},
 			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
-			{"Name" : "v_22_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "u_20_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "t_12_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "v_40_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "u_34_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "t_22_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "p503p1_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_339_5", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_340_5", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_339_5_fu_224.p503p1_1_U", "Parent" : "6"},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_339_5_fu_224.flow_control_loop_pipe_sequential_init_U", "Parent" : "6"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_340_5_fu_224.p503p1_1_U", "Parent" : "6"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rdc_mont_6_Pipeline_VITIS_LOOP_340_5_fu_224.flow_control_loop_pipe_sequential_init_U", "Parent" : "6"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897", "Parent" : "0", "Child" : ["10", "11", "12", "13"],
 		"CDFG" : "digit_x_digit",
 		"Protocol" : "ap_ctrl_hs",
@@ -199,10 +199,10 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "a", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U237", "Parent" : "9"},
-	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U238", "Parent" : "9"},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U239", "Parent" : "9"},
-	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U240", "Parent" : "9"}]}
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U242", "Parent" : "9"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U243", "Parent" : "9"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U244", "Parent" : "9"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_digit_x_digit_fu_897.mul_32ns_32ns_64_1_1_U245", "Parent" : "9"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -211,32 +211,32 @@ set ArgLastReadFirstWriteLatency {
 		mc {Type IO LastRead 0 FirstWrite -1}
 		mc_offset {Type I LastRead 0 FirstWrite -1}
 		p503p1_1 {Type I LastRead -1 FirstWrite -1}}
-	rdc_mont_6_Pipeline_VITIS_LOOP_305_1 {
+	rdc_mont_6_Pipeline_VITIS_LOOP_306_1 {
 		mc {Type O LastRead -1 FirstWrite 0}
-		zext_ln307 {Type I LastRead 0 FirstWrite -1}}
-	rdc_mont_6_Pipeline_VITIS_LOOP_313_3 {
-		v_14 {Type I LastRead 0 FirstWrite -1}
-		u_13 {Type I LastRead 0 FirstWrite -1}
-		i_5 {Type I LastRead 0 FirstWrite -1}
+		zext_ln308 {Type I LastRead 0 FirstWrite -1}}
+	rdc_mont_6_Pipeline_VITIS_LOOP_314_3 {
+		v_026 {Type I LastRead 0 FirstWrite -1}
+		u_025 {Type I LastRead 0 FirstWrite -1}
+		i_7 {Type I LastRead 0 FirstWrite -1}
 		mc_offset {Type I LastRead 0 FirstWrite -1}
 		mc {Type I LastRead 0 FirstWrite -1}
-		add_ln313 {Type I LastRead 0 FirstWrite -1}
+		add_ln314 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		v_18_out {Type O LastRead -1 FirstWrite 2}
-		u_16_out {Type O LastRead -1 FirstWrite 2}
+		v_36_out {Type O LastRead -1 FirstWrite 2}
+		u_30_out {Type O LastRead -1 FirstWrite 2}
 		t_out {Type O LastRead -1 FirstWrite 2}
 		p503p1_1 {Type I LastRead -1 FirstWrite -1}}
-	rdc_mont_6_Pipeline_VITIS_LOOP_339_5 {
+	rdc_mont_6_Pipeline_VITIS_LOOP_340_5 {
 		indvars_iv {Type I LastRead 0 FirstWrite -1}
-		v_15 {Type I LastRead 0 FirstWrite -1}
+		v_32 {Type I LastRead 0 FirstWrite -1}
 		u {Type I LastRead 0 FirstWrite -1}
-		zext_ln307 {Type I LastRead 0 FirstWrite -1}
+		zext_ln308 {Type I LastRead 0 FirstWrite -1}
 		mc {Type I LastRead 0 FirstWrite -1}
 		sub65 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		v_22_out {Type O LastRead -1 FirstWrite 2}
-		u_20_out {Type O LastRead -1 FirstWrite 2}
-		t_12_out {Type O LastRead -1 FirstWrite 2}
+		v_40_out {Type O LastRead -1 FirstWrite 2}
+		u_34_out {Type O LastRead -1 FirstWrite 2}
+		t_22_out {Type O LastRead -1 FirstWrite 2}
 		p503p1_1 {Type I LastRead -1 FirstWrite -1}}
 	digit_x_digit {
 		a {Type I LastRead 0 FirstWrite -1}

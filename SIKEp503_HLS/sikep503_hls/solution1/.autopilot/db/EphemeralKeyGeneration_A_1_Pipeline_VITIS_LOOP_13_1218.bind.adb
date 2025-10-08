@@ -354,7 +354,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_302</name>
+						<name>i_281</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>13</lineNumber>
@@ -781,7 +781,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>zext_ln14</name>
+						<name>zext_ln14_16</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -2497,7 +2497,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln14_fu_117</first>
+			<first>zext_ln14_16_fu_117</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2513,7 +2513,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_302_load_fu_86</first>
+			<first>i_281_load_fu_86</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2624,7 +2624,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_302_reg_134</first>
+			<first>i_281_reg_134</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

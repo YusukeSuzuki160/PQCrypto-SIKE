@@ -76,7 +76,7 @@ wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln63_25_fu_176_p1;
 wire    ap_block_pp0_stage1;
 wire   [63:0] zext_ln61_fu_181_p1;
-reg   [3:0] i_165_fu_60;
+reg   [3:0] i_155_fu_60;
 wire   [3:0] add_ln61_fu_144_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 wire    ap_block_pp0_stage1_01001;
@@ -95,7 +95,7 @@ wire   [63:0] or_ln105_fu_201_p2;
 wire   [63:0] xor_ln105_58_fu_207_p2;
 wire   [63:0] sub_ln95_fu_220_p2;
 wire   [63:0] or_ln95_fu_226_p2;
-wire   [0:0] tmp_263_fu_232_p3;
+wire   [0:0] tmp_171_fu_232_p3;
 wire   [0:0] xor_ln63_fu_240_p2;
 wire   [0:0] and_ln63_fu_246_p2;
 wire   [0:0] tmp_fu_212_p3;
@@ -117,7 +117,7 @@ initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 i_165_fu_60 = 4'd0;
+#0 i_155_fu_60 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -191,9 +191,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln61_fu_138_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_165_fu_60 <= add_ln61_fu_144_p2;
+            i_155_fu_60 <= add_ln61_fu_144_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_165_fu_60 <= 4'd0;
+            i_155_fu_60 <= 4'd0;
         end
     end
 end
@@ -271,7 +271,7 @@ always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_165_fu_60;
+        ap_sig_allocacmp_i = i_155_fu_60;
     end
 end
 
@@ -403,7 +403,7 @@ assign t2_we0 = t2_we0_local;
 
 assign tempReg_fu_185_p2 = (c_load_reg_301 - c_q0);
 
-assign tmp_263_fu_232_p3 = or_ln95_fu_226_p2[32'd63];
+assign tmp_171_fu_232_p3 = or_ln95_fu_226_p2[32'd63];
 
 assign tmp_fu_212_p3 = xor_ln105_58_fu_207_p2[32'd63];
 
@@ -415,7 +415,7 @@ assign xor_ln105_58_fu_207_p2 = (or_ln105_fu_201_p2 ^ c_load_reg_301);
 
 assign xor_ln105_fu_190_p2 = (c_q0 ^ c_load_reg_301);
 
-assign xor_ln63_fu_240_p2 = (tmp_263_fu_232_p3 ^ 1'd1);
+assign xor_ln63_fu_240_p2 = (tmp_171_fu_232_p3 ^ 1'd1);
 
 assign zext_ln61_fu_181_p1 = i_reg_281;
 

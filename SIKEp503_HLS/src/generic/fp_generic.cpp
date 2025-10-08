@@ -1,7 +1,7 @@
 #include <ap_int.h>
 #include <climits>
 #include <type_traits>
-#include "mpx_packed.hpp"
+#include "mpx_camba_mul.hpp"
 // fp_generic_hls.cpp
 // Renamed from fp_generic.c for Vivado HLS optimization
 
@@ -280,6 +280,7 @@ void mp_mul(const digit_t *a, const digit_t *b, digit_t *c, const unsigned int n
 #pragma HLS BIND_STORAGE variable = c type = RAM_1P
 #pragma HLS RESOURCE core = Mul_LUT
 #pragma HLS DATAFLOW off
+#pragma HLS loop_tripcount min = 1 max = 8
     // Auto-converted by mpx_auto_rewriter_v4_2 (pack × mul × unpack)
     constexpr unsigned MAX_NWORDS = 8;
     using DigitA = std::remove_cv_t<std::remove_pointer_t<decltype(a)>>;

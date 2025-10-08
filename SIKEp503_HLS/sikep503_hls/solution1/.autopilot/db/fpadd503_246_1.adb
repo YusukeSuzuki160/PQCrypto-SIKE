@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>c</name>
+              <name>a</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -39,7 +39,7 @@
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
-          <direction>2</direction>
+          <direction>0</direction>
           <if_type>1</if_type>
           <array_size>8</array_size>
           <bit_vecs class_id="7" tracking_level="0" version="0">
@@ -52,7 +52,7 @@
             <Obj>
               <type>1</type>
               <id>2</id>
-              <name>b</name>
+              <name>c</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -75,7 +75,7 @@
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
-          <direction>0</direction>
+          <direction>2</direction>
           <if_type>1</if_type>
           <array_size>8</array_size>
           <bit_vecs>
@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>carry_168_loc</name>
+              <name>carry_180_loc</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -225,7 +225,7 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>carry_168_loc_load</name>
+              <name>carry_180_loc_load</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -575,7 +575,7 @@
         <item class_id_reference="20" object_id="_19">
           <id>22</id>
           <edge_type>1</edge_type>
-          <source_obj>1</source_obj>
+          <source_obj>2</source_obj>
           <sink_obj>9</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -603,7 +603,7 @@
         <item class_id_reference="20" object_id="_23">
           <id>27</id>
           <edge_type>1</edge_type>
-          <source_obj>1</source_obj>
+          <source_obj>2</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1346,7 +1346,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>carry_168_loc_fu_22</first>
+        <first>carry_180_loc_fu_22</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1389,7 +1389,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>carry_168_loc_load_load_fu_52</first>
+        <first>carry_180_loc_load_load_fu_52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1433,7 +1433,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>carry_168_loc_reg_56</first>
+        <first>carry_180_loc_reg_56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7958 \
+    id 1509 \
     name t \
     reset_level 1 \
     sync_rst true \
@@ -30,17 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7959 \
-    name t_84 \
+    id 1510 \
+    name t_77 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename t_84 \
+    corename t_77 \
     op interface \
-    ports { t_84_address0 { O 6 vector } t_84_ce0 { O 1 bit } t_84_q0 { I 8 vector } } \
+    ports { t_77_address0 { O 6 vector } t_77_ce0 { O 1 bit } t_77_q0 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_84'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_77'"
 }
 }
 
@@ -49,17 +49,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7960 \
-    name t_85 \
+    id 1511 \
+    name t_78 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename t_85 \
+    corename t_78 \
     op interface \
-    ports { t_85_address0 { O 6 vector } t_85_ce0 { O 1 bit } t_85_q0 { I 8 vector } } \
+    ports { t_78_address0 { O 6 vector } t_78_ce0 { O 1 bit } t_78_q0 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_85'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_78'"
 }
 }
 
@@ -68,17 +68,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7961 \
-    name t_86 \
+    id 1512 \
+    name t_79 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename t_86 \
+    corename t_79 \
     op interface \
-    ports { t_86_address0 { O 6 vector } t_86_ce0 { O 1 bit } t_86_q0 { I 8 vector } } \
+    ports { t_79_address0 { O 6 vector } t_79_ce0 { O 1 bit } t_79_q0 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_86'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_79'"
 }
 }
 
@@ -87,7 +87,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7962 \
+    id 1513 \
     name output_r \
     reset_level 1 \
     sync_rst true \

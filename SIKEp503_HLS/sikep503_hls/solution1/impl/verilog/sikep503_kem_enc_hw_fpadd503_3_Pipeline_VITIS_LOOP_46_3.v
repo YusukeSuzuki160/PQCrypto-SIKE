@@ -71,7 +71,7 @@ reg   [1:0] c_1_addr_reg_309;
 wire    ap_loop_init;
 wire   [63:0] zext_ln28_fu_169_p1;
 wire   [63:0] zext_ln46_fu_150_p1;
-reg   [3:0] i_145_fu_62;
+reg   [3:0] i_122_fu_62;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    c_0_ce0_local;
 reg   [1:0] c_0_address0_local;
@@ -87,15 +87,15 @@ wire   [63:0] zext_ln48_fu_182_p1;
 wire   [63:0] and_ln48_fu_192_p2;
 wire   [63:0] tempReg_fu_186_p2;
 wire   [63:0] xor_ln48_fu_205_p2;
-wire   [63:0] xor_ln48_11_fu_211_p2;
+wire   [63:0] xor_ln48_8_fu_211_p2;
 wire   [0:0] bit_sel1_fu_223_p3;
-wire   [0:0] xor_ln48_12_fu_231_p2;
+wire   [0:0] xor_ln48_9_fu_231_p2;
 wire   [62:0] trunc_ln48_fu_237_p1;
 wire   [63:0] xor_ln48_s_fu_241_p3;
 wire   [63:0] or_ln48_fu_217_p2;
-wire   [63:0] xor_ln48_13_fu_255_p2;
-wire   [63:0] and_ln48_4_fu_249_p2;
-wire   [63:0] or_ln48_4_fu_261_p2;
+wire   [63:0] xor_ln48_10_fu_255_p2;
+wire   [63:0] and_ln48_3_fu_249_p2;
+wire   [63:0] or_ln48_3_fu_261_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -110,11 +110,11 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_145_fu_62 = 4'd0;
+#0 i_122_fu_62 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_fpadd503_247_1_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
+sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -163,7 +163,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        carry_reg_111 <= or_ln48_4_fu_261_p2[32'd63];
+        carry_reg_111 <= or_ln48_3_fu_261_p2[32'd63];
     end else if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         carry_reg_111 <= 1'd0;
     end
@@ -171,9 +171,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_145_fu_62 <= 4'd0;
+        i_122_fu_62 <= 4'd0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_145_fu_62 <= add_ln46_reg_294;
+        i_122_fu_62 <= add_ln46_reg_294;
     end
 end
 
@@ -233,7 +233,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_145_fu_62;
+        ap_sig_allocacmp_i = i_122_fu_62;
     end
 end
 
@@ -321,7 +321,7 @@ assign add_ln46_fu_144_p2 = (ap_sig_allocacmp_i + 4'd1);
 
 assign add_ln48_fu_197_p2 = (and_ln48_fu_192_p2 + tempReg_fu_186_p2);
 
-assign and_ln48_4_fu_249_p2 = (xor_ln48_s_fu_241_p3 & select_ln48_fu_175_p3);
+assign and_ln48_3_fu_249_p2 = (xor_ln48_s_fu_241_p3 & select_ln48_fu_175_p3);
 
 assign and_ln48_fu_192_p2 = (sext_ln30_cast_reg_286 & p503x2_1_q0);
 
@@ -361,9 +361,9 @@ assign icmp_ln46_fu_138_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
 assign lshr_ln28_4_fu_159_p4 = {{ap_sig_allocacmp_i[2:1]}};
 
-assign or_ln48_4_fu_261_p2 = (xor_ln48_13_fu_255_p2 | and_ln48_4_fu_249_p2);
+assign or_ln48_3_fu_261_p2 = (xor_ln48_10_fu_255_p2 | and_ln48_3_fu_249_p2);
 
-assign or_ln48_fu_217_p2 = (xor_ln48_fu_205_p2 | xor_ln48_11_fu_211_p2);
+assign or_ln48_fu_217_p2 = (xor_ln48_fu_205_p2 | xor_ln48_8_fu_211_p2);
 
 assign p503x2_1_address0 = zext_ln46_fu_150_p1;
 
@@ -377,15 +377,15 @@ assign trunc_ln46_fu_155_p1 = ap_sig_allocacmp_i[0:0];
 
 assign trunc_ln48_fu_237_p1 = tempReg_fu_186_p2[62:0];
 
-assign xor_ln48_11_fu_211_p2 = (tempReg_fu_186_p2 ^ and_ln48_fu_192_p2);
+assign xor_ln48_10_fu_255_p2 = (or_ln48_fu_217_p2 ^ add_ln48_fu_197_p2);
 
-assign xor_ln48_12_fu_231_p2 = (bit_sel1_fu_223_p3 ^ 1'd1);
+assign xor_ln48_8_fu_211_p2 = (tempReg_fu_186_p2 ^ and_ln48_fu_192_p2);
 
-assign xor_ln48_13_fu_255_p2 = (or_ln48_fu_217_p2 ^ add_ln48_fu_197_p2);
+assign xor_ln48_9_fu_231_p2 = (bit_sel1_fu_223_p3 ^ 1'd1);
 
 assign xor_ln48_fu_205_p2 = (tempReg_fu_186_p2 ^ add_ln48_fu_197_p2);
 
-assign xor_ln48_s_fu_241_p3 = {{xor_ln48_12_fu_231_p2}, {trunc_ln48_fu_237_p1}};
+assign xor_ln48_s_fu_241_p3 = {{xor_ln48_9_fu_231_p2}, {trunc_ln48_fu_237_p1}};
 
 assign zext_ln28_fu_169_p1 = lshr_ln28_4_fu_159_p4;
 

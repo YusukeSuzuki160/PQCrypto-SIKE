@@ -19,7 +19,7 @@ set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict tt3 { MEM_WIDTH 64 MEM_SIZE 128 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ tt3 int 64 regular {array 16 { 2 } 1 1 }  }
+	{ tt3 int 64 regular {array 16 { 0 1 } 1 1 }  }
 	{ sext_ln179 int 1 regular  }
 }
 set hasAXIMCache 0
@@ -29,7 +29,7 @@ set C_modelArgMapList {[
 	{ "Name" : "tt3", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
  	{ "Name" : "sext_ln179", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
-set portNum 12
+set portNum 14
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -41,7 +41,9 @@ set portList {
 	{ tt3_ce0 sc_out sc_logic 1 signal 0 } 
 	{ tt3_we0 sc_out sc_logic 1 signal 0 } 
 	{ tt3_d0 sc_out sc_lv 64 signal 0 } 
-	{ tt3_q0 sc_in sc_lv 64 signal 0 } 
+	{ tt3_address1 sc_out sc_lv 4 signal 0 } 
+	{ tt3_ce1 sc_out sc_logic 1 signal 0 } 
+	{ tt3_q1 sc_in sc_lv 64 signal 0 } 
 	{ sext_ln179 sc_in sc_lv 1 signal 1 } 
 }
 set NewPortList {[ 
@@ -55,7 +57,9 @@ set NewPortList {[
  	{ "name": "tt3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tt3", "role": "ce0" }} , 
  	{ "name": "tt3_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tt3", "role": "we0" }} , 
  	{ "name": "tt3_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "tt3", "role": "d0" }} , 
- 	{ "name": "tt3_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "tt3", "role": "q0" }} , 
+ 	{ "name": "tt3_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "tt3", "role": "address1" }} , 
+ 	{ "name": "tt3_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tt3", "role": "ce1" }} , 
+ 	{ "name": "tt3_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "tt3", "role": "q1" }} , 
  	{ "name": "sext_ln179", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "sext_ln179", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
@@ -65,7 +69,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "18", "EstimateLatencyMax" : "18",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "10", "EstimateLatencyMax" : "10",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -79,7 +83,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "p503_1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_187_1", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_state1", "FirstStateIter" : "", "FirstStateBlock" : "ap_ST_fsm_state1_blk", "LastState" : "ap_ST_fsm_state2", "LastStateIter" : "", "LastStateBlock" : "ap_ST_fsm_state2_blk", "QuitState" : "ap_ST_fsm_state2", "QuitStateIter" : "", "QuitStateBlock" : "ap_ST_fsm_state2_blk", "OneDepthLoop" : "1", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.p503_1_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
@@ -93,14 +97,15 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "18", "Max" : "18"}
-	, {"Name" : "Interval", "Min" : "18", "Max" : "18"}
+	{"Name" : "Latency", "Min" : "10", "Max" : "10"}
+	, {"Name" : "Interval", "Min" : "10", "Max" : "10"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 
-	tt3 { ap_memory {  { tt3_address0 mem_address 1 4 }  { tt3_ce0 mem_ce 1 1 }  { tt3_we0 mem_we 1 1 }  { tt3_d0 mem_din 1 64 }  { tt3_q0 mem_dout 0 64 } } }
+	tt3 { ap_memory {  { tt3_address0 mem_address 1 4 }  { tt3_ce0 mem_ce 1 1 }  { tt3_we0 mem_we 1 1 }  { tt3_d0 mem_din 1 64 }  { tt3_address1 MemPortADDR2 1 4 }  { tt3_ce1 MemPortCE2 1 1 }  { tt3_q1 MemPortDOUT2 0 64 } } }
 	sext_ln179 { ap_none {  { sext_ln179 in_data 0 1 } } }
 }

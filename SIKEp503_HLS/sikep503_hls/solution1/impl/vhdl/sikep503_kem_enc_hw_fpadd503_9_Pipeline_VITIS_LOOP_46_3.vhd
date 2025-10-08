@@ -77,7 +77,7 @@ attribute shreg_extract : string;
     signal ap_loop_init : STD_LOGIC;
     signal zext_ln28_fu_169_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln46_fu_150_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal i_135_fu_62 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    signal i_112_fu_62 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal ap_sig_allocacmp_i : STD_LOGIC_VECTOR (3 downto 0);
     signal c_0_ce0_local : STD_LOGIC;
     signal c_0_address0_local : STD_LOGIC_VECTOR (1 downto 0);
@@ -113,7 +113,7 @@ attribute shreg_extract : string;
     signal ap_done_sig : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component sikep503_kem_enc_hw_fpadd503_247_1_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R IS
+    component sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -146,7 +146,7 @@ attribute shreg_extract : string;
 
 
 begin
-    p503x2_1_U : component sikep503_kem_enc_hw_fpadd503_247_1_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R
+    p503x2_1_U : component sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R
     generic map (
         DataWidth => 64,
         AddressRange => 8,
@@ -216,13 +216,13 @@ begin
         end if;
     end process;
 
-    i_135_fu_62_assign_proc : process (ap_clk)
+    i_112_fu_62_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_state1_pp0_stage0_iter0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                i_135_fu_62 <= ap_const_lv4_0;
+                i_112_fu_62 <= ap_const_lv4_0;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-                i_135_fu_62 <= add_ln46_reg_294;
+                i_112_fu_62 <= add_ln46_reg_294;
             end if; 
         end if;
     end process;
@@ -323,12 +323,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_135_fu_62)
+    ap_sig_allocacmp_i_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_112_fu_62)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             ap_sig_allocacmp_i <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i <= i_135_fu_62;
+            ap_sig_allocacmp_i <= i_112_fu_62;
         end if; 
     end process;
 

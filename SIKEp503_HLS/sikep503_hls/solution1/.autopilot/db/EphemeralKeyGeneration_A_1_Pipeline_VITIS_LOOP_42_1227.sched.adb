@@ -340,7 +340,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_292</name>
+						<name>i_270</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>49</lineNumber>
@@ -3044,7 +3044,7 @@
 				<Obj>
 					<type>3</type>
 					<id>15</id>
-					<name>for.body.i441</name>
+					<name>for.body.i454</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3078,7 +3078,7 @@
 				<Obj>
 					<type>3</type>
 					<id>50</id>
-					<name>for.body.i441.split</name>
+					<name>for.body.i454.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3139,7 +3139,7 @@
 				<Obj>
 					<type>3</type>
 					<id>52</id>
-					<name>_ZL10fp2_encodePA8_KmPh.exit442.exitStub</name>
+					<name>_ZL10fp2_encodePA8_KmPh.exit455.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
