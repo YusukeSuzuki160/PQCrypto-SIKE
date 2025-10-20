@@ -1198,7 +1198,7 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>R_Z_addr_6</name>
+              <name>R_Z_addr_24</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -5262,7 +5262,7 @@
       <count>25</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>R_Z_addr_6_gep_fu_73</first>
+        <first>R_Z_addr_24_gep_fu_73</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5607,7 +5607,7 @@
       <count>9</count>
       <item_version>0</item_version>
       <item>
-        <first>R_Z_addr_6_reg_269</first>
+        <first>R_Z_addr_24_reg_269</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

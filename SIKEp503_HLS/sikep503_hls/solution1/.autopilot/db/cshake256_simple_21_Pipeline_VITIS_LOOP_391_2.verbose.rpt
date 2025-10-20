@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_21_Pipeline_VITIS_LOOP_391_2'
 ================================================================
-* Date:           Wed Oct  8 20:40:24 2025
+* Date:           Mon Oct 20 14:42:05 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -255,9 +255,9 @@ ST_1 : Operation 41 [1/1] (0.38ns)   --->   "%store_ln387 = store i5 %i_263, i5 
 ST_1 : Operation 58 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 58 'ret' 'ret_ln0' <Predicate = (icmp_ln391)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 1.71>
-ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%specpipeline_ln387 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/sha3/fips202.cpp:387->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 42 'specpipeline' 'specpipeline_ln387' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%specpipeline_ln387 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sha3/fips202.cpp:387->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 42 'specpipeline' 'specpipeline_ln387' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%speclooptripcount_ln387 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 17, i64 17, i64 17" [src/sha3/fips202.cpp:387->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 43 'speclooptripcount' 'speclooptripcount_ln387' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%specloopname_ln391 = specloopname void @_ssdm_op_SpecLoopName, void @empty_92" [src/sha3/fips202.cpp:391->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 44 'specloopname' 'specloopname_ln391' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%specloopname_ln391 = specloopname void @_ssdm_op_SpecLoopName, void @empty_99" [src/sha3/fips202.cpp:391->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 44 'specloopname' 'specloopname_ln391' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 45 [1/2] ( I:0.56ns O:0.56ns )   --->   "%in_0_load = load i7 %in_0_addr" [src/sha3/fips202.cpp:28->src/sha3/fips202.cpp:394->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 45 'load' 'in_0_load' <Predicate = true> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
 ST_2 : Operation 46 [1/2] ( I:0.56ns O:0.56ns )   --->   "%in_1_load = load i7 %in_1_addr" [src/sha3/fips202.cpp:28->src/sha3/fips202.cpp:394->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 46 'load' 'in_1_load' <Predicate = true> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
 ST_2 : Operation 47 [1/2] ( I:0.56ns O:0.56ns )   --->   "%in_2_load = load i7 %in_2_addr" [src/sha3/fips202.cpp:28->src/sha3/fips202.cpp:394->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 47 'load' 'in_2_load' <Predicate = true> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
@@ -527,7 +527,7 @@ ret_ln0                    (ret                   ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -563,7 +563,7 @@ ret_ln0                    (ret                   ) [ 000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_92"/></StgValue>
+<StgValue><ssdm name="empty_99"/></StgValue>
 </bind>
 </comp>
 

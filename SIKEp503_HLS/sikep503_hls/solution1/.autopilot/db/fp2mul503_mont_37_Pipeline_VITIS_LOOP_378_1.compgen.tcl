@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 842 \
-    name tt1 \
+    id 2246 \
+    name t1_1 \
     reset_level 1 \
     sync_rst true \
-    dir IO \
-    corename tt1 \
+    dir O \
+    corename t1_1 \
     op interface \
-    ports { tt1_address0 { O 4 vector } tt1_ce0 { O 1 bit } tt1_we0 { O 1 bit } tt1_d0 { O 64 vector } tt1_q0 { I 64 vector } } \
+    ports { t1_1_address0 { O 2 vector } t1_1_ce0 { O 1 bit } t1_1_we0 { O 1 bit } t1_1_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'tt1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't1_1'"
 }
 }
 
@@ -30,17 +30,93 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 843 \
-    name tt2 \
+    id 2247 \
+    name t1 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename t1 \
+    op interface \
+    ports { t1_address0 { O 2 vector } t1_ce0 { O 1 bit } t1_we0 { O 1 bit } t1_d0 { O 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 2248 \
+    name a_0_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename tt2 \
+    corename a_0_0 \
     op interface \
-    ports { tt2_address0 { O 4 vector } tt2_ce0 { O 1 bit } tt2_q0 { I 64 vector } } \
+    ports { a_0_0_address0 { O 2 vector } a_0_0_ce0 { O 1 bit } a_0_0_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'tt2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_0_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 2249 \
+    name a_0_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename a_0_1 \
+    op interface \
+    ports { a_0_1_address0 { O 2 vector } a_0_1_ce0 { O 1 bit } a_0_1_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_0_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 2250 \
+    name a_1_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename a_1_0 \
+    op interface \
+    ports { a_1_0_address0 { O 2 vector } a_1_0_ce0 { O 1 bit } a_1_0_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_1_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 2251 \
+    name a_1_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename a_1_1 \
+    op interface \
+    ports { a_1_1_address0 { O 2 vector } a_1_1_ce0 { O 1 bit } a_1_1_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a_1_1'"
 }
 }
 

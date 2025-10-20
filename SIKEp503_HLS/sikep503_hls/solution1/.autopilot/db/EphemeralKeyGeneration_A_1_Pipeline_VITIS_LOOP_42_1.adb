@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>t_84</name>
+              <name>t_108</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -852,7 +852,7 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>t_84_addr</name>
+              <name>t_108_addr</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>49</lineNumber>
@@ -1045,7 +1045,7 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>t_84_addr_1</name>
+              <name>t_108_addr_1</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>57</lineNumber>
@@ -1110,7 +1110,7 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>t_84_load</name>
+              <name>t_108_load</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>49</lineNumber>
@@ -1752,7 +1752,7 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>t_84_load_1</name>
+              <name>t_108_load_1</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>57</lineNumber>
@@ -5015,7 +5015,7 @@
           </second>
         </item>
         <item>
-          <first>t_84_address0_local</first>
+          <first>t_108_address0_local</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -5932,7 +5932,7 @@
               <item class_id="53" tracking_level="0" version="0">
                 <first class_id="54" tracking_level="0" version="0">
                   <first class_id_reference="9" object_id_reference="_30"/>
-                  <second>core:RAM_1P:t_84::load:store</second>
+                  <second>core:RAM_1P:t_108::load:store</second>
                 </first>
                 <second>37</second>
               </item>
@@ -6313,7 +6313,7 @@
         </second>
       </item>
       <item>
-        <first>t_84_addr_1_gep_fu_129</first>
+        <first>t_108_addr_1_gep_fu_129</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6321,7 +6321,7 @@
         </second>
       </item>
       <item>
-        <first>t_84_addr_gep_fu_116</first>
+        <first>t_108_addr_gep_fu_116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6500,7 +6500,7 @@
       <item_version>0</item_version>
       <item class_id="61" tracking_level="0" version="0">
         <first class_id="62" tracking_level="0" version="0">
-          <first>t_84</first>
+          <first>t_108</first>
           <second>0</second>
         </first>
         <second>
@@ -6649,7 +6649,7 @@
         </second>
       </item>
       <item>
-        <first>t_84_addr_1_reg_297</first>
+        <first>t_108_addr_1_reg_297</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6657,7 +6657,7 @@
         </second>
       </item>
       <item>
-        <first>t_84_addr_reg_280</first>
+        <first>t_108_addr_reg_280</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6758,7 +6758,7 @@
         </second>
       </item>
       <item>
-        <first>t_84(p0)</first>
+        <first>t_108(p0)</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

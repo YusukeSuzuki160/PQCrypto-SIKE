@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_2'
 ================================================================
-* Date:           Wed Oct  8 20:34:32 2025
+* Date:           Mon Oct 20 16:15:40 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -150,7 +150,7 @@ State 5 <SV = 4> <Delay = 4.54>
 ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%zext_ln327_3 = zext i7 %add_ln327" [src/generic/fp_generic.cpp:327]   --->   Operation 60 'zext' 'zext_ln327_3' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%mc_addr_9 = getelementptr i64 %mc, i64 0, i64 %zext_ln327_3" [src/generic/fp_generic.cpp:327]   --->   Operation 61 'getelementptr' 'mc_addr_9' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:302]   --->   Operation 62 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%specloopname_ln312 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32" [src/generic/fp_generic.cpp:312]   --->   Operation 63 'specloopname' 'specloopname_ln312' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%specloopname_ln312 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [src/generic/fp_generic.cpp:312]   --->   Operation 63 'specloopname' 'specloopname_ln312' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%v_82_loc_load = load i64 %v_82_loc"   --->   Operation 64 'load' 'v_82_loc_load' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%u_54_loc_load = load i64 %u_54_loc"   --->   Operation 65 'load' 'u_54_loc_load' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%t_loc_load = load i64 %t_loc"   --->   Operation 66 'load' 't_loc_load' <Predicate = true> <Delay = 0.00>
@@ -207,7 +207,7 @@ ST_7 : Operation 112 [2/2] (0.71ns)   --->   "%ma_load_12 = load i4 %ma_addr_12"
 
 State 8 <SV = 5> <Delay = 4.54>
 ST_8 : Operation 113 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 7, i64 7, i64 7" [src/generic/fp_generic.cpp:302]   --->   Operation 113 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 114 [1/1] (0.00ns)   --->   "%specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_30" [src/generic/fp_generic.cpp:334]   --->   Operation 114 'specloopname' 'specloopname_ln334' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 114 [1/1] (0.00ns)   --->   "%specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35" [src/generic/fp_generic.cpp:334]   --->   Operation 114 'specloopname' 'specloopname_ln334' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 115 [1/1] (0.00ns)   --->   "%v_86_loc_load = load i64 %v_86_loc"   --->   Operation 115 'load' 'v_86_loc_load' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 116 [1/1] (0.00ns)   --->   "%u_47_loc_load = load i64 %u_47_loc"   --->   Operation 116 'load' 'u_47_loc_load' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 117 [1/1] (0.00ns)   --->   "%t_30_loc_load = load i64 %t_30_loc"   --->   Operation 117 'load' 't_30_loc_load' <Predicate = true> <Delay = 0.00>

@@ -51,8 +51,8 @@ attribute shreg_extract : string;
     signal trunc_ln180_reg_326 : STD_LOGIC_VECTOR (31 downto 0);
     signal add_ln159_fu_238_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal add_ln159_reg_331 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_10_reg_336 : STD_LOGIC_VECTOR (1 downto 0);
-    signal tmp_11_reg_341 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_18_reg_336 : STD_LOGIC_VECTOR (1 downto 0);
+    signal tmp_19_reg_341 : STD_LOGIC_VECTOR (31 downto 0);
     signal albl_fu_36_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal zext_ln159_1_fu_82_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal albl_fu_36_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -83,9 +83,9 @@ attribute shreg_extract : string;
     signal zext_ln178_fu_148_p1 : STD_LOGIC_VECTOR (33 downto 0);
     signal zext_ln160_1_fu_130_p1 : STD_LOGIC_VECTOR (33 downto 0);
     signal temp_fu_152_p2 : STD_LOGIC_VECTOR (33 downto 0);
-    signal tmp_7_fu_158_p4 : STD_LOGIC_VECTOR (1 downto 0);
-    signal tmp_8_fu_176_p4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_9_fu_190_p4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_15_fu_158_p4 : STD_LOGIC_VECTOR (1 downto 0);
+    signal tmp_16_fu_176_p4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_17_fu_190_p4 : STD_LOGIC_VECTOR (31 downto 0);
     signal res3_1_fu_116_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal zext_ln160_5_fu_200_p1 : STD_LOGIC_VECTOR (32 downto 0);
     signal zext_ln160_6_fu_204_p1 : STD_LOGIC_VECTOR (32 downto 0);
@@ -127,7 +127,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mul_32ns_32ns_64_1_1_U257 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
+    mul_32ns_32ns_64_1_1_U291 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -139,7 +139,7 @@ begin
         din1 => albl_fu_36_p1,
         dout => albl_fu_36_p2);
 
-    mul_32ns_32ns_64_1_1_U258 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
+    mul_32ns_32ns_64_1_1_U292 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -151,7 +151,7 @@ begin
         din1 => albh_fu_40_p1,
         dout => albh_fu_40_p2);
 
-    mul_32ns_32ns_64_1_1_U259 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
+    mul_32ns_32ns_64_1_1_U293 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -163,7 +163,7 @@ begin
         din1 => ahbl_fu_44_p1,
         dout => ahbl_fu_44_p2);
 
-    mul_32ns_32ns_64_1_1_U260 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
+    mul_32ns_32ns_64_1_1_U294 : component sikep503_kem_enc_hw_mul_32ns_32ns_64_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -209,8 +209,8 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 add_ln159_reg_331 <= add_ln159_fu_238_p2;
-                tmp_10_reg_336 <= temp_4_fu_244_p2(33 downto 32);
-                tmp_11_reg_341 <= ahbh_fu_48_p2(63 downto 32);
+                tmp_18_reg_336 <= temp_4_fu_244_p2(33 downto 32);
+                tmp_19_reg_341 <= ahbh_fu_48_p2(63 downto 32);
                 trunc_ln160_reg_321 <= trunc_ln160_fu_104_p1;
                 trunc_ln180_reg_326 <= trunc_ln180_fu_172_p1;
             end if;
@@ -229,7 +229,7 @@ begin
     add_ln159_fu_238_p2 <= std_logic_vector(unsigned(trunc_ln185_fu_230_p1) + unsigned(add_ln185_3_fu_208_p2));
     add_ln178_fu_142_p2 <= std_logic_vector(unsigned(zext_ln160_fu_134_p1) + unsigned(zext_ln160_2_fu_138_p1));
     add_ln185_1_fu_224_p2 <= std_logic_vector(unsigned(zext_ln160_4_fu_186_p1) + unsigned(zext_ln160_3_fu_168_p1));
-    add_ln185_3_fu_208_p2 <= std_logic_vector(unsigned(tmp_9_fu_190_p4) + unsigned(res3_1_fu_116_p1));
+    add_ln185_3_fu_208_p2 <= std_logic_vector(unsigned(tmp_17_fu_190_p4) + unsigned(res3_1_fu_116_p1));
     add_ln185_fu_214_p2 <= std_logic_vector(unsigned(zext_ln160_5_fu_200_p1) + unsigned(zext_ln160_6_fu_204_p1));
     add_ln188_fu_297_p2 <= std_logic_vector(unsigned(zext_ln160_7_fu_286_p1) + unsigned(and_ln_fu_290_p3));
     ah_fu_66_p4 <= a(63 downto 32);
@@ -242,7 +242,7 @@ begin
     albh_fu_40_p1 <= zext_ln159_fu_60_p1(32 - 1 downto 0);
     albl_fu_36_p0 <= zext_ln159_1_fu_82_p1(32 - 1 downto 0);
     albl_fu_36_p1 <= zext_ln159_fu_60_p1(32 - 1 downto 0);
-    and_ln_fu_290_p3 <= (tmp_11_reg_341 & ap_const_lv32_0);
+    and_ln_fu_290_p3 <= (tmp_19_reg_341 & ap_const_lv32_0);
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
         ap_block_pp0_stage0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
         ap_block_pp0_stage0_11001 <= not((ap_const_boolean_1 = ap_const_boolean_1));
@@ -314,15 +314,15 @@ begin
     bh_fu_88_p4 <= b(63 downto 32);
     bl_fu_52_p1 <= b(32 - 1 downto 0);
     c_write_assign_fu_270_p3 <= (trunc_ln180_reg_326 & trunc_ln160_reg_321);
-    carry_fu_279_p3 <= (tmp_10_reg_336 & ap_const_lv32_0);
+    carry_fu_279_p3 <= (tmp_18_reg_336 & ap_const_lv32_0);
     res2_fu_112_p1 <= ahbl_fu_44_p2(32 - 1 downto 0);
     res3_1_fu_116_p1 <= ahbh_fu_48_p2(32 - 1 downto 0);
     res3_fu_108_p1 <= albh_fu_40_p2(32 - 1 downto 0);
     temp_4_fu_244_p2 <= std_logic_vector(unsigned(zext_ln185_1_fu_234_p1) + unsigned(zext_ln185_fu_220_p1));
     temp_fu_152_p2 <= std_logic_vector(unsigned(zext_ln178_fu_148_p1) + unsigned(zext_ln160_1_fu_130_p1));
-    tmp_7_fu_158_p4 <= temp_fu_152_p2(33 downto 32);
-    tmp_8_fu_176_p4 <= ahbl_fu_44_p2(63 downto 32);
-    tmp_9_fu_190_p4 <= albh_fu_40_p2(63 downto 32);
+    tmp_15_fu_158_p4 <= temp_fu_152_p2(33 downto 32);
+    tmp_16_fu_176_p4 <= ahbl_fu_44_p2(63 downto 32);
+    tmp_17_fu_190_p4 <= albh_fu_40_p2(63 downto 32);
     tmp_s_fu_120_p4 <= albl_fu_36_p2(63 downto 32);
     trunc_ln160_fu_104_p1 <= albl_fu_36_p2(32 - 1 downto 0);
     trunc_ln180_fu_172_p1 <= temp_fu_152_p2(32 - 1 downto 0);
@@ -332,9 +332,9 @@ begin
     zext_ln159_fu_60_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(al_fu_56_p1),64));
     zext_ln160_1_fu_130_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_s_fu_120_p4),34));
     zext_ln160_2_fu_138_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(res3_fu_108_p1),33));
-    zext_ln160_3_fu_168_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_7_fu_158_p4),33));
-    zext_ln160_4_fu_186_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_8_fu_176_p4),33));
-    zext_ln160_5_fu_200_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_9_fu_190_p4),33));
+    zext_ln160_3_fu_168_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_15_fu_158_p4),33));
+    zext_ln160_4_fu_186_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_16_fu_176_p4),33));
+    zext_ln160_5_fu_200_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_17_fu_190_p4),33));
     zext_ln160_6_fu_204_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(res3_1_fu_116_p1),33));
     zext_ln160_7_fu_286_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(carry_fu_279_p3),64));
     zext_ln160_fu_134_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(res2_fu_112_p1),33));

@@ -215,10 +215,10 @@ entry:6 %t = alloca i64 1
 
 <Node id="15" bw="8" op_0_bw="64">
 <![CDATA[
-entry:7 %t_80 = alloca i64 1
+entry:7 %t_83 = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="t_80"/><MemPortTyVec>2 0 </MemPortTyVec>
+<StgValue><ssdm name="t_83"/><MemPortTyVec>2 0 </MemPortTyVec>
 </StgValue>
 </operation>
 
@@ -231,10 +231,10 @@ entry:7 %t_80 = alloca i64 1
 
 <Node id="16" bw="8" op_0_bw="64">
 <![CDATA[
-entry:8 %t_81 = alloca i64 1
+entry:8 %t_84 = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="t_81"/><MemPortTyVec>2 0 </MemPortTyVec>
+<StgValue><ssdm name="t_84"/><MemPortTyVec>2 0 </MemPortTyVec>
 </StgValue>
 </operation>
 
@@ -247,10 +247,10 @@ entry:8 %t_81 = alloca i64 1
 
 <Node id="17" bw="8" op_0_bw="64">
 <![CDATA[
-entry:9 %t_82 = alloca i64 1
+entry:9 %t_85 = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="t_82"/><MemPortTyVec>2 0 </MemPortTyVec>
+<StgValue><ssdm name="t_85"/><MemPortTyVec>2 0 </MemPortTyVec>
 </StgValue>
 </operation>
 
@@ -380,7 +380,7 @@ entry:13 %call_ln625 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_18, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_57, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -685,7 +685,7 @@ VITIS_LOOP_391_2.i.i.split:4 %call_ln396 = call void @KeccakF1600_StatePermute, 
 
 <Node id="32" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_391_2.i.i.split:1 %specloopname_ln388 = specloopname void @_ssdm_op_SpecLoopName, void @empty_29
+VITIS_LOOP_391_2.i.i.split:1 %specloopname_ln388 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln388"/></StgValue>
@@ -787,7 +787,7 @@ BYTE.i.i.preheader:1 %call_ln435 = call void @KeccakF1600_StatePermute, i64 %s, 
 
 <Node id="44" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_436_2, i8 %t_82, i8 %t_81, i8 %t_80, i8 %t, i64 %s
+BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_436_2, i8 %t_85, i8 %t_84, i8 %t_83, i8 %t, i64 %s
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -805,7 +805,7 @@ BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_L
 
 <Node id="44" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_436_2, i8 %t_82, i8 %t_81, i8 %t_80, i8 %t, i64 %s
+BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_436_2, i8 %t_85, i8 %t_84, i8 %t_83, i8 %t, i64 %s
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -856,7 +856,7 @@ BYTE.i.i.preheader:4 %empty = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i8 %gme
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:5 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_668_1, i8 %gmem, i64 %output_read, i8 %t, i8 %t_80, i8 %t_81, i8 %t_82
+BYTE.i.i.preheader:5 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_668_1, i8 %gmem, i64 %output_read, i8 %t, i8 %t_83, i8 %t_84, i8 %t_85
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -874,7 +874,7 @@ BYTE.i.i.preheader:5 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_L
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:5 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_668_1, i8 %gmem, i64 %output_read, i8 %t, i8 %t_80, i8 %t_81, i8 %t_82
+BYTE.i.i.preheader:5 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_LOOP_668_1, i8 %gmem, i64 %output_read, i8 %t, i8 %t_83, i8 %t_84, i8 %t_85
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -892,10 +892,10 @@ BYTE.i.i.preheader:5 %call_ln0 = call void @cshake256_simple.21_Pipeline_VITIS_L
 
 <Node id="48" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
+BYTE.i.i.preheader:6 %empty_178 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
 
 ]]></Node>
-<StgValue><ssdm name="empty_176"/></StgValue>
+<StgValue><ssdm name="empty_178"/></StgValue>
 </operation>
 </state>
 
@@ -910,10 +910,10 @@ BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i
 
 <Node id="48" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
+BYTE.i.i.preheader:6 %empty_178 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
 
 ]]></Node>
-<StgValue><ssdm name="empty_176"/></StgValue>
+<StgValue><ssdm name="empty_178"/></StgValue>
 </operation>
 </state>
 
@@ -928,10 +928,10 @@ BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i
 
 <Node id="48" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
+BYTE.i.i.preheader:6 %empty_178 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
 
 ]]></Node>
-<StgValue><ssdm name="empty_176"/></StgValue>
+<StgValue><ssdm name="empty_178"/></StgValue>
 </operation>
 </state>
 
@@ -946,10 +946,10 @@ BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i
 
 <Node id="48" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
+BYTE.i.i.preheader:6 %empty_178 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
 
 ]]></Node>
-<StgValue><ssdm name="empty_176"/></StgValue>
+<StgValue><ssdm name="empty_178"/></StgValue>
 </operation>
 </state>
 
@@ -964,10 +964,10 @@ BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i
 
 <Node id="48" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:6 %empty_176 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
+BYTE.i.i.preheader:6 %empty_178 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr
 
 ]]></Node>
-<StgValue><ssdm name="empty_176"/></StgValue>
+<StgValue><ssdm name="empty_178"/></StgValue>
 </operation>
 
 <operation id="73" st_id="22" stage="1" lat="1">
@@ -1028,11 +1028,11 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="110" from="StgValue_108" to="t" fromId="108" toId="26">
 </dataflow>
-<dataflow id="111" from="StgValue_108" to="t_80" fromId="108" toId="27">
+<dataflow id="111" from="StgValue_108" to="t_83" fromId="108" toId="27">
 </dataflow>
-<dataflow id="112" from="StgValue_108" to="t_81" fromId="108" toId="28">
+<dataflow id="112" from="StgValue_108" to="t_84" fromId="108" toId="28">
 </dataflow>
-<dataflow id="113" from="StgValue_108" to="t_82" fromId="108" toId="29">
+<dataflow id="113" from="StgValue_108" to="t_85" fromId="108" toId="29">
 </dataflow>
 <dataflow id="115" from="cshake256_simple.21_Pipeline_VITIS_LOOP_610_1" to="call_ln0" fromId="114" toId="30">
 </dataflow>
@@ -1074,23 +1074,23 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="142" from="gmem" to="specinterface_ln0" fromId="98" toId="37">
 </dataflow>
-<dataflow id="144" from="empty_18" to="specinterface_ln0" fromId="143" toId="37">
+<dataflow id="144" from="empty_41" to="specinterface_ln0" fromId="143" toId="37">
 </dataflow>
 <dataflow id="146" from="StgValue_145" to="specinterface_ln0" fromId="145" toId="37">
 </dataflow>
 <dataflow id="147" from="StgValue_145" to="specinterface_ln0" fromId="145" toId="37">
 </dataflow>
-<dataflow id="149" from="empty_73" to="specinterface_ln0" fromId="148" toId="37">
+<dataflow id="149" from="empty_102" to="specinterface_ln0" fromId="148" toId="37">
 </dataflow>
 <dataflow id="150" from="StgValue_145" to="specinterface_ln0" fromId="145" toId="37">
 </dataflow>
 <dataflow id="151" from="StgValue_145" to="specinterface_ln0" fromId="145" toId="37">
 </dataflow>
-<dataflow id="153" from="empty_23" to="specinterface_ln0" fromId="152" toId="37">
+<dataflow id="153" from="empty_74" to="specinterface_ln0" fromId="152" toId="37">
 </dataflow>
-<dataflow id="155" from="empty_57" to="specinterface_ln0" fromId="154" toId="37">
+<dataflow id="155" from="empty_75" to="specinterface_ln0" fromId="154" toId="37">
 </dataflow>
-<dataflow id="156" from="empty_73" to="specinterface_ln0" fromId="148" toId="37">
+<dataflow id="156" from="empty_102" to="specinterface_ln0" fromId="148" toId="37">
 </dataflow>
 <dataflow id="158" from="StgValue_157" to="specinterface_ln0" fromId="157" toId="37">
 </dataflow>
@@ -1100,9 +1100,9 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="161" from="StgValue_157" to="specinterface_ln0" fromId="157" toId="37">
 </dataflow>
-<dataflow id="162" from="empty_73" to="specinterface_ln0" fromId="148" toId="37">
+<dataflow id="162" from="empty_102" to="specinterface_ln0" fromId="148" toId="37">
 </dataflow>
-<dataflow id="163" from="empty_73" to="specinterface_ln0" fromId="148" toId="37">
+<dataflow id="163" from="empty_102" to="specinterface_ln0" fromId="148" toId="37">
 </dataflow>
 <dataflow id="165" from="StgValue_164" to="specinterface_ln0" fromId="164" toId="37">
 </dataflow>
@@ -1214,7 +1214,7 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="232" from="_ssdm_op_SpecLoopName" to="specloopname_ln388" fromId="231" toId="56">
 </dataflow>
-<dataflow id="234" from="empty_29" to="specloopname_ln388" fromId="233" toId="56">
+<dataflow id="234" from="empty_6" to="specloopname_ln388" fromId="233" toId="56">
 </dataflow>
 <dataflow id="235" from="KeccakF1600_StatePermute" to="call_ln396" fromId="136" toId="57">
 </dataflow>
@@ -1248,11 +1248,11 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="251" from="cshake256_simple.21_Pipeline_VITIS_LOOP_436_2" to="call_ln0" fromId="250" toId="62">
 </dataflow>
-<dataflow id="252" from="t_82" to="call_ln0" fromId="29" toId="62">
+<dataflow id="252" from="t_85" to="call_ln0" fromId="29" toId="62">
 </dataflow>
-<dataflow id="253" from="t_81" to="call_ln0" fromId="28" toId="62">
+<dataflow id="253" from="t_84" to="call_ln0" fromId="28" toId="62">
 </dataflow>
-<dataflow id="254" from="t_80" to="call_ln0" fromId="27" toId="62">
+<dataflow id="254" from="t_83" to="call_ln0" fromId="27" toId="62">
 </dataflow>
 <dataflow id="255" from="t" to="call_ln0" fromId="26" toId="62">
 </dataflow>
@@ -1260,11 +1260,11 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="257" from="cshake256_simple.21_Pipeline_VITIS_LOOP_436_2" to="call_ln0" fromId="250" toId="63">
 </dataflow>
-<dataflow id="258" from="t_82" to="call_ln0" fromId="29" toId="63">
+<dataflow id="258" from="t_85" to="call_ln0" fromId="29" toId="63">
 </dataflow>
-<dataflow id="259" from="t_81" to="call_ln0" fromId="28" toId="63">
+<dataflow id="259" from="t_84" to="call_ln0" fromId="28" toId="63">
 </dataflow>
-<dataflow id="260" from="t_80" to="call_ln0" fromId="27" toId="63">
+<dataflow id="260" from="t_83" to="call_ln0" fromId="27" toId="63">
 </dataflow>
 <dataflow id="261" from="t" to="call_ln0" fromId="26" toId="63">
 </dataflow>
@@ -1288,11 +1288,11 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="274" from="t" to="call_ln0" fromId="26" toId="66">
 </dataflow>
-<dataflow id="275" from="t_80" to="call_ln0" fromId="27" toId="66">
+<dataflow id="275" from="t_83" to="call_ln0" fromId="27" toId="66">
 </dataflow>
-<dataflow id="276" from="t_81" to="call_ln0" fromId="28" toId="66">
+<dataflow id="276" from="t_84" to="call_ln0" fromId="28" toId="66">
 </dataflow>
-<dataflow id="277" from="t_82" to="call_ln0" fromId="29" toId="66">
+<dataflow id="277" from="t_85" to="call_ln0" fromId="29" toId="66">
 </dataflow>
 <dataflow id="278" from="cshake256_simple.21_Pipeline_VITIS_LOOP_668_1" to="call_ln0" fromId="270" toId="67">
 </dataflow>
@@ -1302,31 +1302,31 @@ BYTE.i.i.preheader:7 %ret_ln674 = ret
 </dataflow>
 <dataflow id="281" from="t" to="call_ln0" fromId="26" toId="67">
 </dataflow>
-<dataflow id="282" from="t_80" to="call_ln0" fromId="27" toId="67">
+<dataflow id="282" from="t_83" to="call_ln0" fromId="27" toId="67">
 </dataflow>
-<dataflow id="283" from="t_81" to="call_ln0" fromId="28" toId="67">
+<dataflow id="283" from="t_84" to="call_ln0" fromId="28" toId="67">
 </dataflow>
-<dataflow id="284" from="t_82" to="call_ln0" fromId="29" toId="67">
+<dataflow id="284" from="t_85" to="call_ln0" fromId="29" toId="67">
 </dataflow>
-<dataflow id="286" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_176" fromId="285" toId="68">
+<dataflow id="286" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_178" fromId="285" toId="68">
 </dataflow>
-<dataflow id="287" from="gmem_addr" to="empty_176" fromId="64" toId="68">
+<dataflow id="287" from="gmem_addr" to="empty_178" fromId="64" toId="68">
 </dataflow>
-<dataflow id="288" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_176" fromId="285" toId="69">
+<dataflow id="288" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_178" fromId="285" toId="69">
 </dataflow>
-<dataflow id="289" from="gmem_addr" to="empty_176" fromId="64" toId="69">
+<dataflow id="289" from="gmem_addr" to="empty_178" fromId="64" toId="69">
 </dataflow>
-<dataflow id="290" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_176" fromId="285" toId="70">
+<dataflow id="290" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_178" fromId="285" toId="70">
 </dataflow>
-<dataflow id="291" from="gmem_addr" to="empty_176" fromId="64" toId="70">
+<dataflow id="291" from="gmem_addr" to="empty_178" fromId="64" toId="70">
 </dataflow>
-<dataflow id="292" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_176" fromId="285" toId="71">
+<dataflow id="292" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_178" fromId="285" toId="71">
 </dataflow>
-<dataflow id="293" from="gmem_addr" to="empty_176" fromId="64" toId="71">
+<dataflow id="293" from="gmem_addr" to="empty_178" fromId="64" toId="71">
 </dataflow>
-<dataflow id="294" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_176" fromId="285" toId="72">
+<dataflow id="294" from="_ssdm_op_WriteResp.m_axi.p1i8" to="empty_178" fromId="285" toId="72">
 </dataflow>
-<dataflow id="295" from="gmem_addr" to="empty_176" fromId="64" toId="72">
+<dataflow id="295" from="gmem_addr" to="empty_178" fromId="64" toId="72">
 </dataflow>
 <dataflow id="296" from="icmp_ln388" to="StgValue_6" fromId="43" toId="6">
 </dataflow>

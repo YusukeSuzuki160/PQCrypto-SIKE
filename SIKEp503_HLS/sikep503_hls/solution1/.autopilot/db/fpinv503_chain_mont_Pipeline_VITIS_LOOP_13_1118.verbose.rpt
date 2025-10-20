@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpinv503_chain_mont_Pipeline_VITIS_LOOP_13_1118'
 ================================================================
-* Date:           Wed Oct  8 20:19:38 2025
+* Date:           Mon Oct 20 14:40:28 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -206,8 +206,8 @@ ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline v
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:11->src/fpx.cpp:342]   --->   Operation 19 'speclooptripcount' 'speclooptripcount_ln11' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39" [src/fpx.cpp:13->src/fpx.cpp:342]   --->   Operation 20 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 21 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt_load = load i3 %tt_addr" [src/fpx.cpp:14->src/fpx.cpp:342]   --->   Operation 21 'load' 'tt_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%a_addr_8 = getelementptr i64 %a, i64 0, i64 %zext_ln13" [src/fpx.cpp:14->src/fpx.cpp:342]   --->   Operation 22 'getelementptr' 'a_addr_8' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln14 = store i64 %tt_load, i3 %a_addr_8" [src/fpx.cpp:14->src/fpx.cpp:342]   --->   Operation 23 'store' 'store_ln14' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%a_addr_22 = getelementptr i64 %a, i64 0, i64 %zext_ln13" [src/fpx.cpp:14->src/fpx.cpp:342]   --->   Operation 22 'getelementptr' 'a_addr_22' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln14 = store i64 %tt_load, i3 %a_addr_22" [src/fpx.cpp:14->src/fpx.cpp:342]   --->   Operation 23 'store' 'store_ln14' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln13 = br void %for.inc.i140" [src/fpx.cpp:13->src/fpx.cpp:342]   --->   Operation 24 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
 
 
@@ -246,7 +246,7 @@ specpipeline_ln11      (specpipeline     ) [ 000]
 speclooptripcount_ln11 (speclooptripcount) [ 000]
 specloopname_ln13      (specloopname     ) [ 000]
 tt_load                (load             ) [ 000]
-a_addr_8               (getelementptr    ) [ 000]
+a_addr_22              (getelementptr    ) [ 000]
 store_ln14             (store            ) [ 000]
 br_ln13                (br               ) [ 000]
 ret_ln0                (ret              ) [ 000]
@@ -474,7 +474,7 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="57" class="1004" name="a_addr_8_gep_fu_57">
+<comp id="57" class="1004" name="a_addr_22_gep_fu_57">
 <pin_list>
 <pin id="58" dir="0" index="0" bw="64" slack="0"/>
 <pin id="59" dir="0" index="1" bw="1" slack="0"/>
@@ -483,7 +483,7 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="a_addr_8/2 "/>
+<opset="a_addr_22/2 "/>
 </bind>
 </comp>
 

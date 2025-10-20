@@ -44,55 +44,55 @@
     <msg msg_groups="PRAGMA_INVALID" msg_id="207-5589" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:283:9" msg_body="'#pragma HLS loop_tripcount' can only be applied inside loop body">
         <args ClangWarningOption="invalid-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:73:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:73:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="CHUNK_MASK" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:80:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:80:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:86:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:86:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:87:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:87:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=NEEDW_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:135:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:135:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="init" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:139:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:139:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:143:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:143:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:144:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:144:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=PACK_ITERS_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:172:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:172:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="flush" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:178:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:178:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="flush" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=(2*MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:186:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:186:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:189:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:189:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:190:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:190:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=(2*MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:208:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:208:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:209:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:209:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=NOUT_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:216:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:216:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:217:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:217:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=INNER_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:154:9" msg_body="HLS pragma dump">
@@ -251,44 +251,53 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:71:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:123:28" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)" Caller-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 79 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:123:28" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 79 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:153:19" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;64&gt;)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;64&gt;)" Caller-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 138 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:153:19" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 138 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:202:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::init(unsigned long*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::init(unsigned long*, unsigned int)" Callee-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 134 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 185 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:202:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::init(unsigned long*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::init(unsigned long*, unsigned int)" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 134 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:239:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::flush()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::flush()" Callee-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 171 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 185 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:239:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::flush()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::flush()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 171 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:237:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;64&gt;)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;64&gt;)" Callee-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 138 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 185 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:237:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 138 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:230:43" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 185 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:230:43" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:224:28" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)" Callee-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 79 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_camba_mul.hpp Line 185 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:224:28" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 79 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:215:25" msg_body="Loop 'VITIS_LOOP_215_3' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:215:25" msg_body="Loop 'VITIS_LOOP_215_3' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_215_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:142:25" msg_body="Loop 'VITIS_LOOP_142_1' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:85:22" msg_body="Loop 'VITIS_LOOP_85_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_85_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:142:25" msg_body="Loop 'VITIS_LOOP_142_1' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_142_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:185:0" msg_body="Updating loop lower bound from 1 to 16 for loop 'VITIS_LOOP_207_2' (src/generic/mpx_camba_mul.hpp:207:23) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
-        <args LoopLoc="src/generic/mpx_camba_mul.hpp:207:23" LoopName="VITIS_LOOP_207_2" NewBound="16" OldBound="1"/>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Updating loop lower bound from 1 to 8 for loop 'VITIS_LOOP_207_2' (src/generic/mpx_comba_mul.hpp:207:23) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="src/generic/mpx_comba_mul.hpp:207:23" LoopName="VITIS_LOOP_207_2" NewBound="8" OldBound="1"/>
     </msg>
-    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:185:0" msg_body="Updating loop lower bound from 1 to 16 for loop 'VITIS_LOOP_188_1' (src/generic/mpx_camba_mul.hpp:188:20) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
-        <args LoopLoc="src/generic/mpx_camba_mul.hpp:188:20" LoopName="VITIS_LOOP_188_1" NewBound="16" OldBound="1"/>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Updating loop lower bound from 1 to 16 for loop 'VITIS_LOOP_188_1' (src/generic/mpx_comba_mul.hpp:188:20) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="src/generic/mpx_comba_mul.hpp:188:20" LoopName="VITIS_LOOP_188_1" NewBound="16" OldBound="1"/>
     </msg>
     <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Updating loop lower bound from 1 to 250 for loop 'VITIS_LOOP_319_1' (src/ec_isogeny.cpp:319:21) in function 'LADDER3PT'.">
         <args LoopLoc="src/ec_isogeny.cpp:319:21" LoopName="VITIS_LOOP_319_1" NewBound="250" OldBound="1"/>
     </msg>
     <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Updating loop upper bound from 503 to 250 for loop 'VITIS_LOOP_319_1' (src/ec_isogeny.cpp:319:21) in function 'LADDER3PT'.">
         <args LoopLoc="src/ec_isogeny.cpp:319:21" LoopName="VITIS_LOOP_319_1" NewBound="250" OldBound="503"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Unrolling loop 'VITIS_LOOP_85_1' (src/generic/mpx_comba_mul.hpp:85:22) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' completely with a factor of 2">
+        <args Factor="2" LoopLoc="src/generic/mpx_comba_mul.hpp:85:22" LoopName="VITIS_LOOP_85_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_85_1' (src/generic/mpx_comba_mul.hpp:85:22) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' has been removed because the loop is unrolled completely">
+        <args LoopLoc="src/generic/mpx_comba_mul.hpp:85:22" LoopName="VITIS_LOOP_85_1"/>
     </msg>
     <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/sidh.cpp:339:5" msg_body="Duplicating function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
         <args Name="fp2_encode(unsigned long const (*) [8], unsigned char*)"/>
@@ -589,9 +598,6 @@
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Unrolling loop 'VITIS_LOOP_26_1' (src/sha3/fips202.cpp:26:20) in function 'cshake256_simple' completely with a factor of 8">
         <args Factor="8" LoopLoc="src/sha3/fips202.cpp:26:20" LoopName="VITIS_LOOP_26_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/generic/mpx_camba_mul.hpp:185:0" msg_body="Unrolling loop 'VITIS_LOOP_142_1' (src/generic/mpx_camba_mul.hpp:142:25) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' completely with a factor of 1">
-        <args Factor="1" LoopLoc="src/generic/mpx_camba_mul.hpp:142:25" LoopName="VITIS_LOOP_142_1"/>
     </msg>
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:388:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_388_1'.">
         <args LoopName="VITIS_LOOP_388_1"/>
@@ -1013,8 +1019,11 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sike.cpp:43:17" msg_body="Applying array_partition to 'temp.i': Cyclic partitioning with factor 4 on dimension 1.">
         <args Dim="1" Factor="4" Mode="Cyclic" UOName="temp.i"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/generic/mpx_camba_mul.hpp:215:25" msg_body="Cannot unroll loop 'VITIS_LOOP_215_3' (src/generic/mpx_camba_mul.hpp:215:25) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' as it has a variable trip count">
-        <args LoopLoc="src/generic/mpx_camba_mul.hpp:215:25" LoopName="VITIS_LOOP_215_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:215:25" msg_body="Cannot unroll loop 'VITIS_LOOP_215_3' (src/generic/mpx_comba_mul.hpp:215:25) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' as it has a variable trip count">
+        <args LoopLoc="src/generic/mpx_comba_mul.hpp:215:25" LoopName="VITIS_LOOP_215_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:142:25" msg_body="Cannot unroll loop 'VITIS_LOOP_142_1' (src/generic/mpx_comba_mul.hpp:142:25) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' as it has a variable trip count">
+        <args LoopLoc="src/generic/mpx_comba_mul.hpp:142:25" LoopName="VITIS_LOOP_142_1"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

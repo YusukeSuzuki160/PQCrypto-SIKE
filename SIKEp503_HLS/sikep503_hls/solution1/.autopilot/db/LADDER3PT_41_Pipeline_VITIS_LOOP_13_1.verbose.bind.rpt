@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_41_Pipeline_VITIS_LOOP_13_1'
 ================================================================
-* Date:           Wed Oct  8 20:35:38 2025
+* Date:           Mon Oct 20 16:17:05 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -105,9 +105,9 @@ ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln13 = br void %for.inc.i" [src
 ST_1 : Operation 33 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 33 'ret' 'ret_ln0' <Predicate = (icmp_ln13)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 1.42>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:11->src/ec_isogeny.cpp:303]   --->   Operation 22 'specpipeline' 'specpipeline_ln11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:11->src/ec_isogeny.cpp:303]   --->   Operation 22 'specpipeline' 'specpipeline_ln11' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:11->src/ec_isogeny.cpp:303]   --->   Operation 23 'speclooptripcount' 'speclooptripcount_ln11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [src/fpx.cpp:13->src/ec_isogeny.cpp:303]   --->   Operation 24 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39" [src/fpx.cpp:13->src/ec_isogeny.cpp:303]   --->   Operation 24 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln11 = zext i2 %lshr_ln" [src/fpx.cpp:11->src/ec_isogeny.cpp:303]   --->   Operation 25 'zext' 'zext_ln11' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 26 [1/2] ( I:0.71ns O:0.71ns )   --->   "%Montgomery_one_1_load = load i3 %Montgomery_one_1_addr" [src/fpx.cpp:14->src/ec_isogeny.cpp:303]   --->   Operation 26 'load' 'Montgomery_one_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%A24_addr = getelementptr i64 %A24, i64 0, i64 %zext_ln11" [src/fpx.cpp:14->src/ec_isogeny.cpp:303]   --->   Operation 27 'getelementptr' 'A24_addr' <Predicate = true> <Delay = 0.00>
@@ -332,7 +332,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -368,7 +368,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_1"/></StgValue>
+<StgValue><ssdm name="empty_39"/></StgValue>
 </bind>
 </comp>
 

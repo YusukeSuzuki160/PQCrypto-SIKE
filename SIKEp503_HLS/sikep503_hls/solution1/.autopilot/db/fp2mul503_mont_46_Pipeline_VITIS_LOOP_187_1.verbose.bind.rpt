@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_46_Pipeline_VITIS_LOOP_187_1'
 ================================================================
-* Date:           Wed Oct  8 20:33:04 2025
+* Date:           Mon Oct 20 16:13:41 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -108,9 +108,9 @@ ST_1 : Operation 24 [1/1] (0.38ns)   --->   "%store_ln180 = store i4 %add_ln187,
 ST_1 : Operation 47 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (icmp_ln187)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:180]   --->   Operation 25 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:180]   --->   Operation 25 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln180 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:180]   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln180' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_81" [src/fpx.cpp:187]   --->   Operation 27 'specloopname' 'specloopname_ln187' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_92" [src/fpx.cpp:187]   --->   Operation 27 'specloopname' 'specloopname_ln187' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt3_load = load i4 %tt3_addr" [src/fpx.cpp:189]   --->   Operation 28 'load' 'tt3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln189_4 = zext i1 %borrow" [src/fpx.cpp:189]   --->   Operation 29 'zext' 'zext_ln189_4' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 30 [1/1] (1.14ns)   --->   "%tempReg = add i64 %tt3_load, i64 %zext_ln189_4" [src/fpx.cpp:189]   --->   Operation 30 'add' 'tempReg' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -376,7 +376,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -412,7 +412,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_81"/></StgValue>
+<StgValue><ssdm name="empty_92"/></StgValue>
 </bind>
 </comp>
 

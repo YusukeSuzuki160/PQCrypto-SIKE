@@ -84,7 +84,7 @@ wire   [63:0] or_ln105_fu_188_p2;
 wire   [63:0] xor_ln105_16_fu_194_p2;
 wire   [63:0] sub_ln95_fu_208_p2;
 wire   [63:0] or_ln95_fu_214_p2;
-wire   [0:0] tmp_183_fu_220_p3;
+wire   [0:0] tmp_231_fu_220_p3;
 wire   [0:0] xor_ln63_fu_228_p2;
 wire   [0:0] and_ln63_fu_234_p2;
 wire   [0:0] tmp_fu_200_p3;
@@ -328,7 +328,7 @@ assign sub_ln95_fu_208_p2 = (64'd0 - tempReg_fu_170_p2);
 
 assign tempReg_fu_170_p2 = (a_q0 - c_q0);
 
-assign tmp_183_fu_220_p3 = or_ln95_fu_214_p2[32'd63];
+assign tmp_231_fu_220_p3 = or_ln95_fu_214_p2[32'd63];
 
 assign tmp_fu_200_p3 = xor_ln105_16_fu_194_p2[32'd63];
 
@@ -338,7 +338,7 @@ assign xor_ln105_16_fu_194_p2 = (or_ln105_fu_188_p2 ^ a_q0);
 
 assign xor_ln105_fu_176_p2 = (c_q0 ^ a_q0);
 
-assign xor_ln63_fu_228_p2 = (tmp_183_fu_220_p3 ^ 1'd1);
+assign xor_ln63_fu_228_p2 = (tmp_231_fu_220_p3 ^ 1'd1);
 
 assign zext_ln63_15_fu_139_p1 = ap_sig_allocacmp_i_63;
 

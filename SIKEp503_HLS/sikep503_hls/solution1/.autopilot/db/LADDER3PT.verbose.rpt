@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT'
 ================================================================
-* Date:           Wed Oct  8 20:37:58 2025
+* Date:           Mon Oct 20 14:39:01 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -25,63 +25,63 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
-    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  1166357|  2012357|  11.664 ms|  20.124 ms|  1166357|  2012357|       no|
-    +---------+---------+-----------+-----------+---------+---------+---------+
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |   978857|  1599357|  9.789 ms|  15.994 ms|  978857|  1599357|       no|
+    +---------+---------+----------+-----------+--------+---------+---------+
 
     + Detail: 
         * Instance: 
-        +--------------------------------------------------+---------------------------------------+---------+---------+----------+-----------+-----+------+------------------------------------------------+
-        |                                                  |                                       |  Latency (cycles) |  Latency (absolute)  |  Interval  |                    Pipeline                    |
-        |                     Instance                     |                 Module                |   min   |   max   |    min   |    max    | min |  max |                      Type                      |
-        +--------------------------------------------------+---------------------------------------+---------+---------+----------+-----------+-----+------+------------------------------------------------+
-        |grp_LADDER3PT_Pipeline_1_fu_891                   |LADDER3PT_Pipeline_1                   |       18|       18|  0.180 us|   0.180 us|   17|    17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1198_fu_903  |LADDER3PT_Pipeline_VITIS_LOOP_13_1198  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1_fu_911     |LADDER3PT_Pipeline_VITIS_LOOP_13_1     |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_2_fu_919                             |fpadd503_2                             |       59|       59|  0.590 us|   0.590 us|   59|    59|                                              no|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1199_fu_927  |LADDER3PT_Pipeline_VITIS_LOOP_13_1199  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_3_fu_935                             |fpadd503_3                             |       59|       59|  0.590 us|   0.590 us|   59|    59|                                              no|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1192_fu_948  |LADDER3PT_Pipeline_VITIS_LOOP_13_1192  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1193_fu_955  |LADDER3PT_Pipeline_VITIS_LOOP_13_1193  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1194_fu_960  |LADDER3PT_Pipeline_VITIS_LOOP_13_1194  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1195_fu_967  |LADDER3PT_Pipeline_VITIS_LOOP_13_1195  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1196_fu_974  |LADDER3PT_Pipeline_VITIS_LOOP_13_1196  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1197_fu_981  |LADDER3PT_Pipeline_VITIS_LOOP_13_1197  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fp2div2_503_fu_988                            |fp2div2_503                            |       73|       73|  0.730 us|   0.730 us|   73|    73|                                              no|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1200_fu_998  |LADDER3PT_Pipeline_VITIS_LOOP_13_1200  |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_21_1_fu_1006    |LADDER3PT_Pipeline_VITIS_LOOP_21_1     |       10|       10|  0.100 us|   0.100 us|    9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_LADDER3PT_Pipeline_VITIS_LOOP_269_1_fu_1012   |LADDER3PT_Pipeline_VITIS_LOOP_269_1    |       34|       34|  0.340 us|   0.340 us|   33|    33|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_fpadd503_1_fu_1025                            |fpadd503_1                             |       51|       51|  0.510 us|   0.510 us|   51|    51|                                              no|
-        |grp_fpadd503_1_fu_1034                            |fpadd503_1                             |       51|       51|  0.510 us|   0.510 us|   51|    51|                                              no|
-        |grp_fpsub503_2_fu_1043                            |fpsub503_2                             |       31|       31|  0.310 us|   0.310 us|   31|    31|                                              no|
-        |grp_fpsub503_2_fu_1052                            |fpsub503_2                             |       31|       31|  0.310 us|   0.310 us|   31|    31|                                              no|
-        |grp_fp2sqr503_mont_5_fu_1061                      |fp2sqr503_mont_5                       |      575|     1027|  5.750 us|  10.270 us|  575|  1027|                                              no|
-        |grp_fpcorrection503_fu_1073                       |fpcorrection503                        |       39|       39|  0.390 us|   0.390 us|   39|    39|                                              no|
-        |grp_fpcorrection503_fu_1080                       |fpcorrection503                        |       39|       39|  0.390 us|   0.390 us|   39|    39|                                              no|
-        |grp_fpadd503_245_1_fu_1087                        |fpadd503_245_1                         |       59|       59|  0.590 us|   0.590 us|   59|    59|                                              no|
-        |grp_fpadd503_245_1_fu_1095                        |fpadd503_245_1                         |       59|       59|  0.590 us|   0.590 us|   59|    59|                                              no|
-        |grp_fp2mul503_mont_126_3_fu_1103                  |fp2mul503_mont_126_3                   |      473|      811|  4.730 us|   8.110 us|  473|   811|                                              no|
-        |grp_fp2mul503_mont_125_fu_1115                    |fp2mul503_mont_125                     |      473|      811|  4.730 us|   8.110 us|  473|   811|                                              no|
-        |grp_fpsub503_3_fu_1127                            |fpsub503_3                             |       31|       31|  0.310 us|   0.310 us|   31|    31|                                              no|
-        |grp_fpsub503_3_fu_1136                            |fpsub503_3                             |       31|       31|  0.310 us|   0.310 us|   31|    31|                                              no|
-        |grp_fp2mul503_mont_fu_1145                        |fp2mul503_mont                         |      473|      811|  4.730 us|   8.110 us|  473|   811|                                              no|
-        |grp_fp2mul503_mont_7_fu_1157                      |fp2mul503_mont_7                       |      473|      811|  4.730 us|   8.110 us|  473|   811|                                              no|
-        |grp_fp2sqr503_mont_4_fu_1173                      |fp2sqr503_mont_4                       |      575|     1027|  5.750 us|  10.270 us|  575|  1027|                                              no|
-        |grp_fpadd503_245_fu_1183                          |fpadd503_245                           |       59|       59|  0.590 us|   0.590 us|   59|    59|                                              no|
-        |grp_fp2mul503_mont_46_fu_1191                     |fp2mul503_mont_46                      |      609|     1059|  6.090 us|  10.590 us|  609|  1059|                                              no|
-        |grp_fpadd503_fu_1204                              |fpadd503                               |       51|       51|  0.510 us|   0.510 us|   51|    51|                                              no|
-        |grp_fp2mul503_mont_124_fu_1213                    |fp2mul503_mont_124                     |      473|      811|  4.730 us|   8.110 us|  473|   811|                                              no|
-        +--------------------------------------------------+---------------------------------------+---------+---------+----------+-----------+-----+------+------------------------------------------------+
+        +--------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                  |                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                     Instance                     |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +--------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_LADDER3PT_Pipeline_1_fu_891                   |LADDER3PT_Pipeline_1                   |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1222_fu_903  |LADDER3PT_Pipeline_VITIS_LOOP_13_1222  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1_fu_911     |LADDER3PT_Pipeline_VITIS_LOOP_13_1     |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_2_fu_919                             |fpadd503_2                             |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1223_fu_927  |LADDER3PT_Pipeline_VITIS_LOOP_13_1223  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_3_fu_935                             |fpadd503_3                             |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1216_fu_948  |LADDER3PT_Pipeline_VITIS_LOOP_13_1216  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1217_fu_955  |LADDER3PT_Pipeline_VITIS_LOOP_13_1217  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1218_fu_960  |LADDER3PT_Pipeline_VITIS_LOOP_13_1218  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1219_fu_967  |LADDER3PT_Pipeline_VITIS_LOOP_13_1219  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1220_fu_974  |LADDER3PT_Pipeline_VITIS_LOOP_13_1220  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1221_fu_981  |LADDER3PT_Pipeline_VITIS_LOOP_13_1221  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fp2div2_503_fu_988                            |fp2div2_503                            |       73|       73|  0.730 us|  0.730 us|   73|   73|                                              no|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1224_fu_998  |LADDER3PT_Pipeline_VITIS_LOOP_13_1224  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_21_1_fu_1006    |LADDER3PT_Pipeline_VITIS_LOOP_21_1     |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_LADDER3PT_Pipeline_VITIS_LOOP_269_1_fu_1012   |LADDER3PT_Pipeline_VITIS_LOOP_269_1    |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpadd503_1_fu_1025                            |fpadd503_1                             |       51|       51|  0.510 us|  0.510 us|   51|   51|                                              no|
+        |grp_fpadd503_1_fu_1034                            |fpadd503_1                             |       51|       51|  0.510 us|  0.510 us|   51|   51|                                              no|
+        |grp_fpsub503_2_fu_1043                            |fpsub503_2                             |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
+        |grp_fpsub503_2_fu_1052                            |fpsub503_2                             |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
+        |grp_fp2sqr503_mont_5_fu_1061                      |fp2sqr503_mont_5                       |      481|      803|  4.810 us|  8.030 us|  481|  803|                                              no|
+        |grp_fpcorrection503_fu_1073                       |fpcorrection503                        |       39|       39|  0.390 us|  0.390 us|   39|   39|                                              no|
+        |grp_fpcorrection503_fu_1080                       |fpcorrection503                        |       39|       39|  0.390 us|  0.390 us|   39|   39|                                              no|
+        |grp_fpadd503_245_1_fu_1087                        |fpadd503_245_1                         |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
+        |grp_fpadd503_245_1_fu_1095                        |fpadd503_245_1                         |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
+        |grp_fp2mul503_mont_126_3_fu_1103                  |fp2mul503_mont_126_3                   |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
+        |grp_fp2mul503_mont_125_fu_1115                    |fp2mul503_mont_125                     |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
+        |grp_fpsub503_3_fu_1127                            |fpsub503_3                             |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
+        |grp_fpsub503_3_fu_1136                            |fpsub503_3                             |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
+        |grp_fp2mul503_mont_fu_1145                        |fp2mul503_mont                         |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
+        |grp_fp2mul503_mont_7_fu_1157                      |fp2mul503_mont_7                       |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
+        |grp_fp2sqr503_mont_4_fu_1173                      |fp2sqr503_mont_4                       |      481|      803|  4.810 us|  8.030 us|  481|  803|                                              no|
+        |grp_fpadd503_245_fu_1183                          |fpadd503_245                           |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
+        |grp_fp2mul503_mont_46_fu_1191                     |fp2mul503_mont_46                      |      492|      814|  4.920 us|  8.140 us|  492|  814|                                              no|
+        |grp_fpadd503_fu_1204                              |fpadd503                               |       51|       51|  0.510 us|  0.510 us|   51|   51|                                              no|
+        |grp_fp2mul503_mont_124_fu_1213                    |fp2mul503_mont_124                     |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
+        +--------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
         +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
         |                    |  Latency (cycles) |  Iteration  |  Initiation Interval  | Trip |          |
         |      Loop Name     |   min   |   max   |   Latency   |  achieved |   target  | Count| Pipelined|
         +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_319_1  |  1166000|  2012000|  4664 ~ 8048|          -|          -|   250|        no|
+        |- VITIS_LOOP_319_1  |   978500|  1599000|  3914 ~ 6396|          -|          -|   250|        no|
         +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
 
 
@@ -96,66 +96,66 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        0|      262|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        0|    464|    32195|   121376|     0|
+|Instance             |        0|   4419|    85400|   258980|     0|
 |Memory               |        0|      -|     1154|     1173|     0|
 |Multiplexer          |        -|      -|        0|     3380|     -|
 |Register             |        -|      -|      147|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|    464|    33496|   126191|     0|
+|Total                |        0|   4419|    86701|   263795|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization SLR (%)  |        0|     15|        3|       29|     0|
+|Utilization SLR (%)  |        0|    143|       10|       61|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available            |     5376|  12288|  3456000|  1728000|  1280|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization (%)      |        0|      3|       ~0|        7|     0|
+|Utilization (%)      |        0|     35|        2|       15|     0|
 +---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
     * Instance: 
-    +--------------------------------------------------+---------------------------------------+---------+----+------+-------+-----+
-    |                     Instance                     |                 Module                | BRAM_18K| DSP|  FF  |  LUT  | URAM|
-    +--------------------------------------------------+---------------------------------------+---------+----+------+-------+-----+
-    |grp_LADDER3PT_Pipeline_1_fu_891                   |LADDER3PT_Pipeline_1                   |        0|   0|     7|     61|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1_fu_911     |LADDER3PT_Pipeline_VITIS_LOOP_13_1     |        0|   0|    74|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1192_fu_948  |LADDER3PT_Pipeline_VITIS_LOOP_13_1192  |        0|   0|    75|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1193_fu_955  |LADDER3PT_Pipeline_VITIS_LOOP_13_1193  |        0|   0|     6|     51|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1194_fu_960  |LADDER3PT_Pipeline_VITIS_LOOP_13_1194  |        0|   0|    75|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1195_fu_967  |LADDER3PT_Pipeline_VITIS_LOOP_13_1195  |        0|   0|    75|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1196_fu_974  |LADDER3PT_Pipeline_VITIS_LOOP_13_1196  |        0|   0|    75|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1197_fu_981  |LADDER3PT_Pipeline_VITIS_LOOP_13_1197  |        0|   0|    75|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1198_fu_903  |LADDER3PT_Pipeline_VITIS_LOOP_13_1198  |        0|   0|    75|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1199_fu_927  |LADDER3PT_Pipeline_VITIS_LOOP_13_1199  |        0|   0|    74|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1200_fu_998  |LADDER3PT_Pipeline_VITIS_LOOP_13_1200  |        0|   0|    75|    127|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_21_1_fu_1006    |LADDER3PT_Pipeline_VITIS_LOOP_21_1     |        0|   0|     6|     51|    0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_269_1_fu_1012   |LADDER3PT_Pipeline_VITIS_LOOP_269_1    |        0|   0|   614|   1239|    0|
-    |grp_fp2div2_503_fu_988                            |fp2div2_503                            |        0|   0|   462|   2307|    0|
-    |grp_fp2mul503_mont_fu_1145                        |fp2mul503_mont                         |        0|  64|  3442|  11377|    0|
-    |grp_fp2mul503_mont_124_fu_1213                    |fp2mul503_mont_124                     |        0|  64|  3442|  11377|    0|
-    |grp_fp2mul503_mont_125_fu_1115                    |fp2mul503_mont_125                     |        0|  64|  3442|  11377|    0|
-    |grp_fp2mul503_mont_126_3_fu_1103                  |fp2mul503_mont_126_3                   |        0|  48|  3017|  10660|    0|
-    |grp_fp2mul503_mont_46_fu_1191                     |fp2mul503_mont_46                      |        0|  64|  3513|  11398|    0|
-    |grp_fp2mul503_mont_7_fu_1157                      |fp2mul503_mont_7                       |        0|  64|  3444|  11679|    0|
-    |grp_fp2sqr503_mont_4_fu_1173                      |fp2sqr503_mont_4                       |        0|  64|  4632|  13802|    0|
-    |grp_fp2sqr503_mont_5_fu_1061                      |fp2sqr503_mont_5                       |        0|  32|  2508|   8465|    0|
-    |grp_fpadd503_fu_1204                              |fpadd503                               |        0|   0|   236|   2157|    0|
-    |grp_fpadd503_1_fu_1025                            |fpadd503_1                             |        0|   0|   236|   2157|    0|
-    |grp_fpadd503_1_fu_1034                            |fpadd503_1                             |        0|   0|   236|   2157|    0|
-    |grp_fpadd503_2_fu_919                             |fpadd503_2                             |        0|   0|   252|   2483|    0|
-    |grp_fpadd503_245_fu_1183                          |fpadd503_245                           |        0|   0|   234|   2172|    0|
-    |grp_fpadd503_245_1_fu_1087                        |fpadd503_245_1                         |        0|   0|   234|   2172|    0|
-    |grp_fpadd503_245_1_fu_1095                        |fpadd503_245_1                         |        0|   0|   234|   2172|    0|
-    |grp_fpadd503_3_fu_935                             |fpadd503_3                             |        0|   0|   253|   2113|    0|
-    |grp_fpcorrection503_fu_1073                       |fpcorrection503                        |        0|   0|   220|   1521|    0|
-    |grp_fpcorrection503_fu_1080                       |fpcorrection503                        |        0|   0|   220|   1521|    0|
-    |grp_fpsub503_2_fu_1043                            |fpsub503_2                             |        0|   0|   158|   1441|    0|
-    |grp_fpsub503_2_fu_1052                            |fpsub503_2                             |        0|   0|   158|   1441|    0|
-    |grp_fpsub503_3_fu_1127                            |fpsub503_3                             |        0|   0|   158|   1441|    0|
-    |grp_fpsub503_3_fu_1136                            |fpsub503_3                             |        0|   0|   158|   1441|    0|
-    +--------------------------------------------------+---------------------------------------+---------+----+------+-------+-----+
-    |Total                                             |                                       |        0| 464| 32195| 121376|    0|
-    +--------------------------------------------------+---------------------------------------+---------+----+------+-------+-----+
+    +--------------------------------------------------+---------------------------------------+---------+-----+-------+-------+-----+
+    |                     Instance                     |                 Module                | BRAM_18K| DSP |   FF  |  LUT  | URAM|
+    +--------------------------------------------------+---------------------------------------+---------+-----+-------+-------+-----+
+    |grp_LADDER3PT_Pipeline_1_fu_891                   |LADDER3PT_Pipeline_1                   |        0|    0|      7|     61|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1_fu_911     |LADDER3PT_Pipeline_VITIS_LOOP_13_1     |        0|    0|     74|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1216_fu_948  |LADDER3PT_Pipeline_VITIS_LOOP_13_1216  |        0|    0|     75|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1217_fu_955  |LADDER3PT_Pipeline_VITIS_LOOP_13_1217  |        0|    0|      6|     51|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1218_fu_960  |LADDER3PT_Pipeline_VITIS_LOOP_13_1218  |        0|    0|     75|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1219_fu_967  |LADDER3PT_Pipeline_VITIS_LOOP_13_1219  |        0|    0|     75|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1220_fu_974  |LADDER3PT_Pipeline_VITIS_LOOP_13_1220  |        0|    0|     75|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1221_fu_981  |LADDER3PT_Pipeline_VITIS_LOOP_13_1221  |        0|    0|     75|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1222_fu_903  |LADDER3PT_Pipeline_VITIS_LOOP_13_1222  |        0|    0|     75|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1223_fu_927  |LADDER3PT_Pipeline_VITIS_LOOP_13_1223  |        0|    0|     74|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1224_fu_998  |LADDER3PT_Pipeline_VITIS_LOOP_13_1224  |        0|    0|     75|    127|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_21_1_fu_1006    |LADDER3PT_Pipeline_VITIS_LOOP_21_1     |        0|    0|      6|     51|    0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_269_1_fu_1012   |LADDER3PT_Pipeline_VITIS_LOOP_269_1    |        0|    0|    614|   1239|    0|
+    |grp_fp2div2_503_fu_988                            |fp2div2_503                            |        0|    0|    462|   2307|    0|
+    |grp_fp2mul503_mont_fu_1145                        |fp2mul503_mont                         |        0|  691|  11419|  32050|    0|
+    |grp_fp2mul503_mont_124_fu_1213                    |fp2mul503_mont_124                     |        0|  691|  11419|  32050|    0|
+    |grp_fp2mul503_mont_125_fu_1115                    |fp2mul503_mont_125                     |        0|  691|  11419|  32050|    0|
+    |grp_fp2mul503_mont_126_3_fu_1103                  |fp2mul503_mont_126_3                   |        0|  466|   8335|  24442|    0|
+    |grp_fp2mul503_mont_46_fu_1191                     |fp2mul503_mont_46                      |        0|  466|  11133|  31977|    0|
+    |grp_fp2mul503_mont_7_fu_1157                      |fp2mul503_mont_7                       |        0|  691|  11803|  32230|    0|
+    |grp_fp2sqr503_mont_4_fu_1173                      |fp2sqr503_mont_4                       |        0|  482|   9950|  27584|    0|
+    |grp_fp2sqr503_mont_5_fu_1061                      |fp2sqr503_mont_5                       |        0|  241|   5167|  15356|    0|
+    |grp_fpadd503_fu_1204                              |fpadd503                               |        0|    0|    236|   2157|    0|
+    |grp_fpadd503_1_fu_1025                            |fpadd503_1                             |        0|    0|    236|   2157|    0|
+    |grp_fpadd503_1_fu_1034                            |fpadd503_1                             |        0|    0|    236|   2157|    0|
+    |grp_fpadd503_2_fu_919                             |fpadd503_2                             |        0|    0|    252|   2483|    0|
+    |grp_fpadd503_245_fu_1183                          |fpadd503_245                           |        0|    0|    234|   2172|    0|
+    |grp_fpadd503_245_1_fu_1087                        |fpadd503_245_1                         |        0|    0|    234|   2172|    0|
+    |grp_fpadd503_245_1_fu_1095                        |fpadd503_245_1                         |        0|    0|    234|   2172|    0|
+    |grp_fpadd503_3_fu_935                             |fpadd503_3                             |        0|    0|    253|   2113|    0|
+    |grp_fpcorrection503_fu_1073                       |fpcorrection503                        |        0|    0|    220|   1521|    0|
+    |grp_fpcorrection503_fu_1080                       |fpcorrection503                        |        0|    0|    220|   1521|    0|
+    |grp_fpsub503_2_fu_1043                            |fpsub503_2                             |        0|    0|    158|   1441|    0|
+    |grp_fpsub503_2_fu_1052                            |fpsub503_2                             |        0|    0|    158|   1441|    0|
+    |grp_fpsub503_3_fu_1127                            |fpsub503_3                             |        0|    0|    158|   1441|    0|
+    |grp_fpsub503_3_fu_1136                            |fpsub503_3                             |        0|    0|    158|   1441|    0|
+    +--------------------------------------------------+---------------------------------------+---------+-----+-------+-------+-----+
+    |Total                                             |                                       |        0| 4419|  85400| 258980|    0|
+    +--------------------------------------------------+---------------------------------------+---------+-----+-------+-------+-----+
 
     * DSP: 
     N/A
@@ -366,15 +366,15 @@
     |ephemeralsk_i_load_9_reg_1451                                  |   8|   0|    8|          0|
     |ephemeralsk_i_load_reg_1431                                    |   8|   0|    8|          0|
     |grp_LADDER3PT_Pipeline_1_fu_891_ap_start_reg                   |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1192_fu_948_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1193_fu_955_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1194_fu_960_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1195_fu_967_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1196_fu_974_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1197_fu_981_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1198_fu_903_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1199_fu_927_ap_start_reg  |   1|   0|    1|          0|
-    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1200_fu_998_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1216_fu_948_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1217_fu_955_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1218_fu_960_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1219_fu_967_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1220_fu_974_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1221_fu_981_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1222_fu_903_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1223_fu_927_ap_start_reg  |   1|   0|    1|          0|
+    |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1224_fu_998_ap_start_reg  |   1|   0|    1|          0|
     |grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1_fu_911_ap_start_reg     |   1|   0|    1|          0|
     |grp_LADDER3PT_Pipeline_VITIS_LOOP_21_1_fu_1006_ap_start_reg    |   1|   0|    1|          0|
     |grp_LADDER3PT_Pipeline_VITIS_LOOP_269_1_fu_1012_ap_start_reg   |   1|   0|    1|          0|
@@ -558,7 +558,7 @@ ST_1 : Operation 77 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64
 ST_1 : Operation 78 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr"   --->   Operation 78 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_1 : Operation 79 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_4_addr"   --->   Operation 79 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_1 : Operation 80 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_1, i64 %A24_6, i64 %A24_5, i64 %A24_4, i64 %A24"   --->   Operation 80 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 81 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1198, i64 %R_X, i64 %XPA_0"   --->   Operation 81 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 81 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1222, i64 %R_X, i64 %XPA_0"   --->   Operation 81 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 82 [1/1] (0.38ns)   --->   "%store_ln291 = store i8 0, i8 %i_065" [src/ec_isogeny.cpp:291]   --->   Operation 82 'store' 'store_ln291' <Predicate = true> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 1.48>
@@ -579,7 +579,7 @@ ST_2 : Operation 96 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64
 ST_2 : Operation 97 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_8"   --->   Operation 97 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 98 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_4_addr_1"   --->   Operation 98 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 99 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_1, i64 %A24_6, i64 %A24_5, i64 %A24_4, i64 %A24"   --->   Operation 99 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 100 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1198, i64 %R_X, i64 %XPA_0"   --->   Operation 100 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 100 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1222, i64 %R_X, i64 %XPA_0"   --->   Operation 100 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.71>
 ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%R0_X_addr_9 = getelementptr i64 %R0_X, i64 0, i64 2"   --->   Operation 101 'getelementptr' 'R0_X_addr_9' <Predicate = true> <Delay = 0.00>
@@ -600,7 +600,7 @@ ST_3 : Operation 115 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i6
 ST_3 : Operation 116 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_4_addr_2"   --->   Operation 116 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_3 : Operation 117 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1, i64 %A24_4, i64 %A24, i64 %Montgomery_one_1"   --->   Operation 117 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_3 : Operation 118 [2/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.2, i64 %A24_5, i64 %A24_6, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:304]   --->   Operation 118 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 119 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1199, i64 %R_X, i64 %XPA_1"   --->   Operation 119 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 119 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1223, i64 %R_X, i64 %XPA_1"   --->   Operation 119 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
 ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%R0_X_addr_10 = getelementptr i64 %R0_X, i64 0, i64 3"   --->   Operation 120 'getelementptr' 'R0_X_addr_10' <Predicate = true> <Delay = 0.00>
@@ -621,7 +621,7 @@ ST_4 : Operation 134 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i6
 ST_4 : Operation 135 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_4_addr_3"   --->   Operation 135 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_4 : Operation 136 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1, i64 %A24_4, i64 %A24, i64 %Montgomery_one_1"   --->   Operation 136 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 ST_4 : Operation 137 [1/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.2, i64 %A24_5, i64 %A24_6, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:304]   --->   Operation 137 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 138 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1199, i64 %R_X, i64 %XPA_1"   --->   Operation 138 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 138 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1223, i64 %R_X, i64 %XPA_1"   --->   Operation 138 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.71>
 ST_5 : Operation 139 [1/1] (0.00ns)   --->   "%R0_X_addr_11 = getelementptr i64 %R0_X, i64 0, i64 4"   --->   Operation 139 'getelementptr' 'R0_X_addr_11' <Predicate = true> <Delay = 0.00>
@@ -682,28 +682,28 @@ ST_8 : Operation 186 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i6
 State 9 <SV = 8> <Delay = 1.34>
 ST_9 : Operation 187 [2/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.2, i64 %A24, i64 %A24_4, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:304]   --->   Operation 187 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_9 : Operation 188 [2/2] (1.34ns)   --->   "%call_ln110 = call void @fpadd503.3, i1 %A, i1 1, i64 %A24_5, i64 %A24_6, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:305]   --->   Operation 188 'call' 'call_ln110' <Predicate = true> <Delay = 1.34> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 189 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1192, i64 %R0_X, i64 %XQA_0"   --->   Operation 189 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 190 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1193, i64 %R0_X_4"   --->   Operation 190 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 191 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1194, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 191 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 192 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1195, i64 %R2_X, i64 %XRA_0"   --->   Operation 192 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 193 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1196, i64 %R2_X_4, i64 %XRA_1"   --->   Operation 193 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 189 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1216, i64 %R0_X, i64 %XQA_0"   --->   Operation 189 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 190 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1217, i64 %R0_X_4"   --->   Operation 190 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 191 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1218, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 191 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 192 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1219, i64 %R2_X, i64 %XRA_0"   --->   Operation 192 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 193 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1220, i64 %R2_X_4, i64 %XRA_1"   --->   Operation 193 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 1.48>
 ST_10 : Operation 194 [1/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.2, i64 %A24, i64 %A24_4, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:304]   --->   Operation 194 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_10 : Operation 195 [1/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.3, i1 %A, i1 1, i64 %A24_5, i64 %A24_6, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:305]   --->   Operation 195 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 196 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1192, i64 %R0_X, i64 %XQA_0"   --->   Operation 196 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 197 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1193, i64 %R0_X_4"   --->   Operation 197 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 198 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1194, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 198 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 199 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1195, i64 %R2_X, i64 %XRA_0"   --->   Operation 199 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 200 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1196, i64 %R2_X_4, i64 %XRA_1"   --->   Operation 200 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 196 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1216, i64 %R0_X, i64 %XQA_0"   --->   Operation 196 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 197 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1217, i64 %R0_X_4"   --->   Operation 197 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 198 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1218, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 198 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 199 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1219, i64 %R2_X, i64 %XRA_0"   --->   Operation 199 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 200 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1220, i64 %R2_X_4, i64 %XRA_1"   --->   Operation 200 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 1.34>
 ST_11 : Operation 201 [2/2] (1.34ns)   --->   "%call_ln109 = call void @fpadd503.3, i1 %A, i1 0, i64 %A24, i64 %A24_4, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:305]   --->   Operation 201 'call' 'call_ln109' <Predicate = true> <Delay = 1.34> <CoreType = "Generic">   --->   Generic Core
-ST_11 : Operation 202 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1197, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 202 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 202 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1221, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 202 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 1.48>
 ST_12 : Operation 203 [1/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.3, i1 %A, i1 0, i64 %A24, i64 %A24_4, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:305]   --->   Operation 203 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_12 : Operation 204 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1197, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 204 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 204 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1221, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 204 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 0.71>
 ST_13 : Operation 205 [1/1] (0.00ns)   --->   "%R0_Z_4_addr_4 = getelementptr i64 %R0_Z_4, i64 0, i64 4"   --->   Operation 205 'getelementptr' 'R0_Z_4_addr_4' <Predicate = true> <Delay = 0.00>
@@ -711,7 +711,7 @@ ST_13 : Operation 206 [1/1] (0.00ns)   --->   "%R2_Z_4_addr_4 = getelementptr i6
 ST_13 : Operation 207 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_4_addr_4"   --->   Operation 207 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_13 : Operation 208 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_4_addr_4"   --->   Operation 208 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_13 : Operation 209 [2/2] (0.00ns)   --->   "%call_ln306 = call void @fp2div2_503, i64 %A24, i64 %A24_4, i64 %A24_5, i64 %A24_6, i64 %p503_1" [src/ec_isogeny.cpp:306]   --->   Operation 209 'call' 'call_ln306' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_13 : Operation 210 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1200, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 210 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 210 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1224, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 210 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 14 <SV = 13> <Delay = 1.48>
 ST_14 : Operation 211 [1/1] (0.00ns)   --->   "%R0_Z_4_addr_5 = getelementptr i64 %R0_Z_4, i64 0, i64 5"   --->   Operation 211 'getelementptr' 'R0_Z_4_addr_5' <Predicate = true> <Delay = 0.00>
@@ -719,7 +719,7 @@ ST_14 : Operation 212 [1/1] (0.00ns)   --->   "%R2_Z_4_addr_5 = getelementptr i6
 ST_14 : Operation 213 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_4_addr_5"   --->   Operation 213 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_14 : Operation 214 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_4_addr_5"   --->   Operation 214 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_14 : Operation 215 [1/2] (0.00ns)   --->   "%call_ln306 = call void @fp2div2_503, i64 %A24, i64 %A24_4, i64 %A24_5, i64 %A24_6, i64 %p503_1" [src/ec_isogeny.cpp:306]   --->   Operation 215 'call' 'call_ln306' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_14 : Operation 216 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1200, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 216 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 216 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_Pipeline_VITIS_LOOP_13_1224, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 216 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 14> <Delay = 0.71>
 ST_15 : Operation 217 [1/1] (0.00ns)   --->   "%R0_Z_4_addr_6 = getelementptr i64 %R0_Z_4, i64 0, i64 6"   --->   Operation 217 'getelementptr' 'R0_Z_4_addr_6' <Predicate = true> <Delay = 0.00>
@@ -913,7 +913,7 @@ ST_43 : Operation 348 [2/2] (0.00ns)   --->   "%call_ln329 = call void @fp2mul50
 
 State 44 <SV = 43> <Delay = 0.00>
 ST_44 : Operation 349 [1/1] (0.00ns)   --->   "%speclooptripcount_ln291 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 250, i64 250, i64 250" [src/ec_isogeny.cpp:291]   --->   Operation 349 'speclooptripcount' 'speclooptripcount_ln291' <Predicate = true> <Delay = 0.00>
-ST_44 : Operation 350 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [src/ec_isogeny.cpp:319]   --->   Operation 350 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 350 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [src/ec_isogeny.cpp:319]   --->   Operation 350 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 351 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_4, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 351 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 352 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_4, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 352 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 353 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_4, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 353 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
@@ -1590,7 +1590,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="35" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1198"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1222"/></StgValue>
 </bind>
 </comp>
 
@@ -1635,7 +1635,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="45" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1199"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1223"/></StgValue>
 </bind>
 </comp>
 
@@ -1707,7 +1707,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="61" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1192"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1216"/></StgValue>
 </bind>
 </comp>
 
@@ -1716,7 +1716,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="63" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1193"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1217"/></StgValue>
 </bind>
 </comp>
 
@@ -1725,7 +1725,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="65" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1194"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1218"/></StgValue>
 </bind>
 </comp>
 
@@ -1734,7 +1734,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="67" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1195"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1219"/></StgValue>
 </bind>
 </comp>
 
@@ -1743,7 +1743,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="69" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1196"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1220"/></StgValue>
 </bind>
 </comp>
 
@@ -1761,7 +1761,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="73" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1197"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1221"/></StgValue>
 </bind>
 </comp>
 
@@ -1779,7 +1779,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="77" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1200"/></StgValue>
+<StgValue><ssdm name="LADDER3PT_Pipeline_VITIS_LOOP_13_1224"/></StgValue>
 </bind>
 </comp>
 
@@ -2157,7 +2157,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="161" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_9"/></StgValue>
+<StgValue><ssdm name="empty_8"/></StgValue>
 </bind>
 </comp>
 
@@ -3466,7 +3466,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="903" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1198_fu_903">
+<comp id="903" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1222_fu_903">
 <pin_list>
 <pin id="904" dir="0" index="0" bw="0" slack="0"/>
 <pin id="905" dir="0" index="1" bw="64" slack="0"/>
@@ -3507,7 +3507,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="927" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1199_fu_927">
+<comp id="927" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1223_fu_927">
 <pin_list>
 <pin id="928" dir="0" index="0" bw="0" slack="0"/>
 <pin id="929" dir="0" index="1" bw="64" slack="0"/>
@@ -3536,7 +3536,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="948" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1192_fu_948">
+<comp id="948" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1216_fu_948">
 <pin_list>
 <pin id="949" dir="0" index="0" bw="0" slack="0"/>
 <pin id="950" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -3549,7 +3549,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="955" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1193_fu_955">
+<comp id="955" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1217_fu_955">
 <pin_list>
 <pin id="956" dir="0" index="0" bw="0" slack="0"/>
 <pin id="957" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -3561,7 +3561,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="960" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1194_fu_960">
+<comp id="960" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1218_fu_960">
 <pin_list>
 <pin id="961" dir="0" index="0" bw="0" slack="0"/>
 <pin id="962" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -3574,7 +3574,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="967" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1195_fu_967">
+<comp id="967" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1219_fu_967">
 <pin_list>
 <pin id="968" dir="0" index="0" bw="0" slack="0"/>
 <pin id="969" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -3587,7 +3587,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="974" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1196_fu_974">
+<comp id="974" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1220_fu_974">
 <pin_list>
 <pin id="975" dir="0" index="0" bw="0" slack="0"/>
 <pin id="976" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -3600,7 +3600,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="981" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1197_fu_981">
+<comp id="981" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1221_fu_981">
 <pin_list>
 <pin id="982" dir="0" index="0" bw="0" slack="0"/>
 <pin id="983" dir="0" index="1" bw="64" slack="2147483647"/>
@@ -3629,7 +3629,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="998" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1200_fu_998">
+<comp id="998" class="1004" name="grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1224_fu_998">
 <pin_list>
 <pin id="999" dir="0" index="0" bw="0" slack="0"/>
 <pin id="1000" dir="0" index="1" bw="64" slack="0"/>
@@ -5605,41 +5605,41 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 | Operation|                  Functional Unit                 |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|--------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |          |          grp_LADDER3PT_Pipeline_1_fu_891         |    0    |    0    |    0    |    5    |    33   |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1198_fu_903 |    0    |    0    |  0.387  |    71   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1222_fu_903 |    0    |    0    |  0.387  |    71   |    33   |    0    |
 |          |   grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1_fu_911  |    0    |    0    |  0.387  |    10   |    33   |    0    |
 |          |               grp_fpadd503_2_fu_919              |    0    |    0    |  3.096  |   116   |   2055  |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1199_fu_927 |    0    |    0    |  0.387  |    10   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1223_fu_927 |    0    |    0    |  0.387  |    10   |    33   |    0    |
 |          |               grp_fpadd503_3_fu_935              |    0    |    0    |   3.87  |   124   |   1703  |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1192_fu_948 |    0    |    0    |  0.387  |    71   |    33   |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1193_fu_955 |    0    |    0    |    0    |    4    |    24   |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1194_fu_960 |    0    |    0    |  0.387  |    71   |    33   |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1195_fu_967 |    0    |    0    |  0.387  |    71   |    33   |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1196_fu_974 |    0    |    0    |  0.387  |    71   |    33   |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1197_fu_981 |    0    |    0    |  0.387  |    71   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1216_fu_948 |    0    |    0    |  0.387  |    71   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1217_fu_955 |    0    |    0    |    0    |    4    |    24   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1218_fu_960 |    0    |    0    |  0.387  |    71   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1219_fu_967 |    0    |    0    |  0.387  |    71   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1220_fu_974 |    0    |    0    |  0.387  |    71   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1221_fu_981 |    0    |    0    |  0.387  |    71   |    33   |    0    |
 |          |              grp_fp2div2_503_fu_988              |    0    |    0    | 5.68086 |   330   |   1822  |    0    |
-|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1200_fu_998 |    0    |    0    |  0.387  |    71   |    33   |    0    |
+|          | grp_LADDER3PT_Pipeline_VITIS_LOOP_13_1224_fu_998 |    0    |    0    |  0.387  |    71   |    33   |    0    |
 |          |  grp_LADDER3PT_Pipeline_VITIS_LOOP_21_1_fu_1006  |    0    |    0    |    0    |    4    |    24   |    0    |
 |          |  grp_LADDER3PT_Pipeline_VITIS_LOOP_269_1_fu_1012 |    0    |    0    | 3.22743 |   611   |   1205  |    0    |
 |          |              grp_fpadd503_1_fu_1025              |    0    |    0    |  2.322  |   166   |   1848  |    0    |
 |   call   |              grp_fpadd503_1_fu_1034              |    0    |    0    |  2.322  |   166   |   1848  |    0    |
 |          |              grp_fpsub503_2_fu_1043              |    0    |    0    |  1.548  |   154   |   1278  |    0    |
 |          |              grp_fpsub503_2_fu_1052              |    0    |    0    |  1.548  |   154   |   1278  |    0    |
-|          |           grp_fp2sqr503_mont_5_fu_1061           |    0    |    64   | 11.0331 |   3071  |   8128  |    0    |
+|          |           grp_fp2sqr503_mont_5_fu_1061           |    0    |   273   | 14.1364 |   8193  |  13031  |    0    |
 |          |            grp_fpcorrection503_fu_1073           |    0    |    0    |  1.548  |    89   |   1278  |    0    |
 |          |            grp_fpcorrection503_fu_1080           |    0    |    0    |  1.548  |    89   |   1278  |    0    |
 |          |            grp_fpadd503_245_1_fu_1087            |    0    |    0    |  2.322  |   101   |   1848  |    0    |
 |          |            grp_fpadd503_245_1_fu_1095            |    0    |    0    |  2.322  |   101   |   1848  |    0    |
-|          |         grp_fp2mul503_mont_126_3_fu_1103         |    0    |    80   | 15.2901 |   3732  |   9942  |    0    |
-|          |          grp_fp2mul503_mont_125_fu_1115          |    0    |    96   | 17.6121 |   4300  |  10555  |    0    |
+|          |         grp_fp2mul503_mont_126_3_fu_1103         |    0    |   498   | 21.4967 |  13976  |  19748  |    0    |
+|          |          grp_fp2mul503_mont_125_fu_1115          |    0    |   723   |  26.922 |  19666  |  25264  |    0    |
 |          |              grp_fpsub503_3_fu_1127              |    0    |    0    |  1.548  |   154   |   1278  |    0    |
 |          |              grp_fpsub503_3_fu_1136              |    0    |    0    |  1.548  |   154   |   1278  |    0    |
-|          |            grp_fp2mul503_mont_fu_1145            |    0    |    96   | 17.6121 |   4303  |  10555  |    0    |
-|          |           grp_fp2mul503_mont_7_fu_1157           |    0    |    96   | 19.1601 |   4249  |  10843  |    0    |
-|          |           grp_fp2sqr503_mont_4_fu_1173           |    0    |   128   | 18.5833 |   5645  |  13634  |    0    |
+|          |            grp_fp2mul503_mont_fu_1145            |    0    |   723   |  26.922 |  19669  |  25264  |    0    |
+|          |           grp_fp2mul503_mont_7_fu_1157           |    0    |   723   | 28.3386 |  19987  |  25402  |    0    |
+|          |           grp_fp2sqr503_mont_4_fu_1173           |    0    |   546   | 24.7899 |  15889  |  23440  |    0    |
 |          |             grp_fpadd503_245_fu_1183             |    0    |    0    |  2.322  |   101   |   1848  |    0    |
-|          |           grp_fp2mul503_mont_46_fu_1191          |    0    |    96   | 17.6779 |   4374  |  10568  |    0    |
+|          |           grp_fp2mul503_mont_46_fu_1191          |    0    |   1848  | 26.9877 |  21555  |  26173  |    0    |
 |          |               grp_fpadd503_fu_1204               |    0    |    0    |  2.322  |   166   |   1848  |    0    |
-|          |          grp_fp2mul503_mont_124_fu_1213          |    0    |    96   | 17.6121 |   4303  |  10555  |    0    |
+|          |          grp_fp2mul503_mont_124_fu_1213          |    0    |   723   |  26.922 |  19669  |  25264  |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   lshr   |                lshr_ln322_fu_1379                |    0    |    0    |    0    |    0    |   182   |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|---------|---------|---------|
@@ -5674,7 +5674,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 |          |               zext_ln322_15_fu_1357              |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |               zext_ln322_2_fu_1376               |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                  |    0    |   752   | 177.158 |  37283  |  110913 |    0    |
+|   Total  |                                                  |    0    |   6057  | 239.093 |  141910 |  209719 |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -5759,10 +5759,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    0   |   752  |   177  |  37283 | 110913 |    0   |
+|  Function |    0   |  6057  |   239  | 141910 | 209719 |    0   |
 |   Memory  |    0   |    -   |    -   |  1152  |  1170  |    0   |
 |Multiplexer|    -   |    -   |    7   |    0   |   457  |    -   |
 |  Register |    -   |    -   |    -   |   107  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |   752  |   184  |  38542 | 112540 |    0   |
+|   Total   |    0   |  6057  |   246  | 143169 | 211346 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

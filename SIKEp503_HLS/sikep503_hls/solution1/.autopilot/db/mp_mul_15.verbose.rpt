@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_15'
 ================================================================
-* Date:           Wed Oct  8 20:40:15 2025
+* Date:           Mon Oct 20 14:41:54 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.336 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.286 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      133|      245|  1.330 us|  2.450 us|  133|  245|       no|
+    |       86|      133|  0.860 us|  1.330 us|   86|  133|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                  |        |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |     Instance     | Module |   min   |   max   |    min   |    max   | min | max |   Type  |
         +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mul_14_fu_20  |mul_14  |      132|      244|  1.320 us|  2.440 us|  132|  244|       no|
+        |grp_mul_14_fu_20  |mul_14  |       85|      132|  0.850 us|  1.320 us|   85|  132|       no|
         +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -56,31 +56,31 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        -|        -|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        -|     16|      422|      794|     -|
+|Instance             |        -|      -|     2911|     7455|     -|
 |Memory               |        -|      -|        -|        -|     -|
-|Multiplexer          |        -|      -|        0|       14|     -|
+|Multiplexer          |        -|      -|        0|       23|     -|
 |Register             |        -|      -|        3|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|     16|      425|      808|     0|
+|Total                |        0|      0|     2914|     7478|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization SLR (%)  |        0|     ~0|       ~0|       ~0|     0|
+|Utilization SLR (%)  |        0|      0|       ~0|        1|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available            |     5376|  12288|  3456000|  1728000|  1280|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization (%)      |        0|     ~0|       ~0|       ~0|     0|
+|Utilization (%)      |        0|      0|       ~0|       ~0|     0|
 +---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
     * Instance: 
-    +------------------+--------+---------+----+-----+-----+-----+
-    |     Instance     | Module | BRAM_18K| DSP|  FF | LUT | URAM|
-    +------------------+--------+---------+----+-----+-----+-----+
-    |grp_mul_14_fu_20  |mul_14  |        0|  16|  422|  794|    0|
-    +------------------+--------+---------+----+-----+-----+-----+
-    |Total             |        |        0|  16|  422|  794|    0|
-    +------------------+--------+---------+----+-----+-----+-----+
+    +------------------+--------+---------+----+------+------+-----+
+    |     Instance     | Module | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +------------------+--------+---------+----+------+------+-----+
+    |grp_mul_14_fu_20  |mul_14  |        0|   0|  2911|  7455|    0|
+    +------------------+--------+---------+----+------+------+-----+
+    |Total             |        |        0|   0|  2911|  7455|    0|
+    +------------------+--------+---------+----+------+------+-----+
 
     * DSP: 
     N/A
@@ -95,13 +95,14 @@
     N/A
 
     * Multiplexer: 
-    +-----------+----+-----------+-----+-----------+
-    |    Name   | LUT| Input Size| Bits| Total Bits|
-    +-----------+----+-----------+-----+-----------+
-    |ap_NS_fsm  |  14|          3|    1|          3|
-    +-----------+----+-----------+-----+-----------+
-    |Total      |  14|          3|    1|          3|
-    +-----------+----+-----------+-----+-----------+
+    +--------------+----+-----------+-----+-----------+
+    |     Name     | LUT| Input Size| Bits| Total Bits|
+    +--------------+----+-----------+-----+-----------+
+    |ap_NS_fsm     |  14|          3|    1|          3|
+    |grp_fu_32_ce  |   9|          2|    1|          2|
+    +--------------+----+-----------+-----+-----------+
+    |Total         |  23|          5|    2|          5|
+    +--------------+----+-----------+-----+-----------+
 
     * Register: 
     +-------------------------------+---+----+-----+-----------+
@@ -119,29 +120,33 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+--------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
-+--------------+-----+-----+------------+--------------+--------------+
-|ap_clk        |   in|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
-|ap_rst        |   in|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
-|ap_start      |   in|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
-|ap_done       |  out|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
-|ap_idle       |  out|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
-|ap_ready      |  out|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
-|a_address0    |  out|    3|   ap_memory|             a|         array|
-|a_ce0         |  out|    1|   ap_memory|             a|         array|
-|a_q0          |   in|   64|   ap_memory|             a|         array|
-|b_0_address0  |  out|    2|   ap_memory|           b_0|         array|
-|b_0_ce0       |  out|    1|   ap_memory|           b_0|         array|
-|b_0_q0        |   in|   64|   ap_memory|           b_0|         array|
-|b_1_address0  |  out|    2|   ap_memory|           b_1|         array|
-|b_1_ce0       |  out|    1|   ap_memory|           b_1|         array|
-|b_1_q0        |   in|   64|   ap_memory|           b_1|         array|
-|c_address0    |  out|    4|   ap_memory|             c|         array|
-|c_ce0         |  out|    1|   ap_memory|             c|         array|
-|c_we0         |  out|    1|   ap_memory|             c|         array|
-|c_d0          |  out|   64|   ap_memory|             c|         array|
-+--------------+-----+-----+------------+--------------+--------------+
++--------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------+-----+-----+------------+--------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
+|grp_fu_129_p_din0   |  out|  256|  ap_ctrl_hs|     mp_mul.15|  return value|
+|grp_fu_129_p_din1   |  out|  256|  ap_ctrl_hs|     mp_mul.15|  return value|
+|grp_fu_129_p_dout0  |   in|  512|  ap_ctrl_hs|     mp_mul.15|  return value|
+|grp_fu_129_p_ce     |  out|    1|  ap_ctrl_hs|     mp_mul.15|  return value|
+|a_address0          |  out|    3|   ap_memory|             a|         array|
+|a_ce0               |  out|    1|   ap_memory|             a|         array|
+|a_q0                |   in|   64|   ap_memory|             a|         array|
+|b_0_address0        |  out|    2|   ap_memory|           b_0|         array|
+|b_0_ce0             |  out|    1|   ap_memory|           b_0|         array|
+|b_0_q0              |   in|   64|   ap_memory|           b_0|         array|
+|b_1_address0        |  out|    2|   ap_memory|           b_1|         array|
+|b_1_ce0             |  out|    1|   ap_memory|           b_1|         array|
+|b_1_q0              |   in|   64|   ap_memory|           b_1|         array|
+|c_address0          |  out|    4|   ap_memory|             c|         array|
+|c_ce0               |  out|    1|   ap_memory|             c|         array|
+|c_we0               |  out|    1|   ap_memory|             c|         array|
+|c_d0                |  out|   64|   ap_memory|             c|         array|
++--------------------+-----+-----+------------+--------------+--------------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -182,12 +187,12 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.14, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 3 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 1.09>
+State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 4 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/2] (1.09ns)   --->   "%call_ln296 = call void @mul.14, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln296 = call void @mul.14, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 9 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
 
 
@@ -332,6 +337,18 @@ ret_ln297       (ret        ) [ 000]
 </bind>
 </comp>
 
+<comp id="32" class="1004" name="grp_fu_32">
+<pin_list>
+<pin id="33" dir="0" index="0" bw="256" slack="2147483647"/>
+<pin id="34" dir="0" index="1" bw="256" slack="2147483647"/>
+<pin id="35" dir="1" index="2" bw="512" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="p/6 "/>
+</bind>
+</comp>
+
 </comp_list>
 
 <net_list>
@@ -373,9 +390,11 @@ ret_ln297       (ret        ) [ 000]
 |----------|------------------|---------|---------|---------|---------|
 | Operation|  Functional Unit |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|------------------|---------|---------|---------|---------|
-|   call   | grp_mul_14_fu_20 |    16   |  2.709  |   570   |   685   |
+|   call   | grp_mul_14_fu_20 |   450   | 5.74657 |   6239  |   5691  |
 |----------|------------------|---------|---------|---------|---------|
-|   Total  |                  |    16   |  2.709  |   570   |   685   |
+|    mul   |     grp_fu_32    |   225   |    0    |   361   |   178   |
+|----------|------------------|---------|---------|---------|---------|
+|   Total  |                  |   675   | 5.74657 |   6600  |   5869  |
 |----------|------------------|---------|---------|---------|---------|
 
 Memories:
@@ -397,10 +416,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   16   |    2   |   570  |   685  |
+|  Function |   675  |    5   |  6600  |  5869  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   16   |    2   |   570  |   685  |
+|   Total   |   675  |    5   |  6600  |  5869  |
 +-----------+--------+--------+--------+--------+

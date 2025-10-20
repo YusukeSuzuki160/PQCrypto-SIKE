@@ -235,7 +235,7 @@ entry:13 %call_ln0 = call void @fp2sqr503_mont.17_Pipeline_VITIS_LOOP_68_2, i64 
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0">
 <![CDATA[
-entry:14 %call_ln0 = call void @fp2sqr503_mont.17_Pipeline_VITIS_LOOP_378_1104, i64 %a_0_0, i64 %a_0_1, i64 %t3
+entry:14 %call_ln0 = call void @fp2sqr503_mont.17_Pipeline_VITIS_LOOP_378_1128, i64 %a_0_0, i64 %a_0_1, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -268,7 +268,7 @@ entry:13 %call_ln0 = call void @fp2sqr503_mont.17_Pipeline_VITIS_LOOP_68_2, i64 
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="0">
 <![CDATA[
-entry:14 %call_ln0 = call void @fp2sqr503_mont.17_Pipeline_VITIS_LOOP_378_1104, i64 %a_0_0, i64 %a_0_1, i64 %t3
+entry:14 %call_ln0 = call void @fp2sqr503_mont.17_Pipeline_VITIS_LOOP_378_1128, i64 %a_0_0, i64 %a_0_1, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>

@@ -1260,7 +1260,7 @@
 					<Obj>
 						<type>2</type>
 						<id>63</id>
-						<name>fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1142</name>
+						<name>fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1166</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1284,7 +1284,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.127_Pipeline_VITIS_LOOP_378_1142&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.127_Pipeline_VITIS_LOOP_378_1166&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_28">
 				<Value>
@@ -1384,7 +1384,7 @@
 					<Obj>
 						<type>2</type>
 						<id>83</id>
-						<name>fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1143</name>
+						<name>fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1167</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1408,7 +1408,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.127_Pipeline_VITIS_LOOP_378_1143&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.127_Pipeline_VITIS_LOOP_378_1167&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_32">
 				<Value>
@@ -1446,7 +1446,7 @@
 					<Obj>
 						<type>2</type>
 						<id>92</id>
-						<name>fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1144</name>
+						<name>fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1168</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1470,7 +1470,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.127_Pipeline_VITIS_LOOP_160_1144&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.127_Pipeline_VITIS_LOOP_160_1168&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2014,8 +2014,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>489</mMinLatency>
-			<mMaxLatency>939</mMaxLatency>
+			<mMinLatency>459</mMinLatency>
+			<mMaxLatency>800</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -2875,7 +2875,7 @@
 		<count>10</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1144_fu_139</first>
+			<first>grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_160_1168_fu_139</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2902,7 +2902,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1142_fu_99</first>
+			<first>grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1166_fu_99</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2911,7 +2911,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1143_fu_116</first>
+			<first>grp_fp2mul503_mont_127_Pipeline_VITIS_LOOP_378_1167_fu_116</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

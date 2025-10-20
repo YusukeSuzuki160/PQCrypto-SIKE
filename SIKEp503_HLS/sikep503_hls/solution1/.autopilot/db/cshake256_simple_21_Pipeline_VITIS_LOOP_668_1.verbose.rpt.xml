@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cshake256_simple_21_Pipeline_VITIS_LOOP_668_1'" level="0">
-<item name = "Date">Wed Oct  8 20:40:26 2025
+<item name = "Date">Mon Oct 20 14:42:07 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_9_2_8_1_1_U2333">sparsemux_9_2_8_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_8_1_1_U2745">sparsemux_9_2_8_1_1, 0, 0, 0, 20, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -171,15 +171,15 @@
 <column name="t_address0">out, 6, ap_memory, t, array</column>
 <column name="t_ce0">out, 1, ap_memory, t, array</column>
 <column name="t_q0">in, 8, ap_memory, t, array</column>
-<column name="t_68_address0">out, 6, ap_memory, t_68, array</column>
-<column name="t_68_ce0">out, 1, ap_memory, t_68, array</column>
-<column name="t_68_q0">in, 8, ap_memory, t_68, array</column>
-<column name="t_69_address0">out, 6, ap_memory, t_69, array</column>
-<column name="t_69_ce0">out, 1, ap_memory, t_69, array</column>
-<column name="t_69_q0">in, 8, ap_memory, t_69, array</column>
-<column name="t_70_address0">out, 6, ap_memory, t_70, array</column>
-<column name="t_70_ce0">out, 1, ap_memory, t_70, array</column>
-<column name="t_70_q0">in, 8, ap_memory, t_70, array</column>
+<column name="t_92_address0">out, 6, ap_memory, t_92, array</column>
+<column name="t_92_ce0">out, 1, ap_memory, t_92, array</column>
+<column name="t_92_q0">in, 8, ap_memory, t_92, array</column>
+<column name="t_93_address0">out, 6, ap_memory, t_93, array</column>
+<column name="t_93_ce0">out, 1, ap_memory, t_93, array</column>
+<column name="t_93_q0">in, 8, ap_memory, t_93, array</column>
+<column name="t_94_address0">out, 6, ap_memory, t_94, array</column>
+<column name="t_94_ce0">out, 1, ap_memory, t_94, array</column>
+<column name="t_94_q0">in, 8, ap_memory, t_94, array</column>
 </table>
 </item>
 </section>

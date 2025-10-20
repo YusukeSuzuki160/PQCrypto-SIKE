@@ -596,7 +596,7 @@ VITIS_LOOP_436_2.i18.exitStub:0 %ret_ln0 = ret
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-BYTE.i.i.split_ifconv:1 %specpipeline_ln400 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+BYTE.i.i.split_ifconv:1 %specpipeline_ln400 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln400"/></StgValue>
@@ -626,7 +626,7 @@ BYTE.i.i.split_ifconv:2 %speclooptripcount_ln400 = speclooptripcount void @_ssdm
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-BYTE.i.i.split_ifconv:3 %specloopname_ln400 = specloopname void @_ssdm_op_SpecLoopName, void @empty_91
+BYTE.i.i.split_ifconv:3 %specloopname_ln400 = specloopname void @_ssdm_op_SpecLoopName, void @empty_98
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln400"/></StgValue>

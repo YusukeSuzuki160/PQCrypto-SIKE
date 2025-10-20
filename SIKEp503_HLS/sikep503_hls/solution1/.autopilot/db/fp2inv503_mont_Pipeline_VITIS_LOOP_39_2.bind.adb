@@ -1458,7 +1458,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_233</name>
+						<name>tmp_330</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>41</lineNumber>
@@ -3993,7 +3993,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_233_fu_180</first>
+			<first>tmp_330_fu_180</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

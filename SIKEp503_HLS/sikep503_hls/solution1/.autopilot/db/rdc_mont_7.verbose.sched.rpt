@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_7'
 ================================================================
-* Date:           Wed Oct  8 20:32:51 2025
+* Date:           Mon Oct 20 16:13:23 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -141,7 +141,7 @@ ST_4 : Operation 52 [2/2] (0.71ns)   --->   "%ma_load_1 = load i4 %ma_addr_1" [s
 
 State 5 <SV = 4> <Delay = 4.54>
 ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:302]   --->   Operation 53 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%specloopname_ln312 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32" [src/generic/fp_generic.cpp:312]   --->   Operation 54 'specloopname' 'specloopname_ln312' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%specloopname_ln312 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [src/generic/fp_generic.cpp:312]   --->   Operation 54 'specloopname' 'specloopname_ln312' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%v_7_loc_load = load i64 %v_7_loc"   --->   Operation 55 'load' 'v_7_loc_load' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%u_6_loc_load = load i64 %u_6_loc"   --->   Operation 56 'load' 'u_6_loc_load' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%t_loc_load = load i64 %t_loc"   --->   Operation 57 'load' 't_loc_load' <Predicate = true> <Delay = 0.00>
@@ -199,7 +199,7 @@ ST_7 : Operation 104 [2/2] (0.71ns)   --->   "%ma_load_2 = load i4 %ma_addr_2" [
 
 State 8 <SV = 5> <Delay = 4.54>
 ST_8 : Operation 105 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 7, i64 7, i64 7" [src/generic/fp_generic.cpp:302]   --->   Operation 105 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 106 [1/1] (0.00ns)   --->   "%specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_30" [src/generic/fp_generic.cpp:334]   --->   Operation 106 'specloopname' 'specloopname_ln334' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 106 [1/1] (0.00ns)   --->   "%specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35" [src/generic/fp_generic.cpp:334]   --->   Operation 106 'specloopname' 'specloopname_ln334' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 107 [1/1] (0.00ns)   --->   "%v_11_loc_load = load i64 %v_11_loc"   --->   Operation 107 'load' 'v_11_loc_load' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 108 [1/1] (0.00ns)   --->   "%u_10_loc_load = load i64 %u_10_loc"   --->   Operation 108 'load' 'u_10_loc_load' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 109 [1/1] (0.00ns)   --->   "%t_6_loc_load = load i64 %t_6_loc"   --->   Operation 109 'load' 't_6_loc_load' <Predicate = true> <Delay = 0.00>
@@ -274,7 +274,7 @@ The critical path consists of the following:
  <State 6>: 3.660ns
 The critical path consists of the following:
 	'load' operation 32 bit ('count_load', src/generic/fp_generic.cpp:338) on local variable 'count', src/generic/fp_generic.cpp:302 [79]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln336', src/generic/fp_generic.cpp:336) [88]  (0.880 ns)
+	'add' operation 32 bit ('add_ln338', src/generic/fp_generic.cpp:338) [89]  (0.880 ns)
 	'select' operation 32 bit ('count', src/generic/fp_generic.cpp:336) [90]  (0.227 ns)
 	'sub' operation 32 bit ('sub65', src/generic/fp_generic.cpp:336) [91]  (0.880 ns)
 	'call' operation 0 bit ('call_ln334', src/generic/fp_generic.cpp:334) to 'rdc_mont.7_Pipeline_VITIS_LOOP_340_5' [92]  (1.673 ns)
@@ -290,7 +290,6 @@ The critical path consists of the following:
 	'add' operation 64 bit ('v', src/generic/fp_generic.cpp:350) [98]  (1.147 ns)
 	'xor' operation 64 bit ('xor_ln105_13', src/config.h:105->src/generic/fp_generic.cpp:350) [102]  (0.000 ns)
 	'add' operation 64 bit ('tempReg', src/generic/fp_generic.cpp:351) [105]  (1.147 ns)
-	'xor' operation 1 bit ('xor_ln105_21', src/config.h:105->src/generic/fp_generic.cpp:351) [107]  (0.000 ns)
 	'and' operation 64 bit ('and_ln105_1', src/config.h:105->src/generic/fp_generic.cpp:351) [110]  (0.000 ns)
 	'add' operation 64 bit ('t', src/generic/fp_generic.cpp:352) [113]  (1.147 ns)
 	'store' operation 0 bit ('store_ln303', src/generic/fp_generic.cpp:303) of variable 't', src/generic/fp_generic.cpp:352 on local variable 'u', src/generic/fp_generic.cpp:303 [122]  (0.387 ns)

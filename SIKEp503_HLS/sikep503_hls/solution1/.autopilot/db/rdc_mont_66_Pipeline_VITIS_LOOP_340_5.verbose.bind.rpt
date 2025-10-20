@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_66_Pipeline_VITIS_LOOP_340_5'
 ================================================================
-* Date:           Wed Oct  8 20:33:36 2025
+* Date:           Mon Oct 20 16:14:23 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -113,9 +113,9 @@ ST_1 : Operation 24 [1/1] (0.70ns)   --->   "%icmp_ln340 = icmp_eq  i4 %j, i4 8"
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln340 = br i1 %icmp_ln340, void %for.body64.split, void %for.inc117.exitStub" [src/generic/fp_generic.cpp:340]   --->   Operation 25 'br' 'br_ln340' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln340 = zext i4 %j" [src/generic/fp_generic.cpp:340]   --->   Operation 26 'zext' 'zext_ln340' <Predicate = (!icmp_ln340)> <Delay = 0.00>
 ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln340 = trunc i4 %j" [src/generic/fp_generic.cpp:340]   --->   Operation 27 'trunc' 'trunc_ln340' <Predicate = (!icmp_ln340)> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/generic/fp_generic.cpp:303]   --->   Operation 28 'specpipeline' 'specpipeline_ln303' <Predicate = (!icmp_ln340)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:303]   --->   Operation 28 'specpipeline' 'specpipeline_ln303' <Predicate = (!icmp_ln340)> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%speclooptripcount_ln303 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 7, i64 4" [src/generic/fp_generic.cpp:303]   --->   Operation 29 'speclooptripcount' 'speclooptripcount_ln303' <Predicate = (!icmp_ln340)> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40" [src/generic/fp_generic.cpp:340]   --->   Operation 30 'specloopname' 'specloopname_ln340' <Predicate = (!icmp_ln340)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34" [src/generic/fp_generic.cpp:340]   --->   Operation 30 'specloopname' 'specloopname_ln340' <Predicate = (!icmp_ln340)> <Delay = 0.00>
 ST_1 : Operation 31 [1/1] (0.88ns)   --->   "%icmp_ln342 = icmp_ult  i32 %zext_ln340, i32 %sub65_read" [src/generic/fp_generic.cpp:342]   --->   Operation 31 'icmp' 'icmp_ln342' <Predicate = (!icmp_ln340)> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln342 = br i1 %icmp_ln342, void %for.inc93, void %if.then67" [src/generic/fp_generic.cpp:342]   --->   Operation 32 'br' 'br_ln342' <Predicate = (!icmp_ln340)> <Delay = 0.00>
 ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i4.i3, i4 %j, i3 0" [src/generic/fp_generic.cpp:344]   --->   Operation 33 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln340 & icmp_ln342)> <Delay = 0.00>
@@ -509,7 +509,7 @@ ret_ln0                 (ret              ) [ 00000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -563,7 +563,7 @@ ret_ln0                 (ret              ) [ 00000]
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_40"/></StgValue>
+<StgValue><ssdm name="empty_34"/></StgValue>
 </bind>
 </comp>
 

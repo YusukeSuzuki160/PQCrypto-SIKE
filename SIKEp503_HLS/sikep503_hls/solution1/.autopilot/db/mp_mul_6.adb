@@ -407,8 +407,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>133</mMinLatency>
-        <mMaxLatency>245</mMaxLatency>
+        <mMinLatency>86</mMinLatency>
+        <mMaxLatency>133</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -498,15 +498,15 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>16</second>
+              <second>225</second>
             </item>
             <item>
               <first>FF</first>
-              <second>422</second>
+              <second>3272</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>794</second>
+              <second>7624</second>
             </item>
           </second>
         </item>

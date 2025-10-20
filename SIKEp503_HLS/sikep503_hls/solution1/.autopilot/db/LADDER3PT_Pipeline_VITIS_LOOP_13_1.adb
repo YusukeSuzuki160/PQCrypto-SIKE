@@ -1539,7 +1539,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>100</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212_Montgomery_one_1_ROM_Acud</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1236_Montgomery_one_1_ROM_Acud</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>

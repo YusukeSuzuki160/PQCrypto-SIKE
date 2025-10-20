@@ -1930,7 +1930,7 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>empty_141</name>
+						<name>empty_143</name>
 						<fileName>src/sike.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>98</lineNumber>
@@ -2069,7 +2069,7 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>empty_142</name>
+						<name>empty_144</name>
 						<fileName>src/sike.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>111</lineNumber>
@@ -2198,7 +2198,7 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>empty_143</name>
+						<name>empty_145</name>
 						<fileName>src/sike.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>111</lineNumber>
@@ -4107,8 +4107,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>6291953</mMinLatency>
-			<mMaxLatency>-1660455351</mMaxLatency>
+			<mMinLatency>5279793</mMinLatency>
+			<mMaxLatency>-1388489610</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

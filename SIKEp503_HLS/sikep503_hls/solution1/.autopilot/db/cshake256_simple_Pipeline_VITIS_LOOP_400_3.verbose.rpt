@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_Pipeline_VITIS_LOOP_400_3'
 ================================================================
-* Date:           Wed Oct  8 20:37:20 2025
+* Date:           Mon Oct 20 14:38:13 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -266,9 +266,9 @@ ST_1 : Operation 38 [1/1] (0.38ns)   --->   "%store_ln400 = store i5 %add_ln400,
 ST_1 : Operation 75 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 75 'ret' 'ret_ln0' <Predicate = (icmp_ln400)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 2.37>
-ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%specpipeline_ln400 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 39 'specpipeline' 'specpipeline_ln400' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%specpipeline_ln400 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 39 'specpipeline' 'specpipeline_ln400' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%speclooptripcount_ln400 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 17, i64 17, i64 17" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 40 'speclooptripcount' 'speclooptripcount_ln400' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln400 = specloopname void @_ssdm_op_SpecLoopName, void @empty_91" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 41 'specloopname' 'specloopname_ln400' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln400 = specloopname void @_ssdm_op_SpecLoopName, void @empty_98" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 41 'specloopname' 'specloopname_ln400' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 42 [1/2] ( I:0.56ns O:0.56ns )   --->   "%v = load i7 %in_0_addr" [src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 42 'load' 'v' <Predicate = true> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
 ST_2 : Operation 43 [1/2] ( I:0.56ns O:0.56ns )   --->   "%v_111 = load i7 %in_1_addr" [src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 43 'load' 'v_111' <Predicate = true> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
 ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i5.i3, i5 %lane_1, i3 2" [src/sha3/fips202.cpp:410->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 44 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
@@ -565,7 +565,7 @@ ret_ln0                    (ret                   ) [ 000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -601,7 +601,7 @@ ret_ln0                    (ret                   ) [ 000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_91"/></StgValue>
+<StgValue><ssdm name="empty_98"/></StgValue>
 </bind>
 </comp>
 

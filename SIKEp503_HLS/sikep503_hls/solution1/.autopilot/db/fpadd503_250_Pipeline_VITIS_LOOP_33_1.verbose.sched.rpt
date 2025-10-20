@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_250_Pipeline_VITIS_LOOP_33_1'
 ================================================================
-* Date:           Wed Oct  8 20:35:07 2025
+* Date:           Mon Oct 20 16:16:25 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -105,18 +105,18 @@ State 2 <SV = 1> <Delay = 0.71>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%carry = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc.split" [src/generic/fp_generic.cpp:33]   --->   Operation 20 'phi' 'carry' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%add_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln35" [src/generic/fp_generic.cpp:35]   --->   Operation 21 'bitconcatenate' 'add_ln' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln35_9 = zext i4 %add_ln" [src/generic/fp_generic.cpp:35]   --->   Operation 22 'zext' 'zext_ln35_9' <Predicate = (!icmp_ln33)> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%b_addr_3 = getelementptr i64 %b, i64 0, i64 %zext_ln35_9" [src/generic/fp_generic.cpp:35]   --->   Operation 23 'getelementptr' 'b_addr_3' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%b_addr_13 = getelementptr i64 %b, i64 0, i64 %zext_ln35_9" [src/generic/fp_generic.cpp:35]   --->   Operation 23 'getelementptr' 'b_addr_13' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 24 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_load_1 = load i5 %b_addr" [src/generic/fp_generic.cpp:35]   --->   Operation 24 'load' 'b_load_1' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
-ST_2 : Operation 25 [2/2] (0.71ns)   --->   "%b_load = load i5 %b_addr_3" [src/generic/fp_generic.cpp:35]   --->   Operation 25 'load' 'b_load' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
+ST_2 : Operation 25 [2/2] (0.71ns)   --->   "%b_load = load i5 %b_addr_13" [src/generic/fp_generic.cpp:35]   --->   Operation 25 'load' 'b_load' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
 ST_2 : Operation 47 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (icmp_ln33)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 3.00>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/generic/fp_generic.cpp:28]   --->   Operation 26 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:28]   --->   Operation 26 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%speclooptripcount_ln28 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:28]   --->   Operation 27 'speclooptripcount' 'speclooptripcount_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
-ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [src/generic/fp_generic.cpp:33]   --->   Operation 28 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45" [src/generic/fp_generic.cpp:33]   --->   Operation 28 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln35 = zext i1 %carry" [src/generic/fp_generic.cpp:35]   --->   Operation 29 'zext' 'zext_ln35' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (1.14ns)   --->   "%tempReg = add i64 %b_load_1, i64 %zext_ln35" [src/generic/fp_generic.cpp:35]   --->   Operation 30 'add' 'tempReg' <Predicate = (!icmp_ln33)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 31 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_load = load i5 %b_addr_3" [src/generic/fp_generic.cpp:35]   --->   Operation 31 'load' 'b_load' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
+ST_3 : Operation 31 [1/2] ( I:0.71ns O:0.71ns )   --->   "%b_load = load i5 %b_addr_13" [src/generic/fp_generic.cpp:35]   --->   Operation 31 'load' 'b_load' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
 ST_3 : Operation 32 [1/1] (1.14ns)   --->   "%add_ln35_4 = add i64 %b_load, i64 %tempReg" [src/generic/fp_generic.cpp:35]   --->   Operation 32 'add' 'add_ln35_4' <Predicate = (!icmp_ln33)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i64 %c, i64 0, i64 %zext_ln33" [src/generic/fp_generic.cpp:35]   --->   Operation 33 'getelementptr' 'c_addr' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln35 = store i64 %add_ln35_4, i3 %c_addr" [src/generic/fp_generic.cpp:35]   --->   Operation 34 'store' 'store_ln35' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>

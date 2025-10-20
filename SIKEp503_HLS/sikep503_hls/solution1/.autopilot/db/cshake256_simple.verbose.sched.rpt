@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple'
 ================================================================
-* Date:           Wed Oct  8 20:32:42 2025
+* Date:           Mon Oct 20 16:13:13 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -99,9 +99,9 @@ ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%idx = alloca i32 1"   --->   Opera
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mlen_assign = alloca i32 1" [src/sha3/fips202.cpp:385->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 18 'alloca' 'mlen_assign' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%s = alloca i64 1"   --->   Operation 19 'alloca' 's' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%t = alloca i64 1" [src/sha3/fips202.cpp:639]   --->   Operation 20 'alloca' 't' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%t_89 = alloca i64 1" [src/sha3/fips202.cpp:639]   --->   Operation 21 'alloca' 't_89' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%t_90 = alloca i64 1" [src/sha3/fips202.cpp:639]   --->   Operation 22 'alloca' 't_90' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%t_91 = alloca i64 1" [src/sha3/fips202.cpp:639]   --->   Operation 23 'alloca' 't_91' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%t_92 = alloca i64 1" [src/sha3/fips202.cpp:639]   --->   Operation 21 'alloca' 't_92' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%t_93 = alloca i64 1" [src/sha3/fips202.cpp:639]   --->   Operation 22 'alloca' 't_93' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%t_94 = alloca i64 1" [src/sha3/fips202.cpp:639]   --->   Operation 23 'alloca' 't_94' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_610_1, i64 %s"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 25 [1/1] (0.38ns)   --->   "%store_ln385 = store i9 402, i9 %mlen_assign" [src/sha3/fips202.cpp:385->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 25 'store' 'store_ln385' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 26 [1/1] (0.38ns)   --->   "%store_ln0 = store i9 0, i9 %idx"   --->   Operation 26 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
@@ -142,7 +142,7 @@ State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln396 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.cpp:396->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 47 'call' 'call_ln396' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln388 = specloopname void @_ssdm_op_SpecLoopName, void @empty_29" [src/sha3/fips202.cpp:388->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 48 'specloopname' 'specloopname_ln388' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln388 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [src/sha3/fips202.cpp:388->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 48 'specloopname' 'specloopname_ln388' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln396 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.cpp:396->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 49 'call' 'call_ln396' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln388 = br void %VITIS_LOOP_391_2.i.i" [src/sha3/fips202.cpp:388->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 50 'br' 'br_ln388' <Predicate = true> <Delay = 0.00>
 
@@ -156,16 +156,16 @@ State 12 <SV = 8> <Delay = 0.00>
 ST_12 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln435 = call void @KeccakF1600_StatePermute, i64 %s, i64 %KeccakF_RoundConstants" [src/sha3/fips202.cpp:435->src/sha3/fips202.cpp:663]   --->   Operation 53 'call' 'call_ln435' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 9> <Delay = 0.00>
-ST_13 : Operation 54 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_91, i8 %t_90, i8 %t_89, i8 %t, i64 %s"   --->   Operation 54 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 54 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_94, i8 %t_93, i8 %t_92, i8 %t, i64 %s"   --->   Operation 54 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 14 <SV = 10> <Delay = 1.48>
-ST_14 : Operation 55 [1/2] (1.48ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_91, i8 %t_90, i8 %t_89, i8 %t, i64 %s"   --->   Operation 55 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 55 [1/2] (1.48ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_94, i8 %t_93, i8 %t_92, i8 %t, i64 %s"   --->   Operation 55 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 11> <Delay = 0.00>
-ST_15 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_89, i8 %t_90, i8 %t_91, i8 %ephemeralsk_i"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_92, i8 %t_93, i8 %t_94, i8 %ephemeralsk_i"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 16 <SV = 12> <Delay = 1.48>
-ST_16 : Operation 57 [1/2] (1.48ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_89, i8 %t_90, i8 %t_91, i8 %ephemeralsk_i"   --->   Operation 57 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 57 [1/2] (1.48ns)   --->   "%call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_92, i8 %t_93, i8 %t_94, i8 %ephemeralsk_i"   --->   Operation 57 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 ST_16 : Operation 58 [1/1] (0.00ns)   --->   "%ret_ln674 = ret" [src/sha3/fips202.cpp:674]   --->   Operation 58 'ret' 'ret_ln674' <Predicate = true> <Delay = 0.00>
 
 

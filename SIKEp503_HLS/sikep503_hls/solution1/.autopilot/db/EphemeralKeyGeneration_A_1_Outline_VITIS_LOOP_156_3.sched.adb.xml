@@ -422,10 +422,10 @@ for.inc72.split:1 %coeff_addr = getelementptr i64 %coeff, i64 0, i64 8
 
 <Node id="24" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc72.split:2 %coeff_addr_17 = getelementptr i64 %coeff, i64 0, i64 40
+for.inc72.split:2 %coeff_addr_19 = getelementptr i64 %coeff, i64 0, i64 40
 
 ]]></Node>
-<StgValue><ssdm name="coeff_addr_17"/></StgValue>
+<StgValue><ssdm name="coeff_addr_19"/></StgValue>
 </operation>
 
 <operation id="47" st_id="2" stage="1" lat="1">
@@ -438,10 +438,10 @@ for.inc72.split:2 %coeff_addr_17 = getelementptr i64 %coeff, i64 0, i64 40
 
 <Node id="25" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc72.split:3 %coeff_addr_18 = getelementptr i64 %coeff, i64 0, i64 32
+for.inc72.split:3 %coeff_addr_20 = getelementptr i64 %coeff, i64 0, i64 32
 
 ]]></Node>
-<StgValue><ssdm name="coeff_addr_18"/></StgValue>
+<StgValue><ssdm name="coeff_addr_20"/></StgValue>
 </operation>
 
 <operation id="48" st_id="2" stage="1" lat="1">
@@ -454,10 +454,10 @@ for.inc72.split:3 %coeff_addr_18 = getelementptr i64 %coeff, i64 0, i64 32
 
 <Node id="26" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc72.split:4 %coeff_addr_19 = getelementptr i64 %coeff, i64 0, i64 24
+for.inc72.split:4 %coeff_addr_21 = getelementptr i64 %coeff, i64 0, i64 24
 
 ]]></Node>
-<StgValue><ssdm name="coeff_addr_19"/></StgValue>
+<StgValue><ssdm name="coeff_addr_21"/></StgValue>
 </operation>
 
 <operation id="49" st_id="2" stage="1" lat="1">
@@ -470,10 +470,10 @@ for.inc72.split:4 %coeff_addr_19 = getelementptr i64 %coeff, i64 0, i64 24
 
 <Node id="27" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc72.split:5 %coeff_addr_20 = getelementptr i64 %coeff, i64 0, i64 16
+for.inc72.split:5 %coeff_addr_22 = getelementptr i64 %coeff, i64 0, i64 16
 
 ]]></Node>
-<StgValue><ssdm name="coeff_addr_20"/></StgValue>
+<StgValue><ssdm name="coeff_addr_22"/></StgValue>
 </operation>
 
 <operation id="50" st_id="2" stage="1" lat="1">
@@ -806,7 +806,7 @@ for.inc72.split:29 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="52" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:30 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_17, i64 666, i64 207, i64 18446744073709551615
+for.inc72.split:30 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -822,7 +822,7 @@ for.inc72.split:30 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="53" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:31 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_17, i64 666, i64 17, i64 18446744073709551615
+for.inc72.split:31 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -838,7 +838,7 @@ for.inc72.split:31 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="54" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:32 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_18, i64 666, i64 207, i64 18446744073709551615
+for.inc72.split:32 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -854,7 +854,7 @@ for.inc72.split:32 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="55" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:33 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_18, i64 666, i64 17, i64 18446744073709551615
+for.inc72.split:33 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -870,7 +870,7 @@ for.inc72.split:33 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="56" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:34 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 207, i64 18446744073709551615
+for.inc72.split:34 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_21, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -886,7 +886,7 @@ for.inc72.split:34 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="57" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:35 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 17, i64 18446744073709551615
+for.inc72.split:35 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_21, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -902,7 +902,7 @@ for.inc72.split:35 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="58" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:36 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 207, i64 18446744073709551615
+for.inc72.split:36 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_22, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -918,7 +918,7 @@ for.inc72.split:36 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, 
 
 <Node id="59" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-for.inc72.split:37 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 17, i64 18446744073709551615
+for.inc72.split:37 %specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_22, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln159"/></StgValue>
@@ -1653,7 +1653,7 @@ for.inc72.split:14 %speclooptripcount_ln158 = speclooptripcount void @_ssdm_op_S
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc72.split:15 %specloopname_ln156 = specloopname void @_ssdm_op_SpecLoopName, void @empty_52
+for.inc72.split:15 %specloopname_ln156 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln156"/></StgValue>

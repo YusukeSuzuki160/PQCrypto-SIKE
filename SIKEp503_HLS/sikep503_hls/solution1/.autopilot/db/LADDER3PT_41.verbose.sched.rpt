@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_41'
 ================================================================
-* Date:           Wed Oct  8 20:35:48 2025
+* Date:           Mon Oct 20 16:17:16 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
     |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
     +---------+---------+-----------+-----------+---------+---------+---------+
-    |  1166357|  2012357|  11.664 ms|  20.124 ms|  1166357|  2012357|       no|
+    |  1098857|  1802357|  10.989 ms|  18.024 ms|  1098857|  1802357|       no|
     +---------+---------+-----------+-----------+---------+---------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |                    |  Latency (cycles) |  Iteration  |  Initiation Interval  | Trip |          |
         |      Loop Name     |   min   |   max   |   Latency   |  achieved |   target  | Count| Pipelined|
         +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_319_1  |  1166000|  2012000|  4664 ~ 8048|          -|          -|   250|        no|
+        |- VITIS_LOOP_319_1  |  1098500|  1802000|  4394 ~ 7208|          -|          -|   250|        no|
         +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
 
 ============================================================
@@ -279,28 +279,28 @@ ST_8 : Operation 182 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i6
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 183 [2/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.2, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:304]   --->   Operation 183 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_9 : Operation 184 [2/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.4, i64 %A_1, i64 %A24_2, i64 %A24_3, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:305]   --->   Operation 184 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 185 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1183, i64 %xPQ_0, i64 %R0_X"   --->   Operation 185 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 186 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1184, i64 %xPQ_1, i64 %R0_X_2"   --->   Operation 186 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_9 : Operation 187 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1185, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 187 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 185 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1207, i64 %xPQ_0, i64 %R0_X"   --->   Operation 185 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 186 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1208, i64 %xPQ_1, i64 %R0_X_2"   --->   Operation 186 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 187 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1209, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 187 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 1.48>
 ST_10 : Operation 188 [1/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.2, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:304]   --->   Operation 188 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_10 : Operation 189 [1/2] (0.00ns)   --->   "%call_ln110 = call void @fpadd503.4, i64 %A_1, i64 %A24_2, i64 %A24_3, i64 %p503x2_1" [src/fpx.cpp:110->src/ec_isogeny.cpp:305]   --->   Operation 189 'call' 'call_ln110' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 190 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1183, i64 %xPQ_0, i64 %R0_X"   --->   Operation 190 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 191 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1184, i64 %xPQ_1, i64 %R0_X_2"   --->   Operation 191 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_10 : Operation 192 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1185, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 192 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 190 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1207, i64 %xPQ_0, i64 %R0_X"   --->   Operation 190 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 191 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1208, i64 %xPQ_1, i64 %R0_X_2"   --->   Operation 191 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 192 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1209, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 192 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
 ST_11 : Operation 193 [2/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.4, i64 %A_0, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:305]   --->   Operation 193 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_11 : Operation 194 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1186, i64 %xPQ_0, i64 %R2_X"   --->   Operation 194 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_11 : Operation 195 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1187, i64 %xPQ_1, i64 %R2_X_2"   --->   Operation 195 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_11 : Operation 196 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1188, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 196 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 194 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1210, i64 %xPQ_0, i64 %R2_X"   --->   Operation 194 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 195 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1211, i64 %xPQ_1, i64 %R2_X_2"   --->   Operation 195 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 196 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1212, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 196 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 1.48>
 ST_12 : Operation 197 [1/2] (0.00ns)   --->   "%call_ln109 = call void @fpadd503.4, i64 %A_0, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:305]   --->   Operation 197 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_12 : Operation 198 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1186, i64 %xPQ_0, i64 %R2_X"   --->   Operation 198 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_12 : Operation 199 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1187, i64 %xPQ_1, i64 %R2_X_2"   --->   Operation 199 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_12 : Operation 200 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1188, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 200 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 198 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1210, i64 %xPQ_0, i64 %R2_X"   --->   Operation 198 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 199 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1211, i64 %xPQ_1, i64 %R2_X_2"   --->   Operation 199 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 200 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1212, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 200 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 0.71>
 ST_13 : Operation 201 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_4 = getelementptr i64 %R0_Z_2, i64 0, i64 4"   --->   Operation 201 'getelementptr' 'R0_Z_2_addr_4' <Predicate = true> <Delay = 0.00>
@@ -308,8 +308,8 @@ ST_13 : Operation 202 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_4 = getelementptr i6
 ST_13 : Operation 203 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_4"   --->   Operation 203 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_13 : Operation 204 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_4"   --->   Operation 204 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_13 : Operation 205 [2/2] (0.00ns)   --->   "%call_ln306 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:306]   --->   Operation 205 'call' 'call_ln306' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_13 : Operation 206 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1189, i64 %xPQ_0, i64 %R_X"   --->   Operation 206 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_13 : Operation 207 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1191, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 207 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 206 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1213, i64 %xPQ_0, i64 %R_X"   --->   Operation 206 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 207 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1215, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 207 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 14 <SV = 13> <Delay = 1.48>
 ST_14 : Operation 208 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_5 = getelementptr i64 %R0_Z_2, i64 0, i64 5"   --->   Operation 208 'getelementptr' 'R0_Z_2_addr_5' <Predicate = true> <Delay = 0.00>
@@ -317,8 +317,8 @@ ST_14 : Operation 209 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_5 = getelementptr i6
 ST_14 : Operation 210 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_5"   --->   Operation 210 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_14 : Operation 211 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_5"   --->   Operation 211 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_14 : Operation 212 [1/2] (0.00ns)   --->   "%call_ln306 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:306]   --->   Operation 212 'call' 'call_ln306' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_14 : Operation 213 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1189, i64 %xPQ_0, i64 %R_X"   --->   Operation 213 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_14 : Operation 214 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1191, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 214 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 213 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1213, i64 %xPQ_0, i64 %R_X"   --->   Operation 213 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 214 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1215, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 214 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 14> <Delay = 0.71>
 ST_15 : Operation 215 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_6 = getelementptr i64 %R0_Z_2, i64 0, i64 6"   --->   Operation 215 'getelementptr' 'R0_Z_2_addr_6' <Predicate = true> <Delay = 0.00>
@@ -326,7 +326,7 @@ ST_15 : Operation 216 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_6 = getelementptr i6
 ST_15 : Operation 217 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_6"   --->   Operation 217 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_15 : Operation 218 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_6"   --->   Operation 218 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_15 : Operation 219 [2/2] (0.00ns)   --->   "%call_ln307 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:307]   --->   Operation 219 'call' 'call_ln307' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_15 : Operation 220 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1190, i64 %xPQ_1, i64 %R_X"   --->   Operation 220 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 220 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1214, i64 %xPQ_1, i64 %R_X"   --->   Operation 220 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_15 : Operation 221 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_21_1, i64 %R_Z"   --->   Operation 221 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 16 <SV = 15> <Delay = 1.48>
@@ -346,7 +346,7 @@ ST_16 : Operation 234 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i
 ST_16 : Operation 235 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_7"   --->   Operation 235 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_16 : Operation 236 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 236 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_16 : Operation 237 [1/2] (0.00ns)   --->   "%call_ln307 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:307]   --->   Operation 237 'call' 'call_ln307' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_16 : Operation 238 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1190, i64 %xPQ_1, i64 %R_X"   --->   Operation 238 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 238 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_13_1214, i64 %xPQ_1, i64 %R_X"   --->   Operation 238 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 ST_16 : Operation 239 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT.41_Pipeline_VITIS_LOOP_21_1, i64 %R_Z"   --->   Operation 239 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 ST_16 : Operation 240 [1/1] (0.38ns)   --->   "%br_ln319 = br void %for.inc" [src/ec_isogeny.cpp:319]   --->   Operation 240 'br' 'br_ln319' <Predicate = true> <Delay = 0.38>
 
@@ -519,7 +519,7 @@ ST_43 : Operation 353 [2/2] (0.00ns)   --->   "%call_ln329 = call void @fp2mul50
 
 State 44 <SV = 43> <Delay = 0.00>
 ST_44 : Operation 354 [1/1] (0.00ns)   --->   "%speclooptripcount_ln291 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 250, i64 250, i64 250" [src/ec_isogeny.cpp:291]   --->   Operation 354 'speclooptripcount' 'speclooptripcount_ln291' <Predicate = true> <Delay = 0.00>
-ST_44 : Operation 355 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [src/ec_isogeny.cpp:319]   --->   Operation 355 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 355 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [src/ec_isogeny.cpp:319]   --->   Operation 355 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 356 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 356 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 357 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 357 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 358 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 358 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
@@ -680,14 +680,14 @@ The critical path consists of the following:
 
  <State 10>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1183' [178]  (1.482 ns)
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1207' [178]  (1.482 ns)
 
  <State 11>: 0.000ns
 The critical path consists of the following:
 
  <State 12>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1186' [181]  (1.482 ns)
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1210' [181]  (1.482 ns)
 
  <State 13>: 0.714ns
 The critical path consists of the following:
@@ -696,7 +696,7 @@ The critical path consists of the following:
 
  <State 14>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1189' [184]  (1.482 ns)
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1213' [184]  (1.482 ns)
 
  <State 15>: 0.714ns
 The critical path consists of the following:
@@ -705,12 +705,12 @@ The critical path consists of the following:
 
  <State 16>: 1.482ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1190' [185]  (1.482 ns)
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT.41_Pipeline_VITIS_LOOP_13_1214' [185]  (1.482 ns)
 
  <State 17>: 1.092ns
 The critical path consists of the following:
 	'load' operation 8 bit ('i', src/ec_isogeny.cpp:319) on local variable 'i', src/ec_isogeny.cpp:291 [192]  (0.000 ns)
-	'add' operation 8 bit ('i', src/ec_isogeny.cpp:319) [194]  (0.705 ns)
+	'icmp' operation 1 bit ('icmp_ln319', src/ec_isogeny.cpp:319) [193]  (0.705 ns)
 	'store' operation 0 bit ('store_ln291', src/ec_isogeny.cpp:291) of variable 'i', src/ec_isogeny.cpp:319 on local variable 'i', src/ec_isogeny.cpp:291 [375]  (0.387 ns)
 
  <State 18>: 0.667ns

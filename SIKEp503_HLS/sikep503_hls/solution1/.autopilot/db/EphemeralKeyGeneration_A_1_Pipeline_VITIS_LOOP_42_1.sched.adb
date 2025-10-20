@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>t_84</name>
+						<name>t_108</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -852,7 +852,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>t_84_addr</name>
+						<name>t_108_addr</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>49</lineNumber>
@@ -1045,7 +1045,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>t_84_addr_1</name>
+						<name>t_108_addr_1</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>57</lineNumber>
@@ -1110,7 +1110,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>t_84_load</name>
+						<name>t_108_load</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>49</lineNumber>
@@ -1752,7 +1752,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>t_84_load_1</name>
+						<name>t_108_load_1</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>57</lineNumber>
@@ -4076,7 +4076,7 @@
 						<item class_id="38" tracking_level="0" version="0">
 							<first class_id="39" tracking_level="0" version="0">
 								<first class_id_reference="9" object_id_reference="_30"></first>
-								<second>core:RAM_1P:t_84::load:store</second>
+								<second>core:RAM_1P:t_108::load:store</second>
 							</first>
 							<second>37</second>
 						</item>

@@ -678,7 +678,7 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>a_addr</name>
+              <name>a_addr_23</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>113</lineNumber>
@@ -1133,7 +1133,7 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>a_addr_write_ln113</name>
+              <name>a_addr_23_write_ln113</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>113</lineNumber>
@@ -3850,7 +3850,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>a_addr_reg_249</first>
+          <first>a_addr_23_reg_249</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4681,7 +4681,7 @@
       <count>23</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>a_addr_gep_fu_66</first>
+        <first>a_addr_23_gep_fu_66</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4994,7 +4994,7 @@
       <count>6</count>
       <item_version>0</item_version>
       <item>
-        <first>a_addr_reg_249</first>
+        <first>a_addr_23_reg_249</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

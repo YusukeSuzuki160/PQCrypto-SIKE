@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2sqr503_mont_17'" level="0">
-<item name = "Date">Wed Oct  8 20:36:57 2025
+<item name = "Date">Mon Oct 20 14:37:45 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">575, 1027, 5.750 us, 10.270 us, 575, 1027, no</column>
+<column name="">481, 803, 4.810 us, 8.030 us, 481, 803, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -34,9 +34,9 @@
 <column name="grp_fp2sqr503_mont_17_Pipeline_VITIS_LOOP_378_1_fu_56">fp2sqr503_mont_17_Pipeline_VITIS_LOOP_378_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2sqr503_mont_17_Pipeline_VITIS_LOOP_61_1_fu_70">fp2sqr503_mont_17_Pipeline_VITIS_LOOP_61_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2sqr503_mont_17_Pipeline_VITIS_LOOP_68_2_fu_84">fp2sqr503_mont_17_Pipeline_VITIS_LOOP_68_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fp2sqr503_mont_17_Pipeline_VITIS_LOOP_378_1104_fu_92">fp2sqr503_mont_17_Pipeline_VITIS_LOOP_378_1104, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpmul503_mont_11_fu_101">fpmul503_mont_11, 264, 490, 2.640 us, 4.900 us, 264, 490, no</column>
-<column name="grp_fpmul503_mont_16_fu_111">fpmul503_mont_16, 264, 490, 2.640 us, 4.900 us, 264, 490, no</column>
+<column name="grp_fp2sqr503_mont_17_Pipeline_VITIS_LOOP_378_1128_fu_92">fp2sqr503_mont_17_Pipeline_VITIS_LOOP_378_1128, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpmul503_mont_11_fu_101">fpmul503_mont_11, 217, 378, 2.170 us, 3.780 us, 217, 378, no</column>
+<column name="grp_fpmul503_mont_16_fu_111">fpmul503_mont_16, 217, 378, 2.170 us, 3.780 us, 217, 378, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

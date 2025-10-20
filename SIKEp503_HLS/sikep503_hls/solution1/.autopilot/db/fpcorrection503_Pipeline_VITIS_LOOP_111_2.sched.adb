@@ -678,7 +678,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>a_addr</name>
+						<name>a_addr_9</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>113</lineNumber>
@@ -1133,7 +1133,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>a_addr_write_ln113</name>
+						<name>a_addr_9_write_ln113</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>113</lineNumber>

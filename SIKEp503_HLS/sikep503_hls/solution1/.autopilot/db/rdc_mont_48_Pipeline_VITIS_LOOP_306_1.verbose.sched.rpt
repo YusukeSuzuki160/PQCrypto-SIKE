@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_48_Pipeline_VITIS_LOOP_306_1'
 ================================================================
-* Date:           Wed Oct  8 20:33:13 2025
+* Date:           Mon Oct 20 16:13:52 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -92,9 +92,9 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i_16 = load i4 %i" [src/generic/fp_
 ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%icmp_ln306 = icmp_eq  i4 %i_16, i4 8" [src/generic/fp_generic.cpp:306]   --->   Operation 9 'icmp' 'icmp_ln306' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%add_ln306 = add i4 %i_16, i4 1" [src/generic/fp_generic.cpp:306]   --->   Operation 10 'add' 'add_ln306' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln306 = br i1 %icmp_ln306, void %for.inc.split, void %VITIS_LOOP_314_3.preheader.exitStub" [src/generic/fp_generic.cpp:306]   --->   Operation 11 'br' 'br_ln306' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/generic/fp_generic.cpp:302]   --->   Operation 12 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:302]   --->   Operation 12 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:302]   --->   Operation 13 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34" [src/generic/fp_generic.cpp:306]   --->   Operation 14 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [src/generic/fp_generic.cpp:306]   --->   Operation 14 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln308 = trunc i4 %i_16" [src/generic/fp_generic.cpp:308]   --->   Operation 15 'trunc' 'trunc_ln308' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln308" [src/generic/fp_generic.cpp:308]   --->   Operation 16 'bitconcatenate' 'zext_ln' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln308 = zext i4 %zext_ln" [src/generic/fp_generic.cpp:308]   --->   Operation 17 'zext' 'zext_ln308' <Predicate = (!icmp_ln306)> <Delay = 0.00>

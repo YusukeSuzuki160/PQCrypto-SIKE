@@ -21,7 +21,11 @@ module sikep503_kem_enc_hw_fpmul503_mont_3_3 (
         mc_we0,
         mc_d0,
         mc_q0,
-        mc_offset
+        mc_offset,
+        grp_fu_160_p_din0,
+        grp_fu_160_p_din1,
+        grp_fu_160_p_dout0,
+        grp_fu_160_p_ce
 );
 
 parameter    ap_ST_fsm_state1 = 6'd1;
@@ -46,6 +50,10 @@ output   mc_we0;
 output  [63:0] mc_d0;
 input  [63:0] mc_q0;
 input  [31:0] mc_offset;
+output  [255:0] grp_fu_160_p_din0;
+output  [255:0] grp_fu_160_p_din1;
+input  [511:0] grp_fu_160_p_dout0;
+output   grp_fu_160_p_ce;
 
 reg ap_done;
 reg ap_idle;
@@ -73,6 +81,9 @@ wire   [3:0] grp_mp_mul_6112_fu_75_c_address0;
 wire    grp_mp_mul_6112_fu_75_c_ce0;
 wire    grp_mp_mul_6112_fu_75_c_we0;
 wire   [63:0] grp_mp_mul_6112_fu_75_c_d0;
+wire   [255:0] grp_mp_mul_6112_fu_75_grp_fu_141_p_din0;
+wire   [255:0] grp_mp_mul_6112_fu_75_grp_fu_141_p_din1;
+wire    grp_mp_mul_6112_fu_75_grp_fu_141_p_ce;
 wire    grp_rdc_mont_1_fu_85_ap_start;
 wire    grp_rdc_mont_1_fu_85_ap_done;
 wire    grp_rdc_mont_1_fu_85_ap_idle;
@@ -97,6 +108,7 @@ reg   [4:0] empty_fu_48;
 wire   [4:0] empty_163_fu_109_p2;
 reg    temp_we0_local;
 reg    temp_ce0_local;
+reg    grp_fu_141_ce;
 reg   [5:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -145,7 +157,11 @@ sikep503_kem_enc_hw_mp_mul_6112 grp_mp_mul_6112_fu_75(
     .c_address0(grp_mp_mul_6112_fu_75_c_address0),
     .c_ce0(grp_mp_mul_6112_fu_75_c_ce0),
     .c_we0(grp_mp_mul_6112_fu_75_c_we0),
-    .c_d0(grp_mp_mul_6112_fu_75_c_d0)
+    .c_d0(grp_mp_mul_6112_fu_75_c_d0),
+    .grp_fu_141_p_din0(grp_mp_mul_6112_fu_75_grp_fu_141_p_din0),
+    .grp_fu_141_p_din1(grp_mp_mul_6112_fu_75_grp_fu_141_p_din1),
+    .grp_fu_141_p_dout0(grp_fu_160_p_dout0),
+    .grp_fu_141_p_ce(grp_mp_mul_6112_fu_75_grp_fu_141_p_ce)
 );
 
 sikep503_kem_enc_hw_rdc_mont_1 grp_rdc_mont_1_fu_85(
@@ -257,6 +273,14 @@ always @ (*) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        grp_fu_141_ce = grp_mp_mul_6112_fu_75_grp_fu_141_p_ce;
+    end else begin
+        grp_fu_141_ce = 1'b1;
     end
 end
 
@@ -397,6 +421,12 @@ assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 assign empty_163_fu_109_p2 = (empty_fu_48 + 5'd1);
 
 assign exitcond1_fu_103_p2 = ((empty_fu_48 == 5'd16) ? 1'b1 : 1'b0);
+
+assign grp_fu_160_p_ce = grp_fu_141_ce;
+
+assign grp_fu_160_p_din0 = grp_mp_mul_6112_fu_75_grp_fu_141_p_din0;
+
+assign grp_fu_160_p_din1 = grp_mp_mul_6112_fu_75_grp_fu_141_p_din1;
 
 assign grp_mp_mul_6112_fu_75_ap_start = grp_mp_mul_6112_fu_75_ap_start_reg;
 

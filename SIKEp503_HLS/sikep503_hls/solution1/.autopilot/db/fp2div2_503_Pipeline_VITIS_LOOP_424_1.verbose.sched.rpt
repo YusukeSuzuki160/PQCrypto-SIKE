@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2div2_503_Pipeline_VITIS_LOOP_424_1'
 ================================================================
-* Date:           Wed Oct  8 20:32:45 2025
+* Date:           Mon Oct 20 16:13:16 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -118,9 +118,9 @@ ST_2 : Operation 31 [2/2] (0.71ns)   --->   "%c_0_0_load_1 = load i2 %c_0_0_addr
 ST_2 : Operation 32 [2/2] (0.71ns)   --->   "%c_0_1_load_1 = load i2 %c_0_1_addr_1" [src/fpx.cpp:427->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 32 'load' 'c_0_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
 
 State 3 <SV = 2> <Delay = 1.70>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln422 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:422->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 33 'specpipeline' 'specpipeline_ln422' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln422 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:422->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 33 'specpipeline' 'specpipeline_ln422' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%speclooptripcount_ln422 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 7, i64 7, i64 7" [src/fpx.cpp:422->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 34 'speclooptripcount' 'speclooptripcount_ln422' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%specloopname_ln424 = specloopname void @_ssdm_op_SpecLoopName, void @empty_99" [src/fpx.cpp:424->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 35 'specloopname' 'specloopname_ln424' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%specloopname_ln424 = specloopname void @_ssdm_op_SpecLoopName, void @empty_93" [src/fpx.cpp:424->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 35 'specloopname' 'specloopname_ln424' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 36 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_0_0_load_1 = load i2 %c_0_0_addr_1" [src/fpx.cpp:427->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 36 'load' 'c_0_0_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
 ST_3 : Operation 37 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_0_1_load_1 = load i2 %c_0_1_addr_1" [src/fpx.cpp:427->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 37 'load' 'c_0_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
 ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%trunc_ln427 = trunc i64 %c_0_0_load_1" [src/fpx.cpp:427->src/generic/fp_generic.cpp:95->src/fpx.cpp:121]   --->   Operation 38 'trunc' 'trunc_ln427' <Predicate = true> <Delay = 0.00>

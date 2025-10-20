@@ -275,7 +275,7 @@ _Z8fpneg503Pm.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i36.split:1 %specpipeline_ln78 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+for.inc.i36.split:1 %specpipeline_ln78 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln78"/></StgValue>
@@ -305,7 +305,7 @@ for.inc.i36.split:2 %speclooptripcount_ln78 = speclooptripcount void @_ssdm_op_S
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i36.split:3 %specloopname_ln79 = specloopname void @_ssdm_op_SpecLoopName, void @empty_85
+for.inc.i36.split:3 %specloopname_ln79 = specloopname void @_ssdm_op_SpecLoopName, void @empty_95
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln79"/></StgValue>
@@ -470,10 +470,10 @@ for.inc.i36.split:15 %or_ln95 = or i64 %tempReg, i64 %sub_ln95
 
 <Node id="30" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
-for.inc.i36.split:16 %tmp_232 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
+for.inc.i36.split:16 %tmp_329 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
 
 ]]></Node>
-<StgValue><ssdm name="tmp_232"/></StgValue>
+<StgValue><ssdm name="tmp_329"/></StgValue>
 </operation>
 
 <operation id="34" st_id="2" stage="1" lat="1">
@@ -485,7 +485,7 @@ for.inc.i36.split:16 %tmp_232 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64
 
 <Node id="31" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc.i36.split:17 %xor_ln81 = xor i1 %tmp_232, i1 1
+for.inc.i36.split:17 %xor_ln81 = xor i1 %tmp_329, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln81"/></StgValue>

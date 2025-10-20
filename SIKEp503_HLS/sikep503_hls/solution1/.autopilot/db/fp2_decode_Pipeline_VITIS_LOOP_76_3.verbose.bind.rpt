@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_Pipeline_VITIS_LOOP_76_3'
 ================================================================
-* Date:           Wed Oct  8 20:35:02 2025
+* Date:           Mon Oct 20 16:16:17 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -102,7 +102,7 @@ ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%reuse_reg = alloca i32 1"   --->  
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%i_225 = alloca i32 1" [src/sidh.cpp:64]   --->   Operation 19 'alloca' 'i_225' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_18, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_57, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%x_1_offset_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %x_1_offset"   --->   Operation 23 'read' 'x_1_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%x_0_offset_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %x_0_offset"   --->   Operation 24 'read' 'x_0_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%enc_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %enc"   --->   Operation 25 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
@@ -191,9 +191,9 @@ ST_11 : Operation 86 [1/1] (0.38ns)   --->   "%store_ln83 = store i64 %or_ln83, 
 ST_11 : Operation 87 [1/1] (0.38ns)   --->   "%store_ln91 = store i64 %zext_ln91_1, i64 %reuse_addr_reg" [src/sidh.cpp:91]   --->   Operation 87 'store' 'store_ln91' <Predicate = true> <Delay = 0.38>
 
 State 12 <SV = 11> <Delay = 2.12>
-ST_12 : Operation 88 [1/1] (0.00ns)   --->   "%specpipeline_ln64 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/sidh.cpp:64]   --->   Operation 88 'specpipeline' 'specpipeline_ln64' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 88 [1/1] (0.00ns)   --->   "%specpipeline_ln64 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sidh.cpp:64]   --->   Operation 88 'specpipeline' 'specpipeline_ln64' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 89 [1/1] (0.00ns)   --->   "%speclooptripcount_ln64 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 63, i64 63, i64 63" [src/sidh.cpp:64]   --->   Operation 89 'speclooptripcount' 'speclooptripcount_ln64' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 90 [1/1] (0.00ns)   --->   "%specloopname_ln76 = specloopname void @_ssdm_op_SpecLoopName, void @empty" [src/sidh.cpp:76]   --->   Operation 90 'specloopname' 'specloopname_ln76' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 90 [1/1] (0.00ns)   --->   "%specloopname_ln76 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [src/sidh.cpp:76]   --->   Operation 90 'specloopname' 'specloopname_ln76' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i8 %gmem_addr_3_read" [src/sidh.cpp:91]   --->   Operation 91 'zext' 'zext_ln91' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 92 [1/1] (0.70ns)   --->   "%shl_ln91 = shl i64 %zext_ln91, i64 %zext_ln83_1" [src/sidh.cpp:91]   --->   Operation 92 'shl' 'shl_ln91' <Predicate = true> <Delay = 0.70> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 93 [1/1] (0.00ns)   --->   "%reuse_reg_load = load i64 %reuse_reg"   --->   Operation 93 'load' 'reuse_reg_load' <Predicate = (addr_cmp)> <Delay = 0.00>
@@ -419,7 +419,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_18"/></StgValue>
+<StgValue><ssdm name="empty_41"/></StgValue>
 </bind>
 </comp>
 
@@ -437,7 +437,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -446,7 +446,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_74"/></StgValue>
 </bind>
 </comp>
 
@@ -455,7 +455,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_57"/></StgValue>
+<StgValue><ssdm name="empty_75"/></StgValue>
 </bind>
 </comp>
 
@@ -653,7 +653,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 <pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_7"/></StgValue>
 </bind>
 </comp>
 

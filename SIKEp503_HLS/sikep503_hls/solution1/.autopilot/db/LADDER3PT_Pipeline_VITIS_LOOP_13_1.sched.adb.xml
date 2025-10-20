@@ -307,7 +307,7 @@ _Z9fpcopy503PKmPm.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.split:2 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+for.inc.i.split:2 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln11"/></StgValue>
@@ -337,7 +337,7 @@ for.inc.i.split:3 %speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.split:4 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
+for.inc.i.split:4 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln13"/></StgValue>

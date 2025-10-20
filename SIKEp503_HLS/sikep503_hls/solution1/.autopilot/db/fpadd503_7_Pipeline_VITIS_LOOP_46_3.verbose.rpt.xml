@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_7_Pipeline_VITIS_LOOP_46_3'" level="0">
-<item name = "Date">Wed Oct  8 20:28:08 2025
+<item name = "Date">Mon Oct 20 14:26:05 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="p503x2_1_U">fpadd503_222_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="p503x2_1_U">fpadd503_1565_3_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -101,11 +101,11 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">14, 3, 1, 3</column>
 <column name="ap_done_int">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_114">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="c_0_address0_local">14, 3, 2, 6</column>
 <column name="c_1_address0_local">14, 3, 2, 6</column>
 <column name="carry_reg_111">9, 2, 1, 2</column>
-<column name="i_fu_62">9, 2, 4, 8</column>
+<column name="i_122_fu_62">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -116,7 +116,7 @@
 <column name="c_0_addr_reg_304">2, 0, 2, 0</column>
 <column name="c_1_addr_reg_309">2, 0, 2, 0</column>
 <column name="carry_reg_111">1, 0, 1, 0</column>
-<column name="i_fu_62">4, 0, 4, 0</column>
+<column name="i_122_fu_62">4, 0, 4, 0</column>
 <column name="sext_ln30_cast_reg_286">64, 0, 64, 0</column>
 <column name="trunc_ln46_reg_299">1, 0, 1, 0</column>
 </table>

@@ -836,7 +836,7 @@
 					<Obj>
 						<type>2</type>
 						<id>49</id>
-						<name>fp2sqr503_mont_4_Pipeline_VITIS_LOOP_378_1100</name>
+						<name>fp2sqr503_mont_4_Pipeline_VITIS_LOOP_378_1124</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -860,7 +860,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2sqr503_mont.4_Pipeline_VITIS_LOOP_378_1100&gt;</content>
+				<content>&lt;constant:fp2sqr503_mont.4_Pipeline_VITIS_LOOP_378_1124&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_20">
 				<Value>
@@ -1277,8 +1277,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>575</mMinLatency>
-			<mMaxLatency>1027</mMaxLatency>
+			<mMinLatency>545</mMinLatency>
+			<mMaxLatency>919</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode'
 ================================================================
-* Date:           Wed Oct  8 20:35:07 2025
+* Date:           Mon Oct 20 16:16:25 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
     |   min   |   max   |    min   |    max    | min |  max |   Type  |
     +---------+---------+----------+-----------+-----+------+---------+
-    |      690|     1142|  6.900 us|  11.420 us|  690|  1142|       no|
+    |      660|     1034|  6.600 us|  10.340 us|  660|  1034|       no|
     +---------+---------+----------+-----------+-----+------+---------+
 
     + Detail: 
@@ -111,7 +111,7 @@ State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %x_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_18, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_57, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln30 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:30->src/fpx.cpp:362->src/sidh.cpp:95]   --->   Operation 25 'specmemcore' 'specmemcore_ln30' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln30 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:30->src/fpx.cpp:362->src/sidh.cpp:95]   --->   Operation 26 'specmemcore' 'specmemcore_ln30' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln30 = specmemcore void @_ssdm_op_SpecMemCore, i64 %Montgomery_R2_1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:30->src/fpx.cpp:363->src/sidh.cpp:95]   --->   Operation 27 'specmemcore' 'specmemcore_ln30' <Predicate = true> <Delay = 0.00>

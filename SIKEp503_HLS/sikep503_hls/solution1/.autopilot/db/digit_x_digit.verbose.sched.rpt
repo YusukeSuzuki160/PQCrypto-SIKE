@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'digit_x_digit'
 ================================================================
-* Date:           Wed Oct  8 20:32:48 2025
+* Date:           Mon Oct 20 16:13:20 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -145,7 +145,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
  <State 1>: 6.710ns
 The critical path consists of the following:
 	wire read operation ('b_read', src/generic/fp_generic.cpp:152) on port 'b' (src/generic/fp_generic.cpp:152) [3]  (0.000 ns)
-	'mul' operation 64 bit ('albh', src/generic/fp_generic.cpp:170) [15]  (3.170 ns)
+	'mul' operation 64 bit ('ahbl', src/generic/fp_generic.cpp:171) [17]  (3.170 ns)
 	'add' operation 33 bit ('add_ln178', src/generic/fp_generic.cpp:178) [25]  (0.880 ns)
 	'add' operation 34 bit ('temp', src/generic/fp_generic.cpp:178) [27]  (0.890 ns)
 	'add' operation 33 bit ('add_ln185_1', src/generic/fp_generic.cpp:185) [40]  (0.880 ns)

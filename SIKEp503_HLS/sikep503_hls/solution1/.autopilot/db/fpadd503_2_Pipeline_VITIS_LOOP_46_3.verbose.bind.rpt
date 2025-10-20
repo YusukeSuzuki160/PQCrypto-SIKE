@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_2_Pipeline_VITIS_LOOP_46_3'
 ================================================================
-* Date:           Wed Oct  8 20:32:44 2025
+* Date:           Mon Oct 20 16:13:15 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -110,9 +110,9 @@ ST_1 : Operation 26 [2/2] (0.71ns)   --->   "%p503x2_1_load = load i3 %p503x2_1_
 ST_1 : Operation 56 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 56 'ret' 'ret_ln0' <Predicate = (icmp_ln46)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 4.13>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/generic/fp_generic.cpp:28]   --->   Operation 27 'specpipeline' 'specpipeline_ln28' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:28]   --->   Operation 27 'specpipeline' 'specpipeline_ln28' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%speclooptripcount_ln28 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:28]   --->   Operation 28 'speclooptripcount' 'speclooptripcount_ln28' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [src/generic/fp_generic.cpp:46]   --->   Operation 29 'specloopname' 'specloopname_ln46' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36" [src/generic/fp_generic.cpp:46]   --->   Operation 29 'specloopname' 'specloopname_ln46' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 30 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_0_load = load i2 %c_0_addr" [src/generic/fp_generic.cpp:48]   --->   Operation 30 'load' 'c_0_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
 ST_2 : Operation 31 [1/2] ( I:0.71ns O:0.71ns )   --->   "%c_1_load = load i2 %c_1_addr" [src/generic/fp_generic.cpp:48]   --->   Operation 31 'load' 'c_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
 ST_2 : Operation 32 [1/1] (0.41ns)   --->   "%select_ln48 = select i1 %trunc_ln46, i64 %c_1_load, i64 %c_0_load" [src/generic/fp_generic.cpp:48]   --->   Operation 32 'select' 'select_ln48' <Predicate = true> <Delay = 0.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -404,7 +404,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -440,7 +440,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_21"/></StgValue>
+<StgValue><ssdm name="empty_36"/></StgValue>
 </bind>
 </comp>
 

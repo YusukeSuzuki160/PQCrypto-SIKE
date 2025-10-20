@@ -971,7 +971,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>coeff_addr_17</name>
+						<name>coeff_addr_19</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -1029,7 +1029,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>coeff_addr_18</name>
+						<name>coeff_addr_20</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -1087,7 +1087,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>coeff_addr_19</name>
+						<name>coeff_addr_21</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -1145,7 +1145,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>coeff_addr_20</name>
+						<name>coeff_addr_22</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -6057,8 +6057,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>5022</mMinLatency>
-			<mMaxLatency>59592</mMaxLatency>
+			<mMinLatency>4747</mMinLatency>
+			<mMaxLatency>53320</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -6104,8 +6104,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>1</mMinTripCount>
 			<mMaxTripCount>7</mMaxTripCount>
-			<mMinLatency>5021</mMinLatency>
-			<mMaxLatency>59591</mMaxLatency>
+			<mMinLatency>4746</mMinLatency>
+			<mMaxLatency>53319</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

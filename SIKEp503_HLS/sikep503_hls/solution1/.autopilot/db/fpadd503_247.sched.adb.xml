@@ -124,10 +124,10 @@ entry:4 %empty = trunc i32 %a_offset_read
 
 <Node id="14" bw="3" op_0_bw="32">
 <![CDATA[
-entry:5 %empty_174 = trunc i32 %b_offset_read
+entry:5 %empty_176 = trunc i32 %b_offset_read
 
 ]]></Node>
-<StgValue><ssdm name="empty_174"/></StgValue>
+<StgValue><ssdm name="empty_176"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -154,7 +154,7 @@ entry:6 %carry_168_loc = alloca i64 1
 
 <Node id="16" bw="7" op_0_bw="7" op_1_bw="3" op_2_bw="1" op_3_bw="3">
 <![CDATA[
-entry:7 %tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_174, i1 %b_offset4_read, i3 0
+entry:7 %tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_176, i1 %b_offset4_read, i3 0
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>

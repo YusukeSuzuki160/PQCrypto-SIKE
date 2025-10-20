@@ -871,7 +871,7 @@
 					<Obj>
 						<type>2</type>
 						<id>47</id>
-						<name>fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1101</name>
+						<name>fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -895,7 +895,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1101&gt;</content>
+				<content>&lt;constant:fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1125&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_21">
 				<Value>
@@ -1305,8 +1305,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>593</mMinLatency>
-			<mMaxLatency>1045</mMaxLatency>
+			<mMinLatency>563</mMinLatency>
+			<mMaxLatency>937</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1903,7 +1903,7 @@
 		<count>6</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1101_fu_74</first>
+			<first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125_fu_74</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

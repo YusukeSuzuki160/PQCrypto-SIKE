@@ -1,7 +1,7 @@
 #include <ap_int.h>
 #include <climits>
 #include <type_traits>
-#include "mpx_camba_mul.hpp"
+#include "mpx_comba_mul.hpp"
 // fp_generic_hls.cpp
 // Renamed from fp_generic.c for Vivado HLS optimization
 

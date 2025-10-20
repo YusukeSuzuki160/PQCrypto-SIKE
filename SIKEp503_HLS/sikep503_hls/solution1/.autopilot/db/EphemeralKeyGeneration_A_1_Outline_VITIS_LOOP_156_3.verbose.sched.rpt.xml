@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_156_3'" level="0">
-<item name = "Date">Wed Oct  8 20:34:11 2025
+<item name = "Date">Mon Oct 20 16:15:12 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.130 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">5022, 59592, 50.220 us, 0.596 ms, 5022, 59592, no</column>
+<column name="">4747, 53320, 47.470 us, 0.533 ms, 4747, 53320, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_156_3">5021, 59591, 5021 ~ 8513, -, -, 1 ~ 7, no</column>
+<column name="- VITIS_LOOP_156_3">4746, 53319, 4746 ~ 7617, -, -, 1 ~ 7, no</column>
 </table>
 </item>
 </section>

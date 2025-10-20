@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1'" level="0">
-<item name = "Date">Wed Oct  8 20:39:17 2025
+<item name = "Date">Mon Oct 20 14:40:40 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -116,7 +116,7 @@
 <column name="i_fu_74">9, 2, 6, 12</column>
 <column name="m_axi_gmem_0_AWADDR">14, 3, 64, 192</column>
 <column name="m_axi_gmem_0_WDATA">14, 3, 8, 24</column>
-<column name="t_84_address0_local">14, 3, 4, 12</column>
+<column name="t_108_address0_local">14, 3, 4, 12</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -207,9 +207,9 @@
 <column name="m_axi_gmem_0_BRESP">in, 2, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_0_BID">in, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_0_BUSER">in, 1, m_axi, gmem, pointer</column>
-<column name="t_84_address0">out, 4, ap_memory, t_84, array</column>
-<column name="t_84_ce0">out, 1, ap_memory, t_84, array</column>
-<column name="t_84_q0">in, 64, ap_memory, t_84, array</column>
+<column name="t_108_address0">out, 4, ap_memory, t_108, array</column>
+<column name="t_108_ce0">out, 1, ap_memory, t_108, array</column>
+<column name="t_108_q0">in, 64, ap_memory, t_108, array</column>
 <column name="PublicKeyA">in, 64, ap_none, PublicKeyA, scalar</column>
 </table>
 </item>

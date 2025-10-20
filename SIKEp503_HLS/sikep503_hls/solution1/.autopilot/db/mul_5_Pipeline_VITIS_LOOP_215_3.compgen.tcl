@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 412 \
+    id 461 \
     name a \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 413 \
+    id 462 \
     name b_0 \
     reset_level 1 \
     sync_rst true \
@@ -49,7 +49,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 414 \
+    id 463 \
     name b_1 \
     reset_level 1 \
     sync_rst true \
@@ -67,7 +67,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 407 \
+    id 456 \
     name select_ln207 \
     type other \
     dir I \
@@ -75,14 +75,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_select_ln207 \
     op interface \
-    ports { select_ln207 { I 4 vector } } \
+    ports { select_ln207 { I 2 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 408 \
+    id 457 \
     name zext_ln210 \
     type other \
     dir I \
@@ -90,14 +90,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_zext_ln210 \
     op interface \
-    ports { zext_ln210 { I 4 vector } } \
+    ports { zext_ln210 { I 2 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 409 \
+    id 458 \
     name zext_ln207 \
     type other \
     dir I \
@@ -105,14 +105,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_zext_ln207 \
     op interface \
-    ports { zext_ln207 { I 69 vector } } \
+    ports { zext_ln207 { I 259 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 410 \
+    id 459 \
     name zext_ln215 \
     type other \
     dir I \
@@ -120,29 +120,29 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_zext_ln215 \
     op interface \
-    ports { zext_ln215 { I 3 vector } } \
+    ports { zext_ln215 { I 1 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 411 \
-    name zext_ln207_34 \
+    id 460 \
+    name zext_ln207_17 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_zext_ln207_34 \
+    corename dc_zext_ln207_17 \
     op interface \
-    ports { zext_ln207_34 { I 4 vector } } \
+    ports { zext_ln207_17 { I 2 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 415 \
+    id 464 \
     name sum_13_out \
     type other \
     dir O \
@@ -150,7 +150,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sum_13_out \
     op interface \
-    ports { sum_13_out { O 133 vector } sum_13_out_ap_vld { O 1 bit } } \
+    ports { sum_13_out { O 515 vector } sum_13_out_ap_vld { O 1 bit } } \
 } "
 }
 

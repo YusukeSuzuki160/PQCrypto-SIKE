@@ -1198,7 +1198,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>R_Z_addr_7</name>
+						<name>R_Z_addr_13</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -4410,7 +4410,7 @@
 		<count>25</count>
 		<item_version>0</item_version>
 		<item class_id="53" tracking_level="0" version="0">
-			<first>R_Z_addr_7_gep_fu_71</first>
+			<first>R_Z_addr_13_gep_fu_71</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4755,7 +4755,7 @@
 		<count>9</count>
 		<item_version>0</item_version>
 		<item>
-			<first>R_Z_addr_7_reg_267</first>
+			<first>R_Z_addr_13_reg_267</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

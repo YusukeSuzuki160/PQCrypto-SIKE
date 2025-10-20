@@ -62,7 +62,7 @@ reg   [3:0] ap_sig_allocacmp_i;
 reg    xPQ_1_ce0_local;
 reg    R2_X_2_we0_local;
 reg    R2_X_2_ce0_local;
-wire   [4:0] tmp_134_cast_fu_95_p3;
+wire   [4:0] tmp_233_cast_fu_95_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -257,7 +257,7 @@ assign ap_ready = ap_ready_sig;
 
 assign icmp_ln13_fu_83_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign tmp_134_cast_fu_95_p3 = {{1'd1}, {ap_sig_allocacmp_i}};
+assign tmp_233_cast_fu_95_p3 = {{1'd1}, {ap_sig_allocacmp_i}};
 
 assign xPQ_1_address0 = zext_ln14_fu_103_p1;
 
@@ -265,6 +265,6 @@ assign xPQ_1_ce0 = xPQ_1_ce0_local;
 
 assign zext_ln13_fu_113_p1 = i_reg_124;
 
-assign zext_ln14_fu_103_p1 = tmp_134_cast_fu_95_p3;
+assign zext_ln14_fu_103_p1 = tmp_233_cast_fu_95_p3;
 
 endmodule //sikep503_kem_enc_hw_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1211

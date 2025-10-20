@@ -1368,7 +1368,7 @@
 					<Obj>
 						<type>2</type>
 						<id>70</id>
-						<name>fp2mul503_mont_126_Pipeline_VITIS_LOOP_378_1154</name>
+						<name>fp2mul503_mont_126_Pipeline_VITIS_LOOP_378_1178</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1392,7 +1392,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.126_Pipeline_VITIS_LOOP_378_1154&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.126_Pipeline_VITIS_LOOP_378_1178&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_31">
 				<Value>
@@ -1492,7 +1492,7 @@
 					<Obj>
 						<type>2</type>
 						<id>90</id>
-						<name>fp2mul503_mont_126_Pipeline_VITIS_LOOP_378_1155</name>
+						<name>fp2mul503_mont_126_Pipeline_VITIS_LOOP_378_1179</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1516,7 +1516,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.126_Pipeline_VITIS_LOOP_378_1155&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.126_Pipeline_VITIS_LOOP_378_1179&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_35">
 				<Value>
@@ -1554,7 +1554,7 @@
 					<Obj>
 						<type>2</type>
 						<id>99</id>
-						<name>fp2mul503_mont_126_Pipeline_VITIS_LOOP_160_1156</name>
+						<name>fp2mul503_mont_126_Pipeline_VITIS_LOOP_160_1180</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1578,7 +1578,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.126_Pipeline_VITIS_LOOP_160_1156&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.126_Pipeline_VITIS_LOOP_160_1180&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2157,8 +2157,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>473</mMinLatency>
-			<mMaxLatency>811</mMaxLatency>
+			<mMinLatency>443</mMinLatency>
+			<mMaxLatency>736</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

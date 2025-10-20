@@ -819,7 +819,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>b_addr_3</name>
+						<name>b_addr_13</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -3980,7 +3980,7 @@
 			</second>
 		</item>
 		<item>
-			<first>b_addr_3_gep_fu_71</first>
+			<first>b_addr_13_gep_fu_71</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4293,7 +4293,7 @@
 		<count>9</count>
 		<item_version>0</item_version>
 		<item>
-			<first>b_addr_3_reg_261</first>
+			<first>b_addr_13_reg_261</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

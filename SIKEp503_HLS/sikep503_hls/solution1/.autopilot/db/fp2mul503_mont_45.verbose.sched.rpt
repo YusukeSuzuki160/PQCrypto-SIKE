@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_45'
 ================================================================
-* Date:           Wed Oct  8 20:33:57 2025
+* Date:           Mon Oct 20 16:14:52 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+-----------+-----+------+---------+
-    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
-    |   min   |   max   |    min   |    max    | min |  max |   Type  |
-    +---------+---------+----------+-----------+-----+------+---------+
-    |      609|     1059|  6.090 us|  10.590 us|  609|  1059|       no|
-    +---------+---------+----------+-----------+-----+------+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      564|      930|  5.640 us|  9.300 us|  564|  930|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -107,22 +107,22 @@ ST_4 : Operation 24 [1/2] (0.00ns)   --->   "%call_ln183 = call void @mp_mul.59,
 
 State 5 <SV = 4> <Delay = 0.00>
 ST_5 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1, i64 %c_0, i64 %c_1, i64 %t1"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_5 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1121, i64 %coeff, i64 %t2"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1145, i64 %coeff, i64 %t2"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_5 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.48>
 ST_6 : Operation 28 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1, i64 %c_0, i64 %c_1, i64 %t1"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1121, i64 %coeff, i64 %t2"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1145, i64 %coeff, i64 %t2"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_6 : Operation 30 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1, i64 %tt1, i64 %tt2, i64 %tt3, i1 %borrow_loc"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.27>
 ST_7 : Operation 31 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_loc"   --->   Operation 31 'load' 'borrow_loc_load' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 32 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
-ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1122, i64 %tt1, i64 %tt2"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1146, i64 %tt1, i64 %tt2"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 1.48>
 ST_8 : Operation 34 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_187_1, i64 %tt3, i1 %borrow_loc_load, i64 %p503_1"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_8 : Operation 35 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1122, i64 %tt1, i64 %tt2"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 35 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1146, i64 %tt1, i64 %tt2"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln191 = call void @rdc_mont.7, i64 %tt3, i64 %c_0, i64 %p503p1_1" [src/fpx.cpp:191]   --->   Operation 36 'call' 'call_ln191' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -133,10 +133,10 @@ ST_10 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln191 = call void @rdc_mont.
 ST_10 : Operation 39 [1/2] (0.00ns)   --->   "%call_ln193 = call void @mp_mul.6117, i64 %t1, i64 %t2, i64 %tt2" [src/fpx.cpp:193]   --->   Operation 39 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1123, i64 %tt2, i64 %tt1"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1147, i64 %tt2, i64 %tt1"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 1.48>
-ST_12 : Operation 41 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1123, i64 %tt2, i64 %tt1"   --->   Operation 41 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 41 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1147, i64 %tt2, i64 %tt1"   --->   Operation 41 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 0.00>
 ST_13 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln195 = call void @rdc_mont.7, i64 %tt2, i64 %c_1, i64 %p503p1_1" [src/fpx.cpp:195]   --->   Operation 42 'call' 'call_ln195' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -206,7 +206,7 @@ The critical path consists of the following:
 
  <State 12>: 1.481ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1123' [38]  (1.481 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1147' [38]  (1.481 ns)
 
  <State 13>: 0.000ns
 The critical path consists of the following:

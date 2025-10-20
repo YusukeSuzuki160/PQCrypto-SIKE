@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_44_Pipeline_VITIS_LOOP_378_1148'
 ================================================================
-* Date:           Wed Oct  8 20:19:20 2025
+* Date:           Mon Oct 20 14:40:09 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -238,8 +238,8 @@ ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%carry = phi i1 %tmp, void %for.inc
 ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8"   --->   Operation 29 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 30 [1/2] ( I:0.71ns O:0.71ns )   --->   "%coeff_load = load i6 %coeff_addr" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 30 'load' 'coeff_load' <Predicate = (!icmp_ln378)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 48> <RAM>
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln381_15 = zext i6 %lshr_ln381_s" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 31 'zext' 'zext_ln381_15' <Predicate = (!icmp_ln378)> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%coeff_addr_14 = getelementptr i64 %coeff, i64 0, i64 %zext_ln381_15" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 32 'getelementptr' 'coeff_addr_14' <Predicate = (!icmp_ln378)> <Delay = 0.00>
-ST_2 : Operation 33 [2/2] (0.71ns)   --->   "%coeff_load_8 = load i6 %coeff_addr_14" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 33 'load' 'coeff_load_8' <Predicate = (!icmp_ln378)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 48> <RAM>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%coeff_addr_18 = getelementptr i64 %coeff, i64 0, i64 %zext_ln381_15" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 32 'getelementptr' 'coeff_addr_18' <Predicate = (!icmp_ln378)> <Delay = 0.00>
+ST_2 : Operation 33 [2/2] (0.71ns)   --->   "%coeff_load_8 = load i6 %coeff_addr_18" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 33 'load' 'coeff_load_8' <Predicate = (!icmp_ln378)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 48> <RAM>
 ST_2 : Operation 55 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 55 'ret' 'ret_ln0' <Predicate = (icmp_ln378)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 3.00>
@@ -248,7 +248,7 @@ ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%specpipeline_ln376 = specpipeline 
 ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%specloopname_ln378 = specloopname void @_ssdm_op_SpecLoopName, void @empty_76" [src/fpx.cpp:378->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 36 'specloopname' 'specloopname_ln378' <Predicate = (!icmp_ln378)> <Delay = 0.00>
 ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln381_19 = zext i1 %carry" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 37 'zext' 'zext_ln381_19' <Predicate = (!icmp_ln378)> <Delay = 0.00>
 ST_3 : Operation 38 [1/1] (1.14ns)   --->   "%tempReg = add i64 %coeff_load, i64 %zext_ln381_19" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 38 'add' 'tempReg' <Predicate = (!icmp_ln378)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 39 [1/2] ( I:0.71ns O:0.71ns )   --->   "%coeff_load_8 = load i6 %coeff_addr_14" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 39 'load' 'coeff_load_8' <Predicate = (!icmp_ln378)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 48> <RAM>
+ST_3 : Operation 39 [1/2] ( I:0.71ns O:0.71ns )   --->   "%coeff_load_8 = load i6 %coeff_addr_18" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 39 'load' 'coeff_load_8' <Predicate = (!icmp_ln378)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 48> <RAM>
 ST_3 : Operation 40 [1/1] (1.14ns)   --->   "%add_ln381_25 = add i64 %coeff_load_8, i64 %tempReg" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 40 'add' 'add_ln381_25' <Predicate = (!icmp_ln378)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%t2_addr = getelementptr i64 %t2, i64 0, i64 %zext_ln378" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 41 'getelementptr' 't2_addr' <Predicate = (!icmp_ln378)> <Delay = 0.00>
 ST_3 : Operation 42 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln381 = store i64 %add_ln381_25, i3 %t2_addr" [src/fpx.cpp:381->src/fpx.cpp:134->src/fpx.cpp:185]   --->   Operation 42 'store' 'store_ln381' <Predicate = (!icmp_ln378)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
@@ -312,7 +312,7 @@ carry                 (phi              ) [ 0111]
 speclooptripcount_ln0 (speclooptripcount) [ 0000]
 coeff_load            (load             ) [ 0101]
 zext_ln381_15         (zext             ) [ 0000]
-coeff_addr_14         (getelementptr    ) [ 0101]
+coeff_addr_18         (getelementptr    ) [ 0101]
 zext_ln378            (zext             ) [ 0000]
 specpipeline_ln376    (specpipeline     ) [ 0000]
 specloopname_ln378    (specloopname     ) [ 0000]
@@ -709,7 +709,7 @@ ret_ln0               (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="97" class="1004" name="coeff_addr_14_gep_fu_97">
+<comp id="97" class="1004" name="coeff_addr_18_gep_fu_97">
 <pin_list>
 <pin id="98" dir="0" index="0" bw="64" slack="0"/>
 <pin id="99" dir="0" index="1" bw="1" slack="0"/>
@@ -718,7 +718,7 @@ ret_ln0               (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="coeff_addr_14/2 "/>
+<opset="coeff_addr_18/2 "/>
 </bind>
 </comp>
 
@@ -1180,13 +1180,13 @@ ret_ln0               (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="333" class="1005" name="coeff_addr_14_reg_333">
+<comp id="333" class="1005" name="coeff_addr_18_reg_333">
 <pin_list>
 <pin id="334" dir="0" index="0" bw="6" slack="1"/>
 <pin id="335" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
-<opset="coeff_addr_14 "/>
+<opset="coeff_addr_18 "/>
 </bind>
 </comp>
 
@@ -1415,7 +1415,7 @@ ret_ln0               (ret              ) [ 0000]
 		lshr_ln381_s : 6
 		store_ln376 : 3
 	State 2
-		coeff_addr_14 : 1
+		coeff_addr_18 : 1
 		coeff_load_8 : 2
 	State 3
 		tempReg : 1
@@ -1493,7 +1493,7 @@ N/A
 |                     |   FF   |
 +---------------------+--------+
 |    carry_reg_118    |    1   |
-|coeff_addr_14_reg_333|    6   |
+|coeff_addr_18_reg_333|    6   |
 |  coeff_addr_reg_317 |    6   |
 |  coeff_load_reg_327 |   64   |
 |    i_183_reg_301    |    4   |

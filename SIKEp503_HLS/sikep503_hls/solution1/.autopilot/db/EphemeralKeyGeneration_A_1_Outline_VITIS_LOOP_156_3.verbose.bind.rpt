@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_156_3'
 ================================================================
-* Date:           Wed Oct  8 20:34:11 2025
+* Date:           Mon Oct 20 16:15:12 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,34 +29,34 @@
     |  Latency (cycles) |  Latency (absolute)  |   Interval   | Pipeline|
     |   min   |   max   |    min    |    max   |  min |  max  |   Type  |
     +---------+---------+-----------+----------+------+-------+---------+
-    |     5022|    59592|  50.220 us|  0.596 ms|  5022|  59592|       no|
+    |     4747|    53320|  47.470 us|  0.533 ms|  4747|  53320|       no|
     +---------+---------+-----------+----------+------+-------+---------+
 
     + Detail: 
         * Instance: 
-        +---------------------------------+----------------------+---------+---------+----------+-----------+-----+------+---------+
-        |                                 |                      |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
-        |             Instance            |        Module        |   min   |   max   |    min   |    max    | min |  max |   Type  |
-        +---------------------------------+----------------------+---------+---------+----------+-----------+-----+------+---------+
-        |grp_fpadd503_247_fu_184          |fpadd503_247          |       51|       51|  0.510 us|   0.510 us|   51|    51|       no|
-        |grp_fpsub503_4_fu_203            |fpsub503_4            |       31|       31|  0.310 us|   0.310 us|   31|    31|       no|
-        |grp_fp2mul503_mont_57_fu_222     |fp2mul503_mont_57     |      609|     1059|  6.090 us|  10.590 us|  609|  1059|       no|
-        |grp_fp2mul503_mont_126_3_fu_241  |fp2mul503_mont_126_3  |      473|      811|  4.730 us|   8.110 us|  473|   811|       no|
-        |grp_fp2mul503_mont_45_fu_253     |fp2mul503_mont_45     |      609|     1059|  6.090 us|  10.590 us|  609|  1059|       no|
-        |grp_fpsub503_4_269_fu_265        |fpsub503_4_269        |       39|       39|  0.390 us|   0.390 us|   39|    39|       no|
-        |grp_fp2sqr503_mont_6_2_fu_283    |fp2sqr503_mont_6_2    |      575|     1027|  5.750 us|  10.270 us|  575|  1027|       no|
-        |grp_fp2sqr503_mont_fu_293        |fp2sqr503_mont        |      593|     1045|  5.930 us|  10.450 us|  593|  1045|       no|
-        |grp_fpadd503_246_fu_304          |fpadd503_246          |       51|       51|  0.510 us|   0.510 us|   51|    51|       no|
-        |grp_fpsub503_4_1_fu_318          |fpsub503_4_1          |       39|       39|  0.390 us|   0.390 us|   39|    39|       no|
-        |grp_fp2mul503_mont_1_fu_331      |fp2mul503_mont_1      |      609|     1059|  6.090 us|  10.590 us|  609|  1059|       no|
-        +---------------------------------+----------------------+---------+---------+----------+-----------+-----+------+---------+
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                 |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |             Instance            |        Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_fpadd503_247_fu_184          |fpadd503_247          |       51|       51|  0.510 us|  0.510 us|   51|   51|       no|
+        |grp_fpsub503_4_fu_203            |fpsub503_4            |       31|       31|  0.310 us|  0.310 us|   31|   31|       no|
+        |grp_fp2mul503_mont_57_fu_222     |fp2mul503_mont_57     |      564|      930|  5.640 us|  9.300 us|  564|  930|       no|
+        |grp_fp2mul503_mont_126_3_fu_241  |fp2mul503_mont_126_3  |      443|      736|  4.430 us|  7.360 us|  443|  736|       no|
+        |grp_fp2mul503_mont_45_fu_253     |fp2mul503_mont_45     |      564|      930|  5.640 us|  9.300 us|  564|  930|       no|
+        |grp_fpsub503_4_269_fu_265        |fpsub503_4_269        |       39|       39|  0.390 us|  0.390 us|   39|   39|       no|
+        |grp_fp2sqr503_mont_6_2_fu_283    |fp2sqr503_mont_6_2    |      545|      919|  5.450 us|  9.190 us|  545|  919|       no|
+        |grp_fp2sqr503_mont_fu_293        |fp2sqr503_mont        |      571|      945|  5.710 us|  9.450 us|  571|  945|       no|
+        |grp_fpadd503_246_fu_304          |fpadd503_246          |       51|       51|  0.510 us|  0.510 us|   51|   51|       no|
+        |grp_fpsub503_4_1_fu_318          |fpsub503_4_1          |       39|       39|  0.390 us|  0.390 us|   39|   39|       no|
+        |grp_fp2mul503_mont_1_fu_331      |fp2mul503_mont_1      |      580|      946|  5.800 us|  9.460 us|  580|  946|       no|
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
         +--------------------+---------+---------+-------------+-----------+-----------+-------+----------+
         |                    |  Latency (cycles) |  Iteration  |  Initiation Interval  |  Trip |          |
         |      Loop Name     |   min   |   max   |   Latency   |  achieved |   target  | Count | Pipelined|
         +--------------------+---------+---------+-------------+-----------+-----------+-------+----------+
-        |- VITIS_LOOP_156_3  |     5021|    59591|  5021 ~ 8513|          -|          -|  1 ~ 7|        no|
+        |- VITIS_LOOP_156_3  |     4746|    53319|  4746 ~ 7617|          -|          -|  1 ~ 7|        no|
         +--------------------+---------+---------+-------------+-----------+-----------+-------+----------+
 
 ============================================================
@@ -141,10 +141,10 @@ ST_2 : Operation 42 [1/1] (0.88ns)   --->   "%add_ln156 = add i32 %i, i32 1" [sr
 ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln156 = br i1 %icmp_ln156, void %for.inc72.split, void %for.inc103.loopexit.exitStub" [src/sidh.cpp:156]   --->   Operation 43 'br' 'br_ln156' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%trunc_ln156 = trunc i32 %i" [src/sidh.cpp:156]   --->   Operation 44 'trunc' 'trunc_ln156' <Predicate = (!icmp_ln156)> <Delay = 0.00>
 ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%coeff_addr = getelementptr i64 %coeff, i64 0, i64 8" [src/sidh.cpp:155]   --->   Operation 45 'getelementptr' 'coeff_addr' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%coeff_addr_17 = getelementptr i64 %coeff, i64 0, i64 40" [src/sidh.cpp:161]   --->   Operation 46 'getelementptr' 'coeff_addr_17' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%coeff_addr_18 = getelementptr i64 %coeff, i64 0, i64 32" [src/sidh.cpp:161]   --->   Operation 47 'getelementptr' 'coeff_addr_18' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%coeff_addr_19 = getelementptr i64 %coeff, i64 0, i64 24" [src/sidh.cpp:161]   --->   Operation 48 'getelementptr' 'coeff_addr_19' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%coeff_addr_20 = getelementptr i64 %coeff, i64 0, i64 16" [src/sidh.cpp:161]   --->   Operation 49 'getelementptr' 'coeff_addr_20' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%coeff_addr_19 = getelementptr i64 %coeff, i64 0, i64 40" [src/sidh.cpp:161]   --->   Operation 46 'getelementptr' 'coeff_addr_19' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%coeff_addr_20 = getelementptr i64 %coeff, i64 0, i64 32" [src/sidh.cpp:161]   --->   Operation 47 'getelementptr' 'coeff_addr_20' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%coeff_addr_21 = getelementptr i64 %coeff, i64 0, i64 24" [src/sidh.cpp:161]   --->   Operation 48 'getelementptr' 'coeff_addr_21' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%coeff_addr_22 = getelementptr i64 %coeff, i64 0, i64 16" [src/sidh.cpp:161]   --->   Operation 49 'getelementptr' 'coeff_addr_22' <Predicate = (!icmp_ln156)> <Delay = 0.00>
 ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %trunc_ln156, i4 0" [src/sidh.cpp:159]   --->   Operation 50 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln156)> <Delay = 0.00>
 ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln159 = zext i7 %tmp_s" [src/sidh.cpp:159]   --->   Operation 51 'zext' 'zext_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
 ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_14 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %trunc_ln156, i4 8" [src/sidh.cpp:159]   --->   Operation 52 'bitconcatenate' 'tmp_14' <Predicate = (!icmp_ln156)> <Delay = 0.00>
@@ -165,14 +165,14 @@ ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore vo
 ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i7 %pts_Z_addr, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 67 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
 ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 68 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
 ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 69 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_17, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 70 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_17, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 71 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_18, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 72 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_18, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 73 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 74 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 75 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 76 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
-ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 77 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 70 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_19, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 71 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 72 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_20, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 73 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_21, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 74 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_21, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 75 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_22, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 76 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i6 %coeff_addr_22, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 77 'specmemcore' 'specmemcore_ln159' <Predicate = (!icmp_ln156)> <Delay = 0.00>
 ST_2 : Operation 78 [2/2] (1.90ns)   --->   "%call_ln109 = call void @fpadd503.247, i64 %pts_X, i32 %i, i1 0, i64 %pts_Z, i32 %i, i1 0, i64 %t0, i64 %p503x2_1" [src/fpx.cpp:109->src/ec_isogeny.cpp:66->src/sidh.cpp:159]   --->   Operation 78 'call' 'call_ln109' <Predicate = (!icmp_ln156)> <Delay = 1.90> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 79 [1/1] (0.38ns)   --->   "%store_ln122 = store i32 %add_ln156, i32 %i_282" [src/sidh.cpp:122]   --->   Operation 79 'store' 'store_ln122' <Predicate = (!icmp_ln156)> <Delay = 0.38>
 ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 80 'ret' 'ret_ln0' <Predicate = (icmp_ln156)> <Delay = 0.00>
@@ -273,7 +273,7 @@ ST_30 : Operation 118 [2/2] (0.00ns)   --->   "%call_ln79 = call void @fp2mul503
 
 State 31 <SV = 30> <Delay = 0.00>
 ST_31 : Operation 119 [1/1] (0.00ns)   --->   "%speclooptripcount_ln158 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 7, i64 4" [src/sidh.cpp:158]   --->   Operation 119 'speclooptripcount' 'speclooptripcount_ln158' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 120 [1/1] (0.00ns)   --->   "%specloopname_ln156 = specloopname void @_ssdm_op_SpecLoopName, void @empty_52" [src/sidh.cpp:156]   --->   Operation 120 'specloopname' 'specloopname_ln156' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 120 [1/1] (0.00ns)   --->   "%specloopname_ln156 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [src/sidh.cpp:156]   --->   Operation 120 'specloopname' 'specloopname_ln156' <Predicate = true> <Delay = 0.00>
 ST_31 : Operation 121 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 207, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 121 'specmemcore' 'specmemcore_ln159' <Predicate = true> <Delay = 0.00>
 ST_31 : Operation 122 [1/1] (0.00ns)   --->   "%specmemcore_ln159 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 17, i64 18446744073709551615" [src/sidh.cpp:159]   --->   Operation 122 'specmemcore' 'specmemcore_ln159' <Predicate = true> <Delay = 0.00>
 ST_31 : Operation 123 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 123 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
@@ -367,10 +367,10 @@ add_ln156               (add              ) [ 00000000000000000000000000000000]
 br_ln156                (br               ) [ 00000000000000000000000000000000]
 trunc_ln156             (trunc            ) [ 00000000000000000000000000000000]
 coeff_addr              (getelementptr    ) [ 00000000000000000000000000000000]
-coeff_addr_17           (getelementptr    ) [ 00000000000000000000000000000000]
-coeff_addr_18           (getelementptr    ) [ 00000000000000000000000000000000]
 coeff_addr_19           (getelementptr    ) [ 00000000000000000000000000000000]
 coeff_addr_20           (getelementptr    ) [ 00000000000000000000000000000000]
+coeff_addr_21           (getelementptr    ) [ 00000000000000000000000000000000]
+coeff_addr_22           (getelementptr    ) [ 00000000000000000000000000000000]
 tmp_s                   (bitconcatenate   ) [ 00000000000000000000000000000000]
 zext_ln159              (zext             ) [ 00000000000000000000000000000000]
 tmp_14                  (bitconcatenate   ) [ 00000000000000000000000000000000]
@@ -887,7 +887,7 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 <pin id="89" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_52"/></StgValue>
+<StgValue><ssdm name="empty_26"/></StgValue>
 </bind>
 </comp>
 
@@ -971,7 +971,7 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="124" class="1004" name="coeff_addr_17_gep_fu_124">
+<comp id="124" class="1004" name="coeff_addr_19_gep_fu_124">
 <pin_list>
 <pin id="125" dir="0" index="0" bw="64" slack="0"/>
 <pin id="126" dir="0" index="1" bw="1" slack="0"/>
@@ -980,11 +980,11 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="coeff_addr_17/2 "/>
+<opset="coeff_addr_19/2 "/>
 </bind>
 </comp>
 
-<comp id="132" class="1004" name="coeff_addr_18_gep_fu_132">
+<comp id="132" class="1004" name="coeff_addr_20_gep_fu_132">
 <pin_list>
 <pin id="133" dir="0" index="0" bw="64" slack="0"/>
 <pin id="134" dir="0" index="1" bw="1" slack="0"/>
@@ -993,11 +993,11 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="coeff_addr_18/2 "/>
+<opset="coeff_addr_20/2 "/>
 </bind>
 </comp>
 
-<comp id="140" class="1004" name="coeff_addr_19_gep_fu_140">
+<comp id="140" class="1004" name="coeff_addr_21_gep_fu_140">
 <pin_list>
 <pin id="141" dir="0" index="0" bw="64" slack="0"/>
 <pin id="142" dir="0" index="1" bw="1" slack="0"/>
@@ -1006,11 +1006,11 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="coeff_addr_19/2 "/>
+<opset="coeff_addr_21/2 "/>
 </bind>
 </comp>
 
-<comp id="148" class="1004" name="coeff_addr_20_gep_fu_148">
+<comp id="148" class="1004" name="coeff_addr_22_gep_fu_148">
 <pin_list>
 <pin id="149" dir="0" index="0" bw="64" slack="0"/>
 <pin id="150" dir="0" index="1" bw="1" slack="0"/>
@@ -1019,7 +1019,7 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="coeff_addr_20/2 "/>
+<opset="coeff_addr_22/2 "/>
 </bind>
 </comp>
 
@@ -1768,15 +1768,15 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 |----------|---------------------------------|---------|---------|---------|---------|---------|---------|
 |          |     grp_fpadd503_247_fu_184     |    0    |    0    |  3.096  |   128   |   1833  |    0    |
 |          |      grp_fpsub503_4_fu_203      |    0    |    0    |  2.322  |   116   |   1263  |    0    |
-|          |   grp_fp2mul503_mont_57_fu_222  |    0    |    64   | 17.3566 |   3667  |   9569  |    0    |
-|          | grp_fp2mul503_mont_126_3_fu_241 |    0    |    64   | 15.2901 |   3602  |   9405  |    0    |
-|          |   grp_fp2mul503_mont_45_fu_253  |    0    |    80   | 18.0649 |   4276  |  10054  |    0    |
+|          |   grp_fp2mul503_mont_57_fu_222  |    0    |   132   | 21.4894 |   7566  |  16551  |    0    |
+|          | grp_fp2mul503_mont_126_3_fu_241 |    0    |   132   |  19.423 |   7494  |  16371  |    0    |
+|          |   grp_fp2mul503_mont_45_fu_253  |    0    |   182   | 24.2641 |  10127  |  20519  |    0    |
 |   call   |    grp_fpsub503_4_269_fu_265    |    0    |    0    |  2.322  |   115   |   1277  |    0    |
-|          |  grp_fp2sqr503_mont_6_2_fu_283  |    0    |    96   | 18.5833 |   5379  |  12621  |    0    |
-|          |    grp_fp2sqr503_mont_fu_293    |    0    |    96   | 20.6497 |   5455  |  12814  |    0    |
+|          |  grp_fp2sqr503_mont_6_2_fu_283  |    0    |   164   | 22.7161 |   9271  |  19587  |    0    |
+|          |    grp_fp2sqr503_mont_fu_293    |    0    |   164   | 24.7826 |   9509  |  19794  |    0    |
 |          |     grp_fpadd503_246_fu_304     |    0    |    0    |  2.709  |   128   |   1838  |    0    |
 |          |     grp_fpsub503_4_1_fu_318     |    0    |    0    |  1.935  |   100   |   1240  |    0    |
-|          |   grp_fp2mul503_mont_1_fu_331   |    0    |    64   | 18.0649 |   3683  |   9531  |    0    |
+|          |   grp_fp2mul503_mont_1_fu_331   |    0    |   132   | 22.1977 |   7737  |  16511  |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|---------|---------|
 |   icmp   |        icmp_ln156_fu_355        |    0    |    0    |    0    |    0    |    39   |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|---------|---------|
@@ -1792,7 +1792,7 @@ br_ln156                (br               ) [ 00000000000000000000000000000000]
 |   zext   |        zext_ln159_fu_378        |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |       zext_ln159_2_fu_392       |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                 |    0    |   464   | 120.393 |  26649  |  71523  |    0    |
+|   Total  |                                 |    0    |   906   | 147.257 |  52291  |  116862 |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -1845,10 +1845,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    0   |   464  |   120  |  26649 |  71523 |    0   |
+|  Function |    0   |   906  |   147  |  52291 | 116862 |    0   |
 |   Memory  |    0   |    -   |    -   |   256  |   260  |    0   |
 |Multiplexer|    -   |    -   |    5   |    0   |   36   |    -   |
 |  Register |    -   |    -   |    -   |   96   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |   464  |   125  |  27001 |  71819 |    0   |
+|   Total   |    0   |   906  |   152  |  52643 | 117158 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

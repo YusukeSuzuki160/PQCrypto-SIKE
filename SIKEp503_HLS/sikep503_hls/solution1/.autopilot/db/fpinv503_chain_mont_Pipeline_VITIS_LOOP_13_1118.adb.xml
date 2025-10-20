@@ -303,10 +303,10 @@ for.inc.i140.split:5 %tt_load = load i3 %tt_addr
 
 <Node id="20" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i140.split:6 %a_addr_8 = getelementptr i64 %a, i64 0, i64 %zext_ln13
+for.inc.i140.split:6 %a_addr_22 = getelementptr i64 %a, i64 0, i64 %zext_ln13
 
 ]]></Node>
-<StgValue><ssdm name="a_addr_8"/></StgValue>
+<StgValue><ssdm name="a_addr_22"/></StgValue>
 </operation>
 
 <operation id="23" st_id="2" stage="1" lat="1">
@@ -318,7 +318,7 @@ for.inc.i140.split:6 %a_addr_8 = getelementptr i64 %a, i64 0, i64 %zext_ln13
 
 <Node id="21" bw="0" op_0_bw="64" op_1_bw="3">
 <![CDATA[
-for.inc.i140.split:7 %store_ln14 = store i64 %tt_load, i3 %a_addr_8
+for.inc.i140.split:7 %store_ln14 = store i64 %tt_load, i3 %a_addr_22
 
 ]]></Node>
 <StgValue><ssdm name="store_ln14"/></StgValue>
@@ -433,15 +433,15 @@ for.inc.i140.split:9 %br_ln13 = br void %for.inc.i140
 </dataflow>
 <dataflow id="93" from="tt_addr" to="tt_load" fromId="15" toId="21">
 </dataflow>
-<dataflow id="94" from="a" to="a_addr_8" fromId="36" toId="22">
+<dataflow id="94" from="a" to="a_addr_22" fromId="36" toId="22">
 </dataflow>
-<dataflow id="95" from="StgValue_67" to="a_addr_8" fromId="67" toId="22">
+<dataflow id="95" from="StgValue_67" to="a_addr_22" fromId="67" toId="22">
 </dataflow>
-<dataflow id="96" from="zext_ln13" to="a_addr_8" fromId="14" toId="22">
+<dataflow id="96" from="zext_ln13" to="a_addr_22" fromId="14" toId="22">
 </dataflow>
 <dataflow id="97" from="tt_load" to="store_ln14" fromId="21" toId="23">
 </dataflow>
-<dataflow id="98" from="a_addr_8" to="store_ln14" fromId="22" toId="23">
+<dataflow id="98" from="a_addr_22" to="store_ln14" fromId="22" toId="23">
 </dataflow>
 <dataflow id="99" from="icmp_ln13" to="StgValue_2" fromId="11" toId="2">
 </dataflow>

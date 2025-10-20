@@ -2063,8 +2063,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>171557</mMinLatency>
-        <mMaxLatency>366881</mMaxLatency>
+        <mMinLatency>142699</mMinLatency>
+        <mMaxLatency>249633</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -3029,15 +3029,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>192</second>
+              <second>1446</second>
             </item>
             <item>
               <first>FF</first>
-              <second>13218</second>
+              <second>29324</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>35072</second>
+              <second>76468</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3056,15 +3056,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>32</second>
+              <second>241</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2123</second>
+              <second>4782</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>5385</second>
+              <second>12276</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3083,15 +3083,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>32</second>
+              <second>241</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2150</second>
+              <second>4874</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>5431</second>
+              <second>12305</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3110,15 +3110,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>32</second>
+              <second>241</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2150</second>
+              <second>4874</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>5394</second>
+              <second>12268</second>
             </item>
             <item>
               <first>URAM</first>

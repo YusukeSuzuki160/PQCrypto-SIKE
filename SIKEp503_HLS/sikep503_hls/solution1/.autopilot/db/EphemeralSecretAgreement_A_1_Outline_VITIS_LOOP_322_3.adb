@@ -1043,7 +1043,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>coeff_addr_13</name>
+              <name>coeff_addr_19</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1087,7 +1087,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>coeff_addr_14</name>
+              <name>coeff_addr_20</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1131,7 +1131,7 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>coeff_addr_15</name>
+              <name>coeff_addr_21</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1175,7 +1175,7 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>coeff_addr_16</name>
+              <name>coeff_addr_22</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -5779,8 +5779,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>4552</mMinLatency>
-        <mMaxLatency>54734</mMaxLatency>
+        <mMinLatency>3803</mMinLatency>
+        <mMaxLatency>43660</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -5826,8 +5826,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>1</mMinTripCount>
         <mMaxTripCount>7</mMaxTripCount>
-        <mMinLatency>4551</mMinLatency>
-        <mMaxLatency>54733</mMaxLatency>
+        <mMinLatency>3802</mMinLatency>
+        <mMaxLatency>43659</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -7118,15 +7118,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>64</second>
+              <second>691</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3471</second>
+              <second>11466</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>11482</second>
+              <second>32233</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7145,15 +7145,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>48</second>
+              <second>466</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3017</second>
+              <second>8335</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>10660</second>
+              <second>24442</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7172,15 +7172,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>48</second>
+              <second>466</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3111</second>
+              <second>8438</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>10778</second>
+              <second>24608</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7199,15 +7199,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>64</second>
+              <second>691</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3513</second>
+              <second>11502</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>11412</second>
+              <second>32133</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7226,15 +7226,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>64</second>
+              <second>257</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4660</second>
+              <second>9626</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>13932</second>
+              <second>27611</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7253,15 +7253,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>64</second>
+              <second>482</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4632</second>
+              <second>9950</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>13802</second>
+              <second>27584</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7771,7 +7771,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>51</count>
+        <count>52</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -8256,6 +8256,33 @@
             <item>
               <first>LUT</first>
               <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_463_ce</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
             </item>
           </second>
         </item>
@@ -10510,7 +10537,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_13_gep_fu_122</first>
+        <first>coeff_addr_19_gep_fu_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10518,7 +10545,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_14_gep_fu_130</first>
+        <first>coeff_addr_20_gep_fu_130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10526,7 +10553,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_15_gep_fu_138</first>
+        <first>coeff_addr_21_gep_fu_138</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10534,7 +10561,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_16_gep_fu_146</first>
+        <first>coeff_addr_22_gep_fu_146</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

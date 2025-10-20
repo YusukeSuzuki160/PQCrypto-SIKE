@@ -134,24 +134,24 @@ reg    t_we0;
 wire   [7:0] t_q0;
 reg    t_ce1;
 reg    t_we1;
-reg   [5:0] t_92_address0;
-reg    t_92_ce0;
-reg    t_92_we0;
-wire   [7:0] t_92_q0;
-reg    t_92_ce1;
-reg    t_92_we1;
-reg   [5:0] t_93_address0;
-reg    t_93_ce0;
-reg    t_93_we0;
-wire   [7:0] t_93_q0;
-reg    t_93_ce1;
-reg    t_93_we1;
-reg   [5:0] t_94_address0;
-reg    t_94_ce0;
-reg    t_94_we0;
-wire   [7:0] t_94_q0;
-reg    t_94_ce1;
-reg    t_94_we1;
+reg   [5:0] t_96_address0;
+reg    t_96_ce0;
+reg    t_96_we0;
+wire   [7:0] t_96_q0;
+reg    t_96_ce1;
+reg    t_96_we1;
+reg   [5:0] t_97_address0;
+reg    t_97_ce0;
+reg    t_97_we0;
+wire   [7:0] t_97_q0;
+reg    t_97_ce1;
+reg    t_97_we1;
+reg   [5:0] t_98_address0;
+reg    t_98_ce0;
+reg    t_98_we0;
+wire   [7:0] t_98_q0;
+reg    t_98_ce1;
+reg    t_98_we1;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_610_1_fu_102_ap_start;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_610_1_fu_102_ap_done;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_610_1_fu_102_ap_idle;
@@ -228,14 +228,6 @@ wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_ap_start;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_ap_done;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_ap_idle;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_ap_ready;
-wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_address0;
-wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_ce0;
-wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_we0;
-wire   [7:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_d0;
-wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_address1;
-wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_ce1;
-wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_we1;
-wire   [7:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_d1;
 wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_address0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_ce0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_we0;
@@ -252,6 +244,14 @@ wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_address
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_ce1;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_we1;
 wire   [7:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_d1;
+wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_address0;
+wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_ce0;
+wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_we0;
+wire   [7:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_d0;
+wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_address1;
+wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_ce1;
+wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_we1;
+wire   [7:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_d1;
 wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_address0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_ce0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_we0;
@@ -268,12 +268,12 @@ wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ap_idle;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ap_ready;
 wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_address0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_ce0;
+wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_103_address0;
+wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_103_ce0;
 wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_address0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_ce0;
 wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_address0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_ce0;
-wire   [5:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_106_address0;
-wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_106_ce0;
 wire   [4:0] grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ephemeralsk_i_address0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ephemeralsk_i_ce0;
 wire    grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ephemeralsk_i_we0;
@@ -379,17 +379,35 @@ sikep503_kem_enc_hw_cshake256_simple_t_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 34 ),
     .AddressWidth( 6 ))
-t_92_U(
+t_96_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(t_92_address0),
-    .ce0(t_92_ce0),
-    .we0(t_92_we0),
+    .address0(t_96_address0),
+    .ce0(t_96_ce0),
+    .we0(t_96_we0),
+    .d0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_d0),
+    .q0(t_96_q0),
+    .address1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_address1),
+    .ce1(t_96_ce1),
+    .we1(t_96_we1),
+    .d1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_d1)
+);
+
+sikep503_kem_enc_hw_cshake256_simple_t_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 34 ),
+    .AddressWidth( 6 ))
+t_97_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(t_97_address0),
+    .ce0(t_97_ce0),
+    .we0(t_97_we0),
     .d0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_d0),
-    .q0(t_92_q0),
+    .q0(t_97_q0),
     .address1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_address1),
-    .ce1(t_92_ce1),
-    .we1(t_92_we1),
+    .ce1(t_97_ce1),
+    .we1(t_97_we1),
     .d1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_d1)
 );
 
@@ -397,36 +415,18 @@ sikep503_kem_enc_hw_cshake256_simple_t_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 34 ),
     .AddressWidth( 6 ))
-t_93_U(
+t_98_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(t_93_address0),
-    .ce0(t_93_ce0),
-    .we0(t_93_we0),
+    .address0(t_98_address0),
+    .ce0(t_98_ce0),
+    .we0(t_98_we0),
     .d0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_d0),
-    .q0(t_93_q0),
+    .q0(t_98_q0),
     .address1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_address1),
-    .ce1(t_93_ce1),
-    .we1(t_93_we1),
+    .ce1(t_98_ce1),
+    .we1(t_98_we1),
     .d1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_d1)
-);
-
-sikep503_kem_enc_hw_cshake256_simple_t_RAM_AUTO_1R1W #(
-    .DataWidth( 8 ),
-    .AddressRange( 34 ),
-    .AddressWidth( 6 ))
-t_94_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(t_94_address0),
-    .ce0(t_94_ce0),
-    .we0(t_94_we0),
-    .d0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_d0),
-    .q0(t_94_q0),
-    .address1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_address1),
-    .ce1(t_94_ce1),
-    .we1(t_94_we1),
-    .d1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_d1)
 );
 
 sikep503_kem_enc_hw_cshake256_simple_Pipeline_VITIS_LOOP_610_1 grp_cshake256_simple_Pipeline_VITIS_LOOP_610_1_fu_102(
@@ -549,14 +549,6 @@ sikep503_kem_enc_hw_cshake256_simple_Pipeline_VITIS_LOOP_436_2 grp_cshake256_sim
     .ap_done(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_ap_done),
     .ap_idle(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_ap_idle),
     .ap_ready(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_ap_ready),
-    .t_106_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_address0),
-    .t_106_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_ce0),
-    .t_106_we0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_we0),
-    .t_106_d0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_d0),
-    .t_106_address1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_address1),
-    .t_106_ce1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_ce1),
-    .t_106_we1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_we1),
-    .t_106_d1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_d1),
     .t_105_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_address0),
     .t_105_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_ce0),
     .t_105_we0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_we0),
@@ -573,6 +565,14 @@ sikep503_kem_enc_hw_cshake256_simple_Pipeline_VITIS_LOOP_436_2 grp_cshake256_sim
     .t_104_ce1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_ce1),
     .t_104_we1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_we1),
     .t_104_d1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_d1),
+    .t_103_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_address0),
+    .t_103_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_ce0),
+    .t_103_we0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_we0),
+    .t_103_d0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_d0),
+    .t_103_address1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_address1),
+    .t_103_ce1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_ce1),
+    .t_103_we1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_we1),
+    .t_103_d1(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_d1),
     .t_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_address0),
     .t_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_ce0),
     .t_we0(grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_we0),
@@ -596,15 +596,15 @@ sikep503_kem_enc_hw_cshake256_simple_Pipeline_VITIS_LOOP_668_1 grp_cshake256_sim
     .t_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_address0),
     .t_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_ce0),
     .t_q0(t_q0),
+    .t_103_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_103_address0),
+    .t_103_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_103_ce0),
+    .t_103_q0(t_96_q0),
     .t_104_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_address0),
     .t_104_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_ce0),
-    .t_104_q0(t_92_q0),
+    .t_104_q0(t_97_q0),
     .t_105_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_address0),
     .t_105_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_ce0),
-    .t_105_q0(t_93_q0),
-    .t_106_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_106_address0),
-    .t_106_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_106_ce0),
-    .t_106_q0(t_94_q0),
+    .t_105_q0(t_98_q0),
     .ephemeralsk_i_address0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ephemeralsk_i_address0),
     .ephemeralsk_i_ce0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ephemeralsk_i_ce0),
     .ephemeralsk_i_we0(grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_ephemeralsk_i_we0),
@@ -1093,133 +1093,133 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        t_92_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_address0;
+        t_96_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_103_address0;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_92_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_address0;
+        t_96_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_address0;
     end else begin
-        t_92_address0 = 'bx;
+        t_96_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        t_92_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_ce0;
+        t_96_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_103_ce0;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_92_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_ce0;
+        t_96_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_ce0;
     end else begin
-        t_92_ce0 = 1'b0;
+        t_96_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_92_ce1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_ce1;
+        t_96_ce1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_ce1;
     end else begin
-        t_92_ce1 = 1'b0;
+        t_96_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_92_we0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_we0;
+        t_96_we0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_we0;
     end else begin
-        t_92_we0 = 1'b0;
+        t_96_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_92_we1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_we1;
+        t_96_we1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_103_we1;
     end else begin
-        t_92_we1 = 1'b0;
+        t_96_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        t_93_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_address0;
+        t_97_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_address0;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_93_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_address0;
+        t_97_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_address0;
     end else begin
-        t_93_address0 = 'bx;
+        t_97_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        t_93_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_ce0;
+        t_97_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_104_ce0;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_93_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_ce0;
+        t_97_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_ce0;
     end else begin
-        t_93_ce0 = 1'b0;
+        t_97_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_93_ce1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_ce1;
+        t_97_ce1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_ce1;
     end else begin
-        t_93_ce1 = 1'b0;
+        t_97_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_93_we0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_we0;
+        t_97_we0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_we0;
     end else begin
-        t_93_we0 = 1'b0;
+        t_97_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_93_we1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_we1;
+        t_97_we1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_104_we1;
     end else begin
-        t_93_we1 = 1'b0;
+        t_97_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        t_94_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_106_address0;
+        t_98_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_address0;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_94_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_address0;
+        t_98_address0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_address0;
     end else begin
-        t_94_address0 = 'bx;
+        t_98_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        t_94_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_106_ce0;
+        t_98_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_668_1_fu_151_t_105_ce0;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_94_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_ce0;
+        t_98_ce0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_ce0;
     end else begin
-        t_94_ce0 = 1'b0;
+        t_98_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_94_ce1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_ce1;
+        t_98_ce1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_ce1;
     end else begin
-        t_94_ce1 = 1'b0;
+        t_98_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_94_we0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_we0;
+        t_98_we0 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_we0;
     end else begin
-        t_94_we0 = 1'b0;
+        t_98_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        t_94_we1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_106_we1;
+        t_98_we1 = grp_cshake256_simple_Pipeline_VITIS_LOOP_436_2_fu_142_t_105_we1;
     end else begin
-        t_94_we1 = 1'b0;
+        t_98_we1 = 1'b0;
     end
 end
 

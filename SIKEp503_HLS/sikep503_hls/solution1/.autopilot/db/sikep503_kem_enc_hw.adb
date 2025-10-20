@@ -1930,7 +1930,7 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>empty_141</name>
+              <name>empty_143</name>
               <fileName>src/sike.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>98</lineNumber>
@@ -2069,7 +2069,7 @@
             <Obj>
               <type>0</type>
               <id>64</id>
-              <name>empty_142</name>
+              <name>empty_144</name>
               <fileName>src/sike.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>111</lineNumber>
@@ -2198,7 +2198,7 @@
             <Obj>
               <type>0</type>
               <id>66</id>
-              <name>empty_143</name>
+              <name>empty_145</name>
               <fileName>src/sike.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>111</lineNumber>
@@ -2530,7 +2530,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName/>
+              <rtlName>mul_256ns_256ns_512_2_1_U2759</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4148,8 +4148,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>6291953</mMinLatency>
-        <mMaxLatency>-1660455351</mMaxLatency>
+        <mMinLatency>5279793</mMinLatency>
+        <mMaxLatency>-1388489610</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -5482,7 +5482,7 @@
     </fsm>
     <res class_id="34" tracking_level="1" version="0" object_id="_377">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
-        <count>13</count>
+        <count>14</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
           <first>control_r_s_axi_U (control_r_s_axi)</first>
@@ -5564,15 +5564,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>2384</second>
+              <second>21146</second>
             </item>
             <item>
               <first>FF</first>
-              <second>172373</second>
+              <second>419332</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>592513</second>
+              <second>1233300</second>
             </item>
             <item>
               <first>URAM</first>
@@ -5591,15 +5591,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>2032</second>
+              <second>17434</second>
             </item>
             <item>
               <first>FF</first>
-              <second>152453</second>
+              <second>359982</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>541586</second>
+              <second>1079203</second>
             </item>
             <item>
               <first>URAM</first>
@@ -5748,6 +5748,25 @@
             <item>
               <first>LUT</first>
               <second>101</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>mul_256ns_256ns_512_2_1_U2759 (mul_256ns_256ns_512_2_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>225</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>361</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>178</second>
             </item>
           </second>
         </item>
@@ -6236,7 +6255,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>67</count>
+        <count>70</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -6829,6 +6848,87 @@
             <item>
               <first>LUT</first>
               <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_448_ce</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_448_p0</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>256</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>768</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_448_p1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>256</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>768</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -8338,7 +8438,7 @@
         </item>
       </dp_register_resource>
       <dp_dsp_resource>
-        <count>13</count>
+        <count>14</count>
         <item_version>0</item_version>
         <item>
           <first>control_r_s_axi_U</first>
@@ -8431,9 +8531,16 @@
             <item_version>0</item_version>
           </second>
         </item>
+        <item>
+          <first>mul_256ns_256ns_512_2_1_U2759</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
       </dp_dsp_resource>
       <dp_component_map class_id="39" tracking_level="0" version="0">
-        <count>10</count>
+        <count>11</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
           <first>grp_EphemeralKeyGeneration_A_1_fu_261 (EphemeralKeyGeneration_A_1)</first>
@@ -8513,6 +8620,15 @@
             <count>1</count>
             <item_version>0</item_version>
             <item>63</item>
+          </second>
+        </item>
+        <item>
+          <first>mul_256ns_256ns_512_2_1_U2759 (mul_256ns_256ns_512_2_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>81</item>
+            <item>89</item>
           </second>
         </item>
       </dp_component_map>

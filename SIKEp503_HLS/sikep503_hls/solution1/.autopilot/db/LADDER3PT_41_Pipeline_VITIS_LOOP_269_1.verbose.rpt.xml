@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_41_Pipeline_VITIS_LOOP_269_1'" level="0">
-<item name = "Date">Wed Oct  8 20:39:44 2025
+<item name = "Date">Mon Oct 20 14:41:14 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -127,7 +127,7 @@
 <column name="R2_Z_addr_reg_348">3, 0, 3, 0</column>
 <column name="R_X_addr_4_reg_378">3, 0, 4, 1</column>
 <column name="R_X_addr_reg_358">4, 0, 4, 0</column>
-<column name="R_Z_addr_10_reg_383">3, 0, 4, 1</column>
+<column name="R_Z_addr_28_reg_383">3, 0, 4, 1</column>
 <column name="R_Z_addr_reg_363">4, 0, 4, 0</column>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>

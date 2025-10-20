@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_6111'
 ================================================================
-* Date:           Wed Oct  8 20:34:02 2025
+* Date:           Mon Oct 20 16:15:00 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.336 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      133|      245|  1.330 us|  2.450 us|  133|  245|       no|
+    |      126|      199|  1.260 us|  1.990 us|  126|  199|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                    |          |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |      Instance      |  Module  |   min   |   max   |    min   |    max   | min | max |   Type  |
         +--------------------+----------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mul_5123_fu_28  |mul_5123  |      132|      244|  1.320 us|  2.440 us|  132|  244|       no|
+        |grp_mul_5123_fu_28  |mul_5123  |      125|      198|  1.250 us|  1.980 us|  125|  198|       no|
         +--------------------+----------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -84,11 +84,11 @@ State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%b_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_offset"   --->   Operation 3 'read' 'b_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.5123, i64 %a, i64 %b, i32 %b_offset_read, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 4 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 1.09>
+State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/2] (1.09ns)   --->   "%call_ln296 = call void @mul.5123, i64 %a, i64 %b, i32 %b_offset_read, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln296 = call void @mul.5123, i64 %a, i64 %b, i32 %b_offset_read, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 9 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
 
 
@@ -309,11 +309,11 @@ ret_ln297       (ret        ) [ 000]
 |----------|--------------------------|---------|---------|---------|---------|
 | Operation|      Functional Unit     |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|--------------------------|---------|---------|---------|---------|
-|   call   |    grp_mul_5123_fu_28    |    16   |  2.322  |   586   |   627   |
+|   call   |    grp_mul_5123_fu_28    |    50   | 4.38843 |   2694  |   4124  |
 |----------|--------------------------|---------|---------|---------|---------|
 |   read   | b_offset_read_read_fu_22 |    0    |    0    |    0    |    0    |
 |----------|--------------------------|---------|---------|---------|---------|
-|   Total  |                          |    16   |  2.322  |   586   |   627   |
+|   Total  |                          |    50   | 4.38843 |   2694  |   4124  |
 |----------|--------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -343,10 +343,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   16   |    2   |   586  |   627  |
+|  Function |   50   |    4   |  2694  |  4124  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    0   |    0   |    9   |
 |  Register |    -   |    -   |   32   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   16   |    2   |   618  |   636  |
+|   Total   |   50   |    4   |  2726  |  4133  |
 +-----------+--------+--------+--------+--------+

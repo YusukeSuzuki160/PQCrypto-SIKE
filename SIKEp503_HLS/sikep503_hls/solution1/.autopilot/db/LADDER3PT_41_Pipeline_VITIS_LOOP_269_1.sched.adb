@@ -2067,7 +2067,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>R_Z_addr_10</name>
+						<name>R_Z_addr_16</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>280</lineNumber>
@@ -3349,7 +3349,7 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>R_Z_addr_10_write_ln281</name>
+						<name>R_Z_addr_16_write_ln281</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>281</lineNumber>

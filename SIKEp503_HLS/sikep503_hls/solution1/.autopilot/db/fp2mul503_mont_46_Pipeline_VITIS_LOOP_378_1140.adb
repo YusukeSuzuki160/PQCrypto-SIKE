@@ -1484,7 +1484,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>bit_sel7</name>
+              <name>bit_sel</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -1523,7 +1523,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>bit_sel7_fu_159_p3</rtlName>
+              <rtlName>bit_sel_fu_159_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -4660,7 +4660,7 @@
         </second>
       </item>
       <item>
-        <first>bit_sel7_fu_159</first>
+        <first>bit_sel_fu_159</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

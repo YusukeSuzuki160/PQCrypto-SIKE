@@ -28,11 +28,11 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [6:0] mc_address0;
+output  [5:0] mc_address0;
 output   mc_ce0;
 output   mc_we0;
 output  [63:0] mc_d0;
-input  [6:0] zext_ln308;
+input  [5:0] zext_ln308;
 
 reg ap_idle;
 
@@ -43,15 +43,15 @@ wire   [0:0] icmp_ln306_fu_72_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [63:0] zext_ln308_4_fu_94_p1;
+wire   [63:0] zext_ln308_7_fu_94_p1;
 reg   [3:0] i_fu_40;
 wire   [3:0] add_ln306_fu_78_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_13;
+reg   [3:0] ap_sig_allocacmp_i_18;
 reg    mc_we0_local;
 reg    mc_ce0_local;
-wire   [6:0] zext_ln308_3_fu_84_p1;
-wire   [6:0] add_ln308_fu_88_p2;
+wire   [5:0] zext_ln308_6_fu_84_p1;
+wire   [5:0] add_ln308_fu_88_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -156,9 +156,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_13 = 4'd0;
+        ap_sig_allocacmp_i_18 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_13 = i_fu_40;
+        ap_sig_allocacmp_i_18 = i_fu_40;
     end
 end
 
@@ -189,9 +189,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln306_fu_78_p2 = (ap_sig_allocacmp_i_13 + 4'd1);
+assign add_ln306_fu_78_p2 = (ap_sig_allocacmp_i_18 + 4'd1);
 
-assign add_ln308_fu_88_p2 = (zext_ln308 + zext_ln308_3_fu_84_p1);
+assign add_ln308_fu_88_p2 = (zext_ln308 + zext_ln308_6_fu_84_p1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -205,9 +205,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln306_fu_72_p2 = ((ap_sig_allocacmp_i_13 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln306_fu_72_p2 = ((ap_sig_allocacmp_i_18 == 4'd8) ? 1'b1 : 1'b0);
 
-assign mc_address0 = zext_ln308_4_fu_94_p1;
+assign mc_address0 = zext_ln308_7_fu_94_p1;
 
 assign mc_ce0 = mc_ce0_local;
 
@@ -215,8 +215,8 @@ assign mc_d0 = 64'd0;
 
 assign mc_we0 = mc_we0_local;
 
-assign zext_ln308_3_fu_84_p1 = ap_sig_allocacmp_i_13;
+assign zext_ln308_6_fu_84_p1 = ap_sig_allocacmp_i_18;
 
-assign zext_ln308_4_fu_94_p1 = add_ln308_fu_88_p2;
+assign zext_ln308_7_fu_94_p1 = add_ln308_fu_88_p2;
 
 endmodule //sikep503_kem_enc_hw_rdc_mont_5_Pipeline_VITIS_LOOP_306_1

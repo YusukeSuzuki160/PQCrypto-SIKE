@@ -371,7 +371,7 @@ for.body64.split:2 %trunc_ln340 = trunc i4 %j
 
 <Node id="35" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body64.split:3 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+for.body64.split:3 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln303"/></StgValue>
@@ -403,7 +403,7 @@ for.body64.split:4 %speclooptripcount_ln303 = speclooptripcount void @_ssdm_op_S
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body64.split:5 %specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40
+for.body64.split:5 %specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln340"/></StgValue>

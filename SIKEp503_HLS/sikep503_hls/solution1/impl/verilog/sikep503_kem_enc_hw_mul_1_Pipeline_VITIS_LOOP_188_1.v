@@ -45,7 +45,7 @@ wire   [63:0] zext_ln188_fu_72_p1;
 reg   [4:0] i_fu_34;
 wire   [4:0] add_ln188_fu_66_p2;
 wire    ap_loop_init;
-reg   [4:0] ap_sig_allocacmp_i_49;
+reg   [4:0] ap_sig_allocacmp_i_47;
 reg    c_we0_local;
 reg    c_ce0_local;
 reg    ap_done_reg;
@@ -152,9 +152,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_49 = 5'd0;
+        ap_sig_allocacmp_i_47 = 5'd0;
     end else begin
-        ap_sig_allocacmp_i_49 = i_fu_34;
+        ap_sig_allocacmp_i_47 = i_fu_34;
     end
 end
 
@@ -185,7 +185,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln188_fu_66_p2 = (ap_sig_allocacmp_i_49 + 5'd1);
+assign add_ln188_fu_66_p2 = (ap_sig_allocacmp_i_47 + 5'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -207,8 +207,8 @@ assign c_d0 = 64'd0;
 
 assign c_we0 = c_we0_local;
 
-assign icmp_ln188_fu_60_p2 = ((ap_sig_allocacmp_i_49 == 5'd16) ? 1'b1 : 1'b0);
+assign icmp_ln188_fu_60_p2 = ((ap_sig_allocacmp_i_47 == 5'd16) ? 1'b1 : 1'b0);
 
-assign zext_ln188_fu_72_p1 = ap_sig_allocacmp_i_49;
+assign zext_ln188_fu_72_p1 = ap_sig_allocacmp_i_47;
 
 endmodule //sikep503_kem_enc_hw_mul_1_Pipeline_VITIS_LOOP_188_1

@@ -207,10 +207,10 @@ for.inc32.split:0 %zext_ln111 = zext i4 %i
 
 <Node id="21" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc32.split:4 %a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln111
+for.inc32.split:4 %a_addr_9 = getelementptr i64 %a, i64 0, i64 %zext_ln111
 
 ]]></Node>
-<StgValue><ssdm name="a_addr"/></StgValue>
+<StgValue><ssdm name="a_addr_9"/></StgValue>
 </operation>
 
 <operation id="18" st_id="1" stage="2" lat="2">
@@ -223,7 +223,7 @@ for.inc32.split:4 %a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln111
 
 <Node id="22" bw="64" op_0_bw="3">
 <![CDATA[
-for.inc32.split:5 %a_load = load i3 %a_addr
+for.inc32.split:5 %a_load = load i3 %a_addr_9
 
 ]]></Node>
 <StgValue><ssdm name="a_load"/></StgValue>
@@ -305,7 +305,7 @@ for.end34.exitStub:0 %ret_ln0 = ret
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc32.split:1 %specpipeline_ln102 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+for.inc32.split:1 %specpipeline_ln102 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln102"/></StgValue>
@@ -335,7 +335,7 @@ for.inc32.split:2 %speclooptripcount_ln102 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc32.split:3 %specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_25
+for.inc32.split:3 %specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln111"/></StgValue>
@@ -350,7 +350,7 @@ for.inc32.split:3 %specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName
 
 <Node id="22" bw="64" op_0_bw="3">
 <![CDATA[
-for.inc32.split:5 %a_load = load i3 %a_addr
+for.inc32.split:5 %a_load = load i3 %a_addr_9
 
 ]]></Node>
 <StgValue><ssdm name="a_load"/></StgValue>
@@ -440,7 +440,7 @@ for.inc32.split:11 %add_ln113 = add i64 %and_ln113, i64 %tempReg
 
 <Node id="29" bw="0" op_0_bw="64" op_1_bw="3" op_2_bw="0">
 <![CDATA[
-for.inc32.split:12 %store_ln113 = store i64 %add_ln113, i3 %a_addr
+for.inc32.split:12 %store_ln113 = store i64 %add_ln113, i3 %a_addr_9
 
 ]]></Node>
 <StgValue><ssdm name="store_ln113"/></StgValue>

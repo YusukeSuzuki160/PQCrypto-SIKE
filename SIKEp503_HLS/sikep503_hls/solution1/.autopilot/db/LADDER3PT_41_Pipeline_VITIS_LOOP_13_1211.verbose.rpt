@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_41_Pipeline_VITIS_LOOP_13_1211'
 ================================================================
-* Date:           Wed Oct  8 20:20:20 2025
+* Date:           Mon Oct 20 14:41:12 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -195,8 +195,8 @@ ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%i = load i4 %i_240" [src/fpx.cpp:1
 ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%icmp_ln13 = icmp_eq  i4 %i, i4 8" [src/fpx.cpp:13->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 11 'icmp' 'icmp_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%add_ln13 = add i4 %i, i4 1" [src/fpx.cpp:13->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 12 'add' 'add_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %icmp_ln13, void %for.inc.i10.i101.split, void %for.inc.i108.preheader.exitStub" [src/fpx.cpp:13->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 13 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_134_cast = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 1, i4 %i" [src/fpx.cpp:14->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 14 'bitconcatenate' 'tmp_134_cast' <Predicate = (!icmp_ln13)> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln14 = zext i5 %tmp_134_cast" [src/fpx.cpp:14->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 15 'zext' 'zext_ln14' <Predicate = (!icmp_ln13)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_233_cast = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 1, i4 %i" [src/fpx.cpp:14->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 14 'bitconcatenate' 'tmp_233_cast' <Predicate = (!icmp_ln13)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln14 = zext i5 %tmp_233_cast" [src/fpx.cpp:14->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 15 'zext' 'zext_ln14' <Predicate = (!icmp_ln13)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%xPQ_1_addr = getelementptr i64 %xPQ_1, i64 0, i64 %zext_ln14" [src/fpx.cpp:14->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 16 'getelementptr' 'xPQ_1_addr' <Predicate = (!icmp_ln13)> <Delay = 0.00>
 ST_1 : Operation 17 [2/2] (0.71ns)   --->   "%xPQ_1_load = load i5 %xPQ_1_addr" [src/fpx.cpp:14->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 17 'load' 'xPQ_1_load' <Predicate = (!icmp_ln13)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
 ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 %add_ln13, i4 %i_240" [src/fpx.cpp:11->src/fpx.cpp:92->src/ec_isogeny.cpp:312]   --->   Operation 18 'store' 'store_ln11' <Predicate = (!icmp_ln13)> <Delay = 0.38>
@@ -241,7 +241,7 @@ i                      (load             ) [ 011]
 icmp_ln13              (icmp             ) [ 010]
 add_ln13               (add              ) [ 000]
 br_ln13                (br               ) [ 000]
-tmp_134_cast           (bitconcatenate   ) [ 000]
+tmp_233_cast           (bitconcatenate   ) [ 000]
 zext_ln14              (zext             ) [ 000]
 xPQ_1_addr             (getelementptr    ) [ 011]
 store_ln11             (store            ) [ 000]
@@ -569,7 +569,7 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="95" class="1004" name="tmp_134_cast_fu_95">
+<comp id="95" class="1004" name="tmp_233_cast_fu_95">
 <pin_list>
 <pin id="96" dir="0" index="0" bw="5" slack="0"/>
 <pin id="97" dir="0" index="1" bw="1" slack="0"/>
@@ -578,7 +578,7 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_134_cast/1 "/>
+<opset="tmp_233_cast/1 "/>
 </bind>
 </comp>
 
@@ -723,7 +723,7 @@ ret_ln0                (ret              ) [ 000]
 		icmp_ln13 : 2
 		add_ln13 : 2
 		br_ln13 : 3
-		tmp_134_cast : 2
+		tmp_233_cast : 2
 		zext_ln14 : 3
 		xPQ_1_addr : 4
 		xPQ_1_load : 5
@@ -745,7 +745,7 @@ ret_ln0                (ret              ) [ 000]
 |----------|--------------------|---------|---------|
 |    add   |   add_ln13_fu_89   |    0    |    12   |
 |----------|--------------------|---------|---------|
-|bitconcatenate| tmp_134_cast_fu_95 |    0    |    0    |
+|bitconcatenate| tmp_233_cast_fu_95 |    0    |    0    |
 |----------|--------------------|---------|---------|
 |   zext   |  zext_ln14_fu_103  |    0    |    0    |
 |          |  zext_ln13_fu_113  |    0    |    0    |

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_4_269_Pipeline_VITIS_LOOP_61_1'
 ================================================================
-* Date:           Wed Oct  8 20:38:43 2025
+* Date:           Mon Oct 20 14:39:56 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -231,9 +231,9 @@ ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%write_ln63 = write void @_ssdm_op_
 ST_1 : Operation 49 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 49 'ret' 'ret_ln0' <Predicate = (icmp_ln61)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 4.69>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln56 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/generic/fp_generic.cpp:56]   --->   Operation 27 'specpipeline' 'specpipeline_ln56' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln56 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:56]   --->   Operation 27 'specpipeline' 'specpipeline_ln56' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%speclooptripcount_ln56 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:56]   --->   Operation 28 'speclooptripcount' 'speclooptripcount_ln56' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln61 = specloopname void @_ssdm_op_SpecLoopName, void @empty_88" [src/generic/fp_generic.cpp:61]   --->   Operation 29 'specloopname' 'specloopname_ln61' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln61 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31" [src/generic/fp_generic.cpp:61]   --->   Operation 29 'specloopname' 'specloopname_ln61' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 30 [1/2] ( I:1.20ns O:1.20ns )   --->   "%a_load = load i7 %a_addr" [src/generic/fp_generic.cpp:63]   --->   Operation 30 'load' 'a_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 112> <RAM>
 ST_2 : Operation 31 [1/2] ( I:1.20ns O:1.20ns )   --->   "%c_load = load i7 %c_addr" [src/generic/fp_generic.cpp:63]   --->   Operation 31 'load' 'c_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 112> <RAM>
 ST_2 : Operation 32 [1/1] (1.14ns)   --->   "%tempReg = sub i64 %a_load, i64 %c_load" [src/generic/fp_generic.cpp:63]   --->   Operation 32 'sub' 'tempReg' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -244,8 +244,8 @@ ST_2 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node tmp)   --->  
 ST_2 : Operation 37 [1/1] (0.28ns) (out node of the LUT)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %xor_ln105_16, i32 63" [src/config.h:98->src/generic/fp_generic.cpp:63]   --->   Operation 37 'bitselect' 'tmp' <Predicate = true> <Delay = 0.28>
 ST_2 : Operation 38 [1/1] (1.14ns)   --->   "%sub_ln95 = sub i64 0, i64 %tempReg" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:63]   --->   Operation 38 'sub' 'sub_ln95' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%or_ln95 = or i64 %tempReg, i64 %sub_ln95" [src/config.h:95->src/config.h:100->src/generic/fp_generic.cpp:63]   --->   Operation 39 'or' 'or_ln95' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_134 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/generic/fp_generic.cpp:63]   --->   Operation 40 'bitselect' 'tmp_134' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln63 = xor i1 %tmp_134, i1 1" [src/generic/fp_generic.cpp:63]   --->   Operation 41 'xor' 'xor_ln63' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%tmp_231 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63" [src/generic/fp_generic.cpp:63]   --->   Operation 40 'bitselect' 'tmp_231' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%xor_ln63 = xor i1 %tmp_231, i1 1" [src/generic/fp_generic.cpp:63]   --->   Operation 41 'xor' 'xor_ln63' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node borrowReg)   --->   "%and_ln63 = and i1 %borrow, i1 %xor_ln63" [src/generic/fp_generic.cpp:63]   --->   Operation 42 'and' 'and_ln63' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 43 [1/1] (0.28ns) (out node of the LUT)   --->   "%borrowReg = or i1 %and_ln63, i1 %tmp" [src/generic/fp_generic.cpp:63]   --->   Operation 43 'or' 'borrowReg' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln63 = zext i1 %borrow" [src/generic/fp_generic.cpp:63]   --->   Operation 44 'zext' 'zext_ln63' <Predicate = true> <Delay = 0.00>
@@ -309,7 +309,7 @@ xor_ln105_16           (xor              ) [ 000]
 tmp                    (bitselect        ) [ 000]
 sub_ln95               (sub              ) [ 000]
 or_ln95                (or               ) [ 000]
-tmp_134                (bitselect        ) [ 000]
+tmp_231                (bitselect        ) [ 000]
 xor_ln63               (xor              ) [ 000]
 and_ln63               (and              ) [ 000]
 borrowReg              (or               ) [ 011]
@@ -511,7 +511,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -547,7 +547,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_88"/></StgValue>
+<StgValue><ssdm name="empty_31"/></StgValue>
 </bind>
 </comp>
 
@@ -924,7 +924,7 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="220" class="1004" name="tmp_134_fu_220">
+<comp id="220" class="1004" name="tmp_231_fu_220">
 <pin_list>
 <pin id="221" dir="0" index="0" bw="1" slack="0"/>
 <pin id="222" dir="0" index="1" bw="64" slack="0"/>
@@ -933,7 +933,7 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_134/2 "/>
+<opset="tmp_231/2 "/>
 </bind>
 </comp>
 
@@ -1224,7 +1224,7 @@ ret_ln0                (ret              ) [ 000]
 		tmp : 2
 		sub_ln95 : 2
 		or_ln95 : 3
-		tmp_134 : 3
+		tmp_231 : 3
 		xor_ln63 : 4
 		and_ln63 : 4
 		borrowReg : 4
@@ -1272,7 +1272,7 @@ ret_ln0                (ret              ) [ 000]
 |          |       zext_ln63_fu_246      |    0    |    0    |
 |----------|-----------------------------|---------|---------|
 | bitselect|          tmp_fu_200         |    0    |    0    |
-|          |        tmp_134_fu_220       |    0    |    0    |
+|          |        tmp_231_fu_220       |    0    |    0    |
 |----------|-----------------------------|---------|---------|
 |   Total  |                             |    0    |   591   |
 |----------|-----------------------------|---------|---------|

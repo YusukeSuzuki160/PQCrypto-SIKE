@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2sqr503_mont_28_Pipeline_VITIS_LOOP_68_2'" level="0">
-<item name = "Date">Wed Oct  8 20:27:27 2025
+<item name = "Date">Mon Oct 20 14:28:13 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 3.722 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.133 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 618, -</column>
+<column name="Expression">-, -, 0, 681, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">0, -, 64, 65, -</column>
-<column name="Multiplexer">-, -, 0, 64, -</column>
-<column name="Register">-, -, 75, -, -</column>
+<column name="Multiplexer">-, -, 0, 78, -</column>
+<column name="Register">-, -, 81, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="p503x2_1_U">fpadd503_222_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="p503x2_1_U">fpadd503_1565_3_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -81,19 +81,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln68_fu_125_p2">+, 0, 0, 12, 4, 1</column>
-<column name="add_ln70_fu_157_p2">+, 0, 0, 71, 64, 64</column>
-<column name="tempReg_fu_146_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln70_11_fu_208_p2">and, 0, 0, 64, 64, 64</column>
-<column name="and_ln70_fu_152_p2">and, 0, 0, 64, 64, 64</column>
-<column name="icmp_ln68_fu_119_p2">icmp, 0, 0, 12, 4, 5</column>
-<column name="or_ln70_11_fu_220_p2">or, 0, 0, 64, 64, 64</column>
-<column name="or_ln70_fu_176_p2">or, 0, 0, 64, 64, 64</column>
-<column name="sext_ln58_cast_fu_103_p3">select, 0, 0, 2, 1, 2</column>
-<column name="xor_ln70_31_fu_170_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln70_33_fu_214_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln70_40_fu_190_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln70_fu_164_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="add_ln68_fu_144_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln70_fu_197_p2">+, 0, 0, 71, 64, 64</column>
+<column name="tempReg_fu_186_p2">+, 0, 0, 71, 64, 64</column>
+<column name="and_ln70_18_fu_249_p2">and, 0, 0, 64, 64, 64</column>
+<column name="and_ln70_fu_192_p2">and, 0, 0, 64, 64, 64</column>
+<column name="icmp_ln68_fu_138_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="or_ln70_18_fu_261_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln70_fu_217_p2">or, 0, 0, 64, 64, 64</column>
+<column name="select_ln70_fu_175_p3">select, 0, 0, 63, 1, 64</column>
+<column name="sext_ln58_cast_fu_122_p3">select, 0, 0, 2, 1, 2</column>
+<column name="xor_ln70_52_fu_211_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln70_53_fu_231_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln70_54_fu_255_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln70_fu_205_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -101,19 +102,23 @@
 <column name="ap_NS_fsm">14, 3, 1, 3</column>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
-<column name="borrow_reg_92">9, 2, 1, 2</column>
-<column name="i_141_fu_56">9, 2, 4, 8</column>
-<column name="t2_address0_local">14, 3, 3, 9</column>
+<column name="borrow_reg_111">9, 2, 1, 2</column>
+<column name="i_161_fu_62">9, 2, 4, 8</column>
+<column name="t2_1_address0_local">14, 3, 2, 6</column>
+<column name="t2_address0_local">14, 3, 2, 6</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln68_reg_294">4, 0, 4, 0</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="borrow_reg_92">1, 0, 1, 0</column>
-<column name="i_141_fu_56">4, 0, 4, 0</column>
-<column name="sext_ln58_cast_reg_241">64, 0, 64, 0</column>
-<column name="t2_addr_reg_249">3, 0, 3, 0</column>
+<column name="borrow_reg_111">1, 0, 1, 0</column>
+<column name="i_161_fu_62">4, 0, 4, 0</column>
+<column name="sext_ln58_cast_reg_286">64, 0, 64, 0</column>
+<column name="t2_1_addr_reg_309">2, 0, 2, 0</column>
+<column name="t2_addr_reg_304">2, 0, 2, 0</column>
+<column name="trunc_ln68_reg_299">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -129,7 +134,12 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, fp2sqr503_mont.28_Pipeline_VITIS_LOOP_68_2, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, fp2sqr503_mont.28_Pipeline_VITIS_LOOP_68_2, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, fp2sqr503_mont.28_Pipeline_VITIS_LOOP_68_2, return value</column>
-<column name="t2_address0">out, 3, ap_memory, t2, array</column>
+<column name="t2_1_address0">out, 2, ap_memory, t2_1, array</column>
+<column name="t2_1_ce0">out, 1, ap_memory, t2_1, array</column>
+<column name="t2_1_we0">out, 1, ap_memory, t2_1, array</column>
+<column name="t2_1_d0">out, 64, ap_memory, t2_1, array</column>
+<column name="t2_1_q0">in, 64, ap_memory, t2_1, array</column>
+<column name="t2_address0">out, 2, ap_memory, t2, array</column>
 <column name="t2_ce0">out, 1, ap_memory, t2, array</column>
 <column name="t2_we0">out, 1, ap_memory, t2, array</column>
 <column name="t2_d0">out, 64, ap_memory, t2, array</column>

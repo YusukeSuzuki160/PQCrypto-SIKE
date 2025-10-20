@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_25_Pipeline_VITIS_LOOP_33_1'
 ================================================================
-* Date:           Wed Oct  8 20:33:08 2025
+* Date:           Mon Oct 20 16:13:46 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -108,9 +108,9 @@ ST_1 : Operation 47 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 
 State 2 <SV = 1> <Delay = 3.72>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln33 = zext i4 %i_207" [src/generic/fp_generic.cpp:33]   --->   Operation 24 'zext' 'zext_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/generic/fp_generic.cpp:28]   --->   Operation 25 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:28]   --->   Operation 25 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln28 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:28]   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [src/generic/fp_generic.cpp:33]   --->   Operation 27 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45" [src/generic/fp_generic.cpp:33]   --->   Operation 27 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 28 [1/2] ( I:0.71ns O:0.71ns )   --->   "%R_X_load = load i4 %R_X_addr" [src/generic/fp_generic.cpp:35]   --->   Operation 28 'load' 'R_X_load' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln35_8 = zext i1 %carry" [src/generic/fp_generic.cpp:35]   --->   Operation 29 'zext' 'zext_ln35_8' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 30 [1/1] (1.14ns)   --->   "%tempReg = add i64 %R_X_load, i64 %zext_ln35_8" [src/generic/fp_generic.cpp:35]   --->   Operation 30 'add' 'tempReg' <Predicate = (!icmp_ln33)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>

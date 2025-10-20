@@ -410,7 +410,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>t_89</name>
+						<name>t_92</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>639</lineNumber>
@@ -466,7 +466,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>t_90</name>
+						<name>t_93</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>639</lineNumber>
@@ -522,7 +522,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>t_91</name>
+						<name>t_94</name>
 						<fileName>src/sha3/fips202.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>639</lineNumber>
@@ -4810,7 +4810,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_89_alloca_fu_78</first>
+			<first>t_92_alloca_fu_78</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4818,7 +4818,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_90_alloca_fu_82</first>
+			<first>t_93_alloca_fu_82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4826,7 +4826,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_91_alloca_fu_86</first>
+			<first>t_94_alloca_fu_86</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -981,7 +981,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>coeff_addr_7</name>
+						<name>coeff_addr_9</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -1685,7 +1685,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>tmp_179</name>
+						<name>tmp_276</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>
@@ -4365,7 +4365,7 @@
 			</second>
 		</item>
 		<item>
-			<first>coeff_addr_7_gep_fu_78</first>
+			<first>coeff_addr_9_gep_fu_78</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4445,7 +4445,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_179_fu_205</first>
+			<first>tmp_276_fu_205</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4702,7 +4702,7 @@
 			</second>
 		</item>
 		<item>
-			<first>coeff_addr_7_reg_275</first>
+			<first>coeff_addr_9_reg_275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

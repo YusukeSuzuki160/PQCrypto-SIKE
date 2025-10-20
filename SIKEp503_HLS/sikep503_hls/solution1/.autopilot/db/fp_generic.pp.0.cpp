@@ -8281,7 +8281,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 2974 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
 }
 # 4 "src/generic/fp_generic.cpp" 2
-# 1 "src/generic/mpx_camba_mul.hpp" 1
+# 1 "src/generic/mpx_comba_mul.hpp" 1
 
 
 
@@ -8289,13 +8289,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
-# 8 "src/generic/mpx_camba_mul.hpp" 2
+# 8 "src/generic/mpx_comba_mul.hpp" 2
 
 
 namespace mpx {
 
 
-static constexpr unsigned MPX_CHUNK_BITS = 64;
+static constexpr unsigned MPX_CHUNK_BITS = 128;
 
 
 

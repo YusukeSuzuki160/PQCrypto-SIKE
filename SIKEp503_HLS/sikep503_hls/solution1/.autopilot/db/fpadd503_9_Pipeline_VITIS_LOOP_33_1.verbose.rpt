@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_9_Pipeline_VITIS_LOOP_33_1'
 ================================================================
-* Date:           Wed Oct  8 20:39:37 2025
+* Date:           Mon Oct 20 14:41:06 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -83,7 +83,7 @@
     +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
     |       Memory       |                                      Module                                      | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
-    |Montgomery_one_1_U  |EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212_Montgomery_one_1_ROM_Acud  |        0|  64|  65|    0|     8|   64|     1|          512|
+    |Montgomery_one_1_U  |EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1236_Montgomery_one_1_ROM_Acud  |        0|  64|  65|    0|     8|   64|     1|          512|
     +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
     |Total               |                                                                                  |        0|  64|  65|    0|     8|   64|     1|          512|
     +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
@@ -227,9 +227,9 @@ ST_1 : Operation 21 [1/1] (0.38ns)   --->   "%store_ln28 = store i4 %add_ln33, i
 ST_1 : Operation 48 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 48 'ret' 'ret_ln0' <Predicate = (icmp_ln33)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/generic/fp_generic.cpp:28]   --->   Operation 22 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:28]   --->   Operation 22 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%speclooptripcount_ln28 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:28]   --->   Operation 23 'speclooptripcount' 'speclooptripcount_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [src/generic/fp_generic.cpp:33]   --->   Operation 24 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45" [src/generic/fp_generic.cpp:33]   --->   Operation 24 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln28 = zext i2 %lshr_ln" [src/generic/fp_generic.cpp:28]   --->   Operation 25 'zext' 'zext_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 26 [1/2] ( I:0.71ns O:0.71ns )   --->   "%Montgomery_one_1_load = load i3 %Montgomery_one_1_addr" [src/generic/fp_generic.cpp:35]   --->   Operation 26 'load' 'Montgomery_one_1_load' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln35 = zext i1 %carry" [src/generic/fp_generic.cpp:35]   --->   Operation 27 'zext' 'zext_ln35' <Predicate = (!icmp_ln33)> <Delay = 0.00>
@@ -493,7 +493,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -529,7 +529,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_19"/></StgValue>
+<StgValue><ssdm name="empty_45"/></StgValue>
 </bind>
 </comp>
 

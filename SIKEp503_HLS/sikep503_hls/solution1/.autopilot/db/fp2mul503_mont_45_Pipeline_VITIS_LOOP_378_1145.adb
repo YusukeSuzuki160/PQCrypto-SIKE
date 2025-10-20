@@ -1198,7 +1198,7 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>coeff_addr_12</name>
+              <name>coeff_addr_16</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -5302,7 +5302,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_12_gep_fu_71</first>
+        <first>coeff_addr_16_gep_fu_71</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5615,7 +5615,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_12_reg_267</first>
+        <first>coeff_addr_16_reg_267</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

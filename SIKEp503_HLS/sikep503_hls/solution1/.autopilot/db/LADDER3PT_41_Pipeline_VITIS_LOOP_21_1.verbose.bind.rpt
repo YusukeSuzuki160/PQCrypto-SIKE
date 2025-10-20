@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_41_Pipeline_VITIS_LOOP_21_1'
 ================================================================
-* Date:           Wed Oct  8 20:35:47 2025
+* Date:           Mon Oct 20 16:17:15 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -92,9 +92,9 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = load i4 %i_245" [src/fpx.cpp:22
 ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%icmp_ln21 = icmp_eq  i4 %i, i4 8" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 9 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%add_ln21 = add i4 %i, i4 1" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 10 'add' 'add_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln21 = br i1 %icmp_ln21, void %for.inc.i139.split, void %for.inc.preheader.exitStub" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 11 'br' 'br_ln21' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 12 'specpipeline' 'specpipeline_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 12 'specpipeline' 'specpipeline_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%speclooptripcount_ln19 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:19->src/ec_isogeny.cpp:316]   --->   Operation 13 'speclooptripcount' 'speclooptripcount_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_28" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 14 'specloopname' 'specloopname_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [src/fpx.cpp:21->src/ec_isogeny.cpp:316]   --->   Operation 14 'specloopname' 'specloopname_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln22 = trunc i4 %i" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 15 'trunc' 'trunc_ln22' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i1.i3, i1 1, i3 %trunc_ln22" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 16 'bitconcatenate' 'zext_ln' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln22 = zext i4 %zext_ln" [src/fpx.cpp:22->src/ec_isogeny.cpp:316]   --->   Operation 17 'zext' 'zext_ln22' <Predicate = (!icmp_ln21)> <Delay = 0.00>
@@ -261,7 +261,7 @@ ret_ln0                (ret              ) [ 00]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -297,7 +297,7 @@ ret_ln0                (ret              ) [ 00]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_11"/></StgValue>
 </bind>
 </comp>
 

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_20_Pipeline_VITIS_LOOP_400_3'
 ================================================================
-* Date:           Wed Oct  8 20:37:07 2025
+* Date:           Mon Oct 20 14:37:58 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -124,9 +124,9 @@ ST_1 : Operation 40 [1/1] (0.38ns)   --->   "%store_ln400 = store i5 %add_ln400,
 ST_1 : Operation 81 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 81 'ret' 'ret_ln0' <Predicate = (icmp_ln400)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 2.37>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specpipeline_ln400 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 41 'specpipeline' 'specpipeline_ln400' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specpipeline_ln400 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 41 'specpipeline' 'specpipeline_ln400' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%speclooptripcount_ln400 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 17, i64 17, i64 17" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 42 'speclooptripcount' 'speclooptripcount_ln400' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%specloopname_ln400 = specloopname void @_ssdm_op_SpecLoopName, void @empty_91" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 43 'specloopname' 'specloopname_ln400' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%specloopname_ln400 = specloopname void @_ssdm_op_SpecLoopName, void @empty_98" [src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 43 'specloopname' 'specloopname_ln400' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i5.i3, i5 %lane_3, i3 0" [src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 44 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 45 [1/1] (0.70ns)   --->   "%icmp_ln414 = icmp_ult  i8 %tmp_s, i8 126" [src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 45 'icmp' 'icmp_ln414' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 46 [1/2] ( I:0.66ns O:0.66ns )   --->   "%v = load i5 %in_0_addr" [src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642]   --->   Operation 46 'load' 'v' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
@@ -175,6 +175,8 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln400', src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642) of constant 0 on local variable 'lane', src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642 [8]  (0.387 ns)
 	'load' operation 5 bit ('lane', src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642) on local variable 'lane', src/sha3/fips202.cpp:400->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642 [11]  (0.000 ns)
+	'shl' operation 5 bit ('shl_ln414_1', src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642) [41]  (0.000 ns)
+	'sub' operation 5 bit ('sub_ln414', src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642) [42]  (0.000 ns)
 	'add' operation 5 bit ('add_ln414', src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642) [43]  (0.493 ns)
 	'getelementptr' operation 5 bit ('in_0_addr_3', src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642) [46]  (0.000 ns)
 	'load' operation 8 bit ('v', src/sha3/fips202.cpp:414->src/sha3/fips202.cpp:628->src/sha3/fips202.cpp:642) on array 'in_0' [47]  (0.667 ns)

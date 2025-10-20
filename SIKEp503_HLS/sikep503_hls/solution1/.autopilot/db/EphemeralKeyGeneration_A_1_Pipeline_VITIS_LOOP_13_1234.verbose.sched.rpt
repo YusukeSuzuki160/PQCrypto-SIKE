@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1234'
 ================================================================
-* Date:           Wed Oct  8 20:11:38 2025
+* Date:           Mon Oct 20 16:13:14 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -122,7 +122,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln11', src/fpx.cpp:11->src/sidh.cpp:32->src/sidh.cpp:126) of constant 0 on local variable 'i', src/fpx.cpp:11->src/sidh.cpp:32->src/sidh.cpp:126 [5]  (0.387 ns)
 	'load' operation 4 bit ('i', src/fpx.cpp:14->src/sidh.cpp:32->src/sidh.cpp:126) on local variable 'i', src/fpx.cpp:11->src/sidh.cpp:32->src/sidh.cpp:126 [8]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln13', src/fpx.cpp:13->src/sidh.cpp:32->src/sidh.cpp:126) [9]  (0.708 ns)
+	'add' operation 4 bit ('add_ln13', src/fpx.cpp:13->src/sidh.cpp:32->src/sidh.cpp:126) [10]  (0.708 ns)
 	'store' operation 0 bit ('store_ln11', src/fpx.cpp:11->src/sidh.cpp:32->src/sidh.cpp:126) of variable 'add_ln13', src/fpx.cpp:13->src/sidh.cpp:32->src/sidh.cpp:126 on local variable 'i', src/fpx.cpp:11->src/sidh.cpp:32->src/sidh.cpp:126 [25]  (0.387 ns)
 
  <State 2>: 1.428ns

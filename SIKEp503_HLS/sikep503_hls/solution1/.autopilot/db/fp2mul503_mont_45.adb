@@ -629,7 +629,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121_fu_98</rtlName>
+              <rtlName>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145_fu_98</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -872,7 +872,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122_fu_121</rtlName>
+              <rtlName>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146_fu_121</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -979,7 +979,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123_fu_144</rtlName>
+              <rtlName>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147_fu_144</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1287,7 +1287,7 @@
             <Obj>
               <type>2</type>
               <id>66</id>
-              <name>fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121</name>
+              <name>fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1311,7 +1311,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1121&gt;</content>
+          <content>&lt;constant:fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1145&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_29">
           <Value>
@@ -1411,7 +1411,7 @@
             <Obj>
               <type>2</type>
               <id>85</id>
-              <name>fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122</name>
+              <name>fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1435,7 +1435,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1122&gt;</content>
+          <content>&lt;constant:fp2mul503_mont.45_Pipeline_VITIS_LOOP_378_1146&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_33">
           <Value>
@@ -1473,7 +1473,7 @@
             <Obj>
               <type>2</type>
               <id>94</id>
-              <name>fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123</name>
+              <name>fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1497,7 +1497,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1123&gt;</content>
+          <content>&lt;constant:fp2mul503_mont.45_Pipeline_VITIS_LOOP_160_1147&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -2048,8 +2048,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>609</mMinLatency>
-        <mMaxLatency>1059</mMaxLatency>
+        <mMinLatency>492</mMinLatency>
+        <mMaxLatency>814</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2592,7 +2592,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123_fu_144 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123)</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147_fu_144 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -2641,7 +2641,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121_fu_98 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121)</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145_fu_98 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2656,7 +2656,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122_fu_121 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122)</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146_fu_121 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2692,15 +2692,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>225</second>
             </item>
             <item>
               <first>FF</first>
-              <second>424</second>
+              <second>3092</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>761</second>
+              <second>7700</second>
             </item>
           </second>
         </item>
@@ -2711,15 +2711,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>225</second>
             </item>
             <item>
               <first>FF</first>
-              <second>424</second>
+              <second>3086</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>745</second>
+              <second>7636</second>
             </item>
           </second>
         </item>
@@ -2730,15 +2730,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>225</second>
             </item>
             <item>
               <first>FF</first>
-              <second>424</second>
+              <second>3083</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>745</second>
+              <second>7636</second>
             </item>
           </second>
         </item>
@@ -3852,7 +3852,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123_fu_144_ap_start_reg</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147_fu_144_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3909,7 +3909,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121_fu_98_ap_start_reg</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145_fu_98_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3928,7 +3928,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122_fu_121_ap_start_reg</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146_fu_121_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4046,7 +4046,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123_fu_144</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147_fu_144</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4067,14 +4067,14 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121_fu_98</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145_fu_98</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122_fu_121</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146_fu_121</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4120,7 +4120,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123_fu_144 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123)</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147_fu_144 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4144,7 +4144,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121_fu_98 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121)</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145_fu_98 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4152,7 +4152,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122_fu_121 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122)</first>
+          <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146_fu_121 (fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4614,7 +4614,7 @@
       <count>10</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1123_fu_144</first>
+        <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_160_1147_fu_144</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -4641,7 +4641,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1121_fu_98</first>
+        <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1145_fu_98</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -4650,7 +4650,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1122_fu_121</first>
+        <first>grp_fp2mul503_mont_45_Pipeline_VITIS_LOOP_378_1146_fu_121</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_454_Pipeline_VITIS_LOOP_378_1143'
 ================================================================
-* Date:           Wed Oct  8 20:20:38 2025
+* Date:           Mon Oct 20 14:41:31 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -228,8 +228,8 @@ ST_2 : Operation 29 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln381 = store i
 ST_2 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node xor_ln381_92)   --->   "%xor_ln381 = xor i64 %add_ln381, i64 %tempReg" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 30 'xor' 'xor_ln381' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node xor_ln381_92)   --->   "%xor_ln381_90 = xor i64 %tt2_load, i64 %tempReg" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 31 'xor' 'xor_ln381_90' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node xor_ln381_92)   --->   "%or_ln381 = or i64 %xor_ln381, i64 %xor_ln381_90" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 32 'or' 'or_ln381' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node or_ln381_32)   --->   "%bit_sel8 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg, i64 63" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 33 'bitselect' 'bit_sel8' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node or_ln381_32)   --->   "%xor_ln381_91 = xor i1 %bit_sel8, i1 1" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 34 'xor' 'xor_ln381_91' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node or_ln381_32)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg, i64 63" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 33 'bitselect' 'bit_sel' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node or_ln381_32)   --->   "%xor_ln381_91 = xor i1 %bit_sel, i1 1" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 34 'xor' 'xor_ln381_91' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node or_ln381_32)   --->   "%trunc_ln381 = trunc i64 %tempReg" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 35 'trunc' 'trunc_ln381' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node or_ln381_32)   --->   "%xor_ln381_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln381_91, i63 %trunc_ln381" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 36 'bitconcatenate' 'xor_ln381_s' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node or_ln381_32)   --->   "%and_ln381 = and i64 %tt1_load, i64 %xor_ln381_s" [src/fpx.cpp:381->src/fpx.cpp:140->src/fpx.cpp:192]   --->   Operation 37 'and' 'and_ln381' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -284,7 +284,7 @@ store_ln381           (store            ) [ 000]
 xor_ln381             (xor              ) [ 000]
 xor_ln381_90          (xor              ) [ 000]
 or_ln381              (or               ) [ 000]
-bit_sel8              (bitselect        ) [ 000]
+bit_sel               (bitselect        ) [ 000]
 xor_ln381_91          (xor              ) [ 000]
 trunc_ln381           (trunc            ) [ 000]
 xor_ln381_s           (bitconcatenate   ) [ 000]
@@ -763,7 +763,7 @@ ret_ln0               (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="159" class="1004" name="bit_sel8_fu_159">
+<comp id="159" class="1004" name="bit_sel_fu_159">
 <pin_list>
 <pin id="160" dir="0" index="0" bw="1" slack="0"/>
 <pin id="161" dir="0" index="1" bw="64" slack="0"/>
@@ -772,7 +772,7 @@ ret_ln0               (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="bit_sel8/2 "/>
+<opset="bit_sel/2 "/>
 </bind>
 </comp>
 
@@ -1052,7 +1052,7 @@ ret_ln0               (ret              ) [ 000]
 		xor_ln381 : 3
 		xor_ln381_90 : 2
 		or_ln381 : 3
-		bit_sel8 : 2
+		bit_sel : 2
 		xor_ln381_91 : 3
 		trunc_ln381 : 2
 		xor_ln381_s : 3
@@ -1089,7 +1089,7 @@ ret_ln0               (ret              ) [ 000]
 |   zext   |  zext_ln378_fu_113  |    0    |    0    |
 |          |  zext_ln381_fu_124  |    0    |    0    |
 |----------|---------------------|---------|---------|
-| bitselect|   bit_sel8_fu_159   |    0    |    0    |
+| bitselect|    bit_sel_fu_159   |    0    |    0    |
 |          |      tmp_fu_203     |    0    |    0    |
 |----------|---------------------|---------|---------|
 |   trunc  |  trunc_ln381_fu_173 |    0    |    0    |

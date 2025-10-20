@@ -470,10 +470,10 @@ for.inc.i.i84.split:13 %or_ln381 = or i64 %xor_ln381, i64 %xor_ln381_47
 
 <Node id="30" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i.i84.split:14 %bit_sel3 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg, i64 63
+for.inc.i.i84.split:14 %bit_sel7 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %tempReg, i64 63
 
 ]]></Node>
-<StgValue><ssdm name="bit_sel3"/></StgValue>
+<StgValue><ssdm name="bit_sel7"/></StgValue>
 </operation>
 
 <operation id="34" st_id="2" stage="1" lat="1">
@@ -485,7 +485,7 @@ for.inc.i.i84.split:14 %bit_sel3 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, 
 
 <Node id="31" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc.i.i84.split:15 %xor_ln381_48 = xor i1 %bit_sel3, i1 1
+for.inc.i.i84.split:15 %xor_ln381_48 = xor i1 %bit_sel7, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln381_48"/></StgValue>
@@ -742,13 +742,13 @@ for.inc.i.i84.split:23 %br_ln378 = br void %for.inc.i.i84
 </dataflow>
 <dataflow id="132" from="xor_ln381_47" to="or_ln381" fromId="31" toId="32">
 </dataflow>
-<dataflow id="134" from="_ssdm_op_BitSelect.i1.i64.i64" to="bit_sel3" fromId="133" toId="33">
+<dataflow id="134" from="_ssdm_op_BitSelect.i1.i64.i64" to="bit_sel7" fromId="133" toId="33">
 </dataflow>
-<dataflow id="135" from="tempReg" to="bit_sel3" fromId="26" toId="33">
+<dataflow id="135" from="tempReg" to="bit_sel7" fromId="26" toId="33">
 </dataflow>
-<dataflow id="137" from="StgValue_136" to="bit_sel3" fromId="136" toId="33">
+<dataflow id="137" from="StgValue_136" to="bit_sel7" fromId="136" toId="33">
 </dataflow>
-<dataflow id="138" from="bit_sel3" to="xor_ln381_48" fromId="33" toId="34">
+<dataflow id="138" from="bit_sel7" to="xor_ln381_48" fromId="33" toId="34">
 </dataflow>
 <dataflow id="140" from="StgValue_139" to="xor_ln381_48" fromId="139" toId="34">
 </dataflow>

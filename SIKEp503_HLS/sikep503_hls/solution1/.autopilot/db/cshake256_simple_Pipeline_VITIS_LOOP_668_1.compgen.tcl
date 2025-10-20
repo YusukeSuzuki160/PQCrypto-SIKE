@@ -36,16 +36,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 87 \
-    name t_80 \
+    name t_104 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename t_80 \
+    corename t_104 \
     op interface \
-    ports { t_80_address0 { O 6 vector } t_80_ce0 { O 1 bit } t_80_q0 { I 8 vector } } \
+    ports { t_104_address0 { O 6 vector } t_104_ce0 { O 1 bit } t_104_q0 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_80'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_104'"
 }
 }
 
@@ -55,16 +55,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 88 \
-    name t_81 \
+    name t_105 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename t_81 \
+    corename t_105 \
     op interface \
-    ports { t_81_address0 { O 6 vector } t_81_ce0 { O 1 bit } t_81_q0 { I 8 vector } } \
+    ports { t_105_address0 { O 6 vector } t_105_ce0 { O 1 bit } t_105_q0 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_81'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_105'"
 }
 }
 
@@ -74,16 +74,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 89 \
-    name t_82 \
+    name t_106 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename t_82 \
+    corename t_106 \
     op interface \
-    ports { t_82_address0 { O 6 vector } t_82_ce0 { O 1 bit } t_82_q0 { I 8 vector } } \
+    ports { t_106_address0 { O 6 vector } t_106_ce0 { O 1 bit } t_106_q0 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_82'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_106'"
 }
 }
 

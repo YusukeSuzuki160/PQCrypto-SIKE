@@ -23,7 +23,11 @@ module sikep503_kem_enc_hw_fp2sqr503_mont_6_1 (
         c_1_ce0,
         c_1_we0,
         c_1_d0,
-        c_1_q0
+        c_1_q0,
+        grp_fu_463_p_din0,
+        grp_fu_463_p_din1,
+        grp_fu_463_p_dout0,
+        grp_fu_463_p_ce
 );
 
 parameter    ap_ST_fsm_state1 = 10'd1;
@@ -54,6 +58,10 @@ output   c_1_ce0;
 output   c_1_we0;
 output  [63:0] c_1_d0;
 input  [63:0] c_1_q0;
+output  [255:0] grp_fu_463_p_din0;
+output  [255:0] grp_fu_463_p_din1;
+input  [511:0] grp_fu_463_p_dout0;
+output   grp_fu_463_p_ce;
 
 reg ap_done;
 reg ap_idle;
@@ -148,6 +156,9 @@ wire   [5:0] grp_fpmul503_mont_3_3_fu_111_mc_address0;
 wire    grp_fpmul503_mont_3_3_fu_111_mc_ce0;
 wire    grp_fpmul503_mont_3_3_fu_111_mc_we0;
 wire   [63:0] grp_fpmul503_mont_3_3_fu_111_mc_d0;
+wire   [255:0] grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din0;
+wire   [255:0] grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din1;
+wire    grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_ce;
 reg    grp_fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_378_1_fu_62_ap_start_reg;
 wire    ap_CS_fsm_state2;
 reg    grp_fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_61_1_fu_73_ap_start_reg;
@@ -164,6 +175,7 @@ reg    grp_fpmul503_mont_3_3_fu_111_ap_start_reg;
 wire    ap_CS_fsm_state9;
 wire    ap_CS_fsm_state10;
 wire   [2:0] empty_fu_121_p1;
+reg    grp_fu_160_ce;
 reg   [9:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 reg    ap_ST_fsm_state2_blk;
@@ -341,7 +353,11 @@ sikep503_kem_enc_hw_fpmul503_mont_3_3 grp_fpmul503_mont_3_3_fu_111(
     .mc_we0(grp_fpmul503_mont_3_3_fu_111_mc_we0),
     .mc_d0(grp_fpmul503_mont_3_3_fu_111_mc_d0),
     .mc_q0(c_1_q0),
-    .mc_offset(c_0_offset)
+    .mc_offset(c_0_offset),
+    .grp_fu_160_p_din0(grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din0),
+    .grp_fu_160_p_din1(grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din1),
+    .grp_fu_160_p_dout0(grp_fu_463_p_dout0),
+    .grp_fu_160_p_ce(grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_ce)
 );
 
 always @ (posedge ap_clk) begin
@@ -579,6 +595,14 @@ always @ (*) begin
 end
 
 always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state10)) begin
+        grp_fu_160_ce = grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_ce;
+    end else begin
+        grp_fu_160_ce = 1'b1;
+    end
+end
+
+always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
         t1_address0 = grp_fpmul503_mont_3_fu_100_ma_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
@@ -781,6 +805,12 @@ assign grp_fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_68_2_fu_84_ap_start = grp_fp2s
 assign grp_fpmul503_mont_3_3_fu_111_ap_start = grp_fpmul503_mont_3_3_fu_111_ap_start_reg;
 
 assign grp_fpmul503_mont_3_fu_100_ap_start = grp_fpmul503_mont_3_fu_100_ap_start_reg;
+
+assign grp_fu_463_p_ce = grp_fu_160_ce;
+
+assign grp_fu_463_p_din0 = grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din0;
+
+assign grp_fu_463_p_din1 = grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din1;
 
 assign tmp_fu_125_p3 = {{empty_fu_121_p1}, {3'd0}};
 

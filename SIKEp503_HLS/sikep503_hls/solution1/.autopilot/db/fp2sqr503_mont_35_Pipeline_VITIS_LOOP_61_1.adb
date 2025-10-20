@@ -981,7 +981,7 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>R_Z_addr_5</name>
+              <name>R_Z_addr_23</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>63</lineNumber>
@@ -1685,7 +1685,7 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>tmp_180</name>
+              <name>tmp_277</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>63</lineNumber>
@@ -1717,7 +1717,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_180_fu_205_p3</rtlName>
+              <rtlName>tmp_277_fu_205_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -5247,7 +5247,7 @@
       <count>25</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>R_Z_addr_5_gep_fu_78</first>
+        <first>R_Z_addr_23_gep_fu_78</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5359,7 +5359,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_180_fu_205</first>
+        <first>tmp_277_fu_205</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5600,7 +5600,7 @@
       <count>9</count>
       <item_version>0</item_version>
       <item>
-        <first>R_Z_addr_5_reg_275</first>
+        <first>R_Z_addr_23_reg_275</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

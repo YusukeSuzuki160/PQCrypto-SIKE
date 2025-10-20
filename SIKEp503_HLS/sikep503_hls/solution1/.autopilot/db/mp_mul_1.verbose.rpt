@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_1'
 ================================================================
-* Date:           Wed Oct  8 20:37:41 2025
+* Date:           Mon Oct 20 14:38:37 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.336 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.286 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      133|      245|  1.330 us|  2.450 us|  133|  245|       no|
+    |       86|      133|  0.860 us|  1.330 us|   86|  133|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                 |       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |     Instance    | Module|   min   |   max   |    min   |    max   | min | max |   Type  |
         +-----------------+-------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mul_1_fu_18  |mul_1  |      132|      244|  1.320 us|  2.440 us|  132|  244|       no|
+        |grp_mul_1_fu_18  |mul_1  |       85|      132|  0.850 us|  1.320 us|   85|  132|       no|
         +-----------------+-------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -56,31 +56,31 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        -|        -|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        -|     16|      421|      731|     -|
+|Instance             |        -|    225|     3080|     7622|     -|
 |Memory               |        -|      -|        -|        -|     -|
 |Multiplexer          |        -|      -|        0|       14|     -|
 |Register             |        -|      -|        3|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|     16|      424|      745|     0|
+|Total                |        0|    225|     3083|     7636|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization SLR (%)  |        0|     ~0|       ~0|       ~0|     0|
+|Utilization SLR (%)  |        0|      7|       ~0|        1|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available            |     5376|  12288|  3456000|  1728000|  1280|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization (%)      |        0|     ~0|       ~0|       ~0|     0|
+|Utilization (%)      |        0|      1|       ~0|       ~0|     0|
 +---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
     * Instance: 
-    +-----------------+-------+---------+----+-----+-----+-----+
-    |     Instance    | Module| BRAM_18K| DSP|  FF | LUT | URAM|
-    +-----------------+-------+---------+----+-----+-----+-----+
-    |grp_mul_1_fu_18  |mul_1  |        0|  16|  421|  731|    0|
-    +-----------------+-------+---------+----+-----+-----+-----+
-    |Total            |       |        0|  16|  421|  731|    0|
-    +-----------------+-------+---------+----+-----+-----+-----+
+    +-----------------+-------+---------+-----+------+------+-----+
+    |     Instance    | Module| BRAM_18K| DSP |  FF  |  LUT | URAM|
+    +-----------------+-------+---------+-----+------+------+-----+
+    |grp_mul_1_fu_18  |mul_1  |        0|  225|  3080|  7622|    0|
+    +-----------------+-------+---------+-----+------+------+-----+
+    |Total            |       |        0|  225|  3080|  7622|    0|
+    +-----------------+-------+---------+-----+------+------+-----+
 
     * DSP: 
     N/A
@@ -179,11 +179,11 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.1, i64 %a, i64 %b, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 3 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 1.09>
+State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 4 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 7 [1/2] (1.09ns)   --->   "%call_ln296 = call void @mul.1, i64 %a, i64 %b, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 7 'call' 'call_ln296' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 7 [1/2] (0.00ns)   --->   "%call_ln296 = call void @mul.1, i64 %a, i64 %b, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 7 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 8 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
 
 
@@ -352,9 +352,9 @@ ret_ln297       (ret        ) [ 000]
 |----------|-----------------|---------|---------|---------|---------|
 | Operation| Functional Unit |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|-----------------|---------|---------|---------|---------|
-|   call   | grp_mul_1_fu_18 |    16   |  2.322  |   568   |   613   |
+|   call   | grp_mul_1_fu_18 |   225   | 5.42529 |   5690  |   5516  |
 |----------|-----------------|---------|---------|---------|---------|
-|   Total  |                 |    16   |  2.322  |   568   |   613   |
+|   Total  |                 |   225   | 5.42529 |   5690  |   5516  |
 |----------|-----------------|---------|---------|---------|---------|
 
 Memories:
@@ -376,10 +376,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   16   |    2   |   568  |   613  |
+|  Function |   225  |    5   |  5690  |  5516  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   16   |    2   |   568  |   613  |
+|   Total   |   225  |    5   |  5690  |  5516  |
 +-----------+--------+--------+--------+--------+

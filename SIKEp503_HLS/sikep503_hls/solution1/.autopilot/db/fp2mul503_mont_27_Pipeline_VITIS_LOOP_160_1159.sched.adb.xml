@@ -485,10 +485,10 @@ for.inc.i.i109.split:15 %or_ln95 = or i64 %tempReg, i64 %sub_ln95
 
 <Node id="31" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
-for.inc.i.i109.split:16 %tmp_251 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
+for.inc.i.i109.split:16 %tmp_299 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
 
 ]]></Node>
-<StgValue><ssdm name="tmp_251"/></StgValue>
+<StgValue><ssdm name="tmp_299"/></StgValue>
 </operation>
 
 <operation id="35" st_id="2" stage="1" lat="1">
@@ -500,7 +500,7 @@ for.inc.i.i109.split:16 %tmp_251 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, 
 
 <Node id="32" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc.i.i109.split:17 %xor_ln163 = xor i1 %tmp_251, i1 1
+for.inc.i.i109.split:17 %xor_ln163 = xor i1 %tmp_299, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln163"/></StgValue>

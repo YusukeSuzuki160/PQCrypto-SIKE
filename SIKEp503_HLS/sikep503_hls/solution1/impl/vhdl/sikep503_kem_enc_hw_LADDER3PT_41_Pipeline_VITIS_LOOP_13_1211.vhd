@@ -65,7 +65,7 @@ attribute shreg_extract : string;
     signal xPQ_1_ce0_local : STD_LOGIC;
     signal R2_X_2_we0_local : STD_LOGIC;
     signal R2_X_2_ce0_local : STD_LOGIC;
-    signal tmp_134_cast_fu_95_p3 : STD_LOGIC_VECTOR (4 downto 0);
+    signal tmp_233_cast_fu_95_p3 : STD_LOGIC_VECTOR (4 downto 0);
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
     signal ap_done_int : STD_LOGIC;
@@ -283,7 +283,7 @@ begin
     end process;
 
     icmp_ln13_fu_83_p2 <= "1" when (ap_sig_allocacmp_i = ap_const_lv4_8) else "0";
-    tmp_134_cast_fu_95_p3 <= (ap_const_lv1_1 & ap_sig_allocacmp_i);
+    tmp_233_cast_fu_95_p3 <= (ap_const_lv1_1 & ap_sig_allocacmp_i);
     xPQ_1_address0 <= zext_ln14_fu_103_p1(5 - 1 downto 0);
     xPQ_1_ce0 <= xPQ_1_ce0_local;
 
@@ -297,5 +297,5 @@ begin
     end process;
 
     zext_ln13_fu_113_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_reg_124),64));
-    zext_ln14_fu_103_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_134_cast_fu_95_p3),64));
+    zext_ln14_fu_103_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_233_cast_fu_95_p3),64));
 end behav;

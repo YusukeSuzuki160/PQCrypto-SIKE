@@ -352,7 +352,7 @@ _Z15fpcorrection503Pm.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc32.i.split:4 %specpipeline_ln102 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73
+for.inc32.i.split:4 %specpipeline_ln102 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln102"/></StgValue>
@@ -382,7 +382,7 @@ for.inc32.i.split:5 %speclooptripcount_ln102 = speclooptripcount void @_ssdm_op_
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc32.i.split:6 %specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_25
+for.inc32.i.split:6 %specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln111"/></StgValue>

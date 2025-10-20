@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sikep503_kem_enc_hw'
 ================================================================
-* Date:           Wed Oct  8 20:37:17 2025
+* Date:           Mon Oct 20 14:38:09 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -29,7 +29,7 @@
     |    Latency (cycles)   |    Latency (absolute)   |        Interval       | Pipeline|
     |   min   |     max     |    min    |     max     |   min   |     max     |   Type  |
     +---------+-------------+-----------+-------------+---------+-------------+---------+
-    |  6291953|  19814381129|  62.920 ms|  198.144 sec|  6291954|  19814381130|       no|
+    |  5279793|  15791379574|  52.798 ms|  157.914 sec|  5279794|  15791379575|       no|
     +---------+-------------+-----------+-------------+---------+-------------+---------+
 
     + Detail: 
@@ -42,8 +42,8 @@
         |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1_fu_229  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1  |       26|          26|   0.260 us|    0.260 us|       25|          25|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_sikep503_kem_enc_hw_Pipeline_3_fu_239                |sikep503_kem_enc_hw_Pipeline_3                |      381|         381|   3.810 us|    3.810 us|      379|         379|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_cshake256_simple_fu_250                              |cshake256_simple                              |      321|         321|   3.210 us|    3.210 us|      321|         321|                                              no|
-        |grp_EphemeralKeyGeneration_A_1_fu_261                    |EphemeralKeyGeneration_A_1                    |  3937799|  9908767837|  39.378 ms|  99.088 sec|  3937799|  9908767837|                                              no|
-        |grp_EphemeralSecretAgreement_A_1_fu_295                  |EphemeralSecretAgreement_A_1                  |  2351963|  9905611101|  23.520 ms|  99.056 sec|  2351963|  9905611101|                                              no|
+        |grp_EphemeralKeyGeneration_A_1_fu_261                    |EphemeralKeyGeneration_A_1                    |  3300223|  7896932685|  33.002 ms|  78.969 sec|  3300223|  7896932685|                                              no|
+        |grp_EphemeralSecretAgreement_A_1_fu_295                  |EphemeralSecretAgreement_A_1                  |  1977379|  7894444698|  19.774 ms|  78.944 sec|  1977379|  7894444698|                                              no|
         |grp_cshake256_simple_20_fu_323                           |cshake256_simple_20                           |      185|         185|   1.850 us|    1.850 us|      185|         185|                                              no|
         |grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334  |sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1  |       27|          27|   0.270 us|    0.270 us|       25|          25|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_sikep503_kem_enc_hw_Pipeline_5_fu_346                |sikep503_kem_enc_hw_Pipeline_5                |      405|         405|   4.050 us|    4.050 us|      403|         403|  loop auto-rewind stp (delay=0 clock cycles(s))|
@@ -221,7 +221,7 @@ ST_23 : Operation 85 [1/1] (1.14ns)   --->   "%add_ln98 = add i64 %ct_read, i64 
 State 24 <SV = 23> <Delay = 7.30>
 ST_24 : Operation 86 [1/2] (0.00ns)   --->   "%call_ln89 = call void @cshake256_simple.20, i8 %h, i8 %jinvariant, i8 %jinvariant_1, i8 %jinvariant_2, i8 %jinvariant_3, i64 %KeccakF_RoundConstants" [src/sike.cpp:89->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 86 'call' 'call_ln89' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_24 : Operation 87 [1/1] (0.00ns)   --->   "%gmem_addr_1 = getelementptr i8 %gmem, i64 %add_ln98" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 87 'getelementptr' 'gmem_addr_1' <Predicate = true> <Delay = 0.00>
-ST_24 : Operation 88 [1/1] (7.30ns)   --->   "%empty_141 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i8 %gmem_addr_1, i64 24" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 88 'writereq' 'empty_141' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_24 : Operation 88 [1/1] (7.30ns)   --->   "%empty_143 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i8 %gmem_addr_1, i64 24" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 88 'writereq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 25 <SV = 24> <Delay = 0.00>
 ST_25 : Operation 89 [2/2] (0.00ns)   --->   "%call_ln98 = call void @sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1, i8 %gmem, i64 %add_ln98, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 89 'call' 'call_ln98' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -230,44 +230,44 @@ State 26 <SV = 25> <Delay = 0.00>
 ST_26 : Operation 90 [1/2] (0.00ns)   --->   "%call_ln98 = call void @sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1, i8 %gmem, i64 %add_ln98, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i8 %h" [src/sike.cpp:98->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 90 'call' 'call_ln98' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 27 <SV = 26> <Delay = 7.30>
-ST_27 : Operation 91 [5/5] (7.30ns)   --->   "%empty_142 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 91 'writeresp' 'empty_142' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_27 : Operation 91 [5/5] (7.30ns)   --->   "%empty_144 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 91 'writeresp' 'empty_144' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 28 <SV = 27> <Delay = 7.30>
-ST_28 : Operation 92 [4/5] (7.30ns)   --->   "%empty_142 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 92 'writeresp' 'empty_142' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_28 : Operation 92 [4/5] (7.30ns)   --->   "%empty_144 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 92 'writeresp' 'empty_144' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 29 <SV = 28> <Delay = 7.30>
-ST_29 : Operation 93 [3/5] (7.30ns)   --->   "%empty_142 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 93 'writeresp' 'empty_142' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_29 : Operation 93 [3/5] (7.30ns)   --->   "%empty_144 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 93 'writeresp' 'empty_144' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 30 <SV = 29> <Delay = 7.30>
-ST_30 : Operation 94 [2/5] (7.30ns)   --->   "%empty_142 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 94 'writeresp' 'empty_142' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_30 : Operation 94 [2/5] (7.30ns)   --->   "%empty_144 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 94 'writeresp' 'empty_144' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 31 <SV = 30> <Delay = 7.30>
-ST_31 : Operation 95 [1/5] (7.30ns)   --->   "%empty_142 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 95 'writeresp' 'empty_142' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_31 : Operation 95 [1/5] (7.30ns)   --->   "%empty_144 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr_1" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 95 'writeresp' 'empty_144' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 32 <SV = 31> <Delay = 7.30>
 ST_32 : Operation 96 [1/1] (0.00ns)   --->   "%gmem_addr_2 = getelementptr i8 %gmem, i64 %ct_read" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 96 'getelementptr' 'gmem_addr_2' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 97 [8/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 97 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_32 : Operation 97 [8/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 97 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 33 <SV = 32> <Delay = 7.30>
-ST_33 : Operation 98 [7/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 98 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_33 : Operation 98 [7/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 98 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 34 <SV = 33> <Delay = 7.30>
-ST_34 : Operation 99 [6/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 99 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_34 : Operation 99 [6/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 99 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 35 <SV = 34> <Delay = 7.30>
-ST_35 : Operation 100 [5/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 100 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_35 : Operation 100 [5/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 100 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 36 <SV = 35> <Delay = 7.30>
-ST_36 : Operation 101 [4/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 101 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_36 : Operation 101 [4/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 101 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 37 <SV = 36> <Delay = 7.30>
-ST_37 : Operation 102 [3/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 102 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_37 : Operation 102 [3/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 102 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 38 <SV = 37> <Delay = 7.30>
-ST_38 : Operation 103 [2/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 103 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_38 : Operation 103 [2/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 103 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 39 <SV = 38> <Delay = 7.30>
-ST_39 : Operation 104 [1/8] (7.30ns)   --->   "%empty_143 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 104 'readreq' 'empty_143' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_39 : Operation 104 [1/8] (7.30ns)   --->   "%empty_145 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i8, i8 %gmem_addr_2, i64 402" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 104 'readreq' 'empty_145' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 40 <SV = 39> <Delay = 0.00>
 ST_40 : Operation 105 [2/2] (0.00ns)   --->   "%call_ln0 = call void @sikep503_kem_enc_hw_Pipeline_5, i8 %gmem, i64 %ct_read, i8 %temp_3, i8 %temp_2, i8 %temp_1, i8 %temp"   --->   Operation 105 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -279,17 +279,17 @@ State 42 <SV = 41> <Delay = 0.00>
 ST_42 : Operation 107 [2/2] (0.00ns)   --->   "%call_ln118 = call void @cshake256_simple.21, i8 %gmem, i64 %ss_read, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sike.cpp:118->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 107 'call' 'call_ln118' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 43 <SV = 42> <Delay = 0.00>
-ST_43 : Operation 108 [1/1] (0.00ns)   --->   "%spectopmodule_ln28 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_12" [src/sikep503_kem_enc_hw.cpp:28]   --->   Operation 108 'spectopmodule' 'spectopmodule_ln28' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 109 [1/1] (0.00ns)   --->   "%specinterface_ln28 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_46, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_73, void @empty_73, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0" [src/sikep503_kem_enc_hw.cpp:28]   --->   Operation 109 'specinterface' 'specinterface_ln28' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 110 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_18, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_23, void @empty_57, void @empty_73, i32 16, i32 16, i32 16, i32 16, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0"   --->   Operation 110 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 108 [1/1] (0.00ns)   --->   "%spectopmodule_ln28 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_56" [src/sikep503_kem_enc_hw.cpp:28]   --->   Operation 108 'spectopmodule' 'spectopmodule_ln28' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 109 [1/1] (0.00ns)   --->   "%specinterface_ln28 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_22, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_102, void @empty_102, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0" [src/sikep503_kem_enc_hw.cpp:28]   --->   Operation 109 'specinterface' 'specinterface_ln28' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 110 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 110 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_43 : Operation 111 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %gmem"   --->   Operation 111 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 112 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ct, void @empty_55, i32 4294967295, i32 4294967295, void @empty_44, i32 0, i32 0, void @empty_71, void @empty_72, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_45, i32 4294967295, i32 0, i32 0"   --->   Operation 112 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 113 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ct, void @empty_35, i32 4294967295, i32 4294967295, void @empty_73, i32 0, i32 0, void @empty_73, void @empty_73, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_45, i32 4294967295, i32 0, i32 0"   --->   Operation 113 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 114 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %pk, void @empty_55, i32 4294967295, i32 4294967295, void @empty_44, i32 0, i32 0, void @empty_71, void @empty_33, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_45, i32 4294967295, i32 0, i32 0"   --->   Operation 114 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 115 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %pk, void @empty_35, i32 4294967295, i32 4294967295, void @empty_73, i32 0, i32 0, void @empty_73, void @empty_73, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_45, i32 4294967295, i32 0, i32 0"   --->   Operation 115 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 116 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ss, void @empty_55, i32 4294967295, i32 4294967295, void @empty_44, i32 0, i32 0, void @empty_71, void @empty_41, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_45, i32 4294967295, i32 0, i32 0"   --->   Operation 116 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 117 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ss, void @empty_35, i32 4294967295, i32 4294967295, void @empty_73, i32 0, i32 0, void @empty_73, void @empty_73, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_45, i32 4294967295, i32 0, i32 0"   --->   Operation 117 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_43 : Operation 118 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_55, i32 0, i32 0, void @empty_73, i32 0, i32 0, void @empty_43, void @empty_73, void @empty_73, i32 0, i32 0, i32 0, i32 0, void @empty_73, void @empty_73, i32 4294967295, i32 0, i32 0"   --->   Operation 118 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 112 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ct, void @empty_16, i32 4294967295, i32 4294967295, void @empty_37, i32 0, i32 0, void @empty_62, void @empty_77, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 112 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 113 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ct, void @empty_21, i32 4294967295, i32 4294967295, void @empty_102, i32 0, i32 0, void @empty_102, void @empty_102, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 113 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 114 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %pk, void @empty_16, i32 4294967295, i32 4294967295, void @empty_37, i32 0, i32 0, void @empty_62, void @empty_15, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 114 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 115 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %pk, void @empty_21, i32 4294967295, i32 4294967295, void @empty_102, i32 0, i32 0, void @empty_102, void @empty_102, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 115 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 116 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ss, void @empty_16, i32 4294967295, i32 4294967295, void @empty_37, i32 0, i32 0, void @empty_62, void @empty, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 116 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 117 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ss, void @empty_21, i32 4294967295, i32 4294967295, void @empty_102, i32 0, i32 0, void @empty_102, void @empty_102, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 117 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 118 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_16, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_73, void @empty_102, void @empty_102, i32 0, i32 0, i32 0, i32 0, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 118 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_43 : Operation 119 [1/2] (0.00ns)   --->   "%call_ln118 = call void @cshake256_simple.21, i8 %gmem, i64 %ss_read, i8 %temp, i8 %temp_1, i8 %temp_2, i8 %temp_3, i64 %KeccakF_RoundConstants" [src/sike.cpp:118->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 119 'call' 'call_ln118' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_43 : Operation 120 [1/1] (0.00ns)   --->   "%ret_ln54 = ret" [src/sikep503_kem_enc_hw.cpp:54]   --->   Operation 120 'ret' 'ret_ln54' <Predicate = true> <Delay = 0.00>
 
@@ -361,11 +361,11 @@ call_ln82          (call         ) [ 0000000000000000000000000000000000000000000
 add_ln98           (add          ) [ 00000000000000000000000011100000000000000000]
 call_ln89          (call         ) [ 00000000000000000000000000000000000000000000]
 gmem_addr_1        (getelementptr) [ 00000000000000000000000001111111000000000000]
-empty_141          (writereq     ) [ 00000000000000000000000000000000000000000000]
+empty_143          (writereq     ) [ 00000000000000000000000000000000000000000000]
 call_ln98          (call         ) [ 00000000000000000000000000000000000000000000]
-empty_142          (writeresp    ) [ 00000000000000000000000000000000000000000000]
+empty_144          (writeresp    ) [ 00000000000000000000000000000000000000000000]
 gmem_addr_2        (getelementptr) [ 00000000000000000000000000000000011111110000]
-empty_143          (readreq      ) [ 00000000000000000000000000000000000000000000]
+empty_145          (readreq      ) [ 00000000000000000000000000000000000000000000]
 call_ln0           (call         ) [ 00000000000000000000000000000000000000000000]
 spectopmodule_ln28 (spectopmodule) [ 00000000000000000000000000000000000000000000]
 specinterface_ln28 (specinterface) [ 00000000000000000000000000000000000000000000]
@@ -785,7 +785,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="85" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_12"/></StgValue>
+<StgValue><ssdm name="empty_56"/></StgValue>
 </bind>
 </comp>
 
@@ -812,7 +812,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="91" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_46"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -821,7 +821,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="93" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_102"/></StgValue>
 </bind>
 </comp>
 
@@ -839,7 +839,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="97" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_18"/></StgValue>
+<StgValue><ssdm name="empty_41"/></StgValue>
 </bind>
 </comp>
 
@@ -848,7 +848,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="99" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_74"/></StgValue>
 </bind>
 </comp>
 
@@ -857,7 +857,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="101" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_57"/></StgValue>
+<StgValue><ssdm name="empty_75"/></StgValue>
 </bind>
 </comp>
 
@@ -884,7 +884,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="107" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_55"/></StgValue>
+<StgValue><ssdm name="empty_16"/></StgValue>
 </bind>
 </comp>
 
@@ -893,7 +893,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="109" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_44"/></StgValue>
+<StgValue><ssdm name="empty_37"/></StgValue>
 </bind>
 </comp>
 
@@ -902,7 +902,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="111" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_71"/></StgValue>
+<StgValue><ssdm name="empty_62"/></StgValue>
 </bind>
 </comp>
 
@@ -911,7 +911,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="113" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_72"/></StgValue>
+<StgValue><ssdm name="empty_77"/></StgValue>
 </bind>
 </comp>
 
@@ -920,7 +920,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="115" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_45"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -929,7 +929,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="117" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_35"/></StgValue>
+<StgValue><ssdm name="empty_21"/></StgValue>
 </bind>
 </comp>
 
@@ -938,7 +938,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="119" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_33"/></StgValue>
+<StgValue><ssdm name="empty_15"/></StgValue>
 </bind>
 </comp>
 
@@ -947,7 +947,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="121" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_41"/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </bind>
 </comp>
 
@@ -956,7 +956,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 <pin id="123" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_43"/></StgValue>
+<StgValue><ssdm name="empty_73"/></StgValue>
 </bind>
 </comp>
 
@@ -1128,7 +1128,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="writereq(1155) writeresp(1158) " fcode="writeresp"/>
-<opset="empty_141/24 empty_142/27 "/>
+<opset="empty_143/24 empty_144/27 "/>
 </bind>
 </comp>
 
@@ -1141,7 +1141,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="readreq(1154) " fcode="readreq"/>
-<opset="empty_143/32 "/>
+<opset="empty_145/32 "/>
 </bind>
 </comp>
 
@@ -1780,7 +1780,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 	State 22
 	State 23
 	State 24
-		empty_141 : 1
+		empty_143 : 1
 	State 25
 	State 26
 	State 27
@@ -1789,7 +1789,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 	State 30
 	State 31
 	State 32
-		empty_143 : 1
+		empty_145 : 1
 	State 33
 	State 34
 	State 35
@@ -1815,8 +1815,8 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 |          | grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_26_1_fu_229 |    0    |    0    |    0    |    61   |   381   |    0    |
 |          |        grp_sikep503_kem_enc_hw_Pipeline_3_fu_239        |    0    |    0    |    0    |    35   |    46   |    0    |
 |          |               grp_cshake256_simple_fu_250               |    0    |    0    | 14.0648 |   5253  |  17502  |    0    |
-|   call   |          grp_EphemeralKeyGeneration_A_1_fu_261          |    6    |   3312  | 854.476 |  194840 |  514485 |    0    |
-|          |         grp_EphemeralSecretAgreement_A_1_fu_295         |    2    |   2848  | 772.432 |  169567 |  468673 |    0    |
+|   call   |          grp_EphemeralKeyGeneration_A_1_fu_261          |    6    |  22749  | 1141.53 |  672054 |  970660 |    0    |
+|          |         grp_EphemeralSecretAgreement_A_1_fu_295         |    2    |  19150  | 1012.81 |  570820 |  851553 |    0    |
 |          |              grp_cshake256_simple_20_fu_323             |    0    |    0    | 10.1948 |   5145  |  17271  |    0    |
 |          | grp_sikep503_kem_enc_hw_Pipeline_VITIS_LOOP_98_1_fu_334 |    0    |    0    |  1.935  |    57   |    97   |    0    |
 |          |        grp_sikep503_kem_enc_hw_Pipeline_5_fu_346        |    0    |    0    |    0    |    35   |    46   |    0    |
@@ -1837,7 +1837,7 @@ ret_ln54           (ret          ) [ 0000000000000000000000000000000000000000000
 |----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   zext   |                     zext_ln72_fu_380                    |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                         |    8    |   6160  | 1667.94 |  380340 |1.03614e+06|    0    |
+|   Total  |                                                         |    8    |  41899  | 2195.38 |1.25881e+06|1.8752e+06|    0    |
 |----------|---------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -1909,10 +1909,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    8   |  6160  |  1667  | 380340 | 1036144|    0   |
+|  Function |    8   |  41899 |  2195  | 1258807| 1875199|    0   |
 |   Memory  |    0   |    -   |    -   |   986  |  1052  |    0   |
 |Multiplexer|    -   |    -   |    1   |    0   |   36   |    -   |
 |  Register |    -   |    -   |    -   |   285  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    8   |  6160  |  1669  | 381611 | 1037232|    0   |
+|   Total   |    8   |  41899 |  2197  | 1260078| 1876287|    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

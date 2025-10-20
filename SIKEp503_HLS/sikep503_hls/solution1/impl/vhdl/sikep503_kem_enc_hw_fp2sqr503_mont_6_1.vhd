@@ -26,7 +26,11 @@ port (
     c_1_ce0 : OUT STD_LOGIC;
     c_1_we0 : OUT STD_LOGIC;
     c_1_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
-    c_1_q0 : IN STD_LOGIC_VECTOR (63 downto 0) );
+    c_1_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    grp_fu_463_p_din0 : OUT STD_LOGIC_VECTOR (255 downto 0);
+    grp_fu_463_p_din1 : OUT STD_LOGIC_VECTOR (255 downto 0);
+    grp_fu_463_p_dout0 : IN STD_LOGIC_VECTOR (511 downto 0);
+    grp_fu_463_p_ce : OUT STD_LOGIC );
 end;
 
 
@@ -144,6 +148,9 @@ attribute shreg_extract : string;
     signal grp_fpmul503_mont_3_3_fu_111_mc_ce0 : STD_LOGIC;
     signal grp_fpmul503_mont_3_3_fu_111_mc_we0 : STD_LOGIC;
     signal grp_fpmul503_mont_3_3_fu_111_mc_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din0 : STD_LOGIC_VECTOR (255 downto 0);
+    signal grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din1 : STD_LOGIC_VECTOR (255 downto 0);
+    signal grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_ce : STD_LOGIC;
     signal grp_fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_378_1_fu_62_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
@@ -169,6 +176,7 @@ attribute shreg_extract : string;
     signal ap_CS_fsm_state10 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
     signal empty_fu_121_p1 : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_fu_160_ce : STD_LOGIC;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (9 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
@@ -304,7 +312,28 @@ attribute shreg_extract : string;
         mc_we0 : OUT STD_LOGIC;
         mc_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
         mc_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
-        mc_offset : IN STD_LOGIC_VECTOR (31 downto 0) );
+        mc_offset : IN STD_LOGIC_VECTOR (31 downto 0);
+        grp_fu_160_p_din0 : OUT STD_LOGIC_VECTOR (255 downto 0);
+        grp_fu_160_p_din1 : OUT STD_LOGIC_VECTOR (255 downto 0);
+        grp_fu_160_p_dout0 : IN STD_LOGIC_VECTOR (511 downto 0);
+        grp_fu_160_p_ce : OUT STD_LOGIC );
+    end component;
+
+
+    component sikep503_kem_enc_hw_mul_256ns_256ns_512_2_1 IS
+    generic (
+        ID : INTEGER;
+        NUM_STAGE : INTEGER;
+        din0_WIDTH : INTEGER;
+        din1_WIDTH : INTEGER;
+        dout_WIDTH : INTEGER );
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        din0 : IN STD_LOGIC_VECTOR (255 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (255 downto 0);
+        ce : IN STD_LOGIC;
+        dout : OUT STD_LOGIC_VECTOR (511 downto 0) );
     end component;
 
 
@@ -479,7 +508,11 @@ begin
         mc_we0 => grp_fpmul503_mont_3_3_fu_111_mc_we0,
         mc_d0 => grp_fpmul503_mont_3_3_fu_111_mc_d0,
         mc_q0 => c_1_q0,
-        mc_offset => c_0_offset);
+        mc_offset => c_0_offset,
+        grp_fu_160_p_din0 => grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din0,
+        grp_fu_160_p_din1 => grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din1,
+        grp_fu_160_p_dout0 => grp_fu_463_p_dout0,
+        grp_fu_160_p_ce => grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_ce);
 
 
 
@@ -852,6 +885,19 @@ begin
     grp_fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_68_2_fu_84_ap_start <= grp_fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_68_2_fu_84_ap_start_reg;
     grp_fpmul503_mont_3_3_fu_111_ap_start <= grp_fpmul503_mont_3_3_fu_111_ap_start_reg;
     grp_fpmul503_mont_3_fu_100_ap_start <= grp_fpmul503_mont_3_fu_100_ap_start_reg;
+
+    grp_fu_160_ce_assign_proc : process(grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_ce, ap_CS_fsm_state10)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
+            grp_fu_160_ce <= grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_ce;
+        else 
+            grp_fu_160_ce <= ap_const_logic_1;
+        end if; 
+    end process;
+
+    grp_fu_463_p_ce <= grp_fu_160_ce;
+    grp_fu_463_p_din0 <= grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din0;
+    grp_fu_463_p_din1 <= grp_fpmul503_mont_3_3_fu_111_grp_fu_160_p_din1;
 
     t1_address0_assign_proc : process(grp_fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_378_1_fu_62_t1_address0, grp_fpmul503_mont_3_fu_100_ma_address0, ap_CS_fsm_state2, ap_CS_fsm_state8)
     begin

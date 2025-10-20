@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_15'
 ================================================================
-* Date:           Wed Oct  8 20:36:55 2025
+* Date:           Mon Oct 20 14:37:44 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.336 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.286 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      133|      245|  1.330 us|  2.450 us|  133|  245|       no|
+    |       86|      133|  0.860 us|  1.330 us|   86|  133|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                  |        |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |     Instance     | Module |   min   |   max   |    min   |    max   | min | max |   Type  |
         +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mul_14_fu_20  |mul_14  |      132|      244|  1.320 us|  2.440 us|  132|  244|       no|
+        |grp_mul_14_fu_20  |mul_14  |       85|      132|  0.850 us|  1.320 us|   85|  132|       no|
         +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -83,12 +83,12 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.14, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 3 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 1.09>
+State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 4 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/2] (1.09ns)   --->   "%call_ln296 = call void @mul.14, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln296 = call void @mul.14, i64 %a, i64 %b_0, i64 %b_1, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 9 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
 
 
@@ -271,9 +271,9 @@ ret_ln297       (ret        ) [ 000]
 |----------|------------------|---------|---------|---------|---------|
 | Operation|  Functional Unit |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|------------------|---------|---------|---------|---------|
-|   call   | grp_mul_14_fu_20 |    16   |  2.709  |   570   |   685   |
+|   call   | grp_mul_14_fu_20 |   225   | 5.74657 |   5878  |   5513  |
 |----------|------------------|---------|---------|---------|---------|
-|   Total  |                  |    16   |  2.709  |   570   |   685   |
+|   Total  |                  |   225   | 5.74657 |   5878  |   5513  |
 |----------|------------------|---------|---------|---------|---------|
 
 Memories:
@@ -295,10 +295,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   16   |    2   |   570  |   685  |
+|  Function |   225  |    5   |  5878  |  5513  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   16   |    2   |   570  |   685  |
+|   Total   |   225  |    5   |  5878  |  5513  |
 +-----------+--------+--------+--------+--------+

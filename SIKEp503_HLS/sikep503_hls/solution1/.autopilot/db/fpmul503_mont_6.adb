@@ -440,7 +440,7 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>empty_151</name>
+              <name>empty_153</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -451,7 +451,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_151_fu_110_p2</rtlName>
+              <rtlName>empty_153_fu_110_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1664,8 +1664,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>264</mMinLatency>
-        <mMaxLatency>490</mMaxLatency>
+        <mMinLatency>217</mMinLatency>
+        <mMaxLatency>378</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -1734,8 +1734,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>246</mMinLatency>
-        <mMaxLatency>472</mMaxLatency>
+        <mMinLatency>199</mMinLatency>
+        <mMaxLatency>360</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2037,15 +2037,15 @@
             <item_version>0</item_version>
             <item class_id="40" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>16</second>
+              <second>225</second>
             </item>
             <item>
               <first>FF</first>
-              <second>424</second>
+              <second>3083</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>745</second>
+              <second>7636</second>
             </item>
           </second>
         </item>
@@ -2077,7 +2077,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>empty_151_fu_110_p2 ( + ) </first>
+          <first>empty_153_fu_110_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2520,7 +2520,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>empty_151_fu_110_p2 ( + ) </first>
+          <first>empty_153_fu_110_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2862,7 +2862,7 @@
       <count>6</count>
       <item_version>0</item_version>
       <item class_id="56" tracking_level="0" version="0">
-        <first>empty_151_fu_110</first>
+        <first>empty_153_fu_110</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

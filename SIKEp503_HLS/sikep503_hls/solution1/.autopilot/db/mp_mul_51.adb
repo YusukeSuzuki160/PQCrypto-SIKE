@@ -363,8 +363,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>133</mMinLatency>
-        <mMaxLatency>245</mMaxLatency>
+        <mMinLatency>86</mMinLatency>
+        <mMaxLatency>133</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -445,19 +445,15 @@
         <item class_id="36" tracking_level="0" version="0">
           <first>grp_mul_63_fu_18 (mul_63)</first>
           <second class_id="37" tracking_level="0" version="0">
-            <count>3</count>
+            <count>2</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
-              <first>DSP</first>
-              <second>16</second>
-            </item>
-            <item>
               <first>FF</first>
-              <second>421</second>
+              <second>2720</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>731</second>
+              <second>7453</second>
             </item>
           </second>
         </item>
@@ -475,7 +471,7 @@
         <item_version>0</item_version>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>1</count>
+        <count>2</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -501,6 +497,33 @@
             <item>
               <first>LUT</first>
               <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_28_ce</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
             </item>
           </second>
         </item>

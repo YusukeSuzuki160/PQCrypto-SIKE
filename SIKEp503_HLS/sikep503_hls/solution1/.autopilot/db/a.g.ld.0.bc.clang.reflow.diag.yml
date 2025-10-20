@@ -313,121 +313,121 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 123, Column: 28 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 123, Column: 28 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE17get_bits_as_chunkEPKmjj
 Args:            
   - String:          'Inlining function '''
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::CHUNK_MASK()'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 72, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 72, Column: 0 }
   - String:          ''' into '''
   - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 79, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 79, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 153, Column: 19 }
-Function:        _ZN3mpx9PackedOpsImLj8ELb1EE11ChunkPacker4pushE7ap_uintILi64EE
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 153, Column: 19 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE11ChunkPacker4pushE7ap_uintILi128EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::CHUNK_MASK()'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 72, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 72, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::push(ap_uint<64>)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 138, 
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::push(ap_uint<128>)'
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 138, 
                        Column: 0 }
   - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 197, Column: 26 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 197, Column: 26 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - Callee:          'mpx::ceil_div_u(unsigned int, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 30, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 30, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 202, Column: 10 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 202, Column: 10 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Inlining function '''
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::init(unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 134, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 134, 
                        Column: 0 }
   - String:          ''' into '''
   - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 239, Column: 10 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 239, Column: 10 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Inlining function '''
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::flush()'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 171, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 171, 
                        Column: 0 }
   - String:          ''' into '''
   - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 237, Column: 10 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 237, Column: 10 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::push(ap_uint<64>)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 138, 
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::ChunkPacker::push(ap_uint<128>)'
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 138, 
                        Column: 0 }
   - String:          ''' into '''
   - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 230, Column: 43 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 230, Column: 43 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Inlining function '''
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::CHUNK_MASK()'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 72, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 72, Column: 0 }
   - String:          ''' into '''
   - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 224, Column: 28 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 224, Column: 28 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Inlining function '''
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 79, Column: 0 }
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 79, Column: 0 }
   - String:          ''' into '''
   - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ''''
 ...
@@ -438,7 +438,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
@@ -1930,7 +1930,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Loop '''
@@ -1940,7 +1940,27 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 142, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 85, Column: 22 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_85_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 85, Column: 22 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_85_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Loop '''
@@ -1950,7 +1970,7 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, Column: 0 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, Column: 0 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Updating loop '
@@ -1958,11 +1978,11 @@ Args:
   - String:          ' bound from '
   - OldBound:        '1'
   - String:          ' to '
-  - NewBound:        '16'
+  - NewBound:        '8'
   - String:          ' for loop '''
   - LoopName:        VITIS_LOOP_207_2
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:207:23'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:207:23'
   - String:          ')'
   - String:          ' in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -1971,7 +1991,7 @@ Args:
 --- !Missed
 Pass:            reflow-infer-loop-tripcount
 Name:            UpdateLoopBound
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, Column: 0 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, Column: 0 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Updating loop '
@@ -1983,7 +2003,7 @@ Args:
   - String:          ' for loop '''
   - LoopName:        VITIS_LOOP_188_1
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:188:20'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:188:20'
   - String:          ')'
   - String:          ' in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -2030,6 +2050,68 @@ Args:
   - String:          ' in function '''
   - String:          LADDER3PT
   - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_85_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:85:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        VITIS_LOOP_85_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:85:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_85_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:85:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        VITIS_LOOP_85_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:85:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' has been removed because the loop is unrolled completely'
 ...
 --- !Failure
 Pass:            reflow-function-uniquification
@@ -2400,7 +2482,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
@@ -5622,6 +5704,40 @@ Args:
   - OrigID:          for.body11.load.24
 ...
 --- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ' '
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ' '
+  - Function:        'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ' '
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ' '
+  - Function:        'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
 DebugLoc:        { File: src/sike.cpp, Line: 111, Column: 3 }
@@ -5948,23 +6064,45 @@ Args:
 --- !Failure
 Pass:            reflow-occurrence-inference
 Name:            NonComputableLoopForm
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 142, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Could not analyze occurrence information within '''
   - LoopName:        VITIS_LOOP_142_1
   - String:          '''('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:142:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          '''('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
   - String:          ') . Requires loop in simplify form and with single exit.'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !HLSReportInfo
@@ -6414,7 +6552,7 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        VITIS_LOOP_177_1
   - String:          '> at '
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:177:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:177:25'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -7100,11 +7238,21 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_215_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -7216,22 +7364,6 @@ Args:
   - String:          cshake256_simple
   - String:          ''' completely with a factor of '
   - Factor:          '8'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, Column: 0 }
-Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_142_1
-  - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:142:25'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
-  - String:          ''' completely with a factor of '
-  - Factor:          '1'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -9302,7 +9434,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy
+Function:        _Z16cshake256_simplePhytPKhy.32
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -9321,7 +9453,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy
+Function:        _Z16cshake256_simplePhytPKhy.32
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -9382,7 +9514,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy.32
+Function:        _Z16cshake256_simplePhytPKhy
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -9401,7 +9533,7 @@ Args:
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
 DebugLoc:        { File: src/sha3/fips202.cpp, Line: 639, Column: 17 }
-Function:        _Z16cshake256_simplePhytPKhy.32
+Function:        _Z16cshake256_simplePhytPKhy
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -10596,7 +10728,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.117.118
 Args:            
   - String:          'Loop '''
@@ -10606,7 +10738,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.117.118
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.124.125
 Args:            
   - String:          'Loop '''
@@ -10616,7 +10758,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.124.125
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.6
 Args:            
   - String:          'Loop '''
@@ -10626,7 +10778,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.6
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.5
 Args:            
   - String:          'Loop '''
@@ -10636,7 +10798,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.5
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.4
 Args:            
   - String:          'Loop '''
@@ -10646,7 +10818,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.4
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.3
 Args:            
   - String:          'Loop '''
@@ -10656,7 +10838,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.3
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.2
 Args:            
   - String:          'Loop '''
@@ -10666,7 +10858,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.1
 Args:            
   - String:          'Loop '''
@@ -10676,7 +10878,17 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.83.84
 Args:            
   - String:          'Loop '''
@@ -10686,23 +10898,43 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.83.84
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.117.118
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10711,13 +10943,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.117.118
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.124.125
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10726,13 +10973,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.124.125
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.6
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10741,13 +11003,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.6
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.5
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10756,13 +11033,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.5
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.4
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10771,13 +11063,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.4
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.3
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10786,13 +11093,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.3
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.2
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10801,13 +11123,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.2
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.1
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10816,13 +11153,28 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.83.84
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10831,13 +11183,43 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFailFullyUnroll
-DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 215, Column: 25 }
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj.83.84
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 215, Column: 25 }
 Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
 Args:            
   - String:          'Cannot unroll loop '''
   - LoopName:        VITIS_LOOP_215_3
   - String:          ''' ('
-  - LoopLoc:         'src/generic/mpx_camba_mul.hpp:215:25'
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:215:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 142, Column: 25 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          ''' ('
+  - LoopLoc:         'src/generic/mpx_comba_mul.hpp:142:25'
   - String:          ') '
   - String:          'in function '''
   - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
@@ -10863,7 +11245,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
@@ -10968,7 +11350,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.82.85
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.83.84)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.82.85)'
@@ -11021,7 +11403,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.1
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.1)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.1)'
@@ -11035,7 +11417,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.2
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.2)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.2)'
@@ -11413,7 +11795,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.3
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.3)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.3)'
@@ -11427,7 +11809,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.4
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.4)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.4)'
@@ -11636,7 +12018,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.5
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.5)'
@@ -11793,7 +12175,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.6
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.6)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.6)'
@@ -12691,7 +13073,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.123.126
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.124.125)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.123.126)'
@@ -12861,7 +13243,7 @@ DebugLoc:        { File: src/generic/fp_generic.cpp, Line: 296, Column: 5 }
 Function:        _Z6mp_mulPKmS0_Pmj.116.119
 Args:            
   - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.117.118)'
-    DebugLoc:        { File: src/generic/mpx_camba_mul.hpp, Line: 185, 
+    DebugLoc:        { File: src/generic/mpx_comba_mul.hpp, Line: 185, 
                        Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) (.116.119)'

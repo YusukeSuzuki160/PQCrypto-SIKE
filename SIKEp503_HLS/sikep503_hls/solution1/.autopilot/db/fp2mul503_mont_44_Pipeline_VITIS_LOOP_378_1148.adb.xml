@@ -438,10 +438,10 @@ for.inc.i.i38.split:15 %zext_ln381_15 = zext i6 %lshr_ln381_s
 
 <Node id="36" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i.i38.split:16 %coeff_addr_14 = getelementptr i64 %coeff, i64 0, i64 %zext_ln381_15
+for.inc.i.i38.split:16 %coeff_addr_18 = getelementptr i64 %coeff, i64 0, i64 %zext_ln381_15
 
 ]]></Node>
-<StgValue><ssdm name="coeff_addr_14"/></StgValue>
+<StgValue><ssdm name="coeff_addr_18"/></StgValue>
 </operation>
 
 <operation id="33" st_id="2" stage="2" lat="2">
@@ -454,7 +454,7 @@ for.inc.i.i38.split:16 %coeff_addr_14 = getelementptr i64 %coeff, i64 0, i64 %ze
 
 <Node id="37" bw="64" op_0_bw="6">
 <![CDATA[
-for.inc.i.i38.split:17 %coeff_load_8 = load i6 %coeff_addr_14
+for.inc.i.i38.split:17 %coeff_load_8 = load i6 %coeff_addr_18
 
 ]]></Node>
 <StgValue><ssdm name="coeff_load_8"/></StgValue>
@@ -569,7 +569,7 @@ for.inc.i.i38.split:12 %tempReg = add i64 %coeff_load, i64 %zext_ln381_19
 
 <Node id="37" bw="64" op_0_bw="6">
 <![CDATA[
-for.inc.i.i38.split:17 %coeff_load_8 = load i6 %coeff_addr_14
+for.inc.i.i38.split:17 %coeff_load_8 = load i6 %coeff_addr_18
 
 ]]></Node>
 <StgValue><ssdm name="coeff_load_8"/></StgValue>
@@ -960,13 +960,13 @@ for.inc.i.i38.split:33 %br_ln378 = br void %for.inc.i.i38
 </dataflow>
 <dataflow id="146" from="lshr_ln381_s" to="zext_ln381_15" fromId="26" toId="31">
 </dataflow>
-<dataflow id="147" from="coeff" to="coeff_addr_14" fromId="69" toId="32">
+<dataflow id="147" from="coeff" to="coeff_addr_18" fromId="69" toId="32">
 </dataflow>
-<dataflow id="148" from="StgValue_122" to="coeff_addr_14" fromId="122" toId="32">
+<dataflow id="148" from="StgValue_122" to="coeff_addr_18" fromId="122" toId="32">
 </dataflow>
-<dataflow id="149" from="zext_ln381_15" to="coeff_addr_14" fromId="31" toId="32">
+<dataflow id="149" from="zext_ln381_15" to="coeff_addr_18" fromId="31" toId="32">
 </dataflow>
-<dataflow id="150" from="coeff_addr_14" to="coeff_load_8" fromId="32" toId="33">
+<dataflow id="150" from="coeff_addr_18" to="coeff_load_8" fromId="32" toId="33">
 </dataflow>
 <dataflow id="151" from="i" to="zext_ln378" fromId="13" toId="34">
 </dataflow>
@@ -992,7 +992,7 @@ for.inc.i.i38.split:33 %br_ln378 = br void %for.inc.i.i38
 </dataflow>
 <dataflow id="168" from="zext_ln381_19" to="tempReg" fromId="37" toId="38">
 </dataflow>
-<dataflow id="169" from="coeff_addr_14" to="coeff_load_8" fromId="32" toId="39">
+<dataflow id="169" from="coeff_addr_18" to="coeff_load_8" fromId="32" toId="39">
 </dataflow>
 <dataflow id="170" from="coeff_load_8" to="add_ln381_25" fromId="39" toId="40">
 </dataflow>

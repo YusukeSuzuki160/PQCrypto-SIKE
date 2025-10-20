@@ -2067,7 +2067,7 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>R_Z_addr_9</name>
+              <name>R_Z_addr_27</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>280</lineNumber>
@@ -3349,7 +3349,7 @@
             <Obj>
               <type>0</type>
               <id>68</id>
-              <name>R_Z_addr_9_write_ln281</name>
+              <name>R_Z_addr_27_write_ln281</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>281</lineNumber>
@@ -6516,7 +6516,7 @@
           </second>
         </item>
         <item>
-          <first>R_Z_addr_9_reg_383</first>
+          <first>R_Z_addr_27_reg_383</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7904,7 +7904,7 @@
         </second>
       </item>
       <item>
-        <first>R_Z_addr_9_gep_fu_152</first>
+        <first>R_Z_addr_27_gep_fu_152</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8470,7 +8470,7 @@
         </second>
       </item>
       <item>
-        <first>R_Z_addr_9_reg_383</first>
+        <first>R_Z_addr_27_reg_383</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

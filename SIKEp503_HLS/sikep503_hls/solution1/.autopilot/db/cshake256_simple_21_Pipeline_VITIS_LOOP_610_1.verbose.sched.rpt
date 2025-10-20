@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cshake256_simple_21_Pipeline_VITIS_LOOP_610_1'
 ================================================================
-* Date:           Wed Oct  8 20:37:12 2025
+* Date:           Mon Oct 20 14:38:03 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -93,9 +93,9 @@ ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%icmp_ln610 = icmp_eq  i5 %i_262, i5
 ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%add_ln610 = add i5 %i_262, i5 1" [src/sha3/fips202.cpp:610->src/sha3/fips202.cpp:642]   --->   Operation 10 'add' 'add_ln610' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln610 = br i1 %icmp_ln610, void %for.inc.i.split, void %for.end.i.exitStub" [src/sha3/fips202.cpp:610->src/sha3/fips202.cpp:642]   --->   Operation 11 'br' 'br_ln610' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln610 = zext i5 %i_262" [src/sha3/fips202.cpp:610->src/sha3/fips202.cpp:642]   --->   Operation 12 'zext' 'zext_ln610' <Predicate = (!icmp_ln610)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specpipeline_ln608 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_73" [src/sha3/fips202.cpp:608->src/sha3/fips202.cpp:642]   --->   Operation 13 'specpipeline' 'specpipeline_ln608' <Predicate = (!icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specpipeline_ln608 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sha3/fips202.cpp:608->src/sha3/fips202.cpp:642]   --->   Operation 13 'specpipeline' 'specpipeline_ln608' <Predicate = (!icmp_ln610)> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%speclooptripcount_ln608 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 25, i64 25, i64 25" [src/sha3/fips202.cpp:608->src/sha3/fips202.cpp:642]   --->   Operation 14 'speclooptripcount' 'speclooptripcount_ln608' <Predicate = (!icmp_ln610)> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specloopname_ln610 = specloopname void @_ssdm_op_SpecLoopName, void @empty_94" [src/sha3/fips202.cpp:610->src/sha3/fips202.cpp:642]   --->   Operation 15 'specloopname' 'specloopname_ln610' <Predicate = (!icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specloopname_ln610 = specloopname void @_ssdm_op_SpecLoopName, void @empty_55" [src/sha3/fips202.cpp:610->src/sha3/fips202.cpp:642]   --->   Operation 15 'specloopname' 'specloopname_ln610' <Predicate = (!icmp_ln610)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%s_addr = getelementptr i64 %s, i64 0, i64 %zext_ln610" [src/sha3/fips202.cpp:612->src/sha3/fips202.cpp:642]   --->   Operation 16 'getelementptr' 's_addr' <Predicate = (!icmp_ln610)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln612 = store void @_ssdm_op_Write.bram.i64, i5 %s_addr, i64 0, i8 255" [src/sha3/fips202.cpp:612->src/sha3/fips202.cpp:642]   --->   Operation 17 'store' 'store_ln612' <Predicate = (!icmp_ln610)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln608 = store i5 %add_ln610, i5 %i" [src/sha3/fips202.cpp:608->src/sha3/fips202.cpp:642]   --->   Operation 18 'store' 'store_ln608' <Predicate = (!icmp_ln610)> <Delay = 0.38>

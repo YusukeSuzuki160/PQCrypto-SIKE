@@ -123,7 +123,7 @@ end
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_9_2_8_1_1_U2651(
+sparsemux_9_2_8_1_1_U2702(
     .din0(t_q0),
     .din1(t_98_q0),
     .din2(t_99_q0),

@@ -73,7 +73,7 @@ attribute shreg_extract : string;
     signal tempReg_fu_128_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal xor_ln381_fu_141_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal xor_ln381_54_fu_147_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal bit_sel5_fu_159_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal bit_sel8_fu_159_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal xor_ln381_55_fu_167_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal trunc_ln381_fu_173_p1 : STD_LOGIC_VECTOR (62 downto 0);
     signal xor_ln381_9_fu_177_p3 : STD_LOGIC_VECTOR (63 downto 0);
@@ -282,7 +282,7 @@ begin
         end if; 
     end process;
 
-    bit_sel5_fu_159_p3 <= tempReg_fu_128_p2(63 downto 63);
+    bit_sel8_fu_159_p3 <= tempReg_fu_128_p2(63 downto 63);
     icmp_ln378_fu_101_p2 <= "1" when (ap_sig_allocacmp_i = ap_const_lv5_10) else "0";
     or_ln381_20_fu_197_p2 <= (xor_ln381_56_fu_191_p2 or and_ln381_fu_185_p2);
     or_ln381_fu_153_p2 <= (xor_ln381_fu_141_p2 or xor_ln381_54_fu_147_p2);
@@ -337,7 +337,7 @@ begin
     end process;
 
     xor_ln381_54_fu_147_p2 <= (tt2_q0 xor tempReg_fu_128_p2);
-    xor_ln381_55_fu_167_p2 <= (bit_sel5_fu_159_p3 xor ap_const_lv1_1);
+    xor_ln381_55_fu_167_p2 <= (bit_sel8_fu_159_p3 xor ap_const_lv1_1);
     xor_ln381_56_fu_191_p2 <= (or_ln381_fu_153_p2 xor add_ln381_fu_134_p2);
     xor_ln381_9_fu_177_p3 <= (xor_ln381_55_fu_167_p2 & trunc_ln381_fu_173_p1);
     xor_ln381_fu_141_p2 <= (tempReg_fu_128_p2 xor add_ln381_fu_134_p2);

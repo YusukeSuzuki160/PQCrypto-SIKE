@@ -361,7 +361,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>empty_149</name>
+						<name>empty_151</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1520,8 +1520,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>280</mMinLatency>
-			<mMaxLatency>618</mMaxLatency>
+			<mMinLatency>265</mMinLatency>
+			<mMaxLatency>500</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1590,8 +1590,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>262</mMinLatency>
-			<mMaxLatency>600</mMaxLatency>
+			<mMinLatency>247</mMinLatency>
+			<mMaxLatency>482</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
