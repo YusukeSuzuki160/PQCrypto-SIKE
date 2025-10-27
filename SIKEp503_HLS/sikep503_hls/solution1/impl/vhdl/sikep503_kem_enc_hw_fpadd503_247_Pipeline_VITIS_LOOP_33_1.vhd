@@ -61,7 +61,7 @@ attribute shreg_extract : string;
     signal ap_loop_exit_ready : STD_LOGIC;
     signal ap_ready_int : STD_LOGIC;
     signal carry_reg_115 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_212_reg_275 : STD_LOGIC_VECTOR (3 downto 0);
+    signal i_232_reg_275 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
     signal icmp_ln33_reg_280 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_loop_init : STD_LOGIC;
@@ -71,7 +71,7 @@ attribute shreg_extract : string;
     signal zext_ln33_fu_177_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal i_fu_60 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln33_fu_140_p2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_sig_allocacmp_i_212 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_sig_allocacmp_i_232 : STD_LOGIC_VECTOR (3 downto 0);
     signal a_ce0_local : STD_LOGIC;
     signal b_ce0_local : STD_LOGIC;
     signal c_we0_local : STD_LOGIC;
@@ -214,7 +214,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
-                i_212_reg_275 <= ap_sig_allocacmp_i_212;
+                i_232_reg_275 <= ap_sig_allocacmp_i_232;
                 icmp_ln33_reg_280 <= icmp_ln33_fu_134_p2;
             end if;
         end if;
@@ -241,7 +241,7 @@ begin
         end if; 
     end process;
 
-    add_ln33_fu_140_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_212) + unsigned(ap_const_lv4_1));
+    add_ln33_fu_140_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_232) + unsigned(ap_const_lv4_1));
     add_ln35_10_fu_161_p2 <= std_logic_vector(unsigned(zext_ln35_14) + unsigned(zext_ln35_17_fu_146_p1));
     add_ln35_12_fu_191_p2 <= std_logic_vector(unsigned(b_q0) + unsigned(tempReg_fu_185_p2));
     add_ln35_fu_150_p2 <= std_logic_vector(unsigned(zext_ln35_15) + unsigned(zext_ln35_17_fu_146_p1));
@@ -312,12 +312,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_212_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_loop_init, ap_block_pp0_stage0, i_fu_60)
+    ap_sig_allocacmp_i_232_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_loop_init, ap_block_pp0_stage0, i_fu_60)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            ap_sig_allocacmp_i_212 <= ap_const_lv4_0;
+            ap_sig_allocacmp_i_232 <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i_212 <= i_fu_60;
+            ap_sig_allocacmp_i_232 <= i_fu_60;
         end if; 
     end process;
 
@@ -358,7 +358,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln33_fu_134_p2 <= "1" when (ap_sig_allocacmp_i_212 = ap_const_lv4_8) else "0";
+    icmp_ln33_fu_134_p2 <= "1" when (ap_sig_allocacmp_i_232 = ap_const_lv4_8) else "0";
     or_ln35_12_fu_254_p2 <= (xor_ln35_36_fu_248_p2 or and_ln35_fu_242_p2);
     or_ln35_fu_210_p2 <= (xor_ln35_fu_198_p2 or xor_ln35_34_fu_204_p2);
     tempReg_fu_185_p2 <= std_logic_vector(unsigned(a_q0) + unsigned(zext_ln35_fu_181_p1));
@@ -368,8 +368,8 @@ begin
     xor_ln35_36_fu_248_p2 <= (or_ln35_fu_210_p2 xor add_ln35_12_fu_191_p2);
     xor_ln35_fu_198_p2 <= (tempReg_fu_185_p2 xor add_ln35_12_fu_191_p2);
     xor_ln35_s_fu_234_p3 <= (xor_ln35_35_fu_224_p2 & trunc_ln35_fu_230_p1);
-    zext_ln33_fu_177_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_212_reg_275),64));
-    zext_ln35_17_fu_146_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_212),7));
+    zext_ln33_fu_177_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_232_reg_275),64));
+    zext_ln35_17_fu_146_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_232),7));
     zext_ln35_18_fu_156_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln35_fu_150_p2),64));
     zext_ln35_19_fu_167_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln35_10_fu_161_p2),64));
     zext_ln35_fu_181_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(carry_reg_115),64));

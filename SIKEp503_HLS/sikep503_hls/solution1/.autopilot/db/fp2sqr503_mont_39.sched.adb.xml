@@ -133,7 +133,7 @@ entry:6 %t3 = alloca i64 1
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:7 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1, i64 %R_X, i64 %t1
+entry:7 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1, i64 %coeff, i64 %t1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -151,7 +151,7 @@ entry:7 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1, i64 
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:7 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1, i64 %R_X, i64 %t1
+entry:7 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1, i64 %coeff, i64 %t1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -169,7 +169,7 @@ entry:7 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1, i64 
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="1" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:8 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %t2, i1 %borrow_loc
+entry:8 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_61_1, i64 %coeff, i64 %t2, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -187,7 +187,7 @@ entry:8 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_61_1, i64 %
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="1" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:8 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_61_1, i64 %R_X, i64 %t2, i1 %borrow_loc
+entry:8 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_61_1, i64 %coeff, i64 %t2, i1 %borrow_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -235,7 +235,7 @@ entry:10 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_68_2, i64 
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:11 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1125, i64 %R_X, i64 %t3
+entry:11 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1130, i64 %coeff, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -268,7 +268,7 @@ entry:10 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_68_2, i64 
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
 <![CDATA[
-entry:11 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1125, i64 %R_X, i64 %t3
+entry:11 %call_ln0 = call void @fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1130, i64 %coeff, i64 %t3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -322,7 +322,7 @@ entry:16 %call_ln152 = call void @fpmul503_mont.11, i64 %t1, i64 %t2, i64 %c_0, 
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:19 %call_ln153 = call void @fpmul503_mont.56, i64 %t3, i64 %R_X, i64 %c_1, i64 %p503p1_1
+entry:19 %call_ln153 = call void @fpmul503_mont.56, i64 %t3, i64 %coeff, i64 %c_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln153"/></StgValue>
@@ -370,7 +370,7 @@ entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_1, i64
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_X, i64 666, i64 17, i64 18446744073709551615
+entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %coeff, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -475,7 +475,7 @@ entry:18 %specmemcore_ln153 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t3, i
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:19 %call_ln153 = call void @fpmul503_mont.56, i64 %t3, i64 %R_X, i64 %c_1, i64 %p503p1_1
+entry:19 %call_ln153 = call void @fpmul503_mont.56, i64 %t3, i64 %coeff, i64 %c_1, i64 %p503p1_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln153"/></StgValue>

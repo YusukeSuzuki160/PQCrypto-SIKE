@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>npts_7</name>
+						<name>npts_5</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -75,7 +75,7 @@
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
-				<direction>0</direction>
+				<direction>1</direction>
 				<if_type>1</if_type>
 				<array_size>112</array_size>
 				<bit_vecs>
@@ -111,7 +111,7 @@
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
-				<direction>1</direction>
+				<direction>0</direction>
 				<if_type>1</if_type>
 				<array_size>16</array_size>
 				<bit_vecs>
@@ -161,7 +161,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -198,7 +198,7 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>npts_7_read</name>
+						<name>npts_5_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -274,7 +274,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -354,7 +354,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_279</name>
+						<name>i_321</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>13</lineNumber>
@@ -387,7 +387,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -458,7 +458,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -529,7 +529,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -600,7 +600,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -672,7 +672,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -701,7 +701,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_13">
@@ -742,7 +742,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -773,7 +773,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>9</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -781,7 +781,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>zext_ln14_13</name>
+						<name>zext_ln14_12</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -814,7 +814,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -843,7 +843,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_15">
@@ -884,7 +884,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -915,7 +915,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -923,76 +923,6 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>pts_X_load</name>
-						<fileName>src/fpx.cpp</fileName>
-						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
-						<lineNumber>14</lineNumber>
-						<contextFuncName>fpcopy503</contextFuncName>
-						<contextNormFuncName>fpcopy503</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/fpx.cpp</first>
-											<second>fp2copy503</second>
-										</first>
-										<second>91</second>
-									</item>
-									<item>
-										<first>
-											<first>src/fpx.cpp</first>
-											<second>fpcopy503</second>
-										</first>
-										<second>14</second>
-									</item>
-									<item>
-										<first>
-											<first>src/sidh.cpp</first>
-											<second>EphemeralKeyGeneration_A</second>
-										</first>
-										<second>165</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>60</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.20</m_delay>
-				<m_topoIndex>12</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>24</id>
 						<name>R_X_addr</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
@@ -1026,7 +956,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -1047,9 +977,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
+					<item>60</item>
 					<item>61</item>
 					<item>62</item>
-					<item>63</item>
 				</oprand_edges>
 				<opcode>getelementptr</opcode>
 				<m_Display>0</m_Display>
@@ -1057,15 +987,15 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_18">
+			<item class_id_reference="9" object_id="_17">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>25</id>
-						<name>R_X_addr_write_ln14</name>
+						<id>24</id>
+						<name>R_X_load</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>14</lineNumber>
@@ -1098,7 +1028,77 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>63</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.71</m_delay>
+				<m_topoIndex>11</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_18">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>25</id>
+						<name>pts_X_addr_write_ln14</name>
+						<fileName>src/fpx.cpp</fileName>
+						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
+						<lineNumber>14</lineNumber>
+						<contextFuncName>fpcopy503</contextFuncName>
+						<contextNormFuncName>fpcopy503</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+								<second>
+									<count>3</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/fpx.cpp</first>
+											<second>fp2copy503</second>
+										</first>
+										<second>91</second>
+									</item>
+									<item>
+										<first>
+											<first>src/fpx.cpp</first>
+											<second>fpcopy503</second>
+										</first>
+										<second>14</second>
+									</item>
+									<item>
+										<first>
+											<first>src/sidh.cpp</first>
+											<second>EphemeralKeyGeneration_A</second>
+										</first>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -1127,7 +1127,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.71</m_delay>
+				<m_delay>1.20</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1169,7 +1169,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -1201,7 +1201,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.38</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_20">
@@ -1242,7 +1242,7 @@
 											<first>src/sidh.cpp</first>
 											<second>EphemeralKeyGeneration_A</second>
 										</first>
-										<second>165</second>
+										<second>147</second>
 									</item>
 								</second>
 							</item>
@@ -1312,7 +1312,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.38</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
@@ -1516,7 +1516,7 @@
 				<Obj>
 					<type>3</type>
 					<id>15</id>
-					<name>for.inc.i.i332</name>
+					<name>for.inc.i.i295</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1550,7 +1550,7 @@
 				<Obj>
 					<type>3</type>
 					<id>28</id>
-					<name>for.inc.i.i332.split</name>
+					<name>for.inc.i.i295.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1589,7 +1589,7 @@
 				<Obj>
 					<type>3</type>
 					<id>30</id>
-					<name>for.inc.i10.i341.preheader.exitStub</name>
+					<name>for.inc.i10.i.preheader.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1763,42 +1763,42 @@
 			<item class_id_reference="20" object_id="_51">
 				<id>60</id>
 				<edge_type>1</edge_type>
-				<source_obj>19</source_obj>
+				<source_obj>3</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_52">
 				<id>61</id>
 				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
-				<sink_obj>24</sink_obj>
+				<source_obj>57</source_obj>
+				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_53">
 				<id>62</id>
 				<edge_type>1</edge_type>
-				<source_obj>57</source_obj>
-				<sink_obj>24</sink_obj>
+				<source_obj>16</source_obj>
+				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_54">
 				<id>63</id>
 				<edge_type>1</edge_type>
-				<source_obj>16</source_obj>
+				<source_obj>23</source_obj>
 				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_55">
 				<id>64</id>
 				<edge_type>1</edge_type>
-				<source_obj>23</source_obj>
+				<source_obj>24</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_56">
 				<id>65</id>
 				<edge_type>1</edge_type>
-				<source_obj>24</source_obj>
+				<source_obj>19</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -2037,28 +2037,28 @@
 		<item>
 			<first>16</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>17</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>18</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>19</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2066,14 +2066,14 @@
 			<first>23</first>
 			<second>
 				<first>0</first>
-				<second>1</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>1</first>
-				<second>0</second>
+				<first>0</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>

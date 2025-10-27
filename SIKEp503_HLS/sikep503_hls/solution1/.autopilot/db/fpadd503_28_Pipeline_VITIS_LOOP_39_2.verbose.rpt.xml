@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_28_Pipeline_VITIS_LOOP_39_2'" level="0">
-<item name = "Date">Mon Oct 20 14:39:21 2025
+<item name = "Date">Sat Oct 25 16:56:05 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -103,7 +103,7 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="carry_reg_87">9, 2, 1, 2</column>
-<column name="i_125_fu_50">9, 2, 4, 8</column>
+<column name="i_155_fu_50">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -112,7 +112,7 @@
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="carry_reg_87">1, 0, 1, 0</column>
-<column name="i_125_fu_50">4, 0, 4, 0</column>
+<column name="i_155_fu_50">4, 0, 4, 0</column>
 </table>
 </item>
 </section>
@@ -133,8 +133,8 @@
 <column name="R_Z_we0">out, 1, ap_memory, R_Z, array</column>
 <column name="R_Z_d0">out, 64, ap_memory, R_Z, array</column>
 <column name="R_Z_q0">in, 64, ap_memory, R_Z, array</column>
-<column name="carry_153_out">out, 1, ap_vld, carry_153_out, pointer</column>
-<column name="carry_153_out_ap_vld">out, 1, ap_vld, carry_153_out, pointer</column>
+<column name="carry_151_out">out, 1, ap_vld, carry_151_out, pointer</column>
+<column name="carry_151_out_ap_vld">out, 1, ap_vld, carry_151_out, pointer</column>
 </table>
 </item>
 </section>

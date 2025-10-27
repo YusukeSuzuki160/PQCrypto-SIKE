@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_Pipeline_VITIS_LOOP_269_1'" level="0">
-<item name = "Date">Mon Oct 20 14:38:25 2025
+<item name = "Date">Sat Oct 25 18:42:31 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -113,8 +113,8 @@
 <column name="R_Z_d0_local">14, 3, 64, 192</column>
 <column name="ap_NS_fsm">26, 5, 1, 5</column>
 <column name="ap_done_int">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
-<column name="i_259_fu_56">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_290">9, 2, 4, 8</column>
+<column name="i_fu_56">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -127,11 +127,11 @@
 <column name="R2_Z_addr_reg_348">3, 0, 3, 0</column>
 <column name="R_X_addr_3_reg_378">3, 0, 4, 1</column>
 <column name="R_X_addr_reg_358">4, 0, 4, 0</column>
-<column name="R_Z_addr_27_reg_383">3, 0, 4, 1</column>
+<column name="R_Z_addr_9_reg_383">3, 0, 4, 1</column>
 <column name="R_Z_addr_reg_363">4, 0, 4, 0</column>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="i_259_fu_56">4, 0, 4, 0</column>
+<column name="i_fu_56">4, 0, 4, 0</column>
 <column name="reg_160">64, 0, 64, 0</column>
 <column name="reg_164">64, 0, 64, 0</column>
 <column name="sext_ln290_cast_reg_327">64, 0, 64, 0</column>

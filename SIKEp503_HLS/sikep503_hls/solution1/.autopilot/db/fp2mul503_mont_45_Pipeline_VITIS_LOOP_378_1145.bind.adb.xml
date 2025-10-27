@@ -31,10 +31,10 @@
 
 <Node id="3" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_178 = alloca i32 1
+newFuncRoot:0 %i_208 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_178"/></StgValue>
+<StgValue><ssdm name="i_208"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -76,7 +76,7 @@ newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %co
 
 <Node id="6" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:3 %store_ln376 = store i4 0, i4 %i_178
+newFuncRoot:3 %store_ln376 = store i4 0, i4 %i_208
 
 ]]></Node>
 <StgValue><ssdm name="store_ln376"/></StgValue>
@@ -106,7 +106,7 @@ newFuncRoot:4 %br_ln0 = br void %for.inc.i.i38
 
 <Node id="10" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i.i38:1 %i = load i4 %i_178
+for.inc.i.i38:1 %i = load i4 %i_208
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -231,7 +231,7 @@ for.inc.i.i38.split:7 %trunc_ln381 = trunc i4 %i
 
 <Node id="42" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i.i38.split:26 %store_ln376 = store i4 %add_ln378, i4 %i_178
+for.inc.i.i38.split:26 %store_ln376 = store i4 %add_ln378, i4 %i_208
 
 ]]></Node>
 <StgValue><ssdm name="store_ln376"/></StgValue>
@@ -328,10 +328,10 @@ for.inc.i.i38.split:9 %zext_ln381_15 = zext i4 %zext_ln381_s
 
 <Node id="26" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i.i38.split:10 %coeff_addr_12 = getelementptr i64 %coeff, i64 0, i64 %zext_ln381_15
+for.inc.i.i38.split:10 %coeff_addr_10 = getelementptr i64 %coeff, i64 0, i64 %zext_ln381_15
 
 ]]></Node>
-<StgValue><ssdm name="coeff_addr_12"/></StgValue>
+<StgValue><ssdm name="coeff_addr_10"/></StgValue>
 </operation>
 
 <operation id="26" st_id="2" stage="2" lat="2">
@@ -344,7 +344,7 @@ for.inc.i.i38.split:10 %coeff_addr_12 = getelementptr i64 %coeff, i64 0, i64 %ze
 
 <Node id="27" bw="64" op_0_bw="6">
 <![CDATA[
-for.inc.i.i38.split:11 %coeff_load_6 = load i6 %coeff_addr_12
+for.inc.i.i38.split:11 %coeff_load_6 = load i6 %coeff_addr_10
 
 ]]></Node>
 <StgValue><ssdm name="coeff_load_6"/></StgValue>
@@ -379,7 +379,7 @@ for.inc.i.i53.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.i38.split:1 %specpipeline_ln376 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.i.i38.split:1 %specpipeline_ln376 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln376"/></StgValue>
@@ -395,7 +395,7 @@ for.inc.i.i38.split:1 %specpipeline_ln376 = specpipeline void @_ssdm_op_SpecPipe
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.i38.split:2 %specloopname_ln378 = specloopname void @_ssdm_op_SpecLoopName, void @empty_76
+for.inc.i.i38.split:2 %specloopname_ln378 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln378"/></StgValue>
@@ -443,7 +443,7 @@ for.inc.i.i38.split:6 %tempReg = add i64 %coeff_load, i64 %zext_ln381
 
 <Node id="27" bw="64" op_0_bw="6">
 <![CDATA[
-for.inc.i.i38.split:11 %coeff_load_6 = load i6 %coeff_addr_12
+for.inc.i.i38.split:11 %coeff_load_6 = load i6 %coeff_addr_10
 
 ]]></Node>
 <StgValue><ssdm name="coeff_load_6"/></StgValue>
@@ -705,7 +705,7 @@ for.inc.i.i38.split:27 %br_ln378 = br void %for.inc.i.i38
 
 
 <dataflows>
-<dataflow id="63" from="StgValue_62" to="i_178" fromId="62" toId="6">
+<dataflow id="63" from="StgValue_62" to="i_208" fromId="62" toId="6">
 </dataflow>
 <dataflow id="65" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="64" toId="7">
 </dataflow>
@@ -729,9 +729,9 @@ for.inc.i.i38.split:27 %br_ln378 = br void %for.inc.i.i38
 </dataflow>
 <dataflow id="79" from="StgValue_78" to="store_ln376" fromId="78" toId="9">
 </dataflow>
-<dataflow id="80" from="i_178" to="store_ln376" fromId="6" toId="9">
+<dataflow id="80" from="i_208" to="store_ln376" fromId="6" toId="9">
 </dataflow>
-<dataflow id="81" from="i_178" to="i" fromId="6" toId="11">
+<dataflow id="81" from="i_208" to="i" fromId="6" toId="11">
 </dataflow>
 <dataflow id="82" from="i" to="icmp_ln378" fromId="11" toId="12">
 </dataflow>
@@ -757,7 +757,7 @@ for.inc.i.i38.split:27 %br_ln378 = br void %for.inc.i.i38
 </dataflow>
 <dataflow id="96" from="add_ln378" to="store_ln376" fromId="13" toId="19">
 </dataflow>
-<dataflow id="97" from="i_178" to="store_ln376" fromId="6" toId="19">
+<dataflow id="97" from="i_208" to="store_ln376" fromId="6" toId="19">
 </dataflow>
 <dataflow id="98" from="tmp" to="carry" fromId="45" toId="20">
 <BackEdge/>
@@ -794,13 +794,13 @@ for.inc.i.i38.split:27 %br_ln378 = br void %for.inc.i.i38
 </dataflow>
 <dataflow id="115" from="zext_ln381_s" to="zext_ln381_15" fromId="23" toId="24">
 </dataflow>
-<dataflow id="116" from="coeff" to="coeff_addr_12" fromId="60" toId="25">
+<dataflow id="116" from="coeff" to="coeff_addr_10" fromId="60" toId="25">
 </dataflow>
-<dataflow id="117" from="StgValue_91" to="coeff_addr_12" fromId="91" toId="25">
+<dataflow id="117" from="StgValue_91" to="coeff_addr_10" fromId="91" toId="25">
 </dataflow>
-<dataflow id="118" from="zext_ln381_15" to="coeff_addr_12" fromId="24" toId="25">
+<dataflow id="118" from="zext_ln381_15" to="coeff_addr_10" fromId="24" toId="25">
 </dataflow>
-<dataflow id="119" from="coeff_addr_12" to="coeff_load_6" fromId="25" toId="26">
+<dataflow id="119" from="coeff_addr_10" to="coeff_load_6" fromId="25" toId="26">
 </dataflow>
 <dataflow id="121" from="_ssdm_op_SpecPipeline" to="specpipeline_ln376" fromId="120" toId="27">
 </dataflow>
@@ -812,11 +812,11 @@ for.inc.i.i38.split:27 %br_ln378 = br void %for.inc.i.i38
 </dataflow>
 <dataflow id="127" from="StgValue_124" to="specpipeline_ln376" fromId="124" toId="27">
 </dataflow>
-<dataflow id="129" from="empty_102" to="specpipeline_ln376" fromId="128" toId="27">
+<dataflow id="129" from="empty_57" to="specpipeline_ln376" fromId="128" toId="27">
 </dataflow>
 <dataflow id="131" from="_ssdm_op_SpecLoopName" to="specloopname_ln378" fromId="130" toId="28">
 </dataflow>
-<dataflow id="133" from="empty_76" to="specloopname_ln378" fromId="132" toId="28">
+<dataflow id="133" from="empty_45" to="specloopname_ln378" fromId="132" toId="28">
 </dataflow>
 <dataflow id="134" from="carry" to="zext_ln381" fromId="20" toId="29">
 </dataflow>
@@ -824,7 +824,7 @@ for.inc.i.i38.split:27 %br_ln378 = br void %for.inc.i.i38
 </dataflow>
 <dataflow id="136" from="zext_ln381" to="tempReg" fromId="29" toId="30">
 </dataflow>
-<dataflow id="137" from="coeff_addr_12" to="coeff_load_6" fromId="25" toId="31">
+<dataflow id="137" from="coeff_addr_10" to="coeff_load_6" fromId="25" toId="31">
 </dataflow>
 <dataflow id="138" from="coeff_load_6" to="add_ln381" fromId="31" toId="32">
 </dataflow>

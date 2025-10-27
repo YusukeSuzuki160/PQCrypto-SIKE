@@ -176,7 +176,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>i_16</name>
+						<name>i_59</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -319,7 +319,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_16_write_ln56</name>
+						<name>i_59_write_ln56</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -904,7 +904,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>or_ln70_7</name>
+						<name>zext_ln70</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -942,13 +942,11 @@
 					<bitwidth>4</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>1</count>
 					<item_version>0</item_version>
-					<item>98</item>
-					<item>100</item>
-					<item>101</item>
+					<item>97</item>
 				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
+				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -962,7 +960,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>sext_ln70</name>
+						<name>zext_ln70_2</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -1000,11 +998,13 @@
 					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>3</count>
 					<item_version>0</item_version>
+					<item>99</item>
+					<item>101</item>
 					<item>102</item>
 				</oprand_edges>
-				<opcode>sext</opcode>
+				<opcode>bitconcatenate</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -1018,7 +1018,7 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>zext_ln70</name>
+						<name>zext_ln70_5</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -1389,7 +1389,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>zext_ln70_1</name>
+						<name>zext_ln70_3</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -1963,7 +1963,7 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>xor_ln70_1</name>
+						<name>xor_ln70_4</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -2135,7 +2135,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>xor_ln70_22</name>
+						<name>xor_ln70_23</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -2192,7 +2192,7 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>trunc_ln70_1</name>
+						<name>trunc_ln70_2</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -2248,7 +2248,7 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>xor_ln70_2</name>
+						<name>xor_ln70_5</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -2306,7 +2306,7 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>and_ln70_1</name>
+						<name>and_ln70_2</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -2363,7 +2363,7 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>xor_ln70_3</name>
+						<name>xor_ln70_6</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -2420,7 +2420,7 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>or_ln70_1</name>
+						<name>or_ln70_2</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>70</lineNumber>
@@ -2535,7 +2535,7 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>i_16_write_ln56</name>
+						<name>i_59_write_ln56</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -2911,7 +2911,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>99</id>
+						<id>100</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -3373,17 +3373,17 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_93">
-				<id>100</id>
+				<id>97</id>
 				<edge_type>1</edge_type>
-				<source_obj>99</source_obj>
+				<source_obj>25</source_obj>
 				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_94">
 				<id>101</id>
 				<edge_type>1</edge_type>
-				<source_obj>25</source_obj>
-				<sink_obj>26</sink_obj>
+				<source_obj>100</source_obj>
+				<sink_obj>27</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_95">
@@ -3662,7 +3662,7 @@
 			<item class_id_reference="20" object_id="_134">
 				<id>144</id>
 				<edge_type>1</edge_type>
-				<source_obj>99</source_obj>
+				<source_obj>100</source_obj>
 				<sink_obj>48</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>

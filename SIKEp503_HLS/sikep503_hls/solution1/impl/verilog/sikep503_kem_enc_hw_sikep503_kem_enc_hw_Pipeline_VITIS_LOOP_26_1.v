@@ -90,22 +90,22 @@ reg    temp_3_ce0_local;
 wire   [2:0] lshr_ln_fu_171_p4;
 wire   [31:0] shl_ln17_fu_199_p2;
 wire   [31:0] shl_ln17_1_fu_205_p2;
+wire   [31:0] shl_ln17_5_fu_235_p2;
+wire   [31:0] shl_ln17_4_fu_229_p2;
+wire   [31:0] shl_ln17_7_fu_253_p2;
+wire   [31:0] shl_ln17_6_fu_247_p2;
+wire   [31:0] add_ln17_fu_271_p2;
+wire   [31:0] shl_ln17_8_fu_265_p2;
 wire   [31:0] shl_ln17_2_fu_217_p2;
 wire   [31:0] shl_ln17_3_fu_223_p2;
-wire   [31:0] shl_ln17_5_fu_241_p2;
-wire   [31:0] shl_ln17_4_fu_235_p2;
-wire   [31:0] shl_ln17_7_fu_259_p2;
-wire   [31:0] shl_ln17_6_fu_253_p2;
-wire   [31:0] add_ln17_fu_277_p2;
-wire   [31:0] shl_ln17_8_fu_271_p2;
 wire   [31:0] sub_ln17_fu_211_p2;
-wire   [31:0] newFirst22_fu_229_p2;
-wire   [31:0] newSecond23_fu_289_p2;
-wire   [31:0] newFirst20_fu_247_p2;
+wire   [31:0] newFirst26_fu_283_p2;
+wire   [31:0] newSecond27_fu_289_p2;
+wire   [31:0] newFirst20_fu_241_p2;
 wire   [31:0] newSecond21_fu_295_p2;
-wire   [31:0] newFirst18_fu_265_p2;
+wire   [31:0] newFirst18_fu_259_p2;
 wire   [31:0] newSecond19_fu_301_p2;
-wire   [31:0] newFirst_fu_283_p2;
+wire   [31:0] newFirst_fu_277_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -319,7 +319,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln17_fu_277_p2 = (32'd1013904223 + lcg_state);
+assign add_ln17_fu_271_p2 = (32'd1013904223 + lcg_state);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -343,21 +343,21 @@ assign icmp_ln28_fu_189_p2 = ((trunc_ln26_fu_167_p1 == 2'd0) ? 1'b1 : 1'b0);
 
 assign lshr_ln_fu_171_p4 = {{ap_sig_allocacmp_i_2[4:2]}};
 
-assign newFirst18_fu_265_p2 = (shl_ln17_7_fu_259_p2 - shl_ln17_6_fu_253_p2);
+assign newFirst18_fu_259_p2 = (shl_ln17_7_fu_253_p2 - shl_ln17_6_fu_247_p2);
 
-assign newFirst20_fu_247_p2 = (shl_ln17_5_fu_241_p2 - shl_ln17_4_fu_235_p2);
+assign newFirst20_fu_241_p2 = (shl_ln17_5_fu_235_p2 - shl_ln17_4_fu_229_p2);
 
-assign newFirst22_fu_229_p2 = (shl_ln17_2_fu_217_p2 - shl_ln17_3_fu_223_p2);
+assign newFirst26_fu_283_p2 = (shl_ln17_2_fu_217_p2 - shl_ln17_3_fu_223_p2);
 
-assign newFirst_fu_283_p2 = (add_ln17_fu_277_p2 - shl_ln17_8_fu_271_p2);
+assign newFirst_fu_277_p2 = (add_ln17_fu_271_p2 - shl_ln17_8_fu_265_p2);
 
-assign newSecond19_fu_301_p2 = (newSecond21_fu_295_p2 + newFirst18_fu_265_p2);
+assign newSecond19_fu_301_p2 = (newSecond21_fu_295_p2 + newFirst18_fu_259_p2);
 
-assign newSecond21_fu_295_p2 = (newSecond23_fu_289_p2 + newFirst20_fu_247_p2);
+assign newSecond21_fu_295_p2 = (newSecond27_fu_289_p2 + newFirst20_fu_241_p2);
 
-assign newSecond23_fu_289_p2 = (sub_ln17_fu_211_p2 + newFirst22_fu_229_p2);
+assign newSecond27_fu_289_p2 = (sub_ln17_fu_211_p2 + newFirst26_fu_283_p2);
 
-assign r_1_fu_307_p2 = (newSecond19_fu_301_p2 + newFirst_fu_283_p2);
+assign r_1_fu_307_p2 = (newSecond19_fu_301_p2 + newFirst_fu_277_p2);
 
 assign shl_ln17_1_fu_205_p2 = lcg_state << 32'd19;
 
@@ -365,15 +365,15 @@ assign shl_ln17_2_fu_217_p2 = lcg_state << 32'd17;
 
 assign shl_ln17_3_fu_223_p2 = lcg_state << 32'd15;
 
-assign shl_ln17_4_fu_235_p2 = lcg_state << 32'd13;
+assign shl_ln17_4_fu_229_p2 = lcg_state << 32'd13;
 
-assign shl_ln17_5_fu_241_p2 = lcg_state << 32'd11;
+assign shl_ln17_5_fu_235_p2 = lcg_state << 32'd11;
 
-assign shl_ln17_6_fu_253_p2 = lcg_state << 32'd9;
+assign shl_ln17_6_fu_247_p2 = lcg_state << 32'd9;
 
-assign shl_ln17_7_fu_259_p2 = lcg_state << 32'd4;
+assign shl_ln17_7_fu_253_p2 = lcg_state << 32'd4;
 
-assign shl_ln17_8_fu_271_p2 = lcg_state << 32'd2;
+assign shl_ln17_8_fu_265_p2 = lcg_state << 32'd2;
 
 assign shl_ln17_fu_199_p2 = lcg_state << 32'd21;
 

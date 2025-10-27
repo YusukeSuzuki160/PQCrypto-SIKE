@@ -306,7 +306,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_208</name>
+						<name>i_247</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -819,7 +819,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>b_addr_13</name>
+						<name>b_addr_1</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>35</lineNumber>

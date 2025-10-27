@@ -55,7 +55,7 @@ reg   [63:0] sext_ln30_cast_reg_241;
 reg   [2:0] c_addr_reg_249;
 wire    ap_loop_init;
 wire   [63:0] zext_ln46_fu_131_p1;
-reg   [3:0] i_150_fu_56;
+reg   [3:0] i_156_fu_56;
 wire   [3:0] add_ln46_fu_125_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    c_ce0_local;
@@ -67,13 +67,13 @@ wire   [63:0] zext_ln48_fu_142_p1;
 wire   [63:0] and_ln48_fu_152_p2;
 wire   [63:0] tempReg_fu_146_p2;
 wire   [63:0] xor_ln48_fu_164_p2;
-wire   [63:0] xor_ln48_38_fu_170_p2;
+wire   [63:0] xor_ln48_37_fu_170_p2;
 wire   [0:0] bit_sel1_fu_182_p3;
-wire   [0:0] xor_ln48_39_fu_190_p2;
+wire   [0:0] xor_ln48_46_fu_190_p2;
 wire   [62:0] trunc_ln48_fu_196_p1;
 wire   [63:0] xor_ln48_s_fu_200_p3;
 wire   [63:0] or_ln48_fu_176_p2;
-wire   [63:0] xor_ln48_40_fu_214_p2;
+wire   [63:0] xor_ln48_39_fu_214_p2;
 wire   [63:0] and_ln48_13_fu_208_p2;
 wire   [63:0] or_ln48_13_fu_220_p2;
 reg    ap_done_reg;
@@ -90,11 +90,11 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_150_fu_56 = 4'd0;
+#0 i_156_fu_56 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_fpadd503_1565_3_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
+sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -152,9 +152,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln46_fu_119_p2 == 1'd0)) begin
-            i_150_fu_56 <= add_ln46_fu_125_p2;
+            i_156_fu_56 <= add_ln46_fu_125_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_150_fu_56 <= 4'd0;
+            i_156_fu_56 <= 4'd0;
         end
     end
 end
@@ -212,7 +212,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_150_fu_56;
+        ap_sig_allocacmp_i = i_156_fu_56;
     end
 end
 
@@ -304,9 +304,9 @@ assign c_we0 = c_we0_local;
 
 assign icmp_ln46_fu_119_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign or_ln48_13_fu_220_p2 = (xor_ln48_40_fu_214_p2 | and_ln48_13_fu_208_p2);
+assign or_ln48_13_fu_220_p2 = (xor_ln48_39_fu_214_p2 | and_ln48_13_fu_208_p2);
 
-assign or_ln48_fu_176_p2 = (xor_ln48_fu_164_p2 | xor_ln48_38_fu_170_p2);
+assign or_ln48_fu_176_p2 = (xor_ln48_fu_164_p2 | xor_ln48_37_fu_170_p2);
 
 assign p503x2_1_address0 = zext_ln46_fu_131_p1;
 
@@ -316,15 +316,15 @@ assign tempReg_fu_146_p2 = (c_q0 + zext_ln48_fu_142_p1);
 
 assign trunc_ln48_fu_196_p1 = tempReg_fu_146_p2[62:0];
 
-assign xor_ln48_38_fu_170_p2 = (tempReg_fu_146_p2 ^ and_ln48_fu_152_p2);
+assign xor_ln48_37_fu_170_p2 = (tempReg_fu_146_p2 ^ and_ln48_fu_152_p2);
 
-assign xor_ln48_39_fu_190_p2 = (bit_sel1_fu_182_p3 ^ 1'd1);
+assign xor_ln48_39_fu_214_p2 = (or_ln48_fu_176_p2 ^ add_ln48_fu_157_p2);
 
-assign xor_ln48_40_fu_214_p2 = (or_ln48_fu_176_p2 ^ add_ln48_fu_157_p2);
+assign xor_ln48_46_fu_190_p2 = (bit_sel1_fu_182_p3 ^ 1'd1);
 
 assign xor_ln48_fu_164_p2 = (tempReg_fu_146_p2 ^ add_ln48_fu_157_p2);
 
-assign xor_ln48_s_fu_200_p3 = {{xor_ln48_39_fu_190_p2}, {trunc_ln48_fu_196_p1}};
+assign xor_ln48_s_fu_200_p3 = {{xor_ln48_46_fu_190_p2}, {trunc_ln48_fu_196_p1}};
 
 assign zext_ln46_fu_131_p1 = ap_sig_allocacmp_i;
 

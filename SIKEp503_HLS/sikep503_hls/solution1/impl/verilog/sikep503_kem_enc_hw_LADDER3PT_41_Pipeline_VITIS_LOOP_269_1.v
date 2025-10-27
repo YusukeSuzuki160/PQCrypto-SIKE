@@ -116,7 +116,7 @@ reg   [2:0] trunc_ln277_reg_368;
 wire   [63:0] temp_fu_221_p2;
 reg   [63:0] temp_reg_373;
 reg   [3:0] R_X_addr_4_reg_378;
-reg   [3:0] R_Z_addr_28_reg_383;
+reg   [3:0] R_Z_addr_10_reg_383;
 reg   [63:0] R2_X_2_load_reg_388;
 wire   [63:0] temp_11_fu_252_p2;
 reg   [63:0] temp_11_reg_394;
@@ -127,7 +127,7 @@ wire   [63:0] temp_13_fu_297_p2;
 reg   [63:0] temp_13_reg_410;
 wire   [63:0] zext_ln269_fu_196_p1;
 wire   [63:0] zext_ln277_fu_240_p1;
-reg   [3:0] i_247_fu_56;
+reg   [3:0] i_267_fu_56;
 wire   [3:0] add_ln269_fu_190_p2;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_i;
@@ -180,7 +180,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 4'd1;
-#0 i_247_fu_56 = 4'd0;
+#0 i_267_fu_56 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -222,9 +222,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln269_fu_184_p2 == 1'd0)) begin
-            i_247_fu_56 <= add_ln269_fu_190_p2;
+            i_267_fu_56 <= add_ln269_fu_190_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_247_fu_56 <= 4'd0;
+            i_267_fu_56 <= 4'd0;
         end
     end
 end
@@ -247,7 +247,7 @@ always @ (posedge ap_clk) begin
         R2_X_2_load_reg_388 <= R2_X_2_q0;
         R2_Z_2_load_reg_399 <= R2_Z_2_q0;
         R_X_addr_4_reg_378[2 : 0] <= zext_ln277_fu_240_p1[2 : 0];
-        R_Z_addr_28_reg_383[2 : 0] <= zext_ln277_fu_240_p1[2 : 0];
+        R_Z_addr_10_reg_383[2 : 0] <= zext_ln277_fu_240_p1[2 : 0];
         temp_11_reg_394 <= temp_11_fu_252_p2;
         temp_reg_373 <= temp_fu_221_p2;
     end
@@ -413,7 +413,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        R_Z_address0_local = R_Z_addr_28_reg_383;
+        R_Z_address0_local = R_Z_addr_10_reg_383;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
         R_Z_address0_local = R_Z_addr_reg_363;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
@@ -501,7 +501,7 @@ always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_247_fu_56;
+        ap_sig_allocacmp_i = i_267_fu_56;
     end
 end
 
@@ -645,7 +645,7 @@ assign zext_ln_fu_233_p3 = {{1'd1}, {trunc_ln277_reg_368}};
 
 always @ (posedge ap_clk) begin
     R_X_addr_4_reg_378[3] <= 1'b1;
-    R_Z_addr_28_reg_383[3] <= 1'b1;
+    R_Z_addr_10_reg_383[3] <= 1'b1;
 end
 
 endmodule //sikep503_kem_enc_hw_LADDER3PT_41_Pipeline_VITIS_LOOP_269_1

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpmul503_mont_3_264'
 ================================================================
-* Date:           Mon Oct 20 16:15:47 2025
+* Date:           Sat Oct 25 16:51:08 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      249|      436|  2.490 us|  4.360 us|  249|  436|       no|
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                       |             |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |        Instance       |    Module   |   min   |   max   |    min   |    max   | min | max |   Type  |
         +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mp_mul_6117_fu_65  |mp_mul_6117  |      118|      191|  1.180 us|  1.910 us|  118|  191|       no|
+        |grp_mp_mul_6117_fu_65  |mp_mul_6117  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
         |grp_rdc_mont_7_fu_74   |rdc_mont_7   |      110|      224|  1.100 us|  2.240 us|  110|  224|       no|
         +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
 
@@ -106,14 +106,14 @@ ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   -
 State 2 <SV = 1> <Delay = 1.42>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%p_load = load i5 %empty"   --->   Operation 14 'load' 'p_load' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (0.70ns)   --->   "%exitcond1 = icmp_eq  i5 %p_load, i5 16"   --->   Operation 15 'icmp' 'exitcond1' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 16 [1/1] (0.70ns)   --->   "%empty_164 = add i5 %p_load, i5 1"   --->   Operation 16 'add' 'empty_164' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.70ns)   --->   "%empty_171 = add i5 %p_load, i5 1"   --->   Operation 16 'add' 'empty_171' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond1, void %memset.loop.split, void %split"   --->   Operation 17 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%p_cast = zext i5 %p_load"   --->   Operation 18 'zext' 'p_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102"   --->   Operation 19 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57"   --->   Operation 19 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 20 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%temp_addr = getelementptr i64 %temp, i64 0, i64 %p_cast"   --->   Operation 21 'getelementptr' 'temp_addr' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i4 %temp_addr"   --->   Operation 22 'store' 'store_ln0' <Predicate = (!exitcond1)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 23 [1/1] (0.38ns)   --->   "%store_ln0 = store i5 %empty_164, i5 %empty"   --->   Operation 23 'store' 'store_ln0' <Predicate = (!exitcond1)> <Delay = 0.38>
+ST_2 : Operation 23 [1/1] (0.38ns)   --->   "%store_ln0 = store i5 %empty_171, i5 %empty"   --->   Operation 23 'store' 'store_ln0' <Predicate = (!exitcond1)> <Delay = 0.38>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   --->   Operation 24 'br' 'br_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 0.00>
@@ -161,7 +161,7 @@ store_ln0             (store            ) [ 0000000]
 br_ln0                (br               ) [ 0000000]
 p_load                (load             ) [ 0000000]
 exitcond1             (icmp             ) [ 0010000]
-empty_164             (add              ) [ 0000000]
+empty_171             (add              ) [ 0000000]
 br_ln0                (br               ) [ 0000000]
 p_cast                (zext             ) [ 0000000]
 specpipeline_ln0      (specpipeline     ) [ 0000000]
@@ -323,7 +323,7 @@ ret_ln64              (ret              ) [ 0000000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </bind>
 </comp>
 
@@ -492,7 +492,7 @@ ret_ln64              (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="97" class="1004" name="empty_164_fu_97">
+<comp id="97" class="1004" name="empty_171_fu_97">
 <pin_list>
 <pin id="98" dir="0" index="0" bw="5" slack="0"/>
 <pin id="99" dir="0" index="1" bw="1" slack="0"/>
@@ -500,7 +500,7 @@ ret_ln64              (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="empty_164/2 "/>
+<opset="empty_171/2 "/>
 </bind>
 </comp>
 
@@ -603,7 +603,7 @@ ret_ln64              (ret              ) [ 0000000]
 		store_ln0 : 1
 	State 2
 		exitcond1 : 1
-		empty_164 : 1
+		empty_171 : 1
 		br_ln0 : 2
 		p_cast : 1
 		temp_addr : 2
@@ -620,20 +620,20 @@ ret_ln64              (ret              ) [ 0000000]
 ============================================================
 
 * Functional unit list:
-|----------|-----------------------|---------|---------|---------|---------|
-| Operation|    Functional Unit    |   DSP   |  Delay  |    FF   |   LUT   |
-|----------|-----------------------|---------|---------|---------|---------|
-|   call   | grp_mp_mul_6117_fu_65 |    50   | 4.38843 |   2514  |   4096  |
-|          |  grp_rdc_mont_7_fu_74 |    32   | 5.61514 |   1804  |   4337  |
-|----------|-----------------------|---------|---------|---------|---------|
-|   icmp   |    exitcond1_fu_91    |    0    |    0    |    0    |    12   |
-|----------|-----------------------|---------|---------|---------|---------|
-|    add   |    empty_164_fu_97    |    0    |    0    |    0    |    12   |
-|----------|-----------------------|---------|---------|---------|---------|
-|   zext   |     p_cast_fu_103     |    0    |    0    |    0    |    0    |
-|----------|-----------------------|---------|---------|---------|---------|
-|   Total  |                       |    82   | 10.0036 |   4318  |   8457  |
-|----------|-----------------------|---------|---------|---------|---------|
+|----------|-----------------------|---------|---------|---------|---------|---------|
+| Operation|    Functional Unit    |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-----------------------|---------|---------|---------|---------|---------|
+|   call   | grp_mp_mul_6117_fu_65 |    6    |    17   | 7.07186 |   3862  |   8699  |
+|          |  grp_rdc_mont_7_fu_74 |    0    |    32   | 5.61514 |   1804  |   4337  |
+|----------|-----------------------|---------|---------|---------|---------|---------|
+|   icmp   |    exitcond1_fu_91    |    0    |    0    |    0    |    0    |    12   |
+|----------|-----------------------|---------|---------|---------|---------|---------|
+|    add   |    empty_171_fu_97    |    0    |    0    |    0    |    0    |    12   |
+|----------|-----------------------|---------|---------|---------|---------|---------|
+|   zext   |     p_cast_fu_103     |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------|---------|---------|---------|---------|---------|
+|   Total  |                       |    6    |    49   |  12.687 |   5666  |  13060  |
+|----------|-----------------------|---------|---------|---------|---------|---------|
 
 Memories:
 +----+--------+--------+--------+--------+
@@ -666,10 +666,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |   82   |   10   |  4318  |  8457  |    -   |
+|  Function |    6   |   49   |   12   |  5666  |  13060 |    -   |
 |   Memory  |    0   |    -   |    -   |   64   |   65   |    0   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    5   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |   82   |   10   |  4387  |  8522  |    0   |
+|   Total   |    6   |   49   |   12   |  5735  |  13125 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

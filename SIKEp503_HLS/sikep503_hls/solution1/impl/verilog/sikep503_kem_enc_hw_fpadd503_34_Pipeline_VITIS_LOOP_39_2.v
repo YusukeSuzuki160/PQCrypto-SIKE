@@ -18,8 +18,8 @@ module sikep503_kem_enc_hw_fpadd503_34_Pipeline_VITIS_LOOP_39_2 (
         coeff_we0,
         coeff_d0,
         coeff_q0,
-        carry_141_out,
-        carry_141_out_ap_vld
+        carry_139_out,
+        carry_139_out_ap_vld
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 2'd1;
@@ -36,11 +36,11 @@ output   coeff_ce0;
 output   coeff_we0;
 output  [63:0] coeff_d0;
 input  [63:0] coeff_q0;
-output  [0:0] carry_141_out;
-output   carry_141_out_ap_vld;
+output  [0:0] carry_139_out;
+output   carry_139_out_ap_vld;
 
 reg ap_idle;
-reg carry_141_out_ap_vld;
+reg carry_139_out_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
@@ -72,7 +72,7 @@ reg   [63:0] reuse_addr_reg_fu_54;
 reg   [63:0] reuse_reg_fu_58;
 wire   [63:0] sub_ln41_fu_273_p2;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_117_fu_62;
+reg   [3:0] i_137_fu_62;
 wire   [3:0] add_ln39_fu_136_p2;
 wire    ap_block_pp0_stage1_01001;
 reg    coeff_ce0_local;
@@ -89,7 +89,7 @@ wire   [63:0] or_ln105_fu_211_p2;
 wire   [63:0] xor_ln105_26_fu_217_p2;
 wire   [63:0] sub_ln95_fu_231_p2;
 wire   [63:0] or_ln95_fu_237_p2;
-wire   [0:0] tmp_248_fu_243_p3;
+wire   [0:0] tmp_197_fu_243_p3;
 wire   [0:0] xor_ln41_fu_251_p2;
 wire   [0:0] and_ln41_fu_257_p2;
 wire   [0:0] tmp_fu_223_p3;
@@ -112,7 +112,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
 #0 reuse_addr_reg_fu_54 = 64'd0;
 #0 reuse_reg_fu_58 = 64'd0;
-#0 i_117_fu_62 = 4'd0;
+#0 i_137_fu_62 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -197,9 +197,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_117_fu_62 <= 4'd0;
+        i_137_fu_62 <= 4'd0;
     end else if (((icmp_ln39_fu_130_p2 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        i_117_fu_62 <= add_ln39_fu_136_p2;
+        i_137_fu_62 <= add_ln39_fu_136_p2;
     end
 end
 
@@ -349,9 +349,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_exit_ready == 1'b1) & (icmp_ln39_fu_130_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        carry_141_out_ap_vld = 1'b1;
+        carry_139_out_ap_vld = 1'b1;
     end else begin
-        carry_141_out_ap_vld = 1'b0;
+        carry_139_out_ap_vld = 1'b0;
     end
 end
 
@@ -411,7 +411,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln39_fu_136_p2 = (i_117_fu_62 + 4'd1);
+assign add_ln39_fu_136_p2 = (i_137_fu_62 + 4'd1);
 
 assign addr_cmp_fu_167_p2 = ((reuse_addr_reg_fu_54 == zext_ln41_3_fu_159_p1) ? 1'b1 : 1'b0);
 
@@ -445,7 +445,7 @@ assign ap_ready = ap_ready_sig;
 
 assign borrowReg_fu_263_p2 = (tmp_fu_223_p3 | and_ln41_fu_257_p2);
 
-assign carry_141_out = carry_reg_99;
+assign carry_139_out = carry_reg_99;
 
 assign coeff_address0 = coeff_address0_local;
 
@@ -455,7 +455,7 @@ assign coeff_d0 = sub_ln41_fu_273_p2;
 
 assign coeff_we0 = coeff_we0_local;
 
-assign icmp_ln39_fu_130_p2 = ((i_117_fu_62 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln39_fu_130_p2 = ((i_137_fu_62 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln105_fu_211_p2 = (xor_ln105_fu_199_p2 | xor_ln105_25_fu_205_p2);
 
@@ -471,11 +471,11 @@ assign sub_ln95_fu_231_p2 = (64'd0 - tempReg_fu_193_p2);
 
 assign tempReg_fu_193_p2 = (reuse_select_fu_186_p3 - p503x2_1_q0);
 
-assign tmp_248_fu_243_p3 = or_ln95_fu_237_p2[32'd63];
+assign tmp_197_fu_243_p3 = or_ln95_fu_237_p2[32'd63];
 
 assign tmp_fu_223_p3 = xor_ln105_26_fu_217_p2[32'd63];
 
-assign trunc_ln41_fu_147_p1 = i_117_fu_62[2:0];
+assign trunc_ln41_fu_147_p1 = i_137_fu_62[2:0];
 
 assign xor_ln105_25_fu_205_p2 = (tempReg_fu_193_p2 ^ p503x2_1_q0);
 
@@ -483,9 +483,9 @@ assign xor_ln105_26_fu_217_p2 = (reuse_select_fu_186_p3 ^ or_ln105_fu_211_p2);
 
 assign xor_ln105_fu_199_p2 = (reuse_select_fu_186_p3 ^ p503x2_1_q0);
 
-assign xor_ln41_fu_251_p2 = (tmp_248_fu_243_p3 ^ 1'd1);
+assign xor_ln41_fu_251_p2 = (tmp_197_fu_243_p3 ^ 1'd1);
 
-assign zext_ln39_fu_142_p1 = i_117_fu_62;
+assign zext_ln39_fu_142_p1 = i_137_fu_62;
 
 assign zext_ln41_2_fu_151_p3 = {{3'd5}, {trunc_ln41_fu_147_p1}};
 

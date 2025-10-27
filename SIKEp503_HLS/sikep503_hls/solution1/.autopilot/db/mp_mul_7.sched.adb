@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>a_0</name>
+						<name>a</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>4</array_size>
+				<array_size>8</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>a_1</name>
+						<name>b_0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -62,7 +62,7 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>a</originalName>
+						<originalName>b</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -88,7 +88,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>b</name>
+						<name>b_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -113,7 +113,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>56</array_size>
+				<array_size>4</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -124,43 +124,7 @@
 					<Obj>
 						<type>1</type>
 						<id>4</id>
-						<name>b_offset</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_5">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>5</id>
-						<name>c</name>
+						<name>c_0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -185,22 +149,18 @@
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
-				<array_size>16</array_size>
+				<array_size>8</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-		</ports>
-		<nodes class_id="8" tracking_level="0" version="0">
-			<count>3</count>
-			<item_version>0</item_version>
-			<item class_id="9" tracking_level="1" version="0" object_id="_6">
+			<item class_id_reference="3" object_id="_5">
 				<Value>
 					<Obj>
-						<type>0</type>
-						<id>6</id>
-						<name>b_offset_read</name>
+						<type>1</type>
+						<id>5</id>
+						<name>c_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -210,7 +170,7 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>c</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -221,24 +181,21 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>64</bitwidth>
 				</Value>
-				<oprand_edges>
-					<count>2</count>
+				<direction>1</direction>
+				<if_type>1</if_type>
+				<array_size>8</array_size>
+				<bit_vecs>
+					<count>0</count>
 					<item_version>0</item_version>
-					<item>15</item>
-					<item>16</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>1</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+				</bit_vecs>
 			</item>
-			<item class_id_reference="9" object_id="_7">
+		</ports>
+		<nodes class_id="8" tracking_level="0" version="0">
+			<count>2</count>
+			<item_version>0</item_version>
+			<item class_id="9" tracking_level="1" version="0" object_id="_6">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -252,13 +209,13 @@
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
-							<item class_id="11" tracking_level="0" version="0">
+							<item class_id="10" tracking_level="0" version="0">
 								<first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-								<second class_id="12" tracking_level="0" version="0">
+								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
-									<item class_id="13" tracking_level="0" version="0">
-										<first class_id="14" tracking_level="0" version="0">
+									<item class_id="12" tracking_level="0" version="0">
+										<first class_id="13" tracking_level="0" version="0">
 											<first>src/generic/fp_generic.cpp</first>
 											<second>mp_mul</second>
 										</first>
@@ -283,12 +240,12 @@
 				<oprand_edges>
 					<count>6</count>
 					<item_version>0</item_version>
+					<item>15</item>
+					<item>16</item>
+					<item>17</item>
 					<item>18</item>
 					<item>19</item>
 					<item>20</item>
-					<item>21</item>
-					<item>22</item>
-					<item>23</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -296,10 +253,10 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>2</m_topoIndex>
+				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_8">
+			<item class_id_reference="9" object_id="_7">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -351,19 +308,19 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>3</m_topoIndex>
+				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_9">
+			<item class_id="16" tracking_level="1" version="0" object_id="_8">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>17</id>
-						<name>mul_4</name>
+						<id>14</id>
+						<name>mul_6</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -387,13 +344,13 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:mul.4&gt;</content>
+				<content>&lt;constant:mul.6&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_10">
+			<item class_id="18" tracking_level="1" version="0" object_id="_9">
 				<Obj>
 					<type>3</type>
 					<id>13</id>
@@ -419,61 +376,53 @@
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>6</item>
 					<item>11</item>
 					<item>12</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>7</count>
+			<count>6</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_11">
-				<id>16</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_10">
+				<id>15</id>
 				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
-				<sink_obj>6</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_12">
-				<id>18</id>
-				<edge_type>1</edge_type>
-				<source_obj>17</source_obj>
+				<source_obj>14</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_13">
-				<id>19</id>
+			<item class_id_reference="20" object_id="_11">
+				<id>16</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_14">
-				<id>20</id>
+			<item class_id_reference="20" object_id="_12">
+				<id>17</id>
 				<edge_type>1</edge_type>
 				<source_obj>2</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_15">
-				<id>21</id>
+			<item class_id_reference="20" object_id="_13">
+				<id>18</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_16">
-				<id>22</id>
+			<item class_id_reference="20" object_id="_14">
+				<id>19</id>
 				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
+				<source_obj>4</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_17">
-				<id>23</id>
+			<item class_id_reference="20" object_id="_15">
+				<id>20</id>
 				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
 				<sink_obj>11</sink_obj>
@@ -484,7 +433,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_18">
+		<item class_id="22" tracking_level="1" version="0" object_id="_16">
 			<mId>1</mId>
 			<mTag>mp_mul.7</mTag>
 			<mNormTag>mp_mul_7</mNormTag>
@@ -502,8 +451,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>862</mMinLatency>
-			<mMaxLatency>4846</mMaxLatency>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -511,18 +460,11 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>3</count>
+		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
-			<first>6</first>
-			<second class_id="28" tracking_level="0" version="0">
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
 			<first>11</first>
-			<second>
+			<second class_id="28" tracking_level="0" version="0">
 				<first>0</first>
 				<second>1</second>
 			</second>

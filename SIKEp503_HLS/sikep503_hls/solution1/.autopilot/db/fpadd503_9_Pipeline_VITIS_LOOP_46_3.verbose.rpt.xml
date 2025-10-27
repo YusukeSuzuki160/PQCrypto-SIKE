@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_9_Pipeline_VITIS_LOOP_46_3'" level="0">
-<item name = "Date">Mon Oct 20 14:41:07 2025
+<item name = "Date">Sat Oct 25 16:58:03 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -105,7 +105,7 @@
 <column name="c_0_address0_local">14, 3, 2, 6</column>
 <column name="c_1_address0_local">14, 3, 2, 6</column>
 <column name="carry_reg_111">9, 2, 1, 2</column>
-<column name="i_112_fu_62">9, 2, 4, 8</column>
+<column name="i_142_fu_62">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -116,7 +116,7 @@
 <column name="c_0_addr_reg_304">2, 0, 2, 0</column>
 <column name="c_1_addr_reg_309">2, 0, 2, 0</column>
 <column name="carry_reg_111">1, 0, 1, 0</column>
-<column name="i_112_fu_62">4, 0, 4, 0</column>
+<column name="i_142_fu_62">4, 0, 4, 0</column>
 <column name="sext_ln30_cast_reg_286">64, 0, 64, 0</column>
 <column name="trunc_ln46_reg_299">1, 0, 1, 0</column>
 </table>

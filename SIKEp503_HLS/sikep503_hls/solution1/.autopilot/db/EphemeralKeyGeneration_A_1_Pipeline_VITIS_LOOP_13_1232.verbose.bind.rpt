@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1232'
 ================================================================
-* Date:           Mon Oct 20 16:13:14 2025
+* Date:           Sat Oct 25 16:48:13 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -85,11 +85,11 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.48>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_271 = alloca i32 1" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 5 'alloca' 'i_271' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_301 = alloca i32 1" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 5 'alloca' 'i_301' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %phiP_X_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 0, i4 %i_271" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 7 'store' 'store_ln11' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 7 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 0, i4 %i_301" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 7 'store' 'store_ln11' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i12.i"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = load i4 %i_271" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 9 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = load i4 %i_301" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 9 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln13 = icmp_eq  i4 %i, i4 8" [src/fpx.cpp:13->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 10 'icmp' 'icmp_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln13 = add i4 %i, i4 1" [src/fpx.cpp:13->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 11 'add' 'add_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %icmp_ln13, void %for.inc.i12.i.split, void %for.inc.i19.i.preheader.exitStub" [src/fpx.cpp:13->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 12 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
@@ -98,15 +98,15 @@ ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln14_cast = bitconcatenate i4
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln14 = zext i4 %zext_ln14_cast" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 15 'zext' 'zext_ln14' <Predicate = (!icmp_ln13)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%B_gen_1_addr = getelementptr i64 %B_gen_1, i64 0, i64 %zext_ln14" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 16 'getelementptr' 'B_gen_1_addr' <Predicate = (!icmp_ln13)> <Delay = 0.00>
 ST_1 : Operation 17 [2/2] (0.71ns)   --->   "%B_gen_1_load = load i6 %B_gen_1_addr" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 17 'load' 'B_gen_1_load' <Predicate = (!icmp_ln13)> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 40> <ROM>
-ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 %add_ln13, i4 %i_271" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 18 'store' 'store_ln11' <Predicate = (!icmp_ln13)> <Delay = 0.38>
+ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 %add_ln13, i4 %i_301" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 18 'store' 'store_ln11' <Predicate = (!icmp_ln13)> <Delay = 0.38>
 ST_1 : Operation 27 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = (icmp_ln13)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 1.42>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln13 = zext i4 %i" [src/fpx.cpp:13->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 19 'zext' 'zext_ln13' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%phiP_X_1_addr = getelementptr i64 %phiP_X_1, i64 0, i64 %zext_ln13" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 20 'getelementptr' 'phiP_X_1_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 21 'specpipeline' 'specpipeline_ln11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 21 'specpipeline' 'specpipeline_ln11' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:11->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39" [src/fpx.cpp:13->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 23 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [src/fpx.cpp:13->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 23 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 24 [1/2] ( I:0.71ns O:0.71ns )   --->   "%B_gen_1_load = load i6 %B_gen_1_addr" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 24 'load' 'B_gen_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 40> <ROM>
 ST_2 : Operation 25 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln14 = store i64 %B_gen_1_load, i3 %phiP_X_1_addr" [src/fpx.cpp:14->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 25 'store' 'store_ln14' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln13 = br void %for.inc.i12.i" [src/fpx.cpp:13->src/sidh.cpp:29->src/sidh.cpp:126]   --->   Operation 26 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
@@ -131,7 +131,7 @@ Port [ B_gen_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; ex
 
 <LifeTime>
 <method=bitvector/>
-i_271                  (alloca           ) [ 010]
+i_301                  (alloca           ) [ 010]
 specmemcore_ln0        (specmemcore      ) [ 000]
 store_ln11             (store            ) [ 000]
 br_ln0                 (br               ) [ 000]
@@ -309,7 +309,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </bind>
 </comp>
 
@@ -345,18 +345,18 @@ ret_ln0                (ret              ) [ 000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_39"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
-<comp id="42" class="1004" name="i_271_fu_42">
+<comp id="42" class="1004" name="i_301_fu_42">
 <pin_list>
 <pin id="43" dir="0" index="0" bw="1" slack="0"/>
 <pin id="44" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="i_271/1 "/>
+<opset="i_301/1 "/>
 </bind>
 </comp>
 
@@ -517,13 +517,13 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="119" class="1005" name="i_271_reg_119">
+<comp id="119" class="1005" name="i_301_reg_119">
 <pin_list>
 <pin id="120" dir="0" index="0" bw="4" slack="0"/>
 <pin id="121" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_271 "/>
+<opset="i_301 "/>
 </bind>
 </comp>
 
@@ -666,7 +666,7 @@ N/A
 |                    |   FF   |
 +--------------------+--------+
 |B_gen_1_addr_reg_134|    6   |
-|    i_271_reg_119   |    4   |
+|    i_301_reg_119   |    4   |
 |      i_reg_126     |    4   |
 +--------------------+--------+
 |        Total       |   14   |

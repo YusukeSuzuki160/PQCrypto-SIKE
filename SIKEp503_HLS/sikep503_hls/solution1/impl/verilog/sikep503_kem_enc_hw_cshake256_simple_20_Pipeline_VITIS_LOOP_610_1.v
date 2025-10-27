@@ -45,7 +45,7 @@ wire   [63:0] zext_ln610_fu_70_p1;
 reg   [4:0] i_fu_34;
 wire   [4:0] add_ln610_fu_64_p2;
 wire    ap_loop_init;
-reg   [4:0] ap_sig_allocacmp_i_264;
+reg   [4:0] ap_sig_allocacmp_i_284;
 reg    s_ce0_local;
 reg   [7:0] s_we0_local;
 reg    ap_done_reg;
@@ -152,9 +152,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_264 = 5'd0;
+        ap_sig_allocacmp_i_284 = 5'd0;
     end else begin
-        ap_sig_allocacmp_i_264 = i_fu_34;
+        ap_sig_allocacmp_i_284 = i_fu_34;
     end
 end
 
@@ -185,7 +185,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln610_fu_64_p2 = (ap_sig_allocacmp_i_264 + 5'd1);
+assign add_ln610_fu_64_p2 = (ap_sig_allocacmp_i_284 + 5'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -199,7 +199,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln610_fu_58_p2 = ((ap_sig_allocacmp_i_264 == 5'd25) ? 1'b1 : 1'b0);
+assign icmp_ln610_fu_58_p2 = ((ap_sig_allocacmp_i_284 == 5'd25) ? 1'b1 : 1'b0);
 
 assign s_address0 = zext_ln610_fu_70_p1;
 
@@ -209,6 +209,6 @@ assign s_d0 = 64'd0;
 
 assign s_we0 = s_we0_local;
 
-assign zext_ln610_fu_70_p1 = ap_sig_allocacmp_i_264;
+assign zext_ln610_fu_70_p1 = ap_sig_allocacmp_i_284;
 
 endmodule //sikep503_kem_enc_hw_cshake256_simple_20_Pipeline_VITIS_LOOP_610_1

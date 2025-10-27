@@ -25,11 +25,7 @@ port (
     c_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     c_ce0 : OUT STD_LOGIC;
     c_we0 : OUT STD_LOGIC;
-    c_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
-    grp_fu_169_p_din0 : OUT STD_LOGIC_VECTOR (255 downto 0);
-    grp_fu_169_p_din1 : OUT STD_LOGIC_VECTOR (255 downto 0);
-    grp_fu_169_p_dout0 : IN STD_LOGIC_VECTOR (511 downto 0);
-    grp_fu_169_p_ce : OUT STD_LOGIC );
+    c_d0 : OUT STD_LOGIC_VECTOR (63 downto 0) );
 end;
 
 
@@ -60,13 +56,9 @@ attribute shreg_extract : string;
     signal grp_mul_63_fu_18_c_ce0 : STD_LOGIC;
     signal grp_mul_63_fu_18_c_we0 : STD_LOGIC;
     signal grp_mul_63_fu_18_c_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_mul_63_fu_18_grp_fu_28_p_din0 : STD_LOGIC_VECTOR (255 downto 0);
-    signal grp_mul_63_fu_18_grp_fu_28_p_din1 : STD_LOGIC_VECTOR (255 downto 0);
-    signal grp_mul_63_fu_18_grp_fu_28_p_ce : STD_LOGIC;
     signal grp_mul_63_fu_18_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal grp_fu_28_ce : STD_LOGIC;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
@@ -89,28 +81,7 @@ attribute shreg_extract : string;
         c_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         c_ce0 : OUT STD_LOGIC;
         c_we0 : OUT STD_LOGIC;
-        c_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
-        grp_fu_28_p_din0 : OUT STD_LOGIC_VECTOR (255 downto 0);
-        grp_fu_28_p_din1 : OUT STD_LOGIC_VECTOR (255 downto 0);
-        grp_fu_28_p_dout0 : IN STD_LOGIC_VECTOR (511 downto 0);
-        grp_fu_28_p_ce : OUT STD_LOGIC );
-    end component;
-
-
-    component sikep503_kem_enc_hw_mul_256ns_256ns_512_2_1 IS
-    generic (
-        ID : INTEGER;
-        NUM_STAGE : INTEGER;
-        din0_WIDTH : INTEGER;
-        din1_WIDTH : INTEGER;
-        dout_WIDTH : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        din0 : IN STD_LOGIC_VECTOR (255 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (255 downto 0);
-        ce : IN STD_LOGIC;
-        dout : OUT STD_LOGIC_VECTOR (511 downto 0) );
+        c_d0 : OUT STD_LOGIC_VECTOR (63 downto 0) );
     end component;
 
 
@@ -133,11 +104,7 @@ begin
         c_address0 => grp_mul_63_fu_18_c_address0,
         c_ce0 => grp_mul_63_fu_18_c_ce0,
         c_we0 => grp_mul_63_fu_18_c_we0,
-        c_d0 => grp_mul_63_fu_18_c_d0,
-        grp_fu_28_p_din0 => grp_mul_63_fu_18_grp_fu_28_p_din0,
-        grp_fu_28_p_din1 => grp_mul_63_fu_18_grp_fu_28_p_din1,
-        grp_fu_28_p_dout0 => grp_fu_169_p_dout0,
-        grp_fu_28_p_ce => grp_mul_63_fu_18_grp_fu_28_p_ce);
+        c_d0 => grp_mul_63_fu_18_c_d0);
 
 
 
@@ -250,18 +217,5 @@ begin
     c_ce0 <= grp_mul_63_fu_18_c_ce0;
     c_d0 <= grp_mul_63_fu_18_c_d0;
     c_we0 <= grp_mul_63_fu_18_c_we0;
-    grp_fu_169_p_ce <= grp_fu_28_ce;
-    grp_fu_169_p_din0 <= grp_mul_63_fu_18_grp_fu_28_p_din0;
-    grp_fu_169_p_din1 <= grp_mul_63_fu_18_grp_fu_28_p_din1;
-
-    grp_fu_28_ce_assign_proc : process(grp_mul_63_fu_18_grp_fu_28_p_ce, ap_CS_fsm_state2)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            grp_fu_28_ce <= grp_mul_63_fu_18_grp_fu_28_p_ce;
-        else 
-            grp_fu_28_ce <= ap_const_logic_1;
-        end if; 
-    end process;
-
     grp_mul_63_fu_18_ap_start <= grp_mul_63_fu_18_ap_start_reg;
 end behav;

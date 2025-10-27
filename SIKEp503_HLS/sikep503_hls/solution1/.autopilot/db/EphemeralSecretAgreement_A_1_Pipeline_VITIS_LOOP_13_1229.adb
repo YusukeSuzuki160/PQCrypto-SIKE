@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>zext_ln14_1</name>
+              <name>zext_ln14</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -75,7 +75,7 @@
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
-          <direction>0</direction>
+          <direction>1</direction>
           <if_type>1</if_type>
           <array_size>56</array_size>
           <bit_vecs>
@@ -111,7 +111,7 @@
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
-          <direction>1</direction>
+          <direction>0</direction>
           <if_type>1</if_type>
           <array_size>16</array_size>
           <bit_vecs>
@@ -128,7 +128,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>i_264</name>
+              <name>i_305</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>11</lineNumber>
@@ -161,7 +161,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -198,7 +198,7 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>zext_ln14_1_read</name>
+              <name>zext_ln14_read</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -241,7 +241,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_264_write_ln11</name>
+              <name>i_305_write_ln11</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>11</lineNumber>
@@ -274,7 +274,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -387,7 +387,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -458,7 +458,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -529,7 +529,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -600,7 +600,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -639,7 +639,7 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>zext_ln14</name>
+              <name>zext_ln14_13</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -672,13 +672,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln14_fu_105_p1</rtlName>
+              <rtlName>zext_ln14_13_fu_127_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -701,7 +701,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>9</m_topoIndex>
+          <m_topoIndex>16</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_13">
@@ -742,13 +742,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln14_fu_109_p2</rtlName>
+              <rtlName>add_ln14_fu_130_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -772,7 +772,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.70</m_delay>
-          <m_topoIndex>10</m_topoIndex>
+          <m_topoIndex>17</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_14">
@@ -780,7 +780,7 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>zext_ln14_5</name>
+              <name>zext_ln14_14</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -813,13 +813,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln14_5_fu_115_p1</rtlName>
+              <rtlName>zext_ln14_14_fu_135_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -842,7 +842,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>11</m_topoIndex>
+          <m_topoIndex>18</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_15">
@@ -883,7 +883,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -914,7 +914,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>12</m_topoIndex>
+          <m_topoIndex>19</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_16">
@@ -922,76 +922,6 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>pts_X_1_load</name>
-              <fileName>src/fpx.cpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>14</lineNumber>
-              <contextFuncName>fpcopy503</contextFuncName>
-              <contextNormFuncName>fpcopy503</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>3</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/fpx.cpp</first>
-                        <second>fp2copy503</second>
-                      </first>
-                      <second>92</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.cpp</first>
-                        <second>fpcopy503</second>
-                      </first>
-                      <second>14</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sidh.cpp</first>
-                        <second>EphemeralSecretAgreement_A</second>
-                      </first>
-                      <second>328</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control>auto</control>
-              <opType>ram_1p</opType>
-              <implIndex>auto</implIndex>
-              <coreName>RAM_1P</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>87</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>64</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>61</item>
-          </oprand_edges>
-          <opcode>load</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.71</m_delay>
-          <m_topoIndex>13</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_17">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>24</id>
               <name>trunc_ln14</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -1025,13 +955,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln14_fu_120_p1</rtlName>
+              <rtlName>trunc_ln14_fu_105_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1046,7 +976,7 @@
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>62</item>
+            <item>61</item>
           </oprand_edges>
           <opcode>trunc</opcode>
           <m_Display>0</m_Display>
@@ -1054,15 +984,15 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>14</m_topoIndex>
+          <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_18">
+        <item class_id_reference="9" object_id="_17">
           <Value>
             <Obj>
               <type>0</type>
-              <id>25</id>
-              <name>zext_ln14_3</name>
+              <id>24</id>
+              <name>zext_ln14_2</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -1095,13 +1025,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln14_3_fu_129_p3</rtlName>
+              <rtlName>zext_ln14_2_fu_109_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1116,9 +1046,9 @@
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
-            <item>64</item>
+            <item>63</item>
+            <item>65</item>
             <item>66</item>
-            <item>67</item>
           </oprand_edges>
           <opcode>bitconcatenate</opcode>
           <m_Display>0</m_Display>
@@ -1126,15 +1056,15 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>17</m_topoIndex>
+          <m_topoIndex>10</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_19">
+        <item class_id_reference="9" object_id="_18">
           <Value>
             <Obj>
               <type>0</type>
-              <id>26</id>
-              <name>zext_ln14_6</name>
+              <id>25</id>
+              <name>zext_ln14_15</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -1167,13 +1097,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln14_6_fu_136_p1</rtlName>
+              <rtlName>zext_ln14_15_fu_117_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1188,7 +1118,7 @@
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>68</item>
+            <item>67</item>
           </oprand_edges>
           <opcode>zext</opcode>
           <m_Display>0</m_Display>
@@ -1196,14 +1126,14 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>18</m_topoIndex>
+          <m_topoIndex>11</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_20">
+        <item class_id_reference="9" object_id="_19">
           <Value>
             <Obj>
               <type>0</type>
-              <id>27</id>
+              <id>26</id>
               <name>R_X_addr</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -1237,7 +1167,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -1258,9 +1188,9 @@
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
+            <item>68</item>
             <item>69</item>
             <item>70</item>
-            <item>71</item>
           </oprand_edges>
           <opcode>getelementptr</opcode>
           <m_Display>0</m_Display>
@@ -1268,15 +1198,15 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>19</m_topoIndex>
+          <m_topoIndex>12</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_21">
+        <item class_id_reference="9" object_id="_20">
           <Value>
             <Obj>
               <type>0</type>
-              <id>28</id>
-              <name>R_X_addr_write_ln14</name>
+              <id>27</id>
+              <name>R_X_load</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -1309,7 +1239,77 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control>auto</control>
+              <opType>ram_1p</opType>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>87</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>64</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>71</item>
+          </oprand_edges>
+          <opcode>load</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.71</m_delay>
+          <m_topoIndex>13</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_21">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>28</id>
+              <name>pts_X_1_addr_write_ln14</name>
+              <fileName>src/fpx.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>14</lineNumber>
+              <contextFuncName>fpcopy503</contextFuncName>
+              <contextNormFuncName>fpcopy503</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>3</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/fpx.cpp</first>
+                        <second>fp2copy503</second>
+                      </first>
+                      <second>92</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.cpp</first>
+                        <second>fpcopy503</second>
+                      </first>
+                      <second>14</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/sidh.cpp</first>
+                        <second>EphemeralSecretAgreement_A</second>
+                      </first>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -1347,7 +1347,7 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>i_264_write_ln11</name>
+              <name>i_305_write_ln11</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>11</lineNumber>
@@ -1380,7 +1380,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -1412,7 +1412,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.38</m_delay>
-          <m_topoIndex>15</m_topoIndex>
+          <m_topoIndex>14</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_23">
@@ -1453,7 +1453,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralSecretAgreement_A</second>
                       </first>
-                      <second>328</second>
+                      <second>313</second>
                     </item>
                   </second>
                 </item>
@@ -1523,7 +1523,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.38</m_delay>
-          <m_topoIndex>16</m_topoIndex>
+          <m_topoIndex>15</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
       </nodes>
@@ -1689,7 +1689,7 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>65</id>
+              <id>64</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1758,7 +1758,7 @@
           <Obj>
             <type>3</type>
             <id>15</id>
-            <name>for.inc.i10.i147</name>
+            <name>for.inc.i10.i</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -1792,7 +1792,7 @@
           <Obj>
             <type>3</type>
             <id>31</id>
-            <name>for.inc.i10.i147.split</name>
+            <name>for.inc.i10.i.split</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -1834,7 +1834,7 @@
           <Obj>
             <type>3</type>
             <id>33</id>
-            <name>for.inc.i.i156.preheader.exitStub</name>
+            <name>for.inc.i.i71.preheader.exitStub</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -2008,22 +2008,22 @@
         <item class_id_reference="20" object_id="_55">
           <id>61</id>
           <edge_type>1</edge_type>
-          <source_obj>19</source_obj>
+          <source_obj>11</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_56">
-          <id>62</id>
+          <id>65</id>
           <edge_type>1</edge_type>
-          <source_obj>11</source_obj>
+          <source_obj>64</source_obj>
           <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_57">
           <id>66</id>
           <edge_type>1</edge_type>
-          <source_obj>65</source_obj>
-          <sink_obj>25</sink_obj>
+          <source_obj>23</source_obj>
+          <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_58">
@@ -2036,22 +2036,22 @@
         <item class_id_reference="20" object_id="_59">
           <id>68</id>
           <edge_type>1</edge_type>
-          <source_obj>25</source_obj>
+          <source_obj>3</source_obj>
           <sink_obj>26</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_60">
           <id>69</id>
           <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
-          <sink_obj>27</sink_obj>
+          <source_obj>58</source_obj>
+          <sink_obj>26</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_61">
           <id>70</id>
           <edge_type>1</edge_type>
-          <source_obj>58</source_obj>
-          <sink_obj>27</sink_obj>
+          <source_obj>25</source_obj>
+          <sink_obj>26</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_62">
@@ -2064,14 +2064,14 @@
         <item class_id_reference="20" object_id="_63">
           <id>72</id>
           <edge_type>1</edge_type>
-          <source_obj>23</source_obj>
+          <source_obj>27</source_obj>
           <sink_obj>28</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_64">
           <id>73</id>
           <edge_type>1</edge_type>
-          <source_obj>27</source_obj>
+          <source_obj>19</source_obj>
           <sink_obj>28</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -2253,7 +2253,7 @@
         <item class_id="26" tracking_level="1" version="0" object_id="_80">
           <id>1</id>
           <operations class_id="27" tracking_level="0" version="0">
-            <count>18</count>
+            <count>17</count>
             <item_version>0</item_version>
             <item class_id="28" tracking_level="1" version="0" object_id="_81">
               <id>4</id>
@@ -2306,86 +2306,86 @@
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_91">
-              <id>16</id>
+              <id>23</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_92">
-              <id>17</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_93">
-              <id>18</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_94">
-              <id>19</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_95">
-              <id>23</id>
-              <stage>2</stage>
-              <latency>2</latency>
-            </item>
-            <item class_id_reference="28" object_id="_96">
               <id>24</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_97">
+            <item class_id_reference="28" object_id="_93">
+              <id>25</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_94">
+              <id>26</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_95">
+              <id>27</id>
+              <stage>2</stage>
+              <latency>2</latency>
+            </item>
+            <item class_id_reference="28" object_id="_96">
               <id>29</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_98">
+            <item class_id_reference="28" object_id="_97">
               <id>32</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_99">
+        <item class_id_reference="26" object_id="_98">
           <id>2</id>
           <operations>
-            <count>9</count>
+            <count>10</count>
             <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_99">
+              <id>16</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
             <item class_id_reference="28" object_id="_100">
-              <id>20</id>
+              <id>17</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_101">
-              <id>21</id>
+              <id>18</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_102">
-              <id>22</id>
+              <id>19</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_103">
-              <id>23</id>
+              <id>20</id>
               <stage>1</stage>
-              <latency>2</latency>
+              <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_104">
-              <id>25</id>
+              <id>21</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_105">
-              <id>26</id>
+              <id>22</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_106">
               <id>27</id>
               <stage>1</stage>
-              <latency>1</latency>
+              <latency>2</latency>
             </item>
             <item class_id_reference="28" object_id="_107">
               <id>28</id>
@@ -2459,7 +2459,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln14_fu_109_p2 ( + ) </first>
+          <first>add_ln14_fu_130_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2621,7 +2621,7 @@
           </second>
         </item>
         <item>
-          <first>i_264_fu_48</first>
+          <first>i_305_fu_48</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2709,7 +2709,7 @@
           </second>
         </item>
         <item>
-          <first>i_264_fu_48</first>
+          <first>i_305_fu_48</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2728,13 +2728,13 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln14_reg_156</first>
+          <first>i_reg_152</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>3</second>
+              <second>4</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -2742,7 +2742,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3</second>
+              <second>4</second>
             </item>
           </second>
         </item>
@@ -2774,7 +2774,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln14_fu_109_p2 ( + ) </first>
+          <first>add_ln14_fu_130_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2861,28 +2861,28 @@
       <item>
         <first>16</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>17</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>18</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>19</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
@@ -2890,7 +2890,7 @@
         <first>23</first>
         <second>
           <first>0</first>
-          <second>1</second>
+          <second>0</second>
         </second>
       </item>
       <item>
@@ -2903,22 +2903,22 @@
       <item>
         <first>25</first>
         <second>
-          <first>1</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>26</first>
         <second>
-          <first>1</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>27</first>
         <second>
-          <first>1</first>
-          <second>0</second>
+          <first>0</first>
+          <second>1</second>
         </second>
       </item>
       <item>
@@ -3031,7 +3031,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>26</item>
         </second>
       </item>
       <item>
@@ -3039,8 +3039,8 @@
         <second>
           <count>2</count>
           <item_version>0</item_version>
-          <item>23</item>
-          <item>23</item>
+          <item>27</item>
+          <item>27</item>
         </second>
       </item>
       <item>
@@ -3048,7 +3048,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>27</item>
+          <item>19</item>
         </second>
       </item>
       <item>
@@ -3096,7 +3096,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>16</item>
+          <item>23</item>
         </second>
       </item>
       <item>
@@ -3104,35 +3104,11 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>17</item>
-        </second>
-      </item>
-      <item>
-        <first>115</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>18</item>
-        </second>
-      </item>
-      <item>
-        <first>120</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
           <item>24</item>
         </second>
       </item>
       <item>
-        <first>124</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>29</item>
-        </second>
-      </item>
-      <item>
-        <first>129</first>
+        <first>117</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3140,11 +3116,35 @@
         </second>
       </item>
       <item>
-        <first>136</first>
+        <first>122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>26</item>
+          <item>29</item>
+        </second>
+      </item>
+      <item>
+        <first>127</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>16</item>
+        </second>
+      </item>
+      <item>
+        <first>130</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>17</item>
+        </second>
+      </item>
+      <item>
+        <first>135</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
         </second>
       </item>
     </dp_fu_nodes>
@@ -3152,11 +3152,11 @@
       <count>11</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>R_X_addr_gep_fu_71</first>
+        <first>R_X_addr_gep_fu_58</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>27</item>
+          <item>26</item>
         </second>
       </item>
       <item>
@@ -3168,7 +3168,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln14_fu_109</first>
+        <first>add_ln14_fu_130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3176,7 +3176,7 @@
         </second>
       </item>
       <item>
-        <first>i_264_fu_48</first>
+        <first>i_305_fu_48</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3192,7 +3192,7 @@
         </second>
       </item>
       <item>
-        <first>pts_X_1_addr_gep_fu_58</first>
+        <first>pts_X_1_addr_gep_fu_71</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3200,23 +3200,23 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln14_fu_120</first>
+        <first>trunc_ln14_fu_105</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>23</item>
         </second>
       </item>
       <item>
-        <first>zext_ln14_3_fu_129</first>
+        <first>zext_ln14_13_fu_127</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>25</item>
+          <item>16</item>
         </second>
       </item>
       <item>
-        <first>zext_ln14_5_fu_115</first>
+        <first>zext_ln14_14_fu_135</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3224,19 +3224,19 @@
         </second>
       </item>
       <item>
-        <first>zext_ln14_6_fu_136</first>
+        <first>zext_ln14_15_fu_117</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>26</item>
+          <item>25</item>
         </second>
       </item>
       <item>
-        <first>zext_ln14_fu_105</first>
+        <first>zext_ln14_2_fu_109</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>16</item>
+          <item>24</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -3256,7 +3256,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln11_store_fu_124</first>
+        <first>store_ln11_store_fu_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3272,7 +3272,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln14_1_read_read_fu_52</first>
+        <first>zext_ln14_read_read_fu_52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3293,9 +3293,10 @@
           <second>0</second>
         </first>
         <second>
-          <count>1</count>
+          <count>2</count>
           <item_version>0</item_version>
-          <item>28</item>
+          <item>27</item>
+          <item>27</item>
         </second>
       </item>
       <item>
@@ -3304,18 +3305,17 @@
           <second>0</second>
         </first>
         <second>
-          <count>2</count>
+          <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
-          <item>23</item>
+          <item>28</item>
         </second>
       </item>
     </dp_mem_port_nodes>
     <dp_reg_nodes>
-      <count>3</count>
+      <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>141</first>
+        <first>140</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3323,27 +3323,43 @@
         </second>
       </item>
       <item>
-        <first>151</first>
+        <first>147</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>7</item>
         </second>
       </item>
       <item>
-        <first>156</first>
+        <first>152</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>11</item>
+        </second>
+      </item>
+      <item>
+        <first>160</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>26</item>
         </second>
       </item>
     </dp_reg_nodes>
     <dp_regname_nodes>
-      <count>3</count>
+      <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>i_264_reg_141</first>
+        <first>R_X_addr_reg_160</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>26</item>
+        </second>
+      </item>
+      <item>
+        <first>i_305_reg_140</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3351,19 +3367,19 @@
         </second>
       </item>
       <item>
-        <first>pts_X_1_addr_reg_151</first>
+        <first>i_reg_152</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>11</item>
         </second>
       </item>
       <item>
-        <first>trunc_ln14_reg_156</first>
+        <first>zext_ln14_read_reg_147</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>7</item>
         </second>
       </item>
     </dp_regname_nodes>
@@ -3384,11 +3400,12 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>
-            <first>store</first>
+            <first>load</first>
             <second>
-              <count>1</count>
+              <count>2</count>
               <item_version>0</item_version>
-              <item>28</item>
+              <item>27</item>
+              <item>27</item>
             </second>
           </item>
         </second>
@@ -3399,18 +3416,17 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>
-            <first>load</first>
+            <first>store</first>
             <second>
-              <count>2</count>
+              <count>1</count>
               <item_version>0</item_version>
-              <item>23</item>
-              <item>23</item>
+              <item>28</item>
             </second>
           </item>
         </second>
       </item>
       <item>
-        <first>zext_ln14_1</first>
+        <first>zext_ln14</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3468,7 +3484,7 @@
         </second>
       </item>
       <item>
-        <first>23</first>
+        <first>27</first>
         <second>
           <first>666</first>
           <second>17</second>

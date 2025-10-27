@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mp_mul_4'" level="0">
-<item name = "Date">Mon Oct 20 14:41:42 2025
+<item name = "Date">Sat Oct 25 18:46:42 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.286 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.877 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">86, 133, 0.860 us, 1.330 us, 86, 133, no</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mul_5126_fu_28">mul_5126, 85, 132, 0.850 us, 1.320 us, 85, 132, no</column>
+<column name="grp_mul_6132_fu_30">mul_6132, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,21 +50,21 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 225, 3092, 7674, -</column>
+<column name="Instance">4, 16, 2127, 13969, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 14, -</column>
 <column name="Register">-, -, 3, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 7, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">~0, ~0, ~0, 3, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
-<specialColumn name="Utilization (%)">0, 1, ~0, ~0, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_mul_5126_fu_28">mul_5126, 0, 225, 3092, 7674, 0</column>
+<column name="grp_mul_6132_fu_30">mul_6132, 4, 16, 2127, 13969, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -91,7 +91,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
-<column name="grp_mul_5126_fu_28_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_mul_6132_fu_30_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -114,10 +114,14 @@
 <column name="b_address0">out, 3, ap_memory, b, array</column>
 <column name="b_ce0">out, 1, ap_memory, b, array</column>
 <column name="b_q0">in, 64, ap_memory, b, array</column>
-<column name="c_address0">out, 4, ap_memory, c, array</column>
-<column name="c_ce0">out, 1, ap_memory, c, array</column>
-<column name="c_we0">out, 1, ap_memory, c, array</column>
-<column name="c_d0">out, 64, ap_memory, c, array</column>
+<column name="c_0_address0">out, 3, ap_memory, c_0, array</column>
+<column name="c_0_ce0">out, 1, ap_memory, c_0, array</column>
+<column name="c_0_we0">out, 1, ap_memory, c_0, array</column>
+<column name="c_0_d0">out, 64, ap_memory, c_0, array</column>
+<column name="c_1_address0">out, 3, ap_memory, c_1, array</column>
+<column name="c_1_ce0">out, 1, ap_memory, c_1, array</column>
+<column name="c_1_we0">out, 1, ap_memory, c_1, array</column>
+<column name="c_1_d0">out, 64, ap_memory, c_1, array</column>
 </table>
 </item>
 </section>

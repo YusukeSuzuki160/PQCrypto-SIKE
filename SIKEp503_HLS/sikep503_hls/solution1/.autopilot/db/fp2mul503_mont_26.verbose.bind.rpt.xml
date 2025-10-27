@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_26'" level="0">
-<item name = "Date">Mon Oct 20 16:13:53 2025
+<item name = "Date">Sat Oct 25 16:49:01 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.130 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">443, 736, 4.430 us, 7.360 us, 443, 736, no</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_6117_fu_68">mp_mul_6117, 118, 191, 1.180 us, 1.910 us, 118, 191, no</column>
-<column name="grp_mp_mul_6117_fu_78">mp_mul_6117, 118, 191, 1.180 us, 1.910 us, 118, 191, no</column>
+<column name="grp_mp_mul_6117_fu_68">mp_mul_6117, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_mp_mul_6117_fu_78">mp_mul_6117, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_fp2mul503_mont_26_Pipeline_VITIS_LOOP_378_1_fu_88">fp2mul503_mont_26_Pipeline_VITIS_LOOP_378_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2mul503_mont_26_Pipeline_VITIS_LOOP_378_1160_fu_97">fp2mul503_mont_26_Pipeline_VITIS_LOOP_378_1160, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2mul503_mont_26_Pipeline_VITIS_LOOP_160_1_fu_106">fp2mul503_mont_26_Pipeline_VITIS_LOOP_160_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>

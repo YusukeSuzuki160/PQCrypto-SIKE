@@ -2110,8 +2110,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>403</mMinLatency>
-        <mMaxLatency>678</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2711,57 +2711,69 @@
         <item>
           <first>grp_mp_mul_1_fu_70 (mp_mul_1)</first>
           <second>
-            <count>3</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
+              <first>BRAM</first>
+              <second>6</second>
+            </item>
+            <item>
               <first>DSP</first>
-              <second>225</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3083</second>
+              <second>2387</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7636</second>
+              <second>18494</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_mp_mul_1_fu_80 (mp_mul_1)</first>
           <second>
-            <count>3</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
+              <first>BRAM</first>
+              <second>6</second>
+            </item>
+            <item>
               <first>DSP</first>
-              <second>225</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3083</second>
+              <second>2387</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7636</second>
+              <second>18494</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_mp_mul_6117_fu_140 (mp_mul_6117)</first>
           <second>
-            <count>3</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
+              <first>BRAM</first>
+              <second>6</second>
+            </item>
+            <item>
               <first>DSP</first>
-              <second>225</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3083</second>
+              <second>2387</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7636</second>
+              <second>18494</second>
             </item>
           </second>
         </item>

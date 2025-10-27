@@ -384,7 +384,7 @@
             <Obj>
               <type>0</type>
               <id>12</id>
-              <name>i_234</name>
+              <name>i_259</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>378</lineNumber>
@@ -1449,7 +1449,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>xor_ln381_50</name>
+              <name>xor_ln381_60</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -1488,7 +1488,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln381_50_fu_164_p2</rtlName>
+              <rtlName>xor_ln381_60_fu_164_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1663,7 +1663,7 @@
             <Obj>
               <type>0</type>
               <id>34</id>
-              <name>xor_ln381_53</name>
+              <name>xor_ln381_61</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -1702,7 +1702,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln381_53_fu_184_p2</rtlName>
+              <rtlName>xor_ln381_61_fu_184_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -1947,7 +1947,7 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>xor_ln381_52</name>
+              <name>xor_ln381_62</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -1986,7 +1986,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln381_52_fu_208_p2</rtlName>
+              <rtlName>xor_ln381_62_fu_208_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2018,7 +2018,7 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>or_ln381_19</name>
+              <name>or_ln381_21</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -2057,7 +2057,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln381_19_fu_214_p2</rtlName>
+              <rtlName>or_ln381_21_fu_214_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -3739,7 +3739,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln381_19_fu_214_p2 ( or ) </first>
+          <first>or_ln381_21_fu_214_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3808,7 +3808,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln381_50_fu_164_p2 ( xor ) </first>
+          <first>xor_ln381_60_fu_164_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3831,30 +3831,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln381_52_fu_208_p2 ( xor ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>64</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>64</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>64</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln381_53_fu_184_p2 ( xor ) </first>
+          <first>xor_ln381_61_fu_184_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3873,6 +3850,29 @@
             <item>
               <first>LUT</first>
               <second>2</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>xor_ln381_62_fu_208_p2 ( xor ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>64</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>64</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>64</second>
             </item>
           </second>
         </item>
@@ -3966,7 +3966,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_234</first>
+          <first>ap_sig_allocacmp_i_259</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4235,7 +4235,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln381_19_fu_214_p2 ( or ) </first>
+          <first>or_ln381_21_fu_214_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4259,7 +4259,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln381_50_fu_164_p2 ( xor ) </first>
+          <first>xor_ln381_60_fu_164_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4267,19 +4267,19 @@
           </second>
         </item>
         <item>
-          <first>xor_ln381_52_fu_208_p2 ( xor ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>38</item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln381_53_fu_184_p2 ( xor ) </first>
+          <first>xor_ln381_61_fu_184_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>34</item>
+          </second>
+        </item>
+        <item>
+          <first>xor_ln381_62_fu_208_p2 ( xor ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>38</item>
           </second>
         </item>
         <item>
@@ -4891,7 +4891,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln381_19_fu_214</first>
+        <first>or_ln381_21_fu_214</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4939,7 +4939,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln381_50_fu_164</first>
+        <first>xor_ln381_60_fu_164</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4947,19 +4947,19 @@
         </second>
       </item>
       <item>
-        <first>xor_ln381_52_fu_208</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>38</item>
-        </second>
-      </item>
-      <item>
-        <first>xor_ln381_53_fu_184</first>
+        <first>xor_ln381_61_fu_184</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>34</item>
+        </second>
+      </item>
+      <item>
+        <first>xor_ln381_62_fu_208</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>38</item>
         </second>
       </item>
       <item>
@@ -5003,7 +5003,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_234_load_fu_115</first>
+        <first>i_259_load_fu_115</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

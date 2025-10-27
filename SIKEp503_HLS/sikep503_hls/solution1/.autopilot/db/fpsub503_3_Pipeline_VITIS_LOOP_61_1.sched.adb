@@ -364,7 +364,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>i_65</name>
+						<name>i_81</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>61</lineNumber>
@@ -1455,7 +1455,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>tmp_233</name>
+						<name>tmp_216</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>63</lineNumber>

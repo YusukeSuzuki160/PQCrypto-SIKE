@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'eval_4_isog_40'
 ================================================================
-* Date:           Mon Oct 20 16:15:20 2025
+* Date:           Sat Oct 25 16:50:38 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
-    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
-    +---------+---------+-----------+-----------+------+------+---------+
-    |     4265|     6990|  42.650 us|  69.900 us|  4265|  6990|       no|
-    +---------+---------+-----------+-----------+------+------+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -119,14 +119,14 @@ ST_5 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503.2
 State 6 <SV = 5> <Delay = 0.00>
 ST_6 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln116 = call void @fpsub503.2, i64 %P_X_1, i64 %P_Z_1, i64 %t1_1, i64 %p503x2_1" [src/fpx.cpp:116->src/ec_isogeny.cpp:67]   --->   Operation 34 'call' 'call_ln116' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln68 = call void @fp2mul503_mont.44, i64 %t0, i64 %t0_1, i64 %coeff, i9 128, i64 %P_X_0, i64 %P_X_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 35 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 7 <SV = 6> <Delay = 1.42>
+ST_7 : Operation 35 [2/2] (1.42ns)   --->   "%call_ln68 = call void @fp2mul503_mont.44, i64 %t0, i64 %t0_1, i64 %coeff, i9 128, i64 %P_X_0, i64 %P_X_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 35 'call' 'call_ln68' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln68 = call void @fp2mul503_mont.44, i64 %t0, i64 %t0_1, i64 %coeff, i9 128, i64 %P_X_0, i64 %P_X_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:68]   --->   Operation 36 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 37 [2/2] (0.00ns)   --->   "%call_ln69 = call void @fp2mul503_mont.44, i64 %t1, i64 %t1_1, i64 %coeff, i9 256, i64 %P_Z_0, i64 %P_Z_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 37 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 9 <SV = 8> <Delay = 1.42>
+ST_9 : Operation 37 [2/2] (1.42ns)   --->   "%call_ln69 = call void @fp2mul503_mont.44, i64 %t1, i64 %t1_1, i64 %coeff, i9 256, i64 %P_Z_0, i64 %P_Z_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 37 'call' 'call_ln69' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 0.00>
 ST_10 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln69 = call void @fp2mul503_mont.44, i64 %t1, i64 %t1_1, i64 %coeff, i9 256, i64 %P_Z_0, i64 %P_Z_1, i64 %p503_1, i64 %p503p1_1" [src/ec_isogeny.cpp:69]   --->   Operation 38 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -261,14 +261,16 @@ The critical path consists of the following:
  <State 6>: 0.000ns
 The critical path consists of the following:
 
- <State 7>: 0.000ns
+ <State 7>: 1.429ns
 The critical path consists of the following:
+	'call' operation 0 bit ('call_ln68', src/ec_isogeny.cpp:68) to 'fp2mul503_mont.44' [28]  (1.429 ns)
 
  <State 8>: 0.000ns
 The critical path consists of the following:
 
- <State 9>: 0.000ns
+ <State 9>: 1.429ns
 The critical path consists of the following:
+	'call' operation 0 bit ('call_ln69', src/ec_isogeny.cpp:69) to 'fp2mul503_mont.44' [35]  (1.429 ns)
 
  <State 10>: 0.000ns
 The critical path consists of the following:

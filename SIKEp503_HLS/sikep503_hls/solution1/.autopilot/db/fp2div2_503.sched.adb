@@ -605,7 +605,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>lshr_ln5</name>
+						<name>lshr_ln</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>429</lineNumber>
@@ -1721,7 +1721,7 @@
 					<Obj>
 						<type>2</type>
 						<id>71</id>
-						<name>fp2div2_503_Pipeline_VITIS_LOOP_91_1205</name>
+						<name>fp2div2_503_Pipeline_VITIS_LOOP_91_1209</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1745,14 +1745,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_91_1205&gt;</content>
+				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_91_1209&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_33">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>76</id>
-						<name>fp2div2_503_Pipeline_VITIS_LOOP_424_1206</name>
+						<name>fp2div2_503_Pipeline_VITIS_LOOP_424_1210</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1776,7 +1776,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_424_1206&gt;</content>
+				<content>&lt;constant:fp2div2_503_Pipeline_VITIS_LOOP_424_1210&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">

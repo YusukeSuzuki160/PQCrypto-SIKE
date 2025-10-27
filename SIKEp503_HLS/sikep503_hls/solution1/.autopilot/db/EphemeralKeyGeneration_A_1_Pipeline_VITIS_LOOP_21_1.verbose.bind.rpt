@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_21_1'
 ================================================================
-* Date:           Mon Oct 20 16:13:14 2025
+* Date:           Sat Oct 25 18:34:10 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -88,15 +88,15 @@ ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/fpx.cpp:19->
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %phiQ_X_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln19 = store i4 0, i4 %i" [src/fpx.cpp:19->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 6 'store' 'store_ln19' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i25.i"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i_273 = load i4 %i" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 8 'load' 'i_273' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%icmp_ln21 = icmp_eq  i4 %i_273, i4 8" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 9 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%add_ln21 = add i4 %i_273, i4 1" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 10 'add' 'add_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i_311 = load i4 %i" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 8 'load' 'i_311' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%icmp_ln21 = icmp_eq  i4 %i_311, i4 8" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 9 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%add_ln21 = add i4 %i_311, i4 1" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 10 'add' 'add_ln21' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln21 = br i1 %icmp_ln21, void %for.inc.i25.i.split, void %for.inc.i31.i.preheader.exitStub" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 11 'br' 'br_ln21' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln21 = zext i4 %i_273" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 12 'zext' 'zext_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln21 = zext i4 %i_311" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 12 'zext' 'zext_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%phiQ_X_1_addr = getelementptr i64 %phiQ_X_1, i64 0, i64 %zext_ln21" [src/fpx.cpp:22->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 13 'getelementptr' 'phiQ_X_1_addr' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:19->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 14 'specpipeline' 'specpipeline_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84" [src/fpx.cpp:19->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 14 'specpipeline' 'specpipeline_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%speclooptripcount_ln19 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:19->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 15 'speclooptripcount' 'speclooptripcount_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 16 'specloopname' 'specloopname_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 16 'specloopname' 'specloopname_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln22 = store i64 0, i3 %phiQ_X_1_addr" [src/fpx.cpp:22->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 17 'store' 'store_ln22' <Predicate = (!icmp_ln21)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln19 = store i4 %add_ln21, i4 %i" [src/fpx.cpp:19->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 18 'store' 'store_ln19' <Predicate = (!icmp_ln21)> <Delay = 0.38>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln21 = br void %for.inc.i25.i" [src/fpx.cpp:21->src/sidh.cpp:31->src/sidh.cpp:126]   --->   Operation 19 'br' 'br_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
@@ -125,7 +125,7 @@ i                      (alloca           ) [ 01]
 specmemcore_ln0        (specmemcore      ) [ 00]
 store_ln19             (store            ) [ 00]
 br_ln0                 (br               ) [ 00]
-i_273                  (load             ) [ 00]
+i_311                  (load             ) [ 00]
 icmp_ln21              (icmp             ) [ 01]
 add_ln21               (add              ) [ 00]
 br_ln21                (br               ) [ 00]
@@ -266,7 +266,7 @@ ret_ln0                (ret              ) [ 00]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </bind>
 </comp>
 
@@ -302,7 +302,7 @@ ret_ln0                (ret              ) [ 00]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_11"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -355,14 +355,14 @@ ret_ln0                (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="59" class="1004" name="i_273_load_fu_59">
+<comp id="59" class="1004" name="i_311_load_fu_59">
 <pin_list>
 <pin id="60" dir="0" index="0" bw="4" slack="0"/>
 <pin id="61" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="i_273/1 "/>
+<opset="i_311/1 "/>
 </bind>
 </comp>
 
@@ -472,7 +472,7 @@ ret_ln0                (ret              ) [ 00]
   - Chain level:
 	State 1
 		store_ln19 : 1
-		i_273 : 1
+		i_311 : 1
 		icmp_ln21 : 2
 		add_ln21 : 2
 		br_ln21 : 3

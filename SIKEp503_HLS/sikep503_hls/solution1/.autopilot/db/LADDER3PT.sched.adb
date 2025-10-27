@@ -8059,7 +8059,7 @@
 					<Obj>
 						<type>0</type>
 						<id>191</id>
-						<name>i_268</name>
+						<name>i_299</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>319</lineNumber>
@@ -13168,37 +13168,6 @@
 					<Obj>
 						<type>2</type>
 						<id>735</id>
-						<name>fpadd503_2</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.2&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_260">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>742</id>
 						<name>fpadd503_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -13224,6 +13193,37 @@
 				</Value>
 				<const_type>6</const_type>
 				<content>&lt;constant:fpadd503.3&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_260">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>742</id>
+						<name>fpadd503_4</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:fpadd503.4&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_261">
 				<Value>
@@ -13323,130 +13323,6 @@
 					<Obj>
 						<type>2</type>
 						<id>766</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1216</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1216&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_265">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>769</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1217</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1217&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_266">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>772</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1218</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1218&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_267">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>775</id>
-						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1219</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1219&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_268">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>778</id>
 						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1220</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -13473,11 +13349,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1220&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_269">
+			<item class_id_reference="16" object_id="_265">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>781</id>
+						<id>769</id>
 						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1221</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -13504,11 +13380,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1221&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_270">
+			<item class_id_reference="16" object_id="_266">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>784</id>
+						<id>772</id>
 						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1222</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -13535,11 +13411,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1222&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_271">
+			<item class_id_reference="16" object_id="_267">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>787</id>
+						<id>775</id>
 						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1223</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -13566,11 +13442,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1223&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_272">
+			<item class_id_reference="16" object_id="_268">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>790</id>
+						<id>778</id>
 						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1224</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -13596,6 +13472,130 @@
 				</Value>
 				<const_type>6</const_type>
 				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1224&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_269">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>781</id>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1225</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1225&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_270">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>784</id>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1226</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1226&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_271">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>787</id>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1227</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1227&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_272">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>790</id>
+						<name>LADDER3PT_Pipeline_VITIS_LOOP_13_1228</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:LADDER3PT_Pipeline_VITIS_LOOP_13_1228&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_273">
 				<Value>
@@ -14129,7 +14129,7 @@
 					<Obj>
 						<type>2</type>
 						<id>938</id>
-						<name>fp2sqr503_mont_5</name>
+						<name>fp2sqr503_mont_6</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14153,7 +14153,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2sqr503_mont.5&gt;</content>
+				<content>&lt;constant:fp2sqr503_mont.6&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_291">
 				<Value>
@@ -14191,7 +14191,7 @@
 					<Obj>
 						<type>2</type>
 						<id>957</id>
-						<name>fpadd503_245_1</name>
+						<name>fpadd503_2_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14215,14 +14215,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.245.1&gt;</content>
+				<content>&lt;constant:fpadd503.2.1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_293">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>964</id>
-						<name>fp2mul503_mont_126_3</name>
+						<name>fp2mul503_mont_226_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14246,14 +14246,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.126.3&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.226.3&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_294">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>975</id>
-						<name>fp2mul503_mont_125</name>
+						<name>fp2mul503_mont_225</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14277,7 +14277,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.125&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.225&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_295">
 				<Value>
@@ -14315,7 +14315,7 @@
 					<Obj>
 						<type>2</type>
 						<id>995</id>
-						<name>fp2mul503_mont_7</name>
+						<name>fp2mul503_mont_8</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14339,7 +14339,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.7&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.8&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_297">
 				<Value>
@@ -14377,7 +14377,7 @@
 					<Obj>
 						<type>2</type>
 						<id>1014</id>
-						<name>fpadd503_245</name>
+						<name>fpadd503_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14401,7 +14401,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.245&gt;</content>
+				<content>&lt;constant:fpadd503.2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_299">
 				<Value>
@@ -14439,7 +14439,7 @@
 					<Obj>
 						<type>2</type>
 						<id>1030</id>
-						<name>fp2mul503_mont_124</name>
+						<name>fp2mul503_mont_224</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14463,14 +14463,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.124&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.224&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_301">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>1036</id>
-						<name>fp2sqr503_mont_4</name>
+						<name>fp2sqr503_mont_5</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14494,14 +14494,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2sqr503_mont.4&gt;</content>
+				<content>&lt;constant:fp2sqr503_mont.5&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_302">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>1043</id>
-						<name>fp2mul503_mont_46</name>
+						<name>fp2mul503_mont_47</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -14525,7 +14525,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.46&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.47&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -20881,8 +20881,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1098857</mMinLatency>
-			<mMaxLatency>1802357</mMaxLatency>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -20928,8 +20928,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>250</mMinTripCount>
 			<mMaxTripCount>250</mMaxTripCount>
-			<mMinLatency>1098500</mMinLatency>
-			<mMaxLatency>1802000</mMaxLatency>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

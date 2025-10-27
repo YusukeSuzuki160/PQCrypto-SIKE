@@ -73,7 +73,7 @@ wire   [0:0] carry_63_fu_240_p2;
 wire    ap_loop_init;
 wire   [63:0] zext_ln28_fu_157_p1;
 wire   [63:0] zext_ln39_fu_138_p1;
-reg   [3:0] i_113_fu_56;
+reg   [3:0] i_133_fu_56;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    c_0_ce0_local;
 reg   [1:0] c_0_address0_local;
@@ -92,7 +92,7 @@ wire   [63:0] or_ln105_fu_188_p2;
 wire   [63:0] xor_ln105_22_fu_194_p2;
 wire   [63:0] sub_ln95_fu_208_p2;
 wire   [63:0] or_ln95_fu_214_p2;
-wire   [0:0] tmp_244_fu_220_p3;
+wire   [0:0] tmp_193_fu_220_p3;
 wire   [0:0] xor_ln41_fu_228_p2;
 wire   [0:0] and_ln41_fu_234_p2;
 wire   [0:0] tmp_fu_200_p3;
@@ -111,7 +111,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_113_fu_56 = 4'd0;
+#0 i_133_fu_56 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -172,9 +172,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_113_fu_56 <= 4'd0;
+        i_133_fu_56 <= 4'd0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_113_fu_56 <= add_ln39_reg_272;
+        i_133_fu_56 <= add_ln39_reg_272;
     end
 end
 
@@ -233,7 +233,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_113_fu_56;
+        ap_sig_allocacmp_i = i_133_fu_56;
     end
 end
 
@@ -381,7 +381,7 @@ assign sub_ln95_fu_208_p2 = (64'd0 - tempReg_fu_170_p2);
 
 assign tempReg_fu_170_p2 = (select_ln41_fu_163_p3 - p503x2_1_q0);
 
-assign tmp_244_fu_220_p3 = or_ln95_fu_214_p2[32'd63];
+assign tmp_193_fu_220_p3 = or_ln95_fu_214_p2[32'd63];
 
 assign tmp_fu_200_p3 = xor_ln105_22_fu_194_p2[32'd63];
 
@@ -393,7 +393,7 @@ assign xor_ln105_22_fu_194_p2 = (select_ln41_fu_163_p3 ^ or_ln105_fu_188_p2);
 
 assign xor_ln105_fu_176_p2 = (select_ln41_fu_163_p3 ^ p503x2_1_q0);
 
-assign xor_ln41_fu_228_p2 = (tmp_244_fu_220_p3 ^ 1'd1);
+assign xor_ln41_fu_228_p2 = (tmp_193_fu_220_p3 ^ 1'd1);
 
 assign zext_ln28_fu_157_p1 = lshr_ln28_3_fu_147_p4;
 

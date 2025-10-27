@@ -59,7 +59,7 @@ attribute shreg_extract : string;
     signal ap_loop_exit_ready : STD_LOGIC;
     signal ap_ready_int : STD_LOGIC;
     signal carry_reg_99 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_248_reg_247 : STD_LOGIC_VECTOR (3 downto 0);
+    signal i_268_reg_247 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
     signal icmp_ln378_reg_252 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_loop_init : STD_LOGIC;
@@ -68,7 +68,7 @@ attribute shreg_extract : string;
     signal zext_ln378_fu_149_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal i_fu_56 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln378_fu_124_p2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_sig_allocacmp_i_248 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_sig_allocacmp_i_268 : STD_LOGIC_VECTOR (3 downto 0);
     signal a_0_ce0_local : STD_LOGIC;
     signal a_1_ce0_local : STD_LOGIC;
     signal t1_we0_local : STD_LOGIC;
@@ -209,7 +209,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
-                i_248_reg_247 <= ap_sig_allocacmp_i_248;
+                i_268_reg_247 <= ap_sig_allocacmp_i_268;
                 icmp_ln378_reg_252 <= icmp_ln378_fu_118_p2;
             end if;
         end if;
@@ -248,7 +248,7 @@ begin
         end if; 
     end process;
 
-    add_ln378_fu_124_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_248) + unsigned(ap_const_lv4_1));
+    add_ln378_fu_124_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_268) + unsigned(ap_const_lv4_1));
     add_ln381_fu_163_p2 <= std_logic_vector(unsigned(a_1_q0) + unsigned(tempReg_fu_157_p2));
     and_ln381_fu_214_p2 <= (xor_ln381_s_fu_206_p3 and a_0_q0);
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
@@ -317,17 +317,17 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_248_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_loop_init, ap_block_pp0_stage0, i_fu_56)
+    ap_sig_allocacmp_i_268_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_loop_init, ap_block_pp0_stage0, i_fu_56)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            ap_sig_allocacmp_i_248 <= ap_const_lv4_0;
+            ap_sig_allocacmp_i_268 <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i_248 <= i_fu_56;
+            ap_sig_allocacmp_i_268 <= i_fu_56;
         end if; 
     end process;
 
     bit_sel_fu_188_p3 <= tempReg_fu_157_p2(63 downto 63);
-    icmp_ln378_fu_118_p2 <= "1" when (ap_sig_allocacmp_i_248 = ap_const_lv4_8) else "0";
+    icmp_ln378_fu_118_p2 <= "1" when (ap_sig_allocacmp_i_268 = ap_const_lv4_8) else "0";
     or_ln381_61_fu_226_p2 <= (xor_ln381_173_fu_220_p2 or and_ln381_fu_214_p2);
     or_ln381_fu_182_p2 <= (xor_ln381_fu_170_p2 or xor_ln381_171_fu_176_p2);
     t1_address0 <= zext_ln378_fu_149_p1(3 - 1 downto 0);
@@ -355,14 +355,14 @@ begin
     end process;
 
     tempReg_fu_157_p2 <= std_logic_vector(unsigned(a_0_q0) + unsigned(zext_ln381_fu_153_p1));
-    tmp_cast_fu_130_p3 <= (ap_const_lv1_1 & ap_sig_allocacmp_i_248);
+    tmp_cast_fu_130_p3 <= (ap_const_lv1_1 & ap_sig_allocacmp_i_268);
     trunc_ln381_fu_202_p1 <= tempReg_fu_157_p2(63 - 1 downto 0);
     xor_ln381_171_fu_176_p2 <= (tempReg_fu_157_p2 xor a_1_q0);
     xor_ln381_173_fu_220_p2 <= (or_ln381_fu_182_p2 xor add_ln381_fu_163_p2);
     xor_ln381_176_fu_196_p2 <= (bit_sel_fu_188_p3 xor ap_const_lv1_1);
     xor_ln381_fu_170_p2 <= (tempReg_fu_157_p2 xor add_ln381_fu_163_p2);
     xor_ln381_s_fu_206_p3 <= (xor_ln381_176_fu_196_p2 & trunc_ln381_fu_202_p1);
-    zext_ln378_fu_149_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_248_reg_247),64));
+    zext_ln378_fu_149_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_268_reg_247),64));
     zext_ln381_26_fu_138_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_cast_fu_130_p3),64));
     zext_ln381_fu_153_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(carry_reg_99),64));
 end behav;

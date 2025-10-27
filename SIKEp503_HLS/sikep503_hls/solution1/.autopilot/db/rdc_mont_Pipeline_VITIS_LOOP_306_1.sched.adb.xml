@@ -34,7 +34,7 @@ newFuncRoot:0 %i = alloca i32 1
 
 <Node id="3" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 207, i64 18446744073709551615
+newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -172,7 +172,7 @@ for.inc.split:1 %mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln306
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:2 %specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.split:2 %specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln302"/></StgValue>
@@ -204,7 +204,7 @@ for.inc.split:3 %speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_Spec
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:4 %specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38
+for.inc.split:4 %specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln306"/></StgValue>

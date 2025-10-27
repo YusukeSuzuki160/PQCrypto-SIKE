@@ -404,7 +404,7 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>i_225</name>
+              <name>i_267</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>64</lineNumber>
@@ -589,7 +589,7 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>i_225_write_ln64</name>
+              <name>i_267_write_ln64</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>64</lineNumber>
@@ -1716,7 +1716,7 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>tmp_5</name>
+              <name>tmp_7</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>83</lineNumber>
@@ -1741,7 +1741,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_5_fu_262_p3</rtlName>
+              <rtlName>tmp_7_fu_262_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1888,7 +1888,7 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>tmp_6</name>
+              <name>tmp_8</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>91</lineNumber>
@@ -1913,7 +1913,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_6_fu_306_p3</rtlName>
+              <rtlName>tmp_8_fu_306_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3498,7 +3498,7 @@
             <Obj>
               <type>0</type>
               <id>76</id>
-              <name>i_225_write_ln64</name>
+              <name>i_267_write_ln64</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>64</lineNumber>
@@ -6617,7 +6617,7 @@
           </second>
         </item>
         <item>
-          <first>i_225_fu_94</first>
+          <first>i_267_fu_94</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -7293,7 +7293,7 @@
           </second>
         </item>
         <item>
-          <first>i_225_fu_94</first>
+          <first>i_267_fu_94</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8725,7 +8725,7 @@
         </second>
       </item>
       <item>
-        <first>i_225_fu_94</first>
+        <first>i_267_fu_94</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8829,7 +8829,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_5_fu_262</first>
+        <first>tmp_7_fu_262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8837,7 +8837,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_6_fu_306</first>
+        <first>tmp_8_fu_306</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9373,7 +9373,7 @@
         </second>
       </item>
       <item>
-        <first>i_225_reg_411</first>
+        <first>i_267_reg_411</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

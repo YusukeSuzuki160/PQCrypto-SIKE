@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_11_Pipeline_VITIS_LOOP_306_1'
 ================================================================
-* Date:           Mon Oct 20 16:17:34 2025
+* Date:           Sat Oct 25 16:53:05 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -94,9 +94,9 @@ ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln306 = icmp_eq  i4 %i_24, i4
 ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln306 = add i4 %i_24, i4 1" [src/generic/fp_generic.cpp:306]   --->   Operation 11 'add' 'add_ln306' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln306 = br i1 %icmp_ln306, void %for.inc.split, void %VITIS_LOOP_314_3.preheader.exitStub" [src/generic/fp_generic.cpp:306]   --->   Operation 12 'br' 'br_ln306' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%trunc_ln306 = trunc i4 %i_24" [src/generic/fp_generic.cpp:306]   --->   Operation 13 'trunc' 'trunc_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:302]   --->   Operation 14 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57" [src/generic/fp_generic.cpp:302]   --->   Operation 14 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:302]   --->   Operation 15 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [src/generic/fp_generic.cpp:306]   --->   Operation 16 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_47" [src/generic/fp_generic.cpp:306]   --->   Operation 16 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i2 @_ssdm_op_PartSelect.i2.i4.i32.i32, i4 %i_24, i32 1, i32 2" [src/generic/fp_generic.cpp:302]   --->   Operation 17 'partselect' 'lshr_ln' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln302 = zext i2 %lshr_ln" [src/generic/fp_generic.cpp:302]   --->   Operation 18 'zext' 'zext_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mc_0_addr = getelementptr i64 %mc_0, i64 0, i64 %zext_ln302" [src/generic/fp_generic.cpp:308]   --->   Operation 19 'getelementptr' 'mc_0_addr' <Predicate = (!icmp_ln306)> <Delay = 0.00>
@@ -121,7 +121,7 @@ The critical path consists of the following:
 	'store' operation 0 bit ('store_ln302', src/generic/fp_generic.cpp:302) of constant 0 on local variable 'i', src/generic/fp_generic.cpp:302 [6]  (0.387 ns)
 	'load' operation 4 bit ('i', src/generic/fp_generic.cpp:306) on local variable 'i', src/generic/fp_generic.cpp:302 [9]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln306', src/generic/fp_generic.cpp:306) [10]  (0.708 ns)
-	'store' operation 0 bit ('store_ln308', src/generic/fp_generic.cpp:308) of constant 0 on array 'mc_1' [27]  (0.714 ns)
+	'store' operation 0 bit ('store_ln308', src/generic/fp_generic.cpp:308) of constant 0 on array 'mc_0' [24]  (0.714 ns)
 
 
 ============================================================

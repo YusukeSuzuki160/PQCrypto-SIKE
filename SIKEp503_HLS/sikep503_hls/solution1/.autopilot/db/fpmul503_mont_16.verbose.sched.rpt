@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpmul503_mont_16'
 ================================================================
-* Date:           Mon Oct 20 14:37:44 2025
+* Date:           Sat Oct 25 16:54:17 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      217|      378|  2.170 us|  3.780 us|  217|  378|       no|
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -101,14 +101,14 @@ ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   -
 State 2 <SV = 1> <Delay = 1.42>
 ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%p_load = load i5 %empty"   --->   Operation 15 'load' 'p_load' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 16 [1/1] (0.70ns)   --->   "%exitcond1 = icmp_eq  i5 %p_load, i5 16"   --->   Operation 16 'icmp' 'exitcond1' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 17 [1/1] (0.70ns)   --->   "%empty_169 = add i5 %p_load, i5 1"   --->   Operation 17 'add' 'empty_169' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.70ns)   --->   "%empty_176 = add i5 %p_load, i5 1"   --->   Operation 17 'add' 'empty_176' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond1, void %memset.loop.split, void %split"   --->   Operation 18 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%p_cast = zext i5 %p_load"   --->   Operation 19 'zext' 'p_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102"   --->   Operation 20 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57"   --->   Operation 20 'specpipeline' 'specpipeline_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%temp_addr = getelementptr i64 %temp, i64 0, i64 %p_cast"   --->   Operation 22 'getelementptr' 'temp_addr' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i4 %temp_addr"   --->   Operation 23 'store' 'store_ln0' <Predicate = (!exitcond1)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 24 [1/1] (0.38ns)   --->   "%store_ln0 = store i5 %empty_169, i5 %empty"   --->   Operation 24 'store' 'store_ln0' <Predicate = (!exitcond1)> <Delay = 0.38>
+ST_2 : Operation 24 [1/1] (0.38ns)   --->   "%store_ln0 = store i5 %empty_176, i5 %empty"   --->   Operation 24 'store' 'store_ln0' <Predicate = (!exitcond1)> <Delay = 0.38>
 ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   --->   Operation 25 'br' 'br_ln0' <Predicate = (!exitcond1)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 0.00>

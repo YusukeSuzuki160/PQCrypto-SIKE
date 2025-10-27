@@ -340,7 +340,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_270</name>
+						<name>i_310</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>49</lineNumber>
@@ -5195,7 +5195,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_270_load_fu_144</first>
+			<first>i_310_load_fu_144</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5369,7 +5369,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_270_reg_274</first>
+			<first>i_310_reg_274</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

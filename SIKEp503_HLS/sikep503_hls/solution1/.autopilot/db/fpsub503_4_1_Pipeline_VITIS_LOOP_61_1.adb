@@ -407,7 +407,7 @@
             <Obj>
               <type>0</type>
               <id>13</id>
-              <name>i_64</name>
+              <name>i_80</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>61</lineNumber>
@@ -1609,7 +1609,7 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>tmp_232</name>
+              <name>tmp_215</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>63</lineNumber>
@@ -1634,7 +1634,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_232_fu_206_p3</rtlName>
+              <rtlName>tmp_215_fu_206_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3897,7 +3897,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_64</first>
+          <first>ap_sig_allocacmp_i_80</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4963,7 +4963,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_232_fu_206</first>
+        <first>tmp_215_fu_206</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5051,7 +5051,7 @@
       <count>5</count>
       <item_version>0</item_version>
       <item>
-        <first>i_64_load_fu_116</first>
+        <first>i_80_load_fu_116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

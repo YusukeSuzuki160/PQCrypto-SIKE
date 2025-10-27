@@ -95,7 +95,7 @@ wire   [63:0] p_cast_fu_109_p1;
 wire    ap_CS_fsm_state2;
 wire   [0:0] exitcond1_fu_97_p2;
 reg   [4:0] empty_fu_48;
-wire   [4:0] empty_156_fu_103_p2;
+wire   [4:0] empty_154_fu_103_p2;
 reg    temp_we0_local;
 reg    temp_ce0_local;
 reg   [5:0] ap_NS_fsm;
@@ -202,7 +202,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
         empty_fu_48 <= 5'd0;
     end else if (((1'b1 == ap_CS_fsm_state2) & (exitcond1_fu_97_p2 == 1'd0))) begin
-        empty_fu_48 <= empty_156_fu_103_p2;
+        empty_fu_48 <= empty_154_fu_103_p2;
     end
 end
 
@@ -370,7 +370,7 @@ assign coeff_address0 = grp_mp_mul_59_fu_69_coeff_address0;
 
 assign coeff_ce0 = grp_mp_mul_59_fu_69_coeff_ce0;
 
-assign empty_156_fu_103_p2 = (empty_fu_48 + 5'd1);
+assign empty_154_fu_103_p2 = (empty_fu_48 + 5'd1);
 
 assign exitcond1_fu_97_p2 = ((empty_fu_48 == 5'd16) ? 1'b1 : 1'b0);
 

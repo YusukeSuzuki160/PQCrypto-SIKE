@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1244'
 ================================================================
-* Date:           Mon Oct 20 16:15:20 2025
+* Date:           Sat Oct 25 18:34:55 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -84,33 +84,33 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.58>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 1.48>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_X, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %pts_X, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%npts_7_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %npts_7"   --->   Operation 8 'read' 'npts_7_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 0, i4 %i" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 9 'store' 'store_ln11' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i.i332"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i_279 = load i4 %i" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 11 'load' 'i_279' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%icmp_ln13 = icmp_eq  i4 %i_279, i4 8" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 12 'icmp' 'icmp_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 13 [1/1] (0.70ns)   --->   "%add_ln13 = add i4 %i_279, i4 1" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 13 'add' 'add_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %icmp_ln13, void %for.inc.i.i332.split, void %for.inc.i10.i341.preheader.exitStub" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 14 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %npts_7_read, i4 %i_279" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 15 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln13)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln14_13 = zext i7 %tmp_s" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 16 'zext' 'zext_ln14_13' <Predicate = (!icmp_ln13)> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%pts_X_addr = getelementptr i64 %pts_X, i64 0, i64 %zext_ln14_13" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 17 'getelementptr' 'pts_X_addr' <Predicate = (!icmp_ln13)> <Delay = 0.00>
-ST_1 : Operation 18 [2/2] (1.20ns)   --->   "%pts_X_load = load i7 %pts_X_addr" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 18 'load' 'pts_X_load' <Predicate = (!icmp_ln13)> <Delay = 1.20> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 112> <RAM>
-ST_1 : Operation 19 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 %add_ln13, i4 %i" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 19 'store' 'store_ln11' <Predicate = (!icmp_ln13)> <Delay = 0.38>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%npts_5_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %npts_5"   --->   Operation 8 'read' 'npts_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 0, i4 %i" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 9 'store' 'store_ln11' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i.i295"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i_321 = load i4 %i" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 11 'load' 'i_321' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%icmp_ln13 = icmp_eq  i4 %i_321, i4 8" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 12 'icmp' 'icmp_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.70ns)   --->   "%add_ln13 = add i4 %i_321, i4 1" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 13 'add' 'add_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %icmp_ln13, void %for.inc.i.i295.split, void %for.inc.i10.i.preheader.exitStub" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 14 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln13 = zext i4 %i_321" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 15 'zext' 'zext_ln13' <Predicate = (!icmp_ln13)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%R_X_addr = getelementptr i64 %R_X, i64 0, i64 %zext_ln13" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 16 'getelementptr' 'R_X_addr' <Predicate = (!icmp_ln13)> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (0.71ns)   --->   "%R_X_load = load i4 %R_X_addr" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 17 'load' 'R_X_load' <Predicate = (!icmp_ln13)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln11 = store i4 %add_ln13, i4 %i" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 18 'store' 'store_ln11' <Predicate = (!icmp_ln13)> <Delay = 0.38>
 ST_1 : Operation 28 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 28 'ret' 'ret_ln0' <Predicate = (icmp_ln13)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 1.91>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln13 = zext i4 %i_279" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 20 'zext' 'zext_ln13' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 21 'specpipeline' 'specpipeline_ln11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 23 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/2] ( I:1.20ns O:1.20ns )   --->   "%pts_X_load = load i7 %pts_X_addr" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 24 'load' 'pts_X_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 112> <RAM>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%R_X_addr = getelementptr i64 %R_X, i64 0, i64 %zext_ln13" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 25 'getelementptr' 'R_X_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln14 = store i64 %pts_X_load, i4 %R_X_addr" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 26 'store' 'store_ln14' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln13 = br void %for.inc.i.i332" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165]   --->   Operation 27 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %npts_5_read, i4 %i_321" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 19 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln14_12 = zext i7 %tmp_s" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 20 'zext' 'zext_ln14_12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%pts_X_addr = getelementptr i64 %pts_X, i64 0, i64 %zext_ln14_12" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 21 'getelementptr' 'pts_X_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 22 'specpipeline' 'specpipeline_ln11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 23 'speclooptripcount' 'speclooptripcount_ln11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 24 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/2] ( I:0.71ns O:0.71ns )   --->   "%R_X_load = load i4 %R_X_addr" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 25 'load' 'R_X_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_2 : Operation 26 [1/1] ( I:1.20ns O:1.20ns )   --->   "%store_ln14 = store i64 %R_X_load, i7 %pts_X_addr" [src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 26 'store' 'store_ln14' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 112> <RAM>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln13 = br void %for.inc.i.i295" [src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147]   --->   Operation 27 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -118,17 +118,17 @@ ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln13 = br void %for.inc.i.i332"
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 1.587ns
+ <State 1>: 1.482ns
 The critical path consists of the following:
-	'store' operation 0 bit ('store_ln11', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165) of constant 0 on local variable 'i', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165 [8]  (0.387 ns)
-	'load' operation 4 bit ('i', src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:165) on local variable 'i', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:165 [11]  (0.000 ns)
-	'getelementptr' operation 7 bit ('pts_X_addr', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165) [19]  (0.000 ns)
-	'load' operation 64 bit ('pts_X_load', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165) on array 'pts_X' [23]  (1.200 ns)
+	'store' operation 0 bit ('store_ln11', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147) of constant 0 on local variable 'i', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147 [8]  (0.387 ns)
+	'load' operation 4 bit ('i', src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147) on local variable 'i', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147 [11]  (0.000 ns)
+	'add' operation 4 bit ('add_ln13', src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147) [13]  (0.708 ns)
+	'store' operation 0 bit ('store_ln11', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147) of variable 'add_ln13', src/fpx.cpp:13->src/fpx.cpp:91->src/sidh.cpp:147 on local variable 'i', src/fpx.cpp:11->src/fpx.cpp:91->src/sidh.cpp:147 [26]  (0.387 ns)
 
  <State 2>: 1.914ns
 The critical path consists of the following:
-	'load' operation 64 bit ('pts_X_load', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165) on array 'pts_X' [23]  (1.200 ns)
-	'store' operation 0 bit ('store_ln14', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165) of variable 'pts_X_load', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:165 on array 'R_X' [25]  (0.714 ns)
+	'load' operation 64 bit ('R_X_load', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147) on array 'R_X' [24]  (0.714 ns)
+	'store' operation 0 bit ('store_ln14', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147) of variable 'R_X_load', src/fpx.cpp:14->src/fpx.cpp:91->src/sidh.cpp:147 on array 'pts_X' [25]  (1.200 ns)
 
 
 ============================================================

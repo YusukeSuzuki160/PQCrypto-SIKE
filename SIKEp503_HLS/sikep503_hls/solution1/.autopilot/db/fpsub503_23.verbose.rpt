@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpsub503_23'
 ================================================================
-* Date:           Mon Oct 20 14:39:03 2025
+* Date:           Sat Oct 25 18:43:22 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -198,7 +198,7 @@ ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%borrow_loc_load = load i1 %borrow_l
 ST_3 : Operation 9 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fpsub503.23_Pipeline_VITIS_LOOP_68_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
-ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_X, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_Z, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 13 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpsub503.23_Pipeline_VITIS_LOOP_68_2, i64 %c, i1 %borrow_loc_load, i64 %p503x2_1"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
@@ -470,10 +470,10 @@ ret_ln72        (ret        ) [ 00000]
 |----------|------------------------------------------------|---------|---------|---------|
 | Operation|                 Functional Unit                |  Delay  |    FF   |   LUT   |
 |----------|------------------------------------------------|---------|---------|---------|
-|   call   | grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28 |  0.774  |    19   |   581   |
+|   call   | grp_fpsub503_23_Pipeline_VITIS_LOOP_61_1_fu_28 |  0.774  |    79   |   581   |
 |          | grp_fpsub503_23_Pipeline_VITIS_LOOP_68_2_fu_39 |  0.774  |    76   |   697   |
 |----------|------------------------------------------------|---------|---------|---------|
-|   Total  |                                                |  1.548  |    95   |   1278  |
+|   Total  |                                                |  1.548  |   155   |   1278  |
 |----------|------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -501,10 +501,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    1   |   95   |  1278  |
+|  Function |    1   |   155  |  1278  |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |
 |  Register |    -   |    1   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    1   |   96   |  1278  |
+|   Total   |    1   |   156  |  1278  |
 +-----------+--------+--------+--------+

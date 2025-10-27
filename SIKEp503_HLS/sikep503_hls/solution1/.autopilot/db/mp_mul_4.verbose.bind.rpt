@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_4'
 ================================================================
-* Date:           Mon Oct 20 16:18:17 2025
+* Date:           Sat Oct 25 18:41:07 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.877 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      118|      191|  1.180 us|  1.910 us|  118|  191|       no|
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                    |          |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |      Instance      |  Module  |   min   |   max   |    min   |    max   | min | max |   Type  |
         +--------------------+----------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_mul_5126_fu_28  |mul_5126  |      117|      190|  1.170 us|  1.900 us|  117|  190|       no|
+        |grp_mul_6132_fu_30  |mul_6132  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
         +--------------------+----------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -80,16 +80,17 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 1.42>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 3 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.5126, i64 %a, i32 %a_offset_read, i64 %b, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 4 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 4 [2/2] (1.42ns)   --->   "%call_ln296 = call void @mul.6132, i64 %a, i32 %a_offset_read, i64 %b, i64 %c_0, i64 %c_1" [src/generic/fp_generic.cpp:296]   --->   Operation 4 'call' 'call_ln296' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln296 = call void @mul.5126, i64 %a, i32 %a_offset_read, i64 %b, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 8 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 9 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln296 = call void @mul.6132, i64 %a, i32 %a_offset_read, i64 %b, i64 %c_0, i64 %c_1" [src/generic/fp_generic.cpp:296]   --->   Operation 9 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_generic.cpp:297]   --->   Operation 10 'ret' 'ret_ln297' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -106,7 +107,8 @@ Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ a_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ b]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[0]; IO mode=ap_memory:ce=0
+Port [ c_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[0]; IO mode=ap_memory:ce=0
+Port [ c_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[0]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -114,6 +116,7 @@ Port [ c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0
 <LifeTime>
 <method=bitvector/>
 a_offset_read   (read       ) [ 001]
+specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
 specmemcore_ln0 (specmemcore) [ 000]
@@ -153,22 +156,23 @@ ret_ln297       (ret        ) [ 000]
 </bind>
 </comp>
 
-<comp id="6" class="1000" name="c">
+<comp id="6" class="1000" name="c_0">
 <pin_list>
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="c"/><MemPortTyVec>0 </MemPortTyVec>
+<StgValue><ssdm name="c_0"/><MemPortTyVec>0 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
 
-<comp id="8" class="1001" name="const_8">
+<comp id="8" class="1000" name="c_1">
 <pin_list>
 <pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+<StgValue><ssdm name="c_1"/><MemPortTyVec>0 </MemPortTyVec>
+</StgValue>
 </bind>
 </comp>
 
@@ -177,16 +181,16 @@ ret_ln297       (ret        ) [ 000]
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="mul.5126"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
 </bind>
 </comp>
 
 <comp id="12" class="1001" name="const_12">
 <pin_list>
-<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+<StgValue><ssdm name="mul.6132"/></StgValue>
 </bind>
 </comp>
 
@@ -195,7 +199,7 @@ ret_ln297       (ret        ) [ 000]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
 </bind>
 </comp>
 
@@ -226,11 +230,20 @@ ret_ln297       (ret        ) [ 000]
 </bind>
 </comp>
 
-<comp id="22" class="1004" name="a_offset_read_read_fu_22">
+<comp id="22" class="1001" name="const_22">
 <pin_list>
-<pin id="23" dir="0" index="0" bw="32" slack="0"/>
-<pin id="24" dir="0" index="1" bw="32" slack="0"/>
-<pin id="25" dir="1" index="2" bw="32" slack="0"/>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1004" name="a_offset_read_read_fu_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="32" slack="0"/>
+<pin id="26" dir="0" index="1" bw="32" slack="0"/>
+<pin id="27" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -238,14 +251,15 @@ ret_ln297       (ret        ) [ 000]
 </bind>
 </comp>
 
-<comp id="28" class="1004" name="grp_mul_5126_fu_28">
+<comp id="30" class="1004" name="grp_mul_6132_fu_30">
 <pin_list>
-<pin id="29" dir="0" index="0" bw="0" slack="0"/>
-<pin id="30" dir="0" index="1" bw="64" slack="0"/>
-<pin id="31" dir="0" index="2" bw="32" slack="0"/>
-<pin id="32" dir="0" index="3" bw="64" slack="0"/>
-<pin id="33" dir="0" index="4" bw="64" slack="0"/>
-<pin id="34" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="31" dir="0" index="0" bw="0" slack="0"/>
+<pin id="32" dir="0" index="1" bw="64" slack="0"/>
+<pin id="33" dir="0" index="2" bw="32" slack="0"/>
+<pin id="34" dir="0" index="3" bw="64" slack="0"/>
+<pin id="35" dir="0" index="4" bw="64" slack="0"/>
+<pin id="36" dir="0" index="5" bw="64" slack="0"/>
+<pin id="37" dir="1" index="6" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -253,10 +267,10 @@ ret_ln297       (ret        ) [ 000]
 </bind>
 </comp>
 
-<comp id="40" class="1005" name="a_offset_read_reg_40">
+<comp id="44" class="1005" name="a_offset_read_reg_44">
 <pin_list>
-<pin id="41" dir="0" index="0" bw="32" slack="1"/>
-<pin id="42" dir="1" index="1" bw="32" slack="1"/>
+<pin id="45" dir="0" index="0" bw="32" slack="1"/>
+<pin id="46" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="a_offset_read "/>
@@ -266,23 +280,25 @@ ret_ln297       (ret        ) [ 000]
 </comp_list>
 
 <net_list>
-<net id="26"><net_src comp="8" pin="0"/><net_sink comp="22" pin=0"/></net>
+<net id="28"><net_src comp="10" pin="0"/><net_sink comp="24" pin=0"/></net>
 
-<net id="27"><net_src comp="2" pin="0"/><net_sink comp="22" pin=1"/></net>
+<net id="29"><net_src comp="2" pin="0"/><net_sink comp="24" pin=1"/></net>
 
-<net id="35"><net_src comp="10" pin="0"/><net_sink comp="28" pin=0"/></net>
+<net id="38"><net_src comp="12" pin="0"/><net_sink comp="30" pin=0"/></net>
 
-<net id="36"><net_src comp="0" pin="0"/><net_sink comp="28" pin=1"/></net>
+<net id="39"><net_src comp="0" pin="0"/><net_sink comp="30" pin=1"/></net>
 
-<net id="37"><net_src comp="22" pin="2"/><net_sink comp="28" pin=2"/></net>
+<net id="40"><net_src comp="24" pin="2"/><net_sink comp="30" pin=2"/></net>
 
-<net id="38"><net_src comp="4" pin="0"/><net_sink comp="28" pin=3"/></net>
+<net id="41"><net_src comp="4" pin="0"/><net_sink comp="30" pin=3"/></net>
 
-<net id="39"><net_src comp="6" pin="0"/><net_sink comp="28" pin=4"/></net>
+<net id="42"><net_src comp="6" pin="0"/><net_sink comp="30" pin=4"/></net>
 
-<net id="43"><net_src comp="22" pin="2"/><net_sink comp="40" pin=0"/></net>
+<net id="43"><net_src comp="8" pin="0"/><net_sink comp="30" pin=5"/></net>
 
-<net id="44"><net_src comp="40" pin="1"/><net_sink comp="28" pin=2"/></net>
+<net id="47"><net_src comp="24" pin="2"/><net_sink comp="44" pin=0"/></net>
+
+<net id="48"><net_src comp="44" pin="1"/><net_sink comp="30" pin=2"/></net>
 
 </net_list>
 
@@ -291,7 +307,8 @@ ret_ln297       (ret        ) [ 000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: c | {1 2 }
+	Port: c_0 | {1 2 }
+	Port: c_1 | {1 2 }
  - Input state : 
 	Port: mp_mul.4 : a | {1 2 }
 	Port: mp_mul.4 : a_offset | {1 }
@@ -306,15 +323,15 @@ ret_ln297       (ret        ) [ 000]
 ============================================================
 
 * Functional unit list:
-|----------|--------------------------|---------|---------|---------|---------|
-| Operation|      Functional Unit     |   DSP   |  Delay  |    FF   |   LUT   |
-|----------|--------------------------|---------|---------|---------|---------|
-|   call   |    grp_mul_5126_fu_28    |    50   | 4.38843 |   2536  |   4122  |
-|----------|--------------------------|---------|---------|---------|---------|
-|   read   | a_offset_read_read_fu_22 |    0    |    0    |    0    |    0    |
-|----------|--------------------------|---------|---------|---------|---------|
-|   Total  |                          |    50   | 4.38843 |   2536  |   4122  |
-|----------|--------------------------|---------|---------|---------|---------|
+|----------|--------------------------|---------|---------|---------|---------|---------|
+| Operation|      Functional Unit     |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|--------------------------|---------|---------|---------|---------|---------|
+|   call   |    grp_mul_6132_fu_30    |    4    |    16   | 5.81229 |   3935  |   8618  |
+|----------|--------------------------|---------|---------|---------|---------|---------|
+|   read   | a_offset_read_read_fu_24 |    0    |    0    |    0    |    0    |    0    |
+|----------|--------------------------|---------|---------|---------|---------|---------|
+|   Total  |                          |    4    |    16   | 5.81229 |   3935  |   8618  |
+|----------|--------------------------|---------|---------|---------|---------|---------|
 
 Memories:
 N/A
@@ -323,7 +340,7 @@ N/A
 +--------------------+--------+
 |                    |   FF   |
 +--------------------+--------+
-|a_offset_read_reg_40|   32   |
+|a_offset_read_reg_44|   32   |
 +--------------------+--------+
 |        Total       |   32   |
 +--------------------+--------+
@@ -332,7 +349,7 @@ N/A
 |--------------------|------|------|------|--------||---------||---------||---------|
 |        Comp        |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |--------------------|------|------|------|--------||---------||---------||---------|
-| grp_mul_5126_fu_28 |  p2  |   2  |  32  |   64   ||    0    ||    9    |
+| grp_mul_6132_fu_30 |  p2  |   2  |  32  |   64   ||    0    ||    9    |
 |--------------------|------|------|------|--------||---------||---------||---------|
 |        Total       |      |      |      |   64   ||  0.387  ||    0    ||    9    |
 |--------------------|------|------|------|--------||---------||---------||---------|
@@ -340,13 +357,13 @@ N/A
 
 
 * Summary:
-+-----------+--------+--------+--------+--------+
-|           |   DSP  |  Delay |   FF   |   LUT  |
-+-----------+--------+--------+--------+--------+
-|  Function |   50   |    4   |  2536  |  4122  |
-|   Memory  |    -   |    -   |    -   |    -   |
-|Multiplexer|    -   |    0   |    0   |    9   |
-|  Register |    -   |    -   |   32   |    -   |
-+-----------+--------+--------+--------+--------+
-|   Total   |   50   |    4   |  2568  |  4131  |
-+-----------+--------+--------+--------+--------+
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    4   |   16   |    5   |  3935  |  8618  |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    0   |    0   |    9   |
+|  Register |    -   |    -   |    -   |   32   |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    4   |   16   |    6   |  3967  |  8627  |
++-----------+--------+--------+--------+--------+--------+

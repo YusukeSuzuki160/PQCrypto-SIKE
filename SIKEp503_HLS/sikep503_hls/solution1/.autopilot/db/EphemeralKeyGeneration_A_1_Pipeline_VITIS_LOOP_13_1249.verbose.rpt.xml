@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1249'" level="0">
-<item name = "Date">Mon Oct 20 14:40:38 2025
+<item name = "Date">Sat Oct 25 18:44:51 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 1.482 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.293 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 26, -</column>
+<column name="Expression">-, -, 0, 40, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 36, -</column>
-<column name="Register">-, -, 11, -, -</column>
+<column name="Register">-, -, 10, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
@@ -80,8 +80,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln13_fu_87_p2">+, 0, 0, 12, 4, 1</column>
-<column name="icmp_ln13_fu_81_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="add_ln13_fu_99_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln14_fu_109_p2">+, 0, 0, 14, 7, 7</column>
+<column name="icmp_ln13_fu_93_p2">icmp, 0, 0, 12, 4, 5</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -89,8 +90,8 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_274">9, 2, 4, 8</column>
-<column name="i_fu_42">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_316">9, 2, 4, 8</column>
+<column name="i_fu_48">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -98,8 +99,8 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="i_274_reg_126">4, 0, 4, 0</column>
-<column name="i_fu_42">4, 0, 4, 0</column>
+<column name="i_fu_48">4, 0, 4, 0</column>
+<column name="trunc_ln14_reg_156">3, 0, 3, 0</column>
 </table>
 </item>
 </section>
@@ -115,13 +116,14 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1249, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1249, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_13_1249, return value</column>
-<column name="t3_address0">out, 4, ap_memory, t3, array</column>
-<column name="t3_ce0">out, 1, ap_memory, t3, array</column>
-<column name="t3_q0">in, 64, ap_memory, t3, array</column>
-<column name="phiP_Z_2_address0">out, 3, ap_memory, phiP_Z_2, array</column>
-<column name="phiP_Z_2_ce0">out, 1, ap_memory, phiP_Z_2, array</column>
-<column name="phiP_Z_2_we0">out, 1, ap_memory, phiP_Z_2, array</column>
-<column name="phiP_Z_2_d0">out, 64, ap_memory, phiP_Z_2, array</column>
+<column name="zext_ln14_11">in, 7, ap_none, zext_ln14_11, scalar</column>
+<column name="pts_X_address0">out, 7, ap_memory, pts_X, array</column>
+<column name="pts_X_ce0">out, 1, ap_memory, pts_X, array</column>
+<column name="pts_X_q0">in, 64, ap_memory, pts_X, array</column>
+<column name="R_X_address0">out, 4, ap_memory, R_X, array</column>
+<column name="R_X_ce0">out, 1, ap_memory, R_X, array</column>
+<column name="R_X_we0">out, 1, ap_memory, R_X, array</column>
+<column name="R_X_d0">out, 64, ap_memory, R_X, array</column>
 </table>
 </item>
 </section>

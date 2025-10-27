@@ -51,7 +51,7 @@ wire    ap_loop_init;
 wire   [63:0] zext_ln33_fu_98_p1;
 reg   [3:0] i_fu_50;
 wire   [3:0] add_ln33_fu_92_p2;
-reg   [3:0] ap_sig_allocacmp_i_201;
+reg   [3:0] ap_sig_allocacmp_i_221;
 reg    coeff_ce0_local;
 reg   [5:0] coeff_address0_local;
 reg    coeff_we0_local;
@@ -189,9 +189,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_i_201 = 4'd0;
+        ap_sig_allocacmp_i_221 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_201 = i_fu_50;
+        ap_sig_allocacmp_i_221 = i_fu_50;
     end
 end
 
@@ -241,7 +241,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln33_fu_92_p2 = (ap_sig_allocacmp_i_201 + 4'd1);
+assign add_ln33_fu_92_p2 = (ap_sig_allocacmp_i_221 + 4'd1);
 
 assign add_ln35_fu_118_p2 = (coeff_q0 + tempReg_fu_112_p2);
 
@@ -271,7 +271,7 @@ assign coeff_d0 = add_ln35_fu_118_p2;
 
 assign coeff_we0 = coeff_we0_local;
 
-assign icmp_ln33_fu_86_p2 = ((ap_sig_allocacmp_i_201 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln33_fu_86_p2 = ((ap_sig_allocacmp_i_221 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln35_3_fu_181_p2 = (xor_ln35_9_fu_175_p2 | and_ln35_fu_169_p2);
 
@@ -291,7 +291,7 @@ assign xor_ln35_9_fu_175_p2 = (or_ln35_fu_137_p2 ^ add_ln35_fu_118_p2);
 
 assign xor_ln35_fu_125_p2 = (tempReg_fu_112_p2 ^ add_ln35_fu_118_p2);
 
-assign zext_ln33_fu_98_p1 = ap_sig_allocacmp_i_201;
+assign zext_ln33_fu_98_p1 = ap_sig_allocacmp_i_221;
 
 assign zext_ln35_fu_108_p1 = carry_reg_67;
 

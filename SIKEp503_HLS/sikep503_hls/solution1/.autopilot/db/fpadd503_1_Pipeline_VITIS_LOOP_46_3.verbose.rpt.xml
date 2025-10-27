@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_1_Pipeline_VITIS_LOOP_46_3'" level="0">
-<item name = "Date">Mon Oct 20 14:38:25 2025
+<item name = "Date">Sat Oct 25 18:42:32 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="p503x2_1_U">fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="p503x2_1_U">fpadd503_349_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -92,7 +92,7 @@
 <column name="sext_ln30_cast_fu_103_p3">select, 0, 0, 2, 1, 2</column>
 <column name="xor_ln48_37_fu_170_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln48_39_fu_214_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln48_46_fu_190_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln48_42_fu_190_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln48_fu_164_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -103,7 +103,7 @@
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="c_address0_local">14, 3, 3, 9</column>
 <column name="carry_reg_92">9, 2, 1, 2</column>
-<column name="i_136_fu_56">9, 2, 4, 8</column>
+<column name="i_178_fu_56">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -112,7 +112,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="c_addr_reg_249">3, 0, 3, 0</column>
 <column name="carry_reg_92">1, 0, 1, 0</column>
-<column name="i_136_fu_56">4, 0, 4, 0</column>
+<column name="i_178_fu_56">4, 0, 4, 0</column>
 <column name="sext_ln30_cast_reg_241">64, 0, 64, 0</column>
 </table>
 </item>

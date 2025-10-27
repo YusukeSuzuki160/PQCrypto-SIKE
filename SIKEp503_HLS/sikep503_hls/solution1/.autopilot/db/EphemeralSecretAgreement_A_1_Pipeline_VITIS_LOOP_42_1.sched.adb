@@ -369,7 +369,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_269</name>
+						<name>i_300</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>49</lineNumber>
@@ -4255,7 +4255,7 @@
 				<Obj>
 					<type>3</type>
 					<id>70</id>
-					<name>_ZL10fp2_encodePA8_KmPh.31.exit.exitStub</name>
+					<name>_ZL10fp2_encodePA8_KmPh.36.exit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

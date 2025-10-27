@@ -1763,7 +1763,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_cshake256_simple_20_fu_323</rtlName>
+              <rtlName>grp_cshake256_simple_21_fu_323</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1930,7 +1930,7 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>empty_143</name>
+              <name>empty_151</name>
               <fileName>src/sike.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>98</lineNumber>
@@ -2069,7 +2069,7 @@
             <Obj>
               <type>0</type>
               <id>64</id>
-              <name>empty_144</name>
+              <name>empty_152</name>
               <fileName>src/sike.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>111</lineNumber>
@@ -2198,7 +2198,7 @@
             <Obj>
               <type>0</type>
               <id>66</id>
-              <name>empty_145</name>
+              <name>empty_153</name>
               <fileName>src/sike.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>111</lineNumber>
@@ -2347,7 +2347,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_cshake256_simple_21_fu_357</rtlName>
+              <rtlName>grp_cshake256_simple_22_fu_357</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2530,7 +2530,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>mul_256ns_256ns_512_2_1_U2759</rtlName>
+              <rtlName/>
               <control/>
               <opType/>
               <implIndex/>
@@ -2798,7 +2798,7 @@
             <Obj>
               <type>2</type>
               <id>147</id>
-              <name>cshake256_simple_20</name>
+              <name>cshake256_simple_21</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -2822,7 +2822,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:cshake256_simple.20&gt;</content>
+          <content>&lt;constant:cshake256_simple.21&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_54">
           <Value>
@@ -2953,7 +2953,7 @@
             <Obj>
               <type>2</type>
               <id>189</id>
-              <name>cshake256_simple_21</name>
+              <name>cshake256_simple_22</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -2977,7 +2977,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:cshake256_simple.21&gt;</content>
+          <content>&lt;constant:cshake256_simple.22&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -4148,8 +4148,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>5279793</mMinLatency>
-        <mMaxLatency>-1388489610</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -5482,7 +5482,7 @@
     </fsm>
     <res class_id="34" tracking_level="1" version="0" object_id="_377">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
-        <count>14</count>
+        <count>13</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
           <first>control_r_s_axi_U (control_r_s_axi)</first>
@@ -5560,19 +5560,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>6</second>
+              <second>378</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>21146</second>
+              <second>2720</second>
             </item>
             <item>
               <first>FF</first>
-              <second>419332</second>
+              <second>370017</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1233300</second>
+              <second>1942814</second>
             </item>
             <item>
               <first>URAM</first>
@@ -5587,19 +5587,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>314</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>17434</second>
+              <second>2272</second>
             </item>
             <item>
               <first>FF</first>
-              <second>359982</second>
+              <second>314004</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1079203</second>
+              <second>1662096</second>
             </item>
             <item>
               <first>URAM</first>
@@ -5608,7 +5608,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_20_fu_323 (cshake256_simple_20)</first>
+          <first>grp_cshake256_simple_21_fu_323 (cshake256_simple_21)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5631,7 +5631,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_21_fu_357 (cshake256_simple_21)</first>
+          <first>grp_cshake256_simple_22_fu_357 (cshake256_simple_22)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5748,25 +5748,6 @@
             <item>
               <first>LUT</first>
               <second>101</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_256ns_256ns_512_2_1_U2759 (mul_256ns_256ns_512_2_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>225</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>361</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>178</second>
             </item>
           </second>
         </item>
@@ -6255,7 +6236,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>70</count>
+        <count>67</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -6848,87 +6829,6 @@
             <item>
               <first>LUT</first>
               <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_448_ce</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_448_p0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>256</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>768</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_448_p1</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>256</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>768</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
             </item>
           </second>
         </item>
@@ -8247,7 +8147,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_20_fu_323_ap_start_reg</first>
+          <first>grp_cshake256_simple_21_fu_323_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8266,7 +8166,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_21_fu_357_ap_start_reg</first>
+          <first>grp_cshake256_simple_22_fu_357_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8438,7 +8338,7 @@
         </item>
       </dp_register_resource>
       <dp_dsp_resource>
-        <count>14</count>
+        <count>13</count>
         <item_version>0</item_version>
         <item>
           <first>control_r_s_axi_U</first>
@@ -8476,14 +8376,14 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_20_fu_323</first>
+          <first>grp_cshake256_simple_21_fu_323</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_21_fu_357</first>
+          <first>grp_cshake256_simple_22_fu_357</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -8531,16 +8431,9 @@
             <item_version>0</item_version>
           </second>
         </item>
-        <item>
-          <first>mul_256ns_256ns_512_2_1_U2759</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
       </dp_dsp_resource>
       <dp_component_map class_id="39" tracking_level="0" version="0">
-        <count>11</count>
+        <count>10</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
           <first>grp_EphemeralKeyGeneration_A_1_fu_261 (EphemeralKeyGeneration_A_1)</first>
@@ -8559,7 +8452,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_20_fu_323 (cshake256_simple_20)</first>
+          <first>grp_cshake256_simple_21_fu_323 (cshake256_simple_21)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8567,7 +8460,7 @@
           </second>
         </item>
         <item>
-          <first>grp_cshake256_simple_21_fu_357 (cshake256_simple_21)</first>
+          <first>grp_cshake256_simple_22_fu_357 (cshake256_simple_22)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8620,15 +8513,6 @@
             <count>1</count>
             <item_version>0</item_version>
             <item>63</item>
-          </second>
-        </item>
-        <item>
-          <first>mul_256ns_256ns_512_2_1_U2759 (mul_256ns_256ns_512_2_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>81</item>
-            <item>89</item>
           </second>
         </item>
       </dp_component_map>
@@ -9495,7 +9379,7 @@
         </second>
       </item>
       <item>
-        <first>grp_cshake256_simple_20_fu_323</first>
+        <first>grp_cshake256_simple_21_fu_323</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -9504,7 +9388,7 @@
         </second>
       </item>
       <item>
-        <first>grp_cshake256_simple_21_fu_357</first>
+        <first>grp_cshake256_simple_22_fu_357</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

@@ -164,7 +164,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_282</name>
+						<name>i</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -515,7 +515,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>i_282_write_ln122</name>
+						<name>i_write_ln122</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -628,7 +628,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>i</name>
+						<name>i_323</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>156</lineNumber>
@@ -971,7 +971,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>coeff_addr_19</name>
+						<name>coeff_addr_17</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -1029,7 +1029,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>coeff_addr_20</name>
+						<name>coeff_addr_18</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -1087,7 +1087,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>coeff_addr_21</name>
+						<name>coeff_addr_19</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -1145,7 +1145,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>coeff_addr_22</name>
+						<name>coeff_addr_20</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>161</lineNumber>
@@ -1317,7 +1317,7 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp_14</name>
+						<name>tmp_16</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>159</lineNumber>
@@ -2045,7 +2045,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.90</m_delay>
+				<m_delay>1.42</m_delay>
 				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2118,7 +2118,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.90</m_delay>
+				<m_delay>1.42</m_delay>
 				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3092,7 +3092,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
+				<m_delay>1.90</m_delay>
 				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3163,7 +3163,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
+				<m_delay>1.90</m_delay>
 				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3172,7 +3172,7 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>i_282_write_ln122</name>
+						<name>i_write_ln122</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -3673,7 +3673,7 @@
 					<Obj>
 						<type>2</type>
 						<id>201</id>
-						<name>fpadd503_247</name>
+						<name>fpadd503_350</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3697,7 +3697,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.247&gt;</content>
+				<content>&lt;constant:fpadd503.350&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_66">
 				<Value>
@@ -3797,7 +3797,7 @@
 					<Obj>
 						<type>2</type>
 						<id>237</id>
-						<name>fp2mul503_mont_57</name>
+						<name>fp2mul503_mont_58</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3821,7 +3821,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.57&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.58&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_70">
 				<Value>
@@ -3890,7 +3890,7 @@
 					<Obj>
 						<type>2</type>
 						<id>254</id>
-						<name>fp2mul503_mont_126_3</name>
+						<name>fp2mul503_mont_226_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3914,14 +3914,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.126.3&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.226.3&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_73">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>260</id>
-						<name>fp2mul503_mont_45</name>
+						<name>fp2mul503_mont_46</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3945,14 +3945,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.45&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.46&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_74">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>281</id>
-						<name>fpsub503_4_269</name>
+						<name>fpsub503_4_272</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3976,14 +3976,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpsub503.4.269&gt;</content>
+				<content>&lt;constant:fpsub503.4.272&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_75">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>296</id>
-						<name>fp2sqr503_mont_6_2</name>
+						<name>fp2sqr503_mont_7_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4007,7 +4007,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2sqr503_mont.6.2&gt;</content>
+				<content>&lt;constant:fp2sqr503_mont.7.2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_76">
 				<Value>
@@ -4045,7 +4045,7 @@
 					<Obj>
 						<type>2</type>
 						<id>304</id>
-						<name>fpadd503_246</name>
+						<name>fpadd503_349</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4069,7 +4069,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fpadd503.246&gt;</content>
+				<content>&lt;constant:fpadd503.349&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_78">
 				<Value>
@@ -4107,7 +4107,7 @@
 					<Obj>
 						<type>2</type>
 						<id>328</id>
-						<name>fp2mul503_mont_1</name>
+						<name>fp2mul503_mont_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4131,7 +4131,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:fp2mul503_mont.1&gt;</content>
+				<content>&lt;constant:fp2mul503_mont.2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -6057,8 +6057,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>4747</mMinLatency>
-			<mMaxLatency>53320</mMaxLatency>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -6104,8 +6104,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>1</mMinTripCount>
 			<mMaxTripCount>7</mMaxTripCount>
-			<mMinLatency>4746</mMinLatency>
-			<mMaxLatency>53319</mMaxLatency>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

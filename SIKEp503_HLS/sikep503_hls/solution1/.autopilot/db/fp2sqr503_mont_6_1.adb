@@ -1656,8 +1656,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>481</mMinLatency>
-        <mMaxLatency>803</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2107,19 +2107,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>6</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>16</second>
+              <second>33</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4444</second>
+              <second>4100</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12216</second>
+              <second>23186</second>
             </item>
             <item>
               <first>URAM</first>
@@ -2134,19 +2134,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>6</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>241</second>
+              <second>33</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4793</second>
+              <second>4097</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12278</second>
+              <second>23136</second>
             </item>
             <item>
               <first>URAM</first>
@@ -2308,7 +2308,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>18</count>
+        <count>17</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -2474,33 +2474,6 @@
         </item>
         <item>
           <first>c_1_we0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_160_ce</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>

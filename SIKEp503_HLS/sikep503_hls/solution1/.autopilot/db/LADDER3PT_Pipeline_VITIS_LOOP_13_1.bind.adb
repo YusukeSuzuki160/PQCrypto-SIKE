@@ -261,7 +261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_265</name>
+						<name>i_296</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>13</lineNumber>
@@ -644,7 +644,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>lshr_ln</name>
+						<name>lshr_ln11</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>11</lineNumber>
@@ -3023,7 +3023,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln_fu_118</first>
+			<first>lshr_ln11_fu_118</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3063,7 +3063,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_265_load_fu_94</first>
+			<first>i_296_load_fu_94</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3185,7 +3185,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln_reg_152</first>
+			<first>lshr_ln11_reg_152</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

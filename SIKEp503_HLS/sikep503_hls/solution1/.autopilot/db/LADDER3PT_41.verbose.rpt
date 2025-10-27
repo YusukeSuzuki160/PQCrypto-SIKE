@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_41'
 ================================================================
-* Date:           Mon Oct 20 14:41:15 2025
+* Date:           Sat Oct 25 16:58:12 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -25,12 +25,12 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+-----------+--------+---------+---------+
-    |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
-    |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
-    +---------+---------+----------+-----------+--------+---------+---------+
-    |   978857|  1599357|  9.789 ms|  15.994 ms|  978857|  1599357|       no|
-    +---------+---------+----------+-----------+--------+---------+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -58,31 +58,31 @@
         |grp_fpadd503_1_fu_1026                               |fpadd503_1                                |       51|       51|  0.510 us|  0.510 us|   51|   51|                                              no|
         |grp_fpsub503_2_fu_1035                               |fpsub503_2                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
         |grp_fpsub503_2_fu_1044                               |fpsub503_2                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
-        |grp_fp2sqr503_mont_5_fu_1053                         |fp2sqr503_mont_5                          |      481|      803|  4.810 us|  8.030 us|  481|  803|                                              no|
+        |grp_fp2sqr503_mont_5_fu_1053                         |fp2sqr503_mont_5                          |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpcorrection503_fu_1065                          |fpcorrection503                           |       39|       39|  0.390 us|  0.390 us|   39|   39|                                              no|
         |grp_fpcorrection503_fu_1072                          |fpcorrection503                           |       39|       39|  0.390 us|  0.390 us|   39|   39|                                              no|
         |grp_fpadd503_245_1_fu_1079                           |fpadd503_245_1                            |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
         |grp_fpadd503_245_1_fu_1087                           |fpadd503_245_1                            |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
-        |grp_fp2mul503_mont_126_3_fu_1095                     |fp2mul503_mont_126_3                      |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
-        |grp_fp2mul503_mont_125_fu_1107                       |fp2mul503_mont_125                        |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
+        |grp_fp2mul503_mont_126_3_fu_1095                     |fp2mul503_mont_126_3                      |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fp2mul503_mont_125_fu_1107                       |fp2mul503_mont_125                        |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpsub503_3_fu_1119                               |fpsub503_3                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
         |grp_fpsub503_3_fu_1128                               |fpsub503_3                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
-        |grp_fp2mul503_mont_fu_1137                           |fp2mul503_mont                            |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
-        |grp_fp2mul503_mont_7_fu_1149                         |fp2mul503_mont_7                          |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
-        |grp_fp2sqr503_mont_4_fu_1165                         |fp2sqr503_mont_4                          |      481|      803|  4.810 us|  8.030 us|  481|  803|                                              no|
+        |grp_fp2mul503_mont_fu_1137                           |fp2mul503_mont                            |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fp2mul503_mont_7_fu_1149                         |fp2mul503_mont_7                          |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fp2sqr503_mont_4_fu_1165                         |fp2sqr503_mont_4                          |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpadd503_245_fu_1175                             |fpadd503_245                              |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
-        |grp_fp2mul503_mont_46_fu_1183                        |fp2mul503_mont_46                         |      492|      814|  4.920 us|  8.140 us|  492|  814|                                              no|
+        |grp_fp2mul503_mont_46_fu_1183                        |fp2mul503_mont_46                         |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpadd503_fu_1196                                 |fpadd503                                  |       51|       51|  0.510 us|  0.510 us|   51|   51|                                              no|
-        |grp_fp2mul503_mont_124_fu_1205                       |fp2mul503_mont_124                        |      403|      678|  4.030 us|  6.780 us|  403|  678|                                              no|
+        |grp_fp2mul503_mont_124_fu_1205                       |fp2mul503_mont_124                        |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         +-----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
-        +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
-        |                    |  Latency (cycles) |  Iteration  |  Initiation Interval  | Trip |          |
-        |      Loop Name     |   min   |   max   |   Latency   |  achieved |   target  | Count| Pipelined|
-        +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_319_1  |   978500|  1599000|  3914 ~ 6396|          -|          -|   250|        no|
-        +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_319_1  |        ?|        ?|         ?|          -|          -|   250|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
 
@@ -96,66 +96,66 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        0|      260|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        0|   4419|    85084|   259036|     0|
+|Instance             |      120|    484|    71139|   476410|     0|
 |Memory               |        0|      -|     1152|     1170|     0|
 |Multiplexer          |        -|      -|        0|     3469|     -|
 |Register             |        -|      -|      147|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|   4419|    86383|   263935|     0|
+|Total                |      120|    484|    72438|   481309|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization SLR (%)  |        0|    143|        9|       61|     0|
+|Utilization SLR (%)  |        8|     15|        8|      111|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available            |     5376|  12288|  3456000|  1728000|  1280|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization (%)      |        0|     35|        2|       15|     0|
+|Utilization (%)      |        2|      3|        2|       27|     0|
 +---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
     * Instance: 
-    +-----------------------------------------------------+------------------------------------------+---------+-----+-------+-------+-----+
-    |                       Instance                      |                  Module                  | BRAM_18K| DSP |   FF  |  LUT  | URAM|
-    +-----------------------------------------------------+------------------------------------------+---------+-----+-------+-------+-----+
-    |grp_LADDER3PT_41_Pipeline_1_fu_883                   |LADDER3PT_41_Pipeline_1                   |        0|    0|      7|     61|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1_fu_895     |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1     |        0|    0|     74|    127|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1207_fu_922  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1207  |        0|    0|     11|     62|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1208_fu_929  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1208  |        0|    0|     11|     62|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1209_fu_936  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1209  |        0|    0|     75|    127|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1210_fu_943  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1210  |        0|    0|     11|     62|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1211_fu_950  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1211  |        0|    0|     11|     62|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1212_fu_957  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1212  |        0|    0|     75|    127|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1213_fu_974  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1213  |        0|    0|     11|     62|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1214_fu_990  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1214  |        0|    0|     10|     62|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1215_fu_982  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1215  |        0|    0|     75|    127|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_21_1_fu_998     |LADDER3PT_41_Pipeline_VITIS_LOOP_21_1     |        0|    0|      6|     51|    0|
-    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_269_1_fu_1004   |LADDER3PT_41_Pipeline_VITIS_LOOP_269_1    |        0|    0|    614|   1239|    0|
-    |grp_fp2div2_503_fu_964                               |fp2div2_503                               |        0|    0|    462|   2307|    0|
-    |grp_fp2mul503_mont_fu_1137                           |fp2mul503_mont                            |        0|  691|  11419|  32050|    0|
-    |grp_fp2mul503_mont_124_fu_1205                       |fp2mul503_mont_124                        |        0|  691|  11419|  32050|    0|
-    |grp_fp2mul503_mont_125_fu_1107                       |fp2mul503_mont_125                        |        0|  691|  11419|  32050|    0|
-    |grp_fp2mul503_mont_126_3_fu_1095                     |fp2mul503_mont_126_3                      |        0|  466|   8335|  24442|    0|
-    |grp_fp2mul503_mont_46_fu_1183                        |fp2mul503_mont_46                         |        0|  466|  11133|  31977|    0|
-    |grp_fp2mul503_mont_7_fu_1149                         |fp2mul503_mont_7                          |        0|  691|  11803|  32230|    0|
-    |grp_fp2sqr503_mont_4_fu_1165                         |fp2sqr503_mont_4                          |        0|  482|   9950|  27584|    0|
-    |grp_fp2sqr503_mont_5_fu_1053                         |fp2sqr503_mont_5                          |        0|  241|   5167|  15356|    0|
-    |grp_fpadd503_fu_1196                                 |fpadd503                                  |        0|    0|    236|   2157|    0|
-    |grp_fpadd503_1_fu_1017                               |fpadd503_1                                |        0|    0|    236|   2157|    0|
-    |grp_fpadd503_1_fu_1026                               |fpadd503_1                                |        0|    0|    236|   2157|    0|
-    |grp_fpadd503_2_fu_903                                |fpadd503_2                                |        0|    0|    252|   2483|    0|
-    |grp_fpadd503_245_fu_1175                             |fpadd503_245                              |        0|    0|    234|   2172|    0|
-    |grp_fpadd503_245_1_fu_1079                           |fpadd503_245_1                            |        0|    0|    234|   2172|    0|
-    |grp_fpadd503_245_1_fu_1087                           |fpadd503_245_1                            |        0|    0|    234|   2172|    0|
-    |grp_fpadd503_4_fu_911                                |fpadd503_4                                |        0|    0|    252|   2483|    0|
-    |grp_fpcorrection503_fu_1065                          |fpcorrection503                           |        0|    0|    220|   1521|    0|
-    |grp_fpcorrection503_fu_1072                          |fpcorrection503                           |        0|    0|    220|   1521|    0|
-    |grp_fpsub503_2_fu_1035                               |fpsub503_2                                |        0|    0|    158|   1441|    0|
-    |grp_fpsub503_2_fu_1044                               |fpsub503_2                                |        0|    0|    158|   1441|    0|
-    |grp_fpsub503_3_fu_1119                               |fpsub503_3                                |        0|    0|    158|   1441|    0|
-    |grp_fpsub503_3_fu_1128                               |fpsub503_3                                |        0|    0|    158|   1441|    0|
-    +-----------------------------------------------------+------------------------------------------+---------+-----+-------+-------+-----+
-    |Total                                                |                                          |        0| 4419|  85084| 259036|    0|
-    +-----------------------------------------------------+------------------------------------------+---------+-----+-------+-------+-----+
+    +-----------------------------------------------------+------------------------------------------+---------+----+------+-------+-----+
+    |                       Instance                      |                  Module                  | BRAM_18K| DSP|  FF  |  LUT  | URAM|
+    +-----------------------------------------------------+------------------------------------------+---------+----+------+-------+-----+
+    |grp_LADDER3PT_41_Pipeline_1_fu_883                   |LADDER3PT_41_Pipeline_1                   |        0|   0|     7|     61|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1_fu_895     |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1     |        0|   0|    74|    127|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1207_fu_922  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1207  |        0|   0|    11|     62|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1208_fu_929  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1208  |        0|   0|    11|     62|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1209_fu_936  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1209  |        0|   0|    75|    127|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1210_fu_943  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1210  |        0|   0|    11|     62|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1211_fu_950  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1211  |        0|   0|    11|     62|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1212_fu_957  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1212  |        0|   0|    75|    127|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1213_fu_974  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1213  |        0|   0|    11|     62|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1214_fu_990  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1214  |        0|   0|    10|     62|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1215_fu_982  |LADDER3PT_41_Pipeline_VITIS_LOOP_13_1215  |        0|   0|    75|    127|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_21_1_fu_998     |LADDER3PT_41_Pipeline_VITIS_LOOP_21_1     |        0|   0|     6|     51|    0|
+    |grp_LADDER3PT_41_Pipeline_VITIS_LOOP_269_1_fu_1004   |LADDER3PT_41_Pipeline_VITIS_LOOP_269_1    |        0|   0|   614|   1239|    0|
+    |grp_fp2div2_503_fu_964                               |fp2div2_503                               |        0|   0|   462|   2307|    0|
+    |grp_fp2mul503_mont_fu_1137                           |fp2mul503_mont                            |       18|  67|  9331|  64624|    0|
+    |grp_fp2mul503_mont_124_fu_1205                       |fp2mul503_mont_124                        |       18|  67|  9331|  64624|    0|
+    |grp_fp2mul503_mont_125_fu_1107                       |fp2mul503_mont_125                        |       18|  67|  9331|  64624|    0|
+    |grp_fp2mul503_mont_126_3_fu_1095                     |fp2mul503_mont_126_3                      |       12|  50|  6943|  46158|    0|
+    |grp_fp2mul503_mont_46_fu_1183                        |fp2mul503_mont_46                         |       18|  67|  9402|  64643|    0|
+    |grp_fp2mul503_mont_7_fu_1149                         |fp2mul503_mont_7                          |       18|  67|  9333|  64926|    0|
+    |grp_fp2sqr503_mont_4_fu_1165                         |fp2sqr503_mont_4                          |       12|  66|  8558|  49300|    0|
+    |grp_fp2sqr503_mont_5_fu_1053                         |fp2sqr503_mont_5                          |        6|  33|  4471|  26214|    0|
+    |grp_fpadd503_fu_1196                                 |fpadd503                                  |        0|   0|   236|   2157|    0|
+    |grp_fpadd503_1_fu_1017                               |fpadd503_1                                |        0|   0|   236|   2157|    0|
+    |grp_fpadd503_1_fu_1026                               |fpadd503_1                                |        0|   0|   236|   2157|    0|
+    |grp_fpadd503_2_fu_903                                |fpadd503_2                                |        0|   0|   252|   2483|    0|
+    |grp_fpadd503_245_fu_1175                             |fpadd503_245                              |        0|   0|   234|   2172|    0|
+    |grp_fpadd503_245_1_fu_1079                           |fpadd503_245_1                            |        0|   0|   234|   2172|    0|
+    |grp_fpadd503_245_1_fu_1087                           |fpadd503_245_1                            |        0|   0|   234|   2172|    0|
+    |grp_fpadd503_4_fu_911                                |fpadd503_4                                |        0|   0|   252|   2483|    0|
+    |grp_fpcorrection503_fu_1065                          |fpcorrection503                           |        0|   0|   220|   1521|    0|
+    |grp_fpcorrection503_fu_1072                          |fpcorrection503                           |        0|   0|   220|   1521|    0|
+    |grp_fpsub503_2_fu_1035                               |fpsub503_2                                |        0|   0|   158|   1441|    0|
+    |grp_fpsub503_2_fu_1044                               |fpsub503_2                                |        0|   0|   158|   1441|    0|
+    |grp_fpsub503_3_fu_1119                               |fpsub503_3                                |        0|   0|   158|   1441|    0|
+    |grp_fpsub503_3_fu_1128                               |fpsub503_3                                |        0|   0|   158|   1441|    0|
+    +-----------------------------------------------------+------------------------------------------+---------+----+------+-------+-----+
+    |Total                                                |                                          |      120| 484| 71139| 476410|    0|
+    +-----------------------------------------------------+------------------------------------------+---------+----+------+-------+-----+
 
     * DSP: 
     N/A
@@ -193,7 +193,7 @@
     +----------------------------------+----------+----+---+-----+------------+------------+
     |           Variable Name          | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+----+---+-----+------------+------------+
-    |i_267_fu_1231_p2                  |         +|   0|  0|   15|           8|           1|
+    |i_307_fu_1231_p2                  |         +|   0|  0|   15|           8|           1|
     |icmp_ln319_fu_1225_p2             |      icmp|   0|  0|   15|           8|           4|
     |lshr_ln322_fu_1371_p2             |      lshr|   0|  0|  182|          64|          64|
     |R0_X_2_we0                        |        or|   0|  0|    2|           1|           1|
@@ -768,7 +768,7 @@ State 17 <SV = 16> <Delay = 1.09>
 ST_17 : Operation 241 [1/1] (0.00ns)   --->   "%prevbit = phi i1 %bit, void %for.inc.split, i1 0, void %entry"   --->   Operation 241 'phi' 'prevbit' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 242 [1/1] (0.00ns)   --->   "%i = load i8 %i_065" [src/ec_isogeny.cpp:319]   --->   Operation 242 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 243 [1/1] (0.70ns)   --->   "%icmp_ln319 = icmp_eq  i8 %i, i8 250" [src/ec_isogeny.cpp:319]   --->   Operation 243 'icmp' 'icmp_ln319' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 244 [1/1] (0.70ns)   --->   "%i_267 = add i8 %i, i8 1" [src/ec_isogeny.cpp:319]   --->   Operation 244 'add' 'i_267' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 244 [1/1] (0.70ns)   --->   "%i_307 = add i8 %i, i8 1" [src/ec_isogeny.cpp:319]   --->   Operation 244 'add' 'i_307' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 245 [1/1] (0.00ns)   --->   "%br_ln319 = br i1 %icmp_ln319, void %for.inc.split, void %for.end" [src/ec_isogeny.cpp:319]   --->   Operation 245 'br' 'br_ln319' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 246 [1/1] (0.00ns)   --->   "%trunc_ln319 = trunc i8 %i" [src/ec_isogeny.cpp:319]   --->   Operation 246 'trunc' 'trunc_ln319' <Predicate = (!icmp_ln319)> <Delay = 0.00>
 ST_17 : Operation 247 [1/1] (0.00ns)   --->   "%tmp_s = partselect i2 @_ssdm_op_PartSelect.i2.i8.i32.i32, i8 %i, i32 6, i32 7" [src/ec_isogeny.cpp:322]   --->   Operation 247 'partselect' 'tmp_s' <Predicate = (!icmp_ln319)> <Delay = 0.00>
@@ -780,7 +780,7 @@ ST_17 : Operation 252 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i5 @_ssdm
 ST_17 : Operation 253 [1/1] (0.00ns)   --->   "%zext_ln322_2 = zext i5 %or_ln" [src/ec_isogeny.cpp:322]   --->   Operation 253 'zext' 'zext_ln322_2' <Predicate = (!icmp_ln319)> <Delay = 0.00>
 ST_17 : Operation 254 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_1 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln322_2" [src/ec_isogeny.cpp:322]   --->   Operation 254 'getelementptr' 'ephemeralsk_i_addr_1' <Predicate = (!icmp_ln319)> <Delay = 0.00>
 ST_17 : Operation 255 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_1 = load i5 %ephemeralsk_i_addr_1" [src/ec_isogeny.cpp:322]   --->   Operation 255 'load' 'ephemeralsk_i_load_1' <Predicate = (!icmp_ln319)> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
-ST_17 : Operation 256 [1/1] (0.38ns)   --->   "%store_ln291 = store i8 %i_267, i8 %i_065" [src/ec_isogeny.cpp:291]   --->   Operation 256 'store' 'store_ln291' <Predicate = (!icmp_ln319)> <Delay = 0.38>
+ST_17 : Operation 256 [1/1] (0.38ns)   --->   "%store_ln291 = store i8 %i_307, i8 %i_065" [src/ec_isogeny.cpp:291]   --->   Operation 256 'store' 'store_ln291' <Predicate = (!icmp_ln319)> <Delay = 0.38>
 ST_17 : Operation 257 [1/1] (0.00ns)   --->   "%ret_ln331 = ret" [src/ec_isogeny.cpp:331]   --->   Operation 257 'ret' 'ret_ln331' <Predicate = (icmp_ln319)> <Delay = 0.00>
 
 State 18 <SV = 17> <Delay = 0.66>
@@ -933,7 +933,7 @@ ST_43 : Operation 353 [2/2] (0.00ns)   --->   "%call_ln329 = call void @fp2mul50
 
 State 44 <SV = 43> <Delay = 0.00>
 ST_44 : Operation 354 [1/1] (0.00ns)   --->   "%speclooptripcount_ln291 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 250, i64 250, i64 250" [src/ec_isogeny.cpp:291]   --->   Operation 354 'speclooptripcount' 'speclooptripcount_ln291' <Predicate = true> <Delay = 0.00>
-ST_44 : Operation 355 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [src/ec_isogeny.cpp:319]   --->   Operation 355 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 355 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [src/ec_isogeny.cpp:319]   --->   Operation 355 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 356 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 356 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 357 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 357 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 358 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 358 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
@@ -1254,7 +1254,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 prevbit                 (phi              ) [ 000000000000000001111100000000000000000000000]
 i                       (load             ) [ 000000000000000000000000000000000000000000000]
 icmp_ln319              (icmp             ) [ 000000000000000001111111111111111111111111111]
-i_267                   (add              ) [ 000000000000000000000000000000000000000000000]
+i_307                   (add              ) [ 000000000000000000000000000000000000000000000]
 br_ln319                (br               ) [ 000000000000000000000000000000000000000000000]
 trunc_ln319             (trunc            ) [ 000000000000000000111100000000000000000000000]
 tmp_s                   (partselect       ) [ 000000000000000000111000000000000000000000000]
@@ -2142,7 +2142,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="153" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_7"/></StgValue>
 </bind>
 </comp>
 
@@ -4002,7 +4002,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="1231" class="1004" name="i_267_fu_1231">
+<comp id="1231" class="1004" name="i_307_fu_1231">
 <pin_list>
 <pin id="1232" dir="0" index="0" bw="8" slack="0"/>
 <pin id="1233" dir="0" index="1" bw="1" slack="0"/>
@@ -4010,7 +4010,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="i_267/17 "/>
+<opset="i_307/17 "/>
 </bind>
 </comp>
 
@@ -5508,7 +5508,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 		store_ln0 : 1
 	State 17
 		icmp_ln319 : 1
-		i_267 : 1
+		i_307 : 1
 		br_ln319 : 2
 		trunc_ln319 : 1
 		tmp_s : 1
@@ -5601,28 +5601,28 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 |   call   |                grp_fpadd503_1_fu_1026               |    0    |    0    |  2.322  |   166   |   1848  |    0    |
 |          |                grp_fpsub503_2_fu_1035               |    0    |    0    |  1.548  |   154   |   1278  |    0    |
 |          |                grp_fpsub503_2_fu_1044               |    0    |    0    |  1.548  |   154   |   1278  |    0    |
-|          |             grp_fp2sqr503_mont_5_fu_1053            |    0    |   273   | 14.1364 |   8193  |  13031  |    0    |
+|          |             grp_fp2sqr503_mont_5_fu_1053            |    6    |    65   |  15.783 |   6365  |  16215  |    0    |
 |          |             grp_fpcorrection503_fu_1065             |    0    |    0    |  1.548  |    89   |   1278  |    0    |
 |          |             grp_fpcorrection503_fu_1072             |    0    |    0    |  1.548  |    89   |   1278  |    0    |
 |          |              grp_fpadd503_245_1_fu_1079             |    0    |    0    |  2.322  |   101   |   1848  |    0    |
 |          |              grp_fpadd503_245_1_fu_1087             |    0    |    0    |  2.322  |   101   |   1848  |    0    |
-|          |           grp_fp2mul503_mont_126_3_fu_1095          |    0    |   498   | 21.4967 |  13976  |  19748  |    0    |
-|          |            grp_fp2mul503_mont_125_fu_1107           |    0    |   723   |  26.922 |  19666  |  25264  |    0    |
+|          |           grp_fp2mul503_mont_126_3_fu_1095          |    12   |    82   | 24.7899 |  10320  |  26116  |    0    |
+|          |            grp_fp2mul503_mont_125_fu_1107           |    18   |    99   | 31.8617 |  14182  |  34816  |    0    |
 |          |                grp_fpsub503_3_fu_1119               |    0    |    0    |  1.548  |   154   |   1278  |    0    |
 |          |                grp_fpsub503_3_fu_1128               |    0    |    0    |  1.548  |   154   |   1278  |    0    |
-|          |              grp_fp2mul503_mont_fu_1137             |    0    |   723   |  26.922 |  19669  |  25264  |    0    |
-|          |             grp_fp2mul503_mont_7_fu_1149            |    0    |   723   | 28.3386 |  19987  |  25402  |    0    |
-|          |             grp_fp2sqr503_mont_4_fu_1165            |    0    |   546   | 24.7899 |  15889  |  23440  |    0    |
+|          |              grp_fp2mul503_mont_fu_1137             |    18   |    99   | 31.8617 |  14185  |  34816  |    0    |
+|          |             grp_fp2mul503_mont_7_fu_1149            |    18   |    99   | 33.4097 |  14131  |  35104  |    0    |
+|          |             grp_fp2sqr503_mont_4_fu_1165            |    12   |   130   |  28.083 |  12233  |  29808  |    0    |
 |          |               grp_fpadd503_245_fu_1175              |    0    |    0    |  2.322  |   101   |   1848  |    0    |
-|          |            grp_fp2mul503_mont_46_fu_1183            |    0    |   1848  | 26.9877 |  21555  |  26173  |    0    |
+|          |            grp_fp2mul503_mont_46_fu_1183            |    18   |    99   | 31.9274 |  14256  |  34827  |    0    |
 |          |                 grp_fpadd503_fu_1196                |    0    |    0    |  2.322  |   166   |   1848  |    0    |
-|          |            grp_fp2mul503_mont_124_fu_1205           |    0    |   723   |  26.922 |  19669  |  25264  |    0    |
+|          |            grp_fp2mul503_mont_124_fu_1205           |    18   |    99   | 31.8617 |  14185  |  34816  |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   lshr   |                  lshr_ln322_fu_1371                 |    0    |    0    |    0    |    0    |   182   |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   icmp   |                  icmp_ln319_fu_1225                 |    0    |    0    |    0    |    0    |    15   |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|    add   |                    i_267_fu_1231                    |    0    |    0    |    0    |    0    |    15   |    0    |
+|    add   |                    i_307_fu_1231                    |    0    |    0    |    0    |    0    |    15   |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |    xor   |                     swap_fu_1381                    |    0    |    0    |    0    |    0    |    2    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
@@ -5651,7 +5651,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 |          |                 zext_ln322_8_fu_1349                |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |                 zext_ln322_1_fu_1368                |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                     |    0    |   6057  | 239.093 |  141744 |  210089 |    0    |
+|   Total  |                                                     |   120   |   772   | 272.155 |  102997 |  273021 |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -5736,10 +5736,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    0   |  6057  |   239  | 141744 | 210089 |    0   |
+|  Function |   120  |   772  |   272  | 102997 | 273021 |    0   |
 |   Memory  |    0   |    -   |    -   |  1152  |  1170  |    0   |
 |Multiplexer|    -   |    -   |    7   |    0   |   466  |    -   |
 |  Register |    -   |    -   |    -   |   107  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |  6057  |   246  | 143003 | 211725 |    0   |
+|   Total   |   120  |   772  |   279  | 104256 | 274657 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

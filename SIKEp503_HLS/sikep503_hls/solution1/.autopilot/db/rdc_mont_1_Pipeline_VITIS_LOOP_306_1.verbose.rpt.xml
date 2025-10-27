@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont_1_Pipeline_VITIS_LOOP_306_1'" level="0">
-<item name = "Date">Mon Oct 20 14:41:29 2025
+<item name = "Date">Sat Oct 25 18:42:38 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -48,7 +48,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 37, -</column>
+<column name="Expression">-, -, 0, 24, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
@@ -80,23 +80,22 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln306_fu_78_p2">+, 0, 0, 12, 4, 1</column>
-<column name="add_ln308_fu_88_p2">+, 0, 0, 13, 6, 6</column>
-<column name="icmp_ln306_fu_72_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="add_ln306_fu_68_p2">+, 0, 0, 12, 4, 1</column>
+<column name="icmp_ln306_fu_62_p2">icmp, 0, 0, 12, 4, 5</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_23">9, 2, 4, 8</column>
-<column name="i_fu_40">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_25">9, 2, 4, 8</column>
+<column name="i_fu_36">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="i_fu_40">4, 0, 4, 0</column>
+<column name="i_fu_36">4, 0, 4, 0</column>
 </table>
 </item>
 </section>
@@ -112,11 +111,10 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, rdc_mont.1_Pipeline_VITIS_LOOP_306_1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, rdc_mont.1_Pipeline_VITIS_LOOP_306_1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, rdc_mont.1_Pipeline_VITIS_LOOP_306_1, return value</column>
-<column name="mc_address0">out, 6, ap_memory, mc, array</column>
+<column name="mc_address0">out, 3, ap_memory, mc, array</column>
 <column name="mc_ce0">out, 1, ap_memory, mc, array</column>
 <column name="mc_we0">out, 1, ap_memory, mc, array</column>
 <column name="mc_d0">out, 64, ap_memory, mc, array</column>
-<column name="zext_ln308">in, 6, ap_none, zext_ln308, scalar</column>
 </table>
 </item>
 </section>

@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>i_21</name>
+						<name>i_63</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -235,7 +235,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_21_write_ln56</name>
+						<name>i_63_write_ln56</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -1820,7 +1820,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>i_21_write_ln56</name>
+						<name>i_63_write_ln56</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>56</lineNumber>

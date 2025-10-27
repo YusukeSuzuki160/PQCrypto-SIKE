@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpadd503_4'" level="0">
-<item name = "Date">Mon Oct 20 14:41:10 2025
+<item name = "Date">Sat Oct 25 18:42:26 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -31,9 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_33_1_fu_28">fpadd503_4_Pipeline_VITIS_LOOP_33_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_39_2_fu_38">fpadd503_4_Pipeline_VITIS_LOOP_39_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_46_3_fu_49">fpadd503_4_Pipeline_VITIS_LOOP_46_3, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_33_1_fu_42">fpadd503_4_Pipeline_VITIS_LOOP_33_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_39_2_fu_53">fpadd503_4_Pipeline_VITIS_LOOP_39_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_46_3_fu_64">fpadd503_4_Pipeline_VITIS_LOOP_46_3, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,10 +52,10 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, -, 243, 2286, -</column>
+<column name="Instance">0, -, 243, 1916, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 197, -</column>
-<column name="Register">-, -, 9, -, -</column>
+<column name="Register">-, -, 10, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
@@ -66,9 +66,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_33_1_fu_28">fpadd503_4_Pipeline_VITIS_LOOP_33_1, 0, 0, 17, 693, 0</column>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_39_2_fu_38">fpadd503_4_Pipeline_VITIS_LOOP_39_2, 0, 0, 81, 769, 0</column>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_46_3_fu_49">fpadd503_4_Pipeline_VITIS_LOOP_46_3, 0, 0, 145, 824, 0</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_33_1_fu_42">fpadd503_4_Pipeline_VITIS_LOOP_33_1, 0, 0, 17, 323, 0</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_39_2_fu_53">fpadd503_4_Pipeline_VITIS_LOOP_39_2, 0, 0, 81, 769, 0</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_46_3_fu_64">fpadd503_4_Pipeline_VITIS_LOOP_46_3, 0, 0, 145, 824, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -103,9 +103,10 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">6, 0, 6, 0</column>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_33_1_fu_28_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_39_2_fu_38_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_46_3_fu_49_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_33_1_fu_42_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_39_2_fu_53_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpadd503_4_Pipeline_VITIS_LOOP_46_3_fu_64_ap_start_reg">1, 0, 1, 0</column>
+<column name="tmp_reg_94">1, 0, 4, 3</column>
 </table>
 </item>
 </section>
@@ -121,9 +122,10 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, fpadd503.4, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, fpadd503.4, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, fpadd503.4, return value</column>
-<column name="a_address0">out, 3, ap_memory, a, array</column>
+<column name="a_address0">out, 4, ap_memory, a, array</column>
 <column name="a_ce0">out, 1, ap_memory, a, array</column>
-<column name="a_q0">in, 64, ap_memory, a, array</column>
+<column name="a_q0">in, 1, ap_memory, a, array</column>
+<column name="a_offset">in, 1, ap_none, a_offset, scalar</column>
 <column name="c_0_address0">out, 2, ap_memory, c_0, array</column>
 <column name="c_0_ce0">out, 1, ap_memory, c_0, array</column>
 <column name="c_0_we0">out, 1, ap_memory, c_0, array</column>

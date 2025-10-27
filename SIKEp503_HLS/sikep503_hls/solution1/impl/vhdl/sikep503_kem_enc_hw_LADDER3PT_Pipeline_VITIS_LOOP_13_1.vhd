@@ -68,7 +68,7 @@ attribute shreg_extract : string;
     signal i_fu_44 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln13_fu_103_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_i_291 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_sig_allocacmp_i_285 : STD_LOGIC_VECTOR (3 downto 0);
     signal Montgomery_one_1_ce0_local : STD_LOGIC;
     signal A24_we0_local : STD_LOGIC;
     signal A24_ce0_local : STD_LOGIC;
@@ -84,7 +84,7 @@ attribute shreg_extract : string;
     signal ap_done_sig : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1251_Montgomery_one_1_RAM_1cud IS
+    component sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212_Montgomery_one_1_ROM_Acud IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -117,7 +117,7 @@ attribute shreg_extract : string;
 
 
 begin
-    Montgomery_one_1_U : component sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1251_Montgomery_one_1_RAM_1cud
+    Montgomery_one_1_U : component sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212_Montgomery_one_1_ROM_Acud
     generic map (
         DataWidth => 64,
         AddressRange => 8,
@@ -208,7 +208,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
-                lshr_ln_reg_152 <= ap_sig_allocacmp_i_291(2 downto 1);
+                lshr_ln_reg_152 <= ap_sig_allocacmp_i_285(2 downto 1);
                 trunc_ln13_reg_148 <= trunc_ln13_fu_114_p1;
             end if;
         end if;
@@ -282,7 +282,7 @@ begin
         end if; 
     end process;
 
-    add_ln13_fu_103_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_291) + unsigned(ap_const_lv4_1));
+    add_ln13_fu_103_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_285) + unsigned(ap_const_lv4_1));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
         ap_block_pp0_stage0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
         ap_block_pp0_stage0_11001 <= not((ap_const_boolean_1 = ap_const_boolean_1));
@@ -343,17 +343,17 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_291_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, i_fu_44, ap_loop_init)
+    ap_sig_allocacmp_i_285_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, i_fu_44, ap_loop_init)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            ap_sig_allocacmp_i_291 <= ap_const_lv4_0;
+            ap_sig_allocacmp_i_285 <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i_291 <= i_fu_44;
+            ap_sig_allocacmp_i_285 <= i_fu_44;
         end if; 
     end process;
 
-    icmp_ln13_fu_97_p2 <= "1" when (ap_sig_allocacmp_i_291 = ap_const_lv4_8) else "0";
-    trunc_ln13_fu_114_p1 <= ap_sig_allocacmp_i_291(1 - 1 downto 0);
+    icmp_ln13_fu_97_p2 <= "1" when (ap_sig_allocacmp_i_285 = ap_const_lv4_8) else "0";
+    trunc_ln13_fu_114_p1 <= ap_sig_allocacmp_i_285(1 - 1 downto 0);
     zext_ln11_fu_133_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(lshr_ln_reg_152),64));
-    zext_ln13_fu_109_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_291),64));
+    zext_ln13_fu_109_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_i_285),64));
 end behav;

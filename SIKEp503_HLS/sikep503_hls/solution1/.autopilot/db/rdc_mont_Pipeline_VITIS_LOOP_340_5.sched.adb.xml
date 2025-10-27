@@ -142,10 +142,10 @@ newFuncRoot:6 %u_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %u
 
 <Node id="18" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-newFuncRoot:7 %v_56_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %v_56
+newFuncRoot:7 %v_65_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %v_65
 
 ]]></Node>
-<StgValue><ssdm name="v_56_read"/></StgValue>
+<StgValue><ssdm name="v_65_read"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -187,7 +187,7 @@ newFuncRoot:9 %indvars_iv_cast = zext i3 %indvars_iv_read
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:10 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 207, i64 18446744073709551615
+newFuncRoot:10 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -202,7 +202,7 @@ newFuncRoot:10 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %m
 
 <Node id="22" bw="0" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-newFuncRoot:11 %store_ln303 = store i64 %v_56_read, i64 %v
+newFuncRoot:11 %store_ln303 = store i64 %v_65_read, i64 %v
 
 ]]></Node>
 <StgValue><ssdm name="store_ln303"/></StgValue>
@@ -387,7 +387,7 @@ for.body64.split:3 %trunc_ln340 = trunc i4 %j_1
 
 <Node id="36" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body64.split:4 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.body64.split:4 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln303"/></StgValue>
@@ -419,7 +419,7 @@ for.body64.split:5 %speclooptripcount_ln303 = speclooptripcount void @_ssdm_op_S
 
 <Node id="38" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body64.split:6 %specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34
+for.body64.split:6 %specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln340"/></StgValue>
@@ -703,7 +703,7 @@ for.inc117.exitStub:2 %v_load = load i64 %v
 
 <Node id="88" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc117.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_113_out, i64 %v_load
+for.inc117.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_160_out, i64 %v_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -735,7 +735,7 @@ for.inc117.exitStub:4 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i6
 
 <Node id="90" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc117.exitStub:5 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %t_30_out, i64 %t_load
+for.inc117.exitStub:5 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %t_35_out, i64 %t_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>

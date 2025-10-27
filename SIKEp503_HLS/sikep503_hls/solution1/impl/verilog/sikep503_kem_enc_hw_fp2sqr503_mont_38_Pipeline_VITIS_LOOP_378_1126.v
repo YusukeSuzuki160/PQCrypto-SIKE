@@ -50,14 +50,14 @@ wire   [0:0] icmp_ln378_fu_103_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [0:0] carry_reg_84;
+reg   [0:0] carry_79_reg_84;
 reg   [0:0] icmp_ln378_reg_219;
 wire    ap_block_pp0_stage0_11001;
 wire   [63:0] zext_ln378_fu_115_p1;
 reg   [63:0] zext_ln378_reg_223;
 wire    ap_loop_init;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_148_fu_54;
+reg   [3:0] i_188_fu_54;
 wire   [3:0] add_ln378_fu_109_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    coeff_ce0_local;
@@ -91,7 +91,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_148_fu_54 = 4'd0;
+#0 i_188_fu_54 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -145,9 +145,9 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
         if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
-            carry_reg_84 <= 1'd0;
+            carry_79_reg_84 <= 1'd0;
         end else if ((1'b1 == ap_condition_211)) begin
-            carry_reg_84 <= or_ln381_8_fu_198_p2[32'd63];
+            carry_79_reg_84 <= or_ln381_8_fu_198_p2[32'd63];
         end
     end
 end
@@ -155,9 +155,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln378_fu_103_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_148_fu_54 <= add_ln378_fu_109_p2;
+            i_188_fu_54 <= add_ln378_fu_109_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_148_fu_54 <= 4'd0;
+            i_188_fu_54 <= 4'd0;
         end
     end
 end
@@ -213,7 +213,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_148_fu_54;
+        ap_sig_allocacmp_i = i_188_fu_54;
     end
 end
 
@@ -316,7 +316,7 @@ assign xor_ln381_fu_142_p2 = (tempReg_fu_129_p2 ^ add_ln381_fu_135_p2);
 
 assign zext_ln378_fu_115_p1 = ap_sig_allocacmp_i;
 
-assign zext_ln381_4_fu_125_p1 = carry_reg_84;
+assign zext_ln381_4_fu_125_p1 = carry_79_reg_84;
 
 always @ (posedge ap_clk) begin
     zext_ln378_reg_223[63:4] <= 60'b000000000000000000000000000000000000000000000000000000000000;

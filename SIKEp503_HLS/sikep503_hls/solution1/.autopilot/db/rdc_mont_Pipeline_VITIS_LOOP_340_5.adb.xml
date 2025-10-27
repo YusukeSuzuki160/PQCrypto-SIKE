@@ -142,10 +142,10 @@ newFuncRoot:6 %u_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %u
 
 <Node id="18" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-newFuncRoot:7 %v_56_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %v_56
+newFuncRoot:7 %v_65_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %v_65
 
 ]]></Node>
-<StgValue><ssdm name="v_56_read"/></StgValue>
+<StgValue><ssdm name="v_65_read"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -187,7 +187,7 @@ newFuncRoot:9 %indvars_iv_cast = zext i3 %indvars_iv_read
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:10 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 207, i64 18446744073709551615
+newFuncRoot:10 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -202,7 +202,7 @@ newFuncRoot:10 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %m
 
 <Node id="22" bw="0" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-newFuncRoot:11 %store_ln303 = store i64 %v_56_read, i64 %v
+newFuncRoot:11 %store_ln303 = store i64 %v_65_read, i64 %v
 
 ]]></Node>
 <StgValue><ssdm name="store_ln303"/></StgValue>
@@ -387,7 +387,7 @@ for.body64.split:3 %trunc_ln340 = trunc i4 %j_1
 
 <Node id="36" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body64.split:4 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.body64.split:4 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln303"/></StgValue>
@@ -419,7 +419,7 @@ for.body64.split:5 %speclooptripcount_ln303 = speclooptripcount void @_ssdm_op_S
 
 <Node id="38" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body64.split:6 %specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34
+for.body64.split:6 %specloopname_ln340 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln340"/></StgValue>
@@ -703,7 +703,7 @@ for.inc117.exitStub:2 %v_load = load i64 %v
 
 <Node id="88" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc117.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_113_out, i64 %v_load
+for.inc117.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_160_out, i64 %v_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -735,7 +735,7 @@ for.inc117.exitStub:4 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i6
 
 <Node id="90" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc117.exitStub:5 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %t_30_out, i64 %t_load
+for.inc117.exitStub:5 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %t_35_out, i64 %t_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -1296,8 +1296,8 @@ if.then67:37 %br_ln348 = br void %for.inc93
 <port id="99" name="indvars_iv" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="indvars_iv"/></StgValue>
 </port>
-<port id="100" name="v_56" dir="0" iftype="0">
-<core>NULL</core><StgValue><ssdm name="v_56"/></StgValue>
+<port id="100" name="v_65" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="v_65"/></StgValue>
 </port>
 <port id="101" name="u" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="u"/></StgValue>
@@ -1312,14 +1312,14 @@ if.then67:37 %br_ln348 = br void %for.inc93
 <port id="104" name="empty" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="empty"/></StgValue>
 </port>
-<port id="105" name="v_113_out" dir="1" iftype="0">
-<core>NULL</core><StgValue><ssdm name="v_113_out"/></StgValue>
+<port id="105" name="v_160_out" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="v_160_out"/></StgValue>
 </port>
 <port id="106" name="u_47_out" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="u_47_out"/></StgValue>
 </port>
-<port id="107" name="t_30_out" dir="1" iftype="0">
-<core>NULL</core><StgValue><ssdm name="t_30_out"/></StgValue>
+<port id="107" name="t_35_out" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="t_35_out"/></StgValue>
 </port>
 <port id="108" name="p503p1_1" dir="0" iftype="1">
 <core>ROM</core><StgValue><ssdm name="p503p1_1"/><MemPortTyVec>1 </MemPortTyVec>
@@ -1349,9 +1349,9 @@ if.then67:37 %br_ln348 = br void %for.inc93
 </dataflow>
 <dataflow id="122" from="u" to="u_read" fromId="101" toId="13">
 </dataflow>
-<dataflow id="123" from="_ssdm_op_Read.ap_auto.i64" to="v_56_read" fromId="120" toId="14">
+<dataflow id="123" from="_ssdm_op_Read.ap_auto.i64" to="v_65_read" fromId="120" toId="14">
 </dataflow>
-<dataflow id="124" from="v_56" to="v_56_read" fromId="100" toId="14">
+<dataflow id="124" from="v_65" to="v_65_read" fromId="100" toId="14">
 </dataflow>
 <dataflow id="125" from="_ssdm_op_Read.ap_auto.i3" to="indvars_iv_read" fromId="114" toId="15">
 </dataflow>
@@ -1369,7 +1369,7 @@ if.then67:37 %br_ln348 = br void %for.inc93
 </dataflow>
 <dataflow id="136" from="StgValue_135" to="specmemcore_ln0" fromId="135" toId="17">
 </dataflow>
-<dataflow id="137" from="v_56_read" to="store_ln303" fromId="14" toId="18">
+<dataflow id="137" from="v_65_read" to="store_ln303" fromId="14" toId="18">
 </dataflow>
 <dataflow id="138" from="v" to="store_ln303" fromId="10" toId="18">
 </dataflow>
@@ -1415,7 +1415,7 @@ if.then67:37 %br_ln348 = br void %for.inc93
 </dataflow>
 <dataflow id="164" from="StgValue_161" to="specpipeline_ln303" fromId="161" toId="30">
 </dataflow>
-<dataflow id="166" from="empty_102" to="specpipeline_ln303" fromId="165" toId="30">
+<dataflow id="166" from="empty_84" to="specpipeline_ln303" fromId="165" toId="30">
 </dataflow>
 <dataflow id="168" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln303" fromId="167" toId="31">
 </dataflow>
@@ -1427,7 +1427,7 @@ if.then67:37 %br_ln348 = br void %for.inc93
 </dataflow>
 <dataflow id="176" from="_ssdm_op_SpecLoopName" to="specloopname_ln340" fromId="175" toId="32">
 </dataflow>
-<dataflow id="178" from="empty_34" to="specloopname_ln340" fromId="177" toId="32">
+<dataflow id="178" from="empty_31" to="specloopname_ln340" fromId="177" toId="32">
 </dataflow>
 <dataflow id="179" from="zext_ln340_1" to="icmp_ln342" fromId="28" toId="33">
 </dataflow>
@@ -1601,7 +1601,7 @@ if.then67:37 %br_ln348 = br void %for.inc93
 </dataflow>
 <dataflow id="273" from="_ssdm_op_Write.ap_auto.i64P0A" to="write_ln0" fromId="272" toId="82">
 </dataflow>
-<dataflow id="274" from="v_113_out" to="write_ln0" fromId="105" toId="82">
+<dataflow id="274" from="v_160_out" to="write_ln0" fromId="105" toId="82">
 </dataflow>
 <dataflow id="275" from="v_load" to="write_ln0" fromId="81" toId="82">
 </dataflow>
@@ -1613,7 +1613,7 @@ if.then67:37 %br_ln348 = br void %for.inc93
 </dataflow>
 <dataflow id="279" from="_ssdm_op_Write.ap_auto.i64P0A" to="write_ln0" fromId="272" toId="84">
 </dataflow>
-<dataflow id="280" from="t_30_out" to="write_ln0" fromId="107" toId="84">
+<dataflow id="280" from="t_35_out" to="write_ln0" fromId="107" toId="84">
 </dataflow>
 <dataflow id="281" from="t_load" to="write_ln0" fromId="79" toId="84">
 </dataflow>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_6111'
 ================================================================
-* Date:           Mon Oct 20 16:15:00 2025
+* Date:           Sat Oct 25 16:50:16 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  4.780 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      126|      199|  1.260 us|  1.990 us|  126|  199|       no|
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -75,9 +75,9 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 1.90>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%b_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_offset"   --->   Operation 3 'read' 'b_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln296 = call void @mul.5123, i64 %a, i64 %b, i32 %b_offset_read, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 4 'call' 'call_ln296' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 4 [2/2] (1.90ns)   --->   "%call_ln296 = call void @mul.5123, i64 %a, i64 %b, i32 %b_offset_read, i64 %c" [src/generic/fp_generic.cpp:296]   --->   Operation 4 'call' 'call_ln296' <Predicate = true> <Delay = 1.90> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
@@ -92,8 +92,10 @@ ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln297 = ret" [src/generic/fp_ge
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 0.000ns
+ <State 1>: 1.906ns
 The critical path consists of the following:
+	wire read operation ('b_offset_read') on port 'b_offset' [5]  (0.000 ns)
+	'call' operation 0 bit ('call_ln296', src/generic/fp_generic.cpp:296) to 'mul.5123' [9]  (1.906 ns)
 
  <State 2>: 0.000ns
 The critical path consists of the following:

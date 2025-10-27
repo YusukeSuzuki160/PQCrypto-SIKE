@@ -113,7 +113,7 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal exitcond1_fu_93_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal empty_fu_46 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
-    signal empty_158_fu_99_p2 : STD_LOGIC_VECTOR (4 downto 0);
+    signal empty_156_fu_99_p2 : STD_LOGIC_VECTOR (4 downto 0);
     signal temp_we0_local : STD_LOGIC;
     signal temp_ce0_local : STD_LOGIC;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (5 downto 0);
@@ -318,7 +318,7 @@ begin
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
                 empty_fu_46 <= ap_const_lv5_0;
             elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (exitcond1_fu_93_p2 = ap_const_lv1_0))) then 
-                empty_fu_46 <= empty_158_fu_99_p2;
+                empty_fu_46 <= empty_156_fu_99_p2;
             end if; 
         end if;
     end process;
@@ -431,7 +431,7 @@ begin
     coeff_ce0 <= grp_rdc_mont_65_fu_76_coeff_ce0;
     coeff_d0 <= grp_rdc_mont_65_fu_76_coeff_d0;
     coeff_we0 <= grp_rdc_mont_65_fu_76_coeff_we0;
-    empty_158_fu_99_p2 <= std_logic_vector(unsigned(empty_fu_46) + unsigned(ap_const_lv5_1));
+    empty_156_fu_99_p2 <= std_logic_vector(unsigned(empty_fu_46) + unsigned(ap_const_lv5_1));
     exitcond1_fu_93_p2 <= "1" when (empty_fu_46 = ap_const_lv5_10) else "0";
     grp_digit_x_digit_fu_113_p_din1 <= grp_rdc_mont_65_fu_76_grp_digit_x_digit_fu_125_p_din1;
     grp_digit_x_digit_fu_113_p_din2 <= grp_rdc_mont_65_fu_76_grp_digit_x_digit_fu_125_p_din2;

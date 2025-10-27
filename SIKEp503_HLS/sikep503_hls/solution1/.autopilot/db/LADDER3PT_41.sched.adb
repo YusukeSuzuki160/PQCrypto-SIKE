@@ -8206,7 +8206,7 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>i_267</name>
+						<name>i_307</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>319</lineNumber>
@@ -21018,8 +21018,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1098857</mMinLatency>
-			<mMaxLatency>1802357</mMaxLatency>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -21065,8 +21065,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>250</mMinTripCount>
 			<mMaxTripCount>250</mMaxTripCount>
-			<mMinLatency>1098500</mMinLatency>
-			<mMaxLatency>1802000</mMaxLatency>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

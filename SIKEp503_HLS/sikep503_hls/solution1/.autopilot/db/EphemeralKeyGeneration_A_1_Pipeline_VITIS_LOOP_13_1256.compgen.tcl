@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 786 \
-    name pts_X \
+    id 104 \
+    name phiP_X_1 \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename pts_X \
+    corename phiP_X_1 \
     op interface \
-    ports { pts_X_address0 { O 7 vector } pts_X_ce0 { O 1 bit } pts_X_we0 { O 1 bit } pts_X_d0 { O 64 vector } } \
+    ports { phiP_X_1_address0 { O 3 vector } phiP_X_1_ce0 { O 1 bit } phiP_X_1_we0 { O 1 bit } phiP_X_1_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pts_X'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'phiP_X_1'"
 }
 }
 
@@ -30,35 +30,20 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 787 \
-    name R_X \
+    id 105 \
+    name B_gen_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename R_X \
+    corename B_gen_1 \
     op interface \
-    ports { R_X_address0 { O 4 vector } R_X_ce0 { O 1 bit } R_X_q0 { I 64 vector } } \
+    ports { B_gen_1_address0 { O 6 vector } B_gen_1_ce0 { O 1 bit } B_gen_1_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'R_X'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'B_gen_1'"
 }
 }
 
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 785 \
-    name zext_ln14_10 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_zext_ln14_10 \
-    op interface \
-    ports { zext_ln14_10 { I 7 vector } } \
-} "
-}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

@@ -350,3 +350,4 @@ namespace mpx
 } // namespace mpx
 
 #endif // MPX_KARATSUBA_TRUE_HPP
+

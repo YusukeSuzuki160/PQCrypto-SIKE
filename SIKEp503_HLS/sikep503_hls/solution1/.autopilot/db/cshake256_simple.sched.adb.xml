@@ -177,10 +177,10 @@ entry:4 %t = alloca i64 1
 
 <Node id="12" bw="8" op_0_bw="64">
 <![CDATA[
-entry:5 %t_92 = alloca i64 1
+entry:5 %t_56 = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="t_92"/></StgValue>
+<StgValue><ssdm name="t_56"/></StgValue>
 </operation>
 
 <operation id="22" st_id="1" stage="1" lat="1">
@@ -192,10 +192,10 @@ entry:5 %t_92 = alloca i64 1
 
 <Node id="13" bw="8" op_0_bw="64">
 <![CDATA[
-entry:6 %t_93 = alloca i64 1
+entry:6 %t_57 = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="t_93"/></StgValue>
+<StgValue><ssdm name="t_57"/></StgValue>
 </operation>
 
 <operation id="23" st_id="1" stage="1" lat="1">
@@ -207,10 +207,10 @@ entry:6 %t_93 = alloca i64 1
 
 <Node id="14" bw="8" op_0_bw="64">
 <![CDATA[
-entry:7 %t_94 = alloca i64 1
+entry:7 %t_58 = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="t_94"/></StgValue>
+<StgValue><ssdm name="t_58"/></StgValue>
 </operation>
 
 <operation id="24" st_id="1" stage="2" lat="2">
@@ -614,7 +614,7 @@ VITIS_LOOP_391_2.i.i.split:4 %call_ln396 = call void @KeccakF1600_StatePermute, 
 
 <Node id="29" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_391_2.i.i.split:1 %specloopname_ln388 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6
+VITIS_LOOP_391_2.i.i.split:1 %specloopname_ln388 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln388"/></StgValue>
@@ -716,7 +716,7 @@ BYTE.i.i.preheader:1 %call_ln435 = call void @KeccakF1600_StatePermute, i64 %s, 
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_94, i8 %t_93, i8 %t_92, i8 %t, i64 %s
+BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_58, i8 %t_57, i8 %t_56, i8 %t, i64 %s
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -734,7 +734,7 @@ BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="64" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_94, i8 %t_93, i8 %t_92, i8 %t, i64 %s
+BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_436_2, i8 %t_58, i8 %t_57, i8 %t_56, i8 %t, i64 %s
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -752,7 +752,7 @@ BYTE.i.i.preheader:2 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP
 
 <Node id="42" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:3 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_92, i8 %t_93, i8 %t_94, i8 %ephemeralsk_i
+BYTE.i.i.preheader:3 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_56, i8 %t_57, i8 %t_58, i8 %ephemeralsk_i
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -770,7 +770,7 @@ BYTE.i.i.preheader:3 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP
 
 <Node id="42" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-BYTE.i.i.preheader:3 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_92, i8 %t_93, i8 %t_94, i8 %ephemeralsk_i
+BYTE.i.i.preheader:3 %call_ln0 = call void @cshake256_simple_Pipeline_VITIS_LOOP_668_1, i8 %t, i8 %t_56, i8 %t_57, i8 %t_58, i8 %ephemeralsk_i
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>

@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>3</id>
-              <name>i_171</name>
+              <name>i_201</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>376</lineNumber>
@@ -162,7 +162,7 @@
             <Obj>
               <type>0</type>
               <id>6</id>
-              <name>i_171_write_ln376</name>
+              <name>i_201_write_ln376</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>376</lineNumber>
@@ -1484,7 +1484,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>bit_sel9</name>
+              <name>bit_sel6</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>381</lineNumber>
@@ -1523,7 +1523,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>bit_sel9_fu_159_p3</rtlName>
+              <rtlName>bit_sel6_fu_159_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2054,7 +2054,7 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>i_171_write_ln376</name>
+              <name>i_201_write_ln376</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>376</lineNumber>
@@ -3842,7 +3842,7 @@
           </second>
         </item>
         <item>
-          <first>i_171_fu_52</first>
+          <first>i_201_fu_52</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3957,7 +3957,7 @@
           </second>
         </item>
         <item>
-          <first>i_171_fu_52</first>
+          <first>i_201_fu_52</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4660,7 +4660,7 @@
         </second>
       </item>
       <item>
-        <first>bit_sel9_fu_159</first>
+        <first>bit_sel6_fu_159</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4676,7 +4676,7 @@
         </second>
       </item>
       <item>
-        <first>i_171_fu_52</first>
+        <first>i_201_fu_52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4925,7 +4925,7 @@
         </second>
       </item>
       <item>
-        <first>i_171_reg_211</first>
+        <first>i_201_reg_211</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

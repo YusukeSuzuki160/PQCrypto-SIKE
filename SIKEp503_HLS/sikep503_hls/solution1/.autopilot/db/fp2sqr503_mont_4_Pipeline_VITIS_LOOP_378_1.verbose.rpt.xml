@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2sqr503_mont_4_Pipeline_VITIS_LOOP_378_1'" level="0">
-<item name = "Date">Mon Oct 20 14:38:53 2025
+<item name = "Date">Sat Oct 25 16:55:34 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -99,7 +99,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_227">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_266">9, 2, 4, 8</column>
 <column name="carry_reg_99">9, 2, 1, 2</column>
 <column name="i_fu_56">9, 2, 4, 8</column>
 </table>

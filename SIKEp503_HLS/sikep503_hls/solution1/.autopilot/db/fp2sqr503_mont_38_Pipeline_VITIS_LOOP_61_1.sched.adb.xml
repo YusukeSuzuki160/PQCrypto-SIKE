@@ -31,10 +31,10 @@
 
 <Node id="4" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_146 = alloca i32 1
+newFuncRoot:0 %i_176 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_146"/></StgValue>
+<StgValue><ssdm name="i_176"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -76,7 +76,7 @@ newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %co
 
 <Node id="7" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:3 %store_ln56 = store i4 0, i4 %i_146
+newFuncRoot:3 %store_ln56 = store i4 0, i4 %i_176
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -106,7 +106,7 @@ newFuncRoot:4 %br_ln0 = br void %for.inc.i
 
 <Node id="11" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i:1 %i = load i4 %i_146
+for.inc.i:1 %i = load i4 %i_176
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -216,7 +216,7 @@ for.inc.i.split:6 %trunc_ln63 = trunc i4 %i
 
 <Node id="43" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i.split:27 %store_ln56 = store i4 %add_ln61, i4 %i_146
+for.inc.i.split:27 %store_ln56 = store i4 %add_ln61, i4 %i_176
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -313,10 +313,10 @@ for.inc.i.split:8 %zext_ln63_30 = zext i4 %zext_ln63_s
 
 <Node id="25" bw="6" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i.split:9 %coeff_addr_9 = getelementptr i64 %coeff, i64 0, i64 %zext_ln63_30
+for.inc.i.split:9 %coeff_addr_7 = getelementptr i64 %coeff, i64 0, i64 %zext_ln63_30
 
 ]]></Node>
-<StgValue><ssdm name="coeff_addr_9"/></StgValue>
+<StgValue><ssdm name="coeff_addr_7"/></StgValue>
 </operation>
 
 <operation id="25" st_id="2" stage="2" lat="2">
@@ -329,7 +329,7 @@ for.inc.i.split:9 %coeff_addr_9 = getelementptr i64 %coeff, i64 0, i64 %zext_ln6
 
 <Node id="26" bw="64" op_0_bw="6">
 <![CDATA[
-for.inc.i.split:10 %coeff_load_3 = load i6 %coeff_addr_9
+for.inc.i.split:10 %coeff_load_3 = load i6 %coeff_addr_7
 
 ]]></Node>
 <StgValue><ssdm name="coeff_load_3"/></StgValue>
@@ -380,7 +380,7 @@ for.end.i.exitStub:1 %ret_ln0 = ret
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.split:1 %specpipeline_ln56 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.i.split:1 %specpipeline_ln56 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln56"/></StgValue>
@@ -412,7 +412,7 @@ for.inc.i.split:2 %speclooptripcount_ln56 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i.split:3 %specloopname_ln61 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
+for.inc.i.split:3 %specloopname_ln61 = specloopname void @_ssdm_op_SpecLoopName, void @empty_91
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln61"/></StgValue>
@@ -428,7 +428,7 @@ for.inc.i.split:3 %specloopname_ln61 = specloopname void @_ssdm_op_SpecLoopName,
 
 <Node id="26" bw="64" op_0_bw="6">
 <![CDATA[
-for.inc.i.split:10 %coeff_load_3 = load i6 %coeff_addr_9
+for.inc.i.split:10 %coeff_load_3 = load i6 %coeff_addr_7
 
 ]]></Node>
 <StgValue><ssdm name="coeff_load_3"/></StgValue>
@@ -572,10 +572,10 @@ for.inc.i.split:18 %or_ln95 = or i64 %tempReg, i64 %sub_ln95
 
 <Node id="35" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
 <![CDATA[
-for.inc.i.split:19 %tmp_276 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
+for.inc.i.split:19 %tmp_270 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %or_ln95, i32 63
 
 ]]></Node>
-<StgValue><ssdm name="tmp_276"/></StgValue>
+<StgValue><ssdm name="tmp_270"/></StgValue>
 </operation>
 
 <operation id="39" st_id="3" stage="1" lat="1">
@@ -588,7 +588,7 @@ for.inc.i.split:19 %tmp_276 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %
 
 <Node id="36" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.inc.i.split:20 %xor_ln63 = xor i1 %tmp_276, i1 1
+for.inc.i.split:20 %xor_ln63 = xor i1 %tmp_270, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln63"/></StgValue>

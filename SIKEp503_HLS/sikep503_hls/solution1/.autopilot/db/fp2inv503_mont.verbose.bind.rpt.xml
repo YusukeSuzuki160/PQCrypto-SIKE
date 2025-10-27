@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2inv503_mont'" level="0">
-<item name = "Date">Mon Oct 20 16:15:51 2025
+<item name = "Date">Sat Oct 25 18:37:51 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.130 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.877 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">163147, 302205, 1.631 ms, 3.022 ms, 163147, 302205, no</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fpsqr503_mont_fu_54">fpsqr503_mont, 265, 500, 2.650 us, 5.000 us, 265, 500, no</column>
+<column name="grp_fpsqr503_mont_fu_54">fpsqr503_mont, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_fp2inv503_mont_Pipeline_VITIS_LOOP_33_1_fu_65">fp2inv503_mont_Pipeline_VITIS_LOOP_33_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2inv503_mont_Pipeline_VITIS_LOOP_39_2_fu_71">fp2inv503_mont_Pipeline_VITIS_LOOP_39_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2inv503_mont_Pipeline_VITIS_LOOP_46_3_fu_79">fp2inv503_mont_Pipeline_VITIS_LOOP_46_3, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2inv503_mont_Pipeline_VITIS_LOOP_13_1_fu_87">fp2inv503_mont_Pipeline_VITIS_LOOP_13_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2inv503_mont_Pipeline_VITIS_LOOP_79_1_fu_93">fp2inv503_mont_Pipeline_VITIS_LOOP_79_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpinv503_chain_mont_fu_101">fpinv503_chain_mont, 161245, 298802, 1.612 ms, 2.988 ms, 161245, 298802, no</column>
-<column name="grp_fpsqr503_mont_1_fu_108">fpsqr503_mont_1, 265, 500, 2.650 us, 5.000 us, 265, 500, no</column>
-<column name="grp_fpmul503_mont_3_362_fu_115">fpmul503_mont_3_362, 249, 436, 2.490 us, 4.360 us, 249, 436, no</column>
+<column name="grp_fpinv503_chain_mont_fu_101">fpinv503_chain_mont, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_fpsqr503_mont_1_fu_108">fpsqr503_mont_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_fpmul503_mont_3_365_fu_115">fpmul503_mont_3_365, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

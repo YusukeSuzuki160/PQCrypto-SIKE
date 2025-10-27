@@ -66,7 +66,7 @@ wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln28_fu_156_p1;
 reg   [3:0] i_fu_58;
 wire   [3:0] add_ln33_fu_126_p2;
-reg   [3:0] ap_sig_allocacmp_i_197;
+reg   [3:0] ap_sig_allocacmp_i_217;
 reg    Montgomery_one_1_ce0_local;
 reg    c_0_we0_local;
 wire   [63:0] add_ln35_fu_171_p2;
@@ -104,7 +104,7 @@ initial begin
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1236_Montgomery_one_1_ROM_Acud #(
+sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212_Montgomery_one_1_ROM_Acud #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -186,7 +186,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         icmp_ln33_reg_256 <= icmp_ln33_fu_120_p2;
-        lshr_ln_reg_264 <= {{ap_sig_allocacmp_i_197[2:1]}};
+        lshr_ln_reg_264 <= {{ap_sig_allocacmp_i_217[2:1]}};
         trunc_ln33_reg_260 <= trunc_ln33_fu_137_p1;
     end
 end
@@ -241,9 +241,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_197 = 4'd0;
+        ap_sig_allocacmp_i_217 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_197 = i_fu_58;
+        ap_sig_allocacmp_i_217 = i_fu_58;
     end
 end
 
@@ -292,7 +292,7 @@ end
 
 assign Montgomery_one_1_address0 = zext_ln33_fu_132_p1;
 
-assign add_ln33_fu_126_p2 = (ap_sig_allocacmp_i_197 + 4'd1);
+assign add_ln33_fu_126_p2 = (ap_sig_allocacmp_i_217 + 4'd1);
 
 assign add_ln35_fu_171_p2 = (Montgomery_one_1_q0 + tempReg_fu_165_p2);
 
@@ -338,7 +338,7 @@ assign c_1_d0 = add_ln35_fu_171_p2;
 
 assign c_1_we0 = c_1_we0_local;
 
-assign icmp_ln33_fu_120_p2 = ((ap_sig_allocacmp_i_197 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln33_fu_120_p2 = ((ap_sig_allocacmp_i_217 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln35_1_fu_235_p2 = (xor_ln35_3_fu_229_p2 | and_ln35_fu_223_p2);
 
@@ -346,7 +346,7 @@ assign or_ln35_fu_191_p2 = (xor_ln35_fu_179_p2 | xor_ln35_1_fu_185_p2);
 
 assign tempReg_fu_165_p2 = (Montgomery_one_1_q0 + zext_ln35_fu_161_p1);
 
-assign trunc_ln33_fu_137_p1 = ap_sig_allocacmp_i_197[0:0];
+assign trunc_ln33_fu_137_p1 = ap_sig_allocacmp_i_217[0:0];
 
 assign trunc_ln35_fu_211_p1 = tempReg_fu_165_p2[62:0];
 
@@ -362,7 +362,7 @@ assign xor_ln35_fu_179_p2 = (tempReg_fu_165_p2 ^ add_ln35_fu_171_p2);
 
 assign zext_ln28_fu_156_p1 = lshr_ln_reg_264;
 
-assign zext_ln33_fu_132_p1 = ap_sig_allocacmp_i_197;
+assign zext_ln33_fu_132_p1 = ap_sig_allocacmp_i_217;
 
 assign zext_ln35_fu_161_p1 = carry_reg_101;
 

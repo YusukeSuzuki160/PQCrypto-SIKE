@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 38,
-    "calls": "38 22 7 60 65",
+    "calls": "23 72 89 92 46",
     "file": "sikep503_kem_enc_hw.cpp",
     "fileloc": 28,
     "instructions": 225,
@@ -14,260 +14,62 @@
       "G": 1,
       "L": 17
     },
-    "total_instructions": 410433
+    "total_instructions": 472884
   },
   "1": {
-    "basicblocks": 7,
+    "basicblocks": 1,
     "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 54,
-    "instructions": 68,
+    "file": "config.h",
+    "fileloc": 103,
+    "instructions": 8,
+    "name": "is_digit_lessthan_ct",
+    "total_instructions": 8
+  },
+  "10": {
+    "basicblocks": 25,
+    "calls": "57 57 90 16 3",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 265,
     "loads": {
       "G": 1,
-      "L": 4
+      "L": 19
     },
-    "name": "fpsub503",
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1848
+  },
+  "11": {
+    "basicblocks": 7,
+    "calls": "16 68",
+    "file": "fpx.cpp",
+    "fileloc": 54,
+    "instructions": 38,
+    "name": "fpmul503_mont",
     "stores": {
       "L": 2
     },
-    "total_instructions": 68
-  },
-  "10": {
-    "basicblocks": 20,
-    "calls": "49 56 56 56 56 56 56 56 56 49 56 56 56 56 56 56 56 56",
-    "file": "fp_generic.cpp",
-    "fileloc": 299,
-    "instructions": 179,
-    "loads": {
-      "G": 2,
-      "L": 9
-    },
-    "name": "rdc_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 371
-  },
-  "11": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 219,
-    "loads": {
-      "L": 4
-    },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 219
+    "total_instructions": 729
   },
   "12": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 219,
+    "basicblocks": 13,
+    "calls": "56 37",
+    "file": "fpx.cpp",
+    "fileloc": 143,
+    "instructions": 132,
     "loads": {
+      "G": 1,
+      "L": 6
+    },
+    "name": "fp2sqr503_mont",
+    "stores": {
       "L": 4
     },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 219
+    "total_instructions": 1511
   },
   "13": {
-    "basicblocks": 10,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 89,
-    "loads": {
-      "G": 2,
-      "L": 4
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 89
-  },
-  "14": {
-    "basicblocks": 20,
-    "calls": "49 56 56 56 56 56 56 56 56 49 56 56 56 56 56 56 56 56",
-    "file": "fp_generic.cpp",
-    "fileloc": 299,
-    "instructions": 166,
-    "loads": {
-      "G": 2,
-      "L": 9
-    },
-    "name": "rdc_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 358
-  },
-  "15": {
-    "basicblocks": 19,
-    "calls": "81 81 84 36 84",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 203,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1577
-  },
-  "16": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 219,
-    "loads": {
-      "L": 4
-    },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 219
-  },
-  "17": {
-    "basicblocks": 10,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 93,
-    "loads": {
-      "G": 2,
-      "L": 4
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 93
-  },
-  "18": {
-    "basicblocks": 10,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 98,
-    "loads": {
-      "G": 2,
-      "L": 4
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 98
-  },
-  "19": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 223,
-    "loads": {
-      "L": 6
-    },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 223
-  },
-  "2": {
-    "basicblocks": 10,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 95,
-    "loads": {
-      "G": 2,
-      "L": 5
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 95
-  },
-  "20": {
-    "basicblocks": 19,
-    "calls": "58 81 84 36 84",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 198,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1566
-  },
-  "21": {
-    "basicblocks": 13,
-    "calls": "26 26",
-    "file": "sidh.cpp",
-    "fileloc": 62,
-    "instructions": 72,
-    "loads": {
-      "L": 4
-    },
-    "name": "fp2_decode",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 1252
-  },
-  "22": {
-    "basicblocks": 96,
-    "calls": "62 62 76 39 34 27 17 70 70 37 51 61 61 25 13 18 91 88 68 46 67 32 66 86 6 66 86 83 62 62 70 57 44 44 44 88 68 46 67 32 66 86 6 66 86 83 62 62 70 44 44 44 25 25 31 25 90 25 25 25 25 25 80 80 80 80 80 80",
-    "file": "sidh.cpp",
-    "fileloc": 118,
-    "instructions": 1266,
-    "loads": {
-      "G": 10,
-      "L": 17
-    },
-    "name": "EphemeralKeyGeneration_A",
-    "stores": {
-      "L": 127
-    },
-    "total_instructions": 208948
-  },
-  "23": {
-    "basicblocks": 29,
-    "calls": "49 56 56 56 56 56 56 56 56 49 56 56 56 56 56 56 56 56",
-    "file": "fp_generic.cpp",
-    "fileloc": 299,
-    "instructions": 209,
-    "loads": {
-      "G": 2,
-      "L": 11
-    },
-    "name": "rdc_mont",
-    "stores": {
-      "L": 7
-    },
-    "total_instructions": 401
-  },
-  "24": {
     "basicblocks": 7,
     "calls": "",
     "file": "fp_generic.cpp",
@@ -283,81 +85,107 @@
     },
     "total_instructions": 64
   },
-  "25": {
-    "basicblocks": 19,
-    "calls": "36 36 84 36 84",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 195,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1557
-  },
-  "26": {
-    "basicblocks": 4,
-    "calls": "36 84",
-    "file": "fpx.cpp",
-    "fileloc": 54,
-    "instructions": 17,
-    "name": "fpmul503_mont",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 590
-  },
-  "27": {
-    "basicblocks": 10,
-    "calls": "",
+  "14": {
+    "basicblocks": 1,
+    "calls": "49",
     "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 90,
-    "loads": {
-      "G": 2,
-      "L": 4
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 90
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 286
   },
-  "28": {
-    "basicblocks": 19,
-    "calls": "9 8 84 36 84",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 198,
+  "15": {
+    "basicblocks": 20,
+    "calls": "",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 159,
+    "instructions": 111,
     "loads": {
-      "G": 1,
-      "L": 11
+      "L": 2
     },
-    "name": "fp2mul503_mont",
+    "name": "convert_blocks_to_digits",
     "stores": {
       "L": 6
     },
-    "total_instructions": 1566
+    "total_instructions": 111
   },
-  "29": {
-    "basicblocks": 4,
-    "calls": "81 23",
+  "16": {
+    "basicblocks": 1,
+    "calls": "26",
+    "file": "fp_generic.cpp",
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 283
+  },
+  "17": {
+    "basicblocks": 25,
+    "calls": "14 14 90 16 3",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 265,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1844
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "54 54 51 51 67 51 51 13 13 54 54 22 67 22 51 51 22 10 51 51 54 54 54 54 22 67 67 84",
+    "file": "ec_isogeny.cpp",
+    "fileloc": 236,
+    "instructions": 83,
+    "name": "xDBLADD",
+    "total_instructions": 18447
+  },
+  "19": {
+    "basicblocks": 25,
+    "calls": "76 71 88 16 66",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 260,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1851
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "71 3",
     "file": "fpx.cpp",
     "fileloc": 54,
-    "instructions": 17,
+    "instructions": 38,
     "name": "fpmul503_mont",
     "stores": {
-      "L": 1
+      "L": 2
     },
-    "total_instructions": 640
+    "total_instructions": 691
   },
-  "3": {
+  "20": {
+    "basicblocks": 7,
+    "calls": "36 3",
+    "file": "fpx.cpp",
+    "fileloc": 54,
+    "instructions": 38,
+    "name": "fpmul503_mont",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 693
+  },
+  "21": {
     "basicblocks": 142,
-    "calls": "4 26 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26 4 26",
+    "calls": "48 56 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56 48 56",
     "file": "fpx.cpp",
     "fileloc": 198,
     "instructions": 852,
@@ -368,131 +196,27 @@
     "stores": {
       "L": 2
     },
-    "total_instructions": 53362
+    "total_instructions": 62084
   },
-  "30": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 213,
-    "loads": {
-      "L": 4
-    },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 213
-  },
-  "31": {
-    "basicblocks": 16,
-    "calls": "4 4 3 4 4 26 26 26",
-    "file": "fpx.cpp",
-    "fileloc": 345,
-    "instructions": 186,
-    "loads": {
-      "G": 3,
-      "L": 6
-    },
-    "name": "fp2inv503_mont",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 57678
-  },
-  "32": {
-    "basicblocks": 13,
-    "calls": "87 53",
-    "file": "fpx.cpp",
-    "fileloc": 143,
-    "instructions": 132,
-    "loads": {
-      "G": 1,
-      "L": 6
-    },
-    "name": "fp2sqr503_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 1333
-  },
-  "33": {
-    "basicblocks": 19,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 122,
-    "loads": {
-      "G": 3,
-      "L": 4
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 122
-  },
-  "34": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 54,
-    "instructions": 66,
-    "loads": {
-      "G": 1,
-      "L": 3
-    },
-    "name": "fpsub503",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 66
-  },
-  "35": {
-    "basicblocks": 19,
-    "calls": "36 36 84 36 84",
+  "22": {
+    "basicblocks": 25,
+    "calls": "16 16 90 16 3",
     "file": "fpx.cpp",
     "fileloc": 175,
-    "instructions": 199,
+    "instructions": 257,
     "loads": {
       "G": 1,
-      "L": 11
+      "L": 17
     },
     "name": "fp2mul503_mont",
     "stores": {
-      "L": 6
+      "L": 8
     },
-    "total_instructions": 1561
+    "total_instructions": 1830
   },
-  "36": {
-    "basicblocks": 1,
-    "calls": "54",
-    "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 216
-  },
-  "37": {
-    "basicblocks": 19,
-    "calls": "36 36 59 36 10",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 195,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1572
-  },
-  "38": {
+  "23": {
     "basicblocks": 32,
-    "calls": "40 40 40",
+    "calls": "82 82 82",
     "file": "fips202.cpp",
     "fileloc": 636,
     "instructions": 264,
@@ -505,154 +229,23 @@
     },
     "total_instructions": 1890
   },
-  "39": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 54,
-    "instructions": 63,
-    "loads": {
-      "G": 1,
-      "L": 3
-    },
-    "name": "fpsub503",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 63
-  },
-  "4": {
-    "basicblocks": 4,
-    "calls": "36 84",
-    "file": "fpx.cpp",
-    "fileloc": 66,
-    "instructions": 17,
-    "name": "fpsqr503_mont",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 590
-  },
-  "40": {
-    "basicblocks": 4,
-    "calls": "",
-    "file": "fips202.cpp",
-    "fileloc": 71,
-    "instructions": 542,
-    "loads": {
-      "G": 2,
-      "L": 25
-    },
-    "name": "KeccakF1600_StatePermute",
-    "stores": {
-      "L": 25
-    },
-    "total_instructions": 542
-  },
-  "41": {
-    "basicblocks": 19,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 127,
-    "loads": {
-      "G": 2,
-      "L": 7
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 127
-  },
-  "42": {
-    "basicblocks": 1,
-    "calls": "64",
-    "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 226
-  },
-  "43": {
-    "basicblocks": 1,
-    "calls": "72",
-    "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 226
-  },
-  "44": {
-    "basicblocks": 1,
-    "calls": "62 62 61 61 69 69 25 20 62 62 61 61 70 70 62 62 61 61 25 25",
-    "file": "ec_isogeny.cpp",
-    "fileloc": 59,
-    "instructions": 77,
-    "name": "eval_4_isog",
-    "total_instructions": 12994
-  },
-  "45": {
+  "24": {
     "basicblocks": 13,
-    "calls": "26 26",
+    "calls": "56 20",
     "file": "fpx.cpp",
     "fileloc": 143,
-    "instructions": 129,
+    "instructions": 147,
     "loads": {
       "G": 1,
-      "L": 6
+      "L": 11
     },
     "name": "fp2sqr503_mont",
     "stores": {
       "L": 4
     },
-    "total_instructions": 1309
+    "total_instructions": 1528
   },
-  "46": {
-    "basicblocks": 10,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 99,
-    "loads": {
-      "G": 2,
-      "L": 4
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 99
-  },
-  "47": {
-    "basicblocks": 4,
-    "calls": "36 23",
-    "file": "fpx.cpp",
-    "fileloc": 54,
-    "instructions": 17,
-    "name": "fpmul503_mont",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 634
-  },
-  "48": {
-    "basicblocks": 55,
-    "calls": "77 77 41 41 78 78 73 28",
-    "file": "ec_isogeny.cpp",
-    "fileloc": 286,
-    "instructions": 570,
-    "loads": {
-      "G": 4,
-      "L": 22
-    },
-    "name": "LADDER3PT",
-    "stores": {
-      "L": 88
-    },
-    "total_instructions": 19054
-  },
-  "49": {
+  "25": {
     "basicblocks": 1,
     "calls": "",
     "file": "fp_generic.cpp",
@@ -664,169 +257,38 @@
     },
     "total_instructions": 32
   },
-  "5": {
-    "basicblocks": 4,
-    "calls": "8 84",
-    "file": "fpx.cpp",
-    "fileloc": 54,
-    "instructions": 17,
-    "name": "fpmul503_mont",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 596
-  },
-  "50": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 213,
+  "26": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 169,
     "loads": {
-      "L": 4
+      "L": 8
     },
     "name": "mul",
     "stores": {
-      "L": 5
+      "L": 10
     },
-    "total_instructions": 213
+    "total_instructions": 280
   },
-  "51": {
-    "basicblocks": 19,
-    "calls": "9 8 59 36 10",
+  "27": {
+    "basicblocks": 25,
+    "calls": "16 16 90 16 3",
     "file": "fpx.cpp",
     "fileloc": 175,
-    "instructions": 198,
+    "instructions": 259,
     "loads": {
       "G": 1,
-      "L": 11
+      "L": 17
     },
     "name": "fp2mul503_mont",
     "stores": {
-      "L": 6
+      "L": 8
     },
-    "total_instructions": 1581
+    "total_instructions": 1832
   },
-  "52": {
-    "basicblocks": 1,
-    "calls": "92",
-    "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 216
-  },
-  "53": {
-    "basicblocks": 4,
-    "calls": "8 75",
-    "file": "fpx.cpp",
-    "fileloc": 54,
-    "instructions": 17,
-    "name": "fpmul503_mont",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 610
-  },
-  "54": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 213,
-    "loads": {
-      "L": 4
-    },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 213
-  },
-  "55": {
-    "basicblocks": 1,
-    "calls": "12",
-    "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 222
-  },
-  "56": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "config.h",
-    "fileloc": 103,
-    "instructions": 8,
-    "name": "is_digit_lessthan_ct",
-    "total_instructions": 8
-  },
-  "57": {
-    "basicblocks": 1,
-    "calls": "62 62 61 61 15 15 25 20 62 62 61 61 70 45 62 62 61 61 35 35",
-    "file": "ec_isogeny.cpp",
-    "fileloc": 59,
-    "instructions": 79,
-    "name": "eval_4_isog",
-    "total_instructions": 13011
-  },
-  "58": {
-    "basicblocks": 1,
-    "calls": "50",
-    "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 216
-  },
-  "59": {
-    "basicblocks": 20,
-    "calls": "49 56 56 56 56 56 56 56 56 49 56 56 56 56 56 56 56 56",
-    "file": "fp_generic.cpp",
-    "fileloc": 299,
-    "instructions": 166,
-    "loads": {
-      "G": 2,
-      "L": 9
-    },
-    "name": "rdc_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 358
-  },
-  "6": {
-    "basicblocks": 13,
-    "calls": "26 82",
-    "file": "fpx.cpp",
-    "fileloc": 143,
-    "instructions": 132,
-    "loads": {
-      "G": 1,
-      "L": 6
-    },
-    "name": "fp2sqr503_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 1318
-  },
-  "60": {
-    "basicblocks": 30,
-    "calls": "40 40",
-    "file": "fips202.cpp",
-    "fileloc": 636,
-    "instructions": 203,
-    "loads": {
-      "L": 14
-    },
-    "name": "cshake256_simple",
-    "stores": {
-      "L": 12
-    },
-    "total_instructions": 1287
-  },
-  "61": {
+  "28": {
     "basicblocks": 7,
     "calls": "",
     "file": "fp_generic.cpp",
@@ -842,78 +304,7 @@
     },
     "total_instructions": 63
   },
-  "62": {
-    "basicblocks": 10,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 90,
-    "loads": {
-      "G": 2,
-      "L": 4
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 90
-  },
-  "63": {
-    "basicblocks": 1,
-    "calls": "19",
-    "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 226
-  },
-  "64": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 223,
-    "loads": {
-      "L": 6
-    },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 223
-  },
-  "65": {
-    "basicblocks": 36,
-    "calls": "40 40 40",
-    "file": "fips202.cpp",
-    "fileloc": 636,
-    "instructions": 285,
-    "loads": {
-      "L": 23
-    },
-    "name": "cshake256_simple",
-    "stores": {
-      "L": 12
-    },
-    "total_instructions": 1911
-  },
-  "66": {
-    "basicblocks": 10,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 26,
-    "instructions": 87,
-    "loads": {
-      "G": 2,
-      "L": 3
-    },
-    "name": "fpadd503",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 87
-  },
-  "67": {
+  "29": {
     "basicblocks": 10,
     "calls": "",
     "file": "fp_generic.cpp",
@@ -929,159 +320,55 @@
     },
     "total_instructions": 101
   },
-  "68": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "fp_generic.cpp",
-    "fileloc": 54,
-    "instructions": 71,
-    "loads": {
-      "G": 1,
-      "L": 3
-    },
-    "name": "fpsub503",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 71
-  },
-  "69": {
-    "basicblocks": 19,
-    "calls": "81 81 84 36 84",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 201,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1575
-  },
-  "7": {
-    "basicblocks": 71,
-    "calls": "21 21 21 62 62 25 25 62 62 25 61 61 62 62 62 62 62 62 70 31 25 61 61 33 2 2 77 48 39 34 27 17 70 70 79 51 61 61 25 13 18 91 88 68 46 67 32 66 86 89 66 86 83 62 62 70 62 62 61 61 69 69 25 20 62 62 61 61 70 70 62 62 61 61 25 25 88 68 46 67 32 66 86 89 66 86 83 62 62 70 78 1 1 78 70 74 62 62 61 61 61 61 61 61 70 25 62 62 62 62 70 25 62 62 62 62 31 25 80 80",
-    "file": "sidh.cpp",
-    "fileloc": 269,
-    "instructions": 891,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "EphemeralSecretAgreement_A",
-    "stores": {
-      "L": 25
-    },
-    "total_instructions": 196172
-  },
-  "70": {
-    "basicblocks": 13,
-    "calls": "26 26",
-    "file": "fpx.cpp",
-    "fileloc": 143,
-    "instructions": 126,
-    "loads": {
-      "G": 1,
-      "L": 6
-    },
-    "name": "fp2sqr503_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 1306
-  },
-  "71": {
-    "basicblocks": 19,
-    "calls": "42 42 84 36 84",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 203,
-    "loads": {
-      "G": 1,
-      "L": 13
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1585
-  },
-  "72": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 223,
-    "loads": {
-      "L": 6
-    },
-    "name": "mul",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 223
-  },
-  "73": {
-    "basicblocks": 1,
-    "calls": "62 62 61 61 70 61 61 24 24 62 62 25 70 25 61 61 25 71 61 61 62 62 62 62 25 70 70 28",
-    "file": "ec_isogeny.cpp",
-    "fileloc": 236,
-    "instructions": 83,
-    "name": "xDBLADD",
-    "total_instructions": 16038
-  },
-  "74": {
-    "basicblocks": 13,
-    "calls": "26 85",
-    "file": "fpx.cpp",
-    "fileloc": 143,
-    "instructions": 147,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2sqr503_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 1337
-  },
-  "75": {
+  "3": {
     "basicblocks": 20,
-    "calls": "49 56 56 56 56 56 56 56 56 49 56 56 56 56 56 56 56 56",
+    "calls": "25 1 1 1 1 1 1 1 1 25 1 1 1 1 1 1 1 1",
     "file": "fp_generic.cpp",
     "fileloc": 299,
-    "instructions": 179,
+    "instructions": 175,
     "loads": {
       "G": 2,
-      "L": 9
+      "L": 11
     },
     "name": "rdc_mont",
     "stores": {
       "L": 4
     },
-    "total_instructions": 371
+    "total_instructions": 367
   },
-  "76": {
-    "basicblocks": 55,
-    "calls": "77 77 41 41 78 78 73 28",
-    "file": "ec_isogeny.cpp",
-    "fileloc": 286,
-    "instructions": 570,
+  "30": {
+    "basicblocks": 20,
+    "calls": "25 1 1 1 1 1 1 1 1 25 1 1 1 1 1 1 1 1",
+    "file": "fp_generic.cpp",
+    "fileloc": 299,
+    "instructions": 189,
     "loads": {
-      "G": 10,
-      "L": 16
+      "G": 2,
+      "L": 11
     },
-    "name": "LADDER3PT",
+    "name": "rdc_mont",
     "stores": {
-      "L": 88
+      "L": 4
     },
-    "total_instructions": 19054
+    "total_instructions": 381
   },
-  "77": {
+  "31": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 122,
+    "loads": {
+      "G": 3,
+      "L": 4
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 122
+  },
+  "32": {
     "basicblocks": 19,
     "calls": "",
     "file": "fp_generic.cpp",
@@ -1097,129 +384,138 @@
     },
     "total_instructions": 130
   },
-  "78": {
-    "basicblocks": 25,
-    "calls": "",
-    "file": "fpx.cpp",
-    "fileloc": 119,
-    "instructions": 183,
+  "33": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 169,
     "loads": {
-      "G": 2,
-      "L": 16
+      "L": 8
     },
-    "name": "fp2div2_503",
+    "name": "mul",
     "stores": {
       "L": 10
     },
-    "total_instructions": 183
+    "total_instructions": 280
   },
-  "79": {
-    "basicblocks": 19,
-    "calls": "43 43 59 36 10",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 203,
-    "loads": {
-      "G": 1,
-      "L": 13
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1600
-  },
-  "8": {
-    "basicblocks": 1,
-    "calls": "11",
+  "34": {
+    "basicblocks": 10,
+    "calls": "",
     "file": "fp_generic.cpp",
-    "fileloc": 270,
-    "instructions": 3,
-    "name": "mp_mul",
-    "total_instructions": 222
+    "fileloc": 26,
+    "instructions": 93,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 93
   },
-  "80": {
+  "35": {
     "basicblocks": 7,
-    "calls": "26",
-    "file": "fpx.cpp",
-    "fileloc": 33,
-    "instructions": 65,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 54,
+    "instructions": 66,
     "loads": {
-      "G": 2,
-      "L": 2
+      "G": 1,
+      "L": 3
     },
-    "name": "from_mont",
+    "name": "fpsub503",
     "stores": {
       "L": 2
     },
-    "total_instructions": 655
+    "total_instructions": 66
   },
-  "81": {
+  "36": {
     "basicblocks": 1,
-    "calls": "16",
+    "calls": "9",
     "file": "fp_generic.cpp",
     "fileloc": 270,
     "instructions": 3,
     "name": "mp_mul",
-    "total_instructions": 222
+    "total_instructions": 288
   },
-  "82": {
-    "basicblocks": 4,
-    "calls": "81 84",
+  "37": {
+    "basicblocks": 7,
+    "calls": "14 3",
     "file": "fpx.cpp",
     "fileloc": 54,
-    "instructions": 17,
+    "instructions": 38,
     "name": "fpmul503_mont",
     "stores": {
-      "L": 1
+      "L": 2
     },
-    "total_instructions": 596
+    "total_instructions": 691
   },
-  "83": {
-    "basicblocks": 13,
-    "calls": "26 5",
-    "file": "fpx.cpp",
-    "fileloc": 143,
-    "instructions": 132,
-    "loads": {
-      "G": 1,
-      "L": 6
-    },
-    "name": "fp2sqr503_mont",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 1318
-  },
-  "84": {
-    "basicblocks": 20,
-    "calls": "49 56 56 56 56 56 56 56 56 49 56 56 56 56 56 56 56 56",
+  "38": {
+    "basicblocks": 10,
+    "calls": "",
     "file": "fp_generic.cpp",
-    "fileloc": 299,
-    "instructions": 165,
+    "fileloc": 26,
+    "instructions": 95,
     "loads": {
       "G": 2,
-      "L": 9
+      "L": 5
     },
-    "name": "rdc_mont",
+    "name": "fpadd503",
     "stores": {
+      "L": 3
+    },
+    "total_instructions": 95
+  },
+  "39": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 169,
+    "loads": {
+      "L": 8
+    },
+    "name": "mul",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 280
+  },
+  "4": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 90,
+    "loads": {
+      "G": 2,
       "L": 4
     },
-    "total_instructions": 357
-  },
-  "85": {
-    "basicblocks": 4,
-    "calls": "63 84",
-    "file": "fpx.cpp",
-    "fileloc": 54,
-    "instructions": 17,
-    "name": "fpmul503_mont",
+    "name": "fpadd503",
     "stores": {
-      "L": 1
+      "L": 3
     },
-    "total_instructions": 600
+    "total_instructions": 90
   },
-  "86": {
+  "40": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 54,
+    "instructions": 68,
+    "loads": {
+      "G": 1,
+      "L": 4
+    },
+    "name": "fpsub503",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 68
+  },
+  "41": {
     "basicblocks": 10,
     "calls": "",
     "file": "fp_generic.cpp",
@@ -1235,19 +531,525 @@
     },
     "total_instructions": 96
   },
-  "87": {
-    "basicblocks": 4,
-    "calls": "36 14",
+  "42": {
+    "basicblocks": 20,
+    "calls": "25 1 1 1 1 1 1 1 1 25 1 1 1 1 1 1 1 1",
+    "file": "fp_generic.cpp",
+    "fileloc": 299,
+    "instructions": 176,
+    "loads": {
+      "G": 2,
+      "L": 11
+    },
+    "name": "rdc_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 368
+  },
+  "43": {
+    "basicblocks": 7,
+    "calls": "71 30",
     "file": "fpx.cpp",
     "fileloc": 54,
-    "instructions": 17,
+    "instructions": 38,
     "name": "fpmul503_mont",
     "stores": {
-      "L": 1
+      "L": 2
     },
-    "total_instructions": 591
+    "total_instructions": 705
   },
-  "88": {
+  "44": {
+    "basicblocks": 25,
+    "calls": "6 6 88 16 66",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 265,
+    "loads": {
+      "G": 1,
+      "L": 19
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1863
+  },
+  "45": {
+    "basicblocks": 55,
+    "calls": "32 32 94 94 8 8 18 84",
+    "file": "ec_isogeny.cpp",
+    "fileloc": 286,
+    "instructions": 570,
+    "loads": {
+      "G": 10,
+      "L": 16
+    },
+    "name": "LADDER3PT",
+    "stores": {
+      "L": 88
+    },
+    "total_instructions": 21733
+  },
+  "46": {
+    "basicblocks": 36,
+    "calls": "82 82 82",
+    "file": "fips202.cpp",
+    "fileloc": 636,
+    "instructions": 285,
+    "loads": {
+      "L": 23
+    },
+    "name": "cshake256_simple",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 1911
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "78",
+    "file": "fp_generic.cpp",
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 286
+  },
+  "48": {
+    "basicblocks": 7,
+    "calls": "16 3",
+    "file": "fpx.cpp",
+    "fileloc": 66,
+    "instructions": 38,
+    "name": "fpsqr503_mont",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 688
+  },
+  "49": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 172,
+    "loads": {
+      "L": 8
+    },
+    "name": "mul",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 283
+  },
+  "5": {
+    "basicblocks": 25,
+    "calls": "14 14 90 16 3",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 263,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1842
+  },
+  "50": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 54,
+    "instructions": 71,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "fpsub503",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 71
+  },
+  "51": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 54,
+    "instructions": 63,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "fpsub503",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 63
+  },
+  "52": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 87,
+    "loads": {
+      "G": 2,
+      "L": 3
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 87
+  },
+  "53": {
+    "basicblocks": 13,
+    "calls": "56 2",
+    "file": "fpx.cpp",
+    "fileloc": 143,
+    "instructions": 132,
+    "loads": {
+      "G": 1,
+      "L": 6
+    },
+    "name": "fp2sqr503_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1511
+  },
+  "54": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 90,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 90
+  },
+  "55": {
+    "basicblocks": 25,
+    "calls": "16 16 90 16 3",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 261,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1834
+  },
+  "56": {
+    "basicblocks": 7,
+    "calls": "16 3",
+    "file": "fpx.cpp",
+    "fileloc": 54,
+    "instructions": 38,
+    "name": "fpmul503_mont",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 688
+  },
+  "57": {
+    "basicblocks": 1,
+    "calls": "87",
+    "file": "fp_generic.cpp",
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 288
+  },
+  "58": {
+    "basicblocks": 13,
+    "calls": "56 56",
+    "file": "fpx.cpp",
+    "fileloc": 143,
+    "instructions": 129,
+    "loads": {
+      "G": 1,
+      "L": 6
+    },
+    "name": "fp2sqr503_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1505
+  },
+  "59": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 98,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 98
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "69",
+    "file": "fp_generic.cpp",
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 288
+  },
+  "60": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 89,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 89
+  },
+  "61": {
+    "basicblocks": 25,
+    "calls": "16 16 88 16 66",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 257,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1845
+  },
+  "62": {
+    "basicblocks": 55,
+    "calls": "32 32 94 94 8 8 18 84",
+    "file": "ec_isogeny.cpp",
+    "fileloc": 286,
+    "instructions": 570,
+    "loads": {
+      "G": 4,
+      "L": 22
+    },
+    "name": "LADDER3PT",
+    "stores": {
+      "L": 88
+    },
+    "total_instructions": 21733
+  },
+  "63": {
+    "basicblocks": 7,
+    "calls": "56",
+    "file": "fpx.cpp",
+    "fileloc": 33,
+    "instructions": 65,
+    "loads": {
+      "G": 2,
+      "L": 2
+    },
+    "name": "from_mont",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 753
+  },
+  "64": {
+    "basicblocks": 25,
+    "calls": "86 47 88 16 66",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 260,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1851
+  },
+  "65": {
+    "basicblocks": 13,
+    "calls": "79 43",
+    "file": "fpx.cpp",
+    "fileloc": 143,
+    "instructions": 132,
+    "loads": {
+      "G": 1,
+      "L": 6
+    },
+    "name": "fp2sqr503_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1526
+  },
+  "66": {
+    "basicblocks": 20,
+    "calls": "25 1 1 1 1 1 1 1 1 25 1 1 1 1 1 1 1 1",
+    "file": "fp_generic.cpp",
+    "fileloc": 299,
+    "instructions": 189,
+    "loads": {
+      "G": 2,
+      "L": 11
+    },
+    "name": "rdc_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 381
+  },
+  "67": {
+    "basicblocks": 13,
+    "calls": "56 56",
+    "file": "fpx.cpp",
+    "fileloc": 143,
+    "instructions": 126,
+    "loads": {
+      "G": 1,
+      "L": 6
+    },
+    "name": "fp2sqr503_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1502
+  },
+  "68": {
+    "basicblocks": 29,
+    "calls": "25 1 1 1 1 1 1 1 1 25 1 1 1 1 1 1 1 1",
+    "file": "fp_generic.cpp",
+    "fileloc": 299,
+    "instructions": 216,
+    "loads": {
+      "G": 2,
+      "L": 13
+    },
+    "name": "rdc_mont",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 408
+  },
+  "69": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 174,
+    "loads": {
+      "L": 9
+    },
+    "name": "mul",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 285
+  },
+  "7": {
+    "basicblocks": 13,
+    "calls": "56 56",
+    "file": "sidh.cpp",
+    "fileloc": 62,
+    "instructions": 72,
+    "loads": {
+      "L": 4
+    },
+    "name": "fp2_decode",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1448
+  },
+  "70": {
+    "basicblocks": 1,
+    "calls": "91",
+    "file": "fp_generic.cpp",
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 283
+  },
+  "71": {
+    "basicblocks": 1,
+    "calls": "93",
+    "file": "fp_generic.cpp",
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 286
+  },
+  "72": {
+    "basicblocks": 96,
+    "calls": "54 54 45 28 35 4 34 67 67 61 19 51 51 22 60 59 64 75 50 73 29 65 52 41 12 52 41 53 54 54 67 74 81 81 81 75 50 73 29 65 52 41 12 52 41 53 54 54 67 81 81 81 22 22 80 22 27 22 22 22 22 22 63 63 63 63 63 63",
+    "file": "sidh.cpp",
+    "fileloc": 118,
+    "instructions": 1266,
+    "loads": {
+      "G": 10,
+      "L": 17
+    },
+    "name": "EphemeralKeyGeneration_A",
+    "stores": {
+      "L": 127
+    },
+    "total_instructions": 241213
+  },
+  "73": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 99,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 99
+  },
+  "74": {
+    "basicblocks": 1,
+    "calls": "54 54 51 51 17 17 22 83 54 54 51 51 67 58 54 54 51 51 55 55",
+    "file": "ec_isogeny.cpp",
+    "fileloc": 59,
+    "instructions": 79,
+    "name": "eval_4_isog",
+    "total_instructions": 15026
+  },
+  "75": {
     "basicblocks": 7,
     "calls": "",
     "file": "fp_generic.cpp",
@@ -1263,9 +1065,146 @@
     },
     "total_instructions": 69
   },
-  "89": {
+  "76": {
+    "basicblocks": 1,
+    "calls": "39",
+    "file": "fp_generic.cpp",
+    "fileloc": 270,
+    "instructions": 3,
+    "name": "mp_mul",
+    "total_instructions": 283
+  },
+  "77": {
+    "basicblocks": 7,
+    "calls": "14 68",
+    "file": "fpx.cpp",
+    "fileloc": 54,
+    "instructions": 38,
+    "name": "fpmul503_mont",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 732
+  },
+  "78": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 172,
+    "loads": {
+      "L": 8
+    },
+    "name": "mul",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 283
+  },
+  "79": {
+    "basicblocks": 7,
+    "calls": "16 42",
+    "file": "fpx.cpp",
+    "fileloc": 54,
+    "instructions": 38,
+    "name": "fpmul503_mont",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 689
+  },
+  "8": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "fpx.cpp",
+    "fileloc": 119,
+    "instructions": 183,
+    "loads": {
+      "G": 2,
+      "L": 16
+    },
+    "name": "fp2div2_503",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 183
+  },
+  "80": {
+    "basicblocks": 16,
+    "calls": "48 48 21 48 48 56 56 56",
+    "file": "fpx.cpp",
+    "fileloc": 345,
+    "instructions": 186,
+    "loads": {
+      "G": 3,
+      "L": 6
+    },
+    "name": "fp2inv503_mont",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 67086
+  },
+  "81": {
+    "basicblocks": 1,
+    "calls": "54 54 51 51 5 5 22 83 54 54 51 51 67 67 54 54 51 51 22 22",
+    "file": "ec_isogeny.cpp",
+    "fileloc": 59,
+    "instructions": 77,
+    "name": "eval_4_isog",
+    "total_instructions": 15009
+  },
+  "82": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "fips202.cpp",
+    "fileloc": 71,
+    "instructions": 542,
+    "loads": {
+      "G": 2,
+      "L": 25
+    },
+    "name": "KeccakF1600_StatePermute",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 542
+  },
+  "83": {
+    "basicblocks": 25,
+    "calls": "70 14 90 16 3",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 260,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1836
+  },
+  "84": {
+    "basicblocks": 25,
+    "calls": "76 71 90 16 3",
+    "file": "fpx.cpp",
+    "fileloc": 175,
+    "instructions": 260,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "name": "fp2mul503_mont",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1836
+  },
+  "85": {
     "basicblocks": 13,
-    "calls": "47 29",
+    "calls": "11 77",
     "file": "fpx.cpp",
     "fileloc": 143,
     "instructions": 132,
@@ -1277,62 +1216,154 @@
     "stores": {
       "L": 4
     },
-    "total_instructions": 1406
+    "total_instructions": 1593
   },
-  "9": {
+  "86": {
     "basicblocks": 1,
-    "calls": "30",
+    "calls": "33",
     "file": "fp_generic.cpp",
     "fileloc": 270,
     "instructions": 3,
     "name": "mp_mul",
-    "total_instructions": 216
+    "total_instructions": 283
   },
-  "90": {
-    "basicblocks": 19,
-    "calls": "36 36 84 36 84",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 197,
+  "87": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 174,
     "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1559
-  },
-  "91": {
-    "basicblocks": 19,
-    "calls": "52 55 59 36 10",
-    "file": "fpx.cpp",
-    "fileloc": 175,
-    "instructions": 198,
-    "loads": {
-      "G": 1,
-      "L": 11
-    },
-    "name": "fp2mul503_mont",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 1581
-  },
-  "92": {
-    "basicblocks": 40,
-    "calls": "",
-    "file": "mpx_comba_mul.hpp",
-    "fileloc": 185,
-    "instructions": 213,
-    "loads": {
-      "L": 4
+      "L": 9
     },
     "name": "mul",
     "stores": {
-      "L": 5
+      "L": 10
     },
-    "total_instructions": 213
+    "total_instructions": 285
+  },
+  "88": {
+    "basicblocks": 20,
+    "calls": "25 1 1 1 1 1 1 1 1 25 1 1 1 1 1 1 1 1",
+    "file": "fp_generic.cpp",
+    "fileloc": 299,
+    "instructions": 166,
+    "loads": {
+      "G": 2,
+      "L": 9
+    },
+    "name": "rdc_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 358
+  },
+  "89": {
+    "basicblocks": 71,
+    "calls": "7 7 7 54 54 22 22 54 54 22 51 51 54 54 54 54 54 54 67 80 22 51 51 31 38 38 32 62 28 35 4 34 67 67 44 19 51 51 22 60 59 64 75 50 73 29 65 52 41 85 52 41 53 54 54 67 54 54 51 51 5 5 22 83 54 54 51 51 67 67 54 54 51 51 22 22 75 50 73 29 65 52 41 85 52 41 53 54 54 67 8 40 40 8 67 24 54 54 51 51 51 51 51 51 67 22 54 54 54 54 67 22 54 54 54 54 80 22 63 63",
+    "file": "sidh.cpp",
+    "fileloc": 269,
+    "instructions": 891,
+    "loads": {
+      "G": 1,
+      "L": 11
+    },
+    "name": "EphemeralSecretAgreement_A",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 226358
+  },
+  "9": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 174,
+    "loads": {
+      "L": 9
+    },
+    "name": "mul",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 285
+  },
+  "90": {
+    "basicblocks": 20,
+    "calls": "25 1 1 1 1 1 1 1 1 25 1 1 1 1 1 1 1 1",
+    "file": "fp_generic.cpp",
+    "fileloc": 299,
+    "instructions": 165,
+    "loads": {
+      "G": 2,
+      "L": 9
+    },
+    "name": "rdc_mont",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 357
+  },
+  "91": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 169,
+    "loads": {
+      "L": 8
+    },
+    "name": "mul",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 280
+  },
+  "92": {
+    "basicblocks": 30,
+    "calls": "82 82",
+    "file": "fips202.cpp",
+    "fileloc": 636,
+    "instructions": 203,
+    "loads": {
+      "L": 14
+    },
+    "name": "cshake256_simple",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 1287
+  },
+  "93": {
+    "basicblocks": 30,
+    "calls": "15",
+    "file": "mpx_iface_tvu_mul.hpp",
+    "fileloc": 50,
+    "instructions": 172,
+    "loads": {
+      "L": 8
+    },
+    "name": "mul",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 283
+  },
+  "94": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "fp_generic.cpp",
+    "fileloc": 26,
+    "instructions": 127,
+    "loads": {
+      "G": 2,
+      "L": 7
+    },
+    "name": "fpadd503",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 127
   }
 }

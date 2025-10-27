@@ -20,7 +20,7 @@ add_files src/config.h
 add_files src/api.h
 add_files src/random/random.h
 add_files src/sha3/fips202.h
-add_files src/generic/mpx_comba_mul.hpp
+add_files src/generic/mpx_iface_tvu_mul.hpp
 
 # Add source files in dependency order
 add_files src/fpx.cpp

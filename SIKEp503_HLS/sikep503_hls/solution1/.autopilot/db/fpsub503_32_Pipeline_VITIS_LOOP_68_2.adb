@@ -176,7 +176,7 @@
             <Obj>
               <type>0</type>
               <id>6</id>
-              <name>i_16</name>
+              <name>i_59</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>56</lineNumber>
@@ -319,7 +319,7 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>i_16_write_ln56</name>
+              <name>i_59_write_ln56</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>56</lineNumber>
@@ -904,120 +904,6 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>or_ln70_7</name>
-              <fileName>src/generic/fp_generic.cpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>70</lineNumber>
-              <contextFuncName>fpsub503</contextFuncName>
-              <contextNormFuncName>fpsub503</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/generic/fp_generic.cpp</first>
-                        <second>fpsub503</second>
-                      </first>
-                      <second>70</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>or_ln70_7_fu_161_p3</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>4</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>98</item>
-            <item>100</item>
-            <item>101</item>
-          </oprand_edges>
-          <opcode>bitconcatenate</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>17</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_20">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>27</id>
-              <name>sext_ln70</name>
-              <fileName>src/generic/fp_generic.cpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>70</lineNumber>
-              <contextFuncName>fpsub503</contextFuncName>
-              <contextNormFuncName>fpsub503</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/generic/fp_generic.cpp</first>
-                        <second>fpsub503</second>
-                      </first>
-                      <second>70</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>sext_ln70_fu_169_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>5</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>102</item>
-          </oprand_edges>
-          <opcode>sext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>18</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_21">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>28</id>
               <name>zext_ln70</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -1043,7 +929,121 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln70_fu_173_p1</rtlName>
+              <rtlName>zext_ln70_fu_161_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>4</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>97</item>
+          </oprand_edges>
+          <opcode>zext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>17</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_20">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>27</id>
+              <name>zext_ln70_2</name>
+              <fileName>src/generic/fp_generic.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>70</lineNumber>
+              <contextFuncName>fpsub503</contextFuncName>
+              <contextNormFuncName>fpsub503</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/generic/fp_generic.cpp</first>
+                        <second>fpsub503</second>
+                      </first>
+                      <second>70</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>zext_ln70_2_fu_165_p3</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>5</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>99</item>
+            <item>101</item>
+            <item>102</item>
+          </oprand_edges>
+          <opcode>bitconcatenate</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>18</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_21">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>28</id>
+              <name>zext_ln70_5</name>
+              <fileName>src/generic/fp_generic.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>70</lineNumber>
+              <contextFuncName>fpsub503</contextFuncName>
+              <contextNormFuncName>fpsub503</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/generic/fp_generic.cpp</first>
+                        <second>fpsub503</second>
+                      </first>
+                      <second>70</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>zext_ln70_5_fu_173_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1389,7 +1389,7 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>zext_ln70_1</name>
+              <name>zext_ln70_3</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -1414,7 +1414,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln70_1_fu_207_p1</rtlName>
+              <rtlName>zext_ln70_3_fu_207_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1963,7 +1963,7 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>xor_ln70_1</name>
+              <name>xor_ln70_4</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -1988,7 +1988,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln70_1_fu_240_p2</rtlName>
+              <rtlName>xor_ln70_4_fu_240_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2135,7 +2135,7 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>xor_ln70_22</name>
+              <name>xor_ln70_23</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -2160,7 +2160,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln70_22_fu_260_p2</rtlName>
+              <rtlName>xor_ln70_23_fu_260_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2192,7 +2192,7 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>trunc_ln70_1</name>
+              <name>trunc_ln70_2</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -2217,7 +2217,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln70_1_fu_266_p1</rtlName>
+              <rtlName>trunc_ln70_2_fu_266_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2248,7 +2248,7 @@
             <Obj>
               <type>0</type>
               <id>50</id>
-              <name>xor_ln70_2</name>
+              <name>xor_ln70_5</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -2273,7 +2273,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln70_2_fu_270_p3</rtlName>
+              <rtlName>xor_ln70_5_fu_270_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2306,7 +2306,7 @@
             <Obj>
               <type>0</type>
               <id>51</id>
-              <name>and_ln70_1</name>
+              <name>and_ln70_2</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -2331,7 +2331,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>and_ln70_1_fu_278_p2</rtlName>
+              <rtlName>and_ln70_2_fu_278_p2</rtlName>
               <control>auto</control>
               <opType>and</opType>
               <implIndex>auto</implIndex>
@@ -2363,7 +2363,7 @@
             <Obj>
               <type>0</type>
               <id>52</id>
-              <name>xor_ln70_3</name>
+              <name>xor_ln70_6</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -2388,7 +2388,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln70_3_fu_284_p2</rtlName>
+              <rtlName>xor_ln70_6_fu_284_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2420,7 +2420,7 @@
             <Obj>
               <type>0</type>
               <id>53</id>
-              <name>or_ln70_1</name>
+              <name>or_ln70_2</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
@@ -2445,7 +2445,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln70_1_fu_290_p2</rtlName>
+              <rtlName>or_ln70_2_fu_290_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -2535,7 +2535,7 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>i_16_write_ln56</name>
+              <name>i_59_write_ln56</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>56</lineNumber>
@@ -2710,7 +2710,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>100</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpadd503_349_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -2952,7 +2952,7 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>99</id>
+              <id>100</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -3414,17 +3414,17 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_94">
-          <id>100</id>
+          <id>97</id>
           <edge_type>1</edge_type>
-          <source_obj>99</source_obj>
+          <source_obj>25</source_obj>
           <sink_obj>26</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_95">
           <id>101</id>
           <edge_type>1</edge_type>
-          <source_obj>25</source_obj>
-          <sink_obj>26</sink_obj>
+          <source_obj>100</source_obj>
+          <sink_obj>27</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_96">
@@ -3703,7 +3703,7 @@
         <item class_id_reference="20" object_id="_135">
           <id>144</id>
           <edge_type>1</edge_type>
-          <source_obj>99</source_obj>
+          <source_obj>100</source_obj>
           <sink_obj>48</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -4420,7 +4420,7 @@
           </second>
         </item>
         <item>
-          <first>and_ln70_1_fu_278_p2 ( and ) </first>
+          <first>and_ln70_2_fu_278_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4512,7 +4512,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln70_1_fu_290_p2 ( or ) </first>
+          <first>or_ln70_2_fu_290_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4635,30 +4635,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln70_1_fu_240_p2 ( xor ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>64</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>64</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>64</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln70_22_fu_260_p2 ( xor ) </first>
+          <first>xor_ln70_23_fu_260_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4681,7 +4658,30 @@
           </second>
         </item>
         <item>
-          <first>xor_ln70_3_fu_284_p2 ( xor ) </first>
+          <first>xor_ln70_4_fu_240_p2 ( xor ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>64</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>64</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>64</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>xor_ln70_6_fu_284_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4936,7 +4936,7 @@
           </second>
         </item>
         <item>
-          <first>i_16_fu_66</first>
+          <first>i_59_fu_66</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4973,11 +4973,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>62</second>
+              <second>63</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>124</second>
+              <second>126</second>
             </item>
             <item>
               <first>FF</first>
@@ -5154,7 +5154,7 @@
           </second>
         </item>
         <item>
-          <first>i_16_fu_66</first>
+          <first>i_59_fu_66</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5183,11 +5183,11 @@
             </item>
             <item>
               <first>(Consts)</first>
-              <second>2</second>
+              <second>1</second>
             </item>
             <item>
               <first>FF</first>
-              <second>62</second>
+              <second>63</second>
             </item>
           </second>
         </item>
@@ -5273,7 +5273,7 @@
           </second>
         </item>
         <item>
-          <first>and_ln70_1_fu_278_p2 ( and ) </first>
+          <first>and_ln70_2_fu_278_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5297,7 +5297,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln70_1_fu_290_p2 ( or ) </first>
+          <first>or_ln70_2_fu_290_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5337,15 +5337,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln70_1_fu_240_p2 ( xor ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>45</item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln70_22_fu_260_p2 ( xor ) </first>
+          <first>xor_ln70_23_fu_260_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5353,7 +5345,15 @@
           </second>
         </item>
         <item>
-          <first>xor_ln70_3_fu_284_p2 ( xor ) </first>
+          <first>xor_ln70_4_fu_240_p2 ( xor ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>45</item>
+          </second>
+        </item>
+        <item>
+          <first>xor_ln70_6_fu_284_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5977,7 +5977,7 @@
         </second>
       </item>
       <item>
-        <first>169</first>
+        <first>165</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6197,7 +6197,7 @@
         </second>
       </item>
       <item>
-        <first>and_ln70_1_fu_278</first>
+        <first>and_ln70_2_fu_278</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6237,7 +6237,7 @@
         </second>
       </item>
       <item>
-        <first>i_16_fu_66</first>
+        <first>i_59_fu_66</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6253,19 +6253,11 @@
         </second>
       </item>
       <item>
-        <first>or_ln70_1_fu_290</first>
+        <first>or_ln70_2_fu_290</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>53</item>
-        </second>
-      </item>
-      <item>
-        <first>or_ln70_7_fu_161</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>26</item>
         </second>
       </item>
       <item>
@@ -6317,14 +6309,6 @@
         </second>
       </item>
       <item>
-        <first>sext_ln70_fu_169</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>27</item>
-        </second>
-      </item>
-      <item>
         <first>tempReg_fu_211</first>
         <second>
           <count>1</count>
@@ -6341,7 +6325,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln70_1_fu_266</first>
+        <first>trunc_ln70_2_fu_266</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6357,15 +6341,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln70_1_fu_240</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>45</item>
-        </second>
-      </item>
-      <item>
-        <first>xor_ln70_22_fu_260</first>
+        <first>xor_ln70_23_fu_260</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6373,7 +6349,15 @@
         </second>
       </item>
       <item>
-        <first>xor_ln70_2_fu_270</first>
+        <first>xor_ln70_4_fu_240</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>45</item>
+        </second>
+      </item>
+      <item>
+        <first>xor_ln70_5_fu_270</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6381,7 +6365,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln70_3_fu_284</first>
+        <first>xor_ln70_6_fu_284</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6405,7 +6389,15 @@
         </second>
       </item>
       <item>
-        <first>zext_ln70_1_fu_207</first>
+        <first>zext_ln70_2_fu_165</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>27</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln70_3_fu_207</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6413,11 +6405,19 @@
         </second>
       </item>
       <item>
-        <first>zext_ln70_fu_173</first>
+        <first>zext_ln70_5_fu_173</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>28</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln70_fu_161</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>26</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -6646,7 +6646,7 @@
         </second>
       </item>
       <item>
-        <first>i_16_reg_318</first>
+        <first>i_59_reg_318</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

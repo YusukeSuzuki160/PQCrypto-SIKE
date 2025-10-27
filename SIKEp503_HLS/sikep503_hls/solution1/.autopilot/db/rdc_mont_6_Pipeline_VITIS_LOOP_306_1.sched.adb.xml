@@ -32,9 +32,9 @@ newFuncRoot:0 %i = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="5" op_0_bw="5" op_1_bw="5">
+<Node id="4" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-newFuncRoot:1 %zext_ln308_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %zext_ln308
+newFuncRoot:1 %zext_ln308_read = read i7 @_ssdm_op_Read.ap_auto.i7, i7 %zext_ln308
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln308_read"/></StgValue>
@@ -94,10 +94,10 @@ newFuncRoot:4 %br_ln0 = br void %for.inc
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc:0 %i_7 = load i4 %i
+for.inc:0 %i_9 = load i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="i_7"/></StgValue>
+<StgValue><ssdm name="i_9"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -109,7 +109,7 @@ for.inc:0 %i_7 = load i4 %i
 
 <Node id="10" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc:1 %icmp_ln306 = icmp_eq  i4 %i_7, i4 8
+for.inc:1 %icmp_ln306 = icmp_eq  i4 %i_9, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln306"/></StgValue>
@@ -124,7 +124,7 @@ for.inc:1 %icmp_ln306 = icmp_eq  i4 %i_7, i4 8
 
 <Node id="11" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc:2 %add_ln306 = add i4 %i_7, i4 1
+for.inc:2 %add_ln306 = add i4 %i_9, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln306"/></StgValue>
@@ -153,12 +153,12 @@ for.inc:3 %br_ln306 = br i1 %icmp_ln306, void %for.inc.split, void %VITIS_LOOP_3
 </and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="5" op_0_bw="4">
+<Node id="14" bw="7" op_0_bw="4">
 <![CDATA[
-for.inc.split:0 %zext_ln308_1 = zext i4 %i_7
+for.inc.split:0 %zext_ln308_3 = zext i4 %i_9
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln308_1"/></StgValue>
+<StgValue><ssdm name="zext_ln308_3"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -169,9 +169,9 @@ for.inc.split:0 %zext_ln308_1 = zext i4 %i_7
 </and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="5" op_0_bw="5" op_1_bw="5">
+<Node id="15" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-for.inc.split:1 %add_ln308 = add i5 %zext_ln308_read, i5 %zext_ln308_1
+for.inc.split:1 %add_ln308 = add i7 %zext_ln308_read, i7 %zext_ln308_3
 
 ]]></Node>
 <StgValue><ssdm name="add_ln308"/></StgValue>
@@ -185,12 +185,12 @@ for.inc.split:1 %add_ln308 = add i5 %zext_ln308_read, i5 %zext_ln308_1
 </and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="64" op_0_bw="5">
+<Node id="16" bw="64" op_0_bw="7">
 <![CDATA[
-for.inc.split:2 %zext_ln308_2 = zext i5 %add_ln308
+for.inc.split:2 %zext_ln308_4 = zext i7 %add_ln308
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln308_2"/></StgValue>
+<StgValue><ssdm name="zext_ln308_4"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -201,9 +201,9 @@ for.inc.split:2 %zext_ln308_2 = zext i5 %add_ln308
 </and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
+<Node id="17" bw="7" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split:3 %mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln308_2
+for.inc.split:3 %mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln308_4
 
 ]]></Node>
 <StgValue><ssdm name="mc_addr"/></StgValue>
@@ -219,7 +219,7 @@ for.inc.split:3 %mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln308_2
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split:4 %specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.split:4 %specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln302"/></StgValue>
@@ -251,7 +251,7 @@ for.inc.split:5 %speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_Spec
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:6 %specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38
+for.inc.split:6 %specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln306"/></StgValue>
@@ -265,9 +265,9 @@ for.inc.split:6 %specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, 
 </and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="0" op_0_bw="64" op_1_bw="5">
+<Node id="21" bw="0" op_0_bw="64" op_1_bw="7">
 <![CDATA[
-for.inc.split:7 %store_ln308 = store i64 0, i5 %mc_addr
+for.inc.split:7 %store_ln308 = store i64 0, i7 %mc_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln308"/></StgValue>

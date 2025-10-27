@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont_6'" level="0">
-<item name = "Date">Mon Oct 20 16:16:24 2025
+<item name = "Date">Sat Oct 25 18:36:25 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -31,9 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_rdc_mont_6_Pipeline_VITIS_LOOP_306_1_fu_200">rdc_mont_6_Pipeline_VITIS_LOOP_306_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_rdc_mont_6_Pipeline_VITIS_LOOP_314_3_fu_207">rdc_mont_6_Pipeline_VITIS_LOOP_314_3, 2, 11, 20.000 ns, 0.110 us, 1, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_rdc_mont_6_Pipeline_VITIS_LOOP_340_5_fu_224">rdc_mont_6_Pipeline_VITIS_LOOP_340_5, 5, 11, 50.000 ns, 0.110 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_6_Pipeline_VITIS_LOOP_306_1_fu_237">rdc_mont_6_Pipeline_VITIS_LOOP_306_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_6_Pipeline_VITIS_LOOP_314_3_fu_244">rdc_mont_6_Pipeline_VITIS_LOOP_314_3, 2, 11, 20.000 ns, 0.110 us, 1, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_rdc_mont_6_Pipeline_VITIS_LOOP_340_5_fu_262">rdc_mont_6_Pipeline_VITIS_LOOP_340_5, 5, 11, 50.000 ns, 0.110 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

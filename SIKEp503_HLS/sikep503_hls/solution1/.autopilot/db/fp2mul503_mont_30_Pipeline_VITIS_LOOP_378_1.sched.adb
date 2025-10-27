@@ -348,7 +348,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_242</name>
+						<name>i_281</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1198,7 +1198,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>R_Z_addr_13</name>
+						<name>R_Z_addr_7</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>

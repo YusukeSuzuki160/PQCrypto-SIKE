@@ -16,7 +16,10 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    b_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+    a_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
+    a_ce0 : OUT STD_LOGIC;
+    a_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    b_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
     b_ce0 : OUT STD_LOGIC;
     b_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
     c_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
@@ -41,17 +44,19 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal grp_mul_142_fu_14_ap_start : STD_LOGIC;
-    signal grp_mul_142_fu_14_ap_done : STD_LOGIC;
-    signal grp_mul_142_fu_14_ap_idle : STD_LOGIC;
-    signal grp_mul_142_fu_14_ap_ready : STD_LOGIC;
-    signal grp_mul_142_fu_14_b_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_mul_142_fu_14_b_ce0 : STD_LOGIC;
-    signal grp_mul_142_fu_14_c_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_mul_142_fu_14_c_ce0 : STD_LOGIC;
-    signal grp_mul_142_fu_14_c_we0 : STD_LOGIC;
-    signal grp_mul_142_fu_14_c_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_mul_142_fu_14_ap_start_reg : STD_LOGIC := '0';
+    signal grp_mul_1_fu_18_ap_start : STD_LOGIC;
+    signal grp_mul_1_fu_18_ap_done : STD_LOGIC;
+    signal grp_mul_1_fu_18_ap_idle : STD_LOGIC;
+    signal grp_mul_1_fu_18_ap_ready : STD_LOGIC;
+    signal grp_mul_1_fu_18_a_address0 : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_mul_1_fu_18_a_ce0 : STD_LOGIC;
+    signal grp_mul_1_fu_18_b_address0 : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_mul_1_fu_18_b_ce0 : STD_LOGIC;
+    signal grp_mul_1_fu_18_c_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_mul_1_fu_18_c_ce0 : STD_LOGIC;
+    signal grp_mul_1_fu_18_c_we0 : STD_LOGIC;
+    signal grp_mul_1_fu_18_c_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_mul_1_fu_18_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
@@ -59,7 +64,7 @@ attribute shreg_extract : string;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component sikep503_kem_enc_hw_mul_142 IS
+    component sikep503_kem_enc_hw_mul_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -67,7 +72,10 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        b_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+        a_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
+        a_ce0 : OUT STD_LOGIC;
+        a_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        b_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
         b_ce0 : OUT STD_LOGIC;
         b_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
         c_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
@@ -79,21 +87,24 @@ attribute shreg_extract : string;
 
 
 begin
-    grp_mul_142_fu_14 : component sikep503_kem_enc_hw_mul_142
+    grp_mul_1_fu_18 : component sikep503_kem_enc_hw_mul_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_mul_142_fu_14_ap_start,
-        ap_done => grp_mul_142_fu_14_ap_done,
-        ap_idle => grp_mul_142_fu_14_ap_idle,
-        ap_ready => grp_mul_142_fu_14_ap_ready,
-        b_address0 => grp_mul_142_fu_14_b_address0,
-        b_ce0 => grp_mul_142_fu_14_b_ce0,
+        ap_start => grp_mul_1_fu_18_ap_start,
+        ap_done => grp_mul_1_fu_18_ap_done,
+        ap_idle => grp_mul_1_fu_18_ap_idle,
+        ap_ready => grp_mul_1_fu_18_ap_ready,
+        a_address0 => grp_mul_1_fu_18_a_address0,
+        a_ce0 => grp_mul_1_fu_18_a_ce0,
+        a_q0 => a_q0,
+        b_address0 => grp_mul_1_fu_18_b_address0,
+        b_ce0 => grp_mul_1_fu_18_b_ce0,
         b_q0 => b_q0,
-        c_address0 => grp_mul_142_fu_14_c_address0,
-        c_ce0 => grp_mul_142_fu_14_c_ce0,
-        c_we0 => grp_mul_142_fu_14_c_we0,
-        c_d0 => grp_mul_142_fu_14_c_d0);
+        c_address0 => grp_mul_1_fu_18_c_address0,
+        c_ce0 => grp_mul_1_fu_18_c_ce0,
+        c_we0 => grp_mul_1_fu_18_c_we0,
+        c_d0 => grp_mul_1_fu_18_c_d0);
 
 
 
@@ -111,23 +122,23 @@ begin
     end process;
 
 
-    grp_mul_142_fu_14_ap_start_reg_assign_proc : process(ap_clk)
+    grp_mul_1_fu_18_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_mul_142_fu_14_ap_start_reg <= ap_const_logic_0;
+                grp_mul_1_fu_18_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                    grp_mul_142_fu_14_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_mul_142_fu_14_ap_ready = ap_const_logic_1)) then 
-                    grp_mul_142_fu_14_ap_start_reg <= ap_const_logic_0;
+                    grp_mul_1_fu_18_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_mul_1_fu_18_ap_ready = ap_const_logic_1)) then 
+                    grp_mul_1_fu_18_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_mul_142_fu_14_ap_done, ap_CS_fsm_state2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_mul_1_fu_18_ap_done, ap_CS_fsm_state2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -137,7 +148,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_mul_142_fu_14_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((grp_mul_1_fu_18_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
@@ -146,6 +157,8 @@ begin
                 ap_NS_fsm <= "XX";
         end case;
     end process;
+    a_address0 <= grp_mul_1_fu_18_a_address0;
+    a_ce0 <= grp_mul_1_fu_18_a_ce0;
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
 
@@ -159,9 +172,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state2_blk_assign_proc : process(grp_mul_142_fu_14_ap_done)
+    ap_ST_fsm_state2_blk_assign_proc : process(grp_mul_1_fu_18_ap_done)
     begin
-        if ((grp_mul_142_fu_14_ap_done = ap_const_logic_0)) then 
+        if ((grp_mul_1_fu_18_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state2_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state2_blk <= ap_const_logic_0;
@@ -169,9 +182,9 @@ begin
     end process;
 
 
-    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, grp_mul_142_fu_14_ap_done, ap_CS_fsm_state2)
+    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, grp_mul_1_fu_18_ap_done, ap_CS_fsm_state2)
     begin
-        if ((((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((grp_mul_142_fu_14_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2)))) then 
+        if ((((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)) or ((grp_mul_1_fu_18_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2)))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -189,20 +202,20 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(grp_mul_142_fu_14_ap_done, ap_CS_fsm_state2)
+    ap_ready_assign_proc : process(grp_mul_1_fu_18_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_mul_142_fu_14_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_mul_1_fu_18_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
         end if; 
     end process;
 
-    b_address0 <= grp_mul_142_fu_14_b_address0;
-    b_ce0 <= grp_mul_142_fu_14_b_ce0;
-    c_address0 <= grp_mul_142_fu_14_c_address0;
-    c_ce0 <= grp_mul_142_fu_14_c_ce0;
-    c_d0 <= grp_mul_142_fu_14_c_d0;
-    c_we0 <= grp_mul_142_fu_14_c_we0;
-    grp_mul_142_fu_14_ap_start <= grp_mul_142_fu_14_ap_start_reg;
+    b_address0 <= grp_mul_1_fu_18_b_address0;
+    b_ce0 <= grp_mul_1_fu_18_b_ce0;
+    c_address0 <= grp_mul_1_fu_18_c_address0;
+    c_ce0 <= grp_mul_1_fu_18_c_ce0;
+    c_d0 <= grp_mul_1_fu_18_c_d0;
+    c_we0 <= grp_mul_1_fu_18_c_we0;
+    grp_mul_1_fu_18_ap_start <= grp_mul_1_fu_18_ap_start_reg;
 end behav;

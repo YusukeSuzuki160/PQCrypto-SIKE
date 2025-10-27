@@ -456,7 +456,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>i_232</name>
+						<name>i_271</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>378</lineNumber>
@@ -5433,7 +5433,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_232_load_fu_147</first>
+			<first>i_271_load_fu_147</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5644,7 +5644,7 @@
 			</second>
 		</item>
 		<item>
-			<first>i_232_reg_302</first>
+			<first>i_271_reg_302</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

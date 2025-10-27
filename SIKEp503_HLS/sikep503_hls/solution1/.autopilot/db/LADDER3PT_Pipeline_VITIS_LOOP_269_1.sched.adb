@@ -272,7 +272,7 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>i_259</name>
+						<name>i</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>267</lineNumber>
@@ -422,7 +422,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>i_259_write_ln267</name>
+						<name>i_write_ln267</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>267</lineNumber>
@@ -528,7 +528,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>i</name>
+						<name>i_290</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>277</lineNumber>
@@ -2067,7 +2067,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>R_Z_addr_15</name>
+						<name>R_Z_addr_9</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>280</lineNumber>
@@ -3349,7 +3349,7 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>R_Z_addr_15_write_ln281</name>
+						<name>R_Z_addr_9_write_ln281</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>281</lineNumber>
@@ -3608,7 +3608,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>i_259_write_ln267</name>
+						<name>i_write_ln267</name>
 						<fileName>src/ec_isogeny.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>267</lineNumber>
@@ -4147,7 +4147,7 @@
 				<Obj>
 					<type>3</type>
 					<id>76</id>
-					<name>_Z11swap_pointsP10point_projS0_m.25.exit.exitStub</name>
+					<name>_Z11swap_pointsP10point_projS0_m.30.exit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

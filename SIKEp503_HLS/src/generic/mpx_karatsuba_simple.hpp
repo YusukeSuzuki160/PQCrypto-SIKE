@@ -286,3 +286,4 @@ namespace mpx
 } // namespace mpx
 
 #endif // MPX_KARATSUBA_SIMPLE_HPP
+

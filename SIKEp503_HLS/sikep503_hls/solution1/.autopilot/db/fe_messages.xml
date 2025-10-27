@@ -5,6 +5,9 @@
     <msg msg_groups="" msg_id="207-4801" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:159:2" msg_body="'register' storage class specifier is deprecated and incompatible with C++17">
         <args ClangWarningOption="deprecated-register"/>
     </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:116:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:155:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
         <args ClangWarningOption="invalid-hls-pragmas"/>
     </msg>
@@ -44,56 +47,53 @@
     <msg msg_groups="PRAGMA_INVALID" msg_id="207-5589" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:283:9" msg_body="'#pragma HLS loop_tripcount' can only be applied inside loop body">
         <args ClangWarningOption="invalid-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:73:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="CHUNK_MASK" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = MAX_NWORDS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:80:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = MAX_NWORDS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:86:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:87:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=NEEDW_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:135:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="init" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:139:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:143:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:144:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=PACK_ITERS_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:172:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="flush" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:178:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="flush" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=(2*MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:186:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:52:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:189:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = (2 * MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:190:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=(2*MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = acc type = ram_2p impl = bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:208:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = acc cyclic factor = 2 dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:209:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=NOUT_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:216:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = ((W * MAX_NWORDS + BLOCK_BITS - 1) / BLOCK_BITS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:217:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=INNER_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = ((W * MAX_NWORDS + BLOCK_BITS - 1) / BLOCK_BITS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:101:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="0" ARG_PragmaOptions="op = mul impl = DSP" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:131:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_prod_to_acc" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:174:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:183:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:202:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/generic/fp_generic.cpp:154:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
@@ -251,41 +251,20 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/fpx.cpp:71:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:123:28" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 79 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:119:2" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::add_prod_to_acc(ap_uint&lt;128&gt;, ap_uint&lt;64&gt;*, unsigned int, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::add_prod_to_acc(ap_uint&lt;128&gt;, ap_uint&lt;64&gt;*, unsigned int, unsigned int)" Callee-DebugLoc="File src/generic/mpx_iface_tvu_mul.hpp Line 130 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_iface_tvu_mul.hpp Line 51 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:153:19" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 138 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:189:39" msg_body="Loop 'VITIS_LOOP_189_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_189_3"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:202:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::init(unsigned long*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::init(unsigned long*, unsigned int)" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 134 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:51:0" msg_body="Updating loop lower bound from 1 to 8 for loop 'VITIS_LOOP_98_4' (src/generic/mpx_iface_tvu_mul.hpp:98:34) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="src/generic/mpx_iface_tvu_mul.hpp:98:34" LoopName="VITIS_LOOP_98_4" NewBound="8" OldBound="1"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:239:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::flush()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::flush()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 171 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:51:0" msg_body="Updating loop lower bound from 1 to 8 for loop 'VITIS_LOOP_84_3' (src/generic/mpx_iface_tvu_mul.hpp:84:30) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="src/generic/mpx_iface_tvu_mul.hpp:84:30" LoopName="VITIS_LOOP_84_3" NewBound="8" OldBound="1"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:237:10" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 138 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:230:43" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::CHUNK_MASK()" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 72 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:224:28" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
-        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)" Callee-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 79 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_comba_mul.hpp Line 185 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:215:25" msg_body="Loop 'VITIS_LOOP_215_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_215_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:85:22" msg_body="Loop 'VITIS_LOOP_85_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_85_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:142:25" msg_body="Loop 'VITIS_LOOP_142_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_142_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Updating loop lower bound from 1 to 8 for loop 'VITIS_LOOP_207_2' (src/generic/mpx_comba_mul.hpp:207:23) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
-        <args LoopLoc="src/generic/mpx_comba_mul.hpp:207:23" LoopName="VITIS_LOOP_207_2" NewBound="8" OldBound="1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Updating loop lower bound from 1 to 16 for loop 'VITIS_LOOP_188_1' (src/generic/mpx_comba_mul.hpp:188:20) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
-        <args LoopLoc="src/generic/mpx_comba_mul.hpp:188:20" LoopName="VITIS_LOOP_188_1" NewBound="16" OldBound="1"/>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:51:0" msg_body="Updating loop lower bound from 1 to 16 for loop 'VITIS_LOOP_54_1' (src/generic/mpx_iface_tvu_mul.hpp:54:19) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="src/generic/mpx_iface_tvu_mul.hpp:54:19" LoopName="VITIS_LOOP_54_1" NewBound="16" OldBound="1"/>
     </msg>
     <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Updating loop lower bound from 1 to 250 for loop 'VITIS_LOOP_319_1' (src/ec_isogeny.cpp:319:21) in function 'LADDER3PT'.">
         <args LoopLoc="src/ec_isogeny.cpp:319:21" LoopName="VITIS_LOOP_319_1" NewBound="250" OldBound="1"/>
@@ -293,11 +272,11 @@
     <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Updating loop upper bound from 503 to 250 for loop 'VITIS_LOOP_319_1' (src/ec_isogeny.cpp:319:21) in function 'LADDER3PT'.">
         <args LoopLoc="src/ec_isogeny.cpp:319:21" LoopName="VITIS_LOOP_319_1" NewBound="250" OldBound="503"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Unrolling loop 'VITIS_LOOP_85_1' (src/generic/mpx_comba_mul.hpp:85:22) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' completely with a factor of 2">
-        <args Factor="2" LoopLoc="src/generic/mpx_comba_mul.hpp:85:22" LoopName="VITIS_LOOP_85_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:51:0" msg_body="Unrolling loop 'VITIS_LOOP_77_2' (src/generic/mpx_iface_tvu_mul.hpp:77:19) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' partially with a factor of 2">
+        <args Factor="2" LoopLoc="src/generic/mpx_iface_tvu_mul.hpp:77:19" LoopName="VITIS_LOOP_77_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:185:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_85_1' (src/generic/mpx_comba_mul.hpp:85:22) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' has been removed because the loop is unrolled completely">
-        <args LoopLoc="src/generic/mpx_comba_mul.hpp:85:22" LoopName="VITIS_LOOP_85_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:160:0" msg_body="Unrolling loop 'VITIS_LOOP_172_1' (src/generic/mpx_iface_tvu_mul.hpp:172:31) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::convert_blocks_to_digits' partially with a factor of 2">
+        <args Factor="2" LoopLoc="src/generic/mpx_iface_tvu_mul.hpp:172:31" LoopName="VITIS_LOOP_172_1"/>
     </msg>
     <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/sidh.cpp:339:5" msg_body="Duplicating function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
         <args Name="fp2_encode(unsigned long const (*) [8], unsigned char*)"/>
@@ -323,14 +302,14 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:606:0" msg_body="Inlining function 'keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)' into 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)'">
         <args Callee="keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 386 Column 0" Caller="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long) (.34)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)'">
-        <args Callee="store64(unsigned char*, unsigned long) (.34)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long) (.39)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)'">
+        <args Callee="store64(unsigned char*, unsigned long) (.39)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)'">
-        <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.37)'">
+        <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.37)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)'">
-        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.32)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.37)'">
+        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.37)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:26:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])'">
         <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 10 Column 0" Caller="init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/sidh.cpp Line 26 Column 0"/>
@@ -370,6 +349,9 @@
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:132:0" msg_body="Inlining function 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)'">
         <args Callee="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 375 Column 0" Caller="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src/fpx.cpp Line 132 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:51:0" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::pack(unsigned long const*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::pack(unsigned long const*, unsigned int)" Callee-DebugLoc="File src/generic/mpx_iface_tvu_mul.hpp Line 25 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src/generic/mpx_iface_tvu_mul.hpp Line 51 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/fpx.cpp:144:0" msg_body="Inlining function 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
         <args Callee="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 132 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/fpx.cpp Line 144 Column 0"/>
@@ -431,20 +413,20 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'fpzero503(unsigned long*)' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
         <args Callee="fpzero503(unsigned long*)" Callee-DebugLoc="File src/fpx.cpp Line 18 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'swap_points(point_proj*, point_proj*, unsigned long) (.25)' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
-        <args Callee="swap_points(point_proj*, point_proj*, unsigned long) (.25)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 264 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:287:0" msg_body="Inlining function 'swap_points(point_proj*, point_proj*, unsigned long) (.30)' into 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="swap_points(point_proj*, point_proj*, unsigned long) (.30)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 264 Column 0" Caller="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 287 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)'">
-        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.21)'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.21)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)'">
-        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.21)'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 108 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.21)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:28:0" msg_body="Inlining function 'copy_words(unsigned long const*, unsigned long*, unsigned int)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
         <args Callee="copy_words(unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src/fpx.cpp Line 44 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:28:0" msg_body="Inlining function 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
-        <args Callee="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.16)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:28:0" msg_body="Inlining function 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.21)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
+        <args Callee="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.21)" Callee-DebugLoc="File src/ec_isogeny.cpp Line 10 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src/ec_isogeny.cpp Line 28 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:43:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])'">
         <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 43 Column 0"/>
@@ -530,8 +512,8 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:213:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
         <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 114 Column 0" Caller="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:37:0" msg_body="Inlining function 'from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)'">
-        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 367 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)" Caller-DebugLoc="File src/sidh.cpp Line 37 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:37:0" msg_body="Inlining function 'from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.36)'">
+        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/fpx.cpp Line 367 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*) (.36)" Caller-DebugLoc="File src/sidh.cpp Line 37 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
         <args Callee="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 191 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
@@ -557,17 +539,17 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
         <args Callee="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src/ec_isogeny.cpp Line 213 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)' into 'EphemeralSecretAgreement_A'">
-        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*) (.31)" Callee-DebugLoc="File src/sidh.cpp Line 37 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sidh.cpp:270:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.36)' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*) (.36)" Callee-DebugLoc="File src/sidh.cpp Line 37 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src/sidh.cpp Line 270 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)'">
-        <args Callee="store64(unsigned char*, unsigned long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.38)'">
+        <args Callee="store64(unsigned char*, unsigned long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.38)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
         <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
-        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.33)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.38)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
+        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.38)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
         <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src/sha3/fips202.cpp Line 637 Column 0"/>
@@ -581,6 +563,9 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sha3/fips202.cpp:28:30" msg_body="The program may have out of bound array access on variable 'in'"/>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sha3/fips202.cpp:39:10" msg_body="The program may have out of bound array access on variable 'output'"/>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src/sha3/fips202.cpp:39:10" msg_body="The program may have out of bound array access on variable 't'"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:72:19" msg_body="Applying array_partition to 'acc': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="acc"/>
+    </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/sha3/fips202.cpp:37:20" msg_body="Loop 'VITIS_LOOP_37_1' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_37_1"/>
     </msg>
@@ -632,14 +617,14 @@
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:303:13" msg_body="Automatically partitioning small array 'UV' completely based on array size.">
         <args Value="UV"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="array_partition dim=1 type=complete  variable=t0.i.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:13:11 t0.i.i">
-        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i.i" PragmaType="array_partition" VarName="t0.i.i" varLoc="src/ec_isogeny.cpp:13:11"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="array_partition dim=1 type=complete  variable=t0.i.i 1 EphemeralKeyGeneration_A src/ec_isogeny.cpp:13:11 t0.i.i">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i.i" PragmaType="array_partition" VarName="t0.i.i" varLoc="src/ec_isogeny.cpp:13:11"/>
     </msg>
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't0.i.i' due to pipeline pragma">
         <args Dim="1" Mode="complete" Name="t0.i.i" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="array_partition dim=1 type=complete  variable=t0.i.i 1 EphemeralKeyGeneration_A src/ec_isogeny.cpp:13:11 t0.i.i">
-        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i.i" PragmaType="array_partition" VarName="t0.i.i" varLoc="src/ec_isogeny.cpp:13:11"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:11" msg_body="array_partition dim=1 type=complete  variable=t0.i.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:13:11 t0.i.i">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i.i" PragmaType="array_partition" VarName="t0.i.i" varLoc="src/ec_isogeny.cpp:13:11"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:13:15" msg_body="array_partition dim=1 type=complete  variable=t1.i.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:13:15 t1.i.i">
         <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1.i.i" PragmaType="array_partition" VarName="t1.i.i" varLoc="src/ec_isogeny.cpp:13:15"/>
@@ -661,6 +646,12 @@
     </msg>
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/sike.cpp:43:17" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'temp.i' due to pipeline pragma">
         <args Dim="1" Factor="4" Mode="cyclic" Name="temp.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:60:10" msg_body="array_partition dim=1 type=cyclic factor=2 variable=temp 1 fpmul503_mont src/fpx.cpp:60:10 temp">
+        <args PragmaFunction="fpmul503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=temp" PragmaType="array_partition" VarName="temp" varLoc="src/fpx.cpp:60:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/fpx.cpp:60:10" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'temp' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="temp" PragmaType="array_partition"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:11" msg_body="array_partition dim=1 type=complete  variable=t0 1 eval_4_isog src/ec_isogeny.cpp:64:11 t0">
         <args PragmaFunction="eval_4_isog" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0" PragmaType="array_partition" VarName="t0" varLoc="src/ec_isogeny.cpp:64:11"/>
@@ -685,6 +676,12 @@
     </msg>
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1.i95' due to pipeline pragma">
         <args Dim="1" Mode="complete" Name="t1.i95" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:72:10" msg_body="array_partition dim=1 type=cyclic factor=2 variable=temp 1 fpsqr503_mont src/fpx.cpp:72:10 temp">
+        <args PragmaFunction="fpsqr503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=temp" PragmaType="array_partition" VarName="temp" varLoc="src/fpx.cpp:72:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/fpx.cpp:72:10" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'temp' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="temp" PragmaType="array_partition"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/sidh.cpp:120:21" msg_body="array_partition dim=2 type=complete  variable=phiP.X 1 EphemeralKeyGeneration_A src/sidh.cpp:120:21 phiP.X">
         <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=phiP.X" PragmaType="array_partition" VarName="phiP.X" varLoc="src/sidh.cpp:120:21"/>
@@ -751,6 +748,18 @@
     </msg>
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:178:19" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't2.i' due to pipeline pragma">
         <args Dim="1" Mode="complete" Name="t2.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:178:13" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tt1 1 fp2mul503_mont src/fpx.cpp:178:13 tt1">
+        <args PragmaFunction="fp2mul503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tt1" PragmaType="array_partition" VarName="tt1" varLoc="src/fpx.cpp:178:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/fpx.cpp:178:13" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tt1' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="tt1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/fpx.cpp:178:18" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tt2 1 fp2mul503_mont src/fpx.cpp:178:18 tt2">
+        <args PragmaFunction="fp2mul503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tt2" PragmaType="array_partition" VarName="tt2" varLoc="src/fpx.cpp:178:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src/fpx.cpp:178:18" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tt2' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="tt2" PragmaType="array_partition"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:194:11" msg_body="array_partition dim=1 type=complete  variable=t0.i 1 EphemeralSecretAgreement_A src/ec_isogeny.cpp:194:11 t0.i">
         <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t0.i" PragmaType="array_partition" VarName="t0.i" varLoc="src/ec_isogeny.cpp:194:11"/>
@@ -902,6 +911,15 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/generic/fp_generic.cpp:303:13" msg_body="Applying array_partition to 'UV': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="UV"/>
     </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/fpx.cpp:60:10" msg_body="Applying array_partition to 'temp': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="temp"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/fpx.cpp:178:13" msg_body="Applying array_partition to 'tt1': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tt1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/fpx.cpp:178:18" msg_body="Applying array_partition to 'tt2': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tt2"/>
+    </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:240:11" msg_body="Applying array_partition to 't0': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="t0"/>
     </msg>
@@ -931,6 +949,9 @@
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/ec_isogeny.cpp:64:15" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="t1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/fpx.cpp:72:10" msg_body="Applying array_partition to 'temp': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="temp"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/fpx.cpp:347:13" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="t1"/>
@@ -1019,11 +1040,8 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/sike.cpp:43:17" msg_body="Applying array_partition to 'temp.i': Cyclic partitioning with factor 4 on dimension 1.">
         <args Dim="1" Factor="4" Mode="Cyclic" UOName="temp.i"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:215:25" msg_body="Cannot unroll loop 'VITIS_LOOP_215_3' (src/generic/mpx_comba_mul.hpp:215:25) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' as it has a variable trip count">
-        <args LoopLoc="src/generic/mpx_comba_mul.hpp:215:25" LoopName="VITIS_LOOP_215_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/generic/mpx_comba_mul.hpp:142:25" msg_body="Cannot unroll loop 'VITIS_LOOP_142_1' (src/generic/mpx_comba_mul.hpp:142:25) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul' as it has a variable trip count">
-        <args LoopLoc="src/generic/mpx_comba_mul.hpp:142:25" LoopName="VITIS_LOOP_142_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="src/generic/mpx_iface_tvu_mul.hpp:189:39" msg_body="Cannot unroll loop 'VITIS_LOOP_189_3' (src/generic/mpx_iface_tvu_mul.hpp:189:39) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::convert_blocks_to_digits' as it has a variable trip count">
+        <args LoopLoc="src/generic/mpx_iface_tvu_mul.hpp:189:39" LoopName="VITIS_LOOP_189_3"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

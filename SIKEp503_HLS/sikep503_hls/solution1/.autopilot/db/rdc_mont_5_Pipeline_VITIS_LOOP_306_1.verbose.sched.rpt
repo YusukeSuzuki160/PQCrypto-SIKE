@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_5_Pipeline_VITIS_LOOP_306_1'
 ================================================================
-* Date:           Mon Oct 20 16:14:43 2025
+* Date:           Sat Oct 25 18:38:00 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  2.295 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  1.809 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -83,27 +83,26 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.29>
+State 1 <SV = 0> <Delay = 1.80>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/generic/fp_generic.cpp:302]   --->   Operation 4 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%zext_ln308_read = read i7 @_ssdm_op_Read.ap_auto.i7, i7 %zext_ln308"   --->   Operation 5 'read' 'zext_ln308_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%zext_ln308_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %zext_ln308"   --->   Operation 5 'read' 'zext_ln308_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.38ns)   --->   "%store_ln302 = store i4 0, i4 %i" [src/generic/fp_generic.cpp:302]   --->   Operation 7 'store' 'store_ln302' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_13 = load i4 %i" [src/generic/fp_generic.cpp:306]   --->   Operation 9 'load' 'i_13' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln306 = icmp_eq  i4 %i_13, i4 8" [src/generic/fp_generic.cpp:306]   --->   Operation 10 'icmp' 'icmp_ln306' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln306 = add i4 %i_13, i4 1" [src/generic/fp_generic.cpp:306]   --->   Operation 11 'add' 'add_ln306' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_15 = load i4 %i" [src/generic/fp_generic.cpp:308]   --->   Operation 9 'load' 'i_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln306 = icmp_eq  i4 %i_15, i4 8" [src/generic/fp_generic.cpp:306]   --->   Operation 10 'icmp' 'icmp_ln306' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln306 = add i4 %i_15, i4 1" [src/generic/fp_generic.cpp:306]   --->   Operation 11 'add' 'add_ln306' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln306 = br i1 %icmp_ln306, void %for.inc.split, void %VITIS_LOOP_314_3.preheader.exitStub" [src/generic/fp_generic.cpp:306]   --->   Operation 12 'br' 'br_ln306' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln308_3 = zext i4 %i_13" [src/generic/fp_generic.cpp:308]   --->   Operation 13 'zext' 'zext_ln308_3' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.70ns)   --->   "%add_ln308 = add i7 %zext_ln308_read, i7 %zext_ln308_3" [src/generic/fp_generic.cpp:308]   --->   Operation 14 'add' 'add_ln308' <Predicate = (!icmp_ln306)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln308_4 = zext i7 %add_ln308" [src/generic/fp_generic.cpp:308]   --->   Operation 15 'zext' 'zext_ln308_4' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln308_4" [src/generic/fp_generic.cpp:308]   --->   Operation 16 'getelementptr' 'mc_addr' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:302]   --->   Operation 17 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:302]   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [src/generic/fp_generic.cpp:306]   --->   Operation 19 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] ( I:1.20ns O:1.20ns )   --->   "%store_ln308 = store i64 0, i7 %mc_addr" [src/generic/fp_generic.cpp:308]   --->   Operation 20 'store' 'store_ln308' <Predicate = (!icmp_ln306)> <Delay = 1.20> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 112> <RAM>
-ST_1 : Operation 21 [1/1] (0.38ns)   --->   "%store_ln302 = store i4 %add_ln306, i4 %i" [src/generic/fp_generic.cpp:302]   --->   Operation 21 'store' 'store_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.38>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln306 = br void %for.inc" [src/generic/fp_generic.cpp:306]   --->   Operation 22 'br' 'br_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 23 'ret' 'ret_ln0' <Predicate = (icmp_ln306)> <Delay = 0.38>
+ST_1 : Operation 13 [1/1] (0.70ns)   --->   "%add_ln308 = add i4 %zext_ln308_read, i4 %i_15" [src/generic/fp_generic.cpp:308]   --->   Operation 13 'add' 'add_ln308' <Predicate = (!icmp_ln306)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln308_5 = zext i4 %add_ln308" [src/generic/fp_generic.cpp:308]   --->   Operation 14 'zext' 'zext_ln308_5' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln308_5" [src/generic/fp_generic.cpp:308]   --->   Operation 15 'getelementptr' 'mc_addr' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84" [src/generic/fp_generic.cpp:302]   --->   Operation 16 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:302]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45" [src/generic/fp_generic.cpp:306]   --->   Operation 18 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln308 = store i64 0, i4 %mc_addr" [src/generic/fp_generic.cpp:308]   --->   Operation 19 'store' 'store_ln308' <Predicate = (!icmp_ln306)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 20 [1/1] (0.38ns)   --->   "%store_ln302 = store i4 %add_ln306, i4 %i" [src/generic/fp_generic.cpp:302]   --->   Operation 20 'store' 'store_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.38>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln306 = br void %for.inc" [src/generic/fp_generic.cpp:306]   --->   Operation 21 'br' 'br_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 22 'ret' 'ret_ln0' <Predicate = (icmp_ln306)> <Delay = 0.38>
 
 
 ============================================================
@@ -111,12 +110,12 @@ ST_1 : Operation 23 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 2.295ns
+ <State 1>: 1.809ns
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln302', src/generic/fp_generic.cpp:302) of constant 0 on local variable 'i', src/generic/fp_generic.cpp:302 [6]  (0.387 ns)
-	'load' operation 4 bit ('i', src/generic/fp_generic.cpp:306) on local variable 'i', src/generic/fp_generic.cpp:302 [9]  (0.000 ns)
+	'load' operation 4 bit ('i', src/generic/fp_generic.cpp:308) on local variable 'i', src/generic/fp_generic.cpp:302 [9]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln306', src/generic/fp_generic.cpp:306) [10]  (0.708 ns)
-	'store' operation 0 bit ('store_ln308', src/generic/fp_generic.cpp:308) of constant 0 on array 'mc' [21]  (1.200 ns)
+	'store' operation 0 bit ('store_ln308', src/generic/fp_generic.cpp:308) of constant 0 on array 'mc' [20]  (0.714 ns)
 
 
 ============================================================

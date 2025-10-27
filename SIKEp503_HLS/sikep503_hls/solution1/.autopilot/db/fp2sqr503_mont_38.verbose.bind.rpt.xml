@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2sqr503_mont_38'" level="0">
-<item name = "Date">Mon Oct 20 16:14:33 2025
+<item name = "Date">Sat Oct 25 16:49:46 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.130 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">563, 937, 5.630 us, 9.370 us, 563, 937, no</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 <column name="grp_fp2sqr503_mont_38_Pipeline_VITIS_LOOP_61_1_fu_58">fp2sqr503_mont_38_Pipeline_VITIS_LOOP_61_1, 19, 19, 0.190 us, 0.190 us, 18, 18, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2sqr503_mont_38_Pipeline_VITIS_LOOP_68_2_fu_66">fp2sqr503_mont_38_Pipeline_VITIS_LOOP_68_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_fp2sqr503_mont_38_Pipeline_VITIS_LOOP_378_1126_fu_74">fp2sqr503_mont_38_Pipeline_VITIS_LOOP_378_1126, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fpmul503_mont_11_fu_81">fpmul503_mont_11, 249, 436, 2.490 us, 4.360 us, 249, 436, no</column>
-<column name="grp_fpmul503_mont_55_fu_91">fpmul503_mont_55, 249, 436, 2.490 us, 4.360 us, 249, 436, no</column>
+<column name="grp_fpmul503_mont_11_fu_81">fpmul503_mont_11, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_fpmul503_mont_55_fu_91">fpmul503_mont_55, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

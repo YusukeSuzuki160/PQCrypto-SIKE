@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpsub503_5_Pipeline_VITIS_LOOP_61_1'" level="0">
-<item name = "Date">Mon Oct 20 14:41:27 2025
+<item name = "Date">Sat Oct 25 18:46:21 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -103,7 +103,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_i_56">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_i_72">9, 2, 4, 8</column>
 <column name="borrow_reg_122">9, 2, 1, 2</column>
 <column name="i_fu_60">9, 2, 4, 8</column>
 </table>
@@ -114,7 +114,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="borrow_reg_122">1, 0, 1, 0</column>
-<column name="i_56_reg_283">4, 0, 4, 0</column>
+<column name="i_72_reg_283">4, 0, 4, 0</column>
 <column name="i_fu_60">4, 0, 4, 0</column>
 <column name="icmp_ln61_reg_288">1, 0, 1, 0</column>
 </table>

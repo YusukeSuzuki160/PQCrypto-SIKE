@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>npts_7</name>
+              <name>npts_5</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -75,7 +75,7 @@
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
-          <direction>0</direction>
+          <direction>1</direction>
           <if_type>1</if_type>
           <array_size>112</array_size>
           <bit_vecs>
@@ -111,7 +111,7 @@
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
-          <direction>1</direction>
+          <direction>0</direction>
           <if_type>1</if_type>
           <array_size>16</array_size>
           <bit_vecs>
@@ -161,7 +161,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -198,7 +198,7 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>npts_7_read</name>
+              <name>npts_5_read</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -274,7 +274,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -354,7 +354,7 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>i_277</name>
+              <name>i_319</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>13</lineNumber>
@@ -387,7 +387,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -458,7 +458,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -529,7 +529,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -600,7 +600,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -672,13 +672,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln13_fu_119_p1</rtlName>
+              <rtlName>zext_ln13_fu_101_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -701,7 +701,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>15</m_topoIndex>
+          <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_13">
@@ -742,13 +742,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_s_fu_101_p3</rtlName>
+              <rtlName>tmp_s_fu_111_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -773,7 +773,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>9</m_topoIndex>
+          <m_topoIndex>14</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_14">
@@ -781,7 +781,7 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>zext_ln14_17</name>
+              <name>zext_ln14_16</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -814,13 +814,13 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln14_17_fu_109_p1</rtlName>
+              <rtlName>zext_ln14_16_fu_117_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -843,7 +843,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>10</m_topoIndex>
+          <m_topoIndex>15</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_15">
@@ -884,7 +884,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -915,7 +915,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>11</m_topoIndex>
+          <m_topoIndex>16</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_16">
@@ -923,76 +923,6 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>pts_Z_load</name>
-              <fileName>src/fpx.cpp</fileName>
-              <fileDirectory>../.</fileDirectory>
-              <lineNumber>14</lineNumber>
-              <contextFuncName>fpcopy503</contextFuncName>
-              <contextNormFuncName>fpcopy503</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
-                  <second>
-                    <count>3</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>src/fpx.cpp</first>
-                        <second>fp2copy503</second>
-                      </first>
-                      <second>91</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/fpx.cpp</first>
-                        <second>fpcopy503</second>
-                      </first>
-                      <second>14</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>src/sidh.cpp</first>
-                        <second>EphemeralKeyGeneration_A</second>
-                      </first>
-                      <second>166</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control>auto</control>
-              <opType>ram_1p</opType>
-              <implIndex>auto</implIndex>
-              <coreName>RAM_1P</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>87</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>64</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>60</item>
-          </oprand_edges>
-          <opcode>load</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.20</m_delay>
-          <m_topoIndex>12</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_17">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>24</id>
               <name>R_Z_addr</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
@@ -1026,7 +956,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -1047,9 +977,9 @@
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
+            <item>60</item>
             <item>61</item>
             <item>62</item>
-            <item>63</item>
           </oprand_edges>
           <opcode>getelementptr</opcode>
           <m_Display>0</m_Display>
@@ -1057,15 +987,15 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>16</m_topoIndex>
+          <m_topoIndex>10</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_18">
+        <item class_id_reference="9" object_id="_17">
           <Value>
             <Obj>
               <type>0</type>
-              <id>25</id>
-              <name>R_Z_addr_write_ln14</name>
+              <id>24</id>
+              <name>R_Z_load</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>14</lineNumber>
@@ -1098,7 +1028,77 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control>auto</control>
+              <opType>ram_1p</opType>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>87</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>64</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>63</item>
+          </oprand_edges>
+          <opcode>load</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.71</m_delay>
+          <m_topoIndex>11</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_18">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>25</id>
+              <name>pts_Z_addr_write_ln14</name>
+              <fileName>src/fpx.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>14</lineNumber>
+              <contextFuncName>fpcopy503</contextFuncName>
+              <contextNormFuncName>fpcopy503</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</first>
+                  <second>
+                    <count>3</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>src/fpx.cpp</first>
+                        <second>fp2copy503</second>
+                      </first>
+                      <second>91</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/fpx.cpp</first>
+                        <second>fpcopy503</second>
+                      </first>
+                      <second>14</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>src/sidh.cpp</first>
+                        <second>EphemeralKeyGeneration_A</second>
+                      </first>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -1127,7 +1127,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.71</m_delay>
+          <m_delay>1.20</m_delay>
           <m_topoIndex>17</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1169,7 +1169,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -1201,7 +1201,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.38</m_delay>
-          <m_topoIndex>13</m_topoIndex>
+          <m_topoIndex>12</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_20">
@@ -1242,7 +1242,7 @@
                         <first>src/sidh.cpp</first>
                         <second>EphemeralKeyGeneration_A</second>
                       </first>
-                      <second>166</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
@@ -1312,7 +1312,7 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.38</m_delay>
-          <m_topoIndex>14</m_topoIndex>
+          <m_topoIndex>13</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
       </nodes>
@@ -1516,7 +1516,7 @@
           <Obj>
             <type>3</type>
             <id>15</id>
-            <name>for.inc.i.i350</name>
+            <name>for.inc.i.i306</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -1550,7 +1550,7 @@
           <Obj>
             <type>3</type>
             <id>28</id>
-            <name>for.inc.i.i350.split</name>
+            <name>for.inc.i.i306.split</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -1589,7 +1589,7 @@
           <Obj>
             <type>3</type>
             <id>30</id>
-            <name>for.inc.i10.i359.preheader.exitStub</name>
+            <name>for.inc.i10.i315.preheader.exitStub</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -1763,42 +1763,42 @@
         <item class_id_reference="20" object_id="_51">
           <id>60</id>
           <edge_type>1</edge_type>
-          <source_obj>19</source_obj>
+          <source_obj>3</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_52">
           <id>61</id>
           <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
-          <sink_obj>24</sink_obj>
+          <source_obj>57</source_obj>
+          <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_53">
           <id>62</id>
           <edge_type>1</edge_type>
-          <source_obj>57</source_obj>
-          <sink_obj>24</sink_obj>
+          <source_obj>16</source_obj>
+          <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_54">
           <id>63</id>
           <edge_type>1</edge_type>
-          <source_obj>16</source_obj>
+          <source_obj>23</source_obj>
           <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_55">
           <id>64</id>
           <edge_type>1</edge_type>
-          <source_obj>23</source_obj>
+          <source_obj>24</source_obj>
           <sink_obj>25</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_56">
           <id>65</id>
           <edge_type>1</edge_type>
-          <source_obj>24</source_obj>
+          <source_obj>19</source_obj>
           <sink_obj>25</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1980,7 +1980,7 @@
         <item class_id="26" tracking_level="1" version="0" object_id="_72">
           <id>1</id>
           <operations class_id="27" tracking_level="0" version="0">
-            <count>16</count>
+            <count>15</count>
             <item_version>0</item_version>
             <item class_id="28" tracking_level="1" version="0" object_id="_73">
               <id>4</id>
@@ -2033,71 +2033,71 @@
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_83">
-              <id>17</id>
+              <id>16</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_84">
-              <id>18</id>
+              <id>23</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_85">
-              <id>19</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_86">
-              <id>23</id>
+              <id>24</id>
               <stage>2</stage>
               <latency>2</latency>
             </item>
-            <item class_id_reference="28" object_id="_87">
+            <item class_id_reference="28" object_id="_86">
               <id>26</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_88">
+            <item class_id_reference="28" object_id="_87">
               <id>29</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_89">
+        <item class_id_reference="26" object_id="_88">
           <id>2</id>
           <operations>
-            <count>8</count>
+            <count>9</count>
             <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_89">
+              <id>17</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
             <item class_id_reference="28" object_id="_90">
-              <id>16</id>
+              <id>18</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_91">
-              <id>20</id>
+              <id>19</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_92">
-              <id>21</id>
+              <id>20</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_93">
-              <id>22</id>
+              <id>21</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_94">
-              <id>23</id>
+              <id>22</id>
               <stage>1</stage>
-              <latency>2</latency>
+              <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_95">
               <id>24</id>
               <stage>1</stage>
-              <latency>1</latency>
+              <latency>2</latency>
             </item>
             <item class_id_reference="28" object_id="_96">
               <id>25</id>
@@ -2283,7 +2283,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_277</first>
+          <first>ap_sig_allocacmp_i_319</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2398,7 +2398,7 @@
           </second>
         </item>
         <item>
-          <first>i_277_reg_130</first>
+          <first>i_319_reg_134</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2542,28 +2542,28 @@
       <item>
         <first>16</first>
         <second>
-          <first>1</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>17</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>18</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>19</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
@@ -2571,14 +2571,14 @@
         <first>23</first>
         <second>
           <first>0</first>
-          <second>1</second>
+          <second>0</second>
         </second>
       </item>
       <item>
         <first>24</first>
         <second>
-          <first>1</first>
-          <second>0</second>
+          <first>0</first>
+          <second>1</second>
         </second>
       </item>
       <item>
@@ -2691,7 +2691,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>23</item>
         </second>
       </item>
       <item>
@@ -2699,8 +2699,8 @@
         <second>
           <count>2</count>
           <item_version>0</item_version>
-          <item>23</item>
-          <item>23</item>
+          <item>24</item>
+          <item>24</item>
         </second>
       </item>
       <item>
@@ -2708,7 +2708,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>19</item>
         </second>
       </item>
       <item>
@@ -2756,19 +2756,11 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>17</item>
+          <item>16</item>
         </second>
       </item>
       <item>
-        <first>109</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>18</item>
-        </second>
-      </item>
-      <item>
-        <first>114</first>
+        <first>106</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2776,11 +2768,19 @@
         </second>
       </item>
       <item>
-        <first>119</first>
+        <first>111</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>16</item>
+          <item>17</item>
+        </second>
+      </item>
+      <item>
+        <first>117</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
         </second>
       </item>
     </dp_fu_nodes>
@@ -2788,11 +2788,11 @@
       <count>8</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>R_Z_addr_gep_fu_67</first>
+        <first>R_Z_addr_gep_fu_54</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>23</item>
         </second>
       </item>
       <item>
@@ -2820,7 +2820,7 @@
         </second>
       </item>
       <item>
-        <first>pts_Z_addr_gep_fu_54</first>
+        <first>pts_Z_addr_gep_fu_67</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2828,7 +2828,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_s_fu_101</first>
+        <first>tmp_s_fu_111</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2836,7 +2836,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln13_fu_119</first>
+        <first>zext_ln13_fu_101</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2844,7 +2844,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln14_17_fu_109</first>
+        <first>zext_ln14_16_fu_117</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2860,7 +2860,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>i_277_load_fu_86</first>
+        <first>i_319_load_fu_86</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2868,7 +2868,7 @@
         </second>
       </item>
       <item>
-        <first>npts_7_read_read_fu_48</first>
+        <first>npts_5_read_read_fu_48</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2876,7 +2876,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln11_store_fu_114</first>
+        <first>store_ln11_store_fu_106</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2905,9 +2905,10 @@
           <second>0</second>
         </first>
         <second>
-          <count>1</count>
+          <count>2</count>
           <item_version>0</item_version>
-          <item>25</item>
+          <item>24</item>
+          <item>24</item>
         </second>
       </item>
       <item>
@@ -2916,18 +2917,17 @@
           <second>0</second>
         </first>
         <second>
-          <count>2</count>
+          <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
-          <item>23</item>
+          <item>25</item>
         </second>
       </item>
     </dp_mem_port_nodes>
     <dp_reg_nodes>
-      <count>3</count>
+      <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>123</first>
+        <first>122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2935,7 +2935,15 @@
         </second>
       </item>
       <item>
-        <first>130</first>
+        <first>129</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>7</item>
+        </second>
+      </item>
+      <item>
+        <first>134</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2943,19 +2951,27 @@
         </second>
       </item>
       <item>
-        <first>138</first>
+        <first>142</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>23</item>
         </second>
       </item>
     </dp_reg_nodes>
     <dp_regname_nodes>
-      <count>3</count>
+      <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>i_277_reg_130</first>
+        <first>R_Z_addr_reg_142</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>23</item>
+        </second>
+      </item>
+      <item>
+        <first>i_319_reg_134</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2963,7 +2979,7 @@
         </second>
       </item>
       <item>
-        <first>i_reg_123</first>
+        <first>i_reg_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2971,11 +2987,11 @@
         </second>
       </item>
       <item>
-        <first>pts_Z_addr_reg_138</first>
+        <first>npts_5_read_reg_129</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>7</item>
         </second>
       </item>
     </dp_regname_nodes>
@@ -2996,17 +3012,18 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>
-            <first>store</first>
+            <first>load</first>
             <second>
-              <count>1</count>
+              <count>2</count>
               <item_version>0</item_version>
-              <item>25</item>
+              <item>24</item>
+              <item>24</item>
             </second>
           </item>
         </second>
       </item>
       <item>
-        <first>npts_7</first>
+        <first>npts_5</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3026,12 +3043,11 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>
-            <first>load</first>
+            <first>store</first>
             <second>
-              <count>2</count>
+              <count>1</count>
               <item_version>0</item_version>
-              <item>23</item>
-              <item>23</item>
+              <item>25</item>
             </second>
           </item>
         </second>
@@ -3073,7 +3089,7 @@
         </second>
       </item>
       <item>
-        <first>23</first>
+        <first>24</first>
         <second>
           <first>666</first>
           <second>17</second>

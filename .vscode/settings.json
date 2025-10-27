@@ -6,6 +6,8 @@
         "semaphore": "c",
         "algorithm": "c",
         "ratio": "c",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "iostream": "cpp"
     }
 }

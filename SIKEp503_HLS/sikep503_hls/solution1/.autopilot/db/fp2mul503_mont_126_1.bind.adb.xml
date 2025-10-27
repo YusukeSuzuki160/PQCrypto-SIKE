@@ -130,10 +130,10 @@ entry:2 %empty = trunc i32 %c_0_offset_read
 
 <Node id="12" bw="3" op_0_bw="32">
 <![CDATA[
-entry:3 %empty_177 = trunc i32 %c_1_offset_read
+entry:3 %empty_184 = trunc i32 %c_1_offset_read
 
 ]]></Node>
-<StgValue><ssdm name="empty_177"/></StgValue>
+<StgValue><ssdm name="empty_184"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -306,7 +306,7 @@ entry:23 %call_ln183 = call void @mp_mul.4, i64 %c_1, i32 %c_1_offset_read, i64 
 
 <Node id="14" bw="6" op_0_bw="6" op_1_bw="3" op_2_bw="3">
 <![CDATA[
-entry:5 %tmp = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %empty_177, i3 0
+entry:5 %tmp = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %empty_184, i3 0
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -957,7 +957,7 @@ entry:41 %ret_ln196 = ret
 </dataflow>
 <dataflow id="90" from="c_0_offset_read" to="empty" fromId="14" toId="15">
 </dataflow>
-<dataflow id="91" from="c_1_offset_read" to="empty_177" fromId="13" toId="16">
+<dataflow id="91" from="c_1_offset_read" to="empty_184" fromId="13" toId="16">
 </dataflow>
 <dataflow id="93" from="StgValue_92" to="borrow_loc" fromId="92" toId="17">
 </dataflow>
@@ -1013,7 +1013,7 @@ entry:41 %ret_ln196 = ret
 </dataflow>
 <dataflow id="121" from="_ssdm_op_BitConcatenate.i6.i3.i3" to="tmp" fromId="120" toId="27">
 </dataflow>
-<dataflow id="122" from="empty_177" to="tmp" fromId="16" toId="27">
+<dataflow id="122" from="empty_184" to="tmp" fromId="16" toId="27">
 </dataflow>
 <dataflow id="124" from="StgValue_123" to="tmp" fromId="123" toId="27">
 </dataflow>

@@ -3317,10 +3317,10 @@ for.inc:2 %icmp_ln319 = icmp_eq  i8 %i, i8 250
 
 <Node id="194" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-for.inc:3 %i_267 = add i8 %i, i8 1
+for.inc:3 %i_307 = add i8 %i, i8 1
 
 ]]></Node>
-<StgValue><ssdm name="i_267"/></StgValue>
+<StgValue><ssdm name="i_307"/></StgValue>
 </operation>
 
 <operation id="245" st_id="17" stage="1" lat="1">
@@ -3508,7 +3508,7 @@ for.inc.split:11 %ephemeralsk_i_load_1 = load i5 %ephemeralsk_i_addr_1
 
 <Node id="375" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.split:178 %store_ln291 = store i8 %i_267, i8 %i_065
+for.inc.split:178 %store_ln291 = store i8 %i_307, i8 %i_065
 
 ]]></Node>
 <StgValue><ssdm name="store_ln291"/></StgValue>
@@ -5075,7 +5075,7 @@ for.inc.split:1 %speclooptripcount_ln291 = speclooptripcount void @_ssdm_op_Spec
 
 <Node id="199" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split:2 %specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
+for.inc.split:2 %specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln319"/></StgValue>

@@ -261,7 +261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_265</name>
+						<name>i_296</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>13</lineNumber>
@@ -644,7 +644,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>lshr_ln</name>
+						<name>lshr_ln11</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>11</lineNumber>

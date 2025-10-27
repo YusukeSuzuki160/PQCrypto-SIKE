@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2'
 ================================================================
-* Date:           Mon Oct 20 16:16:16 2025
+* Date:           Sat Oct 25 18:38:26 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -115,7 +115,7 @@ ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%x_0_addr = getelementptr i64 %x_0,
 ST_1 : Operation 32 [1/1] (0.70ns)   --->   "%add_ln71_1 = add i5 %zext_ln71_read, i5 %zext_ln71_2" [src/sidh.cpp:71]   --->   Operation 32 'add' 'add_ln71_1' <Predicate = (!icmp_ln67)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln71_4 = zext i5 %add_ln71_1" [src/sidh.cpp:71]   --->   Operation 33 'zext' 'zext_ln71_4' <Predicate = (!icmp_ln67)> <Delay = 0.00>
 ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%x_1_addr = getelementptr i64 %x_1, i64 0, i64 %zext_ln71_4" [src/sidh.cpp:71]   --->   Operation 34 'getelementptr' 'x_1_addr' <Predicate = (!icmp_ln67)> <Delay = 0.00>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%specpipeline_ln69 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/sidh.cpp:69]   --->   Operation 35 'specpipeline' 'specpipeline_ln69' <Predicate = (!icmp_ln67)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%specpipeline_ln69 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84" [src/sidh.cpp:69]   --->   Operation 35 'specpipeline' 'specpipeline_ln69' <Predicate = (!icmp_ln67)> <Delay = 0.00>
 ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln71 = br i1 %cond, void %arrayidx531.case.1, void %arrayidx531.case.0" [src/sidh.cpp:71]   --->   Operation 36 'br' 'br_ln71' <Predicate = (!icmp_ln67)> <Delay = 0.00>
 ST_1 : Operation 37 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln71 = store i64 0, i5 %x_1_addr" [src/sidh.cpp:71]   --->   Operation 37 'store' 'store_ln71' <Predicate = (!icmp_ln67 & !cond)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 24> <RAM>
 ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln71 = br void %arrayidx531.exit" [src/sidh.cpp:71]   --->   Operation 38 'br' 'br_ln71' <Predicate = (!icmp_ln67 & !cond)> <Delay = 0.00>
@@ -430,7 +430,7 @@ ret_ln0               (ret              ) [ 00]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </bind>
 </comp>
 

@@ -65,7 +65,7 @@ attribute shreg_extract : string;
     signal c_addr_reg_249 : STD_LOGIC_VECTOR (2 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal zext_ln46_fu_131_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal i_148_fu_56 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    signal i_154_fu_56 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal add_ln46_fu_125_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_sig_allocacmp_i : STD_LOGIC_VECTOR (3 downto 0);
     signal c_ce0_local : STD_LOGIC;
@@ -77,15 +77,15 @@ attribute shreg_extract : string;
     signal and_ln48_fu_152_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal tempReg_fu_146_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal xor_ln48_fu_164_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal xor_ln48_43_fu_170_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal xor_ln48_34_fu_170_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal bit_sel1_fu_182_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal xor_ln48_47_fu_190_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal trunc_ln48_fu_196_p1 : STD_LOGIC_VECTOR (62 downto 0);
     signal xor_ln48_s_fu_200_p3 : STD_LOGIC_VECTOR (63 downto 0);
     signal or_ln48_fu_176_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal xor_ln48_45_fu_214_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal and_ln48_15_fu_208_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal or_ln48_15_fu_220_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal xor_ln48_36_fu_214_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal and_ln48_12_fu_208_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal or_ln48_12_fu_220_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
     signal ap_done_int : STD_LOGIC;
@@ -97,7 +97,7 @@ attribute shreg_extract : string;
     signal ap_done_sig : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component sikep503_kem_enc_hw_fpadd503_1565_3_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R IS
+    component sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -130,7 +130,7 @@ attribute shreg_extract : string;
 
 
 begin
-    p503x2_1_U : component sikep503_kem_enc_hw_fpadd503_1565_3_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R
+    p503x2_1_U : component sikep503_kem_enc_hw_fpadd503_246_4_Pipeline_VITIS_LOOP_39_2_p503x2_1_ROM_AUTO_1R
     generic map (
         DataWidth => 64,
         AddressRange => 8,
@@ -193,21 +193,21 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-                carry_reg_92 <= or_ln48_15_fu_220_p2(63 downto 63);
+                carry_reg_92 <= or_ln48_12_fu_220_p2(63 downto 63);
             elsif (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_state1_pp0_stage0_iter0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
                 carry_reg_92 <= ap_const_lv1_0;
             end if; 
         end if;
     end process;
 
-    i_148_fu_56_assign_proc : process (ap_clk)
+    i_154_fu_56_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1_pp0_stage0_iter0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                 if ((icmp_ln46_fu_119_p2 = ap_const_lv1_0)) then 
-                    i_148_fu_56 <= add_ln46_fu_125_p2;
+                    i_154_fu_56 <= add_ln46_fu_125_p2;
                 elsif ((ap_loop_init = ap_const_logic_1)) then 
-                    i_148_fu_56 <= ap_const_lv4_0;
+                    i_154_fu_56 <= ap_const_lv4_0;
                 end if;
             end if; 
         end if;
@@ -241,7 +241,7 @@ begin
     end process;
     add_ln46_fu_125_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i) + unsigned(ap_const_lv4_1));
     add_ln48_fu_157_p2 <= std_logic_vector(unsigned(and_ln48_fu_152_p2) + unsigned(tempReg_fu_146_p2));
-    and_ln48_15_fu_208_p2 <= (xor_ln48_s_fu_200_p3 and c_q0);
+    and_ln48_12_fu_208_p2 <= (xor_ln48_s_fu_200_p3 and c_q0);
     and_ln48_fu_152_p2 <= (sext_ln30_cast_reg_241 and p503x2_1_q0);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
@@ -306,12 +306,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_i_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_148_fu_56)
+    ap_sig_allocacmp_i_assign_proc : process(ap_CS_fsm_state1, ap_loop_init, i_154_fu_56)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             ap_sig_allocacmp_i <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_i <= i_148_fu_56;
+            ap_sig_allocacmp_i <= i_154_fu_56;
         end if; 
     end process;
 
@@ -353,8 +353,8 @@ begin
     end process;
 
     icmp_ln46_fu_119_p2 <= "1" when (ap_sig_allocacmp_i = ap_const_lv4_8) else "0";
-    or_ln48_15_fu_220_p2 <= (xor_ln48_45_fu_214_p2 or and_ln48_15_fu_208_p2);
-    or_ln48_fu_176_p2 <= (xor_ln48_fu_164_p2 or xor_ln48_43_fu_170_p2);
+    or_ln48_12_fu_220_p2 <= (xor_ln48_36_fu_214_p2 or and_ln48_12_fu_208_p2);
+    or_ln48_fu_176_p2 <= (xor_ln48_fu_164_p2 or xor_ln48_34_fu_170_p2);
     p503x2_1_address0 <= zext_ln46_fu_131_p1(3 - 1 downto 0);
 
     p503x2_1_ce0_local_assign_proc : process(ap_CS_fsm_state1, ap_block_state1_pp0_stage0_iter0)
@@ -371,8 +371,8 @@ begin
         ap_const_lv64_0;
     tempReg_fu_146_p2 <= std_logic_vector(unsigned(c_q0) + unsigned(zext_ln48_fu_142_p1));
     trunc_ln48_fu_196_p1 <= tempReg_fu_146_p2(63 - 1 downto 0);
-    xor_ln48_43_fu_170_p2 <= (tempReg_fu_146_p2 xor and_ln48_fu_152_p2);
-    xor_ln48_45_fu_214_p2 <= (or_ln48_fu_176_p2 xor add_ln48_fu_157_p2);
+    xor_ln48_34_fu_170_p2 <= (tempReg_fu_146_p2 xor and_ln48_fu_152_p2);
+    xor_ln48_36_fu_214_p2 <= (or_ln48_fu_176_p2 xor add_ln48_fu_157_p2);
     xor_ln48_47_fu_190_p2 <= (bit_sel1_fu_182_p3 xor ap_const_lv1_1);
     xor_ln48_fu_164_p2 <= (tempReg_fu_146_p2 xor add_ln48_fu_157_p2);
     xor_ln48_s_fu_200_p3 <= (xor_ln48_47_fu_190_p2 & trunc_ln48_fu_196_p1);

@@ -364,7 +364,7 @@
             <Obj>
               <type>0</type>
               <id>12</id>
-              <name>empty_177</name>
+              <name>empty_184</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -375,7 +375,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_177_fu_182_p1</rtlName>
+              <rtlName>empty_184_fu_182_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -923,7 +923,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>1.42</m_delay>
           <m_topoIndex>11</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -983,7 +983,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>1.42</m_delay>
           <m_topoIndex>12</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2585,8 +2585,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>403</mMinLatency>
-        <mMaxLatency>678</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -3216,57 +3216,69 @@
         <item>
           <first>grp_mp_mul_4_fu_100 (mp_mul_4)</first>
           <second>
-            <count>3</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
+              <first>BRAM</first>
+              <second>6</second>
+            </item>
+            <item>
               <first>DSP</first>
-              <second>225</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3095</second>
+              <second>2390</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7688</second>
+              <second>18507</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_mp_mul_4_fu_88 (mp_mul_4)</first>
           <second>
-            <count>3</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
+              <first>BRAM</first>
+              <second>6</second>
+            </item>
+            <item>
               <first>DSP</first>
-              <second>225</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3095</second>
+              <second>2390</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7688</second>
+              <second>18507</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_mp_mul_6117_fu_165 (mp_mul_6117)</first>
           <second>
-            <count>3</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
+              <first>BRAM</first>
+              <second>6</second>
+            </item>
+            <item>
               <first>DSP</first>
-              <second>225</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3083</second>
+              <second>2387</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7636</second>
+              <second>18494</second>
             </item>
           </second>
         </item>
@@ -4484,7 +4496,7 @@
           </second>
         </item>
         <item>
-          <first>empty_177_reg_223</first>
+          <first>empty_184_reg_223</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5368,7 +5380,7 @@
         </second>
       </item>
       <item>
-        <first>empty_177_fu_182</first>
+        <first>empty_184_fu_182</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5683,7 +5695,7 @@
         </second>
       </item>
       <item>
-        <first>empty_177_reg_223</first>
+        <first>empty_184_reg_223</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

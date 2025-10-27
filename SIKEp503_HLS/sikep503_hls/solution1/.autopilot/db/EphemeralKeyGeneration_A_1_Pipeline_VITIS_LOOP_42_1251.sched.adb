@@ -340,7 +340,7 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>i_270</name>
+						<name>i_310</name>
 						<fileName>src/sidh.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>49</lineNumber>

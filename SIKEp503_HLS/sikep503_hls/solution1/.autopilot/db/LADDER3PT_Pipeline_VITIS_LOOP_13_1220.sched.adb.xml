@@ -25,10 +25,10 @@
 
 <Node id="3" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_252 = alloca i32 1
+newFuncRoot:0 %i_290 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_252"/></StgValue>
+<StgValue><ssdm name="i_290"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -40,7 +40,7 @@ newFuncRoot:0 %i_252 = alloca i32 1
 
 <Node id="4" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_4, i64 666, i64 17, i64 18446744073709551615
+newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X, i64 666, i64 207, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -55,7 +55,7 @@ newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2
 
 <Node id="5" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:2 %store_ln11 = store i4 0, i4 %i_252
+newFuncRoot:2 %store_ln11 = store i4 0, i4 %i_290
 
 ]]></Node>
 <StgValue><ssdm name="store_ln11"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %store_ln11 = store i4 0, i4 %i_252
 
 <Node id="6" bw="0" op_0_bw="0">
 <![CDATA[
-newFuncRoot:3 %br_ln0 = br void %for.inc.i10.i101
+newFuncRoot:3 %br_ln0 = br void %for.inc.i.i
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -85,7 +85,7 @@ newFuncRoot:3 %br_ln0 = br void %for.inc.i10.i101
 
 <Node id="8" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i10.i101:0 %i = load i4 %i_252
+for.inc.i.i:0 %i = load i4 %i_290
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -100,7 +100,7 @@ for.inc.i10.i101:0 %i = load i4 %i_252
 
 <Node id="9" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i10.i101:1 %icmp_ln13 = icmp_eq  i4 %i, i4 8
+for.inc.i.i:1 %icmp_ln13 = icmp_eq  i4 %i, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln13"/></StgValue>
@@ -115,7 +115,7 @@ for.inc.i10.i101:1 %icmp_ln13 = icmp_eq  i4 %i, i4 8
 
 <Node id="10" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i10.i101:2 %add_ln13 = add i4 %i, i4 1
+for.inc.i.i:2 %add_ln13 = add i4 %i, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln13"/></StgValue>
@@ -130,7 +130,7 @@ for.inc.i10.i101:2 %add_ln13 = add i4 %i, i4 1
 
 <Node id="11" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-for.inc.i10.i101:3 %br_ln13 = br i1 %icmp_ln13, void %for.inc.i10.i101.split, void %for.inc.i108.preheader.exitStub
+for.inc.i.i:3 %br_ln13 = br i1 %icmp_ln13, void %for.inc.i.i.split, void %for.inc.i10.i.preheader.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln13"/></StgValue>
@@ -146,7 +146,7 @@ for.inc.i10.i101:3 %br_ln13 = br i1 %icmp_ln13, void %for.inc.i10.i101.split, vo
 
 <Node id="13" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc.i10.i101.split:0 %zext_ln13 = zext i4 %i
+for.inc.i.i.split:0 %zext_ln13 = zext i4 %i
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln13"/></StgValue>
@@ -162,10 +162,10 @@ for.inc.i10.i101.split:0 %zext_ln13 = zext i4 %i
 
 <Node id="18" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i10.i101.split:5 %XRA_1_addr = getelementptr i64 %XRA_1, i64 0, i64 %zext_ln13
+for.inc.i.i.split:5 %XQA_0_addr = getelementptr i64 %XQA_0, i64 0, i64 %zext_ln13
 
 ]]></Node>
-<StgValue><ssdm name="XRA_1_addr"/></StgValue>
+<StgValue><ssdm name="XQA_0_addr"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="2" lat="2">
@@ -178,10 +178,10 @@ for.inc.i10.i101.split:5 %XRA_1_addr = getelementptr i64 %XRA_1, i64 0, i64 %zex
 
 <Node id="19" bw="64" op_0_bw="3">
 <![CDATA[
-for.inc.i10.i101.split:6 %XRA_1_load = load i3 %XRA_1_addr
+for.inc.i.i.split:6 %XQA_0_load = load i3 %XQA_0_addr
 
 ]]></Node>
-<StgValue><ssdm name="XRA_1_load"/></StgValue>
+<StgValue><ssdm name="XQA_0_load"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -194,7 +194,7 @@ for.inc.i10.i101.split:6 %XRA_1_load = load i3 %XRA_1_addr
 
 <Node id="21" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i10.i101.split:8 %store_ln11 = store i4 %add_ln13, i4 %i_252
+for.inc.i.i.split:8 %store_ln11 = store i4 %add_ln13, i4 %i_290
 
 ]]></Node>
 <StgValue><ssdm name="store_ln11"/></StgValue>
@@ -210,7 +210,7 @@ for.inc.i10.i101.split:8 %store_ln11 = store i4 %add_ln13, i4 %i_252
 
 <Node id="24" bw="0">
 <![CDATA[
-for.inc.i108.preheader.exitStub:0 %ret_ln0 = ret
+for.inc.i10.i.preheader.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -228,10 +228,10 @@ for.inc.i108.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="14" bw="3" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.i10.i101.split:1 %R2_X_4_addr = getelementptr i64 %R2_X_4, i64 0, i64 %zext_ln13
+for.inc.i.i.split:1 %R0_X_addr = getelementptr i64 %R0_X, i64 0, i64 %zext_ln13
 
 ]]></Node>
-<StgValue><ssdm name="R2_X_4_addr"/></StgValue>
+<StgValue><ssdm name="R0_X_addr"/></StgValue>
 </operation>
 
 <operation id="18" st_id="2" stage="1" lat="1">
@@ -243,7 +243,7 @@ for.inc.i10.i101.split:1 %R2_X_4_addr = getelementptr i64 %R2_X_4, i64 0, i64 %z
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i10.i101.split:2 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.i.i.split:2 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln11"/></StgValue>
@@ -258,7 +258,7 @@ for.inc.i10.i101.split:2 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPi
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.i10.i101.split:3 %speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
+for.inc.i.i.split:3 %speclooptripcount_ln11 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln11"/></StgValue>
@@ -273,7 +273,7 @@ for.inc.i10.i101.split:3 %speclooptripcount_ln11 = speclooptripcount void @_ssdm
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i10.i101.split:4 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39
+for.inc.i.i.split:4 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln13"/></StgValue>
@@ -288,10 +288,10 @@ for.inc.i10.i101.split:4 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLo
 
 <Node id="19" bw="64" op_0_bw="3">
 <![CDATA[
-for.inc.i10.i101.split:6 %XRA_1_load = load i3 %XRA_1_addr
+for.inc.i.i.split:6 %XQA_0_load = load i3 %XQA_0_addr
 
 ]]></Node>
-<StgValue><ssdm name="XRA_1_load"/></StgValue>
+<StgValue><ssdm name="XQA_0_load"/></StgValue>
 </operation>
 
 <operation id="22" st_id="2" stage="1" lat="1">
@@ -303,7 +303,7 @@ for.inc.i10.i101.split:6 %XRA_1_load = load i3 %XRA_1_addr
 
 <Node id="20" bw="0" op_0_bw="64" op_1_bw="3">
 <![CDATA[
-for.inc.i10.i101.split:7 %store_ln14 = store i64 %XRA_1_load, i3 %R2_X_4_addr
+for.inc.i.i.split:7 %store_ln14 = store i64 %XQA_0_load, i3 %R0_X_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln14"/></StgValue>
@@ -318,7 +318,7 @@ for.inc.i10.i101.split:7 %store_ln14 = store i64 %XRA_1_load, i3 %R2_X_4_addr
 
 <Node id="22" bw="0" op_0_bw="0">
 <![CDATA[
-for.inc.i10.i101.split:9 %br_ln13 = br void %for.inc.i10.i101
+for.inc.i.i.split:9 %br_ln13 = br void %for.inc.i.i
 
 ]]></Node>
 <StgValue><ssdm name="br_ln13"/></StgValue>

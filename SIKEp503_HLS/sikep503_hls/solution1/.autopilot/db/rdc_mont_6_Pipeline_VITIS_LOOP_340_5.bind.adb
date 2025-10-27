@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>v_32</name>
+						<name>v_41</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -145,7 +145,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -185,7 +185,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>24</array_size>
+				<array_size>112</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -268,7 +268,7 @@
 					<Obj>
 						<type>1</type>
 						<id>8</id>
-						<name>v_40_out</name>
+						<name>v_51_out</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -304,7 +304,7 @@
 					<Obj>
 						<type>1</type>
 						<id>9</id>
-						<name>u_34_out</name>
+						<name>u_43_out</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -340,7 +340,7 @@
 					<Obj>
 						<type>1</type>
 						<id>10</id>
-						<name>t_22_out</name>
+						<name>t_28_out</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -492,7 +492,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>u_13</name>
+						<name>u_22</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>303</lineNumber>
@@ -711,7 +711,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -776,7 +776,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>v_32_read</name>
+						<name>v_41_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -961,7 +961,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>u_13_write_ln303</name>
+						<name>u_22_write_ln303</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>303</lineNumber>
@@ -1346,7 +1346,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>zext_ln344_1</name>
+						<name>zext_ln344_3</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>344</lineNumber>
@@ -1381,7 +1381,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1437,7 +1437,7 @@
 						<coreId>1</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1459,7 +1459,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>zext_ln344_2</name>
+						<name>zext_ln344_4</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>344</lineNumber>
@@ -1550,7 +1550,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1800,7 +1800,7 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>t_load_5</name>
+						<name>t_load_7</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>347</lineNumber>
@@ -1857,7 +1857,7 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>u_13_load_1</name>
+						<name>u_22_load_1</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>346</lineNumber>
@@ -1914,7 +1914,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>v_load_5</name>
+						<name>v_load_7</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>345</lineNumber>
@@ -2018,7 +2018,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.71</m_delay>
+				<m_delay>1.20</m_delay>
 				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2368,7 +2368,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>UV_3</name>
+						<name>UV_5</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>344</lineNumber>
@@ -2424,7 +2424,7 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>v_12</name>
+						<name>v_23</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>345</lineNumber>
@@ -2545,7 +2545,7 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>xor_ln105_22</name>
+						<name>xor_ln105_36</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -2673,7 +2673,7 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>xor_ln105_24</name>
+						<name>xor_ln105_37</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -2865,7 +2865,7 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>tempReg_5</name>
+						<name>tempReg_7</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>346</lineNumber>
@@ -2922,7 +2922,7 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>u_14</name>
+						<name>u_23</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>346</lineNumber>
@@ -3044,7 +3044,7 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>xor_ln105_25</name>
+						<name>xor_ln105_38</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -3300,7 +3300,7 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>tmp_14</name>
+						<name>tmp_24</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>103</lineNumber>
@@ -3365,7 +3365,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>xor_ln105_26</name>
+						<name>xor_ln105_39</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -3429,7 +3429,7 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>xor_ln105_27</name>
+						<name>xor_ln105_40</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -3493,7 +3493,7 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>or_ln105_4</name>
+						<name>or_ln105_7</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -3557,7 +3557,7 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>xor_ln105_28</name>
+						<name>xor_ln105_41</name>
 						<fileName>src/config.h</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>105</lineNumber>
@@ -3621,7 +3621,7 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>tmp_15</name>
+						<name>tmp_25</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>346</lineNumber>
@@ -3679,7 +3679,7 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>carry_8</name>
+						<name>carry_13</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>346</lineNumber>
@@ -3792,7 +3792,7 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>t_6</name>
+						<name>t_9</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>347</lineNumber>
@@ -3908,7 +3908,7 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>u_13_write_ln303</name>
+						<name>u_22_write_ln303</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>303</lineNumber>
@@ -4297,7 +4297,7 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>u_13_load</name>
+						<name>u_22_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4383,7 +4383,7 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>v_40_out_write_ln0</name>
+						<name>v_51_out_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4427,7 +4427,7 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>u_34_out_write_ln0</name>
+						<name>u_43_out_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -4471,7 +4471,7 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>t_22_out_write_ln0</name>
+						<name>t_28_out_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7822,7 +7822,7 @@
 		<count>42</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>UV_3_fu_284</first>
+			<first>UV_5_fu_284</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7870,7 +7870,7 @@
 			</second>
 		</item>
 		<item>
-			<first>carry_8_fu_414</first>
+			<first>carry_13_fu_414</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7926,7 +7926,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln105_4_fu_394</first>
+			<first>or_ln105_7_fu_394</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7958,7 +7958,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_6_fu_424</first>
+			<first>t_9_fu_424</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7974,7 +7974,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tempReg_5_fu_330</first>
+			<first>tempReg_7_fu_330</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7982,7 +7982,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_14_fu_374</first>
+			<first>tmp_24_fu_374</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -7990,7 +7990,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_15_fu_406</first>
+			<first>tmp_25_fu_406</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8014,7 +8014,7 @@
 			</second>
 		</item>
 		<item>
-			<first>u_13_fu_90</first>
+			<first>u_22_fu_90</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8022,7 +8022,7 @@
 			</second>
 		</item>
 		<item>
-			<first>u_14_fu_336</first>
+			<first>u_23_fu_336</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8030,7 +8030,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_12_fu_288</first>
+			<first>v_23_fu_288</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8046,7 +8046,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_22_fu_300</first>
+			<first>xor_ln105_36_fu_300</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8054,7 +8054,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_24_fu_312</first>
+			<first>xor_ln105_37_fu_312</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8062,7 +8062,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_25_fu_350</first>
+			<first>xor_ln105_38_fu_350</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8070,7 +8070,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_26_fu_382</first>
+			<first>xor_ln105_39_fu_382</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8078,7 +8078,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_27_fu_388</first>
+			<first>xor_ln105_40_fu_388</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8086,7 +8086,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln105_28_fu_400</first>
+			<first>xor_ln105_41_fu_400</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8126,7 +8126,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln344_1_fu_220</first>
+			<first>zext_ln344_3_fu_220</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8134,7 +8134,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln344_2_fu_230</first>
+			<first>zext_ln344_4_fu_230</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8263,7 +8263,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_load_5_load_fu_271</first>
+			<first>t_load_7_load_fu_271</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8287,7 +8287,7 @@
 			</second>
 		</item>
 		<item>
-			<first>u_13_load_1_load_fu_274</first>
+			<first>u_22_load_1_load_fu_274</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8295,7 +8295,7 @@
 			</second>
 		</item>
 		<item>
-			<first>u_13_load_load_fu_449</first>
+			<first>u_22_load_load_fu_449</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8311,7 +8311,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_32_read_read_fu_122</first>
+			<first>v_41_read_read_fu_122</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8319,7 +8319,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_load_5_load_fu_277</first>
+			<first>v_load_7_load_fu_277</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8551,7 +8551,7 @@
 			</second>
 		</item>
 		<item>
-			<first>u_13_reg_472</first>
+			<first>u_22_reg_472</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8640,7 +8640,7 @@
 			</second>
 		</item>
 		<item>
-			<first>t_22_out</first>
+			<first>t_28_out</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8670,7 +8670,7 @@
 			</second>
 		</item>
 		<item>
-			<first>u_34_out</first>
+			<first>u_43_out</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8685,7 +8685,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_32</first>
+			<first>v_41</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8700,7 +8700,7 @@
 			</second>
 		</item>
 		<item>
-			<first>v_40_out</first>
+			<first>v_51_out</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

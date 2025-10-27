@@ -25,10 +25,10 @@
 
 <Node id="4" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_130 = alloca i32 1
+newFuncRoot:0 %i_160 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_130"/></StgValue>
+<StgValue><ssdm name="i_160"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -85,7 +85,7 @@ newFuncRoot:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c,
 
 <Node id="8" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:4 %store_ln28 = store i4 0, i4 %i_130
+newFuncRoot:4 %store_ln28 = store i4 0, i4 %i_160
 
 ]]></Node>
 <StgValue><ssdm name="store_ln28"/></StgValue>
@@ -130,7 +130,7 @@ for.inc54:0 %carry = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc54.split
 
 <Node id="12" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc54:1 %i = load i4 %i_130
+for.inc54:1 %i = load i4 %i_160
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -271,7 +271,7 @@ for.inc54.split:9 %p503x2_1_load = load i3 %p503x2_1_addr
 
 <Node id="41" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc54.split:24 %store_ln28 = store i4 %add_ln46, i4 %i_130
+for.inc54.split:24 %store_ln28 = store i4 %add_ln46, i4 %i_160
 
 ]]></Node>
 <StgValue><ssdm name="store_ln28"/></StgValue>
@@ -305,7 +305,7 @@ for.end56.exitStub:0 %ret_ln0 = ret
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc54.split:1 %specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc54.split:1 %specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln28"/></StgValue>
@@ -335,7 +335,7 @@ for.inc54.split:2 %speclooptripcount_ln28 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc54.split:3 %specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36
+for.inc54.split:3 %specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln46"/></StgValue>
@@ -645,7 +645,7 @@ for.inc54.split:25 %br_ln46 = br void %for.inc54
 
 
 <dataflows>
-<dataflow id="58" from="StgValue_57" to="i_130" fromId="57" toId="5">
+<dataflow id="58" from="StgValue_57" to="i_160" fromId="57" toId="5">
 </dataflow>
 <dataflow id="60" from="_ssdm_op_Read.ap_auto.i1" to="sext_ln30_read" fromId="59" toId="6">
 </dataflow>
@@ -669,7 +669,7 @@ for.inc54.split:25 %br_ln46 = br void %for.inc54
 </dataflow>
 <dataflow id="76" from="StgValue_75" to="store_ln28" fromId="75" toId="9">
 </dataflow>
-<dataflow id="77" from="i_130" to="store_ln28" fromId="5" toId="9">
+<dataflow id="77" from="i_160" to="store_ln28" fromId="5" toId="9">
 </dataflow>
 <dataflow id="79" from="StgValue_78" to="carry" fromId="78" toId="11">
 <condition id="-1">
@@ -687,7 +687,7 @@ for.inc54.split:25 %br_ln46 = br void %for.inc54
 <dataflow id="82" from="br_ln46" to="carry" fromId="43" toId="11">
 <BackEdge/>
 </dataflow>
-<dataflow id="83" from="i_130" to="i" fromId="5" toId="12">
+<dataflow id="83" from="i_160" to="i" fromId="5" toId="12">
 </dataflow>
 <dataflow id="84" from="i" to="icmp_ln46" fromId="12" toId="13">
 </dataflow>
@@ -719,7 +719,7 @@ for.inc54.split:25 %br_ln46 = br void %for.inc54
 </dataflow>
 <dataflow id="100" from="add_ln46" to="store_ln28" fromId="14" toId="21">
 </dataflow>
-<dataflow id="101" from="i_130" to="store_ln28" fromId="5" toId="21">
+<dataflow id="101" from="i_160" to="store_ln28" fromId="5" toId="21">
 </dataflow>
 <dataflow id="103" from="_ssdm_op_SpecPipeline" to="specpipeline_ln28" fromId="102" toId="22">
 </dataflow>
@@ -731,7 +731,7 @@ for.inc54.split:25 %br_ln46 = br void %for.inc54
 </dataflow>
 <dataflow id="109" from="StgValue_106" to="specpipeline_ln28" fromId="106" toId="22">
 </dataflow>
-<dataflow id="111" from="empty_102" to="specpipeline_ln28" fromId="110" toId="22">
+<dataflow id="111" from="empty_57" to="specpipeline_ln28" fromId="110" toId="22">
 </dataflow>
 <dataflow id="113" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln28" fromId="112" toId="23">
 </dataflow>
@@ -743,7 +743,7 @@ for.inc54.split:25 %br_ln46 = br void %for.inc54
 </dataflow>
 <dataflow id="119" from="_ssdm_op_SpecLoopName" to="specloopname_ln46" fromId="118" toId="24">
 </dataflow>
-<dataflow id="121" from="empty_36" to="specloopname_ln46" fromId="120" toId="24">
+<dataflow id="121" from="empty_24" to="specloopname_ln46" fromId="120" toId="24">
 </dataflow>
 <dataflow id="122" from="c_addr" to="c_load" fromId="17" toId="25">
 </dataflow>

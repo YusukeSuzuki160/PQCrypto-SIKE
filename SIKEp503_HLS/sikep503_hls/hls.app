@@ -9,7 +9,7 @@
         <file name="src/sidh.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/ec_isogeny.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/fpx.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
-        <file name="src/generic/mpx_comba_mul.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="src/generic/mpx_iface_tvu_mul.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/sha3/fips202.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/random/random.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="src/api.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

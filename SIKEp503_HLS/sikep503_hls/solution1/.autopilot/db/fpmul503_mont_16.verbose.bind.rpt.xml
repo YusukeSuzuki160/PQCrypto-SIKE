@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fpmul503_mont_16'" level="0">
-<item name = "Date">Mon Oct 20 14:37:45 2025
+<item name = "Date">Sat Oct 25 16:54:17 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">217, 378, 2.170 us, 3.780 us, 217, 378, no</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mp_mul_15_fu_69">mp_mul_15, 86, 133, 0.860 us, 1.330 us, 86, 133, no</column>
+<column name="grp_mp_mul_15_fu_69">mp_mul_15, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_rdc_mont_7_fu_80">rdc_mont_7, 110, 224, 1.100 us, 2.240 us, 110, 224, no</column>
 </table>
 </item>

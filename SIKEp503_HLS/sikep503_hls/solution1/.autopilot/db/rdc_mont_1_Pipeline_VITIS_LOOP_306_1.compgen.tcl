@@ -11,35 +11,20 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2344 \
+    id 261 \
     name mc \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename mc \
     op interface \
-    ports { mc_address0 { O 6 vector } mc_ce0 { O 1 bit } mc_we0 { O 1 bit } mc_d0 { O 64 vector } } \
+    ports { mc_address0 { O 3 vector } mc_ce0 { O 1 bit } mc_we0 { O 1 bit } mc_d0 { O 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'mc'"
 }
 }
 
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2345 \
-    name zext_ln308 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_zext_ln308 \
-    op interface \
-    ports { zext_ln308 { I 6 vector } } \
-} "
-}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

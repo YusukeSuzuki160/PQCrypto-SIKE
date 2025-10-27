@@ -800,7 +800,7 @@ VITIS_LOOP_314_3.split:3 %speclooptripcount_ln302 = speclooptripcount void @_ssd
 
 <Node id="34" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_314_3.split:4 %specloopname_ln312 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
+VITIS_LOOP_314_3.split:4 %specloopname_ln312 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln312"/></StgValue>
@@ -1651,7 +1651,7 @@ for.body56.split:8 %speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_S
 
 <Node id="101" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body56.split:9 %specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35
+for.body56.split:9 %specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln334"/></StgValue>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_126'
 ================================================================
-* Date:           Mon Oct 20 16:16:41 2025
+* Date:           Sat Oct 25 16:52:07 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      443|      736|  4.430 us|  7.360 us|  443|  736|       no|
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -85,15 +85,15 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 1.42>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%borrow_loc = alloca i64 1"   --->   Operation 13 'alloca' 'borrow_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/fpx.cpp:177]   --->   Operation 14 'alloca' 't1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%t2 = alloca i64 1" [src/fpx.cpp:177]   --->   Operation 15 'alloca' 't2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tt1 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 16 'alloca' 'tt1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tt2 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 17 'alloca' 'tt2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tt3 = alloca i64 1" [src/fpx.cpp:178]   --->   Operation 18 'alloca' 'tt3' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln182 = call void @mp_mul.6114, i64 %a_0, i2 2, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 19 'call' 'call_ln182' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln183 = call void @mp_mul.6114, i64 %a_1, i2 2, i64 %b_1, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 20 'call' 'call_ln183' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 19 [2/2] (1.42ns)   --->   "%call_ln182 = call void @mp_mul.6114, i64 %a_0, i2 2, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 19 'call' 'call_ln182' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 20 [2/2] (1.42ns)   --->   "%call_ln183 = call void @mp_mul.6114, i64 %a_1, i2 2, i64 %b_1, i64 %tt2" [src/fpx.cpp:183]   --->   Operation 20 'call' 'call_ln183' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln182 = call void @mp_mul.6114, i64 %a_0, i2 2, i64 %b_0, i64 %tt1" [src/fpx.cpp:182]   --->   Operation 21 'call' 'call_ln182' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -162,8 +162,10 @@ ST_12 : Operation 59 [1/1] (0.00ns)   --->   "%ret_ln196 = ret" [src/fpx.cpp:196
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 0.000ns
+ <State 1>: 1.421ns
 The critical path consists of the following:
+	'alloca' operation 64 bit ('tt1', src/fpx.cpp:178) [18]  (0.000 ns)
+	'call' operation 0 bit ('call_ln182', src/fpx.cpp:182) to 'mp_mul.6114' [23]  (1.421 ns)
 
  <State 2>: 0.000ns
 The critical path consists of the following:

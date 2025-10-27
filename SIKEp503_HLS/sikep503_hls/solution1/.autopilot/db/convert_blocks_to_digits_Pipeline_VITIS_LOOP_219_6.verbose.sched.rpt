@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vitis HLS Report for 'convert_blocks_to_digits_Pipeline_VITIS_LOOP_219_6'
+================================================================
+* Date:           Sat Oct 25 18:34:18 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.570 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_219_6  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%out_cnt = alloca i32 1" [src/generic/mpx_iface_tvu_mul.hpp:169]   --->   Operation 4 'alloca' 'out_cnt' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%bitbuf_1 = alloca i32 1" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 5 'alloca' 'bitbuf_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sub_ln219_1_read = read i28 @_ssdm_op_Read.ap_auto.i28, i28 %sub_ln219_1"   --->   Operation 6 'read' 'sub_ln219_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%zext_ln167_3_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %zext_ln167_3"   --->   Operation 7 'read' 'zext_ln167_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%bitbuf_read = read i128 @_ssdm_op_Read.ap_auto.i128, i128 %bitbuf"   --->   Operation 8 'read' 'bitbuf_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln167_3_cast = zext i5 %zext_ln167_3_read"   --->   Operation 9 'zext' 'zext_ln167_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.38ns)   --->   "%store_ln167 = store i128 %bitbuf_read, i128 %bitbuf_1" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 12 'store' 'store_ln167' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln169 = store i27 %zext_ln167_3_cast, i27 %out_cnt" [src/generic/mpx_iface_tvu_mul.hpp:169]   --->   Operation 13 'store' 'store_ln169' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln0 = br void %while.cond55"   --->   Operation 14 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.57>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%out_cnt_1 = load i27 %out_cnt" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 15 'load' 'out_cnt_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln167 = zext i27 %out_cnt_1" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 16 'zext' 'zext_ln167' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.85ns)   --->   "%icmp_ln219 = icmp_eq  i28 %zext_ln167, i28 %sub_ln219_1_read" [src/generic/mpx_iface_tvu_mul.hpp:219]   --->   Operation 17 'icmp' 'icmp_ln219' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln219 = br i1 %icmp_ln219, void %while.body60, void %while.end68.exitStub" [src/generic/mpx_iface_tvu_mul.hpp:219]   --->   Operation 18 'br' 'br_ln219' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%bitbuf_1_load = load i128 %bitbuf_1" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 19 'load' 'bitbuf_1_load' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%trunc_ln167 = trunc i27 %out_cnt_1" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 20 'trunc' 'trunc_ln167' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%lshr_ln167_1 = partselect i3 @_ssdm_op_PartSelect.i3.i27.i32.i32, i27 %out_cnt_1, i32 1, i32 3" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 21 'partselect' 'lshr_ln167_1' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln167_1 = zext i3 %lshr_ln167_1" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 22 'zext' 'zext_ln167_1' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln223 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 23 'specpipeline' 'specpipeline_ln223' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln219 = specloopname void @_ssdm_op_SpecLoopName, void @empty_58" [src/generic/mpx_iface_tvu_mul.hpp:219]   --->   Operation 24 'specloopname' 'specloopname_ln219' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln223 = trunc i128 %bitbuf_1_load" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 25 'trunc' 'trunc_ln223' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.85ns)   --->   "%out_cnt_2 = add i27 %out_cnt_1, i27 1" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 26 'add' 'out_cnt_2' <Predicate = (!icmp_ln219)> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%c_0_addr = getelementptr i64 %c_0, i64 0, i64 %zext_ln167_1" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 27 'getelementptr' 'c_0_addr' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%c_1_addr = getelementptr i64 %c_1, i64 0, i64 %zext_ln167_1" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 28 'getelementptr' 'c_1_addr' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln223 = br i1 %trunc_ln167, void %arrayidx655.case.0, void %arrayidx655.case.1" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 29 'br' 'br_ln223' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln223 = store i64 %trunc_ln223, i3 %c_0_addr" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 30 'store' 'store_ln223' <Predicate = (!icmp_ln219 & !trunc_ln167)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln223 = br void %arrayidx655.exit" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 31 'br' 'br_ln223' <Predicate = (!icmp_ln219 & !trunc_ln167)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln223 = store i64 %trunc_ln223, i3 %c_1_addr" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 32 'store' 'store_ln223' <Predicate = (!icmp_ln219 & trunc_ln167)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln223 = br void %arrayidx655.exit" [src/generic/mpx_iface_tvu_mul.hpp:223]   --->   Operation 33 'br' 'br_ln223' <Predicate = (!icmp_ln219 & trunc_ln167)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%bitbuf_1_load_1 = load i128 %bitbuf_1" [src/generic/mpx_iface_tvu_mul.hpp:230]   --->   Operation 34 'load' 'bitbuf_1_load_1' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%bitbuf_2 = partselect i64 @_ssdm_op_PartSelect.i64.i128.i32.i32, i128 %bitbuf_1_load_1, i32 64, i32 127" [src/generic/mpx_iface_tvu_mul.hpp:230]   --->   Operation 35 'partselect' 'bitbuf_2' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln230 = zext i64 %bitbuf_2" [src/generic/mpx_iface_tvu_mul.hpp:230]   --->   Operation 36 'zext' 'zext_ln230' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.38ns)   --->   "%store_ln167 = store i128 %zext_ln230, i128 %bitbuf_1" [src/generic/mpx_iface_tvu_mul.hpp:167]   --->   Operation 37 'store' 'store_ln167' <Predicate = (!icmp_ln219)> <Delay = 0.38>
+ST_2 : Operation 38 [1/1] (0.38ns)   --->   "%store_ln169 = store i27 %out_cnt_2, i27 %out_cnt" [src/generic/mpx_iface_tvu_mul.hpp:169]   --->   Operation 38 'store' 'store_ln169' <Predicate = (!icmp_ln219)> <Delay = 0.38>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln219 = br void %while.cond55" [src/generic/mpx_iface_tvu_mul.hpp:219]   --->   Operation 39 'br' 'br_ln219' <Predicate = (!icmp_ln219)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 40 'ret' 'ret_ln0' <Predicate = (icmp_ln219)> <Delay = 0.38>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 128 bit ('bitbuf', src/generic/mpx_iface_tvu_mul.hpp:167) [7]  (0.000 ns)
+	'store' operation 0 bit ('store_ln167', src/generic/mpx_iface_tvu_mul.hpp:167) of variable 'bitbuf_read' on local variable 'bitbuf', src/generic/mpx_iface_tvu_mul.hpp:167 [14]  (0.387 ns)
+
+ <State 2>: 1.570ns
+The critical path consists of the following:
+	'load' operation 27 bit ('out_cnt', src/generic/mpx_iface_tvu_mul.hpp:167) on local variable 'out_cnt', src/generic/mpx_iface_tvu_mul.hpp:169 [18]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln219', src/generic/mpx_iface_tvu_mul.hpp:219) [20]  (0.856 ns)
+	'store' operation 0 bit ('store_ln223', src/generic/mpx_iface_tvu_mul.hpp:223) of variable 'trunc_ln223', src/generic/mpx_iface_tvu_mul.hpp:223 on array 'c_0' [35]  (0.714 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

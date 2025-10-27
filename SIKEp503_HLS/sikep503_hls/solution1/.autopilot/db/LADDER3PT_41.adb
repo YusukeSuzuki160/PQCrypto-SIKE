@@ -8206,7 +8206,7 @@
             <Obj>
               <type>0</type>
               <id>194</id>
-              <name>i_267</name>
+              <name>i_307</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>319</lineNumber>
@@ -8231,7 +8231,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>i</originalName>
-              <rtlName>i_267_fu_1231_p2</rtlName>
+              <rtlName>i_307_fu_1231_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -21018,8 +21018,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>978857</mMinLatency>
-        <mMaxLatency>1599357</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -21065,8 +21065,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>250</mMinTripCount>
         <mMaxTripCount>250</mMaxTripCount>
-        <mMinLatency>978500</mMinLatency>
-        <mMaxLatency>1599000</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -24420,19 +24420,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>18</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>691</second>
+              <second>67</second>
             </item>
             <item>
               <first>FF</first>
-              <second>11419</second>
+              <second>9331</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>32050</second>
+              <second>64624</second>
             </item>
             <item>
               <first>URAM</first>
@@ -24447,19 +24447,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>18</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>691</second>
+              <second>67</second>
             </item>
             <item>
               <first>FF</first>
-              <second>11419</second>
+              <second>9331</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>32050</second>
+              <second>64624</second>
             </item>
             <item>
               <first>URAM</first>
@@ -24474,19 +24474,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>12</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>466</second>
+              <second>50</second>
             </item>
             <item>
               <first>FF</first>
-              <second>8335</second>
+              <second>6943</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>24442</second>
+              <second>46158</second>
             </item>
             <item>
               <first>URAM</first>
@@ -24501,19 +24501,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>18</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>466</second>
+              <second>67</second>
             </item>
             <item>
               <first>FF</first>
-              <second>11133</second>
+              <second>9402</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>31977</second>
+              <second>64643</second>
             </item>
             <item>
               <first>URAM</first>
@@ -24528,19 +24528,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>18</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>691</second>
+              <second>67</second>
             </item>
             <item>
               <first>FF</first>
-              <second>11803</second>
+              <second>9333</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>32230</second>
+              <second>64926</second>
             </item>
             <item>
               <first>URAM</first>
@@ -24555,19 +24555,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>18</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>691</second>
+              <second>67</second>
             </item>
             <item>
               <first>FF</first>
-              <second>11419</second>
+              <second>9331</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>32050</second>
+              <second>64624</second>
             </item>
             <item>
               <first>URAM</first>
@@ -24582,19 +24582,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>12</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>482</second>
+              <second>66</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9950</second>
+              <second>8558</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>27584</second>
+              <second>49300</second>
             </item>
             <item>
               <first>URAM</first>
@@ -24609,19 +24609,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>6</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>241</second>
+              <second>33</second>
             </item>
             <item>
               <first>FF</first>
-              <second>5167</second>
+              <second>4471</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>15356</second>
+              <second>26214</second>
             </item>
             <item>
               <first>URAM</first>
@@ -25429,7 +25429,7 @@
           </second>
         </item>
         <item>
-          <first>i_267_fu_1231_p2 ( + ) </first>
+          <first>i_307_fu_1231_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -31082,7 +31082,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>i_267_fu_1231_p2 ( + ) </first>
+          <first>i_307_fu_1231_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -35170,7 +35170,7 @@
         </second>
       </item>
       <item>
-        <first>i_267_fu_1231</first>
+        <first>i_307_fu_1231</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>R_X</name>
+						<name>coeff</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>16</array_size>
+				<array_size>48</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -348,7 +348,7 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>i_229</name>
+						<name>i_250</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -403,7 +403,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>58</item>
-					<item>165</item>
+					<item>166</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -703,7 +703,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>R_X_addr</name>
+						<name>coeff_addr</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -752,7 +752,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -775,7 +775,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>R_X_load</name>
+						<name>coeff_load</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1128,7 +1128,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>zext_ln381_9</name>
+						<name>zext_ln381_10</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1198,7 +1198,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>R_X_addr_1</name>
+						<name>coeff_addr_8</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1247,7 +1247,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1270,7 +1270,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>R_X_load_1</name>
+						<name>coeff_load_4</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1340,7 +1340,7 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>add_ln381_6</name>
+						<name>add_ln381</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1625,7 +1625,7 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>xor_ln381_15</name>
+						<name>xor_ln381_22</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1839,7 +1839,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>xor_ln381_21</name>
+						<name>xor_ln381_23</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1910,7 +1910,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>trunc_ln381_2</name>
+						<name>trunc_ln381_3</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -2123,7 +2123,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>xor_ln381_17</name>
+						<name>xor_ln381_24</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -2194,7 +2194,7 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>or_ln381_7</name>
+						<name>or_ln381_8</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -2393,8 +2393,8 @@
 					<item_version>0</item_version>
 					<item>124</item>
 					<item>125</item>
-					<item>166</item>
 					<item>167</item>
+					<item>168</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -3404,49 +3404,49 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_114">
-				<id>161</id>
+				<id>162</id>
 				<edge_type>2</edge_type>
 				<source_obj>8</source_obj>
 				<sink_obj>15</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_115">
-				<id>162</id>
+				<id>163</id>
 				<edge_type>2</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>46</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_116">
-				<id>163</id>
+				<id>164</id>
 				<edge_type>2</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>44</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_117">
-				<id>164</id>
+				<id>165</id>
 				<edge_type>2</edge_type>
 				<source_obj>44</source_obj>
 				<sink_obj>15</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_118">
-				<id>165</id>
+				<id>166</id>
 				<edge_type>4</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_119">
-				<id>166</id>
+				<id>167</id>
 				<edge_type>4</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>42</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_120">
-				<id>167</id>
+				<id>168</id>
 				<edge_type>4</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>42</sink_obj>
@@ -3873,7 +3873,7 @@
 						<item class_id="38" tracking_level="0" version="0">
 							<first class_id="39" tracking_level="0" version="0">
 								<first class_id_reference="9" object_id_reference="_20"></first>
-								<second>core:RAM_1P:R_X::load:store</second>
+								<second>core:RAM_1P:coeff::load:store</second>
 							</first>
 							<second>27</second>
 						</item>

@@ -272,7 +272,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>i_247</name>
+              <name>i_277</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -422,7 +422,7 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>i_247_write_ln267</name>
+              <name>i_277_write_ln267</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -2067,7 +2067,7 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>R_Z_addr_28</name>
+              <name>R_Z_addr_10</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>280</lineNumber>
@@ -3349,7 +3349,7 @@
             <Obj>
               <type>0</type>
               <id>68</id>
-              <name>R_Z_addr_28_write_ln281</name>
+              <name>R_Z_addr_10_write_ln281</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>281</lineNumber>
@@ -3608,7 +3608,7 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>i_247_write_ln267</name>
+              <name>i_277_write_ln267</name>
               <fileName>src/ec_isogeny.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>267</lineNumber>
@@ -4147,7 +4147,7 @@
           <Obj>
             <type>3</type>
             <id>76</id>
-            <name>_Z11swap_pointsP10point_projS0_m.25.exit.exitStub</name>
+            <name>_Z11swap_pointsP10point_projS0_m.26.exit.exitStub</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -6333,7 +6333,7 @@
           </second>
         </item>
         <item>
-          <first>i_247_fu_56</first>
+          <first>i_277_fu_56</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -6516,7 +6516,7 @@
           </second>
         </item>
         <item>
-          <first>R_Z_addr_28_reg_383</first>
+          <first>R_Z_addr_10_reg_383</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6592,7 +6592,7 @@
           </second>
         </item>
         <item>
-          <first>i_247_fu_56</first>
+          <first>i_277_fu_56</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7904,7 +7904,7 @@
         </second>
       </item>
       <item>
-        <first>R_Z_addr_28_gep_fu_152</first>
+        <first>R_Z_addr_10_gep_fu_152</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7928,7 +7928,7 @@
         </second>
       </item>
       <item>
-        <first>i_247_fu_56</first>
+        <first>i_277_fu_56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8470,7 +8470,7 @@
         </second>
       </item>
       <item>
-        <first>R_Z_addr_28_reg_383</first>
+        <first>R_Z_addr_10_reg_383</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8486,7 +8486,7 @@
         </second>
       </item>
       <item>
-        <first>i_247_reg_320</first>
+        <first>i_277_reg_320</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sikep503_kem_enc_hw_Pipeline_5'
 ================================================================
-* Date:           Mon Oct 20 14:38:02 2025
+* Date:           Sat Oct 25 18:42:03 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -87,7 +87,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 1.48>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%loop_index_i = alloca i32 1"   --->   Operation 6 'alloca' 'loop_index_i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_41, i32 0, i32 0, void @empty_102, i32 0, i32 0, void @empty_74, void @empty_75, void @empty_102, i32 16, i32 16, i32 16, i32 16, void @empty_102, void @empty_102, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_8, i32 0, i32 0, void @empty_84, i32 0, i32 0, void @empty_56, void @empty_57, void @empty_84, i32 16, i32 16, i32 16, i32 16, void @empty_84, void @empty_84, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ct_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ct"   --->   Operation 8 'read' 'ct_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln0 = store i9 0, i9 %loop_index_i"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop.i"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
@@ -97,9 +97,9 @@ ST_1 : Operation 13 [1/1] (0.71ns)   --->   "%exitcond_i3 = icmp_eq  i9 %loop_in
 ST_1 : Operation 14 [1/1] (0.71ns)   --->   "%empty = add i9 %loop_index_i_load, i9 1"   --->   Operation 14 'add' 'empty' <Predicate = true> <Delay = 0.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond_i3, void %load-store-loop.i.split, void %crypto_kem_enc.exit.exitStub"   --->   Operation 15 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i8 %gmem, i64 %ct_read" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 16 'getelementptr' 'gmem_addr' <Predicate = (!exitcond_i3)> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%empty_134 = trunc i9 %loop_index_i_load"   --->   Operation 17 'trunc' 'empty_134' <Predicate = (!exitcond_i3)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%empty_142 = trunc i9 %loop_index_i_load"   --->   Operation 17 'trunc' 'empty_142' <Predicate = (!exitcond_i3)> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%loop_index_i_udiv_cast = partselect i7 @_ssdm_op_PartSelect.i7.i9.i32.i32, i9 %loop_index_i_load, i32 2, i32 8"   --->   Operation 18 'partselect' 'loop_index_i_udiv_cast' <Predicate = (!exitcond_i3)> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.43ns)   --->   "%switch_ln0 = switch i2 %empty_134, void %.case.333, i2 0, void %.case.030, i2 1, void %.case.131, i2 2, void %.case.232"   --->   Operation 19 'switch' 'switch_ln0' <Predicate = (!exitcond_i3)> <Delay = 0.43>
+ST_1 : Operation 19 [1/1] (0.43ns)   --->   "%switch_ln0 = switch i2 %empty_142, void %.case.333, i2 0, void %.case.030, i2 1, void %.case.131, i2 2, void %.case.232"   --->   Operation 19 'switch' 'switch_ln0' <Predicate = (!exitcond_i3)> <Delay = 0.43>
 ST_1 : Operation 20 [1/1] (0.38ns)   --->   "%store_ln0 = store i9 %empty, i9 %loop_index_i"   --->   Operation 20 'store' 'store_ln0' <Predicate = (!exitcond_i3)> <Delay = 0.38>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop.i"   --->   Operation 21 'br' 'br_ln0' <Predicate = (!exitcond_i3)> <Delay = 0.00>
 
@@ -108,22 +108,22 @@ ST_2 : Operation 22 [1/1] (7.30ns)   --->   "%gmem_addr_read = read i8 @_ssdm_op
 ST_2 : Operation 39 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 39 'ret' 'ret_ln0' <Predicate = (exitcond_i3)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 1.27>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102"   --->   Operation 23 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84"   --->   Operation 23 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 402, i64 402, i64 402"   --->   Operation 24 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 25 [1/1] (0.70ns)   --->   "%empty_135 = add i7 %loop_index_i_udiv_cast, i7 6"   --->   Operation 25 'add' 'empty_135' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%p_cast4 = zext i7 %empty_135"   --->   Operation 26 'zext' 'p_cast4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.70ns)   --->   "%empty_143 = add i7 %loop_index_i_udiv_cast, i7 6"   --->   Operation 25 'add' 'empty_143' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%p_cast4 = zext i7 %empty_143"   --->   Operation 26 'zext' 'p_cast4' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%temp_addr = getelementptr i8 %temp, i64 0, i64 %p_cast4"   --->   Operation 27 'getelementptr' 'temp_addr' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%temp_1_addr = getelementptr i8 %temp_1, i64 0, i64 %p_cast4"   --->   Operation 28 'getelementptr' 'temp_1_addr' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%temp_2_addr = getelementptr i8 %temp_2, i64 0, i64 %p_cast4"   --->   Operation 29 'getelementptr' 'temp_2_addr' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%temp_3_addr = getelementptr i8 %temp_3, i64 0, i64 %p_cast4"   --->   Operation 30 'getelementptr' 'temp_3_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 31 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_2_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 31 'store' 'store_ln111' <Predicate = (empty_134 == 2)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 32 'br' 'br_ln0' <Predicate = (empty_134 == 2)> <Delay = 0.00>
-ST_3 : Operation 33 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_1_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 33 'store' 'store_ln111' <Predicate = (empty_134 == 1)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
-ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 34 'br' 'br_ln0' <Predicate = (empty_134 == 1)> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 35 'store' 'store_ln111' <Predicate = (empty_134 == 0)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
-ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 36 'br' 'br_ln0' <Predicate = (empty_134 == 0)> <Delay = 0.00>
-ST_3 : Operation 37 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_3_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 37 'store' 'store_ln111' <Predicate = (empty_134 == 3)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
-ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 38 'br' 'br_ln0' <Predicate = (empty_134 == 3)> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_2_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 31 'store' 'store_ln111' <Predicate = (empty_142 == 2)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 32 'br' 'br_ln0' <Predicate = (empty_142 == 2)> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_1_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 33 'store' 'store_ln111' <Predicate = (empty_142 == 1)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 34 'br' 'br_ln0' <Predicate = (empty_142 == 1)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 35 'store' 'store_ln111' <Predicate = (empty_142 == 0)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 36 'br' 'br_ln0' <Predicate = (empty_142 == 0)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] ( I:0.56ns O:0.56ns )   --->   "%store_ln111 = store i8 %gmem_addr_read, i7 %temp_3_addr" [src/sike.cpp:111->src/sikep503_kem_enc_hw.cpp:46]   --->   Operation 37 'store' 'store_ln111' <Predicate = (empty_142 == 3)> <Delay = 0.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 107> <RAM>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit29"   --->   Operation 38 'br' 'br_ln0' <Predicate = (empty_142 == 3)> <Delay = 0.00>
 
 
 ============================================================
@@ -160,7 +160,7 @@ exitcond_i3            (icmp             ) [ 0110]
 empty                  (add              ) [ 0000]
 br_ln0                 (br               ) [ 0000]
 gmem_addr              (getelementptr    ) [ 0110]
-empty_134              (trunc            ) [ 0111]
+empty_142              (trunc            ) [ 0111]
 loop_index_i_udiv_cast (partselect       ) [ 0111]
 switch_ln0             (switch           ) [ 0000]
 store_ln0              (store            ) [ 0000]
@@ -168,7 +168,7 @@ br_ln0                 (br               ) [ 0000]
 gmem_addr_read         (read             ) [ 0101]
 specpipeline_ln0       (specpipeline     ) [ 0000]
 speclooptripcount_ln0  (speclooptripcount) [ 0000]
-empty_135              (add              ) [ 0000]
+empty_143              (add              ) [ 0000]
 p_cast4                (zext             ) [ 0000]
 temp_addr              (getelementptr    ) [ 0000]
 temp_1_addr            (getelementptr    ) [ 0000]
@@ -270,7 +270,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_41"/></StgValue>
+<StgValue><ssdm name="empty_8"/></StgValue>
 </bind>
 </comp>
 
@@ -288,7 +288,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </bind>
 </comp>
 
@@ -297,7 +297,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_74"/></StgValue>
+<StgValue><ssdm name="empty_56"/></StgValue>
 </bind>
 </comp>
 
@@ -306,7 +306,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_75"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </bind>
 </comp>
 
@@ -679,14 +679,14 @@ ret_ln0                (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="157" class="1004" name="empty_134_fu_157">
+<comp id="157" class="1004" name="empty_142_fu_157">
 <pin_list>
 <pin id="158" dir="0" index="0" bw="9" slack="0"/>
 <pin id="159" dir="1" index="1" bw="2" slack="2"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_134/1 "/>
+<opset="empty_142/1 "/>
 </bind>
 </comp>
 
@@ -716,7 +716,7 @@ ret_ln0                (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="176" class="1004" name="empty_135_fu_176">
+<comp id="176" class="1004" name="empty_143_fu_176">
 <pin_list>
 <pin id="177" dir="0" index="0" bw="7" slack="2"/>
 <pin id="178" dir="0" index="1" bw="4" slack="0"/>
@@ -724,7 +724,7 @@ ret_ln0                (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="empty_135/3 "/>
+<opset="empty_143/3 "/>
 </bind>
 </comp>
 
@@ -769,13 +769,13 @@ ret_ln0                (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="205" class="1005" name="empty_134_reg_205">
+<comp id="205" class="1005" name="empty_142_reg_205">
 <pin_list>
 <pin id="206" dir="0" index="0" bw="2" slack="2"/>
 <pin id="207" dir="1" index="1" bw="2" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="empty_134 "/>
+<opset="empty_142 "/>
 </bind>
 </comp>
 
@@ -923,7 +923,7 @@ ret_ln0                (ret              ) [ 0000]
 		exitcond_i3 : 2
 		empty : 2
 		br_ln0 : 3
-		empty_134 : 2
+		empty_142 : 2
 		loop_index_i_udiv_cast : 2
 		switch_ln0 : 3
 		store_ln0 : 3
@@ -949,14 +949,14 @@ ret_ln0                (ret              ) [ 0000]
 | Operation|        Functional Unit        |    FF   |   LUT   |
 |----------|-------------------------------|---------|---------|
 |    add   |          empty_fu_145         |    0    |    16   |
-|          |        empty_135_fu_176       |    0    |    14   |
+|          |        empty_143_fu_176       |    0    |    14   |
 |----------|-------------------------------|---------|---------|
 |   icmp   |       exitcond_i3_fu_139      |    0    |    16   |
 |----------|-------------------------------|---------|---------|
 |   read   |       ct_read_read_fu_68      |    0    |    0    |
 |          |   gmem_addr_read_read_fu_74   |    0    |    0    |
 |----------|-------------------------------|---------|---------|
-|   trunc  |        empty_134_fu_157       |    0    |    0    |
+|   trunc  |        empty_142_fu_157       |    0    |    0    |
 |----------|-------------------------------|---------|---------|
 |partselect| loop_index_i_udiv_cast_fu_161 |    0    |    0    |
 |----------|-------------------------------|---------|---------|
@@ -972,7 +972,7 @@ N/A
 +------------------------------+--------+
 |                              |   FF   |
 +------------------------------+--------+
-|       empty_134_reg_205      |    2   |
+|       empty_142_reg_205      |    2   |
 |      exitcond_i3_reg_196     |    1   |
 |    gmem_addr_read_reg_214    |    8   |
 |       gmem_addr_reg_200      |    8   |

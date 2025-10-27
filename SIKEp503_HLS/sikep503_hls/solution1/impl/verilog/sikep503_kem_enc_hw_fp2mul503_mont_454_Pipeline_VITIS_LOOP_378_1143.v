@@ -55,7 +55,7 @@ reg   [0:0] carry_reg_82;
 reg   [3:0] tt1_addr_reg_221;
 wire    ap_loop_init;
 wire   [63:0] zext_ln378_fu_113_p1;
-reg   [4:0] i_181_fu_52;
+reg   [4:0] i_221_fu_52;
 wire   [4:0] add_ln378_fu_107_p2;
 reg   [4:0] ap_sig_allocacmp_i;
 reg    tt1_ce0_local;
@@ -67,7 +67,7 @@ wire   [63:0] zext_ln381_fu_124_p1;
 wire   [63:0] tempReg_fu_128_p2;
 wire   [63:0] xor_ln381_fu_141_p2;
 wire   [63:0] xor_ln381_90_fu_147_p2;
-wire   [0:0] bit_sel_fu_159_p3;
+wire   [0:0] bit_sel8_fu_159_p3;
 wire   [0:0] xor_ln381_91_fu_167_p2;
 wire   [62:0] trunc_ln381_fu_173_p1;
 wire   [63:0] xor_ln381_s_fu_177_p3;
@@ -89,7 +89,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_181_fu_52 = 5'd0;
+#0 i_221_fu_52 = 5'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -139,9 +139,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln378_fu_101_p2 == 1'd0)) begin
-            i_181_fu_52 <= add_ln378_fu_107_p2;
+            i_221_fu_52 <= add_ln378_fu_107_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_181_fu_52 <= 5'd0;
+            i_221_fu_52 <= 5'd0;
         end
     end
 end
@@ -198,7 +198,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 5'd0;
     end else begin
-        ap_sig_allocacmp_i = i_181_fu_52;
+        ap_sig_allocacmp_i = i_221_fu_52;
     end
 end
 
@@ -276,7 +276,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign bit_sel_fu_159_p3 = tempReg_fu_128_p2[64'd63];
+assign bit_sel8_fu_159_p3 = tempReg_fu_128_p2[64'd63];
 
 assign icmp_ln378_fu_101_p2 = ((ap_sig_allocacmp_i == 5'd16) ? 1'b1 : 1'b0);
 
@@ -302,7 +302,7 @@ assign tt2_ce0 = tt2_ce0_local;
 
 assign xor_ln381_90_fu_147_p2 = (tt2_q0 ^ tempReg_fu_128_p2);
 
-assign xor_ln381_91_fu_167_p2 = (bit_sel_fu_159_p3 ^ 1'd1);
+assign xor_ln381_91_fu_167_p2 = (bit_sel8_fu_159_p3 ^ 1'd1);
 
 assign xor_ln381_92_fu_191_p2 = (or_ln381_fu_153_p2 ^ add_ln381_fu_134_p2);
 

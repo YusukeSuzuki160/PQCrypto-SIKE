@@ -79,10 +79,10 @@ entry:1 %empty = trunc i32 %c_offset_read
 
 <Node id="8" bw="1" op_0_bw="64">
 <![CDATA[
-entry:2 %carry_165_loc = alloca i64 1
+entry:2 %carry_163_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="carry_165_loc"/></StgValue>
+<StgValue><ssdm name="carry_163_loc"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -145,7 +145,7 @@ entry:7 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_33_1, i6 %tmp, 
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:8 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_39_2, i6 %tmp, i64 %c, i1 %carry_165_loc, i64 %p503x2_1
+entry:8 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_39_2, i6 %tmp, i64 %c, i1 %carry_163_loc, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln35"/></StgValue>
@@ -163,7 +163,7 @@ entry:8 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_39_2, i6 %tmp, 
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:8 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_39_2, i6 %tmp, i64 %c, i1 %carry_165_loc, i64 %p503x2_1
+entry:8 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_39_2, i6 %tmp, i64 %c, i1 %carry_163_loc, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln35"/></StgValue>
@@ -181,10 +181,10 @@ entry:8 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_39_2, i6 %tmp, 
 
 <Node id="15" bw="1" op_0_bw="1" op_1_bw="0">
 <![CDATA[
-entry:9 %carry_165_loc_load = load i1 %carry_165_loc
+entry:9 %carry_163_loc_load = load i1 %carry_163_loc
 
 ]]></Node>
-<StgValue><ssdm name="carry_165_loc_load"/></StgValue>
+<StgValue><ssdm name="carry_163_loc_load"/></StgValue>
 </operation>
 
 <operation id="16" st_id="5" stage="2" lat="2">
@@ -196,7 +196,7 @@ entry:9 %carry_165_loc_load = load i1 %carry_165_loc
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:10 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_46_3, i6 %tmp, i64 %c, i1 %carry_165_loc_load, i64 %p503x2_1
+entry:10 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_46_3, i6 %tmp, i64 %c, i1 %carry_163_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln35"/></StgValue>
@@ -259,7 +259,7 @@ entry:6 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 6
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="64" op_3_bw="1" op_4_bw="64" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:10 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_46_3, i6 %tmp, i64 %c, i1 %carry_165_loc_load, i64 %p503x2_1
+entry:10 %call_ln35 = call void @fpadd503.248_Pipeline_VITIS_LOOP_46_3, i6 %tmp, i64 %c, i1 %carry_163_loc_load, i64 %p503x2_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln35"/></StgValue>

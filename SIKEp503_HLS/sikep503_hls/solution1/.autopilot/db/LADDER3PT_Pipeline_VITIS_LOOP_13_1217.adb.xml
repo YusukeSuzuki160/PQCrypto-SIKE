@@ -19,10 +19,10 @@
 
 <Node id="2" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_249 = alloca i32 1
+newFuncRoot:0 %i_279 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_249"/></StgValue>
+<StgValue><ssdm name="i_279"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -49,7 +49,7 @@ newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0
 
 <Node id="4" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:2 %store_ln11 = store i4 0, i4 %i_249
+newFuncRoot:2 %store_ln11 = store i4 0, i4 %i_279
 
 ]]></Node>
 <StgValue><ssdm name="store_ln11"/></StgValue>
@@ -79,7 +79,7 @@ newFuncRoot:3 %br_ln0 = br void %for.inc.i10.i
 
 <Node id="7" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i10.i:0 %i = load i4 %i_249
+for.inc.i10.i:0 %i = load i4 %i_279
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -172,7 +172,7 @@ for.inc.i10.i.split:1 %R0_X_4_addr = getelementptr i64 %R0_X_4, i64 0, i64 %zext
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i10.i.split:2 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.i10.i.split:2 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln11"/></StgValue>
@@ -204,7 +204,7 @@ for.inc.i10.i.split:3 %speclooptripcount_ln11 = speclooptripcount void @_ssdm_op
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i10.i.split:4 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39
+for.inc.i10.i.split:4 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln13"/></StgValue>
@@ -236,7 +236,7 @@ for.inc.i10.i.split:5 %store_ln14 = store i64 0, i3 %R0_X_4_addr
 
 <Node id="18" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i10.i.split:6 %store_ln11 = store i4 %add_ln13, i4 %i_249
+for.inc.i10.i.split:6 %store_ln11 = store i4 %add_ln13, i4 %i_279
 
 ]]></Node>
 <StgValue><ssdm name="store_ln11"/></StgValue>
@@ -286,7 +286,7 @@ for.inc.i83.preheader.exitStub:0 %ret_ln0 = ret
 
 
 <dataflows>
-<dataflow id="29" from="StgValue_28" to="i_249" fromId="28" toId="4">
+<dataflow id="29" from="StgValue_28" to="i_279" fromId="28" toId="4">
 </dataflow>
 <dataflow id="31" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="30" toId="5">
 </dataflow>
@@ -300,9 +300,9 @@ for.inc.i83.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="40" from="StgValue_39" to="store_ln11" fromId="39" toId="6">
 </dataflow>
-<dataflow id="41" from="i_249" to="store_ln11" fromId="4" toId="6">
+<dataflow id="41" from="i_279" to="store_ln11" fromId="4" toId="6">
 </dataflow>
-<dataflow id="42" from="i_249" to="i" fromId="4" toId="8">
+<dataflow id="42" from="i_279" to="i" fromId="4" toId="8">
 </dataflow>
 <dataflow id="43" from="i" to="icmp_ln13" fromId="8" toId="9">
 </dataflow>
@@ -332,7 +332,7 @@ for.inc.i83.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="62" from="StgValue_59" to="specpipeline_ln11" fromId="59" toId="14">
 </dataflow>
-<dataflow id="64" from="empty_102" to="specpipeline_ln11" fromId="63" toId="14">
+<dataflow id="64" from="empty_57" to="specpipeline_ln11" fromId="63" toId="14">
 </dataflow>
 <dataflow id="66" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln11" fromId="65" toId="15">
 </dataflow>
@@ -344,7 +344,7 @@ for.inc.i83.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="72" from="_ssdm_op_SpecLoopName" to="specloopname_ln13" fromId="71" toId="16">
 </dataflow>
-<dataflow id="74" from="empty_39" to="specloopname_ln13" fromId="73" toId="16">
+<dataflow id="74" from="empty_13" to="specloopname_ln13" fromId="73" toId="16">
 </dataflow>
 <dataflow id="75" from="StgValue_52" to="store_ln14" fromId="52" toId="17">
 </dataflow>
@@ -352,7 +352,7 @@ for.inc.i83.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="77" from="add_ln13" to="store_ln11" fromId="10" toId="18">
 </dataflow>
-<dataflow id="78" from="i_249" to="store_ln11" fromId="4" toId="18">
+<dataflow id="78" from="i_279" to="store_ln11" fromId="4" toId="18">
 </dataflow>
 <dataflow id="79" from="icmp_ln13" to="StgValue_2" fromId="9" toId="2">
 </dataflow>

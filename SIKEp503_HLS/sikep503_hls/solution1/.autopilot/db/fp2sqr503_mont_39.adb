@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>R_X</name>
+              <name>coeff</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -41,7 +41,7 @@
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
-          <array_size>16</array_size>
+          <array_size>48</array_size>
           <bit_vecs class_id="7" tracking_level="0" version="0">
             <count>0</count>
             <item_version>0</item_version>
@@ -203,7 +203,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -259,7 +259,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -315,7 +315,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -530,7 +530,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125_fu_74</rtlName>
+              <rtlName>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130_fu_74</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -871,7 +871,7 @@
             <Obj>
               <type>2</type>
               <id>47</id>
-              <name>fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125</name>
+              <name>fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -895,7 +895,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1125&gt;</content>
+          <content>&lt;constant:fp2sqr503_mont.39_Pipeline_VITIS_LOOP_378_1130&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_21">
           <Value>
@@ -1305,8 +1305,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>499</mMinLatency>
-        <mMaxLatency>821</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -1666,7 +1666,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125_fu_74 (fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125)</first>
+          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130_fu_74 (fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -1736,19 +1736,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>4</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>241</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4782</second>
+              <second>3887</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12239</second>
+              <second>18826</second>
             </item>
             <item>
               <first>URAM</first>
@@ -1763,19 +1763,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>4</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>241</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4785</second>
+              <second>3887</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12247</second>
+              <second>18842</second>
             </item>
             <item>
               <first>URAM</first>
@@ -1940,60 +1940,6 @@
         <count>13</count>
         <item_version>0</item_version>
         <item>
-          <first>R_X_address0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>5</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>20</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>26</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>R_X_ce0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>5</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>5</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>26</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>ap_NS_fsm</first>
           <second>
             <count>5</count>
@@ -2017,6 +1963,60 @@
             <item>
               <first>LUT</first>
               <second>59</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>coeff_address0</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>5</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>6</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>30</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>26</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>coeff_ce0</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>5</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>5</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>26</second>
             </item>
           </second>
         </item>
@@ -2314,7 +2314,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125_fu_74_ap_start_reg</first>
+          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130_fu_74_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2432,7 +2432,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125_fu_74</first>
+          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130_fu_74</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2478,7 +2478,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125_fu_74 (fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125)</first>
+          <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130_fu_74 (fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2804,7 +2804,7 @@
       <count>6</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1125_fu_74</first>
+        <first>grp_fp2sqr503_mont_39_Pipeline_VITIS_LOOP_378_1130_fu_74</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

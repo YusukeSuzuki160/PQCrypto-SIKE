@@ -70,7 +70,7 @@ reg   [63:0] reuse_addr_reg_fu_60;
 reg   [63:0] reuse_reg_fu_64;
 wire   [63:0] add_ln48_fu_220_p2;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_118_fu_68;
+reg   [3:0] i_138_fu_68;
 wire   [3:0] add_ln46_fu_148_p2;
 reg    coeff_ce0_local;
 reg   [5:0] coeff_address0_local;
@@ -110,7 +110,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
 #0 reuse_addr_reg_fu_60 = 64'd0;
 #0 reuse_reg_fu_64 = 64'd0;
-#0 i_118_fu_68 = 4'd0;
+#0 i_138_fu_68 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -195,9 +195,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_118_fu_68 <= 4'd0;
+        i_138_fu_68 <= 4'd0;
     end else if (((icmp_ln46_fu_142_p2 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        i_118_fu_68 <= add_ln46_fu_148_p2;
+        i_138_fu_68 <= add_ln46_fu_148_p2;
     end
 end
 
@@ -407,7 +407,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln46_fu_148_p2 = (i_118_fu_68 + 4'd1);
+assign add_ln46_fu_148_p2 = (i_138_fu_68 + 4'd1);
 
 assign add_ln48_fu_220_p2 = (and_ln48_fu_215_p2 + tempReg_fu_209_p2);
 
@@ -451,7 +451,7 @@ assign coeff_d0 = add_ln48_fu_220_p2;
 
 assign coeff_we0 = coeff_we0_local;
 
-assign icmp_ln46_fu_142_p2 = ((i_118_fu_68 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln46_fu_142_p2 = ((i_138_fu_68 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln48_4_fu_288_p2 = (xor_ln48_12_fu_282_p2 | and_ln48_4_fu_276_p2);
 
@@ -467,7 +467,7 @@ assign tempReg_fu_209_p2 = (reuse_select_fu_198_p3 + zext_ln48_2_fu_205_p1);
 
 assign trunc_ln48_2_fu_264_p1 = tempReg_fu_209_p2[62:0];
 
-assign trunc_ln48_fu_159_p1 = i_118_fu_68[2:0];
+assign trunc_ln48_fu_159_p1 = i_138_fu_68[2:0];
 
 assign xor_ln48_10_fu_238_p2 = (tempReg_fu_209_p2 ^ and_ln48_fu_215_p2);
 
@@ -479,7 +479,7 @@ assign xor_ln48_fu_232_p2 = (tempReg_fu_209_p2 ^ add_ln48_fu_220_p2);
 
 assign xor_ln48_s_fu_268_p3 = {{xor_ln48_11_fu_258_p2}, {trunc_ln48_2_fu_264_p1}};
 
-assign zext_ln46_fu_154_p1 = i_118_fu_68;
+assign zext_ln46_fu_154_p1 = i_138_fu_68;
 
 assign zext_ln48_2_fu_205_p1 = carry_reg_104;
 

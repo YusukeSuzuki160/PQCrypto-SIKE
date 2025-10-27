@@ -19,8 +19,8 @@ module sikep503_kem_enc_hw_fpadd503_246_Pipeline_VITIS_LOOP_39_2 (
         c_we0,
         c_d0,
         c_q0,
-        carry_183_out,
-        carry_183_out_ap_vld
+        carry_181_out,
+        carry_181_out_ap_vld
 );
 
 parameter    ap_ST_fsm_state1 = 2'd1;
@@ -38,11 +38,11 @@ output   c_ce0;
 output   c_we0;
 output  [63:0] c_d0;
 input  [63:0] c_q0;
-output  [0:0] carry_183_out;
-output   carry_183_out_ap_vld;
+output  [0:0] carry_181_out;
+output   carry_181_out_ap_vld;
 
 reg ap_idle;
-reg carry_183_out_ap_vld;
+reg carry_181_out_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
@@ -60,7 +60,7 @@ wire   [0:0] borrowReg_fu_224_p2;
 wire    ap_loop_init;
 wire   [63:0] zext_ln41_10_fu_144_p1;
 wire   [63:0] zext_ln39_fu_129_p1;
-reg   [3:0] i_135_fu_54;
+reg   [3:0] i_155_fu_54;
 wire   [3:0] add_ln39_fu_123_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    c_ce0_local;
@@ -77,7 +77,7 @@ wire   [63:0] or_ln105_fu_172_p2;
 wire   [63:0] xor_ln105_44_fu_178_p2;
 wire   [63:0] sub_ln95_fu_192_p2;
 wire   [63:0] or_ln95_fu_198_p2;
-wire   [0:0] tmp_259_fu_204_p3;
+wire   [0:0] tmp_208_fu_204_p3;
 wire   [0:0] xor_ln41_fu_212_p2;
 wire   [0:0] and_ln41_fu_218_p2;
 wire   [0:0] tmp_fu_184_p3;
@@ -96,7 +96,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 2'd1;
-#0 i_135_fu_54 = 4'd0;
+#0 i_155_fu_54 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -158,9 +158,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln39_fu_117_p2 == 1'd0)) begin
-            i_135_fu_54 <= add_ln39_fu_123_p2;
+            i_155_fu_54 <= add_ln39_fu_123_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_135_fu_54 <= 4'd0;
+            i_155_fu_54 <= 4'd0;
         end
     end
 end
@@ -217,7 +217,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_135_fu_54;
+        ap_sig_allocacmp_i = i_155_fu_54;
     end
 end
 
@@ -249,9 +249,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_exit_ready == 1'b1) & (icmp_ln39_fu_117_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        carry_183_out_ap_vld = 1'b1;
+        carry_181_out_ap_vld = 1'b1;
     end else begin
-        carry_183_out_ap_vld = 1'b0;
+        carry_181_out_ap_vld = 1'b0;
     end
 end
 
@@ -313,7 +313,7 @@ assign c_d0 = sub_ln41_fu_234_p2;
 
 assign c_we0 = c_we0_local;
 
-assign carry_183_out = carry_reg_97;
+assign carry_181_out = carry_reg_97;
 
 assign icmp_ln39_fu_117_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
@@ -329,7 +329,7 @@ assign sub_ln95_fu_192_p2 = (64'd0 - tempReg_fu_154_p2);
 
 assign tempReg_fu_154_p2 = (c_q0 - p503x2_1_q0);
 
-assign tmp_259_fu_204_p3 = or_ln95_fu_198_p2[32'd63];
+assign tmp_208_fu_204_p3 = or_ln95_fu_198_p2[32'd63];
 
 assign tmp_fu_184_p3 = xor_ln105_44_fu_178_p2[32'd63];
 
@@ -339,7 +339,7 @@ assign xor_ln105_44_fu_178_p2 = (or_ln105_fu_172_p2 ^ c_q0);
 
 assign xor_ln105_fu_160_p2 = (p503x2_1_q0 ^ c_q0);
 
-assign xor_ln41_fu_212_p2 = (tmp_259_fu_204_p3 ^ 1'd1);
+assign xor_ln41_fu_212_p2 = (tmp_208_fu_204_p3 ^ 1'd1);
 
 assign zext_ln39_fu_129_p1 = ap_sig_allocacmp_i;
 

@@ -64,7 +64,7 @@ wire   [63:0] zext_ln11_fu_133_p1;
 reg   [3:0] i_fu_44;
 wire   [3:0] add_ln13_fu_103_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_291;
+reg   [3:0] ap_sig_allocacmp_i_285;
 reg    Montgomery_one_1_ce0_local;
 reg    A24_we0_local;
 reg    A24_ce0_local;
@@ -88,7 +88,7 @@ initial begin
 #0 ap_done_reg = 1'b0;
 end
 
-sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1251_Montgomery_one_1_RAM_1cud #(
+sikep503_kem_enc_hw_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_13_1212_Montgomery_one_1_ROM_Acud #(
     .DataWidth( 64 ),
     .AddressRange( 8 ),
     .AddressWidth( 3 ))
@@ -159,7 +159,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        lshr_ln_reg_152 <= {{ap_sig_allocacmp_i_291[2:1]}};
+        lshr_ln_reg_152 <= {{ap_sig_allocacmp_i_285[2:1]}};
         trunc_ln13_reg_148 <= trunc_ln13_fu_114_p1;
     end
 end
@@ -246,9 +246,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_291 = 4'd0;
+        ap_sig_allocacmp_i_285 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_291 = i_fu_44;
+        ap_sig_allocacmp_i_285 = i_fu_44;
     end
 end
 
@@ -281,7 +281,7 @@ assign A24_we0 = A24_we0_local;
 
 assign Montgomery_one_1_address0 = zext_ln13_fu_109_p1;
 
-assign add_ln13_fu_103_p2 = (ap_sig_allocacmp_i_291 + 4'd1);
+assign add_ln13_fu_103_p2 = (ap_sig_allocacmp_i_285 + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -301,12 +301,12 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln13_fu_97_p2 = ((ap_sig_allocacmp_i_291 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln13_fu_97_p2 = ((ap_sig_allocacmp_i_285 == 4'd8) ? 1'b1 : 1'b0);
 
-assign trunc_ln13_fu_114_p1 = ap_sig_allocacmp_i_291[0:0];
+assign trunc_ln13_fu_114_p1 = ap_sig_allocacmp_i_285[0:0];
 
 assign zext_ln11_fu_133_p1 = lshr_ln_reg_152;
 
-assign zext_ln13_fu_109_p1 = ap_sig_allocacmp_i_291;
+assign zext_ln13_fu_109_p1 = ap_sig_allocacmp_i_285;
 
 endmodule //sikep503_kem_enc_hw_LADDER3PT_Pipeline_VITIS_LOOP_13_1

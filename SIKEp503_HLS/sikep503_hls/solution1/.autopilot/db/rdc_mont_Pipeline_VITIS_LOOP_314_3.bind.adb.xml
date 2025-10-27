@@ -97,7 +97,7 @@ newFuncRoot:3 %v = alloca i32 1
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 207, i64 18446744073709551615
+newFuncRoot:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -142,10 +142,10 @@ newFuncRoot:6 %add_ln314_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %add_ln314
 
 <Node id="18" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-newFuncRoot:7 %i_13_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_13
+newFuncRoot:7 %i_15_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_15
 
 ]]></Node>
-<StgValue><ssdm name="i_13_read"/></StgValue>
+<StgValue><ssdm name="i_15_read"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -292,7 +292,7 @@ for.body6:1 %zext_ln314 = zext i3 %j_2
 
 <Node id="29" bw="1" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-for.body6:2 %icmp_ln314 = icmp_eq  i3 %j_2, i3 %i_13_read
+for.body6:2 %icmp_ln314 = icmp_eq  i3 %j_2, i3 %i_15_read
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln314"/></StgValue>
@@ -370,7 +370,7 @@ for.body6.split:1 %mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln314_1
 
 <Node id="35" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body6.split:2 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.body6.split:2 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln303"/></StgValue>
@@ -402,7 +402,7 @@ for.body6.split:3 %speclooptripcount_ln303 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body6.split:4 %specloopname_ln314 = specloopname void @_ssdm_op_SpecLoopName, void @empty_46
+for.body6.split:4 %specloopname_ln314 = specloopname void @_ssdm_op_SpecLoopName, void @empty_33
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln314"/></StgValue>
@@ -606,10 +606,10 @@ if.then:7 %p503p1_1_load = load i3 %p503p1_1_addr
 
 <Node id="49" bw="128" op_0_bw="128" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-if.then:8 %call_ret1 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
+if.then:8 %call_ret3 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
 
 ]]></Node>
-<StgValue><ssdm name="call_ret1"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 
 <operation id="77" st_id="3" stage="1" lat="1">
@@ -670,7 +670,7 @@ for.inc51.loopexit.exitStub:2 %v_load = load i64 %v
 
 <Node id="86" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc51.loopexit.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_109_out, i64 %v_load
+for.inc51.loopexit.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_156_out, i64 %v_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -686,7 +686,7 @@ for.inc51.loopexit.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i6
 
 <Node id="87" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc51.loopexit.exitStub:4 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %u_54_out, i64 %u_load
+for.inc51.loopexit.exitStub:4 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %u_62_out, i64 %u_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -786,10 +786,10 @@ if.then:2 %v_load_2 = load i64 %v
 
 <Node id="49" bw="128" op_0_bw="128" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-if.then:8 %call_ret1 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
+if.then:8 %call_ret3 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
 
 ]]></Node>
-<StgValue><ssdm name="call_ret1"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 
 <operation id="48" st_id="4" stage="1" lat="1">
@@ -802,7 +802,7 @@ if.then:8 %call_ret1 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_loa
 
 <Node id="50" bw="64" op_0_bw="128">
 <![CDATA[
-if.then:9 %UV = extractvalue i128 %call_ret1
+if.then:9 %UV = extractvalue i128 %call_ret3
 
 ]]></Node>
 <StgValue><ssdm name="UV"/></StgValue>
@@ -818,7 +818,7 @@ if.then:9 %UV = extractvalue i128 %call_ret1
 
 <Node id="51" bw="64" op_0_bw="128">
 <![CDATA[
-if.then:10 %UV_2 = extractvalue i128 %call_ret1
+if.then:10 %UV_2 = extractvalue i128 %call_ret3
 
 ]]></Node>
 <StgValue><ssdm name="UV_2"/></StgValue>
@@ -1266,8 +1266,8 @@ if.then:37 %br_ln322 = br void %for.inc28
 <port id="98" name="u_025" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="u_025"/></StgValue>
 </port>
-<port id="99" name="i_13" dir="0" iftype="0">
-<core>NULL</core><StgValue><ssdm name="i_13"/></StgValue>
+<port id="99" name="i_15" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="i_15"/></StgValue>
 </port>
 <port id="100" name="mc" dir="0" iftype="1">
 <core>RAM_1P</core><StgValue><ssdm name="mc"/><MemPortTyVec>1 </MemPortTyVec>
@@ -1279,11 +1279,11 @@ if.then:37 %br_ln322 = br void %for.inc28
 <port id="102" name="empty" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="empty"/></StgValue>
 </port>
-<port id="103" name="v_109_out" dir="1" iftype="0">
-<core>NULL</core><StgValue><ssdm name="v_109_out"/></StgValue>
+<port id="103" name="v_156_out" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="v_156_out"/></StgValue>
 </port>
-<port id="104" name="u_54_out" dir="1" iftype="0">
-<core>NULL</core><StgValue><ssdm name="u_54_out"/></StgValue>
+<port id="104" name="u_62_out" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="u_62_out"/></StgValue>
 </port>
 <port id="105" name="t_out" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="t_out"/></StgValue>
@@ -1322,9 +1322,9 @@ if.then:37 %br_ln322 = br void %for.inc28
 </dataflow>
 <dataflow id="126" from="add_ln314" to="add_ln314_read" fromId="101" toId="13">
 </dataflow>
-<dataflow id="127" from="_ssdm_op_Read.ap_auto.i3" to="i_13_read" fromId="121" toId="14">
+<dataflow id="127" from="_ssdm_op_Read.ap_auto.i3" to="i_15_read" fromId="121" toId="14">
 </dataflow>
-<dataflow id="128" from="i_13" to="i_13_read" fromId="99" toId="14">
+<dataflow id="128" from="i_15" to="i_15_read" fromId="99" toId="14">
 </dataflow>
 <dataflow id="130" from="_ssdm_op_Read.ap_auto.i64" to="u_025_read" fromId="129" toId="15">
 </dataflow>
@@ -1356,7 +1356,7 @@ if.then:37 %br_ln322 = br void %for.inc28
 </dataflow>
 <dataflow id="146" from="j_2" to="icmp_ln314" fromId="22" toId="24">
 </dataflow>
-<dataflow id="147" from="i_13_read" to="icmp_ln314" fromId="14" toId="24">
+<dataflow id="147" from="i_15_read" to="icmp_ln314" fromId="14" toId="24">
 </dataflow>
 <dataflow id="148" from="j_2" to="add_ln314_1" fromId="22" toId="25">
 </dataflow>
@@ -1382,7 +1382,7 @@ if.then:37 %br_ln322 = br void %for.inc28
 </dataflow>
 <dataflow id="163" from="StgValue_160" to="specpipeline_ln303" fromId="160" toId="29">
 </dataflow>
-<dataflow id="165" from="empty_102" to="specpipeline_ln303" fromId="164" toId="29">
+<dataflow id="165" from="empty_84" to="specpipeline_ln303" fromId="164" toId="29">
 </dataflow>
 <dataflow id="167" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln303" fromId="166" toId="30">
 </dataflow>
@@ -1394,7 +1394,7 @@ if.then:37 %br_ln322 = br void %for.inc28
 </dataflow>
 <dataflow id="174" from="_ssdm_op_SpecLoopName" to="specloopname_ln314" fromId="173" toId="31">
 </dataflow>
-<dataflow id="176" from="empty_46" to="specloopname_ln314" fromId="175" toId="31">
+<dataflow id="176" from="empty_33" to="specloopname_ln314" fromId="175" toId="31">
 </dataflow>
 <dataflow id="177" from="zext_ln314" to="icmp_ln316" fromId="23" toId="32">
 </dataflow>
@@ -1426,11 +1426,11 @@ if.then:37 %br_ln322 = br void %for.inc28
 </dataflow>
 <dataflow id="191" from="p503p1_1_addr" to="p503p1_1_load" fromId="37" toId="42">
 </dataflow>
-<dataflow id="193" from="digit_x_digit" to="call_ret1" fromId="192" toId="43">
+<dataflow id="193" from="digit_x_digit" to="call_ret3" fromId="192" toId="43">
 </dataflow>
-<dataflow id="194" from="mc_load" to="call_ret1" fromId="41" toId="43">
+<dataflow id="194" from="mc_load" to="call_ret3" fromId="41" toId="43">
 </dataflow>
-<dataflow id="195" from="p503p1_1_load" to="call_ret1" fromId="42" toId="43">
+<dataflow id="195" from="p503p1_1_load" to="call_ret3" fromId="42" toId="43">
 </dataflow>
 <dataflow id="196" from="t" to="t_load" fromId="8" toId="44">
 </dataflow>
@@ -1438,15 +1438,15 @@ if.then:37 %br_ln322 = br void %for.inc28
 </dataflow>
 <dataflow id="198" from="v" to="v_load_2" fromId="10" toId="46">
 </dataflow>
-<dataflow id="199" from="digit_x_digit" to="call_ret1" fromId="192" toId="47">
+<dataflow id="199" from="digit_x_digit" to="call_ret3" fromId="192" toId="47">
 </dataflow>
-<dataflow id="200" from="mc_load" to="call_ret1" fromId="41" toId="47">
+<dataflow id="200" from="mc_load" to="call_ret3" fromId="41" toId="47">
 </dataflow>
-<dataflow id="201" from="p503p1_1_load" to="call_ret1" fromId="42" toId="47">
+<dataflow id="201" from="p503p1_1_load" to="call_ret3" fromId="42" toId="47">
 </dataflow>
-<dataflow id="202" from="call_ret1" to="UV" fromId="47" toId="48">
+<dataflow id="202" from="call_ret3" to="UV" fromId="47" toId="48">
 </dataflow>
-<dataflow id="203" from="call_ret1" to="UV_2" fromId="47" toId="49">
+<dataflow id="203" from="call_ret3" to="UV_2" fromId="47" toId="49">
 </dataflow>
 <dataflow id="204" from="UV" to="v_2" fromId="48" toId="50">
 </dataflow>
@@ -1564,13 +1564,13 @@ if.then:37 %br_ln322 = br void %for.inc28
 </dataflow>
 <dataflow id="268" from="_ssdm_op_Write.ap_auto.i64P0A" to="write_ln0" fromId="267" toId="80">
 </dataflow>
-<dataflow id="269" from="v_109_out" to="write_ln0" fromId="103" toId="80">
+<dataflow id="269" from="v_156_out" to="write_ln0" fromId="103" toId="80">
 </dataflow>
 <dataflow id="270" from="v_load" to="write_ln0" fromId="79" toId="80">
 </dataflow>
 <dataflow id="271" from="_ssdm_op_Write.ap_auto.i64P0A" to="write_ln0" fromId="267" toId="81">
 </dataflow>
-<dataflow id="272" from="u_54_out" to="write_ln0" fromId="104" toId="81">
+<dataflow id="272" from="u_62_out" to="write_ln0" fromId="104" toId="81">
 </dataflow>
 <dataflow id="273" from="u_load" to="write_ln0" fromId="78" toId="81">
 </dataflow>

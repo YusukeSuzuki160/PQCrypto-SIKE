@@ -52,7 +52,7 @@ wire   [0:0] icmp_ln13_fu_91_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [3:0] i_279_reg_132;
+reg   [3:0] i_320_reg_132;
 wire    ap_block_pp0_stage0_11001;
 wire   [63:0] zext_ln14_13_fu_111_p1;
 wire    ap_block_pp0_stage0;
@@ -60,7 +60,7 @@ wire   [63:0] zext_ln13_fu_121_p1;
 reg   [3:0] i_fu_46;
 wire   [3:0] add_ln13_fu_97_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_279;
+reg   [3:0] ap_sig_allocacmp_i_320;
 reg    pts_X_ce0_local;
 reg    R_X_we0_local;
 reg    R_X_ce0_local;
@@ -142,7 +142,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_279_reg_132 <= ap_sig_allocacmp_i_279;
+        i_320_reg_132 <= ap_sig_allocacmp_i_320;
     end
 end
 
@@ -204,9 +204,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_279 = 4'd0;
+        ap_sig_allocacmp_i_320 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_279 = i_fu_46;
+        ap_sig_allocacmp_i_320 = i_fu_46;
     end
 end
 
@@ -237,7 +237,7 @@ assign R_X_d0 = pts_X_q0;
 
 assign R_X_we0 = R_X_we0_local;
 
-assign add_ln13_fu_97_p2 = (ap_sig_allocacmp_i_279 + 4'd1);
+assign add_ln13_fu_97_p2 = (ap_sig_allocacmp_i_320 + 4'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -257,15 +257,15 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln13_fu_91_p2 = ((ap_sig_allocacmp_i_279 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln13_fu_91_p2 = ((ap_sig_allocacmp_i_320 == 4'd8) ? 1'b1 : 1'b0);
 
 assign pts_X_address0 = zext_ln14_13_fu_111_p1;
 
 assign pts_X_ce0 = pts_X_ce0_local;
 
-assign tmp_s_fu_103_p3 = {{npts_7}, {ap_sig_allocacmp_i_279}};
+assign tmp_s_fu_103_p3 = {{npts_7}, {ap_sig_allocacmp_i_320}};
 
-assign zext_ln13_fu_121_p1 = i_279_reg_132;
+assign zext_ln13_fu_121_p1 = i_320_reg_132;
 
 assign zext_ln14_13_fu_111_p1 = tmp_s_fu_103_p3;
 

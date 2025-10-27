@@ -53,14 +53,14 @@ reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 wire    ap_block_pp0_stage0_11001;
-reg   [3:0] i_280_reg_150;
+reg   [3:0] i_321_reg_150;
 wire   [63:0] zext_ln14_23_fu_115_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln14_22_fu_133_p1;
 reg   [3:0] i_fu_46;
 wire   [3:0] add_ln13_fu_97_p2;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_i_280;
+reg   [3:0] ap_sig_allocacmp_i_321;
 reg    R_Z_ce0_local;
 reg    pts_Z_we0_local;
 reg    pts_Z_ce0_local;
@@ -145,7 +145,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_280_reg_150 <= ap_sig_allocacmp_i_280;
+        i_321_reg_150 <= ap_sig_allocacmp_i_321;
     end
 end
 
@@ -199,9 +199,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_i_280 = 4'd0;
+        ap_sig_allocacmp_i_321 = 4'd0;
     end else begin
-        ap_sig_allocacmp_i_280 = i_fu_46;
+        ap_sig_allocacmp_i_321 = i_fu_46;
     end
 end
 
@@ -236,7 +236,7 @@ assign R_Z_address0 = zext_ln14_23_fu_115_p1;
 
 assign R_Z_ce0 = R_Z_ce0_local;
 
-assign add_ln13_fu_97_p2 = (ap_sig_allocacmp_i_280 + 4'd1);
+assign add_ln13_fu_97_p2 = (ap_sig_allocacmp_i_321 + 4'd1);
 
 assign add_ln14_fu_128_p2 = (zext_ln14_10 + zext_ln14_fu_125_p1);
 
@@ -258,7 +258,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln13_fu_91_p2 = ((ap_sig_allocacmp_i_280 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln13_fu_91_p2 = ((ap_sig_allocacmp_i_321 == 4'd8) ? 1'b1 : 1'b0);
 
 assign pts_Z_address0 = zext_ln14_22_fu_133_p1;
 
@@ -268,13 +268,13 @@ assign pts_Z_d0 = R_Z_q0;
 
 assign pts_Z_we0 = pts_Z_we0_local;
 
-assign trunc_ln14_fu_103_p1 = ap_sig_allocacmp_i_280[2:0];
+assign trunc_ln14_fu_103_p1 = ap_sig_allocacmp_i_321[2:0];
 
 assign zext_ln14_22_fu_133_p1 = add_ln14_fu_128_p2;
 
 assign zext_ln14_23_fu_115_p1 = zext_ln14_s_fu_107_p3;
 
-assign zext_ln14_fu_125_p1 = i_280_reg_150;
+assign zext_ln14_fu_125_p1 = i_321_reg_150;
 
 assign zext_ln14_s_fu_107_p3 = {{1'd1}, {trunc_ln14_fu_103_p1}};
 

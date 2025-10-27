@@ -121,7 +121,7 @@ entry:6 %call_ln0 = call void @fpsub503.23_Pipeline_VITIS_LOOP_68_2, i64 %c, i1 
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615
+entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -259,17 +259,17 @@ entry:7 %ret_ln72 = ret
 </dataflow>
 <dataflow id="52" from="StgValue_44" to="specmemcore_ln0" fromId="44" toId="11">
 </dataflow>
-<dataflow id="54" from="StgValue_53" to="specmemcore_ln0" fromId="53" toId="11">
+<dataflow id="53" from="StgValue_46" to="specmemcore_ln0" fromId="46" toId="11">
 </dataflow>
-<dataflow id="55" from="StgValue_48" to="specmemcore_ln0" fromId="48" toId="11">
+<dataflow id="54" from="StgValue_48" to="specmemcore_ln0" fromId="48" toId="11">
 </dataflow>
-<dataflow id="56" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="41" toId="12">
+<dataflow id="55" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="41" toId="12">
 </dataflow>
-<dataflow id="57" from="R_Z" to="specmemcore_ln0" fromId="19" toId="12">
+<dataflow id="56" from="R_Z" to="specmemcore_ln0" fromId="19" toId="12">
 </dataflow>
-<dataflow id="58" from="StgValue_44" to="specmemcore_ln0" fromId="44" toId="12">
+<dataflow id="57" from="StgValue_44" to="specmemcore_ln0" fromId="44" toId="12">
 </dataflow>
-<dataflow id="59" from="StgValue_46" to="specmemcore_ln0" fromId="46" toId="12">
+<dataflow id="59" from="StgValue_58" to="specmemcore_ln0" fromId="58" toId="12">
 </dataflow>
 <dataflow id="60" from="StgValue_48" to="specmemcore_ln0" fromId="48" toId="12">
 </dataflow>

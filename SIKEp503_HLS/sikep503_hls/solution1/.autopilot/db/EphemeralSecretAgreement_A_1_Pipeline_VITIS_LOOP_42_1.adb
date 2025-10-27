@@ -369,7 +369,7 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>i_269</name>
+              <name>i_300</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>49</lineNumber>
@@ -4255,7 +4255,7 @@
           <Obj>
             <type>3</type>
             <id>70</id>
-            <name>_ZL10fp2_encodePA8_KmPh.31.exit.exitStub</name>
+            <name>_ZL10fp2_encodePA8_KmPh.36.exit.exitStub</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -6086,7 +6086,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_i_269</first>
+          <first>ap_sig_allocacmp_i_300</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -6247,7 +6247,7 @@
           </second>
         </item>
         <item>
-          <first>i_269_reg_323</first>
+          <first>i_300_reg_323</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7508,7 +7508,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_269_load_fu_186</first>
+        <first>i_300_load_fu_186</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7682,7 +7682,7 @@
       <count>9</count>
       <item_version>0</item_version>
       <item>
-        <first>i_269_reg_323</first>
+        <first>i_300_reg_323</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

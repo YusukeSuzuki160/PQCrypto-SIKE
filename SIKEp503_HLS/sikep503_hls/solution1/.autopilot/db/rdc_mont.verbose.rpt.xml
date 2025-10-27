@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont'" level="0">
-<item name = "Date">Mon Oct 20 14:38:31 2025
+<item name = "Date">Sat Oct 25 18:42:56 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -90,33 +90,33 @@
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln312_fu_259_p2">+, 0, 0, 12, 4, 1</column>
 <column name="add_ln314_fu_275_p2">+, 0, 0, 12, 4, 3</column>
-<column name="add_ln334_6_fu_496_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln334_7_fu_496_p2">+, 0, 0, 12, 4, 1</column>
 <column name="add_ln334_fu_490_p2">+, 0, 0, 12, 4, 1</column>
 <column name="add_ln338_fu_469_p2">+, 0, 0, 39, 32, 2</column>
 <column name="t_fu_623_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_fu_573_p2">+, 0, 0, 71, 64, 64</column>
-<column name="u_95_fu_418_p2">+, 0, 0, 71, 64, 64</column>
-<column name="v_106_fu_325_p2">+, 0, 0, 71, 64, 64</column>
-<column name="v_108_fu_530_p2">+, 0, 0, 71, 64, 64</column>
-<column name="v_110_fu_368_p2">+, 0, 0, 71, 64, 64</column>
+<column name="u_129_fu_418_p2">+, 0, 0, 71, 64, 64</column>
+<column name="v_150_fu_325_p2">+, 0, 0, 71, 64, 64</column>
+<column name="v_152_fu_530_p2">+, 0, 0, 71, 64, 64</column>
+<column name="v_154_fu_368_p2">+, 0, 0, 71, 64, 64</column>
 <column name="v_fu_643_p2">+, 0, 0, 71, 64, 64</column>
 <column name="sub65_fu_483_p2">-, 0, 0, 39, 4, 32</column>
-<column name="and_ln105_12_fu_605_p2">and, 0, 0, 64, 64, 64</column>
+<column name="and_ln105_17_fu_605_p2">and, 0, 0, 64, 64, 64</column>
 <column name="and_ln105_fu_400_p2">and, 0, 0, 64, 64, 64</column>
 <column name="icmp_ln312_fu_253_p2">icmp, 0, 0, 12, 4, 5</column>
 <column name="icmp_ln334_fu_437_p2">icmp, 0, 0, 12, 4, 2</column>
 <column name="icmp_ln336_fu_463_p2">icmp, 0, 0, 39, 32, 1</column>
 <column name="mc_we0">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln105_33_fu_549_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln105_49_fu_549_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln105_fu_344_p2">or, 0, 0, 64, 64, 64</column>
-<column name="count_12_fu_475_p3">select, 0, 0, 32, 1, 32</column>
-<column name="xor_ln105_196_fu_338_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_197_fu_350_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_198_fu_382_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln105_199_fu_537_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_200_fu_543_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_201_fu_555_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln105_202_fu_587_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="count_17_fu_475_p3">select, 0, 0, 32, 1, 32</column>
+<column name="xor_ln105_291_fu_338_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_292_fu_350_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_293_fu_382_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln105_294_fu_537_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_295_fu_543_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_296_fu_555_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln105_297_fu_587_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln105_fu_332_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -127,8 +127,8 @@
 <column name="grp_digit_x_digit_fu_824_a">14, 3, 64, 192</column>
 <column name="grp_digit_x_digit_fu_824_ap_start">14, 3, 1, 3</column>
 <column name="grp_digit_x_digit_fu_824_b">14, 3, 64, 192</column>
-<column name="i_13_fu_70">9, 2, 4, 8</column>
-<column name="i_14_fu_122">9, 2, 4, 8</column>
+<column name="i_15_fu_70">9, 2, 4, 8</column>
+<column name="i_16_fu_122">9, 2, 4, 8</column>
 <column name="indvars_iv_fu_118">9, 2, 4, 8</column>
 <column name="ma_address0_local">20, 4, 4, 16</column>
 <column name="mc_address0">20, 4, 3, 12</column>
@@ -140,7 +140,7 @@
 <column name="u_025_fu_74">9, 2, 64, 128</column>
 <column name="u_fu_110">9, 2, 64, 128</column>
 <column name="v_026_fu_78">9, 2, 64, 128</column>
-<column name="v_56_fu_114">9, 2, 64, 128</column>
+<column name="v_65_fu_114">9, 2, 64, 128</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -151,20 +151,20 @@
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_306_1_fu_185_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_314_3_fu_191_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_rdc_mont_Pipeline_VITIS_LOOP_340_5_fu_207_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_13_fu_70">4, 0, 4, 0</column>
-<column name="i_14_fu_122">4, 0, 4, 0</column>
-<column name="i_27_reg_782">4, 0, 4, 0</column>
+<column name="i_15_fu_70">4, 0, 4, 0</column>
+<column name="i_16_fu_122">4, 0, 4, 0</column>
+<column name="i_37_reg_782">4, 0, 4, 0</column>
 <column name="i_reg_712">4, 0, 4, 0</column>
 <column name="indvars_iv_fu_118">4, 0, 4, 0</column>
 <column name="sub65_reg_809">32, 0, 32, 0</column>
 <column name="trunc_ln312_reg_726">3, 0, 3, 0</column>
-<column name="trunc_ln334_13_reg_803">3, 0, 3, 0</column>
+<column name="trunc_ln334_28_reg_803">3, 0, 3, 0</column>
 <column name="trunc_ln334_reg_798">3, 0, 3, 0</column>
 <column name="u_025_fu_74">64, 0, 64, 0</column>
 <column name="u_fu_110">64, 0, 64, 0</column>
 <column name="v_026_fu_78">64, 0, 64, 0</column>
-<column name="v_56_fu_114">64, 0, 64, 0</column>
-<column name="v_56_load_4_reg_793">64, 0, 64, 0</column>
+<column name="v_65_fu_114">64, 0, 64, 0</column>
+<column name="v_65_load_5_reg_793">64, 0, 64, 0</column>
 <column name="zext_ln312_reg_772">4, 0, 64, 60</column>
 </table>
 </item>

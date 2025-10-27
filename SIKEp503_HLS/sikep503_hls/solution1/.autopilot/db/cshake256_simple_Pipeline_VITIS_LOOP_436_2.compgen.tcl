@@ -12,6 +12,25 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 79 \
+    name t_107 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename t_107 \
+    op interface \
+    ports { t_107_address0 { O 6 vector } t_107_ce0 { O 1 bit } t_107_we0 { O 1 bit } t_107_d0 { O 8 vector } t_107_address1 { O 6 vector } t_107_ce1 { O 1 bit } t_107_we1 { O 1 bit } t_107_d1 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_107'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 80 \
     name t_106 \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +49,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 80 \
+    id 81 \
     name t_105 \
     reset_level 1 \
     sync_rst true \
@@ -41,25 +60,6 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_105'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 81 \
-    name t_104 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename t_104 \
-    op interface \
-    ports { t_104_address0 { O 6 vector } t_104_ce0 { O 1 bit } t_104_we0 { O 1 bit } t_104_d0 { O 8 vector } t_104_address1 { O 6 vector } t_104_ce1 { O 1 bit } t_104_we1 { O 1 bit } t_104_d1 { O 8 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 't_104'"
 }
 }
 

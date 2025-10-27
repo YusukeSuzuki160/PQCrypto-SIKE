@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>5</id>
-              <name>carry_257_loc</name>
+              <name>carry_305_loc</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -174,7 +174,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -230,7 +230,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -286,7 +286,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -521,7 +521,7 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>carry_257_loc_load</name>
+              <name>carry_305_loc_load</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -890,7 +890,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpmul503_mont_3_362_fu_115</rtlName>
+              <rtlName>grp_fpmul503_mont_3_365_fu_115</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -996,7 +996,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpmul503_mont_3_362_fu_115</rtlName>
+              <rtlName>grp_fpmul503_mont_3_365_fu_115</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1057,7 +1057,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpmul503_mont_3_362_fu_115</rtlName>
+              <rtlName>grp_fpmul503_mont_3_365_fu_115</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1401,7 +1401,7 @@
             <Obj>
               <type>2</type>
               <id>97</id>
-              <name>fpmul503_mont_3_362</name>
+              <name>fpmul503_mont_3_365</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1425,7 +1425,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fpmul503_mont.3.362&gt;</content>
+          <content>&lt;constant:fpmul503_mont.3.365&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_31">
           <Value>
@@ -2063,8 +2063,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>142699</mMinLatency>
-        <mMaxLatency>249633</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -3025,19 +3025,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>26</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>1446</second>
+              <second>192</second>
             </item>
             <item>
               <first>FF</first>
-              <second>29324</second>
+              <second>23762</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>76468</second>
+              <second>115928</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3046,25 +3046,25 @@
           </second>
         </item>
         <item>
-          <first>grp_fpmul503_mont_3_362_fu_115 (fpmul503_mont_3_362)</first>
+          <first>grp_fpmul503_mont_3_365_fu_115 (fpmul503_mont_3_365)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>4</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>241</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4782</second>
+              <second>3887</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12276</second>
+              <second>18863</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3079,19 +3079,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>4</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>241</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4874</second>
+              <second>3889</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12305</second>
+              <second>18903</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3106,19 +3106,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>4</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>241</second>
+              <second>32</second>
             </item>
             <item>
               <first>FF</first>
-              <second>4874</second>
+              <second>3889</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12268</second>
+              <second>18866</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3499,7 +3499,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpmul503_mont_3_362_fu_115_mb_q0</first>
+          <first>grp_fpmul503_mont_3_365_fu_115_mb_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3526,7 +3526,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpmul503_mont_3_362_fu_115_mc_q0</first>
+          <first>grp_fpmul503_mont_3_365_fu_115_mc_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4041,7 +4041,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpmul503_mont_3_362_fu_115_ap_start_reg</first>
+          <first>grp_fpmul503_mont_3_365_fu_115_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4144,7 +4144,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpmul503_mont_3_362_fu_115</first>
+          <first>grp_fpmul503_mont_3_365_fu_115</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4217,7 +4217,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpmul503_mont_3_362_fu_115 (fpmul503_mont_3_362)</first>
+          <first>grp_fpmul503_mont_3_365_fu_115 (fpmul503_mont_3_365)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4571,7 +4571,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>carry_257_loc_fu_38</first>
+        <first>carry_305_loc_fu_38</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4661,7 +4661,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpmul503_mont_3_362_fu_115</first>
+        <first>grp_fpmul503_mont_3_365_fu_115</first>
         <second>
           <count>6</count>
           <item_version>0</item_version>
@@ -4700,7 +4700,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>carry_257_loc_load_load_fu_125</first>
+        <first>carry_305_loc_load_load_fu_125</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -4763,7 +4763,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>carry_257_loc_reg_129</first>
+        <first>carry_305_loc_reg_129</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

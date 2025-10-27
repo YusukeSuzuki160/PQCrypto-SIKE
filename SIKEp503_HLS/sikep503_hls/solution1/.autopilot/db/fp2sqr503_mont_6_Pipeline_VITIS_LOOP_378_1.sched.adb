@@ -384,7 +384,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>i_223</name>
+						<name>i_246</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>378</lineNumber>
@@ -1449,7 +1449,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>xor_ln381_8</name>
+						<name>xor_ln381_1</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1663,7 +1663,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>xor_ln381_11</name>
+						<name>xor_ln381_10</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1804,7 +1804,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>xor_ln381_9</name>
+						<name>xor_ln381_2</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -1947,7 +1947,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>xor_ln381_10</name>
+						<name>xor_ln381_3</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>
@@ -2018,7 +2018,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>or_ln381_4</name>
+						<name>or_ln381_1</name>
 						<fileName>src/fpx.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>381</lineNumber>

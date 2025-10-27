@@ -52,7 +52,7 @@ wire   [0:0] icmp_ln378_fu_113_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [0:0] carry_83_reg_94;
+reg   [0:0] carry_73_reg_94;
 reg   [3:0] i_reg_243;
 wire    ap_block_pp0_stage0_11001;
 reg   [0:0] icmp_ln378_reg_248;
@@ -60,7 +60,7 @@ wire    ap_loop_init;
 wire   [63:0] zext_ln381_5_fu_135_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln378_fu_145_p1;
-reg   [3:0] i_142_fu_58;
+reg   [3:0] i_182_fu_58;
 wire   [3:0] add_ln378_fu_119_p2;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    c_0_ce0_local;
@@ -96,7 +96,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_142_fu_58 = 4'd0;
+#0 i_182_fu_58 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -150,9 +150,9 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
         if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
-            carry_83_reg_94 <= 1'd0;
+            carry_73_reg_94 <= 1'd0;
         end else if ((1'b1 == ap_condition_223)) begin
-            carry_83_reg_94 <= or_ln381_5_fu_222_p2[32'd63];
+            carry_73_reg_94 <= or_ln381_5_fu_222_p2[32'd63];
         end
     end
 end
@@ -160,9 +160,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln378_fu_113_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_142_fu_58 <= add_ln378_fu_119_p2;
+            i_182_fu_58 <= add_ln378_fu_119_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_142_fu_58 <= 4'd0;
+            i_182_fu_58 <= 4'd0;
         end
     end
 end
@@ -218,7 +218,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_142_fu_58;
+        ap_sig_allocacmp_i = i_182_fu_58;
     end
 end
 
@@ -323,7 +323,7 @@ assign xor_ln381_s_fu_202_p3 = {{xor_ln381_12_fu_192_p2}, {trunc_ln381_fu_198_p1
 
 assign zext_ln378_fu_145_p1 = i_reg_243;
 
-assign zext_ln381_2_fu_149_p1 = carry_83_reg_94;
+assign zext_ln381_2_fu_149_p1 = carry_73_reg_94;
 
 assign zext_ln381_5_fu_135_p1 = add_ln381_fu_129_p2;
 

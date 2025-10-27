@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'LADDER3PT_41'
 ================================================================
-* Date:           Mon Oct 20 16:17:17 2025
+* Date:           Sat Oct 25 16:52:47 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.130 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.710 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
-    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  1098857|  1802357|  10.989 ms|  18.024 ms|  1098857|  1802357|       no|
-    +---------+---------+-----------+-----------+---------+---------+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -58,31 +58,31 @@
         |grp_fpadd503_1_fu_1026                               |fpadd503_1                                |       51|       51|  0.510 us|  0.510 us|   51|   51|                                              no|
         |grp_fpsub503_2_fu_1035                               |fpsub503_2                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
         |grp_fpsub503_2_fu_1044                               |fpsub503_2                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
-        |grp_fp2sqr503_mont_5_fu_1053                         |fp2sqr503_mont_5                          |      545|      919|  5.450 us|  9.190 us|  545|  919|                                              no|
+        |grp_fp2sqr503_mont_5_fu_1053                         |fp2sqr503_mont_5                          |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpcorrection503_fu_1065                          |fpcorrection503                           |       39|       39|  0.390 us|  0.390 us|   39|   39|                                              no|
         |grp_fpcorrection503_fu_1072                          |fpcorrection503                           |       39|       39|  0.390 us|  0.390 us|   39|   39|                                              no|
         |grp_fpadd503_245_1_fu_1079                           |fpadd503_245_1                            |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
         |grp_fpadd503_245_1_fu_1087                           |fpadd503_245_1                            |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
-        |grp_fp2mul503_mont_126_3_fu_1095                     |fp2mul503_mont_126_3                      |      443|      736|  4.430 us|  7.360 us|  443|  736|                                              no|
-        |grp_fp2mul503_mont_125_fu_1107                       |fp2mul503_mont_125                        |      443|      736|  4.430 us|  7.360 us|  443|  736|                                              no|
+        |grp_fp2mul503_mont_126_3_fu_1095                     |fp2mul503_mont_126_3                      |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fp2mul503_mont_125_fu_1107                       |fp2mul503_mont_125                        |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpsub503_3_fu_1119                               |fpsub503_3                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
         |grp_fpsub503_3_fu_1128                               |fpsub503_3                                |       31|       31|  0.310 us|  0.310 us|   31|   31|                                              no|
-        |grp_fp2mul503_mont_fu_1137                           |fp2mul503_mont                            |      443|      736|  4.430 us|  7.360 us|  443|  736|                                              no|
-        |grp_fp2mul503_mont_7_fu_1149                         |fp2mul503_mont_7                          |      443|      736|  4.430 us|  7.360 us|  443|  736|                                              no|
-        |grp_fp2sqr503_mont_4_fu_1165                         |fp2sqr503_mont_4                          |      545|      919|  5.450 us|  9.190 us|  545|  919|                                              no|
+        |grp_fp2mul503_mont_fu_1137                           |fp2mul503_mont                            |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fp2mul503_mont_7_fu_1149                         |fp2mul503_mont_7                          |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
+        |grp_fp2sqr503_mont_4_fu_1165                         |fp2sqr503_mont_4                          |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpadd503_245_fu_1175                             |fpadd503_245                              |       59|       59|  0.590 us|  0.590 us|   59|   59|                                              no|
-        |grp_fp2mul503_mont_46_fu_1183                        |fp2mul503_mont_46                         |      564|      930|  5.640 us|  9.300 us|  564|  930|                                              no|
+        |grp_fp2mul503_mont_46_fu_1183                        |fp2mul503_mont_46                         |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         |grp_fpadd503_fu_1196                                 |fpadd503                                  |       51|       51|  0.510 us|  0.510 us|   51|   51|                                              no|
-        |grp_fp2mul503_mont_124_fu_1205                       |fp2mul503_mont_124                        |      443|      736|  4.430 us|  7.360 us|  443|  736|                                              no|
+        |grp_fp2mul503_mont_124_fu_1205                       |fp2mul503_mont_124                        |        ?|        ?|         ?|         ?|    ?|    ?|                                              no|
         +-----------------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
-        +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
-        |                    |  Latency (cycles) |  Iteration  |  Initiation Interval  | Trip |          |
-        |      Loop Name     |   min   |   max   |   Latency   |  achieved |   target  | Count| Pipelined|
-        +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_319_1  |  1098500|  1802000|  4394 ~ 7208|          -|          -|   250|        no|
-        +--------------------+---------+---------+-------------+-----------+-----------+------+----------+
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_319_1  |        ?|        ?|         ?|          -|          -|   250|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -394,7 +394,7 @@ State 17 <SV = 16> <Delay = 1.09>
 ST_17 : Operation 241 [1/1] (0.00ns)   --->   "%prevbit = phi i1 %bit, void %for.inc.split, i1 0, void %entry"   --->   Operation 241 'phi' 'prevbit' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 242 [1/1] (0.00ns)   --->   "%i = load i8 %i_065" [src/ec_isogeny.cpp:319]   --->   Operation 242 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 243 [1/1] (0.70ns)   --->   "%icmp_ln319 = icmp_eq  i8 %i, i8 250" [src/ec_isogeny.cpp:319]   --->   Operation 243 'icmp' 'icmp_ln319' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 244 [1/1] (0.70ns)   --->   "%i_267 = add i8 %i, i8 1" [src/ec_isogeny.cpp:319]   --->   Operation 244 'add' 'i_267' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 244 [1/1] (0.70ns)   --->   "%i_307 = add i8 %i, i8 1" [src/ec_isogeny.cpp:319]   --->   Operation 244 'add' 'i_307' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 245 [1/1] (0.00ns)   --->   "%br_ln319 = br i1 %icmp_ln319, void %for.inc.split, void %for.end" [src/ec_isogeny.cpp:319]   --->   Operation 245 'br' 'br_ln319' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 246 [1/1] (0.00ns)   --->   "%trunc_ln319 = trunc i8 %i" [src/ec_isogeny.cpp:319]   --->   Operation 246 'trunc' 'trunc_ln319' <Predicate = (!icmp_ln319)> <Delay = 0.00>
 ST_17 : Operation 247 [1/1] (0.00ns)   --->   "%tmp_s = partselect i2 @_ssdm_op_PartSelect.i2.i8.i32.i32, i8 %i, i32 6, i32 7" [src/ec_isogeny.cpp:322]   --->   Operation 247 'partselect' 'tmp_s' <Predicate = (!icmp_ln319)> <Delay = 0.00>
@@ -406,7 +406,7 @@ ST_17 : Operation 252 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i5 @_ssdm
 ST_17 : Operation 253 [1/1] (0.00ns)   --->   "%zext_ln322_2 = zext i5 %or_ln" [src/ec_isogeny.cpp:322]   --->   Operation 253 'zext' 'zext_ln322_2' <Predicate = (!icmp_ln319)> <Delay = 0.00>
 ST_17 : Operation 254 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_1 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln322_2" [src/ec_isogeny.cpp:322]   --->   Operation 254 'getelementptr' 'ephemeralsk_i_addr_1' <Predicate = (!icmp_ln319)> <Delay = 0.00>
 ST_17 : Operation 255 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_1 = load i5 %ephemeralsk_i_addr_1" [src/ec_isogeny.cpp:322]   --->   Operation 255 'load' 'ephemeralsk_i_load_1' <Predicate = (!icmp_ln319)> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
-ST_17 : Operation 256 [1/1] (0.38ns)   --->   "%store_ln291 = store i8 %i_267, i8 %i_065" [src/ec_isogeny.cpp:291]   --->   Operation 256 'store' 'store_ln291' <Predicate = (!icmp_ln319)> <Delay = 0.38>
+ST_17 : Operation 256 [1/1] (0.38ns)   --->   "%store_ln291 = store i8 %i_307, i8 %i_065" [src/ec_isogeny.cpp:291]   --->   Operation 256 'store' 'store_ln291' <Predicate = (!icmp_ln319)> <Delay = 0.38>
 ST_17 : Operation 257 [1/1] (0.00ns)   --->   "%ret_ln331 = ret" [src/ec_isogeny.cpp:331]   --->   Operation 257 'ret' 'ret_ln331' <Predicate = (icmp_ln319)> <Delay = 0.00>
 
 State 18 <SV = 17> <Delay = 0.66>
@@ -559,7 +559,7 @@ ST_43 : Operation 353 [2/2] (0.00ns)   --->   "%call_ln329 = call void @fp2mul50
 
 State 44 <SV = 43> <Delay = 0.00>
 ST_44 : Operation 354 [1/1] (0.00ns)   --->   "%speclooptripcount_ln291 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 250, i64 250, i64 250" [src/ec_isogeny.cpp:291]   --->   Operation 354 'speclooptripcount' 'speclooptripcount_ln291' <Predicate = true> <Delay = 0.00>
-ST_44 : Operation 355 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [src/ec_isogeny.cpp:319]   --->   Operation 355 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 355 [1/1] (0.00ns)   --->   "%specloopname_ln319 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [src/ec_isogeny.cpp:319]   --->   Operation 355 'specloopname' 'specloopname_ln319' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 356 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 356 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 357 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 357 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 358 [1/1] (0.00ns)   --->   "%specmemcore_ln328 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:328]   --->   Operation 358 'specmemcore' 'specmemcore_ln328' <Predicate = true> <Delay = 0.00>
@@ -880,7 +880,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 prevbit                 (phi              ) [ 000000000000000001111100000000000000000000000]
 i                       (load             ) [ 000000000000000000000000000000000000000000000]
 icmp_ln319              (icmp             ) [ 000000000000000001111111111111111111111111111]
-i_267                   (add              ) [ 000000000000000000000000000000000000000000000]
+i_307                   (add              ) [ 000000000000000000000000000000000000000000000]
 br_ln319                (br               ) [ 000000000000000000000000000000000000000000000]
 trunc_ln319             (trunc            ) [ 000000000000000000111100000000000000000000000]
 tmp_s                   (partselect       ) [ 000000000000000000111000000000000000000000000]
@@ -1768,7 +1768,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 <pin id="153" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_7"/></StgValue>
 </bind>
 </comp>
 
@@ -3628,7 +3628,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </bind>
 </comp>
 
-<comp id="1231" class="1004" name="i_267_fu_1231">
+<comp id="1231" class="1004" name="i_307_fu_1231">
 <pin_list>
 <pin id="1232" dir="0" index="0" bw="8" slack="0"/>
 <pin id="1233" dir="0" index="1" bw="1" slack="0"/>
@@ -3636,7 +3636,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="i_267/17 "/>
+<opset="i_307/17 "/>
 </bind>
 </comp>
 
@@ -5129,7 +5129,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 		store_ln0 : 1
 	State 17
 		icmp_ln319 : 1
-		i_267 : 1
+		i_307 : 1
 		br_ln319 : 2
 		trunc_ln319 : 1
 		tmp_s : 1
@@ -5222,28 +5222,28 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 |   call   |                grp_fpadd503_1_fu_1026               |    0    |    0    |  2.322  |   166   |   1787  |    0    |
 |          |                grp_fpsub503_2_fu_1035               |    0    |    0    |  1.548  |   154   |   1217  |    0    |
 |          |                grp_fpsub503_2_fu_1044               |    0    |    0    |  1.548  |   154   |   1217  |    0    |
-|          |             grp_fp2sqr503_mont_5_fu_1053            |    0    |    82   | 13.0996 |   4887  |  11074  |    0    |
+|          |             grp_fp2sqr503_mont_5_fu_1053            |    6    |    49   |  15.783 |   6235  |  15677  |    0    |
 |          |             grp_fpcorrection503_fu_1065             |    0    |    0    |  1.548  |    89   |   1217  |    0    |
 |          |             grp_fpcorrection503_fu_1072             |    0    |    0    |  1.548  |    89   |   1217  |    0    |
 |          |              grp_fpadd503_245_1_fu_1079             |    0    |    0    |  2.322  |   101   |   1787  |    0    |
 |          |              grp_fpadd503_245_1_fu_1087             |    0    |    0    |  2.322  |   101   |   1787  |    0    |
-|          |           grp_fp2mul503_mont_126_3_fu_1095          |    0    |   132   |  19.423 |   7494  |  16371  |    0    |
-|          |            grp_fp2mul503_mont_125_fu_1107           |    0    |   182   | 23.8114 |  10008  |  20467  |    0    |
+|          |           grp_fp2mul503_mont_126_3_fu_1095          |    12   |    66   | 24.7899 |  10190  |  25577  |    0    |
+|          |            grp_fp2mul503_mont_125_fu_1107           |    18   |    83   | 31.8617 |  14052  |  34276  |    0    |
 |          |                grp_fpsub503_3_fu_1119               |    0    |    0    |  1.548  |   154   |   1217  |    0    |
 |          |                grp_fpsub503_3_fu_1128               |    0    |    0    |  1.548  |   154   |   1217  |    0    |
-|          |              grp_fp2mul503_mont_fu_1137             |    0    |   182   | 23.8114 |  10011  |  20467  |    0    |
-|          |             grp_fp2mul503_mont_7_fu_1149            |    0    |   182   |  25.228 |  10073  |  20607  |    0    |
-|          |             grp_fp2sqr503_mont_4_fu_1165            |    0    |   164   | 22.7161 |   9277  |  19587  |    0    |
+|          |              grp_fp2mul503_mont_fu_1137             |    18   |    83   | 31.8617 |  14055  |  34276  |    0    |
+|          |             grp_fp2mul503_mont_7_fu_1149            |    18   |    83   | 33.4097 |  14001  |  34564  |    0    |
+|          |             grp_fp2sqr503_mont_4_fu_1165            |    12   |    98   |  28.083 |  11973  |  28793  |    0    |
 |          |               grp_fpadd503_245_fu_1175              |    0    |    0    |  2.322  |   101   |   1787  |    0    |
-|          |            grp_fp2mul503_mont_46_fu_1183            |    0    |   182   | 23.8771 |  10086  |  20482  |    0    |
+|          |            grp_fp2mul503_mont_46_fu_1183            |    18   |    83   | 31.9274 |  14126  |  34287  |    0    |
 |          |                 grp_fpadd503_fu_1196                |    0    |    0    |  2.322  |   166   |   1787  |    0    |
-|          |            grp_fp2mul503_mont_124_fu_1205           |    0    |   182   | 23.8114 |  10011  |  20467  |    0    |
+|          |            grp_fp2mul503_mont_124_fu_1205           |    18   |    83   | 31.8617 |  14055  |  34276  |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   lshr   |                  lshr_ln322_fu_1371                 |    0    |    0    |    0    |    0    |   182   |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   icmp   |                  icmp_ln319_fu_1225                 |    0    |    0    |    0    |    0    |    15   |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|    add   |                    i_267_fu_1231                    |    0    |    0    |    0    |    0    |    15   |    0    |
+|    add   |                    i_307_fu_1231                    |    0    |    0    |    0    |    0    |    15   |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |    xor   |                     swap_fu_1381                    |    0    |    0    |    0    |    0    |    2    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
@@ -5272,7 +5272,7 @@ br_ln319                (br               ) [ 0000000000000000111111111111111111
 |          |                 zext_ln322_8_fu_1349                |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |                 zext_ln322_1_fu_1368                |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                     |    0    |   1288  | 218.355 |  74987  |  174988 |    0    |
+|   Total  |                                                     |   120   |   628   | 272.155 |  101827 |  267192 |    0    |
 |----------|-----------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -5357,10 +5357,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    0   |  1288  |   218  |  74987 | 174988 |    0   |
+|  Function |   120  |   628  |   272  | 101827 | 267192 |    0   |
 |   Memory  |    0   |    -   |    -   |  1152  |  1170  |    0   |
 |Multiplexer|    -   |    -   |    7   |    0   |   466  |    -   |
 |  Register |    -   |    -   |    -   |   107  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |  1288  |   225  |  76246 | 176624 |    0   |
+|   Total   |   120  |   628  |   279  | 103086 | 268828 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

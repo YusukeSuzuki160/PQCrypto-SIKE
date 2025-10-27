@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rdc_mont_Pipeline_VITIS_LOOP_306_1'
 ================================================================
-* Date:           Mon Oct 20 14:38:29 2025
+* Date:           Sat Oct 25 18:42:55 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -179,7 +179,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 1.80>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [src/generic/fp_generic.cpp:302]   --->   Operation 4 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.38ns)   --->   "%store_ln302 = store i4 0, i4 %i" [src/generic/fp_generic.cpp:302]   --->   Operation 6 'store' 'store_ln302' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i_4 = load i4 %i" [src/generic/fp_generic.cpp:306]   --->   Operation 8 'load' 'i_4' <Predicate = true> <Delay = 0.00>
@@ -188,9 +188,9 @@ ST_1 : Operation 10 [1/1] (0.70ns)   --->   "%add_ln306 = add i4 %i_4, i4 1" [sr
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln306 = br i1 %icmp_ln306, void %for.inc.split, void %VITIS_LOOP_314_3.preheader.exitStub" [src/generic/fp_generic.cpp:306]   --->   Operation 11 'br' 'br_ln306' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln306 = zext i4 %i_4" [src/generic/fp_generic.cpp:306]   --->   Operation 12 'zext' 'zext_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln306" [src/generic/fp_generic.cpp:308]   --->   Operation 13 'getelementptr' 'mc_addr' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:302]   --->   Operation 14 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln302 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84" [src/generic/fp_generic.cpp:302]   --->   Operation 14 'specpipeline' 'specpipeline_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%speclooptripcount_ln302 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:302]   --->   Operation 15 'speclooptripcount' 'speclooptripcount_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [src/generic/fp_generic.cpp:306]   --->   Operation 16 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45" [src/generic/fp_generic.cpp:306]   --->   Operation 16 'specloopname' 'specloopname_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln308 = store i64 0, i3 %mc_addr" [src/generic/fp_generic.cpp:308]   --->   Operation 17 'store' 'store_ln308' <Predicate = (!icmp_ln306)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
 ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln302 = store i4 %add_ln306, i4 %i" [src/generic/fp_generic.cpp:302]   --->   Operation 18 'store' 'store_ln302' <Predicate = (!icmp_ln306)> <Delay = 0.38>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln306 = br void %for.inc" [src/generic/fp_generic.cpp:306]   --->   Operation 19 'br' 'br_ln306' <Predicate = (!icmp_ln306)> <Delay = 0.00>
@@ -360,7 +360,7 @@ ret_ln0                 (ret              ) [ 00]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </bind>
 </comp>
 
@@ -396,7 +396,7 @@ ret_ln0                 (ret              ) [ 00]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_45"/></StgValue>
 </bind>
 </comp>
 

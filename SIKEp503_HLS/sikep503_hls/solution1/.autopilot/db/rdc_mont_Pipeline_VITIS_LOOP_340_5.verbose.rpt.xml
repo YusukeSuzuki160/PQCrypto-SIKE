@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'rdc_mont_Pipeline_VITIS_LOOP_340_5'" level="0">
-<item name = "Date">Mon Oct 20 14:38:30 2025
+<item name = "Date">Sat Oct 25 18:42:56 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -73,7 +73,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="p503p1_1_U">rdc_mont_Pipeline_VITIS_LOOP_314_3_p503p1_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="p503p1_1_U">rdc_mont_1_Pipeline_VITIS_LOOP_314_3_p503p1_1_ROM_AUTO_1R, 0, 64, 65, 0, 8, 64, 1, 512</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -160,19 +160,19 @@
 <column name="grp_digit_x_digit_fu_824_p_done">in, 1, ap_ctrl_hs, rdc_mont_Pipeline_VITIS_LOOP_340_5, return value</column>
 <column name="grp_digit_x_digit_fu_824_p_idle">in, 1, ap_ctrl_hs, rdc_mont_Pipeline_VITIS_LOOP_340_5, return value</column>
 <column name="indvars_iv">in, 3, ap_none, indvars_iv, scalar</column>
-<column name="v_56">in, 64, ap_none, v_56, scalar</column>
+<column name="v_65">in, 64, ap_none, v_65, scalar</column>
 <column name="u">in, 64, ap_none, u, scalar</column>
 <column name="mc_address0">out, 3, ap_memory, mc, array</column>
 <column name="mc_ce0">out, 1, ap_memory, mc, array</column>
 <column name="mc_q0">in, 64, ap_memory, mc, array</column>
 <column name="sub65">in, 32, ap_none, sub65, scalar</column>
 <column name="empty">in, 3, ap_none, empty, scalar</column>
-<column name="v_113_out">out, 64, ap_vld, v_113_out, pointer</column>
-<column name="v_113_out_ap_vld">out, 1, ap_vld, v_113_out, pointer</column>
+<column name="v_160_out">out, 64, ap_vld, v_160_out, pointer</column>
+<column name="v_160_out_ap_vld">out, 1, ap_vld, v_160_out, pointer</column>
 <column name="u_47_out">out, 64, ap_vld, u_47_out, pointer</column>
 <column name="u_47_out_ap_vld">out, 1, ap_vld, u_47_out, pointer</column>
-<column name="t_30_out">out, 64, ap_vld, t_30_out, pointer</column>
-<column name="t_30_out_ap_vld">out, 1, ap_vld, t_30_out, pointer</column>
+<column name="t_35_out">out, 64, ap_vld, t_35_out, pointer</column>
+<column name="t_35_out_ap_vld">out, 1, ap_vld, t_35_out, pointer</column>
 </table>
 </item>
 </section>

@@ -19,10 +19,10 @@
 
 <Node id="2" bw="4" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %i_257 = alloca i32 1
+newFuncRoot:0 %i = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="i_257"/></StgValue>
+<StgValue><ssdm name="i"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -49,7 +49,7 @@ newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_
 
 <Node id="4" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-newFuncRoot:2 %store_ln19 = store i4 0, i4 %i_257
+newFuncRoot:2 %store_ln19 = store i4 0, i4 %i
 
 ]]></Node>
 <StgValue><ssdm name="store_ln19"/></StgValue>
@@ -79,10 +79,10 @@ newFuncRoot:3 %br_ln0 = br void %for.inc.i139
 
 <Node id="7" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc.i139:0 %i = load i4 %i_257
+for.inc.i139:0 %i_291 = load i4 %i
 
 ]]></Node>
-<StgValue><ssdm name="i"/></StgValue>
+<StgValue><ssdm name="i_291"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -94,7 +94,7 @@ for.inc.i139:0 %i = load i4 %i_257
 
 <Node id="8" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i139:1 %icmp_ln21 = icmp_eq  i4 %i, i4 8
+for.inc.i139:1 %icmp_ln21 = icmp_eq  i4 %i_291, i4 8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln21"/></StgValue>
@@ -109,7 +109,7 @@ for.inc.i139:1 %icmp_ln21 = icmp_eq  i4 %i, i4 8
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc.i139:2 %add_ln21 = add i4 %i, i4 1
+for.inc.i139:2 %add_ln21 = add i4 %i_291, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln21"/></StgValue>
@@ -140,7 +140,7 @@ for.inc.i139:3 %br_ln21 = br i1 %icmp_ln21, void %for.inc.i139.split, void %for.
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i139.split:0 %specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.inc.i139.split:0 %specpipeline_ln19 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln19"/></StgValue>
@@ -172,7 +172,7 @@ for.inc.i139.split:1 %speclooptripcount_ln19 = speclooptripcount void @_ssdm_op_
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.i139.split:2 %specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11
+for.inc.i139.split:2 %specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln21"/></StgValue>
@@ -188,7 +188,7 @@ for.inc.i139.split:2 %specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopNa
 
 <Node id="15" bw="3" op_0_bw="4">
 <![CDATA[
-for.inc.i139.split:3 %trunc_ln22 = trunc i4 %i
+for.inc.i139.split:3 %trunc_ln22 = trunc i4 %i_291
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln22"/></StgValue>
@@ -268,7 +268,7 @@ for.inc.i139.split:7 %store_ln22 = store i64 0, i4 %R_Z_addr
 
 <Node id="20" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc.i139.split:8 %store_ln19 = store i4 %add_ln21, i4 %i_257
+for.inc.i139.split:8 %store_ln19 = store i4 %add_ln21, i4 %i
 
 ]]></Node>
 <StgValue><ssdm name="store_ln19"/></StgValue>

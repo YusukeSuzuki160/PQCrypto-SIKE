@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fp2mul503_mont_57_Pipeline_VITIS_LOOP_187_1'
 ================================================================
-* Date:           Mon Oct 20 16:14:43 2025
+* Date:           Sat Oct 25 16:49:57 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -85,14 +85,14 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.48>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_170 = alloca i32 1" [src/fpx.cpp:180]   --->   Operation 5 'alloca' 'i_170' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_200 = alloca i32 1" [src/fpx.cpp:180]   --->   Operation 5 'alloca' 'i_200' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln179_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %sext_ln179"   --->   Operation 6 'read' 'sext_ln179_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.27ns)   --->   "%sext_ln179_cast = select i1 %sext_ln179_read, i64 18446744073709551615, i64 0"   --->   Operation 7 'select' 'sext_ln179_cast' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt3, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln180 = store i4 0, i4 %i_170" [src/fpx.cpp:180]   --->   Operation 9 'store' 'store_ln180' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln180 = store i4 0, i4 %i_200" [src/fpx.cpp:180]   --->   Operation 9 'store' 'store_ln180' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 10 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%borrow = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc.split" [src/fpx.cpp:187]   --->   Operation 11 'phi' 'borrow' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i = load i4 %i_170" [src/fpx.cpp:189]   --->   Operation 12 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i = load i4 %i_200" [src/fpx.cpp:189]   --->   Operation 12 'load' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.70ns)   --->   "%icmp_ln187 = icmp_eq  i4 %i, i4 8" [src/fpx.cpp:187]   --->   Operation 13 'icmp' 'icmp_ln187' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 14 [1/1] (0.70ns)   --->   "%add_ln187 = add i4 %i, i4 1" [src/fpx.cpp:187]   --->   Operation 14 'add' 'add_ln187' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln187 = br i1 %icmp_ln187, void %for.inc.split, void %for.end.exitStub" [src/fpx.cpp:187]   --->   Operation 15 'br' 'br_ln187' <Predicate = true> <Delay = 0.00>
@@ -104,13 +104,13 @@ ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tt3_addr = getelementptr i64 %tt3,
 ST_1 : Operation 21 [2/2] (0.71ns)   --->   "%tt3_load = load i4 %tt3_addr" [src/fpx.cpp:189]   --->   Operation 21 'load' 'tt3_load' <Predicate = (!icmp_ln187)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p503_1_addr = getelementptr i64 %p503_1, i64 0, i64 %zext_ln187" [src/fpx.cpp:189]   --->   Operation 22 'getelementptr' 'p503_1_addr' <Predicate = (!icmp_ln187)> <Delay = 0.00>
 ST_1 : Operation 23 [2/2] (0.71ns)   --->   "%p503_1_load = load i3 %p503_1_addr" [src/fpx.cpp:189]   --->   Operation 23 'load' 'p503_1_load' <Predicate = (!icmp_ln187)> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 64> <Depth = 8> <ROM>
-ST_1 : Operation 24 [1/1] (0.38ns)   --->   "%store_ln180 = store i4 %add_ln187, i4 %i_170" [src/fpx.cpp:180]   --->   Operation 24 'store' 'store_ln180' <Predicate = (!icmp_ln187)> <Delay = 0.38>
+ST_1 : Operation 24 [1/1] (0.38ns)   --->   "%store_ln180 = store i4 %add_ln187, i4 %i_200" [src/fpx.cpp:180]   --->   Operation 24 'store' 'store_ln180' <Predicate = (!icmp_ln187)> <Delay = 0.38>
 ST_1 : Operation 47 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (icmp_ln187)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/fpx.cpp:180]   --->   Operation 25 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln180 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57" [src/fpx.cpp:180]   --->   Operation 25 'specpipeline' 'specpipeline_ln180' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln180 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/fpx.cpp:180]   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln180' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_92" [src/fpx.cpp:187]   --->   Operation 27 'specloopname' 'specloopname_ln187' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln187 = specloopname void @_ssdm_op_SpecLoopName, void @empty_93" [src/fpx.cpp:187]   --->   Operation 27 'specloopname' 'specloopname_ln187' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/2] ( I:0.71ns O:0.71ns )   --->   "%tt3_load = load i4 %tt3_addr" [src/fpx.cpp:189]   --->   Operation 28 'load' 'tt3_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
 ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln189_3 = zext i1 %borrow" [src/fpx.cpp:189]   --->   Operation 29 'zext' 'zext_ln189_3' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 30 [1/1] (1.14ns)   --->   "%tempReg = add i64 %tt3_load, i64 %zext_ln189_3" [src/fpx.cpp:189]   --->   Operation 30 'add' 'tempReg' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -152,7 +152,7 @@ Port [ p503_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; ext
 
 <LifeTime>
 <method=bitvector/>
-i_170                   (alloca           ) [ 010]
+i_200                   (alloca           ) [ 010]
 sext_ln179_read         (read             ) [ 000]
 sext_ln179_cast         (select           ) [ 001]
 specmemcore_ln0         (specmemcore      ) [ 000]
@@ -376,7 +376,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </bind>
 </comp>
 
@@ -412,7 +412,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_92"/></StgValue>
+<StgValue><ssdm name="empty_93"/></StgValue>
 </bind>
 </comp>
 
@@ -461,14 +461,14 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="58" class="1004" name="i_170_fu_58">
+<comp id="58" class="1004" name="i_200_fu_58">
 <pin_list>
 <pin id="59" dir="0" index="0" bw="1" slack="0"/>
 <pin id="60" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="i_170/1 "/>
+<opset="i_200/1 "/>
 </bind>
 </comp>
 
@@ -859,13 +859,13 @@ ret_ln0                 (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="252" class="1005" name="i_170_reg_252">
+<comp id="252" class="1005" name="i_200_reg_252">
 <pin_list>
 <pin id="253" dir="0" index="0" bw="4" slack="0"/>
 <pin id="254" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_170 "/>
+<opset="i_200 "/>
 </bind>
 </comp>
 
@@ -1154,7 +1154,7 @@ N/A
 |                       |   FF   |
 +-----------------------+--------+
 |     borrow_reg_94     |    1   |
-|     i_170_reg_252     |    4   |
+|     i_200_reg_252     |    4   |
 |  p503_1_addr_reg_272  |    3   |
 |sext_ln179_cast_reg_259|   64   |
 |      tmp_reg_277      |    1   |

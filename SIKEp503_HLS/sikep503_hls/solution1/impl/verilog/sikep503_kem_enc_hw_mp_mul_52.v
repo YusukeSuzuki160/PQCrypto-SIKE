@@ -22,11 +22,7 @@ module sikep503_kem_enc_hw_mp_mul_52 (
         c_address0,
         c_ce0,
         c_we0,
-        c_d0,
-        grp_fu_169_p_din0,
-        grp_fu_169_p_din1,
-        grp_fu_169_p_dout0,
-        grp_fu_169_p_ce
+        c_d0
 );
 
 parameter    ap_ST_fsm_state1 = 2'd1;
@@ -48,10 +44,6 @@ output  [3:0] c_address0;
 output   c_ce0;
 output   c_we0;
 output  [63:0] c_d0;
-output  [255:0] grp_fu_169_p_din0;
-output  [255:0] grp_fu_169_p_din1;
-input  [511:0] grp_fu_169_p_dout0;
-output   grp_fu_169_p_ce;
 
 reg ap_done;
 reg ap_idle;
@@ -71,12 +63,8 @@ wire   [3:0] grp_mul_64_fu_16_c_address0;
 wire    grp_mul_64_fu_16_c_ce0;
 wire    grp_mul_64_fu_16_c_we0;
 wire   [63:0] grp_mul_64_fu_16_c_d0;
-wire   [255:0] grp_mul_64_fu_16_grp_fu_26_p_din0;
-wire   [255:0] grp_mul_64_fu_16_grp_fu_26_p_din1;
-wire    grp_mul_64_fu_16_grp_fu_26_p_ce;
 reg    grp_mul_64_fu_16_ap_start_reg;
 wire    ap_CS_fsm_state2;
-reg    grp_fu_26_ce;
 reg   [1:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 reg    ap_ST_fsm_state2_blk;
@@ -104,11 +92,7 @@ sikep503_kem_enc_hw_mul_64 grp_mul_64_fu_16(
     .c_address0(grp_mul_64_fu_16_c_address0),
     .c_ce0(grp_mul_64_fu_16_c_ce0),
     .c_we0(grp_mul_64_fu_16_c_we0),
-    .c_d0(grp_mul_64_fu_16_c_d0),
-    .grp_fu_26_p_din0(grp_mul_64_fu_16_grp_fu_26_p_din0),
-    .grp_fu_26_p_din1(grp_mul_64_fu_16_grp_fu_26_p_din1),
-    .grp_fu_26_p_dout0(grp_fu_169_p_dout0),
-    .grp_fu_26_p_ce(grp_mul_64_fu_16_grp_fu_26_p_ce)
+    .c_d0(grp_mul_64_fu_16_c_d0)
 );
 
 always @ (posedge ap_clk) begin
@@ -172,14 +156,6 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_fu_26_ce = grp_mul_64_fu_16_grp_fu_26_p_ce;
-    end else begin
-        grp_fu_26_ce = 1'b1;
-    end
-end
-
-always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
             if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
@@ -220,12 +196,6 @@ assign c_ce0 = grp_mul_64_fu_16_c_ce0;
 assign c_d0 = grp_mul_64_fu_16_c_d0;
 
 assign c_we0 = grp_mul_64_fu_16_c_we0;
-
-assign grp_fu_169_p_ce = grp_fu_26_ce;
-
-assign grp_fu_169_p_din0 = grp_mul_64_fu_16_grp_fu_26_p_din0;
-
-assign grp_fu_169_p_din1 = grp_mul_64_fu_16_grp_fu_26_p_din1;
 
 assign grp_mul_64_fu_16_ap_start = grp_mul_64_fu_16_ap_start_reg;
 

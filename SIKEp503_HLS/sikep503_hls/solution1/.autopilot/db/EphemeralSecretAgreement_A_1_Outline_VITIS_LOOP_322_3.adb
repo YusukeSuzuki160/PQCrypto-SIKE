@@ -236,7 +236,7 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>i_260</name>
+              <name>i_302</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>278</lineNumber>
@@ -375,7 +375,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -438,7 +438,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -501,7 +501,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -564,7 +564,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>87</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_fp2sqr503_mont_5_t1_RAM_1P_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_fpmul503_mont_temp_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -587,7 +587,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>i_260_write_ln278</name>
+              <name>i_302_write_ln278</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>278</lineNumber>
@@ -1043,7 +1043,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>coeff_addr_19</name>
+              <name>coeff_addr_13</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1087,7 +1087,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>coeff_addr_20</name>
+              <name>coeff_addr_14</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1131,7 +1131,7 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>coeff_addr_21</name>
+              <name>coeff_addr_15</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1175,7 +1175,7 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>coeff_addr_22</name>
+              <name>coeff_addr_16</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1604,7 +1604,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_249_fu_182</rtlName>
+              <rtlName>grp_fpadd503_352_fu_182</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1680,7 +1680,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_249_fu_182</rtlName>
+              <rtlName>grp_fpadd503_352_fu_182</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1904,7 +1904,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_454_fu_225</rtlName>
+              <rtlName>grp_fp2mul503_mont_464_fu_225</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1980,7 +1980,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_454_fu_225</rtlName>
+              <rtlName>grp_fp2mul503_mont_464_fu_225</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2055,7 +2055,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_126_3_fu_248</rtlName>
+              <rtlName>grp_fp2mul503_mont_226_3_fu_248</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2126,7 +2126,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_45_fu_260</rtlName>
+              <rtlName>grp_fp2mul503_mont_46_fu_260</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2203,7 +2203,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_249_fu_182</rtlName>
+              <rtlName>grp_fpadd503_352_fu_182</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2280,7 +2280,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_249_fu_197</rtlName>
+              <rtlName>grp_fpadd503_352_fu_197</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2357,7 +2357,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpsub503_4_271_fu_272</rtlName>
+              <rtlName>grp_fpsub503_4_274_fu_272</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2433,7 +2433,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpsub503_4_271_fu_284</rtlName>
+              <rtlName>grp_fpsub503_4_274_fu_284</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2502,7 +2502,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2sqr503_mont_6_2_fu_296</rtlName>
+              <rtlName>grp_fp2sqr503_mont_7_2_fu_296</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2571,7 +2571,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2sqr503_mont_6_1_fu_306</rtlName>
+              <rtlName>grp_fp2sqr503_mont_7_1_fu_306</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2648,7 +2648,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_248_fu_319</rtlName>
+              <rtlName>grp_fpadd503_351_fu_319</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2727,7 +2727,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpadd503_248_fu_330</rtlName>
+              <rtlName>grp_fpadd503_351_fu_330</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2805,7 +2805,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpsub503_4_270_fu_341</rtlName>
+              <rtlName>grp_fpsub503_4_273_fu_341</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2882,7 +2882,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fpsub503_4_270_fu_351</rtlName>
+              <rtlName>grp_fpsub503_4_273_fu_351</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2951,7 +2951,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_126_1_fu_361</rtlName>
+              <rtlName>grp_fp2mul503_mont_226_1_fu_361</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2983,7 +2983,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>1.42</m_delay>
           <m_topoIndex>45</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3024,7 +3024,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_fp2mul503_mont_126_1_fu_361</rtlName>
+              <rtlName>grp_fp2mul503_mont_226_1_fu_361</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3057,7 +3057,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>1.42</m_delay>
           <m_topoIndex>46</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3066,7 +3066,7 @@
             <Obj>
               <type>0</type>
               <id>134</id>
-              <name>i_260_write_ln278</name>
+              <name>i_302_write_ln278</name>
               <fileName>src/sidh.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>278</lineNumber>
@@ -3536,7 +3536,7 @@
             <Obj>
               <type>2</type>
               <id>201</id>
-              <name>fpadd503_249</name>
+              <name>fpadd503_352</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3560,7 +3560,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fpadd503.249&gt;</content>
+          <content>&lt;constant:fpadd503.352&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_65">
           <Value>
@@ -3598,7 +3598,7 @@
             <Obj>
               <type>2</type>
               <id>227</id>
-              <name>fp2mul503_mont_454</name>
+              <name>fp2mul503_mont_464</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3622,7 +3622,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2mul503_mont.454&gt;</content>
+          <content>&lt;constant:fp2mul503_mont.464&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_67">
           <Value>
@@ -3691,7 +3691,7 @@
             <Obj>
               <type>2</type>
               <id>248</id>
-              <name>fp2mul503_mont_126_3</name>
+              <name>fp2mul503_mont_226_3</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3715,14 +3715,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2mul503_mont.126.3&gt;</content>
+          <content>&lt;constant:fp2mul503_mont.226.3&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_70">
           <Value>
             <Obj>
               <type>2</type>
               <id>254</id>
-              <name>fp2mul503_mont_45</name>
+              <name>fp2mul503_mont_46</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3746,14 +3746,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2mul503_mont.45&gt;</content>
+          <content>&lt;constant:fp2mul503_mont.46&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_71">
           <Value>
             <Obj>
               <type>2</type>
               <id>271</id>
-              <name>fpsub503_4_271</name>
+              <name>fpsub503_4_274</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3777,14 +3777,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fpsub503.4.271&gt;</content>
+          <content>&lt;constant:fpsub503.4.274&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_72">
           <Value>
             <Obj>
               <type>2</type>
               <id>282</id>
-              <name>fp2sqr503_mont_6_2</name>
+              <name>fp2sqr503_mont_7_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3808,14 +3808,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2sqr503_mont.6.2&gt;</content>
+          <content>&lt;constant:fp2sqr503_mont.7.2&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_73">
           <Value>
             <Obj>
               <type>2</type>
               <id>286</id>
-              <name>fp2sqr503_mont_6_1</name>
+              <name>fp2sqr503_mont_7_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3839,14 +3839,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2sqr503_mont.6.1&gt;</content>
+          <content>&lt;constant:fp2sqr503_mont.7.1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_74">
           <Value>
             <Obj>
               <type>2</type>
               <id>291</id>
-              <name>fpadd503_248</name>
+              <name>fpadd503_351</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3870,14 +3870,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fpadd503.248&gt;</content>
+          <content>&lt;constant:fpadd503.351&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_75">
           <Value>
             <Obj>
               <type>2</type>
               <id>302</id>
-              <name>fpsub503_4_270</name>
+              <name>fpsub503_4_273</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3901,14 +3901,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fpsub503.4.270&gt;</content>
+          <content>&lt;constant:fpsub503.4.273&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_76">
           <Value>
             <Obj>
               <type>2</type>
               <id>311</id>
-              <name>fp2mul503_mont_126_1</name>
+              <name>fp2mul503_mont_226_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -3932,7 +3932,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:fp2mul503_mont.126.1&gt;</content>
+          <content>&lt;constant:fp2mul503_mont.226.1&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -5779,8 +5779,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>3803</mMinLatency>
-        <mMaxLatency>43660</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -5826,8 +5826,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>1</mMinTripCount>
         <mMaxTripCount>7</mMaxTripCount>
-        <mMinLatency>3802</mMinLatency>
-        <mMaxLatency>43659</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -7108,25 +7108,25 @@
         <count>15</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>grp_fp2mul503_mont_126_1_fu_361 (fp2mul503_mont_126_1)</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361 (fp2mul503_mont_226_1)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>5</count>
             <item_version>0</item_version>
             <item class_id="40" tracking_level="0" version="0">
               <first>BRAM</first>
-              <second>0</second>
+              <second>12</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>691</second>
+              <second>80</second>
             </item>
             <item>
               <first>FF</first>
-              <second>11466</second>
+              <second>10361</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>32233</second>
+              <second>56437</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7135,25 +7135,25 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_3_fu_248 (fp2mul503_mont_126_3)</first>
+          <first>grp_fp2mul503_mont_226_3_fu_248 (fp2mul503_mont_226_3)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>8</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>466</second>
+              <second>64</second>
             </item>
             <item>
               <first>FF</first>
-              <second>8335</second>
+              <second>8188</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>24442</second>
+              <second>42365</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7162,25 +7162,25 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225 (fp2mul503_mont_454)</first>
+          <first>grp_fp2mul503_mont_464_fu_225 (fp2mul503_mont_464)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>8</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>466</second>
+              <second>64</second>
             </item>
             <item>
               <first>FF</first>
-              <second>8438</second>
+              <second>8298</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>24608</second>
+              <second>42472</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7189,25 +7189,25 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_fu_260 (fp2mul503_mont_45)</first>
+          <first>grp_fp2mul503_mont_46_fu_260 (fp2mul503_mont_46)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>12</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>691</second>
+              <second>80</second>
             </item>
             <item>
               <first>FF</first>
-              <second>11502</second>
+              <second>10387</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>32133</second>
+              <second>56342</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7216,25 +7216,25 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_1_fu_306 (fp2sqr503_mont_6_1)</first>
+          <first>grp_fp2sqr503_mont_7_1_fu_306 (fp2sqr503_mont_7_1)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>8</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>257</second>
+              <second>64</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9626</second>
+              <second>8198</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>27611</second>
+              <second>40888</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7243,25 +7243,25 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_2_fu_296 (fp2sqr503_mont_6_2)</first>
+          <first>grp_fp2sqr503_mont_7_2_fu_296 (fp2sqr503_mont_7_2)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>8</second>
             </item>
             <item>
               <first>DSP</first>
-              <second>482</second>
+              <second>64</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9950</second>
+              <second>8160</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>27584</second>
+              <second>40758</second>
             </item>
             <item>
               <first>URAM</first>
@@ -7270,7 +7270,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_319 (fpadd503_248)</first>
+          <first>grp_fpadd503_351_fu_319 (fpadd503_351)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7289,7 +7289,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_330 (fpadd503_248)</first>
+          <first>grp_fpadd503_351_fu_330 (fpadd503_351)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7308,7 +7308,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_182 (fpadd503_249)</first>
+          <first>grp_fpadd503_352_fu_182 (fpadd503_352)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7327,7 +7327,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_197 (fpadd503_249)</first>
+          <first>grp_fpadd503_352_fu_197 (fpadd503_352)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7346,7 +7346,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_341 (fpsub503_4_270)</first>
+          <first>grp_fpsub503_4_273_fu_341 (fpsub503_4_273)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7365,7 +7365,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_351 (fpsub503_4_270)</first>
+          <first>grp_fpsub503_4_273_fu_351 (fpsub503_4_273)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7384,7 +7384,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_272 (fpsub503_4_271)</first>
+          <first>grp_fpsub503_4_274_fu_272 (fpsub503_4_274)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7403,7 +7403,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_284 (fpsub503_4_271)</first>
+          <first>grp_fpsub503_4_274_fu_284 (fpsub503_4_274)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7771,7 +7771,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>52</count>
+        <count>51</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -7855,7 +7855,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_1_fu_361_b_0_q0</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361_b_0_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -7882,7 +7882,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_1_fu_361_b_1_q0</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361_b_1_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -7909,7 +7909,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_1_fu_361_c_0_q0</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361_c_0_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -7936,7 +7936,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_1_fu_361_c_1_q0</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361_c_1_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -7963,7 +7963,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225_a_0_q0</first>
+          <first>grp_fp2mul503_mont_464_fu_225_a_0_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -7990,7 +7990,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225_a_1_q0</first>
+          <first>grp_fp2mul503_mont_464_fu_225_a_1_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8017,7 +8017,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225_b_offset</first>
+          <first>grp_fp2mul503_mont_464_fu_225_b_offset</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8044,7 +8044,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225_c_0_q0</first>
+          <first>grp_fp2mul503_mont_464_fu_225_c_0_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8071,7 +8071,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225_c_1_q0</first>
+          <first>grp_fp2mul503_mont_464_fu_225_c_1_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8098,7 +8098,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_182_a_q0</first>
+          <first>grp_fpadd503_352_fu_182_a_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8125,7 +8125,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_182_b_q0</first>
+          <first>grp_fpadd503_352_fu_182_b_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8152,7 +8152,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_182_c_q0</first>
+          <first>grp_fpadd503_352_fu_182_c_q0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -8260,34 +8260,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_463_ce</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>i_260_fu_88</first>
+          <first>i_302_fu_88</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -9201,7 +9174,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_1_fu_361_ap_start_reg</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9220,7 +9193,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_3_fu_248_ap_start_reg</first>
+          <first>grp_fp2mul503_mont_226_3_fu_248_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9239,7 +9212,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225_ap_start_reg</first>
+          <first>grp_fp2mul503_mont_464_fu_225_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9258,7 +9231,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_fu_260_ap_start_reg</first>
+          <first>grp_fp2mul503_mont_46_fu_260_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9277,7 +9250,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_1_fu_306_ap_start_reg</first>
+          <first>grp_fp2sqr503_mont_7_1_fu_306_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9296,7 +9269,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_2_fu_296_ap_start_reg</first>
+          <first>grp_fp2sqr503_mont_7_2_fu_296_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9315,7 +9288,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_319_ap_start_reg</first>
+          <first>grp_fpadd503_351_fu_319_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9334,7 +9307,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_330_ap_start_reg</first>
+          <first>grp_fpadd503_351_fu_330_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9353,7 +9326,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_182_ap_start_reg</first>
+          <first>grp_fpadd503_352_fu_182_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9372,7 +9345,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_197_ap_start_reg</first>
+          <first>grp_fpadd503_352_fu_197_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9391,7 +9364,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_341_ap_start_reg</first>
+          <first>grp_fpsub503_4_273_fu_341_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9410,7 +9383,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_351_ap_start_reg</first>
+          <first>grp_fpsub503_4_273_fu_351_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9429,7 +9402,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_272_ap_start_reg</first>
+          <first>grp_fpsub503_4_274_fu_272_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9448,7 +9421,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_284_ap_start_reg</first>
+          <first>grp_fpsub503_4_274_fu_284_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9486,7 +9459,7 @@
           </second>
         </item>
         <item>
-          <first>i_260_fu_88</first>
+          <first>i_302_fu_88</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9528,98 +9501,98 @@
         <count>15</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_fp2mul503_mont_126_1_fu_361</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_3_fu_248</first>
+          <first>grp_fp2mul503_mont_226_3_fu_248</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225</first>
+          <first>grp_fp2mul503_mont_464_fu_225</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_fu_260</first>
+          <first>grp_fp2mul503_mont_46_fu_260</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_1_fu_306</first>
+          <first>grp_fp2sqr503_mont_7_1_fu_306</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_2_fu_296</first>
+          <first>grp_fp2sqr503_mont_7_2_fu_296</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_319</first>
+          <first>grp_fpadd503_351_fu_319</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_330</first>
+          <first>grp_fpadd503_351_fu_330</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_182</first>
+          <first>grp_fpadd503_352_fu_182</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_197</first>
+          <first>grp_fpadd503_352_fu_197</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_341</first>
+          <first>grp_fpsub503_4_273_fu_341</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_351</first>
+          <first>grp_fpsub503_4_273_fu_351</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_272</first>
+          <first>grp_fpsub503_4_274_fu_272</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_284</first>
+          <first>grp_fpsub503_4_274_fu_284</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -9637,7 +9610,7 @@
         <count>15</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>grp_fp2mul503_mont_126_1_fu_361 (fp2mul503_mont_126_1)</first>
+          <first>grp_fp2mul503_mont_226_1_fu_361 (fp2mul503_mont_226_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -9646,7 +9619,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_126_3_fu_248 (fp2mul503_mont_126_3)</first>
+          <first>grp_fp2mul503_mont_226_3_fu_248 (fp2mul503_mont_226_3)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9654,7 +9627,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_454_fu_225 (fp2mul503_mont_454)</first>
+          <first>grp_fp2mul503_mont_464_fu_225 (fp2mul503_mont_464)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -9663,7 +9636,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2mul503_mont_45_fu_260 (fp2mul503_mont_45)</first>
+          <first>grp_fp2mul503_mont_46_fu_260 (fp2mul503_mont_46)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9671,7 +9644,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_1_fu_306 (fp2sqr503_mont_6_1)</first>
+          <first>grp_fp2sqr503_mont_7_1_fu_306 (fp2sqr503_mont_7_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9679,7 +9652,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fp2sqr503_mont_6_2_fu_296 (fp2sqr503_mont_6_2)</first>
+          <first>grp_fp2sqr503_mont_7_2_fu_296 (fp2sqr503_mont_7_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9687,7 +9660,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_319 (fpadd503_248)</first>
+          <first>grp_fpadd503_351_fu_319 (fpadd503_351)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9695,7 +9668,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_248_fu_330 (fpadd503_248)</first>
+          <first>grp_fpadd503_351_fu_330 (fpadd503_351)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9703,7 +9676,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_182 (fpadd503_249)</first>
+          <first>grp_fpadd503_352_fu_182 (fpadd503_352)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9713,7 +9686,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpadd503_249_fu_197 (fpadd503_249)</first>
+          <first>grp_fpadd503_352_fu_197 (fpadd503_352)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9721,7 +9694,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_341 (fpsub503_4_270)</first>
+          <first>grp_fpsub503_4_273_fu_341 (fpsub503_4_273)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9729,7 +9702,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_270_fu_351 (fpsub503_4_270)</first>
+          <first>grp_fpsub503_4_273_fu_351 (fpsub503_4_273)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9737,7 +9710,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_272 (fpsub503_4_271)</first>
+          <first>grp_fpsub503_4_274_fu_272 (fpsub503_4_274)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9745,7 +9718,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fpsub503_4_271_fu_284 (fpsub503_4_271)</first>
+          <first>grp_fpsub503_4_274_fu_284 (fpsub503_4_274)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10537,7 +10510,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_19_gep_fu_122</first>
+        <first>coeff_addr_13_gep_fu_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10545,7 +10518,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_20_gep_fu_130</first>
+        <first>coeff_addr_14_gep_fu_130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10553,7 +10526,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_21_gep_fu_138</first>
+        <first>coeff_addr_15_gep_fu_138</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10561,7 +10534,7 @@
         </second>
       </item>
       <item>
-        <first>coeff_addr_22_gep_fu_146</first>
+        <first>coeff_addr_16_gep_fu_146</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10577,7 +10550,7 @@
         </second>
       </item>
       <item>
-        <first>i_260_fu_88</first>
+        <first>i_302_fu_88</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10685,7 +10658,7 @@
       <count>15</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_fp2mul503_mont_126_1_fu_361</first>
+        <first>grp_fp2mul503_mont_226_1_fu_361</first>
         <second>
           <count>4</count>
           <item_version>0</item_version>
@@ -10696,7 +10669,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2mul503_mont_126_3_fu_248</first>
+        <first>grp_fp2mul503_mont_226_3_fu_248</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10705,7 +10678,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2mul503_mont_454_fu_225</first>
+        <first>grp_fp2mul503_mont_464_fu_225</first>
         <second>
           <count>4</count>
           <item_version>0</item_version>
@@ -10716,7 +10689,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2mul503_mont_45_fu_260</first>
+        <first>grp_fp2mul503_mont_46_fu_260</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10725,7 +10698,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2sqr503_mont_6_1_fu_306</first>
+        <first>grp_fp2sqr503_mont_7_1_fu_306</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10734,7 +10707,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fp2sqr503_mont_6_2_fu_296</first>
+        <first>grp_fp2sqr503_mont_7_2_fu_296</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10743,7 +10716,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpadd503_248_fu_319</first>
+        <first>grp_fpadd503_351_fu_319</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10752,7 +10725,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpadd503_248_fu_330</first>
+        <first>grp_fpadd503_351_fu_330</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10761,7 +10734,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpadd503_249_fu_182</first>
+        <first>grp_fpadd503_352_fu_182</first>
         <second>
           <count>6</count>
           <item_version>0</item_version>
@@ -10774,7 +10747,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpadd503_249_fu_197</first>
+        <first>grp_fpadd503_352_fu_197</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10783,7 +10756,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpsub503_4_270_fu_341</first>
+        <first>grp_fpsub503_4_273_fu_341</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10792,7 +10765,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpsub503_4_270_fu_351</first>
+        <first>grp_fpsub503_4_273_fu_351</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10801,7 +10774,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpsub503_4_271_fu_272</first>
+        <first>grp_fpsub503_4_274_fu_272</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10810,7 +10783,7 @@
         </second>
       </item>
       <item>
-        <first>grp_fpsub503_4_271_fu_284</first>
+        <first>grp_fpsub503_4_274_fu_284</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -10964,7 +10937,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_260_reg_425</first>
+        <first>i_302_reg_425</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

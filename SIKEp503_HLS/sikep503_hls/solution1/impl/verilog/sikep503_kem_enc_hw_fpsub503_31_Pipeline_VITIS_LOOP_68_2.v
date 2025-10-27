@@ -70,7 +70,7 @@ reg   [63:0] reuse_addr_reg_fu_58;
 reg   [63:0] reuse_reg_fu_62;
 wire   [63:0] add_ln70_fu_222_p2;
 wire    ap_block_pp0_stage0;
-reg   [3:0] i_17_fu_66;
+reg   [3:0] i_37_fu_66;
 wire   [3:0] add_ln68_fu_146_p2;
 reg    coeff_ce0_local;
 reg   [5:0] coeff_address0_local;
@@ -111,7 +111,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
 #0 reuse_addr_reg_fu_58 = 64'd0;
 #0 reuse_reg_fu_62 = 64'd0;
-#0 i_17_fu_66 = 4'd0;
+#0 i_37_fu_66 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -196,9 +196,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        i_17_fu_66 <= 4'd0;
+        i_37_fu_66 <= 4'd0;
     end else if (((icmp_ln68_fu_140_p2 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        i_17_fu_66 <= add_ln68_fu_146_p2;
+        i_37_fu_66 <= add_ln68_fu_146_p2;
     end
 end
 
@@ -408,7 +408,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln68_fu_146_p2 = (i_17_fu_66 + 4'd1);
+assign add_ln68_fu_146_p2 = (i_37_fu_66 + 4'd1);
 
 assign add_ln70_fu_222_p2 = (and_ln70_fu_217_p2 + tempReg_fu_211_p2);
 
@@ -452,7 +452,7 @@ assign coeff_d0 = add_ln70_fu_222_p2;
 
 assign coeff_we0 = coeff_we0_local;
 
-assign icmp_ln68_fu_140_p2 = ((i_17_fu_66 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln68_fu_140_p2 = ((i_37_fu_66 == 4'd8) ? 1'b1 : 1'b0);
 
 assign or_ln70_2_fu_290_p2 = (xor_ln70_6_fu_284_p2 | and_ln70_2_fu_278_p2);
 
@@ -468,7 +468,7 @@ assign tempReg_fu_211_p2 = (reuse_select_fu_200_p3 + zext_ln70_3_fu_207_p1);
 
 assign trunc_ln70_2_fu_266_p1 = tempReg_fu_211_p2[62:0];
 
-assign trunc_ln70_fu_157_p1 = i_17_fu_66[2:0];
+assign trunc_ln70_fu_157_p1 = i_37_fu_66[2:0];
 
 assign xor_ln70_23_fu_260_p2 = (bit_sel_fu_252_p3 ^ 1'd1);
 
@@ -480,7 +480,7 @@ assign xor_ln70_6_fu_284_p2 = (or_ln70_fu_246_p2 ^ add_ln70_fu_222_p2);
 
 assign xor_ln70_fu_234_p2 = (tempReg_fu_211_p2 ^ add_ln70_fu_222_p2);
 
-assign zext_ln68_fu_152_p1 = i_17_fu_66;
+assign zext_ln68_fu_152_p1 = i_37_fu_66;
 
 assign zext_ln70_2_fu_165_p3 = {{1'd1}, {zext_ln70_fu_161_p1}};
 

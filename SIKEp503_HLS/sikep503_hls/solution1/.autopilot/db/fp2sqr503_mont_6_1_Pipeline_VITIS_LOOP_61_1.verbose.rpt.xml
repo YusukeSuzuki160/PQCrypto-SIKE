@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2sqr503_mont_6_1_Pipeline_VITIS_LOOP_61_1'" level="0">
-<item name = "Date">Mon Oct 20 14:41:33 2025
+<item name = "Date">Sat Oct 25 16:58:32 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -104,7 +104,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="borrow_reg_114">9, 2, 1, 2</column>
-<column name="i_140_fu_58">9, 2, 4, 8</column>
+<column name="i_170_fu_58">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -113,7 +113,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="borrow_reg_114">1, 0, 1, 0</column>
-<column name="i_140_fu_58">4, 0, 4, 0</column>
+<column name="i_170_fu_58">4, 0, 4, 0</column>
 <column name="i_reg_265">4, 0, 4, 0</column>
 <column name="icmp_ln61_reg_270">1, 0, 1, 0</column>
 </table>

@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1135 \
+    id 1125 \
     name coeff \
     reset_level 1 \
     sync_rst true \
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1131 \
+    id 1121 \
     name indvars_iv \
     type other \
     dir I \
@@ -44,37 +44,37 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1132 \
-    name v_3 \
+    id 1122 \
+    name v_15 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_v_3 \
+    corename dc_v_15 \
     op interface \
-    ports { v_3 { I 64 vector } } \
+    ports { v_15 { I 64 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1133 \
-    name u_1 \
+    id 1123 \
+    name u_13 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_u_1 \
+    corename dc_u_13 \
     op interface \
-    ports { u_1 { I 64 vector } } \
+    ports { u_13 { I 64 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1134 \
+    id 1124 \
     name sub65 \
     type other \
     dir I \
@@ -89,7 +89,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1136 \
+    id 1126 \
     name empty \
     type other \
     dir I \
@@ -104,45 +104,45 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1137 \
-    name v_21_out \
+    id 1127 \
+    name v_42_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_v_21_out \
+    corename dc_v_42_out \
     op interface \
-    ports { v_21_out { O 64 vector } v_21_out_ap_vld { O 1 bit } } \
+    ports { v_42_out { O 64 vector } v_42_out_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1138 \
-    name u_11_out \
+    id 1128 \
+    name u_21_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_u_11_out \
+    corename dc_u_21_out \
     op interface \
-    ports { u_11_out { O 64 vector } u_11_out_ap_vld { O 1 bit } } \
+    ports { u_21_out { O 64 vector } u_21_out_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1139 \
-    name t_4_out \
+    id 1129 \
+    name t_10_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_t_4_out \
+    corename dc_t_10_out \
     op interface \
-    ports { t_4_out { O 64 vector } t_4_out_ap_vld { O 1 bit } } \
+    ports { t_10_out { O 64 vector } t_10_out_ap_vld { O 1 bit } } \
 } "
 }
 

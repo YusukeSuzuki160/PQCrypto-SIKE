@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_247'
 ================================================================
-* Date:           Mon Oct 20 16:14:40 2025
+* Date:           Sat Oct 25 16:49:53 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -92,9 +92,9 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%b_offset_read = read i32 @_ssdm_op_
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%a_offset2_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset2"   --->   Operation 9 'read' 'a_offset2_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%a_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_offset"   --->   Operation 10 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%empty = trunc i32 %a_offset_read"   --->   Operation 11 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty_176 = trunc i32 %b_offset_read"   --->   Operation 12 'trunc' 'empty_176' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%carry_168_loc = alloca i64 1"   --->   Operation 13 'alloca' 'carry_168_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_176, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.cpp:35]   --->   Operation 14 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty_183 = trunc i32 %b_offset_read"   --->   Operation 12 'trunc' 'empty_183' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%carry_166_loc = alloca i64 1"   --->   Operation 13 'alloca' 'carry_166_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty_183, i1 %b_offset4_read, i3 0" [src/generic/fp_generic.cpp:35]   --->   Operation 14 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i1.i3, i3 %empty, i1 %a_offset2_read, i3 0" [src/generic/fp_generic.cpp:35]   --->   Operation 15 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [2/2] (1.90ns)   --->   "%call_ln35 = call void @fpadd503.247_Pipeline_VITIS_LOOP_33_1, i7 %tmp_s, i64 %a, i7 %tmp, i64 %b, i64 %c" [src/generic/fp_generic.cpp:35]   --->   Operation 16 'call' 'call_ln35' <Predicate = true> <Delay = 1.90> <CoreType = "Generic">   --->   Generic Core
 
@@ -102,20 +102,20 @@ State 2 <SV = 1> <Delay = 1.48>
 ST_2 : Operation 17 [1/2] (1.48ns)   --->   "%call_ln35 = call void @fpadd503.247_Pipeline_VITIS_LOOP_33_1, i7 %tmp_s, i64 %a, i7 %tmp, i64 %b, i64 %c" [src/generic/fp_generic.cpp:35]   --->   Operation 17 'call' 'call_ln35' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_39_2, i64 %c, i1 %carry_168_loc, i64 %p503x2_1"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_39_2, i64 %c, i1 %carry_166_loc, i64 %p503x2_1"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 1.48>
-ST_4 : Operation 19 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_39_2, i64 %c, i1 %carry_168_loc, i64 %p503x2_1"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 19 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_39_2, i64 %c, i1 %carry_166_loc, i64 %p503x2_1"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.27>
-ST_5 : Operation 20 [1/1] (0.00ns)   --->   "%carry_168_loc_load = load i1 %carry_168_loc"   --->   Operation 20 'load' 'carry_168_loc_load' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 21 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_46_3, i64 %c, i1 %carry_168_loc_load, i64 %p503x2_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 20 [1/1] (0.00ns)   --->   "%carry_166_loc_load = load i1 %carry_166_loc"   --->   Operation 20 'load' 'carry_166_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 21 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_46_3, i64 %c, i1 %carry_166_loc_load, i64 %p503x2_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 1.48>
 ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %b, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 24 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 25 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_46_3, i64 %c, i1 %carry_168_loc_load, i64 %p503x2_1"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 25 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fpadd503.247_Pipeline_VITIS_LOOP_46_3, i64 %c, i1 %carry_166_loc_load, i64 %p503x2_1"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
 ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%ret_ln50 = ret" [src/generic/fp_generic.cpp:50]   --->   Operation 26 'ret' 'ret_ln50' <Predicate = true> <Delay = 0.00>
 
 
@@ -149,13 +149,13 @@ b_offset_read      (read          ) [ 0000000]
 a_offset2_read     (read          ) [ 0000000]
 a_offset_read      (read          ) [ 0000000]
 empty              (trunc         ) [ 0000000]
-empty_176          (trunc         ) [ 0000000]
-carry_168_loc      (alloca        ) [ 0011110]
+empty_183          (trunc         ) [ 0000000]
+carry_166_loc      (alloca        ) [ 0011110]
 tmp                (bitconcatenate) [ 0010000]
 tmp_s              (bitconcatenate) [ 0010000]
 call_ln35          (call          ) [ 0000000]
 call_ln0           (call          ) [ 0000000]
-carry_168_loc_load (load          ) [ 0000001]
+carry_166_loc_load (load          ) [ 0000001]
 specmemcore_ln0    (specmemcore   ) [ 0000000]
 specmemcore_ln0    (specmemcore   ) [ 0000000]
 specmemcore_ln0    (specmemcore   ) [ 0000000]
@@ -350,14 +350,14 @@ ret_ln50           (ret           ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="40" class="1004" name="carry_168_loc_fu_40">
+<comp id="40" class="1004" name="carry_166_loc_fu_40">
 <pin_list>
 <pin id="41" dir="0" index="0" bw="1" slack="0"/>
 <pin id="42" dir="1" index="1" bw="1" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="carry_168_loc/1 "/>
+<opset="carry_166_loc/1 "/>
 </bind>
 </comp>
 
@@ -464,14 +464,14 @@ ret_ln50           (ret           ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="102" class="1004" name="empty_176_fu_102">
+<comp id="102" class="1004" name="empty_183_fu_102">
 <pin_list>
 <pin id="103" dir="0" index="0" bw="32" slack="0"/>
 <pin id="104" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_176/1 "/>
+<opset="empty_183/1 "/>
 </bind>
 </comp>
 
@@ -503,24 +503,24 @@ ret_ln50           (ret           ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="128" class="1004" name="carry_168_loc_load_load_fu_128">
+<comp id="128" class="1004" name="carry_166_loc_load_load_fu_128">
 <pin_list>
 <pin id="129" dir="0" index="0" bw="1" slack="4"/>
 <pin id="130" dir="1" index="1" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="carry_168_loc_load/5 "/>
+<opset="carry_166_loc_load/5 "/>
 </bind>
 </comp>
 
-<comp id="132" class="1005" name="carry_168_loc_reg_132">
+<comp id="132" class="1005" name="carry_166_loc_reg_132">
 <pin_list>
 <pin id="133" dir="0" index="0" bw="1" slack="2"/>
 <pin id="134" dir="1" index="1" bw="1" slack="2"/>
 </pin_list>
 <bind>
-<opset="carry_168_loc "/>
+<opset="carry_166_loc "/>
 </bind>
 </comp>
 
@@ -673,7 +673,7 @@ ret_ln50           (ret           ) [ 0000000]
 |          |             a_offset_read_read_fu_62            |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
 |   trunc  |                   empty_fu_98                   |    0    |    0    |    0    |
-|          |                 empty_176_fu_102                |    0    |    0    |    0    |
+|          |                 empty_183_fu_102                |    0    |    0    |    0    |
 |----------|-------------------------------------------------|---------|---------|---------|
 |bitconcatenate|                    tmp_fu_106                   |    0    |    0    |    0    |
 |          |                   tmp_s_fu_117                  |    0    |    0    |    0    |
@@ -688,7 +688,7 @@ N/A
 +---------------------+--------+
 |                     |   FF   |
 +---------------------+--------+
-|carry_168_loc_reg_132|    1   |
+|carry_166_loc_reg_132|    1   |
 |     tmp_reg_138     |    7   |
 |    tmp_s_reg_143    |    7   |
 +---------------------+--------+

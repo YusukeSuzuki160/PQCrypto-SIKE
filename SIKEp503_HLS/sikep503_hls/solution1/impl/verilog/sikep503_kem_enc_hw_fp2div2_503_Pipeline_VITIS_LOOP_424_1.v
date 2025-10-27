@@ -67,7 +67,7 @@ reg   [62:0] select_ln427_reg_236;
 wire    ap_CS_fsm_state2;
 wire   [63:0] zext_ln422_fu_128_p1;
 wire   [63:0] zext_ln427_fu_170_p1;
-reg   [2:0] i_266_fu_48;
+reg   [2:0] i_242_fu_48;
 wire    ap_loop_init;
 reg   [2:0] ap_sig_allocacmp_i;
 reg    c_0_0_ce0_local;
@@ -77,7 +77,7 @@ wire   [63:0] or_ln_fu_191_p3;
 reg    c_0_1_ce0_local;
 reg   [1:0] c_0_1_address0_local;
 reg    c_0_1_we0_local;
-wire   [1:0] lshr_ln_fu_118_p4;
+wire   [1:0] lshr_ln9_fu_118_p4;
 wire   [62:0] tmp_fu_134_p4;
 wire   [62:0] tmp_s_fu_144_p4;
 wire   [1:0] lshr_ln427_1_fu_161_p4;
@@ -99,7 +99,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 3'd1;
-#0 i_266_fu_48 = 3'd0;
+#0 i_242_fu_48 = 3'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -140,9 +140,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_266_fu_48 <= 3'd0;
+        i_242_fu_48 <= 3'd0;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_266_fu_48 <= add_ln427_reg_214;
+        i_242_fu_48 <= add_ln427_reg_214;
     end
 end
 
@@ -209,7 +209,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i = 3'd0;
     end else begin
-        ap_sig_allocacmp_i = i_266_fu_48;
+        ap_sig_allocacmp_i = i_242_fu_48;
     end
 end
 
@@ -330,7 +330,7 @@ assign icmp_ln424_fu_102_p2 = ((ap_sig_allocacmp_i == 3'd7) ? 1'b1 : 1'b0);
 
 assign lshr_ln427_1_fu_161_p4 = {{add_ln427_reg_214[2:1]}};
 
-assign lshr_ln_fu_118_p4 = {{ap_sig_allocacmp_i[2:1]}};
+assign lshr_ln9_fu_118_p4 = {{ap_sig_allocacmp_i[2:1]}};
 
 assign or_ln_fu_191_p3 = {{select_ln427_2_fu_184_p3}, {select_ln427_reg_236}};
 
@@ -348,7 +348,7 @@ assign trunc_ln427_2_fu_180_p1 = c_0_1_q0[0:0];
 
 assign trunc_ln427_fu_176_p1 = c_0_0_q0[0:0];
 
-assign zext_ln422_fu_128_p1 = lshr_ln_fu_118_p4;
+assign zext_ln422_fu_128_p1 = lshr_ln9_fu_118_p4;
 
 assign zext_ln427_fu_170_p1 = lshr_ln427_1_fu_161_p4;
 

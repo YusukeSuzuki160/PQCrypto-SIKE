@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fpadd503_249_Pipeline_VITIS_LOOP_33_1'
 ================================================================
-* Date:           Mon Oct 20 14:41:26 2025
+* Date:           Sat Oct 25 16:58:24 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        sikep503_hls
@@ -114,7 +114,7 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_sig_allocacmp_i_210   |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_249   |   9|          2|    4|          8|
     |carry_reg_115            |   9|          2|    1|          2|
     |i_fu_60                  |   9|          2|    4|          8|
     +-------------------------+----+-----------+-----+-----------+
@@ -129,7 +129,7 @@
     |ap_done_reg              |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
     |carry_reg_115            |  1|   0|    1|          0|
-    |i_210_reg_275            |  4|   0|    4|          0|
+    |i_249_reg_275            |  4|   0|    4|          0|
     |i_fu_60                  |  4|   0|    4|          0|
     |icmp_ln33_reg_280        |  1|   0|    1|          0|
     +-------------------------+---+----+-----+-----------+
@@ -215,11 +215,11 @@ ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln35_12_read = read i6 @_ssdm
 ST_1 : Operation 11 [1/1] (0.38ns)   --->   "%store_ln28 = store i4 0, i4 %i" [src/generic/fp_generic.cpp:28]   --->   Operation 11 'store' 'store_ln28' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 12 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%carry = phi i1 0, void %newFuncRoot, i1 %tmp, void %for.inc.split" [src/generic/fp_generic.cpp:33]   --->   Operation 13 'phi' 'carry' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i_210 = load i4 %i" [src/generic/fp_generic.cpp:33]   --->   Operation 14 'load' 'i_210' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.70ns)   --->   "%icmp_ln33 = icmp_eq  i4 %i_210, i4 8" [src/generic/fp_generic.cpp:33]   --->   Operation 15 'icmp' 'icmp_ln33' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 16 [1/1] (0.70ns)   --->   "%add_ln33 = add i4 %i_210, i4 1" [src/generic/fp_generic.cpp:33]   --->   Operation 16 'add' 'add_ln33' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i_249 = load i4 %i" [src/generic/fp_generic.cpp:33]   --->   Operation 14 'load' 'i_249' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.70ns)   --->   "%icmp_ln33 = icmp_eq  i4 %i_249, i4 8" [src/generic/fp_generic.cpp:33]   --->   Operation 15 'icmp' 'icmp_ln33' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.70ns)   --->   "%add_ln33 = add i4 %i_249, i4 1" [src/generic/fp_generic.cpp:33]   --->   Operation 16 'add' 'add_ln33' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln33 = br i1 %icmp_ln33, void %for.inc.split, void %for.inc29.preheader.exitStub" [src/generic/fp_generic.cpp:33]   --->   Operation 17 'br' 'br_ln33' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln35_10 = zext i4 %i_210" [src/generic/fp_generic.cpp:35]   --->   Operation 18 'zext' 'zext_ln35_10' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln35_10 = zext i4 %i_249" [src/generic/fp_generic.cpp:35]   --->   Operation 18 'zext' 'zext_ln35_10' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.70ns)   --->   "%add_ln35 = add i6 %zext_ln35_12_read, i6 %zext_ln35_10" [src/generic/fp_generic.cpp:35]   --->   Operation 19 'add' 'add_ln35' <Predicate = (!icmp_ln33)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln35_13 = zext i6 %add_ln35" [src/generic/fp_generic.cpp:35]   --->   Operation 20 'zext' 'zext_ln35_13' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i64 %a, i64 0, i64 %zext_ln35_13" [src/generic/fp_generic.cpp:35]   --->   Operation 21 'getelementptr' 'a_addr' <Predicate = (!icmp_ln33)> <Delay = 0.00>
@@ -232,10 +232,10 @@ ST_1 : Operation 27 [1/1] (0.38ns)   --->   "%store_ln28 = store i4 %add_ln33, i
 ST_1 : Operation 51 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 51 'ret' 'ret_ln0' <Predicate = (icmp_ln33)> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 3.72>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln33 = zext i4 %i_210" [src/generic/fp_generic.cpp:33]   --->   Operation 28 'zext' 'zext_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102" [src/generic/fp_generic.cpp:28]   --->   Operation 29 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln33 = zext i4 %i_249" [src/generic/fp_generic.cpp:33]   --->   Operation 28 'zext' 'zext_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specpipeline_ln28 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_57" [src/generic/fp_generic.cpp:28]   --->   Operation 29 'specpipeline' 'specpipeline_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%speclooptripcount_ln28 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/generic/fp_generic.cpp:28]   --->   Operation 30 'speclooptripcount' 'speclooptripcount_ln28' <Predicate = (!icmp_ln33)> <Delay = 0.00>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_45" [src/generic/fp_generic.cpp:33]   --->   Operation 31 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%specloopname_ln33 = specloopname void @_ssdm_op_SpecLoopName, void @empty_61" [src/generic/fp_generic.cpp:33]   --->   Operation 31 'specloopname' 'specloopname_ln33' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 32 [1/2] ( I:0.71ns O:0.71ns )   --->   "%a_load = load i6 %a_addr" [src/generic/fp_generic.cpp:35]   --->   Operation 32 'load' 'a_load' <Predicate = (!icmp_ln33)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 56> <RAM>
 ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln35 = zext i1 %carry" [src/generic/fp_generic.cpp:35]   --->   Operation 33 'zext' 'zext_ln35' <Predicate = (!icmp_ln33)> <Delay = 0.00>
 ST_2 : Operation 34 [1/1] (1.14ns)   --->   "%tempReg = add i64 %a_load, i64 %zext_ln35" [src/generic/fp_generic.cpp:35]   --->   Operation 34 'add' 'tempReg' <Predicate = (!icmp_ln33)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -288,7 +288,7 @@ zext_ln35_12_read      (read             ) [ 000]
 store_ln28             (store            ) [ 000]
 br_ln0                 (br               ) [ 000]
 carry                  (phi              ) [ 011]
-i_210                  (load             ) [ 011]
+i_249                  (load             ) [ 011]
 icmp_ln33              (icmp             ) [ 011]
 add_ln33               (add              ) [ 000]
 br_ln33                (br               ) [ 000]
@@ -508,7 +508,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </bind>
 </comp>
 
@@ -544,7 +544,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_45"/></StgValue>
+<StgValue><ssdm name="empty_61"/></StgValue>
 </bind>
 </comp>
 
@@ -751,14 +751,14 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="131" class="1004" name="i_210_load_fu_131">
+<comp id="131" class="1004" name="i_249_load_fu_131">
 <pin_list>
 <pin id="132" dir="0" index="0" bw="4" slack="0"/>
 <pin id="133" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="i_210/1 "/>
+<opset="i_249/1 "/>
 </bind>
 </comp>
 
@@ -1045,13 +1045,13 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="275" class="1005" name="i_210_reg_275">
+<comp id="275" class="1005" name="i_249_reg_275">
 <pin_list>
 <pin id="276" dir="0" index="0" bw="4" slack="1"/>
 <pin id="277" dir="1" index="1" bw="4" slack="1"/>
 </pin_list>
 <bind>
-<opset="i_210 "/>
+<opset="i_249 "/>
 </bind>
 </comp>
 
@@ -1268,7 +1268,7 @@ ret_ln0                (ret              ) [ 000]
 	State 1
 		store_ln28 : 1
 		carry : 1
-		i_210 : 1
+		i_249 : 1
 		icmp_ln33 : 2
 		add_ln33 : 2
 		br_ln33 : 3
@@ -1355,7 +1355,7 @@ N/A
 |  a_addr_reg_284 |    6   |
 |  b_addr_reg_289 |    6   |
 |  carry_reg_115  |    1   |
-|  i_210_reg_275  |    4   |
+|  i_249_reg_275  |    4   |
 |    i_reg_268    |    4   |
 |icmp_ln33_reg_280|    1   |
 |   tmp_reg_294   |    1   |

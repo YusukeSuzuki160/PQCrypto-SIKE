@@ -338,7 +338,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
+          <m_delay>1.90</m_delay>
           <m_topoIndex>3</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -553,8 +553,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>86</mMinLatency>
-        <mMaxLatency>133</mMaxLatency>
+        <mMinLatency>-1</mMinLatency>
+        <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -645,19 +645,23 @@
         <item class_id="36" tracking_level="0" version="0">
           <first>grp_mul_4_fu_38 (mul_4)</first>
           <second class_id="37" tracking_level="0" version="0">
-            <count>3</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
+              <first>BRAM</first>
+              <second>6</second>
+            </item>
+            <item>
               <first>DSP</first>
-              <second>225</second>
+              <second>17</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3095</second>
+              <second>2388</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7678</second>
+              <second>18494</second>
             </item>
           </second>
         </item>

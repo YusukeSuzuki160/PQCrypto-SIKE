@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>3</id>
-              <name>i_222</name>
+              <name>i_264</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>422</lineNumber>
@@ -162,7 +162,7 @@
             <Obj>
               <type>0</type>
               <id>6</id>
-              <name>i_222_write_ln422</name>
+              <name>i_264_write_ln422</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>422</lineNumber>
@@ -630,7 +630,7 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>lshr_ln6</name>
+              <name>lshr_ln</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>422</lineNumber>
@@ -669,7 +669,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>lshr_ln6_fu_118_p4</rtlName>
+              <rtlName>lshr_ln_fu_118_p4</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -2342,7 +2342,7 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>i_222_write_ln422</name>
+              <name>i_264_write_ln422</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>422</lineNumber>
@@ -4189,7 +4189,7 @@
           </second>
         </item>
         <item>
-          <first>i_222_fu_48</first>
+          <first>i_264_fu_48</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -4315,7 +4315,7 @@
           </second>
         </item>
         <item>
-          <first>i_222_fu_48</first>
+          <first>i_264_fu_48</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5073,7 +5073,7 @@
         </second>
       </item>
       <item>
-        <first>i_222_fu_48</first>
+        <first>i_264_fu_48</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5097,7 +5097,7 @@
         </second>
       </item>
       <item>
-        <first>lshr_ln6_fu_118</first>
+        <first>lshr_ln_fu_118</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5367,7 +5367,7 @@
         </second>
       </item>
       <item>
-        <first>i_222_reg_204</first>
+        <first>i_264_reg_204</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

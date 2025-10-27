@@ -1,0 +1,129 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_62_Pipeline_VITIS_LOOP_191_1107'
+================================================================
+* Date:           Fri Oct 24 18:27:35 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.101 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        3|        3|  30.000 ns|  30.000 ns|    2|    2|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_191_1  |        1|        1|         1|          1|          1|     1|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.10>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%v_171_reload_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %v_171_reload"   --->   Operation 4 'read' 'v_171_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%zext_ln196_5_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %zext_ln196_5"   --->   Operation 5 'read' 'zext_ln196_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln196_5_cast = zext i4 %zext_ln196_5_read"   --->   Operation 6 'zext' 'zext_ln196_5_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.cond.i354"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = phi i1 1, void %for.inc.i359, i1 0, void %newFuncRoot"   --->   Operation 9 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln191 = br i1 %i, void %for.inc.i359, void %_ZN3mpx9PackedOpsImLj8ELb1EE21write_block_to_digitsE7ap_uintILi64EEPmjj.exit360.exitStub" [src/generic/mpx_iface_tvu_mul.hpp:191->src/generic/mpx_iface_tvu_mul.hpp:168]   --->   Operation 10 'br' 'br_ln191' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i64 %c, i64 0, i64 %zext_ln196_5_cast" [src/generic/mpx_iface_tvu_mul.hpp:196->src/generic/mpx_iface_tvu_mul.hpp:168]   --->   Operation 11 'getelementptr' 'c_addr' <Predicate = (!i)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln194 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_85" [src/generic/mpx_iface_tvu_mul.hpp:194->src/generic/mpx_iface_tvu_mul.hpp:168]   --->   Operation 12 'specpipeline' 'specpipeline_ln194' <Predicate = (!i)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%speclooptripcount_ln193 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 1, i64 1" [src/generic/mpx_iface_tvu_mul.hpp:193->src/generic/mpx_iface_tvu_mul.hpp:168]   --->   Operation 13 'speclooptripcount' 'speclooptripcount_ln193' <Predicate = (!i)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specloopname_ln191 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [src/generic/mpx_iface_tvu_mul.hpp:191->src/generic/mpx_iface_tvu_mul.hpp:168]   --->   Operation 14 'specloopname' 'specloopname_ln191' <Predicate = (!i)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln196 = store i64 %v_171_reload_read, i4 %c_addr" [src/generic/mpx_iface_tvu_mul.hpp:196->src/generic/mpx_iface_tvu_mul.hpp:168]   --->   Operation 15 'store' 'store_ln196' <Predicate = (!i)> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 16> <RAM>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln191 = br void %for.cond.i354" [src/generic/mpx_iface_tvu_mul.hpp:191->src/generic/mpx_iface_tvu_mul.hpp:168]   --->   Operation 16 'br' 'br_ln191' <Predicate = (!i)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 17 'ret' 'ret_ln0' <Predicate = (i)> <Delay = 0.38>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.101ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 1 bit ('i') [10]  (0.387 ns)
+	'phi' operation 1 bit ('i') [10]  (0.000 ns)
+	'store' operation 0 bit ('store_ln196', src/generic/mpx_iface_tvu_mul.hpp:196->src/generic/mpx_iface_tvu_mul.hpp:168) of variable 'v_171_reload_read' on array 'c' [17]  (0.714 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

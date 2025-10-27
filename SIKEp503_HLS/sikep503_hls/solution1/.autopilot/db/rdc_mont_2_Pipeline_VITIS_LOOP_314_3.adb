@@ -145,7 +145,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>4</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -185,7 +185,7 @@
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
-          <array_size>120</array_size>
+          <array_size>56</array_size>
           <bit_vecs>
             <count>0</count>
             <item_version>0</item_version>
@@ -268,7 +268,7 @@
             <Obj>
               <type>1</type>
               <id>8</id>
-              <name>v_82_out</name>
+              <name>v_93_out</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -711,7 +711,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>4</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -1132,7 +1132,7 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>j_11</name>
+              <name>j_12</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>314</lineNumber>
@@ -1302,7 +1302,7 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>add_ln314_5</name>
+              <name>add_ln314_6</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>314</lineNumber>
@@ -1327,7 +1327,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln314_5_fu_218_p2</rtlName>
+              <rtlName>add_ln314_6_fu_218_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1452,7 +1452,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>7</bitwidth>
+            <bitwidth>6</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
@@ -1566,7 +1566,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>7</bitwidth>
+            <bitwidth>6</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
@@ -1818,7 +1818,7 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>v_load_16</name>
+              <name>v_load_19</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>319</lineNumber>
@@ -1922,7 +1922,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.20</m_delay>
+          <m_delay>0.71</m_delay>
           <m_topoIndex>26</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2272,7 +2272,7 @@
             <Obj>
               <type>0</type>
               <id>54</id>
-              <name>UV_17</name>
+              <name>UV_19</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>318</lineNumber>
@@ -2328,7 +2328,7 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>v_81</name>
+              <name>v_93</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>319</lineNumber>
@@ -2353,7 +2353,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>v</originalName>
-              <rtlName>v_81_fu_276_p2</rtlName>
+              <rtlName>v_93_fu_276_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -2449,7 +2449,7 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>xor_ln105_145</name>
+              <name>xor_ln105_164</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -2481,7 +2481,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_145_fu_288_p2</rtlName>
+              <rtlName>xor_ln105_164_fu_288_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2577,7 +2577,7 @@
             <Obj>
               <type>0</type>
               <id>59</id>
-              <name>xor_ln105_146</name>
+              <name>xor_ln105_165</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -2609,7 +2609,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_146_fu_300_p2</rtlName>
+              <rtlName>xor_ln105_165_fu_300_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -2948,7 +2948,7 @@
             <Obj>
               <type>0</type>
               <id>65</id>
-              <name>xor_ln105_147</name>
+              <name>xor_ln105_166</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -2980,7 +2980,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_147_fu_338_p2</rtlName>
+              <rtlName>xor_ln105_166_fu_338_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -3204,7 +3204,7 @@
             <Obj>
               <type>0</type>
               <id>69</id>
-              <name>tmp_71</name>
+              <name>tmp_81</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>103</lineNumber>
@@ -3236,7 +3236,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_71_fu_362_p3</rtlName>
+              <rtlName>tmp_81_fu_362_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3269,7 +3269,7 @@
             <Obj>
               <type>0</type>
               <id>70</id>
-              <name>xor_ln105_148</name>
+              <name>xor_ln105_167</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -3301,7 +3301,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_148_fu_370_p2</rtlName>
+              <rtlName>xor_ln105_167_fu_370_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -3333,7 +3333,7 @@
             <Obj>
               <type>0</type>
               <id>71</id>
-              <name>xor_ln105_149</name>
+              <name>xor_ln105_168</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -3365,7 +3365,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_149_fu_376_p2</rtlName>
+              <rtlName>xor_ln105_168_fu_376_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -3397,7 +3397,7 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>or_ln105_25</name>
+              <name>or_ln105_29</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -3429,7 +3429,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln105_25_fu_382_p2</rtlName>
+              <rtlName>or_ln105_29_fu_382_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -3461,7 +3461,7 @@
             <Obj>
               <type>0</type>
               <id>73</id>
-              <name>xor_ln105_150</name>
+              <name>xor_ln105_169</name>
               <fileName>src/config.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>105</lineNumber>
@@ -3493,7 +3493,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>xor_ln105_150_fu_388_p2</rtlName>
+              <rtlName>xor_ln105_169_fu_388_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
               <implIndex>auto</implIndex>
@@ -3525,7 +3525,7 @@
             <Obj>
               <type>0</type>
               <id>74</id>
-              <name>tmp_72</name>
+              <name>tmp_82</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>320</lineNumber>
@@ -3550,7 +3550,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_72_fu_394_p3</rtlName>
+              <rtlName>tmp_82_fu_394_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -3583,7 +3583,7 @@
             <Obj>
               <type>0</type>
               <id>75</id>
-              <name>carry_44</name>
+              <name>carry_49</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>320</lineNumber>
@@ -3608,7 +3608,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>carry</originalName>
-              <rtlName>carry_44_fu_402_p2</rtlName>
+              <rtlName>carry_49_fu_402_p2</rtlName>
               <control>auto</control>
               <opType>or</opType>
               <implIndex>auto</implIndex>
@@ -3696,7 +3696,7 @@
             <Obj>
               <type>0</type>
               <id>77</id>
-              <name>t_25</name>
+              <name>t_27</name>
               <fileName>src/generic/fp_generic.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>321</lineNumber>
@@ -3721,7 +3721,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>t</originalName>
-              <rtlName>t_25_fu_412_p2</rtlName>
+              <rtlName>t_27_fu_412_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -4101,7 +4101,7 @@
             <Obj>
               <type>0</type>
               <id>86</id>
-              <name>t_load_17</name>
+              <name>t_load_18</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -4144,7 +4144,7 @@
             <Obj>
               <type>0</type>
               <id>87</id>
-              <name>u_54_load_1</name>
+              <name>u_54_load_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -4230,7 +4230,7 @@
             <Obj>
               <type>0</type>
               <id>89</id>
-              <name>v_82_out_write_ln0</name>
+              <name>v_93_out_write_ln0</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -4422,7 +4422,7 @@
               <isStorage>1</isStorage>
               <storageDepth>8</storageDepth>
               <coreId>100</coreId>
-              <rtlModuleName>sikep503_kem_enc_hw_rdc_mont_Pipeline_VITIS_LOOP_314_3_p503p1_1_ROM_AUTO_1R</rtlModuleName>
+              <rtlModuleName>sikep503_kem_enc_hw_rdc_mont_1_Pipeline_VITIS_LOOP_314_3_p503p1_1_ROM_AUTO_1R</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -6521,7 +6521,7 @@
         <count>21</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln314_5_fu_218_p2 ( + ) </first>
+          <first>add_ln314_6_fu_218_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6613,7 +6613,7 @@
           </second>
         </item>
         <item>
-          <first>carry_44_fu_402_p2 ( or ) </first>
+          <first>carry_49_fu_402_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6682,7 +6682,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln105_25_fu_382_p2 ( or ) </first>
+          <first>or_ln105_29_fu_382_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6751,7 +6751,7 @@
           </second>
         </item>
         <item>
-          <first>t_25_fu_412_p2 ( + ) </first>
+          <first>t_27_fu_412_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6820,7 +6820,7 @@
           </second>
         </item>
         <item>
-          <first>v_81_fu_276_p2 ( + ) </first>
+          <first>v_93_fu_276_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6843,7 +6843,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_145_fu_288_p2 ( xor ) </first>
+          <first>xor_ln105_164_fu_288_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6866,7 +6866,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_146_fu_300_p2 ( xor ) </first>
+          <first>xor_ln105_165_fu_300_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6889,7 +6889,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_147_fu_338_p2 ( xor ) </first>
+          <first>xor_ln105_166_fu_338_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6912,7 +6912,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_148_fu_370_p2 ( xor ) </first>
+          <first>xor_ln105_167_fu_370_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6935,7 +6935,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_149_fu_376_p2 ( xor ) </first>
+          <first>xor_ln105_168_fu_376_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6958,7 +6958,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_150_fu_388_p2 ( xor ) </first>
+          <first>xor_ln105_169_fu_388_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7105,7 +7105,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_j_11</first>
+          <first>ap_sig_allocacmp_j_12</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -7567,7 +7567,7 @@
         <count>19</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>add_ln314_5_fu_218_p2 ( + ) </first>
+          <first>add_ln314_6_fu_218_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7583,7 +7583,7 @@
           </second>
         </item>
         <item>
-          <first>carry_44_fu_402_p2 ( or ) </first>
+          <first>carry_49_fu_402_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7607,7 +7607,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln105_25_fu_382_p2 ( or ) </first>
+          <first>or_ln105_29_fu_382_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7631,7 +7631,7 @@
           </second>
         </item>
         <item>
-          <first>t_25_fu_412_p2 ( + ) </first>
+          <first>t_27_fu_412_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7655,7 +7655,7 @@
           </second>
         </item>
         <item>
-          <first>v_81_fu_276_p2 ( + ) </first>
+          <first>v_93_fu_276_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7663,7 +7663,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_145_fu_288_p2 ( xor ) </first>
+          <first>xor_ln105_164_fu_288_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7671,7 +7671,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_146_fu_300_p2 ( xor ) </first>
+          <first>xor_ln105_165_fu_300_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7679,7 +7679,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_147_fu_338_p2 ( xor ) </first>
+          <first>xor_ln105_166_fu_338_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7687,7 +7687,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_148_fu_370_p2 ( xor ) </first>
+          <first>xor_ln105_167_fu_370_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7695,7 +7695,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_149_fu_376_p2 ( xor ) </first>
+          <first>xor_ln105_168_fu_376_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7703,7 +7703,7 @@
           </second>
         </item>
         <item>
-          <first>xor_ln105_150_fu_388_p2 ( xor ) </first>
+          <first>xor_ln105_169_fu_388_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8863,7 +8863,7 @@
       <count>39</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>UV_17_fu_272</first>
+        <first>UV_19_fu_272</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8879,7 +8879,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln314_5_fu_218</first>
+        <first>add_ln314_6_fu_218</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8903,7 +8903,7 @@
         </second>
       </item>
       <item>
-        <first>carry_44_fu_402</first>
+        <first>carry_49_fu_402</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8951,7 +8951,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln105_25_fu_382</first>
+        <first>or_ln105_29_fu_382</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8983,7 +8983,7 @@
         </second>
       </item>
       <item>
-        <first>t_25_fu_412</first>
+        <first>t_27_fu_412</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9007,7 +9007,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_71_fu_362</first>
+        <first>tmp_81_fu_362</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9015,7 +9015,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_72_fu_394</first>
+        <first>tmp_82_fu_394</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9055,7 +9055,7 @@
         </second>
       </item>
       <item>
-        <first>v_81_fu_276</first>
+        <first>v_93_fu_276</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9071,7 +9071,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_145_fu_288</first>
+        <first>xor_ln105_164_fu_288</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9079,7 +9079,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_146_fu_300</first>
+        <first>xor_ln105_165_fu_300</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9087,7 +9087,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_147_fu_338</first>
+        <first>xor_ln105_166_fu_338</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9095,7 +9095,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_148_fu_370</first>
+        <first>xor_ln105_167_fu_370</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9103,7 +9103,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_149_fu_376</first>
+        <first>xor_ln105_168_fu_376</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9111,7 +9111,7 @@
         </second>
       </item>
       <item>
-        <first>xor_ln105_150_fu_388</first>
+        <first>xor_ln105_169_fu_388</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9208,7 +9208,7 @@
         </second>
       </item>
       <item>
-        <first>j_11_load_fu_205</first>
+        <first>j_12_load_fu_205</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9288,7 +9288,7 @@
         </second>
       </item>
       <item>
-        <first>t_load_17_load_fu_433</first>
+        <first>t_load_18_load_fu_433</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9320,7 +9320,7 @@
         </second>
       </item>
       <item>
-        <first>u_54_load_1_load_fu_437</first>
+        <first>u_54_load_2_load_fu_437</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9344,7 +9344,7 @@
         </second>
       </item>
       <item>
-        <first>v_load_16_load_fu_265</first>
+        <first>v_load_19_load_fu_265</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9732,7 +9732,7 @@
         </second>
       </item>
       <item>
-        <first>v_82_out</first>
+        <first>v_93_out</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

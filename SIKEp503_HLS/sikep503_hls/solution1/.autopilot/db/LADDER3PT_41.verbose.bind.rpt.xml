@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'LADDER3PT_41'" level="0">
-<item name = "Date">Mon Oct 20 16:17:17 2025
+<item name = "Date">Sat Oct 25 16:52:47 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.130 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.710 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1098857, 1802357, 10.989 ms, 18.024 ms, 1098857, 1802357, no</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -51,27 +51,27 @@
 <column name="grp_fpadd503_1_fu_1026">fpadd503_1, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
 <column name="grp_fpsub503_2_fu_1035">fpsub503_2, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
 <column name="grp_fpsub503_2_fu_1044">fpsub503_2, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
-<column name="grp_fp2sqr503_mont_5_fu_1053">fp2sqr503_mont_5, 545, 919, 5.450 us, 9.190 us, 545, 919, no</column>
+<column name="grp_fp2sqr503_mont_5_fu_1053">fp2sqr503_mont_5, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_fpcorrection503_fu_1065">fpcorrection503, 39, 39, 0.390 us, 0.390 us, 39, 39, no</column>
 <column name="grp_fpcorrection503_fu_1072">fpcorrection503, 39, 39, 0.390 us, 0.390 us, 39, 39, no</column>
 <column name="grp_fpadd503_245_1_fu_1079">fpadd503_245_1, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
 <column name="grp_fpadd503_245_1_fu_1087">fpadd503_245_1, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
-<column name="grp_fp2mul503_mont_126_3_fu_1095">fp2mul503_mont_126_3, 443, 736, 4.430 us, 7.360 us, 443, 736, no</column>
-<column name="grp_fp2mul503_mont_125_fu_1107">fp2mul503_mont_125, 443, 736, 4.430 us, 7.360 us, 443, 736, no</column>
+<column name="grp_fp2mul503_mont_126_3_fu_1095">fp2mul503_mont_126_3, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_fp2mul503_mont_125_fu_1107">fp2mul503_mont_125, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_fpsub503_3_fu_1119">fpsub503_3, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
 <column name="grp_fpsub503_3_fu_1128">fpsub503_3, 31, 31, 0.310 us, 0.310 us, 31, 31, no</column>
-<column name="grp_fp2mul503_mont_fu_1137">fp2mul503_mont, 443, 736, 4.430 us, 7.360 us, 443, 736, no</column>
-<column name="grp_fp2mul503_mont_7_fu_1149">fp2mul503_mont_7, 443, 736, 4.430 us, 7.360 us, 443, 736, no</column>
-<column name="grp_fp2sqr503_mont_4_fu_1165">fp2sqr503_mont_4, 545, 919, 5.450 us, 9.190 us, 545, 919, no</column>
+<column name="grp_fp2mul503_mont_fu_1137">fp2mul503_mont, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_fp2mul503_mont_7_fu_1149">fp2mul503_mont_7, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_fp2sqr503_mont_4_fu_1165">fp2sqr503_mont_4, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_fpadd503_245_fu_1175">fpadd503_245, 59, 59, 0.590 us, 0.590 us, 59, 59, no</column>
-<column name="grp_fp2mul503_mont_46_fu_1183">fp2mul503_mont_46, 564, 930, 5.640 us, 9.300 us, 564, 930, no</column>
+<column name="grp_fp2mul503_mont_46_fu_1183">fp2mul503_mont_46, ?, ?, ?, ?, ?, ?, no</column>
 <column name="grp_fpadd503_fu_1196">fpadd503, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
-<column name="grp_fp2mul503_mont_124_fu_1205">fp2mul503_mont_124, 443, 736, 4.430 us, 7.360 us, 443, 736, no</column>
+<column name="grp_fp2mul503_mont_124_fu_1205">fp2mul503_mont_124, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_319_1">1098500, 1802000, 4394 ~ 7208, -, -, 250, no</column>
+<column name="- VITIS_LOOP_319_1">?, ?, ?, -, -, 250, no</column>
 </table>
 </item>
 </section>

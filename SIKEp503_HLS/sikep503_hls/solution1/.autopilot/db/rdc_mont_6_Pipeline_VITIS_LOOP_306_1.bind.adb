@@ -41,7 +41,7 @@
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
-				<array_size>24</array_size>
+				<array_size>112</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -73,7 +73,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -169,7 +169,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -290,7 +290,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>i_7</name>
+						<name>i_9</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>306</lineNumber>
@@ -519,7 +519,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>zext_ln308_1</name>
+						<name>zext_ln308_3</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>308</lineNumber>
@@ -554,7 +554,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -610,7 +610,7 @@
 						<coreId>1</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -632,7 +632,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>zext_ln308_2</name>
+						<name>zext_ln308_4</name>
 						<fileName>src/generic/fp_generic.cpp</fileName>
 						<fileDirectory>/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS</fileDirectory>
 						<lineNumber>308</lineNumber>
@@ -723,7 +723,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -794,7 +794,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.71</m_delay>
+				<m_delay>1.20</m_delay>
 				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2017,7 +2017,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln308_1_fu_84</first>
+			<first>zext_ln308_3_fu_84</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2025,7 +2025,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln308_2_fu_94</first>
+			<first>zext_ln308_4_fu_94</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2041,7 +2041,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item>
-			<first>i_7_load_fu_69</first>
+			<first>i_9_load_fu_69</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

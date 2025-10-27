@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>3</id>
-              <name>i_22</name>
+              <name>i_64</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>11</lineNumber>
@@ -155,7 +155,7 @@
             <Obj>
               <type>0</type>
               <id>6</id>
-              <name>i_22_write_ln11</name>
+              <name>i_64_write_ln11</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>11</lineNumber>
@@ -838,7 +838,7 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>i_22_write_ln11</name>
+              <name>i_64_write_ln11</name>
               <fileName>src/fpx.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>11</lineNumber>
@@ -1952,7 +1952,7 @@
           </second>
         </item>
         <item>
-          <first>i_22_fu_40</first>
+          <first>i_64_fu_40</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2040,7 +2040,7 @@
           </second>
         </item>
         <item>
-          <first>i_22_fu_40</first>
+          <first>i_64_fu_40</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2401,7 +2401,7 @@
         </second>
       </item>
       <item>
-        <first>i_22_fu_40</first>
+        <first>i_64_fu_40</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2536,7 +2536,7 @@
         </second>
       </item>
       <item>
-        <first>i_22_reg_101</first>
+        <first>i_64_reg_101</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

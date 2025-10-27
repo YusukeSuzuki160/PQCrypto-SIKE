@@ -55,14 +55,14 @@ wire    ap_block_pp0_stage0_11001;
 wire   [63:0] zext_ln14_fu_103_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln13_fu_113_p1;
-reg   [3:0] i_240_fu_44;
+reg   [3:0] i_280_fu_44;
 wire   [3:0] add_ln13_fu_89_p2;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_i;
 reg    xPQ_1_ce0_local;
 reg    R2_X_2_we0_local;
 reg    R2_X_2_ce0_local;
-wire   [4:0] tmp_233_cast_fu_95_p3;
+wire   [4:0] tmp_201_cast_fu_95_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -77,7 +77,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 i_240_fu_44 = 4'd0;
+#0 i_280_fu_44 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -131,9 +131,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln13_fu_83_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_240_fu_44 <= add_ln13_fu_89_p2;
+            i_280_fu_44 <= add_ln13_fu_89_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_240_fu_44 <= 4'd0;
+            i_280_fu_44 <= 4'd0;
         end
     end
 end
@@ -204,7 +204,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_i = 4'd0;
     end else begin
-        ap_sig_allocacmp_i = i_240_fu_44;
+        ap_sig_allocacmp_i = i_280_fu_44;
     end
 end
 
@@ -257,7 +257,7 @@ assign ap_ready = ap_ready_sig;
 
 assign icmp_ln13_fu_83_p2 = ((ap_sig_allocacmp_i == 4'd8) ? 1'b1 : 1'b0);
 
-assign tmp_233_cast_fu_95_p3 = {{1'd1}, {ap_sig_allocacmp_i}};
+assign tmp_201_cast_fu_95_p3 = {{1'd1}, {ap_sig_allocacmp_i}};
 
 assign xPQ_1_address0 = zext_ln14_fu_103_p1;
 
@@ -265,6 +265,6 @@ assign xPQ_1_ce0 = xPQ_1_ce0_local;
 
 assign zext_ln13_fu_113_p1 = i_reg_124;
 
-assign zext_ln14_fu_103_p1 = tmp_233_cast_fu_95_p3;
+assign zext_ln14_fu_103_p1 = tmp_201_cast_fu_95_p3;
 
 endmodule //sikep503_kem_enc_hw_LADDER3PT_41_Pipeline_VITIS_LOOP_13_1211

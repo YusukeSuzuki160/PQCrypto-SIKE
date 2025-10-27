@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fp2mul503_mont_27_Pipeline_VITIS_LOOP_187_1'" level="0">
-<item name = "Date">Mon Oct 20 14:39:17 2025
+<item name = "Date">Sat Oct 25 18:43:30 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">sikep503_hls</item>
@@ -84,17 +84,17 @@
 <column name="add_ln187_fu_125_p2">+, 0, 0, 12, 4, 1</column>
 <column name="add_ln189_fu_173_p2">+, 0, 0, 71, 64, 64</column>
 <column name="tempReg_fu_162_p2">+, 0, 0, 71, 64, 64</column>
-<column name="and_ln189_9_fu_224_p2">and, 0, 0, 64, 64, 64</column>
+<column name="and_ln189_10_fu_224_p2">and, 0, 0, 64, 64, 64</column>
 <column name="and_ln189_fu_168_p2">and, 0, 0, 64, 64, 64</column>
 <column name="ap_condition_247">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln187_fu_119_p2">icmp, 0, 0, 12, 4, 5</column>
-<column name="or_ln189_9_fu_236_p2">or, 0, 0, 64, 64, 64</column>
+<column name="or_ln189_10_fu_236_p2">or, 0, 0, 64, 64, 64</column>
 <column name="or_ln189_fu_192_p2">or, 0, 0, 64, 64, 64</column>
 <column name="sext_ln179_cast_fu_103_p3">select, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln189_25_fu_186_p2">xor, 0, 0, 64, 64, 64</column>
-<column name="xor_ln189_26_fu_206_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln189_27_fu_230_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln189_29_fu_186_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln189_30_fu_206_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln189_31_fu_230_p2">xor, 0, 0, 64, 64, 64</column>
 <column name="xor_ln189_fu_180_p2">xor, 0, 0, 64, 64, 64</column>
 </table>
 </item>
@@ -104,7 +104,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i">9, 2, 4, 8</column>
 <column name="borrow_reg_92">9, 2, 1, 2</column>
-<column name="i_200_fu_52">9, 2, 4, 8</column>
+<column name="i_247_fu_52">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -113,7 +113,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="borrow_reg_92">1, 0, 1, 0</column>
-<column name="i_200_fu_52">4, 0, 4, 0</column>
+<column name="i_247_fu_52">4, 0, 4, 0</column>
 <column name="icmp_ln187_reg_262">1, 0, 1, 0</column>
 <column name="sext_ln179_cast_reg_257">64, 0, 64, 0</column>
 <column name="tt3_addr_reg_266">3, 0, 4, 1</column>

@@ -97,7 +97,7 @@ newFuncRoot:3 %v = alloca i32 1
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 207, i64 18446744073709551615
+newFuncRoot:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mc, i64 666, i64 17, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -142,10 +142,10 @@ newFuncRoot:6 %add_ln314_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %add_ln314
 
 <Node id="18" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-newFuncRoot:7 %i_13_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_13
+newFuncRoot:7 %i_15_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %i_15
 
 ]]></Node>
-<StgValue><ssdm name="i_13_read"/></StgValue>
+<StgValue><ssdm name="i_15_read"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -292,7 +292,7 @@ for.body6:1 %zext_ln314 = zext i3 %j_2
 
 <Node id="29" bw="1" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-for.body6:2 %icmp_ln314 = icmp_eq  i3 %j_2, i3 %i_13_read
+for.body6:2 %icmp_ln314 = icmp_eq  i3 %j_2, i3 %i_15_read
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln314"/></StgValue>
@@ -370,7 +370,7 @@ for.body6.split:1 %mc_addr = getelementptr i64 %mc, i64 0, i64 %zext_ln314_1
 
 <Node id="35" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body6.split:2 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_102
+for.body6.split:2 %specpipeline_ln303 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_84
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln303"/></StgValue>
@@ -402,7 +402,7 @@ for.body6.split:3 %speclooptripcount_ln303 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body6.split:4 %specloopname_ln314 = specloopname void @_ssdm_op_SpecLoopName, void @empty_46
+for.body6.split:4 %specloopname_ln314 = specloopname void @_ssdm_op_SpecLoopName, void @empty_33
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln314"/></StgValue>
@@ -606,10 +606,10 @@ if.then:7 %p503p1_1_load = load i3 %p503p1_1_addr
 
 <Node id="49" bw="128" op_0_bw="128" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-if.then:8 %call_ret1 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
+if.then:8 %call_ret3 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
 
 ]]></Node>
-<StgValue><ssdm name="call_ret1"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 
 <operation id="77" st_id="3" stage="1" lat="1">
@@ -670,7 +670,7 @@ for.inc51.loopexit.exitStub:2 %v_load = load i64 %v
 
 <Node id="86" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc51.loopexit.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_109_out, i64 %v_load
+for.inc51.loopexit.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %v_156_out, i64 %v_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -686,7 +686,7 @@ for.inc51.loopexit.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i6
 
 <Node id="87" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc51.loopexit.exitStub:4 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %u_54_out, i64 %u_load
+for.inc51.loopexit.exitStub:4 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %u_62_out, i64 %u_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -786,10 +786,10 @@ if.then:2 %v_load_2 = load i64 %v
 
 <Node id="49" bw="128" op_0_bw="128" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-if.then:8 %call_ret1 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
+if.then:8 %call_ret3 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_load
 
 ]]></Node>
-<StgValue><ssdm name="call_ret1"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 
 <operation id="48" st_id="4" stage="1" lat="1">
@@ -802,7 +802,7 @@ if.then:8 %call_ret1 = call i128 @digit_x_digit, i64 %mc_load, i64 %p503p1_1_loa
 
 <Node id="50" bw="64" op_0_bw="128">
 <![CDATA[
-if.then:9 %UV = extractvalue i128 %call_ret1
+if.then:9 %UV = extractvalue i128 %call_ret3
 
 ]]></Node>
 <StgValue><ssdm name="UV"/></StgValue>
@@ -818,7 +818,7 @@ if.then:9 %UV = extractvalue i128 %call_ret1
 
 <Node id="51" bw="64" op_0_bw="128">
 <![CDATA[
-if.then:10 %UV_2 = extractvalue i128 %call_ret1
+if.then:10 %UV_2 = extractvalue i128 %call_ret3
 
 ]]></Node>
 <StgValue><ssdm name="UV_2"/></StgValue>
