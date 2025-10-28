@@ -1,0 +1,27 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_orig.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_mul_orig" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_orig.cpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_orig.cpp:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_orig.cpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_orig.cpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_orig.cpp:33:0" msg_body="Inlining function 'idx_in(unsigned int, unsigned int)' into 'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="idx_in(unsigned int, unsigned int)" Callee-DebugLoc="File test_orig.cpp Line 12 Column 0" Caller="mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_orig.cpp Line 33 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_orig.cpp:33:0" msg_body="Inlining function 'idx_out(unsigned int, unsigned int)' into 'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="idx_out(unsigned int, unsigned int)" Callee-DebugLoc="File test_orig.cpp Line 13 Column 0" Caller="mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_orig.cpp Line 33 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_orig.cpp:78:0" msg_body="Inlining function 'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'test_mul_orig(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File test_orig.cpp Line 33 Column 0" Caller="test_mul_orig(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File test_orig.cpp Line 78 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

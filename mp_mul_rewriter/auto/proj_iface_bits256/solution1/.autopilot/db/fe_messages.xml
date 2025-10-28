@@ -1,0 +1,78 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = MAX_NWORDS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = MAX_NWORDS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = (2 * MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = ((W * MAX_NWORDS + BLOCK_BITS_VAR - 1) / BLOCK_BITS_VAR)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = ((W * MAX_NWORDS + BLOCK_BITS_VAR - 1) / BLOCK_BITS_VAR)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:101:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = (2 * MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = (2 * MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_iface_bits256.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_mul_iface_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_mul_iface_configurable" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_iface_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_iface_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:162:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_iface_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_iface_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_iface_bits256.cpp:75:21" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::pack(unsigned long const*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::pack(unsigned long const*, unsigned int)" Callee-DebugLoc="File test_iface_bits256.cpp Line 32 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_iface_bits256.cpp Line 62 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:62:0" msg_body="Updating loop lower bound from 1 to 16 for loop 'VITIS_LOOP_131_4' (test_iface_bits256.cpp:131:35) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="test_iface_bits256.cpp:131:35" LoopName="VITIS_LOOP_131_4" NewBound="16" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:62:0" msg_body="Updating loop lower bound from 1 to 2 for loop 'VITIS_LOOP_98_3' (test_iface_bits256.cpp:98:34) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="test_iface_bits256.cpp:98:34" LoopName="VITIS_LOOP_98_3" NewBound="2" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:62:0" msg_body="Updating loop lower bound from 1 to 2 for loop 'VITIS_LOOP_84_2' (test_iface_bits256.cpp:84:30) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="test_iface_bits256.cpp:84:30" LoopName="VITIS_LOOP_84_2" NewBound="2" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="test_iface_bits256.cpp:62:0" msg_body="Updating loop lower bound from 1 to 16 for loop 'VITIS_LOOP_65_1' (test_iface_bits256.cpp:65:19) in function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul'.">
+        <args LoopLoc="test_iface_bits256.cpp:65:19" LoopName="VITIS_LOOP_65_1" NewBound="16" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_iface_bits256.cpp:159:0" msg_body="Inlining function 'mp_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'test_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File test_iface_bits256.cpp Line 153 Column 0" Caller="test_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File test_iface_bits256.cpp Line 159 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

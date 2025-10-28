@@ -1,0 +1,44 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "test_orig.cpp",
+    "fileloc": 77,
+    "instructions": 6,
+    "name": "test_mul_orig",
+    "total_instructions": 153
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "test_orig.cpp",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "idx_in",
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "test_orig.cpp",
+    "fileloc": 13,
+    "instructions": 2,
+    "name": "idx_out",
+    "total_instructions": 2
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "1 1 2 1 1 2 2",
+    "file": "test_orig.cpp",
+    "fileloc": 32,
+    "instructions": 133,
+    "loads": {
+      "L": 4
+    },
+    "name": "mp_mul_orig",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 147
+  }
+}

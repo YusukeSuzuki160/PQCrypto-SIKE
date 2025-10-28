@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "test_mul_converted",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "test_mul_converted"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_converted.tcl",
+    "sourceLine": 12,
+    "success": true
+  }
+]

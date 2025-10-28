@@ -1,0 +1,31 @@
+HLS Performance Comparison - Complete Summary
+==============================================
+
+Generated: 2025年 10月 28日 火曜日 18:17:17 JST
+
+Basic Tests:
+- orig: Original (pre-conversion)
+- converted: Converted (PackedOps)
+- comba: Comba (CHUNK_BITS=64 fixed)
+
+Bit Width Variations:
+- iface_bits16: mpx_iface with BLOCK_BITS=16
+- iface_bits32: mpx_iface with BLOCK_BITS=32
+- iface_bits64: mpx_iface with BLOCK_BITS=64
+- iface_bits128: mpx_iface with BLOCK_BITS=128
+- iface_bits256: mpx_iface with BLOCK_BITS=256
+
+- comba_bits16: mpx_comba with CHUNK_BITS=16
+- comba_bits32: mpx_comba with CHUNK_BITS=32
+- comba_bits64: mpx_comba with CHUNK_BITS=64
+- comba_bits128: mpx_comba with CHUNK_BITS=128
+- comba_bits256: mpx_comba with CHUNK_BITS=256
+
+Detailed reports are in: hls_comparison_results/
+
+To view results:
+  ls -lh hls_comparison_results/
+
+To extract metrics:
+  ./extract_metrics.sh hls_comparison_results/*.rpt
+

@@ -1,0 +1,148 @@
+
+
+================================================================
+== Synthesis Summary Report of 'test_mul_converted'
+================================================================
++ General Information: 
+    * Date:           Tue Oct 28 18:15:13 2025
+    * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+    * Project:        proj_converted
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+-----------+------------+------------+-----+
+    |                     Modules                     | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |           |            |            |     |
+    |                     & Loops                     | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP    |     FF     |     LUT    | URAM|
+    +-------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+-----------+------------+------------+-----+
+    |+ test_mul_converted                             |     -|  1.72|       32|  320.000|         -|       33|     -|        no|     -|  900 (13%)|  2480 (~0%)|  6091 (~0%)|    -|
+    | + test_mul_converted_Pipeline_VITIS_LOOP_25_1   |     -|  4.81|       10|  100.000|         -|       10|     -|        no|     -|          -|   522 (~0%)|  2753 (~0%)|    -|
+    |  o VITIS_LOOP_25_1                              |     -|  7.30|        8|   80.000|         2|        1|     8|       yes|     -|          -|           -|           -|    -|
+    | + test_mul_converted_Pipeline_VITIS_LOOP_25_11  |     -|  4.81|       10|  100.000|         -|       10|     -|        no|     -|          -|   522 (~0%)|  2753 (~0%)|    -|
+    |  o VITIS_LOOP_25_1                              |     -|  7.30|        8|   80.000|         2|        1|     8|       yes|     -|          -|           -|           -|    -|
+    | + test_mul_converted_Pipeline_VITIS_LOOP_39_1   |     -|  4.94|       18|  180.000|         -|       18|     -|        no|     -|          -|     7 (~0%)|   334 (~0%)|    -|
+    |  o VITIS_LOOP_39_1                              |     -|  7.30|       16|  160.000|         1|        1|    16|       yes|     -|          -|           -|           -|    -|
+    +-------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+-----------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* BRAM
++-----------+------------+---------------+
+| Interface | Data Width | Address Width |
++-----------+------------+---------------+
+| a_PORTA   | 64         | 32            |
+| b_PORTA   | 64         | 32            |
+| c_PORTA   | 64         | 32            |
++-----------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------+
+| Argument | Direction | Datatype                  |
++----------+-----------+---------------------------+
+| a        | in        | long unsigned int const * |
+| b        | in        | long unsigned int const * |
+| c        | out       | long unsigned int*        |
++----------+-----------+---------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| a        | a_PORTA      | interface |
+| b        | b_PORTA      | interface |
+| c        | c_PORTA      | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------+-----+--------+-----------+------------+-----------+---------+
+| Name                                            | DSP | Pragma | Variable  | Op         | Impl      | Latency |
++-------------------------------------------------+-----+--------+-----------+------------+-----------+---------+
+| + test_mul_converted                            | 900 |        |           |            |           |         |
+|   mul_512ns_512ns_1024_2_1_U6                   | 900 |        | P         | mul        | auto      | 1       |
+|  + test_mul_converted_Pipeline_VITIS_LOOP_25_1  | 0   |        |           |            |           |         |
+|    icmp_ln25_fu_83_p2                           |     |        | icmp_ln25 | seteq      | auto      | 0       |
+|    add_ln25_fu_89_p2                            |     |        | add_ln25  | add        | fabric    | 0       |
+|    shl_ln30_fu_127_p2                           |     |        | shl_ln30  | shl        | auto_pipe | 0       |
+|    A_2_fu_133_p2                                |     |        | A_2       | or         | auto      | 0       |
+|  + test_mul_converted_Pipeline_VITIS_LOOP_25_11 | 0   |        |           |            |           |         |
+|    icmp_ln25_fu_83_p2                           |     |        | icmp_ln25 | seteq      | auto      | 0       |
+|    add_ln25_fu_89_p2                            |     |        | add_ln25  | add        | fabric    | 0       |
+|    shl_ln30_fu_127_p2                           |     |        | shl_ln30  | shl        | auto_pipe | 0       |
+|    B_fu_133_p2                                  |     |        | B         | or         | auto      | 0       |
+|  + test_mul_converted_Pipeline_VITIS_LOOP_39_1  | 0   |        |           |            |           |         |
+|    icmp_ln39_fu_73_p2                           |     |        | icmp_ln39 | seteq      | auto      | 0       |
+|    add_ln39_fu_79_p2                            |     |        | add_ln39  | add        | fabric    | 0       |
+|    partselect_64ns_1024ns_32ns_64_1_1_U3        |     |        | w         | partselect | auto      | 0       |
++-------------------------------------------------+-----+--------+-----------+------------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                 | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                      |           |           |      |      |        |          |      |         | Banks            |
++----------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + test_mul_converted |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U    | interface | s_axilite |      |      |        |          |      |         |                  |
++----------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------+---------------------------------------------+
+| Type      | Options                                  | Location                                    |
++-----------+------------------------------------------+---------------------------------------------+
+| inline    |                                          | test_converted.cpp:23 in pack               |
+| pipeline  | II = 1                                   | test_converted.cpp:26 in pack               |
+| inline    |                                          | test_converted.cpp:38 in unpack             |
+| pipeline  | II = 1                                   | test_converted.cpp:40 in unpack             |
+| interface | bram port = a                            | test_converted.cpp:69 in test_mul_converted |
+| interface | bram port = b                            | test_converted.cpp:70 in test_mul_converted |
+| interface | bram port = c                            | test_converted.cpp:71 in test_mul_converted |
+| interface | s_axilite port = return bundle = control | test_converted.cpp:72 in test_mul_converted |
++-----------+------------------------------------------+---------------------------------------------+
+
+

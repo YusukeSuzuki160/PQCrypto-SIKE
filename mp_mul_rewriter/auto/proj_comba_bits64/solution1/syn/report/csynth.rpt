@@ -1,0 +1,167 @@
+
+
+================================================================
+== Synthesis Summary Report of 'test_mul_comba_configurable'
+================================================================
++ General Information: 
+    * Date:           Tue Oct 28 18:16:28 2025
+    * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+    * Project:        proj_comba_bits64
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |               Modules              | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |          |           |           |     |
+    |               & Loops              | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF    |    LUT    | URAM|
+    +------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |+ test_mul_comba_configurable       |     -|  0.96|      373|  3.730e+03|         -|      374|     -|        no|     -|  16 (~0%)|  460 (~0%)|  809 (~0%)|    -|
+    | + mul                              |     -|  0.96|      372|  3.720e+03|         -|      372|     -|        no|     -|  16 (~0%)|  421 (~0%)|  755 (~0%)|    -|
+    |  + mul_Pipeline_VITIS_LOOP_188_1   |     -|  5.49|       18|    180.000|         -|       18|     -|        no|     -|         -|    7 (~0%)|   61 (~0%)|    -|
+    |   o VITIS_LOOP_188_1               |     -|  7.30|       16|    160.000|         1|        1|    16|       yes|     -|         -|          -|          -|    -|
+    |  o VITIS_LOOP_210_2                |     -|  7.30|      352|  3.520e+03|        22|        -|    16|        no|     -|         -|          -|          -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_219_3  |     -|  0.96|       19|    190.000|         -|       19|     -|        no|     -|  16 (~0%)|  313 (~0%)|  523 (~0%)|    -|
+    |    o VITIS_LOOP_219_3              |     -|  7.30|       17|    170.000|         3|        1|    16|       yes|     -|         -|          -|          -|    -|
+    +------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* BRAM
++-----------+------------+---------------+
+| Interface | Data Width | Address Width |
++-----------+------------+---------------+
+| a_PORTA   | 64         | 32            |
+| b_PORTA   | 64         | 32            |
+| c_PORTA   | 64         | 32            |
++-----------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------+
+| Argument | Direction | Datatype                  |
++----------+-----------+---------------------------+
+| a        | in        | long unsigned int const * |
+| b        | in        | long unsigned int const * |
+| c        | out       | long unsigned int*        |
++----------+-----------+---------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| a        | a_PORTA      | interface |
+| b        | b_PORTA      | interface |
+| c        | c_PORTA      | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------+-----+--------+--------------+--------+----------+---------+
+| Name                              | DSP | Pragma | Variable     | Op     | Impl     | Latency |
++-----------------------------------+-----+--------+--------------+--------+----------+---------+
+| + test_mul_comba_configurable     | 16  |        |              |        |          |         |
+|  + mul                            | 16  |        |              |        |          |         |
+|    icmp_ln210_fu_124_p2           |     |        | icmp_ln210   | seteq  | auto     | 0       |
+|    pack_wi_1_fu_130_p2            |     |        | pack_wi_1    | add    | fabric   | 0       |
+|    icmp_ln210_1_fu_155_p2         |     |        | icmp_ln210_1 | setne  | auto     | 0       |
+|    add_ln210_fu_161_p2            |     |        | add_ln210    | add    | fabric   | 0       |
+|    select_ln210_fu_167_p3         |     |        | select_ln210 | select | auto_sel | 0       |
+|    icmp_ln214_fu_180_p2           |     |        | icmp_ln214   | setlt  | auto     | 0       |
+|    j_start_fu_186_p3              |     |        | j_start      | select | auto_sel | 0       |
+|    j_end_fu_195_p3                |     |        | j_end        | select | auto_sel | 0       |
+|   + mul_Pipeline_VITIS_LOOP_188_1 | 0   |        |              |        |          |         |
+|     icmp_ln188_fu_58_p2           |     |        | icmp_ln188   | seteq  | auto     | 0       |
+|     add_ln188_fu_64_p2            |     |        | add_ln188    | add    | fabric   | 0       |
+|   + mul_Pipeline_VITIS_LOOP_219_3 | 16  |        |              |        |          |         |
+|     icmp_ln219_fu_177_p2          |     |        | icmp_ln219   | setgt  | auto     | 0       |
+|     ib_fu_189_p2                  |     |        | ib           | sub    | fabric   | 0       |
+|     icmp_ln62_fu_204_p2           |     |        | icmp_ln62    | setne  | auto     | 0       |
+|     out_fu_258_p3                 |     |        | out          | select | auto_sel | 0       |
+|     icmp_ln62_1_fu_225_p2         |     |        | icmp_ln62_1  | setne  | auto     | 0       |
+|     out_4_fu_265_p3               |     |        | out_4        | select | auto_sel | 0       |
+|     mul_64ns_64ns_128_1_1_U1      | 16  |        | p            | mul    | auto     | 0       |
+|     sum_1_fu_287_p2               |     |        | sum_1        | add    | fabric   | 0       |
+|     j_fu_236_p2                   |     |        | j            | add    | fabric   | 0       |
+|     add_ln219_fu_242_p2           |     |        | add_ln219    | add    | fabric   | 0       |
++-----------------------------------+-----+--------+--------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                          | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                               |           |           |      |      |        |          |      |         | Banks            |
++-------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + test_mul_comba_configurable |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U             | interface | s_axilite |      |      |        |          |      |         |                  |
++-------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+------------------------------------------+----------------------------------------------------------+
+| Type           | Options                                  | Location                                                 |
++----------------+------------------------------------------+----------------------------------------------------------+
+| inline         |                                          | test_comba_bits64.cpp:50 in get_bits_as_chunk            |
+| pipeline       | II = 1                                   | test_comba_bits64.cpp:58 in get_bits_as_chunk            |
+| loop_tripcount | min = 1 max = GET_WORDS_MAX              | test_comba_bits64.cpp:59 in get_bits_as_chunk            |
+| inline         |                                          | test_comba_bits64.cpp:113 in init                        |
+| inline         |                                          | test_comba_bits64.cpp:123 in push                        |
+| pipeline       | II = 1                                   | test_comba_bits64.cpp:128 in push                        |
+| loop_tripcount | min = 1 max = 4                          | test_comba_bits64.cpp:129 in push                        |
+| inline         |                                          | test_comba_bits64.cpp:167 in flush                       |
+| loop_tripcount | min = 0 max = (2 * MAX_NWORDS)           | test_comba_bits64.cpp:177 in flush                       |
+| inline         | off                                      | test_comba_bits64.cpp:186 in mul                         |
+| pipeline       | II = 1                                   | test_comba_bits64.cpp:190 in mul                         |
+| pipeline       | II = 1                                   | test_comba_bits64.cpp:212 in mul                         |
+| loop_tripcount | min = 1 max = NMAX_CHUNKS                | test_comba_bits64.cpp:213 in mul                         |
+| pipeline       | II = 1                                   | test_comba_bits64.cpp:221 in mul                         |
+| loop_tripcount | min = 1 max = NMAX_CHUNKS                | test_comba_bits64.cpp:222 in mul                         |
+| interface      | bram port = a                            | test_comba_bits64.cpp:256 in test_mul_comba_configurable |
+| interface      | bram port = b                            | test_comba_bits64.cpp:257 in test_mul_comba_configurable |
+| interface      | bram port = c                            | test_comba_bits64.cpp:258 in test_mul_comba_configurable |
+| interface      | s_axilite port = return bundle = control | test_comba_bits64.cpp:259 in test_mul_comba_configurable |
++----------------+------------------------------------------+----------------------------------------------------------+
+
+

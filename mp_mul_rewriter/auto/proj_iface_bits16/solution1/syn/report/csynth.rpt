@@ -1,0 +1,178 @@
+
+
+================================================================
+== Synthesis Summary Report of 'test_mul_iface_configurable'
+================================================================
++ General Information: 
+    * Date:           Tue Oct 28 18:15:28 2025
+    * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+    * Project:        proj_iface_bits16
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |                      Modules                     | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |         |            |            |     |
+    |                      & Loops                     | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
+    +--------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |+ test_mul_iface_configurable                     |     -|  0.86|     1068|  1.068e+04|         -|     1069|     -|        no|     -|  1 (~0%)|  3182 (~0%)|  5465 (~0%)|    -|
+    | + mul                                            |     -|  0.86|     1067|  1.067e+04|         -|     1067|     -|        no|     -|  1 (~0%)|  3143 (~0%)|  5411 (~0%)|    -|
+    |  + mul_Pipeline_VITIS_LOOP_65_1                  |     -|  5.49|       18|    180.000|         -|       18|     -|        no|     -|        -|     7 (~0%)|    61 (~0%)|    -|
+    |   o VITIS_LOOP_65_1                              |     -|  7.30|       16|    160.000|         1|        1|    16|       yes|     -|        -|           -|           -|    -|
+    |  + mul_Pipeline_VITIS_LOOP_35_1                  |     -|  5.51|       10|    100.000|         -|       10|     -|        no|     -|        -|   522 (~0%)|   631 (~0%)|    -|
+    |   o VITIS_LOOP_35_1                              |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|     -|        -|           -|           -|    -|
+    |  + mul_Pipeline_VITIS_LOOP_35_11                 |     -|  5.51|       10|    100.000|         -|       10|     -|        no|     -|        -|   522 (~0%)|   631 (~0%)|    -|
+    |   o VITIS_LOOP_35_1                              |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|     -|        -|           -|           -|    -|
+    |  + mul_Pipeline_VITIS_LOOP_84_2_VITIS_LOOP_98_3  |     -|  0.86|     1026|  1.026e+04|         -|     1026|     -|        no|     -|  1 (~0%)|  2074 (~0%)|  3659 (~0%)|    -|
+    |   o VITIS_LOOP_84_2_VITIS_LOOP_98_3              |     -|  7.30|     1024|  1.024e+04|         2|        1|  1024|       yes|     -|        -|           -|           -|    -|
+    |  + mul_Pipeline_VITIS_LOOP_131_4                 |     -|  4.94|       18|    180.000|         -|       18|     -|        no|     -|        -|     7 (~0%)|   334 (~0%)|    -|
+    |   o VITIS_LOOP_131_4                             |     -|  7.30|       16|    160.000|         1|        1|    16|       yes|     -|        -|           -|           -|    -|
+    +--------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* BRAM
++-----------+------------+---------------+
+| Interface | Data Width | Address Width |
++-----------+------------+---------------+
+| a_PORTA   | 64         | 32            |
+| b_PORTA   | 64         | 32            |
+| c_PORTA   | 64         | 32            |
++-----------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------+
+| Argument | Direction | Datatype                  |
++----------+-----------+---------------------------+
+| a        | in        | long unsigned int const * |
+| b        | in        | long unsigned int const * |
+| c        | out       | long unsigned int*        |
++----------+-----------+---------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| a        | a_PORTA      | interface |
+| b        | b_PORTA      | interface |
+| c        | c_PORTA      | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------+-----+--------+-------------+------------+-----------+---------+
+| Name                                             | DSP | Pragma | Variable    | Op         | Impl      | Latency |
++--------------------------------------------------+-----+--------+-------------+------------+-----------+---------+
+| + test_mul_iface_configurable                    | 1   |        |             |            |           |         |
+|  + mul                                           | 1   |        |             |            |           |         |
+|   + mul_Pipeline_VITIS_LOOP_65_1                 | 0   |        |             |            |           |         |
+|     icmp_ln65_fu_58_p2                           |     |        | icmp_ln65   | seteq      | auto      | 0       |
+|     add_ln65_fu_64_p2                            |     |        | add_ln65    | add        | fabric    | 0       |
+|   + mul_Pipeline_VITIS_LOOP_35_1                 | 0   |        |             |            |           |         |
+|     icmp_ln35_fu_85_p2                           |     |        | icmp_ln35   | seteq      | auto      | 0       |
+|     add_ln35_fu_91_p2                            |     |        | add_ln35    | add        | fabric    | 0       |
+|     partset_512ns_512ns_64ns_32ns_512_1_1_U1     |     |        | A_1         | partset    | auto      | 0       |
+|   + mul_Pipeline_VITIS_LOOP_35_11                | 0   |        |             |            |           |         |
+|     icmp_ln35_fu_85_p2                           |     |        | icmp_ln35   | seteq      | auto      | 0       |
+|     add_ln35_fu_91_p2                            |     |        | add_ln35    | add        | fabric    | 0       |
+|     partset_512ns_512ns_64ns_32ns_512_1_1_U4     |     |        | B           | partset    | auto      | 0       |
+|   + mul_Pipeline_VITIS_LOOP_84_2_VITIS_LOOP_98_3 | 1   |        |             |            |           |         |
+|     icmp_ln84_fu_106_p2                          |     |        | icmp_ln84   | seteq      | auto      | 0       |
+|     add_ln84_fu_112_p2                           |     |        | add_ln84    | add        | fabric    | 0       |
+|     icmp_ln98_fu_124_p2                          |     |        | icmp_ln98   | seteq      | auto      | 0       |
+|     select_ln77_fu_130_p3                        |     |        | select_ln77 | select     | auto_sel  | 0       |
+|     add_ln84_1_fu_138_p2                         |     |        | add_ln84_1  | add        | fabric    | 0       |
+|     select_ln84_fu_144_p3                        |     |        | select_ln84 | select     | auto_sel  | 0       |
+|     partselect_16ns_512ns_32ns_16_1_1_U6         |     |        | ai          | partselect | auto      | 0       |
+|     partselect_16ns_512ns_32ns_16_1_1_U7         |     |        | bj          | partselect | auto      | 0       |
+|     mul_16ns_16ns_32_1_1_U8                      | 1   |        | prod        | mul        | auto      | 0       |
+|     add_ln118_fu_222_p2                          |     |        | add_ln118   | add        | fabric    | 0       |
+|     term_1_fu_244_p2                             |     |        | term_1      | shl        | auto_pipe | 0       |
+|     ACC_fu_274_p2                                |     |        | ACC         | add        | fabric    | 0       |
+|     j_1_fu_250_p2                                |     |        | j_1         | add        | fabric    | 0       |
+|   + mul_Pipeline_VITIS_LOOP_131_4                | 0   |        |             |            |           |         |
+|     icmp_ln131_fu_73_p2                          |     |        | icmp_ln131  | seteq      | auto      | 0       |
+|     add_ln131_fu_79_p2                           |     |        | add_ln131   | add        | fabric    | 0       |
+|     partselect_64ns_1024ns_32ns_64_1_1_U14       |     |        | tmp         | partselect | auto      | 0       |
++--------------------------------------------------+-----+--------+-------------+------------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                          | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                               |           |           |      |      |        |          |      |         | Banks            |
++-------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + test_mul_iface_configurable |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U             | interface | s_axilite |      |      |        |          |      |         |                  |
++-------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+------------------------------------------------------------------------+----------------------------------------------------------+
+| Type           | Options                                                                | Location                                                 |
++----------------+------------------------------------------------------------------------+----------------------------------------------------------+
+| inline         |                                                                        | test_iface_bits16.cpp:33 in pack                         |
+| pipeline       | II = 1                                                                 | test_iface_bits16.cpp:37 in pack                         |
+| loop_tripcount | min = 1 max = MAX_NWORDS                                               | test_iface_bits16.cpp:38 in pack                         |
+| inline         |                                                                        | test_iface_bits16.cpp:49 in unpack                       |
+| pipeline       | II = 1                                                                 | test_iface_bits16.cpp:52 in unpack                       |
+| loop_tripcount | min = 1 max = MAX_NWORDS                                               | test_iface_bits16.cpp:53 in unpack                       |
+| inline         | off                                                                    | test_iface_bits16.cpp:63 in mul                          |
+| pipeline       | II = 1                                                                 | test_iface_bits16.cpp:67 in mul                          |
+| loop_tripcount | min = 1 max = (2 * MAX_NWORDS)                                         | test_iface_bits16.cpp:68 in mul                          |
+| loop_tripcount | min = 1 max = ((W * MAX_NWORDS + BLOCK_BITS_VAR - 1) / BLOCK_BITS_VAR) | test_iface_bits16.cpp:86 in mul                          |
+| loop_tripcount | min = 1 max = ((W * MAX_NWORDS + BLOCK_BITS_VAR - 1) / BLOCK_BITS_VAR) | test_iface_bits16.cpp:100 in mul                         |
+| pipeline       | II = 1                                                                 | test_iface_bits16.cpp:101 in mul                         |
+| loop_tripcount | min = 1 max = (2 * MAX_NWORDS)                                         | test_iface_bits16.cpp:133 in mul                         |
+| loop_tripcount | min = 1 max = (2 * MAX_NWORDS)                                         | test_iface_bits16.cpp:141 in mul                         |
+| interface      | bram port = a                                                          | test_iface_bits16.cpp:160 in test_mul_iface_configurable |
+| interface      | bram port = b                                                          | test_iface_bits16.cpp:161 in test_mul_iface_configurable |
+| interface      | bram port = c                                                          | test_iface_bits16.cpp:162 in test_mul_iface_configurable |
+| interface      | s_axilite port = return bundle = control                               | test_iface_bits16.cpp:163 in test_mul_iface_configurable |
++----------------+------------------------------------------------------------------------+----------------------------------------------------------+
+
+

@@ -1,0 +1,35 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 254,
+    "instructions": 6,
+    "name": "test_mul_comba_configurable",
+    "total_instructions": 171
+  },
+  "1": {
+    "basicblocks": 36,
+    "calls": "",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 184,
+    "instructions": 163,
+    "loads": {
+      "L": 2
+    },
+    "name": "mul",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 163
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 248,
+    "instructions": 2,
+    "name": "mp_mul_comba_configurable",
+    "total_instructions": 165
+  }
+}

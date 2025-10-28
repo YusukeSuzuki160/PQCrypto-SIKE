@@ -1,0 +1,47 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "test_iface_bits128.cpp",
+    "fileloc": 158,
+    "instructions": 6,
+    "name": "test_mul_iface_configurable",
+    "total_instructions": 833
+  },
+  "1": {
+    "basicblocks": 44,
+    "calls": "2 2",
+    "file": "test_iface_bits128.cpp",
+    "fileloc": 61,
+    "instructions": 207,
+    "loads": {
+      "L": 2
+    },
+    "name": "mul",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 825
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "test_iface_bits128.cpp",
+    "fileloc": 31,
+    "instructions": 26,
+    "loads": {
+      "L": 1
+    },
+    "name": "pack",
+    "total_instructions": 88
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_iface_bits128.cpp",
+    "fileloc": 152,
+    "instructions": 2,
+    "name": "mp_mul_iface_configurable",
+    "total_instructions": 827
+  }
+}

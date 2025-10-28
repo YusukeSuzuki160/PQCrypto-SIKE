@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_Pipeline_VITIS_LOOP_84_2_VITIS_LOOP_98_3'
+================================================================
+* Date:           Tue Oct 28 18:17:04 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        proj_iface_bits256
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.440 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        7|        7|  70.000 ns|  70.000 ns|    5|    5|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_84_2_VITIS_LOOP_98_3  |        5|        5|         3|          1|          1|     4|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.93>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%ACC_1 = alloca i32 1" [test_iface_bits256.cpp:77]   --->   Operation 6 'alloca' 'ACC_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [test_iface_bits256.cpp:98]   --->   Operation 7 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [test_iface_bits256.cpp:84]   --->   Operation 8 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 9 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%A_4_reload_read = read i512 @_ssdm_op_Read.ap_auto.i512, i512 %A_4_reload"   --->   Operation 10 'read' 'A_4_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%A_reload_read = read i512 @_ssdm_op_Read.ap_auto.i512, i512 %A_reload"   --->   Operation 11 'read' 'A_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.38ns)   --->   "%store_ln0 = store i3 0, i3 %indvar_flatten"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln84 = store i2 0, i2 %i" [test_iface_bits256.cpp:84]   --->   Operation 13 'store' 'store_ln84' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 14 [1/1] (0.38ns)   --->   "%store_ln98 = store i2 0, i2 %j" [test_iface_bits256.cpp:98]   --->   Operation 14 'store' 'store_ln98' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 15 [1/1] (0.38ns)   --->   "%store_ln77 = store i1024 0, i1024 %ACC_1" [test_iface_bits256.cpp:77]   --->   Operation 15 'store' 'store_ln77' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body19"   --->   Operation 16 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i3 %indvar_flatten" [test_iface_bits256.cpp:84]   --->   Operation 17 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.57ns)   --->   "%icmp_ln84 = icmp_eq  i3 %indvar_flatten_load, i3 4" [test_iface_bits256.cpp:84]   --->   Operation 18 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 0.57> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.57ns)   --->   "%add_ln84 = add i3 %indvar_flatten_load, i3 1" [test_iface_bits256.cpp:84]   --->   Operation 19 'add' 'add_ln84' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln84 = br i1 %icmp_ln84, void %for.inc45, void %for.inc61.preheader.exitStub" [test_iface_bits256.cpp:84]   --->   Operation 20 'br' 'br_ln84' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%j_load = load i2 %j" [test_iface_bits256.cpp:84]   --->   Operation 21 'load' 'j_load' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%i_load = load i2 %i" [test_iface_bits256.cpp:84]   --->   Operation 22 'load' 'i_load' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node and_ln105)   --->   "%trunc_ln84 = trunc i2 %j_load" [test_iface_bits256.cpp:84]   --->   Operation 23 'trunc' 'trunc_ln84' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.43ns)   --->   "%icmp_ln98 = icmp_eq  i2 %j_load, i2 2" [test_iface_bits256.cpp:98]   --->   Operation 24 'icmp' 'icmp_ln98' <Predicate = (!icmp_ln84)> <Delay = 0.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node and_ln105)   --->   "%xor_ln105 = xor i1 %icmp_ln98, i1 1" [test_iface_bits256.cpp:105]   --->   Operation 25 'xor' 'xor_ln105' <Predicate = (!icmp_ln84)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln105 = and i1 %trunc_ln84, i1 %xor_ln105" [test_iface_bits256.cpp:105]   --->   Operation 26 'and' 'and_ln105' <Predicate = (!icmp_ln84)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.43ns)   --->   "%add_ln84_1 = add i2 %i_load, i2 1" [test_iface_bits256.cpp:84]   --->   Operation 27 'add' 'add_ln84_1' <Predicate = (!icmp_ln84)> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.27ns)   --->   "%select_ln84 = select i1 %icmp_ln98, i2 %add_ln84_1, i2 %i_load" [test_iface_bits256.cpp:84]   --->   Operation 28 'select' 'select_ln84' <Predicate = (!icmp_ln84)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln89 = trunc i2 %select_ln84" [test_iface_bits256.cpp:89]   --->   Operation 29 'trunc' 'trunc_ln89' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%lo_i = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i1.i8, i1 %trunc_ln89, i8 0" [test_iface_bits256.cpp:89]   --->   Operation 30 'bitconcatenate' 'lo_i' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln89 = zext i9 %lo_i" [test_iface_bits256.cpp:89]   --->   Operation 31 'zext' 'zext_ln89' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (1.21ns)   --->   "%ai = partselect i256 @_ssdm_op_PartSelect.i256.i512.i32, i512 %A_reload_read, i32 %zext_ln89" [test_iface_bits256.cpp:95]   --->   Operation 32 'partselect' 'ai' <Predicate = (!icmp_ln84)> <Delay = 1.21> <CoreInst = "PartSelect">   --->   Core 165 'PartSelect' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'partselect'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%conv3_i_i42 = zext i256 %ai" [test_iface_bits256.cpp:95]   --->   Operation 33 'zext' 'conv3_i_i42' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%lo_j = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i1.i8, i1 %and_ln105, i8 0" [test_iface_bits256.cpp:105]   --->   Operation 34 'bitconcatenate' 'lo_j' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln105 = zext i9 %lo_j" [test_iface_bits256.cpp:105]   --->   Operation 35 'zext' 'zext_ln105' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (1.21ns)   --->   "%bj = partselect i256 @_ssdm_op_PartSelect.i256.i512.i32, i512 %A_4_reload_read, i32 %zext_ln105" [test_iface_bits256.cpp:111]   --->   Operation 36 'partselect' 'bj' <Predicate = (!icmp_ln84)> <Delay = 1.21> <CoreInst = "PartSelect">   --->   Core 165 'PartSelect' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'partselect'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln115 = zext i256 %bj" [test_iface_bits256.cpp:115]   --->   Operation 37 'zext' 'zext_ln115' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_1 : Operation 38 [2/2] (3.61ns)   --->   "%prod = mul i512 %zext_ln115, i512 %conv3_i_i42" [test_iface_bits256.cpp:115]   --->   Operation 38 'mul' 'prod' <Predicate = (!icmp_ln84)> <Delay = 3.61> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 3.61> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.27ns)   --->   "%j_1 = select i1 %and_ln105, i2 2, i2 1" [test_iface_bits256.cpp:98]   --->   Operation 39 'select' 'j_1' <Predicate = (!icmp_ln84)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.38ns)   --->   "%store_ln84 = store i3 %add_ln84, i3 %indvar_flatten" [test_iface_bits256.cpp:84]   --->   Operation 40 'store' 'store_ln84' <Predicate = (!icmp_ln84)> <Delay = 0.38>
+ST_1 : Operation 41 [1/1] (0.38ns)   --->   "%store_ln84 = store i2 %select_ln84, i2 %i" [test_iface_bits256.cpp:84]   --->   Operation 41 'store' 'store_ln84' <Predicate = (!icmp_ln84)> <Delay = 0.38>
+ST_1 : Operation 42 [1/1] (0.38ns)   --->   "%store_ln98 = store i2 %j_1, i2 %j" [test_iface_bits256.cpp:98]   --->   Operation 42 'store' 'store_ln98' <Predicate = (!icmp_ln84)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 5.05>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln98 = zext i1 %trunc_ln89" [test_iface_bits256.cpp:98]   --->   Operation 43 'zext' 'zext_ln98' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/2] (3.61ns)   --->   "%prod = mul i512 %zext_ln115, i512 %conv3_i_i42" [test_iface_bits256.cpp:115]   --->   Operation 44 'mul' 'prod' <Predicate = true> <Delay = 3.61> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 3.61> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%zext_ln118 = zext i1 %and_ln105" [test_iface_bits256.cpp:118]   --->   Operation 45 'zext' 'zext_ln118' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.43ns)   --->   "%add_ln118 = add i2 %zext_ln118, i2 %zext_ln98" [test_iface_bits256.cpp:118]   --->   Operation 46 'add' 'add_ln118' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%shift = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %add_ln118, i8 0" [test_iface_bits256.cpp:118]   --->   Operation 47 'bitconcatenate' 'shift' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln121 = zext i512 %prod" [test_iface_bits256.cpp:121]   --->   Operation 48 'zext' 'zext_ln121' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln122 = zext i10 %shift" [test_iface_bits256.cpp:122]   --->   Operation 49 'zext' 'zext_ln122' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (1.44ns)   --->   "%term_1 = shl i1024 %zext_ln121, i1024 %zext_ln122" [test_iface_bits256.cpp:122]   --->   Operation 50 'shl' 'term_1' <Predicate = true> <Delay = 1.44> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%ACC_1_load_1 = load i1024 %ACC_1"   --->   Operation 58 'load' 'ACC_1_load_1' <Predicate = (icmp_ln84)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i1024P0A, i1024 %ACC_1_out, i1024 %ACC_1_load_1"   --->   Operation 59 'write' 'write_ln0' <Predicate = (icmp_ln84)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 60 'ret' 'ret_ln0' <Predicate = (icmp_ln84)> <Delay = 0.38>
+
+State 3 <SV = 2> <Delay = 6.44>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%ACC_1_load = load i1024 %ACC_1" [test_iface_bits256.cpp:123]   --->   Operation 51 'load' 'ACC_1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_84_2_VITIS_LOOP_98_3_str"   --->   Operation 52 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 53 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%specpipeline_ln101 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [test_iface_bits256.cpp:101]   --->   Operation 54 'specpipeline' 'specpipeline_ln101' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (6.05ns)   --->   "%ACC = add i1024 %term_1, i1024 %ACC_1_load" [test_iface_bits256.cpp:123]   --->   Operation 55 'add' 'ACC' <Predicate = true> <Delay = 6.05> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 6.05> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.38ns)   --->   "%store_ln77 = store i1024 %ACC, i1024 %ACC_1" [test_iface_bits256.cpp:77]   --->   Operation 56 'store' 'store_ln77' <Predicate = true> <Delay = 0.38>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln98 = br void %for.body19" [test_iface_bits256.cpp:98]   --->   Operation 57 'br' 'br_ln98' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.932ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln84', test_iface_bits256.cpp:84) of constant 0 on local variable 'i', test_iface_bits256.cpp:84 [11]  (0.387 ns)
+	'load' operation 2 bit ('i_load', test_iface_bits256.cpp:84) on local variable 'i', test_iface_bits256.cpp:84 [23]  (0.000 ns)
+	'add' operation 2 bit ('add_ln84_1', test_iface_bits256.cpp:84) [30]  (0.436 ns)
+	'select' operation 2 bit ('select_ln84', test_iface_bits256.cpp:84) [31]  (0.278 ns)
+	'mul' operation 512 bit ('prod', test_iface_bits256.cpp:115) [43]  (3.612 ns)
+	blocking operation 1.219 ns on control path)
+
+ <State 2>: 5.055ns
+The critical path consists of the following:
+	'mul' operation 512 bit ('prod', test_iface_bits256.cpp:115) [43]  (3.612 ns)
+	'shl' operation 1024 bit ('term', test_iface_bits256.cpp:122) [49]  (1.443 ns)
+
+ <State 3>: 6.440ns
+The critical path consists of the following:
+	'load' operation 1024 bit ('ACC_1_load', test_iface_bits256.cpp:123) on local variable 'ACC', test_iface_bits256.cpp:77 [21]  (0.000 ns)
+	'add' operation 1024 bit ('ACC', test_iface_bits256.cpp:123) [50]  (6.053 ns)
+	'store' operation 0 bit ('store_ln77', test_iface_bits256.cpp:77) of variable 'ACC', test_iface_bits256.cpp:123 on local variable 'ACC', test_iface_bits256.cpp:77 [55]  (0.387 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "test_mul_comba_configurable",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "test_mul_comba_configurable"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_comba_bits64.tcl",
+    "sourceLine": 9,
+    "success": true
+  }
+]

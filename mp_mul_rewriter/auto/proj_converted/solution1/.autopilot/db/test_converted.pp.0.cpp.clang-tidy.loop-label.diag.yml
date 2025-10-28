@@ -1,0 +1,58 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_converted/solution1/.autopilot/db/test_converted.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_converted/solution1/.autopilot/db/test_converted.pp.0.cpp
+        Offset:          280662
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_converted/solution1/.autopilot/db/test_converted.pp.0.cpp
+        Offset:          281128
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_converted/solution1/.autopilot/db/test_converted.pp.0.cpp
+        Offset:          281595
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_converted/solution1/.autopilot/db/test_converted.pp.0.cpp
+        Offset:          565408
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_1:  '
+    FileOffset:      25
+    FilePath:        test_converted.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_converted/solution1/.autopilot/db/test_converted.pp.0.cpp
+        Offset:          1722209
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        test_converted.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_converted/solution1/.autopilot/db/test_converted.pp.0.cpp
+        Offset:          1722664
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+...

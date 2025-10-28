@@ -1,0 +1,198 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 75, Column: 21 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::pack(unsigned long const*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 32, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 154, Column: 5 }
+Function:        _Z25mp_mul_iface_configurablePKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 153, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 164, Column: 2 }
+Function:        _Z27test_mul_iface_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 159, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '16'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_131_4
+  - String:          ''' ('
+  - LoopLoc:         'test_iface_bits128.cpp:131:35'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '4'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_98_3
+  - String:          ''' ('
+  - LoopLoc:         'test_iface_bits128.cpp:98:34'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '4'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_84_2
+  - String:          ''' ('
+  - LoopLoc:         'test_iface_bits128.cpp:84:30'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '16'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_65_1
+  - String:          ''' ('
+  - LoopLoc:         'test_iface_bits128.cpp:65:19'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 154, Column: 5 }
+Function:        _Z25mp_mul_iface_configurablePKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 153, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 164, Column: 2 }
+Function:        _Z27test_mul_iface_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 159, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_mul_iface_configurable_ir
+Args:            
+  - Callee:          'test_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 159, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_mul_iface_configurable_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 159, Column: 0 }
+Function:        _Z27test_mul_iface_configurablePKmS0_Pm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mp_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 153, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'test_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 159, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_131_4
+  - String:          '> at '
+  - LoopLoc:         'test_iface_bits128.cpp:131:35'
+  - String:          ' '
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_iface_bits128.cpp, Line: 154, Column: 5 }
+Function:        _Z27test_mul_iface_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 62, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_iface_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_iface_bits128.cpp, Line: 159, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -1,0 +1,42 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_converted.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_mul_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_mul_converted" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_converted.cpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_converted.cpp:48:21" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::pack(unsigned long const*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::pack(unsigned long const*, unsigned int)" Callee-DebugLoc="File test_converted.cpp Line 22 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_converted.cpp Line 47 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_converted.cpp:51:13" msg_body="Inlining function 'void mpx::PackedOps&lt;unsigned long, 8u, true&gt;::unpack&lt;ap_uint&lt;1024&gt; &gt;(ap_uint&lt;1024&gt; const&amp;, unsigned long*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="void mpx::PackedOps&lt;unsigned long, 8u, true&gt;::unpack&lt;ap_uint&lt;1024&gt; &gt;(ap_uint&lt;1024&gt; const&amp;, unsigned long*, unsigned int)" Callee-DebugLoc="File test_converted.cpp Line 37 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_converted.cpp Line 47 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_converted.cpp:62:0" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u, true&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File test_converted.cpp Line 47 Column 0" Caller="mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_converted.cpp Line 62 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_converted.cpp:68:0" msg_body="Inlining function 'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'test_mul_converted(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File test_converted.cpp Line 62 Column 0" Caller="test_mul_converted(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File test_converted.cpp Line 68 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

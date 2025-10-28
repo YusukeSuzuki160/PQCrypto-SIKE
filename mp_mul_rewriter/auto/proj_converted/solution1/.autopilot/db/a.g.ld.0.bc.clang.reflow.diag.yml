@@ -1,0 +1,119 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: test_converted.cpp, Line: 48, Column: 21 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::pack(unsigned long const*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 22, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 47, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: test_converted.cpp, Line: 51, Column: 13 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void mpx::PackedOps<unsigned long, 8u, true>::unpack<ap_uint<1024> >(ap_uint<1024> const&, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 47, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_converted.cpp, Line: 63, Column: 5 }
+Function:        _Z16mp_mul_convertedPKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 47, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 62, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_converted.cpp, Line: 73, Column: 2 }
+Function:        _Z18test_mul_convertedPKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 62, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_converted(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_converted.cpp, Line: 68, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_converted.cpp, Line: 63, Column: 5 }
+Function:        _Z16mp_mul_convertedPKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 47, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 62, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_converted.cpp, Line: 73, Column: 2 }
+Function:        _Z18test_mul_convertedPKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 62, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_converted(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_converted.cpp, Line: 68, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_mul_converted_ir
+Args:            
+  - Callee:          'test_mul_converted(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_converted.cpp, Line: 68, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_mul_converted_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_converted.cpp, Line: 62, Column: 0 }
+Function:        _Z16mp_mul_convertedPKmS0_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 47, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 62, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_converted.cpp, Line: 68, Column: 0 }
+Function:        _Z18test_mul_convertedPKmS0_Pm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mp_mul_converted(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_converted.cpp, Line: 62, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'test_mul_converted(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_converted.cpp, Line: 68, Column: 0 }
+  - String:          ''''
+...

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "test_orig.cpp",
+    "fileloc": 77,
+    "instructions": 114,
+    "loads": {
+      "T": 4
+    },
+    "name": "test_mul_orig",
+    "stores": {
+      "T": 3
+    },
+    "total_instructions": 114
+  }
+}

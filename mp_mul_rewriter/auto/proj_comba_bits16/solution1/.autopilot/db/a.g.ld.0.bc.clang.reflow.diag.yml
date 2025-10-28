@@ -1,0 +1,377 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 197, Column: 34 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::ceil_div_u(unsigned int, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 20, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 205, Column: 18 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u>::ChunkPacker::init(unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 112, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 242, Column: 18 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u>::ChunkPacker::flush()'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 166, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 241, Column: 18 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u>::ChunkPacker::push(ap_uint<16>)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 122, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 229, Column: 40 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u>::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 49, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 250, Column: 5 }
+Function:        _Z25mp_mul_comba_configurablePKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 249, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 260, Column: 2 }
+Function:        _Z27test_mul_comba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 249, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 255, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 219, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_219_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '64'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_210_2
+  - String:          ''' ('
+  - LoopLoc:         'test_comba_bits16.cpp:210:31'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u>::mul'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '16'
+  - String:          ' to '
+  - NewBound:        '64'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_210_2
+  - String:          ''' ('
+  - LoopLoc:         'test_comba_bits16.cpp:210:31'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u>::mul'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 250, Column: 5 }
+Function:        _Z25mp_mul_comba_configurablePKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 249, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 260, Column: 2 }
+Function:        _Z27test_mul_comba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 249, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 255, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_mul_comba_configurable_ir
+Args:            
+  - Callee:          'test_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 255, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_mul_comba_configurable_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 255, Column: 0 }
+Function:        _Z27test_mul_comba_configurablePKmS0_Pm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mp_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 249, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'test_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 255, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          ' '
+  - LoopLoc:         'test_comba_bits16.cpp:126:35'
+  - String:          ' '
+  - Function:        'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          ' '
+  - LoopLoc:         'test_comba_bits16.cpp:126:35'
+  - String:          ' '
+  - Function:        'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          '''('
+  - LoopLoc:         'test_comba_bits16.cpp:126:35'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          '''('
+  - LoopLoc:         'test_comba_bits16.cpp:126:35'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 219, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_219_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_175_1
+  - String:          '> at '
+  - LoopLoc:         'test_comba_bits16.cpp:175:35'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 219, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_219_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 219, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_219_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 219, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_219_3
+  - String:          ''' ('
+  - LoopLoc:         'test_comba_bits16.cpp:219:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 126, Column: 35 }
+Function:        _ZN3mpx9PackedOpsImLj8EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_126_1
+  - String:          ''' ('
+  - LoopLoc:         'test_comba_bits16.cpp:126:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u>::mul'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_comba_bits16.cpp, Line: 250, Column: 5 }
+Function:        _Z27test_mul_comba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 185, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_comba_bits16.cpp, Line: 255, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

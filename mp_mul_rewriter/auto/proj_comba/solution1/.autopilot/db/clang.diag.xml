@@ -1,0 +1,35 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/proj_comba/solution1/.autopilot/db/test_comba.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>error</string>
+      <key>filename</key>
+      <string>test_comba.cpp</string>
+      <key>line</key>
+      <integer>67</integer>
+      <key>column</key>
+      <integer>10</integer>
+      <key>message</key>
+      <string>too many template arguments for class template &apos;PackedOps&apos;</string>
+      <key>ID</key>
+      <integer>3557</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>note</string>
+      <key>filename</key>
+      <string>test_comba.cpp</string>
+      <key>line</key>
+      <integer>17</integer>
+      <key>column</key>
+      <integer>12</integer>
+      <key>message</key>
+      <string>template is declared here</string>
+      <key>ID</key>
+      <integer>4520</integer>
+    </dict>
+  </array>
+</dict>

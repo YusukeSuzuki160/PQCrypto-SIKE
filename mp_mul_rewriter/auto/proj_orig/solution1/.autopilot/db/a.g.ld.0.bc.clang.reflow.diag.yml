@@ -1,0 +1,151 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_orig.cpp, Line: 43, Column: 34 }
+Function:        _Z11mp_mul_origPKmS0_Pmj
+Args:            
+  - Callee:          'idx_in(unsigned int, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_orig.cpp, Line: 50, Column: 11 }
+Function:        _Z11mp_mul_origPKmS0_Pmj
+Args:            
+  - Callee:          'idx_out(unsigned int, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 13, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_orig.cpp, Line: 83, Column: 2 }
+Function:        _Z13test_mul_origPKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_orig(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_orig.cpp, Line: 78, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_orig.cpp, Line: 43, Column: 34 }
+Function:        _Z11mp_mul_origPKmS0_Pmj
+Args:            
+  - Callee:          'idx_in(unsigned int, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_orig.cpp, Line: 50, Column: 11 }
+Function:        _Z11mp_mul_origPKmS0_Pmj
+Args:            
+  - Callee:          'idx_out(unsigned int, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 13, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_orig.cpp, Line: 83, Column: 2 }
+Function:        _Z13test_mul_origPKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_orig(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_orig.cpp, Line: 78, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_mul_orig_ir
+Args:            
+  - Callee:          'test_mul_orig(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_orig.cpp, Line: 78, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_mul_orig_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+Function:        _Z11mp_mul_origPKmS0_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'idx_in(unsigned int, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+Function:        _Z11mp_mul_origPKmS0_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'idx_out(unsigned int, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 13, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_orig.cpp, Line: 78, Column: 0 }
+Function:        _Z13test_mul_origPKmS0_Pm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mp_mul_orig(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_orig.cpp, Line: 33, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'test_mul_orig(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_orig.cpp, Line: 78, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          '> at '
+  - LoopLoc:         'test_orig.cpp:41:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_59_7
+  - String:          '> at '
+  - LoopLoc:         'test_orig.cpp:59:26'
+  - String:          ' '
+...

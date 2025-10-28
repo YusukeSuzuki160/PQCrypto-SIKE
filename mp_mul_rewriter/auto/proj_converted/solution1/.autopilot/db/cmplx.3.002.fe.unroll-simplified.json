@@ -1,0 +1,35 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "test_converted.cpp",
+    "fileloc": 67,
+    "instructions": 6,
+    "name": "test_mul_converted",
+    "total_instructions": 58
+  },
+  "1": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "test_converted.cpp",
+    "fileloc": 47,
+    "instructions": 50,
+    "loads": {
+      "L": 2
+    },
+    "name": "mul",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 50
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_converted.cpp",
+    "fileloc": 61,
+    "instructions": 2,
+    "name": "mp_mul_converted",
+    "total_instructions": 52
+  }
+}

@@ -1,0 +1,60 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 2923, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,   588, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   365, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   362, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   362, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   235, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   235, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   235, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   235, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   249, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   249, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   237, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   235, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   235, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   235, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   263, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="test_mul_comba_configurable" col1="test_comba_bits256.cpp:254" col2="2923" col3="362" col4="249" col5="235" col6="263">
+                    <row id="4" col0="mp_mul_comba_configurable" col1="test_comba_bits256.cpp:248" col2="2917" col3="" col4="" col5="" col6="">
+                        <row id="5" col0="mul" col1="test_comba_bits256.cpp:184" col2="2915" col3="" col4="" col5="" col6="">
+                            <row id="2" col0="ceil_div_u" col1="test_comba_bits256.cpp:19" col2="8" col2_disp="   8 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="3" col0="init" col1="test_comba_bits256.cpp:111" col2="11" col3="" col4="" col5="" col6=""/>
+                            <row id="1" col0="get_bits_as_chunk" col1="test_comba_bits256.cpp:48" col2="1352" col2_disp="1,352 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="2" col0="ceil_div_u" col1="test_comba_bits256.cpp:19" col2="8" col2_disp="   8 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="7" col0="push" col1="test_comba_bits256.cpp:121" col2="936" col2_disp=" 936 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="6" col0="flush" col1="test_comba_bits256.cpp:165" col2="47" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="5" col0="mul" col1="test_comba_bits256.cpp:184" col2="" col3="356" col4="240" col5="226" col6="253"/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

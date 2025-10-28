@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="test_comba_bits32.cpp:126:35" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="test_comba_bits32.cpp:126:35" LoopName="VITIS_LOOP_126_1" ParentFunc="mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)"/>
+</VitisHLS:BurstInfo>
+

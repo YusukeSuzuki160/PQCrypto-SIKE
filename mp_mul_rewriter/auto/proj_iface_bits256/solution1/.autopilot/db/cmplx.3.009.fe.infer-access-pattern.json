@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_iface_bits256.cpp",
+    "fileloc": 158,
+    "instructions": 9,
+    "name": "test_mul_iface_configurable",
+    "total_instructions": 80
+  },
+  "1": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "test_iface_bits256.cpp",
+    "fileloc": 61,
+    "instructions": 71,
+    "loads": {
+      "L": 2
+    },
+    "name": "mul",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 71
+  }
+}

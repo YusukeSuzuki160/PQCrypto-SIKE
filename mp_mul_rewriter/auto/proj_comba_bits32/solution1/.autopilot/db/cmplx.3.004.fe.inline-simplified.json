@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_comba_bits32.cpp",
+    "fileloc": 254,
+    "instructions": 6,
+    "name": "test_mul_comba_configurable",
+    "total_instructions": 206
+  },
+  "1": {
+    "basicblocks": 40,
+    "calls": "",
+    "file": "test_comba_bits32.cpp",
+    "fileloc": 184,
+    "instructions": 200,
+    "loads": {
+      "L": 4
+    },
+    "name": "mul",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 200
+  }
+}

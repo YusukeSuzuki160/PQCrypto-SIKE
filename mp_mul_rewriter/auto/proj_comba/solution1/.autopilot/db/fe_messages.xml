@@ -1,0 +1,9 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-3557" msg_severity="ERROR" msg_loc="test_comba.cpp:67:10" msg_body="too many template arguments for class template 'PackedOps'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4520" msg_severity="INFO" msg_loc="test_comba.cpp:17:12" msg_body="template is declared here">
+        <args/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

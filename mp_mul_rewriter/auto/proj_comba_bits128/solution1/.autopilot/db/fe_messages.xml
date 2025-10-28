@@ -1,0 +1,105 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_bits_as_chunk" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = GET_WORDS_MAX" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="init" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:123:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:128:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="push" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 4" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="flush" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:177:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="flush" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 0 max = (2 * MAX_NWORDS)" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:190:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:212:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = NMAX_CHUNKS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = NMAX_CHUNKS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_comba_bits128.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_mul_comba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_mul_comba_configurable" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_comba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:257:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_comba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:258:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_comba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:259:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_comba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:205:18" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::ChunkPacker::init(unsigned long*, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u&gt;::ChunkPacker::init(unsigned long*, unsigned int)" Callee-DebugLoc="File test_comba_bits128.cpp Line 112 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_comba_bits128.cpp Line 185 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:242:18" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::ChunkPacker::flush()' into 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u&gt;::ChunkPacker::flush()" Callee-DebugLoc="File test_comba_bits128.cpp Line 166 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_comba_bits128.cpp Line 185 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:241:18" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)' into 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u&gt;::ChunkPacker::push(ap_uint&lt;128&gt;)" Callee-DebugLoc="File test_comba_bits128.cpp Line 122 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_comba_bits128.cpp Line 185 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:229:40" msg_body="Inlining function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)' into 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::PackedOps&lt;unsigned long, 8u&gt;::get_bits_as_chunk(unsigned long const*, unsigned int, unsigned int)" Callee-DebugLoc="File test_comba_bits128.cpp Line 49 Column 0" Caller="mpx::PackedOps&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File test_comba_bits128.cpp Line 185 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:219:35" msg_body="Loop 'VITIS_LOOP_219_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_219_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:56:30" msg_body="Loop 'VITIS_LOOP_56_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_56_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:126:35" msg_body="Loop 'VITIS_LOOP_126_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_126_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:185:0" msg_body="Updating loop lower bound from 1 to 8 for loop 'VITIS_LOOP_210_2' (test_comba_bits128.cpp:210:31) in function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul'.">
+        <args LoopLoc="test_comba_bits128.cpp:210:31" LoopName="VITIS_LOOP_210_2" NewBound="8" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:185:0" msg_body="Updating loop upper bound from 16 to 8 for loop 'VITIS_LOOP_210_2' (test_comba_bits128.cpp:210:31) in function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul'.">
+        <args LoopLoc="test_comba_bits128.cpp:210:31" LoopName="VITIS_LOOP_210_2" NewBound="8" OldBound="16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:185:0" msg_body="Unrolling loop 'VITIS_LOOP_56_1' (test_comba_bits128.cpp:56:30) in function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul' completely with a factor of 2">
+        <args Factor="2" LoopLoc="test_comba_bits128.cpp:56:30" LoopName="VITIS_LOOP_56_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:185:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_56_1' (test_comba_bits128.cpp:56:30) in function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul' has been removed because the loop is unrolled completely">
+        <args LoopLoc="test_comba_bits128.cpp:56:30" LoopName="VITIS_LOOP_56_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_comba_bits128.cpp:255:0" msg_body="Inlining function 'mp_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'test_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File test_comba_bits128.cpp Line 249 Column 0" Caller="test_mul_comba_configurable(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File test_comba_bits128.cpp Line 255 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:219:35" msg_body="Cannot unroll loop 'VITIS_LOOP_219_3' (test_comba_bits128.cpp:219:35) in function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul' as it has a variable trip count">
+        <args LoopLoc="test_comba_bits128.cpp:219:35" LoopName="VITIS_LOOP_219_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="test_comba_bits128.cpp:126:35" msg_body="Cannot unroll loop 'VITIS_LOOP_126_1' (test_comba_bits128.cpp:126:35) in function 'mpx::PackedOps&lt;unsigned long, 8u&gt;::mul' as it has a variable trip count">
+        <args LoopLoc="test_comba_bits128.cpp:126:35" LoopName="VITIS_LOOP_126_1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

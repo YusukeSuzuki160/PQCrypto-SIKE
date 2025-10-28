@@ -1,0 +1,262 @@
+
+
+================================================================
+== Vitis HLS Report for 'test_mul_orig'
+================================================================
+* Date:           Tue Oct 28 18:15:01 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        proj_orig
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.678 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      122|      220|  1.220 us|  2.200 us|  123|  221|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_39_1  |       64|      120|    8 ~ 15|          -|          -|     8|        no|
+        |- VITIS_LOOP_57_6  |       56|       98|    8 ~ 14|          -|          -|     7|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 6 
+3 --> 4 
+4 --> 5 
+5 --> 2 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 6 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%indvars_iv14 = alloca i32 1"   --->   Operation 10 'alloca' 'indvars_iv14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83]   --->   Operation 11 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%u = alloca i32 1" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 12 'alloca' 'u' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%v = alloca i32 1" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 13 'alloca' 'v' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%t_2_loc = alloca i64 1"   --->   Operation 14 'alloca' 't_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%v_7_loc = alloca i64 1"   --->   Operation 15 'alloca' 'v_7_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%v_3_loc = alloca i64 1"   --->   Operation 16 'alloca' 'v_3_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%spectopmodule_ln77 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3" [test_orig.cpp:77]   --->   Operation 17 'spectopmodule' 'spectopmodule_ln77' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %a"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %b, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %b"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %c"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_2, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%store_ln35 = store i64 0, i64 %v" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 25 'store' 'store_ln35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%store_ln35 = store i4 0, i4 %u" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 26 'store' 'store_ln35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.38ns)   --->   "%store_ln13 = store i4 0, i4 %i" [test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83]   --->   Operation 27 'store' 'store_ln13' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 28 [1/1] (0.38ns)   --->   "%store_ln0 = store i4 1, i4 %indvars_iv14"   --->   Operation 28 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln39 = br void %VITIS_LOOP_41_2.i" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 29 'br' 'br_ln39' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.09>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%i_2 = load i4 %i" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 30 'load' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%u_2 = load i4 %u"   --->   Operation 31 'load' 'u_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%v_7 = load i64 %v"   --->   Operation 32 'load' 'v_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.70ns)   --->   "%icmp_ln39 = icmp_eq  i4 %i_2, i4 8" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 33 'icmp' 'icmp_ln39' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.70ns)   --->   "%add_ln39 = add i4 %i_2, i4 1" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 34 'add' 'add_ln39' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln39 = br i1 %icmp_ln39, void %VITIS_LOOP_41_2.i.split, void %VITIS_LOOP_59_7.i.preheader" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 35 'br' 'br_ln39' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.38ns)   --->   "%store_ln13 = store i4 %add_ln39, i4 %i" [test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83]   --->   Operation 36 'store' 'store_ln13' <Predicate = (!icmp_ln39)> <Delay = 0.38>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%u_1 = alloca i32 1" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 37 'alloca' 'u_1' <Predicate = (icmp_ln39)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%v_1 = alloca i32 1" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 38 'alloca' 'v_1' <Predicate = (icmp_ln39)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%indvars_iv = alloca i32 1"   --->   Operation 39 'alloca' 'indvars_iv' <Predicate = (icmp_ln39)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%i_1 = alloca i32 1" [test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83]   --->   Operation 40 'alloca' 'i_1' <Predicate = (icmp_ln39)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.38ns)   --->   "%store_ln13 = store i4 8, i4 %i_1" [test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83]   --->   Operation 41 'store' 'store_ln13' <Predicate = (icmp_ln39)> <Delay = 0.38>
+ST_2 : Operation 42 [1/1] (0.38ns)   --->   "%store_ln0 = store i4 1, i4 %indvars_iv"   --->   Operation 42 'store' 'store_ln0' <Predicate = (icmp_ln39)> <Delay = 0.38>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%store_ln35 = store i64 %v_7, i64 %v_1" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 43 'store' 'store_ln35' <Predicate = (icmp_ln39)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.38ns)   --->   "%store_ln35 = store i4 %u_2, i4 %u_1" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 44 'store' 'store_ln35' <Predicate = (icmp_ln39)> <Delay = 0.38>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln57 = br void %VITIS_LOOP_59_7.i" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 45 'br' 'br_ln57' <Predicate = (icmp_ln39)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.28>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%indvars_iv14_load = load i4 %indvars_iv14" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 46 'load' 'indvars_iv14_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%trunc_ln39 = trunc i4 %i_2" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 47 'trunc' 'trunc_ln39' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [2/2] (1.28ns)   --->   "%call_ln39 = call void @test_mul_orig_Pipeline_VITIS_LOOP_41_2, i64 %v_7, i4 %u_2, i4 %indvars_iv14_load, i64 %a, i3 %trunc_ln39, i64 %b, i64 %v_3_loc, i64 %v, i4 %u" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 48 'call' 'call_ln39' <Predicate = true> <Delay = 1.28> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 49 [1/1] (0.70ns)   --->   "%add_ln39_1 = add i4 %indvars_iv14_load, i4 1" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 49 'add' 'add_ln39_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 50 [1/1] (0.38ns)   --->   "%store_ln39 = store i4 %add_ln39_1, i4 %indvars_iv14" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 50 'store' 'store_ln39' <Predicate = true> <Delay = 0.38>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln39 = call void @test_mul_orig_Pipeline_VITIS_LOOP_41_2, i64 %v_7, i4 %u_2, i4 %indvars_iv14_load, i64 %a, i3 %trunc_ln39, i64 %b, i64 %v_3_loc, i64 %v, i4 %u" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 51 'call' 'call_ln39' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.94>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%speclooptripcount_ln35 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 52 'speclooptripcount' 'speclooptripcount_ln35' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%specloopname_ln39 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 53 'specloopname' 'specloopname_ln39' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%v_3_loc_load = load i64 %v_3_loc"   --->   Operation 54 'load' 'v_3_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.22ns)   --->   "%xor_ln13 = xor i4 %i_2, i4 15" [test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83]   --->   Operation 55 'xor' 'xor_ln13' <Predicate = true> <Delay = 0.22> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln50 = zext i4 %xor_ln13" [test_orig.cpp:50->test_orig.cpp:83]   --->   Operation 56 'zext' 'zext_ln50' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%c_addr_1 = getelementptr i64 %c, i64 0, i64 %zext_ln50" [test_orig.cpp:50->test_orig.cpp:83]   --->   Operation 57 'getelementptr' 'c_addr_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln50 = store i64 %v_3_loc_load, i4 %c_addr_1" [test_orig.cpp:50->test_orig.cpp:83]   --->   Operation 58 'store' 'store_ln50' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln39 = br void %VITIS_LOOP_41_2.i" [test_orig.cpp:39->test_orig.cpp:83]   --->   Operation 59 'br' 'br_ln39' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 2> <Delay = 1.42>
+ST_6 : Operation 60 [1/1] (0.00ns)   --->   "%i_3 = load i4 %i_1" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 60 'load' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 61 [1/1] (0.70ns)   --->   "%icmp_ln57 = icmp_eq  i4 %i_3, i4 15" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 61 'icmp' 'icmp_ln57' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln57 = br i1 %icmp_ln57, void %VITIS_LOOP_59_7.i.split, void %_Z11mp_mul_origPKmS0_Pmj.exit" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 62 'br' 'br_ln57' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (0.00ns)   --->   "%v_1_load = load i64 %v_1"   --->   Operation 63 'load' 'v_1_load' <Predicate = (!icmp_ln57)> <Delay = 0.00>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln57_1 = trunc i4 %i_3" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 64 'trunc' 'trunc_ln57_1' <Predicate = (!icmp_ln57)> <Delay = 0.00>
+ST_6 : Operation 65 [1/1] (0.70ns)   --->   "%add_ln57 = add i4 %i_3, i4 1" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 65 'add' 'add_ln57' <Predicate = (!icmp_ln57)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 66 [1/1] (0.38ns)   --->   "%store_ln13 = store i4 %add_ln57, i4 %i_1" [test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83]   --->   Operation 66 'store' 'store_ln13' <Predicate = (!icmp_ln57)> <Delay = 0.38>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%v_1_load_1 = load i64 %v_1" [test_orig.cpp:73->test_orig.cpp:83]   --->   Operation 67 'load' 'v_1_load_1' <Predicate = (icmp_ln57)> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i64 %c, i64 0, i64 0" [test_orig.cpp:73->test_orig.cpp:83]   --->   Operation 68 'getelementptr' 'c_addr' <Predicate = (icmp_ln57)> <Delay = 0.00>
+ST_6 : Operation 69 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln73 = store i64 %v_1_load_1, i4 %c_addr" [test_orig.cpp:73->test_orig.cpp:83]   --->   Operation 69 'store' 'store_ln73' <Predicate = (icmp_ln57)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%ret_ln84 = ret" [test_orig.cpp:84]   --->   Operation 70 'ret' 'ret_ln84' <Predicate = (icmp_ln57)> <Delay = 0.00>
+
+State 7 <SV = 3> <Delay = 1.67>
+ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%u_1_load = load i4 %u_1"   --->   Operation 71 'load' 'u_1_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 72 [1/1] (0.00ns)   --->   "%indvars_iv_load = load i4 %indvars_iv" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 72 'load' 'indvars_iv_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "%trunc_ln57 = trunc i4 %indvars_iv_load" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 73 'trunc' 'trunc_ln57' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 74 [2/2] (1.67ns)   --->   "%call_ln57 = call void @test_mul_orig_Pipeline_VITIS_LOOP_59_7, i3 %trunc_ln57, i64 %v_1_load, i4 %u_1_load, i64 %a, i3 %trunc_ln57_1, i64 %b, i64 %v_7_loc, i64 %v_1, i3 %t_2_loc" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 74 'call' 'call_ln57' <Predicate = true> <Delay = 1.67> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 75 [1/1] (0.70ns)   --->   "%add_ln57_1 = add i4 %indvars_iv_load, i4 1" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 75 'add' 'add_ln57_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 76 [1/1] (0.38ns)   --->   "%store_ln57 = store i4 %add_ln57_1, i4 %indvars_iv" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 76 'store' 'store_ln57' <Predicate = true> <Delay = 0.38>
+
+State 8 <SV = 4> <Delay = 0.00>
+ST_8 : Operation 77 [1/2] (0.00ns)   --->   "%call_ln57 = call void @test_mul_orig_Pipeline_VITIS_LOOP_59_7, i3 %trunc_ln57, i64 %v_1_load, i4 %u_1_load, i64 %a, i3 %trunc_ln57_1, i64 %b, i64 %v_7_loc, i64 %v_1, i3 %t_2_loc" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 77 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 5> <Delay = 0.83>
+ST_9 : Operation 78 [1/1] (0.00ns)   --->   "%speclooptripcount_ln34 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 7, i64 7, i64 7" [test_orig.cpp:34->test_orig.cpp:83]   --->   Operation 78 'speclooptripcount' 'speclooptripcount_ln34' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 79 [1/1] (0.00ns)   --->   "%specloopname_ln57 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 79 'specloopname' 'specloopname_ln57' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 80 [1/1] (0.00ns)   --->   "%v_7_loc_load = load i64 %v_7_loc"   --->   Operation 80 'load' 'v_7_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 81 [1/1] (0.00ns)   --->   "%t_2_loc_load = load i3 %t_2_loc"   --->   Operation 81 'load' 't_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln59 = zext i3 %t_2_loc_load" [test_orig.cpp:59->test_orig.cpp:83]   --->   Operation 82 'zext' 'zext_ln59' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 83 [1/1] (0.12ns)   --->   "%xor_ln13_1 = xor i3 %trunc_ln57_1, i3 7" [test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83]   --->   Operation 83 'xor' 'xor_ln13_1' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln68 = zext i3 %xor_ln13_1" [test_orig.cpp:68->test_orig.cpp:83]   --->   Operation 84 'zext' 'zext_ln68' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 85 [1/1] (0.00ns)   --->   "%c_addr_2 = getelementptr i64 %c, i64 0, i64 %zext_ln68" [test_orig.cpp:68->test_orig.cpp:83]   --->   Operation 85 'getelementptr' 'c_addr_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 86 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln68 = store i64 %v_7_loc_load, i4 %c_addr_2" [test_orig.cpp:68->test_orig.cpp:83]   --->   Operation 86 'store' 'store_ln68' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_9 : Operation 87 [1/1] (0.38ns)   --->   "%store_ln35 = store i4 %zext_ln59, i4 %u_1" [test_orig.cpp:35->test_orig.cpp:83]   --->   Operation 87 'store' 'store_ln35' <Predicate = true> <Delay = 0.38>
+ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%br_ln57 = br void %VITIS_LOOP_59_7.i" [test_orig.cpp:57->test_orig.cpp:83]   --->   Operation 88 'br' 'br_ln57' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 4 bit ('i', test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83) [5]  (0.000 ns)
+	'store' operation 0 bit ('store_ln13', test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83) of constant 0 on local variable 'i', test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83 [21]  (0.387 ns)
+
+ <State 2>: 1.095ns
+The critical path consists of the following:
+	'load' operation 4 bit ('i', test_orig.cpp:39->test_orig.cpp:83) on local variable 'i', test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83 [25]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln39', test_orig.cpp:39->test_orig.cpp:83) [28]  (0.708 ns)
+	'store' operation 0 bit ('store_ln13', test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83) of constant 8 on local variable 'i', test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83 [51]  (0.387 ns)
+
+ <State 3>: 1.286ns
+The critical path consists of the following:
+	'load' operation 4 bit ('indvars_iv14_load', test_orig.cpp:39->test_orig.cpp:83) on local variable 'indvars_iv14' [32]  (0.000 ns)
+	'call' operation 0 bit ('call_ln39', test_orig.cpp:39->test_orig.cpp:83) to 'test_mul_orig_Pipeline_VITIS_LOOP_41_2' [36]  (1.286 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.942ns
+The critical path consists of the following:
+	'xor' operation 4 bit ('xor_ln13', test_orig.cpp:13->test_orig.cpp:50->test_orig.cpp:83) [38]  (0.228 ns)
+	'getelementptr' operation 4 bit ('c_addr_1', test_orig.cpp:50->test_orig.cpp:83) [40]  (0.000 ns)
+	'store' operation 0 bit ('store_ln50', test_orig.cpp:50->test_orig.cpp:83) of variable 'v_3_loc_load' on array 'c' [41]  (0.714 ns)
+
+ <State 6>: 1.422ns
+The critical path consists of the following:
+	'load' operation 4 bit ('i', test_orig.cpp:57->test_orig.cpp:83) on local variable 'i', test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83 [57]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln57', test_orig.cpp:57->test_orig.cpp:83) [58]  (0.708 ns)
+	'store' operation 0 bit ('store_ln73', test_orig.cpp:73->test_orig.cpp:83) of variable 'v_1_load_1', test_orig.cpp:73->test_orig.cpp:83 on array 'c' [85]  (0.714 ns)
+
+ <State 7>: 1.673ns
+The critical path consists of the following:
+	'load' operation 4 bit ('u_1_load') on local variable 'u', test_orig.cpp:35->test_orig.cpp:83 [61]  (0.000 ns)
+	'call' operation 0 bit ('call_ln57', test_orig.cpp:57->test_orig.cpp:83) to 'test_mul_orig_Pipeline_VITIS_LOOP_59_7' [68]  (1.673 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.836ns
+The critical path consists of the following:
+	'xor' operation 3 bit ('xor_ln13_1', test_orig.cpp:13->test_orig.cpp:68->test_orig.cpp:83) [72]  (0.122 ns)
+	'getelementptr' operation 4 bit ('c_addr_2', test_orig.cpp:68->test_orig.cpp:83) [74]  (0.000 ns)
+	'store' operation 0 bit ('store_ln68', test_orig.cpp:68->test_orig.cpp:83) of variable 'v_7_loc_load' on array 'c' [75]  (0.714 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

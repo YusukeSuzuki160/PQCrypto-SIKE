@@ -1,0 +1,101 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 254,
+    "instructions": 6,
+    "name": "test_mul_comba_configurable",
+    "total_instructions": 2789
+  },
+  "1": {
+    "basicblocks": 25,
+    "calls": "3 3 4 2 2 5 5 7",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 184,
+    "instructions": 159,
+    "loads": {
+      "L": 3
+    },
+    "name": "mul",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 2781
+  },
+  "2": {
+    "basicblocks": 30,
+    "calls": "3",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 48,
+    "instructions": 190,
+    "loads": {
+      "L": 9
+    },
+    "name": "get_bits_as_chunk",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 646
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 19,
+    "instructions": 4,
+    "name": "ceil_div_u",
+    "total_instructions": 4
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 111,
+    "instructions": 11,
+    "name": "init",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 11
+  },
+  "5": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 121,
+    "instructions": 140,
+    "loads": {
+      "L": 14
+    },
+    "name": "push",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 431
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 248,
+    "instructions": 2,
+    "name": "mp_mul_comba_configurable",
+    "total_instructions": 2783
+  },
+  "7": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "test_comba_bits64.cpp",
+    "fileloc": 165,
+    "instructions": 47,
+    "loads": {
+      "L": 11
+    },
+    "name": "flush",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 47
+  }
+}
