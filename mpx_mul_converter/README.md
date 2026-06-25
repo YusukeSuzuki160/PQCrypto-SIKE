@@ -23,7 +23,7 @@
 
 ```
 mpx_mul_converter/
-├── README.md                 # 本ファイル
+├── README.md
 ├── CMakeLists.txt
 ├── mpx_auto_rewriter.cpp     # Clang ベース変換ツール本体
 ├── include/                  # 変換後コードが include する HLS 向けヘッダ
@@ -31,9 +31,17 @@ mpx_mul_converter/
 │   ├── mpx_packed_16bit.hpp … mpx_packed_256bit.hpp
 │   └── mpx_packed_karatsuba.hpp
 ├── examples/
-│   └── test_karatsuba_handwritten.cpp   # Karatsuba 検出・変換のサンプル入力
-└── scripts/
-    └── run_rewrite_test.sh              # 変換＋数値一致テスト
+│   ├── test_karatsuba_handwritten.cpp       # Karatsuba 検出・変換サンプル
+│   ├── test_karatsuba_handwritten_flat.cpp  # HLS ベースライン（手書き平坦版）
+│   └── test_karatsuba_configurable.cpp      # BASE/MUL_BITS 設定可能テスト
+├── scripts/
+│   ├── run_rewrite_test.sh           # 変換＋数値一致
+│   ├── run_configurable_test.sh      # PackedOps 数値一致
+│   ├── run_karatsuba_base_sweep.sh   # HLS 分割数スイープ
+│   └── parse_kara_reports.py         # csynth.rpt 解析
+└── hls_comparison_results/
+    ├── karatsuba_report.md             # HLS 性能比較レポート
+    └── karatsuba_*_csynth.rpt          # 合成レポート
 ```
 
 ---
@@ -254,14 +262,26 @@ a,b → pack → ap_uint<W×N> ─×─→ ap_uint<2×W×N> → unpack → c
 
 ## 7. 動作確認
 
-Vitis HLS の `ap_int.h` が必要です。
+Vitis HLS の `ap_int.h` が必要です。すべて `mpx_mul_converter` 直下で実行します。
 
 ```bash
-chmod +x scripts/run_rewrite_test.sh
+cd mpx_mul_converter
+mkdir -p build && cd build && cmake .. && make mpx_auto_rewriter && cd ..
+
+chmod +x scripts/*.sh
+
+# 変換パイプライン＋数値一致（再帰 mp_mul スタブ）
 bash scripts/run_rewrite_test.sh
+
+# PackedOps 直接の数値一致（参照学校式）
+bash scripts/run_configurable_test.sh
+
+# HLS 分割数スイープ（要 Vitis HLS）
+source /path/to/Vitis/2024.2/settings64.sh
+bash scripts/run_karatsuba_base_sweep.sh
 ```
 
-`examples/test_karatsuba_handwritten.cpp` を Karatsuba モードで変換し、参照乗算との一致を確認します。
+HLS 性能比較レポート: [`hls_comparison_results/karatsuba_report.md`](hls_comparison_results/karatsuba_report.md)
 
 ---
 
@@ -271,9 +291,3 @@ bash scripts/run_rewrite_test.sh
 - `--output` 未指定かつ `--dry-run` なしの場合、**入力ファイルを上書き**する
 - `nwords > MAX_NWORDS` のとき生成コードは早期 `return` する（呼び出し側で保証すること）
 - Clang 引数（`-I`, `-D`）は解析対象ソースに合わせる必要がある
-
----
-
-## 関連（リポジトリ内）
-
-HLS 性能比較レポート（分割数スイープ）は [`mp_mul_rewriter/auto/hls_comparison_results/karatsuba_report.md`](../mp_mul_rewriter/auto/hls_comparison_results/karatsuba_report.md) を参照してください。

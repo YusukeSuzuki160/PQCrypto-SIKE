@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mul_1'" level="0">
-<item name = "Date">Thu Jun 25 13:36:23 2026
+<item name = "Date">Thu Jun 25 13:54:32 2026
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">proj_kara_base1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.216 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.213 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">821, 1434, 8.210 us, 14.340 us, 821, 1434, no</column>
+<column name="">194, ?, 1.940 us, ?, 194, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mul_1_Pipeline_VITIS_LOOP_256_1_fu_363">mul_1_Pipeline_VITIS_LOOP_256_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_mul_1_Pipeline_VITIS_LOOP_256_16_fu_370">mul_1_Pipeline_VITIS_LOOP_256_16, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_mul_fu_377">mul, 782, 1395, 7.820 us, 13.950 us, 782, 1395, no</column>
-<column name="grp_mul_1_Pipeline_VITIS_LOOP_276_1_fu_384">mul_1_Pipeline_VITIS_LOOP_276_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_fu_18">mul, 193, ?, 1.930 us, ?, 193, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

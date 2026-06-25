@@ -1,0 +1,91 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mul'" level="0">
+<item name = "Date">Thu Jun 25 13:51:07 2026
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">proj_kara_base2</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flga2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.180 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">122, 130, 1.220 us, 1.300 us, 122, 130, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_mul_Pipeline_VITIS_LOOP_151_1_fu_664">mul_Pipeline_VITIS_LOOP_151_1, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_157_2_fu_680">mul_Pipeline_VITIS_LOOP_157_2, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_151_11_fu_696">mul_Pipeline_VITIS_LOOP_151_11, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_157_22_fu_708">mul_Pipeline_VITIS_LOOP_157_22, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_1_fu_720">mul_Pipeline_VITIS_LOOP_74_1, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_13_fu_730">mul_Pipeline_VITIS_LOOP_74_13, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_1_fu_740">mul_Pipeline_VITIS_LOOP_56_1, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_15_fu_751">mul_Pipeline_VITIS_LOOP_56_15, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_151_18_fu_762">mul_Pipeline_VITIS_LOOP_151_18, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_157_29_fu_774">mul_Pipeline_VITIS_LOOP_157_29, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_121_fu_786">mul_Pipeline_VITIS_LOOP_56_121, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_122_fu_803">mul_Pipeline_VITIS_LOOP_56_122, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_2_fu_820">mul_Pipeline_VITIS_LOOP_81_2, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_24_fu_829">mul_Pipeline_VITIS_LOOP_81_24, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_16_fu_838">mul_Pipeline_VITIS_LOOP_74_16, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_110_fu_848">mul_Pipeline_VITIS_LOOP_74_110, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_112_fu_858">mul_Pipeline_VITIS_LOOP_74_112, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_114_fu_868">mul_Pipeline_VITIS_LOOP_56_114, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_115_fu_879">mul_Pipeline_VITIS_LOOP_56_115, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_151_123_fu_890">mul_Pipeline_VITIS_LOOP_151_123, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_157_224_fu_902">mul_Pipeline_VITIS_LOOP_157_224, 4, 5, 40.000 ns, 50.000 ns, 3, 4, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_27_fu_917">mul_Pipeline_VITIS_LOOP_81_27, 6, 8, 60.000 ns, 80.000 ns, 5, 7, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_97_1_fu_924">mul_Pipeline_VITIS_LOOP_97_1, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_211_fu_938">mul_Pipeline_VITIS_LOOP_81_211, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_213_fu_947">mul_Pipeline_VITIS_LOOP_81_213, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_116_fu_956">mul_Pipeline_VITIS_LOOP_74_116, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_125_fu_966">mul_Pipeline_VITIS_LOOP_74_125, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_127_fu_976">mul_Pipeline_VITIS_LOOP_74_127, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_129_fu_986">mul_Pipeline_VITIS_LOOP_56_129, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_56_130_fu_998">mul_Pipeline_VITIS_LOOP_56_130, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_103_2_fu_1010">mul_Pipeline_VITIS_LOOP_103_2, 6, 8, 60.000 ns, 80.000 ns, 5, 7, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_217_fu_1017">mul_Pipeline_VITIS_LOOP_81_217, 6, 8, 60.000 ns, 80.000 ns, 5, 7, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_97_118_fu_1024">mul_Pipeline_VITIS_LOOP_97_118, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_226_fu_1038">mul_Pipeline_VITIS_LOOP_81_226, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_228_fu_1047">mul_Pipeline_VITIS_LOOP_81_228, 6, 8, 60.000 ns, 80.000 ns, 5, 7, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_131_fu_1057">mul_Pipeline_VITIS_LOOP_74_131, 4, 4, 40.000 ns, 40.000 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_113_3_fu_1067">mul_Pipeline_VITIS_LOOP_113_3, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_103_219_fu_1073">mul_Pipeline_VITIS_LOOP_103_219, 6, 8, 60.000 ns, 80.000 ns, 5, 7, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_232_fu_1080">mul_Pipeline_VITIS_LOOP_81_232, 6, 10, 60.000 ns, 0.100 us, 5, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_97_133_fu_1087">mul_Pipeline_VITIS_LOOP_97_133, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_113_320_fu_1101">mul_Pipeline_VITIS_LOOP_113_320, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_103_234_fu_1107">mul_Pipeline_VITIS_LOOP_103_234, 6, 9, 60.000 ns, 90.000 ns, 5, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_113_335_fu_1114">mul_Pipeline_VITIS_LOOP_113_335, 10, 12, 0.100 us, 0.120 us, 9, 11, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_97_136_fu_1121">mul_Pipeline_VITIS_LOOP_97_136, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_103_237_fu_1129">mul_Pipeline_VITIS_LOOP_103_237, 10, 12, 0.100 us, 0.120 us, 9, 11, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_113_338_fu_1136">mul_Pipeline_VITIS_LOOP_113_338, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

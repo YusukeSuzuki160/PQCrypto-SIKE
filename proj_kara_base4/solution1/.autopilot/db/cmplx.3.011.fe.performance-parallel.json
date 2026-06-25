@@ -1,0 +1,35 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "test_kara_sweep_base4.cpp",
+    "fileloc": 19,
+    "instructions": 9,
+    "name": "test_mul_karatsuba_configurable",
+    "total_instructions": 296
+  },
+  "1": {
+    "basicblocks": 50,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 173,
+    "instructions": 285,
+    "loads": {
+      "L": 7
+    },
+    "name": "mul",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 285
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 185,
+    "instructions": 2,
+    "name": "mul",
+    "total_instructions": 287
+  }
+}

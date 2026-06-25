@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mp_mul_flat_Pipeline_VITIS_LOOP_54_1'
 ================================================================
-* Date:           Thu Jun 25 13:37:19 2026
+* Date:           Thu Jun 25 13:55:37 2026
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_kara_flat
@@ -198,13 +198,13 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln54', ../test_karatsuba_handwritten_flat.cpp:54) of constant 0 on local variable 'i', ../test_karatsuba_handwritten_flat.cpp:54 [38]  (0.387 ns)
 	'load' operation 3 bit ('i', ../test_karatsuba_handwritten_flat.cpp:54) on local variable 'i', ../test_karatsuba_handwritten_flat.cpp:54 [41]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln54', ../test_karatsuba_handwritten_flat.cpp:54) [42]  (0.572 ns)
+	'add' operation 3 bit ('add_ln54', ../test_karatsuba_handwritten_flat.cpp:54) [43]  (0.572 ns)
 	'store' operation 0 bit ('store_ln54', ../test_karatsuba_handwritten_flat.cpp:54) of variable 'add_ln54', ../test_karatsuba_handwritten_flat.cpp:54 on local variable 'i', ../test_karatsuba_handwritten_flat.cpp:54 [87]  (0.387 ns)
 
  <State 2>: 0.714ns
 The critical path consists of the following:
 	'load' operation 64 bit ('Bh', ../test_karatsuba_handwritten_flat.cpp:60) on array 'b' [60]  (0.714 ns)
-	'store' operation 0 bit ('store_ln53', ../test_karatsuba_handwritten_flat.cpp:53) of variable 'Bh', ../test_karatsuba_handwritten_flat.cpp:60 on local variable 'Bh', ../test_karatsuba_handwritten_flat.cpp:53 [63]  (0.000 ns)
+	'store' operation 0 bit ('store_ln53', ../test_karatsuba_handwritten_flat.cpp:53) of variable 'Bh', ../test_karatsuba_handwritten_flat.cpp:60 on local variable 'Bh', ../test_karatsuba_handwritten_flat.cpp:53 [75]  (0.000 ns)
 
 
 ============================================================

@@ -1,14 +1,14 @@
 {
     "1": {
-        "name": "mul_sized<8u>_Pipeline_VITIS_LOOP_175_1",
+        "name": "mul_Pipeline_VITIS_LOOP_81_284",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "175",
-        "instructions": "22",
-        "total_instructions": "22",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "3"
+            "L": "5"
         },
         "stores": {
             "L": "4"
@@ -18,9 +18,81 @@
         }
     },
     "2": {
-        "name": "karatsuba_combine.3_Pipeline_VITIS_LOOP_128_17",
+        "name": "mul_Pipeline_VITIS_LOOP_81_23",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "143",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "mul_Pipeline_VITIS_LOOP_157_22",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_139",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_158",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "59",
+        "total_instructions": "59",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_255",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
         "instructions": "29",
         "total_instructions": "29",
         "calls": "",
@@ -35,142 +107,52 @@
             "L": "1"
         }
     },
-    "3": {
-        "name": "karatsuba_combine.3_Pipeline_VITIS_LOOP_128_1",
+    "7": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_341",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "142",
-        "instructions": "30",
-        "total_instructions": "30",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "9",
         "loads": {
-            "L": "4"
+            "L": "5"
         },
         "stores": {
-            "L": "4"
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
-    "4": {
-        "name": "mul_sized<2u>_Pipeline_VITIS_LOOP_175_1",
+    "8": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_353",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "175",
-        "instructions": "16",
-        "total_instructions": "16",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "2"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "5": {
-        "name": "mul_sized<4u>_Pipeline_VITIS_LOOP_175_1",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "175",
+        "fileloc": "176",
         "instructions": "22",
         "total_instructions": "22",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "4"
-        },
-        "loops": {
             "L": "1"
-        }
-    },
-    "6": {
-        "name": "mul_sized<4>",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "159",
-        "instructions": "36",
-        "total_instructions": "2004",
-        "calls": "5 49 43 7 7 29 53 21 32",
-        "basicblocks": "1",
-        "loads": {
-            "L": "2"
         },
         "stores": {
-            "L": "2"
-        }
-    },
-    "7": {
-        "name": "mul_sized<2>",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "159",
-        "instructions": "41",
-        "total_instructions": "546",
-        "calls": "4 12 33 39 39 47 45 10 32",
-        "basicblocks": "1",
-        "loads": {
-            "L": "2"
-        },
-        "stores": {
-            "L": "2"
-        }
-    },
-    "8": {
-        "name": "mul_sized<1u>.4_Pipeline_VITIS_LOOP_110_1",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "166",
-        "instructions": "24",
-        "total_instructions": "24",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "4"
-        },
-        "stores": {
-            "L": "4"
+            "L": "3"
         },
         "loops": {
             "L": "1"
         }
     },
     "9": {
-        "name": "mul",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "292",
-        "instructions": "75",
-        "total_instructions": "6505",
-        "calls": "38 28 46 16",
-        "basicblocks": "1",
-        "stores": {
-            "L": "32"
-        }
-    },
-    "10": {
-        "name": "mul_sized<1>",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "159",
-        "instructions": "16",
-        "total_instructions": "62",
-        "calls": "8 42",
-        "basicblocks": "1",
-        "loads": {
-            "L": "4"
-        }
-    },
-    "11": {
-        "name": "mul_sized<8u>_Pipeline_VITIS_LOOP_181_2",
+        "name": "mul_Pipeline_VITIS_LOOP_81_228",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "181",
-        "instructions": "25",
-        "total_instructions": "25",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "3"
+            "L": "5"
         },
         "stores": {
             "L": "4"
@@ -179,16 +161,52 @@
             "L": "1"
         }
     },
-    "12": {
-        "name": "mul_sized<2u>_Pipeline_VITIS_LOOP_181_2",
+    "10": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_356",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "181",
-        "instructions": "25",
-        "total_instructions": "25",
+        "fileloc": "176",
+        "instructions": "22",
+        "total_instructions": "22",
         "calls": "",
         "basicblocks": "4",
         "loads": {
+            "L": "1"
+        },
+        "stores": {
             "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "mul_Pipeline_VITIS_LOOP_151_159",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_224",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
         },
         "stores": {
             "L": "4"
@@ -198,15 +216,15 @@
         }
     },
     "13": {
-        "name": "mul_sized<2u>.2_Pipeline_VITIS_LOOP_175_1",
+        "name": "mul_Pipeline_VITIS_LOOP_81_261",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "175",
-        "instructions": "23",
-        "total_instructions": "23",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "3"
+            "L": "5"
         },
         "stores": {
             "L": "4"
@@ -216,70 +234,87 @@
         }
     },
     "14": {
-        "name": "karatsuba_combine.3_Pipeline_VITIS_LOOP_148_1",
+        "name": "mul_Pipeline_VITIS_LOOP_113_391",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "147",
-        "instructions": "26",
-        "total_instructions": "26",
+        "fileloc": "176",
+        "instructions": "22",
+        "total_instructions": "22",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "3"
+            "L": "1"
         },
         "stores": {
-            "L": "4"
+            "L": "3"
         },
         "loops": {
             "L": "1"
         }
     },
     "15": {
-        "name": "mul_sized<8u>_Pipeline_VITIS_LOOP_187_3",
+        "name": "mul_Pipeline_VITIS_LOOP_56_172",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "187",
-        "instructions": "18",
-        "total_instructions": "18",
+        "fileloc": "176",
+        "instructions": "38",
+        "total_instructions": "38",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "1"
+            "L": "5"
         },
         "stores": {
-            "L": "4"
+            "L": "5"
         },
         "loops": {
             "L": "1"
         }
     },
     "16": {
-        "name": "mul.1_Pipeline_VITIS_LOOP_276_1",
+        "name": "mul_Pipeline_VITIS_LOOP_81_264",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "310",
-        "instructions": "19",
-        "total_instructions": "19",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "9",
         "loads": {
-            "L": "2"
+            "L": "5"
         },
         "stores": {
-            "L": "2",
-            "T": "1"
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
     "17": {
-        "name": "mul_sized<2u>.2_Pipeline_VITIS_LOOP_187_3",
+        "name": "mul_Pipeline_VITIS_LOOP_81_250",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "187",
-        "instructions": "18",
-        "total_instructions": "18",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_170",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "1"
+            "L": "2"
         },
         "stores": {
             "L": "4"
@@ -288,81 +323,66 @@
             "L": "1"
         }
     },
-    "18": {
-        "name": "karatsuba_combine.3_Pipeline_VITIS_LOOP_77_1",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "154",
-        "instructions": "21",
-        "total_instructions": "21",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
     "19": {
-        "name": "mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_1",
+        "name": "mul_Pipeline_VITIS_LOOP_97_19",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "195",
-        "instructions": "41",
-        "total_instructions": "41",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
         "calls": "",
         "basicblocks": "4",
         "loads": {
             "L": "5"
         },
         "stores": {
-            "L": "5"
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
     "20": {
-        "name": "mul_sized<8u>_Pipeline_VITIS_LOOP_91_11",
+        "name": "mul_Pipeline_VITIS_LOOP_74_181",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "196",
-        "instructions": "34",
-        "total_instructions": "34",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "5"
+            "L": "2"
         },
         "stores": {
-            "L": "5"
+            "L": "4"
         },
         "loops": {
             "L": "1"
         }
     },
     "21": {
-        "name": "mul_sized<2>",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "159",
-        "instructions": "48",
-        "total_instructions": "565",
-        "calls": "13 36 17 39 39 19 22 10 52",
-        "basicblocks": "3",
+        "name": "mul_Pipeline_VITIS_LOOP_103_293",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
         "loads": {
-            "L": "2"
+            "L": "3"
         },
         "stores": {
-            "L": "2"
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
         }
     },
     "22": {
-        "name": "mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_14",
+        "name": "mul_Pipeline_VITIS_LOOP_56_148",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "196",
-        "instructions": "41",
-        "total_instructions": "41",
+        "fileloc": "176",
+        "instructions": "38",
+        "total_instructions": "38",
         "calls": "",
         "basicblocks": "4",
         "loads": {
@@ -376,75 +396,605 @@
         }
     },
     "23": {
-        "name": "mul_sized<4u>.1_Pipeline_VITIS_LOOP_91_12",
+        "name": "mul_Pipeline_VITIS_LOOP_157_260",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "196",
-        "instructions": "39",
-        "total_instructions": "39",
+        "fileloc": "176",
+        "instructions": "73",
+        "total_instructions": "73",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "5"
+            "L": "17"
         },
         "stores": {
-            "L": "5"
+            "L": "10"
         },
         "loops": {
             "L": "1"
         }
     },
     "24": {
-        "name": "mul_sized<1u>_Pipeline_VITIS_LOOP_117_2",
+        "name": "mul_Pipeline_VITIS_LOOP_157_2",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "166",
-        "instructions": "21",
-        "total_instructions": "21",
+        "fileloc": "176",
+        "instructions": "59",
+        "total_instructions": "59",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "9",
         "loads": {
-            "L": "1"
+            "L": "9",
+            "T": "2"
         },
         "stores": {
-            "L": "3"
+            "L": "10"
         },
         "loops": {
             "L": "1"
         }
     },
     "25": {
-        "name": "mul_sized<8>",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "159",
-        "instructions": "35",
-        "total_instructions": "6371",
-        "calls": "1 11 15 6 6 51 20 26 32",
-        "basicblocks": "1",
+        "name": "mul_Pipeline_VITIS_LOOP_151_126",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "4",
         "loads": {
-            "L": "2"
+            "L": "17"
         },
         "stores": {
-            "L": "2"
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
         }
     },
     "26": {
-        "name": "mul_sized<4>",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "159",
-        "instructions": "40",
-        "total_instructions": "2017",
-        "calls": "50 44 31 7 7 34 23 21 52",
-        "basicblocks": "1",
+        "name": "mul_Pipeline_VITIS_LOOP_103_277",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
         "loads": {
             "L": "2"
         },
         "stores": {
-            "L": "2"
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
         }
     },
     "27": {
-        "name": "karatsuba_combine_Pipeline_VITIS_LOOP_128_110",
+        "name": "mul_Pipeline_VITIS_LOOP_56_157",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "144",
+        "fileloc": "176",
+        "instructions": "59",
+        "total_instructions": "59",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_163",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_282",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_252",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_143",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_397",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_213",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "34": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_25",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_240",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "36": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_219",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "37": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_120",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "38": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_114",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "39": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_275",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "40": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_244",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "41": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_112",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "42": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_192",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "43": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_221",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "44": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_367",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "45": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_238",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "46": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_186",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "47": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_26",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "48": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_288",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "49": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_233",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "50": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_262",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "51": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_137",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "52": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_17",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "53": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_187",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "54": {
+        "name": "mul_Pipeline_VITIS_LOOP_151_11",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "55": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_151",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "56": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_183",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
         "instructions": "29",
         "total_instructions": "29",
         "calls": "",
@@ -459,31 +1009,30 @@
             "L": "1"
         }
     },
-    "28": {
-        "name": "mul.1_Pipeline_VITIS_LOOP_256_16",
+    "57": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_290",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "308",
-        "instructions": "19",
-        "total_instructions": "19",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "1",
-            "T": "1"
-        },
-        "stores": {
             "L": "3"
         },
+        "stores": {
+            "L": "4"
+        },
         "loops": {
             "L": "1"
         }
     },
-    "29": {
-        "name": "mul_sized<4u>_Pipeline_VITIS_LOOP_91_1",
+    "58": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_173",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "195",
-        "instructions": "34",
-        "total_instructions": "34",
+        "fileloc": "176",
+        "instructions": "38",
+        "total_instructions": "38",
         "calls": "",
         "basicblocks": "4",
         "loads": {
@@ -496,16 +1045,16 @@
             "L": "1"
         }
     },
-    "30": {
-        "name": "karatsuba_combine_Pipeline_VITIS_LOOP_128_19",
+    "59": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_2",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "143",
-        "instructions": "30",
-        "total_instructions": "30",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "4"
+            "L": "5"
         },
         "stores": {
             "L": "4"
@@ -514,16 +1063,16 @@
             "L": "1"
         }
     },
-    "31": {
-        "name": "mul_sized<4u>.1_Pipeline_VITIS_LOOP_187_3",
+    "60": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_266",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "187",
-        "instructions": "18",
-        "total_instructions": "18",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "1"
+            "L": "3"
         },
         "stores": {
             "L": "4"
@@ -532,58 +1081,82 @@
             "L": "1"
         }
     },
-    "32": {
-        "name": "karatsuba_combine",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "135",
+    "61": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_147",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "62": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_1",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "63": {
+        "name": "mul_Pipeline_VITIS_LOOP_157_227",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "64": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_231",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
         "instructions": "40",
-        "total_instructions": "178",
-        "calls": "40 30 27 41 35",
-        "basicblocks": "1",
-        "loads": {
-            "L": "4"
-        }
-    },
-    "33": {
-        "name": "mul_sized<2u>_Pipeline_VITIS_LOOP_187_3",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "187",
-        "instructions": "18",
-        "total_instructions": "18",
+        "total_instructions": "40",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "9",
         "loads": {
-            "L": "1"
+            "L": "5"
         },
         "stores": {
-            "L": "4"
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
-    "34": {
-        "name": "mul_sized<4u>.1_Pipeline_VITIS_LOOP_91_1",
+    "65": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_325",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "195",
-        "instructions": "39",
-        "total_instructions": "39",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "5"
-        },
-        "stores": {
-            "L": "5"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "35": {
-        "name": "karatsuba_combine_Pipeline_VITIS_LOOP_77_1",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "154",
+        "fileloc": "176",
         "instructions": "22",
         "total_instructions": "22",
         "calls": "",
@@ -598,12 +1171,67 @@
             "L": "1"
         }
     },
-    "36": {
-        "name": "mul_sized<2u>.2_Pipeline_VITIS_LOOP_181_2",
+    "66": {
+        "name": "mul_Pipeline_VITIS_LOOP_151_1",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "181",
-        "instructions": "28",
-        "total_instructions": "28",
+        "fileloc": "176",
+        "instructions": "58",
+        "total_instructions": "58",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "9",
+            "T": "2"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "67": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_130",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "68": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_378",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "69": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_210",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
         "calls": "",
         "basicblocks": "4",
         "loads": {
@@ -616,38 +1244,28 @@
             "L": "1"
         }
     },
-    "37": {
-        "name": "mul_sized<1u>_Pipeline_VITIS_LOOP_110_1",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "166",
-        "instructions": "24",
-        "total_instructions": "24",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "4"
-        },
-        "stores": {
-            "L": "4"
-        },
-        "loops": {
-            "L": "1"
-        }
+    "70": {
+        "name": "mul",
+        "file": "mpx_packed_karatsuba.hpp",
+        "fileloc": "185",
+        "instructions": "5",
+        "total_instructions": "5000",
+        "calls": "86",
+        "basicblocks": "1"
     },
-    "38": {
-        "name": "mul.1_Pipeline_VITIS_LOOP_256_1",
+    "71": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_195",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "307",
-        "instructions": "19",
-        "total_instructions": "19",
+        "fileloc": "176",
+        "instructions": "41",
+        "total_instructions": "41",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "1",
-            "T": "1"
+            "L": "7"
         },
         "stores": {
-            "L": "3"
+            "L": "6"
         },
         "loops": {
             "L": "1"
@@ -658,32 +1276,20 @@
         "file": "test_kara_sweep_base1.cpp",
         "fileloc": "19",
         "instructions": "10",
-        "total_instructions": "6515",
-        "calls": "9",
+        "total_instructions": "5010",
+        "calls": "70",
         "basicblocks": "1"
     },
-    "39": {
-        "name": "mul_sized<1>",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "159",
-        "instructions": "19",
-        "total_instructions": "64",
-        "calls": "37 24",
-        "basicblocks": "3",
-        "loads": {
-            "L": "4"
-        }
-    },
-    "40": {
-        "name": "karatsuba_combine_Pipeline_VITIS_LOOP_128_1",
+    "72": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_235",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "142",
-        "instructions": "30",
-        "total_instructions": "30",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "4"
+            "L": "5"
         },
         "stores": {
             "L": "4"
@@ -692,16 +1298,16 @@
             "L": "1"
         }
     },
-    "41": {
-        "name": "karatsuba_combine_Pipeline_VITIS_LOOP_148_1",
+    "73": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_236",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "147",
-        "instructions": "27",
-        "total_instructions": "27",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "3"
+            "L": "5"
         },
         "stores": {
             "L": "4"
@@ -710,34 +1316,16 @@
             "L": "1"
         }
     },
-    "42": {
-        "name": "mul_sized<1u>.4_Pipeline_VITIS_LOOP_117_2",
+    "74": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_174",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "166",
-        "instructions": "22",
-        "total_instructions": "22",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "43": {
-        "name": "mul_sized<4u>_Pipeline_VITIS_LOOP_187_3",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "187",
-        "instructions": "18",
-        "total_instructions": "18",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
+            "L": "2"
         },
         "stores": {
             "L": "4"
@@ -746,16 +1334,52 @@
             "L": "1"
         }
     },
-    "44": {
-        "name": "mul_sized<4u>.1_Pipeline_VITIS_LOOP_181_2",
+    "75": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_176",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "181",
-        "instructions": "26",
-        "total_instructions": "26",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "3"
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "76": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_28",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "77": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_168",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
         },
         "stores": {
             "L": "4"
@@ -764,12 +1388,12 @@
             "L": "1"
         }
     },
-    "45": {
-        "name": "mul_sized<2u>_Pipeline_VITIS_LOOP_91_15",
+    "78": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_116",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "196",
-        "instructions": "39",
-        "total_instructions": "39",
+        "fileloc": "176",
+        "instructions": "38",
+        "total_instructions": "38",
         "calls": "",
         "basicblocks": "4",
         "loads": {
@@ -782,78 +1406,279 @@
             "L": "1"
         }
     },
-    "46": {
+    "79": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_142",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "80": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_229",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "81": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_1",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "82": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_117",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "83": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_189",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "84": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_123",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "85": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_334",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "86": {
         "name": "mul",
         "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "202",
-        "instructions": "2",
-        "total_instructions": "6373",
-        "calls": "25",
-        "basicblocks": "1"
+        "fileloc": "173",
+        "instructions": "1130",
+        "total_instructions": "4995",
+        "calls": "66 24 54 3 59 2 103 91 62 94 101 34 47 52 76 19 69 106 81 41 33 38 105 78 82 95 36 37 43 93 84 12 65 25 63 9 80 67 64 87 49 85 72 73 51 45 4 35 7 79 31 40 98 99 61 22 89 17 55 30 8 104 6 10 27 5 11 23 13 50 28 16 97 60 44 77 88 18 107 15 58 74 39 75 26 68 96 102 20 29 56 1 92 46 53 48 83 57 14 42 21 100 71 90 32",
+        "basicblocks": "6",
+        "loads": {
+            "L": "275"
+        }
     },
-    "47": {
-        "name": "mul_sized<2u>_Pipeline_VITIS_LOOP_91_1",
+    "87": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_132",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "195",
-        "instructions": "39",
-        "total_instructions": "39",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
         "calls": "",
         "basicblocks": "4",
         "loads": {
             "L": "5"
         },
         "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "88": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_269",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "89": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_149",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "90": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_296",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "91": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_24",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "92": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_185",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
             "L": "5"
         },
         "loops": {
             "L": "1"
         }
     },
-    "48": {
-        "name": "karatsuba_combine.3_Pipeline_VITIS_LOOP_128_18",
+    "93": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_322",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "144",
-        "instructions": "30",
-        "total_instructions": "30",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "4"
-        },
-        "stores": {
-            "L": "4"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "49": {
-        "name": "mul_sized<4u>_Pipeline_VITIS_LOOP_181_2",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "181",
-        "instructions": "25",
-        "total_instructions": "25",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "4"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "50": {
-        "name": "mul_sized<4u>.1_Pipeline_VITIS_LOOP_175_1",
-        "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "175",
+        "fileloc": "176",
         "instructions": "22",
         "total_instructions": "22",
         "calls": "",
         "basicblocks": "4",
         "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "94": {
+        "name": "mul_Pipeline_VITIS_LOOP_103_2",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
             "L": "3"
         },
         "stores": {
@@ -863,49 +1688,235 @@
             "L": "1"
         }
     },
-    "51": {
-        "name": "mul_sized<8u>_Pipeline_VITIS_LOOP_91_1",
+    "95": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_118",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "195",
-        "instructions": "34",
-        "total_instructions": "34",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
         "calls": "",
         "basicblocks": "4",
         "loads": {
-            "L": "5"
+            "L": "2"
         },
         "stores": {
-            "L": "5"
+            "L": "4"
         },
         "loops": {
             "L": "1"
         }
     },
-    "52": {
-        "name": "karatsuba_combine",
-        "file": "mpx_packed_karatsuba.hpp",
-        "fileloc": "135",
-        "instructions": "40",
-        "total_instructions": "176",
-        "calls": "3 2 48 14 18",
-        "basicblocks": "1",
+    "96": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_179",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "57",
+        "total_instructions": "57",
+        "calls": "",
+        "basicblocks": "4",
         "loads": {
-            "L": "4"
+            "L": "9"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
         }
     },
-    "53": {
-        "name": "mul_sized<4u>_Pipeline_VITIS_LOOP_91_13",
+    "97": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_165",
         "file": "..\/mpx_packed_karatsuba.hpp",
-        "fileloc": "196",
-        "instructions": "34",
-        "total_instructions": "34",
+        "fileloc": "176",
+        "instructions": "43",
+        "total_instructions": "43",
         "calls": "",
         "basicblocks": "4",
         "loads": {
             "L": "5"
         },
         "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "98": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_145",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "99": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_246",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
             "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "100": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_394",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "101": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_3",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "102": {
+        "name": "mul_Pipeline_VITIS_LOOP_56_180",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "57",
+        "total_instructions": "57",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "103": {
+        "name": "mul_Pipeline_VITIS_LOOP_74_1",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "104": {
+        "name": "mul_Pipeline_VITIS_LOOP_97_154",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "105": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_215",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "106": {
+        "name": "mul_Pipeline_VITIS_LOOP_113_311",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "107": {
+        "name": "mul_Pipeline_VITIS_LOOP_81_271",
+        "file": "..\/mpx_packed_karatsuba.hpp",
+        "fileloc": "176",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
         },
         "loops": {
             "L": "1"

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'test_mul_karatsuba_configurable'" level="0">
-<item name = "Date">Thu Jun 25 13:36:26 2026
+<item name = "Date">Thu Jun 25 13:54:40 2026
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">proj_kara_base1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.216 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.213 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">822, 1435, 8.220 us, 14.350 us, 823, 1436, no</column>
+<column name="">195, ?, 1.950 us, ?, 196, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mul_1_fu_28">mul_1, 821, 1434, 8.210 us, 14.340 us, 821, 1434, no</column>
+<column name="grp_mul_1_fu_28">mul_1, 194, ?, 1.940 us, ?, 194, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,14 +50,14 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 160, 55397, 134285, 0</column>
+<column name="Instance">0, 112, 50116, 109438, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 14, -</column>
 <column name="Register">-, -, 3, -, -</column>
 <specialColumn name="Available SLR">1440, 2280, 788160, 394080, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 7, 7, 34, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 4, 6, 27, 0</specialColumn>
 <specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
-<specialColumn name="Utilization (%)">0, 2, 2, 11, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 1, 2, 9, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -65,7 +65,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 36, 40, 0</column>
-<column name="grp_mul_1_fu_28">mul_1, 0, 160, 55361, 134245, 0</column>
+<column name="grp_mul_1_fu_28">mul_1, 0, 112, 50080, 109398, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

@@ -2,91 +2,66 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">, 382377 *, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">, 754595 *, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll,   7804, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,   6022, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,   6061, user inline pragmas are applied</column>
-            <column name="">(4) simplification,   5817, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,   5219, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   3613, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   3299, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   3287, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition,   5407, user array partition pragmas are applied</column>
-            <column name="">(2) simplification,   5379, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate ,   5379, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape,   5379, apply array reshape pragmas</column>
-            <column name="">(5) access patterns,   5673, array access pattern optmizations</column>
+            <column name="">(1) array partition,   3755, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   2820, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   2820, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   2818, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   3068, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification,   5673, loop and instruction simplification</column>
-            <column name="">(2) parallelization,   5521, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition,   5379, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification,   5379, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification,   3050, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   2683, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   3187, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   2832, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering,   5379, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations,   5366, high level synthesis optimizations</column>
+            <column name="">(1) lowering,   2819, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   3039, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="test_mul_karatsuba_configurable" col1="test_kara_sweep_base1.cpp:19" col2="382377" col2_note="*" col3="5817" col4="5673" col5="5379" col6="5366">
-                    <row id="14" col0="mp_mul_kara" col1="test_kara_sweep_base1.cpp:14" col2="382371" col3="" col4="" col5="" col6="">
-                        <row id="5" col0="mul" col1="mpx_packed_karatsuba.hpp:292" col2="382369" col3="" col4="" col5="" col6="">
-                            <row id="12" col0="phys_to_logical" col1="mpx_packed_karatsuba.hpp:252" col2="72" col2_disp="    72 (2 calls)" col3="" col4="" col5="" col6=""/>
-                            <row id="13" col0="mul" col1="mpx_packed_karatsuba.hpp:202" col2="382207" col3="" col4="" col5="" col6="">
-                                <row id="2" col0="mul_sized&lt;8&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="382205" col3="" col4="" col5="" col6="">
-                                    <row id="6" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:105" col2="366" col3="" col4="" col5="" col6=""/>
-                                    <row id="10" col0="mul_sized&lt;4&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="379167" col2_disp="379,167 (3 calls)" col3="" col4="" col5="" col6="">
-                                        <row id="6" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:105" col2="1098" col2_disp=" 1,098 (3 calls)" col3="" col4="" col5="" col6=""/>
-                                        <row id="8" col0="mul_sized&lt;2&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="370053" col2_disp="370,053 (9 calls)" col3="" col4="" col5="" col6="">
-                                            <row id="6" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:105" col2="3294" col2_disp=" 3,294 (9 calls)" col3="" col4="" col5="" col6=""/>
-                                            <row id="11" col0="mul_sized&lt;1&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="342711" col2_disp="342,711 (27 calls)" col3="" col4="" col5="" col6="">
-                                                <row id="6" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:105" col2="9882" col2_disp=" 9,882 (27 calls)" col3="" col4="" col5="" col6=""/>
-                                                <row id="11" col0="mul_sized&lt;1&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="1028133" col2_disp="1,028,133 (81 calls)" col2_note="**" col3="" col4="" col5="" col6=""/>
-                                                <row id="7" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:85" col2="30996" col2_disp="30,996 (54 calls)" col3="" col4="" col5="" col6=""/>
-                                                <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:135" col2="37260" col2_disp="37,260 (27 calls)" col3="" col4="" col5="" col6="">
-                                                    <row id="9" col0="limbs_to_wide&lt;ap_int&lt;1056&gt; &gt;" col1="mpx_packed_karatsuba.hpp:125" col2="13446" col2_disp="13,446 (81 calls)" col3="" col4="" col5="" col6=""/>
-                                                    <row id="4" col0="unpack_full&lt;ap_uint&lt;1024&gt; &gt;" col1="mpx_packed_karatsuba.hpp:74" col2="2079" col2_disp=" 2,079 (27 calls)" col3="" col4="" col5="" col6=""/>
-                                                </row>
+                <row id="0" col0="test_mul_karatsuba_configurable" col1="test_kara_sweep_base1.cpp:19" col2="754595" col2_note="*" col3="3287" col4="3068" col5="2832" col6="3039">
+                    <row id="9" col0="mp_mul_kara" col1="test_kara_sweep_base1.cpp:14" col2="754589" col3="" col4="" col5="" col6="">
+                        <row id="5" col0="mul" col1="mpx_packed_karatsuba.hpp:185" col2="754587" col3="" col4="" col5="" col6="">
+                            <row id="7" col0="mul" col1="mpx_packed_karatsuba.hpp:173" col2="754506" col2_disp="754,506 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="6" col0="mul_sized&lt;8&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="754502" col2_disp="754,502 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="704" col2_disp="   704 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="10" col0="mul_sized&lt;4&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="748968" col2_disp="748,968 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="8" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="2112" col2_disp=" 2,112 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="4" col0="mul_sized&lt;2&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="732366" col2_disp="732,366 (18 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="8" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="6336" col2_disp=" 6,336 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="3" col0="mul_sized&lt;1&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="682560" col2_disp="682,560 (54 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="8" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="19008" col2_disp="19,008 (54 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="3" col0="mul_sized&lt;1&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="2047680" col2_disp="2,047,680 (162 calls)" col2_note="**" col3="" col4="" col5="" col6=""/>
+                                                <row id="1" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="61992" col2_disp="61,992 (108 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="2" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="61128" col2_disp="61,128 (54 calls)" col3="" col4="" col5="" col6=""/>
                                             </row>
-                                            <row id="7" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:85" col2="10332" col2_disp="10,332 (18 calls)" col3="" col4="" col5="" col6=""/>
-                                            <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:135" col2="12420" col2_disp="12,420 (9 calls)" col3="" col4="" col5="" col6="">
-                                                <row id="9" col0="limbs_to_wide&lt;ap_int&lt;1056&gt; &gt;" col1="mpx_packed_karatsuba.hpp:125" col2="4482" col2_disp=" 4,482 (27 calls)" col3="" col4="" col5="" col6=""/>
-                                                <row id="4" col0="unpack_full&lt;ap_uint&lt;1024&gt; &gt;" col1="mpx_packed_karatsuba.hpp:74" col2="693" col2_disp="   693 (9 calls)" col3="" col4="" col5="" col6=""/>
-                                            </row>
+                                            <row id="1" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="20664" col2_disp="20,664 (36 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="2" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="20376" col2_disp="20,376 (18 calls)" col3="" col4="" col5="" col6=""/>
                                         </row>
-                                        <row id="7" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:85" col2="3444" col2_disp=" 3,444 (6 calls)" col3="" col4="" col5="" col6=""/>
-                                        <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:135" col2="4140" col2_disp=" 4,140 (3 calls)" col3="" col4="" col5="" col6="">
-                                            <row id="9" col0="limbs_to_wide&lt;ap_int&lt;1056&gt; &gt;" col1="mpx_packed_karatsuba.hpp:125" col2="1494" col2_disp=" 1,494 (9 calls)" col3="" col4="" col5="" col6=""/>
-                                            <row id="4" col0="unpack_full&lt;ap_uint&lt;1024&gt; &gt;" col1="mpx_packed_karatsuba.hpp:74" col2="231" col2_disp="   231 (3 calls)" col3="" col4="" col5="" col6=""/>
-                                        </row>
+                                        <row id="1" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="6888" col2_disp=" 6,888 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="2" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="6792" col2_disp=" 6,792 (6 calls)" col3="" col4="" col5="" col6=""/>
                                     </row>
-                                    <row id="7" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:85" col2="1148" col2_disp=" 1,148 (2 calls)" col3="" col4="" col5="" col6=""/>
-                                    <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:135" col2="1380" col3="" col4="" col5="" col6="">
-                                        <row id="9" col0="limbs_to_wide&lt;ap_int&lt;1056&gt; &gt;" col1="mpx_packed_karatsuba.hpp:125" col2="498" col2_disp="   498 (3 calls)" col3="" col4="" col5="" col6=""/>
-                                        <row id="4" col0="unpack_full&lt;ap_uint&lt;1024&gt; &gt;" col1="mpx_packed_karatsuba.hpp:74" col2="77" col3="" col4="" col5="" col6=""/>
-                                    </row>
+                                    <row id="1" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="2296" col2_disp=" 2,296 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="2" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="2264" col2_disp=" 2,264 (2 calls)" col3="" col4="" col5="" col6=""/>
                                 </row>
                             </row>
-                            <row id="3" col0="logical_to_phys" col1="mpx_packed_karatsuba.hpp:272" col2="36" col3="" col4="" col5="" col6=""/>
                         </row>
                     </row>
-                    <row id="5" col0="mul" col1="mpx_packed_karatsuba.hpp:292" col2="" col3="5811" col4="5664" col5="5370" col6="5356">
-                        <row id="13" col0="mul" col1="mpx_packed_karatsuba.hpp:202" col2="" col3="5715" col4="5568" col5="5274" col6="5247">
-                            <row id="2" col0="mul_sized&lt;8&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="" col3="5713" col4="5566" col5="5272" col6="5244">
-                                <row id="10" col0="mul_sized&lt;4&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="" col3="5421" col3_disp="5,421 (3 calls)" col4="5291" col4_disp="5,291 (3 calls)" col5="5008" col5_disp="5,008 (3 calls)" col6="4984" col6_disp="4,984 (3 calls)">
-                                    <row id="8" col0="mul_sized&lt;2&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="" col3="4329" col3_disp="4,329 (9 calls)" col4="4374" col4_disp="4,374 (9 calls)" col5="4131" col5_disp="4,131 (9 calls)" col6="4131" col6_disp="4,131 (9 calls)">
-                                        <row id="11" col0="mul_sized&lt;1&gt;" col1="mpx_packed_karatsuba.hpp:159" col2="" col3="1053" col3_disp="1,053 (27 calls)" col4="1107" col4_disp="1,107 (27 calls)" col5="1026" col5_disp="1,026 (27 calls)" col6="1134" col6_disp="1,134 (27 calls)"/>
-                                        <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:135" col2="" col3="1242" col3_disp="1,242 (9 calls)" col4="1278" col4_disp="1,278 (9 calls)" col5="1197" col5_disp="1,197 (9 calls)" col6="1215" col6_disp="1,215 (9 calls)"/>
-                                    </row>
-                                    <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:135" col2="" col3="414" col3_disp=" 414 (3 calls)" col4="426" col4_disp=" 426 (3 calls)" col5="399" col5_disp=" 399 (3 calls)" col6="405" col6_disp=" 405 (3 calls)"/>
-                                </row>
-                                <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:135" col2="" col3="138" col4="142" col5="133" col6="135"/>
-                            </row>
-                        </row>
+                    <row id="5" col0="mul" col1="mpx_packed_karatsuba.hpp:185" col2="" col3="3281" col4="3059" col5="2823" col6="3029">
+                        <row id="7" col0="mul" col1="mpx_packed_karatsuba.hpp:173" col2="" col3="3279" col4="3057" col5="2821" col6="3026"/>
                     </row>
                 </row>
             </rows>

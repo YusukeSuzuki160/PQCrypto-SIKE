@@ -1,0 +1,675 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_same_radix" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_same_radix" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:92:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:105:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:125:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Al complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:142:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Ah complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:143:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Bl complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:144:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Bh complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:148:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Sal complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Sbl complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:175:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:187:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:204:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:210:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_kara_sweep_base1.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_mul_karatsuba_configurable" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base1.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base1.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base1.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base1.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:130:11" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;1u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 70 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;1u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:130:11" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 70 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:170:9" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 91 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:169:9" msg_body="Inlining function 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;1u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;1u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:167:32" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 52 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:130:11" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 70 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:170:9" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 91 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:169:9" msg_body="Inlining function 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;2u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:167:32" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 52 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:130:11" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 70 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:170:9" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 91 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:169:9" msg_body="Inlining function 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:167:32" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 52 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:176:2" msg_body="Inlining function 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0" Caller="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 174 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base1.cpp:20:0" msg_body="Inlining function 'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/test_kara_sweep_base1.cpp Line 15 Column 0" Caller="test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File mp_mul_rewriter/auto/test_kara_sweep_base1.cpp Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i1596.i4676.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i1596.i4676.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i1597.i4677.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i1597.i4677.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i1598.i4678.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i1598.i4678.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i1599.i4679.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i1599.i4679.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i1603.i4683.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i1603.i4683.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i1604.i4684.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i1604.i4684.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i459.i4844.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i459.i4844.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i460.i4845.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i460.i4845.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i461.i4846.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i461.i4846.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i462.i4847.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i462.i4847.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i466.i4851.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i466.i4851.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i467.i4852.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i467.i4852.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i.i5060.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i.i5060.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i.i5061.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i.i5061.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i.i5062.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i.i5062.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i.i5063.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i.i5063.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i.i5067.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i.i5067.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i.i5068.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i.i5068.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i5132.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i5132.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i5133.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i5133.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i5134.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i5134.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i5135.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i5135.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i5139.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i5139.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i5140.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i5140.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i1596.i459.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i1596.i459.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i1597.i460.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i1597.i460.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i1598.i461.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i1598.i461.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i1599.i462.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i1599.i462.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i1603.i466.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i1603.i466.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i1604.i467.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i1604.i467.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i459.i627.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i459.i627.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i460.i628.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i460.i628.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i461.i629.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i461.i629.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i462.i630.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i462.i630.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i466.i634.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i466.i634.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i467.i635.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i467.i635.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i.i843.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i.i843.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i.i844.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i.i844.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i.i845.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i.i845.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i.i846.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i.i846.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i.i850.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i.i850.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i.i851.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i.i851.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i915.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i915.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i916.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i916.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i917.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i917.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i918.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i918.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i922.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i922.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i923.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i923.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i1596.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i1596.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i1597.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i1597.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i1598.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i1598.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i1599.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i1599.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i1603.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i1603.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i1604.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i1604.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i459.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i459.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i460.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i460.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i461.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i461.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i462.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i462.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i466.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i466.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i467.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i467.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:174:0" msg_body="Unrolling loop 'VITIS_LOOP_74_1' (mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26) in function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul' completely with a factor of 1">
+        <args Factor="1" LoopLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26" LoopName="VITIS_LOOP_74_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Automatically partitioning small array 'z0' completely based on array size.">
+        <args Value="z0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Automatically partitioning small array 'z2' completely based on array size.">
+        <args Value="z2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Automatically partitioning small array 'z1' completely based on array size.">
+        <args Value="z1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i.i" PragmaType="array_partition" VarName="z0.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i.i.i" PragmaType="array_partition" VarName="z0.i.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i.i5064.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i.i5064.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i.i5064.i" PragmaType="array_partition" VarName="z0.i.i5064.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i.i5064.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i.i5064.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i.i847.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i.i847.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i.i847.i" PragmaType="array_partition" VarName="z0.i.i847.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i.i847.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i.i847.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i1600.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i1600.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i1600.i.i" PragmaType="array_partition" VarName="z0.i1600.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i1600.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i1600.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i1600.i463.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i1600.i463.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i1600.i463.i" PragmaType="array_partition" VarName="z0.i1600.i463.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i1600.i463.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i1600.i463.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i1600.i4680.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i1600.i4680.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i1600.i4680.i" PragmaType="array_partition" VarName="z0.i1600.i4680.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i1600.i4680.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i1600.i4680.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i463.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i463.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i463.i.i" PragmaType="array_partition" VarName="z0.i463.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i463.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i463.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i463.i4848.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i463.i4848.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i463.i4848.i" PragmaType="array_partition" VarName="z0.i463.i4848.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i463.i4848.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i463.i4848.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i463.i631.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i463.i631.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i463.i631.i" PragmaType="array_partition" VarName="z0.i463.i631.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i463.i631.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i463.i631.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i5136.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i5136.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i5136.i" PragmaType="array_partition" VarName="z0.i5136.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i5136.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i5136.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="array_partition dim=1 type=complete  variable=z0.i919.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8 z0.i919.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z0.i919.i" PragmaType="array_partition" VarName="z0.i919.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z0.i919.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z0.i919.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i.i.i" PragmaType="array_partition" VarName="z1.i.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i.i5066.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i.i5066.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i.i5066.i" PragmaType="array_partition" VarName="z1.i.i5066.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i.i5066.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i.i5066.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i.i849.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i.i849.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i.i849.i" PragmaType="array_partition" VarName="z1.i.i849.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i.i849.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i.i849.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i1602.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i1602.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i1602.i.i" PragmaType="array_partition" VarName="z1.i1602.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i1602.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i1602.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i1602.i465.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i1602.i465.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i1602.i465.i" PragmaType="array_partition" VarName="z1.i1602.i465.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i1602.i465.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i1602.i465.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i1602.i4682.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i1602.i4682.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i1602.i4682.i" PragmaType="array_partition" VarName="z1.i1602.i4682.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i1602.i4682.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i1602.i4682.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i465.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i465.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i465.i.i" PragmaType="array_partition" VarName="z1.i465.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i465.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i465.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i465.i4850.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i465.i4850.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i465.i4850.i" PragmaType="array_partition" VarName="z1.i465.i4850.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i465.i4850.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i465.i4850.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="array_partition dim=1 type=complete  variable=z1.i465.i633.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28 z1.i465.i633.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z1.i465.i633.i" PragmaType="array_partition" VarName="z1.i465.i633.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z1.i465.i633.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z1.i465.i633.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i.i" PragmaType="array_partition" VarName="z2.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i.i.i" PragmaType="array_partition" VarName="z2.i.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i.i5065.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i.i5065.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i.i5065.i" PragmaType="array_partition" VarName="z2.i.i5065.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i.i5065.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i.i5065.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i.i848.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i.i848.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i.i848.i" PragmaType="array_partition" VarName="z2.i.i848.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i.i848.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i.i848.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i1601.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i1601.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i1601.i.i" PragmaType="array_partition" VarName="z2.i1601.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i1601.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i1601.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i1601.i464.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i1601.i464.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i1601.i464.i" PragmaType="array_partition" VarName="z2.i1601.i464.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i1601.i464.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i1601.i464.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i1601.i4681.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i1601.i4681.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i1601.i4681.i" PragmaType="array_partition" VarName="z2.i1601.i4681.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i1601.i4681.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i1601.i4681.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i464.i.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i464.i.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i464.i.i" PragmaType="array_partition" VarName="z2.i464.i.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i464.i.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i464.i.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i464.i4849.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i464.i4849.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i464.i4849.i" PragmaType="array_partition" VarName="z2.i464.i4849.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i464.i4849.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i464.i4849.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i464.i632.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i464.i632.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i464.i632.i" PragmaType="array_partition" VarName="z2.i464.i632.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i464.i632.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i464.i632.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i5137.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i5137.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i5137.i" PragmaType="array_partition" VarName="z2.i5137.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i5137.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i5137.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="array_partition dim=1 type=complete  variable=z2.i920.i 1 mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18 z2.i920.i">
+        <args PragmaFunction="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=z2.i920.i" PragmaType="array_partition" VarName="z2.i920.i" varLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'z2.i920.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="z2.i920.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i1600.i4680.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i1600.i4680.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i1601.i4681.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i1601.i4681.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i1602.i4682.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i1602.i4682.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i463.i4848.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i463.i4848.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i464.i4849.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i464.i4849.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i465.i4850.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i465.i4850.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i.i5064.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i.i5064.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i.i5065.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i.i5065.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i.i5066.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i.i5066.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i5136.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i5136.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i5137.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i5137.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i1600.i463.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i1600.i463.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i1601.i464.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i1601.i464.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i1602.i465.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i1602.i465.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i463.i631.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i463.i631.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i464.i632.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i464.i632.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i465.i633.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i465.i633.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i.i847.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i.i847.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i.i848.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i.i848.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i.i849.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i.i849.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i919.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i919.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i920.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i920.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i1600.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i1600.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i1601.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i1601.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i1602.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i1602.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i463.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i463.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i464.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i464.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i465.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i465.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:28" msg_body="Applying array_partition to 'z1.i.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z1.i.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8" msg_body="Applying array_partition to 'z0.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z0.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18" msg_body="Applying array_partition to 'z2.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="z2.i.i"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

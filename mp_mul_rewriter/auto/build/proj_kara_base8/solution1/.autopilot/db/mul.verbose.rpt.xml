@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mul'" level="0">
-<item name = "Date">Thu Jun 25 13:37:08 2026
+<item name = "Date">Thu Jun 25 13:55:26 2026
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">proj_kara_base8</item>
@@ -24,14 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="">32, 32, 0.320 us, 0.320 us, 32, 32, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mul_sized_8u_s_fu_8">mul_sized_8u_s, 32, 32, 0.320 us, 0.320 us, 32, 32, no</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_1_fu_30">mul_Pipeline_VITIS_LOOP_74_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_2_fu_40">mul_Pipeline_VITIS_LOOP_81_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,12 +51,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 900, 2433, 5978, -</column>
+<column name="Instance">-, 900, 1402, 1712, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 14, -</column>
-<column name="Register">-, -, 3, -, -</column>
+<column name="Multiplexer">-, -, 0, 31, -</column>
+<column name="Register">-, -, 1031, -, -</column>
 <specialColumn name="Available SLR">1440, 2280, 788160, 394080, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 39, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 39, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
 <specialColumn name="Utilization (%)">0, 13, ~0, ~0, 0</specialColumn>
 </table>
@@ -64,7 +65,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_mul_sized_8u_s_fu_8">mul_sized_8u_s, 0, 900, 2433, 5978, 0</column>
+<column name="mul_512ns_512ns_1024_2_1_U9">mul_512ns_512ns_1024_2_1, 0, 900, 361, 178, 0</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_1_fu_30">mul_Pipeline_VITIS_LOOP_74_1, 0, 0, 1034, 1200, 0</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_2_fu_40">mul_Pipeline_VITIS_LOOP_81_2, 0, 0, 7, 334, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -85,13 +88,15 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="ap_NS_fsm">31, 6, 1, 6</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">2, 0, 2, 0</column>
-<column name="grp_mul_sized_8u_s_fu_8_ap_start_reg">1, 0, 1, 0</column>
+<column name="P_reg_90">1024, 0, 1024, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_74_1_fu_30_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_mul_Pipeline_VITIS_LOOP_81_2_fu_40_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -107,16 +112,21 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, mul, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, mul, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, mul, return value</column>
-<column name="a_address0">out, 3, ap_memory, a, array</column>
-<column name="a_ce0">out, 1, ap_memory, a, array</column>
-<column name="a_q0">in, 64, ap_memory, a, array</column>
-<column name="b_address0">out, 3, ap_memory, b, array</column>
-<column name="b_ce0">out, 1, ap_memory, b, array</column>
-<column name="b_q0">in, 64, ap_memory, b, array</column>
-<column name="c_address0">out, 4, ap_memory, c, array</column>
-<column name="c_ce0">out, 1, ap_memory, c, array</column>
-<column name="c_we0">out, 1, ap_memory, c, array</column>
-<column name="c_d0">out, 64, ap_memory, c, array</column>
+<column name="a_Addr_A">out, 32, bram, a, array</column>
+<column name="a_EN_A">out, 1, bram, a, array</column>
+<column name="a_WEN_A">out, 8, bram, a, array</column>
+<column name="a_Din_A">out, 64, bram, a, array</column>
+<column name="a_Dout_A">in, 64, bram, a, array</column>
+<column name="b_Addr_A">out, 32, bram, b, array</column>
+<column name="b_EN_A">out, 1, bram, b, array</column>
+<column name="b_WEN_A">out, 8, bram, b, array</column>
+<column name="b_Din_A">out, 64, bram, b, array</column>
+<column name="b_Dout_A">in, 64, bram, b, array</column>
+<column name="c_Addr_A">out, 32, bram, c, array</column>
+<column name="c_EN_A">out, 1, bram, c, array</column>
+<column name="c_WEN_A">out, 8, bram, c, array</column>
+<column name="c_Din_A">out, 64, bram, c, array</column>
+<column name="c_Dout_A">in, 64, bram, c, array</column>
 </table>
 </item>
 </section>

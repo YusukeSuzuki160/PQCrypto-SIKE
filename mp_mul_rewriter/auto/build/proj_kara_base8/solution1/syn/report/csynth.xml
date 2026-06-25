@@ -19,14 +19,14 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>73</Best-caseLatency>
-            <Average-caseLatency>73</Average-caseLatency>
-            <Worst-caseLatency>73</Worst-caseLatency>
-            <Best-caseRealTimeLatency>0.730 us</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>0.730 us</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>0.730 us</Worst-caseRealTimeLatency>
-            <Interval-min>74</Interval-min>
-            <Interval-max>74</Interval-max>
+            <Best-caseLatency>34</Best-caseLatency>
+            <Average-caseLatency>34</Average-caseLatency>
+            <Worst-caseLatency>34</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.340 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.340 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.340 us</Worst-caseRealTimeLatency>
+            <Interval-min>35</Interval-min>
+            <Interval-max>35</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
@@ -38,8 +38,8 @@
         <Resources>
             <BRAM_18K>0</BRAM_18K>
             <DSP>900</DSP>
-            <FF>2718</FF>
-            <LUT>6850</LUT>
+            <FF>2475</FF>
+            <LUT>1811</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -525,7 +525,7 @@
         </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
-        <TopModule MAX_DEPTH="6">
+        <TopModule MAX_DEPTH="5">
             <ModuleName>test_mul_karatsuba_configurable</ModuleName>
             <InstancesList>
                 <Instance>
@@ -535,59 +535,29 @@
                     <ID>28</ID>
                     <InstancesList>
                         <Instance>
-                            <InstName>grp_mul_1_Pipeline_VITIS_LOOP_256_1_fu_363</InstName>
-                            <ModuleName>mul_1_Pipeline_VITIS_LOOP_256_1</ModuleName>
-                            <IsCompInst>true</IsCompInst>
-                            <ID>363</ID>
-                            <BindInstances>icmp_ln256_fu_73_p2 add_ln256_fu_79_p2</BindInstances>
-                        </Instance>
-                        <Instance>
-                            <InstName>grp_mul_1_Pipeline_VITIS_LOOP_256_11_fu_370</InstName>
-                            <ModuleName>mul_1_Pipeline_VITIS_LOOP_256_11</ModuleName>
-                            <IsCompInst>true</IsCompInst>
-                            <ID>370</ID>
-                            <BindInstances>icmp_ln256_fu_73_p2 add_ln256_fu_79_p2</BindInstances>
-                        </Instance>
-                        <Instance>
-                            <InstName>grp_mul_fu_377</InstName>
+                            <InstName>grp_mul_fu_18</InstName>
                             <ModuleName>mul</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>377</ID>
+                            <ID>18</ID>
                             <InstancesList>
                                 <Instance>
-                                    <InstName>grp_mul_sized_8u_s_fu_8</InstName>
-                                    <ModuleName>mul_sized_8u_s</ModuleName>
+                                    <InstName>grp_mul_Pipeline_VITIS_LOOP_74_1_fu_30</InstName>
+                                    <ModuleName>mul_Pipeline_VITIS_LOOP_74_1</ModuleName>
                                     <IsCompInst>true</IsCompInst>
-                                    <ID>8</ID>
-                                    <InstancesList>
-                                        <Instance>
-                                            <InstName>grp_mul_sized_8u_Pipeline_VITIS_LOOP_110_1_fu_20</InstName>
-                                            <ModuleName>mul_sized_8u_Pipeline_VITIS_LOOP_110_1</ModuleName>
-                                            <IsCompInst>true</IsCompInst>
-                                            <ID>20</ID>
-                                            <BindInstances>icmp_ln110_fu_110_p2 add_ln110_fu_116_p2 shl_ln113_fu_158_p2 A_1_fu_164_p2 shl_ln114_fu_174_p2 B_1_fu_180_p2</BindInstances>
-                                        </Instance>
-                                        <Instance>
-                                            <InstName>grp_mul_sized_8u_Pipeline_VITIS_LOOP_117_2_fu_30</InstName>
-                                            <ModuleName>mul_sized_8u_Pipeline_VITIS_LOOP_117_2</ModuleName>
-                                            <IsCompInst>true</IsCompInst>
-                                            <ID>30</ID>
-                                            <BindInstances>icmp_ln117_fu_67_p2 add_ln117_fu_73_p2 partselect_64ns_1024ns_32ns_64_1_1_U7</BindInstances>
-                                        </Instance>
-                                    </InstancesList>
-                                    <BindInstances>mul_512ns_512ns_1024_2_1_U11</BindInstances>
+                                    <ID>30</ID>
+                                    <BindInstances>icmp_ln74_fu_118_p2 add_ln74_fu_124_p2 partset_512ns_512ns_64ns_32ns_512_1_1_U1 partset_512ns_512ns_64ns_32ns_512_1_1_U2</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>grp_mul_Pipeline_VITIS_LOOP_81_2_fu_40</InstName>
+                                    <ModuleName>mul_Pipeline_VITIS_LOOP_81_2</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>40</ID>
+                                    <BindInstances>icmp_ln81_fu_73_p2 add_ln81_fu_79_p2 partselect_64ns_1024ns_32ns_64_1_1_U6</BindInstances>
                                 </Instance>
                             </InstancesList>
-                        </Instance>
-                        <Instance>
-                            <InstName>grp_mul_1_Pipeline_VITIS_LOOP_276_1_fu_384</InstName>
-                            <ModuleName>mul_1_Pipeline_VITIS_LOOP_276_1</ModuleName>
-                            <IsCompInst>true</IsCompInst>
-                            <ID>384</ID>
-                            <BindInstances>icmp_ln276_fu_73_p2 add_ln276_fu_79_p2</BindInstances>
+                            <BindInstances>mul_512ns_512ns_1024_2_1_U9</BindInstances>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>la_U lb_U lc_U</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>control_s_axi_U</BindInstances>
@@ -595,15 +565,15 @@
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>mul_1_Pipeline_VITIS_LOOP_256_1</Name>
+            <Name>mul_Pipeline_VITIS_LOOP_74_1</Name>
             <Loops>
-                <VITIS_LOOP_256_1/>
+                <VITIS_LOOP_74_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>1.482</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>1.787</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>10</Best-caseLatency>
@@ -616,8 +586,8 @@
                     <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_256_1>
-                        <Name>VITIS_LOOP_256_1</Name>
+                    <VITIS_LOOP_74_1>
+                        <Name>VITIS_LOOP_74_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>8</TripCount>
                         <Latency>8</Latency>
@@ -626,163 +596,19 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_256_1>
+                    </VITIS_LOOP_74_1>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:256~../mpx_packed_karatsuba.hpp:307</SourceLocation>
+                    <SourceLocation>../mpx_packed_karatsuba.hpp:72~../mpx_packed_karatsuba.hpp:130~../mpx_packed_karatsuba.hpp:176</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_256_1>
-                            <Name>VITIS_LOOP_256_1</Name>
+                        <VITIS_LOOP_74_1>
+                            <Name>VITIS_LOOP_74_1</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>../mpx_packed_karatsuba.hpp:256~../mpx_packed_karatsuba.hpp:307</SourceLocation>
-                        </VITIS_LOOP_256_1>
-                    </SummaryOfLoopViolations>
-                </SummaryOfViolations>
-            </PerformanceEstimates>
-            <AreaEstimates>
-                <Resources>
-                    <FF>11</FF>
-                    <AVAIL_FF>2364480</AVAIL_FF>
-                    <UTIL_FF>~0</UTIL_FF>
-                    <LUT>62</LUT>
-                    <AVAIL_LUT>1182240</AVAIL_LUT>
-                    <UTIL_LUT>~0</UTIL_LUT>
-                    <BRAM_18K>0</BRAM_18K>
-                    <AVAIL_BRAM>4320</AVAIL_BRAM>
-                    <UTIL_BRAM>0</UTIL_BRAM>
-                    <DSP>0</DSP>
-                    <AVAIL_DSP>6840</AVAIL_DSP>
-                    <UTIL_DSP>0</UTIL_DSP>
-                    <URAM>0</URAM>
-                    <AVAIL_URAM>960</AVAIL_URAM>
-                    <UTIL_URAM>0</UTIL_URAM>
-                </Resources>
-            </AreaEstimates>
-            <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_256_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln256_fu_73_p2" SOURCE="../mpx_packed_karatsuba.hpp:256" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln256" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_256_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln256_fu_79_p2" SOURCE="../mpx_packed_karatsuba.hpp:256" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln256" VISIBLE="true"/>
-            </BindNodes>
-        </Module>
-        <Module>
-            <Name>mul_1_Pipeline_VITIS_LOOP_256_11</Name>
-            <Loops>
-                <VITIS_LOOP_256_1/>
-            </Loops>
-            <PerformanceEstimates>
-                <SummaryOfTimingAnalysis>
-                    <TargetClockPeriod>10.00</TargetClockPeriod>
-                    <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>1.482</EstimatedClockPeriod>
-                </SummaryOfTimingAnalysis>
-                <SummaryOfOverallLatency>
-                    <Best-caseLatency>10</Best-caseLatency>
-                    <Average-caseLatency>10</Average-caseLatency>
-                    <Worst-caseLatency>10</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
-                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
-                </SummaryOfOverallLatency>
-                <SummaryOfLoopLatency>
-                    <VITIS_LOOP_256_1>
-                        <Name>VITIS_LOOP_256_1</Name>
-                        <Slack>7.30</Slack>
-                        <TripCount>8</TripCount>
-                        <Latency>8</Latency>
-                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>2</PipelineDepth>
-                        <PipelineType>yes</PipelineType>
-                        <InstanceList/>
-                    </VITIS_LOOP_256_1>
-                </SummaryOfLoopLatency>
-                <SummaryOfViolations>
-                    <IssueType>-</IssueType>
-                    <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:256~../mpx_packed_karatsuba.hpp:308</SourceLocation>
-                    <SummaryOfLoopViolations>
-                        <VITIS_LOOP_256_1>
-                            <Name>VITIS_LOOP_256_1</Name>
-                            <IssueType>-</IssueType>
-                            <ViolationType>-</ViolationType>
-                            <SourceLocation>../mpx_packed_karatsuba.hpp:256~../mpx_packed_karatsuba.hpp:308</SourceLocation>
-                        </VITIS_LOOP_256_1>
-                    </SummaryOfLoopViolations>
-                </SummaryOfViolations>
-            </PerformanceEstimates>
-            <AreaEstimates>
-                <Resources>
-                    <FF>11</FF>
-                    <AVAIL_FF>2364480</AVAIL_FF>
-                    <UTIL_FF>~0</UTIL_FF>
-                    <LUT>62</LUT>
-                    <AVAIL_LUT>1182240</AVAIL_LUT>
-                    <UTIL_LUT>~0</UTIL_LUT>
-                    <BRAM_18K>0</BRAM_18K>
-                    <AVAIL_BRAM>4320</AVAIL_BRAM>
-                    <UTIL_BRAM>0</UTIL_BRAM>
-                    <DSP>0</DSP>
-                    <AVAIL_DSP>6840</AVAIL_DSP>
-                    <UTIL_DSP>0</UTIL_DSP>
-                    <URAM>0</URAM>
-                    <AVAIL_URAM>960</AVAIL_URAM>
-                    <UTIL_URAM>0</UTIL_URAM>
-                </Resources>
-            </AreaEstimates>
-            <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_256_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln256_fu_73_p2" SOURCE="../mpx_packed_karatsuba.hpp:256" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln256" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_256_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln256_fu_79_p2" SOURCE="../mpx_packed_karatsuba.hpp:256" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln256" VISIBLE="true"/>
-            </BindNodes>
-        </Module>
-        <Module>
-            <Name>mul_sized_8u_Pipeline_VITIS_LOOP_110_1</Name>
-            <Loops>
-                <VITIS_LOOP_110_1/>
-            </Loops>
-            <PerformanceEstimates>
-                <SummaryOfTimingAnalysis>
-                    <TargetClockPeriod>10.00</TargetClockPeriod>
-                    <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.490</EstimatedClockPeriod>
-                </SummaryOfTimingAnalysis>
-                <SummaryOfOverallLatency>
-                    <Best-caseLatency>10</Best-caseLatency>
-                    <Average-caseLatency>10</Average-caseLatency>
-                    <Worst-caseLatency>10</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
-                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
-                </SummaryOfOverallLatency>
-                <SummaryOfLoopLatency>
-                    <VITIS_LOOP_110_1>
-                        <Name>VITIS_LOOP_110_1</Name>
-                        <Slack>7.30</Slack>
-                        <TripCount>8</TripCount>
-                        <Latency>8</Latency>
-                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>2</PipelineDepth>
-                        <PipelineType>yes</PipelineType>
-                        <InstanceList/>
-                    </VITIS_LOOP_110_1>
-                </SummaryOfLoopLatency>
-                <SummaryOfViolations>
-                    <IssueType>-</IssueType>
-                    <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:108~../mpx_packed_karatsuba.hpp:166</SourceLocation>
-                    <SummaryOfLoopViolations>
-                        <VITIS_LOOP_110_1>
-                            <Name>VITIS_LOOP_110_1</Name>
-                            <IssueType>-</IssueType>
-                            <ViolationType>-</ViolationType>
-                            <SourceLocation>../mpx_packed_karatsuba.hpp:113~../mpx_packed_karatsuba.hpp:166</SourceLocation>
-                        </VITIS_LOOP_110_1>
+                            <SourceLocation>../mpx_packed_karatsuba.hpp:77~../mpx_packed_karatsuba.hpp:130~../mpx_packed_karatsuba.hpp:176</SourceLocation>
+                        </VITIS_LOOP_74_1>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -791,7 +617,7 @@
                     <FF>1034</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>5444</LUT>
+                    <LUT>1200</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -806,18 +632,16 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_110_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln110_fu_110_p2" SOURCE="../mpx_packed_karatsuba.hpp:110" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln110" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_110_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln110_fu_116_p2" SOURCE="../mpx_packed_karatsuba.hpp:110" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln110" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op shl" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_110_1" OPTYPE="shl" PRAGMA="" RTLNAME="shl_ln113_fu_158_p2" SOURCE="../mpx_packed_karatsuba.hpp:113" STORAGESUBTYPE="" URAM="0" VARIABLE="shl_ln113" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_110_1" OPTYPE="or" PRAGMA="" RTLNAME="A_1_fu_164_p2" SOURCE="../mpx_packed_karatsuba.hpp:113" STORAGESUBTYPE="" URAM="0" VARIABLE="A_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op shl" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_110_1" OPTYPE="shl" PRAGMA="" RTLNAME="shl_ln114_fu_174_p2" SOURCE="../mpx_packed_karatsuba.hpp:114" STORAGESUBTYPE="" URAM="0" VARIABLE="shl_ln114" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_110_1" OPTYPE="or" PRAGMA="" RTLNAME="B_1_fu_180_p2" SOURCE="../mpx_packed_karatsuba.hpp:114" STORAGESUBTYPE="" URAM="0" VARIABLE="B_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_74_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln74_fu_118_p2" SOURCE="../mpx_packed_karatsuba.hpp:74" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln74" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_74_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln74_fu_124_p2" SOURCE="../mpx_packed_karatsuba.hpp:74" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln74" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op partset" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_74_1" OPTYPE="partset" PRAGMA="" RTLNAME="partset_512ns_512ns_64ns_32ns_512_1_1_U1" SOURCE="../mpx_packed_karatsuba.hpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="A_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op partset" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_74_1" OPTYPE="partset" PRAGMA="" RTLNAME="partset_512ns_512ns_64ns_32ns_512_1_1_U2" SOURCE="../mpx_packed_karatsuba.hpp:78" STORAGESUBTYPE="" URAM="0" VARIABLE="B_1" VISIBLE="false"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>mul_sized_8u_Pipeline_VITIS_LOOP_117_2</Name>
+            <Name>mul_Pipeline_VITIS_LOOP_81_2</Name>
             <Loops>
-                <VITIS_LOOP_117_2/>
+                <VITIS_LOOP_81_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -836,8 +660,8 @@
                     <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_117_2>
-                        <Name>VITIS_LOOP_117_2</Name>
+                    <VITIS_LOOP_81_2>
+                        <Name>VITIS_LOOP_81_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>16</TripCount>
                         <Latency>16</Latency>
@@ -846,19 +670,19 @@
                         <PipelineDepth>1</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_117_2>
+                    </VITIS_LOOP_81_2>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:117~../mpx_packed_karatsuba.hpp:166</SourceLocation>
+                    <SourceLocation>../mpx_packed_karatsuba.hpp:81~../mpx_packed_karatsuba.hpp:130~../mpx_packed_karatsuba.hpp:176</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_117_2>
-                            <Name>VITIS_LOOP_117_2</Name>
+                        <VITIS_LOOP_81_2>
+                            <Name>VITIS_LOOP_81_2</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>../mpx_packed_karatsuba.hpp:120~../mpx_packed_karatsuba.hpp:166</SourceLocation>
-                        </VITIS_LOOP_117_2>
+                            <SourceLocation>../mpx_packed_karatsuba.hpp:84~../mpx_packed_karatsuba.hpp:130~../mpx_packed_karatsuba.hpp:176</SourceLocation>
+                        </VITIS_LOOP_81_2>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -867,7 +691,7 @@
                     <FF>7</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>325</LUT>
+                    <LUT>334</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -882,13 +706,13 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_117_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln117_fu_67_p2" SOURCE="../mpx_packed_karatsuba.hpp:117" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln117" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_117_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln117_fu_73_p2" SOURCE="../mpx_packed_karatsuba.hpp:117" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln117" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op partselect" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_117_2" OPTYPE="partselect" PRAGMA="" RTLNAME="partselect_64ns_1024ns_32ns_64_1_1_U7" SOURCE="../mpx_packed_karatsuba.hpp:120" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_81_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln81_fu_73_p2" SOURCE="../mpx_packed_karatsuba.hpp:81" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln81" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_81_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln81_fu_79_p2" SOURCE="../mpx_packed_karatsuba.hpp:81" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln81" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op partselect" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_81_2" OPTYPE="partselect" PRAGMA="" RTLNAME="partselect_64ns_1024ns_32ns_64_1_1_U6" SOURCE="../mpx_packed_karatsuba.hpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp" VISIBLE="false"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>mul_sized_8u_s</Name>
+            <Name>mul</Name>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -908,7 +732,7 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:116~../mpx_packed_karatsuba.hpp:166</SourceLocation>
+                    <SourceLocation>../mpx_packed_karatsuba.hpp:80~../mpx_packed_karatsuba.hpp:130~../mpx_packed_karatsuba.hpp:176</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -919,7 +743,7 @@
                     <FF>2433</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>5978</LUT>
+                    <LUT>1743</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -931,11 +755,11 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="900" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_512ns_512ns_1024_2_1_U11" SOURCE="../mpx_packed_karatsuba.hpp:116" STORAGESUBTYPE="" URAM="0" VARIABLE="P" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="900" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_512ns_512ns_1024_2_1_U9" SOURCE="../mpx_packed_karatsuba.hpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="P" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>mul</Name>
+            <Name>mul_1</Name>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -955,7 +779,7 @@
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:205</SourceLocation>
+                    <SourceLocation>../mpx_packed_karatsuba.hpp:190</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -966,7 +790,7 @@
                     <FF>2436</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>5992</LUT>
+                    <LUT>1757</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -977,127 +801,6 @@
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
-        </Module>
-        <Module>
-            <Name>mul_1_Pipeline_VITIS_LOOP_276_1</Name>
-            <Loops>
-                <VITIS_LOOP_276_1/>
-            </Loops>
-            <PerformanceEstimates>
-                <SummaryOfTimingAnalysis>
-                    <TargetClockPeriod>10.00</TargetClockPeriod>
-                    <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>1.481</EstimatedClockPeriod>
-                </SummaryOfTimingAnalysis>
-                <SummaryOfOverallLatency>
-                    <Best-caseLatency>18</Best-caseLatency>
-                    <Average-caseLatency>18</Average-caseLatency>
-                    <Worst-caseLatency>18</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.180 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.180 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.180 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>17</PipelineInitiationInterval>
-                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
-                </SummaryOfOverallLatency>
-                <SummaryOfLoopLatency>
-                    <VITIS_LOOP_276_1>
-                        <Name>VITIS_LOOP_276_1</Name>
-                        <Slack>7.30</Slack>
-                        <TripCount>16</TripCount>
-                        <Latency>16</Latency>
-                        <AbsoluteTimeLatency>0.160 us</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>2</PipelineDepth>
-                        <PipelineType>yes</PipelineType>
-                        <InstanceList/>
-                    </VITIS_LOOP_276_1>
-                </SummaryOfLoopLatency>
-                <SummaryOfViolations>
-                    <IssueType>-</IssueType>
-                    <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:276~../mpx_packed_karatsuba.hpp:310</SourceLocation>
-                    <SummaryOfLoopViolations>
-                        <VITIS_LOOP_276_1>
-                            <Name>VITIS_LOOP_276_1</Name>
-                            <IssueType>-</IssueType>
-                            <ViolationType>-</ViolationType>
-                            <SourceLocation>../mpx_packed_karatsuba.hpp:276~../mpx_packed_karatsuba.hpp:310</SourceLocation>
-                        </VITIS_LOOP_276_1>
-                    </SummaryOfLoopViolations>
-                </SummaryOfViolations>
-            </PerformanceEstimates>
-            <AreaEstimates>
-                <Resources>
-                    <FF>13</FF>
-                    <AVAIL_FF>2364480</AVAIL_FF>
-                    <UTIL_FF>~0</UTIL_FF>
-                    <LUT>72</LUT>
-                    <AVAIL_LUT>1182240</AVAIL_LUT>
-                    <UTIL_LUT>~0</UTIL_LUT>
-                    <BRAM_18K>0</BRAM_18K>
-                    <AVAIL_BRAM>4320</AVAIL_BRAM>
-                    <UTIL_BRAM>0</UTIL_BRAM>
-                    <DSP>0</DSP>
-                    <AVAIL_DSP>6840</AVAIL_DSP>
-                    <UTIL_DSP>0</UTIL_DSP>
-                    <URAM>0</URAM>
-                    <AVAIL_URAM>960</AVAIL_URAM>
-                    <UTIL_URAM>0</UTIL_URAM>
-                </Resources>
-            </AreaEstimates>
-            <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_276_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln276_fu_73_p2" SOURCE="../mpx_packed_karatsuba.hpp:276" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln276" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_276_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln276_fu_79_p2" SOURCE="../mpx_packed_karatsuba.hpp:276" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln276" VISIBLE="true"/>
-            </BindNodes>
-        </Module>
-        <Module>
-            <Name>mul_1</Name>
-            <PerformanceEstimates>
-                <SummaryOfTimingAnalysis>
-                    <TargetClockPeriod>10.00</TargetClockPeriod>
-                    <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>5.581</EstimatedClockPeriod>
-                </SummaryOfTimingAnalysis>
-                <SummaryOfOverallLatency>
-                    <Best-caseLatency>72</Best-caseLatency>
-                    <Average-caseLatency>72</Average-caseLatency>
-                    <Worst-caseLatency>72</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.720 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.720 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.720 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>72</PipelineInitiationInterval>
-                    <PipelineType>no</PipelineType>
-                </SummaryOfOverallLatency>
-                <SummaryOfViolations>
-                    <IssueType>-</IssueType>
-                    <ViolationType>-</ViolationType>
-                    <SourceLocation>../mpx_packed_karatsuba.hpp:295</SourceLocation>
-                </SummaryOfViolations>
-            </PerformanceEstimates>
-            <AreaEstimates>
-                <Resources>
-                    <BRAM_18K>0</BRAM_18K>
-                    <AVAIL_BRAM>4320</AVAIL_BRAM>
-                    <UTIL_BRAM>0</UTIL_BRAM>
-                    <DSP>900</DSP>
-                    <AVAIL_DSP>6840</AVAIL_DSP>
-                    <UTIL_DSP>13</UTIL_DSP>
-                    <FF>2679</FF>
-                    <AVAIL_FF>2364480</AVAIL_FF>
-                    <UTIL_FF>~0</UTIL_FF>
-                    <LUT>6796</LUT>
-                    <AVAIL_LUT>1182240</AVAIL_LUT>
-                    <UTIL_LUT>~0</UTIL_LUT>
-                    <URAM>0</URAM>
-                    <AVAIL_URAM>960</AVAIL_URAM>
-                    <UTIL_URAM>0</UTIL_URAM>
-                </Resources>
-            </AreaEstimates>
-            <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="la_U" SOURCE="../mpx_packed_karatsuba.hpp:295" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="la" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="lb_U" SOURCE="../mpx_packed_karatsuba.hpp:295" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="lb" VISIBLE="true"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="lc_U" SOURCE="../mpx_packed_karatsuba.hpp:295" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="lc" VISIBLE="true"/>
-            </BindNodes>
         </Module>
         <Module>
             <Name>test_mul_karatsuba_configurable</Name>
@@ -1108,13 +811,13 @@
                     <EstimatedClockPeriod>5.581</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>73</Best-caseLatency>
-                    <Average-caseLatency>73</Average-caseLatency>
-                    <Worst-caseLatency>73</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.730 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.730 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.730 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>74</PipelineInitiationInterval>
+                    <Best-caseLatency>34</Best-caseLatency>
+                    <Average-caseLatency>34</Average-caseLatency>
+                    <Worst-caseLatency>34</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.340 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.340 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.340 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>35</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfViolations>
@@ -1131,10 +834,10 @@
                     <DSP>900</DSP>
                     <AVAIL_DSP>6840</AVAIL_DSP>
                     <UTIL_DSP>13</UTIL_DSP>
-                    <FF>2718</FF>
+                    <FF>2475</FF>
                     <AVAIL_FF>2364480</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>6850</LUT>
+                    <LUT>1811</LUT>
                     <AVAIL_LUT>1182240</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -1406,31 +1109,29 @@
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:59" status="valid" parentFunction="pack_full" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:63" status="valid" parentFunction="pack_full" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:76" status="valid" parentFunction="unpack_full" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:79" status="valid" parentFunction="unpack_full" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:93" status="valid" parentFunction="add_same_radix" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:107" status="valid" parentFunction="mul_direct" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:112" status="valid" parentFunction="mul_direct" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:119" status="valid" parentFunction="mul_direct" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:130" status="valid" parentFunction="limbs_to_wide" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:150" status="valid" parentFunction="karatsuba_combine" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:161" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="off"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:177" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:183" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:204" status="valid" parentFunction="mul" variable="" isDirective="0" options="off"/>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:224" status="valid" parentFunction="pack" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:228" status="valid" parentFunction="pack" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:242" status="valid" parentFunction="unpack" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:245" status="valid" parentFunction="unpack" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:258" status="valid" parentFunction="phys_to_logical" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:266" status="valid" parentFunction="phys_to_logical" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:278" status="valid" parentFunction="logical_to_phys" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:286" status="valid" parentFunction="logical_to_phys" variable="" isDirective="0" options="II = 1"/>
-        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:294" status="valid" parentFunction="mul" variable="" isDirective="0" options="off"/>
-        <Pragma type="unroll" location="../mpx_packed_karatsuba.hpp:298" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../mpx_packed_karatsuba.hpp:304" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:53" status="valid" parentFunction="add_same_radix" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:58" status="valid" parentFunction="add_same_radix" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:71" status="valid" parentFunction="mul_direct" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:76" status="valid" parentFunction="mul_direct" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:83" status="valid" parentFunction="mul_direct" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:92" status="valid" parentFunction="karatsuba_combine" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:99" status="valid" parentFunction="karatsuba_combine" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:105" status="valid" parentFunction="karatsuba_combine" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:115" status="valid" parentFunction="karatsuba_combine" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:125" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="../mpx_packed_karatsuba.hpp:141" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="variable = Al complete dim = 1"/>
+        <Pragma type="array_partition" location="../mpx_packed_karatsuba.hpp:142" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="variable = Ah complete dim = 1"/>
+        <Pragma type="array_partition" location="../mpx_packed_karatsuba.hpp:143" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="variable = Bl complete dim = 1"/>
+        <Pragma type="array_partition" location="../mpx_packed_karatsuba.hpp:144" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="variable = Bh complete dim = 1"/>
+        <Pragma type="array_partition" location="../mpx_packed_karatsuba.hpp:148" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="variable = Sal complete dim = 1"/>
+        <Pragma type="array_partition" location="../mpx_packed_karatsuba.hpp:149" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="variable = Sbl complete dim = 1"/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:153" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:159" status="valid" parentFunction="mul_sized" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:175" status="valid" parentFunction="mul" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../mpx_packed_karatsuba.hpp:187" status="valid" parentFunction="mul" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:198" status="valid" parentFunction="mul" variable="" isDirective="0" options="II = 1"/>
+        <Pragma type="unroll" location="../mpx_packed_karatsuba.hpp:204" status="valid" parentFunction="mul" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../mpx_packed_karatsuba.hpp:210" status="valid" parentFunction="mul" variable="" isDirective="0" options="II = 1"/>
         <Pragma type="interface" location="../test_kara_sweep_base8.cpp:21" status="valid" parentFunction="test_mul_karatsuba_configurable" variable="" isDirective="0" options="bram port = a"/>
         <Pragma type="interface" location="../test_kara_sweep_base8.cpp:22" status="valid" parentFunction="test_mul_karatsuba_configurable" variable="" isDirective="0" options="bram port = b"/>
         <Pragma type="interface" location="../test_kara_sweep_base8.cpp:23" status="valid" parentFunction="test_mul_karatsuba_configurable" variable="" isDirective="0" options="bram port = c"/>

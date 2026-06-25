@@ -18,32 +18,32 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.216</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.213</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>821</Best-caseLatency>
+<Best-caseLatency>194</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>1434</Worst-caseLatency>
-<Best-caseRealTimeLatency>8.210 us</Best-caseRealTimeLatency>
+<Worst-caseLatency>undef</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.940 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>14.340 us</Worst-caseRealTimeLatency>
-<Interval-min>821</Interval-min>
-<Interval-max>1434</Interval-max>
+<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+<Interval-min>194</Interval-min>
+<Interval-max>undef</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../mpx_packed_karatsuba.hpp:295</SourceLocation>
+<SourceLocation>../mpx_packed_karatsuba.hpp:190</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<DSP>160</DSP>
-<FF>55361</FF>
-<LUT>134245</LUT>
+<DSP>112</DSP>
+<FF>50080</FF>
+<LUT>109398</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "test_mul_karatsuba_configurable",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "test_mul_karatsuba_configurable"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_kara_sweep_base2.tcl",
+    "sourceLine": 8,
+    "success": true
+  }
+]

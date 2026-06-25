@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'test_mul_karatsuba_configurable'
 ================================================================
-* Date:           Thu Jun 25 13:36:23 2026
+* Date:           Thu Jun 25 13:54:33 2026
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_kara_base1
@@ -20,26 +20,26 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.216 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.213 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+-----------+-----+------+---------+
-    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
-    |   min   |   max   |    min   |    max    | min |  max |   Type  |
-    +---------+---------+----------+-----------+-----+------+---------+
-    |      822|     1435|  8.220 us|  14.350 us|  823|  1436|       no|
-    +---------+---------+----------+-----------+-----+------+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      195|        ?|  1.950 us|         ?|  196|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
-        +-----------------+-------+---------+---------+----------+-----------+-----+------+---------+
-        |                 |       |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
-        |     Instance    | Module|   min   |   max   |    min   |    max    | min |  max |   Type  |
-        +-----------------+-------+---------+---------+----------+-----------+-----+------+---------+
-        |grp_mul_1_fu_28  |mul_1  |      821|     1434|  8.210 us|  14.340 us|  821|  1434|       no|
-        +-----------------+-------+---------+---------+----------+-----------+-----+------+---------+
+        +-----------------+-------+---------+---------+----------+----------+-----+-----+---------+
+        |                 |       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |     Instance    | Module|   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-----------------+-------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_mul_1_fu_28  |mul_1  |      194|        ?|  1.940 us|         ?|  194|    ?|       no|
+        +-----------------+-------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
         N/A
@@ -84,14 +84,14 @@ State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln16 = call void @mul.1, i64 %a, i64 %b, i64 %c" [../test_kara_sweep_base1.cpp:16->../test_kara_sweep_base1.cpp:25]   --->   Operation 3 'call' 'call_ln16' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%spectopmodule_ln19 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [../test_kara_sweep_base1.cpp:19]   --->   Operation 4 'spectopmodule' 'spectopmodule_ln19' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %a, void @empty, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%spectopmodule_ln19 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3" [../test_kara_sweep_base1.cpp:19]   --->   Operation 4 'spectopmodule' 'spectopmodule_ln19' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %a"   --->   Operation 6 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %b, void @empty, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %b, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %b"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %c"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_0, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_1, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_2, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln16 = call void @mul.1, i64 %a, i64 %b, i64 %c" [../test_kara_sweep_base1.cpp:16->../test_kara_sweep_base1.cpp:25]   --->   Operation 12 'call' 'call_ln16' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln26 = ret" [../test_kara_sweep_base1.cpp:26]   --->   Operation 13 'ret' 'ret_ln26' <Predicate = true> <Delay = 0.00>
 
@@ -184,7 +184,7 @@ ret_ln26           (ret          ) [ 000]
 <pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_2"/></StgValue>
+<StgValue><ssdm name="empty_3"/></StgValue>
 </bind>
 </comp>
 
@@ -220,7 +220,7 @@ ret_ln26           (ret          ) [ 000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_13"/></StgValue>
+<StgValue><ssdm name="empty_0"/></StgValue>
 </bind>
 </comp>
 
@@ -247,7 +247,7 @@ ret_ln26           (ret          ) [ 000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_1"/></StgValue>
 </bind>
 </comp>
 
@@ -256,7 +256,7 @@ ret_ln26           (ret          ) [ 000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_1"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -309,9 +309,9 @@ ret_ln26           (ret          ) [ 000]
 |----------|-----------------|---------|---------|---------|---------|---------|---------|
 | Operation| Functional Unit |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|-----------------|---------|---------|---------|---------|---------|---------|
-|   call   | grp_mul_1_fu_28 |    0    |   160   | 78.4441 |  76540  |  89145  |    0    |
+|   call   | grp_mul_1_fu_28 |    0    |   112   |  43.877 |  79597  |  72153  |    0    |
 |----------|-----------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                 |    0    |   160   | 78.4441 |  76540  |  89145  |    0    |
+|   Total  |                 |    0    |   112   |  43.877 |  79597  |  72153  |    0    |
 |----------|-----------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -333,10 +333,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    0   |   160  |   78   |  76540 |  89145 |    0   |
+|  Function |    0   |   112  |   43   |  79597 |  72153 |    0   |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |    0   |   160  |   78   |  76540 |  89145 |    0   |
+|   Total   |    0   |   112  |   43   |  79597 |  72153 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

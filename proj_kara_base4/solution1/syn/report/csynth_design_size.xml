@@ -1,0 +1,81 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 769275 *, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,     419, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,     329, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,     280, user inline pragmas are applied</column>
+            <column name="">(4) simplification,     278, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,     447, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,     294, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,     294, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,     294, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,     331, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,     331, loop and instruction simplification</column>
+            <column name="">(2) parallelization,     296, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,     294, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,     294, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,     294, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,     331, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="test_mul_karatsuba_configurable" col1="test_kara_sweep_base4.cpp:19" col2="769275" col2_note="*" col3="278" col4="331" col5="294" col6="331">
+                    <row id="6" col0="mp_mul_kara" col1="test_kara_sweep_base4.cpp:14" col2="769269" col3="" col4="" col5="" col6="">
+                        <row id="8" col0="mul" col1="mpx_packed_karatsuba.hpp:185" col2="769267" col3="" col4="" col5="" col6="">
+                            <row id="9" col0="mul" col1="mpx_packed_karatsuba.hpp:173" col2="769186" col2_disp="769,186 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="10" col0="mul_sized&lt;8&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="769182" col2_disp="769,182 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="2" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="768" col2_disp="   768 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="5" col0="mul_sized&lt;4&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="763584" col2_disp="763,584 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="2" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="2304" col2_disp=" 2,304 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="7" col0="mul_sized&lt;2&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="746784" col2_disp="746,784 (18 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="2" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="6912" col2_disp=" 6,912 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="3" col0="mul_sized&lt;1&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="696384" col2_disp="696,384 (54 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="2" col0="mul_direct" col1="mpx_packed_karatsuba.hpp:69" col2="20736" col2_disp="20,736 (54 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="3" col0="mul_sized&lt;1&gt;" col1="mpx_packed_karatsuba.hpp:123" col2="2089152" col2_disp="2,089,152 (162 calls)" col2_note="**" col3="" col4="" col5="" col6=""/>
+                                                <row id="4" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="61992" col2_disp="61,992 (108 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="61128" col2_disp="61,128 (54 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="4" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="20664" col2_disp="20,664 (36 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="20376" col2_disp="20,376 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="4" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="6888" col2_disp=" 6,888 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="6792" col2_disp=" 6,792 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="4" col0="add_same_radix" col1="mpx_packed_karatsuba.hpp:49" col2="2296" col2_disp=" 2,296 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="1" col0="karatsuba_combine" col1="mpx_packed_karatsuba.hpp:88" col2="2264" col2_disp=" 2,264 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="8" col0="mul" col1="mpx_packed_karatsuba.hpp:185" col2="" col3="272" col4="322" col5="285" col6="321">
+                        <row id="9" col0="mul" col1="mpx_packed_karatsuba.hpp:173" col2="" col3="270" col4="320" col5="283" col6="318"/>
+                    </row>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+                <note name="**" desc="Recursive call, instruction count may be inaccurate"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

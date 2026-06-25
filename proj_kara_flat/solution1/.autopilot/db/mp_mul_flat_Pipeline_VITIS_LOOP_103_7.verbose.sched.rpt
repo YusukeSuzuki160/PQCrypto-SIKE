@@ -1,0 +1,150 @@
+
+
+================================================================
+== Vitis HLS Report for 'mp_mul_flat_Pipeline_VITIS_LOOP_103_7'
+================================================================
+* Date:           Thu Jun 25 13:51:47 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        proj_kara_flat
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.477 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_103_7  |       16|       16|         1|          1|          1|    16|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%out = alloca i32 1" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:102]   --->   Operation 4 'alloca' 'out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%Pacc_read = read i1029 @_ssdm_op_Read.ap_auto.i1029, i1029 %Pacc"   --->   Operation 6 'read' 'Pacc_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%Pacc_cast = sext i1029 %Pacc_read"   --->   Operation 7 'sext' 'Pacc_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.38ns)   --->   "%store_ln103 = store i5 0, i5 %i" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 8 'store' 'store_ln103' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln102 = store i1024 0, i1024 %out" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:102]   --->   Operation 9 'store' 'store_ln102' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc123"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.47>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%i_10 = load i5 %i" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:106]   --->   Operation 11 'load' 'i_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.70ns)   --->   "%icmp_ln103 = icmp_eq  i5 %i_10, i5 16" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 12 'icmp' 'icmp_ln103' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.70ns)   --->   "%i_11 = add i5 %i_10, i5 1" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 13 'add' 'i_11' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln103 = br i1 %icmp_ln103, void %for.inc123.split, void %for.inc139.preheader.exitStub" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 14 'br' 'br_ln103' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%out_load_1 = load i1024 %out" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:107]   --->   Operation 15 'load' 'out_load_1' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln105 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_13" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:105]   --->   Operation 16 'specpipeline' 'specpipeline_ln105' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln102 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:102]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln102' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln103 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 18 'specloopname' 'specloopname_ln103' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln106 = trunc i5 %i_10" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:106]   --->   Operation 19 'trunc' 'trunc_ln106' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%shl_ln5 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i4.i6, i4 %trunc_ln106, i6 0" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:106]   --->   Operation 20 'bitconcatenate' 'shl_ln5' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln106 = zext i10 %shl_ln5" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:106]   --->   Operation 21 'zext' 'zext_ln106' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.47ns)   --->   "%tmp_1 = partselect i64 @_ssdm_op_PartSelect.i64.i1056.i32, i1056 %Pacc_cast, i32 %zext_ln106" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:106]   --->   Operation 22 'partselect' 'tmp_1' <Predicate = (!icmp_ln103)> <Delay = 1.47> <CoreInst = "PartSelect">   --->   Core 165 'PartSelect' <Latency = 0> <II = 1> <Delay = 1.47> <FuncUnit> <Opcode : 'partselect'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.61ns)   --->   "%out_1 = partset i1024 @_ssdm_op_PartSet.i1024.i1024.i64.i32, i1024 %out_load_1, i64 %tmp_1, i32 %zext_ln106" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:107]   --->   Operation 23 'partset' 'out_1' <Predicate = (!icmp_ln103)> <Delay = 0.61> <CoreInst = "PartSet">   --->   Core 166 'PartSet' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'partset'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.38ns)   --->   "%store_ln103 = store i5 %i_11, i5 %i" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 24 'store' 'store_ln103' <Predicate = (!icmp_ln103)> <Delay = 0.38>
+ST_2 : Operation 25 [1/1] (0.38ns)   --->   "%store_ln102 = store i1024 %out_1, i1024 %out" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:102]   --->   Operation 25 'store' 'store_ln102' <Predicate = (!icmp_ln103)> <Delay = 0.38>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln103 = br void %for.inc123" [mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103]   --->   Operation 26 'br' 'br_ln103' <Predicate = (!icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%out_load = load i1024 %out"   --->   Operation 27 'load' 'out_load' <Predicate = (icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i1024P0A, i1024 %out_out, i1024 %out_load"   --->   Operation 28 'write' 'write_ln0' <Predicate = (icmp_ln103)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 29 'ret' 'ret_ln0' <Predicate = (icmp_ln103)> <Delay = 0.38>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 5 bit ('i', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103) [4]  (0.000 ns)
+	'store' operation 0 bit ('store_ln103', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103) of constant 0 on local variable 'i', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103 [7]  (0.387 ns)
+
+ <State 2>: 2.477ns
+The critical path consists of the following:
+	'load' operation 5 bit ('i', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:106) on local variable 'i', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:103 [11]  (0.000 ns)
+	'store' operation 0 bit ('store_ln102', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:102) of variable 'out', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:107 on local variable 'out', mp_mul_rewriter/auto/test_karatsuba_handwritten_flat.cpp:102 [26]  (0.387 ns)
+	blocking operation 2.09 ns on control path)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

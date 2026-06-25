@@ -1,0 +1,10 @@
+<AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" top="test_mul_karatsuba_configurable" name="proj_kara_base4" ideType="classic">
+    <files>
+        <file name="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="mp_mul_rewriter/auto/test_kara_sweep_base4.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+    </files>
+    <solutions>
+        <solution name="solution1" status=""/>
+    </solutions>
+</AutoPilot:project>
+

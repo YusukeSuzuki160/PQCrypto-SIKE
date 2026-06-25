@@ -370,8 +370,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>187</mMinLatency>
-        <mMaxLatency>191</mMaxLatency>
+        <mMinLatency>91</mMinLatency>
+        <mMaxLatency>95</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -508,15 +508,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>450</second>
+              <second>225</second>
             </item>
             <item>
               <first>FF</first>
-              <second>10611</second>
+              <second>9034</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>21972</second>
+              <second>16023</second>
             </item>
             <item>
               <first>URAM</first>

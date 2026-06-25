@@ -160,7 +160,7 @@ extern "C" {
 
 
 # 1 "../mpx_packed_karatsuba.hpp" 1
-# 15 "../mpx_packed_karatsuba.hpp"
+# 11 "../mpx_packed_karatsuba.hpp"
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
 # 10 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h"
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" 1
@@ -5701,7 +5701,7 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 370 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_fixed.h" 2
 # 365 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 2
-# 16 "../mpx_packed_karatsuba.hpp" 2
+# 12 "../mpx_packed_karatsuba.hpp" 2
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 1 3
 # 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
 
@@ -8243,7 +8243,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   };
 # 2974 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
 }
-# 17 "../mpx_packed_karatsuba.hpp" 2
+# 13 "../mpx_packed_karatsuba.hpp" 2
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 1 3
 # 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 3
 
@@ -8288,7 +8288,7 @@ extern long int __sysconf (int __name) noexcept (true);
 # 204 "/usr/include/limits.h" 2 3 4
 # 38 "/home2/meltpoint/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/limits.h" 2 3
 # 43 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 2 3
-# 18 "../mpx_packed_karatsuba.hpp" 2
+# 14 "../mpx_packed_karatsuba.hpp" 2
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
 # 33 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
 
@@ -8546,8 +8546,8 @@ namespace std
   using ::uintmax_t;
   using ::uintptr_t;
 }
-# 19 "../mpx_packed_karatsuba.hpp" 2
-# 28 "../mpx_packed_karatsuba.hpp"
+# 15 "../mpx_packed_karatsuba.hpp" 2
+# 24 "../mpx_packed_karatsuba.hpp"
 namespace mpx
 {
   namespace detail_kara
@@ -8569,49 +8569,18 @@ namespace mpx
                     "MPX_KARA_BASE_WORDS must be in 1..MAX_NWORDS");
       static_assert(MUL_BITS >= W && MUL_BITS <= W * MAX_NWORDS,
                     "MPX_MUL_BITS must be in W..W*MAX_NWORDS");
-      static_assert(MUL_BITS >= BASE_WORDS * W || BASE_WORDS == 1,
-                    "MPX_MUL_BITS should cover at least BASE_WORDS digits");
 
-      using Big = ap_uint<W * MAX_NWORDS>;
-      using Big2 = ap_uint<2 * W * MAX_NWORDS>;
       using MulIn = ap_uint<MUL_BITS>;
       using MulOut = ap_uint<2 * MUL_BITS>;
-
-      static Big pack_full(const Digit *x, unsigned nwords)
-      {
-#pragma HLS INLINE
- Big A = 0;
-        VITIS_LOOP_61_1: for (unsigned i = 0; i < MAX_NWORDS; ++i)
-        {
-#pragma HLS PIPELINE II = 1
- if (i < nwords)
-          {
-            ap_uint<W> w = (ap_uint<W>)x[i];
-            A |= (Big)w << (i * W);
-          }
-        }
-        return A;
-      }
-
-      template <class Wide>
-      static void unpack_full(const Wide &P, Digit *y, unsigned out_words)
-      {
-#pragma HLS INLINE
- VITIS_LOOP_77_1: for (unsigned i = 0; i < out_words; ++i)
-        {
-#pragma HLS PIPELINE II = 1
- ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
-          y[i] = (Digit)w;
-        }
-      }
 
       static unsigned add_same_radix(const Digit *xa, unsigned na,
                                      const Digit *xb, unsigned nb,
                                      Digit *dst)
       {
-        const unsigned n = na > nb ? na : nb;
+#pragma HLS INLINE
+ const unsigned n = na > nb ? na : nb;
         ap_uint<W + 1> carry = 0;
-        VITIS_LOOP_91_1: for (unsigned i = 0; i < n; ++i)
+        VITIS_LOOP_56_1: for (unsigned i = 0; i < n; ++i)
         {
 #pragma HLS PIPELINE II = 1
  ap_uint<W> av = (i < na) ? (ap_uint<W>)xa[i] : (ap_uint<W>)0;
@@ -8624,64 +8593,63 @@ namespace mpx
         return carry ? (n + 1) : n;
       }
 
-
       static void mul_direct(const Digit *a, const Digit *b, Digit *c, unsigned nwords)
       {
 #pragma HLS INLINE
  MulIn A = 0, B = 0;
         const unsigned max_words = (MUL_BITS + W - 1) / W;
-        VITIS_LOOP_110_1: for (unsigned i = 0; i < nwords && i < max_words; ++i)
+        VITIS_LOOP_74_1: for (unsigned i = 0; i < nwords && i < max_words; ++i)
         {
 #pragma HLS PIPELINE II = 1
- A |= (MulIn)(ap_uint<W>)a[i] << (i * W);
-          B |= (MulIn)(ap_uint<W>)b[i] << (i * W);
+ A.range((i + 1) * W - 1, i * W) = (ap_uint<W>)a[i];
+          B.range((i + 1) * W - 1, i * W) = (ap_uint<W>)b[i];
         }
         MulOut P = (MulIn)A * (MulIn)B;
-        VITIS_LOOP_117_2: for (unsigned i = 0; i < 2 * nwords; ++i)
+        VITIS_LOOP_81_2: for (unsigned i = 0; i < 2 * nwords; ++i)
         {
 #pragma HLS PIPELINE II = 1
  c[i] = (Digit)P.range((i + 1) * W - 1, i * W);
         }
       }
 
-      template <class Wide>
-      static void limbs_to_wide(const Digit *z, unsigned nz, Wide &acc)
-      {
-        acc = 0;
-        VITIS_LOOP_128_1: for (unsigned i = 0; i < nz; ++i)
-        {
-#pragma HLS PIPELINE II = 1
- acc += (Wide)(ap_uint<W>)z[i] << (int)(i * W);
-        }
-      }
-
-      static void karatsuba_combine(unsigned nwords, unsigned n_lo, unsigned n_hi,
+      static void karatsuba_combine(unsigned nwords, unsigned n_lo,
                                     const Digit *z0, const Digit *z2, const Digit *z1,
                                     unsigned n_z1, Digit *c)
       {
-        static constexpr int ACC_BITS = (int)(2 * W * MAX_NWORDS + 32);
+#pragma HLS INLINE
+ static constexpr int ACC_BITS = (int)(2 * W * MAX_NWORDS + 32);
         using AccT = ap_int<ACC_BITS>;
+
         AccT W0 = 0, W2 = 0, W1v = 0;
-        limbs_to_wide(z0, 2 * n_lo, W0);
-        limbs_to_wide(z2, 2 * n_hi, W2);
-        limbs_to_wide(z1, 2 * n_z1, W1v);
+        VITIS_LOOP_97_1: for (unsigned i = 0; i < 2 * n_lo; ++i)
+        {
+#pragma HLS PIPELINE II = 1
+ W0 += (AccT)(ap_uint<W>)z0[i] << (int)(i * W);
+          W2 += (AccT)(ap_uint<W>)z2[i] << (int)(i * W);
+        }
+        VITIS_LOOP_103_2: for (unsigned i = 0; i < 2 * n_z1; ++i)
+        {
+#pragma HLS PIPELINE II = 1
+ W1v += (AccT)(ap_uint<W>)z1[i] << (int)(i * W);
+        }
+
         const AccT mid = W1v - W0 - W2;
-        const AccT Pacc = W0 + (mid << (int)(n_lo * W)) + (W2 << (int)(2 * n_lo * W));
-        Big2 out = 0;
-        VITIS_LOOP_148_1: for (unsigned i = 0; i < 2 * nwords; ++i)
+        const AccT Pacc =
+            W0 + (mid << (int)(n_lo * W)) + (W2 << (int)(2 * n_lo * W));
+
+        VITIS_LOOP_113_3: for (unsigned i = 0; i < 2 * nwords; ++i)
         {
 #pragma HLS PIPELINE II = 1
  ap_int<W + 2> limb = Pacc.range((int)((i + 1) * W - 1), (int)(i * W));
-          out.range((i + 1) * W - 1, i * W) = (ap_uint<W>)limb;
+          c[i] = (Digit)(ap_uint<W>)limb;
         }
-        unpack_full(out, c, 2 * nwords);
       }
 
 
       template <unsigned MaxN>
       static void mul_sized(const Digit *a, const Digit *b, Digit *c, unsigned nwords)
       {
-#pragma HLS INLINE off
+#pragma HLS INLINE
  if (nwords == 0)
           return;
         if (nwords <= BASE_WORDS || MaxN <= BASE_WORDS)
@@ -8690,27 +8658,34 @@ namespace mpx
           return;
         }
 
+        static constexpr unsigned HALF = (MaxN + 1) / 2;
+        static constexpr unsigned Z1_WORDS = MaxN + 2;
+
         const unsigned n_lo = nwords / 2;
         const unsigned n_hi = nwords - n_lo;
-        Digit Al[MAX_NWORDS], Ah[MAX_NWORDS], Bl[MAX_NWORDS], Bh[MAX_NWORDS];
-        Digit z0[2 * MAX_NWORDS], z2[2 * MAX_NWORDS], z1[2 * (MAX_NWORDS + 2)];
-        Digit Sal[MAX_NWORDS + 2], Sbl[MAX_NWORDS + 2];
-        VITIS_LOOP_175_1: for (unsigned i = 0; i < n_lo; ++i)
+
+        Digit Al[HALF], Ah[HALF], Bl[HALF], Bh[HALF];
+#pragma HLS ARRAY_PARTITION variable = Al complete dim = 1
+#pragma HLS ARRAY_PARTITION variable = Ah complete dim = 1
+#pragma HLS ARRAY_PARTITION variable = Bl complete dim = 1
+#pragma HLS ARRAY_PARTITION variable = Bh complete dim = 1
+
+ Digit z0[MaxN], z2[MaxN], z1[Z1_WORDS];
+        Digit Sal[HALF + 2], Sbl[HALF + 2];
+#pragma HLS ARRAY_PARTITION variable = Sal complete dim = 1
+#pragma HLS ARRAY_PARTITION variable = Sbl complete dim = 1
+
+ VITIS_LOOP_151_1: for (unsigned i = 0; i < n_lo; ++i)
         {
 #pragma HLS PIPELINE II = 1
  Al[i] = a[i];
           Bl[i] = b[i];
         }
-        VITIS_LOOP_181_2: for (unsigned i = 0; i < n_hi; ++i)
+        VITIS_LOOP_157_2: for (unsigned i = 0; i < n_hi; ++i)
         {
 #pragma HLS PIPELINE II = 1
  Ah[i] = a[n_lo + i];
           Bh[i] = b[n_lo + i];
-        }
-        VITIS_LOOP_187_3: for (unsigned i = 0; i < MAX_NWORDS + 2; ++i)
-        {
-          Sal[i] = 0;
-          Sbl[i] = 0;
         }
 
         mul_sized<(MaxN + 1) / 2>(Al, Bl, z0, n_lo);
@@ -8719,7 +8694,7 @@ namespace mpx
         const unsigned n_sbl = add_same_radix(Bl, n_lo, Bh, n_hi, Sbl);
         const unsigned n_mul = n_sal > n_sbl ? n_sal : n_sbl;
         mul_sized<(MaxN + 1) / 2>(Sal, Sbl, z1, n_mul);
-        karatsuba_combine(nwords, n_lo, n_hi, z0, z2, z1, n_mul, c);
+        karatsuba_combine(nwords, n_lo, z0, z2, z1, n_mul, c);
       }
 
       static void mul(const Digit *a, const Digit *b, Digit *c, unsigned nwords)
@@ -8734,103 +8709,34 @@ namespace mpx
   template <class Digit, unsigned MAX_NWORDS, bool LSW_FIRST>
   struct PackedOps
   {
-    static constexpr unsigned W = 8 * sizeof(Digit);
-    static constexpr unsigned BASE_WORDS = 2;
-    static constexpr unsigned MUL_BITS =
-        detail_kara::PackedOpsLSW<Digit, MAX_NWORDS>::MUL_BITS;
-
-    using Big = ap_uint<W * MAX_NWORDS>;
-    using Big2 = ap_uint<2 * W * MAX_NWORDS>;
-
-    static Big pack(const Digit *x, unsigned nwords)
-    {
-#pragma HLS INLINE
- Big A = 0;
-      VITIS_LOOP_226_1: for (unsigned i = 0; i < MAX_NWORDS; ++i)
-      {
-#pragma HLS PIPELINE II = 1
- if (i < nwords)
-        {
-          const unsigned src = LSW_FIRST ? i : (nwords - 1u - i);
-          ap_uint<W> w = (ap_uint<W>)x[src];
-          A |= (Big)w << (i * W);
-        }
-      }
-      return A;
-    }
-
-    template <class Wide>
-    static void unpack(const Wide &P, Digit *y, unsigned out_words)
-    {
-#pragma HLS INLINE
- VITIS_LOOP_243_1: for (unsigned i = 0; i < out_words; ++i)
-      {
-#pragma HLS PIPELINE II = 1
- ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
-        const unsigned dst = LSW_FIRST ? i : (out_words - 1u - i);
-        y[dst] = (Digit)w;
-      }
-    }
-
-    static void phys_to_logical(const Digit *a, unsigned nwords, Digit *out)
-    {
-      if (LSW_FIRST)
-      {
-        VITIS_LOOP_256_1: for (unsigned i = 0; i < nwords; ++i)
-        {
-#pragma HLS PIPELINE II = 1
- out[i] = a[i];
-        }
-      }
-      else
-      {
-        VITIS_LOOP_264_2: for (unsigned i = 0; i < nwords; ++i)
-        {
-#pragma HLS PIPELINE II = 1
- out[i] = a[nwords - 1u - i];
-        }
-      }
-    }
-
-    static void logical_to_phys(const Digit *in, unsigned nwords, Digit *a)
-    {
-      if (LSW_FIRST)
-      {
-        VITIS_LOOP_276_1: for (unsigned i = 0; i < nwords; ++i)
-        {
-#pragma HLS PIPELINE II = 1
- a[i] = in[i];
-        }
-      }
-      else
-      {
-        VITIS_LOOP_284_2: for (unsigned i = 0; i < nwords; ++i)
-        {
-#pragma HLS PIPELINE II = 1
- a[i] = in[nwords - 1u - i];
-        }
-      }
-    }
-
     static void mul(const Digit *a, const Digit *b, Digit *c, unsigned nwords)
     {
 #pragma HLS INLINE off
- Digit la[MAX_NWORDS], lb[MAX_NWORDS], lc[2 * MAX_NWORDS];
-      VITIS_LOOP_296_1: for (unsigned i = 0; i < MAX_NWORDS; ++i)
+ if (LSW_FIRST)
       {
-#pragma HLS UNROLL
- la[i] = 0;
-        lb[i] = 0;
+        detail_kara::PackedOpsLSW<Digit, MAX_NWORDS>::mul(a, b, c, nwords);
+        return;
       }
-      VITIS_LOOP_302_2: for (unsigned i = 0; i < 2 * MAX_NWORDS; ++i)
+
+      static constexpr unsigned W = 8 * sizeof(Digit);
+      Digit la[MAX_NWORDS], lb[MAX_NWORDS], lc[2 * MAX_NWORDS];
+      VITIS_LOOP_196_1: for (unsigned i = 0; i < MAX_NWORDS; ++i)
+      {
+#pragma HLS PIPELINE II = 1
+ la[i] = a[nwords - 1u - i];
+        lb[i] = b[nwords - 1u - i];
+      }
+      VITIS_LOOP_202_2: for (unsigned i = 0; i < 2 * MAX_NWORDS; ++i)
       {
 #pragma HLS UNROLL
  lc[i] = 0;
       }
-      phys_to_logical(a, nwords, la);
-      phys_to_logical(b, nwords, lb);
       detail_kara::PackedOpsLSW<Digit, MAX_NWORDS>::mul(la, lb, lc, nwords);
-      logical_to_phys(lc, 2 * nwords, c);
+      VITIS_LOOP_208_3: for (unsigned i = 0; i < 2 * nwords; ++i)
+      {
+#pragma HLS PIPELINE II = 1
+ c[i] = lc[2 * nwords - 1u - i];
+      }
     }
   };
 

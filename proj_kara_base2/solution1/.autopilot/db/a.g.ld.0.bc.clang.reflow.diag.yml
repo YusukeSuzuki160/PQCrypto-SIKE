@@ -1,0 +1,1392 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 130, Column: 11 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj2EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 70, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<2u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 130, Column: 11 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj4EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 70, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<4u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 170, Column: 9 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj4EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 91, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<4u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 169, Column: 9 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj4EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<2u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<4u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 167, Column: 32 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj4EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 52, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<4u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 130, Column: 11 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj8EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 70, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 170, Column: 9 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj8EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 91, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 169, Column: 9 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj8EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<4u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 167, Column: 32 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj8EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 52, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 176, Column: 2 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 124, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 190, Column: 9 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 186, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                   Line: 16, Column: 3 }
+Function:        _Z11mp_mul_karaPKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 186, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 15, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                   Line: 25, Column: 2 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 190, Column: 9 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 186, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                   Line: 16, Column: 3 }
+Function:        _Z11mp_mul_karaPKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 186, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 15, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                   Line: 25, Column: 2 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_mul_karatsuba_configurable_ir
+Args:            
+  - Callee:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 20, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_mul_karatsuba_configurable_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                   Line: 20, Column: 0 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Al.i1650.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 25 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Ah.i1651.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 35 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bl.i1652.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 45 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bh.i1653.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sal.i1657.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 30 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sbl.i1658.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Al.i457.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 25 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Ah.i458.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 35 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bl.i459.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 45 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bh.i460.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sal.i464.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 30 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sbl.i465.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Al.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 25 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Ah.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 35 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bl.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 45 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bh.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sal.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 30 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sbl.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Al.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 25 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Ah.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 35 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bl.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 140, Column: 45 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Bh.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 15 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sal.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 147, Column: 30 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Sbl.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 74, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_74_1
+  - String:          ' '
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26'
+  - String:          ' '
+  - Function:        'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 74, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_74_1
+  - String:          ' '
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26'
+  - String:          ' '
+  - Function:        'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 74, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_74_1
+  - String:          ' '
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26'
+  - String:          ' '
+  - Function:        'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 74, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_74_1
+  - String:          ' '
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26'
+  - String:          ' '
+  - Function:        'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 151, Column: 20 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_151_1
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:151:20'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 56, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_56_1
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:56:26'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 56, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_56_1
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:56:26'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 157, Column: 27 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_157_2
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:157:27'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 151, Column: 20 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_151_1
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:151:20'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 56, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_56_1
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:56:26'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 56, Column: 26 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_56_1
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:56:26'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 157, Column: 27 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_157_2
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:157:27'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 151, Column: 20 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_151_1
+  - String:          '''('
+  - LoopLoc:         'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:151:20'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           z0
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           z2
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           z0
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           z2
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           z0
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           z2
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=z0.i.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul'
+  - String:          ' '
+  - varLoc:          'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8'
+  - String:          ' '
+  - VarName:         z0.i.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            z0.i.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=z0.i1654.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul'
+  - String:          ' '
+  - varLoc:          'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8'
+  - String:          ' '
+  - VarName:         z0.i1654.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            z0.i1654.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=z0.i461.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul'
+  - String:          ' '
+  - varLoc:          'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:8'
+  - String:          ' '
+  - VarName:         z0.i461.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            z0.i461.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=z2.i.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul'
+  - String:          ' '
+  - varLoc:          'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18'
+  - String:          ' '
+  - VarName:         z2.i.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            z2.i.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=z2.i1655.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul'
+  - String:          ' '
+  - varLoc:          'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18'
+  - String:          ' '
+  - VarName:         z2.i1655.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            z2.i1655.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=z2.i462.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul'
+  - String:          ' '
+  - varLoc:          'mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:146:18'
+  - String:          ' '
+  - VarName:         z2.i462.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            z2.i462.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          z0.i1654.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          z2.i1655.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          z0.i461.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          z2.i462.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 8 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          z0.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 146, Column: 18 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          z2.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                   Line: 190, Column: 9 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 174, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 186, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                   Line: 16, Column: 3 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp, 
+                       Line: 186, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: mp_mul_rewriter/auto/test_kara_sweep_base2.cpp, 
+                       Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

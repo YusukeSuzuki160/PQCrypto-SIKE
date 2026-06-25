@@ -1,0 +1,269 @@
+
+
+================================================================
+== Synthesis Summary Report of 'test_mul_karatsuba_configurable'
+================================================================
++ General Information: 
+    * Date:           Thu Jun 25 13:51:23 2026
+    * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+    * Project:        proj_kara_base4
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+------------+------------+-----+
+    |               Modules              | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |          |            |            |     |
+    |               & Loops              | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF     |     LUT    | URAM|
+    +------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+------------+------------+-----+
+    |+ test_mul_karatsuba_configurable   |     -|  1.08|       95|  950.000|         -|       96|     -|        no|     -|  225 (3%)|  9073 (~0%)|  16077 (1%)|    -|
+    | + mul_1                            |     -|  1.08|       94|  940.000|         -|       94|     -|        no|     -|  225 (3%)|  9034 (~0%)|  16023 (1%)|    -|
+    |  + mul                             |     -|  1.08|       93|  930.000|         -|       93|     -|        no|     -|  225 (3%)|  9031 (~0%)|  16009 (1%)|    -|
+    |   + mul_Pipeline_VITIS_LOOP_151_1  |     -|  5.95|        6|   60.000|         -|        6|     -|        no|     -|         -|   520 (~0%)|    60 (~0%)|    -|
+    |    o VITIS_LOOP_151_1              |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_157_2  |     -|  5.95|        6|   60.000|         -|        6|     -|        no|     -|         -|   520 (~0%)|    60 (~0%)|    -|
+    |    o VITIS_LOOP_157_2              |     -|  7.30|        4|   40.000|         2|        1|     4|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_74_1   |     -|  5.85|        6|   60.000|         -|        6|     -|        no|     -|         -|   518 (~0%)|   685 (~0%)|    -|
+    |    o VITIS_LOOP_74_1               |     -|  7.30|        4|   40.000|         1|        1|     4|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_81_2   |     -|  4.98|       10|  100.000|         -|       10|     -|        no|     -|         -|     6 (~0%)|   188 (~0%)|    -|
+    |    o VITIS_LOOP_81_2               |     -|  7.30|        8|   80.000|         1|        1|     8|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_74_11  |     -|  5.85|        6|   60.000|         -|        6|     -|        no|     -|         -|   518 (~0%)|   685 (~0%)|    -|
+    |    o VITIS_LOOP_74_1               |     -|  7.30|        4|   40.000|         1|        1|     4|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_56_1   |     -|  3.77|        6|   60.000|         -|        6|     -|        no|     -|         -|   263 (~0%)|   252 (~0%)|    -|
+    |    o VITIS_LOOP_56_1               |     -|  7.30|        4|   40.000|         1|        1|     4|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_56_13  |     -|  3.77|        6|   60.000|         -|        6|     -|        no|     -|         -|   263 (~0%)|   252 (~0%)|    -|
+    |    o VITIS_LOOP_56_1               |     -|  7.30|        4|   40.000|         1|        1|     4|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_81_22  |     -|  4.98|       10|  100.000|         -|       10|     -|        no|     -|         -|     6 (~0%)|   188 (~0%)|    -|
+    |    o VITIS_LOOP_81_2               |     -|  7.30|        8|   80.000|         1|        1|     8|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_74_14  |     -|  5.85|        6|   60.000|         -|        6|     -|        no|     -|         -|   518 (~0%)|   685 (~0%)|    -|
+    |    o VITIS_LOOP_74_1               |     -|  7.30|        4|   40.000|         1|        1|     4|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_81_25  |     -|  4.98|       12|  120.000|         -|       12|     -|        no|     -|         -|     6 (~0%)|   188 (~0%)|    -|
+    |    o VITIS_LOOP_81_2               |     -|  7.30|       10|  100.000|         1|        1|    10|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_97_1   |     -|  1.78|       10|  100.000|         -|       10|     -|        no|     -|         -|  1040 (~0%)|  5452 (~0%)|    -|
+    |    o VITIS_LOOP_97_1               |     -|  7.30|        8|   80.000|         2|        1|     8|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_103_2  |     -|  1.08|       12|  120.000|         -|       12|     -|        no|     -|         -|   655 (~0%)|  2886 (~0%)|    -|
+    |    o VITIS_LOOP_103_2              |     -|  7.30|       10|  100.000|         2|        1|    10|       yes|     -|         -|           -|           -|    -|
+    |   + mul_Pipeline_VITIS_LOOP_113_3  |     -|  4.72|       18|  180.000|         -|       18|     -|        no|     -|         -|     7 (~0%)|   607 (~0%)|    -|
+    |    o VITIS_LOOP_113_3              |     -|  7.30|       16|  160.000|         1|        1|    16|       yes|     -|         -|           -|           -|    -|
+    +------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* BRAM
++-----------+------------+---------------+
+| Interface | Data Width | Address Width |
++-----------+------------+---------------+
+| a_PORTA   | 64         | 32            |
+| b_PORTA   | 64         | 32            |
+| c_PORTA   | 64         | 32            |
++-----------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------+
+| Argument | Direction | Datatype                  |
++----------+-----------+---------------------------+
+| a        | in        | long unsigned int const * |
+| b        | in        | long unsigned int const * |
+| c        | out       | long unsigned int*        |
++----------+-----------+---------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| a        | a_PORTA      | interface |
+| b        | b_PORTA      | interface |
+| c        | c_PORTA      | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------+-----+--------+-------------+------------+--------------------------+---------+
+| Name                                           | DSP | Pragma | Variable    | Op         | Impl                     | Latency |
++------------------------------------------------+-----+--------+-------------+------------+--------------------------+---------+
+| + test_mul_karatsuba_configurable              | 225 |        |             |            |                          |         |
+|  + mul_1                                       | 225 |        |             |            |                          |         |
+|   + mul                                        | 225 |        |             |            |                          |         |
+|     mul_256ns_256ns_512_2_1_U112               | 225 |        | P           | mul        | auto                     | 1       |
+|     mul_256ns_256ns_512_2_1_U112               | 225 |        | P_1         | mul        | auto                     | 1       |
+|     icmp_ln66_fu_535_p2                        |     |        | icmp_ln66   | setne      | auto                     | 0       |
+|     n_sal_fu_541_p3                            |     |        | n_sal       | select     | auto_sel                 | 0       |
+|     icmp_ln66_1_fu_549_p2                      |     |        | icmp_ln66_1 | setne      | auto                     | 0       |
+|     n_sbl_fu_555_p3                            |     |        | n_sbl       | select     | auto_sel                 | 0       |
+|     mul_256ns_256ns_512_2_1_U112               | 225 |        | P_2         | mul        | auto                     | 1       |
+|     empty_fu_563_p2                            |     |        | empty       | setgt      | auto                     | 0       |
+|     empty_24_fu_569_p3                         |     |        | empty_24    | select     | auto_sel                 | 0       |
+|     add_ln109_fu_600_p2                        |     |        | add_ln109   | add        | fabric                   | 0       |
+|     mid_fu_616_p2                              |     |        | mid         | sub        | fabric                   | 0       |
+|     add_ln111_fu_636_p2                        |     |        | add_ln111   | add        | fabric                   | 0       |
+|     Pacc_fu_656_p2                             |     |        | Pacc        | add        | fabric                   | 0       |
+|    + mul_Pipeline_VITIS_LOOP_151_1             | 0   |        |             |            |                          |         |
+|      icmp_ln151_fu_184_p2                      |     |        | icmp_ln151  | seteq      | auto                     | 0       |
+|      add_ln151_fu_190_p2                       |     |        | add_ln151   | add        | fabric                   | 0       |
+|    + mul_Pipeline_VITIS_LOOP_157_2             | 0   |        |             |            |                          |         |
+|      icmp_ln157_fu_188_p2                      |     |        | icmp_ln157  | seteq      | auto                     | 0       |
+|      add_ln157_fu_194_p2                       |     |        | add_ln157   | add        | fabric                   | 0       |
+|    + mul_Pipeline_VITIS_LOOP_74_1              | 0   |        |             |            |                          |         |
+|      icmp_ln74_fu_158_p2                       |     |        | icmp_ln74   | seteq      | auto                     | 0       |
+|      add_ln74_fu_164_p2                        |     |        | add_ln74    | add        | fabric                   | 0       |
+|      sparsemux_9_2_64_1_1_U17                  |     |        | tmp         | sparsemux  | compactencoding_dontcare | 0       |
+|      partset_256ns_256ns_64ns_32ns_256_1_1_U18 |     |        | A_1         | partset    | auto                     | 0       |
+|      sparsemux_9_2_64_1_1_U19                  |     |        | tmp_2       | sparsemux  | compactencoding_dontcare | 0       |
+|      partset_256ns_256ns_64ns_32ns_256_1_1_U20 |     |        | B_1         | partset    | auto                     | 0       |
+|    + mul_Pipeline_VITIS_LOOP_81_2              | 0   |        |             |            |                          |         |
+|      icmp_ln81_fu_67_p2                        |     |        | icmp_ln81   | seteq      | auto                     | 0       |
+|      add_ln81_fu_73_p2                         |     |        | add_ln81    | add        | fabric                   | 0       |
+|      partselect_64ns_512ns_32ns_64_1_1_U33     |     |        | tmp_4       | partselect | auto                     | 0       |
+|    + mul_Pipeline_VITIS_LOOP_74_11             | 0   |        |             |            |                          |         |
+|      icmp_ln74_fu_158_p2                       |     |        | icmp_ln74   | seteq      | auto                     | 0       |
+|      add_ln74_fu_164_p2                        |     |        | add_ln74    | add        | fabric                   | 0       |
+|      sparsemux_9_2_64_1_1_U37                  |     |        | tmp_5       | sparsemux  | compactencoding_dontcare | 0       |
+|      partset_256ns_256ns_64ns_32ns_256_1_1_U38 |     |        | A_2         | partset    | auto                     | 0       |
+|      sparsemux_9_2_64_1_1_U39                  |     |        | tmp_7       | sparsemux  | compactencoding_dontcare | 0       |
+|      partset_256ns_256ns_64ns_32ns_256_1_1_U40 |     |        | B_2         | partset    | auto                     | 0       |
+|    + mul_Pipeline_VITIS_LOOP_56_1              | 0   |        |             |            |                          |         |
+|      icmp_ln56_fu_190_p2                       |     |        | icmp_ln56   | seteq      | auto                     | 0       |
+|      add_ln56_fu_196_p2                        |     |        | add_ln56    | add        | fabric                   | 0       |
+|      sparsemux_9_2_64_1_1_U54                  |     |        | av          | sparsemux  | compactencoding_dontcare | 0       |
+|      sparsemux_9_2_64_1_1_U55                  |     |        | bv          | sparsemux  | compactencoding_dontcare | 0       |
+|      add_ln61_fu_269_p2                        |     |        | add_ln61    | add        | fabric                   | 0       |
+|      s_fu_279_p2                               |     |        | s           | add        | fabric                   | 0       |
+|    + mul_Pipeline_VITIS_LOOP_56_13             | 0   |        |             |            |                          |         |
+|      icmp_ln56_fu_190_p2                       |     |        | icmp_ln56   | seteq      | auto                     | 0       |
+|      add_ln56_fu_196_p2                        |     |        | add_ln56    | add        | fabric                   | 0       |
+|      sparsemux_9_2_64_1_1_U69                  |     |        | av          | sparsemux  | compactencoding_dontcare | 0       |
+|      sparsemux_9_2_64_1_1_U70                  |     |        | bv          | sparsemux  | compactencoding_dontcare | 0       |
+|      add_ln61_fu_269_p2                        |     |        | add_ln61    | add        | fabric                   | 0       |
+|      s_fu_279_p2                               |     |        | s           | add        | fabric                   | 0       |
+|    + mul_Pipeline_VITIS_LOOP_81_22             | 0   |        |             |            |                          |         |
+|      icmp_ln81_fu_67_p2                        |     |        | icmp_ln81   | seteq      | auto                     | 0       |
+|      add_ln81_fu_73_p2                         |     |        | add_ln81    | add        | fabric                   | 0       |
+|      partselect_64ns_512ns_32ns_64_1_1_U51     |     |        | tmp_9       | partselect | auto                     | 0       |
+|    + mul_Pipeline_VITIS_LOOP_74_14             | 0   |        |             |            |                          |         |
+|      icmp_ln74_fu_158_p2                       |     |        | icmp_ln74   | seteq      | auto                     | 0       |
+|      i_5_fu_164_p2                             |     |        | i_5         | add        | fabric                   | 0       |
+|      sparsemux_9_2_64_1_1_U84                  |     |        | tmp_3       | sparsemux  | compactencoding_dontcare | 0       |
+|      partset_256ns_256ns_64ns_32ns_256_1_1_U85 |     |        | A_1         | partset    | auto                     | 0       |
+|      sparsemux_9_2_64_1_1_U86                  |     |        | tmp_6       | sparsemux  | compactencoding_dontcare | 0       |
+|      partset_256ns_256ns_64ns_32ns_256_1_1_U87 |     |        | B_1         | partset    | auto                     | 0       |
+|    + mul_Pipeline_VITIS_LOOP_81_25             | 0   |        |             |            |                          |         |
+|      icmp_ln81_fu_79_p2                        |     |        | icmp_ln81   | seteq      | auto                     | 0       |
+|      add_ln81_fu_85_p2                         |     |        | add_ln81    | add        | fabric                   | 0       |
+|      partselect_64ns_512ns_32ns_64_1_1_U98     |     |        | tmp_8       | partselect | auto                     | 0       |
+|    + mul_Pipeline_VITIS_LOOP_97_1              | 0   |        |             |            |                          |         |
+|      icmp_ln97_fu_110_p2                       |     |        | icmp_ln97   | seteq      | auto                     | 0       |
+|      add_ln97_fu_116_p2                        |     |        | add_ln97    | add        | fabric                   | 0       |
+|      shl_ln100_fu_158_p2                       |     |        | shl_ln100   | shl        | auto_pipe                | 0       |
+|      W0_1_fu_168_p2                            |     |        | W0_1        | add        | fabric                   | 0       |
+|      shl_ln101_fu_178_p2                       |     |        | shl_ln101   | shl        | auto_pipe                | 0       |
+|      W2_1_fu_188_p2                            |     |        | W2_1        | add        | fabric                   | 0       |
+|    + mul_Pipeline_VITIS_LOOP_103_2             | 0   |        |             |            |                          |         |
+|      icmp_ln103_fu_89_p2                       |     |        | icmp_ln103  | seteq      | auto                     | 0       |
+|      add_ln103_fu_95_p2                        |     |        | add_ln103   | add        | fabric                   | 0       |
+|      shl_ln106_fu_129_p2                       |     |        | shl_ln106   | shl        | auto_pipe                | 0       |
+|      W1v_1_fu_139_p2                           |     |        | W1v_1       | add        | fabric                   | 0       |
+|    + mul_Pipeline_VITIS_LOOP_113_3             | 0   |        |             |            |                          |         |
+|      icmp_ln113_fu_77_p2                       |     |        | icmp_ln113  | seteq      | auto                     | 0       |
+|      add_ln113_fu_83_p2                        |     |        | add_ln113   | add        | fabric                   | 0       |
+|      partselect_64ns_1056s_32ns_64_1_1_U109    |     |        | tmp_s       | partselect | auto                     | 0       |
++------------------------------------------------+-----+--------+-------------+------------+--------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                              | Usage        | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                                   |              |           |      |      |        |          |      |         | Banks            |
++-----------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| + test_mul_karatsuba_configurable |              |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U                 | interface    | s_axilite |      |      |        |          |      |         |                  |
+|  + mul_1                          |              |           | 0    | 0    |        |          |      |         |                  |
+|   + mul                           |              |           | 0    | 0    |        |          |      |         |                  |
+|     z0_U                          | ram_1p array |           |      |      |        | z0       | auto | 1       | 64, 8, 1         |
+|     z2_U                          | ram_1p array |           |      |      |        | z2       | auto | 1       | 64, 8, 1         |
+|     z1_U                          | ram_1p array |           |      |      |        | z1       | auto | 1       | 64, 10, 1        |
++-----------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------------------------------+--------------------------------------------------------------------------------------+
+| Type            | Options                                  | Location                                                                             |
++-----------------+------------------------------------------+--------------------------------------------------------------------------------------+
+| inline          |                                          | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:53 in add_same_radix                   |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:58 in add_same_radix                   |
+| inline          |                                          | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:71 in mul_direct                       |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:76 in mul_direct                       |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:83 in mul_direct                       |
+| inline          |                                          | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:92 in karatsuba_combine                |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:99 in karatsuba_combine                |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:105 in karatsuba_combine               |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:115 in karatsuba_combine               |
+| inline          |                                          | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:125 in mul_sized                       |
+| array_partition | variable = Al complete dim = 1           | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:141 in mul_sized                       |
+| array_partition | variable = Ah complete dim = 1           | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:142 in mul_sized                       |
+| array_partition | variable = Bl complete dim = 1           | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:143 in mul_sized                       |
+| array_partition | variable = Bh complete dim = 1           | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:144 in mul_sized                       |
+| array_partition | variable = Sal complete dim = 1          | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:148 in mul_sized                       |
+| array_partition | variable = Sbl complete dim = 1          | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:149 in mul_sized                       |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:153 in mul_sized                       |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:159 in mul_sized                       |
+| inline          | off                                      | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:175 in mul                             |
+| inline          | off                                      | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:187 in mul                             |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:198 in mul                             |
+| unroll          |                                          | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:204 in mul                             |
+| pipeline        | II = 1                                   | mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:210 in mul                             |
+| interface       | bram port = a                            | mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:21 in test_mul_karatsuba_configurable |
+| interface       | bram port = b                            | mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:22 in test_mul_karatsuba_configurable |
+| interface       | bram port = c                            | mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:23 in test_mul_karatsuba_configurable |
+| interface       | s_axilite port = return bundle = control | mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:24 in test_mul_karatsuba_configurable |
++-----------------+------------------------------------------+--------------------------------------------------------------------------------------+
+
+

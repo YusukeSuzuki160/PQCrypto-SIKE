@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mul_1'
 ================================================================
-* Date:           Thu Jun 25 13:37:08 2026
+* Date:           Thu Jun 25 13:55:25 2026
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_kara_base8
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       72|       72|  0.720 us|  0.720 us|   72|   72|       no|
+    |       33|       33|  0.330 us|  0.330 us|   33|   33|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -65,128 +65,25 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 12
+* Number of FSM states : 2
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
-2 --> 3 
-3 --> 4 
-4 --> 5 
-5 --> 6 
-6 --> 7 
-7 --> 8 
-8 --> 9 
-9 --> 10 
-10 --> 11 
-11 --> 12 
-12 --> 
+2 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.71>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%la = alloca i64 1" [../mpx_packed_karatsuba.hpp:295]   --->   Operation 13 'alloca' 'la' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%lb = alloca i64 1" [../mpx_packed_karatsuba.hpp:295]   --->   Operation 14 'alloca' 'lb' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%lc = alloca i64 1" [../mpx_packed_karatsuba.hpp:295]   --->   Operation 15 'alloca' 'lc' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%la_addr = getelementptr i64 %la, i64 0, i64 0" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 16 'getelementptr' 'la_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 17 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%lb_addr_7 = getelementptr i64 %lb, i64 0, i64 0" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 18 'getelementptr' 'lb_addr_7' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr_7" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 19 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%la_addr_1 = getelementptr i64 %la, i64 0, i64 1" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 20 'getelementptr' 'la_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr_1" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 21 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%lb_addr = getelementptr i64 %lb, i64 0, i64 1" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 22 'getelementptr' 'lb_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 23 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%lc_addr = getelementptr i64 %lc, i64 0, i64 0" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 24 'getelementptr' 'lc_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 25 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%lc_addr_1 = getelementptr i64 %lc, i64 0, i64 1" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 26 'getelementptr' 'lc_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_1" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 27 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln190 = call void @mul, i64 %a, i64 %b, i64 %c" [../mpx_packed_karatsuba.hpp:190]   --->   Operation 3 'call' 'call_ln190' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 0.71>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%la_addr_2 = getelementptr i64 %la, i64 0, i64 2" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 28 'getelementptr' 'la_addr_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr_2" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 29 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%lb_addr_1 = getelementptr i64 %lb, i64 0, i64 2" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 30 'getelementptr' 'lb_addr_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 31 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr_1" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 31 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%la_addr_3 = getelementptr i64 %la, i64 0, i64 3" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 32 'getelementptr' 'la_addr_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr_3" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 33 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%lb_addr_2 = getelementptr i64 %lb, i64 0, i64 3" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 34 'getelementptr' 'lb_addr_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 35 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr_2" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 35 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%lc_addr_2 = getelementptr i64 %lc, i64 0, i64 2" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 36 'getelementptr' 'lc_addr_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 37 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_2" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 37 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%lc_addr_3 = getelementptr i64 %lc, i64 0, i64 3" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 38 'getelementptr' 'lc_addr_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 39 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_3" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 39 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-
-State 3 <SV = 2> <Delay = 0.71>
-ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%lc_addr_4 = getelementptr i64 %lc, i64 0, i64 4" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 40 'getelementptr' 'lc_addr_4' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 41 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_4" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 41 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%lc_addr_5 = getelementptr i64 %lc, i64 0, i64 5" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 42 'getelementptr' 'lc_addr_5' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 43 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_5" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 43 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-
-State 4 <SV = 3> <Delay = 0.71>
-ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%lc_addr_6 = getelementptr i64 %lc, i64 0, i64 6" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 44 'getelementptr' 'lc_addr_6' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 45 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_6" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 45 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%lc_addr_7 = getelementptr i64 %lc, i64 0, i64 7" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 46 'getelementptr' 'lc_addr_7' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 47 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_7" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 47 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-
-State 5 <SV = 4> <Delay = 0.71>
-ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%la_addr_4 = getelementptr i64 %la, i64 0, i64 4" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 48 'getelementptr' 'la_addr_4' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 49 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr_4" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 49 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%lb_addr_3 = getelementptr i64 %lb, i64 0, i64 4" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 50 'getelementptr' 'lb_addr_3' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 51 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr_3" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 51 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%la_addr_5 = getelementptr i64 %la, i64 0, i64 5" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 52 'getelementptr' 'la_addr_5' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 53 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr_5" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 53 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%lb_addr_4 = getelementptr i64 %lb, i64 0, i64 5" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 54 'getelementptr' 'lb_addr_4' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 55 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr_4" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 55 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%lc_addr_8 = getelementptr i64 %lc, i64 0, i64 8" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 56 'getelementptr' 'lc_addr_8' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 57 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_8" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 57 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%lc_addr_9 = getelementptr i64 %lc, i64 0, i64 9" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 58 'getelementptr' 'lc_addr_9' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 59 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_9" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 59 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-
-State 6 <SV = 5> <Delay = 0.71>
-ST_6 : Operation 60 [1/1] (0.00ns)   --->   "%la_addr_6 = getelementptr i64 %la, i64 0, i64 6" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 60 'getelementptr' 'la_addr_6' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 61 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr_6" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 61 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%lb_addr_5 = getelementptr i64 %lb, i64 0, i64 6" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 62 'getelementptr' 'lb_addr_5' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 63 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr_5" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 63 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%la_addr_7 = getelementptr i64 %la, i64 0, i64 7" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 64 'getelementptr' 'la_addr_7' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 65 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln299 = store i64 0, i3 %la_addr_7" [../mpx_packed_karatsuba.hpp:299]   --->   Operation 65 'store' 'store_ln299' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%lb_addr_6 = getelementptr i64 %lb, i64 0, i64 7" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 66 'getelementptr' 'lb_addr_6' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 67 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln300 = store i64 0, i3 %lb_addr_6" [../mpx_packed_karatsuba.hpp:300]   --->   Operation 67 'store' 'store_ln300' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
-ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%lc_addr_10 = getelementptr i64 %lc, i64 0, i64 10" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 68 'getelementptr' 'lc_addr_10' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 69 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_10" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 69 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%lc_addr_11 = getelementptr i64 %lc, i64 0, i64 11" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 70 'getelementptr' 'lc_addr_11' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 71 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_11" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 71 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-
-State 7 <SV = 6> <Delay = 0.71>
-ST_7 : Operation 72 [1/1] (0.00ns)   --->   "%lc_addr_12 = getelementptr i64 %lc, i64 0, i64 12" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 72 'getelementptr' 'lc_addr_12' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 73 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_12" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 73 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_7 : Operation 74 [1/1] (0.00ns)   --->   "%lc_addr_13 = getelementptr i64 %lc, i64 0, i64 13" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 74 'getelementptr' 'lc_addr_13' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 75 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_13" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 75 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_7 : Operation 76 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mul.1_Pipeline_VITIS_LOOP_256_1, i64 %a, i64 %la"   --->   Operation 76 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_7 : Operation 77 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mul.1_Pipeline_VITIS_LOOP_256_11, i64 %b, i64 %lb"   --->   Operation 77 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 8 <SV = 7> <Delay = 1.48>
-ST_8 : Operation 78 [1/1] (0.00ns)   --->   "%lc_addr_14 = getelementptr i64 %lc, i64 0, i64 14" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 78 'getelementptr' 'lc_addr_14' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 79 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_14" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 79 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%lc_addr_15 = getelementptr i64 %lc, i64 0, i64 15" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 80 'getelementptr' 'lc_addr_15' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 81 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln305 = store i64 0, i4 %lc_addr_15" [../mpx_packed_karatsuba.hpp:305]   --->   Operation 81 'store' 'store_ln305' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
-ST_8 : Operation 82 [1/2] (1.48ns)   --->   "%call_ln0 = call void @mul.1_Pipeline_VITIS_LOOP_256_1, i64 %a, i64 %la"   --->   Operation 82 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_8 : Operation 83 [1/2] (1.48ns)   --->   "%call_ln0 = call void @mul.1_Pipeline_VITIS_LOOP_256_11, i64 %b, i64 %lb"   --->   Operation 83 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-
-State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 84 [2/2] (0.00ns)   --->   "%call_ln309 = call void @mul, i64 %la, i64 %lb, i64 %lc" [../mpx_packed_karatsuba.hpp:309]   --->   Operation 84 'call' 'call_ln309' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 85 [1/2] (0.00ns)   --->   "%call_ln309 = call void @mul, i64 %la, i64 %lb, i64 %lc" [../mpx_packed_karatsuba.hpp:309]   --->   Operation 85 'call' 'call_ln309' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 86 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mul.1_Pipeline_VITIS_LOOP_276_1, i64 %lc, i64 %c"   --->   Operation 86 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-
-State 12 <SV = 11> <Delay = 1.48>
-ST_12 : Operation 87 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 87 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 88 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %b, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 88 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 89 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 89 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 90 [1/2] (1.48ns)   --->   "%call_ln0 = call void @mul.1_Pipeline_VITIS_LOOP_276_1, i64 %lc, i64 %c"   --->   Operation 90 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
-ST_12 : Operation 91 [1/1] (0.00ns)   --->   "%ret_ln311 = ret" [../mpx_packed_karatsuba.hpp:311]   --->   Operation 91 'ret' 'ret_ln311' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %b, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/2] (0.00ns)   --->   "%call_ln190 = call void @mul, i64 %a, i64 %b, i64 %c" [../mpx_packed_karatsuba.hpp:190]   --->   Operation 7 'call' 'call_ln190' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln213 = ret" [../mpx_packed_karatsuba.hpp:213]   --->   Operation 8 'ret' 'ret_ln213' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -194,58 +91,11 @@ ST_12 : Operation 91 [1/1] (0.00ns)   --->   "%ret_ln311 = ret" [../mpx_packed_k
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 0.714ns
-The critical path consists of the following:
-	'alloca' operation 64 bit ('la', ../mpx_packed_karatsuba.hpp:295) [7]  (0.000 ns)
-	'getelementptr' operation 3 bit ('out', ../mpx_packed_karatsuba.hpp:299) [10]  (0.000 ns)
-	'store' operation 0 bit ('store_ln299', ../mpx_packed_karatsuba.hpp:299) of constant 0 on array 'la', ../mpx_packed_karatsuba.hpp:295 [11]  (0.714 ns)
-
- <State 2>: 0.714ns
-The critical path consists of the following:
-	'getelementptr' operation 3 bit ('la_addr_2', ../mpx_packed_karatsuba.hpp:299) [18]  (0.000 ns)
-	'store' operation 0 bit ('store_ln299', ../mpx_packed_karatsuba.hpp:299) of constant 0 on array 'la', ../mpx_packed_karatsuba.hpp:295 [19]  (0.714 ns)
-
- <State 3>: 0.714ns
-The critical path consists of the following:
-	'getelementptr' operation 4 bit ('lc_addr_4', ../mpx_packed_karatsuba.hpp:305) [50]  (0.000 ns)
-	'store' operation 0 bit ('store_ln305', ../mpx_packed_karatsuba.hpp:305) of constant 0 on array 'lc', ../mpx_packed_karatsuba.hpp:295 [51]  (0.714 ns)
-
- <State 4>: 0.714ns
-The critical path consists of the following:
-	'getelementptr' operation 4 bit ('lc_addr_6', ../mpx_packed_karatsuba.hpp:305) [54]  (0.000 ns)
-	'store' operation 0 bit ('store_ln305', ../mpx_packed_karatsuba.hpp:305) of constant 0 on array 'lc', ../mpx_packed_karatsuba.hpp:295 [55]  (0.714 ns)
-
- <State 5>: 0.714ns
-The critical path consists of the following:
-	'getelementptr' operation 3 bit ('la_addr_4', ../mpx_packed_karatsuba.hpp:299) [26]  (0.000 ns)
-	'store' operation 0 bit ('store_ln299', ../mpx_packed_karatsuba.hpp:299) of constant 0 on array 'la', ../mpx_packed_karatsuba.hpp:295 [27]  (0.714 ns)
-
- <State 6>: 0.714ns
-The critical path consists of the following:
-	'getelementptr' operation 3 bit ('la_addr_6', ../mpx_packed_karatsuba.hpp:299) [34]  (0.000 ns)
-	'store' operation 0 bit ('store_ln299', ../mpx_packed_karatsuba.hpp:299) of constant 0 on array 'la', ../mpx_packed_karatsuba.hpp:295 [35]  (0.714 ns)
-
- <State 7>: 0.714ns
-The critical path consists of the following:
-	'getelementptr' operation 4 bit ('lc_addr_12', ../mpx_packed_karatsuba.hpp:305) [66]  (0.000 ns)
-	'store' operation 0 bit ('store_ln305', ../mpx_packed_karatsuba.hpp:305) of constant 0 on array 'lc', ../mpx_packed_karatsuba.hpp:295 [67]  (0.714 ns)
-
- <State 8>: 1.482ns
-The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'mul.1_Pipeline_VITIS_LOOP_256_1' [74]  (1.482 ns)
-
- <State 9>: 0.000ns
+ <State 1>: 0.000ns
 The critical path consists of the following:
 
- <State 10>: 0.000ns
+ <State 2>: 0.000ns
 The critical path consists of the following:
-
- <State 11>: 0.000ns
-The critical path consists of the following:
-
- <State 12>: 1.481ns
-The critical path consists of the following:
-	'call' operation 0 bit ('call_ln0') to 'mul.1_Pipeline_VITIS_LOOP_276_1' [77]  (1.481 ns)
 
 
 ============================================================
@@ -258,16 +108,6 @@ N/A
   - Chain level:
 	State 1
 	State 2
-	State 3
-	State 4
-	State 5
-	State 6
-	State 7
-	State 8
-	State 9
-	State 10
-	State 11
-	State 12
 
 
 ============================================================

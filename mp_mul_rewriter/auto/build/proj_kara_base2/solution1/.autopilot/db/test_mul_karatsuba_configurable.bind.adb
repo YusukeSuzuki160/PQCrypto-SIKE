@@ -370,8 +370,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>412</mMinLatency>
-			<mMaxLatency>511</mMaxLatency>
+			<mMinLatency>124</mMinLatency>
+			<mMaxLatency>132</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

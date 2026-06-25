@@ -370,8 +370,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>73</mMinLatency>
-        <mMaxLatency>73</mMaxLatency>
+        <mMinLatency>34</mMinLatency>
+        <mMaxLatency>34</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -500,27 +500,19 @@
         <item>
           <first>grp_mul_1_fu_28 (mul_1)</first>
           <second>
-            <count>5</count>
+            <count>3</count>
             <item_version>0</item_version>
-            <item>
-              <first>BRAM</first>
-              <second>0</second>
-            </item>
             <item>
               <first>DSP</first>
               <second>900</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2679</second>
+              <second>2436</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>6796</second>
-            </item>
-            <item>
-              <first>URAM</first>
-              <second>0</second>
+              <second>1757</second>
             </item>
           </second>
         </item>

@@ -1,0 +1,126 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_same_radix" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_same_radix" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:92:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:105:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="karatsuba_combine" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:125:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Al complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:142:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Ah complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:143:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Bl complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:144:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Bh complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:148:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Sal complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = Sbl complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_sized" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:175:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:187:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:204:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:210:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_kara_sweep_base4.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_mul_karatsuba_configurable" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_configurable" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:130:11" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 70 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:130:11" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 70 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:170:9" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::karatsuba_combine(unsigned int, unsigned int, unsigned long const*, unsigned long const*, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 91 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:169:9" msg_body="Inlining function 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;4u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:167:32" msg_body="Inlining function 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)' into 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::add_same_radix(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 52 Column 0" Caller="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:176:2" msg_body="Inlining function 'void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="void mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul_sized&lt;8u&gt;(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 124 Column 0" Caller="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp Line 174 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/test_kara_sweep_base4.cpp:20:0" msg_body="Inlining function 'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File mp_mul_rewriter/auto/test_kara_sweep_base4.cpp Line 15 Column 0" Caller="test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File mp_mul_rewriter/auto/test_kara_sweep_base4.cpp Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:15" msg_body="Applying array_partition to 'Al.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:25" msg_body="Applying array_partition to 'Ah.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:35" msg_body="Applying array_partition to 'Bl.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:140:45" msg_body="Applying array_partition to 'Bh.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:15" msg_body="Applying array_partition to 'Sal.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sal.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:147:30" msg_body="Applying array_partition to 'Sbl.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Sbl.i"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'test_mul_karatsuba_configurable'
 ================================================================
-* Date:           Thu Jun 25 13:37:08 2026
+* Date:           Thu Jun 25 13:55:25 2026
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_kara_base8
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       73|       73|  0.730 us|  0.730 us|   74|   74|       no|
+    |       34|       34|  0.340 us|  0.340 us|   35|   35|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 

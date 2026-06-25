@@ -1,1 +1,3 @@
 build/
+hls_comparison_results/hls_kara_*.log
+examples/test_kara_sweep_*.cpp

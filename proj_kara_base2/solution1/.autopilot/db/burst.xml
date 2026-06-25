@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp:74:26" LoopName="VITIS_LOOP_74_1" ParentFunc="mpx::detail_kara::PackedOpsLSW&lt;unsigned long, 8u&gt;::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)"/>
+</VitisHLS:BurstInfo>
+
