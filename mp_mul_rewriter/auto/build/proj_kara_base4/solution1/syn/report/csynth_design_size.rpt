@@ -1,0 +1,86 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 399,335 *    | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |     693      | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |     537      | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |     503      | user inline pragmas are applied                                                        |
+|               | (4) simplification          |     475      | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |     449      | user array partition pragmas are applied                                               |
+|               | (2) simplification          |     449      | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |     449      | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |     449      | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |     459      | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |     459      | loop and instruction simplification                                                    |
+|               | (2) parallelization         |     447      | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |     445      | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |     445      | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |     445      | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |     486      | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++--------------------------------------------+------------------------------+-------------------------+---------------+---------------+---------------+---------------+
+| Function                                   | Location                     | Compile/Link            | Unroll/Inline | Array/Struct  | Performance   | HW Transforms |
++--------------------------------------------+------------------------------+-------------------------+---------------+---------------+---------------+---------------+
+| + test_mul_karatsuba_configura...          | test_kara_sweep_base4.cpp:19 | 399,335 *               | 475           | 459           | 445           | 486           |
+|  + mp_mul_kara                             | test_kara_sweep_base4.cpp:14 | 399,329                 |               |               |               |               |
+|   + mul                                    | mpx_packed_karatsuba.hpp:292 | 399,327                 |               |               |               |               |
+|      phys_to_logical                       | mpx_packed_karatsuba.hpp:252 |     72 (2 calls)        |               |               |               |               |
+|    + mul                                   | mpx_packed_karatsuba.hpp:202 | 399,165                 |               |               |               |               |
+|     + mul_sized<8>                         | mpx_packed_karatsuba.hpp:159 | 399,163                 |               |               |               |               |
+|        mul_direct                          | mpx_packed_karatsuba.hpp:105 |    440                  |               |               |               |               |
+|      + mul_sized<4>                        | mpx_packed_karatsuba.hpp:159 | 396,051 (3 calls)       |               |               |               |               |
+|         mul_direct                         | mpx_packed_karatsuba.hpp:105 |  1,320 (3 calls)        |               |               |               |               |
+|       + mul_sized<2>                       | mpx_packed_karatsuba.hpp:159 | 386,712 (9 calls)       |               |               |               |               |
+|          mul_direct                        | mpx_packed_karatsuba.hpp:105 |  3,960 (9 calls)        |               |               |               |               |
+|        + mul_sized<1>                      | mpx_packed_karatsuba.hpp:159 | 358,695 (27 calls)      |               |               |               |               |
+|           mul_direct                       | mpx_packed_karatsuba.hpp:105 | 11,880 (27 calls)       |               |               |               |               |
+|           mul_sized<1>                     | mpx_packed_karatsuba.hpp:159 | 1,076,085 (81 calls) ** |               |               |               |               |
+|           add_same_radix                   | mpx_packed_karatsuba.hpp:85  | 30,996 (54 calls)       |               |               |               |               |
+|         + karatsuba_combine                | mpx_packed_karatsuba.hpp:135 | 37,260 (27 calls)       |               |               |               |               |
+|            limbs_to_wide<ap_int<1056> >... | mpx_packed_karatsuba.hpp:125 | 13,446 (81 calls)       |               |               |               |               |
+|            unpack_full<ap_uint<1024> >     | mpx_packed_karatsuba.hpp:74  |  2,079 (27 calls)       |               |               |               |               |
+|          add_same_radix                    | mpx_packed_karatsuba.hpp:85  | 10,332 (18 calls)       |               |               |               |               |
+|        + karatsuba_combine                 | mpx_packed_karatsuba.hpp:135 | 12,420 (9 calls)        |               |               |               |               |
+|           limbs_to_wide<ap_int<1056> >...  | mpx_packed_karatsuba.hpp:125 |  4,482 (27 calls)       |               |               |               |               |
+|           unpack_full<ap_uint<1024> >      | mpx_packed_karatsuba.hpp:74  |    693 (9 calls)        |               |               |               |               |
+|         add_same_radix                     | mpx_packed_karatsuba.hpp:85  |  3,444 (6 calls)        |               |               |               |               |
+|       + karatsuba_combine                  | mpx_packed_karatsuba.hpp:135 |  4,140 (3 calls)        |               |               |               |               |
+|          limbs_to_wide<ap_int<1056> >...   | mpx_packed_karatsuba.hpp:125 |  1,494 (9 calls)        |               |               |               |               |
+|          unpack_full<ap_uint<1024> >       | mpx_packed_karatsuba.hpp:74  |    231 (3 calls)        |               |               |               |               |
+|        add_same_radix                      | mpx_packed_karatsuba.hpp:85  |  1,148 (2 calls)        |               |               |               |               |
+|      + karatsuba_combine                   | mpx_packed_karatsuba.hpp:135 |  1,380                  |               |               |               |               |
+|         limbs_to_wide<ap_int<1056> >...    | mpx_packed_karatsuba.hpp:125 |    498 (3 calls)        |               |               |               |               |
+|         unpack_full<ap_uint<1024> >        | mpx_packed_karatsuba.hpp:74  |     77                  |               |               |               |               |
+|      logical_to_phys                       | mpx_packed_karatsuba.hpp:272 |     36                  |               |               |               |               |
+|  + mul                                     | mpx_packed_karatsuba.hpp:292 |                         | 469           | 450           | 436           | 476           |
+|   + mul                                    | mpx_packed_karatsuba.hpp:202 |                         | 373           | 354           | 340           | 367           |
+|    + mul_sized<8>                          | mpx_packed_karatsuba.hpp:159 |                         | 371           | 352           | 338           | 364           |
+|       mul_sized<4>                         | mpx_packed_karatsuba.hpp:159 |                         | 135 (3 calls) | 119 (3 calls) | 112 (3 calls) | 128 (3 calls) |
++--------------------------------------------+------------------------------+-------------------------+---------------+---------------+---------------+---------------+
+    * - Exceeded design size warning message threshold
+    ** - Recursive call, instruction count may be inaccurate
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

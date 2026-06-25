@@ -1,0 +1,102 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct4" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct4" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul_direct4" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_limbs" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:88:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:105:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:111:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_karatsuba_hls_compare.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_mul_karatsuba_handwritten_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_mul_karatsuba_handwritten_flat" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_handwritten_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_handwritten_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_handwritten_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port = c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test_karatsuba_handwritten_flat.cpp:121:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test_mul_karatsuba_handwritten_flat" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:78:3" msg_body="Inlining function 'mul_direct4(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_mul_flat(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mul_direct4(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File test_karatsuba_handwritten_flat.cpp Line 16 Column 0" Caller="mp_mul_flat(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File test_karatsuba_handwritten_flat.cpp Line 51 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:51:0" msg_body="Inlining function 'add_limbs(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)' into 'mp_mul_flat(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="add_limbs(unsigned long const*, unsigned int, unsigned long const*, unsigned int, unsigned long*)" Callee-DebugLoc="File test_karatsuba_handwritten_flat.cpp Line 34 Column 0" Caller="mp_mul_flat(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File test_karatsuba_handwritten_flat.cpp Line 51 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:10" msg_body="Automatically partitioning small array 'xa' completely based on array size.">
+        <args Value="xa"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:20" msg_body="Automatically partitioning small array 'xb' completely based on array size.">
+        <args Value="xb"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:30" msg_body="Automatically partitioning small array 'xa' completely based on array size.">
+        <args Value="xa"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:40" msg_body="Automatically partitioning small array 'xb' completely based on array size.">
+        <args Value="xb"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:20" msg_body="array_partition dim=1 type=complete  variable=Ah 1 mp_mul_flat test_karatsuba_handwritten_flat.cpp:53:20 Ah">
+        <args PragmaFunction="mp_mul_flat" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Ah" PragmaType="array_partition" VarName="Ah" varLoc="test_karatsuba_handwritten_flat.cpp:53:20"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:20" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Ah' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Ah" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:10" msg_body="array_partition dim=1 type=complete  variable=Al 1 mp_mul_flat test_karatsuba_handwritten_flat.cpp:53:10 Al">
+        <args PragmaFunction="mp_mul_flat" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Al" PragmaType="array_partition" VarName="Al" varLoc="test_karatsuba_handwritten_flat.cpp:53:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:10" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Al' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Al" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:40" msg_body="array_partition dim=1 type=complete  variable=Bh 1 mp_mul_flat test_karatsuba_handwritten_flat.cpp:53:40 Bh">
+        <args PragmaFunction="mp_mul_flat" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Bh" PragmaType="array_partition" VarName="Bh" varLoc="test_karatsuba_handwritten_flat.cpp:53:40"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:40" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Bh' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Bh" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:30" msg_body="array_partition dim=1 type=complete  variable=Bl 1 mp_mul_flat test_karatsuba_handwritten_flat.cpp:53:30 Bl">
+        <args PragmaFunction="mp_mul_flat" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Bl" PragmaType="array_partition" VarName="Bl" varLoc="test_karatsuba_handwritten_flat.cpp:53:30"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:30" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Bl' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Bl" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:10" msg_body="Applying array_partition to 'Al': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Al"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:20" msg_body="Applying array_partition to 'Ah': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Ah"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:30" msg_body="Applying array_partition to 'Bl': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bl"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="test_karatsuba_handwritten_flat.cpp:53:40" msg_body="Applying array_partition to 'Bh': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Bh"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

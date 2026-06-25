@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_karatsuba_handwritten_flat.cpp",
+    "fileloc": 116,
+    "instructions": 9,
+    "name": "test_mul_karatsuba_handwritten_flat",
+    "total_instructions": 293
+  },
+  "1": {
+    "basicblocks": 38,
+    "calls": "",
+    "file": "test_karatsuba_handwritten_flat.cpp",
+    "fileloc": 50,
+    "instructions": 284,
+    "loads": {
+      "L": 17
+    },
+    "name": "mp_mul_flat",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 284
+  }
+}

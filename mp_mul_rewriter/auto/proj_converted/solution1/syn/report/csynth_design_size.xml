@@ -33,10 +33,10 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="test_mul_converted" col1="test_converted.cpp:67" col2="487" col3="44" col4="49" col5="47" col6="60">
-                    <row id="3" col0="mp_mul_converted" col1="test_converted.cpp:61" col2="481" col3="" col4="" col5="" col6="">
-                        <row id="2" col0="mul" col1="test_converted.cpp:47" col2="479" col3="" col4="" col5="" col6="">
-                            <row id="4" col0="pack" col1="test_converted.cpp:22" col2="286" col2_disp="286 (2 calls)" col3="" col4="" col5="" col6=""/>
-                            <row id="1" col0="unpack&lt;ap_uint&lt;1024&gt; &gt;" col1="test_converted.cpp:37" col2="77" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="mp_mul_converted" col1="test_converted.cpp:61" col2="481" col3="" col4="" col5="" col6="">
+                        <row id="4" col0="mul" col1="test_converted.cpp:47" col2="479" col3="" col4="" col5="" col6="">
+                            <row id="2" col0="pack" col1="test_converted.cpp:22" col2="286" col2_disp="286 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="3" col0="unpack&lt;ap_uint&lt;1024&gt; &gt;" col1="test_converted.cpp:37" col2="77" col3="" col4="" col5="" col6=""/>
                         </row>
                     </row>
                 </row>

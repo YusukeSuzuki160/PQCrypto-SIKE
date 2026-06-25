@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "2",
+    "calls": "1",
     "file": "test_iface_bits64.cpp",
     "fileloc": 158,
     "instructions": 6,
@@ -9,6 +9,15 @@
     "total_instructions": 98
   },
   "1": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "test_iface_bits64.cpp",
+    "fileloc": 152,
+    "instructions": 2,
+    "name": "mp_mul_iface_configurable",
+    "total_instructions": 92
+  },
+  "2": {
     "basicblocks": 21,
     "calls": "",
     "file": "test_iface_bits64.cpp",
@@ -22,14 +31,5 @@
       "L": 2
     },
     "total_instructions": 90
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "1",
-    "file": "test_iface_bits64.cpp",
-    "fileloc": 152,
-    "instructions": 2,
-    "name": "mp_mul_iface_configurable",
-    "total_instructions": 92
   }
 }

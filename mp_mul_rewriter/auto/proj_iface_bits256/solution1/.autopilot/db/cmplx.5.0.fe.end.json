@@ -37,6 +37,27 @@
         }
     },
     "3": {
+        "name": "mul",
+        "file": "test_iface_bits256.cpp",
+        "fileloc": "61",
+        "instructions": "15",
+        "total_instructions": "162",
+        "calls": "4 6 5 1 2",
+        "basicblocks": "1",
+        "loads": {
+            "L": "3"
+        }
+    },
+    "0": {
+        "name": "test_mul_iface_configurable",
+        "file": "test_iface_bits256.cpp",
+        "fileloc": "158",
+        "instructions": "10",
+        "total_instructions": "172",
+        "calls": "3",
+        "basicblocks": "1"
+    },
+    "4": {
         "name": "mul_Pipeline_VITIS_LOOP_65_1",
         "file": "test_iface_bits256.cpp",
         "fileloc": "65",
@@ -55,7 +76,7 @@
             "L": "1"
         }
     },
-    "4": {
+    "5": {
         "name": "mul_Pipeline_VITIS_LOOP_35_11",
         "file": "test_iface_bits256.cpp",
         "fileloc": "76",
@@ -73,27 +94,6 @@
         "loops": {
             "L": "1"
         }
-    },
-    "5": {
-        "name": "mul",
-        "file": "test_iface_bits256.cpp",
-        "fileloc": "61",
-        "instructions": "15",
-        "total_instructions": "162",
-        "calls": "3 6 4 1 2",
-        "basicblocks": "1",
-        "loads": {
-            "L": "3"
-        }
-    },
-    "0": {
-        "name": "test_mul_iface_configurable",
-        "file": "test_iface_bits256.cpp",
-        "fileloc": "158",
-        "instructions": "10",
-        "total_instructions": "172",
-        "calls": "5",
-        "basicblocks": "1"
     },
     "6": {
         "name": "mul_Pipeline_VITIS_LOOP_35_1",

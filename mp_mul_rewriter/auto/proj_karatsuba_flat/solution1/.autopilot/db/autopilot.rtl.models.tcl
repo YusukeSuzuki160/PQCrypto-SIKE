@@ -1,0 +1,53 @@
+set SynModuleInfo {
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_54_1 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_54_1 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_54_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_handwritten_flat_flow_control_loop_pipe_sequential_init RTLNAME test_mul_karatsuba_handwritten_flat_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME test_mul_karatsuba_handwritten_flat_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_65_2 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_65_2 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_65_2}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_70_3 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_70_3 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_70_3}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_72_4 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_72_4 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_72_4}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_19_1 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_19_1 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_19_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_handwritten_flat_sparsemux_9_2_64_1_1 RTLNAME test_mul_karatsuba_handwritten_flat_sparsemux_9_2_64_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME test_mul_karatsuba_handwritten_flat_partset_256ns_256ns_64ns_32ns_256_1_1 RTLNAME test_mul_karatsuba_handwritten_flat_partset_256ns_256ns_64ns_32ns_256_1_1 BINDTYPE op TYPE partset IMPL auto}
+    }
+  }
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_26_2 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_26_2 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_26_2
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_handwritten_flat_partselect_64ns_512ns_32ns_64_1_1 RTLNAME test_mul_karatsuba_handwritten_flat_partselect_64ns_512ns_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+    }
+  }
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_19_11 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_19_11 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_19_11}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_26_22 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_26_22 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_26_22}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_37_1 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_37_1 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_37_1}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_37_13 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_37_13 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_37_13}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_19_14 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_19_14 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_19_14}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_26_25 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_26_25 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_26_25}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_86_5 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_86_5 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_86_5}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_92_6 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_92_6 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_92_6}
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_103_7 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_103_7 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_103_7
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_handwritten_flat_partselect_64ns_1056s_32ns_64_1_1 RTLNAME test_mul_karatsuba_handwritten_flat_partselect_64ns_1056s_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+      {MODELNAME test_mul_karatsuba_handwritten_flat_partset_1024ns_1024ns_64ns_32ns_1024_1_1 RTLNAME test_mul_karatsuba_handwritten_flat_partset_1024ns_1024ns_64ns_32ns_1024_1_1 BINDTYPE op TYPE partset IMPL auto}
+    }
+  }
+  {SRCNAME mp_mul_flat_Pipeline_VITIS_LOOP_109_8 MODELNAME mp_mul_flat_Pipeline_VITIS_LOOP_109_8 RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Pipeline_VITIS_LOOP_109_8
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_handwritten_flat_partselect_64ns_1024ns_32ns_64_1_1 RTLNAME test_mul_karatsuba_handwritten_flat_partselect_64ns_1024ns_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+    }
+  }
+  {SRCNAME mp_mul_flat MODELNAME mp_mul_flat RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_handwritten_flat_mul_256ns_256ns_512_2_1 RTLNAME test_mul_karatsuba_handwritten_flat_mul_256ns_256ns_512_2_1 BINDTYPE op TYPE mul IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_z0_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_z0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_z1_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_z1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Sal_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_handwritten_flat_mp_mul_flat_Sal_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME test_mul_karatsuba_handwritten_flat MODELNAME test_mul_karatsuba_handwritten_flat RTLNAME test_mul_karatsuba_handwritten_flat IS_TOP 1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_handwritten_flat_control_s_axi RTLNAME test_mul_karatsuba_handwritten_flat_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+    }
+  }
+}

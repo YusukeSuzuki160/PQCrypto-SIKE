@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "2",
+    "calls": "1",
     "file": "test_comba_bits16.cpp",
     "fileloc": 254,
     "instructions": 6,
@@ -9,6 +9,15 @@
     "total_instructions": 262
   },
   "1": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "test_comba_bits16.cpp",
+    "fileloc": 248,
+    "instructions": 2,
+    "name": "mp_mul_comba_configurable",
+    "total_instructions": 256
+  },
+  "2": {
     "basicblocks": 69,
     "calls": "",
     "file": "test_comba_bits16.cpp",
@@ -22,14 +31,5 @@
       "L": 5
     },
     "total_instructions": 254
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "1",
-    "file": "test_comba_bits16.cpp",
-    "fileloc": 248,
-    "instructions": 2,
-    "name": "mp_mul_comba_configurable",
-    "total_instructions": 256
   }
 }

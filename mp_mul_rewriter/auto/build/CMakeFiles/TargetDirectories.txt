@@ -4,5 +4,6 @@
 /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles/clang-tablegen-targets.dir
 /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles/mpx_auto_rewriter.dir
 /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles/mp_test_program.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles/bench_mp_mul_orig_cycles.dir
 /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles/edit_cache.dir
 /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/CMakeFiles/rebuild_cache.dir

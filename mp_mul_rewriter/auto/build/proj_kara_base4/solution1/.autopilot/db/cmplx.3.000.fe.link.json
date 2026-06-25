@@ -1,0 +1,197 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "test_kara_sweep_base4.cpp",
+    "fileloc": 19,
+    "instructions": 6,
+    "name": "test_mul_karatsuba_configurable",
+    "total_instructions": 399335
+  },
+  "1": {
+    "basicblocks": 28,
+    "calls": "8 9 9 6 6 9 7",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 145,
+    "loads": {
+      "L": 4
+    },
+    "name": "mul_sized<2>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 42968
+  },
+  "10": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 125,
+    "instructions": 44,
+    "loads": {
+      "L": 2
+    },
+    "name": "limbs_to_wide<ap_int<1056> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 166
+  },
+  "11": {
+    "basicblocks": 13,
+    "calls": "5 5 2 12",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 292,
+    "instructions": 54,
+    "name": "mul",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 399327
+  },
+  "12": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 272,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "name": "logical_to_phys",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 36
+  },
+  "13": {
+    "basicblocks": 27,
+    "calls": "8 4 4 6 6 4 7",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 144,
+    "loads": {
+      "L": 4
+    },
+    "name": "mul_sized<8>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 399163
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "11",
+    "file": "test_kara_sweep_base4.cpp",
+    "fileloc": 14,
+    "instructions": 2,
+    "name": "mp_mul_kara",
+    "total_instructions": 399329
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "13",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 202,
+    "instructions": 2,
+    "name": "mul",
+    "total_instructions": 399165
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 74,
+    "instructions": 32,
+    "name": "unpack_full<ap_uint<1024> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 77
+  },
+  "4": {
+    "basicblocks": 28,
+    "calls": "8 1 1 6 6 1 7",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 145,
+    "loads": {
+      "L": 4
+    },
+    "name": "mul_sized<4>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 132017
+  },
+  "5": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 252,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "name": "phys_to_logical",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 36
+  },
+  "6": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 85,
+    "instructions": 126,
+    "loads": {
+      "L": 3
+    },
+    "name": "add_same_radix",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 574
+  },
+  "7": {
+    "basicblocks": 7,
+    "calls": "10 10 10 3",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 135,
+    "instructions": 136,
+    "name": "karatsuba_combine",
+    "total_instructions": 1380
+  },
+  "8": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 105,
+    "instructions": 121,
+    "loads": {
+      "L": 4
+    },
+    "name": "mul_direct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 440
+  },
+  "9": {
+    "basicblocks": 28,
+    "calls": "8 9 9 6 6 9 7",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 145,
+    "loads": {
+      "L": 4
+    },
+    "name": "mul_sized<1>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 13285
+  }
+}

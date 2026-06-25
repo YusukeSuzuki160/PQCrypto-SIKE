@@ -1,0 +1,62 @@
+set SynModuleInfo {
+  {SRCNAME mul.1_Pipeline_VITIS_LOOP_256_1 MODELNAME mul_1_Pipeline_VITIS_LOOP_256_1 RTLNAME test_mul_karatsuba_configurable_mul_1_Pipeline_VITIS_LOOP_256_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_flow_control_loop_pipe_sequential_init RTLNAME test_mul_karatsuba_configurable_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME test_mul_karatsuba_configurable_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME mul.1_Pipeline_VITIS_LOOP_256_14 MODELNAME mul_1_Pipeline_VITIS_LOOP_256_14 RTLNAME test_mul_karatsuba_configurable_mul_1_Pipeline_VITIS_LOOP_256_14}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_175_1 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_175_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_175_1}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_181_2 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_181_2 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_181_2}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_187_3 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_187_3 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_187_3}
+  {SRCNAME mul_sized<4u>_Pipeline_VITIS_LOOP_110_1 MODELNAME mul_sized_4u_Pipeline_VITIS_LOOP_110_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_4u_Pipeline_VITIS_LOOP_110_1}
+  {SRCNAME mul_sized<4u>_Pipeline_VITIS_LOOP_117_2 MODELNAME mul_sized_4u_Pipeline_VITIS_LOOP_117_2 RTLNAME test_mul_karatsuba_configurable_mul_sized_4u_Pipeline_VITIS_LOOP_117_2
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_partselect_64ns_512ns_32ns_64_1_1 RTLNAME test_mul_karatsuba_configurable_partselect_64ns_512ns_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+    }
+  }
+  {SRCNAME mul_sized<4u> MODELNAME mul_sized_4u_s RTLNAME test_mul_karatsuba_configurable_mul_sized_4u_s
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_mul_256ns_256ns_512_2_1 RTLNAME test_mul_karatsuba_configurable_mul_256ns_256ns_512_2_1 BINDTYPE op TYPE mul IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_91_1 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_91_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_91_1}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_91_11 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_91_11 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_91_11}
+  {SRCNAME mul_sized<4u>.1_Pipeline_VITIS_LOOP_110_1 MODELNAME mul_sized_4u_1_Pipeline_VITIS_LOOP_110_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_4u_1_Pipeline_VITIS_LOOP_110_1}
+  {SRCNAME mul_sized<4u>.1_Pipeline_VITIS_LOOP_117_2 MODELNAME mul_sized_4u_1_Pipeline_VITIS_LOOP_117_2 RTLNAME test_mul_karatsuba_configurable_mul_sized_4u_1_Pipeline_VITIS_LOOP_117_2}
+  {SRCNAME mul_sized<4u>.1 MODELNAME mul_sized_4u_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_4u_1}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_128_1 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_128_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_128_1}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_128_12 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_128_12 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_128_12}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_128_13 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_128_13 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_128_13}
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_148_1 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_148_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_148_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_partselect_64ns_1056s_32ns_64_1_1 RTLNAME test_mul_karatsuba_configurable_partselect_64ns_1056s_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+      {MODELNAME test_mul_karatsuba_configurable_partset_1024ns_1024ns_64ns_32ns_1024_1_1 RTLNAME test_mul_karatsuba_configurable_partset_1024ns_1024ns_64ns_32ns_1024_1_1 BINDTYPE op TYPE partset IMPL auto}
+    }
+  }
+  {SRCNAME mul_sized<8u>_Pipeline_VITIS_LOOP_77_1 MODELNAME mul_sized_8u_Pipeline_VITIS_LOOP_77_1 RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_Pipeline_VITIS_LOOP_77_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_partselect_64ns_1024ns_32ns_64_1_1 RTLNAME test_mul_karatsuba_configurable_partselect_64ns_1024ns_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+    }
+  }
+  {SRCNAME mul_sized<8u> MODELNAME mul_sized_8u_s RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_s
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_mul_sized_8u_s_Al_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_s_Al_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_configurable_mul_sized_8u_s_z0_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_s_z0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_configurable_mul_sized_8u_s_z1_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_s_z1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_configurable_mul_sized_8u_s_Sal_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_configurable_mul_sized_8u_s_Sal_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME mul MODELNAME mul RTLNAME test_mul_karatsuba_configurable_mul}
+  {SRCNAME mul.1_Pipeline_VITIS_LOOP_276_1 MODELNAME mul_1_Pipeline_VITIS_LOOP_276_1 RTLNAME test_mul_karatsuba_configurable_mul_1_Pipeline_VITIS_LOOP_276_1}
+  {SRCNAME mul.1 MODELNAME mul_1 RTLNAME test_mul_karatsuba_configurable_mul_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_mul_1_la_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_configurable_mul_1_la_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_configurable_mul_1_lc_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_configurable_mul_1_lc_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME test_mul_karatsuba_configurable MODELNAME test_mul_karatsuba_configurable RTLNAME test_mul_karatsuba_configurable IS_TOP 1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_configurable_control_s_axi RTLNAME test_mul_karatsuba_configurable_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+    }
+  }
+}

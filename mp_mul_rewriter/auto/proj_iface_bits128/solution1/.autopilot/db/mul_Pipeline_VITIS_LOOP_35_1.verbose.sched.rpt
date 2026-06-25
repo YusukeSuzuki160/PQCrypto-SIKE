@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mul_Pipeline_VITIS_LOOP_35_1'
 ================================================================
-* Date:           Tue Oct 28 18:16:39 2025
+* Date:           Tue Oct 28 22:11:17 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_iface_bits128
@@ -126,7 +126,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln35', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75) of constant 0 on local variable 'i', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75 [6]  (0.387 ns)
 	'load' operation 4 bit ('i', test_iface_bits128.cpp:40->test_iface_bits128.cpp:75) on local variable 'i', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75 [10]  (0.000 ns)
-	'add' operation 4 bit ('add_ln35', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75) [13]  (0.708 ns)
+	'icmp' operation 1 bit ('icmp_ln35', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75) [11]  (0.708 ns)
 	'store' operation 0 bit ('store_ln35', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75) of variable 'add_ln35', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75 on local variable 'i', test_iface_bits128.cpp:35->test_iface_bits128.cpp:75 [26]  (0.387 ns)
 
  <State 2>: 1.787ns

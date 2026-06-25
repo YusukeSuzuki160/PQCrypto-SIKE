@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mul'
 ================================================================
-* Date:           Tue Oct 28 18:16:52 2025
+* Date:           Tue Oct 28 22:11:30 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_comba_bits128
@@ -201,7 +201,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'load' operation 4 bit ('t', test_comba_bits128.cpp:210) on local variable 't', test_comba_bits128.cpp:210 [26]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln214', test_comba_bits128.cpp:214) [41]  (0.708 ns)
-	'select' operation 3 bit ('j_start', test_comba_bits128.cpp:214) [42]  (0.278 ns)
+	'select' operation 2 bit ('j_end', test_comba_bits128.cpp:215) [43]  (0.278 ns)
 	'call' operation 0 bit ('call_ln210', test_comba_bits128.cpp:210) to 'mul_Pipeline_VITIS_LOOP_219_3' [44]  (0.387 ns)
 
  <State 4>: 0.000ns

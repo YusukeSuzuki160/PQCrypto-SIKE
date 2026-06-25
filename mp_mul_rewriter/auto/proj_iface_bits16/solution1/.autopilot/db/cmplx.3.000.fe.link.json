@@ -9,20 +9,8 @@
     "total_instructions": 833
   },
   "1": {
-    "basicblocks": 9,
-    "calls": "",
-    "file": "test_iface_bits16.cpp",
-    "fileloc": 31,
-    "instructions": 26,
-    "loads": {
-      "L": 1
-    },
-    "name": "pack",
-    "total_instructions": 88
-  },
-  "2": {
     "basicblocks": 44,
-    "calls": "1 1",
+    "calls": "2 2",
     "file": "test_iface_bits16.cpp",
     "fileloc": 61,
     "instructions": 207,
@@ -35,9 +23,21 @@
     },
     "total_instructions": 825
   },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "test_iface_bits16.cpp",
+    "fileloc": 31,
+    "instructions": 26,
+    "loads": {
+      "L": 1
+    },
+    "name": "pack",
+    "total_instructions": 88
+  },
   "3": {
     "basicblocks": 1,
-    "calls": "2",
+    "calls": "1",
     "file": "test_iface_bits16.cpp",
     "fileloc": 152,
     "instructions": 2,

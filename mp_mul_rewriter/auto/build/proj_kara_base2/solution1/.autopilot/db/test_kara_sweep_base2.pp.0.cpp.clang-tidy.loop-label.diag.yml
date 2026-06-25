@@ -1,0 +1,202 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          280757
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          281223
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          281690
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        /home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          565503
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1009758
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_1:  '
+    FileOffset:      77
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1010128
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_1:  '
+    FileOffset:      91
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1010581
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_110_1:  '
+    FileOffset:      110
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1011263
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_110_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_2:  '
+    FileOffset:      117
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1011507
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_128_1:  '
+    FileOffset:      128
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1011787
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_128_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_148_1:  '
+    FileOffset:      148
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1012595
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_148_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_1:  '
+    FileOffset:      175
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1013500
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_2:  '
+    FileOffset:      181
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1013631
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_3:  '
+    FileOffset:      187
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1013776
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_1:  '
+    FileOffset:      226
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1014981
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_1:  '
+    FileOffset:      243
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1015392
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_256_1:  '
+    FileOffset:      256
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1015747
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_264_2:  '
+    FileOffset:      264
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1015884
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_264_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_276_1:  '
+    FileOffset:      276
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1016134
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_276_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_284_2:  '
+    FileOffset:      284
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1016270
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_284_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_296_1:  '
+    FileOffset:      296
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1016573
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_296_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_302_2:  '
+    FileOffset:      302
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/mpx_packed_karatsuba.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/build/proj_kara_base2/solution1/.autopilot/db/test_kara_sweep_base2.pp.0.cpp
+        Offset:          1016687
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_302_2: '
+...

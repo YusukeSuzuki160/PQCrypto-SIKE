@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "7",
+    "calls": "1",
     "file": "test_comba_bits16.cpp",
     "fileloc": 254,
     "instructions": 6,
@@ -9,36 +9,15 @@
     "total_instructions": 2947
   },
   "1": {
-    "basicblocks": 25,
-    "calls": "6 6 5 2 2 3 3 4",
+    "basicblocks": 1,
+    "calls": "4",
     "file": "test_comba_bits16.cpp",
-    "fileloc": 184,
-    "instructions": 159,
-    "loads": {
-      "L": 3
-    },
-    "name": "mul",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 2939
+    "fileloc": 248,
+    "instructions": 2,
+    "name": "mp_mul_comba_configurable",
+    "total_instructions": 2941
   },
   "2": {
-    "basicblocks": 30,
-    "calls": "6",
-    "file": "test_comba_bits16.cpp",
-    "fileloc": 48,
-    "instructions": 189,
-    "loads": {
-      "L": 8
-    },
-    "name": "get_bits_as_chunk",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 680
-  },
-  "3": {
     "basicblocks": 18,
     "calls": "",
     "file": "test_comba_bits16.cpp",
@@ -53,7 +32,37 @@
     },
     "total_instructions": 476
   },
+  "3": {
+    "basicblocks": 30,
+    "calls": "7",
+    "file": "test_comba_bits16.cpp",
+    "fileloc": 48,
+    "instructions": 189,
+    "loads": {
+      "L": 8
+    },
+    "name": "get_bits_as_chunk",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 680
+  },
   "4": {
+    "basicblocks": 25,
+    "calls": "7 7 6 3 3 2 2 5",
+    "file": "test_comba_bits16.cpp",
+    "fileloc": 184,
+    "instructions": 159,
+    "loads": {
+      "L": 3
+    },
+    "name": "mul",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 2939
+  },
+  "5": {
     "basicblocks": 8,
     "calls": "",
     "file": "test_comba_bits16.cpp",
@@ -68,7 +77,7 @@
     },
     "total_instructions": 47
   },
-  "5": {
+  "6": {
     "basicblocks": 1,
     "calls": "",
     "file": "test_comba_bits16.cpp",
@@ -80,7 +89,7 @@
     },
     "total_instructions": 11
   },
-  "6": {
+  "7": {
     "basicblocks": 1,
     "calls": "",
     "file": "test_comba_bits16.cpp",
@@ -88,14 +97,5 @@
     "instructions": 4,
     "name": "ceil_div_u",
     "total_instructions": 4
-  },
-  "7": {
-    "basicblocks": 1,
-    "calls": "1",
-    "file": "test_comba_bits16.cpp",
-    "fileloc": 248,
-    "instructions": 2,
-    "name": "mp_mul_comba_configurable",
-    "total_instructions": 2941
   }
 }

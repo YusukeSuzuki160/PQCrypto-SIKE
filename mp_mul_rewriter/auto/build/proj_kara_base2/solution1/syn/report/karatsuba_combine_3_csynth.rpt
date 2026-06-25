@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'karatsuba_combine_3'
+================================================================
+* Date:           Thu Jun 25 13:36:42 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        proj_kara_base2
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.522 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       32|       40|  0.320 us|  0.400 us|   32|   40|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+        |                                                          |                                                |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+        |                         Instance                         |                     Module                     |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+        +----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+        |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1_fu_78   |karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1   |        6|        6|  60.000 ns|  60.000 ns|    5|    5|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15_fu_85  |karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15  |        6|        8|  60.000 ns|  80.000 ns|    5|    7|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16_fu_93  |karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16  |        6|       10|  60.000 ns|   0.100 us|    5|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1_fu_101  |karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1   |       10|       12|   0.100 us|   0.120 us|    9|   11|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1_fu_108   |karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1    |       10|       12|   0.100 us|   0.120 us|    9|   11|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|     2324|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|     3280|     8068|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        0|       43|    -|
+|Register             |        -|     -|     1824|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|     5104|    10435|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|        2|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------+------------------------------------------------+---------+----+------+------+-----+
+    |                         Instance                         |                     Module                     | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------------------------------------------+------------------------------------------------+---------+----+------+------+-----+
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1_fu_78   |karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1   |        0|   0|   266|  1283|    0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15_fu_85  |karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15  |        0|   0|   396|  2014|    0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16_fu_93  |karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16  |        0|   0|   525|  2757|    0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1_fu_101  |karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1   |        0|   0|  2087|  1690|    0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1_fu_108   |karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1    |        0|   0|     6|   324|    0|
+    +----------------------------------------------------------+------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                     |                                                |        0|   0|  3280|  8068|    0|
+    +----------------------------------------------------------+------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+-----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+-----+------------+------------+
+    |Pacc_fu_199_p2                   |         +|   0|  0|  645|         645|         645|
+    |add_ln146_fu_179_p2              |         +|   0|  0|  643|         643|         643|
+    |mid_fu_165_p2                    |         -|   0|  0|  517|         516|         516|
+    |sub_ln145_fu_159_p2              |         -|   0|  0|  517|         516|         516|
+    |ap_block_state2_on_subcall_done  |        or|   0|  0|    2|           1|           1|
+    +---------------------------------+----------+----+---+-----+------------+------------+
+    |Total                            |          |   0|  0| 2324|        2321|        2321|
+    +---------------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  43|          8|    1|          8|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  43|          8|    1|          8|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------+-----+----+-----+-----------+
+    |                                  Name                                 |  FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------+-----+----+-----+-----------+
+    |Pacc_reg_263                                                           |  645|   0|  645|          0|
+    |add_ln146_reg_258                                                      |  643|   0|  643|          0|
+    |ap_CS_fsm                                                              |    7|   0|    7|          0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15_fu_85_ap_start_reg  |    1|   0|    1|          0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16_fu_93_ap_start_reg  |    1|   0|    1|          0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1_fu_78_ap_start_reg   |    1|   0|    1|          0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1_fu_101_ap_start_reg  |    1|   0|    1|          0|
+    |grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1_fu_108_ap_start_reg   |    1|   0|    1|          0|
+    |mid_reg_253                                                            |  516|   0|  516|          0|
+    |nz_1_reg_248                                                           |    3|   0|    4|          1|
+    |nz_reg_243                                                             |    2|   0|    3|          1|
+    |out_words_assign_reg_268                                               |    3|   0|    4|          1|
+    +-----------------------------------------------------------------------+-----+----+-----+-----------+
+    |Total                                                                  | 1824|   0| 1827|          3|
+    +-----------------------------------------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+---------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++-------------+-----+-----+------------+---------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  karatsuba_combine.3|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  karatsuba_combine.3|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  karatsuba_combine.3|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  karatsuba_combine.3|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  karatsuba_combine.3|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  karatsuba_combine.3|  return value|
+|nwords       |   in|    3|     ap_none|               nwords|        scalar|
+|n_hi         |   in|    2|     ap_none|                 n_hi|        scalar|
+|z0_address0  |  out|    4|   ap_memory|                   z0|         array|
+|z0_ce0       |  out|    1|   ap_memory|                   z0|         array|
+|z0_q0        |   in|   64|   ap_memory|                   z0|         array|
+|z2_address0  |  out|    4|   ap_memory|                   z2|         array|
+|z2_ce0       |  out|    1|   ap_memory|                   z2|         array|
+|z2_q0        |   in|   64|   ap_memory|                   z2|         array|
+|z1_address0  |  out|    5|   ap_memory|                   z1|         array|
+|z1_ce0       |  out|    1|   ap_memory|                   z1|         array|
+|z1_q0        |   in|   64|   ap_memory|                   z1|         array|
+|n_z1         |   in|    3|     ap_none|                 n_z1|        scalar|
+|c_address0   |  out|    5|   ap_memory|                    c|         array|
+|c_ce0        |  out|    1|   ap_memory|                    c|         array|
+|c_we0        |  out|    1|   ap_memory|                    c|         array|
+|c_d0         |  out|   64|   ap_memory|                    c|         array|
++-------------+-----+-----+------------+---------------------+--------------+
+

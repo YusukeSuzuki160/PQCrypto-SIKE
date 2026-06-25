@@ -1,0 +1,58 @@
+set SynModuleInfo {
+  {SRCNAME mul.1_Pipeline_VITIS_LOOP_253_1 MODELNAME mul_1_Pipeline_VITIS_LOOP_253_1 RTLNAME test_mul_karatsuba_synth_mul_1_Pipeline_VITIS_LOOP_253_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_synth_flow_control_loop_pipe_sequential_init RTLNAME test_mul_karatsuba_synth_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME test_mul_karatsuba_synth_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME mul.1_Pipeline_VITIS_LOOP_253_112 MODELNAME mul_1_Pipeline_VITIS_LOOP_253_112 RTLNAME test_mul_karatsuba_synth_mul_1_Pipeline_VITIS_LOOP_253_112}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_131_1 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_131_1 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_131_1}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_137_2 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_137_2 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_137_2}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_143_3 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_143_3 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_143_3}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_32_1 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_32_1 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_32_1}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_32_11 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_32_11 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_32_11}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_48_1 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_48_1 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_48_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_synth_partselect_64ns_1024ns_32ns_64_1_1 RTLNAME test_mul_karatsuba_synth_partselect_64ns_1024ns_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+    }
+  }
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_32_12 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_32_12 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_32_12}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_32_13 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_32_13 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_32_13}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_48_14 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_48_14 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_48_14}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_62_1 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_62_1 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_62_1}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_62_15 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_62_15 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_62_15}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_32_16 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_32_16 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_32_16}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_32_17 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_32_17 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_32_17}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_48_18 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_48_18 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_48_18}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_88_1 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_88_1 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_88_1}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_88_19 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_88_19 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_88_19}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_88_110 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_88_110 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_88_110}
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_108_1 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_108_1 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_108_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_synth_partselect_64ns_1056s_32ns_64_1_1 RTLNAME test_mul_karatsuba_synth_partselect_64ns_1056s_32ns_64_1_1 BINDTYPE op TYPE partselect IMPL auto}
+      {MODELNAME test_mul_karatsuba_synth_partset_1024ns_1024ns_64ns_32ns_1024_1_1 RTLNAME test_mul_karatsuba_synth_partset_1024ns_1024ns_64ns_32ns_1024_1_1 BINDTYPE op TYPE partset IMPL auto}
+    }
+  }
+  {SRCNAME mul_upto8_Pipeline_VITIS_LOOP_48_111 MODELNAME mul_upto8_Pipeline_VITIS_LOOP_48_111 RTLNAME test_mul_karatsuba_synth_mul_upto8_Pipeline_VITIS_LOOP_48_111}
+  {SRCNAME mul_upto8 MODELNAME mul_upto8 RTLNAME test_mul_karatsuba_synth_mul_upto8
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_synth_mul_512ns_512ns_1024_2_1 RTLNAME test_mul_karatsuba_synth_mul_512ns_512ns_1024_2_1 BINDTYPE op TYPE mul IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_synth_mul_upto8_Al_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_synth_mul_upto8_Al_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_synth_mul_upto8_z0_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_synth_mul_upto8_z0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_synth_mul_upto8_z1_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_synth_mul_upto8_z1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_synth_mul_upto8_Sal_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_synth_mul_upto8_Sal_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME mul MODELNAME mul RTLNAME test_mul_karatsuba_synth_mul}
+  {SRCNAME mul.1_Pipeline_VITIS_LOOP_273_1 MODELNAME mul_1_Pipeline_VITIS_LOOP_273_1 RTLNAME test_mul_karatsuba_synth_mul_1_Pipeline_VITIS_LOOP_273_1}
+  {SRCNAME mul.1 MODELNAME mul_1 RTLNAME test_mul_karatsuba_synth_mul_1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_synth_mul_1_la_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_synth_mul_1_la_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME test_mul_karatsuba_synth_mul_1_lc_RAM_AUTO_1R1W RTLNAME test_mul_karatsuba_synth_mul_1_lc_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME test_mul_karatsuba_synth MODELNAME test_mul_karatsuba_synth RTLNAME test_mul_karatsuba_synth IS_TOP 1
+    SUBMODULES {
+      {MODELNAME test_mul_karatsuba_synth_control_s_axi RTLNAME test_mul_karatsuba_synth_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+    }
+  }
+}

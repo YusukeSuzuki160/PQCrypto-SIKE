@@ -1,0 +1,294 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 166, Column: 11 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE9mul_sizedILj8EEEvPKmS5_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_direct(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 106, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 205, Column: 2 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - Callee:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 160, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 203, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 307, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::phys_to_logical(unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 253, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 309, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 203, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 310, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::logical_to_phys(unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 273, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 16, Column: 3 }
+Function:        _Z11mp_mul_karaPKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 15, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 25, Column: 2 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_302_2
+  - String:          ''' ('
+  - LoopLoc:         '../mpx_packed_karatsuba.hpp:302:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_296_1
+  - String:          ''' ('
+  - LoopLoc:         '../mpx_packed_karatsuba.hpp:296:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mpx::PackedOps<unsigned long, 8u, true>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 205, Column: 2 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - Callee:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 160, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 203, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 307, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::phys_to_logical(unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 253, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 309, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 203, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 310, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::logical_to_phys(unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 273, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 16, Column: 3 }
+Function:        _Z11mp_mul_karaPKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 15, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 25, Column: 2 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_mul_karatsuba_configurable_ir
+Args:            
+  - Callee:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 20, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_mul_karatsuba_configurable_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::phys_to_logical(unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 253, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::logical_to_phys(unsigned long const*, unsigned int, unsigned long*)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 273, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 20, Column: 0 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mp_mul_kara(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 205, Column: 2 }
+Function:        _ZN3mpx11detail_kara12PackedOpsLSWImLj8EE3mulEPKmS4_Pmj
+Args:            
+  - Callee:          'void mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul_sized<8u>(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 160, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 203, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 309, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - Callee:          'mpx::detail_kara::PackedOpsLSW<unsigned long, 8u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 203, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 16, Column: 3 }
+Function:        _Z31test_mul_karatsuba_configurablePKmS0_Pm
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ../mpx_packed_karatsuba.hpp, Line: 293, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_karatsuba_configurable(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: ../test_kara_sweep_base8.cpp, Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

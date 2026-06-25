@@ -68,3 +68,7 @@ target_compile_definitions(mp_test_program PRIVATE USE_AP_INT)
 
 # テストプログラムのコンパイルオプション
 target_compile_options(mp_test_program PRIVATE -O2)
+
+# mp_mul_orig 本体に近い TSC ベンチ（x86 のみ想定）
+add_executable(bench_mp_mul_orig_cycles bench_mp_mul_orig_cycles.cpp)
+target_compile_options(bench_mp_mul_orig_cycles PRIVATE -O3 -march=native)

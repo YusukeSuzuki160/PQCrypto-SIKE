@@ -10,7 +10,7 @@
   },
   "1": {
     "basicblocks": 1,
-    "calls": "3",
+    "calls": "7",
     "file": "test_comba_bits128.cpp",
     "fileloc": 248,
     "instructions": 2,
@@ -18,33 +18,21 @@
     "total_instructions": 2917
   },
   "2": {
-    "basicblocks": 1,
-    "calls": "",
+    "basicblocks": 30,
+    "calls": "5",
     "file": "test_comba_bits128.cpp",
-    "fileloc": 111,
-    "instructions": 11,
-    "name": "init",
-    "stores": {
-      "L": 5
+    "fileloc": 48,
+    "instructions": 189,
+    "loads": {
+      "L": 8
     },
-    "total_instructions": 11
+    "name": "get_bits_as_chunk",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 676
   },
   "3": {
-    "basicblocks": 25,
-    "calls": "6 6 2 5 5 7 7 4",
-    "file": "test_comba_bits128.cpp",
-    "fileloc": 184,
-    "instructions": 159,
-    "loads": {
-      "L": 3
-    },
-    "name": "mul",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 2915
-  },
-  "4": {
     "basicblocks": 8,
     "calls": "",
     "file": "test_comba_bits128.cpp",
@@ -59,22 +47,19 @@
     },
     "total_instructions": 47
   },
-  "5": {
-    "basicblocks": 30,
-    "calls": "6",
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
     "file": "test_comba_bits128.cpp",
-    "fileloc": 48,
-    "instructions": 189,
-    "loads": {
-      "L": 8
-    },
-    "name": "get_bits_as_chunk",
+    "fileloc": 111,
+    "instructions": 11,
+    "name": "init",
     "stores": {
-      "L": 6
+      "L": 5
     },
-    "total_instructions": 676
+    "total_instructions": 11
   },
-  "6": {
+  "5": {
     "basicblocks": 1,
     "calls": "",
     "file": "test_comba_bits128.cpp",
@@ -83,7 +68,7 @@
     "name": "ceil_div_u",
     "total_instructions": 4
   },
-  "7": {
+  "6": {
     "basicblocks": 18,
     "calls": "",
     "file": "test_comba_bits128.cpp",
@@ -97,5 +82,20 @@
       "L": 9
     },
     "total_instructions": 468
+  },
+  "7": {
+    "basicblocks": 25,
+    "calls": "5 5 4 2 2 6 6 3",
+    "file": "test_comba_bits128.cpp",
+    "fileloc": 184,
+    "instructions": 159,
+    "loads": {
+      "L": 3
+    },
+    "name": "mul",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 2915
   }
 }

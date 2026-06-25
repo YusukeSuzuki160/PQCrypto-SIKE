@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mul_Pipeline_VITIS_LOOP_65_1'" level="0">
-<item name = "Date">Tue Oct 28 18:16:16 2025
+<item name = "Date">Tue Oct 28 22:10:54 2025
 </item>
 <item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
 <item name = "Project">proj_iface_bits64</item>

@@ -1,0 +1,119 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./mpx_packed.hpp, Line: 113, Column: 15 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::pack(unsigned long const*, unsigned int)'
+    DebugLoc:        { File: ./mpx_packed.hpp, Line: 26, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./mpx_packed.hpp, Line: 112, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./mpx_packed.hpp, Line: 116, Column: 7 }
+Function:        _ZN3mpx9PackedOpsImLj8ELb1EE3mulEPKmS3_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void mpx::PackedOps<unsigned long, 8u, true>::unpack<ap_uint<1024> >(ap_uint<1024> const&, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./mpx_packed.hpp, Line: 46, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./mpx_packed.hpp, Line: 112, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 18, Column: 5 }
+Function:        _Z20mp_mul_packed_simplePKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./mpx_packed.hpp, Line: 112, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 28, Column: 2 }
+Function:        _Z22test_mul_packed_simplePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 18, Column: 5 }
+Function:        _Z20mp_mul_packed_simplePKmS0_Pmj
+Args:            
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./mpx_packed.hpp, Line: 112, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 28, Column: 2 }
+Function:        _Z22test_mul_packed_simplePKmS0_Pm
+Args:            
+  - Callee:          'mp_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_mul_packed_simple_ir
+Args:            
+  - Callee:          'test_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_mul_packed_simple_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 17, Column: 0 }
+Function:        _Z20mp_mul_packed_simplePKmS0_Pmj
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mpx::PackedOps<unsigned long, 8u, true>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: ./mpx_packed.hpp, Line: 112, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mp_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 17, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 23, Column: 0 }
+Function:        _Z22test_mul_packed_simplePKmS0_Pm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mp_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 17, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'test_mul_packed_simple(unsigned long const*, unsigned long const*, unsigned long*)'
+    DebugLoc:        { File: test_packed_mpx_simple.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...

@@ -33,18 +33,18 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="test_mul_comba_configurable" col1="test_comba_bits16.cpp:254" col2="2947" col3="212" col4="227" col5="213" col6="234">
-                    <row id="7" col0="mp_mul_comba_configurable" col1="test_comba_bits16.cpp:248" col2="2941" col3="" col4="" col5="" col6="">
-                        <row id="1" col0="mul" col1="test_comba_bits16.cpp:184" col2="2939" col3="" col4="" col5="" col6="">
-                            <row id="6" col0="ceil_div_u" col1="test_comba_bits16.cpp:19" col2="8" col2_disp="   8 (2 calls)" col3="" col4="" col5="" col6=""/>
-                            <row id="5" col0="init" col1="test_comba_bits16.cpp:111" col2="11" col3="" col4="" col5="" col6=""/>
-                            <row id="2" col0="get_bits_as_chunk" col1="test_comba_bits16.cpp:48" col2="1360" col2_disp="1,360 (2 calls)" col3="" col4="" col5="" col6="">
-                                <row id="6" col0="ceil_div_u" col1="test_comba_bits16.cpp:19" col2="8" col2_disp="   8 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="mp_mul_comba_configurable" col1="test_comba_bits16.cpp:248" col2="2941" col3="" col4="" col5="" col6="">
+                        <row id="4" col0="mul" col1="test_comba_bits16.cpp:184" col2="2939" col3="" col4="" col5="" col6="">
+                            <row id="7" col0="ceil_div_u" col1="test_comba_bits16.cpp:19" col2="8" col2_disp="   8 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="6" col0="init" col1="test_comba_bits16.cpp:111" col2="11" col3="" col4="" col5="" col6=""/>
+                            <row id="3" col0="get_bits_as_chunk" col1="test_comba_bits16.cpp:48" col2="1360" col2_disp="1,360 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="7" col0="ceil_div_u" col1="test_comba_bits16.cpp:19" col2="8" col2_disp="   8 (2 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
-                            <row id="3" col0="push" col1="test_comba_bits16.cpp:121" col2="952" col2_disp=" 952 (2 calls)" col3="" col4="" col5="" col6=""/>
-                            <row id="4" col0="flush" col1="test_comba_bits16.cpp:165" col2="47" col3="" col4="" col5="" col6=""/>
+                            <row id="2" col0="push" col1="test_comba_bits16.cpp:121" col2="952" col2_disp=" 952 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="5" col0="flush" col1="test_comba_bits16.cpp:165" col2="47" col3="" col4="" col5="" col6=""/>
                         </row>
                     </row>
-                    <row id="1" col0="mul" col1="test_comba_bits16.cpp:184" col2="" col3="206" col4="218" col5="204" col6="224"/>
+                    <row id="4" col0="mul" col1="test_comba_bits16.cpp:184" col2="" col3="206" col4="218" col5="204" col6="224"/>
                 </row>
             </rows>
             <notes/>

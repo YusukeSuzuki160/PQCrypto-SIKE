@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'test_mul_converted_Pipeline_VITIS_LOOP_25_11'
 ================================================================
-* Date:           Tue Oct 28 18:15:13 2025
+* Date:           Tue Oct 28 22:09:39 2025
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_converted
@@ -128,7 +128,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln28', test_converted.cpp:28->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73) of constant 0 on local variable 'src', test_converted.cpp:28->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73 [6]  (0.387 ns)
 	'load' operation 4 bit ('i', test_converted.cpp:30->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73) on local variable 'src', test_converted.cpp:28->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73 [10]  (0.000 ns)
-	'add' operation 4 bit ('add_ln25', test_converted.cpp:25->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73) [12]  (0.708 ns)
+	'icmp' operation 1 bit ('icmp_ln25', test_converted.cpp:25->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73) [11]  (0.708 ns)
 	'store' operation 0 bit ('store_ln28', test_converted.cpp:28->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73) of variable 'add_ln25', test_converted.cpp:25->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73 on local variable 'src', test_converted.cpp:28->test_converted.cpp:49->test_converted.cpp:63->test_converted.cpp:73 [28]  (0.387 ns)
 
  <State 2>: 2.490ns

@@ -1,0 +1,37 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_karatsuba_handwritten.cpp, Line: 37, Column: 3 }
+Function:        _Z6mp_mulPKmS0_Pmj
+Args:            
+  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_karatsuba_handwritten.cpp, Line: 15, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_karatsuba_handwritten.cpp, Line: 15, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test_karatsuba_handwritten.cpp, Line: 51, Column: 2 }
+Function:        _Z30test_mul_karatsuba_handwrittenPKmS0_Pmj
+Args:            
+  - Callee:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_karatsuba_handwritten.cpp, Line: 15, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test_mul_karatsuba_handwritten(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+    DebugLoc:        { File: test_karatsuba_handwritten.cpp, Line: 46, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !HLSReportFatalError
+Pass:            reflow-disaggr
+Name:            UnsupportedRecursiveFunc
+Args:            
+  - String:          'Recursive function calls are not supported: '
+  - String:          'mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) -> mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) -> mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) -> mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) -> mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int) -> mp_mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'
+...

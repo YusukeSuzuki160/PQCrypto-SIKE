@@ -1,0 +1,110 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "test_kara_sweep_base1.cpp",
+    "fileloc": 19,
+    "instructions": 6,
+    "name": "test_mul_karatsuba_configurable",
+    "total_instructions": 6061
+  },
+  "1": {
+    "basicblocks": 19,
+    "calls": "6 6 6 3",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 158,
+    "loads": {
+      "L": 8
+    },
+    "name": "mul_sized<8>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 5957
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "4",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 292,
+    "instructions": 96,
+    "loads": {
+      "L": 3
+    },
+    "name": "mul",
+    "stores": {
+      "L": 35
+    },
+    "total_instructions": 6055
+  },
+  "3": {
+    "basicblocks": 36,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 135,
+    "instructions": 150,
+    "loads": {
+      "L": 6
+    },
+    "name": "karatsuba_combine",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 150
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 202,
+    "instructions": 2,
+    "name": "mul",
+    "total_instructions": 5959
+  },
+  "5": {
+    "basicblocks": 38,
+    "calls": "7 7 7 3",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 233,
+    "loads": {
+      "L": 10
+    },
+    "name": "mul_sized<2>",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 500
+  },
+  "6": {
+    "basicblocks": 38,
+    "calls": "5 5 5 3",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 233,
+    "loads": {
+      "L": 10
+    },
+    "name": "mul_sized<4>",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 1883
+  },
+  "7": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 159,
+    "instructions": 39,
+    "loads": {
+      "L": 2
+    },
+    "name": "mul_sized<1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 39
+  }
+}

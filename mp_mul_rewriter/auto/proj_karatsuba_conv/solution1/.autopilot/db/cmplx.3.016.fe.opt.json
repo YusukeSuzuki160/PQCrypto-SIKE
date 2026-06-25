@@ -1,0 +1,50 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_karatsuba_synth.cpp",
+    "fileloc": 14,
+    "instructions": 10,
+    "name": "test_mul_karatsuba_synth",
+    "total_instructions": 532
+  },
+  "1": {
+    "basicblocks": 10,
+    "calls": "3",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 289,
+    "instructions": 109,
+    "loads": {
+      "L": 3
+    },
+    "name": "mul",
+    "stores": {
+      "L": 35
+    },
+    "total_instructions": 522
+  },
+  "2": {
+    "basicblocks": 79,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 118,
+    "instructions": 410,
+    "loads": {
+      "L": 17
+    },
+    "name": "mul_upto8",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 410
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 197,
+    "instructions": 3,
+    "name": "mul",
+    "total_instructions": 413
+  }
+}

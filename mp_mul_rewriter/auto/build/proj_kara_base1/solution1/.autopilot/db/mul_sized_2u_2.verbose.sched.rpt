@@ -1,0 +1,261 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_sized_2u_2'
+================================================================
+* Date:           Thu Jun 25 13:36:22 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        proj_kara_base1
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.921 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       62|       98|  0.620 us|  0.980 us|   62|   98|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 4 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.82>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%nwords_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %nwords"   --->   Operation 14 'read' 'nwords_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%carry_10_loc = alloca i64 1"   --->   Operation 15 'alloca' 'carry_10_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%carry_loc = alloca i64 1"   --->   Operation 16 'alloca' 'carry_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%empty = trunc i3 %nwords_read"   --->   Operation 17 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%n_lo = partselect i2 @_ssdm_op_PartSelect.i2.i3.i32.i32, i3 %nwords_read, i32 1, i32 2"   --->   Operation 18 'partselect' 'n_lo' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%Al = alloca i64 1" [../mpx_packed_karatsuba.hpp:172]   --->   Operation 19 'alloca' 'Al' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%Ah = alloca i64 1" [../mpx_packed_karatsuba.hpp:172]   --->   Operation 20 'alloca' 'Ah' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%Bl = alloca i64 1" [../mpx_packed_karatsuba.hpp:172]   --->   Operation 21 'alloca' 'Bl' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%Bh = alloca i64 1" [../mpx_packed_karatsuba.hpp:172]   --->   Operation 22 'alloca' 'Bh' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%z0 = alloca i64 1" [../mpx_packed_karatsuba.hpp:173]   --->   Operation 23 'alloca' 'z0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%z2 = alloca i64 1" [../mpx_packed_karatsuba.hpp:173]   --->   Operation 24 'alloca' 'z2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%z1 = alloca i64 1" [../mpx_packed_karatsuba.hpp:173]   --->   Operation 25 'alloca' 'z1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%Sal = alloca i64 1" [../mpx_packed_karatsuba.hpp:174]   --->   Operation 26 'alloca' 'Sal' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%Sbl = alloca i64 1" [../mpx_packed_karatsuba.hpp:174]   --->   Operation 27 'alloca' 'Sbl' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_1 : Operation 28 [2/2] (0.82ns)   --->   "%call_ln0 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_175_1, i2 %n_lo, i64 %a, i64 %Al, i64 %b, i64 %Bl"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 0.82> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.21>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln170 = zext i2 %n_lo" [../mpx_packed_karatsuba.hpp:170]   --->   Operation 29 'zext' 'zext_ln170' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.43ns)   --->   "%n_hi = sub i2 %empty, i2 %n_lo" [../mpx_packed_karatsuba.hpp:91->../mpx_packed_karatsuba.hpp:195]   --->   Operation 30 'sub' 'n_hi' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/2] (1.21ns)   --->   "%call_ln0 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_175_1, i2 %n_lo, i64 %a, i64 %Al, i64 %b, i64 %Bl"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 1.21> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 32 [1/1] (0.57ns)   --->   "%icmp_ln181 = icmp_eq  i3 %zext_ln170, i3 %nwords_read" [../mpx_packed_karatsuba.hpp:181]   --->   Operation 32 'icmp' 'icmp_ln181' <Predicate = true> <Delay = 0.57> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln181 = br i1 %icmp_ln181, void %for.inc25.preheader, void %VITIS_LOOP_187_3" [../mpx_packed_karatsuba.hpp:181]   --->   Operation 33 'br' 'br_ln181' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.15>
+ST_3 : Operation 34 [2/2] (1.15ns)   --->   "%call_ln91 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_181_2, i2 %n_hi, i2 %n_lo, i64 %a, i64 %Ah, i64 %b, i64 %Bh" [../mpx_packed_karatsuba.hpp:91->../mpx_packed_karatsuba.hpp:195]   --->   Operation 34 'call' 'call_ln91' <Predicate = true> <Delay = 1.15> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.21>
+ST_4 : Operation 35 [1/2] (1.21ns)   --->   "%call_ln91 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_181_2, i2 %n_hi, i2 %n_lo, i64 %a, i64 %Ah, i64 %b, i64 %Bh" [../mpx_packed_karatsuba.hpp:91->../mpx_packed_karatsuba.hpp:195]   --->   Operation 35 'call' 'call_ln91' <Predicate = (!icmp_ln181)> <Delay = 1.21> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_187_3"   --->   Operation 36 'br' 'br_ln0' <Predicate = (!icmp_ln181)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 0.43>
+ST_5 : Operation 37 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_187_3, i64 %Sal, i64 %Sbl"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 38 [2/2] (0.43ns)   --->   "%call_ln193 = call void @mul_sized<1u>, i64 %Al, i64 %Bl, i64 %z0, i2 %n_lo" [../mpx_packed_karatsuba.hpp:193]   --->   Operation 38 'call' 'call_ln193' <Predicate = true> <Delay = 0.43> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 39 [2/2] (0.43ns)   --->   "%call_ln194 = call void @mul_sized<1u>, i64 %Ah, i64 %Bh, i64 %z2, i2 %n_hi" [../mpx_packed_karatsuba.hpp:194]   --->   Operation 39 'call' 'call_ln194' <Predicate = true> <Delay = 0.43> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 1.48>
+ST_6 : Operation 40 [1/2] (1.48ns)   --->   "%call_ln0 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_187_3, i64 %Sal, i64 %Sbl"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 41 [1/2] (0.00ns)   --->   "%call_ln193 = call void @mul_sized<1u>, i64 %Al, i64 %Bl, i64 %z0, i2 %n_lo" [../mpx_packed_karatsuba.hpp:193]   --->   Operation 41 'call' 'call_ln193' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 42 [1/2] (0.00ns)   --->   "%call_ln194 = call void @mul_sized<1u>, i64 %Ah, i64 %Bh, i64 %z2, i2 %n_hi" [../mpx_packed_karatsuba.hpp:194]   --->   Operation 42 'call' 'call_ln194' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 1.53>
+ST_7 : Operation 43 [1/1] (0.43ns)   --->   "%icmp_ln89 = icmp_ugt  i2 %n_lo, i2 %n_hi" [../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195]   --->   Operation 43 'icmp' 'icmp_ln89' <Predicate = true> <Delay = 0.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 44 [1/1] (0.27ns)   --->   "%n = select i1 %icmp_ln89, i2 %n_lo, i2 %n_hi" [../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195]   --->   Operation 44 'select' 'n' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 45 [2/2] (0.82ns)   --->   "%call_ln89 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_1, i2 %n, i2 %n_lo, i64 %Al, i2 %n_hi, i64 %Ah, i64 %Sal, i2 %carry_loc" [../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195]   --->   Operation 45 'call' 'call_ln89' <Predicate = true> <Delay = 0.82> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 46 [2/2] (0.82ns)   --->   "%call_ln89 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_14, i2 %n, i2 %n_lo, i64 %Bl, i2 %n_hi, i64 %Bh, i64 %Sbl, i2 %carry_10_loc" [../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195]   --->   Operation 46 'call' 'call_ln89' <Predicate = true> <Delay = 0.82> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 1.21>
+ST_8 : Operation 47 [1/2] (1.21ns)   --->   "%call_ln89 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_1, i2 %n, i2 %n_lo, i64 %Al, i2 %n_hi, i64 %Ah, i64 %Sal, i2 %carry_loc" [../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195]   --->   Operation 47 'call' 'call_ln89' <Predicate = true> <Delay = 1.21> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 48 [1/2] (1.21ns)   --->   "%call_ln89 = call void @mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_14, i2 %n, i2 %n_lo, i64 %Bl, i2 %n_hi, i64 %Bh, i64 %Sbl, i2 %carry_10_loc" [../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195]   --->   Operation 48 'call' 'call_ln89' <Predicate = true> <Delay = 1.21> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 1.56>
+ST_9 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln89 = zext i2 %n" [../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195]   --->   Operation 49 'zext' 'zext_ln89' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%zext_ln100 = zext i2 %n" [../mpx_packed_karatsuba.hpp:100->../mpx_packed_karatsuba.hpp:195]   --->   Operation 50 'zext' 'zext_ln100' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 51 [1/1] (0.00ns)   --->   "%carry_loc_load = load i2 %carry_loc"   --->   Operation 51 'load' 'carry_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln100_4 = zext i2 %carry_loc_load" [../mpx_packed_karatsuba.hpp:100->../mpx_packed_karatsuba.hpp:195]   --->   Operation 52 'zext' 'zext_ln100_4' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 53 [1/1] (0.00ns)   --->   "%Sal_addr = getelementptr i64 %Sal, i64 0, i64 %zext_ln100" [../mpx_packed_karatsuba.hpp:100->../mpx_packed_karatsuba.hpp:195]   --->   Operation 53 'getelementptr' 'Sal_addr' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 54 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln100 = store i64 %zext_ln100_4, i4 %Sal_addr" [../mpx_packed_karatsuba.hpp:100->../mpx_packed_karatsuba.hpp:195]   --->   Operation 54 'store' 'store_ln100' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_9 : Operation 55 [1/1] (0.43ns)   --->   "%icmp_ln101 = icmp_ne  i2 %carry_loc_load, i2 0" [../mpx_packed_karatsuba.hpp:101->../mpx_packed_karatsuba.hpp:195]   --->   Operation 55 'icmp' 'icmp_ln101' <Predicate = true> <Delay = 0.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 56 [1/1] (0.43ns)   --->   "%add_ln101 = add i3 %zext_ln89, i3 1" [../mpx_packed_karatsuba.hpp:101->../mpx_packed_karatsuba.hpp:195]   --->   Operation 56 'add' 'add_ln101' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 57 [1/1] (0.27ns)   --->   "%n_sal = select i1 %icmp_ln101, i3 %add_ln101, i3 %zext_ln89" [../mpx_packed_karatsuba.hpp:101->../mpx_packed_karatsuba.hpp:195]   --->   Operation 57 'select' 'n_sal' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 58 [1/1] (0.00ns)   --->   "%carry_10_loc_load = load i2 %carry_10_loc"   --->   Operation 58 'load' 'carry_10_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 59 [1/1] (0.00ns)   --->   "%zext_ln100_5 = zext i2 %carry_10_loc_load" [../mpx_packed_karatsuba.hpp:100->../mpx_packed_karatsuba.hpp:196]   --->   Operation 59 'zext' 'zext_ln100_5' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 60 [1/1] (0.00ns)   --->   "%Sbl_addr = getelementptr i64 %Sbl, i64 0, i64 %zext_ln100" [../mpx_packed_karatsuba.hpp:100->../mpx_packed_karatsuba.hpp:196]   --->   Operation 60 'getelementptr' 'Sbl_addr' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 61 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln100 = store i64 %zext_ln100_5, i4 %Sbl_addr" [../mpx_packed_karatsuba.hpp:100->../mpx_packed_karatsuba.hpp:196]   --->   Operation 61 'store' 'store_ln100' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 10> <RAM>
+ST_9 : Operation 62 [1/1] (0.43ns)   --->   "%icmp_ln101_4 = icmp_ne  i2 %carry_10_loc_load, i2 0" [../mpx_packed_karatsuba.hpp:101->../mpx_packed_karatsuba.hpp:196]   --->   Operation 62 'icmp' 'icmp_ln101_4' <Predicate = true> <Delay = 0.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 63 [1/1] (0.27ns)   --->   "%n_sbl = select i1 %icmp_ln101_4, i3 %add_ln101, i3 %zext_ln89" [../mpx_packed_karatsuba.hpp:101->../mpx_packed_karatsuba.hpp:196]   --->   Operation 63 'select' 'n_sbl' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 64 [1/1] (0.57ns)   --->   "%icmp_ln197 = icmp_ugt  i3 %n_sal, i3 %n_sbl" [../mpx_packed_karatsuba.hpp:197]   --->   Operation 64 'icmp' 'icmp_ln197' <Predicate = true> <Delay = 0.57> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 65 [1/1] (0.27ns)   --->   "%n_mul = select i1 %icmp_ln197, i3 %n_sal, i3 %n_sbl" [../mpx_packed_karatsuba.hpp:197]   --->   Operation 65 'select' 'n_mul' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 1.49>
+ST_10 : Operation 66 [2/2] (1.49ns)   --->   "%call_ln198 = call void @mul_sized<1u>.4, i64 %Sal, i64 %Sbl, i64 %z1, i3 %n_mul" [../mpx_packed_karatsuba.hpp:198]   --->   Operation 66 'call' 'call_ln198' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 67 [1/2] (0.00ns)   --->   "%call_ln198 = call void @mul_sized<1u>.4, i64 %Sal, i64 %Sbl, i64 %z1, i3 %n_mul" [../mpx_packed_karatsuba.hpp:198]   --->   Operation 67 'call' 'call_ln198' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 1.09>
+ST_12 : Operation 68 [2/2] (1.09ns)   --->   "%call_ln199 = call void @karatsuba_combine.3, i3 %nwords_read, i2 %n_lo, i2 %n_hi, i64 %z0, i64 %z2, i64 %z1, i3 %n_mul, i64 %c" [../mpx_packed_karatsuba.hpp:199]   --->   Operation 68 'call' 'call_ln199' <Predicate = true> <Delay = 1.09> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 69 [1/2] (0.00ns)   --->   "%call_ln199 = call void @karatsuba_combine.3, i3 %nwords_read, i2 %n_lo, i2 %n_hi, i64 %z0, i64 %z2, i64 %z1, i3 %n_mul, i64 %c" [../mpx_packed_karatsuba.hpp:199]   --->   Operation 69 'call' 'call_ln199' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 70 [1/1] (0.00ns)   --->   "%ret_ln200 = ret" [../mpx_packed_karatsuba.hpp:200]   --->   Operation 70 'ret' 'ret_ln200' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.823ns
+The critical path consists of the following:
+	wire read operation ('nwords_read') on port 'nwords' [5]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'mul_sized<2u>.2_Pipeline_VITIS_LOOP_175_1' [21]  (0.823 ns)
+
+ <State 2>: 1.210ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'mul_sized<2u>.2_Pipeline_VITIS_LOOP_175_1' [21]  (1.210 ns)
+
+ <State 3>: 1.150ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln91', ../mpx_packed_karatsuba.hpp:91->../mpx_packed_karatsuba.hpp:195) to 'mul_sized<2u>.2_Pipeline_VITIS_LOOP_181_2' [25]  (1.150 ns)
+
+ <State 4>: 1.210ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln91', ../mpx_packed_karatsuba.hpp:91->../mpx_packed_karatsuba.hpp:195) to 'mul_sized<2u>.2_Pipeline_VITIS_LOOP_181_2' [25]  (1.210 ns)
+
+ <State 5>: 0.436ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln193', ../mpx_packed_karatsuba.hpp:193) to 'mul_sized<1u>' [29]  (0.436 ns)
+
+ <State 6>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'mul_sized<2u>.2_Pipeline_VITIS_LOOP_187_3' [28]  (1.482 ns)
+
+ <State 7>: 1.537ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln89', ../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195) [31]  (0.436 ns)
+	'select' operation 2 bit ('n', ../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195) [32]  (0.278 ns)
+	'call' operation 0 bit ('call_ln89', ../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195) to 'mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_1' [35]  (0.823 ns)
+
+ <State 8>: 1.210ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln89', ../mpx_packed_karatsuba.hpp:89->../mpx_packed_karatsuba.hpp:195) to 'mul_sized<2u>.2_Pipeline_VITIS_LOOP_91_1' [35]  (1.210 ns)
+
+ <State 9>: 1.564ns
+The critical path consists of the following:
+	'add' operation 3 bit ('add_ln101', ../mpx_packed_karatsuba.hpp:101->../mpx_packed_karatsuba.hpp:195) [41]  (0.436 ns)
+	'select' operation 3 bit ('n_sal', ../mpx_packed_karatsuba.hpp:101->../mpx_packed_karatsuba.hpp:195) [42]  (0.278 ns)
+	'icmp' operation 1 bit ('icmp_ln197', ../mpx_packed_karatsuba.hpp:197) [50]  (0.572 ns)
+	'select' operation 3 bit ('n_mul', ../mpx_packed_karatsuba.hpp:197) [51]  (0.278 ns)
+
+ <State 10>: 1.491ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln198', ../mpx_packed_karatsuba.hpp:198) to 'mul_sized<1u>.4' [52]  (1.491 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 1.095ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln199', ../mpx_packed_karatsuba.hpp:199) to 'karatsuba_combine.3' [53]  (1.095 ns)
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

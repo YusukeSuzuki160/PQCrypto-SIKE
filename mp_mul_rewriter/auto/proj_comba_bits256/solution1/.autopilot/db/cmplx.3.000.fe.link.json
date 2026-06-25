@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "4",
+    "calls": "6",
     "file": "test_comba_bits256.cpp",
     "fileloc": 254,
     "instructions": 6,
@@ -9,21 +9,6 @@
     "total_instructions": 2923
   },
   "1": {
-    "basicblocks": 30,
-    "calls": "2",
-    "file": "test_comba_bits256.cpp",
-    "fileloc": 48,
-    "instructions": 189,
-    "loads": {
-      "L": 8
-    },
-    "name": "get_bits_as_chunk",
-    "stores": {
-      "L": 6
-    },
-    "total_instructions": 676
-  },
-  "2": {
     "basicblocks": 1,
     "calls": "",
     "file": "test_comba_bits256.cpp",
@@ -32,7 +17,7 @@
     "name": "ceil_div_u",
     "total_instructions": 4
   },
-  "3": {
+  "2": {
     "basicblocks": 1,
     "calls": "",
     "file": "test_comba_bits256.cpp",
@@ -44,31 +29,7 @@
     },
     "total_instructions": 11
   },
-  "4": {
-    "basicblocks": 1,
-    "calls": "5",
-    "file": "test_comba_bits256.cpp",
-    "fileloc": 248,
-    "instructions": 2,
-    "name": "mp_mul_comba_configurable",
-    "total_instructions": 2917
-  },
-  "5": {
-    "basicblocks": 25,
-    "calls": "2 2 3 1 1 7 7 6",
-    "file": "test_comba_bits256.cpp",
-    "fileloc": 184,
-    "instructions": 159,
-    "loads": {
-      "L": 3
-    },
-    "name": "mul",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 2915
-  },
-  "6": {
+  "3": {
     "basicblocks": 8,
     "calls": "",
     "file": "test_comba_bits256.cpp",
@@ -83,7 +44,22 @@
     },
     "total_instructions": 47
   },
-  "7": {
+  "4": {
+    "basicblocks": 25,
+    "calls": "1 1 2 7 7 5 5 3",
+    "file": "test_comba_bits256.cpp",
+    "fileloc": 184,
+    "instructions": 159,
+    "loads": {
+      "L": 3
+    },
+    "name": "mul",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 2915
+  },
+  "5": {
     "basicblocks": 18,
     "calls": "",
     "file": "test_comba_bits256.cpp",
@@ -97,5 +73,29 @@
       "L": 9
     },
     "total_instructions": 468
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "test_comba_bits256.cpp",
+    "fileloc": 248,
+    "instructions": 2,
+    "name": "mp_mul_comba_configurable",
+    "total_instructions": 2917
+  },
+  "7": {
+    "basicblocks": 30,
+    "calls": "1",
+    "file": "test_comba_bits256.cpp",
+    "fileloc": 48,
+    "instructions": 189,
+    "loads": {
+      "L": 8
+    },
+    "name": "get_bits_as_chunk",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 676
   }
 }

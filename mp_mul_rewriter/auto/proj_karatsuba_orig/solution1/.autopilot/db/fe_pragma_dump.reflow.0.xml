@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="test_karatsuba_handwritten.cpp" line="47" pragmaType="interface" parentfunction="test_mul_karatsuba_handwritten" mode="ap_memory" port="a" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="test_karatsuba_handwritten.cpp" line="48" pragmaType="interface" parentfunction="test_mul_karatsuba_handwritten" mode="ap_memory" port="b" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="test_karatsuba_handwritten.cpp" line="49" pragmaType="interface" parentfunction="test_mul_karatsuba_handwritten" mode="ap_memory" port="c" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="test_karatsuba_handwritten.cpp" line="50" pragmaType="interface" parentfunction="test_mul_karatsuba_handwritten" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

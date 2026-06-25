@@ -1,0 +1,40 @@
+<design_size title="Design Size Report">
+    <item name="C-Synthesis has not completed!">
+        <item name="Unroll/Inline"/>
+        <item name="Array/Struct"/>
+        <item name="Performance"/>
+        <item name="HW Transforms"/>
+    </item>
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="3">Phase, Instructions, Description</keys>
+            <column name="Compile/Link">2881, After all functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">pending, After user unroll and inline pragmas are applied</column>
+            <column name="Array/Struct">, After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="Performance">, After transformations are applied to meet performance pragma targets</column>
+            <column name="HW Transforms">, After hardware transfomations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="3" col0="Function" col1="Location" col2="Compile/Link"/>
+            <rows>
+                <row id="0" col0="test_mul_karatsuba_handwritten" col1="test_karatsuba_handwritten.cpp:44" col2="2881">
+                    <row id="1" col0="mp_mul" col1="test_karatsuba_handwritten.cpp:14" col2="2875">
+                        <row id="1" col0="mp_mul" col1="test_karatsuba_handwritten.cpp:14" col2="8625" col2_disp="8,625 (3 calls)" col2_note="**"/>
+                    </row>
+                </row>
+            </rows>
+            <notes>
+                <note name="**" desc="Recursive call, instruction count may be inaccurate"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

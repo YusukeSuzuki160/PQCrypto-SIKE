@@ -1,0 +1,41 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "test_karatsuba_handwritten_flat.cpp",
+    "fileloc": 116,
+    "instructions": 6,
+    "name": "test_mul_karatsuba_handwritten_flat",
+    "total_instructions": 345
+  },
+  "1": {
+    "basicblocks": 41,
+    "calls": "2 2",
+    "file": "test_karatsuba_handwritten_flat.cpp",
+    "fileloc": 50,
+    "instructions": 263,
+    "loads": {
+      "L": 13
+    },
+    "name": "mp_mul_flat",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 339
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "test_karatsuba_handwritten_flat.cpp",
+    "fileloc": 33,
+    "instructions": 38,
+    "loads": {
+      "L": 2
+    },
+    "name": "add_limbs",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 38
+  }
+}

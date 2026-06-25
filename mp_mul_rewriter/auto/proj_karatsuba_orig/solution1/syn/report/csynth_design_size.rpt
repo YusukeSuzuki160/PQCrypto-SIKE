@@ -1,0 +1,35 @@
+================================================================
+== Design Size Report
+================================================================
+
+* C-Synthesis has not completed!
+
+* Total Instructions per Compilation Phase
++---------------+--------------+----------------------------------------------------------------------------------+
+| Phase         | Instructions | Description                                                                      |
++---------------+--------------+----------------------------------------------------------------------------------+
+| Compile/Link  | 2,881        | After all functions are compiled and linked into a single design                 |
+| Unroll/Inline | pending      | After user unroll and inline pragmas are applied                                 |
+| Array/Struct  |              | After user array partition and struct aggregate/disaggregate pragmas are applied |
+| Performance   |              | After transformations are applied to meet performance pragma targets             |
+| HW Transforms |              | After hardware transfomations                                                    |
++---------------+--------------+----------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-----------------------------------+-----------------------------------+--------------------+
+| Function                          | Location                          | Compile/Link       |
++-----------------------------------+-----------------------------------+--------------------+
+| + test_mul_karatsuba_handwritt... | test_karatsuba_handwritten.cpp:44 | 2,881              |
+|  + mp_mul                         | test_karatsuba_handwritten.cpp:14 | 2,875              |
+|     mp_mul                        | test_karatsuba_handwritten.cpp:14 | 8,625 (3 calls) ** |
++-----------------------------------+-----------------------------------+--------------------+
+    ** - Recursive call, instruction count may be inaccurate
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

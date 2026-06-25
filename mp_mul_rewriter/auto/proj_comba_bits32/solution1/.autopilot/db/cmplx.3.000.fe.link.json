@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "7",
+    "calls": "1",
     "file": "test_comba_bits32.cpp",
     "fileloc": 254,
     "instructions": 6,
@@ -9,6 +9,39 @@
     "total_instructions": 2879
   },
   "1": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "test_comba_bits32.cpp",
+    "fileloc": 248,
+    "instructions": 2,
+    "name": "mp_mul_comba_configurable",
+    "total_instructions": 2873
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "test_comba_bits32.cpp",
+    "fileloc": 19,
+    "instructions": 4,
+    "name": "ceil_div_u",
+    "total_instructions": 4
+  },
+  "3": {
+    "basicblocks": 25,
+    "calls": "2 2 5 6 6 7 7 4",
+    "file": "test_comba_bits32.cpp",
+    "fileloc": 184,
+    "instructions": 159,
+    "loads": {
+      "L": 3
+    },
+    "name": "mul",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 2871
+  },
+  "4": {
     "basicblocks": 8,
     "calls": "",
     "file": "test_comba_bits32.cpp",
@@ -23,16 +56,7 @@
     },
     "total_instructions": 47
   },
-  "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "test_comba_bits32.cpp",
-    "fileloc": 19,
-    "instructions": 4,
-    "name": "ceil_div_u",
-    "total_instructions": 4
-  },
-  "3": {
+  "5": {
     "basicblocks": 1,
     "calls": "",
     "file": "test_comba_bits32.cpp",
@@ -44,22 +68,7 @@
     },
     "total_instructions": 11
   },
-  "4": {
-    "basicblocks": 18,
-    "calls": "",
-    "file": "test_comba_bits32.cpp",
-    "fileloc": 121,
-    "instructions": 146,
-    "loads": {
-      "L": 14
-    },
-    "name": "push",
-    "stores": {
-      "L": 9
-    },
-    "total_instructions": 452
-  },
-  "5": {
+  "6": {
     "basicblocks": 30,
     "calls": "2",
     "file": "test_comba_bits32.cpp",
@@ -74,28 +83,19 @@
     },
     "total_instructions": 671
   },
-  "6": {
-    "basicblocks": 25,
-    "calls": "2 2 3 5 5 4 4 1",
-    "file": "test_comba_bits32.cpp",
-    "fileloc": 184,
-    "instructions": 159,
-    "loads": {
-      "L": 3
-    },
-    "name": "mul",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 2871
-  },
   "7": {
-    "basicblocks": 1,
-    "calls": "6",
+    "basicblocks": 18,
+    "calls": "",
     "file": "test_comba_bits32.cpp",
-    "fileloc": 248,
-    "instructions": 2,
-    "name": "mp_mul_comba_configurable",
-    "total_instructions": 2873
+    "fileloc": 121,
+    "instructions": 146,
+    "loads": {
+      "L": 14
+    },
+    "name": "push",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 452
   }
 }

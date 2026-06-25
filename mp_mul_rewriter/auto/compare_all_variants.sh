@@ -14,6 +14,8 @@ declare -a basic_tests=(
     "test_orig.cpp:orig:Original"
     "test_converted.cpp:converted:Converted"
     "test_comba.cpp:comba:Comba (fixed)"
+    "test_packed_mpx_simple.cpp:packed_simple:Packed (512bit)"
+    "test_karatsuba_synth.cpp:karatsuba_synth:Karatsuba PackedOps"
 )
 
 # 基本的なテストを実行
@@ -31,6 +33,21 @@ open_project -reset proj_${name}
 set_top test_mul_${name}
 
 add_files ${source}
+EOF
+
+    # ヘッダファイルを追加
+    if [ "$name" == "converted" ] || [ "$name" == "packed_simple" ]; then
+        if [ -f "mpx_packed.hpp" ]; then
+            echo "add_files mpx_packed.hpp" >> "run_${name}.tcl"
+        fi
+    fi
+    if [ "$name" == "karatsuba_synth" ]; then
+        if [ -f "mpx_packed_karatsuba.hpp" ]; then
+            echo "add_files mpx_packed_karatsuba.hpp" >> "run_${name}.tcl"
+        fi
+    fi
+    
+    cat >> "run_${name}.tcl" <<EOF
 
 open_solution "solution1" -flow_target vivado
 set_part {xcvu9p-flga2104-2-i}

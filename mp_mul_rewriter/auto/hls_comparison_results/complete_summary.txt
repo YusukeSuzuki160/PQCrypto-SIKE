@@ -1,7 +1,7 @@
 HLS Performance Comparison - Complete Summary
 ==============================================
 
-Generated: 2025年 10月 28日 火曜日 18:17:17 JST
+Generated: 2025年 10月 28日 火曜日 22:11:55 JST
 
 Basic Tests:
 - orig: Original (pre-conversion)

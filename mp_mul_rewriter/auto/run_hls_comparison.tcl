@@ -14,6 +14,7 @@ set test_cases [list \
     {test_orig "Original (pre-conversion)" test_orig.cpp} \
     {test_converted "Converted (PackedOps)" test_converted.cpp mpx_packed.hpp} \
     {test_comba "Comba multiplication" test_comba.cpp} \
+    {karatsuba_synth "Karatsuba (PackedOps)" test_karatsuba_synth.cpp mpx_packed_karatsuba.hpp} \
 ]
 
 # 各テストケースを実行

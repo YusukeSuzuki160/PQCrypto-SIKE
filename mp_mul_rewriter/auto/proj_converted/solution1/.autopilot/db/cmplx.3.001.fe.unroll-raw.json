@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "2",
+    "calls": "1",
     "file": "test_converted.cpp",
     "fileloc": 67,
     "instructions": 6,
@@ -9,6 +9,15 @@
     "total_instructions": 60
   },
   "1": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "test_converted.cpp",
+    "fileloc": 61,
+    "instructions": 2,
+    "name": "mp_mul_converted",
+    "total_instructions": 54
+  },
+  "2": {
     "basicblocks": 11,
     "calls": "",
     "file": "test_converted.cpp",
@@ -22,14 +31,5 @@
       "L": 1
     },
     "total_instructions": 52
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "1",
-    "file": "test_converted.cpp",
-    "fileloc": 61,
-    "instructions": 2,
-    "name": "mp_mul_converted",
-    "total_instructions": 54
   }
 }

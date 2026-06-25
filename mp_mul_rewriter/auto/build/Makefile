@@ -194,6 +194,43 @@ mp_test_program/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mp_test_program.dir/build.make CMakeFiles/mp_test_program.dir/build
 .PHONY : mp_test_program/fast
 
+#=============================================================================
+# Target rules for targets named bench_mp_mul_orig_cycles
+
+# Build rule for target.
+bench_mp_mul_orig_cycles: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bench_mp_mul_orig_cycles
+.PHONY : bench_mp_mul_orig_cycles
+
+# fast build rule for target.
+bench_mp_mul_orig_cycles/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench_mp_mul_orig_cycles.dir/build.make CMakeFiles/bench_mp_mul_orig_cycles.dir/build
+.PHONY : bench_mp_mul_orig_cycles/fast
+
+bench_mp_mul_orig_cycles.o: bench_mp_mul_orig_cycles.cpp.o
+.PHONY : bench_mp_mul_orig_cycles.o
+
+# target to build an object file
+bench_mp_mul_orig_cycles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench_mp_mul_orig_cycles.dir/build.make CMakeFiles/bench_mp_mul_orig_cycles.dir/bench_mp_mul_orig_cycles.cpp.o
+.PHONY : bench_mp_mul_orig_cycles.cpp.o
+
+bench_mp_mul_orig_cycles.i: bench_mp_mul_orig_cycles.cpp.i
+.PHONY : bench_mp_mul_orig_cycles.i
+
+# target to preprocess a source file
+bench_mp_mul_orig_cycles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench_mp_mul_orig_cycles.dir/build.make CMakeFiles/bench_mp_mul_orig_cycles.dir/bench_mp_mul_orig_cycles.cpp.i
+.PHONY : bench_mp_mul_orig_cycles.cpp.i
+
+bench_mp_mul_orig_cycles.s: bench_mp_mul_orig_cycles.cpp.s
+.PHONY : bench_mp_mul_orig_cycles.s
+
+# target to generate assembly for a file
+bench_mp_mul_orig_cycles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench_mp_mul_orig_cycles.dir/build.make CMakeFiles/bench_mp_mul_orig_cycles.dir/bench_mp_mul_orig_cycles.cpp.s
+.PHONY : bench_mp_mul_orig_cycles.cpp.s
+
 mp_test_program.o: mp_test_program.cpp.o
 .PHONY : mp_test_program.o
 
@@ -254,8 +291,12 @@ help:
 	@echo "... clang-tablegen-targets"
 	@echo "... intrinsics_gen"
 	@echo "... omp_gen"
+	@echo "... bench_mp_mul_orig_cycles"
 	@echo "... mp_test_program"
 	@echo "... mpx_auto_rewriter"
+	@echo "... bench_mp_mul_orig_cycles.o"
+	@echo "... bench_mp_mul_orig_cycles.i"
+	@echo "... bench_mp_mul_orig_cycles.s"
 	@echo "... mp_test_program.o"
 	@echo "... mp_test_program.i"
 	@echo "... mp_test_program.s"

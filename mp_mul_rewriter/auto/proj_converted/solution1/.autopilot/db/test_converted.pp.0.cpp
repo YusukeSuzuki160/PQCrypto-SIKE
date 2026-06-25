@@ -34567,7 +34567,7 @@ void mp_mul_converted(const digit_t *a, const digit_t *b, digit_t *c, const unsi
 
 __attribute__((sdx_kernel("test_mul_converted", 0))) void test_mul_converted(const digit_t a[8], const digit_t b[8], digit_t c[16])
 {
-#line 12 "/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_converted.tcl"
+#line 13 "/home/meltpoint/eeic/PQCrypto-SIKE/mp_mul_rewriter/auto/run_converted.tcl"
 #pragma HLSDIRECTIVE TOP name=test_mul_converted
 # 68 "test_converted.cpp"
 

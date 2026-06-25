@@ -1,0 +1,131 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "test_karatsuba_synth.cpp",
+    "fileloc": 14,
+    "instructions": 6,
+    "name": "test_mul_karatsuba_synth",
+    "total_instructions": 555
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 56,
+    "instructions": 38,
+    "loads": {
+      "L": 2
+    },
+    "name": "add_same_radix",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 38
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 249,
+    "instructions": 11,
+    "loads": {
+      "L": 1
+    },
+    "name": "phys_to_logical",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 11
+  },
+  "3": {
+    "basicblocks": 5,
+    "calls": "8 8 8",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 95,
+    "instructions": 39,
+    "loads": {
+      "L": 3
+    },
+    "name": "karatsuba_combine",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 123
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 197,
+    "instructions": 2,
+    "name": "mul",
+    "total_instructions": 442
+  },
+  "5": {
+    "basicblocks": 38,
+    "calls": "1 1 3",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 118,
+    "instructions": 241,
+    "loads": {
+      "L": 10
+    },
+    "name": "mul_upto8",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 440
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "test_karatsuba_synth.cpp",
+    "fileloc": 9,
+    "instructions": 2,
+    "name": "mp_mul",
+    "total_instructions": 549
+  },
+  "7": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 269,
+    "instructions": 11,
+    "loads": {
+      "L": 1
+    },
+    "name": "logical_to_phys",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 11
+  },
+  "8": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 85,
+    "instructions": 28,
+    "loads": {
+      "L": 1
+    },
+    "name": "limbs_to_wide<ap_int<1056> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 28
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "2 2 4 7",
+    "file": "mpx_packed_karatsuba.hpp",
+    "fileloc": 289,
+    "instructions": 72,
+    "name": "mul",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 547
+  }
+}

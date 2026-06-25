@@ -1,0 +1,152 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'karatsuba_combine_3'" level="0">
+<item name = "Date">Thu Jun 25 13:36:42 2026
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">proj_kara_base2</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flga2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.522 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">32, 40, 0.320 us, 0.400 us, 32, 40, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1_fu_78">karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1, 6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15_fu_85">karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15, 6, 8, 60.000 ns, 80.000 ns, 5, 7, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16_fu_93">karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16, 6, 10, 60.000 ns, 0.100 us, 5, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1_fu_101">karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1, 10, 12, 0.100 us, 0.120 us, 9, 11, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1_fu_108">karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1, 10, 12, 0.100 us, 0.120 us, 9, 11, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2324, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 3280, 8068, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 43, -</column>
+<column name="Register">-, -, 1824, -, -</column>
+<specialColumn name="Available SLR">1440, 2280, 788160, 394080, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, 2, 0</specialColumn>
+<specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1_fu_78">karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1, 0, 0, 266, 1283, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15_fu_85">karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15, 0, 0, 396, 2014, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16_fu_93">karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16, 0, 0, 525, 2757, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1_fu_101">karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1, 0, 0, 2087, 1690, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1_fu_108">karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1, 0, 0, 6, 324, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Pacc_fu_199_p2">+, 0, 0, 645, 645, 645</column>
+<column name="add_ln146_fu_179_p2">+, 0, 0, 643, 643, 643</column>
+<column name="mid_fu_165_p2">-, 0, 0, 517, 516, 516</column>
+<column name="sub_ln145_fu_159_p2">-, 0, 0, 517, 516, 516</column>
+<column name="ap_block_state2_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">43, 8, 1, 8</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Pacc_reg_263">645, 0, 645, 0</column>
+<column name="add_ln146_reg_258">643, 0, 643, 0</column>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_15_fu_85_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_16_fu_93_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_128_1_fu_78_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_148_1_fu_101_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_karatsuba_combine_3_Pipeline_VITIS_LOOP_77_1_fu_108_ap_start_reg">1, 0, 1, 0</column>
+<column name="mid_reg_253">516, 0, 516, 0</column>
+<column name="nz_1_reg_248">3, 0, 4, 1</column>
+<column name="nz_reg_243">2, 0, 3, 1</column>
+<column name="out_words_assign_reg_268">3, 0, 4, 1</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, karatsuba_combine.3, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, karatsuba_combine.3, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, karatsuba_combine.3, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, karatsuba_combine.3, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, karatsuba_combine.3, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, karatsuba_combine.3, return value</column>
+<column name="nwords">in, 3, ap_none, nwords, scalar</column>
+<column name="n_hi">in, 2, ap_none, n_hi, scalar</column>
+<column name="z0_address0">out, 4, ap_memory, z0, array</column>
+<column name="z0_ce0">out, 1, ap_memory, z0, array</column>
+<column name="z0_q0">in, 64, ap_memory, z0, array</column>
+<column name="z2_address0">out, 4, ap_memory, z2, array</column>
+<column name="z2_ce0">out, 1, ap_memory, z2, array</column>
+<column name="z2_q0">in, 64, ap_memory, z2, array</column>
+<column name="z1_address0">out, 5, ap_memory, z1, array</column>
+<column name="z1_ce0">out, 1, ap_memory, z1, array</column>
+<column name="z1_q0">in, 64, ap_memory, z1, array</column>
+<column name="n_z1">in, 3, ap_none, n_z1, scalar</column>
+<column name="c_address0">out, 5, ap_memory, c, array</column>
+<column name="c_ce0">out, 1, ap_memory, c, array</column>
+<column name="c_we0">out, 1, ap_memory, c, array</column>
+<column name="c_d0">out, 64, ap_memory, c, array</column>
+</table>
+</item>
+</section>
+</profile>
