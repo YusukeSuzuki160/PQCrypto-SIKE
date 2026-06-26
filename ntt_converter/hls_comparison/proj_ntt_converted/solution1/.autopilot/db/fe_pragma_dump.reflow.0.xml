@@ -1,0 +1,29 @@
+<pragmas>
+<pragma file="./ntt_ops_hls.hpp" line="46" pragmaType="inline" parentfunction="butterfly_ct_hls" off="0" region="0" recursive="0"/>
+<pragma file="./ntt_ops_hls.hpp" line="38" pragmaType="inline" parentfunction="mulmod32" off="0" region="0" recursive="0"/>
+<pragma file="./ntt_ops_hls.hpp" line="29" pragmaType="inline" parentfunction="submod32" off="0" region="0" recursive="0"/>
+<pragma file="ntt_hls_converted.cpp" line="18" pragmaType="interface" parentfunction="ntt_forward_converted" mode="ap_memory" port="a" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="ntt_hls_converted.cpp" line="19" pragmaType="interface" parentfunction="ntt_forward_converted" mode="ap_memory" port="roots" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="ntt_hls_converted.cpp" line="20" pragmaType="interface" parentfunction="ntt_forward_converted" mode="s_axilite" port="mod" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="ntt_hls_converted.cpp" line="21" pragmaType="interface" parentfunction="ntt_forward_converted" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<128, true>::ssdm_int(__int128)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<128>::ap_int<128, true>(ap_int_base<128, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<64, true>::ssdm_int(long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base<128, true>(ap_int_base<128, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<64>::ap_int<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::RType<64, true>::mod operator%<64, true, 64, true>(ap_int_base<64, true> const&, ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="./ntt_ops_hls.hpp" line="20" pragmaType="inline" parentfunction="addmod32" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<64>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::RType<64, true>::mult operator*<64, true, 64, true>(ap_int_base<64, true> const&, ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<64>::ap_int<128>(ap_int<128> const&)" off="0" region="0" recursive="0"/>
+<pragma file="./ntt_ops_hls.hpp" line="72" pragmaType="inline" parentfunction="forward_ntt" off="1" region="0" recursive="0"/>
+<pragma file="./ntt_ops_hls.hpp" line="74" pragmaType="loop_tripcount" parentfunction="forward_ntt" min="1" max="8" avg="4"/>
+<pragma file="./ntt_ops_hls.hpp" line="76" pragmaType="loop_tripcount" parentfunction="forward_ntt" min="1" max="128" avg="64"/>
+<pragma file="./ntt_ops_hls.hpp" line="78" pragmaType="pipeline" parentfunction="forward_ntt" off="0" ii="1" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+</pragmas>

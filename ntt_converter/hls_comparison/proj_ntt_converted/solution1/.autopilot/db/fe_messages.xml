@@ -1,0 +1,72 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="addmod32" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="submod32" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mulmod32" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="butterfly_ct_hls" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="butterfly_gs_hls" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="forward_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="forward_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=LOG2N" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="forward_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=MAX_N/2" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="forward_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=LOG2N" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=MAX_N/2" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_ntt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/run_ntt_converted.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="ntt_forward_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=ntt_forward_converted" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_converted.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port=a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_converted.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port=roots" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_converted.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=mod" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_converted.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_converted" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="./ntt_ops_hls.hpp:47:14" msg_body="Inlining function 'ntt::mulmod32(int, int, int)' into 'ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)'">
+        <args Callee="ntt::mulmod32(int, int, int)" Callee-DebugLoc="File ./ntt_ops_hls.hpp Line 37 Column 0" Caller="ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)" Caller-DebugLoc="File ./ntt_ops_hls.hpp Line 45 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="./ntt_ops_hls.hpp:49:9" msg_body="Inlining function 'ntt::addmod32(int, int, int)' into 'ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)'">
+        <args Callee="ntt::addmod32(int, int, int)" Callee-DebugLoc="File ./ntt_ops_hls.hpp Line 19 Column 0" Caller="ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)" Caller-DebugLoc="File ./ntt_ops_hls.hpp Line 45 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="./ntt_ops_hls.hpp:48:9" msg_body="Inlining function 'ntt::submod32(int, int, int)' into 'ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)'">
+        <args Callee="ntt::submod32(int, int, int)" Callee-DebugLoc="File ./ntt_ops_hls.hpp Line 28 Column 0" Caller="ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)" Caller-DebugLoc="File ./ntt_ops_hls.hpp Line 45 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="./ntt_ops_hls.hpp:79:2" msg_body="Inlining function 'ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)' into 'ntt::NTTOps&lt;8u&gt;::forward_ntt(int*, unsigned int, int const*, int)'">
+        <args Callee="ntt::butterfly_ct_hls(int&amp;, int&amp;, int, int)" Callee-DebugLoc="File ./ntt_ops_hls.hpp Line 45 Column 0" Caller="ntt::NTTOps&lt;8u&gt;::forward_ntt(int*, unsigned int, int const*, int)" Caller-DebugLoc="File ./ntt_ops_hls.hpp Line 71 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="./ntt_ops_hls.hpp:71:0" msg_body="Updating loop lower bound from 1 to 8 for loop 'VITIS_LOOP_73_1' (./ntt_ops_hls.hpp:73:19) in function 'ntt::NTTOps&lt;8u&gt;::forward_ntt'.">
+        <args LoopLoc="./ntt_ops_hls.hpp:73:19" LoopName="VITIS_LOOP_73_1" NewBound="8" OldBound="1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

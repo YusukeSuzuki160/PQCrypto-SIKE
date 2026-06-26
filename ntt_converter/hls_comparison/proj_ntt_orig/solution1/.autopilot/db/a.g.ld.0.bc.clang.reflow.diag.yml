@@ -1,0 +1,131 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 48, Column: 29 }
+Function:        _ZL16ntt_forward_implPijPKii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mulmod_orig(int, int, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt_forward_impl(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 50, Column: 34 }
+Function:        _ZL16ntt_forward_implPijPKii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'submod_orig(int, int, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 23, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt_forward_impl(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 49, Column: 28 }
+Function:        _ZL16ntt_forward_implPijPKii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'addmod_orig(int, int, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt_forward_impl(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 42, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 67, Column: 2 }
+Function:        _Z16ntt_forward_origPiPKii
+Args:            
+  - Callee:          'ntt_forward_impl(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 42, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ntt_forward_orig(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 61, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 67, Column: 2 }
+Function:        _Z16ntt_forward_origPiPKii
+Args:            
+  - Callee:          'ntt_forward_impl(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 42, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ntt_forward_orig(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 61, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_ntt_forward_orig_ir
+Args:            
+  - Callee:          'ntt_forward_orig(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 61, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_ntt_forward_orig_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 61, Column: 0 }
+Function:        _Z16ntt_forward_origPiPKii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ntt_forward_impl(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 42, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt_forward_orig(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 61, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 45, Column: 26 }
+Function:        _Z16ntt_forward_origPiPKii
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_45_2
+  - String:          ' '
+  - LoopLoc:         'ntt_hls_orig.cpp:45:26'
+  - String:          ' '
+  - Function:        'ntt_forward_orig(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_orig.cpp, Line: 61, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ntt_hls_orig.cpp, Line: 44, Column: 22 }
+Function:        _Z16ntt_forward_origPiPKii
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_44_1
+  - String:          '''('
+  - LoopLoc:         'ntt_hls_orig.cpp:44:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_46_3
+  - String:          '> at '
+  - LoopLoc:         'ntt_hls_orig.cpp:46:30'
+  - String:          ' '
+...

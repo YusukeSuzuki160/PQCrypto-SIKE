@@ -4,6 +4,9 @@
 
 本フォルダは **PQCrypto-SIKE リポジトリ直下** に置いた独立パッケージで、変換プログラム・変換先ヘッダ・ドキュメントをまとめています。
 
+> 各アルゴリズム（学校式・Comba・Karatsuba）の**最適化内容・工夫点**は
+> [`ALGORITHM_OPTIMIZATIONS.md`](ALGORITHM_OPTIMIZATIONS.md) にまとめています。
+
 ---
 
 ## 目次
@@ -31,14 +34,17 @@ mpx_mul_converter/
 │   ├── mpx_packed_16bit.hpp … mpx_packed_256bit.hpp
 │   └── mpx_packed_karatsuba.hpp
 ├── examples/
+│   ├── test_schoolbook_handwritten.cpp      # 学校式 検出・変換元（LSW-first）
+│   ├── test_comba_handwritten.cpp           # Comba 検出・変換元（MSW-first・積和走査）
 │   ├── test_karatsuba_handwritten.cpp       # Karatsuba 検出・変換サンプル
 │   ├── test_karatsuba_handwritten_flat.cpp  # HLS ベースライン（手書き平坦版）
 │   └── test_karatsuba_configurable.cpp      # BASE/MUL_BITS 設定可能テスト
 ├── scripts/
-│   ├── run_rewrite_test.sh           # 変換＋数値一致
-│   ├── run_configurable_test.sh      # PackedOps 数値一致
-│   ├── run_karatsuba_base_sweep.sh   # HLS 分割数スイープ
-│   └── parse_kara_reports.py         # csynth.rpt 解析
+│   ├── run_rewrite_test.sh               # Karatsuba 変換＋数値一致
+│   ├── run_schoolbook_comba_test.sh      # 学校式/Comba 変換＋数値一致
+│   ├── run_configurable_test.sh          # PackedOps 数値一致
+│   ├── run_karatsuba_base_sweep.sh       # HLS 分割数スイープ
+│   └── parse_kara_reports.py             # csynth.rpt 解析
 └── hls_comparison_results/
     ├── karatsuba_report.md             # HLS 性能比較レポート
     └── karatsuba_*_csynth.rpt          # 合成レポート
@@ -163,6 +169,38 @@ make mpx_auto_rewriter
 乗算カウントは AST 上で `a[i]*b[j]` や `*(a+k)*b[j]`、および `--mul-macro=MUL` 指定マクロを追跡します。  
 `c[nwords-1-i]` 系添字があれば MSW-first、なければ LSW-first と推定します。
 
+#### 変換元サンプル（`examples/`）
+
+`../mp_mul_rewriter` を参考に、検出・変換の入力となる**手書き多倍長乗算**を同梱しています。
+いずれも数値的に正しい実装で、変換前後どちらでも自己検証 `main()` が通ります。
+
+| ファイル | 方式 | エンディアン | 検出ポイント |
+|----------|------|--------------|--------------|
+| `test_schoolbook_handwritten.cpp` | 学校式（オペランド走査） | LSW-first | `for i: for j:` で `a[i]*b[j]`（`MUL` マクロ）を `c[i+j]` へ累算 |
+| `test_comba_handwritten.cpp` | Comba（積和走査） | MSW-first | 対角走査・`t,u,v` 連結アキュムレータ・`idx_in/idx_out`・`MUL/ADDC` |
+
+部分積と桁上げ加算を `MUL`/`ADDC` マクロに収めることで、内側ループを純粋な乗算パターンとして
+検出させます（`--mul-macro=MUL`、`ap_uint` 演算はマクロ内に隠れ `innerCalls=0`）。
+
+変換例:
+
+```bash
+# 学校式 → default（全幅 pack×1 乗算）
+./build/mpx_auto_rewriter examples/test_schoolbook_handwritten.cpp \
+  --packed-ops-type=default --max-nwords=8 --mul-macro=MUL \
+  --output=out.cpp -- -std=c++17 -DUSE_AP_INT -I<Vitis>/include -I./include
+
+# Comba → default（MSW-first を強制）
+./build/mpx_auto_rewriter examples/test_comba_handwritten.cpp \
+  --packed-ops-type=default --max-nwords=8 --force-msw-first --mul-macro=MUL \
+  --output=out.cpp -- -std=c++17 -DUSE_AP_INT -I<Vitis>/include -I./include
+```
+
+> **注意（固定ビット幅モード）:** `--packed-ops-type=schoolbook-N` では、上部挿入 include
+> （既定 `mpx_packed.hpp`）と関数内 include（`mpx_packed_Nbit.hpp`）が食い違い二重定義になる。
+> `--lib-header=mpx_packed_Nbit.hpp` を併せて指定し両者を一致させること
+> （`#pragma once` で重複排除される）。`scripts/run_schoolbook_comba_test.sh` を参照。
+
 ### 4.2 Karatsuba（`KaratsubaShapeScanner`）
 
 `--packed-ops-type=karatsuba` 時。ループ条件の代わりに **半長乗算呼び出しの形状**で判定します。
@@ -272,6 +310,9 @@ chmod +x scripts/*.sh
 
 # 変換パイプライン＋数値一致（再帰 mp_mul スタブ）
 bash scripts/run_rewrite_test.sh
+
+# 学校式 / Comba 変換元の変換＋数値一致
+bash scripts/run_schoolbook_comba_test.sh
 
 # PackedOps 直接の数値一致（参照学校式）
 bash scripts/run_configurable_test.sh

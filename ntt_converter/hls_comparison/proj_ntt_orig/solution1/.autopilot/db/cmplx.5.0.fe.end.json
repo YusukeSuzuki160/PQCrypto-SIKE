@@ -1,0 +1,41 @@
+{
+    "0": {
+        "name": "ntt_forward_orig",
+        "file": "ntt_hls_orig.cpp",
+        "fileloc": "58",
+        "instructions": "34",
+        "total_instructions": "81",
+        "calls": "1",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "1": {
+        "name": "ntt_forward_orig_Pipeline_VITIS_LOOP_46_3",
+        "file": "ntt_hls_orig.cpp",
+        "fileloc": "67",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "3"
+        },
+        "stores": {
+            "L": "2",
+            "T": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

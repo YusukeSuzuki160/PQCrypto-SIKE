@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "ntt_hls_orig.cpp",
+    "fileloc": 58,
+    "instructions": 57,
+    "loads": {
+      "T": 3
+    },
+    "name": "ntt_forward_orig",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 57
+  }
+}

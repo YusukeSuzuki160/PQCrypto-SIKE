@@ -22,20 +22,21 @@ namespace mpx
     using Big2 = ap_uint<2 * W * MAX_NWORDS>;
 
     // ---- pack / unpack -------------------------------------------------
+    // pack/unpack は語の「連結（配線）」に過ぎないため UNROLL で組合せ回路化する。
+    // 旧版は PIPELINE II=1（N サイクル）かつ pack は `|=` シフトの逐次連鎖だった。
     static Big pack(const Digit *x, unsigned nwords)
     {
 #pragma HLS INLINE
       Big A = 0;
-      // MAX_NWORDS まで固定ループ（HLSで展開・パイプライン可能）
+      // MAX_NWORDS はコンパイル時定数 → 完全アンロール可能
       for (unsigned i = 0; i < MAX_NWORDS; ++i)
       {
-#pragma HLS PIPELINE II = 1
+#pragma HLS UNROLL
         if (i < nwords)
         {
           const unsigned src =
               LSW_FIRST ? i : (nwords - 1u - i);
-          ap_uint<W> w = (ap_uint<W>)x[src];
-          A |= (Big)w << (i * W);
+          A.range((i + 1) * W - 1, i * W) = (ap_uint<W>)x[src];
         }
       }
       return A;
@@ -45,13 +46,18 @@ namespace mpx
     static void unpack(const Wide &P, Digit *y, unsigned out_words)
     {
 #pragma HLS INLINE
-      for (unsigned i = 0; i < out_words; ++i)
+      // ループ上限は Wide の幅から定まるコンパイル時定数（範囲外アクセスを回避）
+      constexpr unsigned MAXO = Wide::width / W;
+      for (unsigned i = 0; i < MAXO; ++i)
       {
-#pragma HLS PIPELINE II = 1
-        ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
-        const unsigned dst =
-            LSW_FIRST ? i : (out_words - 1u - i);
-        y[dst] = (Digit)w;
+#pragma HLS UNROLL
+        if (i < out_words)
+        {
+          ap_uint<W> w = P.range((i + 1) * W - 1, i * W);
+          const unsigned dst =
+              LSW_FIRST ? i : (out_words - 1u - i);
+          y[dst] = (Digit)w;
+        }
       }
     }
 

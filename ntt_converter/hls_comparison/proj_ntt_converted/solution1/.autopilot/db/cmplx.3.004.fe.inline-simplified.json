@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "ntt_hls_converted.cpp",
+    "fileloc": 14,
+    "instructions": 6,
+    "name": "ntt_forward_converted",
+    "total_instructions": 57
+  },
+  "1": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 69,
+    "instructions": 51,
+    "loads": {
+      "L": 4
+    },
+    "name": "forward_ntt",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 51
+  }
+}

@@ -1,0 +1,167 @@
+
+
+================================================================
+== Vitis HLS Report for 'forward_ntt'
+================================================================
+* Date:           Thu Jun 25 14:31:35 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        proj_ntt_converted
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.643 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+----------+----------+-----------+-----+----------+---------+
+    |  Latency (cycles)  |  Latency (absolute)  |    Interval    | Pipeline|
+    |   min   |    max   |    min   |    max    | min |    max   |   Type  |
+    +---------+----------+----------+-----------+-----+----------+---------+
+    |       49|  18543633|  0.490 us|  0.185 sec|   49|  18543633|       no|
+    +---------+----------+----------+-----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+----------+-------------+-----------+-----------+---------+----------+
+        |                    |  Latency (cycles)  |  Iteration  |  Initiation Interval  |   Trip  |          |
+        |      Loop Name     |   min   |    max   |   Latency   |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+---------+----------+-------------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_73_1   |       48|  18543632|  6 ~ 2317954|          -|          -|        8|        no|
+        | + VITIS_LOOP_75_2  |        4|   2317952|    4 ~ 18109|          -|          -|  1 ~ 128|        no|
+        +--------------------+---------+----------+-------------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 2 
+4 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%len = alloca i32 1" [./ntt_ops_hls.hpp:73]   --->   Operation 5 'alloca' 'len' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %roots, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%mod_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mod_r" [./ntt_ops_hls.hpp:70]   --->   Operation 8 'read' 'mod_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln73 = store i9 1, i9 %len" [./ntt_ops_hls.hpp:73]   --->   Operation 9 'store' 'store_ln73' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln73 = br void %for.cond" [./ntt_ops_hls.hpp:73]   --->   Operation 10 'br' 'br_ln73' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.38>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%len_1 = load i9 %len"   --->   Operation 11 'load' 'len_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %len_1, i32 8" [./ntt_ops_hls.hpp:73]   --->   Operation 12 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln73 = br i1 %tmp, void %VITIS_LOOP_75_2, void %for.end19" [./ntt_ops_hls.hpp:73]   --->   Operation 13 'br' 'br_ln73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln73 = trunc i9 %len_1" [./ntt_ops_hls.hpp:73]   --->   Operation 14 'trunc' 'trunc_ln73' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8"   --->   Operation 15 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specloopname_ln73 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [./ntt_ops_hls.hpp:73]   --->   Operation 16 'specloopname' 'specloopname_ln73' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%len_2 = shl i9 %len_1, i9 1"   --->   Operation 17 'shl' 'len_2' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%len_1_cast = zext i9 %len_2"   --->   Operation 18 'zext' 'len_1_cast' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.38ns)   --->   "%br_ln75 = br void %for.cond1" [./ntt_ops_hls.hpp:75]   --->   Operation 19 'br' 'br_ln75' <Predicate = (!tmp)> <Delay = 0.38>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%ret_ln83 = ret" [./ntt_ops_hls.hpp:83]   --->   Operation 20 'ret' 'ret_ln83' <Predicate = (tmp)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.04>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%i = phi i10 0, void %VITIS_LOOP_75_2, i10 %i_1, void %VITIS_LOOP_77_3"   --->   Operation 21 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i2 @_ssdm_op_PartSelect.i2.i10.i32.i32, i10 %i, i32 8, i32 9" [./ntt_ops_hls.hpp:75]   --->   Operation 22 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.43ns)   --->   "%icmp_ln75 = icmp_eq  i2 %tmp_4, i2 0" [./ntt_ops_hls.hpp:75]   --->   Operation 23 'icmp' 'icmp_ln75' <Predicate = true> <Delay = 0.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln75 = br i1 %icmp_ln75, void %for.inc18, void %VITIS_LOOP_77_3" [./ntt_ops_hls.hpp:75]   --->   Operation 24 'br' 'br_ln75' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln75 = trunc i10 %i" [./ntt_ops_hls.hpp:75]   --->   Operation 25 'trunc' 'trunc_ln75' <Predicate = (icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 26 [2/2] (2.60ns)   --->   "%call_ln73 = call void @forward_ntt_Pipeline_VITIS_LOOP_77_3, i8 %trunc_ln73, i8 %trunc_ln75, i32 %roots, i32 %a, i32 %mod_read, i32 %mod_read" [./ntt_ops_hls.hpp:73]   --->   Operation 26 'call' 'call_ln73' <Predicate = (icmp_ln75)> <Delay = 2.60> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 27 [1/1] (0.72ns)   --->   "%i_1 = add i10 %len_1_cast, i10 %i" [./ntt_ops_hls.hpp:75]   --->   Operation 27 'add' 'i_1' <Predicate = (icmp_ln75)> <Delay = 0.72> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 28 [1/1] (0.38ns)   --->   "%store_ln73 = store i9 %len_2, i9 %len" [./ntt_ops_hls.hpp:73]   --->   Operation 28 'store' 'store_ln73' <Predicate = (!icmp_ln75)> <Delay = 0.38>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln73 = br void %for.cond" [./ntt_ops_hls.hpp:73]   --->   Operation 29 'br' 'br_ln73' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 1.47>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%speclooptripcount_ln76 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 128, i64 64" [./ntt_ops_hls.hpp:76]   --->   Operation 30 'speclooptripcount' 'speclooptripcount_ln76' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specloopname_ln75 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [./ntt_ops_hls.hpp:75]   --->   Operation 31 'specloopname' 'specloopname_ln75' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/2] (1.47ns)   --->   "%call_ln73 = call void @forward_ntt_Pipeline_VITIS_LOOP_77_3, i8 %trunc_ln73, i8 %trunc_ln75, i32 %roots, i32 %a, i32 %mod_read, i32 %mod_read" [./ntt_ops_hls.hpp:73]   --->   Operation 32 'call' 'call_ln73' <Predicate = true> <Delay = 1.47> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln75 = br void %for.cond1" [./ntt_ops_hls.hpp:75]   --->   Operation 33 'br' 'br_ln75' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 9 bit ('len', ./ntt_ops_hls.hpp:73) [4]  (0.000 ns)
+	'store' operation 0 bit ('store_ln73', ./ntt_ops_hls.hpp:73) of constant 1 on local variable 'len', ./ntt_ops_hls.hpp:73 [8]  (0.387 ns)
+
+ <State 2>: 0.387ns
+The critical path consists of the following:
+	'load' operation 9 bit ('len') on local variable 'len', ./ntt_ops_hls.hpp:73 [11]  (0.000 ns)
+	multiplexor before 'phi' operation 10 bit ('i') with incoming values : ('i', ./ntt_ops_hls.hpp:75) [22]  (0.387 ns)
+
+ <State 3>: 3.042ns
+The critical path consists of the following:
+	'phi' operation 10 bit ('i') with incoming values : ('i', ./ntt_ops_hls.hpp:75) [22]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln75', ./ntt_ops_hls.hpp:75) [24]  (0.436 ns)
+	'call' operation 0 bit ('call_ln73', ./ntt_ops_hls.hpp:73) to 'forward_ntt_Pipeline_VITIS_LOOP_77_3' [30]  (2.606 ns)
+
+ <State 4>: 1.479ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln73', ./ntt_ops_hls.hpp:73) to 'forward_ntt_Pipeline_VITIS_LOOP_77_3' [30]  (1.479 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

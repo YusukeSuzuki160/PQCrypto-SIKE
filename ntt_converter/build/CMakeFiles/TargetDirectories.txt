@@ -1,0 +1,9 @@
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/intrinsics_gen.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/omp_gen.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/acc_gen.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/clang-tablegen-targets.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/ntt_auto_rewriter.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/test_ntt_ct.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/test_ntt_gs.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/edit_cache.dir
+/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/home/meltpoint/.pyenv/shims/c++ -O3 -DNDEBUG CMakeFiles/test_ntt_gs.dir/examples/test_ntt_gs.cpp.o -o test_ntt_gs 

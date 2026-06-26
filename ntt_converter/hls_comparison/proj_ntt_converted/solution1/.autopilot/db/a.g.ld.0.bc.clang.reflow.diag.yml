@@ -1,0 +1,155 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 47, Column: 14 }
+Function:        _ZN3nttL16butterfly_ct_hlsERiS0_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ntt::mulmod32(int, int, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 37, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt::butterfly_ct_hls(int&, int&, int, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 45, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 49, Column: 9 }
+Function:        _ZN3nttL16butterfly_ct_hlsERiS0_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ntt::addmod32(int, int, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 19, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt::butterfly_ct_hls(int&, int&, int, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 45, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 48, Column: 9 }
+Function:        _ZN3nttL16butterfly_ct_hlsERiS0_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ntt::submod32(int, int, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 28, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt::butterfly_ct_hls(int&, int&, int, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 45, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 79, Column: 2 }
+Function:        _ZN3ntt6NTTOpsILj8EE11forward_nttEPijPKii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ntt::butterfly_ct_hls(int&, int&, int, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 45, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ntt::NTTOps<8u>::forward_ntt(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 71, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ntt_hls_converted.cpp, Line: 26, Column: 5 }
+Function:        _Z21ntt_forward_convertedPiPKii
+Args:            
+  - Callee:          'ntt::NTTOps<8u>::forward_ntt(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 71, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ntt_forward_converted(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_converted.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 71, Column: 0 }
+Function:        _ZN3ntt6NTTOpsILj8EE11forward_nttEPijPKii
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '8'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_73_1
+  - String:          ''' ('
+  - LoopLoc:         './ntt_ops_hls.hpp:73:19'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'ntt::NTTOps<8u>::forward_ntt'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ntt_hls_converted.cpp, Line: 26, Column: 5 }
+Function:        _Z21ntt_forward_convertedPiPKii
+Args:            
+  - Callee:          'ntt::NTTOps<8u>::forward_ntt(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 71, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ntt_forward_converted(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_converted.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_ntt_forward_converted_ir
+Args:            
+  - Callee:          'ntt_forward_converted(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_converted.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_ntt_forward_converted_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 75, Column: 19 }
+Function:        _ZN3ntt6NTTOpsILj8EE11forward_nttEPijPKii
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_75_2
+  - String:          ' '
+  - LoopLoc:         './ntt_ops_hls.hpp:75:19'
+  - String:          ' '
+  - Function:        'ntt::NTTOps<8u>::forward_ntt(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 71, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 73, Column: 19 }
+Function:        _ZN3ntt6NTTOpsILj8EE11forward_nttEPijPKii
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_73_1
+  - String:          '''('
+  - LoopLoc:         './ntt_ops_hls.hpp:73:19'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ntt_hls_converted.cpp, Line: 26, Column: 5 }
+Function:        _Z21ntt_forward_convertedPiPKii
+Args:            
+  - Callee:          'ntt::NTTOps<8u>::forward_ntt(int*, unsigned int, int const*, int)'
+    DebugLoc:        { File: ./ntt_ops_hls.hpp, Line: 71, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ntt_forward_converted(int*, int const*, int)'
+    DebugLoc:        { File: ntt_hls_converted.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

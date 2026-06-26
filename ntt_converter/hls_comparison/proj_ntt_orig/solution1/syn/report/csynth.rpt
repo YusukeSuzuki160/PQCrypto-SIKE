@@ -1,0 +1,155 @@
+
+
+================================================================
+== Synthesis Summary Report of 'ntt_forward_orig'
+================================================================
++ General Information: 
+    * Date:           Thu Jun 25 14:30:26 2026
+    * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+    * Project:        proj_ntt_orig
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |                     Modules                    | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |         |            |            |     |
+    |                     & Loops                    | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |+ ntt_forward_orig                              |     -|  1.66|        -|          -|         -|        -|     -|        no|     -|  4 (~0%)|  9058 (~0%)|  7536 (~0%)|    -|
+    | o VITIS_LOOP_44_1                              |     -|  7.30|        -|          -|         -|        -|     -|        no|     -|        -|           -|           -|    -|
+    |  o VITIS_LOOP_45_2                             |     -|  7.30|        -|          -|     17599|        -|     -|        no|     -|        -|           -|           -|    -|
+    |   + ntt_forward_orig_Pipeline_VITIS_LOOP_46_3  |     -|  1.66|    17597|  1.760e+05|         -|    17597|     -|        no|     -|  4 (~0%)|  8884 (~0%)|  7362 (~0%)|    -|
+    |    o VITIS_LOOP_46_3                           |    II|  7.30|    17595|  1.760e+05|        70|       69|   255|       yes|     -|        -|           -|           -|    -|
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 5             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | mod_r    | 0x10   | 32    | W      | Data signal of mod_r             |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* BRAM
++-------------+------------+---------------+
+| Interface   | Data Width | Address Width |
++-------------+------------+---------------+
+| a_PORTA     | 32         | 32            |
+| a_PORTB     | 32         | 32            |
+| roots_PORTA | 32         | 32            |
++-------------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------+
+| Argument | Direction | Datatype    |
++----------+-----------+-------------+
+| a        | inout     | int*        |
+| roots    | in        | int const * |
+| mod      | in        | int         |
++----------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+---------------------------------+
+| Argument | HW Interface  | HW Type   | HW Info                         |
++----------+---------------+-----------+---------------------------------+
+| a        | a_PORTA       | interface |                                 |
+| a        | a_PORTB       | interface |                                 |
+| roots    | roots_PORTA   | interface |                                 |
+| mod      | s_axi_control | register  | name=mod_r offset=0x10 range=32 |
++----------+---------------+-----------+---------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------+-----+--------+-----------+--------+----------+---------+
+| Name                                         | DSP | Pragma | Variable  | Op     | Impl     | Latency |
++----------------------------------------------+-----+--------+-----------+--------+----------+---------+
+| + ntt_forward_orig                           | 4   |        |           |        |          |         |
+|   icmp_ln45_fu_135_p2                        |     |        | icmp_ln45 | seteq  | auto     | 0       |
+|   i_1_fu_146_p2                              |     |        | i_1       | add    | fabric   | 0       |
+|  + ntt_forward_orig_Pipeline_VITIS_LOOP_46_3 | 4   |        |           |        |          |         |
+|    icmp_ln46_fu_132_p2                       |     |        | icmp_ln46 | seteq  | auto     | 0       |
+|    add_ln46_fu_138_p2                        |     |        | add_ln46  | add    | fabric   | 0       |
+|    add_ln47_fu_149_p2                        |     |        | add_ln47  | add    | fabric   | 0       |
+|    add_ln48_fu_155_p2                        |     |        | add_ln48  | add    | fabric   | 0       |
+|    mul_32s_32s_64_1_1_U1                     | 4   |        | tmp       | mul    | auto     | 0       |
+|    srem_64ns_32s_32_68_1_U2                  |     |        | srem_ln34 | srem   | auto     | 67      |
+|    r_fu_194_p2                               |     |        | r         | add    | fabric   | 0       |
+|    icmp_ln18_fu_199_p2                       |     |        | icmp_ln18 | setlt  | auto     | 0       |
+|    xor_ln18_fu_204_p2                        |     |        | xor_ln18  | xor    | auto     | 0       |
+|    sub_ln18_fu_210_p2                        |     |        | sub_ln18  | sub    | fabric   | 0       |
+|    r_1_fu_215_p3                             |     |        | r_1       | select | auto_sel | 0       |
+|    r_2_fu_224_p2                             |     |        | r_2       | sub    | fabric   | 0       |
+|    r_3_fu_237_p2                             |     |        | r_3       | add    | fabric   | 0       |
+|    r_4_fu_242_p3                             |     |        | r_4       | select | auto_sel | 0       |
++----------------------------------------------+-----+--------+-----------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name               | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                    |           |           |      |      |        |          |      |         | Banks            |
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + ntt_forward_orig |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U  | interface | s_axilite |      |      |        |          |      |         |                  |
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------+-------------------------------------------------+
+| Type      | Options               | Location                                        |
++-----------+-----------------------+-------------------------------------------------+
+| inline    |                       | ntt_hls_orig.cpp:16 in addmod_orig              |
+| inline    |                       | ntt_hls_orig.cpp:24 in submod_orig              |
+| inline    |                       | ntt_hls_orig.cpp:32 in mulmod_orig              |
+| interface | bram port=a           | ntt_hls_orig.cpp:62 in ntt_forward_orig, a      |
+| interface | bram port=roots       | ntt_hls_orig.cpp:63 in ntt_forward_orig, roots  |
+| interface | s_axilite port=mod    | ntt_hls_orig.cpp:64 in ntt_forward_orig, mod    |
+| interface | s_axilite port=return | ntt_hls_orig.cpp:65 in ntt_forward_orig, return |
++-----------+-----------------------+-------------------------------------------------+
+
+

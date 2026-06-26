@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_orig.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="addmod_orig" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_orig.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="submod_orig" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_orig.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mulmod_orig" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/run_ntt_orig.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="ntt_forward_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=ntt_forward_orig" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_orig.cpp:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port=a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_orig.cpp:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="bram port=roots" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_orig.cpp:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=mod" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ntt_hls_orig.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ntt_forward_orig" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="ntt_hls_orig.cpp:48:29" msg_body="Inlining function 'mulmod_orig(int, int, int)' into 'ntt_forward_impl(int*, unsigned int, int const*, int)'">
+        <args Callee="mulmod_orig(int, int, int)" Callee-DebugLoc="File ntt_hls_orig.cpp Line 31 Column 0" Caller="ntt_forward_impl(int*, unsigned int, int const*, int)" Caller-DebugLoc="File ntt_hls_orig.cpp Line 42 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="ntt_hls_orig.cpp:50:34" msg_body="Inlining function 'submod_orig(int, int, int)' into 'ntt_forward_impl(int*, unsigned int, int const*, int)'">
+        <args Callee="submod_orig(int, int, int)" Callee-DebugLoc="File ntt_hls_orig.cpp Line 23 Column 0" Caller="ntt_forward_impl(int*, unsigned int, int const*, int)" Caller-DebugLoc="File ntt_hls_orig.cpp Line 42 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="ntt_hls_orig.cpp:49:28" msg_body="Inlining function 'addmod_orig(int, int, int)' into 'ntt_forward_impl(int*, unsigned int, int const*, int)'">
+        <args Callee="addmod_orig(int, int, int)" Callee-DebugLoc="File ntt_hls_orig.cpp Line 15 Column 0" Caller="ntt_forward_impl(int*, unsigned int, int const*, int)" Caller-DebugLoc="File ntt_hls_orig.cpp Line 42 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ntt_hls_orig.cpp:61:0" msg_body="Inlining function 'ntt_forward_impl(int*, unsigned int, int const*, int)' into 'ntt_forward_orig(int*, int const*, int)'">
+        <args Callee="ntt_forward_impl(int*, unsigned int, int const*, int)" Callee-DebugLoc="File ntt_hls_orig.cpp Line 42 Column 0" Caller="ntt_forward_orig(int*, int const*, int)" Caller-DebugLoc="File ntt_hls_orig.cpp Line 61 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

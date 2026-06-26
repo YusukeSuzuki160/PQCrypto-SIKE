@@ -1,0 +1,65 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "ntt_hls_converted.cpp",
+    "fileloc": 14,
+    "instructions": 6,
+    "name": "ntt_forward_converted",
+    "total_instructions": 315
+  },
+  "1": {
+    "basicblocks": 19,
+    "calls": "3",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 69,
+    "instructions": 40,
+    "loads": {
+      "L": 1
+    },
+    "name": "forward_ntt",
+    "total_instructions": 309
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 18,
+    "instructions": 7,
+    "name": "addmod32",
+    "total_instructions": 7
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "4 5 2",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 44,
+    "instructions": 9,
+    "loads": {
+      "L": 3
+    },
+    "name": "butterfly_ct_hls",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 269
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 36,
+    "instructions": 40,
+    "name": "mulmod32",
+    "total_instructions": 246
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 27,
+    "instructions": 7,
+    "name": "submod32",
+    "total_instructions": 7
+  }
+}
