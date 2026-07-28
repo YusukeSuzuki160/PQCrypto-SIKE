@@ -1,0 +1,380 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'forward_ntt_Pipeline_VITIS_LOOP_145_5'" level="0">
+<item name = "Date">Fri Jun 26 11:38:50 2026
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">proj_ntt_converted</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flga2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 2.650 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">258, 258, 2.580 us, 2.580 us, 257, 257, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_145_5">256, 256, 1, 1, 1, 256, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 33, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 1362, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 36, -</column>
+<column name="Register">-, -, 11, -, -</column>
+<specialColumn name="Available SLR">1440, 2280, 788160, 394080, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_513_8_32_1_1_U1041">sparsemux_513_8_32_1_1, 0, 0, 0, 1362, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln145_fu_2629_p2">+, 0, 0, 16, 9, 1</column>
+<column name="icmp_ln145_fu_2623_p2">icmp, 0, 0, 17, 9, 10</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="a_WEN_A_local">9, 2, 4, 8</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_i_1">9, 2, 9, 18</column>
+<column name="i_fu_1062">9, 2, 9, 18</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="i_fu_1062">9, 0, 9, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, forward_ntt_Pipeline_VITIS_LOOP_145_5, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, forward_ntt_Pipeline_VITIS_LOOP_145_5, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, forward_ntt_Pipeline_VITIS_LOOP_145_5, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, forward_ntt_Pipeline_VITIS_LOOP_145_5, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, forward_ntt_Pipeline_VITIS_LOOP_145_5, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, forward_ntt_Pipeline_VITIS_LOOP_145_5, return value</column>
+<column name="buf_load">in, 32, ap_none, buf_load, scalar</column>
+<column name="buf_1_load">in, 32, ap_none, buf_1_load, scalar</column>
+<column name="buf_2_load">in, 32, ap_none, buf_2_load, scalar</column>
+<column name="buf_3_load">in, 32, ap_none, buf_3_load, scalar</column>
+<column name="buf_4_load">in, 32, ap_none, buf_4_load, scalar</column>
+<column name="buf_5_load">in, 32, ap_none, buf_5_load, scalar</column>
+<column name="buf_6_load">in, 32, ap_none, buf_6_load, scalar</column>
+<column name="buf_7_load">in, 32, ap_none, buf_7_load, scalar</column>
+<column name="buf_8_load">in, 32, ap_none, buf_8_load, scalar</column>
+<column name="buf_9_load">in, 32, ap_none, buf_9_load, scalar</column>
+<column name="buf_10_load">in, 32, ap_none, buf_10_load, scalar</column>
+<column name="buf_11_load">in, 32, ap_none, buf_11_load, scalar</column>
+<column name="buf_12_load">in, 32, ap_none, buf_12_load, scalar</column>
+<column name="buf_13_load">in, 32, ap_none, buf_13_load, scalar</column>
+<column name="buf_14_load">in, 32, ap_none, buf_14_load, scalar</column>
+<column name="buf_15_load">in, 32, ap_none, buf_15_load, scalar</column>
+<column name="buf_16_load">in, 32, ap_none, buf_16_load, scalar</column>
+<column name="buf_17_load">in, 32, ap_none, buf_17_load, scalar</column>
+<column name="buf_18_load">in, 32, ap_none, buf_18_load, scalar</column>
+<column name="buf_19_load">in, 32, ap_none, buf_19_load, scalar</column>
+<column name="buf_20_load">in, 32, ap_none, buf_20_load, scalar</column>
+<column name="buf_21_load">in, 32, ap_none, buf_21_load, scalar</column>
+<column name="buf_22_load">in, 32, ap_none, buf_22_load, scalar</column>
+<column name="buf_23_load">in, 32, ap_none, buf_23_load, scalar</column>
+<column name="buf_24_load">in, 32, ap_none, buf_24_load, scalar</column>
+<column name="buf_25_load">in, 32, ap_none, buf_25_load, scalar</column>
+<column name="buf_26_load">in, 32, ap_none, buf_26_load, scalar</column>
+<column name="buf_27_load">in, 32, ap_none, buf_27_load, scalar</column>
+<column name="buf_28_load">in, 32, ap_none, buf_28_load, scalar</column>
+<column name="buf_29_load">in, 32, ap_none, buf_29_load, scalar</column>
+<column name="buf_30_load">in, 32, ap_none, buf_30_load, scalar</column>
+<column name="buf_31_load">in, 32, ap_none, buf_31_load, scalar</column>
+<column name="buf_32_load">in, 32, ap_none, buf_32_load, scalar</column>
+<column name="buf_33_load">in, 32, ap_none, buf_33_load, scalar</column>
+<column name="buf_34_load">in, 32, ap_none, buf_34_load, scalar</column>
+<column name="buf_35_load">in, 32, ap_none, buf_35_load, scalar</column>
+<column name="buf_36_load">in, 32, ap_none, buf_36_load, scalar</column>
+<column name="buf_37_load">in, 32, ap_none, buf_37_load, scalar</column>
+<column name="buf_38_load">in, 32, ap_none, buf_38_load, scalar</column>
+<column name="buf_39_load">in, 32, ap_none, buf_39_load, scalar</column>
+<column name="buf_40_load">in, 32, ap_none, buf_40_load, scalar</column>
+<column name="buf_41_load">in, 32, ap_none, buf_41_load, scalar</column>
+<column name="buf_42_load">in, 32, ap_none, buf_42_load, scalar</column>
+<column name="buf_43_load">in, 32, ap_none, buf_43_load, scalar</column>
+<column name="buf_44_load">in, 32, ap_none, buf_44_load, scalar</column>
+<column name="buf_45_load">in, 32, ap_none, buf_45_load, scalar</column>
+<column name="buf_46_load">in, 32, ap_none, buf_46_load, scalar</column>
+<column name="buf_47_load">in, 32, ap_none, buf_47_load, scalar</column>
+<column name="buf_48_load">in, 32, ap_none, buf_48_load, scalar</column>
+<column name="buf_49_load">in, 32, ap_none, buf_49_load, scalar</column>
+<column name="buf_50_load">in, 32, ap_none, buf_50_load, scalar</column>
+<column name="buf_51_load">in, 32, ap_none, buf_51_load, scalar</column>
+<column name="buf_52_load">in, 32, ap_none, buf_52_load, scalar</column>
+<column name="buf_53_load">in, 32, ap_none, buf_53_load, scalar</column>
+<column name="buf_54_load">in, 32, ap_none, buf_54_load, scalar</column>
+<column name="buf_55_load">in, 32, ap_none, buf_55_load, scalar</column>
+<column name="buf_56_load">in, 32, ap_none, buf_56_load, scalar</column>
+<column name="buf_57_load">in, 32, ap_none, buf_57_load, scalar</column>
+<column name="buf_58_load">in, 32, ap_none, buf_58_load, scalar</column>
+<column name="buf_59_load">in, 32, ap_none, buf_59_load, scalar</column>
+<column name="buf_60_load">in, 32, ap_none, buf_60_load, scalar</column>
+<column name="buf_61_load">in, 32, ap_none, buf_61_load, scalar</column>
+<column name="buf_62_load">in, 32, ap_none, buf_62_load, scalar</column>
+<column name="buf_63_load">in, 32, ap_none, buf_63_load, scalar</column>
+<column name="buf_64_load">in, 32, ap_none, buf_64_load, scalar</column>
+<column name="buf_65_load">in, 32, ap_none, buf_65_load, scalar</column>
+<column name="buf_66_load">in, 32, ap_none, buf_66_load, scalar</column>
+<column name="buf_67_load">in, 32, ap_none, buf_67_load, scalar</column>
+<column name="buf_68_load">in, 32, ap_none, buf_68_load, scalar</column>
+<column name="buf_69_load">in, 32, ap_none, buf_69_load, scalar</column>
+<column name="buf_70_load">in, 32, ap_none, buf_70_load, scalar</column>
+<column name="buf_71_load">in, 32, ap_none, buf_71_load, scalar</column>
+<column name="buf_72_load">in, 32, ap_none, buf_72_load, scalar</column>
+<column name="buf_73_load">in, 32, ap_none, buf_73_load, scalar</column>
+<column name="buf_74_load">in, 32, ap_none, buf_74_load, scalar</column>
+<column name="buf_75_load">in, 32, ap_none, buf_75_load, scalar</column>
+<column name="buf_76_load">in, 32, ap_none, buf_76_load, scalar</column>
+<column name="buf_77_load">in, 32, ap_none, buf_77_load, scalar</column>
+<column name="buf_78_load">in, 32, ap_none, buf_78_load, scalar</column>
+<column name="buf_79_load">in, 32, ap_none, buf_79_load, scalar</column>
+<column name="buf_80_load">in, 32, ap_none, buf_80_load, scalar</column>
+<column name="buf_81_load">in, 32, ap_none, buf_81_load, scalar</column>
+<column name="buf_82_load">in, 32, ap_none, buf_82_load, scalar</column>
+<column name="buf_83_load">in, 32, ap_none, buf_83_load, scalar</column>
+<column name="buf_84_load">in, 32, ap_none, buf_84_load, scalar</column>
+<column name="buf_85_load">in, 32, ap_none, buf_85_load, scalar</column>
+<column name="buf_86_load">in, 32, ap_none, buf_86_load, scalar</column>
+<column name="buf_87_load">in, 32, ap_none, buf_87_load, scalar</column>
+<column name="buf_88_load">in, 32, ap_none, buf_88_load, scalar</column>
+<column name="buf_89_load">in, 32, ap_none, buf_89_load, scalar</column>
+<column name="buf_90_load">in, 32, ap_none, buf_90_load, scalar</column>
+<column name="buf_91_load">in, 32, ap_none, buf_91_load, scalar</column>
+<column name="buf_92_load">in, 32, ap_none, buf_92_load, scalar</column>
+<column name="buf_93_load">in, 32, ap_none, buf_93_load, scalar</column>
+<column name="buf_94_load">in, 32, ap_none, buf_94_load, scalar</column>
+<column name="buf_95_load">in, 32, ap_none, buf_95_load, scalar</column>
+<column name="buf_96_load">in, 32, ap_none, buf_96_load, scalar</column>
+<column name="buf_97_load">in, 32, ap_none, buf_97_load, scalar</column>
+<column name="buf_98_load">in, 32, ap_none, buf_98_load, scalar</column>
+<column name="buf_99_load">in, 32, ap_none, buf_99_load, scalar</column>
+<column name="buf_100_load">in, 32, ap_none, buf_100_load, scalar</column>
+<column name="buf_101_load">in, 32, ap_none, buf_101_load, scalar</column>
+<column name="buf_102_load">in, 32, ap_none, buf_102_load, scalar</column>
+<column name="buf_103_load">in, 32, ap_none, buf_103_load, scalar</column>
+<column name="buf_104_load">in, 32, ap_none, buf_104_load, scalar</column>
+<column name="buf_105_load">in, 32, ap_none, buf_105_load, scalar</column>
+<column name="buf_106_load">in, 32, ap_none, buf_106_load, scalar</column>
+<column name="buf_107_load">in, 32, ap_none, buf_107_load, scalar</column>
+<column name="buf_108_load">in, 32, ap_none, buf_108_load, scalar</column>
+<column name="buf_109_load">in, 32, ap_none, buf_109_load, scalar</column>
+<column name="buf_110_load">in, 32, ap_none, buf_110_load, scalar</column>
+<column name="buf_111_load">in, 32, ap_none, buf_111_load, scalar</column>
+<column name="buf_112_load">in, 32, ap_none, buf_112_load, scalar</column>
+<column name="buf_113_load">in, 32, ap_none, buf_113_load, scalar</column>
+<column name="buf_114_load">in, 32, ap_none, buf_114_load, scalar</column>
+<column name="buf_115_load">in, 32, ap_none, buf_115_load, scalar</column>
+<column name="buf_116_load">in, 32, ap_none, buf_116_load, scalar</column>
+<column name="buf_117_load">in, 32, ap_none, buf_117_load, scalar</column>
+<column name="buf_118_load">in, 32, ap_none, buf_118_load, scalar</column>
+<column name="buf_119_load">in, 32, ap_none, buf_119_load, scalar</column>
+<column name="buf_120_load">in, 32, ap_none, buf_120_load, scalar</column>
+<column name="buf_121_load">in, 32, ap_none, buf_121_load, scalar</column>
+<column name="buf_122_load">in, 32, ap_none, buf_122_load, scalar</column>
+<column name="buf_123_load">in, 32, ap_none, buf_123_load, scalar</column>
+<column name="buf_124_load">in, 32, ap_none, buf_124_load, scalar</column>
+<column name="buf_125_load">in, 32, ap_none, buf_125_load, scalar</column>
+<column name="buf_126_load">in, 32, ap_none, buf_126_load, scalar</column>
+<column name="buf_127_load">in, 32, ap_none, buf_127_load, scalar</column>
+<column name="buf_128_load">in, 32, ap_none, buf_128_load, scalar</column>
+<column name="buf_129_load">in, 32, ap_none, buf_129_load, scalar</column>
+<column name="buf_130_load">in, 32, ap_none, buf_130_load, scalar</column>
+<column name="buf_131_load">in, 32, ap_none, buf_131_load, scalar</column>
+<column name="buf_132_load">in, 32, ap_none, buf_132_load, scalar</column>
+<column name="buf_133_load">in, 32, ap_none, buf_133_load, scalar</column>
+<column name="buf_134_load">in, 32, ap_none, buf_134_load, scalar</column>
+<column name="buf_135_load">in, 32, ap_none, buf_135_load, scalar</column>
+<column name="buf_136_load">in, 32, ap_none, buf_136_load, scalar</column>
+<column name="buf_137_load">in, 32, ap_none, buf_137_load, scalar</column>
+<column name="buf_138_load">in, 32, ap_none, buf_138_load, scalar</column>
+<column name="buf_139_load">in, 32, ap_none, buf_139_load, scalar</column>
+<column name="buf_140_load">in, 32, ap_none, buf_140_load, scalar</column>
+<column name="buf_141_load">in, 32, ap_none, buf_141_load, scalar</column>
+<column name="buf_142_load">in, 32, ap_none, buf_142_load, scalar</column>
+<column name="buf_143_load">in, 32, ap_none, buf_143_load, scalar</column>
+<column name="buf_144_load">in, 32, ap_none, buf_144_load, scalar</column>
+<column name="buf_145_load">in, 32, ap_none, buf_145_load, scalar</column>
+<column name="buf_146_load">in, 32, ap_none, buf_146_load, scalar</column>
+<column name="buf_147_load">in, 32, ap_none, buf_147_load, scalar</column>
+<column name="buf_148_load">in, 32, ap_none, buf_148_load, scalar</column>
+<column name="buf_149_load">in, 32, ap_none, buf_149_load, scalar</column>
+<column name="buf_150_load">in, 32, ap_none, buf_150_load, scalar</column>
+<column name="buf_151_load">in, 32, ap_none, buf_151_load, scalar</column>
+<column name="buf_152_load">in, 32, ap_none, buf_152_load, scalar</column>
+<column name="buf_153_load">in, 32, ap_none, buf_153_load, scalar</column>
+<column name="buf_154_load">in, 32, ap_none, buf_154_load, scalar</column>
+<column name="buf_155_load">in, 32, ap_none, buf_155_load, scalar</column>
+<column name="buf_156_load">in, 32, ap_none, buf_156_load, scalar</column>
+<column name="buf_157_load">in, 32, ap_none, buf_157_load, scalar</column>
+<column name="buf_158_load">in, 32, ap_none, buf_158_load, scalar</column>
+<column name="buf_159_load">in, 32, ap_none, buf_159_load, scalar</column>
+<column name="buf_160_load">in, 32, ap_none, buf_160_load, scalar</column>
+<column name="buf_161_load">in, 32, ap_none, buf_161_load, scalar</column>
+<column name="buf_162_load">in, 32, ap_none, buf_162_load, scalar</column>
+<column name="buf_163_load">in, 32, ap_none, buf_163_load, scalar</column>
+<column name="buf_164_load">in, 32, ap_none, buf_164_load, scalar</column>
+<column name="buf_165_load">in, 32, ap_none, buf_165_load, scalar</column>
+<column name="buf_166_load">in, 32, ap_none, buf_166_load, scalar</column>
+<column name="buf_167_load">in, 32, ap_none, buf_167_load, scalar</column>
+<column name="buf_168_load">in, 32, ap_none, buf_168_load, scalar</column>
+<column name="buf_169_load">in, 32, ap_none, buf_169_load, scalar</column>
+<column name="buf_170_load">in, 32, ap_none, buf_170_load, scalar</column>
+<column name="buf_171_load">in, 32, ap_none, buf_171_load, scalar</column>
+<column name="buf_172_load">in, 32, ap_none, buf_172_load, scalar</column>
+<column name="buf_173_load">in, 32, ap_none, buf_173_load, scalar</column>
+<column name="buf_174_load">in, 32, ap_none, buf_174_load, scalar</column>
+<column name="buf_175_load">in, 32, ap_none, buf_175_load, scalar</column>
+<column name="buf_176_load">in, 32, ap_none, buf_176_load, scalar</column>
+<column name="buf_177_load">in, 32, ap_none, buf_177_load, scalar</column>
+<column name="buf_178_load">in, 32, ap_none, buf_178_load, scalar</column>
+<column name="buf_179_load">in, 32, ap_none, buf_179_load, scalar</column>
+<column name="buf_180_load">in, 32, ap_none, buf_180_load, scalar</column>
+<column name="buf_181_load">in, 32, ap_none, buf_181_load, scalar</column>
+<column name="buf_182_load">in, 32, ap_none, buf_182_load, scalar</column>
+<column name="buf_183_load">in, 32, ap_none, buf_183_load, scalar</column>
+<column name="buf_184_load">in, 32, ap_none, buf_184_load, scalar</column>
+<column name="buf_185_load">in, 32, ap_none, buf_185_load, scalar</column>
+<column name="buf_186_load">in, 32, ap_none, buf_186_load, scalar</column>
+<column name="buf_187_load">in, 32, ap_none, buf_187_load, scalar</column>
+<column name="buf_188_load">in, 32, ap_none, buf_188_load, scalar</column>
+<column name="buf_189_load">in, 32, ap_none, buf_189_load, scalar</column>
+<column name="buf_190_load">in, 32, ap_none, buf_190_load, scalar</column>
+<column name="buf_191_load">in, 32, ap_none, buf_191_load, scalar</column>
+<column name="buf_192_load">in, 32, ap_none, buf_192_load, scalar</column>
+<column name="buf_193_load">in, 32, ap_none, buf_193_load, scalar</column>
+<column name="buf_194_load">in, 32, ap_none, buf_194_load, scalar</column>
+<column name="buf_195_load">in, 32, ap_none, buf_195_load, scalar</column>
+<column name="buf_196_load">in, 32, ap_none, buf_196_load, scalar</column>
+<column name="buf_197_load">in, 32, ap_none, buf_197_load, scalar</column>
+<column name="buf_198_load">in, 32, ap_none, buf_198_load, scalar</column>
+<column name="buf_199_load">in, 32, ap_none, buf_199_load, scalar</column>
+<column name="buf_200_load">in, 32, ap_none, buf_200_load, scalar</column>
+<column name="buf_201_load">in, 32, ap_none, buf_201_load, scalar</column>
+<column name="buf_202_load">in, 32, ap_none, buf_202_load, scalar</column>
+<column name="buf_203_load">in, 32, ap_none, buf_203_load, scalar</column>
+<column name="buf_204_load">in, 32, ap_none, buf_204_load, scalar</column>
+<column name="buf_205_load">in, 32, ap_none, buf_205_load, scalar</column>
+<column name="buf_206_load">in, 32, ap_none, buf_206_load, scalar</column>
+<column name="buf_207_load">in, 32, ap_none, buf_207_load, scalar</column>
+<column name="buf_208_load">in, 32, ap_none, buf_208_load, scalar</column>
+<column name="buf_209_load">in, 32, ap_none, buf_209_load, scalar</column>
+<column name="buf_210_load">in, 32, ap_none, buf_210_load, scalar</column>
+<column name="buf_211_load">in, 32, ap_none, buf_211_load, scalar</column>
+<column name="buf_212_load">in, 32, ap_none, buf_212_load, scalar</column>
+<column name="buf_213_load">in, 32, ap_none, buf_213_load, scalar</column>
+<column name="buf_214_load">in, 32, ap_none, buf_214_load, scalar</column>
+<column name="buf_215_load">in, 32, ap_none, buf_215_load, scalar</column>
+<column name="buf_216_load">in, 32, ap_none, buf_216_load, scalar</column>
+<column name="buf_217_load">in, 32, ap_none, buf_217_load, scalar</column>
+<column name="buf_218_load">in, 32, ap_none, buf_218_load, scalar</column>
+<column name="buf_219_load">in, 32, ap_none, buf_219_load, scalar</column>
+<column name="buf_220_load">in, 32, ap_none, buf_220_load, scalar</column>
+<column name="buf_221_load">in, 32, ap_none, buf_221_load, scalar</column>
+<column name="buf_222_load">in, 32, ap_none, buf_222_load, scalar</column>
+<column name="buf_223_load">in, 32, ap_none, buf_223_load, scalar</column>
+<column name="buf_224_load">in, 32, ap_none, buf_224_load, scalar</column>
+<column name="buf_225_load">in, 32, ap_none, buf_225_load, scalar</column>
+<column name="buf_226_load">in, 32, ap_none, buf_226_load, scalar</column>
+<column name="buf_227_load">in, 32, ap_none, buf_227_load, scalar</column>
+<column name="buf_228_load">in, 32, ap_none, buf_228_load, scalar</column>
+<column name="buf_229_load">in, 32, ap_none, buf_229_load, scalar</column>
+<column name="buf_230_load">in, 32, ap_none, buf_230_load, scalar</column>
+<column name="buf_231_load">in, 32, ap_none, buf_231_load, scalar</column>
+<column name="buf_232_load">in, 32, ap_none, buf_232_load, scalar</column>
+<column name="buf_233_load">in, 32, ap_none, buf_233_load, scalar</column>
+<column name="buf_234_load">in, 32, ap_none, buf_234_load, scalar</column>
+<column name="buf_235_load">in, 32, ap_none, buf_235_load, scalar</column>
+<column name="buf_236_load">in, 32, ap_none, buf_236_load, scalar</column>
+<column name="buf_237_load">in, 32, ap_none, buf_237_load, scalar</column>
+<column name="buf_238_load">in, 32, ap_none, buf_238_load, scalar</column>
+<column name="buf_239_load">in, 32, ap_none, buf_239_load, scalar</column>
+<column name="buf_240_load">in, 32, ap_none, buf_240_load, scalar</column>
+<column name="buf_241_load">in, 32, ap_none, buf_241_load, scalar</column>
+<column name="buf_242_load">in, 32, ap_none, buf_242_load, scalar</column>
+<column name="buf_243_load">in, 32, ap_none, buf_243_load, scalar</column>
+<column name="buf_244_load">in, 32, ap_none, buf_244_load, scalar</column>
+<column name="buf_245_load">in, 32, ap_none, buf_245_load, scalar</column>
+<column name="buf_246_load">in, 32, ap_none, buf_246_load, scalar</column>
+<column name="buf_247_load">in, 32, ap_none, buf_247_load, scalar</column>
+<column name="buf_248_load">in, 32, ap_none, buf_248_load, scalar</column>
+<column name="buf_249_load">in, 32, ap_none, buf_249_load, scalar</column>
+<column name="buf_250_load">in, 32, ap_none, buf_250_load, scalar</column>
+<column name="buf_251_load">in, 32, ap_none, buf_251_load, scalar</column>
+<column name="buf_252_load">in, 32, ap_none, buf_252_load, scalar</column>
+<column name="buf_253_load">in, 32, ap_none, buf_253_load, scalar</column>
+<column name="buf_254_load">in, 32, ap_none, buf_254_load, scalar</column>
+<column name="buf_255_load">in, 32, ap_none, buf_255_load, scalar</column>
+<column name="a_Addr_A">out, 32, bram, a, array</column>
+<column name="a_EN_A">out, 1, bram, a, array</column>
+<column name="a_WEN_A">out, 4, bram, a, array</column>
+<column name="a_Din_A">out, 32, bram, a, array</column>
+<column name="a_Dout_A">in, 32, bram, a, array</column>
+</table>
+</item>
+</section>
+</profile>

@@ -219,7 +219,7 @@ entry:11 %ret_ln27 = ret
 
 <ports>
 <port id="17" name="a" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="a"/><MemPortTyVec>2 1 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="a"/><MemPortTyVec>2 3 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="18" name="roots" dir="0" iftype="1">

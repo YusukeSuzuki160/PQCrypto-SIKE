@@ -6,21 +6,21 @@
     "fileloc": 14,
     "instructions": 6,
     "name": "ntt_forward_converted",
-    "total_instructions": 55
+    "total_instructions": 101
   },
   "1": {
-    "basicblocks": 10,
+    "basicblocks": 14,
     "calls": "",
     "file": "ntt_ops_hls.hpp",
-    "fileloc": 69,
-    "instructions": 49,
+    "fileloc": 106,
+    "instructions": 95,
     "loads": {
-      "L": 4
+      "L": 7
     },
     "name": "forward_ntt",
     "stores": {
-      "L": 2
+      "L": 5
     },
-    "total_instructions": 49
+    "total_instructions": 95
   }
 }

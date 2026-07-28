@@ -1,65 +1,77 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "1",
+    "calls": "6",
     "file": "ntt_hls_converted.cpp",
     "fileloc": 14,
     "instructions": 6,
     "name": "ntt_forward_converted",
-    "total_instructions": 315
+    "total_instructions": 1031
   },
   "1": {
-    "basicblocks": 19,
-    "calls": "3",
-    "file": "ntt_ops_hls.hpp",
-    "fileloc": 69,
-    "instructions": 40,
-    "loads": {
-      "L": 1
-    },
-    "name": "forward_ntt",
-    "total_instructions": 309
-  },
-  "2": {
-    "basicblocks": 3,
+    "basicblocks": 5,
     "calls": "",
     "file": "ntt_ops_hls.hpp",
-    "fileloc": 18,
+    "fileloc": 58,
+    "instructions": 119,
+    "name": "mulmod32",
+    "total_instructions": 769
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 46,
+    "instructions": 23,
+    "name": "barrett_mu",
+    "total_instructions": 132
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 35,
+    "instructions": 7,
+    "name": "submod32",
+    "total_instructions": 7
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "1 3 5",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 79,
+    "instructions": 12,
+    "loads": {
+      "L": 4
+    },
+    "name": "butterfly_ct_hls",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 795
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ntt_ops_hls.hpp",
+    "fileloc": 25,
     "instructions": 7,
     "name": "addmod32",
     "total_instructions": 7
   },
-  "3": {
-    "basicblocks": 1,
-    "calls": "4 5 2",
+  "6": {
+    "basicblocks": 31,
+    "calls": "2 4",
     "file": "ntt_ops_hls.hpp",
-    "fileloc": 44,
-    "instructions": 9,
+    "fileloc": 106,
+    "instructions": 98,
     "loads": {
-      "L": 3
+      "L": 5
     },
-    "name": "butterfly_ct_hls",
+    "name": "forward_ntt",
     "stores": {
-      "L": 2
+      "L": 4
     },
-    "total_instructions": 269
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "ntt_ops_hls.hpp",
-    "fileloc": 36,
-    "instructions": 40,
-    "name": "mulmod32",
-    "total_instructions": 246
-  },
-  "5": {
-    "basicblocks": 3,
-    "calls": "",
-    "file": "ntt_ops_hls.hpp",
-    "fileloc": 27,
-    "instructions": 7,
-    "name": "submod32",
-    "total_instructions": 7
+    "total_instructions": 1025
   }
 }

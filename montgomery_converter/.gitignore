@@ -1,0 +1,5 @@
+build/
+examples/*_converted.cpp
+hls_comparison/proj_*/
+hls_comparison/*.log
+hls_comparison/vitis_hls.log

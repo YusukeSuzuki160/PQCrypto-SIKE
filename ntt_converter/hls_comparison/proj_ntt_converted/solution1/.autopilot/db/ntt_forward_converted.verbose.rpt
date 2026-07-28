@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'ntt_forward_converted'
 ================================================================
-* Date:           Thu Jun 25 14:31:35 2026
+* Date:           Fri Jun 26 11:38:50 2026
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_ntt_converted
@@ -20,26 +20,26 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.643 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.123 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+----------+----------+-----------+-----+----------+---------+
-    |  Latency (cycles)  |  Latency (absolute)  |    Interval    | Pipeline|
-    |   min   |    max   |    min   |    max    | min |    max   |   Type  |
-    +---------+----------+----------+-----------+-----+----------+---------+
-    |       50|  18543634|  0.500 us|  0.185 sec|   51|  18543635|       no|
-    +---------+----------+----------+-----------+-----+----------+---------+
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |      666|   138842|  6.660 us|  1.388 ms|  667|  138843|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
 
     + Detail: 
         * Instance: 
-        +-----------------------+-------------+---------+----------+----------+-----------+-----+----------+---------+
-        |                       |             |  Latency (cycles)  |  Latency (absolute)  |    Interval    | Pipeline|
-        |        Instance       |    Module   |   min   |    max   |    min   |    max    | min |    max   |   Type  |
-        +-----------------------+-------------+---------+----------+----------+-----------+-----+----------+---------+
-        |grp_forward_ntt_fu_42  |forward_ntt  |       49|  18543633|  0.490 us|  0.185 sec|   49|  18543633|       no|
-        +-----------------------+-------------+---------+----------+----------+-----------+-----+----------+---------+
+        +-----------------------+-------------+---------+---------+----------+----------+-----+--------+---------+
+        |                       |             |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+        |        Instance       |    Module   |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+        +-----------------------+-------------+---------+---------+----------+----------+-----+--------+---------+
+        |grp_forward_ntt_fu_42  |forward_ntt  |      665|   138841|  6.650 us|  1.388 ms|  665|  138841|       no|
+        +-----------------------+-------------+---------+---------+----------+----------+-----+--------+---------+
 
         * Loop: 
         N/A
@@ -56,32 +56,32 @@
 |DSP                  |        -|     -|        -|        -|    -|
 |Expression           |        -|     -|        -|        -|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
-|Instance             |        0|     4|     9017|     7531|    0|
+|Instance             |        0|    27|    18615|    17116|    0|
 |Memory               |        -|     -|        -|        -|    -|
 |Multiplexer          |        -|     -|        0|       14|    -|
 |Register             |        -|     -|       35|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        0|     4|     9052|     7545|    0|
+|Total                |        0|    27|    18650|    17130|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1440|  2280|   788160|   394080|  320|
 +---------------------+---------+------+---------+---------+-----+
-|Utilization SLR (%)  |        0|    ~0|        1|        1|    0|
+|Utilization SLR (%)  |        0|     1|        2|        4|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available            |     4320|  6840|  2364480|  1182240|  960|
 +---------------------+---------+------+---------+---------+-----+
-|Utilization (%)      |        0|    ~0|       ~0|       ~0|    0|
+|Utilization (%)      |        0|    ~0|       ~0|        1|    0|
 +---------------------+---------+------+---------+---------+-----+
 
 + Detail: 
     * Instance: 
-    +-----------------------+---------------+---------+----+------+------+-----+
-    |        Instance       |     Module    | BRAM_18K| DSP|  FF  |  LUT | URAM|
-    +-----------------------+---------------+---------+----+------+------+-----+
-    |control_s_axi_U        |control_s_axi  |        0|   0|    74|   104|    0|
-    |grp_forward_ntt_fu_42  |forward_ntt    |        0|   4|  8943|  7427|    0|
-    +-----------------------+---------------+---------+----+------+------+-----+
-    |Total                  |               |        0|   4|  9017|  7531|    0|
-    +-----------------------+---------------+---------+----+------+------+-----+
+    +-----------------------+---------------+---------+----+-------+-------+-----+
+    |        Instance       |     Module    | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +-----------------------+---------------+---------+----+-------+-------+-----+
+    |control_s_axi_U        |control_s_axi  |        0|   0|     74|    104|    0|
+    |grp_forward_ntt_fu_42  |forward_ntt    |        0|  27|  18541|  17012|    0|
+    +-----------------------+---------------+---------+----+-------+-------+-----+
+    |Total                  |               |        0|  27|  18615|  17116|    0|
+    +-----------------------+---------------+---------+----+-------+-------+-----+
 
     * DSP: 
     N/A
@@ -151,13 +151,6 @@
 |a_Dout_A               |   in|   32|        bram|                      a|         array|
 |a_Clk_A                |  out|    1|        bram|                      a|         array|
 |a_Rst_A                |  out|    1|        bram|                      a|         array|
-|a_Addr_B               |  out|   32|        bram|                      a|         array|
-|a_EN_B                 |  out|    1|        bram|                      a|         array|
-|a_WEN_B                |  out|    4|        bram|                      a|         array|
-|a_Din_B                |  out|   32|        bram|                      a|         array|
-|a_Dout_B               |   in|   32|        bram|                      a|         array|
-|a_Clk_B                |  out|    1|        bram|                      a|         array|
-|a_Rst_B                |  out|    1|        bram|                      a|         array|
 |roots_Addr_A           |  out|   32|        bram|                  roots|         array|
 |roots_EN_A             |  out|    1|        bram|                  roots|         array|
 |roots_WEN_A            |  out|    4|        bram|                  roots|         array|
@@ -203,9 +196,9 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.00>
+State 1 <SV = 0> <Delay = 2.28>
 ST_1 : Operation 3 [1/1] (1.00ns)   --->   "%mod_r_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %mod_r" [ntt_hls_converted.cpp:16]   --->   Operation 3 'read' 'mod_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln26 = call void @forward_ntt, i32 %a, i32 %roots, i32 %mod_r_read" [ntt_hls_converted.cpp:26]   --->   Operation 4 'call' 'call_ln26' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 4 [2/2] (1.28ns)   --->   "%call_ln26 = call void @forward_ntt, i32 %a, i32 %roots, i32 %mod_r_read" [ntt_hls_converted.cpp:26]   --->   Operation 4 'call' 'call_ln26' <Predicate = true> <Delay = 1.28> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%spectopmodule_ln14 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [ntt_hls_converted.cpp:14]   --->   Operation 5 'spectopmodule' 'spectopmodule_ln14' <Predicate = true> <Delay = 0.00>
@@ -232,7 +225,7 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=bram:ce=0
+Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=bram:ce=0
 Port [ roots]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=bram:ce=0
 Port [ mod_r]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
@@ -263,7 +256,7 @@ ret_ln27           (ret          ) [ 000]
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="a"/><MemPortTyVec>2 1 </MemPortTyVec>
+<StgValue><ssdm name="a"/><MemPortTyVec>2 3 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -502,11 +495,11 @@ ret_ln27           (ret          ) [ 000]
 |----------|-----------------------|---------|---------|---------|---------|
 | Operation|    Functional Unit    |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|-----------------------|---------|---------|---------|---------|
-|   call   | grp_forward_ntt_fu_42 |    4    | 2.38771 |   9003  |   7038  |
+|   call   | grp_forward_ntt_fu_42 |    27   | 199.692 |  34245  |  12928  |
 |----------|-----------------------|---------|---------|---------|---------|
 |   read   | mod_r_read_read_fu_36 |    0    |    0    |    0    |    0    |
 |----------|-----------------------|---------|---------|---------|---------|
-|   Total  |                       |    4    | 2.38771 |   9003  |   7038  |
+|   Total  |                       |    27   | 199.692 |  34245  |  12928  |
 |----------|-----------------------|---------|---------|---------|---------|
 
 Memories:
@@ -536,10 +529,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |    4   |    2   |  9003  |  7038  |
+|  Function |   27   |   199  |  34245 |  12928 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    0   |    0   |    9   |
 |  Register |    -   |    -   |   32   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |    4   |    2   |  9035  |  7047  |
+|   Total   |   27   |   200  |  34277 |  12937 |
 +-----------+--------+--------+--------+--------+

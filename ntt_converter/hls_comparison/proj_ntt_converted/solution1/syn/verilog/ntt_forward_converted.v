@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="ntt_forward_converted_ntt_forward_converted,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu9p-flga2104-2-i,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.643000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=9052,HLS_SYN_LUT=7545,HLS_VERSION=2024_2_2}" *)
+(* CORE_GENERATION_INFO="ntt_forward_converted_ntt_forward_converted,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu9p-flga2104-2-i,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.123000,HLS_SYN_LAT=36954,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=18650,HLS_SYN_LUT=17130,HLS_VERSION=2024_2_2}" *)
 
 module ntt_forward_converted (
         ap_clk,
@@ -18,13 +18,6 @@ module ntt_forward_converted (
         a_Dout_A,
         a_Clk_A,
         a_Rst_A,
-        a_Addr_B,
-        a_EN_B,
-        a_WEN_B,
-        a_Din_B,
-        a_Dout_B,
-        a_Clk_B,
-        a_Rst_B,
         roots_Addr_A,
         roots_EN_A,
         roots_WEN_A,
@@ -70,13 +63,6 @@ output  [31:0] a_Din_A;
 input  [31:0] a_Dout_A;
 output   a_Clk_A;
 output   a_Rst_A;
-output  [31:0] a_Addr_B;
-output   a_EN_B;
-output  [3:0] a_WEN_B;
-output  [31:0] a_Din_B;
-input  [31:0] a_Dout_B;
-output   a_Clk_B;
-output   a_Rst_B;
 output  [31:0] roots_Addr_A;
 output   roots_EN_A;
 output  [3:0] roots_WEN_A;
@@ -120,10 +106,6 @@ wire   [31:0] grp_forward_ntt_fu_42_a_Addr_A;
 wire    grp_forward_ntt_fu_42_a_EN_A;
 wire   [3:0] grp_forward_ntt_fu_42_a_WEN_A;
 wire   [31:0] grp_forward_ntt_fu_42_a_Din_A;
-wire   [31:0] grp_forward_ntt_fu_42_a_Addr_B;
-wire    grp_forward_ntt_fu_42_a_EN_B;
-wire   [3:0] grp_forward_ntt_fu_42_a_WEN_B;
-wire   [31:0] grp_forward_ntt_fu_42_a_Din_B;
 wire   [31:0] grp_forward_ntt_fu_42_roots_Addr_A;
 wire    grp_forward_ntt_fu_42_roots_EN_A;
 wire   [3:0] grp_forward_ntt_fu_42_roots_WEN_A;
@@ -153,11 +135,6 @@ ntt_forward_converted_forward_ntt grp_forward_ntt_fu_42(
     .a_WEN_A(grp_forward_ntt_fu_42_a_WEN_A),
     .a_Din_A(grp_forward_ntt_fu_42_a_Din_A),
     .a_Dout_A(a_Dout_A),
-    .a_Addr_B(grp_forward_ntt_fu_42_a_Addr_B),
-    .a_EN_B(grp_forward_ntt_fu_42_a_EN_B),
-    .a_WEN_B(grp_forward_ntt_fu_42_a_WEN_B),
-    .a_Din_B(grp_forward_ntt_fu_42_a_Din_B),
-    .a_Dout_B(a_Dout_B),
     .roots_Addr_A(grp_forward_ntt_fu_42_roots_Addr_A),
     .roots_EN_A(grp_forward_ntt_fu_42_roots_EN_A),
     .roots_WEN_A(grp_forward_ntt_fu_42_roots_WEN_A),
@@ -288,27 +265,15 @@ end
 
 assign a_Addr_A = grp_forward_ntt_fu_42_a_Addr_A;
 
-assign a_Addr_B = grp_forward_ntt_fu_42_a_Addr_B;
-
 assign a_Clk_A = ap_clk;
-
-assign a_Clk_B = ap_clk;
 
 assign a_Din_A = grp_forward_ntt_fu_42_a_Din_A;
 
-assign a_Din_B = 32'd0;
-
 assign a_EN_A = grp_forward_ntt_fu_42_a_EN_A;
-
-assign a_EN_B = grp_forward_ntt_fu_42_a_EN_B;
 
 assign a_Rst_A = ap_rst_n_inv;
 
-assign a_Rst_B = ap_rst_n_inv;
-
 assign a_WEN_A = grp_forward_ntt_fu_42_a_WEN_A;
-
-assign a_WEN_B = 4'd0;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 

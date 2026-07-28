@@ -22,13 +22,6 @@ port (
     a_Dout_A : IN STD_LOGIC_VECTOR (31 downto 0);
     a_Clk_A : OUT STD_LOGIC;
     a_Rst_A : OUT STD_LOGIC;
-    a_Addr_B : OUT STD_LOGIC_VECTOR (31 downto 0);
-    a_EN_B : OUT STD_LOGIC;
-    a_WEN_B : OUT STD_LOGIC_VECTOR (3 downto 0);
-    a_Din_B : OUT STD_LOGIC_VECTOR (31 downto 0);
-    a_Dout_B : IN STD_LOGIC_VECTOR (31 downto 0);
-    a_Clk_B : OUT STD_LOGIC;
-    a_Rst_B : OUT STD_LOGIC;
     roots_Addr_A : OUT STD_LOGIC_VECTOR (31 downto 0);
     roots_EN_A : OUT STD_LOGIC;
     roots_WEN_A : OUT STD_LOGIC_VECTOR (3 downto 0);
@@ -60,7 +53,7 @@ end;
 architecture behav of ntt_forward_converted is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "ntt_forward_converted_ntt_forward_converted,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu9p-flga2104-2-i,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.643000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=9052,HLS_SYN_LUT=7545,HLS_VERSION=2024_2_2}";
+    "ntt_forward_converted_ntt_forward_converted,hls_ip_2024_2_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu9p-flga2104-2-i,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.123000,HLS_SYN_LAT=36954,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=18650,HLS_SYN_LUT=17130,HLS_VERSION=2024_2_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
@@ -91,10 +84,6 @@ architecture behav of ntt_forward_converted is
     signal grp_forward_ntt_fu_42_a_EN_A : STD_LOGIC;
     signal grp_forward_ntt_fu_42_a_WEN_A : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_forward_ntt_fu_42_a_Din_A : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_forward_ntt_fu_42_a_Addr_B : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_forward_ntt_fu_42_a_EN_B : STD_LOGIC;
-    signal grp_forward_ntt_fu_42_a_WEN_B : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_forward_ntt_fu_42_a_Din_B : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_forward_ntt_fu_42_roots_Addr_A : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_forward_ntt_fu_42_roots_EN_A : STD_LOGIC;
     signal grp_forward_ntt_fu_42_roots_WEN_A : STD_LOGIC_VECTOR (3 downto 0);
@@ -120,11 +109,6 @@ architecture behav of ntt_forward_converted is
         a_WEN_A : OUT STD_LOGIC_VECTOR (3 downto 0);
         a_Din_A : OUT STD_LOGIC_VECTOR (31 downto 0);
         a_Dout_A : IN STD_LOGIC_VECTOR (31 downto 0);
-        a_Addr_B : OUT STD_LOGIC_VECTOR (31 downto 0);
-        a_EN_B : OUT STD_LOGIC;
-        a_WEN_B : OUT STD_LOGIC_VECTOR (3 downto 0);
-        a_Din_B : OUT STD_LOGIC_VECTOR (31 downto 0);
-        a_Dout_B : IN STD_LOGIC_VECTOR (31 downto 0);
         roots_Addr_A : OUT STD_LOGIC_VECTOR (31 downto 0);
         roots_EN_A : OUT STD_LOGIC;
         roots_WEN_A : OUT STD_LOGIC_VECTOR (3 downto 0);
@@ -183,11 +167,6 @@ begin
         a_WEN_A => grp_forward_ntt_fu_42_a_WEN_A,
         a_Din_A => grp_forward_ntt_fu_42_a_Din_A,
         a_Dout_A => a_Dout_A,
-        a_Addr_B => grp_forward_ntt_fu_42_a_Addr_B,
-        a_EN_B => grp_forward_ntt_fu_42_a_EN_B,
-        a_WEN_B => grp_forward_ntt_fu_42_a_WEN_B,
-        a_Din_B => grp_forward_ntt_fu_42_a_Din_B,
-        a_Dout_B => a_Dout_B,
         roots_Addr_A => grp_forward_ntt_fu_42_roots_Addr_A,
         roots_EN_A => grp_forward_ntt_fu_42_roots_EN_A,
         roots_WEN_A => grp_forward_ntt_fu_42_roots_WEN_A,
@@ -287,17 +266,11 @@ begin
         end case;
     end process;
     a_Addr_A <= grp_forward_ntt_fu_42_a_Addr_A;
-    a_Addr_B <= grp_forward_ntt_fu_42_a_Addr_B;
     a_Clk_A <= ap_clk;
-    a_Clk_B <= ap_clk;
     a_Din_A <= grp_forward_ntt_fu_42_a_Din_A;
-    a_Din_B <= ap_const_lv32_0;
     a_EN_A <= grp_forward_ntt_fu_42_a_EN_A;
-    a_EN_B <= grp_forward_ntt_fu_42_a_EN_B;
     a_Rst_A <= ap_rst_n_inv;
-    a_Rst_B <= ap_rst_n_inv;
     a_WEN_A <= grp_forward_ntt_fu_42_a_WEN_A;
-    a_WEN_B <= ap_const_lv4_0;
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
 

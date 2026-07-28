@@ -9,7 +9,7 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>20</integer>
+      <integer>27</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -25,7 +25,7 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>29</integer>
+      <integer>37</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -41,7 +41,23 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>38</integer>
+      <integer>48</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=barrett_mu_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>60</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -57,7 +73,23 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>46</integer>
+      <integer>74</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mulmod32_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>82</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -73,7 +105,7 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>55</integer>
+      <integer>92</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -89,7 +121,7 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>72</integer>
+      <integer>109</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -105,11 +137,11 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>74</integer>
+      <integer>113</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=min=1 max=LOG2N_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=variable=buf complete dim=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -121,11 +153,11 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>76</integer>
+      <integer>114</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N/2_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=variable=rt complete dim=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -137,7 +169,23 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>78</integer>
+      <integer>118</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>119</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -153,7 +201,119 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>89</integer>
+      <integer>128</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=min=1 max=LOG2N_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>130</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N/2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>132</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N/2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>133</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>138</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=variable=buf type=inter dependent=false_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>146</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>147</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=forward_ntt_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>156</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -169,7 +329,71 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>91</integer>
+      <integer>159</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=variable=buf complete dim=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>160</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=variable=rt complete dim=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>163</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>164</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>172</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -185,7 +409,7 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>93</integer>
+      <integer>174</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -201,7 +425,71 @@
       <key>filename</key>
       <string>./ntt_ops_hls.hpp</string>
       <key>line</key>
-      <integer>95</integer>
+      <integer>176</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N/2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>177</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>178</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=variable=buf type=inter dependent=false_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>185</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=inverse_ntt_XLX_SEP_ PragmaOptions=min=1 max=MAX_N_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>./ntt_ops_hls.hpp</string>
+      <key>line</key>
+      <integer>186</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

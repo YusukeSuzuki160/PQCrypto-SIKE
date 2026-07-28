@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'ntt_forward_converted'
 ================================================================
-* Date:           Thu Jun 25 14:31:35 2026
+* Date:           Fri Jun 26 11:38:48 2026
 
 * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
 * Project:        proj_ntt_converted
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.643 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  6.123 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+----------+----------+-----------+-----+----------+---------+
-    |  Latency (cycles)  |  Latency (absolute)  |    Interval    | Pipeline|
-    |   min   |    max   |    min   |    max    | min |    max   |   Type  |
-    +---------+----------+----------+-----------+-----+----------+---------+
-    |       50|  18543634|  0.500 us|  0.185 sec|   51|  18543635|       no|
-    +---------+----------+----------+-----------+-----+----------+---------+
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |      666|   138842|  6.660 us|  1.388 ms|  667|  138843|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
 
     + Detail: 
         * Instance: 
@@ -75,9 +75,9 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.00>
+State 1 <SV = 0> <Delay = 2.28>
 ST_1 : Operation 3 [1/1] (1.00ns)   --->   "%mod_r_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %mod_r" [ntt_hls_converted.cpp:16]   --->   Operation 3 'read' 'mod_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln26 = call void @forward_ntt, i32 %a, i32 %roots, i32 %mod_r_read" [ntt_hls_converted.cpp:26]   --->   Operation 4 'call' 'call_ln26' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 4 [2/2] (1.28ns)   --->   "%call_ln26 = call void @forward_ntt, i32 %a, i32 %roots, i32 %mod_r_read" [ntt_hls_converted.cpp:26]   --->   Operation 4 'call' 'call_ln26' <Predicate = true> <Delay = 1.28> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%spectopmodule_ln14 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [ntt_hls_converted.cpp:14]   --->   Operation 5 'spectopmodule' 'spectopmodule_ln14' <Predicate = true> <Delay = 0.00>
@@ -98,9 +98,10 @@ ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln27 = ret" [ntt_hls_converted
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 1.000ns
+ <State 1>: 2.289ns
 The critical path consists of the following:
 	s_axi read operation ('mod_r_read', ntt_hls_converted.cpp:16) on port 'mod_r' (ntt_hls_converted.cpp:16) [13]  (1.000 ns)
+	'call' operation 0 bit ('call_ln26', ntt_hls_converted.cpp:26) to 'forward_ntt' [14]  (1.289 ns)
 
  <State 2>: 0.000ns
 The critical path consists of the following:

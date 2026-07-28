@@ -31,7 +31,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 10 \
+			id 1301 \
 			corename ntt_forward_converted_control_axilite \
 			name ntt_forward_converted_control_s_axi \
 			ports {$port_control} \

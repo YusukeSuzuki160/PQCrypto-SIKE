@@ -38,57 +38,93 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_73_1:  '
-    FileOffset:      73
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
-        Offset:          1009996
+        Offset:          1010866
         Length:          0
-        ReplacementText: 'VITIS_LOOP_73_1: '
+        ReplacementText: 'VITIS_LOOP_117_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_75_2:  '
-    FileOffset:      75
+    Message:         'Added loop label VITIS_LOOP_127_2:  '
+    FileOffset:      127
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
-        Offset:          1010085
+        Offset:          1011085
         Length:          0
-        ReplacementText: 'VITIS_LOOP_75_2: '
+        ReplacementText: 'VITIS_LOOP_127_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_77_3:  '
-    FileOffset:      77
+    Message:         'Added loop label VITIS_LOOP_129_3:  '
+    FileOffset:      129
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
-        Offset:          1010175
+        Offset:          1011174
         Length:          0
-        ReplacementText: 'VITIS_LOOP_77_3: '
+        ReplacementText: 'VITIS_LOOP_129_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_90_1:  '
-    FileOffset:      90
+    Message:         'Added loop label VITIS_LOOP_131_4:  '
+    FileOffset:      131
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
-        Offset:          1010494
+        Offset:          1011264
         Length:          0
-        ReplacementText: 'VITIS_LOOP_90_1: '
+        ReplacementText: 'VITIS_LOOP_131_4: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_92_2:  '
-    FileOffset:      92
+    Message:         'Added loop label VITIS_LOOP_145_5:  '
+    FileOffset:      145
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
-        Offset:          1010589
+        Offset:          1011556
         Length:          0
-        ReplacementText: 'VITIS_LOOP_92_2: '
+        ReplacementText: 'VITIS_LOOP_145_5: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_94_3:  '
-    FileOffset:      94
+    Message:         'Added loop label VITIS_LOOP_162_1:  '
+    FileOffset:      162
     FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
     Replacements:    
       - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
-        Offset:          1010691
+        Offset:          1012000
         Length:          0
-        ReplacementText: 'VITIS_LOOP_94_3: '
+        ReplacementText: 'VITIS_LOOP_162_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_171_2:  '
+    FileOffset:      171
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
+        Offset:          1012218
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_171_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_173_3:  '
+    FileOffset:      173
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
+        Offset:          1012313
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_173_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_4:  '
+    FileOffset:      175
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
+        Offset:          1012415
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_184_5:  '
+    FileOffset:      184
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/ntt_ops_hls.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/ntt_converter/hls_comparison/proj_ntt_converted/solution1/.autopilot/db/ntt_hls_converted.pp.0.cpp
+        Offset:          1012714
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_184_5: '
 ...

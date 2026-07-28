@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'ntt_forward_converted'
 ================================================================
 + General Information: 
-    * Date:           Thu Jun 25 14:31:35 2026
+    * Date:           Fri Jun 26 11:38:51 2026
     * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
     * Project:        proj_ntt_converted
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -15,17 +15,21 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------------------------------------+------+------+----------+-----------+----------+----------+------+----------+------+---------+------------+------------+-----+
-    |                   Modules                  | Issue|      | Latency  |  Latency  | Iteration|          | Trip |          |      |         |            |            |     |
-    |                   & Loops                  | Type | Slack| (cycles) |    (ns)   |  Latency | Interval | Count| Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
-    +--------------------------------------------+------+------+----------+-----------+----------+----------+------+----------+------+---------+------------+------------+-----+
-    |+ ntt_forward_converted                     |     -|  1.66|  18543634|  1.854e+08|         -|  18543635|     -|        no|     -|  4 (~0%)|  9052 (~0%)|  7545 (~0%)|    -|
-    | + forward_ntt                              |     -|  1.66|  18543633|  1.854e+08|         -|  18543633|     -|        no|     -|  4 (~0%)|  8943 (~0%)|  7427 (~0%)|    -|
-    |  o VITIS_LOOP_73_1                         |     -|  7.30|  18543632|  1.854e+08|   2317954|         -|     8|        no|     -|        -|           -|           -|    -|
-    |   o VITIS_LOOP_75_2                        |     -|  7.30|   2317952|  2.318e+07|     18109|         -|   128|        no|     -|        -|           -|           -|    -|
-    |    + forward_ntt_Pipeline_VITIS_LOOP_77_3  |     -|  1.66|     18107|  1.811e+05|         -|     18107|     -|        no|     -|  4 (~0%)|  8875 (~0%)|  7357 (~0%)|    -|
-    |     o VITIS_LOOP_77_3                      |    II|  7.30|     18105|  1.810e+05|        71|        71|   255|       yes|     -|        -|           -|           -|    -|
-    +--------------------------------------------+------+------+----------+-----------+----------+----------+------+----------+------+---------+------------+------------+-----+
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-------------+-------------+-----+
+    |                   Modules                   | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |          |             |             |     |
+    |                   & Loops                   | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |      FF     |     LUT     | URAM|
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-------------+-------------+-----+
+    |+ ntt_forward_converted                      |     -|  1.18|   138842|  1.388e+06|         -|   138843|     -|        no|     -|  27 (~0%)|  18650 (~0%)|   17130 (1%)|    -|
+    | + forward_ntt                               |     -|  1.18|   138841|  1.388e+06|         -|   138841|     -|        no|     -|  27 (~0%)|  18541 (~0%)|   17012 (1%)|    -|
+    |  + forward_ntt_Pipeline_VITIS_LOOP_117_1    |     -|  5.72|      258|  2.580e+03|         -|      258|     -|        no|     -|         -|   8180 (~0%)|   2375 (~0%)|    -|
+    |   o VITIS_LOOP_117_1                        |     -|  7.30|      256|  2.560e+03|         2|        1|   256|       yes|     -|         -|            -|            -|    -|
+    |  + forward_ntt_Pipeline_VITIS_LOOP_145_5    |     -|  4.65|      258|  2.580e+03|         -|      258|     -|        no|     -|         -|     11 (~0%)|   1431 (~0%)|    -|
+    |   o VITIS_LOOP_145_5                        |     -|  7.30|      256|  2.560e+03|         1|        1|   256|       yes|     -|         -|            -|            -|    -|
+    |  o VITIS_LOOP_127_2                         |     -|  7.30|   138256|  1.383e+06|     17282|        -|     8|        no|     -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_129_3                        |     -|  7.30|    17280|  1.728e+05|       135|        -|   128|        no|     -|         -|            -|            -|    -|
+    |    + forward_ntt_Pipeline_VITIS_LOOP_131_4  |     -|  1.23|      133|  1.330e+03|         -|      133|     -|        no|     -|  27 (~0%)|   1185 (~0%)|  10021 (~0%)|    -|
+    |     o VITIS_LOOP_131_4                      |     -|  7.30|      131|  1.310e+03|         5|        1|   128|       yes|     -|         -|            -|            -|    -|
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-------------+-------------+-----+
 
 
 ================================================================
@@ -54,7 +58,6 @@
 | Interface   | Data Width | Address Width |
 +-------------+------------+---------------+
 | a_PORTA     | 32         | 32            |
-| a_PORTB     | 32         | 32            |
 | roots_PORTA | 32         | 32            |
 +-------------+------------+---------------+
 
@@ -86,7 +89,6 @@
 | Argument | HW Interface  | HW Type   | HW Info                         |
 +----------+---------------+-----------+---------------------------------+
 | a        | a_PORTA       | interface |                                 |
-| a        | a_PORTB       | interface |                                 |
 | roots    | roots_PORTA   | interface |                                 |
 | mod      | s_axi_control | register  | name=mod_r offset=0x10 range=32 |
 +----------+---------------+-----------+---------------------------------+
@@ -101,29 +103,53 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+------------------------------------------+-----+--------+------------+--------+----------+---------+
-| Name                                     | DSP | Pragma | Variable   | Op     | Impl     | Latency |
-+------------------------------------------+-----+--------+------------+--------+----------+---------+
-| + ntt_forward_converted                  | 4   |        |            |        |          |         |
-|  + forward_ntt                           | 4   |        |            |        |          |         |
-|    icmp_ln75_fu_125_p2                   |     |        | icmp_ln75  | seteq  | auto     | 0       |
-|    i_1_fu_136_p2                         |     |        | i_1        | add    | fabric   | 0       |
-|   + forward_ntt_Pipeline_VITIS_LOOP_77_3 | 4   |        |            |        |          |         |
-|     icmp_ln77_fu_132_p2                  |     |        | icmp_ln77  | seteq  | auto     | 0       |
-|     add_ln77_fu_138_p2                   |     |        | add_ln77   | add    | fabric   | 0       |
-|     add_ln79_fu_149_p2                   |     |        | add_ln79   | add    | fabric   | 0       |
-|     add_ln79_1_fu_160_p2                 |     |        | add_ln79_1 | add    | fabric   | 0       |
-|     mul_32s_32s_64_1_1_U1                | 4   |        | tmp        | mul    | auto     | 0       |
-|     srem_64ns_32s_32_68_1_U2             |     |        | srem_ln40  | srem   | auto     | 67      |
-|     r_fu_195_p2                          |     |        | r          | sub    | fabric   | 0       |
-|     add_ln31_fu_208_p2                   |     |        | add_ln31   | add    | fabric   | 0       |
-|     r_1_fu_213_p3                        |     |        | r_1        | select | auto_sel | 0       |
-|     r_2_fu_222_p2                        |     |        | r_2        | add    | fabric   | 0       |
-|     icmp_ln22_fu_227_p2                  |     |        | icmp_ln22  | setlt  | auto     | 0       |
-|     xor_ln22_fu_232_p2                   |     |        | xor_ln22   | xor    | auto     | 0       |
-|     r_3_fu_238_p2                        |     |        | r_3        | sub    | fabric   | 0       |
-|     r_4_fu_243_p3                        |     |        | r_4        | select | auto_sel | 0       |
-+------------------------------------------+-----+--------+------------+--------+----------+---------+
++-------------------------------------------+-----+--------+-------------+-----------+--------------------------+---------+
+| Name                                      | DSP | Pragma | Variable    | Op        | Impl                     | Latency |
++-------------------------------------------+-----+--------+-------------+-----------+--------------------------+---------+
+| + ntt_forward_converted                   | 27  |        |             |           |                          |         |
+|  + forward_ntt                            | 27  |        |             |           |                          |         |
+|    udiv_64s_64s_64_68_seq_1_U1298         |     |        | mu          | udiv      | auto_seq                 | 67      |
+|    icmp_ln129_fu_5266_p2                  |     |        | icmp_ln129  | seteq     | auto                     | 0       |
+|    i_fu_5272_p2                           |     |        | i           | add       | fabric                   | 0       |
+|   + forward_ntt_Pipeline_VITIS_LOOP_117_1 | 0   |        |             |           |                          |         |
+|     icmp_ln117_fu_5949_p2                 |     |        | icmp_ln117  | seteq     | auto                     | 0       |
+|     add_ln117_fu_5955_p2                  |     |        | add_ln117   | add       | fabric                   | 0       |
+|   + forward_ntt_Pipeline_VITIS_LOOP_145_5 | 0   |        |             |           |                          |         |
+|     icmp_ln145_fu_2623_p2                 |     |        | icmp_ln145  | seteq     | auto                     | 0       |
+|     add_ln145_fu_2629_p2                  |     |        | add_ln145   | add       | fabric                   | 0       |
+|     sparsemux_513_8_32_1_1_U1041          |     |        | tmp         | sparsemux | compactencoding_dontcare | 0       |
+|   + forward_ntt_Pipeline_VITIS_LOOP_131_4 | 27  |        |             |           |                          |         |
+|     icmp_ln131_fu_6528_p2                 |     |        | icmp_ln131  | seteq     | auto                     | 0       |
+|     add_ln131_fu_6534_p2                  |     |        | add_ln131   | add       | fabric                   | 0       |
+|     add_ln139_fu_6544_p2                  |     |        | add_ln139   | add       | fabric                   | 0       |
+|     add_ln139_1_fu_6554_p2                |     |        | add_ln139_1 | add       | fabric                   | 0       |
+|     sparsemux_511_8_32_1_1_U515           |     |        | w_assign    | sparsemux | compactencoding_dontcare | 0       |
+|     sparsemux_513_8_32_1_1_U516           |     |        | a_assign    | sparsemux | compactencoding_dontcare | 0       |
+|     mul_32s_32s_64_1_1_U512               | 4   |        | x           | mul       | auto                     | 0       |
+|     mul_64ns_64ns_127_1_1_U513            | 16  |        | xm          | mul       | auto                     | 0       |
+|     mul_64s_32s_64_1_1_U514               | 7   |        | mul_ln64    | mul       | auto                     | 0       |
+|     r_fu_9685_p2                          |     |        | r           | sub       | fabric                   | 0       |
+|     icmp_ln66_fu_9690_p2                  |     |        | icmp_ln66   | setlt     | auto                     | 0       |
+|     xor_ln66_fu_9694_p2                   |     |        | xor_ln66    | xor       | auto                     | 0       |
+|     sub_ln66_fu_9700_p2                   |     |        | sub_ln66    | sub       | fabric                   | 0       |
+|     r_1_fu_9704_p3                        |     |        | r_1         | select    | auto_sel                 | 0       |
+|     icmp_ln67_fu_9711_p2                  |     |        | icmp_ln67   | setlt     | auto                     | 0       |
+|     xor_ln67_fu_9716_p2                   |     |        | xor_ln67    | xor       | auto                     | 0       |
+|     sub_ln67_fu_9726_p2                   |     |        | sub_ln67    | sub       | fabric                   | 0       |
+|     t_fu_9731_p3                          |     |        | t           | select    | auto_sel                 | 0       |
+|     sparsemux_513_8_32_1_1_U517           |     |        | a_assign_1  | sparsemux | compactencoding_dontcare | 0       |
+|     r_2_fu_9739_p2                        |     |        | r_2         | sub       | fabric                   | 0       |
+|     select_ln39_fu_9752_p3                |     |        | select_ln39 | select    | auto_sel                 | 0       |
+|     and_ln40_fu_9760_p2                   |     |        | and_ln40    | and       | auto                     | 0       |
+|     buf_256_fu_9765_p2                    |     |        | buf_256     | add       | fabric                   | 0       |
+|     sparsemux_513_8_32_1_1_U518           |     |        | a_assign_2  | sparsemux | compactencoding_dontcare | 0       |
+|     r_4_fu_11058_p2                       |     |        | r_4         | add       | fabric                   | 0       |
+|     icmp_ln29_fu_11063_p2                 |     |        | icmp_ln29   | setlt     | auto                     | 0       |
+|     mask_2_fu_11068_p2                    |     |        | mask_2      | xor       | auto                     | 0       |
+|     select_ln29_fu_11074_p3               |     |        | select_ln29 | select    | auto_sel                 | 0       |
+|     and_ln30_fu_11082_p2                  |     |        | and_ln30    | and       | auto                     | 0       |
+|     buf_257_fu_11087_p2                   |     |        | buf_257     | sub       | fabric                   | 0       |
++-------------------------------------------+-----+--------+-------------+-----------+--------------------------+---------+
 
 
 ================================================================
@@ -142,26 +168,44 @@
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+----------------+-----------------------+-----------------------------------------------------------+
-| Type           | Options               | Location                                                  |
-+----------------+-----------------------+-----------------------------------------------------------+
-| inline         |                       | ./ntt_ops_hls.hpp:20 in addmod32                          |
-| inline         |                       | ./ntt_ops_hls.hpp:29 in submod32                          |
-| inline         |                       | ./ntt_ops_hls.hpp:38 in mulmod32                          |
-| inline         |                       | ./ntt_ops_hls.hpp:46 in butterfly_ct_hls                  |
-| inline         |                       | ./ntt_ops_hls.hpp:55 in butterfly_gs_hls                  |
-| inline         | off                   | ./ntt_ops_hls.hpp:72 in forward_ntt                       |
-| loop_tripcount | min=1 max=LOG2N       | ./ntt_ops_hls.hpp:74 in forward_ntt                       |
-| loop_tripcount | min=1 max=MAX_N/2     | ./ntt_ops_hls.hpp:76 in forward_ntt                       |
-| pipeline       | II=1                  | ./ntt_ops_hls.hpp:78 in forward_ntt                       |
-| inline         | off                   | ./ntt_ops_hls.hpp:89 in inverse_ntt                       |
-| loop_tripcount | min=1 max=LOG2N       | ./ntt_ops_hls.hpp:91 in inverse_ntt                       |
-| loop_tripcount | min=1 max=MAX_N/2     | ./ntt_ops_hls.hpp:93 in inverse_ntt                       |
-| pipeline       | II=1                  | ./ntt_ops_hls.hpp:95 in inverse_ntt                       |
-| interface      | bram port=a           | ntt_hls_converted.cpp:18 in ntt_forward_converted, a      |
-| interface      | bram port=roots       | ntt_hls_converted.cpp:19 in ntt_forward_converted, roots  |
-| interface      | s_axilite port=mod    | ntt_hls_converted.cpp:20 in ntt_forward_converted, mod    |
-| interface      | s_axilite port=return | ntt_hls_converted.cpp:21 in ntt_forward_converted, return |
-+----------------+-----------------------+-----------------------------------------------------------+
++-----------------+-----------------------------------------+-----------------------------------------------------------+
+| Type            | Options                                 | Location                                                  |
++-----------------+-----------------------------------------+-----------------------------------------------------------+
+| inline          |                                         | ./ntt_ops_hls.hpp:27 in addmod32                          |
+| inline          |                                         | ./ntt_ops_hls.hpp:37 in submod32                          |
+| inline          |                                         | ./ntt_ops_hls.hpp:48 in barrett_mu                        |
+| inline          |                                         | ./ntt_ops_hls.hpp:60 in mulmod32                          |
+| inline          |                                         | ./ntt_ops_hls.hpp:74 in mulmod32                          |
+| inline          |                                         | ./ntt_ops_hls.hpp:82 in butterfly_ct_hls                  |
+| inline          |                                         | ./ntt_ops_hls.hpp:92 in butterfly_gs_hls                  |
+| inline          | off                                     | ./ntt_ops_hls.hpp:109 in forward_ntt                      |
+| array_partition | variable=buf complete dim=1             | ./ntt_ops_hls.hpp:113 in forward_ntt, buf                 |
+| array_partition | variable=rt complete dim=1              | ./ntt_ops_hls.hpp:114 in forward_ntt, rt                  |
+| loop_tripcount  | min=1 max=MAX_N                         | ./ntt_ops_hls.hpp:118 in forward_ntt                      |
+| pipeline        | II=1                                    | ./ntt_ops_hls.hpp:119 in forward_ntt                      |
+| loop_tripcount  | min=1 max=LOG2N                         | ./ntt_ops_hls.hpp:128 in forward_ntt                      |
+| loop_tripcount  | min=1 max=MAX_N/2                       | ./ntt_ops_hls.hpp:130 in forward_ntt                      |
+| loop_tripcount  | min=1 max=MAX_N/2                       | ./ntt_ops_hls.hpp:132 in forward_ntt                      |
+| pipeline        | II=1                                    | ./ntt_ops_hls.hpp:133 in forward_ntt                      |
+| dependence      | variable=buf type=inter dependent=false | ./ntt_ops_hls.hpp:138 in forward_ntt, buf                 |
+| loop_tripcount  | min=1 max=MAX_N                         | ./ntt_ops_hls.hpp:146 in forward_ntt                      |
+| pipeline        | II=1                                    | ./ntt_ops_hls.hpp:147 in forward_ntt                      |
+| inline          | off                                     | ./ntt_ops_hls.hpp:156 in inverse_ntt                      |
+| array_partition | variable=buf complete dim=1             | ./ntt_ops_hls.hpp:159 in inverse_ntt, buf                 |
+| array_partition | variable=rt complete dim=1              | ./ntt_ops_hls.hpp:160 in inverse_ntt, rt                  |
+| loop_tripcount  | min=1 max=MAX_N                         | ./ntt_ops_hls.hpp:163 in inverse_ntt                      |
+| pipeline        | II=1                                    | ./ntt_ops_hls.hpp:164 in inverse_ntt                      |
+| loop_tripcount  | min=1 max=LOG2N                         | ./ntt_ops_hls.hpp:172 in inverse_ntt                      |
+| loop_tripcount  | min=1 max=MAX_N/2                       | ./ntt_ops_hls.hpp:174 in inverse_ntt                      |
+| loop_tripcount  | min=1 max=MAX_N/2                       | ./ntt_ops_hls.hpp:176 in inverse_ntt                      |
+| pipeline        | II=1                                    | ./ntt_ops_hls.hpp:177 in inverse_ntt                      |
+| dependence      | variable=buf type=inter dependent=false | ./ntt_ops_hls.hpp:178 in inverse_ntt, buf                 |
+| loop_tripcount  | min=1 max=MAX_N                         | ./ntt_ops_hls.hpp:185 in inverse_ntt                      |
+| pipeline        | II=1                                    | ./ntt_ops_hls.hpp:186 in inverse_ntt                      |
+| interface       | bram port=a                             | ntt_hls_converted.cpp:18 in ntt_forward_converted, a      |
+| interface       | bram port=roots                         | ntt_hls_converted.cpp:19 in ntt_forward_converted, roots  |
+| interface       | s_axilite port=mod                      | ntt_hls_converted.cpp:20 in ntt_forward_converted, mod    |
+| interface       | s_axilite port=return                   | ntt_hls_converted.cpp:21 in ntt_forward_converted, return |
++-----------------+-----------------------------------------+-----------------------------------------------------------+
 
 

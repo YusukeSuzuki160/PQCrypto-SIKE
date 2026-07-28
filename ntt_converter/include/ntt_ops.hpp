@@ -46,7 +46,7 @@ inline T submod(T a, T b, T m)
     return diff + (m & mask);
 }
 
-// a * b (mod m) — ソフトウェア参照実装
+// a * b (mod m) — ソフトウェア参照実装（単発呼び出し用）
 // HLS では DSP ブロックを利用するため ap_uint<W*2> を使う
 template <typename T>
 inline T mulmod(T a, T b, T m)
@@ -55,6 +55,34 @@ inline T mulmod(T a, T b, T m)
     using Wide = typename std::conditional<sizeof(T) <= 4,
                                            uint64_t, __uint128_t>::type;
     return static_cast<T>(static_cast<Wide>(a) * static_cast<Wide>(b) % static_cast<Wide>(m));
+}
+
+// ---- Barrett リダクション用の事前計算定数 ----
+// mu = floor(2^63 / m)。m はループ不変なので NTT 1 回につき 1 度だけ計算する。
+// 32 ビット幅 (sizeof(T) <= 4) 向け。0 <= a,b < m < 2^31 を仮定。
+template <typename T>
+inline uint64_t barrett_mu(T m)
+{
+#pragma HLS INLINE
+    return (static_cast<uint64_t>(1) << 63) / static_cast<uint64_t>(m);
+}
+
+// a * b (mod m) を Barrett リダクションで計算する（除算器 `%`/srem を使わない）。
+//   q = floor(x*mu / 2^63) ≈ x/m、r = x - q*m を最大 2 回の条件付き減算で確定。
+// 乗算・シフト・加算のみで構成されるため II=1 でパイプライン化できる。
+template <typename T>
+inline T mulmod_barrett(T a, T b, T m, uint64_t mu)
+{
+#pragma HLS INLINE
+    uint64_t    x  = static_cast<uint64_t>(static_cast<int64_t>(a))
+                   * static_cast<uint64_t>(static_cast<int64_t>(b)); // 0 <= x < 2^62
+    __uint128_t xm = static_cast<__uint128_t>(x) * static_cast<__uint128_t>(mu);
+    uint64_t    q  = static_cast<uint64_t>(xm >> 63);
+    uint64_t    mm = static_cast<uint64_t>(m);
+    uint64_t    r  = x - q * mm;
+    if (r >= mm) r -= mm;   // 補正1
+    if (r >= mm) r -= mm;   // 補正2（安全側）
+    return static_cast<T>(r);
 }
 
 // ===================== NTTバタフライ =====================
@@ -99,16 +127,49 @@ struct NTTOps
         // 長さチェック
         if (n == 0 || (n & (n - 1)) != 0) return; // n must be power of 2
 
+        // ローカル作業バッファを完全分割し、1 サイクルで任意の 2 要素を read/write 可能にする
+        // （BRAM の 2 ポート制約を外し II=1 を達成する）
+        T buf[MAX_N];
+        T rt[MAX_N];
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+#pragma HLS ARRAY_PARTITION variable=rt complete dim=1
+
+        for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
+#pragma HLS PIPELINE II=1
+            buf[i] = a[i];
+            rt[i]  = roots[i];
+        }
+
+        // Barrett 定数を内側ループの外で 1 度だけ計算（32 ビット幅のみ有効）
+        const uint64_t mu = (sizeof(T) <= 4) ? barrett_mu(mod) : 0;
+
         for (unsigned len = 1; len < n; len <<= 1) {
 #pragma HLS LOOP_TRIPCOUNT min=1 max=LOG2N
             for (unsigned i = 0; i < n; i += 2 * len) {
 #pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
                 for (unsigned j = 0; j < len; j++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
 #pragma HLS PIPELINE II=1
-                    T w = roots[j]; // ω^j at current stage
-                    butterfly_ct(a[i + j], a[i + j + len], w, mod);
+                    // 内側ループ内の各 j は互いに素なインデックスにアクセスするため
+                    // 反復間依存は偽。宣言することで Barrett 経路を多段化でき高 Fmax を保つ。
+#pragma HLS DEPENDENCE variable=buf type=inter dependent=false
+                    T &u = buf[i + j];
+                    T &v = buf[i + j + len];
+                    T  w = rt[j]; // ω^j at current stage
+                    // CT バタフライ: t = v*w; v = u - t; u = u + t
+                    T t = (sizeof(T) <= 4) ? mulmod_barrett(v, w, mod, mu)
+                                           : mulmod(v, w, mod);
+                    v = submod(u, t, mod);
+                    u = addmod(u, t, mod);
                 }
             }
+        }
+
+        for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
+#pragma HLS PIPELINE II=1
+            a[i] = buf[i];
         }
     }
 
@@ -132,16 +193,45 @@ struct NTTOps
 #pragma HLS INLINE off
         if (n == 0 || (n & (n - 1)) != 0) return;
 
+        T buf[MAX_N];
+        T rt[MAX_N];
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+#pragma HLS ARRAY_PARTITION variable=rt complete dim=1
+
+        for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
+#pragma HLS PIPELINE II=1
+            buf[i] = a[i];
+            rt[i]  = roots[i];
+        }
+
+        const uint64_t mu = (sizeof(T) <= 4) ? barrett_mu(mod) : 0;
+
         for (unsigned len = n >> 1; len >= 1; len >>= 1) {
 #pragma HLS LOOP_TRIPCOUNT min=1 max=LOG2N
             for (unsigned start = 0; start < n; start += 2 * len) {
 #pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
                 for (unsigned j = start; j < start + len; j++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
 #pragma HLS PIPELINE II=1
-                    T w = roots[j - start];
-                    butterfly_gs(a[j], a[j + len], w, mod);
+#pragma HLS DEPENDENCE variable=buf type=inter dependent=false
+                    T &u = buf[j];
+                    T &v = buf[j + len];
+                    T  w = rt[j - start];
+                    // GS バタフライ: t = u; u = u + v; v = (u - v) * w
+                    T t = u;
+                    u = addmod(t, v, mod);
+                    T d = submod(t, v, mod);
+                    v = (sizeof(T) <= 4) ? mulmod_barrett(d, w, mod, mu)
+                                         : mulmod(d, w, mod);
                 }
             }
+        }
+
+        for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
+#pragma HLS PIPELINE II=1
+            a[i] = buf[i];
         }
 
         // スケーリング: 各要素を n^{-1} (mod mod) で掛ける

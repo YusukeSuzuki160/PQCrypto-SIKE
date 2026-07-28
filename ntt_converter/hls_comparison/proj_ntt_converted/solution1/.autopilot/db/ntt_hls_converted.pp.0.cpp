@@ -8545,18 +8545,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 }
 # 10 "ntt_hls_converted.cpp" 2
 # 1 "./ntt_ops_hls.hpp" 1
-
-
-
-
-
-
-
+# 14 "./ntt_ops_hls.hpp"
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
-# 9 "./ntt_ops_hls.hpp" 2
+# 15 "./ntt_ops_hls.hpp" 2
 # 1 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 1 3
 # 40 "/home2/meltpoint/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/climits" 3
-# 10 "./ntt_ops_hls.hpp" 2
+# 16 "./ntt_ops_hls.hpp" 2
 
 
 
@@ -8565,47 +8559,78 @@ namespace ntt {
 
 
 
+
 static inline int32_t addmod32(int32_t a, int32_t b, int32_t m)
 {
 #pragma HLS INLINE
  int32_t r = a + b;
-    if (r >= m) r -= m;
-    return r;
+    int32_t mask = -(int32_t)(r >= m);
+    return r - (m & mask);
 }
+
 
 
 static inline int32_t submod32(int32_t a, int32_t b, int32_t m)
 {
 #pragma HLS INLINE
  int32_t r = a - b;
-    if (r < 0) r += m;
-    return r;
+    int32_t mask = -(int32_t)(r < 0);
+    return r + (m & mask);
+}
+
+
+
+
+static inline ap_uint<64> barrett_mu(int32_t m)
+{
+#pragma HLS INLINE
+ ap_uint<64> num = (ap_uint<64>)1 << 63;
+    return num / (ap_uint<64>)m;
+}
+
+
+
+
+
+
+static inline int32_t mulmod32(int32_t a, int32_t b, int32_t m, ap_uint<64> mu)
+{
+#pragma HLS INLINE
+ ap_uint<64> x = (ap_uint<64>)a * (ap_uint<64>)b;
+    ap_uint<128> xm = (ap_uint<128>)x * (ap_uint<128>)mu;
+    ap_uint<64> q = (ap_uint<64>)(xm >> 63);
+    ap_uint<64> r = x - q * (ap_uint<64>)m;
+    ap_uint<64> mm = (ap_uint<64>)m;
+    if (r >= mm) r -= mm;
+    if (r >= mm) r -= mm;
+    return (int32_t)r;
 }
 
 
 static inline int32_t mulmod32(int32_t a, int32_t b, int32_t m)
 {
 #pragma HLS INLINE
- ap_int<64> tmp = (ap_int<64>)a * (ap_int<64>)b;
-    return (int32_t)(tmp % (ap_int<64>)m);
+ return mulmod32(a, b, m, barrett_mu(m));
 }
 
 
-static inline void butterfly_ct_hls(int32_t &u, int32_t &v, int32_t w, int32_t mod)
+static inline void butterfly_ct_hls(int32_t &u, int32_t &v, int32_t w,
+                                     int32_t mod, ap_uint<64> mu)
 {
 #pragma HLS INLINE
- int32_t t = mulmod32(v, w, mod);
+ int32_t t = mulmod32(v, w, mod, mu);
     v = submod32(u, t, mod);
     u = addmod32(u, t, mod);
 }
 
 
-static inline void butterfly_gs_hls(int32_t &u, int32_t &v, int32_t w, int32_t mod)
+static inline void butterfly_gs_hls(int32_t &u, int32_t &v, int32_t w,
+                                     int32_t mod, ap_uint<64> mu)
 {
 #pragma HLS INLINE
  int32_t t = u;
     u = addmod32(t, v, mod);
-    v = mulmod32(submod32(t, v, mod), w, mod);
+    v = mulmod32(submod32(t, v, mod), w, mod, mu);
 }
 
 
@@ -8620,15 +8645,45 @@ struct NTTOps
                              const int32_t *roots, int32_t mod)
     {
 #pragma HLS INLINE off
- VITIS_LOOP_73_1: for (unsigned len = 1; len < n; len <<= 1) {
-#pragma HLS LOOP_TRIPCOUNT min=1 max=LOG2N
- VITIS_LOOP_75_2: for (unsigned i = 0; i < n; i += 2 * len) {
-#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
- VITIS_LOOP_77_3: for (unsigned j = 0; j < len; j++) {
+
+ int32_t buf[MAX_N];
+        int32_t rt[MAX_N];
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+#pragma HLS ARRAY_PARTITION variable=rt complete dim=1
+
+
+ VITIS_LOOP_117_1: for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
 #pragma HLS PIPELINE II=1
- butterfly_ct_hls(a[i + j], a[i + j + len], roots[j], mod);
+ buf[i] = a[i];
+            rt[i] = roots[i];
+        }
+
+
+        const ap_uint<64> mu = barrett_mu(mod);
+
+        VITIS_LOOP_127_2: for (unsigned len = 1; len < n; len <<= 1) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=LOG2N
+ VITIS_LOOP_129_3: for (unsigned i = 0; i < n; i += 2 * len) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
+ VITIS_LOOP_131_4: for (unsigned j = 0; j < len; j++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
+#pragma HLS PIPELINE II=1
+
+
+
+
+#pragma HLS DEPENDENCE variable=buf type=inter dependent=false
+ butterfly_ct_hls(buf[i + j], buf[i + j + len], rt[j], mod, mu);
                 }
             }
+        }
+
+
+        VITIS_LOOP_145_5: for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
+#pragma HLS PIPELINE II=1
+ a[i] = buf[i];
         }
     }
 
@@ -8637,15 +8692,37 @@ struct NTTOps
                              const int32_t *roots, int32_t mod)
     {
 #pragma HLS INLINE off
- VITIS_LOOP_90_1: for (unsigned len = n >> 1; len >= 1; len >>= 1) {
-#pragma HLS LOOP_TRIPCOUNT min=1 max=LOG2N
- VITIS_LOOP_92_2: for (unsigned start = 0; start < n; start += 2 * len) {
-#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
- VITIS_LOOP_94_3: for (unsigned j = start; j < start + len; j++) {
+ int32_t buf[MAX_N];
+        int32_t rt[MAX_N];
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+#pragma HLS ARRAY_PARTITION variable=rt complete dim=1
+
+ VITIS_LOOP_162_1: for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
 #pragma HLS PIPELINE II=1
- butterfly_gs_hls(a[j], a[j + len], roots[j - start], mod);
+ buf[i] = a[i];
+            rt[i] = roots[i];
+        }
+
+        const ap_uint<64> mu = barrett_mu(mod);
+
+        VITIS_LOOP_171_2: for (unsigned len = n >> 1; len >= 1; len >>= 1) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=LOG2N
+ VITIS_LOOP_173_3: for (unsigned start = 0; start < n; start += 2 * len) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
+ VITIS_LOOP_175_4: for (unsigned j = start; j < start + len; j++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N/2
+#pragma HLS PIPELINE II=1
+#pragma HLS DEPENDENCE variable=buf type=inter dependent=false
+ butterfly_gs_hls(buf[j], buf[j + len], rt[j - start], mod, mu);
                 }
             }
+        }
+
+        VITIS_LOOP_184_5: for (unsigned i = 0; i < n; i++) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_N
+#pragma HLS PIPELINE II=1
+ a[i] = buf[i];
         }
     }
 };

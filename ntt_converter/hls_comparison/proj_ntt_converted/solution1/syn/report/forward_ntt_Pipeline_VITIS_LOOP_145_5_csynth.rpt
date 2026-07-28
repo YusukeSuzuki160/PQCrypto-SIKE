@@ -1,0 +1,404 @@
+
+
+================================================================
+== Vitis HLS Report for 'forward_ntt_Pipeline_VITIS_LOOP_145_5'
+================================================================
+* Date:           Fri Jun 26 11:38:50 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        proj_ntt_converted
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.650 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |      258|      258|  2.580 us|  2.580 us|  257|  257|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_145_5  |      256|      256|         1|          1|          1|   256|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       33|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        0|     1362|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        0|       36|    -|
+|Register             |        -|     -|       11|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       11|     1431|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------+------------------------+---------+----+---+------+-----+
+    |           Instance           |         Module         | BRAM_18K| DSP| FF|  LUT | URAM|
+    +------------------------------+------------------------+---------+----+---+------+-----+
+    |sparsemux_513_8_32_1_1_U1041  |sparsemux_513_8_32_1_1  |        0|   0|  0|  1362|    0|
+    +------------------------------+------------------------+---------+----+---+------+-----+
+    |Total                         |                        |        0|   0|  0|  1362|    0|
+    +------------------------------+------------------------+---------+----+---+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln145_fu_2629_p2   |         +|   0|  0|  16|           9|           1|
+    |icmp_ln145_fu_2623_p2  |      icmp|   0|  0|  17|           9|          10|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  33|          18|          11|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |a_WEN_A_local         |   9|          2|    4|          8|
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1  |   9|          2|    9|         18|
+    |i_fu_1062             |   9|          2|    9|         18|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  36|          8|   23|         46|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_fu_1062    |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        | 11|   0|   11|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+---------------------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++--------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk        |   in|    1|  ap_ctrl_hs|  forward_ntt_Pipeline_VITIS_LOOP_145_5|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  forward_ntt_Pipeline_VITIS_LOOP_145_5|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|  forward_ntt_Pipeline_VITIS_LOOP_145_5|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  forward_ntt_Pipeline_VITIS_LOOP_145_5|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  forward_ntt_Pipeline_VITIS_LOOP_145_5|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  forward_ntt_Pipeline_VITIS_LOOP_145_5|  return value|
+|buf_load      |   in|   32|     ap_none|                               buf_load|        scalar|
+|buf_1_load    |   in|   32|     ap_none|                             buf_1_load|        scalar|
+|buf_2_load    |   in|   32|     ap_none|                             buf_2_load|        scalar|
+|buf_3_load    |   in|   32|     ap_none|                             buf_3_load|        scalar|
+|buf_4_load    |   in|   32|     ap_none|                             buf_4_load|        scalar|
+|buf_5_load    |   in|   32|     ap_none|                             buf_5_load|        scalar|
+|buf_6_load    |   in|   32|     ap_none|                             buf_6_load|        scalar|
+|buf_7_load    |   in|   32|     ap_none|                             buf_7_load|        scalar|
+|buf_8_load    |   in|   32|     ap_none|                             buf_8_load|        scalar|
+|buf_9_load    |   in|   32|     ap_none|                             buf_9_load|        scalar|
+|buf_10_load   |   in|   32|     ap_none|                            buf_10_load|        scalar|
+|buf_11_load   |   in|   32|     ap_none|                            buf_11_load|        scalar|
+|buf_12_load   |   in|   32|     ap_none|                            buf_12_load|        scalar|
+|buf_13_load   |   in|   32|     ap_none|                            buf_13_load|        scalar|
+|buf_14_load   |   in|   32|     ap_none|                            buf_14_load|        scalar|
+|buf_15_load   |   in|   32|     ap_none|                            buf_15_load|        scalar|
+|buf_16_load   |   in|   32|     ap_none|                            buf_16_load|        scalar|
+|buf_17_load   |   in|   32|     ap_none|                            buf_17_load|        scalar|
+|buf_18_load   |   in|   32|     ap_none|                            buf_18_load|        scalar|
+|buf_19_load   |   in|   32|     ap_none|                            buf_19_load|        scalar|
+|buf_20_load   |   in|   32|     ap_none|                            buf_20_load|        scalar|
+|buf_21_load   |   in|   32|     ap_none|                            buf_21_load|        scalar|
+|buf_22_load   |   in|   32|     ap_none|                            buf_22_load|        scalar|
+|buf_23_load   |   in|   32|     ap_none|                            buf_23_load|        scalar|
+|buf_24_load   |   in|   32|     ap_none|                            buf_24_load|        scalar|
+|buf_25_load   |   in|   32|     ap_none|                            buf_25_load|        scalar|
+|buf_26_load   |   in|   32|     ap_none|                            buf_26_load|        scalar|
+|buf_27_load   |   in|   32|     ap_none|                            buf_27_load|        scalar|
+|buf_28_load   |   in|   32|     ap_none|                            buf_28_load|        scalar|
+|buf_29_load   |   in|   32|     ap_none|                            buf_29_load|        scalar|
+|buf_30_load   |   in|   32|     ap_none|                            buf_30_load|        scalar|
+|buf_31_load   |   in|   32|     ap_none|                            buf_31_load|        scalar|
+|buf_32_load   |   in|   32|     ap_none|                            buf_32_load|        scalar|
+|buf_33_load   |   in|   32|     ap_none|                            buf_33_load|        scalar|
+|buf_34_load   |   in|   32|     ap_none|                            buf_34_load|        scalar|
+|buf_35_load   |   in|   32|     ap_none|                            buf_35_load|        scalar|
+|buf_36_load   |   in|   32|     ap_none|                            buf_36_load|        scalar|
+|buf_37_load   |   in|   32|     ap_none|                            buf_37_load|        scalar|
+|buf_38_load   |   in|   32|     ap_none|                            buf_38_load|        scalar|
+|buf_39_load   |   in|   32|     ap_none|                            buf_39_load|        scalar|
+|buf_40_load   |   in|   32|     ap_none|                            buf_40_load|        scalar|
+|buf_41_load   |   in|   32|     ap_none|                            buf_41_load|        scalar|
+|buf_42_load   |   in|   32|     ap_none|                            buf_42_load|        scalar|
+|buf_43_load   |   in|   32|     ap_none|                            buf_43_load|        scalar|
+|buf_44_load   |   in|   32|     ap_none|                            buf_44_load|        scalar|
+|buf_45_load   |   in|   32|     ap_none|                            buf_45_load|        scalar|
+|buf_46_load   |   in|   32|     ap_none|                            buf_46_load|        scalar|
+|buf_47_load   |   in|   32|     ap_none|                            buf_47_load|        scalar|
+|buf_48_load   |   in|   32|     ap_none|                            buf_48_load|        scalar|
+|buf_49_load   |   in|   32|     ap_none|                            buf_49_load|        scalar|
+|buf_50_load   |   in|   32|     ap_none|                            buf_50_load|        scalar|
+|buf_51_load   |   in|   32|     ap_none|                            buf_51_load|        scalar|
+|buf_52_load   |   in|   32|     ap_none|                            buf_52_load|        scalar|
+|buf_53_load   |   in|   32|     ap_none|                            buf_53_load|        scalar|
+|buf_54_load   |   in|   32|     ap_none|                            buf_54_load|        scalar|
+|buf_55_load   |   in|   32|     ap_none|                            buf_55_load|        scalar|
+|buf_56_load   |   in|   32|     ap_none|                            buf_56_load|        scalar|
+|buf_57_load   |   in|   32|     ap_none|                            buf_57_load|        scalar|
+|buf_58_load   |   in|   32|     ap_none|                            buf_58_load|        scalar|
+|buf_59_load   |   in|   32|     ap_none|                            buf_59_load|        scalar|
+|buf_60_load   |   in|   32|     ap_none|                            buf_60_load|        scalar|
+|buf_61_load   |   in|   32|     ap_none|                            buf_61_load|        scalar|
+|buf_62_load   |   in|   32|     ap_none|                            buf_62_load|        scalar|
+|buf_63_load   |   in|   32|     ap_none|                            buf_63_load|        scalar|
+|buf_64_load   |   in|   32|     ap_none|                            buf_64_load|        scalar|
+|buf_65_load   |   in|   32|     ap_none|                            buf_65_load|        scalar|
+|buf_66_load   |   in|   32|     ap_none|                            buf_66_load|        scalar|
+|buf_67_load   |   in|   32|     ap_none|                            buf_67_load|        scalar|
+|buf_68_load   |   in|   32|     ap_none|                            buf_68_load|        scalar|
+|buf_69_load   |   in|   32|     ap_none|                            buf_69_load|        scalar|
+|buf_70_load   |   in|   32|     ap_none|                            buf_70_load|        scalar|
+|buf_71_load   |   in|   32|     ap_none|                            buf_71_load|        scalar|
+|buf_72_load   |   in|   32|     ap_none|                            buf_72_load|        scalar|
+|buf_73_load   |   in|   32|     ap_none|                            buf_73_load|        scalar|
+|buf_74_load   |   in|   32|     ap_none|                            buf_74_load|        scalar|
+|buf_75_load   |   in|   32|     ap_none|                            buf_75_load|        scalar|
+|buf_76_load   |   in|   32|     ap_none|                            buf_76_load|        scalar|
+|buf_77_load   |   in|   32|     ap_none|                            buf_77_load|        scalar|
+|buf_78_load   |   in|   32|     ap_none|                            buf_78_load|        scalar|
+|buf_79_load   |   in|   32|     ap_none|                            buf_79_load|        scalar|
+|buf_80_load   |   in|   32|     ap_none|                            buf_80_load|        scalar|
+|buf_81_load   |   in|   32|     ap_none|                            buf_81_load|        scalar|
+|buf_82_load   |   in|   32|     ap_none|                            buf_82_load|        scalar|
+|buf_83_load   |   in|   32|     ap_none|                            buf_83_load|        scalar|
+|buf_84_load   |   in|   32|     ap_none|                            buf_84_load|        scalar|
+|buf_85_load   |   in|   32|     ap_none|                            buf_85_load|        scalar|
+|buf_86_load   |   in|   32|     ap_none|                            buf_86_load|        scalar|
+|buf_87_load   |   in|   32|     ap_none|                            buf_87_load|        scalar|
+|buf_88_load   |   in|   32|     ap_none|                            buf_88_load|        scalar|
+|buf_89_load   |   in|   32|     ap_none|                            buf_89_load|        scalar|
+|buf_90_load   |   in|   32|     ap_none|                            buf_90_load|        scalar|
+|buf_91_load   |   in|   32|     ap_none|                            buf_91_load|        scalar|
+|buf_92_load   |   in|   32|     ap_none|                            buf_92_load|        scalar|
+|buf_93_load   |   in|   32|     ap_none|                            buf_93_load|        scalar|
+|buf_94_load   |   in|   32|     ap_none|                            buf_94_load|        scalar|
+|buf_95_load   |   in|   32|     ap_none|                            buf_95_load|        scalar|
+|buf_96_load   |   in|   32|     ap_none|                            buf_96_load|        scalar|
+|buf_97_load   |   in|   32|     ap_none|                            buf_97_load|        scalar|
+|buf_98_load   |   in|   32|     ap_none|                            buf_98_load|        scalar|
+|buf_99_load   |   in|   32|     ap_none|                            buf_99_load|        scalar|
+|buf_100_load  |   in|   32|     ap_none|                           buf_100_load|        scalar|
+|buf_101_load  |   in|   32|     ap_none|                           buf_101_load|        scalar|
+|buf_102_load  |   in|   32|     ap_none|                           buf_102_load|        scalar|
+|buf_103_load  |   in|   32|     ap_none|                           buf_103_load|        scalar|
+|buf_104_load  |   in|   32|     ap_none|                           buf_104_load|        scalar|
+|buf_105_load  |   in|   32|     ap_none|                           buf_105_load|        scalar|
+|buf_106_load  |   in|   32|     ap_none|                           buf_106_load|        scalar|
+|buf_107_load  |   in|   32|     ap_none|                           buf_107_load|        scalar|
+|buf_108_load  |   in|   32|     ap_none|                           buf_108_load|        scalar|
+|buf_109_load  |   in|   32|     ap_none|                           buf_109_load|        scalar|
+|buf_110_load  |   in|   32|     ap_none|                           buf_110_load|        scalar|
+|buf_111_load  |   in|   32|     ap_none|                           buf_111_load|        scalar|
+|buf_112_load  |   in|   32|     ap_none|                           buf_112_load|        scalar|
+|buf_113_load  |   in|   32|     ap_none|                           buf_113_load|        scalar|
+|buf_114_load  |   in|   32|     ap_none|                           buf_114_load|        scalar|
+|buf_115_load  |   in|   32|     ap_none|                           buf_115_load|        scalar|
+|buf_116_load  |   in|   32|     ap_none|                           buf_116_load|        scalar|
+|buf_117_load  |   in|   32|     ap_none|                           buf_117_load|        scalar|
+|buf_118_load  |   in|   32|     ap_none|                           buf_118_load|        scalar|
+|buf_119_load  |   in|   32|     ap_none|                           buf_119_load|        scalar|
+|buf_120_load  |   in|   32|     ap_none|                           buf_120_load|        scalar|
+|buf_121_load  |   in|   32|     ap_none|                           buf_121_load|        scalar|
+|buf_122_load  |   in|   32|     ap_none|                           buf_122_load|        scalar|
+|buf_123_load  |   in|   32|     ap_none|                           buf_123_load|        scalar|
+|buf_124_load  |   in|   32|     ap_none|                           buf_124_load|        scalar|
+|buf_125_load  |   in|   32|     ap_none|                           buf_125_load|        scalar|
+|buf_126_load  |   in|   32|     ap_none|                           buf_126_load|        scalar|
+|buf_127_load  |   in|   32|     ap_none|                           buf_127_load|        scalar|
+|buf_128_load  |   in|   32|     ap_none|                           buf_128_load|        scalar|
+|buf_129_load  |   in|   32|     ap_none|                           buf_129_load|        scalar|
+|buf_130_load  |   in|   32|     ap_none|                           buf_130_load|        scalar|
+|buf_131_load  |   in|   32|     ap_none|                           buf_131_load|        scalar|
+|buf_132_load  |   in|   32|     ap_none|                           buf_132_load|        scalar|
+|buf_133_load  |   in|   32|     ap_none|                           buf_133_load|        scalar|
+|buf_134_load  |   in|   32|     ap_none|                           buf_134_load|        scalar|
+|buf_135_load  |   in|   32|     ap_none|                           buf_135_load|        scalar|
+|buf_136_load  |   in|   32|     ap_none|                           buf_136_load|        scalar|
+|buf_137_load  |   in|   32|     ap_none|                           buf_137_load|        scalar|
+|buf_138_load  |   in|   32|     ap_none|                           buf_138_load|        scalar|
+|buf_139_load  |   in|   32|     ap_none|                           buf_139_load|        scalar|
+|buf_140_load  |   in|   32|     ap_none|                           buf_140_load|        scalar|
+|buf_141_load  |   in|   32|     ap_none|                           buf_141_load|        scalar|
+|buf_142_load  |   in|   32|     ap_none|                           buf_142_load|        scalar|
+|buf_143_load  |   in|   32|     ap_none|                           buf_143_load|        scalar|
+|buf_144_load  |   in|   32|     ap_none|                           buf_144_load|        scalar|
+|buf_145_load  |   in|   32|     ap_none|                           buf_145_load|        scalar|
+|buf_146_load  |   in|   32|     ap_none|                           buf_146_load|        scalar|
+|buf_147_load  |   in|   32|     ap_none|                           buf_147_load|        scalar|
+|buf_148_load  |   in|   32|     ap_none|                           buf_148_load|        scalar|
+|buf_149_load  |   in|   32|     ap_none|                           buf_149_load|        scalar|
+|buf_150_load  |   in|   32|     ap_none|                           buf_150_load|        scalar|
+|buf_151_load  |   in|   32|     ap_none|                           buf_151_load|        scalar|
+|buf_152_load  |   in|   32|     ap_none|                           buf_152_load|        scalar|
+|buf_153_load  |   in|   32|     ap_none|                           buf_153_load|        scalar|
+|buf_154_load  |   in|   32|     ap_none|                           buf_154_load|        scalar|
+|buf_155_load  |   in|   32|     ap_none|                           buf_155_load|        scalar|
+|buf_156_load  |   in|   32|     ap_none|                           buf_156_load|        scalar|
+|buf_157_load  |   in|   32|     ap_none|                           buf_157_load|        scalar|
+|buf_158_load  |   in|   32|     ap_none|                           buf_158_load|        scalar|
+|buf_159_load  |   in|   32|     ap_none|                           buf_159_load|        scalar|
+|buf_160_load  |   in|   32|     ap_none|                           buf_160_load|        scalar|
+|buf_161_load  |   in|   32|     ap_none|                           buf_161_load|        scalar|
+|buf_162_load  |   in|   32|     ap_none|                           buf_162_load|        scalar|
+|buf_163_load  |   in|   32|     ap_none|                           buf_163_load|        scalar|
+|buf_164_load  |   in|   32|     ap_none|                           buf_164_load|        scalar|
+|buf_165_load  |   in|   32|     ap_none|                           buf_165_load|        scalar|
+|buf_166_load  |   in|   32|     ap_none|                           buf_166_load|        scalar|
+|buf_167_load  |   in|   32|     ap_none|                           buf_167_load|        scalar|
+|buf_168_load  |   in|   32|     ap_none|                           buf_168_load|        scalar|
+|buf_169_load  |   in|   32|     ap_none|                           buf_169_load|        scalar|
+|buf_170_load  |   in|   32|     ap_none|                           buf_170_load|        scalar|
+|buf_171_load  |   in|   32|     ap_none|                           buf_171_load|        scalar|
+|buf_172_load  |   in|   32|     ap_none|                           buf_172_load|        scalar|
+|buf_173_load  |   in|   32|     ap_none|                           buf_173_load|        scalar|
+|buf_174_load  |   in|   32|     ap_none|                           buf_174_load|        scalar|
+|buf_175_load  |   in|   32|     ap_none|                           buf_175_load|        scalar|
+|buf_176_load  |   in|   32|     ap_none|                           buf_176_load|        scalar|
+|buf_177_load  |   in|   32|     ap_none|                           buf_177_load|        scalar|
+|buf_178_load  |   in|   32|     ap_none|                           buf_178_load|        scalar|
+|buf_179_load  |   in|   32|     ap_none|                           buf_179_load|        scalar|
+|buf_180_load  |   in|   32|     ap_none|                           buf_180_load|        scalar|
+|buf_181_load  |   in|   32|     ap_none|                           buf_181_load|        scalar|
+|buf_182_load  |   in|   32|     ap_none|                           buf_182_load|        scalar|
+|buf_183_load  |   in|   32|     ap_none|                           buf_183_load|        scalar|
+|buf_184_load  |   in|   32|     ap_none|                           buf_184_load|        scalar|
+|buf_185_load  |   in|   32|     ap_none|                           buf_185_load|        scalar|
+|buf_186_load  |   in|   32|     ap_none|                           buf_186_load|        scalar|
+|buf_187_load  |   in|   32|     ap_none|                           buf_187_load|        scalar|
+|buf_188_load  |   in|   32|     ap_none|                           buf_188_load|        scalar|
+|buf_189_load  |   in|   32|     ap_none|                           buf_189_load|        scalar|
+|buf_190_load  |   in|   32|     ap_none|                           buf_190_load|        scalar|
+|buf_191_load  |   in|   32|     ap_none|                           buf_191_load|        scalar|
+|buf_192_load  |   in|   32|     ap_none|                           buf_192_load|        scalar|
+|buf_193_load  |   in|   32|     ap_none|                           buf_193_load|        scalar|
+|buf_194_load  |   in|   32|     ap_none|                           buf_194_load|        scalar|
+|buf_195_load  |   in|   32|     ap_none|                           buf_195_load|        scalar|
+|buf_196_load  |   in|   32|     ap_none|                           buf_196_load|        scalar|
+|buf_197_load  |   in|   32|     ap_none|                           buf_197_load|        scalar|
+|buf_198_load  |   in|   32|     ap_none|                           buf_198_load|        scalar|
+|buf_199_load  |   in|   32|     ap_none|                           buf_199_load|        scalar|
+|buf_200_load  |   in|   32|     ap_none|                           buf_200_load|        scalar|
+|buf_201_load  |   in|   32|     ap_none|                           buf_201_load|        scalar|
+|buf_202_load  |   in|   32|     ap_none|                           buf_202_load|        scalar|
+|buf_203_load  |   in|   32|     ap_none|                           buf_203_load|        scalar|
+|buf_204_load  |   in|   32|     ap_none|                           buf_204_load|        scalar|
+|buf_205_load  |   in|   32|     ap_none|                           buf_205_load|        scalar|
+|buf_206_load  |   in|   32|     ap_none|                           buf_206_load|        scalar|
+|buf_207_load  |   in|   32|     ap_none|                           buf_207_load|        scalar|
+|buf_208_load  |   in|   32|     ap_none|                           buf_208_load|        scalar|
+|buf_209_load  |   in|   32|     ap_none|                           buf_209_load|        scalar|
+|buf_210_load  |   in|   32|     ap_none|                           buf_210_load|        scalar|
+|buf_211_load  |   in|   32|     ap_none|                           buf_211_load|        scalar|
+|buf_212_load  |   in|   32|     ap_none|                           buf_212_load|        scalar|
+|buf_213_load  |   in|   32|     ap_none|                           buf_213_load|        scalar|
+|buf_214_load  |   in|   32|     ap_none|                           buf_214_load|        scalar|
+|buf_215_load  |   in|   32|     ap_none|                           buf_215_load|        scalar|
+|buf_216_load  |   in|   32|     ap_none|                           buf_216_load|        scalar|
+|buf_217_load  |   in|   32|     ap_none|                           buf_217_load|        scalar|
+|buf_218_load  |   in|   32|     ap_none|                           buf_218_load|        scalar|
+|buf_219_load  |   in|   32|     ap_none|                           buf_219_load|        scalar|
+|buf_220_load  |   in|   32|     ap_none|                           buf_220_load|        scalar|
+|buf_221_load  |   in|   32|     ap_none|                           buf_221_load|        scalar|
+|buf_222_load  |   in|   32|     ap_none|                           buf_222_load|        scalar|
+|buf_223_load  |   in|   32|     ap_none|                           buf_223_load|        scalar|
+|buf_224_load  |   in|   32|     ap_none|                           buf_224_load|        scalar|
+|buf_225_load  |   in|   32|     ap_none|                           buf_225_load|        scalar|
+|buf_226_load  |   in|   32|     ap_none|                           buf_226_load|        scalar|
+|buf_227_load  |   in|   32|     ap_none|                           buf_227_load|        scalar|
+|buf_228_load  |   in|   32|     ap_none|                           buf_228_load|        scalar|
+|buf_229_load  |   in|   32|     ap_none|                           buf_229_load|        scalar|
+|buf_230_load  |   in|   32|     ap_none|                           buf_230_load|        scalar|
+|buf_231_load  |   in|   32|     ap_none|                           buf_231_load|        scalar|
+|buf_232_load  |   in|   32|     ap_none|                           buf_232_load|        scalar|
+|buf_233_load  |   in|   32|     ap_none|                           buf_233_load|        scalar|
+|buf_234_load  |   in|   32|     ap_none|                           buf_234_load|        scalar|
+|buf_235_load  |   in|   32|     ap_none|                           buf_235_load|        scalar|
+|buf_236_load  |   in|   32|     ap_none|                           buf_236_load|        scalar|
+|buf_237_load  |   in|   32|     ap_none|                           buf_237_load|        scalar|
+|buf_238_load  |   in|   32|     ap_none|                           buf_238_load|        scalar|
+|buf_239_load  |   in|   32|     ap_none|                           buf_239_load|        scalar|
+|buf_240_load  |   in|   32|     ap_none|                           buf_240_load|        scalar|
+|buf_241_load  |   in|   32|     ap_none|                           buf_241_load|        scalar|
+|buf_242_load  |   in|   32|     ap_none|                           buf_242_load|        scalar|
+|buf_243_load  |   in|   32|     ap_none|                           buf_243_load|        scalar|
+|buf_244_load  |   in|   32|     ap_none|                           buf_244_load|        scalar|
+|buf_245_load  |   in|   32|     ap_none|                           buf_245_load|        scalar|
+|buf_246_load  |   in|   32|     ap_none|                           buf_246_load|        scalar|
+|buf_247_load  |   in|   32|     ap_none|                           buf_247_load|        scalar|
+|buf_248_load  |   in|   32|     ap_none|                           buf_248_load|        scalar|
+|buf_249_load  |   in|   32|     ap_none|                           buf_249_load|        scalar|
+|buf_250_load  |   in|   32|     ap_none|                           buf_250_load|        scalar|
+|buf_251_load  |   in|   32|     ap_none|                           buf_251_load|        scalar|
+|buf_252_load  |   in|   32|     ap_none|                           buf_252_load|        scalar|
+|buf_253_load  |   in|   32|     ap_none|                           buf_253_load|        scalar|
+|buf_254_load  |   in|   32|     ap_none|                           buf_254_load|        scalar|
+|buf_255_load  |   in|   32|     ap_none|                           buf_255_load|        scalar|
+|a_Addr_A      |  out|   32|        bram|                                      a|         array|
+|a_EN_A        |  out|    1|        bram|                                      a|         array|
+|a_WEN_A       |  out|    4|        bram|                                      a|         array|
+|a_Din_A       |  out|   32|        bram|                                      a|         array|
+|a_Dout_A      |   in|   32|        bram|                                      a|         array|
++--------------+-----+-----+------------+---------------------------------------+--------------+
+
