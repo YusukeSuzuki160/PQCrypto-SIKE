@@ -1,0 +1,50 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "mont_hls_fios_csa_true_pipe2.cpp",
+    "fileloc": 20,
+    "instructions": 6,
+    "name": "mont_mul_fios_csa_true_pipe2",
+    "total_instructions": 567
+  },
+  "1": {
+    "basicblocks": 75,
+    "calls": "3",
+    "file": "mont_ops_fios_csa_true_inl.hpp",
+    "fileloc": 85,
+    "instructions": 412,
+    "loads": {
+      "L": 29
+    },
+    "name": "mul",
+    "stores": {
+      "L": 29
+    },
+    "total_instructions": 561
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_true_inl.hpp",
+    "fileloc": 54,
+    "instructions": 11,
+    "name": "csa32",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 11
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2 2 2 2 2 2",
+    "file": "mont_ops_fios_csa_true_inl.hpp",
+    "fileloc": 63,
+    "instructions": 83,
+    "loads": {
+      "L": 18
+    },
+    "name": "csa_reduce8",
+    "total_instructions": 149
+  }
+}

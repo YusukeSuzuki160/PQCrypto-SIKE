@@ -40,6 +40,7 @@
 #include "clang/Tooling/CommonOptionsParser.h"
 #include "clang/Tooling/Tooling.h"
 #include "llvm/Support/CommandLine.h"
+#include "llvm/Support/Path.h"
 #include "llvm/Support/raw_ostream.h"
 
 using namespace clang;
@@ -112,6 +113,16 @@ static llvm::cl::list<std::string> RedcFuncNames(
     llvm::cl::desc("Additional Montgomery-reduction call names (e.g. --redc-func=__redc)"),
     llvm::cl::ZeroOrMore, llvm::cl::cat(Cat));
 
+// 変換対象から常に除外する「ライブラリ内部」ヘッダのファイル名（--lib-header 自身に加えて）。
+// --lib-header（既定 mont_ops.hpp）が内部で #include する実装ヘッダ
+// （FIOS-CSA-True コア等）もここに載せておかないと、isInMainFile() 撤廃の
+// 副作用でライブラリ自身の関数が誤って検出・書き換え対象になってしまう。
+static llvm::cl::list<std::string> InternalHeaders(
+    "internal-header",
+    llvm::cl::desc("Additional library-internal header basenames to always exclude "
+                   "from detection (e.g. --internal-header=mont_ops_fios_csa_true.hpp)"),
+    llvm::cl::ZeroOrMore, llvm::cl::cat(Cat));
+
 // ===================== ユーティリティ =====================
 
 static std::string getSourceText(const Stmt *S, const SourceManager &SM,
@@ -140,6 +151,29 @@ static std::string extractHLSPragmas(const CompoundStmt *Body,
             out += line + "\n";
     }
     return out;
+}
+
+// 指定名集合に一致するファイルスコープ（グローバル）の VarDecl を TU 全体から探す。
+// 実際の暗号ライブラリでは法・逆元定数が関数引数ではなくグローバル定数として
+// 直接参照されることが多いため（例: SIKE の rdc_mont/fpmul_mont が参照する
+// p503 / 独自の Montgomery 定数）、パラメータからの解決が失敗した場合の
+// フォールバックとして使う。wantArrayOrPointer=true なら配列/ポインタ型
+// （法定数向け）、false ならスカラー整数型（逆元定数向け）を優先する。
+static const VarDecl *findGlobalVarByName(TranslationUnitDecl *TU,
+                                          const std::unordered_set<std::string> &names,
+                                          bool wantArrayOrPointer)
+{
+    for (const Decl *D : TU->decls()) {
+        const auto *VD = dyn_cast<VarDecl>(D);
+        if (!VD || !VD->hasGlobalStorage()) continue;
+        if (names.count(VD->getNameAsString()) == 0) continue;
+        QualType QT = VD->getType().getCanonicalType();
+        bool isArrOrPtr = QT->isArrayType() || QT->isPointerType();
+        if (wantArrayOrPointer && !isArrOrPtr) continue;
+        if (!wantArrayOrPointer && (isArrOrPtr || !QT->isIntegerType())) continue;
+        return VD;
+    }
+    return nullptr;
 }
 
 // ラッパノードを剥ぐ
@@ -265,11 +299,26 @@ public:
     }
 
     // ---- 判定 ----
-    bool isCandidate() const
+    // selfNameMatch: 関数自身の名前が既知のモンゴメリ・リダクション名
+    // （rdc_mont / montgomery_reduce 等、redcFuncs_ 相当）に一致するかどうか。
+    // 通常の SHIP 条件（ループ深さ + 還元乗算 + 法参照）は「法」や「還元定数」が
+    // 関数引数として渡される実装を前提としている。しかし実際の暗号ライブラリ
+    // （例: SIKE 参照実装の rdc_mont/fpmul_mont）では、法や還元定数がグローバル
+    // 定数として直接参照され、引数名からの検出が効かないことがある。
+    // 関数名が既知の Montgomery 関連名と一致し、かつループ構造・還元呼び出し・
+    // 還元乗算のいずれかの内部シグナルが伴う場合は、modUse_ が偽でも
+    // Montgomery 関連と判定する（名前だけの誤検出を避けるため、内部シグナルの
+    // 併存を必須とする）。
+    bool isCandidate(bool selfNameMatch = false) const
     {
-        return maxForDepth_ >= 2 &&
-               (redcMulCount_ >= MinRedcMul || redcCallCount_ >= 1) &&
-               modUse_;
+        if (maxForDepth_ >= 2 &&
+            (redcMulCount_ >= MinRedcMul || redcCallCount_ >= 1) &&
+            modUse_)
+            return true;
+        if (selfNameMatch &&
+            (maxForDepth_ >= 2 || redcCallCount_ >= 1 || redcMulCount_ >= MinRedcMul))
+            return true;
+        return false;
     }
 
     unsigned maxForDepth()  const { return maxForDepth_; }
@@ -313,7 +362,37 @@ public:
 
         const SourceManager &SM = *Res.SourceManager;
         if (SM.isInSystemHeader(FD->getLocation())) return;
-        if (!SM.isInMainFile(FD->getLocation())) return;
+        // 注意: 以前は isInMainFile() で「メインファイル内の定義のみ」に限定していたが、
+        // 実際の暗号ライブラリ（例: SIKE 参照実装）では P503.c が
+        // #include "fpx.c" / #include "ec_isogeny.c" のように実装ファイルを
+        // 直接 #include する「unity build」構成が一般的であり、対象関数の
+        // FunctionDecl の位置がメインファイルではなく #include されたファイル側に
+        // なるため、isInMainFile() では常に false になり検出漏れが起きていた。
+        // システムヘッダ（isInSystemHeader）だけを除外し、プロジェクト内の
+        // #include チェーンで取り込まれた実装ファイルも走査対象にする。
+        //
+        // ただし、変換先ライブラリ自身のヘッダ（--lib-header、既定
+        // mont_ops.hpp、およびそれが内部で #include する実装ヘッダ群）が
+        // 入力ファイルから #include されている場合、isInMainFile() を外した
+        // 副作用として mont::MontOps<>::mul/redc やその内部実装
+        // （MontOps_FIOS_CSA_True::mul, csa32, ...) 自身が「検出対象」として
+        // 拾われてしまう（名前・ループ構造・還元乗算のいずれの条件も
+        // 満たすため）。これを変換対象から除外しないと、--output 未指定時に
+        // overwriteChangedFiles() がライブラリヘッダそのものを書き換えて
+        // しまう危険がある。ライブラリ内部ヘッダの定義は常にスキップする。
+        {
+            static const std::unordered_set<std::string> defaultInternalHeaders = {
+                "mont_ops_fios_csa_true.hpp", "mont_ops_fios_csa_true_inl.hpp"};
+            std::unordered_set<std::string> internalHeaders = defaultInternalHeaders;
+            internalHeaders.insert(
+                llvm::sys::path::filename(IncludeHeader.getValue()).str());
+            for (const std::string &s : InternalHeaders) internalHeaders.insert(s);
+
+            StringRef defFile = SM.getFilename(FD->getLocation());
+            std::string defBase = llvm::sys::path::filename(defFile).str();
+            if (!defFile.empty() && internalHeaders.count(defBase) > 0)
+                return;
+        }
 
         // ---- 名前集合 ----
         std::unordered_set<std::string> invNames = {
@@ -335,7 +414,8 @@ public:
         MontBodyScanner scan(invNames, modNames, redcFuncs);
         scan.TraverseStmt(const_cast<CompoundStmt *>(Body));
 
-        bool candidate = scan.isCandidate();
+        bool selfNameMatch = redcFuncs.count(FD->getNameAsString()) > 0;
+        bool candidate = scan.isCandidate(selfNameMatch);
 
         // ---- パラメータ分類 ----
         static const std::unordered_set<std::string> lenNames = {
@@ -346,8 +426,12 @@ public:
             "a", "b", "x", "y", "ma", "mb", "src", "src1", "src2"};
 
         const ParmVarDecl *opA = nullptr, *opB = nullptr;
-        const ParmVarDecl *outP = nullptr, *modP = nullptr;
-        const ParmVarDecl *invP = nullptr, *lenP = nullptr;
+        const ParmVarDecl *outP = nullptr;
+        const ParmVarDecl *lenP = nullptr;
+        // modP/invP は「グローバル定数」フォールバック（下記）にも対応するため
+        // ParmVarDecl より広い ValueDecl（ParmVarDecl も VarDecl もこれの派生）で保持する。
+        const ValueDecl *modP = nullptr;
+        const ValueDecl *invP = nullptr;
 
         std::vector<const ParmVarDecl *> ptrConst, ptrNonConst, ints;
         for (const ParmVarDecl *P : FD->parameters()) {
@@ -407,20 +491,66 @@ public:
             else if (!lenP) lenP = P;
         }
 
+        // ---- グローバル定数フォールバック ----
+        // パラメータから mod/mprime を解決できなかった場合、ファイルスコープの
+        // グローバル定数（extern const 配列 / スカラー定数）から名前一致で探す。
+        // 実際の暗号ライブラリ（SIKE 等）でよく見られるパターンに対応するため。
+        bool modFromGlobal = false, invFromGlobal = false;
+        if (!modP) {
+            if (const VarDecl *G = findGlobalVarByName(
+                    Res.Context->getTranslationUnitDecl(), modNames, /*wantArrayOrPointer=*/true)) {
+                modP = G;
+                modFromGlobal = true;
+            }
+        }
+        if (!invP) {
+            if (const VarDecl *G = findGlobalVarByName(
+                    Res.Context->getTranslationUnitDecl(), invNames, /*wantArrayOrPointer=*/false)) {
+                invP = G;
+                invFromGlobal = true;
+            }
+        }
+
         // ---- 変換種別の決定 ----
-        // mul:  2 つの演算子ポインタ + 出力 + 法 が揃う
-        // redc: 演算子（入出力）1 本 + 法（出力は入力と同一でも可）
+        // mul:    2 つの演算子ポインタ + 出力 + 法 が揃う
+        // square: 演算子ポインタ 1 本のみ（自乗、例: fpsqr_mont(a,c) = c=a*a）
+        // redc:   演算子（入出力）1 本 + 法（2n 語入力を n 語へ縮約）
+        //
+        // 演算子ポインタが 1 本しかない場合、「自乗（a=b として mul）」と
+        // 「REDC（2n語入力の縮約）」は引数の個数だけでは区別できない
+        // （どちらも opA + outP + modP の形を取りうる）。配列サイズが
+        // 判明する場合はそれで判別する: opA の要素数が出力のおよそ2倍
+        // （dfelm_t 相当）なら REDC、ほぼ同じ要素数（felm_t 相当）なら
+        // 自乗とみなす。サイズが不明な場合は誤変換を避けるため REDC 側に倒す
+        // （元の挙動を維持）。
         std::string mode = ModeOpt.getValue();
-        bool isMul, isRedc;
+        bool isMul, isSquare = false, isRedc;
         if (mode == "mul")       { isMul = true;  isRedc = false; }
         else if (mode == "redc") { isMul = false; isRedc = true;  }
         else {
             isMul  = (opA && opB && outP && modP);
-            isRedc = (!isMul) && (outP || opA) && modP;
+            if (!isMul && opA && !opB && outP && modP) {
+                auto arrSize = [](const ParmVarDecl *P) -> long long {
+                    if (!P) return -1;
+                    // C/C++ では配列型の関数引数はポインタ型へ decay するため
+                    // getType() では要素数が失われる。decay 前の型は
+                    // getOriginalType() で取得できる（typedef された
+                    // felm_t/dfelm_t のような固定長配列でも要素数が残る）。
+                    QualType QT = P->getOriginalType().getCanonicalType();
+                    if (const auto *AT = dyn_cast<ConstantArrayType>(QT.getTypePtr()))
+                        return AT->getSize().getSExtValue();
+                    return -1;
+                };
+                long long aSz = arrSize(opA), cSz = arrSize(outP);
+                if (aSz > 0 && cSz > 0 && aSz <= cSz + cSz / 2)
+                    isSquare = true;
+            }
+            isRedc = (!isMul) && !isSquare && (outP || opA) && modP;
         }
 
         // ---- 結果出力 ----
         std::string kindStr = isMul ? "MontMul(CIOS)"
+                            : isSquare ? "MontSqr(CIOS)"
                             : isRedc ? "MontReduce(REDC)" : "Unknown";
         llvm::outs() << "[mont-auto] Function '" << FD->getNameAsString() << "': "
                      << "forDepth=" << scan.maxForDepth()
@@ -447,15 +577,40 @@ public:
                          << ", b=" << (opB ? opB->getNameAsString() : "-")
                          << ", c=" << (outP ? outP->getNameAsString() : "-")
                          << ", mod=" << (modP ? modP->getNameAsString() : "-")
+                         << (modFromGlobal ? "(global)" : "")
                          << ", mprime=" << (invP ? invP->getNameAsString() : "-")
+                         << (invFromGlobal ? "(global)" : "")
                          << ", nwords=" << (lenP ? lenP->getNameAsString() : "-")
                          << "\n";
+            if (selfNameMatch && !modP) {
+                llvm::outs() << "  [trace] note: matched by function name '"
+                             << FD->getNameAsString() << "' (known Montgomery-reduction "
+                             << "name), but no modulus/inverse constant could be resolved "
+                             << "even from global scope. Automatic rewrite is skipped for "
+                             << "safety; supply --mod-name/--inv-name for the actual "
+                             << "constant names, or integrate manually.\n";
+            }
         }
 
         if (!candidate || DryRun) return;
 
+        // selfNameMatch 経由で検出されたが mod/mprime をパラメータ/グローバルの
+        // いずれからも解決できない場合、isMul/isSquare/isRedc は全て false の
+        // ままとなる。この場合は自動書き換えを行わず、検出のみで留める
+        // （modP/invP が空のまま置換すると壊れたコードを生成してしまうため）。
+        if (!isMul && !isSquare && !isRedc) {
+            llvm::outs() << "  [warn] detected as Montgomery-related but neither mul/square/redc "
+                         << "parameter pattern could be resolved → SKIP rewrite (manual "
+                         << "integration required)\n";
+            return;
+        }
+
         if (isMul && !(opA && opB && outP && modP && invP)) {
             llvm::outs() << "  [warn] mul mode but parameters incomplete → SKIP rewrite\n";
+            return;
+        }
+        if (isSquare && !(opA && outP && modP && invP)) {
+            llvm::outs() << "  [warn] square mode but parameters incomplete → SKIP rewrite\n";
             return;
         }
         if (isRedc && !((outP || opA) && modP && invP)) {
@@ -477,7 +632,7 @@ public:
             IncludesInserted_ = true;
         }
 
-        auto nameOf = [](const ParmVarDecl *P) -> std::string {
+        auto nameOf = [](const ValueDecl *P) -> std::string {
             return P ? P->getNameAsString() : "";
         };
 
@@ -505,21 +660,23 @@ public:
         if (!lenName.empty())
             oss << "  if (static_cast<unsigned>(" << lenName
                 << ") > MAX_NWORDS) return;\n";
+        // 語数引数が関数側に存在しない場合（SIKE のように nwords がコンパイル時
+        // 定数で常に MAX_NWORDS に等しい実装など）、MontOps::mul/redc の nwords
+        // 引数には MAX_NWORDS をそのまま渡す。
+        std::string lenArg = lenName.empty() ? "MAX_NWORDS" : lenName;
 
-        if (isMul) {
+        if (isMul || isSquare) {
+            // 自乗（isSquare）の場合は b にも a と同じ実引数を渡す（c = a*a*R^-1 mod N）。
+            std::string bName = isSquare ? nameOf(opA) : nameOf(opB);
             oss << "  mont::MontOps<Digit, MAX_NWORDS>::mul(\n"
-                << "      " << nameOf(opA) << ", " << nameOf(opB) << ", "
+                << "      " << nameOf(opA) << ", " << bName << ", "
                 << nameOf(outP) << ", " << nameOf(modP) << ", "
-                << nameOf(invP);
-            if (!lenName.empty()) oss << ", " << lenName;
-            oss << ");\n";
+                << nameOf(invP) << ", " << lenArg << ");\n";
         } else { // redc
             std::string dataName = nameOf(outP ? outP : opA);
             oss << "  mont::MontOps<Digit, MAX_NWORDS>::redc(\n"
                 << "      " << dataName << ", " << nameOf(modP) << ", "
-                << nameOf(invP);
-            if (!lenName.empty()) oss << ", " << lenName;
-            oss << ");\n";
+                << nameOf(invP) << ", " << lenArg << ");\n";
         }
 
         oss << "}\n";

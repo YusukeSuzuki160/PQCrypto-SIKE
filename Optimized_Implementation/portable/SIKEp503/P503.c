@@ -1,3 +1,6 @@
+#include <climits>
+#include <type_traits>
+#include "mont_ops.hpp"
 /********************************************************************************************
 * Supersingular Isogeny Key Encapsulation Library
 *
@@ -19,18 +22,24 @@
 // Curve isogeny system "SIDHp503". Base curve: Montgomery curve By^2 = Cx^3 + Ax^2 + Cx defined over GF(p503^2), where A=0, B=1, C=1 and p503 = 2^250*3^159-1
 //
          
-const uint64_t p503[NWORDS64_FIELD]              = { 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xABFFFFFFFFFFFFFF, 
+extern const uint64_t p503[NWORDS64_FIELD]              = { 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xABFFFFFFFFFFFFFF, 
                                                      0x13085BDA2211E7A0, 0x1B9BF6C87B7E7DAF, 0x6045C6BDDA77A4D0, 0x004066F541811E1E };
-const uint64_t p503p1[NWORDS64_FIELD]            = { 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0xAC00000000000000,
+extern const uint64_t p503p1[NWORDS64_FIELD]            = { 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0xAC00000000000000,
                                                      0x13085BDA2211E7A0, 0x1B9BF6C87B7E7DAF, 0x6045C6BDDA77A4D0, 0x004066F541811E1E };
-const uint64_t p503x2[NWORDS64_FIELD]            = { 0xFFFFFFFFFFFFFFFE, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0x57FFFFFFFFFFFFFF,
-                                                     0x2610B7B44423CF41, 0x3737ED90F6FCFB5E, 0xC08B8D7BB4EF49A0, 0x0080CDEA83023C3C }; 
+extern const uint64_t p503x2[NWORDS64_FIELD]            = { 0xFFFFFFFFFFFFFFFE, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0x57FFFFFFFFFFFFFF,
+                                                     0x2610B7B44423CF41, 0x3737ED90F6FCFB5E, 0xC08B8D7BB4EF49A0, 0x0080CDEA83023C3C };
+// Standard Montgomery constant mprime = -p503[0]^{-1} mod 2^64, used by
+// montgomery_converter's mont::MontOps<>::mul/redc (auto-rewritten targets),
+// as opposed to p503p1 which encodes the prime-specific (2^250*3^159) form
+// used by the original comba-based rdc_mont(). Since p503[0] = 0xFFFF...FFFF
+// (i.e. -1 mod 2^64), its inverse is also -1, so mprime = 1.
+extern const uint64_t p503_mprime                       = 0x0000000000000001ULL;
 // Order of Alice's subgroup
-const uint64_t Alice_order[NWORDS64_ORDER]       = { 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0400000000000000 }; 
+extern const uint64_t Alice_order[NWORDS64_ORDER]       = { 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0400000000000000 }; 
 // Order of Bob's subgroup
-const uint64_t Bob_order[NWORDS64_ORDER]         = { 0xC216F6888479E82B, 0xE6FDB21EDF9F6BC4, 0x1171AF769DE93406, 0x1019BD5060478798 };
+extern const uint64_t Bob_order[NWORDS64_ORDER]         = { 0xC216F6888479E82B, 0xE6FDB21EDF9F6BC4, 0x1171AF769DE93406, 0x1019BD5060478798 };
 // Alice's generator values {XPA0 + XPA1*i, XQA0, XRA0 + XRA1*i} in GF(p503^2), expressed in Montgomery representation
-const uint64_t A_gen[5*NWORDS64_FIELD]           = { 0xE7EF4AA786D855AF, 0xED5758F03EB34D3B, 0x09AE172535A86AA9, 0x237B9CC07D622723,
+extern const uint64_t A_gen[5*NWORDS64_FIELD]           = { 0xE7EF4AA786D855AF, 0xED5758F03EB34D3B, 0x09AE172535A86AA9, 0x237B9CC07D622723,
                                                      0xE3A284CBA4E7932D, 0x27481D9176C5E63F, 0x6A323FF55C6E71BF, 0x002ECC31A6FB8773,   // XPA0
                                                      0x64D02E4E90A620B8, 0xDAB8128537D4B9F1, 0x4BADF77B8A228F98, 0x0F5DBDF9D1FB7D1B,
                                                      0xBEC4DB288E1A0DCC, 0xE76A8665E80675DB, 0x6D6F252E12929463, 0x003188BD1463FACC,   // XPA1
@@ -41,7 +50,7 @@ const uint64_t A_gen[5*NWORDS64_FIELD]           = { 0xE7EF4AA786D855AF, 0xED575
                                                      0x34DB54931CBAAC36, 0x420A18CB8DD5F0C4, 0x32008C1A48C0F44D, 0x3B3BA772B1CFD44D, 
                                                      0xA74B058FDAF13515, 0x095FC9CA7EEC17B4, 0x448E829D28F120F8, 0x00261EC3ED16A489 }; // XRA1
 // Bob's generator values {XPB0 + XPB1*i, XQB0, XRB0 + XRB1*i} in GF(p503^2), expressed in Montgomery representation
-const uint64_t B_gen[5*NWORDS64_FIELD]           = { 0x7EDE37F4FA0BC727, 0xF7F8EC5C8598941C, 0xD15519B516B5F5C8, 0xF6D5AC9B87A36282, 
+extern const uint64_t B_gen[5*NWORDS64_FIELD]           = { 0x7EDE37F4FA0BC727, 0xF7F8EC5C8598941C, 0xD15519B516B5F5C8, 0xF6D5AC9B87A36282, 
                                                      0x7B19F105B30E952E, 0x13BD8B2025B4EBEE, 0x7B96D27F4EC579A2, 0x00140850CAB7E5DE,   // XPB0 
                                                      0x7764909DAE7B7B2D, 0x578ABB16284911AB, 0x76E2BFD146A6BF4D, 0x4824044B23AA02F0, 
                                                      0x1105048912A321F3, 0xB8A2E482CF0F10C1, 0x42FF7D0BE2152085, 0x0018E599C5223352,   // XPB1
@@ -52,28 +61,28 @@ const uint64_t B_gen[5*NWORDS64_FIELD]           = { 0x7EDE37F4FA0BC727, 0xF7F8E
                                                      0x1119D62AEA3007A1, 0xE3702AA4E04BAE1B, 0x9AB96F7D59F990E7, 0xF58440E8B43319C0, 
                                                      0xAF8134BEE1489775, 0xE7F7774E905192AA, 0xF54AE09308E98039, 0x001EF7A041A86112 }; // XRB1
 // Montgomery constant Montgomery_R2 = (2^512)^2 mod p503
-const uint64_t Montgomery_R2[NWORDS64_FIELD]     = { 0x5289A0CF641D011F, 0x9B88257189FED2B9, 0xA3B365D58DC8F17A, 0x5BC57AB6EFF168EC,
+extern const uint64_t Montgomery_R2[NWORDS64_FIELD]     = { 0x5289A0CF641D011F, 0x9B88257189FED2B9, 0xA3B365D58DC8F17A, 0x5BC57AB6EFF168EC,
                                                      0x9E51998BD84D4423, 0xBF8999CBAC3B5695, 0x46E9127BCE14CDB6, 0x003F6CFCE8B81771 };                                                   
 // Value one in Montgomery representation 
-const uint64_t Montgomery_one[NWORDS64_FIELD]    = { 0x00000000000003F9, 0x0000000000000000, 0x0000000000000000, 0xB400000000000000, 
+extern const uint64_t Montgomery_one[NWORDS64_FIELD]    = { 0x00000000000003F9, 0x0000000000000000, 0x0000000000000000, 0xB400000000000000, 
                                                      0x63CB1A6EA6DED2B4, 0x51689D8D667EB37D, 0x8ACD77C71AB24142, 0x0026FBAEC60F5953 };     
 // Value (2^256)^2 mod 3^159                                                   
-const uint64_t Montgomery_Rprime[NWORDS64_ORDER] = { 0x0C2615CA3C5BAA99, 0x5A4FF3072AB6AA6A, 0xA6AFD4B039AD6AA2, 0x010DA06A26DD05CB };     
+extern const uint64_t Montgomery_Rprime[NWORDS64_ORDER] = { 0x0C2615CA3C5BAA99, 0x5A4FF3072AB6AA6A, 0xA6AFD4B039AD6AA2, 0x010DA06A26DD05CB };     
 // Value -(3^159)^-1 mod 2^256 
-const uint64_t Montgomery_rprime[NWORDS64_ORDER] = { 0x49C8A87190C0697D, 0x2EB7968EA0F0A558, 0x944257B696777FA2, 0xBAA4DDCD6139D2B3 };                                                    
+extern const uint64_t Montgomery_rprime[NWORDS64_ORDER] = { 0x49C8A87190C0697D, 0x2EB7968EA0F0A558, 0x944257B696777FA2, 0xBAA4DDCD6139D2B3 };                                                    
 // Value order_Bob/3 mod p503
-const uint64_t Border_div3[NWORDS_ORDER]         = { 0xEB5CFCD82C28A2B9, 0x4CFF3B5F9FDFCE96, 0xB07B3A7CDF4DBC02, 0x055DE9C5756D2D32 };
+extern const uint64_t Border_div3[NWORDS_ORDER]         = { 0xEB5CFCD82C28A2B9, 0x4CFF3B5F9FDFCE96, 0xB07B3A7CDF4DBC02, 0x055DE9C5756D2D32 };
 
 
 // Fixed parameters for isogeny tree computation
-const unsigned int strat_Alice[MAX_Alice-1] = { 
+extern const unsigned int strat_Alice[MAX_Alice-1] = { 
 61, 32, 16, 8, 4, 2, 1, 1, 2, 1, 1, 4, 2, 1, 1, 2, 1, 1, 8, 4, 2, 1, 1, 2, 1, 1, 
 4, 2, 1, 1, 2, 1, 1, 16, 8, 4, 2, 1, 1, 2, 1, 1, 4, 2, 1, 1, 2, 1, 1, 8, 4, 2, 1, 
 1, 2, 1, 1, 4, 2, 1, 1, 2, 1, 1, 29, 16, 8, 4, 2, 1, 1, 2, 1, 1, 4, 2, 1, 1, 2, 1, 
 1, 8, 4, 2, 1, 1, 2, 1, 1, 4, 2, 1, 1, 2, 1, 1, 13, 8, 4, 2, 1, 1, 2, 1, 1, 4, 2, 
 1, 1, 2, 1, 1, 5, 4, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1 };
 
-const unsigned int strat_Bob[MAX_Bob-1] = { 
+extern const unsigned int strat_Bob[MAX_Bob-1] = { 
 71, 38, 21, 13, 8, 4, 2, 1, 1, 2, 1, 1, 4, 2, 1, 1, 2, 1, 1, 5, 4, 2, 1, 1, 2, 1, 
 1, 2, 1, 1, 1, 9, 5, 3, 2, 1, 1, 1, 1, 2, 1, 1, 1, 4, 2, 1, 1, 1, 2, 1, 1, 17, 9, 
 5, 3, 2, 1, 1, 1, 1, 2, 1, 1, 1, 4, 2, 1, 1, 1, 2, 1, 1, 8, 4, 2, 1, 1, 1, 2, 1, 

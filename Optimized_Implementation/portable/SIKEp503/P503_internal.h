@@ -9,6 +9,10 @@
 
 #include "api.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #if (TARGET == TARGET_AMD64)
     #define NWORDS_FIELD    8               // Number of words of a 503-bit field element
     #define p503_ZERO_WORDS 3               // Number of "0" digits in the least significant part of p503 + 1     
@@ -263,5 +267,8 @@ void inv_3_way(f2elm_t z1, f2elm_t z2, f2elm_t z3);
 // Given the x-coordinates of P, Q, and R, returns the value A corresponding to the Montgomery curve E_A: y^2=x^3+A*x^2+x such that R=Q-P on E_A.
 void get_A(const f2elm_t xP, const f2elm_t xQ, const f2elm_t xR, f2elm_t A);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

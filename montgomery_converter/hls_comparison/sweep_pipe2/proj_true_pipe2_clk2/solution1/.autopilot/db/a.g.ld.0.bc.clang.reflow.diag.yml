@@ -1,0 +1,627 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 67, Column: 9 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE11csa_reduce8ERA8_oRoS4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::csa32(unsigned __int128, unsigned __int128, unsigned __int128, unsigned __int128&, unsigned __int128&)'
+    DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                       Line: 54, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::csa_reduce8(unsigned __int128 (&) [8], unsigned __int128&, unsigned __int128&)'
+    DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                       Line: 63, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 166, Column: 17 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::csa_reduce8(unsigned __int128 (&) [8], unsigned __int128&, unsigned __int128&)'
+    DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                       Line: 63, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned long const*, unsigned long)'
+    DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                       Line: 87, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 29, 
+                   Column: 2 }
+Function:        mont_mul_fios_csa_true_pipe2
+Args:            
+  - Callee:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned long const*, unsigned long)'
+    DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                       Line: 87, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          mont_mul_fios_csa_true_pipe2
+    DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 214, Column: 19 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        SEL_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 205, Column: 20 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CSUB_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 191, Column: 31 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_191_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 100, Column: 21 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        FIOS_OUTER
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 135, Column: 19 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PPPM
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 153, Column: 8 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        SLOT
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 171, Column: 31 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_171_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 179, Column: 31 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_179_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 94, Column: 19 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_94_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SEL_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:214:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CSUB_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:205:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_191_4
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:191:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        FIOS_OUTER
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:100:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_179_3
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:179:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_171_2
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:171:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SLOT
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:153:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PPPM
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:135:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_179_3
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:179:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_171_2
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:171:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SLOT
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:153:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PPPM
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:135:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_179_3
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:179:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_171_2
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:171:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SLOT
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:153:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PPPM
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:135:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_179_3
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:179:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_171_2
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:171:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SLOT
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:153:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PPPM
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:135:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                   Line: 87, Column: 0 }
+Function:        _ZN22mont_fios_csa_true_inl25MontOps_FIOS_CSA_True_InlImLj4EE3mulEPKmS3_PmS3_m
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_94_1
+  - String:          ''' ('
+  - LoopLoc:         '../../include/mont_ops_fios_csa_true_inl.hpp:94:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 29, 
+                   Column: 2 }
+Function:        mont_mul_fios_csa_true_pipe2
+Args:            
+  - Callee:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned long const*, unsigned long)'
+    DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                       Line: 87, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          mont_mul_fios_csa_true_pipe2
+    DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_mont_mul_fios_csa_true_pipe2_ir
+Args:            
+  - Callee:          mont_mul_fios_csa_true_pipe2
+    DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_mont_mul_fios_csa_true_pipe2_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                   Column: 0 }
+Function:        mont_mul_fios_csa_true_pipe2
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                   Column: 0 }
+Function:        mont_mul_fios_csa_true_pipe2
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                   Column: 0 }
+Function:        mont_mul_fios_csa_true_pipe2
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          c
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                   Column: 0 }
+Function:        mont_mul_fios_csa_true_pipe2
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          mod
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 29, 
+                   Column: 2 }
+Function:        mont_mul_fios_csa_true_pipe2
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'mont_fios_csa_true_inl::MontOps_FIOS_CSA_True_Inl<unsigned long, 4u>::mul(unsigned long const*, unsigned long const*, unsigned long*, unsigned long const*, unsigned long)'
+    DebugLoc:        { File: ../../include/mont_ops_fios_csa_true_inl.hpp, 
+                       Line: 87, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          mont_mul_fios_csa_true_pipe2
+    DebugLoc:        { File: ../mont_hls_fios_csa_true_pipe2.cpp, Line: 23, 
+                       Column: 0 }
+  - String:          ''''
+...

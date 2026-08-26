@@ -12,7 +12,7 @@ static void clear_words(void* mem, digit_t nwords)
 { // Clear digits from memory. "nwords" indicates the number of digits to be zeroed.
   // This function uses the volatile type qualifier to inform the compiler not to optimize out the memory clearing.
     unsigned int i;
-    volatile digit_t *v = mem; 
+    volatile digit_t *v = (volatile digit_t *)mem;
 
     for (i = 0; i < nwords; i++) {
         v[i] = 0;

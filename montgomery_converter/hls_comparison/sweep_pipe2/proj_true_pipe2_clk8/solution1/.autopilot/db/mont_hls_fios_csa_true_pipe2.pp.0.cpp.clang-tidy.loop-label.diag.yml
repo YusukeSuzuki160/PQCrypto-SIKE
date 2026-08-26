@@ -1,0 +1,40 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/hls_comparison/sweep_pipe2/proj_true_pipe2_clk8/solution1/.autopilot/db/mont_hls_fios_csa_true_pipe2.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_94_1:  '
+    FileOffset:      94
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/include/mont_ops_fios_csa_true_inl.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/hls_comparison/sweep_pipe2/proj_true_pipe2_clk8/solution1/.autopilot/db/mont_hls_fios_csa_true_pipe2.pp.0.cpp
+        Offset:          86179
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_94_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_171_2:  '
+    FileOffset:      171
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/include/mont_ops_fios_csa_true_inl.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/hls_comparison/sweep_pipe2/proj_true_pipe2_clk8/solution1/.autopilot/db/mont_hls_fios_csa_true_pipe2.pp.0.cpp
+        Offset:          88742
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_171_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_179_3:  '
+    FileOffset:      179
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/include/mont_ops_fios_csa_true_inl.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/hls_comparison/sweep_pipe2/proj_true_pipe2_clk8/solution1/.autopilot/db/mont_hls_fios_csa_true_pipe2.pp.0.cpp
+        Offset:          89054
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_179_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_191_4:  '
+    FileOffset:      191
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/include/mont_ops_fios_csa_true_inl.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/hls_comparison/sweep_pipe2/proj_true_pipe2_clk8/solution1/.autopilot/db/mont_hls_fios_csa_true_pipe2.pp.0.cpp
+        Offset:          89310
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_191_4: '
+...

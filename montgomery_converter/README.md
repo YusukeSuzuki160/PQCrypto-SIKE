@@ -223,6 +223,32 @@ bash hls_comparison/run_comparison.sh
 
 ---
 
+## 実 SIKE 参照実装での検証（2026-08-26）
+
+本ツールを、このリポジトリに同梱されている Microsoft 製 SIKE 参照実装
+（`Optimized_Implementation/portable/SIKEp503/`）に対して実際に適用し、
+検出→自動置換→ビルド→公式 KAT (Known Answer Test) PASSED まで実証した。
+詳細は [`hls_comparison/montgomery_hls_report.md`](hls_comparison/montgomery_hls_report.md)
+の 11 節を参照。
+
+この検証を通じて、自作サンプルでは表面化しなかった以下の実コード対応バグを
+発見・修正した:
+
+- `isInMainFile()` が unity build 構成（`#include "fpx.c"` 等）に対応できていなかった
+- グローバル変数として法・逆元定数を参照する実装（引数として渡さない実装）を検出できなかった
+  → `--mod-name`/`--inv-name` によるグローバルスコープの `VarDecl` 解決に対応
+- 引数1本のみの関数（平方 `fpsqr_mont(a,c)`）が REDC と誤判定されていた
+  → 配列サイズ（decay 前）による判別を追加
+- `isInMainFile()` 緩和の副作用で、変換先ライブラリ自身を誤って書き換える危険が生じた
+  → `--internal-header` オプションで防止
+
+**結論**: 検出ロジックはアルゴリズム名（SIKE等）に依存しないよう設計されているため、
+上記の修正は SIKE 固有ではなく一般的な実コード適用性の改善である。OpenSSL・GMP 等
+他のライブラリへの適用可能性は、実ソースが入手できれば同様の手法で検証できる
+（本開発環境には devパッケージのヘッダのみで C 実装ソースがなく未検証）。
+
+---
+
 ## mpx_mul_converter / ntt_converter との比較
 
 | 項目 | mpx_mul_converter | ntt_converter | **montgomery_converter** |

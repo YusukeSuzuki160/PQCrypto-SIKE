@@ -1,0 +1,19 @@
+#include <cstdint>
+#include "../include/mont_ops_fios_csa_flat_lat.hpp"
+
+static constexpr unsigned NWORDS = 4;
+using digit_t = uint64_t;
+using FIOS_CSA_Flat_Lat = mont_fios_csa_flat_lat::MontOps_FIOS_CSA_Flat_Lat<digit_t, NWORDS>;
+
+extern "C" void mont_mul_fios_csa_flat_lat(
+    const digit_t a[NWORDS], const digit_t b[NWORDS],
+    digit_t c[NWORDS], const digit_t mod[NWORDS], digit_t mprime)
+{
+#pragma HLS INTERFACE m_axi port=a   bundle=gmem0 depth=NWORDS
+#pragma HLS INTERFACE m_axi port=b   bundle=gmem1 depth=NWORDS
+#pragma HLS INTERFACE m_axi port=c   bundle=gmem2 depth=NWORDS
+#pragma HLS INTERFACE m_axi port=mod bundle=gmem3 depth=NWORDS
+#pragma HLS INTERFACE s_axilite port=mprime
+#pragma HLS INTERFACE s_axilite port=return
+    FIOS_CSA_Flat_Lat::mul(a, b, c, mod, mprime);
+}

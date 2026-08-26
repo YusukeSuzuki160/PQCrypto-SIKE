@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "mont_hls_fios_csa_true_pipe2.cpp",
+    "fileloc": 20,
+    "instructions": 14,
+    "loads": {
+      "T": 12
+    },
+    "name": "mont_mul_fios_csa_true_pipe2",
+    "total_instructions": 619
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_true_inl.hpp",
+    "fileloc": 85,
+    "instructions": 605,
+    "name": "mul",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 605
+  }
+}

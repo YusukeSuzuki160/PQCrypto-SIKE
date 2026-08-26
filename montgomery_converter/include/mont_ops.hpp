@@ -28,6 +28,8 @@
 #include <cstdint>
 #include <type_traits>
 
+#include "mont_ops_fios_csa_true.hpp"
+
 namespace mont {
 
 // ===================== 倍幅型の選択 =====================
@@ -100,6 +102,18 @@ struct MontOps
     {
 #pragma HLS INLINE off
         if (nwords == 0 || nwords > MAX_NWORDS) return;
+
+        // nwords == MAX_NWORDS の場合（montgomery_converter の HLS 最適化研究で
+        // 確認した最良設計 FIOS-CSA-True: 真の Carry-Save（冗長表現）化。
+        // 単発レイテンシで旧来の CIOS 実装より高速）へ委譲する。
+        // nwords < MAX_NWORDS（可変語数呼び出し）の場合は以下の汎用 CIOS 実装
+        // にフォールバックする（FIOS-CSA-True は MAX_NWORDS に対して完全展開
+        // される設計のため、それより短い語数には対応しない）。
+        if (nwords == MAX_NWORDS) {
+            mont_fios_csa_true::MontOps_FIOS_CSA_True<T, MAX_NWORDS>::mul(
+                a, b, c, mod, mprime);
+            return;
+        }
 
         // 作業配列（n+2 語）。完全分割で 1 サイクル多ポートアクセスを可能にする。
         T t[MAX_NWORDS + 2];

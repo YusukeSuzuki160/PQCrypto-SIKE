@@ -1,5 +1,5 @@
 // test_new_algos.cpp
-// FIOS / SOS / Karatsuba の正確性確認
+// FIOS / SOS / Karatsuba / FIOS-Flat / FIOS-CSA-Flat / 新規変種 の正確性確認
 // g++ -std=c++17 -O0 -o test_new_algos test_new_algos.cpp && ./test_new_algos
 //
 // 基準: mont_ops_fast.hpp の MontOps_Fast (既存 CIOS) の出力と一致するか確認。
@@ -9,16 +9,31 @@
 #include <cstring>
 #include "../include/mont_ops_fast.hpp"
 #include "../include/mont_ops_fios.hpp"
+#include "../include/mont_ops_fios_csa.hpp"
+#include "../include/mont_ops_fios_flat.hpp"
+#include "../include/mont_ops_fios_csa_flat.hpp"
+#include "../include/mont_ops_fios_csa_flat_lat.hpp"
+#include "../include/mont_ops_fios_csa_true.hpp"
+#include "../include/mont_ops_fios_csa_flat_bindop.hpp"
 #include "../include/mont_ops_sos.hpp"
 #include "../include/mont_ops_karatsuba.hpp"
+#include "../include/mont_ops_karatsuba_csa.hpp"
+#include "../include/mont_ops_fios_csa_dataflow.hpp"
 
 using T = uint32_t;
 static constexpr unsigned N = 8;  // 256-bit with 32-bit words
 
-using CIOS = mont::MontOps_Fast<T, N>;
-using FIOS = mont_fios::MontOps_FIOS<T, N>;
-using SOS  = mont_sos::MontOps_SOS<T, N>;
-using KARA = mont_karatsuba::MontOps_Karatsuba<T, N>;
+using CIOS              = mont::MontOps_Fast<T, N>;
+using FIOS              = mont_fios::MontOps_FIOS<T, N>;
+using FIOS_CSA          = mont_fios_csa::MontOps_FIOS_CSA<T, N>;
+using FIOS_FLAT         = mont_fios_flat::MontOps_FIOS_Flat<T, N>;
+using FIOS_CSA_FLAT     = mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<T, N>;
+using FIOS_CSA_FLAT_LAT = mont_fios_csa_flat_lat::MontOps_FIOS_CSA_Flat_Lat<T, N>;
+using FIOS_CSA_TRUE     = mont_fios_csa_true::MontOps_FIOS_CSA_True<T, N>;
+using FIOS_CSA_FLAT_BOP = mont_fios_csa_flat_bindop::MontOps_FIOS_CSA_Flat_BindOp<T, N>;
+using SOS               = mont_sos::MontOps_SOS<T, N>;
+using KARA              = mont_karatsuba::MontOps_Karatsuba<T, N>;
+using KARA_CSA          = mont_karatsuba_csa::MontOps_Karatsuba_CSA<T, N>;
 
 // p-434 from SIDH (256-bit の代わりに 32-bit 語 8 語で近似)
 // 実際には 256-bit の奇数 mod を使う
@@ -169,12 +184,33 @@ int main() {
     run_test("FIOS", R_mod_p, R_mod_p, ref1, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  FIOS::mul(a, b, c, m, mp); });
+    run_test("FIOS_CSA", R_mod_p, R_mod_p, ref1, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA::mul(a, b, c, m, mp); });
+    run_test("FIOS_FLAT", R_mod_p, R_mod_p, ref1, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_FLAT::mul(a, b, c, m, mp); });
+    run_test("FIOS_CSA_FL", R_mod_p, R_mod_p, ref1, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT::mul(a, b, c, m, mp); });
+    run_test("CSA_FL_LAT", R_mod_p, R_mod_p, ref1, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT_LAT::mul(a, b, c, m, mp); });
+    run_test("CSA_TRUE", R_mod_p, R_mod_p, ref1, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_TRUE::mul(a, b, c, m, mp); });
+    run_test("CSA_FL_BOP", R_mod_p, R_mod_p, ref1, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT_BOP::mul(a, b, c, m, mp); });
     run_test("SOS",  R_mod_p, R_mod_p, ref1, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  SOS::mul(a, b, c, m, mp); });
     run_test("KARA", R_mod_p, R_mod_p, ref1, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  KARA::mul(a, b, c, m, mp); });
+    run_test("KARA_CSA", R_mod_p, R_mod_p, ref1, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 KARA_CSA::mul(a, b, c, m, mp); });
 
     // Test 2: a*b for random-ish values
     T a[N] = {0x12345678u, 0xABCDEF01u, 0x55AA55AAu, 0x0F0F0F0Fu,
@@ -193,12 +229,33 @@ int main() {
     run_test("FIOS", a, b, ref2, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  FIOS::mul(a, b, c, m, mp); });
+    run_test("FIOS_CSA", a, b, ref2, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA::mul(a, b, c, m, mp); });
+    run_test("FIOS_FLAT", a, b, ref2, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_FLAT::mul(a, b, c, m, mp); });
+    run_test("FIOS_CSA_FL", a, b, ref2, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT::mul(a, b, c, m, mp); });
+    run_test("CSA_FL_LAT", a, b, ref2, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT_LAT::mul(a, b, c, m, mp); });
+    run_test("CSA_TRUE", a, b, ref2, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_TRUE::mul(a, b, c, m, mp); });
+    run_test("CSA_FL_BOP", a, b, ref2, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT_BOP::mul(a, b, c, m, mp); });
     run_test("SOS",  a, b, ref2, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  SOS::mul(a, b, c, m, mp); });
     run_test("KARA", a, b, ref2, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  KARA::mul(a, b, c, m, mp); });
+    run_test("KARA_CSA", a, b, ref2, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 KARA_CSA::mul(a, b, c, m, mp); });
 
     // Test 3: a = b (squaring)
     printf("\nTest 3: a*a (squaring)\n");
@@ -209,12 +266,74 @@ int main() {
     run_test("FIOS", a, a, ref3, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  FIOS::mul(a, b, c, m, mp); });
+    run_test("FIOS_CSA", a, a, ref3, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA::mul(a, b, c, m, mp); });
+    run_test("FIOS_FLAT", a, a, ref3, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_FLAT::mul(a, b, c, m, mp); });
+    run_test("FIOS_CSA_FL", a, a, ref3, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT::mul(a, b, c, m, mp); });
+    run_test("CSA_FL_LAT", a, a, ref3, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT_LAT::mul(a, b, c, m, mp); });
+    run_test("CSA_TRUE", a, a, ref3, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_TRUE::mul(a, b, c, m, mp); });
+    run_test("CSA_FL_BOP", a, a, ref3, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 FIOS_CSA_FLAT_BOP::mul(a, b, c, m, mp); });
     run_test("SOS",  a, a, ref3, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  SOS::mul(a, b, c, m, mp); });
     run_test("KARA", a, a, ref3, mod, mprime,
              [](const T* a, const T* b, T* c, const T* m, T mp){
                  KARA::mul(a, b, c, m, mp); });
+    run_test("KARA_CSA", a, a, ref3, mod, mprime,
+             [](const T* a, const T* b, T* c, const T* m, T mp){
+                 KARA_CSA::mul(a, b, c, m, mp); });
+
+    // Test 4: DATAFLOW 版 (N=4, T=uint64_t 特化テスト)
+    printf("\nTest 4: DATAFLOW variant (N=4, T=uint64_t)\n");
+    {
+        using T4 = uint64_t;
+        static constexpr unsigned N4 = 4;
+        using CIOS4 = mont::MontOps_Fast<T4, N4>;
+        using DF4   = mont_fios_csa_dataflow::MontOps_FIOS_CSA_Dataflow<T4, N4>;
+
+        // 64-bit word 版 mod: 2^255-19 の下位 4 語 × 64bit
+        T4 mod4[N4] = {
+            0xFFFFFFFFFFFFFFEDULL,
+            0xFFFFFFFFFFFFFFFFULL,
+            0xFFFFFFFFFFFFFFFFULL,
+            0x7FFFFFFFFFFFFFFFULL
+        };
+        T4 mprime4;
+        uint64_t m = mod4[0], inv = 1;
+        for (int i = 0; i < 63; i++) inv = inv * (2 - m * inv);
+        mprime4 = static_cast<T4>(-inv);
+        printf("  mod4[0]=0x%016llX, mprime4=0x%016llX\n",
+               (unsigned long long)mod4[0], (unsigned long long)mprime4);
+
+        T4 a4[N4] = {0x1234567890ABCDEFULL, 0xFEDCBA9876543210ULL,
+                     0xDEADBEEFCAFEBABEULL, 0x0FFFFFFFFFFFFFFFULL};
+        T4 b4[N4] = {0x89ABCDEF01234567ULL, 0x0123456789ABCDEFULL,
+                     0xCAFEBABEDEADBEEFULL, 0x0FFFFFFFFFFFFFFFULL};
+        a4[N4-1] &= 0x7FFFFFFFFFFFFFFFULL;
+        b4[N4-1] &= 0x7FFFFFFFFFFFFFFFULL;
+
+        T4 ref4[N4] = {}, out4[N4] = {};
+        CIOS4::mul(a4, b4, ref4, mod4, mprime4);
+        DF4::mul(a4, b4, out4, mod4, mprime4);
+        bool ok4 = true;
+        for (unsigned j = 0; j < N4; j++) if (ref4[j] != out4[j]) { ok4 = false; break; }
+        printf("  FIOS_CSA_DF  : %s\n", ok4 ? "PASS" : "FAIL");
+        if (!ok4) {
+            printf("  ref: "); for (unsigned j=0;j<N4;j++) printf("%016llX ", (unsigned long long)ref4[j]); printf("\n");
+            printf("  got: "); for (unsigned j=0;j<N4;j++) printf("%016llX ", (unsigned long long)out4[j]); printf("\n");
+        }
+    }
 
     printf("\nDone.\n");
     return 0;

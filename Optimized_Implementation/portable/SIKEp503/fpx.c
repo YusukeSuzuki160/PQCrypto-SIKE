@@ -56,21 +56,29 @@ void copy_words(const digit_t* a, digit_t* c, const unsigned int nwords)
 
 
 void fpmul_mont(const felm_t ma, const felm_t mb, felm_t mc)
-{ // Multiprecision multiplication, c = a*b mod p.
-    dfelm_t temp = {0};
-
-    mp_mul(ma, mb, temp, NWORDS_FIELD);
-    rdc_mont(temp, mc);
+{
+  #pragma HLS INLINE off
+  // Auto-converted by montgomery_auto_rewriter
+  // Original: MontMul(CIOS)
+  constexpr unsigned MAX_NWORDS = 8;
+  using Digit = std::remove_cv_t<std::remove_pointer_t<decltype(mc)>>;
+  mont::MontOps<Digit, MAX_NWORDS>::mul(
+      ma, mb, mc, p503, p503_mprime, MAX_NWORDS);
 }
+
 
 
 void fpsqr_mont(const felm_t ma, felm_t mc)
-{ // Multiprecision squaring, c = a^2 mod p.
-    dfelm_t temp = {0};
-
-    mp_mul(ma, ma, temp, NWORDS_FIELD);
-    rdc_mont(temp, mc);
+{
+  #pragma HLS INLINE off
+  // Auto-converted by montgomery_auto_rewriter
+  // Original: MontSqr(CIOS)
+  constexpr unsigned MAX_NWORDS = 8;
+  using Digit = std::remove_cv_t<std::remove_pointer_t<decltype(mc)>>;
+  mont::MontOps<Digit, MAX_NWORDS>::mul(
+      ma, ma, mc, p503, p503_mprime, MAX_NWORDS);
 }
+
 
 
 void fpinv_mont(felm_t a)

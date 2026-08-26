@@ -43,6 +43,17 @@ objs503/%.o: %.c
 	@mkdir -p $(@D)
 	$(CC) -c $(CFLAGS) $< -o $@
 
+# P503.c は #include で fpx.c/ec_isogeny.c/sidh.c/sike.c を取り込む
+# unity build 構成。montgomery_auto_rewriter による自動置換で
+# fpmul_mont/fpsqr_mont の本体が mont::MontOps<>::mul（C++ テンプレート、
+# montgomery_converter/include/mont_ops.hpp）呼び出しに変換されているため、
+# このファイルだけは C++ (g++) でコンパイルする。公開 API
+# (crypto_kem_keypair 等) は api.h の extern "C" ガードにより C リンケージを
+# 維持しているため、他の gcc コンパイル済みオブジェクトと問題なくリンクできる。
+objs503/P503.o: P503.c
+	@mkdir -p $(@D)
+	g++ -x c++ -c $(CFLAGS) -I../../../montgomery_converter/include $< -o $@
+
 objs503/fp_generic.o: generic/fp_generic.c
 	$(CC) -c $(CFLAGS) generic/fp_generic.c -o objs503/fp_generic.o
 
@@ -60,7 +71,7 @@ lib503: $(OBJECTS_503)
 	$(RANLIB) sike/libsike.a
 
 tests: lib503
-	$(CC) $(CFLAGS) -L./sike tests/test_SIKEp503.c tests/test_extras.c -lsike $(LDFLAGS) -o sike/test_KEM $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./sike tests/test_SIKEp503.c tests/test_extras.c -lsike $(LDFLAGS) -lstdc++ -o sike/test_KEM $(ARM_SETTING)
 
 # AES
 AES_OBJS=objs/aes.o objs/aes_c.o
@@ -74,7 +85,7 @@ lib503_for_KATs: $(OBJECTS_503) $(AES_OBJS)
 	$(RANLIB) sike/libsike_for_testing.a
 
 KATS: lib503_for_KATs
-	$(CC) $(CFLAGS) -L./sike tests/PQCtestKAT_kem.c tests/rng/rng.c -lsike_for_testing $(LDFLAGS) -o sike/PQCtestKAT_kem $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./sike tests/PQCtestKAT_kem.c tests/rng/rng.c -lsike_for_testing $(LDFLAGS) -lstdc++ -o sike/PQCtestKAT_kem $(ARM_SETTING)
 
 check: tests
 

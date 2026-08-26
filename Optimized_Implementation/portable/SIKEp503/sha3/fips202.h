@@ -3,6 +3,9 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define SHAKE128_RATE 168
 #define SHAKE256_RATE 136
@@ -23,5 +26,8 @@ void cshake256_simple_absorb(uint64_t *s, uint16_t cstm, const unsigned char *in
 void cshake256_simple_squeezeblocks(unsigned char *output, unsigned long long nblocks, uint64_t *s);
 void cshake256_simple(unsigned char *output, unsigned long long outlen, uint16_t cstm, const unsigned char *in, unsigned long long inlen);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

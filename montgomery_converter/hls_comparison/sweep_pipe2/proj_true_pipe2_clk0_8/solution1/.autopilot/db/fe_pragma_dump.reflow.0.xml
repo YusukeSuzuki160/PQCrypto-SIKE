@@ -1,0 +1,30 @@
+<pragmas>
+<pragma file="../mont_hls_fios_csa_true_pipe2.cpp" line="24" pragmaType="pipeline" parentfunction="mont_mul_fios_csa_true_pipe2" off="0" ii="1" style=""/>
+<pragma file="../mont_hls_fios_csa_true_pipe2.cpp" line="25" pragmaType="array_partition" parentfunction="mont_mul_fios_csa_true_pipe2" dim="1" factor="0" mode="complete" dynamic="0" variable="a"/>
+<pragma file="../mont_hls_fios_csa_true_pipe2.cpp" line="26" pragmaType="array_partition" parentfunction="mont_mul_fios_csa_true_pipe2" dim="1" factor="0" mode="complete" dynamic="0" variable="b"/>
+<pragma file="../mont_hls_fios_csa_true_pipe2.cpp" line="27" pragmaType="array_partition" parentfunction="mont_mul_fios_csa_true_pipe2" dim="1" factor="0" mode="complete" dynamic="0" variable="c"/>
+<pragma file="../mont_hls_fios_csa_true_pipe2.cpp" line="28" pragmaType="array_partition" parentfunction="mont_mul_fios_csa_true_pipe2" dim="1" factor="0" mode="complete" dynamic="0" variable="mod"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="215" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="206" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="192" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="102" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="101" pragmaType="loop_tripcount" parentfunction="mul" min="4" max="4" avg="4"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="136" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="154" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="172" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="180" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="95" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="92" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="S"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="93" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="Cy"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="129" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pp_lo"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="130" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pp_hi"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="131" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pm_lo"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="132" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pm_hi"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="150" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="newS"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="151" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="newC"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="156" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="ops"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="188" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="t"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="203" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="u"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="55" pragmaType="inline" parentfunction="csa32" off="0" region="0" recursive="0"/>
+<pragma file="../../include/mont_ops_fios_csa_true_inl.hpp" line="64" pragmaType="inline" parentfunction="csa_reduce8" off="0" region="0" recursive="0"/>
+</pragmas>

@@ -4,6 +4,7 @@
  * Abstract: supersingular isogeny key encapsulation (SIKE) protocol
  *********************************************************************************************/
 
+#include <stdio.h>
 #include <string.h>
 #include "P503_internal.h"
 #include "sha3/fips202.h"

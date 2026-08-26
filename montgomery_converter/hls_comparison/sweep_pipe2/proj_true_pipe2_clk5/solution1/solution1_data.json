@@ -1,0 +1,708 @@
+{
+  "Top": "mont_mul_fios_csa_true_pipe2",
+  "RtlTop": "mont_mul_fios_csa_true_pipe2",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "mont_mul_fios_csa_true_pipe2_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "virtexuplus",
+    "Device": "xcvu9p",
+    "Package": "-flga2104",
+    "Speed": "-2-i",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "a": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "long unsigned int const *",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "a_0",
+          "name": "a_0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "a_1",
+          "name": "a_1",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "a_2",
+          "name": "a_2",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "a_3",
+          "name": "a_3",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "b": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "long unsigned int const *",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "b_0",
+          "name": "b_0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "b_1",
+          "name": "b_1",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "b_2",
+          "name": "b_2",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "b_3",
+          "name": "b_3",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "c": {
+      "index": "2",
+      "direction": "out",
+      "srcType": "long unsigned int*",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "c_0",
+          "name": "c_0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "c_0_ap_vld",
+          "name": "c_0_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "c_1",
+          "name": "c_1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "c_1_ap_vld",
+          "name": "c_1_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "c_2",
+          "name": "c_2",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "c_2_ap_vld",
+          "name": "c_2_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "c_3",
+          "name": "c_3",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "c_3_ap_vld",
+          "name": "c_3_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "mod": {
+      "index": "3",
+      "direction": "in",
+      "srcType": "long unsigned int const *",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "mod_0",
+          "name": "mod_0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "mod_1",
+          "name": "mod_1",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "mod_2",
+          "name": "mod_2",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "mod_3",
+          "name": "mod_3",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "mprime": {
+      "index": "4",
+      "direction": "in",
+      "srcType": "long unsigned int",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "mprime",
+          "name": "mprime",
+          "usage": "data",
+          "direction": "in"
+        }]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "mont_mul_fios_csa_true_pipe2"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "5",
+    "Uncertainty": "1.35",
+    "IsCombinational": "0",
+    "II": "1",
+    "Latency": "27"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 5.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "mont_mul_fios_csa_true_pipe2",
+    "Version": "1.0",
+    "DisplayName": "Mont_mul_fios_csa_true_pipe2",
+    "Revision": "2114757118",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_mont_mul_fios_csa_true_pipe2_1_0.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/..\/mont_hls_fios_csa_true_pipe2.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/mont_mul_fios_csa_true_pipe2_mul_64ns_64ns_128_2_1.vhd",
+      "impl\/vhdl\/mont_mul_fios_csa_true_pipe2_mul_64s_64s_64_2_1.vhd",
+      "impl\/vhdl\/mont_mul_fios_csa_true_pipe2.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/mont_mul_fios_csa_true_pipe2_mul_64ns_64ns_128_2_1.v",
+      "impl\/verilog\/mont_mul_fios_csa_true_pipe2_mul_64s_64s_64_2_1.v",
+      "impl\/verilog\/mont_mul_fios_csa_true_pipe2.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [".debug\/mont_mul_fios_csa_true_pipe2.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "a_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"a_0": "DATA"},
+      "ports": ["a_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "a"
+        }]
+    },
+    "a_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"a_1": "DATA"},
+      "ports": ["a_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "a"
+        }]
+    },
+    "a_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"a_2": "DATA"},
+      "ports": ["a_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "a"
+        }]
+    },
+    "a_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"a_3": "DATA"},
+      "ports": ["a_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "a"
+        }]
+    },
+    "b_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"b_0": "DATA"},
+      "ports": ["b_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "b"
+        }]
+    },
+    "b_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"b_1": "DATA"},
+      "ports": ["b_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "b"
+        }]
+    },
+    "b_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"b_2": "DATA"},
+      "ports": ["b_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "b"
+        }]
+    },
+    "b_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"b_3": "DATA"},
+      "ports": ["b_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "b"
+        }]
+    },
+    "c_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"c_0": "DATA"},
+      "ports": ["c_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "c"
+        }]
+    },
+    "c_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"c_1": "DATA"},
+      "ports": ["c_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "c"
+        }]
+    },
+    "c_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"c_2": "DATA"},
+      "ports": ["c_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "c"
+        }]
+    },
+    "c_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"c_3": "DATA"},
+      "ports": ["c_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "c"
+        }]
+    },
+    "mod_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"mod_0": "DATA"},
+      "ports": ["mod_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "mod"
+        }]
+    },
+    "mod_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"mod_1": "DATA"},
+      "ports": ["mod_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "mod"
+        }]
+    },
+    "mod_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"mod_2": "DATA"},
+      "ports": ["mod_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "mod"
+        }]
+    },
+    "mod_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"mod_3": "DATA"},
+      "ports": ["mod_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "mod"
+        }]
+    },
+    "mprime": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"mprime": "DATA"},
+      "ports": ["mprime"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "mprime"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "a_0": {
+      "dir": "in",
+      "width": "64"
+    },
+    "a_1": {
+      "dir": "in",
+      "width": "64"
+    },
+    "a_2": {
+      "dir": "in",
+      "width": "64"
+    },
+    "a_3": {
+      "dir": "in",
+      "width": "64"
+    },
+    "b_0": {
+      "dir": "in",
+      "width": "64"
+    },
+    "b_1": {
+      "dir": "in",
+      "width": "64"
+    },
+    "b_2": {
+      "dir": "in",
+      "width": "64"
+    },
+    "b_3": {
+      "dir": "in",
+      "width": "64"
+    },
+    "c_0": {
+      "dir": "out",
+      "width": "64"
+    },
+    "c_0_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "c_1": {
+      "dir": "out",
+      "width": "64"
+    },
+    "c_1_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "c_2": {
+      "dir": "out",
+      "width": "64"
+    },
+    "c_2_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "c_3": {
+      "dir": "out",
+      "width": "64"
+    },
+    "c_3_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "mod_0": {
+      "dir": "in",
+      "width": "64"
+    },
+    "mod_1": {
+      "dir": "in",
+      "width": "64"
+    },
+    "mod_2": {
+      "dir": "in",
+      "width": "64"
+    },
+    "mod_3": {
+      "dir": "in",
+      "width": "64"
+    },
+    "mprime": {
+      "dir": "in",
+      "width": "64"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "mont_mul_fios_csa_true_pipe2",
+      "BindInstances": "mul_64ns_64ns_128_2_1_U1 mul_64s_64s_64_2_1_U33 mul_64ns_64ns_128_2_1_U2 tiny2_fu_534_p2 mul_64ns_64ns_128_2_1_U3 mul_64ns_64ns_128_2_1_U4 mul_64ns_64ns_128_2_1_U6 mul_64ns_64ns_128_2_1_U7 mul_64ns_64ns_128_2_1_U12 mul_64ns_64ns_128_2_1_U13 or_ln57_fu_586_p2 and_ln57_fu_590_p2 and_ln57_1_fu_594_p2 or_ln57_1_fu_599_p2 xor_ln56_fu_617_p2 xor_ln56_1_fu_621_p2 and_ln57_2_fu_626_p2 xor_ln56_2_fu_639_p2 or_ln57_7_fu_672_p2 and_ln57_3_fu_694_p2 and_ln57_4_fu_706_p2 and_ln57_21_fu_712_p2 or_ln57_10_fu_718_p2 xor_ln56_3_fu_742_p2 xor_ln56_4_fu_746_p2 xor_ln56_5_fu_750_p2 xor_ln56_6_fu_771_p2 xor_ln56_7_fu_777_p2 sOut_fu_783_p2 xor_ln57_10_fu_793_p2 xor_ln57_fu_799_p2 and_ln57_5_fu_813_p2 or_ln57_4_fu_913_p2 and_ln57_6_fu_917_p2 and_ln57_7_fu_921_p2 or_ln57_5_fu_926_p2 xor_ln56_9_fu_932_p2 xor_ln56_10_fu_936_p2 and_ln57_8_fu_941_p2 xor_ln56_11_fu_954_p2 or_ln57_12_fu_965_p2 and_ln57_9_fu_987_p2 and_ln57_10_fu_999_p2 and_ln57_33_fu_1005_p2 or_ln57_16_fu_1011_p2 xor_ln56_12_fu_1109_p2 xor_ln56_13_fu_1115_p2 and_ln57_11_fu_1131_p2 or_ln57_8_fu_2015_p2 and_ln57_12_fu_2019_p2 and_ln57_13_fu_2023_p2 or_ln57_9_fu_2028_p2 xor_ln56_14_fu_2046_p2 xor_ln56_15_fu_2050_p2 and_ln57_14_fu_2055_p2 xor_ln56_16_fu_2068_p2 or_ln57_19_fu_2083_p2 and_ln57_15_fu_2105_p2 and_ln57_16_fu_2117_p2 and_ln57_43_fu_2123_p2 or_ln57_21_fu_2129_p2 xor_ln56_17_fu_2153_p2 xor_ln56_18_fu_2159_p2 and_ln57_17_fu_2177_p2 and_ln57_18_fu_2195_p2 xor_ln56_19_fu_2207_p2 and_ln57_19_fu_2221_p2 xor_ln56_20_fu_2235_p2 and_ln57_20_fu_2241_p2 mul_64ns_64ns_128_2_1_U5 add_ln113_fu_838_p2 tiny1_fu_848_p2 mul_64s_64s_64_2_1_U34 mul_64ns_64ns_128_2_1_U8 tiny2_1_fu_1157_p2 mul_64ns_64ns_128_2_1_U9 mul_64ns_64ns_128_2_1_U10 mul_64ns_64ns_128_2_1_U14 mul_64ns_64ns_128_2_1_U15 mul_64ns_64ns_128_2_1_U16 mul_64ns_64ns_128_2_1_U17 xor_ln56_21_fu_1194_p2 xor_ln57_11_fu_1200_p2 or_ln57_23_fu_1206_p2 and_ln57_22_fu_1229_p2 and_ln57_23_fu_1246_p2 and_ln57_56_fu_1252_p2 or_ln57_27_fu_1258_p2 or_ln57_14_fu_1284_p2 and_ln57_24_fu_1288_p2 and_ln57_25_fu_1292_p2 or_ln57_15_fu_1297_p2 xor_ln56_22_fu_1315_p2 xor_ln56_23_fu_1321_p2 xor_ln56_24_fu_1326_p2 xor_ln56_25_fu_1332_p2 xor_ln56_26_fu_1356_p2 xor_ln56_27_fu_1360_p2 or_ln57_29_fu_1369_p2 and_ln57_26_fu_1393_p2 and_ln57_27_fu_1405_p2 and_ln57_68_fu_1411_p2 or_ln57_31_fu_1417_p2 xor_ln56_28_fu_1450_p2 and_ln57_28_fu_1464_p2 xor_ln56_29_fu_1481_p2 xor_ln56_30_fu_1519_p2 xor_ln56_31_fu_1525_p2 xor_ln56_32_fu_1531_p2 or_ln57_35_fu_1541_p2 and_ln57_29_fu_1565_p2 and_ln57_30_fu_1579_p2 and_ln57_78_fu_1585_p2 or_ln57_37_fu_1591_p2 xor_ln56_33_fu_1067_p2 xor_ln56_34_fu_1071_p2 xor_ln56_35_fu_1075_p2 xor_ln56_36_fu_1620_p2 xor_ln56_37_fu_1629_p2 xor_ln56_38_fu_1635_p2 xor_ln56_39_fu_1641_p2 xor_ln56_40_fu_1651_p2 xor_ln56_41_fu_1657_p2 xor_ln56_42_fu_1663_p2 xor_ln56_43_fu_1669_p2 xor_ln56_44_fu_1679_p2 xor_ln56_45_fu_1688_p2 xor_ln56_46_fu_1694_p2 xor_ln56_47_fu_1700_p2 xor_ln56_48_fu_1706_p2 sOut_1_fu_1712_p2 xor_ln57_12_fu_1722_p2 xor_ln57_13_fu_1728_p2 xor_ln57_14_fu_1746_p2 xor_ln57_1_fu_1752_p2 xor_ln57_15_fu_1758_p2 or_ln57_39_fu_1782_p2 and_ln57_31_fu_1806_p2 and_ln57_32_fu_1824_p2 and_ln57_91_fu_1830_p2 or_ln57_43_fu_1836_p2 xor_ln56_50_fu_2280_p2 xor_ln57_16_fu_2286_p2 or_ln57_46_fu_2292_p2 and_ln57_34_fu_2315_p2 and_ln57_35_fu_2332_p2 and_ln57_103_fu_2338_p2 or_ln57_48_fu_2344_p2 or_ln57_25_fu_2370_p2 and_ln57_36_fu_2374_p2 and_ln57_37_fu_2378_p2 or_ln57_26_fu_2383_p2 xor_ln56_51_fu_2397_p2 xor_ln56_52_fu_2403_p2 xor_ln56_53_fu_2408_p2 xor_ln56_54_fu_2414_p2 xor_ln56_55_fu_2438_p2 xor_ln56_56_fu_2442_p2 or_ln57_50_fu_2451_p2 and_ln57_38_fu_2475_p2 and_ln57_39_fu_2487_p2 and_ln57_113_fu_2493_p2 or_ln57_54_fu_2499_p2 xor_ln56_57_fu_2515_p2 xor_ln56_58_fu_2537_p2 xor_ln56_59_fu_2543_p2 or_ln57_56_fu_3240_p2 and_ln57_40_fu_3251_p2 and_ln57_41_fu_3262_p2 and_ln57_126_fu_3268_p2 or_ln57_58_fu_3274_p2 xor_ln56_60_fu_3300_p2 xor_ln56_61_fu_3305_p2 and_ln57_42_fu_3333_p2 xor_ln56_62_fu_2559_p2 xor_ln56_63_fu_2571_p2 xor_ln57_17_fu_2581_p2 or_ln57_62_fu_2593_p2 and_ln57_44_fu_2614_p2 and_ln57_45_fu_2631_p2 and_ln57_127_fu_2637_p2 or_ln57_64_fu_2643_p2 or_ln57_33_fu_2667_p2 and_ln57_46_fu_2671_p2 and_ln57_47_fu_2675_p2 or_ln57_34_fu_2680_p2 xor_ln56_64_fu_2697_p2 xor_ln56_65_fu_2707_p2 xor_ln56_66_fu_2712_p2 xor_ln56_67_fu_2718_p2 xor_ln56_68_fu_2724_p2 xor_ln56_69_fu_2730_p2 xor_ln56_70_fu_2734_p2 or_ln57_66_fu_2743_p2 and_ln57_48_fu_2767_p2 and_ln57_49_fu_2779_p2 and_ln57_128_fu_2785_p2 or_ln57_70_fu_2791_p2 xor_ln56_71_fu_2811_p2 xor_ln56_72_fu_2817_p2 xor_ln56_73_fu_2831_p2 xor_ln56_74_fu_2837_p2 xor_ln56_75_fu_2843_p2 or_ln57_73_fu_2867_p2 and_ln57_50_fu_2889_p2 and_ln57_51_fu_2903_p2 and_ln57_129_fu_2909_p2 or_ln57_75_fu_2915_p2 xor_ln56_76_fu_3373_p2 xor_ln56_77_fu_2945_p2 xor_ln56_78_fu_3379_p2 and_ln57_52_fu_3385_p2 and_ln57_53_fu_4723_p2 xor_ln56_79_fu_4735_p2 and_ln57_54_fu_4749_p2 xor_ln56_80_fu_4763_p2 and_ln57_55_fu_4769_p2 mul_64ns_64ns_128_2_1_U11 add_ln113_2_fu_1873_p2 tiny1_1_fu_1885_p2 mul_64s_64s_64_2_1_U35 mul_64ns_64ns_128_2_1_U18 tiny2_2_fu_3408_p2 mul_64ns_64ns_128_2_1_U19 mul_64ns_64ns_128_2_1_U20 mul_64ns_64ns_128_2_1_U21 mul_64ns_64ns_128_2_1_U22 mul_64ns_64ns_128_2_1_U23 mul_64ns_64ns_128_2_1_U28 xor_ln56_81_fu_3454_p2 xor_ln57_18_fu_3460_p2 or_ln57_77_fu_3466_p2 and_ln57_57_fu_3489_p2 and_ln57_58_fu_3506_p2 and_ln57_130_fu_3512_p2 or_ln57_81_fu_3518_p2 or_ln57_41_fu_3544_p2 and_ln57_59_fu_3548_p2 and_ln57_60_fu_3552_p2 or_ln57_42_fu_3557_p2 xor_ln56_82_fu_3571_p2 xor_ln56_83_fu_3577_p2 xor_ln56_84_fu_3582_p2 xor_ln56_85_fu_3588_p2 xor_ln56_86_fu_3614_p2 xor_ln56_87_fu_3618_p2 or_ln57_83_fu_3627_p2 and_ln57_61_fu_3651_p2 and_ln57_62_fu_3663_p2 and_ln57_131_fu_3669_p2 or_ln57_85_fu_3675_p2 xor_ln56_88_fu_3705_p2 and_ln57_63_fu_3719_p2 xor_ln56_89_fu_3736_p2 xor_ln56_90_fu_3774_p2 xor_ln56_91_fu_3780_p2 xor_ln56_92_fu_3786_p2 or_ln57_89_fu_3796_p2 and_ln57_64_fu_3820_p2 and_ln57_65_fu_3834_p2 and_ln57_132_fu_3840_p2 or_ln57_91_fu_3846_p2 xor_ln56_93_fu_3039_p2 xor_ln56_94_fu_3049_p2 xor_ln56_95_fu_3055_p2 xor_ln56_96_fu_3061_p2 xor_ln56_97_fu_3071_p2 xor_ln56_98_fu_3077_p2 xor_ln56_99_fu_3087_p2 xor_ln56_100_fu_3093_p2 xor_ln56_101_fu_3103_p2 xor_ln56_102_fu_3109_p2 xor_ln56_103_fu_3872_p2 xor_ln56_104_fu_3878_p2 xor_ln56_105_fu_3888_p2 xor_ln56_106_fu_3898_p2 xor_ln56_107_fu_3904_p2 xor_ln56_108_fu_3924_p2 xor_ln56_109_fu_3938_p2 xor_ln56_110_fu_3944_p2 xor_ln56_111_fu_3950_p2 xor_ln56_112_fu_3956_p2 sOut_2_fu_4670_p2 xor_ln57_19_fu_3966_p2 xor_ln57_20_fu_3972_p2 xor_ln57_21_fu_3990_p2 xor_ln57_2_fu_3996_p2 xor_ln57_22_fu_4002_p2 or_ln57_92_fu_4028_p2 and_ln57_66_fu_4052_p2 and_ln57_67_fu_4070_p2 and_ln57_133_fu_4076_p2 or_ln57_93_fu_4082_p2 xor_ln56_114_fu_3115_p2 xor_ln56_115_fu_4115_p2 xor_ln57_23_fu_3133_p2 or_ln57_94_fu_4131_p2 and_ln57_69_fu_4153_p2 and_ln57_70_fu_4169_p2 and_ln57_134_fu_4175_p2 or_ln57_95_fu_4181_p2 or_ln57_52_fu_4207_p2 and_ln57_71_fu_4211_p2 and_ln57_72_fu_4215_p2 or_ln57_53_fu_4220_p2 xor_ln56_116_fu_4253_p2 xor_ln56_117_fu_4263_p2 xor_ln56_118_fu_4272_p2 xor_ln56_119_fu_4278_p2 xor_ln56_120_fu_4284_p2 xor_ln56_121_fu_4290_p2 xor_ln56_122_fu_4294_p2 or_ln57_96_fu_4303_p2 and_ln57_73_fu_4327_p2 and_ln57_74_fu_4339_p2 and_ln57_135_fu_4345_p2 or_ln57_97_fu_4351_p2 xor_ln56_123_fu_4381_p2 xor_ln56_124_fu_4387_p2 xor_ln56_125_fu_4401_p2 xor_ln56_126_fu_4407_p2 xor_ln56_127_fu_4417_p2 or_ln57_98_fu_4443_p2 and_ln57_75_fu_4467_p2 and_ln57_76_fu_4481_p2 and_ln57_136_fu_4487_p2 or_ln57_99_fu_4493_p2 xor_ln56_128_fu_4519_p2 xor_ln56_129_fu_4531_p2 xor_ln56_130_fu_4537_p2 and_ln57_77_fu_5363_p2 xor_ln56_131_fu_4798_p2 xor_ln56_132_fu_4810_p2 xor_ln57_24_fu_4820_p2 or_ln57_100_fu_4832_p2 and_ln57_79_fu_4853_p2 and_ln57_80_fu_4870_p2 and_ln57_137_fu_4876_p2 or_ln57_101_fu_4882_p2 or_ln57_60_fu_4906_p2 and_ln57_81_fu_4910_p2 and_ln57_82_fu_4914_p2 or_ln57_61_fu_4919_p2 xor_ln56_133_fu_4933_p2 xor_ln56_134_fu_4943_p2 xor_ln56_135_fu_4948_p2 xor_ln56_136_fu_4954_p2 xor_ln56_137_fu_4960_p2 xor_ln56_138_fu_4966_p2 xor_ln56_139_fu_4970_p2 or_ln57_102_fu_4979_p2 and_ln57_83_fu_5003_p2 and_ln57_84_fu_5015_p2 and_ln57_138_fu_5021_p2 or_ln57_103_fu_5027_p2 xor_ln56_140_fu_5057_p2 xor_ln56_141_fu_5063_p2 xor_ln56_142_fu_5077_p2 xor_ln56_143_fu_5083_p2 xor_ln56_144_fu_5093_p2 or_ln57_104_fu_5121_p2 and_ln57_85_fu_5143_p2 and_ln57_86_fu_5157_p2 and_ln57_139_fu_5163_p2 or_ln57_105_fu_5169_p2 xor_ln56_145_fu_5193_p2 xor_ln56_146_fu_5205_p2 xor_ln56_147_fu_5211_p2 and_ln57_87_fu_5384_p2 and_ln57_88_fu_5397_p2 xor_ln56_148_fu_5409_p2 and_ln57_89_fu_5423_p2 xor_ln56_149_fu_5441_p2 and_ln57_90_fu_5447_p2 mul_64ns_64ns_128_2_1_U24 add_ln113_4_fu_4550_p2 tiny1_2_fu_4682_p2 mul_64s_64s_64_2_1_U36 mul_64ns_64ns_128_2_1_U29 tiny2_3_fu_5467_p2 mul_64ns_64ns_128_2_1_U25 mul_64ns_64ns_128_2_1_U30 mul_64ns_64ns_128_2_1_U26 mul_64ns_64ns_128_2_1_U31 mul_64ns_64ns_128_2_1_U27 mul_64ns_64ns_128_2_1_U32 xor_ln56_150_fu_4556_p2 xor_ln56_151_fu_5507_p2 xor_ln57_25_fu_4574_p2 or_ln57_106_fu_5522_p2 and_ln57_92_fu_5544_p2 and_ln57_93_fu_5560_p2 and_ln57_140_fu_5566_p2 or_ln57_107_fu_5572_p2 or_ln57_68_fu_5598_p2 and_ln57_94_fu_5602_p2 and_ln57_95_fu_5606_p2 or_ln57_69_fu_5611_p2 xor_ln56_152_fu_5644_p2 xor_ln56_153_fu_5654_p2 xor_ln56_154_fu_5663_p2 xor_ln56_155_fu_5669_p2 xor_ln56_156_fu_5675_p2 xor_ln56_157_fu_5681_p2 xor_ln56_158_fu_5685_p2 or_ln57_108_fu_5694_p2 and_ln57_96_fu_5718_p2 and_ln57_97_fu_5730_p2 and_ln57_141_fu_5736_p2 or_ln57_109_fu_5742_p2 xor_ln56_159_fu_5775_p2 and_ln57_98_fu_5789_p2 xor_ln56_160_fu_5810_p2 xor_ln56_161_fu_5816_p2 xor_ln56_162_fu_5830_p2 xor_ln56_163_fu_5836_p2 xor_ln56_164_fu_5842_p2 xor_ln56_165_fu_5868_p2 or_ln57_110_fu_5878_p2 and_ln57_99_fu_5902_p2 and_ln57_100_fu_5916_p2 and_ln57_142_fu_5922_p2 or_ln57_111_fu_5928_p2 xor_ln56_166_fu_3191_p2 xor_ln56_167_fu_3197_p2 xor_ln56_168_fu_3207_p2 xor_ln56_169_fu_3213_p2 xor_ln56_170_fu_3219_p2 xor_ln56_171_fu_4583_p2 xor_ln56_172_fu_4591_p2 xor_ln56_173_fu_4597_p2 xor_ln56_174_fu_4607_p2 xor_ln56_175_fu_4617_p2 xor_ln56_176_fu_4623_p2 xor_ln56_177_fu_4629_p2 xor_ln56_178_fu_4635_p2 xor_ln56_179_fu_4641_p2 xor_ln56_180_fu_4647_p2 xor_ln56_181_fu_4655_p2 xor_ln56_182_fu_4661_p2 xor_ln56_183_fu_5960_p2 xor_ln56_184_fu_5970_p2 xor_ln56_185_fu_5976_p2 xor_ln56_186_fu_5982_p2 xor_ln56_187_fu_5996_p2 xor_ln56_188_fu_6002_p2 xor_ln56_189_fu_6008_p2 xor_ln56_190_fu_6017_p2 xor_ln56_191_fu_6023_p2 xor_ln56_192_fu_6029_p2 xor_ln56_193_fu_6035_p2 xor_ln56_194_fu_6041_p2 sOut_3_fu_6047_p2 xor_ln57_26_fu_6057_p2 xor_ln57_3_fu_6083_p2 xor_ln57_27_fu_6089_p2 or_ln57_112_fu_6095_p2 and_ln57_101_fu_6119_p2 and_ln57_102_fu_6137_p2 and_ln57_143_fu_6143_p2 or_ln57_113_fu_6149_p2 xor_ln56_197_fu_5273_p2 xor_ln56_195_fu_6179_p2 xor_ln57_28_fu_5291_p2 or_ln57_114_fu_6194_p2 and_ln57_104_fu_6216_p2 and_ln57_105_fu_6232_p2 and_ln57_144_fu_6238_p2 or_ln57_115_fu_6244_p2 or_ln57_79_fu_6270_p2 and_ln57_106_fu_6274_p2 and_ln57_107_fu_6278_p2 or_ln57_80_fu_6283_p2 xor_ln56_198_fu_6316_p2 xor_ln56_199_fu_6326_p2 xor_ln56_201_fu_6335_p2 xor_ln56_200_fu_6341_p2 xor_ln56_202_fu_6347_p2 xor_ln57_29_fu_6353_p2 xor_ln57_4_fu_6357_p2 or_ln57_116_fu_6366_p2 and_ln57_108_fu_6390_p2 and_ln57_109_fu_6402_p2 and_ln57_145_fu_6408_p2 or_ln57_117_fu_6414_p2 xor_ln56_204_fu_6444_p2 xor_ln56_205_fu_6450_p2 xor_ln56_206_fu_6464_p2 xor_ln56_203_fu_6470_p2 xor_ln56_208_fu_6480_p2 or_ln57_118_fu_6506_p2 and_ln57_110_fu_6530_p2 and_ln57_111_fu_6544_p2 and_ln57_146_fu_6550_p2 or_ln57_119_fu_6556_p2 xor_ln56_209_fu_5297_p2 xor_ln56_210_fu_5303_p2 xor_ln56_211_fu_5309_p2 xor_ln56_213_fu_5315_p2 xor_ln56_214_fu_5321_p2 xor_ln56_216_fu_5327_p2 xor_ln56_217_fu_5333_p2 xor_ln56_218_fu_5343_p2 xor_ln56_219_fu_7165_p2 xor_ln56_220_fu_6582_p2 xor_ln56_221_fu_6591_p2 xor_ln56_222_fu_6597_p2 xor_ln56_223_fu_6603_p2 xor_ln56_224_fu_6609_p2 xor_ln56_225_fu_6613_p2 xor_ln56_226_fu_6622_p2 xor_ln56_227_fu_6628_p2 xor_ln56_228_fu_6634_p2 xor_ln56_229_fu_7177_p2 sOut_4_fu_7182_p2 xor_ln57_30_fu_6640_p2 xor_ln57_5_fu_6646_p2 and_ln57_112_fu_6652_p2 xor_ln56_231_fu_6662_p2 xor_ln56_207_fu_6674_p2 xor_ln57_31_fu_6684_p2 or_ln57_120_fu_6696_p2 and_ln57_114_fu_6717_p2 and_ln57_115_fu_6734_p2 and_ln57_147_fu_6740_p2 or_ln57_121_fu_6746_p2 or_ln57_87_fu_6770_p2 and_ln57_116_fu_6774_p2 and_ln57_117_fu_6778_p2 or_ln57_88_fu_6783_p2 xor_ln56_232_fu_6800_p2 xor_ln56_233_fu_6810_p2 xor_ln56_234_fu_6815_p2 xor_ln56_212_fu_6821_p2 xor_ln56_235_fu_6827_p2 xor_ln57_32_fu_6833_p2 xor_ln57_6_fu_6837_p2 or_ln57_122_fu_6846_p2 and_ln57_118_fu_6870_p2 and_ln57_119_fu_6882_p2 and_ln57_148_fu_6888_p2 or_ln57_123_fu_6894_p2 xor_ln56_236_fu_6924_p2 xor_ln56_237_fu_6930_p2 xor_ln56_238_fu_6944_p2 xor_ln56_215_fu_6950_p2 xor_ln56_239_fu_6960_p2 or_ln57_124_fu_6988_p2 and_ln57_120_fu_7010_p2 and_ln57_121_fu_7024_p2 and_ln57_149_fu_7030_p2 or_ln57_125_fu_7036_p2 xor_ln56_240_fu_7060_p2 xor_ln56_241_fu_7066_p2 xor_ln56_242_fu_7076_p2 xor_ln56_243_fu_7082_p2 xor_ln56_244_fu_7092_p2 xor_ln56_245_fu_7102_p2 xor_ln56_246_fu_7112_p2 xor_ln56_247_fu_7118_p2 xor_ln56_248_fu_7124_p2 sOut_5_fu_7213_p2 xor_ln57_33_fu_7130_p2 xor_ln57_7_fu_7136_p2 and_ln57_122_fu_7142_p2 and_ln57_123_fu_7306_p2 xor_ln57_8_fu_7318_p2 and_ln57_124_fu_7332_p2 xor_ln56_250_fu_7346_p2 sOut_6_fu_7352_p2 xor_ln57_9_fu_7362_p2 and_ln57_125_fu_7368_p2 s_fu_7152_p2 add_ln193_fu_7235_p2 add_ln194_fu_7249_p2 s_1_fu_7255_p2 add_ln193_2_fu_7275_p2 add_ln194_1_fu_7401_p2 s_2_fu_7406_p2 add_ln193_4_fu_7426_p2 add_ln194_2_fu_7440_p2 s_3_fu_7446_p2 d_fu_7465_p2 icmp_ln213_fu_7576_p2 keep_t_fu_7589_p2 c_0 c_1 c_2 c_3"
+    },
+    "Info": {"mont_mul_fios_csa_true_pipe2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }},
+    "Metrics": {"mont_mul_fios_csa_true_pipe2": {
+        "Latency": {
+          "LatencyBest": "27",
+          "LatencyAvg": "27",
+          "LatencyWorst": "27",
+          "PipelineII": "1",
+          "PipelineDepth": "28",
+          "PipelineType": "yes"
+        },
+        "Timing": {
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "3.612"
+        },
+        "Area": {
+          "DSP": "552",
+          "AVAIL_DSP": "6840",
+          "UTIL_DSP": "8",
+          "FF": "27031",
+          "AVAIL_FF": "2364480",
+          "UTIL_FF": "1",
+          "LUT": "43625",
+          "AVAIL_LUT": "1182240",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "960",
+          "UTIL_URAM": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2026-08-25 17:58:13 JST",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2024.2.2"
+  }
+}
